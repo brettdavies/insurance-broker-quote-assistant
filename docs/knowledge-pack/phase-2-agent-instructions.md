@@ -645,5 +645,15 @@ This should never happen with cuid2. If it does:
 
 ---
 
-**Last Updated**: 2025-11-05  
+**See Also:**
+- 📖 [Raw Data Schema](knowledge-pack-schemas.md#raw-data-schema) - Complete specification for data structure
+- 🔗 [Source Authority Levels](knowledge-pack-source-hierarchy.md#source-authority-levels) - How to assess confidence scores
+- 📊 [Extraction Examples](knowledge-pack-examples.md#phase-1-raw-data-scraping) - Real extraction samples
+- 🔍 [Search Queries Catalog](knowledge-pack-search-queries.md) - Complete list of 200+ search queries
+- 🛠️ [ID Conventions](id-conventions.md) - cuid2 ID generation and validation
+- 📋 [Complete Methodology](knowledge-pack-methodology.md#phase-2-raw-data-scraping) - Where Phase 2 fits in overall workflow
+
+---
+
+**Last Updated**: 2025-11-05
 **Status**: Ready for Phase 2 Execution

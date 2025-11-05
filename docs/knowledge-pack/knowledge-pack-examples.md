@@ -25,6 +25,25 @@ Each example includes:
 
 ---
 
+## How to Use This Document
+
+This document shows complete data transformations from raw scraping to production. Each example demonstrates:
+- Multi-source data gathering
+- Conflict detection and resolution
+- Source tracking and audit trails
+
+**Before diving in, review:**
+- 📖 [Schemas](knowledge-pack-schemas.md) - Understand data structures
+- 🔗 [Source Hierarchy](knowledge-pack-source-hierarchy.md) - Understand conflict resolution
+- 📖 [Methodology](knowledge-pack-methodology.md) - Understand the 7-phase process
+
+**Navigation tips:**
+- Examples progress from simple (2 sources) to complex (3+ sources)
+- Each example is self-contained
+- Look for "Key Lessons" sections for important takeaways
+
+---
+
 ## Example 1: Multi-Policy Discount (Simple - 2 Sources, Low Conflict)
 
 ### Phase 1: Raw Data Scraping

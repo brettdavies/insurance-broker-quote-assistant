@@ -634,6 +634,14 @@ const isValid = /^[a-z]+_[a-z0-9]{10}$/.test(id);  // true/false
 
 ---
 
-**Document Version**: 1.0  
-**Last Updated**: 2025-11-05  
+**See Also:**
+- 📖 [Schemas Using IDs](knowledge-pack-schemas.md#field-metadata-envelope) - How IDs appear in data structures
+- 🔗 [Phase 2 Agent Workflow](phase-2-agent-instructions.md#step-2-generate-unique-ids) - ID generation in practice
+- 📊 [Complete Examples](knowledge-pack-examples.md) - See IDs used in real data transformations
+- 🛠️ [Methodology Phase 1](knowledge-pack-methodology.md#phase-1-enhanced-json-schema-design) - When IDs are designed
+
+---
+
+**Document Version**: 1.0
+**Last Updated**: 2025-11-05
 **Status**: Ready for Implementation

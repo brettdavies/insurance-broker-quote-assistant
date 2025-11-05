@@ -828,6 +828,15 @@ Use these schemas to validate all knowledge pack files before deployment.
 
 ---
 
-**Document Version**: 1.0  
-**Last Updated**: 2025-11-05  
+**See Also:**
+- 📖 [ID Conventions](id-conventions.md) - Complete cuid2 ID specification and usage
+- 🔗 [Source Authority Levels](knowledge-pack-source-hierarchy.md#source-authority-levels) - Understanding confidence scores
+- 📊 [Complete Examples](knowledge-pack-examples.md) - See schemas in real data transformations
+- 🛠️ [Methodology Phases](knowledge-pack-methodology.md) - How schemas are used throughout data gathering
+- 🤖 [Phase 2 Agent Workflow](phase-2-agent-instructions.md#step-5-extract-data-points) - Applying schemas during scraping
+
+---
+
+**Document Version**: 1.0
+**Last Updated**: 2025-11-05
 **Status**: Ready for Implementation

@@ -633,6 +633,15 @@ After resolving conflicts:
 
 ---
 
-**Document Version**: 1.0  
-**Last Updated**: 2025-11-05  
+**See Also:**
+- 📖 [Conflict Resolution in Methodology](knowledge-pack-methodology.md#phase-4-conflict-resolution) - When conflict resolution happens in the workflow
+- 🔗 [Resolution Schema](knowledge-pack-schemas.md#resolution-object) - Data structure for documenting resolutions
+- 📊 [Resolution Examples](knowledge-pack-examples.md#example-2-california-auto-minimums) - Real-world conflicts resolved
+- 🔍 [Search Queries](knowledge-pack-search-queries.md) - Finding high-authority sources
+- 🤖 [Phase 2 Agent Workflow](phase-2-agent-instructions.md#step-6-save-raw-entry) - Capturing confidence during scraping
+
+---
+
+**Document Version**: 1.0
+**Last Updated**: 2025-11-05
 **Status**: Ready for Implementation

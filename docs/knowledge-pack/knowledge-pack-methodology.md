@@ -30,43 +30,20 @@ This document defines the comprehensive methodology for gathering, validating, a
 
 #### 1.1 Source Metadata Structure
 
-Every field in the knowledge pack uses a metadata envelope:
+Every field in the knowledge pack uses a metadata envelope for source tracking. See [knowledge-pack-schemas.md#field-metadata-envelope](knowledge-pack-schemas.md#field-metadata-envelope) for complete specification.
 
+**Core concept:**
 ```json
 {
-  "id": "field-uuid-001",
+  "_id": "fld_ckm9x7whp2",
   "value": 15,
-  "sources": [
-    {
-      "uri": "https://www.geico.com/auto/discounts/",
-      "elementRef": "section#multi-policy > p:nth-child(2)",
-      "lineRef": null,
-      "accessedDate": "2025-11-05",
-      "extractedValue": "Save up to 15%",
-      "confidence": "high",
-      "primary": true
-    },
-    {
-      "uri": "https://www.nerdwallet.com/article/insurance/geico-discounts",
-      "elementRef": "table.discounts > tr:nth-child(3) > td:nth-child(2)",
-      "lineRef": null,
-      "accessedDate": "2025-11-05",
-      "extractedValue": "12%",
-      "confidence": "medium",
-      "primary": false
-    }
-  ],
-  "resolution": {
-    "conflictId": "conflict-001",
-    "selectedValue": 15,
-    "method": "authoritative_source",
-    "rationale": "Official GEICO source (primary) preferred over third-party aggregator",
-    "resolvedBy": "data_curator",
-    "resolvedDate": "2025-11-05"
-  },
-  "inheritedFrom": null
+  "_sources": [...],      // Direct source citations (≥1 required if not inherited)
+  "_inheritedFrom": null, // OR parent field ID
+  "_resolution": {...}    // Conflict resolution metadata (if applicable)
 }
 ```
+
+**See also:** [Complete schemas →](knowledge-pack-schemas.md#core-concepts)
 
 #### 1.2 Source Inheritance Rules
 
@@ -96,16 +73,13 @@ When a child data point has no direct sources, it inherits from its parent:
 
 #### 1.3 cuid2 Generation Conventions
 
-All entity IDs use **cuid2** format with type prefixes for global uniqueness:
+All entity IDs use **cuid2** format with type prefixes for global uniqueness. See [id-conventions.md](id-conventions.md) for complete specification.
 
-- **Carriers**: `carr_{cuid2}` (e.g., `carr_ckm9x7w8k0`)
-- **Discounts**: `disc_{cuid2}` (e.g., `disc_ckm9x7wdx1`)
-- **Fields**: `fld_{cuid2}` (e.g., `fld_ckm9x7whp2`)
-- **Conflicts**: `conf_{cuid2}` (e.g., `conf_ckm9x7wkm3`)
-- **Raw Data**: `raw_{cuid2}` (e.g., `raw_ckm9x7wnp4`)
-- **Pages**: `page_{cuid2}` (e.g., `page_ckm9x7wqr5`)
-
-See [id-conventions.md](id-conventions.md) for complete ID prefix reference and usage examples.
+**Quick reference:**
+- Carriers: `carr_{cuid2}` (e.g., `carr_ckm9x7w8k0`)
+- Discounts: `disc_{cuid2}`
+- Fields: `fld_{cuid2}`
+- [See all prefixes →](id-conventions.md#complete-id-prefix-reference)
 
 All IDs tracked in `audit-trail.json` for cross-reference.
 
@@ -121,6 +95,10 @@ All IDs tracked in `audit-trail.json` for cross-reference.
 **Complete schema specifications**: See [knowledge-pack-schemas.md](knowledge-pack-schemas.md) for all JSON schema definitions.
 
 **Deliverable**: 4 schema files in `knowledge_pack/schemas/`
+
+**See Also:**
+- 📖 [Complete Schemas](knowledge-pack-schemas.md) - Full JSON schema specifications
+- 🔗 [ID Conventions](id-conventions.md) - cuid2 usage for all entities
 
 ---
 
@@ -411,6 +389,11 @@ For each extracted value, note:
 
 **Deliverable**: 30-50 `*.raw.json` files with all scraped data
 
+**See Also:**
+- 📖 [Agent Workflow](phase-2-agent-instructions.md) - Step-by-step autonomous execution
+- 🔗 [Search Queries](knowledge-pack-search-queries.md) - 200+ queries for data gathering
+- 📊 [Raw Data Examples](knowledge-pack-examples.md#example-1-multi-policy-discount) - See raw scraping in action
+
 ---
 
 ### Phase 3: Conflict Detection (2-3 hours)
@@ -521,6 +504,10 @@ function calculateSeverity(values, dataPoint) {
 
 **Deliverable**: `knowledge_pack/conflicts.json` with all detected conflicts
 
+**See Also:**
+- 📖 [Conflict Detection Examples](knowledge-pack-examples.md#example-2-california-auto-minimums) - Real conflict scenarios
+- 🔗 [Resolution Schema](knowledge-pack-schemas.md#resolution-object) - Data structure for conflicts
+
 ---
 
 ### Phase 4: Conflict Resolution (2-3 hours)
@@ -531,33 +518,16 @@ function calculateSeverity(values, dataPoint) {
 
 See [knowledge-pack-source-hierarchy.md](knowledge-pack-source-hierarchy.md) for complete conflict resolution decision tree and source authority levels.
 
-1. **Authoritative Source Hierarchy**
-   - State regulatory > Carrier official > Industry org > Financial site
-   - Use higher authority source when in conflict
-   - **Details**: [source-hierarchy.md#authority-levels](knowledge-pack-source-hierarchy.md#source-authority-levels)
+**Quick reference (7 strategies in priority order):**
+1. Authoritative source hierarchy → [Details](knowledge-pack-source-hierarchy.md#source-authority-levels)
+2. Specificity preference (exact > range)
+3. Temporal preference (recent > old)
+4. Conservative estimate (domain knowledge)
+5. Majority consensus (3+ sources)
+6. Context awareness (parse qualifiers)
+7. Expert judgment (manual with rationale)
 
-2. **Specificity Preference**
-   - "15%" > "10-15%" > "up to 20%"
-   - Explicit list > "All states" > "Nationwide"
-
-3. **Temporal Preference**
-   - More recent data preferred (check "Updated" dates)
-   - Effective dates considered for time-sensitive data
-
-4. **Conservative Estimate**
-   - For discounts: Use lower/safer value
-   - For minimums: Use higher/safer value
-
-5. **Majority Consensus**
-   - If 3+ sources, use majority value (if >50% agree)
-
-6. **Context-Aware Decision**
-   - Consider qualifiers ("up to", "average", "typical")
-   - Apply domain knowledge (e.g., CA typically higher premiums)
-
-7. **Expert Judgment**
-   - Document manual decision when automated rules don't apply
-   - Requires written rationale
+[View complete decision tree →](knowledge-pack-source-hierarchy.md#conflict-resolution-decision-tree)
 
 #### 4.2 Resolution Decision Format
 
@@ -670,6 +640,10 @@ Create `knowledge_pack/resolutions.json`:
 - `knowledge_pack/clean/` directory with resolved data
 - `knowledge_pack/resolutions.json` with all decisions
 - `knowledge_pack/audit-trail.json` with complete lineage
+
+**See Also:**
+- 📖 [Source Hierarchy](knowledge-pack-source-hierarchy.md) - Complete decision tree and authority levels
+- 📊 [Resolution Examples](knowledge-pack-examples.md#example-4-three-way-conflict-with-majority-consensus) - Real conflict resolutions
 
 ---
 
@@ -805,6 +779,10 @@ For production files, compress source references:
 
 **Deliverable**: 10 production JSON files ready for RAG consumption
 
+**See Also:**
+- 📖 [Production Schemas](knowledge-pack-schemas.md#carrier-schema) - Complete schema specifications
+- 📊 [Complete Carrier Example](knowledge-pack-examples.md#example-5-complete-carrier-file-production-format) - Production format sample
+
 ---
 
 ### Phase 6: Validation & Quality Assurance (1-2 hours)
@@ -936,6 +914,10 @@ const validationChecks = [
 ```
 
 **Deliverable**: `knowledge_pack/validation-report.json` with QA results
+
+**See Also:**
+- 📖 [Validation Rules](knowledge-pack-schemas.md#validation-rules) - Schema validation specifications
+- 🔗 [Quality Metrics](knowledge-pack-schemas.md#required-validations) - Required validation checks
 
 ---
 
@@ -1125,6 +1107,10 @@ Last Updated: 2025-11-05
 ```
 
 **Deliverable**: Complete README.md + audit-trail.json
+
+**See Also:**
+- 📖 [Complete Examples](knowledge-pack-examples.md) - See full audit trail examples
+- 🔗 [All Documentation Files](README.md) - Index of all knowledge pack docs
 
 ---
 

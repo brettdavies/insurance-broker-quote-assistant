@@ -65,33 +65,15 @@ Organized by category:
 
 ### Globally Unique IDs (cuid2)
 
-All entities use **cuid2** for globally unique, collision-resistant identifiers:
+All entities use **cuid2** for globally unique, collision-resistant identifiers. See [id-conventions.md](id-conventions.md) for complete specification.
 
+**Quick example:**
 ```typescript
 import { createId } from '@paralleldrive/cuid2';
-
-// Generate IDs (10 characters, URL-safe)
-const carrierId = createId();      // e.g., "ckm9x7w8k0"
-const fieldId = createId();         // e.g., "ckm9x7wdx1"
-const conflictId = createId();      // e.g., "ckm9x7whp2"
+const carrierId = `carr_${createId()}`; // "carr_ckm9x7w8k0"
 ```
 
-See [id-conventions.md#basic-usage](id-conventions.md#basic-usage) for complete installation and usage guide.
-
-**Why cuid2?**
-- ✅ Globally unique (no collisions)
-- ✅ 10-character alphanumeric (compact)
-- ✅ URL-safe (no special characters)
-- ✅ Sortable by creation time
-- ✅ Secure (cryptographically random)
-- ✅ No dependencies on central authority
-
-**ID Examples:**
-- Carrier: `"carr_ckm9x7w8k0"`
-- Discount: `"disc_ckm9x7wdx1"`
-- Field: `"fld_ckm9x7whp2"`
-- Conflict: `"conf_ckm9x7wkm3"`
-- Raw Data: `"raw_ckm9x7wnp4"`
+**Common prefixes:** `carr_` (carrier), `disc_` (discount), `fld_` (field) — see [complete reference](id-conventions.md#complete-id-prefix-reference).
 
 ### Source Tracking Requirements
 
@@ -104,21 +86,16 @@ See [id-conventions.md#basic-usage](id-conventions.md#basic-usage) for complete 
 
 ### Source Authority Hierarchy
 
-1. **Level 5 - Regulatory** (State insurance departments)
-2. **Level 4 - Primary** (Carrier official sites)
-3. **Level 3 - Reference** (Industry organizations)
-4. **Level 2 - Secondary** (Financial/comparison sites)
-5. **Level 1 - Tertiary** (User-generated content)
+Sources are ranked by authority level (1-5, regulatory > carrier > industry > comparison > forums). See [knowledge-pack-source-hierarchy.md](knowledge-pack-source-hierarchy.md) for complete hierarchy and conflict resolution strategies.
 
-### Conflict Resolution Strategies
+**Quick reference:**
+1. Level 5 - Regulatory (State insurance departments)
+2. Level 4 - Primary (Carrier official sites)
+3. Level 3 - Reference (Industry organizations)
+4. Level 2 - Secondary (Financial/comparison sites)
+5. Level 1 - Tertiary (User-generated content)
 
-1. Authoritative source (highest authority wins)
-2. Specificity preference (exact > range)
-3. Temporal preference (recent > old)
-4. Conservative estimate (domain knowledge)
-5. Majority consensus (3+ sources)
-6. Context awareness (parse qualifiers)
-7. Expert judgment (manual with rationale)
+[View complete hierarchy →](knowledge-pack-source-hierarchy.md#source-authority-levels)
 
 ## Quick Start
 
@@ -219,6 +196,50 @@ graph TB
 - 🟢 **Green** (schemas.md): Canonical JSON schema definitions (SoT for data structures)
 - 🔴 **Pink** (id-conventions.md): Canonical cuid2 ID specification (SoT for identifiers)
 - 🟣 **Purple** (phase-2-agent-instructions.md): Autonomous agent operational spec
+
+---
+
+## How to Use This Documentation
+
+### If you want to...
+
+**Understand the complete methodology:**
+1. Start with [methodology.md](knowledge-pack-methodology.md) for 7-phase overview
+2. Review [source-hierarchy.md](knowledge-pack-source-hierarchy.md) for conflict resolution
+3. See [examples.md](knowledge-pack-examples.md) for practical applications
+
+**Implement Phase 2 data gathering:**
+1. Start with [phase-2-agent-instructions.md](phase-2-agent-instructions.md) for step-by-step workflow
+2. Reference [search-queries.md](knowledge-pack-search-queries.md) for search terms
+3. Reference [schemas.md](knowledge-pack-schemas.md) for raw data format
+4. Reference [id-conventions.md](id-conventions.md) for ID generation
+
+**Create production JSON files:**
+1. Review [schemas.md](knowledge-pack-schemas.md) for data structures
+2. Review [source-hierarchy.md](knowledge-pack-source-hierarchy.md) for authority levels
+3. Follow [examples.md](knowledge-pack-examples.md) for transformation patterns
+
+**Generate unique IDs:**
+1. See [id-conventions.md](id-conventions.md) for complete specification
+2. See [id-conventions.md#installation](id-conventions.md#installation) to get started
+
+---
+
+## Key Terms Quick Reference
+
+| Term | Definition | Learn More |
+|------|------------|------------|
+| **cuid2** | Globally unique 10-character identifier system | [id-conventions.md](id-conventions.md) |
+| **Field Metadata Envelope** | Data structure wrapping values with source tracking | [schemas.md#field-metadata-envelope](knowledge-pack-schemas.md#field-metadata-envelope) |
+| **Source Authority Level** | Ranking system (1-5) for source trustworthiness | [source-hierarchy.md#source-authority-levels](knowledge-pack-source-hierarchy.md#source-authority-levels) |
+| **Conflict Resolution** | Process for choosing between conflicting data | [source-hierarchy.md#conflict-resolution-decision-tree](knowledge-pack-source-hierarchy.md#conflict-resolution-decision-tree) |
+| **Raw Data Entry** | Unprocessed data captured during scraping | [schemas.md#raw-data-schema](knowledge-pack-schemas.md#raw-data-schema) |
+| **Inheritance** | Child data points borrowing parent sources | [schemas.md#source-inheritance-rules](knowledge-pack-schemas.md#source-inheritance-rules) |
+| **Page File** | Saved HTML/PDF content with unique cuid2 ID | [phase-2-agent-instructions.md#page-files](phase-2-agent-instructions.md#page-files) |
+
+**Note:** This is a quick reference only. Follow links for complete specifications.
+
+---
 
 ## File Structure
 
