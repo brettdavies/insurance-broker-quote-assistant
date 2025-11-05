@@ -1,0 +1,245 @@
+---
+description: when debugging TanStack Query/React Query issues, inspecting cache state, troubleshooting API calls, investigating stale data, mutations not updating UI, or infinite refetch loops
+alwaysApply: false
+---
+
+# TanStack Query DevTools - Development Troubleshooting
+
+**Purpose:** Real-time inspection of TanStack Query state for debugging API calls, cache behavior, and data fetching issues during development.
+
+**Important:** This tool is for **development troubleshooting only**, NOT for E2E testing. It pairs well with Chrome DevTools MCP for AI-driven browser automation.
+
+---
+
+## Installation
+
+```bash
+bun add -d @tanstack/react-query-devtools
+```
+
+## Setup (Floating Mode - Recommended)
+
+Add to your main app component as high as possible in the component tree:
+
+```typescript
+// apps/web/src/main.tsx
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+
+const queryClient = new QueryClient()
+
+function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      {/* Your app components */}
+      <ReactQueryDevtools
+        initialIsOpen={false}
+        buttonPosition="bottom-right"
+        position="bottom"
+      />
+    </QueryClientProvider>
+  )
+}
+```
+
+**Note:** DevTools are automatically excluded from production builds when `process.env.NODE_ENV === 'production'`.
+
+---
+
+## What You Can Inspect
+
+### 1. Query State
+- Query keys, data, status (loading/success/error)
+- Timestamps (created, updated, last fetch)
+- Stale/fresh status
+
+### 2. Cache Inspection
+- Cached data for all queries
+- Cache keys and their values
+- `staleTime` and `cacheTime` configuration
+
+### 3. Mutations
+- Mutation state, variables, results
+- Retry counts and error details
+- Timeline of mutation lifecycle
+
+### 4. Network Activity
+- Active fetches and refetches
+- Query invalidation events
+- Background refetch behavior
+
+### 5. Manual Actions
+- Manually refetch queries
+- Invalidate specific queries
+- Clear cache for testing
+
+---
+
+## Common Troubleshooting Scenarios
+
+### Scenario 1: API Call Not Triggering
+
+**Steps to debug:**
+1. Open TanStack Query DevTools (click button in bottom-right)
+2. Find your query in the list (search by query key)
+3. Check query status and `enabled` state
+4. Look for stale cache data being served instead of fresh fetch
+
+**Common causes:**
+- Query has `enabled: false`
+- Query key is incorrect or mismatched
+- Stale cache is being served (check `staleTime`)
+- Query dependencies not triggering refetch
+
+---
+
+### Scenario 2: Stale Data Displayed
+
+**Steps to debug:**
+1. Open DevTools and find the query
+2. Check `staleTime` and `cacheTime` settings
+3. Manually click "Invalidate" to force refetch
+4. Verify query key includes all dependencies (params, filters, etc.)
+
+**Common causes:**
+- `staleTime` too long (data stays fresh too long)
+- Query key missing dynamic dependencies
+- Cache not being invalidated after mutations
+- Query not refetching on window focus when expected
+
+---
+
+### Scenario 3: Mutation Not Updating UI
+
+**Steps to debug:**
+1. Open DevTools mutations panel
+2. Check if `onSuccess` callback is firing
+3. Verify query invalidation is happening after mutation
+4. Look for optimistic update logic in mutation details
+
+**Common causes:**
+- Missing `queryClient.invalidateQueries()` in `onSuccess`
+- Query key mismatch in invalidation
+- Optimistic update logic has bug
+- Race condition between mutation and query refetch
+
+---
+
+### Scenario 4: Infinite Refetch Loop
+
+**Steps to debug:**
+1. Open DevTools and monitor query timeline
+2. Check if query key is changing on every render
+3. Verify `refetchOnWindowFocus` and `refetchInterval` settings
+4. Look for dependencies causing unnecessary invalidations
+
+**Common causes:**
+- Query key uses unstable reference (object/array created on each render)
+- Aggressive `refetchInterval` setting
+- Query invalidation in render cycle
+- Dependency array causing infinite loop
+
+---
+
+## MCP Integration (Chrome DevTools)
+
+When using the Chrome DevTools MCP server, AI agents can automate troubleshooting:
+
+### Automated Workflows
+
+1. **Inspect DevTools state** via browser automation
+2. **Take screenshots** of DevTools panel for context
+3. **Trigger manual refetches** to test stale data behavior
+4. **Invalidate queries programmatically** for cache testing
+5. **Monitor network requests** alongside query state
+
+### Example AI Agent Workflow
+
+```bash
+# AI agent can automate this troubleshooting flow:
+# 1. Navigate to page with issue
+# 2. Open TanStack Query DevTools
+# 3. Take screenshot of DevTools panel
+# 4. Analyze query state (keys, status, data)
+# 5. Manually trigger refetch to test behavior
+# 6. Compare before/after screenshots
+# 7. Report findings with context
+```
+
+---
+
+## DevTools Configuration Options
+
+- **`initialIsOpen: boolean`** - Start with DevTools panel open (default: `false`)
+- **`buttonPosition`** - Toggle button position: `"top-left"`, `"top-right"`, `"bottom-left"`, `"bottom-right"`, `"relative"`
+- **`position`** - DevTools panel position: `"top"`, `"bottom"`, `"left"`, `"right"`
+- **`styleNonce: string`** - CSP nonce for inline styles
+- **`errorTypes`** - Predefine error triggers for testing error states
+
+---
+
+## Embedded Mode (Optional)
+
+For custom development tools integration:
+
+```typescript
+import { ReactQueryDevtoolsPanel } from '@tanstack/react-query-devtools'
+
+function CustomDevTools() {
+  const [isOpen, setIsOpen] = React.useState(false)
+
+  return (
+    <>
+      <button onClick={() => setIsOpen(!isOpen)}>
+        {isOpen ? 'Close' : 'Open'} DevTools
+      </button>
+      {isOpen && (
+        <ReactQueryDevtoolsPanel
+          onClose={() => setIsOpen(false)}
+          style={{ height: '500px' }}
+        />
+      )}
+    </>
+  )
+}
+```
+
+---
+
+## Best Practices
+
+### ✅ DO:
+- Use DevTools for real-time debugging during development
+- Pair with Chrome DevTools MCP for AI-driven troubleshooting
+- Manually test edge cases using invalidate/refetch buttons
+- Take screenshots of DevTools state for bug reports
+- Check query keys match exactly across components
+
+### ❌ DON'T:
+- Don't use DevTools for E2E testing (use unit/integration tests)
+- Don't rely on DevTools in production (automatically excluded)
+- Don't forget to verify query key stability (objects/arrays)
+- Don't ignore `staleTime`/`cacheTime` configuration
+- Don't add console.log when DevTools can show same info
+
+---
+
+## Key Reminders
+
+1. **Not for E2E testing** - Use for manual troubleshooting during development only
+2. **Automatic exclusion** - DevTools are excluded from production builds by default
+3. **Chrome DevTools MCP** - Pairs well with MCP server for AI-driven troubleshooting
+4. **Real-time inspection** - See exactly what TanStack Query is doing without console.log
+
+---
+
+## Related Documentation
+
+- **Architecture Section 13.3:** Frontend Troubleshooting with TanStack Query DevTools
+- **Architecture Section 19.1:** Monitoring Strategy (includes DevTools)
+- **CLAUDE.md:** TanStack Query DevTools for Troubleshooting section
+- **TanStack Docs:** https://tanstack.com/query/latest/docs/devtools
+
+---
+
+**Last Updated:** 2025-11-05
