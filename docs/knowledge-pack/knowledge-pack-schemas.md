@@ -1,0 +1,833 @@
+# Knowledge Pack JSON Schemas
+
+**Version**: 1.0
+**Date**: 2025-11-05
+**Project**: Insurance Broker Quote Assistant (IQuote Pro)
+**Purpose**: Define JSON schemas for knowledge pack data with granular source tracking and cuid2-based audit trails
+
+---
+
+## Overview
+
+This document defines the JSON schemas used throughout the knowledge pack, from raw scraped data to production-ready files. Every schema includes source tracking metadata to support complete audit trails and regulatory compliance.
+
+---
+
+## Schema Files
+
+| Schema File | Purpose | Location |
+|------------|---------|----------|
+| `carrier-schema.json` | Carrier data with products, discounts, eligibility | `knowledge_pack/schemas/` |
+| `state-schema.json` | State requirements and minimums | `knowledge_pack/schemas/` |
+| `product-schema.json` | Product definitions | `knowledge_pack/schemas/` |
+| `compliance-schema.json` | Compliance rules and disclaimers | `knowledge_pack/schemas/` |
+| `source-metadata.json` | Source citation format | `knowledge_pack/schemas/` |
+| `resolution-metadata.json` | Conflict resolution format | `knowledge_pack/schemas/` |
+| `raw-data-schema.json` | Raw scraped data format | `knowledge_pack/schemas/` |
+
+---
+
+## Core Concepts
+
+### Field Metadata Envelope
+
+Every field in the knowledge pack uses this structure:
+
+```typescript
+interface FieldWithMetadata<T> {
+  _id: string              // Unique ID (cuid2) for this field
+  value: T                 // The actual data value
+  _sources: Source[]       // Direct source citations (≥1 required if not inherited)
+  _inheritedFrom?: string  // Parent field ID (if sources inherited)
+  _resolution?: Resolution // Conflict resolution metadata (if applicable)
+}
+```
+
+### Source Object
+
+```typescript
+interface Source {
+  uri: string              // Full URL
+  pageId?: string          // Unique page ID (page_{cuid2}) - added for Phase 2 compatibility
+  pageFile?: string        // Path to saved page (_pages/page_{cuid2}.{ext}) - added for Phase 2 compatibility
+  elementRef?: string      // CSS selector or XPath
+  lineRef?: number         // Line number (for text files)
+  accessedDate: string     // ISO 8601 date-time with timezone (YYYY-MM-DDTHH:mm:ssZ)
+  extractedValue?: string  // Raw value from source (before normalization)
+  confidence: 'high' | 'medium' | 'low'  // See source-hierarchy.md for confidence scoring formula
+  primary?: boolean        // Is this the primary source (for multi-source)
+}
+```
+
+### Resolution Object
+
+```typescript
+interface Resolution {
+  conflictId: string       // Reference to conflict in conflicts.json
+  selectedValue: any       // The chosen value
+  method: string           // Resolution strategy used
+  rationale: string        // Human-readable explanation
+  resolvedBy: string       // Curator identifier
+  resolvedDate: string     // ISO 8601 date
+}
+```
+
+---
+
+## 1. Carrier Schema
+
+**File**: `knowledge_pack/schemas/carrier-schema.json`
+
+### Full Schema
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://iquote-pro.dev/schemas/carrier.json",
+  "title": "Insurance Carrier",
+  "description": "Complete carrier data including eligibility, discounts, and pricing",
+  "type": "object",
+  "required": ["meta", "carrier"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {"type": "string"},
+        "generatedDate": {"type": "string", "format": "date-time"},
+        "carrier": {"type": "string"},
+        "totalDataPoints": {"type": "integer"},
+        "totalSources": {"type": "integer"},
+        "conflictsResolved": {"type": "integer"}
+      }
+    },
+    "carrier": {
+      "type": "object",
+      "required": ["_id", "_sources", "name", "operatesIn", "products", "eligibility", "discounts"],
+      "properties": {
+        "_id": {"type": "string", "pattern": "^carr_[a-z0-9]{10}$"},
+        "_sources": {"$ref": "#/definitions/sources"},
+        "name": {"type": "string"},
+        "operatesIn": {"$ref": "#/definitions/fieldWithMetadata"},
+        "products": {"$ref": "#/definitions/fieldWithMetadata"},
+        "eligibility": {
+          "type": "object",
+          "properties": {
+            "_id": {"type": "string"},
+            "_sources": {"$ref": "#/definitions/sources"},
+            "auto": {"$ref": "#/definitions/productEligibility"},
+            "home": {"$ref": "#/definitions/productEligibility"},
+            "renters": {"$ref": "#/definitions/productEligibility"},
+            "umbrella": {"$ref": "#/definitions/productEligibility"}
+          }
+        },
+        "discounts": {
+          "type": "array",
+          "items": {"$ref": "#/definitions/discount"}
+        },
+        "compensation": {"$ref": "#/definitions/compensation"},
+        "averagePricing": {"$ref": "#/definitions/averagePricing"}
+      }
+    }
+  },
+  "definitions": {
+    "sources": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "type": "object",
+        "required": ["uri", "accessedDate"],
+        "properties": {
+          "uri": {"type": "string", "format": "uri"},
+          "pageId": {"type": "string", "pattern": "^page_[a-z0-9]{10}$"},
+          "pageFile": {"type": "string"},
+          "elementRef": {"type": "string"},
+          "lineRef": {"type": "integer"},
+          "accessedDate": {"type": "string", "format": "date-time"},
+          "extractedValue": {"type": "string"},
+          "confidence": {"enum": ["high", "medium", "low"]},
+          "primary": {"type": "boolean"}
+        }
+      }
+    },
+    "fieldWithMetadata": {
+      "type": "object",
+      "required": ["_id", "value"],
+      "properties": {
+        "_id": {"type": "string"},
+        "value": {},
+        "_sources": {"$ref": "#/definitions/sources"},
+        "_inheritedFrom": {"type": "string"},
+        "_resolution": {"$ref": "#/definitions/resolution"}
+      }
+    },
+    "resolution": {
+      "type": "object",
+      "required": ["conflictId", "selectedValue", "method", "rationale", "resolvedBy", "resolvedDate"],
+      "properties": {
+        "conflictId": {"type": "string"},
+        "selectedValue": {},
+        "method": {"type": "string"},
+        "rationale": {"type": "string"},
+        "resolvedBy": {"type": "string"},
+        "resolvedDate": {"type": "string", "format": "date-time"}
+      }
+    },
+    "productEligibility": {
+      "type": "object",
+      "properties": {
+        "_id": {"type": "string"},
+        "_sources": {"$ref": "#/definitions/sources"},
+        "minAge": {"$ref": "#/definitions/fieldWithMetadata"},
+        "maxAge": {"$ref": "#/definitions/fieldWithMetadata"},
+        "maxVehicles": {"$ref": "#/definitions/fieldWithMetadata"},
+        "stateSpecific": {
+          "type": "object",
+          "patternProperties": {
+            "^[A-Z]{2}$": {"type": "object"}
+          }
+        }
+      }
+    },
+    "discount": {
+      "type": "object",
+      "required": ["_id", "name", "percentage", "products", "states", "requirements"],
+      "properties": {
+        "_id": {"type": "string", "pattern": "^disc_[a-z0-9]{10}$"},
+        "name": {"$ref": "#/definitions/fieldWithMetadata"},
+        "percentage": {"$ref": "#/definitions/fieldWithMetadata"},
+        "products": {"$ref": "#/definitions/fieldWithMetadata"},
+        "states": {"$ref": "#/definitions/fieldWithMetadata"},
+        "requirements": {"$ref": "#/definitions/fieldWithMetadata"},
+        "stackable": {"$ref": "#/definitions/fieldWithMetadata"},
+        "description": {"$ref": "#/definitions/fieldWithMetadata"}
+      }
+    },
+    "compensation": {
+      "type": "object",
+      "properties": {
+        "_id": {"type": "string"},
+        "commissionRate": {"$ref": "#/definitions/fieldWithMetadata"},
+        "commissionType": {"$ref": "#/definitions/fieldWithMetadata"}
+      }
+    },
+    "averagePricing": {
+      "type": "object",
+      "properties": {
+        "_id": {"type": "string"},
+        "auto": {"type": "object"},
+        "home": {"type": "object"},
+        "renters": {"type": "object"},
+        "umbrella": {"type": "object"}
+      }
+    }
+  }
+}
+```
+
+### Example Carrier Data
+
+```json
+{
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedDate": "2025-11-05T16:00:00Z",
+    "carrier": "GEICO",
+    "totalDataPoints": 157,
+    "totalSources": 42,
+    "conflictsResolved": 3
+  },
+  "carrier": {
+    "_id": "carr_ckm9x7w8k0",
+    "_sources": [
+      {
+        "uri": "https://www.geico.com/",
+        "elementRef": "header > h1.logo",
+        "accessedDate": "2025-11-05T12:00:00Z",
+        "confidence": "high"
+      }
+    ],
+    "name": "GEICO",
+    "operatesIn": {
+      "_id": "fld_ckm9x7wdx1",
+      "value": ["CA", "TX", "FL", "NY", "IL"],
+      "_sources": [
+        {
+          "uri": "https://www.geico.com/information/states/",
+          "elementRef": "section#state-list > ul > li",
+          "accessedDate": "2025-11-05T12:05:00Z",
+          "extractedValue": "50 states listed",
+          "confidence": "high"
+        }
+      ]
+    },
+    "products": {
+      "_id": "fld_ckm9x7whp2",
+      "value": ["auto", "home", "renters", "umbrella"],
+      "_sources": [
+        {
+          "uri": "https://www.geico.com/",
+          "elementRef": "nav.products > ul > li",
+          "accessedDate": "2025-11-05T12:00:00Z",
+          "confidence": "high"
+        }
+      ]
+    },
+    "eligibility": {
+      "_id": "elig_ckm9x7wwx7",
+      "_sources": [],
+      "auto": {
+        "_id": "elig_ckm9x7wza8",
+        "minAge": {
+          "_id": "fld_ckm9x7wkm3",
+          "value": 16,
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/auto/eligibility/",
+              "elementRef": "section#age-requirements > p",
+              "accessedDate": "2025-11-05T12:10:00Z",
+              "extractedValue": "Minimum age: 16 years old",
+              "confidence": "high"
+            }
+          ]
+        },
+        "maxVehicles": {
+          "_id": "fld_ckm9x7wnp4",
+          "value": 4,
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/auto/eligibility/",
+              "elementRef": "section#vehicle-limits > p",
+              "accessedDate": "2025-11-05T12:10:00Z",
+              "extractedValue": "Up to 4 vehicles per policy",
+              "confidence": "high"
+            }
+          ]
+        }
+      }
+    },
+    "discounts": [
+      {
+        "_id": "disc_ckm9x7wqr5",
+        "name": {
+          "_id": "fld_ckm9x7wtu6",
+          "value": "Multi-Policy Bundle",
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/auto/discounts/",
+              "elementRef": "div#multi-policy > h3",
+              "accessedDate": "2025-11-05T12:15:00Z",
+              "confidence": "high"
+            }
+          ]
+        },
+        "percentage": {
+          "_id": "fld_ckm9x7x2c9",
+          "value": 15,
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/auto/discounts/",
+              "elementRef": "div#multi-policy > p.percentage",
+              "accessedDate": "2025-11-05T12:15:00Z",
+              "extractedValue": "Save up to 15%",
+              "confidence": "high",
+              "primary": true
+            },
+            {
+              "uri": "https://www.nerdwallet.com/article/insurance/geico-discounts",
+              "elementRef": "table > tr:nth-child(3) > td:nth-child(2)",
+              "accessedDate": "2025-11-05T12:20:00Z",
+              "extractedValue": "12%",
+              "confidence": "medium",
+              "primary": false
+            }
+          ],
+          "_resolution": {
+            "conflictId": "conf_ckm9x7x5ea",
+            "selectedValue": 15,
+            "method": "authoritative_source",
+            "rationale": "GEICO official site is authoritative; NerdWallet may show conservative estimate",
+            "resolvedBy": "data_curator",
+            "resolvedDate": "2025-11-05T15:30:00Z"
+          }
+        },
+        "products": {
+          "_id": "fld_ckm9x7x7fb",
+          "value": ["auto", "home"],
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/auto/discounts/",
+              "elementRef": "div#multi-policy > p.applies-to",
+              "accessedDate": "2025-11-05T12:15:00Z",
+              "extractedValue": "Bundle auto and home insurance",
+              "confidence": "high"
+            }
+          ]
+        },
+        "states": {
+          "_id": "fld_ckm9x7xagc",
+          "value": ["CA", "TX", "FL", "NY", "IL"],
+          "_sources": [],
+          "_inheritedFrom": "fld_ckm9x7wdx1"
+        },
+        "requirements": {
+          "_id": "fld_ckm9x7xchd",
+          "value": {
+            "mustHaveProducts": ["auto", "home"],
+            "minProducts": 2
+          },
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/auto/discounts/",
+              "elementRef": "div#multi-policy > ul.requirements",
+              "accessedDate": "2025-11-05T12:15:00Z",
+              "confidence": "high"
+            }
+          ]
+        },
+        "stackable": {
+          "_id": "fld_ckm9x7xfje",
+          "value": true,
+          "_sources": [],
+          "_inheritedFrom": "disc_ckm9x7wqr5",
+          "_note": "No explicit statement; assume true unless noted otherwise"
+        }
+      }
+    ]
+  }
+}
+```
+
+---
+
+## 2. State Schema
+
+**File**: `knowledge_pack/schemas/state-schema.json`
+
+### Full Schema
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://iquote-pro.dev/schemas/state.json",
+  "title": "State Insurance Requirements",
+  "description": "State-specific insurance requirements, minimums, and special rules",
+  "type": "object",
+  "required": ["meta", "state"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {"type": "string"},
+        "generatedDate": {"type": "string", "format": "date-time"},
+        "state": {"type": "string", "pattern": "^[A-Z]{2}$"}
+      }
+    },
+    "state": {
+      "type": "object",
+      "required": ["_id", "_sources", "code", "name", "minimumCoverages"],
+      "properties": {
+        "_id": {"type": "string", "pattern": "^state_[a-z0-9]{10}$"},
+        "_sources": {"$ref": "#/definitions/sources"},
+        "code": {"type": "string", "pattern": "^[A-Z]{2}$"},
+        "name": {"type": "string"},
+        "minimumCoverages": {
+          "type": "object",
+          "properties": {
+            "_id": {"type": "string"},
+            "auto": {"$ref": "#/definitions/autoMinimums"},
+            "home": {"$ref": "#/definitions/homeMinimums"},
+            "renters": {"$ref": "#/definitions/rentersMinimums"}
+          }
+        },
+        "specialRequirements": {"$ref": "#/definitions/fieldWithMetadata"},
+        "averagePremiums": {"$ref": "#/definitions/fieldWithMetadata"}
+      }
+    }
+  },
+  "definitions": {
+    "sources": {"$ref": "carrier-schema.json#/definitions/sources"},
+    "fieldWithMetadata": {"$ref": "carrier-schema.json#/definitions/fieldWithMetadata"},
+    "autoMinimums": {
+      "type": "object",
+      "properties": {
+        "_id": {"type": "string"},
+        "bodilyInjuryPerPerson": {"$ref": "#/definitions/fieldWithMetadata"},
+        "bodilyInjuryPerAccident": {"$ref": "#/definitions/fieldWithMetadata"},
+        "propertyDamage": {"$ref": "#/definitions/fieldWithMetadata"},
+        "uninsuredMotorist": {"$ref": "#/definitions/fieldWithMetadata"},
+        "personalInjuryProtection": {"$ref": "#/definitions/fieldWithMetadata"}
+      }
+    },
+    "homeMinimums": {
+      "type": "object",
+      "properties": {
+        "_id": {"type": "string"},
+        "dwellingCoverage": {"$ref": "#/definitions/fieldWithMetadata"},
+        "liabilityCoverage": {"$ref": "#/definitions/fieldWithMetadata"}
+      }
+    },
+    "rentersMinimums": {
+      "type": "object",
+      "properties": {
+        "_id": {"type": "string"},
+        "personalProperty": {"$ref": "#/definitions/fieldWithMetadata"},
+        "liabilityCoverage": {"$ref": "#/definitions/fieldWithMetadata"}
+      }
+    }
+  }
+}
+```
+
+### Example State Data
+
+```json
+{
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedDate": "2025-11-05T16:00:00Z",
+    "state": "CA"
+  },
+  "state": {
+    "_id": "state_ckm9x7xhkf",
+    "_sources": [
+      {
+        "uri": "https://www.insurance.ca.gov/01-consumers/",
+        "accessedDate": "2025-11-05T13:00:00Z",
+        "confidence": "high"
+      }
+    ],
+    "code": "CA",
+    "name": "California",
+    "minimumCoverages": {
+      "_id": "fld_ckm9x7xjlg",
+      "auto": {
+        "_id": "fld_ckm9x7xmnh",
+        "bodilyInjuryPerPerson": {
+          "_id": "fld_ckm9x7xpoi",
+          "value": 15000,
+          "_sources": [
+            {
+              "uri": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-auto/lw-lic-1.cfm",
+              "elementRef": "section#minimums > table > tr:nth-child(1) > td:nth-child(2)",
+              "accessedDate": "2025-11-05T13:05:00Z",
+              "extractedValue": "$15,000 per person",
+              "confidence": "high"
+            }
+          ]
+        },
+        "bodilyInjuryPerAccident": {
+          "_id": "fld_ckm9x7xrpj",
+          "value": 30000,
+          "_sources": [
+            {
+              "uri": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-auto/lw-lic-1.cfm",
+              "elementRef": "section#minimums > table > tr:nth-child(2) > td:nth-child(2)",
+              "accessedDate": "2025-11-05T13:05:00Z",
+              "extractedValue": "$30,000 per accident",
+              "confidence": "high"
+            }
+          ]
+        },
+        "propertyDamage": {
+          "_id": "fld_ckm9x7xtqk",
+          "value": 5000,
+          "_sources": [
+            {
+              "uri": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-auto/lw-lic-1.cfm",
+              "elementRef": "section#minimums > table > tr:nth-child(3) > td:nth-child(2)",
+              "accessedDate": "2025-11-05T13:05:00Z",
+              "extractedValue": "$5,000 property damage",
+              "confidence": "high"
+            }
+          ]
+        }
+      }
+    },
+    "specialRequirements": {
+      "_id": "fld_ckm9x7xwrl",
+      "value": {
+        "requiresProposition103Notice": true,
+        "goodDriverDiscount": {
+          "available": true,
+          "criteria": "No at-fault accidents in 3 years"
+        }
+      },
+      "_sources": [
+        {
+          "uri": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-auto/good-driver.cfm",
+          "accessedDate": "2025-11-05T13:10:00Z",
+          "confidence": "high"
+        }
+      ]
+    }
+  }
+}
+```
+
+---
+
+## 3. Raw Data Schema
+
+**File**: `knowledge_pack/schemas/raw-data-schema.json`
+
+### Purpose
+
+Captures data during initial scraping phase, before conflict resolution.
+
+### Full Schema
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://iquote-pro.dev/schemas/raw-data.json",
+  "title": "Raw Scraped Data",
+  "description": "Raw data entry from web scraping, preserved for audit trail",
+  "type": "object",
+  "required": ["id", "dataPoint", "rawValue", "source"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^raw_[a-z0-9]{10}$",
+      "description": "Unique ID for this raw data entry"
+    },
+    "dataPoint": {
+      "type": "string",
+      "description": "Semantic identifier (e.g., 'geico_multi_policy_discount_percentage')"
+    },
+    "rawValue": {
+      "type": "string",
+      "description": "Exact value as extracted from source"
+    },
+    "normalizedValue": {
+      "description": "Parsed/normalized value (number, boolean, array, etc.)"
+    },
+    "source": {
+      "type": "object",
+      "required": ["uri", "accessedDate"],
+      "properties": {
+        "uri": {"type": "string", "format": "uri", "description": "Source URL"},
+        "pageId": {"type": "string", "pattern": "^page_[a-z0-9]{10}$", "description": "Unique page ID (page_{cuid2}) - optional for Phase 2 compatibility"},
+        "pageFile": {"type": "string", "description": "Path to saved page (_pages/page_{cuid2}.{ext}) - optional for Phase 2 compatibility"},
+        "elementRef": {"type": "string", "description": "CSS selector or XPath to element"},
+        "extractedValue": {"type": "string", "description": "Exact text extracted from element"},
+        "accessedDate": {"type": "string", "format": "date-time", "description": "ISO 8601 with timezone (YYYY-MM-DDTHH:mm:ssZ)"},
+        "extractionMethod": {"enum": ["manual", "automated", "api"]},
+        "confidence": {"enum": ["high", "medium", "low"], "description": "See source-hierarchy.md for confidence scoring formula"}
+      }
+    },
+    "context": {
+      "type": "object",
+      "properties": {
+        "surroundingText": {"type": "string"},
+        "pageTitle": {"type": "string"},
+        "qualifier": {"type": "string", "description": "'up to', 'average', 'typical', etc."}
+      }
+    }
+  }
+}
+```
+
+---
+
+## 4. Conflict Schema
+
+**File**: `knowledge_pack/schemas/conflict-schema.json`
+
+### Full Schema
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://iquote-pro.dev/schemas/conflict.json",
+  "title": "Data Conflict",
+  "description": "Detected conflict between multiple sources for same data point",
+  "type": "object",
+  "required": ["conflicts"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "properties": {
+        "totalConflicts": {"type": "integer"},
+        "pendingConflicts": {"type": "integer"},
+        "resolvedConflicts": {"type": "integer"}
+      }
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "dataPoint", "conflictType", "severity", "sources", "status"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^conf_[a-z0-9]{10}$"},
+          "dataPoint": {"type": "string"},
+          "detectedDate": {"type": "string", "format": "date-time"},
+          "conflictType": {
+            "enum": [
+              "range_vs_specific",
+              "numeric_difference",
+              "state_availability",
+              "boolean_difference",
+              "missing_data",
+              "date_mismatch"
+            ]
+          },
+          "severity": {"enum": ["critical", "high", "medium", "low"]},
+          "sources": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {"type": "string"},
+                "uri": {"type": "string"},
+                "value": {},
+                "confidence": {"enum": ["high", "medium", "low"]},
+                "sourceAuthority": {"type": "integer", "minimum": 1, "maximum": 5}
+              }
+            }
+          },
+          "analysis": {
+            "type": "object",
+            "properties": {
+              "percentageDifference": {"type": "number"},
+              "affectsRouting": {"type": "boolean"},
+              "affectsCompliance": {"type": "boolean"},
+              "recommendedAction": {"type": "string"}
+            }
+          },
+          "resolution": {
+            "oneOf": [
+              {"type": "null"},
+              {"$ref": "carrier-schema.json#/definitions/resolution"}
+            ]
+          },
+          "status": {"enum": ["pending", "resolved", "escalated"]}
+        }
+      }
+    }
+  }
+}
+```
+
+---
+
+## 5. cuid2 ID Conventions
+
+### Format Patterns
+
+All entity IDs use **cuid2** format with type prefixes. See [id-conventions.md](id-conventions.md) for complete specification.
+
+| Entity Type | Pattern | Example |
+|-------------|---------|---------|
+| Carrier | `carr_{cuid2}` | `carr_ckm9x7w8k0` |
+| State | `state_{cuid2}` | `state_ckm9x7wtu6` |
+| Discount | `disc_{cuid2}` | `disc_ckm9x7wdx1` |
+| Field | `fld_{cuid2}` | `fld_ckm9x7whp2` |
+| Conflict | `conf_{cuid2}` | `conf_ckm9x7wkm3` |
+| Raw Data | `raw_{cuid2}` | `raw_ckm9x7wnp4` |
+| Eligibility | `elig_{cuid2}` | `elig_ckm9x7wwx7` |
+| Page | `page_{cuid2}` | `page_ckm9x7wqr5` |
+
+### ID Generation
+
+```typescript
+import { createId } from '@paralleldrive/cuid2';
+
+const fieldId = `fld_${createId()}`;  // "fld_ckm9x7whp2"
+const carrierId = `carr_${createId()}`;  // "carr_ckm9x7w8k0"
+```
+
+---
+
+## 6. Source Inheritance Rules
+
+### When to Inherit
+
+Inherit parent source when:
+1. Child field has **no conflicting information** from direct sources
+2. Child field is **implied by parent** (e.g., discount states = carrier states)
+3. **No specific citation found** during scraping
+
+### How to Mark Inheritance
+
+```json
+{
+  "_id": "field-008",
+  "value": ["CA", "TX", "FL", "NY", "IL"],
+  "_sources": [],                    // Empty array
+  "_inheritedFrom": "field-001",     // Parent field ID
+  "_note": "Inherits from carrier operating states"
+}
+```
+
+### Inheritance Chain
+
+Can inherit from grandparent if parent also inherits:
+
+```json
+// Carrier level
+"operatesIn": {
+  "_id": "field-001",
+  "value": ["CA", "TX", "FL"],
+  "_sources": [...]
+}
+
+// Discount level (child)
+"discounts": [{
+  "_id": "discount-001",
+  "states": {
+    "_id": "field-002",
+    "_sources": [],
+    "_inheritedFrom": "field-001"
+  }
+}]
+
+// Requirement level (grandchild)
+"requirements": {
+  "states": {
+    "_id": "field-003",
+    "_sources": [],
+    "_inheritedFrom": "field-002"  // Always the direct parent
+  }
+}
+```
+
+---
+
+## 7. Validation Rules
+
+### Required Validations
+
+1. **Every _id is unique** across entire knowledge pack
+2. **Every field has _sources OR _inheritedFrom** (never both empty)
+3. **_inheritedFrom references valid _id** in parent/ancestor
+4. **Source URIs are valid** (proper format, accessible)
+5. **Conflict IDs in _resolution exist** in conflicts.json
+6. **Primary source exists** for multi-source fields (at least one primary=true)
+7. **Metadata envelopes consistent** (all required fields present)
+
+### JSON Schema Validation Command
+
+```bash
+bun run validate-schema -- knowledge_pack/carriers/geico.json
+```
+
+---
+
+## Summary
+
+These schemas ensure:
+
+✅ **Complete audit trail**: Every value traceable to source  
+✅ **Conflict transparency**: Disagreements documented  
+✅ **Source diversity**: Multiple sources supported  
+✅ **Inheritance clarity**: Parent→child relationships explicit  
+✅ **Validation support**: Machine-checkable compliance
+
+Use these schemas to validate all knowledge pack files before deployment.
+
+---
+
+**Document Version**: 1.0  
+**Last Updated**: 2025-11-05  
+**Status**: Ready for Implementation
