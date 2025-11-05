@@ -1,0 +1,69 @@
+---
+description: when working with Hono framework or using the hono CLI
+alwaysApply: false
+---
+
+## Hono Development
+
+Use the `hono` CLI for efficient development. View all commands with `hono --help`.
+
+The Hono CLI is designed for both humans and AI. It provides five subcommands:
+
+### Core Commands
+
+- **`hono docs [path]`** - Browse Hono documentation (outputs Markdown to stdout, AI-friendly)
+- **`hono search <query>`** - Search documentation (outputs JSON with URLs and paths)
+- **`hono request [file]`** - Test app requests without starting a server (default: `src/index.ts`)
+- **`hono serve [file]`** - Start Hono app at `http://localhost:7070` with optional middleware via `--use`
+- **`hono optimize [entry]`** - Optimize Hono for your app using PreparedRegExpRouter (outputs to `dist/index.js`)
+
+### Quick Examples
+
+```bash
+# Search for topics
+hono search middleware
+hono search "getting started"
+
+# View documentation
+hono docs /docs/api/routing
+hono docs /docs/api/context
+hono docs /docs/guides/middleware
+
+# Test your app (no server needed!)
+hono request -P /api/users src/index.ts
+hono request -P /api/users -X POST -d '{"name":"Alice"}' src/index.ts
+
+# Start a development server
+hono serve src/index.ts
+
+# Apply middleware without changing code
+hono serve --use 'logger()' src/index.ts
+hono serve --use "logger()" --use "basicAuth({username:'foo',password:'bar'})" src/index.ts
+
+# Serve static files or create reverse proxy
+hono serve --use "serveStatic({root:'./'})"
+
+# Optimize your app for production
+hono optimize src/index.ts
+# Then deploy: wrangler deploy dist/index.js
+```
+
+### AI-Oriented Workflow
+
+1. Search documentation: `hono search <query>`
+2. Read relevant docs: `hono docs [path]`
+3. Test implementation: `hono request [file]`
+
+This workflow allows AI to autonomously search and read documentation, then test implementations without starting servers.
+
+### Human-Oriented Commands
+
+- **`hono serve`**: Start development server with optional middleware via `--use` flag
+  - Apply middleware without modifying code: `hono serve --use 'logger()' src/index.ts`
+  - Start with empty app by omitting file path
+  - Default port: `http://localhost:7070`
+
+- **`hono optimize`**: Optimize your app for production
+  - Uses PreparedRegExpRouter for faster initialization and smaller bundle size
+  - Outputs optimized code to `dist/index.js`
+  - Can reduce bundle size by ~38% compared to standard builds
