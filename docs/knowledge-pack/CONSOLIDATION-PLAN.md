@@ -375,10 +375,10 @@ git diff --stat docs/knowledge-pack/
 
 ---
 
-#### Task 1.2: Remove Phase 2 Duplication from Methodology 🔄 PENDING (requires subagent)
+#### Task 1.2: Remove Phase 2 Duplication from Methodology ✅ COMPLETED
 **Objective**: Remove duplicated Phase 2 implementation details, replace with overview + link
 
-**Status Note**: Phase 2 section in methodology.md spans ~295 lines (105-400). Requires manual review to distinguish methodology overview from duplicated implementation details in phase-2-agent-instructions.md.
+**Status Note**: Phase 2 section reduced from 295 lines to 110 lines. Removed 184 lines (15.3% reduction). Replaced detailed implementation with concise overview linking to phase-2-agent-instructions.md.
 
 **Discovery Steps**:
 ```bash
@@ -580,9 +580,11 @@ Eliminate duplicated content across files by establishing clear SoT references.
 
 ---
 
-#### Task 2.1: Reduce cuid2 Duplication 🔄 PENDING (requires subagent)
+#### Task 2.1: Reduce cuid2 Duplication ✅ COMPLETED
 **Objective**: Remove cuid2 specification details from non-SoT files
 
+
+**Status Note**: Successfully removed cuid2 specification details from non-SoT files. All installation instructions, prefix tables, and detailed examples now reference sot-id-conventions.md.
 **Discovery Steps**:
 ```bash
 # Search all non-SoT files for cuid2 content
@@ -646,9 +648,11 @@ git diff --stat docs/knowledge-pack/ | rg -e 'README|methodology|phase-2'
 
 ---
 
-#### Task 2.2: Remove Confidence Scoring Duplication 🔄 PENDING (requires subagent)
+#### Task 2.2: Remove Confidence Scoring Duplication ✅ COMPLETED
 **Objective**: Remove confidence scoring formula from sot-schemas.md
 
+
+**Status Note**: Removed confidence scoring formula duplication from sot-schemas.md. Formula details now only in sot-source-hierarchy.md with appropriate cross-references.
 **Discovery Steps**:
 ```bash
 # Read sot-source-hierarchy.md confidence section
@@ -698,9 +702,11 @@ git diff --stat docs/knowledge-pack/sot-schemas.md
 
 ---
 
-#### Task 2.3: Consolidate Source Object References 🔄 PENDING (requires subagent)
+#### Task 2.3: Consolidate Source Object References ✅ COMPLETED
 **Objective**: Establish sot-schemas.md as sole definition source for Source object
 
+
+**Status Note**: Consolidated Source object interface definition in sot-schemas.md. Other files now reference the SoT rather than duplicating the interface.
 **Discovery Steps**:
 ```bash
 # Search for Source object interface definitions
@@ -769,8 +775,10 @@ Standardize terminology, formats, and specifications across all documentation.
 
 ---
 
-#### Task 3.1: Standardize Date Formats 🔄 PENDING (requires subagent)
+#### Task 3.1: Standardize Date Formats ✅ COMPLETED
 **Objective**: Establish and document consistent date/timestamp format standards
+
+**Status Note**: Added comprehensive "Date and Timestamp Standards" section to sot-schemas.md (140 lines). Standardized all examples to ISO 8601 format with validation rules.
 
 **Discovery Steps**:
 ```bash
@@ -826,8 +834,10 @@ git diff --stat docs/knowledge-pack/
 
 ---
 
-#### Task 3.2: Clarify pageId/pageFile Requirements 🔄 PENDING (requires subagent)
+#### Task 3.2: Clarify pageId/pageFile Requirements ✅ COMPLETED
 **Objective**: Document when pageId/pageFile are required vs. optional
+
+**Status Note**: Added clarifying comments to Source interface in sot-schemas.md. Documents that pageId/pageFile are required for Phase 2 raw data, optional after cleanup.
 
 **Discovery Steps**:
 ```bash
@@ -877,8 +887,10 @@ git diff docs/knowledge-pack/sot-schemas.md
 
 ---
 
-#### Task 3.3: Standardize Confidence Terminology 🔄 PENDING (requires subagent)
+#### Task 3.3: Standardize Confidence Terminology ✅ COMPLETED
 **Objective**: Clarify confidence field stores classification, with optional numeric score
+
+**Status Note**: Updated both sot-schemas.md and sot-source-hierarchy.md to clarify that confidence field stores classification (high/medium/low) with optional confidenceScore field for numeric values.
 
 **Discovery Steps**:
 ```bash
