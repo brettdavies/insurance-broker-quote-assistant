@@ -47,29 +47,7 @@ Every field in the knowledge pack uses a metadata envelope for source tracking. 
 
 #### 1.2 Source Inheritance Rules
 
-When a child data point has no direct sources, it inherits from its parent:
-
-```json
-{
-  "carrier": {
-    "id": "carr_jiia4ewjg2",
-    "value": "GEICO",
-    "sources": [{"uri": "https://www.geico.com/", "...": "..."}]
-  },
-  "discounts": [
-    {
-      "id": "disc_cm5e9f1o3t",
-      "states": {
-        "id": "fld_p1ejx248sn",
-        "value": ["CA", "TX", "FL", "NY", "IL"],
-        "sources": [],
-        "inheritedFrom": "carr_jiia4ewjg2",
-        "note": "Inherits from carrier operating states since no discount-specific state restrictions found"
-      }
-    }
-  ]
-}
-```
+When a child data point has no direct sources, it inherits from its parent. See [sot-schemas.md#8-source-inheritance-rules](sot-schemas.md#8-source-inheritance-rules) for complete specification and examples.
 
 #### 1.3 cuid2 Generation Conventions
 
@@ -332,16 +310,7 @@ function calculateSeverity(values, dataPoint) {
 
 See [sot-source-hierarchy.md](sot-source-hierarchy.md) for complete conflict resolution decision tree and source authority levels.
 
-**Quick reference (7 strategies in priority order):**
-1. Authoritative source hierarchy → [Details](sot-source-hierarchy.md#source-authority-levels)
-2. Specificity preference (exact > range)
-3. Temporal preference (recent > old)
-4. Conservative estimate (domain knowledge)
-5. Majority consensus (3+ sources)
-6. Context awareness (parse qualifiers)
-7. Expert judgment (manual with rationale)
-
-[View complete decision tree →](sot-source-hierarchy.md#conflict-resolution-decision-tree)
+See [sot-source-hierarchy.md#conflict-resolution-decision-tree](sot-source-hierarchy.md#conflict-resolution-decision-tree) for the complete 7-step conflict resolution decision tree and priority ordering.
 
 #### 4.2 Resolution Decision Format
 

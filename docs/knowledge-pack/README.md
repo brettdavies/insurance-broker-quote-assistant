@@ -97,16 +97,7 @@ All entities use **cuid2** for globally unique, collision-resistant identifiers.
 
 ### Source Authority Hierarchy
 
-Sources are ranked by authority level (1-5, regulatory > carrier > industry > comparison > forums). See [sot-source-hierarchy.md](sot-source-hierarchy.md) for complete hierarchy and conflict resolution strategies.
-
-**Quick reference:**
-1. Level 5 - Regulatory (State insurance departments)
-2. Level 4 - Primary (Carrier official sites)
-3. Level 3 - Reference (Industry organizations)
-4. Level 2 - Secondary (Financial/comparison sites)
-5. Level 1 - Tertiary (User-generated content)
-
-[View complete hierarchy →](sot-source-hierarchy.md#source-authority-levels)
+**Authority Hierarchy**: Sources are ranked by authority level (1-5). [View complete hierarchy →](sot-source-hierarchy.md#source-authority-levels)
 
 ## Single Source of Truth (SoT) Reference
 
@@ -266,27 +257,11 @@ graph TB
 
 ## File Structure
 
-```
-knowledge_pack/
-├── carriers/          # Production carrier files
-├── states/            # Production state files
-├── raw/               # Raw scraped data (preserved)
-├── clean/             # Cleaned data with resolutions
-├── schemas/           # JSON schemas
-├── conflicts.json     # Detected conflicts
-├── resolutions.json   # Resolution decisions
-├── audit-trail.json   # Complete data lineage
-└── README.md          # Documentation
-```
+See [knowledge-pack-methodology.md#phase-5-knowledge-pack-assembly](knowledge-pack-methodology.md#phase-5-knowledge-pack-assembly) for complete directory structure and file organization.
 
 ## Success Criteria
 
-✅ Every data point has cuid2 ID  
-✅ Every data point has ≥1 source OR inheritedFrom  
-✅ All conflicts detected and resolved  
-✅ Complete audit trail from raw → production  
-✅ Validation passes (no unsourced data)  
-✅ README.md with full methodology
+See [knowledge-pack-methodology.md#success-criteria](knowledge-pack-methodology.md#success-criteria) for complete success criteria and validation requirements.
 
 ## Benefits
 

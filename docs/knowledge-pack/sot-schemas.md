@@ -822,22 +822,7 @@ interface StatusCounts {
 
 ## 6. cuid2 ID Conventions
 
-### Format Patterns
-
-All entity IDs use **cuid2** format with type prefixes. See [sot-id-conventions.md](sot-id-conventions.md) for complete specification.
-
-| Entity Type | Pattern | Example |
-|-------------|---------|---------|
-| Carrier | `carr_{cuid2}` | `carr_ckm9x7w8k0` |
-| State | `state_{cuid2}` | `state_ckm9x7wtu6` |
-| Discount | `disc_{cuid2}` | `disc_ckm9x7wdx1` |
-| Field | `fld_{cuid2}` | `fld_ckm9x7whp2` |
-| Conflict | `conf_{cuid2}` | `conf_ckm9x7wkm3` |
-| Raw Data | `raw_{cuid2}` | `raw_ckm9x7wnp4` |
-| Eligibility | `elig_{cuid2}` | `elig_ckm9x7wwx7` |
-| Page | `page_{cuid2}` | `page_ckm9x7wqr5` |
-| Search | `search_{cuid2}` | `search_ckm9x7wdx1` |
-| Agent | `agnt_{cuid2}` | `agnt_cm1a5b7k9p` |
+All entity IDs use **cuid2** format with type prefixes. See [sot-id-conventions.md#complete-id-prefix-reference](sot-id-conventions.md#complete-id-prefix-reference) for the complete prefix specification and examples.
 
 ### ID Generation
 
