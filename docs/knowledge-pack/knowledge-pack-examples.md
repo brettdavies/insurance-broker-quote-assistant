@@ -53,7 +53,7 @@ This document shows complete data transformations from raw scraping to productio
 
 ```json
 {
-  "id": "raw-001",
+  "id": "raw_cm8r2s4b6g",
   "dataPoint": "geico_multi_policy_discount_percentage",
   "rawValue": "Save up to 15% when you bundle auto and home insurance",
   "normalizedValue": 15,
@@ -77,7 +77,7 @@ This document shows complete data transformations from raw scraping to productio
 
 ```json
 {
-  "id": "raw-045",
+  "id": "raw_cm0t4u6d8i",
   "dataPoint": "geico_multi_policy_discount_percentage",
   "rawValue": "12%",
   "normalizedValue": 12,
@@ -101,21 +101,21 @@ This document shows complete data transformations from raw scraping to productio
 
 ```json
 {
-  "id": "conflict-001",
+  "id": "conf_cm2b6c8l0q",
   "dataPoint": "geico_multi_policy_discount_percentage",
   "detectedDate": "2025-11-05T14:00:00Z",
   "conflictType": "numeric_difference",
   "severity": "low",
   "sources": [
     {
-      "id": "raw-001",
+      "id": "raw_cm8r2s4b6g",
       "uri": "https://www.geico.com/auto/discounts/",
       "value": 15,
       "confidence": "high",
       "sourceAuthority": 4
     },
     {
-      "id": "raw-045",
+      "id": "raw_cm0t4u6d8i",
       "uri": "https://www.nerdwallet.com/article/insurance/geico-insurance-discounts",
       "value": 12,
       "confidence": "medium",
@@ -138,7 +138,7 @@ This document shows complete data transformations from raw scraping to productio
 
 ```json
 {
-  "conflictId": "conflict-001",
+  "conflictId": "conf_cm2b6c8l0q",
   "dataPoint": "geico_multi_policy_discount_percentage",
   "resolution": {
     "selectedValue": 15,
@@ -151,7 +151,7 @@ This document shows complete data transformations from raw scraping to productio
     "reviewRequired": false,
     "retainedSources": [
       {
-        "id": "raw-001",
+        "id": "raw_cm8r2s4b6g",
         "uri": "https://www.geico.com/auto/discounts/",
         "elementRef": "div.discount-card[data-discount='multi-policy'] > p.percentage",
         "value": 15,
@@ -163,7 +163,7 @@ This document shows complete data transformations from raw scraping to productio
         "note": "Official GEICO source; exact percentage with 'up to' qualifier"
       },
       {
-        "id": "raw-045",
+        "id": "raw_cm0t4u6d8i",
         "uri": "https://www.nerdwallet.com/article/insurance/geico-insurance-discounts",
         "elementRef": "table.insurance-discounts > tbody > tr:nth-child(3) > td:nth-child(2)",
         "value": 12,
@@ -185,7 +185,7 @@ This document shows complete data transformations from raw scraping to productio
 {
   "_id": "discount-geico-multipolicy-001",
   "name": {
-    "_id": "field-005",
+    "_id": "fld_cm0j4k6t8y",
     "value": "Multi-Policy Bundle",
     "_sources": [
       {
@@ -197,7 +197,7 @@ This document shows complete data transformations from raw scraping to productio
     ]
   },
   "percentage": {
-    "_id": "field-006",
+    "_id": "fld_cm1k5l7u9z",
     "value": 15,
     "_sources": [
       {
@@ -218,7 +218,7 @@ This document shows complete data transformations from raw scraping to productio
       }
     ],
     "_resolution": {
-      "conflictId": "conflict-001",
+      "conflictId": "conf_cm2b6c8l0q",
       "selectedValue": 15,
       "method": "authoritative_source",
       "rationale": "GEICO official source preferred over NerdWallet",
@@ -226,7 +226,7 @@ This document shows complete data transformations from raw scraping to productio
     }
   },
   "products": {
-    "_id": "field-007",
+    "_id": "fld_cm2l6m8v0a",
     "value": ["auto", "home"],
     "_sources": [
       {
@@ -247,21 +247,21 @@ This document shows complete data transformations from raw scraping to productio
 {
   "_id": "discount-geico-multipolicy-001",
   "name": {
-    "_id": "field-005",
+    "_id": "fld_cm0j4k6t8y",
     "_sources": [{"uri": "https://www.geico.com/auto/discounts/", "ref": "div.discount-card h3", "date": "2025-11-05"}],
     "value": "Multi-Policy Bundle"
   },
   "percentage": {
-    "_id": "field-006",
+    "_id": "fld_cm1k5l7u9z",
     "_sources": [
       {"uri": "https://www.geico.com/auto/discounts/", "ref": "div.discount-card p.percentage", "date": "2025-11-05", "primary": true},
       {"uri": "https://www.nerdwallet.com/article/insurance/geico-insurance-discounts", "ref": "table tr:nth-child(3) td:nth-child(2)", "date": "2025-11-05"}
     ],
-    "_resolution": {"conflictId": "conflict-001", "method": "authoritative_source"},
+    "_resolution": {"conflictId": "conf_cm2b6c8l0q", "method": "authoritative_source"},
     "value": 15
   },
   "products": {
-    "_id": "field-007",
+    "_id": "fld_cm2l6m8v0a",
     "_sources": [{"uri": "https://www.geico.com/auto/discounts/", "ref": "div.discount-card p.applies-to", "date": "2025-11-05"}],
     "value": ["auto", "home"]
   }
@@ -278,7 +278,7 @@ This document shows complete data transformations from raw scraping to productio
 
 ```json
 {
-  "id": "raw-012",
+  "id": "raw_cm9s3t5c7h",
   "dataPoint": "california_auto_bodily_injury_per_person_minimum",
   "rawValue": "$15,000 per person for bodily injury liability",
   "normalizedValue": 15000,
@@ -302,7 +302,7 @@ This document shows complete data transformations from raw scraping to productio
 
 ```json
 {
-  "id": "raw-076",
+  "id": "raw_cm1u5v7e9j",
   "dataPoint": "california_auto_bodily_injury_per_person_minimum",
   "rawValue": "$25,000 per person (recommended minimum)",
   "normalizedValue": 25000,
@@ -326,21 +326,21 @@ This document shows complete data transformations from raw scraping to productio
 
 ```json
 {
-  "id": "conflict-002",
+  "id": "conf_cm3c7d9m1r",
   "dataPoint": "california_auto_bodily_injury_per_person_minimum",
   "detectedDate": "2025-11-05T14:05:00Z",
   "conflictType": "numeric_difference",
   "severity": "high",
   "sources": [
     {
-      "id": "raw-012",
+      "id": "raw_cm9s3t5c7h",
       "uri": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-auto/lw-lic-1.cfm",
       "value": 15000,
       "confidence": "high",
       "sourceAuthority": 5
     },
     {
-      "id": "raw-076",
+      "id": "raw_cm1u5v7e9j",
       "uri": "https://www.bankrate.com/insurance/car/california/",
       "value": 25000,
       "confidence": "medium",
@@ -363,7 +363,7 @@ This document shows complete data transformations from raw scraping to productio
 
 ```json
 {
-  "conflictId": "conflict-002",
+  "conflictId": "conf_cm3c7d9m1r",
   "dataPoint": "california_auto_bodily_injury_per_person_minimum",
   "resolution": {
     "selectedValue": 15000,
@@ -376,7 +376,7 @@ This document shows complete data transformations from raw scraping to productio
     "reviewRequired": false,
     "retainedSources": [
       {
-        "id": "raw-012",
+        "id": "raw_cm9s3t5c7h",
         "uri": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-auto/lw-lic-1.cfm",
         "value": 15000,
         "authority": 5,
@@ -387,7 +387,7 @@ This document shows complete data transformations from raw scraping to productio
         "note": "Official CA state regulatory source; legal minimum requirement"
       },
       {
-        "id": "raw-076",
+        "id": "raw_cm1u5v7e9j",
         "uri": "https://www.bankrate.com/insurance/car/california/",
         "value": 25000,
         "authority": 2,
@@ -434,7 +434,7 @@ This document shows complete data transformations from raw scraping to productio
             "note": "Shows recommended ($25k), not legal minimum"
           }
         ],
-        "_resolution": {"conflictId": "conflict-002", "method": "authoritative_source"}
+        "_resolution": {"conflictId": "conf_cm3c7d9m1r", "method": "authoritative_source"}
       }
     }
   }
@@ -456,7 +456,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
   "carrier": {
     "_id": "carrier-geico-001",
     "operatesIn": {
-      "_id": "field-001",
+      "_id": "fld_cm6f0g2p4u",
       "value": ["CA", "TX", "FL", "NY", "IL"],
       "_sources": [
         {
@@ -480,10 +480,10 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
     {
       "_id": "discount-geico-multipolicy-001",
       "states": {
-        "_id": "field-008",
+        "_id": "fld_cm3m7n9w1b",
         "value": ["CA", "TX", "FL", "NY", "IL"],
         "_sources": [],
-        "_inheritedFrom": "field-001",
+        "_inheritedFrom": "fld_cm6f0g2p4u",
         "_note": "No state restrictions found on discount page; inheriting from carrier operating states"
       }
     }
@@ -495,14 +495,14 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
 
 ```json
 {
-  "dataPoint": "field-008",
+  "dataPoint": "fld_cm3m7n9w1b",
   "path": "carriers/geico.json > discounts[0] > states",
   "value": ["CA", "TX", "FL", "NY", "IL"],
   "sources": [],
-  "inheritedFrom": "field-001",
+  "inheritedFrom": "fld_cm6f0g2p4u",
   "inheritanceChain": [
     {
-      "field": "field-001",
+      "field": "fld_cm6f0g2p4u",
       "path": "carriers/geico.json > carrier > operatesIn",
       "rationale": "Discount page shows no state restrictions; default to carrier availability"
     }
@@ -522,7 +522,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
 
 ```json
 {
-  "id": "raw-089",
+  "id": "raw_cm2v6w8f0k",
   "dataPoint": "california_average_auto_insurance_annual",
   "rawValue": "$1,200 per year average",
   "normalizedValue": 1200,
@@ -545,7 +545,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
 
 ```json
 {
-  "id": "raw-090",
+  "id": "raw_cm3w7x9g1l",
   "dataPoint": "california_average_auto_insurance_annual",
   "rawValue": "$1,150/year",
   "normalizedValue": 1150,
@@ -568,7 +568,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
 
 ```json
 {
-  "id": "raw-091",
+  "id": "raw_cm4x8y0h2m",
   "dataPoint": "california_average_auto_insurance_annual",
   "rawValue": "around $1,200 annually",
   "normalizedValue": 1200,
@@ -591,7 +591,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
 
 ```json
 {
-  "id": "raw-092",
+  "id": "raw_cm5y9z1i3n",
   "dataPoint": "california_average_auto_insurance_annual",
   "rawValue": "$1,250/year",
   "normalizedValue": 1250,
@@ -614,16 +614,16 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
 
 ```json
 {
-  "id": "conflict-003",
+  "id": "conf_cm4d8e0n2s",
   "dataPoint": "california_average_auto_insurance_annual",
   "detectedDate": "2025-11-05T14:10:00Z",
   "conflictType": "numeric_difference",
   "severity": "low",
   "sources": [
-    {"id": "raw-089", "uri": "iii.org", "value": 1200, "authority": 3},
-    {"id": "raw-090", "uri": "bankrate.com", "value": 1150, "authority": 2},
-    {"id": "raw-091", "uri": "nerdwallet.com", "value": 1200, "authority": 2},
-    {"id": "raw-092", "uri": "valuepenguin.com", "value": 1250, "authority": 2}
+    {"id": "raw_cm2v6w8f0k", "uri": "iii.org", "value": 1200, "authority": 3},
+    {"id": "raw_cm3w7x9g1l", "uri": "bankrate.com", "value": 1150, "authority": 2},
+    {"id": "raw_cm4x8y0h2m", "uri": "nerdwallet.com", "value": 1200, "authority": 2},
+    {"id": "raw_cm5y9z1i3n", "uri": "valuepenguin.com", "value": 1250, "authority": 2}
   ],
   "analysis": {
     "values": [1150, 1200, 1200, 1250],
@@ -646,7 +646,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
 
 ```json
 {
-  "conflictId": "conflict-003",
+  "conflictId": "conf_cm4d8e0n2s",
   "dataPoint": "california_average_auto_insurance_annual",
   "resolution": {
     "selectedValue": 1200,
@@ -659,7 +659,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
     "reviewRequired": false,
     "retainedSources": [
       {
-        "id": "raw-089",
+        "id": "raw_cm2v6w8f0k",
         "uri": "https://www.iii.org/fact-statistic/facts-statistics-auto-insurance",
         "value": 1200,
         "authority": 3,
@@ -670,7 +670,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
         "note": "Highest authority source; matches consensus value"
       },
       {
-        "id": "raw-090",
+        "id": "raw_cm3w7x9g1l",
         "uri": "https://www.bankrate.com/insurance/car/california/",
         "value": 1150,
         "authority": 2,
@@ -679,7 +679,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
         "note": "4% below consensus; within acceptable variance"
       },
       {
-        "id": "raw-091",
+        "id": "raw_cm4x8y0h2m",
         "uri": "https://www.nerdwallet.com/article/insurance/california-car-insurance",
         "value": 1200,
         "authority": 2,
@@ -688,7 +688,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
         "note": "Matches consensus value"
       },
       {
-        "id": "raw-092",
+        "id": "raw_cm5y9z1i3n",
         "uri": "https://www.valuepenguin.com/california-car-insurance",
         "value": 1250,
         "authority": 2,
@@ -738,7 +738,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
     ],
     "name": "GEICO",
     "operatesIn": {
-      "_id": "field-001",
+      "_id": "fld_cm6f0g2p4u",
       "value": ["CA", "TX", "FL", "NY", "IL"],
       "_sources": [
         {
@@ -749,7 +749,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
       ]
     },
     "products": {
-      "_id": "field-002",
+      "_id": "fld_cm7g1h3q5v",
       "value": ["auto", "home", "renters", "umbrella"],
       "_sources": [
         {
@@ -764,7 +764,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
       "auto": {
         "_id": "eligibility-geico-auto-001",
         "minAge": {
-          "_id": "field-003",
+          "_id": "fld_cm8h2i4r6w",
           "value": 16,
           "_sources": [
             {
@@ -775,7 +775,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
           ]
         },
         "maxVehicles": {
-          "_id": "field-004",
+          "_id": "fld_cm9i3j5s7x",
           "value": 4,
           "_sources": [
             {
@@ -791,7 +791,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
       {
         "_id": "discount-geico-multipolicy-001",
         "name": {
-          "_id": "field-005",
+          "_id": "fld_cm0j4k6t8y",
           "value": "Multi-Policy Bundle",
           "_sources": [
             {
@@ -802,7 +802,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
           ]
         },
         "percentage": {
-          "_id": "field-006",
+          "_id": "fld_cm1k5l7u9z",
           "value": 15,
           "_sources": [
             {
@@ -818,12 +818,12 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
             }
           ],
           "_resolution": {
-            "conflictId": "conflict-001",
+            "conflictId": "conf_cm2b6c8l0q",
             "method": "authoritative_source"
           }
         },
         "products": {
-          "_id": "field-007",
+          "_id": "fld_cm2l6m8v0a",
           "value": ["auto", "home"],
           "_sources": [
             {
@@ -834,13 +834,13 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
           ]
         },
         "states": {
-          "_id": "field-008",
+          "_id": "fld_cm3m7n9w1b",
           "value": ["CA", "TX", "FL", "NY", "IL"],
           "_sources": [],
-          "_inheritedFrom": "field-001"
+          "_inheritedFrom": "fld_cm6f0g2p4u"
         },
         "requirements": {
-          "_id": "field-009",
+          "_id": "fld_cm4n8o0x2c",
           "value": {
             "mustHaveProducts": ["auto", "home"],
             "minProducts": 2
@@ -854,7 +854,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
           ]
         },
         "stackable": {
-          "_id": "field-010",
+          "_id": "fld_cm5o9p1y3d",
           "value": true,
           "_sources": [],
           "_inheritedFrom": "discount-geico-multipolicy-001",
@@ -867,7 +867,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
       "auto": {
         "baseMonthly": {
           "CA": {
-            "_id": "field-020",
+            "_id": "fld_cm7q1r3a5f",
             "value": {
               "liability": 85,
               "fullCoverage": 165
@@ -901,11 +901,11 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
 
 ```json
 {
-  "dataPoint": "field-006",
+  "dataPoint": "fld_cm1k5l7u9z",
   "path": "carriers/geico.json > discounts[0] > percentage",
   "value": 15,
-  "sources": ["src-001", "src-045"],
-  "resolution": "conflict-001",
+  "sources": ["src_cm6z0a2j4o", "src_cm7a1b3k5p"],
+  "resolution": "conf_cm2b6c8l0q",
   "confidence": "high",
   "lineage": [
     {
@@ -913,7 +913,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
       "phase": "raw_scraping",
       "action": "Scraped GEICO official site",
       "file": "raw/carriers/geico/discounts_auto.raw.json",
-      "entry": "raw-001",
+      "entry": "raw_cm8r2s4b6g",
       "timestamp": "2025-11-05T10:30:00Z",
       "value": "Save up to 15%"
     },
@@ -922,7 +922,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
       "phase": "raw_scraping",
       "action": "Scraped NerdWallet article",
       "file": "raw/carriers/geico/discounts_secondary.raw.json",
-      "entry": "raw-045",
+      "entry": "raw_cm0t4u6d8i",
       "timestamp": "2025-11-05T11:15:00Z",
       "value": "12%"
     },
@@ -931,7 +931,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
       "phase": "conflict_detection",
       "action": "Detected numeric conflict",
       "file": "conflicts.json",
-      "entry": "conflict-001",
+      "entry": "conf_cm2b6c8l0q",
       "timestamp": "2025-11-05T14:00:00Z",
       "values": [15, 12]
     },
@@ -940,7 +940,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
       "phase": "conflict_resolution",
       "action": "Resolved via authoritative_source strategy",
       "file": "resolutions.json",
-      "entry": "conflict-001",
+      "entry": "conf_cm2b6c8l0q",
       "timestamp": "2025-11-05T15:30:00Z",
       "selectedValue": 15,
       "rationale": "GEICO official source preferred"
@@ -950,7 +950,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
       "phase": "clean_data",
       "action": "Created clean data with metadata",
       "file": "clean/carriers/geico.json",
-      "field": "field-006",
+      "field": "fld_cm1k5l7u9z",
       "timestamp": "2025-11-05T16:00:00Z"
     },
     {
@@ -958,7 +958,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
       "phase": "production",
       "action": "Compressed for production",
       "file": "carriers/geico.json",
-      "field": "field-006",
+      "field": "fld_cm1k5l7u9z",
       "timestamp": "2025-11-05T16:30:00Z"
     }
   ],

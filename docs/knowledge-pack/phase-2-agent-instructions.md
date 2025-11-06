@@ -69,7 +69,7 @@ cat knowledge_pack/search-tracker.json
 }
 ```
 
-**Agent ID format:** Use a consistent identifier (e.g., `"agent-001"`, `"claude-web-1"`, or generate once with `agent_${createId()}`)
+**Agent ID format:** Use a consistent identifier (e.g., `"agnt_cm1a5b7k9p"`, `"claude-web-1"`, or generate once with `agent_${createId()}`)
 
 **Save the updated tracker.**
 
@@ -233,7 +233,7 @@ knowledge_pack/raw/{category}/{subcategory}.raw.json
   "id": "search_ckm9x7wdx1",
   "query": "\"GEICO\" \"available in\" states",
   "status": "completed",              // Changed from "in_progress"
-  "assignedTo": "agent-001",
+  "assignedTo": "agnt_cm1a5b7k9p",
   "startedAt": "2025-11-05T14:30:00Z",
   "completedAt": "2025-11-05T14:42:00Z", // Current ISO timestamp
   "durationSeconds": 720,                 // completedAt - startedAt

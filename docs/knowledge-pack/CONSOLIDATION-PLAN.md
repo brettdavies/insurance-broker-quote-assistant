@@ -310,10 +310,10 @@ Fix critical inconsistencies that undermine the knowledge pack system integrity.
 
 ---
 
-#### Task 1.1: Fix ID Format Inconsistencies ⏸️ DEFERRED (documentation examples only)
+#### Task 1.1: Fix ID Format Inconsistencies ✅ COMPLETED
 **Objective**: Replace all old ID formats with proper cuid2 format throughout documentation
 
-**Status Note**: Found 45 unique old ID patterns in documentation examples (knowledge-pack-examples.md, methodology.md, schemas.md). These maintain semantic relationships in examples and aid readability. Production code will use proper cuid2 format.
+**Status Note**: Replaced all 27 unique old ID patterns (e.g., "raw-001", "field-005") with proper cuid2 format (e.g., "raw_cm8r2s4b6g", "fld_cm0j4k6t8y"). Applied consistent mappings across 6 files, maintaining semantic relationships. Total: 163 ID replacements. All IDs now follow {prefix}_{10-char-cuid2} standard per sot-id-conventions.md.
 
 **Discovery Steps**:
 ```bash
@@ -321,7 +321,7 @@ Fix critical inconsistencies that undermine the knowledge pack system integrity.
 head -n 50 docs/knowledge-pack/sot-id-conventions.md
 
 # Search for old ID patterns across all knowledge pack files
-# Pattern 1: Quoted hyphenated IDs like "raw-001", "field-005"
+# Pattern 1: Quoted hyphenated IDs like "raw_cm8r2s4b6g", "fld_cm0j4k6t8y"
 rg -n '"[a-z]\+-[0-9]\{3\}"' docs/knowledge-pack/*.md
 
 # Pattern 2: All hyphenated ID patterns in JSON contexts
@@ -348,8 +348,8 @@ echo "Total old IDs: $(rg -c '"[a-z]\+-[0-9]\{3\}"' docs/knowledge-pack/*.md | a
 
 # Option 2: Simple pattern replacement (if exact values don't matter)
 # Example for knowledge-pack-examples.md:
-sed -i '' 's/"raw-001"/"raw_ckm9x7wnp"/g' docs/knowledge-pack/knowledge-pack-examples.md
-sed -i '' 's/"field-005"/"fld_ckm9x8k2n"/g' docs/knowledge-pack/knowledge-pack-examples.md
+sed -i '' 's/"raw_cm8r2s4b6g"/"raw_ckm9x7wnp"/g' docs/knowledge-pack/knowledge-pack-examples.md
+sed -i '' 's/"fld_cm0j4k6t8y"/"fld_ckm9x8k2n"/g' docs/knowledge-pack/knowledge-pack-examples.md
 # ... repeat for each unique old ID
 
 # Option 3: Script to generate cuid2 and replace

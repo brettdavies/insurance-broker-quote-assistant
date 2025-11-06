@@ -910,10 +910,10 @@ Inherit parent source when:
 
 ```json
 {
-  "_id": "field-008",
+  "_id": "fld_cm3m7n9w1b",
   "value": ["CA", "TX", "FL", "NY", "IL"],
   "_sources": [],                    // Empty array
-  "_inheritedFrom": "field-001",     // Parent field ID
+  "_inheritedFrom": "fld_cm6f0g2p4u",     // Parent field ID
   "_note": "Inherits from carrier operating states"
 }
 ```
@@ -925,27 +925,27 @@ Can inherit from grandparent if parent also inherits:
 ```json
 // Carrier level
 "operatesIn": {
-  "_id": "field-001",
+  "_id": "fld_cm6f0g2p4u",
   "value": ["CA", "TX", "FL"],
   "_sources": [...]
 }
 
 // Discount level (child)
 "discounts": [{
-  "_id": "discount-001",
+  "_id": "disc_cm5e9f1o3t",
   "states": {
-    "_id": "field-002",
+    "_id": "fld_cm7g1h3q5v",
     "_sources": [],
-    "_inheritedFrom": "field-001"
+    "_inheritedFrom": "fld_cm6f0g2p4u"
   }
 }]
 
 // Requirement level (grandchild)
 "requirements": {
   "states": {
-    "_id": "field-003",
+    "_id": "fld_cm8h2i4r6w",
     "_sources": [],
-    "_inheritedFrom": "field-002"  // Always the direct parent
+    "_inheritedFrom": "fld_cm7g1h3q5v"  // Always the direct parent
   }
 }
 ```

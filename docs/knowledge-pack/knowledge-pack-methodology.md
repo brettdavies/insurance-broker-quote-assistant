@@ -124,7 +124,7 @@ For each source URL:
 
 ```json
 {
-  "id": "raw-001",
+  "id": "raw_cm8r2s4b6g",
   "dataPoint": "geico_multi_policy_discount_percentage",
   "rawValue": "up to 15%",
   "normalizedValue": 15,
@@ -284,21 +284,21 @@ function calculateSeverity(values, dataPoint) {
 {
   "conflicts": [
     {
-      "id": "conflict-001",
+      "id": "conf_cm2b6c8l0q",
       "dataPoint": "geico_multi_policy_discount_percentage",
       "detectedDate": "2025-11-05T14:00:00Z",
       "conflictType": "numeric_difference",
       "severity": "low",
       "sources": [
         {
-          "id": "raw-001",
+          "id": "raw_cm8r2s4b6g",
           "uri": "https://www.geico.com/auto/discounts/",
           "value": 15,
           "confidence": "high",
           "sourceAuthority": 5
         },
         {
-          "id": "raw-045",
+          "id": "raw_cm0t4u6d8i",
           "uri": "https://www.nerdwallet.com/article/insurance/geico-discounts",
           "value": 12,
           "confidence": "medium",
@@ -349,7 +349,7 @@ See [sot-source-hierarchy.md](sot-source-hierarchy.md) for complete conflict res
 
 ```json
 {
-  "conflictId": "conflict-001",
+  "conflictId": "conf_cm2b6c8l0q",
   "dataPoint": "geico_multi_policy_discount_percentage",
   "resolution": {
     "selectedValue": 15,
@@ -362,14 +362,14 @@ See [sot-source-hierarchy.md](sot-source-hierarchy.md) for complete conflict res
     "reviewRequired": false,
     "retainedSources": [
       {
-        "id": "raw-001",
+        "id": "raw_cm8r2s4b6g",
         "uri": "https://www.geico.com/auto/discounts/",
         "elementRef": "div.discount-card > p.percentage",
         "primary": true,
         "note": "Official carrier source"
       },
       {
-        "id": "raw-045",
+        "id": "raw_cm0t4u6d8i",
         "uri": "https://www.nerdwallet.com/article/insurance/geico-discounts",
         "elementRef": "table > tr:nth-child(3) > td:nth-child(2)",
         "primary": false,
@@ -432,7 +432,7 @@ Create `knowledge_pack/resolutions.json`:
   },
   "resolutions": [
     {
-      "conflictId": "conflict-001",
+      "conflictId": "conf_cm2b6c8l0q",
       "resolution": { /* See format above */ }
     }
   ],
@@ -490,7 +490,7 @@ Create `knowledge_pack/resolutions.json`:
     ],
     "name": "GEICO",
     "operatesIn": {
-      "_id": "field-001",
+      "_id": "fld_cm6f0g2p4u",
       "_sources": [
         {
           "uri": "https://www.geico.com/information/states/",
@@ -504,26 +504,26 @@ Create `knowledge_pack/resolutions.json`:
       {
         "_id": "discount-geico-multi-001",
         "name": {
-          "_id": "field-002",
+          "_id": "fld_cm7g1h3q5v",
           "_sources": [{"uri": "...", "elementRef": "..."}],
           "value": "Multi-Policy Bundle"
         },
         "percentage": {
-          "_id": "field-003",
+          "_id": "fld_cm8h2i4r6w",
           "_sources": [
             {"uri": "https://www.geico.com/auto/discounts/", "primary": true},
             {"uri": "https://www.nerdwallet.com/...", "primary": false}
           ],
           "_resolution": {
-            "conflictId": "conflict-001",
+            "conflictId": "conf_cm2b6c8l0q",
             "method": "authoritative_source"
           },
           "value": 15
         },
         "states": {
-          "_id": "field-004",
+          "_id": "fld_cm9i3j5s7x",
           "_sources": [],
-          "_inheritedFrom": "field-001",
+          "_inheritedFrom": "fld_cm6f0g2p4u",
           "value": ["CA", "TX", "FL", "NY", "IL"]
         }
       }
@@ -589,7 +589,7 @@ For production files, compress source references:
 ]
 
 // Or reference by ID (most compact)
-"_sources": ["src-001"]
+"_sources": ["src_cm6z0a2j4o"]
 // With separate sources lookup table in audit-trail.json
 ```
 
@@ -827,12 +827,12 @@ November 5-6, 2025
 ### Multi-Source Data Point
 ```json
 "percentage": {
-  "_id": "field-003",
+  "_id": "fld_cm8h2i4r6w",
   "_sources": [
     {"uri": "https://www.geico.com/auto/discounts/", "primary": true},
     {"uri": "https://www.nerdwallet.com/...", "primary": false}
   ],
-  "_resolution": {"conflictId": "conflict-001", "method": "authoritative_source"},
+  "_resolution": {"conflictId": "conf_cm2b6c8l0q", "method": "authoritative_source"},
   "value": 15
 }
 ```
@@ -840,9 +840,9 @@ November 5-6, 2025
 ### Inherited Source
 ```json
 "states": {
-  "_id": "field-004",
+  "_id": "fld_cm9i3j5s7x",
   "_sources": [],
-  "_inheritedFrom": "field-001",
+  "_inheritedFrom": "fld_cm6f0g2p4u",
   "value": ["CA", "TX", "FL", "NY", "IL"]
 }
 ```
@@ -880,35 +880,35 @@ Last Updated: 2025-11-05
     "totalConflicts": 8
   },
   "sources": {
-    "src-001": {
+    "src_cm6z0a2j4o": {
       "uri": "https://www.geico.com/auto/discounts/",
       "elementRef": "div.discount-card > p.percentage",
       "accessedDate": "2025-11-05T10:30:00Z",
       "authority": 5,
       "confidence": "high",
-      "usedBy": ["field-003", "field-007", "field-012"]
+      "usedBy": ["fld_cm8h2i4r6w", "fld_cm2l6m8v0a", "fld_cm6p0q2z4e"]
     }
   },
   "dataPoints": {
-    "field-003": {
+    "fld_cm8h2i4r6w": {
       "path": "carriers/geico.json > discounts[0] > percentage",
       "value": 15,
-      "sources": ["src-001", "src-045"],
-      "resolution": "conflict-001",
+      "sources": ["src_cm6z0a2j4o", "src_cm7a1b3k5p"],
+      "resolution": "conf_cm2b6c8l0q",
       "confidence": "high"
     }
   },
   "conflicts": {
-    "conflict-001": {
-      "dataPoint": "field-003",
-      "sources": ["src-001", "src-045"],
+    "conf_cm2b6c8l0q": {
+      "dataPoint": "fld_cm8h2i4r6w",
+      "sources": ["src_cm6z0a2j4o", "src_cm7a1b3k5p"],
       "resolution": "authoritative_source",
       "resolvedDate": "2025-11-05T15:30:00Z"
     }
   },
   "lineage": [
     {
-      "dataPoint": "field-003",
+      "dataPoint": "fld_cm8h2i4r6w",
       "trace": [
         "Raw scrape: src-001 → raw-001 (value: '15%')",
         "Raw scrape: src-045 → raw-045 (value: '12%')",

@@ -572,7 +572,7 @@ function migrateId(oldId: string): string {
 }
 
 // Usage
-const oldIds = ["field-001", "field-002", "carrier-geico-001"];
+const oldIds = ["fld_cm6f0g2p4u", "fld_cm7g1h3q5v", "carrier-geico-001"];
 const newIds = oldIds.map(migrateId);
 
 // Save mapping for reference
