@@ -15,10 +15,11 @@ Usage:
     uv run scripts/select-work.py
 
 Output:
-    JSON with selected work item and explicit next_steps for agent
+    Automatically chains to next script based on work type
 """
 
 import json
+import subprocess
 import sys
 from pathlib import Path
 
@@ -29,73 +30,46 @@ from select_random_work import select_random_work, get_work_summary
 from tracker_manager import TrackerManager
 
 
-def output_result(work_item: dict, tracker_type: str, summary: dict) -> None:
+def chain_to_next_script(work_item: dict, tracker_type: str, summary: dict) -> int:
     """
-    Output selected work item with next steps.
+    Automatically chain to the next script based on work type.
 
     Args:
         work_item: Selected work item dict
         tracker_type: Type of tracker (search, url, page, extraction)
         summary: Work summary counts
+
+    Returns:
+        Exit code from subprocess
     """
-    result = {
+    item_id = work_item['id']
+
+    # Determine which script to call
+    script_map = {
+        'search': 'claim-search.py',
+        'url': 'fetch-url.py',
+        'page': 'claim-page.py',
+        'extraction': 'validate-extraction.py'
+    }
+
+    script = script_map[tracker_type]
+
+    # Output summary for context
+    print(json.dumps({
         "success": True,
         "tracker_type": tracker_type,
         "work_item": work_item,
         "summary": summary,
-        "next_steps": ""
-    }
+        "chaining_to": script
+    }, indent=2), flush=True)
 
-    # Determine next steps based on tracker type
-    if tracker_type == 'search':
-        search_id = work_item['id']
-        query = work_item['query']
-        result["next_steps"] = (
-            f"Selected search: {search_id}\n"
-            f"Query: {query}\n\n"
-            f"ACTION REQUIRED:\n"
-            f"1. Run: uv run scripts/claim-search.py --id {search_id}\n"
-            f"2. If claim succeeds, you will receive the search details\n"
-            f"3. Perform WebSearch using the provided query\n"
-            f"4. Save discovered URLs using save-urls.py"
-        )
+    # Chain to next script synchronously
+    result = subprocess.run(
+        ['uv', 'run', f'scripts/{script}', '--id', item_id],
+        cwd=Path(__file__).parent.parent
+    )
 
-    elif tracker_type == 'url':
-        url_id = work_item['id']
-        url = work_item['url']
-        result["next_steps"] = (
-            f"Selected URL: {url_id}\n"
-            f"URL: {url}\n\n"
-            f"ACTION REQUIRED:\n"
-            f"1. Run: uv run scripts/fetch-url.py --id {url_id}\n"
-            f"2. This will autonomously fetch the URL with crawl4ai\n"
-            f"3. HTML and Markdown will be saved automatically\n"
-            f"4. No further action needed - script handles everything"
-        )
-
-    elif tracker_type == 'page':
-        page_id = work_item['id']
-        result["next_steps"] = (
-            f"Selected page: {page_id}\n\n"
-            f"ACTION REQUIRED:\n"
-            f"1. Run: uv run scripts/claim-page.py --id {page_id}\n"
-            f"2. If claim succeeds, you will receive the page content\n"
-            f"3. Extract data points from the content using LLM\n"
-            f"4. Save extracted data using save-extraction.py"
-        )
-
-    elif tracker_type == 'extraction':
-        extraction_id = work_item['id']
-        result["next_steps"] = (
-            f"Selected extraction: {extraction_id}\n\n"
-            f"ACTION REQUIRED:\n"
-            f"1. Run: uv run scripts/validate-extraction.py --id {extraction_id}\n"
-            f"2. This will autonomously validate the extraction\n"
-            f"3. Search will be marked complete if validation passes\n"
-            f"4. No further action needed - script handles everything"
-        )
-
-    print(json.dumps(result, indent=2))
+    return result.returncode
 
 
 def output_no_work(summary: dict) -> None:
@@ -158,8 +132,9 @@ def main() -> None:
 
         tracker_type, work_item = work
 
-        # Output selected work with next steps
-        output_result(work_item, tracker_type, summary)
+        # Chain to next script automatically
+        exit_code = chain_to_next_script(work_item, tracker_type, summary)
+        sys.exit(exit_code)
 
     except FileNotFoundError as e:
         output_error(f"Tracker file not found: {e}")

@@ -291,8 +291,7 @@ async def main_async(url_id: str) -> None:
                 f"  - Markdown: {md_file.name} ({md_size:,} bytes)\n\n"
                 f"Page registered in page-tracker as {page_id}.\n"
                 f"Changes committed to git.\n\n"
-                f"Continue with next work item:\n"
-                f"Run: uv run scripts/select-work.py"
+                f"Chaining to next work item..."
             ),
             data={
                 "url_id": url_id,
@@ -304,6 +303,13 @@ async def main_async(url_id: str) -> None:
                 "markdown_file": str(md_file)
             }
         )
+
+        # Auto-chain to select-work.py
+        result = subprocess.run(
+            ['uv', 'run', 'scripts/select-work.py'],
+            cwd=Path(__file__).parent.parent
+        )
+        sys.exit(result.returncode)
 
     except Exception as e:
         output_result(

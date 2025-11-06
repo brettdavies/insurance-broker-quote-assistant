@@ -203,14 +203,20 @@ def main() -> None:
                 f"URLs saved and committed successfully.\n\n"
                 f"Registered {len(urls)} URLs.\n"
                 f"URLs will be fetched by URL processing agents.\n\n"
-                f"Continue with next work item:\n"
-                f"Run: uv run scripts/select-work.py"
+                f"Chaining to next work item..."
             ),
             data={
                 "search_id": search_id,
                 "urls_registered": len(urls)
             }
         )
+
+        # Auto-chain to select-work.py
+        result = subprocess.run(
+            ['uv', 'run', 'scripts/select-work.py'],
+            cwd=Path(__file__).parent.parent
+        )
+        sys.exit(result.returncode)
 
     except Exception as e:
         output_result(

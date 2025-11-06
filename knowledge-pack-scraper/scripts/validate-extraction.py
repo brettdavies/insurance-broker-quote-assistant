@@ -237,14 +237,20 @@ def main() -> None:
                 f"  - Total data points: {data_points_extracted}\n"
                 f"  - All files validated\n\n"
                 f"Changes committed to git.\n\n"
-                f"Continue with next work item:\n"
-                f"Run: uv run scripts/select-work.py"
+                f"Chaining to next work item..."
             ),
             data={
                 "data_points_extracted": data_points_extracted,
                 "validation_passed": True
             }
         )
+
+        # Auto-chain to select-work.py
+        result = subprocess.run(
+            ['uv', 'run', 'scripts/select-work.py'],
+            cwd=Path(__file__).parent.parent
+        )
+        sys.exit(result.returncode)
 
     except Exception as e:
         output_result(

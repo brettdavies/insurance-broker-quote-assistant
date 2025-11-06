@@ -76,22 +76,16 @@ class TrackerManager:
         """
         tracker = self.load(tracker_type)
 
-        if tracker_type == 'search':
-            for category in tracker.get('categories', []):
-                for search in category.get('searches', []):
-                    if search.get('status') == 'pending':
-                        return search
+        items_key = {
+            'search': 'searches',
+            'url': 'urls',
+            'page': 'pages',
+            'extraction': 'extractions'
+        }[tracker_type]
 
-        elif tracker_type in ['url', 'page', 'extraction']:
-            items_key = {
-                'url': 'urls',
-                'page': 'pages',
-                'extraction': 'extractions'
-            }[tracker_type]
-
-            for item in tracker.get(items_key, []):
-                if item.get('status') == 'pending':
-                    return item
+        for item in tracker.get(items_key, []):
+            if item.get('status') == 'pending':
+                return item
 
         return None
 
@@ -116,45 +110,27 @@ class TrackerManager:
 
         tracker = self.load(tracker_type)
 
-        # Find and update item
-        if tracker_type == 'search':
-            for category in tracker.get('categories', []):
-                for search in category.get('searches', []):
-                    if search.get('id') == item_id:
-                        old_status = search.get('status')
-                        search['status'] = new_status
-                        search.update(updates)
+        items_key = {
+            'search': 'searches',
+            'url': 'urls',
+            'page': 'pages',
+            'extraction': 'extractions'
+        }[tracker_type]
 
-                        # Update status counts
-                        if old_status and old_status in tracker['statusCounts']:
-                            tracker['statusCounts'][old_status] -= 1
-                        if new_status in tracker['statusCounts']:
-                            tracker['statusCounts'][new_status] += 1
-                        else:
-                            tracker['statusCounts'][new_status] = 1
-                        break
+        for item in tracker.get(items_key, []):
+            if item.get('id') == item_id:
+                old_status = item.get('status')
+                item['status'] = new_status
+                item.update(updates)
 
-        else:
-            items_key = {
-                'url': 'urls',
-                'page': 'pages',
-                'extraction': 'extractions'
-            }[tracker_type]
-
-            for item in tracker.get(items_key, []):
-                if item.get('id') == item_id:
-                    old_status = item.get('status')
-                    item['status'] = new_status
-                    item.update(updates)
-
-                    # Update status counts
-                    if old_status and old_status in tracker['statusCounts']:
-                        tracker['statusCounts'][old_status] -= 1
-                    if new_status in tracker['statusCounts']:
-                        tracker['statusCounts'][new_status] += 1
-                    else:
-                        tracker['statusCounts'][new_status] = 1
-                    break
+                # Update status counts
+                if old_status and old_status in tracker['statusCounts']:
+                    tracker['statusCounts'][old_status] -= 1
+                if new_status in tracker['statusCounts']:
+                    tracker['statusCounts'][new_status] += 1
+                else:
+                    tracker['statusCounts'][new_status] = 1
+                break
 
         self.save(tracker_type, tracker)
 
@@ -170,49 +146,30 @@ class TrackerManager:
         Args:
             tracker_type: Type of tracker
             item: Item dict to add
-            category_name: Category name (for search tracker only)
+            category_name: Deprecated, not used (kept for backward compatibility)
         """
         tracker = self.load(tracker_type)
 
-        if tracker_type == 'search':
-            if not category_name:
-                raise ValueError("category_name required for search tracker")
+        items_key = {
+            'search': 'searches',
+            'url': 'urls',
+            'page': 'pages',
+            'extraction': 'extractions'
+        }[tracker_type]
 
-            # Find or create category
-            category = None
-            for cat in tracker.get('categories', []):
-                if cat.get('name') == category_name:
-                    category = cat
-                    break
+        if items_key not in tracker:
+            tracker[items_key] = []
 
-            if category is None:
-                category = {'name': category_name, 'searches': []}
-                if 'categories' not in tracker:
-                    tracker['categories'] = []
-                tracker['categories'].append(category)
+        tracker[items_key].append(item)
 
-            category['searches'].append(item)
-            tracker['meta']['totalSearches'] = tracker['meta'].get('totalSearches', 0) + 1
-
-        else:
-            items_key = {
-                'url': 'urls',
-                'page': 'pages',
-                'extraction': 'extractions'
-            }[tracker_type]
-
-            if items_key not in tracker:
-                tracker[items_key] = []
-
-            tracker[items_key].append(item)
-
-            # Update total count
-            total_key = {
-                'url': 'totalUrls',
-                'page': 'totalPages',
-                'extraction': 'totalExtractions'
-            }[tracker_type]
-            tracker['meta'][total_key] = tracker['meta'].get(total_key, 0) + 1
+        # Update total count
+        total_key = {
+            'search': 'totalSearches',
+            'url': 'totalUrls',
+            'page': 'totalPages',
+            'extraction': 'totalExtractions'
+        }[tracker_type]
+        tracker['meta'][total_key] = tracker['meta'].get(total_key, 0) + 1
 
         # Update status counts
         item_status = item.get('status', 'pending')
@@ -253,21 +210,15 @@ class TrackerManager:
         """
         tracker = self.load(tracker_type)
 
-        if tracker_type == 'search':
-            for category in tracker.get('categories', []):
-                for search in category.get('searches', []):
-                    if search.get('id') == item_id:
-                        return search
+        items_key = {
+            'search': 'searches',
+            'url': 'urls',
+            'page': 'pages',
+            'extraction': 'extractions'
+        }[tracker_type]
 
-        else:
-            items_key = {
-                'url': 'urls',
-                'page': 'pages',
-                'extraction': 'extractions'
-            }[tracker_type]
-
-            for item in tracker.get(items_key, []):
-                if item.get('id') == item_id:
-                    return item
+        for item in tracker.get(items_key, []):
+            if item.get('id') == item_id:
+                return item
 
         return None

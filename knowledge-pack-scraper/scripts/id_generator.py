@@ -4,7 +4,10 @@ ID generation utilities using cuid2.
 Provides functions to generate unique IDs with appropriate prefixes for different entity types.
 """
 
-from cuid2 import cuid
+from cuid2 import Cuid
+
+# Initialize cuid2 generator
+_cuid_generator = Cuid()
 
 
 def generate_id(prefix: str) -> str:
@@ -17,7 +20,7 @@ def generate_id(prefix: str) -> str:
     Returns:
         Prefixed cuid2 string
     """
-    return f"{prefix}{cuid()}"
+    return f"{prefix}{_cuid_generator.generate()}"
 
 
 def generate_page_id() -> str:

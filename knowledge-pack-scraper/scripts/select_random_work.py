@@ -33,26 +33,17 @@ def select_random_work(tm: Optional[TrackerManager] = None) -> Optional[Tuple[Tr
         tracker = tm.load(tracker_type)
 
         # Collect all pending items
-        pending = []
+        items_key = {
+            'search': 'searches',
+            'url': 'urls',
+            'page': 'pages',
+            'extraction': 'extractions'
+        }[tracker_type]
 
-        if tracker_type == 'search':
-            for category in tracker.get('categories', []):
-                pending.extend([
-                    s for s in category.get('searches', [])
-                    if s.get('status') == 'pending'
-                ])
-
-        else:
-            items_key = {
-                'url': 'urls',
-                'page': 'pages',
-                'extraction': 'extractions'
-            }[tracker_type]
-
-            pending = [
-                item for item in tracker.get(items_key, [])
-                if item.get('status') == 'pending'
-            ]
+        pending = [
+            item for item in tracker.get(items_key, [])
+            if item.get('status') == 'pending'
+        ]
 
         if pending:
             # Random selection from available work
