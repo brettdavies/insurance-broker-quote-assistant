@@ -229,11 +229,11 @@ def main() -> None:
         # Success!
         output_result(
             success=True,
-            message=f"Validation passed for {search_id}",
+            message="Validation passed for search",
             next_steps=(
                 f"Validation completed successfully!\n\n"
                 f"Details:\n"
-                f"  - Search {search_id} marked as completed\n"
+                f"  - Search marked as completed\n"
                 f"  - Total data points: {data_points_extracted}\n"
                 f"  - All files validated\n\n"
                 f"Changes committed to git.\n\n"

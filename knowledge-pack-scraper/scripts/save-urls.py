@@ -198,10 +198,10 @@ def main() -> None:
         # Success!
         output_result(
             success=True,
-            message=f"Successfully registered {len(urls)} URLs for {search_id}",
+            message=f"Successfully registered {len(urls)} URLs",
             next_steps=(
                 f"URLs saved and committed successfully.\n\n"
-                f"Registered {len(urls)} URLs for search {search_id}.\n"
+                f"Registered {len(urls)} URLs.\n"
                 f"URLs will be fetched by URL processing agents.\n\n"
                 f"Continue with next work item:\n"
                 f"Run: uv run scripts/select-work.py"

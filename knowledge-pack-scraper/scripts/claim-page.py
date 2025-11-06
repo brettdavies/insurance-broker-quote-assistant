@@ -177,7 +177,7 @@ def main() -> None:
                         # Lost race - AUTOMATIC RECOVERY
                         output_result(
                             success=False,
-                            message=f"Lost race on {page_id} - another agent claimed it first",
+                            message="Lost race - another agent claimed this page first",
                             next_steps=(
                                 "Race condition detected and handled automatically.\n"
                                 "Another agent won the race to claim this page.\n\n"
@@ -253,7 +253,7 @@ def main() -> None:
 
         output_result(
             success=True,
-            message=f"Successfully claimed {page_id} and loaded {format_used} content ({len(content):,} chars)",
+            message=f"Successfully claimed page and loaded {format_used} content ({len(content):,} chars)",
             next_steps=(
                 f"Claim committed successfully. You now own {page_id}.\n\n"
                 f"ACTION REQUIRED - Extract Data:\n"

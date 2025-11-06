@@ -160,7 +160,7 @@ def main() -> None:
                         # Lost race - AUTOMATIC RECOVERY: select new work
                         output_result(
                             success=False,
-                            message=f"Lost race on {search_id} - another agent claimed it first",
+                            message="Lost race - another agent claimed this search first",
                             next_steps=(
                                 "Race condition detected and handled automatically.\n"
                                 "Another agent won the race to claim this search.\n\n"
@@ -203,7 +203,7 @@ def main() -> None:
 
         output_result(
             success=True,
-            message=f"Successfully claimed {search_id}",
+            message="Successfully claimed search",
             next_steps=(
                 f"Claim committed successfully. You now own {search_id}.\n\n"
                 f"ACTION REQUIRED - Perform WebSearch:\n"

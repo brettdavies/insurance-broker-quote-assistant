@@ -205,13 +205,13 @@ def main() -> None:
         # Success!
         output_result(
             success=True,
-            message=f"Successfully saved {data_point_count} data points from {page_id}",
+            message=f"Successfully saved {data_point_count} data points",
             next_steps=(
                 f"Extraction saved successfully!\n\n"
                 f"Details:\n"
                 f"  - Data points extracted: {data_point_count}\n"
                 f"  - Saved to: {raw_file.name}\n"
-                f"  - Page {page_id} marked as completed\n\n"
+                f"  - Page marked as completed\n\n"
                 f"Changes committed to git.\n\n"
                 f"Continue with next work item:\n"
                 f"Run: uv run scripts/select-work.py"

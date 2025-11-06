@@ -181,7 +181,7 @@ async def main_async(url_id: str) -> None:
                         # Lost race - AUTOMATIC RECOVERY
                         output_result(
                             success=False,
-                            message=f"Lost race on {url_id} - another agent claimed it first",
+                            message="Lost race - another agent claimed this URL first",
                             next_steps=(
                                 "Race condition detected and handled automatically.\n"
                                 "Another agent is fetching this URL.\n\n"
@@ -283,7 +283,7 @@ async def main_async(url_id: str) -> None:
         # Success!
         output_result(
             success=True,
-            message=f"Successfully fetched and saved {page_id}",
+            message="Successfully fetched and saved page",
             next_steps=(
                 f"URL fetch completed successfully!\n\n"
                 f"Saved:\n"
