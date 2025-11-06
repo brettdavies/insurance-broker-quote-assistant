@@ -1,27 +1,31 @@
-# Knowledge Pack Phase 2: Agent Instructions
+# Knowledge Pack Phase 2: Subagent Instructions
 
-**Version**: 1.0  
-**Date**: 2025-11-05  
-**Project**: Insurance Broker Quote Assistant (IQuote Pro)  
-**Purpose**: Autonomous agent workflow for Phase 2 raw data gathering
+**Version**: 2.3
+**Date**: 2025-11-06
+**Project**: Insurance Broker Quote Assistant (IQuote Pro)
+**Purpose**: Subagent workflow for executing ONE complete Phase 2 search
 
 ---
 
-## ⚠️ CRITICAL: Memory Refresh Protocol
+## ⚠️ CRITICAL: Execution Instructions
 
-**AFTER EVERY GIT PUSH**, you MUST:
+You will execute Steps 1-8 for **ONE search only**, then ⚠️ STOP IMMEDIATELY.
 
-1. ✅ **Clear working memory** of the previous search
-2. ✅ **Re-read this ENTIRE document** from the beginning
-3. ✅ **Start fresh** at "Single Search Workflow" section
+**Your task:**
+- Execute ONE complete search workflow (Steps 1-8)
+- Generate your own unique `agent_id` in Step 2
+- Claim a search, fetch data, extract, save, commit, push
+- **STOP immediately** after Step 8 (git push)
 
-**Why this matters:**
-- Prevents instruction drift across 200+ searches
-- Ensures consistent execution every time
-- Catches any document updates immediately
-- Maintains strict adherence to process
+**DO NOT:**
+- ❌ Execute multiple searches
+- ❌ Continue after Step 8 git push
+- ❌ Re-read this document after completing
 
-**DO NOT skip this step.** This is not optional.
+**DO:**
+- ✅ Execute Steps 1-8 exactly once
+- ✅ Generate your own agent_id at Step 2
+- ✅ STOP immediately after Step 8 push
 
 ---
 
@@ -32,9 +36,13 @@ Before starting Phase 2, verify:
 - ✅ Git is configured and authenticated (`git config user.name`, `git config user.email`)
 - ✅ Bun is installed (`bun --version`)
 - ✅ ID generation setup complete - see [sot-id-conventions.md](sot-id-conventions.md) for installation
+- ✅ Helper scripts exist:
+  - `scripts/select-random-search.ts` (selects random pending search)
+  - `scripts/generate-ids.ts` (generates cuid2 IDs)
+  - `scripts/update-tracker.ts` (updates tracker status)
 - ✅ WebSearch and WebFetch tools are accessible
 - ✅ Write access to `knowledge_pack/` directory exists
-- ✅ `knowledge_pack/search-tracker.json` exists and is populated
+- ✅ `knowledge_pack/search-tracker.json` exists and is populated (run `bun run scripts/populate-tracker.ts` if needed)
 
 ---
 
@@ -42,138 +50,233 @@ Before starting Phase 2, verify:
 
 This is the core loop. Execute these steps **exactly** for every search.
 
-### Step 1: Read Tracker
+### Step 1: Read Tracker and Select Random Pending Search
 
 ```bash
-# Read the current tracker state
-cat knowledge_pack/search-tracker.json
+# Select a random pending search and set environment variables
+eval "$(bun run scripts/select-random-search.ts)"
+
+# Verify variables are set
+echo "Selected search: $SEARCH_ID"
+echo "Query: $SEARCH_QUERY"
 ```
 
-**Find next pending search:**
-- Look for first entry with `"status": "pending"`
-- If none found: **Phase 2 is complete** → STOP
-- Record the search ID and query string
+**What this does:**
+- Collects ALL pending searches from all categories
+- If none found: **Phase 2 is complete** → ⚠️ STOP IMMEDIATELY
+- Selects ONE at random (reduces race conditions)
+- Sets `$SEARCH_ID` and `$SEARCH_QUERY` environment variables for subsequent steps
+
+**Output example:**
+```
+✓ Selected: search_ghaxk1v0xqangv8kfakrazv2
+✓ Query: "Progressive" state availability
+✓ Category: carrier-states
+✓ Carrier: Progressive
+✓ Priority: high
+Selected search: search_ghaxk1v0xqangv8kfakrazv2
+Query: "Progressive" state availability
+```
+
+**Why random selection?**
+- Multiple subagents run concurrently
+- Random selection distributes work evenly across all 14 categories
+- Reduces chance of multiple agents claiming the same search simultaneously
 
 ### Step 2: Claim Search
 
-**Update search record in tracker:**
+Generate your unique agent ID and claim the search selected in Step 1:
 
-```json
-{
-  "id": "search_ckm9x7wdx1",
-  "query": "\"GEICO\" \"available in\" states",
-  "status": "in_progress",           // Changed from "pending"
-  "assignedTo": "<your-agent-id>",   // Add your agent ID
-  "startedAt": "2025-11-05T14:30:00Z", // Current ISO timestamp
-  // ... other fields unchanged
-}
+```bash
+# Generate YOUR agent ID (unique for this subagent)
+AGENT_ID=$(bun run scripts/generate-ids.ts 1 "agnt_")
+
+# Claim the search (use $SEARCH_ID from Step 1)
+bun run scripts/update-tracker.ts claim $SEARCH_ID $AGENT_ID
 ```
 
-**Agent ID format:** Use a consistent identifier (e.g., `"agnt_cm1a5b7k9p"`, `"claude-web-1"`, or generate once with `agent_${createId()}`)
+**What this does automatically:**
+- Sets `status` → `"in_progress"`
+- Sets `assignedTo` → your generated agent ID
+- Sets `startedAt` → current ISO timestamp
+- Decrements `statusCounts.pending`
+- Increments `statusCounts.in_progress`
+- Updates `meta.lastUpdated`
 
-**Save the updated tracker.**
+**Example output:**
+```bash
+# Agent ID: agnt_abc123xyz
+# Search ID: search_u7gauzcnv1bdza75kmux57hi
+# Query: "GEICO" "available in" states
+```
 
 ### Step 3: Commit Claim
 
 ```bash
 git add knowledge_pack/search-tracker.json
-git commit -m "chore(kb): claim search_ckm9x7wdx1 - GEICO available states"
-git push
+git commit -m "chore(kb): claim $SEARCH_ID - ${SEARCH_QUERY:0:50}"
+git push || (git pull --rebase && git push)
 ```
 
 **Commit message format:**
 ```
-chore(kb): claim {search-id} - {brief-query-description}
+chore(kb): claim {search-id} - {first-50-chars-of-query}
 ```
+
+**Example:**
+```
+chore(kb): claim search_u7gauzcnv1bdza75kmux57hi - "GEICO" "available in" states
+```
+
+**Push conflict handling:**
+- If another subagent pushed while you were claiming, the push will fail
+- The retry logic automatically rebases your commit on top of the remote changes
+- The tracker JSON merge will succeed (different searches being claimed)
+- If the second push also fails, ⚠️ STOP IMMEDIATELY (rare)
 
 ### Step 4: Execute Search
 
 **4.1 Perform web search:**
 
-Use WebSearch with the **exact query string** from the tracker:
+Use WebSearch with the **exact query string** from Step 1 (`$SEARCH_QUERY` variable):
 
-```
-Query: "GEICO" "available in" states
+```bash
+# Use the query from Step 1
+echo "Executing search: $SEARCH_QUERY"
+# Use WebSearch tool with this exact query
 ```
 
 **4.2 Identify relevant URLs:**
 
-From search results, select 1-3 most relevant URLs:
-- Prefer official carrier sites (geico.com)
-- Then state regulatory sites (.gov)
-- Then industry organizations (iii.org, naic.org)
-- Finally financial/comparison sites (nerdwallet.com, bankrate.com)
+From search results, select **4-6 URLs** to attempt (expect 2-3 to succeed), following this strict authority ranking ([see sot-source-hierarchy.md](sot-source-hierarchy.md)):
+
+- First, prefer state regulatory sites and official government pages (.gov, eg: insurance.ca.gov) — **Level 5: Authoritative**
+- Then, official carrier sites (e.g., geico.com, statefarm.com) — **Level 4: Primary**
+- Next, established industry organizations (e.g., iii.org, naic.org) — **Level 3: Reference**
+- Finally, reputable financial/comparison sites (e.g., nerdwallet.com, bankrate.com, valuepenguin.com) — **Level 2: Secondary**
+
+**Tip:** Always document the authority level for each source you choose.
+
+**Expected outcomes:**
+- Attempt Fetching on all 4-6 URLs
+- 2-3 URLs will yield usable content
+- Some URLs may return incomplete content (CSS only, JavaScript-heavy pages, paywalls)
+- If all 4-6 of your original URLs fail to produce a successful fetch, ⚠️ STOP IMMEDIATELY
 
 **4.3 Fetch page content:**
 
-For each selected URL:
+For each selected URL, generate a unique page ID and fetch content:
 
-```typescript
-// Generate unique page ID using page_ prefix (see sot-id-conventions.md for setup)
-const pageId = `page_${createId()}`;  // e.g., "page_ckm9x7w8k0"
+```bash
+# Generate unique page ID
+PAGE_ID=$(bun run scripts/generate-ids.ts 1 "page_")
 
-// Fetch page content and save with metadata
-const content = await WebFetch(url);
-const ext = url.endsWith('.pdf') ? 'pdf' : 'html';
-const pageFile = `_pages/${pageId}.${ext}`;
-await saveFile(`knowledge_pack/raw/${pageFile}`, content);
+# Use WebFetch tool to retrieve page content (returns AI-summarized markdown)
+# Save to knowledge_pack/raw/_pages/${PAGE_ID}.md (or .pdf if URL ends with .pdf)
 ```
+
+**Instructions:**
+- Use WebFetch tool with the URL
+- Save returned content to `knowledge_pack/raw/_pages/${PAGE_ID}.md`
+- If URL ends with `.pdf`, use `.pdf` extension instead of `.md`
+
+**⚠️ Important: WebFetch Behavior**
+- WebFetch returns **AI-summarized content** in markdown format, not raw HTML
+- The returned content is a condensed version of the page optimized for data extraction
+- Page files will contain summaries, not source HTML - this is expected and acceptable
+- If WebFetch returns no usable content (e.g., "CSS only", "JavaScript framework"), try the next URL
 
 For complete ID generation specifications and installation instructions, see [sot-id-conventions.md](sot-id-conventions.md).
 
 **4.4 Save page files:**
 
 ```
-knowledge_pack/raw/_pages/page_ckm9x7w8k0.html
+knowledge_pack/raw/_pages/page_ckm9x7w8k0.md
 knowledge_pack/raw/_pages/page_ckm9x7wdx1.pdf
-knowledge_pack/raw/_pages/page_ckm9x7whp2.html
+knowledge_pack/raw/_pages/page_ckm9x7whp2.md
 ```
 
 ### Step 5: Extract Data Points
 
 **5.1 Parse page content:**
 
-- For HTML: Parse DOM, identify data elements
-- For PDF: Extract text content
+- WebFetch provides AI-summarized content in markdown format
+- Identify data points from the summary (percentages, dollar amounts, eligibility criteria)
 - Look for data points relevant to the search query
 
 **5.2 For each data point found:**
 
-Create a raw data entry with structure shown in [sot-schemas.md#raw-data-schema](sot-schemas.md#raw-data-schema). Use the `raw_` prefix for IDs:
+Generate a unique raw data ID and create entry:
 
-```typescript
-const rawDataEntry = {
-  id: `raw_${createId()}`,  // e.g., "raw_ckm9x7wkm3" - see sot-id-conventions.md
-  dataPoint: "geico_multi_policy_discount_percentage",
-  rawValue: "up to 15%",
-  // ... see sot-schemas.md for complete structure
-};
+```bash
+# Generate unique raw data ID
+RAW_ID=$(bun run scripts/generate-ids.ts 1 "raw_")
 ```
 
-For complete ID generation specifications, see [sot-id-conventions.md](sot-id-conventions.md).
+Then create a raw data entry with structure shown in [sot-schemas.md#raw-data-schema](sot-schemas.md#raw-data-schema):
+
+```json
+{
+  "id": "raw_ckm9x7wkm3",
+  "dataPoint": "geico_multi_policy_discount_percentage",
+  "rawValue": "up to 15%",
+  // ... see sot-schemas.md for complete structure
+}
+```
+
+**Instructions:**
+- Generate a new RAW_ID for each data point found
+- Use the ID in the raw data entry's `id` field
+- Follow the complete schema structure from [sot-schemas.md](sot-schemas.md)
 
 **Element Reference Guidelines:**
-- Use CSS selectors when possible (e.g., `div.class > p:nth-child(2)`)
-- Use XPath for complex structures (e.g., `//div[@id='discounts']/p[2]`)
-- Be as specific as possible to enable future verification
+
+Since WebFetch returns AI summaries (not raw HTML), use **section references** instead of CSS/XPath:
+- Reference the section or heading where data was found (e.g., `"Policy Discounts section - Multi-vehicle"`)
+- Include context about the data's location in the summary (e.g., `"Driver Education section - Good student discount"`)
+- Be descriptive enough to relocate the data if the page is re-fetched
+
+**Examples:**
+```json
+// ✅ Good section reference
+"elementRef": "Policy Discounts section - Multi-vehicle"
+
+// ✅ Good section reference with context
+"elementRef": "Affiliations section - Military/National Guard"
+
+// ❌ Not possible with WebFetch summaries
+"elementRef": "div.discount-card[data-discount='multi-policy'] > p.percentage"
+```
 
 **Confidence Levels:**
 - `"high"`: Official carrier site, clear statement, exact value
 - `"medium"`: Third-party site, range given, general statement
 - `"low"`: Unofficial source, outdated info, unclear context
 
+**If extracted data seems questionable:**
+- Set confidence to `"low"`
+- Add detailed notes explaining the concern (e.g., `"Value seems unusually high - needs manual verification"`)
+- Continue with the workflow
+
 ### Step 6: Save Raw Data
 
 **6.1 Determine file path:**
 
+Use the search_id to ensure unique filenames (prevents conflicts when multiple searches target same category):
+
 ```
-knowledge_pack/raw/{category}/{subcategory}.raw.json
+knowledge_pack/raw/{category}/{subcategory}_{search-id}.raw.json
 ```
 
 **Examples:**
-- Carrier discounts: `knowledge_pack/raw/carriers/geico/discounts_auto.raw.json`
-- State minimums: `knowledge_pack/raw/states/CA_minimums.raw.json`
-- Industry data: `knowledge_pack/raw/industry/average_pricing_iii.raw.json`
+- Carrier discounts: `knowledge_pack/raw/carriers/geico/discounts_auto_search_abc123.raw.json`
+- State minimums: `knowledge_pack/raw/states/CA_minimums_search_def456.raw.json`
+- Industry data: `knowledge_pack/raw/industry/average_pricing_search_ghi789.raw.json`
+
+**Format:**
+- `{category}` = Top-level category (carriers, states, industry)
+- `{subcategory}` = Descriptive name (geico/discounts_auto, CA_minimums, average_pricing)
+- `{search-id}` = The search ID from Step 1 (e.g., search_abc123)
 
 **6.2 File format:**
 
@@ -199,52 +302,47 @@ knowledge_pack/raw/{category}/{subcategory}.raw.json
 
 ### Step 7: Update Tracker
 
-**Update search record:**
+Update the tracker with completion data using the helper script:
 
-```json
-{
-  "id": "search_ckm9x7wdx1",
-  "query": "\"GEICO\" \"available in\" states",
-  "status": "completed",              // Changed from "in_progress"
-  "assignedTo": "agnt_cm1a5b7k9p",
-  "startedAt": "2025-11-05T14:30:00Z",
-  "completedAt": "2025-11-05T14:42:00Z", // Current ISO timestamp
-  "durationSeconds": 720,                 // completedAt - startedAt
-  "rawDataFiles": [
-    "carriers/geico/states_operating.raw.json"
-  ],
-  "pageFiles": [
-    "page_ckm9x7w8k0",
-    "page_ckm9x7wdx1"
-  ],
-  "commitHash": null,                     // Will be filled by git
-  "errorMessage": null,
-  "retryCount": 0,
-  "notes": "Found 50 state listings from official GEICO site"
-}
+```bash
+# Use $SEARCH_ID from Step 1
+bun run scripts/update-tracker.ts complete $SEARCH_ID \
+  {raw-data-file-path} \
+  --pages {page-id-1} {page-id-2} {page-id-3} \
+  --notes "Found N data points from M sources"
 ```
 
-**Also update `statusCounts`:**
+**What this does automatically:**
+- Sets `status` → `"completed"`
+- Sets `completedAt` → current ISO timestamp
+- Calculates `durationSeconds` (completedAt - startedAt)
+- Sets `rawDataFiles` array
+- Sets `pageFiles` array
+- Decrements `statusCounts.in_progress`
+- Increments `statusCounts.completed`
+- Updates `meta.lastUpdated`
 
-```json
-{
-  "statusCounts": {
-    "pending": 199,      // Decreased by 1
-    "in_progress": 0,    // Back to 0
-    "completed": 1,      // Increased by 1
-    "failed": 0
-  }
-}
+**Example:**
+```bash
+# Using variables from previous steps
+# $SEARCH_ID = search_u7gauzcnv1bdza75kmux57hi
+# Raw data file: carriers/geico/states_search_u7gauzcnv1bdza75kmux57hi.raw.json
+# Page IDs: page_abc123 page_def456 page_ghi789
+
+bun run scripts/update-tracker.ts complete $SEARCH_ID \
+  carriers/geico/states_search_${SEARCH_ID}.raw.json \
+  --pages page_abc123 page_def456 page_ghi789 \
+  --notes "Found 50 states from geico.com"
 ```
 
-**Save the updated tracker.**
+### Step 8: Commit Completion and STOP
 
-### Step 8: Commit Completion
+Commit all changes and push to git:
 
 ```bash
 git add knowledge_pack/
-git commit -m "feat(kb): complete search_ckm9x7wdx1 - found 50 states from geico.com"
-git push
+git commit -m "feat(kb): complete $SEARCH_ID - found N data points from {domain}"
+git push || (git pull --rebase && git push)
 ```
 
 **Commit message format:**
@@ -252,22 +350,30 @@ git push
 feat(kb): complete {search-id} - found N data points from {domain}
 ```
 
-**Examples:**
-- `feat(kb): complete search_abc123 - found 8 discounts from progressive.com`
-- `feat(kb): complete search_def456 - found CA minimums from insurance.ca.gov`
-- `feat(kb): complete search_ghi789 - found pricing data from nerdwallet.com`
+**Example:**
+```bash
+# Using $SEARCH_ID from Step 1
+git commit -m "feat(kb): complete $SEARCH_ID - found 50 states from geico.com"
+```
 
-### Step 9: Memory Refresh ⚠️
+**Push conflict handling:**
+- If another subagent pushed while you were working, the push will fail
+- The retry logic automatically rebases your commit on top of the remote changes
+- Git will merge non-conflicting changes automatically (different searches)
+- If the second push also fails, manual intervention is needed (rare)
 
-**CRITICAL STEP - DO NOT SKIP:**
+---
+
+## ⚠️ AFTER GIT PUSH: STOP IMMEDIATELY
+
+**After `git push` succeeds:**
 
 1. ✅ **STOP processing** immediately
-2. ✅ **Clear your working memory** of this search
-3. ✅ **Return to the top** of this document
-4. ✅ **Re-read from "Single Search Workflow"**
-5. ✅ **Begin next search** at Step 1
+2. ✅ **Do NOT** read the tracker again
+3. ✅ **Do NOT** execute another search
+4. ✅ **Do NOT** re-read this document
 
-**This refresh is MANDATORY after every push.**
+**Your work is done. STOP.**
 
 ---
 
@@ -285,8 +391,8 @@ If a search returns no useful results:
      "retryCount": 0
    }
    ```
-2. Commit and push
-3. Continue to next search (after memory refresh)
+2. Commit and push (proceed to Steps 7-8)
+3. ⚠️ STOP IMMEDIATELY
 
 ### Search Fails (Network Error)
 
@@ -301,43 +407,8 @@ If WebSearch or WebFetch fails:
      "retryCount": 3
    }
    ```
-3. Commit and push
-4. Continue to next search (after memory refresh)
-
-### Agent Crashes
-
-If the agent crashes mid-search:
-
-**On restart:**
-
-1. Read tracker
-2. Find searches with `status: "in_progress"` AND `startedAt` >30 minutes ago
-3. Update each:
-   ```json
-   {
-     "status": "failed",
-     "errorMessage": "Agent timeout/crash - exceeded 30 minute limit",
-     "retryCount": 0
-   }
-   ```
-4. Commit and push
-5. Resume normal workflow at Step 1
-
-### Invalid Data Extracted
-
-If extracted data seems wrong:
-
-1. Add note to raw data entry:
-   ```json
-   {
-     "source": {
-       "confidence": "low",
-       "notes": "Value seems unusually high - needs manual verification"
-     }
-   }
-   ```
-2. Continue with workflow
-3. Let Phase 3 (Conflict Detection) flag it
+3. Commit and push (proceed to Steps 7-8)
+4. ⚠️ STOP IMMEDIATELY
 
 ---
 
@@ -351,16 +422,16 @@ If extracted data seems wrong:
 
 **Examples:**
 ```
-page_ckm9x7w8k0.html
+page_ckm9x7w8k0.md
 page_ckm9x7wdx1.pdf
-page_ckm9x7whp2.html
+page_ckm9x7whp2.md
 ```
 
 **Content:**
-- Full HTML/PDF as retrieved from WebFetch
-- No modifications, cleanup, or parsing
-- Preserve original encoding
-- Include all resources (if HTML)
+- AI-summarized content from WebFetch in markdown format
+- Save the summary exactly as returned (no additional modifications)
+- For URLs ending in `.pdf`, extension will be `.pdf`; otherwise use `.md`
+- Content is pre-processed by WebFetch for data extraction (this is expected)
 
 **Metadata:** Stored in raw data entries, not separate files
 
@@ -405,8 +476,8 @@ industry/average_pricing_iii.raw.json
   "source": {
     "uri": "https://www.geico.com/auto/discounts/",
     "pageId": "page_ckm9x7w8k0",
-    "pageFile": "_pages/page_ckm9x7w8k0.html",
-    "elementRef": "div.discount-card[data-discount='multi-policy'] > p.percentage",
+    "pageFile": "_pages/page_ckm9x7w8k0.md",
+    "elementRef": "Policy Discounts section - Multi-policy bundling",
     "extractedValue": "up to 15%",
     "accessedDate": "2025-11-05T14:35:00Z",
     "confidence": "high"
@@ -434,7 +505,7 @@ industry/average_pricing_iii.raw.json
   "completedAt": "2025-11-05T14:42:00Z",
   "durationSeconds": 720,
   "rawDataFiles": [
-    "carriers/geico/states_operating.raw.json"
+    "carriers/geico/states_operating_search_ckm9x7wdx1.raw.json"
   ],
   "pageFiles": [
     "page_ckm9x7w8k0",
@@ -449,7 +520,7 @@ industry/average_pricing_iii.raw.json
 
 ### Example 3: Raw Data File
 
-**File:** `knowledge_pack/raw/carriers/geico/discounts_auto.raw.json`
+**File:** `knowledge_pack/raw/carriers/geico/discounts_auto_search_ckm9x7wdx1.raw.json`
 
 ```json
 [
@@ -461,8 +532,8 @@ industry/average_pricing_iii.raw.json
     "source": {
       "uri": "https://www.geico.com/auto/discounts/",
       "pageId": "page_ckm9x7w8k0",
-      "pageFile": "_pages/page_ckm9x7w8k0.html",
-      "elementRef": "div.discount-card > p.percentage",
+      "pageFile": "_pages/page_ckm9x7w8k0.md",
+      "elementRef": "Policy Discounts section - Multi-policy bundling",
       "extractedValue": "up to 15%",
       "accessedDate": "2025-11-05T14:35:00Z",
       "confidence": "high"
@@ -480,8 +551,8 @@ industry/average_pricing_iii.raw.json
     "source": {
       "uri": "https://www.geico.com/auto/discounts/",
       "pageId": "page_ckm9x7w8k0",
-      "pageFile": "_pages/page_ckm9x7w8k0.html",
-      "elementRef": "div.discount-card[data-discount='good-student'] > p.percentage",
+      "pageFile": "_pages/page_ckm9x7w8k0.md",
+      "elementRef": "Driver Education section - Good student discount",
       "extractedValue": "up to 15%",
       "accessedDate": "2025-11-05T14:35:00Z",
       "confidence": "high"
@@ -503,22 +574,6 @@ industry/average_pricing_iii.raw.json
 ```bash
 # Read tracker and count statuses
 cat knowledge_pack/search-tracker.json | grep '"status"' | sort | uniq -c
-```
-
-### Check Time Remaining
-
-```typescript
-const tracker = JSON.parse(fs.readFileSync('knowledge_pack/search-tracker.json'));
-const avgDuration = tracker.categories
-  .flatMap(c => c.searches)
-  .filter(s => s.status === 'completed')
-  .map(s => s.durationSeconds)
-  .reduce((sum, d, _, arr) => sum + d / arr.length, 0);
-
-const remaining = tracker.statusCounts.pending;
-const estimatedMinutes = (remaining * avgDuration) / 60;
-
-console.log(`Estimated time remaining: ${estimatedMinutes} minutes`);
 ```
 
 ---
@@ -551,18 +606,27 @@ If >0: Read tracker carefully, search might be nested in categories
 
 ### "Git push rejected"
 
-Someone else pushed changes:
+**This should not happen** - Steps 3 and 8 include automatic retry logic:
+```bash
+git push || (git pull --rebase && git push)
+```
+
+If you see this error, the automatic retry failed. Manual resolution:
 ```bash
 git pull --rebase
+# Resolve any conflicts in search-tracker.json (keep both changes)
+git add knowledge_pack/search-tracker.json
+git rebase --continue
 git push
 ```
 
 ### "WebFetch timeout"
 
-Increase timeout or retry:
-- Retry 3 times with 30-second delay
-- If still fails, mark search as failed
-- Move to next search
+Retry:
+- Retry 3 times with 30-second delay within Step 4
+- If still fails, mark search as failed in tracker
+- Commit and push (proceed to Steps 7-8)
+- ⚠️ STOP IMMEDIATELY
 
 ### "Duplicate page ID"
 
@@ -583,5 +647,14 @@ This should never happen with cuid2. If it does:
 
 ---
 
-**Last Updated**: 2025-11-05
+**Last Updated**: 2025-11-06 (Added TypeScript helper for random search selection)
 **Status**: Ready for Phase 2 Execution
+**Changes**:
+- v2.0: Restructured for master/subagent execution model
+- Integrated helper scripts directly into Steps 2 and 7
+- Removed Step 9 (subagents execute once and stop)
+- Removed advisory sections (Helper Scripts, Parallel Execution)
+- Added prescriptive execution with zero decision-making required
+- v2.1: Added automatic git push retry logic to Steps 3 and 8 for concurrent conflict handling
+- v2.2: Updated raw data file naming to include search_id (prevents concurrent write conflicts)
+- v2.3: Replaced bash jq commands with TypeScript helper script (select-random-search.ts) for consistency and reduced terminal complexity

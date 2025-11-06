@@ -922,26 +922,6 @@ OR                        # Either term
 2020..2024               # Date range
 ```
 
-### Advanced Search Patterns
-
-```
-# State-specific carrier query
-"[Carrier]" "[Product]" "[State]" [DataPoint]
-Example: "GEICO" "auto insurance" "California" "average cost"
-
-# Regulatory source query
-site:[state-insurance-dept] [topic]
-Example: site:insurance.ca.gov minimum coverage
-
-# Discount percentage query
-"[Carrier]" "[Discount Name]" percentage OR "save" OR "%"
-Example: "GEICO" "multi-policy" percentage OR "save" OR "%"
-
-# Industry benchmark query
-site:[comparison-site] [carrier] [state] [metric]
-Example: site:bankrate.com GEICO California rates
-```
-
 ### Quality Signals to Look For
 
 When evaluating search results:
