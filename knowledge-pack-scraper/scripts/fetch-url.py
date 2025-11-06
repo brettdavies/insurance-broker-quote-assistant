@@ -103,13 +103,18 @@ async def fetch_page(url: str) -> tuple[bool, str, str, str]:
         )
         run_config = CrawlerRunConfig()
 
-        async with AsyncWebCrawler(browser_config) as crawler:
+        crawler = AsyncWebCrawler(browser_config)
+        await crawler.start()
+
+        try:
             result = await crawler.arun(url, config=run_config)
 
             if not result.success:
                 return False, "", "", result.error_message or "Unknown crawl error"
 
             return True, result.html, result.markdown.raw_markdown, ""
+        finally:
+            await crawler.close()
 
     except Exception as e:
         return False, "", "", str(e)
@@ -225,9 +230,15 @@ async def main_async(url_id: str) -> None:
             output_result(
                 success=False,
                 message=f"Fetch failed: {error_msg}",
-                next_steps="Run: uv run scripts/select-work.py to continue with next work item"
+                next_steps="Fetch failed. Chaining to next work item..."
             )
-            sys.exit(1)
+
+            # Auto-chain to select-work.py (even on failure)
+            result = subprocess.run(
+                ['uv', 'run', 'scripts/select-work.py'],
+                cwd=Path(__file__).parent.parent
+            )
+            sys.exit(result.returncode)
 
         # Step 9: Save both formats with SAME page ID
         html_file = output_dir / f"{page_id}.html"
