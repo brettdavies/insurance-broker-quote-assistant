@@ -2,14 +2,14 @@
   "meta": {
     "version": "1.0",
     "createdDate": "2025-11-06T06:29:28.470Z",
-    "lastUpdated": "2025-11-06T07:08:43.799Z",
+    "lastUpdated": "2025-11-06T07:08:57.899Z",
     "totalSearches": 343,
     "description": "Phase 2 Knowledge Pack Data Gathering - All Search Queries"
   },
   "statusCounts": {
     "pending": 338,
-    "in_progress": 3,
-    "completed": 1,
+    "in_progress": 2,
+    "completed": 2,
     "failed": 1
   },
   "categories": [
@@ -5443,17 +5443,23 @@
           "query": "\"subject to underwriting\" insurance language",
           "category": "compliance",
           "priority": "low",
-          "status": "in_progress",
+          "status": "completed",
           "assignedTo": "agnt_v3pbdantjxz6ko00zx8x193e",
           "startedAt": "2025-11-06T07:04:22.926Z",
-          "completedAt": null,
-          "durationSeconds": null,
-          "rawDataFiles": [],
-          "pageFiles": [],
+          "completedAt": "2025-11-06T07:08:57.898Z",
+          "durationSeconds": 274,
+          "rawDataFiles": [
+            "compliance/subject_to_underwriting_language_search_d5ibvv7w142oerpmoab0a2b9.raw.json"
+          ],
+          "pageFiles": [
+            "page_ev900a3r5lvogyxu0lbb8nru",
+            "page_tanrmj3ll18toapt5me93w1u",
+            "page_wbh32nj8mg83051gs8o5os4z"
+          ],
           "commitHash": null,
           "errorMessage": null,
           "retryCount": 0,
-          "notes": null
+          "notes": "Found 6 data points from 3 sources (Guardian, Insureon, Unusual Risks)"
         },
         {
           "id": "search_re9lxuncz4aq68kjx62fbsny",
