@@ -196,7 +196,7 @@ const sourceId = `src_${createId()}`;
     "src_ckm9x7wqr5": {
       "uri": "https://www.geico.com/auto/discounts/",
       "elementRef": "div.discount-card",
-      "accessedDate": "2025-11-05"
+      "accessedDate": "2025-11-05T12:00:00Z"
     }
   }
 }

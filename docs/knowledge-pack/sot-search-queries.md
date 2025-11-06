@@ -973,7 +973,7 @@ When evaluating search results:
 1. **Follow search query order**: Start with primary, then advanced
 2. **Document exact URLs**: Full path, not just domain
 3. **Screenshot or save HTML**: For element reference
-4. **Note access date**: ISO 8601 timestamp format (YYYY-MM-DDTHH:mm:ssZ) - see [Date and Timestamp Standards](sot-schemas.md#6-date-and-timestamp-standards)
+4. **Note access date**: ISO 8601 timestamp format (YYYY-MM-DDTHH:mm:ssZ) - see [Date and Timestamp Standards](sot-schemas.md#7-date-and-timestamp-standards)
 5. **Copy exact wording**: For rawValue field
 
 ### Quality Checklist

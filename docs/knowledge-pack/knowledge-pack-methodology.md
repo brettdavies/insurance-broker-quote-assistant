@@ -58,7 +58,7 @@ When a child data point has no direct sources, it inherits from its parent:
   },
   "discounts": [
     {
-      "id": "discount-geico-multi-001",
+      "id": "disc_cm5e9f1o3t",
       "states": {
         "id": "field-states-001",
         "value": ["CA", "TX", "FL", "NY", "IL"],
@@ -132,8 +132,6 @@ For each source URL:
     "uri": "https://www.geico.com/auto/discounts/",
     "elementRef": "div.discount-card[data-discount='multi-policy'] > p.percentage",
     "accessedDate": "2025-11-05T10:30:00Z",
-    "extractionMethod": "manual",
-    "screenshot": "screenshots/geico-discounts-001.png",
     "confidence": "high"
   },
   "context": {
@@ -485,7 +483,7 @@ Create `knowledge_pack/resolutions.json`:
       {
         "uri": "https://www.geico.com/",
         "elementRef": "header > h1",
-        "accessedDate": "2025-11-05"
+        "accessedDate": "2025-11-05T12:00:00Z"
       }
     ],
     "name": "GEICO",
@@ -495,14 +493,14 @@ Create `knowledge_pack/resolutions.json`:
         {
           "uri": "https://www.geico.com/information/states/",
           "elementRef": "section#state-list",
-          "accessedDate": "2025-11-05"
+          "accessedDate": "2025-11-05T12:00:00Z"
         }
       ],
       "value": ["CA", "TX", "FL", "NY", "IL"]
     },
     "discounts": [
       {
-        "_id": "discount-geico-multi-001",
+        "_id": "disc_cm5e9f1o3t",
         "name": {
           "_id": "fld_cm7g1h3q5v",
           "_sources": [{"uri": "...", "elementRef": "..."}],
@@ -574,7 +572,7 @@ For production files, compress source references:
   {
     "uri": "https://www.geico.com/auto/discounts/",
     "elementRef": "div.discount-card > p.percentage",
-    "accessedDate": "2025-11-05",
+    "accessedDate": "2025-11-05T12:00:00Z",
     "primary": true
   }
 ]

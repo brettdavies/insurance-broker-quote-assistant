@@ -61,8 +61,6 @@ This document shows complete data transformations from raw scraping to productio
     "uri": "https://www.geico.com/auto/discounts/",
     "elementRef": "div.discount-card[data-discount='multi-policy'] > p.percentage",
     "accessedDate": "2025-11-05T10:30:00Z",
-    "extractionMethod": "manual",
-    "screenshot": "screenshots/geico-discounts-001.png",
     "confidence": "high"
   },
   "context": {
@@ -85,8 +83,6 @@ This document shows complete data transformations from raw scraping to productio
     "uri": "https://www.nerdwallet.com/article/insurance/geico-insurance-discounts",
     "elementRef": "table.insurance-discounts > tbody > tr:nth-child(3) > td:nth-child(2)",
     "accessedDate": "2025-11-05T11:15:00Z",
-    "extractionMethod": "manual",
-    "screenshot": "screenshots/nerdwallet-geico-001.png",
     "confidence": "medium"
   },
   "context": {
@@ -183,7 +179,7 @@ This document shows complete data transformations from raw scraping to productio
 
 ```json
 {
-  "_id": "discount-geico-multipolicy-001",
+  "_id": "disc_cm5e9f1o3t",
   "name": {
     "_id": "fld_cm0j4k6t8y",
     "value": "Multi-Policy Bundle",
@@ -191,7 +187,7 @@ This document shows complete data transformations from raw scraping to productio
       {
         "uri": "https://www.geico.com/auto/discounts/",
         "elementRef": "div.discount-card[data-discount='multi-policy'] > h3",
-        "accessedDate": "2025-11-05",
+        "accessedDate": "2025-11-05T12:00:00Z",
         "confidence": "high"
       }
     ]
@@ -203,7 +199,7 @@ This document shows complete data transformations from raw scraping to productio
       {
         "uri": "https://www.geico.com/auto/discounts/",
         "elementRef": "div.discount-card[data-discount='multi-policy'] > p.percentage",
-        "accessedDate": "2025-11-05",
+        "accessedDate": "2025-11-05T12:00:00Z",
         "extractedValue": "Save up to 15%",
         "confidence": "high",
         "primary": true
@@ -211,7 +207,7 @@ This document shows complete data transformations from raw scraping to productio
       {
         "uri": "https://www.nerdwallet.com/article/insurance/geico-insurance-discounts",
         "elementRef": "table > tr:nth-child(3) > td:nth-child(2)",
-        "accessedDate": "2025-11-05",
+        "accessedDate": "2025-11-05T12:00:00Z",
         "extractedValue": "12%",
         "confidence": "medium",
         "primary": false
@@ -232,7 +228,7 @@ This document shows complete data transformations from raw scraping to productio
       {
         "uri": "https://www.geico.com/auto/discounts/",
         "elementRef": "div.discount-card[data-discount='multi-policy'] > p.applies-to",
-        "accessedDate": "2025-11-05",
+        "accessedDate": "2025-11-05T12:00:00Z",
         "extractedValue": "Bundle auto and home insurance",
         "confidence": "high"
       }
@@ -245,7 +241,7 @@ This document shows complete data transformations from raw scraping to productio
 
 ```json
 {
-  "_id": "discount-geico-multipolicy-001",
+  "_id": "disc_cm5e9f1o3t",
   "name": {
     "_id": "fld_cm0j4k6t8y",
     "_sources": [{"uri": "https://www.geico.com/auto/discounts/", "ref": "div.discount-card h3", "date": "2025-11-05"}],
@@ -286,8 +282,6 @@ This document shows complete data transformations from raw scraping to productio
     "uri": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-auto/lw-lic-1.cfm",
     "elementRef": "section#minimum-coverage > table.requirements > tbody > tr:nth-child(1) > td:nth-child(2)",
     "accessedDate": "2025-11-05T09:00:00Z",
-    "extractionMethod": "manual",
-    "screenshot": "screenshots/ca-insurance-gov-001.png",
     "confidence": "high"
   },
   "context": {
@@ -310,8 +304,6 @@ This document shows complete data transformations from raw scraping to productio
     "uri": "https://www.bankrate.com/insurance/car/california/",
     "elementRef": "section.coverage-requirements > div.minimum-coverage > p:nth-child(2)",
     "accessedDate": "2025-11-05T09:30:00Z",
-    "extractionMethod": "manual",
-    "screenshot": "screenshots/bankrate-ca-001.png",
     "confidence": "medium"
   },
   "context": {
@@ -411,7 +403,7 @@ This document shows complete data transformations from raw scraping to productio
 
 ```json
 {
-  "_id": "state-CA-001",
+  "_id": "state_cm7s8t9u0v",
   "code": "CA",
   "name": "California",
   "minimumCoverages": {
@@ -462,7 +454,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
         {
           "uri": "https://www.geico.com/information/states/",
           "elementRef": "section#state-list > ul.state-grid > li",
-          "accessedDate": "2025-11-05",
+          "accessedDate": "2025-11-05T12:00:00Z",
           "extractedValue": "All 50 states listed",
           "confidence": "high"
         }
@@ -478,7 +470,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
 {
   "discounts": [
     {
-      "_id": "discount-geico-multipolicy-001",
+      "_id": "disc_cm5e9f1o3t",
       "states": {
         "_id": "fld_cm3m7n9w1b",
         "value": ["CA", "TX", "FL", "NY", "IL"],
@@ -530,7 +522,6 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
     "uri": "https://www.iii.org/fact-statistic/facts-statistics-auto-insurance",
     "elementRef": "table#state-averages > tbody > tr[data-state='CA'] > td.average",
     "accessedDate": "2025-11-05T13:00:00Z",
-    "extractionMethod": "manual",
     "confidence": "high"
   },
   "context": {
@@ -553,7 +544,6 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
     "uri": "https://www.bankrate.com/insurance/car/california/",
     "elementRef": "section.pricing > div.state-average > span.amount",
     "accessedDate": "2025-11-05T13:15:00Z",
-    "extractionMethod": "manual",
     "confidence": "medium"
   },
   "context": {
@@ -576,7 +566,6 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
     "uri": "https://www.nerdwallet.com/article/insurance/california-car-insurance",
     "elementRef": "section.cost-analysis > p.average-cost",
     "accessedDate": "2025-11-05T13:30:00Z",
-    "extractionMethod": "manual",
     "confidence": "medium"
   },
   "context": {
@@ -599,7 +588,6 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
     "uri": "https://www.valuepenguin.com/california-car-insurance",
     "elementRef": "div.state-stats > div.avg-premium > span.value",
     "accessedDate": "2025-11-05T13:45:00Z",
-    "extractionMethod": "manual",
     "confidence": "medium"
   },
   "context": {
@@ -789,7 +777,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
     },
     "discounts": [
       {
-        "_id": "discount-geico-multipolicy-001",
+        "_id": "disc_cm5e9f1o3t",
         "name": {
           "_id": "fld_cm0j4k6t8y",
           "value": "Multi-Policy Bundle",
@@ -857,7 +845,7 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
           "_id": "fld_cm5o9p1y3d",
           "value": true,
           "_sources": [],
-          "_inheritedFrom": "discount-geico-multipolicy-001",
+          "_inheritedFrom": "disc_cm5e9f1o3t",
           "_note": "No explicit prohibition found; assuming stackable"
         }
       }

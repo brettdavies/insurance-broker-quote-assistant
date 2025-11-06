@@ -26,6 +26,7 @@ This document defines the JSON schemas used throughout the knowledge pack, from 
 | `source-metadata.json` | Source citation format | `knowledge_pack/schemas/` |
 | `resolution-metadata.json` | Conflict resolution format | `knowledge_pack/schemas/` |
 | `raw-data-schema.json` | Raw scraped data format | `knowledge_pack/schemas/` |
+| `search-tracker.json` | Phase 2 search progress tracking | `knowledge_pack/` |
 
 ---
 
@@ -733,7 +734,93 @@ Captures data during initial scraping phase, before conflict resolution.
 
 ---
 
-## 5. cuid2 ID Conventions
+## 5. Search Tracker Schema
+
+### Purpose
+Track Phase 2 data gathering progress across distributed agent workflows.
+
+### JSON Schema
+
+```typescript
+interface SearchTracker {
+  searches: SearchEntry[];
+  status: StatusCounts;
+  categories: string[];
+}
+
+interface SearchEntry {
+  id: string;                 // cuid2 with "search_" prefix
+  query: string;              // Search query string
+  category: string;           // Category: "carriers", "states", "discounts", etc.
+  carrier?: string;           // Optional: specific carrier (e.g., "GEICO", "Progressive")
+  priority: "high" | "medium" | "low";
+  status: "pending" | "in_progress" | "completed" | "failed";
+  assignedTo?: string;        // Agent ID (cuid2 with "agnt_" prefix)
+  startedAt?: string;         // ISO 8601 timestamp
+  completedAt?: string;       // ISO 8601 timestamp
+  pagesCollected?: number;    // Count of pages saved
+  notes?: string;             // Optional notes or error messages
+}
+
+interface StatusCounts {
+  total: number;
+  pending: number;
+  in_progress: number;
+  completed: number;
+  failed: number;
+}
+```
+
+### Example
+
+```json
+{
+  "searches": [
+    {
+      "id": "search_ckm9x7wdx1",
+      "query": "\"GEICO\" \"available in\" states",
+      "category": "carriers",
+      "carrier": "GEICO",
+      "priority": "high",
+      "status": "completed",
+      "assignedTo": "agnt_cm1a5b7k9p",
+      "startedAt": "2025-11-05T14:30:00Z",
+      "completedAt": "2025-11-05T14:45:00Z",
+      "pagesCollected": 3,
+      "notes": "Collected carrier coverage maps"
+    },
+    {
+      "id": "search_ckm9x7wtu6",
+      "query": "California minimum auto insurance requirements",
+      "category": "states",
+      "priority": "high",
+      "status": "in_progress",
+      "assignedTo": "agnt_cm2b6c8l0q",
+      "startedAt": "2025-11-05T15:00:00Z",
+      "pagesCollected": 1
+    }
+  ],
+  "status": {
+    "total": 200,
+    "pending": 150,
+    "in_progress": 2,
+    "completed": 45,
+    "failed": 3
+  },
+  "categories": ["carriers", "states", "discounts", "requirements", "regulations"]
+}
+```
+
+### Field Notes
+
+- **id**: Must use `search_` prefix with cuid2
+- **assignedTo**: Must use `agnt_` prefix with cuid2
+- **Timestamps**: All timestamps use ISO 8601 format (YYYY-MM-DDTHH:mm:ssZ)
+- **pagesCollected**: Incremented as pages are saved to `knowledge_pack/pages/`
+
+---
+
+## 6. cuid2 ID Conventions
 
 ### Format Patterns
 
@@ -749,6 +836,8 @@ All entity IDs use **cuid2** format with type prefixes. See [sot-id-conventions.
 | Raw Data | `raw_{cuid2}` | `raw_ckm9x7wnp4` |
 | Eligibility | `elig_{cuid2}` | `elig_ckm9x7wwx7` |
 | Page | `page_{cuid2}` | `page_ckm9x7wqr5` |
+| Search | `search_{cuid2}` | `search_ckm9x7wdx1` |
+| Agent | `agnt_{cuid2}` | `agnt_cm1a5b7k9p` |
 
 ### ID Generation
 
@@ -761,7 +850,7 @@ const carrierId = `carr_${createId()}`;  // "carr_ckm9x7w8k0"
 
 ---
 
-## 6. Date and Timestamp Standards
+## 7. Date and Timestamp Standards
 
 ### Overview
 
@@ -897,7 +986,7 @@ rg -n "ISO 8601" docs/knowledge-pack/*.md
 
 ---
 
-## 7. Source Inheritance Rules
+## 8. Source Inheritance Rules
 
 ### When to Inherit
 
@@ -952,7 +1041,7 @@ Can inherit from grandparent if parent also inherits:
 
 ---
 
-## 8. Validation Rules
+## 9. Validation Rules
 
 ### Required Validations
 

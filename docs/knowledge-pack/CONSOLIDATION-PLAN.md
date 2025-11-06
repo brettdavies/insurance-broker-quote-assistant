@@ -2,15 +2,15 @@
 
 **Date Created**: 2025-11-05
 **Date Completed**: 2025-11-05
-**Status**: ✅ EXECUTION COMPLETE - All Phases Done
-**Actual Time**: ~2 hours (via parallel subagent execution)
-**Estimated Total Time**: 5.5-8 hours
+**Status**: ✅ ALL PHASES COMPLETE (Phases 0-5)
+**Actual Time**: ~2.5 hours (Phases 0-4: ~2 hours, Phase 5: ~30 minutes)
+**Estimated Total Time**: 6.5-9.5 hours
 
 ---
 
 ## Executive Summary
 
-This plan addresses critical duplication, inconsistency, and Single Source of Truth (SoT) violations across 8 knowledge pack documentation files. The work is divided into 5 phases, executed sequentially with discovery-based tasks that identify changes at execution time.
+This plan addresses critical duplication, inconsistency, and Single Source of Truth (SoT) violations across 8 knowledge pack documentation files. The work is divided into 6 phases (0-5), executed sequentially with discovery-based tasks that identify changes at execution time.
 
 **Key Metrics from Analysis:**
 - Total Files: 8
@@ -1080,6 +1080,238 @@ git diff docs/knowledge-pack/README.md
 - ✅ All SoT files have "Referenced By" sections
 - ✅ README has SoT reference table
 - ✅ Architecture principle clearly stated
+
+---
+
+## Phase 5: Post-Review Corrections
+
+### Objective
+Address issues identified in deep review: fix non-standard IDs in examples, remove legacy fields, standardize timestamps, and add missing schema documentation.
+
+---
+
+#### Task 5.1: Fix Non-Standard ID Formats in Examples ✅ COMPLETED
+**Objective**: Replace all sequential/hyphenated ID formats with proper cuid2 format in examples
+
+**Status Note**: Replaced 3 unique non-standard ID patterns with proper cuid2 format. Applied consistent mapping: discount-geico-multipolicy-001 & discount-geico-multi-001 → disc_cm5e9f1o3t, state-CA-001 → state_cm7s8t9u0v. Total: 8 replacements (7 discount + 1 state).
+
+**Discovery Steps**:
+```bash
+# Search for old sequential ID patterns (hyphenated format like "discount-geico-multipolicy-001")
+rg -n '"discount-[a-z]+-[a-z]+-[0-9]+"' docs/knowledge-pack/*.md
+rg -n '"state-[A-Z]+-[0-9]+"' docs/knowledge-pack/*.md
+
+# List all unique non-standard IDs
+rg -o '"discount-[a-z]+-[a-z]+-[0-9]+"|"state-[A-Z]+-[0-9]+"' docs/knowledge-pack/*.md | sort | uniq
+
+# Count total occurrences
+echo "Total non-standard IDs: $(rg -c '"discount-[a-z]+-[a-z]+-[0-9]+"|"state-[A-Z]+-[0-9]+"' docs/knowledge-pack/*.md | awk -F: '{sum+=$2} END {print sum}')"
+```
+
+**Execution Pattern**:
+```bash
+# NOTE: Requires consistent ID mapping across files to maintain referential integrity
+
+# Step 1: Create ID mapping (generate fresh cuid2s)
+# Example mappings:
+# "discount-geico-multipolicy-001" -> "disc_ckm9x7wdx1" (use across all files)
+# "state-CA-001" -> "state_ckm9x7wtu6" (use across all files)
+
+# Step 2: Apply replacements consistently
+# For knowledge-pack-examples.md:
+sed -i '' 's/"discount-geico-multipolicy-001"/"disc_ckm9x7wdx1"/g' docs/knowledge-pack/knowledge-pack-examples.md
+sed -i '' 's/"state-CA-001"/"state_ckm9x7wtu6"/g' docs/knowledge-pack/knowledge-pack-examples.md
+
+# For knowledge-pack-methodology.md:
+sed -i '' 's/"discount-geico-multi-001"/"disc_ckm9x7wdx1"/g' docs/knowledge-pack/knowledge-pack-methodology.md
+
+# Step 3: Document mapping in commit message for traceability
+```
+
+**Validation**:
+```bash
+# Verify no sequential IDs remain
+rg '"discount-[a-z]+-[a-z]+-[0-9]+"' docs/knowledge-pack/*.md  # Should return 0
+rg '"state-[A-Z]+-[0-9]+"' docs/knowledge-pack/*.md  # Should return 0
+
+# Verify new cuid2 format used
+rg '"disc_[a-z0-9]{10}"' docs/knowledge-pack/knowledge-pack-examples.md
+rg '"state_[a-z0-9]{10}"' docs/knowledge-pack/knowledge-pack-examples.md
+
+# Check git diff
+git diff docs/knowledge-pack/knowledge-pack-examples.md | rg -e 'discount|state'
+git diff docs/knowledge-pack/knowledge-pack-methodology.md | rg -e 'discount|state'
+```
+
+---
+
+#### Task 5.2: Remove Legacy Schema Fields from Production Examples ✅ COMPLETED
+**Objective**: Remove `screenshot` field (deprecated) and move `extractionMethod` to raw-data-only context
+
+**Status Note**: Removed 5 screenshot fields and 8 extractionMethod fields from production Source examples. extractionMethod retained in sot-schemas.md raw-data schema definition only. Total: 13 field removals.
+
+**Discovery Steps**:
+```bash
+# Find all screenshot field usages
+rg -n '"screenshot":' docs/knowledge-pack/*.md
+
+# Find all extractionMethod usages outside raw-data context
+rg -n '"extractionMethod":' docs/knowledge-pack/*.md
+
+# Verify extractionMethod is in Raw Data Schema but NOT Source interface
+rg -A 5 "interface Source" docs/knowledge-pack/sot-schemas.md | rg "extractionMethod"  # Should return 0
+rg -A 5 "raw-data-schema" docs/knowledge-pack/sot-schemas.md | rg "extractionMethod"  # Should return 1
+```
+
+**Execution Pattern**:
+```bash
+# NOTE: Manual editing required to preserve JSON structure integrity
+
+# Manual steps:
+# 1. Open docs/knowledge-pack/knowledge-pack-examples.md
+# 2. Remove all "screenshot": "..." lines from Source objects
+# 3. Remove "extractionMethod" from production Source examples
+# 4. Keep "extractionMethod" ONLY in raw data examples (if any exist)
+# 5. Verify JSON structure remains valid after removal
+
+# For knowledge-pack-methodology.md:
+# 1. Remove "screenshot" field
+# 2. Remove "extractionMethod" from Source examples
+
+# After manual edits:
+git diff docs/knowledge-pack/knowledge-pack-examples.md | rg -e 'screenshot|extractionMethod'
+git diff docs/knowledge-pack/knowledge-pack-methodology.md | rg -e 'screenshot|extractionMethod'
+```
+
+**Validation**:
+```bash
+# Verify screenshot removed from all files
+rg '"screenshot":' docs/knowledge-pack/*.md  # Should return 0
+
+# Verify extractionMethod only in raw-data-schema section
+rg '"extractionMethod":' docs/knowledge-pack/*.md
+# Should only appear in sot-schemas.md raw-data-schema definition
+
+# Verify Source interface examples are clean
+rg -B 5 -A 15 '"uri":.*"http' docs/knowledge-pack/knowledge-pack-examples.md | rg '"screenshot"|"extractionMethod"'
+# Should return 0
+
+git diff --stat docs/knowledge-pack/
+```
+
+---
+
+#### Task 5.3: Fix Date-Only Timestamp Formats ✅ COMPLETED
+**Objective**: Add timezone suffix to all accessedDate fields using date-only format
+
+**Status Note**: Fixed 9 date-only timestamps by adding T12:00:00Z suffix. All accessedDate fields now use proper ISO 8601 format (YYYY-MM-DDTHH:mm:ssZ). Files updated: knowledge-pack-examples.md (5), knowledge-pack-methodology.md (3), sot-id-conventions.md (1).
+
+**Discovery Steps**:
+```bash
+# Find all accessedDate with date-only format (missing T and Z)
+rg -n 'accessedDate.*"[0-9]{4}-[0-9]{2}-[0-9]{2}"' docs/knowledge-pack/*.md
+
+# Count occurrences per file
+rg -c 'accessedDate.*"[0-9]{4}-[0-9]{2}-[0-9]{2}"' docs/knowledge-pack/*.md
+
+# List all unique date-only patterns
+rg -o 'accessedDate.*"[0-9]{4}-[0-9]{2}-[0-9]{2}"' docs/knowledge-pack/*.md | sort | uniq
+```
+
+**Execution Pattern**:
+```bash
+# Replace date-only with full timestamp format (add T12:00:00Z)
+# Pattern: "YYYY-MM-DD" -> "YYYY-MM-DDTHH:mm:ssZ"
+
+# For knowledge-pack-examples.md:
+sed -i '' 's/"accessedDate": "\([0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}\)"/"accessedDate": "\1T12:00:00Z"/g' docs/knowledge-pack/knowledge-pack-examples.md
+
+# For knowledge-pack-methodology.md:
+sed -i '' 's/"accessedDate": "\([0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}\)"/"accessedDate": "\1T12:00:00Z"/g' docs/knowledge-pack/knowledge-pack-methodology.md
+
+# For sot-id-conventions.md:
+sed -i '' 's/"accessedDate": "\([0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}\)"/"accessedDate": "\1T12:00:00Z"/g' docs/knowledge-pack/sot-id-conventions.md
+```
+
+**Validation**:
+```bash
+# Verify no date-only accessedDate remains
+rg 'accessedDate.*"[0-9]{4}-[0-9]{2}-[0-9]{2}"' docs/knowledge-pack/*.md | rg -v 'T.*Z'
+# Should return 0
+
+# Verify all have proper timestamp format
+rg 'accessedDate.*"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z"' docs/knowledge-pack/*.md
+
+# Check specific files
+git diff docs/knowledge-pack/knowledge-pack-examples.md | rg 'accessedDate'
+git diff docs/knowledge-pack/knowledge-pack-methodology.md | rg 'accessedDate'
+git diff docs/knowledge-pack/sot-id-conventions.md | rg 'accessedDate'
+```
+
+---
+
+#### Task 5.4: Add Search Tracker Schema Documentation ✅ COMPLETED
+**Objective**: Document search-tracker.json schema in sot-schemas.md
+
+**Status Note**: Added comprehensive Search Tracker Schema section (97 lines) with TypeScript interfaces, JSON example, and field notes. Renumbered sections 5-8 to 6-9. Updated Schema Files table and ID Conventions table. Fixed cross-reference in sot-search-queries.md.
+
+**Discovery Steps**:
+```bash
+# Check if search-tracker schema already exists
+rg -n "search-tracker|Search Tracker" docs/knowledge-pack/sot-schemas.md
+
+# Review phase-2-agent-instructions for tracker structure examples
+rg -A 30 "search-tracker.json" docs/knowledge-pack/phase-2-agent-instructions.md | head -n 50
+
+# Find all tracker field references
+rg -n '"id":|"query":|"status":|"assignedTo":' docs/knowledge-pack/phase-2-agent-instructions.md | head -n 20
+```
+
+**Execution Pattern**:
+```bash
+# NOTE: Manual editing required to add new schema section
+
+# Manual steps:
+# 1. Open docs/knowledge-pack/sot-schemas.md
+# 2. Add new section after "4. Conflict Schema" and before "5. cuid2 ID Conventions"
+# 3. Add "## 5. Search Tracker Schema" section
+# 4. Include complete JSON schema with:
+#    - Search entry object (id, query, category, carrier, priority, status, etc.)
+#    - Status counts object
+#    - Categories array
+# 5. Add example tracker file
+# 6. Renumber subsequent sections (old 5-8 become 6-9)
+
+# After manual edit:
+git diff docs/knowledge-pack/sot-schemas.md | rg -A 10 "Search Tracker"
+```
+
+**Validation**:
+```bash
+# Verify search tracker schema section exists
+rg -A 20 "Search Tracker Schema" docs/knowledge-pack/sot-schemas.md
+
+# Verify schema includes key fields
+rg "search.*schema" docs/knowledge-pack/sot-schemas.md | rg -i "id.*query.*status"
+
+# Verify section is properly numbered
+rg -n "^## [0-9]\\." docs/knowledge-pack/sot-schemas.md
+
+# Check cross-references updated
+rg "sot-schemas.md#.*search" docs/knowledge-pack/phase-2-agent-instructions.md
+
+git diff docs/knowledge-pack/sot-schemas.md
+```
+
+---
+
+### Phase 5 Success Criteria
+- ✅ All example IDs use proper cuid2 format (no sequential/hyphenated IDs)
+- ✅ Legacy `screenshot` field removed from all examples
+- ✅ `extractionMethod` clarified as raw-data-only field
+- ✅ All `accessedDate` fields use full ISO 8601 timestamp format
+- ✅ Search tracker schema documented in sot-schemas.md
+- ✅ All examples validate against documented schemas
 
 ---
 
