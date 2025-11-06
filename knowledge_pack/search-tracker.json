@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "version": "1.0",
+    "createdDate": "2025-11-05T22:30:00Z",
+    "lastUpdated": "2025-11-05T22:30:00Z",
+    "totalSearches": 1,
+    "description": "Phase 2 Dry Run - Single Test Search"
+  },
+  "statusCounts": {
+    "pending": 0,
+    "in_progress": 1,
+    "completed": 0,
+    "failed": 0
+  },
+  "categories": [
+    {
+      "name": "carrier-discounts",
+      "description": "Carrier discount information",
+      "searches": [
+        {
+          "id": "search_dryrun001",
+          "query": "\"GEICO\" \"auto insurance\" \"discounts\"",
+          "category": "carrier-discounts",
+          "carrier": "GEICO",
+          "priority": "high",
+          "status": "in_progress",
+          "assignedTo": "agnt_jsnn15cn8lb8li1173ktpn86",
+          "startedAt": "2025-11-05T22:35:00Z",
+          "completedAt": null,
+          "durationSeconds": null,
+          "rawDataFiles": [],
+          "pageFiles": [],
+          "commitHash": null,
+          "errorMessage": null,
+          "retryCount": 0,
+          "notes": null
+        }
+      ]
+    }
+  ]
+}
