@@ -172,6 +172,27 @@ git log --oneline --since="10 minutes ago"
 
 Shows activity from all agents.
 
+## Testing
+
+The scraper includes a comprehensive test suite for validating core functionality.
+
+### URL Deduplication Tests
+
+Run the URL deduplication test suite:
+
+```bash
+cd knowledge-pack-scraper
+uv run scripts/tests/test_url_deduplication.py
+```
+
+This validates:
+- Hash-based URL deduplication
+- Multi-search provenance tracking
+- URL normalization (protocol, case, trailing slash)
+- Idempotent operations
+
+**See [scripts/tests/README.md](scripts/tests/README.md) for complete test documentation.**
+
 ## Troubleshooting
 
 ### Playwright browser not found
