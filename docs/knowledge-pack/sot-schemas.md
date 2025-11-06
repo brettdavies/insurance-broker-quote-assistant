@@ -50,16 +50,35 @@ interface FieldWithMetadata<T> {
 ```typescript
 interface Source {
   uri: string              // Full URL
-  pageId?: string          // Unique page ID (page_{cuid2}) - added for Phase 2 compatibility
-  pageFile?: string        // Path to saved page (_pages/page_{cuid2}.{ext}) - added for Phase 2 compatibility
+  pageId?: string          // Required for Phase 2 raw data, optional after cleanup. Unique page ID (page_{cuid2})
+  pageFile?: string        // Required for Phase 2 raw data, optional after cleanup. Path to saved page (_pages/page_{cuid2}.{ext})
   elementRef?: string      // CSS selector or XPath
   lineRef?: number         // Line number (for text files)
   accessedDate: string     // ISO 8601 date-time with timezone (YYYY-MM-DDTHH:mm:ssZ)
   extractedValue?: string  // Raw value from source (before normalization)
-  confidence: 'high' | 'medium' | 'low'  // See sot-source-hierarchy.md#confidence-scoring-formula for scoring details
+  confidence: 'high' | 'medium' | 'low'  // Classification (required). See sot-source-hierarchy.md#confidence-classifications
+  confidenceScore?: number // Calculated numeric score 1.0-5.0 (optional). See sot-source-hierarchy.md#confidence-scoring-formula
   primary?: boolean        // Is this the primary source (for multi-source)
 }
 ```
+
+### Field Lifecycle Notes: pageId and pageFile
+
+The optional `pageId` and `pageFile` fields have a lifecycle that depends on data processing phase:
+
+**Phase 2 - Raw Data Collection (Required)**
+- `pageId`: REQUIRED. Generated as `page_{cuid2}` when fetching source (e.g., `page_ckm9x7w8k0`)
+- `pageFile`: REQUIRED. Generated as `_pages/${pageId}.{ext}` pointing to saved page content
+- Both fields enable audit trail and reverify capability for raw scraped data
+- Example: `{ pageId: "page_ckm9x7w8k0", pageFile: "_pages/page_ckm9x7w8k0.html", ... }`
+
+**Phase 3+ - Standardization and Cleanup (Optional)**
+- `pageId`: OPTIONAL. May be removed if page archive is deleted or consolidated
+- `pageFile`: OPTIONAL. May be removed after data extraction is complete and verified
+- Removal is safe because other fields (uri, elementRef) still provide source identity
+- Useful to retain if you need to reverify extracted data against original page
+
+**Recommendation**: Retain pageId/pageFile through Phase 3 for traceability, then decide on cleanup based on storage constraints and audit requirements.
 
 ### Resolution Object
 
@@ -140,13 +159,14 @@ interface Resolution {
         "required": ["uri", "accessedDate"],
         "properties": {
           "uri": {"type": "string", "format": "uri"},
-          "pageId": {"type": "string", "pattern": "^page_[a-z0-9]{10}$"},
-          "pageFile": {"type": "string"},
+          "pageId": {"type": "string", "pattern": "^page_[a-z0-9]{10}$", "description": "Required for Phase 2 raw data, optional after cleanup. Unique page ID (page_{cuid2})"},
+          "pageFile": {"type": "string", "description": "Required for Phase 2 raw data, optional after cleanup. Path to saved page (_pages/page_{cuid2}.{ext})"},
           "elementRef": {"type": "string"},
           "lineRef": {"type": "integer"},
           "accessedDate": {"type": "string", "format": "date-time"},
           "extractedValue": {"type": "string"},
           "confidence": {"enum": ["high", "medium", "low"]},
+          "confidenceScore": {"type": "number", "minimum": 1.0, "maximum": 5.0},
           "primary": {"type": "boolean"}
         }
       }
@@ -608,8 +628,8 @@ Captures data during initial scraping phase, before conflict resolution.
       "required": ["uri", "accessedDate"],
       "properties": {
         "uri": {"type": "string", "format": "uri", "description": "Source URL"},
-        "pageId": {"type": "string", "pattern": "^page_[a-z0-9]{10}$", "description": "Unique page ID (page_{cuid2}) - optional for Phase 2 compatibility"},
-        "pageFile": {"type": "string", "description": "Path to saved page (_pages/page_{cuid2}.{ext}) - optional for Phase 2 compatibility"},
+        "pageId": {"type": "string", "pattern": "^page_[a-z0-9]{10}$", "description": "Required for Phase 2 raw data, optional after cleanup. Unique page ID (page_{cuid2})"},
+        "pageFile": {"type": "string", "description": "Required for Phase 2 raw data, optional after cleanup. Path to saved page (_pages/page_{cuid2}.{ext})"},
         "elementRef": {"type": "string", "description": "CSS selector or XPath to element"},
         "extractedValue": {"type": "string", "description": "Exact text extracted from element"},
         "accessedDate": {"type": "string", "format": "date-time", "description": "ISO 8601 with timezone (YYYY-MM-DDTHH:mm:ssZ)"},
