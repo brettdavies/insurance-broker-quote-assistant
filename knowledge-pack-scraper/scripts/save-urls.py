@@ -201,17 +201,14 @@ def main() -> None:
             message=f"Successfully registered {len(urls)} URLs for {search_id}",
             next_steps=(
                 f"URLs saved and committed successfully.\n\n"
-                f"Registered {len(urls)} URLs:\n" +
-                "\n".join([f"  - {u['url']} ({u['id']})" for u in registered_urls]) +
-                f"\n\nSearch {search_id} is now complete (status: urls_discovered).\n"
+                f"Registered {len(urls)} URLs for search {search_id}.\n"
                 f"URLs will be fetched by URL processing agents.\n\n"
                 f"Continue with next work item:\n"
                 f"Run: uv run scripts/select-work.py"
             ),
             data={
                 "search_id": search_id,
-                "urls_registered": len(urls),
-                "url_details": registered_urls
+                "urls_registered": len(urls)
             }
         )
 

@@ -217,8 +217,6 @@ def main() -> None:
                 f"Run: uv run scripts/select-work.py"
             ),
             data={
-                "page_id": page_id,
-                "search_id": search_id,
                 "data_points_extracted": data_point_count,
                 "raw_file": str(raw_file)
             }

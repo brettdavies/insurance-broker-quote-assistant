@@ -269,7 +269,6 @@ def main() -> None:
             data={
                 "page_id": page_id,
                 "search_id": search_id,
-                "url_id": url_id,
                 "content": content,
                 "content_format": format_used,
                 "content_length": len(content),
