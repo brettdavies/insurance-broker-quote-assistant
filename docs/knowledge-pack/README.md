@@ -89,6 +89,19 @@ Sources are ranked by authority level (1-5, regulatory > carrier > industry > co
 
 [View complete hierarchy →](sot-source-hierarchy.md#source-authority-levels)
 
+## Single Source of Truth (SoT) Reference
+
+The following documents serve as the canonical sources of truth for critical system specifications. Every data decision, ID generation, conflict resolution, and schema definition traces back to these authoritative references.
+
+| Concept | SoT Document | Description |
+|---------|--------------|-------------|
+| **cuid2 ID Specifications** | [sot-id-conventions.md](sot-id-conventions.md) | Authoritative source for all globally unique identifier conventions, prefixes, and generation methods |
+| **JSON Schemas** | [sot-schemas.md](sot-schemas.md) | Authoritative source for all data structure definitions, field metadata envelopes, and schema specifications |
+| **Authority & Conflict Resolution** | [sot-source-hierarchy.md](sot-source-hierarchy.md) | Authoritative source for source authority levels (1-5), confidence scoring, and 7-step conflict resolution strategies |
+| **Search Query Catalog** | [sot-search-queries.md](sot-search-queries.md) | Authoritative source for the complete catalog of 200+ search queries organized by data gathering category |
+
+**Architecture Principle**: All data in the knowledge pack system is traceable to its source via unique IDs and structured metadata. The SoT documents establish the single authoritative specification for each critical system component, ensuring consistency, auditability, and regulatory compliance. When in doubt about ID formats, data structures, authority rankings, or search methodology, consult the relevant SoT document first.
+
 ## Quick Start
 
 ### For Implementers
