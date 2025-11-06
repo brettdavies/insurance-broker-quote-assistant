@@ -34,7 +34,7 @@ from id_generator import generate_agent_id, generate_page_id
 
 # Import crawl4ai
 try:
-    from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig
+    from crawl4ai import AsyncWebCrawler, CrawlerRunConfig
 except ImportError:
     print(json.dumps({
         "success": False,
@@ -97,24 +97,16 @@ async def fetch_page(url: str) -> tuple[bool, str, str, str]:
         Tuple of (success, html, markdown, error_message)
     """
     try:
-        browser_config = BrowserConfig(
-            headless=True,
-            java_script_enabled=True
-        )
+        # Use context manager (recommended approach per crawl4ai docs)
         run_config = CrawlerRunConfig()
 
-        crawler = AsyncWebCrawler(browser_config)
-        await crawler.start()
-
-        try:
+        async with AsyncWebCrawler() as crawler:
             result = await crawler.arun(url, config=run_config)
 
             if not result.success:
                 return False, "", "", result.error_message or "Unknown crawl error"
 
             return True, result.html, result.markdown.raw_markdown, ""
-        finally:
-            await crawler.close()
 
     except Exception as e:
         return False, "", "", str(e)
