@@ -647,3 +647,14 @@ const isValid = /^[a-z]+_[a-z0-9]{10}$/.test(id);  // true/false
 **Document Version**: 1.0
 **Last Updated**: 2025-11-05
 **Status**: Ready for Implementation
+
+---
+
+## Referenced By
+
+- **[sot-schemas.md](sot-schemas.md)** - Defines schema structures that use ID conventions (carrier IDs, discount IDs, field IDs with prefixes)
+- **[phase-2-agent-instructions.md](phase-2-agent-instructions.md)** - Step 2 references ID generation workflow for raw data collection (raw IDs, source IDs)
+- **[knowledge-pack-methodology.md](knowledge-pack-methodology.md)** - Phase 1 design process documents how IDs are established before implementation
+- **[README.md](README.md)** - Overview document links to ID conventions as foundational reference
+- **[knowledge-pack-examples.md](knowledge-pack-examples.md)** - Demonstrates actual use of all ID prefixes in real carrier data examples
+- **[CONSOLIDATION-PLAN.md](CONSOLIDATION-PLAN.md)** - References ID conventions in consolidation tasks and validation steps

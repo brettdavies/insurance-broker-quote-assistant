@@ -659,3 +659,15 @@ After resolving conflicts:
 **Document Version**: 1.0
 **Last Updated**: 2025-11-05
 **Status**: Ready for Implementation
+
+---
+
+## Referenced By
+
+- **[sot-schemas.md](sot-schemas.md)** - Uses source authority levels in schema design for confidence scoring and resolution objects
+- **[phase-2-agent-instructions.md](phase-2-agent-instructions.md)** - Step 6 requires assigning confidence/authority levels during raw data collection based on this hierarchy
+- **[knowledge-pack-methodology.md](knowledge-pack-methodology.md)** - Phase 4 conflict resolution workflow applies source authority hierarchy to resolve disagreements
+- **[knowledge-pack-examples.md](knowledge-pack-examples.md)** - Demonstrates real-world use of authority levels in conflict resolution examples
+- **[README.md](README.md)** - Overview document links to source hierarchy as foundational concept for data quality
+- **[CONSOLIDATION-PLAN.md](CONSOLIDATION-PLAN.md)** - References source hierarchy in quality validation and conflict resolution validation tasks
+- **[sot-search-queries.md](sot-search-queries.md)** - Specifies search queries optimized for finding high-authority sources according to this hierarchy

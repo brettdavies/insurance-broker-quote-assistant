@@ -998,3 +998,16 @@ Use these schemas to validate all knowledge pack files before deployment.
 **Document Version**: 1.0
 **Last Updated**: 2025-11-05
 **Status**: Ready for Implementation
+
+---
+
+## Referenced By
+
+- **[sot-source-hierarchy.md](sot-source-hierarchy.md)** - Uses schema structure to define how sources integrate into field metadata and source authority levels
+- **[sot-search-queries.md](sot-search-queries.md)** - References schema fields when specifying what data points to extract during searches
+- **[phase-2-agent-instructions.md](phase-2-agent-instructions.md)** - Step 5 applies schemas to extract data points and validate field structure during scraping
+- **[sot-id-conventions.md](sot-id-conventions.md)** - Shows how cuid2-based field IDs and source IDs integrate into schema structures
+- **[CONSOLIDATION-PLAN.md](CONSOLIDATION-PLAN.md)** - References schemas in validation tasks and consolidation procedures
+- **[knowledge-pack-methodology.md](knowledge-pack-methodology.md)** - Documents how schemas are designed in Phase 1 and applied throughout data gathering phases
+- **[knowledge-pack-examples.md](knowledge-pack-examples.md)** - Demonstrates full schema compliance in real-world carrier data transformations
+- **[README.md](README.md)** - Overview links to schemas as core data structure specification
