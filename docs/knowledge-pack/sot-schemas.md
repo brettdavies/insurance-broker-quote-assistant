@@ -56,7 +56,7 @@ interface Source {
   lineRef?: number         // Line number (for text files)
   accessedDate: string     // ISO 8601 date-time with timezone (YYYY-MM-DDTHH:mm:ssZ)
   extractedValue?: string  // Raw value from source (before normalization)
-  confidence: 'high' | 'medium' | 'low'  // See source-hierarchy.md for confidence scoring formula
+  confidence: 'high' | 'medium' | 'low'  // See sot-source-hierarchy.md#confidence-scoring-formula for scoring details
   primary?: boolean        // Is this the primary source (for multi-source)
 }
 ```
@@ -614,7 +614,7 @@ Captures data during initial scraping phase, before conflict resolution.
         "extractedValue": {"type": "string", "description": "Exact text extracted from element"},
         "accessedDate": {"type": "string", "format": "date-time", "description": "ISO 8601 with timezone (YYYY-MM-DDTHH:mm:ssZ)"},
         "extractionMethod": {"enum": ["manual", "automated", "api"]},
-        "confidence": {"enum": ["high", "medium", "low"], "description": "See source-hierarchy.md for confidence scoring formula"}
+        "confidence": {"enum": ["high", "medium", "low"], "description": "See sot-source-hierarchy.md#confidence-scoring-formula for scoring details"}
       }
     },
     "context": {
