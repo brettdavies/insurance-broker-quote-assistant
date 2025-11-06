@@ -33,8 +33,8 @@ This document shows complete data transformations from raw scraping to productio
 - Source tracking and audit trails
 
 **Before diving in, review:**
-- 📖 [Schemas](knowledge-pack-schemas.md) - Understand data structures
-- 🔗 [Source Hierarchy](knowledge-pack-source-hierarchy.md) - Understand conflict resolution
+- 📖 [Schemas](sot-schemas.md) - Understand data structures
+- 🔗 [Source Hierarchy](sot-source-hierarchy.md) - Understand conflict resolution
 - 📖 [Methodology](knowledge-pack-methodology.md) - Understand the 7-phase process
 
 **Navigation tips:**

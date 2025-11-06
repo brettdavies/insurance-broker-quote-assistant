@@ -715,7 +715,7 @@ Captures data during initial scraping phase, before conflict resolution.
 
 ### Format Patterns
 
-All entity IDs use **cuid2** format with type prefixes. See [id-conventions.md](id-conventions.md) for complete specification.
+All entity IDs use **cuid2** format with type prefixes. See [sot-id-conventions.md](sot-id-conventions.md) for complete specification.
 
 | Entity Type | Pattern | Example |
 |-------------|---------|---------|
@@ -829,8 +829,8 @@ Use these schemas to validate all knowledge pack files before deployment.
 ---
 
 **See Also:**
-- 📖 [ID Conventions](id-conventions.md) - Complete cuid2 ID specification and usage
-- 🔗 [Source Authority Levels](knowledge-pack-source-hierarchy.md#source-authority-levels) - Understanding confidence scores
+- 📖 [ID Conventions](sot-id-conventions.md) - Complete cuid2 ID specification and usage
+- 🔗 [Source Authority Levels](sot-source-hierarchy.md#source-authority-levels) - Understanding confidence scores
 - 📊 [Complete Examples](knowledge-pack-examples.md) - See schemas in real data transformations
 - 🛠️ [Methodology Phases](knowledge-pack-methodology.md) - How schemas are used throughout data gathering
 - 🤖 [Phase 2 Agent Workflow](phase-2-agent-instructions.md#step-5-extract-data-points) - Applying schemas during scraping

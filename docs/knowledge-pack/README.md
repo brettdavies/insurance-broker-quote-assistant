@@ -20,7 +20,7 @@ The knowledge pack is a structured collection of insurance data (carriers, state
 
 **Total Time**: 12-18 hours
 
-### 2. [schemas.md](knowledge-pack-schemas.md)
+### 2. [schemas.md](sot-schemas.md)
 **JSON Schema Definitions with Source Tracking**
 - Field metadata envelope structure
 - Carrier, State, Product, Compliance schemas
@@ -29,7 +29,7 @@ The knowledge pack is a structured collection of insurance data (carriers, state
 - ID generation conventions (cuid2-based)
 - Source inheritance rules
 
-### 3. [search-queries.md](knowledge-pack-search-queries.md)
+### 3. [search-queries.md](sot-search-queries.md)
 **200+ Search Queries for Data Gathering**
 
 Organized by category:
@@ -44,7 +44,7 @@ Organized by category:
 - Compliance rules (15 queries)
 - Industry benchmarking (20 queries)
 
-### 4. [source-hierarchy.md](knowledge-pack-source-hierarchy.md)
+### 4. [source-hierarchy.md](sot-source-hierarchy.md)
 **Source Authority Levels & Conflict Resolution**
 - 5-level authority hierarchy (Regulatory → Carrier → Industry → Comparison → Forums)
 - Confidence scoring formula: `(Authority × 0.5) + (Freshness × 0.3) + (Specificity × 0.2)`
@@ -65,7 +65,7 @@ Organized by category:
 
 ### Globally Unique IDs (cuid2)
 
-All entities use **cuid2** for globally unique, collision-resistant identifiers. See [id-conventions.md](id-conventions.md) for complete specification.
+All entities use **cuid2** for globally unique, collision-resistant identifiers. See [sot-id-conventions.md](sot-id-conventions.md) for complete specification.
 
 **Quick example:**
 ```typescript
@@ -73,7 +73,7 @@ import { createId } from '@paralleldrive/cuid2';
 const carrierId = `carr_${createId()}`; // "carr_ckm9x7w8k0"
 ```
 
-**Common prefixes:** `carr_` (carrier), `disc_` (discount), `fld_` (field) — see [complete reference](id-conventions.md#complete-id-prefix-reference).
+**Common prefixes:** `carr_` (carrier), `disc_` (discount), `fld_` (field) — see [complete reference](sot-id-conventions.md#complete-id-prefix-reference).
 
 ### Source Tracking Requirements
 
@@ -86,7 +86,7 @@ const carrierId = `carr_${createId()}`; // "carr_ckm9x7w8k0"
 
 ### Source Authority Hierarchy
 
-Sources are ranked by authority level (1-5, regulatory > carrier > industry > comparison > forums). See [knowledge-pack-source-hierarchy.md](knowledge-pack-source-hierarchy.md) for complete hierarchy and conflict resolution strategies.
+Sources are ranked by authority level (1-5, regulatory > carrier > industry > comparison > forums). See [sot-source-hierarchy.md](sot-source-hierarchy.md) for complete hierarchy and conflict resolution strategies.
 
 **Quick reference:**
 1. Level 5 - Regulatory (State insurance departments)
@@ -95,25 +95,25 @@ Sources are ranked by authority level (1-5, regulatory > carrier > industry > co
 4. Level 2 - Secondary (Financial/comparison sites)
 5. Level 1 - Tertiary (User-generated content)
 
-[View complete hierarchy →](knowledge-pack-source-hierarchy.md#source-authority-levels)
+[View complete hierarchy →](sot-source-hierarchy.md#source-authority-levels)
 
 ## Quick Start
 
 ### For Implementers
 
 1. **Review** [methodology.md](knowledge-pack-methodology.md) for complete workflow
-2. **Install cuid2**: `bun add @paralleldrive/cuid2` - see [id-conventions.md#installation](id-conventions.md#installation)
-3. **Use** [search-queries.md](knowledge-pack-search-queries.md) to find data sources
-4. **Apply** [source-hierarchy.md](knowledge-pack-source-hierarchy.md) when resolving conflicts
-5. **Reference** [schemas.md](knowledge-pack-schemas.md) for data structure
+2. **Install cuid2**: `bun add @paralleldrive/cuid2` - see [sot-id-conventions.md#installation](sot-id-conventions.md#installation)
+3. **Use** [search-queries.md](sot-search-queries.md) to find data sources
+4. **Apply** [source-hierarchy.md](sot-source-hierarchy.md) when resolving conflicts
+5. **Reference** [schemas.md](sot-schemas.md) for data structure
 6. **Follow** [examples.md](knowledge-pack-examples.md) for implementation patterns
 
 ### For Automated Agents
 
 Search agents should:
-1. Use search queries from [search-queries.md](knowledge-pack-search-queries.md)
-2. Capture element references (CSS selectors or XPath) - see [schemas.md#source-object](knowledge-pack-schemas.md#source-object)
-3. Generate cuid2 IDs for each raw data entry - see [id-conventions.md#complete-id-prefix-reference](id-conventions.md#complete-id-prefix-reference)
+1. Use search queries from [search-queries.md](sot-search-queries.md)
+2. Capture element references (CSS selectors or XPath) - see [schemas.md#source-object](sot-schemas.md#source-object)
+3. Generate cuid2 IDs for each raw data entry - see [sot-id-conventions.md#complete-id-prefix-reference](sot-id-conventions.md#complete-id-prefix-reference)
 4. Record all findings (even duplicates/conflicts)
 5. Save to `knowledge_pack/raw/` directory
 
@@ -151,7 +151,7 @@ graph TB
     README[README.md<br/>Central Index]
     METHOD[methodology.md<br/>7-Phase Process]
     SCHEMAS[schemas.md<br/>JSON Schemas]
-    IDCONV[id-conventions.md<br/>cuid2 IDs]
+    IDCONV[sot-id-conventions.md<br/>cuid2 IDs]
     HIER[source-hierarchy.md<br/>Authority Levels]
     EXAMPLES[examples.md<br/>Complete Examples]
     QUERIES[search-queries.md<br/>200+ Queries]
@@ -194,7 +194,7 @@ graph TB
 - 🔵 **Blue** (README.md): Central index and quick-start guide
 - 🟡 **Yellow** (methodology.md): Complete 7-phase workflow specification
 - 🟢 **Green** (schemas.md): Canonical JSON schema definitions (SoT for data structures)
-- 🔴 **Pink** (id-conventions.md): Canonical cuid2 ID specification (SoT for identifiers)
+- 🔴 **Pink** (sot-id-conventions.md): Canonical cuid2 ID specification (SoT for identifiers)
 - 🟣 **Purple** (phase-2-agent-instructions.md): Autonomous agent operational spec
 
 ---
@@ -205,23 +205,23 @@ graph TB
 
 **Understand the complete methodology:**
 1. Start with [methodology.md](knowledge-pack-methodology.md) for 7-phase overview
-2. Review [source-hierarchy.md](knowledge-pack-source-hierarchy.md) for conflict resolution
+2. Review [source-hierarchy.md](sot-source-hierarchy.md) for conflict resolution
 3. See [examples.md](knowledge-pack-examples.md) for practical applications
 
 **Implement Phase 2 data gathering:**
 1. Start with [phase-2-agent-instructions.md](phase-2-agent-instructions.md) for step-by-step workflow
-2. Reference [search-queries.md](knowledge-pack-search-queries.md) for search terms
-3. Reference [schemas.md](knowledge-pack-schemas.md) for raw data format
-4. Reference [id-conventions.md](id-conventions.md) for ID generation
+2. Reference [search-queries.md](sot-search-queries.md) for search terms
+3. Reference [schemas.md](sot-schemas.md) for raw data format
+4. Reference [sot-id-conventions.md](sot-id-conventions.md) for ID generation
 
 **Create production JSON files:**
-1. Review [schemas.md](knowledge-pack-schemas.md) for data structures
-2. Review [source-hierarchy.md](knowledge-pack-source-hierarchy.md) for authority levels
+1. Review [schemas.md](sot-schemas.md) for data structures
+2. Review [source-hierarchy.md](sot-source-hierarchy.md) for authority levels
 3. Follow [examples.md](knowledge-pack-examples.md) for transformation patterns
 
 **Generate unique IDs:**
-1. See [id-conventions.md](id-conventions.md) for complete specification
-2. See [id-conventions.md#installation](id-conventions.md#installation) to get started
+1. See [sot-id-conventions.md](sot-id-conventions.md) for complete specification
+2. See [sot-id-conventions.md#installation](sot-id-conventions.md#installation) to get started
 
 ---
 
@@ -229,12 +229,12 @@ graph TB
 
 | Term | Definition | Learn More |
 |------|------------|------------|
-| **cuid2** | Globally unique 10-character identifier system | [id-conventions.md](id-conventions.md) |
-| **Field Metadata Envelope** | Data structure wrapping values with source tracking | [schemas.md#field-metadata-envelope](knowledge-pack-schemas.md#field-metadata-envelope) |
-| **Source Authority Level** | Ranking system (1-5) for source trustworthiness | [source-hierarchy.md#source-authority-levels](knowledge-pack-source-hierarchy.md#source-authority-levels) |
-| **Conflict Resolution** | Process for choosing between conflicting data | [source-hierarchy.md#conflict-resolution-decision-tree](knowledge-pack-source-hierarchy.md#conflict-resolution-decision-tree) |
-| **Raw Data Entry** | Unprocessed data captured during scraping | [schemas.md#raw-data-schema](knowledge-pack-schemas.md#raw-data-schema) |
-| **Inheritance** | Child data points borrowing parent sources | [schemas.md#source-inheritance-rules](knowledge-pack-schemas.md#source-inheritance-rules) |
+| **cuid2** | Globally unique 10-character identifier system | [sot-id-conventions.md](sot-id-conventions.md) |
+| **Field Metadata Envelope** | Data structure wrapping values with source tracking | [schemas.md#field-metadata-envelope](sot-schemas.md#field-metadata-envelope) |
+| **Source Authority Level** | Ranking system (1-5) for source trustworthiness | [source-hierarchy.md#source-authority-levels](sot-source-hierarchy.md#source-authority-levels) |
+| **Conflict Resolution** | Process for choosing between conflicting data | [source-hierarchy.md#conflict-resolution-decision-tree](sot-source-hierarchy.md#conflict-resolution-decision-tree) |
+| **Raw Data Entry** | Unprocessed data captured during scraping | [schemas.md#raw-data-schema](sot-schemas.md#raw-data-schema) |
+| **Inheritance** | Child data points borrowing parent sources | [schemas.md#source-inheritance-rules](sot-schemas.md#source-inheritance-rules) |
 | **Page File** | Saved HTML/PDF content with unique cuid2 ID | [phase-2-agent-instructions.md#page-files](phase-2-agent-instructions.md#page-files) |
 
 **Note:** This is a quick reference only. Follow links for complete specifications.

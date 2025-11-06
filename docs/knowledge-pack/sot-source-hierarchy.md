@@ -635,9 +635,9 @@ After resolving conflicts:
 
 **See Also:**
 - 📖 [Conflict Resolution in Methodology](knowledge-pack-methodology.md#phase-4-conflict-resolution) - When conflict resolution happens in the workflow
-- 🔗 [Resolution Schema](knowledge-pack-schemas.md#resolution-object) - Data structure for documenting resolutions
+- 🔗 [Resolution Schema](sot-schemas.md#resolution-object) - Data structure for documenting resolutions
 - 📊 [Resolution Examples](knowledge-pack-examples.md#example-2-california-auto-minimums) - Real-world conflicts resolved
-- 🔍 [Search Queries](knowledge-pack-search-queries.md) - Finding high-authority sources
+- 🔍 [Search Queries](sot-search-queries.md) - Finding high-authority sources
 - 🤖 [Phase 2 Agent Workflow](phase-2-agent-instructions.md#step-6-save-raw-entry) - Capturing confidence during scraping
 
 ---

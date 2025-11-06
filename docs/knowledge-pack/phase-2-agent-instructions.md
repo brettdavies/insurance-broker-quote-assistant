@@ -31,7 +31,7 @@ Before starting Phase 2, verify:
 
 - ✅ Git is configured and authenticated (`git config user.name`, `git config user.email`)
 - ✅ Bun is installed (`bun --version`)
-- ✅ @paralleldrive/cuid2 is available - see [id-conventions.md#installation](id-conventions.md#installation)
+- ✅ @paralleldrive/cuid2 is available - see [sot-id-conventions.md#installation](sot-id-conventions.md#installation)
 - ✅ WebSearch and WebFetch tools are accessible
 - ✅ Write access to `knowledge_pack/` directory exists
 - ✅ `knowledge_pack/search-tracker.json` exists and is populated
@@ -152,7 +152,7 @@ knowledge_pack/raw/_pages/page_ckm9x7whp2.html
 
 **5.2 For each data point found:**
 
-See [knowledge-pack-schemas.md#raw-data-schema](knowledge-pack-schemas.md#raw-data-schema) for complete raw data entry specification.
+See [sot-schemas.md#raw-data-schema](sot-schemas.md#raw-data-schema) for complete raw data entry specification.
 
 ```typescript
 import { createId } from '@paralleldrive/cuid2';
@@ -169,7 +169,7 @@ const rawDataEntry = {
     elementRef: "div.discount-card[data-discount='multi-policy'] > p.percentage",
     extractedValue: "up to 15%",
     accessedDate: "2025-11-05T14:35:00Z",
-    confidence: "high"  // high|medium|low - see knowledge-pack-source-hierarchy.md for scoring
+    confidence: "high"  // high|medium|low - see sot-source-hierarchy.md for scoring
   },
   context: {
     surroundingText: "Save money when you bundle auto and home insurance and get up to 15% off your premium.",
@@ -451,7 +451,7 @@ const agentId = `agent_${createId()}`;
 
 ### ID Prefixes
 
-See [id-conventions.md#complete-id-prefix-reference](id-conventions.md#complete-id-prefix-reference) for complete prefix list.
+See [sot-id-conventions.md#complete-id-prefix-reference](sot-id-conventions.md#complete-id-prefix-reference) for complete prefix list.
 
 | Entity | Prefix | Example |
 |--------|--------|---------|
@@ -646,11 +646,11 @@ This should never happen with cuid2. If it does:
 ---
 
 **See Also:**
-- 📖 [Raw Data Schema](knowledge-pack-schemas.md#raw-data-schema) - Complete specification for data structure
-- 🔗 [Source Authority Levels](knowledge-pack-source-hierarchy.md#source-authority-levels) - How to assess confidence scores
+- 📖 [Raw Data Schema](sot-schemas.md#raw-data-schema) - Complete specification for data structure
+- 🔗 [Source Authority Levels](sot-source-hierarchy.md#source-authority-levels) - How to assess confidence scores
 - 📊 [Extraction Examples](knowledge-pack-examples.md#phase-1-raw-data-scraping) - Real extraction samples
-- 🔍 [Search Queries Catalog](knowledge-pack-search-queries.md) - Complete list of 200+ search queries
-- 🛠️ [ID Conventions](id-conventions.md) - cuid2 ID generation and validation
+- 🔍 [Search Queries Catalog](sot-search-queries.md) - Complete list of 200+ search queries
+- 🛠️ [ID Conventions](sot-id-conventions.md) - cuid2 ID generation and validation
 - 📋 [Complete Methodology](knowledge-pack-methodology.md#phase-2-raw-data-scraping) - Where Phase 2 fits in overall workflow
 
 ---

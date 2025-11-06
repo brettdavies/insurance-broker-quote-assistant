@@ -30,7 +30,7 @@ This document defines the comprehensive methodology for gathering, validating, a
 
 #### 1.1 Source Metadata Structure
 
-Every field in the knowledge pack uses a metadata envelope for source tracking. See [knowledge-pack-schemas.md#field-metadata-envelope](knowledge-pack-schemas.md#field-metadata-envelope) for complete specification.
+Every field in the knowledge pack uses a metadata envelope for source tracking. See [sot-schemas.md#field-metadata-envelope](sot-schemas.md#field-metadata-envelope) for complete specification.
 
 **Core concept:**
 ```json
@@ -43,7 +43,7 @@ Every field in the knowledge pack uses a metadata envelope for source tracking. 
 }
 ```
 
-**See also:** [Complete schemas →](knowledge-pack-schemas.md#core-concepts)
+**See also:** [Complete schemas →](sot-schemas.md#core-concepts)
 
 #### 1.2 Source Inheritance Rules
 
@@ -73,13 +73,13 @@ When a child data point has no direct sources, it inherits from its parent:
 
 #### 1.3 cuid2 Generation Conventions
 
-All entity IDs use **cuid2** format with type prefixes for global uniqueness. See [id-conventions.md](id-conventions.md) for complete specification.
+All entity IDs use **cuid2** format with type prefixes for global uniqueness. See [sot-id-conventions.md](sot-id-conventions.md) for complete specification.
 
 **Quick reference:**
 - Carriers: `carr_{cuid2}` (e.g., `carr_ckm9x7w8k0`)
 - Discounts: `disc_{cuid2}`
 - Fields: `fld_{cuid2}`
-- [See all prefixes →](id-conventions.md#complete-id-prefix-reference)
+- [See all prefixes →](sot-id-conventions.md#complete-id-prefix-reference)
 
 All IDs tracked in `audit-trail.json` for cross-reference.
 
@@ -92,13 +92,13 @@ All IDs tracked in `audit-trail.json` for cross-reference.
 | `schemas/source-metadata.json` | Source object definition |
 | `schemas/resolution-metadata.json` | Conflict resolution tracking |
 
-**Complete schema specifications**: See [knowledge-pack-schemas.md](knowledge-pack-schemas.md) for all JSON schema definitions.
+**Complete schema specifications**: See [sot-schemas.md](sot-schemas.md) for all JSON schema definitions.
 
 **Deliverable**: 4 schema files in `knowledge_pack/schemas/`
 
 **See Also:**
-- 📖 [Complete Schemas](knowledge-pack-schemas.md) - Full JSON schema specifications
-- 🔗 [ID Conventions](id-conventions.md) - cuid2 usage for all entities
+- 📖 [Complete Schemas](sot-schemas.md) - Full JSON schema specifications
+- 🔗 [ID Conventions](sot-id-conventions.md) - cuid2 usage for all entities
 
 ---
 
@@ -391,7 +391,7 @@ For each extracted value, note:
 
 **See Also:**
 - 📖 [Agent Workflow](phase-2-agent-instructions.md) - Step-by-step autonomous execution
-- 🔗 [Search Queries](knowledge-pack-search-queries.md) - 200+ queries for data gathering
+- 🔗 [Search Queries](sot-search-queries.md) - 200+ queries for data gathering
 - 📊 [Raw Data Examples](knowledge-pack-examples.md#example-1-multi-policy-discount) - See raw scraping in action
 
 ---
@@ -506,7 +506,7 @@ function calculateSeverity(values, dataPoint) {
 
 **See Also:**
 - 📖 [Conflict Detection Examples](knowledge-pack-examples.md#example-2-california-auto-minimums) - Real conflict scenarios
-- 🔗 [Resolution Schema](knowledge-pack-schemas.md#resolution-object) - Data structure for conflicts
+- 🔗 [Resolution Schema](sot-schemas.md#resolution-object) - Data structure for conflicts
 
 ---
 
@@ -516,10 +516,10 @@ function calculateSeverity(values, dataPoint) {
 
 #### 4.1 Resolution Strategies (Priority Order)
 
-See [knowledge-pack-source-hierarchy.md](knowledge-pack-source-hierarchy.md) for complete conflict resolution decision tree and source authority levels.
+See [sot-source-hierarchy.md](sot-source-hierarchy.md) for complete conflict resolution decision tree and source authority levels.
 
 **Quick reference (7 strategies in priority order):**
-1. Authoritative source hierarchy → [Details](knowledge-pack-source-hierarchy.md#source-authority-levels)
+1. Authoritative source hierarchy → [Details](sot-source-hierarchy.md#source-authority-levels)
 2. Specificity preference (exact > range)
 3. Temporal preference (recent > old)
 4. Conservative estimate (domain knowledge)
@@ -527,7 +527,7 @@ See [knowledge-pack-source-hierarchy.md](knowledge-pack-source-hierarchy.md) for
 6. Context awareness (parse qualifiers)
 7. Expert judgment (manual with rationale)
 
-[View complete decision tree →](knowledge-pack-source-hierarchy.md#conflict-resolution-decision-tree)
+[View complete decision tree →](sot-source-hierarchy.md#conflict-resolution-decision-tree)
 
 #### 4.2 Resolution Decision Format
 
@@ -642,7 +642,7 @@ Create `knowledge_pack/resolutions.json`:
 - `knowledge_pack/audit-trail.json` with complete lineage
 
 **See Also:**
-- 📖 [Source Hierarchy](knowledge-pack-source-hierarchy.md) - Complete decision tree and authority levels
+- 📖 [Source Hierarchy](sot-source-hierarchy.md) - Complete decision tree and authority levels
 - 📊 [Resolution Examples](knowledge-pack-examples.md#example-4-three-way-conflict-with-majority-consensus) - Real conflict resolutions
 
 ---
@@ -780,7 +780,7 @@ For production files, compress source references:
 **Deliverable**: 10 production JSON files ready for RAG consumption
 
 **See Also:**
-- 📖 [Production Schemas](knowledge-pack-schemas.md#carrier-schema) - Complete schema specifications
+- 📖 [Production Schemas](sot-schemas.md#carrier-schema) - Complete schema specifications
 - 📊 [Complete Carrier Example](knowledge-pack-examples.md#example-5-complete-carrier-file-production-format) - Production format sample
 
 ---
@@ -916,8 +916,8 @@ const validationChecks = [
 **Deliverable**: `knowledge_pack/validation-report.json` with QA results
 
 **See Also:**
-- 📖 [Validation Rules](knowledge-pack-schemas.md#validation-rules) - Schema validation specifications
-- 🔗 [Quality Metrics](knowledge-pack-schemas.md#required-validations) - Required validation checks
+- 📖 [Validation Rules](sot-schemas.md#validation-rules) - Schema validation specifications
+- 🔗 [Quality Metrics](sot-schemas.md#required-validations) - Required validation checks
 
 ---
 
