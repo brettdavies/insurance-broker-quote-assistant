@@ -65,15 +65,7 @@ Organized by category:
 
 ### Globally Unique IDs (cuid2)
 
-All entities use **cuid2** for globally unique, collision-resistant identifiers. See [sot-id-conventions.md](sot-id-conventions.md) for complete specification.
-
-**Quick example:**
-```typescript
-import { createId } from '@paralleldrive/cuid2';
-const carrierId = `carr_${createId()}`; // "carr_ckm9x7w8k0"
-```
-
-**Common prefixes:** `carr_` (carrier), `disc_` (discount), `fld_` (field) — see [complete reference](sot-id-conventions.md#complete-id-prefix-reference).
+All entities use **cuid2** for globally unique, collision-resistant identifiers. See [sot-id-conventions.md](sot-id-conventions.md) for complete specification with installation instructions and all prefix types.
 
 ### Source Tracking Requirements
 
@@ -102,7 +94,7 @@ Sources are ranked by authority level (1-5, regulatory > carrier > industry > co
 ### For Implementers
 
 1. **Review** [methodology.md](knowledge-pack-methodology.md) for complete workflow
-2. **Install cuid2**: `bun add @paralleldrive/cuid2` - see [sot-id-conventions.md#installation](sot-id-conventions.md#installation)
+2. **Setup IDs**: See [sot-id-conventions.md](sot-id-conventions.md) for installation and ID generation
 3. **Use** [search-queries.md](sot-search-queries.md) to find data sources
 4. **Apply** [source-hierarchy.md](sot-source-hierarchy.md) when resolving conflicts
 5. **Reference** [schemas.md](sot-schemas.md) for data structure
@@ -113,7 +105,7 @@ Sources are ranked by authority level (1-5, regulatory > carrier > industry > co
 Search agents should:
 1. Use search queries from [search-queries.md](sot-search-queries.md)
 2. Capture element references (CSS selectors or XPath) - see [schemas.md#source-object](sot-schemas.md#source-object)
-3. Generate cuid2 IDs for each raw data entry - see [sot-id-conventions.md#complete-id-prefix-reference](sot-id-conventions.md#complete-id-prefix-reference)
+3. Generate cuid2 IDs for each raw data entry - see [sot-id-conventions.md](sot-id-conventions.md)
 4. Record all findings (even duplicates/conflicts)
 5. Save to `knowledge_pack/raw/` directory
 
@@ -122,7 +114,7 @@ Search agents should:
 ## Technology Stack
 
 - **Package Manager**: Bun (all commands use `bun run`, `bun test`, `bun install`)
-- **ID Generation**: `@paralleldrive/cuid2` for globally unique IDs
+- **ID Generation**: See [sot-id-conventions.md](sot-id-conventions.md) for globally unique ID setup
 - **Validation**: JSON Schema for data structure validation
 - **Logging**: Structured JSON logs for audit trail
 
@@ -220,8 +212,7 @@ graph TB
 3. Follow [examples.md](knowledge-pack-examples.md) for transformation patterns
 
 **Generate unique IDs:**
-1. See [sot-id-conventions.md](sot-id-conventions.md) for complete specification
-2. See [sot-id-conventions.md#installation](sot-id-conventions.md#installation) to get started
+1. See [sot-id-conventions.md](sot-id-conventions.md) for complete specification and setup instructions
 
 ---
 

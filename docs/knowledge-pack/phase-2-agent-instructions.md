@@ -31,7 +31,7 @@ Before starting Phase 2, verify:
 
 - ✅ Git is configured and authenticated (`git config user.name`, `git config user.email`)
 - ✅ Bun is installed (`bun --version`)
-- ✅ @paralleldrive/cuid2 is available - see [sot-id-conventions.md#installation](sot-id-conventions.md#installation)
+- ✅ ID generation setup complete - see [sot-id-conventions.md](sot-id-conventions.md) for installation
 - ✅ WebSearch and WebFetch tools are accessible
 - ✅ Write access to `knowledge_pack/` directory exists
 - ✅ `knowledge_pack/search-tracker.json` exists and is populated
@@ -419,48 +419,9 @@ industry/average_pricing_iii.raw.json
 
 ---
 
-## cuid2 ID Generation
+## ID Generation
 
-### Installation
-
-```bash
-bun add @paralleldrive/cuid2
-```
-
-### Usage
-
-```typescript
-import { createId } from '@paralleldrive/cuid2';
-
-// Generate page ID
-const pageId = `page_${createId()}`;
-// Example: "page_ckm9x7w8k0"
-
-// Generate raw data ID
-const rawId = `raw_${createId()}`;
-// Example: "raw_ckm9x7wdx1"
-
-// Generate search ID (done once when creating tracker)
-const searchId = `search_${createId()}`;
-// Example: "search_ckm9x7whp2"
-
-// Generate agent ID (done once at agent startup)
-const agentId = `agent_${createId()}`;
-// Example: "agent_ckm9x7wkm3"
-```
-
-### ID Prefixes
-
-See [sot-id-conventions.md#complete-id-prefix-reference](sot-id-conventions.md#complete-id-prefix-reference) for complete prefix list.
-
-| Entity | Prefix | Example |
-|--------|--------|---------|
-| Page file | `page_` | `page_ckm9x7w8k0` |
-| Raw data entry | `raw_` | `raw_ckm9x7wdx1` |
-| Search | `search_` | `search_ckm9x7whp2` |
-| Agent | `agent_` | `agent_ckm9x7wkm3` |
-| Carrier | `carr_` | `carr_ckm9x7wnp4` |
-| Field | `fld_` | `fld_ckm9x7wqr5` |
+For complete ID generation specifications, installation instructions, and all entity prefix types, see [sot-id-conventions.md](sot-id-conventions.md).
 
 ---
 
