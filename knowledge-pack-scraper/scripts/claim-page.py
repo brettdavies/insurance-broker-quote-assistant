@@ -247,35 +247,31 @@ def main() -> None:
             )
             sys.exit(1)
 
-        # Success! Output content for extraction
-        # Note: Content might be large, so we'll truncate in message but include full in data
-        content_preview = content[:500] + "..." if len(content) > 500 else content
-
+        # Success! Output file paths for extraction
         output_result(
             success=True,
-            message=f"Successfully claimed page and loaded {format_used} content ({len(content):,} chars)",
+            message=f"Successfully claimed page with {format_used} content ({len(content):,} chars)",
             next_steps=(
                 f"Claim committed successfully. You now own {page_id}.\n\n"
                 f"ACTION REQUIRED - Extract Data:\n"
-                f"1. Use LLM to extract insurance data points from the content\n"
-                f"2. Look for: discounts, eligibility rules, carrier info, state requirements\n"
-                f"3. Extract data in structured format following the Raw Data Schema:\n"
+                f"1. Read the page content from the file paths provided below\n"
+                f"2. Use LLM to extract insurance data points from the content\n"
+                f"3. Look for: discounts, eligibility rules, carrier info, state requirements\n"
+                f"4. Extract data in structured format following the Raw Data Schema:\n"
                 f"   Schema: docs/knowledge-pack/sot-schemas.md#raw-data-schema\n"
                 f"   Required fields: id, dataPoint, rawValue, source (with pageId, uri, accessedDate)\n"
-                f"4. Generate unique raw data IDs for each data point (raw_{{cuid2}})\n"
-                f"5. After extraction completes, save data using:\n"
+                f"5. Generate unique raw data IDs for each data point (raw_{{cuid2}})\n"
+                f"6. After extraction completes, save data using:\n"
                 f"   echo '<json_data>' | uv run scripts/save-extraction.py --page-id {page_id} --search-id {search_id}\n\n"
-                f"Note: Full content is in the 'content' field below.\n"
-                f"Content format: {format_used}\n"
-                f"Content size: {len(content):,} characters"
+                f"Recommended: Use Task tool with subagent to read file and perform extraction."
             ),
             data={
                 "page_id": page_id,
                 "search_id": search_id,
-                "content": content,
+                "html_file": str(html_file),
+                "markdown_file": str(md_file),
                 "content_format": format_used,
-                "content_length": len(content),
-                "content_preview": content_preview,
+                "content_size": len(content),
                 "claimed_by": AGENT_ID,
                 "claimed_at": datetime.now().isoformat()
             }
