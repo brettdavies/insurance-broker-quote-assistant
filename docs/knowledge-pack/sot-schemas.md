@@ -820,6 +820,182 @@ interface StatusCounts {
 
 ---
 
+## 5.1. URL Tracker Schema
+
+### Purpose
+Track URLs discovered during Phase 2 searches, with deduplication support and multi-search provenance tracking.
+
+### JSON Schema
+
+```typescript
+interface URLTracker {
+  meta: {
+    version: string;
+    schemaVersion: string;
+    createdDate: string;
+    lastUpdated: string;
+    totalUrls: number;
+    description: string;
+  };
+  statusCounts: {
+    pending: number;
+    claimed: number;
+    completed: number;
+    failed: number;
+  };
+  urls: URLEntry[];
+}
+
+interface URLEntry {
+  id: string;                    // cuid2 with "url_" prefix
+  search_ids: string[];          // Array of search IDs that discovered this URL
+  url: string;                   // Full URL
+  url_hash: string;              // SHA256 hash (first 16 chars) for deduplication
+  status: "pending" | "claimed" | "completed" | "failed";
+  assignedTo?: string;           // Agent ID (cuid2 with "agnt_" prefix)
+  claimedAt?: string;            // ISO 8601 timestamp
+  completedAt?: string;          // ISO 8601 timestamp
+  pageId?: string;               // Generated page ID after fetch
+  errorMessage?: string;         // Error details if failed
+}
+```
+
+### Example
+
+```json
+{
+  "meta": {
+    "version": "1.0",
+    "schemaVersion": "multi-step-v1",
+    "createdDate": "2025-11-06",
+    "lastUpdated": "2025-11-06T16:30:00Z",
+    "totalUrls": 150,
+    "description": "Phase 2 URL tracker - URLs pending fetch"
+  },
+  "statusCounts": {
+    "pending": 100,
+    "claimed": 5,
+    "completed": 40,
+    "failed": 5
+  },
+  "urls": [
+    {
+      "id": "url_ckm9x7wdx1",
+      "search_ids": ["search_abc123", "search_def456"],
+      "url": "https://www.geico.com/auto/discounts/",
+      "url_hash": "a1b2c3d4e5f6g7h8",
+      "status": "completed",
+      "assignedTo": "agnt_cm1a5b7k9p",
+      "claimedAt": "2025-11-06T15:00:00Z",
+      "completedAt": "2025-11-06T15:02:30Z",
+      "pageId": "page_xyz789"
+    },
+    {
+      "id": "url_ckm9x7wtu6",
+      "search_ids": ["search_ghi789"],
+      "url": "https://www.statefarm.com/insurance/home/discounts",
+      "url_hash": "i9j0k1l2m3n4o5p6",
+      "status": "pending"
+    }
+  ]
+}
+```
+
+### Field Notes
+
+- **search_ids**: Array of all search IDs that discovered this URL (supports multi-search provenance)
+- **url_hash**: Calculated via `sha256(normalize_url(url))[:16]` for deduplication
+- **URL Deduplication**: Multiple searches can discover the same URL - all search IDs are tracked in the array
+- **status**: Tracks fetch lifecycle (pending → claimed → completed/failed)
+
+---
+
+## 5.2. Page Tracker Schema
+
+### Purpose
+Track pages fetched via crawl4ai, ready for data extraction.
+
+### JSON Schema
+
+```typescript
+interface PageTracker {
+  meta: {
+    version: string;
+    schemaVersion: string;
+    createdDate: string;
+    lastUpdated: string;
+    totalPages: number;
+    description: string;
+  };
+  statusCounts: {
+    pending: number;
+    claimed: number;
+    completed: number;
+    failed: number;
+  };
+  pages: PageEntry[];
+}
+
+interface PageEntry {
+  id: string;                    // cuid2 with "page_" prefix
+  url_id: string;                // References URL tracker entry
+  status: "pending" | "claimed" | "completed" | "failed";
+  assignedTo?: string;           // Agent ID (cuid2 with "agnt_" prefix)
+  claimedAt?: string;            // ISO 8601 timestamp
+  completedAt?: string;          // ISO 8601 timestamp
+  dataPointsExtracted?: number;  // Count of raw data points extracted
+  rawDataFile?: string;          // Path to raw.json file (relative to knowledge_pack/)
+  errorMessage?: string;         // Error details if failed
+}
+```
+
+### Example
+
+```json
+{
+  "meta": {
+    "version": "1.0",
+    "schemaVersion": "multi-step-v1",
+    "createdDate": "2025-11-06",
+    "lastUpdated": "2025-11-06T16:45:00Z",
+    "totalPages": 120,
+    "description": "Phase 2 page tracker - pages pending extraction"
+  },
+  "statusCounts": {
+    "pending": 80,
+    "claimed": 3,
+    "completed": 35,
+    "failed": 2
+  },
+  "pages": [
+    {
+      "id": "page_xyz789",
+      "url_id": "url_ckm9x7wdx1",
+      "status": "completed",
+      "assignedTo": "agnt_cm1a5b7k9p",
+      "claimedAt": "2025-11-06T16:00:00Z",
+      "completedAt": "2025-11-06T16:05:00Z",
+      "dataPointsExtracted": 15,
+      "rawDataFile": "carriers/uncategorized/data_page_xyz789.raw.json"
+    },
+    {
+      "id": "page_abc123",
+      "url_id": "url_ckm9x7wtu6",
+      "status": "pending"
+    }
+  ]
+}
+```
+
+### Field Notes
+
+- **url_id**: References URL tracker (provenance chain: page → url → search_ids)
+- **rawDataFile**: Filename pattern is `data_{page_id}.raw.json` (one file per page)
+- **dataPointsExtracted**: Can be 0 if page has no relevant insurance data
+- **Provenance lookup**: page → url_id → URL.search_ids → original searches
+
+---
+
 ## 6. cuid2 ID Conventions
 
 All entity IDs use **cuid2** format with type prefixes. See [sot-id-conventions.md#complete-id-prefix-reference](sot-id-conventions.md#complete-id-prefix-reference) for the complete prefix specification and examples.

@@ -11,7 +11,7 @@ This package contains the Phase 2 data gathering infrastructure for the Insuranc
 - **Language**: Python 3.10+ with `uv` package manager
 - **Agent Model**: Multiple independent processes (3-5 parallel)
 - **Coordination**: GitHub as single source of truth
-- **Trackers**: 4 separate JSON files (waterfall selection)
+- **Trackers**: 3 separate JSON files (waterfall selection)
 - **Output**: Dual format storage (HTML + Markdown) in `../knowledge_pack/raw/`
 
 ## Installation
@@ -47,7 +47,7 @@ cd knowledge-pack-scraper
 uv run scripts/select-work.py
 ```
 
-Returns work item with waterfall priority (search → url → page → extraction).
+Returns work item with waterfall priority (search → url → page).
 
 #### 2. claim-search.py - Claim Search for Execution
 
@@ -84,20 +84,12 @@ Claims page, outputs content for agent to perform LLM extraction.
 #### 6. save-extraction.py - Save Extracted Data
 
 ```bash
-echo '[{...data...}]' | uv run scripts/save-extraction.py --page-id page_def456 --search-id search_abc123
+echo '[{...data...}]' | uv run scripts/save-extraction.py --page-id page_def456
 ```
 
-Saves extraction results from agent's LLM extraction.
+Saves extraction results from agent's LLM extraction. Raw data file named by page_id.
 
-#### 7. validate-extraction.py - Autonomous Validation
-
-```bash
-uv run scripts/validate-extraction.py --id page_def456
-```
-
-Fully autonomous: validates files, checks schema, marks search complete.
-
-#### 8. git-commit.py - Centralized Git Operations
+#### 7. git-commit.py - Centralized Git Operations
 
 ```bash
 uv run scripts/git-commit.py --type claim --id search_abc123 --message "GEICO discounts"
@@ -126,7 +118,7 @@ $ uv run scripts/save-urls.py --search-id search_abc123 --urls <url1> <url2>
 # 5. Repeat...
 ```
 
-See [docs/knowledge-pack/phase-2-agent-workflow.md](../docs/knowledge-pack/phase-2-agent-workflow.md) for complete documentation.
+See [docs/knowledge-pack/phase-2-agent-instructions.md](../docs/knowledge-pack/phase-2-agent-instructions.md) for complete documentation.
 
 ## Output
 
@@ -137,12 +129,11 @@ All scraped data is saved to `../knowledge_pack/raw/`:
 
 ## Trackers
 
-The system uses 4 tracker files:
+The system uses 3 tracker files:
 
 1. **search-tracker.json** - Searches to execute
 2. **url-tracker.json** - URLs to fetch
 3. **page-tracker.json** - Pages to extract data from
-4. **extraction-tracker.json** - Extractions to validate and commit
 
 Agents check these in waterfall order, picking the first available work from the highest priority tracker.
 

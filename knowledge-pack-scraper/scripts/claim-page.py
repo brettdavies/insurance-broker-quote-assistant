@@ -210,7 +210,6 @@ def main() -> None:
         # Step 6: Load page content
         html_file_path = page.get('htmlFile', '')
         md_file_path = page.get('markdownFile', '')
-        search_id = page.get('searchId', 'unknown')
         url_id = page.get('urlId', 'unknown')
 
         # Resolve file paths
@@ -262,12 +261,11 @@ def main() -> None:
                 f"   Required fields: id, dataPoint, rawValue, source (with pageId, uri, accessedDate)\n"
                 f"5. Generate unique raw data IDs for each data point (raw_{{cuid2}})\n"
                 f"6. After extraction completes, save data using:\n"
-                f"   echo '<json_data>' | uv run scripts/save-extraction.py --page-id {page_id} --search-id {search_id}\n\n"
+                f"   echo '<json_data>' | uv run scripts/save-extraction.py --page-id {page_id}\n\n"
                 f"Recommended: Use Task tool with subagent to read file and perform extraction."
             ),
             data={
                 "page_id": page_id,
-                "search_id": search_id,
                 "html_file": str(html_file),
                 "markdown_file": str(md_file),
                 "content_format": format_used,

@@ -4,9 +4,9 @@ Save discovered URLs to url-tracker after agent performs WebSearch.
 
 This script:
 1. Accepts search ID and list of URLs from agent
-2. Generates URL IDs and hashes
-3. Registers URLs in url-tracker
-4. Updates search status to 'urls_discovered'
+2. Normalizes URLs and calculates hashes for deduplication
+3. Registers new URLs or appends search_id to existing URLs
+4. Marks search as 'completed' (hand-off complete)
 5. Commits changes
 
 Usage:
@@ -50,6 +50,41 @@ def output_result(success: bool, message: str, next_steps: str, data: dict = Non
         result.update(data)
 
     print(json.dumps(result, indent=2))
+
+
+def normalize_url(url: str) -> str:
+    """
+    Normalize URL for consistent hashing.
+
+    Args:
+        url: Raw URL string
+
+    Returns:
+        Normalized URL (lowercase, no protocol, no trailing slash)
+    """
+    normalized = url.lower().rstrip('/')
+
+    # Remove protocol
+    if normalized.startswith('http://'):
+        normalized = normalized[7:]
+    elif normalized.startswith('https://'):
+        normalized = normalized[8:]
+
+    return normalized
+
+
+def calculate_url_hash(url: str) -> str:
+    """
+    Calculate SHA256 hash of normalized URL for deduplication.
+
+    Args:
+        url: Raw URL string
+
+    Returns:
+        First 16 characters of SHA256 hash
+    """
+    normalized = normalize_url(url)
+    return hashlib.sha256(normalized.encode()).hexdigest()[:16]
 
 
 def main() -> None:
@@ -115,50 +150,99 @@ def main() -> None:
         # Load url-tracker
         url_tracker = tm.load('url')
 
-        # Register each URL
+        # Build hash lookup for existing URLs
+        existing_urls_by_hash = {}
+        for url_entry in url_tracker.get('urls', []):
+            url_hash = url_entry.get('urlHash')
+            if url_hash:
+                existing_urls_by_hash[url_hash] = url_entry
+
+        # Process each URL (deduplication logic)
+        new_urls_count = 0
+        existing_urls_count = 0
         registered_urls = []
-        for url in urls:
-            url_id = generate_url_id()
-            url_hash = hashlib.sha256(url.encode()).hexdigest()[:16]
 
-            url_entry = {
-                'id': url_id,
-                'searchId': search_id,
-                'url': url,
-                'urlHash': url_hash,
-                'priority': search.get('priority', 'medium'),
-                'status': 'pending',
-                'assignedTo': None,
-                'pageId': None,
-                'htmlFile': None,
-                'markdownFile': None,
-                'fetchedAt': None,
-                'fetchError': None,
-                'retryCount': 0
-            }
+        for idx, url in enumerate(urls, 1):
+            url_hash = calculate_url_hash(url)
 
-            url_tracker['urls'].append(url_entry)
-            url_tracker['statusCounts']['pending'] += 1
-            registered_urls.append({
-                'id': url_id,
-                'url': url,
-                'hash': url_hash
-            })
+            # Check if URL already exists
+            if url_hash in existing_urls_by_hash:
+                # URL exists - append search_id if not already present
+                existing_entry = existing_urls_by_hash[url_hash]
+                search_ids = existing_entry.get('search_ids', existing_entry.get('searchIds', []))
 
+                # Handle legacy single searchId field
+                if not isinstance(search_ids, list):
+                    search_ids = [search_ids] if search_ids else []
+
+                # Append search_id if not already present (idempotent)
+                if search_id not in search_ids:
+                    search_ids.append(search_id)
+                    existing_entry['search_ids'] = search_ids
+                    # Remove legacy field if present
+                    if 'searchId' in existing_entry:
+                        del existing_entry['searchId']
+
+                existing_urls_count += 1
+                registered_urls.append({
+                    'url': url,
+                    'status': 'existing',
+                    'message': f'Added this search to existing URL ({idx} of {len(urls)})'
+                })
+            else:
+                # New URL - create entry
+                url_id = generate_url_id()
+
+                url_entry = {
+                    'id': url_id,
+                    'search_ids': [search_id],  # Array for multi-search provenance
+                    'url': url,
+                    'urlHash': url_hash,
+                    'priority': search.get('priority', 'medium'),
+                    'status': 'pending',
+                    'assignedTo': None,
+                    'pageId': None,
+                    'htmlFile': None,
+                    'markdownFile': None,
+                    'fetchedAt': None,
+                    'fetchError': None,
+                    'retryCount': 0
+                }
+
+                url_tracker['urls'].append(url_entry)
+                url_tracker['statusCounts']['pending'] += 1
+                existing_urls_by_hash[url_hash] = url_entry  # Add to lookup
+
+                new_urls_count += 1
+                registered_urls.append({
+                    'id': url_id,
+                    'url': url,
+                    'hash': url_hash,
+                    'status': 'new',
+                    'message': f'Registered new URL ({idx} of {len(urls)})'
+                })
+
+        # Save url-tracker with dedup changes
         tm.save('url', url_tracker)
 
-        # Update search status to 'urls_discovered'
-        tm.update_status('search', search_id, 'urls_discovered', {
-            'urlsDiscoveredCount': len(urls)
+        # Mark search as 'completed' (hand-off complete)
+        tm.update_status('search', search_id, 'completed', {
+            'completedAt': tm._get_timestamp(),
+            'urlsDiscoveredCount': len(urls),
+            'urlsNewCount': new_urls_count,
+            'urlsExistingCount': existing_urls_count
         })
 
         # Commit changes using centralized git script
+        # Format: "feat(kb): complete search - registered N URLs (X new, Y existing)"
+        commit_message = f'registered {len(urls)} URLs ({new_urls_count} new, {existing_urls_count} existing)'
+
         result = subprocess.run(
             [
                 'uv', 'run', 'scripts/git-commit.py',
                 '--type', 'complete',
                 '--id', search_id,
-                '--message', f'discovered {len(urls)} URLs'
+                '--message', commit_message
             ],
             capture_output=True,
             text=True,
@@ -198,16 +282,23 @@ def main() -> None:
         # Success!
         output_result(
             success=True,
-            message=f"Successfully registered {len(urls)} URLs",
+            message=f"Search complete! Registered {len(urls)} URLs ({new_urls_count} new, {existing_urls_count} existing)",
             next_steps=(
                 f"URLs saved and committed successfully.\n\n"
-                f"Registered {len(urls)} URLs.\n"
+                f"Summary:\n"
+                f"  - Total URLs: {len(urls)}\n"
+                f"  - New URLs: {new_urls_count}\n"
+                f"  - Existing URLs (deduplicated): {existing_urls_count}\n\n"
+                f"Search marked as completed.\n"
                 f"URLs will be fetched by URL processing agents.\n\n"
                 f"Chaining to next work item..."
             ),
             data={
                 "search_id": search_id,
-                "urls_registered": len(urls)
+                "urls_total": len(urls),
+                "urls_new": new_urls_count,
+                "urls_existing": existing_urls_count,
+                "urls_registered": registered_urls
             }
         )
 

@@ -3,17 +3,17 @@
 Save extracted data after agent performs LLM extraction.
 
 This script:
-1. Accepts page ID, search ID, and extracted data (via stdin or --data)
-2. Saves raw.json file
+1. Accepts page ID and extracted data (via stdin or --data)
+2. Saves raw.json file (named by page ID)
 3. Updates page-tracker
 4. Commits changes
 
 Usage:
     # Via stdin (recommended for large data)
-    echo '{"data": [...]}' | uv run scripts/save-extraction.py --page-id page_abc123 --search-id search_xyz789
+    echo '{"data": [...]}' | uv run scripts/save-extraction.py --page-id page_abc123
 
     # Via argument (for small data)
-    uv run scripts/save-extraction.py --page-id page_abc123 --search-id search_xyz789 --data '{"data": [...]}'
+    uv run scripts/save-extraction.py --page-id page_abc123 --data '{"data": [...]}'
 
 Output:
     JSON with save results and explicit next_steps for agent
@@ -65,11 +65,6 @@ def main() -> None:
         help='Page ID this extraction is for'
     )
     parser.add_argument(
-        '--search-id',
-        required=True,
-        help='Search ID this extraction belongs to'
-    )
-    parser.add_argument(
         '--data',
         required=False,
         help='Extracted data as JSON string (or use stdin)'
@@ -77,7 +72,6 @@ def main() -> None:
 
     args = parser.parse_args()
     page_id = args.page_id
-    search_id = args.search_id
 
     try:
         # Load extracted data (from stdin or --data)
@@ -142,11 +136,11 @@ def main() -> None:
             sys.exit(0)
 
         # Determine output file path
-        # TODO: Proper categorization logic based on search metadata
+        # TODO: Proper categorization logic based on page metadata
         tm = TrackerManager()
         raw_dir = tm.output_base / 'carriers' / 'uncategorized'
         raw_dir.mkdir(parents=True, exist_ok=True)
-        raw_file = raw_dir / f"data_{search_id}.raw.json"
+        raw_file = raw_dir / f"data_{page_id}.raw.json"
 
         # Save raw.json
         with open(raw_file, 'w', encoding='utf-8') as f:
