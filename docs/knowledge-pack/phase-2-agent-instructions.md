@@ -109,30 +109,17 @@ From search results, select 1-3 most relevant URLs:
 For each selected URL:
 
 ```typescript
-// Generate unique page ID
-import { createId } from '@paralleldrive/cuid2';
-const pageId = `page_${createId()}`; // e.g., "page_ckm9x7w8k0"
+// Generate unique page ID using page_ prefix (see sot-id-conventions.md for setup)
+const pageId = `page_${createId()}`;  // e.g., "page_ckm9x7w8k0"
 
-// Fetch page content
+// Fetch page content and save with metadata
 const content = await WebFetch(url);
-
-// Determine file extension
 const ext = url.endsWith('.pdf') ? 'pdf' : 'html';
-
-// Save to _pages directory
 const pageFile = `_pages/${pageId}.${ext}`;
 await saveFile(`knowledge_pack/raw/${pageFile}`, content);
-
-// Record metadata
-const pageMeta = {
-  pageId,
-  pageFile,
-  uri: url,
-  accessedDate: new Date().toISOString(),
-  fileSize: content.length,
-  contentType: ext === 'pdf' ? 'application/pdf' : 'text/html'
-};
 ```
+
+For complete ID generation specifications and installation instructions, see [sot-id-conventions.md](sot-id-conventions.md).
 
 **4.4 Save page files:**
 
@@ -152,32 +139,18 @@ knowledge_pack/raw/_pages/page_ckm9x7whp2.html
 
 **5.2 For each data point found:**
 
-See [sot-schemas.md#raw-data-schema](sot-schemas.md#raw-data-schema) for complete raw data entry specification.
+Create a raw data entry with structure shown in [sot-schemas.md#raw-data-schema](sot-schemas.md#raw-data-schema). Use the `raw_` prefix for IDs:
 
 ```typescript
-import { createId } from '@paralleldrive/cuid2';
-
 const rawDataEntry = {
-  id: `raw_${createId()}`,  // e.g., "raw_ckm9x7wkm3"
+  id: `raw_${createId()}`,  // e.g., "raw_ckm9x7wkm3" - see sot-id-conventions.md
   dataPoint: "geico_multi_policy_discount_percentage",
   rawValue: "up to 15%",
-  normalizedValue: 15,
-  source: {
-    uri: "https://www.geico.com/auto/discounts/",
-    pageId: "page_ckm9x7w8k0",
-    pageFile: "_pages/page_ckm9x7w8k0.html",
-    elementRef: "div.discount-card[data-discount='multi-policy'] > p.percentage",
-    extractedValue: "up to 15%",
-    accessedDate: "2025-11-05T14:35:00Z",
-    confidence: "high"  // high|medium|low - see sot-source-hierarchy.md for scoring
-  },
-  context: {
-    surroundingText: "Save money when you bundle auto and home insurance and get up to 15% off your premium.",
-    pageTitle: "GEICO Auto Insurance Discounts",
-    qualifier: "up to"  // Optional: "up to", "as much as", etc.
-  }
+  // ... see sot-schemas.md for complete structure
 };
 ```
+
+For complete ID generation specifications, see [sot-id-conventions.md](sot-id-conventions.md).
 
 **Element Reference Guidelines:**
 - Use CSS selectors when possible (e.g., `div.class > p:nth-child(2)`)
@@ -416,12 +389,6 @@ industry/average_pricing_iii.raw.json
 - Resolve conflicts
 - Merge similar values
 - Clean or normalize beyond basic parsing
-
----
-
-## ID Generation
-
-For complete ID generation specifications, installation instructions, and all entity prefix types, see [sot-id-conventions.md](sot-id-conventions.md).
 
 ---
 

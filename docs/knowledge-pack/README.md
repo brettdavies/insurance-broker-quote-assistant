@@ -8,58 +8,77 @@ The knowledge pack is a structured collection of insurance data (carriers, state
 
 ## Documentation Files
 
-### 1. [methodology.md](knowledge-pack-methodology.md)
-**Complete 7-Phase Data Gathering Process**
-- Phase 1: Enhanced JSON Schema Design (1 hour)
-- Phase 2: Raw Data Scraping - preserve ALL sources (4-6 hours)
-- Phase 3: Conflict Detection (2-3 hours)
-- Phase 4: Conflict Resolution with 7 strategies (2-3 hours)
-- Phase 5: Knowledge Pack Assembly (1-2 hours)
-- Phase 6: Validation & QA (1-2 hours)
-- Phase 7: Documentation (1 hour)
+This section organizes documentation into two categories: **Single Source of Truth (SoT) Documents** which are canonical specifications for critical system components, and **Implementation Guides** which provide workflows and practical examples. Every decision in the knowledge pack system traces back to one of the SoT documents.
 
-**Total Time**: 12-18 hours
+### Single Source of Truth (SoT) Documents 📌
 
-### 2. [schemas.md](sot-schemas.md)
-**JSON Schema Definitions with Source Tracking**
-- Field metadata envelope structure
-- Carrier, State, Product, Compliance schemas
-- Raw data schema for scraping phase
-- Conflict resolution schema
-- ID generation conventions (cuid2-based)
-- Source inheritance rules
+These are authoritative specifications that serve as the definitive reference for their respective domains. Consult these first when questions arise about ID conventions, schema definitions, authority levels, or search methodology.
 
-### 3. [search-queries.md](sot-search-queries.md)
-**200+ Search Queries for Data Gathering**
+1. **[sot-id-conventions.md](sot-id-conventions.md)**
+   **Authoritative cuid2 ID Specification**
+   - cuid2 installation and setup
+   - Prefix conventions for all entity types
+   - ID generation algorithms and uniqueness guarantees
+   - Complete reference for all ID-related decisions
 
-Organized by category:
-- Carrier operating states (20 queries)
-- Auto insurance discounts (35 queries)
-- Home insurance discounts (20 queries)
-- Eligibility requirements (40 queries)
-- State minimum requirements (30 queries)
-- Average pricing data (25 queries)
-- Broker commission (15 queries)
-- State-specific requirements (25+ queries)
-- Compliance rules (15 queries)
-- Industry benchmarking (20 queries)
+2. **[sot-schemas.md](sot-schemas.md)**
+   **Authoritative JSON Schema Definitions**
+   - Field metadata envelope structure
+   - Carrier, State, Product, Compliance schemas
+   - Raw data schema for scraping phase
+   - Conflict resolution schema
+   - Source inheritance rules
 
-### 4. [source-hierarchy.md](sot-source-hierarchy.md)
-**Source Authority Levels & Conflict Resolution**
-- 5-level authority hierarchy (Regulatory → Carrier → Industry → Comparison → Forums)
-- Confidence scoring formula: `(Authority × 0.5) + (Freshness × 0.3) + (Specificity × 0.2)`
-- 7-step conflict resolution decision tree
-- Resolution methods with examples
-- Special cases & edge cases handling
+3. **[sot-source-hierarchy.md](sot-source-hierarchy.md)**
+   **Authoritative Authority Levels & Conflict Resolution**
+   - 5-level authority hierarchy (Regulatory → Carrier → Industry → Comparison → Forums)
+   - Confidence scoring formula: `(Authority × 0.5) + (Freshness × 0.3) + (Specificity × 0.2)`
+   - 7-step conflict resolution decision tree
+   - Resolution methods with examples
 
-### 5. [examples.md](knowledge-pack-examples.md)
-**End-to-End Data Transformation Examples**
-- Example 1: Multi-policy discount (2 sources, simple conflict)
-- Example 2: CA auto minimums (regulatory authority override)
-- Example 3: Source inheritance (discount states)
-- Example 4: Three-way conflict with majority consensus
-- Example 5: Complete carrier file (production format)
-- Complete audit trail lineage examples
+4. **[sot-search-queries.md](sot-search-queries.md)**
+   **Authoritative Search Query Catalog**
+   - 200+ organized search queries
+   - Carrier operating states (20 queries)
+   - Auto insurance discounts (35 queries)
+   - Home insurance discounts (20 queries)
+   - Eligibility requirements (40 queries)
+   - State minimum requirements (30 queries)
+   - Average pricing data (25 queries)
+   - Broker commission (15 queries)
+   - Compliance rules (15 queries)
+   - Industry benchmarking (20 queries)
+
+### Implementation Guides
+
+These documents apply the SoT specifications to specific workflows and provide step-by-step guidance with real-world examples.
+
+5. **[knowledge-pack-methodology.md](knowledge-pack-methodology.md)**
+   **Complete 7-Phase Data Gathering Process**
+   - Phase 1: Enhanced JSON Schema Design (1 hour)
+   - Phase 2: Raw Data Scraping - preserve ALL sources (4-6 hours)
+   - Phase 3: Conflict Detection (2-3 hours)
+   - Phase 4: Conflict Resolution with 7 strategies (2-3 hours)
+   - Phase 5: Knowledge Pack Assembly (1-2 hours)
+   - Phase 6: Validation & QA (1-2 hours)
+   - Phase 7: Documentation (1 hour)
+   - **Total Time**: 12-18 hours
+
+6. **[knowledge-pack-examples.md](knowledge-pack-examples.md)**
+   **End-to-End Data Transformation Examples**
+   - Example 1: Multi-policy discount (2 sources, simple conflict)
+   - Example 2: CA auto minimums (regulatory authority override)
+   - Example 3: Source inheritance (discount states)
+   - Example 4: Three-way conflict with majority consensus
+   - Example 5: Complete carrier file (production format)
+   - Complete audit trail lineage examples
+
+7. **[phase-2-agent-instructions.md](phase-2-agent-instructions.md)**
+   **Autonomous Agent Data Gathering Workflow**
+   - Step-by-step execution guide for AI agents
+   - Page file capture and storage procedures
+   - Raw data entry structure and validation
+   - Progress tracking and git commit workflow
 
 ## Key Concepts
 
@@ -106,17 +125,17 @@ The following documents serve as the canonical sources of truth for critical sys
 
 ### For Implementers
 
-1. **Review** [methodology.md](knowledge-pack-methodology.md) for complete workflow
+1. **Review** [knowledge-pack-methodology.md](knowledge-pack-methodology.md) for complete workflow
 2. **Setup IDs**: See [sot-id-conventions.md](sot-id-conventions.md) for installation and ID generation
-3. **Use** [search-queries.md](sot-search-queries.md) to find data sources
-4. **Apply** [source-hierarchy.md](sot-source-hierarchy.md) when resolving conflicts
-5. **Reference** [schemas.md](sot-schemas.md) for data structure
-6. **Follow** [examples.md](knowledge-pack-examples.md) for implementation patterns
+3. **Use** [sot-search-queries.md](sot-search-queries.md) to find data sources
+4. **Apply** [sot-source-hierarchy.md](sot-source-hierarchy.md) when resolving conflicts
+5. **Reference** [sot-schemas.md](sot-schemas.md) for data structure
+6. **Follow** [knowledge-pack-examples.md](knowledge-pack-examples.md) for implementation patterns
 
 ### For Automated Agents
 
 Search agents should:
-1. Use search queries from [search-queries.md](sot-search-queries.md)
+1. Use search queries from [sot-search-queries.md](sot-search-queries.md)
 2. Capture element references (CSS selectors or XPath) - see [schemas.md#source-object](sot-schemas.md#source-object)
 3. Generate cuid2 IDs for each raw data entry - see [sot-id-conventions.md](sot-id-conventions.md)
 4. Record all findings (even duplicates/conflicts)
@@ -209,20 +228,20 @@ graph TB
 ### If you want to...
 
 **Understand the complete methodology:**
-1. Start with [methodology.md](knowledge-pack-methodology.md) for 7-phase overview
-2. Review [source-hierarchy.md](sot-source-hierarchy.md) for conflict resolution
-3. See [examples.md](knowledge-pack-examples.md) for practical applications
+1. Start with [knowledge-pack-methodology.md](knowledge-pack-methodology.md) for 7-phase overview
+2. Review [sot-source-hierarchy.md](sot-source-hierarchy.md) for conflict resolution
+3. See [knowledge-pack-examples.md](knowledge-pack-examples.md) for practical applications
 
 **Implement Phase 2 data gathering:**
 1. Start with [phase-2-agent-instructions.md](phase-2-agent-instructions.md) for step-by-step workflow
-2. Reference [search-queries.md](sot-search-queries.md) for search terms
-3. Reference [schemas.md](sot-schemas.md) for raw data format
+2. Reference [sot-search-queries.md](sot-search-queries.md) for search terms
+3. Reference [sot-schemas.md](sot-schemas.md) for raw data format
 4. Reference [sot-id-conventions.md](sot-id-conventions.md) for ID generation
 
 **Create production JSON files:**
-1. Review [schemas.md](sot-schemas.md) for data structures
-2. Review [source-hierarchy.md](sot-source-hierarchy.md) for authority levels
-3. Follow [examples.md](knowledge-pack-examples.md) for transformation patterns
+1. Review [sot-schemas.md](sot-schemas.md) for data structures
+2. Review [sot-source-hierarchy.md](sot-source-hierarchy.md) for authority levels
+3. Follow [knowledge-pack-examples.md](knowledge-pack-examples.md) for transformation patterns
 
 **Generate unique IDs:**
 1. See [sot-id-conventions.md](sot-id-conventions.md) for complete specification and setup instructions
@@ -233,7 +252,7 @@ graph TB
 
 | Term | Definition | Learn More |
 |------|------------|------------|
-| **cuid2** | Globally unique 10-character identifier system | [sot-id-conventions.md](sot-id-conventions.md) |
+| **cuid2** | Globally unique identifier system (10-character cuid2 + prefix) | [sot-id-conventions.md](sot-id-conventions.md) |
 | **Field Metadata Envelope** | Data structure wrapping values with source tracking | [schemas.md#field-metadata-envelope](sot-schemas.md#field-metadata-envelope) |
 | **Source Authority Level** | Ranking system (1-5) for source trustworthiness | [source-hierarchy.md#source-authority-levels](sot-source-hierarchy.md#source-authority-levels) |
 | **Conflict Resolution** | Process for choosing between conflicting data | [source-hierarchy.md#conflict-resolution-decision-tree](sot-source-hierarchy.md#conflict-resolution-decision-tree) |

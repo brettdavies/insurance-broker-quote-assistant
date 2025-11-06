@@ -669,5 +669,4 @@ After resolving conflicts:
 - **[knowledge-pack-methodology.md](knowledge-pack-methodology.md)** - Phase 4 conflict resolution workflow applies source authority hierarchy to resolve disagreements
 - **[knowledge-pack-examples.md](knowledge-pack-examples.md)** - Demonstrates real-world use of authority levels in conflict resolution examples
 - **[README.md](README.md)** - Overview document links to source hierarchy as foundational concept for data quality
-- **[CONSOLIDATION-PLAN.md](CONSOLIDATION-PLAN.md)** - References source hierarchy in quality validation and conflict resolution validation tasks
 - **[sot-search-queries.md](sot-search-queries.md)** - Specifies search queries optimized for finding high-authority sources according to this hierarchy

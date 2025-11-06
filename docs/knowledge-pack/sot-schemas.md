@@ -51,8 +51,8 @@ interface FieldWithMetadata<T> {
 ```typescript
 interface Source {
   uri: string              // Full URL
-  pageId?: string          // Required for Phase 2 raw data, optional after cleanup. Unique page ID (page_{cuid2})
-  pageFile?: string        // Required for Phase 2 raw data, optional after cleanup. Path to saved page (_pages/page_{cuid2}.{ext})
+  pageId?: string          // Optional in interface; Phase 2 MUST populate for raw data. Unique page ID (page_{cuid2})
+  pageFile?: string        // Optional in interface; Phase 2 MUST populate for raw data. Path relative to knowledge_pack/raw/ (e.g., "_pages/page_ckm9x7w8k0.html")
   elementRef?: string      // CSS selector or XPath
   lineRef?: number         // Line number (for text files)
   accessedDate: string     // ISO 8601 date-time with timezone (YYYY-MM-DDTHH:mm:ssZ)
@@ -160,8 +160,8 @@ interface Resolution {
         "required": ["uri", "accessedDate"],
         "properties": {
           "uri": {"type": "string", "format": "uri"},
-          "pageId": {"type": "string", "pattern": "^page_[a-z0-9]{10}$", "description": "Required for Phase 2 raw data, optional after cleanup. Unique page ID (page_{cuid2})"},
-          "pageFile": {"type": "string", "description": "Required for Phase 2 raw data, optional after cleanup. Path to saved page (_pages/page_{cuid2}.{ext})"},
+          "pageId": {"type": "string", "pattern": "^page_[a-z0-9]{10}$", "description": "Optional in interface; Phase 2 MUST populate for raw data. Unique page ID (page_{cuid2})"},
+          "pageFile": {"type": "string", "description": "Optional in interface; Phase 2 MUST populate for raw data. Path relative to knowledge_pack/raw/ (e.g., '_pages/page_ckm9x7w8k0.html')"},
           "elementRef": {"type": "string"},
           "lineRef": {"type": "integer"},
           "accessedDate": {"type": "string", "format": "date-time"},
@@ -629,8 +629,8 @@ Captures data during initial scraping phase, before conflict resolution.
       "required": ["uri", "accessedDate"],
       "properties": {
         "uri": {"type": "string", "format": "uri", "description": "Source URL"},
-        "pageId": {"type": "string", "pattern": "^page_[a-z0-9]{10}$", "description": "Required for Phase 2 raw data, optional after cleanup. Unique page ID (page_{cuid2})"},
-        "pageFile": {"type": "string", "description": "Required for Phase 2 raw data, optional after cleanup. Path to saved page (_pages/page_{cuid2}.{ext})"},
+        "pageId": {"type": "string", "pattern": "^page_[a-z0-9]{10}$", "description": "Optional in interface; Phase 2 MUST populate for raw data. Unique page ID (page_{cuid2})"},
+        "pageFile": {"type": "string", "description": "Optional in interface; Phase 2 MUST populate for raw data. Path relative to knowledge_pack/raw/ (e.g., '_pages/page_ckm9x7w8k0.html')"},
         "elementRef": {"type": "string", "description": "CSS selector or XPath to element"},
         "extractedValue": {"type": "string", "description": "Exact text extracted from element"},
         "accessedDate": {"type": "string", "format": "date-time", "description": "ISO 8601 with timezone (YYYY-MM-DDTHH:mm:ssZ)"},
@@ -1096,7 +1096,6 @@ Use these schemas to validate all knowledge pack files before deployment.
 - **[sot-search-queries.md](sot-search-queries.md)** - References schema fields when specifying what data points to extract during searches
 - **[phase-2-agent-instructions.md](phase-2-agent-instructions.md)** - Step 5 applies schemas to extract data points and validate field structure during scraping
 - **[sot-id-conventions.md](sot-id-conventions.md)** - Shows how cuid2-based field IDs and source IDs integrate into schema structures
-- **[CONSOLIDATION-PLAN.md](CONSOLIDATION-PLAN.md)** - References schemas in validation tasks and consolidation procedures
 - **[knowledge-pack-methodology.md](knowledge-pack-methodology.md)** - Documents how schemas are designed in Phase 1 and applied throughout data gathering phases
 - **[knowledge-pack-examples.md](knowledge-pack-examples.md)** - Demonstrates full schema compliance in real-world carrier data transformations
 - **[README.md](README.md)** - Overview links to schemas as core data structure specification

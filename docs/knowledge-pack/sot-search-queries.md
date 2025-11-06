@@ -1027,5 +1027,4 @@ For each data point found:
 - **[sot-source-hierarchy.md](sot-source-hierarchy.md)** - Search queries are optimized to find sources matching the authority hierarchy levels (regulatory > carrier > industry > comparison > forums)
 - **[knowledge-pack-methodology.md](knowledge-pack-methodology.md)** - Phase 2 data gathering uses search queries as primary input to locate and extract data points
 - **[README.md](README.md)** - Overview document links to search queries as the operational guide for data collection
-- **[CONSOLIDATION-PLAN.md](CONSOLIDATION-PLAN.md)** - References search queries in quality validation tasks and Phase 2 execution procedures
 - **[phase-2-agent-instructions.md](phase-2-agent-instructions.md)** - Steps 1-4 execute the search queries defined in this document to locate information sources

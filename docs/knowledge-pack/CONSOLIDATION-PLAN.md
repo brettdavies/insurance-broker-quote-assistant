@@ -2,9 +2,9 @@
 
 **Date Created**: 2025-11-05
 **Date Completed**: 2025-11-05
-**Status**: ✅ ALL PHASES COMPLETE (Phases 0-5)
-**Actual Time**: ~2.5 hours (Phases 0-4: ~2 hours, Phase 5: ~30 minutes)
-**Estimated Total Time**: 6.5-9.5 hours
+**Status**: ✅ ALL PHASES COMPLETE (Phases 0-6)
+**Actual Time**: ~3 hours (Phases 0-4: ~2 hours, Phase 5: ~30 minutes, Phase 6: ~30 minutes)
+**Estimated Total Time**: 7.5-11 hours
 
 ---
 
@@ -1312,6 +1312,481 @@ git diff docs/knowledge-pack/sot-schemas.md
 - ✅ All `accessedDate` fields use full ISO 8601 timestamp format
 - ✅ Search tracker schema documented in sot-schemas.md
 - ✅ All examples validate against documented schemas
+
+---
+
+## Phase 6: Post-Consolidation Review Corrections
+
+### Objective
+Address issues identified in comprehensive post-consolidation review: remove circular references, fix display name mismatches, correct cross-reference anchors, clarify path formats, update descriptions, resolve TypeScript confusion, reduce code duplication, and add visual distinction for SoT files.
+
+---
+
+#### Task 6.1: Remove CONSOLIDATION-PLAN.md from Referenced By Sections ✅ COMPLETED
+**Objective**: Remove circular references to CONSOLIDATION-PLAN.md from all 4 SoT files
+
+**Status Note**: Removed 4 circular references from SoT files' Referenced By sections. CONSOLIDATION-PLAN.md is a meta-document for tracking work, not active consumer documentation.
+
+**Issue**: All SoT files list CONSOLIDATION-PLAN.md in their "Referenced By" sections, creating a circular reference. CONSOLIDATION-PLAN is a meta-document for tracking work progress, not part of the active documentation that consumers would use.
+
+**Discovery Steps**:
+```bash
+# Search for CONSOLIDATION-PLAN.md references in all SoT files
+rg -n "CONSOLIDATION-PLAN.md" docs/knowledge-pack/sot-*.md
+
+# Count occurrences per file
+rg -c "CONSOLIDATION-PLAN.md" docs/knowledge-pack/sot-*.md
+
+# Show context around references (should be in Referenced By sections)
+rg -B 3 -A 1 "CONSOLIDATION-PLAN.md" docs/knowledge-pack/sot-*.md
+```
+
+**Execution Pattern**:
+```bash
+# NOTE: Manual editing required to remove specific bullet points from Referenced By sections
+
+# Manual steps:
+# 1. Open docs/knowledge-pack/sot-id-conventions.md
+#    - Locate "## Referenced By" section (around line 672)
+#    - Remove the bullet point: "- CONSOLIDATION-PLAN.md - ..."
+# 2. Open docs/knowledge-pack/sot-schemas.md
+#    - Locate "## Referenced By" section (around line 1099)
+#    - Remove the bullet point: "- CONSOLIDATION-PLAN.md - ..."
+# 3. Open docs/knowledge-pack/sot-source-hierarchy.md
+#    - Locate "## Referenced By" section (around line 672)
+#    - Remove the bullet point: "- CONSOLIDATION-PLAN.md - ..."
+# 4. Open docs/knowledge-pack/sot-search-queries.md
+#    - Locate "## Referenced By" section (around line 1030)
+#    - Remove the bullet point: "- CONSOLIDATION-PLAN.md - ..."
+
+# After manual edits:
+git diff docs/knowledge-pack/sot-*.md | rg -e 'CONSOLIDATION-PLAN'
+```
+
+**Validation**:
+```bash
+# Verify no CONSOLIDATION-PLAN.md references remain in SoT files
+rg "CONSOLIDATION-PLAN.md" docs/knowledge-pack/sot-*.md
+# Should return 0 matches
+
+# Verify Referenced By sections still exist and have other references
+for file in docs/knowledge-pack/sot-*.md; do
+  echo "Checking $file:"
+  rg -A 5 "## Referenced By" "$file" || echo "  ⚠ Missing section"
+done
+
+# Show changes
+git diff docs/knowledge-pack/sot-*.md
+```
+
+---
+
+#### Task 6.2: Fix README.md Display Names ✅ COMPLETED
+**Objective**: Update file list display names to match actual filenames
+
+**Status Note**: Updated 6 display name mismatches in README.md file list. All links now show full filenames (e.g., [sot-schemas.md] instead of [schemas.md]).
+
+**Issue**: README.md shows shortened names in display text (e.g., "schemas.md") but links to full names (e.g., "sot-schemas.md"). This creates confusion about actual filenames and inconsistency in the documentation.
+
+**Discovery Steps**:
+```bash
+# Find the numbered file list in README.md
+rg -n "^[0-9]+\. \[" docs/knowledge-pack/README.md | head -n 20
+
+# Check specific mismatches
+rg -n "\[schemas\.md\]" docs/knowledge-pack/README.md
+rg -n "\[search-queries\.md\]" docs/knowledge-pack/README.md
+rg -n "\[source-hierarchy\.md\]" docs/knowledge-pack/README.md
+rg -n "\[examples\.md\]" docs/knowledge-pack/README.md
+rg -n "\[methodology\.md\]" docs/knowledge-pack/README.md
+rg -n "\[phase-2\.md\]" docs/knowledge-pack/README.md
+
+# Show context (around lines 11-62)
+sed -n '11,62p' docs/knowledge-pack/README.md | rg "\[.*\].*\.md\)"
+```
+
+**Execution Pattern**:
+```bash
+# Replace shortened display names with full filenames
+# Pattern: [display-text](actual-filename.md) where display-text != actual-filename
+
+sed -i '' \
+  -e 's/\[schemas\.md\](sot-schemas.md)/[sot-schemas.md](sot-schemas.md)/g' \
+  -e 's/\[search-queries\.md\](sot-search-queries.md)/[sot-search-queries.md](sot-search-queries.md)/g' \
+  -e 's/\[source-hierarchy\.md\](sot-source-hierarchy.md)/[sot-source-hierarchy.md](sot-source-hierarchy.md)/g' \
+  -e 's/\[examples\.md\](knowledge-pack-examples.md)/[knowledge-pack-examples.md](knowledge-pack-examples.md)/g' \
+  -e 's/\[methodology\.md\](knowledge-pack-methodology.md)/[knowledge-pack-methodology.md](knowledge-pack-methodology.md)/g' \
+  -e 's/\[phase-2\.md\](phase-2-agent-instructions.md)/[phase-2-agent-instructions.md](phase-2-agent-instructions.md)/g' \
+  docs/knowledge-pack/README.md
+```
+
+**Validation**:
+```bash
+# Verify no mismatched display names remain
+rg '\[schemas\.md\]\(sot-schemas\.md\)' docs/knowledge-pack/README.md  # Should return 0
+rg '\[search-queries\.md\]\(sot-search-queries\.md\)' docs/knowledge-pack/README.md  # Should return 0
+rg '\[examples\.md\]\(knowledge-pack-examples\.md\)' docs/knowledge-pack/README.md  # Should return 0
+
+# Verify display text matches target filename
+rg '\[([^\]]+)\]\(([^\)]+)\)' docs/knowledge-pack/README.md | rg -e 'sot-|knowledge-pack-|phase-2' | head -n 20
+# Each link should have display text matching target (except for descriptive links)
+
+# Show changes
+git diff docs/knowledge-pack/README.md | rg -e '^\+.*\[.*\.md\]'
+```
+
+---
+
+#### Task 6.3: Fix Cross-Reference Anchor Mismatches ✅ COMPLETED
+**Objective**: Correct anchor links to use proper markdown heading format
+
+**Status Note**: Fixed 2 anchor links in knowledge-pack-methodology.md to include section numbers: #carrier-schema → #1-carrier-schema, #resolution-object → #4-resolution-object.
+
+**Issue**: References like `sot-schemas.md#carrier-schema` don't match actual heading `## 1. Carrier Schema`. Markdown anchors are auto-generated from heading text, so links must include numbering.
+
+**Discovery Steps**:
+```bash
+# Find all cross-file anchor references in methodology.md
+rg -n 'sot-schemas\.md#' docs/knowledge-pack/knowledge-pack-methodology.md
+
+# Show context around these references (around lines 96, 598)
+rg -B 2 -A 2 'sot-schemas\.md#' docs/knowledge-pack/knowledge-pack-methodology.md
+
+# Check actual heading format in sot-schemas.md
+rg -n "^## [0-9]\. Carrier Schema" docs/knowledge-pack/sot-schemas.md
+rg -n "^## [0-9]\. Resolution Object" docs/knowledge-pack/sot-schemas.md
+
+# List all anchor references that may need updating
+rg '#[a-z-]+' docs/knowledge-pack/knowledge-pack-methodology.md | rg 'sot-schemas'
+```
+
+**Execution Pattern**:
+```bash
+# Update anchor links to match numbered headings
+# Pattern: #heading-name -> #number-heading-name
+
+sed -i '' \
+  -e 's/sot-schemas\.md#carrier-schema/sot-schemas.md#1-carrier-schema/g' \
+  -e 's/sot-schemas\.md#resolution-object/sot-schemas.md#3-resolution-object/g' \
+  docs/knowledge-pack/knowledge-pack-methodology.md
+
+# If there are other mismatched anchors, add them here
+# Example: -e 's/sot-schemas\.md#discount-schema/sot-schemas.md#2-discount-schema/g' \
+```
+
+**Validation**:
+```bash
+# Verify old anchor formats are gone
+rg 'sot-schemas\.md#carrier-schema[^-]' docs/knowledge-pack/knowledge-pack-methodology.md  # Should return 0
+rg 'sot-schemas\.md#resolution-object[^-]' docs/knowledge-pack/knowledge-pack-methodology.md  # Should return 0
+
+# Verify new anchor formats exist
+rg 'sot-schemas\.md#1-carrier-schema' docs/knowledge-pack/knowledge-pack-methodology.md
+rg 'sot-schemas\.md#3-resolution-object' docs/knowledge-pack/knowledge-pack-methodology.md
+
+# Cross-verify anchors exist in target file
+rg -n "^## 1\. Carrier Schema" docs/knowledge-pack/sot-schemas.md
+rg -n "^## 3\. Resolution Object" docs/knowledge-pack/sot-schemas.md
+
+# Show changes
+git diff docs/knowledge-pack/knowledge-pack-methodology.md | rg '#'
+```
+
+---
+
+#### Task 6.4: Clarify pageFile Path Format ✅ COMPLETED
+**Objective**: Document consistent pageFile path representation
+
+**Status Note**: Updated pageFile field comments in 3 locations (TypeScript interface + 2 JSON schemas) to clarify format: "Path relative to knowledge_pack/raw/ (e.g., '_pages/page_ckm9x7w8k0.html')".
+
+**Issue**: Two different path formats appear in examples: `"_pages/page_ckm9x7w8k0.html"` (relative to knowledge_pack/raw/) vs `"page_ckm9x7w8k0.html"` (just filename). Need to clarify which is canonical.
+
+**Discovery Steps**:
+```bash
+# Find all pageFile field examples
+rg -n '"pageFile":' docs/knowledge-pack/*.md
+
+# Compare formats in sot-schemas.md vs phase-2-agent-instructions.md
+rg -B 2 -A 2 '"pageFile":' docs/knowledge-pack/sot-schemas.md | head -n 20
+rg -B 2 -A 2 '"pageFile":' docs/knowledge-pack/phase-2-agent-instructions.md | head -n 20
+
+# Check Source interface definition
+rg -A 2 'pageFile\?:' docs/knowledge-pack/sot-schemas.md
+```
+
+**Execution Pattern**:
+```bash
+# NOTE: Manual editing required to add clarifying comment to Source interface
+
+# Manual steps:
+# 1. Open docs/knowledge-pack/sot-schemas.md
+# 2. Locate Source interface (around line 54-75)
+# 3. Find pageFile field definition line (around line 75)
+# 4. Update field comment to:
+#    pageFile?: string;  // Path relative to knowledge_pack/raw/ (e.g., "_pages/page_ckm9x7w8k0.html")
+# 5. Verify examples use consistent format
+
+# After manual edit:
+git diff docs/knowledge-pack/sot-schemas.md | rg 'pageFile'
+```
+
+**Validation**:
+```bash
+# Verify clarifying comment exists
+rg -A 1 'pageFile\?:' docs/knowledge-pack/sot-schemas.md | rg 'relative to knowledge_pack/raw'
+
+# Check that examples use consistent format
+rg '"pageFile": "[^"]*"' docs/knowledge-pack/*.md
+
+# Verify format documentation
+rg -B 5 -A 5 'pageFile' docs/knowledge-pack/sot-schemas.md | rg -i 'path\|relative'
+
+git diff docs/knowledge-pack/sot-schemas.md
+```
+
+---
+
+#### Task 6.5: Update cuid2 Description in README ✅ COMPLETED
+**Objective**: Clarify cuid2 description to avoid confusion
+
+**Status Note**: Updated cuid2 description from "10-character identifier" to "identifier system (10-character cuid2 + prefix)" to reflect full ID structure (e.g., carr_ckm9x7w8k0).
+
+**Issue**: README.md describes cuid2 as "Globally unique 10-character identifier system" which is misleading. The full ID format is `{prefix}_{cuid2}` (e.g., `car_ckm9x7w8k0`), making it 15+ characters total.
+
+**Discovery Steps**:
+```bash
+# Find cuid2 definition in README Key Concepts table
+rg -n "Globally unique.*10-character" docs/knowledge-pack/README.md
+
+# Show context around line 236
+sed -n '230,245p' docs/knowledge-pack/README.md
+
+# Check for other references to "10-character"
+rg -n '10-character' docs/knowledge-pack/README.md
+```
+
+**Execution Pattern**:
+```bash
+# Update cuid2 description to clarify full ID structure
+sed -i '' \
+  -e 's/Globally unique 10-character identifier system/Globally unique identifier system (10-character cuid2 + prefix)/g' \
+  docs/knowledge-pack/README.md
+```
+
+**Validation**:
+```bash
+# Verify old description is gone
+rg "Globally unique 10-character identifier system" docs/knowledge-pack/README.md  # Should return 0
+
+# Verify new description exists
+rg "Globally unique identifier system.*10-character cuid2.*prefix" docs/knowledge-pack/README.md
+
+# Show changes
+git diff docs/knowledge-pack/README.md | rg 'cuid2'
+```
+
+---
+
+#### Task 6.6: Resolve TypeScript Optional Field Confusion ✅ COMPLETED
+**Objective**: Clarify pageId/pageFile lifecycle in schema
+
+**Status Note**: Updated field comments in 3 locations to clarify: "Optional in interface; Phase 2 MUST populate for raw data". Resolves confusion between TypeScript optionality (?) and Phase 2 requirements.
+
+**Issue**: Source interface marks `pageId?` and `pageFile?` as optional (with `?`) but includes comments saying "Required for Phase 2". This creates confusion about when these fields are truly required.
+
+**Discovery Steps**:
+```bash
+# Check Source interface pageId/pageFile definitions
+rg -A 2 'pageId\?:' docs/knowledge-pack/sot-schemas.md
+rg -A 2 'pageFile\?:' docs/knowledge-pack/sot-schemas.md
+
+# Show full Source interface (around lines 54-75)
+sed -n '50,80p' docs/knowledge-pack/sot-schemas.md
+
+# Check if there's already lifecycle documentation
+rg -n "lifecycle\|Lifecycle" docs/knowledge-pack/sot-schemas.md
+```
+
+**Execution Pattern**:
+```bash
+# NOTE: Manual editing required to enhance field comments
+
+# Manual steps (Option 1 - Enhance comments):
+# 1. Open docs/knowledge-pack/sot-schemas.md
+# 2. Locate Source interface pageId and pageFile fields
+# 3. Update comments to:
+#    pageId?: string;     // Optional in interface; Phase 2 MUST populate for raw data
+#    pageFile?: string;   // Optional in interface; Phase 2 MUST populate for raw data
+#
+# Option 2 (Preferred - Split interfaces):
+# 1. Keep Source interface as-is (optional fields)
+# 2. Add new "RawDataSource" interface that extends Source:
+#    interface RawDataSource extends Source {
+#      pageId: string;    // Required for raw data (removes ? from parent)
+#      pageFile: string;  // Required for raw data (removes ? from parent)
+#    }
+# 3. Document when to use each interface
+
+# After manual edit:
+git diff docs/knowledge-pack/sot-schemas.md | rg 'pageId\|pageFile'
+```
+
+**Validation**:
+```bash
+# Verify clarifying comments exist
+rg -A 1 'pageId\?:' docs/knowledge-pack/sot-schemas.md | rg 'Phase 2\|raw data'
+rg -A 1 'pageFile\?:' docs/knowledge-pack/sot-schemas.md | rg 'Phase 2\|raw data'
+
+# OR verify RawDataSource interface exists (if Option 2 chosen)
+rg -A 5 "interface RawDataSource" docs/knowledge-pack/sot-schemas.md
+
+# Check that lifecycle is clearly documented
+rg -B 2 -A 10 'pageId\|pageFile' docs/knowledge-pack/sot-schemas.md | rg -i 'optional\|required\|phase'
+
+git diff docs/knowledge-pack/sot-schemas.md
+```
+
+---
+
+#### Task 6.7: Reduce ID Generation Code Duplication ✅ COMPLETED
+**Objective**: Consolidate ID generation examples
+
+**Status Note**: Removed 42 lines of duplicate ID generation code from phase-2-agent-instructions.md. Added 5 cross-references to sot-id-conventions.md. Net reduction: 32 lines (5.5% of file).
+
+**Issue**: Similar TypeScript code for ID generation appears in both sot-id-conventions.md and phase-2-agent-instructions.md. This duplication creates maintenance burden and potential inconsistency.
+
+**Discovery Steps**:
+```bash
+# Find ID generation code blocks in both files
+rg -A 10 '@paralleldrive/cuid2' docs/knowledge-pack/sot-id-conventions.md | head -n 30
+rg -A 10 '@paralleldrive/cuid2' docs/knowledge-pack/phase-2-agent-instructions.md | head -n 30
+
+# Compare import/usage examples
+rg -B 2 -A 5 'import.*createId.*from' docs/knowledge-pack/sot-id-conventions.md
+rg -B 2 -A 5 'import.*createId.*from' docs/knowledge-pack/phase-2-agent-instructions.md
+
+# Check for installation instructions duplication
+rg -n 'npm install.*cuid2\|bun add.*cuid2' docs/knowledge-pack/*.md
+```
+
+**Execution Pattern**:
+```bash
+# NOTE: Manual editing required to reduce duplication while preserving usability
+
+# Manual steps:
+# 1. Open docs/knowledge-pack/phase-2-agent-instructions.md
+# 2. Locate ID generation section
+# 3. Replace detailed code examples with:
+#    - Brief reference: "For complete ID generation specifications, see sot-id-conventions.md"
+#    - Keep only minimal usage example (1-2 lines showing prefix pattern)
+#    - Remove installation instructions (only in sot-id-conventions.md)
+#    - Remove detailed usage examples (only in sot-id-conventions.md)
+# 4. Add cross-reference link at the beginning of ID-related section
+
+# After manual edit:
+git diff docs/knowledge-pack/phase-2-agent-instructions.md | rg -e 'cuid2|createId|sot-id-conventions'
+```
+
+**Validation**:
+```bash
+# Verify phase-2 references sot-id-conventions
+rg -n 'sot-id-conventions\.md' docs/knowledge-pack/phase-2-agent-instructions.md | rg -i 'id\|cuid2'
+
+# Verify minimal example remains in phase-2
+rg -c 'createId\|@paralleldrive' docs/knowledge-pack/phase-2-agent-instructions.md
+# Should be minimal (1-2 occurrences max)
+
+# Verify complete examples still in sot-id-conventions
+rg -c 'createId\|@paralleldrive' docs/knowledge-pack/sot-id-conventions.md
+# Should have more occurrences (complete reference)
+
+# Check line reduction in phase-2
+git diff --stat docs/knowledge-pack/phase-2-agent-instructions.md
+
+git diff docs/knowledge-pack/phase-2-agent-instructions.md
+```
+
+---
+
+#### Task 6.8: Add SoT Indicator to README File List ✅ COMPLETED
+**Objective**: Clearly mark which files are SoT vs implementation guides
+
+**Status Note**: Added section headers "Single Source of Truth (SoT) Documents 📌" and "Implementation Guides" to README. Added intro paragraph explaining distinction. Files 1-4 grouped as SoT, files 5-7 as implementation.
+
+**Issue**: README file list (lines 11-62) doesn't indicate SoT status until later in the document. This makes it harder for readers to quickly identify authoritative sources.
+
+**Discovery Steps**:
+```bash
+# Review README file list structure
+sed -n '11,62p' docs/knowledge-pack/README.md
+
+# Check if section headers exist
+rg -n "^### .*SoT\|^### .*Implementation" docs/knowledge-pack/README.md
+
+# Find where SoT concept is first explained
+rg -n "Single Source of Truth" docs/knowledge-pack/README.md | head -n 5
+```
+
+**Execution Pattern**:
+```bash
+# NOTE: Manual editing required to add section headers and grouping
+
+# Manual steps:
+# 1. Open docs/knowledge-pack/README.md
+# 2. Locate numbered file list (around lines 11-62)
+# 3. Add section headers with emoji:
+#
+#    ### Single Source of Truth (SoT) Documents 📌
+#
+#    1. [sot-id-conventions.md](sot-id-conventions.md) - ...
+#    2. [sot-schemas.md](sot-schemas.md) - ...
+#    3. [sot-source-hierarchy.md](sot-source-hierarchy.md) - ...
+#    4. [sot-search-queries.md](sot-search-queries.md) - ...
+#
+#    ### Implementation Guides
+#
+#    5. [knowledge-pack-examples.md](knowledge-pack-examples.md) - ...
+#    6. [knowledge-pack-methodology.md](knowledge-pack-methodology.md) - ...
+#    7. [phase-2-agent-instructions.md](phase-2-agent-instructions.md) - ...
+#
+# 4. Adjust numbering if needed (or remove numbers and use bullets)
+# 5. Add brief explanation paragraph before sections
+
+# After manual edit:
+git diff docs/knowledge-pack/README.md | rg -e '###.*SoT|###.*Implementation|📌'
+```
+
+**Validation**:
+```bash
+# Verify section headers exist
+rg -n "### Single Source of Truth.*SoT.*Documents" docs/knowledge-pack/README.md
+rg -n "### Implementation Guides" docs/knowledge-pack/README.md
+
+# Verify 📌 emoji is present
+rg -n "📌" docs/knowledge-pack/README.md
+
+# Verify SoT files are grouped together
+rg -A 10 "### Single Source of Truth" docs/knowledge-pack/README.md | rg 'sot-.*\.md'
+
+# Verify implementation files are grouped together
+rg -A 10 "### Implementation Guides" docs/knowledge-pack/README.md | rg 'knowledge-pack\|phase-2'
+
+git diff docs/knowledge-pack/README.md
+```
+
+---
+
+### Phase 6 Success Criteria
+- ✅ Zero references to CONSOLIDATION-PLAN.md in SoT "Referenced By" sections
+- ✅ All README.md file display names match actual filenames
+- ✅ All cross-reference anchor links resolve correctly
+- ✅ pageFile path format clearly documented
+- ✅ cuid2 description accurately represents full ID structure
+- ✅ TypeScript interface lifecycle clarified (pageId/pageFile requirements)
+- ✅ ID generation examples consolidated (phase-2 references sot-id-conventions)
+- ✅ SoT files visually distinguished in README (section headers + 📌 emoji)
+
+**Estimated Time**: 1-1.5 hours
 
 ---
 

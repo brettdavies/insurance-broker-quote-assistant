@@ -320,7 +320,7 @@ function calculateSeverity(values, dataPoint) {
 
 **See Also:**
 - 📖 [Conflict Detection Examples](knowledge-pack-examples.md#example-2-california-auto-minimums) - Real conflict scenarios
-- 🔗 [Resolution Schema](sot-schemas.md#resolution-object) - Data structure for conflicts
+- 🔗 [Resolution Schema](sot-schemas.md#4-resolution-object) - Data structure for conflicts
 
 ---
 
@@ -594,7 +594,7 @@ For production files, compress source references:
 **Deliverable**: 10 production JSON files ready for RAG consumption
 
 **See Also:**
-- 📖 [Production Schemas](sot-schemas.md#carrier-schema) - Complete schema specifications
+- 📖 [Production Schemas](sot-schemas.md#1-carrier-schema) - Complete schema specifications
 - 📊 [Complete Carrier Example](knowledge-pack-examples.md#example-5-complete-carrier-file-production-format) - Production format sample
 
 ---
