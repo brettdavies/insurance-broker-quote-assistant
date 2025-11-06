@@ -136,7 +136,7 @@ The following documents serve as the canonical sources of truth for critical sys
 
 Search agents should:
 1. Use search queries from [sot-search-queries.md](sot-search-queries.md)
-2. Capture element references (CSS selectors or XPath) - see [schemas.md#source-object](sot-schemas.md#source-object)
+2. Capture element references (CSS selectors or XPath) - see [sot-schemas.md#source-object](sot-schemas.md#source-object)
 3. Generate cuid2 IDs for each raw data entry - see [sot-id-conventions.md](sot-id-conventions.md)
 4. Record all findings (even duplicates/conflicts)
 5. Save to `knowledge_pack/raw/` directory
@@ -173,12 +173,12 @@ The following diagram shows the relationships between documentation files:
 ```mermaid
 graph TB
     README[README.md<br/>Central Index]
-    METHOD[methodology.md<br/>7-Phase Process]
-    SCHEMAS[schemas.md<br/>JSON Schemas]
+    METHOD[knowledge-pack-methodology.md<br/>7-Phase Process]
+    SCHEMAS[sot-schemas.md<br/>JSON Schemas]
     IDCONV[sot-id-conventions.md<br/>cuid2 IDs]
-    HIER[source-hierarchy.md<br/>Authority Levels]
-    EXAMPLES[examples.md<br/>Complete Examples]
-    QUERIES[search-queries.md<br/>200+ Queries]
+    HIER[sot-source-hierarchy.md<br/>Authority Levels]
+    EXAMPLES[knowledge-pack-examples.md<br/>Complete Examples]
+    QUERIES[sot-search-queries.md<br/>200+ Queries]
     PHASE2[phase-2-agent-instructions.md<br/>Agent Workflow]
 
     README -->|References| METHOD
@@ -216,8 +216,8 @@ graph TB
 
 **Legend:**
 - 🔵 **Blue** (README.md): Central index and quick-start guide
-- 🟡 **Yellow** (methodology.md): Complete 7-phase workflow specification
-- 🟢 **Green** (schemas.md): Canonical JSON schema definitions (SoT for data structures)
+- 🟡 **Yellow** (knowledge-pack-methodology.md): Complete 7-phase workflow specification
+- 🟢 **Green** (sot-schemas.md): Canonical JSON schema definitions (SoT for data structures)
 - 🔴 **Pink** (sot-id-conventions.md): Canonical cuid2 ID specification (SoT for identifiers)
 - 🟣 **Purple** (phase-2-agent-instructions.md): Autonomous agent operational spec
 
@@ -253,11 +253,11 @@ graph TB
 | Term | Definition | Learn More |
 |------|------------|------------|
 | **cuid2** | Globally unique identifier system (10-character cuid2 + prefix) | [sot-id-conventions.md](sot-id-conventions.md) |
-| **Field Metadata Envelope** | Data structure wrapping values with source tracking | [schemas.md#field-metadata-envelope](sot-schemas.md#field-metadata-envelope) |
-| **Source Authority Level** | Ranking system (1-5) for source trustworthiness | [source-hierarchy.md#source-authority-levels](sot-source-hierarchy.md#source-authority-levels) |
-| **Conflict Resolution** | Process for choosing between conflicting data | [source-hierarchy.md#conflict-resolution-decision-tree](sot-source-hierarchy.md#conflict-resolution-decision-tree) |
-| **Raw Data Entry** | Unprocessed data captured during scraping | [schemas.md#raw-data-schema](sot-schemas.md#raw-data-schema) |
-| **Inheritance** | Child data points borrowing parent sources | [schemas.md#source-inheritance-rules](sot-schemas.md#source-inheritance-rules) |
+| **Field Metadata Envelope** | Data structure wrapping values with source tracking | [sot-schemas.md#field-metadata-envelope](sot-schemas.md#field-metadata-envelope) |
+| **Source Authority Level** | Ranking system (1-5) for source trustworthiness | [sot-source-hierarchy.md#source-authority-levels](sot-source-hierarchy.md#source-authority-levels) |
+| **Conflict Resolution** | Process for choosing between conflicting data | [sot-source-hierarchy.md#conflict-resolution-decision-tree](sot-source-hierarchy.md#conflict-resolution-decision-tree) |
+| **Raw Data Entry** | Unprocessed data captured during scraping | [sot-schemas.md#raw-data-schema](sot-schemas.md#raw-data-schema) |
+| **Inheritance** | Child data points borrowing parent sources | [sot-schemas.md#source-inheritance-rules](sot-schemas.md#source-inheritance-rules) |
 | **Page File** | Saved HTML/PDF content with unique cuid2 ID | [phase-2-agent-instructions.md#page-files](phase-2-agent-instructions.md#page-files) |
 
 **Note:** This is a quick reference only. Follow links for complete specifications.

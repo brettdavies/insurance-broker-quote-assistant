@@ -52,7 +52,7 @@ When a child data point has no direct sources, it inherits from its parent:
 ```json
 {
   "carrier": {
-    "id": "carrier-geico-001",
+    "id": "carr_jiia4ewjg2",
     "value": "GEICO",
     "sources": [{"uri": "https://www.geico.com/", "...": "..."}]
   },
@@ -60,10 +60,10 @@ When a child data point has no direct sources, it inherits from its parent:
     {
       "id": "disc_cm5e9f1o3t",
       "states": {
-        "id": "field-states-001",
+        "id": "fld_p1ejx248sn",
         "value": ["CA", "TX", "FL", "NY", "IL"],
         "sources": [],
-        "inheritedFrom": "carrier-geico-001",
+        "inheritedFrom": "carr_jiia4ewjg2",
         "note": "Inherits from carrier operating states since no discount-specific state restrictions found"
       }
     }
@@ -116,7 +116,7 @@ For each source URL:
 2. **Identify data elements** using CSS selectors or XPath
 3. **Extract raw values** exactly as displayed
 4. **Record element reference** (precise location on page)
-5. **Generate UUID** for this raw data entry
+5. **Generate cuid2 ID** for this raw data entry
 6. **Capture metadata** (access date, confidence level)
 7. **Save to raw file** (organized by category)
 
@@ -478,7 +478,7 @@ Create `knowledge_pack/resolutions.json`:
     "conflictsResolved": 3
   },
   "carrier": {
-    "_id": "carrier-geico-001",
+    "_id": "carr_jiia4ewjg2",
     "_sources": [
       {
         "uri": "https://www.geico.com/",
@@ -611,7 +611,7 @@ Create `scripts/validate-kb.ts`:
 // Validation Rules
 const validationChecks = [
   {
-    name: 'UUID Uniqueness',
+    name: 'ID Uniqueness',
     check: () => allIdsAreUnique(),
     critical: true
   },
@@ -711,9 +711,9 @@ const validationChecks = [
   },
   "details": [
     {
-      "check": "UUID Uniqueness",
+      "check": "ID Uniqueness",
       "status": "PASS",
-      "message": "All 670 UUIDs are unique"
+      "message": "All 670 IDs are unique"
     },
     {
       "check": "Every field has source OR inheritedFrom",
@@ -953,7 +953,7 @@ scripts/
 ├── 03-scrape-industry.ts       # Scrape industry/comparison sites
 ├── 04-detect-conflicts.ts      # Find conflicts in raw data
 ├── 05-resolve-conflicts.ts     # Interactive conflict resolution
-├── 06-generate-uuids.ts        # Assign UUIDs to all data points
+├── 06-generate-ids.ts          # Assign cuid2 IDs to all data points
 ├── 07-build-audit-trail.ts     # Create complete lineage
 ├── 08-assemble-kb.ts           # Transform clean → production
 ├── 09-validate-kb.ts           # Run validation checks
@@ -965,7 +965,7 @@ scripts/
 scripts/utils/
 ├── source-tracker.ts           # Track sources with element refs
 ├── conflict-detector.ts        # Detect value conflicts
-├── uuid-generator.ts           # Generate consistent UUIDs
+├── id-generator.ts             # Generate consistent cuid2 IDs
 ├── schema-validator.ts         # Validate against schemas
 ├── citation-formatter.ts       # Format citations consistently
 └── quality-scorer.ts           # Calculate confidence scores

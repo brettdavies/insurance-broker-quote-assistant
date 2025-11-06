@@ -1790,6 +1790,269 @@ git diff docs/knowledge-pack/README.md
 
 ---
 
+## Phase 7: Post-Deep-Review Corrections
+
+### Objective
+Address issues identified in comprehensive deep holistic review (2025-11-05): fix README diagram references, replace old ID formats in methodology examples, standardize UUID/cuid2 terminology, fix legend naming, and strengthen ID convention references.
+
+---
+
+#### Task 7.1: Fix README.md Mermaid Diagram Filenames ✅ COMPLETED
+**Objective**: Update mermaid diagram node labels to use full `sot-` prefixed filenames
+
+**Issue**: Architecture diagram in README.md (lines 176-179) references files without the `sot-` prefix, creating confusion about actual file structure.
+
+**Discovery Steps**:
+```bash
+# Find the mermaid diagram section
+rg -n "```mermaid" docs/knowledge-pack/README.md
+
+# Show the diagram content
+sed -n '176,205p' docs/knowledge-pack/README.md
+
+# Verify which nodes need updating
+rg -n "HIER\[|SCHEMAS\[|QUERIES\[" docs/knowledge-pack/README.md
+```
+
+**Execution**:
+```bash
+# NOTE: Manual editing required to update mermaid diagram nodes
+
+# Manual steps:
+# 1. Open docs/knowledge-pack/README.md
+# 2. Locate mermaid diagram (around lines 176-205)
+# 3. Update node labels:
+#    - HIER[source-hierarchy.md] → HIER[sot-source-hierarchy.md]
+#    - SCHEMAS[schemas.md] → SCHEMAS[sot-schemas.md]
+#    - QUERIES[search-queries.md] → QUERIES[sot-search-queries.md]
+# 4. Keep node IDs unchanged (HIER, SCHEMAS, QUERIES) - only change display text
+# 5. Verify diagram syntax remains valid
+
+# After manual edit:
+git diff docs/knowledge-pack/README.md | rg -e 'mermaid|HIER|SCHEMAS|QUERIES'
+```
+
+**Validation**:
+```bash
+# Verify old filenames removed from diagram
+rg "source-hierarchy\.md\]|schemas\.md\]|search-queries\.md\]" docs/knowledge-pack/README.md
+# Should return 0 matches in mermaid section
+
+# Verify new filenames present
+rg "sot-source-hierarchy\.md\]|sot-schemas\.md\]|sot-search-queries\.md\]" docs/knowledge-pack/README.md
+
+# Show changes
+git diff docs/knowledge-pack/README.md
+```
+
+---
+
+#### Task 7.2: Replace Old ID Formats in Methodology Examples ✅ COMPLETED
+**Objective**: Replace all sequential ID examples with proper cuid2 format in knowledge-pack-methodology.md
+
+**Issue**: Methodology document contains examples using old sequential ID format (e.g., "field-states-001", "minimums-CA-auto-001") which contradicts sot-id-conventions.md SoT specification.
+
+**Discovery Steps**:
+```bash
+# Find all sequential ID patterns in methodology.md
+rg -n '"id": "[a-z]+-[a-z]+-[0-9]+"' docs/knowledge-pack/knowledge-pack-methodology.md
+rg -n '"_id": "[a-z]+-[A-Z]+-[a-z]+-[0-9]+"' docs/knowledge-pack/knowledge-pack-methodology.md
+
+# List all unique old ID patterns
+rg -o '"_?id": "[a-z]+-[^"]*-[0-9]+"' docs/knowledge-pack/knowledge-pack-methodology.md | sort | uniq
+
+# Show context around these IDs
+rg -B 2 -A 2 '"id": "field-states-001"' docs/knowledge-pack/knowledge-pack-methodology.md
+rg -B 2 -A 2 '"_id": "minimums-CA-auto-001"' docs/knowledge-pack/knowledge-pack-methodology.md
+```
+
+**Execution**:
+```bash
+# NOTE: Manual editing required - each old ID needs unique cuid2 replacement
+
+# Generate replacement cuid2s (example using Node.js):
+# npx @paralleldrive/cuid2@latest (run multiple times to generate unique IDs)
+# OR: bun run -e "import {createId} from '@paralleldrive/cuid2'; console.log(createId())"
+
+# Example replacements (use actual generated cuid2s):
+# "field-states-001" -> "fld_ckm9x7whp2"
+# "minimums-CA-auto-001" -> "min_ckm9x8k3n4"
+# "minimums-geico-001" -> "min_ckm9x9l4o5"
+# etc.
+
+# Manual steps:
+# 1. Open docs/knowledge-pack/knowledge-pack-methodology.md
+# 2. Search for each old ID pattern
+# 3. Replace with proper cuid2 format:
+#    - Line 63-68: "field-states-001" → "fld_ckm9x7whp2"
+#    - Line 410: "minimums-CA-auto-001" → "min_ckm9x8k3n4"
+#    - Any other instances found in discovery
+# 4. Ensure prefix matches entity type per sot-id-conventions.md
+# 5. Maintain semantic meaning in examples
+
+# After manual edit:
+git diff docs/knowledge-pack/knowledge-pack-methodology.md | rg -e '_id|"id"'
+```
+
+**Validation**:
+```bash
+# Verify no old sequential ID patterns remain in methodology.md
+rg '"_?id": "[a-z]+-[^"]*-[0-9]+"' docs/knowledge-pack/knowledge-pack-methodology.md
+# Should return 0 matches
+
+# Verify new cuid2 format used
+rg '"_?id": "[a-z]+_[a-z0-9]{10}"' docs/knowledge-pack/knowledge-pack-methodology.md
+
+# Verify examples match sot-id-conventions.md specs
+rg '"fld_|"min_|"carr_|"disc_' docs/knowledge-pack/knowledge-pack-methodology.md
+
+git diff --stat docs/knowledge-pack/knowledge-pack-methodology.md
+```
+
+---
+
+#### Task 7.3: Standardize UUID to cuid2 Terminology ✅ COMPLETED
+**Objective**: Replace all "UUID" references with "cuid2" or "ID" in knowledge-pack-methodology.md
+
+**Issue**: Document inconsistently uses "UUID" terminology when the system actually uses cuid2. UUID ≠ cuid2 (different libraries, different formats).
+
+**Discovery Steps**:
+```bash
+# Find all UUID references
+rg -n "UUID" docs/knowledge-pack/knowledge-pack-methodology.md
+
+# Show context around each occurrence
+rg -B 2 -A 2 "UUID" docs/knowledge-pack/knowledge-pack-methodology.md
+
+# Count total occurrences
+rg -c "UUID" docs/knowledge-pack/knowledge-pack-methodology.md
+```
+
+**Execution**:
+```bash
+# Replace UUID with cuid2 where appropriate
+sed -i '' \
+  -e 's/Generate UUID/Generate cuid2 ID/g' \
+  -e 's/generate-uuids\.ts/generate-ids.ts/g' \
+  -e 's/uuid-generator\.ts/id-generator.ts/g' \
+  -e 's/UUID Uniqueness/ID Uniqueness/g' \
+  -e 's/UUIDs are unique/IDs are unique/g' \
+  -e 's/all UUIDs/all cuid2 IDs/g' \
+  docs/knowledge-pack/knowledge-pack-methodology.md
+```
+
+**Validation**:
+```bash
+# Verify no UUID references remain (should be 0)
+rg "UUID" docs/knowledge-pack/knowledge-pack-methodology.md
+
+# Verify cuid2 terminology is used
+rg -n "cuid2 ID|cuid2" docs/knowledge-pack/knowledge-pack-methodology.md
+
+# Show changes
+git diff docs/knowledge-pack/knowledge-pack-methodology.md | rg -i 'uuid|cuid2|id'
+```
+
+---
+
+#### Task 7.4: Fix README.md Legend Naming Consistency ✅ COMPLETED
+**Objective**: Use full filenames consistently in README.md legend
+
+**Issue**: Legend (around lines 220-224) mixes short names and full names, creating inconsistency.
+
+**Discovery Steps**:
+```bash
+# Find the legend section
+rg -n "^- 📖|^- 🔑|^- 🤖" docs/knowledge-pack/README.md
+
+# Show legend with context
+sed -n '215,230p' docs/knowledge-pack/README.md
+
+# Check for inconsistent naming
+rg -n "📖 schemas\.md|📖 sot-schemas\.md" docs/knowledge-pack/README.md
+```
+
+**Execution**:
+```bash
+# Update legend to use full filenames
+sed -i '' \
+  -e 's/📖 schemas\.md/📖 sot-schemas.md/g' \
+  -e 's/🔍 search-queries\.md/🔍 sot-search-queries.md/g' \
+  -e 's/⚖️ source-hierarchy\.md/⚖️ sot-source-hierarchy.md/g' \
+  docs/knowledge-pack/README.md
+```
+
+**Validation**:
+```bash
+# Verify no shortened names in legend (except where appropriate)
+rg "^- 📖 schemas\.md|^- 🔍 search-queries\.md|^- ⚖️ source-hierarchy\.md" docs/knowledge-pack/README.md
+# Should return 0 matches
+
+# Verify full names present
+rg "^- 📖 sot-schemas\.md|^- 🔑 sot-id-conventions\.md" docs/knowledge-pack/README.md
+
+git diff docs/knowledge-pack/README.md | rg -e '📖|🔑|🤖|🔍|⚖️'
+```
+
+---
+
+#### Task 7.5: Strengthen ID Convention Reference in Examples ✅ COMPLETED
+**Objective**: Make sot-id-conventions.md reference more explicit in knowledge-pack-examples.md
+
+**Issue**: Line 39 mentions ID conventions but doesn't emphasize that sot-id-conventions.md is the authoritative source.
+
+**Discovery Steps**:
+```bash
+# Find current reference (around line 39)
+sed -n '35,45p' docs/knowledge-pack/knowledge-pack-examples.md
+
+# Check how it's currently worded
+rg -n "ID Conventions|sot-id-conventions" docs/knowledge-pack/knowledge-pack-examples.md | head -n 5
+```
+
+**Execution**:
+```bash
+# NOTE: Manual editing required for nuanced wording change
+
+# Manual steps:
+# 1. Open docs/knowledge-pack/knowledge-pack-examples.md
+# 2. Locate line 39 (in "Before diving in" section)
+# 3. Change from:
+#    "- 🔑 [ID Conventions](sot-id-conventions.md) - All IDs follow cuid2 format specifications"
+#    To:
+#    "- 🔑 [ID Conventions](sot-id-conventions.md) - **All example IDs must match the cuid2 specifications in this SoT document**"
+# 4. Consider adding emphasis note:
+#    "**Note**: All ID formats in examples below are defined in sot-id-conventions.md (Single Source of Truth)"
+
+# After manual edit:
+git diff docs/knowledge-pack/knowledge-pack-examples.md | rg -i 'id conventions|sot-id'
+```
+
+**Validation**:
+```bash
+# Verify strengthened reference exists
+rg -n "SoT document|authoritative source.*ID|must match.*cuid2" docs/knowledge-pack/knowledge-pack-examples.md
+
+# Verify link still points to correct file
+rg "sot-id-conventions\.md" docs/knowledge-pack/knowledge-pack-examples.md
+
+git diff docs/knowledge-pack/knowledge-pack-examples.md
+```
+
+---
+
+### Phase 7 Success Criteria
+- [x] README.md mermaid diagram uses full `sot-` prefixed filenames
+- [x] Zero sequential ID formats in knowledge-pack-methodology.md examples
+- [x] Zero "UUID" references in knowledge-pack-methodology.md (replaced with "cuid2" or "ID")
+- [x] README.md legend uses consistent full filenames
+- [x] knowledge-pack-examples.md has explicit SoT reference for ID conventions
+- [x] All changes maintain documentation clarity and accuracy
+
+**Estimated Time**: 40-50 minutes total
+
+---
+
 ## Final Validation Checklist
 
 After completing all phases, validate:
