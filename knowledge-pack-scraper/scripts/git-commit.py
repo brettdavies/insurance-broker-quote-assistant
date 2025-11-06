@@ -233,7 +233,11 @@ def main() -> None:
 
     args = parser.parse_args()
 
-    # Step 1: Stage all changes FIRST (before pulling)
+    # Step 1: Stage all changes
+    # Note: We don't pull here because:
+    # - Calling scripts pull BEFORE modifying files
+    # - Push retry logic pulls automatically on conflict
+    # - git pull --rebase fails when index has staged changes
     success, error = git_add_all()
     if not success:
         output_result(
@@ -248,22 +252,7 @@ def main() -> None:
         )
         sys.exit(1)
 
-    # Step 2: Pull latest changes (now safe with staged changes)
-    success, error = git_pull()
-    if not success:
-        output_result(
-            success=False,
-            message=f"Git pull failed: {error}",
-            next_steps=(
-                "Git pull failed. This is usually temporary. Automatic recovery:\n\n"
-                "1. Calling script should retry this operation\n"
-                "2. If repeated failures, check network connectivity\n"
-                "3. If network is fine, check git repository health: git status"
-            )
-        )
-        sys.exit(1)
-
-    # Step 3: Commit
+    # Step 2: Commit
     commit_msg = format_commit_message(args.type, args.id, args.message)
     success, error = git_commit(commit_msg)
     if not success:
@@ -279,7 +268,7 @@ def main() -> None:
         )
         sys.exit(1)
 
-    # Step 4: Push with retry
+    # Step 3: Push with retry (automatic pull on conflict)
     success, error, had_conflict = git_push_with_retry()
     if not success:
         output_result(
