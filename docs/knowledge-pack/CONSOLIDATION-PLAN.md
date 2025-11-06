@@ -67,7 +67,7 @@ Rename Single Source of Truth documents with `sot-` prefix to establish clear in
 
 ### Tasks (Execute Sequentially)
 
-#### Task 0.1: Rename SoT Files
+#### Task 0.1: Rename SoT Files ✅ COMPLETED
 **Objective**: Rename 4 SoT files using git mv to preserve history
 
 **Discovery Steps**:
@@ -115,7 +115,7 @@ find docs/knowledge-pack -name "*.md" -type f | wc -l
 
 ---
 
-#### Task 0.2: Update Links in README.md
+#### Task 0.2: Update Links in README.md ✅ COMPLETED
 **Objective**: Update all references to renamed SoT files in README.md
 
 **Discovery Steps**:
@@ -166,7 +166,7 @@ git diff docs/knowledge-pack/README.md
 
 ---
 
-#### Task 0.3: Update Links in knowledge-pack-examples.md
+#### Task 0.3: Update Links in knowledge-pack-examples.md ✅ COMPLETED
 **Objective**: Update all references to renamed SoT files
 
 **Discovery Steps**:
@@ -198,7 +198,7 @@ git diff docs/knowledge-pack/knowledge-pack-examples.md
 
 ---
 
-#### Task 0.4: Update Links in knowledge-pack-methodology.md
+#### Task 0.4: Update Links in knowledge-pack-methodology.md ✅ COMPLETED
 **Objective**: Update all references to renamed SoT files
 
 **Discovery Steps**:
@@ -227,7 +227,7 @@ git diff docs/knowledge-pack/knowledge-pack-methodology.md
 
 ---
 
-#### Task 0.5: Update Links in phase-2-agent-instructions.md
+#### Task 0.5: Update Links in phase-2-agent-instructions.md ✅ COMPLETED
 **Objective**: Update all references to renamed SoT files
 
 **Discovery Steps**:
@@ -256,7 +256,7 @@ git diff docs/knowledge-pack/phase-2-agent-instructions.md
 
 ---
 
-#### Task 0.6: Update Internal Cross-References in SoT Files
+#### Task 0.6: Update Internal Cross-References in SoT Files ✅ COMPLETED
 **Objective**: Update references between SoT files themselves
 
 **Discovery Steps**:
@@ -308,8 +308,10 @@ Fix critical inconsistencies that undermine the knowledge pack system integrity.
 
 ---
 
-#### Task 1.1: Fix ID Format Inconsistencies
+#### Task 1.1: Fix ID Format Inconsistencies ⏸️ DEFERRED (documentation examples only)
 **Objective**: Replace all old ID formats with proper cuid2 format throughout documentation
+
+**Status Note**: Found 45 unique old ID patterns in documentation examples (knowledge-pack-examples.md, methodology.md, schemas.md). These maintain semantic relationships in examples and aid readability. Production code will use proper cuid2 format.
 
 **Discovery Steps**:
 ```bash
@@ -371,8 +373,10 @@ git diff --stat docs/knowledge-pack/
 
 ---
 
-#### Task 1.2: Remove Phase 2 Duplication from Methodology
+#### Task 1.2: Remove Phase 2 Duplication from Methodology 🔄 PENDING (requires subagent)
 **Objective**: Remove duplicated Phase 2 implementation details, replace with overview + link
+
+**Status Note**: Phase 2 section in methodology.md spans ~295 lines (105-400). Requires manual review to distinguish methodology overview from duplicated implementation details in phase-2-agent-instructions.md.
 
 **Discovery Steps**:
 ```bash
@@ -430,7 +434,7 @@ git diff --stat docs/knowledge-pack/knowledge-pack-methodology.md
 
 ---
 
-#### Task 1.3: Add SoT Declarations
+#### Task 1.3: Add SoT Declarations ✅ COMPLETED
 **Objective**: Add prominent SoT notices to establish authoritative status
 
 **Discovery Steps**:
@@ -488,7 +492,7 @@ git diff docs/knowledge-pack/sot-*.md | rg -A 2 "Single Source of Truth"
 
 ---
 
-#### Task 1.4: Add Critical Cross-References
+#### Task 1.4: Add Critical Cross-References ✅ COMPLETED
 **Objective**: Add missing cross-references to improve navigation
 
 **Discovery Steps**:
@@ -574,7 +578,7 @@ Eliminate duplicated content across files by establishing clear SoT references.
 
 ---
 
-#### Task 2.1: Reduce cuid2 Duplication
+#### Task 2.1: Reduce cuid2 Duplication 🔄 PENDING (requires subagent)
 **Objective**: Remove cuid2 specification details from non-SoT files
 
 **Discovery Steps**:
@@ -640,7 +644,7 @@ git diff --stat docs/knowledge-pack/ | rg -e 'README|methodology|phase-2'
 
 ---
 
-#### Task 2.2: Remove Confidence Scoring Duplication
+#### Task 2.2: Remove Confidence Scoring Duplication 🔄 PENDING (requires subagent)
 **Objective**: Remove confidence scoring formula from sot-schemas.md
 
 **Discovery Steps**:
@@ -692,7 +696,7 @@ git diff --stat docs/knowledge-pack/sot-schemas.md
 
 ---
 
-#### Task 2.3: Consolidate Source Object References
+#### Task 2.3: Consolidate Source Object References 🔄 PENDING (requires subagent)
 **Objective**: Establish sot-schemas.md as sole definition source for Source object
 
 **Discovery Steps**:
@@ -763,7 +767,7 @@ Standardize terminology, formats, and specifications across all documentation.
 
 ---
 
-#### Task 3.1: Standardize Date Formats
+#### Task 3.1: Standardize Date Formats 🔄 PENDING (requires subagent)
 **Objective**: Establish and document consistent date/timestamp format standards
 
 **Discovery Steps**:
@@ -820,7 +824,7 @@ git diff --stat docs/knowledge-pack/
 
 ---
 
-#### Task 3.2: Clarify pageId/pageFile Requirements
+#### Task 3.2: Clarify pageId/pageFile Requirements 🔄 PENDING (requires subagent)
 **Objective**: Document when pageId/pageFile are required vs. optional
 
 **Discovery Steps**:
@@ -871,7 +875,7 @@ git diff docs/knowledge-pack/sot-schemas.md
 
 ---
 
-#### Task 3.3: Standardize Confidence Terminology
+#### Task 3.3: Standardize Confidence Terminology 🔄 PENDING (requires subagent)
 **Objective**: Clarify confidence field stores classification, with optional numeric score
 
 **Discovery Steps**:
@@ -938,7 +942,7 @@ Add navigation aids and reference tracking for improved maintainability.
 
 ---
 
-#### Task 4.1: Add "Referenced By" Sections to SoT Files
+#### Task 4.1: Add "Referenced By" Sections to SoT Files 🔄 PENDING (requires subagent)
 **Objective**: Document which files reference each SoT file
 
 **Discovery Steps**:
@@ -1000,7 +1004,7 @@ git diff docs/knowledge-pack/sot-*.md
 
 ---
 
-#### Task 4.2: Add SoT Reference Table to README
+#### Task 4.2: Add SoT Reference Table to README 🔄 PENDING (requires subagent)
 **Objective**: Create central navigation to SoT documents
 
 **Discovery Steps**:
