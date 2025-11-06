@@ -2,15 +2,15 @@
   "meta": {
     "version": "1.0",
     "createdDate": "2025-11-06T06:29:28.470Z",
-    "lastUpdated": "2025-11-06T07:08:57.899Z",
+    "lastUpdated": "2025-11-06T07:10:07.817Z",
     "totalSearches": 343,
     "description": "Phase 2 Knowledge Pack Data Gathering - All Search Queries"
   },
   "statusCounts": {
     "pending": 338,
-    "in_progress": 2,
-    "completed": 2,
-    "failed": 1
+    "in_progress": 0,
+    "completed": 3,
+    "failed": 2
   },
   "categories": [
     {
@@ -3219,15 +3219,15 @@
           "query": "\"average auto insurance cost\" Illinois 2024",
           "category": "pricing-averages",
           "priority": "low",
-          "status": "in_progress",
+          "status": "failed",
           "assignedTo": "agnt_q7j5pndtdgcym1jugdxhli6i",
           "startedAt": "2025-11-06T07:04:20.738Z",
-          "completedAt": null,
-          "durationSeconds": null,
+          "completedAt": "2025-11-06T07:10:07.817Z",
+          "durationSeconds": 347,
           "rawDataFiles": [],
           "pageFiles": [],
           "commitHash": null,
-          "errorMessage": null,
+          "errorMessage": "WebSearch tool unavailable after 3 retries",
           "retryCount": 0,
           "notes": null
         },
@@ -4244,17 +4244,21 @@
           "category": "product-coverage",
           "carrier": "Progressive",
           "priority": "medium",
-          "status": "in_progress",
+          "status": "completed",
           "assignedTo": "agnt_wu14pr4wcnyg51ojpbnb390x",
           "startedAt": "2025-11-06T07:04:21.503Z",
-          "completedAt": null,
-          "durationSeconds": null,
-          "rawDataFiles": [],
-          "pageFiles": [],
+          "completedAt": "2025-11-06T07:09:57.526Z",
+          "durationSeconds": 336,
+          "rawDataFiles": [
+            "carriers/progressive/renters_coverage_search_zc4r5619qbol94m4f5wyeqt4.raw.json"
+          ],
+          "pageFiles": [
+            "page_k76ee6o48igf1w3xirpk4dg9"
+          ],
           "commitHash": null,
           "errorMessage": null,
           "retryCount": 0,
-          "notes": null
+          "notes": "Found 15 data points from collegeeducated.com"
         },
         {
           "id": "search_e1m1jqcif5fq3moa9tmj3las",
