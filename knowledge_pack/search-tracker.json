@@ -2,14 +2,14 @@
   "meta": {
     "version": "1.0",
     "createdDate": "2025-11-05T22:30:00Z",
-    "lastUpdated": "2025-11-05T22:30:00Z",
+    "lastUpdated": "2025-11-05T22:45:00Z",
     "totalSearches": 1,
     "description": "Phase 2 Dry Run - Single Test Search"
   },
   "statusCounts": {
     "pending": 0,
-    "in_progress": 1,
-    "completed": 0,
+    "in_progress": 0,
+    "completed": 1,
     "failed": 0
   },
   "categories": [
@@ -23,17 +23,21 @@
           "category": "carrier-discounts",
           "carrier": "GEICO",
           "priority": "high",
-          "status": "in_progress",
+          "status": "completed",
           "assignedTo": "agnt_jsnn15cn8lb8li1173ktpn86",
           "startedAt": "2025-11-05T22:35:00Z",
-          "completedAt": null,
-          "durationSeconds": null,
-          "rawDataFiles": [],
-          "pageFiles": [],
+          "completedAt": "2025-11-05T22:45:00Z",
+          "durationSeconds": 600,
+          "rawDataFiles": [
+            "carriers/geico/discounts_auto.raw.json"
+          ],
+          "pageFiles": [
+            "page_c7q1opw1pvg9bwqwa5pqqgaz"
+          ],
           "commitHash": null,
           "errorMessage": null,
           "retryCount": 0,
-          "notes": null
+          "notes": "Found 8 discount types from official GEICO site. WalletHub page returned CSS only (not usable)."
         }
       ]
     }
