@@ -1,5 +1,7 @@
 # Knowledge Pack Search Queries Reference
 
+> **📌 Single Source of Truth**: This document is the authoritative source for the complete search query catalog used in knowledge pack data gathering.
+
 **Version**: 1.0  
 **Date**: 2025-11-05  
 **Project**: Insurance Broker Quote Assistant (IQuote Pro)  

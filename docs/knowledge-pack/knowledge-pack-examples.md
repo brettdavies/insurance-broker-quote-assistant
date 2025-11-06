@@ -36,6 +36,7 @@ This document shows complete data transformations from raw scraping to productio
 - 📖 [Schemas](sot-schemas.md) - Understand data structures
 - 🔗 [Source Hierarchy](sot-source-hierarchy.md) - Understand conflict resolution
 - 📖 [Methodology](knowledge-pack-methodology.md) - Understand the 7-phase process
+- 🔑 [ID Conventions](sot-id-conventions.md) - All IDs follow cuid2 format specifications
 
 **Navigation tips:**
 - Examples progress from simple (2 sources) to complex (3+ sources)

@@ -1,5 +1,7 @@
 # Knowledge Pack Source Hierarchy & Authority Rankings
 
+> **📌 Single Source of Truth**: This document is the authoritative source for source authority levels, confidence scoring, and conflict resolution strategies used throughout the knowledge pack system.
+
 **Version**: 1.0  
 **Date**: 2025-11-05  
 **Project**: Insurance Broker Quote Assistant (IQuote Pro)  

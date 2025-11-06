@@ -1,5 +1,7 @@
 # Knowledge Pack JSON Schemas
 
+> **📌 Single Source of Truth**: This document is the authoritative source for all JSON schema definitions and data structure specifications used throughout the knowledge pack system.
+
 **Version**: 1.0
 **Date**: 2025-11-05
 **Project**: Insurance Broker Quote Assistant (IQuote Pro)
