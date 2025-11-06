@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://iquote-pro.dev/schemas/resolution-metadata.json",
+  "title": "Resolution Metadata",
+  "description": "Conflict resolution format for knowledge pack data conflicts",
+  "type": "object",
+  "required": ["conflictId", "selectedValue", "method", "rationale", "resolvedBy", "resolvedDate"],
+  "properties": {
+    "conflictId": {
+      "type": "string",
+      "pattern": "^conf_[a-z0-9]{10}$",
+      "description": "Reference to conflict in conflicts.json"
+    },
+    "selectedValue": {
+      "description": "The chosen value after conflict resolution"
+    },
+    "method": {
+      "type": "string",
+      "description": "Resolution strategy used (e.g., 'authoritative_source', 'specificity_preference', 'conservative_estimate')"
+    },
+    "rationale": {
+      "type": "string",
+      "description": "Human-readable explanation of why this resolution was chosen"
+    },
+    "resolvedBy": {
+      "type": "string",
+      "description": "Curator identifier (e.g., 'data_curator', 'agnt_{cuid2}')"
+    },
+    "resolvedDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 date-time with timezone when conflict was resolved (YYYY-MM-DDTHH:mm:ssZ)"
+    }
+  }
+}
