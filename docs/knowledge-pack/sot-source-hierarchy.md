@@ -156,6 +156,18 @@ This document establishes a clear hierarchy for source authority and provides de
 
 ## Confidence Scoring Formula
 
+### Field Definitions
+
+**Confidence Field Structure:**
+- **`confidence`** (required): A **classification string** indicating confidence level. Valid values:
+  - `'high'` - Score 4.0-5.0 (Use with minimal verification)
+  - `'medium'` - Score 3.0-3.9 (Use with supplementary source)
+  - `'low'` - Score 2.0-2.9 (Verify with higher authority source)
+
+- **`confidenceScore`** (optional): A **numeric score** (1.0-5.0) calculated using the formula below. Only include if precise scoring is needed. The classification in the `confidence` field is the authoritative field for data processing; numeric score serves as supporting context.
+
+### Scoring Calculation
+
 For each source, calculate overall confidence:
 
 ```

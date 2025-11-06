@@ -761,7 +761,143 @@ const carrierId = `carr_${createId()}`;  // "carr_ckm9x7w8k0"
 
 ---
 
-## 6. Source Inheritance Rules
+## 6. Date and Timestamp Standards
+
+### Overview
+
+All date and timestamp values in the knowledge pack follow strict ISO 8601 standards to ensure consistency, interoperability, and compliance with regulatory requirements.
+
+### Timestamp Format (with Timezone)
+
+**Use Case**: All temporal audit fields (data access times, creation/modification times, conflict resolution times)
+
+**Format**: `YYYY-MM-DDTHH:mm:ssZ`
+
+**Pattern Description**:
+- `YYYY`: 4-digit year (e.g., `2025`)
+- `MM`: 2-digit month (01-12)
+- `DD`: 2-digit day (01-31)
+- `T`: ISO 8601 separator (literal character)
+- `HH`: 2-digit hour in 24-hour format (00-23)
+- `mm`: 2-digit minute (00-59)
+- `ss`: 2-digit second (00-59)
+- `Z`: UTC timezone indicator (literal character)
+
+**Examples**:
+```
+2025-11-05T12:00:00Z    (noon UTC on Nov 5, 2025)
+2025-11-05T15:30:45Z    (3:30:45 PM UTC)
+2025-01-01T00:00:00Z    (midnight UTC on Jan 1, 2025)
+```
+
+**Fields Using Timestamp Format**:
+- `source.accessedDate` - When data was accessed from source
+- `meta.generatedDate` - When file was generated
+- `resolution.resolvedDate` - When conflict was resolved
+- Any audit field tracking when an action occurred
+
+### Date Format (without Time)
+
+**Use Case**: Reference dates where time precision is not needed (e.g., document headers, metadata date fields)
+
+**Format**: `YYYY-MM-DD`
+
+**Pattern Description**:
+- `YYYY`: 4-digit year
+- `MM`: 2-digit month (01-12)
+- `DD`: 2-digit day (01-31)
+
+**Examples**:
+```
+2025-11-05    (November 5, 2025)
+2025-01-01    (January 1, 2025)
+2025-12-25    (December 25, 2025)
+```
+
+**Fields Using Date-Only Format**:
+- Document header dates (e.g., `**Date**: 2025-11-05`)
+- Reference dates in documentation
+- Simple date metadata
+
+### Validation Rules
+
+1. **Timestamps MUST always include timezone (`Z` suffix)**
+   - Valid: `2025-11-05T12:00:00Z`
+   - Invalid: `2025-11-05T12:00:00` (missing Z)
+
+2. **No alternative timezones accepted**
+   - Only UTC (Z) is allowed in canonical data
+   - Conversion happens in application layer, not in knowledge pack
+
+3. **Precision consistency**
+   - Timestamps: Always include seconds (not just hours/minutes)
+   - Use `:00` if exact time not available
+
+4. **JSON Schema validation**
+   - Timestamp fields use `"format": "date-time"` in JSON Schema
+   - Date fields use `"format": "date"` in JSON Schema
+
+### Examples in Context
+
+**Timestamp in Source Object** (from carrier schema):
+```json
+{
+  "uri": "https://www.geico.com/auto/discounts/",
+  "elementRef": "div#multi-policy > h3",
+  "accessedDate": "2025-11-05T12:15:00Z",
+  "confidence": "high"
+}
+```
+
+**Timestamp in Resolution Object** (from conflict resolution):
+```json
+{
+  "conflictId": "conf_ckm9x7x5ea",
+  "selectedValue": 15,
+  "method": "authoritative_source",
+  "rationale": "GEICO official site is authoritative",
+  "resolvedBy": "data_curator",
+  "resolvedDate": "2025-11-05T15:30:00Z"
+}
+```
+
+**Date in Document Header**:
+```markdown
+**Date**: 2025-11-05
+**Last Updated**: 2025-11-05
+```
+
+### Standardization Checklist
+
+Before committing knowledge pack files:
+
+- [ ] All `accessedDate` fields follow `YYYY-MM-DDTHH:mm:ssZ` format
+- [ ] All `resolvedDate` fields follow `YYYY-MM-DDTHH:mm:ssZ` format
+- [ ] All `generatedDate` fields follow `YYYY-MM-DDTHH:mm:ssZ` format
+- [ ] All timestamps end with `Z` (no exceptions)
+- [ ] Document header dates use `YYYY-MM-DD` format only
+- [ ] No alternative formats used (e.g., Unix timestamps, unpadded months)
+
+### Tools for Validation
+
+**Find inconsistent timestamps** (missing Z suffix):
+```bash
+rg '[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}' docs/knowledge-pack/*.md | rg -v 'Z"'
+```
+
+**Verify all timestamps include seconds**:
+```bash
+rg '[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}' docs/knowledge-pack/*.md | rg -v ':[0-9]{2}Z'
+```
+
+**Check for ISO 8601 documentation**:
+```bash
+rg -n "ISO 8601" docs/knowledge-pack/*.md
+```
+
+---
+
+## 7. Source Inheritance Rules
 
 ### When to Inherit
 
@@ -816,7 +952,7 @@ Can inherit from grandparent if parent also inherits:
 
 ---
 
-## 7. Validation Rules
+## 8. Validation Rules
 
 ### Required Validations
 
