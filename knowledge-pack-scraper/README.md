@@ -129,11 +129,12 @@ All scraped data is saved to `../knowledge_pack/raw/`:
 
 ## Trackers
 
-The system uses 3 tracker files:
+The system uses 4 tracker files located in `trackers/`:
 
-1. **search-tracker.json** - Searches to execute
-2. **url-tracker.json** - URLs to fetch
-3. **page-tracker.json** - Pages to extract data from
+1. **trackers/search-tracker.json** - Searches to execute
+2. **trackers/url-tracker.json** - URLs to fetch
+3. **trackers/page-tracker.json** - Pages to extract data from
+4. **trackers/extraction-tracker.json** - Extractions to validate and commit
 
 Agents check these in waterfall order, picking the first available work from the highest priority tracker.
 

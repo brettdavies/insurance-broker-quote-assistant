@@ -26,11 +26,13 @@ class TrackerManager:
             base_path = Path.cwd()
 
         self.base_path = base_path
+        # Tracker files are in trackers/ subdirectory
+        trackers_dir = base_path / 'trackers'
         self.tracker_files = {
-            'search': base_path / 'search-tracker.json',
-            'url': base_path / 'url-tracker.json',
-            'page': base_path / 'page-tracker.json',
-            'extraction': base_path / 'extraction-tracker.json'
+            'search': trackers_dir / 'search-tracker.json',
+            'url': trackers_dir / 'url-tracker.json',
+            'page': trackers_dir / 'page-tracker.json',
+            'extraction': trackers_dir / 'extraction-tracker.json'
         }
         # Output goes to ../knowledge_pack/raw/
         self.output_base = base_path.parent / 'knowledge_pack' / 'raw'
