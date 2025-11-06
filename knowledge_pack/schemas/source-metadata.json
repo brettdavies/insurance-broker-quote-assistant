@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://iquote-pro.dev/schemas/source-metadata.json",
+  "title": "Source Metadata",
+  "description": "Source citation format for knowledge pack data tracking",
+  "type": "object",
+  "required": ["uri", "accessedDate", "confidence"],
+  "properties": {
+    "uri": {
+      "type": "string",
+      "format": "uri",
+      "description": "Full URL of the source"
+    },
+    "pageId": {
+      "type": "string",
+      "pattern": "^page_[a-z0-9]{10}$",
+      "description": "Optional in interface; Phase 2 MUST populate for raw data. Unique page ID (page_{cuid2})"
+    },
+    "pageFile": {
+      "type": "string",
+      "description": "Optional in interface; Phase 2 MUST populate for raw data. Path relative to knowledge_pack/raw/ (e.g., '_pages/page_ckm9x7w8k0.html')"
+    },
+    "elementRef": {
+      "type": "string",
+      "description": "CSS selector or XPath to the element containing the data"
+    },
+    "lineRef": {
+      "type": "integer",
+      "description": "Line number (for text files)"
+    },
+    "accessedDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 date-time with timezone (YYYY-MM-DDTHH:mm:ssZ)"
+    },
+    "extractedValue": {
+      "type": "string",
+      "description": "Raw value from source (before normalization)"
+    },
+    "confidence": {
+      "enum": ["high", "medium", "low"],
+      "description": "Classification (required). See sot-source-hierarchy.md#confidence-classifications"
+    },
+    "confidenceScore": {
+      "type": "number",
+      "minimum": 1.0,
+      "maximum": 5.0,
+      "description": "Calculated numeric score 1.0-5.0 (optional). See sot-source-hierarchy.md#confidence-scoring-formula"
+    },
+    "primary": {
+      "type": "boolean",
+      "description": "Is this the primary source (for multi-source fields)"
+    }
+  }
+}

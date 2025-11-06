@@ -28,6 +28,9 @@ This document defines the comprehensive methodology for gathering, validating, a
 
 **Objective**: Define data structures that support granular source tracking and audit trails.
 
+**Status**: ✅ Complete
+**Note**: Completed 2025-11-05. Created 4 schema files (342 lines) in knowledge_pack/schemas/. Git commit: 82b1198.
+
 #### 1.1 Source Metadata Structure
 
 Every field in the knowledge pack uses a metadata envelope for source tracking. See [sot-schemas.md#field-metadata-envelope](sot-schemas.md#field-metadata-envelope) for complete specification.
@@ -83,6 +86,9 @@ All IDs tracked in `audit-trail.json` for cross-reference.
 ### Phase 2: Raw Data Scraping (4-6 hours)
 
 **Objective**: Capture ALL available data from public sources, preserving duplicates and conflicts for later resolution.
+
+**Status**: ⏳ Pending
+**Note**: See [phase-2-agent-instructions.md](phase-2-agent-instructions.md) for autonomous agent workflow.
 
 **Critical Rule**: DO NOT RESOLVE CONFLICTS YET - Just capture everything!
 
@@ -191,6 +197,9 @@ knowledge_pack/raw/
 ### Phase 3: Conflict Detection (2-3 hours)
 
 **Objective**: Systematically identify all conflicts where multiple sources provide different values for the same data point.
+
+**Status**: ⏳ Pending
+**Note**: Requires Phase 2 completion. Automated script will detect conflicts in raw data.
 
 #### 3.1 Conflict Detection Script
 
@@ -305,6 +314,9 @@ function calculateSeverity(values, dataPoint) {
 ### Phase 4: Conflict Resolution (2-3 hours)
 
 **Objective**: Resolve all conflicts using documented decision-making strategies, creating a transparent audit trail.
+
+**Status**: ⏳ Pending
+**Note**: Requires Phase 3 completion. Interactive resolution workflow using 7-step decision tree.
 
 #### 4.1 Resolution Strategies (Priority Order)
 
@@ -433,6 +445,9 @@ Create `knowledge_pack/resolutions.json`:
 ### Phase 5: Knowledge Pack Assembly (1-2 hours)
 
 **Objective**: Transform clean, resolved data into production-ready JSON files for the RAG system.
+
+**Status**: ⏳ Pending
+**Note**: Requires Phase 4 completion. Transform clean data into production format with citation compression.
 
 #### 5.1 Production Format Design
 
@@ -572,6 +587,9 @@ For production files, compress source references:
 
 **Objective**: Verify data integrity, completeness, and compliance with requirements.
 
+**Status**: ⏳ Pending
+**Note**: Requires Phase 5 completion. Automated validation checks against schema and business rules.
+
 #### 6.1 Automated Validation Checks
 
 Create `scripts/validate-kb.ts`:
@@ -707,6 +725,9 @@ const validationChecks = [
 ### Phase 7: Documentation (1 hour)
 
 **Objective**: Create comprehensive documentation for methodology, sources, and audit trail.
+
+**Status**: ⏳ Pending
+**Note**: Requires Phase 6 completion. Generate README.md and audit-trail.json with complete data lineage.
 
 #### 7.1 README.md Structure
 
