@@ -29,15 +29,14 @@ def select_random_work(tm: Optional[TrackerManager] = None) -> Optional[Tuple[Tr
         tm = TrackerManager()
 
     # Waterfall: check each tracker in order
-    for tracker_type in ['search', 'url', 'page', 'extraction']:
+    for tracker_type in ['search', 'url', 'page']:
         tracker = tm.load(tracker_type)
 
         # Collect all pending items
         items_key = {
             'search': 'searches',
             'url': 'urls',
-            'page': 'pages',
-            'extraction': 'extractions'
+            'page': 'pages'
         }[tracker_type]
 
         pending = [
@@ -69,7 +68,7 @@ def get_work_summary(tm: Optional[TrackerManager] = None) -> Dict[str, int]:
 
     summary = {}
 
-    for tracker_type in ['search', 'url', 'page', 'extraction']:
+    for tracker_type in ['search', 'url', 'page']:
         counts = tm.get_status_counts(tracker_type)
         summary[tracker_type] = counts.get('pending', 0)
 
@@ -89,7 +88,6 @@ def print_work_summary(tm: Optional[TrackerManager] = None) -> None:
     print(f"Searches pending:    {summary['search']}")
     print(f"URLs pending:        {summary['url']}")
     print(f"Pages pending:       {summary['page']}")
-    print(f"Extractions pending: {summary['extraction']}")
     print(f"Total pending:       {sum(summary.values())}")
     print("===================\n")
 

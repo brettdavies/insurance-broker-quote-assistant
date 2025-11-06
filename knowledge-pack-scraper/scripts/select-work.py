@@ -2,14 +2,13 @@
 """
 Select next work item using waterfall priority.
 
-This script checks all 4 trackers in priority order and randomly selects
+This script checks all 3 trackers in priority order and randomly selects
 available work to minimize collision probability.
 
 Priority order:
 1. search-tracker (execute searches to discover URLs)
 2. url-tracker (fetch URLs with crawl4ai)
 3. page-tracker (extract data from pages)
-4. extraction-tracker (validate and commit)
 
 Usage:
     uv run scripts/select-work.py
@@ -36,7 +35,7 @@ def chain_to_next_script(work_item: dict, tracker_type: str, summary: dict) -> i
 
     Args:
         work_item: Selected work item dict
-        tracker_type: Type of tracker (search, url, page, extraction)
+        tracker_type: Type of tracker (search, url, page)
         summary: Work summary counts
 
     Returns:
@@ -48,8 +47,7 @@ def chain_to_next_script(work_item: dict, tracker_type: str, summary: dict) -> i
     script_map = {
         'search': 'claim-search.py',
         'url': 'fetch-url.py',
-        'page': 'claim-page.py',
-        'extraction': 'validate-extraction.py'
+        'page': 'claim-page.py'
     }
 
     script = script_map[tracker_type]
