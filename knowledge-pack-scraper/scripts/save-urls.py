@@ -10,7 +10,9 @@ This script:
 5. Commits changes
 
 Usage:
-    uv run scripts/save-urls.py --search-id search_abc123 --urls https://url1.com https://url2.com https://url3.com
+    uv run scripts/save-urls.py --search-id search_abc123 --urls "https://url1.com" "https://url2.com" "https://url3.com"
+
+Note: URLs must be quoted to handle special characters (&, ?, etc.)
 
 Output:
     JSON with registration results and explicit next_steps for agent
@@ -101,7 +103,7 @@ def main() -> None:
         '--urls',
         required=True,
         nargs='+',
-        help='List of discovered URLs (space-separated)'
+        help='List of discovered URLs (space-separated, each URL should be quoted)'
     )
 
     args = parser.parse_args()
@@ -109,20 +111,12 @@ def main() -> None:
     urls = args.urls
 
     try:
-        # Validate URL count (4-6 recommended)
+        # Validate URL count (at least 1 required)
         if len(urls) < 1:
             output_result(
                 success=False,
                 message="At least 1 URL required",
-                next_steps="Provide at least 1 URL. Ideally 4-6 URLs for best coverage."
-            )
-            sys.exit(1)
-
-        if len(urls) > 6:
-            output_result(
-                success=False,
-                message=f"Too many URLs ({len(urls)}). Maximum is 6.",
-                next_steps="Provide at most 6 URLs. Select the most relevant ones."
+                next_steps="Provide at least 1 URL from your WebSearch results. All discovered URLs will be captured."
             )
             sys.exit(1)
 
