@@ -3,13 +3,13 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T03:15:49.239252",
+    "lastUpdated": "2025-11-07T03:15:51.428931",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
-    "pending": 472,
-    "claimed": 1,
+    "pending": 471,
+    "claimed": 2,
     "urls_discovered": 0,
     "completed": 3,
     "failed": 0
@@ -3031,15 +3031,16 @@
       "subcategory": "roof-age-restrictions",
       "carrier": "Progressive",
       "priority": "high",
-      "status": "pending",
-      "assignedTo": null,
+      "status": "claimed",
+      "assignedTo": "agnt_ijzob724cranxjbfc74wbzig",
       "startedAt": null,
       "completedAt": null,
       "durationSeconds": null,
       "urlsDiscoveredCount": null,
       "errorMessage": null,
       "retryCount": 0,
-      "notes": null
+      "notes": null,
+      "claimedAt": "2025-11-07T03:15:51.426927"
     },
     {
       "id": "search_lfwsg3d2mlso58qoek3o5eqn",
