@@ -3,15 +3,15 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T04:39:07.653106",
+    "lastUpdated": "2025-11-07T04:39:43.669253",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
     "pending": 467,
-    "claimed": 1,
+    "claimed": 0,
     "urls_discovered": 0,
-    "completed": 8,
+    "completed": 9,
     "failed": 0
   },
   "searches": [
@@ -569,16 +569,18 @@
       "subcategory": "state-by-state-verification",
       "carrier": "Progressive",
       "priority": "high",
-      "status": "claimed",
+      "status": "completed",
       "assignedTo": "agnt_slz2rk0wnl9k0bswg0xnva75",
       "startedAt": null,
-      "completedAt": null,
+      "completedAt": "2025-11-07T04:39:43.667079",
       "durationSeconds": null,
-      "urlsDiscoveredCount": null,
+      "urlsDiscoveredCount": 10,
       "errorMessage": null,
       "retryCount": 0,
       "notes": null,
-      "claimedAt": "2025-11-07T04:39:07.651171"
+      "claimedAt": "2025-11-07T04:39:07.651171",
+      "urlsNewCount": 10,
+      "urlsExistingCount": 0
     },
     {
       "id": "search_o8viranoklgkxbaixtg2df1p",
