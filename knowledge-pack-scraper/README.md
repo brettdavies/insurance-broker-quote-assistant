@@ -1,18 +1,41 @@
-# Knowledge Pack Scraper (Phase 2)
+# Knowledge Pack Scraper
 
-Autonomous Python agents for scraping insurance data using crawl4ai.
+Autonomous Python pipeline for scraping insurance data using Brave API and crawl4ai.
 
 ## Overview
 
-This package contains the Phase 2 data gathering infrastructure for the Insurance Broker Quote Assistant knowledge pack. It runs multiple independent Python agents that coordinate via GitHub to scrape, fetch, and extract insurance data from web sources.
+This package contains the data gathering infrastructure for the Insurance Broker Quote Assistant knowledge pack. It provides a multi-phase pipeline that discovers URLs via Brave search, fetches HTML content, analyzes patterns, filters pages, and extracts structured data.
 
 ## Architecture
 
+**Tech Stack:**
 - **Language**: Python 3.10+ with `uv` package manager
-- **Agent Model**: Multiple independent processes (3-5 parallel)
-- **Coordination**: GitHub as single source of truth
-- **Trackers**: 3 separate JSON files (waterfall selection)
-- **Output**: Dual format storage (HTML + Markdown) in `../knowledge_pack/raw/`
+- **Search API**: Brave Web Search API
+- **Web Scraping**: crawl4ai (Playwright-based)
+- **Coordination**: Git-based workflow
+- **Storage**: Sharded file system (JSON + HTML + Markdown)
+
+**Directory Structure:**
+```
+knowledge-pack-scraper/
+├── lib/                      # Shared utilities
+│   ├── tracker_manager.py    # Tracker file I/O
+│   ├── id_generator.py       # CUID2 ID generation
+│   ├── brave_api_client.py   # Brave API wrapper
+│   └── git_utils.py          # Git operations
+├── phase1-url-discovery/     # Brave API search execution
+├── phase2-page-fetching/     # Concurrent HTML/Markdown fetching
+├── phase3-domain-analysis/   # HTML pattern analysis
+├── phase4-page-filtering/    # Domain-specific content extraction
+├── phase5-data-extraction/   # LLM extraction result storage
+├── trackers/                 # 4 JSON tracker files
+├── raw/                      # All scraped data (sharded)
+│   ├── websearches/          # 26 subdirs (a-z)
+│   ├── pages/                # 898 subdirs (a0-zz)
+│   └── carriers/             # Extracted data
+├── analysis/                 # Domain analysis reports
+└── tests/                    # Test suite
+```
 
 ## Installation
 
@@ -28,170 +51,231 @@ uv run crawl4ai-setup
 
 ## Usage
 
-### Agent-Driven Model
+### Pipeline Overview
 
-Phase 2 uses **individual scripts** that agents call in sequence. Each script outputs JSON with explicit `next_steps` instructions.
+The scraper follows a 5-phase sequential workflow:
 
-**Claude Code agents should:**
-1. Start with `select-work.py` to find work
-2. Read `next_steps` from output
-3. Follow instructions exactly
-4. Repeat until Phase 2 complete
+1. **Phase 1: URL Discovery** - Execute Brave API searches, discover URLs
+2. **Phase 2: Page Fetching** - Fetch HTML and Markdown content
+3. **Phase 3: Domain Analysis** - Analyze HTML patterns for filtering
+4. **Phase 4: Page Filtering** - Extract clean content using domain configs
+5. **Phase 5: Data Extraction** - Store LLM extraction results
 
-### Script Reference
+Each phase has dedicated scripts and documentation.
 
-#### 1. select-work.py - Find Next Work Item
+### Phase 1: URL Discovery
 
-```bash
-cd knowledge-pack-scraper
-uv run scripts/select-work.py
-```
-
-Returns work item with waterfall priority (search → url → page).
-
-#### 2. claim-search.py - Claim Search for Execution
+Discover insurance-related URLs through Brave API search.
 
 ```bash
-uv run scripts/claim-search.py --id search_abc123
+cd phase1-url-discovery
+
+# Populate search tracker from query list
+uv run populate-search-tracker.py
+
+# Execute all pending searches
+uv run brave-search.py
 ```
 
-Claims search, outputs query for agent to perform WebSearch.
+**Outputs:**
+- `raw/websearches/{char}/websearch_{id}.json` - Raw API responses
+- `trackers/url-tracker.json` - Discovered URLs (deduplicated)
 
-#### 3. save-urls.py - Save Discovered URLs
+**See [phase1-url-discovery/README.md](phase1-url-discovery/README.md) for complete documentation.**
+
+---
+
+### Phase 2: Page Fetching
+
+Fetch HTML and Markdown content from discovered URLs using crawl4ai.
 
 ```bash
-uv run scripts/save-urls.py --search-id search_abc123 --urls "https://url1.com" "https://url2.com"
+cd phase2-page-fetching
+
+# Fetch all pending URLs (conservative settings)
+uv run fetch-url.py --workers 3 --delay 1.0
+
+# Faster fetching (use with caution)
+uv run fetch-url.py --workers 5 --delay 0.5 --delay-variance 0.3
+
+# Test with limited URLs
+uv run fetch-url.py --limit 10
 ```
 
-Saves all discovered URLs after agent performs WebSearch (quote URLs to handle special characters).
+**Outputs:**
+- `raw/pages/{prefix}/page_{id}.html` - Raw HTML
+- `raw/pages/{prefix}/page_{id}.md` - Markdown conversion
+- `trackers/page-tracker.json` - Page metadata
 
-#### 4. fetch-url.py - Autonomous URL Fetching
+**See [phase2-page-fetching/README.md](phase2-page-fetching/README.md) for complete documentation.**
+
+---
+
+### Phase 3: Domain Analysis
+
+Analyze HTML structure patterns to generate intelligent filtering configurations.
 
 ```bash
-uv run scripts/fetch-url.py --id url_xyz789
+cd phase3-domain-analysis
+
+# Analyze single domain
+uv run analyze-domain-structure.py progressive.com
+
+# Batch analyze all multi-page domains
+uv run batch-analyze-domains.py --min-pages 2
+
+# Generate generic fallback config
+uv run aggregate-domain-analysis.py
+uv run analyze-generic-cohort.py
 ```
 
-Fully autonomous: claims URL, fetches with crawl4ai, saves HTML+MD, commits.
+**Outputs:**
+- `analysis/domain-reports/{domain}.json` - Domain-specific configs
+- `analysis/generic-fallback.json` - Generic filtering config
 
-#### 5. claim-page.py - Claim Page for Extraction
+**See [phase3-domain-analysis/README.md](phase3-domain-analysis/README.md) for complete documentation.**
+
+---
+
+### Phase 4: Page Filtering
+
+Apply domain-specific or generic filtering to extract clean content.
 
 ```bash
-uv run scripts/claim-page.py --id page_def456
+cd phase4-page-filtering
+
+# Filter all pages
+uv run filter-pages.py
+
+# Filter specific domain
+uv run filter-pages.py --domain progressive.com --limit 100
+
+# Concurrent filtering
+uv run filter-pages.py --workers 20
 ```
 
-Claims page, outputs content for agent to perform LLM extraction.
+**Outputs:**
+- `raw/pages/{prefix}/page_{id}_filtered.md` - Clean content
+- `raw/pages/{prefix}/page_{id}_filtered_negative.md` - Removed content
+- `raw/pages/{prefix}/page_{id}_quality.json` - Quality metrics
 
-#### 6. save-extraction.py - Save Extracted Data
+**See [phase4-page-filtering/README.md](phase4-page-filtering/README.md) for complete documentation.**
+
+---
+
+### Phase 5: Data Extraction
+
+Save LLM extraction results for structured insurance data.
 
 ```bash
-echo '[{...data...}]' | uv run scripts/save-extraction.py --page-id page_def456
+cd phase5-data-extraction
+
+# Save extraction via stdin (recommended)
+echo '{"data": [...]}' | uv run save-extraction.py --page-id page_abc123
+
+# Save extraction via argument
+uv run save-extraction.py --page-id page_abc123 --data '{"data": [...]}'
 ```
 
-Saves extraction results from agent's LLM extraction. Raw data file named by page_id.
+**Outputs:**
+- `raw/carriers/uncategorized/data_{page_id}.raw.json` - Extracted data
+- Updated `trackers/page-tracker.json` with extraction status
 
-#### 7. git-commit.py - Centralized Git Operations
+**See [phase5-data-extraction/README.md](phase5-data-extraction/README.md) for complete documentation.**
 
-```bash
-uv run scripts/git-commit.py --type claim --id search_abc123 --message "GEICO discounts"
-```
-
-Called internally by other scripts (agents typically don't call directly).
-
-### Complete Workflow Example
-
-```bash
-# 1. Agent selects work
-$ uv run scripts/select-work.py
-# Output: "Run: uv run scripts/claim-search.py --id search_abc123"
-
-# 2. Agent claims search
-$ uv run scripts/claim-search.py --id search_abc123
-# Output: "Perform WebSearch with query: 'GEICO discounts'"
-
-# 3. Agent performs WebSearch (Claude tool)
-# (Agent collects all relevant URLs)
-
-# 4. Agent saves URLs (quote URLs to handle special characters)
-$ uv run scripts/save-urls.py --search-id search_abc123 --urls "https://url1.com" "https://url2.com"
-# Output: "Continue with: uv run scripts/select-work.py"
-
-# 5. Repeat...
-```
-
-See [docs/knowledge-pack/phase-2-agent-instructions.md](../docs/knowledge-pack/phase-2-agent-instructions.md) for complete documentation.
-
-## Output
-
-All scraped data is saved to `../knowledge_pack/raw/`:
-- `_pages/page_{id}.html` - Raw HTML from crawl4ai
-- `_pages/page_{id}.md` - Markdown conversion from crawl4ai
-- `carriers/`, `states/`, etc. - Extracted data points
+---
 
 ## Trackers
 
 The system uses 4 tracker files located in `trackers/`:
 
-1. **trackers/search-tracker.json** - Searches to execute
-2. **trackers/url-tracker.json** - URLs to fetch
-3. **trackers/page-tracker.json** - Pages to extract data from
-4. **trackers/extraction-tracker.json** - Extractions to validate and commit
+1. **search-tracker.json** - Search queries to execute (Phase 1)
+2. **url-tracker.json** - URLs to fetch (Phase 2)
+3. **page-tracker.json** - Pages for extraction (Phase 3-5)
+4. **extraction-tracker.json** - Extractions to validate (future)
 
-Agents check these in waterfall order, picking the first available work from the highest priority tracker.
+Tracker files follow a consistent schema with status tracking (`pending`, `in_progress`, `completed`) and metadata for each item.
 
-## Git Coordination
+## Data Storage
 
-Agents coordinate via GitHub:
-- Pull before claiming work
-- Commit claim immediately
-- Push with automatic retry on conflict
-- Re-check ownership after rebase
-- Abandon work if lost race condition
+All scraped data is stored in `raw/` with sharded directory structure:
 
-## Rate Limiting
-
-- 5-second sleep at start of each loop iteration
-- crawl4ai's built-in adaptive rate limiting
-- Exponential backoff on failures
-
-## Monitoring Progress
-
-Check work summary:
-
-```bash
-cd knowledge-pack-scraper
-uv run scripts/select-work.py
+### Websearches (Single-char sharding)
+```
+raw/websearches/
+├── a/  (17 files)
+├── b/  (10 files)
+...
+└── z/  (15 files)
+Total: 26 directories, 468 files
 ```
 
-Shows pending counts for all trackers.
-
-Check recent git commits:
-
-```bash
-git log --oneline --since="10 minutes ago"
+### Pages (Two-char sharding)
+```
+raw/pages/
+├── a0/  (4 files)
+├── tk/  (22 files)  ← Largest shard
+...
+└── zz/  (6 files)
+Total: 898 directories, 5,850 files
 ```
 
-Shows activity from all agents.
+**Sharding benefits:**
+- Improved filesystem performance (16 files/dir avg vs 5,850 flat)
+- Faster directory listings
+- Better scalability for future growth
 
 ## Testing
 
-The scraper includes a comprehensive test suite for validating core functionality.
+The scraper includes a comprehensive test suite.
 
-### URL Deduplication Tests
-
-Run the URL deduplication test suite:
+### Run Tests
 
 ```bash
-cd knowledge-pack-scraper
-uv run scripts/tests/test_url_deduplication.py
+cd tests
+
+# URL deduplication tests
+uv run test_url_deduplication.py
+
+# JSON conflict resolver tests
+uv run test_json_conflict_resolver.py
 ```
 
-This validates:
-- Hash-based URL deduplication
-- Multi-search provenance tracking
-- URL normalization (protocol, case, trailing slash)
-- Idempotent operations
+**See [tests/README.md](tests/README.md) for complete test documentation.**
 
-**See [scripts/tests/README.md](scripts/tests/README.md) for complete test documentation.**
+## Git Coordination
+
+Scripts coordinate via Git for concurrency control:
+- Pull before claiming work (via `git_utils.py`)
+- Commit changes immediately after updates
+- Push with automatic retry on conflict
+- All scripts use centralized `git_utils.py` module
+
+## Environment Variables
+
+Required for Phase 1 (URL Discovery):
+```bash
+export BRAVE_WEB_API_TOKEN_FREE="your_free_token"
+export BRAVE_WEB_API_TOKEN_PAID="your_paid_token"  # Optional fallback
+```
+
+## Monitoring Progress
+
+Check tracker status:
+```bash
+cd knowledge-pack-scraper
+uv run python3 -c "
+import json
+for tracker in ['search', 'url', 'page', 'extraction']:
+    with open(f'trackers/{tracker}-tracker.json') as f:
+        data = json.load(f)
+        print(f'{tracker}: {data[\"statusCounts\"]}')"
+```
+
+Check recent activity:
+```bash
+git log --oneline --since="1 hour ago"
+```
 
 ## Troubleshooting
 
@@ -200,14 +284,65 @@ This validates:
 uv run crawl4ai-setup
 ```
 
-### Git conflicts
-Agents handle conflicts automatically. If manual resolution needed:
-```bash
-git pull --rebase
-# Resolve conflicts
-git rebase --continue
-git push
+### Import errors from phase subdirectories
+Ensure you're using the correct path for lib imports:
+```python
+sys.path.insert(0, str(Path(__file__).parent.parent / 'lib'))
 ```
 
-### Check for stuck work
-Look for items claimed >30 minutes ago - may need manual intervention.
+### Tracker file locked/corrupted
+Trackers use JSON with no locks. If corrupted, restore from git history.
+
+### Git conflicts
+Scripts handle conflicts automatically via `git_utils.py`. Manual resolution rarely needed.
+
+### Rate limiting (Brave API)
+Free tier: 1 req/sec (handled automatically)
+Paid tier: Automatic fallback after free exhausted
+
+### Memory issues (Phase 2)
+Reduce `--workers` or increase `--delay` to limit concurrent fetches.
+
+## Performance Characteristics
+
+**Phase 1 (URL Discovery):**
+- ~476 searches @ 1 req/sec = 8-10 minutes
+- Deduplication: 70% reduction (20,169 URLs → ~6,000 unique)
+
+**Phase 2 (Page Fetching):**
+- ~2,925 pages @ 3 workers, 1s delay = 15-20 minutes
+- Bandwidth: 7-9 GB total (HTML + Markdown)
+
+**Phase 3 (Domain Analysis):**
+- ~75 multi-page domains @ 20 batch size = 2-3 minutes
+
+**Phase 4 (Page Filtering):**
+- ~2,925 pages @ 20 workers = 5-10 minutes
+
+**Phase 5 (Data Extraction):**
+- Per-page processing (LLM-dependent)
+
+## Archived Scripts
+
+Deprecated agent-coordination scripts are in `archive/agent-coordination/`:
+- These were used for multi-agent concurrent coordination
+- Replaced by sequential phase-based workflow
+- Kept for reference only
+
+## Contributing
+
+When adding new scripts:
+1. Place in appropriate phase directory
+2. Use `sys.path.insert(0, str(Path(__file__).parent.parent / 'lib'))` for imports
+3. Follow tracker_manager patterns for status updates
+4. Include git coordination via `git_utils.py`
+5. Add documentation to phase README
+
+## Related Documentation
+
+- [Phase 1 README](phase1-url-discovery/README.md) - URL Discovery
+- [Phase 2 README](phase2-page-fetching/README.md) - Page Fetching
+- [Phase 3 README](phase3-domain-analysis/README.md) - Domain Analysis
+- [Phase 4 README](phase4-page-filtering/README.md) - Page Filtering
+- [Phase 5 README](phase5-data-extraction/README.md) - Data Extraction
+- [Test Suite README](tests/README.md) - Testing Documentation
