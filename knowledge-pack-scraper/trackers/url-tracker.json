@@ -3,12 +3,12 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T04:42:40.773378",
+    "lastUpdated": "2025-11-07T04:43:25.334124",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 133,
+    "pending": 143,
     "fetching": 0,
     "completed": 0,
     "failed": 0
@@ -2272,6 +2272,176 @@
       "url": "https://www.aeelaw.com/uninsured-and-underinsured-motorist-coverage-in-new-york/",
       "urlHash": "b29e5fb6f83e3f36",
       "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_mx27ii8c9sgi2umalew8nsc0",
+      "search_ids": [
+        "search_k0gkvcr6e00396fxq6ijeq3k"
+      ],
+      "url": "https://floir.com/property-casualty/homeowners-insurance",
+      "urlHash": "ac0f1745be6cca55",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_yoqd1k4i5veqrouogss1yras",
+      "search_ids": [
+        "search_k0gkvcr6e00396fxq6ijeq3k"
+      ],
+      "url": "https://floir.com/consumers/choices-rate-comparison-search",
+      "urlHash": "a62b1d434b51ed76",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_nt31dghaiuw1gyep2rplyyt5",
+      "search_ids": [
+        "search_k0gkvcr6e00396fxq6ijeq3k"
+      ],
+      "url": "https://floir.com/consumers/hurricane-season-resources",
+      "urlHash": "5a62fec5031b9ade",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_mfywgfi5apy2wajuhuref1qh",
+      "search_ids": [
+        "search_k0gkvcr6e00396fxq6ijeq3k"
+      ],
+      "url": "https://floir.com/consumers/assignment-of-benefits-resources",
+      "urlHash": "4eb2fd32a1d39a87",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_u62ci8lxm9ub4guemrpq1yfj",
+      "search_ids": [
+        "search_k0gkvcr6e00396fxq6ijeq3k"
+      ],
+      "url": "https://floir.com/consumers",
+      "urlHash": "299f7e70482e6f08",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_g7mu4iddyp5aq4kq8co85uwc",
+      "search_ids": [
+        "search_k0gkvcr6e00396fxq6ijeq3k"
+      ],
+      "url": "https://floir.com/property-casualty/premium-discounts-for-hurricane-loss-mitigation",
+      "urlHash": "185a2464302ae908",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_m450ycgww2e98aq7v9lwrhvw",
+      "search_ids": [
+        "search_k0gkvcr6e00396fxq6ijeq3k"
+      ],
+      "url": "https://floir.com/docs-sf/default-source/property-and-casualty/stability-unit-reports/july-2023-isu-report.pdf?sfvrsn=8566a813_2",
+      "urlHash": "334401e9fcdeb121",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_aas7bq1luvp7xrur1mo3va9o",
+      "search_ids": [
+        "search_k0gkvcr6e00396fxq6ijeq3k"
+      ],
+      "url": "https://floir.com/docs-sf/default-source/property-and-casualty/stability-unit-reports/january-2025-isu-report.pdf?sfvrsn=63178287_1",
+      "urlHash": "4e46f76cb1c4f682",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_gsun34tc970f6f4w2o01j3ul",
+      "search_ids": [
+        "search_k0gkvcr6e00396fxq6ijeq3k"
+      ],
+      "url": "https://floir.com/consumers/wind-mitigation-resources/",
+      "urlHash": "3093e48da228e4cd",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_fpngovain84hgl7udof7xpx0",
+      "search_ids": [
+        "search_k0gkvcr6e00396fxq6ijeq3k"
+      ],
+      "url": "https://floir.com/home/2024/04/03/oir-issues-update-on-florida's-property-insurance-market",
+      "urlHash": "8d9bac62b5be1ff1",
+      "priority": "medium",
       "status": "pending",
       "assignedTo": null,
       "pageId": null,
