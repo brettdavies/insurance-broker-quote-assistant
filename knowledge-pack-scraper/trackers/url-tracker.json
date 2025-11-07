@@ -3,12 +3,12 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T04:49:16.803857",
+    "lastUpdated": "2025-11-07T04:50:01.298176",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 217,
+    "pending": 226,
     "fetching": 0,
     "completed": 0,
     "failed": 0
@@ -2132,7 +2132,8 @@
     {
       "id": "url_iwfomcsnimsykzwrjlnh5jer",
       "search_ids": [
-        "search_qseh76a2il9pmcox4ewgajcp"
+        "search_qseh76a2il9pmcox4ewgajcp",
+        "search_vzrq1kwa4femc3s8wdgafueh"
       ],
       "url": "https://www.dfs.ny.gov/consumers/auto_insurance/minimum_auto_insurance_requirements",
       "urlHash": "30a5f63042b1eae7",
@@ -3700,6 +3701,159 @@
       ],
       "url": "https://www.termsfeed.com/blog/sample-disclaimer-template/",
       "urlHash": "eeed104b249bad75",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_ubw7i3l98792nowztx4i4ih6",
+      "search_ids": [
+        "search_vzrq1kwa4femc3s8wdgafueh"
+      ],
+      "url": "https://www.plymouthrock.com/resources/what-is-the-minimum-auto-insurance-coverage-in-new-york",
+      "urlHash": "e05fec57bae093f3",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_kde02rdwaz9rnhebudt60ybv",
+      "search_ids": [
+        "search_vzrq1kwa4femc3s8wdgafueh"
+      ],
+      "url": "https://williammattar.com/practice-areas/car-accident/insurance-coverage-motor-vehicles/new-york-state-minimum/",
+      "urlHash": "3b1395af210532a9",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_qqr0qt9tmgtvqz6cqsjmy4bs",
+      "search_ids": [
+        "search_vzrq1kwa4femc3s8wdgafueh"
+      ],
+      "url": "https://www.dennissmithlaw.com/minimum-auto-insurance-requirements-in-new-york",
+      "urlHash": "c9d0cabf97ac48fa",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_pvzqavwbjp8pq4dfir6kveo8",
+      "search_ids": [
+        "search_vzrq1kwa4femc3s8wdgafueh"
+      ],
+      "url": "https://www.prolaw1.com/blog/minimum-and-maximum-auto-insurance-coverage-in-new-york-what-you-need-to-know/",
+      "urlHash": "5c185ea4f60685a3",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_drfcsi2a0vdzb9jjk0d34bem",
+      "search_ids": [
+        "search_vzrq1kwa4femc3s8wdgafueh"
+      ],
+      "url": "https://www.cohenjaffe.com/faqs/what-is-full-coverage-ny/",
+      "urlHash": "b714add48ad1d4b7",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_idk8hrd79sjvdlrn3ir6zxtp",
+      "search_ids": [
+        "search_vzrq1kwa4femc3s8wdgafueh"
+      ],
+      "url": "https://888gothurt.com/faqs/what-is-minimum-auto-insurance-coverage/",
+      "urlHash": "465dd4bfba73e6e1",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_qynb7ajcbvpxa7ef88kanvyu",
+      "search_ids": [
+        "search_vzrq1kwa4femc3s8wdgafueh"
+      ],
+      "url": "https://www.freeadvice.com/insurance/car-insurance-requirements-in-new-york/",
+      "urlHash": "641f786ca7cc6034",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_k877a4lryu26wq1fkvasg51o",
+      "search_ids": [
+        "search_vzrq1kwa4femc3s8wdgafueh"
+      ],
+      "url": "https://www.sattlaw.com/what-is-the-minimum-auto-insurance-coverage-in-new-york/",
+      "urlHash": "82b009a4c266edc2",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_a8it95glb03wf63ghwsjefsv",
+      "search_ids": [
+        "search_vzrq1kwa4femc3s8wdgafueh"
+      ],
+      "url": "https://www.caranddriver.com/car-insurance/a35840403/what-is-the-minimum-auto-insurance-coverage-in-new-york/",
+      "urlHash": "8bdc3110e02f455a",
       "priority": "high",
       "status": "pending",
       "assignedTo": null,
