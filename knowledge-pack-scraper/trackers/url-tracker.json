@@ -3,12 +3,12 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T03:20:28.907774",
+    "lastUpdated": "2025-11-07T03:21:12.939300",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 50,
+    "pending": 56,
     "fetching": 0,
     "completed": 0,
     "failed": 0
@@ -854,6 +854,108 @@
       ],
       "url": "https://www.statefarm.com/insurance/home-and-property/homeowners/discounts/adt",
       "urlHash": "5fea678301660746",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_wp1zakfo31bxdj11zm4zdc8c",
+      "search_ids": [
+        "search_a0j4ymkox8abyi88eeoi5kbz"
+      ],
+      "url": "https://www.geico.com/flood-insurance/",
+      "urlHash": "3989817ce0c7fd35",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_finwykoygelqkv4ggoajyf0x",
+      "search_ids": [
+        "search_a0j4ymkox8abyi88eeoi5kbz"
+      ],
+      "url": "https://www.geico.com/information/aboutinsurance/flood/",
+      "urlHash": "892ee326c57baf7f",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_e2lv71mkmfdwvlc8inojugj3",
+      "search_ids": [
+        "search_a0j4ymkox8abyi88eeoi5kbz"
+      ],
+      "url": "https://www.geico.com/flood-insurance/policyholder/",
+      "urlHash": "eeb1d580d4c306d6",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_n55rceudqslo5ys9rrfi01tt",
+      "search_ids": [
+        "search_a0j4ymkox8abyi88eeoi5kbz"
+      ],
+      "url": "https://www.geico.com/information/aboutinsurance/flood/faq/",
+      "urlHash": "7a645231f92b9937",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_q2ieh98lkbra7kqpn4ujtq6x",
+      "search_ids": [
+        "search_a0j4ymkox8abyi88eeoi5kbz"
+      ],
+      "url": "https://www.geico.com/information/aboutinsurance/renters/does-renters-insurance-cover-flooding/",
+      "urlHash": "561c887c545f8f20",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_m3z4gi3x1ect6r8couvsywux",
+      "search_ids": [
+        "search_a0j4ymkox8abyi88eeoi5kbz"
+      ],
+      "url": "https://living.geico.com/home/home-protection/get-your-home-flood-ready/",
+      "urlHash": "c92703c15d2bf68d",
       "priority": "medium",
       "status": "pending",
       "assignedTo": null,
