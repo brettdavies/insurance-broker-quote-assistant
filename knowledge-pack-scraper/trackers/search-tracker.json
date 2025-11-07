@@ -3,13 +3,13 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T06:04:07.050499",
+    "lastUpdated": "2025-11-07T06:04:09.307355",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
-    "pending": 401,
-    "claimed": 5,
+    "pending": 400,
+    "claimed": 6,
     "urls_discovered": 0,
     "completed": 70,
     "failed": 0
@@ -4813,15 +4813,16 @@
       "subcategory": "industry-source-queries",
       "carrier": null,
       "priority": "high",
-      "status": "pending",
-      "assignedTo": null,
+      "status": "claimed",
+      "assignedTo": "agnt_xkjwfuuaybcekwdlii6kuf16",
       "startedAt": null,
       "completedAt": null,
       "durationSeconds": null,
       "urlsDiscoveredCount": null,
       "errorMessage": null,
       "retryCount": 0,
-      "notes": null
+      "notes": null,
+      "claimedAt": "2025-11-07T06:04:09.305131"
     },
     {
       "id": "search_oinyhz9qalu9jf5sjsxelkp5",
