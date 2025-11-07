@@ -3,15 +3,15 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T05:54:59.957432",
+    "lastUpdated": "2025-11-07T05:55:38.069589",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
     "pending": 414,
-    "claimed": 4,
+    "claimed": 3,
     "urls_discovered": 0,
-    "completed": 58,
+    "completed": 59,
     "failed": 0
   },
   "searches": [
@@ -5566,16 +5566,18 @@
       "subcategory": "umbrella-insurance-requirements",
       "carrier": "GEICO",
       "priority": "medium",
-      "status": "claimed",
+      "status": "completed",
       "assignedTo": "agnt_m36stokkejejdnrdrp6f8v9q",
       "startedAt": null,
-      "completedAt": null,
+      "completedAt": "2025-11-07T05:55:38.067355",
       "durationSeconds": null,
-      "urlsDiscoveredCount": null,
+      "urlsDiscoveredCount": 5,
       "errorMessage": null,
       "retryCount": 0,
       "notes": null,
-      "claimedAt": "2025-11-07T05:54:59.954994"
+      "claimedAt": "2025-11-07T05:54:59.954994",
+      "urlsNewCount": 5,
+      "urlsExistingCount": 0
     },
     {
       "id": "search_eclah0rnm70er45bqbvwpgdp",
