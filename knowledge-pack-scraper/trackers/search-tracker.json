@@ -3,13 +3,13 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T05:57:39.383529",
+    "lastUpdated": "2025-11-07T05:57:41.618352",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
-    "pending": 411,
-    "claimed": 3,
+    "pending": 410,
+    "claimed": 4,
     "urls_discovered": 0,
     "completed": 62,
     "failed": 0
@@ -2204,15 +2204,16 @@
       "subcategory": "multi-policy-(home-+-auto)-discount",
       "carrier": "State Farm",
       "priority": "medium",
-      "status": "pending",
-      "assignedTo": null,
+      "status": "claimed",
+      "assignedTo": "agnt_uv34mf5ltwodt9rs21kof9i9",
       "startedAt": null,
       "completedAt": null,
       "durationSeconds": null,
       "urlsDiscoveredCount": null,
       "errorMessage": null,
       "retryCount": 0,
-      "notes": null
+      "notes": null,
+      "claimedAt": "2025-11-07T05:57:41.616190"
     },
     {
       "id": "search_gy5f76lp0g8b6ao94q062f0u",
