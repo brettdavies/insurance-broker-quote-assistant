@@ -1,0 +1,456 @@
+{
+  "domain": "mortgageresearch.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:25.971375",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 341,
+      "frequency": 341.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 8,
+      "frequency": 8.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 5,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 8,
+      "frequency": 8.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "fmcty-field",
+      "count": 177
+    },
+    {
+      "class": "fmcty-radio-option",
+      "count": 117
+    },
+    {
+      "class": "fmcty-radio-option-label",
+      "count": 117
+    },
+    {
+      "class": "fmcty-field-hidden-input",
+      "count": 65
+    },
+    {
+      "class": "fmcty-input-hidden",
+      "count": 65
+    },
+    {
+      "class": "fmcty-radio-option-two-column",
+      "count": 57
+    },
+    {
+      "class": "fmcty-label",
+      "count": 49
+    },
+    {
+      "class": "fmcty-section",
+      "count": 44
+    },
+    {
+      "class": "fmcty-section-content",
+      "count": 44
+    },
+    {
+      "class": "fmcty-fields",
+      "count": 44
+    },
+    {
+      "class": "fmcty-field-required",
+      "count": 44
+    },
+    {
+      "class": "fmcty-field-prev",
+      "count": 43
+    },
+    {
+      "class": "fmcty-prev",
+      "count": 43
+    },
+    {
+      "class": "fmcty-field-hidden",
+      "count": 40
+    },
+    {
+      "class": "fmcty-field-radio",
+      "count": 28
+    },
+    {
+      "class": "fmcty-radio-group",
+      "count": 28
+    },
+    {
+      "class": "footer__links-list-item",
+      "count": 17
+    },
+    {
+      "class": "fmcty-field-description",
+      "count": 16
+    },
+    {
+      "class": "fmcty-field-next",
+      "count": 15
+    },
+    {
+      "class": "fmcty-next",
+      "count": 15
+    },
+    {
+      "class": "fmcty-input-text",
+      "count": 12
+    },
+    {
+      "class": "nav-item",
+      "count": 10
+    },
+    {
+      "class": "fmcty-field-html",
+      "count": 10
+    },
+    {
+      "class": "a11y-hidden",
+      "count": 9
+    },
+    {
+      "class": "container",
+      "count": 8
+    },
+    {
+      "class": "svg",
+      "count": 7
+    },
+    {
+      "class": "fmcty-input-masked",
+      "count": 7
+    },
+    {
+      "class": "entry-hl",
+      "count": 6
+    },
+    {
+      "class": "entry",
+      "count": 6
+    },
+    {
+      "class": "entry-img",
+      "count": 6
+    },
+    {
+      "class": "fmcty-input-mask-number",
+      "count": 6
+    },
+    {
+      "class": "fmcty-field-text",
+      "count": 6
+    },
+    {
+      "class": "mrc-secure-label",
+      "count": 6
+    },
+    {
+      "class": "mrc-show-secure-label",
+      "count": 6
+    },
+    {
+      "class": "subnav",
+      "count": 5
+    },
+    {
+      "class": "entry-text",
+      "count": 5
+    },
+    {
+      "class": "calculator",
+      "count": 5
+    },
+    {
+      "class": "calculator-icon",
+      "count": 5
+    },
+    {
+      "class": "calculator-title",
+      "count": 5
+    },
+    {
+      "class": "calculator-cta",
+      "count": 5
+    },
+    {
+      "class": "calculator-link",
+      "count": 5
+    },
+    {
+      "class": "fmcty-field-number_slider",
+      "count": 5
+    },
+    {
+      "class": "fmcty-slider",
+      "count": 5
+    },
+    {
+      "class": "mrc-show-number-field",
+      "count": 5
+    },
+    {
+      "class": "fmcty-input-number-slider",
+      "count": 5
+    },
+    {
+      "class": "fmcty-slider-track",
+      "count": 5
+    },
+    {
+      "class": "fmcty-slider-progress",
+      "count": 5
+    },
+    {
+      "class": "fmcty-slider-grabber",
+      "count": 5
+    },
+    {
+      "class": "author-link",
+      "count": 4
+    },
+    {
+      "class": "text-block",
+      "count": 4
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "Layer_2",
+      "count": 5
+    },
+    {
+      "id": "Icons_-_iStock",
+      "count": 5
+    },
+    {
+      "id": "MortgageResearchDOTCOMBoo_address_label",
+      "count": 2
+    },
+    {
+      "id": "LeadiDscript_campaign",
+      "count": 2
+    },
+    {
+      "id": "LeadiDscript",
+      "count": 2
+    },
+    {
+      "id": "activeProspect",
+      "count": 2
+    },
+    {
+      "id": "page-article",
+      "count": 1
+    },
+    {
+      "id": "CRQPS63C77U230TJL5L0",
+      "count": 1
+    },
+    {
+      "id": "tb_tfa_script",
+      "count": 1
+    },
+    {
+      "id": "search-modal",
+      "count": 1
+    },
+    {
+      "id": "q",
+      "count": 1
+    },
+    {
+      "id": "xxTrustedFormCertUrl_0",
+      "count": 1
+    },
+    {
+      "id": "xxTrustedFormToken_0",
+      "count": 1
+    },
+    {
+      "id": "xxTrustedFormPingUrl_0",
+      "count": 1
+    },
+    {
+      "id": "skip_to_content",
+      "count": 1
+    },
+    {
+      "id": "aboutTheAuthor",
+      "count": 1
+    },
+    {
+      "id": "A",
+      "count": 1
+    },
+    {
+      "id": "B",
+      "count": 1
+    },
+    {
+      "id": "cookie_notice",
+      "count": 1
+    },
+    {
+      "id": "cookie_notice_btn",
+      "count": 1
+    },
+    {
+      "id": "dailyRatesArticleModal",
+      "count": 1
+    },
+    {
+      "id": "pkbFullDefault",
+      "count": 1
+    },
+    {
+      "id": "booForm",
+      "count": 1
+    },
+    {
+      "id": "MortgageResearchDOTCOMBoo",
+      "count": 1
+    },
+    {
+      "id": "field_MortgageResearchDOTCOMBoo_form_header",
+      "count": 1
+    },
+    {
+      "id": "MortgageResearchDOTCOMBoo_form_header",
+      "count": 1
+    },
+    {
+      "id": "field_MortgageResearchDOTCOMBoo_loan_type",
+      "count": 1
+    },
+    {
+      "id": "MortgageResearchDOTCOMBoo_loan_type_label",
+      "count": 1
+    },
+    {
+      "id": "MortgageResearchDOTCOMBoo_loan_type",
+      "count": 1
+    },
+    {
+      "id": "MortgageResearchDOTCOMBoo_loan_type_0",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

@@ -96,7 +96,9 @@ def load_domain_pages(domain: str, tm: TrackerManager) -> List[Dict]:
         if url:
             page_domain = extract_domain_from_url(url)
             if page_domain == domain:
-                html_path = tm.output_base / 'pages' / f"{page_id}.html"
+                # Extract shard prefix (first 2 chars after 'page_')
+                prefix = page_id.split('_')[1][:2]
+                html_path = tm.output_base / 'pages' / prefix / f"{page_id}.html"
                 if html_path.exists():
                     domain_pages.append({
                         'page_id': page_id,
@@ -315,8 +317,22 @@ def generate_recommendations(content_indicators, non_content_indicators, boilerp
     for item in boilerplate_patterns:
         if item['confidence'] in ['high', 'medium']:
             pattern = item['pattern']
-            excluded_selector_parts.append(f'[class*="{pattern}"]')
-            excluded_selector_parts.append(f'[id*="{pattern}"]')
+
+            # For short patterns (<=4 chars), use specific matching to avoid false positives
+            # e.g., "ad" would match "head", "read", "lead"
+            # e.g., "form" would match "platform", "transform", "perform"
+            if len(pattern) <= 4:
+                # Use starts-with and ends-with patterns for short strings
+                excluded_selector_parts.append(f'[class^="{pattern}-"]')   # Starts with "ad-"
+                excluded_selector_parts.append(f'[class$="-{pattern}"]')   # Ends with "-ad"
+                excluded_selector_parts.append(f'[class~="{pattern}"]')    # Exact word match
+                excluded_selector_parts.append(f'[id^="{pattern}-"]')
+                excluded_selector_parts.append(f'[id$="-{pattern}"]')
+                excluded_selector_parts.append(f'[id~="{pattern}"]')
+            else:
+                # For longer patterns, substring matching is safer
+                excluded_selector_parts.append(f'[class*="{pattern}"]')
+                excluded_selector_parts.append(f'[id*="{pattern}"]')
 
     return {
         'excluded_tags': excluded_tags,
@@ -378,8 +394,12 @@ def main():
     # Initialize TrackerManager
     tm = TrackerManager()
 
-    # Create output directory
-    output_dir = Path(args.output)
+    # Create output directory (relative to project root, not script directory)
+    base_path = Path(__file__).parent.parent
+    if Path(args.output).is_absolute():
+        output_dir = Path(args.output)
+    else:
+        output_dir = base_path / args.output
     output_dir.mkdir(parents=True, exist_ok=True)
 
     if args.all:

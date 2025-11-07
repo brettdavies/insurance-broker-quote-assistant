@@ -1,0 +1,456 @@
+{
+  "domain": "mass.gov",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:24.827084",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 73,
+      "frequency": 73.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 10,
+      "frequency": 10.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 7,
+      "frequency": 7.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 8,
+      "frequency": 8.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 7,
+      "frequency": 7.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "ma__main__hamburger-nav__subitem",
+      "count": 38
+    },
+    {
+      "class": "js-main-nav-hamburger__subitem",
+      "count": 38
+    },
+    {
+      "class": "ma__main__hamburger-nav__link",
+      "count": 38
+    },
+    {
+      "class": "js-main-nav-hamburger__link",
+      "count": 38
+    },
+    {
+      "class": "ma__visually-hidden",
+      "count": 17
+    },
+    {
+      "class": "ma__main__hamburger-nav__item",
+      "count": 5
+    },
+    {
+      "class": "has-subnav",
+      "count": 5
+    },
+    {
+      "class": "js-main-nav-hamburger-toggle",
+      "count": 5
+    },
+    {
+      "class": "ma__main__hamburger-nav__top-link",
+      "count": 5
+    },
+    {
+      "class": "js-main-nav-hamburger__top-link",
+      "count": 5
+    },
+    {
+      "class": "show-label",
+      "count": 5
+    },
+    {
+      "class": "toggle-indicator",
+      "count": 5
+    },
+    {
+      "class": "ma__main__hamburger-nav__subitems",
+      "count": 5
+    },
+    {
+      "class": "js-main-nav-hamburger-content",
+      "count": 5
+    },
+    {
+      "class": "is-closed",
+      "count": 5
+    },
+    {
+      "class": "ma__main__hamburger-nav__container",
+      "count": 5
+    },
+    {
+      "class": "js-main-nav-hamburger__container",
+      "count": 5
+    },
+    {
+      "class": "fsField",
+      "count": 5
+    },
+    {
+      "class": "ma__utility-nav__item",
+      "count": 4
+    },
+    {
+      "class": "feedback-response",
+      "count": 4
+    },
+    {
+      "class": "mass-alerts-block",
+      "count": 3
+    },
+    {
+      "class": "hidden",
+      "count": 3
+    },
+    {
+      "class": "ma__header-search-suggestion",
+      "count": 3
+    },
+    {
+      "class": "ma__header-search-suggestion-option",
+      "count": 3
+    },
+    {
+      "class": "ma__header-search-suggestion-option-text",
+      "count": 3
+    },
+    {
+      "class": "ma__header-search-suggestion-option-input",
+      "count": 3
+    },
+    {
+      "class": "ma__breadcrumbs__item",
+      "count": 3
+    },
+    {
+      "class": "ma_feedback-fieldset",
+      "count": 3
+    },
+    {
+      "class": "ma__brand-banner-expansion-item",
+      "count": 2
+    },
+    {
+      "class": "dark",
+      "count": 2
+    },
+    {
+      "class": "ma__brand-banner-expansion-item-content",
+      "count": 2
+    },
+    {
+      "class": "ma__emergency-alerts__container",
+      "count": 2
+    },
+    {
+      "class": "show",
+      "count": 2
+    },
+    {
+      "class": "ma__header__hamburger__utility-nav",
+      "count": 2
+    },
+    {
+      "class": "ma__utility-nav",
+      "count": 2
+    },
+    {
+      "class": "js-util-nav",
+      "count": 2
+    },
+    {
+      "class": "ma__utility-nav__items",
+      "count": 2
+    },
+    {
+      "class": "skiptranslate",
+      "count": 2
+    },
+    {
+      "class": "ma__utility-nav__link",
+      "count": 2
+    },
+    {
+      "class": "direct-link",
+      "count": 2
+    },
+    {
+      "class": "ma__header__hamburger__logo",
+      "count": 2
+    },
+    {
+      "class": "ma__site-logo",
+      "count": 2
+    },
+    {
+      "class": "ma__header-search",
+      "count": 2
+    },
+    {
+      "class": "ma__form",
+      "count": 2
+    },
+    {
+      "class": "js-header-search-form",
+      "count": 2
+    },
+    {
+      "class": "ma__header-search__label",
+      "count": 2
+    },
+    {
+      "class": "ma__header-search__input",
+      "count": 2
+    },
+    {
+      "class": "ma__button-search--secondary",
+      "count": 2
+    },
+    {
+      "class": "ma__button-search__label",
+      "count": 2
+    },
+    {
+      "class": "ma__header-search-suggestion-option-scope",
+      "count": 2
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "2941c74825ac6b2aab1eeb97bfe8461a",
+      "count": 1
+    },
+    {
+      "id": "8ae18d1e31e309e4255718ae841b7c46",
+      "count": 1
+    },
+    {
+      "id": "dd60b6c15f52b52b7652668be6835a6f",
+      "count": 1
+    },
+    {
+      "id": "5a0f858f9a0960b466d654cbe1f931da",
+      "count": 1
+    },
+    {
+      "id": "def7d319d033f8ac58114500dec44955",
+      "count": 1
+    },
+    {
+      "id": "96c973c3985894519e07c190c6a2e604",
+      "count": 1
+    },
+    {
+      "id": "0242a4451bbcd881e5097ddd8de8495f",
+      "count": 1
+    },
+    {
+      "id": "ma__brand-banner-button",
+      "count": 1
+    },
+    {
+      "id": "ma__brand-banner-content",
+      "count": 1
+    },
+    {
+      "id": "8e30d0d9-03c8-4ae9-b99e-1b6d8fee97e6__1762449628",
+      "count": 1
+    },
+    {
+      "id": "accordionv080m-1",
+      "count": 1
+    },
+    {
+      "id": "b56b3d75b749fde94380cd4f30cb861a",
+      "count": 1
+    },
+    {
+      "id": "top-alerts",
+      "count": 1
+    },
+    {
+      "id": "header",
+      "count": 1
+    },
+    {
+      "id": "main-navigation",
+      "count": 1
+    },
+    {
+      "id": "google_translate_element",
+      "count": 1
+    },
+    {
+      "id": ":0.targetLanguage",
+      "count": 1
+    },
+    {
+      "id": "header-search-mobile",
+      "count": 1
+    },
+    {
+      "id": "button-mobile-1",
+      "count": 1
+    },
+    {
+      "id": "menu-mobile-1",
+      "count": 1
+    },
+    {
+      "id": "button-mobile-2",
+      "count": 1
+    },
+    {
+      "id": "menu-mobile-2",
+      "count": 1
+    },
+    {
+      "id": "button-mobile-3",
+      "count": 1
+    },
+    {
+      "id": "menu-mobile-3",
+      "count": 1
+    },
+    {
+      "id": "button-mobile-4",
+      "count": 1
+    },
+    {
+      "id": "menu-mobile-4",
+      "count": 1
+    },
+    {
+      "id": "button-mobile-5",
+      "count": 1
+    },
+    {
+      "id": "menu-mobile-5",
+      "count": 1
+    },
+    {
+      "id": "header-search",
+      "count": 1
+    },
+    {
+      "id": "search-suggestions",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "main, [role=\"main\"]",
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

@@ -1,0 +1,439 @@
+{
+  "domain": "nypifirm.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:20.601203",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 20,
+      "frequency": 20.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 12,
+      "frequency": 12.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "row",
+      "count": 11
+    },
+    {
+      "class": "nav-link",
+      "count": 10
+    },
+    {
+      "class": "footer-icon",
+      "count": 10
+    },
+    {
+      "class": "icon",
+      "count": 8
+    },
+    {
+      "class": "block",
+      "count": 7
+    },
+    {
+      "class": "container",
+      "count": 7
+    },
+    {
+      "class": "nav-item",
+      "count": 7
+    },
+    {
+      "class": "link",
+      "count": 5
+    },
+    {
+      "class": "d-none",
+      "count": 5
+    },
+    {
+      "class": "form-group",
+      "count": 5
+    },
+    {
+      "class": "control-label",
+      "count": 5
+    },
+    {
+      "class": "form-control",
+      "count": 5
+    },
+    {
+      "class": "p-0",
+      "count": 4
+    },
+    {
+      "class": "d-flex",
+      "count": 4
+    },
+    {
+      "class": "justify-content-end",
+      "count": 4
+    },
+    {
+      "class": "dropdown",
+      "count": 4
+    },
+    {
+      "class": "footer",
+      "count": 4
+    },
+    {
+      "class": "no-gutters",
+      "count": 4
+    },
+    {
+      "class": "inquiry-placeholder",
+      "count": 4
+    },
+    {
+      "class": "phone-number",
+      "count": 3
+    },
+    {
+      "class": "d-lg-none",
+      "count": 3
+    },
+    {
+      "class": "dropdown-menu",
+      "count": 3
+    },
+    {
+      "class": "justify-content-center",
+      "count": 3
+    },
+    {
+      "class": "col-12",
+      "count": 3
+    },
+    {
+      "class": "separator",
+      "count": 3
+    },
+    {
+      "class": "section",
+      "count": 3
+    },
+    {
+      "class": "required",
+      "count": 3
+    },
+    {
+      "class": "list-inline-item",
+      "count": 3
+    },
+    {
+      "class": "page",
+      "count": 2
+    },
+    {
+      "class": "alert",
+      "count": 2
+    },
+    {
+      "class": "alert-dismissible",
+      "count": 2
+    },
+    {
+      "class": "fade",
+      "count": 2
+    },
+    {
+      "class": "show",
+      "count": 2
+    },
+    {
+      "class": "rich-content",
+      "count": 2
+    },
+    {
+      "class": "close",
+      "count": 2
+    },
+    {
+      "class": "header-logo",
+      "count": 2
+    },
+    {
+      "class": "logo",
+      "count": 2
+    },
+    {
+      "class": "align-items-center",
+      "count": 2
+    },
+    {
+      "class": "phone-wrapper",
+      "count": 2
+    },
+    {
+      "class": "h3",
+      "count": 2
+    },
+    {
+      "class": "dropdown-toggle",
+      "count": 2
+    },
+    {
+      "class": "dropdown-toggle-split",
+      "count": 2
+    },
+    {
+      "class": "single-parent",
+      "count": 2
+    },
+    {
+      "class": "dropdown-item",
+      "count": 2
+    },
+    {
+      "class": "col-lg-8",
+      "count": 2
+    },
+    {
+      "class": "svg-inline--fa",
+      "count": 2
+    },
+    {
+      "class": "fa-w-14",
+      "count": 2
+    },
+    {
+      "class": "email",
+      "count": 2
+    },
+    {
+      "class": "lazyload",
+      "count": 2
+    },
+    {
+      "class": "col-lg-6",
+      "count": 2
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "favicon",
+      "count": 1
+    },
+    {
+      "id": "block-javascript-defer-methods",
+      "count": 1
+    },
+    {
+      "id": "google-maps-async-loader",
+      "count": 1
+    },
+    {
+      "id": "main-css",
+      "count": 1
+    },
+    {
+      "id": "navlink-1",
+      "count": 1
+    },
+    {
+      "id": "main-content",
+      "count": 1
+    },
+    {
+      "id": "consultation",
+      "count": 1
+    },
+    {
+      "id": "inquiry-form",
+      "count": 1
+    },
+    {
+      "id": "subject-23674",
+      "count": 1
+    },
+    {
+      "id": "id_inquiry-special",
+      "count": 1
+    },
+    {
+      "id": "name-23674-label",
+      "count": 1
+    },
+    {
+      "id": "name-23674-placeholder",
+      "count": 1
+    },
+    {
+      "id": "name-23674",
+      "count": 1
+    },
+    {
+      "id": "phone-23674-label",
+      "count": 1
+    },
+    {
+      "id": "phone-23674-placeholder",
+      "count": 1
+    },
+    {
+      "id": "phone-23674",
+      "count": 1
+    },
+    {
+      "id": "email-23674-label",
+      "count": 1
+    },
+    {
+      "id": "email-23674-placeholder",
+      "count": 1
+    },
+    {
+      "id": "email-23674",
+      "count": 1
+    },
+    {
+      "id": "inquiry-23674-label",
+      "count": 1
+    },
+    {
+      "id": "inquiry-23674-placeholder",
+      "count": 1
+    },
+    {
+      "id": "inquiry-23674",
+      "count": 1
+    },
+    {
+      "id": "btn-1737224-style",
+      "count": 1
+    },
+    {
+      "id": "map-canvas-0-script",
+      "count": 1
+    },
+    {
+      "id": "map-canvas-0",
+      "count": 1
+    },
+    {
+      "id": "btn-1737308-style",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

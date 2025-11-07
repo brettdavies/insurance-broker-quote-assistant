@@ -1,0 +1,454 @@
+{
+  "domain": "dallasnews.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:23.244864",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 33,
+      "frequency": 33.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 304,
+      "frequency": 304.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 11,
+      "frequency": 11.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 14,
+      "frequency": 14.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 22,
+      "frequency": 22.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "text-gray-dark",
+      "count": 172
+    },
+    {
+      "class": "secondaryRoman",
+      "count": 143
+    },
+    {
+      "class": "link-opacity",
+      "count": 138
+    },
+    {
+      "class": "secondaryRoman-20",
+      "count": 123
+    },
+    {
+      "class": "dmnc_chains-site-header-config-frame-nav-module__TSY-E",
+      "count": 111
+    },
+    {
+      "class": "flex",
+      "count": 93
+    },
+    {
+      "class": "w-full",
+      "count": 60
+    },
+    {
+      "class": "border-gray-light",
+      "count": 54
+    },
+    {
+      "class": "items-center",
+      "count": 54
+    },
+    {
+      "class": "cursor-pointer",
+      "count": 48
+    },
+    {
+      "class": "h-full",
+      "count": 45
+    },
+    {
+      "class": "inline-block",
+      "count": 45
+    },
+    {
+      "class": "secondaryBold",
+      "count": 43
+    },
+    {
+      "class": "hover_underline",
+      "count": 37
+    },
+    {
+      "class": "pb-6",
+      "count": 35
+    },
+    {
+      "class": "block",
+      "count": 31
+    },
+    {
+      "class": "lg_block",
+      "count": 31
+    },
+    {
+      "class": "pr-7",
+      "count": 31
+    },
+    {
+      "class": "dmnc_features-footer-nav-nav-module__waY0S",
+      "count": 30
+    },
+    {
+      "class": "lg_pr-0",
+      "count": 30
+    },
+    {
+      "class": "inline-flex",
+      "count": 28
+    },
+    {
+      "class": "border-b",
+      "count": 26
+    },
+    {
+      "class": "flex-col",
+      "count": 26
+    },
+    {
+      "class": "justify-center",
+      "count": 25
+    },
+    {
+      "class": "undefined",
+      "count": 25
+    },
+    {
+      "class": "relative",
+      "count": 23
+    },
+    {
+      "class": "column",
+      "count": 23
+    },
+    {
+      "class": "flex-grow",
+      "count": 19
+    },
+    {
+      "class": "text-black",
+      "count": 19
+    },
+    {
+      "class": "dmnc_generic-swiper-swiper-module__ziaVr",
+      "count": 19
+    },
+    {
+      "class": "flex-wrap",
+      "count": 18
+    },
+    {
+      "class": "text-gray-medium",
+      "count": 18
+    },
+    {
+      "class": "py-5",
+      "count": 18
+    },
+    {
+      "class": "justify-between",
+      "count": 17
+    },
+    {
+      "class": "border-2",
+      "count": 17
+    },
+    {
+      "class": "border-transparent",
+      "count": 17
+    },
+    {
+      "class": "focus_border-blue-dark",
+      "count": 17
+    },
+    {
+      "class": "overflow-hidden",
+      "count": 16
+    },
+    {
+      "class": "secondaryBoldCaps",
+      "count": 15
+    },
+    {
+      "class": "max-w-full",
+      "count": 14
+    },
+    {
+      "class": "secondaryBold-7",
+      "count": 14
+    },
+    {
+      "class": "h-7",
+      "count": 14
+    },
+    {
+      "class": "text-white",
+      "count": 14
+    },
+    {
+      "class": "secondaryRoman-10",
+      "count": 14
+    },
+    {
+      "class": "small-12",
+      "count": 14
+    },
+    {
+      "class": "pb-3",
+      "count": 14
+    },
+    {
+      "class": "h-auto",
+      "count": 13
+    },
+    {
+      "class": "w-7",
+      "count": 13
+    },
+    {
+      "class": "mr-7",
+      "count": 13
+    },
+    {
+      "class": "bg-white",
+      "count": 12
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "968d1f3b8d7039204fac541d622f0e4e",
+      "count": 7
+    },
+    {
+      "id": "AKSLP6D6QNDTRHANKDJENMIH6A",
+      "count": 3
+    },
+    {
+      "id": "fusion-template-styles",
+      "count": 2
+    },
+    {
+      "id": "boomr-scr-as",
+      "count": 2
+    },
+    {
+      "id": "multimedia",
+      "count": 2
+    },
+    {
+      "id": "oclose",
+      "count": 2
+    },
+    {
+      "id": "header-promo",
+      "count": 2
+    },
+    {
+      "id": "vf-skeleton-container",
+      "count": 2
+    },
+    {
+      "id": "skeleton-container",
+      "count": 2
+    },
+    {
+      "id": "generic-block",
+      "count": 2
+    },
+    {
+      "id": "subscribeEmail",
+      "count": 2
+    },
+    {
+      "id": "viafoura-conversations-id",
+      "count": 2
+    },
+    {
+      "id": "_mljs",
+      "count": 1
+    },
+    {
+      "id": "polyfill-script",
+      "count": 1
+    },
+    {
+      "id": "fusion-engine-react-script",
+      "count": 1
+    },
+    {
+      "id": "fusion-engine-combinations-script",
+      "count": 1
+    },
+    {
+      "id": "sophi-downloader",
+      "count": 1
+    },
+    {
+      "id": "sophi-initialize",
+      "count": 1
+    },
+    {
+      "id": " + i + dl;\n              f.parentNode.insertBefore(j, f);\n            })(window, document, ",
+      "count": 1
+    },
+    {
+      "id": ").concat(id), true);\n                injectScript(",
+      "count": 1
+    },
+    {
+      "id": ").concat(id), false);\n            }\n\n            (function (window, accountId) {\n                var clientConfig = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};\n\n                load(window, accountId, clientConfig);\n            })(window, 8735, {} /* Config */);\n          </script><script>\n            (function(cid, mkt, config, domain) {\n              var ml = document.createElement(",
+      "count": 1
+    },
+    {
+      "id": "kueezrtb_latest",
+      "count": 1
+    },
+    {
+      "id": "trinity-debug-dev-mode",
+      "count": 1
+    },
+    {
+      "id": "googleidentityservice_button_styles",
+      "count": 1
+    },
+    {
+      "id": "googleidentityservice",
+      "count": 1
+    },
+    {
+      "id": "osano-cm-aria.newWindow",
+      "count": 1
+    },
+    {
+      "id": "osano-cm-aria.external",
+      "count": 1
+    },
+    {
+      "id": "osano-cm-aria.externalNewWindow",
+      "count": 1
+    },
+    {
+      "id": "82613bd1-f9e8-409d-b021-6eed6573bed4",
+      "count": 1
+    },
+    {
+      "id": "34607490-5868-4695-8a09-364129b19889",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"menu\"], [id*=\"menu\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

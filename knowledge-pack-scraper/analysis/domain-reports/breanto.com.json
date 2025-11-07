@@ -1,0 +1,393 @@
+{
+  "domain": "breanto.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:22.627869",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "footer",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "nav",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 15,
+      "frequency": 15.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 45,
+      "frequency": 45.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 6,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 6,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "component",
+      "count": 38
+    },
+    {
+      "class": "content-page-category-results__item",
+      "count": 25
+    },
+    {
+      "class": "content-page-category-results__item-link",
+      "count": 25
+    },
+    {
+      "class": "text-list__item",
+      "count": 19
+    },
+    {
+      "class": "vsi",
+      "count": 16
+    },
+    {
+      "class": "component--bottom-l",
+      "count": 13
+    },
+    {
+      "class": "component--no-default-space",
+      "count": 11
+    },
+    {
+      "class": "content-page-results__item",
+      "count": 11
+    },
+    {
+      "class": "content-page-results__container",
+      "count": 11
+    },
+    {
+      "class": "content-page-results__image",
+      "count": 11
+    },
+    {
+      "class": "content-page-results__title",
+      "count": 11
+    },
+    {
+      "class": "component--top-l",
+      "count": 8
+    },
+    {
+      "class": "text-paragraph",
+      "count": 8
+    },
+    {
+      "class": "content-page-paragraph",
+      "count": 7
+    },
+    {
+      "class": "content-page-paragraph--default",
+      "count": 7
+    },
+    {
+      "class": "content-page-paragraph__description",
+      "count": 7
+    },
+    {
+      "class": "content-page-results__content-container",
+      "count": 6
+    },
+    {
+      "class": "content-page-results__badge-container",
+      "count": 6
+    },
+    {
+      "class": "content-page-results__category",
+      "count": 6
+    },
+    {
+      "class": "content-page-results__read-time",
+      "count": 6
+    },
+    {
+      "class": "search-header-content__category",
+      "count": 5
+    },
+    {
+      "class": "search-header-content__category-link",
+      "count": 5
+    },
+    {
+      "class": "table-of-contents__item",
+      "count": 5
+    },
+    {
+      "class": "table-of-contents__link",
+      "count": 5
+    },
+    {
+      "class": "content-page-paragraph__title",
+      "count": 5
+    },
+    {
+      "class": "content-page-results__image-container",
+      "count": 5
+    },
+    {
+      "class": "columns-range",
+      "count": 4
+    },
+    {
+      "class": "columns-range--default",
+      "count": 4
+    },
+    {
+      "class": "columns-range__content",
+      "count": 4
+    },
+    {
+      "class": "auto-suggest__term",
+      "count": 4
+    },
+    {
+      "class": "text-list",
+      "count": 4
+    },
+    {
+      "class": "share-page__item",
+      "count": 4
+    },
+    {
+      "class": "share-page__button",
+      "count": 4
+    },
+    {
+      "class": "share-page__image",
+      "count": 4
+    },
+    {
+      "class": "footer-navigation__item",
+      "count": 4
+    },
+    {
+      "class": "footer-navigation__link",
+      "count": 4
+    },
+    {
+      "class": "section",
+      "count": 3
+    },
+    {
+      "class": "logo",
+      "count": 3
+    },
+    {
+      "class": "columns__column",
+      "count": 3
+    },
+    {
+      "class": "display-banner",
+      "count": 3
+    },
+    {
+      "class": "display-banner--default",
+      "count": 3
+    },
+    {
+      "class": "display-banner__slot",
+      "count": 3
+    },
+    {
+      "class": "logo-switch-image",
+      "count": 2
+    },
+    {
+      "class": "logo-switch-image--show",
+      "count": 2
+    },
+    {
+      "class": "auto-suggest__separator",
+      "count": 2
+    },
+    {
+      "class": "'+this._iconClass+",
+      "count": 2
+    },
+    {
+      "class": "'+this._itemClass+",
+      "count": 2
+    },
+    {
+      "class": "component--hidden",
+      "count": 2
+    },
+    {
+      "class": "content-page-breadcrumb__crumb",
+      "count": 2
+    },
+    {
+      "class": "columns--sticky",
+      "count": 2
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "+(pvid||",
+      "count": 1
+    },
+    {
+      "id": "google-csa-ads-script",
+      "count": 1
+    },
+    {
+      "id": "slot-1",
+      "count": 1
+    },
+    {
+      "id": "slot-2",
+      "count": 1
+    },
+    {
+      "id": "google_ads_iframe_/28456428/breanto-online/breanto-article_1__container__",
+      "count": 1
+    },
+    {
+      "id": "csa-related-1",
+      "count": 1
+    },
+    {
+      "id": "master-1",
+      "count": 1
+    },
+    {
+      "id": "slot-3",
+      "count": 1
+    },
+    {
+      "id": "google_ads_iframe_/28456428/breanto-online/breanto-article_2__container__",
+      "count": 1
+    },
+    {
+      "id": "cpp-what-is-insurance-quoting",
+      "count": 1
+    },
+    {
+      "id": "cpp-types-of-insurance-quotes",
+      "count": 1
+    },
+    {
+      "id": "cpp-benefits-of-obtaining-multiple-insurance",
+      "count": 1
+    },
+    {
+      "id": "cpp-tips-for-getting-accurate-insurance",
+      "count": 1
+    },
+    {
+      "id": "cpp-navigating-the-world-of-online-quoting",
+      "count": 1
+    },
+    {
+      "id": "cookie-consent__accept",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "nav"
+    ],
+    "css_selector": null,
+    "excluded_selector": "[class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "low"
+  }
+}

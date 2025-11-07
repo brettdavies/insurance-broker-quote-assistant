@@ -1,0 +1,347 @@
+{
+  "domain": "autoinsuranceblogs.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:17.676748",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 78,
+      "frequency": 78.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 7,
+      "frequency": 7.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "text-gray-700",
+      "count": 63
+    },
+    {
+      "class": "dark:text-gray-300",
+      "count": 63
+    },
+    {
+      "class": "leading-relaxed",
+      "count": 61
+    },
+    {
+      "class": "px-4",
+      "count": 53
+    },
+    {
+      "class": "whitespace-pre-line",
+      "count": 46
+    },
+    {
+      "class": "text-primary",
+      "count": 43
+    },
+    {
+      "class": "text-base",
+      "count": 43
+    },
+    {
+      "class": "md:text-lg",
+      "count": 41
+    },
+    {
+      "class": "py-2",
+      "count": 40
+    },
+    {
+      "class": "underline",
+      "count": 39
+    },
+    {
+      "class": "flex",
+      "count": 36
+    },
+    {
+      "class": "text-2xl",
+      "count": 34
+    },
+    {
+      "class": "md:text-3xl",
+      "count": 33
+    },
+    {
+      "class": "items-center",
+      "count": 32
+    },
+    {
+      "class": "text-sm",
+      "count": 31
+    },
+    {
+      "class": "font-bold",
+      "count": 29
+    },
+    {
+      "class": "text-gray-500",
+      "count": 27
+    },
+    {
+      "class": "font-medium",
+      "count": 24
+    },
+    {
+      "class": "font-semibold",
+      "count": 21
+    },
+    {
+      "class": "lucide",
+      "count": 20
+    },
+    {
+      "class": "space-y-2",
+      "count": 20
+    },
+    {
+      "class": "dark:text-gray-400",
+      "count": 20
+    },
+    {
+      "class": "justify-center",
+      "count": 18
+    },
+    {
+      "class": "list-inside",
+      "count": 17
+    },
+    {
+      "class": "list-disc",
+      "count": 17
+    },
+    {
+      "class": "rounded-md",
+      "count": 16
+    },
+    {
+      "class": "hover:text-primary",
+      "count": 16
+    },
+    {
+      "class": "inline-flex",
+      "count": 15
+    },
+    {
+      "class": "transition-colors",
+      "count": 15
+    },
+    {
+      "class": "disabled:pointer-events-none",
+      "count": 15
+    },
+    {
+      "class": "disabled:opacity-50",
+      "count": 15
+    },
+    {
+      "class": "hover:bg-accent",
+      "count": 15
+    },
+    {
+      "class": "hover:text-accent-foreground",
+      "count": 15
+    },
+    {
+      "class": "h-10",
+      "count": 15
+    },
+    {
+      "class": "relative",
+      "count": 15
+    },
+    {
+      "class": "group",
+      "count": 15
+    },
+    {
+      "class": "flex-col",
+      "count": 14
+    },
+    {
+      "class": "even:bg-white",
+      "count": 14
+    },
+    {
+      "class": "odd:bg-gray-50",
+      "count": 14
+    },
+    {
+      "class": "dark:even:bg-gray-900",
+      "count": 14
+    },
+    {
+      "class": "dark:odd:bg-gray-800",
+      "count": 14
+    },
+    {
+      "class": "gap-2",
+      "count": 13
+    },
+    {
+      "class": "text-xs",
+      "count": 13
+    },
+    {
+      "class": "py-3",
+      "count": 12
+    },
+    {
+      "class": "flex-1",
+      "count": 11
+    },
+    {
+      "class": "bg-background",
+      "count": 11
+    },
+    {
+      "class": "border",
+      "count": 11
+    },
+    {
+      "class": "whitespace-nowrap",
+      "count": 10
+    },
+    {
+      "class": "ring-offset-background",
+      "count": 10
+    },
+    {
+      "class": "focus-visible:outline-none",
+      "count": 10
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "radix-\u00abRdnb\u00bb-trigger-radix-\u00abRrdnb\u00bb",
+      "count": 1
+    },
+    {
+      "id": "radix-\u00abRdnb\u00bb-trigger-radix-\u00abR13dnb\u00bb",
+      "count": 1
+    },
+    {
+      "id": "radix-\u00abR2hnb\u00bb",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

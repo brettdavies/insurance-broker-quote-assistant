@@ -1,0 +1,439 @@
+{
+  "domain": "usassure.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:22.012705",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 7,
+      "frequency": 7.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 29,
+      "frequency": 29.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "MsoNormal",
+      "count": 46
+    },
+    {
+      "class": "topNavLink",
+      "count": 12
+    },
+    {
+      "class": "primaryLinks",
+      "count": 11
+    },
+    {
+      "class": "l1",
+      "count": 8
+    },
+    {
+      "class": "centered",
+      "count": 7
+    },
+    {
+      "class": "header",
+      "count": 7
+    },
+    {
+      "class": "afterContent",
+      "count": 6
+    },
+    {
+      "class": "subNavFade",
+      "count": 6
+    },
+    {
+      "class": "item",
+      "count": 6
+    },
+    {
+      "class": "mobileToggle",
+      "count": 6
+    },
+    {
+      "class": "mobileSubNav",
+      "count": 6
+    },
+    {
+      "class": "subHeader",
+      "count": 6
+    },
+    {
+      "class": "dynamicResize",
+      "count": 6
+    },
+    {
+      "class": "arrow",
+      "count": 5
+    },
+    {
+      "class": "leadLink",
+      "count": 5
+    },
+    {
+      "class": "toggleClosed",
+      "count": 5
+    },
+    {
+      "class": "mainNavItem",
+      "count": 4
+    },
+    {
+      "class": "subNav",
+      "count": 4
+    },
+    {
+      "class": "subNavContent",
+      "count": 4
+    },
+    {
+      "class": "left",
+      "count": 4
+    },
+    {
+      "class": "copy",
+      "count": 4
+    },
+    {
+      "class": "sectionLabel",
+      "count": 4
+    },
+    {
+      "class": "resourceItem",
+      "count": 4
+    },
+    {
+      "class": "articleType1619",
+      "count": 4
+    },
+    {
+      "class": "wImg",
+      "count": 4
+    },
+    {
+      "class": "yImg",
+      "count": 4
+    },
+    {
+      "class": "content",
+      "count": 3
+    },
+    {
+      "class": "navSections",
+      "count": 3
+    },
+    {
+      "class": "secondaryLinks",
+      "count": 3
+    },
+    {
+      "class": "right",
+      "count": 3
+    },
+    {
+      "class": "btn",
+      "count": 3
+    },
+    {
+      "class": "mainNavSecOpen",
+      "count": 2
+    },
+    {
+      "class": "current",
+      "count": 2
+    },
+    {
+      "class": "resourceFocusChildren",
+      "count": 2
+    },
+    {
+      "class": "viewAll",
+      "count": 2
+    },
+    {
+      "class": "title",
+      "count": 2
+    },
+    {
+      "class": "img",
+      "count": 2
+    },
+    {
+      "class": "playBtnWrap",
+      "count": 2
+    },
+    {
+      "class": "playButton",
+      "count": 2
+    },
+    {
+      "class": "rightSubNav",
+      "count": 2
+    },
+    {
+      "class": "searchBtn",
+      "count": 2
+    },
+    {
+      "class": "toggleSearchButton",
+      "count": 2
+    },
+    {
+      "class": "sitewidth",
+      "count": 2
+    },
+    {
+      "class": "articleSidebarTextWidget",
+      "count": 2
+    },
+    {
+      "class": "arrowLinkList",
+      "count": 2
+    },
+    {
+      "class": "skiplink",
+      "count": 1
+    },
+    {
+      "class": "visuallyhidden",
+      "count": 1
+    },
+    {
+      "class": "focusable",
+      "count": 1
+    },
+    {
+      "class": "logo",
+      "count": 1
+    },
+    {
+      "class": "navWrap",
+      "count": 1
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "Body",
+      "count": 1
+    },
+    {
+      "id": "Wrapper",
+      "count": 1
+    },
+    {
+      "id": "Header",
+      "count": 1
+    },
+    {
+      "id": "MainNavLeft",
+      "count": 1
+    },
+    {
+      "id": "MainNavRight",
+      "count": 1
+    },
+    {
+      "id": "SearchSVG",
+      "count": 1
+    },
+    {
+      "id": "MainMenuBtn",
+      "count": 1
+    },
+    {
+      "id": "SearchPanel",
+      "count": 1
+    },
+    {
+      "id": "Main",
+      "count": 1
+    },
+    {
+      "id": "ShareBtn3207",
+      "count": 1
+    },
+    {
+      "id": "ShareBtn3208",
+      "count": 1
+    },
+    {
+      "id": "ShareBtn3209",
+      "count": 1
+    },
+    {
+      "id": "ShareBtn3210",
+      "count": 1
+    },
+    {
+      "id": "dd7a965d-74b6-49db-a246-58f0a9a491fe",
+      "count": 1
+    },
+    {
+      "id": "1982",
+      "count": 1
+    },
+    {
+      "id": "dea25470-28fa-4e8b-85e4-31e31418ff9b",
+      "count": 1
+    },
+    {
+      "id": "2511",
+      "count": 1
+    },
+    {
+      "id": "9eced29c-a3c0-4462-a773-c9b60948bc22",
+      "count": 1
+    },
+    {
+      "id": "2635",
+      "count": 1
+    },
+    {
+      "id": "7596a87f-b9c0-4314-8024-e06c28fe2744",
+      "count": 1
+    },
+    {
+      "id": "1946",
+      "count": 1
+    },
+    {
+      "id": "Footer",
+      "count": 1
+    },
+    {
+      "id": "VideoModel",
+      "count": 1
+    },
+    {
+      "id": "ContrastButton",
+      "count": 1
+    },
+    {
+      "id": "Capa_1",
+      "count": 1
+    },
+    {
+      "id": "8846",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

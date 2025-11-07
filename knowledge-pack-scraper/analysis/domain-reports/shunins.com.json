@@ -1,7 +1,7 @@
 {
   "domain": "shunins.com",
   "total_pages": 11,
-  "analyzed_at": "2025-11-07T14:35:31.899387",
+  "analyzed_at": "2025-11-07T16:31:12.878867",
   "content_indicators": [
     {
       "selector": "article",
@@ -447,7 +447,7 @@
       "nav"
     ],
     "css_selector": "article",
-    "excluded_selector": "[class*=\"ad\"], [id*=\"ad\"], [class*=\"ads\"], [id*=\"ads\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
     "pruning_threshold": 0.6,
     "min_word_threshold": 50,
     "confidence_score": "medium"

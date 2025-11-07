@@ -1,0 +1,444 @@
+{
+  "domain": "nsktglobal.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:26.005967",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 5,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 54,
+      "frequency": 54.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 43,
+      "frequency": 43.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 43,
+      "frequency": 43.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 18,
+      "frequency": 18.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "breadcrumb-item",
+      "count": 37
+    },
+    {
+      "class": "fa",
+      "count": 34
+    },
+    {
+      "class": "clearfix",
+      "count": 32
+    },
+    {
+      "class": "mega-menu-title",
+      "count": 30
+    },
+    {
+      "class": "col-xs-12",
+      "count": 17
+    },
+    {
+      "class": "fa-angle-down",
+      "count": 14
+    },
+    {
+      "class": "col-sm-12",
+      "count": 14
+    },
+    {
+      "class": "form-group",
+      "count": 12
+    },
+    {
+      "class": "auto-container",
+      "count": 10
+    },
+    {
+      "class": "dropdown",
+      "count": 10
+    },
+    {
+      "class": "h-drop",
+      "count": 8
+    },
+    {
+      "class": "row",
+      "count": 7
+    },
+    {
+      "class": "col-md-12",
+      "count": 7
+    },
+    {
+      "class": "icon-bar",
+      "count": 6
+    },
+    {
+      "class": "breadcrumb",
+      "count": 6
+    },
+    {
+      "class": "dropdown-btn",
+      "count": 6
+    },
+    {
+      "class": "pull-right",
+      "count": 5
+    },
+    {
+      "class": "col-md-4",
+      "count": 5
+    },
+    {
+      "class": "link-box",
+      "count": 5
+    },
+    {
+      "class": "txt",
+      "count": 5
+    },
+    {
+      "class": "mega-menu-column",
+      "count": 4
+    },
+    {
+      "class": "text",
+      "count": 4
+    },
+    {
+      "class": "theme-btn",
+      "count": 4
+    },
+    {
+      "class": "btn-style-three",
+      "count": 4
+    },
+    {
+      "class": "call-to-action-two",
+      "count": 4
+    },
+    {
+      "class": "outer-box",
+      "count": 4
+    },
+    {
+      "class": "footer-column",
+      "count": 4
+    },
+    {
+      "class": "footer-widget",
+      "count": 4
+    },
+    {
+      "class": "widget-inner",
+      "count": 4
+    },
+    {
+      "class": "palate",
+      "count": 4
+    },
+    {
+      "class": "info",
+      "count": 3
+    },
+    {
+      "class": "lang-box",
+      "count": 3
+    },
+    {
+      "class": "logo",
+      "count": 3
+    },
+    {
+      "class": "pull-left",
+      "count": 3
+    },
+    {
+      "class": "img-responsive",
+      "count": 3
+    },
+    {
+      "class": "form-control",
+      "count": 3
+    },
+    {
+      "class": "fa-facebook-f",
+      "count": 3
+    },
+    {
+      "class": "fa-twitter",
+      "count": 3
+    },
+    {
+      "class": "fa-linkedin",
+      "count": 3
+    },
+    {
+      "class": "col-md-6",
+      "count": 3
+    },
+    {
+      "class": "col-sm-6",
+      "count": 3
+    },
+    {
+      "class": "color-palate-right",
+      "count": 3
+    },
+    {
+      "class": "color-trigger-right",
+      "count": 3
+    },
+    {
+      "class": "image-circle",
+      "count": 3
+    },
+    {
+      "class": "search-box",
+      "count": 2
+    },
+    {
+      "class": "fa-search",
+      "count": 2
+    },
+    {
+      "class": "lang-btn",
+      "count": 2
+    },
+    {
+      "class": "main-menu",
+      "count": 2
+    },
+    {
+      "class": "navbar-header",
+      "count": 2
+    },
+    {
+      "class": "navbar-toggle",
+      "count": 2
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "critical-css",
+      "count": 1
+    },
+    {
+      "id": "dropdownMenu1",
+      "count": 1
+    },
+    {
+      "id": "myModal_subs",
+      "count": 1
+    },
+    {
+      "id": "name",
+      "count": 1
+    },
+    {
+      "id": "email",
+      "count": 1
+    },
+    {
+      "id": "url",
+      "count": 1
+    },
+    {
+      "id": "OPT_IN",
+      "count": 1
+    },
+    {
+      "id": "blog-image",
+      "count": 1
+    },
+    {
+      "id": "toc-mob",
+      "count": 1
+    },
+    {
+      "id": "toc-list-mob",
+      "count": 1
+    },
+    {
+      "id": "content",
+      "count": 1
+    },
+    {
+      "id": "heading-0",
+      "count": 1
+    },
+    {
+      "id": "heading-1",
+      "count": 1
+    },
+    {
+      "id": "heading-2",
+      "count": 1
+    },
+    {
+      "id": "heading-3",
+      "count": 1
+    },
+    {
+      "id": "heading-4",
+      "count": 1
+    },
+    {
+      "id": "heading-5",
+      "count": 1
+    },
+    {
+      "id": "heading-6",
+      "count": 1
+    },
+    {
+      "id": "heading-7",
+      "count": 1
+    },
+    {
+      "id": "toc",
+      "count": 1
+    },
+    {
+      "id": "toc-list",
+      "count": 1
+    },
+    {
+      "id": "myForm",
+      "count": 1
+    },
+    {
+      "id": "CountryId",
+      "count": 1
+    },
+    {
+      "id": "service",
+      "count": 1
+    },
+    {
+      "id": "token-new",
+      "count": 1
+    },
+    {
+      "id": "pl_FVv0BZCvdQz16O",
+      "count": 1
+    },
+    {
+      "id": "siteseal",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

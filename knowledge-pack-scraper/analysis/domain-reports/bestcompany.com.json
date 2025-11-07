@@ -1,0 +1,398 @@
+{
+  "domain": "bestcompany.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:17.856326",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 5,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 229,
+      "frequency": 229.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "flex",
+      "count": 180
+    },
+    {
+      "class": "material-icons",
+      "count": 178
+    },
+    {
+      "class": "leading-none",
+      "count": 160
+    },
+    {
+      "class": "items-center",
+      "count": 157
+    },
+    {
+      "class": "text-sm",
+      "count": 151
+    },
+    {
+      "class": "text-bcgold",
+      "count": 140
+    },
+    {
+      "class": "font-bold",
+      "count": 109
+    },
+    {
+      "class": "w-full",
+      "count": 87
+    },
+    {
+      "class": "text-base",
+      "count": 70
+    },
+    {
+      "class": "text-text-body",
+      "count": 61
+    },
+    {
+      "class": "text-lg",
+      "count": 57
+    },
+    {
+      "class": "justify-center",
+      "count": 55
+    },
+    {
+      "class": "border-b",
+      "count": 55
+    },
+    {
+      "class": "text-blue-profile",
+      "count": 54
+    },
+    {
+      "class": "text-xs",
+      "count": 45
+    },
+    {
+      "class": "mb-2",
+      "count": 40
+    },
+    {
+      "class": "mb-1",
+      "count": 39
+    },
+    {
+      "class": "overflow-hidden",
+      "count": 38
+    },
+    {
+      "class": "text-text-headlines",
+      "count": 38
+    },
+    {
+      "class": "h-full",
+      "count": 31
+    },
+    {
+      "class": "pb-4",
+      "count": 30
+    },
+    {
+      "class": "max-w-full",
+      "count": 28
+    },
+    {
+      "class": "rounded-sm",
+      "count": 28
+    },
+    {
+      "class": "h-2",
+      "count": 28
+    },
+    {
+      "class": "block",
+      "count": 26
+    },
+    {
+      "class": "mt-4",
+      "count": 26
+    },
+    {
+      "class": "flex-col",
+      "count": 23
+    },
+    {
+      "class": "hover:text-blue-cta",
+      "count": 23
+    },
+    {
+      "class": "justify-end",
+      "count": 22
+    },
+    {
+      "class": "cursor-pointer",
+      "count": 22
+    },
+    {
+      "class": "px-3",
+      "count": 22
+    },
+    {
+      "class": "justify-between",
+      "count": 22
+    },
+    {
+      "class": "w-1/4",
+      "count": 20
+    },
+    {
+      "class": "md:w-1/6",
+      "count": 20
+    },
+    {
+      "class": "text-tertiary-blue",
+      "count": 20
+    },
+    {
+      "class": "text-bcblue-light",
+      "count": 19
+    },
+    {
+      "class": "inline-block",
+      "count": 18
+    },
+    {
+      "class": "my-3",
+      "count": 18
+    },
+    {
+      "class": "Link-2",
+      "count": 18
+    },
+    {
+      "class": "Text-1",
+      "count": 17
+    },
+    {
+      "class": "py-4",
+      "count": 17
+    },
+    {
+      "class": "mr-1.5",
+      "count": 17
+    },
+    {
+      "class": "uppercase",
+      "count": 17
+    },
+    {
+      "class": "text-link",
+      "count": 17
+    },
+    {
+      "class": "hidden",
+      "count": 16
+    },
+    {
+      "class": "text-white",
+      "count": 16
+    },
+    {
+      "class": "bg-white",
+      "count": 16
+    },
+    {
+      "class": "mt-1",
+      "count": 16
+    },
+    {
+      "class": "mb-4",
+      "count": 16
+    },
+    {
+      "class": "invisible",
+      "count": 15
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "sentiment-box",
+      "count": 3
+    },
+    {
+      "id": "main-nav-search",
+      "count": 1
+    },
+    {
+      "id": "biwa7DGbkHIQWYIFRHJ0",
+      "count": 1
+    },
+    {
+      "id": "top-nav-search",
+      "count": 1
+    },
+    {
+      "id": "main-nav-items",
+      "count": 1
+    },
+    {
+      "id": "about",
+      "count": 1
+    },
+    {
+      "id": "categories",
+      "count": 1
+    },
+    {
+      "id": "category-home-products-services",
+      "count": 1
+    },
+    {
+      "id": "category-business-services",
+      "count": 1
+    },
+    {
+      "id": "category-career-education",
+      "count": 1
+    },
+    {
+      "id": "category-financial-services",
+      "count": 1
+    },
+    {
+      "id": "category-health-lifestyle",
+      "count": 1
+    },
+    {
+      "id": "category-insurance-legal-services",
+      "count": 1
+    },
+    {
+      "id": "tippy-",
+      "count": 1
+    },
+    {
+      "id": "learnMoreLink",
+      "count": 1
+    },
+    {
+      "id": "hs-script-loader",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "nav"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"menu\"], [id*=\"menu\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

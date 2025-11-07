@@ -1,0 +1,455 @@
+{
+  "domain": "termsfeed.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:26.476803",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 20,
+      "frequency": 20.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 10,
+      "frequency": 10.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "flex-item",
+      "count": 47
+    },
+    {
+      "class": "card",
+      "count": 37
+    },
+    {
+      "class": "toc_text_position",
+      "count": 20
+    },
+    {
+      "class": "toc_text_title",
+      "count": 20
+    },
+    {
+      "class": "space_h3",
+      "count": 14
+    },
+    {
+      "class": "toggleable-container",
+      "count": 12
+    },
+    {
+      "class": "toggle-action-container",
+      "count": 12
+    },
+    {
+      "class": "flex-row",
+      "count": 11
+    },
+    {
+      "class": "alignnone",
+      "count": 9
+    },
+    {
+      "class": "size-full",
+      "count": 9
+    },
+    {
+      "class": "wrapper",
+      "count": 8
+    },
+    {
+      "class": "list-title",
+      "count": 8
+    },
+    {
+      "class": "list-container",
+      "count": 8
+    },
+    {
+      "class": "toggleable-content",
+      "count": 8
+    },
+    {
+      "class": "placeholder-menu-item",
+      "count": 7
+    },
+    {
+      "class": "space_h2",
+      "count": 6
+    },
+    {
+      "class": "justify-content-between",
+      "count": 5
+    },
+    {
+      "class": "three-columns",
+      "count": 5
+    },
+    {
+      "class": "dropdown-container",
+      "count": 4
+    },
+    {
+      "class": "btn",
+      "count": 4
+    },
+    {
+      "class": "accordion-item",
+      "count": 4
+    },
+    {
+      "class": "accordion-header",
+      "count": 4
+    },
+    {
+      "class": "accordion-title",
+      "count": 4
+    },
+    {
+      "class": "accordion-button",
+      "count": 4
+    },
+    {
+      "class": "accordion-body",
+      "count": 4
+    },
+    {
+      "class": "mb-0",
+      "count": 4
+    },
+    {
+      "class": "icon",
+      "count": 4
+    },
+    {
+      "class": "untoggled-content",
+      "count": 3
+    },
+    {
+      "class": "breadcrumb-item",
+      "count": 3
+    },
+    {
+      "class": "two-columns",
+      "count": 3
+    },
+    {
+      "class": "component-title",
+      "count": 3
+    },
+    {
+      "class": "bg-info",
+      "count": 3
+    },
+    {
+      "class": "vertical",
+      "count": 3
+    },
+    {
+      "class": "card-body-wrapper",
+      "count": 3
+    },
+    {
+      "class": "flex-column",
+      "count": 3
+    },
+    {
+      "class": "h-100",
+      "count": 3
+    },
+    {
+      "class": "card-body",
+      "count": 3
+    },
+    {
+      "class": "card-image",
+      "count": 3
+    },
+    {
+      "class": "card-img-top",
+      "count": 3
+    },
+    {
+      "class": "card-content",
+      "count": 3
+    },
+    {
+      "class": "card-title",
+      "count": 3
+    },
+    {
+      "class": "card-description",
+      "count": 3
+    },
+    {
+      "class": "placeholder-content",
+      "count": 2
+    },
+    {
+      "class": "placeholder-line-one",
+      "count": 2
+    },
+    {
+      "class": "placeholder-line-two",
+      "count": 2
+    },
+    {
+      "class": "placeholder-line-three",
+      "count": 2
+    },
+    {
+      "class": "btn-black",
+      "count": 2
+    },
+    {
+      "class": "has-icon-arrow-right",
+      "count": 2
+    },
+    {
+      "class": "name",
+      "count": 2
+    },
+    {
+      "class": "has-product-icons-gray",
+      "count": 2
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "wrap",
+      "count": 1
+    },
+    {
+      "id": "header",
+      "count": 1
+    },
+    {
+      "id": "menuToggle",
+      "count": 1
+    },
+    {
+      "id": "headerSearchInput",
+      "count": 1
+    },
+    {
+      "id": "scroll-progress-bar",
+      "count": 1
+    },
+    {
+      "id": "toc_container",
+      "count": 1
+    },
+    {
+      "id": "toc",
+      "count": 1
+    },
+    {
+      "id": "What_Is_A_Disclaimer",
+      "count": 1
+    },
+    {
+      "id": "Faqs_On_Disclaimers_Or_Disclosures",
+      "count": 1
+    },
+    {
+      "id": "faq-accordion",
+      "count": 1
+    },
+    {
+      "id": "1__Do_I_need_to_use_disclaimers",
+      "count": 1
+    },
+    {
+      "id": "2__Why_should_I_use_disclaimers",
+      "count": 1
+    },
+    {
+      "id": "3__What_type_of_disclaimer_should_I_use",
+      "count": 1
+    },
+    {
+      "id": "4__Where_do_I_display_my_disclaimer",
+      "count": 1
+    },
+    {
+      "id": "When_To_Use_A_Disclaimer",
+      "count": 1
+    },
+    {
+      "id": "Disclaimer_Examples",
+      "count": 1
+    },
+    {
+      "id": "Medical_Disclaimer",
+      "count": 1
+    },
+    {
+      "id": "No_Professional_Relationship_Disclaimer",
+      "count": 1
+    },
+    {
+      "id": "Legal_Advice_Disclaimer",
+      "count": 1
+    },
+    {
+      "id": "Blog_Disclaimer",
+      "count": 1
+    },
+    {
+      "id": "Content_Disclaimer",
+      "count": 1
+    },
+    {
+      "id": "Affiliate_Disclaimer",
+      "count": 1
+    },
+    {
+      "id": "Earnings_Disclaimer",
+      "count": 1
+    },
+    {
+      "id": "Results_Not_Typical_Disclaimer",
+      "count": 1
+    },
+    {
+      "id": "Should_You_Display_Disclaimers_In_Your_Terms_And_Conditions_And_Privacy_Policy",
+      "count": 1
+    },
+    {
+      "id": "Summary_Of_What_A_Disclaimer_Is",
+      "count": 1
+    },
+    {
+      "id": "Download_Sample_Disclaimer_Template",
+      "count": 1
+    },
+    {
+      "id": "Sample_Disclaimer_Template_Html_Text_Download",
+      "count": 1
+    },
+    {
+      "id": "Sample_Disclaimer_Template_Pdf_Download",
+      "count": 1
+    },
+    {
+      "id": "Sample_Disclaimer_Template_Word_Docx_Download",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

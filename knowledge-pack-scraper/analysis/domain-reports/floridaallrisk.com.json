@@ -1,7 +1,7 @@
 {
   "domain": "floridaallrisk.com",
   "total_pages": 6,
-  "analyzed_at": "2025-11-07T14:35:32.813494",
+  "analyzed_at": "2025-11-07T16:31:13.175963",
   "content_indicators": [
     {
       "selector": "article",
@@ -447,7 +447,7 @@
       "nav"
     ],
     "css_selector": "article",
-    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
     "pruning_threshold": 0.6,
     "min_word_threshold": 50,
     "confidence_score": "medium"

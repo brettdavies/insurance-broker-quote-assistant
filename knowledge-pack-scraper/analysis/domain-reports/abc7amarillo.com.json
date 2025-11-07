@@ -1,0 +1,454 @@
+{
+  "domain": "abc7amarillo.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:17.364703",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 8,
+      "frequency": 8.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 23,
+      "frequency": 23.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 7,
+      "frequency": 7.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 8,
+      "frequency": 8.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "Link_link__1Aqdr",
+      "count": 162
+    },
+    {
+      "class": "NavigationStack_navStackItem__5fQ0S",
+      "count": 105
+    },
+    {
+      "class": "TeaserLink_teaserLink__p1kuV",
+      "count": 19
+    },
+    {
+      "class": "TeaserLink_teaserText__g1DQc",
+      "count": 19
+    },
+    {
+      "class": "TeaserLink_teaserSummary__nulFo",
+      "count": 19
+    },
+    {
+      "class": "TeaserLink_sectionSecondary__jiKnw",
+      "count": 14
+    },
+    {
+      "class": "Expandable_label__u_thU",
+      "count": 11
+    },
+    {
+      "class": "Expandable_content__sCEYu",
+      "count": 11
+    },
+    {
+      "class": "NavigationStack_navStack__akmd6",
+      "count": 11
+    },
+    {
+      "class": "NavigationDrawer_navLevel__ETzUW",
+      "count": 11
+    },
+    {
+      "class": "Temperature_temperature__SS99O",
+      "count": 9
+    },
+    {
+      "class": "Expandable_icon__3_mF9",
+      "count": 9
+    },
+    {
+      "class": "Expandable_animation__cq_rg",
+      "count": 9
+    },
+    {
+      "class": "TopicsBar_topic__8UfR4",
+      "count": 8
+    },
+    {
+      "class": "TopicsBar_aTag__uumvE",
+      "count": 8
+    },
+    {
+      "class": "TeaserLink_videoIcon__vD91T",
+      "count": 7
+    },
+    {
+      "class": "MainNavigation_mainNavItem__HFDjy",
+      "count": 6
+    },
+    {
+      "class": "TeaserLink_galleryIcon__W3OjR",
+      "count": 6
+    },
+    {
+      "class": "SocialLinks_socialLink__aK0Q6",
+      "count": 6
+    },
+    {
+      "class": "Panel_panel__wT2cw",
+      "count": 6
+    },
+    {
+      "class": "MainNavigation_subNavContainer__3AqA5",
+      "count": 5
+    },
+    {
+      "class": "MainNavigation_subNavHighlights__FvLzL",
+      "count": 5
+    },
+    {
+      "class": "MainNavigation_subNavHighlightsPage__jqviJ",
+      "count": 5
+    },
+    {
+      "class": "MainNavigation_subNavTitle__8qI49",
+      "count": 5
+    },
+    {
+      "class": "MainNavigation_subNavContainerLinks__lNWx9",
+      "count": 4
+    },
+    {
+      "class": "MainNavigation_subNavContainerLinksPage__G__nG",
+      "count": 4
+    },
+    {
+      "class": "WeatherConditions_high___17_W",
+      "count": 4
+    },
+    {
+      "class": "WeatherConditions_low__i4g_1",
+      "count": 4
+    },
+    {
+      "class": "TeaserLink_sidebarSecondary__CkQRW",
+      "count": 4
+    },
+    {
+      "class": "PhotoGalleryBarLink_galleryLink__NpV9Q",
+      "count": 4
+    },
+    {
+      "class": "PhotoGalleryBar_galleryItem__G_Jvh",
+      "count": 4
+    },
+    {
+      "class": "PhotoGalleryBarLink_imageContainer__b90JO",
+      "count": 4
+    },
+    {
+      "class": "PhotoGalleryBarLink_image___vKEb",
+      "count": 4
+    },
+    {
+      "class": "PhotoGalleryBarLink_imageMask__DTkJV",
+      "count": 4
+    },
+    {
+      "class": "PhotoGalleryBarLink_imageCount__ObzT0",
+      "count": 4
+    },
+    {
+      "class": "PhotoGalleryBarLink_belowTitleContainer__EaAVz",
+      "count": 4
+    },
+    {
+      "class": "PhotoGalleryBarLink_belowTitleText__03CN2",
+      "count": 4
+    },
+    {
+      "class": "WeatherConditions_weatherConditionHighLow__6v33f",
+      "count": 3
+    },
+    {
+      "class": "WeatherConditions_day__Eu1JX",
+      "count": 3
+    },
+    {
+      "class": "WeatherConditions_temperatures__otit5",
+      "count": 3
+    },
+    {
+      "class": "WeatherWidget_forecastMini__LeQEu",
+      "count": 3
+    },
+    {
+      "class": "WeatherWidget_verticalStack__Yhy8r",
+      "count": 3
+    },
+    {
+      "class": "WeatherWidget_forecastHeader__lgIom",
+      "count": 3
+    },
+    {
+      "class": "WeatherWidget_degreeSymbol__vwqJi",
+      "count": 3
+    },
+    {
+      "class": "UserWayButton_userWayButton__h8S9a",
+      "count": 3
+    },
+    {
+      "class": "StoryHero_heroGridImageWrapper__WG52T",
+      "count": 3
+    },
+    {
+      "class": "StoryHero_heroGridImage__YqwzB",
+      "count": 3
+    },
+    {
+      "class": "StoryPage_controlsContainer__StRFl",
+      "count": 3
+    },
+    {
+      "class": "StationLogo_stationLink__bVR_V",
+      "count": 2
+    },
+    {
+      "class": "TeaserLink_updated__7BJDM",
+      "count": 2
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "Search",
+      "count": 6
+    },
+    {
+      "id": "UI-Icons",
+      "count": 3
+    },
+    {
+      "id": "Global/White/Search",
+      "count": 3
+    },
+    {
+      "id": "Oval",
+      "count": 3
+    },
+    {
+      "id": "Rectangle-2",
+      "count": 3
+    },
+    {
+      "id": "Group",
+      "count": 3
+    },
+    {
+      "id": "_uasdk",
+      "count": 2
+    },
+    {
+      "id": "Symbols",
+      "count": 2
+    },
+    {
+      "id": "Level-2/Person-Symbol-with-Frame",
+      "count": 2
+    },
+    {
+      "id": "Level-1/Thin-Account-Symbo",
+      "count": 2
+    },
+    {
+      "id": "Level-1/Outlined-Account",
+      "count": 2
+    },
+    {
+      "id": "Level-1/Outlined-Account-Icon",
+      "count": 2
+    },
+    {
+      "id": "mask0_2026_6976",
+      "count": 2
+    },
+    {
+      "id": "961b011b-0700-4e63-9aaf-8f27805906c4",
+      "count": 2
+    },
+    {
+      "id": "tb_loader_script",
+      "count": 1
+    },
+    {
+      "id": "tradehouse-header",
+      "count": 1
+    },
+    {
+      "id": "mock_ga",
+      "count": 1
+    },
+    {
+      "id": "sinclair_public_facade",
+      "count": 1
+    },
+    {
+      "id": "googletag_config",
+      "count": 1
+    },
+    {
+      "id": "gtm_js",
+      "count": 1
+    },
+    {
+      "id": "gpt_js",
+      "count": 1
+    },
+    {
+      "id": "ketch-initiailize",
+      "count": 1
+    },
+    {
+      "id": "tcf-stub",
+      "count": 1
+    },
+    {
+      "id": "ketch-cmp",
+      "count": 1
+    },
+    {
+      "id": "tradehouse",
+      "count": 1
+    },
+    {
+      "id": "tbl-editorial-video-style",
+      "count": 1
+    },
+    {
+      "id": "tRecs-taboola-choice",
+      "count": 1
+    },
+    {
+      "id": "tRecs-taboola-choice-popover-container",
+      "count": 1
+    },
+    {
+      "id": "tRecs-taboola-choice-popover-content",
+      "count": 1
+    },
+    {
+      "id": "lightboxjs-lightboxlib",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "footer",
+      "nav"
+    ],
+    "css_selector": null,
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "low"
+  }
+}

@@ -1,0 +1,455 @@
+{
+  "domain": "redstate.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:20.956692",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 12,
+      "frequency": 12.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 64,
+      "frequency": 64.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "shadow-sm",
+      "count": 24
+    },
+    {
+      "class": "btn",
+      "count": 23
+    },
+    {
+      "class": "row",
+      "count": 18
+    },
+    {
+      "class": "d-none",
+      "count": 17
+    },
+    {
+      "class": "col",
+      "count": 17
+    },
+    {
+      "class": "rounded",
+      "count": 17
+    },
+    {
+      "class": "column-list__item",
+      "count": 16
+    },
+    {
+      "class": "d-flex",
+      "count": 14
+    },
+    {
+      "class": "nav-link",
+      "count": 13
+    },
+    {
+      "class": "nav-item",
+      "count": 13
+    },
+    {
+      "class": "img-fluid",
+      "count": 13
+    },
+    {
+      "class": "widget-list__body-title",
+      "count": 11
+    },
+    {
+      "class": "title-link",
+      "count": 11
+    },
+    {
+      "class": "dropdown-item",
+      "count": 10
+    },
+    {
+      "class": "hl",
+      "count": 10
+    },
+    {
+      "class": "thm-brand-button",
+      "count": 10
+    },
+    {
+      "class": "btn-sm",
+      "count": 9
+    },
+    {
+      "class": "my-4",
+      "count": 9
+    },
+    {
+      "class": "text-center",
+      "count": 8
+    },
+    {
+      "class": "mb-3",
+      "count": 8
+    },
+    {
+      "class": "py-3",
+      "count": 8
+    },
+    {
+      "class": "btn-light",
+      "count": 7
+    },
+    {
+      "class": "d-print-none",
+      "count": 7
+    },
+    {
+      "class": "text-uppercase",
+      "count": 6
+    },
+    {
+      "class": "advs",
+      "count": 6
+    },
+    {
+      "class": "gpt-ad",
+      "count": 6
+    },
+    {
+      "class": "my-3",
+      "count": 6
+    },
+    {
+      "class": "flex-shrink-0",
+      "count": 6
+    },
+    {
+      "class": "flex-grow-1",
+      "count": 6
+    },
+    {
+      "class": "ms-2",
+      "count": 6
+    },
+    {
+      "class": "align-items-stretch",
+      "count": 6
+    },
+    {
+      "class": "widget-list__noborder",
+      "count": 6
+    },
+    {
+      "class": "widget-list__hero",
+      "count": 6
+    },
+    {
+      "class": "py-2",
+      "count": 6
+    },
+    {
+      "class": "widget-list__author",
+      "count": 6
+    },
+    {
+      "class": "col-auto",
+      "count": 6
+    },
+    {
+      "class": "wp-card",
+      "count": 6
+    },
+    {
+      "class": "wp-card__img",
+      "count": 6
+    },
+    {
+      "class": "wp-card__title",
+      "count": 6
+    },
+    {
+      "class": "text-break",
+      "count": 6
+    },
+    {
+      "class": "wp-card__author",
+      "count": 6
+    },
+    {
+      "class": "list-inline-item",
+      "count": 6
+    },
+    {
+      "class": "bridload",
+      "count": 5
+    },
+    {
+      "class": "container",
+      "count": 5
+    },
+    {
+      "class": "navbar-nav",
+      "count": 5
+    },
+    {
+      "class": "thm-button",
+      "count": 5
+    },
+    {
+      "class": "me-2",
+      "count": 5
+    },
+    {
+      "class": "btn-login",
+      "count": 5
+    },
+    {
+      "class": "d-grid",
+      "count": 5
+    },
+    {
+      "class": "col-6",
+      "count": 5
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "idward-plugin-js",
+      "count": 2
+    },
+    {
+      "id": "MjI2OQ==",
+      "count": 2
+    },
+    {
+      "id": "dropdownMenuLink",
+      "count": 2
+    },
+    {
+      "id": "post-meta",
+      "count": 2
+    },
+    {
+      "id": "embedPath",
+      "count": 2
+    },
+    {
+      "id": "kueezrtb_latest",
+      "count": 1
+    },
+    {
+      "id": "bridcss",
+      "count": 1
+    },
+    {
+      "id": "bridcss-default",
+      "count": 1
+    },
+    {
+      "id": "search",
+      "count": 1
+    },
+    {
+      "id": "alert-bar",
+      "count": 1
+    },
+    {
+      "id": "navbarNav",
+      "count": 1
+    },
+    {
+      "id": "navbarSupportedContent",
+      "count": 1
+    },
+    {
+      "id": "search-mobile",
+      "count": 1
+    },
+    {
+      "id": "div-gpt-728x90_1",
+      "count": 1
+    },
+    {
+      "id": "div-gpt-300x250_2",
+      "count": 1
+    },
+    {
+      "id": "div-gpt-300x250_3",
+      "count": 1
+    },
+    {
+      "id": "div-gpt-300x250_4",
+      "count": 1
+    },
+    {
+      "id": "isPasted",
+      "count": 1
+    },
+    {
+      "id": "california",
+      "count": 1
+    },
+    {
+      "id": "corruption",
+      "count": 1
+    },
+    {
+      "id": "fraud",
+      "count": 1
+    },
+    {
+      "id": "government-waste",
+      "count": 1
+    },
+    {
+      "id": "thm-comments-bookmark",
+      "count": 1
+    },
+    {
+      "id": "disqus_thread",
+      "count": 1
+    },
+    {
+      "id": "thm-comments",
+      "count": 1
+    },
+    {
+      "id": "Brid_75693711",
+      "count": 1
+    },
+    {
+      "id": "div-gpt-300x250_1",
+      "count": 1
+    },
+    {
+      "id": "Layer_1",
+      "count": 1
+    },
+    {
+      "id": "div-gpt-300x250_sticky",
+      "count": 1
+    },
+    {
+      "id": "trending-on-thm",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article, main, [role=\"main\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"menu\"], [id*=\"menu\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

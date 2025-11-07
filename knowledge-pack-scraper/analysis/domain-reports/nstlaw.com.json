@@ -1,0 +1,455 @@
+{
+  "domain": "nstlaw.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:25.778184",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 43,
+      "frequency": 43.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 416,
+      "frequency": 416.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 34,
+      "frequency": 34.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-item",
+      "count": 356
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 344
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 344
+    },
+    {
+      "class": "elementor-sub-item",
+      "count": 324
+    },
+    {
+      "class": "elementor-element",
+      "count": 115
+    },
+    {
+      "class": "elementor-widget",
+      "count": 76
+    },
+    {
+      "class": "elementor-widget-container",
+      "count": 76
+    },
+    {
+      "class": "elementor-nav-menu--dropdown",
+      "count": 46
+    },
+    {
+      "class": "menu-item-has-children",
+      "count": 44
+    },
+    {
+      "class": "sub-menu",
+      "count": 44
+    },
+    {
+      "class": "e-flex",
+      "count": 39
+    },
+    {
+      "class": "e-con",
+      "count": 39
+    },
+    {
+      "class": "e-child",
+      "count": 33
+    },
+    {
+      "class": "elementor-widget-mobile__width-initial",
+      "count": 32
+    },
+    {
+      "class": "elementor-item",
+      "count": 32
+    },
+    {
+      "class": "e-font-icon-svg",
+      "count": 29
+    },
+    {
+      "class": "elementor-widget-text-editor",
+      "count": 27
+    },
+    {
+      "class": "e-con-full",
+      "count": 20
+    },
+    {
+      "class": "elementor-widget-tablet__width-initial",
+      "count": 20
+    },
+    {
+      "class": "elementor-widget__width-initial",
+      "count": 19
+    },
+    {
+      "class": "e-con-boxed",
+      "count": 19
+    },
+    {
+      "class": "e-con-inner",
+      "count": 19
+    },
+    {
+      "class": "gform_hidden",
+      "count": 17
+    },
+    {
+      "class": "elementor-widget-heading",
+      "count": 15
+    },
+    {
+      "class": "elementor-heading-title",
+      "count": 15
+    },
+    {
+      "class": "elementor-size-default",
+      "count": 15
+    },
+    {
+      "class": "elementor-view-default",
+      "count": 15
+    },
+    {
+      "class": "elementor-widget-icon",
+      "count": 15
+    },
+    {
+      "class": "elementor-icon-wrapper",
+      "count": 15
+    },
+    {
+      "class": "elementor-icon",
+      "count": 15
+    },
+    {
+      "class": "gfield",
+      "count": 12
+    },
+    {
+      "class": "field_sublabel_below",
+      "count": 12
+    },
+    {
+      "class": "field_description_below",
+      "count": 12
+    },
+    {
+      "class": "field_validation_below",
+      "count": 12
+    },
+    {
+      "class": "ginput_container",
+      "count": 12
+    },
+    {
+      "class": "gfield_visibility_visible",
+      "count": 11
+    },
+    {
+      "class": "gfield--no-description",
+      "count": 11
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 10
+    },
+    {
+      "class": "elementor-icon-list-item",
+      "count": 10
+    },
+    {
+      "class": "elementor-inline-item",
+      "count": 10
+    },
+    {
+      "class": "elementor-icon-list-icon",
+      "count": 10
+    },
+    {
+      "class": "elementor-icon-list-text",
+      "count": 10
+    },
+    {
+      "class": "gfield_required",
+      "count": 9
+    },
+    {
+      "class": "gform-field-label",
+      "count": 9
+    },
+    {
+      "class": "gfield--width-full",
+      "count": 9
+    },
+    {
+      "class": "menu-item-object-stories",
+      "count": 8
+    },
+    {
+      "class": "gfield_label",
+      "count": 8
+    },
+    {
+      "class": "e-parent",
+      "count": 6
+    },
+    {
+      "class": "ginput_container_text",
+      "count": 6
+    },
+    {
+      "class": "elementor",
+      "count": 5
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "false",
+      "count": 9
+    },
+    {
+      "id": "elementor-device-mode-wpr",
+      "count": 2
+    },
+    {
+      "id": "wpr-usedcss",
+      "count": 1
+    },
+    {
+      "id": "wp-emoji-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "rocket-lazyload-inline-css",
+      "count": 1
+    },
+    {
+      "id": "jquery-core-js",
+      "count": 1
+    },
+    {
+      "id": "jquery-migrate-js",
+      "count": 1
+    },
+    {
+      "id": "pafe-extension-js",
+      "count": 1
+    },
+    {
+      "id": "font-awesome-4-shim-js",
+      "count": 1
+    },
+    {
+      "id": "+e+",
+      "count": 1
+    },
+    {
+      "id": "wpsp-style-frontend",
+      "count": 1
+    },
+    {
+      "id": "wp-custom-css",
+      "count": 1
+    },
+    {
+      "id": "rocket-lazyload-nojs-css",
+      "count": 1
+    },
+    {
+      "id": "wpr-lazyload-bg-container",
+      "count": 1
+    },
+    {
+      "id": "wpr-lazyload-bg-exclusion",
+      "count": 1
+    },
+    {
+      "id": "wpr-lazyload-bg-nostyle",
+      "count": 1
+    },
+    {
+      "id": "25",
+      "count": 1
+    },
+    {
+      "id": "b59f900",
+      "count": 1
+    },
+    {
+      "id": "b1cceaa",
+      "count": 1
+    },
+    {
+      "id": "4a34525",
+      "count": 1
+    },
+    {
+      "id": "c1070e7",
+      "count": 1
+    },
+    {
+      "id": "08e4e5b",
+      "count": 1
+    },
+    {
+      "id": "92f68c4",
+      "count": 1
+    },
+    {
+      "id": "menu-1-92f68c4",
+      "count": 1
+    },
+    {
+      "id": "menu-2-92f68c4",
+      "count": 1
+    },
+    {
+      "id": "396",
+      "count": 1
+    },
+    {
+      "id": "9d4e055",
+      "count": 1
+    },
+    {
+      "id": "7312daa",
+      "count": 1
+    },
+    {
+      "id": "9083ccf",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article",
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

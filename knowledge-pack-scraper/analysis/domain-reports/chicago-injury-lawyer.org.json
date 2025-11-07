@@ -1,7 +1,7 @@
 {
   "domain": "chicago-injury-lawyer.org",
   "total_pages": 2,
-  "analyzed_at": "2025-11-07T14:35:35.514677",
+  "analyzed_at": "2025-11-07T16:31:16.264818",
   "content_indicators": [
     {
       "selector": "article",
@@ -448,7 +448,7 @@
       "aside"
     ],
     "css_selector": "article",
-    "excluded_selector": "[class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "excluded_selector": "[class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
     "pruning_threshold": 0.6,
     "min_word_threshold": 50,
     "confidence_score": "high"

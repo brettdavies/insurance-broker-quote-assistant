@@ -1,7 +1,7 @@
 {
   "domain": "gethuman.com",
   "total_pages": 2,
-  "analyzed_at": "2025-11-07T14:35:34.819943",
+  "analyzed_at": "2025-11-07T16:31:15.587297",
   "content_indicators": [
     {
       "selector": "article",
@@ -421,7 +421,7 @@
       "nav"
     ],
     "css_selector": null,
-    "excluded_selector": "[class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"ads\"], [id*=\"ads\"], [class*=\"form\"], [id*=\"form\"]",
+    "excluded_selector": "[class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"form\"], [id*=\"form\"]",
     "pruning_threshold": 0.6,
     "min_word_threshold": 50,
     "confidence_score": "low"

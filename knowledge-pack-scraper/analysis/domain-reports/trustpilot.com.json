@@ -1,0 +1,456 @@
+{
+  "domain": "trustpilot.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:25.081478",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 24,
+      "frequency": 24.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 25,
+      "frequency": 25.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 10,
+      "frequency": 10.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 378,
+      "frequency": 378.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 7,
+      "frequency": 7.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 19,
+      "frequency": 19.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "CDS_Typography_prettyStyle__dd9b51",
+      "count": 576
+    },
+    {
+      "class": "CDS_Typography_body-m__dd9b51",
+      "count": 235
+    },
+    {
+      "class": "CDS_Typography_appearance-default__dd9b51",
+      "count": 222
+    },
+    {
+      "class": "CDS_Typography_appearance-subtle__dd9b51",
+      "count": 187
+    },
+    {
+      "class": "CDS_Typography_appearance-inherit__dd9b51",
+      "count": 154
+    },
+    {
+      "class": "CDS_Icon_icon__c30ce7",
+      "count": 123
+    },
+    {
+      "class": "CDS_Link_link__7f0c1c",
+      "count": 119
+    },
+    {
+      "class": "CDS_Link_noUnderline__7f0c1c",
+      "count": 110
+    },
+    {
+      "class": "CDS_Typography_heading-xs__dd9b51",
+      "count": 85
+    },
+    {
+      "class": "CDS_Typography_disableResponsiveSizing__dd9b51",
+      "count": 80
+    },
+    {
+      "class": "link_internal__Eam_b",
+      "count": 54
+    },
+    {
+      "class": "CDS_Typography_body-s__dd9b51",
+      "count": 54
+    },
+    {
+      "class": "CDS_Icon_default__c30ce7",
+      "count": 53
+    },
+    {
+      "class": "CDS_Typography_body-l__dd9b51",
+      "count": 53
+    },
+    {
+      "class": "link_wrapper__ahpyq",
+      "count": 50
+    },
+    {
+      "class": "CDS_Link_asButton__7f0c1c",
+      "count": 49
+    },
+    {
+      "class": "buttons_actionButtons__SZCAW",
+      "count": 48
+    },
+    {
+      "class": "buttons_button__ECb04",
+      "count": 48
+    },
+    {
+      "class": "CDS_Link_buttonInherit__7f0c1c",
+      "count": 48
+    },
+    {
+      "class": "CDS_Icon_inherit__c30ce7",
+      "count": 41
+    },
+    {
+      "class": "CDS_Badge_badge__2f6174",
+      "count": 40
+    },
+    {
+      "class": "CDS_Badge_s__2f6174",
+      "count": 40
+    },
+    {
+      "class": "CDS_Badge_variant-subtle__2f6174",
+      "count": 40
+    },
+    {
+      "class": "CDS_Badge_type-default__2f6174",
+      "count": 40
+    },
+    {
+      "class": "CDS_Badge_badgeText__2f6174",
+      "count": 40
+    },
+    {
+      "class": "CDS_Card_card__485220",
+      "count": 35
+    },
+    {
+      "class": "CDS_StarRating_starRating__614d2e",
+      "count": 34
+    },
+    {
+      "class": "footer-link_footerLink__F74G8",
+      "count": 26
+    },
+    {
+      "class": "styles_consumerInfoWrapper__6HN5O",
+      "count": 24
+    },
+    {
+      "class": "styles_consumerDetailsWrapper__4eZod",
+      "count": 24
+    },
+    {
+      "class": "styles_consumerDetails__POC79",
+      "count": 24
+    },
+    {
+      "class": "styles_consumerName__xKr9c",
+      "count": 24
+    },
+    {
+      "class": "styles_consumerExtraDetails__NY6RP",
+      "count": 24
+    },
+    {
+      "class": "styles_wrapper___luvQ",
+      "count": 24
+    },
+    {
+      "class": "styles_actionsWrapper__PJqVW",
+      "count": 24
+    },
+    {
+      "class": "styles_usefulLabel__VcnL3",
+      "count": 24
+    },
+    {
+      "class": "styles_iconButton__Sr5FD",
+      "count": 24
+    },
+    {
+      "class": "country-selector_button__AXrsE",
+      "count": 24
+    },
+    {
+      "class": "flag_flag__1HXJc",
+      "count": 24
+    },
+    {
+      "class": "country-selector_countryName__uh3xD",
+      "count": 24
+    },
+    {
+      "class": "country-selector_item__2Hmly",
+      "count": 22
+    },
+    {
+      "class": "CDS_Button_button__cb9d05",
+      "count": 21
+    },
+    {
+      "class": "CDS_Button_buttonText__cb9d05",
+      "count": 21
+    },
+    {
+      "class": "CDS_Typography_body-xs__dd9b51",
+      "count": 21
+    },
+    {
+      "class": "styles_cell__2f_al",
+      "count": 20
+    },
+    {
+      "class": "styles_cardWrapper__g8amG",
+      "count": 20
+    },
+    {
+      "class": "styles_show__Z8n7u",
+      "count": 20
+    },
+    {
+      "class": "styles_reviewCard__Qwhpy",
+      "count": 20
+    },
+    {
+      "class": "styles_reviewCardInnerHeader__8Xqy8",
+      "count": 20
+    },
+    {
+      "class": "styles_datesWrapper__jszhG",
+      "count": 20
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "consumer-avatar",
+      "count": 24
+    },
+    {
+      "id": "service-review-card-v2",
+      "count": 20
+    },
+    {
+      "id": "review-badge-date",
+      "count": 20
+    },
+    {
+      "id": "review-badge-unprompted",
+      "count": 20
+    },
+    {
+      "id": "tooltip-element",
+      "count": 3
+    },
+    {
+      "id": "nr-script",
+      "count": 2
+    },
+    {
+      "id": "businessunitprofile-fallback",
+      "count": 2
+    },
+    {
+      "id": "onetrust-style",
+      "count": 1
+    },
+    {
+      "id": "__next",
+      "count": 1
+    },
+    {
+      "id": "business-unit-title",
+      "count": 1
+    },
+    {
+      "id": "incentives-banner-business-profile-page/sidebar/experience/incentives-banner/title-v2",
+      "count": 1
+    },
+    {
+      "id": "company-details-card",
+      "count": 1
+    },
+    {
+      "id": "SCROLL BACK",
+      "count": 1
+    },
+    {
+      "id": "SCROLL FORWARD",
+      "count": 1
+    },
+    {
+      "id": "Similar Businesses0",
+      "count": 1
+    },
+    {
+      "id": "bu-card-55768f170000ff0005800c4c",
+      "count": 1
+    },
+    {
+      "id": "bu-card-55768f170000ff0005800c4c-display-name",
+      "count": 1
+    },
+    {
+      "id": "bu-card-55768f170000ff0005800c4c-identifying-name",
+      "count": 1
+    },
+    {
+      "id": "bu-card-55768f170000ff0005800c4c-star-rating",
+      "count": 1
+    },
+    {
+      "id": "bu-card-55768f170000ff0005800c4c-trust-score",
+      "count": 1
+    },
+    {
+      "id": "bu-card-55768f170000ff0005800c4c-total-reviews",
+      "count": 1
+    },
+    {
+      "id": "Similar Businesses1",
+      "count": 1
+    },
+    {
+      "id": "bu-card-46f675360000640005019ef8",
+      "count": 1
+    },
+    {
+      "id": "bu-card-46f675360000640005019ef8-logo",
+      "count": 1
+    },
+    {
+      "id": "bu-card-46f675360000640005019ef8-display-name",
+      "count": 1
+    },
+    {
+      "id": "bu-card-46f675360000640005019ef8-identifying-name",
+      "count": 1
+    },
+    {
+      "id": "bu-card-46f675360000640005019ef8-star-rating",
+      "count": 1
+    },
+    {
+      "id": "bu-card-46f675360000640005019ef8-trust-score",
+      "count": 1
+    },
+    {
+      "id": "bu-card-46f675360000640005019ef8-total-reviews",
+      "count": 1
+    },
+    {
+      "id": "Similar Businesses2",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main, [role=\"main\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

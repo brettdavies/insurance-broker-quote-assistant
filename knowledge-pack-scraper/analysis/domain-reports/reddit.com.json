@@ -1,7 +1,7 @@
 {
   "domain": "reddit.com",
   "total_pages": 139,
-  "analyzed_at": "2025-11-07T14:28:55.983370",
+  "analyzed_at": "2025-11-07T16:31:11.730389",
   "content_indicators": [
     {
       "selector": "article",
@@ -447,7 +447,7 @@
       "aside"
     ],
     "css_selector": "main",
-    "excluded_selector": "[class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"]",
+    "excluded_selector": "[class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"]",
     "pruning_threshold": 0.6,
     "min_word_threshold": 50,
     "confidence_score": "medium"

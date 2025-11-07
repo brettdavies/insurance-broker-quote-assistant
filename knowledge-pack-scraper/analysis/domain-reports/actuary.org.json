@@ -1,0 +1,455 @@
+{
+  "domain": "actuary.org",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:17.564965",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 6,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 81,
+      "frequency": 81.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-item",
+      "count": 68
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 56
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 56
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 12
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 12
+    },
+    {
+      "class": "accordion-row",
+      "count": 10
+    },
+    {
+      "class": "accordion-copy",
+      "count": 10
+    },
+    {
+      "class": "label",
+      "count": 7
+    },
+    {
+      "class": "menu-item-has-children",
+      "count": 5
+    },
+    {
+      "class": "sub-menu",
+      "count": 5
+    },
+    {
+      "class": "prevent-default",
+      "count": 5
+    },
+    {
+      "class": "menu",
+      "count": 4
+    },
+    {
+      "class": "share-icon",
+      "count": 4
+    },
+    {
+      "class": "logged-out-only",
+      "count": 3
+    },
+    {
+      "class": "mobile",
+      "count": 3
+    },
+    {
+      "class": "bc-arrow",
+      "count": 3
+    },
+    {
+      "class": "container",
+      "count": 3
+    },
+    {
+      "class": "yellow-button",
+      "count": 3
+    },
+    {
+      "class": "mt-half",
+      "count": 3
+    },
+    {
+      "class": "logged-in-only",
+      "count": 2
+    },
+    {
+      "class": "fb",
+      "count": 2
+    },
+    {
+      "class": "tw",
+      "count": 2
+    },
+    {
+      "class": "li",
+      "count": 2
+    },
+    {
+      "class": "pdf-trigger",
+      "count": 2
+    },
+    {
+      "class": "resource-info",
+      "count": 2
+    },
+    {
+      "class": "resource-content",
+      "count": 2
+    },
+    {
+      "class": "accordion",
+      "count": 2
+    },
+    {
+      "class": "accordion-title",
+      "count": 2
+    },
+    {
+      "class": "accordion-content",
+      "count": 2
+    },
+    {
+      "class": "glossaryLink",
+      "count": 2
+    },
+    {
+      "class": "flink",
+      "count": 2
+    },
+    {
+      "class": "yoast-schema-graph",
+      "count": 1
+    },
+    {
+      "class": "wp-singular",
+      "count": 1
+    },
+    {
+      "class": "resources-template-default",
+      "count": 1
+    },
+    {
+      "class": "single",
+      "count": 1
+    },
+    {
+      "class": "single-resources",
+      "count": 1
+    },
+    {
+      "class": "postid-54209",
+      "count": 1
+    },
+    {
+      "class": "wp-theme-actuary",
+      "count": 1
+    },
+    {
+      "class": "site",
+      "count": 1
+    },
+    {
+      "class": "skip-link",
+      "count": 1
+    },
+    {
+      "class": "screen-reader-text",
+      "count": 1
+    },
+    {
+      "class": "site-header",
+      "count": 1
+    },
+    {
+      "class": "site-branding",
+      "count": 1
+    },
+    {
+      "class": "site-logo",
+      "count": 1
+    },
+    {
+      "class": "navigation",
+      "count": 1
+    },
+    {
+      "class": "nav-upper",
+      "count": 1
+    },
+    {
+      "class": "upper-navigation",
+      "count": 1
+    },
+    {
+      "class": "menu-upper-nav-container",
+      "count": 1
+    },
+    {
+      "class": "menu-item-15163",
+      "count": 1
+    },
+    {
+      "class": "menu-item-15164",
+      "count": 1
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "main-css",
+      "count": 1
+    },
+    {
+      "id": "wp-emoji-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-library-css",
+      "count": 1
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "filebird-block-filebird-gallery-style-inline-css",
+      "count": 1
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-custom-css",
+      "count": 1
+    },
+    {
+      "id": "page",
+      "count": 1
+    },
+    {
+      "id": "masthead",
+      "count": 1
+    },
+    {
+      "id": "hamburger",
+      "count": 1
+    },
+    {
+      "id": "site-upper-navigation",
+      "count": 1
+    },
+    {
+      "id": "upper",
+      "count": 1
+    },
+    {
+      "id": "menu-item-15163",
+      "count": 1
+    },
+    {
+      "id": "menu-item-15164",
+      "count": 1
+    },
+    {
+      "id": "menu-item-18573",
+      "count": 1
+    },
+    {
+      "id": "menu-item-15165",
+      "count": 1
+    },
+    {
+      "id": "menu-item-32580",
+      "count": 1
+    },
+    {
+      "id": "search",
+      "count": 1
+    },
+    {
+      "id": "site-navigation",
+      "count": 1
+    },
+    {
+      "id": "primary-menu",
+      "count": 1
+    },
+    {
+      "id": "menu-item-15167",
+      "count": 1
+    },
+    {
+      "id": "menu-item-29513",
+      "count": 1
+    },
+    {
+      "id": "menu-item-29565",
+      "count": 1
+    },
+    {
+      "id": "menu-item-15250",
+      "count": 1
+    },
+    {
+      "id": "menu-item-15246",
+      "count": 1
+    },
+    {
+      "id": "menu-item-15253",
+      "count": 1
+    },
+    {
+      "id": "menu-item-40038",
+      "count": 1
+    },
+    {
+      "id": "menu-item-40057",
+      "count": 1
+    },
+    {
+      "id": "menu-item-55094",
+      "count": 1
+    },
+    {
+      "id": "menu-item-36845",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

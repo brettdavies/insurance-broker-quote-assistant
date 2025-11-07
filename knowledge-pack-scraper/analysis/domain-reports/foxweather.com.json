@@ -1,0 +1,456 @@
+{
+  "domain": "foxweather.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:23.741563",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 6,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 8,
+      "frequency": 8.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 39,
+      "frequency": 39.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 19,
+      "frequency": 19.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-item",
+      "count": 19
+    },
+    {
+      "class": "title",
+      "count": 14
+    },
+    {
+      "class": "m",
+      "count": 13
+    },
+    {
+      "class": "info",
+      "count": 12
+    },
+    {
+      "class": "ad-container",
+      "count": 9
+    },
+    {
+      "class": "ad",
+      "count": 9
+    },
+    {
+      "class": "caption",
+      "count": 7
+    },
+    {
+      "class": "featured",
+      "count": 6
+    },
+    {
+      "class": "sub-text",
+      "count": 6
+    },
+    {
+      "class": "desktop",
+      "count": 5
+    },
+    {
+      "class": "ad-h-250",
+      "count": 5
+    },
+    {
+      "class": "ad-w-300",
+      "count": 5
+    },
+    {
+      "class": "article",
+      "count": 5
+    },
+    {
+      "class": "info-header",
+      "count": 5
+    },
+    {
+      "class": "meta",
+      "count": 5
+    },
+    {
+      "class": "mobile",
+      "count": 4
+    },
+    {
+      "class": "featured-video",
+      "count": 4
+    },
+    {
+      "class": "video-ct",
+      "count": 4
+    },
+    {
+      "class": "video-wrapper",
+      "count": 4
+    },
+    {
+      "class": "video-container",
+      "count": 4
+    },
+    {
+      "class": "video-player",
+      "count": 4
+    },
+    {
+      "class": "player-wrapper",
+      "count": 4
+    },
+    {
+      "class": "vendor-unit",
+      "count": 4
+    },
+    {
+      "class": "default",
+      "count": 4
+    },
+    {
+      "class": "pill",
+      "count": 4
+    },
+    {
+      "class": "duration",
+      "count": 4
+    },
+    {
+      "class": "pill-link",
+      "count": 4
+    },
+    {
+      "class": "inner",
+      "count": 3
+    },
+    {
+      "class": "ad-h-90",
+      "count": 3
+    },
+    {
+      "class": "ad-w-728",
+      "count": 3
+    },
+    {
+      "class": "content",
+      "count": 3
+    },
+    {
+      "class": "OUTBRAIN",
+      "count": 3
+    },
+    {
+      "class": "branding",
+      "count": 2
+    },
+    {
+      "class": "logo",
+      "count": 2
+    },
+    {
+      "class": "eyebrow",
+      "count": 2
+    },
+    {
+      "class": "sticky-ads",
+      "count": 2
+    },
+    {
+      "class": "adhesion-ad",
+      "count": 2
+    },
+    {
+      "class": "article-meta",
+      "count": 2
+    },
+    {
+      "class": "article-date__time",
+      "count": 2
+    },
+    {
+      "class": "fb",
+      "count": 2
+    },
+    {
+      "class": "tw",
+      "count": 2
+    },
+    {
+      "class": "tablet",
+      "count": 2
+    },
+    {
+      "class": "featured-image",
+      "count": 2
+    },
+    {
+      "class": "slide",
+      "count": 2
+    },
+    {
+      "class": "container",
+      "count": 2
+    },
+    {
+      "class": "lazyload",
+      "count": 2
+    },
+    {
+      "class": "ctrl",
+      "count": 2
+    },
+    {
+      "class": "pager",
+      "count": 2
+    },
+    {
+      "class": "badge",
+      "count": 2
+    },
+    {
+      "class": "cookies",
+      "count": 1
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "content-language",
+      "count": 1
+    },
+    {
+      "id": "description",
+      "count": 1
+    },
+    {
+      "id": "prism.channel",
+      "count": 1
+    },
+    {
+      "id": "prism.section",
+      "count": 1
+    },
+    {
+      "id": "prism.subsection1",
+      "count": 1
+    },
+    {
+      "id": "prism.subsection2",
+      "count": 1
+    },
+    {
+      "id": "prism.subsection3",
+      "count": 1
+    },
+    {
+      "id": "prism.subsection4",
+      "count": 1
+    },
+    {
+      "id": "prism.aggregationType",
+      "count": 1
+    },
+    {
+      "id": "prism.genre",
+      "count": 1
+    },
+    {
+      "id": "pagetype",
+      "count": 1
+    },
+    {
+      "id": "content-creator",
+      "count": 1
+    },
+    {
+      "id": "dc.creator",
+      "count": 1
+    },
+    {
+      "id": "dc.title",
+      "count": 1
+    },
+    {
+      "id": "dc.subject",
+      "count": 1
+    },
+    {
+      "id": "dcterms.abstract",
+      "count": 1
+    },
+    {
+      "id": "dc.type",
+      "count": 1
+    },
+    {
+      "id": "dc.description",
+      "count": 1
+    },
+    {
+      "id": "dc.language",
+      "count": 1
+    },
+    {
+      "id": "dc.publisher",
+      "count": 1
+    },
+    {
+      "id": "dc.format",
+      "count": 1
+    },
+    {
+      "id": "dc.identifier",
+      "count": 1
+    },
+    {
+      "id": "dc.source",
+      "count": 1
+    },
+    {
+      "id": "dc.date",
+      "count": 1
+    },
+    {
+      "id": "dcterms.created",
+      "count": 1
+    },
+    {
+      "id": "dcterms.modified",
+      "count": 1
+    },
+    {
+      "id": "og:title",
+      "count": 1
+    },
+    {
+      "id": "og:description",
+      "count": 1
+    },
+    {
+      "id": "og:type",
+      "count": 1
+    },
+    {
+      "id": "og:image",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

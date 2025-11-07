@@ -1,0 +1,455 @@
+{
+  "domain": "comedydefensivedriving.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:18.325047",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 32,
+      "frequency": 32.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 92,
+      "frequency": 92.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-item",
+      "count": 32
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 32
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 32
+    },
+    {
+      "class": "menu-item-text",
+      "count": 22
+    },
+    {
+      "class": "menu-text",
+      "count": 22
+    },
+    {
+      "class": "mCS_img_loaded",
+      "count": 12
+    },
+    {
+      "class": "text-area",
+      "count": 9
+    },
+    {
+      "class": "widget",
+      "count": 7
+    },
+    {
+      "class": "hide-on-desktop",
+      "count": 6
+    },
+    {
+      "class": "near-logo-first-switch",
+      "count": 6
+    },
+    {
+      "class": "near-logo-second-switch",
+      "count": 6
+    },
+    {
+      "class": "wpb_wrapper",
+      "count": 6
+    },
+    {
+      "class": "wf-cell",
+      "count": 6
+    },
+    {
+      "class": "wf-1-3",
+      "count": 6
+    },
+    {
+      "class": "pswp__button",
+      "count": 6
+    },
+    {
+      "class": "mini-widgets",
+      "count": 5
+    },
+    {
+      "class": "first",
+      "count": 5
+    },
+    {
+      "class": "widget_text",
+      "count": 5
+    },
+    {
+      "class": "textwidget",
+      "count": 5
+    },
+    {
+      "class": "display-none",
+      "count": 4
+    },
+    {
+      "class": "wpb_column",
+      "count": 4
+    },
+    {
+      "class": "vc_column_container",
+      "count": 4
+    },
+    {
+      "class": "vc_column-inner",
+      "count": 4
+    },
+    {
+      "class": "sr-only",
+      "count": 4
+    },
+    {
+      "class": "gps-button-wrapper",
+      "count": 3
+    },
+    {
+      "class": "registration",
+      "count": 3
+    },
+    {
+      "class": "gps-button",
+      "count": 3
+    },
+    {
+      "class": "show-on-desktop",
+      "count": 3
+    },
+    {
+      "class": "shopper",
+      "count": 3
+    },
+    {
+      "class": "shopperlink",
+      "count": 3
+    },
+    {
+      "class": "over-3",
+      "count": 3
+    },
+    {
+      "class": "shopper-description",
+      "count": 3
+    },
+    {
+      "class": "in-menu-first-switch",
+      "count": 3
+    },
+    {
+      "class": "in-menu-second-switch",
+      "count": 3
+    },
+    {
+      "class": "show-on-first-switch",
+      "count": 3
+    },
+    {
+      "class": "show-on-second-switch",
+      "count": 3
+    },
+    {
+      "class": "wf-wrap",
+      "count": 3
+    },
+    {
+      "class": "vc_row",
+      "count": 3
+    },
+    {
+      "class": "wpb_row",
+      "count": 3
+    },
+    {
+      "class": "vc_row-fluid",
+      "count": 3
+    },
+    {
+      "class": "wpb_content_element",
+      "count": 3
+    },
+    {
+      "class": "pswp__item",
+      "count": 3
+    },
+    {
+      "class": "fancy-ico",
+      "count": 3
+    },
+    {
+      "class": "vc_transform",
+      "count": 2
+    },
+    {
+      "class": "screen-reader-text",
+      "count": 2
+    },
+    {
+      "class": "dt-parent-menu-clickable",
+      "count": 2
+    },
+    {
+      "class": "assistive-text",
+      "count": 2
+    },
+    {
+      "class": "preload-me",
+      "count": 2
+    },
+    {
+      "class": "menu-item-home",
+      "count": 2
+    },
+    {
+      "class": "menu-item-27",
+      "count": 2
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "header-phone",
+      "count": 3
+    },
+    {
+      "id": "header-social",
+      "count": 3
+    },
+    {
+      "id": "wp-emoji-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "student-app-css",
+      "count": 1
+    },
+    {
+      "id": "global-25-css",
+      "count": 1
+    },
+    {
+      "id": "the7-Defaults-css",
+      "count": 1
+    },
+    {
+      "id": "fancybox-css",
+      "count": 1
+    },
+    {
+      "id": "js_composer_front-css",
+      "count": 1
+    },
+    {
+      "id": "dt-main-css",
+      "count": 1
+    },
+    {
+      "id": "dt-awsome-fonts-back-css",
+      "count": 1
+    },
+    {
+      "id": "dt-awsome-fonts-css",
+      "count": 1
+    },
+    {
+      "id": "dt-fontello-css",
+      "count": 1
+    },
+    {
+      "id": "the7pt-static-css",
+      "count": 1
+    },
+    {
+      "id": "dt-custom-css",
+      "count": 1
+    },
+    {
+      "id": "dt-media-css",
+      "count": 1
+    },
+    {
+      "id": "the7-mega-menu-css",
+      "count": 1
+    },
+    {
+      "id": "the7-elements-css",
+      "count": 1
+    },
+    {
+      "id": "style-css",
+      "count": 1
+    },
+    {
+      "id": "jquery-core-js",
+      "count": 1
+    },
+    {
+      "id": "jquery-migrate-js",
+      "count": 1
+    },
+    {
+      "id": "dt-above-fold-js-extra",
+      "count": 1
+    },
+    {
+      "id": "dt-above-fold-js",
+      "count": 1
+    },
+    {
+      "id": "ciK3tR",
+      "count": 1
+    },
+    {
+      "id": "scK3tR",
+      "count": 1
+    },
+    {
+      "id": "sdK3tR",
+      "count": 1
+    },
+    {
+      "id": "the7-custom-inline-css",
+      "count": 1
+    },
+    {
+      "id": "page",
+      "count": 1
+    },
+    {
+      "id": "site-title",
+      "count": 1
+    },
+    {
+      "id": "site-description",
+      "count": 1
+    },
+    {
+      "id": "primary-menu",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "[role=\"main\"]",
+    "excluded_selector": "[class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "domain": "newsroom.statefarm.com",
   "total_pages": 24,
-  "analyzed_at": "2025-11-07T14:35:27.520233",
+  "analyzed_at": "2025-11-07T16:31:11.889293",
   "content_indicators": [
     {
       "selector": "article",
@@ -447,7 +447,7 @@
       "aside"
     ],
     "css_selector": "article, main, [role=\"main\"]",
-    "excluded_selector": "[class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"]",
+    "excluded_selector": "[class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"]",
     "pruning_threshold": 0.6,
     "min_word_threshold": 50,
     "confidence_score": "high"

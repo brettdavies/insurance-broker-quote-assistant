@@ -1,7 +1,7 @@
 {
   "domain": "moneygeek.com",
   "total_pages": 76,
-  "analyzed_at": "2025-11-07T14:29:32.122164",
+  "analyzed_at": "2025-11-07T16:31:08.186481",
   "content_indicators": [
     {
       "selector": "article",
@@ -446,7 +446,7 @@
       "nav"
     ],
     "css_selector": "main",
-    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"tracker\"], [id*=\"tracker\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"tracker\"], [id*=\"tracker\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
     "pruning_threshold": 0.6,
     "min_word_threshold": 50,
     "confidence_score": "medium"

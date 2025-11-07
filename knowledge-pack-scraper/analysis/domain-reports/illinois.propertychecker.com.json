@@ -1,0 +1,455 @@
+{
+  "domain": "illinois.propertychecker.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:19.518128",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 74,
+      "frequency": 74.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 10,
+      "frequency": 10.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 201,
+      "frequency": 201.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "col",
+      "count": 58
+    },
+    {
+      "class": "form-group",
+      "count": 52
+    },
+    {
+      "class": "form-control",
+      "count": 52
+    },
+    {
+      "class": "help-block",
+      "count": 52
+    },
+    {
+      "class": "form-input",
+      "count": 36
+    },
+    {
+      "class": "form-error",
+      "count": 32
+    },
+    {
+      "class": "required",
+      "count": 28
+    },
+    {
+      "class": "capitalize",
+      "count": 28
+    },
+    {
+      "class": "lazyload",
+      "count": 20
+    },
+    {
+      "class": "smooth",
+      "count": 19
+    },
+    {
+      "class": "row",
+      "count": 19
+    },
+    {
+      "class": "img",
+      "count": 17
+    },
+    {
+      "class": "link",
+      "count": 16
+    },
+    {
+      "class": "tblock",
+      "count": 16
+    },
+    {
+      "class": "search-form",
+      "count": 16
+    },
+    {
+      "class": "cta",
+      "count": 16
+    },
+    {
+      "class": "btn",
+      "count": 16
+    },
+    {
+      "class": "md",
+      "count": 16
+    },
+    {
+      "class": "arw",
+      "count": 16
+    },
+    {
+      "class": "no-scale",
+      "count": 16
+    },
+    {
+      "class": "txt",
+      "count": 16
+    },
+    {
+      "class": "hide-form",
+      "count": 12
+    },
+    {
+      "class": "sec",
+      "count": 10
+    },
+    {
+      "class": "ui-widget",
+      "count": 10
+    },
+    {
+      "class": "ui-widget-content",
+      "count": 10
+    },
+    {
+      "class": "blk",
+      "count": 9
+    },
+    {
+      "class": "field-addresssearchform-type",
+      "count": 8
+    },
+    {
+      "class": "ui-autocomplete-input",
+      "count": 8
+    },
+    {
+      "class": "state",
+      "count": 8
+    },
+    {
+      "class": "h2",
+      "count": 8
+    },
+    {
+      "class": "m-hide",
+      "count": 8
+    },
+    {
+      "class": "ui-menu",
+      "count": 8
+    },
+    {
+      "class": "ui-autocomplete",
+      "count": 8
+    },
+    {
+      "class": "ui-front",
+      "count": 8
+    },
+    {
+      "class": "ui-helper-hidden-accessible",
+      "count": 8
+    },
+    {
+      "class": "h3",
+      "count": 7
+    },
+    {
+      "class": "name",
+      "count": 7
+    },
+    {
+      "class": "parcel",
+      "count": 7
+    },
+    {
+      "class": "ot-label-txt",
+      "count": 7
+    },
+    {
+      "class": "top-address",
+      "count": 6
+    },
+    {
+      "class": "color-success",
+      "count": 6
+    },
+    {
+      "class": "ot-pc-scrollbar",
+      "count": 5
+    },
+    {
+      "class": "eg-src",
+      "count": 4
+    },
+    {
+      "class": "center",
+      "count": 4
+    },
+    {
+      "class": "search",
+      "count": 4
+    },
+    {
+      "class": "search-nav",
+      "count": 4
+    },
+    {
+      "class": "tnav",
+      "count": 4
+    },
+    {
+      "class": "lbl",
+      "count": 4
+    },
+    {
+      "class": "active",
+      "count": 4
+    },
+    {
+      "class": "search-content",
+      "count": 4
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "addresssearchform-type",
+      "count": 8
+    },
+    {
+      "id": "suggesstion-box",
+      "count": 4
+    },
+    {
+      "id": "namesearchform-type",
+      "count": 4
+    },
+    {
+      "id": "namesearchform-firstname",
+      "count": 4
+    },
+    {
+      "id": "namesearchform-lastname",
+      "count": 4
+    },
+    {
+      "id": "namesearchform-city",
+      "count": 4
+    },
+    {
+      "id": "namesearchform-state",
+      "count": 4
+    },
+    {
+      "id": "addresssearchform-parcelid",
+      "count": 4
+    },
+    {
+      "id": "addresssearchform-state",
+      "count": 4
+    },
+    {
+      "id": "addresssearchform-county",
+      "count": 4
+    },
+    {
+      "id": "phonesearchform-type",
+      "count": 2
+    },
+    {
+      "id": "phonesearchform-phone",
+      "count": 2
+    },
+    {
+      "id": "emailsearchform-type",
+      "count": 2
+    },
+    {
+      "id": "emailsearchform-email",
+      "count": 2
+    },
+    {
+      "id": "C0003",
+      "count": 2
+    },
+    {
+      "id": "C0004",
+      "count": 2
+    },
+    {
+      "id": "C0002",
+      "count": 2
+    },
+    {
+      "id": "onetrust-style",
+      "count": 1
+    },
+    {
+      "id": "top",
+      "count": 1
+    },
+    {
+      "id": "menu",
+      "count": 1
+    },
+    {
+      "id": "main",
+      "count": 1
+    },
+    {
+      "id": "search3",
+      "count": 1
+    },
+    {
+      "id": "tabAddress3",
+      "count": 1
+    },
+    {
+      "id": "w0",
+      "count": 1
+    },
+    {
+      "id": "addresssearchform-address-690e49458835b744c552d8f5",
+      "count": 1
+    },
+    {
+      "id": "690e49458835b744c552d8f5",
+      "count": 1
+    },
+    {
+      "id": "address-json-690e49458835b744c552d8f5",
+      "count": 1
+    },
+    {
+      "id": "external-id-690e49458835b744c552d8f5",
+      "count": 1
+    },
+    {
+      "id": "address-true-690e49458835b744c552d8f5",
+      "count": 1
+    },
+    {
+      "id": "address-unit-690e49458835b744c552d8f5",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

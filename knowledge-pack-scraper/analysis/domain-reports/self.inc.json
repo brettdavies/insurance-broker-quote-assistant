@@ -1,0 +1,380 @@
+{
+  "domain": "self.inc",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:25.983690",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 36,
+      "frequency": 36.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "jvectormap-region",
+      "count": 98
+    },
+    {
+      "class": "jvectormap-element",
+      "count": 98
+    },
+    {
+      "class": "map__table-row",
+      "count": 50
+    },
+    {
+      "class": "map__table-color",
+      "count": 50
+    },
+    {
+      "class": "map__table-color-inner",
+      "count": 50
+    },
+    {
+      "class": "map__table-country",
+      "count": 50
+    },
+    {
+      "class": "map__table-score",
+      "count": 50
+    },
+    {
+      "class": "article__paragraph",
+      "count": 41
+    },
+    {
+      "class": "article__contents-list-item",
+      "count": 28
+    },
+    {
+      "class": "article__contents-list-link",
+      "count": 28
+    },
+    {
+      "class": "article__sup",
+      "count": 20
+    },
+    {
+      "class": "article__sup-num",
+      "count": 20
+    },
+    {
+      "class": "article__sup-box",
+      "count": 20
+    },
+    {
+      "class": "footer__column-item",
+      "count": 15
+    },
+    {
+      "class": "article__hook",
+      "count": 14
+    },
+    {
+      "class": "credits__item",
+      "count": 14
+    },
+    {
+      "class": "credits__link",
+      "count": 14
+    },
+    {
+      "class": "article__heading-2",
+      "count": 11
+    },
+    {
+      "class": "article__heading-3",
+      "count": 10
+    },
+    {
+      "class": "map__legend-color",
+      "count": 7
+    },
+    {
+      "class": "article__stats-item",
+      "count": 6
+    },
+    {
+      "class": "footer__last-link",
+      "count": 5
+    },
+    {
+      "class": "article__contents-list",
+      "count": 4
+    },
+    {
+      "class": "footer__list-button",
+      "count": 4
+    },
+    {
+      "class": "map__table-th",
+      "count": 3
+    },
+    {
+      "class": "article__table",
+      "count": 3
+    },
+    {
+      "class": "h-5",
+      "count": 3
+    },
+    {
+      "class": "w-5",
+      "count": 3
+    },
+    {
+      "class": "card",
+      "count": 3
+    },
+    {
+      "class": "card__link",
+      "count": 3
+    },
+    {
+      "class": "card__img",
+      "count": 3
+    },
+    {
+      "class": "card__title",
+      "count": 3
+    },
+    {
+      "class": "card__paragraph",
+      "count": 3
+    },
+    {
+      "class": "article",
+      "count": 2
+    },
+    {
+      "class": "map__legend-val",
+      "count": 2
+    },
+    {
+      "class": "map__legend-desc",
+      "count": 2
+    },
+    {
+      "class": "map__legend-circle",
+      "count": 2
+    },
+    {
+      "class": "jvectormap-legend-cnt",
+      "count": 2
+    },
+    {
+      "class": "article__list",
+      "count": 2
+    },
+    {
+      "class": "footer__join-link",
+      "count": 2
+    },
+    {
+      "class": "footer__column",
+      "count": 2
+    },
+    {
+      "class": "footer__column-title",
+      "count": 2
+    },
+    {
+      "class": "footer__app-button",
+      "count": 2
+    },
+    {
+      "class": "js-selfmodal-close",
+      "count": 2
+    },
+    {
+      "class": "selfmodal__button",
+      "count": 2
+    },
+    {
+      "class": "header",
+      "count": 1
+    },
+    {
+      "class": "header__container",
+      "count": 1
+    },
+    {
+      "class": "header__buttons",
+      "count": 1
+    },
+    {
+      "class": "header__number",
+      "count": 1
+    },
+    {
+      "class": "header__back-link",
+      "count": 1
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "BVR53BGJIVA2UID94MF0",
+      "count": 1
+    },
+    {
+      "id": "spdt-capture",
+      "count": 1
+    },
+    {
+      "id": "ab-css-definitions-2-4-3",
+      "count": 1
+    },
+    {
+      "id": "map1",
+      "count": 1
+    },
+    {
+      "id": "sidebar",
+      "count": 1
+    },
+    {
+      "id": "list",
+      "count": 1
+    },
+    {
+      "id": "legend",
+      "count": 1
+    },
+    {
+      "id": "map",
+      "count": 1
+    },
+    {
+      "id": "batBeacon359194322607",
+      "count": 1
+    },
+    {
+      "id": "batBeacon143698994866",
+      "count": 1
+    },
+    {
+      "id": "_hjSafeContext_14418442",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

@@ -1,0 +1,372 @@
+{
+  "domain": "palmbeachpost.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:25.476916",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "gnt_n_mn_ce",
+      "count": 13
+    },
+    {
+      "class": "gnt_ft_a",
+      "count": 10
+    },
+    {
+      "class": "gnt_n_mn_l",
+      "count": 9
+    },
+    {
+      "class": "gnt_ar_b_a",
+      "count": 3
+    },
+    {
+      "class": "gnt_n_bn_ce",
+      "count": 2
+    },
+    {
+      "class": "gnt_n_sm",
+      "count": 2
+    },
+    {
+      "class": "gnt_n_sm_a",
+      "count": 2
+    },
+    {
+      "class": "gnt_x__c",
+      "count": 2
+    },
+    {
+      "class": "gnt_x__lbl",
+      "count": 2
+    },
+    {
+      "class": "gnt_x_sl",
+      "count": 2
+    },
+    {
+      "class": "gnt_cw_sl",
+      "count": 2
+    },
+    {
+      "class": "gnt_ar_b_p",
+      "count": 2
+    },
+    {
+      "class": "gnt_n_dd__sz",
+      "count": 2
+    },
+    {
+      "class": "gnt_n_us_dd_a__li",
+      "count": 2
+    },
+    {
+      "class": "gnt_n_us_dd_ba",
+      "count": 2
+    },
+    {
+      "class": "gnt__njs",
+      "count": 1
+    },
+    {
+      "class": "gnt_bb_svg",
+      "count": 1
+    },
+    {
+      "class": "gnt_n",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_lg_w",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_sb",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_lg",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_lg_svg",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_bn",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_bn_hl",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_bn_cl",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_sm__ne",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_nc__hbn",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_sm__ne_a",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_mn",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_mn_l__fi",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_dd_w",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_dd_bt",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_dd_bt_svg",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_us",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_se",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_se_a",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_se_a_svg",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_wt",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_us_sb",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_us_a_w",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_us_a",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_us_a_svg",
+      "count": 1
+    },
+    {
+      "class": "gnt_x__hi",
+      "count": 1
+    },
+    {
+      "class": "gnt_x_hi",
+      "count": 1
+    },
+    {
+      "class": "gnt_bc",
+      "count": 1
+    },
+    {
+      "class": "gnt_cw_w",
+      "count": 1
+    },
+    {
+      "class": "gnt_cw_sl__ed",
+      "count": 1
+    },
+    {
+      "class": "gnt_cw",
+      "count": 1
+    },
+    {
+      "class": "gnt_pr",
+      "count": 1
+    },
+    {
+      "class": "gnt_ar_lbw",
+      "count": 1
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "+F.gppas:",
+      "count": 2
+    },
+    {
+      "id": "gnt_svg_external",
+      "count": 1
+    },
+    {
+      "id": "gnt_svg_lg",
+      "count": 1
+    },
+    {
+      "id": "ad-slot-7103-fl-palmbeachpost-C6612-high_impact-money-finance-1-ac1",
+      "count": 1
+    },
+    {
+      "id": "ad-slot-7103-fl-palmbeachpost-C6612-poster-money-finance-2-ac1",
+      "count": 1
+    },
+    {
+      "id": "+J.ci;fetch(d,{cache:",
+      "count": 1
+    },
+    {
+      "id": "1c014c4d33d18e8",
+      "count": 1
+    },
+    {
+      "id": "__bm_locator",
+      "count": 1
+    },
+    {
+      "id": "confiant_tag_holder",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": null,
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

@@ -1,0 +1,456 @@
+{
+  "domain": "jaxdailyrecord.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:24.426785",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 8,
+      "frequency": 8.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 7,
+      "frequency": 7.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 33,
+      "frequency": 33.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 12,
+      "frequency": 12.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 5,
+      "frequency": 5.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "text-dark",
+      "count": 81
+    },
+    {
+      "class": "dropdown-item",
+      "count": 46
+    },
+    {
+      "class": "list-inline-item",
+      "count": 35
+    },
+    {
+      "class": "list-inline",
+      "count": 27
+    },
+    {
+      "class": "nav-item",
+      "count": 25
+    },
+    {
+      "class": "mb-2",
+      "count": 23
+    },
+    {
+      "class": "card__post__author-info",
+      "count": 22
+    },
+    {
+      "class": "text-capitalize",
+      "count": 22
+    },
+    {
+      "class": "nav-link",
+      "count": 21
+    },
+    {
+      "class": "included-item",
+      "count": 20
+    },
+    {
+      "class": "img-fluid",
+      "count": 17
+    },
+    {
+      "class": "permalinkable",
+      "count": 17
+    },
+    {
+      "class": "dfp-tag-wrapper",
+      "count": 15
+    },
+    {
+      "class": "card__post",
+      "count": 15
+    },
+    {
+      "class": "card__post-list",
+      "count": 15
+    },
+    {
+      "class": "card__post__body",
+      "count": 15
+    },
+    {
+      "class": "card__post__content",
+      "count": 15
+    },
+    {
+      "class": "dropdown",
+      "count": 14
+    },
+    {
+      "class": "active",
+      "count": 14
+    },
+    {
+      "class": "image-sm",
+      "count": 14
+    },
+    {
+      "class": "card__post__title",
+      "count": 14
+    },
+    {
+      "class": "row",
+      "count": 13
+    },
+    {
+      "class": "ad-unit",
+      "count": 13
+    },
+    {
+      "class": "dropdown-toggle",
+      "count": 12
+    },
+    {
+      "class": "dropdown-menu",
+      "count": 12
+    },
+    {
+      "class": "dropdown-menu-left",
+      "count": 12
+    },
+    {
+      "class": "container",
+      "count": 10
+    },
+    {
+      "class": "btn",
+      "count": 10
+    },
+    {
+      "class": "fa",
+      "count": 9
+    },
+    {
+      "class": "fpn-text",
+      "count": 9
+    },
+    {
+      "class": "col-md-6",
+      "count": 8
+    },
+    {
+      "class": "mb-4",
+      "count": 8
+    },
+    {
+      "class": "col-sm-12",
+      "count": 7
+    },
+    {
+      "class": "wrapper__list__article",
+      "count": 7
+    },
+    {
+      "class": "list-unstyled",
+      "count": 6
+    },
+    {
+      "class": "clearfix",
+      "count": 6
+    },
+    {
+      "class": "mb-3",
+      "count": 6
+    },
+    {
+      "class": "ad-med-rec",
+      "count": 5
+    },
+    {
+      "class": "footer-title",
+      "count": 5
+    },
+    {
+      "class": "contact-list",
+      "count": 5
+    },
+    {
+      "class": "article__content",
+      "count": 5
+    },
+    {
+      "class": "cta-container",
+      "count": 5
+    },
+    {
+      "class": "mem-price-container",
+      "count": 5
+    },
+    {
+      "class": "mem-price",
+      "count": 5
+    },
+    {
+      "class": "mem-duration",
+      "count": 5
+    },
+    {
+      "class": "list-header",
+      "count": 5
+    },
+    {
+      "class": "membership-lists",
+      "count": 5
+    },
+    {
+      "class": "list-container",
+      "count": 5
+    },
+    {
+      "class": "purchase-button-wrapper",
+      "count": 5
+    },
+    {
+      "class": "purchase-button-link",
+      "count": 5
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "empowerlocal",
+      "count": 2
+    },
+    {
+      "id": "gpt-impl-0.34679081166952763",
+      "count": 1
+    },
+    {
+      "id": "omapi-css",
+      "count": 1
+    },
+    {
+      "id": "billboard_ad",
+      "count": 1
+    },
+    {
+      "id": "dfp-ad-billboard",
+      "count": 1
+    },
+    {
+      "id": "google_ads_iframe_/30582678/OMG/jaxdailyrecord/business_1__container__",
+      "count": 1
+    },
+    {
+      "id": "scroll_logo",
+      "count": 1
+    },
+    {
+      "id": "main_nav99",
+      "count": 1
+    },
+    {
+      "id": "example-search-input4",
+      "count": 1
+    },
+    {
+      "id": "modal_aside_right",
+      "count": 1
+    },
+    {
+      "id": "header_ad",
+      "count": 1
+    },
+    {
+      "id": "dfp-ad-header",
+      "count": 1
+    },
+    {
+      "id": "google_ads_iframe_/30582678/OMG/jaxdailyrecord/business_2__container__",
+      "count": 1
+    },
+    {
+      "id": "h822361-p1",
+      "count": 1
+    },
+    {
+      "id": "h822361-p2",
+      "count": 1
+    },
+    {
+      "id": "755887",
+      "count": 1
+    },
+    {
+      "id": "h822361-p3",
+      "count": 1
+    },
+    {
+      "id": "h822361-p4",
+      "count": 1
+    },
+    {
+      "id": "h822361-p5",
+      "count": 1
+    },
+    {
+      "id": "h822361-p6",
+      "count": 1
+    },
+    {
+      "id": "h822361-p7",
+      "count": 1
+    },
+    {
+      "id": "h822361-p8",
+      "count": 1
+    },
+    {
+      "id": "h822361-p9",
+      "count": 1
+    },
+    {
+      "id": "h822361-p10",
+      "count": 1
+    },
+    {
+      "id": "h822361-p11",
+      "count": 1
+    },
+    {
+      "id": "h822361-p12",
+      "count": 1
+    },
+    {
+      "id": "h822361-p13",
+      "count": 1
+    },
+    {
+      "id": "h822361-p14",
+      "count": 1
+    },
+    {
+      "id": "h822361-p15",
+      "count": 1
+    },
+    {
+      "id": "h822361-p16",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

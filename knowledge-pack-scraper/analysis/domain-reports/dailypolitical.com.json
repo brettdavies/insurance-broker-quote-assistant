@@ -1,0 +1,456 @@
+{
+  "domain": "dailypolitical.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:23.171446",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 6,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 9,
+      "frequency": 9.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 5,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 38,
+      "frequency": 38.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-item",
+      "count": 28
+    },
+    {
+      "class": "recent-posts",
+      "count": 20
+    },
+    {
+      "class": "menu-item-type-taxonomy",
+      "count": 18
+    },
+    {
+      "class": "menu-item-object-category",
+      "count": 18
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 8
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 8
+    },
+    {
+      "class": "width-limiter",
+      "count": 7
+    },
+    {
+      "class": "menu",
+      "count": 5
+    },
+    {
+      "class": "adsbygoogle",
+      "count": 5
+    },
+    {
+      "class": "flex-container",
+      "count": 4
+    },
+    {
+      "class": "navigation",
+      "count": 3
+    },
+    {
+      "class": "menu-item-5577805",
+      "count": 3
+    },
+    {
+      "class": "menu-item-5577808",
+      "count": 3
+    },
+    {
+      "class": "menu-item-5577806",
+      "count": 3
+    },
+    {
+      "class": "menu-item-5577810",
+      "count": 3
+    },
+    {
+      "class": "menu-item-5577809",
+      "count": 3
+    },
+    {
+      "class": "menu-item-5577807",
+      "count": 3
+    },
+    {
+      "class": "add-padding",
+      "count": 3
+    },
+    {
+      "class": "statcounter",
+      "count": 3
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 2
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 2
+    },
+    {
+      "class": "menu-item-home",
+      "count": 2
+    },
+    {
+      "class": "menu-item-5577801",
+      "count": 2
+    },
+    {
+      "class": "menu-item-5577802",
+      "count": 2
+    },
+    {
+      "class": "menu-item-5577803",
+      "count": 2
+    },
+    {
+      "class": "menu-item-5577804",
+      "count": 2
+    },
+    {
+      "class": "menu-item-8212375",
+      "count": 2
+    },
+    {
+      "class": "mobile-menu",
+      "count": 2
+    },
+    {
+      "class": "search",
+      "count": 2
+    },
+    {
+      "class": "searchinput",
+      "count": 2
+    },
+    {
+      "class": "searchsubmit",
+      "count": 2
+    },
+    {
+      "class": "flex-nav",
+      "count": 2
+    },
+    {
+      "class": "sidebar-section",
+      "count": 2
+    },
+    {
+      "class": "skip-link",
+      "count": 1
+    },
+    {
+      "class": "scroll",
+      "count": 1
+    },
+    {
+      "class": "background-light",
+      "count": 1
+    },
+    {
+      "class": "top-menu-bar",
+      "count": 1
+    },
+    {
+      "class": "top-menu",
+      "count": 1
+    },
+    {
+      "class": "top-mobile-menu",
+      "count": 1
+    },
+    {
+      "class": "navOpen",
+      "count": 1
+    },
+    {
+      "class": "mobile-nav",
+      "count": 1
+    },
+    {
+      "class": "nice-scroll",
+      "count": 1
+    },
+    {
+      "class": "mobile-search",
+      "count": 1
+    },
+    {
+      "class": "logo-link",
+      "count": 1
+    },
+    {
+      "class": "flex-logo",
+      "count": 1
+    },
+    {
+      "class": "flex-header-ad",
+      "count": 1
+    },
+    {
+      "class": "flex-search",
+      "count": 1
+    },
+    {
+      "class": "main-content",
+      "count": 1
+    },
+    {
+      "class": "flex-sidebar",
+      "count": 1
+    },
+    {
+      "class": "sidebar-email",
+      "count": 1
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "wp-block-library-css",
+      "count": 1
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "google-login-login-button-style-inline-css",
+      "count": 1
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-custom-css",
+      "count": 1
+    },
+    {
+      "id": "googleidentityservice_button_styles",
+      "count": 1
+    },
+    {
+      "id": "googleidentityservice",
+      "count": 1
+    },
+    {
+      "id": "wrap",
+      "count": 1
+    },
+    {
+      "id": "menu-pages",
+      "count": 1
+    },
+    {
+      "id": "menu-item-5577801",
+      "count": 1
+    },
+    {
+      "id": "menu-item-5577802",
+      "count": 1
+    },
+    {
+      "id": "menu-item-5577803",
+      "count": 1
+    },
+    {
+      "id": "menu-item-5577804",
+      "count": 1
+    },
+    {
+      "id": "menu-item-8212375",
+      "count": 1
+    },
+    {
+      "id": "mobile-logo-bar",
+      "count": 1
+    },
+    {
+      "id": "mobile-menu-bar",
+      "count": 1
+    },
+    {
+      "id": "nav-trigger",
+      "count": 1
+    },
+    {
+      "id": "menu-categories",
+      "count": 1
+    },
+    {
+      "id": "menu-item-5577805",
+      "count": 1
+    },
+    {
+      "id": "menu-item-5577808",
+      "count": 1
+    },
+    {
+      "id": "menu-item-5577806",
+      "count": 1
+    },
+    {
+      "id": "menu-item-5577810",
+      "count": 1
+    },
+    {
+      "id": "menu-item-5577809",
+      "count": 1
+    },
+    {
+      "id": "menu-item-5577807",
+      "count": 1
+    },
+    {
+      "id": "menu-pages-1",
+      "count": 1
+    },
+    {
+      "id": "mobileSearchForm",
+      "count": 1
+    },
+    {
+      "id": "s",
+      "count": 1
+    },
+    {
+      "id": "header-logo-link",
+      "count": 1
+    },
+    {
+      "id": "logo",
+      "count": 1
+    },
+    {
+      "id": "AlternateHeaderUnit",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

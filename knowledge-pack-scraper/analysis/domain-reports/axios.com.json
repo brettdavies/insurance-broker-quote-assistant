@@ -1,0 +1,455 @@
+{
+  "domain": "axios.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:22.376384",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 53,
+      "frequency": 53.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "absolute",
+      "count": 102
+    },
+    {
+      "class": "left-0",
+      "count": 101
+    },
+    {
+      "class": "w-[1px]",
+      "count": 100
+    },
+    {
+      "class": "h-[1px]",
+      "count": 100
+    },
+    {
+      "class": "items-center",
+      "count": 49
+    },
+    {
+      "class": "font-sans",
+      "count": 40
+    },
+    {
+      "class": "leading-none",
+      "count": 33
+    },
+    {
+      "class": "flex",
+      "count": 33
+    },
+    {
+      "class": "inline-flex",
+      "count": 32
+    },
+    {
+      "class": "no-underline",
+      "count": 30
+    },
+    {
+      "class": "bg-secondary",
+      "count": 30
+    },
+    {
+      "class": "h-[28px]",
+      "count": 30
+    },
+    {
+      "class": "[&amp;&gt;.icon+span]:ml-2",
+      "count": 28
+    },
+    {
+      "class": "[&amp;&gt;span+.icon]:ml-2",
+      "count": 28
+    },
+    {
+      "class": "mr-3",
+      "count": 23
+    },
+    {
+      "class": "font-regular",
+      "count": 21
+    },
+    {
+      "class": "hover:underline",
+      "count": 20
+    },
+    {
+      "class": "focus:underline",
+      "count": 20
+    },
+    {
+      "class": "inline-block",
+      "count": 20
+    },
+    {
+      "class": "text-caption",
+      "count": 20
+    },
+    {
+      "class": "py-2",
+      "count": 16
+    },
+    {
+      "class": "justify-center",
+      "count": 16
+    },
+    {
+      "class": "disabled:cursor-not-allowed",
+      "count": 16
+    },
+    {
+      "class": "disabled:text-soft-black-medium",
+      "count": 16
+    },
+    {
+      "class": "text-interactive-primary",
+      "count": 14
+    },
+    {
+      "class": "border",
+      "count": 14
+    },
+    {
+      "class": "flex-col",
+      "count": 14
+    },
+    {
+      "class": "sr-only",
+      "count": 13
+    },
+    {
+      "class": "px-4",
+      "count": 13
+    },
+    {
+      "class": "gtmView",
+      "count": 12
+    },
+    {
+      "class": "relative",
+      "count": 12
+    },
+    {
+      "class": "w-full",
+      "count": 12
+    },
+    {
+      "class": "cursor-pointer",
+      "count": 11
+    },
+    {
+      "class": "text-soft-black-core",
+      "count": 11
+    },
+    {
+      "class": "mb-5",
+      "count": 11
+    },
+    {
+      "class": "border-solid",
+      "count": 11
+    },
+    {
+      "class": "grid",
+      "count": 11
+    },
+    {
+      "class": "border-0",
+      "count": 10
+    },
+    {
+      "class": "gtmContentClick",
+      "count": 10
+    },
+    {
+      "class": "last:mb-0",
+      "count": 10
+    },
+    {
+      "class": "lucide",
+      "count": 9
+    },
+    {
+      "class": "fixed",
+      "count": 9
+    },
+    {
+      "class": "rounded-full",
+      "count": 9
+    },
+    {
+      "class": "m-0",
+      "count": 9
+    },
+    {
+      "class": "text-accent-blue-tint",
+      "count": 9
+    },
+    {
+      "class": "inline",
+      "count": 8
+    },
+    {
+      "class": "rounded-md",
+      "count": 8
+    },
+    {
+      "class": "appearance-none",
+      "count": 8
+    },
+    {
+      "class": "leading-tight",
+      "count": 8
+    },
+    {
+      "class": "duration-200",
+      "count": 8
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "ce77afb6-a2b2-46b8-820f-82f900e0df9b",
+      "count": 21
+    },
+    {
+      "id": "permutiveInit",
+      "count": 1
+    },
+    {
+      "id": "permutive",
+      "count": 1
+    },
+    {
+      "id": "ethyca",
+      "count": 1
+    },
+    {
+      "id": "datawrapper-axios",
+      "count": 1
+    },
+    {
+      "id": "fides-overlay",
+      "count": 1
+    },
+    {
+      "id": "fides-overlay-wrapper",
+      "count": 1
+    },
+    {
+      "id": "fides-modal",
+      "count": 1
+    },
+    {
+      "id": "fides-consent-content",
+      "count": 1
+    },
+    {
+      "id": "fides-modal-title",
+      "count": 1
+    },
+    {
+      "id": "data_sales_and_sharing_gpp",
+      "count": 1
+    },
+    {
+      "id": "fides-button-group",
+      "count": 1
+    },
+    {
+      "id": "fides-save-button",
+      "count": 1
+    },
+    {
+      "id": "fides-privacy-policy-link",
+      "count": 1
+    },
+    {
+      "id": "fides-overlay-live-region",
+      "count": 1
+    },
+    {
+      "id": "__next",
+      "count": 1
+    },
+    {
+      "id": "A",
+      "count": 1
+    },
+    {
+      "id": "Vector",
+      "count": 1
+    },
+    {
+      "id": "Vector_2",
+      "count": 1
+    },
+    {
+      "id": "headlessui-popover-button-:R1ealar6:",
+      "count": 1
+    },
+    {
+      "id": "headlessui-popover-button-:Rb5ar6:",
+      "count": 1
+    },
+    {
+      "id": "search-input-button",
+      "count": 1
+    },
+    {
+      "id": "main-content",
+      "count": 1
+    },
+    {
+      "id": "adSlot-0",
+      "count": 1
+    },
+    {
+      "id": "google_ads_iframe_227892952/axios-new-site_0__container__",
+      "count": 1
+    },
+    {
+      "id": "react-aria8974438160-9026",
+      "count": 1
+    },
+    {
+      "id": "datawrapper-embed-sWni8",
+      "count": 1
+    },
+    {
+      "id": "sWni8",
+      "count": 1
+    },
+    {
+      "id": "datawrapper-vis-sWni8",
+      "count": 1
+    },
+    {
+      "id": "datawrapper-chart-sWni8",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

@@ -1,0 +1,453 @@
+{
+  "domain": "chrinco.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:22.883958",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "footer",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "nav",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 5,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 15,
+      "frequency": 15.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 27,
+      "frequency": 27.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "icon",
+      "count": 29
+    },
+    {
+      "class": "unifiednav__item-wrap",
+      "count": 27
+    },
+    {
+      "class": "unifiednav__item",
+      "count": 27
+    },
+    {
+      "class": "nav-item-text",
+      "count": 27
+    },
+    {
+      "class": "clearfix",
+      "count": 21
+    },
+    {
+      "class": "dmRespCol",
+      "count": 18
+    },
+    {
+      "class": "small-12",
+      "count": 18
+    },
+    {
+      "class": "dmNewParagraph",
+      "count": 16
+    },
+    {
+      "class": "icon-angle-down",
+      "count": 15
+    },
+    {
+      "class": "dmRespRow",
+      "count": 14
+    },
+    {
+      "class": "dmRespColsWrapper",
+      "count": 14
+    },
+    {
+      "class": "medium-12",
+      "count": 12
+    },
+    {
+      "class": "large-12",
+      "count": 12
+    },
+    {
+      "class": "icon-angle-right",
+      "count": 12
+    },
+    {
+      "class": "inner",
+      "count": 11
+    },
+    {
+      "class": "postArticle",
+      "count": 10
+    },
+    {
+      "class": "wow",
+      "count": 10
+    },
+    {
+      "class": "blogImgLink",
+      "count": 10
+    },
+    {
+      "class": "blogImg",
+      "count": 10
+    },
+    {
+      "class": "postTextContainer",
+      "count": 10
+    },
+    {
+      "class": "postText",
+      "count": 10
+    },
+    {
+      "class": "postTitle",
+      "count": 10
+    },
+    {
+      "class": "authorBar",
+      "count": 10
+    },
+    {
+      "class": "postDescription",
+      "count": 10
+    },
+    {
+      "class": "readMore",
+      "count": 10
+    },
+    {
+      "class": "pswp__button",
+      "count": 6
+    },
+    {
+      "class": "p_hfcontainer",
+      "count": 5
+    },
+    {
+      "class": "unifiednav__container",
+      "count": 5
+    },
+    {
+      "class": "align-center",
+      "count": 5
+    },
+    {
+      "class": "shareLink",
+      "count": 5
+    },
+    {
+      "class": "clickTarget",
+      "count": 5
+    },
+    {
+      "class": "share-icon",
+      "count": 5
+    },
+    {
+      "class": "default",
+      "count": 4
+    },
+    {
+      "class": "showOnMedium",
+      "count": 3
+    },
+    {
+      "class": "main-navigation",
+      "count": 3
+    },
+    {
+      "class": "unifiednav",
+      "count": 3
+    },
+    {
+      "class": "dmLinksMenu",
+      "count": 3
+    },
+    {
+      "class": "imageWidget",
+      "count": 3
+    },
+    {
+      "class": "hamburger__slice",
+      "count": 3
+    },
+    {
+      "class": "has-one-widget-only",
+      "count": 3
+    },
+    {
+      "class": "dmWidget",
+      "count": 3
+    },
+    {
+      "class": "dmDefaultGradient",
+      "count": 3
+    },
+    {
+      "class": "text",
+      "count": 3
+    },
+    {
+      "class": "pswp__item",
+      "count": 3
+    },
+    {
+      "class": "dm-home-page",
+      "count": 2
+    },
+    {
+      "class": "effect-bottom2",
+      "count": 2
+    },
+    {
+      "class": "dmUDNavigationItem_00",
+      "count": 2
+    },
+    {
+      "class": "dmUDNavigationItem_010101436714",
+      "count": 2
+    },
+    {
+      "class": "dmUDNavigationItem_010101200826",
+      "count": 2
+    },
+    {
+      "class": "unifiednav__item_has-sub-nav",
+      "count": 2
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "unifiedNav",
+      "count": 3
+    },
+    {
+      "id": "1716942098",
+      "count": 2
+    },
+    {
+      "id": "customRules",
+      "count": 1
+    },
+    {
+      "id": "view",
+      "count": 1
+    },
+    {
+      "id": "d-js-dmapi",
+      "count": 1
+    },
+    {
+      "id": "d-js-load-css",
+      "count": 1
+    },
+    {
+      "id": "forceCssIncludes",
+      "count": 1
+    },
+    {
+      "id": "cssVariables",
+      "count": 1
+    },
+    {
+      "id": "widgetCSS",
+      "count": 1
+    },
+    {
+      "id": "pageAdditionalWidgetsCss",
+      "count": 1
+    },
+    {
+      "id": "siteGlobalCss",
+      "count": 1
+    },
+    {
+      "id": "customWidgetStyle",
+      "count": 1
+    },
+    {
+      "id": "innerPagesStyle",
+      "count": 1
+    },
+    {
+      "id": "additionalGlobalCss",
+      "count": 1
+    },
+    {
+      "id": "pagestyle",
+      "count": 1
+    },
+    {
+      "id": "pagestyleDevice",
+      "count": 1
+    },
+    {
+      "id": "globalFontSizeStyle",
+      "count": 1
+    },
+    {
+      "id": "pageFontSizeStyle",
+      "count": 1
+    },
+    {
+      "id": "hideAnimFix",
+      "count": 1
+    },
+    {
+      "id": "fontFallbacks",
+      "count": 1
+    },
+    {
+      "id": "dmRoot",
+      "count": 1
+    },
+    {
+      "id": "dm",
+      "count": 1
+    },
+    {
+      "id": "1901957768",
+      "count": 1
+    },
+    {
+      "id": "Hamburger",
+      "count": 1
+    },
+    {
+      "id": "dm-outer-wrapper",
+      "count": 1
+    },
+    {
+      "id": "dmStyle_outerContainer",
+      "count": 1
+    },
+    {
+      "id": "dmStyle_innerContainer",
+      "count": 1
+    },
+    {
+      "id": "site_content",
+      "count": 1
+    },
+    {
+      "id": "hamburger-drawer",
+      "count": 1
+    },
+    {
+      "id": "1826294544",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "nav"
+    ],
+    "css_selector": "[role=\"main\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"menu\"], [id*=\"menu\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "low"
+  }
+}

@@ -1,0 +1,455 @@
+{
+  "domain": "discussion.fool.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:18.653274",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 8,
+      "frequency": 8.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 58,
+      "frequency": 58.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 66,
+      "frequency": 66.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 14,
+      "frequency": 14.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "fa",
+      "count": 38
+    },
+    {
+      "class": "d-icon",
+      "count": 38
+    },
+    {
+      "class": "svg-icon",
+      "count": 38
+    },
+    {
+      "class": "svg-string",
+      "count": 38
+    },
+    {
+      "class": "ember-view",
+      "count": 27
+    },
+    {
+      "class": "topic-list-data",
+      "count": 24
+    },
+    {
+      "class": "btn",
+      "count": 23
+    },
+    {
+      "class": "no-text",
+      "count": 21
+    },
+    {
+      "class": "number",
+      "count": 18
+    },
+    {
+      "class": "num",
+      "count": 18
+    },
+    {
+      "class": "post-stream--cloaked",
+      "count": 14
+    },
+    {
+      "class": "sidebar-row",
+      "count": 13
+    },
+    {
+      "class": "trigger-user-card",
+      "count": 12
+    },
+    {
+      "class": "avatar",
+      "count": 12
+    },
+    {
+      "class": "sidebar-section-link",
+      "count": 11
+    },
+    {
+      "class": "icon",
+      "count": 10
+    },
+    {
+      "class": "sidebar-section-link-wrapper",
+      "count": 10
+    },
+    {
+      "class": "sidebar-section-link-prefix",
+      "count": 10
+    },
+    {
+      "class": "sidebar-section-link-content-text",
+      "count": 10
+    },
+    {
+      "class": "poster",
+      "count": 10
+    },
+    {
+      "class": "btn-icon",
+      "count": 9
+    },
+    {
+      "class": "fk-d-menu__trigger",
+      "count": 9
+    },
+    {
+      "class": "btn-flat",
+      "count": 8
+    },
+    {
+      "class": "prefix-icon",
+      "count": 8
+    },
+    {
+      "class": "topic-map__stat-label",
+      "count": 8
+    },
+    {
+      "class": "post-count",
+      "count": 8
+    },
+    {
+      "class": "relative-date",
+      "count": 8
+    },
+    {
+      "class": "sr-only",
+      "count": 8
+    },
+    {
+      "class": "badge-category__wrapper",
+      "count": 7
+    },
+    {
+      "class": "badge-category",
+      "count": 7
+    },
+    {
+      "class": "--style-square",
+      "count": 7
+    },
+    {
+      "class": "badge-category__name",
+      "count": 7
+    },
+    {
+      "class": "footer-social-icon",
+      "count": 7
+    },
+    {
+      "class": "title",
+      "count": 6
+    },
+    {
+      "class": "topic-statuses",
+      "count": 6
+    },
+    {
+      "class": "clearfix",
+      "count": 6
+    },
+    {
+      "class": "likes",
+      "count": 6
+    },
+    {
+      "class": "views",
+      "count": 6
+    },
+    {
+      "class": "activity",
+      "count": 6
+    },
+    {
+      "class": "d-icon-tag",
+      "count": 5
+    },
+    {
+      "class": "regular",
+      "count": 5
+    },
+    {
+      "class": "topic-list-item",
+      "count": 5
+    },
+    {
+      "class": "main-link",
+      "count": 5
+    },
+    {
+      "class": "link-top-line",
+      "count": 5
+    },
+    {
+      "class": "raw-link",
+      "count": 5
+    },
+    {
+      "class": "raw-topic-link",
+      "count": 5
+    },
+    {
+      "class": "topic-post-badges",
+      "count": 5
+    },
+    {
+      "class": "link-bottom-line",
+      "count": 5
+    },
+    {
+      "class": "--has-parent",
+      "count": 5
+    },
+    {
+      "class": "d-icon-heart",
+      "count": 5
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "8",
+      "count": 8
+    },
+    {
+      "id": "5",
+      "count": 7
+    },
+    {
+      "id": "29",
+      "count": 5
+    },
+    {
+      "id": "3",
+      "count": 3
+    },
+    {
+      "id": "6",
+      "count": 3
+    },
+    {
+      "id": "7",
+      "count": 3
+    },
+    {
+      "id": "11",
+      "count": 3
+    },
+    {
+      "id": "-1",
+      "count": 2
+    },
+    {
+      "id": "a",
+      "count": 2
+    },
+    {
+      "id": "discourse-table",
+      "count": 2
+    },
+    {
+      "id": "Layer_1",
+      "count": 2
+    },
+    {
+      "id": "timeline",
+      "count": 2
+    },
+    {
+      "id": "2",
+      "count": 2
+    },
+    {
+      "id": "9",
+      "count": 2
+    },
+    {
+      "id": "10",
+      "count": 2
+    },
+    {
+      "id": "12",
+      "count": 2
+    },
+    {
+      "id": "13",
+      "count": 2
+    },
+    {
+      "id": "14",
+      "count": 2
+    },
+    {
+      "id": "49",
+      "count": 2
+    },
+    {
+      "id": "82",
+      "count": 2
+    },
+    {
+      "id": "113180",
+      "count": 2
+    },
+    {
+      "id": "103078",
+      "count": 2
+    },
+    {
+      "id": "40958",
+      "count": 2
+    },
+    {
+      "id": "37135",
+      "count": 2
+    },
+    {
+      "id": "37405",
+      "count": 2
+    },
+    {
+      "id": "40943",
+      "count": 2
+    },
+    {
+      "id": "manifest-link",
+      "count": 1
+    },
+    {
+      "id": "data-discourse-setup",
+      "count": 1
+    },
+    {
+      "id": "hashtag-css-generator",
+      "count": 1
+    },
+    {
+      "id": "data-preloaded",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article, [role=\"main\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

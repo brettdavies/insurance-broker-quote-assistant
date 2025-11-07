@@ -1,0 +1,456 @@
+{
+  "domain": "propublica.org",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:26.625706",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 95,
+      "frequency": 95.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 5,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 11,
+      "frequency": 11.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "svelte-x77d2x",
+      "count": 90
+    },
+    {
+      "class": "svelte-lx63fs",
+      "count": 67
+    },
+    {
+      "class": "svelte-1r0prvj",
+      "count": 55
+    },
+    {
+      "class": "site-footer__link",
+      "count": 35
+    },
+    {
+      "class": "is-layout-flow",
+      "count": 34
+    },
+    {
+      "class": "wp-block-group",
+      "count": 33
+    },
+    {
+      "class": "wp-block-group-is-layout-flow",
+      "count": 29
+    },
+    {
+      "class": "site-header__link",
+      "count": 21
+    },
+    {
+      "class": "button",
+      "count": 20
+    },
+    {
+      "class": "text",
+      "count": 20
+    },
+    {
+      "class": "a11y",
+      "count": 18
+    },
+    {
+      "class": "font--sans",
+      "count": 17
+    },
+    {
+      "class": "svelte-rz6ji1",
+      "count": 16
+    },
+    {
+      "class": "svelte-155uwem",
+      "count": 16
+    },
+    {
+      "class": "icon-before",
+      "count": 15
+    },
+    {
+      "class": "button-is-icon-only",
+      "count": 14
+    },
+    {
+      "class": "grid-overlay__col",
+      "count": 14
+    },
+    {
+      "class": "screen-reader-text",
+      "count": 12
+    },
+    {
+      "class": "shape--circle",
+      "count": 11
+    },
+    {
+      "class": "shape--round-rect",
+      "count": 8
+    },
+    {
+      "class": "wp-block-heading",
+      "count": 8
+    },
+    {
+      "class": "hide-below-sm",
+      "count": 8
+    },
+    {
+      "class": "hide-print",
+      "count": 7
+    },
+    {
+      "class": "grid-container",
+      "count": 7
+    },
+    {
+      "class": "wp-block-post-title",
+      "count": 7
+    },
+    {
+      "class": "wp-post-image",
+      "count": 7
+    },
+    {
+      "class": "site-header__links",
+      "count": 6
+    },
+    {
+      "class": "site-header__links-list",
+      "count": 6
+    },
+    {
+      "class": "attribution",
+      "count": 6
+    },
+    {
+      "class": "attribution__credit",
+      "count": 6
+    },
+    {
+      "class": "wp-block-post",
+      "count": 6
+    },
+    {
+      "class": "status-publish",
+      "count": 6
+    },
+    {
+      "class": "has-post-thumbnail",
+      "count": 6
+    },
+    {
+      "class": "hentry",
+      "count": 6
+    },
+    {
+      "class": "wp-block-post-featured-image",
+      "count": 6
+    },
+    {
+      "class": "promo-set__card",
+      "count": 6
+    },
+    {
+      "class": "promo-set__art",
+      "count": 6
+    },
+    {
+      "class": "promo-set__card-description",
+      "count": 6
+    },
+    {
+      "class": "site-footer__links-heading",
+      "count": 6
+    },
+    {
+      "class": "site-footer__links-list",
+      "count": 6
+    },
+    {
+      "class": "site-header__links-heading",
+      "count": 5
+    },
+    {
+      "class": "icon",
+      "count": 5
+    },
+    {
+      "class": "is-layout-flex",
+      "count": 5
+    },
+    {
+      "class": "full",
+      "count": 5
+    },
+    {
+      "class": "wp-block-propublica-ad-slot",
+      "count": 5
+    },
+    {
+      "class": "post",
+      "count": 5
+    },
+    {
+      "class": "type-post",
+      "count": 5
+    },
+    {
+      "class": "format-standard",
+      "count": 5
+    },
+    {
+      "class": "pp_language-en",
+      "count": 5
+    },
+    {
+      "class": "pp_display_on-national",
+      "count": 5
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "bits-s1",
+      "count": 2
+    },
+    {
+      "id": "adagiojs-25cde3b499d486",
+      "count": 1
+    },
+    {
+      "id": "1116",
+      "count": 1
+    },
+    {
+      "id": "propublica-promo-bar-style-inline-css",
+      "count": 1
+    },
+    {
+      "id": "propublica-site-header-style-inline-css",
+      "count": 1
+    },
+    {
+      "id": "propublica-opener-art-style-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-embed-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-group-inline-css",
+      "count": 1
+    },
+    {
+      "id": "all-css-12",
+      "count": 1
+    },
+    {
+      "id": "propublica-primary-term-style-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-post-title-inline-css",
+      "count": 1
+    },
+    {
+      "id": "propublica-2025-core-post-title-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "propublica-byline-text-style-inline-css",
+      "count": 1
+    },
+    {
+      "id": "propublica-byline-profile-style-inline-css",
+      "count": 1
+    },
+    {
+      "id": "propublica-byline-style-inline-css",
+      "count": 1
+    },
+    {
+      "id": "propublica-2025-propublica-byline-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-post-date-inline-css",
+      "count": 1
+    },
+    {
+      "id": "propublica-2025-core-post-date-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "propublica-sharetools-style-inline-css",
+      "count": 1
+    },
+    {
+      "id": "propublica-darkmodetoggle-style-inline-css",
+      "count": 1
+    },
+    {
+      "id": "all-css-34",
+      "count": 1
+    },
+    {
+      "id": "propublica-2025-core-button-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-buttons-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-paragraph-inline-css",
+      "count": 1
+    },
+    {
+      "id": "propublica-2025-core-paragraph-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-heading-inline-css",
+      "count": 1
+    },
+    {
+      "id": "propublica-2025-core-heading-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "all-css-48",
+      "count": 1
+    },
+    {
+      "id": "propublica-series-promo-style-inline-css",
+      "count": 1
+    },
+    {
+      "id": "all-css-50",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

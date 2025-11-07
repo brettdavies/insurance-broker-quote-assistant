@@ -1,7 +1,7 @@
 {
   "domain": "pcworld.com",
   "total_pages": 2,
-  "analyzed_at": "2025-11-07T14:35:36.182193",
+  "analyzed_at": "2025-11-07T16:31:16.983859",
   "content_indicators": [
     {
       "selector": "article",
@@ -447,7 +447,7 @@
       "nav"
     ],
     "css_selector": "article, main",
-    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"ads\"], [id*=\"ads\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"]",
     "pruning_threshold": 0.6,
     "min_word_threshold": 50,
     "confidence_score": "high"

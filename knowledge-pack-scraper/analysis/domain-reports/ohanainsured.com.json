@@ -1,7 +1,7 @@
 {
   "domain": "ohanainsured.com",
   "total_pages": 2,
-  "analyzed_at": "2025-11-07T14:35:36.605573",
+  "analyzed_at": "2025-11-07T16:31:17.313431",
   "content_indicators": [
     {
       "selector": "article",
@@ -445,7 +445,7 @@
       "nav"
     ],
     "css_selector": "[role=\"main\"]",
-    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"menu\"], [id*=\"menu\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"menu\"], [id*=\"menu\"]",
     "pruning_threshold": 0.6,
     "min_word_threshold": 50,
     "confidence_score": "low"

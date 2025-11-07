@@ -1,0 +1,456 @@
+{
+  "domain": "denverpost.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:23.256109",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 5,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 6,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 48,
+      "frequency": 48.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 63,
+      "frequency": 63.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 5,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 180,
+      "frequency": 180.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 7,
+      "frequency": 7.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-item",
+      "count": 154
+    },
+    {
+      "class": "menu-large",
+      "count": 103
+    },
+    {
+      "class": "menu-item-type-taxonomy",
+      "count": 75
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 72
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 72
+    },
+    {
+      "class": "menu-item-object-category",
+      "count": 71
+    },
+    {
+      "class": "menu-item-has-children",
+      "count": 15
+    },
+    {
+      "class": "sr-only",
+      "count": 13
+    },
+    {
+      "class": "dfm-title",
+      "count": 13
+    },
+    {
+      "class": "article-title",
+      "count": 12
+    },
+    {
+      "class": "metered",
+      "count": 11
+    },
+    {
+      "class": "dfp-ad",
+      "count": 11
+    },
+    {
+      "class": "widget",
+      "count": 11
+    },
+    {
+      "class": "sub-menu",
+      "count": 10
+    },
+    {
+      "class": "entry-title",
+      "count": 10
+    },
+    {
+      "class": "widget-popular-stories",
+      "count": 10
+    },
+    {
+      "class": "bump-view",
+      "count": 10
+    },
+    {
+      "class": "sd-button",
+      "count": 9
+    },
+    {
+      "class": "share-icon",
+      "count": 9
+    },
+    {
+      "class": "no-text",
+      "count": 9
+    },
+    {
+      "class": "current-post-ancestor",
+      "count": 8
+    },
+    {
+      "class": "current-menu-parent",
+      "count": 8
+    },
+    {
+      "class": "current-post-parent",
+      "count": 8
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 7
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 7
+    },
+    {
+      "class": "menu",
+      "count": 6
+    },
+    {
+      "class": "subscribe-special",
+      "count": 6
+    },
+    {
+      "class": "custom-button",
+      "count": 6
+    },
+    {
+      "class": "share-facebook",
+      "count": 6
+    },
+    {
+      "class": "share-reddit",
+      "count": 6
+    },
+    {
+      "class": "share-twitter",
+      "count": 6
+    },
+    {
+      "class": "spring-spinner-part",
+      "count": 6
+    },
+    {
+      "class": "spring-spinner-rotator",
+      "count": 6
+    },
+    {
+      "class": "article-user-button",
+      "count": 6
+    },
+    {
+      "class": "category-business",
+      "count": 6
+    },
+    {
+      "class": "show-digisubs-push",
+      "count": 5
+    },
+    {
+      "class": "post",
+      "count": 5
+    },
+    {
+      "class": "type-post",
+      "count": 5
+    },
+    {
+      "class": "status-publish",
+      "count": 5
+    },
+    {
+      "class": "format-standard",
+      "count": 5
+    },
+    {
+      "class": "has-post-thumbnail",
+      "count": 5
+    },
+    {
+      "class": "hentry",
+      "count": 5
+    },
+    {
+      "class": "category-latest-headlines",
+      "count": 5
+    },
+    {
+      "class": "category-news",
+      "count": 5
+    },
+    {
+      "class": "category-colorado-real-estate",
+      "count": 5
+    },
+    {
+      "class": "feature-twitter",
+      "count": 5
+    },
+    {
+      "class": "image-wrapper",
+      "count": 5
+    },
+    {
+      "class": "lazyload",
+      "count": 5
+    },
+    {
+      "class": "expander",
+      "count": 5
+    },
+    {
+      "class": "icon-plus",
+      "count": 5
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "sharing-facebook-6865948",
+      "count": 3
+    },
+    {
+      "id": "sharing-reddit-6865948",
+      "count": 3
+    },
+    {
+      "id": "sharing-twitter-6865948",
+      "count": 3
+    },
+    {
+      "id": "no-sub-article-share-container",
+      "count": 3
+    },
+    {
+      "id": "title-and-info-container",
+      "count": 3
+    },
+    {
+      "id": "no-sub-title-text",
+      "count": 3
+    },
+    {
+      "id": "article-share-copy-title",
+      "count": 3
+    },
+    {
+      "id": "benefits-text-container",
+      "count": 3
+    },
+    {
+      "id": "article-share-line",
+      "count": 3
+    },
+    {
+      "id": "subscribe-or-login-container",
+      "count": 3
+    },
+    {
+      "id": "article-share-subscribe-link",
+      "count": 3
+    },
+    {
+      "id": "cancel-button-container",
+      "count": 3
+    },
+    {
+      "id": "app-name",
+      "count": 1
+    },
+    {
+      "id": "ltkSDK",
+      "count": 1
+    },
+    {
+      "id": "_mljs",
+      "count": 1
+    },
+    {
+      "id": "all-css-a3fe",
+      "count": 1
+    },
+    {
+      "id": "__htl_style-css",
+      "count": 1
+    },
+    {
+      "id": "all-css-bc8b",
+      "count": 1
+    },
+    {
+      "id": "wp-emoji-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "all-css-a557",
+      "count": 1
+    },
+    {
+      "id": "digisubs_plugin_css-css",
+      "count": 1
+    },
+    {
+      "id": "all-css-69fe",
+      "count": 1
+    },
+    {
+      "id": "mason-fonts-css",
+      "count": 1
+    },
+    {
+      "id": "all-css-947f",
+      "count": 1
+    },
+    {
+      "id": "dfm-accuweather-bootstrap-icons-css",
+      "count": 1
+    },
+    {
+      "id": "all-css-e1a3",
+      "count": 1
+    },
+    {
+      "id": "static-sophi-script-handle-js-after",
+      "count": 1
+    },
+    {
+      "id": "auth0-session-storage-js-before",
+      "count": 1
+    },
+    {
+      "id": "auth0-session-storage-js",
+      "count": 1
+    },
+    {
+      "id": "osano-js",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main, [role=\"main\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

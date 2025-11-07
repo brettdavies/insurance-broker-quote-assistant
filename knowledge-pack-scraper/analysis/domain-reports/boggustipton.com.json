@@ -1,0 +1,454 @@
+{
+  "domain": "boggustipton.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:22.599840",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 5,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 45,
+      "frequency": 45.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 11,
+      "frequency": 11.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 218,
+      "frequency": 218.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 9,
+      "frequency": 9.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-item",
+      "count": 175
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 159
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 159
+    },
+    {
+      "class": "top-level-empty",
+      "count": 153
+    },
+    {
+      "class": "di-vehicle-icon",
+      "count": 34
+    },
+    {
+      "class": "menu-item-has-children",
+      "count": 22
+    },
+    {
+      "class": "top-level-children",
+      "count": 22
+    },
+    {
+      "class": "jeep",
+      "count": 18
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 16
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 16
+    },
+    {
+      "class": "di-svg",
+      "count": 14
+    },
+    {
+      "class": "sr-hidden",
+      "count": 14
+    },
+    {
+      "class": "swiper-slide",
+      "count": 12
+    },
+    {
+      "class": "ram",
+      "count": 12
+    },
+    {
+      "class": "swiper-lazy",
+      "count": 12
+    },
+    {
+      "class": "menu-half",
+      "count": 12
+    },
+    {
+      "class": "row",
+      "count": 12
+    },
+    {
+      "class": "hidden-xs",
+      "count": 11
+    },
+    {
+      "class": "dropdown",
+      "count": 11
+    },
+    {
+      "class": "dropdown-menu",
+      "count": 11
+    },
+    {
+      "class": "fa",
+      "count": 11
+    },
+    {
+      "class": "sub-menu",
+      "count": 11
+    },
+    {
+      "class": "button",
+      "count": 11
+    },
+    {
+      "class": "dodge",
+      "count": 10
+    },
+    {
+      "class": "column",
+      "count": 10
+    },
+    {
+      "class": "sub-heading",
+      "count": 10
+    },
+    {
+      "class": "right",
+      "count": 9
+    },
+    {
+      "class": "hidden-sm",
+      "count": 8
+    },
+    {
+      "class": "primary-button",
+      "count": 8
+    },
+    {
+      "class": "device-icon",
+      "count": 7
+    },
+    {
+      "class": "lazyload-loading",
+      "count": 7
+    },
+    {
+      "class": "chrysler",
+      "count": 6
+    },
+    {
+      "class": "dropdown-toggle",
+      "count": 6
+    },
+    {
+      "class": "caret",
+      "count": 6
+    },
+    {
+      "class": "algolia-dataset",
+      "count": 6
+    },
+    {
+      "class": "widget",
+      "count": 6
+    },
+    {
+      "class": "bar-item",
+      "count": 6
+    },
+    {
+      "class": "bar-item__icon",
+      "count": 6
+    },
+    {
+      "class": "container-wide",
+      "count": 5
+    },
+    {
+      "class": "col-sm-12",
+      "count": 5
+    },
+    {
+      "class": "day",
+      "count": 5
+    },
+    {
+      "class": "hidden-all",
+      "count": 5
+    },
+    {
+      "class": "widget-item",
+      "count": 5
+    },
+    {
+      "class": "widget-item__label",
+      "count": 5
+    },
+    {
+      "class": "visible-xs",
+      "count": 4
+    },
+    {
+      "class": "hidden",
+      "count": 4
+    },
+    {
+      "class": "swiper-slide-duplicate",
+      "count": 4
+    },
+    {
+      "class": "show-count",
+      "count": 4
+    },
+    {
+      "class": "hide-count",
+      "count": 4
+    },
+    {
+      "class": "col-xs-12",
+      "count": 4
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "bAy4M97KXWossYaaRXFQD",
+      "count": 77
+    },
+    {
+      "id": "8jMRTJK5rAPJAWSkaQBect",
+      "count": 4
+    },
+    {
+      "id": "mqrSTtm7KjRWEsPjQUQyyA",
+      "count": 4
+    },
+    {
+      "id": "4KaF9TMv6DQr6J5uwiqA69",
+      "count": 4
+    },
+    {
+      "id": "f8572e0c6bf34c98bab2bc",
+      "count": 3
+    },
+    {
+      "id": "alg-search",
+      "count": 2
+    },
+    {
+      "id": "caGRhFeHgE9DM7R69sehwQ",
+      "count": 2
+    },
+    {
+      "id": "g",
+      "count": 1
+    },
+    {
+      "id": "_di-onlineshopper-loader",
+      "count": 1
+    },
+    {
+      "id": "wp-block-library-css",
+      "count": 1
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "di-modal-css-css",
+      "count": 1
+    },
+    {
+      "id": "online-shopper-v2-css-css",
+      "count": 1
+    },
+    {
+      "id": "di-reviews-css",
+      "count": 1
+    },
+    {
+      "id": "auth0-widget-css",
+      "count": 1
+    },
+    {
+      "id": "flexslider_css-css",
+      "count": 1
+    },
+    {
+      "id": "swiper-css-css",
+      "count": 1
+    },
+    {
+      "id": "font-awesome-css",
+      "count": 1
+    },
+    {
+      "id": "di-srp-layout-stylesheet-css",
+      "count": 1
+    },
+    {
+      "id": "owl-styles-css",
+      "count": 1
+    },
+    {
+      "id": "bootstrap-css-css",
+      "count": 1
+    },
+    {
+      "id": "base-child-style-inside-css",
+      "count": 1
+    },
+    {
+      "id": "base-child-style-css",
+      "count": 1
+    },
+    {
+      "id": "fancybox-css-css",
+      "count": 1
+    },
+    {
+      "id": "sidr-css-css",
+      "count": 1
+    },
+    {
+      "id": "inventory-css-css",
+      "count": 1
+    },
+    {
+      "id": "di-voice-css",
+      "count": 1
+    },
+    {
+      "id": "jquery-js",
+      "count": 1
+    },
+    {
+      "id": "jquery-migrate-js",
+      "count": 1
+    },
+    {
+      "id": "online-shopper-v2-js-js",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "nav"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

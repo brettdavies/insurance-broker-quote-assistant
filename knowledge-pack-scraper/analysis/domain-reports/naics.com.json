@@ -1,0 +1,456 @@
+{
+  "domain": "naics.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:25.367116",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 6,
+      "frequency": 6.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 79,
+      "frequency": 79.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 30,
+      "frequency": 30.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 42,
+      "frequency": 42.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "fl-node-content",
+      "count": 84
+    },
+    {
+      "class": "ewd-ufaq-post-margin",
+      "count": 64
+    },
+    {
+      "class": "ewd-ufaq-clear",
+      "count": 64
+    },
+    {
+      "class": "ewd-ufaq-rating-button",
+      "count": 64
+    },
+    {
+      "class": "ewd-ufaq-ratings-default-image",
+      "count": 64
+    },
+    {
+      "class": "fl-module",
+      "count": 54
+    },
+    {
+      "class": "fl-module-content",
+      "count": 54
+    },
+    {
+      "class": "first_child",
+      "count": 44
+    },
+    {
+      "class": "ewd-ufaq-faq-div",
+      "count": 32
+    },
+    {
+      "class": "ewd-ufaq-faq-column-count-one",
+      "count": 32
+    },
+    {
+      "class": "ewd-ufaq-faq-responsive-columns-1",
+      "count": 32
+    },
+    {
+      "class": "ewd-ufaq-faq-display-style-border_block",
+      "count": 32
+    },
+    {
+      "class": "ewd-ufaq-can-be-toggled",
+      "count": 32
+    },
+    {
+      "class": "ewd-ufaq-faq-title",
+      "count": 32
+    },
+    {
+      "class": "ewd-ufaq-faq-toggle",
+      "count": 32
+    },
+    {
+      "class": "ewd-ufaq-post-margin-symbol",
+      "count": 32
+    },
+    {
+      "class": "ewd-ufaq-",
+      "count": 32
+    },
+    {
+      "class": "ewd-ufaq-faq-title-text",
+      "count": 32
+    },
+    {
+      "class": "ewd-ufaq-faq-body",
+      "count": 32
+    },
+    {
+      "class": "ewd-ufaq-hidden",
+      "count": 32
+    },
+    {
+      "class": "ewd-ufaq-faq-categories",
+      "count": 32
+    },
+    {
+      "class": "ewd-ufaq-faq-post",
+      "count": 32
+    },
+    {
+      "class": "ewd-ufaq-ratings",
+      "count": 32
+    },
+    {
+      "class": "ewd-ufaq-ratings-label",
+      "count": 32
+    },
+    {
+      "class": "ewd-ufaq-up-vote",
+      "count": 32
+    },
+    {
+      "class": "ewd-ufaq-down-vote",
+      "count": 32
+    },
+    {
+      "class": "last_child",
+      "count": 24
+    },
+    {
+      "class": "fl-module-button",
+      "count": 23
+    },
+    {
+      "class": "fl-button-wrap",
+      "count": 23
+    },
+    {
+      "class": "fl-button-width-auto",
+      "count": 23
+    },
+    {
+      "class": "fl-button",
+      "count": 23
+    },
+    {
+      "class": "fl-button-text",
+      "count": 23
+    },
+    {
+      "class": "fl-col",
+      "count": 22
+    },
+    {
+      "class": "fl-col-bg-color",
+      "count": 22
+    },
+    {
+      "class": "fl-col-content",
+      "count": 22
+    },
+    {
+      "class": "fl-button-has-icon",
+      "count": 22
+    },
+    {
+      "class": "fl-button-icon",
+      "count": 22
+    },
+    {
+      "class": "fl-button-icon-before",
+      "count": 21
+    },
+    {
+      "class": "noWrap",
+      "count": 20
+    },
+    {
+      "class": "menu-item",
+      "count": 18
+    },
+    {
+      "class": "fl-button-left",
+      "count": 18
+    },
+    {
+      "class": "fl-module-heading",
+      "count": 16
+    },
+    {
+      "class": "fl-heading",
+      "count": 16
+    },
+    {
+      "class": "fl-heading-text",
+      "count": 16
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 15
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 15
+    },
+    {
+      "class": "fl-col-group",
+      "count": 14
+    },
+    {
+      "class": "fl-col-small",
+      "count": 14
+    },
+    {
+      "class": "fas",
+      "count": 13
+    },
+    {
+      "class": "fl-module-rich-text",
+      "count": 13
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "false",
+      "count": 7
+    },
+    {
+      "id": "7004",
+      "count": 3
+    },
+    {
+      "id": "6998",
+      "count": 3
+    },
+    {
+      "id": "7240",
+      "count": 3
+    },
+    {
+      "id": "7215",
+      "count": 3
+    },
+    {
+      "id": "7003",
+      "count": 3
+    },
+    {
+      "id": "6987",
+      "count": 3
+    },
+    {
+      "id": "137734",
+      "count": 3
+    },
+    {
+      "id": "7000",
+      "count": 3
+    },
+    {
+      "id": "7245",
+      "count": 3
+    },
+    {
+      "id": "6990",
+      "count": 3
+    },
+    {
+      "id": "137743",
+      "count": 3
+    },
+    {
+      "id": "6989",
+      "count": 3
+    },
+    {
+      "id": "7006",
+      "count": 3
+    },
+    {
+      "id": "137742",
+      "count": 3
+    },
+    {
+      "id": "6991",
+      "count": 3
+    },
+    {
+      "id": "7237",
+      "count": 3
+    },
+    {
+      "id": "6995",
+      "count": 3
+    },
+    {
+      "id": "6996",
+      "count": 3
+    },
+    {
+      "id": "6994",
+      "count": 3
+    },
+    {
+      "id": "7002",
+      "count": 3
+    },
+    {
+      "id": "6980",
+      "count": 3
+    },
+    {
+      "id": "137733",
+      "count": 3
+    },
+    {
+      "id": "6973",
+      "count": 3
+    },
+    {
+      "id": "137731",
+      "count": 3
+    },
+    {
+      "id": "6999",
+      "count": 3
+    },
+    {
+      "id": "137744",
+      "count": 3
+    },
+    {
+      "id": "7005",
+      "count": 3
+    },
+    {
+      "id": "6997",
+      "count": 3
+    },
+    {
+      "id": "6988",
+      "count": 3
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

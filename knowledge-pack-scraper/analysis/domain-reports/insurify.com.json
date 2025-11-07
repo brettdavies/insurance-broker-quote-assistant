@@ -1,7 +1,7 @@
 {
   "domain": "insurify.com",
   "total_pages": 60,
-  "analyzed_at": "2025-11-07T14:32:22.426652",
+  "analyzed_at": "2025-11-07T16:31:05.440263",
   "content_indicators": [
     {
       "selector": "article",
@@ -448,7 +448,7 @@
       "aside"
     ],
     "css_selector": "article, main",
-    "excluded_selector": "[class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"tracker\"], [id*=\"tracker\"]",
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"tracker\"], [id*=\"tracker\"]",
     "pruning_threshold": 0.6,
     "min_word_threshold": 50,
     "confidence_score": "high"

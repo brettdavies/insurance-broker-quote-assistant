@@ -1,7 +1,7 @@
 {
   "domain": "salterhealy.com",
   "total_pages": 2,
-  "analyzed_at": "2025-11-07T14:35:36.327469",
+  "analyzed_at": "2025-11-07T16:31:17.129763",
   "content_indicators": [
     {
       "selector": "article",
@@ -446,7 +446,7 @@
       "footer"
     ],
     "css_selector": null,
-    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
     "pruning_threshold": 0.6,
     "min_word_threshold": 50,
     "confidence_score": "low"

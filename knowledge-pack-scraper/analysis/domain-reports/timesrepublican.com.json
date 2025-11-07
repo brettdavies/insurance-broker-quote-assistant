@@ -1,0 +1,456 @@
+{
+  "domain": "timesrepublican.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:25.171260",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 14,
+      "frequency": 14.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 10,
+      "frequency": 10.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 6,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 89,
+      "frequency": 89.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-item",
+      "count": 71
+    },
+    {
+      "class": "menu-item-type-taxonomy",
+      "count": 44
+    },
+    {
+      "class": "menu-item-object-category",
+      "count": 44
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 14
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 14
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 13
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 13
+    },
+    {
+      "class": "menu-item-has-children",
+      "count": 12
+    },
+    {
+      "class": "sub-menu",
+      "count": 12
+    },
+    {
+      "class": "current-post-ancestor",
+      "count": 5
+    },
+    {
+      "class": "related_image_blur",
+      "count": 5
+    },
+    {
+      "class": "related_image",
+      "count": 5
+    },
+    {
+      "class": "lazy",
+      "count": 5
+    },
+    {
+      "class": "smaller",
+      "count": 5
+    },
+    {
+      "class": "lazyload",
+      "count": 4
+    },
+    {
+      "class": "menu",
+      "count": 3
+    },
+    {
+      "class": "current-menu-parent",
+      "count": 2
+    },
+    {
+      "class": "current-post-parent",
+      "count": 2
+    },
+    {
+      "class": "menu-item-5259-promos",
+      "count": 2
+    },
+    {
+      "class": "half_article_details",
+      "count": 2
+    },
+    {
+      "class": "clear",
+      "count": 2
+    },
+    {
+      "class": "popup",
+      "count": 2
+    },
+    {
+      "class": "footer_soc_icon",
+      "count": 2
+    },
+    {
+      "class": "sidenav",
+      "count": 1
+    },
+    {
+      "class": "closebtn",
+      "count": 1
+    },
+    {
+      "class": "menu-mobile-menu-container",
+      "count": 1
+    },
+    {
+      "class": "menu-item-606626",
+      "count": 1
+    },
+    {
+      "class": "menu-item-606634",
+      "count": 1
+    },
+    {
+      "class": "menu-item-606627",
+      "count": 1
+    },
+    {
+      "class": "menu-item-606628",
+      "count": 1
+    },
+    {
+      "class": "menu-item-606630",
+      "count": 1
+    },
+    {
+      "class": "menu-item-606629",
+      "count": 1
+    },
+    {
+      "class": "menu-item-606631",
+      "count": 1
+    },
+    {
+      "class": "menu-item-606632",
+      "count": 1
+    },
+    {
+      "class": "menu-item-606641",
+      "count": 1
+    },
+    {
+      "class": "menu-item-606644",
+      "count": 1
+    },
+    {
+      "class": "menu-item-606642",
+      "count": 1
+    },
+    {
+      "class": "menu-item-606643",
+      "count": 1
+    },
+    {
+      "class": "menu-item-606645",
+      "count": 1
+    },
+    {
+      "class": "menu-item-606636",
+      "count": 1
+    },
+    {
+      "class": "menu-item-606637",
+      "count": 1
+    },
+    {
+      "class": "menu-item-606638",
+      "count": 1
+    },
+    {
+      "class": "menu-item-606639",
+      "count": 1
+    },
+    {
+      "class": "menu-item-606640",
+      "count": 1
+    },
+    {
+      "class": "menu-item-606635",
+      "count": 1
+    },
+    {
+      "class": "menu-item-762462",
+      "count": 1
+    },
+    {
+      "class": "menu-item-762463",
+      "count": 1
+    },
+    {
+      "class": "menu-item-703333",
+      "count": 1
+    },
+    {
+      "class": "menu-item-110",
+      "count": 1
+    },
+    {
+      "class": "menu-item-106",
+      "count": 1
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "searchform",
+      "count": 2
+    },
+    {
+      "id": "s",
+      "count": 2
+    },
+    {
+      "id": "mec-select2-style-css",
+      "count": 1
+    },
+    {
+      "id": "mec-font-icons-css",
+      "count": 1
+    },
+    {
+      "id": "mec-frontend-style-css",
+      "count": 1
+    },
+    {
+      "id": "mec-tooltip-style-css",
+      "count": 1
+    },
+    {
+      "id": "mec-tooltip-shadow-style-css",
+      "count": 1
+    },
+    {
+      "id": "featherlight-css",
+      "count": 1
+    },
+    {
+      "id": "mec-google-fonts-css",
+      "count": 1
+    },
+    {
+      "id": "mec-lity-style-css",
+      "count": 1
+    },
+    {
+      "id": "mec-general-calendar-style-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-library-css",
+      "count": 1
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wpba_front_end_styles-css",
+      "count": 1
+    },
+    {
+      "id": "jquery-core-js",
+      "count": 1
+    },
+    {
+      "id": "jquery-migrate-js",
+      "count": 1
+    },
+    {
+      "id": "top_header",
+      "count": 1
+    },
+    {
+      "id": "slide_nav",
+      "count": 1
+    },
+    {
+      "id": "menu-mobile-menu",
+      "count": 1
+    },
+    {
+      "id": "menu-item-606626",
+      "count": 1
+    },
+    {
+      "id": "menu-item-606634",
+      "count": 1
+    },
+    {
+      "id": "menu-item-606627",
+      "count": 1
+    },
+    {
+      "id": "menu-item-606628",
+      "count": 1
+    },
+    {
+      "id": "menu-item-606630",
+      "count": 1
+    },
+    {
+      "id": "menu-item-606629",
+      "count": 1
+    },
+    {
+      "id": "menu-item-606631",
+      "count": 1
+    },
+    {
+      "id": "menu-item-606632",
+      "count": 1
+    },
+    {
+      "id": "menu-item-606641",
+      "count": 1
+    },
+    {
+      "id": "menu-item-606644",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"menu\"], [id*=\"menu\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

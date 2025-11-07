@@ -1,0 +1,456 @@
+{
+  "domain": "nbcmiami.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:26.325108",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 6,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 12,
+      "frequency": 12.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 200,
+      "frequency": 200.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 85,
+      "frequency": 85.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 13,
+      "frequency": 13.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "tbl-masker",
+      "count": 48
+    },
+    {
+      "class": "video-label",
+      "count": 34
+    },
+    {
+      "class": "menu-item",
+      "count": 33
+    },
+    {
+      "class": "flyout-nav__menu-item",
+      "count": 30
+    },
+    {
+      "class": "trc_rbox_border_elm",
+      "count": 22
+    },
+    {
+      "class": "videoCube",
+      "count": 22
+    },
+    {
+      "class": "trc_spotlight_item",
+      "count": 22
+    },
+    {
+      "class": "textItem",
+      "count": 22
+    },
+    {
+      "class": "item-thumbnail-href",
+      "count": 22
+    },
+    {
+      "class": "thumbBlock_holder",
+      "count": 22
+    },
+    {
+      "class": "thumbBlock",
+      "count": 22
+    },
+    {
+      "class": "thumbnail-overlay",
+      "count": 22
+    },
+    {
+      "class": "videoCube_aspect",
+      "count": 22
+    },
+    {
+      "class": "item-label-href",
+      "count": 22
+    },
+    {
+      "class": "video-label-box",
+      "count": 22
+    },
+    {
+      "class": "trc-main-label",
+      "count": 22
+    },
+    {
+      "class": "branding",
+      "count": 22
+    },
+    {
+      "class": "video-title",
+      "count": 22
+    },
+    {
+      "class": "site-header__trending-nav-item",
+      "count": 20
+    },
+    {
+      "class": "video-cta-style",
+      "count": 20
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 19
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 19
+    },
+    {
+      "class": "trc_attribution_position_after_branding",
+      "count": 18
+    },
+    {
+      "class": "trc_related_container",
+      "count": 17
+    },
+    {
+      "class": "child-item",
+      "count": 16
+    },
+    {
+      "class": "screen-reader-text",
+      "count": 15
+    },
+    {
+      "class": "tbl-trecs-container",
+      "count": 15
+    },
+    {
+      "class": "trc_spotlight_widget",
+      "count": 15
+    },
+    {
+      "class": "wp-asset-manager",
+      "count": 14
+    },
+    {
+      "class": "icon",
+      "count": 14
+    },
+    {
+      "class": "origin-undefined",
+      "count": 14
+    },
+    {
+      "class": "parent-item",
+      "count": 14
+    },
+    {
+      "class": "thumbnail_top",
+      "count": 13
+    },
+    {
+      "class": "trc_elastic",
+      "count": 12
+    },
+    {
+      "class": "video-label-flex-cta-item",
+      "count": 12
+    },
+    {
+      "class": "video-description",
+      "count": 12
+    },
+    {
+      "class": "trc_rbox_container",
+      "count": 11
+    },
+    {
+      "class": "trc_rbox",
+      "count": 11
+    },
+    {
+      "class": "trc_rbox_header",
+      "count": 11
+    },
+    {
+      "class": "trc_header_ext",
+      "count": 11
+    },
+    {
+      "class": "trc_rbox_header_span",
+      "count": 11
+    },
+    {
+      "class": "trc_rbox_outer",
+      "count": 11
+    },
+    {
+      "class": "trc_rbox_div",
+      "count": 11
+    },
+    {
+      "class": "videoCube_1_child",
+      "count": 11
+    },
+    {
+      "class": "trc-first-recommendation",
+      "count": 11
+    },
+    {
+      "class": "trc-spotlight-first-recommendation",
+      "count": 11
+    },
+    {
+      "class": "trc_clearer",
+      "count": 11
+    },
+    {
+      "class": "tbl-feed-card",
+      "count": 10
+    },
+    {
+      "class": "syndicatedItem",
+      "count": 10
+    },
+    {
+      "class": "video-label-box-cta",
+      "count": 10
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "tbl-explore-more-container",
+      "count": 48
+    },
+    {
+      "id": "taboola-below-article-thumbnails",
+      "count": 36
+    },
+    {
+      "id": "rbox-t2v",
+      "count": 10
+    },
+    {
+      "id": "Newsletters",
+      "count": 6
+    },
+    {
+      "id": "OOF",
+      "count": 4
+    },
+    {
+      "id": "Rectangle-5",
+      "count": 4
+    },
+    {
+      "id": "Local",
+      "count": 3
+    },
+    {
+      "id": "Weather",
+      "count": 3
+    },
+    {
+      "id": "On Your Side",
+      "count": 3
+    },
+    {
+      "id": "Investigates",
+      "count": 3
+    },
+    {
+      "id": "Responds",
+      "count": 3
+    },
+    {
+      "id": "watch news 24/7",
+      "count": 3
+    },
+    {
+      "id": "6 to Know",
+      "count": 3
+    },
+    {
+      "id": "15",
+      "count": 2
+    },
+    {
+      "id": "masthead",
+      "count": 2
+    },
+    {
+      "id": "primary-menu",
+      "count": 2
+    },
+    {
+      "id": "Video",
+      "count": 2
+    },
+    {
+      "id": "TV Listings",
+      "count": 2
+    },
+    {
+      "id": "Decision 2025",
+      "count": 2
+    },
+    {
+      "id": "\ud83c\udf2a\ufe0fHurricane Season",
+      "count": 2
+    },
+    {
+      "id": "\ud83d\udcfaWatch News 24/7",
+      "count": 2
+    },
+    {
+      "id": "\ud83d\udd0e Send a Tip",
+      "count": 2
+    },
+    {
+      "id": "What\u2019s Being Built Here",
+      "count": 2
+    },
+    {
+      "id": "Money Chat",
+      "count": 2
+    },
+    {
+      "id": "Dangerous Drive",
+      "count": 2
+    },
+    {
+      "id": "How to Stream",
+      "count": 2
+    },
+    {
+      "id": "6 to know \u2013 Top stories of the day",
+      "count": 2
+    },
+    {
+      "id": "\u2018It's burning my face': Video shows 50-foot sailboat on fire in Deerfield Beach",
+      "count": 2
+    },
+    {
+      "id": "FWC approves rule changes to capture invasive green iguanas",
+      "count": 2
+    },
+    {
+      "id": "Hialeah man arrested on drug trafficking charges in undercover FDLE bust",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

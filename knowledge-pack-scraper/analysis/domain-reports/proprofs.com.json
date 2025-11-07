@@ -1,0 +1,455 @@
+{
+  "domain": "proprofs.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:26.766732",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 9,
+      "frequency": 9.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 11,
+      "frequency": 11.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 284,
+      "frequency": 284.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 5,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 26,
+      "frequency": 26.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "m_opttxt",
+      "count": 192
+    },
+    {
+      "class": "ans_q_typemultichoice",
+      "count": 192
+    },
+    {
+      "class": "ans_rdcbbox",
+      "count": 99
+    },
+    {
+      "class": "labelHover",
+      "count": 97
+    },
+    {
+      "class": "radiochk",
+      "count": 97
+    },
+    {
+      "class": "iradio_square-blue",
+      "count": 97
+    },
+    {
+      "class": "answer_text_container",
+      "count": 97
+    },
+    {
+      "class": "answer_option",
+      "count": 96
+    },
+    {
+      "class": "multi_check_truefalse",
+      "count": 96
+    },
+    {
+      "class": "iCheck-helper",
+      "count": 96
+    },
+    {
+      "class": "xpln_text",
+      "count": 48
+    },
+    {
+      "class": "tipsy_cls_jump",
+      "count": 44
+    },
+    {
+      "class": "btn_class",
+      "count": 32
+    },
+    {
+      "class": "flex-box",
+      "count": 29
+    },
+    {
+      "class": "new_bottom_next_btn",
+      "count": 26
+    },
+    {
+      "class": "row",
+      "count": 25
+    },
+    {
+      "class": "question_text_area",
+      "count": 25
+    },
+    {
+      "class": "ai-main-div",
+      "count": 25
+    },
+    {
+      "class": "answer_boxes_real",
+      "count": 25
+    },
+    {
+      "class": "question_count",
+      "count": 25
+    },
+    {
+      "class": "mobile_next_btn_holder",
+      "count": 25
+    },
+    {
+      "class": "action_checker",
+      "count": 25
+    },
+    {
+      "class": "hide",
+      "count": 25
+    },
+    {
+      "class": "new_ad_wrapper_all",
+      "count": 25
+    },
+    {
+      "class": "ques-area-box",
+      "count": 24
+    },
+    {
+      "class": "ques-answer-box",
+      "count": 24
+    },
+    {
+      "class": "res_resp_area",
+      "count": 24
+    },
+    {
+      "class": "ques-answer-form",
+      "count": 24
+    },
+    {
+      "class": "ques-print",
+      "count": 24
+    },
+    {
+      "class": "ques-print-text",
+      "count": 24
+    },
+    {
+      "class": "ques_img_url",
+      "count": 24
+    },
+    {
+      "class": "answer_boxes",
+      "count": 24
+    },
+    {
+      "class": "flexboxes",
+      "count": 24
+    },
+    {
+      "class": "feedback_xpln",
+      "count": 24
+    },
+    {
+      "class": "explain_xpln",
+      "count": 24
+    },
+    {
+      "class": "in_qbox",
+      "count": 24
+    },
+    {
+      "class": "submit_required",
+      "count": 24
+    },
+    {
+      "class": "submit_required_text",
+      "count": 24
+    },
+    {
+      "class": "adwrapper_class",
+      "count": 24
+    },
+    {
+      "class": "all_show",
+      "count": 24
+    },
+    {
+      "class": "tab-content",
+      "count": 24
+    },
+    {
+      "class": "jump_btn",
+      "count": 24
+    },
+    {
+      "class": "jump_unanswered_cls",
+      "count": 24
+    },
+    {
+      "class": "jmpfr",
+      "count": 24
+    },
+    {
+      "class": "ad-label",
+      "count": 14
+    },
+    {
+      "class": "ad-slot",
+      "count": 14
+    },
+    {
+      "class": "icon-prds",
+      "count": 14
+    },
+    {
+      "class": "${isHidden}",
+      "count": 12
+    },
+    {
+      "class": "question-slot-${q_cont_class}",
+      "count": 12
+    },
+    {
+      "class": "message-content",
+      "count": 11
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "new-ai-ad'+quesnum+'",
+      "count": 26
+    },
+    {
+      "id": "4361335",
+      "count": 24
+    },
+    {
+      "id": "question-slot-${adUnitId}",
+      "count": 12
+    },
+    {
+      "id": "${ques_id}",
+      "count": 6
+    },
+    {
+      "id": "feed_popup_close",
+      "count": 4
+    },
+    {
+      "id": "overlay-feed",
+      "count": 3
+    },
+    {
+      "id": "thank_msg",
+      "count": 3
+    },
+    {
+      "id": "rate_blk",
+      "count": 3
+    },
+    {
+      "id": "rate_text",
+      "count": 3
+    },
+    {
+      "id": "submit_poor",
+      "count": 3
+    },
+    {
+      "id": "qsloader",
+      "count": 3
+    },
+    {
+      "id": "error_rating",
+      "count": 3
+    },
+    {
+      "id": "'+ques_id+'",
+      "count": 3
+    },
+    {
+      "id": "${quesId}",
+      "count": 3
+    },
+    {
+      "id": "Rectangle_19",
+      "count": 2
+    },
+    {
+      "id": "Path_66",
+      "count": 2
+    },
+    {
+      "id": "Path_68",
+      "count": 2
+    },
+    {
+      "id": "Path_70",
+      "count": 2
+    },
+    {
+      "id": "Path_72",
+      "count": 2
+    },
+    {
+      "id": "Path_74",
+      "count": 2
+    },
+    {
+      "id": "Path_76",
+      "count": 2
+    },
+    {
+      "id": "Path_78",
+      "count": 2
+    },
+    {
+      "id": "Path_80",
+      "count": 2
+    },
+    {
+      "id": "Quizzes",
+      "count": 2
+    },
+    {
+      "id": "Group_208527",
+      "count": 2
+    },
+    {
+      "id": "Quiz_Maker",
+      "count": 2
+    },
+    {
+      "id": "Group_841",
+      "count": 2
+    },
+    {
+      "id": "Quiz_Maker-2",
+      "count": 2
+    },
+    {
+      "id": "Group_70",
+      "count": 2
+    },
+    {
+      "id": "Group_69",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": null,
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

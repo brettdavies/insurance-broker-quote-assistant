@@ -1,0 +1,456 @@
+{
+  "domain": "homes.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:24.133700",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 7,
+      "frequency": 7.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 20,
+      "frequency": 20.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 34,
+      "frequency": 34.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "text-only",
+      "count": 22
+    },
+    {
+      "class": "res-icon",
+      "count": 13
+    },
+    {
+      "class": "link-item",
+      "count": 13
+    },
+    {
+      "class": "nav-link",
+      "count": 12
+    },
+    {
+      "class": "menu-column",
+      "count": 10
+    },
+    {
+      "class": "menu-header-item",
+      "count": 7
+    },
+    {
+      "class": "menu-title",
+      "count": 7
+    },
+    {
+      "class": "news-nav-item",
+      "count": 7
+    },
+    {
+      "class": "links-tab-btn",
+      "count": 7
+    },
+    {
+      "class": "links-content",
+      "count": 7
+    },
+    {
+      "class": "left-nav-item",
+      "count": 6
+    },
+    {
+      "class": "left-nav-menu",
+      "count": 6
+    },
+    {
+      "class": "learn-nav-item",
+      "count": 5
+    },
+    {
+      "class": "Enhancement",
+      "count": 5
+    },
+    {
+      "class": "Enhancement-item",
+      "count": 5
+    },
+    {
+      "class": "links-nav",
+      "count": 4
+    },
+    {
+      "class": "h5",
+      "count": 4
+    },
+    {
+      "class": "flex-group",
+      "count": 3
+    },
+    {
+      "class": "separator",
+      "count": 3
+    },
+    {
+      "class": "mui-fixed",
+      "count": 2
+    },
+    {
+      "class": "flex-container",
+      "count": 2
+    },
+    {
+      "class": "hidden",
+      "count": 2
+    },
+    {
+      "class": "auth-item-header",
+      "count": 2
+    },
+    {
+      "class": "sign-in-up",
+      "count": 2
+    },
+    {
+      "class": "active",
+      "count": 2
+    },
+    {
+      "class": "full-bio",
+      "count": 2
+    },
+    {
+      "class": "btn-component",
+      "count": 2
+    },
+    {
+      "class": "footer-section",
+      "count": 2
+    },
+    {
+      "class": "image-container",
+      "count": 2
+    },
+    {
+      "class": "appstore-logo",
+      "count": 2
+    },
+    {
+      "class": "header-primary",
+      "count": 1
+    },
+    {
+      "class": "agent-tutorial-modal-container",
+      "count": 1
+    },
+    {
+      "class": "icon-item",
+      "count": 1
+    },
+    {
+      "class": "back",
+      "count": 1
+    },
+    {
+      "class": "arrow-left-bold-icon",
+      "count": 1
+    },
+    {
+      "class": "left-nav-links-desktop",
+      "count": 1
+    },
+    {
+      "class": "logo-item",
+      "count": 1
+    },
+    {
+      "class": "logo",
+      "count": 1
+    },
+    {
+      "class": "header-logo",
+      "count": 1
+    },
+    {
+      "class": "nav-ul",
+      "count": 1
+    },
+    {
+      "class": "btn-link",
+      "count": 1
+    },
+    {
+      "class": "header-link",
+      "count": 1
+    },
+    {
+      "class": "user-menu-item",
+      "count": 1
+    },
+    {
+      "class": "menu-icon",
+      "count": 1
+    },
+    {
+      "class": "hamburger-menu",
+      "count": 1
+    },
+    {
+      "class": "photo-icon",
+      "count": 1
+    },
+    {
+      "class": "profile-squared-icon",
+      "count": 1
+    },
+    {
+      "class": "drawer-menu-list",
+      "count": 1
+    },
+    {
+      "class": "bold-link",
+      "count": 1
+    },
+    {
+      "class": "tint",
+      "count": 1
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "headerContainer",
+      "count": 1
+    },
+    {
+      "id": "backArrow",
+      "count": 1
+    },
+    {
+      "id": "header-left-nav-buy",
+      "count": 1
+    },
+    {
+      "id": "left-nav-buy-menu",
+      "count": 1
+    },
+    {
+      "id": "BuyMenu_HousesForSale",
+      "count": 1
+    },
+    {
+      "id": "BuyMenu_TownhousesForSale",
+      "count": 1
+    },
+    {
+      "id": "BuyMenu_CondosForSale",
+      "count": 1
+    },
+    {
+      "id": "BuyMenu_LandForSale",
+      "count": 1
+    },
+    {
+      "id": "BuyMenu_ManufacturedForSale",
+      "count": 1
+    },
+    {
+      "id": "BuyMenu__OpenHouses",
+      "count": 1
+    },
+    {
+      "id": "BuyMenu_HomesForSale",
+      "count": 1
+    },
+    {
+      "id": "header-left-nav-sell",
+      "count": 1
+    },
+    {
+      "id": "left-nav-sell-menu",
+      "count": 1
+    },
+    {
+      "id": "header-left-nav-rent",
+      "count": 1
+    },
+    {
+      "id": "left-nav-rent-menu",
+      "count": 1
+    },
+    {
+      "id": "header-left-nav-agents",
+      "count": 1
+    },
+    {
+      "id": "left-nav-agents-menu",
+      "count": 1
+    },
+    {
+      "id": "header-left-nav-explore",
+      "count": 1
+    },
+    {
+      "id": "left-nav-explore-menu",
+      "count": 1
+    },
+    {
+      "id": "header-left-nav-news",
+      "count": 1
+    },
+    {
+      "id": "left-nav-news-menu",
+      "count": 1
+    },
+    {
+      "id": "header-homes-logo",
+      "count": 1
+    },
+    {
+      "id": "logo-black",
+      "count": 1
+    },
+    {
+      "id": "vue-prev-next",
+      "count": 1
+    },
+    {
+      "id": "signinAnchor",
+      "count": 1
+    },
+    {
+      "id": "advertise-header-link",
+      "count": 1
+    },
+    {
+      "id": "rightNavToggleFromHeader",
+      "count": 1
+    },
+    {
+      "id": "header-user-initials",
+      "count": 1
+    },
+    {
+      "id": "rightNavDrawer",
+      "count": 1
+    },
+    {
+      "id": "signinDrawerAnchor",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

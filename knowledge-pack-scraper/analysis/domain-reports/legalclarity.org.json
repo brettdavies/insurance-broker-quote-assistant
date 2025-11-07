@@ -1,7 +1,7 @@
 {
   "domain": "legalclarity.org",
   "total_pages": 21,
-  "analyzed_at": "2025-11-07T14:35:27.763318",
+  "analyzed_at": "2025-11-07T16:31:12.143252",
   "content_indicators": [
     {
       "selector": "article",
@@ -447,7 +447,7 @@
       "nav"
     ],
     "css_selector": "article, main",
-    "excluded_selector": "[class*=\"ad\"], [id*=\"ad\"], [class*=\"ads\"], [id*=\"ads\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
     "pruning_threshold": 0.6,
     "min_word_threshold": 50,
     "confidence_score": "high"

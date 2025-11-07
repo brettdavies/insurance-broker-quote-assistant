@@ -1,0 +1,455 @@
+{
+  "domain": "hdfclife.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:24.091421",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 19,
+      "frequency": 19.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 6,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 248,
+      "frequency": 248.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 7,
+      "frequency": 7.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 706,
+      "frequency": 706.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 6,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 132,
+      "frequency": 132.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "lemniskTrackingEventName",
+      "count": 180
+    },
+    {
+      "class": "gtm-menuLinkInner",
+      "count": 142
+    },
+    {
+      "class": "hamMenuBullet",
+      "count": 142
+    },
+    {
+      "class": "menuBullet",
+      "count": 140
+    },
+    {
+      "class": "linkAdobeAnalytics",
+      "count": 121
+    },
+    {
+      "class": "moreMenuLink",
+      "count": 52
+    },
+    {
+      "class": "error-txt",
+      "count": 50
+    },
+    {
+      "class": "d-none",
+      "count": 44
+    },
+    {
+      "class": "dsp-n",
+      "count": 37
+    },
+    {
+      "class": "menuLinkInner",
+      "count": 36
+    },
+    {
+      "class": "hamSubMenu",
+      "count": 36
+    },
+    {
+      "class": "row",
+      "count": 32
+    },
+    {
+      "class": "form-control",
+      "count": 31
+    },
+    {
+      "class": "form-group",
+      "count": 30
+    },
+    {
+      "class": "col-sm-12",
+      "count": 30
+    },
+    {
+      "class": "aem-GridColumn",
+      "count": 26
+    },
+    {
+      "class": "aem-GridColumn--default--12",
+      "count": 26
+    },
+    {
+      "class": "gtm-moreMenuLink",
+      "count": 26
+    },
+    {
+      "class": "mobileSeeMore",
+      "count": 26
+    },
+    {
+      "class": "btn",
+      "count": 26
+    },
+    {
+      "class": "menuSecList",
+      "count": 19
+    },
+    {
+      "class": "inputGroup",
+      "count": 18
+    },
+    {
+      "class": "text-center",
+      "count": 17
+    },
+    {
+      "class": "menuSecListSection",
+      "count": 17
+    },
+    {
+      "class": "contact-details-item",
+      "count": 15
+    },
+    {
+      "class": "contact-icon-wrapper",
+      "count": 15
+    },
+    {
+      "class": "contact-details-title",
+      "count": 15
+    },
+    {
+      "class": "contact-details-link",
+      "count": 15
+    },
+    {
+      "class": "col-lg-4",
+      "count": 15
+    },
+    {
+      "class": "btn-primary",
+      "count": 15
+    },
+    {
+      "class": "form-field",
+      "count": 15
+    },
+    {
+      "class": "planNameHead",
+      "count": 15
+    },
+    {
+      "class": "btnred",
+      "count": 14
+    },
+    {
+      "class": "lozad",
+      "count": 12
+    },
+    {
+      "class": "siteButton",
+      "count": 12
+    },
+    {
+      "class": "message",
+      "count": 12
+    },
+    {
+      "class": "error-red",
+      "count": 12
+    },
+    {
+      "class": "input-field",
+      "count": 12
+    },
+    {
+      "class": "previewFieldBlock",
+      "count": 11
+    },
+    {
+      "class": "wrapper",
+      "count": 11
+    },
+    {
+      "class": "submenu-link",
+      "count": 10
+    },
+    {
+      "class": "logo",
+      "count": 10
+    },
+    {
+      "class": "logodl",
+      "count": 10
+    },
+    {
+      "class": "btn-sm",
+      "count": 10
+    },
+    {
+      "class": "subMenuLink",
+      "count": 9
+    },
+    {
+      "class": "scheduledDate",
+      "count": 9
+    },
+    {
+      "class": "scheduledTime",
+      "count": 9
+    },
+    {
+      "class": "d-flex",
+      "count": 9
+    },
+    {
+      "class": "valid",
+      "count": 9
+    },
+    {
+      "class": "container",
+      "count": 8
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "stars",
+      "count": 6
+    },
+    {
+      "id": "stars-empty-star",
+      "count": 6
+    },
+    {
+      "id": "stars-full-star",
+      "count": 6
+    },
+    {
+      "id": "stars-half-star",
+      "count": 6
+    },
+    {
+      "id": "countryCode",
+      "count": 5
+    },
+    {
+      "id": "phone",
+      "count": 5
+    },
+    {
+      "id": "speech",
+      "count": 4
+    },
+    {
+      "id": "litePageSubmit",
+      "count": 4
+    },
+    {
+      "id": "dateBirth",
+      "count": 4
+    },
+    {
+      "id": "asteriskPhone",
+      "count": 4
+    },
+    {
+      "id": "successMsg",
+      "count": 4
+    },
+    {
+      "id": "otpSentMsg",
+      "count": 4
+    },
+    {
+      "id": "redirectionMsg",
+      "count": 4
+    },
+    {
+      "id": "failureMsg",
+      "count": 4
+    },
+    {
+      "id": "invalidOtpMsg",
+      "count": 4
+    },
+    {
+      "id": "incompleteOtpMsg",
+      "count": 4
+    },
+    {
+      "id": "tryLaterMsg",
+      "count": 4
+    },
+    {
+      "id": "mainForm",
+      "count": 4
+    },
+    {
+      "id": "digit2",
+      "count": 4
+    },
+    {
+      "id": "digit1",
+      "count": 4
+    },
+    {
+      "id": "digit3",
+      "count": 4
+    },
+    {
+      "id": "digit4",
+      "count": 4
+    },
+    {
+      "id": "digit5",
+      "count": 4
+    },
+    {
+      "id": "digit6",
+      "count": 4
+    },
+    {
+      "id": "resendOtp",
+      "count": 4
+    },
+    {
+      "id": "backBtn",
+      "count": 4
+    },
+    {
+      "id": "verifyOtp",
+      "count": 4
+    },
+    {
+      "id": "otpOverlay",
+      "count": 4
+    },
+    {
+      "id": "successImg",
+      "count": 4
+    },
+    {
+      "id": "pageRating",
+      "count": 3
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

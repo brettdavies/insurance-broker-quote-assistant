@@ -1,0 +1,456 @@
+{
+  "domain": "cybersecuritydive.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:23.132147",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 27,
+      "frequency": 27.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 45,
+      "frequency": 45.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 59,
+      "frequency": 59.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 20,
+      "frequency": 20.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 8,
+      "frequency": 8.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "analytics",
+      "count": 96
+    },
+    {
+      "class": "columns",
+      "count": 36
+    },
+    {
+      "class": "row",
+      "count": 23
+    },
+    {
+      "class": "hide-small",
+      "count": 20
+    },
+    {
+      "class": "show-large",
+      "count": 20
+    },
+    {
+      "class": "secondary-label",
+      "count": 16
+    },
+    {
+      "class": "list-no-bullets",
+      "count": 11
+    },
+    {
+      "class": "screen-reader-text",
+      "count": 10
+    },
+    {
+      "class": "button",
+      "count": 9
+    },
+    {
+      "class": "error",
+      "count": 8
+    },
+    {
+      "class": "feed__item",
+      "count": 8
+    },
+    {
+      "class": "feed__image-container",
+      "count": 8
+    },
+    {
+      "class": "feed__image",
+      "count": 8
+    },
+    {
+      "class": "feed__attribution-icon",
+      "count": 8
+    },
+    {
+      "class": "sidebar-box-list__item",
+      "count": 8
+    },
+    {
+      "class": "flex",
+      "count": 8
+    },
+    {
+      "class": "sidebar-box-title-container",
+      "count": 8
+    },
+    {
+      "class": "sidebar-box-list__item-title",
+      "count": 8
+    },
+    {
+      "class": "js-pressrelease",
+      "count": 8
+    },
+    {
+      "class": "nav-menu-item",
+      "count": 7
+    },
+    {
+      "class": "pressrelease-logo-container",
+      "count": 7
+    },
+    {
+      "class": "social-icon",
+      "count": 6
+    },
+    {
+      "class": "social-icon__text",
+      "count": 6
+    },
+    {
+      "class": "email",
+      "count": 5
+    },
+    {
+      "class": "social-button",
+      "count": 5
+    },
+    {
+      "class": "medium-7",
+      "count": 5
+    },
+    {
+      "class": "medium-4",
+      "count": 5
+    },
+    {
+      "class": "medium-centered",
+      "count": 4
+    },
+    {
+      "class": "large-12",
+      "count": 4
+    },
+    {
+      "class": "hybrid-ad-wrapper",
+      "count": 4
+    },
+    {
+      "class": "hide-large",
+      "count": 4
+    },
+    {
+      "class": "hybrid-ad-inner-wrapper",
+      "count": 4
+    },
+    {
+      "class": "signup",
+      "count": 4
+    },
+    {
+      "class": "form",
+      "count": 4
+    },
+    {
+      "class": "js-form-email-validate",
+      "count": 4
+    },
+    {
+      "class": "email-input",
+      "count": 4
+    },
+    {
+      "class": "js-email-input",
+      "count": 4
+    },
+    {
+      "class": "signup-list",
+      "count": 4
+    },
+    {
+      "class": "checkbox",
+      "count": 4
+    },
+    {
+      "class": "signup-user-consent_box",
+      "count": 4
+    },
+    {
+      "class": "button--medium",
+      "count": 4
+    },
+    {
+      "class": "signup-button",
+      "count": 4
+    },
+    {
+      "class": "email_error",
+      "count": 4
+    },
+    {
+      "class": "newsletter-error",
+      "count": 4
+    },
+    {
+      "class": "sidebar-box",
+      "count": 4
+    },
+    {
+      "class": "sidebar-box__header",
+      "count": 4
+    },
+    {
+      "class": "medium-5",
+      "count": 4
+    },
+    {
+      "class": "t-edfooter-edpicks-1",
+      "count": 4
+    },
+    {
+      "class": "feed__attribution",
+      "count": 4
+    },
+    {
+      "class": "feed__title",
+      "count": 4
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "id_user_consent-elevated_footer",
+      "count": 2
+    },
+    {
+      "id": "vwoCode",
+      "count": 1
+    },
+    {
+      "id": "osano-cm-aria.newWindow",
+      "count": 1
+    },
+    {
+      "id": "osano-cm-aria.external",
+      "count": 1
+    },
+    {
+      "id": "osano-cm-aria.externalNewWindow",
+      "count": 1
+    },
+    {
+      "id": "7be16bd7-a0bc-4094-9085-67df5a4f7ab8",
+      "count": 1
+    },
+    {
+      "id": "7be16bd7-a0bc-4094-9085-67df5a4f7ab8__label",
+      "count": 1
+    },
+    {
+      "id": "528b3ca8-c098-4a40-8ffe-bd9b8466ffd1",
+      "count": 1
+    },
+    {
+      "id": "f8deb288-21d4-4405-969d-9d92af572452",
+      "count": 1
+    },
+    {
+      "id": "f8deb288-21d4-4405-969d-9d92af572452__label",
+      "count": 1
+    },
+    {
+      "id": "2f4a24fb-c155-4ccb-bdd8-3d981d490ab8",
+      "count": 1
+    },
+    {
+      "id": "prestitial-init",
+      "count": 1
+    },
+    {
+      "id": "prestitial-outer",
+      "count": 1
+    },
+    {
+      "id": "paychekgoeshere",
+      "count": 1
+    },
+    {
+      "id": "signup-inter",
+      "count": 1
+    },
+    {
+      "id": "signup-inter-form",
+      "count": 1
+    },
+    {
+      "id": "interstitial-error",
+      "count": 1
+    },
+    {
+      "id": "form-interstitial",
+      "count": 1
+    },
+    {
+      "id": "id_f030cb_email",
+      "count": 1
+    },
+    {
+      "id": "newsletter-list-section",
+      "count": 1
+    },
+    {
+      "id": "interstitial-consent-container",
+      "count": 1
+    },
+    {
+      "id": "id_user_consent",
+      "count": 1
+    },
+    {
+      "id": "signup-inter-submit",
+      "count": 1
+    },
+    {
+      "id": "dfp-leaderboard-desktop",
+      "count": 1
+    },
+    {
+      "id": "top",
+      "count": 1
+    },
+    {
+      "id": "search-desktop",
+      "count": 1
+    },
+    {
+      "id": "skip-link-target",
+      "count": 1
+    },
+    {
+      "id": "main-content",
+      "count": 1
+    },
+    {
+      "id": "dfp-hybrid1-mobile",
+      "count": 1
+    },
+    {
+      "id": "dfp-hybrid2-desktop",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

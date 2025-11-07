@@ -1,0 +1,456 @@
+{
+  "domain": "equisoft.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:23.404702",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 9,
+      "frequency": 9.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 79,
+      "frequency": 79.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 8,
+      "frequency": 8.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "text-primary-300",
+      "count": 75
+    },
+    {
+      "class": "mb-4",
+      "count": 63
+    },
+    {
+      "class": "hover:opacity-75",
+      "count": 62
+    },
+    {
+      "class": "font-medium",
+      "count": 59
+    },
+    {
+      "class": "flex",
+      "count": 58
+    },
+    {
+      "class": "type-300",
+      "count": 57
+    },
+    {
+      "class": "duration-500",
+      "count": 56
+    },
+    {
+      "class": "nav-section__item",
+      "count": 48
+    },
+    {
+      "class": "no-wrap",
+      "count": 48
+    },
+    {
+      "class": "nav-section__item-content",
+      "count": 48
+    },
+    {
+      "class": "nav-section__item-heading",
+      "count": 48
+    },
+    {
+      "class": "col-12",
+      "count": 24
+    },
+    {
+      "class": "font-50",
+      "count": 21
+    },
+    {
+      "class": "hidden",
+      "count": 20
+    },
+    {
+      "class": "w-full",
+      "count": 19
+    },
+    {
+      "class": "font-60",
+      "count": 19
+    },
+    {
+      "class": "type-400",
+      "count": 18
+    },
+    {
+      "class": "text-tertiary",
+      "count": 16
+    },
+    {
+      "class": "global-nav__section-list",
+      "count": 14
+    },
+    {
+      "class": "global-nav__section-header",
+      "count": 14
+    },
+    {
+      "class": "py-4",
+      "count": 14
+    },
+    {
+      "class": "xl:pl-4",
+      "count": 14
+    },
+    {
+      "class": "nav-section__items",
+      "count": 14
+    },
+    {
+      "class": "font-40",
+      "count": 14
+    },
+    {
+      "class": "absolute",
+      "count": 13
+    },
+    {
+      "class": "global-nav__section-list--one",
+      "count": 13
+    },
+    {
+      "class": "mb-6",
+      "count": 13
+    },
+    {
+      "class": "border-mono-200",
+      "count": 13
+    },
+    {
+      "class": "type-200",
+      "count": 12
+    },
+    {
+      "class": "lg:block",
+      "count": 11
+    },
+    {
+      "class": "row",
+      "count": 11
+    },
+    {
+      "class": "mb-8",
+      "count": 11
+    },
+    {
+      "class": "global-nav__item--chevron",
+      "count": 10
+    },
+    {
+      "class": "lg:pr-4",
+      "count": 10
+    },
+    {
+      "class": "font-semibold",
+      "count": 10
+    },
+    {
+      "class": "border-b",
+      "count": 10
+    },
+    {
+      "class": "lg:hidden",
+      "count": 10
+    },
+    {
+      "class": "transition-opacity",
+      "count": 9
+    },
+    {
+      "class": "duration-300",
+      "count": 9
+    },
+    {
+      "class": "social-circle",
+      "count": 9
+    },
+    {
+      "class": "fill-current",
+      "count": 8
+    },
+    {
+      "class": "text-primary-200",
+      "count": 8
+    },
+    {
+      "class": "relative",
+      "count": 8
+    },
+    {
+      "class": "pr-10",
+      "count": 8
+    },
+    {
+      "class": "lg:mb-3",
+      "count": 8
+    },
+    {
+      "class": "inline-block",
+      "count": 8
+    },
+    {
+      "class": "lg:type-300",
+      "count": 8
+    },
+    {
+      "class": "lg:col-3",
+      "count": 7
+    },
+    {
+      "class": "accordion-item",
+      "count": 7
+    },
+    {
+      "class": "js-accordion",
+      "count": 7
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "9.-Matchmaker",
+      "count": 2
+    },
+    {
+      "id": "solutions__opia__matchmaker--1",
+      "count": 2
+    },
+    {
+      "id": "Group-11",
+      "count": 2
+    },
+    {
+      "id": "hubspot-web-interactives-loader",
+      "count": 1
+    },
+    {
+      "id": "hs-analytics",
+      "count": 1
+    },
+    {
+      "id": "hubspot-messages-loader",
+      "count": 1
+    },
+    {
+      "id": "cookieBanner-2880903",
+      "count": 1
+    },
+    {
+      "id": "gtmScript",
+      "count": 1
+    },
+    {
+      "id": "header",
+      "count": 1
+    },
+    {
+      "id": "js-announcement",
+      "count": 1
+    },
+    {
+      "id": "js-announcement-close",
+      "count": 1
+    },
+    {
+      "id": "solutions",
+      "count": 1
+    },
+    {
+      "id": "products",
+      "count": 1
+    },
+    {
+      "id": "services",
+      "count": 1
+    },
+    {
+      "id": "insights",
+      "count": 1
+    },
+    {
+      "id": "nav-about-us",
+      "count": 1
+    },
+    {
+      "id": "js-nav-bg-trigger",
+      "count": 1
+    },
+    {
+      "id": "what-is-the-naic",
+      "count": 1
+    },
+    {
+      "id": "why-is-the-naic-important",
+      "count": 1
+    },
+    {
+      "id": "https://content.naic.org/",
+      "count": 1
+    },
+    {
+      "id": "carbon:link",
+      "count": 1
+    },
+    {
+      "id": "Vector",
+      "count": 1
+    },
+    {
+      "id": "Vector_2",
+      "count": 1
+    },
+    {
+      "id": "2880903",
+      "count": 1
+    },
+    {
+      "id": "id-01-0e7a80d1-36a3-4488-8361-8fdf62d1770b",
+      "count": 1
+    },
+    {
+      "id": "accordionTabServices",
+      "count": 1
+    },
+    {
+      "id": "accordionPanelServices",
+      "count": 1
+    },
+    {
+      "id": "accordionTabEquisoft",
+      "count": 1
+    },
+    {
+      "id": "accordionPanelEquisoft",
+      "count": 1
+    },
+    {
+      "id": "accordionTabProducts",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

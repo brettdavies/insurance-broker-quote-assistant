@@ -162,6 +162,29 @@ async def filter_page(
         filtered_markdown = re.sub(r'\n{3,}', '\n\n', filtered_markdown)
         filtered_markdown = filtered_markdown.strip()
 
+        # If filtering resulted in empty content, try fallback to body with minimal exclusions
+        if len(filtered_markdown.strip()) == 0:
+            # Last resort: use body tag with ONLY tag-based exclusions (skip aggressive class patterns)
+            soup = BeautifulSoup(html_content, 'html.parser')
+
+            # Remove only obvious boilerplate tags (header, footer, nav, aside)
+            for tag in ['header', 'footer', 'nav', 'aside']:
+                for elem in soup.find_all(tag):
+                    elem.decompose()
+
+            # Convert to markdown
+            filtered_markdown = md(str(soup), heading_style="ATX")
+            filtered_markdown = re.sub(r'\n{3,}', '\n\n', filtered_markdown)
+            filtered_markdown = filtered_markdown.strip()
+
+            # If still empty, give up
+            if len(filtered_markdown.strip()) == 0:
+                return {
+                    'page_id': page_id,
+                    'error': 'Empty content after fallback to body tag',
+                    'filtered_at': datetime.now().isoformat(),
+                }
+
         # Calculate word counts
         raw_word_count = len(raw_markdown.split())
         filtered_word_count = len(filtered_markdown.split())
@@ -187,21 +210,34 @@ async def filter_page(
                 negative_lines.append(line[1:])  # Remove the '+' prefix
 
         # Create set of lines in filtered markdown for deduplication
-        filtered_lines_set = set(filtered_markdown.splitlines())
+        # Normalize by stripping whitespace, markdown table pipes, and spaces around punctuation
+        def normalize_line(line):
+            # Remove leading/trailing whitespace and markdown table pipes
+            line = re.sub(r'^\s*\||\|\s*$', '', line).strip()
+            # Normalize spaces around punctuation (e.g., "word :" -> "word:")
+            line = re.sub(r'\s+([:.;,!?])', r'\1', line)
+            return line
+
+        filtered_lines_set = set(normalize_line(line) for line in filtered_markdown.splitlines())
 
         # Keep only lines that don't appear in filtered markdown
         unique_negative_lines = []
         for line in negative_lines:
-            line_stripped = line.rstrip('\n')
-            if line_stripped and line_stripped not in filtered_lines_set:
-                unique_negative_lines.append(line_stripped)
+            line_normalized = normalize_line(line)
+            if line_normalized and line_normalized not in filtered_lines_set:
+                unique_negative_lines.append(line_normalized)
 
         negative_space = '\n'.join(unique_negative_lines)
 
-        # Save outputs
-        filtered_file = output_dir / f'{page_id}_filtered.md'
-        negative_file = output_dir / f'{page_id}_filtered_negative.md'
-        quality_file = output_dir / f'{page_id}_quality.json'
+        # Save outputs to sharded subdirectory
+        # Extract shard prefix from page ID (first 2 chars after 'page_')
+        prefix = page_id.split('_')[1][:2]
+        shard_dir = output_dir / prefix
+        shard_dir.mkdir(parents=True, exist_ok=True)
+
+        filtered_file = shard_dir / f'{page_id}_filtered.md'
+        negative_file = shard_dir / f'{page_id}_filtered_negative.md'
+        quality_file = shard_dir / f'{page_id}_quality.json'
 
         with open(filtered_file, 'w', encoding='utf-8') as f:
             f.write(filtered_markdown)
@@ -283,7 +319,7 @@ async def batch_filter_pages(
         results = await asyncio.gather(*tasks)
 
         # Report results
-        for result in results:
+        for i, result in enumerate(results):
             completed += 1
             if 'error' in result:
                 errors += 1
@@ -332,15 +368,15 @@ def main():
     parser.add_argument(
         '--output',
         type=Path,
-        default=Path('../raw/pages'),
-        help='Output directory for filtered pages (default: raw/pages)'
+        default=Path('raw/pages'),
+        help='Output directory for filtered pages (default: knowledge-pack-scraper/raw/pages)'
     )
 
     args = parser.parse_args()
 
     # Setup paths
     base_path = Path(__file__).parent.parent
-    output_dir = base_path / args.output
+    output_dir = (base_path / args.output).resolve()
     output_dir.mkdir(parents=True, exist_ok=True)
 
     # Load trackers
@@ -391,9 +427,11 @@ def main():
         if args.domain and domain != normalize_domain(args.domain):
             continue
 
-        # Check files exist (using TrackerManager output_base)
-        html_file = tm.output_base / 'pages' / f'{page_id}.html'
-        md_file = tm.output_base / 'pages' / f'{page_id}.md'
+        # Check files exist (using TrackerManager output_base with sharding)
+        # Extract shard prefix from page ID (first 2 chars after 'page_')
+        prefix = page_id.split('_')[1][:2]
+        html_file = tm.output_base / 'pages' / prefix / f'{page_id}.html'
+        md_file = tm.output_base / 'pages' / prefix / f'{page_id}.md'
 
         if not html_file.exists() or not md_file.exists():
             continue

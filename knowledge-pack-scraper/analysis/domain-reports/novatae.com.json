@@ -1,0 +1,454 @@
+{
+  "domain": "novatae.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:20.415739",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 156,
+      "frequency": 156.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "hs-menu-item",
+      "count": 120
+    },
+    {
+      "class": "hs-menu-depth-2",
+      "count": 54
+    },
+    {
+      "class": "hs-menu-depth-3",
+      "count": 38
+    },
+    {
+      "class": "hs-menu-depth-1",
+      "count": 28
+    },
+    {
+      "class": "hs_cos_wrapper",
+      "count": 14
+    },
+    {
+      "class": "hs_cos_wrapper_widget",
+      "count": 12
+    },
+    {
+      "class": "hs-item-has-children",
+      "count": 12
+    },
+    {
+      "class": "hs-menu-children-wrapper",
+      "count": 12
+    },
+    {
+      "class": "component",
+      "count": 8
+    },
+    {
+      "class": "yxt-Answers-component",
+      "count": 8
+    },
+    {
+      "class": "hs-menu-wrapper",
+      "count": 7
+    },
+    {
+      "class": "active-branch",
+      "count": 7
+    },
+    {
+      "class": "flyouts",
+      "count": 7
+    },
+    {
+      "class": "hs-menu-flow-horizontal",
+      "count": 7
+    },
+    {
+      "class": "sr-only",
+      "count": 6
+    },
+    {
+      "class": "child-trigger",
+      "count": 6
+    },
+    {
+      "class": "hs_cos_wrapper_type_module",
+      "count": 5
+    },
+    {
+      "class": "hs_cos_wrapper_type_simple_menu",
+      "count": 5
+    },
+    {
+      "class": "container",
+      "count": 4
+    },
+    {
+      "class": "Icon",
+      "count": 4
+    },
+    {
+      "class": "icon-text-box",
+      "count": 4
+    },
+    {
+      "class": "image",
+      "count": 4
+    },
+    {
+      "class": "image-text",
+      "count": 4
+    },
+    {
+      "class": "ptb-96",
+      "count": 3
+    },
+    {
+      "class": "quick-menu",
+      "count": 3
+    },
+    {
+      "class": "search-icon",
+      "count": 2
+    },
+    {
+      "class": "hs-search-field",
+      "count": 2
+    },
+    {
+      "class": "search-close",
+      "count": 2
+    },
+    {
+      "class": "hs-search-field__bar",
+      "count": 2
+    },
+    {
+      "class": "yxt-SearchBar-wrapper",
+      "count": 2
+    },
+    {
+      "class": "yxt-SearchBar",
+      "count": 2
+    },
+    {
+      "class": "yxt-SearchBar-container",
+      "count": 2
+    },
+    {
+      "class": "yxt-SearchBar-form",
+      "count": 2
+    },
+    {
+      "class": "js-yext-query",
+      "count": 2
+    },
+    {
+      "class": "yxt-SearchBar-input",
+      "count": 2
+    },
+    {
+      "class": "js-yxt-SearchBar-clear",
+      "count": 2
+    },
+    {
+      "class": "yxt-SearchBar-clear",
+      "count": 2
+    },
+    {
+      "class": "yxt-SearchBar--hidden",
+      "count": 2
+    },
+    {
+      "class": "Icon--close",
+      "count": 2
+    },
+    {
+      "class": "yxt-SearchBar-clearButtonText",
+      "count": 2
+    },
+    {
+      "class": "js-yext-submit",
+      "count": 2
+    },
+    {
+      "class": "yxt-SearchBar-button",
+      "count": 2
+    },
+    {
+      "class": "yxt-SearchBar-buttonImage",
+      "count": 2
+    },
+    {
+      "class": "Icon--magnifying_glass",
+      "count": 2
+    },
+    {
+      "class": "yxt-SearchBar-buttonText",
+      "count": 2
+    },
+    {
+      "class": "yxt-SearchBar-autocomplete",
+      "count": 2
+    },
+    {
+      "class": "yxt-AutoComplete-wrapper",
+      "count": 2
+    },
+    {
+      "class": "js-yxt-AutoComplete-wrapper",
+      "count": 2
+    },
+    {
+      "class": "hs_cos_wrapper_type_menu",
+      "count": 2
+    },
+    {
+      "class": "hs_cos_wrapper_meta_field",
+      "count": 2
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "hs_cos_wrapper_module_165993938697842_",
+      "count": 4
+    },
+    {
+      "id": "hs_menu_wrapper_module_165993938697842_",
+      "count": 4
+    },
+    {
+      "id": "hs_cos_wrapper_module_17208526391676_",
+      "count": 3
+    },
+    {
+      "id": "hs_menu_wrapper_module_17208526391676_",
+      "count": 3
+    },
+    {
+      "id": "172898542491",
+      "count": 2
+    },
+    {
+      "id": "hubspot-web-interactives-loader",
+      "count": 1
+    },
+    {
+      "id": "hs-analytics",
+      "count": 1
+    },
+    {
+      "id": "cookieBanner-431858",
+      "count": 1
+    },
+    {
+      "id": "CollectedForms-431858",
+      "count": 1
+    },
+    {
+      "id": "431858",
+      "count": 1
+    },
+    {
+      "id": "twitter-wjs",
+      "count": 1
+    },
+    {
+      "id": "facebook-jssdk",
+      "count": 1
+    },
+    {
+      "id": "6aa9a7b3-b30e-4309-ac01-fa54f6786949",
+      "count": 1
+    },
+    {
+      "id": "_goober",
+      "count": 1
+    },
+    {
+      "id": "termly-code-snippet-support",
+      "count": 1
+    },
+    {
+      "id": "hs_cos_wrapper_module_17208526391676",
+      "count": 1
+    },
+    {
+      "id": "skip-to-content-link",
+      "count": 1
+    },
+    {
+      "id": "yxt-SearchBar-inputLabel--search-bar1",
+      "count": 1
+    },
+    {
+      "id": "yxt-SearchBar-input--search-bar1",
+      "count": 1
+    },
+    {
+      "id": "yxt-SearchBar-autocomplete--search-bar1",
+      "count": 1
+    },
+    {
+      "id": "yxt-SearchBar-inputLabel--search-bar2",
+      "count": 1
+    },
+    {
+      "id": "yxt-SearchBar-input--search-bar2",
+      "count": 1
+    },
+    {
+      "id": "yxt-SearchBar-autocomplete--search-bar2",
+      "count": 1
+    },
+    {
+      "id": "main-content",
+      "count": 1
+    },
+    {
+      "id": "hs_cos_wrapper_module_16620960391822",
+      "count": 1
+    },
+    {
+      "id": "hs_cos_wrapper_module_16620961923369",
+      "count": 1
+    },
+    {
+      "id": "hs_cos_wrapper_name",
+      "count": 1
+    },
+    {
+      "id": "hs_cos_wrapper_post_body",
+      "count": 1
+    },
+    {
+      "id": "hs_cos_wrapper_module_166211098235417",
+      "count": 1
+    },
+    {
+      "id": "hs_cos_wrapper_module_165993938697842",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

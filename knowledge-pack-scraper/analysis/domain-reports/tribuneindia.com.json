@@ -1,0 +1,454 @@
+{
+  "domain": "tribuneindia.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:26.399076",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 14,
+      "frequency": 14.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "nav",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 17,
+      "frequency": 17.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 95,
+      "frequency": 95.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 21,
+      "frequency": 21.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 267,
+      "frequency": 267.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "beta_menuitem",
+      "count": 164
+    },
+    {
+      "class": "sub-category_menuitem",
+      "count": 140
+    },
+    {
+      "class": "smnu-list-item",
+      "count": 61
+    },
+    {
+      "class": "has-submenu",
+      "count": 22
+    },
+    {
+      "class": "main-menu-list-item",
+      "count": 18
+    },
+    {
+      "class": "top-category_menuitem",
+      "count": 14
+    },
+    {
+      "class": "sub-category_menu",
+      "count": 14
+    },
+    {
+      "class": "category-header",
+      "count": 14
+    },
+    {
+      "class": "card-df",
+      "count": 14
+    },
+    {
+      "class": "thumb-img",
+      "count": 14
+    },
+    {
+      "class": "entry-content",
+      "count": 14
+    },
+    {
+      "class": "catg",
+      "count": 14
+    },
+    {
+      "class": "h2-title",
+      "count": 14
+    },
+    {
+      "class": "authr",
+      "count": 14
+    },
+    {
+      "class": "p-time",
+      "count": 14
+    },
+    {
+      "class": "ftr-social-icon",
+      "count": 11
+    },
+    {
+      "class": "sub-menu",
+      "count": 11
+    },
+    {
+      "class": "betadesktopmenu",
+      "count": 11
+    },
+    {
+      "class": "submenuitem",
+      "count": 10
+    },
+    {
+      "class": "ad_div_maincls",
+      "count": 10
+    },
+    {
+      "class": "ad_div_incls",
+      "count": 10
+    },
+    {
+      "class": "advt_text",
+      "count": 10
+    },
+    {
+      "class": "team-overview",
+      "count": 10
+    },
+    {
+      "class": "team-logo",
+      "count": 10
+    },
+    {
+      "class": "team-name",
+      "count": 10
+    },
+    {
+      "class": "menu-link",
+      "count": 9
+    },
+    {
+      "class": "team-flag",
+      "count": 9
+    },
+    {
+      "class": "sub_level_1",
+      "count": 8
+    },
+    {
+      "class": "contains_submenu",
+      "count": 8
+    },
+    {
+      "class": "sub-category_sub-menu",
+      "count": 8
+    },
+    {
+      "class": "sidemenu-heading",
+      "count": 8
+    },
+    {
+      "class": "withborder",
+      "count": 7
+    },
+    {
+      "class": "adVrt",
+      "count": 6
+    },
+    {
+      "class": "card",
+      "count": 6
+    },
+    {
+      "class": "stRpink",
+      "count": 6
+    },
+    {
+      "class": "green-strip",
+      "count": 6
+    },
+    {
+      "class": "parent-cat",
+      "count": 5
+    },
+    {
+      "class": "overview-card",
+      "count": 5
+    },
+    {
+      "class": "main-card",
+      "count": 5
+    },
+    {
+      "class": "scheduled-card",
+      "count": 5
+    },
+    {
+      "class": "wCup",
+      "count": 5
+    },
+    {
+      "class": "card-body",
+      "count": 5
+    },
+    {
+      "class": "versus-logo",
+      "count": 5
+    },
+    {
+      "class": "match-location",
+      "count": 5
+    },
+    {
+      "class": "bottom_sticky_menu_toolbar_sec",
+      "count": 5
+    },
+    {
+      "class": "btm_stk_title",
+      "count": 5
+    },
+    {
+      "class": "epaper",
+      "count": 4
+    },
+    {
+      "class": "search-section-inner",
+      "count": 4
+    },
+    {
+      "class": "h2-heading",
+      "count": 4
+    },
+    {
+      "class": "card-upcoming-content",
+      "count": 4
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "sortd_nodefer",
+      "count": 21
+    },
+    {
+      "id": "m_parent_1722665576",
+      "count": 17
+    },
+    {
+      "id": "schduled-card",
+      "count": 5
+    },
+    {
+      "id": "completed-card",
+      "count": 3
+    },
+    {
+      "id": "bhdr_srch_fld",
+      "count": 2
+    },
+    {
+      "id": "ftr-twitter",
+      "count": 2
+    },
+    {
+      "id": "Capa_1",
+      "count": 2
+    },
+    {
+      "id": "ftr-youtube",
+      "count": 2
+    },
+    {
+      "id": "ftr-instagram",
+      "count": 2
+    },
+    {
+      "id": "Layer_1",
+      "count": 2
+    },
+    {
+      "id": "parnet_34",
+      "count": 2
+    },
+    {
+      "id": "parnet_35",
+      "count": 2
+    },
+    {
+      "id": "parnet_36",
+      "count": 2
+    },
+    {
+      "id": "child_45",
+      "count": 2
+    },
+    {
+      "id": "parnet_37",
+      "count": 2
+    },
+    {
+      "id": "child_47",
+      "count": 2
+    },
+    {
+      "id": "parnet_38",
+      "count": 2
+    },
+    {
+      "id": "child_48",
+      "count": 2
+    },
+    {
+      "id": "parnet_361",
+      "count": 2
+    },
+    {
+      "id": "child_4589",
+      "count": 2
+    },
+    {
+      "id": "m_parent_395",
+      "count": 2
+    },
+    {
+      "id": "m_parent_1722665573216",
+      "count": 2
+    },
+    {
+      "id": "1250721",
+      "count": 2
+    },
+    {
+      "id": "special-cat",
+      "count": 2
+    },
+    {
+      "id": "upcoming-card",
+      "count": 2
+    },
+    {
+      "id": "googleidentityservice_button_styles",
+      "count": 1
+    },
+    {
+      "id": "googleidentityservice",
+      "count": 1
+    },
+    {
+      "id": "hlda_desktop_mobile",
+      "count": 1
+    },
+    {
+      "id": "redirect-banner",
+      "count": 1
+    },
+    {
+      "id": "headlessAlpha",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "nav"
+    ],
+    "css_selector": "article",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"sidebar\"], [id*=\"sidebar\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

@@ -1,0 +1,456 @@
+{
+  "domain": "blog.ucs.org",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:18.010320",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 14,
+      "frequency": 14.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 17,
+      "frequency": 17.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 18,
+      "frequency": 18.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "st2",
+      "count": 16
+    },
+    {
+      "class": "menu-item",
+      "count": 13
+    },
+    {
+      "class": "clearfix",
+      "count": 10
+    },
+    {
+      "class": "ucs-icon",
+      "count": 8
+    },
+    {
+      "class": "block",
+      "count": 8
+    },
+    {
+      "class": "wrapper-lg",
+      "count": 7
+    },
+    {
+      "class": "ucs-icon-use",
+      "count": 7
+    },
+    {
+      "class": "block-block-content",
+      "count": 7
+    },
+    {
+      "class": "text-formatted",
+      "count": 7
+    },
+    {
+      "class": "field",
+      "count": 7
+    },
+    {
+      "class": "field--name-body",
+      "count": 7
+    },
+    {
+      "class": "field--type-text-with-summary",
+      "count": 7
+    },
+    {
+      "class": "field--label-hidden",
+      "count": 7
+    },
+    {
+      "class": "field__item",
+      "count": 7
+    },
+    {
+      "class": "menu-item-type-taxonomy",
+      "count": 7
+    },
+    {
+      "class": "menu-item-object-category",
+      "count": 7
+    },
+    {
+      "class": "visually-hidden",
+      "count": 6
+    },
+    {
+      "class": "wp-block-heading",
+      "count": 6
+    },
+    {
+      "class": "button-amount",
+      "count": 6
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 5
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 5
+    },
+    {
+      "class": "post",
+      "count": 4
+    },
+    {
+      "class": "type-post",
+      "count": 4
+    },
+    {
+      "class": "status-publish",
+      "count": 4
+    },
+    {
+      "class": "format-standard",
+      "count": 4
+    },
+    {
+      "class": "has-post-thumbnail",
+      "count": 4
+    },
+    {
+      "class": "hentry",
+      "count": 4
+    },
+    {
+      "class": "category-climate-change",
+      "count": 4
+    },
+    {
+      "class": "date",
+      "count": 4
+    },
+    {
+      "class": "post-thumbnail",
+      "count": 4
+    },
+    {
+      "class": "wp-post-image",
+      "count": 4
+    },
+    {
+      "class": "photo-credit",
+      "count": 4
+    },
+    {
+      "class": "author-name",
+      "count": 4
+    },
+    {
+      "class": "author-title",
+      "count": 4
+    },
+    {
+      "class": "at-row",
+      "count": 4
+    },
+    {
+      "class": "menu",
+      "count": 3
+    },
+    {
+      "class": "wrapper",
+      "count": 3
+    },
+    {
+      "class": "btn",
+      "count": 3
+    },
+    {
+      "class": "post-teaser",
+      "count": 3
+    },
+    {
+      "class": "tag-cop30",
+      "count": 3
+    },
+    {
+      "class": "attachment-medium",
+      "count": 3
+    },
+    {
+      "class": "size-medium",
+      "count": 3
+    },
+    {
+      "class": "post-teaser-content",
+      "count": 3
+    },
+    {
+      "class": "author-byline",
+      "count": 3
+    },
+    {
+      "class": "region",
+      "count": 3
+    },
+    {
+      "class": "at-text",
+      "count": 3
+    },
+    {
+      "class": "at-markup",
+      "count": 3
+    },
+    {
+      "class": "wp-block-quote",
+      "count": 2
+    },
+    {
+      "class": "is-layout-flow",
+      "count": 2
+    },
+    {
+      "class": "wp-block-quote-is-layout-flow",
+      "count": 2
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "wp-emoji-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-library-css",
+      "count": 1
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "ucs-icons",
+      "count": 1
+    },
+    {
+      "id": "ucs-icon-email",
+      "count": 1
+    },
+    {
+      "id": "ucs-email",
+      "count": 1
+    },
+    {
+      "id": "ucs-icon-facebook",
+      "count": 1
+    },
+    {
+      "id": "ucs-facebook",
+      "count": 1
+    },
+    {
+      "id": "ucs-icon-twitter",
+      "count": 1
+    },
+    {
+      "id": "ucs-twitter",
+      "count": 1
+    },
+    {
+      "id": "ucs-icon-youtube",
+      "count": 1
+    },
+    {
+      "id": "ucs-youtube",
+      "count": 1
+    },
+    {
+      "id": "ucs-icon-rss",
+      "count": 1
+    },
+    {
+      "id": "ucs-rss",
+      "count": 1
+    },
+    {
+      "id": "ucs-icon-linkedin",
+      "count": 1
+    },
+    {
+      "id": "ucs-linkedin",
+      "count": 1
+    },
+    {
+      "id": "ucs-icon-magnifying",
+      "count": 1
+    },
+    {
+      "id": "ucs-magnifying",
+      "count": 1
+    },
+    {
+      "id": "ucs-icon-bars",
+      "count": 1
+    },
+    {
+      "id": "ucs-bars",
+      "count": 1
+    },
+    {
+      "id": "ucs-icon-instagram",
+      "count": 1
+    },
+    {
+      "id": "ucs-instagram",
+      "count": 1
+    },
+    {
+      "id": "ucs-icon-bsky",
+      "count": 1
+    },
+    {
+      "id": "ucs-bsky",
+      "count": 1
+    },
+    {
+      "id": "ucs-logo-1",
+      "count": 1
+    },
+    {
+      "id": "ucs-logo-unstacked",
+      "count": 1
+    },
+    {
+      "id": "ucs-logo-2",
+      "count": 1
+    },
+    {
+      "id": "ucs-logo-stacked",
+      "count": 1
+    },
+    {
+      "id": "top",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

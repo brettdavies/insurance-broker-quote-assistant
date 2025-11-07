@@ -1,7 +1,7 @@
 {
   "domain": "houstonchronicle.com",
   "total_pages": 3,
-  "analyzed_at": "2025-11-07T14:35:33.862769",
+  "analyzed_at": "2025-11-07T16:31:14.722773",
   "content_indicators": [
     {
       "selector": "article",
@@ -142,7 +142,7 @@
   "recommendations": {
     "excluded_tags": [],
     "css_selector": null,
-    "excluded_selector": "[class*=\"ad\"], [id*=\"ad\"]",
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"]",
     "pruning_threshold": 0.6,
     "min_word_threshold": 50,
     "confidence_score": "low"

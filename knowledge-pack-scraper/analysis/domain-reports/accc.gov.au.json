@@ -1,0 +1,448 @@
+{
+  "domain": "accc.gov.au",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:22.175280",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 5,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 22,
+      "frequency": 22.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 266,
+      "frequency": 266.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 8,
+      "frequency": 8.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 12,
+      "frequency": 12.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "megamenu-item",
+      "count": 105
+    },
+    {
+      "class": "megamenu-page-link",
+      "count": 105
+    },
+    {
+      "class": "megamenu-item-level-2",
+      "count": 73
+    },
+    {
+      "class": "megamenu-page-link-level-2",
+      "count": 73
+    },
+    {
+      "class": "fa-chevron-right",
+      "count": 73
+    },
+    {
+      "class": "megamenu-item-level-3",
+      "count": 26
+    },
+    {
+      "class": "megamenu-page-link-level-3",
+      "count": 26
+    },
+    {
+      "class": "megamenu-has-children",
+      "count": 15
+    },
+    {
+      "class": "sr-only",
+      "count": 14
+    },
+    {
+      "class": "block",
+      "count": 12
+    },
+    {
+      "class": "megamenu-dropdown-left",
+      "count": 12
+    },
+    {
+      "class": "menu-item",
+      "count": 11
+    },
+    {
+      "class": "clearfix",
+      "count": 11
+    },
+    {
+      "class": "field",
+      "count": 11
+    },
+    {
+      "class": "region",
+      "count": 9
+    },
+    {
+      "class": "d-print-none",
+      "count": 9
+    },
+    {
+      "class": "megamenu-level-3",
+      "count": 9
+    },
+    {
+      "class": "megamenu-dropdown-block",
+      "count": 9
+    },
+    {
+      "class": "field__item",
+      "count": 9
+    },
+    {
+      "class": "container",
+      "count": 6
+    },
+    {
+      "class": "megamenu-top-level-item",
+      "count": 6
+    },
+    {
+      "class": "megamenu-top-level-page-link",
+      "count": 6
+    },
+    {
+      "class": "megamenu-top-level-page-link__label-wrapper",
+      "count": 6
+    },
+    {
+      "class": "megamenu-top-level-page-link__label",
+      "count": 6
+    },
+    {
+      "class": "megamenu-expand-button",
+      "count": 6
+    },
+    {
+      "class": "megamenu-top-level-expand-button",
+      "count": 6
+    },
+    {
+      "class": "fa-chevron-down",
+      "count": 6
+    },
+    {
+      "class": "megamenu-level-2",
+      "count": 6
+    },
+    {
+      "class": "megamenu-dropdown",
+      "count": 6
+    },
+    {
+      "class": "field--label-hidden",
+      "count": 6
+    },
+    {
+      "class": "block-system",
+      "count": 5
+    },
+    {
+      "class": "visually-hidden",
+      "count": 5
+    },
+    {
+      "class": "content-container",
+      "count": 5
+    },
+    {
+      "class": "row",
+      "count": 5
+    },
+    {
+      "class": "img-fluid",
+      "count": 5
+    },
+    {
+      "class": "field--label-inline",
+      "count": 5
+    },
+    {
+      "class": "field__label",
+      "count": 5
+    },
+    {
+      "class": "text-formatted",
+      "count": 5
+    },
+    {
+      "class": "align-items-center",
+      "count": 4
+    },
+    {
+      "class": "btn",
+      "count": 4
+    },
+    {
+      "class": "megamenu-dropdown-right",
+      "count": 4
+    },
+    {
+      "class": "breadcrumb-item",
+      "count": 4
+    },
+    {
+      "class": "block-content",
+      "count": 4
+    },
+    {
+      "class": "block-content--type-basic",
+      "count": 4
+    },
+    {
+      "class": "block-content--view-mode-full",
+      "count": 4
+    },
+    {
+      "class": "block-content__content",
+      "count": 4
+    },
+    {
+      "class": "field--name-body",
+      "count": 4
+    },
+    {
+      "class": "field--type-text-with-summary",
+      "count": 4
+    },
+    {
+      "class": "sr-only-focusable",
+      "count": 3
+    },
+    {
+      "class": "block-menu",
+      "count": 3
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "skip-links",
+      "count": 1
+    },
+    {
+      "id": "block-acccgov-theme-views-block-accc-site-notification-banner",
+      "count": 1
+    },
+    {
+      "id": "block-toputilities",
+      "count": 1
+    },
+    {
+      "id": "block-toputilities-menu",
+      "count": 1
+    },
+    {
+      "id": "block-ourothersitesmenu",
+      "count": 1
+    },
+    {
+      "id": "block-ourothersitesmenu-menu",
+      "count": 1
+    },
+    {
+      "id": "block-blockblockacccgov-themesearch",
+      "count": 1
+    },
+    {
+      "id": "views-exposed-form-accc-search-site-search-box",
+      "count": 1
+    },
+    {
+      "id": "edit-query",
+      "count": 1
+    },
+    {
+      "id": "edit-actions",
+      "count": 1
+    },
+    {
+      "id": "edit-submit-accc-search-site--nreguI7jsEo",
+      "count": 1
+    },
+    {
+      "id": "megamenu-skip",
+      "count": 1
+    },
+    {
+      "id": "block-hierarchymegamenu",
+      "count": 1
+    },
+    {
+      "id": "accc-entity-hierarchy-megamenu",
+      "count": 1
+    },
+    {
+      "id": "block-acccgov-themebreadcrumbs",
+      "count": 1
+    },
+    {
+      "id": "system-breadcrumb",
+      "count": 1
+    },
+    {
+      "id": "readspeaker_button",
+      "count": 1
+    },
+    {
+      "id": "main-content-skip",
+      "count": 1
+    },
+    {
+      "id": "block-acccgov-themepagetitle",
+      "count": 1
+    },
+    {
+      "id": "block-acccgov-thememainpagecontent",
+      "count": 1
+    },
+    {
+      "id": "0",
+      "count": 1
+    },
+    {
+      "id": "block-acccgov-subscribe-media",
+      "count": 1
+    },
+    {
+      "id": "block-acccgov-footer-logo-and-social",
+      "count": 1
+    },
+    {
+      "id": "block-acccgov-footer-content",
+      "count": 1
+    },
+    {
+      "id": "block-acccgov-footer-menu",
+      "count": 1
+    },
+    {
+      "id": "block-acccgov-footer-menu-menu",
+      "count": 1
+    },
+    {
+      "id": "ui-id-1",
+      "count": 1
+    },
+    {
+      "id": "drupal-live-announce",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main, [role=\"main\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

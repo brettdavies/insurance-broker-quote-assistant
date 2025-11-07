@@ -1,0 +1,455 @@
+{
+  "domain": "hub.tmlt.org",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:19.418232",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 15,
+      "frequency": 15.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 5,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 44,
+      "frequency": 44.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 7,
+      "frequency": 7.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 121,
+      "frequency": 121.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "hide",
+      "count": 209
+    },
+    {
+      "class": "w-dyn-item",
+      "count": 191
+    },
+    {
+      "class": "tag",
+      "count": 140
+    },
+    {
+      "class": "w-inline-block",
+      "count": 125
+    },
+    {
+      "class": "text-size-small",
+      "count": 64
+    },
+    {
+      "class": "is-insights",
+      "count": 51
+    },
+    {
+      "class": "form_checkbox",
+      "count": 49
+    },
+    {
+      "class": "form_checkbox-label",
+      "count": 49
+    },
+    {
+      "class": "w-embed",
+      "count": 45
+    },
+    {
+      "class": "button-group",
+      "count": 44
+    },
+    {
+      "class": "icon-embed-xsmall",
+      "count": 41
+    },
+    {
+      "class": "w-form-label",
+      "count": 41
+    },
+    {
+      "class": "is-active",
+      "count": 38
+    },
+    {
+      "class": "spacer-xxsmall",
+      "count": 38
+    },
+    {
+      "class": "card-link-overlay",
+      "count": 38
+    },
+    {
+      "class": "w-checkbox",
+      "count": 34
+    },
+    {
+      "class": "w-checkbox-input",
+      "count": 34
+    },
+    {
+      "class": "text-color-dark-blue",
+      "count": 30
+    },
+    {
+      "class": "button",
+      "count": 29
+    },
+    {
+      "class": "nav_link",
+      "count": 27
+    },
+    {
+      "class": "footer_link",
+      "count": 26
+    },
+    {
+      "class": "is-link",
+      "count": 22
+    },
+    {
+      "class": "text-weight-semibold",
+      "count": 21
+    },
+    {
+      "class": "z-index-2",
+      "count": 20
+    },
+    {
+      "class": "heading-style-h5",
+      "count": 20
+    },
+    {
+      "class": "insights_card",
+      "count": 19
+    },
+    {
+      "class": "insights_img-wrap",
+      "count": 19
+    },
+    {
+      "class": "insights_img",
+      "count": 19
+    },
+    {
+      "class": "margin-top-auto",
+      "count": 19
+    },
+    {
+      "class": "hide-tablet",
+      "count": 17
+    },
+    {
+      "class": "nav_dropdown-link",
+      "count": 15
+    },
+    {
+      "class": "hide-mobile-landscape",
+      "count": 15
+    },
+    {
+      "class": "w-dropdown",
+      "count": 14
+    },
+    {
+      "class": "w-dropdown-toggle",
+      "count": 14
+    },
+    {
+      "class": "w-dropdown-list",
+      "count": 14
+    },
+    {
+      "class": "is-secondary",
+      "count": 14
+    },
+    {
+      "class": "text-weight-bold",
+      "count": 10
+    },
+    {
+      "class": "filters_dropdown",
+      "count": 10
+    },
+    {
+      "class": "filters_dropdown-toggle",
+      "count": 10
+    },
+    {
+      "class": "filters_dropdown-list",
+      "count": 10
+    },
+    {
+      "class": "w-dyn-list",
+      "count": 10
+    },
+    {
+      "class": "w-dyn-items",
+      "count": 10
+    },
+    {
+      "class": "is-support",
+      "count": 9
+    },
+    {
+      "class": "w-button",
+      "count": 7
+    },
+    {
+      "class": "spacer-medium",
+      "count": 7
+    },
+    {
+      "class": "w-radio",
+      "count": 7
+    },
+    {
+      "class": "w-form-formradioinput",
+      "count": 7
+    },
+    {
+      "class": "w-radio-input",
+      "count": 7
+    },
+    {
+      "class": "nav_dropdown-col",
+      "count": 6
+    },
+    {
+      "class": "divider",
+      "count": 6
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "checkbox-4",
+      "count": 15
+    },
+    {
+      "id": "checkbox-2",
+      "count": 11
+    },
+    {
+      "id": "checkbox-3",
+      "count": 6
+    },
+    {
+      "id": "radio-2",
+      "count": 5
+    },
+    {
+      "id": "d8005f97-117a-69f3-e83f-42632225c562",
+      "count": 4
+    },
+    {
+      "id": "678a8b65309e103516e1d5f7",
+      "count": 2
+    },
+    {
+      "id": "radio",
+      "count": 2
+    },
+    {
+      "id": "clip0_1_6752",
+      "count": 1
+    },
+    {
+      "id": "w-dropdown-toggle-0",
+      "count": 1
+    },
+    {
+      "id": "w-dropdown-list-0",
+      "count": 1
+    },
+    {
+      "id": "w-dropdown-toggle-1",
+      "count": 1
+    },
+    {
+      "id": "w-dropdown-list-1",
+      "count": 1
+    },
+    {
+      "id": "pattern0_1_10311",
+      "count": 1
+    },
+    {
+      "id": "image0_1_10311",
+      "count": 1
+    },
+    {
+      "id": "w-dropdown-toggle-2",
+      "count": 1
+    },
+    {
+      "id": "w-dropdown-list-2",
+      "count": 1
+    },
+    {
+      "id": "w-dropdown-toggle-3",
+      "count": 1
+    },
+    {
+      "id": "w-dropdown-list-3",
+      "count": 1
+    },
+    {
+      "id": "24c8935d-76e1-efb0-70cb-8769cf7f98ea",
+      "count": 1
+    },
+    {
+      "id": "clip0_1_8389",
+      "count": 1
+    },
+    {
+      "id": "clip0_1_7988",
+      "count": 1
+    },
+    {
+      "id": "blog-header-18",
+      "count": 1
+    },
+    {
+      "id": "w-dropdown-toggle-4",
+      "count": 1
+    },
+    {
+      "id": "w-dropdown-list-4",
+      "count": 1
+    },
+    {
+      "id": "w-dropdown-toggle-5",
+      "count": 1
+    },
+    {
+      "id": "w-dropdown-list-5",
+      "count": 1
+    },
+    {
+      "id": "w-dropdown-toggle-6",
+      "count": 1
+    },
+    {
+      "id": "w-dropdown-list-6",
+      "count": 1
+    },
+    {
+      "id": "w-dropdown-toggle-7",
+      "count": 1
+    },
+    {
+      "id": "w-dropdown-list-7",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

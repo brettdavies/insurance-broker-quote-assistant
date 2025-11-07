@@ -1,0 +1,456 @@
+{
+  "domain": "roof-magazine.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:21.088604",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 106,
+      "frequency": 106.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 6,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "wp-block-heading",
+      "count": 35
+    },
+    {
+      "class": "ez-toc-link",
+      "count": 33
+    },
+    {
+      "class": "ez-toc-section",
+      "count": 33
+    },
+    {
+      "class": "ez-toc-section-end",
+      "count": 33
+    },
+    {
+      "class": "ez-toc-page-1",
+      "count": 27
+    },
+    {
+      "class": "ez-toc-heading-level-3",
+      "count": 27
+    },
+    {
+      "class": "wp-block-list",
+      "count": 13
+    },
+    {
+      "class": "ez-toc-heading-level-2",
+      "count": 6
+    },
+    {
+      "class": "ez-toc-list-level-3",
+      "count": 6
+    },
+    {
+      "class": "menu-item",
+      "count": 5
+    },
+    {
+      "class": "wp-block-latest-posts__post-title",
+      "count": 5
+    },
+    {
+      "class": "widget",
+      "count": 4
+    },
+    {
+      "class": "widget_block",
+      "count": 4
+    },
+    {
+      "class": "screen-reader-text",
+      "count": 2
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 2
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 2
+    },
+    {
+      "class": "menu-item-type-taxonomy",
+      "count": 2
+    },
+    {
+      "class": "menu-item-object-category",
+      "count": 2
+    },
+    {
+      "class": "nav-subtitle",
+      "count": 2
+    },
+    {
+      "class": "nav-title",
+      "count": 2
+    },
+    {
+      "class": "wp-block-group",
+      "count": 2
+    },
+    {
+      "class": "wp-block-group__inner-container",
+      "count": 2
+    },
+    {
+      "class": "is-layout-flow",
+      "count": 2
+    },
+    {
+      "class": "wp-block-group-is-layout-flow",
+      "count": 2
+    },
+    {
+      "class": "footer__info-text",
+      "count": 2
+    },
+    {
+      "class": "footer__info-link",
+      "count": 2
+    },
+    {
+      "class": "yoast-schema-graph",
+      "count": 1
+    },
+    {
+      "class": "wp-singular",
+      "count": 1
+    },
+    {
+      "class": "post-template-default",
+      "count": 1
+    },
+    {
+      "class": "single",
+      "count": 1
+    },
+    {
+      "class": "single-post",
+      "count": 1
+    },
+    {
+      "class": "postid-1854",
+      "count": 1
+    },
+    {
+      "class": "single-format-standard",
+      "count": 1
+    },
+    {
+      "class": "wp-theme-really-simple",
+      "count": 1
+    },
+    {
+      "class": "skip-link",
+      "count": 1
+    },
+    {
+      "class": "site-header",
+      "count": 1
+    },
+    {
+      "class": "site-title",
+      "count": 1
+    },
+    {
+      "class": "main-navigation",
+      "count": 1
+    },
+    {
+      "class": "really-first-menu",
+      "count": 1
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 1
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 1
+    },
+    {
+      "class": "menu-item-home",
+      "count": 1
+    },
+    {
+      "class": "menu-item-160",
+      "count": 1
+    },
+    {
+      "class": "menu-item-161",
+      "count": 1
+    },
+    {
+      "class": "current-post-ancestor",
+      "count": 1
+    },
+    {
+      "class": "current-menu-parent",
+      "count": 1
+    },
+    {
+      "class": "current-post-parent",
+      "count": 1
+    },
+    {
+      "class": "menu-item-667",
+      "count": 1
+    },
+    {
+      "class": "menu-item-922",
+      "count": 1
+    },
+    {
+      "class": "menu-item-666",
+      "count": 1
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "wp-emoji-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-library-css",
+      "count": 1
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "contact-form-7-css",
+      "count": 1
+    },
+    {
+      "id": "ez-toc-css",
+      "count": 1
+    },
+    {
+      "id": "ez-toc-inline-css",
+      "count": 1
+    },
+    {
+      "id": "really-simple-style-css",
+      "count": 1
+    },
+    {
+      "id": "jquery-core-js",
+      "count": 1
+    },
+    {
+      "id": "jquery-migrate-js",
+      "count": 1
+    },
+    {
+      "id": "wp-custom-css",
+      "count": 1
+    },
+    {
+      "id": "masthead",
+      "count": 1
+    },
+    {
+      "id": "site-navigation",
+      "count": 1
+    },
+    {
+      "id": "menu-menu-1",
+      "count": 1
+    },
+    {
+      "id": "menu-item-160",
+      "count": 1
+    },
+    {
+      "id": "menu-item-161",
+      "count": 1
+    },
+    {
+      "id": "menu-item-667",
+      "count": 1
+    },
+    {
+      "id": "menu-item-922",
+      "count": 1
+    },
+    {
+      "id": "menu-item-666",
+      "count": 1
+    },
+    {
+      "id": "primary",
+      "count": 1
+    },
+    {
+      "id": "main",
+      "count": 1
+    },
+    {
+      "id": "post-1854",
+      "count": 1
+    },
+    {
+      "id": "ez-toc-container",
+      "count": 1
+    },
+    {
+      "id": "What_does_State_Farm_homeowners_insurance_usually_cover",
+      "count": 1
+    },
+    {
+      "id": "#What_does_State_Farm_homeowners_insurance_usually_cover",
+      "count": 1
+    },
+    {
+      "id": "Fire_theft_and_weather-related_damage",
+      "count": 1
+    },
+    {
+      "id": "#Fire_theft_and_weather-related_damage",
+      "count": 1
+    },
+    {
+      "id": "Whats_not_covered_wear_and_tear_neglect",
+      "count": 1
+    },
+    {
+      "id": "#Whats_not_covered_wear_and_tear_neglect",
+      "count": 1
+    },
+    {
+      "id": "How_roof_damage_fits_into_standard_coverage",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

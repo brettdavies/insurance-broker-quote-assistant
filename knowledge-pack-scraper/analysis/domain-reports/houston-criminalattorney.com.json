@@ -1,0 +1,455 @@
+{
+  "domain": "houston-criminalattorney.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:24.181614",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 7,
+      "frequency": 7.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 21,
+      "frequency": 21.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 42,
+      "frequency": 42.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 48,
+      "frequency": 48.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "cat-item",
+      "count": 33
+    },
+    {
+      "class": "menu-item",
+      "count": 30
+    },
+    {
+      "class": "gform_hidden",
+      "count": 30
+    },
+    {
+      "class": "ilawyer-st0",
+      "count": 22
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 21
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 21
+    },
+    {
+      "class": "gfield",
+      "count": 19
+    },
+    {
+      "class": "field_sublabel_below",
+      "count": 19
+    },
+    {
+      "class": "field_description_below",
+      "count": 19
+    },
+    {
+      "class": "ginput_container",
+      "count": 19
+    },
+    {
+      "class": "gfield_visibility_visible",
+      "count": 18
+    },
+    {
+      "class": "gfield--no-description",
+      "count": 17
+    },
+    {
+      "class": "ginput_container_text",
+      "count": 14
+    },
+    {
+      "class": "gfield--type-hidden",
+      "count": 12
+    },
+    {
+      "class": "gfield_required",
+      "count": 10
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 9
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 9
+    },
+    {
+      "class": "gfield_label",
+      "count": 7
+    },
+    {
+      "class": "gform-field-label",
+      "count": 7
+    },
+    {
+      "class": "inline-svg",
+      "count": 6
+    },
+    {
+      "class": "social",
+      "count": 6
+    },
+    {
+      "class": "replaced-svg",
+      "count": 6
+    },
+    {
+      "class": "menu-item-has-children",
+      "count": 5
+    },
+    {
+      "class": "sub-menu",
+      "count": 5
+    },
+    {
+      "class": "gfield_contains_required",
+      "count": 5
+    },
+    {
+      "class": "gfield_required_asterisk",
+      "count": 5
+    },
+    {
+      "class": "medium",
+      "count": 5
+    },
+    {
+      "class": "widget-title",
+      "count": 4
+    },
+    {
+      "class": "ez-toc-page-1",
+      "count": 4
+    },
+    {
+      "class": "ez-toc-heading-level-2",
+      "count": 4
+    },
+    {
+      "class": "ez-toc-link",
+      "count": 4
+    },
+    {
+      "class": "ez-toc-section",
+      "count": 4
+    },
+    {
+      "class": "ez-toc-section-end",
+      "count": 4
+    },
+    {
+      "class": "sidebar_box",
+      "count": 3
+    },
+    {
+      "class": "location_col",
+      "count": 3
+    },
+    {
+      "class": "menu_inner",
+      "count": 2
+    },
+    {
+      "class": "button",
+      "count": 2
+    },
+    {
+      "class": "widget",
+      "count": 2
+    },
+    {
+      "class": "widgettitle",
+      "count": 2
+    },
+    {
+      "class": "widget__title",
+      "count": 2
+    },
+    {
+      "class": "top_label",
+      "count": 2
+    },
+    {
+      "class": "gfield--type-text",
+      "count": 2
+    },
+    {
+      "class": "gfield--width-full",
+      "count": 2
+    },
+    {
+      "class": "gfield--type-honeypot",
+      "count": 2
+    },
+    {
+      "class": "gform_validation_container",
+      "count": 2
+    },
+    {
+      "class": "gfield--has-description",
+      "count": 2
+    },
+    {
+      "class": "gfield_description",
+      "count": 2
+    },
+    {
+      "class": "location_title",
+      "count": 2
+    },
+    {
+      "class": "address",
+      "count": 2
+    },
+    {
+      "class": "a11y-speak-region",
+      "count": 2
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "false",
+      "count": 17
+    },
+    {
+      "id": "Layer_1",
+      "count": 6
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "ez-toc-css",
+      "count": 1
+    },
+    {
+      "id": "ez-toc-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-custom-css",
+      "count": 1
+    },
+    {
+      "id": "fixed_header",
+      "count": 1
+    },
+    {
+      "id": "fixed_menu",
+      "count": 1
+    },
+    {
+      "id": "menu-main-menu",
+      "count": 1
+    },
+    {
+      "id": "menu-item-70",
+      "count": 1
+    },
+    {
+      "id": "menu-item-5869",
+      "count": 1
+    },
+    {
+      "id": "menu-item-5862",
+      "count": 1
+    },
+    {
+      "id": "menu-item-5870",
+      "count": 1
+    },
+    {
+      "id": "menu-item-5990",
+      "count": 1
+    },
+    {
+      "id": "menu-item-6925",
+      "count": 1
+    },
+    {
+      "id": "menu-item-5867",
+      "count": 1
+    },
+    {
+      "id": "menu-item-5989",
+      "count": 1
+    },
+    {
+      "id": "menu-item-5868",
+      "count": 1
+    },
+    {
+      "id": "menu-item-7508",
+      "count": 1
+    },
+    {
+      "id": "menu-item-7507",
+      "count": 1
+    },
+    {
+      "id": "menu-item-5865",
+      "count": 1
+    },
+    {
+      "id": "menu-item-5924",
+      "count": 1
+    },
+    {
+      "id": "menu-item-5866",
+      "count": 1
+    },
+    {
+      "id": "menu-item-5960",
+      "count": 1
+    },
+    {
+      "id": "menu-item-5911",
+      "count": 1
+    },
+    {
+      "id": "menu-item-5991",
+      "count": 1
+    },
+    {
+      "id": "menu-item-6707",
+      "count": 1
+    },
+    {
+      "id": "menu-item-5860",
+      "count": 1
+    },
+    {
+      "id": "menu-item-76",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": null,
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

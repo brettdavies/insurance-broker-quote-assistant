@@ -1,0 +1,455 @@
+{
+  "domain": "longangle.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:24.759814",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 172,
+      "frequency": 172.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 52,
+      "frequency": 52.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "SKSectionIdentifyer",
+      "count": 91
+    },
+    {
+      "class": "sqsrte-large",
+      "count": 56
+    },
+    {
+      "class": "header-nav-folder-item",
+      "count": 42
+    },
+    {
+      "class": "header-nav-folder-item--external",
+      "count": 42
+    },
+    {
+      "class": "sqs-block",
+      "count": 36
+    },
+    {
+      "class": "sqs-block-content",
+      "count": 36
+    },
+    {
+      "class": "container",
+      "count": 29
+    },
+    {
+      "class": "header-menu-nav-item",
+      "count": 28
+    },
+    {
+      "class": "header-menu-nav-item--external",
+      "count": 22
+    },
+    {
+      "class": "html-block",
+      "count": 16
+    },
+    {
+      "class": "sqs-block-html",
+      "count": 16
+    },
+    {
+      "class": "sqs-html-content",
+      "count": 16
+    },
+    {
+      "class": "filter-btn",
+      "count": 12
+    },
+    {
+      "class": "website-component-block",
+      "count": 10
+    },
+    {
+      "class": "sqs-block-website-component",
+      "count": 10
+    },
+    {
+      "class": "header-nav-folder-title-text",
+      "count": 9
+    },
+    {
+      "class": "visually-hidden",
+      "count": 9
+    },
+    {
+      "class": "header-nav-item",
+      "count": 8
+    },
+    {
+      "class": "fe-block",
+      "count": 8
+    },
+    {
+      "class": "image-block",
+      "count": 7
+    },
+    {
+      "class": "sqs-block-image",
+      "count": 7
+    },
+    {
+      "class": "sqs-text-ready",
+      "count": 7
+    },
+    {
+      "class": "image-block-outer-wrapper",
+      "count": 7
+    },
+    {
+      "class": "layout-caption-below",
+      "count": 7
+    },
+    {
+      "class": "combination-animation-site-default",
+      "count": 7
+    },
+    {
+      "class": "individual-animation-site-default",
+      "count": 7
+    },
+    {
+      "class": "sqs-block-code",
+      "count": 7
+    },
+    {
+      "class": "code-block",
+      "count": 7
+    },
+    {
+      "class": "sqs-code-container",
+      "count": 7
+    },
+    {
+      "class": "header-nav-item--folder",
+      "count": 6
+    },
+    {
+      "class": "header-nav-folder-title",
+      "count": 6
+    },
+    {
+      "class": "header-nav-folder-content",
+      "count": 6
+    },
+    {
+      "class": "header-dropdown-icon",
+      "count": 6
+    },
+    {
+      "class": "header-dropdown-flip",
+      "count": 6
+    },
+    {
+      "class": "sqs-button-element--primary",
+      "count": 5
+    },
+    {
+      "class": "icon",
+      "count": 4
+    },
+    {
+      "class": "header-menu-nav-folder",
+      "count": 4
+    },
+    {
+      "class": "header-menu-nav-folder-content",
+      "count": 4
+    },
+    {
+      "class": "design-layout-inline",
+      "count": 4
+    },
+    {
+      "class": "individual-text-animation-site-default",
+      "count": 4
+    },
+    {
+      "class": "sqs-block-image-figure",
+      "count": 4
+    },
+    {
+      "class": "intrinsic",
+      "count": 4
+    },
+    {
+      "class": "image-block-wrapper",
+      "count": 4
+    },
+    {
+      "class": "sqs-image-shape-container-element",
+      "count": 4
+    },
+    {
+      "class": "has-aspect-ratio",
+      "count": 4
+    },
+    {
+      "class": "icon--stroke",
+      "count": 3
+    },
+    {
+      "class": "bright",
+      "count": 3
+    },
+    {
+      "class": "btn",
+      "count": 3
+    },
+    {
+      "class": "header-menu-nav-item-content",
+      "count": 3
+    },
+    {
+      "class": "header-menu-nav-item-content-folder",
+      "count": 3
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "8700273",
+      "count": 2
+    },
+    {
+      "id": "item-66ec6b0c79273f6cc1b0ad90",
+      "count": 2
+    },
+    {
+      "id": "67586c9957c25c43a787003c",
+      "count": 2
+    },
+    {
+      "id": "67586c9957c25c43a7870039",
+      "count": 2
+    },
+    {
+      "id": "6757435abae016422fba6bf3",
+      "count": 2
+    },
+    {
+      "id": "675742b808221b32ab578505",
+      "count": 2
+    },
+    {
+      "id": "6757250046c98b6c8739fedb",
+      "count": 2
+    },
+    {
+      "id": "675340040feb1011dc0a77a8",
+      "count": 2
+    },
+    {
+      "id": "6750be6da42bcf7c4ddb4f23",
+      "count": 2
+    },
+    {
+      "id": "6750a88e0555622cbfe44807",
+      "count": 2
+    },
+    {
+      "id": "67508dc01d7a3e2fdc8fd516",
+      "count": 2
+    },
+    {
+      "id": "67508cfb1d7a3e2fdc8f7cae",
+      "count": 2
+    },
+    {
+      "id": "67508c5b32dcc0610ac82a9a",
+      "count": 2
+    },
+    {
+      "id": "67508b61c5dfa841b9c766ba",
+      "count": 2
+    },
+    {
+      "id": "675088e1bdd1b55d4aca9193",
+      "count": 2
+    },
+    {
+      "id": "675082a27a58d93aff486c54",
+      "count": 2
+    },
+    {
+      "id": "675077851fbe8c21a8fa3f15",
+      "count": 2
+    },
+    {
+      "id": "673fcca8020f61605505b3dd",
+      "count": 2
+    },
+    {
+      "id": "673247e49314f81f7bde8001",
+      "count": 2
+    },
+    {
+      "id": "67323c7cb81ad150082111a1",
+      "count": 2
+    },
+    {
+      "id": "6732352a895f1a260fb392f5",
+      "count": 2
+    },
+    {
+      "id": "67227f7d39a100094a30e1b8",
+      "count": 2
+    },
+    {
+      "id": "672271f239a100094a2bc2d1",
+      "count": 2
+    },
+    {
+      "id": "67193b2e2227973fdbe0686b",
+      "count": 2
+    },
+    {
+      "id": "67193b2e2227973fdbe06868",
+      "count": 2
+    },
+    {
+      "id": "6713f4c43fdddd520898ad26",
+      "count": 2
+    },
+    {
+      "id": "6710029fb7622c2d0d2481de",
+      "count": 2
+    },
+    {
+      "id": "6710029fb7622c2d0d2481db",
+      "count": 2
+    },
+    {
+      "id": "66ec7ed614b8111e05edeb93",
+      "count": 2
+    },
+    {
+      "id": "66e070bb8368a52e60135337",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article, main, [role=\"main\"]",
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

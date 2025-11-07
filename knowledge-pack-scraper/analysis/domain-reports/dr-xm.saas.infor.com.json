@@ -1,0 +1,439 @@
+{
+  "domain": "dr-xm.saas.infor.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:18.868574",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 6,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 6,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 8,
+      "frequency": 8.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "share-button",
+      "count": 5
+    },
+    {
+      "class": "menu-item",
+      "count": 4
+    },
+    {
+      "class": "container",
+      "count": 3
+    },
+    {
+      "class": "bar",
+      "count": 3
+    },
+    {
+      "class": "faq-item",
+      "count": 3
+    },
+    {
+      "class": "faq-question",
+      "count": 3
+    },
+    {
+      "class": "faq-toggle",
+      "count": 3
+    },
+    {
+      "class": "faq-answer",
+      "count": 3
+    },
+    {
+      "class": "related-post-card",
+      "count": 3
+    },
+    {
+      "class": "related-post-image",
+      "count": 3
+    },
+    {
+      "class": "related-post-content",
+      "count": 3
+    },
+    {
+      "class": "related-post-title",
+      "count": 3
+    },
+    {
+      "class": "related-post-excerpt",
+      "count": 3
+    },
+    {
+      "class": "related-post-meta",
+      "count": 3
+    },
+    {
+      "class": "related-post-date",
+      "count": 3
+    },
+    {
+      "class": "statcounter",
+      "count": 2
+    },
+    {
+      "class": "logo-text",
+      "count": 2
+    },
+    {
+      "class": "ads-arsae",
+      "count": 2
+    },
+    {
+      "class": "delimiter",
+      "count": 2
+    },
+    {
+      "class": "toc-h2-item",
+      "count": 2
+    },
+    {
+      "class": "toc-h2-container",
+      "count": 2
+    },
+    {
+      "class": "toc-h2",
+      "count": 2
+    },
+    {
+      "class": "toc-dropdown-arrow",
+      "count": 2
+    },
+    {
+      "class": "toc-h3-list",
+      "count": 2
+    },
+    {
+      "class": "toc-h3",
+      "count": 2
+    },
+    {
+      "class": "yoast-schema-graph",
+      "count": 1
+    },
+    {
+      "class": "post-template-default",
+      "count": 1
+    },
+    {
+      "class": "single",
+      "count": 1
+    },
+    {
+      "class": "single-post",
+      "count": 1
+    },
+    {
+      "class": "page-wrapper",
+      "count": 1
+    },
+    {
+      "class": "site-header",
+      "count": 1
+    },
+    {
+      "class": "header-container",
+      "count": 1
+    },
+    {
+      "class": "logo-wrapper",
+      "count": 1
+    },
+    {
+      "class": "logo-container",
+      "count": 1
+    },
+    {
+      "class": "mobile-menu-toggle",
+      "count": 1
+    },
+    {
+      "class": "text-logo",
+      "count": 1
+    },
+    {
+      "class": "main-nav-wrapper",
+      "count": 1
+    },
+    {
+      "class": "main-nav",
+      "count": 1
+    },
+    {
+      "class": "main-menu-wrapper",
+      "count": 1
+    },
+    {
+      "class": "main-menu",
+      "count": 1
+    },
+    {
+      "class": "menu",
+      "count": 1
+    },
+    {
+      "class": "components",
+      "count": 1
+    },
+    {
+      "class": "search-bar",
+      "count": 1
+    },
+    {
+      "class": "is-ajax-search",
+      "count": 1
+    },
+    {
+      "class": "visually-hidden",
+      "count": 1
+    },
+    {
+      "class": "theme-toggle",
+      "count": 1
+    },
+    {
+      "class": "moon",
+      "count": 1
+    },
+    {
+      "class": "sun",
+      "count": 1
+    },
+    {
+      "class": "site-content",
+      "count": 1
+    },
+    {
+      "class": "fullwidth-post-layout",
+      "count": 1
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "bebas-body",
+      "count": 1
+    },
+    {
+      "id": "site-header",
+      "count": 1
+    },
+    {
+      "id": "mobile-menu-toggle",
+      "count": 1
+    },
+    {
+      "id": "logo",
+      "count": 1
+    },
+    {
+      "id": "main-nav",
+      "count": 1
+    },
+    {
+      "id": "menu-components-wrap",
+      "count": 1
+    },
+    {
+      "id": "menu-atas",
+      "count": 1
+    },
+    {
+      "id": "search",
+      "count": 1
+    },
+    {
+      "id": "search-input",
+      "count": 1
+    },
+    {
+      "id": "search-submit",
+      "count": 1
+    },
+    {
+      "id": "content",
+      "count": 1
+    },
+    {
+      "id": "key-points",
+      "count": 1
+    },
+    {
+      "id": "understanding-the-naic-number",
+      "count": 1
+    },
+    {
+      "id": "locating-your-naic-number",
+      "count": 1
+    },
+    {
+      "id": "practical-applications-of-the-naic-number",
+      "count": 1
+    },
+    {
+      "id": "state-insurance-regulations-and-the-naic-number",
+      "count": 1
+    },
+    {
+      "id": "what-is-the-naic-number-and-why-is-it-important",
+      "count": 1
+    },
+    {
+      "id": "how-do-i-find-my-naic-number",
+      "count": 1
+    },
+    {
+      "id": "what-are-the-practical-applications-of-the-naic-number",
+      "count": 1
+    },
+    {
+      "id": "share-twitter",
+      "count": 1
+    },
+    {
+      "id": "share-facebook",
+      "count": 1
+    },
+    {
+      "id": "share-telegram",
+      "count": 1
+    },
+    {
+      "id": "share-whatsapp",
+      "count": 1
+    },
+    {
+      "id": "share-pinterest",
+      "count": 1
+    },
+    {
+      "id": "footer",
+      "count": 1
+    },
+    {
+      "id": "go-to-top",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article",
+    "excluded_selector": "[class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

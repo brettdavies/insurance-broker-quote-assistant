@@ -1,7 +1,7 @@
 {
   "domain": "consumersadvocate.org",
   "total_pages": 5,
-  "analyzed_at": "2025-11-07T14:35:32.957377",
+  "analyzed_at": "2025-11-07T16:31:13.878673",
   "content_indicators": [
     {
       "selector": "article",
@@ -446,7 +446,7 @@
       "nav"
     ],
     "css_selector": null,
-    "excluded_selector": "[class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "excluded_selector": "[class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
     "pruning_threshold": 0.6,
     "min_word_threshold": 50,
     "confidence_score": "low"

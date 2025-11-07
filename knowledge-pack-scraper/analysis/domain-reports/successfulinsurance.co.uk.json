@@ -1,0 +1,455 @@
+{
+  "domain": "successfulinsurance.co.uk",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:25.119296",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 17,
+      "frequency": 17.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 17,
+      "frequency": 17.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "gb-container",
+      "count": 10
+    },
+    {
+      "class": "gb-headline",
+      "count": 6
+    },
+    {
+      "class": "gb-headline-text",
+      "count": 6
+    },
+    {
+      "class": "gp-icon",
+      "count": 5
+    },
+    {
+      "class": "menu-item",
+      "count": 5
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 5
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 5
+    },
+    {
+      "class": "grid-container",
+      "count": 4
+    },
+    {
+      "class": "screen-reader-text",
+      "count": 3
+    },
+    {
+      "class": "icon-search",
+      "count": 3
+    },
+    {
+      "class": "ctaText",
+      "count": 3
+    },
+    {
+      "class": "postTitle",
+      "count": 3
+    },
+    {
+      "class": "widget",
+      "count": 2
+    },
+    {
+      "class": "inner-padding",
+      "count": 2
+    },
+    {
+      "class": "widget_block",
+      "count": 2
+    },
+    {
+      "class": "main-navigation",
+      "count": 2
+    },
+    {
+      "class": "menu-bar-items",
+      "count": 2
+    },
+    {
+      "class": "menu-bar-item",
+      "count": 2
+    },
+    {
+      "class": "menu-toggle",
+      "count": 2
+    },
+    {
+      "class": "icon-menu-bars",
+      "count": 2
+    },
+    {
+      "class": "gb-button",
+      "count": 2
+    },
+    {
+      "class": "gb-button-text",
+      "count": 2
+    },
+    {
+      "class": "yoast-schema-graph",
+      "count": 1
+    },
+    {
+      "class": "wp-singular",
+      "count": 1
+    },
+    {
+      "class": "post-template-default",
+      "count": 1
+    },
+    {
+      "class": "single",
+      "count": 1
+    },
+    {
+      "class": "single-post",
+      "count": 1
+    },
+    {
+      "class": "postid-2358",
+      "count": 1
+    },
+    {
+      "class": "single-format-standard",
+      "count": 1
+    },
+    {
+      "class": "wp-custom-logo",
+      "count": 1
+    },
+    {
+      "class": "wp-embed-responsive",
+      "count": 1
+    },
+    {
+      "class": "wp-theme-generatepress",
+      "count": 1
+    },
+    {
+      "class": "post-image-above-header",
+      "count": 1
+    },
+    {
+      "class": "post-image-aligned-center",
+      "count": 1
+    },
+    {
+      "class": "no-sidebar",
+      "count": 1
+    },
+    {
+      "class": "nav-float-right",
+      "count": 1
+    },
+    {
+      "class": "one-container",
+      "count": 1
+    },
+    {
+      "class": "header-aligned-left",
+      "count": 1
+    },
+    {
+      "class": "dropdown-hover",
+      "count": 1
+    },
+    {
+      "class": "featured-image-active",
+      "count": 1
+    },
+    {
+      "class": "skip-link",
+      "count": 1
+    },
+    {
+      "class": "top-bar",
+      "count": 1
+    },
+    {
+      "class": "top-bar-align-right",
+      "count": 1
+    },
+    {
+      "class": "inside-top-bar",
+      "count": 1
+    },
+    {
+      "class": "site-header",
+      "count": 1
+    },
+    {
+      "class": "has-inline-mobile-toggle",
+      "count": 1
+    },
+    {
+      "class": "inside-header",
+      "count": 1
+    },
+    {
+      "class": "site-logo",
+      "count": 1
+    },
+    {
+      "class": "header-image",
+      "count": 1
+    },
+    {
+      "class": "is-logo-image",
+      "count": 1
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "wp-emoji-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-library-css",
+      "count": 1
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "generateblocks-google-fonts-css",
+      "count": 1
+    },
+    {
+      "id": "generate-widget-areas-css",
+      "count": 1
+    },
+    {
+      "id": "generate-style-css",
+      "count": 1
+    },
+    {
+      "id": "generate-style-inline-css",
+      "count": 1
+    },
+    {
+      "id": "generate-google-fonts-css",
+      "count": 1
+    },
+    {
+      "id": "generateblocks-inline-css",
+      "count": 1
+    },
+    {
+      "id": "generate-blog-images-css",
+      "count": 1
+    },
+    {
+      "id": "wp-custom-css",
+      "count": 1
+    },
+    {
+      "id": "block-10",
+      "count": 1
+    },
+    {
+      "id": "masthead",
+      "count": 1
+    },
+    {
+      "id": "mobile-menu-control-wrapper",
+      "count": 1
+    },
+    {
+      "id": "site-navigation",
+      "count": 1
+    },
+    {
+      "id": "primary-menu",
+      "count": 1
+    },
+    {
+      "id": "menu-main-menu",
+      "count": 1
+    },
+    {
+      "id": "menu-item-2097",
+      "count": 1
+    },
+    {
+      "id": "menu-item-2099",
+      "count": 1
+    },
+    {
+      "id": "menu-item-2100",
+      "count": 1
+    },
+    {
+      "id": "menu-item-2101",
+      "count": 1
+    },
+    {
+      "id": "menu-item-2098",
+      "count": 1
+    },
+    {
+      "id": "block-8",
+      "count": 1
+    },
+    {
+      "id": "page",
+      "count": 1
+    },
+    {
+      "id": "content",
+      "count": 1
+    },
+    {
+      "id": "primary",
+      "count": 1
+    },
+    {
+      "id": "main",
+      "count": 1
+    },
+    {
+      "id": "post-2358",
+      "count": 1
+    },
+    {
+      "id": "generate-a11y",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

@@ -1,0 +1,456 @@
+{
+  "domain": "kennedyslaw.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:24.520336",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 5,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 11,
+      "frequency": 11.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 21,
+      "frequency": 21.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 16,
+      "frequency": 16.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 18,
+      "frequency": 18.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent",
+      "count": 84
+    },
+    {
+      "class": "CybotCookiebotDialogDetailBodyContentCookieInfo",
+      "count": 42
+    },
+    {
+      "class": "CybotCookiebotDialogDetailBodyContentCookieInfoTitle",
+      "count": 42
+    },
+    {
+      "class": "CybotCookiebotDialogDetailBodyContentCookieInfoDescription",
+      "count": 42
+    },
+    {
+      "class": "CybotCookiebotDialogDetailBodyContentCookieInfoFooter",
+      "count": 42
+    },
+    {
+      "class": "CybotCookiebotDialogHide",
+      "count": 35
+    },
+    {
+      "class": "CybotCookiebotDialogCollapsed",
+      "count": 25
+    },
+    {
+      "class": "CybotCookiebotDialogDetailBulkConsentCount",
+      "count": 22
+    },
+    {
+      "class": "region-selector__region-item",
+      "count": 20
+    },
+    {
+      "class": "region-selector__region-item-link",
+      "count": 20
+    },
+    {
+      "class": "CybotCookiebotDialogDetailBodyContentCookieGroup",
+      "count": 16
+    },
+    {
+      "class": "CybotCookiebotDialogDetailBodyContentCookieProvider",
+      "count": 16
+    },
+    {
+      "class": "CybotCookiebotDialogDetailBodyContentCookieInfoCount",
+      "count": 16
+    },
+    {
+      "class": "CybotCookiebotDialogDetailBodyContentCookieInfoWrapper",
+      "count": 16
+    },
+    {
+      "class": "underline-animation",
+      "count": 14
+    },
+    {
+      "class": "CybotCookiebotDialogBodyLevelButtonSliderWrapper",
+      "count": 9
+    },
+    {
+      "class": "CybotCookiebotDialogBodyLevelButton",
+      "count": 9
+    },
+    {
+      "class": "CybotCookiebotDialogBodyLevelButtonSlider",
+      "count": 9
+    },
+    {
+      "class": "CybotCookiebotDialogDetailBodyContentCookieLink",
+      "count": 9
+    },
+    {
+      "class": "CybotExternalLinkArrow",
+      "count": 9
+    },
+    {
+      "class": "mobile-navigation-item",
+      "count": 9
+    },
+    {
+      "class": "mobile-navigation-item__link",
+      "count": 9
+    },
+    {
+      "class": "col-xs-12",
+      "count": 9
+    },
+    {
+      "class": "CookieCard",
+      "count": 8
+    },
+    {
+      "class": "CollapseCard",
+      "count": 8
+    },
+    {
+      "class": "container",
+      "count": 8
+    },
+    {
+      "class": "icon",
+      "count": 8
+    },
+    {
+      "class": "row",
+      "count": 8
+    },
+    {
+      "class": "mobile-navigation-item__icon",
+      "count": 7
+    },
+    {
+      "class": "CybotCookiebotFader",
+      "count": 6
+    },
+    {
+      "class": "CybotCookiebotDialogBodyLevelConsentCheckbox",
+      "count": 6
+    },
+    {
+      "class": "sidebar-hr",
+      "count": 6
+    },
+    {
+      "class": "CybotCookiebotScrollContainer",
+      "count": 5
+    },
+    {
+      "class": "CybotCookiebotScrollArea",
+      "count": 5
+    },
+    {
+      "class": "CybotCookiebotScrollbarContainer",
+      "count": 5
+    },
+    {
+      "class": "CybotCookiebotDialogBodyLevelButtonWrapper",
+      "count": 5
+    },
+    {
+      "class": "CybotCookiebotDialogBodyLevelButtonLabel",
+      "count": 5
+    },
+    {
+      "class": "CybotCookiebotDialogBodyLevelButtonDescription",
+      "count": 5
+    },
+    {
+      "class": "CybotCookiebotDialogDetailBodyContentCookieContainerButton",
+      "count": 5
+    },
+    {
+      "class": "CybotCookiebotDialogDetailBodyContentCookieTypeIntro",
+      "count": 5
+    },
+    {
+      "class": "CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer",
+      "count": 5
+    },
+    {
+      "class": "CybotCookiebotDialogDetailBodyContentCookieTabContent",
+      "count": 5
+    },
+    {
+      "class": "meta-menu-item",
+      "count": 5
+    },
+    {
+      "class": "navigation-item",
+      "count": 5
+    },
+    {
+      "class": "navigation-item__link",
+      "count": 5
+    },
+    {
+      "class": "sidebar-sector",
+      "count": 5
+    },
+    {
+      "class": "CybotCookiebotDialogNavItem",
+      "count": 4
+    },
+    {
+      "class": "CybotCookiebotDialogNavItemLink",
+      "count": 4
+    },
+    {
+      "class": "CybotCookiebotDialogTabPanel",
+      "count": 4
+    },
+    {
+      "class": "CybotCookiebotDialogDetailBodyContentCookieContainerHeader",
+      "count": 4
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "charset",
+      "count": 1
+    },
+    {
+      "id": "mobile-web-app-capable",
+      "count": 1
+    },
+    {
+      "id": "apple-mobile-web-app-title",
+      "count": 1
+    },
+    {
+      "id": "theme-color",
+      "count": 1
+    },
+    {
+      "id": "og:type",
+      "count": 1
+    },
+    {
+      "id": "og:site_name",
+      "count": 1
+    },
+    {
+      "id": "description",
+      "count": 1
+    },
+    {
+      "id": "og:title",
+      "count": 1
+    },
+    {
+      "id": "og:description",
+      "count": 1
+    },
+    {
+      "id": "og:image",
+      "count": 1
+    },
+    {
+      "id": "twitter:card",
+      "count": 1
+    },
+    {
+      "id": "twitter:title",
+      "count": 1
+    },
+    {
+      "id": "twitter:description",
+      "count": 1
+    },
+    {
+      "id": "twitter:image",
+      "count": 1
+    },
+    {
+      "id": "robots",
+      "count": 1
+    },
+    {
+      "id": "shortcut-icon",
+      "count": 1
+    },
+    {
+      "id": "apple-touch-icon",
+      "count": 1
+    },
+    {
+      "id": "manifest",
+      "count": 1
+    },
+    {
+      "id": "Cookiebot",
+      "count": 1
+    },
+    {
+      "id": "2e739ebf:0 237c390a:0 63b9cbf6:0 7f937b86:0 3dcf220f:0 1cc3b264:0 846308be:0 4db12f26:0 bb499be0:0 8981ae6e:0 3e7fa735:0 71d25171:0 3bef5710:0 f2be07ec:0 75b9f8d7:0 c0a7601c:0 dba3cbd4:0 2e5db352:0 9df39948:0 6a1ce5fe:0 d1cde962:0 04075a82:0 3345d43a:0 6dfce202:0 12a4ac44:0 8c5b7224:0 07cb9d49:0 4e76d03e:0",
+      "count": 1
+    },
+    {
+      "id": "CookieConsentStateDisplayStyles",
+      "count": 1
+    },
+    {
+      "id": "CookiebotDialogStyle",
+      "count": 1
+    },
+    {
+      "id": "og:url",
+      "count": 1
+    },
+    {
+      "id": "gtag-consent",
+      "count": 1
+    },
+    {
+      "id": "gtm-script",
+      "count": 1
+    },
+    {
+      "id": "gtm-noscript",
+      "count": 1
+    },
+    {
+      "id": "CybotCookiebotDialog",
+      "count": 1
+    },
+    {
+      "id": "CybotCookiebotDialogHeader",
+      "count": 1
+    },
+    {
+      "id": "CybotCookiebotDialogHeaderLogosWrapper",
+      "count": 1
+    },
+    {
+      "id": "CybotCookiebotDialogPoweredbyLink",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "main, [role=\"main\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

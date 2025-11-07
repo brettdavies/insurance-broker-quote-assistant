@@ -1,0 +1,455 @@
+{
+  "domain": "atlantanewsfirst.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:22.364483",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 57,
+      "frequency": 57.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "|",
+      "count": 442
+    },
+    {
+      "class": "mb-0",
+      "count": 175
+    },
+    {
+      "class": "link",
+      "count": 135
+    },
+    {
+      "class": "py-2",
+      "count": 127
+    },
+    {
+      "class": "px-3",
+      "count": 124
+    },
+    {
+      "class": "text-white",
+      "count": 116
+    },
+    {
+      "class": "w-100",
+      "count": 94
+    },
+    {
+      "class": "child",
+      "count": 87
+    },
+    {
+      "class": "h6",
+      "count": 87
+    },
+    {
+      "class": "fw-normal",
+      "count": 74
+    },
+    {
+      "class": "d-flex",
+      "count": 59
+    },
+    {
+      "class": "d-block",
+      "count": 49
+    },
+    {
+      "class": "h-100",
+      "count": 47
+    },
+    {
+      "class": "small",
+      "count": 45
+    },
+    {
+      "class": "align-self-center",
+      "count": 41
+    },
+    {
+      "class": "text",
+      "count": 34
+    },
+    {
+      "class": "article-text",
+      "count": 34
+    },
+    {
+      "class": "align-items-start",
+      "count": 33
+    },
+    {
+      "class": "text-reset",
+      "count": 33
+    },
+    {
+      "class": "fw-bold",
+      "count": 28
+    },
+    {
+      "class": "position-relative",
+      "count": 26
+    },
+    {
+      "class": "parent",
+      "count": 26
+    },
+    {
+      "class": "h5",
+      "count": 26
+    },
+    {
+      "class": "footer-link",
+      "count": 25
+    },
+    {
+      "class": "date-time",
+      "count": 24
+    },
+    {
+      "class": "flex-row",
+      "count": 23
+    },
+    {
+      "class": "mx-2",
+      "count": 22
+    },
+    {
+      "class": "isText",
+      "count": 22
+    },
+    {
+      "class": "figure-img",
+      "count": 21
+    },
+    {
+      "class": "flex-column",
+      "count": 20
+    },
+    {
+      "class": "d-inline-block",
+      "count": 20
+    },
+    {
+      "class": "pointer",
+      "count": 18
+    },
+    {
+      "class": "media-item",
+      "count": 17
+    },
+    {
+      "class": "figure",
+      "count": 17
+    },
+    {
+      "class": "figure-wrapper",
+      "count": 17
+    },
+    {
+      "class": "img-wrapper",
+      "count": 17
+    },
+    {
+      "class": "p-2",
+      "count": 15
+    },
+    {
+      "class": "mb-3",
+      "count": 15
+    },
+    {
+      "class": "media-item-image",
+      "count": 15
+    },
+    {
+      "class": "img-fluid",
+      "count": 15
+    },
+    {
+      "class": "col-6",
+      "count": 15
+    },
+    {
+      "class": "col-sm-6",
+      "count": 15
+    },
+    {
+      "class": "col-md-4",
+      "count": 15
+    },
+    {
+      "class": "col-lg-3",
+      "count": 15
+    },
+    {
+      "class": "d-none",
+      "count": 14
+    },
+    {
+      "class": "fas",
+      "count": 14
+    },
+    {
+      "class": "position-absolute",
+      "count": 13
+    },
+    {
+      "class": "py-1",
+      "count": 13
+    },
+    {
+      "class": "list-unstyled",
+      "count": 13
+    },
+    {
+      "class": "flex-fill",
+      "count": 12
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "tb_loader_script",
+      "count": 1
+    },
+    {
+      "id": "fusion-template-styles",
+      "count": 1
+    },
+    {
+      "id": "polyfill-script",
+      "count": 1
+    },
+    {
+      "id": "fusion-engine-react-script",
+      "count": 1
+    },
+    {
+      "id": "fusion-engine-combinations-script",
+      "count": 1
+    },
+    {
+      "id": "gdmtrack",
+      "count": 1
+    },
+    {
+      "id": "pnesplucidsdksel",
+      "count": 1
+    },
+    {
+      "id": "tbl-editorial-video-style",
+      "count": 1
+    },
+    {
+      "id": "tRecs-taboola-choice",
+      "count": 1
+    },
+    {
+      "id": "tRecs-taboola-choice-popover-container",
+      "count": 1
+    },
+    {
+      "id": "tRecs-taboola-choice-popover-content",
+      "count": 1
+    },
+    {
+      "id": "fusion-app",
+      "count": 1
+    },
+    {
+      "id": "article-right-rail-layout",
+      "count": 1
+    },
+    {
+      "id": "main",
+      "count": 1
+    },
+    {
+      "id": "ad-D8UoskfU94h8y_TamBNWoxmhMXi7ahvyHuiX09S1oNFuwPFoXc",
+      "count": 1
+    },
+    {
+      "id": "fusion-static-enter:static-id-powa-0ffW6SfTvoB49a1-3d71fba4-6da3-4a14-b849-ba5bd2893a24",
+      "count": 1
+    },
+    {
+      "id": "fusion-static-exit:static-id-powa-0ffW6SfTvoB49a1-3d71fba4-6da3-4a14-b849-ba5bd2893a24",
+      "count": 1
+    },
+    {
+      "id": "fusion-static-enter:static-id-powa-0faybsgTvoB494C-85be2b36-d664-4ce3-8990-7d608bddb1a7",
+      "count": 1
+    },
+    {
+      "id": "fusion-static-exit:static-id-powa-0faybsgTvoB494C-85be2b36-d664-4ce3-8990-7d608bddb1a7",
+      "count": 1
+    },
+    {
+      "id": "fusion-static-enter:taboola-widget-0fiLJzhTvoB49qN",
+      "count": 1
+    },
+    {
+      "id": "taboola-below-article-thumbnails-new",
+      "count": 1
+    },
+    {
+      "id": "fusion-static-exit:taboola-widget-0fiLJzhTvoB49qN",
+      "count": 1
+    },
+    {
+      "id": "ad-WdOT18rSPTbdSrfncOI_eZSRL9P1_mN32JhoUn-s7iuOmRmtBR",
+      "count": 1
+    },
+    {
+      "id": "ad-9T5DWR9wq9MGUUUeXb_Ovd7bEm8TPpiSOkY8RjFJDFuxHokVG5",
+      "count": 1
+    },
+    {
+      "id": "fusion-static-enter:footer-wgcl",
+      "count": 1
+    },
+    {
+      "id": "fusion-static-exit:footer-wgcl",
+      "count": 1
+    },
+    {
+      "id": "fusion-metadata",
+      "count": 1
+    },
+    {
+      "id": "queryly_toggle",
+      "count": 1
+    },
+    {
+      "id": "queryly_search_header",
+      "count": 1
+    },
+    {
+      "id": "queryly_search_header_inner",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}
