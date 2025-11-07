@@ -3,12 +3,12 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T06:06:02.507022",
+    "lastUpdated": "2025-11-07T06:06:40.556170",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 620,
+    "pending": 626,
     "fetching": 0,
     "completed": 0,
     "failed": 0
@@ -3332,7 +3332,8 @@
     {
       "id": "url_v4vaya4hlafz596o7c7dxt4y",
       "search_ids": [
-        "search_su98e6fr1njvatqvh9gp3sjj"
+        "search_su98e6fr1njvatqvh9gp3sjj",
+        "search_wyjt117mu1z0ms1qokghp87n"
       ],
       "url": "https://www.progressive.com/insurance/bundling/",
       "urlHash": "27107b52e0a8149d",
@@ -3451,7 +3452,8 @@
     {
       "id": "url_seawms2xs966igt9lhcdx2d5",
       "search_ids": [
-        "search_su98e6fr1njvatqvh9gp3sjj"
+        "search_su98e6fr1njvatqvh9gp3sjj",
+        "search_wyjt117mu1z0ms1qokghp87n"
       ],
       "url": "https://www.progressive.com/condo-insurance/discounts/",
       "urlHash": "0952dbb1c5424973",
@@ -3485,7 +3487,8 @@
     {
       "id": "url_b64zzmg5zip08i7gmgprfcaj",
       "search_ids": [
-        "search_dg34y1pzjgwy33tacrq2v2jd"
+        "search_dg34y1pzjgwy33tacrq2v2jd",
+        "search_wyjt117mu1z0ms1qokghp87n"
       ],
       "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/progressive-defensive-driver-discount",
       "urlHash": "41062cecdad7078e",
@@ -8145,7 +8148,8 @@
     {
       "id": "url_a04fu8wwdeqz67g19g2arj4d",
       "search_ids": [
-        "search_jw6w6suo4997g1nkcbs9mm4f"
+        "search_jw6w6suo4997g1nkcbs9mm4f",
+        "search_wyjt117mu1z0ms1qokghp87n"
       ],
       "url": "https://www.progressive.com/auto/discounts/",
       "urlHash": "43680a63a8dd4a03",
@@ -10582,6 +10586,108 @@
       ],
       "url": "https://www.nolo.com/legal-encyclopedia/property-damage-statute-limitations-florida.html",
       "urlHash": "90bb66add072892b",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_j3xdxyddtp6vlmfjv360w2xg",
+      "search_ids": [
+        "search_wyjt117mu1z0ms1qokghp87n"
+      ],
+      "url": "https://wallethub.com/answers/ci/progressive-multi-policy-discount-1000060-2140715651/",
+      "urlHash": "3f4570335952ae64",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_w47lolmtgnj7hvd8ry4kaoi7",
+      "search_ids": [
+        "search_wyjt117mu1z0ms1qokghp87n"
+      ],
+      "url": "https://www.carinsurancecomparison.com/progressive-car-insurance-discounts/",
+      "urlHash": "ff2a7894adf422de",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_dfe5ygrit3j118c9bblsgnco",
+      "search_ids": [
+        "search_wyjt117mu1z0ms1qokghp87n"
+      ],
+      "url": "https://www.progressive.com/renters-insurance/discounts/",
+      "urlHash": "3dcd444386eca1d9",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_ofxwv4gfi1jythdzgnw5jqn3",
+      "search_ids": [
+        "search_wyjt117mu1z0ms1qokghp87n"
+      ],
+      "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/progressive-student-discount",
+      "urlHash": "2bfa85ea01733cd1",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_czqecrxn4zn48gdokthi0hkx",
+      "search_ids": [
+        "search_wyjt117mu1z0ms1qokghp87n"
+      ],
+      "url": "https://wallethub.com/edu/ci/progressive-discounts/90974",
+      "urlHash": "21709deee0ed3304",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_lfqu0ai4bqat9h4173wrf546",
+      "search_ids": [
+        "search_wyjt117mu1z0ms1qokghp87n"
+      ],
+      "url": "https://www.progressive.com/answers/benefits-of-bundling-insurance/",
+      "urlHash": "16f0563aed4f7f23",
       "priority": "high",
       "status": "pending",
       "assignedTo": null,
