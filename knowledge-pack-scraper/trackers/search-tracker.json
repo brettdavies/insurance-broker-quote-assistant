@@ -3,13 +3,13 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T03:16:38.709038",
+    "lastUpdated": "2025-11-07T03:16:41.052840",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
-    "pending": 471,
-    "claimed": 1,
+    "pending": 470,
+    "claimed": 2,
     "urls_discovered": 0,
     "completed": 4,
     "failed": 0
@@ -2555,15 +2555,16 @@
       "subcategory": "driving-record-requirements",
       "carrier": "Progressive",
       "priority": "high",
-      "status": "pending",
-      "assignedTo": null,
+      "status": "claimed",
+      "assignedTo": "agnt_woq3d3663eabnwp37g79va3l",
       "startedAt": null,
       "completedAt": null,
       "durationSeconds": null,
       "urlsDiscoveredCount": null,
       "errorMessage": null,
       "retryCount": 0,
-      "notes": null
+      "notes": null,
+      "claimedAt": "2025-11-07T03:16:41.050569"
     },
     {
       "id": "search_le6g1xyhyhzfznzpbv3kgddu",
