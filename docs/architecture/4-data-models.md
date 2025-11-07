@@ -42,15 +42,46 @@
 **Schema Location:** `packages/shared/src/schemas/user-profile.ts`
 
 **Key Fields:**
-- `state` - US state code (required for routing)
+
+**Identity Fields:**
+- `name` - Full name (required for pre-fill packet generation and lead handoff)
+- `email` - Optional contact email
+- `phone` - Optional contact phone number
+
+**Location Fields:**
+- `state` - US state code (required for routing and compliance)
+- `zip` - Optional zip code (affects pricing zones and carrier availability beyond state-level)
+
+**Product Selection:**
 - `productLine` - Insurance product type (`'auto' | 'home' | 'renters' | 'umbrella'`)
+
+**Household Fields:**
 - `age` - Optional, used for age-based eligibility and discounts
 - `householdSize` - Optional, affects bundle discounts
-- `vehicles` - Optional, required for auto insurance routing
-- `ownsHome` - Optional, determines bundle eligibility
-- `cleanRecord3Yr` - Optional, qualifies for safe driver discounts
+- `childrenCount` - Optional number of children (key-value aliases: `k`, `kids`). Affects family plan discounts.
+- `dependentsCount` - Optional number of dependents (key-value aliases: `d`, `deps`). Affects coverage recommendations.
+
+**Vehicle Fields (Auto Insurance):**
+- `vehicles` - Optional array of vehicle objects, required for auto insurance routing
+- `vehicleCount` - Optional number of vehicles (key-value alias: `v`). Required for multi-car discount eligibility.
+- `garageType` - Optional (`'garage' | 'carport' | 'street' | 'driveway'`, key-value aliases: `c`, `car`). Qualifies for security/theft discounts.
+- `vins` - Optional array of VINs (required for final quote submission, flagged as missing if auto product selected)
+- `driverAges` - Optional array of driver ages (affects pricing calculations and eligibility)
+- `drivingRecords` - Optional array of DrivingRecord objects with detailed violation history
+- `cleanRecord3Yr` - Optional boolean for safe driver discount (simplified alternative to full drivingRecords)
+
+**Property Fields (Home/Renters Insurance):**
+- `ownsHome` - Optional boolean, determines bundle eligibility
+- `propertyType` - Optional (`'single-family' | 'condo' | 'townhouse' | 'apartment'`). Affects carrier eligibility (some carriers exclude condos).
+- `constructionYear` - Optional year built (affects rebuild cost estimates and eligibility)
+- `roofType` - Optional (`'asphalt' | 'metal' | 'tile' | 'wood'`). Affects wind/hail discounts and pricing (metal/tile roofs qualify for wind-resistant discounts in hurricane zones).
+- `squareFeet` - Optional property square footage (determines coverage limits and pricing)
+
+**Coverage Fields (Policy Analysis):**
 - `currentCarrier` - Optional, used in policy analysis flow
 - `currentPremium` - Optional, calculates savings in policy analysis
+- `deductibles` - Optional array of Deductible objects by coverage type (enables deductible trade-off analysis)
+- `limits` - Optional array of Limit objects by coverage type (enables gap analysis and upsell opportunities)
 - `existingPolicies` - **Required for bundle discount analysis**, optional otherwise. Array of other products user currently has for multi-carrier consolidation analysis (e.g., `[{ product: 'home', carrier: 'State Farm', premium: 800 }, { product: 'auto', carrier: 'GEICO', premium: 1200 }]`). Carrier IDs must match knowledge pack carrier names.
 
 **Design Decisions:**

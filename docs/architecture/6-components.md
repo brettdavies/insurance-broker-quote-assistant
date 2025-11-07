@@ -26,6 +26,71 @@ This section describes the 5 core components (2 LLM Agents + 3 Deterministic Eng
 
 ---
 
+## 6.1.1 Hybrid Extraction Logic
+
+**Purpose:** Optimize extraction cost and latency by parsing key-value syntax deterministically before falling back to LLM for natural language.
+
+**Architecture:** Two-phase extraction pipeline:
+1. **Deterministic Key-Value Parser** - Regex-based extraction of structured syntax (`kids:3`, `k:3`, `deps:4`, `car:garage`)
+2. **LLM Fallback** - GPT-4o-mini invoked only when key-value syntax not detected
+
+**Why Hybrid Approach:**
+- **Speed:** Key-value parsing is instant (zero LLM latency/cost for structured input)
+- **Accuracy:** Deterministic regex eliminates extraction errors for power users who adopt shortcuts
+- **Flexibility:** LLM handles natural language when brokers prefer conversational flow
+- **Broker Choice:** Power users use shortcuts for speed, others use natural language for comfort
+- **Cost Optimization:** Only invoke LLM when necessary (most broker inputs use shortcuts after training)
+
+**Field Alias Mappings:**
+
+| Shortcut | Long Form    | Target Field      | Example Usage       |
+|----------|--------------|-------------------|---------------------|
+| `k`      | `kids`       | `childrenCount`   | `k:3`, `kids:3`     |
+| `d`      | `deps`       | `dependentsCount` | `d:4`, `deps:4`     |
+| `v`      | `vehicles`   | `vehicleCount`    | `v:2`               |
+| `c`, `car` | `garage`   | `garageType`      | `car:garage`, `c:carport` |
+| `drivers` | `drivers`   | `driverCount`     | `drivers:3`         |
+
+**Regex Pattern Examples (Non-Obvious Implementation):**
+```typescript
+// Capture kids/k with numeric value
+/\b(kids?|k):\s*(\d+)/i
+
+// Capture deps/d with numeric value
+/\b(deps?|dependents?|d):\s*(\d+)/i
+
+// Capture garage type
+/\b(car|garage|c):\s*(garage|carport|street|driveway)/i
+```
+
+**Fallback Decision Logic:**
+```
+IF regex extracts ≥1 field:
+  - Use extracted values
+  - Log extraction method: "key-value"
+  - Skip LLM call (save cost/latency)
+  - Return immediately
+ELSE:
+  - Invoke LLM with full message
+  - Log extraction method: "llm"
+  - Log token usage for cost tracking
+  - Return LLM-extracted fields
+```
+
+**Extensibility Pattern:**
+New shortcuts can be added without LLM retraining:
+1. Add entry to alias mapping table (centralized configuration)
+2. Add corresponding regex pattern to parser
+3. Update UserProfile schema if new field type
+4. No LLM prompt changes required (deterministic logic)
+
+**Why This Pattern Is Non-Obvious:**
+- Most conversational AI systems use pure LLM extraction (no hybrid approach)
+- Key-value syntax in chat interfaces is unconventional (blurs structured/unstructured input)
+- Extensible alias system requires careful design to avoid conflicts between shortcuts
+
+---
+
 ## 6.2 Pitch Generator Agent (LLM)
 
 **Purpose:** Transform structured opportunity data into human-friendly savings recommendations with "because" rationales.
