@@ -3,13 +3,13 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T03:19:44.005533",
+    "lastUpdated": "2025-11-07T03:19:46.348887",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
-    "pending": 467,
-    "claimed": 1,
+    "pending": 466,
+    "claimed": 2,
     "urls_discovered": 0,
     "completed": 8,
     "failed": 0
@@ -1671,15 +1671,16 @@
       "subcategory": "home-security-system-discount",
       "carrier": "State Farm",
       "priority": "medium",
-      "status": "pending",
-      "assignedTo": null,
+      "status": "claimed",
+      "assignedTo": "agnt_revclcx18uhnndtei6674v3c",
       "startedAt": null,
       "completedAt": null,
       "durationSeconds": null,
       "urlsDiscoveredCount": null,
       "errorMessage": null,
       "retryCount": 0,
-      "notes": null
+      "notes": null,
+      "claimedAt": "2025-11-07T03:19:46.346818"
     },
     {
       "id": "search_avcyilriugs3frmj65ups4l3",
