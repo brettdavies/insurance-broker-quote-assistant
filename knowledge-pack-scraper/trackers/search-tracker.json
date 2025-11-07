@@ -3,13 +3,13 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T03:20:28.911063",
+    "lastUpdated": "2025-11-07T03:20:31.147909",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
-    "pending": 466,
-    "claimed": 1,
+    "pending": 465,
+    "claimed": 2,
     "urls_discovered": 0,
     "completed": 9,
     "failed": 0
@@ -5817,15 +5817,16 @@
       "subcategory": "specialty-coverage-(flood,-earthquake,-etc.)",
       "carrier": "GEICO",
       "priority": "medium",
-      "status": "pending",
-      "assignedTo": null,
+      "status": "claimed",
+      "assignedTo": "agnt_p6x3vvwy4zj68eabft39awt7",
       "startedAt": null,
       "completedAt": null,
       "durationSeconds": null,
       "urlsDiscoveredCount": null,
       "errorMessage": null,
       "retryCount": 0,
-      "notes": null
+      "notes": null,
+      "claimedAt": "2025-11-07T03:20:31.145498"
     },
     {
       "id": "search_b7acnx5bstgad5a04n8fr5su",
