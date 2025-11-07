@@ -3,12 +3,12 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T05:19:41.137502",
+    "lastUpdated": "2025-11-07T05:20:22.157449",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 378,
+    "pending": 383,
     "fetching": 0,
     "completed": 0,
     "failed": 0
@@ -5763,7 +5763,8 @@
     {
       "id": "url_hfnoafnw2cfvfynlgkcdhysn",
       "search_ids": [
-        "search_vl2halzn1jsndp7p52wrqpep"
+        "search_vl2halzn1jsndp7p52wrqpep",
+        "search_jrxr7necw9uy23ef4a4jwr77"
       ],
       "url": "https://www.geico.com/save/discounts/mature-driver-discounts/",
       "urlHash": "9796211d2f37fbf7",
@@ -6448,6 +6449,91 @@
       "url": "https://www.singletonschreiber.com/theblog/too-risky-to-cover-state-farms-shrinking-liability-umbrella-puts-californians-in-the-crosshairs",
       "urlHash": "d0a665e89c03fa6f",
       "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_ambygnndx7yf244p7qvbtbcu",
+      "search_ids": [
+        "search_jrxr7necw9uy23ef4a4jwr77"
+      ],
+      "url": "https://www.geico.com/auto-insurance/",
+      "urlHash": "c57fed4dc3bfed68",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_ufv9j6obnbwjk55qt114alvu",
+      "search_ids": [
+        "search_jrxr7necw9uy23ef4a4jwr77"
+      ],
+      "url": "https://www.geico.com/information/states/nc/",
+      "urlHash": "8bf3549dc8c2f509",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_ex2yhefmy5z3j89cwmltv9mh",
+      "search_ids": [
+        "search_jrxr7necw9uy23ef4a4jwr77"
+      ],
+      "url": "https://www.geico.com/information/states/tx/",
+      "urlHash": "8e481a6e05cad384",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_xkhoqkdi331k1bc08fkn2pq6",
+      "search_ids": [
+        "search_jrxr7necw9uy23ef4a4jwr77"
+      ],
+      "url": "https://www.geico.com/collector-auto-insurance/",
+      "urlHash": "d10f38c8d88ac805",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_kqrf96kyq1gqewt4gtpezzah",
+      "search_ids": [
+        "search_jrxr7necw9uy23ef4a4jwr77"
+      ],
+      "url": "https://www.geico.com/information/aboutinsurance/auto/shopping-for-car-insurance/",
+      "urlHash": "45dda16505e59ba6",
+      "priority": "high",
       "status": "pending",
       "assignedTo": null,
       "pageId": null,
