@@ -3,13 +3,13 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T05:15:47.639223",
+    "lastUpdated": "2025-11-07T05:16:41.881682",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
-    "pending": 436,
-    "claimed": 2,
+    "pending": 435,
+    "claimed": 3,
     "urls_discovered": 0,
     "completed": 38,
     "failed": 0
@@ -6979,15 +6979,16 @@
       "subcategory": "required-disclosures",
       "carrier": null,
       "priority": "high",
-      "status": "pending",
-      "assignedTo": null,
+      "status": "claimed",
+      "assignedTo": "agnt_w1xokbws897srojw6d3wk93h",
       "startedAt": null,
       "completedAt": null,
       "durationSeconds": null,
       "urlsDiscoveredCount": null,
       "errorMessage": null,
       "retryCount": 0,
-      "notes": null
+      "notes": null,
+      "claimedAt": "2025-11-07T05:16:41.879627"
     },
     {
       "id": "search_wgp3oye56u0uqxf0uzq10xvk",
