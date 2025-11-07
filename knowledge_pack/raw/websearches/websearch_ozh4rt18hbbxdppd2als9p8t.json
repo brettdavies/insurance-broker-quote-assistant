@@ -1,0 +1,803 @@
+{
+  "websearch_id": "websearch_ozh4rt18hbbxdppd2als9p8t",
+  "search_id": "search_gdhwuddl1d5uc970bq5v0fkx",
+  "timestamp": "2025-11-07T12:34:22.287856",
+  "startedAt": "2025-11-07T12:34:22.287856",
+  "completedAt": "2025-11-07T12:34:24.103394",
+  "durationSeconds": 1.82,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:valuepenguin.com GEICO rates California",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:valuepenguin.com GEICO rates California",
+      "show_strict_warning": false,
+      "cleaned": "GEICO rates California",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO rates California",
+        "sites": [
+          "valuepenguin.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Cheapest Car Insurance in California (Best Rates in 2025)",
+          "url": "https://www.valuepenguin.com/best-cheap-car-insurance-california",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico has the best cheap car insurance in California, at $124 per month for full coverage. That&#x27;s $44 per month cheaper than the state average. ... Monthly rates based on full coverage car insurance for a 30-year-old man.",
+          "page_age": "2025-09-08T15:48:57",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/best-cheap-car-insurance-california",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a car insurance near me  \u203a cheapest car insurance in california (best rates in 2025)"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/u4o_Yj8l6FiS8eLxI8lvuYTcMnksyMFh-dMP6IM37Jw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2F1dG8taW5z/dXJhbmNlL2NvdXBs/ZS1jYXItdHJ1bmst/ZG9nLW1p",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/auto-insurance/couple-car-trunk-dog-mi",
+            "logo": false
+          },
+          "age": "September 8, 2025"
+        },
+        {
+          "title": "State of Auto Insurance in 2025 - ValuePenguin",
+          "url": "https://www.valuepenguin.com/state-of-auto-insurance-2025",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "New Jersey and Washington have estimated increases of 17.2%, while California residents will see a 16.2% increase, on average. Only one state \u2014 North Carolina \u2014 has an expected rate drop in 2025 (0.1%).",
+          "page_age": "2025-07-08T14:39:01",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/state-of-auto-insurance-2025",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a auto insurance  \u203a state of auto insurance in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/858Ppdl4x_VTPKbqs-qkjdaOzSCBPw7LbPnZQYZx3z0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2F1dG8taW5z/dXJhbmNlLzIwMjUt/Z3JhcGhpYy9tYW4t/Y2FyLXJhaXNpbmct/cHJpY2VzLTIwMjU",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/auto-insurance/2025-graphic/man-car-raising-prices-2025",
+            "logo": false
+          },
+          "age": "July 8, 2025"
+        },
+        {
+          "title": "Who Has the Cheapest Car Insurance in Stockton, California? - ValuePenguin",
+          "url": "https://www.valuepenguin.com/car-insurance-stockton-california",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico has the cheapest car insurance in Stockton, California. On average, insurance from Geico costs $125 per month for full coverage and $42 for minimum liability.",
+          "page_age": "2025-07-10T17:22:00",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/car-insurance-stockton-california",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a car insurance near me  \u203a who has the cheapest car insurance in stockton, california?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wXacFnsQaguhZVmJ2g3T3QGi_aMDelndlimTXDaHlyU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2NhcnMtZHJp/dmluZy1kb3duLWEt/d2luZHktcm9hZC1p/bi15b3NlbWl0ZS13/aGlsZS1vbi1yb3lh/bHR5LWZyZWUtaW1h/Z2UxMjEyOTkxMDcy",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/cars-driving-down-a-windy-road-in-yosemite-while-on-royalty-free-image1212991072",
+            "logo": false
+          },
+          "age": "July 10, 2025"
+        },
+        {
+          "title": "Best Cheap SR-22 Insurance Rates in California - ValuePenguin",
+          "url": "https://www.valuepenguin.com/car-insurance/sr22-california",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "California law also prohibits insurance companies from providing a good driver discount to anyone with a DUI conviction for 10 years following the violation. Even if your insurance company renews your policy, the loss of the good driver discount may lead to a higher rate. Mercury, Geico and UAIC have the cheapest SR-22 quotes in California.",
+          "page_age": "2025-08-05T15:51:20",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/car-insurance/sr22-california",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a car-insurance  \u203a sr22-california"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/7hFBgFkdxDtFNDgLQWL7t4JbQtCKvmtCkoVDF98VEEs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL0dldHR5SW1h/Z2VzLTYwNzYwMDUz/NF9uYXp2eXc",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/GettyImages-607600534_nazvyw",
+            "logo": false
+          },
+          "age": "August 5, 2025"
+        },
+        {
+          "title": "Geico Car & Home Insurance Review - ValuePenguin",
+          "url": "https://www.valuepenguin.com/geico-insurance-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "With accident forgiveness, your auto insurance rates won&#x27;t go up after your first at-fault accident. Geico offers two types of accident forgiveness: Free accident forgiveness for drivers who have been accident-free for five years or more \u00b7 Upgraded accident forgiveness, which some people with good driving records can get at an extra cost (not available in California...",
+          "page_age": "2025-08-25T15:36:30",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/geico-insurance-review",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a geico-insurance-review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/82b73EZYiG3bHcmeoWvPRW10YaUBVbRtmxooH0y5DC0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvY19saW1p/dCxkcHJfMS4wLGZf/YXV0byxoXzE2MDAs/cV9hdXRvLHdfMTYw/MC9yZWZlcnJhbF9s/b2dvcy91cy9pbnN1/cmFuY2UvZ2VpY28t/NQ",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/c_limit,dpr_1.0,f_auto,h_1600,q_auto,w_1600/referral_logos/us/insurance/geico-5",
+            "logo": true
+          },
+          "age": "August 25, 2025"
+        },
+        {
+          "title": "Who Has the Cheapest Car Insurance in Los Angeles? - ValuePenguin",
+          "url": "https://www.valuepenguin.com/best-cheap-car-insurance-los-angeles-california",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico offers the cheapest car insurance in Los Angeles, with an average rate of $147 per month for full coverage and $54 per month for liability-only.",
+          "page_age": "2025-09-08T15:43:53",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/best-cheap-car-insurance-los-angeles-california",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a car insurance near me  \u203a who has the cheapest car insurance in los angeles?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Gi9uXIGvb4ayfpMkWm2uICnCeeGNIYS0msFJNaN19ss/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2F1dG8taW5z/dXJhbmNlL21hbi1k/b2ctZHJpdmU",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/auto-insurance/man-dog-drive",
+            "logo": false
+          },
+          "age": "September 8, 2025"
+        },
+        {
+          "title": "Car Insurance Rates by State: 2025 Comparison - ValuePenguin",
+          "url": "https://www.valuepenguin.com/car-insurance-by-state",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Usually, a good or excellent credit score gets you a lower rate on car insurance. A poor or bad credit score means you&#x27;ll probably pay more. However, several states, including Michigan, Hawaii and California, don&#x27;t allow insurance companies to use credit scores to set rates.",
+          "page_age": "2025-08-27T13:08:24",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/car-insurance-by-state",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a car-insurance-by-state"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/qJRVGe4nrRCB_hlQTffpCwE8RFBnXAaVIYEdIkf3_Qo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL3lvdW5nLW1h/bGUtZHJpdmVyX3Az/Y20ycQ",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/young-male-driver_p3cm2q",
+            "logo": false
+          },
+          "age": "August 27, 2025"
+        },
+        {
+          "title": "Esurance vs. Geico Car Insurance: Reviews and Quotes - ValuePenguin",
+          "url": "https://www.valuepenguin.com/compare-esurance-vs-geico-car-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Car insurance from Geico costs $396 per year for a minimum-coverage policy, which is $159 cheaper than Esurance. Geico also offers superior customer service and coverage options.",
+          "page_age": "2025-08-05T21:54:05",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/compare-esurance-vs-geico-car-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a car insurance near me  \u203a esurance vs. geico car insurance: reviews and quotes"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/0AVg5eaEZOnuE-5wd4Lgfx7Q8hLSGuSBEEqMbal4Qvo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL0NoYW5naW5n/LWZsYXQtdGlyZV90/ZnhtZ3I",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/Changing-flat-tire_tfxmgr",
+            "logo": false
+          },
+          "age": "August 5, 2025"
+        },
+        {
+          "title": "Car Insurance Rate Increases with a Speeding Ticket",
+          "url": "https://www.valuepenguin.com/speeding-ticket-car-insurance-cost",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "For example, one ticket increases rates with Geico by more than 20%. A second ticket raises rates by 38% more.",
+          "page_age": "2025-07-29T15:02:47",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/speeding-ticket-car-insurance-cost",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a speeding-ticket-car-insurance-cost"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/5NZsZvd3deQ6BaUO9VV7smfmSAlSJtabpHnk3U5DHnA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL3BvbGljZS1v/ZmZpY2VyLW1vdmlu/Zy12aW9sYXRpb24t/dGlja2V0X211NGgy/eg",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/police-officer-moving-violation-ticket_mu4h2z",
+            "logo": false
+          },
+          "age": "July 29, 2025"
+        },
+        {
+          "title": "The Cheapest (and Best) Full Coverage Car Insurance of 2025",
+          "url": "https://www.valuepenguin.com/best-cheap-full-coverage-auto-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "It&#x27;s important to get personalized ... in your area, and cheap rates can also be found at small or regional companies. For example, Geico costs more than average nationally. But, it has the lowest full coverage car insurance quotes in California, Hawaii, Massachusetts, New Jersey, ...",
+          "page_age": "2025-10-28T22:08:41",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/best-cheap-full-coverage-auto-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a car insurance near me  \u203a the cheapest (and best) full coverage car insurance of 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/jwR72us8lHYXsjXEhvfivvAXuzbnjfyJdx35LnGOY8g/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2Z1bGwtY292/ZXJhZ2UtY2RuX2xv/eXg2cg",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/full-coverage-cdn_loyx6r",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Liberty Mutual vs Geico: Car Insurance Rates and Coverage - ValuePenguin",
+          "url": "https://www.valuepenguin.com/compare-liberty-mutual-vs-geico-car-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "At $3,854 per year, a policy from Geico costs $3,078 less per year than a policy from Liberty Mutual. But both companies are cheaper than the national average for 18-year-olds, which is $7,396 per year.",
+          "page_age": "2025-09-03T15:29:47",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/compare-liberty-mutual-vs-geico-car-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a car insurance near me  \u203a liberty mutual vs geico: car insurance rates and coverage"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/VJlBQNOqJt4W300kUdxQvsY03GSB9WXEqadKh_qKpj8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2F1dG8taW5z/dXJhbmNlLWNvbXBh/cmlzb25fZGY4YXBw",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/auto-insurance-comparison_df8app",
+            "logo": false
+          },
+          "age": "September 3, 2025"
+        },
+        {
+          "title": "Free Car Insurance Calculator: Instant Cost Estimates - ValuePenguin",
+          "url": "https://www.valuepenguin.com/auto-insurance/estimate-car-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Car insurance rates can differ by an average of $245 per month for full coverage from one company to the next. Get quote estimates from large insurance companies like State Farm and Geico and smaller ones like Erie and Farm Bureau.",
+          "page_age": "2025-07-21T15:04:20",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/auto-insurance/estimate-car-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a auto insurance  \u203a car insurance calculator: estimate your car insurance cost"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/T3tOo8cib3wBpe4U8VG4aRzstMGCgV5_5yewtqdkSLg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2Nhci1pbnN1/cmFuY2UtY2RuX2ds/eGgzZg",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/car-insurance-cdn_glxh3f",
+            "logo": false
+          },
+          "age": "July 21, 2025"
+        },
+        {
+          "title": "Compare State Farm vs Geico, Progressive, Allstate, Farmers - ValuePenguin",
+          "url": "https://www.valuepenguin.com/state-farm-vs-geico-vs-allstate-vs-progressive-vs-farmers-car-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "However, Geico isn&#x27;t the best choice for people looking to save with a safe driving program. That&#x27;s because Geico&#x27;s DriveEasy program only offers a discount of up to 10%, and your rates can go up if you have bad driving habits.",
+          "page_age": "2025-07-22T18:00:43",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/state-farm-vs-geico-vs-allstate-vs-progressive-vs-farmers-car-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a auto insurance  \u203a comparing state farm vs. geico vs. progressive vs. allstate vs. farmers"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ZjW5X9SL92LPnN_VceWvaUvIpjpMasAXmgu2LoZb-C0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2F1dG8taW5z/dXJhbmNlL2ZhbWls/eS1jYXItdHJpcF9h/b2Voa3I",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/auto-insurance/family-car-trip_aoehkr",
+            "logo": false
+          },
+          "age": "July 22, 2025"
+        },
+        {
+          "title": "How Much Does Tesla Insurance Cost? Cheapest Rates by Model - ValuePenguin",
+          "url": "https://www.valuepenguin.com/tesla-car-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "However, Tesla&#x27;s own insurance program is still the most affordable option available in the Golden State. Its average price across all 2022 Tesla models is $187 per month. That&#x27;s 45% less than the state average, and $81 per month cheaper than ...",
+          "page_age": "2025-07-29T20:25:36",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/tesla-car-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a tesla-car-insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/PZ-yeURIrMCDvd09TYLNLID6iqQjGjuyIJ-m5iTDgPY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL0dldHR5SW1h/Z2VzLTg1NzcwMDY3/MF9wcXE2aXY",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/GettyImages-857700670_pqq6iv",
+            "logo": false
+          },
+          "age": "July 29, 2025"
+        },
+        {
+          "title": "Best Car Insurance for Teachers: Discounts and More - ValuePenguin",
+          "url": "https://www.valuepenguin.com/car-insurance-discounts-teachers",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Your education level can impact your rates as well, which benefits the many teachers with advanced and graduate degrees. Teachers pay 6% less for auto insurance than service workers do. Progressive charged teachers $63 less per year than service workers, while Geico charged $114 less.",
+          "page_age": "2025-07-08T22:34:50",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/car-insurance-discounts-teachers",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a car-insurance-discounts-teachers"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/2Lh9c0qloK4SrENoB1DFSjQw58JzUAuQOJpzrp0rQMY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL3NtaWxpbmct/dGVhY2hlci1jbGFz/c3Jvb21fd21oaWZ5",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/smiling-teacher-classroom_wmhify",
+            "logo": false
+          },
+          "age": "July 8, 2025"
+        },
+        {
+          "title": "Geico DriveEasy Review: Is it Worth it? - ValuePenguin",
+          "url": "https://www.valuepenguin.com/geico-drive-easy-insurance-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Although various sources online say the discount can be up to 25%, ValuePenguin confirmed with Geico that 10% is usually the highest discount available. But you might see your rates increase if your DriveEasy data shows you&#x27;re a risky driver.",
+          "page_age": "2025-07-10T16:02:51",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/geico-drive-easy-insurance-review",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a geico-drive-easy-insurance-review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/82b73EZYiG3bHcmeoWvPRW10YaUBVbRtmxooH0y5DC0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvY19saW1p/dCxkcHJfMS4wLGZf/YXV0byxoXzE2MDAs/cV9hdXRvLHdfMTYw/MC9yZWZlcnJhbF9s/b2dvcy91cy9pbnN1/cmFuY2UvZ2VpY28t/NQ",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/c_limit,dpr_1.0,f_auto,h_1600,q_auto,w_1600/referral_logos/us/insurance/geico-5",
+            "logo": true
+          },
+          "age": "July 10, 2025"
+        },
+        {
+          "title": "The Best Companies for High-Risk Car Insurance - ValuePenguin",
+          "url": "https://www.valuepenguin.com/high-risk-auto-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Average monthly rates for full coverage after an accident, after a DUI or with poor credit. Data from Quadrant Information Services. ... Geico has low rates and plenty of discounts.",
+          "page_age": "2025-08-13T21:49:40",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/high-risk-auto-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a high-risk-auto-insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/79KA1oc6F1h8Pa0hPUO1pRFh98K2d--jyBr5IfrHhn8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL29mZmljZXIt/dHJhZmZpYy12aW9s/YXRpb25fc3VlNTg2",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/officer-traffic-violation_sue586",
+            "logo": false
+          },
+          "age": "August 13, 2025"
+        },
+        {
+          "title": "Motorcycle Insurance Price for 20-Year-Olds - ValuePenguin",
+          "url": "https://www.valuepenguin.com/motorcycle-insurance-price-20-year-olds",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "This insurer&#x27;s rate is significantly cheaper than the average price for most riders this age and 29% cheaper than the most expensive company&#x27;s rate. Conversely, Geico&#x27;s motorcycle insurance costs $809 per year.",
+          "page_age": "2025-08-29T21:48:48",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/motorcycle-insurance-price-20-year-olds",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a motorcycle-insurance-price-20-year-olds"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/7iTsg5wvGBLK2qk6m7MXQCKSbc3crsrz19p44y_VS0A/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2F1dG8taW5z/dXJhbmNlL21vdG9y/Y3ljbGUtaW5zdXJh/bmNl",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/auto-insurance/motorcycle-insurance",
+            "logo": false
+          },
+          "age": "August 29, 2025"
+        },
+        {
+          "title": "Costco Insurance Review: Auto and Home - ValuePenguin",
+          "url": "https://www.valuepenguin.com/costco-insurance-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Costco car insurance is not cheap. A full coverage policy costs an average of $177 per month. If you want cheap car insurance, get rates from bigger companies like State Farm, Progressive and Geico.",
+          "page_age": "2025-07-08T19:31:04",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/costco-insurance-review",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a costco-insurance-review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Heps5W_o_RkhkQpA53wK-v3rg6w5zHsgKgI8s8n3NcQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvY19saW1p/dCxkcHJfMS4wLGZf/YXV0byxoXzE2MDAs/cV9hdXRvLHdfMTYw/MC9yZWZlcnJhbF9s/b2dvcy91cy9pbnN1/cmFuY2UvY29zdGNv/LTE",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/c_limit,dpr_1.0,f_auto,h_1600,q_auto,w_1600/referral_logos/us/insurance/costco-1",
+            "logo": true
+          },
+          "age": "July 8, 2025"
+        },
+        {
+          "title": "Police Stop More Than 32 Million Americans per Year for Traffic Violations",
+          "url": "https://www.valuepenguin.com/traffic-stops-auto-insurance-premiums",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Progressive, again, raised auto insurance premiums the most after a ticket. For moving violations, policyholders saw their rates double. Geico also increased its rates after a ticket by about 62%. Other large insurers treated drivers with one moving violation on their records the same as those who were caught speeding.",
+          "page_age": "2025-08-21T15:19:12",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/traffic-stops-auto-insurance-premiums",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a news  \u203a auto insurance  \u203a police stop more than 32 million americans per year for traffic violations"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/9uPcWNX2GXoBbp99nvq7COIsM_diLa1n_7E0gcz2ic0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL29mZmljZXIt/dHJhZmZpYy12aW9s/YXRpb25fZ2Rzamgz",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/officer-traffic-violation_gdsjh3",
+            "logo": false
+          },
+          "age": "August 21, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

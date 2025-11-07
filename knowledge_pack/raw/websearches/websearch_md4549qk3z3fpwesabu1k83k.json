@@ -1,0 +1,809 @@
+{
+  "websearch_id": "websearch_md4549qk3z3fpwesabu1k83k",
+  "search_id": "search_fdj8bvbpb3jzeoace0r4io0e",
+  "timestamp": "2025-11-07T12:26:13.163934",
+  "startedAt": "2025-11-07T12:26:13.163934",
+  "completedAt": "2025-11-07T12:26:15.237569",
+  "durationSeconds": 2.07,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"State Farm\" \"frame\" OR \"brick\" OR \"masonry\"",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"State Farm\" \"frame\" OR \"brick\" OR \"masonry\"",
+      "show_strict_warning": false,
+      "cleaned": "State Farm frame brick masonry",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "State Farm frame brick masonry"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "r/Insurance on Reddit: Insurance company won't believe me when I say my home construction is masonry",
+          "url": "https://www.reddit.com/r/Insurance/comments/1k1h5nl/insurance_company_wont_believe_me_when_i_say_my/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "I have a 2016 stucco on block, not frame. I bought it as a brand new spec home in a newer subdivision. All homes here are stucco on masonry like mine, no frame, as this is building code here (FL). Just found out State Farm has been charging me the higher rate for frame for all of those years.",
+          "page_age": "2025-04-17T21:50:59",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Insurance/comments/1k1h5nl/insurance_company_wont_believe_me_when_i_say_my/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/insurance  \u203a insurance company won't believe me when i say my home construction is masonry"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A5H_aQiEBuUODR0lNeU8iDfhrWUvO8oEmRGE_mcS_gM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVkZGl0c3RhdGlj/LmNvbS9pY29uLnBu/Zw",
+            "original": "https://www.redditstatic.com/icon.png",
+            "logo": true
+          },
+          "age": "April 17, 2025"
+        },
+        {
+          "title": "Crucial Home Construction Types for Insurance Purposes",
+          "url": "https://clovered.com/construction-type-for-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Masonry construction is generally better for home insurance purposes. In addition to withstanding fire and wind damage better than the wood in frame houses, bricks or concrete blocks are largely impervious to termite damage.",
+          "page_age": "2025-04-15T17:20:19",
+          "profile": {
+            "name": "Clovered",
+            "url": "https://clovered.com/construction-type-for-insurance/",
+            "long_name": "clovered.com",
+            "img": "https://imgs.search.brave.com/FMvsDfAYLtW0L_vkIDwl109FIUd01bit67bRxDQuYXk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDY2ZjEyMWY2/MDhiYTczNDdiZDFm/NTcyMDYwMGY5Zjgx/M2JhYTM2NmQ1NjA5/M2U3ZDlhYmEyODZl/MDQwYWVjOC9jbG92/ZXJlZC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "clovered.com",
+            "hostname": "clovered.com",
+            "favicon": "https://imgs.search.brave.com/FMvsDfAYLtW0L_vkIDwl109FIUd01bit67bRxDQuYXk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDY2ZjEyMWY2/MDhiYTczNDdiZDFm/NTcyMDYwMGY5Zjgx/M2JhYTM2NmQ1NjA5/M2U3ZDlhYmEyODZl/MDQwYWVjOC9jbG92/ZXJlZC5jb20v",
+            "path": "  \u203a articles  \u203a crucial home construction types for insurance purposes"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/101zGBi6Ys7btpmD09_XC5-eoBtpwmM4Pf4YR7pttnA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jbG92/ZXJlZC5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjEvMDgv/Q3J1Y2lhbC1Ib21l/LUNvbnN0cnVjdGlv/bi1UeXBlcy1mb3It/SW5zdXJhbmNlLVB1/cnBvc2VzLW1pbi53/ZWJw",
+            "original": "https://clovered.com/wp-content/uploads/2021/08/Crucial-Home-Construction-Types-for-Insurance-Purposes-min.webp",
+            "logo": false
+          },
+          "age": "April 15, 2025"
+        },
+        {
+          "title": "r/masonry on Reddit: How can you tell the difference between a structural brick building and a brick veneer?",
+          "url": "https://www.reddit.com/r/masonry/comments/1h2brx7/how_can_you_tell_the_difference_between_a/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Any building built before 1950 is almost certainly brick or brick and concrete block. ... Larger, taller buildings from the 19th and early 20th century may have an iron frame and have structural walls. There was a building partially collapsed around 2021-22, in Iowa or nearby state, where a building engineer had apparently assumed that a building with an iron inner frame did not have structural walls.",
+          "page_age": "2024-11-29T02:35:28",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/masonry/comments/1h2brx7/how_can_you_tell_the_difference_between_a/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/masonry  \u203a how can you tell the difference between a structural brick building and a brick veneer?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/uKk1IRPAXeqLbta0-LJ_XVjYtOAmyJ1txHgluHmtGS0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zaGFy/ZS5yZWRkLml0L3By/ZXZpZXcvcG9zdC8x/aDJicng3",
+            "original": "https://share.redd.it/preview/post/1h2brx7",
+            "logo": false
+          },
+          "age": "November 29, 2024"
+        },
+        {
+          "title": "Classifying Construction Materials for Builders Risk | US Assure",
+          "url": "https://usassure.com/resources/articles/classifying-6-construction-materials-for-builders-risk",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Frame construction* refers to structures built using combustible materials, like wood. Sometimes, builders mix frame materials with non-combustible or slow-burning materials. These can include masonry / brick veneer or metal cladding for exterior ...",
+          "page_age": "2025-06-13T09:53:03",
+          "profile": {
+            "name": "US Assure",
+            "url": "https://usassure.com/resources/articles/classifying-6-construction-materials-for-builders-risk",
+            "long_name": "usassure.com",
+            "img": "https://imgs.search.brave.com/VaOxAGibOVPdo_HELTk4_2SgKAuVbkLZ0ENGDEfZGas/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTcyMWI0YmRl/OGQzYTIxY2YyMmFm/NWM1ODRhNDRlZGQ2/YTkwOTQ5MzgwOTYy/NjdiYjlmNThmYWJj/MWIwNjcyOC91c2Fz/c3VyZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "usassure.com",
+            "hostname": "usassure.com",
+            "favicon": "https://imgs.search.brave.com/VaOxAGibOVPdo_HELTk4_2SgKAuVbkLZ0ENGDEfZGas/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTcyMWI0YmRl/OGQzYTIxY2YyMmFm/NWM1ODRhNDRlZGQ2/YTkwOTQ5MzgwOTYy/NjdiYjlmNThmYWJj/MWIwNjcyOC91c2Fz/c3VyZS5jb20v",
+            "path": "  \u203a home  \u203a resources  \u203a articles  \u203a classifying 6 construction materials for builders risk"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A_0nLKxQwMwMszM1G9LMR1Fh2XQKtfwIz0wpF0Xgv_s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91c2Fz/c3VyZS5jb20vbWVk/aWEveGpzajB6aGMv/Y29uc3RydWN0aW9u/LW1hdGVyaWFscy1i/bG9nLXRodW1ibmFp/bC5wbmc",
+            "original": "https://usassure.com/media/xjsj0zhc/construction-materials-blog-thumbnail.png",
+            "logo": false
+          },
+          "age": "June 13, 2025"
+        },
+        {
+          "title": "External Walls & Buildings Insurance | Compare the Market",
+          "url": "https://www.comparethemarket.com/home-insurance/content/external-walls/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Standard properties for insurance purposes have brick or stone walls, topped by a roof of tiles or slate. If your home is built from \u2018non-standard\u2019 materials (such as a timber frame, prefab housing or a thatched roof) you\u2019ll likely pay more for your buildings insurance.",
+          "page_age": "2025-01-31T00:00:00",
+          "profile": {
+            "name": "Compare the Market",
+            "url": "https://www.comparethemarket.com/home-insurance/content/external-walls/",
+            "long_name": "comparethemarket.com",
+            "img": "https://imgs.search.brave.com/XzfmlCabHSfXMRJWlymzyutSD0QBziRn0vBYRL6uNuE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNmI5Y2MwMzM2/ZTI1YWFlZmM3NzBi/NDAxY2MzZGFkYWJk/MDdhYWEwNDBjOTQz/ZWY0YzBiMTE5Mjli/OGFmNGUxMi93d3cu/Y29tcGFyZXRoZW1h/cmtldC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "comparethemarket.com",
+            "hostname": "www.comparethemarket.com",
+            "favicon": "https://imgs.search.brave.com/XzfmlCabHSfXMRJWlymzyutSD0QBziRn0vBYRL6uNuE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNmI5Y2MwMzM2/ZTI1YWFlZmM3NzBi/NDAxY2MzZGFkYWJk/MDdhYWEwNDBjOTQz/ZWY0YzBiMTE5Mjli/OGFmNGUxMi93d3cu/Y29tcGFyZXRoZW1h/cmtldC5jb20v",
+            "path": "  \u203a home  \u203a home insurance  \u203a content"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/o6n8pkysg3kpFLIccCI9aYTB6tL-U-rDI79B5SKg2jk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4y/LmNvbXBhcmV0aGVt/YXJrZXQuY29tL21h/cmtldC9jbXMvbG9n/b3MvY3RtLWxvZ28t/MzUweDQzcHgucG5n",
+            "original": "https://cdn2.comparethemarket.com/market/cms/logos/ctm-logo-350x43px.png",
+            "logo": true
+          },
+          "age": "January 31, 2025"
+        },
+        {
+          "title": "Joisted Masonry vs. Non-Combustible: Choose Right Construction",
+          "url": "https://www.apsmasonrycontracting.com/services/contractor/masonry/joisted/vs-non-combustible",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Joisted Masonry is a type of building construction with exterior walls of brick, concrete, concrete block, or stone. In contrast, Frame buildings are composed of combustible materials such as wood for their exterior walls, floors, and roofs.",
+          "page_age": "2025-05-02T20:43:48",
+          "profile": {
+            "name": "Apsmasonrycontracting",
+            "url": "https://www.apsmasonrycontracting.com/services/contractor/masonry/joisted/vs-non-combustible",
+            "long_name": "apsmasonrycontracting.com",
+            "img": "https://imgs.search.brave.com/59i8zuTLXwr4P2SSVdi4YofCrluZA6pFPNO88S0PBro/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWM3YjUwZjk5/MDg4NTIxMWFiMGRm/M2JkODliM2VlYzFl/OTQ2M2RlMWZlY2U4/ZThkMjg4MDcwOWU3/ZGI4NmM4MC93d3cu/YXBzbWFzb25yeWNv/bnRyYWN0aW5nLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "apsmasonrycontracting.com",
+            "hostname": "www.apsmasonrycontracting.com",
+            "favicon": "https://imgs.search.brave.com/59i8zuTLXwr4P2SSVdi4YofCrluZA6pFPNO88S0PBro/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWM3YjUwZjk5/MDg4NTIxMWFiMGRm/M2JkODliM2VlYzFl/OTQ2M2RlMWZlY2U4/ZThkMjg4MDcwOWU3/ZGI4NmM4MC93d3cu/YXBzbWFzb25yeWNv/bnRyYWN0aW5nLmNv/bS8",
+            "path": "  \u203a masonry services  \u203a concrete services  \u203a home remodeling services  \u203a general contractors  \u203a contact us"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/_2UtuRrOF6lg-f0JSdJj5_MzPFYQvu2RVbhKYg6jOx0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YXBzbWFzb25yeWNv/bnRyYWN0aW5nLmNv/bS9ocy1mcy9odWJm/cy9Db2xvciUyMEFQ/UyUyME1hc29ucnkl/MjBDb250cmFjdGlu/ZyUyMExvZ28ucG5n/P3dpZHRoPTM1MCZo/ZWlnaHQ9MzUwJm5h/bWU9Q29sb3IlMjBB/UFMlMjBNYXNvbnJ5/JTIwQ29udHJhY3Rp/bmclMjBMb2dvLnBu/Zw",
+            "original": "https://www.apsmasonrycontracting.com/hs-fs/hubfs/Color%20APS%20Masonry%20Contracting%20Logo.png?width=350&height=350&name=Color%20APS%20Masonry%20Contracting%20Logo.png",
+            "logo": true
+          },
+          "age": "May 2, 2025"
+        },
+        {
+          "title": "Types of Masonry For Commercial Construction - Leidal and Hart",
+          "url": "https://www.leidalandhart.com/types-of-masonry-for-commercial-building-construction-explained/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Explore essential masonry types for commercial buildings: solid, cavity, composite walls, brick, stone and concrete. Learn modern construction techniques.",
+          "page_age": "2025-01-25T17:07:25",
+          "profile": {
+            "name": "Leidal & Hart",
+            "url": "https://www.leidalandhart.com/types-of-masonry-for-commercial-building-construction-explained/",
+            "long_name": "leidalandhart.com",
+            "img": "https://imgs.search.brave.com/tTne9IVABj1XJLnQ1ut9tfYsarFOLKMyaRDN9v5x3IM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjFlMWJmNmJj/ZDhjYzI0YWNjYjBh/NmI1NzQ2MGQxYWYy/MjUwYzFhMWMxYWVj/ZjY2MjNiMzJlN2Iy/ZTYxNWEzNS93d3cu/bGVpZGFsYW5kaGFy/dC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "leidalandhart.com",
+            "hostname": "www.leidalandhart.com",
+            "favicon": "https://imgs.search.brave.com/tTne9IVABj1XJLnQ1ut9tfYsarFOLKMyaRDN9v5x3IM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjFlMWJmNmJj/ZDhjYzI0YWNjYjBh/NmI1NzQ2MGQxYWYy/MjUwYzFhMWMxYWVj/ZjY2MjNiMzJlN2Iy/ZTYxNWEzNS93d3cu/bGVpZGFsYW5kaGFy/dC5jb20v",
+            "path": "  \u203a home  \u203a types of masonry construction for commercial buildings explained"
+          },
+          "age": "January 25, 2025"
+        },
+        {
+          "title": "Joisted Masonry: Construction Guide",
+          "url": "https://www.apsmasonrycontracting.com/services/contractor/masonry/joisted",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Evaluation of joisted masonry alongside other construction classes uncovers significant differences and parallels. For instance, joisted masonry construction utilizes materials such as brick, stone, or concrete for load-bearing walls, resulting ...",
+          "page_age": "2025-02-19T12:54:22",
+          "profile": {
+            "name": "Apsmasonrycontracting",
+            "url": "https://www.apsmasonrycontracting.com/services/contractor/masonry/joisted",
+            "long_name": "apsmasonrycontracting.com",
+            "img": "https://imgs.search.brave.com/59i8zuTLXwr4P2SSVdi4YofCrluZA6pFPNO88S0PBro/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWM3YjUwZjk5/MDg4NTIxMWFiMGRm/M2JkODliM2VlYzFl/OTQ2M2RlMWZlY2U4/ZThkMjg4MDcwOWU3/ZGI4NmM4MC93d3cu/YXBzbWFzb25yeWNv/bnRyYWN0aW5nLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "apsmasonrycontracting.com",
+            "hostname": "www.apsmasonrycontracting.com",
+            "favicon": "https://imgs.search.brave.com/59i8zuTLXwr4P2SSVdi4YofCrluZA6pFPNO88S0PBro/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWM3YjUwZjk5/MDg4NTIxMWFiMGRm/M2JkODliM2VlYzFl/OTQ2M2RlMWZlY2U4/ZThkMjg4MDcwOWU3/ZGI4NmM4MC93d3cu/YXBzbWFzb25yeWNv/bnRyYWN0aW5nLmNv/bS8",
+            "path": "  \u203a masonry services  \u203a concrete services  \u203a home remodeling services  \u203a general contractors  \u203a contact us"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/_2UtuRrOF6lg-f0JSdJj5_MzPFYQvu2RVbhKYg6jOx0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YXBzbWFzb25yeWNv/bnRyYWN0aW5nLmNv/bS9ocy1mcy9odWJm/cy9Db2xvciUyMEFQ/UyUyME1hc29ucnkl/MjBDb250cmFjdGlu/ZyUyMExvZ28ucG5n/P3dpZHRoPTM1MCZo/ZWlnaHQ9MzUwJm5h/bWU9Q29sb3IlMjBB/UFMlMjBNYXNvbnJ5/JTIwQ29udHJhY3Rp/bmclMjBMb2dvLnBu/Zw",
+            "original": "https://www.apsmasonrycontracting.com/hs-fs/hubfs/Color%20APS%20Masonry%20Contracting%20Logo.png?width=350&height=350&name=Color%20APS%20Masonry%20Contracting%20Logo.png",
+            "logo": true
+          },
+          "age": "February 19, 2025"
+        },
+        {
+          "title": "BRICK VENEER: Why You Should Consider This Great Homebuilding Option",
+          "url": "https://baileylineroad.com/brick-veneer-a-great-homebuilding-option/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Insulation is installed within the frame, with drywall or other finished surfaces created on the interior face as usual. The first thing about brick veneer is that it retains its good looks longer and with far less maintenance than any other exterior building material.",
+          "page_age": "2024-11-11T20:39:43",
+          "profile": {
+            "name": "Baileylineroad",
+            "url": "https://baileylineroad.com/brick-veneer-a-great-homebuilding-option/",
+            "long_name": "baileylineroad.com",
+            "img": "https://imgs.search.brave.com/iWaI1mxOoTUr4X4VurfcopfBqx9wmQQ1x2abXx7MZHo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDJjYjg5NTVm/Nzc4MjlkZTJlYmM0/Zjg0Y2IwMDJmNWFl/NmFkMDdjNTI5YjFm/MjZlN2M2OTI4NmU5/OGE2YTBkZi9iYWls/ZXlsaW5lcm9hZC5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "baileylineroad.com",
+            "hostname": "baileylineroad.com",
+            "favicon": "https://imgs.search.brave.com/iWaI1mxOoTUr4X4VurfcopfBqx9wmQQ1x2abXx7MZHo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDJjYjg5NTVm/Nzc4MjlkZTJlYmM0/Zjg0Y2IwMDJmNWFl/NmFkMDdjNTI5YjFm/MjZlN2M2OTI4NmU5/OGE2YTBkZi9iYWls/ZXlsaW5lcm9hZC5j/b20v",
+            "path": "  \u203a home  \u203a home exteriors  \u203a brick veneer: why you should consider this great homebuilding option"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/11_-M7yalckY5WxDZ23n7-K0YeSeZlPhCZKSHPvkc4Y/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9iYWls/ZXlsaW5lcm9hZC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTgvMDUvd29ya3No/b3BfYnJpY2tzX25v/LXRlZXRoLmpwZw",
+            "original": "https://baileylineroad.com/wp-content/uploads/2018/05/workshop_bricks_no-teeth.jpg",
+            "logo": false
+          },
+          "age": "November 11, 2024"
+        },
+        {
+          "title": "Concrete Block Vs Engineered Wood Frame | ICI Homes - Florida Lifestyles",
+          "url": "https://blog.icihomes.com/2010/03/19/concrete-block-vs-engineered-wood-frame/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The other areas in the state generally build CMU homes even though the majority of homes with a second floor are constructed out of engineered wood frame construction. In my view, both methods under discussion comply fully with current building standards, which mandate that structures be capable of withstanding winds up to 120 mph. This compliance suggests that either choice could be considered acceptable. However, the preference for Concrete Masonry Units (CMU) by some individuals is based on the perception of increased safety during a hurricane.",
+          "page_age": "2025-05-13T20:33:25",
+          "profile": {
+            "name": "ICI Homes",
+            "url": "https://blog.icihomes.com/2010/03/19/concrete-block-vs-engineered-wood-frame/",
+            "long_name": "blog.icihomes.com",
+            "img": "https://imgs.search.brave.com/YR9kS4PgNNL92KD2-RUSXowZQXzo8mChZ-P8-YYrabw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWVjZjUyZmQ1/ZTM0NDBiOWQwODkz/OGQyZGMxMzcxZjQy/OWFhNTZlMzJkN2M2/ZWI5NDcyMzQzMWQy/MjQxZWYxZS9ibG9n/LmljaWhvbWVzLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "blog.icihomes.com",
+            "hostname": "blog.icihomes.com",
+            "favicon": "https://imgs.search.brave.com/YR9kS4PgNNL92KD2-RUSXowZQXzo8mChZ-P8-YYrabw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWVjZjUyZmQ1/ZTM0NDBiOWQwODkz/OGQyZGMxMzcxZjQy/OWFhNTZlMzJkN2M2/ZWI5NDcyMzQzMWQy/MjQxZWYxZS9ibG9n/LmljaWhvbWVzLmNv/bS8",
+            "path": "\u203a 2010  \u203a 03  \u203a 19  \u203a concrete-block-vs-engineered-wood-frame"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A9-YV2xHuYbsrltBYp2O0n9vK9TkRX16LBdOLhPr8hc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9ibG9n/LmljaWhvbWVzLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAx/MC8wMy9Db25jcmV0/ZS1CbG9jay12cy1F/bmdpbmVlcmVkLVdv/b2QtRnJhbWUuanBn",
+            "original": "https://blog.icihomes.com/wp-content/uploads/2010/03/Concrete-Block-vs-Engineered-Wood-Frame.jpg",
+            "logo": false
+          },
+          "age": "May 13, 2025"
+        },
+        {
+          "title": "Easy Ways to Determine a Building's Construction Type - wikiHow",
+          "url": "https://www.wikihow.com/Determine-a-Building's-Construction-Type",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Two variations on frame construction don&#x27;t change the construction class: Masonry veneer (brick veneer)- Masonry veneer is thin layers of brick, stone, or stucco, used for appearance purposes rather than structural support.",
+          "page_age": "2025-04-18T00:00:00",
+          "profile": {
+            "name": "Wikihow",
+            "url": "https://www.wikihow.com/Determine-a-Building's-Construction-Type",
+            "long_name": "wikihow.com",
+            "img": "https://imgs.search.brave.com/asn--RxOxUDkMuyjsFGktAbHRs8rF0JA7mvC9skkqJk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDY0NmNiNmZm/NzRhYzg3N2NiYjZj/YmQ2MWMwZGQ0YjVj/NGEzZDdlMTBiZmUw/MGExNWMyMmY0YmJi/NGU5NmFkNi93d3cu/d2lraWhvdy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "video",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "wikihow.com",
+            "hostname": "www.wikihow.com",
+            "favicon": "https://imgs.search.brave.com/asn--RxOxUDkMuyjsFGktAbHRs8rF0JA7mvC9skkqJk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDY0NmNiNmZm/NzRhYzg3N2NiYjZj/YmQ2MWMwZGQ0YjVj/NGEzZDdlMTBiZmUw/MGExNWMyMmY0YmJi/NGU5NmFkNi93d3cu/d2lraWhvdy5jb20v",
+            "path": "  \u203a home and garden  \u203a yard and outdoors  \u203a outdoor buildings  \u203a easy ways to determine a building's construction type - wikihow"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/PaJxnACdjllLGmMiY5PHABh6xOsgd0kMg6xKQXqcQYM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/d2lraWhvdy5jb20v/aW1hZ2VzL3RodW1i/L2YvZjcvRGV0ZXJt/aW5lLWEtQnVpbGRp/bmclMjdzLUNvbnN0/cnVjdGlvbi1UeXBl/LVN0ZXAtMzEtVmVy/c2lvbi0yLmpwZy9h/aWQ3MDY1MzAtdjQt/MTIwMHB4LURldGVy/bWluZS1hLUJ1aWxk/aW5nJTI3cy1Db25z/dHJ1Y3Rpb24tVHlw/ZS1TdGVwLTMxLVZl/cnNpb24tMi5qcGc",
+            "original": "https://www.wikihow.com/images/thumb/f/f7/Determine-a-Building%27s-Construction-Type-Step-31-Version-2.jpg/aid706530-v4-1200px-Determine-a-Building%27s-Construction-Type-Step-31-Version-2.jpg",
+            "logo": false
+          },
+          "age": "April 18, 2025"
+        },
+        {
+          "title": "r/Construction on Reddit: Brick Masonry with Door Frame Installation | Ongoing House Construction Site Vie",
+          "url": "https://www.reddit.com/r/Construction/comments/1oesaq7/brick_masonry_with_door_frame_installation/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Are these composite masonry interior walls? The header courses make me think that\u2019s the case. If so, the homeowner is going to regret missing out on the R-value &amp; sound dampening that batt insulation provides. I\u2019ve never in my career or life as a 5th generation bricklayer seen anything like this. Thanks for sharing. ... India makes their own structural and sound deadening designs. Sometimes it works, sometimes it collapses. What type of home/frame construction method is this?",
+          "page_age": "2025-10-24T08:30:40",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Construction/comments/1oesaq7/brick_masonry_with_door_frame_installation/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/construction  \u203a brick masonry with door frame installation | ongoing house construction site vie"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/6i9l5tT71-8PGatHHYDLCXAKMsL6S_9HpeVJOJ8jE04/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pLnJl/ZGQuaXQvYnJpY2st/bWFzb25yeS13aXRo/LWRvb3ItZnJhbWUt/aW5zdGFsbGF0aW9u/LW9uZ29pbmctaG91/c2UtdjAtY2VqZDA3/ajd0MHhmMS5qcGc_/d2lkdGg9MTA4MiZm/b3JtYXQ9cGpwZyZh/dXRvPXdlYnAmcz03/YTk4ZDk0OTFlZGFh/ZDM0OTk5MDM3MjVj/OWNiOGQ1MWU5OTAw/NTY1",
+            "original": "https://i.redd.it/brick-masonry-with-door-frame-installation-ongoing-house-v0-cejd07j7t0xf1.jpg?width=1082&format=pjpg&auto=webp&s=7a98d9491edaad3499903725c9cb8d51e9900565",
+            "logo": false
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "How to identify Property Construction Type: Solid Wall, Cavity Wall or Timber- Framed - Marwood Surveyors",
+          "url": "https://marwoodsurveyors.com/blog/how-to-identify-property-construction-type-solid-wall-cavity-wall-or-timber-framed/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "When buying property, it is essential to understand its construction type. This knowledge can impact everything from Insulation and energy efficiency to future renovations and repairs. In many cases you may not need to rely on an expert to identify whether a building is constructed from solid brick, cavity Brick or timber frame; you can...",
+          "page_age": "2024-11-27T11:53:40",
+          "profile": {
+            "name": "Marwood Surveyors",
+            "url": "https://marwoodsurveyors.com/blog/how-to-identify-property-construction-type-solid-wall-cavity-wall-or-timber-framed/",
+            "long_name": "marwoodsurveyors.com",
+            "img": "https://imgs.search.brave.com/W_h3cptmD_qI6Y08e9R1FxaDYtKR1_VOtpI7O8_-yuQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODNhN2VkNTA4/ODZiY2RjYmVkYmUz/Yzc3MGEwOGVkNTQ1/YzBjMmM2NjAwMmNh/MGJlNmZjMjcwYTU2/Y2RhNWU2NS9tYXJ3/b29kc3VydmV5b3Jz/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "marwoodsurveyors.com",
+            "hostname": "marwoodsurveyors.com",
+            "favicon": "https://imgs.search.brave.com/W_h3cptmD_qI6Y08e9R1FxaDYtKR1_VOtpI7O8_-yuQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODNhN2VkNTA4/ODZiY2RjYmVkYmUz/Yzc3MGEwOGVkNTQ1/YzBjMmM2NjAwMmNh/MGJlNmZjMjcwYTU2/Y2RhNWU2NS9tYXJ3/b29kc3VydmV5b3Jz/LmNvbS8",
+            "path": "  \u203a home  \u203a how to identify property construction type: solid wall, cavity wall or timber- framed"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/IZ9y-CimuOx6X80WCTle3kqYnk7xHRAVS7gmDodzmpE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9tYXJ3/b29kc3VydmV5b3Jz/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNC8xMS9zaHV0/dGVyc3RvY2tfMTkw/NDg0MzUxNS1zY2Fs/ZWQuanBn",
+            "original": "https://marwoodsurveyors.com/wp-content/uploads/2024/11/shutterstock_1904843515-scaled.jpg",
+            "logo": false
+          },
+          "age": "November 27, 2024"
+        },
+        {
+          "title": "Masonry or frame construction \u2013 which is the more expensive home to insure?",
+          "url": "https://www.chrinco.com/frame-construction-masonry-construction",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Masonry construction homes have a lesser risk of Wood Destroying Organism, such as termites, weakening the structural integrity of the home. It\u2019s only natural for insurance companies to price for these additional layers of risk when determining the insurance premium. Another interesting fact is that frame construction homes have insurance premiums that increase at an increasing rate when compared to masonry construction homes.",
+          "page_age": "2025-02-03T14:41:58",
+          "profile": {
+            "name": "Chrinco",
+            "url": "https://www.chrinco.com/frame-construction-masonry-construction",
+            "long_name": "chrinco.com",
+            "img": "https://imgs.search.brave.com/H4k_qGYNYcRuzkbiXMHr5lu1IWaGd4u9nc68nqLJH5o/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTVmNGFjYTk1/YzUxNzFkZTEyOTg5/YTU3NDcyZDUyNGFm/ZDRhMWEzZjc5YjBk/NjMwYjI5YjczOGM5/ZmM0MTkwZC93d3cu/Y2hyaW5jby5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "chrinco.com",
+            "hostname": "www.chrinco.com",
+            "favicon": "https://imgs.search.brave.com/H4k_qGYNYcRuzkbiXMHr5lu1IWaGd4u9nc68nqLJH5o/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTVmNGFjYTk1/YzUxNzFkZTEyOTg5/YTU3NDcyZDUyNGFm/ZDRhMWEzZjc5YjBk/NjMwYjI5YjczOGM5/ZmM0MTkwZC93d3cu/Y2hyaW5jby5jb20v",
+            "path": "\u203a frame-construction-masonry-construction"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/jzEIBRwbwfEGYSB7mgq1cJAWq0WlzvXiexqrRaMDgeo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pcnAu/Y2RuLXdlYnNpdGUu/Y29tL2QyODU3M2M5/L2RtczNyZXAvbXVs/dGkvRnJhbWUtQ29u/c3RydWN0aW9uLmpw/Zw",
+            "original": "https://irp.cdn-website.com/d28573c9/dms3rep/multi/Frame-Construction.jpg",
+            "logo": false
+          },
+          "age": "February 3, 2025"
+        },
+        {
+          "title": "Tyler Peschong State Farm agency moves into Brick House building on South Center Street | News, Sports, Jobs - Times Republican",
+          "url": "https://www.timesrepublican.com/news/todays-news/2025/04/tyler-peschong-state-farm-agency-moves-into-brick-house-building-on-south-center-street/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Since Class of 2008 MHS graduate Tyler Peschong returned to his hometown in 2020 and took over the State Farm insurance agency previously run by his father Mike about 2 \u00bd years back, he\u2019s pursued both personal and professional growth.",
+          "page_age": "2025-04-08T00:00:00",
+          "profile": {
+            "name": "Times Republican",
+            "url": "https://www.timesrepublican.com/news/todays-news/2025/04/tyler-peschong-state-farm-agency-moves-into-brick-house-building-on-south-center-street/",
+            "long_name": "timesrepublican.com",
+            "img": "https://imgs.search.brave.com/X2jN8O501ROuBCeLH8DmmSQc2KPrIHYMZ0QJi0GQnc4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYWQ5YzhjZTIx/OGJkYTBmZTJjNDcz/YzUwOGUwMDI5MDg2/YjY0NWZhNGYxYmMy/NmY0MmI1NzBjN2Vm/Nzc5NGRlNC93d3cu/dGltZXNyZXB1Ymxp/Y2FuLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "timesrepublican.com",
+            "hostname": "www.timesrepublican.com",
+            "favicon": "https://imgs.search.brave.com/X2jN8O501ROuBCeLH8DmmSQc2KPrIHYMZ0QJi0GQnc4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYWQ5YzhjZTIx/OGJkYTBmZTJjNDcz/YzUwOGUwMDI5MDg2/YjY0NWZhNGYxYmMy/NmY0MmI1NzBjN2Vm/Nzc5NGRlNC93d3cu/dGltZXNyZXB1Ymxp/Y2FuLmNvbS8",
+            "path": "\u203a news  \u203a todays-news  \u203a 2025  \u203a 04  \u203a tyler-peschong-state-farm-agency-moves-into-brick-house-building-on-south-center-street"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ozcBfh25DZTtCgXDxV1Ot0YeRoYNwCIQYVY9GnVg1Ok/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dGltZXNyZXB1Ymxp/Y2FuLmNvbS9uZXdz/L3RvZGF5cy1uZXdz/LzIwMjUvMDQvdHls/ZXItcGVzY2hvbmct/c3RhdGUtZmFybS1h/Z2VuY3ktbW92ZXMt/aW50by1icmljay1o/b3VzZS1idWlsZGlu/Zy1vbi1zb3V0aC1j/ZW50ZXItc3RyZWV0/Lw",
+            "original": "https://www.timesrepublican.com/news/todays-news/2025/04/tyler-peschong-state-farm-agency-moves-into-brick-house-building-on-south-center-street/",
+            "logo": false
+          },
+          "age": "April 8, 2025"
+        },
+        {
+          "title": "Non-combustible vs Joisted Masonry - Key Differences Explained",
+          "url": "https://www.leidalandhart.com/non-combustible-vs-joisted-masonry/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The two major types are masonry non-combustible and steel frame construction. Combustible buildings use materials that can ignite and burn, while non-combustible buildings use materials that do not ignite or burn. No, masonry materials like brick, stone, and concrete are non-combustible.",
+          "page_age": "2024-12-18T17:59:25",
+          "profile": {
+            "name": "Leidal & Hart",
+            "url": "https://www.leidalandhart.com/non-combustible-vs-joisted-masonry/",
+            "long_name": "leidalandhart.com",
+            "img": "https://imgs.search.brave.com/tTne9IVABj1XJLnQ1ut9tfYsarFOLKMyaRDN9v5x3IM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjFlMWJmNmJj/ZDhjYzI0YWNjYjBh/NmI1NzQ2MGQxYWYy/MjUwYzFhMWMxYWVj/ZjY2MjNiMzJlN2Iy/ZTYxNWEzNS93d3cu/bGVpZGFsYW5kaGFy/dC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "leidalandhart.com",
+            "hostname": "www.leidalandhart.com",
+            "favicon": "https://imgs.search.brave.com/tTne9IVABj1XJLnQ1ut9tfYsarFOLKMyaRDN9v5x3IM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjFlMWJmNmJj/ZDhjYzI0YWNjYjBh/NmI1NzQ2MGQxYWYy/MjUwYzFhMWMxYWVj/ZjY2MjNiMzJlN2Iy/ZTYxNWEzNS93d3cu/bGVpZGFsYW5kaGFy/dC5jb20v",
+            "path": "  \u203a home  \u203a non-combustible vs joisted masonry - understanding the differences"
+          },
+          "age": "December 18, 2024"
+        },
+        {
+          "title": "A Brief Overview of ISO Construction Types",
+          "url": "https://mykukun.com/blog/iso-construction-types/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Understanding ISO construction types is more than an academic exercise \u2014 it\u2019s a practical necessity for property owners, builders, real estate professionals, and insurance underwriters. Knowing whether a building is ISO 1 frame, ISO 2 joisted ...",
+          "page_age": "2025-07-10T19:23:57",
+          "profile": {
+            "name": "KUKUN",
+            "url": "https://mykukun.com/blog/iso-construction-types/",
+            "long_name": "mykukun.com",
+            "img": "https://imgs.search.brave.com/j8MWVHNm8oXrtqGY4sim7at6VUaeiLhxJYhbwgEo3TA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTQyZmVmNTI1/NTIzNDYzN2JiMzdk/NWUyMGFjZGYyMmEz/NTljMTM2ZWE0YmYx/Y2Q2MDU1ZDRlODgy/ZWJhMDk4Zi9teWt1/a3VuLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "mykukun.com",
+            "hostname": "mykukun.com",
+            "favicon": "https://imgs.search.brave.com/j8MWVHNm8oXrtqGY4sim7at6VUaeiLhxJYhbwgEo3TA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTQyZmVmNTI1/NTIzNDYzN2JiMzdk/NWUyMGFjZGYyMmEz/NTljMTM2ZWE0YmYx/Y2Q2MDU1ZDRlODgy/ZWJhMDk4Zi9teWt1/a3VuLmNvbS8",
+            "path": "  \u203a kukun blog  \u203a guides  \u203a construction guides  \u203a an overview of iso construction types"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/xQG9xebmm8sm7Az4rJ70r4TyGp5scoM5ko9InyAwSsI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50Lm15a3VrdW4u/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI1LzA1LzA5MTcw/NjA3L0hvdXNlLWJs/dWVwcmludC1zY2Fs/ZWQuanBn",
+            "original": "https://content.mykukun.com/wp-content/uploads/2025/05/09170607/House-blueprint-scaled.jpg",
+            "logo": false
+          },
+          "age": "July 10, 2025"
+        },
+        {
+          "title": "Property Construction Materials and the Impacts to Insurance Costs - InsNerds.com",
+          "url": "https://insnerds.com/insights/property-construction-materials-and-the-impacts-to-insurance-costs",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Masonry construction has exterior walls made of non-combustible materials. It is a highly durable form of construction and is the building of structures from individual units laid in and bound together by mortar.",
+          "page_age": "2025-01-03T02:26:54",
+          "profile": {
+            "name": "Insnerds",
+            "url": "https://insnerds.com/insights/property-construction-materials-and-the-impacts-to-insurance-costs",
+            "long_name": "insnerds.com",
+            "img": "https://imgs.search.brave.com/L8WGwJi6g_OuOA9SJxW10zALuhINma1X9Qr869R1Or8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDVmYTlmOTc0/Y2U4ZDNjMWIyM2Nj/MWVlYmNiNWE0MGE2/NTZiNTQxZmY0NzRi/M2U1ODI4ZmZhNjAy/NmFjMWUyNC9pbnNu/ZXJkcy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insnerds.com",
+            "hostname": "insnerds.com",
+            "favicon": "https://imgs.search.brave.com/L8WGwJi6g_OuOA9SJxW10zALuhINma1X9Qr869R1Or8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDVmYTlmOTc0/Y2U4ZDNjMWIyM2Nj/MWVlYmNiNWE0MGE2/NTZiNTQxZmY0NzRi/M2U1ODI4ZmZhNjAy/NmFjMWUyNC9pbnNu/ZXJkcy5jb20v",
+            "path": "\u203a insights  \u203a property-construction-materials-and-the-impacts-to-insurance-costs"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Y040iq07yLHfqsFpp6YSCDea4txPaqfo3eQ5jSnedno/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly80NzUz/Mjc5OS5mczEuaHVi/c3BvdHVzZXJjb250/ZW50LW5hMS5uZXQv/aHViZnMvNDc1MzI3/OTkvSW1wb3J0ZWRf/QmxvZ19NZWRpYS9M/YXJyeS1OaWNob2xz/b24tMTAweDEwMC0x/LmpwZw",
+            "original": "https://47532799.fs1.hubspotusercontent-na1.net/hubfs/47532799/Imported_Blog_Media/Larry-Nicholson-100x100-1.jpg",
+            "logo": false
+          },
+          "age": "January 3, 2025"
+        },
+        {
+          "title": "Brick Vs Steel Frames \u2014 Australian Steel Framing",
+          "url": "https://www.australiansteelframing.com.au/blog/brick-vs-steel-frames",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The steel frames are used as the building&#x27;s structural support, and the brick veneer is attached to the outside of the steel frame. This construction method can be more cost-effective and efficient than traditional masonry walls.",
+          "page_age": "2025-05-02T00:30:39",
+          "profile": {
+            "name": "5",
+            "url": "https://www.australiansteelframing.com.au/blog/brick-vs-steel-frames",
+            "long_name": "australiansteelframing.com.au",
+            "img": "https://imgs.search.brave.com/olpYx6YoMBTcysPgptxDFi40HcqUUNtsF20b86yIjZ0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDI0ZDM1OWNl/MjJhZGFkN2RlMGZi/MTViNWQ2M2NkZTA4/MmM5YmFjOWVmN2M4/ZTg4NmRkNjI5NWIy/YzNjOTMzNS93d3cu/YXVzdHJhbGlhbnN0/ZWVsZnJhbWluZy5j/b20uYXUv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "australiansteelframing.com.au",
+            "hostname": "www.australiansteelframing.com.au",
+            "favicon": "https://imgs.search.brave.com/olpYx6YoMBTcysPgptxDFi40HcqUUNtsF20b86yIjZ0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDI0ZDM1OWNl/MjJhZGFkN2RlMGZi/MTViNWQ2M2NkZTA4/MmM5YmFjOWVmN2M4/ZTg4NmRkNjI5NWIy/YzNjOTMzNS93d3cu/YXVzdHJhbGlhbnN0/ZWVsZnJhbWluZy5j/b20uYXUv",
+            "path": "\u203a blog  \u203a brick-vs-steel-frames"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/RR-H6DVgqpeDkMOvJzdw-2zeHAnT5HMUserCTsNFMKs/rs:fit:200:200:1:0/g:ce/aHR0cDovL3N0YXRp/YzEuc3F1YXJlc3Bh/Y2UuY29tL3N0YXRp/Yy81YzBkOTZmNGY3/OTM5MjJmYjdhMGMy/NzgvNjBiNWFhMjA1/ODhkNTUxODQ4ZGI3/NTQ2LzY0NDhjMGNm/Mjk3ZTA4NzRhZjhm/ZTVjNS8xNzQ2MTQ1/ODM5NTQ3L2RvdWJs/ZS12cy1wcmVmb3Jh/dGVkLWJyaWNrLmpw/Zz9mb3JtYXQ9MTUw/MHc",
+            "original": "http://static1.squarespace.com/static/5c0d96f4f793922fb7a0c278/60b5aa20588d551848db7546/6448c0cf297e0874af8fe5c5/1746145839547/double-vs-preforated-brick.jpg?format=1500w",
+            "logo": false
+          },
+          "age": "May 2, 2025"
+        },
+        {
+          "title": "State Farm Downtown Building - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/State_Farm_Downtown_Building",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The original south portion of the tower features a large sign on its west facade that reads: &quot;State Farm Insurance&quot;. The sign&#x27;s letters stand five and a half feet tall and since February 18, 1935 the sign has been electrically illuminated. The steel-framed building has facades clad in light brown brick and features curtain walls that hang from the frame.",
+          "page_age": "2025-07-25T00:24:51",
+          "profile": {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/State_Farm_Downtown_Building",
+            "long_name": "en.wikipedia.org",
+            "img": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "deep_results": {
+            "buttons": [
+              {
+                "type": "button_result",
+                "title": "History",
+                "url": "https://en.wikipedia.org/wiki/State_Farm_Downtown_Building#History"
+              },
+              {
+                "type": "button_result",
+                "title": "Architecture",
+                "url": "https://en.wikipedia.org/wiki/State_Farm_Downtown_Building#Architecture"
+              },
+              {
+                "type": "button_result",
+                "title": "Historic significance",
+                "url": "https://en.wikipedia.org/wiki/State_Farm_Downtown_Building#Historic_significance"
+              }
+            ]
+          },
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "en.wikipedia.org",
+            "hostname": "en.wikipedia.org",
+            "favicon": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw",
+            "path": "\u203a wiki  \u203a State_Farm_Downtown_Building"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/LoRYo8Kbrw47cCPi1CmQxUiq-ZSbcrl3i6vOYrNtQ_8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzZmL0Jsb29taW5n/dG9uX0lsX1N0YXRl/X0Zhcm1fQmxkZzEu/SlBH",
+            "original": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Bloomington_Il_State_Farm_Bldg1.JPG",
+            "logo": false
+          },
+          "age": "July 25, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

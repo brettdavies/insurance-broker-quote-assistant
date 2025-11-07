@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_fgosc76lld95a9te4maa14fy",
+  "search_id": "search_gwmvpixdqc92wjgw0izr2e1c",
+  "timestamp": "2025-11-07T12:32:10.978508",
+  "startedAt": "2025-11-07T12:32:10.978508",
+  "completedAt": "2025-11-07T12:32:12.821326",
+  "durationSeconds": 1.84,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:tdi.texas.gov minimum auto insurance",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:tdi.texas.gov minimum auto insurance",
+      "show_strict_warning": false,
+      "cleaned": "minimum auto insurance",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "minimum auto insurance",
+        "sites": [
+          "tdi.texas.gov"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

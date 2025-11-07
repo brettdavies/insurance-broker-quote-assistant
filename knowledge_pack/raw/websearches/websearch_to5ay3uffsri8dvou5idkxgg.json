@@ -1,0 +1,803 @@
+{
+  "websearch_id": "websearch_to5ay3uffsri8dvou5idkxgg",
+  "search_id": "search_j9u9gol85p2nirs96z1gtngk",
+  "timestamp": "2025-11-07T12:29:13.218712",
+  "startedAt": "2025-11-07T12:29:13.218712",
+  "completedAt": "2025-11-07T12:29:15.133589",
+  "durationSeconds": 1.91,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:valuepenguin.com average insurance [state]",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:valuepenguin.com average insurance [state]",
+      "show_strict_warning": false,
+      "cleaned": "average insurance [state]",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "average insurance [state]",
+        "sites": [
+          "valuepenguin.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Car Insurance Rates by State: 2025 Comparison - ValuePenguin",
+          "url": "https://www.valuepenguin.com/car-insurance-by-state",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The average cost of car insurance ranges from $103 per month in Maine to $286 per month in Nevada for full coverage. That&#x27;s a difference of about $183 per month, or $2,196 per year, depending on the state where you live.",
+          "page_age": "2025-08-27T13:08:24",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/car-insurance-by-state",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a car-insurance-by-state"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/qJRVGe4nrRCB_hlQTffpCwE8RFBnXAaVIYEdIkf3_Qo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL3lvdW5nLW1h/bGUtZHJpdmVyX3Az/Y20ycQ",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/young-male-driver_p3cm2q",
+            "logo": false
+          },
+          "age": "August 27, 2025"
+        },
+        {
+          "title": "Average Cost of Car Insurance (2025)",
+          "url": "https://www.valuepenguin.com/average-cost-of-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The average cost of car insurance is $175 per month, or $2,097 per year, for a full coverage policy. ... The cost of car insurance varies by state from $133 per month in Michigan to $31 per month in Wyoming for minimum coverage.",
+          "page_age": "2025-08-06T16:21:52",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/average-cost-of-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a auto insurance  \u203a average cost of car insurance (2025)"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/LtR-Fhhe504DW6gpvZHTZ1irKA8ZmnoV6Q4srvvqvCE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2F2Zy1jb3N0/LWF1dG9fdW4xOWpo",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/avg-cost-auto_un19jh",
+            "logo": false
+          },
+          "age": "August 6, 2025"
+        },
+        {
+          "title": "State of Auto Insurance in 2025 - ValuePenguin",
+          "url": "https://www.valuepenguin.com/state-of-auto-insurance-2025",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The average cost of full coverage car insurance for 2025 is $2,101 per year, or about $175 per month. The most expensive states for full coverage car insurance are Nevada ($286 per month), Florida ($272) and Michigan ($263).",
+          "page_age": "2025-07-08T14:39:01",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/state-of-auto-insurance-2025",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a auto insurance  \u203a state of auto insurance in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/858Ppdl4x_VTPKbqs-qkjdaOzSCBPw7LbPnZQYZx3z0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2F1dG8taW5z/dXJhbmNlLzIwMjUt/Z3JhcGhpYy9tYW4t/Y2FyLXJhaXNpbmct/cHJpY2VzLTIwMjU",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/auto-insurance/2025-graphic/man-car-raising-prices-2025",
+            "logo": false
+          },
+          "age": "July 8, 2025"
+        },
+        {
+          "title": "Average Cost of Homeowners Insurance (2025) - ValuePenguin",
+          "url": "https://www.valuepenguin.com/average-cost-of-homeowners-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The average cost of home insurance in the United States is $2,151 per year, or $179 per month. However, rates vary depending on the state in which you live.",
+          "page_age": "2025-08-21T14:05:11",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/average-cost-of-homeowners-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a homeowners insurance  \u203a average cost of homeowners insurance (2025)"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ZGVaANuLnwiZ4RBoYTvfN-Zkqq2Aijy3wqgG5htkDyI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2F2Zy1jb3N0/LWhvbWVfZzEzcmx3",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/avg-cost-home_g13rlw",
+            "logo": false
+          },
+          "age": "August 21, 2025"
+        },
+        {
+          "title": "Free Car Insurance Calculator: Instant Cost Estimates - ValuePenguin",
+          "url": "https://www.valuepenguin.com/auto-insurance/estimate-car-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The average cost of car insurance in the United States is $175 per month for a full coverage policy. Minimum liability coverage typically costs around $69 per month.",
+          "page_age": "2025-07-21T15:04:20",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/auto-insurance/estimate-car-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a auto insurance  \u203a car insurance calculator: estimate your car insurance cost"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/T3tOo8cib3wBpe4U8VG4aRzstMGCgV5_5yewtqdkSLg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2Nhci1pbnN1/cmFuY2UtY2RuX2ds/eGgzZg",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/car-insurance-cdn_glxh3f",
+            "logo": false
+          },
+          "age": "July 21, 2025"
+        },
+        {
+          "title": "Average Cost of Car Insurance for 18-Year-Olds (2025) - ValuePenguin",
+          "url": "https://www.valuepenguin.com/18-year-old-car-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The average cost of car insurance for 18-year-olds is $530 per month for full coverage. Minimum liability costs an average of $223 per month. State Farm is the cheapest major car insurance company for 18-year-olds.",
+          "page_age": "2025-07-07T16:49:54",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/18-year-old-car-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a 18-year-old-car-insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/_91NpPNxTO7WXPGSmUqhVzqVfno30gU0YZQR-VpV6fo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2F1dG8taW5z/dXJhbmNlL2dpcmxm/cmllbmRzLXJpZGlu/Zy10b2dldGhlcg",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/auto-insurance/girlfriends-riding-together",
+            "logo": false
+          },
+          "age": "July 7, 2025"
+        },
+        {
+          "title": "Average Cost of Car Insurance for 24-Year-Olds - ValuePenguin",
+          "url": "https://www.valuepenguin.com/24-year-old-car-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The average cost of car insurance for a 24-year old is $245 per month for full coverage. Minimum liability costs an average of $177 per month. ... State Farm has the cheapest car insurance for 24-year-olds.",
+          "page_age": "2025-07-08T19:02:21",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/24-year-old-car-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a 24-year-old-car-insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/axrYjKOYjB52GBwcSEgvLKr5lclXSQWfSc1Ctm14bqs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL1lvdW5nX3dv/bWFuXzI0X2Nhcl9p/bnN1cmFuY2VfY2tx/YjNk",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/Young_woman_24_car_insurance_ckqb3d",
+            "logo": false
+          },
+          "age": "July 8, 2025"
+        },
+        {
+          "title": "Car Insurance Costs for 50-Year-Olds (and Those Over 50) - ValuePenguin",
+          "url": "https://www.valuepenguin.com/50-year-old-car-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The average cost of car insurance for 50-year-olds is $183 per month for full coverage and $133 per month for minimum liability. ... State Farm has the cheapest full coverage and minimum coverage rates for most 50-year-olds.",
+          "page_age": "2025-07-07T23:29:47",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/50-year-old-car-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a 50-year-old-car-insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/EnrMd6JwXQOqQ3JwyuhLgOXIpo3u_BMhfpg1fHB4yNY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2F1dG8taW5z/dXJhbmNlL3dvbWFu/LTUwcy1jYXI",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/auto-insurance/woman-50s-car",
+            "logo": false
+          },
+          "age": "July 7, 2025"
+        },
+        {
+          "title": "Average Car Insurance Costs for 22-Year-Olds - ValuePenguin",
+          "url": "https://www.valuepenguin.com/22-year-old-car-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Full coverage car insurance costs an average of $279 per month for a 22-year-old. Minimum coverage insurance costs around $202 per month. State Farm has the best car insurance for 22-year-olds.",
+          "page_age": "2025-07-08T19:00:59",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/22-year-old-car-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a 22-year-old-car-insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Rywpyvj43Ljklpzh3l2IR6QmqHQJY3FJ_koUndoyn1I/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL1lvdW5nX3dv/bWFuX3NpdHRpbmdf/aW5fZHJpdmVyX3Nl/YXQ",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/Young_woman_sitting_in_driver_seat",
+            "logo": false
+          },
+          "age": "July 8, 2025"
+        },
+        {
+          "title": "Average Health Insurance Cost in 2025 - ValuePenguin",
+          "url": "https://www.valuepenguin.com/average-cost-of-health-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "For example, people in West Virginia can pay $955 per month for a Silver plan, on average. In bordering Maryland, the same coverage costs an average of just $412 per month. Most people who buy coverage from HealthCare.gov or a state marketplace ...",
+          "page_age": "2025-08-15T16:22:38",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/average-cost-of-health-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a health insurance  \u203a average health insurance cost in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/r0vxmKBCsKNZ-l5ZeQxtt-ob7zSuIVL6p7R6ZROc3ug/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL0dldHR5SW1h/Z2VzLTgzNjY2NjMx/MF94ZnRrY3g",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/GettyImages-836666310_xftkcx",
+            "logo": false
+          },
+          "age": "August 15, 2025"
+        },
+        {
+          "title": "USAA vs State Farm Car Insurance: Rates & Coverage - ValuePenguin",
+          "url": "https://www.valuepenguin.com/compare-usaa-vs-state-farm-car-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "A full-coverage policy from USAA costs an average of $1,170 per year \u2014 11% less than State Farm. Unfortunately, most drivers can&#x27;t get coverage from USAA. Only active-duty military members, veterans and their families can purchase a policy.",
+          "page_age": "2025-08-25T15:16:50",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/compare-usaa-vs-state-farm-car-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a car insurance near me  \u203a usaa vs. state farm: compare car insurance rates and coverage"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/VJlBQNOqJt4W300kUdxQvsY03GSB9WXEqadKh_qKpj8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2F1dG8taW5z/dXJhbmNlLWNvbXBh/cmlzb25fZGY4YXBw",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/auto-insurance-comparison_df8app",
+            "logo": false
+          },
+          "age": "August 25, 2025"
+        },
+        {
+          "title": "Minimum Car Insurance Requirements by State: How Much Do You Need? - ValuePenguin",
+          "url": "https://www.valuepenguin.com/minimum-car-insurance-required-your-state",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The amount of car insurance you need to legally drive depends on where you live. Most states require at least $25,000 in bodily injury liability per person and $50,000 per accident.",
+          "page_age": "2025-08-26T21:02:51",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/minimum-car-insurance-required-your-state",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a minimum-car-insurance-required-your-state"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/dg4GB_XdMl5XUa-Vqcq9_zVPkvOjxDrFBn7CE_UoUeg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL0dldHR5SW1h/Z2VzLTE3NzI2NjU1/NF9wazV4amw",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/GettyImages-177266554_pk5xjl",
+            "logo": false
+          },
+          "age": "August 26, 2025"
+        },
+        {
+          "title": "State Auto Insurance Review: Cost and Coverage - ValuePenguin",
+          "url": "https://www.valuepenguin.com/state-auto-insurance-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "With an average rate of $2,918 per year, State Auto is more expensive than Farm Bureau, Farmers, State Farm and Allstate. Find Cheap Homeowners Insurance Quotes in Your Area",
+          "page_age": "2025-07-14T15:09:37",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/state-auto-insurance-review",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a state-auto-insurance-review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/fo8QonsRBbosuYFiFqOjsIEV3xMEpMf4x5HocaswXKU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvY19saW1p/dCxkcHJfMS4wLGZf/YXV0byxoXzE2MDAs/cV9hdXRvLHdfMTYw/MC9yZWZlcnJhbF9s/b2dvcy91cy9pbnN1/cmFuY2Uvc3RhdGVh/dXRvaW5zdXJhbmNl/LTE",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/c_limit,dpr_1.0,f_auto,h_1600,q_auto,w_1600/referral_logos/us/insurance/stateautoinsurance-1",
+            "logo": true
+          },
+          "age": "July 14, 2025"
+        },
+        {
+          "title": "Car Insurance Rates for 30-Year-Olds - ValuePenguin",
+          "url": "https://www.valuepenguin.com/30-year-old-car-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The average rate for a 30-year-old is $203 per month for full coverage car insurance. Minimum coverage costs $146 per month, on average, for a 30-year-old. State Farm has the cheapest full and minimum coverage rates for most people.",
+          "page_age": "2025-07-17T22:34:47",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/30-year-old-car-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a 30-year-old-car-insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/N7aAc4rio-lAEyYIZmWMq2lDuZl3k8pYkOXBldhVhcA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2F1dG8taW5z/dXJhbmNlL2hhcHB5/LWNvdXBsZS1kcml2/aW5nLTMwcw",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/auto-insurance/happy-couple-driving-30s",
+            "logo": false
+          },
+          "age": "July 17, 2025"
+        },
+        {
+          "title": "Best and Cheapest Home Insurance in Washington State for 2025 - ValuePenguin",
+          "url": "https://www.valuepenguin.com/best-cheap-homeowners-insurance-washington",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Mutual of Enumclaw has the most ... coverage costs $857 per year. That&#x27;s 42% cheaper than the statewide average of $1,483 per year....",
+          "page_age": "2025-09-16T15:13:42",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/best-cheap-homeowners-insurance-washington",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a homeowners insurance  \u203a best and cheapest home insurance in washington state for 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Sz6uXA-DH4RD6aeOWcpsjUPNCWx02aWIgr2ROgO0SyQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2hvbWVfaW5z/dXJhbmNlL3Rha2lu/Zy1icmVhay1tb3Zp/bmctZGF5",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/home_insurance/taking-break-moving-day",
+            "logo": false
+          },
+          "age": "September 16, 2025"
+        },
+        {
+          "title": "Home Insurance Facts and Statistics: Cost, Coverage & Claims - ValuePenguin",
+          "url": "https://www.valuepenguin.com/home-insurance-statistics",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm leads the market with an 18.2% share. Find Cheap Homeowners Insurance Quotes in Your Area \u00b7 It&#x27;s free, simple and secure. The average cost of homeowners insurance is $2,151 per year in the U.S.",
+          "page_age": "2025-09-03T15:25:07",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/home-insurance-statistics",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a home-insurance-statistics"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Fu3k0Bk2e4pveBQoXM8joL2tASPxoTZeDG3PlItFmns/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL0dldHR5SW1h/Z2VzLTkwNTkwMTU3/Ml9scWdiZHA",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/GettyImages-905901572_lqgbdp",
+            "logo": false
+          },
+          "age": "September 3, 2025"
+        },
+        {
+          "title": "Average Health Insurance Rates by Age in 2025 - ValuePenguin",
+          "url": "https://www.valuepenguin.com/how-age-affects-health-insurance-costs",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "By age 26, when you can no longer be on your parent&#x27;s health insurance plan, the cost of health insurance averages $498 per month. No, eight states and Washington, D.C., use different rules for calculating the cost of health insurance by age.",
+          "page_age": "2025-08-29T13:52:49",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/how-age-affects-health-insurance-costs",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a health insurance  \u203a average health insurance rates by age in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/1a1OTezvflwZUURIdjUmoZjr4Jf67fIFwQL0nlaCEyQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2hlYWx0aF9p/bnN1cmFuY2UvSGVh/bHRoQWdlQ0RO",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/health_insurance/HealthAgeCDN",
+            "logo": false
+          },
+          "age": "August 29, 2025"
+        },
+        {
+          "title": "Car Insurance Costs for 25-Year-Old Drivers - ValuePenguin",
+          "url": "https://www.valuepenguin.com/25-year-old-car-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "A 25-year-old pays $221 per month, on average, for full coverage car insurance. State Farm has the cheapest rates for 25-year-old drivers for both full coverage and minimum coverage.",
+          "page_age": "2025-06-02T14:03:05",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/25-year-old-car-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a 25-year-old-car-insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/jYHC1ovLP4LSPuCl4LTkH6BL5xgkRFRE2WILMFGMbCQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzLzI1X3llYXJf/b2xkX2Nhcl9pbnN1/cmFuY2VfYm0ybHVp",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/25_year_old_car_insurance_bm2lui",
+            "logo": false
+          },
+          "age": "June 2, 2025"
+        },
+        {
+          "title": "Most Expensive Homes in US Cost 66% More, on Average, to Insure - ValuePenguin",
+          "url": "https://www.valuepenguin.com/insure-expensive-homes-study",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "To put that in perspective, South Carolina is ninth. Meanwhile, Oklahoma (113.6% difference) claims the third spot. While the average home costs $2,040 to insure, expensive homes cost $4,357 to insure.",
+          "page_age": "2024-11-14T14:18:44",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/insure-expensive-homes-study",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a news  \u203a homeowners insurance  \u203a most expensive homes in us cost 66% more, on average, to insure"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Y_1GQ-0o0DhXEox1K6-Qi-n105I0o5IGMQwmsWYzKmc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2NvdXBsZS1u/ZXctaG9tZS1raXRj/aGVuX3Fmb2I1bg",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/couple-new-home-kitchen_qfob5n",
+            "logo": false
+          },
+          "age": "November 14, 2024"
+        },
+        {
+          "title": "Cheapest Liability-Only Car Insurance (2025) - from $36/month",
+          "url": "https://www.valuepenguin.com/cheap-liability-only-car-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The cheapest liability-only car insurance for most drivers is State Farm, with average monthly rates around $55. You may be able to find even cheaper rates from a regional company like Erie, Auto-Owners or Hanover.",
+          "page_age": "2025-09-26T16:42:07",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/cheap-liability-only-car-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a auto insurance  \u203a cheapest liability-only car insurance (2025)"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GdvjxpMnu1Gl-eoY052ln0kIoYfZO3-OzOEDvH1yivU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2xpYWJpbGl0/eS1vbmx5LWNkbl9z/cXhicHg",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/liability-only-cdn_sqxbpx",
+            "logo": false
+          },
+          "age": "September 26, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

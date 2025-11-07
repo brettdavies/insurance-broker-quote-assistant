@@ -1,0 +1,882 @@
+{
+  "websearch_id": "websearch_dth84zi85bj8v6hl7h32n9z1",
+  "search_id": "search_le6g1xyhyhzfznzpbv3kgddu",
+  "timestamp": "2025-11-07T12:24:59.881943",
+  "startedAt": "2025-11-07T12:24:59.881943",
+  "completedAt": "2025-11-07T12:25:01.698189",
+  "durationSeconds": 1.82,
+  "urlsDiscoveredCount": 21,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:progressive.com driving record",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:progressive.com driving record",
+      "show_strict_warning": false,
+      "cleaned": "driving record",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "driving record",
+        "sites": [
+          "progressive.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 20,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "What Is a Motor Vehicle Record (MVR)? | Progressive",
+          "url": "https://www.progressive.com/answers/what-is-a-motor-vehicle-record/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Better known as your driving record, your MVR includes any moving violations, traffic tickets, and accidents you&#x27;ve had either within a given time period or throughout your driving history.",
+          "page_age": "2025-01-23T18:44:18",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/what-is-a-motor-vehicle-record/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a car insurance information  \u203a what is an mvr?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "January 23, 2025"
+        },
+        {
+          "title": "What Is a Clean Driving Record? | Progressive",
+          "url": "https://www.progressive.com/answers/what-is-a-clean-driving-record/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "A clean driving record is defined as a motor vehicle record (MVR) with no violations, at-fault accidents, or traffic-related convictions for a set amount of time. It&#x27;s the ideal situation for any driver, but a violation doesn&#x27;t completely negate ...",
+          "page_age": "2025-01-23T19:53:51",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/what-is-a-clean-driving-record/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a car insurance information  \u203a what is a clean driving record?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "January 23, 2025"
+        },
+        {
+          "title": "Can You Get a Refund on Car Insurance? | Progressive",
+          "url": "https://www.progressive.com/answers/refund-on-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "There can be multiple reasons why an insurance company cancels your policy, including having too many accidents or tickets on your driving record, getting a DUI, or failing to pay your premium.",
+          "page_age": "2025-01-10T18:08:36",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/refund-on-car-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a car insurance information  \u203a can you get a refund on car insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "January 10, 2025"
+        },
+        {
+          "title": "How Much Is Car Insurance? | Progressive",
+          "url": "https://www.progressive.com/answers/average-car-insurance-cost/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Accidents and tickets can increase your insurance premium. New drivers with no record may also pay more.",
+          "page_age": "2025-08-28T19:08:53",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/average-car-insurance-cost/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a car insurance information  \u203a how much is car insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/IkERJBru2M7QmxSoEC84hAscDwoWrJoIsCVGV-HEPbk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGU5ZjgyODA3/YjY2N2YzYTcvNjBl/NjBhNjkyZWI3N2Qy/MDBmYWNhMDIwL2F2/ZXJhZ2UtY2FyLWlu/c3VyYW5jZS1jb3N0/LnBuZw",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blte9f82807b667f3a7/60e60a692eb77d200faca020/average-car-insurance-cost.png",
+            "logo": false
+          },
+          "age": "August 28, 2025"
+        },
+        {
+          "title": "How Much Does Insurance Go Up After an Accident? | Progressive",
+          "url": "https://www.progressive.com/answers/how-accidents-impact-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In general, insurance companies look back at several years of your driving history when determining your car insurance rate. The amount of time an accident remains on your driving record, which can be used to determine your car insurance rate, may vary by your state and insurer.",
+          "page_age": "2025-01-08T14:56:23",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/how-accidents-impact-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a car insurance information  \u203a how much does insurance go up after an accident?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/oBlBsCzl5yTIVLUUGZqvfJfKzi83Gs4thSXZYU_aJpw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDc5MGZmZGU4/NTQyYmE0MDUvNjBl/NjBhYzcwZjJiMzgz/M2QwZjZhNTk5L2hv/dy1hY2NpZGVudHMt/aW1wYWN0LWluc3Vy/YW5jZS5wbmc",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt790ffde8542ba405/60e60ac70f2b3833d0f6a599/how-accidents-impact-insurance.png",
+            "logo": false
+          },
+          "age": "January 8, 2025"
+        },
+        {
+          "title": "Driving Without a License | Progressive",
+          "url": "https://www.progressive.com/answers/driving-without-license/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In general, the penalties for driving ... your license. In many states, a first offense for driving without a valid driver&#x27;s license can be classified as a misdemeanor on your criminal record....",
+          "page_age": "2025-02-03T19:49:37",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/driving-without-license/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a car insurance information  \u203a what happens if you drive without a license"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "February 3, 2025"
+        },
+        {
+          "title": "Virginia RV Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/virginia-rv-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Driving record: Violations can increase the price of your policy.",
+          "page_age": "2025-03-17T16:54:28",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/virginia-rv-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a virginia rv insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/R_ouQDKGk5Lx3GrOqZ5SM91IVA0QQlYi9yeXK4svpS4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDRlNjAyZWIw/OTk2MmVlZjUvNjcz/Y2IzZThkNjRjMjI0/NTBmY2ExZTFjL3J2/LXBlbm5zeWx2YW5p/YV9vcGVuLWdyYXBo/LnBuZw",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt4e602eb09962eef5/673cb3e8d64c22450fca1e1c/rv-pennsylvania_open-graph.png",
+            "logo": false
+          },
+          "age": "March 17, 2025"
+        },
+        {
+          "title": "Insurance for Sports, Exotic, & Luxury Cars | Progressive",
+          "url": "https://www.progressive.com/answers/insuring-sports-exotic-cars/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "You&#x27;ll generally pay less for insurance than someone using their sports car to commute to and from work. However, even if you rarely drive your sports car and have a perfect driving record, you may pay substantially more for auto insurance because of your vehicle&#x27;s race-quality performance.",
+          "page_age": "2025-01-08T19:40:54",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/insuring-sports-exotic-cars/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a car insurance information  \u203a sports car and exotic car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/TNV1_3m5utNdeH81Rfd3za4WcAivIuxc_g-ndyZE2Bc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDAyNWIwOTcx/YjY5Yzg5MTQvNjBl/NjBhZGZlN2E4MGYz/YzJhODZhNTU1L2lu/c3VyaW5nLXNwb3J0/cy1leG90aWMtY2Fy/cy5wbmc",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt025b0971b69c8914/60e60adfe7a80f3c2a86a555/insuring-sports-exotic-cars.png",
+            "logo": false
+          },
+          "age": "January 8, 2025"
+        },
+        {
+          "title": "Single Vehicle Accidents & Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/single-vehicle-accidents/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Write down or record everything you remember about what led up to the accident, the accident itself, and the aftermath. Talk to any witnesses about what they saw, take notes, and ask them for their contact information.",
+          "page_age": "2025-07-28T17:32:09",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/single-vehicle-accidents/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a car insurance information  \u203a does car insurance cover single vehicle accidents?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GdwbouY_cxSXP5vVCIgsQqruv_TtOmVy_51CJprTGTg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvc2hh/cmUtb3BlbmdyYXBo/LTEyMDAucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/share-opengraph-1200.png",
+            "logo": false
+          },
+          "age": "July 28, 2025"
+        },
+        {
+          "title": "Kentucky RV insurance | Progressive",
+          "url": "https://www.progressive.com/answers/kentucky-rv-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Driving record: Violations can increase the price of your policy.",
+          "page_age": "2025-03-17T16:36:11",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/kentucky-rv-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a kentucky rv insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/m1Q8o3Rjuh0IrmAyT3J3WRchax4TCJuEqz4Ep5IF2kk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDg5ODhiODlj/NTViZTgyNmYvNjc2/MWIyYTVmMGQ2MTIz/YmMwYjA5NDU4L3J2/X2tlbnR1Y2t5X29w/ZW4tZ3JhcGgucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt8988b89c55be826f/6761b2a5f0d6123bc0b09458/rv_kentucky_open-graph.png",
+            "logo": false
+          },
+          "age": "March 17, 2025"
+        },
+        {
+          "title": "North Dakota RV Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/north-dakota-rv-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Driving record: Violations can increase the price of your policy.",
+          "page_age": "2025-07-01T18:33:47",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/north-dakota-rv-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a north dakota rv insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ds352lrPTkY4N0O4PxipMv454lLHCzQO1jJD8ff5rC8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGRjZjhkMDVm/NmQ4MWNiYmYvNjcy/ZTI1NzY4NmRkZDIz/NzNmMjRjNDA4L25v/cnRoLWRha290YS1y/di1pbnN1cmFuY2Vf/b3Blbi1ncmFwaC5w/bmc",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltdcf8d05f6d81cbbf/672e257686ddd2373f24c408/north-dakota-rv-insurance_open-graph.png",
+            "logo": false
+          },
+          "age": "July 1, 2025"
+        },
+        {
+          "title": "Tennessee RV Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/tennessee-rv-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Driving record: Violations can increase the price of your policy.",
+          "page_age": "2025-03-17T17:33:22",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/tennessee-rv-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a tennessee rv insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/XEOK-brUr3ZvgDFmNHZfcCizrxpiGy-vTRDdlVJ92gM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDI0YmM2MTNh/NjY5ZjM5MGUvNjc0/NGYzNDQ2NGJhN2Qw/MzgzMWZkNTgyL3J2/X3Rlbm5lc3NlZV9v/cGVuLWdyYXBoLnBu/Zw",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt24bc613a669f390e/6744f34464ba7d03831fd582/rv_tennessee_open-graph.png",
+            "logo": false
+          },
+          "age": "March 17, 2025"
+        },
+        {
+          "title": "Ohio RV Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/ohio-rv-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Driving record: Violations can increase the price of your policy.",
+          "page_age": "2025-07-01T19:08:23",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/ohio-rv-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a ohio rv insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/zDN7F4euYuw_CQ0CkIDD0ASabN8nSEtCYxNW8DSMgrs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGQ1ZmE0NDA3/MmY1YjgyNTUvNjcw/MDQwYzg5ZGQ0NmUx/ZDg4Yzg5Mzk4L3J2/X29oaW9fb3Blbi1n/cmFwaC5wbmc",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltd5fa44072f5b8255/670040c89dd46e1d88c89398/rv_ohio_open-graph.png",
+            "logo": false
+          },
+          "age": "July 1, 2025"
+        },
+        {
+          "title": "Massachusetts RV Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/massachusetts-rv-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Driving record: Violations can increase the price of your policy.",
+          "page_age": "2025-06-10T19:00:33",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/massachusetts-rv-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a massachusetts rv insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/D1lRe_L8ycsICWH6Ae3Vx6y2bmhCwNcRXDfCYprOMfY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDY1MWY5Mzhk/MTUzYTI3MWQvNjZm/YTliMTk4MDk2MjQ1/NjA5N2Y2ZmZlL3J2/X2RlbGF3YXJlX29w/ZW4tZ3JhcGgucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt651f938d153a271d/66fa9b1980962456097f6ffe/rv_delaware_open-graph.png",
+            "logo": false
+          },
+          "age": "June 10, 2025"
+        },
+        {
+          "title": "New York RV Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/new-york-rv-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Driving record: Violations can increase the price of your policy.",
+          "page_age": "2025-03-13T20:31:40",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/new-york-rv-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a new york rv insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/BPAQtSEdGQ71cUM5npg0CQ8BhVp_92sj4AJGnSozZJc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDdkYjU4MTE3/Zjg1OTAyMTUvNjcz/Y2I1ZWFkNjRjMjIz/OWJhY2ExZTMwL3J2/LXdpc2NvbnNpbl9v/cGVuLWdyYXBoLnBu/Zw",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt7db58117f8590215/673cb5ead64c2239baca1e30/rv-wisconsin_open-graph.png",
+            "logo": false
+          },
+          "age": "March 13, 2025"
+        },
+        {
+          "title": "Oregon RV Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/oregon-rv-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Driving record: Violations can increase the price of your policy.",
+          "page_age": "2025-07-01T20:53:49",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/oregon-rv-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a oregon rv insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GdwbouY_cxSXP5vVCIgsQqruv_TtOmVy_51CJprTGTg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvc2hh/cmUtb3BlbmdyYXBo/LTEyMDAucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/share-opengraph-1200.png",
+            "logo": false
+          },
+          "age": "July 1, 2025"
+        },
+        {
+          "title": "New Jersey RV Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/new-jersey-rv-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Driving record: Violations can increase the price of your policy.",
+          "page_age": "2025-06-30T19:11:41",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/new-jersey-rv-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a new jersey rv insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/BPAQtSEdGQ71cUM5npg0CQ8BhVp_92sj4AJGnSozZJc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDdkYjU4MTE3/Zjg1OTAyMTUvNjcz/Y2I1ZWFkNjRjMjIz/OWJhY2ExZTMwL3J2/LXdpc2NvbnNpbl9v/cGVuLWdyYXBoLnBu/Zw",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt7db58117f8590215/673cb5ead64c2239baca1e30/rv-wisconsin_open-graph.png",
+            "logo": false
+          },
+          "age": "June 30, 2025"
+        },
+        {
+          "title": "Nevada RV Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/nevada-rv-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Driving record: Violations can increase the price of your policy.",
+          "page_age": "2025-06-30T18:33:30",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/nevada-rv-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a nevada rv insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/xc-h25Q15AFqrbGaHpqPB2V654rVA1tZdboXKbFh8pI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDgxYWM1MWM1/NWExZDRkMDUvNjc3/ZjA1MTM5YzgzMTI4/YzVkYjQ2Y2M5L3J2/X25ldmFkYV9vcGVu/LWdyYXBoLnBuZw",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt81ac51c55a1d4d05/677f05139c83128c5db46cc9/rv_nevada_open-graph.png",
+            "logo": false
+          },
+          "age": "June 30, 2025"
+        },
+        {
+          "title": "What Is Accident Forgiveness? | Progressive",
+          "url": "https://www.progressive.com/answers/what-is-accident-forgiveness/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Learn more about accident forgiveness, including what it is, how it works with insurance, and how it&#x27;s added to your policy.",
+          "page_age": "2024-12-19T00:00:00",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/what-is-accident-forgiveness/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a car insurance information  \u203a what is accident forgiveness?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GdwbouY_cxSXP5vVCIgsQqruv_TtOmVy_51CJprTGTg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvc2hh/cmUtb3BlbmdyYXBo/LTEyMDAucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/share-opengraph-1200.png",
+            "logo": false
+          },
+          "age": "December 19, 2024"
+        },
+        {
+          "title": "Car Insurance Collision Deductible | Progressive",
+          "url": "https://www.progressive.com/answers/collision-auto-deductibles/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If you&#x27;re a confident driver with a long record of accident-free driving, you may opt for a higher collision deductible.",
+          "page_age": "2025-01-22T18:36:32",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/collision-auto-deductibles/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a car insurance information  \u203a what is a car insurance collision deductible?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "January 22, 2025"
+        },
+        {
+          "title": "Driving",
+          "url": "https://en.wikipedia.org/wiki/Driving",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "operation of a vehicle",
+          "profile": {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Driving",
+            "long_name": "en.wikipedia.org",
+            "img": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "deep_results": {
+            "buttons": [
+              {
+                "type": "button_result",
+                "title": "Etymology",
+                "url": "https://en.wikipedia.org/wiki/Driving#Etymology"
+              },
+              {
+                "type": "button_result",
+                "title": "Introduction of the automobile",
+                "url": "https://en.wikipedia.org/wiki/Driving#Introduction_of_the_automobile"
+              },
+              {
+                "type": "button_result",
+                "title": "Driving skills",
+                "url": "https://en.wikipedia.org/wiki/Driving#Driving_skills"
+              },
+              {
+                "type": "button_result",
+                "title": "Teenagers",
+                "url": "https://en.wikipedia.org/wiki/Driving#Teenagers"
+              },
+              {
+                "type": "button_result",
+                "title": "Driveability",
+                "url": "https://en.wikipedia.org/wiki/Driving#Driveability"
+              },
+              {
+                "type": "button_result",
+                "title": "Driving laws",
+                "url": "https://en.wikipedia.org/wiki/Driving#Driving_laws"
+              },
+              {
+                "type": "button_result",
+                "title": "Driving bans",
+                "url": "https://en.wikipedia.org/wiki/Driving#Driving_bans"
+              },
+              {
+                "type": "button_result",
+                "title": "Further reading",
+                "url": "https://en.wikipedia.org/wiki/Driving#Further_reading"
+              }
+            ]
+          },
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "en.wikipedia.org",
+            "hostname": "en.wikipedia.org",
+            "favicon": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw",
+            "path": "\u203a wiki  \u203a Driving"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Vj0BagsnHLVXlGUN3Pr-GZ8Q4KqWXsHfIYsGM6BtBjM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzFjL0NvbnZlcnRp/YmxlX01lcmNlZGVz/X0Nhcl9Ecml2aW5n/X09uX0FfSGlnaHdh/eS5qcGc",
+            "original": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Convertible_Mercedes_Car_Driving_On_A_Highway.jpg",
+            "logo": false
+          }
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

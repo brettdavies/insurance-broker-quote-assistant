@@ -1,0 +1,803 @@
+{
+  "websearch_id": "websearch_mwoxwvqcpjj38gfvabfeppqb",
+  "search_id": "search_d5l0gkd5390dxv9mzycmu819",
+  "timestamp": "2025-11-07T12:34:27.741128",
+  "startedAt": "2025-11-07T12:34:27.741128",
+  "completedAt": "2025-11-07T12:34:29.636920",
+  "durationSeconds": 1.9,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:thezebra.com GEICO average cost",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:thezebra.com GEICO average cost",
+      "show_strict_warning": false,
+      "cleaned": "GEICO average cost",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO average cost",
+        "sites": [
+          "thezebra.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Is GEICO a Good Insurance Company? (2025 Review) | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/geico-reviews-coverage-options-and-ratings/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Customers can evaluate ... the national average for a 6-month car insurance policy is $1,084, whereas GEICO is about $954....",
+          "page_age": "2025-11-03T15:45:14",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/geico-reviews-coverage-options-and-ratings/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a geico insurance review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/tbd0UaOOvIXqi69W48G0j_FAdMT0JxNy_qR5HBkqeCs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9zdGF0/aWMvM2I5NGRmMy96/ZnJvbnQvaW1nL2l6/LXNoYXJlLWxvZ28u/cG5n",
+            "original": "https://cdn.thezebra.com/zfront/static/3b94df3/zfront/img/iz-share-logo.png",
+            "logo": true
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "GEICO vs State Farm: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/geico-vs-state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "As a general rule, teen drivers should choose GEICO before State Farm: GEICO offers average yearly savings of $2,312, compared to State Farm. GEICO was also cheaper for most drivers no matter their age.",
+          "page_age": "2025-11-04T10:01:19",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/geico-vs-state-farm/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a geico vs. state farm"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/l7pe_Rs2LG08JL8wb9fkYsP1H-2bu8pRCLd_IVKh1GY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9jYXItc2Fs/ZXNwZXJzb24tc2hv/d2luZy1jb3VwbGUt/Y2FyLWludGVyaW9y/LmpwZw",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/car-salesperson-showing-couple-car-interior.jpg",
+            "logo": false
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "GEICO vs Costco Car Insurance: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/geico-vs-costco/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "On average, GEICO charges $213 more for a six-month policy than does CONNECT \u2014 about 40%. On a monthly basis, CONNECT, powered by American Family Insurance, is $35 cheaper than GEICO.",
+          "page_age": "2025-10-16T22:23:36",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/geico-vs-costco/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a geico vs. costco car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wLaa5ABL1FOaAK7OptGU60BZ9EYO_N4yxiZcbPpNAME/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9zdGF0/aWMvODAwZGFmYS96/ZnJvbnQvaW1nL2l6/LXNoYXJlLWxvZ28u/cG5n",
+            "original": "https://cdn.thezebra.com/zfront/static/800dafa/zfront/img/iz-share-logo.png",
+            "logo": true
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "GEICO vs Nationwide: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/geico-vs-nationwide/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "As a general rule, teen drivers should choose GEICO instead of Nationwidel: GEICO offers average yearly savings of $116, compared to Nationwide. Costs aside, GEICO and Nationwide both have pros and cons, including discount programs, customer ...",
+          "page_age": "2025-11-03T17:06:28",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/geico-vs-nationwide/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a geico vs. nationwide"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/l7pe_Rs2LG08JL8wb9fkYsP1H-2bu8pRCLd_IVKh1GY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9jYXItc2Fs/ZXNwZXJzb24tc2hv/d2luZy1jb3VwbGUt/Y2FyLWludGVyaW9y/LmpwZw",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/car-salesperson-showing-couple-car-interior.jpg",
+            "logo": false
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "GEICO vs Progressive: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/geico-vs-progressive/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "According to our data, teen drivers should choose GEICO instead of Progressive: GEICO offers average yearly savings of $4,740 compared to Progressive. At all ages, GEICO was the cheapest.",
+          "page_age": "2025-10-29T20:01:17",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/geico-vs-progressive/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a geico vs. progressive"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/l7pe_Rs2LG08JL8wb9fkYsP1H-2bu8pRCLd_IVKh1GY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9jYXItc2Fs/ZXNwZXJzb24tc2hv/d2luZy1jb3VwbGUt/Y2FyLWludGVyaW9y/LmpwZw",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/car-salesperson-showing-couple-car-interior.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "GEICO vs Farmers: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/geico-vs-farmers/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "According to our data, teen drivers should choose GEICO instead of Farmers: GEICO offers average yearly savings of $3.010 compared to Farmers. At all ages, GEICO was the cheapest.",
+          "page_age": "2025-10-28T23:45:03",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/geico-vs-farmers/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a geico vs. farmers"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/l7pe_Rs2LG08JL8wb9fkYsP1H-2bu8pRCLd_IVKh1GY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9jYXItc2Fs/ZXNwZXJzb24tc2hv/d2luZy1jb3VwbGUt/Y2FyLWludGVyaW9y/LmpwZw",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/car-salesperson-showing-couple-car-interior.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "GEICO vs Safeco: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/geico-vs-safeco/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "As a general rule, teen drivers should choose GEICO instead of Safeco: GEICO offers average yearly savings of $4,257, compared to Safeco. Costs aside, GEICO and Safeco both have pros and cons, including discount programs, customer satisfaction ...",
+          "page_age": "2025-10-23T22:35:03",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/geico-vs-safeco/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a geico vs. safeco"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/l7pe_Rs2LG08JL8wb9fkYsP1H-2bu8pRCLd_IVKh1GY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9jYXItc2Fs/ZXNwZXJzb24tc2hv/d2luZy1jb3VwbGUt/Y2FyLWludGVyaW9y/LmpwZw",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/car-salesperson-showing-couple-car-interior.jpg",
+            "logo": false
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "GEICO vs Allstate: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/geico-vs-allstate/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "As a general rule, teen drivers should choose GEICO instead of Allstate: GEICO offers average yearly savings of $2,934, compared to Allstate. Costs aside, GEICO and Allstate both have pros and cons, including discount programs, customer satisfaction ...",
+          "page_age": "2025-10-28T23:01:36",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/geico-vs-allstate/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a geico vs. allstate"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/l7pe_Rs2LG08JL8wb9fkYsP1H-2bu8pRCLd_IVKh1GY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9jYXItc2Fs/ZXNwZXJzb24tc2hv/d2luZy1jb3VwbGUt/Y2FyLWludGVyaW9y/LmpwZw",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/car-salesperson-showing-couple-car-interior.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "GEICO vs AAA: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/geico-vs-aaa/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "As a general rule, teen drivers should choose GEICO instead of AAA: GEICO offers average yearly savings of $6,748, compared to AAA. Aside from affordability, GEICO and AAA each come with pros and cons, including their customer satisfaction ratings, ...",
+          "page_age": "2025-10-16T21:48:39",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/geico-vs-aaa/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a geico vs. aaa"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/l7pe_Rs2LG08JL8wb9fkYsP1H-2bu8pRCLd_IVKh1GY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9jYXItc2Fs/ZXNwZXJzb24tc2hv/d2luZy1jb3VwbGUt/Y2FyLWludGVyaW9y/LmpwZw",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/car-salesperson-showing-couple-car-interior.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "GEICO vs Liberty Mutual: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/geico-vs-liberty-mutual/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "As a general rule, teen drivers should choose GEICO instead of Liberty Mutual: GEICO offers average yearly savings of $3,051, compared to Liberty Mutual. RATES BY AGE: LIBERTY MUTUAL VS.",
+          "page_age": "2025-10-16T21:55:31",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/geico-vs-liberty-mutual/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a geico vs. liberty mutual"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/l7pe_Rs2LG08JL8wb9fkYsP1H-2bu8pRCLd_IVKh1GY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9jYXItc2Fs/ZXNwZXJzb24tc2hv/d2luZy1jb3VwbGUt/Y2FyLWludGVyaW9y/LmpwZw",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/car-salesperson-showing-couple-car-interior.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "GEICO vs Travelers: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/geico-vs-travelers/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Travelers and GEICO have similar ratings in customer service and trust, but Travelers does have cheaper rates on average. If digital tools are a high priority for you, GEICO does score better. Ultimately, it depends on what your priorities in an insurance company are, but both companies are great options for most drivers. ... Yes, Travelers is a reputable company with solid financial stability and high customer service ratings/It scores well in areas such as cost, customer service, and claims handling.",
+          "page_age": "2025-11-03T15:44:29",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/geico-vs-travelers/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a geico vs. travelers"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/l7pe_Rs2LG08JL8wb9fkYsP1H-2bu8pRCLd_IVKh1GY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9jYXItc2Fs/ZXNwZXJzb24tc2hv/d2luZy1jb3VwbGUt/Y2FyLWludGVyaW9y/LmpwZw",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/car-salesperson-showing-couple-car-interior.jpg",
+            "logo": false
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "Lemonade vs GEICO Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/lemonade-vs-geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO also offers renters insurance; ... policies start at just $5 per month and GEICO offers policies starting as low as $12 per month....",
+          "page_age": "2025-10-16T21:59:39",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/lemonade-vs-geico/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a lemonade vs. geico insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/msj4ZylE5B54rYk5FNrLcnIp1MwwI758ZolZ4NvsPVQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9Db3VsZF9Z/b3VyX09ubGluZV9C/ZWhhdmlvcl9BZmZl/Y3RfV2hhdF9Zb3Vf/UGF5Xy5qcGc",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/Could_Your_Online_Behavior_Affect_What_You_Pay_.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "Compare Car Insurance Rates Side-by-Side in 2025 | The Zebra",
+          "url": "https://www.thezebra.com/auto-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The Zebra partners with 100+ companies to help you find the right coverage. Use our comparison tool to see rates from GEICO, Progressive, Nationwide, Liberty Mutual, Allstate and more.",
+          "page_age": "2025-11-05T22:15:49",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/auto-insurance/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a cheap car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/9m6TIHLCrAGgPJqejxK2wwFNL2OA5b4HppzXiT31-5Y/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9pU3RvY2st/ODkxNjA5NTc4Lmpw/Zw",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/iStock-891609578.jpg",
+            "logo": false
+          },
+          "age": "2 days ago"
+        },
+        {
+          "title": "Root vs GEICO: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/root-vs-geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Compare Root&#x27;s and GEICO&#x27;s insurance policy options, discounts and pros and cons with The Zebra&#x27;s expert analysis.",
+          "page_age": "2025-10-16T22:04:17",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/root-vs-geico/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a root vs. geico"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/hHRZ3UyD84dn9aA10dvxnlelEHOkP-Ta7bEJpvJ7--8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy8yMDIxX05l/d3Nyb29tX0ZlYXR1/cmVkSW1nX0Nhcl8y/X1IxLmNvbXByZXNz/ZWQuanBn",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/2021_Newsroom_FeaturedImg_Car_2_R1.compressed.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "USAA vs GEICO: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/usaa-vs-geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO is also a popular company with nationwide brand recognition and claims second place in market share for auto insurance. Both companies have coverage options that will satisfy the needs of most customers, and prices that are \u2014 at least on average \u2014 quite affordable.",
+          "page_age": "2025-10-28T23:10:13",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/usaa-vs-geico/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a usaa vs. geico"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/r8Gz4KqbI2AqzfBjye1oXmSpIr2a4qmOT5uSwoUl0sU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9Ib3dfWW91/cl9TdWJjb25zY2lv/dXNfTWluZF9Db3Vs/ZF9TYXZlX1lvdV9N/b25leV9vbl9DYXJf/SW5zdXJhbmNlX29w/dGltaXplZC5qcGc",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/How_Your_Subconscious_Mind_Could_Save_You_Money_on_Car_Insurance_optimized.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "How to Find your GEICO Declarations Page | The Zebra",
+          "url": "https://www.thezebra.com/auto-insurance/insurance-guide/geico-declarations-page/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In truth, no. Car insurance companies determine their rates based on their previous years&#x27; filings (loss to revenue ratio) in addition to other factors. State Farm and GEICO have different loss histories and net profits, and therefore will have different quotes (with no reason or incentive to \u2026",
+          "page_age": "2024-12-18T18:39:54",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/auto-insurance/insurance-guide/geico-declarations-page/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a cheap car insurance  \u203a car insurance guide  \u203a geico declarations page"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wLaa5ABL1FOaAK7OptGU60BZ9EYO_N4yxiZcbPpNAME/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9zdGF0/aWMvODAwZGFmYS96/ZnJvbnQvaW1nL2l6/LXNoYXJlLWxvZ28u/cG5n",
+            "original": "https://cdn.thezebra.com/zfront/static/800dafa/zfront/img/iz-share-logo.png",
+            "logo": true
+          },
+          "age": "December 18, 2024"
+        },
+        {
+          "title": "USAA vs Travelers: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/usaa-vs-travelers/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO vs. Progressive vs. State Farm ... Thanks for reaching out to The Zebra!This is a fairly common question, as USAA is well-known for its customer service and often lower-than-average insurance rates. The downside is that USAA requires its members to be active, retired, or honorably separated ...",
+          "page_age": "2025-09-22T20:50:25",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/usaa-vs-travelers/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a usaa vs. travelers"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/r8Gz4KqbI2AqzfBjye1oXmSpIr2a4qmOT5uSwoUl0sU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9Ib3dfWW91/cl9TdWJjb25zY2lv/dXNfTWluZF9Db3Vs/ZF9TYXZlX1lvdV9N/b25leV9vbl9DYXJf/SW5zdXJhbmNlX29w/dGltaXplZC5qcGc",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/How_Your_Subconscious_Mind_Could_Save_You_Money_on_Car_Insurance_optimized.jpg",
+            "logo": false
+          },
+          "age": "September 22, 2025"
+        },
+        {
+          "title": "AAA vs Allstate: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/aaa-vs-allstate/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "To simplify the process of comparing insurance companies, we&#x27;ve gathered average rates from Allstate and AAA. These take into consideration a variety of rating factors, including credit history, driving record, and age.",
+          "page_age": "2025-11-03T15:54:11",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/aaa-vs-allstate/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a aaa vs. allstate"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/hHRZ3UyD84dn9aA10dvxnlelEHOkP-Ta7bEJpvJ7--8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy8yMDIxX05l/d3Nyb29tX0ZlYXR1/cmVkSW1nX0Nhcl8y/X1IxLmNvbXByZXNz/ZWQuanBn",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/2021_Newsroom_FeaturedImg_Car_2_R1.compressed.jpg",
+            "logo": false
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "AAA vs Travelers: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/aaa-vs-travelers/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "To simplify the process of comparing insurance companies, we&#x27;ve gathered average rates from Travelers and AAA. These take into consideration a variety of rating factors, including credit history, driving record and age.",
+          "page_age": "2025-09-22T21:01:15",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/aaa-vs-travelers/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a aaa vs. travelers"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/hHRZ3UyD84dn9aA10dvxnlelEHOkP-Ta7bEJpvJ7--8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy8yMDIxX05l/d3Nyb29tX0ZlYXR1/cmVkSW1nX0Nhcl8y/X1IxLmNvbXByZXNz/ZWQuanBn",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/2021_Newsroom_FeaturedImg_Car_2_R1.compressed.jpg",
+            "logo": false
+          },
+          "age": "September 22, 2025"
+        },
+        {
+          "title": "Find Cheap Car Insurance in Chesapeake, VA from ($87/mo) | Auto Insurance Near Me | The Zebra",
+          "url": "https://www.thezebra.com/auto-insurance/virginia-car-insurance/chesapeake-va-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Insuring teenage drivers in Chesapeake can be expensive, with a six-month policy costing over $2,600, equivalent to $444 per month. Adding young drivers to their parents&#x27; policies is recommended because car insurance is prohibitively expensive ...",
+          "page_age": "2025-09-05T19:37:42",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/auto-insurance/virginia-car-insurance/chesapeake-va-car-insurance/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a cheap car insurance  \u203a virginia car insurance  \u203a car insurance near me in chesapeake"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/gJD3Tx8O0pi4I-l6Ei0DkwZUjUVViKITgpmuXLWb198/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9DaGVzYXBl/YWtlX1ZBXzIuanBn",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/Chesapeake_VA_2.jpg",
+            "logo": false
+          },
+          "age": "September 5, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

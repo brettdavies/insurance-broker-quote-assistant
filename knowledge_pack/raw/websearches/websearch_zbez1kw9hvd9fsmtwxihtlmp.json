@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_zbez1kw9hvd9fsmtwxihtlmp",
+  "search_id": "search_pxtcvhccqkva73rs8glsy8tu",
+  "timestamp": "2025-11-07T12:31:57.871965",
+  "startedAt": "2025-11-07T12:31:57.871965",
+  "completedAt": "2025-11-07T12:31:59.621509",
+  "durationSeconds": 1.75,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:dfs.ny.gov \"Supplemental Spousal Liability\"",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:dfs.ny.gov \"Supplemental Spousal Liability\"",
+      "show_strict_warning": false,
+      "cleaned": "Supplemental Spousal Liability",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "Supplemental Spousal Liability",
+        "sites": [
+          "dfs.ny.gov"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

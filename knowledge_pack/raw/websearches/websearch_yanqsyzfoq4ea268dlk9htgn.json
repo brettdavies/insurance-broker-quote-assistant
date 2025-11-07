@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_yanqsyzfoq4ea268dlk9htgn",
+  "search_id": "search_r5k60ok2e1b9m9o3halmrct2",
+  "timestamp": "2025-11-07T12:31:36.066804",
+  "startedAt": "2025-11-07T12:31:36.066804",
+  "completedAt": "2025-11-07T12:31:37.740032",
+  "durationSeconds": 1.67,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:floir.com hurricane coverage requirements",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:floir.com hurricane coverage requirements",
+      "show_strict_warning": false,
+      "cleaned": "hurricane coverage requirements",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "hurricane coverage requirements",
+        "sites": [
+          "floir.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

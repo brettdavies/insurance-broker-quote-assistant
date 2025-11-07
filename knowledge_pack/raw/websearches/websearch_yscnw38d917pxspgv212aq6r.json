@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_yscnw38d917pxspgv212aq6r",
+  "search_id": "search_tmqypua4vxyo3yzcqsxb3bca",
+  "timestamp": "2025-11-07T12:20:44.595879",
+  "startedAt": "2025-11-07T12:20:44.595879",
+  "completedAt": "2025-11-07T12:20:46.282412",
+  "durationSeconds": 1.69,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:statefarm.com \"find an agent\" state list",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:statefarm.com \"find an agent\" state list",
+      "show_strict_warning": false,
+      "cleaned": "find an agent state list",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "find an agent state list",
+        "sites": [
+          "statefarm.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

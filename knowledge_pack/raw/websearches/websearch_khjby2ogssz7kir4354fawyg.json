@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_khjby2ogssz7kir4354fawyg",
+  "search_id": "search_k0gkvcr6e00396fxq6ijeq3k",
+  "timestamp": "2025-11-07T12:31:41.018560",
+  "startedAt": "2025-11-07T12:31:41.018560",
+  "completedAt": "2025-11-07T12:31:42.717193",
+  "durationSeconds": 1.7,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:floir.com consumer homeowners guides",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:floir.com consumer homeowners guides",
+      "show_strict_warning": false,
+      "cleaned": "consumer homeowners guides",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "consumer homeowners guides",
+        "sites": [
+          "floir.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

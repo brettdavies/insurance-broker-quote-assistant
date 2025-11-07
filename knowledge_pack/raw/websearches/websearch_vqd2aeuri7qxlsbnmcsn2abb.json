@@ -1,0 +1,800 @@
+{
+  "websearch_id": "websearch_vqd2aeuri7qxlsbnmcsn2abb",
+  "search_id": "search_oikj6bx5c0sj410undwh7u6p",
+  "timestamp": "2025-11-07T12:34:56.327869",
+  "startedAt": "2025-11-07T12:34:56.327869",
+  "completedAt": "2025-11-07T12:34:58.326473",
+  "durationSeconds": 2.0,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"Insurance Information Institute\" average premiums [state]",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"Insurance Information Institute\" average premiums [state]",
+      "show_strict_warning": false,
+      "cleaned": "Insurance Information Institute average premiums [state]",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "Insurance Information Institute average premiums [state]"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "State by State | III - Insurance Information Institute",
+          "url": "https://www.iii.org/publications/insurance-handbook/economic-and-financial-data/state-by-state",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Premiums by State Direct Premiums Written By State Direct premiums written represent premium amounts before reinsurance transactions. This contrasts with charts based on net premiums written, i.e., premium amounts after reinsurance transactions. Premiums Premiums By Line Premiums can be accounted for in two major ways: net premiums written, which reflect premium amounts after deductions for reinsurance; and direct premiums written, which are calculated before reinsurance transactions.",
+          "page_age": "2025-06-24T19:36:16",
+          "profile": {
+            "name": "III",
+            "url": "https://www.iii.org/publications/insurance-handbook/economic-and-financial-data/state-by-state",
+            "long_name": "iii.org",
+            "img": "https://imgs.search.brave.com/YIXEDJWzjNE66EJtMGADK1Cxa8hN-YIMUEucmcBl8S0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTJlYjRkNzMw/YjM2NGRjODYwNTg5/NjE1Y2I5OWNhNjkw/OGE1YjUyYjk5MjVj/YzMzYTQ2ZDMzZTg5/MWU2ZDA5My93d3cu/aWlpLm9yZy8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "iii.org",
+            "hostname": "www.iii.org",
+            "favicon": "https://imgs.search.brave.com/YIXEDJWzjNE66EJtMGADK1Cxa8hN-YIMUEucmcBl8S0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTJlYjRkNzMw/YjM2NGRjODYwNTg5/NjE1Y2I5OWNhNjkw/OGE1YjUyYjk5MjVj/YzMzYTQ2ZDMzZTg5/MWU2ZDA5My93d3cu/aWlpLm9yZy8",
+            "path": "\u203a publications  \u203a insurance-handbook  \u203a economic-and-financial-data  \u203a state-by-state"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/fVXfuOFDTc07NnghE8oCKgYKDFiy8ln892JPDJv202s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aWlpLm9yZy9zaXRl/cy9kZWZhdWx0L2Zp/bGVzL2ltYWdlcy9p/bnN1cmFuY2UtaW5m/b3JtYXRpb24taW5z/dGl0dXRlLWxvZ28t/c2hhcmUtc20uanBn",
+            "original": "https://www.iii.org/sites/default/files/images/insurance-information-institute-logo-share-sm.jpg",
+            "logo": true
+          },
+          "age": "June 24, 2025"
+        },
+        {
+          "title": "Map Shows Where Home Insurance Costs Most\u2014and Least - Newsweek",
+          "url": "https://www.newsweek.com/map-shows-where-home-insurance-costs-most-least-2120635",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "&quot;Since the beginning of 2024, Florida has posted the lowest average rate changes and lowest average premium increases in the U.S.,&quot; Mark Friedlander of the Insurance Information Institute (Triple-I) told Newsweek.",
+          "page_age": "2025-08-28T12:48:21",
+          "profile": {
+            "name": "Newsweek",
+            "url": "https://www.newsweek.com/map-shows-where-home-insurance-costs-most-least-2120635",
+            "long_name": "newsweek.com",
+            "img": "https://imgs.search.brave.com/PyNRakclvDjMYE-KKrT1jXhVbbvMiBF3N-tfeXW1ziw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmRjZTU0MTBh/MjZiZTAwZDBhMjdi/M2YzZDUzMTY3ZjA1/ZWQwZThlYWNiY2Y3/NzQ0NjZjYjhmZGYy/MTZhMjhjNi93d3cu/bmV3c3dlZWsuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsweek.com",
+            "hostname": "www.newsweek.com",
+            "favicon": "https://imgs.search.brave.com/PyNRakclvDjMYE-KKrT1jXhVbbvMiBF3N-tfeXW1ziw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmRjZTU0MTBh/MjZiZTAwZDBhMjdi/M2YzZDUzMTY3ZjA1/ZWQwZThlYWNiY2Y3/NzQ0NjZjYjhmZGYy/MTZhMjhjNi93d3cu/bmV3c3dlZWsuY29t/Lw",
+            "path": "\u203a map-shows-where-home-insurance-costs-most-least-2120635"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/RFGrqCHFu7moZ3tnASNjUQa4uLEtgfXPQtnqK09-MZ4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMubmV3c3dlZWsu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI1LzA4LzI3MTEx/MDQtaG9tZS1kZXN0/cm95ZWQtY2FsaWZv/cm5pYS5qcGc_dz0x/NjAwJmg9OTAwJnE9/ODg",
+            "original": "https://assets.newsweek.com/wp-content/uploads/2025/08/2711104-home-destroyed-california.jpg?w=1600&h=900&q=88",
+            "logo": false
+          },
+          "age": "August 28, 2025"
+        },
+        {
+          "title": "Home Insurance Rates by State for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/homeowners-insurance/states/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Data from the Insurance Information Institute show that tornadoes and wildfires are a present threat for those living in the Lone Star State. Flooding is also a significant concern. However, some extreme weather, like hurricanes, are only a threat in certain parts of the state. Avg. premium for $300k dwelling coverage $ /yr Best home insurance in Texas",
+          "page_age": "2025-11-07T06:59:24",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/homeowners-insurance/states/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "\u203a insurance  \u203a homeowners-insurance  \u203a states"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/UdZMuUweafm7d_tVmT907gHx8bCalm1aMmKX38fgzRU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvMTI4/MHg3MjAvMzQxMTZk/MDA5MS9ob21lb3du/ZXJzLWluc3VyYW5j/ZS1yYXRlcy1ieS1z/dGF0ZS0xLTEuanBn",
+            "original": "https://a.storyblok.com/f/102997/1280x720/34116d0091/homeowners-insurance-rates-by-state-1-1.jpg",
+            "logo": false
+          },
+          "age": "12 hours ago"
+        },
+        {
+          "title": "Average Cost of Car Insurance in the US for 2025",
+          "url": "https://www.experian.com/blogs/ask-experian/average-cost-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Different states have different ... premiums. Here&#x27;s the average cost of full coverage car insurance by state and how it differs from the national full coverage policy average of $2,899 annually or $242 per month.",
+          "page_age": "2025-10-15T05:30:10",
+          "profile": {
+            "name": "Experian",
+            "url": "https://www.experian.com/blogs/ask-experian/average-cost-car-insurance/",
+            "long_name": "experian.com",
+            "img": "https://imgs.search.brave.com/Kd5ZJX6uDioWFoKktbx3echvXfRsNSuzZed0HDR5aiw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDU3YTc1NTdk/MzRhMDkwNjEyODVm/ODgyMzUwZDliOGE2/Y2Q1ODZjYmU5OWU2/MTA4OTk5NzI1NjE0/ZjE0MGJiNS93d3cu/ZXhwZXJpYW4uY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "experian.com",
+            "hostname": "www.experian.com",
+            "favicon": "https://imgs.search.brave.com/Kd5ZJX6uDioWFoKktbx3echvXfRsNSuzZed0HDR5aiw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDU3YTc1NTdk/MzRhMDkwNjEyODVm/ODgyMzUwZDliOGE2/Y2Q1ODZjYmU5OWU2/MTA4OTk5NzI1NjE0/ZjE0MGJiNS93d3cu/ZXhwZXJpYW4uY29t/Lw",
+            "path": "  \u203a home  \u203a insurance  \u203a auto insurance  \u203a average cost of car insurance in the us for 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/y0dtwdfhCc_dJcsX0371_oU3O-E3auNTpJtcvY1U-S4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/ZXhwZXJpYW4uY29t/L2Jsb2dzL2Fzay1l/eHBlcmlhbi93cC1j/b250ZW50L3VwbG9h/ZHMvYXZlcmFnZS1j/b3N0LWF1dG8taW5z/dXJhbmNlLmpwZw",
+            "original": "https://www.experian.com/blogs/ask-experian/wp-content/uploads/average-cost-auto-insurance.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "The top 10 states with the highest car insurance | Insurance.com",
+          "url": "https://www.insurance.com/auto-insurance/top-states-with-the-highest-car-insurance-cost/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Michigan\u2019s average annual car insurance rate is $2,352, which is 24% higher than the national average. According to a 2023 report by the Insurance Information Institute (Triple-I), Michigan has a high number of uninsured drivers.",
+          "page_age": "2025-04-29T08:36:26",
+          "profile": {
+            "name": "Insurance.com",
+            "url": "https://www.insurance.com/auto-insurance/top-states-with-the-highest-car-insurance-cost/",
+            "long_name": "insurance.com",
+            "img": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurance.com",
+            "hostname": "www.insurance.com",
+            "favicon": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8",
+            "path": "  \u203a home  \u203a auto insurance  \u203a the top 10 states with the highest car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/bmbj0rytmujoLhImJYEIZJyqCi9qklPIF40QKbpoR40/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmNlLmNv/bS91cGxvYWRlZGZp/bGVzL21lZGlhL3Rv/cC1zdGF0ZXMtd2l0/aC10aGUtaGlnaGVz/dC1jYXItaW5zdXJh/bmNlLWNvc3QtMS5q/cGc",
+            "original": "https://www.insurance.com/uploadedfiles/media/top-states-with-the-highest-car-insurance-cost-1.jpg",
+            "logo": false
+          },
+          "age": "April 29, 2025"
+        },
+        {
+          "title": "Average Cost of Homeowners Insurance in 2025",
+          "url": "https://www.businessinsider.com/personal-finance/homeowners-insurance/average-homeowners-insurance-cost",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The average annual premium of an HO-3 homeowners insurance policy, the most common type of home insurance, in the United States is $1,411, according to the most recent data from the Insurance Information Institute in 2021.",
+          "page_age": "2025-04-15T21:07:48",
+          "profile": {
+            "name": "Business Insider",
+            "url": "https://www.businessinsider.com/personal-finance/homeowners-insurance/average-homeowners-insurance-cost",
+            "long_name": "businessinsider.com",
+            "img": "https://imgs.search.brave.com/Z6wRqiE6vvL-8sy5MskRt7Tuy1z-PxXnfSbVXVy86vw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTI3NGQzMDdi/ZjEzYTA0MTI4NWMw/MWVjOTFmNDI3Yzdk/NGQzZDE1OTAxOWVj/NWIxMjk3YTcyNTg5/N2FiZjM2Yy93d3cu/YnVzaW5lc3NpbnNp/ZGVyLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "businessinsider.com",
+            "hostname": "www.businessinsider.com",
+            "favicon": "https://imgs.search.brave.com/Z6wRqiE6vvL-8sy5MskRt7Tuy1z-PxXnfSbVXVy86vw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTI3NGQzMDdi/ZjEzYTA0MTI4NWMw/MWVjOTFmNDI3Yzdk/NGQzZDE1OTAxOWVj/NWIxMjk3YTcyNTg5/N2FiZjM2Yy93d3cu/YnVzaW5lc3NpbnNp/ZGVyLmNvbS8",
+            "path": "  \u203a personal finance  \u203a insurance  \u203a homeowners insurance  \u203a average homeowners insurance cost in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/-tLomGkJ-3wjTnFhelw6ibJCd0vJtmcWvkgM3eKD5Ow/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pLmlu/c2lkZXIuY29tLzY3/ZTYwMjJiNjNkNzI3/MjdlMTk4N2MyOD93/aWR0aD0xMjAwJmZv/cm1hdD1qcGVn",
+            "original": "https://i.insider.com/67e6022b63d72727e1987c28?width=1200&format=jpeg",
+            "logo": false
+          },
+          "age": "April 15, 2025"
+        },
+        {
+          "title": "US Auto Insurance Rates by States in 2025 (October)",
+          "url": "https://beinsure.com/us-auto-insurance-rates-states/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "When all age groups are considered, women pay an average of $2,318 annually ($193 per month), according to Experian data. In comparison, men pay an average of $2,331 annually or $194 per month.",
+          "page_age": "2025-10-21T22:56:39",
+          "profile": {
+            "name": "Bloomberg",
+            "url": "https://beinsure.com/us-auto-insurance-rates-states/",
+            "long_name": "beinsure.com",
+            "img": "https://imgs.search.brave.com/IYSuEpMwpB2d9p5ygbptlMoSIOEaWUa8hId3-X3h87M/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYmRlYjk0MjQ1/ODQyNDEzOGY5MzBk/ZTU1MTBhN2I1YmM0/YmVhOTZkMmIzZTM5/NDcxY2EzYWM0NWQx/ZmM0NDQ5NC9iZWlu/c3VyZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "beinsure.com",
+            "hostname": "beinsure.com",
+            "favicon": "https://imgs.search.brave.com/IYSuEpMwpB2d9p5ygbptlMoSIOEaWUa8hId3-X3h87M/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYmRlYjk0MjQ1/ODQyNDEzOGY5MzBk/ZTU1MTBhN2I1YmM0/YmVhOTZkMmIzZTM5/NDcxY2EzYWM0NWQx/ZmM0NDQ5NC9iZWlu/c3VyZS5jb20v",
+            "path": "  \u203a insurance  \u203a car & auto insurance  \u203a us auto insurance rates by states in 2025 (october)"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/-zUuM-t3v2WvY6XNtXfLBmVZFAr-zRRlkPf6iMUB3YE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9iZWlu/c3VyZS5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMDkv/MS00LmpwZw",
+            "original": "https://beinsure.com/wp-content/uploads/2023/09/1-4.jpg",
+            "logo": false
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "Average Cost of Car Insurance in New York State for 2025",
+          "url": "https://www.experian.com/blogs/ask-experian/average-cost-car-insurance-new-york/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Because women are statistically ... Institute. In New York state, women pay an average of $3,086 annually or $257 per month for car insurance and men pay $3,525 annually or $294 per month....",
+          "page_age": "2025-10-15T05:30:41",
+          "profile": {
+            "name": "Experian",
+            "url": "https://www.experian.com/blogs/ask-experian/average-cost-car-insurance-new-york/",
+            "long_name": "experian.com",
+            "img": "https://imgs.search.brave.com/Kd5ZJX6uDioWFoKktbx3echvXfRsNSuzZed0HDR5aiw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDU3YTc1NTdk/MzRhMDkwNjEyODVm/ODgyMzUwZDliOGE2/Y2Q1ODZjYmU5OWU2/MTA4OTk5NzI1NjE0/ZjE0MGJiNS93d3cu/ZXhwZXJpYW4uY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "experian.com",
+            "hostname": "www.experian.com",
+            "favicon": "https://imgs.search.brave.com/Kd5ZJX6uDioWFoKktbx3echvXfRsNSuzZed0HDR5aiw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDU3YTc1NTdk/MzRhMDkwNjEyODVm/ODgyMzUwZDliOGE2/Y2Q1ODZjYmU5OWU2/MTA4OTk5NzI1NjE0/ZjE0MGJiNS93d3cu/ZXhwZXJpYW4uY29t/Lw",
+            "path": "  \u203a home  \u203a insurance  \u203a auto insurance  \u203a average cost of car insurance in new york state for 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/3htU_usZNZKyaZmY4CNl5zZAspvYY7eOtCwxF0uPNig/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/ZXhwZXJpYW4uY29t/L2Jsb2dzL2Fzay1l/eHBlcmlhbi93cC1j/b250ZW50L3VwbG9h/ZHMvYXZlcmFnZS1j/b3N0LWNhci1pbnN1/cmFuY2UtbmV3LXlv/cmsuanBn",
+            "original": "https://www.experian.com/blogs/ask-experian/wp-content/uploads/average-cost-car-insurance-new-york.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "Insurance Industry at a Glance | III",
+          "url": "https://www.iii.org/publications/a-firm-foundation-how-insurance-supports-the-economy/introduction/insurance-industry-at-a-glance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "U.S. insurance industry net premiums written totaled $1.7 trillion in 2024, with premiums recorded by property/casualty (P/C) insurers accounting for 53.1 percent, and premiums by life/annuity insurers accounting for 46.9 percent, according ...",
+          "page_age": "2025-06-23T20:36:30",
+          "profile": {
+            "name": "III",
+            "url": "https://www.iii.org/publications/a-firm-foundation-how-insurance-supports-the-economy/introduction/insurance-industry-at-a-glance",
+            "long_name": "iii.org",
+            "img": "https://imgs.search.brave.com/YIXEDJWzjNE66EJtMGADK1Cxa8hN-YIMUEucmcBl8S0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTJlYjRkNzMw/YjM2NGRjODYwNTg5/NjE1Y2I5OWNhNjkw/OGE1YjUyYjk5MjVj/YzMzYTQ2ZDMzZTg5/MWU2ZDA5My93d3cu/aWlpLm9yZy8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "iii.org",
+            "hostname": "www.iii.org",
+            "favicon": "https://imgs.search.brave.com/YIXEDJWzjNE66EJtMGADK1Cxa8hN-YIMUEucmcBl8S0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTJlYjRkNzMw/YjM2NGRjODYwNTg5/NjE1Y2I5OWNhNjkw/OGE1YjUyYjk5MjVj/YzMzYTQ2ZDMzZTg5/MWU2ZDA5My93d3cu/aWlpLm9yZy8",
+            "path": "\u203a publications  \u203a a-firm-foundation-how-insurance-supports-the-economy  \u203a introduction  \u203a insurance-industry-at-a-glance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/fVXfuOFDTc07NnghE8oCKgYKDFiy8ln892JPDJv202s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aWlpLm9yZy9zaXRl/cy9kZWZhdWx0L2Zp/bGVzL2ltYWdlcy9p/bnN1cmFuY2UtaW5m/b3JtYXRpb24taW5z/dGl0dXRlLWxvZ28t/c2hhcmUtc20uanBn",
+            "original": "https://www.iii.org/sites/default/files/images/insurance-information-institute-logo-share-sm.jpg",
+            "logo": true
+          },
+          "age": "June 23, 2025"
+        },
+        {
+          "title": "Average cost of car insurance in November 2025",
+          "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Gender impacts car insurance pricing in most states. Women tend to pay lower premiums than men, particularly among younger age groups. This is because men generally engage in riskier driving behavior and have a higher rate of accident severity, according to the Insurance Information Institute ...",
+          "page_age": "2025-11-07T05:04:33",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/kS-6az4e1AuNbmx7QPLBzr-uub9l7JUS6ocG95z6O3Y/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvMTI4/MHg3MjAvYTQwMzcz/ZDkyNi9pbnN1cmFu/Y2VfYXZlcmFnZV9j/b3N0X29mX2Nhcl9p/bnN1cmFuY2UuanBn",
+            "original": "https://a.storyblok.com/f/102997/1280x720/a40373d926/insurance_average_cost_of_car_insurance.jpg",
+            "logo": false
+          },
+          "age": "14 hours ago"
+        },
+        {
+          "title": "Florida Peninsula Insurance seeks largest premium decrease in company\u2019s history",
+          "url": "https://www.wesh.com/article/florida-peninsula-insurance-largest-premium-decrease-homeowners/65926307",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "\u201cThe average premium is about $3,800 right now across the state, but there&#x27;s eight other states that are much more expensive, including Tornado Alley states, including other hurricane prone states,&quot; Friedlander said.",
+          "page_age": "2025-08-28T22:50:48",
+          "profile": {
+            "name": "WESH",
+            "url": "https://www.wesh.com/article/florida-peninsula-insurance-largest-premium-decrease-homeowners/65926307",
+            "long_name": "wesh.com",
+            "img": "https://imgs.search.brave.com/T3SwGXetuS_sLuS8fHpS61RRSQrMdiXmiidZkqmJn_w/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2I5NjNhZDEz/MjQ2YmYxMDNhMDNi/OTg3NjM0MDliZTQ3/N2I3ZThhYjM3NTYw/NDllZTliNmE5YmY1/ZGVjM2QyMy93d3cu/d2VzaC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "wesh.com",
+            "hostname": "www.wesh.com",
+            "favicon": "https://imgs.search.brave.com/T3SwGXetuS_sLuS8fHpS61RRSQrMdiXmiidZkqmJn_w/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2I5NjNhZDEz/MjQ2YmYxMDNhMDNi/OTg3NjM0MDliZTQ3/N2I3ZThhYjM3NTYw/NDllZTliNmE5YmY1/ZGVjM2QyMy93d3cu/d2VzaC5jb20v",
+            "path": "\u203a article  \u203a florida-peninsula-insurance-largest-premium-decrease-homeowners  \u203a 65926307"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/QbP7j6UQeBL-edK4Rcm2Xh9BaB-KZHjZtlBaBgd6EOQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9rdWJy/aWNrLmh0dmFwcHMu/Y29tL3ZpZHRodW1i/LzllODc4OWI5LTBi/ZjItNGRkOS1hNmQx/LWE3MGRlYWIzODYy/OS9jYzZhYWY0OS1l/MGVhLTRiZTQtOWY3/Ni04NjRjN2VlZjM4/YjcuanBnP2Nyb3A9/MC43NTF4dzowLjc0/OXhoOzAuMDczM3h3/LDAuMDQwNXhoJnJl/c2l6ZT0xMjAwOio",
+            "original": "https://kubrick.htvapps.com/vidthumb/9e8789b9-0bf2-4dd9-a6d1-a70deab38629/cc6aaf49-e0ea-4be4-9f76-864c7eef38b7.jpg?crop=0.751xw:0.749xh;0.0733xw,0.0405xh&resize=1200:*",
+            "logo": false
+          },
+          "age": "August 28, 2025"
+        },
+        {
+          "title": "Car Insurance Rates by State (November 2025)",
+          "url": "https://insurify.com/car-insurance/states/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Location \u2014 all the way down to your ZIP code in many states \u2014 affects your car insurance rates significantly. But it\u2019s just one of many factors auto insurers consider, including: Having full coverage or liability only, increasing your liability limits, and qualifying for auto insurance discounts will all change your premium. Your driving experience matters. Teens pay about 73% more than average for car insurance, while drivers in their 60s pay 27% less, according to Insurify data.",
+          "page_age": "2025-11-05T19:00:00",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/car-insurance/states/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a car insurance  \u203a states"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/WbtP2Iw-zlPjUZ_MvcNUF1QT9NBpKOuMWPkP0eF-Fa8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xNjIyNzMvMTg1/NngxMzkyLzExYjNj/MWYzZjIvY2FyLXRv/eW90YS1jb3JvbGxh/LWFtZXRoeXN0LnBu/Zw",
+            "original": "https://a.storyblok.com/f/162273/1856x1392/11b3c1f3f2/car-toyota-corolla-amethyst.png",
+            "logo": false
+          },
+          "age": "2 days ago"
+        },
+        {
+          "title": "Average Cost of Car Insurance in Illinois for 2025",
+          "url": "https://www.experian.com/blogs/ask-experian/average-cost-car-insurance-illinois/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "A proposed bill under consideration ... premiums. Currently, though, insurance companies in Illinois can take gender into account when determining your insurance rates. Women are statistically less likely to be involved in serious car accidents or get DUIs, according to the Insurance Information Institute. As a result, women may pay less for car insurance\u2014but that&#x27;s not always the case. Source: Experian Note: Costs above are a blended average of full and ...",
+          "page_age": "2025-10-14T04:30:21",
+          "profile": {
+            "name": "Experian",
+            "url": "https://www.experian.com/blogs/ask-experian/average-cost-car-insurance-illinois/",
+            "long_name": "experian.com",
+            "img": "https://imgs.search.brave.com/Kd5ZJX6uDioWFoKktbx3echvXfRsNSuzZed0HDR5aiw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDU3YTc1NTdk/MzRhMDkwNjEyODVm/ODgyMzUwZDliOGE2/Y2Q1ODZjYmU5OWU2/MTA4OTk5NzI1NjE0/ZjE0MGJiNS93d3cu/ZXhwZXJpYW4uY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "experian.com",
+            "hostname": "www.experian.com",
+            "favicon": "https://imgs.search.brave.com/Kd5ZJX6uDioWFoKktbx3echvXfRsNSuzZed0HDR5aiw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDU3YTc1NTdk/MzRhMDkwNjEyODVm/ODgyMzUwZDliOGE2/Y2Q1ODZjYmU5OWU2/MTA4OTk5NzI1NjE0/ZjE0MGJiNS93d3cu/ZXhwZXJpYW4uY29t/Lw",
+            "path": "  \u203a home  \u203a insurance  \u203a auto insurance  \u203a average cost of car insurance in illinois for 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/-leAuOY1TUN1GHIjHy8RwLQbyzpX12Hw1-n5IAwk0fQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/ZXhwZXJpYW4uY29t/L2Jsb2dzL2Fzay1l/eHBlcmlhbi93cC1j/b250ZW50L3VwbG9h/ZHMvYXZlcmFnZS1j/b3N0LWNhci1pbnN1/cmFuY2UtaWxsaW5v/aXMuanBn",
+            "original": "https://www.experian.com/blogs/ask-experian/wp-content/uploads/average-cost-car-insurance-illinois.jpg",
+            "logo": false
+          },
+          "age": "4 weeks ago"
+        },
+        {
+          "title": "Homeowners Insurance Has Increased Over 50% in These States",
+          "url": "https://www.cnbc.com/select/homeowners-insurance-has-skyrocketed-over-50percent-in-these-states/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In Florida, a homeowner with fair credit and $350,000 in dwelling coverage could expect to pay $9,462 a year, or $789 a month, in 2024. That&#x27;s a bump of nearly 30% from 2021, when the same policy would average $7,344.",
+          "page_age": "2025-05-09T20:16:47",
+          "profile": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/select/homeowners-insurance-has-skyrocketed-over-50percent-in-these-states/",
+            "long_name": "Consumer News and Business Channel",
+            "img": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cnbc.com",
+            "hostname": "www.cnbc.com",
+            "favicon": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+            "path": "  \u203a cnbc select  \u203a insurance  \u203a homeowners insurance has soared over 50% in these states"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Uh1tn-B49uJXJWTAq_8b8EA1xD6owldVpudSos5vICQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDcyNDA0NDYt/MTY4MzkwNjkzMjYy/NS1nZXR0eWltYWdl/cy0xNDA1NjM4OTA2/LWhvdXNlcGlnZmlu/Z2VyLmpwZWc_dj0x/NzQ1ODQzMTI1",
+            "original": "https://image.cnbcfm.com/api/v1/image/107240446-1683906932625-gettyimages-1405638906-housepigfinger.jpeg?v=1745843125",
+            "logo": false
+          },
+          "age": "May 9, 2025"
+        },
+        {
+          "title": "Cheap Home Insurance Quotes by State (2025) | Insurify",
+          "url": "https://insurify.com/homeowners-insurance/states/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Unless otherwise specified, quoted rates reflect the average cost for homeowners with no prior claims and good credit with a home construction year of 1980. The default coverage assumptions include: ... Additional data points beyond these default values are sourced from Insurify\u2019s proprietary database. Rates are updated monthly. NY Times. &quot;Home Insurance Rates in America are Wildly Distorted. Here&#x27;s Why..&quot; Insurance Information Institute.",
+          "page_age": "2025-10-07T19:00:00",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/homeowners-insurance/states/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a homeowners insurance  \u203a states"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Gc5IcEOixkHZL1oGrYAcH4PzcafcFqUA3D7tq4a8ROA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xNjIyNzMvMTAy/NHg3NjgvN2RmMDI3/NWE3Ny9ob21lLXBs/YWNlaG9sZGVyLnBu/Zw",
+            "original": "https://a.storyblok.com/f/162273/1024x768/7df0275a77/home-placeholder.png",
+            "logo": false
+          },
+          "age": "1 month ago"
+        },
+        {
+          "title": "Average Car Insurance Cost: How Much Is Car Insurance in 2025?",
+          "url": "https://www.moneygeek.com/insurance/auto/what-is-the-average-cost-of-car-insurance-month-year/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State restrictions for age as a car insurance cost factor: Hawaii and Massachusetts don&#x27;t allow insurers to use age as a rating factor, though some states like California require additional testing for license renewals at certain ages. \u2014 Mark Friedlander, Director, Corporate Communications, Insurance Information Institute \u00b7 Traffic violations result in car insurance cost increases, with premiums rising 6% to 75% depending on the severity of the violation.",
+          "page_age": "2025-10-28T16:43:19",
+          "profile": {
+            "name": "MoneyGeek",
+            "url": "https://www.moneygeek.com/insurance/auto/what-is-the-average-cost-of-car-insurance-month-year/",
+            "long_name": "moneygeek.com",
+            "img": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "moneygeek.com",
+            "hostname": "www.moneygeek.com",
+            "favicon": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8",
+            "path": "  \u203a home  \u203a insurance  \u203a compare car insurance  \u203a average cost of car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/inQTPyDEumo2u8EzYUwfIfe4bZ3-oDfp64Z2lfhDs0g/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbW9uZXlnZWVr/L2ltYWdlL3VwbG9h/ZC9jX3NjYWxlLHFf/YXV0bzplY28sd18x/MjAwLGZfYXV0byxm/bF9sb3NzeS92MTc1/Njg5OTEyNC9BdmVy/YWdlX0Nvc3RfYnlf/Q292ZXJhZ2VfVHlw/ZV84NDE3NWE2ZGJm/LnBuZw",
+            "original": "https://res.cloudinary.com/moneygeek/image/upload/c_scale,q_auto:eco,w_1200,f_auto,fl_lossy/v1756899124/Average_Cost_by_Coverage_Type_84175a6dbf.png",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Average homeowners insurance rates are nearing $3,000 \u2014 here's how to save in 2025",
+          "url": "https://www.cnbc.com/select/how-to-save-on-homeowners-insurance-2025/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The average homeowners premium for someone with excellent credit is $2,260, according to The Zebra, while someone with poor credit will average $7,260 (That&#x27;s a difference of 221%).",
+          "page_age": "2025-09-23T17:39:10",
+          "profile": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/select/how-to-save-on-homeowners-insurance-2025/",
+            "long_name": "Consumer News and Business Channel",
+            "img": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cnbc.com",
+            "hostname": "www.cnbc.com",
+            "favicon": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+            "path": "  \u203a cnbc select  \u203a insurance  \u203a average homeowners insurance rates are nearing $3,000 \u2014 here's how to save in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/PRf5YvEM1tctQ3DcBCf_4qFzKvps22n9lRDwMxUIVLw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDcxMTkxMTAt/MTY2MzI0NzU4NDUw/Mi1nZXR0eWltYWdl/cy0xMTQzMzUxNjcx/LTU0NjY2LmpwZWc_/dj0xNjgxMjMxOTcw",
+            "original": "https://image.cnbcfm.com/api/v1/image/107119110-1663247584502-gettyimages-1143351671-54666.jpeg?v=1681231970",
+            "logo": false
+          },
+          "age": "September 23, 2025"
+        },
+        {
+          "title": "These car insurance companies are the least likely to raise rates",
+          "url": "https://www.cnbc.com/select/car-insurance-companies-least-likely-raise-rates/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Bumping it all the way up to $1,000 could save you 40% or more. The key is making sure you can afford the increased out-of-pocket expense. In September 2025, the nationwide average for full coverage was $2,671 a year.",
+          "page_age": "2025-09-29T19:21:58",
+          "profile": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/select/car-insurance-companies-least-likely-raise-rates/",
+            "long_name": "Consumer News and Business Channel",
+            "img": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cnbc.com",
+            "hostname": "www.cnbc.com",
+            "favicon": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+            "path": "  \u203a cnbc select  \u203a insurance  \u203a these car insurance companies are the least likely to raise rates"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/X9oYChntQqe3k-7tdili9Wht-Mnx6r381HKJy_1NZKY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDgyMDQ3ODkt/MTc1ODk5MzQxNTU2/Ny1nZXR0eWltYWdl/cy0xODczNDAyMTU0/LWRyaXZlcmNhcmhh/bmRtb25leS5qcGVn/P3Y9MTc1ODk5MzQ3/Ng",
+            "original": "https://image.cnbcfm.com/api/v1/image/108204789-1758993415567-gettyimages-1873402154-drivercarhandmoney.jpeg?v=1758993476",
+            "logo": false
+          },
+          "age": "September 29, 2025"
+        },
+        {
+          "title": "Life Insurance Statistics in 2025 | The Zebra",
+          "url": "https://www.thezebra.com/resources/research/life-insurance-statistics/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The following statistics were taken from reports by The Insurance Information Institute, Statistica, and Policy Genius. Accident and health insurance accounted for 27% of direct premiums written. In 2019, insurance claims and benefits totaled $762.1 billion. The largest payout in 2019 was $339.6 billion, for surrender benefits and withdrawals from life insurance contracts. 52% of Americans think life insurance is too expensive. Life direct premiums are valued at almost $547 billion in the United States.",
+          "page_age": "2025-11-03T15:27:51",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/resources/research/life-insurance-statistics/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a resource center  \u203a research  \u203a life insurance statistics"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/tbd0UaOOvIXqi69W48G0j_FAdMT0JxNy_qR5HBkqeCs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9zdGF0/aWMvM2I5NGRmMy96/ZnJvbnQvaW1nL2l6/LXNoYXJlLWxvZ28u/cG5n",
+            "original": "https://cdn.thezebra.com/zfront/static/3b94df3/zfront/img/iz-share-logo.png",
+            "logo": true
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "Illinois nixes insurance rate bill amid affordability, competition concerns | Insurance Business America",
+          "url": "https://www.insurancebusinessmag.com/us/news/regulatory/illinois-nixes-insurance-rate-bill-amid-affordability-competition-concerns-555510.aspx",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "An APCIA spokesperson noted, \u201cIllinois&#x27; insurance market is among the most competitive in the nation, with more than 200 companies offering coverage and auto rates well below the national average.\u201d \u00b7 The spokesperson also cited research indicating that premiums in prior-approval states are about 20% higher than in states like Illinois.",
+          "page_age": "2025-11-05T12:26:00",
+          "profile": {
+            "name": "Insurance Business America",
+            "url": "https://www.insurancebusinessmag.com/us/news/regulatory/illinois-nixes-insurance-rate-bill-amid-affordability-competition-concerns-555510.aspx",
+            "long_name": "insurancebusinessmag.com",
+            "img": "https://imgs.search.brave.com/wSqy0D5CYsTkoVvYpYyzSqvim_TavRxGYxAzncAes7s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2NlNGVmYjdh/YzAwNDJmMzQ2YTZm/M2QwZmJhODY3NGE1/NWYzYmRhNWY0NGFh/Mjg0NjA0ZGQyNGNk/Nzg0MTBiNC93d3cu/aW5zdXJhbmNlYnVz/aW5lc3NtYWcuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurancebusinessmag.com",
+            "hostname": "www.insurancebusinessmag.com",
+            "favicon": "https://imgs.search.brave.com/wSqy0D5CYsTkoVvYpYyzSqvim_TavRxGYxAzncAes7s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2NlNGVmYjdh/YzAwNDJmMzQ2YTZm/M2QwZmJhODY3NGE1/NWYzYmRhNWY0NGFh/Mjg0NjA0ZGQyNGNk/Nzg0MTBiNC93d3cu/aW5zdXJhbmNlYnVz/aW5lc3NtYWcuY29t/Lw",
+            "path": "  \u203a regulatory  \u203a illinois nixes insurance rate bill amid affordability, competition concerns"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ueJoB_eSJvPKfAS5aEHZgRLuR1XWrNAUFQ79SOixdBM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4t/cmVzLmtleW1lZGlh/LmNvbS9jbXMvaW1h/Z2VzL3VzLzAwMy8w/MzgzXzYzODk3OTQy/MjEzNzk0MDg1OS5q/cGc",
+            "original": "https://cdn-res.keymedia.com/cms/images/us/003/0383_638979422137940859.jpg",
+            "logo": false
+          },
+          "age": "2 days ago"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

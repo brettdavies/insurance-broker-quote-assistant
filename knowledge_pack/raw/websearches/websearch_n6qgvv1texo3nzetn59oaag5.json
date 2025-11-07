@@ -1,0 +1,798 @@
+{
+  "websearch_id": "websearch_n6qgvv1texo3nzetn59oaag5",
+  "search_id": "search_xmyygzg97453xq7iev2njoj8",
+  "timestamp": "2025-11-07T12:31:19.383556",
+  "startedAt": "2025-11-07T12:31:19.383556",
+  "completedAt": "2025-11-07T12:31:21.186323",
+  "durationSeconds": 1.8,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:statefarm.com specialty insurance",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:statefarm.com specialty insurance",
+      "show_strict_warning": false,
+      "cleaned": "specialty insurance",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "specialty insurance",
+        "sites": [
+          "statefarm.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "What Are the Different Types of Insurance? - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/residence/what-are-all-the-different-types-of-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Here you\u2019ll find some of the more common types of insurance along with a short description of each, a few examples of available coverages, and resources where you can find more detailed information on each.",
+          "page_age": "2025-10-15T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/residence/what-are-all-the-different-types-of-insurance",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a residence  \u203a what are the different types of insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ryHvrQhmMfA6pfi0qhUuhiCPE5OovUus89OYvN3EOeE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L3doYXQtYXJlLWFs/bC10aGUtZGlmZmVy/ZW50LXR5cGVzLW9m/LWluc3VyYW5jZS5q/cGc",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/what-are-all-the-different-types-of-insurance.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "State Farm\u00ae is here to help",
+          "url": "https://newsroom.statefarm.com/state-farm-is-here-to-help-california-customers-impacted-by-wildfires/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Our focus continues to be on supporting our customers in their recovery from the devastating 2025 wildfires in Los Angeles. Effective April 14, State Farm General Insurance Company increased advance contents payments to customers with total losses from 50% of their contents limit to 65% without requiring an inventory.",
+          "page_age": "2025-08-25T18:50:31",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/state-farm-is-here-to-help-california-customers-impacted-by-wildfires/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a state-farm-is-here-to-help-california-customers-impacted-by-wildfires"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/jlC3IAmx6QIeQ_hCowz9k0_9Hb2-0sSQzaEf4Yapk7E/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vdXBsb2Fk/cy8xNDQxLzhiOTUy/OWQzLTY0M2MtNGU4/OS04MGE5LTA2Yzk4/OTMwZDA0OS8xOTIw/X3dpbGRmaXJlLXJl/c3BvbnNlLXByZXZp/ZXcucG5nPzEwMDAw",
+            "original": "https://content.presspage.com/uploads/1441/8b9529d3-643c-4e89-80a9-06c98930d049/1920_wildfire-response-preview.png?10000",
+            "logo": false
+          },
+          "age": "August 25, 2025"
+        },
+        {
+          "title": "U.S. Bank personal loans now available through State Farm\u00ae",
+          "url": "https://newsroom.statefarm.com/us-bank-state-farm-personal-loans/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Its more than 19,400 agents and 67,000 employees serve over 91 million policies and accounts \u2013 including auto, fire, life, health, commercial policies and financial services accounts. Commercial auto insurance, along with coverage for renters, business owners, boats and motorcycles, is also available.",
+          "page_age": "2025-04-03T13:56:15",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/us-bank-state-farm-personal-loans/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a us-bank-state-farm-personal-loans"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/H-QfgQImtgeSUXbxxC39QbKl_PwV4EqgalZSFCFn13c/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vdXBsb2Fk/cy8xNDQxLzkyODMy/NDkxLWUzMGItNGZh/NS04MDM1LTI5OWRj/MDhiMDFhOS8xOTIw/X2xvZ28tcHJlc3Ny/ZWxlYXNlLTMucG5n/PzEwMDAw",
+            "original": "https://content.presspage.com/uploads/1441/92832491-e30b-4fa5-8035-299dc08b01a9/1920_logo-pressrelease-3.png?10000",
+            "logo": true
+          },
+          "age": "April 3, 2025"
+        },
+        {
+          "title": "Drive Safe and Save Business - State Farm\u00ae",
+          "url": "https://www.statefarm.com/insurance/small-business/commercial-auto/business-drive-safe-and-save",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm Mutual Automobile Insurance Company State Farm Indemnity Company State Farm Fire and Casualty Company State Farm General Insurance Company State Farm Life Insurance Company (Not licensed in MA, NY or WI) State Farm Life and Accident Assurance Company (Licensed in NY and WI) Bloomington, IL",
+          "page_age": "2025-04-16T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/insurance/small-business/commercial-auto/business-drive-safe-and-save",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a insurance  \u203a small business  \u203a commercial auto  \u203a drive safe & save business"
+          },
+          "age": "April 16, 2025"
+        },
+        {
+          "title": "State Farm in California",
+          "url": "https://newsroom.statefarm.com/state-farm-general-insurance-company-update-on-california-2-2025/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The California FAIR Plan, with the approval of Insurance Commissioner Lara, can assess insurers licensed to sell property insurance in California if the FAIR Plan needs additional funds to help pay for property losses. Following the January 2025 wildfires in Los Angeles County, California\u2019s ...",
+          "page_age": "2025-06-30T05:41:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/state-farm-general-insurance-company-update-on-california-2-2025/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a state-farm-general-insurance-company-update-on-california-2-2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YVmJZtJCqCB4tpzwJtXCDgRC7cp5p1sLLtCkHfMD3W4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vdXBsb2Fk/cy8xNDQxL2Y1M2Fj/NzliLTUyMDMtNDc5/OS1iNWIyLTI4Mjdi/MTliYmM0OS8xOTIw/XzI1MDIxNC1jYWxp/Zm9ybmlhLXVwZGF0/ZS1idy5wbmc_MTAw/MDA",
+            "original": "https://content.presspage.com/uploads/1441/f53ac79b-5203-4799-b5b2-2827b19bbc49/1920_250214-california-update-bw.png?10000",
+            "logo": false
+          },
+          "age": "June 30, 2025"
+        },
+        {
+          "title": "State Farm\u00ae in California: Understanding the issues",
+          "url": "https://newsroom.statefarm.com/state-farm-in-california-understanding-the-issues/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Espa\u00f1olProudly serving Californians since 1928, State Farm (State Farm Mutual Automobile Insurance Company, State Farm General Insurance Company) is the leading auto and homeowners insurer in California. We help our customers protect what matters most and recover from the unexpected.For many ...",
+          "page_age": "2025-08-25T18:38:06",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/state-farm-in-california-understanding-the-issues/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a state-farm-in-california-understanding-the-issues"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/d0ZaqicUUm2FrIRqt8Y4qlPbUUT-qzVCvY1Mx4ABI5g/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vdXBsb2Fk/cy8xNDQxLzM0NDYz/MDE4LTkyMDAtNGQ1/NC04NTcwLTc5YjBi/ODQxNmRkOC8xOTIw/X2hvbWVpbmRlbG1h/cmNhLmpwZz8xMDAw/MA",
+            "original": "https://content.presspage.com/uploads/1441/34463018-9200-4d54-8570-79b0b8416dd8/1920_homeindelmarca.jpg?10000",
+            "logo": false
+          },
+          "age": "August 25, 2025"
+        },
+        {
+          "title": "State Farm\u00ae Names Joe Park as Executive Vice President and Chief Digital & Information Officer",
+          "url": "https://newsroom.statefarm.com/state-farm-names-joe-park-as-executive-vice-president-and-chief-digital--information-officer/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Its more than 19,400 agents and 67,000 employees serve over 91 million policies and accounts \u2013 including auto, fire, life, health, commercial policies and financial services accounts. Commercial auto insurance, along with coverage for renters, business owners, boats and motorcycles, is also available.",
+          "page_age": "2025-09-10T19:25:46",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/state-farm-names-joe-park-as-executive-vice-president-and-chief-digital--information-officer/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a state-farm-names-joe-park-as-executive-vice-president-and-chief-digital--information-officer"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/8sASD0Z0WNopAMjIjkSFtrKclDeCgzU-5Yb9ZUfCn28/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vY2xpZW50/cy9vXzE0NDEuanBn",
+            "original": "https://content.presspage.com/clients/o_1441.jpg",
+            "logo": false
+          },
+          "age": "September 10, 2025"
+        },
+        {
+          "title": "Comprehensive Coverage: Helping Protect Your Vehicle - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/importance-of-comprehensive-coverage",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "From unpredictable weather events to theft and vandalism, your car might face various threats beyond just accidents on the road. Learn why comprehensive auto insurance coverage is important when helping protect your vehicle.",
+          "page_age": "2025-11-05T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/importance-of-comprehensive-coverage",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a comprehensive coverage: helping protect your vehicle"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ko4dOas3sVgCS44Ix39xN8NKG1b8pNUBauDxQhii_0E/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L2ltcG9ydGFuY2Ut/b2YtY29tcHJlaGVu/c2l2ZS1jb3ZlcmFn/ZS5qcGc",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/importance-of-comprehensive-coverage.jpg",
+            "logo": false
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "What To Know About Disability Insurance - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/health-insurance/what-you-need-to-know-about-disability-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Social Security Disability Insurance is the government-sponsored form of disability insurance that\u2019s paid for by Social Security taxes. As such, tax-paying U.S. citizens are automatically able to apply for it without an additional recurring cost.",
+          "page_age": "2025-07-04T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/health-insurance/what-you-need-to-know-about-disability-insurance",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a health insurance  \u203a what to know about disability insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/2CmJ1Qc7c8oN-qIKr19dzmMzcyPDAFAc-iB_PpWH3Ig/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L3NpLWRpc2FiaWxp/dHktaW5zdXJhbmNl/LXdpZGUuanBn",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/si-disability-insurance-wide.jpg",
+            "logo": false
+          },
+          "age": "July 4, 2025"
+        },
+        {
+          "title": "What Is Medical Payments Coverage? - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/what-is-medical-payments-coverage",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "When buying Medical Payments Coverage as part of your auto insurance, you can choose a coverage limit \u2014 the maximum amount your insurer will pay per person for each accident. Common limits range from $1,000 to $10,000 per person, though some insurers will offer higher limits like $25,000 or even $50,000 if available in your state.",
+          "page_age": "2025-11-04T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/what-is-medical-payments-coverage",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a what is medical payments coverage?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/lKu0BdcLsRmEsel8FLJMKSsJhThAJjm4PJmVQ8DY06s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L3doYXQtaXMtbWVk/aWNhbC1wYXltZW50/cy1jb3ZlcmFnZS5q/cGc",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/what-is-medical-payments-coverage.jpg",
+            "logo": false
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "State Farm\u00ae releases 2024 Impact Report",
+          "url": "https://newsroom.statefarm.com/state-farm-releases-2024-impact-report/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Its more than 19,200 agent offices and 65,000 employees serve over 96 million policies and accounts \u2013 including auto, fire, life, health, commercial policies and financial services accounts. Commercial auto insurance, along with coverage for renters, business owners, boats and motorcycles, is also available.",
+          "page_age": "2025-06-16T14:16:53",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/state-farm-releases-2024-impact-report/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a state-farm-releases-2024-impact-report"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/-H1hfWnfv436gAYRNFczhyqUafolLzeocK0mKWo38rY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vdXBsb2Fk/cy8xNDQxL2M2Nzgz/ODc3LWEzNGYtNGMz/Zi1iNGZjLWE3NmMx/MjY3ZDVmZC8xOTIw/X2dhbC0wODkwLmpw/Zz8xMDAwMA",
+            "original": "https://content.presspage.com/uploads/1441/c6783877-a34f-4c3f-b4fc-a76c1267d5fd/1920_gal-0890.jpg?10000",
+            "logo": false
+          },
+          "age": "June 16, 2025"
+        },
+        {
+          "title": "Is Medical Payments Coverage Worth It? - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/is-medical-payments-coverage-worth-it",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Unlike required liability coverage \u2014 which pays for injuries you cause to others, Med Pay covers you and your passengers, potentially providing prompt payment for accident-related medical expenses and helping fill potential gaps left by health insurance.",
+          "page_age": "2025-10-08T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/is-medical-payments-coverage-worth-it",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a is medical payments coverage worth it?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/7TtGH9pfWLdQC9zQZydnZJqPwMxYe6jBOCZ5GmgJsF0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L2lzLW1lZGljYWwt/cGF5bWVudHMtY292/ZXJhZ2Utd29ydGgt/aXQuanBn",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/is-medical-payments-coverage-worth-it.jpg",
+            "logo": false
+          },
+          "age": "1 month ago"
+        },
+        {
+          "title": "Intent to Enter Massachusetts Marketplace",
+          "url": "https://newsroom.statefarm.com/statefarm-to-enter-massachusetts/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Its more than 19,400 agents and 67,000 employees serve over 91 million policies and accounts \u2013 including auto, fire, life, health, commercial policies and financial services accounts. Commercial auto insurance, along with coverage for renters, business owners, boats and motorcycles, is also available.",
+          "page_age": "2025-10-14T14:53:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/statefarm-to-enter-massachusetts/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a statefarm-to-enter-massachusetts"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/8sASD0Z0WNopAMjIjkSFtrKclDeCgzU-5Yb9ZUfCn28/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vY2xpZW50/cy9vXzE0NDEuanBn",
+            "original": "https://content.presspage.com/clients/o_1441.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "Medical Payments vs Liability Auto Insurance Coverage - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/medical-payments-vs-liability-coverage",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Med Pay can pay for injuries to occupants of your vehicle, regardless of fault. Understanding how they differ and comparing their benefits can help you make informed decisions about your auto insurance needs.",
+          "page_age": "2025-10-08T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/medical-payments-vs-liability-coverage",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a medical payments vs liability auto insurance coverage"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/3vB6sBC2hMiY2rVQTS83OnSwXpxoadlW7vZD2RujTXg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L01lZGljYWwtcGF5/bWVudHMtdnMtbGlh/YmlsaXR5LWNvdmVy/YWdlLmpwZw",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/Medical-payments-vs-liability-coverage.jpg",
+            "logo": false
+          },
+          "age": "1 month ago"
+        },
+        {
+          "title": "Car Stolen/Hail Damage? Help Understand Comprehensive Insurance - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/understanding-comprehensive-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Overview: Comprehensive auto insurance helps provide coverage on unexpected damage to a covered vehicle not caused by a crash or rollover. Comprehensive coverage covers damages resulting from incidents such as hail, falling objects, vandalism, ...",
+          "page_age": "2025-08-07T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/understanding-comprehensive-insurance",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a car stolen/hail damage? help understand comprehensive insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Nt3DYzAZrFFL_OhcSl4oIxo3CEElMLtmuOFYw8KgeoI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L3VuZGVyc3RhbmRp/bmctY29tcHJlaGVu/c2l2ZS1pbnN1cmFu/Y2UuanBn",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/understanding-comprehensive-insurance.jpg",
+            "logo": false
+          },
+          "age": "August 7, 2025"
+        },
+        {
+          "title": "State Farm\u00ae Announces 2023 Financial Results",
+          "url": "https://newsroom.statefarm.com/2023-financial-results/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The State Farm insurance operations consist of fourteen P-C companies and two life companies, each of which is managed on an individual affiliate level. The P-C companies are primarily engaged in automobile, health, homeowners, commercial multiple peril (CMP) and reinsurance lines of business.",
+          "page_age": "2024-12-17T19:37:54",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/2023-financial-results/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a 2023-financial-results"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/aUNrJ2sG46qe7OlANKShhNALJWFgzVB0dqS6vbjjY_w/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vdXBsb2Fk/cy8xNDQxLzE5MjBf/bG9nby1wcmVzc3Jl/bGVhc2UtMi5wbmc_/MTAwMDA",
+            "original": "https://content.presspage.com/uploads/1441/1920_logo-pressrelease-2.png?10000",
+            "logo": true
+          },
+          "age": "December 17, 2024"
+        },
+        {
+          "title": "Residents Encouraged to Stay Vigilant and Prepared During Peak Hurricane Season",
+          "url": "https://newsroom.statefarm.com/residents-encouraged-to-stay-vigilant-and-prepared-during-peak-hurricane-season/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Its more than 19,400 agents and 67,000 employees serve over 91 million policies and accounts \u2013 including auto, fire, life, health, commercial policies and financial services accounts. Commercial auto insurance, along with coverage for renters, business owners, boats and motorcycles, is also available.",
+          "page_age": "2025-09-26T16:49:45",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/residents-encouraged-to-stay-vigilant-and-prepared-during-peak-hurricane-season/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a residents-encouraged-to-stay-vigilant-and-prepared-during-peak-hurricane-season"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/b38kWDYuPET8xgTBs_ByjqHnHTUiAOo7OTn1jJe7Hik/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vdXBsb2Fk/cy8xNDQxL2IwNGEy/YTQ3LWJhMzUtNDEx/Ni1iNGNlLWRhNDk2/MzMzMzczNi8xOTIw/XzUyNDA1NTMyODk1/LWJmZGFlMTE3MjYt/ay5qcGc_MTAwMDA",
+            "original": "https://content.presspage.com/uploads/1441/b04a2a47-ba35-4116-b4ce-da4963333736/1920_52405532895-bfdae11726-k.jpg?10000",
+            "logo": false
+          },
+          "age": "September 26, 2025"
+        },
+        {
+          "title": "Tips for First Time Car Insurance Buyers - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/first-car-insurance-policy-what-should-you-know",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "We break down tips for first time car insurance buyers, including how to get it, what coverages &amp; discounts to look for and what insurance paperwork you need.",
+          "page_age": "2025-11-05T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/first-car-insurance-policy-what-should-you-know",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a tips for first time car insurance buyers"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/8O4acJDfWfB6U0ySnLqOjZ12SfEbGP4HOSpmsCM6ssQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L2ZpcnN0LWNhci1p/bnN1cmFuY2UtcG9s/aWN5LXdoYXQtc2hv/dWxkLXlvdS1rbm93/LmpwZw",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/first-car-insurance-policy-what-should-you-know.jpg",
+            "logo": false
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "State Farm\u00ae Levels Up Gamerhood Season 4 with Thrilling New Game Elements",
+          "url": "https://newsroom.statefarm.com/gamerhood-season-4/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Its more than 19,400 agents and 67,000 employees serve over 91 million policies and accounts \u2013 including auto, fire, life, health, commercial policies and financial services accounts. Commercial auto insurance, along with coverage for renters, business owners, boats and motorcycles, is also available.",
+          "page_age": "2025-07-03T18:23:25",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/gamerhood-season-4/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a gamerhood-season-4"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/KKfTJQ_FxejpIg3F0ECJHqZHyj-l6JZcIWVlrlwzA_w/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vdXBsb2Fk/cy8xNDQxLzUxYmE0/NDk3LTNiNjctNDBh/Ny1hMjVmLTQ1YzM1/OTIwOGU0OC8xOTIw/X2doNGhlcm9pbWFn/ZXVwZGF0ZWQucG5n/PzEwMDAw",
+            "original": "https://content.presspage.com/uploads/1441/51ba4497-3b67-40a7-a25f-45c359208e48/1920_gh4heroimageupdated.png?10000",
+            "logo": false
+          },
+          "age": "July 3, 2025"
+        },
+        {
+          "title": "Trailer Insurance Coverage - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/small-business/trailer-coverage",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Consider trailer insurance coverage to help protect the value of your trailer.",
+          "page_age": "2025-07-04T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/small-business/trailer-coverage",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a small business  \u203a trailer coverage"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/XzZplnE_XFTHkcOkIX9X9lsUecZAVQ51Nt7FvVDJDEw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L3RyYWlsZXItY292/ZXJhZ2UuanBn",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/trailer-coverage.jpg",
+            "logo": false
+          },
+          "age": "July 4, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

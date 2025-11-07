@@ -1,0 +1,795 @@
+{
+  "websearch_id": "websearch_sznma7xssxv9nlnlyzb3kjdd",
+  "search_id": "search_b59ys04k366goz4tqckeg6ln",
+  "timestamp": "2025-11-07T12:21:34.102697",
+  "startedAt": "2025-11-07T12:21:34.102697",
+  "completedAt": "2025-11-07T12:21:36.091992",
+  "durationSeconds": 1.99,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"State Farm\" \"multi-car\" OR \"multi-line\" discount",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"State Farm\" \"multi-car\" OR \"multi-line\" discount",
+      "show_strict_warning": false,
+      "cleaned": "State Farm multi-car multi-line discount",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "State Farm multi-car multi-line discount"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "How Much Is the State Farm Multi-Policy Discount?",
+          "url": "https://wallethub.com/answers/ci/state-farm-multi-policy-discount-1000060-2140755891/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The State Farm multi-policy discount is up to 17%. Customers can qualify for the State Farm multi-policy discount by purchasing insurance for a vehicle as well as a homeowners, renters, condo, or life insurance policy from State Farm.",
+          "page_age": "2025-06-02T11:33:41",
+          "profile": {
+            "name": "WalletHub",
+            "url": "https://wallethub.com/answers/ci/state-farm-multi-policy-discount-1000060-2140755891/",
+            "long_name": "wallethub.com",
+            "img": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "wallethub.com",
+            "hostname": "wallethub.com",
+            "favicon": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw",
+            "path": "\u203a answers  \u203a ci  \u203a state-farm-multi-policy-discount-1000060-2140755891"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YnFsFD--_0DYDN63YU7RTh6E1ZINWtslBaGMBZrgzuI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbGV0aHViLmNv/bS9pbWFnZXMvd2gy/MDE1L2Fuc3dlcnMv/d2FsbGV0aHViLWFu/c3dlcnNfVjMwYjE2/NmZfLnBuZw",
+            "original": "https://cdn.wallethub.com/images/wh2015/answers/wallethub-answers_V30b166f_.png",
+            "logo": false
+          },
+          "age": "June 2, 2025"
+        },
+        {
+          "title": "Every State Farm Car Insurance Discount Explained (2025) | Compare.com",
+          "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/state-farm-discounts",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Here\u2019s a look at loyalty discounts available from State Farm: Multi-car discount: Insure more than one vehicle with State Farm to save up to 20%. Vehicle owners must be related to qualify.",
+          "page_age": "2025-01-24T19:00:00",
+          "profile": {
+            "name": "Compare",
+            "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/state-farm-discounts",
+            "long_name": "compare.com",
+            "img": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "compare.com",
+            "hostname": "www.compare.com",
+            "favicon": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v",
+            "path": "  \u203a auto insurance  \u203a cheap car insurance  \u203a discounts  \u203a state farm car insurance discounts"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/X7uoZmq64DhCF0sdqp6yR-Tj0CgjqqZjXFUCBi-11Cg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8yOTU1MDgvODAw/eDYwMC81MTZiN2Vj/M2I2L3Jvdy1vZi1j/YXJzLXBhcmtlZC5q/cGc",
+            "original": "https://a.storyblok.com/f/295508/800x600/516b7ec3b6/row-of-cars-parked.jpg",
+            "logo": false
+          },
+          "age": "January 24, 2025"
+        },
+        {
+          "title": "Best State Farm Auto Insurance Discounts in 2025 (Save 50% With These Deals!) | AutoInsurance.org",
+          "url": "https://www.autoinsurance.org/state-farm-auto-insurance-discounts/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If you have a State Farm home or renters policy and also insure multiple vehicles with the company, you can stack the 20% State Farm multi-car discount with your 17% multi-line discount from State Farm for even bigger savings.",
+          "page_age": "2025-08-28T20:49:38",
+          "profile": {
+            "name": "AutoInsurance.org",
+            "url": "https://www.autoinsurance.org/state-farm-auto-insurance-discounts/",
+            "long_name": "autoinsurance.org",
+            "img": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.org",
+            "hostname": "www.autoinsurance.org",
+            "favicon": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv",
+            "path": "  \u203a home  \u203a shopping for auto insurance  \u203a best auto insurance discounts"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/cg7TI_Gdrs-6_dRgkB_JwVtq7JX2kOt24Q0xpdjRp5I/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcvaW1hZ2Vz/L0Jlc3QtU3RhdGUt/RmFybS1BdXRvLUlu/c3VyYW5jZS1EaXNj/b3VudHMtMi5wbmc",
+            "original": "https://www.autoinsurance.org/images/Best-State-Farm-Auto-Insurance-Discounts-2.png",
+            "logo": false
+          },
+          "age": "August 28, 2025"
+        },
+        {
+          "title": "state farm auto insurance bundle deals: Top 5 Powerful Savings 2025",
+          "url": "https://nyfarminsurance.com/post/state-farm-auto-insurance-bundle-deals/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "First, there\u2019s the multi-policy ... more vehicles in your household with State Farm can save you up to 20% when those vehicles are owned by related individuals....",
+          "page_age": "2025-04-29T11:49:31",
+          "profile": {
+            "name": "Nyfarminsurance",
+            "url": "https://nyfarminsurance.com/post/state-farm-auto-insurance-bundle-deals/",
+            "long_name": "nyfarminsurance.com",
+            "img": "https://imgs.search.brave.com/QK9h8ElAES4S7NBaUH7xxJ9xf0AuhI2NUQulrCqluBs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDExMWZjYThh/OWU1MTVhODcwMzQ5/MmE3NGU4YjQ5MTg3/MTc3ZDg1ODRiZDcy/YjA1ZDlhYzM2Y2Vk/YTRhMDQ4NC9ueWZh/cm1pbnN1cmFuY2Uu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "nyfarminsurance.com",
+            "hostname": "nyfarminsurance.com",
+            "favicon": "https://imgs.search.brave.com/QK9h8ElAES4S7NBaUH7xxJ9xf0AuhI2NUQulrCqluBs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDExMWZjYThh/OWU1MTVhODcwMzQ5/MmE3NGU4YjQ5MTg3/MTc3ZDg1ODRiZDcy/YjA1ZDlhYzM2Y2Vk/YTRhMDQ4NC9ueWZh/cm1pbnN1cmFuY2Uu/Y29tLw",
+            "path": "  \u203a home  \u203a the art of bundling: state farm auto insurance deals"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/3oWY-JF3IgoDlANpNb2qXwSdwNNrUTSUYjUwsUYivw0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9ueWZh/cm1pbnN1cmFuY2Uu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI0LzExL2Flcmlh/bC12aWV3LW9mLWJy/aWdodC1ncmVlbi1h/Z3JpY3VsdHVyYWwt/ZmFybS1maWVsZC13/aXRoLWdyb3dpbmct/cmFwZXNlZWQtcGxh/bnRzLWF0LXN1bnNl/dC5qcGc",
+            "original": "https://nyfarminsurance.com/wp-content/uploads/2024/11/aerial-view-of-bright-green-agricultural-farm-field-with-growing-rapeseed-plants-at-sunset.jpg",
+            "logo": false
+          },
+          "age": "April 29, 2025"
+        },
+        {
+          "title": "Unlock Cheaper Rates: Your Ultimate Guide to State Farm Auto Insurance Discounts | Noble Quote",
+          "url": "https://www.noblequote.com/learning-center/auto-insurance/unlock-cheaper-rates-your-ultimate-guide-to-state-farm-auto-insurance-discounts",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Does State Farm offer bundling discounts? Absolutely. Customers who bundle home and auto insurance can unlock a discount of up to 17%, depending on your state. Other policies like renters, condo, or life insurance can be added for more savings. If your household has two or more vehicles, you&#x27;re ...",
+          "page_age": "2025-05-23T03:31:15",
+          "profile": {
+            "name": "Noble Quote",
+            "url": "https://www.noblequote.com/learning-center/auto-insurance/unlock-cheaper-rates-your-ultimate-guide-to-state-farm-auto-insurance-discounts",
+            "long_name": "noblequote.com",
+            "img": "https://imgs.search.brave.com/21pdbNlcd136O6nJ-kdyORIzlji8Tvfs4hJdZ0jqg04/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2I4NjdhOGJm/OWNhMGNhMWEzZWVi/MzIxMzI0ZTBiOGU3/ZjQxNzNjZjYyMmEy/YjFlNTRhMDQzOWFk/MjY3ODlhNy93d3cu/bm9ibGVxdW90ZS5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "noblequote.com",
+            "hostname": "www.noblequote.com",
+            "favicon": "https://imgs.search.brave.com/21pdbNlcd136O6nJ-kdyORIzlji8Tvfs4hJdZ0jqg04/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2I4NjdhOGJm/OWNhMGNhMWEzZWVi/MzIxMzI0ZTBiOGU3/ZjQxNzNjZjYyMmEy/YjFlNTRhMDQzOWFk/MjY3ODlhNy93d3cu/bm9ibGVxdW90ZS5j/b20v",
+            "path": "  \u203a home  \u203a learning center  \u203a auto insurance  \u203a unlock cheaper rates your ultimate guide to state farm auto insurance discounts"
+          },
+          "age": "May 23, 2025"
+        },
+        {
+          "title": "Cheapest Multi-Car Insurance Companies: Best 2025 Rates",
+          "url": "https://www.moneygeek.com/insurance/auto/cheapest-multi-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The best cheap multi-car insurance companies are GEICO at $1,407 annually, Nationwide at $1,417 and State Farm at $1,426 for budget-conscious families. Find out if you&#x27;re overpaying for car insurance below: ... GEICO leads with the cheapest ...",
+          "page_age": "2025-11-03T06:38:14",
+          "profile": {
+            "name": "MoneyGeek",
+            "url": "https://www.moneygeek.com/insurance/auto/cheapest-multi-car-insurance/",
+            "long_name": "moneygeek.com",
+            "img": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "moneygeek.com",
+            "hostname": "www.moneygeek.com",
+            "favicon": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8",
+            "path": "  \u203a home  \u203a insurance  \u203a compare car insurance  \u203a best multi-car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/PTpcluTFYVCxq98pjF8nhefnnM1bLNIIgVBXUb2gnXI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbW9uZXlnZWVr/L2ltYWdlL3VwbG9h/ZC9jX3NjYWxlLHFf/YXV0bzplY28sd18x/MjAwLGZfYXV0byxm/bF9sb3NzeS92MTYy/NjgwOTE3Mi9zaHV0/dGVyc3RvY2tfNjQ3/NjY1NjY5XzM5NjMz/ZTAxZjIuanBn",
+            "original": "https://res.cloudinary.com/moneygeek/image/upload/c_scale,q_auto:eco,w_1200,f_auto,fl_lossy/v1626809172/shutterstock_647665669_39633e01f2.jpg",
+            "logo": false
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "Car Insurance Discounts Guide 2025 \u2013 Forbes Advisor",
+          "url": "https://www.forbes.com/advisor/car-insurance/discounts/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "But if you\u2019re not a homeowner, ... Farm offers the best bundling auto and home insurance discounts with an average 23% discount for multi policies....",
+          "page_age": "2025-10-06T09:19:19",
+          "profile": {
+            "name": "Forbes Advisor",
+            "url": "https://www.forbes.com/advisor/car-insurance/discounts/",
+            "long_name": "forbes.com",
+            "img": "https://imgs.search.brave.com/qg6-E4bARcUpS7pHuJ2FXSeQ2YI51iPfbI8wpUBx9tg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY0NWFiMTBk/YmY2MjkyN2M0MTI0/NmRkYTM3ZjQzMGJj/Y2Q2MTBkYjVmZjA2/OGRjODBhMTM1M2Yx/YmRlZTA1NS93d3cu/Zm9yYmVzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "forbes.com",
+            "hostname": "www.forbes.com",
+            "favicon": "https://imgs.search.brave.com/qg6-E4bARcUpS7pHuJ2FXSeQ2YI51iPfbI8wpUBx9tg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY0NWFiMTBk/YmY2MjkyN2M0MTI0/NmRkYTM3ZjQzMGJj/Y2Q2MTBkYjVmZjA2/OGRjODBhMTM1M2Yx/YmRlZTA1NS93d3cu/Zm9yYmVzLmNvbS8",
+            "path": "  \u203a advisor  \u203a car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/RzKAJ9hetmr1ybEbop8idt34CRocyBb1vU5HcgOrVhM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Zm9yYmVzLmNvbS9h/ZHZpc29yL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIxLzAyL21v/bmV5LWludG8td2Fs/bGV0LmpwZWctOTAw/eDUxMC5qcGc",
+            "original": "https://www.forbes.com/advisor/wp-content/uploads/2021/02/money-into-wallet.jpeg-900x510.jpg",
+            "logo": false
+          },
+          "age": "October 6, 2025"
+        },
+        {
+          "title": "Best home and auto insurance bundle for 2025 - Insurance.com",
+          "url": "https://www.insurance.com/auto-insurance/home-and-auto-insurance-bundle.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Our home and auto bundle comparison ... Bundling your auto and home insurance policies with the same insurance company saves 15% on average....",
+          "page_age": "2025-06-12T00:00:00",
+          "profile": {
+            "name": "Insurance.com",
+            "url": "https://www.insurance.com/auto-insurance/home-and-auto-insurance-bundle.html",
+            "long_name": "insurance.com",
+            "img": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurance.com",
+            "hostname": "www.insurance.com",
+            "favicon": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8",
+            "path": "  \u203a home  \u203a home and auto bundle  \u203a best home and auto insurance bundle for 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/KzW81fqqUln-bRYTP08lOla43J9-to3afmfpGftK7p4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmNlLmNv/bS9pbWFnZXN2cl9j/ZS80My9ob21lLWFu/ZC1hdXRvLWluc3Vy/YW5jZS1idW5kbGUu/anBn",
+            "original": "https://www.insurance.com/imagesvr_ce/43/home-and-auto-insurance-bundle.jpg",
+            "logo": false
+          },
+          "age": "June 12, 2025"
+        },
+        {
+          "title": "How to Save With the State Farm Low-Mileage Discount",
+          "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/state-farm-low-mileage-discount",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Good student: Full-time high school and college students with a 3.0 or higher GPA can qualify for a good student discount. Multi-car: State Farm\u2019s multi-car discount can save you up to 20% if you insure two or more vehicles on the same policy.",
+          "page_age": "2025-05-15T19:00:00",
+          "profile": {
+            "name": "Compare",
+            "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/state-farm-low-mileage-discount",
+            "long_name": "compare.com",
+            "img": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "compare.com",
+            "hostname": "www.compare.com",
+            "favicon": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v",
+            "path": "  \u203a auto insurance  \u203a cheap car insurance  \u203a discounts  \u203a state farm low-mileage discount"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/dFZNxNJpH2e4pnmHsL3RJHHho3JRyZAk-tc023oxL9Q/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8yOTU1MDgvMTIw/MHg5MDAvNmM0NGI5/MmVkMy93b21hbi1s/YXB0b3AtaGVyby5q/cGc",
+            "original": "https://a.storyblok.com/f/295508/1200x900/6c44b92ed3/woman-laptop-hero.jpg",
+            "logo": false
+          },
+          "age": "May 15, 2025"
+        },
+        {
+          "title": "Best Car Insurance Discounts for Multiple Cars",
+          "url": "https://www.autoinsurance.com/best/discounts-multiple-cars/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO and Amica offer the largest multicar savings, with discounts of up to 25 percent, while Progressive and State Farm provide multicar discounts of up to 12 percent.",
+          "page_age": "2025-09-26T16:41:20",
+          "profile": {
+            "name": "Auto Insurance",
+            "url": "https://www.autoinsurance.com/best/discounts-multiple-cars/",
+            "long_name": "autoinsurance.com",
+            "img": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.com",
+            "hostname": "www.autoinsurance.com",
+            "favicon": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v",
+            "path": "  \u203a home  \u203a bests  \u203a best car insurance discounts for multiple cars"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/FU3hr37tBh-Ikm7VXGKvyu3MEuYMGVKcUPtJXRnSUP4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYXV0b2luc3Vy/YW5jZS5jb20vYXBw/L3VwbG9hZHMvMjAy/MS8xMi8xNjIxMTQw/My9TY3JlZW4tU2hv/dC0yMDIxLTEyLTAx/LWF0LTkuMzcuNDYt/QU0ucG5n",
+            "original": "https://images.autoinsurance.com/app/uploads/2021/12/16211403/Screen-Shot-2021-12-01-at-9.37.46-AM.png",
+            "logo": false
+          },
+          "age": "September 26, 2025"
+        },
+        {
+          "title": "Best Home and Auto Insurance Bundles for 2025",
+          "url": "https://www.usnews.com/insurance/homeowners-insurance/best-home-and-auto-insurance-bundles",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "When you purchase homeowners and auto insurance policies from the same company, you can typically qualify for savings of 5% to 30% off your premiums, depending on the insurer and your specific situation.",
+          "page_age": "2025-11-01T19:27:00",
+          "profile": {
+            "name": "U.S. News",
+            "url": "https://www.usnews.com/insurance/homeowners-insurance/best-home-and-auto-insurance-bundles",
+            "long_name": "usnews.com",
+            "img": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "usnews.com",
+            "hostname": "www.usnews.com",
+            "favicon": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8",
+            "path": "\u203a insurance  \u203a homeowners-insurance  \u203a best-home-and-auto-insurance-bundles"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/SPZLRN_St_tO7Lo_XkB32mpCkngPOacLIrNPgN27ZA8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dXNuZXdzLmNvbS9k/aW1zNC9VU05FV1Mv/M2M2MGRhMi8yMTQ3/NDgzNjQ3L3RodW1i/bmFpbC85NzB4NjQ3/L3F1YWxpdHkvODUv/P3VybD1odHRwcyUz/QSUyRiUyRnd3dy51/c25ld3MuY29tJTJG/Y21zbWVkaWElMkZl/YyUyRmU3JTJGYWMy/NGExYzA0MDIxYTE0/YTRlYjAzYWVhYzE3/YiUyRmlzdG9jay0x/MjgyODgzMTQ3Lmpw/Zw",
+            "original": "https://www.usnews.com/dims4/USNEWS/3c60da2/2147483647/thumbnail/970x647/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2Fec%2Fe7%2Fac24a1c04021a14a4eb03aeac17b%2Fistock-1282883147.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "State Farm Drive Safe & Save Review 2025",
+          "url": "https://www.autoinsurance.com/companies/state-farm/drive-safe-and-save/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Safety features: If you have an anti-theft device or certain safety features, you may be eligible for a discount. Multi-car: You can also save by insuring multiple vehicles on your policy.",
+          "page_age": "2025-10-22T22:00:28",
+          "profile": {
+            "name": "AutoInsurance.com",
+            "url": "https://www.autoinsurance.com/companies/state-farm/drive-safe-and-save/",
+            "long_name": "autoinsurance.com",
+            "img": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.com",
+            "hostname": "www.autoinsurance.com",
+            "favicon": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v",
+            "path": "  \u203a home  \u203a companies  \u203a state farm drive safe & save review 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/FU3hr37tBh-Ikm7VXGKvyu3MEuYMGVKcUPtJXRnSUP4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYXV0b2luc3Vy/YW5jZS5jb20vYXBw/L3VwbG9hZHMvMjAy/MS8xMi8xNjIxMTQw/My9TY3JlZW4tU2hv/dC0yMDIxLTEyLTAx/LWF0LTkuMzcuNDYt/QU0ucG5n",
+            "original": "https://images.autoinsurance.com/app/uploads/2021/12/16211403/Screen-Shot-2021-12-01-at-9.37.46-AM.png",
+            "logo": false
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "r/Insurance on Reddit: State Farm-2 Cars on Policy--New Policy Number for 1 Vehicle?",
+          "url": "https://www.reddit.com/r/Insurance/comments/1jqsaa0/state_farm2_cars_on_policynew_policy_number_for_1/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Was just offered 3 different quotes for insurance from statefarm. Total premium went down as more coverage was bundled. How does this work? ... All Things Insurance! ... All Things Insurance! ... All Things Insurance! ... All Things Insurance! ... All Things Insurance! ... All Things Insurance! ... All Things Insurance! ... Added another car to my policy to become a multi-car policy.",
+          "page_age": "2025-04-03T19:50:15",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Insurance/comments/1jqsaa0/state_farm2_cars_on_policynew_policy_number_for_1/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/insurance  \u203a state farm-2 cars on policy--new policy number for 1 vehicle?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/3U0Ij_XFwlce8GzFniCMNkkQfodtpMTDPb0aysIxXig/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zaGFy/ZS5yZWRkLml0L3By/ZXZpZXcvcG9zdC8x/anFzYWEw",
+            "original": "https://share.redd.it/preview/post/1jqsaa0",
+            "logo": false
+          },
+          "age": "April 3, 2025"
+        },
+        {
+          "title": "Best Car Insurance for Multiple Vehicles (2025) | Insurify",
+          "url": "https://insurify.com/car-insurance/coverage/two-or-more-cars/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Of the companies with multi-car discounts, State Farm offers the cheapest average car insurance premiums. You can earn a multi-car discount of up to 20% for insuring two or more cars with State Farm.",
+          "page_age": "2025-11-05T19:00:00",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/car-insurance/coverage/two-or-more-cars/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a car insurance  \u203a coverage  \u203a two or more cars"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Z7adhqX8QdGQGr0N-hZ-y68rjoH4wpTTPSnM_3cqKzI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbnN1/cmlmeWNkbi5jb20v/aW1hZ2VzL2NhcnJp/ZXIvaGlnaC1kZWZp/bml0aW9uL2VsZXBo/YW50LnN2Zw",
+            "original": "https://insurifycdn.com/images/carrier/high-definition/elephant.svg",
+            "logo": true
+          },
+          "age": "2 days ago"
+        },
+        {
+          "title": "r/Insurance on Reddit: State Farm basically pulled out of FL",
+          "url": "https://www.reddit.com/r/Insurance/comments/1i95bbk/state_farm_basically_pulled_out_of_fl/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Yes, they&#x27;re more expensive than Citizens, but they&#x27;re comparable to most other insurers that cover my area. More on this later. For me State Farm covers me for Home and Auto as a multi-line discount (term I&#x27;ll use loosely).",
+          "page_age": "2025-01-25T03:38:37",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Insurance/comments/1i95bbk/state_farm_basically_pulled_out_of_fl/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/insurance  \u203a state farm basically pulled out of fl"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A5H_aQiEBuUODR0lNeU8iDfhrWUvO8oEmRGE_mcS_gM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVkZGl0c3RhdGlj/LmNvbS9pY29uLnBu/Zw",
+            "original": "https://www.redditstatic.com/icon.png",
+            "logo": true
+          },
+          "age": "January 25, 2025"
+        },
+        {
+          "title": "Insuring Two or More Cars in 2025",
+          "url": "https://www.moneygeek.com/insurance/auto/insuring-two-or-more-cars/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Most insurers automatically apply multi-car discounts when you add a second vehicle, but double-check that the discount appears on your updated policy. Major insurers like GEICO, State Farm, Progressive, Farmers, USAA and Nationwide all offer multi-car discounts for single drivers.",
+          "page_age": "2025-10-29T18:53:21",
+          "profile": {
+            "name": "MoneyGeek",
+            "url": "https://www.moneygeek.com/insurance/auto/insuring-two-or-more-cars/",
+            "long_name": "moneygeek.com",
+            "img": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "moneygeek.com",
+            "hostname": "www.moneygeek.com",
+            "favicon": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8",
+            "path": "  \u203a home  \u203a insurance  \u203a compare car insurance  \u203a insuring two or more cars"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/18hl0AkBz4XWJQKqZXIyIuUa-_M_wO4UZ66q1K_2mbE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbW9uZXlnZWVr/L2ltYWdlL3VwbG9h/ZC9jX3NjYWxlLHFf/YXV0bzplY28sd18x/MjAwLGZfYXV0byxm/bF9sb3NzeS92MTY4/MTE2MDI5MC9MaWZl/X0luc3VyYW5jZV9D/YW5fT25lX0RyaXZl/cl9IYXZlX0luc3Vy/YW5jZV9mb3JfVHdv/X0NhcnNfM2E4ZTJk/NWY1Zi5qcGc",
+            "original": "https://res.cloudinary.com/moneygeek/image/upload/c_scale,q_auto:eco,w_1200,f_auto,fl_lossy/v1681160290/Life_Insurance_Can_One_Driver_Have_Insurance_for_Two_Cars_3a8e2d5f5f.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "How to Get the Best Multi-Car Insurance Discount | LendingTree",
+          "url": "https://www.lendingtree.com/car-insurance/multi-car-insurance-discounts/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico has the best multi-car discount we found, offering up to 25% off of your car insurance premium. State Farm is close behind at 20%.",
+          "page_age": "2025-06-25T20:42:22",
+          "profile": {
+            "name": "LendingTree",
+            "url": "https://www.lendingtree.com/car-insurance/multi-car-insurance-discounts/",
+            "long_name": "lendingtree.com",
+            "img": "https://imgs.search.brave.com/yXocWnwl2PfTEvlx2rFx5rmJolpgkbGDO3CG6T07Njk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGRlZjI4ZGJk/MWJiMDE4ZjliM2Vh/ZmFlZmMyMjUxNDg1/MjUyYmQzOGU4ZTFi/ZGIxNTA3MThlZTIz/YThlYmVkZS93d3cu/bGVuZGluZ3RyZWUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "lendingtree.com",
+            "hostname": "www.lendingtree.com",
+            "favicon": "https://imgs.search.brave.com/yXocWnwl2PfTEvlx2rFx5rmJolpgkbGDO3CG6T07Njk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGRlZjI4ZGJk/MWJiMDE4ZjliM2Vh/ZmFlZmMyMjUxNDg1/MjUyYmQzOGU4ZTFi/ZGIxNTA3MThlZTIz/YThlYmVkZS93d3cu/bGVuZGluZ3RyZWUu/Y29tLw",
+            "path": "  \u203a home  \u203a car insurance  \u203a how do i get the best multi-car insurance discount?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/KgP_Qd9GdJkHKdXxY0em3yvvgRJYFfo83mf3UOBnRC4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bGVuZGluZ3RyZWUu/Y29tL2FwcC91cGxv/YWRzLzIwMjUvMDcv/aG93LW11Y2gtbW9u/ZXktZG8taS1uZWVk/LXRvLWJ1eS1ob3Vz/ZS53ZWJw",
+            "original": "https://www.lendingtree.com/app/uploads/2025/07/how-much-money-do-i-need-to-buy-house.webp",
+            "logo": false
+          },
+          "age": "June 25, 2025"
+        },
+        {
+          "title": "r/Insurance on Reddit: State Farm Keeps Increasing Rates",
+          "url": "https://www.reddit.com/r/Insurance/comments/1iomhwg/state_farm_keeps_increasing_rates/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "I&#x27;ve been with State Farm for about 15 years and have accepted their increases over the years. Now that I&#x27;ve opted to not have a car as I no longer need one, they emailed to let me know that my policy will increase by $1500 annually. The representative I spoke confirmed it is a $1500 increase because I don&#x27;t qualify for a multi-line discount and that there was nothing that could be done.",
+          "page_age": "2025-02-13T16:08:36",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Insurance/comments/1iomhwg/state_farm_keeps_increasing_rates/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/insurance  \u203a state farm keeps increasing rates"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A5H_aQiEBuUODR0lNeU8iDfhrWUvO8oEmRGE_mcS_gM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVkZGl0c3RhdGlj/LmNvbS9pY29uLnBu/Zw",
+            "original": "https://www.redditstatic.com/icon.png",
+            "logo": true
+          },
+          "age": "February 13, 2025"
+        },
+        {
+          "title": "Best Multi-Vehicle Car Insurance Discounts in 2025 (Save up to 25% With These Companies) | Clearsurance",
+          "url": "https://clearsurance.com/blog/best-multi-vehicle-car-insurance-discounts",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico reduces multi-vehicle auto insurance rates by $50 a month with this discount, while Allstate and Liberty Mutual save drivers around $25 monthly. State Farm provides the most significant discount, slashing monthly rates by $112.",
+          "page_age": "2025-04-01T03:16:51",
+          "profile": {
+            "name": "Clearsurance -",
+            "url": "https://clearsurance.com/blog/best-multi-vehicle-car-insurance-discounts",
+            "long_name": "clearsurance.com",
+            "img": "https://imgs.search.brave.com/KcX9p4u9Y6Gb4ybHTKD6RJ7aDtcyBA1hsroH-6pxVKc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTY1ZTZhMWJj/ODc5NjIzOTgzODAw/NjYzZDgzNGYzZDY0/MmFhMzA1YTcxNzc1/OTBjNTBmM2M0M2Fj/N2I5ZjkzZS9jbGVh/cnN1cmFuY2UuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "clearsurance.com",
+            "hostname": "clearsurance.com",
+            "favicon": "https://imgs.search.brave.com/KcX9p4u9Y6Gb4ybHTKD6RJ7aDtcyBA1hsroH-6pxVKc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTY1ZTZhMWJj/ODc5NjIzOTgzODAw/NjYzZDgzNGYzZDY0/MmFhMzA1YTcxNzc1/OTBjNTBmM2M0M2Fj/N2I5ZjkzZS9jbGVh/cnN1cmFuY2UuY29t/Lw",
+            "path": "  \u203a home  \u203a uncategorized"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/S1aOoe04WkFR33fdtF_W-RdSeN93RWS4pn03BGEXS4k/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9xdW90/ZS5jbGVhcnN1cmFu/Y2UuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI1LzAzL211/bHRpLXZlaGljbGVf/Y2FyX2luc3VyYW5j/ZV9kaXNjb3VudF9z/cXVhcmUuanBn",
+            "original": "https://quote.clearsurance.com/wp-content/uploads/2025/03/multi-vehicle_car_insurance_discount_square.jpg",
+            "logo": false
+          },
+          "age": "April 1, 2025"
+        },
+        {
+          "title": "How to Save With the State Farm Military Discount | Compare.com",
+          "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/state-farm-military-discount",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Bundling: Bundle your auto policy ... program and save up to 30%. Multi-car: Save up to 20% with the multi-car discount when you insure at least two vehicles with State Farm....",
+          "page_age": "2025-05-28T19:00:00",
+          "profile": {
+            "name": "Compare",
+            "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/state-farm-military-discount",
+            "long_name": "compare.com",
+            "img": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "compare.com",
+            "hostname": "www.compare.com",
+            "favicon": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v",
+            "path": "  \u203a auto insurance  \u203a cheap car insurance  \u203a discounts  \u203a state farm military discount"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/2P8TPWN5sUY8jL0R77As5sVITeEzpkeQJyiwBU8HU60/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8yOTU1MDgvMTIw/MHg5MDAvOGZmNTYz/Y2M1NS9taWxpdGFy/eS1sYXB0b3AtaGVy/by5qcGc",
+            "original": "https://a.storyblok.com/f/295508/1200x900/8ff563cc55/military-laptop-hero.jpg",
+            "logo": false
+          },
+          "age": "May 28, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

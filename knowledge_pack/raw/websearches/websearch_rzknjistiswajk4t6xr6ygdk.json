@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_rzknjistiswajk4t6xr6ygdk",
+  "search_id": "search_ejowkqb3zp731jke2t7roher",
+  "timestamp": "2025-11-07T12:31:21.190709",
+  "startedAt": "2025-11-07T12:31:21.190709",
+  "completedAt": "2025-11-07T12:31:22.868123",
+  "durationSeconds": 1.68,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:insurance.ca.gov Proposition 103",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:insurance.ca.gov Proposition 103",
+      "show_strict_warning": false,
+      "cleaned": "Proposition 103",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "Proposition 103",
+        "sites": [
+          "insurance.ca.gov"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

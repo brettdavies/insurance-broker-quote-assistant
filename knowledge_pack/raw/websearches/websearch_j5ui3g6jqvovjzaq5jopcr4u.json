@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_j5ui3g6jqvovjzaq5jopcr4u",
+  "search_id": "search_b04h2cvjrg4gcy26cu2bftkp",
+  "timestamp": "2025-11-07T12:29:02.261460",
+  "startedAt": "2025-11-07T12:29:02.261460",
+  "completedAt": "2025-11-07T12:29:03.901623",
+  "durationSeconds": 1.64,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:iii.org \"average insurance cost\" by state",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:iii.org \"average insurance cost\" by state",
+      "show_strict_warning": false,
+      "cleaned": "average insurance cost by state",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "average insurance cost by state",
+        "sites": [
+          "iii.org"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "websearch_id": "websearch_uf8ry4pde3tt49a6y2b8dzuy",
+  "search_id": "search_zzwe75kdvd4b2ou5331u8qge",
+  "timestamp": "2025-11-07T12:33:29.426075",
+  "startedAt": "2025-11-07T12:33:29.426075",
+  "completedAt": "2025-11-07T12:33:31.490680",
+  "durationSeconds": 2.06,
+  "urlsDiscoveredCount": 2,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"non-binding quote\" disclosure",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"non-binding quote\" disclosure",
+      "show_strict_warning": false,
+      "cleaned": "non-binding quote disclosure",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "non-binding quote disclosure"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Get a free, non-binding quote - AdHoc Translations",
+          "url": "https://www.adhoc-translations.com/get-a-quote/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Contact us today for a free and non-binding quote. We offer competitive prices, fast delivery, great service and the highest quality.",
+          "page_age": "2025-06-01T08:38:03",
+          "profile": {
+            "name": "AdHoc Translations",
+            "url": "https://www.adhoc-translations.com/get-a-quote/",
+            "long_name": "adhoc-translations.com",
+            "img": "https://imgs.search.brave.com/DzBURK-Uc26mK1wFKO3BUm3QhwBxBeI6aNAJ5y-d3Dk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGUzNzQ2ZDI5/ZTI5ZTBmNGY0NTY5/NzMyN2UwMmMxMjYy/Nzg5NWRkZmEzYzZi/YzdmM2EyNzU4OGE4/YWZjNDA4Mi93d3cu/YWRob2MtdHJhbnNs/YXRpb25zLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "adhoc-translations.com",
+            "hostname": "www.adhoc-translations.com",
+            "favicon": "https://imgs.search.brave.com/DzBURK-Uc26mK1wFKO3BUm3QhwBxBeI6aNAJ5y-d3Dk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGUzNzQ2ZDI5/ZTI5ZTBmNGY0NTY5/NzMyN2UwMmMxMjYy/Nzg5NWRkZmEzYzZi/YzdmM2EyNzU4OGE4/YWZjNDA4Mi93d3cu/YWRob2MtdHJhbnNs/YXRpb25zLmNvbS8",
+            "path": "  \u203a home  \u203a get a quote"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/23RdvtzWvPzBoZZs8tIdDYh9Sze0dsrIYzVDec5FJ9M/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YWRob2MtdHJhbnNs/YXRpb25zLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyMi8w/Ny9hZGhvYy10cmFu/c2xhdGlvbnMtc29t/ZS1qdWxpLTEwMjR4/MTAyNC5wbmc",
+            "original": "https://www.adhoc-translations.com/wp-content/uploads/2022/07/adhoc-translations-some-juli-1024x1024.png",
+            "logo": false
+          },
+          "age": "June 1, 2025"
+        },
+        {
+          "title": "Quote vs. Invoice: What's The Difference Between Two",
+          "url": "https://www.mooninvoice.com/blog/quote-vs-invoice/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Binding Quote \u2013 A commitment made by the seller that no changes shall be affected within the specified period, usually between seven to fourteen days. Non-Binding Quote \u2013 A quote that permits alterations before acceptance or execution.",
+          "page_age": "2025-06-24T07:14:52",
+          "profile": {
+            "name": "MoonInvoice",
+            "url": "https://www.mooninvoice.com/blog/quote-vs-invoice/",
+            "long_name": "mooninvoice.com",
+            "img": "https://imgs.search.brave.com/aXv1uZCPSOe1LdGdoMYIXgRN8F4OGQppVzPzYdr-FVI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGNiMTExZGVl/YTM0YmRmYTI5NTI4/ODM4ODVmZjNjYzJm/YjE3NGVkYjE5OGFm/ZjI1ZjEwMWQ2ZGFj/NzkyMGU2ZC93d3cu/bW9vbmludm9pY2Uu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "mooninvoice.com",
+            "hostname": "www.mooninvoice.com",
+            "favicon": "https://imgs.search.brave.com/aXv1uZCPSOe1LdGdoMYIXgRN8F4OGQppVzPzYdr-FVI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGNiMTExZGVl/YTM0YmRmYTI5NTI4/ODM4ODVmZjNjYzJm/YjE3NGVkYjE5OGFm/ZjI1ZjEwMWQ2ZGFj/NzkyMGU2ZC93d3cu/bW9vbmludm9pY2Uu/Y29tLw",
+            "path": "  \u203a home  \u203a quote vs invoice: what are the key differences between these two?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/9ysFvczfwGlSMm-0KrN1mv-J1QMu4pMXOZLpNgxbpOU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9taS1i/bG9ncy5zMy5hbWF6/b25hd3MuY29tL21p/LWxpdmUvYmxvZy93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyMy8w/Ni8yODEwMjEzNC9B/LUNvbXByZWhlbnNp/dmUtR3VpZGUtdG8t/UXVvdGUtdnMtSW52/b2ljZS5qcGc",
+            "original": "https://mi-blogs.s3.amazonaws.com/mi-live/blog/wp-content/uploads/2023/06/28102134/A-Comprehensive-Guide-to-Quote-vs-Invoice.jpg",
+            "logo": false
+          },
+          "age": "June 24, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

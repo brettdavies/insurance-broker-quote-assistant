@@ -1,0 +1,563 @@
+{
+  "websearch_id": "websearch_su9hgsuigl7t4678tgxvi23m",
+  "search_id": "search_vr9n1xs47ri98d2h3fv2dajx",
+  "timestamp": "2025-11-07T12:23:23.639560",
+  "startedAt": "2025-11-07T12:23:23.639560",
+  "completedAt": "2025-11-07T12:23:25.574128",
+  "durationSeconds": 1.93,
+  "urlsDiscoveredCount": 14,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" \"smoke detector\" discount homeowners",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"GEICO\" \"smoke detector\" discount homeowners",
+      "show_strict_warning": false,
+      "cleaned": "GEICO smoke detector discount homeowners",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO smoke detector discount homeowners"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "GEICO Home Insurance Review",
+          "url": "https://www.moneygeek.com/insurance/homeowners/reviews/geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO offers six discounts for ... home security discounts for alarm systems and cameras, and safety equipment discounts for smoke detectors and fire extinguishers....",
+          "page_age": "2025-10-29T10:25:35",
+          "profile": {
+            "name": "MoneyGeek",
+            "url": "https://www.moneygeek.com/insurance/homeowners/reviews/geico/",
+            "long_name": "moneygeek.com",
+            "img": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "moneygeek.com",
+            "hostname": "www.moneygeek.com",
+            "favicon": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8",
+            "path": "  \u203a home  \u203a insurance  \u203a geico homeowners insurance review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/x1OQJxpE_J8W2gHMWyFTklZU6My-FdjDYddjiMVLpB4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbW9uZXlnZWVr/L2ltYWdlL3VwbG9h/ZC9jX3NjYWxlLHFf/YXV0bzplY28sd18x/MjAwLGZfYXV0byxm/bF9sb3NzeS92MTc1/NjQ5NTg0OC9nZWlj/b19sb2dvX2MwM2Nk/ZGNiN2QuanBn",
+            "original": "https://res.cloudinary.com/moneygeek/image/upload/c_scale,q_auto:eco,w_1200,f_auto,fl_lossy/v1756495848/geico_logo_c03cddcb7d.jpg",
+            "logo": true
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "GEICO Home Insurance Review: Ratings and Quotes (2025) | Insurify",
+          "url": "https://insurify.com/homeowners-insurance/companies/geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Qualifying policyholders can earn ... theft and break-ins. Safety equipment discount: Homeowners can save by installing smoke detectors and fire extinguishers in their homes....",
+          "page_age": "2025-02-03T19:00:00",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/homeowners-insurance/companies/geico/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a homeowners insurance  \u203a geico"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/w5FgrBqAlQs8svek1OPEIVtbUegmgdfwiK49IYu68Lg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xNjIyNzMvODAw/eDYwMC9hNTk2MGZk/MmRlL2dyZWVuLWhv/dXNlLW9yYW5nZS5w/bmc",
+            "original": "https://a.storyblok.com/f/162273/800x600/a5960fd2de/green-house-orange.png",
+            "logo": false
+          },
+          "age": "February 3, 2025"
+        },
+        {
+          "title": "How to Get an Insurance Discount for Your Security System \u2014 TheRooYorker",
+          "url": "https://www.blog.heykangaroo.com/blog/how-to-get-an-insurance-discount-for-your-security-system",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The Hartford: Offers up to a 5% discount for qualifying smart home devices, with discounts varying by device and location. Liberty Mutual: Offers discounts for certain smart home devices such as security systems, thermostats, and smoke detectors...",
+          "page_age": "2024-11-15T15:57:18",
+          "profile": {
+            "name": "TheRooYorker",
+            "url": "https://www.blog.heykangaroo.com/blog/how-to-get-an-insurance-discount-for-your-security-system",
+            "long_name": "blog.heykangaroo.com",
+            "img": "https://imgs.search.brave.com/6R2KE6UWyScHxMIUu1QzXiHMA_BIzd1JX0cRiCGLLCU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDU5ZjRmMjI3/NmM5ZmI5NGQ2YmI3/OGM3YmE4MDY2MjVl/MWVkZTkzNmZkMGY5/NDQ3NWUzNjhmY2Rk/NWNjNzM0OS93d3cu/YmxvZy5oZXlrYW5n/YXJvby5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "blog.heykangaroo.com",
+            "hostname": "www.blog.heykangaroo.com",
+            "favicon": "https://imgs.search.brave.com/6R2KE6UWyScHxMIUu1QzXiHMA_BIzd1JX0cRiCGLLCU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDU5ZjRmMjI3/NmM5ZmI5NGQ2YmI3/OGM3YmE4MDY2MjVl/MWVkZTkzNmZkMGY5/NDQ3NWUzNjhmY2Rk/NWNjNzM0OS93d3cu/YmxvZy5oZXlrYW5n/YXJvby5jb20v",
+            "path": "\u203a blog  \u203a how-to-get-an-insurance-discount-for-your-security-system"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/qhtqNts4zpAXxgBgX0S9pJLfSENWe4KncJU380j-4ds/rs:fit:200:200:1:0/g:ce/aHR0cDovL3N0YXRp/YzEuc3F1YXJlc3Bh/Y2UuY29tL3N0YXRp/Yy82MDQ3YWRiMWYz/MzgzYzcxYjY0ZjQ5/NGIvNjA0N2FlM2Jm/OGYwZGE2ZjJkNWM3/MmVkLzY1ZTIwOWJi/OTI5Y2Q1M2RiODE0/MTE3Yy8xNzMxNjg2/MjM4MDY4L2ltYWdl/LTEucG5nP2Zvcm1h/dD0xNTAwdw",
+            "original": "http://static1.squarespace.com/static/6047adb1f3383c71b64f494b/6047ae3bf8f0da6f2d5c72ed/65e209bb929cd53db814117c/1731686238068/image-1.png?format=1500w",
+            "logo": false
+          },
+          "age": "November 15, 2024"
+        },
+        {
+          "title": "GEICO Homeowners Insurance Review: Pros, Cons, and Alternatives",
+          "url": "https://www.businessinsider.com/personal-finance/homeowners-insurance/geico-homeowners-insurance-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Home safety discount: GEICO may give discounts to homeowners when they install smoke detectors and fire extinguishers in their homes.",
+          "page_age": "2025-05-19T21:56:09",
+          "profile": {
+            "name": "Business Insider",
+            "url": "https://www.businessinsider.com/personal-finance/homeowners-insurance/geico-homeowners-insurance-review",
+            "long_name": "businessinsider.com",
+            "img": "https://imgs.search.brave.com/Z6wRqiE6vvL-8sy5MskRt7Tuy1z-PxXnfSbVXVy86vw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTI3NGQzMDdi/ZjEzYTA0MTI4NWMw/MWVjOTFmNDI3Yzdk/NGQzZDE1OTAxOWVj/NWIxMjk3YTcyNTg5/N2FiZjM2Yy93d3cu/YnVzaW5lc3NpbnNp/ZGVyLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "businessinsider.com",
+            "hostname": "www.businessinsider.com",
+            "favicon": "https://imgs.search.brave.com/Z6wRqiE6vvL-8sy5MskRt7Tuy1z-PxXnfSbVXVy86vw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTI3NGQzMDdi/ZjEzYTA0MTI4NWMw/MWVjOTFmNDI3Yzdk/NGQzZDE1OTAxOWVj/NWIxMjk3YTcyNTg5/N2FiZjM2Yy93d3cu/YnVzaW5lc3NpbnNp/ZGVyLmNvbS8",
+            "path": "  \u203a personal finance  \u203a insurance  \u203a homeowners insurance  \u203a geico homeowners insurance review: pros, cons, and alternatives"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/OH3rgfR27kjjPsF49LribxpHiWko6hLRlGvFzG0hnxY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pLmlu/c2lkZXIuY29tLzY4/MmJhNjMwYzZhZDI4/OGQxNDgxNWMzYz93/aWR0aD0xMDAwJmZv/cm1hdD1qcGVn",
+            "original": "https://i.insider.com/682ba630c6ad288d14815c3c?width=1000&format=jpeg",
+            "logo": false
+          },
+          "age": "May 19, 2025"
+        },
+        {
+          "title": "Geico Homeowners Insurance Review 2025 - Coverage Explained | U.S. News",
+          "url": "https://www.usnews.com/insurance/homeowners-insurance/geico-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Military discounts: Most homeowners ... partner companies. Home safety features: You could also qualify for home insurance discounts if you have certain safety features, like a home security system, smoke detectors, or a sprinkler system....",
+          "page_age": "2025-07-03T17:40:00",
+          "profile": {
+            "name": "U.S. News",
+            "url": "https://www.usnews.com/insurance/homeowners-insurance/geico-review",
+            "long_name": "usnews.com",
+            "img": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "usnews.com",
+            "hostname": "www.usnews.com",
+            "favicon": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8",
+            "path": "\u203a insurance  \u203a homeowners-insurance  \u203a geico-review"
+          },
+          "age": "July 3, 2025"
+        },
+        {
+          "title": "GEICO Homeowners Insurance Review 2025",
+          "url": "https://www.nerdwallet.com/insurance/homeowners/geico-home-insurance-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If you\u2019re already a GEICO auto insurance customer, you could get a discount on your auto policy for getting a homeowners policy through the company. ... Home security systems. Smoke detectors and fire extinguishers.",
+          "page_age": "2025-09-08T14:01:44",
+          "profile": {
+            "name": "NerdWallet",
+            "url": "https://www.nerdwallet.com/insurance/homeowners/geico-home-insurance-review",
+            "long_name": "nerdwallet.com",
+            "img": "https://imgs.search.brave.com/8r72GokQ4UXZ6V4PobxSGta-ben5011_C3meSKoOMl4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGFhYzY5MDhh/NTNhODNhYjliNWNm/MTE4YTNmOGE3NjVj/M2FmMDcwMzhhMzQx/MThmYjQ2MzcxMjQy/ZDgwNTkzZS93d3cu/bmVyZHdhbGxldC5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "nerdwallet.com",
+            "hostname": "www.nerdwallet.com",
+            "favicon": "https://imgs.search.brave.com/8r72GokQ4UXZ6V4PobxSGta-ben5011_C3meSKoOMl4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGFhYzY5MDhh/NTNhODNhYjliNWNm/MTE4YTNmOGE3NjVj/M2FmMDcwMzhhMzQx/MThmYjQ2MzcxMjQy/ZDgwNTkzZS93d3cu/bmVyZHdhbGxldC5j/b20v",
+            "path": "  \u203a back to nerdwallet homepage  \u203a insurance  \u203a geico homeowners insurance review 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Dsb9Og2j2uP4yFulHqpQ2FTgqZ1TOGr6zKUbP3Ux_wM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bmVyZHdhbGxldC5j/b20vYXNzZXRzL2Js/b2cvd3AtY29udGVu/dC91cGxvYWRzLzIw/MjMvMDUvR2V0dHlJ/bWFnZXMtODQ0MjMz/NDk0LTE0NDB4ODY0/LmpwZw",
+            "original": "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2023/05/GettyImages-844233494-1440x864.jpg",
+            "logo": false
+          },
+          "age": "September 8, 2025"
+        },
+        {
+          "title": "GEICO Insurance Review 2025",
+          "url": "https://www.insuranceopedia.com/reviews/geico-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Multi-Policy Discount: Bundling your home and auto insurance policies with GEICO can lead to significant savings. Home Security Systems: Installing security systems, such as burglar alarms or surveillance cameras, may qualify you for discounts due to the reduced risk of theft. Smoke Detectors and Fire Extinguishers: Equipping your home with smoke detectors and fire extinguishers can lower your premium by mitigating fire-related risks.",
+          "page_age": "2025-01-16T12:16:51",
+          "profile": {
+            "name": "Insuranceopedia",
+            "url": "https://www.insuranceopedia.com/reviews/geico-review",
+            "long_name": "insuranceopedia.com",
+            "img": "https://imgs.search.brave.com/KsBHSl4Wc_wUe27LG7XUNuU990n3ocgt5t6hB12cOiM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc3ZjI2YjMy/ZjI1NGM1NDUxYTNh/NTg4ZTBiZmZkZDM4/NTM0MTkyZGM2MTVh/NTNkOGNhOWYzZDk0/MWRmMTViNC93d3cu/aW5zdXJhbmNlb3Bl/ZGlhLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insuranceopedia.com",
+            "hostname": "www.insuranceopedia.com",
+            "favicon": "https://imgs.search.brave.com/KsBHSl4Wc_wUe27LG7XUNuU990n3ocgt5t6hB12cOiM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc3ZjI2YjMy/ZjI1NGM1NDUxYTNh/NTg4ZTBiZmZkZDM4/NTM0MTkyZGM2MTVh/NTNkOGNhOWYzZDk0/MWRmMTViNC93d3cu/aW5zdXJhbmNlb3Bl/ZGlhLmNvbS8",
+            "path": "\u203a reviews  \u203a geico-review"
+          },
+          "age": "January 16, 2025"
+        },
+        {
+          "title": "9 stress-free ways to cut your homeowners insurance costs",
+          "url": "https://www.cnbc.com/select/9-ways-to-lower-homeowners-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "These discounts range from 5% for a simple burglar alarm or smoke detector to upwards of 20% for more sophisticated sprinkler systems. Protect your property and possessions from fire, theft, and other unexpected perils.",
+          "page_age": "2025-10-06T13:09:47",
+          "profile": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/select/9-ways-to-lower-homeowners-insurance/",
+            "long_name": "Consumer News and Business Channel",
+            "img": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cnbc.com",
+            "hostname": "www.cnbc.com",
+            "favicon": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+            "path": "  \u203a cnbc select  \u203a insurance  \u203a 9 stress-free ways to cut your homeowners insurance costs"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/xzZV5SqX0-vZnxEFyWzwjaDAVVYv4s0H6yudTK-LGV4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDcwMzkxOTIt/MTY0ODY2NDA4Njcy/OS1nZXR0eWltYWdl/cy01NTI5OTI1ODkt/ZmEyZWZkZmYtMDI5/NS00YmQzLTkyNTEt/YjMxMTQ3MDM5MDk3/LmpwZWc_dj0xNzU5/MzUyMDU0",
+            "original": "https://image.cnbcfm.com/api/v1/image/107039192-1648664086729-gettyimages-552992589-fa2efdff-0295-4bd3-9251-b31147039097.jpeg?v=1759352054",
+            "logo": false
+          },
+          "age": "October 6, 2025"
+        },
+        {
+          "title": "GEICO Home Insurance Review 2025: Coverage and Discounts - NerdWallet",
+          "url": "https://www.nerdwallet.com/insurance/homeowners/geico-home-insurance-review?msockid=3b1ca895f4a666813432be03f52e6709",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If you\u2019re already a GEICO auto insurance customer, you could get a discount on your auto policy for getting a homeowners policy through the company. ... Home security systems. Smoke detectors and fire extinguishers.",
+          "page_age": "2025-09-08T14:01:44",
+          "profile": {
+            "name": "NerdWallet",
+            "url": "https://www.nerdwallet.com/insurance/homeowners/geico-home-insurance-review?msockid=3b1ca895f4a666813432be03f52e6709",
+            "long_name": "nerdwallet.com",
+            "img": "https://imgs.search.brave.com/8r72GokQ4UXZ6V4PobxSGta-ben5011_C3meSKoOMl4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGFhYzY5MDhh/NTNhODNhYjliNWNm/MTE4YTNmOGE3NjVj/M2FmMDcwMzhhMzQx/MThmYjQ2MzcxMjQy/ZDgwNTkzZS93d3cu/bmVyZHdhbGxldC5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "nerdwallet.com",
+            "hostname": "www.nerdwallet.com",
+            "favicon": "https://imgs.search.brave.com/8r72GokQ4UXZ6V4PobxSGta-ben5011_C3meSKoOMl4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGFhYzY5MDhh/NTNhODNhYjliNWNm/MTE4YTNmOGE3NjVj/M2FmMDcwMzhhMzQx/MThmYjQ2MzcxMjQy/ZDgwNTkzZS93d3cu/bmVyZHdhbGxldC5j/b20v",
+            "path": "  \u203a back to nerdwallet homepage  \u203a insurance  \u203a geico homeowners insurance review 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Dsb9Og2j2uP4yFulHqpQ2FTgqZ1TOGr6zKUbP3Ux_wM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bmVyZHdhbGxldC5j/b20vYXNzZXRzL2Js/b2cvd3AtY29udGVu/dC91cGxvYWRzLzIw/MjMvMDUvR2V0dHlJ/bWFnZXMtODQ0MjMz/NDk0LTE0NDB4ODY0/LmpwZw",
+            "original": "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2023/05/GettyImages-844233494-1440x864.jpg",
+            "logo": false
+          },
+          "age": "September 8, 2025"
+        },
+        {
+          "title": "Deep Dive Into Geico Home Insurance Review 2025 - Your Home Insurance",
+          "url": "https://yourhomeinsurance.org/geico-home-insurance-review/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Fire Safety Features: Features like smoke detectors and fire extinguishers can qualify homeowners for discounts, promoting a safer home environment. Military and Federal Employee Discounts: Active and retired military members and federal employees ...",
+          "page_age": "2025-02-08T05:37:17",
+          "profile": {
+            "name": "Your Home Insurance",
+            "url": "https://yourhomeinsurance.org/geico-home-insurance-review/",
+            "long_name": "yourhomeinsurance.org",
+            "img": "https://imgs.search.brave.com/zAaNmkk6-n5Ss3BBNnP0ocwTBkDET3QWYFeKa33fRo4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNGVhMGIyMDUw/NTdmNTQyOTAwNzA1/Yjg4YTVkMzY4NTAz/ZGY1MTA5MzBkOWE2/NDg4Mjc5ZTExZWYy/YTgzMDdiNi95b3Vy/aG9tZWluc3VyYW5j/ZS5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "yourhomeinsurance.org",
+            "hostname": "yourhomeinsurance.org",
+            "favicon": "https://imgs.search.brave.com/zAaNmkk6-n5Ss3BBNnP0ocwTBkDET3QWYFeKa33fRo4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNGVhMGIyMDUw/NTdmNTQyOTAwNzA1/Yjg4YTVkMzY4NTAz/ZGY1MTA5MzBkOWE2/NDg4Mjc5ZTExZWYy/YTgzMDdiNi95b3Vy/aG9tZWluc3VyYW5j/ZS5vcmcv",
+            "path": "\u203a geico-home-insurance-review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Pt9GvHUp4CHX7BPb8fCpBWl_-hQYAUSkYyZJDytJ5CA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20veW91cmhv/bWVpbnN1cmFuY2Uu/b3JnL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI0LzExLzIxNTc0/MDQuanBnP2ZpdD0x/NjAwJTJDMTA2NiZz/c2w9MQ",
+            "original": "https://i0.wp.com/yourhomeinsurance.org/wp-content/uploads/2024/11/2157404.jpg?fit=1600%2C1066&ssl=1",
+            "logo": false
+          },
+          "age": "February 8, 2025"
+        },
+        {
+          "title": "Geico Home Insurance Review",
+          "url": "https://www.bestmoney.com/renters-insurance/reviews/geico",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If you also have an auto insurance policy with Geico, you may qualify for discounted rates on your homeowners policy. Once you have purchased your homeowners policy, the company will apply this discount to your auto policy. It\u2019s important to note these discounts are not available in all states.",
+          "page_age": "2025-01-02T11:00:04",
+          "profile": {
+            "name": "Best Money",
+            "url": "https://www.bestmoney.com/renters-insurance/reviews/geico",
+            "long_name": "bestmoney.com",
+            "img": "https://imgs.search.brave.com/W1Ac4MY-k0HJRxAmWadTr4XZFJfOBqGtgGxbDN1P11A/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGIzYzhiOThj/OTJjZWFiNDgwMzc5/MTdlYTRjZDAyYzkz/ZTY3OGQ3NmIxNjE1/NzM0Njk0ZjI5ZWI4/ZjIzNmQ4Mi93d3cu/YmVzdG1vbmV5LmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bestmoney.com",
+            "hostname": "www.bestmoney.com",
+            "favicon": "https://imgs.search.brave.com/W1Ac4MY-k0HJRxAmWadTr4XZFJfOBqGtgGxbDN1P11A/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGIzYzhiOThj/OTJjZWFiNDgwMzc5/MTdlYTRjZDAyYzkz/ZTY3OGQ3NmIxNjE1/NzM0Njk0ZjI5ZWI4/ZjIzNmQ4Mi93d3cu/YmVzdG1vbmV5LmNv/bS8",
+            "path": "\u203a renters-insurance  \u203a reviews  \u203a geico"
+          },
+          "age": "January 2, 2025"
+        },
+        {
+          "title": "Lemonade vs GEICO Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/lemonade-vs-geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Fire and security systems: Get discounts for having fire extinguishers, smoke detectors, central station and fire department reporting alarms, sprinkler systems and deadbolts in your home.",
+          "page_age": "2025-10-16T21:59:39",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/lemonade-vs-geico/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a lemonade vs. geico insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/msj4ZylE5B54rYk5FNrLcnIp1MwwI758ZolZ4NvsPVQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9Db3VsZF9Z/b3VyX09ubGluZV9C/ZWhhdmlvcl9BZmZl/Y3RfV2hhdF9Zb3Vf/UGF5Xy5qcGc",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/Could_Your_Online_Behavior_Affect_What_You_Pay_.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "GEICO Home Insurance Review 2025: Is It Right for You? - NerdWallet",
+          "url": "https://www.nerdwallet.com/insurance/homeowners/geico-home-insurance-review?msockid=3010cb10662a6b6916b8dec767866a8e",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If you\u2019re already a GEICO auto insurance customer, you could get a discount on your auto policy for getting a homeowners policy through the company. ... Home security systems. Smoke detectors and fire extinguishers.",
+          "page_age": "2025-04-11T16:19:51",
+          "profile": {
+            "name": "NerdWallet",
+            "url": "https://www.nerdwallet.com/insurance/homeowners/geico-home-insurance-review?msockid=3010cb10662a6b6916b8dec767866a8e",
+            "long_name": "nerdwallet.com",
+            "img": "https://imgs.search.brave.com/8r72GokQ4UXZ6V4PobxSGta-ben5011_C3meSKoOMl4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGFhYzY5MDhh/NTNhODNhYjliNWNm/MTE4YTNmOGE3NjVj/M2FmMDcwMzhhMzQx/MThmYjQ2MzcxMjQy/ZDgwNTkzZS93d3cu/bmVyZHdhbGxldC5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "nerdwallet.com",
+            "hostname": "www.nerdwallet.com",
+            "favicon": "https://imgs.search.brave.com/8r72GokQ4UXZ6V4PobxSGta-ben5011_C3meSKoOMl4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGFhYzY5MDhh/NTNhODNhYjliNWNm/MTE4YTNmOGE3NjVj/M2FmMDcwMzhhMzQx/MThmYjQ2MzcxMjQy/ZDgwNTkzZS93d3cu/bmVyZHdhbGxldC5j/b20v",
+            "path": "  \u203a back to nerdwallet homepage  \u203a insurance  \u203a geico homeowners insurance review 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Dsb9Og2j2uP4yFulHqpQ2FTgqZ1TOGr6zKUbP3Ux_wM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bmVyZHdhbGxldC5j/b20vYXNzZXRzL2Js/b2cvd3AtY29udGVu/dC91cGxvYWRzLzIw/MjMvMDUvR2V0dHlJ/bWFnZXMtODQ0MjMz/NDk0LTE0NDB4ODY0/LmpwZw",
+            "original": "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2023/05/GettyImages-844233494-1440x864.jpg",
+            "logo": false
+          },
+          "age": "April 11, 2025"
+        },
+        {
+          "title": "Geico vs. Progressive: Comparing Home Insurance Costs and Coverage",
+          "url": "https://kartykredytoweuk.co.uk/geico-vs.-progressive-comparing-home-insurance-costs-and-coverage",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "This bundling strategy not only ... Additionally, there are discounts available for homes equipped with safety measures, like smoke detectors and burglar alarms, which can appeal to safety-conscious homeowners. Customer service is a crucial aspect of Geico&#x27;s reputation...",
+          "page_age": "2025-05-09T07:19:50",
+          "profile": {
+            "name": "UK Credit Card Guide",
+            "url": "https://kartykredytoweuk.co.uk/geico-vs.-progressive-comparing-home-insurance-costs-and-coverage",
+            "long_name": "kartykredytoweuk.co.uk",
+            "img": "https://imgs.search.brave.com/IzGmF0KdRowxRiNV6ZbT71wm42IO_eQlif4SJ_WS8oU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGNmZWYyYjBj/YzM2MGZhNjU5OTJj/ZWQwNDFjNjVkNzli/Y2U5MGZlMWI2NmJm/MTg4MDZjOWMwOTlh/ZDA5MjJlMC9rYXJ0/eWtyZWR5dG93ZXVr/LmNvLnVrLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "kartykredytoweuk.co.uk",
+            "hostname": "kartykredytoweuk.co.uk",
+            "favicon": "https://imgs.search.brave.com/IzGmF0KdRowxRiNV6ZbT71wm42IO_eQlif4SJ_WS8oU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGNmZWYyYjBj/YzM2MGZhNjU5OTJj/ZWQwNDFjNjVkNzli/Y2U5MGZlMWI2NmJm/MTg4MDZjOWMwOTlh/ZDA5MjJlMC9rYXJ0/eWtyZWR5dG93ZXVr/LmNvLnVrLw",
+            "path": "  \u203a home  \u203a insurance  \u203a geico vs. progressive: comparing home insurance costs and coverage"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/_8XfJH8dWDvpNfT-CWVgMrhJWHOgkejeVaAj1Bkvvys/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9rYXJ0/eWtyZWR5dG93ZXVr/LmNvLnVrL3VwbG9h/ZHMvMjAyNC8xMS9n/ZWljby12cy4tcHJv/Z3Jlc3NpdmUtY29t/cGFyaW5nLWhvbWUt/aW5zdXJhbmNlLWNv/c3RzLWFuZC1jb3Zl/cmFnZS53ZWJw",
+            "original": "https://kartykredytoweuk.co.uk/uploads/2024/11/geico-vs.-progressive-comparing-home-insurance-costs-and-coverage.webp",
+            "logo": false
+          },
+          "age": "May 9, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

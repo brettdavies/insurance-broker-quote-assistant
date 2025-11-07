@@ -1,0 +1,52 @@
+{
+  "websearch_id": "websearch_zffmw3c3dj3w6stlp3mp56pu",
+  "search_id": "search_u3h0nsetn6hofcifx8zoxh7u",
+  "timestamp": "2025-11-07T12:32:37.103845",
+  "startedAt": "2025-11-07T12:32:37.103845",
+  "completedAt": "2025-11-07T12:32:39.141604",
+  "durationSeconds": 2.04,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"prohibited statements\" insurance advertising California",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"prohibited statements\" insurance advertising California",
+      "show_strict_warning": false,
+      "cleaned": "prohibited statements insurance advertising California",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "prohibited statements insurance advertising California"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

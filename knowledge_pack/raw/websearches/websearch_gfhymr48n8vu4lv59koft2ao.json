@@ -1,0 +1,97 @@
+{
+  "websearch_id": "websearch_gfhymr48n8vu4lv59koft2ao",
+  "search_id": "search_etrfp754k5j0b2y5y8rmsst8",
+  "timestamp": "2025-11-07T12:26:16.975651",
+  "startedAt": "2025-11-07T12:26:16.975651",
+  "completedAt": "2025-11-07T12:26:19.132441",
+  "durationSeconds": 2.16,
+  "urlsDiscoveredCount": 1,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" \"year built\" requirement homeowners",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"GEICO\" \"year built\" requirement homeowners",
+      "show_strict_warning": false,
+      "cleaned": "GEICO year built requirement homeowners",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO year built requirement homeowners"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "GEICO Homeowners Insurance: Learn More About It -",
+          "url": "https://us.pixin.com.br/geico-homeowners-insurance-comprehensive-coverage-for-home-protection/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Before purchasing GEICO Homeowners Insurance, it\u2019s important to understand the rates and terms. The premium depends on several factors: Location and market value of the home \u00b7 Year built and type of construction materials \u00b7 Installed safety features (alarm systems, sprinklers, etc.)",
+          "page_age": "2025-08-13T16:07:26",
+          "profile": {
+            "name": "BOISLA",
+            "url": "https://us.pixin.com.br/geico-homeowners-insurance-comprehensive-coverage-for-home-protection/",
+            "long_name": "us.pixin.com.br",
+            "img": "https://imgs.search.brave.com/Bgn_0COAcZ-vQ1UEnMxfqzcAxvJ2LUha64lF44sfle4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTRkY2QyNTU0/YTRlOTA2MGQ5NmQw/OWI3Njg1ZTFlYTZi/YTg1MTNiM2EwYjFl/MjBiZGYzNWQxYjk2/YWM3YzU2NS91cy5w/aXhpbi5jb20uYnIv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "us.pixin.com.br",
+            "hostname": "us.pixin.com.br",
+            "favicon": "https://imgs.search.brave.com/Bgn_0COAcZ-vQ1UEnMxfqzcAxvJ2LUha64lF44sfle4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTRkY2QyNTU0/YTRlOTA2MGQ5NmQw/OWI3Njg1ZTFlYTZi/YTg1MTNiM2EwYjFl/MjBiZGYzNWQxYjk2/YWM3YzU2NS91cy5w/aXhpbi5jb20uYnIv",
+            "path": "  \u203a in\u00edcio  \u203a insurance  \u203a geico homeowners insurance: comprehensive coverage for home protection"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/NdcZz71qfW75gsBJ7umDCuJyUZB1EAF54C02d7Frz5Y/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91cy5w/aXhpbi5jb20uYnIv/d3AtY29udGVudC91/cGxvYWRzLzIwMjUv/MDgvZ2VpY28taG9t/ZW93bmVycy1pbnN1/cmFuY2Uud2VicA",
+            "original": "https://us.pixin.com.br/wp-content/uploads/2025/08/geico-homeowners-insurance.webp",
+            "logo": false
+          },
+          "age": "August 13, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

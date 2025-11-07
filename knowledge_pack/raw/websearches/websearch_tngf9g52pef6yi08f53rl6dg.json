@@ -1,0 +1,248 @@
+{
+  "websearch_id": "websearch_tngf9g52pef6yi08f53rl6dg",
+  "search_id": "search_kl9kvs5e6xn2htdrcob1tzkv",
+  "timestamp": "2025-11-07T12:26:03.773841",
+  "startedAt": "2025-11-07T12:26:03.773841",
+  "completedAt": "2025-11-07T12:26:05.579245",
+  "durationSeconds": 1.81,
+  "urlsDiscoveredCount": 4,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:geico.com construction types",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:geico.com construction types",
+      "show_strict_warning": false,
+      "cleaned": "construction types",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "construction types",
+        "sites": [
+          "geico.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Insurance 101 For Construction Contractors | GEICO Living",
+          "url": "https://living.geico.com/saving/insurance-101/construction-contractors/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "For construction contractors, a general liability policy is essential, not just because you and your employees are operating on sites with potentially risky tools (like heavy machinery), but also because you\u2019re managing a job site that can potentially cause property damage or third-party injuries.",
+          "page_age": "2025-03-17T13:40:36",
+          "profile": {
+            "name": "GEICO Living",
+            "url": "https://living.geico.com/saving/insurance-101/construction-contractors/",
+            "long_name": "living.geico.com",
+            "img": "https://imgs.search.brave.com/Cve-gaVVRqJopC0zfLT35CI5tzMv9fEQel0RH0-pstQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTQwNzI2ZGQy/YzdhMzYxOGY2MGQx/YmFiNGYyOGY2MDgz/M2E5Yjc5YjJhOWY4/OTYzOGU2ZTFjMWYy/NThhZjQxMi9saXZp/bmcuZ2VpY28uY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "living.geico.com",
+            "hostname": "living.geico.com",
+            "favicon": "https://imgs.search.brave.com/Cve-gaVVRqJopC0zfLT35CI5tzMv9fEQel0RH0-pstQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTQwNzI2ZGQy/YzdhMzYxOGY2MGQx/YmFiNGYyOGY2MDgz/M2E5Yjc5YjJhOWY4/OTYzOGU2ZTFjMWYy/NThhZjQxMi9saXZp/bmcuZ2VpY28uY29t/Lw",
+            "path": "\u203a saving  \u203a insurance-101  \u203a construction-contractors"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/jlVVMjONdvhBCOmC8qjlSpt53-PW1AT8ZAolo4TYGtQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9saXZp/bmcuZ2VpY28uY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy9HRUlD/T01vcmVfQ29uc3Ry/dWN0aW9uMTAxX1JG/Xzg5MjExNDUzNF82/MDB4NDAwLmpwZw",
+            "original": "https://living.geico.com/wp-content/uploads/GEICOMore_Construction101_RF_892114534_600x400.jpg",
+            "logo": false
+          },
+          "age": "March 17, 2025"
+        },
+        {
+          "title": "How to Lower Your Car Insurance: 11 Practical Tips | GEICO Living",
+          "url": "https://living.geico.com/saving/insurance-101/4-ways-to-save-on-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO offers many different types of insurance including commercial auto, motorcycle, boat, and more. See different insurance offerings here. Learn the basics of what umbrella insurance is, see what&#x27;s covered under umbrella insurance, and if umbrella insurance is right for you. The construction industry comes with some unique risks.",
+          "page_age": "2024-11-12T19:45:04",
+          "profile": {
+            "name": "GEICO Living",
+            "url": "https://living.geico.com/saving/insurance-101/4-ways-to-save-on-car-insurance/",
+            "long_name": "living.geico.com",
+            "img": "https://imgs.search.brave.com/Cve-gaVVRqJopC0zfLT35CI5tzMv9fEQel0RH0-pstQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTQwNzI2ZGQy/YzdhMzYxOGY2MGQx/YmFiNGYyOGY2MDgz/M2E5Yjc5YjJhOWY4/OTYzOGU2ZTFjMWYy/NThhZjQxMi9saXZp/bmcuZ2VpY28uY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "living.geico.com",
+            "hostname": "living.geico.com",
+            "favicon": "https://imgs.search.brave.com/Cve-gaVVRqJopC0zfLT35CI5tzMv9fEQel0RH0-pstQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTQwNzI2ZGQy/YzdhMzYxOGY2MGQx/YmFiNGYyOGY2MDgz/M2E5Yjc5YjJhOWY4/OTYzOGU2ZTFjMWYy/NThhZjQxMi9saXZp/bmcuZ2VpY28uY29t/Lw",
+            "path": "\u203a saving  \u203a insurance-101  \u203a 4-ways-to-save-on-car-insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/SR9OF3_Pni6kOZW6ECZEEZYg8NmW_6Ca2eNGn-iCsoI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9saXZp/bmcuZ2VpY28uY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMl84/ODMxODYzMjhfU09D/X1BIT19HRUlDT19M/aXZpbmdfUGlnZ3lf/QmFua19DYXJfNjAw/eDQwMC5qcGc",
+            "original": "https://living.geico.com/wp-content/uploads/22_883186328_SOC_PHO_GEICO_Living_Piggy_Bank_Car_600x400.jpg",
+            "logo": false
+          },
+          "age": "November 12, 2024"
+        },
+        {
+          "title": "Tips for Senior Drivers | GEICO Living",
+          "url": "https://living.geico.com/driving/auto/car-safety-insurance/tips-for-senior-drivers/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Senior citizens face an interesting challenge when it comes to driving and safety. Though still wild at heart, the aging body may tell a different story. In addition to physical changes, driving has c",
+          "page_age": "2025-07-22T15:57:11",
+          "profile": {
+            "name": "GEICO Living",
+            "url": "https://living.geico.com/driving/auto/car-safety-insurance/tips-for-senior-drivers/",
+            "long_name": "living.geico.com",
+            "img": "https://imgs.search.brave.com/Cve-gaVVRqJopC0zfLT35CI5tzMv9fEQel0RH0-pstQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTQwNzI2ZGQy/YzdhMzYxOGY2MGQx/YmFiNGYyOGY2MDgz/M2E5Yjc5YjJhOWY4/OTYzOGU2ZTFjMWYy/NThhZjQxMi9saXZp/bmcuZ2VpY28uY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "living.geico.com",
+            "hostname": "living.geico.com",
+            "favicon": "https://imgs.search.brave.com/Cve-gaVVRqJopC0zfLT35CI5tzMv9fEQel0RH0-pstQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTQwNzI2ZGQy/YzdhMzYxOGY2MGQx/YmFiNGYyOGY2MDgz/M2E5Yjc5YjJhOWY4/OTYzOGU2ZTFjMWYy/NThhZjQxMi9saXZp/bmcuZ2VpY28uY29t/Lw",
+            "path": "\u203a driving  \u203a auto  \u203a car-safety-insurance  \u203a tips-for-senior-drivers"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/8cRq7THRjBDkzCrfYoBji66RpAAQG63A0GKbX6qxf3Y/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9saXZp/bmcuZ2VpY28uY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy9HZXR0/eUltYWdlcy01MzM3/NjYzNDMtZTE2MTk2/MjI4NjU2NzkuanBn",
+            "original": "https://living.geico.com/wp-content/uploads/GettyImages-533766343-e1619622865679.jpg",
+            "logo": false
+          },
+          "age": "July 22, 2025"
+        },
+        {
+          "title": "Construction",
+          "url": "https://en.wikipedia.org/wiki/Construction",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "process that consists of the building or assembling of a building or infrastructure",
+          "profile": {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Construction",
+            "long_name": "en.wikipedia.org",
+            "img": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "deep_results": {
+            "buttons": [
+              {
+                "type": "button_result",
+                "title": "Etymology",
+                "url": "https://en.wikipedia.org/wiki/Construction#Etymology"
+              },
+              {
+                "type": "button_result",
+                "title": "History",
+                "url": "https://en.wikipedia.org/wiki/Construction#History"
+              },
+              {
+                "type": "button_result",
+                "title": "Construction industry sectors",
+                "url": "https://en.wikipedia.org/wiki/Construction#Construction_industry_sectors"
+              },
+              {
+                "type": "button_result",
+                "title": "Construction processes",
+                "url": "https://en.wikipedia.org/wiki/Construction#Construction_processes"
+              },
+              {
+                "type": "button_result",
+                "title": "Industry scale and characteristics",
+                "url": "https://en.wikipedia.org/wiki/Construction#Industry_scale_and_characteristics"
+              },
+              {
+                "type": "button_result",
+                "title": "Safety",
+                "url": "https://en.wikipedia.org/wiki/Construction#Safety"
+              },
+              {
+                "type": "button_result",
+                "title": "Construction magazines",
+                "url": "https://en.wikipedia.org/wiki/Construction#Construction_magazines"
+              }
+            ]
+          },
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "en.wikipedia.org",
+            "hostname": "en.wikipedia.org",
+            "favicon": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw",
+            "path": "\u203a wiki  \u203a Construction"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/qvMA9DuB-BwQCV7dkFVe8xFENx9QhTOmEwqExy67qPo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9k/L2Q2L0NvbnN0cnVj/dGlvbl9zaXRlX2lu/X0NvbG9nbmUlMkNf/R2VybWFueV8lMjgy/MDE3JTI5LmpwZw",
+            "original": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Construction_site_in_Cologne%2C_Germany_%282017%29.jpg",
+            "logo": false
+          }
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

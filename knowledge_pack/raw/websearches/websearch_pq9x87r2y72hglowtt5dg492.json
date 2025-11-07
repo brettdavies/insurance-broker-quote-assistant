@@ -1,0 +1,134 @@
+{
+  "websearch_id": "websearch_pq9x87r2y72hglowtt5dg492",
+  "search_id": "search_qpdhglqxwea805xde8iq9thr",
+  "timestamp": "2025-11-07T12:33:37.272075",
+  "startedAt": "2025-11-07T12:33:37.272075",
+  "completedAt": "2025-11-07T12:33:39.148360",
+  "durationSeconds": 1.88,
+  "urlsDiscoveredCount": 2,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" \"combine discounts\" total savings",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"GEICO\" \"combine discounts\" total savings",
+      "show_strict_warning": false,
+      "cleaned": "GEICO combine discounts total savings",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO combine discounts total savings"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "What Discounts Does GEICO Have for Insurance? | by Rate Frog | Medium",
+          "url": "https://medium.com/@ratefrog/what-discounts-does-geico-have-for-insurance-347cf408ca68",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Let\u2019s dive into the various discounts ... with other types of insurance, such as homeowners or renters insurance, can save you up to 25%....",
+          "page_age": "2024-11-23T23:03:03",
+          "profile": {
+            "name": "Medium",
+            "url": "https://medium.com/@ratefrog/what-discounts-does-geico-have-for-insurance-347cf408ca68",
+            "long_name": "medium.com",
+            "img": "https://imgs.search.brave.com/4R4hFITz_F_be0roUiWbTZKhsywr3fnLTMTkFL5HFow/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTZhYmQ1N2Q4/NDg4ZDcyODIyMDZi/MzFmOWNhNjE3Y2E4/Y2YzMThjNjljNDIx/ZjllZmNhYTcwODhl/YTcwNDEzYy9tZWRp/dW0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "medium.com",
+            "hostname": "medium.com",
+            "favicon": "https://imgs.search.brave.com/4R4hFITz_F_be0roUiWbTZKhsywr3fnLTMTkFL5HFow/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTZhYmQ1N2Q4/NDg4ZDcyODIyMDZi/MzFmOWNhNjE3Y2E4/Y2YzMThjNjljNDIx/ZjllZmNhYTcwODhl/YTcwNDEzYy9tZWRp/dW0uY29tLw",
+            "path": "\u203a @ratefrog  \u203a what-discounts-does-geico-have-for-insurance-347cf408ca68"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/sandKd7s-Xd9a_n1WTkAP7vh9mjxlYjnW3Co9WM9GHo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9taXJv/Lm1lZGl1bS5jb20v/djIvZGE6dHJ1ZS9i/ZDk3OGJiNTM2MzUw/YTcxMGU4ZWZiMDEy/NTEzNDI5Y2FiZGM0/YzI4NzAwNjA0MjYx/YWVkYTI0NmQwZjk4/MGI3",
+            "original": "https://miro.medium.com/v2/da:true/bd978bb536350a710e8efb012513429cabdc4c28700604261aeda246d0f980b7",
+            "logo": false
+          },
+          "age": "November 23, 2024"
+        },
+        {
+          "title": "Progressive: Unique Discounts for Safe Drivers",
+          "url": "https://homeownersinsurancem.com/progressive-unique-discounts-for-safe-drivers.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Can I combine discounts? Yes, most discounts can be stacked, including bundling and safe driver savings. How do I get a quote? Use this quote tool or compare against GEICO in our coverage comparison.",
+          "page_age": "2025-07-10T00:00:00",
+          "profile": {
+            "name": "Homeownersinsurancem",
+            "url": "https://homeownersinsurancem.com/progressive-unique-discounts-for-safe-drivers.html",
+            "long_name": "homeownersinsurancem.com",
+            "img": "https://imgs.search.brave.com/l6v4gawcKgya9hgA7ygjCKbdGWZKzPm1xiylAw8L6WY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ExNTk1YWYz/YTg4MTNmNWIwZmI4/MGYxYmZiNzkxMjA4/OGUyODE4YTQ5ODU3/MGQ2NTc0ZDI1Nzg4/Y2EyNzY5MS9ob21l/b3duZXJzaW5zdXJh/bmNlbS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "homeownersinsurancem.com",
+            "hostname": "homeownersinsurancem.com",
+            "favicon": "https://imgs.search.brave.com/l6v4gawcKgya9hgA7ygjCKbdGWZKzPm1xiylAw8L6WY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ExNTk1YWYz/YTg4MTNmNWIwZmI4/MGYxYmZiNzkxMjA4/OGUyODE4YTQ5ODU3/MGQ2NTc0ZDI1Nzg4/Y2EyNzY5MS9ob21l/b3duZXJzaW5zdXJh/bmNlbS5jb20v",
+            "path": "  \u203a exclusive discounts for safe drivers with progressive insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/cWjqfALKs_AjCuZ-n8dZH1Q2OuGqhKIe17rNKITo-Xc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9ob21l/b3duZXJzaW5zdXJh/bmNlbS5jb20vaW1h/Z2VzL3NhdmUtb24t/YXV0by1pbnN1cmFu/Y2UuanBn",
+            "original": "https://homeownersinsurancem.com/images/save-on-auto-insurance.jpg",
+            "logo": false
+          },
+          "age": "July 10, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

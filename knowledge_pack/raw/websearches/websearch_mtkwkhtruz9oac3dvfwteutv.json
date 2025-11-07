@@ -1,0 +1,753 @@
+{
+  "websearch_id": "websearch_mtkwkhtruz9oac3dvfwteutv",
+  "search_id": "search_zybt1hiejzx3c3zgojei4oou",
+  "timestamp": "2025-11-07T12:29:35.480969",
+  "startedAt": "2025-11-07T12:29:35.480969",
+  "completedAt": "2025-11-07T12:29:37.325430",
+  "durationSeconds": 1.84,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:bankrate.com State Farm rates California",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:bankrate.com State Farm rates California",
+      "show_strict_warning": false,
+      "cleaned": "State Farm rates California",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "State Farm rates California",
+        "sites": [
+          "bankrate.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "California Approves 17% Rate Hike for State Farm Homeowners Insurance",
+          "url": "https://www.bankrate.com/insurance/homeowners-insurance/california-approves-rate-hike-for-state-farm-homeowners-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Like a good neighbor, State Farm is still there in California. However, homes in Golden State neighborhoods will see higher insurance bills. On May 13, State Farm was given the green light to raise homeowners insurance premiums by 17 percent. Renters and condo insurance were approved for a 15 percent hike, while rental owners policies were approved to increase by 38 percent. Policyholders can expect these new rates to go into effect upon renewals on or after June 1.",
+          "page_age": "2025-06-02T16:39:12",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/homeowners-insurance/california-approves-rate-hike-for-state-farm-homeowners-insurance/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a homeowners insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/B3WpZ2sddOY0uNLyKRT_CWx3kX9nSiLOv7P_GOSKXQQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/L2JycC8yMDI1LzA1/LzIyMTEyNTI0L0dl/dHR5SW1hZ2VzLTEy/OTkxMTM1OTgtc2Nh/bGVkLmpwZw",
+            "original": "https://www.bankrate.com/brp/2025/05/22112524/GettyImages-1299113598-scaled.jpg",
+            "logo": false
+          },
+          "age": "June 2, 2025"
+        },
+        {
+          "title": "State Farm Insurance Review 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The California Department of Insurance approved a 17 percent homeowners insurance rate hike for State Farm in May 2025, less than the initially proposed 22 percent.",
+          "page_age": "2025-11-06T16:06:00",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/state-farm/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "1 day ago"
+        },
+        {
+          "title": "AAA vs State Farm 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/aaa-vs-state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Rates were calculated based on the following insurance credit tiers assigned to our drivers: \u201cpoor, average, good (base) and excellent.\u201d Insurance credit tiers factor in your official credit scores but are not dependent on that variable alone. Four states prohibit or limit the use of credit as a rating factor in determining auto insurance rates: California, Hawaii, Massachusetts and Michigan.",
+          "page_age": "2025-09-08T18:54:48",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/aaa-vs-state-farm/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "September 8, 2025"
+        },
+        {
+          "title": "Best Cheap Car Insurance in San Francisco, CA in 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/san-francisco-ca/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Last year, State Farm announced it would no longer write new home insurance policies for California homeowners. So, if you\u2019re looking to bundle your home and auto policies together, State Farm would not be a viable option. Why State Farm may be best for safe drivers: State Farm rates are closer to the San Francisco average, but policyholders have the opportunity to reduce their premium by enrolling in the Drive Safe &amp; Save telematics program.",
+          "page_age": "2025-11-04T20:29:11",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/san-francisco-ca/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product_cluster",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/WmJAmRq354HwPu1QNu_yBKLqXw0BH-yd_81aCv3ZoRA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/aW5zdXJhbmNlLnJl/ZHZlbnR1cmVzLmlv/L2ltYWdlcy9tZXJj/dXJ5LnN2Zw",
+            "original": "https://cdn.insurance.redventures.io/images/mercury.svg",
+            "logo": true
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "Geico vs State Farm | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/geico-vs-state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Rates were calculated based on the following insurance credit tiers assigned to our drivers: \u201cpoor, average, good (base) and excellent.\u201d Insurance credit tiers factor in your official credit scores but are not dependent on that variable alone. Four states prohibit or limit the use of credit as a rating factor in determining auto insurance rates: California, Hawaii, Massachusetts and Michigan.",
+          "page_age": "2025-09-08T15:15:12",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/geico-vs-state-farm/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "September 8, 2025"
+        },
+        {
+          "title": "Progressive vs. State Farm 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/progressive-vs-state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The rates displayed reflect the total cost of a driver this age added to their parents\u2019 policy. The following states do not use gender as a determining factor in calculating premiums: California, Hawaii, Massachusetts, Michigan, North Carolina, Pennsylvania.",
+          "page_age": "2025-11-04T11:52:19",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/progressive-vs-state-farm/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "State Farm vs USAA: Car Insurance Comparison | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/state-farm-vs-usaa/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Rates were calculated based on ... scores but are not dependent on that variable alone. Four states prohibit or limit the use of credit as a rating factor in determining auto insurance rates: California, Hawaii, Massachusetts and Michigan....",
+          "page_age": "2025-09-08T15:15:06",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/state-farm-vs-usaa/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "September 8, 2025"
+        },
+        {
+          "title": "Best Car Insurance in California for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/california/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Why State Farm made our list: For California drivers who prefer insurance agents with brick-and-mortar locations, State Farm has over 19,000 agents nationwide. Along with a highly rated mobile app and two telematics discount options, State Farm offers the best of both worlds: independent policy ...",
+          "page_age": "2025-10-30T20:02:15",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/california/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product_cluster",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/WmJAmRq354HwPu1QNu_yBKLqXw0BH-yd_81aCv3ZoRA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/aW5zdXJhbmNlLnJl/ZHZlbnR1cmVzLmlv/L2ltYWdlcy9tZXJj/dXJ5LnN2Zw",
+            "original": "https://cdn.insurance.redventures.io/images/mercury.svg",
+            "logo": true
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Allstate, Geico, Progressive and State Farm Compared | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/comparison-allstate-geico-progressive-state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Rates were calculated based on ... scores but are not dependent on that variable alone. Four states prohibit or limit the use of credit as a rating factor in determining auto insurance rates: California, Hawaii, Massachusetts and Michigan....",
+          "page_age": "2025-08-19T12:42:54",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/comparison-allstate-geico-progressive-state-farm/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/qRCWTEdsnsACE5ZamCI9jMMGha-EMK8xAQWKx_51oDI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/L2JycC8yMDI1LzAy/LzA2MTU1MzM1L0lu/c3VyYW5jZV9GcmVl/bGFuY2VfQWxsc3Rh/dGVfR2VpY29fUHJv/Z3Jlc3NpdmVfYW5k/X1N0YXRlX0Zhcm1f/Q29tcGFyZWQuanBn",
+            "original": "https://www.bankrate.com/brp/2025/02/06155335/Insurance_Freelance_Allstate_Geico_Progressive_and_State_Farm_Compared.jpg",
+            "logo": false
+          },
+          "age": "August 19, 2025"
+        },
+        {
+          "title": "Car Insurance Rates by State for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/states/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Rates were calculated based on the following insurance credit tiers assigned to our drivers: \u201cpoor, average, good (base) and excellent.\u201d Insurance credit tiers factor in your official credit scores but are not dependent on that variable alone. Four states prohibit or limit the use of credit as a rating factor in determining auto insurance rates: California, Hawaii, Massachusetts and Michigan.",
+          "page_age": "2025-11-06T23:45:39",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/states/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/zlUOzR1BVAnhcrUq5nSR2e_z0UOWwBSCQeetBW1X5EA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvODAw/eDQ1MC82ZTNjZmY3/OGE1L3N0YXRlLXJh/dGVzLTgwMC00NTAt/MS5qcGVn",
+            "original": "https://a.storyblok.com/f/102997/800x450/6e3cff78a5/state-rates-800-450-1.jpeg",
+            "logo": false
+          },
+          "age": "19 hours ago"
+        },
+        {
+          "title": "State Farm vs. Amica | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/state-farm-vs-amica/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Rates were calculated based on ... scores but are not dependent on that variable alone. Four states prohibit or limit the use of credit as a rating factor in determining auto insurance rates: California, Hawaii, Massachusetts and Michigan....",
+          "page_age": "2025-09-01T04:00:00",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/state-farm-vs-amica/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "September 1, 2025"
+        },
+        {
+          "title": "State Farm Drive Safe and Save | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/state-farm-drive-safe-and-save/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "This aspect makes it a supportive ... rate hikes. However, it\u2019s important to consider certain aspects that might affect how well the program fits your individual needs and circumstances: State availability: Drive Safe and Save is not available in every state. States like California, Massachusetts ...",
+          "page_age": "2025-05-09T19:20:17",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/state-farm-drive-safe-and-save/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/XrAafb75PfxpAAd0LjDXlUF1Igo249KmFGXCEHzRFrE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/LzIwMjAvMTEvMjkx/MzE4NDUvU3RhdGUt/RmFybS1Ecml2ZS1T/YWZlLUFuZC1TYXZl/LmpwZWc",
+            "original": "https://www.bankrate.com/2020/11/29131845/State-Farm-Drive-Safe-And-Save.jpeg",
+            "logo": false
+          },
+          "age": "May 9, 2025"
+        },
+        {
+          "title": "Farm Bureau Insurance Review 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/farm-bureau/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Rates were calculated based on the following insurance credit tiers assigned to our drivers: \u201cpoor, average, good (base) and excellent.\u201d Insurance credit tiers factor in your official credit scores but are not dependent on that variable alone. Four states prohibit or limit the use of credit as a rating factor in determining auto insurance rates: California, Hawaii, Massachusetts and Michigan.",
+          "page_age": "2025-09-25T20:41:09",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/farm-bureau/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "September 25, 2025"
+        },
+        {
+          "title": "Why Filing a Claim Raises Your Insurance Rates | Bankrate",
+          "url": "https://www.bankrate.com/insurance/claims-that-boost-your-insurance-rates/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Rates were calculated based on the following insurance credit tiers assigned to our drivers: \u201cpoor, average, good (base) and excellent.\u201d Insurance credit tiers factor in your official credit scores but are not dependent on that variable alone. Four states prohibit or limit the use of credit as a rating factor in determining auto insurance rates: California, Hawaii, Massachusetts and Michigan.",
+          "page_age": "2025-06-05T21:06:11",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/claims-that-boost-your-insurance-rates/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/HM_QiZN49vuJcPbdtzaYRxun0r2TXKnopNjOcoupVk4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/L2JycC8yMDI0LzEw/LzE5MTMwMDMzL3do/eS1maWxpbmctYS1j/bGFpbS1yYWlzZXMt/eW91ci1pbnN1cmFu/Y2UtcmF0ZXMuanBn",
+            "original": "https://www.bankrate.com/brp/2024/10/19130033/why-filing-a-claim-raises-your-insurance-rates.jpg",
+            "logo": false
+          },
+          "age": "June 5, 2025"
+        },
+        {
+          "title": "Country Financial Insurance Review 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/country-financial/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Rates were calculated based on the following insurance credit tiers assigned to our drivers: \u201cpoor, average, good (base) and excellent.\u201d Insurance credit tiers factor in your official credit scores but are not dependent on that variable alone. Four states prohibit or limit the use of credit as a rating factor in determining auto insurance rates: California, Hawaii, Massachusetts and Michigan.",
+          "page_age": "2025-09-25T21:16:18",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/country-financial/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "September 25, 2025"
+        },
+        {
+          "title": "Best Car Insurance in Colorado for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/colorado/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Rates were calculated based on the following insurance credit tiers assigned to our drivers: \u201cpoor, average, good (base) and excellent.\u201d Insurance credit tiers factor in your official credit scores but are not dependent on that variable alone. Four states prohibit or limit the use of credit as a rating factor in determining auto insurance rates: California, Hawaii, Massachusetts and Michigan.",
+          "page_age": "2025-09-08T15:17:01",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/colorado/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/dX_ZQysuJ8lo8w1Un9hQ16v7aVyUo0I1swRTTFQVM_Y/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvMTI4/MHg3MjAvY2I2NjEz/ZjBmMi9iZXN0LWNh/ci1pbnN1cmFuY2Ut/aW4tY29sb3JhZG8u/anBlZw",
+            "original": "https://a.storyblok.com/f/102997/1280x720/cb6613f0f2/best-car-insurance-in-colorado.jpeg",
+            "logo": false
+          },
+          "age": "September 8, 2025"
+        },
+        {
+          "title": "Best Cheap Car Insurance in Phoenix for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/phoenix-az/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Rates were calculated based on the following insurance credit tiers assigned to our drivers: \u201cpoor, average, good (base) and excellent.\u201d Insurance credit tiers factor in your official credit scores but are not dependent on that variable alone. Four states prohibit or limit the use of credit as a rating factor in determining auto insurance rates: California, Hawaii, Massachusetts and Michigan.",
+          "page_age": "2025-10-26T00:02:21",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/phoenix-az/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product_cluster",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/XWhvstOZkEur_nnyl_oc5e9QAwvTJfIxOVxi-ECWqvM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/aW5zdXJhbmNlLnJl/ZHZlbnR1cmVzLmlv/L2ltYWdlcy9uYXRp/b253aWRlLnN2Zw",
+            "original": "https://cdn.insurance.redventures.io/images/nationwide.svg",
+            "logo": true
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "Texas Farm Bureau Insurance Review 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/texas-farm-bureau/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Rates were calculated based on the following insurance credit tiers assigned to our drivers: \u201cpoor, average, good (base) and excellent.\u201d Insurance credit tiers factor in your official credit scores but are not dependent on that variable alone. Four states prohibit or limit the use of credit as a rating factor in determining auto insurance rates: California, Hawaii, Massachusetts and Michigan.",
+          "page_age": "2025-09-08T18:54:48",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/texas-farm-bureau/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "September 8, 2025"
+        },
+        {
+          "title": "Insurify Insurance Review 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/insurify/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Insurify prioritizes the convenience of comparing multiple quotes online, but State Farm\u2019s nationwide network of local agents might offer a different benefit: personalized insurance advice from agents who understand your area. As the largest personal insurance company in the U.S., State Farm has agents in most areas as well as top-rated online and mobile tools and generally low rates.",
+          "page_age": "2025-09-08T18:54:49",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/insurify/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/3KgZMlu_KtH_uA9DEWnIDQs5in-KNpElY_diRFjB32g/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvMTI4/MHg3MjAvMDE3MzY4/MWMxNy9pbnN1cmFu/Y2VfaW5zdXJpZnkt/Y29tcGFyaXNvbi1y/ZXZpZXctMjAyMy5q/cGc",
+            "original": "https://a.storyblok.com/f/102997/1280x720/0173681c17/insurance_insurify-comparison-review-2023.jpg",
+            "logo": false
+          },
+          "age": "September 8, 2025"
+        },
+        {
+          "title": "Best Cheap Car Insurance in Brownsville for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/brownsville-tx/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Rates were calculated based on the following insurance credit tiers assigned to our drivers: \u201cpoor, average, good (base) and excellent.\u201d Insurance credit tiers factor in your official credit scores but are not dependent on that variable alone. Four states prohibit or limit the use of credit as a rating factor in determining auto insurance rates: California, Hawaii, Massachusetts and Michigan.",
+          "page_age": "2025-09-08T15:11:34",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/brownsville-tx/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "age": "September 8, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

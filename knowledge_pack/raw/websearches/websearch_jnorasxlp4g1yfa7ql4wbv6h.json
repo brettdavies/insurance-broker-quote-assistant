@@ -1,0 +1,536 @@
+{
+  "websearch_id": "websearch_jnorasxlp4g1yfa7ql4wbv6h",
+  "search_id": "search_mvw0uc3h0ateejbma7686dgi",
+  "timestamp": "2025-11-07T12:23:06.725768",
+  "startedAt": "2025-11-07T12:23:06.725768",
+  "completedAt": "2025-11-07T12:23:08.747714",
+  "durationSeconds": 2.02,
+  "urlsDiscoveredCount": 13,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" \"alarm system\" discount homeowners",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"GEICO\" \"alarm system\" discount homeowners",
+      "show_strict_warning": false,
+      "cleaned": "GEICO alarm system discount homeowners",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO alarm system discount homeowners"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "GEICO Home Insurance Review",
+          "url": "https://www.moneygeek.com/insurance/homeowners/reviews/geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO offers six discounts for homeowners insurance, including a multi-policy discount when you bundle home and auto coverage, home security discounts for alarm systems and cameras, and safety equipment discounts for smoke detectors and fire ...",
+          "page_age": "2025-10-29T10:25:35",
+          "profile": {
+            "name": "MoneyGeek",
+            "url": "https://www.moneygeek.com/insurance/homeowners/reviews/geico/",
+            "long_name": "moneygeek.com",
+            "img": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "moneygeek.com",
+            "hostname": "www.moneygeek.com",
+            "favicon": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8",
+            "path": "  \u203a home  \u203a insurance  \u203a geico homeowners insurance review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/x1OQJxpE_J8W2gHMWyFTklZU6My-FdjDYddjiMVLpB4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbW9uZXlnZWVr/L2ltYWdlL3VwbG9h/ZC9jX3NjYWxlLHFf/YXV0bzplY28sd18x/MjAwLGZfYXV0byxm/bF9sb3NzeS92MTc1/NjQ5NTg0OC9nZWlj/b19sb2dvX2MwM2Nk/ZGNiN2QuanBn",
+            "original": "https://res.cloudinary.com/moneygeek/image/upload/c_scale,q_auto:eco,w_1200,f_auto,fl_lossy/v1756495848/geico_logo_c03cddcb7d.jpg",
+            "logo": true
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Geico Home Insurance Review \u2013 Forbes Advisor",
+          "url": "https://www.forbes.com/advisor/homeowners-insurance/geico-home-insurance-review/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Because Geico does not sell its own insurance policies, you will need to request a quote in order to see what homeowners insurance discounts are available from the Geico partner. Typical homeowners insurance discounts include: Home security alarm systems \u00b7 Smoke alarms and fire extinguisher discount \u00b7",
+          "page_age": "2025-07-30T11:47:37",
+          "profile": {
+            "name": "Forbes Advisor",
+            "url": "https://www.forbes.com/advisor/homeowners-insurance/geico-home-insurance-review/",
+            "long_name": "forbes.com",
+            "img": "https://imgs.search.brave.com/qg6-E4bARcUpS7pHuJ2FXSeQ2YI51iPfbI8wpUBx9tg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY0NWFiMTBk/YmY2MjkyN2M0MTI0/NmRkYTM3ZjQzMGJj/Y2Q2MTBkYjVmZjA2/OGRjODBhMTM1M2Yx/YmRlZTA1NS93d3cu/Zm9yYmVzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "forbes.com",
+            "hostname": "www.forbes.com",
+            "favicon": "https://imgs.search.brave.com/qg6-E4bARcUpS7pHuJ2FXSeQ2YI51iPfbI8wpUBx9tg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY0NWFiMTBk/YmY2MjkyN2M0MTI0/NmRkYTM3ZjQzMGJj/Y2Q2MTBkYjVmZjA2/OGRjODBhMTM1M2Yx/YmRlZTA1NS93d3cu/Zm9yYmVzLmNvbS8",
+            "path": "\u203a advisor  \u203a homeowners-insurance  \u203a geico-home-insurance-review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/CTHtrL3CXiuz1SXqU73aijoLOBahyzPY-KYwYTfe3X4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Zm9yYmVzLmNvbS9h/ZHZpc29yL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIyLzA4L3do/aXRlLWhvdXNlLWFu/ZC1za3kuanBlZy5q/cGc",
+            "original": "https://www.forbes.com/advisor/wp-content/uploads/2022/08/white-house-and-sky.jpeg.jpg",
+            "logo": false
+          },
+          "age": "July 30, 2025"
+        },
+        {
+          "title": "GEICO Home Insurance Review: Ratings and Quotes (2025) | Insurify",
+          "url": "https://insurify.com/homeowners-insurance/companies/geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Qualifying policyholders can earn the following discounts: Home security discount: Homeowners can earn a discount for installing things like alarm systems and home security cameras.",
+          "page_age": "2025-02-03T19:00:00",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/homeowners-insurance/companies/geico/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a homeowners insurance  \u203a geico"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/w5FgrBqAlQs8svek1OPEIVtbUegmgdfwiK49IYu68Lg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xNjIyNzMvODAw/eDYwMC9hNTk2MGZk/MmRlL2dyZWVuLWhv/dXNlLW9yYW5nZS5w/bmc",
+            "original": "https://a.storyblok.com/f/162273/800x600/a5960fd2de/green-house-orange.png",
+            "logo": false
+          },
+          "age": "February 3, 2025"
+        },
+        {
+          "title": "How to Lower Your Car Insurance: 11 Practical Tips | GEICO Living",
+          "url": "https://living.geico.com/saving/insurance-101/4-ways-to-save-on-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO may not be involved in a formal relationship with each organization; however, you still may qualify for a special discount based on your membership, employment or affiliation with those organizations. Homeowners, renters, condo and mobile home coverages are written through non-affiliated insurance companies and are secured through the GEICO Insurance Agency, Inc.",
+          "page_age": "2024-11-12T19:45:04",
+          "profile": {
+            "name": "GEICO Living",
+            "url": "https://living.geico.com/saving/insurance-101/4-ways-to-save-on-car-insurance/",
+            "long_name": "living.geico.com",
+            "img": "https://imgs.search.brave.com/Cve-gaVVRqJopC0zfLT35CI5tzMv9fEQel0RH0-pstQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTQwNzI2ZGQy/YzdhMzYxOGY2MGQx/YmFiNGYyOGY2MDgz/M2E5Yjc5YjJhOWY4/OTYzOGU2ZTFjMWYy/NThhZjQxMi9saXZp/bmcuZ2VpY28uY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "living.geico.com",
+            "hostname": "living.geico.com",
+            "favicon": "https://imgs.search.brave.com/Cve-gaVVRqJopC0zfLT35CI5tzMv9fEQel0RH0-pstQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTQwNzI2ZGQy/YzdhMzYxOGY2MGQx/YmFiNGYyOGY2MDgz/M2E5Yjc5YjJhOWY4/OTYzOGU2ZTFjMWYy/NThhZjQxMi9saXZp/bmcuZ2VpY28uY29t/Lw",
+            "path": "\u203a saving  \u203a insurance-101  \u203a 4-ways-to-save-on-car-insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/SR9OF3_Pni6kOZW6ECZEEZYg8NmW_6Ca2eNGn-iCsoI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9saXZp/bmcuZ2VpY28uY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMl84/ODMxODYzMjhfU09D/X1BIT19HRUlDT19M/aXZpbmdfUGlnZ3lf/QmFua19DYXJfNjAw/eDQwMC5qcGc",
+            "original": "https://living.geico.com/wp-content/uploads/22_883186328_SOC_PHO_GEICO_Living_Piggy_Bank_Car_600x400.jpg",
+            "logo": false
+          },
+          "age": "November 12, 2024"
+        },
+        {
+          "title": "GEICO Homeowners Insurance Review: Pros, Cons, and Alternatives",
+          "url": "https://www.businessinsider.com/personal-finance/homeowners-insurance/geico-homeowners-insurance-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO offers a few different discount ... rate on your auto insurance when you bundle home and auto policies with GEICO. Home security discount: When you install cameras and alarm systems ......",
+          "page_age": "2025-05-19T21:56:09",
+          "profile": {
+            "name": "Business Insider",
+            "url": "https://www.businessinsider.com/personal-finance/homeowners-insurance/geico-homeowners-insurance-review",
+            "long_name": "businessinsider.com",
+            "img": "https://imgs.search.brave.com/Z6wRqiE6vvL-8sy5MskRt7Tuy1z-PxXnfSbVXVy86vw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTI3NGQzMDdi/ZjEzYTA0MTI4NWMw/MWVjOTFmNDI3Yzdk/NGQzZDE1OTAxOWVj/NWIxMjk3YTcyNTg5/N2FiZjM2Yy93d3cu/YnVzaW5lc3NpbnNp/ZGVyLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "businessinsider.com",
+            "hostname": "www.businessinsider.com",
+            "favicon": "https://imgs.search.brave.com/Z6wRqiE6vvL-8sy5MskRt7Tuy1z-PxXnfSbVXVy86vw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTI3NGQzMDdi/ZjEzYTA0MTI4NWMw/MWVjOTFmNDI3Yzdk/NGQzZDE1OTAxOWVj/NWIxMjk3YTcyNTg5/N2FiZjM2Yy93d3cu/YnVzaW5lc3NpbnNp/ZGVyLmNvbS8",
+            "path": "  \u203a personal finance  \u203a insurance  \u203a homeowners insurance  \u203a geico homeowners insurance review: pros, cons, and alternatives"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/OH3rgfR27kjjPsF49LribxpHiWko6hLRlGvFzG0hnxY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pLmlu/c2lkZXIuY29tLzY4/MmJhNjMwYzZhZDI4/OGQxNDgxNWMzYz93/aWR0aD0xMDAwJmZv/cm1hdD1qcGVn",
+            "original": "https://i.insider.com/682ba630c6ad288d14815c3c?width=1000&format=jpeg",
+            "logo": false
+          },
+          "age": "May 19, 2025"
+        },
+        {
+          "title": "GEICO Home Insurance Review 2023 - Agency Height",
+          "url": "https://www.agencyheight.com/insurance-reviews/geico-insurance-reviews/home-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO also offers a range of typical homeowners insurance discounts, including: Discounts on home security systems for customers with an approved alarm system installed in their homes.",
+          "page_age": "2025-01-10T07:55:30",
+          "profile": {
+            "name": "Agency Height",
+            "url": "https://www.agencyheight.com/insurance-reviews/geico-insurance-reviews/home-insurance/",
+            "long_name": "agencyheight.com",
+            "img": "https://imgs.search.brave.com/SqJaTmW9rXwOaPRDPQHWBjf8j0LlJKXLiBL6i--c6eI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTYxYzRmNjU0/MTViYTMzZDMyNWQ4/ZDY0NjlhNjEzYTVl/MjcyZDM5ZWEzMDQ1/MDQwM2MzY2FlODUw/Yzg4M2E1My93d3cu/YWdlbmN5aGVpZ2h0/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "agencyheight.com",
+            "hostname": "www.agencyheight.com",
+            "favicon": "https://imgs.search.brave.com/SqJaTmW9rXwOaPRDPQHWBjf8j0LlJKXLiBL6i--c6eI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTYxYzRmNjU0/MTViYTMzZDMyNWQ4/ZDY0NjlhNjEzYTVl/MjcyZDM5ZWEzMDQ1/MDQwM2MzY2FlODUw/Yzg4M2E1My93d3cu/YWdlbmN5aGVpZ2h0/LmNvbS8",
+            "path": "  \u203a home  \u203a insurance reviews  \u203a geico insurance reviews 2025  \u203a geico home insurance review 2023"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/pubgNgoREuGgE7IrRCcE3MrEoXSZEQjgHcpFF9dOGqo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YWdlbmN5aGVpZ2h0/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/TG9nby1CbHVlLnBu/Zw",
+            "original": "https://www.agencyheight.com/wp-content/uploads/Logo-Blue.png",
+            "logo": true
+          },
+          "age": "January 10, 2025"
+        },
+        {
+          "title": "Lowering Geico Insurance Rates: Tips And Tricks | ShunIns",
+          "url": "https://shunins.com/article/how-to-lower-geico-insurance-rate",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "There are several ways to lower your GEICO insurance rate. Firstly, you can take advantage of the various discounts offered by GEICO, such as discounts for homeowners, good students, military personnel, and those who have previously completed a defensive driving course.",
+          "page_age": "2025-06-25T01:38:02",
+          "profile": {
+            "name": "ShunIns",
+            "url": "https://shunins.com/article/how-to-lower-geico-insurance-rate",
+            "long_name": "shunins.com",
+            "img": "https://imgs.search.brave.com/jvP4Fve05YIvAUZZWzBsRulCIHRsJJaPDya1iEAYmoU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMmFiOTRkMTI2/NGU3ZjMyYWQ3Y2Q5/NGM3ZjNmZDg3MTdh/YzA4Y2I5YzY3NDdm/ZmU0YjQyZWJmMDlj/MGFlMzdjNC9zaHVu/aW5zLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "shunins.com",
+            "hostname": "shunins.com",
+            "favicon": "https://imgs.search.brave.com/jvP4Fve05YIvAUZZWzBsRulCIHRsJJaPDya1iEAYmoU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMmFiOTRkMTI2/NGU3ZjMyYWQ3Y2Q5/NGM3ZjNmZDg3MTdh/YzA4Y2I5YzY3NDdm/ZmU0YjQyZWJmMDlj/MGFlMzdjNC9zaHVu/aW5zLmNvbS8",
+            "path": "  \u203a home  \u203a automobile insurance  \u203a lowering geico insurance rates: tips and tricks"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/NAYfgrxPrgHP6NRqe0OPSbV9ha-S7p1jKmXLRcg4L1s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zaHVu/aW5zLmNvbS9pbWFn/ZXMvcmVzb3VyY2Vz/L2hvdy10by1sb3dl/ci1nZWljby1pbnN1/cmFuY2UtcmF0ZV8y/MDI1MDYyNTA4MzI0/Mi53ZWJw",
+            "original": "https://shunins.com/images/resources/how-to-lower-geico-insurance-rate_20250625083242.webp",
+            "logo": false
+          },
+          "age": "June 25, 2025"
+        },
+        {
+          "title": "Deep Dive Into Geico Home Insurance Review 2025 - Your Home Insurance",
+          "url": "https://yourhomeinsurance.org/geico-home-insurance-review/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Multi-Policy Discount: Bundling Geico auto and homeowners insurance can lead to savings. This discount can be combined with other discounts, such as good driver and defensive driving discounts for auto policies. Additionally, bundling discounts are available for car and renters insurance. Home Security Systems: Homes equipped with alarm systems are eligible for reduced rates.",
+          "page_age": "2025-02-08T05:37:17",
+          "profile": {
+            "name": "Your Home Insurance",
+            "url": "https://yourhomeinsurance.org/geico-home-insurance-review/",
+            "long_name": "yourhomeinsurance.org",
+            "img": "https://imgs.search.brave.com/zAaNmkk6-n5Ss3BBNnP0ocwTBkDET3QWYFeKa33fRo4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNGVhMGIyMDUw/NTdmNTQyOTAwNzA1/Yjg4YTVkMzY4NTAz/ZGY1MTA5MzBkOWE2/NDg4Mjc5ZTExZWYy/YTgzMDdiNi95b3Vy/aG9tZWluc3VyYW5j/ZS5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "yourhomeinsurance.org",
+            "hostname": "yourhomeinsurance.org",
+            "favicon": "https://imgs.search.brave.com/zAaNmkk6-n5Ss3BBNnP0ocwTBkDET3QWYFeKa33fRo4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNGVhMGIyMDUw/NTdmNTQyOTAwNzA1/Yjg4YTVkMzY4NTAz/ZGY1MTA5MzBkOWE2/NDg4Mjc5ZTExZWYy/YTgzMDdiNi95b3Vy/aG9tZWluc3VyYW5j/ZS5vcmcv",
+            "path": "\u203a geico-home-insurance-review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Pt9GvHUp4CHX7BPb8fCpBWl_-hQYAUSkYyZJDytJ5CA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20veW91cmhv/bWVpbnN1cmFuY2Uu/b3JnL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI0LzExLzIxNTc0/MDQuanBnP2ZpdD0x/NjAwJTJDMTA2NiZz/c2w9MQ",
+            "original": "https://i0.wp.com/yourhomeinsurance.org/wp-content/uploads/2024/11/2157404.jpg?fit=1600%2C1066&ssl=1",
+            "logo": false
+          },
+          "age": "February 8, 2025"
+        },
+        {
+          "title": "Best Anti-Theft Device Car Insurance Discounts in 2025 (Save up to 25% With These Companies) | Clearsurance",
+          "url": "https://clearsurance.com/blog/best-anti-theft-device-car-insurance-discounts",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The discount varies depending on the system\u2019s effectiveness in preventing theft and the insurer\u2019s policy. Comparing quotes is the easiest way to find affordable car insurance. Simply enter your ZIP code into our free comparison tool to see rates in your area. The best anti-theft devices to lower car insurance rates include GPS tracking systems, immobilizers, car alarms, and VIN etching.",
+          "page_age": "2025-04-03T23:50:24",
+          "profile": {
+            "name": "Clearsurance -",
+            "url": "https://clearsurance.com/blog/best-anti-theft-device-car-insurance-discounts",
+            "long_name": "clearsurance.com",
+            "img": "https://imgs.search.brave.com/KcX9p4u9Y6Gb4ybHTKD6RJ7aDtcyBA1hsroH-6pxVKc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTY1ZTZhMWJj/ODc5NjIzOTgzODAw/NjYzZDgzNGYzZDY0/MmFhMzA1YTcxNzc1/OTBjNTBmM2M0M2Fj/N2I5ZjkzZS9jbGVh/cnN1cmFuY2UuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "clearsurance.com",
+            "hostname": "clearsurance.com",
+            "favicon": "https://imgs.search.brave.com/KcX9p4u9Y6Gb4ybHTKD6RJ7aDtcyBA1hsroH-6pxVKc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTY1ZTZhMWJj/ODc5NjIzOTgzODAw/NjYzZDgzNGYzZDY0/MmFhMzA1YTcxNzc1/OTBjNTBmM2M0M2Fj/N2I5ZjkzZS9jbGVh/cnN1cmFuY2UuY29t/Lw",
+            "path": "  \u203a home  \u203a uncategorized"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/SH6nfCp9eYvVRHkrTRIfuu0NPuOztG_eyXpqUPDCksA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9xdW90/ZS5jbGVhcnN1cmFu/Y2UuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI1LzAyL2Fu/dGktdGhlZnRfZGV2/aWNlc19zcXVhcmUu/anBn",
+            "original": "https://quote.clearsurance.com/wp-content/uploads/2025/02/anti-theft_devices_square.jpg",
+            "logo": false
+          },
+          "age": "April 3, 2025"
+        },
+        {
+          "title": "Geico vs. Progressive: Home Insurance Cost Comparison",
+          "url": "https://comptonfinance.co.uk/geico-vs.-progressive-home-insurance-cost-comparison",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Both Geico and Progressive provide discounts for safety features, like alarm systems, and for bundling with auto or life insurance. Higher deductibles can lower your annual premium, though it&#x27;s vital to ensure you can meet this amount out-of-pocket if necessary.",
+          "page_age": "2025-05-09T07:06:08",
+          "profile": {
+            "name": "Comptonfinance",
+            "url": "https://comptonfinance.co.uk/geico-vs.-progressive-home-insurance-cost-comparison",
+            "long_name": "comptonfinance.co.uk",
+            "img": "https://imgs.search.brave.com/ZFDMqCgwzCZmQQnr8k6LK7dpbpSh-F_zl6G9HT2GEyA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWEyYzdhYzYx/MzIwMWU1NTA5ZWQ5/MGMzY2QyMDJiYzVm/YWY3YjdjM2MzYjBl/NDljODA2NTQ3OTgy/YmY4NmYwNi9jb21w/dG9uZmluYW5jZS5j/by51ay8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "comptonfinance.co.uk",
+            "hostname": "comptonfinance.co.uk",
+            "favicon": "https://imgs.search.brave.com/ZFDMqCgwzCZmQQnr8k6LK7dpbpSh-F_zl6G9HT2GEyA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWEyYzdhYzYx/MzIwMWU1NTA5ZWQ5/MGMzY2QyMDJiYzVm/YWY3YjdjM2MzYjBl/NDljODA2NTQ3OTgy/YmY4NmYwNi9jb21w/dG9uZmluYW5jZS5j/by51ay8",
+            "path": "  \u203a home  \u203a home insurance  \u203a geico vs. progressive: home insurance cost comparison"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GyQq-bJkjbOWTPlIaWACayXX0NH7q8Ig0LTU2gyUpaI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb21w/dG9uZmluYW5jZS5j/by51ay91cGxvYWRz/LzIwMjUvMDEvZ2Vp/Y28tdnMuLXByb2dy/ZXNzaXZlLWhvbWUt/aW5zdXJhbmNlLWNv/c3QtY29tcGFyaXNv/bi53ZWJw",
+            "original": "https://comptonfinance.co.uk/uploads/2025/01/geico-vs.-progressive-home-insurance-cost-comparison.webp",
+            "logo": false
+          },
+          "age": "May 9, 2025"
+        },
+        {
+          "title": "8 Best Homeowners Insurance Companies in Rhode Island of 2025",
+          "url": "https://www.propertynest.com/blog/insurance/best-homeowners-insurance-rhode-island/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO suggests that you buy a policy if you know beforehand that a hurricane or storm will be approaching. You can use your flood policy immediately if you&#x27;ve purchased a new home and the closing is in less than 30 days. Unfortunately, for the rest of us, most flood insurance policies require a 30-day waiting period before the coverage is effective. Multi-Policy: Bundle home and car. Home Security Systems: Safety features like alarm systems and security cameras.",
+          "page_age": "2025-05-01T12:23:35",
+          "profile": {
+            "name": "PropertyNest",
+            "url": "https://www.propertynest.com/blog/insurance/best-homeowners-insurance-rhode-island/",
+            "long_name": "propertynest.com",
+            "img": "https://imgs.search.brave.com/TFXSutCcPAWetwxEhm2HDqc8a0w2R7g-wQlUsENWTwQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDgzZmExMjli/NzdmNjMwYmUwYTky/ZDNjOGM1NzViZDM4/NTA2ZTgwMzY4NGQ1/ODg0MDBiODU4ODA4/M2E1ZjRkOS93d3cu/cHJvcGVydHluZXN0/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "propertynest.com",
+            "hostname": "www.propertynest.com",
+            "favicon": "https://imgs.search.brave.com/TFXSutCcPAWetwxEhm2HDqc8a0w2R7g-wQlUsENWTwQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDgzZmExMjli/NzdmNjMwYmUwYTky/ZDNjOGM1NzViZDM4/NTA2ZTgwMzY4NGQ1/ODg0MDBiODU4ODA4/M2E1ZjRkOS93d3cu/cHJvcGVydHluZXN0/LmNvbS8",
+            "path": "  \u203a home  \u203a propertynest blog  \u203a insurance  \u203a 8 best homeowners insurance companies in rhode island of 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/7HWpcXi_E_ct5o9hYCuFzejqq5K_AbKfxIEIBhdo1pE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9wcm9w/ZXJ0eW5lc3QuY29t/L3N0YXRpYy9pbWcv/cHJvcGVydHluZXN0/LXNvY2lhbC5qcGc",
+            "original": "https://propertynest.com/static/img/propertynest-social.jpg",
+            "logo": false
+          },
+          "age": "May 1, 2025"
+        },
+        {
+          "title": "Usaa Homeowners Insurance Discount Security System - Equity Atlas",
+          "url": "https://equityatlas.org/usaa-homeowners-insurance-discount-security-system/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "2. \u201cProgressive\u2019s customer ... \u00b7 3. \u201cGEICO\u2019s rates were competitive, but I was disappointed to learn that they do not offer a discount for having a security system in place....",
+          "page_age": "2025-02-15T20:29:19",
+          "profile": {
+            "name": "Equity Atlas",
+            "url": "https://equityatlas.org/usaa-homeowners-insurance-discount-security-system/",
+            "long_name": "equityatlas.org",
+            "img": "https://imgs.search.brave.com/qet7x5QgdBej-lsKTnLhjlmhg4e4wuxkosGgoNchSeg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjU4Y2Y3YzRl/MzA4NWE2M2JjMWYz/NjVkNDY3ZDI4NDAy/YzUyMGRlMWM5N2Zh/ZWU3NWNjMTlmYjY4/MGYxZmI4YS9lcXVp/dHlhdGxhcy5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "equityatlas.org",
+            "hostname": "equityatlas.org",
+            "favicon": "https://imgs.search.brave.com/qet7x5QgdBej-lsKTnLhjlmhg4e4wuxkosGgoNchSeg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjU4Y2Y3YzRl/MzA4NWE2M2JjMWYz/NjVkNDY3ZDI4NDAy/YzUyMGRlMWM5N2Zh/ZWU3NWNjMTlmYjY4/MGYxZmI4YS9lcXVp/dHlhdGxhcy5vcmcv",
+            "path": "  \u203a home  \u203a homeowners  \u203a usaa homeowners insurance discount security system"
+          },
+          "age": "February 15, 2025"
+        },
+        {
+          "title": "How to Save With the GEICO Student Discount",
+          "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-student-discount",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Some of the best GEICO discounts ... and seat belts. Anti-theft discount: If you have a qualifying alarm system, you can save as much as 23% off your comprehensive insurance premiums....",
+          "page_age": "2025-04-01T19:00:00",
+          "profile": {
+            "name": "Compare",
+            "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-student-discount",
+            "long_name": "compare.com",
+            "img": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "compare.com",
+            "hostname": "www.compare.com",
+            "favicon": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v",
+            "path": "  \u203a auto insurance  \u203a cheap car insurance  \u203a discounts  \u203a geico student discount"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/xyWxrzxPG1i4fc59aFXpO7oH2MizP_jzsONJRckNEiM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8yOTU1MDgvMTIw/MHg5MDAvMWE3OWRm/NzlkMy9zdHVkeS1n/cm91cC1oZXJvLmpw/Zw",
+            "original": "https://a.storyblok.com/f/295508/1200x900/1a79df79d3/study-group-hero.jpg",
+            "logo": false
+          },
+          "age": "April 1, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

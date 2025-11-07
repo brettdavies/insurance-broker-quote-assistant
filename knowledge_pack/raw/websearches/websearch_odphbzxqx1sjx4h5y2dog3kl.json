@@ -1,0 +1,97 @@
+{
+  "websearch_id": "websearch_odphbzxqx1sjx4h5y2dog3kl",
+  "search_id": "search_bnjzco91ofm3wp52b58930mo",
+  "timestamp": "2025-11-07T12:33:33.368063",
+  "startedAt": "2025-11-07T12:33:33.368063",
+  "completedAt": "2025-11-07T12:33:35.322453",
+  "durationSeconds": 1.95,
+  "urlsDiscoveredCount": 1,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" \"stackable discounts\" auto",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"GEICO\" \"stackable discounts\" auto",
+      "show_strict_warning": false,
+      "cleaned": "GEICO stackable discounts auto",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO stackable discounts auto"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "GEICO Car Insurance Review: Is It Good? (2025)",
+          "url": "https://moneygeek.com/insurance/auto/geico-insurance-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO offers 15 car insurance discounts. It makes coverage even more affordable through stackable discounts that can reduce your premium.",
+          "page_age": "2025-10-31T13:39:45",
+          "profile": {
+            "name": "MoneyGeek",
+            "url": "https://moneygeek.com/insurance/auto/geico-insurance-review",
+            "long_name": "moneygeek.com",
+            "img": "https://imgs.search.brave.com/BrNAR0ZC0pmE8JI95X7qrXThCfQI9XbqybxwZnMy64I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGU3ODcxMGI3/OWQ2OTczMDU5Yjk5/NmZjNWZiYjYwOTRj/ODM5YmNhY2I2MjIx/YTJiN2ZlMTg4Nzhk/ZTUwYzhiZS9tb25l/eWdlZWsuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "moneygeek.com",
+            "hostname": "moneygeek.com",
+            "favicon": "https://imgs.search.brave.com/BrNAR0ZC0pmE8JI95X7qrXThCfQI9XbqybxwZnMy64I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGU3ODcxMGI3/OWQ2OTczMDU5Yjk5/NmZjNWZiYjYwOTRj/ODM5YmNhY2I2MjIx/YTJiN2ZlMTg4Nzhk/ZTUwYzhiZS9tb25l/eWdlZWsuY29tLw",
+            "path": "  \u203a home  \u203a insurance  \u203a compare car insurance  \u203a car insurance reviews  \u203a geico car insurance review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/_00edvMoz6CFXNDt-GH30LE98DBRkXeUjyvm_2mbtZE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbW9uZXlnZWVr/L2ltYWdlL3VwbG9h/ZC92MTYwMjc3OTY5/NS9Nb25leUdlZWsu/Y29tL2RlZmF1bHQl/MjBtZXRhJTIwaW1h/Z2VzL2F1dG9fempp/bGhnLmpwZw",
+            "original": "https://res.cloudinary.com/moneygeek/image/upload/v1602779695/MoneyGeek.com/default%20meta%20images/auto_zjilhg.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

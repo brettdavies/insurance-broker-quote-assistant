@@ -1,0 +1,867 @@
+{
+  "websearch_id": "websearch_iinnyr2w2rfv2wlif9mbpkoq",
+  "search_id": "search_w0jtc5q8nt3862w4inbvms1k",
+  "timestamp": "2025-11-07T12:26:32.482258",
+  "startedAt": "2025-11-07T12:26:32.482258",
+  "completedAt": "2025-11-07T12:26:34.394260",
+  "durationSeconds": 1.91,
+  "urlsDiscoveredCount": 21,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:statefarm.com home age",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:statefarm.com home age",
+      "show_strict_warning": false,
+      "cleaned": "home age",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "home age",
+        "sites": [
+          "statefarm.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 20,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Life Insurance at Every Age - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/life-insurance/what-age-to-get-life-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "While premiums are likely higher in your 60s due to your age and potential health concerns, there may be specialized policies that won\u2019t require a full medical exam. These policies financially provide for your final arrangements or any outstanding ...",
+          "page_age": "2025-07-04T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/life-insurance/what-age-to-get-life-insurance",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a life insurance  \u203a life insurance at every age"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/IPxWA_HOq8RJnJ7aolzb-aXEmGXwZCaPY3lEikI5LPY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L3doYXQtYWdlLXRv/LWdldC1saWZlLWlu/c3VyYW5jZS5qcGc",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/what-age-to-get-life-insurance.jpg",
+            "logo": false
+          },
+          "age": "July 4, 2025"
+        },
+        {
+          "title": "How Long Can Kids Stay On Parents Insurance? - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/family/how-long-can-kids-stay-on-parents-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Some insurance providers may extend coverage to a student at school from the parents&#x27; homeowners policy, but this typically does not apply if you are fully relocating and living independently. Under the Affordable Care Act, health insurance for children is available on a parent\u2019s plan until the age of 26.",
+          "page_age": "2025-09-23T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/family/how-long-can-kids-stay-on-parents-insurance",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a family  \u203a how long can kids stay on parents insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/okzfw31Jl32v3S3VuI5Nd4F1Z31CGVvppdpr89y2_iI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L2hvdy1sb25nLWNh/bi1raWRzLXN0YXkt/b24tcGFyZW50cy1p/bnN1cmFuY2UuanBn",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/how-long-can-kids-stay-on-parents-insurance.jpg",
+            "logo": false
+          },
+          "age": "September 23, 2025"
+        },
+        {
+          "title": "Financial Goals by Age: A Decade-by-Decade Approach - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/financial/financial-goals-by-age",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Put 20% down on a home. Build kids&#x27; education savings funds. Retirement savings by age 30: Some experts recommend having two to three times your annual salary saved.",
+          "page_age": "2025-09-30T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/financial/financial-goals-by-age",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a financial  \u203a financial goals by age: a decade-by-decade approach"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/-yzySZAUhQ3sMvo0bNFxDyXZ3YXEFlAHeWA0Ur3D6PU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L2EtZGVjYWRlLWJ5/LWRlY2FkZS1hcHBy/b2FjaC10by1maW5h/bmNpYWwtZ29hbHMt/d2lkZS5qcGc",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/a-decade-by-decade-approach-to-financial-goals-wide.jpg",
+            "logo": false
+          },
+          "age": "September 30, 2025"
+        },
+        {
+          "title": "When to Buy Pet Insurance for Cats and Dogs - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/family/when-to-buy-pet-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Younger pets are generally cheaper to insure than older dogs and cats, but you can still insure an older pet. Just keep in mind that some providers have age limits on pets, which can range from 7 to 14 years.",
+          "page_age": "2025-10-23T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/family/when-to-buy-pet-insurance",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a family  \u203a when to buy pet insurance for cats and dogs"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/OClgfY_d4KRbqz1sQd-U9bnuDk9cgznKgkTjyWtN9ec/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L3doZW4tdG8tYnV5/LXBldC1pbnN1cmFu/Y2UuanBn",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/when-to-buy-pet-insurance.jpg",
+            "logo": false
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "Who Wants to be a Millionaire? Find Out How Long it Takes - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/financial/who-wants-to-be-a-millionaire-find-out-how-long-it-takes",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If you are wondering if you&#x27;ll retire a millionaire, or if you should adjust your plans to be saving more, we have a calculator for that. To use this millionaire calculator, simply enter your current age, the age you want to retire, and your savings information.",
+          "page_age": "2025-07-04T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/financial/who-wants-to-be-a-millionaire-find-out-how-long-it-takes",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a financial  \u203a who wants to be a millionaire find out how long it takes"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/NJGF7eugWbNL1RJNjIlMSDTR2eoDSKLwc1qyL3RGFjY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9zaW1wbGUtaW5z/aWdodHMvZmluYW5j/aWFsL251bGw",
+            "original": "https://www.statefarm.com/simple-insights/financial/null",
+            "logo": false
+          },
+          "age": "July 4, 2025"
+        },
+        {
+          "title": "What Do You Need to Open a Bank Account for Kids - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/financial/how-to-open-your-childs-bank-account",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Learn how to open a bank account for kids and discover the educational benefits these accounts offer for fostering financial responsibility from an early age.",
+          "page_age": "2025-07-04T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/financial/how-to-open-your-childs-bank-account",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a financial  \u203a what do you need to open a bank account for kids"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/k7NaXqdgn4NwSVwaGssXdnLzT2mOIMonHRv-NktbMRg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L2hvdy10by1vcGVu/LXlvdXItY2hpbGRz/LWJhbmstYWNjb3Vu/dC5qcGc",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/how-to-open-your-childs-bank-account.jpg",
+            "logo": false
+          },
+          "age": "July 4, 2025"
+        },
+        {
+          "title": "What Happens When Term Life Insurance Expires? - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/life-insurance/what-happens-when-term-life-insurance-expires",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "You may be thinking why not just keep your current policy and let it renew every year after the guarantee period? Well, the renewal process results in one important change to your policy \u2014 your premium cost. Your policy can renew, but your premiums will likely increase each year based on your age.",
+          "page_age": "2025-07-04T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/life-insurance/what-happens-when-term-life-insurance-expires",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a life insurance  \u203a what happens when term life insurance expires?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/rbKVnh2FTDa-gr1vWQUHO9Ln3lLBZtsE3Xafckp4hxE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc3Rh/dGUtZmFybS9TRl9M/b2dvX1JlZF9TdGFu/ZGFyZF9Ib3J6aW50/YWwucG5n",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/state-farm/SF_Logo_Red_Standard_Horzintal.png",
+            "logo": true
+          },
+          "age": "July 4, 2025"
+        },
+        {
+          "title": "Life Insurance Basics: What It Is, How It Works and Types - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/life-insurance/types-of-life-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Looking at the \u201ccost\u201d in this way could give insight into what age to get life insurance based on your individual situation.",
+          "page_age": "2025-09-30T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/life-insurance/types-of-life-insurance",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a life insurance  \u203a life insurance basics: what it is, how it works and types"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/LGVuGSKtmYbYPAG0DAL-1_4XzZzr78t2njiR7IiaFso/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L2hvdy1kb2VzLWxp/ZmUtaW5zdXJhbmNl/LXdvcmsuanBn",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/how-does-life-insurance-work.jpg",
+            "logo": false
+          },
+          "age": "September 30, 2025"
+        },
+        {
+          "title": "Ways to Help with Teen Driving Safety - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/ways-to-help-your-teen-driver-stay-safe",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Even while using a handsfree device or Bluetooth, a phone call can be distracting. Also be aware that in some states it is illegal to use a Bluetooth device for drivers under 18 years of age.",
+          "page_age": "2025-10-02T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/ways-to-help-your-teen-driver-stay-safe",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a ways to help with teen driving safety"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/-1jkl2jTe6JwJGV-3824ADplDL8kjCLZf3Dy5bNDlNA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L3dheXMtdG8taGVs/cC15b3VyLXRlZW4t/ZHJpdmVyLXN0YXkt/c2FmZS5qcGc",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/ways-to-help-your-teen-driver-stay-safe.jpg",
+            "logo": false
+          },
+          "age": "October 2, 2025"
+        },
+        {
+          "title": "How To Save on Auto Insurance - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/how-to-save-on-auto-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Telematics (UBI) Drivers willing to share driving data via app/device \u00b7 Enroll in programs that demonstrate safe driving habits (e.g., Drive Safe &amp; Save\u00ae). Driver training \u00b7 Younger drivers (usually under age 25) Complete an approved driver ...",
+          "page_age": "2025-11-04T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/how-to-save-on-auto-insurance",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a how to save on auto insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/N2AhaEmU_VmzlFVSoG3lqVVnSETX3aaxYjCNjnIe6kY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L2hvdy10by1zYXZl/LW9uLWF1dG8taW5z/dXJhbmNlLmpwZw",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/how-to-save-on-auto-insurance.jpg",
+            "logo": false
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "Car Seat Basics: Safety Tips and How To Choose One - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/life-saving-car-seat",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "According to 2023 reports from the Traffic Safety Marketing/National Highway Traffic Safety Association (NHTSA), 43% of the children involved in fatal car accidents were unrestrained at the time of the incident. Furthermore, using the correct car seat reduces the risk of death in passenger car crashes \u2014 by 71% for children under one year old and by 54% for children aged 1 to 4 years.",
+          "page_age": "2025-07-04T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/life-saving-car-seat",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a car seat basics: safety tips and how to choose one"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YJRrgtrYM9yeHbMUdi01aDY-cv_Fr8hNgDFedT9qauE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L2Nhci1zZWF0LWFu/ZC1jaGlsZC1wYXNz/ZW5nZXItc2FmZXR5/LmpwZw",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/car-seat-and-child-passenger-safety.jpg",
+            "logo": false
+          },
+          "age": "July 4, 2025"
+        },
+        {
+          "title": "Does Your Insurance Provide Coverage for Home Repairs? - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/residence/homeowners-insurance-maintenance-repairs",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "As large appliances and home systems get older or wear out, it&#x27;s not unusual to replace them. These items may include: ... Worn out or obsolete appliances are typically not covered by insurance. However, you can contact your local State Farm\u00ae agent for information on Home Systems Protection which may offer insurance protection for certain perils typically not covered by a homeowners policy.",
+          "page_age": "2025-07-04T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/residence/homeowners-insurance-maintenance-repairs",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a residence  \u203a does your insurance provide coverage for home repairs?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/4w5rEqyEHldhkMmP0cmljgtwZ12MQ0__-gmz6UaWWXU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L2hvbWVvd25lcnMt/aW5zdXJhbmNlLW1h/aW50ZW5hbmNlLXJl/cGFpcnMuanBn",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/homeowners-insurance-maintenance-repairs.jpg",
+            "logo": false
+          },
+          "age": "July 4, 2025"
+        },
+        {
+          "title": "A Parent\u2019s Guide to Car Insurance for Teens",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/parents-guide-to-car-insurance-for-teens",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Overview: Car insurance for teenagers is often more expensive due to the higher risks associated with their limited experience. Factors influencing premiums may include age, vehicle type and location. Parents can choose to add their teen to an existing policy or secure a separate one.",
+          "page_age": "2025-11-05T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/parents-guide-to-car-insurance-for-teens",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a a parent\u2019s guide to car insurance for teens"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Fc7OyKrCJD9hm4GWHU331mL4i1X-qg9LO7Md6qwEmfQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L3BhcmVudHMtZ3Vp/ZGUtdG8tY2FyLWlu/c3VyYW5jZS1mb3It/dGVlbnMuanBn",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/parents-guide-to-car-insurance-for-teens.jpg",
+            "logo": false
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "State Farm\u00ae is here to help",
+          "url": "https://newsroom.statefarm.com/state-farm-is-here-to-help-california-customers-impacted-by-wildfires/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "home insurance in the United States. Its more than 19,200 agents and 67,000 employees serve over 91 million policies and accounts \u2013 including auto, fire,",
+          "page_age": "2025-08-25T18:50:31",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/state-farm-is-here-to-help-california-customers-impacted-by-wildfires/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a state-farm-is-here-to-help-california-customers-impacted-by-wildfires"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/jlC3IAmx6QIeQ_hCowz9k0_9Hb2-0sSQzaEf4Yapk7E/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vdXBsb2Fk/cy8xNDQxLzhiOTUy/OWQzLTY0M2MtNGU4/OS04MGE5LTA2Yzk4/OTMwZDA0OS8xOTIw/X3dpbGRmaXJlLXJl/c3BvbnNlLXByZXZp/ZXcucG5nPzEwMDAw",
+            "original": "https://content.presspage.com/uploads/1441/8b9529d3-643c-4e89-80a9-06c98930d049/1920_wildfire-response-preview.png?10000",
+            "logo": false
+          },
+          "age": "August 25, 2025"
+        },
+        {
+          "title": "Understanding the Issues in Illinois",
+          "url": "https://newsroom.statefarm.com/understanding-the-issues-in-illinois/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm made a rate filing in early June indicating a Homeowners rate increase in Illinois. That filing was more than 32-pages long and is available publicly on the National Association of Insurance Commissioners (NAIC) SERFF site.",
+          "page_age": "2025-10-31T13:27:13",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/understanding-the-issues-in-illinois/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a understanding-the-issues-in-illinois"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/8sASD0Z0WNopAMjIjkSFtrKclDeCgzU-5Yb9ZUfCn28/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vY2xpZW50/cy9vXzE0NDEuanBn",
+            "original": "https://content.presspage.com/clients/o_1441.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "What Are the Different Types of Insurance? - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/residence/what-are-all-the-different-types-of-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "You can have more coverage than just car insurance, homeowners insurance, and life insurance. Learn about options for these and other types of policies.",
+          "page_age": "2025-10-15T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/residence/what-are-all-the-different-types-of-insurance",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a residence  \u203a what are the different types of insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ryHvrQhmMfA6pfi0qhUuhiCPE5OovUus89OYvN3EOeE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L3doYXQtYXJlLWFs/bC10aGUtZGlmZmVy/ZW50LXR5cGVzLW9m/LWluc3VyYW5jZS5q/cGc",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/what-are-all-the-different-types-of-insurance.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "State Farm\u00ae in California: Understanding the issues",
+          "url": "https://newsroom.statefarm.com/state-farm-in-california-understanding-the-issues/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The California insurance market is facing a coverage crisis, leaving many residents without the protection they need for their homes and businesses.",
+          "page_age": "2025-08-25T18:38:06",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/state-farm-in-california-understanding-the-issues/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a state-farm-in-california-understanding-the-issues"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/d0ZaqicUUm2FrIRqt8Y4qlPbUUT-qzVCvY1Mx4ABI5g/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vdXBsb2Fk/cy8xNDQxLzM0NDYz/MDE4LTkyMDAtNGQ1/NC04NTcwLTc5YjBi/ODQxNmRkOC8xOTIw/X2hvbWVpbmRlbG1h/cmNhLmpwZz8xMDAw/MA",
+            "original": "https://content.presspage.com/uploads/1441/34463018-9200-4d54-8570-79b0b8416dd8/1920_homeindelmarca.jpg?10000",
+            "logo": false
+          },
+          "age": "August 25, 2025"
+        },
+        {
+          "title": "Residents Encouraged to Stay Vigilant and Prepared During Peak Hurricane Season",
+          "url": "https://newsroom.statefarm.com/residents-encouraged-to-stay-vigilant-and-prepared-during-peak-hurricane-season/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Make sure you have the right amount and type of insurance for your property and to help protect your loved ones. Homeowners are urged to not wait until after disaster strikes to realize that inflation and increasing economic pressures may have impacted the cost to rebuild.",
+          "page_age": "2025-09-26T16:49:45",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/residents-encouraged-to-stay-vigilant-and-prepared-during-peak-hurricane-season/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a residents-encouraged-to-stay-vigilant-and-prepared-during-peak-hurricane-season"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/b38kWDYuPET8xgTBs_ByjqHnHTUiAOo7OTn1jJe7Hik/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vdXBsb2Fk/cy8xNDQxL2IwNGEy/YTQ3LWJhMzUtNDEx/Ni1iNGNlLWRhNDk2/MzMzMzczNi8xOTIw/XzUyNDA1NTMyODk1/LWJmZGFlMTE3MjYt/ay5qcGc_MTAwMDA",
+            "original": "https://content.presspage.com/uploads/1441/b04a2a47-ba35-4116-b4ce-da4963333736/1920_52405532895-bfdae11726-k.jpg?10000",
+            "logo": false
+          },
+          "age": "September 26, 2025"
+        },
+        {
+          "title": "State Farm\u00ae Levels Up Gamerhood Season 4 with Thrilling New Game Elements",
+          "url": "https://newsroom.statefarm.com/gamerhood-season-4/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Fans can join the excitement this season through the State Farm Gamerhood Fantasy League, an exhilarating, interactive play-at-home experience.",
+          "page_age": "2025-07-03T18:23:25",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/gamerhood-season-4/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a gamerhood-season-4"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/KKfTJQ_FxejpIg3F0ECJHqZHyj-l6JZcIWVlrlwzA_w/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vdXBsb2Fk/cy8xNDQxLzUxYmE0/NDk3LTNiNjctNDBh/Ny1hMjVmLTQ1YzM1/OTIwOGU0OC8xOTIw/X2doNGhlcm9pbWFn/ZXVwZGF0ZWQucG5n/PzEwMDAw",
+            "original": "https://content.presspage.com/uploads/1441/51ba4497-3b67-40a7-a25f-45c359208e48/1920_gh4heroimageupdated.png?10000",
+            "logo": false
+          },
+          "age": "July 3, 2025"
+        },
+        {
+          "title": "State Farm\u00ae Announces 2024 Financial Results",
+          "url": "https://newsroom.statefarm.com/2024-state-farm-financial-results/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Neither State Farm nor its agents provide investment, tax, or legal advice. ... For over 100 years, the mission of State Farm has been to help people manage the risks of everyday life, recover from the unexpected and realize their dreams. State Farm and its affiliates are the largest providers of auto and home insurance combined in the United States.",
+          "page_age": "2025-02-28T18:04:07",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/2024-state-farm-financial-results/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a 2024-state-farm-financial-results"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/H-QfgQImtgeSUXbxxC39QbKl_PwV4EqgalZSFCFn13c/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vdXBsb2Fk/cy8xNDQxLzkyODMy/NDkxLWUzMGItNGZh/NS04MDM1LTI5OWRj/MDhiMDFhOS8xOTIw/X2xvZ28tcHJlc3Ny/ZWxlYXNlLTMucG5n/PzEwMDAw",
+            "original": "https://content.presspage.com/uploads/1441/92832491-e30b-4fa5-8035-299dc08b01a9/1920_logo-pressrelease-3.png?10000",
+            "logo": true
+          },
+          "age": "February 28, 2025"
+        },
+        {
+          "title": "Home",
+          "url": "https://en.wikipedia.org/wiki/Home",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "dwelling-place used as a permanent or semi-permanent residence for an individual,family,household or several families in a tribe. It is often a house, apartment, or other building, or alternatively a mobile home,houseboat,yurt, other portable shelter",
+          "profile": {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Home",
+            "long_name": "en.wikipedia.org",
+            "img": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "deep_results": {
+            "buttons": [
+              {
+                "type": "button_result",
+                "title": "History",
+                "url": "https://en.wikipedia.org/wiki/Home#History"
+              },
+              {
+                "type": "button_result",
+                "title": "Common types",
+                "url": "https://en.wikipedia.org/wiki/Home#Common_types"
+              },
+              {
+                "type": "button_result",
+                "title": "Management",
+                "url": "https://en.wikipedia.org/wiki/Home#Management"
+              },
+              {
+                "type": "button_result",
+                "title": "Tenure",
+                "url": "https://en.wikipedia.org/wiki/Home#Tenure"
+              },
+              {
+                "type": "button_result",
+                "title": "Anthropogenic significance",
+                "url": "https://en.wikipedia.org/wiki/Home#Anthropogenic_significance"
+              }
+            ]
+          },
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "en.wikipedia.org",
+            "hostname": "en.wikipedia.org",
+            "favicon": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw",
+            "path": "\u203a wiki  \u203a Home"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/nnM3mWHSqrFgtt4ZtlotMdjhu0ut-28ZuZdx6b25PE0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2M2L1NlYXJzSG91/c2UxMTUuanBn",
+            "original": "https://upload.wikimedia.org/wikipedia/commons/c/c6/SearsHouse115.jpg",
+            "logo": false
+          }
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

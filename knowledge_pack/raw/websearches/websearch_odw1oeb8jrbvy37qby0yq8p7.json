@@ -1,0 +1,798 @@
+{
+  "websearch_id": "websearch_odw1oeb8jrbvy37qby0yq8p7",
+  "search_id": "search_if3j2qbozi9hxeai0ntn56o1",
+  "timestamp": "2025-11-07T12:24:48.243427",
+  "startedAt": "2025-11-07T12:24:48.243427",
+  "completedAt": "2025-11-07T12:24:50.015687",
+  "durationSeconds": 1.77,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:statefarm.com vehicle limits",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:statefarm.com vehicle limits",
+      "show_strict_warning": false,
+      "cleaned": "vehicle limits",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "vehicle limits",
+        "sites": [
+          "statefarm.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "How Much Car Insurance Do I Need? - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/how-much-car-insurance-do-i-need",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Learn about coverages, deductibles, limits, liability and more to help decide how much auto insurance you need and how you can save.",
+          "page_age": "2025-11-05T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/how-much-car-insurance-do-i-need",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a how much car insurance do i need"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/M6OId-hBHHM1DtadMLzp_LhsLU93Zk2nbM__kKRIf28/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/LzM1Mi1jaG9vc2lu/Zy1yaWdodC1hbW91/bnQtY2FyLWluc3Vy/YW5jZS13aWRlLmpw/Zw",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/352-choosing-right-amount-car-insurance-wide.jpg",
+            "logo": false
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "Understanding California's new auto liability coverage law",
+          "url": "https://newsroom.statefarm.com/understanding-californias-new-auto-liability-coverage-law-10-2024/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The new law increases the minimum limits for coverages related to the liability portion of your auto insurance policy. This includes uninsured motor vehicle coverage. The new minimum liability limits will increase to 30,000/60,000/15,000* beginning ...",
+          "page_age": "2024-11-07T21:19:27",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/understanding-californias-new-auto-liability-coverage-law-10-2024/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a understanding-californias-new-auto-liability-coverage-law-10-2024"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/0UJE-O596FiG_guwAIukFYF0Q_ip1yqWk63U_CJ1G08/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vdXBsb2Fk/cy8xNDQxL2M2ZDlm/NGE5LTEwMjYtNDNl/Zi1hM2M2LTBjMzg3/ZWQ4MjdhZi8xOTIw/XzU2Njg1LXByZGVz/aWduZ3JhcGhpY3Mt/Y2FsaWZvcm5pYXJl/Zm9ybS0wMy5qcGc_/MTAwMDA",
+            "original": "https://content.presspage.com/uploads/1441/c6d9f4a9-1026-43ef-a3c6-0c387ed827af/1920_56685-prdesigngraphics-californiareform-03.jpg?10000",
+            "logo": false
+          },
+          "age": "November 7, 2024"
+        },
+        {
+          "title": "Car Rental Reimbursement Coverage Explained - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/rental-reimbursement-coverage",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Check your policy details for specific rules about when coverage begins such as after a certain waiting period or when repairs start. And when it ends, such as when repairs are completed or the per-loss limit is reached. The coverage provides for the substitute transportation itself. It does not cover every vehicle or rental related expense.",
+          "page_age": "2025-11-05T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/rental-reimbursement-coverage",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a car rental reimbursement coverage explained"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Ezhj9n8OYUMgHThAxec-WguoC8CEqYHeMjkZWxRr4X4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L3JlbnRhbC1yZWlt/YnVyc2VtZW50LWNv/dmVyYWdlLmpwZw",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/rental-reimbursement-coverage.jpg",
+            "logo": false
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "Rental Reimbursement and Travel Expenses on Road Trips - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/rental-reimbursement-and-travel-expenses-on-road-trips",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Travel expenses usually has a maximum limit per loss \u00b7 Scenario: Your car suffers damage from a falling tree. Damages to the car are covered by your auto policy with comprehensive coverage. You need reliable transportation to get to work so you utilize your rental reimbursement coverage to rent a car until your car is repaired. Scenario: You are on road trip more than 50 miles from home when you get into a collision. Damages to your vehicle may be covered with your policy\u2019s collision coverage but you don\u2019t have time to wait until your car is repaired to go home.",
+          "page_age": "2025-11-05T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/rental-reimbursement-and-travel-expenses-on-road-trips",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a rental reimbursement and travel expenses on road trips"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/o9lCiSYUJH3murXuKgsmXcTuvMofoN3iYcenR1jAI1Q/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L3JlbnRhbC1yZWlt/YnVyc2VtZW50LWFu/ZC10cmF2ZWwtZXhw/ZW5zZXMtb24tcm9h/ZC10cmlwcy5qcGc",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/rental-reimbursement-and-travel-expenses-on-road-trips.jpg",
+            "logo": false
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "Tips for First Time Car Insurance Buyers - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/first-car-insurance-policy-what-should-you-know",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Exclusions and limitations \u2014 what insurance does and does not cover.",
+          "page_age": "2025-11-05T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/first-car-insurance-policy-what-should-you-know",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a tips for first time car insurance buyers"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/8O4acJDfWfB6U0ySnLqOjZ12SfEbGP4HOSpmsCM6ssQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L2ZpcnN0LWNhci1p/bnN1cmFuY2UtcG9s/aWN5LXdoYXQtc2hv/dWxkLXlvdS1rbm93/LmpwZw",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/first-car-insurance-policy-what-should-you-know.jpg",
+            "logo": false
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "How To Save on Auto Insurance - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/how-to-save-on-auto-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Learn about coverage limits, collision and comprehensive, liabilities and other important terms to help decide on what auto insurance policy is right for you and how you can save. The Basics \u00b7 Auto &amp; vehicle \u00b7 Banking \u00b7 Family \u00b7 Residence \u00b7 Planning \u00b7 College \u00b7 Estate \u00b7",
+          "page_age": "2025-11-04T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/how-to-save-on-auto-insurance",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a how to save on auto insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/N2AhaEmU_VmzlFVSoG3lqVVnSETX3aaxYjCNjnIe6kY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L2hvdy10by1zYXZl/LW9uLWF1dG8taW5z/dXJhbmNlLmpwZw",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/how-to-save-on-auto-insurance.jpg",
+            "logo": false
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "Using Rental Reimbursement When Your Car's in the Shop - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/rental-reimbursement-car-in-shop",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "After your own vehicle is repaired or you reach your coverage limit (either per day or per loss), you\u2019ll need to return the rental car according to your rental agreement to avoid additional incurred costs or agree to pay the costs on your own. Once you return the rental car, be sure to get a final receipt showing both the return date and the total charges.",
+          "page_age": "2025-11-05T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/rental-reimbursement-car-in-shop",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a using rental reimbursement when your car's in the shop"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/1qtlEM_YTpDUBXp8IkrpPgY9-ew1tvi-ytOiUAYGJLs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L3JlbnRhbC1yZWlt/YnVyc2VtZW50LWNh/ci1pbi1zaG9wLmpw/Zw",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/rental-reimbursement-car-in-shop.jpg",
+            "logo": false
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "Rideshare Insurance: What To Know - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/rideshare-insurance-what-to-know",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Once you&#x27;re matched with a rider or giving a ride, your TNC may offer more coverage. However, it often doesn&#x27;t extend to damages to your car, and policy limits may vary by state and company.",
+          "page_age": "2025-11-05T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/rideshare-insurance-what-to-know",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a rideshare insurance: what to know"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/JQ_LsbIMRpq3Q5VUxCKw1UpwkfpjIb4oHvw0f-L23yk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L3JpZGVzaGFyZS1p/bnN1cmFuY2Utd2hh/dC10by1rbm93Lmpw/Zw",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/rideshare-insurance-what-to-know.jpg",
+            "logo": false
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "How Is Car Insurance Calculated? - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/what-affects-car-insurance-premiums",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Vehicles that cost more to repair/replace typically cost more to insure. ... Coverages and deductibles determine the insurer\u2019s potential payout. Policies with higher limits or lower deductibles typically have higher premiums.",
+          "page_age": "2025-11-03T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/what-affects-car-insurance-premiums",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a how is car insurance calculated?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/22W4ScVxajd6Z3MtdSyxsR4ID6vlQTx9ux_xmBznaoc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L3doYXQtYWZmZWN0/cy1jYXItaW5zdXJh/bmNlLXByZW1pdW1z/LmpwZw",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/what-affects-car-insurance-premiums.jpg",
+            "logo": false
+          },
+          "age": "5 days ago"
+        },
+        {
+          "title": "What Is Medical Payments Coverage? - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/what-is-medical-payments-coverage",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "When buying Medical Payments Coverage as part of your auto insurance, you can choose a coverage limit \u2014 the maximum amount your insurer will pay per person for each accident. Common limits range from $1,000 to $10,000 per person, though some ...",
+          "page_age": "2025-11-04T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/what-is-medical-payments-coverage",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a what is medical payments coverage?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/lKu0BdcLsRmEsel8FLJMKSsJhThAJjm4PJmVQ8DY06s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L3doYXQtaXMtbWVk/aWNhbC1wYXltZW50/cy1jb3ZlcmFnZS5q/cGc",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/what-is-medical-payments-coverage.jpg",
+            "logo": false
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "Comprehensive Coverage: Helping Protect Your Vehicle - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/importance-of-comprehensive-coverage",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Discuss your vehicle\u2019s value, your budget and any concerns about risks in your area. For instance, if you live in a region with frequent hailstorms, your agent might recommend comprehensive coverage for added protection. If you\u2019re shopping for a new policy or provider, focus on choosing appropriate coverage to best meet your needs and budget. Pay attention to differences in deductibles, premium costs and coverage limits ...",
+          "page_age": "2025-11-05T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/importance-of-comprehensive-coverage",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a comprehensive coverage: helping protect your vehicle"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ko4dOas3sVgCS44Ix39xN8NKG1b8pNUBauDxQhii_0E/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L2ltcG9ydGFuY2Ut/b2YtY29tcHJlaGVu/c2l2ZS1jb3ZlcmFn/ZS5qcGc",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/importance-of-comprehensive-coverage.jpg",
+            "logo": false
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "Preparing for Long Term Car Storage - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/preparing-for-longterm-car-storage",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Long term car storage can help keep an unused vehicle in good condition. Learn how to choose a facility and what to do before storing your vehicle.",
+          "page_age": "2025-09-18T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/preparing-for-longterm-car-storage",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a preparing for long term car storage"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/3x-P-jLxnTr-dXEShMYP1LAL_p1wGbOqMevnMMqL3QU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/LzQ4OS1wcmVwYXJp/bmctZm9yLWxvbmct/dGVybS1jYXItc3Rv/cmFnZS13aWRlLmpw/Zw",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/489-preparing-for-long-term-car-storage-wide.jpg",
+            "logo": false
+          },
+          "age": "September 18, 2025"
+        },
+        {
+          "title": "When to Complete an Insurance Review - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/financial/moments-when-you-should-check-your-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Tips to help choose accurate, appropriate limits for your personal property and liability coverage.",
+          "page_age": "2025-09-16T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/financial/moments-when-you-should-check-your-insurance",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a financial  \u203a when to complete an insurance review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Ub3oiXW0V3e0ZYo6YS7EEOYzyFWY0GybSgKv9t66tUo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L3F1aWNrbHktcXVh/bnRpZnktYS1saWZl/LWluc3VyYW5jZS1u/ZWVkLmpwZw",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/quickly-quantify-a-life-insurance-need.jpg",
+            "logo": false
+          },
+          "age": "September 16, 2025"
+        },
+        {
+          "title": "What Are the Different Types of Insurance? - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/residence/what-are-all-the-different-types-of-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Personal liability umbrella insurance provides coverage for situations that exceed the limits of liability covered by an underlying policy such as car insurance, homeowners insurance or boat insurance. Legal liability can be the largest financial burden most individuals have.",
+          "page_age": "2025-10-15T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/residence/what-are-all-the-different-types-of-insurance",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a residence  \u203a what are the different types of insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ryHvrQhmMfA6pfi0qhUuhiCPE5OovUus89OYvN3EOeE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L3doYXQtYXJlLWFs/bC10aGUtZGlmZmVy/ZW50LXR5cGVzLW9m/LWluc3VyYW5jZS5q/cGc",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/what-are-all-the-different-types-of-insurance.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "Car Stolen/Hail Damage? Help Understand Comprehensive Insurance - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/understanding-comprehensive-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Learn what to do when you experience a vehicle fire. What can you do to try to avoid hitting deer and other animals when driving on highways and roads? Learn about coverage limits, collision and comprehensive, liabilities and other important terms to help decide on what auto insurance policy is right for you and how you can save.",
+          "page_age": "2025-08-07T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/understanding-comprehensive-insurance",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a car stolen/hail damage? help understand comprehensive insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Nt3DYzAZrFFL_OhcSl4oIxo3CEElMLtmuOFYw8KgeoI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L3VuZGVyc3RhbmRp/bmctY29tcHJlaGVu/c2l2ZS1pbnN1cmFu/Y2UuanBn",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/understanding-comprehensive-insurance.jpg",
+            "logo": false
+          },
+          "age": "August 7, 2025"
+        },
+        {
+          "title": "Do I Need Comprehensive Car Insurance? - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/do-i-need-comprehensive-car-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Almost all lenders and leasing companies require comprehensive insurance (and collision coverage) for the duration of your loan or lease. This protects their investment in the vehicle if something goes wrong.",
+          "page_age": "2025-11-04T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/do-i-need-comprehensive-car-insurance",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a do i need comprehensive car insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/VUOM1QQPsAPZ6RdVNaa5qpalNKkqDnv5Z6to1yncU9A/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/LzEzNzgzODM2My5q/cGc",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/137838363.jpg",
+            "logo": false
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "Drive Safe and Save Business - State Farm\u00ae",
+          "url": "https://www.statefarm.com/insurance/small-business/commercial-auto/business-drive-safe-and-save",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "You\u2019ll receive a one-time, participation premium decrease for each eligible vehicle you enroll and pair with a Bluetooth beacon.",
+          "page_age": "2025-04-16T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/insurance/small-business/commercial-auto/business-drive-safe-and-save",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a insurance  \u203a small business  \u203a commercial auto  \u203a drive safe & save business"
+          },
+          "age": "April 16, 2025"
+        },
+        {
+          "title": "Additional options for customers in need of a rental or replacement vehicle",
+          "url": "https://newsroom.statefarm.com/for-customers-in-need-of-a-rental-vehicle/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "For these rentals, Enterprise is waiving its young renter fee, additional driver fee and one-way drop fee. Renter must meet standard Enterprise rental requirements for each vehicle type.",
+          "page_age": "2025-01-28T21:38:28",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/for-customers-in-need-of-a-rental-vehicle/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a for-customers-in-need-of-a-rental-vehicle"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/8sASD0Z0WNopAMjIjkSFtrKclDeCgzU-5Yb9ZUfCn28/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vY2xpZW50/cy9vXzE0NDEuanBn",
+            "original": "https://content.presspage.com/clients/o_1441.jpg",
+            "logo": false
+          },
+          "age": "January 28, 2025"
+        },
+        {
+          "title": "Boat Insurance Basics: What's Covered - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/boat-insurance-basics-whats-covered",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Agreed value loss settlement \u2014 some policies may also include this for total loss scenarios, guaranteeing you receive the policy\u2019s coverage limit if your boat is deemed a total loss.",
+          "page_age": "2025-08-15T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/boat-insurance-basics-whats-covered",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a boat insurance basics: what's covered"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/KndgKXEmcRE2Whs-1eP27oL74k-G1bp17tlQD5vZva0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L2JvYXQtaW5zdXJh/bmNlLWJhc2ljcy13/aGF0cy1jb3ZlcmVk/LmpwZw",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/boat-insurance-basics-whats-covered.jpg",
+            "logo": false
+          },
+          "age": "August 15, 2025"
+        },
+        {
+          "title": "How Electronic Proof of Insurance Can Assist You - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/electronic-proof-of-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In a pinch, a digital insurance card can be substituted for the paper card in 49 states, with New Mexico being the exception. Consider checking with your local Department of Motor Vehicles (DMV) to help stay informed on proof of insurance card requirements.",
+          "page_age": "2025-08-25T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/electronic-proof-of-insurance",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a how electronic proof of insurance can assist you"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/BUPH8t1OEXRAqqLnbxoVVY5PP3HJ12InMp75e1VXPcg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/LzA1X05ldmVyTG9z/ZVlvdXJBdXRvSW5z/dXJhbmNlSURBZ2Fp/bl83NTAuanBn",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/05_NeverLoseYourAutoInsuranceIDAgain_750.jpg",
+            "logo": false
+          },
+          "age": "August 25, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

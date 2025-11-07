@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_npvp3rfov39imsx8ajott0gq",
+  "search_id": "search_d6c0cgqjr41ksqpd57f4ncph",
+  "timestamp": "2025-11-07T12:29:05.725717",
+  "startedAt": "2025-11-07T12:29:05.725717",
+  "completedAt": "2025-11-07T12:29:07.488781",
+  "durationSeconds": 1.76,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:naic.org average premiums state",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:naic.org average premiums state",
+      "show_strict_warning": false,
+      "cleaned": "average premiums state",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "average premiums state",
+        "sites": [
+          "naic.org"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

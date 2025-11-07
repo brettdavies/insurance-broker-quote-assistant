@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_g5i97kw80nqli61zxsj0xp9l",
+  "search_id": "search_fi3v9svvh2vupb2c1x9f0l4s",
+  "timestamp": "2025-11-07T12:31:22.870149",
+  "startedAt": "2025-11-07T12:31:22.870149",
+  "completedAt": "2025-11-07T12:31:24.536707",
+  "durationSeconds": 1.67,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:insurance.ca.gov \"good driver discount\" requirements",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:insurance.ca.gov \"good driver discount\" requirements",
+      "show_strict_warning": false,
+      "cleaned": "good driver discount requirements",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "good driver discount requirements",
+        "sites": [
+          "insurance.ca.gov"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

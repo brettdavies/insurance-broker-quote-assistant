@@ -1,0 +1,872 @@
+{
+  "websearch_id": "websearch_ftwr8jri5c7sv275kfnc49yd",
+  "search_id": "search_gcpl7rkgoeb1xyt8geat6x92",
+  "timestamp": "2025-11-07T12:34:31.480983",
+  "startedAt": "2025-11-07T12:34:31.480983",
+  "completedAt": "2025-11-07T12:34:33.302534",
+  "durationSeconds": 1.82,
+  "urlsDiscoveredCount": 21,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:thezebra.com State Farm pricing",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:thezebra.com State Farm pricing",
+      "show_strict_warning": false,
+      "cleaned": "State Farm pricing",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "State Farm pricing",
+        "sites": [
+          "thezebra.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 20,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "State Farm vs Nationwide: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/state-farm-vs-nationwide/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Choosing an auto insurance company can be tricky: rates may vary based on your location, vehicle, and driving record, and companies offer an array of perks. State Farm and Nationwide are two the nation&#x27;s most popular insurers, offering high-quality insurance policies across large portions of the country. To simplify the shopping process, we&#x27;ve gathered average prices from Nationwide and State Farm.",
+          "page_age": "2025-09-11T21:16:33",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/state-farm-vs-nationwide/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a state farm vs. nationwide"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/hHRZ3UyD84dn9aA10dvxnlelEHOkP-Ta7bEJpvJ7--8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy8yMDIxX05l/d3Nyb29tX0ZlYXR1/cmVkSW1nX0Nhcl8y/X1IxLmNvbXByZXNz/ZWQuanBn",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/2021_Newsroom_FeaturedImg_Car_2_R1.compressed.jpg",
+            "logo": false
+          },
+          "age": "September 11, 2025"
+        },
+        {
+          "title": "Progressive vs State Farm: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/progressive-vs-state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Because of their inexperience behind the wheel, auto insurance tends to be a lot more expensive for young drivers, especially when compared to older drivers. Because every insurance company prices age tiers in a different way, it&#x27;s wise to compare rates and find a suitable policy. In general, teen drivers should choose State Farm over Progressive, with the potential to save an average of nearly $2,500 per year.",
+          "page_age": "2025-11-03T15:31:40",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/progressive-vs-state-farm/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a progressive vs. state farm"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ToI7nNOWSbl6mCAgMMVCNugb9qfbyJZ08PHrISpapXU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9HZXR0eUlt/YWdlcy05MzU3MjI0/MjgtMTYwMHB4Lmpw/Zw",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/GettyImages-935722428-1600px.jpg",
+            "logo": false
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "Is State Farm a Good Insurance Company? (2025 Review) | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/state-farm-reviews-coverage-options-and-ratings/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Customers can evaluate ... national average for a 6-month car insurance policy is $1,084, whereas State Farm is about $1,133....",
+          "page_age": "2025-11-03T15:26:03",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/state-farm-reviews-coverage-options-and-ratings/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a state farm insurance review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/tbd0UaOOvIXqi69W48G0j_FAdMT0JxNy_qR5HBkqeCs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9zdGF0/aWMvM2I5NGRmMy96/ZnJvbnQvaW1nL2l6/LXNoYXJlLWxvZ28u/cG5n",
+            "original": "https://cdn.thezebra.com/zfront/static/3b94df3/zfront/img/iz-share-logo.png",
+            "logo": true
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "State Farm vs Costco's Car Insurance: Who is Cheaper & Better in 2025? | The Zebra?",
+          "url": "https://www.thezebra.com/insurance-companies/state-farm-vs-costco/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Costco \u2014 via CONNECT, powered by American Family Insurance \u2014 does not offer a telematics program. However, State Farm does. State Farm&#x27;s Drive Safe &amp; Save Program uses OnStar or a mobile app to measure speed, time of day, braking, and acceleration to price your premium.",
+          "page_age": "2025-10-23T23:15:11",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/state-farm-vs-costco/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a state farm vs. costco car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/_bjWQF2Ya7eSEICA34Fyj1QjTeze_FRF6UTIQ-kHApo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9zdGF0/aWMvMTY5ZWJiNy96/ZnJvbnQvaW1nL2l6/LXNoYXJlLWxvZ28u/cG5n",
+            "original": "https://cdn.thezebra.com/zfront/static/169ebb7/zfront/img/iz-share-logo.png",
+            "logo": true
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "Root vs State Farm: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/root-vs-state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Compare Root&#x27;s and State Farm&#x27;s insurance policy options, discounts and pros and cons with The Zebra&#x27;s expert analysis.",
+          "page_age": "2025-10-16T23:20:39",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/root-vs-state-farm/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a root vs. state farm"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/hHRZ3UyD84dn9aA10dvxnlelEHOkP-Ta7bEJpvJ7--8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy8yMDIxX05l/d3Nyb29tX0ZlYXR1/cmVkSW1nX0Nhcl8y/X1IxLmNvbXByZXNz/ZWQuanBn",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/2021_Newsroom_FeaturedImg_Car_2_R1.compressed.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "State Farm vs Allstate: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/state-farm-vs-allstate/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If you&#x27;ve got an at-fault crash, speeding ticket, reckless driving violation, or DWI in your rearview mirror, State Farm could be a better choice than Allstate. Each auto insurance company prices policies differently after a violation, so don&#x27;t be afraid to shop around to figure out which insurer suits you.",
+          "page_age": "2025-10-28T22:51:29",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/state-farm-vs-allstate/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a state farm vs. allstate"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/hHRZ3UyD84dn9aA10dvxnlelEHOkP-Ta7bEJpvJ7--8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy8yMDIxX05l/d3Nyb29tX0ZlYXR1/cmVkSW1nX0Nhcl8y/X1IxLmNvbXByZXNz/ZWQuanBn",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/2021_Newsroom_FeaturedImg_Car_2_R1.compressed.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "State Farm vs Farmers: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/state-farm-vs-farmers/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Farmers&#x27; average is a bit pricier at $1,455 per year. Both Farmers and State Farm differ in how they underwrite policies, so it&#x27;s important to consider your quotes may not match these exactly when looking for coverage.",
+          "page_age": "2025-10-29T20:39:08",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/state-farm-vs-farmers/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a state farm vs. farmers"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/hHRZ3UyD84dn9aA10dvxnlelEHOkP-Ta7bEJpvJ7--8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy8yMDIxX05l/d3Nyb29tX0ZlYXR1/cmVkSW1nX0Nhcl8y/X1IxLmNvbXByZXNz/ZWQuanBn",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/2021_Newsroom_FeaturedImg_Car_2_R1.compressed.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "State Farm vs Safeco: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/state-farm-vs-safeco/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm is arguably better than Safeco on average, given its average lower rates and stronger ratings. ... Safeco is relatively expensive due in part to limited discount options, general rising costs experienced by all insurers, and potentially pricing structure with average rates showing a large price difference for higher-risk categories like young drivers.",
+          "page_age": "2025-11-03T15:29:21",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/state-farm-vs-safeco/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a state farm vs. safeco"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/8NsT0qXYMQl3LUwbiyhSKgFAUEDEhzsseHV6EI3f7_I/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9pU3RvY2st/NjY3MDc1OTE2XzEu/anBn",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/iStock-667075916_1.jpg",
+            "logo": false
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "GEICO vs State Farm: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/geico-vs-state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Insurance companies use a driver&#x27;s age to estimate potential risk and price premiums on a sliding scale. An auto insurance policy is commonly most expensive for teens \u2014 due to their inexperience \u2014 and relatively more affordable for drivers aged 25 or older. Since every insurance company evaluates age brackets differently, it&#x27;s wise to compare rates and find great coverage. As a general rule, teen drivers should choose GEICO before State Farm: GEICO offers average yearly savings of $2,312, compared to State Farm.",
+          "page_age": "2025-11-04T10:01:19",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/geico-vs-state-farm/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a geico vs. state farm"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/l7pe_Rs2LG08JL8wb9fkYsP1H-2bu8pRCLd_IVKh1GY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9jYXItc2Fs/ZXNwZXJzb24tc2hv/d2luZy1jb3VwbGUt/Y2FyLWludGVyaW9y/LmpwZw",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/car-salesperson-showing-couple-car-interior.jpg",
+            "logo": false
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "State Farm vs AAA: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/state-farm-vs-aaa/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farms average homeowners insurance rate is $1,356 per year. The average rates for AAA come in slightly cheaper at $1,212 annually. It&#x27;s important to note that every company has its own underwriting methods, meaning that prices can vary ...",
+          "page_age": "2025-10-28T23:13:39",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/state-farm-vs-aaa/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a state farm vs. aaa"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/r8Gz4KqbI2AqzfBjye1oXmSpIr2a4qmOT5uSwoUl0sU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9Ib3dfWW91/cl9TdWJjb25zY2lv/dXNfTWluZF9Db3Vs/ZF9TYXZlX1lvdV9N/b25leV9vbl9DYXJf/SW5zdXJhbmNlX29w/dGltaXplZC5qcGc",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/How_Your_Subconscious_Mind_Could_Save_You_Money_on_Car_Insurance_optimized.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "State Farm vs Travelers: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/state-farm-vs-travelers/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In the survey, State Farm scored 4.7 out of 5 in Claims Satisfaction and 4.5 out of 5 in Customer Satisfaction. State Farm&#x27;s rates were higher than Travelers&#x27;, on average, so price-conscious consumers should consider both options.",
+          "page_age": "2025-10-01T16:51:00",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/state-farm-vs-travelers/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a state farm vs. travelers"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/hHRZ3UyD84dn9aA10dvxnlelEHOkP-Ta7bEJpvJ7--8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy8yMDIxX05l/d3Nyb29tX0ZlYXR1/cmVkSW1nX0Nhcl8y/X1IxLmNvbXByZXNz/ZWQuanBn",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/2021_Newsroom_FeaturedImg_Car_2_R1.compressed.jpg",
+            "logo": false
+          },
+          "age": "October 1, 2025"
+        },
+        {
+          "title": "State Farm vs Liberty Mutual: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/state-farm-vs-liberty-mutual/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Choosing an auto insurance company can be tricky: rates may vary based on your location, vehicle, and driving record, and companies offer an array of perks. State Farm and Liberty Mutual are two of the top insurers, providing high-quality insurance policies across large portions of the US. To simplify the process of comparing insurance companies, we&#x27;ve gathered average prices from Liberty Mutual and State Farm.",
+          "page_age": "2025-10-08T19:55:11",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/state-farm-vs-liberty-mutual/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a state farm vs. liberty mutual"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/hHRZ3UyD84dn9aA10dvxnlelEHOkP-Ta7bEJpvJ7--8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy8yMDIxX05l/d3Nyb29tX0ZlYXR1/cmVkSW1nX0Nhcl8y/X1IxLmNvbXByZXNz/ZWQuanBn",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/2021_Newsroom_FeaturedImg_Car_2_R1.compressed.jpg",
+            "logo": false
+          },
+          "age": "1 month ago"
+        },
+        {
+          "title": "The Cheapest and Best Insurance for New Drivers in 2025 | The Zebra",
+          "url": "https://www.thezebra.com/auto-insurance/driver/other-factors/cheap-car-insurance-new-drivers/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm is our top recommendation for first-time drivers given it received top marks in The Zebra&#x27;s Customer Satisfaction Survey and has some of the cheapest average prices for new teen ($394 per month) and adult ($131 per month) drivers.",
+          "page_age": "2025-11-03T15:42:41",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/auto-insurance/driver/other-factors/cheap-car-insurance-new-drivers/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a cheap car insurance  \u203a your driving profile  \u203a other factors affecting car insurance rates  \u203a car insurance for new drivers"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/hopWANgNVMnM4FdudekzEarVs1goYpZJEidVnvD49Uk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9naXJsLTE4/NDg0NzhfMTI4MC5q/cGc",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/girl-1848478_1280.jpg",
+            "logo": false
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "USAA vs State Farm: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/usaa-vs-state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If your driving record an at-fault ... than State Farm. Every car insurance company will handle driving offenses differently, so don&#x27;t be afraid to shop around and get quotes to find out which insurance company suits you. Insurance companies use age to help estimate the level of risk that a driver poses. Policies are then priced ...",
+          "page_age": "2025-11-03T16:03:20",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/usaa-vs-state-farm/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a usaa vs. state farm"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/r8Gz4KqbI2AqzfBjye1oXmSpIr2a4qmOT5uSwoUl0sU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9Ib3dfWW91/cl9TdWJjb25zY2lv/dXNfTWluZF9Db3Vs/ZF9TYXZlX1lvdV9N/b25leV9vbl9DYXJf/SW5zdXJhbmNlX29w/dGltaXplZC5qcGc",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/How_Your_Subconscious_Mind_Could_Save_You_Money_on_Car_Insurance_optimized.jpg",
+            "logo": false
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "Compare Car Insurance Rates Side-by-Side in 2025 | The Zebra",
+          "url": "https://www.thezebra.com/auto-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Roadside assistance covers towing but it won&#x27;t cover your car being towed by someone else. Unfortunately, that means State Farm will likely not cover the cost of your car being towed from just being parked in the wrong location in an apartment complex.Sorry for the inconvenience.",
+          "page_age": "2025-11-05T22:15:49",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/auto-insurance/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a cheap car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/9m6TIHLCrAGgPJqejxK2wwFNL2OA5b4HppzXiT31-5Y/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9pU3RvY2st/ODkxNjA5NTc4Lmpw/Zw",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/iStock-891609578.jpg",
+            "logo": false
+          },
+          "age": "2 days ago"
+        },
+        {
+          "title": "How to Find your State Farm Declarations Page | The Zebra",
+          "url": "https://www.thezebra.com/auto-insurance/insurance-guide/state-farm-declarations-page/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Roadside assistance covers towing but it won&#x27;t cover your car being towed by someone else. Unfortunately, that means State Farm will likely not cover the cost of your car being towed from just being parked in the wrong location in an apartment complex. Sorry for the inconvenience.",
+          "page_age": "2024-12-18T19:26:27",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/auto-insurance/insurance-guide/state-farm-declarations-page/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a cheap car insurance  \u203a car insurance guide  \u203a state farm declarations page"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/tbd0UaOOvIXqi69W48G0j_FAdMT0JxNy_qR5HBkqeCs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9zdGF0/aWMvM2I5NGRmMy96/ZnJvbnQvaW1nL2l6/LXNoYXJlLWxvZ28u/cG5n",
+            "original": "https://cdn.thezebra.com/zfront/static/3b94df3/zfront/img/iz-share-logo.png",
+            "logo": true
+          },
+          "age": "December 18, 2024"
+        },
+        {
+          "title": "Allstate vs Farmers: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/allstate-vs-farmers/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm vs. The General \u00b7 Travelers vs. Allied \u00b7 Farmers (and honestly, most major insurers) have been raising rates across the board. Even with a perfect driving record, your price can go up because of rising repair costs, more expensive parts, higher medical payouts, and a big jump in claim frequency over the past couple of years.In your case, \u2026",
+          "page_age": "2025-11-03T15:32:43",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/allstate-vs-farmers/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a allstate vs. farmers"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/hHRZ3UyD84dn9aA10dvxnlelEHOkP-Ta7bEJpvJ7--8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy8yMDIxX05l/d3Nyb29tX0ZlYXR1/cmVkSW1nX0Nhcl8y/X1IxLmNvbXByZXNz/ZWQuanBn",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/2021_Newsroom_FeaturedImg_Car_2_R1.compressed.jpg",
+            "logo": false
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "Is Farmers a Good Insurance Company? (2025 Review) | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/farmers-reviews-coverage-options-and-ratings/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Filing is made simple thanks to Farmers&#x27; many communication channels (online, mobile app and over the phone), though long resolution times, lack of transparency, and denials are reported as the process moves along. ... The Zebra ranks State Farm slightly above Farmers due to their more affordable premiums, better customer service scores and plethora of coverages and discounts.",
+          "page_age": "2025-11-03T15:26:12",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/farmers-reviews-coverage-options-and-ratings/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a farmers insurance review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/tbd0UaOOvIXqi69W48G0j_FAdMT0JxNy_qR5HBkqeCs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9zdGF0/aWMvM2I5NGRmMy96/ZnJvbnQvaW1nL2l6/LXNoYXJlLWxvZ28u/cG5n",
+            "original": "https://cdn.thezebra.com/zfront/static/3b94df3/zfront/img/iz-share-logo.png",
+            "logo": true
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "The Best Auto and Renters Insurance Bundles in 2025 | The Zebra",
+          "url": "https://www.thezebra.com/auto-insurance/policies/car-insurance-for-renters/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm ranked best overall, while USAA, limited to military members and their families, scored equally high. Erie Insurance had the cheapest average price for renters shopping for auto insurance.",
+          "page_age": "2025-10-23T21:57:51",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/auto-insurance/policies/car-insurance-for-renters/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a cheap car insurance  \u203a your car insurance policy  \u203a cheap car insurance for renters"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/_bjWQF2Ya7eSEICA34Fyj1QjTeze_FRF6UTIQ-kHApo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9zdGF0/aWMvMTY5ZWJiNy96/ZnJvbnQvaW1nL2l6/LXNoYXJlLWxvZ28u/cG5n",
+            "original": "https://cdn.thezebra.com/zfront/static/169ebb7/zfront/img/iz-share-logo.png",
+            "logo": true
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "Farmers vs Safeco: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/farmers-vs-safeco/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm ... Root vs. Nationwide \u00b7 Liberty Mutual vs. Nationwide \u00b7 Farmers (and honestly, most major insurers) have been raising rates across the board. Even with a perfect driving record, your price can go up because of rising repair costs, more expensive parts, higher medical payouts, and a big jump in claim frequency over the past couple of years.In your case, \u2026",
+          "page_age": "2025-10-13T17:17:12",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/farmers-vs-safeco/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a farmers vs. safeco"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/PNIBMT4lgbBQGgSnjumy4ApAOM8XCftoZPUE2jXDbaU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9jYXItaW5z/dXJhbmNlLTItY29t/cHJlc3Nvci5qcGc",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/car-insurance-2-compressor.jpg",
+            "logo": false
+          },
+          "age": "4 weeks ago"
+        },
+        {
+          "title": "State Farm",
+          "url": "https://en.wikipedia.org/wiki/State_Farm",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "insurance company",
+          "profile": {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/State_Farm",
+            "long_name": "en.wikipedia.org",
+            "img": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "deep_results": {
+            "buttons": [
+              {
+                "type": "button_result",
+                "title": "Overview",
+                "url": "https://en.wikipedia.org/wiki/State_Farm#Overview"
+              },
+              {
+                "type": "button_result",
+                "title": "History",
+                "url": "https://en.wikipedia.org/wiki/State_Farm#History"
+              },
+              {
+                "type": "button_result",
+                "title": "Subsidiaries",
+                "url": "https://en.wikipedia.org/wiki/State_Farm#Subsidiaries"
+              },
+              {
+                "type": "button_result",
+                "title": "Marketing and promotions",
+                "url": "https://en.wikipedia.org/wiki/State_Farm#Marketing_and_promotions"
+              },
+              {
+                "type": "button_result",
+                "title": "Criticism, controversies and viewpoints",
+                "url": "https://en.wikipedia.org/wiki/State_Farm#Criticism,_controversies_and_viewpoints"
+              },
+              {
+                "type": "button_result",
+                "title": "Further reading",
+                "url": "https://en.wikipedia.org/wiki/State_Farm#Further_reading"
+              }
+            ]
+          },
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "en.wikipedia.org",
+            "hostname": "en.wikipedia.org",
+            "favicon": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw",
+            "path": "\u203a wiki  \u203a State_Farm"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/JJVmZ8RO2q5JCfHMKBjGbuEN46u7albILoDYtAb4D-s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/LzlhL1N0YXRlX0Zh/cm1fbG9nby5zdmc",
+            "original": "https://upload.wikimedia.org/wikipedia/commons/9/9a/State_Farm_logo.svg",
+            "logo": true
+          }
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

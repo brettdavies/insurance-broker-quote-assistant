@@ -1,0 +1,211 @@
+{
+  "websearch_id": "websearch_d4sndfp58u15m3k2m2ult9on",
+  "search_id": "search_dtvghhtok41e2uat2yxd82xy",
+  "timestamp": "2025-11-07T12:26:09.481721",
+  "startedAt": "2025-11-07T12:26:09.481721",
+  "completedAt": "2025-11-07T12:26:11.247437",
+  "durationSeconds": 1.77,
+  "urlsDiscoveredCount": 3,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:progressive.com construction types",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:progressive.com construction types",
+      "show_strict_warning": false,
+      "cleaned": "construction types",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "construction types",
+        "sites": [
+          "progressive.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Nevada RV Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/nevada-rv-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Type and model: The more expensive your RV is to repair or replace, the more you pay to insure it.",
+          "page_age": "2025-06-30T18:33:30",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/nevada-rv-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a nevada rv insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/xc-h25Q15AFqrbGaHpqPB2V654rVA1tZdboXKbFh8pI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDgxYWM1MWM1/NWExZDRkMDUvNjc3/ZjA1MTM5YzgzMTI4/YzVkYjQ2Y2M5L3J2/X25ldmFkYV9vcGVu/LWdyYXBoLnBuZw",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt81ac51c55a1d4d05/677f05139c83128c5db46cc9/rv_nevada_open-graph.png",
+            "logo": false
+          },
+          "age": "June 30, 2025"
+        },
+        {
+          "title": "Leased Car Accidents | Progressive",
+          "url": "https://www.progressive.com/answers/leased-car-accident/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "What happens if you crash a leased car? Learn more about leased car accidents and what additional steps you should take regarding your leasing company.",
+          "page_age": "2025-01-21T19:18:48",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/leased-car-accident/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a car insurance information  \u203a what happens if you have an accident with a leased car?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "January 21, 2025"
+        },
+        {
+          "title": "Construction",
+          "url": "https://en.wikipedia.org/wiki/Construction",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "process that consists of the building or assembling of a building or infrastructure",
+          "profile": {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Construction",
+            "long_name": "en.wikipedia.org",
+            "img": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "deep_results": {
+            "buttons": [
+              {
+                "type": "button_result",
+                "title": "Etymology",
+                "url": "https://en.wikipedia.org/wiki/Construction#Etymology"
+              },
+              {
+                "type": "button_result",
+                "title": "History",
+                "url": "https://en.wikipedia.org/wiki/Construction#History"
+              },
+              {
+                "type": "button_result",
+                "title": "Construction industry sectors",
+                "url": "https://en.wikipedia.org/wiki/Construction#Construction_industry_sectors"
+              },
+              {
+                "type": "button_result",
+                "title": "Construction processes",
+                "url": "https://en.wikipedia.org/wiki/Construction#Construction_processes"
+              },
+              {
+                "type": "button_result",
+                "title": "Industry scale and characteristics",
+                "url": "https://en.wikipedia.org/wiki/Construction#Industry_scale_and_characteristics"
+              },
+              {
+                "type": "button_result",
+                "title": "Safety",
+                "url": "https://en.wikipedia.org/wiki/Construction#Safety"
+              },
+              {
+                "type": "button_result",
+                "title": "Construction magazines",
+                "url": "https://en.wikipedia.org/wiki/Construction#Construction_magazines"
+              }
+            ]
+          },
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "en.wikipedia.org",
+            "hostname": "en.wikipedia.org",
+            "favicon": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw",
+            "path": "\u203a wiki  \u203a Construction"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/qvMA9DuB-BwQCV7dkFVe8xFENx9QhTOmEwqExy67qPo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9k/L2Q2L0NvbnN0cnVj/dGlvbl9zaXRlX2lu/X0NvbG9nbmUlMkNf/R2VybWFueV8lMjgy/MDE3JTI5LmpwZw",
+            "original": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Construction_site_in_Cologne%2C_Germany_%282017%29.jpg",
+            "logo": false
+          }
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

@@ -1,0 +1,795 @@
+{
+  "websearch_id": "websearch_fwi56d7uyzjjhxodbbg7avm9",
+  "search_id": "search_pxbpxsek1it1hui2pt9vv6cx",
+  "timestamp": "2025-11-07T12:27:18.634371",
+  "startedAt": "2025-11-07T12:27:18.634371",
+  "completedAt": "2025-11-07T12:27:20.670167",
+  "durationSeconds": 2.04,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "Florida \"property damage\" minimum $10000",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "Florida \"property damage\" minimum $10000",
+      "show_strict_warning": false,
+      "cleaned": "Florida property damage minimum $10000",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "Florida property damage minimum $10000"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Automobile Insurance Consumer Pamphlet",
+          "url": "https://www.floridabar.org/public/consumer/tip002/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "According to Florida law, if you own a motor vehicle with four or more wheels you must carry $10,000 of personal injury protection (PIP) insurance and a minimum of $10,000 of property damage liability insurance.",
+          "page_age": "2025-10-03T04:00:00",
+          "profile": {
+            "name": "Florida Bar",
+            "url": "https://www.floridabar.org/public/consumer/tip002/",
+            "long_name": "floridabar.org",
+            "img": "https://imgs.search.brave.com/cjvdxvRe2Z8yRWQc5y8oHAyySNAU_YROvfMLfBeZ9Oo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzE5MDRhZGIy/YjMxMzI4NDE5YTE0/NDcyM2MwNjlkZWZh/NWE3YzM1OTdkMjk2/NTMzYjE1Njk1NzVl/ODUwZGYwYS93d3cu/ZmxvcmlkYWJhci5v/cmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "floridabar.org",
+            "hostname": "www.floridabar.org",
+            "favicon": "https://imgs.search.brave.com/cjvdxvRe2Z8yRWQc5y8oHAyySNAU_YROvfMLfBeZ9Oo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzE5MDRhZGIy/YjMxMzI4NDE5YTE0/NDcyM2MwNjlkZWZh/NWE3YzM1OTdkMjk2/NTMzYjE1Njk1NzVl/ODUwZGYwYS93d3cu/ZmxvcmlkYWJhci5v/cmcv",
+            "path": "\u203a public  \u203a consumer  \u203a tip002"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/cc_--CUzvAL4wW8vka2K8UntEl8rYXgLPBYtllVnI0Y/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3ct/bWVkaWEuZmxvcmlk/YWJhci5vcmcvdXBs/b2Fkcy8yMDI1LzA1/L0F1dG9tb2JpbGUt/SW5zdXJhbmNlLnBu/Zw",
+            "original": "https://www-media.floridabar.org/uploads/2025/05/Automobile-Insurance.png",
+            "logo": false
+          },
+          "age": "October 3, 2025"
+        },
+        {
+          "title": "What Happens When Your Property Damages Exceed Third-Party Coverage Limits | The Schiller Kessler Group",
+          "url": "https://www.injuredinflorida.com/blog/what-happens-when-your-property-damages-exceed-third-party-coverage-limits/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "When more than one vehicle or property is damaged in an accident, the negligent driver\u2019s PD limit must be disbursed amongst each of the parties involved. Because most Florida drivers only carry the minimum state required liability limit of $10,000...",
+          "page_age": "2025-06-02T12:15:31",
+          "profile": {
+            "name": "Injuredinflorida",
+            "url": "https://www.injuredinflorida.com/blog/what-happens-when-your-property-damages-exceed-third-party-coverage-limits/",
+            "long_name": "injuredinflorida.com",
+            "img": "https://imgs.search.brave.com/0pCMd_m5jJYNLOcz9Ss20SQhuEcR_-S5m_vpWvvF9Vw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjJjMDFmNWM3/NjlkODU0NjlkZjhl/MDM4MTcwMDA0OWUy/NGNlMmM1OTJlMjBh/MzkyODEyOTBmOTBi/NjU3Y2YzYi93d3cu/aW5qdXJlZGluZmxv/cmlkYS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "injuredinflorida.com",
+            "hostname": "www.injuredinflorida.com",
+            "favicon": "https://imgs.search.brave.com/0pCMd_m5jJYNLOcz9Ss20SQhuEcR_-S5m_vpWvvF9Vw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjJjMDFmNWM3/NjlkODU0NjlkZjhl/MDM4MTcwMDA0OWUy/NGNlMmM1OTJlMjBh/MzkyODEyOTBmOTBi/NjU3Y2YzYi93d3cu/aW5qdXJlZGluZmxv/cmlkYS5jb20v",
+            "path": "  \u203a home  \u203a blog  \u203a premises liability  \u203a what happens when your property damages exceed third-party coverage limits"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Z2nUusqyoJpHDLpqNS-tersN8YRwdyj2ztKh9abu5_I/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5qdXJlZGluZmxv/cmlkYS5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMDMv/cGRfZXhjZXNzX2lz/c3VlLW1pbi5qcGc",
+            "original": "https://www.injuredinflorida.com/wp-content/uploads/2023/03/pd_excess_issue-min.jpg",
+            "logo": false
+          },
+          "age": "June 2, 2025"
+        },
+        {
+          "title": "What Is the Property Damage Statute of Limitations In Florida?",
+          "url": "https://www.nolo.com/legal-encyclopedia/property-damage-statute-limitations-florida.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Florida&#x27;s four-year property damage limitation probably applies to most lawsuits concerning the &quot;design, planning, or construction of an improvement to real property.&quot; In other words, this is the deadline for lawsuits over property damage caused ...",
+          "page_age": "2025-01-08T21:44:00",
+          "profile": {
+            "name": "Nolo",
+            "url": "https://www.nolo.com/legal-encyclopedia/property-damage-statute-limitations-florida.html",
+            "long_name": "nolo.com",
+            "img": "https://imgs.search.brave.com/mVmHlvHnDHfdelAgJTHKRzLj1TyxHIkjzdz5o2wX5lQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODgwOTVhY2Vi/NWRiMjc0ODA4YTg2/MzQ4ZmQ1NjM4Nzg0/OTJmMzdlODIwYWY2/ZWUwODk3NzU4ZDVi/NDIyMDA1Yy93d3cu/bm9sby5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "nolo.com",
+            "hostname": "www.nolo.com",
+            "favicon": "https://imgs.search.brave.com/mVmHlvHnDHfdelAgJTHKRzLj1TyxHIkjzdz5o2wX5lQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODgwOTVhY2Vi/NWRiMjc0ODA4YTg2/MzQ4ZmQ1NjM4Nzg0/OTJmMzdlODIwYWY2/ZWUwODk3NzU4ZDVi/NDIyMDA1Yy93d3cu/bm9sby5jb20v",
+            "path": "  \u203a learn by legal issue  \u203a personal injury  \u203a property damage claims"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Yi6B0EphUkUs5bc4uXXF_lYzyLoX2MMVBF3Au3wFcGY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bm9sby5jb20vc2l0/ZXMvYWxsL3RoZW1l/cy9odWJ2Nl9ub2xv/L2ltYWdlcy9sb2dv/cy9sb2dvX2ZsYXR3/aGl0ZV9ub2xvX0h1/YnY2LnBuZw",
+            "original": "https://www.nolo.com/sites/all/themes/hubv6_nolo/images/logos/logo_flatwhite_nolo_Hubv6.png",
+            "logo": true
+          },
+          "age": "January 8, 2025"
+        },
+        {
+          "title": "How to handle property damage claims after a car accident in Florida",
+          "url": "https://mikeserranolaw.com/2023/07/17/how-to-handle-property-damage-claims-after-a-car-accident-in-florida/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "This means that regardless of who ... policy. Minimum Coverage Requirements: Florida law requires drivers to carry a minimum of $10,000 in property damage liability (PDL) coverage....",
+          "page_age": "2025-03-24T19:09:27",
+          "profile": {
+            "name": "Mikeserranolaw",
+            "url": "https://mikeserranolaw.com/2023/07/17/how-to-handle-property-damage-claims-after-a-car-accident-in-florida/",
+            "long_name": "mikeserranolaw.com",
+            "img": "https://imgs.search.brave.com/SIbVNk3PHgKL1veD1oTR5btgjOTlZcxF6qs_tAE9ieE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjUxY2EyNDBm/NzNkYjEyNjQxYzdl/Y2Y5NDg3ZWRhMzU4/MWY4ZjRhMjI4MmFm/YjVjMTcwN2MyNzE4/NTc0M2MzZC9taWtl/c2VycmFub2xhdy5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "mikeserranolaw.com",
+            "hostname": "mikeserranolaw.com",
+            "favicon": "https://imgs.search.brave.com/SIbVNk3PHgKL1veD1oTR5btgjOTlZcxF6qs_tAE9ieE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjUxY2EyNDBm/NzNkYjEyNjQxYzdl/Y2Y5NDg3ZWRhMzU4/MWY4ZjRhMjI4MmFm/YjVjMTcwN2MyNzE4/NTc0M2MzZC9taWtl/c2VycmFub2xhdy5j/b20v",
+            "path": "\u203a 2023  \u203a 07  \u203a 17  \u203a how-to-handle-property-damage-claims-after-a-car-accident-in-florida"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/mvtfDctMQSgBUQFufJtza-qvnkzQ8yILYvrMR_ApLy8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9taWtl/c2VycmFub2xhdy5j/b20vd3AtY29udGVu/dC91cGxvYWRzL1Nl/cnJhbm8tTGF3LnBu/Zw",
+            "original": "https://mikeserranolaw.com/wp-content/uploads/Serrano-Law.png",
+            "logo": false
+          },
+          "age": "March 24, 2025"
+        },
+        {
+          "title": "Who Pays for Car Damage in a No-Fault State Like Florida?",
+          "url": "https://www.injurylawyers.com/blog/who-pays-for-car-damage-in-no-fault-state/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Florida drivers are only required to carry $10,000 in PDL, which can run out fast, especially with today\u2019s high repair costs; even minor collisions can rack up high repair bills.",
+          "page_age": "2025-08-01T15:10:53",
+          "profile": {
+            "name": "Steinger, Greene & Feiner",
+            "url": "https://www.injurylawyers.com/blog/who-pays-for-car-damage-in-no-fault-state/",
+            "long_name": "injurylawyers.com",
+            "img": "https://imgs.search.brave.com/dMu1rYZ1JMugB6pbDIX8TUqnKpc5b5QxlKY-YiTuG8s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFmZGM0MTQ1/NGE4MWZkYTkzODk3/OTA0N2I3ZTkzZTJk/OTFhZmNlZjE3NTZl/NmU5MmQwNTJjNjQw/ZGYxOTUxOS93d3cu/aW5qdXJ5bGF3eWVy/cy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "injurylawyers.com",
+            "hostname": "www.injurylawyers.com",
+            "favicon": "https://imgs.search.brave.com/dMu1rYZ1JMugB6pbDIX8TUqnKpc5b5QxlKY-YiTuG8s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFmZGM0MTQ1/NGE4MWZkYTkzODk3/OTA0N2I3ZTkzZTJk/OTFhZmNlZjE3NTZl/NmU5MmQwNTJjNjQw/ZGYxOTUxOS93d3cu/aW5qdXJ5bGF3eWVy/cy5jb20v",
+            "path": "\u203a blog  \u203a who-pays-for-car-damage-in-no-fault-state"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/LNqbABPbvN1-D1ce_Cev_z-ERF8INu4ebExghI9lKJQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5qdXJ5bGF3eWVy/cy5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjEvMDgvR2V0/dHlfNDY2MzI3MzIw/LXNjYWxlZC0xMjAw/eDgwMi5qcGc",
+            "original": "https://www.injurylawyers.com/wp-content/uploads/2021/08/Getty_466327320-scaled-1200x802.jpg",
+            "logo": false
+          },
+          "age": "August 1, 2025"
+        },
+        {
+          "title": "Property Damage - Payer Law Personal Injury Lawyers",
+          "url": "https://www.payerlawgroup.com/resources/property-damage/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "However, PIP insurance does not apply to property damage. Florida law requires all registered drivers to maintain at least $10,000 in property damage liability coverage.",
+          "page_age": "2025-04-29T15:24:07",
+          "profile": {
+            "name": "Payerlawgroup",
+            "url": "https://www.payerlawgroup.com/resources/property-damage/",
+            "long_name": "payerlawgroup.com",
+            "img": "https://imgs.search.brave.com/JXIqvGP6DSWyNlY727UFY8oXz-2jk7AKJEYFxRGGS6w/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTE5NzkxNDMx/NWVjOTNjNGIxYzAy/NzdmZjk4OTA5NDZh/MWRkN2QwMzNhYjkz/ODMyMzI2YjE1NTI2/MTA5MTBmOS93d3cu/cGF5ZXJsYXdncm91/cC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "payerlawgroup.com",
+            "hostname": "www.payerlawgroup.com",
+            "favicon": "https://imgs.search.brave.com/JXIqvGP6DSWyNlY727UFY8oXz-2jk7AKJEYFxRGGS6w/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTE5NzkxNDMx/NWVjOTNjNGIxYzAy/NzdmZjk4OTA5NDZh/MWRkN2QwMzNhYjkz/ODMyMzI2YjE1NTI2/MTA5MTBmOS93d3cu/cGF5ZXJsYXdncm91/cC5jb20v",
+            "path": "  \u203a home  \u203a resources  \u203a property damage"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/m6NNbgR5SsKcZIR25XED6IPpRlVswD672pDyjgN71IA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cGF5ZXJsYXdncm91/cC5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjUvMDMvUkVT/LXByb3BlcnR5LWRh/bWFnZS5wbmc",
+            "original": "https://www.payerlawgroup.com/wp-content/uploads/2025/03/RES-property-damage.png",
+            "logo": false
+          },
+          "age": "April 29, 2025"
+        },
+        {
+          "title": "Liability Car Insurance Florida: Top 5 Essential Facts 2025",
+          "url": "https://floridaallrisk.com/liability-car-insurance-florida/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "It covers the cost of damages to another person\u2019s property caused by your vehicle. This could include damage to another car, a fence, or even a building. The minimum requirement in Florida is $10,000.",
+          "page_age": "2025-01-22T15:08:22",
+          "profile": {
+            "name": "Floridaallrisk",
+            "url": "https://floridaallrisk.com/liability-car-insurance-florida/",
+            "long_name": "floridaallrisk.com",
+            "img": "https://imgs.search.brave.com/GPW_tj4OcARNXlGmeHw4z7zR8llSeHEUs4KPUmjBriY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTMxYTdjNmFj/MDE3NzczMzRhZWQ2/ZTg1Y2RjYmIzZjAz/NmM0ZjBmMjkyNzYx/MzNiNWYyMzJhYjJj/YzJiODk5ZS9mbG9y/aWRhYWxscmlzay5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "floridaallrisk.com",
+            "hostname": "floridaallrisk.com",
+            "favicon": "https://imgs.search.brave.com/GPW_tj4OcARNXlGmeHw4z7zR8llSeHEUs4KPUmjBriY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTMxYTdjNmFj/MDE3NzczMzRhZWQ2/ZTg1Y2RjYmIzZjAz/NmM0ZjBmMjkyNzYx/MzNiNWYyMzJhYjJj/YzJiODk5ZS9mbG9y/aWRhYWxscmlzay5j/b20v",
+            "path": "  \u203a home  \u203a cover your bases: a guide to liability car insurance in florida"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/EAPHFe8rUke78tHCAG93-iKaj7fLDGxN9ZbbT_JZX2Q/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9mbG9y/aWRhYWxscmlzay5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjQvMTEvaG9tZW93/bmVycy1pbnN1cmFu/Y2UtZmxvcmlkYS5q/cGc",
+            "original": "https://floridaallrisk.com/wp-content/uploads/2024/11/homeowners-insurance-florida.jpg",
+            "logo": false
+          },
+          "age": "January 22, 2025"
+        },
+        {
+          "title": "Do I Have Enough Auto Insurance in Florida? - The Maher Law Firm",
+          "url": "https://maherlawfirm.com/do-i-have-enough-auto-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "A better question might be \u201cWhat is the minimum auto insurance that all drivers are required to have?\u201d \u00b7 Florida law only requires that your automobile policy have the following coverages: $10,000 liability coverage for property damage ...",
+          "page_age": "2025-06-10T04:24:13",
+          "profile": {
+            "name": "Maher Law Firm",
+            "url": "https://maherlawfirm.com/do-i-have-enough-auto-insurance/",
+            "long_name": "maherlawfirm.com",
+            "img": "https://imgs.search.brave.com/nCsbO6RVWPmmMSxswUgOpEMi87_FnM4VTlL_LAQT1SE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTFmNTM3YmQz/OTg1ZmRlMzc4ZjUy/MTIyMTE2YzNhYTMx/MzhjOWYzOWQ3ZTA2/YmE0YjM2ZGVhMzkw/OTAzMTA1My9tYWhl/cmxhd2Zpcm0uY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "maherlawfirm.com",
+            "hostname": "maherlawfirm.com",
+            "favicon": "https://imgs.search.brave.com/nCsbO6RVWPmmMSxswUgOpEMi87_FnM4VTlL_LAQT1SE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTFmNTM3YmQz/OTg1ZmRlMzc4ZjUy/MTIyMTE2YzNhYTMx/MzhjOWYzOWQ3ZTA2/YmE0YjM2ZGVhMzkw/OTAzMTA1My9tYWhl/cmxhd2Zpcm0uY29t/Lw",
+            "path": "  \u203a home  \u203a do i have enough auto insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/TrmNrA_tr5b8VwXk-obFa9IGAWLxx0DJC4YQUONYlGM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9tYWhl/cmxhd2Zpcm0uY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI1/LzA1L21sZi1kby1p/LWhhdmUtZW5vdWdo/LWF1dG8taW5zdXJh/bmNlLWJsb2ctc21h/bGwuanBn",
+            "original": "https://maherlawfirm.com/wp-content/uploads/2025/05/mlf-do-i-have-enough-auto-insurance-blog-small.jpg",
+            "logo": false
+          },
+          "age": "June 10, 2025"
+        },
+        {
+          "title": "What Is Property Damage Liability (PDL) Insurance Coverage?",
+          "url": "https://www.gedlawyers.com/faqs/what-is-property-damage-liability-pdl-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "According to the Florida Department of Highway Safety and Motor Vehicles (FLHSMV), Florida drivers must purchase at least $10,000 in PDL coverage. Each state makes unique demands on drivers.",
+          "page_age": "2025-07-24T23:46:35",
+          "profile": {
+            "name": "Gedlawyers",
+            "url": "https://www.gedlawyers.com/faqs/what-is-property-damage-liability-pdl-insurance/",
+            "long_name": "gedlawyers.com",
+            "img": "https://imgs.search.brave.com/TXFAIOwdQfzG4XXj1-1XjYEM2ocpiSfCrBKT7nayyXg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjA5OWZmZWUy/NDlhNjJiYzU1ZWQ2/ODgyZDQ5ZDFkYzNi/MDMxNzZiMGM0OGEw/YzIyNTEzNmY2N2Nh/MDUzY2M5YS93d3cu/Z2VkbGF3eWVycy5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "gedlawyers.com",
+            "hostname": "www.gedlawyers.com",
+            "favicon": "https://imgs.search.brave.com/TXFAIOwdQfzG4XXj1-1XjYEM2ocpiSfCrBKT7nayyXg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjA5OWZmZWUy/NDlhNjJiYzU1ZWQ2/ODgyZDQ5ZDFkYzNi/MDMxNzZiMGM0OGEw/YzIyNTEzNmY2N2Nh/MDUzY2M5YS93d3cu/Z2VkbGF3eWVycy5j/b20v",
+            "path": "  \u203a home  \u203a frequently asked questions  \u203a what is property damage liability (pdl) insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/7Tp2oS0RnkpZ89e10qCuGQ7ph3SOGfLvOf6288P6_pE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Z2VkbGF3eWVycy5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjQvMDUvd2hhdC1p/cy1wcm9wZXJ0eS1k/YW1hZ2UtbGlhYmls/aXR5LXBkbC1pbnN1/cmFuY2UuanBlZw",
+            "original": "https://www.gedlawyers.com/wp-content/uploads/2024/05/what-is-property-damage-liability-pdl-insurance.jpeg",
+            "logo": false
+          },
+          "age": "July 24, 2025"
+        },
+        {
+          "title": "Top-Rated Florida Property Damage Lawyers | Property Damage Attorney",
+          "url": "https://florinroebig.com/property-loss/florida/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "As a no-fault state, Florida law ... for personal injury expenses regardless of fault and a minimum of $10,000 in mandatory property damage liability (PDL) coverage....",
+          "page_age": "2025-06-16T16:52:42",
+          "profile": {
+            "name": "Florin|Roebig Trial Attorneys",
+            "url": "https://florinroebig.com/property-loss/florida/",
+            "long_name": "florinroebig.com",
+            "img": "https://imgs.search.brave.com/RSYsbHMWV-2VztdLAnymL3yOsNAetFgwc0XdfWkiUCg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGI0YzdkOWYz/MTRiNzAzOGVmMjQ2/YjljODQ2MzM3MzU5/OTNkNzQ3OGUyZDg5/ZWI3ZjgzNmRjZDFm/MTRlY2NlNy9mbG9y/aW5yb2ViaWcuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "florinroebig.com",
+            "hostname": "florinroebig.com",
+            "favicon": "https://imgs.search.brave.com/RSYsbHMWV-2VztdLAnymL3yOsNAetFgwc0XdfWkiUCg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGI0YzdkOWYz/MTRiNzAzOGVmMjQ2/YjljODQ2MzM3MzU5/OTNkNzQ3OGUyZDg5/ZWI3ZjgzNmRjZDFm/MTRlY2NlNy9mbG9y/aW5yb2ViaWcuY29t/Lw",
+            "path": "  \u203a home  \u203a top-rated property damage claims attorney  \u203a top-rated florida property damage lawyers | property damage attorney"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/jmZtxL2uVaen1nDBrw_C-TlmYCYEf-1MnI2iczrr8Ew/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9mbG9y/aW5yb2ViaWcuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIw/LzA0L2Zsb3JpZGEt/cHJvcGVydHktZGFt/YWdlLWF0dG9ybmV5/cy5qcGc",
+            "original": "https://florinroebig.com/wp-content/uploads/2020/04/florida-property-damage-attorneys.jpg",
+            "logo": false
+          },
+          "age": "June 16, 2025"
+        },
+        {
+          "title": "Florida Auto Property Damage Claims | Searcy Law",
+          "url": "https://www.searcylaw.com/car-accidents/auto-property-damage-claims/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Under Florida\u2019s no-fault auto insurance law, every registered motor vehicle must carry at least $10,000 of property damage liability (PDL) insurance coverage.",
+          "page_age": "2025-08-29T14:48:42",
+          "profile": {
+            "name": "Searcy Law",
+            "url": "https://www.searcylaw.com/car-accidents/auto-property-damage-claims/",
+            "long_name": "searcylaw.com",
+            "img": "https://imgs.search.brave.com/R90_ghN6M5sJk7OrqXYLHF5aku28Koqi0WQMSGCq-ho/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzQ2YmYwM2Mz/OGIyODZiOWVmNDRi/OTE0ZTZjNzVmYzk4/NjU2OTZlNTE2ZGUw/OGQzZmI0MTA1NTcy/OGQyNjM4MS93d3cu/c2VhcmN5bGF3LmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "searcylaw.com",
+            "hostname": "www.searcylaw.com",
+            "favicon": "https://imgs.search.brave.com/R90_ghN6M5sJk7OrqXYLHF5aku28Koqi0WQMSGCq-ho/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzQ2YmYwM2Mz/OGIyODZiOWVmNDRi/OTE0ZTZjNzVmYzk4/NjU2OTZlNTE2ZGUw/OGQzZmI0MTA1NTcy/OGQyNjM4MS93d3cu/c2VhcmN5bGF3LmNv/bS8",
+            "path": "  \u203a car accidents  \u203a auto property damage claims"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/lqVZZBDZqSD0Pi-3r721w6D4Of9VN7fTjTT6B8CnXMc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c2VhcmN5bGF3LmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/MC8wNC9pU3RvY2st/MTE4MjY0Nzg3Mi0x/LTEuanBn",
+            "original": "https://www.searcylaw.com/wp-content/uploads/2020/04/iStock-1182647872-1-1.jpg",
+            "logo": false
+          },
+          "age": "August 29, 2025"
+        },
+        {
+          "title": "Destruction of Property Charges in Florida",
+          "url": "https://thelandaulawgroup.com/destruction-of-property-punishment-in-florida/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The Florida state statute for Criminal ... the damage. For example, if the property damage is valued at less than $200, the person who damaged the property will be charged with a second-degree misdemeanor....",
+          "page_age": "2024-11-10T07:27:09",
+          "profile": {
+            "name": "Landau Law Group",
+            "url": "https://thelandaulawgroup.com/destruction-of-property-punishment-in-florida/",
+            "long_name": "thelandaulawgroup.com",
+            "img": "https://imgs.search.brave.com/qYmbyh-btTF5d9CndhytPSDNq2Pj9pp4_kWs1wYomKs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2Y5ODhkYjUw/MzhkZDRiM2VjNDAx/NDg3YmQ0MDA3MDJj/YmM2ZGRkNjA3MzUw/Yjc2MzM4ZTdiNzA3/NmI2ZTM2YS90aGVs/YW5kYXVsYXdncm91/cC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thelandaulawgroup.com",
+            "hostname": "thelandaulawgroup.com",
+            "favicon": "https://imgs.search.brave.com/qYmbyh-btTF5d9CndhytPSDNq2Pj9pp4_kWs1wYomKs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2Y5ODhkYjUw/MzhkZDRiM2VjNDAx/NDg3YmQ0MDA3MDJj/YmM2ZGRkNjA3MzUw/Yjc2MzM4ZTdiNzA3/NmI2ZTM2YS90aGVs/YW5kYXVsYXdncm91/cC5jb20v",
+            "path": "  \u203a home  \u203a blog  \u203a destruction of property punishment in florida"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/L5zuBP41f3Uhi66YSBkJx_AO7K0fv0n_ZwJwR3HbGPg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly90aGVs/YW5kYXVsYXdncm91/cC5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjAvMDMvbGFu/ZGF1bGF3bG9nby5w/bmc",
+            "original": "https://thelandaulawgroup.com/wp-content/uploads/2020/03/landaulawlogo.png",
+            "logo": true
+          },
+          "age": "November 10, 2024"
+        },
+        {
+          "title": "Minimum Auto Insurance Coverage in Florida: What Every Driver Needs to Known - Shapiro Insurance Group",
+          "url": "https://shapiroinsurancegroup.com/minimum-auto-insurance-coverage-in-florida-what-every-driver-needs-to-known/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Florida requires drivers to carry a minimum of $10,000 in Personal Injury Protection (PIP) and $10,000 in Property Damage Liability (PDL). Unlike most states, it does not mandate Bodily Injury Liability (BIL) insurance, which covers medical ...",
+          "page_age": "2024-12-31T00:19:27",
+          "profile": {
+            "name": "Shapiroinsurancegroup",
+            "url": "https://shapiroinsurancegroup.com/minimum-auto-insurance-coverage-in-florida-what-every-driver-needs-to-known/",
+            "long_name": "shapiroinsurancegroup.com",
+            "img": "https://imgs.search.brave.com/0HhDr4rh8ZRrdjnENDq7RzK0Uwqdvc2FcOPUAUmIMMw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDhlNWQ5ZWYy/MGE5NjdjNGY0MmI1/Y2ZhNzkwYjIxOGM0/ZDQxNmIxNjRmZjg3/MzFmZjk4NDBjNmI1/MGI2NWM1My9zaGFw/aXJvaW5zdXJhbmNl/Z3JvdXAuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "shapiroinsurancegroup.com",
+            "hostname": "shapiroinsurancegroup.com",
+            "favicon": "https://imgs.search.brave.com/0HhDr4rh8ZRrdjnENDq7RzK0Uwqdvc2FcOPUAUmIMMw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDhlNWQ5ZWYy/MGE5NjdjNGY0MmI1/Y2ZhNzkwYjIxOGM0/ZDQxNmIxNjRmZjg3/MzFmZjk4NDBjNmI1/MGI2NWM1My9zaGFw/aXJvaW5zdXJhbmNl/Z3JvdXAuY29tLw",
+            "path": "\u203a minimum-auto-insurance-coverage-in-florida-what-every-driver-needs-to-known"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/3_7QaNct73faO8Q3nDGs1U6T3aGvWZmY7GBJJSA5sSc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zaGFw/aXJvaW5zdXJhbmNl/Z3JvdXAuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI0LzEy/L1RoZS1Nb3N0LUFm/Zm9yZGFibGUtSG9t/ZS1JbnN1cmFuY2Ut/aW4tRmxvcmlkYS0y/MDI1LUlORk9HUkFQ/SElDLnBuZw",
+            "original": "https://shapiroinsurancegroup.com/wp-content/uploads/2024/12/The-Most-Affordable-Home-Insurance-in-Florida-2025-INFOGRAPHIC.png",
+            "logo": false
+          },
+          "age": "December 31, 2024"
+        },
+        {
+          "title": "What is the Crime of Vandalism in Florida? | O\u2019Mara Law Group",
+          "url": "https://www.omaralawgroup.com/blog/what-is-the-crime-of-vandalism-in-florida/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "When the property damage is valued at less than $200, the crime is considered a second-degree misdemeanor. A conviction for this offense can result in up to 60 days in county jail.",
+          "page_age": "2025-10-11T05:05:00",
+          "profile": {
+            "name": "O'Mara Law Group",
+            "url": "https://www.omaralawgroup.com/blog/what-is-the-crime-of-vandalism-in-florida/",
+            "long_name": "omaralawgroup.com",
+            "img": "https://imgs.search.brave.com/3WNWSuy-HLiszuSQ5ZM7nfbKytsFs4MIfOva-FcKszA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYmNlZTgyNWMz/ZDk3M2QzMjFhMGEz/ZjRhNmQ5MTVkMjFi/OGMzYTE3NzYwNTgz/ZWJhOTU3YzY0YzA5/MWQ5Yzg1NC93d3cu/b21hcmFsYXdncm91/cC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "omaralawgroup.com",
+            "hostname": "www.omaralawgroup.com",
+            "favicon": "https://imgs.search.brave.com/3WNWSuy-HLiszuSQ5ZM7nfbKytsFs4MIfOva-FcKszA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYmNlZTgyNWMz/ZDk3M2QzMjFhMGEz/ZjRhNmQ5MTVkMjFi/OGMzYTE3NzYwNTgz/ZWJhOTU3YzY0YzA5/MWQ5Yzg1NC93d3cu/b21hcmFsYXdncm91/cC5jb20v",
+            "path": "\u203a blog  \u203a what-is-the-crime-of-vandalism-in-florida"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/p4ysvjcBIW6ojJ71A9jsY49nYbXTxQ3qAbGWl8uZX9w/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/ZGF0b2Ntcy1hc3Nl/dHMuY29tLzE0NzA1/My8xNzM0NTQ0MDQz/LWNvbnRhY3QuanBn",
+            "original": "https://www.datocms-assets.com/147053/1734544043-contact.jpg",
+            "logo": false
+          },
+          "age": "1 month ago"
+        },
+        {
+          "title": "How Do I Pursue a Claim for Damages to My Vehicle in Florida? - Paul Knopf Bigger",
+          "url": "https://www.pkblawfirm.com/blog/how-do-i-pursue-claim-for-damages-vehicle-florida/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In Florida, PDL is a non-negotiable requirement for all drivers, setting a minimum coverage limit of $10,000. This coverage plays a pivotal role when you\u2019re involved in an accident with a commercial vehicle, such as a tractor-trailer.",
+          "page_age": "2025-02-20T17:46:12",
+          "profile": {
+            "name": "Paul Knopf Bigger",
+            "url": "https://www.pkblawfirm.com/blog/how-do-i-pursue-claim-for-damages-vehicle-florida/",
+            "long_name": "pkblawfirm.com",
+            "img": "https://imgs.search.brave.com/p9SZMHCsOhKcuQV4pL_mjGFNfZ3z-m4M7e8llXV7NCw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjkxODIxMDIy/MTVhOTZlY2ZkNTdl/ZmM0NzBlNDk3YTAz/N2QwNDcwY2YzMDUz/OWRlYWZiN2E3ZDI2/YWMyNTFlZi93d3cu/cGtibGF3ZmlybS5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "pkblawfirm.com",
+            "hostname": "www.pkblawfirm.com",
+            "favicon": "https://imgs.search.brave.com/p9SZMHCsOhKcuQV4pL_mjGFNfZ3z-m4M7e8llXV7NCw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjkxODIxMDIy/MTVhOTZlY2ZkNTdl/ZmM0NzBlNDk3YTAz/N2QwNDcwY2YzMDUz/OWRlYWZiN2E3ZDI2/YWMyNTFlZi93d3cu/cGtibGF3ZmlybS5j/b20v",
+            "path": "  \u203a blog  \u203a how do i pursue a claim for damages to my vehicle in florida?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wBgBp5oTIe7_oTIAsDeR8vYzDOA3SOOiZ6Fa2wDeALo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cGtibGF3ZmlybS5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjQvMDMvSG93LURv/LUktUHVyc3VlLWEt/Q2xhaW0tZm9yLURh/bWFnZXMtdG8tTXkt/VmVoaWNsZS1pbi1G/bG9yaWRhLmpwZw",
+            "original": "https://www.pkblawfirm.com/wp-content/uploads/2024/03/How-Do-I-Pursue-a-Claim-for-Damages-to-My-Vehicle-in-Florida.jpg",
+            "logo": false
+          },
+          "age": "February 20, 2025"
+        },
+        {
+          "title": "Property Damage Claims In Florida",
+          "url": "https://d2law.com/property-damage-claims-in-florida/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In Florida, you generally have four years from the date of the damage to file a lawsuit for property damage. However, if the damage resulted from negligence, such as a car accident, you may only have two years to file a claim.",
+          "page_age": "2025-03-07T11:05:56",
+          "profile": {
+            "name": "D2law",
+            "url": "https://d2law.com/property-damage-claims-in-florida/",
+            "long_name": "d2law.com",
+            "img": "https://imgs.search.brave.com/a6IIBDVgKcPUMaG6lNtiIowrVf8pVCHl6zG_9YQRin8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYWVhYTY5YjYw/M2EzYmUxYjQwOGY3/OWRhZTZiNjVmOWU4/MWFkMmJmMzc3M2U1/NzU0OTA3OWM4ZWRj/YmM3YzFjNC9kMmxh/dy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "d2law.com",
+            "hostname": "d2law.com",
+            "favicon": "https://imgs.search.brave.com/a6IIBDVgKcPUMaG6lNtiIowrVf8pVCHl6zG_9YQRin8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYWVhYTY5YjYw/M2EzYmUxYjQwOGY3/OWRhZTZiNjVmOWU4/MWFkMmJmMzc3M2U1/NzU0OTA3OWM4ZWRj/YmM3YzFjNC9kMmxh/dy5jb20v",
+            "path": "  \u203a home  \u203a property damage claims in florida"
+          },
+          "age": "March 7, 2025"
+        },
+        {
+          "title": "Property Damage Claims explained by Insurance Attorney in Tampa, FL",
+          "url": "https://www.germainlawgroup.com/insurance-law/property-damage-claims/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Call the Germain Law Group today about your property damage claim throughout the areas in Hillsborough County, Pinellas County, Pasco County, Hernando County, Citrus County, and Sumter County. ... Florida insurance policies for homeowners insurance usually cover a variety of claims; however, every insurance policy is different, and it is important to speak to an attorney to find out what exactly is covered by your insurance policy.",
+          "page_age": "2025-07-29T22:00:34",
+          "profile": {
+            "name": "Germainlawgroup",
+            "url": "https://www.germainlawgroup.com/insurance-law/property-damage-claims/",
+            "long_name": "germainlawgroup.com",
+            "img": "https://imgs.search.brave.com/1e7FGt2tp_ixpIrMUmcCsoUrvxbMW0D1jvGTxN6dIdU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjdhZTQ2ZWJm/NjEyZjM0ZTU4MTk3/MTM2OTYyNjg1NTkz/YWU4YWMwNTc5ZThm/MWQzOTllZjk5YjI2/YWVlNWEyOS93d3cu/Z2VybWFpbmxhd2dy/b3VwLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "germainlawgroup.com",
+            "hostname": "www.germainlawgroup.com",
+            "favicon": "https://imgs.search.brave.com/1e7FGt2tp_ixpIrMUmcCsoUrvxbMW0D1jvGTxN6dIdU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjdhZTQ2ZWJm/NjEyZjM0ZTU4MTk3/MTM2OTYyNjg1NTkz/YWU4YWMwNTc5ZThm/MWQzOTllZjk5YjI2/YWVlNWEyOS93d3cu/Z2VybWFpbmxhd2dy/b3VwLmNvbS8",
+            "path": "  \u203a home  \u203a insurance law  \u203a property damage claims"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/OzMAepSTq9efI240I2hCsCiC_ERyZ5n4L7YzqLSLznE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Z2VybWFpbmxhd2dy/b3VwLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxOS8wNS9C/TjlCMTMwNV93ZWIt/MS5qcGc",
+            "original": "https://www.germainlawgroup.com/wp-content/uploads/2019/05/BN9B1305_web-1.jpg",
+            "logo": false
+          },
+          "age": "July 29, 2025"
+        },
+        {
+          "title": "Who Pays for Car Damage in a No-Fault State?",
+          "url": "https://www.andrewpickettlaw.com/faqs/who-pays-for-car-damage-no-fault-state/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In no-fault states, Property Damage ... to the Florida Highway Safety and Motor Vehicles (FLHSMV), Florida requires drivers to carry a minimum of $10,000 in PDL....",
+          "page_age": "2025-05-15T11:27:19",
+          "profile": {
+            "name": "Andrew Pickett Law",
+            "url": "https://www.andrewpickettlaw.com/faqs/who-pays-for-car-damage-no-fault-state/",
+            "long_name": "andrewpickettlaw.com",
+            "img": "https://imgs.search.brave.com/qasUfzEgsH9f8pxQYxyKBEde2VMyPFthyc7fohQfloE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjU4MWQzMmNl/Zjk1NTA3YzlhY2Ey/YmM1NWU2YmRhZWE3/ZTIyYWFjY2Q2NmYw/ZDVkMGRlMjZiN2U2/NjFhODkyYi93d3cu/YW5kcmV3cGlja2V0/dGxhdy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "andrewpickettlaw.com",
+            "hostname": "www.andrewpickettlaw.com",
+            "favicon": "https://imgs.search.brave.com/qasUfzEgsH9f8pxQYxyKBEde2VMyPFthyc7fohQfloE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjU4MWQzMmNl/Zjk1NTA3YzlhY2Ey/YmM1NWU2YmRhZWE3/ZTIyYWFjY2Q2NmYw/ZDVkMGRlMjZiN2U2/NjFhODkyYi93d3cu/YW5kcmV3cGlja2V0/dGxhdy5jb20v",
+            "path": "  \u203a home  \u203a faqs  \u203a who pays for car damage in a no-fault state?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/2CIkasTnSOthvI6S9qwzeQ7o6OQKwFu6NW5g6aQO6l8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YW5kcmV3cGlja2V0/dGxhdy5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjIvMTIv/d2hvLXBheXMtZm9y/LWNhci1kYW1hZ2Ut/bm8tZmF1bHQtc3Rh/dGUuanBn",
+            "original": "https://www.andrewpickettlaw.com/wp-content/uploads/2022/12/who-pays-for-car-damage-no-fault-state.jpg",
+            "logo": false
+          },
+          "age": "May 15, 2025"
+        },
+        {
+          "title": "Florida Auto Insurance Requirements - NerdWallet",
+          "url": "https://www.nerdwallet.com/article/insurance/florida-auto-insurance-requirements",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "This means that your insurance company may pay up to $10,000 for property damage you cause in a single accident, even if multiple cars or properties are involved. If you stick with Florida\u2019s minimum auto insurance requirements, any repair ...",
+          "page_age": "2025-04-30T01:10:11",
+          "profile": {
+            "name": "NerdWallet",
+            "url": "https://www.nerdwallet.com/article/insurance/florida-auto-insurance-requirements",
+            "long_name": "nerdwallet.com",
+            "img": "https://imgs.search.brave.com/8r72GokQ4UXZ6V4PobxSGta-ben5011_C3meSKoOMl4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGFhYzY5MDhh/NTNhODNhYjliNWNm/MTE4YTNmOGE3NjVj/M2FmMDcwMzhhMzQx/MThmYjQ2MzcxMjQy/ZDgwNTkzZS93d3cu/bmVyZHdhbGxldC5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "nerdwallet.com",
+            "hostname": "www.nerdwallet.com",
+            "favicon": "https://imgs.search.brave.com/8r72GokQ4UXZ6V4PobxSGta-ben5011_C3meSKoOMl4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGFhYzY5MDhh/NTNhODNhYjliNWNm/MTE4YTNmOGE3NjVj/M2FmMDcwMzhhMzQx/MThmYjQ2MzcxMjQy/ZDgwNTkzZS93d3cu/bmVyZHdhbGxldC5j/b20v",
+            "path": "  \u203a back to nerdwallet homepage  \u203a insurance  \u203a florida auto insurance requirements"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/vOrWHyzBiB4p0S0Ao6mnAjI3SCzP4tHfqIDHQqxLTO8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bmVyZHdhbGxldC5j/b20vdGFjaHlvbi8y/MDIzLzA0L0dldHR5/SW1hZ2VzLTEzMTkw/NjU0ODUuanBnP3Jl/c2l6ZT0zNTAlMkMz/NTA",
+            "original": "https://www.nerdwallet.com/tachyon/2023/04/GettyImages-1319065485.jpg?resize=350%2C350",
+            "logo": false
+          },
+          "age": "April 30, 2025"
+        },
+        {
+          "title": "Florida's Statute of Limitations for Property Damage Claims | The Mineo Salcedo Law Firm",
+          "url": "https://propertyclaimlaw.com/floridas-statute-of-limitations-for-property-damage-claims/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The statute of limitations refers to the legal time frame within which you must file a lawsuit. In Florida, the time limit for property damage claims depends on the nature of the claim:",
+          "page_age": "2025-08-20T17:32:22",
+          "profile": {
+            "name": "Propertyclaimlaw",
+            "url": "https://propertyclaimlaw.com/floridas-statute-of-limitations-for-property-damage-claims/",
+            "long_name": "propertyclaimlaw.com",
+            "img": "https://imgs.search.brave.com/8sEnc-IU_VDO5pNBoxA-GeIkF-yMVDLUIEVIPHc07Uw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzY2NjBhYzZj/YzU4NWU4OTk5MWIz/MjExZTY1MzVkY2M2/NTFmNjE3MDE0Yzg2/MmE3ZGY5MjkwYmNi/YTJjMTUyOC9wcm9w/ZXJ0eWNsYWltbGF3/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "propertyclaimlaw.com",
+            "hostname": "propertyclaimlaw.com",
+            "favicon": "https://imgs.search.brave.com/8sEnc-IU_VDO5pNBoxA-GeIkF-yMVDLUIEVIPHc07Uw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzY2NjBhYzZj/YzU4NWU4OTk5MWIz/MjExZTY1MzVkY2M2/NTFmNjE3MDE0Yzg2/MmE3ZGY5MjkwYmNi/YTJjMTUyOC9wcm9w/ZXJ0eWNsYWltbGF3/LmNvbS8",
+            "path": "  \u203a home  \u203a blog  \u203a florida\u2019s statute of limitations for property damage claims"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/DzRZfsBDFQs_LKJrvUhCM_8BuSs3AFBkN8y5lzXZe3I/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9wcm9w/ZXJ0eWNsYWltbGF3/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNC8xMi9MaW1p/dGF0aW9ucy1mb3It/UHJvcGVydHktRGFt/YWdlLmpwZw",
+            "original": "https://propertyclaimlaw.com/wp-content/uploads/2024/12/Limitations-for-Property-Damage.jpg",
+            "logo": false
+          },
+          "age": "August 20, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

@@ -1,0 +1,819 @@
+{
+  "websearch_id": "websearch_oyckq2ath5kmr0uzdpx9szi9",
+  "search_id": "search_zxs791wzc2xcgpjuzcrw75u0",
+  "timestamp": "2025-11-07T12:20:19.430328",
+  "startedAt": "2025-11-07T12:20:19.430328",
+  "completedAt": "2025-11-07T12:20:21.430648",
+  "durationSeconds": 2.0,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" \"licensed in\" states",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"GEICO\" \"licensed in\" states",
+      "show_strict_warning": false,
+      "cleaned": "GEICO licensed in states",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO licensed in states"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "GEICO - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/GEICO",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO writes private passenger automobile insurance in all 50 U.S. states and the District of Columbia. The insurance agency sells policies through local agents, called GEICO Field Representatives, over the phone directly to the consumer via ...",
+          "page_age": "2025-10-04T04:04:35",
+          "profile": {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/GEICO",
+            "long_name": "en.wikipedia.org",
+            "img": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "deep_results": {
+            "buttons": [
+              {
+                "type": "button_result",
+                "title": "History",
+                "url": "https://en.wikipedia.org/wiki/GEICO#History"
+              },
+              {
+                "type": "button_result",
+                "title": "Modern development",
+                "url": "https://en.wikipedia.org/wiki/GEICO#Modern_development"
+              },
+              {
+                "type": "button_result",
+                "title": "Advertising campaigns",
+                "url": "https://en.wikipedia.org/wiki/GEICO#Advertising_campaigns"
+              },
+              {
+                "type": "button_result",
+                "title": "Motorsports",
+                "url": "https://en.wikipedia.org/wiki/GEICO#Motorsports"
+              },
+              {
+                "type": "button_result",
+                "title": "Lawsuits",
+                "url": "https://en.wikipedia.org/wiki/GEICO#Lawsuits"
+              }
+            ]
+          },
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "en.wikipedia.org",
+            "hostname": "en.wikipedia.org",
+            "favicon": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw",
+            "path": "\u203a wiki  \u203a GEICO"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/vz-kvaBtSesO4WxAy0JLLmiTPx-ZsoAeZmrSGNKHCZU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9h/L2E3L0dFSUNPX2hl/YWRxdWFydGVycy5q/cGc",
+            "original": "https://upload.wikimedia.org/wikipedia/commons/a/a7/GEICO_headquarters.jpg",
+            "logo": false
+          },
+          "age": "October 4, 2025"
+        },
+        {
+          "title": "r/Geico on Reddit: Question about licensing",
+          "url": "https://www.reddit.com/r/Geico/comments/1kgf1zh/question_about_licensing/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "You are probably not fully licensed yet. When you are licensed, you will be able to access your license number and usually sent an email from the state. An NPN is created when get your first license in any state.",
+          "page_age": "2025-05-06T20:37:34",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Geico/comments/1kgf1zh/question_about_licensing/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/geico  \u203a question about licensing"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A5H_aQiEBuUODR0lNeU8iDfhrWUvO8oEmRGE_mcS_gM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVkZGl0c3RhdGlj/LmNvbS9pY29uLnBu/Zw",
+            "original": "https://www.redditstatic.com/icon.png",
+            "logo": true
+          },
+          "age": "May 6, 2025"
+        },
+        {
+          "title": "Geico Insurance in Phoenix - Geico Insurance in Phoenix, AZ",
+          "url": "https://greeneinsurancegroup.com/geico-insurance-phoenix-az",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico Insurance Agent in Phoenix, Arizona. Geico Auto Insurance for your personal &amp; commercial vehicles. Call or click for quotes.",
+          "page_age": "2025-08-23T04:58:25",
+          "profile": {
+            "name": "Greeneinsurancegroup",
+            "url": "https://greeneinsurancegroup.com/geico-insurance-phoenix-az",
+            "long_name": "greeneinsurancegroup.com",
+            "img": "https://imgs.search.brave.com/o75LqJkYL5prrDwF6dGCB_p3MUdr317pD59CAMHuOLQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVjOWM5YmRi/NDRjNTVkZjgwOTNi/MmUzYjUxY2Q3ZDhj/YmI4YjVmOTUwNWM0/NmIyZDdkYmMyOGVm/ODZhY2FkNy9ncmVl/bmVpbnN1cmFuY2Vn/cm91cC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "greeneinsurancegroup.com",
+            "hostname": "greeneinsurancegroup.com",
+            "favicon": "https://imgs.search.brave.com/o75LqJkYL5prrDwF6dGCB_p3MUdr317pD59CAMHuOLQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVjOWM5YmRi/NDRjNTVkZjgwOTNi/MmUzYjUxY2Q3ZDhj/YmI4YjVmOTUwNWM0/NmIyZDdkYmMyOGVm/ODZhY2FkNy9ncmVl/bmVpbnN1cmFuY2Vn/cm91cC5jb20v",
+            "path": "  \u203a home  \u203a geico insurance phoenix"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/alc5N_f5BsBm4aV9F0nPNzAQgwfNB-0UMUeeCKcylBo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9ncmVl/bmVpbnN1cmFuY2Vn/cm91cC5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMTAv/UHJvZ3Jlc3NpdmUt/SW5zdXJhbmNlLUFy/aXpvbmEucG5n",
+            "original": "https://greeneinsurancegroup.com/wp-content/uploads/2023/10/Progressive-Insurance-Arizona.png",
+            "logo": false
+          },
+          "age": "August 23, 2025"
+        },
+        {
+          "title": "Geico Insurance Review 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Coverage.com services are only ... it is licensed. Coverage.com may not offer insurance coverage in all states or scenarios. All insurance products are governed by the terms in the applicable insurance policy, and all related decisions (such as approval for coverage, premiums, commissions and fees) and policy obligations are the sole responsibility of the underwriting insurer. The information on this site does not modify any insurance policy terms in any way. Because Geico does not write ...",
+          "page_age": "2025-10-14T19:36:23",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/geico/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "Geico Insurance in Arizona - Geico Car Insurance Quotes in AZ",
+          "url": "https://greeneinsurancegroup.com/geico-insurance-arizona/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "As a Geico Insurance Agent in Arizona, we offer Geico Car Insurance in the states of Arizona, Utah, &amp; Illinois.",
+          "page_age": "2025-10-15T22:06:43",
+          "profile": {
+            "name": "Greeneinsurancegroup",
+            "url": "https://greeneinsurancegroup.com/geico-insurance-arizona/",
+            "long_name": "greeneinsurancegroup.com",
+            "img": "https://imgs.search.brave.com/o75LqJkYL5prrDwF6dGCB_p3MUdr317pD59CAMHuOLQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVjOWM5YmRi/NDRjNTVkZjgwOTNi/MmUzYjUxY2Q3ZDhj/YmI4YjVmOTUwNWM0/NmIyZDdkYmMyOGVm/ODZhY2FkNy9ncmVl/bmVpbnN1cmFuY2Vn/cm91cC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "greeneinsurancegroup.com",
+            "hostname": "greeneinsurancegroup.com",
+            "favicon": "https://imgs.search.brave.com/o75LqJkYL5prrDwF6dGCB_p3MUdr317pD59CAMHuOLQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVjOWM5YmRi/NDRjNTVkZjgwOTNi/MmUzYjUxY2Q3ZDhj/YmI4YjVmOTUwNWM0/NmIyZDdkYmMyOGVm/ODZhY2FkNy9ncmVl/bmVpbnN1cmFuY2Vn/cm91cC5jb20v",
+            "path": "  \u203a home  \u203a geico insurance arizona"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/alc5N_f5BsBm4aV9F0nPNzAQgwfNB-0UMUeeCKcylBo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9ncmVl/bmVpbnN1cmFuY2Vn/cm91cC5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMTAv/UHJvZ3Jlc3NpdmUt/SW5zdXJhbmNlLUFy/aXpvbmEucG5n",
+            "original": "https://greeneinsurancegroup.com/wp-content/uploads/2023/10/Progressive-Insurance-Arizona.png",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "Best car insurance companies in 2025",
+          "url": "https://finance.yahoo.com/personal-finance/insurance/article/best-car-insurance-220609280.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO scored 21 out of 30 for customer satisfaction in our analysis. It has received fewer customer complaints filed with the NAIC than the industry average. However, GEICO scored below average in J.D. Power\u2019s auto claims satisfaction study and below average in seven out of the 12 geographical regions in J.D.",
+          "page_age": "2025-10-21T22:06:09",
+          "profile": {
+            "name": "Yahoo! Finance",
+            "url": "https://finance.yahoo.com/personal-finance/insurance/article/best-car-insurance-220609280.html",
+            "long_name": "finance.yahoo.com",
+            "img": "https://imgs.search.brave.com/ZxJbtHZiiBXciqcRfJn3XPiTEOf_XYrooAjrJf1rnag/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjRkNjc1NWY5/MzM5ZjlkMWQyNjM5/OWNiMTQ4ZjcwNTQx/ZjA3ZDE4NDQ2M2Iw/MWZjZjVhOTFlM2Ji/NTE1NWRjZS9maW5h/bmNlLnlhaG9vLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "finance.yahoo.com",
+            "hostname": "finance.yahoo.com",
+            "favicon": "https://imgs.search.brave.com/ZxJbtHZiiBXciqcRfJn3XPiTEOf_XYrooAjrJf1rnag/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjRkNjc1NWY5/MzM5ZjlkMWQyNjM5/OWNiMTQ4ZjcwNTQx/ZjA3ZDE4NDQ2M2Iw/MWZjZjVhOTFlM2Ji/NTE1NWRjZS9maW5h/bmNlLnlhaG9vLmNv/bS8",
+            "path": "  \u203a personal finance  \u203a insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/2EJSuVtPDfBlgclE0jUWZBjmfJphQrPxqEm1Y-Yayoc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zLnlp/bWcuY29tL255L2Fw/aS9yZXMvMS4yL3ho/QnM0S3VuU3pnU0NJ/M3JPUG9tY2ctLS9Z/WEJ3YVdROWFHbG5h/R3hoYm1SbGNqdDNQ/VEV5TURBN2FEMDRN/REEtL2h0dHBzOi8v/cy55aW1nLmNvbS9v/cy9jcmVhdHItdXBs/b2FkZWQtaW1hZ2Vz/LzIwMjUtMTAvZDRk/OWVlNDAtYWVhZS0x/MWYwLWE2ZmYtMTUy/OWI4OTFlZjVl",
+            "original": "https://s.yimg.com/ny/api/res/1.2/xhBs4KunSzgSCI3rOPomcg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2025-10/d4d9ee40-aeae-11f0-a6ff-1529b891ef5e",
+            "logo": false
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "Proof of Insurance: Geico Auto Policies - Jerry",
+          "url": "https://jerry.ai/car-insurance/geico-proof-of-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Currently, Massachusetts and New Hampshire do not accept the digital ID cards available through Geico Mobile as valid proof of insurance, and New Mexico doesn\u2019t allow digital ID cards through any insurer. Nearly every state requires drivers to have car insurance, though some states allow drivers to provide proof of financial responsibility instead.",
+          "page_age": "2025-03-04T14:48:44",
+          "profile": {
+            "name": "Jerry",
+            "url": "https://jerry.ai/car-insurance/geico-proof-of-insurance/",
+            "long_name": "jerry.ai",
+            "img": "https://imgs.search.brave.com/iFOq-mr7jchIi-eyZpQn_xBl1gyydPtwbg9UjraFpDk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDQzMDI5ZWEx/OWQ1ZGEwMzBmODc1/MDA2MTQ4NzllNGRk/NmI4MzM3ODg3MTkz/ODhhM2Q5MTZjN2Yz/ZWQ4OWIwMS9qZXJy/eS5haS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "jerry.ai",
+            "hostname": "jerry.ai",
+            "favicon": "https://imgs.search.brave.com/iFOq-mr7jchIi-eyZpQn_xBl1gyydPtwbg9UjraFpDk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDQzMDI5ZWEx/OWQ1ZGEwMzBmODc1/MDA2MTQ4NzllNGRk/NmI4MzM3ODg3MTkz/ODhhM2Q5MTZjN2Yz/ZWQ4OWIwMS9qZXJy/eS5haS8",
+            "path": "  \u203a home  \u203a car insurance  \u203a proof of insurance: geico auto policies"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/7GqopXk6FIAt6j8dFonwljSkxqJUaOgVn1XZSPkEVMk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9qZXJy/eS5haS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNC8xMC9EZXBv/c2l0cGhvdG9zXzY3/MzczMzk0Nl9YTC0x/MDI0eDY4My5qcGc",
+            "original": "https://jerry.ai/wp-content/uploads/2024/10/Depositphotos_673733946_XL-1024x683.jpg",
+            "logo": false
+          },
+          "age": "March 4, 2025"
+        },
+        {
+          "title": "Geico Auto Insurance Review 2025 - Jerry",
+          "url": "https://jerry.ai/reviews/car-insurance/geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Available in all 50 states. Files SR-22 forms for high-risk drivers. ... Relatively low customer satisfaction ratings from J.D. Power. Jerry rates Geico car insurance 5 stars out of 5.",
+          "page_age": "2025-01-09T03:06:00",
+          "profile": {
+            "name": "Jerry",
+            "url": "https://jerry.ai/reviews/car-insurance/geico/",
+            "long_name": "jerry.ai",
+            "img": "https://imgs.search.brave.com/iFOq-mr7jchIi-eyZpQn_xBl1gyydPtwbg9UjraFpDk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDQzMDI5ZWEx/OWQ1ZGEwMzBmODc1/MDA2MTQ4NzllNGRk/NmI4MzM3ODg3MTkz/ODhhM2Q5MTZjN2Yz/ZWQ4OWIwMS9qZXJy/eS5haS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "jerry.ai",
+            "hostname": "jerry.ai",
+            "favicon": "https://imgs.search.brave.com/iFOq-mr7jchIi-eyZpQn_xBl1gyydPtwbg9UjraFpDk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDQzMDI5ZWEx/OWQ1ZGEwMzBmODc1/MDA2MTQ4NzllNGRk/NmI4MzM3ODg3MTkz/ODhhM2Q5MTZjN2Yz/ZWQ4OWIwMS9qZXJy/eS5haS8",
+            "path": "  \u203a home  \u203a reviews  \u203a car insurance  \u203a geico auto insurance review 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/VF_AKoiCIgTO3njg2_SGv6EXEJf612yJ1qWJ45qGk0A/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9qZXJy/eS5haS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNS8wMS9EZXBv/c2l0cGhvdG9zXzU3/OTEyNTgxX1hMLTEw/MjR4NzIxLmpwZw",
+            "original": "https://jerry.ai/wp-content/uploads/2025/01/Depositphotos_57912581_XL-1024x721.jpg",
+            "logo": false
+          },
+          "age": "January 9, 2025"
+        },
+        {
+          "title": "GEICO vs Costco Car Insurance: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/geico-vs-costco/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The insurer does not offer coverage in the below states: Alaska, California, Connecticut, Florida, Hawaii, Idaho, Louisiana, Maine, New Hampshire, North Carolina, North Dakota, Rhode Island, Tennessee, Washington, and Wyoming. Dealing with a car insurance company is never fun. If you\u2019ve ever been through the claims process, you know decent customer service is crucial. Overall, CONNECT is ranked more favorably than GEICO in terms of customer service and J.D.",
+          "page_age": "2025-10-16T22:23:36",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/geico-vs-costco/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a geico vs. costco car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wLaa5ABL1FOaAK7OptGU60BZ9EYO_N4yxiZcbPpNAME/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9zdGF0/aWMvODAwZGFmYS96/ZnJvbnQvaW1nL2l6/LXNoYXJlLWxvZ28u/cG5n",
+            "original": "https://cdn.thezebra.com/zfront/static/800dafa/zfront/img/iz-share-logo.png",
+            "logo": true
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "Geico Insurance Review for 2025 (+Rates & Options) | Quote.com",
+          "url": "https://www.quote.com/companies/geico-insurance-review/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "She knows everyone has their own unique needs and circumstances, and she is passionate about counseling others on which policy is right for them. Licensed in Massachusetts, New Hampshir... ... Our Geico insurance review found drivers can get ...",
+          "page_age": "2025-09-22T17:22:28",
+          "profile": {
+            "name": "Quote.com",
+            "url": "https://www.quote.com/companies/geico-insurance-review/",
+            "long_name": "quote.com",
+            "img": "https://imgs.search.brave.com/kddem-PxrpzYtwfpKjL3Fo0CZWOxFjL--pzkA-7OGdI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODExNWFmZmUz/MjljOGY0NjU3YTkw/NGU5MWVjMDVlNTAz/ZTA4ZDIwN2JjMzUw/ZjBlYmVhZTExNGZl/YzliNjE1NS93d3cu/cXVvdGUuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "quote.com",
+            "hostname": "www.quote.com",
+            "favicon": "https://imgs.search.brave.com/kddem-PxrpzYtwfpKjL3Fo0CZWOxFjL--pzkA-7OGdI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODExNWFmZmUz/MjljOGY0NjU3YTkw/NGU5MWVjMDVlNTAz/ZTA4ZDIwN2JjMzUw/ZjBlYmVhZTExNGZl/YzliNjE1NS93d3cu/cXVvdGUuY29tLw",
+            "path": "  \u203a home  \u203a best car insurance companies"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/tqYWhzxCTGCcB5TyQiRvxGid6lT9mz6fGza0BlyUgaw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vZGF2djF6d2Jv/L2ltYWdlL3VwbG9h/ZC92MTc0MzQyNTYy/My92Z2VqdG1uemIz/bnB4bHI5ODJoZi5w/bmc",
+            "original": "https://res.cloudinary.com/davv1zwbo/image/upload/v1743425623/vgejtmnzb3npxlr982hf.png",
+            "logo": false
+          },
+          "age": "September 22, 2025"
+        },
+        {
+          "title": "Geico Car Insurance Review October 2025 - Coverage & Cost | U.S. News",
+          "url": "https://www.usnews.com/insurance/auto/geico-car-insurance-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico has the fifth-cheapest average annual rate in our study for drivers with poor credit. It\u2019s $1,413 cheaper than the annual national average rate in this category. ... Buying a minimum coverage policy means you\u2019ll have only your state\u2019s required coverage.",
+          "page_age": "2025-11-01T19:13:00",
+          "profile": {
+            "name": "U.S. News",
+            "url": "https://www.usnews.com/insurance/auto/geico-car-insurance-review",
+            "long_name": "usnews.com",
+            "img": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "usnews.com",
+            "hostname": "www.usnews.com",
+            "favicon": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8",
+            "path": "\u203a insurance  \u203a auto  \u203a geico-car-insurance-review"
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "GEICO Home Insurance Review 2025: Coverage, Cost, and Customer Satisfaction",
+          "url": "https://www.businessinsider.com/personal-finance/homeowners-insurance/geico-homeowners-insurance-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm Homeowners Insurance and GEICO are similar in that both cover all 50 states. However, again, GEICO focuses on online quoting, policy management, etc. Again, GEICO backs all policies, but other partners underwrite.",
+          "page_age": "2025-05-19T21:56:09",
+          "profile": {
+            "name": "Business Insider",
+            "url": "https://www.businessinsider.com/personal-finance/homeowners-insurance/geico-homeowners-insurance-review",
+            "long_name": "businessinsider.com",
+            "img": "https://imgs.search.brave.com/Z6wRqiE6vvL-8sy5MskRt7Tuy1z-PxXnfSbVXVy86vw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTI3NGQzMDdi/ZjEzYTA0MTI4NWMw/MWVjOTFmNDI3Yzdk/NGQzZDE1OTAxOWVj/NWIxMjk3YTcyNTg5/N2FiZjM2Yy93d3cu/YnVzaW5lc3NpbnNp/ZGVyLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "businessinsider.com",
+            "hostname": "www.businessinsider.com",
+            "favicon": "https://imgs.search.brave.com/Z6wRqiE6vvL-8sy5MskRt7Tuy1z-PxXnfSbVXVy86vw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTI3NGQzMDdi/ZjEzYTA0MTI4NWMw/MWVjOTFmNDI3Yzdk/NGQzZDE1OTAxOWVj/NWIxMjk3YTcyNTg5/N2FiZjM2Yy93d3cu/YnVzaW5lc3NpbnNp/ZGVyLmNvbS8",
+            "path": "  \u203a personal finance  \u203a insurance  \u203a homeowners insurance  \u203a geico homeowners insurance review: pros, cons, and alternatives"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/OH3rgfR27kjjPsF49LribxpHiWko6hLRlGvFzG0hnxY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pLmlu/c2lkZXIuY29tLzY4/MmJhNjMwYzZhZDI4/OGQxNDgxNWMzYz93/aWR0aD0xMDAwJmZv/cm1hdD1qcGVn",
+            "original": "https://i.insider.com/682ba630c6ad288d14815c3c?width=1000&format=jpeg",
+            "logo": false
+          },
+          "age": "May 19, 2025"
+        },
+        {
+          "title": "Geico renters insurance quote - compare 2025 Rates",
+          "url": "https://blakeinsurancegroup.com/geico-renters-insurance-quote/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If you\u2019re searching for renters insurance near me, we\u2019ve got you covered across these states: ... Phoenix, Tucson, Los Angeles, San Diego, San Antonio, Austin, Dallas, Houston, Miami, Orlando, Tampa, New York City, Buffalo, Columbus, Cleveland, Charlotte, Raleigh, Atlanta, Virginia Beach, Oklahoma City, Albuquerque, Des Moines, Wichita, Detroit, Grand Rapids, Omaha, Lincoln, Charleston (SC), Sioux Falls, Charleston (WV), and surrounding areas. Can I compare my existing GEICO renters quote with other carriers?",
+          "page_age": "2025-09-04T02:51:17",
+          "profile": {
+            "name": "Blakeinsurancegroup",
+            "url": "https://blakeinsurancegroup.com/geico-renters-insurance-quote/",
+            "long_name": "blakeinsurancegroup.com",
+            "img": "https://imgs.search.brave.com/a01NlX7BtgFhqHXaWoZLIAJaIF31fpx_LFtlcXYTxgQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvY2ZiMzRiODBm/NWExZTgwZTdhMmRl/N2ZkZDRmMTZhNmMy/ODE5ZDE2MjI2ZDBk/ZmM2NDJkMzdlMTM1/NDUyMGYyYy9ibGFr/ZWluc3VyYW5jZWdy/b3VwLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "blakeinsurancegroup.com",
+            "hostname": "blakeinsurancegroup.com",
+            "favicon": "https://imgs.search.brave.com/a01NlX7BtgFhqHXaWoZLIAJaIF31fpx_LFtlcXYTxgQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvY2ZiMzRiODBm/NWExZTgwZTdhMmRl/N2ZkZDRmMTZhNmMy/ODE5ZDE2MjI2ZDBk/ZmM2NDJkMzdlMTM1/NDUyMGYyYy9ibGFr/ZWluc3VyYW5jZWdy/b3VwLmNvbS8",
+            "path": "  \u203a geico renters insurance quote"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/uPtg6vL2VWi8C2Kozfn-9ovKG0N4JHb7gTpYxJSmBTA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9ibGFr/ZWluc3VyYW5jZWdy/b3VwLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNC8wMS9J/TUdfMjA0Ni1zY2Fs/ZWQuanBlZw",
+            "original": "https://blakeinsurancegroup.com/wp-content/uploads/2024/01/IMG_2046-scaled.jpeg",
+            "logo": false
+          },
+          "age": "September 4, 2025"
+        },
+        {
+          "title": "Geico Auto Insurance Review for 2025 (Real Customer Feedback) | FreeAdvice",
+          "url": "https://www.freeadvice.com/insurance/geico-auto-insurance-review/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Tracey L. Wells Licensed Insurance Agent &amp; Agency Owner \u00b7 If you\u2019re unsure of how much insurance you need, a Geico representative can help. Some of the available coverages are dependent on what state you live in.",
+          "page_age": "2025-06-19T10:25:12",
+          "profile": {
+            "name": "FreeAdvice",
+            "url": "https://www.freeadvice.com/insurance/geico-auto-insurance-review/",
+            "long_name": "freeadvice.com",
+            "img": "https://imgs.search.brave.com/zEolwdKnj7qMwLKZ1CZ_H4bwiQdYATaTCLc9MOMi4AI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWQ4ZTk1YjM4/ZDZlODhhOGE1MzA1/YWM3NjVhOWFjZTU0/ZGEwYTM3NDU4MDc2/NmNjMzBiZGY4YTJh/YWE4ZjY0YS93d3cu/ZnJlZWFkdmljZS5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "freeadvice.com",
+            "hostname": "www.freeadvice.com",
+            "favicon": "https://imgs.search.brave.com/zEolwdKnj7qMwLKZ1CZ_H4bwiQdYATaTCLc9MOMi4AI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWQ4ZTk1YjM4/ZDZlODhhOGE1MzA1/YWM3NjVhOWFjZTU0/ZGEwYTM3NDU4MDc2/NmNjMzBiZGY4YTJh/YWE4ZjY0YS93d3cu/ZnJlZWFkdmljZS5j/b20v",
+            "path": "  \u203a home  \u203a companies"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/tqYWhzxCTGCcB5TyQiRvxGid6lT9mz6fGza0BlyUgaw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vZGF2djF6d2Jv/L2ltYWdlL3VwbG9h/ZC92MTc0MzQyNTYy/My92Z2VqdG1uemIz/bnB4bHI5ODJoZi5w/bmc",
+            "original": "https://res.cloudinary.com/davv1zwbo/image/upload/v1743425623/vgejtmnzb3npxlr982hf.png",
+            "logo": false
+          },
+          "age": "June 19, 2025"
+        },
+        {
+          "title": "How can I suspend GEICO car insurance? - Jerry",
+          "url": "https://jerry.ai/car-insurance/how-can-i-suspend-geico-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "This telematics program monitors your driving behavior and promotes safe driving habits. For drivers who aren\u2019t actively driving their vehicle, GEICO could potentially offer significant low-mileage savings of up to 25%. This is not available in all states.",
+          "page_age": "2025-07-15T01:21:15",
+          "profile": {
+            "name": "Jerry",
+            "url": "https://jerry.ai/car-insurance/how-can-i-suspend-geico-car-insurance/",
+            "long_name": "jerry.ai",
+            "img": "https://imgs.search.brave.com/iFOq-mr7jchIi-eyZpQn_xBl1gyydPtwbg9UjraFpDk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDQzMDI5ZWEx/OWQ1ZGEwMzBmODc1/MDA2MTQ4NzllNGRk/NmI4MzM3ODg3MTkz/ODhhM2Q5MTZjN2Yz/ZWQ4OWIwMS9qZXJy/eS5haS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "jerry.ai",
+            "hostname": "jerry.ai",
+            "favicon": "https://imgs.search.brave.com/iFOq-mr7jchIi-eyZpQn_xBl1gyydPtwbg9UjraFpDk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDQzMDI5ZWEx/OWQ1ZGEwMzBmODc1/MDA2MTQ4NzllNGRk/NmI4MzM3ODg3MTkz/ODhhM2Q5MTZjN2Yz/ZWQ4OWIwMS9qZXJy/eS5haS8",
+            "path": "  \u203a home  \u203a car insurance  \u203a how can i suspend geico car insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/1pfyoIR7mHmf_F_lNa0Ql9DPlkpP9v6iCddCgvLpxu0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9qZXJy/eS5haS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNC8xMS9EZXBv/c2l0cGhvdG9zXzU0/NDk2NjM5X1hMLTEw/MjR4NjgyLmpwZw",
+            "original": "https://jerry.ai/wp-content/uploads/2024/11/Depositphotos_54496639_XL-1024x682.jpg",
+            "logo": false
+          },
+          "age": "July 15, 2025"
+        },
+        {
+          "title": "Geico Insurance Quote - compare 2025 auto home cost coverage",
+          "url": "https://blakeinsurancegroup.com/geico-insurance-quote/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO insurance quote, compare GEICO vs other insurers, auto home renters motorcycle boat, multi-policy discounts, safe driver telematics, online quote, insurance near me, independent agent, side-by-side comparison, Arizona Alabama Texas California New York Ohio Florida North Carolina Virginia Georgia Oklahoma New Mexico Iowa Kansas Michigan Nebraska South Carolina South Dakota West Virginia. ... Loading reviews... ... Expertise: All personal and commercial line insurance, including auto, home, business, health, and life insurance.",
+          "page_age": "2025-09-04T03:23:08",
+          "profile": {
+            "name": "Blakeinsurancegroup",
+            "url": "https://blakeinsurancegroup.com/geico-insurance-quote/",
+            "long_name": "blakeinsurancegroup.com",
+            "img": "https://imgs.search.brave.com/a01NlX7BtgFhqHXaWoZLIAJaIF31fpx_LFtlcXYTxgQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvY2ZiMzRiODBm/NWExZTgwZTdhMmRl/N2ZkZDRmMTZhNmMy/ODE5ZDE2MjI2ZDBk/ZmM2NDJkMzdlMTM1/NDUyMGYyYy9ibGFr/ZWluc3VyYW5jZWdy/b3VwLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "blakeinsurancegroup.com",
+            "hostname": "blakeinsurancegroup.com",
+            "favicon": "https://imgs.search.brave.com/a01NlX7BtgFhqHXaWoZLIAJaIF31fpx_LFtlcXYTxgQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvY2ZiMzRiODBm/NWExZTgwZTdhMmRl/N2ZkZDRmMTZhNmMy/ODE5ZDE2MjI2ZDBk/ZmM2NDJkMzdlMTM1/NDUyMGYyYy9ibGFr/ZWluc3VyYW5jZWdy/b3VwLmNvbS8",
+            "path": "  \u203a geico insurance quote"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/uPtg6vL2VWi8C2Kozfn-9ovKG0N4JHb7gTpYxJSmBTA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9ibGFr/ZWluc3VyYW5jZWdy/b3VwLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNC8wMS9J/TUdfMjA0Ni1zY2Fs/ZWQuanBlZw",
+            "original": "https://blakeinsurancegroup.com/wp-content/uploads/2024/01/IMG_2046-scaled.jpeg",
+            "logo": false
+          },
+          "age": "September 4, 2025"
+        },
+        {
+          "title": "Is GEICO a Good Insurance Company? (2025 Review) | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/geico-reviews-coverage-options-and-ratings/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Use of Insurance Zebra Insurance ... \u00a9 2025 Insurance Zebra. All Rights Reserved. View Licenses. Privacy Policy. ... Our agents can help you save. 1.888.419.3716 \u00b7 Our agents can help you save. 1.888.419.3716 ... Read more below to get a quote directly from GEICO...",
+          "page_age": "2025-11-03T15:45:14",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/geico-reviews-coverage-options-and-ratings/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a geico insurance review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/tbd0UaOOvIXqi69W48G0j_FAdMT0JxNy_qR5HBkqeCs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9zdGF0/aWMvM2I5NGRmMy96/ZnJvbnQvaW1nL2l6/LXNoYXJlLWxvZ28u/cG5n",
+            "original": "https://cdn.thezebra.com/zfront/static/3b94df3/zfront/img/iz-share-logo.png",
+            "logo": true
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "r/Geico on Reddit: Attestation Form Was E-mailed To Me To Sign By GEICO",
+          "url": "https://www.reddit.com/r/Geico/comments/1ih7ec8/attestation_form_was_emailed_to_me_to_sign_by/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Put your policy number in the subject line of the email and the region nine underwriting department for Michigan will take care of it within 3 to 5 business days. Have an awesome day. (UW9@GEICO.COM) More replies ... Anyone licensed in Michigan can provide an address or email for you to send the paper copy of the attestation form",
+          "page_age": "2025-02-04T02:35:02",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Geico/comments/1ih7ec8/attestation_form_was_emailed_to_me_to_sign_by/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/geico  \u203a attestation form was e-mailed to me to sign by geico"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A5H_aQiEBuUODR0lNeU8iDfhrWUvO8oEmRGE_mcS_gM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVkZGl0c3RhdGlj/LmNvbS9pY29uLnBu/Zw",
+            "original": "https://www.redditstatic.com/icon.png",
+            "logo": true
+          },
+          "age": "February 4, 2025"
+        },
+        {
+          "title": "How to Find your GEICO Declarations Page | The Zebra",
+          "url": "https://www.thezebra.com/auto-insurance/insurance-guide/geico-declarations-page/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "View Licenses. Privacy Policy. ... Our agents can help you save. 1.888.419.3716 \u00b7 Our agents can help you save. 1.888.419.3716 ... Your declarations page displays the most important information about your insurance policy. Review our step-by-step guide to access yours from GEICO.",
+          "page_age": "2024-12-18T18:39:54",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/auto-insurance/insurance-guide/geico-declarations-page/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a cheap car insurance  \u203a car insurance guide  \u203a geico declarations page"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wLaa5ABL1FOaAK7OptGU60BZ9EYO_N4yxiZcbPpNAME/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9zdGF0/aWMvODAwZGFmYS96/ZnJvbnQvaW1nL2l6/LXNoYXJlLWxvZ28u/cG5n",
+            "original": "https://cdn.thezebra.com/zfront/static/800dafa/zfront/img/iz-share-logo.png",
+            "logo": true
+          },
+          "age": "December 18, 2024"
+        },
+        {
+          "title": "GEICO vs State Farm: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/geico-vs-state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Use of Insurance Zebra Insurance ... All Rights Reserved. View Licenses. Privacy Policy. ... Our agents can help you save. 1.888.419.3716 \u00b7 Our agents can help you save. 1.888.419.3716 ... GEICO is cheaper and has better ratings than State Farm....",
+          "page_age": "2025-11-04T10:01:19",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/geico-vs-state-farm/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a geico vs. state farm"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/l7pe_Rs2LG08JL8wb9fkYsP1H-2bu8pRCLd_IVKh1GY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9jYXItc2Fs/ZXNwZXJzb24tc2hv/d2luZy1jb3VwbGUt/Y2FyLWludGVyaW9y/LmpwZw",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/car-salesperson-showing-couple-car-interior.jpg",
+            "logo": false
+          },
+          "age": "3 days ago"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

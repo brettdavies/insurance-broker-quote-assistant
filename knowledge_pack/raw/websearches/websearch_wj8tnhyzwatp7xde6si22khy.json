@@ -1,0 +1,97 @@
+{
+  "websearch_id": "websearch_wj8tnhyzwatp7xde6si22khy",
+  "search_id": "search_btgbwhxgxvnw3mxp3vrim3yu",
+  "timestamp": "2025-11-07T12:23:48.482919",
+  "startedAt": "2025-11-07T12:23:48.482919",
+  "completedAt": "2025-11-07T12:23:50.439221",
+  "durationSeconds": 1.96,
+  "urlsDiscoveredCount": 1,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"Progressive\" \"newer home\" discount homeowners",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"Progressive\" \"newer home\" discount homeowners",
+      "show_strict_warning": false,
+      "cleaned": "Progressive newer home discount homeowners",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "Progressive newer home discount homeowners"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Progressive Home Insurance: 3.8/5 Rating Exposed",
+          "url": "https://www.riskguarder.com/progressive-home-insurance-review/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Your house\u2019s age matters too \u2013 newer homes usually get better rates because they\u2019re less likely to have that \u201csurprise electrical fire\u201d moment. They\u2019ll also look at whether you\u2019ve filed claims before (they really don\u2019t like that) and your credit score. Yeah, I know, your credit score affects everything these days. It\u2019s annoying, but that\u2019s the world we live in. Progressive throws discounts around like confetti, which is nice.",
+          "page_age": "2025-06-30T10:59:26",
+          "profile": {
+            "name": "Risk Guarder",
+            "url": "https://www.riskguarder.com/progressive-home-insurance-review/",
+            "long_name": "riskguarder.com",
+            "img": "https://imgs.search.brave.com/shnI0X-pyRiqfRwleX4fpotiwFHgi_AFwaXm8-7v5G4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzcyMDJlOWIx/MzM1ZDAxOWFmYzk0/YjZlNmFmNmI4MWMx/NWNmNzRlMDczM2U3/MTg1Njc5Nzc4YmNm/YjNjYjE0Ni93d3cu/cmlza2d1YXJkZXIu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "riskguarder.com",
+            "hostname": "www.riskguarder.com",
+            "favicon": "https://imgs.search.brave.com/shnI0X-pyRiqfRwleX4fpotiwFHgi_AFwaXm8-7v5G4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzcyMDJlOWIx/MzM1ZDAxOWFmYzk0/YjZlNmFmNmI4MWMx/NWNmNzRlMDczM2U3/MTg1Njc5Nzc4YmNm/YjNjYjE0Ni93d3cu/cmlza2d1YXJkZXIu/Y29tLw",
+            "path": "  \u203a home  \u203a homeowners insurance  \u203a progressive home insurance: 3.8/5 rating exposed"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/w0n1ZNf1Zh_unSrU4fZMFvBsQl-NWe34xVGrq_XxJ-Q/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmlza2d1YXJkZXIu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI1LzA2L1Byb2dy/ZXNzaXZlLWhvbWUt/aW5zdXJhbmNlLndl/YnA",
+            "original": "https://www.riskguarder.com/wp-content/uploads/2025/06/Progressive-home-insurance.webp",
+            "logo": false
+          },
+          "age": "June 30, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

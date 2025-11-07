@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_dgcyv2qaczmk3nqgvfnwyyr7",
+  "search_id": "search_o4yyqtg4tecrobmshcffqcu6",
+  "timestamp": "2025-11-07T12:21:43.777332",
+  "startedAt": "2025-11-07T12:21:43.777332",
+  "completedAt": "2025-11-07T12:21:45.454764",
+  "durationSeconds": 1.68,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:geico.com \"safe driver\" requirements",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:geico.com \"safe driver\" requirements",
+      "show_strict_warning": false,
+      "cleaned": "safe driver requirements",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "safe driver requirements",
+        "sites": [
+          "geico.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

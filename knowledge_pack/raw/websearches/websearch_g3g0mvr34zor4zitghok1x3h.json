@@ -1,0 +1,52 @@
+{
+  "websearch_id": "websearch_g3g0mvr34zor4zitghok1x3h",
+  "search_id": "search_injj06ej5k263pdb71zqg3is",
+  "timestamp": "2025-11-07T12:29:41.168521",
+  "startedAt": "2025-11-07T12:29:41.168521",
+  "completedAt": "2025-11-07T12:29:43.111344",
+  "durationSeconds": 1.94,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"insurance broker commission\" State Farm",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"insurance broker commission\" State Farm",
+      "show_strict_warning": false,
+      "cleaned": "insurance broker commission State Farm",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "insurance broker commission State Farm"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

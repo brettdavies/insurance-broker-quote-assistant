@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_hoq68qi0wotq9jfdx8csxb3a",
+  "search_id": "search_xqw8f4zxgcpt3gkhlwnvdlb3",
+  "timestamp": "2025-11-07T12:32:14.679702",
+  "startedAt": "2025-11-07T12:32:14.679702",
+  "completedAt": "2025-11-07T12:32:16.445565",
+  "durationSeconds": 1.77,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:tdi.texas.gov hail damage disclosure",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:tdi.texas.gov hail damage disclosure",
+      "show_strict_warning": false,
+      "cleaned": "hail damage disclosure",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "hail damage disclosure",
+        "sites": [
+          "tdi.texas.gov"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

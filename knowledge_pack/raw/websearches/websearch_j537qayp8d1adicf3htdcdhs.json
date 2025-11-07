@@ -1,0 +1,800 @@
+{
+  "websearch_id": "websearch_j537qayp8d1adicf3htdcdhs",
+  "search_id": "search_d5xaabc0t61zm6arx9j6hgog",
+  "timestamp": "2025-11-07T12:26:36.344742",
+  "startedAt": "2025-11-07T12:26:36.344742",
+  "completedAt": "2025-11-07T12:26:38.259939",
+  "durationSeconds": 1.92,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"California\" \"liability limits\" required",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"California\" \"liability limits\" required",
+      "show_strict_warning": false,
+      "cleaned": "California liability limits required",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "California liability limits required"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "New law increases California's auto insurance minimums - Los Angeles Times",
+          "url": "https://www.latimes.com/california/story/2025-01-03/new-law-increases-californias-auto-insurance-minimum",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "For the first time in over five ... requirements this year, but the change isn\u2019t expected to burn a hole in every driver\u2019s wallet. In 2022, Gov. Gavin Newsom signed Senate Bill 1107, also known as the Protect California Drivers Act, into law which increases the minimum auto liability limits...",
+          "page_age": "2025-01-04T01:14:40",
+          "profile": {
+            "name": "Los Angeles Times",
+            "url": "https://www.latimes.com/california/story/2025-01-03/new-law-increases-californias-auto-insurance-minimum",
+            "long_name": "latimes.com",
+            "img": "https://imgs.search.brave.com/EIRey0HaEsL1IV9fnxScQLjHB6lv2fJwFlos_6z5T74/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDFlNWJiNjNk/ZGIzOWIzYTU2ODgz/MDYxMDMxNTY1ZjU1/NTdmNzEzMmQwMDRk/NDZmYTc3Mzg2NTA4/ZjdjOWVlMi93d3cu/bGF0aW1lcy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "latimes.com",
+            "hostname": "www.latimes.com",
+            "favicon": "https://imgs.search.brave.com/EIRey0HaEsL1IV9fnxScQLjHB6lv2fJwFlos_6z5T74/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDFlNWJiNjNk/ZGIzOWIzYTU2ODgz/MDYxMDMxNTY1ZjU1/NTdmNzEzMmQwMDRk/NDZmYTc3Mzg2NTA4/ZjdjOWVlMi93d3cu/bGF0aW1lcy5jb20v",
+            "path": "\u203a california  \u203a story  \u203a 2025-01-03  \u203a new-law-increases-californias-auto-insurance-minimum"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/PHAAWVzAPuTemsnhXSvIYfLonWAdOUx1-krIioS86Cw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jYS10/aW1lcy5icmlnaHRz/cG90Y2RuLmNvbS9k/aW1zNC9kZWZhdWx0/L2RkYjFmZGEvMjE0/NzQ4MzY0Ny9zdHJp/cC9mYWxzZS9jcm9w/LzYwMDB4NDAwMCsw/KzAvcmVzaXplLzE0/ODZ4OTkxIS9xdWFs/aXR5Lzc1Lz91cmw9/aHR0cHMlM0ElMkYl/MkZjYWxpZm9ybmlh/LXRpbWVzLWJyaWdo/dHNwb3QuczMuYW1h/em9uYXdzLmNvbSUy/RjhhJTJGYjQlMkZh/NzdiYTViYjQ5MTRh/OTU3YjZlYmY5ZDcx/OTcyJTJGMTQ4NDY4/NS1tZS1nZXRhd2F5/LWRheS10aGFua3Nn/aXZpbmctMDQtYWpz/LmpwZw",
+            "original": "https://ca-times.brightspotcdn.com/dims4/default/ddb1fda/2147483647/strip/false/crop/6000x4000+0+0/resize/1486x991!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F8a%2Fb4%2Fa77ba5bb4914a957b6ebf9d71972%2F1484685-me-getaway-day-thanksgiving-04-ajs.jpg",
+            "logo": false
+          },
+          "age": "January 4, 2025"
+        },
+        {
+          "title": "Understanding California's new auto liability coverage law",
+          "url": "https://newsroom.statefarm.com/understanding-californias-new-auto-liability-coverage-law-10-2024/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The new minimum liability limits will increase to 30,000/60,000/15,000* beginning January 1, 2025. All existing policies with lower limits will renew at the new minimum limits on or after January 1, 2025, as mandated by this new state law.",
+          "page_age": "2024-11-07T21:19:27",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/understanding-californias-new-auto-liability-coverage-law-10-2024/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a understanding-californias-new-auto-liability-coverage-law-10-2024"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/0UJE-O596FiG_guwAIukFYF0Q_ip1yqWk63U_CJ1G08/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vdXBsb2Fk/cy8xNDQxL2M2ZDlm/NGE5LTEwMjYtNDNl/Zi1hM2M2LTBjMzg3/ZWQ4MjdhZi8xOTIw/XzU2Njg1LXByZGVz/aWduZ3JhcGhpY3Mt/Y2FsaWZvcm5pYXJl/Zm9ybS0wMy5qcGc_/MTAwMDA",
+            "original": "https://content.presspage.com/uploads/1441/c6d9f4a9-1026-43ef-a3c6-0c387ed827af/1920_56685-prdesigngraphics-californiareform-03.jpg?10000",
+            "logo": false
+          },
+          "age": "November 7, 2024"
+        },
+        {
+          "title": "California's New Minimum Auto Insurance Limits",
+          "url": "https://www.omegalaw.com/blog/californias-new-minimum-auto-insurance-limits-what-drivers-should-know/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Discover how California&#x27;s new auto insurance law, effective January 1, 2025, increases minimum liability limits to 30/60/15. Learn what it means for your coverage and premiums.",
+          "page_age": "2025-09-22T23:44:50",
+          "profile": {
+            "name": "Omega Law",
+            "url": "https://www.omegalaw.com/blog/californias-new-minimum-auto-insurance-limits-what-drivers-should-know/",
+            "long_name": "omegalaw.com",
+            "img": "https://imgs.search.brave.com/2D68g_AuRDjyQ7FO7OU3vopwbj_47Vr58VKfvVrKCp4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjA5ZjM5NzEw/Y2FjNWQzYWVmNTUx/YWE2MmM0ZGI4Mzdi/NjMxN2U5MTg4N2Ux/ZmUwM2U0OTk3ZjEz/ZTQwOGJiMS93d3cu/b21lZ2FsYXcuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "omegalaw.com",
+            "hostname": "www.omegalaw.com",
+            "favicon": "https://imgs.search.brave.com/2D68g_AuRDjyQ7FO7OU3vopwbj_47Vr58VKfvVrKCp4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjA5ZjM5NzEw/Y2FjNWQzYWVmNTUx/YWE2MmM0ZGI4Mzdi/NjMxN2U5MTg4N2Ux/ZmUwM2U0OTk3ZjEz/ZTQwOGJiMS93d3cu/b21lZ2FsYXcuY29t/Lw",
+            "path": "  \u203a home  \u203a blog  \u203a tips  \u203a california\u2019s new minimum auto insurance limits: what drivers should know"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/bmgjJJ4o4hTEPWjpEgFDVgFojqQSCr1L7ZZk1i2uz00/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/b21lZ2FsYXcuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI0/LzEyL2luc3VyYW5j/ZS1wb2xpY3kuanBn",
+            "original": "https://www.omegalaw.com/wp-content/uploads/2024/12/insurance-policy.jpg",
+            "logo": false
+          },
+          "age": "September 22, 2025"
+        },
+        {
+          "title": "California to raise auto liability coverage limits in 2025 | Insurance Business America",
+          "url": "https://www.insurancebusinessmag.com/us/news/auto-motor/california-to-raise-auto-liability-coverage-limits-in-2025-518079.aspx",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Coverage for injury or death of one person will rise to $30,000, while the limit for injury or death of all persons will increase to $60,000. Property damage coverage will triple to $15,000.",
+          "page_age": "2024-12-13T16:25:23",
+          "profile": {
+            "name": "Insurance Business America",
+            "url": "https://www.insurancebusinessmag.com/us/news/auto-motor/california-to-raise-auto-liability-coverage-limits-in-2025-518079.aspx",
+            "long_name": "insurancebusinessmag.com",
+            "img": "https://imgs.search.brave.com/wSqy0D5CYsTkoVvYpYyzSqvim_TavRxGYxAzncAes7s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2NlNGVmYjdh/YzAwNDJmMzQ2YTZm/M2QwZmJhODY3NGE1/NWYzYmRhNWY0NGFh/Mjg0NjA0ZGQyNGNk/Nzg0MTBiNC93d3cu/aW5zdXJhbmNlYnVz/aW5lc3NtYWcuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurancebusinessmag.com",
+            "hostname": "www.insurancebusinessmag.com",
+            "favicon": "https://imgs.search.brave.com/wSqy0D5CYsTkoVvYpYyzSqvim_TavRxGYxAzncAes7s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2NlNGVmYjdh/YzAwNDJmMzQ2YTZm/M2QwZmJhODY3NGE1/NWYzYmRhNWY0NGFh/Mjg0NjA0ZGQyNGNk/Nzg0MTBiNC93d3cu/aW5zdXJhbmNlYnVz/aW5lc3NtYWcuY29t/Lw",
+            "path": "  \u203a motor & fleet  \u203a california to raise auto liability coverage limits in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/2UNUSNzcQKN_uNzY8ByYicmRUJ5vUTwl_qOAyfpQyDw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4t/cmVzLmtleW1lZGlh/LmNvbS9jbXMvaW1h/Z2VzL3VzLzAwMy8w/MzU2XzYzODY5NzAz/OTE1NDYwMDg3NC5w/bmc",
+            "original": "https://cdn-res.keymedia.com/cms/images/us/003/0356_638697039154600874.png",
+            "logo": false
+          },
+          "age": "December 13, 2024"
+        },
+        {
+          "title": "What Is the Minimum Insurance Requirement in California? - ValuePenguin",
+          "url": "https://www.valuepenguin.com/auto-insurance/california/requirements",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If you have the minimum California insurance requirements, your insurance will pay up to $15,000 for damage you cause. ... To find the cheapest minimum liability insurance in California, our editors gathered quotes from nine top companies across ...",
+          "page_age": "2025-08-13T14:42:20",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/auto-insurance/california/requirements",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a auto-insurance  \u203a california  \u203a requirements"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/VesT7tP_-RbdAB8RMnyBYu-GGRDD5UL70h68ZSvznuE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2F1dG8taW5z/dXJhbmNlL2NvdXBs/ZS1ydW5uaW5nLWVy/cmFuZHM",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/auto-insurance/couple-running-errands",
+            "logo": false
+          },
+          "age": "August 13, 2025"
+        },
+        {
+          "title": "California Minimum Car Insurance 2025 | Mercury Insurance",
+          "url": "https://www.mercuryinsurance.com/resources/auto/california-minimum-car-insurance-increase-2025.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If your limits are below the new minimums \u2014 $30,000/$60,000/$15,000 \u2014 you\u2019ll need to adjust your policy or your provider may do so automatically. It\u2019s important to note that these minimum requirements only cover damages and injuries ...",
+          "page_age": "2024-12-18T00:00:00",
+          "profile": {
+            "name": "Mercury Insurance",
+            "url": "https://www.mercuryinsurance.com/resources/auto/california-minimum-car-insurance-increase-2025.html",
+            "long_name": "mercuryinsurance.com",
+            "img": "https://imgs.search.brave.com/zUEXB2Gs5n5j1PeQM9pyBYBKPsPPe4vdJpRP5ON9q8Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTQwMzM0Yzc3/NjBkYWMzM2FiZDk0/YjBmNWI2NTliMDRl/NTI5YzYzMDQxZjFl/OTgxZmMyZGYwOTll/MDY1MjE5ZS93d3cu/bWVyY3VyeWluc3Vy/YW5jZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "video",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "mercuryinsurance.com",
+            "hostname": "www.mercuryinsurance.com",
+            "favicon": "https://imgs.search.brave.com/zUEXB2Gs5n5j1PeQM9pyBYBKPsPPe4vdJpRP5ON9q8Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTQwMzM0Yzc3/NjBkYWMzM2FiZDk0/YjBmNWI2NTliMDRl/NTI5YzYzMDQxZjFl/OTgxZmMyZGYwOTll/MDY1MjE5ZS93d3cu/bWVyY3VyeWluc3Vy/YW5jZS5jb20v",
+            "path": "\u203a resources  \u203a auto  \u203a california-minimum-car-insurance-increase-2025.html"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YyddG7fSbHpzTEqqS-eScDI3oMsrfFGRHS2HV6hq6rM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5mZnljZG4ubmV0/L3VzL21lcmN1cnkt/aW5zdXJhbmNlLzVQ/cGt6U1VYQ3NkVWlp/NnlqQjNFLmpwZz9t/b2Q9djEvb3V0cHV0/PXdlYnAvY292ZXI9/MzoyL3Jlc2l6ZT0z/NTAvcXVhbGl0eT03/MA",
+            "original": "https://media.ffycdn.net/us/mercury-insurance/5PpkzSUXCsdUii6yjB3E.jpg?mod=v1/output=webp/cover=3:2/resize=350/quality=70",
+            "logo": false
+          },
+          "age": "December 18, 2024"
+        },
+        {
+          "title": "California Insurance Policy Limits Have Increased in January: What ...",
+          "url": "https://www.rmdlaw.com/personal-injury-blog/california-insurance-policy-limits/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "This update represents a significant ... Bill 1107 (SB 1107) includes a provision that increases the minimum required liability insurance coverage for drivers starting January 1, 2035....",
+          "page_age": "2025-01-22T09:38:00",
+          "profile": {
+            "name": "RMD Law",
+            "url": "https://www.rmdlaw.com/personal-injury-blog/california-insurance-policy-limits/",
+            "long_name": "rmdlaw.com",
+            "img": "https://imgs.search.brave.com/AxUZ_Wa2i3gFSv1tFUJ6bPuMdf7Lx3Grj4ZvW6eA-Sc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTJmNmVlMDli/NjhlZTcxYTBiOWRk/Mjc5YmU0ZmQ0NzBl/NjlmYjAwM2YxNGY4/OWZkM2M2YWI1YjJm/ZWE3NTZiMy93d3cu/cm1kbGF3LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "rmdlaw.com",
+            "hostname": "www.rmdlaw.com",
+            "favicon": "https://imgs.search.brave.com/AxUZ_Wa2i3gFSv1tFUJ6bPuMdf7Lx3Grj4ZvW6eA-Sc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTJmNmVlMDli/NjhlZTcxYTBiOWRk/Mjc5YmU0ZmQ0NzBl/NjlmYjAwM2YxNGY4/OWZkM2M2YWI1YjJm/ZWE3NTZiMy93d3cu/cm1kbGF3LmNvbS8",
+            "path": "\u203a personal-injury-blog  \u203a california-insurance-policy-limits"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/pRJzEkAsTwWHJ3j33VCiE8gv2ubUEEqxYnaJ8dnDgw8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cm1kbGF3LmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyNS8w/MS9CYW5uZXJfQ2Fs/aWZvcm5pYS1JbnN1/cmFuY2UtUG9saWN5/LUxpbWl0cy1IYXZl/LUluY3JlYXNlZC1p/bi1KYW51YXJ5LVdo/YXQtWW91LU5lZWQt/dG8tS25vdy5wbmc",
+            "original": "https://www.rmdlaw.com/wp-content/uploads/2025/01/Banner_California-Insurance-Policy-Limits-Have-Increased-in-January-What-You-Need-to-Know.png",
+            "logo": false
+          },
+          "age": "January 22, 2025"
+        },
+        {
+          "title": "California Raises Auto Liability Insurance Limits in 2023",
+          "url": "https://www.injury-attorneys.com/blog/new-law-raises-california-auto-liability-insurance-limits/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "California\u2019s minimum auto liability insurance requirements increased starting Jan. 1, 2025. Here\u2019s what you need to know about the changes and what they mean for you. Auto liability limits in California increased due to Senate Bill 1107, which requires all drivers registering their cars ...",
+          "page_age": "2025-02-05T02:49:54",
+          "profile": {
+            "name": "Demas Law Group",
+            "url": "https://www.injury-attorneys.com/blog/new-law-raises-california-auto-liability-insurance-limits/",
+            "long_name": "injury-attorneys.com",
+            "img": "https://imgs.search.brave.com/GtFqcfpv_LFzM_NtbfKHOYqZQs_KyHeyPWaU-lnn-yc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2ZkNTgwYjJk/ZGNlNmFlYmJlYjUz/ODlkODFhZWQ2ZjI5/NjA1MTcyODc3MTI2/YjM2Y2FiZjdmNjZl/MWE0MDM0MC93d3cu/aW5qdXJ5LWF0dG9y/bmV5cy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "video",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "injury-attorneys.com",
+            "hostname": "www.injury-attorneys.com",
+            "favicon": "https://imgs.search.brave.com/GtFqcfpv_LFzM_NtbfKHOYqZQs_KyHeyPWaU-lnn-yc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2ZkNTgwYjJk/ZGNlNmFlYmJlYjUz/ODlkODFhZWQ2ZjI5/NjA1MTcyODc3MTI2/YjM2Y2FiZjdmNjZl/MWE0MDM0MC93d3cu/aW5qdXJ5LWF0dG9y/bmV5cy5jb20v",
+            "path": "  \u203a blog  \u203a new law raises california auto liability insurance limits"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/TMx9b06dbWSlTEscezfruKt7Dxrm-IH8y0ZpiB3JfaM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5qdXJ5LWF0dG9y/bmV5cy5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjUvMDIv/QXV0by1MaWFiaWxp/dHktSW5zdXJhbmNl/LUxpbWl0cy0zLnBu/Zw",
+            "original": "https://www.injury-attorneys.com/wp-content/uploads/2025/02/Auto-Liability-Insurance-Limits-3.png",
+            "logo": false
+          },
+          "age": "February 5, 2025"
+        },
+        {
+          "title": "California\u2019s Auto Insurance Limits Set to Increase in 2025 | AIS Blog",
+          "url": "https://blog.aisinsurance.com/2023/08/30/california-auto-insurance-limits-2025/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Before we discuss upcoming changes, let\u2019s first review California\u2019s current auto insurance limits. California currently requires all motorists in the state to carry liability insurance with minimum limits of 15/30/5.",
+          "page_age": "2024-11-07T21:55:20",
+          "profile": {
+            "name": "Aisinsurance",
+            "url": "https://blog.aisinsurance.com/2023/08/30/california-auto-insurance-limits-2025/",
+            "long_name": "blog.aisinsurance.com",
+            "img": "https://imgs.search.brave.com/yLFvrNoEUCHADiZo8VbubNDsECCaRTx7q0_kFkJf2hA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWYzYzQxMGJl/YTg1YWY5MWM0YTAw/MTU3MDIzNjRjNDA2/NzMwMmNjYzYyZWE2/ZDZjZDZmMDc4NmJl/NzkxMmIyNi9ibG9n/LmFpc2luc3VyYW5j/ZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "blog.aisinsurance.com",
+            "hostname": "blog.aisinsurance.com",
+            "favicon": "https://imgs.search.brave.com/yLFvrNoEUCHADiZo8VbubNDsECCaRTx7q0_kFkJf2hA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWYzYzQxMGJl/YTg1YWY5MWM0YTAw/MTU3MDIzNjRjNDA2/NzMwMmNjYzYyZWE2/ZDZjZDZmMDc4NmJl/NzkxMmIyNi9ibG9n/LmFpc2luc3VyYW5j/ZS5jb20v",
+            "path": "  \u203a home  \u203a california\u2019s auto insurance limits set to increase in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/fEQU948BsKX0k-bPMYG0DKuIbBezNfH_-3IyMXz9WVs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9ibG9n/LmFpc2luc3VyYW5j/ZS5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjMvMDgvY2Fs/aWZvcm5pYXMtYXV0/by1pbnN1cmFuY2Ut/bGltaXRzLTIwMjUt/ZmVhdHVyZS5qcGc",
+            "original": "https://blog.aisinsurance.com/wp-content/uploads/2023/08/californias-auto-insurance-limits-2025-feature.jpg",
+            "logo": false
+          },
+          "age": "November 7, 2024"
+        },
+        {
+          "title": "New Minimum Liability Insurance Limits Coming to California: What You Need to Know \u2013 Business Insurance Coverage",
+          "url": "https://www.paperless-insurance.com/new-minimum-liability-insurance-limits-coming-to-california-what-you-need-to-know/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Currently, California law mandates that vehicle owners carry a minimum liability insurance of: $15,000 per person and $30,000 per accident for bodily injury. $5,000 per accident for property damage. These limits are often expressed as 15/30/5.",
+          "page_age": "2024-11-07T20:30:42",
+          "profile": {
+            "name": "Paperless-insurance",
+            "url": "https://www.paperless-insurance.com/new-minimum-liability-insurance-limits-coming-to-california-what-you-need-to-know/",
+            "long_name": "paperless-insurance.com",
+            "img": "https://imgs.search.brave.com/RKD8K_AwCc6YyY1cTkS0rOKveBFfzKcu_VWahsPNBio/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDdiMjliOTk4/Y2VhZmVkZjE1YzU5/OWJjNDBhMDU2NjFh/MWRmZTU0ZmQ3OWI2/OGZhMTk5NWVhZDdk/OWVlZmJlZS93d3cu/cGFwZXJsZXNzLWlu/c3VyYW5jZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "paperless-insurance.com",
+            "hostname": "www.paperless-insurance.com",
+            "favicon": "https://imgs.search.brave.com/RKD8K_AwCc6YyY1cTkS0rOKveBFfzKcu_VWahsPNBio/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDdiMjliOTk4/Y2VhZmVkZjE1YzU5/OWJjNDBhMDU2NjFh/MWRmZTU0ZmQ3OWI2/OGZhMTk5NWVhZDdk/OWVlZmJlZS93d3cu/cGFwZXJsZXNzLWlu/c3VyYW5jZS5jb20v",
+            "path": "\u203a new-minimum-liability-insurance-limits-coming-to-california-what-you-need-to-know"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/i7p8cbI8RflVAVRl-9aTSEX5E0Rbka4UsoiQOkAgd1Q/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cGFwZXJsZXNzLWlu/c3VyYW5jZS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjQv/MTEvR2V0LVJlYWR5/LWZvci0yMDI1Xy1D/YWxpZm9ybmlhcy1O/ZXctQXV0by1JbnN1/cmFuY2UtUmVxdWly/ZW1lbnRzLnBuZw",
+            "original": "https://www.paperless-insurance.com/wp-content/uploads/2024/11/Get-Ready-for-2025_-Californias-New-Auto-Insurance-Requirements.png",
+            "logo": false
+          },
+          "age": "November 7, 2024"
+        },
+        {
+          "title": "What Is the Minimum Insurance Requirement in California? | Los Angeles Personal Injury Lawyers Blog | April 21, 2025",
+          "url": "https://www.rosenstockandazran.com/blog/what-is-the-minimum-insurance-requirement-in-california/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "An example would be the case where the policyholder has Uninsured Motorist coverage with a policy limit of $100,000, their injuries resulting from the accident have a value of $200,000, and the at-fault driver has a bodily injury liability policy limit of $30,000. By definition, the at fault driver Is Underinsured. In that case, by operation of California law, Including California Insurance Code Section 11580.2, coupled with the Uninsured/Underinsured Motorist provisions of the policy of insurance, UM coverage converts into UIM coverage.",
+          "page_age": "2025-08-12T20:11:14",
+          "profile": {
+            "name": "Rosenstockandazran",
+            "url": "https://www.rosenstockandazran.com/blog/what-is-the-minimum-insurance-requirement-in-california/",
+            "long_name": "rosenstockandazran.com",
+            "img": "https://imgs.search.brave.com/qXgpv7xw8sg3VVbv3uydJHTO9FVNzhyyHOxpIa4lUwg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWZlZTBiNzcx/YWI5ODAzMzMxOGVl/OGI5MzA3ZDlhNzRh/MWEzYmQyM2Y3Mjc2/ZTgzMDhlNGVjNmE0/Y2MwZDlkMi93d3cu/cm9zZW5zdG9ja2Fu/ZGF6cmFuLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "rosenstockandazran.com",
+            "hostname": "www.rosenstockandazran.com",
+            "favicon": "https://imgs.search.brave.com/qXgpv7xw8sg3VVbv3uydJHTO9FVNzhyyHOxpIa4lUwg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWZlZTBiNzcx/YWI5ODAzMzMxOGVl/OGI5MzA3ZDlhNzRh/MWEzYmQyM2Y3Mjc2/ZTgzMDhlNGVjNmE0/Y2MwZDlkMi93d3cu/cm9zZW5zdG9ja2Fu/ZGF6cmFuLmNvbS8",
+            "path": "  \u203a home  \u203a what is the minimum insurance requirement in california?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ZANLzOwilxzADcjOIB-1G9lF3CQEaiGblSPhBejqKXU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cm9zZW5zdG9ja2Fu/ZGF6cmFuLmNvbS9z/dGF0aWMvMjAyNS8w/Ny9pbWFnZS0xLnBu/Zw",
+            "original": "https://www.rosenstockandazran.com/static/2025/07/image-1.png",
+            "logo": false
+          },
+          "age": "August 12, 2025"
+        },
+        {
+          "title": "California's New Auto Insurance Limits [2025 Update] | West Coast Trial Lawyers",
+          "url": "https://westcoasttriallawyers.com/new-california-auto-insurance-law-2025",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The current minimum liability limits include: ... In addition, all California drivers must have proof of insurance to show that they have satisfied the state\u2019s minimum liability requirements.",
+          "page_age": "2025-09-15T17:59:15",
+          "profile": {
+            "name": "West Coast Trial Lawyers",
+            "url": "https://westcoasttriallawyers.com/new-california-auto-insurance-law-2025",
+            "long_name": "westcoasttriallawyers.com",
+            "img": "https://imgs.search.brave.com/vrREr6ni6zW2szufVC0YZi5OWTpao1-0NnjK7cgs4U8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTAzOGIyOTM5/ZDY0NDNkYTFmYmVl/OGY1Zjg1NmZjODY4/ZjUzYzgyY2M1MjRi/MzQ2YTMzYzhmZmFk/YzY0ZDdjNy93ZXN0/Y29hc3R0cmlhbGxh/d3llcnMuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "westcoasttriallawyers.com",
+            "hostname": "westcoasttriallawyers.com",
+            "favicon": "https://imgs.search.brave.com/vrREr6ni6zW2szufVC0YZi5OWTpao1-0NnjK7cgs4U8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTAzOGIyOTM5/ZDY0NDNkYTFmYmVl/OGY1Zjg1NmZjODY4/ZjUzYzgyY2M1MjRi/MzQ2YTMzYzhmZmFk/YzY0ZDdjNy93ZXN0/Y29hc3R0cmlhbGxh/d3llcnMuY29tLw",
+            "path": "  \u203a california\u2019s new auto insurance limits [2025 update]"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/svIA64oka0g9cZCIZjG7Ny2hSF1l8AVbz6Aqk6dj93E/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93ZXN0/Y29hc3R0cmlhbGxh/d3llcnMuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI0LzEx/L05ldy1DYWxpZm9y/bmlhLUNhci1JbnN1/cmFuY2UtTGF3LUJs/b2cuanBn",
+            "original": "https://westcoasttriallawyers.com/wp-content/uploads/2024/11/New-California-Car-Insurance-Law-Blog.jpg",
+            "logo": false
+          },
+          "age": "September 15, 2025"
+        },
+        {
+          "title": "California Auto Insurance Requirements - Walton Injury Law",
+          "url": "https://waltoninjurylaw.com/blog/auto-insurance-requirements-in-california/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The minimum liability coverage required in California is: ... This basic coverage is often written as 30/60/15 in insurance policies, referencing the limits on liability. While these are the minimum requirements, it\u2019s important to know that ...",
+          "page_age": "2025-07-02T17:00:00",
+          "profile": {
+            "name": "Walton Injury Law",
+            "url": "https://waltoninjurylaw.com/blog/auto-insurance-requirements-in-california/",
+            "long_name": "waltoninjurylaw.com",
+            "img": "https://imgs.search.brave.com/Ec6zELAYdfy550xTkJ4kuVIsp16RWN3q85Nw6aW2GmY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIzY2JjOTNl/MjBmZmMzYTM3NjI3/YzViOTM3ZDk0ZmRj/ZDc4MTg4YWJhOTE4/MDQ4ZWFhODBlZjIy/OTY1OGMyZi93YWx0/b25pbmp1cnlsYXcu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "waltoninjurylaw.com",
+            "hostname": "waltoninjurylaw.com",
+            "favicon": "https://imgs.search.brave.com/Ec6zELAYdfy550xTkJ4kuVIsp16RWN3q85Nw6aW2GmY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIzY2JjOTNl/MjBmZmMzYTM3NjI3/YzViOTM3ZDk0ZmRj/ZDc4MTg4YWJhOTE4/MDQ4ZWFhODBlZjIy/OTY1OGMyZi93YWx0/b25pbmp1cnlsYXcu/Y29tLw",
+            "path": "  \u203a home  \u203a blog  \u203a california auto insurance requirements"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/KZRMR4myelkohlDyXGY5OitsDinwmM0-j9JZoY3OA5o/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93YWx0/b25pbmp1cnlsYXcu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIxLzA1L0NhbGlm/b3JuaWEtQXV0by1J/bnN1cmFuY2UtUmVx/dWlyZW1lbnRzLmpw/Zw",
+            "original": "https://waltoninjurylaw.com/wp-content/uploads/2021/05/California-Auto-Insurance-Requirements.jpg",
+            "logo": false
+          },
+          "age": "July 2, 2025"
+        },
+        {
+          "title": "Four States See Increase in Auto Insurance Liability Limits in 2025 - Carrier Management",
+          "url": "https://www.carriermanagement.com/news/2025/03/03/272456.htm",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Senate Bill 1107 went into effect on January 1st, 2025, increasing the minimum liability insurance drivers to: $30,000 for bodily injury or death per person $60,000 for bodily injury or death per accident $15,000 for property damage per accident ...",
+          "page_age": "2025-03-03T17:06:03",
+          "profile": {
+            "name": "Carrier Management",
+            "url": "https://www.carriermanagement.com/news/2025/03/03/272456.htm",
+            "long_name": "carriermanagement.com",
+            "img": "https://imgs.search.brave.com/-eMdg-lz3aGqn0lzer-GPng2sHAwtIrj7XCCNcZmLgY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjg3NDk4ZGE0/ZmIxNmU2OWE1NTMw/YTNmY2JkNGIwMWYw/NDUwMjA0MmFmM2E2/ZGNjZGJhYTI2ZTM2/MzMzM2IzOS93d3cu/Y2Fycmllcm1hbmFn/ZW1lbnQuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "carriermanagement.com",
+            "hostname": "www.carriermanagement.com",
+            "favicon": "https://imgs.search.brave.com/-eMdg-lz3aGqn0lzer-GPng2sHAwtIrj7XCCNcZmLgY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjg3NDk4ZGE0/ZmIxNmU2OWE1NTMw/YTNmY2JkNGIwMWYw/NDUwMjA0MmFmM2E2/ZGNjZGJhYTI2ZTM2/MzMzM2IzOS93d3cu/Y2Fycmllcm1hbmFn/ZW1lbnQuY29tLw",
+            "path": "\u203a news  \u203a 2025  \u203a 03  \u203a 03  \u203a 272456.htm"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/WdJ_nCZxWo6gcUKYMe7fokL6M1bAlb3hin-U0ThxAsc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2Fycmllcm1hbmFn/ZW1lbnQuY29tL2Fz/c2V0cy9tYW4tcGxl/YWRzLWd1aWx0eS5q/cGc",
+            "original": "https://www.carriermanagement.com/assets/man-pleads-guilty.jpg",
+            "logo": false
+          },
+          "age": "March 3, 2025"
+        },
+        {
+          "title": "What Is California's New Auto Liability Coverage Law?",
+          "url": "https://jassimlaw.com/what-californias-new-auto-liability-coverage-law/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "California\u2019s auto insurance requirements are changing in 2025, marking a significant shift in liability coverage minimums for drivers. Under the new law, minimum coverage limits for bodily injury and property damage will increase, providing greater financial protection in accidents.",
+          "page_age": "2025-03-12T16:08:58",
+          "profile": {
+            "name": "Jassim Law",
+            "url": "https://jassimlaw.com/what-californias-new-auto-liability-coverage-law/",
+            "long_name": "jassimlaw.com",
+            "img": "https://imgs.search.brave.com/03-Ih80gVsCp7l-Xxfw7GCww20RWekXuf9peDgbx0t8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODBiZDRiNmRm/OTZhNGU4ODNlYjA3/MjhlMzRmMWI0NmEw/M2FjMGFkYTYzNzg4/NzQ4NThkYjMyMmY3/NzNhODhjYy9qYXNz/aW1sYXcuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "jassimlaw.com",
+            "hostname": "jassimlaw.com",
+            "favicon": "https://imgs.search.brave.com/03-Ih80gVsCp7l-Xxfw7GCww20RWekXuf9peDgbx0t8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODBiZDRiNmRm/OTZhNGU4ODNlYjA3/MjhlMzRmMWI0NmEw/M2FjMGFkYTYzNzg4/NzQ4NThkYjMyMmY3/NzNhODhjYy9qYXNz/aW1sYXcuY29tLw",
+            "path": "  \u203a home  \u203a what is california\u2019s new auto liability coverage law?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Z3oAesC4CU9CkAWHB1RIFEa_4bvnYPQfX_uoVzbaI9Q/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9qYXNz/aW1sYXcuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI0LzEy/L0xvcy1BbmdlbGVz/LmpwZw",
+            "original": "https://jassimlaw.com/wp-content/uploads/2024/12/Los-Angeles.jpg",
+            "logo": false
+          },
+          "age": "March 12, 2025"
+        },
+        {
+          "title": "California Car Insurance: Liability Limits Increase 2025 | SmartFinancial",
+          "url": "https://smartfinancial.com/california-liability-limits-increase",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Formerly, liability limits were 15/3/5 and increased in 2025 to 30/60/15: ... Or, in lieu of coverage: $75,000 cash deposit with the DMV as proof of minimum financial responsibility (formerly $35,000).",
+          "page_age": "2025-01-02T13:55:02",
+          "profile": {
+            "name": "SmartFinancial",
+            "url": "https://smartfinancial.com/california-liability-limits-increase",
+            "long_name": "smartfinancial.com",
+            "img": "https://imgs.search.brave.com/6X9avbO9L6Zr7NVzDwMT3gC0KUh2fwtmq4HFdo0d1Nw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjQ5ODE0NTRi/NTUxYjU4NjIyZjli/NTM1MjFjNzcwN2Vk/NmJjZDY5OGFiZGNk/MzE0MWI0YjVhYTVi/MjlhNGJiNS9zbWFy/dGZpbmFuY2lhbC5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "smartfinancial.com",
+            "hostname": "smartfinancial.com",
+            "favicon": "https://imgs.search.brave.com/6X9avbO9L6Zr7NVzDwMT3gC0KUh2fwtmq4HFdo0d1Nw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjQ5ODE0NTRi/NTUxYjU4NjIyZjli/NTM1MjFjNzcwN2Vk/NmJjZDY5OGFiZGNk/MzE0MWI0YjVhYTVi/MjlhNGJiNS9zbWFy/dGZpbmFuY2lhbC5j/b20v",
+            "path": "  \u203a insurance quotes  \u203a auto  \u203a california liability limits increase"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Lkk4Asu8t-aG7LU2F0_lB4N-uSg6yvVPcrm-uj0GreU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zMy5h/bWF6b25hd3MuY29t/L2Fzc2V0cy5zbWFy/dGZpbmFuY2lhbC91/cGxvYWRzLzE3MzU4/NDk4NTAxNjVfY2Fs/aWZvcm5pYS1saWFi/aWxpdHktbGltaXRz/LWluY3JlYXNlLmpw/Zw",
+            "original": "https://s3.amazonaws.com/assets.smartfinancial/uploads/1735849850165_california-liability-limits-increase.jpg",
+            "logo": false
+          },
+          "age": "January 2, 2025"
+        },
+        {
+          "title": "California changed its auto insurance requirements in 2025: What you need to know",
+          "url": "https://www.carinsurance.com/trends-and-insights/california-auto-insurance-law-changes-in-2025/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "All California drivers must carry current car insurance with the state minimum liability limits, increasing to $30,000, $60,000 and $15,000 at the start of the new year. Since the new requirements automatically update for all policyholders on ...",
+          "page_age": "2025-03-18T00:00:00",
+          "profile": {
+            "name": "Carinsurance.com",
+            "url": "https://www.carinsurance.com/trends-and-insights/california-auto-insurance-law-changes-in-2025/",
+            "long_name": "carinsurance.com",
+            "img": "https://imgs.search.brave.com/KCetfn_EHIlwz5sy6dTvSdGjOen9Qf_QsSICK4hYUH8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDdmYWUzNjM0/MGU0ODEwNzI3ZWVj/NjEwYmQ2MmE5NTZh/N2E2NDRhODA2YjRj/NjBlNzc2OTBiYzkz/YzA3ZGQzOC93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "carinsurance.com",
+            "hostname": "www.carinsurance.com",
+            "favicon": "https://imgs.search.brave.com/KCetfn_EHIlwz5sy6dTvSdGjOen9Qf_QsSICK4hYUH8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDdmYWUzNjM0/MGU0ODEwNzI3ZWVj/NjEwYmQ2MmE5NTZh/N2E2NDRhODA2YjRj/NjBlNzc2OTBiYzkz/YzA3ZGQzOC93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS8",
+            "path": "  \u203a car insurance homepage  \u203a trends and insights  \u203a california changed its auto insurance requirements in 2025: what you need to know"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/FFxI1ITUerV5koW49f4CQojHIBLt7A1f12upoNvcWs0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS91cGxvYWRl/ZGZpbGVzL2NhbGlm/b3JuaWEtYXV0by1p/bnN1cmFuY2UtbGF3/LWNoYW5nZXMtaW4t/MjAyNS0xLmpwZw",
+            "original": "https://www.carinsurance.com/uploadedfiles/california-auto-insurance-law-changes-in-2025-1.jpg",
+            "logo": false
+          },
+          "age": "March 18, 2025"
+        },
+        {
+          "title": "California's Upcoming Changes: Auto Insurance Limits Set to Rise in 2025",
+          "url": "https://jackstoneinsurance.com/blog/california-auto-insurance-limits-rise-2025/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Starting in 2025, California will ... liability limits are set at $15,000 for injury or death of one person, $30,000 for injury or death of more than one person, and $5,000 for property damage....",
+          "page_age": "2024-11-28T11:20:48",
+          "profile": {
+            "name": "Jackstoneinsurance",
+            "url": "https://jackstoneinsurance.com/blog/california-auto-insurance-limits-rise-2025/",
+            "long_name": "jackstoneinsurance.com",
+            "img": "https://imgs.search.brave.com/VFMfMU9bEn-CC_pJiLTPd6enl-5TJD0-e6a_SUhW3Oc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjJlNDJlN2Ey/ODJjN2IwOWE3ZjU0/YjAzZGQwN2UyZGNk/YmNhZGRkM2M1ODQ2/YjY0NzEzZGYxNzIz/OTYzMDc4OC9qYWNr/c3RvbmVpbnN1cmFu/Y2UuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "jackstoneinsurance.com",
+            "hostname": "jackstoneinsurance.com",
+            "favicon": "https://imgs.search.brave.com/VFMfMU9bEn-CC_pJiLTPd6enl-5TJD0-e6a_SUhW3Oc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjJlNDJlN2Ey/ODJjN2IwOWE3ZjU0/YjAzZGQwN2UyZGNk/YmNhZGRkM2M1ODQ2/YjY0NzEzZGYxNzIz/OTYzMDc4OC9qYWNr/c3RvbmVpbnN1cmFu/Y2UuY29tLw",
+            "path": "\u203a blog  \u203a california-auto-insurance-limits-rise-2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/qrjQUa9W7j_QqUs5HxLU70QKdNOOxXMGjKzGFvhen80/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/c3RyYXRvc3BoZXJl/d2Vic2l0ZXMuY29t/L3NvdXJjZS9zaXRl/cy82NzZlMzNhNC03/NzEzLTQwYjEtODBj/ZS05NTMwY2U0NGVj/ZGIvaW1hZ2VzL2Nh/bGlmb3JuaWEtcy11/cGNvbWluZy1jaGFu/Z2VzLWF1dG8taW5z/dXJhbmNlLWxpbWl0/cy1zZXQtdG8tcmlz/ZS1pbi0yMDI1Lmpw/Zz92PTI4MjAyMDI0/MTEyMDQ4MDM4NDM1/Ng",
+            "original": "https://cdn.stratospherewebsites.com/source/sites/676e33a4-7713-40b1-80ce-9530ce44ecdb/images/california-s-upcoming-changes-auto-insurance-limits-set-to-rise-in-2025.jpg?v=282020241120480384356",
+            "logo": false
+          },
+          "age": "November 28, 2024"
+        },
+        {
+          "title": "California to Increase Auto Insurance Requirements in 2025",
+          "url": "https://blog.aisinsurance.com/2024/11/11/new-california-auto-insurance-limits/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In fact, with its current limits, ... California drivers are required by law to carry liability auto insurance with the minimum limits of 15/30/5, which means:...",
+          "page_age": "2024-12-04T00:20:25",
+          "profile": {
+            "name": "Aisinsurance",
+            "url": "https://blog.aisinsurance.com/2024/11/11/new-california-auto-insurance-limits/",
+            "long_name": "blog.aisinsurance.com",
+            "img": "https://imgs.search.brave.com/yLFvrNoEUCHADiZo8VbubNDsECCaRTx7q0_kFkJf2hA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWYzYzQxMGJl/YTg1YWY5MWM0YTAw/MTU3MDIzNjRjNDA2/NzMwMmNjYzYyZWE2/ZDZjZDZmMDc4NmJl/NzkxMmIyNi9ibG9n/LmFpc2luc3VyYW5j/ZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "blog.aisinsurance.com",
+            "hostname": "blog.aisinsurance.com",
+            "favicon": "https://imgs.search.brave.com/yLFvrNoEUCHADiZo8VbubNDsECCaRTx7q0_kFkJf2hA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWYzYzQxMGJl/YTg1YWY5MWM0YTAw/MTU3MDIzNjRjNDA2/NzMwMmNjYzYyZWE2/ZDZjZDZmMDc4NmJl/NzkxMmIyNi9ibG9n/LmFpc2luc3VyYW5j/ZS5jb20v",
+            "path": "  \u203a home  \u203a understanding how california will increase its auto insurance limits in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/qDKm2izCS1u-HrwV--yoqbC10F5oATcp-y-7P-F5bzA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9ibG9n/LmFpc2luc3VyYW5j/ZS5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjQvMTEvQ2Fs/aWZvcm5pYS1BdXRv/LUluc3VyYW5jZS1M/aW1pdHMtZmVhdHVy/ZS5qcGc",
+            "original": "https://blog.aisinsurance.com/wp-content/uploads/2024/11/California-Auto-Insurance-Limits-feature.jpg",
+            "logo": false
+          },
+          "age": "December 4, 2024"
+        },
+        {
+          "title": "California's New Auto Insurance Minimums - The Zwerdling Law Firm, LLP",
+          "url": "https://zwerdlinglaw.com/blog/californias-new-auto-insurance-minimums/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "California requires all drivers to carry auto liability insurance in order to legally drive within the state. Starting January 1, 2025, California drivers will see a significant change in their minimum auto liability insurance requirements. For the first time in over 56 years, the state has updated its mandatory coverage limits to better protect drivers [\u2026]",
+          "page_age": "2025-01-13T17:38:39",
+          "profile": {
+            "name": "Zwerdlinglaw",
+            "url": "https://zwerdlinglaw.com/blog/californias-new-auto-insurance-minimums/",
+            "long_name": "zwerdlinglaw.com",
+            "img": "https://imgs.search.brave.com/9uaEkixdOReXYhDwgxLePaPShb9HGzdtwsb36L4ABJo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTNkOTA2ZDZi/ZjQ3NGU0NmY5ZGU3/NmVjYWU3MDJhZmFi/MTY4ZDgzYmUyOTA3/MzI1ZDVhMDkyMmI0/MmRlZjcwYy96d2Vy/ZGxpbmdsYXcuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "zwerdlinglaw.com",
+            "hostname": "zwerdlinglaw.com",
+            "favicon": "https://imgs.search.brave.com/9uaEkixdOReXYhDwgxLePaPShb9HGzdtwsb36L4ABJo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTNkOTA2ZDZi/ZjQ3NGU0NmY5ZGU3/NmVjYWU3MDJhZmFi/MTY4ZDgzYmUyOTA3/MzI1ZDVhMDkyMmI0/MmRlZjcwYy96d2Vy/ZGxpbmdsYXcuY29t/Lw",
+            "path": "  \u203a home  \u203a california\u2019s new auto insurance minimums"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/hEx-FPWxgcL8Fob4VpWxCSdfYrBY1d5UaDeMgvlE4Xw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly96d2Vy/ZGxpbmdsYXcuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIx/LzExL3RpbS1tb3Nz/aG9sZGVyLVRrMjJW/ck4xeUdFLXVuc3Bs/YXNoLmpwZw",
+            "original": "https://zwerdlinglaw.com/wp-content/uploads/2021/11/tim-mossholder-Tk22VrN1yGE-unsplash.jpg",
+            "logo": false
+          },
+          "age": "January 13, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

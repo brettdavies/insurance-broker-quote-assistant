@@ -1,0 +1,52 @@
+{
+  "websearch_id": "websearch_czthv6j06x3rcsv9uh8rf9re",
+  "search_id": "search_f67dg1k5crxey4tdntk5w7ia",
+  "timestamp": "2025-11-07T12:32:09.031873",
+  "startedAt": "2025-11-07T12:32:09.031873",
+  "completedAt": "2025-11-07T12:32:10.977256",
+  "durationSeconds": 1.95,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "filetype:pdf New York insurance requirements consumer",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "filetype:pdf New York insurance requirements consumer",
+      "show_strict_warning": false,
+      "cleaned": "New York insurance requirements consumer pdf",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "New York insurance requirements consumer pdf"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

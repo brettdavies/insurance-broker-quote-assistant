@@ -1,0 +1,442 @@
+{
+  "websearch_id": "websearch_aop3zla8mf8h5jmpe26jlfsx",
+  "search_id": "search_rsa5qe2s3q51n866t62elhq0",
+  "timestamp": "2025-11-07T12:20:23.444400",
+  "startedAt": "2025-11-07T12:20:23.444400",
+  "completedAt": "2025-11-07T12:20:25.455868",
+  "durationSeconds": 2.01,
+  "urlsDiscoveredCount": 9,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"Progressive\" \"operates in\" states",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"Progressive\" \"operates in\" states",
+      "show_strict_warning": false,
+      "cleaned": "Progressive operates in states",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "Progressive operates in states"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Progressive Corporation - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Progressive_Corporation",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "It also provides insurance-related services, primarily providing policy issuance and claims adjusting services in 25 states for Commercial Auto Insurance Procedures/Plans. Progressive is the second-largest auto insurer in the United States as of the 2023 fiscal year, with 15.2% of the market, behind State Farm&#x27;s share of 18.3%. Progressive primarily offers its services through the internet, by telephone or through independent insurance agents.",
+          "page_age": "2025-09-21T19:54:34",
+          "profile": {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Progressive_Corporation",
+            "long_name": "en.wikipedia.org",
+            "img": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "deep_results": {
+            "buttons": [
+              {
+                "type": "button_result",
+                "title": "History",
+                "url": "https://en.wikipedia.org/wiki/Progressive_Corporation#History"
+              },
+              {
+                "type": "button_result",
+                "title": "Segments",
+                "url": "https://en.wikipedia.org/wiki/Progressive_Corporation#Segments"
+              },
+              {
+                "type": "button_result",
+                "title": "Industry information",
+                "url": "https://en.wikipedia.org/wiki/Progressive_Corporation#Industry_information"
+              },
+              {
+                "type": "button_result",
+                "title": "Crash response",
+                "url": "https://en.wikipedia.org/wiki/Progressive_Corporation#Crash_response"
+              },
+              {
+                "type": "button_result",
+                "title": "Advertising",
+                "url": "https://en.wikipedia.org/wiki/Progressive_Corporation#Advertising"
+              },
+              {
+                "type": "button_result",
+                "title": "Products",
+                "url": "https://en.wikipedia.org/wiki/Progressive_Corporation#Products"
+              },
+              {
+                "type": "button_result",
+                "title": "Corporate sponsorship",
+                "url": "https://en.wikipedia.org/wiki/Progressive_Corporation#Corporate_sponsorship"
+              },
+              {
+                "type": "button_result",
+                "title": "Controversies",
+                "url": "https://en.wikipedia.org/wiki/Progressive_Corporation#Controversies"
+              },
+              {
+                "type": "button_result",
+                "title": "Index memberships",
+                "url": "https://en.wikipedia.org/wiki/Progressive_Corporation#Index_memberships"
+              }
+            ]
+          },
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "en.wikipedia.org",
+            "hostname": "en.wikipedia.org",
+            "favicon": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw",
+            "path": "\u203a wiki  \u203a Progressive_Corporation"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/NSjX1qfBdUOlxZMAQsYCbfymNJ2yyL7G9vvg6oG_dDQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy84/LzhlL1BHUl9Db3Jw/X0hRLmpwZw",
+            "original": "https://upload.wikimedia.org/wikipedia/commons/8/8e/PGR_Corp_HQ.jpg",
+            "logo": false
+          },
+          "age": "September 21, 2025"
+        },
+        {
+          "title": "Progressive vs. Allstate Car Insurance (November 2025 Reviews) | Compare.com",
+          "url": "https://www.compare.com/auto-insurance/compare-insurance-companies/allstate-vs-progressive",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Progressive has built its reputation on innovation and convenience, becoming the second-largest auto insurer in the U.S. with nearly 17% market share. It operates in all 50 states and offers comprehensive online and mobile policy management tools.",
+          "page_age": "2025-11-04T04:22:35",
+          "profile": {
+            "name": "Compare",
+            "url": "https://www.compare.com/auto-insurance/compare-insurance-companies/allstate-vs-progressive",
+            "long_name": "compare.com",
+            "img": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "compare.com",
+            "hostname": "www.compare.com",
+            "favicon": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v",
+            "path": "  \u203a auto insurance  \u203a compare insurance companies  \u203a allstate vs progressive"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Kig-GBwaSo-VGmenyT0btd9Jlhm6nS8_UTOJzC5grOI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/Y29tcGFyZS5jb20v/aW1hZ2VzL2NhcnJp/ZXIvaGlnaC1kZWZp/bml0aW9uL2FsbHN0/YXRlLnN2Zw",
+            "original": "https://cdn.compare.com/images/carrier/high-definition/allstate.svg",
+            "logo": true
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "Progressive vs. Allstate: Which Is the Best? (2025) | Insurify",
+          "url": "https://insurify.com/car-insurance/companies/compare/allstate-vs-progressive/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Progressive and Allstate are two ... respectively.[1] Both insurers offer various coverage options for drivers in all 50 states and Washington, D.C., including comprehensive, collision, liability, and uninsured/underinsured motorist ...",
+          "page_age": "2025-11-05T04:14:11",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/car-insurance/companies/compare/allstate-vs-progressive/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a car insurance  \u203a companies  \u203a compare  \u203a allstate vs progressive"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/EJgX0jCKzmuFzd5_hJsQrpktmGCsfpXCVytd_uVlkD8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbnN1/cmlmeWNkbi5jb20v/aW1hZ2VzL2NhcnJp/ZXIvaGlnaC1kZWZp/bml0aW9uL2FsbHN0/YXRlLnN2Zw",
+            "original": "https://insurifycdn.com/images/carrier/high-definition/allstate.svg",
+            "logo": true
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "Progressive Commercial Auto Insurance Review and Quotes (2025) | Insurify",
+          "url": "https://insurify.com/business-insurance/commercial-auto/companies/progressive/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Whether you run a one-person handyman business or operate a fleet of box trucks, you can customize Progressive\u2019s policies to fit your operation. You can get an insurance quote online or through an independent insurance agent. In addition to quotes, the company can assist with state filings in select states and federal filings for interstate trucking, hazardous cargo, for-hire trucking, and for-hire passenger transportation.",
+          "page_age": "2025-11-01T19:00:00",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/business-insurance/commercial-auto/companies/progressive/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a business insurance  \u203a progressive"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/2b4-9Yme2FDYrwvt_XRwiJZnopZP_YUumLujZ9v-M_I/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbnN1/cmlmeWNkbi5jb20v/aW1hZ2VzL2NhcnJp/ZXIvaGlnaC1kZWZp/bml0aW9uL3Byb2dy/ZXNzaXZlLnN2Zw",
+            "original": "https://insurifycdn.com/images/carrier/high-definition/progressive.svg",
+            "logo": true
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Progressive vs. State Farm: Which Is The Best? (2025) | Insurify",
+          "url": "https://insurify.com/car-insurance/companies/compare/progressive-vs-state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Our editorial team follows a rigorous set of editorial standards and operates independently from our insurance partners. Learn more. ... State Farm and Progressive are large insurance companies with policies available in all 50 states.",
+          "page_age": "2025-11-03T04:14:10",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/car-insurance/companies/compare/progressive-vs-state-farm/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a car insurance  \u203a companies  \u203a compare  \u203a progressive vs state farm"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/CNKRe2bQdQNjvtk5gqRnDSZBqkNFbz__EM0-w5dclqc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbnN1/cmlmeWNkbi5jb20v/aW1hZ2VzL2NhcnJp/ZXIvaGlnaC1kZWZp/bml0aW9uL3N0YXRl/LWZhcm0uc3Zn",
+            "original": "https://insurifycdn.com/images/carrier/high-definition/state-farm.svg",
+            "logo": true
+          },
+          "age": "5 days ago"
+        },
+        {
+          "title": "Atalanta Sosnoff Capital LLC Acquires Shares of 204,518 The Progressive Corporation $PGR - Daily Political",
+          "url": "https://www.dailypolitical.com/2025/09/03/atalanta-sosnoff-capital-llc-acquires-shares-of-204518-the-progressive-corporation-pgr.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The Progressive Corporation, an insurance holding company, provides personal and commercial auto, personal residential and commercial property, business related general liability, and other specialty property-casualty insurance products and related services in the United States. It operates in three segments: Personal Lines, Commercial Lines, and Property.",
+          "page_age": "2025-09-03T08:02:43",
+          "profile": {
+            "name": "Daily Political",
+            "url": "https://www.dailypolitical.com/2025/09/03/atalanta-sosnoff-capital-llc-acquires-shares-of-204518-the-progressive-corporation-pgr.html",
+            "long_name": "dailypolitical.com",
+            "img": "https://imgs.search.brave.com/amG4iZFDl7RJtdHzch19_FmMEoOQRp4_A8WygOIFofM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDdjOTg2Mjlk/YmZlZGQ3MTk2NGYx/ZjRhNTVlZjQwNmMz/OWQyODRlZDRmMWRh/OTA1ZGMyYTYyN2Ni/NDRiNzVkZS93d3cu/ZGFpbHlwb2xpdGlj/YWwuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "dailypolitical.com",
+            "hostname": "www.dailypolitical.com",
+            "favicon": "https://imgs.search.brave.com/amG4iZFDl7RJtdHzch19_FmMEoOQRp4_A8WygOIFofM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDdjOTg2Mjlk/YmZlZGQ3MTk2NGYx/ZjRhNTVlZjQwNmMz/OWQyODRlZDRmMWRh/OTA1ZGMyYTYyN2Ni/NDRiNzVkZS93d3cu/ZGFpbHlwb2xpdGlj/YWwuY29tLw",
+            "path": "\u203a 2025  \u203a 09  \u203a 03  \u203a atalanta-sosnoff-capital-llc-acquires-shares-of-204518-the-progressive-corporation-pgr.html"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/MkIucvuUrUUVlIoZMn8OmMDwJuLz5QVdsVrZD4TitYw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YW1lcmljYW5iYW5r/aW5nbmV3cy5jb20v/d3AtY29udGVudC90/aW10aHVtYi90aW10/aHVtYi5waHA_c3Jj/PWh0dHBzOi8vd3d3/Lm1hcmtldGJlYXQu/Y29tL2xvZ29zL3By/b2dyZXNzaXZlLWxv/Z28tMTIwMHg2NzUu/anBnJmFtcDt3PTI0/MCZhbXA7aD0yNDAm/YW1wO3pjPTI",
+            "original": "https://www.americanbankingnews.com/wp-content/timthumb/timthumb.php?src=https://www.marketbeat.com/logos/progressive-logo-1200x675.jpg&amp;w=240&amp;h=240&amp;zc=2",
+            "logo": true
+          },
+          "age": "September 3, 2025"
+        },
+        {
+          "title": "Progressive Motorsports - Reviews, Photos & Phone Number - Updated October 2025 - Motorcycle Dealers in Kingsbury, New York (NY) - Wheree",
+          "url": "https://progressive-motorsports.wheree.com/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Closed 09:00 AM - 06:00 PM See Hours 3058 US-4, Hudson Falls, NY 12839, United States +1 5187-474-693 Suggest an edit \u00b7 Progressive Motorsports is a prominent brand that operates in the automotive industry, providing high-performance vehicles and accessories to customers.",
+          "page_age": "2025-04-23T20:06:56",
+          "profile": {
+            "name": "Wheree",
+            "url": "https://progressive-motorsports.wheree.com/",
+            "long_name": "progressive-motorsports.wheree.com",
+            "img": "https://imgs.search.brave.com/jsuwCWa4fBfaDB-nszXP9lH29EPf27g0H8oxcBEWbNI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTQzYTk2ZGZk/YWNmY2MwYzUxMmJh/YWQ4YWNhNmY2MmY0/MjAyNGQ1MmZhYWZh/NmVkMjE2ZWM0NGY1/MWI5ZDkwYS9wcm9n/cmVzc2l2ZS1tb3Rv/cnNwb3J0cy53aGVy/ZWUuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive-motorsports.wheree.com",
+            "hostname": "progressive-motorsports.wheree.com",
+            "favicon": "https://imgs.search.brave.com/jsuwCWa4fBfaDB-nszXP9lH29EPf27g0H8oxcBEWbNI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTQzYTk2ZGZk/YWNmY2MwYzUxMmJh/YWQ4YWNhNmY2MmY0/MjAyNGQ1MmZhYWZh/NmVkMjE2ZWM0NGY1/MWI5ZDkwYS9wcm9n/cmVzc2l2ZS1tb3Rv/cnNwb3J0cy53aGVy/ZWUuY29tLw",
+            "path": "  \u203a home"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/qNKqWpjXpTkV1dGDfF9Pjb31Ia02JXl0KZlic_TiJv8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2hlcmUtZS5j/b20vVW5pdGVkX1N0/YXRlcy9OZXdfWW9y/ay9LaW5nc2J1cnkv/UHJvZ3Jlc3NpdmUt/TW90b3JzcG9ydHNf/MDZhYmRkYjI0NTU1/MDE1NmMyOGUzYzJh/YTA5NTU0N2EuanBn",
+            "original": "https://static.where-e.com/United_States/New_York/Kingsbury/Progressive-Motorsports_06abddb245550156c28e3c2aa095547a.jpg",
+            "logo": false
+          },
+          "age": "April 23, 2025"
+        },
+        {
+          "title": "Progressive vs Allstate: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/progressive-vs-allstate/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "While not available in every state, Allstate has plans to continue expansion in an effort to gain more users. Both Progressive&#x27;s Snapshot and Allstate&#x27;s Drivewise and Milewise are good options overall, and worth checking out for potential savings if you&#x27;re a careful or low mileage driver.",
+          "page_age": "2025-11-04T07:20:13",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/progressive-vs-allstate/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a progressive vs. allstate"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/r8Gz4KqbI2AqzfBjye1oXmSpIr2a4qmOT5uSwoUl0sU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9Ib3dfWW91/cl9TdWJjb25zY2lv/dXNfTWluZF9Db3Vs/ZF9TYXZlX1lvdV9N/b25leV9vbl9DYXJf/SW5zdXJhbmNlX29w/dGltaXplZC5qcGc",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/How_Your_Subconscious_Mind_Could_Save_You_Money_on_Car_Insurance_optimized.jpg",
+            "logo": false
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "Progressive vs State Farm: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/progressive-vs-state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Progressive and State Farm are two of the most popular insurance companies, but their discounts and policies differ. Find out which is best for you!",
+          "page_age": "2025-11-03T15:31:40",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/progressive-vs-state-farm/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a progressive vs. state farm"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ToI7nNOWSbl6mCAgMMVCNugb9qfbyJZ08PHrISpapXU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9HZXR0eUlt/YWdlcy05MzU3MjI0/MjgtMTYwMHB4Lmpw/Zw",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/GettyImages-935722428-1600px.jpg",
+            "logo": false
+          },
+          "age": "4 days ago"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

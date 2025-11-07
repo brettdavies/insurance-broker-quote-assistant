@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_wn8imah8v9zk0r3uzrny3rll",
+  "search_id": "search_i4k6j72pitnhrce6ipd9iojr",
+  "timestamp": "2025-11-07T12:27:30.204474",
+  "startedAt": "2025-11-07T12:27:30.204474",
+  "completedAt": "2025-11-07T12:27:31.807553",
+  "durationSeconds": 1.6,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:dfs.ny.gov minimum coverage",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:dfs.ny.gov minimum coverage",
+      "show_strict_warning": false,
+      "cleaned": "minimum coverage",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "minimum coverage",
+        "sites": [
+          "dfs.ny.gov"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

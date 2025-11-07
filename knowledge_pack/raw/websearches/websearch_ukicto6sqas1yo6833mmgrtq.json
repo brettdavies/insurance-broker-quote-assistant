@@ -1,0 +1,97 @@
+{
+  "websearch_id": "websearch_ukicto6sqas1yo6833mmgrtq",
+  "search_id": "search_duodwdo3wjqeggxprrglpd2i",
+  "timestamp": "2025-11-07T12:26:19.133719",
+  "startedAt": "2025-11-07T12:26:19.133719",
+  "completedAt": "2025-11-07T12:26:21.023643",
+  "durationSeconds": 1.89,
+  "urlsDiscoveredCount": 1,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" \"older home\" eligibility",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"GEICO\" \"older home\" eligibility",
+      "show_strict_warning": false,
+      "cleaned": "GEICO older home eligibility",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO older home eligibility"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "GEICO Home Insurance in Florida: 2025 Pros & Cons",
+          "url": "https://floridaallrisk.com/geico-home-insurance-florida-guide/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Inspections: A wind mitigation inspection and, for older homes, a four-point inspection (roof, electrical, plumbing, HVAC) may be required to validate eligibility and pricing.",
+          "page_age": "2025-09-19T06:40:48",
+          "profile": {
+            "name": "Floridaallrisk",
+            "url": "https://floridaallrisk.com/geico-home-insurance-florida-guide/",
+            "long_name": "floridaallrisk.com",
+            "img": "https://imgs.search.brave.com/GPW_tj4OcARNXlGmeHw4z7zR8llSeHEUs4KPUmjBriY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTMxYTdjNmFj/MDE3NzczMzRhZWQ2/ZTg1Y2RjYmIzZjAz/NmM0ZjBmMjkyNzYx/MzNiNWYyMzJhYjJj/YzJiODk5ZS9mbG9y/aWRhYWxscmlzay5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "floridaallrisk.com",
+            "hostname": "floridaallrisk.com",
+            "favicon": "https://imgs.search.brave.com/GPW_tj4OcARNXlGmeHw4z7zR8llSeHEUs4KPUmjBriY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTMxYTdjNmFj/MDE3NzczMzRhZWQ2/ZTg1Y2RjYmIzZjAz/NmM0ZjBmMjkyNzYx/MzNiNWYyMzJhYjJj/YzJiODk5ZS9mbG9y/aWRhYWxscmlzay5j/b20v",
+            "path": "  \u203a home  \u203a what you need to know about geico home insurance in florida"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/EAPHFe8rUke78tHCAG93-iKaj7fLDGxN9ZbbT_JZX2Q/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9mbG9y/aWRhYWxscmlzay5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjQvMTEvaG9tZW93/bmVycy1pbnN1cmFu/Y2UtZmxvcmlkYS5q/cGc",
+            "original": "https://floridaallrisk.com/wp-content/uploads/2024/11/homeowners-insurance-florida.jpg",
+            "logo": false
+          },
+          "age": "September 19, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

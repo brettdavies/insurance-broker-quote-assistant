@@ -1,0 +1,136 @@
+{
+  "websearch_id": "websearch_qgub2q1yo4v3u3nmrqogh1ss",
+  "search_id": "search_t1wzm8swsow8cbv6xjqjzhcw",
+  "timestamp": "2025-11-07T12:25:46.364087",
+  "startedAt": "2025-11-07T12:25:46.364087",
+  "completedAt": "2025-11-07T12:25:48.121050",
+  "durationSeconds": 1.76,
+  "urlsDiscoveredCount": 2,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:geico.com roof requirements",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:geico.com roof requirements",
+      "show_strict_warning": false,
+      "cleaned": "roof requirements",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "roof requirements",
+        "sites": [
+          "geico.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Tips for Senior Drivers | GEICO Living",
+          "url": "https://living.geico.com/driving/auto/car-safety-insurance/tips-for-senior-drivers/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO offers a substantial discount to policyholders who successfully complete a Defensive Driver class and meet certain requirements (for example: most states require that you be at least 50 years young before the discount can be applied).",
+          "page_age": "2025-07-22T15:57:11",
+          "profile": {
+            "name": "GEICO Living",
+            "url": "https://living.geico.com/driving/auto/car-safety-insurance/tips-for-senior-drivers/",
+            "long_name": "living.geico.com",
+            "img": "https://imgs.search.brave.com/Cve-gaVVRqJopC0zfLT35CI5tzMv9fEQel0RH0-pstQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTQwNzI2ZGQy/YzdhMzYxOGY2MGQx/YmFiNGYyOGY2MDgz/M2E5Yjc5YjJhOWY4/OTYzOGU2ZTFjMWYy/NThhZjQxMi9saXZp/bmcuZ2VpY28uY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "living.geico.com",
+            "hostname": "living.geico.com",
+            "favicon": "https://imgs.search.brave.com/Cve-gaVVRqJopC0zfLT35CI5tzMv9fEQel0RH0-pstQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTQwNzI2ZGQy/YzdhMzYxOGY2MGQx/YmFiNGYyOGY2MDgz/M2E5Yjc5YjJhOWY4/OTYzOGU2ZTFjMWYy/NThhZjQxMi9saXZp/bmcuZ2VpY28uY29t/Lw",
+            "path": "\u203a driving  \u203a auto  \u203a car-safety-insurance  \u203a tips-for-senior-drivers"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/8cRq7THRjBDkzCrfYoBji66RpAAQG63A0GKbX6qxf3Y/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9saXZp/bmcuZ2VpY28uY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy9HZXR0/eUltYWdlcy01MzM3/NjYzNDMtZTE2MTk2/MjI4NjU2NzkuanBn",
+            "original": "https://living.geico.com/wp-content/uploads/GettyImages-533766343-e1619622865679.jpg",
+            "logo": false
+          },
+          "age": "July 22, 2025"
+        },
+        {
+          "title": "Articles on Your Car, Motorcycle, RV, Boat, and More | Page 3 | GEICO Living",
+          "url": "https://living.geico.com/driving/page/3/?otm_click_id=390///////%5C%5C'A%3D0&otm_content=article-pages:article-page-b60a81409d-rail-recent-posts&otm_medium=onespot&otm_source=onsite",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Find great articles on autos, cycles, RVs, boats, and more including safety tips, vehicle maintenance, and fun places to visit.",
+          "page_age": "2025-07-22T15:57:11",
+          "profile": {
+            "name": "GEICO Living",
+            "url": "https://living.geico.com/driving/page/3/?otm_click_id=390///////%5C%5C'A%3D0&otm_content=article-pages:article-page-b60a81409d-rail-recent-posts&otm_medium=onespot&otm_source=onsite",
+            "long_name": "living.geico.com",
+            "img": "https://imgs.search.brave.com/Cve-gaVVRqJopC0zfLT35CI5tzMv9fEQel0RH0-pstQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTQwNzI2ZGQy/YzdhMzYxOGY2MGQx/YmFiNGYyOGY2MDgz/M2E5Yjc5YjJhOWY4/OTYzOGU2ZTFjMWYy/NThhZjQxMi9saXZp/bmcuZ2VpY28uY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "living.geico.com",
+            "hostname": "living.geico.com",
+            "favicon": "https://imgs.search.brave.com/Cve-gaVVRqJopC0zfLT35CI5tzMv9fEQel0RH0-pstQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTQwNzI2ZGQy/YzdhMzYxOGY2MGQx/YmFiNGYyOGY2MDgz/M2E5Yjc5YjJhOWY4/OTYzOGU2ZTFjMWYy/NThhZjQxMi9saXZp/bmcuZ2VpY28uY29t/Lw",
+            "path": "\u203a driving  \u203a page  \u203a 3"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/cwuVT4zEUA-0BLj8U-A1FXQX3eEult6hq_LUDMA5MtQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9saXZp/bmcuZ2VpY28uY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy9ob3ct/dG8tYXZvaWQtZG9v/ci1kaW5ncy1wb3N0/LmpwZw",
+            "original": "https://living.geico.com/wp-content/uploads/how-to-avoid-door-dings-post.jpg"
+          },
+          "age": "July 22, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

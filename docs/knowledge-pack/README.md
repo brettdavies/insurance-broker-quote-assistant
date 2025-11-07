@@ -73,13 +73,6 @@ These documents apply the SoT specifications to specific workflows and provide s
    - Example 5: Complete carrier file (production format)
    - Complete audit trail lineage examples
 
-7. **[phase-2-agent-instructions.md](phase-2-agent-instructions.md)**
-   **Autonomous Agent Data Gathering Workflow**
-   - Step-by-step execution guide for AI agents
-   - Page file capture and storage procedures
-   - Raw data entry structure and validation
-   - Progress tracking and git commit workflow
-
 ## Key Concepts
 
 ### Globally Unique IDs (cuid2)
@@ -123,16 +116,17 @@ The following documents serve as the canonical sources of truth for critical sys
 5. **Reference** [sot-schemas.md](sot-schemas.md) for data structure
 6. **Follow** [knowledge-pack-examples.md](knowledge-pack-examples.md) for implementation patterns
 
-### For Automated Agents
+### For Automated Data Gathering
 
-Search agents should:
-1. Use search queries from [sot-search-queries.md](sot-search-queries.md)
-2. Capture element references (CSS selectors or XPath) - see [sot-schemas.md#source-object](sot-schemas.md#source-object)
-3. Generate cuid2 IDs for each raw data entry - see [sot-id-conventions.md](sot-id-conventions.md)
-4. Record all findings (even duplicates/conflicts)
-5. Save to `knowledge_pack/raw/` directory
+The knowledge pack uses Brave Search API for automated data discovery:
+1. Search queries are defined in [sot-search-queries.md](sot-search-queries.md)
+2. Brave API enriches URLs with metadata (title, description, language, etc.)
+3. URLs are fetched using crawl4ai for HTML and markdown extraction
+4. Element references (CSS selectors or XPath) are captured - see [sot-schemas.md#source-object](sot-schemas.md#source-object)
+5. cuid2 IDs are generated for all entities - see [sot-id-conventions.md](sot-id-conventions.md)
+6. All data is saved to `knowledge_pack/raw/` directory
 
-**Complete agent workflow:** See [phase-2-agent-instructions.md](phase-2-agent-instructions.md) for step-by-step autonomous execution guide.
+**Scripts location:** `knowledge-pack-scraper/scripts/` contains the automation tools (brave-search.py, fetch-url.py).
 
 ## Technology Stack
 
@@ -170,7 +164,6 @@ graph TB
     HIER[sot-source-hierarchy.md<br/>Authority Levels]
     EXAMPLES[knowledge-pack-examples.md<br/>Complete Examples]
     QUERIES[sot-search-queries.md<br/>200+ Queries]
-    PHASE2[phase-2-agent-instructions.md<br/>Agent Workflow]
 
     README -->|References| METHOD
     README -->|References| SCHEMAS
@@ -178,19 +171,17 @@ graph TB
     README -->|References| HIER
     README -->|References| EXAMPLES
     README -->|References| QUERIES
-    README -->|References| PHASE2
 
     METHOD -->|Uses IDs from| IDCONV
     METHOD -->|References schemas| SCHEMAS
-    METHOD -->|Links to| PHASE2
+    METHOD -->|Uses queries from| QUERIES
     METHOD -->|Uses authority from| HIER
 
     SCHEMAS -->|Defines IDs via| IDCONV
     SCHEMAS -->|Cites confidence from| HIER
 
-    PHASE2 -->|Generates IDs via| IDCONV
-    PHASE2 -->|Follows schema| SCHEMAS
-    PHASE2 -->|Uses queries from| QUERIES
+    QUERIES -->|Referenced by| METHOD
+    QUERIES -->|Used in automation| SCHEMAS
 
     EXAMPLES -->|Shows schema usage| SCHEMAS
     EXAMPLES -->|Demonstrates| HIER
@@ -202,7 +193,7 @@ graph TB
     style METHOD fill:#fff4e1
     style SCHEMAS fill:#e8f5e9
     style IDCONV fill:#fce4ec
-    style PHASE2 fill:#f3e5f5
+    style QUERIES fill:#f3e5f5
 ```
 
 **Legend:**
@@ -210,7 +201,7 @@ graph TB
 - 🟡 **Yellow** (knowledge-pack-methodology.md): Complete 7-phase workflow specification
 - 🟢 **Green** (sot-schemas.md): Canonical JSON schema definitions (SoT for data structures)
 - 🔴 **Pink** (sot-id-conventions.md): Canonical cuid2 ID specification (SoT for identifiers)
-- 🟣 **Purple** (phase-2-agent-instructions.md): Autonomous agent operational spec
+- 🟣 **Purple** (sot-search-queries.md): Complete search query catalog
 
 ---
 
@@ -224,10 +215,11 @@ graph TB
 3. See [knowledge-pack-examples.md](knowledge-pack-examples.md) for practical applications
 
 **Implement Phase 2 data gathering:**
-1. Start with [phase-2-agent-instructions.md](phase-2-agent-instructions.md) for step-by-step workflow
-2. Reference [sot-search-queries.md](sot-search-queries.md) for search terms
-3. Reference [sot-schemas.md](sot-schemas.md) for raw data format
-4. Reference [sot-id-conventions.md](sot-id-conventions.md) for ID generation
+1. Reference [sot-search-queries.md](sot-search-queries.md) for search query catalog
+2. Use `knowledge-pack-scraper/scripts/brave-search.py` to execute searches via Brave API
+3. Use `knowledge-pack-scraper/scripts/fetch-url.py` to fetch discovered URLs
+4. Reference [sot-schemas.md](sot-schemas.md) for raw data format
+5. Reference [sot-id-conventions.md](sot-id-conventions.md) for ID generation
 
 **Create production JSON files:**
 1. Review [sot-schemas.md](sot-schemas.md) for data structures
@@ -249,7 +241,7 @@ graph TB
 | **Conflict Resolution** | Process for choosing between conflicting data | [sot-source-hierarchy.md#conflict-resolution-decision-tree](sot-source-hierarchy.md#conflict-resolution-decision-tree) |
 | **Raw Data Entry** | Unprocessed data captured during scraping | [sot-schemas.md#raw-data-schema](sot-schemas.md#raw-data-schema) |
 | **Inheritance** | Child data points borrowing parent sources | [sot-schemas.md#source-inheritance-rules](sot-schemas.md#source-inheritance-rules) |
-| **Page File** | Saved HTML/PDF content with unique cuid2 ID | [phase-2-agent-instructions.md#page-files](phase-2-agent-instructions.md#page-files) |
+| **Websearch** | Brave API search execution with raw request/response | [sot-schemas.md#websearch-schema](sot-schemas.md#websearch-schema) |
 
 **Note:** This is a quick reference only. Follow links for complete specifications.
 

@@ -1,0 +1,282 @@
+{
+  "websearch_id": "websearch_v5oni424t7bpkeurzazfag85",
+  "search_id": "search_sz5oo5550llmbgnmc2wq0fki",
+  "timestamp": "2025-11-07T12:32:05.499923",
+  "startedAt": "2025-11-07T12:32:05.499923",
+  "completedAt": "2025-11-07T12:32:07.434106",
+  "durationSeconds": 1.93,
+  "urlsDiscoveredCount": 6,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"New York\" \"mandatory coverage\" auto",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"New York\" \"mandatory coverage\" auto",
+      "show_strict_warning": false,
+      "cleaned": "New York mandatory coverage auto",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "New York mandatory coverage auto"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "New York car insurance laws and requirements: What is changing in 2025",
+          "url": "https://www.insurance.com/auto-insurance/new-york-car-insurance-laws/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "New York car insurance laws require drivers to carry 25/50/10 in liability coverage. NYCM Insurance provides the lowest minimum coverage rates with an average of $420. Mandatory coverage limits are low, and drivers should consider increasing ...",
+          "page_age": "2025-04-24T00:00:00",
+          "profile": {
+            "name": "Insurance.com",
+            "url": "https://www.insurance.com/auto-insurance/new-york-car-insurance-laws/",
+            "long_name": "insurance.com",
+            "img": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurance.com",
+            "hostname": "www.insurance.com",
+            "favicon": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8",
+            "path": "  \u203a home  \u203a auto insurance  \u203a state minimum requirements  \u203a new york car insurance laws and requirements: what is changing in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/mrmhNyRrsgAKLHytgrM3UtXgPNsZj2C2r9vhaX0aI8s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmNlLmNv/bS9pbWFnZXMvaG9t/ZS9zaXRlLWxvZ28t/ZGFyay5zdmc",
+            "original": "https://www.insurance.com/images/home/site-logo-dark.svg",
+            "logo": true
+          },
+          "age": "April 24, 2025"
+        },
+        {
+          "title": "New York Minimum Coverage Car Insurance",
+          "url": "https://www.moneygeek.com/insurance/auto/state-laws-minimum-requirements-new-york/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Required coverage: PIP mandatory states include: Delaware, Florida, Hawaii, Kansas, Kentucky, Maryland, Massachusetts, Michigan, Minnesota, New York, North Dakota and Utah ... While most states require traditional auto insurance, some allow ...",
+          "page_age": "2025-10-29T18:41:54",
+          "profile": {
+            "name": "MoneyGeek",
+            "url": "https://www.moneygeek.com/insurance/auto/state-laws-minimum-requirements-new-york/",
+            "long_name": "moneygeek.com",
+            "img": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "moneygeek.com",
+            "hostname": "www.moneygeek.com",
+            "favicon": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8",
+            "path": "  \u203a home  \u203a insurance  \u203a compare car insurance  \u203a state minimum car insurance requirements"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/sEKQpd_yHlSlyHZpp096ranYuoVt38I6MP696GUfado/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbW9uZXlnZWVr/L2ltYWdlL3VwbG9h/ZC9jX3NjYWxlLHFf/YXV0bzplY28sd18x/MjAwLGZfYXV0byxm/bF9sb3NzeS92MTYy/OTUzNTkwMy9mZWF0/dXJlZF9pbWFnZV9t/aW5pbXVtX2Nhcl9p/bnN1cmFuY2VfcmVx/dWlyZW1lbnRzX2Vh/Y2hfc3RhdGVfZmVh/dHVyZWRfaW1hZ2Vf/OTA4M2M2MDczNi5q/cGc",
+            "original": "https://res.cloudinary.com/moneygeek/image/upload/c_scale,q_auto:eco,w_1200,f_auto,fl_lossy/v1629535903/featured_image_minimum_car_insurance_requirements_each_state_featured_image_9083c60736.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Why Is Car Insurance So Expensive in New York? (Savings Guide)",
+          "url": "https://www.moneygeek.com/insurance/auto/why-is-car-insurance-so-expensive-in-new-york/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Mandatory coverage limits in New York: $25,000/$50,000 bodily injury liability per person/accident, $10,000 property damage liability, $25,000/$50,000 uninsured motorist bodily injury per person/accident, $50,000 personal injury protection (PIP) ...",
+          "page_age": "2025-10-29T19:48:02",
+          "profile": {
+            "name": "MoneyGeek",
+            "url": "https://www.moneygeek.com/insurance/auto/why-is-car-insurance-so-expensive-in-new-york/",
+            "long_name": "moneygeek.com",
+            "img": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "moneygeek.com",
+            "hostname": "www.moneygeek.com",
+            "favicon": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8",
+            "path": "  \u203a home  \u203a insurance  \u203a compare car insurance  \u203a why car insurance is expensive in new york"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/fhzcSY4BxT3ovjxLchDBXSbEy9EIJdTc0chrnGL_5sQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbW9uZXlnZWVr/L2ltYWdlL3VwbG9h/ZC9jX3NjYWxlLHFf/YXV0bzplY28sd18x/MjAwLGZfYXV0byxm/bF9sb3NzeS92MTYz/MDY0MTU5Ny9mZWF0/dXJlZF9pbWFnZV93/aHlfaXNfY2FyX2lu/c3VyYW5jZV9leHBl/bnNpdmVfaW5fTllf/TW9uZXlfR2Vla18x/OTVhYjE2YjM4Lmpw/Zw",
+            "original": "https://res.cloudinary.com/moneygeek/image/upload/c_scale,q_auto:eco,w_1200,f_auto,fl_lossy/v1630641597/featured_image_why_is_car_insurance_expensive_in_NY_Money_Geek_195ab16b38.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Cheapest Car Insurance in New York (From $13 Monthly)",
+          "url": "https://www.moneygeek.com/insurance/auto/cheapest-car-insurance-new-york/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "New York requires minimum liability coverage of $25,000 for bodily injury per person, $50,000 per accident, and $10,000 for property damage, plus $50,000 for uninsured motorist coverage and $50,000 for personal injury protection (PIP).",
+          "page_age": "2025-10-29T20:18:50",
+          "profile": {
+            "name": "MoneyGeek",
+            "url": "https://www.moneygeek.com/insurance/auto/cheapest-car-insurance-new-york/",
+            "long_name": "moneygeek.com",
+            "img": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "moneygeek.com",
+            "hostname": "www.moneygeek.com",
+            "favicon": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8",
+            "path": "  \u203a home  \u203a insurance  \u203a compare car insurance  \u203a cheapest car insurance in new york"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/_00edvMoz6CFXNDt-GH30LE98DBRkXeUjyvm_2mbtZE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbW9uZXlnZWVr/L2ltYWdlL3VwbG9h/ZC92MTYwMjc3OTY5/NS9Nb25leUdlZWsu/Y29tL2RlZmF1bHQl/MjBtZXRhJTIwaW1h/Z2VzL2F1dG9fempp/bGhnLmpwZw",
+            "original": "https://res.cloudinary.com/moneygeek/image/upload/v1602779695/MoneyGeek.com/default%20meta%20images/auto_zjilhg.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "State Minimum Car Insurance Requirements and Costs by State",
+          "url": "https://www.moneygeek.com/insurance/auto/state-minimum-car-insurance-requirements/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Required coverage: PIP mandatory states include: Delaware, Florida, Hawaii, Kansas, Kentucky, Maryland, Massachusetts, Michigan, Minnesota, New York, North Dakota and Utah ... While most states require traditional auto insurance, some allow ...",
+          "page_age": "2025-10-29T18:41:54",
+          "profile": {
+            "name": "MoneyGeek",
+            "url": "https://www.moneygeek.com/insurance/auto/state-minimum-car-insurance-requirements/",
+            "long_name": "moneygeek.com",
+            "img": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "moneygeek.com",
+            "hostname": "www.moneygeek.com",
+            "favicon": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8",
+            "path": "  \u203a home  \u203a insurance  \u203a compare car insurance  \u203a state minimum car insurance requirements"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/sEKQpd_yHlSlyHZpp096ranYuoVt38I6MP696GUfado/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbW9uZXlnZWVr/L2ltYWdlL3VwbG9h/ZC9jX3NjYWxlLHFf/YXV0bzplY28sd18x/MjAwLGZfYXV0byxm/bF9sb3NzeS92MTYy/OTUzNTkwMy9mZWF0/dXJlZF9pbWFnZV9t/aW5pbXVtX2Nhcl9p/bnN1cmFuY2VfcmVx/dWlyZW1lbnRzX2Vh/Y2hfc3RhdGVfZmVh/dHVyZWRfaW1hZ2Vf/OTA4M2M2MDczNi5q/cGc",
+            "original": "https://res.cloudinary.com/moneygeek/image/upload/c_scale,q_auto:eco,w_1200,f_auto,fl_lossy/v1629535903/featured_image_minimum_car_insurance_requirements_each_state_featured_image_9083c60736.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Best Car Insurance in New York for 2025 | U.S. News",
+          "url": "https://www.usnews.com/insurance/auto/best-car-insurance-new-york",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The medium coverage tier refers to $50,000/$100,000 bodily injury coverage, comprehensive and collision coverage with a $1,000 deductible, $50,000 property damage coverage, $50,000/$100,000 uninsured/underinsured motorist (UIM) coverage per accident...",
+          "page_age": "2025-10-16T19:19:00",
+          "profile": {
+            "name": "U.S. News",
+            "url": "https://www.usnews.com/insurance/auto/best-car-insurance-new-york",
+            "long_name": "usnews.com",
+            "img": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "usnews.com",
+            "hostname": "www.usnews.com",
+            "favicon": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8",
+            "path": "\u203a insurance  \u203a auto  \u203a best-car-insurance-new-york"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/pAHa6d2h0BfAfMpfIM1tax2gkwJVWwkghpfawyugVFw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dXNuZXdzLmNvbS9k/aW1zNC9VU05FV1Mv/YTNlNjQxNy8yMTQ3/NDgzNjQ3L3RodW1i/bmFpbC85NzB4NjQ3/L3F1YWxpdHkvODUv/P3VybD1odHRwcyUz/QSUyRiUyRnd3dy51/c25ld3MuY29tJTJG/Y21zbWVkaWElMkYz/MCUyRjEyJTJGM2Ni/MzI4NjA0NzU1YWVh/ZDc5MzcyMjU3MGM4/NyUyRmh0dHBzLW1l/ZGlhLWdldHR5aW1h/Z2VzLWNvbS1pZC05/MTM4ODk1MjItcGhv/dG8tbnljLWRvd250/b3duLXNreXNjcmFw/ZXJzLmpwZw",
+            "original": "https://www.usnews.com/dims4/USNEWS/a3e6417/2147483647/thumbnail/970x647/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F30%2F12%2F3cb328604755aead793722570c87%2Fhttps-media-gettyimages-com-id-913889522-photo-nyc-downtown-skyscrapers.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

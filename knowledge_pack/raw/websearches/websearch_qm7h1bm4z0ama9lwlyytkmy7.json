@@ -1,0 +1,52 @@
+{
+  "websearch_id": "websearch_qm7h1bm4z0ama9lwlyytkmy7",
+  "search_id": "search_tmazfeqqkfunu5dhr7b7nkcx",
+  "timestamp": "2025-11-07T12:27:41.562829",
+  "startedAt": "2025-11-07T12:27:41.562829",
+  "completedAt": "2025-11-07T12:27:43.437469",
+  "durationSeconds": 1.87,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "filetype:pdf New York DMV insurance requirements",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "filetype:pdf New York DMV insurance requirements",
+      "show_strict_warning": false,
+      "cleaned": "New York DMV insurance requirements pdf",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "New York DMV insurance requirements pdf"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

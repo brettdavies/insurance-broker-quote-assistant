@@ -1,0 +1,753 @@
+{
+  "websearch_id": "websearch_osr2cu6isvigdz8ue061xtl5",
+  "search_id": "search_ic0fytihbfjctqicldj3f3ms",
+  "timestamp": "2025-11-07T12:31:00.038973",
+  "startedAt": "2025-11-07T12:31:00.038973",
+  "completedAt": "2025-11-07T12:31:02.171390",
+  "durationSeconds": 2.13,
+  "urlsDiscoveredCount": 19,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"State Farm\" renters \"personal property\"",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"State Farm\" renters \"personal property\"",
+      "show_strict_warning": false,
+      "cleaned": "State Farm renters personal property",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "State Farm renters personal property"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "How Much Renters Insurance Do I Need? - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/residence/how-much-renters-insurance-do-i-need",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The coverage will reimburse you for covered loss, damage or theft of your possessions up to a certain dollar amount. Completing a home inventory is a good way to determine how much property coverage you need.",
+          "page_age": "2025-07-14T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/residence/how-much-renters-insurance-do-i-need",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a residence  \u203a how much renters insurance do i need?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/UkWWmbBHl_vNN-ABcEins_901wElz4fh3ZhUHPyAQ4E/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L2hvdy1tdWNoLXJl/bnRlci1pbnN1cmFu/Y2UtZG8taS1uZWVk/LmpwZw",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/how-much-renter-insurance-do-i-need.jpg",
+            "logo": false
+          },
+          "age": "July 14, 2025"
+        },
+        {
+          "title": "State Farm Renters Insurance Review for 2025",
+          "url": "https://www.usnews.com/insurance/renters-insurance/state-farm",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Standard State Farm renters insurance policy coverage includes personal property, personal liability, medical payments to others, and loss of use coverage.",
+          "page_age": "2025-10-06T16:52:00",
+          "profile": {
+            "name": "U.S. News",
+            "url": "https://www.usnews.com/insurance/renters-insurance/state-farm",
+            "long_name": "usnews.com",
+            "img": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "usnews.com",
+            "hostname": "www.usnews.com",
+            "favicon": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8",
+            "path": "\u203a insurance  \u203a renters-insurance  \u203a state-farm"
+          },
+          "age": "October 6, 2025"
+        },
+        {
+          "title": "How To File a Renters Insurance Claim - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/residence/how-to-file-a-renters-claim",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Talk to your insurance agent or contact a claim associate to discuss a potential renters insurance claim. A few common claim scenarios policyholders report are: ... Report damages or losses to your landlord. Report any theft to police. Retain receipts for additional living expenses and other claim-related costs. Review your policy, including coverages, limitations and deductibles related to personal property. File and track the claim on the insurance company site or on a mobile application, such as the State Farm mobile app, or contact the claims department to initiate the claim filing.",
+          "page_age": "2025-11-05T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/residence/how-to-file-a-renters-claim",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a residence  \u203a how to file a renters insurance claim"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/vCDwYGrqkX-zkznQdDKTinC3KzenNFRdtG8jrZO0zs0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L2hvdy10by1maWxl/LWEtcmVudGVycy1j/bGFpbS5qcGc",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/how-to-file-a-renters-claim.jpg",
+            "logo": false
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "State Farm Renters Insurance Review: Pros, Cons, Cost and More",
+          "url": "https://www.moneygeek.com/insurance/renters/reviews/state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Its coverage options are less broad than those of its competitors. State Farm&#x27;s renters insurance varies by state, being the cheapest in 18 states and the best in 25 states for $20,000 in personal property coverage.",
+          "page_age": "2025-10-28T13:27:22",
+          "profile": {
+            "name": "MoneyGeek",
+            "url": "https://www.moneygeek.com/insurance/renters/reviews/state-farm/",
+            "long_name": "moneygeek.com",
+            "img": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "moneygeek.com",
+            "hostname": "www.moneygeek.com",
+            "favicon": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8",
+            "path": "  \u203a home  \u203a insurance  \u203a compare renters insurance  \u203a state farm renters insurance review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/hLigglaSWtddxUE_B93QtLt_TneqNMhIe41CoFzsODU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbW9uZXlnZWVr/L2ltYWdlL3VwbG9h/ZC92MTYwMjc3OTY5/NS9Nb25leUdlZWsu/Y29tL2RlZmF1bHQl/MjBtZXRhJTIwaW1h/Z2VzL2hvbWVfaW5z/dXJhbmNlX3dmczJt/bC5qcGc",
+            "original": "https://res.cloudinary.com/moneygeek/image/upload/v1602779695/MoneyGeek.com/default%20meta%20images/home_insurance_wfs2ml.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "State Farm Renters Insurance Review 2025 \u2013 Forbes Advisor",
+          "url": "https://www.forbes.com/advisor/renters-insurance/state-farm-renters-insurance-review/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm has excellent renters insurance rates across the board for multiple personal property limits we evaluated. Great prices and a very low level of complaints give renters a reason to consider State Farm. States Available In State Farm offers renters insurance in all 50 states and Washing",
+          "page_age": "2025-07-30T11:34:17",
+          "profile": {
+            "name": "Forbes Advisor",
+            "url": "https://www.forbes.com/advisor/renters-insurance/state-farm-renters-insurance-review/",
+            "long_name": "forbes.com",
+            "img": "https://imgs.search.brave.com/qg6-E4bARcUpS7pHuJ2FXSeQ2YI51iPfbI8wpUBx9tg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY0NWFiMTBk/YmY2MjkyN2M0MTI0/NmRkYTM3ZjQzMGJj/Y2Q2MTBkYjVmZjA2/OGRjODBhMTM1M2Yx/YmRlZTA1NS93d3cu/Zm9yYmVzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "review",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "forbes.com",
+            "hostname": "www.forbes.com",
+            "favicon": "https://imgs.search.brave.com/qg6-E4bARcUpS7pHuJ2FXSeQ2YI51iPfbI8wpUBx9tg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY0NWFiMTBk/YmY2MjkyN2M0MTI0/NmRkYTM3ZjQzMGJj/Y2Q2MTBkYjVmZjA2/OGRjODBhMTM1M2Yx/YmRlZTA1NS93d3cu/Zm9yYmVzLmNvbS8",
+            "path": "\u203a advisor  \u203a renters-insurance  \u203a state-farm-renters-insurance-review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/HFCOrxABSxHhnrbvqIr-YiNf_3Znj94oBmfUC3m3Bng/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Zm9yYmVzLmNvbS9h/ZHZpc29yL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIxLzEwL2Fw/YXJ0bWVudC1vcmFu/Z2Utc29mYS5qcGVn/LmpwZw",
+            "original": "https://www.forbes.com/advisor/wp-content/uploads/2021/10/apartment-orange-sofa.jpeg.jpg",
+            "logo": false
+          },
+          "age": "July 30, 2025"
+        },
+        {
+          "title": "Does State Farm Renters Insurance Cover Everything",
+          "url": "https://cobbdefense.com/renters-insurance-state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "While it protects your personal property (up to policy limits), provides liability coverage, and offers temporary housing during repairs, it excludes floods, pest damage, and intentional acts.",
+          "page_age": "2025-04-12T11:58:17",
+          "profile": {
+            "name": "Cobb Defense",
+            "url": "https://cobbdefense.com/renters-insurance-state-farm/",
+            "long_name": "cobbdefense.com",
+            "img": "https://imgs.search.brave.com/vjqX890fwO05FgPtfI3o1S9n8SIO4oPl3FpRtTX8G5U/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDMxNTQ4NGFl/MGZlYmRiODIzZmIz/MjFmMjJmYjlkMWY1/ODU0NGQwMjJjZmUw/MDNmMmJmOWZmNjgy/NTI0ZWQyYy9jb2Ji/ZGVmZW5zZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cobbdefense.com",
+            "hostname": "cobbdefense.com",
+            "favicon": "https://imgs.search.brave.com/vjqX890fwO05FgPtfI3o1S9n8SIO4oPl3FpRtTX8G5U/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDMxNTQ4NGFl/MGZlYmRiODIzZmIz/MjFmMjJmYjlkMWY1/ODU0NGQwMjJjZmUw/MDNmMmJmOWZmNjgy/NTI0ZWQyYy9jb2Ji/ZGVmZW5zZS5jb20v",
+            "path": "\u203a renters-insurance-state-farm"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/T5AEJUjJOyidlev8Vpty6WoGBcNPL-cqsFg6X9NXoWU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb2Ji/ZGVmZW5zZS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjUv/MDQvOTU4MzY4NWRf/M2FkY180NGIxXzk1/Y2NfZThhMGViZmVl/ZDlkLTk1ODM2ODVk/LTNhZGMtNDRiMS05/NWNjLWU4YTBlYmZl/ZWQ5ZC5qcGc",
+            "original": "https://cobbdefense.com/wp-content/uploads/2025/04/9583685d_3adc_44b1_95cc_e8a0ebfeed9d-9583685d-3adc-44b1-95cc-e8a0ebfeed9d.jpg",
+            "logo": false
+          },
+          "age": "April 12, 2025"
+        },
+        {
+          "title": "State Farm Renters Insurance Review of 2025 - PropertyNest",
+          "url": "https://www.propertynest.com/blog/insurance/state-farm-renters-insurance-review/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The standard personal property coverage will reimburse you for the actual cash value of your belongings; replacement cost provides enough money to replace your items with new ones.",
+          "page_age": "2025-07-31T12:57:58",
+          "profile": {
+            "name": "PropertyNest",
+            "url": "https://www.propertynest.com/blog/insurance/state-farm-renters-insurance-review/",
+            "long_name": "propertynest.com",
+            "img": "https://imgs.search.brave.com/TFXSutCcPAWetwxEhm2HDqc8a0w2R7g-wQlUsENWTwQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDgzZmExMjli/NzdmNjMwYmUwYTky/ZDNjOGM1NzViZDM4/NTA2ZTgwMzY4NGQ1/ODg0MDBiODU4ODA4/M2E1ZjRkOS93d3cu/cHJvcGVydHluZXN0/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "propertynest.com",
+            "hostname": "www.propertynest.com",
+            "favicon": "https://imgs.search.brave.com/TFXSutCcPAWetwxEhm2HDqc8a0w2R7g-wQlUsENWTwQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDgzZmExMjli/NzdmNjMwYmUwYTky/ZDNjOGM1NzViZDM4/NTA2ZTgwMzY4NGQ1/ODg0MDBiODU4ODA4/M2E1ZjRkOS93d3cu/cHJvcGVydHluZXN0/LmNvbS8",
+            "path": "  \u203a home  \u203a propertynest blog  \u203a insurance  \u203a state farm renters insurance review of 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/7HWpcXi_E_ct5o9hYCuFzejqq5K_AbKfxIEIBhdo1pE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9wcm9w/ZXJ0eW5lc3QuY29t/L3N0YXRpYy9pbWcv/cHJvcGVydHluZXN0/LXNvY2lhbC5qcGc",
+            "original": "https://propertynest.com/static/img/propertynest-social.jpg",
+            "logo": false
+          },
+          "age": "July 31, 2025"
+        },
+        {
+          "title": "Allstate vs. State Farm Renters Insurance (2025) | U.S. News",
+          "url": "https://www.usnews.com/insurance/renters-insurance/allstate-vs-state-farm",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In contrast, State Farm offers back-up for sewer or drain, earthquake, cyber event, identity restoration, and fraud loss. Both companies offer multipolicy discounts when you bundle your renters and auto insurance policies.",
+          "page_age": "2025-10-03T18:10:00",
+          "profile": {
+            "name": "U.S. News",
+            "url": "https://www.usnews.com/insurance/renters-insurance/allstate-vs-state-farm",
+            "long_name": "usnews.com",
+            "img": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "usnews.com",
+            "hostname": "www.usnews.com",
+            "favicon": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8",
+            "path": "\u203a insurance  \u203a renters-insurance  \u203a allstate-vs-state-farm"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/grYpGCIq9NGgQh9PSgM_g7slm9mlMxVeEt6HlzJIcds/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dXNuZXdzLmNvbS9k/aW1zNC9VU05FV1Mv/ODg4ODczMC8yMTQ3/NDgzNjQ3L3RodW1i/bmFpbC85NzB4NjQ3/L3F1YWxpdHkvODUv/P3VybD1odHRwcyUz/QSUyRiUyRnd3dy51/c25ld3MuY29tJTJG/Y21zbWVkaWElMkY1/MiUyRjdlJTJGNGIy/NTk5Yjk0ZjNhYmY5/ZWJiZWI4MWZhYTVj/NCUyRjE5MTAxOC1z/dG9jay5qcGc",
+            "original": "https://www.usnews.com/dims4/USNEWS/8888730/2147483647/thumbnail/970x647/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F52%2F7e%2F4b2599b94f3abf9ebbeb81faa5c4%2F191018-stock.jpg",
+            "logo": false
+          },
+          "age": "October 3, 2025"
+        },
+        {
+          "title": "State Farm vs. Lemonade Renters Insurance (2025) | U.S. News",
+          "url": "https://www.usnews.com/insurance/renters-insurance/lemonade-vs-state-farm",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm and Lemonade offer standard renters insurance policies that include coverage for personal property, liability, additional living expenses, and guest medical expenses.",
+          "page_age": "2025-10-03T18:59:00",
+          "profile": {
+            "name": "U.S. News",
+            "url": "https://www.usnews.com/insurance/renters-insurance/lemonade-vs-state-farm",
+            "long_name": "usnews.com",
+            "img": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "usnews.com",
+            "hostname": "www.usnews.com",
+            "favicon": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8",
+            "path": "\u203a insurance  \u203a renters-insurance  \u203a lemonade-vs-state-farm"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/grYpGCIq9NGgQh9PSgM_g7slm9mlMxVeEt6HlzJIcds/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dXNuZXdzLmNvbS9k/aW1zNC9VU05FV1Mv/ODg4ODczMC8yMTQ3/NDgzNjQ3L3RodW1i/bmFpbC85NzB4NjQ3/L3F1YWxpdHkvODUv/P3VybD1odHRwcyUz/QSUyRiUyRnd3dy51/c25ld3MuY29tJTJG/Y21zbWVkaWElMkY1/MiUyRjdlJTJGNGIy/NTk5Yjk0ZjNhYmY5/ZWJiZWI4MWZhYTVj/NCUyRjE5MTAxOC1z/dG9jay5qcGc",
+            "original": "https://www.usnews.com/dims4/USNEWS/8888730/2147483647/thumbnail/970x647/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F52%2F7e%2F4b2599b94f3abf9ebbeb81faa5c4%2F191018-stock.jpg",
+            "logo": false
+          },
+          "age": "October 3, 2025"
+        },
+        {
+          "title": "r/Insurance on Reddit: State Farm Quote Question",
+          "url": "https://www.reddit.com/r/Insurance/comments/1hlddpq/state_farm_quote_question/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "54 votes, 14 comments. What does this mean compared to just replacement cost? Loss Settlement Option - Personal Property B1 - Limited Replacement Cost",
+          "page_age": "2024-12-24T13:19:16",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Insurance/comments/1hlddpq/state_farm_quote_question/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/insurance  \u203a state farm quote question"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A5H_aQiEBuUODR0lNeU8iDfhrWUvO8oEmRGE_mcS_gM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVkZGl0c3RhdGlj/LmNvbS9pY29uLnBu/Zw",
+            "original": "https://www.redditstatic.com/icon.png",
+            "logo": true
+          },
+          "age": "December 24, 2024"
+        },
+        {
+          "title": "r/InsuranceClaims on Reddit: Fighting with State Farm renters insurance",
+          "url": "https://www.reddit.com/r/InsuranceClaims/comments/1jamm03/fighting_with_state_farm_renters_insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "I am currently in a fight with my State Farm over my personal property coverage. I live in South Carolina and my house was affected by the wildfires that were started in my neighborhood. My house has very bad smoke damage and has ruined most of my clothes , beds, couches and other soft goods.",
+          "page_age": "2025-03-13T20:59:50",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/InsuranceClaims/comments/1jamm03/fighting_with_state_farm_renters_insurance/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/insuranceclaims  \u203a fighting with state farm renters insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A5H_aQiEBuUODR0lNeU8iDfhrWUvO8oEmRGE_mcS_gM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVkZGl0c3RhdGlj/LmNvbS9pY29uLnBu/Zw",
+            "original": "https://www.redditstatic.com/icon.png",
+            "logo": true
+          },
+          "age": "March 13, 2025"
+        },
+        {
+          "title": "What Are the Different Types of Insurance? - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/residence/what-are-all-the-different-types-of-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Renters insurance provides coverage for your stuff such as computers, TVs, electronics, bicycles, furniture and clothing in the case of a covered loss, such as a fire, theft or vandalism.",
+          "page_age": "2025-10-15T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/residence/what-are-all-the-different-types-of-insurance",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a residence  \u203a what are the different types of insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ryHvrQhmMfA6pfi0qhUuhiCPE5OovUus89OYvN3EOeE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L3doYXQtYXJlLWFs/bC10aGUtZGlmZmVy/ZW50LXR5cGVzLW9m/LWluc3VyYW5jZS5q/cGc",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/what-are-all-the-different-types-of-insurance.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "State Farm vs. Progressive Renters Insurance (2025) | U.S. News",
+          "url": "https://www.usnews.com/insurance/renters-insurance/state-farm-vs-progressive",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm and Progressive cover fire, including the loss or damage of personal property due to fire or smoke. Also, if you must temporarily relocate due to a fire, the additional expenses portion of your policy will help provide coverage. Similar to most renters insurance companies, State Farm and Progressive don&#x27;t cover car theft, even if it happens on the rental property.",
+          "page_age": "2025-10-03T19:36:00",
+          "profile": {
+            "name": "U.S. News",
+            "url": "https://www.usnews.com/insurance/renters-insurance/state-farm-vs-progressive",
+            "long_name": "usnews.com",
+            "img": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "usnews.com",
+            "hostname": "www.usnews.com",
+            "favicon": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8",
+            "path": "\u203a insurance  \u203a renters-insurance  \u203a state-farm-vs-progressive"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/grYpGCIq9NGgQh9PSgM_g7slm9mlMxVeEt6HlzJIcds/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dXNuZXdzLmNvbS9k/aW1zNC9VU05FV1Mv/ODg4ODczMC8yMTQ3/NDgzNjQ3L3RodW1i/bmFpbC85NzB4NjQ3/L3F1YWxpdHkvODUv/P3VybD1odHRwcyUz/QSUyRiUyRnd3dy51/c25ld3MuY29tJTJG/Y21zbWVkaWElMkY1/MiUyRjdlJTJGNGIy/NTk5Yjk0ZjNhYmY5/ZWJiZWI4MWZhYTVj/NCUyRjE5MTAxOC1z/dG9jay5qcGc",
+            "original": "https://www.usnews.com/dims4/USNEWS/8888730/2147483647/thumbnail/970x647/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F52%2F7e%2F4b2599b94f3abf9ebbeb81faa5c4%2F191018-stock.jpg",
+            "logo": false
+          },
+          "age": "October 3, 2025"
+        },
+        {
+          "title": "Geico vs. State Farm Renters Insurance (2025) | U.S. News",
+          "url": "https://www.usnews.com/insurance/renters-insurance/geico-vs-state-farm",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm, on the other hand, ... renters insurance policies that include coverage for personal property, liability, additional living expenses, and guest medical expenses....",
+          "page_age": "2025-10-02T21:26:00",
+          "profile": {
+            "name": "U.S. News",
+            "url": "https://www.usnews.com/insurance/renters-insurance/geico-vs-state-farm",
+            "long_name": "usnews.com",
+            "img": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "usnews.com",
+            "hostname": "www.usnews.com",
+            "favicon": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8",
+            "path": "\u203a insurance  \u203a renters-insurance  \u203a geico-vs-state-farm"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/grYpGCIq9NGgQh9PSgM_g7slm9mlMxVeEt6HlzJIcds/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dXNuZXdzLmNvbS9k/aW1zNC9VU05FV1Mv/ODg4ODczMC8yMTQ3/NDgzNjQ3L3RodW1i/bmFpbC85NzB4NjQ3/L3F1YWxpdHkvODUv/P3VybD1odHRwcyUz/QSUyRiUyRnd3dy51/c25ld3MuY29tJTJG/Y21zbWVkaWElMkY1/MiUyRjdlJTJGNGIy/NTk5Yjk0ZjNhYmY5/ZWJiZWI4MWZhYTVj/NCUyRjE5MTAxOC1z/dG9jay5qcGc",
+            "original": "https://www.usnews.com/dims4/USNEWS/8888730/2147483647/thumbnail/970x647/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F52%2F7e%2F4b2599b94f3abf9ebbeb81faa5c4%2F191018-stock.jpg",
+            "logo": false
+          },
+          "age": "October 2, 2025"
+        },
+        {
+          "title": "Does Renters Insurance Cover Property in Self-Storage Units? - ValuePenguin",
+          "url": "https://www.valuepenguin.com/does-renters-insurance-cover-property-self-storage-units",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "You can combine that limit with the $5,000 from your renters policy, giving you $20,000 in coverage. State Farm offers a separate policy called a personal articles policy that gives you additional coverage for your belongings outside of your normal renters policy.",
+          "page_age": "2025-07-22T18:16:02",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/does-renters-insurance-cover-property-self-storage-units",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a does-renters-insurance-cover-property-self-storage-units"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/RKWNJFvLf2S1qr57sVSwEJhVRe11PnCWzZ4GZ6laObE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL0dldHR5SW1h/Z2VzLTE1NzY3NjE3/NV93dnI2MWM",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/GettyImages-157676175_wvr61c",
+            "logo": false
+          },
+          "age": "July 22, 2025"
+        },
+        {
+          "title": "What Kind of Insurance Does State Farm Offer? - LegalClarity",
+          "url": "https://legalclarity.org/what-kind-of-insurance-does-state-farm-offer/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm\u2019s renters insurance protects tenants against financial losses related to personal belongings, liability risks, and additional living expenses. Unlike homeowners insurance, it does not cover the structure itself but focuses on ...",
+          "page_age": "2025-03-06T05:45:24",
+          "profile": {
+            "name": "LegalClarity",
+            "url": "https://legalclarity.org/what-kind-of-insurance-does-state-farm-offer/",
+            "long_name": "legalclarity.org",
+            "img": "https://imgs.search.brave.com/J9MxGTdj5fiLFGToourtQD6PyqQtUVTRcL8IxQbJOmI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDI3NjU2OGJk/ZjQ4NWI0M2I2M2Fi/OTM5NTgyNTY4ODNh/YmZmYTJiYWQ5Mzlh/YWU1ODI5NTg0MmJi/Y2E1MWI0NS9sZWdh/bGNsYXJpdHkub3Jn/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "legalclarity.org",
+            "hostname": "legalclarity.org",
+            "favicon": "https://imgs.search.brave.com/J9MxGTdj5fiLFGToourtQD6PyqQtUVTRcL8IxQbJOmI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDI3NjU2OGJk/ZjQ4NWI0M2I2M2Fi/OTM5NTgyNTY4ODNh/YmZmYTJiYWQ5Mzlh/YWU1ODI5NTg0MmJi/Y2E1MWI0NS9sZWdh/bGNsYXJpdHkub3Jn/Lw",
+            "path": "\u203a what-kind-of-insurance-does-state-farm-offer"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/T5g8lzaXbMQL8j3Auak1mZZI9PyxufWZHirtPhrfuqY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9sZWdh/bGNsYXJpdHkub3Jn/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI0/LzA5L2xlZ2FsY2xh/cml0eWkucG5n",
+            "original": "https://legalclarity.org/wp-content/uploads/2024/09/legalclarityi.png",
+            "logo": false
+          },
+          "age": "March 6, 2025"
+        },
+        {
+          "title": "Insurance Tips for College Students and Their Belongings - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/college/tips-to-keep-your-college-students-and-their-belongings-safe",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If you don&#x27;t feel the homeowners insurance coverage is adequate, you might consider a personal articles policy to provide additional coverage for electronics, musical instruments or sports equipment. Does the homeowners insurance policy cover my student and their property if they live off campus? Typically, no. In this case, you may want to consider looking at renters insurance for your college student.",
+          "page_age": "2025-09-23T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/college/tips-to-keep-your-college-students-and-their-belongings-safe",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a college  \u203a tips to keep your college students and their belongings safe"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/gWuMLLYoy8fd-u9zSute32Ma7raBaZoztECTDUXM5ts/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/LzM0Ni1jb2xsZWdl/LXN0dWRlbnRzLWJl/bG9uZ2luZ3Mtc2Fm/ZS13aWRlLmpwZw",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/346-college-students-belongings-safe-wide.jpg",
+            "logo": false
+          },
+          "age": "September 23, 2025"
+        },
+        {
+          "title": "Home Inventory: How To Create One - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/residence/home-inventory-how-to-create-one",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Sending the list may have the added ... home or renters coverage or to add a personal articles insurance policy. To help maintain an accurate inventory list, update it annually or anytime you move. This might help save you time and stress in the future if you experience a loss. We are dedicated to help you recover your losses quickly and efficiently. If you have a State Farm\u00ae claim that involves significant personal property damage, you ...",
+          "page_age": "2025-09-10T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/residence/home-inventory-how-to-create-one",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a residence  \u203a home inventory: how to create one"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/LGAKxRbikjozMdfm1nvXULIZK97vokV8a76ByyyTpYc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L2NyZWF0aW5nLWEt/aG9tZS1pbnZlbnRv/cnkuanBn",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/creating-a-home-inventory.jpg",
+            "logo": false
+          },
+          "age": "September 10, 2025"
+        },
+        {
+          "title": "Best Landlord Insurance for Rental Property Owners | Bankrate",
+          "url": "https://www.bankrate.com/insurance/homeowners-insurance/best-landlord-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If you\u2019re having trouble navigating ... State Farm\u2019s many local agents available for face-to-face service. ... Landlord insurance policies from Farmers are fairly basic, but policyholders can choose from a handful of endorsements, like loss of rent coverage, personal property coverage and ...",
+          "page_age": "2025-09-01T04:00:00",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/homeowners-insurance/best-landlord-insurance/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a homeowners insurance"
+          },
+          "age": "September 1, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

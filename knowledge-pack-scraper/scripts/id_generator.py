@@ -33,11 +33,6 @@ def generate_url_id() -> str:
     return generate_id('url_')
 
 
-def generate_agent_id() -> str:
-    """Generate an agent ID (agnt_xxxxxxxxxx)."""
-    return generate_id('agnt_')
-
-
 def generate_raw_id() -> str:
     """Generate a raw data ID (raw_xxxxxxxxxx)."""
     return generate_id('raw_')
@@ -51,3 +46,8 @@ def generate_extraction_id() -> str:
 def generate_search_id() -> str:
     """Generate a search ID (search_xxxxxxxxxx)."""
     return generate_id('search_')
+
+
+def generate_websearch_id() -> str:
+    """Generate a websearch ID (websearch_xxxxxxxxxx)."""
+    return generate_id('websearch_')

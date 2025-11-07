@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_iwh61efljt40u1pon4tv17xi",
+  "search_id": "search_iwvaeyvpkuk9h2ljjog2i0j1",
+  "timestamp": "2025-11-07T12:32:25.698953",
+  "startedAt": "2025-11-07T12:32:25.698953",
+  "completedAt": "2025-11-07T12:32:27.361348",
+  "durationSeconds": 1.66,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:illinois.gov/insurance consumer guides",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:illinois.gov/insurance consumer guides",
+      "show_strict_warning": false,
+      "cleaned": "consumer guides",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "consumer guides",
+        "sites": [
+          "illinois.gov/insurance"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

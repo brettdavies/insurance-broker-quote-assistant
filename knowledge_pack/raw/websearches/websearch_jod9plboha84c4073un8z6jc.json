@@ -1,0 +1,52 @@
+{
+  "websearch_id": "websearch_jod9plboha84c4073un8z6jc",
+  "search_id": "search_sablkaxvqnnwsx9qah132ns5",
+  "timestamp": "2025-11-07T12:33:58.917489",
+  "startedAt": "2025-11-07T12:33:58.917489",
+  "completedAt": "2025-11-07T12:34:00.957451",
+  "durationSeconds": 2.04,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"maximum combined discount\" auto insurance",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"maximum combined discount\" auto insurance",
+      "show_strict_warning": false,
+      "cleaned": "maximum combined discount auto insurance",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "maximum combined discount auto insurance"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

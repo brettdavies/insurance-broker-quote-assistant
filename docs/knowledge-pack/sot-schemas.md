@@ -26,7 +26,10 @@ This document defines the JSON schemas used throughout the knowledge pack, from 
 | `source-metadata.json` | Source citation format | `knowledge_pack/schemas/` |
 | `resolution-metadata.json` | Conflict resolution format | `knowledge_pack/schemas/` |
 | `raw-data-schema.json` | Raw scraped data format | `knowledge_pack/schemas/` |
-| `search-tracker.json` | Phase 2 search progress tracking | `knowledge_pack/` |
+| `search-tracker.json` | Phase 2 search query tracking (476 queries) | `knowledge-pack-scraper/trackers/` |
+| `url-tracker.json` | Phase 2 discovered URL tracking (2,950 URLs) | `knowledge-pack-scraper/trackers/` |
+| `page-tracker.json` | Phase 2 fetched page tracking | `knowledge-pack-scraper/trackers/` |
+| `websearch-schema.json` | Brave API execution instance format | `knowledge_pack/raw/websearches/` |
 
 ---
 
@@ -849,14 +852,30 @@ interface URLTracker {
 interface URLEntry {
   id: string;                    // cuid2 with "url_" prefix
   search_ids: string[];          // Array of search IDs that discovered this URL
+  websearch_ids: string[];       // Array of websearch IDs that discovered this URL
   url: string;                   // Full URL
-  url_hash: string;              // SHA256 hash (first 16 chars) for deduplication
-  status: "pending" | "claimed" | "completed" | "failed";
-  assignedTo?: string;           // Agent ID (cuid2 with "agnt_" prefix)
-  claimedAt?: string;            // ISO 8601 timestamp
-  completedAt?: string;          // ISO 8601 timestamp
-  pageId?: string;               // Generated page ID after fetch
-  errorMessage?: string;         // Error details if failed
+  urlHash: string;               // SHA256 hash (first 16 chars) for deduplication
+  priority?: number;             // Optional priority for fetch ordering
+
+  // Brave API enrichment fields (from websearch response)
+  title: string;                 // Page title from Brave API
+  description: string;           // Page description from Brave API
+  page_age: string;              // Page age (e.g., "2023-08-15T00:00:00")
+  language: string;              // Language code (e.g., "en")
+  type: string;                  // Result type (e.g., "search_result")
+  subtype: string;               // Result subtype (e.g., "generic")
+  hostname: string;              // Domain hostname (e.g., "www.geico.com")
+  source_name: string;           // Source name from profile (e.g., "GEICO")
+
+  // Fetch status and results
+  status: "pending" | "completed" | "failed";
+  assignedTo?: string;           // Deprecated (no longer used)
+  pageId?: string;               // Generated page ID after fetch (page_{cuid2})
+  htmlFile?: string;             // Path to HTML file (relative to knowledge_pack/)
+  markdownFile?: string;         // Path to markdown file (relative to knowledge_pack/)
+  fetchedAt?: string;            // ISO 8601 timestamp
+  fetchError?: string;           // Error details if failed
+  retryCount: number;            // Number of fetch retries (defaults to 0)
 }
 ```
 
@@ -868,34 +887,63 @@ interface URLEntry {
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-06T16:30:00Z",
-    "totalUrls": 150,
-    "description": "Phase 2 URL tracker - URLs pending fetch"
+    "lastUpdated": "2025-11-07T12:35:10Z",
+    "totalUrls": 2950,
+    "description": "Phase 2 URL tracker - URLs discovered via Brave API"
   },
   "statusCounts": {
-    "pending": 100,
-    "claimed": 5,
-    "completed": 40,
-    "failed": 5
+    "pending": 2950,
+    "completed": 0,
+    "failed": 0
   },
   "urls": [
     {
       "id": "url_ckm9x7wdx1",
       "search_ids": ["search_abc123", "search_def456"],
+      "websearch_ids": ["websearch_rjkpy2qz8juh0frtp8jqebis", "websearch_dgju3b0n4z6jq9if95t31m9m"],
       "url": "https://www.geico.com/auto/discounts/",
-      "url_hash": "a1b2c3d4e5f6g7h8",
+      "urlHash": "a1b2c3d4e5f6g7h8",
+      "priority": null,
+      "title": "Auto Insurance Discounts - GEICO",
+      "description": "Save money on your auto insurance with GEICO's discounts. Multi-policy, safe driver, good student, and more.",
+      "page_age": "2023-08-15T00:00:00",
+      "language": "en",
+      "type": "search_result",
+      "subtype": "generic",
+      "hostname": "www.geico.com",
+      "source_name": "GEICO",
       "status": "completed",
-      "assignedTo": "agnt_cm1a5b7k9p",
-      "claimedAt": "2025-11-06T15:00:00Z",
-      "completedAt": "2025-11-06T15:02:30Z",
-      "pageId": "page_xyz789"
+      "assignedTo": null,
+      "pageId": "page_xyz789",
+      "htmlFile": "../knowledge_pack/raw/pages/page_xyz789.html",
+      "markdownFile": "../knowledge_pack/raw/pages/page_xyz789.md",
+      "fetchedAt": "2025-11-07T13:00:00Z",
+      "fetchError": null,
+      "retryCount": 0
     },
     {
       "id": "url_ckm9x7wtu6",
       "search_ids": ["search_ghi789"],
+      "websearch_ids": ["websearch_loynibu0sv1yy4to6tsrcs99"],
       "url": "https://www.statefarm.com/insurance/home/discounts",
-      "url_hash": "i9j0k1l2m3n4o5p6",
-      "status": "pending"
+      "urlHash": "i9j0k1l2m3n4o5p6",
+      "priority": null,
+      "title": "Home Insurance Discounts - State Farm",
+      "description": "Discover ways to save on home insurance with State Farm. Bundle, security system, and loyalty discounts available.",
+      "page_age": "2024-01-10T00:00:00",
+      "language": "en",
+      "type": "search_result",
+      "subtype": "generic",
+      "hostname": "www.statefarm.com",
+      "source_name": "State Farm",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
     }
   ]
 }
@@ -904,9 +952,12 @@ interface URLEntry {
 ### Field Notes
 
 - **search_ids**: Array of all search IDs that discovered this URL (supports multi-search provenance)
-- **url_hash**: Calculated via `sha256(normalize_url(url))[:16]` for deduplication
-- **URL Deduplication**: Multiple searches can discover the same URL - all search IDs are tracked in the array
-- **status**: Tracks fetch lifecycle (pending → claimed → completed/failed)
+- **websearch_ids**: Array of all websearch IDs (Brave API executions) that discovered this URL
+- **urlHash**: Calculated via `sha256(normalize_url(url))[:16]` for deduplication
+- **Brave enrichment**: 8 fields (title, description, page_age, language, type, subtype, hostname, source_name) extracted from Brave API response
+- **URL Deduplication**: Multiple searches can discover the same URL - all search_ids and websearch_ids are tracked
+- **Provenance chain**: URL → websearch_ids → search_ids → category/carrier metadata
+- **status**: Tracks fetch lifecycle (pending → completed/failed)
 
 ---
 
@@ -993,6 +1044,203 @@ interface PageEntry {
 - **rawDataFile**: Filename pattern is `data_{page_id}.raw.json` (one file per page)
 - **dataPointsExtracted**: Can be 0 if page has no relevant insurance data
 - **Provenance lookup**: page → url_id → URL.search_ids → original searches
+
+---
+
+## 5.3. Websearch Schema
+
+### Purpose
+Store complete Brave API request/response for each search execution. Provides audit trail and enables reprocessing of search results without re-executing API calls.
+
+### JSON Schema
+
+```typescript
+interface WebsearchRecord {
+  websearch_id: string;           // cuid2 with "websearch_" prefix
+  search_id: string;              // References search tracker entry (search_{cuid2})
+  timestamp: string;              // ISO 8601 timestamp
+  startedAt: string;              // ISO 8601 timestamp
+  completedAt: string;            // ISO 8601 timestamp
+  durationSeconds: number;        // Execution duration
+  urlsDiscoveredCount: number;    // Total URLs found in response
+  errorMessage?: string;          // Error details if failed
+  request: {
+    endpoint: string;             // Brave API endpoint URL
+    query: string;                // Search query string
+    params: {
+      safesearch: string;         // "strict" | "moderate" | "off"
+      freshness: string;          // "py" (past year) | "pm" (past month) | etc.
+      text_decorations: boolean;
+      result_filter: string;      // "web,query"
+      extra_snippets: boolean;
+      summary: boolean;
+      count: number;              // Results per page
+      offset: number;             // Pagination offset
+    };
+  };
+  response: {                     // Complete Brave API response
+    type: string;                 // "search"
+    query: {
+      original: string;
+      show_strict_warning: boolean;
+      is_navigational: boolean;
+      is_news_breaking: boolean;
+      spellcheck_off: boolean;
+      country: string;
+      bad_results: boolean;
+      should_fallback: boolean;
+      postal_code: string;
+      city: string;
+      header_country: string;
+      more_results_available: boolean;
+      state: string;
+    };
+    mixed: {
+      type: string;
+      main: Array<{type: string; index: number; all: boolean}>;
+      top: any[];
+      side: any[];
+    };
+    web: {
+      type: string;
+      results: Array<{
+        title: string;
+        url: string;
+        is_source_local: boolean;
+        is_source_both: boolean;
+        description: string;
+        page_age: string;
+        page_fetched: string;
+        profile: {
+          name: string;
+          long_name: string;
+          url: string;
+          img: string;
+        };
+        language: string;
+        family_friendly: boolean;
+        type: string;
+        subtype: string;
+        meta_url: {
+          scheme: string;
+          netloc: string;
+          hostname: string;
+          favicon: string;
+          path: string;
+        };
+        thumbnail: {
+          src: string;
+          original: string;
+          logo: boolean;
+        };
+        age: string;
+      }>;
+      family_friendly: boolean;
+    };
+  };
+}
+```
+
+### Example
+
+```json
+{
+  "websearch_id": "websearch_rjkpy2qz8juh0frtp8jqebis",
+  "search_id": "search_q5vmceqgcjyaobydy6q2xpuc",
+  "timestamp": "2025-11-07T12:20:15.560234",
+  "startedAt": "2025-11-07T12:20:15.560234",
+  "completedAt": "2025-11-07T12:20:16.823456",
+  "durationSeconds": 1.26,
+  "urlsDiscoveredCount": 21,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" \"available in\" states",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "type": "search",
+    "query": {
+      "original": "\"GEICO\" \"available in\" states",
+      "show_strict_warning": false,
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": true,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "us",
+      "more_results_available": true,
+      "state": ""
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [{"type": "web", "index": 0, "all": true}],
+      "top": [],
+      "side": []
+    },
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "GEICO Coverage Areas - States Where GEICO Operates",
+          "url": "https://www.geico.com/information/states/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO is available in all 50 states and the District of Columbia.",
+          "page_age": "2023-08-15T00:00:00",
+          "page_fetched": "2025-11-07T12:20:00",
+          "profile": {
+            "name": "GEICO",
+            "long_name": "Government Employees Insurance Company",
+            "url": "https://www.geico.com",
+            "img": "https://imgs.search.brave.com/..."
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "www.geico.com",
+            "hostname": "www.geico.com",
+            "favicon": "https://imgs.search.brave.com/favicon.ico",
+            "path": "/information/states/"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/...",
+            "original": "https://imgs.search.brave.com/...",
+            "logo": false
+          },
+          "age": "2023-08-15T00:00:00"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}
+```
+
+### Field Notes
+
+- **websearch_id**: Unique execution instance (separate from search_id to track multiple API runs)
+- **search_id**: Links back to the originating query in search-tracker.json
+- **urlsDiscoveredCount**: Total URLs in response.web.results array
+- **Complete response**: Full Brave API JSON for audit trail and reprocessing
+- **Enrichment fields**: title, description, page_age, language, type, subtype, hostname, source_name extracted from response
+- **Provenance chain**: websearch → search → category/carrier metadata
+- **Compliance**: Stored for regulatory audit trail and citation verification
 
 ---
 

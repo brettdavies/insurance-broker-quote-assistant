@@ -1,0 +1,908 @@
+{
+  "websearch_id": "websearch_js593qxpmfjgsuhdvirkij6e",
+  "search_id": "search_yk9oa09itpmxxqelvcxor5c3",
+  "timestamp": "2025-11-07T12:31:52.658658",
+  "startedAt": "2025-11-07T12:31:52.658658",
+  "completedAt": "2025-11-07T12:31:54.605809",
+  "durationSeconds": 1.95,
+  "urlsDiscoveredCount": 21,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"Florida\" hurricane shutters requirement",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"Florida\" hurricane shutters requirement",
+      "show_strict_warning": false,
+      "cleaned": "Florida hurricane shutters requirement",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "Florida hurricane shutters requirement"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 20,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Are Hurricane Shutters Mandatory in Florida? - Storm Smart",
+          "url": "https://www.stormsmart.com/faqs/hurricane-shutters/are-hurricane-shutters-mandatory-in-florida/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Hurricane shutters are not mandatory for all homes in Florida, but state building codes require certain homes in high-risk areas to have impact-resistant windows, doors, or approved storm protection.",
+          "page_age": "2025-05-02T15:59:01",
+          "profile": {
+            "name": "Storm Smart",
+            "url": "https://www.stormsmart.com/faqs/hurricane-shutters/are-hurricane-shutters-mandatory-in-florida/",
+            "long_name": "stormsmart.com",
+            "img": "https://imgs.search.brave.com/dbcy1IxLXUrROZatCBs389tERqMdQXdiL0bGlbC9Hq0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQ5OTNiMGEx/NzJkNGYyOTQxOGVm/YjYwZGEzZGZjODdi/NTE1ZDgxOGM4MDQ2/OWZlNjMyMTQ2NzEz/ZmNlZDM1Mi93d3cu/c3Rvcm1zbWFydC5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "stormsmart.com",
+            "hostname": "www.stormsmart.com",
+            "favicon": "https://imgs.search.brave.com/dbcy1IxLXUrROZatCBs389tERqMdQXdiL0bGlbC9Hq0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQ5OTNiMGEx/NzJkNGYyOTQxOGVm/YjYwZGEzZGZjODdi/NTE1ZDgxOGM4MDQ2/OWZlNjMyMTQ2NzEz/ZmNlZDM1Mi93d3cu/c3Rvcm1zbWFydC5j/b20v",
+            "path": "  \u203a faqs for hurricane protection products  \u203a faqs for hurricane shutters  \u203a are hurricane shutters mandatory in florida?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/M0d7giq1dSnFINSSVOInhgnOcO4i6Iex9IDuxZtWzMQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3Rvcm1zbWFydC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjUvMDQvQXJlLUh1/cnJpY2FuZS1TaHV0/dGVycy1NYW5kYXRv/cnktaW4tRmxvcmlk/YS5wbmc",
+            "original": "https://www.stormsmart.com/wp-content/uploads/2025/04/Are-Hurricane-Shutters-Mandatory-in-Florida.png",
+            "logo": false
+          },
+          "age": "May 2, 2025"
+        },
+        {
+          "title": "Do you need a permit to install hurricane shutters in Florida? - Storm Smart",
+          "url": "https://www.stormsmart.com/faqs/do-you-need-a-permit-to-install-hurricane-shutters-in-florida/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Do you need a permit to install hurricane shutters in Florida? Yes, in most cases, you need a permit to install hurricane shutters in Florida, as the state has specific building codes to ensure safety during hurricanes.",
+          "page_age": "2025-08-21T14:32:51",
+          "profile": {
+            "name": "Storm Smart",
+            "url": "https://www.stormsmart.com/faqs/do-you-need-a-permit-to-install-hurricane-shutters-in-florida/",
+            "long_name": "stormsmart.com",
+            "img": "https://imgs.search.brave.com/dbcy1IxLXUrROZatCBs389tERqMdQXdiL0bGlbC9Hq0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQ5OTNiMGEx/NzJkNGYyOTQxOGVm/YjYwZGEzZGZjODdi/NTE1ZDgxOGM4MDQ2/OWZlNjMyMTQ2NzEz/ZmNlZDM1Mi93d3cu/c3Rvcm1zbWFydC5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "stormsmart.com",
+            "hostname": "www.stormsmart.com",
+            "favicon": "https://imgs.search.brave.com/dbcy1IxLXUrROZatCBs389tERqMdQXdiL0bGlbC9Hq0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQ5OTNiMGEx/NzJkNGYyOTQxOGVm/YjYwZGEzZGZjODdi/NTE1ZDgxOGM4MDQ2/OWZlNjMyMTQ2NzEz/ZmNlZDM1Mi93d3cu/c3Rvcm1zbWFydC5j/b20v",
+            "path": "  \u203a faqs for hurricane protection products  \u203a do you need a permit to install hurricane shutters in florida?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/DU6T21RwsF6SyYHlJIX-lWpc4eEAulZHJe6p4QbkEUU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3Rvcm1zbWFydC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjIvMDkvUGljdHVy/ZTQtMS5qcGc",
+            "original": "https://www.stormsmart.com/wp-content/uploads/2022/09/Picture4-1.jpg",
+            "logo": false
+          },
+          "age": "August 21, 2025"
+        },
+        {
+          "title": "Florida Building Codes and Laws Around Hurricane Shutters",
+          "url": "https://eurexshutters.com/florida-building-codes-and-laws-around-hurricane-shutters/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "These standards focus on strength, durability, and optimal performance for hurricane opening protection, especially under extreme conditions like 150+ mile-per-hour winds. The building code specifies the requirements for hurricane-rated products, ...",
+          "page_age": "2025-01-21T12:51:00",
+          "profile": {
+            "name": "Eurex Shutters",
+            "url": "https://eurexshutters.com/florida-building-codes-and-laws-around-hurricane-shutters/",
+            "long_name": "eurexshutters.com",
+            "img": "https://imgs.search.brave.com/RQSYVOwU5ckTsSZZmB8sVEY_41ziPdETNKML8Gjdu8c/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY1M2E2NzA2/YWVjODU4NmYwODk2/ZGEyNjBiYWIyZTVj/MWQ1MzNiZTkzMmJj/YmU5MzVjYTZiZGEy/NDE2Zjg4ZS9ldXJl/eHNodXR0ZXJzLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "eurexshutters.com",
+            "hostname": "eurexshutters.com",
+            "favicon": "https://imgs.search.brave.com/RQSYVOwU5ckTsSZZmB8sVEY_41ziPdETNKML8Gjdu8c/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY1M2E2NzA2/YWVjODU4NmYwODk2/ZGEyNjBiYWIyZTVj/MWQ1MzNiZTkzMmJj/YmU5MzVjYTZiZGEy/NDE2Zjg4ZS9ldXJl/eHNodXR0ZXJzLmNv/bS8",
+            "path": "  \u203a home  \u203a hurricane prepardness  \u203a florida building codes and laws\u2026"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/FDujZWP98pXtLnFXNLLB-bS04rq04PdAz7HLLArcLlg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9ldXJl/eHNodXR0ZXJzLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/Mi8wNy9ldXJleC1w/cm90ZWN0cy15b3Vy/LWhvdXNlLmpwZw",
+            "original": "https://eurexshutters.com/wp-content/uploads/2022/07/eurex-protects-your-house.jpg",
+            "logo": false
+          },
+          "age": "January 21, 2025"
+        },
+        {
+          "title": "Understanding the New Law on Hurricane Protections for Homeowners Associations - Siegfried Rivera",
+          "url": "https://www.siegfriedrivera.com/blog/new-law-hurricane-protections-homeowners-associations/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The law details that \u201churricane protection\u201d includes, but is not limited to, roof systems that comply with the Florida Building Code and meet ASCE 7-22 standards, permanent fixed storm shutters, roll-down track storm shutters, impact-resistant ...",
+          "page_age": "2025-06-10T01:31:47",
+          "profile": {
+            "name": "Siegfried Rivera",
+            "url": "https://www.siegfriedrivera.com/blog/new-law-hurricane-protections-homeowners-associations/",
+            "long_name": "siegfriedrivera.com",
+            "img": "https://imgs.search.brave.com/Cp7C5qm9YB7RamBTFs86WBYuKsZ20rbizAxoZy33vkk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc4M2Q0NDJh/MDdiOTk1NzI2M2Vh/MmUzN2FmMTUxZTU2/NjE2N2VlNGU3ZDYw/YTliNTI2ODJlNTVm/Y2Q4NDQwOC93d3cu/c2llZ2ZyaWVkcml2/ZXJhLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "siegfriedrivera.com",
+            "hostname": "www.siegfriedrivera.com",
+            "favicon": "https://imgs.search.brave.com/Cp7C5qm9YB7RamBTFs86WBYuKsZ20rbizAxoZy33vkk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc4M2Q0NDJh/MDdiOTk1NzI2M2Vh/MmUzN2FmMTUxZTU2/NjE2N2VlNGU3ZDYw/YTliNTI2ODJlNTVm/Y2Q4NDQwOC93d3cu/c2llZ2ZyaWVkcml2/ZXJhLmNvbS8",
+            "path": "  \u203a home  \u203a understanding the new law on hurricane protections for homeowners\u2019 associations"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ha3jJ7XNblwI_2RbOAV63xR-HBRXsE7mTNoPgoTqJPc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c2llZ2ZyaWVkcml2/ZXJhLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNC8wNi9I/T0EtSHVycmljYW5l/LVNodXR0ZXJzLmpw/Zw",
+            "original": "https://www.siegfriedrivera.com/wp-content/uploads/2024/06/HOA-Hurricane-Shutters.jpg",
+            "logo": false
+          },
+          "age": "June 10, 2025"
+        },
+        {
+          "title": "Can Florida HOAs Stop You From Installing Hurricane Shutters or Generators? - Storm Smart",
+          "url": "https://www.stormsmart.com/resources/florida-hoa-hurricane-protection-guide/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Under Florida HB 293 (2024), HOAs must allow code-compliant hurricane shutters, impact windows, generators, and reinforced roofs. Learn exactly what your HOA can, and can\u2019t, restrict.",
+          "page_age": "2025-08-04T20:29:04",
+          "profile": {
+            "name": "Storm Smart",
+            "url": "https://www.stormsmart.com/resources/florida-hoa-hurricane-protection-guide/",
+            "long_name": "stormsmart.com",
+            "img": "https://imgs.search.brave.com/dbcy1IxLXUrROZatCBs389tERqMdQXdiL0bGlbC9Hq0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQ5OTNiMGEx/NzJkNGYyOTQxOGVm/YjYwZGEzZGZjODdi/NTE1ZDgxOGM4MDQ2/OWZlNjMyMTQ2NzEz/ZmNlZDM1Mi93d3cu/c3Rvcm1zbWFydC5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "stormsmart.com",
+            "hostname": "www.stormsmart.com",
+            "favicon": "https://imgs.search.brave.com/dbcy1IxLXUrROZatCBs389tERqMdQXdiL0bGlbC9Hq0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQ5OTNiMGEx/NzJkNGYyOTQxOGVm/YjYwZGEzZGZjODdi/NTE1ZDgxOGM4MDQ2/OWZlNjMyMTQ2NzEz/ZmNlZDM1Mi93d3cu/c3Rvcm1zbWFydC5j/b20v",
+            "path": "  \u203a resources  \u203a can florida hoas stop you from installing hurricane shutters or generators?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/bmRa1I8ZGjFej-eKNEJQG4QY7unj5jPf6wHa2-VRpzY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3Rvcm1zbWFydC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjUvMDgvQ2FuLUZs/b3JpZGEtSE9Bcy1T/dG9wLVlvdS1Gcm9t/LUluc3RhbGxpbmct/SHVycmljYW5lLVNo/dXR0ZXJzLW9yLUdl/bmVyYXRvcnMucG5n",
+            "original": "https://www.stormsmart.com/wp-content/uploads/2025/08/Can-Florida-HOAs-Stop-You-From-Installing-Hurricane-Shutters-or-Generators.png",
+            "logo": false
+          },
+          "age": "August 4, 2025"
+        },
+        {
+          "title": "\u201cHurricane Window Protection Policies & Local Regulations\u201d \u2013 CAI Community Voice | Becker & Poliakoff",
+          "url": "https://beckerlawyers.com/hurricane-window-protection-policies-local-regulations-cai-community-voice/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In the wake of Tropical Storm/Category 1 Hurricane Elsa, and with September being National Preparedness Month, hurricane preparations are top of mind for many owners and associations, as are considerations for how long hurricane shutters, plywood, or other protective window coverings should remain in place following an active threat of a storm. Section 718.113(5) of the Florida Condominium Act requires each board of administration of a residential condominium to adopt hurricane shutter specifications for each building within each condominium operated by the association.",
+          "page_age": "2025-01-23T10:59:27",
+          "profile": {
+            "name": "Becker Lawyers",
+            "url": "https://beckerlawyers.com/hurricane-window-protection-policies-local-regulations-cai-community-voice/",
+            "long_name": "beckerlawyers.com",
+            "img": "https://imgs.search.brave.com/-XRMHdfJcIJoqnxE_VDwpzq1-964qvHEL9ngWrjs3gI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjJmOGZiNTBl/OWI2ZjUyNzlkNGI4/ODJjNzU0MjU0ZDQ3/MjYzMDkyOGY5NjQ4/N2ViOGEyNmU4YTNm/OWE5ZmMxYy9iZWNr/ZXJsYXd5ZXJzLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "beckerlawyers.com",
+            "hostname": "beckerlawyers.com",
+            "favicon": "https://imgs.search.brave.com/-XRMHdfJcIJoqnxE_VDwpzq1-964qvHEL9ngWrjs3gI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjJmOGZiNTBl/OWI2ZjUyNzlkNGI4/ODJjNzU0MjU0ZDQ3/MjYzMDkyOGY5NjQ4/N2ViOGEyNmU4YTNm/OWE5ZmMxYy9iZWNr/ZXJsYXd5ZXJzLmNv/bS8",
+            "path": "  \u203a home  \u203a uncategorized  \u203a \u201churricane window protection policies & local regulations\u201d \u2013 cai community voice"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/sbwKTnCgxXaT5TQLqYsuu2C1GHXfCH18nQpQlyp2p6Q/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9iZWNr/ZXJsYXd5ZXJzLmNv/bS9odXJyaWNhbmUt/d2luZG93LXByb3Rl/Y3Rpb24tcG9saWNp/ZXMtbG9jYWwtcmVn/dWxhdGlvbnMtY2Fp/LWNvbW11bml0eS12/b2ljZS8",
+            "original": "https://beckerlawyers.com/hurricane-window-protection-policies-local-regulations-cai-community-voice/",
+            "logo": false
+          },
+          "age": "January 23, 2025"
+        },
+        {
+          "title": "Hurricane shutter - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Hurricane_shutter",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The Miami-Dade County norms, often considered the most stringent requirements for hurricane shutters, rely on self-developed testing methods TAS201, 202 and 203. Passing the tests prescribed by the TAS norms is required only for shutters approved for use in the Florida HVHZ (High Velocity Hurricane Zone).",
+          "page_age": "2025-10-09T18:07:55",
+          "profile": {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Hurricane_shutter",
+            "long_name": "en.wikipedia.org",
+            "img": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "deep_results": {
+            "buttons": [
+              {
+                "type": "button_result",
+                "title": "Types of hurricane coverings",
+                "url": "https://en.wikipedia.org/wiki/Hurricane_shutter#Types_of_hurricane_coverings"
+              },
+              {
+                "type": "button_result",
+                "title": "Building codes for hurricane shutters",
+                "url": "https://en.wikipedia.org/wiki/Hurricane_shutter#Building_codes_for_hurricane_shutters"
+              }
+            ]
+          },
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "en.wikipedia.org",
+            "hostname": "en.wikipedia.org",
+            "favicon": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw",
+            "path": "\u203a wiki  \u203a Hurricane_shutter"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/M4JxIjAfZQskqWOCK97hKrkHLUlt3ICKvlgzDmMHdWg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9i/L2JiL1BseTEuanBn",
+            "original": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Ply1.jpg",
+            "logo": false
+          },
+          "age": "1 month ago"
+        },
+        {
+          "title": "Are Hurricane Windows Required in Florida? - FHIA Remodeling",
+          "url": "https://fhiaremodeling.com/blog/are-hurricane-windows-required-in-florida/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In High Velocity Hurricane Zones (HVHZ)\u2014which include Miami-Dade and Broward Counties\u2014impact windows or hurricane-approved shutters are required by code for all new construction and many renovation projects.",
+          "page_age": "2025-06-06T17:00:34",
+          "profile": {
+            "name": "FHIA",
+            "url": "https://fhiaremodeling.com/blog/are-hurricane-windows-required-in-florida/",
+            "long_name": "fhiaremodeling.com",
+            "img": "https://imgs.search.brave.com/HE8jfnBpqwiae6Gjp7J64FMyn-dRPhlKi3B9jKVODms/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTM5MmJhZmI0/NDcwZjVlZThhNDFm/ZGNjOWE1MThkNjM5/MGMxOTFjZWZiMjU4/MDNmZWMyY2FmZWUw/NTIyOWRjZS9maGlh/cmVtb2RlbGluZy5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "fhiaremodeling.com",
+            "hostname": "fhiaremodeling.com",
+            "favicon": "https://imgs.search.brave.com/HE8jfnBpqwiae6Gjp7J64FMyn-dRPhlKi3B9jKVODms/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTM5MmJhZmI0/NDcwZjVlZThhNDFm/ZGNjOWE1MThkNjM5/MGMxOTFjZWZiMjU4/MDNmZWMyY2FmZWUw/NTIyOWRjZS9maGlh/cmVtb2RlbGluZy5j/b20v",
+            "path": "  \u203a home  \u203a blogs  \u203a are hurricane windows required in florida? (2025 update)"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/zBKDh1CYkI-tH_6GIS_F2CAEs7tpV1KCH6LogH-qRQU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9maGlh/cmVtb2RlbGluZy5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjAvMDYvbWluay1t/aW5nbGUtS2dYMTU1/bldUdHMtdW5zcGxh/c2guanBn",
+            "original": "https://fhiaremodeling.com/wp-content/uploads/2020/06/mink-mingle-KgX155nWTts-unsplash.jpg",
+            "logo": false
+          },
+          "age": "June 6, 2025"
+        },
+        {
+          "title": "What Is the Florida Building Code (FBC)? - Storm Smart",
+          "url": "https://www.stormsmart.com/faqs/hurricane-shutters/what-is-the-florida-building-code-fbc/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The Florida Building Code has strict ... openings (windows, doors, and skylights) must be protected with impact-rated hurricane shutters or hurricane-resistant glass....",
+          "page_age": "2025-05-02T17:44:51",
+          "profile": {
+            "name": "Storm Smart",
+            "url": "https://www.stormsmart.com/faqs/hurricane-shutters/what-is-the-florida-building-code-fbc/",
+            "long_name": "stormsmart.com",
+            "img": "https://imgs.search.brave.com/dbcy1IxLXUrROZatCBs389tERqMdQXdiL0bGlbC9Hq0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQ5OTNiMGEx/NzJkNGYyOTQxOGVm/YjYwZGEzZGZjODdi/NTE1ZDgxOGM4MDQ2/OWZlNjMyMTQ2NzEz/ZmNlZDM1Mi93d3cu/c3Rvcm1zbWFydC5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "stormsmart.com",
+            "hostname": "www.stormsmart.com",
+            "favicon": "https://imgs.search.brave.com/dbcy1IxLXUrROZatCBs389tERqMdQXdiL0bGlbC9Hq0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQ5OTNiMGEx/NzJkNGYyOTQxOGVm/YjYwZGEzZGZjODdi/NTE1ZDgxOGM4MDQ2/OWZlNjMyMTQ2NzEz/ZmNlZDM1Mi93d3cu/c3Rvcm1zbWFydC5j/b20v",
+            "path": "  \u203a faqs for hurricane protection products  \u203a faqs for hurricane shutters  \u203a what is the florida building code (fbc)?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/h9JEVhC6RxKOYx5qh-MUWLXmEhOE2cc-PkqznDkjtzM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3Rvcm1zbWFydC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjUvMDQvV2hhdC1p/cy10aGUtRmxvcmlk/YS1CdWlsZGluZy1D/b2RlLnBuZw",
+            "original": "https://www.stormsmart.com/wp-content/uploads/2025/04/What-is-the-Florida-Building-Code.png",
+            "logo": false
+          },
+          "age": "May 2, 2025"
+        },
+        {
+          "title": "Florida Building Code \u2022 Requirements \u2022 Windows | FHIA Remodeling Blog",
+          "url": "https://fhiaremodeling.com/blog/florida-window-code-requirements/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "According to the FBC, all glazed openings (on windows and doors) in wind-borne debris regions should be impact-resistant or protected by an approved impact-resistant covering, such as hurricane shutters.",
+          "page_age": "2025-01-14T20:55:50",
+          "profile": {
+            "name": "FHIA",
+            "url": "https://fhiaremodeling.com/blog/florida-window-code-requirements/",
+            "long_name": "fhiaremodeling.com",
+            "img": "https://imgs.search.brave.com/HE8jfnBpqwiae6Gjp7J64FMyn-dRPhlKi3B9jKVODms/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTM5MmJhZmI0/NDcwZjVlZThhNDFm/ZGNjOWE1MThkNjM5/MGMxOTFjZWZiMjU4/MDNmZWMyY2FmZWUw/NTIyOWRjZS9maGlh/cmVtb2RlbGluZy5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "fhiaremodeling.com",
+            "hostname": "fhiaremodeling.com",
+            "favicon": "https://imgs.search.brave.com/HE8jfnBpqwiae6Gjp7J64FMyn-dRPhlKi3B9jKVODms/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTM5MmJhZmI0/NDcwZjVlZThhNDFm/ZGNjOWE1MThkNjM5/MGMxOTFjZWZiMjU4/MDNmZWMyY2FmZWUw/NTIyOWRjZS9maGlh/cmVtb2RlbGluZy5j/b20v",
+            "path": "  \u203a home  \u203a blogs  \u203a florida building code requirements"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/bpwnc_q9ZejPlb8j0gEnuSHXwH3Ci9aO-yBuU-km45o/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9maGlh/cmVtb2RlbGluZy5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjQvMDgvc2h1dHRl/cnN0b2NrXzU1NTc5/NzM0NC5qcGc",
+            "original": "https://fhiaremodeling.com/wp-content/uploads/2024/08/shutterstock_555797344.jpg",
+            "logo": false
+          },
+          "age": "January 14, 2025"
+        },
+        {
+          "title": "\u201cNew Hurricane Protection Law Questioned\u201d \u2013 News-Press | Becker & Poliakoff",
+          "url": "https://beckerlawyers.com/new-hurricane-protection-law-questioned-news-press/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "A: The Florida Condominium Act was amended effective July 1, 2024 to require the board of directors of a residential condominium to adopt \u201churricane protection specifications\u201d for each building within each condominium operated by the association which may include color, style, and other factors deemed relevant by the board. Prior to this change, going back to 1992, the law only required a board to adopt \u201churricane shutter...",
+          "page_age": "2025-01-30T21:02:08",
+          "profile": {
+            "name": "Becker Lawyers",
+            "url": "https://beckerlawyers.com/new-hurricane-protection-law-questioned-news-press/",
+            "long_name": "beckerlawyers.com",
+            "img": "https://imgs.search.brave.com/-XRMHdfJcIJoqnxE_VDwpzq1-964qvHEL9ngWrjs3gI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjJmOGZiNTBl/OWI2ZjUyNzlkNGI4/ODJjNzU0MjU0ZDQ3/MjYzMDkyOGY5NjQ4/N2ViOGEyNmU4YTNm/OWE5ZmMxYy9iZWNr/ZXJsYXd5ZXJzLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "beckerlawyers.com",
+            "hostname": "beckerlawyers.com",
+            "favicon": "https://imgs.search.brave.com/-XRMHdfJcIJoqnxE_VDwpzq1-964qvHEL9ngWrjs3gI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjJmOGZiNTBl/OWI2ZjUyNzlkNGI4/ODJjNzU0MjU0ZDQ3/MjYzMDkyOGY5NjQ4/N2ViOGEyNmU4YTNm/OWE5ZmMxYy9iZWNr/ZXJsYXd5ZXJzLmNv/bS8",
+            "path": "  \u203a home  \u203a uncategorized  \u203a \u201cnew hurricane protection law questioned\u201d \u2013 news-press"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/1RAC3dd2oLBKsEIeiuT7Vhm3JYbbZasTORGuoII2E8Q/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9iZWNr/ZXJsYXd5ZXJzLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/MS8xMi9Kb3NlcGgt/QWRhbXMtU3RhbmRh/cmQtMS4yLTMuanBn",
+            "original": "https://beckerlawyers.com/wp-content/uploads/2021/12/Joseph-Adams-Standard-1.2-3.jpg",
+            "logo": false
+          },
+          "age": "January 30, 2025"
+        },
+        {
+          "title": "\u201cHurricane Shutters Can Be Regulated\u201d \u2013 News-Press | Becker & Poliakoff",
+          "url": "https://beckerlawyers.com/hurricane-shutters-can-be-regulated-news-press/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Under Section 718.113(5) of the Florida Condominium Act, each board must adopt hurricane shutter specifications for each building within each condominium operated by the association which shall include color, style, and other factors deemed relevant by the board...",
+          "page_age": "2025-01-24T10:20:52",
+          "profile": {
+            "name": "Becker Lawyers",
+            "url": "https://beckerlawyers.com/hurricane-shutters-can-be-regulated-news-press/",
+            "long_name": "beckerlawyers.com",
+            "img": "https://imgs.search.brave.com/-XRMHdfJcIJoqnxE_VDwpzq1-964qvHEL9ngWrjs3gI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjJmOGZiNTBl/OWI2ZjUyNzlkNGI4/ODJjNzU0MjU0ZDQ3/MjYzMDkyOGY5NjQ4/N2ViOGEyNmU4YTNm/OWE5ZmMxYy9iZWNr/ZXJsYXd5ZXJzLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "beckerlawyers.com",
+            "hostname": "beckerlawyers.com",
+            "favicon": "https://imgs.search.brave.com/-XRMHdfJcIJoqnxE_VDwpzq1-964qvHEL9ngWrjs3gI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjJmOGZiNTBl/OWI2ZjUyNzlkNGI4/ODJjNzU0MjU0ZDQ3/MjYzMDkyOGY5NjQ4/N2ViOGEyNmU4YTNm/OWE5ZmMxYy9iZWNr/ZXJsYXd5ZXJzLmNv/bS8",
+            "path": "  \u203a home  \u203a uncategorized  \u203a \u201churricane shutters can be regulated\u201d \u2013 news-press"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/_eX7GfrNuaFgKD6pgty6ALBO20JhcxvtP7IgDM6ZixQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9iZWNr/ZXJsYXd5ZXJzLmNv/bS9odXJyaWNhbmUt/c2h1dHRlcnMtY2Fu/LWJlLXJlZ3VsYXRl/ZC1uZXdzLXByZXNz/Lw",
+            "original": "https://beckerlawyers.com/hurricane-shutters-can-be-regulated-news-press/",
+            "logo": false
+          },
+          "age": "January 24, 2025"
+        },
+        {
+          "title": "THE FLORIDA BUILDING CODE FOR IMPACT WINDOWS",
+          "url": "https://www.sofloimpactwindows.com/florida-building-code-for-impact-windows",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "According to FBC 2017, the version currently being enforced in our state, all glazed (window or glass) openings within a structure need to either be impact-resistant or use impact coverings, like accordion shutters or hurricane panels.",
+          "page_age": "2025-11-01T04:00:00",
+          "profile": {
+            "name": "SOFLO IMPACT WINDOWS",
+            "url": "https://www.sofloimpactwindows.com/florida-building-code-for-impact-windows",
+            "long_name": "sofloimpactwindows.com",
+            "img": "https://imgs.search.brave.com/rAb2y8vZ633k8lRTBFK3QKomy7zklKzP3NBvQb30UB4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDMzYWJmZjRj/MjdkOWIyNTJjYWY2/Mzg0Mjk1ZDU1ZWRj/OGY1YjhjZmM5ZmMy/Y2RkYzBmNzMxMmI3/MGE4YTFiNi93d3cu/c29mbG9pbXBhY3R3/aW5kb3dzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "sofloimpactwindows.com",
+            "hostname": "www.sofloimpactwindows.com",
+            "favicon": "https://imgs.search.brave.com/rAb2y8vZ633k8lRTBFK3QKomy7zklKzP3NBvQb30UB4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDMzYWJmZjRj/MjdkOWIyNTJjYWY2/Mzg0Mjk1ZDU1ZWRj/OGY1YjhjZmM5ZmMy/Y2RkYzBmNzMxMmI3/MGE4YTFiNi93d3cu/c29mbG9pbXBhY3R3/aW5kb3dzLmNvbS8",
+            "path": "\u203a florida-building-code-for-impact-windows"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Yo1rN85aWIKYmoIUdkx50dYg-wJ8olgGk3uudx9Y_3A/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c29mbG9pbXBhY3R3/aW5kb3dzLmNvbS9p/bWFnZXMvc29mbG8t/aW1wYWN0LXdpbmRv/d3Mtc29jaWFsLW1l/ZGlhLWltYWdlLnBu/Zw",
+            "original": "https://www.sofloimpactwindows.com/images/soflo-impact-windows-social-media-image.png",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Florida Hurricane Shutters - Residential & Commercial Storm Protection Solutions",
+          "url": "https://sarasotahurricaneshutters.com/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Our aluminum accordion hurricane shutters are High-Velocity Wind Zone rated, exceeding standard Florida building code requirements.",
+          "page_age": "2025-03-06T20:39:23",
+          "profile": {
+            "name": "Sarasotahurricaneshutters",
+            "url": "https://sarasotahurricaneshutters.com/",
+            "long_name": "sarasotahurricaneshutters.com",
+            "img": "https://imgs.search.brave.com/j4NUntDHZrX2UQXPBXlWc-NNmZLepoV8p8doWlaLJTo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTU4MzMxNGJh/MDRiYTk0NGMzYTg5/MTc3NGE4MmM2ZWEz/YThmYzZjYzc0NmRj/MTIyOWUyZDA4YTQ2/MjQ0ZWZmOC9zYXJh/c290YWh1cnJpY2Fu/ZXNodXR0ZXJzLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "sarasotahurricaneshutters.com",
+            "hostname": "sarasotahurricaneshutters.com",
+            "favicon": "https://imgs.search.brave.com/j4NUntDHZrX2UQXPBXlWc-NNmZLepoV8p8doWlaLJTo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTU4MzMxNGJh/MDRiYTk0NGMzYTg5/MTc3NGE4MmM2ZWEz/YThmYzZjYzc0NmRj/MTIyOWUyZDA4YTQ2/MjQ0ZWZmOC9zYXJh/c290YWh1cnJpY2Fu/ZXNodXR0ZXJzLmNv/bS8",
+            "path": "  \u203a home"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/sI1fnDapR91sLpxSDZUKVz_VAf0nl9WrrlAG74txQZM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zYXJh/c290YWh1cnJpY2Fu/ZXNodXR0ZXJzLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvRmxv/cmlkYS1IdXJyaWNh/bmUtU2h1dHRlcnMt/UmVzaWRlbnRpYWwt/My53ZWJw",
+            "original": "https://sarasotahurricaneshutters.com/wp-content/uploads/Florida-Hurricane-Shutters-Residential-3.webp",
+            "logo": false
+          },
+          "age": "March 6, 2025"
+        },
+        {
+          "title": "Category 5 Hurricane Shutters - What Are Hurricane Rated Shutters?",
+          "url": "https://eurexshutters.com/hurricane-rated-shutters/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If you live in a High Velocity Hurricane Zone (HVHZ), such as Miami-Dade, Broward Counties, Monroe County or Coastal Palm Beach County, the building code requires HVHZ (high velocity) approved shutters. These may also be referred to as Category 5 hurricane shutters, high velocity hurricane shutters, or category 5 hurricane shutters. They will be marked with \u201cMeet Florida Building Code for HVHZ\u201d or \u201cApproved for use within HVHZ\u201d, or similar.",
+          "page_age": "2025-01-08T20:11:55",
+          "profile": {
+            "name": "Eurex Shutters",
+            "url": "https://eurexshutters.com/hurricane-rated-shutters/",
+            "long_name": "eurexshutters.com",
+            "img": "https://imgs.search.brave.com/RQSYVOwU5ckTsSZZmB8sVEY_41ziPdETNKML8Gjdu8c/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY1M2E2NzA2/YWVjODU4NmYwODk2/ZGEyNjBiYWIyZTVj/MWQ1MzNiZTkzMmJj/YmU5MzVjYTZiZGEy/NDE2Zjg4ZS9ldXJl/eHNodXR0ZXJzLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "eurexshutters.com",
+            "hostname": "eurexshutters.com",
+            "favicon": "https://imgs.search.brave.com/RQSYVOwU5ckTsSZZmB8sVEY_41ziPdETNKML8Gjdu8c/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY1M2E2NzA2/YWVjODU4NmYwODk2/ZGEyNjBiYWIyZTVj/MWQ1MzNiZTkzMmJj/YmU5MzVjYTZiZGEy/NDE2Zjg4ZS9ldXJl/eHNodXR0ZXJzLmNv/bS8",
+            "path": "  \u203a home  \u203a hurricane shutters  \u203a category 5 hurricane shutters \u2013\u2026"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/DGuP12a4TtVnkkl26_GNV43cz0FRzCll1QmfcuVpK_o/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9ldXJl/eHNodXR0ZXJzLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/My8wNC93aGF0LWFy/ZS1odXJyaWNhbmUt/cmF0ZWQtc2h1dHRl/cnMuanBn",
+            "original": "https://eurexshutters.com/wp-content/uploads/2023/04/what-are-hurricane-rated-shutters.jpg",
+            "logo": false
+          },
+          "age": "January 8, 2025"
+        },
+        {
+          "title": "Fort Myers Building Codes Hurricane Shutter Compliance Guide",
+          "url": "https://hurricaneshutterco.com/fort-myers-building-codes-hurricane-shutter/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Key aspects of the FBC as it relates ... regions: Locations within Florida deemed at higher risk for hurricane damage require hurricane shutters on homes that have glazed (glass-containing) openings, like windows and doors...",
+          "page_age": "2024-11-17T01:17:00",
+          "profile": {
+            "name": "Hurricane Shutter Co",
+            "url": "https://hurricaneshutterco.com/fort-myers-building-codes-hurricane-shutter/",
+            "long_name": "hurricaneshutterco.com",
+            "img": "https://imgs.search.brave.com/ajcbiBlUjHb9A9UKKaVGHiqRbL3CDs7y0Q-pW8QTjv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGJkNjAwZmE2/Yjk5Zjg1OGY1MTUy/OTY5NWM0MjcwZGEx/YjkzM2JlMzhmOWVm/YjM3OGEwYWMxYWQx/YzgwM2RhZi9odXJy/aWNhbmVzaHV0dGVy/Y28uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "hurricaneshutterco.com",
+            "hostname": "hurricaneshutterco.com",
+            "favicon": "https://imgs.search.brave.com/ajcbiBlUjHb9A9UKKaVGHiqRbL3CDs7y0Q-pW8QTjv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGJkNjAwZmE2/Yjk5Zjg1OGY1MTUy/OTY5NWM0MjcwZGEx/YjkzM2JlMzhmOWVm/YjM3OGEwYWMxYWQx/YzgwM2RhZi9odXJy/aWNhbmVzaHV0dGVy/Y28uY29tLw",
+            "path": "\u203a fort-myers-building-codes-hurricane-shutter"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Aw_PP6WAYxqlou0iby8_CCMn-eQkznz72fhX8Adnpao/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9odXJy/aWNhbmVzaHV0dGVy/Y28uY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI0LzExL0h1/cnJpY2FuZS1TaHV0/dGVyLmpwZWc",
+            "original": "https://hurricaneshutterco.com/wp-content/uploads/2024/11/Hurricane-Shutter.jpeg",
+            "logo": false
+          },
+          "age": "November 17, 2024"
+        },
+        {
+          "title": "Now Is the Time to Adopt Hurricane Protection Specifications | Florida Condo & HOA Law Blog",
+          "url": "https://www.floridacondohoalawblog.com/2025/02/26/now-is-the-time-to-adopt-hurricane-protection-specifications/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "For many years, the Condominium Act provided that each board of a residential condominium was required to adopt hurricane \u201cshutter\u201d specifications including color, style, and other factors deemed relevant by the board.",
+          "page_age": "2025-02-26T19:16:24",
+          "profile": {
+            "name": "Floridacondohoalawblog",
+            "url": "https://www.floridacondohoalawblog.com/2025/02/26/now-is-the-time-to-adopt-hurricane-protection-specifications/",
+            "long_name": "floridacondohoalawblog.com",
+            "img": "https://imgs.search.brave.com/JP0aVHgrJp7oprDWFWvD-RIsGQXTd68ZYsUpcV3LuRk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWE4MGU4NTgy/OGQ5N2VkMjI4YTI4/Njg1Y2U0MzA5MjUw/YjgyMTc1NTBiMDJk/NjgzMTljYTdiM2Uy/MGM0YWJlMC93d3cu/ZmxvcmlkYWNvbmRv/aG9hbGF3YmxvZy5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "floridacondohoalawblog.com",
+            "hostname": "www.floridacondohoalawblog.com",
+            "favicon": "https://imgs.search.brave.com/JP0aVHgrJp7oprDWFWvD-RIsGQXTd68ZYsUpcV3LuRk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWE4MGU4NTgy/OGQ5N2VkMjI4YTI4/Njg1Y2U0MzA5MjUw/YjgyMTc1NTBiMDJk/NjgzMTljYTdiM2Uy/MGM0YWJlMC93d3cu/ZmxvcmlkYWNvbmRv/aG9hbGF3YmxvZy5j/b20v",
+            "path": "  \u203a home  \u203a community update  \u203a article  \u203a now is the time to adopt hurricane protection specifications"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/r1JxYnDvDtfe5kJdSKPSum-hQzaHIjIxlZZp7VBNnPs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/ZmxvcmlkYWNvbmRv/aG9hbGF3YmxvZy5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjUvMDIvSHVycmlj/YW5lLmpwZw",
+            "original": "https://www.floridacondohoalawblog.com/wp-content/uploads/2025/02/Hurricane.jpg",
+            "logo": false
+          },
+          "age": "February 26, 2025"
+        },
+        {
+          "title": "Florida Hurricane Shutter Law: What Homeowners Need to Know - LegalClarity",
+          "url": "https://legalclarity.org/florida-hurricane-shutter-law-what-homeowners-need-to-know/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The Florida Building Code (FBC) ... shutter requirements. Homes in wind-borne debris regions\u2014primarily coastal and high-risk areas\u2014must have impact-resistant windows or approved storm shutters....",
+          "page_age": "2025-03-27T00:29:03",
+          "profile": {
+            "name": "LegalClarity",
+            "url": "https://legalclarity.org/florida-hurricane-shutter-law-what-homeowners-need-to-know/",
+            "long_name": "legalclarity.org",
+            "img": "https://imgs.search.brave.com/J9MxGTdj5fiLFGToourtQD6PyqQtUVTRcL8IxQbJOmI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDI3NjU2OGJk/ZjQ4NWI0M2I2M2Fi/OTM5NTgyNTY4ODNh/YmZmYTJiYWQ5Mzlh/YWU1ODI5NTg0MmJi/Y2E1MWI0NS9sZWdh/bGNsYXJpdHkub3Jn/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "legalclarity.org",
+            "hostname": "legalclarity.org",
+            "favicon": "https://imgs.search.brave.com/J9MxGTdj5fiLFGToourtQD6PyqQtUVTRcL8IxQbJOmI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDI3NjU2OGJk/ZjQ4NWI0M2I2M2Fi/OTM5NTgyNTY4ODNh/YmZmYTJiYWQ5Mzlh/YWU1ODI5NTg0MmJi/Y2E1MWI0NS9sZWdh/bGNsYXJpdHkub3Jn/Lw",
+            "path": "\u203a florida-hurricane-shutter-law-what-homeowners-need-to-know"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/T5g8lzaXbMQL8j3Auak1mZZI9PyxufWZHirtPhrfuqY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9sZWdh/bGNsYXJpdHkub3Jn/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI0/LzA5L2xlZ2FsY2xh/cml0eWkucG5n",
+            "original": "https://legalclarity.org/wp-content/uploads/2024/09/legalclarityi.png",
+            "logo": false
+          },
+          "age": "March 27, 2025"
+        },
+        {
+          "title": "\u201cHurricane Shutter Policies Raise Questions\u201d \u2013 News-Press | Becker & Poliakoff",
+          "url": "https://beckerlawyers.com/hurricane-shutter-policies-raise-questions-news-press/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "For example, I remember reading a condominium arbitration decision many years ago that found a board rule to be unreasonable, stating that if the board wanted to require shutters to be left open, the association would need to be responsible to deploy them in the event of an approaching storm. Arbitration decisions are not \u201cthe law\u201d but rather an opinion of one attorney, in one dispute, and are not entitled to judicial deference under the Florida Constitution.",
+          "page_age": "2025-01-23T14:44:36",
+          "profile": {
+            "name": "Becker Lawyers",
+            "url": "https://beckerlawyers.com/hurricane-shutter-policies-raise-questions-news-press/",
+            "long_name": "beckerlawyers.com",
+            "img": "https://imgs.search.brave.com/-XRMHdfJcIJoqnxE_VDwpzq1-964qvHEL9ngWrjs3gI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjJmOGZiNTBl/OWI2ZjUyNzlkNGI4/ODJjNzU0MjU0ZDQ3/MjYzMDkyOGY5NjQ4/N2ViOGEyNmU4YTNm/OWE5ZmMxYy9iZWNr/ZXJsYXd5ZXJzLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "beckerlawyers.com",
+            "hostname": "beckerlawyers.com",
+            "favicon": "https://imgs.search.brave.com/-XRMHdfJcIJoqnxE_VDwpzq1-964qvHEL9ngWrjs3gI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjJmOGZiNTBl/OWI2ZjUyNzlkNGI4/ODJjNzU0MjU0ZDQ3/MjYzMDkyOGY5NjQ4/N2ViOGEyNmU4YTNm/OWE5ZmMxYy9iZWNr/ZXJsYXd5ZXJzLmNv/bS8",
+            "path": "  \u203a home  \u203a uncategorized  \u203a \u201churricane shutter policies raise questions\u201d \u2013 news-press"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/sXXoOqfAwf82e5tQAwyMx5NvRSbfL0JrhkyLQ8gMPVE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9iZWNr/ZXJsYXd5ZXJzLmNv/bS9odXJyaWNhbmUt/c2h1dHRlci1wb2xp/Y2llcy1yYWlzZS1x/dWVzdGlvbnMtbmV3/cy1wcmVzcy8",
+            "original": "https://beckerlawyers.com/hurricane-shutter-policies-raise-questions-news-press/",
+            "logo": false
+          },
+          "age": "January 23, 2025"
+        },
+        {
+          "title": "FAQs for Hurricane Shutters - Storm Smart",
+          "url": "https://www.stormsmart.com/faqs/hurricane-shutters/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The FBC is a set of regulations dictating minimum construction standards, including hurricane protection. Shutters meeting FBC standards are suitable for most areas in Florida. To learn more, click here. ASTM standards (like E1886 or E1996) outline test protocols for impact and wind resistance. Many jurisdictions require compliance with these benchmarks.",
+          "page_age": "2025-04-30T20:52:57",
+          "profile": {
+            "name": "Storm Smart",
+            "url": "https://www.stormsmart.com/faqs/hurricane-shutters/",
+            "long_name": "stormsmart.com",
+            "img": "https://imgs.search.brave.com/dbcy1IxLXUrROZatCBs389tERqMdQXdiL0bGlbC9Hq0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQ5OTNiMGEx/NzJkNGYyOTQxOGVm/YjYwZGEzZGZjODdi/NTE1ZDgxOGM4MDQ2/OWZlNjMyMTQ2NzEz/ZmNlZDM1Mi93d3cu/c3Rvcm1zbWFydC5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "stormsmart.com",
+            "hostname": "www.stormsmart.com",
+            "favicon": "https://imgs.search.brave.com/dbcy1IxLXUrROZatCBs389tERqMdQXdiL0bGlbC9Hq0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQ5OTNiMGEx/NzJkNGYyOTQxOGVm/YjYwZGEzZGZjODdi/NTE1ZDgxOGM4MDQ2/OWZlNjMyMTQ2NzEz/ZmNlZDM1Mi93d3cu/c3Rvcm1zbWFydC5j/b20v",
+            "path": "  \u203a faqs for hurricane protection products  \u203a faqs for hurricane shutters"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/I8pBriKBcGAkDpGOZPXsCMLgZXMD_fH20m1WMxoGx5c/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3Rvcm1zbWFydC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjMvMDYvU3Rvcm0t/U21hcnQtSHVycmlj/YWluZS1JY29uLVJl/ZC0xLnN2Zw",
+            "original": "https://www.stormsmart.com/wp-content/uploads/2023/06/Storm-Smart-Hurricaine-Icon-Red-1.svg",
+            "logo": true
+          },
+          "age": "April 30, 2025"
+        },
+        {
+          "title": "Tropical cyclone",
+          "url": "https://en.wikipedia.org/wiki/Tropical_cyclone",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "rapidly rotating storm system",
+          "profile": {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Tropical_cyclone",
+            "long_name": "en.wikipedia.org",
+            "img": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "deep_results": {
+            "buttons": [
+              {
+                "type": "button_result",
+                "title": "Definition and terminology",
+                "url": "https://en.wikipedia.org/wiki/Tropical_cyclone#Definition_and_terminology"
+              },
+              {
+                "type": "button_result",
+                "title": "Formation",
+                "url": "https://en.wikipedia.org/wiki/Tropical_cyclone#Formation"
+              },
+              {
+                "type": "button_result",
+                "title": "Interactions with climate",
+                "url": "https://en.wikipedia.org/wiki/Tropical_cyclone#Interactions_with_climate"
+              },
+              {
+                "type": "button_result",
+                "title": "Intensity",
+                "url": "https://en.wikipedia.org/wiki/Tropical_cyclone#Intensity"
+              },
+              {
+                "type": "button_result",
+                "title": "Classification and naming",
+                "url": "https://en.wikipedia.org/wiki/Tropical_cyclone#Classification_and_naming"
+              },
+              {
+                "type": "button_result",
+                "title": "Structure",
+                "url": "https://en.wikipedia.org/wiki/Tropical_cyclone#Structure"
+              },
+              {
+                "type": "button_result",
+                "title": "Movement",
+                "url": "https://en.wikipedia.org/wiki/Tropical_cyclone#Movement"
+              },
+              {
+                "type": "button_result",
+                "title": "Effects",
+                "url": "https://en.wikipedia.org/wiki/Tropical_cyclone#Effects"
+              },
+              {
+                "type": "button_result",
+                "title": "Observation and forecasting",
+                "url": "https://en.wikipedia.org/wiki/Tropical_cyclone#Observation_and_forecasting"
+              },
+              {
+                "type": "button_result",
+                "title": "Awareness and response",
+                "url": "https://en.wikipedia.org/wiki/Tropical_cyclone#Awareness_and_response"
+              },
+              {
+                "type": "button_result",
+                "title": "Extraterrestrial tropical cyclones",
+                "url": "https://en.wikipedia.org/wiki/Tropical_cyclone#Extraterrestrial_tropical_cyclones"
+              }
+            ]
+          },
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "en.wikipedia.org",
+            "hostname": "en.wikipedia.org",
+            "favicon": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw",
+            "path": "\u203a wiki  \u203a Tropical_cyclone"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/jBu5xdB4kru64hFZqaTHceUULGQF3ddcdeXKmkg7vWU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8z/LzM1L0RyYW1hdGlj/X1ZpZXdzX29mX0h1/cnJpY2FuZV9GbG9y/ZW5jZV9mcm9tX3Ro/ZV9JbnRlcm5hdGlv/bmFsX1NwYWNlX1N0/YXRpb25fRnJvbV85/XzEyXyUyODQyODI4/NjAzMjEwJTI5XyUy/OGNyb3BwZWQlMjku/anBn",
+            "original": "https://upload.wikimedia.org/wikipedia/commons/3/35/Dramatic_Views_of_Hurricane_Florence_from_the_International_Space_Station_From_9_12_%2842828603210%29_%28cropped%29.jpg",
+            "logo": false
+          }
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_kh96jzbeukh55q9d4dptmbby",
+  "search_id": "search_ne9t6d3lw18p83nn7q747kwa",
+  "timestamp": "2025-11-07T12:31:26.188381",
+  "startedAt": "2025-11-07T12:31:26.188381",
+  "completedAt": "2025-11-07T12:31:27.926782",
+  "durationSeconds": 1.74,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:insurance.ca.gov consumer guides auto",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:insurance.ca.gov consumer guides auto",
+      "show_strict_warning": false,
+      "cleaned": "consumer guides auto",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "consumer guides auto",
+        "sites": [
+          "insurance.ca.gov"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

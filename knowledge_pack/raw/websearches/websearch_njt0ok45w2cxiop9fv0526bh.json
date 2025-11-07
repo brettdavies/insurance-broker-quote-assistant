@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_njt0ok45w2cxiop9fv0526bh",
+  "search_id": "search_jyvq0b15oxd36up41cexkkfx",
+  "timestamp": "2025-11-07T12:31:37.741945",
+  "startedAt": "2025-11-07T12:31:37.741945",
+  "completedAt": "2025-11-07T12:31:39.415700",
+  "durationSeconds": 1.67,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:floir.com windstorm deductible",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:floir.com windstorm deductible",
+      "show_strict_warning": false,
+      "cleaned": "windstorm deductible",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "windstorm deductible",
+        "sites": [
+          "floir.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

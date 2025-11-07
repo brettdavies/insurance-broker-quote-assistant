@@ -1,0 +1,97 @@
+{
+  "websearch_id": "websearch_mdk8umilql6a8m7wmsumok4j",
+  "search_id": "search_e9f45edkn2oo3hxkzmh9dxpx",
+  "timestamp": "2025-11-07T12:28:27.883630",
+  "startedAt": "2025-11-07T12:28:27.883630",
+  "completedAt": "2025-11-07T12:28:29.765829",
+  "durationSeconds": 1.88,
+  "urlsDiscoveredCount": 1,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"typical home insurance\" California monthly",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"typical home insurance\" California monthly",
+      "show_strict_warning": false,
+      "cleaned": "typical home insurance California monthly",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "typical home insurance California monthly"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "How Much Homeowners Insurance Do I Need? - Ramsey",
+          "url": "https://www.ramseysolutions.com/insurance/how-much-homeowners-insurance-do-i-need",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If you have a large family and you believe your ALE would be high, ask your insurance agent how you can get more ALE. It may sound like we\u2019ve covered every possibility at this point, but there could still be some gaps in your coverage. What if you live in California with a view of the mountains and the San Andreas Fault?",
+          "page_age": "2025-05-01T00:00:00",
+          "profile": {
+            "name": "Ramsey Solutions",
+            "url": "https://www.ramseysolutions.com/insurance/how-much-homeowners-insurance-do-i-need",
+            "long_name": "ramseysolutions.com",
+            "img": "https://imgs.search.brave.com/HxLOIXBpZArByB1kAwYMtAIgD5pbQNz9X5jgUebg_v8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmNhMGMxN2M4/MjRmNzAyOTVjYzJi/ZDE2OGU3MjdiZDNm/NTNjZGEwYmMxY2Nj/YmQyZWZmYzRlYjYx/ZTgxZjk0Ny93d3cu/cmFtc2V5c29sdXRp/b25zLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "ramseysolutions.com",
+            "hostname": "www.ramseysolutions.com",
+            "favicon": "https://imgs.search.brave.com/HxLOIXBpZArByB1kAwYMtAIgD5pbQNz9X5jgUebg_v8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmNhMGMxN2M4/MjRmNzAyOTVjYzJi/ZDE2OGU3MjdiZDNm/NTNjZGEwYmMxY2Nj/YmQyZWZmYzRlYjYx/ZTgxZjk0Ny93d3cu/cmFtc2V5c29sdXRp/b25zLmNvbS8",
+            "path": "  \u203a home  \u203a articles  \u203a insurance  \u203a home and auto insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/8ttkwB1g7u9CioEI-N1novzpN9965x7SHPNvyRUVt-g/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4y/LnJhbXNleXNvbHV0/aW9ucy5uZXQvZHlu/YW1pYy9kYXZlcmFt/c2V5LmNvbS9tZWRp/YS9ibG9nL2luc3Vy/YW5jZS9wcm9wZXJ0/eS1hbmQtY2FzdWFs/dHkvaG93LW11Y2gt/aG9tZS1pbnN1cmFu/Y2UtZG8taS1uZWVk/LmpwZy82NDB3Lmpw/Zw",
+            "original": "https://cdn2.ramseysolutions.net/dynamic/daveramsey.com/media/blog/insurance/property-and-casualty/how-much-home-insurance-do-i-need.jpg/640w.jpg",
+            "logo": false
+          },
+          "age": "May 1, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

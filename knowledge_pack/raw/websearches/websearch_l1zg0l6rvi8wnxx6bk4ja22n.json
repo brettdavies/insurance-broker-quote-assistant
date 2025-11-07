@@ -1,0 +1,795 @@
+{
+  "websearch_id": "websearch_l1zg0l6rvi8wnxx6bk4ja22n",
+  "search_id": "search_vlw85mfq34re4jd0adwc7dty",
+  "timestamp": "2025-11-07T12:21:57.263454",
+  "startedAt": "2025-11-07T12:21:57.263454",
+  "completedAt": "2025-11-07T12:21:59.215485",
+  "durationSeconds": 1.95,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" \"good student discount\" percentage GPA",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"GEICO\" \"good student discount\" percentage GPA",
+      "show_strict_warning": false,
+      "cleaned": "GEICO good student discount percentage GPA",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO good student discount percentage GPA"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "r/Insurance on Reddit: Good Student Discount Question",
+          "url": "https://www.reddit.com/r/Insurance/comments/1hb1ksv/good_student_discount_question/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "USAA requires your student to be full-time, 25yo or younger and maintain at least a 3.0 GPA, with online transcript as proof. It is checked upon policy renewal every 6 months. Where do I submit my \u201cgood student\u201d discount from Allstate ...",
+          "page_age": "2024-12-10T13:20:09",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Insurance/comments/1hb1ksv/good_student_discount_question/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/insurance  \u203a good student discount question"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A5H_aQiEBuUODR0lNeU8iDfhrWUvO8oEmRGE_mcS_gM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVkZGl0c3RhdGlj/LmNvbS9pY29uLnBu/Zw",
+            "original": "https://www.redditstatic.com/icon.png",
+            "logo": true
+          },
+          "age": "December 10, 2024"
+        },
+        {
+          "title": "Good Student Car Insurance Discounts: How to Save by Insurer",
+          "url": "https://www.moneygeek.com/insurance/auto/good-student-discounts/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Special features: You can qualify through GPA, class ranking or academic honors. The discount stays active until you turn 25 as long as you maintain your academic standing. ... GEICO offers up to 15% off certain coverages with simple qualification ...",
+          "page_age": "2025-10-15T10:56:16",
+          "profile": {
+            "name": "MoneyGeek",
+            "url": "https://www.moneygeek.com/insurance/auto/good-student-discounts/",
+            "long_name": "moneygeek.com",
+            "img": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "moneygeek.com",
+            "hostname": "www.moneygeek.com",
+            "favicon": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8",
+            "path": "  \u203a home  \u203a insurance  \u203a compare car insurance  \u203a good student discounts"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/-r5klJsLxZcuCfxw_qluKhvU-pTe51-tJGD6eihpKEo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbW9uZXlnZWVr/L2ltYWdlL3VwbG9h/ZC9jX3NjYWxlLHFf/YXV0bzplY28sd18x/MjAwLGZfYXV0byxm/bF9sb3NzeS92MTY1/NjE2Mzg5MC9mZWF0/dXJlX2ltYWdlX0Ff/R3VpZGVfdG9fUmVu/dGFsX0Nhcl9Nb25l/eV9HZWVrX2I4MTE3/NTA4MDkuanBn",
+            "original": "https://res.cloudinary.com/moneygeek/image/upload/c_scale,q_auto:eco,w_1200,f_auto,fl_lossy/v1656163890/feature_image_A_Guide_to_Rental_Car_Money_Geek_b811750809.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "How to Save With the GEICO Student Discount",
+          "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-student-discount",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Students can also get discounts for things like good driving and taking defensive driving courses. Most insurers require students to have at least a 3.0 GPA or B average to qualify for a good student discount.",
+          "page_age": "2025-04-01T19:00:00",
+          "profile": {
+            "name": "Compare",
+            "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-student-discount",
+            "long_name": "compare.com",
+            "img": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "compare.com",
+            "hostname": "www.compare.com",
+            "favicon": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v",
+            "path": "  \u203a auto insurance  \u203a cheap car insurance  \u203a discounts  \u203a geico student discount"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/xyWxrzxPG1i4fc59aFXpO7oH2MizP_jzsONJRckNEiM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8yOTU1MDgvMTIw/MHg5MDAvMWE3OWRm/NzlkMy9zdHVkeS1n/cm91cC1oZXJvLmpw/Zw",
+            "original": "https://a.storyblok.com/f/295508/1200x900/1a79df79d3/study-group-hero.jpg",
+            "logo": false
+          },
+          "age": "April 1, 2025"
+        },
+        {
+          "title": "How to Get a GEICO Good Student Discount",
+          "url": "https://wallethub.com/answers/ci/geico-good-student-discount-1000043-2140684057/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "You can get a GEICO good student discount if you have at least a B average. Student drivers can save up to 15% as long as they are full-time high school or college students",
+          "page_age": "2025-05-01T17:29:17",
+          "profile": {
+            "name": "WalletHub",
+            "url": "https://wallethub.com/answers/ci/geico-good-student-discount-1000043-2140684057/",
+            "long_name": "wallethub.com",
+            "img": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "wallethub.com",
+            "hostname": "wallethub.com",
+            "favicon": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw",
+            "path": "\u203a answers  \u203a ci  \u203a geico-good-student-discount-1000043-2140684057"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YnFsFD--_0DYDN63YU7RTh6E1ZINWtslBaGMBZrgzuI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbGV0aHViLmNv/bS9pbWFnZXMvd2gy/MDE1L2Fuc3dlcnMv/d2FsbGV0aHViLWFu/c3dlcnNfVjMwYjE2/NmZfLnBuZw",
+            "original": "https://cdn.wallethub.com/images/wh2015/answers/wallethub-answers_V30b166f_.png",
+            "logo": false
+          },
+          "age": "May 1, 2025"
+        },
+        {
+          "title": "How much is a good student discount for car insurance?",
+          "url": "https://www.carinsurance.com/good-student-discount.aspx",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "They also reward the insured if the student goes to school on a campus 100 miles or more from home and doesn\u2019t have access to a covered vehicle while at school. GEICO\u2019s good student discount is up to 9% \u2014 if you maintain a B average or better.",
+          "page_age": "2025-07-23T00:00:00",
+          "profile": {
+            "name": "Carinsurance.com",
+            "url": "https://www.carinsurance.com/good-student-discount.aspx",
+            "long_name": "carinsurance.com",
+            "img": "https://imgs.search.brave.com/KCetfn_EHIlwz5sy6dTvSdGjOen9Qf_QsSICK4hYUH8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDdmYWUzNjM0/MGU0ODEwNzI3ZWVj/NjEwYmQ2MmE5NTZh/N2E2NDRhODA2YjRj/NjBlNzc2OTBiYzkz/YzA3ZGQzOC93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "carinsurance.com",
+            "hostname": "www.carinsurance.com",
+            "favicon": "https://imgs.search.brave.com/KCetfn_EHIlwz5sy6dTvSdGjOen9Qf_QsSICK4hYUH8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDdmYWUzNjM0/MGU0ODEwNzI3ZWVj/NjEwYmQ2MmE5NTZh/N2E2NDRhODA2YjRj/NjBlNzc2OTBiYzkz/YzA3ZGQzOC93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS8",
+            "path": "\u203a good-student-discount.aspx"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/TNP02mYpRnHLi88RG5REAhdwBz-m4W8BlsE3aHNueOs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS91cGxvYWRl/ZGZpbGVzL2luZm9y/bWF0aW9uLnN2Zw",
+            "original": "https://www.carinsurance.com/uploadedfiles/information.svg",
+            "logo": true
+          },
+          "age": "July 23, 2025"
+        },
+        {
+          "title": "Why Good Grades Matter to Your Auto Insurance Provider in 2025 (They Do Check!) | AutoInsurance.org",
+          "url": "https://www.autoinsurance.org/do-auto-insurance-companies-verify-grades/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "There\u2019s also the AAA good student discount for a good GPA and the smart student discount with Allstate. Geico provides a discount for students who maintain a \u201cB\u201d average or better.",
+          "page_age": "2025-01-24T02:13:12",
+          "profile": {
+            "name": "AutoInsurance.org",
+            "url": "https://www.autoinsurance.org/do-auto-insurance-companies-verify-grades/",
+            "long_name": "autoinsurance.org",
+            "img": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.org",
+            "hostname": "www.autoinsurance.org",
+            "favicon": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv",
+            "path": "  \u203a home  \u203a shopping for auto insurance  \u203a how to get auto insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/NU5TAus_G0BHdtAM8Q3JgVqt-MuMhEvT7vIPxA0MvI8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcvaW1hZ2Vz/L1doeS1Hb29kLUdy/YWRlcy1NYXR0ZXIt/dG8tWW91ci1BdXRv/LUluc3VyYW5jZS1Q/cm92aWRlci0xLnBu/Zw",
+            "original": "https://www.autoinsurance.org/images/Why-Good-Grades-Matter-to-Your-Auto-Insurance-Provider-1.png",
+            "logo": false
+          },
+          "age": "January 24, 2025"
+        },
+        {
+          "title": "How to Save on Car Insurance with Good Student Discounts - ValuePenguin",
+          "url": "https://www.valuepenguin.com/good-student-auto-insurance-discount",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "High school and college students can save between 4% and 20% on their car insurance by getting good grades, from companies like Geico, State Farm, or Allstate. ... The largest good student discount among major insurance companies is at Allstate.",
+          "page_age": "2025-08-05T15:56:18",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/good-student-auto-insurance-discount",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a good-student-auto-insurance-discount"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/a1MMfI3ykJd59ZBbxyHzHceI1nfglUsrTGS82svMpIQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2NvbGxlZ2Ut/c3R1ZGVudC1saWJy/YXJ5X2liMXM5Mw",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/college-student-library_ib1s93",
+            "logo": false
+          },
+          "age": "August 5, 2025"
+        },
+        {
+          "title": "How Can I Get a GEICO Teenage Driver Discount?",
+          "url": "https://wallethub.com/answers/ci/geico-teenage-driver-discount-1000195-2140770681/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO car insurance policies for teens cost an average of $1,355 per year in California, for example, but discounts can help teens save up to 23% on their premiums. Teen drivers who are full-time high school or college students with a 3.00+ GPA or ...",
+          "page_age": "2025-04-30T14:42:56",
+          "profile": {
+            "name": "WalletHub",
+            "url": "https://wallethub.com/answers/ci/geico-teenage-driver-discount-1000195-2140770681/",
+            "long_name": "wallethub.com",
+            "img": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "wallethub.com",
+            "hostname": "wallethub.com",
+            "favicon": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw",
+            "path": "\u203a answers  \u203a ci  \u203a geico-teenage-driver-discount-1000195-2140770681"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YnFsFD--_0DYDN63YU7RTh6E1ZINWtslBaGMBZrgzuI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbGV0aHViLmNv/bS9pbWFnZXMvd2gy/MDE1L2Fuc3dlcnMv/d2FsbGV0aHViLWFu/c3dlcnNfVjMwYjE2/NmZfLnBuZw",
+            "original": "https://cdn.wallethub.com/images/wh2015/answers/wallethub-answers_V30b166f_.png",
+            "logo": false
+          },
+          "age": "April 30, 2025"
+        },
+        {
+          "title": "Cheapest Car Insurance for College Students: Best Rates",
+          "url": "https://www.moneygeek.com/insurance/auto/cheapest-car-insurance-for-college-students/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Most insurers offer good student discounts of 10% to 25% if you maintain a B average or 3.0 GPA.",
+          "page_age": "2025-10-29T19:43:32",
+          "profile": {
+            "name": "MoneyGeek",
+            "url": "https://www.moneygeek.com/insurance/auto/cheapest-car-insurance-for-college-students/",
+            "long_name": "moneygeek.com",
+            "img": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "moneygeek.com",
+            "hostname": "www.moneygeek.com",
+            "favicon": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8",
+            "path": "  \u203a home  \u203a insurance  \u203a compare car insurance  \u203a cheapest car insurance for college students"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/FBTDDFACZeJaN0gOFRZt8aA6Bq6-XKrisxUd4YGLpBM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbW9uZXlnZWVr/L2ltYWdlL3VwbG9h/ZC9jX3NjYWxlLHFf/YXV0bzplY28sd18x/MjAwLGZfYXV0byxm/bF9sb3NzeS92MTc1/Njg5NTM5NC9DaGVh/cGVzdF9DYXJfSW5z/dXJhbmNlX2Zvcl8y/MF9ZZWFyX09sZF9D/b2xsZWdlX1N0dWRl/bnRzX2EyMzYyZWFm/ZDUucG5n",
+            "original": "https://res.cloudinary.com/moneygeek/image/upload/c_scale,q_auto:eco,w_1200,f_auto,fl_lossy/v1756895394/Cheapest_Car_Insurance_for_20_Year_Old_College_Students_a2362eafd5.png",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Best Good Student Auto Insurance Discounts in 2025 (Save up to 35% With These 10 Companies) | AutoInsurance.org",
+          "url": "https://www.autoinsurance.org/good-student-auto-insurance-discount/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Yes, you can get a Progressive good student insurance discount of up to 10% if you\u2019re a full-time college or high school student under 23 and have at least a 3.0 GPA, or B average.",
+          "page_age": "2025-07-04T21:25:37",
+          "profile": {
+            "name": "AutoInsurance.org",
+            "url": "https://www.autoinsurance.org/good-student-auto-insurance-discount/",
+            "long_name": "autoinsurance.org",
+            "img": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.org",
+            "hostname": "www.autoinsurance.org",
+            "favicon": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv",
+            "path": "  \u203a home  \u203a best good student auto insurance discounts in 2025 (save up to 35% with these 10 companies)"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/IBZLe7FjASOrsAdF79a4AjLscVHIRyrNl-5lH7xgh3E/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vcXVvdGVsbGMv/aW1hZ2UvdXBsb2Fk/L2luc3VyYW5jZS1z/aXRlLWltYWdlcy9h/aW9yZy1saXZlLzNm/YzJmYTlkLWFpb3Jn/LWxvZ28uc3Zn",
+            "original": "https://res.cloudinary.com/quotellc/image/upload/insurance-site-images/aiorg-live/3fc2fa9d-aiorg-logo.svg",
+            "logo": true
+          },
+          "age": "July 4, 2025"
+        },
+        {
+          "title": "Best Good Student Car Insurance Discounts in 2025 (Save up to 35% With These Companies) | Clearsurance",
+          "url": "https://clearsurance.com/blog/best-good-student-car-insurance-discounts",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm offers an exclusive ... regardless of their GPA. The program encourages safe driving through training modules and driving tests. Also, Progressive discounts good students under 24, while it\u2019s 25 with most providers. For Geico, there is a Geico good student ...",
+          "page_age": "2025-04-25T20:08:16",
+          "profile": {
+            "name": "Clearsurance -",
+            "url": "https://clearsurance.com/blog/best-good-student-car-insurance-discounts",
+            "long_name": "clearsurance.com",
+            "img": "https://imgs.search.brave.com/KcX9p4u9Y6Gb4ybHTKD6RJ7aDtcyBA1hsroH-6pxVKc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTY1ZTZhMWJj/ODc5NjIzOTgzODAw/NjYzZDgzNGYzZDY0/MmFhMzA1YTcxNzc1/OTBjNTBmM2M0M2Fj/N2I5ZjkzZS9jbGVh/cnN1cmFuY2UuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "clearsurance.com",
+            "hostname": "clearsurance.com",
+            "favicon": "https://imgs.search.brave.com/KcX9p4u9Y6Gb4ybHTKD6RJ7aDtcyBA1hsroH-6pxVKc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTY1ZTZhMWJj/ODc5NjIzOTgzODAw/NjYzZDgzNGYzZDY0/MmFhMzA1YTcxNzc1/OTBjNTBmM2M0M2Fj/N2I5ZjkzZS9jbGVh/cnN1cmFuY2UuY29t/Lw",
+            "path": "  \u203a home  \u203a uncategorized"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ISrHiut6xk6jn1hD5-us-uIbLsiXNQe9hYXValywTJo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9xdW90/ZS5jbGVhcnN1cmFu/Y2UuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI1LzAyL3Nx/dWFyZS5qcGc",
+            "original": "https://quote.clearsurance.com/wp-content/uploads/2025/02/square.jpg",
+            "logo": false
+          },
+          "age": "April 25, 2025"
+        },
+        {
+          "title": "Best College Student Auto Insurance in 2025",
+          "url": "https://www.autoinsurance.com/best/college-students/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Allstate \u2013 Best for Taking a Car to School Allstate\u2019s flexible student discount, combined with its pay-per-mile option, makes it a good choice for students who take their vehicle to school but don\u2019t drive frequently. State Farm \u2013 Best for Younger Students With low rates, a seamless mobile app, and strong customer satisfaction ratings, State Farm is a solid choice for any college student. Its rates are particularly good for 18-, 19-, and 20-year-olds. GEICO \u2013 Best for Students on Their Own Policy GEICO has the cheapest, most widely available insurance on the market and is a good choice for drivers buying a separate policy from their parents.",
+          "page_age": "2025-04-03T20:36:18",
+          "profile": {
+            "name": "Auto Insurance",
+            "url": "https://www.autoinsurance.com/best/college-students/",
+            "long_name": "autoinsurance.com",
+            "img": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.com",
+            "hostname": "www.autoinsurance.com",
+            "favicon": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v",
+            "path": "  \u203a home  \u203a bests  \u203a best college student auto insurance in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/FU3hr37tBh-Ikm7VXGKvyu3MEuYMGVKcUPtJXRnSUP4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYXV0b2luc3Vy/YW5jZS5jb20vYXBw/L3VwbG9hZHMvMjAy/MS8xMi8xNjIxMTQw/My9TY3JlZW4tU2hv/dC0yMDIxLTEyLTAx/LWF0LTkuMzcuNDYt/QU0ucG5n",
+            "original": "https://images.autoinsurance.com/app/uploads/2021/12/16211403/Screen-Shot-2021-12-01-at-9.37.46-AM.png",
+            "logo": false
+          },
+          "age": "April 3, 2025"
+        },
+        {
+          "title": "Student Car Insurance Discounts - Insure On The Spot",
+          "url": "https://www.insureonthespot.com/student-car-insurance-discounts/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Eligibility: Full-time high school or college students under 25 with a GPA of 3.0 or better, or equivalent achievements (honor roll, top 20% of the class, etc.). Typical Savings: Discounts typically range from 5% to 25%. For example, State Farm offers up to 25%, while GEICO\u2019s discount is ...",
+          "page_age": "2025-06-20T21:34:12",
+          "profile": {
+            "name": "Insure On The Spot",
+            "url": "https://www.insureonthespot.com/student-car-insurance-discounts/",
+            "long_name": "insureonthespot.com",
+            "img": "https://imgs.search.brave.com/ZH_l3iIrD1V5_xmwua4x4SlKZZRpbhmyYEDeqdHdCDQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI3YjYxNTUz/MjA3OTY4ODg4MDVh/OWQ4YTI5MTJjN2Vl/MjE0MzQ0ODdkZDRk/NTUzNDcxYjczMzVl/MWNmYzI1NC93d3cu/aW5zdXJlb250aGVz/cG90LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insureonthespot.com",
+            "hostname": "www.insureonthespot.com",
+            "favicon": "https://imgs.search.brave.com/ZH_l3iIrD1V5_xmwua4x4SlKZZRpbhmyYEDeqdHdCDQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI3YjYxNTUz/MjA3OTY4ODg4MDVh/OWQ4YTI5MTJjN2Vl/MjE0MzQ0ODdkZDRk/NTUzNDcxYjczMzVl/MWNmYzI1NC93d3cu/aW5zdXJlb250aGVz/cG90LmNvbS8",
+            "path": "  \u203a home  \u203a tips & resources (articles)  \u203a student car insurance discounts"
+          },
+          "age": "June 20, 2025"
+        },
+        {
+          "title": "Best Geico Auto Insurance Discounts in 2025 (Save 26% With These Special Offers!) | AutoInsurance.org",
+          "url": "https://www.autoinsurance.org/geico-auto-insurance-discounts/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Good Student: The Geico good student auto insurance discount is available for full-time students with a 3.5 GPA.",
+          "page_age": "2025-08-01T23:18:47",
+          "profile": {
+            "name": "AutoInsurance.org",
+            "url": "https://www.autoinsurance.org/geico-auto-insurance-discounts/",
+            "long_name": "autoinsurance.org",
+            "img": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.org",
+            "hostname": "www.autoinsurance.org",
+            "favicon": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv",
+            "path": "  \u203a home  \u203a shopping for auto insurance  \u203a best auto insurance discounts"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/IBZLe7FjASOrsAdF79a4AjLscVHIRyrNl-5lH7xgh3E/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vcXVvdGVsbGMv/aW1hZ2UvdXBsb2Fk/L2luc3VyYW5jZS1z/aXRlLWltYWdlcy9h/aW9yZy1saXZlLzNm/YzJmYTlkLWFpb3Jn/LWxvZ28uc3Zn",
+            "original": "https://res.cloudinary.com/quotellc/image/upload/insurance-site-images/aiorg-live/3fc2fa9d-aiorg-logo.svg",
+            "logo": true
+          },
+          "age": "August 1, 2025"
+        },
+        {
+          "title": "Best car insurance for college students",
+          "url": "https://www.insurance.com/auto-insurance/best-car-insurance-for-college-students",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "You may qualify for the following: Good student (17%), for students aged 18 to 24 with a B average or better ... Our No. 3 company for college student car insurance, GEICO has average rates of $2,865 a year and offers the following discounts ...",
+          "page_age": "2025-08-26T00:00:00",
+          "profile": {
+            "name": "Insurance.com",
+            "url": "https://www.insurance.com/auto-insurance/best-car-insurance-for-college-students",
+            "long_name": "insurance.com",
+            "img": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurance.com",
+            "hostname": "www.insurance.com",
+            "favicon": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8",
+            "path": "  \u203a home  \u203a auto insurance  \u203a best car insurance for college students"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/AcqEAwXnEXSgpIVYfe8HQN44kmfrH1nw_0LQ2bjyYqc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmNlLmNv/bS91cGxvYWRlZGZp/bGVzL21lZGlhL2Nh/ci1pbnN1cmFuY2Ut/NS5qcGc",
+            "original": "https://www.insurance.com/uploadedfiles/media/car-insurance-5.jpg",
+            "logo": false
+          },
+          "age": "August 26, 2025"
+        },
+        {
+          "title": "The Best Car Insurance Discounts for Students",
+          "url": "https://clovered.com/student-discount-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "To be eligible for the Geico Good Student Discount, you must be younger than 26 years old, a full-time high school or college student, and maintain at least a 3.0 GPA or a B average on your transcripts.",
+          "page_age": "2025-01-29T19:07:08",
+          "profile": {
+            "name": "Clovered",
+            "url": "https://clovered.com/student-discount-car-insurance/",
+            "long_name": "clovered.com",
+            "img": "https://imgs.search.brave.com/FMvsDfAYLtW0L_vkIDwl109FIUd01bit67bRxDQuYXk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDY2ZjEyMWY2/MDhiYTczNDdiZDFm/NTcyMDYwMGY5Zjgx/M2JhYTM2NmQ1NjA5/M2U3ZDlhYmEyODZl/MDQwYWVjOC9jbG92/ZXJlZC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "clovered.com",
+            "hostname": "clovered.com",
+            "favicon": "https://imgs.search.brave.com/FMvsDfAYLtW0L_vkIDwl109FIUd01bit67bRxDQuYXk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDY2ZjEyMWY2/MDhiYTczNDdiZDFm/NTcyMDYwMGY5Zjgx/M2JhYTM2NmQ1NjA5/M2U3ZDlhYmEyODZl/MDQwYWVjOC9jbG92/ZXJlZC5jb20v",
+            "path": "  \u203a articles  \u203a the best car insurance discounts for students"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/RbmUhVq9NQFsQKrqYNyrAKKMlkdDUf-ifTqtxSN1SDE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jbG92/ZXJlZC5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjIvMDgv/VGhlLUJlc3QtQ2Fy/LUluc3VyYW5jZS1E/aXNjb3VudHMtZm9y/LVN0dWRlbnRzLW1p/bi53ZWJw",
+            "original": "https://clovered.com/wp-content/uploads/2022/08/The-Best-Car-Insurance-Discounts-for-Students-min.webp",
+            "logo": false
+          },
+          "age": "January 29, 2025"
+        },
+        {
+          "title": "How to Save With the Progressive Student Discount",
+          "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/progressive-student-discount",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Easy-to-use. ... Progressive offers its student discount to full-time students 22 and younger with a 3.0 or better GPA. You must provide proof of good grades to add the discount to your car insurance policy.",
+          "page_age": "2025-03-27T19:00:00",
+          "profile": {
+            "name": "Compare",
+            "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/progressive-student-discount",
+            "long_name": "compare.com",
+            "img": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "compare.com",
+            "hostname": "www.compare.com",
+            "favicon": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v",
+            "path": "  \u203a auto insurance  \u203a cheap car insurance  \u203a discounts  \u203a progressive student discount"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/CPb8fbVqOvh-kDnqNSbonUyVd5J2wB2e9t-11J31doA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8yOTU1MDgvMTIw/MHg5MDAvYzViZThm/NzI1Zi9naXJsLXN0/dWR5aW5nLWhlcm8u/anBn",
+            "original": "https://a.storyblok.com/f/295508/1200x900/c5be8f725f/girl-studying-hero.jpg",
+            "logo": false
+          },
+          "age": "March 27, 2025"
+        },
+        {
+          "title": "The best cheap car insurance for college students in 2025",
+          "url": "https://www.cnbc.com/select/best-car-insurance-college-students/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Student discounts: Geico&#x27;s good student discount is worth up to 15% and you can also get a rate reduction by leaving your car at home, completing a driver education course or being in the military or select student organizations.",
+          "page_age": "2025-03-06T11:08:36",
+          "profile": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/select/best-car-insurance-college-students/",
+            "long_name": "Consumer News and Business Channel",
+            "img": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cnbc.com",
+            "hostname": "www.cnbc.com",
+            "favicon": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+            "path": "  \u203a cnbc select  \u203a insurance  \u203a the best cheap car insurance for college students in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/tUHAjyMMWBtLB6FfBDEZVsEhkphWXcggFqockL5TAqw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDcwNDM2NjEt/MTY0OTM2NjMwMTU1/Ny1yaWRlc2hhcmUu/anBnP3Y9MTY5MjEx/NTM2NA",
+            "original": "https://image.cnbcfm.com/api/v1/image/107043661-1649366301557-rideshare.jpg?v=1692115364",
+            "logo": false
+          },
+          "age": "March 6, 2025"
+        },
+        {
+          "title": "How to Get the GEICO Alumni Discount",
+          "url": "https://wallethub.com/answers/ci/geico-alumni-discount-2140699632/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Popular Organizations with Geico Affiliation Discounts ... BJ\u2019s Wholesale Club Members... read full answer by Melissa Sherrard, Car Insurance Writer \u00b7 You can get a GEICO good student discount if you have at least a B average.",
+          "page_age": "2024-12-03T11:59:27",
+          "profile": {
+            "name": "WalletHub",
+            "url": "https://wallethub.com/answers/ci/geico-alumni-discount-2140699632/",
+            "long_name": "wallethub.com",
+            "img": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "wallethub.com",
+            "hostname": "wallethub.com",
+            "favicon": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw",
+            "path": "\u203a answers  \u203a ci  \u203a geico-alumni-discount-2140699632"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YnFsFD--_0DYDN63YU7RTh6E1ZINWtslBaGMBZrgzuI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbGV0aHViLmNv/bS9pbWFnZXMvd2gy/MDE1L2Fuc3dlcnMv/d2FsbGV0aHViLWFu/c3dlcnNfVjMwYjE2/NmZfLnBuZw",
+            "original": "https://cdn.wallethub.com/images/wh2015/answers/wallethub-answers_V30b166f_.png",
+            "logo": false
+          },
+          "age": "December 3, 2024"
+        },
+        {
+          "title": "The best car insurance discounts for students",
+          "url": "https://www.cnbc.com/select/how-to-get-car-insurance-student-discounts/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "These insurers have the highest publicly reported good student discounts. How much of a reduction an individual student will get depends on the insurer, the state and other factors. ... Allstate: up to 22%. ... Geico: up to 15%.",
+          "page_age": "2025-08-01T20:35:23",
+          "profile": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/select/how-to-get-car-insurance-student-discounts/",
+            "long_name": "Consumer News and Business Channel",
+            "img": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cnbc.com",
+            "hostname": "www.cnbc.com",
+            "favicon": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+            "path": "  \u203a cnbc select  \u203a insurance  \u203a the best car insurance discounts for students"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/98W9ge3t8ysby6R6vjb_gzYPFwpe2gVvA0R0y1ykKcE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDczMjE2Nzkt/MTY5ODA3NjQ1NjQ1/NC1nZXR0eWltYWdl/cy0xNjY1NjQ0MzE3/LWdlcm1hbnlfMzU0/MC5qcGVnP3Y9MTY5/ODA3NjY5NQ",
+            "original": "https://image.cnbcfm.com/api/v1/image/107321679-1698076456454-gettyimages-1665644317-germany_3540.jpeg?v=1698076695",
+            "logo": false
+          },
+          "age": "August 1, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

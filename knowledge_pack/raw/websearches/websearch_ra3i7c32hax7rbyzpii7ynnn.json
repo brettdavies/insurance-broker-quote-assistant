@@ -1,0 +1,795 @@
+{
+  "websearch_id": "websearch_ra3i7c32hax7rbyzpii7ynnn",
+  "search_id": "search_zjb26xb0wrbd518is8oxdjg9",
+  "timestamp": "2025-11-07T12:32:03.439074",
+  "startedAt": "2025-11-07T12:32:03.439074",
+  "completedAt": "2025-11-07T12:32:05.496712",
+  "durationSeconds": 2.06,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"New York\" PIP $50000 minimum",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"New York\" PIP $50000 minimum",
+      "show_strict_warning": false,
+      "cleaned": "New York PIP $50000 minimum",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "New York PIP $50000 minimum"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "How Does Personal Injury Protection (PIP) Work in New York? - ValuePenguin",
+          "url": "https://www.valuepenguin.com/car-insurance/how-pip-works-new-york",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "New York is a no-fault state, and ... things: medical costs, economic losses and death benefits. The minimum amount of PIP you can purchase in New York is $50,000....",
+          "page_age": "2025-07-14T18:28:39",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/car-insurance/how-pip-works-new-york",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a car-insurance  \u203a how-pip-works-new-york"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/v1F2Op8sZsKrZOaX73W-7sMCl-FPXYqNADsozt7ex74/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2F1dG8taW5z/dXJhbmNlL3NodXR0/ZXJzdG9ja181MjQ1/NTQ4OTQuanBn",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/auto-insurance/shutterstock_524554894.jpg",
+            "logo": false
+          },
+          "age": "July 14, 2025"
+        },
+        {
+          "title": "PIP insurance in New York | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/pip-insurance-new-york/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "PIP insurance in New York is mandatory. You must carry at least $50,000 of PIP coverage as part of your auto insurance policy. Most states in the U.S. maintain some type of minimum car insurance requirement to legally drive in the state.",
+          "page_age": "2024-11-11T20:57:19",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/pip-insurance-new-york/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/gyrJPiDSA_GxBCkvFfh3tMz_x_iDuvdu59j92qXmmrA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/LzIwMjEvMTAvMjIx/MTMzNDQvY2FyLXBp/cC1pbnN1cmFuY2Ut/bmV3LXlvcmstZmVh/dHVyZWQuanBn",
+            "original": "https://www.bankrate.com/2021/10/22113344/car-pip-insurance-new-york-featured.jpg",
+            "logo": false
+          },
+          "age": "November 11, 2024"
+        },
+        {
+          "title": "Personal Injury Protection (PIP) - Rosenbaum Personal Injury Lawyers",
+          "url": "https://www.rosenbaumnylaw.com/resources/personal-injury-protection-pip/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Instead, it covers you for your own losses in a traffic accident, no matter who is at fault. ... The minimum amount of PIP insurance you can purchase is $50,000 per person, per accident.",
+          "page_age": "2025-04-08T18:18:09",
+          "profile": {
+            "name": "Rosenbaum & Rosenbaum",
+            "url": "https://www.rosenbaumnylaw.com/resources/personal-injury-protection-pip/",
+            "long_name": "rosenbaumnylaw.com",
+            "img": "https://imgs.search.brave.com/pv0ovUfdh7b-rF8x6YXWbGEmo46aFlid7ujq2xunVnw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGIyNmUzOGNi/MDNlMzNiMGZhNWUy/YjAxNzNiOWFmZGQz/Y2ZkNmUwZGM5Njgz/YjY2ZmM4ZmM4OTFi/OTM4YzVlOC93d3cu/cm9zZW5iYXVtbnls/YXcuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "rosenbaumnylaw.com",
+            "hostname": "www.rosenbaumnylaw.com",
+            "favicon": "https://imgs.search.brave.com/pv0ovUfdh7b-rF8x6YXWbGEmo46aFlid7ujq2xunVnw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGIyNmUzOGNi/MDNlMzNiMGZhNWUy/YjAxNzNiOWFmZGQz/Y2ZkNmUwZGM5Njgz/YjY2ZmM4ZmM4OTFi/OTM4YzVlOC93d3cu/cm9zZW5iYXVtbnls/YXcuY29tLw",
+            "path": "  \u203a home  \u203a new york city personal injury resources  \u203a personal injury protection (pip)"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/MCh5CBS57Fxh-jtG7UThegBrDPLoA498pNa2TCKJ1-s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cm9zZW5iYXVtbnls/YXcuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIyLzA2L1Bl/cnNvbmFsLUluanVy/eS1Qcm90ZWN0aW9u/LVBJUC5qcGc",
+            "original": "https://www.rosenbaumnylaw.com/wp-content/uploads/2022/06/Personal-Injury-Protection-PIP.jpg",
+            "logo": false
+          },
+          "age": "April 8, 2025"
+        },
+        {
+          "title": "What is Personal Injury Protection (PIP)? | Douglas & London",
+          "url": "https://www.douglasandlondon.com/car-accident-lawyers-nyc/what-is-personal-injury-protection-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Within limits, PIP insurance also reimburses your wage losses and extra household expenses that are necessary because of the accident. New York requires car owners to carry a minimum of $50,000 per person in PIP coverage.",
+          "page_age": "2025-06-04T16:47:11",
+          "profile": {
+            "name": "Douglas & London",
+            "url": "https://www.douglasandlondon.com/car-accident-lawyers-nyc/what-is-personal-injury-protection-insurance/",
+            "long_name": "douglasandlondon.com",
+            "img": "https://imgs.search.brave.com/BLqXOzA0UtpolwiKPwPaCJpyXGMwIP_LNF4ZttcY8W8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYWMyNmYxYWYz/YmJkNTJlMzliNmIy/NmY2N2YxMGIyN2Q0/MjY0NTk3YjRiN2Fl/ZTRjMWQzNWY5ZGIx/ZjQ0NTNlZS93d3cu/ZG91Z2xhc2FuZGxv/bmRvbi5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "douglasandlondon.com",
+            "hostname": "www.douglasandlondon.com",
+            "favicon": "https://imgs.search.brave.com/BLqXOzA0UtpolwiKPwPaCJpyXGMwIP_LNF4ZttcY8W8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYWMyNmYxYWYz/YmJkNTJlMzliNmIy/NmY2N2YxMGIyN2Q0/MjY0NTk3YjRiN2Fl/ZTRjMWQzNWY5ZGIx/ZjQ0NTNlZS93d3cu/ZG91Z2xhc2FuZGxv/bmRvbi5jb20v",
+            "path": "  \u203a home  \u203a car accident lawyers in new york  \u203a what is personal injury protection (pip) insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/JVrS7XMq88cnajkRNMgp9Tb2xNfWoEjcVysbGJ3cc0k/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/ZG91Z2xhc2FuZGxv/bmRvbi5jb20vY2Fy/LWFjY2lkZW50LWxh/d3llcnMtbnljL3do/YXQtaXMtcGVyc29u/YWwtaW5qdXJ5LXBy/b3RlY3Rpb24taW5z/dXJhbmNlLw",
+            "original": "https://www.douglasandlondon.com/car-accident-lawyers-nyc/what-is-personal-injury-protection-insurance/",
+            "logo": false
+          },
+          "age": "June 4, 2025"
+        },
+        {
+          "title": "New York Car Insurance Laws (Updated 2025) | The Zebra",
+          "url": "https://www.thezebra.com/auto-insurance/new-york-car-insurance/state-laws-ny/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "PIP will cover medical expenses such as hospital bills, rehabilitation costs, and even work loss resulting from an accident. In New York, minimum PIP coverage of $50,000 per person is required on your policy.",
+          "page_age": "2025-11-03T15:30:25",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/auto-insurance/new-york-car-insurance/state-laws-ny/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a cheap car insurance  \u203a new york car insurance  \u203a new york car insurance laws"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/tbd0UaOOvIXqi69W48G0j_FAdMT0JxNy_qR5HBkqeCs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9zdGF0/aWMvM2I5NGRmMy96/ZnJvbnQvaW1nL2l6/LXNoYXJlLWxvZ28u/cG5n",
+            "original": "https://cdn.thezebra.com/zfront/static/3b94df3/zfront/img/iz-share-logo.png",
+            "logo": true
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "What does no fault insurance NY cover?",
+          "url": "https://www.plymouthrock.com/resources/what-does-no-fault-insurance-ny-cover",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "PIP can also be referred to as No Fault coverage. Keep in mind that in New York, PIP coverage follows the vehicle and not the driver. In New York, the minimum limit for PIP is $50,000.",
+          "page_age": "2025-07-17T18:56:58",
+          "profile": {
+            "name": "Plymouth Rock",
+            "url": "https://www.plymouthrock.com/resources/what-does-no-fault-insurance-ny-cover",
+            "long_name": "plymouthrock.com",
+            "img": "https://imgs.search.brave.com/e8fRJ4soirDKsbJ8gUvvviOV0ICPOpaaRTniOAI6RWQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2M1MDUwODc3/ODE1ZDNmOWE5Njdm/MDNlM2QxMzQ0OGUx/NzEzNWI2OGRmOWEy/MmUzZmQyNGJmYmI2/M2IyNWY2ZC93d3cu/cGx5bW91dGhyb2Nr/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "plymouthrock.com",
+            "hostname": "www.plymouthrock.com",
+            "favicon": "https://imgs.search.brave.com/e8fRJ4soirDKsbJ8gUvvviOV0ICPOpaaRTniOAI6RWQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2M1MDUwODc3/ODE1ZDNmOWE5Njdm/MDNlM2QxMzQ0OGUx/NzEzNWI2OGRmOWEy/MmUzZmQyNGJmYmI2/M2IyNWY2ZC93d3cu/cGx5bW91dGhyb2Nr/LmNvbS8",
+            "path": "  \u203a home  \u203a resources  \u203a what does no fault insurance ny cover?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Y4nnt0goKKWo_iVaquq4YtO0vY8RyA97lP2CATSlAP0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cGx5bW91dGhyb2Nr/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMy8wOC9uby1m/YXVsdC1hY2NpZGVu/dC5qcGc",
+            "original": "https://www.plymouthrock.com/wp-content/uploads/2023/08/no-fault-accident.jpg",
+            "logo": false
+          },
+          "age": "July 17, 2025"
+        },
+        {
+          "title": "What is the minimum auto insurance coverage in New York?",
+          "url": "https://www.plymouthrock.com/resources/what-is-the-minimum-auto-insurance-coverage-in-new-york",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "New York state requires a minimum limit of $25,000 per-person and $50,000 per-accident. This pays for medical costs for you and your passengers are in the event of an accident, no matter who was at fault.",
+          "page_age": "2025-07-17T18:50:30",
+          "profile": {
+            "name": "Plymouth Rock",
+            "url": "https://www.plymouthrock.com/resources/what-is-the-minimum-auto-insurance-coverage-in-new-york",
+            "long_name": "plymouthrock.com",
+            "img": "https://imgs.search.brave.com/e8fRJ4soirDKsbJ8gUvvviOV0ICPOpaaRTniOAI6RWQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2M1MDUwODc3/ODE1ZDNmOWE5Njdm/MDNlM2QxMzQ0OGUx/NzEzNWI2OGRmOWEy/MmUzZmQyNGJmYmI2/M2IyNWY2ZC93d3cu/cGx5bW91dGhyb2Nr/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "plymouthrock.com",
+            "hostname": "www.plymouthrock.com",
+            "favicon": "https://imgs.search.brave.com/e8fRJ4soirDKsbJ8gUvvviOV0ICPOpaaRTniOAI6RWQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2M1MDUwODc3/ODE1ZDNmOWE5Njdm/MDNlM2QxMzQ0OGUx/NzEzNWI2OGRmOWEy/MmUzZmQyNGJmYmI2/M2IyNWY2ZC93d3cu/cGx5bW91dGhyb2Nr/LmNvbS8",
+            "path": "  \u203a home  \u203a resources  \u203a what is the minimum auto insurance coverage in new york?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/133jGOdGHSg9SssZ3EOaQ5YwlrZZZkBgEFZtuWE3H6s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cGx5bW91dGhyb2Nr/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMi8wNi9ncmVl/bi13YWxscy1wZW9w/bGUtY291Y2guanBn",
+            "original": "https://www.plymouthrock.com/wp-content/uploads/2022/06/green-walls-people-couch.jpg",
+            "logo": false
+          },
+          "age": "July 17, 2025"
+        },
+        {
+          "title": "What Is the Minimum Auto Insurance Coverage in NY? | LEVINE AND WISS, PLLC",
+          "url": "https://888gothurt.com/faqs/what-is-minimum-auto-insurance-coverage/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The minimum auto insurance coverage in New York includes Bodily Injury Liability, which is set at $25 \u00b7 ,000 for bodily injury to one person and $50,000 for bodily injury to all individuals involved in an accident.",
+          "page_age": "2025-04-08T14:49:39",
+          "profile": {
+            "name": "888gothurt",
+            "url": "https://888gothurt.com/faqs/what-is-minimum-auto-insurance-coverage/",
+            "long_name": "888gothurt.com",
+            "img": "https://imgs.search.brave.com/7_uzjptOMFXDIHUGov9B67ShRZs41YUiIWaRTLy6Y5A/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYWI0OTc3NmMw/NDBiNjNkMDFmY2U4/N2M1YTcwY2UyZjk2/MGU0MWEyZDQ0YmRi/MGQ3M2FhMmEzMjQw/OTY4NDdkZi84ODhn/b3RodXJ0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "888gothurt.com",
+            "hostname": "888gothurt.com",
+            "favicon": "https://imgs.search.brave.com/7_uzjptOMFXDIHUGov9B67ShRZs41YUiIWaRTLy6Y5A/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYWI0OTc3NmMw/NDBiNjNkMDFmY2U4/N2M1YTcwY2UyZjk2/MGU0MWEyZDQ0YmRi/MGQ3M2FhMmEzMjQw/OTY4NDdkZi84ODhn/b3RodXJ0LmNvbS8",
+            "path": "  \u203a long island personal injury lawyer  \u203a frequently asked questions  \u203a what is the minimum auto insurance coverage in ny?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Aw97ZFzUgPK07MYZGoN-P_WjRDSniB_RRIg1XmUkPzY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly84ODhn/b3RodXJ0LmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyNC8x/MC9XaGF0LUlzLXRo/ZS1NaW5pbXVtLUF1/dG8tSW5zdXJhbmNl/LUNvdmVyYWdlLWlu/LU5ZLmpwZw",
+            "original": "https://888gothurt.com/wp-content/uploads/2024/10/What-Is-the-Minimum-Auto-Insurance-Coverage-in-NY.jpg",
+            "logo": false
+          },
+          "age": "April 8, 2025"
+        },
+        {
+          "title": "Minimum and Maximum Auto Insurance Coverage in New York",
+          "url": "https://www.prolaw1.com/blog/minimum-and-maximum-auto-insurance-coverage-in-new-york-what-you-need-to-know/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "As of 2024, the minimum auto insurance ... $25,000 per person and $50,000 per accident \u00b7 Property Damage Liability (PDL): $10,000 per accident \u00b7 Personal Injury Protection (PIP): $50,000 per person...",
+          "page_age": "2025-04-04T14:46:35",
+          "profile": {
+            "name": "Proner & Proner",
+            "url": "https://www.prolaw1.com/blog/minimum-and-maximum-auto-insurance-coverage-in-new-york-what-you-need-to-know/",
+            "long_name": "prolaw1.com",
+            "img": "https://imgs.search.brave.com/iC_jaMTT4r2Gnh5tJWOaC2d6V43elmNcav6taV0FBuw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNmJhZTg3YmRm/OTkzMmU2ZmE4YmY5/NTU5YTI0ZGZlZWUw/YjE3NmE2MDE1N2Iw/NWYzZmUyNDIyNjg4/YWExMjE0Zi93d3cu/cHJvbGF3MS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "prolaw1.com",
+            "hostname": "www.prolaw1.com",
+            "favicon": "https://imgs.search.brave.com/iC_jaMTT4r2Gnh5tJWOaC2d6V43elmNcav6taV0FBuw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNmJhZTg3YmRm/OTkzMmU2ZmE4YmY5/NTU5YTI0ZGZlZWUw/YjE3NmE2MDE1N2Iw/NWYzZmUyNDIyNjg4/YWExMjE0Zi93d3cu/cHJvbGF3MS5jb20v",
+            "path": "  \u203a home  \u203a minimum and maximum auto insurance coverage in new york: what you need to know"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/0E09cg9_Mc1g9uESHHBjjO6wFt2u-mGGaw4i4g1yon4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cHJvbGF3MS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjQv/MDYvbG9nby1wcm9u/ZXIucG5n",
+            "original": "https://www.prolaw1.com/wp-content/uploads/2024/06/logo-proner.png",
+            "logo": true
+          },
+          "age": "April 4, 2025"
+        },
+        {
+          "title": "Understanding PIP Auto Insurance in New York | Dreyer Boyajian",
+          "url": "https://www.dreyerboyajian.com/blog/personal-injury-protection-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In addition to requiring PIP coverage, New York law also requires drivers to carry bodily injury coverage with minimum policy limits of $25,000 per person and $50,000 per accident for non-fatal injuries.",
+          "page_age": "2025-02-27T14:58:49",
+          "profile": {
+            "name": "Dreyer Boyajian LLP",
+            "url": "https://www.dreyerboyajian.com/blog/personal-injury-protection-insurance/",
+            "long_name": "dreyerboyajian.com",
+            "img": "https://imgs.search.brave.com/km9wZcINtd5-ArOZ9PnFLA-637oy7HKEjn61Fz7t4X0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjc1OGM5YjRl/MTM2YWUzMDIyYzJh/NmNjYjRlODMwM2I0/ZjEwY2MwZDQ2MDY4/YjgzMjQ1NTc5ZjNk/ZTBjYmNmYi93d3cu/ZHJleWVyYm95YWpp/YW4uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "dreyerboyajian.com",
+            "hostname": "www.dreyerboyajian.com",
+            "favicon": "https://imgs.search.brave.com/km9wZcINtd5-ArOZ9PnFLA-637oy7HKEjn61Fz7t4X0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjc1OGM5YjRl/MTM2YWUzMDIyYzJh/NmNjYjRlODMwM2I0/ZjEwY2MwZDQ2MDY4/YjgzMjQ1NTc5ZjNk/ZTBjYmNmYi93d3cu/ZHJleWVyYm95YWpp/YW4uY29tLw",
+            "path": "  \u203a home  \u203a what is pip coverage?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/rddxZNZ6dwuvkhRglJtYNujbav_QOru9OBGYk3NzNoE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/ZHJleWVyYm95YWpp/YW4uY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIxLzEwL3do/YXQtaXMtcGlwLWNv/dmVyYWdlLmpwZw",
+            "original": "https://www.dreyerboyajian.com/wp-content/uploads/2021/10/what-is-pip-coverage.jpg",
+            "logo": false
+          },
+          "age": "February 27, 2025"
+        },
+        {
+          "title": "Understanding New York Car Insurance Coverage | The Law Office of Jeena R Belil, PC",
+          "url": "https://www.jeenabelil.com/car-accidents/understanding-new-york-car-insurance-coverage/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "PIP is the cornerstone of New York\u2019s no-fault system. It provides coverage for medical expenses, lost wages, and other related costs if you\u2019re injured in an accident, regardless of fault. The minimum required PIP coverage is $50,000.",
+          "page_age": "2025-01-17T17:34:55",
+          "profile": {
+            "name": "Jeenabelil",
+            "url": "https://www.jeenabelil.com/car-accidents/understanding-new-york-car-insurance-coverage/",
+            "long_name": "jeenabelil.com",
+            "img": "https://imgs.search.brave.com/Vb708uPGdJTf5eXSeLqGcQ74U86LddoBvd_ntTyyCd8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJlNTBjYjlk/ZDM3MzAzZWNmNDI3/ZDY2MGI4M2YwY2Zk/MjhhY2M3MTMyYjc4/ZDVlMzE3MGQ3YmEx/OGZiZmY5OC93d3cu/amVlbmFiZWxpbC5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "jeenabelil.com",
+            "hostname": "www.jeenabelil.com",
+            "favicon": "https://imgs.search.brave.com/Vb708uPGdJTf5eXSeLqGcQ74U86LddoBvd_ntTyyCd8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJlNTBjYjlk/ZDM3MzAzZWNmNDI3/ZDY2MGI4M2YwY2Zk/MjhhY2M3MTMyYjc4/ZDVlMzE3MGQ3YmEx/OGZiZmY5OC93d3cu/amVlbmFiZWxpbC5j/b20v",
+            "path": "\u203a car-accidents  \u203a understanding-new-york-car-insurance-coverage"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/kwSczrvHWT8AoKWK_3CokB6L1qt5Ov2TJ5R-Ic-36cU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/amVlbmFiZWxpbC5j/b20vd3AtY29udGVu/dC91cGxvYWRzL3Np/dGVzLzE2MDQ1NzIv/MjAyMi8wNy9vZy1p/bWFnZS5wbmc",
+            "original": "https://www.jeenabelil.com/wp-content/uploads/sites/1604572/2022/07/og-image.png",
+            "logo": false
+          },
+          "age": "January 17, 2025"
+        },
+        {
+          "title": "New York Personal Injury Protection Insurance | Hecht, Kleeger & Damashek, P.C.",
+          "url": "https://lawyer1.com/car-accident-lawyer/pip-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "New York drivers must carry a minimum of $50,000 in no-fault insurance coverage.",
+          "page_age": "2025-07-06T00:12:46",
+          "profile": {
+            "name": "Lawyer1",
+            "url": "https://lawyer1.com/car-accident-lawyer/pip-insurance/",
+            "long_name": "lawyer1.com",
+            "img": "https://imgs.search.brave.com/uZf0gbrDdT3i-ntDIlgk9_41u8C5llj15xeBNSZM2F4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjRmMjYxZmQ1/NDRhY2I5ZWQ2NDcw/NjY4NDkzMDRkNTlj/MzJhYzVjZTgyZGJl/Yzk0YTBiZGYyYTM3/OWUyODMwNi9sYXd5/ZXIxLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "lawyer1.com",
+            "hostname": "lawyer1.com",
+            "favicon": "https://imgs.search.brave.com/uZf0gbrDdT3i-ntDIlgk9_41u8C5llj15xeBNSZM2F4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjRmMjYxZmQ1/NDRhY2I5ZWQ2NDcw/NjY4NDkzMDRkNTlj/MzJhYzVjZTgyZGJl/Yzk0YTBiZGYyYTM3/OWUyODMwNi9sYXd5/ZXIxLmNvbS8",
+            "path": "  \u203a new york personal injury lawyer  \u203a new york city car accident lawyer  \u203a new york personal injury protection insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/lnTbY1Kan_CE7_XemZkqMvG8GUopIId88SE_GaRLZ60/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9sYXd5/ZXIxLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNC8wMy9i/YW5uZXItZ3JvdXAt/c2hvdC5qcGc",
+            "original": "https://lawyer1.com/wp-content/uploads/2024/03/banner-group-shot.jpg",
+            "logo": false
+          },
+          "age": "July 6, 2025"
+        },
+        {
+          "title": "Is New York a No-Fault State?",
+          "url": "https://www.thebarnesfirm.com/understanding-the-basics-of-no-fault-insurance-in-new-york-state/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "When a car accident occurs, it ... the limits of the policy. By law, insurance companies in New York must provide a minimum of $50,000 in PIP coverage for each person injured in a car accident....",
+          "page_age": "2025-08-26T20:23:51",
+          "profile": {
+            "name": "The Barnes Firm",
+            "url": "https://www.thebarnesfirm.com/understanding-the-basics-of-no-fault-insurance-in-new-york-state/",
+            "long_name": "thebarnesfirm.com",
+            "img": "https://imgs.search.brave.com/pdWbkQYZhdJ4MKzI1JnMt8c1sx4Mu3e1pqYLRd32lqw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvY2M4MDdlNzUz/NWExNWVhNGRjZjAw/ZWIwMGQ0ODI2YmFh/YjRhN2Y3MjFmNjAz/Y2ZjNGRlMGU0YzAy/ZDI2Y2Q4MC93d3cu/dGhlYmFybmVzZmly/bS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thebarnesfirm.com",
+            "hostname": "www.thebarnesfirm.com",
+            "favicon": "https://imgs.search.brave.com/pdWbkQYZhdJ4MKzI1JnMt8c1sx4Mu3e1pqYLRd32lqw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvY2M4MDdlNzUz/NWExNWVhNGRjZjAw/ZWIwMGQ0ODI2YmFh/YjRhN2Y3MjFmNjAz/Y2ZjNGRlMGU0YzAy/ZDI2Y2Q4MC93d3cu/dGhlYmFybmVzZmly/bS5jb20v",
+            "path": "\u203a understanding-the-basics-of-no-fault-insurance-in-new-york-state"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/5A10Gr86VBExpaHcw2Df-rrtL_fPDAboxCzUHlfAlmM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly8yM2Iy/YzU3NC5yb2NrZXRj/ZG4ubWUvd3AtY29u/dGVudC91cGxvYWRz/LzIwMjAvMTIvUFVS/Q0hBU0VELWNhci1h/Y2NpZGVudC1wZW9w/bGUtdGFsa2luZy0x/MjNyZi1Ub21tYXNv/LUFsdGFtdXJhLmpw/Zw",
+            "original": "https://23b2c574.rocketcdn.me/wp-content/uploads/2020/12/PURCHASED-car-accident-people-talking-123rf-Tommaso-Altamura.jpg",
+            "logo": false
+          },
+          "age": "August 26, 2025"
+        },
+        {
+          "title": "What Is No Fault Insurance Coverage In New York? | William Mattar, P.C.",
+          "url": "https://williammattar.com/blog/car-accident/no-fault-insurance-coverage-ny/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Under no-fault insurance, each driver&#x27;s own PIP coverage will pay for: ... In New York, the minimum PIP coverage required is $50,000 per person.",
+          "page_age": "2024-12-05T19:28:00",
+          "profile": {
+            "name": "William Mattar",
+            "url": "https://williammattar.com/blog/car-accident/no-fault-insurance-coverage-ny/",
+            "long_name": "williammattar.com",
+            "img": "https://imgs.search.brave.com/LB-4GEdrv-nCZmbA8I6I4oIMV5BYQ8FlG3-WBoPJiZs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTY5YmViZDg3/YWIwNDNiY2EwNGU2/MGYyYjA4YmNmY2Q1/NTgwZGNlZDVlZWVj/NGVjY2NmZjk2MmE1/Y2QzZDBmNy93aWxs/aWFtbWF0dGFyLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "williammattar.com",
+            "hostname": "williammattar.com",
+            "favicon": "https://imgs.search.brave.com/LB-4GEdrv-nCZmbA8I6I4oIMV5BYQ8FlG3-WBoPJiZs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTY5YmViZDg3/YWIwNDNiY2EwNGU2/MGYyYjA4YmNmY2Q1/NTgwZGNlZDVlZWVj/NGVjY2NmZjk2MmE1/Y2QzZDBmNy93aWxs/aWFtbWF0dGFyLmNv/bS8",
+            "path": "  \u203a home  \u203a our blog  \u203a what is no fault insurance coverage in new york?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ZwTenl8qb4OpANPnukIvUsy0Jh7zN9k8t2F__WHwUXw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93aWxs/aWFtbWF0dGFyLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/Mi8wNS9OWVMtTm8t/RmF1bHQtSW5zdXJh/bmNlLnBuZw",
+            "original": "https://williammattar.com/wp-content/uploads/2022/05/NYS-No-Fault-Insurance.png",
+            "logo": false
+          },
+          "age": "December 5, 2024"
+        },
+        {
+          "title": "What Medical Expenses Are Covered By Car Insurance In NY?",
+          "url": "https://www.cellinolaw.com/blogs/medical-expenses-covered-by-car-insurance-in-new-york",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The minimum required amount of PIP coverage is $50,000. Drivers must also carry liability insurance. This type of coverage protects you if another person claims you were negligent and caused the crash.",
+          "page_age": "2025-09-26T19:59:53",
+          "profile": {
+            "name": "Cellino Law",
+            "url": "https://www.cellinolaw.com/blogs/medical-expenses-covered-by-car-insurance-in-new-york",
+            "long_name": "cellinolaw.com",
+            "img": "https://imgs.search.brave.com/Ml9BJb09JwNKQZHoKW7oXbP6y46gaf9AnOGvjFbRTCk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYWY3M2QyYTg0/YjFjMGNlMWNkOTY5/ZDY4Mjk1YmQ4NTBi/ZmE5ODdlNzQ1OTM2/ZTFiY2I2MDhlYjRj/M2JiZWFkOS93d3cu/Y2VsbGlub2xhdy5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cellinolaw.com",
+            "hostname": "www.cellinolaw.com",
+            "favicon": "https://imgs.search.brave.com/Ml9BJb09JwNKQZHoKW7oXbP6y46gaf9AnOGvjFbRTCk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYWY3M2QyYTg0/YjFjMGNlMWNkOTY5/ZDY4Mjk1YmQ4NTBi/ZmE5ODdlNzQ1OTM2/ZTFiY2I2MDhlYjRj/M2JiZWFkOS93d3cu/Y2VsbGlub2xhdy5j/b20v",
+            "path": "  \u203a home  \u203a car accident  \u203a what medical expenses are covered by car insurance in new york?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/kThi_lSWeS9Ca92SZPZe5sv9pFaSWb0FTh_obPLO690/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2VsbGlub2xhdy5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjMvMTAvTWVkaWNh/bC1FeHBlbnNlcy1D/ZWxsaW5vLmpwZw",
+            "original": "https://www.cellinolaw.com/wp-content/uploads/2023/10/Medical-Expenses-Cellino.jpg",
+            "logo": false
+          },
+          "age": "September 26, 2025"
+        },
+        {
+          "title": "What Is Personal Injury Protection (PIP) And Do You Need It? \u2013 Forbes Advisor",
+          "url": "https://www.forbes.com/advisor/car-insurance/pip-guide/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In New York, your car insurance must include a PIP minimum of $50,000 per person.",
+          "page_age": "2025-07-29T15:55:49",
+          "profile": {
+            "name": "Forbes Advisor",
+            "url": "https://www.forbes.com/advisor/car-insurance/pip-guide/",
+            "long_name": "forbes.com",
+            "img": "https://imgs.search.brave.com/qg6-E4bARcUpS7pHuJ2FXSeQ2YI51iPfbI8wpUBx9tg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY0NWFiMTBk/YmY2MjkyN2M0MTI0/NmRkYTM3ZjQzMGJj/Y2Q2MTBkYjVmZjA2/OGRjODBhMTM1M2Yx/YmRlZTA1NS93d3cu/Zm9yYmVzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "forbes.com",
+            "hostname": "www.forbes.com",
+            "favicon": "https://imgs.search.brave.com/qg6-E4bARcUpS7pHuJ2FXSeQ2YI51iPfbI8wpUBx9tg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY0NWFiMTBk/YmY2MjkyN2M0MTI0/NmRkYTM3ZjQzMGJj/Y2Q2MTBkYjVmZjA2/OGRjODBhMTM1M2Yx/YmRlZTA1NS93d3cu/Zm9yYmVzLmNvbS8",
+            "path": "  \u203a advisor  \u203a car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/1YWvhwtaoX8qQFtloiE5kgBfxAITtfblkw8kFGkQqi8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Zm9yYmVzLmNvbS9h/ZHZpc29yL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIyLzA4L2lu/anVyZWQtbmVjay1h/bmQtYXJtLmpwZWct/OTAweDUxMC5qcGc",
+            "original": "https://www.forbes.com/advisor/wp-content/uploads/2022/08/injured-neck-and-arm.jpeg-900x510.jpg",
+            "logo": false
+          },
+          "age": "July 29, 2025"
+        },
+        {
+          "title": "Additional Personal Injury Protection Subrogation: A Not So New Pair of Shoes - DSCB",
+          "url": "https://derreverelaw.com/additional-personal-injury-protection-subrogation-a-not-so-new-pair-of-shoes/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "... New York motorists must submit \u201cproof of financial security\u201d (e.g., policy of insurance providing coverage in the minimum amounts of $25,000.00 per person/ $50,000.00 per accident/ $10,000 for property damage) to register a vehicle in ...",
+          "page_age": "2025-02-27T20:39:08",
+          "profile": {
+            "name": "Derreverelaw",
+            "url": "https://derreverelaw.com/additional-personal-injury-protection-subrogation-a-not-so-new-pair-of-shoes/",
+            "long_name": "derreverelaw.com",
+            "img": "https://imgs.search.brave.com/-7pTI5w0syBPZ_xtSbOAhztk2PKVd5L2hjLKxK1I6RU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTIxNGU2MTQ0/MmFjYWExYWQ5YWQ1/NzNmNTU1ZWIwOWY2/MzAyNWFiNWNhMWFh/OGQxNTRiN2YwY2I1/ZDhhNjU4Yy9kZXJy/ZXZlcmVsYXcuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "derreverelaw.com",
+            "hostname": "derreverelaw.com",
+            "favicon": "https://imgs.search.brave.com/-7pTI5w0syBPZ_xtSbOAhztk2PKVd5L2hjLKxK1I6RU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTIxNGU2MTQ0/MmFjYWExYWQ5YWQ1/NzNmNTU1ZWIwOWY2/MzAyNWFiNWNhMWFh/OGQxNTRiN2YwY2I1/ZDhhNjU4Yy9kZXJy/ZXZlcmVsYXcuY29t/Lw",
+            "path": "  \u203a home  \u203a news  \u203a additional personal injury protection subrogation: a not so new pair of shoes"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/nlvjBVC7psdHaCVv1nA-CijrYDf1XxTFiPn0DTZWJwQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9kZXJy/ZXZlcmVsYXcuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIz/LzA0LzIwMjMuNC1K/RkctUG9zdC1XZWJz/aXRlLnBuZw",
+            "original": "https://derreverelaw.com/wp-content/uploads/2023/04/2023.4-JFG-Post-Website.png",
+            "logo": false
+          },
+          "age": "February 27, 2025"
+        },
+        {
+          "title": "What Is the Minimum Auto Insurance Coverage in New York? | William Mattar, P.C.",
+          "url": "https://williammattar.com/practice-areas/car-accident/insurance-coverage-motor-vehicles/new-york-state-minimum/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Imagine being hit by a reckless ... no other insurance to turn to. New York mandates minimum UM coverage equal to the liability limits ($25,000 per person/$50,000 per accident)....",
+          "page_age": "2025-05-02T19:29:19",
+          "profile": {
+            "name": "William Mattar",
+            "url": "https://williammattar.com/practice-areas/car-accident/insurance-coverage-motor-vehicles/new-york-state-minimum/",
+            "long_name": "williammattar.com",
+            "img": "https://imgs.search.brave.com/LB-4GEdrv-nCZmbA8I6I4oIMV5BYQ8FlG3-WBoPJiZs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTY5YmViZDg3/YWIwNDNiY2EwNGU2/MGYyYjA4YmNmY2Q1/NTgwZGNlZDVlZWVj/NGVjY2NmZjk2MmE1/Y2QzZDBmNy93aWxs/aWFtbWF0dGFyLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "williammattar.com",
+            "hostname": "williammattar.com",
+            "favicon": "https://imgs.search.brave.com/LB-4GEdrv-nCZmbA8I6I4oIMV5BYQ8FlG3-WBoPJiZs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTY5YmViZDg3/YWIwNDNiY2EwNGU2/MGYyYjA4YmNmY2Q1/NTgwZGNlZDVlZWVj/NGVjY2NmZjk2MmE1/Y2QzZDBmNy93aWxs/aWFtbWF0dGFyLmNv/bS8",
+            "path": "  \u203a home  \u203a practice areas  \u203a car accident  \u203a insurance coverage for motor vehicles  \u203a what is the minimum auto insurance coverage in new york?"
+          },
+          "age": "May 2, 2025"
+        },
+        {
+          "title": "What Is PIP Insurance in Binghamton, NY?",
+          "url": "https://munley.com/binghamton-personal-injury-lawyer/car-accidents/pip-and-mvaic/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "It ensures that if you\u2019re injured ... regardless of who was at fault. ... New York State law requires all auto insurance policies to include a minimum of $50,000 per person in PIP coverage....",
+          "page_age": "2025-09-12T18:20:51",
+          "profile": {
+            "name": "Munley Law",
+            "url": "https://munley.com/binghamton-personal-injury-lawyer/car-accidents/pip-and-mvaic/",
+            "long_name": "munley.com",
+            "img": "https://imgs.search.brave.com/K0v9Vy19DyhXQIl75ICtaE5GRQLVWABSJL9HS9o4jzE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTA4NjExOWRl/MWIwMGM1NjcxZjRj/Zjk5ZjJjYjU3YmNj/NjM0ZTk4NzQ1MjI4/MjAyMTU2MzBiY2Y3/NmQ3YWYzZi9tdW5s/ZXkuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "munley.com",
+            "hostname": "munley.com",
+            "favicon": "https://imgs.search.brave.com/K0v9Vy19DyhXQIl75ICtaE5GRQLVWABSJL9HS9o4jzE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTA4NjExOWRl/MWIwMGM1NjcxZjRj/Zjk5ZjJjYjU3YmNj/NjM0ZTk4NzQ1MjI4/MjAyMTU2MzBiY2Y3/NmQ3YWYzZi9tdW5s/ZXkuY29tLw",
+            "path": "  \u203a personal injury lawyers  \u203a binghamton personal injury lawyer  \u203a binghamton car accident lawyer  \u203a what is pip insurance in binghamton, ny?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/96cX3ZLaEeHRjnlXgftyHkvyryOmE-4huH9T0z-p0y0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9tdW5s/ZXkuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy9zY3JhbnRvbi0x/OC13aGVlbGVyLWFj/Y2lkZW50LWxhd3ll/ci5qcGc",
+            "original": "https://munley.com/wp-content/uploads/scranton-18-wheeler-accident-lawyer.jpg",
+            "logo": false
+          },
+          "age": "September 12, 2025"
+        },
+        {
+          "title": "What Happens When New York's $50,000 No-Fault Insurance Minimum Can't Cover Your Multi-Borough Auto Accident Medical Bills? | Personal Injury",
+          "url": "https://www.napolilaw.com/en/article/what-happens-when-new-yorks-50000-no-fault-insurance-minimum-cant-cover-your-multi-borough-auto-accident-medical-bills/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Still, the basic coverage has ... expenses. The standard no-fault policy provides $50,000 in basic Personal Injury Protection (PIP) benefits, covering medical expenses, lost wages, and other essential services....",
+          "page_age": "2025-10-14T18:06:41",
+          "profile": {
+            "name": "Napoli Shkolnik PLLC",
+            "url": "https://www.napolilaw.com/en/article/what-happens-when-new-yorks-50000-no-fault-insurance-minimum-cant-cover-your-multi-borough-auto-accident-medical-bills/",
+            "long_name": "napolilaw.com",
+            "img": "https://imgs.search.brave.com/v1aG15oazI5HenXfHUGaeVsAo97n3-NJZIQI9FEEejw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWE4ZmNhMTJh/MDEzYWM5M2ZiMWM5/OGVhMDA4MmQ2MDNl/Mjc4ZDkyYzQyODZm/MWU5OTkzNmMxOTg1/NDgyMTQyNy93d3cu/bmFwb2xpbGF3LmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "napolilaw.com",
+            "hostname": "www.napolilaw.com",
+            "favicon": "https://imgs.search.brave.com/v1aG15oazI5HenXfHUGaeVsAo97n3-NJZIQI9FEEejw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWE4ZmNhMTJh/MDEzYWM5M2ZiMWM5/OGVhMDA4MmQ2MDNl/Mjc4ZDkyYzQyODZm/MWU5OTkzNmMxOTg1/NDgyMTQyNy93d3cu/bmFwb2xpbGF3LmNv/bS8",
+            "path": "\u203a en  \u203a article  \u203a what-happens-when-new-yorks-50000-no-fault-insurance-minimum-cant-cover-your-multi-borough-auto-accident-medical-bills"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/tKyMgWeBMNxJPELOcxQeT649nhLjTI2Lxkhm6wwLZ-A/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bmFwb2xpbGF3LmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/NS8wOC9uby1mYXVs/dC1jYXItYWNjaWRl/bnQtdmljdGltLWhv/c3BpdGFsLWJpbGxz/LmpwZw",
+            "original": "https://www.napolilaw.com/wp-content/uploads/2025/08/no-fault-car-accident-victim-hospital-bills.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

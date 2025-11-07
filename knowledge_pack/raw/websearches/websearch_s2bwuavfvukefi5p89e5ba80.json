@@ -1,0 +1,785 @@
+{
+  "websearch_id": "websearch_s2bwuavfvukefi5p89e5ba80",
+  "search_id": "search_yfbcbogsfftr5ev9icqszbmt",
+  "timestamp": "2025-11-07T12:20:53.242660",
+  "startedAt": "2025-11-07T12:20:53.242660",
+  "completedAt": "2025-11-07T12:20:55.257213",
+  "durationSeconds": 2.01,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" NAIC company code",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"GEICO\" NAIC company code",
+      "show_strict_warning": false,
+      "cleaned": "GEICO NAIC company code",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO NAIC company code"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "What Is the Geico NAIC Number?",
+          "url": "https://wallethub.com/answers/ci/geico-naic-number-1000286-2140684192/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico&#x27;s NAIC number is the five-digit code given by the National Association of Insurance Commissioners (NAIC), which assigns numbers to authorized insurance providers in order to track customer complaints and ethics violations across state lines",
+          "page_age": "2025-09-15T18:29:08",
+          "profile": {
+            "name": "WalletHub",
+            "url": "https://wallethub.com/answers/ci/geico-naic-number-1000286-2140684192/",
+            "long_name": "wallethub.com",
+            "img": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "wallethub.com",
+            "hostname": "wallethub.com",
+            "favicon": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw",
+            "path": "\u203a answers  \u203a ci  \u203a geico-naic-number-1000286-2140684192"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YnFsFD--_0DYDN63YU7RTh6E1ZINWtslBaGMBZrgzuI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbGV0aHViLmNv/bS9pbWFnZXMvd2gy/MDE1L2Fuc3dlcnMv/d2FsbGV0aHViLWFu/c3dlcnNfVjMwYjE2/NmZfLnBuZw",
+            "original": "https://cdn.wallethub.com/images/wh2015/answers/wallethub-answers_V30b166f_.png",
+            "logo": false
+          },
+          "age": "September 15, 2025"
+        },
+        {
+          "title": "How do I find the NAIC number for my auto insurance company? | 4AutoInsuranceQuote.com",
+          "url": "https://www.4autoinsurancequote.com/how-to-find-naic-number-for-your-insurance-company/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "A company\u2019s NAIC number is good for that company nationwide, but one company may have different NAIC numbers for their affiliated companies. A search for Geico, for example, will return multiple companies, including Geico Advantage Ins Co (# 14138), Geico Secure Ins Co (# 14137), and Government ...",
+          "page_age": "2024-11-24T20:51:06",
+          "profile": {
+            "name": "4autoinsurancequote",
+            "url": "https://www.4autoinsurancequote.com/how-to-find-naic-number-for-your-insurance-company/",
+            "long_name": "4autoinsurancequote.com",
+            "img": "https://imgs.search.brave.com/mgnN3Cg9r0ir7XHhN9320mnaRx4ot3A9uzWY6R4XrvQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDQxNjRhZGJl/YWM3OWQwM2M4MDIz/ODdmMGQ2M2Q1MTJk/NGZkM2ZlNThlZmI2/YzQ3ZmIyODFhZTU3/MWNkN2ZjNS93d3cu/NGF1dG9pbnN1cmFu/Y2VxdW90ZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "4autoinsurancequote.com",
+            "hostname": "www.4autoinsurancequote.com",
+            "favicon": "https://imgs.search.brave.com/mgnN3Cg9r0ir7XHhN9320mnaRx4ot3A9uzWY6R4XrvQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDQxNjRhZGJl/YWM3OWQwM2M4MDIz/ODdmMGQ2M2Q1MTJk/NGZkM2ZlNThlZmI2/YzQ3ZmIyODFhZTU3/MWNkN2ZjNS93d3cu/NGF1dG9pbnN1cmFu/Y2VxdW90ZS5jb20v",
+            "path": "  \u203a home  \u203a understanding auto insurance"
+          },
+          "age": "November 24, 2024"
+        },
+        {
+          "title": "Naic Number For Geico Insurance - Insurance Coverage Guide",
+          "url": "https://educationsurvey.steelcase.com/insurance/naic-number-for-geico-insurance.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "With the naic, geico\u2019s insurance company code is 35882. The main geico naic number is 22063.",
+          "page_age": "2024-12-10T10:59:10",
+          "profile": {
+            "name": "Steelcase",
+            "url": "https://educationsurvey.steelcase.com/insurance/naic-number-for-geico-insurance.html",
+            "long_name": "educationsurvey.steelcase.com",
+            "img": "https://imgs.search.brave.com/loxY9iZcux17ksLdG5fftusAgg3YCANmCMVSWQi3oYM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJhMzk5ZDg0/NGExZTg3NjU0OTlk/OWQ1YTQ1NWQxOTNj/ZTlhNGJkYTEwYjNm/ZjA1MGViMzIwMTJi/NjdlNDgzMC9lZHVj/YXRpb25zdXJ2ZXku/c3RlZWxjYXNlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "educationsurvey.steelcase.com",
+            "hostname": "educationsurvey.steelcase.com",
+            "favicon": "https://imgs.search.brave.com/loxY9iZcux17ksLdG5fftusAgg3YCANmCMVSWQi3oYM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJhMzk5ZDg0/NGExZTg3NjU0OTlk/OWQ1YTQ1NWQxOTNj/ZTlhNGJkYTEwYjNm/ZjA1MGViMzIwMTJi/NjdlNDgzMC9lZHVj/YXRpb25zdXJ2ZXku/c3RlZWxjYXNlLmNv/bS8",
+            "path": "\u203a insurance  \u203a naic-number-for-geico-insurance.html"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YEapQ2stMxlfVEoaKfyyI7l7dJpMbx__AsQQDYC5IoI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP3E9bmFpYyUy/MG51bWJlciUyMGZv/ciUyMGdlaWNvJTIw/aW5zdXJhbmNl",
+            "original": "https://tse1.mm.bing.net/th?q=naic%20number%20for%20geico%20insurance",
+            "logo": false
+          },
+          "age": "December 10, 2024"
+        },
+        {
+          "title": "Do I need to know auto insurance company codes? | AutoInsurance.org",
+          "url": "https://www.autoinsurance.org/do-i-need-to-know-auto-insurance-company-codes/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Allstate Insurance Code: The NAIC Allstate code is 19232. Direct Auto Insurance Company Code: The Direct Auto company code is 20133. Geico Insurance Code: The Geico company code is 35882.",
+          "page_age": "2024-12-23T06:33:46",
+          "profile": {
+            "name": "AutoInsurance.org",
+            "url": "https://www.autoinsurance.org/do-i-need-to-know-auto-insurance-company-codes/",
+            "long_name": "autoinsurance.org",
+            "img": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.org",
+            "hostname": "www.autoinsurance.org",
+            "favicon": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv",
+            "path": "  \u203a home  \u203a understanding auto insurance  \u203a managing your auto insurance policy"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/IBZLe7FjASOrsAdF79a4AjLscVHIRyrNl-5lH7xgh3E/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vcXVvdGVsbGMv/aW1hZ2UvdXBsb2Fk/L2luc3VyYW5jZS1z/aXRlLWltYWdlcy9h/aW9yZy1saXZlLzNm/YzJmYTlkLWFpb3Jn/LWxvZ28uc3Zn",
+            "original": "https://res.cloudinary.com/quotellc/image/upload/insurance-site-images/aiorg-live/3fc2fa9d-aiorg-logo.svg",
+            "logo": true
+          },
+          "age": "December 23, 2024"
+        },
+        {
+          "title": "Florida Five Digit Insurance Company Code - Insurance Buying Tips",
+          "url": "https://preview.recode.net/insurance/florida-five-digit-insurance-company-code.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Florida Five Digit Insurance Company ... providers. Learn how these codes impact your coverage and claims. Geico\u2019s naic number is 22063....",
+          "page_age": "2025-01-01T11:36:38",
+          "profile": {
+            "name": "Recode",
+            "url": "https://preview.recode.net/insurance/florida-five-digit-insurance-company-code.html",
+            "long_name": "preview.recode.net",
+            "img": "https://imgs.search.brave.com/8lXbViYYmSFNIE7dGmxsRt6cZvH112xHZhkOmWrq5AU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTA4NDA5YzU1/YWIxNDQ5Njk3MWE0/MzkwMDFlMDQxYmI3/MTEwNjcyNTViNzEy/OGI0NTZhYmE0OGJl/MDA5ZWZhOS9wcmV2/aWV3LnJlY29kZS5u/ZXQv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "preview.recode.net",
+            "hostname": "preview.recode.net",
+            "favicon": "https://imgs.search.brave.com/8lXbViYYmSFNIE7dGmxsRt6cZvH112xHZhkOmWrq5AU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTA4NDA5YzU1/YWIxNDQ5Njk3MWE0/MzkwMDFlMDQxYmI3/MTEwNjcyNTViNzEy/OGI0NTZhYmE0OGJl/MDA5ZWZhOS9wcmV2/aWV3LnJlY29kZS5u/ZXQv",
+            "path": "\u203a insurance  \u203a florida-five-digit-insurance-company-code.html"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/uHSc7ACOuKnhjjroLSxy66weBdpZWCSXoChEtRnbivQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP3E9Zmxvcmlk/YSUyMGZpdmUlMjBk/aWdpdCUyMGluc3Vy/YW5jZSUyMGNvbXBh/bnklMjBjb2Rl",
+            "original": "https://tse1.mm.bing.net/th?q=florida%20five%20digit%20insurance%20company%20code",
+            "logo": false
+          },
+          "age": "January 1, 2025"
+        },
+        {
+          "title": "Insurance Company 5 Digit Codes Florida - Insurance Coverage Guide",
+          "url": "https://educationsurvey.steelcase.com/insurance/insurance-company-5-digit-codes-florida.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Insurance companies operating in florida are assigned a 5 digit code known as a national association of insurance commissioners (naic) company code. Typically, the phone number for usaa&#x27;s auto insurance customer service can be found on their website or on the back of your insurance card. Insurance company codes are strings of digits used to. Geico\u2019s naic number is 22063...",
+          "page_age": "2024-11-15T22:18:37",
+          "profile": {
+            "name": "Steelcase",
+            "url": "https://educationsurvey.steelcase.com/insurance/insurance-company-5-digit-codes-florida.html",
+            "long_name": "educationsurvey.steelcase.com",
+            "img": "https://imgs.search.brave.com/loxY9iZcux17ksLdG5fftusAgg3YCANmCMVSWQi3oYM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJhMzk5ZDg0/NGExZTg3NjU0OTlk/OWQ1YTQ1NWQxOTNj/ZTlhNGJkYTEwYjNm/ZjA1MGViMzIwMTJi/NjdlNDgzMC9lZHVj/YXRpb25zdXJ2ZXku/c3RlZWxjYXNlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "educationsurvey.steelcase.com",
+            "hostname": "educationsurvey.steelcase.com",
+            "favicon": "https://imgs.search.brave.com/loxY9iZcux17ksLdG5fftusAgg3YCANmCMVSWQi3oYM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJhMzk5ZDg0/NGExZTg3NjU0OTlk/OWQ1YTQ1NWQxOTNj/ZTlhNGJkYTEwYjNm/ZjA1MGViMzIwMTJi/NjdlNDgzMC9lZHVj/YXRpb25zdXJ2ZXku/c3RlZWxjYXNlLmNv/bS8",
+            "path": "\u203a insurance  \u203a insurance-company-5-digit-codes-florida.html"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/5XQ21SxOMF0JG-mvRL8Tr2jaCBeqj_fvSRgFhDa-L8Y/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP3E9aW5zdXJh/bmNlJTIwY29tcGFu/eSUyMDUlMjBkaWdp/dCUyMGNvZGVzJTIw/ZmxvcmlkYQ",
+            "original": "https://tse1.mm.bing.net/th?q=insurance%20company%205%20digit%20codes%20florida",
+            "logo": false
+          },
+          "age": "November 15, 2024"
+        },
+        {
+          "title": "Insurance Company 5 Digit Codes Florida - Insurance Coverage Basics",
+          "url": "https://marketplace.ultimatemotorcycling.com/insurance/insurance-company-5-digit-codes-florida.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "What is the progressive auto insurance company 5 digit code for florida? Our valued customers can also service their policies at anytime, day or night, at www.keystone. Geico\u2019s naic number is 22063.",
+          "page_age": "2025-02-07T16:42:04",
+          "profile": {
+            "name": "Ultimatemotorcycling",
+            "url": "https://marketplace.ultimatemotorcycling.com/insurance/insurance-company-5-digit-codes-florida.html",
+            "long_name": "marketplace.ultimatemotorcycling.com",
+            "img": "https://imgs.search.brave.com/1ZJNOSynF26uxiXvobIjim_icga9t2D1hO16dBr2OcA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTlhNWZmMjJh/OTdhYTY4N2E3NzQw/ODE4NTA4ZDY4MWIx/YmEwMTQ4ZmY0YmEw/NTdkZDRmM2U1MWE2/MGE1YmE3Ny9tYXJr/ZXRwbGFjZS51bHRp/bWF0ZW1vdG9yY3lj/bGluZy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "marketplace.ultimatemotorcycling.com",
+            "hostname": "marketplace.ultimatemotorcycling.com",
+            "favicon": "https://imgs.search.brave.com/1ZJNOSynF26uxiXvobIjim_icga9t2D1hO16dBr2OcA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTlhNWZmMjJh/OTdhYTY4N2E3NzQw/ODE4NTA4ZDY4MWIx/YmEwMTQ4ZmY0YmEw/NTdkZDRmM2U1MWE2/MGE1YmE3Ny9tYXJr/ZXRwbGFjZS51bHRp/bWF0ZW1vdG9yY3lj/bGluZy5jb20v",
+            "path": "\u203a insurance  \u203a insurance-company-5-digit-codes-florida.html"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/5XQ21SxOMF0JG-mvRL8Tr2jaCBeqj_fvSRgFhDa-L8Y/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP3E9aW5zdXJh/bmNlJTIwY29tcGFu/eSUyMDUlMjBkaWdp/dCUyMGNvZGVzJTIw/ZmxvcmlkYQ",
+            "original": "https://tse1.mm.bing.net/th?q=insurance%20company%205%20digit%20codes%20florida",
+            "logo": false
+          },
+          "age": "February 7, 2025"
+        },
+        {
+          "title": "Uncover Your Geico Policy Identifier: The NAIC Number You Need to Know - TechSphere Vision",
+          "url": "https://dr-xm.saas.infor.com/geico-naic-number",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "This number is critical for identifying and distinguishing between insurance companies, facilitating the exchange of information, and ensuring compliance with insurance regulations. For Geico, the NAIC number is 35882, and it\u2019s a vital piece ...",
+          "page_age": "2025-07-11T16:43:10",
+          "profile": {
+            "name": "TechSphere Vision",
+            "url": "https://dr-xm.saas.infor.com/geico-naic-number",
+            "long_name": "dr-xm.saas.infor.com",
+            "img": "https://imgs.search.brave.com/Pb1wgLLzB6B_ISDr8GOuwTV-eIbDtl9p7syYAp6_vA8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjQzZDBlYjVh/YjlmM2FmYjU3NmEx/YzM2Njk1OWI0MjQy/MGU1ZmYwNmZmNTNh/OWE5MWU5NzM4MjY5/M2ExMzJkMC9kci14/bS5zYWFzLmluZm9y/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "dr-xm.saas.infor.com",
+            "hostname": "dr-xm.saas.infor.com",
+            "favicon": "https://imgs.search.brave.com/Pb1wgLLzB6B_ISDr8GOuwTV-eIbDtl9p7syYAp6_vA8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjQzZDBlYjVh/YjlmM2FmYjU3NmEx/YzM2Njk1OWI0MjQy/MGU1ZmYwNmZmNTNh/OWE5MWU5NzM4MjY5/M2ExMzJkMC9kci14/bS5zYWFzLmluZm9y/LmNvbS8",
+            "path": "  \u203a home  \u203a seymore  \u203a uncover your geico policy identifier: the naic number you need to know"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Kv072GN7LPp_X-zPZ1xS7U3x164APsbplWeqZsElBZQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP3E9Z2VpY28r/bmFpYytudW1iZXI",
+            "original": "https://tse1.mm.bing.net/th?q=geico+naic+number",
+            "logo": false
+          },
+          "age": "July 11, 2025"
+        },
+        {
+          "title": "NAIC Number for Geico Insurance - Direct Auto Insurance USA",
+          "url": "https://directautoinsuranceusa.com/naic-number-for-geico-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Knowing the NAIC (National Association of Insurance Commissioners) number for your insurance provider, such as Geico, can be helpful for a variety of reasons, from filing claims to meeting legal compliance requirements. This article will explain what an NAIC number is, why it\u2019s important, and how to locate Geico\u2019s NAIC number when needed. The NAIC number is a unique identifier assigned to every insurance company operating within the United States.",
+          "page_age": "2024-12-01T15:28:48",
+          "profile": {
+            "name": "Directautoinsuranceusa",
+            "url": "https://directautoinsuranceusa.com/naic-number-for-geico-insurance/",
+            "long_name": "directautoinsuranceusa.com",
+            "img": "https://imgs.search.brave.com/i_BuDotXiYo57KN_Zid5wR7sZB9fFH5y1QkxDgOSk0c/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTZjNjYyMjZl/NDQyMDc0NzA2Zjg0/YjAwODNjMDA0ZWVm/NzY5N2QyNDYwMWEw/ZTY3MGIwNDc3NTRj/YWY2YjVhZS9kaXJl/Y3RhdXRvaW5zdXJh/bmNldXNhLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "directautoinsuranceusa.com",
+            "hostname": "directautoinsuranceusa.com",
+            "favicon": "https://imgs.search.brave.com/i_BuDotXiYo57KN_Zid5wR7sZB9fFH5y1QkxDgOSk0c/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTZjNjYyMjZl/NDQyMDc0NzA2Zjg0/YjAwODNjMDA0ZWVm/NzY5N2QyNDYwMWEw/ZTY3MGIwNDc3NTRj/YWY2YjVhZS9kaXJl/Y3RhdXRvaW5zdXJh/bmNldXNhLmNvbS8",
+            "path": "  \u203a home  \u203a news feed  \u203a naic number for geico insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/xMZBskxNOBKD29VhHHlCs4qD9Xsq3PEluxbaCGj5rLY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9kaXJl/Y3RhdXRvaW5zdXJh/bmNldXNhLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyNC8x/MS9EQUxMwrdFLTIw/MjQtMTEtMDktMjMu/MzcuMDgtQS0xNl85/LWltYWdlLXNob3dp/bmctYS1wcm9mZXNz/aW9uYWwtc2V0dGlu/Zy13aGVyZS1hLXBl/cnNvbi1pcy1sb29r/aW5nLXVwLWFuLWlu/c3VyYW5jZS1OQUlD/LW51bWJlci1vbi1h/LWNvbXB1dGVyLXNj/cmVlbi4tVGhlLXNj/cmVlbi1zaG93cy10/aGUtTkFJQy1udW1i/LndlYnA",
+            "original": "https://directautoinsuranceusa.com/wp-content/uploads/2024/11/DALL\u00b7E-2024-11-09-23.37.08-A-16_9-image-showing-a-professional-setting-where-a-person-is-looking-up-an-insurance-NAIC-number-on-a-computer-screen.-The-screen-shows-the-NAIC-numb.webp",
+            "logo": false
+          },
+          "age": "December 1, 2024"
+        },
+        {
+          "title": "Progressive ICC Code",
+          "url": "https://wallethub.com/answers/ci/progressive-icc-code-2140734509/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Editorial and user-generated content is not provided, reviewed or endorsed by any company. ... Just found out that the Florida DMV looks for a different code. In case of Progressive, that number is 02960. The main Progressive NAIC number is 24260.",
+          "page_age": "2024-12-10T13:31:30",
+          "profile": {
+            "name": "WalletHub",
+            "url": "https://wallethub.com/answers/ci/progressive-icc-code-2140734509/",
+            "long_name": "wallethub.com",
+            "img": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "wallethub.com",
+            "hostname": "wallethub.com",
+            "favicon": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw",
+            "path": "\u203a answers  \u203a ci  \u203a progressive-icc-code-2140734509"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YnFsFD--_0DYDN63YU7RTh6E1ZINWtslBaGMBZrgzuI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbGV0aHViLmNv/bS9pbWFnZXMvd2gy/MDE1L2Fuc3dlcnMv/d2FsbGV0aHViLWFu/c3dlcnNfVjMwYjE2/NmZfLnBuZw",
+            "original": "https://cdn.wallethub.com/images/wh2015/answers/wallethub-answers_V30b166f_.png",
+            "logo": false
+          },
+          "age": "December 10, 2024"
+        },
+        {
+          "title": "What Is the GEICO Insurance Code and Why Is It Important? - LegalClarity",
+          "url": "https://legalclarity.org/what-is-the-geico-insurance-code-and-why-is-it-important/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "It is typically found on your insurance card, policy declarations page, or billing statements. On your insurance card, it is often listed near the top, alongside your policy number and vehicle details.",
+          "page_age": "2025-03-15T09:28:33",
+          "profile": {
+            "name": "LegalClarity",
+            "url": "https://legalclarity.org/what-is-the-geico-insurance-code-and-why-is-it-important/",
+            "long_name": "legalclarity.org",
+            "img": "https://imgs.search.brave.com/J9MxGTdj5fiLFGToourtQD6PyqQtUVTRcL8IxQbJOmI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDI3NjU2OGJk/ZjQ4NWI0M2I2M2Fi/OTM5NTgyNTY4ODNh/YmZmYTJiYWQ5Mzlh/YWU1ODI5NTg0MmJi/Y2E1MWI0NS9sZWdh/bGNsYXJpdHkub3Jn/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "legalclarity.org",
+            "hostname": "legalclarity.org",
+            "favicon": "https://imgs.search.brave.com/J9MxGTdj5fiLFGToourtQD6PyqQtUVTRcL8IxQbJOmI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDI3NjU2OGJk/ZjQ4NWI0M2I2M2Fi/OTM5NTgyNTY4ODNh/YmZmYTJiYWQ5Mzlh/YWU1ODI5NTg0MmJi/Y2E1MWI0NS9sZWdh/bGNsYXJpdHkub3Jn/Lw",
+            "path": "\u203a what-is-the-geico-insurance-code-and-why-is-it-important"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/T5g8lzaXbMQL8j3Auak1mZZI9PyxufWZHirtPhrfuqY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9sZWdh/bGNsYXJpdHkub3Jn/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI0/LzA5L2xlZ2FsY2xh/cml0eWkucG5n",
+            "original": "https://legalclarity.org/wp-content/uploads/2024/09/legalclarityi.png",
+            "logo": false
+          },
+          "age": "March 15, 2025"
+        },
+        {
+          "title": "GEICO Insurance Review (2025) | WalletHub",
+          "url": "https://wallethub.com/edu/ci/geico-car-insurance-review/62236",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico&#x27;s NAIC number is the five-digit code given by the National Association of Insurance Commissioners (NAIC), which assigns numbers to authorized insurance providers in order to track customer complaints and ethics violations across state lines. With Geico&#x27;s NAIC number, anyone can learn more about the company&#x27;s financial data, the kinds of complaints that have been filed by customers, and any enforcement actions taken against the company.",
+          "page_age": "2025-03-25T00:00:00",
+          "profile": {
+            "name": "WalletHub",
+            "url": "https://wallethub.com/edu/ci/geico-car-insurance-review/62236",
+            "long_name": "wallethub.com",
+            "img": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "wallethub.com",
+            "hostname": "wallethub.com",
+            "favicon": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw",
+            "path": "\u203a edu  \u203a ci  \u203a geico-car-insurance-review  \u203a 62236"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/H5SXAnF1DvjyheE4ble2SGlnbs0ZUvxkgCMWwqsO3Jo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbGV0aHViLmNv/bS93YWxsZXRodWIv/cG9zdHMvMTI1NDIw/L2dlaWNvLWRyaXZl/ZWFzeS5wbmc",
+            "original": "https://cdn.wallethub.com/wallethub/posts/125420/geico-driveeasy.png",
+            "logo": false
+          },
+          "age": "March 25, 2025"
+        },
+        {
+          "title": "r/Geico on Reddit: Question about licensing",
+          "url": "https://www.reddit.com/r/Geico/comments/1kgf1zh/question_about_licensing/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "You can go to the NAIC website and find the NPN for GEICO \u00b7 Reply \u00b7 Share \u00b7 More replies More replies \u00b7 honeybee876 \u00b7 \u2022 5mo ago \u00b7 You are probably not fully licensed yet. When you are licensed, you will be able to access your license number and usually sent an email from the state.",
+          "page_age": "2025-05-06T20:37:34",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Geico/comments/1kgf1zh/question_about_licensing/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/geico  \u203a question about licensing"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A5H_aQiEBuUODR0lNeU8iDfhrWUvO8oEmRGE_mcS_gM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVkZGl0c3RhdGlj/LmNvbS9pY29uLnBu/Zw",
+            "original": "https://www.redditstatic.com/icon.png",
+            "logo": true
+          },
+          "age": "May 6, 2025"
+        },
+        {
+          "title": "USAA car insurance review 2025: 3.5 out of 5 stars",
+          "url": "https://finance.yahoo.com/personal-finance/insurance/review/usaa-car-insurance-review-183126344.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The average cost was generated by Trellis\u2019 in-house machine learning models based on over 3 million data points, and includes more than 15 of the largest insurance companies in Trellis\u2019 nationwide data set. These estimates are for policies with full coverage for the average policyholder who owns one car. Average policyholder here is defined as a 48-year-old driver, driving a 13-year-old car, in an average-income ZIP code with full coverage. Customer satisfaction: 30% of score. We factored in information from three major sources: 1) National Association of Insurance Commissioners (NAIC) complaints (10%), in which we took the total number of complaints each company had over a three-year period (2022-2024), 2) CRASH scores (10%) from the Crash Network which share how well each company ensures quality repairs and customer service, and 3) J.D.",
+          "page_age": "2025-09-11T18:31:26",
+          "profile": {
+            "name": "Yahoo! Finance",
+            "url": "https://finance.yahoo.com/personal-finance/insurance/review/usaa-car-insurance-review-183126344.html",
+            "long_name": "finance.yahoo.com",
+            "img": "https://imgs.search.brave.com/ZxJbtHZiiBXciqcRfJn3XPiTEOf_XYrooAjrJf1rnag/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjRkNjc1NWY5/MzM5ZjlkMWQyNjM5/OWNiMTQ4ZjcwNTQx/ZjA3ZDE4NDQ2M2Iw/MWZjZjVhOTFlM2Ji/NTE1NWRjZS9maW5h/bmNlLnlhaG9vLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "finance.yahoo.com",
+            "hostname": "finance.yahoo.com",
+            "favicon": "https://imgs.search.brave.com/ZxJbtHZiiBXciqcRfJn3XPiTEOf_XYrooAjrJf1rnag/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjRkNjc1NWY5/MzM5ZjlkMWQyNjM5/OWNiMTQ4ZjcwNTQx/ZjA3ZDE4NDQ2M2Iw/MWZjZjVhOTFlM2Ji/NTE1NWRjZS9maW5h/bmNlLnlhaG9vLmNv/bS8",
+            "path": "  \u203a personal finance  \u203a insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/xVbP9u6Vjjr-4GAO_2xK-CDXn2ozatUCEFe2i3fZQbQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zLnlp/bWcuY29tL255L2Fw/aS9yZXMvMS4yL3Ft/VVg2VzhnRGYzQnFr/VTJ5bkZBQmctLS9Z/WEJ3YVdROWFHbG5h/R3hoYm1SbGNqdDNQ/VEV5TURBN2FEMDRN/REEtL2h0dHBzOi8v/cy55aW1nLmNvbS9v/cy9jcmVhdHItdXBs/b2FkZWQtaW1hZ2Vz/LzIwMjUtMDkvNzU4/ODk1NjAtOGYyNi0x/MWYwLWI3ZGYtZDU5/M2ViMGJkZTRh",
+            "original": "https://s.yimg.com/ny/api/res/1.2/qmUX6W8gDf3BqkU2ynFABg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2025-09/75889560-8f26-11f0-b7df-d593eb0bde4a",
+            "logo": false
+          },
+          "age": "September 11, 2025"
+        },
+        {
+          "title": "Allstate vs. GEICO | AutoInsurance.com",
+          "url": "https://www.autoinsurance.com/companies/allstate-vs-geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO won by a wide margin in New York and the Mid-Atlantic and Southeast regions and by a lesser margin in the Northwest and Texas. Meanwhile, Allstate won in California, Florida, New England and the Central, North Central and Southwest regions. Here is a breakdown of each company\u2019s score (out of 1,000) by region: Another metric to consider when looking at customer service reputation is the NAIC ...",
+          "page_age": "2025-02-05T18:51:22",
+          "profile": {
+            "name": "AutoInsurance.com",
+            "url": "https://www.autoinsurance.com/companies/allstate-vs-geico/",
+            "long_name": "autoinsurance.com",
+            "img": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.com",
+            "hostname": "www.autoinsurance.com",
+            "favicon": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v",
+            "path": "  \u203a home  \u203a companies  \u203a allstate vs. geico"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/FU3hr37tBh-Ikm7VXGKvyu3MEuYMGVKcUPtJXRnSUP4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYXV0b2luc3Vy/YW5jZS5jb20vYXBw/L3VwbG9hZHMvMjAy/MS8xMi8xNjIxMTQw/My9TY3JlZW4tU2hv/dC0yMDIxLTEyLTAx/LWF0LTkuMzcuNDYt/QU0ucG5n",
+            "original": "https://images.autoinsurance.com/app/uploads/2021/12/16211403/Screen-Shot-2021-12-01-at-9.37.46-AM.png",
+            "logo": false
+          },
+          "age": "February 5, 2025"
+        },
+        {
+          "title": "Geico Auto Insurance Review for 2025 (See How Much You Could Save) | AutoInsurance.org",
+          "url": "https://www.autoinsurance.org/companies/geico-auto-insurance-review/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "While everyone has a chance to find affordable rates from Geico, teens and drivers with low credit scores can particularly benefit (Learn More: Best Companies for Credit-Based Auto Insurance). Geico Insurance Business Ratings &amp; Consumer Reviews ... The National Association of Insurance Commissioners (NAIC) compares customer complaints every year and scores providers based on the number of complaints.",
+          "page_age": "2025-10-29T18:49:31",
+          "profile": {
+            "name": "AutoInsurance.org",
+            "url": "https://www.autoinsurance.org/companies/geico-auto-insurance-review/",
+            "long_name": "autoinsurance.org",
+            "img": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.org",
+            "hostname": "www.autoinsurance.org",
+            "favicon": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv",
+            "path": "  \u203a home  \u203a companies  \u203a how to choose an auto insurance company"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/tqYWhzxCTGCcB5TyQiRvxGid6lT9mz6fGza0BlyUgaw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vZGF2djF6d2Jv/L2ltYWdlL3VwbG9h/ZC92MTc0MzQyNTYy/My92Z2VqdG1uemIz/bnB4bHI5ODJoZi5w/bmc",
+            "original": "https://res.cloudinary.com/davv1zwbo/image/upload/v1743425623/vgejtmnzb3npxlr982hf.png",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "GEICO vs. The Hartford: Which Is the Best? 2025 | Insurify",
+          "url": "https://insurify.com/car-insurance/companies/compare/geico-vs-the-hartford/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "To determine if The Hartford or GEICO is the best car insurance company for you, take the time to compare quotes, discounts, customer service, and coverage options from each company so you can make an informed decision. ... Hybrid and electric vehicle drivers are eligible for a discount with The Hartford\u2019s AARP Auto Insurance Program. The Hartford\u2019s average rates for drivers in their 60s are higher than GEICO\u2019s rates for the same age group. GEICO has a high complaint index score with the National Association of Insurance Commissioners (NAIC), meaning it receives more complaints than expected for its size.[2]",
+          "page_age": "2025-10-23T04:13:55",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/car-insurance/companies/compare/geico-vs-the-hartford/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a car insurance  \u203a companies  \u203a compare  \u203a geico vs the hartford"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/MFxSbd5NJb9Pooykf_uxyuPHgZH0-Q1ey_ZxxkhVLs8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbnN1/cmlmeWNkbi5jb20v/aW1hZ2VzL2NhcnJp/ZXIvaGlnaC1kZWZp/bml0aW9uL3RoZS1o/YXJ0Zm9yZC5zdmc",
+            "original": "https://insurifycdn.com/images/carrier/high-definition/the-hartford.svg",
+            "logo": true
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "GEICO vs Nationwide: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/geico-vs-nationwide/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Financial strength (AM Best) \u2013 Superior: GEICO received an &#x27;A&#x27; rating from AM Best, underlining its solid financial standing. NAIC Rating \u2013 Excellent: The National Association of Insurance Commissioners (NAIC) received fewer customer complaints ...",
+          "page_age": "2025-11-03T17:06:28",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/geico-vs-nationwide/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a geico vs. nationwide"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/l7pe_Rs2LG08JL8wb9fkYsP1H-2bu8pRCLd_IVKh1GY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9jYXItc2Fs/ZXNwZXJzb24tc2hv/d2luZy1jb3VwbGUt/Y2FyLWludGVyaW9y/LmpwZw",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/car-salesperson-showing-couple-car-interior.jpg",
+            "logo": false
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "Geico vs. Liberty Mutual 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/geico-vs-liberty-mutual/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Like many car insurance companies, Geico and Liberty Mutual also offer mobile apps. Both apps are highly rated and offer a variety of features. The National Association of Insurance Commissioners (NAIC) complaint index measures an insurance company&#x27;s customer satisfaction relative to its size.",
+          "page_age": "2025-09-10T20:51:10",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/geico-vs-liberty-mutual/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "September 10, 2025"
+        },
+        {
+          "title": "Geico Insurance Review 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico isn\u2019t rated in J.D. Power\u2019s property insurance studies because it issues home insurance policies through non-affiliated companies. For the same reason, any homeowners insurance complaints submitted to the NAIC by Geico customers are attached to the companies underwriting the coverage rather than Geico, which only acts as an agent for homeowners insurance.",
+          "page_age": "2025-10-14T19:36:23",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/geico/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "3 weeks ago"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

@@ -1,0 +1,770 @@
+{
+  "websearch_id": "websearch_db4vrb0gud2g6lj0fesbsyub",
+  "search_id": "search_n96r5gwgiq3u5pkboh5lnt5c",
+  "timestamp": "2025-11-07T12:32:32.896700",
+  "startedAt": "2025-11-07T12:32:32.896700",
+  "completedAt": "2025-11-07T12:32:35.044976",
+  "durationSeconds": 2.15,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"Illinois\" minimum coverage \"25/50/20\"",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"Illinois\" minimum coverage \"25/50/20\"",
+      "show_strict_warning": false,
+      "cleaned": "Illinois minimum coverage 25/50/20",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "Illinois minimum coverage 25/50/20"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "What Are the Illinois Minimum Car Insurance Requirements? - Insure On The Spot",
+          "url": "https://www.insureonthespot.com/illinois-minimum-car-insurance-requirements/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Q: What is the minimum car insurance coverage required in Illinois? A: Illinois law requires a minimum of 25/50/20 liability insurance, which means $25,000 bodily injury liability per person, $50,000 per accident, and $20,000 property damage coverage.",
+          "page_age": "2025-06-25T16:32:30",
+          "profile": {
+            "name": "Insure On The Spot",
+            "url": "https://www.insureonthespot.com/illinois-minimum-car-insurance-requirements/",
+            "long_name": "insureonthespot.com",
+            "img": "https://imgs.search.brave.com/ZH_l3iIrD1V5_xmwua4x4SlKZZRpbhmyYEDeqdHdCDQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI3YjYxNTUz/MjA3OTY4ODg4MDVh/OWQ4YTI5MTJjN2Vl/MjE0MzQ0ODdkZDRk/NTUzNDcxYjczMzVl/MWNmYzI1NC93d3cu/aW5zdXJlb250aGVz/cG90LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insureonthespot.com",
+            "hostname": "www.insureonthespot.com",
+            "favicon": "https://imgs.search.brave.com/ZH_l3iIrD1V5_xmwua4x4SlKZZRpbhmyYEDeqdHdCDQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI3YjYxNTUz/MjA3OTY4ODg4MDVh/OWQ4YTI5MTJjN2Vl/MjE0MzQ0ODdkZDRk/NTUzNDcxYjczMzVl/MWNmYzI1NC93d3cu/aW5zdXJlb250aGVz/cG90LmNvbS8",
+            "path": "  \u203a home  \u203a tips & resources (articles)  \u203a what are the illinois minimum car insurance requirements?"
+          },
+          "age": "June 25, 2025"
+        },
+        {
+          "title": "Illinois car insurance laws and requirements: What is changing in 2025",
+          "url": "https://www.insurance.com/auto-insurance/illinois-car-insurance-laws/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO provides the lowest minimum coverage rates with an average of $298. Mandatory coverage limits are low, and drivers should consider increasing liability limits and adding coverage to be more fully protected.",
+          "page_age": "2025-04-14T00:00:00",
+          "profile": {
+            "name": "Insurance.com",
+            "url": "https://www.insurance.com/auto-insurance/illinois-car-insurance-laws/",
+            "long_name": "insurance.com",
+            "img": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurance.com",
+            "hostname": "www.insurance.com",
+            "favicon": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8",
+            "path": "  \u203a home  \u203a auto insurance  \u203a state minimum requirements  \u203a illinois car insurance laws and requirements: what is changing in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/mrmhNyRrsgAKLHytgrM3UtXgPNsZj2C2r9vhaX0aI8s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmNlLmNv/bS9pbWFnZXMvaG9t/ZS9zaXRlLWxvZ28t/ZGFyay5zdmc",
+            "original": "https://www.insurance.com/images/home/site-logo-dark.svg",
+            "logo": true
+          },
+          "age": "April 14, 2025"
+        },
+        {
+          "title": "Illinois Auto Insurance Requirements & Laws",
+          "url": "https://clovered.com/auto-insurance/illinois/laws-and-requirements/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "With a minimum coverage policy, expenses are only covered for the other driver or drivers involved in an accident you caused. Illinois insurance laws require all drivers to have at least 25/50/20 liability coverage, and with that comes 20/40 ...",
+          "page_age": "2025-01-29T18:16:50",
+          "profile": {
+            "name": "Clovered",
+            "url": "https://clovered.com/auto-insurance/illinois/laws-and-requirements/",
+            "long_name": "clovered.com",
+            "img": "https://imgs.search.brave.com/FMvsDfAYLtW0L_vkIDwl109FIUd01bit67bRxDQuYXk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDY2ZjEyMWY2/MDhiYTczNDdiZDFm/NTcyMDYwMGY5Zjgx/M2JhYTM2NmQ1NjA5/M2U3ZDlhYmEyODZl/MDQwYWVjOC9jbG92/ZXJlZC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "clovered.com",
+            "hostname": "clovered.com",
+            "favicon": "https://imgs.search.brave.com/FMvsDfAYLtW0L_vkIDwl109FIUd01bit67bRxDQuYXk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDY2ZjEyMWY2/MDhiYTczNDdiZDFm/NTcyMDYwMGY5Zjgx/M2JhYTM2NmQ1NjA5/M2U3ZDlhYmEyODZl/MDQwYWVjOC9jbG92/ZXJlZC5jb20v",
+            "path": "  \u203a articles  \u203a illinois auto insurance requirements & laws"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/JWm25RBspaTRKXXcYFe2UfkkiE_dOhzD_zuyVfu7fjY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jbG92/ZXJlZC5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMDYv/SWxsaW5vaXMtQXV0/by1JbnN1cmFuY2Ut/UmVxdWlyZW1lbnRz/LUxhd3MtbWluLndl/YnA",
+            "original": "https://clovered.com/wp-content/uploads/2023/06/Illinois-Auto-Insurance-Requirements-Laws-min.webp",
+            "logo": false
+          },
+          "age": "January 29, 2025"
+        },
+        {
+          "title": "Minimum car insurance requirements in Illinois",
+          "url": "https://www.carinsurance.com/state/state-minimum-car-insurance-in-illinois/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In Illinois, drivers must carry a minimum of 25/50/20 of auto insurance to legally drive a vehicle. State minimum car insurance is the minimum liability coverage your state requires.",
+          "page_age": "2025-06-04T00:00:00",
+          "profile": {
+            "name": "Carinsurance.com",
+            "url": "https://www.carinsurance.com/state/state-minimum-car-insurance-in-illinois/",
+            "long_name": "carinsurance.com",
+            "img": "https://imgs.search.brave.com/KCetfn_EHIlwz5sy6dTvSdGjOen9Qf_QsSICK4hYUH8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDdmYWUzNjM0/MGU0ODEwNzI3ZWVj/NjEwYmQ2MmE5NTZh/N2E2NDRhODA2YjRj/NjBlNzc2OTBiYzkz/YzA3ZGQzOC93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "carinsurance.com",
+            "hostname": "www.carinsurance.com",
+            "favicon": "https://imgs.search.brave.com/KCetfn_EHIlwz5sy6dTvSdGjOen9Qf_QsSICK4hYUH8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDdmYWUzNjM0/MGU0ODEwNzI3ZWVj/NjEwYmQ2MmE5NTZh/N2E2NDRhODA2YjRj/NjBlNzc2OTBiYzkz/YzA3ZGQzOC93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS8",
+            "path": "  \u203a car insurance homepage  \u203a car insurance by state  \u203a car insurance in illinois  \u203a minimum car insurance requirements in illinois"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/UgJ_Y_LrX0rGkmLc_m68pIngh_lOS5ECjcKCnUUN0Ks/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS9pbWFnZXMv/aG9tZS9pbWFnZV9m/b3Jtc3RhcnQuanBn",
+            "original": "https://www.carinsurance.com/images/home/image_formstart.jpg",
+            "logo": false
+          },
+          "age": "June 4, 2025"
+        },
+        {
+          "title": "Illinois Car Insurance Laws (Updated 2025) | The Zebra",
+          "url": "https://www.thezebra.com/auto-insurance/illinois-car-insurance/state-laws-il/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "You\u2019ll often see liability insurance limits written out as 25/50/20. Known as a split limit, it separates the types of coverage offered. The car insurance minimums in the state of Illinois are higher than a number of states. However, even these slightly higher limits can leave you at risk.",
+          "page_age": "2025-10-16T21:50:53",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/auto-insurance/illinois-car-insurance/state-laws-il/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a cheap car insurance  \u203a illinois car insurance  \u203a illinois car insurance laws"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/zOe5wtd5rDboI1OwFNflRsGIswhfV_n5u6tmU6AxCFo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9oZXJvLWlt/Zy1pbGxpbm9pcy5v/cmlnaW5hbC5qcGc",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/hero-img-illinois.original.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "Illinois car insurance coverage calculator",
+          "url": "https://www.insurance.com/auto-insurance/illinois-car-insurance-coverage-calculator/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Every state has slightly different car insurance requirements. Illinois minimum auto insurance coverage requires 25/50/20 in liability coverage to pay for bodily injuries and property damages you cause in an accident.",
+          "page_age": "2025-06-04T00:00:00",
+          "profile": {
+            "name": "Insurance.com",
+            "url": "https://www.insurance.com/auto-insurance/illinois-car-insurance-coverage-calculator/",
+            "long_name": "insurance.com",
+            "img": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurance.com",
+            "hostname": "www.insurance.com",
+            "favicon": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8",
+            "path": "  \u203a home  \u203a auto insurance  \u203a illinois car insurance coverage calculator"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/iluYop3zx0BaMhTeB6KBZFHBn_UqGZhzxCc-yj_InYI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmNlLmNv/bS91cGxvYWRlZGZp/bGVzL21lZGlhL2Nh/ci1pbnN1cmFuY2Ut/MTAuanBn",
+            "original": "https://www.insurance.com/uploadedfiles/media/car-insurance-10.jpg",
+            "logo": false
+          },
+          "age": "June 4, 2025"
+        },
+        {
+          "title": "Car Insurance Limits Explained: What 100/300/100 Actually Means - Insure On The Spot",
+          "url": "https://www.insureonthespot.com/insurance-limits/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In Illinois, the minimum legal requirement for liability insurance is 25/50/20. This ensures that drivers can cover basic costs in the event of an accident. However, these limits may not fully protect you in a serious accident. For example, medical bills alone can easily exceed the state\u2019s ...",
+          "page_age": "2025-06-23T15:04:20",
+          "profile": {
+            "name": "Insure On The Spot",
+            "url": "https://www.insureonthespot.com/insurance-limits/",
+            "long_name": "insureonthespot.com",
+            "img": "https://imgs.search.brave.com/ZH_l3iIrD1V5_xmwua4x4SlKZZRpbhmyYEDeqdHdCDQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI3YjYxNTUz/MjA3OTY4ODg4MDVh/OWQ4YTI5MTJjN2Vl/MjE0MzQ0ODdkZDRk/NTUzNDcxYjczMzVl/MWNmYzI1NC93d3cu/aW5zdXJlb250aGVz/cG90LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insureonthespot.com",
+            "hostname": "www.insureonthespot.com",
+            "favicon": "https://imgs.search.brave.com/ZH_l3iIrD1V5_xmwua4x4SlKZZRpbhmyYEDeqdHdCDQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI3YjYxNTUz/MjA3OTY4ODg4MDVh/OWQ4YTI5MTJjN2Vl/MjE0MzQ0ODdkZDRk/NTUzNDcxYjczMzVl/MWNmYzI1NC93d3cu/aW5zdXJlb250aGVz/cG90LmNvbS8",
+            "path": "  \u203a home  \u203a tips & resources (articles)  \u203a car insurance limits explained: what 100/300/100 actually means"
+          },
+          "age": "June 23, 2025"
+        },
+        {
+          "title": "Liability vs Full Coverage Car Insurance for Chicago Drivers",
+          "url": "https://www.insureonthespot.com/liability-vs-full-coverage-car-insurance-chicago/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Liability coverage helps pay for the other party\u2019s medical bills or repair costs if you\u2019re at fault in an accident. It is often referred to as \u201cstate-minimum\u201d coverage \u2013 in Illinois this minimum is 25/50/20 (that means $25,000 bodily injury per person, $50,000 per accident for bodily ...",
+          "page_age": "2025-07-29T16:00:00",
+          "profile": {
+            "name": "Insure On The Spot",
+            "url": "https://www.insureonthespot.com/liability-vs-full-coverage-car-insurance-chicago/",
+            "long_name": "insureonthespot.com",
+            "img": "https://imgs.search.brave.com/ZH_l3iIrD1V5_xmwua4x4SlKZZRpbhmyYEDeqdHdCDQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI3YjYxNTUz/MjA3OTY4ODg4MDVh/OWQ4YTI5MTJjN2Vl/MjE0MzQ0ODdkZDRk/NTUzNDcxYjczMzVl/MWNmYzI1NC93d3cu/aW5zdXJlb250aGVz/cG90LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insureonthespot.com",
+            "hostname": "www.insureonthespot.com",
+            "favicon": "https://imgs.search.brave.com/ZH_l3iIrD1V5_xmwua4x4SlKZZRpbhmyYEDeqdHdCDQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI3YjYxNTUz/MjA3OTY4ODg4MDVh/OWQ4YTI5MTJjN2Vl/MjE0MzQ0ODdkZDRk/NTUzNDcxYjczMzVl/MWNmYzI1NC93d3cu/aW5zdXJlb250aGVz/cG90LmNvbS8",
+            "path": "  \u203a home  \u203a tips & resources (articles)  \u203a liability vs full coverage car insurance for chicago drivers"
+          },
+          "age": "July 29, 2025"
+        },
+        {
+          "title": "Auto Insurance Definitions \u2013 Chicago Drivers\u2019 Guide",
+          "url": "https://www.insureonthespot.com/auto-insurance-definitions-chicago/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Coverage Limit: The maximum amount your insurance pays for a covered claim. Illinois minimum liability is 25/50/20, covering injuries ($25,000 per person/$50,000 per accident) and property damage ($20,000).",
+          "page_age": "2025-07-30T16:00:00",
+          "profile": {
+            "name": "Insure On The Spot",
+            "url": "https://www.insureonthespot.com/auto-insurance-definitions-chicago/",
+            "long_name": "insureonthespot.com",
+            "img": "https://imgs.search.brave.com/ZH_l3iIrD1V5_xmwua4x4SlKZZRpbhmyYEDeqdHdCDQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI3YjYxNTUz/MjA3OTY4ODg4MDVh/OWQ4YTI5MTJjN2Vl/MjE0MzQ0ODdkZDRk/NTUzNDcxYjczMzVl/MWNmYzI1NC93d3cu/aW5zdXJlb250aGVz/cG90LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insureonthespot.com",
+            "hostname": "www.insureonthespot.com",
+            "favicon": "https://imgs.search.brave.com/ZH_l3iIrD1V5_xmwua4x4SlKZZRpbhmyYEDeqdHdCDQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI3YjYxNTUz/MjA3OTY4ODg4MDVh/OWQ4YTI5MTJjN2Vl/MjE0MzQ0ODdkZDRk/NTUzNDcxYjczMzVl/MWNmYzI1NC93d3cu/aW5zdXJlb250aGVz/cG90LmNvbS8",
+            "path": "  \u203a home  \u203a tips & resources (articles)  \u203a auto insurance definitions every chicago driver should know"
+          },
+          "age": "July 30, 2025"
+        },
+        {
+          "title": "How to Choose Car Insurance in Chicago: 5 Essential Steps",
+          "url": "https://www.insureonthespot.com/how-to-choose-car-insurance-in-chicago/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "A: Illinois law requires drivers to carry at least 25/50/20 in liability coverage. This means minimum limits of $25,000 for bodily injury per person, $50,000 per accident for bodily injury to others, and $20,000 for property damage.",
+          "page_age": "2025-10-10T05:52:31",
+          "profile": {
+            "name": "Insure On The Spot",
+            "url": "https://www.insureonthespot.com/how-to-choose-car-insurance-in-chicago/",
+            "long_name": "insureonthespot.com",
+            "img": "https://imgs.search.brave.com/ZH_l3iIrD1V5_xmwua4x4SlKZZRpbhmyYEDeqdHdCDQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI3YjYxNTUz/MjA3OTY4ODg4MDVh/OWQ4YTI5MTJjN2Vl/MjE0MzQ0ODdkZDRk/NTUzNDcxYjczMzVl/MWNmYzI1NC93d3cu/aW5zdXJlb250aGVz/cG90LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insureonthespot.com",
+            "hostname": "www.insureonthespot.com",
+            "favicon": "https://imgs.search.brave.com/ZH_l3iIrD1V5_xmwua4x4SlKZZRpbhmyYEDeqdHdCDQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI3YjYxNTUz/MjA3OTY4ODg4MDVh/OWQ4YTI5MTJjN2Vl/MjE0MzQ0ODdkZDRk/NTUzNDcxYjczMzVl/MWNmYzI1NC93d3cu/aW5zdXJlb250aGVz/cG90LmNvbS8",
+            "path": "  \u203a home  \u203a tips & resources (articles)  \u203a how to choose car insurance in chicago: 5 essential steps"
+          },
+          "age": "1 month ago"
+        },
+        {
+          "title": "Illinois Auto Insurance | Get an Illinois Car Insurance Quote Today - Elephant Insurance",
+          "url": "https://www.elephant.com/products/car-insurance/illinois",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Illinois car insurance laws require drivers to have a minimum 25/50/20 liability limits on their car insurance coverage. Liability auto insurance is a type of car insurance that helps protect you financially if you are found at fault in an accident.",
+          "page_age": "2025-10-23T14:49:42",
+          "profile": {
+            "name": "Elephant Insurance",
+            "url": "https://www.elephant.com/products/car-insurance/illinois",
+            "long_name": "elephant.com",
+            "img": "https://imgs.search.brave.com/Vd5rBHezBgS6xzpePRoICQZ2vrqeNdGvd8ZtLSPf4uY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNGFlN2U3Mjg3/ODg0MzJkZWM2MGFm/NTI1NzRkZmI4MmIx/YTI0MGQ3ZjUwYTlm/YmI5ZGQ2YWFmMDI0/ZjdlMzVjOC93d3cu/ZWxlcGhhbnQuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "elephant.com",
+            "hostname": "www.elephant.com",
+            "favicon": "https://imgs.search.brave.com/Vd5rBHezBgS6xzpePRoICQZ2vrqeNdGvd8ZtLSPf4uY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNGFlN2U3Mjg3/ODg0MzJkZWM2MGFm/NTI1NzRkZmI4MmIx/YTI0MGQ3ZjUwYTlm/YmI5ZGQ2YWFmMDI0/ZjdlMzVjOC93d3cu/ZWxlcGhhbnQuY29t/Lw",
+            "path": "  \u203a home  \u203a products  \u203a car insurance  \u203a illinois"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/jn1boVcUwqm06ZF5Edd3-mHDdndYZP0S8kerT0GCnXo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/ZWxlcGhhbnQuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI0/LzA4L2VsZXBoYW50/LWxvZ28tMjAyMC5q/cGc",
+            "original": "https://www.elephant.com/wp-content/uploads/2024/08/elephant-logo-2020.jpg",
+            "logo": true
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "Illinois Auto Insurance Requirements: Understanding Liability Coverage - RetireMax Insurance",
+          "url": "https://retiremaxinsurance.com/2025/05/04/illinois-auto-insurance-requirements-understanding-liability-coverage/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "These limits are commonly referred to as 25/50/20 coverage. At RetireMax Insurance, we generally recommend higher coverage limits. Medical bills and repair costs can quickly add up, and the state minimums may not provide sufficient protection. Illinois law mandates that drivers carry basic liability insurance, but accidents often result in damages that far exceed the state\u2019s minimum coverage limits.",
+          "page_age": "2025-07-22T09:56:46",
+          "profile": {
+            "name": "RetireMax Insurance",
+            "url": "https://retiremaxinsurance.com/2025/05/04/illinois-auto-insurance-requirements-understanding-liability-coverage/",
+            "long_name": "retiremaxinsurance.com",
+            "img": "https://imgs.search.brave.com/p35jFS-9st9B5_9YK0FDV3RYPSfdwMAiMx-U1ULK2XI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTkwOTNmNmM3/ZmQwNmI1MWE4NmY0/MjZhNmUyM2I5ZTJk/YWVkYjlkNTc5NTY2/Y2YyZWI1NjljMTZi/ODJiMDVkMy9yZXRp/cmVtYXhpbnN1cmFu/Y2UuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "retiremaxinsurance.com",
+            "hostname": "retiremaxinsurance.com",
+            "favicon": "https://imgs.search.brave.com/p35jFS-9st9B5_9YK0FDV3RYPSfdwMAiMx-U1ULK2XI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTkwOTNmNmM3/ZmQwNmI1MWE4NmY0/MjZhNmUyM2I5ZTJk/YWVkYjlkNTc5NTY2/Y2YyZWI1NjljMTZi/ODJiMDVkMy9yZXRp/cmVtYXhpbnN1cmFu/Y2UuY29tLw",
+            "path": "  \u203a home  \u203a blog  \u203a illinois auto insurance requirements: understanding liability coverage"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ByDnaQAVaw19TnUcFA5KHW0zTWh-MLvLPdE0VFQRzYY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXRp/cmVtYXhpbnN1cmFu/Y2UuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI1LzA1L2lu/c3VyYW5jZS1hZ2Vu/dC1pbnNwZWN0aW5n/LWRhbWFnZWQtY2Fy/LWluc3VyYW5jZS1j/bGFpbS1mb3JtLmpw/Zw",
+            "original": "https://retiremaxinsurance.com/wp-content/uploads/2025/05/insurance-agent-inspecting-damaged-car-insurance-claim-form.jpg",
+            "logo": false
+          },
+          "age": "July 22, 2025"
+        },
+        {
+          "title": "Illinois Car Insurance Requirements and Coverage | Freeway Insurance",
+          "url": "https://www.freeway.com/knowledge-center/auto/illinois-car-insurance-requirements-and-coverage/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "It provides financial protection to drivers in the event they cause bodily injury or property damage to others in an accident. You will often see these limits listed as 25/50/20. These limits are the most your insurance company will pay if you ...",
+          "page_age": "2025-01-17T16:10:49",
+          "profile": {
+            "name": "Freeway Insurance",
+            "url": "https://www.freeway.com/knowledge-center/auto/illinois-car-insurance-requirements-and-coverage/",
+            "long_name": "freeway.com",
+            "img": "https://imgs.search.brave.com/EgYvTm2odrbbZ0oDqw2uKubnvKXEbXLv8zKttmKGjR4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDU1YWI4M2I3/MzFkYWYxYzBlZjFh/NDViZWRiZGE4OTkx/YTViZmJhODE5OTAw/ODBjNmMyZDgwYzk5/ZjZjOTMwZS93d3cu/ZnJlZXdheS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "freeway.com",
+            "hostname": "www.freeway.com",
+            "favicon": "https://imgs.search.brave.com/EgYvTm2odrbbZ0oDqw2uKubnvKXEbXLv8zKttmKGjR4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDU1YWI4M2I3/MzFkYWYxYzBlZjFh/NDViZWRiZGE4OTkx/YTViZmJhODE5OTAw/ODBjNmMyZDgwYzk5/ZjZjOTMwZS93d3cu/ZnJlZXdheS5jb20v",
+            "path": "  \u203a home  \u203a auto insurance claims  \u203a illinois car insurance requirements and coverage"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/rGIKXYN3BPDQyba5An3nTFkaGgiQxAVaEqqzbAhROkc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZXdheS5jb20v/a25vd2xlZGdlLWNl/bnRlci93cC1jb250/ZW50L3VwbG9hZHMv/c2l0ZXMvMi8yMDI0/LzEwL0ZSRUVXQVkt/RU4tT0cuanBn",
+            "original": "https://www.freeway.com/knowledge-center/wp-content/uploads/sites/2/2024/10/FREEWAY-EN-OG.jpg",
+            "logo": false
+          },
+          "age": "January 17, 2025"
+        },
+        {
+          "title": "How much is insurance in Illinois? Average rates in 2025",
+          "url": "https://www.carinsurance.com/state/how-much-is-car-insurance-in-illinois/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Minimum liability coverage in Illinois costs around $421 annually for limits of 25/50/20, while liability-only coverage costs $471 per year for limits of 50/100/50.",
+          "page_age": "2025-09-16T00:00:00",
+          "profile": {
+            "name": "Carinsurance.com",
+            "url": "https://www.carinsurance.com/state/how-much-is-car-insurance-in-illinois/",
+            "long_name": "carinsurance.com",
+            "img": "https://imgs.search.brave.com/KCetfn_EHIlwz5sy6dTvSdGjOen9Qf_QsSICK4hYUH8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDdmYWUzNjM0/MGU0ODEwNzI3ZWVj/NjEwYmQ2MmE5NTZh/N2E2NDRhODA2YjRj/NjBlNzc2OTBiYzkz/YzA3ZGQzOC93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "carinsurance.com",
+            "hostname": "www.carinsurance.com",
+            "favicon": "https://imgs.search.brave.com/KCetfn_EHIlwz5sy6dTvSdGjOen9Qf_QsSICK4hYUH8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDdmYWUzNjM0/MGU0ODEwNzI3ZWVj/NjEwYmQ2MmE5NTZh/N2E2NDRhODA2YjRj/NjBlNzc2OTBiYzkz/YzA3ZGQzOC93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS8",
+            "path": "  \u203a car insurance homepage  \u203a car insurance by state  \u203a how much is car insurance in illinois?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/UgJ_Y_LrX0rGkmLc_m68pIngh_lOS5ECjcKCnUUN0Ks/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS9pbWFnZXMv/aG9tZS9pbWFnZV9m/b3Jtc3RhcnQuanBn",
+            "original": "https://www.carinsurance.com/images/home/image_formstart.jpg",
+            "logo": false
+          },
+          "age": "September 16, 2025"
+        },
+        {
+          "title": "What Should Chicago Drivers Know About SR22 Insurance? - Insure On The Spot",
+          "url": "https://www.insureonthespot.com/chicago-sr22-insurance-all-you-need-to-know/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "First, you need to have an active auto insurance policy that meets Illinois\u2019 minimum liability requirements (at least 25/50/20 coverage). If you already have insurance, you\u2019ll inform your insurer that you need an SR22 filing.",
+          "page_age": "2025-06-23T19:18:10",
+          "profile": {
+            "name": "Insure On The Spot",
+            "url": "https://www.insureonthespot.com/chicago-sr22-insurance-all-you-need-to-know/",
+            "long_name": "insureonthespot.com",
+            "img": "https://imgs.search.brave.com/ZH_l3iIrD1V5_xmwua4x4SlKZZRpbhmyYEDeqdHdCDQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI3YjYxNTUz/MjA3OTY4ODg4MDVh/OWQ4YTI5MTJjN2Vl/MjE0MzQ0ODdkZDRk/NTUzNDcxYjczMzVl/MWNmYzI1NC93d3cu/aW5zdXJlb250aGVz/cG90LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insureonthespot.com",
+            "hostname": "www.insureonthespot.com",
+            "favicon": "https://imgs.search.brave.com/ZH_l3iIrD1V5_xmwua4x4SlKZZRpbhmyYEDeqdHdCDQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI3YjYxNTUz/MjA3OTY4ODg4MDVh/OWQ4YTI5MTJjN2Vl/MjE0MzQ0ODdkZDRk/NTUzNDcxYjczMzVl/MWNmYzI1NC93d3cu/aW5zdXJlb250aGVz/cG90LmNvbS8",
+            "path": "  \u203a home  \u203a tips & resources (articles)  \u203a what should chicago drivers know about sr22 insurance?"
+          },
+          "age": "June 23, 2025"
+        },
+        {
+          "title": "SR-22 Insurance In Illinois",
+          "url": "https://www.cheapinsurance.com/blog/cheap-sr-22-insurance-in-illinois/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Drivers with an SR-22 in Illinois must adhere to the state&#x27;s minimum liability limits (often referred to as 25/50/20): $25,000 for bodily injury per person, $50,000 for bodily injury per accident, and $20,000 for property damage per accident.",
+          "page_age": "2025-09-29T20:27:08",
+          "profile": {
+            "name": "Cheap Insurance",
+            "url": "https://www.cheapinsurance.com/blog/cheap-sr-22-insurance-in-illinois/",
+            "long_name": "cheapinsurance.com",
+            "img": "https://imgs.search.brave.com/yC9hhuJs-IxfcsrjFyaBVwKYIrnBV6vIT10pZrQn6BI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWU3NGQ3MDY0/M2RlMzRjOTliNjZi/NTgxZWU2YWEyOWY2/NjcyMDAwYTcwZTU4/NzA4NDYxNTgxNTli/ODI0ZDc0My93d3cu/Y2hlYXBpbnN1cmFu/Y2UuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cheapinsurance.com",
+            "hostname": "www.cheapinsurance.com",
+            "favicon": "https://imgs.search.brave.com/yC9hhuJs-IxfcsrjFyaBVwKYIrnBV6vIT10pZrQn6BI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWU3NGQ3MDY0/M2RlMzRjOTliNjZi/NTgxZWU2YWEyOWY2/NjcyMDAwYTcwZTU4/NzA4NDYxNTgxNTli/ODI0ZDc0My93d3cu/Y2hlYXBpbnN1cmFu/Y2UuY29tLw",
+            "path": "  \u203a home  \u203a sr-22 insurance in illinois"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/IqPg_lwALWdgJhFHLgCFZ_FwMuo_5kPMKUp3DLrMiH0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2hlYXBpbnN1cmFu/Y2UuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIyLzA2L0lM/LVNSMjItSmFjbHlu/LVNjaGlhdm8tQUkt/R2VuZXJhdGVkLUlt/YWdlLUZyb20tR29v/Z2xlcy1HZW1pbmkt/UHJvLW9uLUF1Z3Vz/dC0xNC0yMDI1Lmpw/Zw",
+            "original": "https://www.cheapinsurance.com/wp-content/uploads/2022/06/IL-SR22-Jaclyn-Schiavo-AI-Generated-Image-From-Googles-Gemini-Pro-on-August-14-2025.jpg",
+            "logo": false
+          },
+          "age": "September 29, 2025"
+        },
+        {
+          "title": "Illinois Auto Insurance - Clovered.com",
+          "url": "https://clovered.com/auto-insurance/illinois/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "With several coverages to choose ... been easier. In Illinois, the minimum auto insurance each driver must have is 25/50/20 liability coverage and 20/40 UMBI/UIMBI coverage....",
+          "page_age": "2025-01-24T16:04:21",
+          "profile": {
+            "name": "Clovered",
+            "url": "https://clovered.com/auto-insurance/illinois/",
+            "long_name": "clovered.com",
+            "img": "https://imgs.search.brave.com/FMvsDfAYLtW0L_vkIDwl109FIUd01bit67bRxDQuYXk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDY2ZjEyMWY2/MDhiYTczNDdiZDFm/NTcyMDYwMGY5Zjgx/M2JhYTM2NmQ1NjA5/M2U3ZDlhYmEyODZl/MDQwYWVjOC9jbG92/ZXJlZC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "clovered.com",
+            "hostname": "clovered.com",
+            "favicon": "https://imgs.search.brave.com/FMvsDfAYLtW0L_vkIDwl109FIUd01bit67bRxDQuYXk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDY2ZjEyMWY2/MDhiYTczNDdiZDFm/NTcyMDYwMGY5Zjgx/M2JhYTM2NmQ1NjA5/M2U3ZDlhYmEyODZl/MDQwYWVjOC9jbG92/ZXJlZC5jb20v",
+            "path": "  \u203a articles  \u203a illinois auto insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/5Oa06zrFSBr8Y-mkr7ij0SxnHq2X0cFcBu9LZ8eKN2U/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jbG92/ZXJlZC5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMDYv/SWxsaW5vaXMtQXV0/by1IZXJvLUltYWdl/LTAxLW1pbi53ZWJw",
+            "original": "https://clovered.com/wp-content/uploads/2023/06/Illinois-Auto-Hero-Image-01-min.webp",
+            "logo": false
+          },
+          "age": "January 24, 2025"
+        },
+        {
+          "title": "Illinois car insurance guide",
+          "url": "https://www.insurance.com/auto-insurance/illinois-car-insurance-guide/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In Illinois, the minimum car insurance you need includes liability coverage with at least 25/50/20 limits.",
+          "page_age": "2025-05-23T00:00:00",
+          "profile": {
+            "name": "Insurance.com",
+            "url": "https://www.insurance.com/auto-insurance/illinois-car-insurance-guide/",
+            "long_name": "insurance.com",
+            "img": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurance.com",
+            "hostname": "www.insurance.com",
+            "favicon": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8",
+            "path": "  \u203a home  \u203a auto insurance  \u203a illinois car insurance guide"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/eBakuGLTJDxB635je6usVNCnc32r-BUSfkjIz9nw3qs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmNlLmNv/bS91cGxvYWRlZGZp/bGVzL21lZGlhL2Nh/ci1pbnN1cmFuY2Ut/Ni5qcGc",
+            "original": "https://www.insurance.com/uploadedfiles/media/car-insurance-6.jpg",
+            "logo": false
+          },
+          "age": "May 23, 2025"
+        },
+        {
+          "title": "Bodily Injury Liability Insurance in Chicago, Illinois: What You Need To Know",
+          "url": "https://www.americanautoinsurance.com/blog/bodily-injury-liability-insurance-in-chicago-illinois/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "While bodily injury liability protects ... someone else is at fault. Uninsured motorist coverage is mandatory in Illinois, with minimums matching the bodily injury liability requirements \u2014 25/50....",
+          "page_age": "2024-12-12T18:43:37",
+          "profile": {
+            "name": "American Auto Insurance",
+            "url": "https://www.americanautoinsurance.com/blog/bodily-injury-liability-insurance-in-chicago-illinois/",
+            "long_name": "americanautoinsurance.com",
+            "img": "https://imgs.search.brave.com/IbYxWCZ4mVw4rjtZ_DmCkFnUgL6w4ckLk25ql7SvgBo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYmQyOWI1ZWJi/Mzg4NTYyOTU2YWNj/YTk1NDE3MzVjMGQz/OThjMWIyYjYwOTYx/OTY5MTk3MjlmODU3/ZTdmNzVlOS93d3cu/YW1lcmljYW5hdXRv/aW5zdXJhbmNlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "americanautoinsurance.com",
+            "hostname": "www.americanautoinsurance.com",
+            "favicon": "https://imgs.search.brave.com/IbYxWCZ4mVw4rjtZ_DmCkFnUgL6w4ckLk25ql7SvgBo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYmQyOWI1ZWJi/Mzg4NTYyOTU2YWNj/YTk1NDE3MzVjMGQz/OThjMWIyYjYwOTYx/OTY5MTk3MjlmODU3/ZTdmNzVlOS93d3cu/YW1lcmljYW5hdXRv/aW5zdXJhbmNlLmNv/bS8",
+            "path": "  \u203a blog  \u203a bodily injury liability insurance in chicago, illinois: what you need to know"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/zgljkQZlIWtKPfJjrVSKoj7Hd0A1n3GzxYYhd6uCkdE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YW1lcmljYW5hdXRv/aW5zdXJhbmNlLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/NC8xMi9Cb2RpbHkt/SW5qdXJ5LUxpYWJp/bGl0eS1JbnN1cmFu/Y2UtaW4tQ2hpY2Fn/by1JbGxpbm9pcy1X/aGF0LVlvdS1OZWVk/LVRvLUtub3cuanBn",
+            "original": "https://www.americanautoinsurance.com/wp-content/uploads/2024/12/Bodily-Injury-Liability-Insurance-in-Chicago-Illinois-What-You-Need-To-Know.jpg",
+            "logo": false
+          },
+          "age": "December 12, 2024"
+        },
+        {
+          "title": "The Risks of Driving Without Insurance in Illinois",
+          "url": "https://clovered.com/auto-insurance/illinois/driving-without-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The legal minimum amount of coverage all Illinoisans are required to carry is $25,000 in bodily injury liability per person, $50,000 in bodily injury liability per accident, and $20,000 in property damage liability per accident, otherwise called ...",
+          "page_age": "2025-01-29T18:16:47",
+          "profile": {
+            "name": "Clovered",
+            "url": "https://clovered.com/auto-insurance/illinois/driving-without-insurance/",
+            "long_name": "clovered.com",
+            "img": "https://imgs.search.brave.com/FMvsDfAYLtW0L_vkIDwl109FIUd01bit67bRxDQuYXk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDY2ZjEyMWY2/MDhiYTczNDdiZDFm/NTcyMDYwMGY5Zjgx/M2JhYTM2NmQ1NjA5/M2U3ZDlhYmEyODZl/MDQwYWVjOC9jbG92/ZXJlZC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "clovered.com",
+            "hostname": "clovered.com",
+            "favicon": "https://imgs.search.brave.com/FMvsDfAYLtW0L_vkIDwl109FIUd01bit67bRxDQuYXk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDY2ZjEyMWY2/MDhiYTczNDdiZDFm/NTcyMDYwMGY5Zjgx/M2JhYTM2NmQ1NjA5/M2U3ZDlhYmEyODZl/MDQwYWVjOC9jbG92/ZXJlZC5jb20v",
+            "path": "  \u203a articles  \u203a the risks of driving without insurance in illinois"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/y9hqVIUoblDI1wKn8ifTk3ASrKPrSt3cOe4EhTgnCpY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jbG92/ZXJlZC5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMDYv/VGhlLVJpc2tzLW9m/LURyaXZpbmctV2l0/aG91dC1JbnN1cmFu/Y2UtaW4tSWxsaW5v/aXMtbWluLndlYnA",
+            "original": "https://clovered.com/wp-content/uploads/2023/06/The-Risks-of-Driving-Without-Insurance-in-Illinois-min.webp",
+            "logo": false
+          },
+          "age": "January 29, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

@@ -1,0 +1,758 @@
+{
+  "websearch_id": "websearch_qdkgfth73kwp0atbmejf634d",
+  "search_id": "search_w2981965f7kzwvyp812dpojo",
+  "timestamp": "2025-11-07T12:29:09.165360",
+  "startedAt": "2025-11-07T12:29:09.165360",
+  "completedAt": "2025-11-07T12:29:11.168111",
+  "durationSeconds": 2.0,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:bankrate.com average insurance rates [state]",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:bankrate.com average insurance rates [state]",
+      "show_strict_warning": false,
+      "cleaned": "average insurance rates [state]",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "average insurance rates [state]",
+        "sites": [
+          "bankrate.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Car Insurance Rates by State for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/states/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Arizona drivers typically pay around 2 percent less per year for full coverage auto insurance than the national average, at $2,644 annually. Arizona\u2019s roadways rank middle-of-the-road, and the state\u2019s cost of living is average.",
+          "page_age": "2025-11-06T23:45:39",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/states/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/zlUOzR1BVAnhcrUq5nSR2e_z0UOWwBSCQeetBW1X5EA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvODAw/eDQ1MC82ZTNjZmY3/OGE1L3N0YXRlLXJh/dGVzLTgwMC00NTAt/MS5qcGVn",
+            "original": "https://a.storyblok.com/f/102997/800x450/6e3cff78a5/state-rates-800-450-1.jpeg",
+            "logo": false
+          },
+          "age": "19 hours ago"
+        },
+        {
+          "title": "Home Insurance Rates by State for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/homeowners-insurance/states/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "That means Hawaii\u2019s average price for home insurance comes in at $1,046 less than the national average. However, wind is an excluded peril in Hawaii home insurance policies, so homeowners adding wild and flood coverage may see much higher premiums.",
+          "page_age": "2025-11-07T06:59:24",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/homeowners-insurance/states/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "\u203a insurance  \u203a homeowners-insurance  \u203a states"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/UdZMuUweafm7d_tVmT907gHx8bCalm1aMmKX38fgzRU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvMTI4/MHg3MjAvMzQxMTZk/MDA5MS9ob21lb3du/ZXJzLWluc3VyYW5j/ZS1yYXRlcy1ieS1z/dGF0ZS0xLTEuanBn",
+            "original": "https://a.storyblok.com/f/102997/1280x720/34116d0091/homeowners-insurance-rates-by-state-1-1.jpg",
+            "logo": false
+          },
+          "age": "11 hours ago"
+        },
+        {
+          "title": "Average cost of car insurance in November 2025",
+          "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Drivers in Idaho, Vermont, Hawaii, Maine and New Hampshire pay the cheapest annual full coverage car insurance rates in the nation, on average. Factors like cheaper cost of living, lower crime rates and less traffic congestion could contribute to these states&#x27; lower average premiums.",
+          "page_age": "2025-11-07T05:04:33",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/kS-6az4e1AuNbmx7QPLBzr-uub9l7JUS6ocG95z6O3Y/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvMTI4/MHg3MjAvYTQwMzcz/ZDkyNi9pbnN1cmFu/Y2VfYXZlcmFnZV9j/b3N0X29mX2Nhcl9p/bnN1cmFuY2UuanBn",
+            "original": "https://a.storyblok.com/f/102997/1280x720/a40373d926/insurance_average_cost_of_car_insurance.jpg",
+            "logo": false
+          },
+          "age": "13 hours ago"
+        },
+        {
+          "title": "Average Cost of Car Insurance in New York for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-new-york/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The best way to find your fit is to compare rates from multiple companies and research reviews and insights from current customers. State minimum car insurance in New York State costs an average of $148 per month, or $1,773 per year.",
+          "page_age": "2025-11-05T19:18:32",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-new-york/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/_SKDjJ9sBQbF_--ZMa7VWQC4hlLWU6UgtzvZEjrlnJ4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvMTI4/MHg3MjAvOGNhOWE0/MTIzYS9hdmVyYWdl/LWNvc3Qtb2YtY2Fy/LWluc3VyYW5jZS1p/bi1uZXcteW9yay1m/ZWF0dXJlZC5qcGVn",
+            "original": "https://a.storyblok.com/f/102997/1280x720/8ca9a4123a/average-cost-of-car-insurance-in-new-york-featured.jpeg",
+            "logo": false
+          },
+          "age": "2 days ago"
+        },
+        {
+          "title": "Average Cost of Car Insurance in Washington for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-washington/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Washington drivers pay lower average rates at $1,890 per year for full coverage and $577 per year for minimum coverage. While minimum coverage is all that&#x27;s legally required by the state, most insurance experts recommend full coverage for additional financial protection.",
+          "page_age": "2025-11-03T18:44:17",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-washington/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "Average Cost of Car Insurance in Colorado in 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-colorado/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The average cost of car insurance in Colorado per month is $267 for full coverage and $48 for minimum coverage. This is higher than the national monthly full coverage average of $223, but lower than the national monthly minimum coverage average of $67. Higher full coverage costs may be due ...",
+          "page_age": "2025-11-05T14:45:20",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-colorado/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "age": "2 days ago"
+        },
+        {
+          "title": "Average Cost of Car Insurance in Texas in 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-texas/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Car insurance rates vary by state and by coverage level. The average cost of full coverage car insurance in Texas is $229 per month.",
+          "page_age": "2025-11-04T20:17:43",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-texas/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/zdyZwU0eppnXdSIXg-GascUahJ2sQqyC7193wp_YoiE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvMTI4/MHg3MjAvMmIxYzky/ODkxNi9hdmVyYWdl/LWNvc3Qtb2YtY2Fy/LWluc3VyYW5jZS1p/bi10ZXhhcy1mZWF0/dXJlZC5qcGVn",
+            "original": "https://a.storyblok.com/f/102997/1280x720/2b1c928916/average-cost-of-car-insurance-in-texas-featured.jpeg",
+            "logo": false
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "Average Cost of Car Insurance in Arizona in 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-arizona/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Based on September 2025 data sourced from Quadrant Information Services, the average car insurance cost in Arizona is $2,644 per year for full coverage and $849 per year for state-mandated minimum coverage. National averages are similar, coming in at $2,671 and $806 for full and minimum coverage, ...",
+          "page_age": "2025-11-07T08:18:14",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-arizona/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "age": "10 hours ago"
+        },
+        {
+          "title": "Average Cost of Car Insurance in Massachusetts in 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-massachusetts/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "While car insurance in Massachusetts is more affordable on average compared to many other states, there are still a few ways you may be able to save a little money. Here are some tips: Review your annual mileage. If you drive less than 12,000 miles, you can usually get cheaper car insurance. Some companies will offer a low mileage rate that is more affordable than the commuter rate.",
+          "page_age": "2025-10-31T15:44:24",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-massachusetts/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/kUcFqCiT0qJRUKOecv2w7-MRrM-qe9xbcDXQUjIbfdQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvMTI4/MHg3MjAvOTcxNmVi/NGRmOS9hdmVyYWdl/LWNvc3Qtb2YtY2Fy/LWluc3VyYW5jZS1p/bi1tYXNzYWNodXNl/dHRzLmpwZWc",
+            "original": "https://a.storyblok.com/f/102997/1280x720/9716eb4df9/average-cost-of-car-insurance-in-massachusetts.jpeg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Average Cost of Car Insurance in Ohio for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-ohio/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In the U.S., the average cost of car insurance is $806 per year for minimum coverage and $2,671 per year for full coverage. While car insurance premiums can vary greatly between states, there are also other factors that go into determining your rates within the same state.",
+          "page_age": "2025-10-27T19:09:59",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-ohio/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "Average Cost of Car Insurance in Illinois in 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-illinois/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The Illinois city you live in can affect how much you pay for car insurance. Besides personal factors, population density, weather conditions, crime statistics and claim data can also affect your premium from city to city. We compared multiple cities across Illinois to illustrate the difference in premiums. Chicago has some of the highest average rates in the state as the most densely populated area in Illinois with some of the state\u2019s worst crime statistics.",
+          "page_age": "2025-11-06T15:09:12",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-illinois/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/kKQBOuhkTgMi0XNx1CCQ7XfzSZuIbjDQL8oK-9VuNZI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvMTI4/MHg3MjAvYjZjNDNi/N2Q0OC9hdmVyYWdl/LWNvc3Qtb2YtY2Fy/LWluc3VyYW5jZS1p/bi1pbGxpbm9pcy1m/ZWF0dXJlZC5qcGVn",
+            "original": "https://a.storyblok.com/f/102997/1280x720/b6c43b7d48/average-cost-of-car-insurance-in-illinois-featured.jpeg",
+            "logo": false
+          },
+          "age": "1 day ago"
+        },
+        {
+          "title": "Average Cost of Car Insurance in Florida in 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-florida/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Florida drivers with a DUI pay $493 per month for full coverage insurance, 53 percent more than the state average for drivers without an incident. Your ZIP code influences the premium you pay for car insurance because of factors like accident ...",
+          "page_age": "2025-11-03T21:13:06",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-florida/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/RD9dQ4KXKqhWkNg-HVZdOxbCV_vHJoKrVG_FAKdXlUM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvMTI4/MHg3MjAvMjMyNzVl/NjcxNS9hdmVyYWdl/LWNvc3Qtb2YtY2Fy/LWluc3VyYW5jZS1p/bi1mbG9yaWRhLWZl/YXR1cmVkLmpwZWc",
+            "original": "https://a.storyblok.com/f/102997/1280x720/23275e6715/average-cost-of-car-insurance-in-florida-featured.jpeg",
+            "logo": false
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "Average Cost of Car Insurance in Pennsylvania in 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-pennsylvania/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Pennsylvania drivers pay a monthly average of $200 for full coverage and $43 for state-mandated minimum coverage insurance. Pennsylvania does not allow insurance companies to use gender as an auto insurance rating factor.",
+          "page_age": "2025-10-27T01:59:32",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-pennsylvania/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/RyUWEFruokkjdnVGW5qRnjIfuPElXjHCvh-ugXOHhuY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvMTI4/MHg3MjAvOWQ4NTA1/NGNiMS9hdmVyYWdl/LWNvc3Qtb2YtY2Fy/LWluc3VyYW5jZS1p/bi1wZW5uc3lsdmFu/aWEtZmVhdHVyZWQu/anBlZw",
+            "original": "https://a.storyblok.com/f/102997/1280x720/9d85054cb1/average-cost-of-car-insurance-in-pennsylvania-featured.jpeg",
+            "logo": false
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "Average Cost of Car Insurance in North Carolina for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-north-carolina/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The average cost of car insurance in North Carolina is $1,831 annually for full coverage and $579 annually for state-required minimum coverage. North Carolina car insurance rates are typically well below the national average costs of car insurance, ...",
+          "page_age": "2025-11-07T13:40:46",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-north-carolina/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/y4Q8D55iCXyDleBDD-7ZK1AndKsAqFNX6FZsNQkUv44/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvMTI4/MHg3MjAvYzkyNDZh/NGIxYy9hdmVyYWdl/LWNvc3Qtb2YtY2Fy/LWluc3VyYW5jZS1p/bi1ub3J0aC1jYXJv/bGluYS1mZWF0dXJl/ZC5qcGVn",
+            "original": "https://a.storyblok.com/f/102997/1280x720/c9246a4b1c/average-cost-of-car-insurance-in-north-carolina-featured.jpeg",
+            "logo": false
+          },
+          "age": "5 hours ago"
+        },
+        {
+          "title": "Average Cost of Car Insurance in Missouri in 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-missouri/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "To compare, the U.S. national averages are $2,671 for full coverage and $806 for state-mandated minimum coverage. However, it\u2019s important to note that car insurance premiums are different for every driver. Factors like your ZIP code, driving record, gender, vehicle type and age can affect ...",
+          "page_age": "2025-10-30T20:51:42",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-missouri/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Average Cost of Car Insurance in Oregon for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-oregon/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Insurance carriers often use city-specific variables like population density, crime statistics, claim frequency and cost of living in the ZIP code to determine rates in the area. If you live in an area where it\u2019s more common to file an insurance claim, you will likely pay more for your coverage. In the table below, you can see average Oregon auto insurance rates in some of the state\u2019s most populated cities.",
+          "page_age": "2025-11-03T21:42:18",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-oregon/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "Average Cost of Car Insurance in California for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-california/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "California drivers with one DUI pay an average of $643 per month for full coverage car insurance. Car insurance rates in California vary by city. Drivers in densely populated areas tend to have higher rates. For example, drivers in Los Angeles pay 36 percent more than the state average for ...",
+          "page_age": "2025-11-06T02:17:23",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-california/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "age": "2 days ago"
+        },
+        {
+          "title": "Average Cost of Car Insurance in Virginia for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-virginia/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The average car insurance cost in Virginia for full coverage, which is $2,070 per year, is 23 percent less than the national average of $2,671. Minimum coverage in Virginia costs an average of $753 per year, almost 8 percent less than the national average of $806.",
+          "page_age": "2025-11-06T18:56:23",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-virginia/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "age": "1 day ago"
+        },
+        {
+          "title": "Average Cost of Car Insurance in Utah for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-utah/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "For comparison, the average cost of car insurance in the United States is $806 per year for a minimum coverage policy and $2,671 for full coverage. Utah\u2019s car insurance rates reflect the risk factors at play in the state, as well as efforts of insurance regulators to enforce fair pricing ...",
+          "page_age": "2025-10-24T19:59:27",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-utah/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "Average homeowners insurance cost in November 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/homeowners-insurance/homeowners-insurance-cost/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "On average, the most expensive states for homeowners insurance are Nebraska, Louisiana and Florida, while the least expensive states are Vermont, Delaware and Alaska. While inflation has slowed down since its peak, insurance rates are reactionary.",
+          "page_age": "2025-11-07T03:41:43",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/homeowners-insurance/homeowners-insurance-cost/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a homeowners insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/WKkJoJc_bW1TLPVudS9K-hoypWgwB7vLtIiAzvMvNGs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvMTI4/MHg3MjAvNjU1MTM0/MGQxMi9pbnN1cmFu/Y2UtYXZlcmFnZS1j/b3N0LW9mLWhvbWVv/d25lcnMtaW5zdXJh/bmNlXy5qcGc",
+            "original": "https://a.storyblok.com/f/102997/1280x720/6551340d12/insurance-average-cost-of-homeowners-insurance_.jpg",
+            "logo": false
+          },
+          "age": "15 hours ago"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

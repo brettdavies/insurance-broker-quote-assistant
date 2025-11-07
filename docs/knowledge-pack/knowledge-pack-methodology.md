@@ -83,26 +83,41 @@ All IDs tracked in `audit-trail.json` for cross-reference.
 
 ---
 
-### Phase 2: Raw Data Scraping (4-6 hours)
+### Phase 2: Automated Data Discovery via Brave API (4-6 hours)
 
-**Objective**: Capture ALL available data from public sources, preserving duplicates and conflicts for later resolution.
+**Objective**: Execute all search queries via Brave Search API, discover and enrich URLs, fetch page content for extraction.
 
-**Status**: ⏳ Pending
-**Note**: See [phase-2-agent-instructions.md](phase-2-agent-instructions.md) for autonomous agent workflow.
+**Status**: ✅ Complete (Brave API integration implemented 2025-11-07)
+**Architecture**: Single-threaded deterministic execution with Brave Search API and crawl4ai
 
 **Critical Rule**: DO NOT RESOLVE CONFLICTS YET - Just capture everything!
 
-#### 2.1 Scraping Methodology
+#### 2.1 Three-Step Automated Workflow
 
-For each source URL:
+**Step 1: Search Execution** (`brave-search.py`)
+1. **Load search queries** from search-tracker.json (476 queries from sot-search-queries.md)
+2. **Execute Brave API searches** with 1.1s rate limiting between requests
+3. **Extract URLs from results** (web.results array in Brave API response)
+4. **Enrich with Brave metadata**: title, description, page_age, language, type, subtype, hostname, source_name
+5. **Generate websearch ID** (websearch_{cuid2}) for each search execution
+6. **Save raw request/response** to `knowledge_pack/raw/websearches/websearch_{cuid2}.json`
+7. **Deduplicate URLs** via SHA256 hash and save to url-tracker.json
+8. **Update search status** to 'completed' with lastrunAt timestamp
 
-1. **Access the page** (browser or automated scraper)
-2. **Identify data elements** using CSS selectors or XPath
-3. **Extract raw values** exactly as displayed
-4. **Record element reference** (precise location on page)
-5. **Generate cuid2 ID** for this raw data entry
-6. **Capture metadata** (access date, confidence level)
-7. **Save to raw file** (organized by category)
+**Step 2: URL Fetching** (`fetch-url.py`)
+1. **Load pending URLs** from url-tracker.json
+2. **Fetch page content** using crawl4ai (both HTML and markdown)
+3. **Generate page ID** (page_{cuid2})
+4. **Save raw files** to `knowledge_pack/raw/pages/{page_id}.{html|md}`
+5. **Register page** in page-tracker.json with metadata (size, status, etc.)
+6. **Update URL status** to 'completed' with fetchedAt timestamp
+
+**Step 3: Data Extraction** (Phase 3)
+1. **Load pages** from page-tracker.json
+2. **Extract data points** using LLM or pattern matching
+3. **Generate unique IDs** for each extracted field (fld_{cuid2})
+4. **Track element references** (CSS selectors, line numbers)
+5. **Save to raw data files** organized by category
 
 #### 2.2 Raw Data Entry Format
 
@@ -152,7 +167,15 @@ For each source URL:
 
 ```
 knowledge_pack/raw/
-├── carriers/
+├── websearches/                    # Brave API request/response logs
+│   ├── websearch_{cuid2}.json     # Complete API call with metadata
+│   ├── websearch_{cuid2}.json     # (468 files from Step 1)
+│   └── ...
+├── pages/                          # Fetched HTML/markdown page content
+│   ├── page_{cuid2}.html          # Raw HTML from crawl4ai
+│   ├── page_{cuid2}.md            # Converted markdown
+│   └── ...                        # (2,950 files from Step 2)
+├── carriers/                       # Extracted data organized by carrier
 │   ├── geico/
 │   │   ├── discounts_auto.raw.json
 │   │   ├── discounts_home.raw.json
@@ -164,12 +187,12 @@ knowledge_pack/raw/
 │   │   └── [same structure]
 │   └── state-farm/
 │       └── [same structure]
-├── states/
+├── states/                         # Extracted state-specific data
 │   ├── CA_minimums.raw.json
 │   ├── CA_requirements.raw.json
 │   ├── CA_special.raw.json
 │   └── [same for TX, FL, NY, IL]
-└── industry/
+└── industry/                       # Industry benchmarking data
     ├── average_pricing_iii.raw.json
     ├── average_pricing_bankrate.raw.json
     └── discount_benchmarks.raw.json
@@ -178,10 +201,14 @@ knowledge_pack/raw/
 #### 2.5 Implementation Details
 
 **Key Implementation Concepts:**
-- **Page Storage**: All scraped HTML/PDF stored with `page_{cuid2}.{ext}` format for audit trail
-- **Search Tracker**: Single JSON file (`search-tracker.json`) tracks all 200+ searches with status, metadata, and coordination
-- **Agent Workflow**: One search per cycle with memory refresh after every git push
-- **Git Automation**: Two-commit pattern (claim + complete) for progress visibility and crash recovery
+- **Brave API Client**: Rate-limited (1.1s delay) with dual token management (FREE → PAID fallback)
+- **Search Tracker**: `search-tracker.json` tracks 476 searches with status, lastrunAt, and metadata
+- **URL Tracker**: `url-tracker.json` tracks 2,950 unique URLs with enrichment from Brave API (title, description, etc.)
+- **Page Tracker**: `page-tracker.json` tracks fetched pages (HTML + markdown) with size metadata
+- **Websearch Entity**: Separate from search entity - tracks individual Brave API execution instances
+- **URL Deduplication**: SHA256 hash (urlHash) prevents duplicate fetches across multi-search discovery
+- **Multi-Search Provenance**: URLs track both search_ids (originating queries) and websearch_ids (API executions)
+- **Audit Trail**: Complete Brave API request/response saved to `websearches/` for compliance verification
 - **Markdown Conversion**: Post-Phase 2 bulk conversion of HTML/PDF to markdown for easier review
 - **Quality Signals**: Capture specificity, freshness, geographic scope, qualifiers for later conflict resolution
 

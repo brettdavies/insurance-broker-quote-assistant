@@ -1,0 +1,803 @@
+{
+  "websearch_id": "websearch_scblj10jmvm0srf2dnr44hai",
+  "search_id": "search_j1eq83wl0qi6aq7nkxmxxnid",
+  "timestamp": "2025-11-07T12:34:54.306413",
+  "startedAt": "2025-11-07T12:34:54.306413",
+  "completedAt": "2025-11-07T12:34:56.320665",
+  "durationSeconds": 2.01,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:investopedia.com homeowners insurance guide",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:investopedia.com homeowners insurance guide",
+      "show_strict_warning": false,
+      "cleaned": "homeowners insurance guide",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "homeowners insurance guide",
+        "sites": [
+          "investopedia.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Homeowners Insurance Explained: Coverage, Costs, and Benefits",
+          "url": "https://www.investopedia.com/terms/h/homeowners-insurance.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Learn about homeowners insurance coverage, costs, and exclusions\u2014essential info for homeowners seeking protection against damage and liability.",
+          "page_age": "2025-08-02T21:20:35",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/h/homeowners-insurance.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a h  \u203a homeowners-insurance.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/pA2jQM6HDJ24GK_dVQo1T6C4lbX1CwsTeTcouHN0nsk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/andwbGF5ZXIuY29t/L3YyL21lZGlhL0NY/bXZhNno5L3Bvc3Rl/ci5qcGc_d2lkdGg9/NzIw",
+            "original": "https://cdn.jwplayer.com/v2/media/CXmva6z9/poster.jpg?width=720",
+            "logo": false
+          },
+          "age": "August 2, 2025"
+        },
+        {
+          "title": "How Much Homeowners Insurance Do I Need?",
+          "url": "https://www.investopedia.com/how-much-homeowners-insurance-do-i-need-4783621",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "But exactly how much insurance is enough? This article explains how to figure that out. Homeowners insurance can protect you from financial losses if your home or possessions are seriously damaged or destroyed.",
+          "page_age": "2025-04-17T19:20:51",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/how-much-homeowners-insurance-do-i-need-4783621",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a how-much-homeowners-insurance-do-i-need-4783621"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/x2-VG8gwojun0zItEdVqw1lzhTDnrxN8JLPM2m--1Qg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL1hm/YkM3clBsVFlzdF94/R3JrUVpuV1BUakNT/dz0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0dldHR5SW1hZ2Vz/LTkxMjQzNzk5Mi1j/MjU3OTY0NWEzZDQ0/M2UwODFlZWIzNzc3/OWNhODA0Mi5qcGc",
+            "original": "https://www.investopedia.com/thmb/XfbC7rPlTYst_xGrkQZnWPTjCSw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-912437992-c2579645a3d443e081eeb37779ca8042.jpg",
+            "logo": false
+          },
+          "age": "April 17, 2025"
+        },
+        {
+          "title": "Property Insurance: Definition and How Coverage Works",
+          "url": "https://www.investopedia.com/terms/p/property-insurance.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Extended replacement costs will pay more than the coverage limit if the costs for construction have gone up; however, this usually won&#x27;t exceed 25% of the limit. When you buy this insurance, the limit is the maximum amount of benefit the insurance company will pay for a given situation or occurrence. Homeowners and tenant insurance policies typically include some basic levels of coverage.",
+          "page_age": "2025-08-19T18:19:13",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/p/property-insurance.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a p  \u203a property-insurance.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/vmyGfWcvmm3fkXdxIgA3zniFVzCdQKdmdr4s-vEI09Q/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iLzBn/dFVKdlpHckpmTDJf/bzI3R2ZOUFNqWnRi/TT0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L1Byb3BlcnR5SW5z/dXJhbmNlLWZpbmFs/LTczNjhhYjhmOWY3/MDRiNWE5MmUxMzFk/ZGYyZTUzMzdhLnBu/Zw",
+            "original": "https://www.investopedia.com/thmb/0gtUJvZGrJfL2_o27GfNPSjZtbM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/PropertyInsurance-final-7368ab8f9f704b5a92e131ddf2e5337a.png",
+            "logo": false
+          },
+          "age": "August 19, 2025"
+        },
+        {
+          "title": "The Cost Of Homeowners Insurance Is Skyrocketing. What You Can Do To Lower Your Premium Premium",
+          "url": "https://www.investopedia.com/homeowners-insurance-costs-jump-how-to-save-11811024",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Insurers are increasing premium prices as climate change and tariffs increase the number and costs of home repairs. Homeowners can shop around to ensure they get the best deal, check for discounts from their insurer, or raise their deductible for a lower premium.",
+          "page_age": "2025-09-19T21:22:46",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/homeowners-insurance-costs-jump-how-to-save-11811024",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a homeowners-insurance-costs-jump-how-to-save-11811024"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/aCIN0BPljwx9lyuDI82h4SY18uOTHEdrEhgoFpWg8YE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL0FH/aUJDOVZ3ZXVFdV9s/OVUzckhZVUZjbUZm/WT0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0dldHR5SW1hZ2Vz/LTIyMDU0MjkzNDMt/YzdkMmNjZTMxM2Yy/NGRkYmFkZTQzY2Yz/NDBmOTllOGYuanBn",
+            "original": "https://www.investopedia.com/thmb/AGiBC9VweuEu_l9U3rHYUFcmFfY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-2205429343-c7d2cce313f24ddbade43cf340f99e8f.jpg",
+            "logo": false
+          },
+          "age": "September 19, 2025"
+        },
+        {
+          "title": "This One Trick Can Save You Hundreds of Dollars on Home Insurance",
+          "url": "https://www.investopedia.com/this-one-trick-can-save-you-hundreds-of-dollars-on-home-insurance-11734801",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Home insurance is a critical tool for homeowners because it provides a form of financial protection against risk and loss. If you already have homeowners insurance, it still pays to shop around periodically. Comparison shopping lets you make sure you&#x27;re getting the best price and coverage, ...",
+          "page_age": "2025-05-30T15:56:02",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/this-one-trick-can-save-you-hundreds-of-dollars-on-home-insurance-11734801",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a this-one-trick-can-save-you-hundreds-of-dollars-on-home-insurance-11734801"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/8HcDHfqWgSY9WNHwNNqMbZIJQYpV5tTN7wUrsAM7Nrg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL3FU/bGtBVUdsZUgzdUJV/aEZVZmNaMGl0TE5f/QT0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0dldHR5SW1hZ2Vz/LTE0NDA0MTAwODkt/MjAwOGVhMTI4YjVm/NDlmNWI3ZmY5NjRi/N2MwNzNiODQuanBn",
+            "original": "https://www.investopedia.com/thmb/qTlkAUGleH3uBUhFUfcZ0itLN_A=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1440410089-2008ea128b5f49f5b7ff964b7c073b84.jpg",
+            "logo": false
+          },
+          "age": "May 30, 2025"
+        },
+        {
+          "title": "A Quick Guide to Landlord Insurance",
+          "url": "https://www.investopedia.com/articles/personal-finance/061515/quick-guide-landlord-insurance.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Landlord insurance is a specific type of property insurance that protects the owner&#x27;s financial interests when they rent out their property. It often covers the rental&#x27;s structure and provides liability coverage for injuries or damages that may occur on the premises. Homeowners insurance won&#x27;t cover a dwelling that&#x27;s not owner-occupied, which is why you need landlord insurance.",
+          "page_age": "2025-04-20T12:33:16",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/articles/personal-finance/061515/quick-guide-landlord-insurance.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a articles  \u203a personal-finance  \u203a 061515  \u203a quick-guide-landlord-insurance.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ck3S-GdHBETDBkBRxF07iZvlmTD7V8Ize-5Bv1GEFQc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL25T/M2F3X2hHWWVxaW5q/SXkxV3hOdDRkZ2VH/QT0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0dldHR5SW1hZ2Vz/LTE0OTg0MzczNzct/ZDcxYWM5N2FlOGMx/NDQyMDg1YjhiNTVi/ZjIwNDJmNjYuanBn",
+            "original": "https://www.investopedia.com/thmb/nS3aw_hGYeqinjIy1WxNt4dgeGA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1498437377-d71ac97ae8c1442085b8b55bf2042f66.jpg",
+            "logo": false
+          },
+          "age": "April 20, 2025"
+        },
+        {
+          "title": "The Hidden Cost of Skipping Home Insurance: \u2018You Could Lose Your Home\u2019",
+          "url": "https://www.investopedia.com/the-hidden-cost-of-skipping-home-insurance-you-could-lose-your-home-11761590",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If you can\u2019t find home insurance, consider comparison shopping, risk mitigation measures, and state-sponsored plans. The cost of homeowners insurance has gone up dramatically in recent years. Annual premiums for a typical U.S.",
+          "page_age": "2025-06-27T10:46:00",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/the-hidden-cost-of-skipping-home-insurance-you-could-lose-your-home-11761590",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a the-hidden-cost-of-skipping-home-insurance-you-could-lose-your-home-11761590"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GM2INc-aASaoBYNR4E53LllYT9Q_E-tU1nTePc-Sfro/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iLy04/aUZsajhldzhGekEz/Rmw5NUcta0xoQUd1/Yz0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0dldHR5SW1hZ2Vz/LTIxODQ5MTI5NTUt/YTZmNmFiYmVjYzkw/NGFjODlmMzA0ZmQ3/ZTk4ZjgxODMuanBn",
+            "original": "https://www.investopedia.com/thmb/-8iFlj8ew8FzA3Fl95G-kLhAGuc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-2184912955-a6f6abbecc904ac89f304fd7e98f8183.jpg",
+            "logo": false
+          },
+          "age": "June 27, 2025"
+        },
+        {
+          "title": "What Is Hazard Insurance for Homeowners? How Coverage Works",
+          "url": "https://www.investopedia.com/terms/h/hazardinsurance.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Hazard insurance protects a property owner against damage caused by fires, severe storms, earthquakes, or other natural events.",
+          "page_age": "2025-04-30T12:30:14",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/h/hazardinsurance.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a h  \u203a hazardinsurance.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/2tO3gpSD7OZiEwHH4ZSN_RRRNIKKB62kXelcnlfooMg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL2pl/TEdDLWs5dElsTmZx/VngtVUVaTzJnSXBI/TT0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0dldHR5SW1hZ2Vz/LTE3MjY1NTg0Ni1h/MjQ4MDY0ZDFiMjk0/NTU3YmY2YTk2MmRm/MTllYjU5Mi5qcGc",
+            "original": "https://www.investopedia.com/thmb/jeLGC-k9tIlNfqVx-UEZO2gIpHM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-172655846-a248064d1b294557bf6a962df19eb592.jpg",
+            "logo": false
+          },
+          "age": "April 30, 2025"
+        },
+        {
+          "title": "How To Insure Fine Wine",
+          "url": "https://www.investopedia.com/how-to-insure-fine-wine-11796198",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Some collectors may spend thousands on climate control systems and security for their wine, but fail to realize their standard homeowners insurance only covers the equivalent of a few bottles in their collection.",
+          "page_age": "2025-09-15T19:08:40",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/how-to-insure-fine-wine-11796198",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a how-to-insure-fine-wine-11796198"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/TRdiQ5ilBwt2j8PwwgKiqPVr5Ob1dPy_wZMjb0kRULI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL0pK/MHNOVDNmazRVcXlU/V0F2QldjYUg2WHY5/dz0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0dldHR5SW1hZ2Vz/LTE4MTY1MDQ2MTgt/MDUzZjkwNWNhZTBk/NGU2OWE0ZDQzNTM4/MzRjMzk5NTkuanBn",
+            "original": "https://www.investopedia.com/thmb/JJ0sNT3fk4UqyTWAvBWcaH6Xv9w=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1816504618-053f905cae0d4e69a4d4353834c39959.jpg",
+            "logo": false
+          },
+          "age": "September 15, 2025"
+        },
+        {
+          "title": "Vacant Home Insurance: Do You Need It? What Does It Cover?",
+          "url": "https://www.investopedia.com/vacant-home-insurance-do-you-need-it-what-does-it-cover-5074120",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Vacant home insurance covers homes that aren\u2019t being lived in full-time and have no belongings inside. You should consider this insurance if you own an empty house. It\u2019s different from a standard homeowners insurance policy, which covers a home you or a tenant lives in.",
+          "page_age": "2025-04-16T20:03:03",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/vacant-home-insurance-do-you-need-it-what-does-it-cover-5074120",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a vacant-home-insurance-do-you-need-it-what-does-it-cover-5074120"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/5diJRnMC3NPUz3d5lghnu2hzINy_G_EuQHSgW-lvkks/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL2Nf/YnlTbENiSDc4SHE3/Z0hjd3hFRF9tWmdS/Yz0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0dldHR5SW1hZ2Vz/LTE1NzE5NjA5Mi0z/NTYxNGJiYjBmMDY0/NmMzOTI0ZDMyZDQy/MjU0NGM3Zi5qcGc",
+            "original": "https://www.investopedia.com/thmb/c_bySlCbH78Hq7gHcwxED_mZgRc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-157196092-35614bbb0f0646c3924d32d422544c7f.jpg",
+            "logo": false
+          },
+          "age": "April 16, 2025"
+        },
+        {
+          "title": "Homeowners Insurance Denied or Canceled? You Aren't Alone. Here's What to Do Next",
+          "url": "https://www.investopedia.com/homeowners-insurance-denied-canceled-what-to-do-next-8775659",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "New York State Department of Financial Services. &quot;Help for Homeowners: Cancellations and Non-Renewals.&quot; United Policyholders. &quot;Conditional Renewal Notification Requirements by State.&quot; Consumer Financial Protection Bureau. &quot;Consumer Advisory: Take Action When Home Insurance Is Cancelled or Costs Surge.&quot;",
+          "page_age": "2025-01-16T16:54:58",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/homeowners-insurance-denied-canceled-what-to-do-next-8775659",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a homeowners-insurance-denied-canceled-what-to-do-next-8775659"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/KXb3UaGkzL3t7GBeUYZxNXQJOkn2OznhVR1c8-jbbwc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL1Q3/bFRtLW1aTzJGNlJN/YURyYWR4RUJQaHVa/dz0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/LzEtMTYtZGVuaWVk/aG9tZWluc3VyYW5j/ZS0wMzIxNmRhMGU0/NWY0MThiODYzYWEz/MzA1YjdkZWVkNS5q/cGc",
+            "original": "https://www.investopedia.com/thmb/T7lTm-mZO2F6RMaDradxEBPhuZw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/1-16-deniedhomeinsurance-03216da0e45f418b863aa3305b7deed5.jpg",
+            "logo": false
+          },
+          "age": "January 16, 2025"
+        },
+        {
+          "title": "The Mortgage Threat No One Talks About: When Your Homeowners Insurance Is Canceled",
+          "url": "https://www.investopedia.com/the-mortgage-threat-no-one-talks-about-when-your-homeowners-insurance-is-canceled-11812668",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "There are several reasons that your homeowners insurance company might choose to cancel your policy or not renew it. In many cases, you may be able to resolve the issue relatively easily and get your coverage reinstated. Otherwise you will need to find a new insurance company.",
+          "page_age": "2025-09-19T10:15:00",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/the-mortgage-threat-no-one-talks-about-when-your-homeowners-insurance-is-canceled-11812668",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a the-mortgage-threat-no-one-talks-about-when-your-homeowners-insurance-is-canceled-11812668"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/MUkwqCQZ4ZU9XNBEoKiyLhCQpb6_gPtM_bGhvOaSlSI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iLzZo/ZjEtcDZ1LWJtQjAy/b09TYW5KYXRaNjg1/MD0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L2hvbWVpbnN1cmFu/Y2VjYW5jZWxsZWQt/N2JmNzRlYWZhZjgy/NDA1Yzk2MWIyMzdj/MDdmNWIyOWIuanBn",
+            "original": "https://www.investopedia.com/thmb/6hf1-p6u-bmB02oOSanJatZ6850=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/homeinsurancecancelled-7bf74eafaf82405c961b237c07f5b29b.jpg",
+            "logo": false
+          },
+          "age": "September 19, 2025"
+        },
+        {
+          "title": "Winter Storms and Home Insurance: What Every Homeowner Needs to Know",
+          "url": "https://www.investopedia.com/winter-storms-and-home-insurance-what-every-homeowner-needs-to-know-8779358",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Discover how homeowners insurance protects against winter storm damage. Learn what&#x27;s covered, from wind and snow to frozen pipes, and understand key exclusions to safeguard your home.",
+          "page_age": "2025-01-23T20:12:20",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/winter-storms-and-home-insurance-what-every-homeowner-needs-to-know-8779358",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a winter-storms-and-home-insurance-what-every-homeowner-needs-to-know-8779358"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/MAQlJ7eVvolPfzIsPNtMC5anMDdU_A0dEoRHE6sax4Y/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL1My/dWNLUDVScXNGNDFu/NTZ2TFRDSjRxNnBC/QT0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L2hvbWUtaW5zdXJh/bmNlLXdpbnRlci02/NWU3MTU3ODFlZGY0/N2E1YTQyMWEzNjlj/ZDM4ZmNlOC5qcGc",
+            "original": "https://www.investopedia.com/thmb/S2ucKP5RqsF41n56vLTCJ4q6pBA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/home-insurance-winter-65e715781edf47a5a421a369cd38fce8.jpg",
+            "logo": false
+          },
+          "age": "January 23, 2025"
+        },
+        {
+          "title": "Coinsurance Formula for Home Insurance: Definition, Examples",
+          "url": "https://www.investopedia.com/terms/c/coinsurance-formula.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The coinsurance formula determines the reimbursement amount that a homeowner or property owner will receive from a claim. The coinsurance formula is applied when a property owner fails to maintain coverage of at least 80% of the home&#x27;s replacement value...",
+          "page_age": "2025-05-04T07:50:14",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/c/coinsurance-formula.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a c  \u203a coinsurance-formula.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/hPCOD4PLuR-8kpdS_2ZHEcX-TpL1o_L9JLliqMHWMJs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL2pl/azg0aGpiTzEya1lS/eVYyM3NVVmNORFVf/RT0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0dldHR5SW1hZ2Vz/LTEzNTA3OTE3MzIt/ODg1MjFiNWViZmM5/NGVkMzk0MDQwNzEw/ODk1ODI0NjIuanBn",
+            "original": "https://www.investopedia.com/thmb/jek84hjbO12kYRyV23sUVcNDU_E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1350791732-88521b5ebfc94ed39404071089582462.jpg",
+            "logo": false
+          },
+          "age": "May 4, 2025"
+        },
+        {
+          "title": "Personal Property for Insurance: Definition, Examples, and Coverage",
+          "url": "https://www.investopedia.com/terms/p/personalproperty.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Learn about personal property, including definitions, examples, and insurance roles. Understand how homeowner policies can protect your movable assets today.",
+          "page_age": "2025-09-07T17:06:01",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/p/personalproperty.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a p  \u203a personalproperty.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ly7L2BLe-hkWe7glbVp5aCu9EuCbXArJ6-LB7XBFpsQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL3lY/bUxwaGlNNDdDT3pM/STZiRGlZRnFOYlVt/MD0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L2Nhci13aXRoLWth/eWFrcy1kcml2aW5n/LXdpbmR5LXJvYWQt/aW4tbW91bnRhaW5z/LTY2MTg2MDY1My0w/OTI3NzQ5N2ZmMWI0/OWM3YTM2NmNiMTE4/ZDVkMDRmYS5qcGc",
+            "original": "https://www.investopedia.com/thmb/yXmLphiM47COzLI6bDiYFqNbUm0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/car-with-kayaks-driving-windy-road-in-mountains-661860653-09277497ff1b49c7a366cb118d5d04fa.jpg",
+            "logo": false
+          },
+          "age": "September 7, 2025"
+        },
+        {
+          "title": "Fire Insurance Basics: Coverage, Benefits, and How It Works",
+          "url": "https://www.investopedia.com/terms/f/fire-insurance.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Discover how fire insurance offers protection for fire-related damages and losses, supplements homeowners insurance, and operates to cover repair or replacement costs.",
+          "page_age": "2025-08-30T13:48:30",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/f/fire-insurance.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a f  \u203a fire-insurance.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/dQKvw1tRjZIH29V362stK7FAzEOb5VTTn4MTlSsd87g/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL3dN/cmNlOW9IeWxqSXRB/VEZidGpaTV9sMjlR/ND0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L2ZpcmUtaW5zdXJh/bmNlLmFzcC1maW5h/bC02YjdmYTMyZThi/Y2Q0Mjg1Yjk0NmU5/YzBhMjcyMWI2Ny5w/bmc",
+            "original": "https://www.investopedia.com/thmb/wMrce9oHyljItATFbtjZM_l29Q4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/fire-insurance.asp-final-6b7fa32e8bcd4285b946e9c0a2721b67.png",
+            "logo": false
+          },
+          "age": "August 30, 2025"
+        },
+        {
+          "title": "Self-Insurance Explained: Benefits, Risks, and Real-Life Examples",
+          "url": "https://www.investopedia.com/terms/s/selfinsurance.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Discover the pros and cons of self-insurance, how it works, and examples of managing risks by setting aside funds instead of relying on traditional insurance.",
+          "page_age": "2025-09-02T16:44:15",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/s/selfinsurance.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a s  \u203a selfinsurance.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/M8ps6doj_mKeDva6XUFVuQt9EzyMzTATifIYoTlNuN0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iLzdW/RGxiVVJiMi1qbXN0/ejNnLV85S01RY1Uw/UT0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L3NodXR0ZXJzdG9j/a18xMTI1MjIzOTEt/NWJmYzJiOTg0NmUw/ZmIwMDUxYmRlMmQz/LmpwZw",
+            "original": "https://www.investopedia.com/thmb/7VDlbURb2-jmstz3g-_9KMQcU0Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/shutterstock_112522391-5bfc2b9846e0fb0051bde2d3.jpg",
+            "logo": false
+          },
+          "age": "September 2, 2025"
+        },
+        {
+          "title": "Does Your Homeowners Insurance Cover Airbnb?",
+          "url": "https://www.investopedia.com/articles/insurance/120816/does-your-homeowners-insurance-cover-airbnb.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Some insurers offer short-term rental coverage endorsements for an additional fee\u2014ensuring that you\u2019re protected in case of tenant-caused property damage, theft, or accidents. Others may require a separate, standalone policy depending on your property\u2019s location and overall risk. Standard homeowners insurance generally offers limited business property coverage and no business liability coverage for Airbnb or other short-term rentals.",
+          "page_age": "2025-04-29T14:02:26",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/articles/insurance/120816/does-your-homeowners-insurance-cover-airbnb.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a articles  \u203a insurance  \u203a 120816  \u203a does-your-homeowners-insurance-cover-airbnb.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/99Mjl5AWtjtUVvbFNR6ntRtSD0obg-LFpA8g6PnJRS4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL0tN/cm5adGhEdGxtYnJY/ekpsNzEtN081OXUx/ND0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0dldHR5SW1hZ2Vz/LTExOTUzOTcwNzYt/OGU5ZGY2ZWIxMTMw/NDUxYTgxNTgzNzhj/MGRhMjdmNTguanBn",
+            "original": "https://www.investopedia.com/thmb/KMrnZthDtlmbrXzJl71-7O59u14=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1195397076-8e9df6eb1130451a8158378c0da27f58.jpg",
+            "logo": false
+          },
+          "age": "April 29, 2025"
+        },
+        {
+          "title": "Insurance Coverage Types Explained: Auto, Life, and Homeowner\u2019s",
+          "url": "https://www.investopedia.com/terms/i/insurance-coverage.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Auto insurance often includes options ... permanent. Homeowner&#x27;s insurance covers property damage from events like fire and theft but typically requires separate policies for floods and earthquakes....",
+          "page_age": "2025-08-21T20:34:11",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/i/insurance-coverage.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a i  \u203a insurance-coverage.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/3wwBqXuW4yaE6ieNADwMntu6EMS-6_q3ujUu7_pmD-U/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iLzZE/enlfNzZ3cGdDbUxJ/SmNiYTdkM1dENUxD/Zz0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0luc3VyYW5jZUNv/dmVyYWdlTWFqb3JU/eXBlc2FuZEhvd1Ro/ZXlXb3JrLTlhZTIx/MTY1YjIwYTRmYTA5/M2I1ZGNlOGZkNjA2/MTMxLmpwZw",
+            "original": "https://www.investopedia.com/thmb/6Dzy_76wpgCmLIJcba7d3WD5LCg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/InsuranceCoverageMajorTypesandHowTheyWork-9ae21165b20a4fa093b5dce8fd606131.jpg",
+            "logo": false
+          },
+          "age": "August 21, 2025"
+        },
+        {
+          "title": "Mortgage Insurance Premium (MIP): Definition, Costs, Canceling",
+          "url": "https://www.investopedia.com/mortgage/insurance/qualified-insurance-premium/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Each month, the loan&#x27;s payment amount reflects the annual premium divided by 12 months along with the principal payment. Other charges usually added to the monthly fee include escrow amounts for property taxes and homeowner&#x27;s insurance coverage.",
+          "page_age": "2025-01-12T20:34:37",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/mortgage/insurance/qualified-insurance-premium/",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a mortgage  \u203a insurance  \u203a qualified-insurance-premium"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/5vNPDbqVAeB_UQsEOc5VIrhzRE559JAdEwcT0JR-fDw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL1JR/b1I1YWl6MkNfQ0Q1/ekpfd2NJSUtjWkhL/az0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L21vcnRnYWdlcHJl/bWl1bWluc3VyYW5j/ZS1lNGQwNDhjY2Fj/YWY0NDc5OTk3ZDVh/YjdmN2E4ODE5Yi5q/cGc",
+            "original": "https://www.investopedia.com/thmb/RQoR5aiz2C_CD5zJ_wcIIKcZHKk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/mortgagepremiuminsurance-e4d048ccacaf4479997d5ab7f7a8819b.jpg",
+            "logo": false
+          },
+          "age": "January 12, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}
