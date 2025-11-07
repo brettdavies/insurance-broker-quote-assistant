@@ -1,0 +1,11 @@
+[project]
+name = "knowledge-pack-scraper"
+version = "0.1.0"
+description = "Phase 2 insurance data scraping toolkit with autonomous agents"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "crawl4ai>=0.7.6",
+    "cuid2>=2.0.1",
+    "gitpython>=3.1.45",
+]

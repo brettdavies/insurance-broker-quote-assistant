@@ -1,660 +1,282 @@
-# Knowledge Pack Phase 2: Subagent Instructions
+# Knowledge Pack Phase 2: Agent Instructions
 
-**Version**: 2.3
-**Date**: 2025-11-06
-**Project**: Insurance Broker Quote Assistant (IQuote Pro)
-**Purpose**: Subagent workflow for executing ONE complete Phase 2 search
+**Version**: 3.0  
+**Date**: 2025-11-06  
+**Purpose**: Autonomous agent workflow for Phase 2 data gathering
 
 ---
 
-## ⚠️ CRITICAL: Execution Instructions
+## Overview
 
-You will execute Steps 1-8 for **ONE search only**, then ⚠️ STOP IMMEDIATELY.
+Phase 2 uses **autonomous Python scripts** that output JSON with `next_steps` instructions. Agents simply:
+1. Run `select-work.py` (auto-chains to next script)
+2. Follow `next_steps` from JSON output
+3. Repeat until no work available
 
-**Your task:**
-- Execute ONE complete search workflow (Steps 1-8)
-- Generate your own unique `agent_id` in Step 2
-- Claim a search, fetch data, extract, save, commit, push
-- **STOP immediately** after Step 8 (git push)
+**Workflow**: 3-step parallel queue (search → url → page)
 
-**DO NOT:**
-- ❌ Execute multiple searches
-- ❌ Continue after Step 8 git push
-- ❌ Re-read this document after completing
-
-**DO:**
-- ✅ Execute Steps 1-8 exactly once
-- ✅ Generate your own agent_id at Step 2
-- ✅ STOP immediately after Step 8 push
+**Key Features**:
+- Scripts handle git operations automatically
+- Race condition detection built-in
+- Random work selection reduces collisions
+- JSON output with explicit next steps
 
 ---
 
 ## Prerequisites
 
-Before starting Phase 2, verify:
-
-- ✅ Git is configured and authenticated (`git config user.name`, `git config user.email`)
-- ✅ Bun is installed (`bun --version`)
-- ✅ ID generation setup complete - see [sot-id-conventions.md](sot-id-conventions.md) for installation
-- ✅ Helper scripts exist:
-  - `scripts/select-random-search.ts` (selects random pending search)
-  - `scripts/generate-ids.ts` (generates cuid2 IDs)
-  - `scripts/update-tracker.ts` (updates tracker status)
-- ✅ WebSearch and WebFetch tools are accessible
-- ✅ Write access to `knowledge_pack/` directory exists
-- ✅ `knowledge_pack/search-tracker.json` exists and is populated (run `bun run scripts/populate-tracker.ts` if needed)
+Before starting Phase 2:
+- ✅ `uv` installed and working
+- ✅ Git configured (user.name, user.email)
+- ✅ Trackers populated: `search-tracker.json`, `url-tracker.json`, `page-tracker.json`
+- ✅ WebSearch tool available (for claim-search.py)
+- ✅ Working directory: `knowledge-pack-scraper/`
 
 ---
 
-## Single Search Workflow
-
-This is the core loop. Execute these steps **exactly** for every search.
-
-### Step 1: Read Tracker and Select Random Pending Search
+## Core Workflow
 
 ```bash
-# Select a random pending search and set environment variables
-eval "$(bun run scripts/select-random-search.ts)"
+cd knowledge-pack-scraper
 
-# Verify variables are set
-echo "Selected search: $SEARCH_ID"
-echo "Query: $SEARCH_QUERY"
+# Run select-work.py - it automatically chains to the next script
+uv run scripts/select-work.py
+
+# Script outputs JSON with next_steps - follow the instructions
+# Examples:
+# - "Perform WebSearch with query: ..." → Use WebSearch tool
+# - "Extract data from content..." → Use LLM to extract
+# - "Continue with next work item" → Run select-work.py again
+
+# Repeat until output shows:
+# "No work available - Phase 2 complete!"
 ```
 
-**What this does:**
-- Collects ALL pending searches from all categories
-- If none found: **Phase 2 is complete** → ⚠️ STOP IMMEDIATELY
-- Selects ONE at random (reduces race conditions)
-- Sets `$SEARCH_ID` and `$SEARCH_QUERY` environment variables for subsequent steps
+**That's it.** The scripts handle everything else automatically.
 
-**Output example:**
-```
-✓ Selected: search_ghaxk1v0xqangv8kfakrazv2
-✓ Query: "Progressive" state availability
-✓ Category: carrier-states
-✓ Carrier: Progressive
-✓ Priority: high
-Selected search: search_ghaxk1v0xqangv8kfakrazv2
-Query: "Progressive" state availability
-```
+---
 
-**Why random selection?**
-- Multiple subagents run concurrently
-- Random selection distributes work evenly across all 14 categories
-- Reduces chance of multiple agents claiming the same search simultaneously
+## Script Responsibilities
 
-### Step 2: Claim Search
+### select-work.py
+**What it does**: Finds next work item (waterfall priority: search → url → page), auto-chains to appropriate script
 
-Generate your unique agent ID and claim the search selected in Step 1:
+**Agent action**: Run this to start workflow
 
-```bash
-# Generate YOUR agent ID (unique for this subagent)
-AGENT_ID=$(bun run scripts/generate-ids.ts 1 "agnt_")
+---
 
-# Claim the search (use $SEARCH_ID from Step 1)
-bun run scripts/update-tracker.ts claim $SEARCH_ID $AGENT_ID
-```
+### claim-search.py
+**What it does**: Claims search, commits claim to git
 
-**What this does automatically:**
-- Sets `status` → `"in_progress"`
-- Sets `assignedTo` → your generated agent ID
-- Sets `startedAt` → current ISO timestamp
-- Decrements `statusCounts.pending`
-- Increments `statusCounts.in_progress`
-- Updates `meta.lastUpdated`
+**Output**: Search query to execute
 
-**Example output:**
-```bash
-# Agent ID: agnt_abc123xyz
-# Search ID: search_u7gauzcnv1bdza75kmux57hi
-# Query: "GEICO" "available in" states
-```
+**Agent action required**:
+1. Use WebSearch tool with provided query
+2. Collect 4-6 URLs from results (prefer authoritative sources - see [sot-source-hierarchy.md](sot-source-hierarchy.md))
+3. Run `save-urls.py` with discovered URLs
 
-### Step 3: Commit Claim
+**Race condition**: If claim fails (another agent claimed it), script tells you to run select-work.py again
 
-```bash
-git add knowledge_pack/search-tracker.json
-git commit -m "chore(kb): claim $SEARCH_ID - ${SEARCH_QUERY:0:50}"
-git push || (git pull --rebase && git push)
-```
+---
 
-**Commit message format:**
-```
-chore(kb): claim {search-id} - {first-50-chars-of-query}
-```
+### save-urls.py
+**What it does**: Saves URLs to url-tracker, commits to git
 
-**Example:**
-```
-chore(kb): claim search_u7gauzcnv1bdza75kmux57hi - "GEICO" "available in" states
-```
+**Output**: Success confirmation
 
-**Push conflict handling:**
-- If another subagent pushed while you were claiming, the push will fail
-- The retry logic automatically rebases your commit on top of the remote changes
-- The tracker JSON merge will succeed (different searches being claimed)
-- If the second push also fails, ⚠️ STOP IMMEDIATELY (rare)
+**Agent action**: Run select-work.py to continue
 
-### Step 4: Execute Search
+---
 
-**4.1 Perform web search:**
+### fetch-url.py
+**What it does**: **Fully autonomous** - claims URL, fetches with crawl4ai, saves HTML + markdown, registers page-tracker entry, commits, pushes
 
-Use WebSearch with the **exact query string** from Step 1 (`$SEARCH_QUERY` variable):
+**Output**: Success confirmation
 
-```bash
-# Use the query from Step 1
-echo "Executing search: $SEARCH_QUERY"
-# Use WebSearch tool with this exact query
-```
+**Agent action**: Run select-work.py to continue
 
-**4.2 Identify relevant URLs:**
+---
 
-From search results, select **4-6 URLs** to attempt (expect 2-3 to succeed), following this strict authority ranking ([see sot-source-hierarchy.md](sot-source-hierarchy.md)):
+### claim-page.py
+**What it does**: Claims page, loads HTML/markdown content, commits claim to git
 
-- First, prefer state regulatory sites and official government pages (.gov, eg: insurance.ca.gov) — **Level 5: Authoritative**
-- Then, official carrier sites (e.g., geico.com, statefarm.com) — **Level 4: Primary**
-- Next, established industry organizations (e.g., iii.org, naic.org) — **Level 3: Reference**
-- Finally, reputable financial/comparison sites (e.g., nerdwallet.com, bankrate.com, valuepenguin.com) — **Level 2: Secondary**
+**Output**: File paths for page content
 
-**Tip:** Always document the authority level for each source you choose.
+**Agent action required**:
+1. Read page content from provided file paths (html_file, markdown_file)
+2. Use LLM to extract structured data following [Raw Data Schema](sot-schemas.md#raw-data-schema)
+3. Extract: discounts, eligibility rules, carrier info, state requirements
+4. Save extracted data: `echo '<json>' | uv run scripts/save-extraction.py --page-id {page_id}`
 
-**Expected outcomes:**
-- Attempt Fetching on all 4-6 URLs
-- 2-3 URLs will yield usable content
-- Some URLs may return incomplete content (CSS only, JavaScript-heavy pages, paywalls)
-- If all 4-6 of your original URLs fail to produce a successful fetch, ⚠️ STOP IMMEDIATELY
+**Note**: Use markdown file for extraction (cleaner than HTML). Generate unique `raw_*` IDs for each data point extracted. Raw data file is named by page_id.
 
-**4.3 Fetch page content:**
+---
 
-For each selected URL, generate a unique page ID and fetch content:
+### save-extraction.py
+**What it does**: Saves extracted data to raw JSON file, updates page status, commits to git
 
-```bash
-# Generate unique page ID
-PAGE_ID=$(bun run scripts/generate-ids.ts 1 "page_")
+**Output**: Success confirmation with data points saved
 
-# Use WebFetch tool to retrieve page content (returns AI-summarized markdown)
-# Save to knowledge_pack/raw/_pages/${PAGE_ID}.md (or .pdf if URL ends with .pdf)
-```
+**Agent action**: Run select-work.py to continue
 
-**Instructions:**
-- Use WebFetch tool with the URL
-- Save returned content to `knowledge_pack/raw/_pages/${PAGE_ID}.md`
-- If URL ends with `.pdf`, use `.pdf` extension instead of `.md`
+---
 
-**⚠️ Important: WebFetch Behavior**
-- WebFetch returns **AI-summarized content** in markdown format, not raw HTML
-- The returned content is a condensed version of the page optimized for data extraction
-- Page files will contain summaries, not source HTML - this is expected and acceptable
-- If WebFetch returns no usable content (e.g., "CSS only", "JavaScript framework"), try the next URL
-
-For complete ID generation specifications and installation instructions, see [sot-id-conventions.md](sot-id-conventions.md).
-
-**4.4 Save page files:**
-
-```
-knowledge_pack/raw/_pages/page_ckm9x7w8k0.md
-knowledge_pack/raw/_pages/page_ckm9x7wdx1.pdf
-knowledge_pack/raw/_pages/page_ckm9x7whp2.md
-```
-
-### Step 5: Extract Data Points
-
-**5.1 Parse page content:**
-
-- WebFetch provides AI-summarized content in markdown format
-- Identify data points from the summary (percentages, dollar amounts, eligibility criteria)
-- Look for data points relevant to the search query
-
-**5.2 For each data point found:**
-
-Generate a unique raw data ID and create entry:
-
-```bash
-# Generate unique raw data ID
-RAW_ID=$(bun run scripts/generate-ids.ts 1 "raw_")
-```
-
-Then create a raw data entry with structure shown in [sot-schemas.md#raw-data-schema](sot-schemas.md#raw-data-schema):
+## Raw Data Schema (Quick Reference)
 
 ```json
 {
-  "id": "raw_ckm9x7wkm3",
-  "dataPoint": "geico_multi_policy_discount_percentage",
-  "rawValue": "up to 15%",
-  // ... see sot-schemas.md for complete structure
+  "id": "raw_{cuid2}",
+  "dataPoint": "semantic_identifier",
+  "rawValue": "exact value as extracted",
+  "source": {
+    "pageId": "page_{cuid2}",
+    "uri": "https://...",
+    "accessedDate": "ISO 8601 timestamp",
+    "extractionMethod": "automated",
+    "confidence": "high|medium|low"
+  }
 }
 ```
 
-**Instructions:**
-- Generate a new RAW_ID for each data point found
-- Use the ID in the raw data entry's `id` field
-- Follow the complete schema structure from [sot-schemas.md](sot-schemas.md)
+**Full schema**: See [sot-schemas.md#raw-data-schema](sot-schemas.md#raw-data-schema)
 
-**Element Reference Guidelines:**
-
-Since WebFetch returns AI summaries (not raw HTML), use **section references** instead of CSS/XPath:
-- Reference the section or heading where data was found (e.g., `"Policy Discounts section - Multi-vehicle"`)
-- Include context about the data's location in the summary (e.g., `"Driver Education section - Good student discount"`)
-- Be descriptive enough to relocate the data if the page is re-fetched
-
-**Examples:**
-```json
-// ✅ Good section reference
-"elementRef": "Policy Discounts section - Multi-vehicle"
-
-// ✅ Good section reference with context
-"elementRef": "Affiliations section - Military/National Guard"
-
-// ❌ Not possible with WebFetch summaries
-"elementRef": "div.discount-card[data-discount='multi-policy'] > p.percentage"
-```
-
-**Confidence Levels:**
-- `"high"`: Official carrier site, clear statement, exact value
-- `"medium"`: Third-party site, range given, general statement
-- `"low"`: Unofficial source, outdated info, unclear context
-
-**If extracted data seems questionable:**
-- Set confidence to `"low"`
-- Add detailed notes explaining the concern (e.g., `"Value seems unusually high - needs manual verification"`)
-- Continue with the workflow
-
-### Step 6: Save Raw Data
-
-**6.1 Determine file path:**
-
-Use the search_id to ensure unique filenames (prevents conflicts when multiple searches target same category):
-
-```
-knowledge_pack/raw/{category}/{subcategory}_{search-id}.raw.json
-```
-
-**Examples:**
-- Carrier discounts: `knowledge_pack/raw/carriers/geico/discounts_auto_search_abc123.raw.json`
-- State minimums: `knowledge_pack/raw/states/CA_minimums_search_def456.raw.json`
-- Industry data: `knowledge_pack/raw/industry/average_pricing_search_ghi789.raw.json`
-
-**Format:**
-- `{category}` = Top-level category (carriers, states, industry)
-- `{subcategory}` = Descriptive name (geico/discounts_auto, CA_minimums, average_pricing)
-- `{search-id}` = The search ID from Step 1 (e.g., search_abc123)
-
-**6.2 File format:**
-
-```json
-[
-  {
-    "id": "raw_ckm9x7wkm3",
-    "dataPoint": "...",
-    "rawValue": "...",
-    // ... full entry as shown in Step 5
-  },
-  {
-    "id": "raw_ckm9x7wnp4",
-    // ... next entry
-  }
-]
-```
-
-**6.3 Append or create:**
-
-- If file exists: Read, append new entries, save
-- If file doesn't exist: Create with array containing new entries
-
-### Step 7: Update Tracker
-
-Update the tracker with completion data using the helper script:
-
-```bash
-# Use $SEARCH_ID from Step 1
-bun run scripts/update-tracker.ts complete $SEARCH_ID \
-  {raw-data-file-path} \
-  --pages {page-id-1} {page-id-2} {page-id-3} \
-  --notes "Found N data points from M sources"
-```
-
-**What this does automatically:**
-- Sets `status` → `"completed"`
-- Sets `completedAt` → current ISO timestamp
-- Calculates `durationSeconds` (completedAt - startedAt)
-- Sets `rawDataFiles` array
-- Sets `pageFiles` array
-- Decrements `statusCounts.in_progress`
-- Increments `statusCounts.completed`
-- Updates `meta.lastUpdated`
-
-**Example:**
-```bash
-# Using variables from previous steps
-# $SEARCH_ID = search_u7gauzcnv1bdza75kmux57hi
-# Raw data file: carriers/geico/states_search_u7gauzcnv1bdza75kmux57hi.raw.json
-# Page IDs: page_abc123 page_def456 page_ghi789
-
-bun run scripts/update-tracker.ts complete $SEARCH_ID \
-  carriers/geico/states_search_${SEARCH_ID}.raw.json \
-  --pages page_abc123 page_def456 page_ghi789 \
-  --notes "Found 50 states from geico.com"
-```
-
-### Step 8: Commit Completion and STOP
-
-Commit all changes and push to git:
-
-```bash
-git add knowledge_pack/
-git commit -m "feat(kb): complete $SEARCH_ID - found N data points from {domain}"
-git push || (git pull --rebase && git push)
-```
-
-**Commit message format:**
-```
-feat(kb): complete {search-id} - found N data points from {domain}
-```
-
-**Example:**
-```bash
-# Using $SEARCH_ID from Step 1
-git commit -m "feat(kb): complete $SEARCH_ID - found 50 states from geico.com"
-```
-
-**Push conflict handling:**
-- If another subagent pushed while you were working, the push will fail
-- The retry logic automatically rebases your commit on top of the remote changes
-- Git will merge non-conflicting changes automatically (different searches)
-- If the second push also fails, manual intervention is needed (rare)
-
----
-
-## ⚠️ AFTER GIT PUSH: STOP IMMEDIATELY
-
-**After `git push` succeeds:**
-
-1. ✅ **STOP processing** immediately
-2. ✅ **Do NOT** read the tracker again
-3. ✅ **Do NOT** execute another search
-4. ✅ **Do NOT** re-read this document
-
-**Your work is done. STOP.**
+**Important**:
+- Generate unique `raw_*` ID for each data point (use cuid2)
+- Reference pageId from claim-page.py output
+- Set confidence based on source authority ([sot-source-hierarchy.md](sot-source-hierarchy.md))
 
 ---
 
 ## Error Handling
 
-### Search Fails (No Results)
+### Race Condition (Lost Claim)
+**Output**: `"success": false, "message": "Lost race on ..."`
 
-If a search returns no useful results:
+**Action**: Script automatically tells you to run select-work.py for different work
 
-1. Update tracker:
-   ```json
-   {
-     "status": "failed",
-     "errorMessage": "No relevant results found after checking 10 URLs",
-     "retryCount": 0
-   }
-   ```
-2. Commit and push (proceed to Steps 7-8)
-3. ⚠️ STOP IMMEDIATELY
+### WebSearch Failed
+**Action**:
+1. Retry 3 times
+2. If still fails: Mark search as failed (scripts handle this), continue with select-work.py
 
-### Search Fails (Network Error)
+### Git Push Conflict
+**Handling**: Scripts automatically pull --rebase and retry push
 
-If WebSearch or WebFetch fails:
+**Auto-Resolution**: JSON array append conflicts (multiple agents appending to same tracker) are automatically resolved by merging both agents' additions and deduplicating by ID.
 
-1. Retry up to 3 times with 30-second delay
-2. If all retries fail:
-   ```json
-   {
-     "status": "failed",
-     "errorMessage": "WebFetch timeout after 3 retries for geico.com",
-     "retryCount": 3
-   }
-   ```
-3. Commit and push (proceed to Steps 7-8)
-4. ⚠️ STOP IMMEDIATELY
+**What gets auto-resolved**:
+- Concurrent URL registrations (save-urls.py)
+- Concurrent page registrations (fetch-url.py)
+- Concurrent extraction saves (save-extraction.py)
+- Any pure array append to tracker files
+
+**What requires manual intervention** (rare):
+- Non-array conflicts (e.g., two agents modify same item's fields)
+- Conflicts in non-tracker files
+- Auto-resolve failures will output error message with instructions
+
+### Script Error
+**Output**: `"success": false` with error message and next_steps
+
+**Action**: Follow next_steps instructions
 
 ---
 
-## File Format Specifications
+## File Naming Conventions
 
 ### Page Files
-
-**Location:** `knowledge_pack/raw/_pages/`
-
-**Filename format:** `page_{cuid2}.{ext}`
-
-**Examples:**
-```
-page_ckm9x7w8k0.md
-page_ckm9x7wdx1.pdf
-page_ckm9x7whp2.md
-```
-
-**Content:**
-- AI-summarized content from WebFetch in markdown format
-- Save the summary exactly as returned (no additional modifications)
-- For URLs ending in `.pdf`, extension will be `.pdf`; otherwise use `.md`
-- Content is pre-processed by WebFetch for data extraction (this is expected)
-
-**Metadata:** Stored in raw data entries, not separate files
+- **Location**: `knowledge_pack/raw/_pages/`
+- **Format**: `page_{cuid2}.{ext}` (e.g., `page_abc123xyz.html`, `page_def456.md`)
+- **Content**: Full HTML and markdown from crawl4ai
 
 ### Raw Data Files
+- **Location**: `knowledge_pack/raw/{category}/{subcategory}/`
+- **Format**: `data_search_{search_id}.raw.json`
+- **Content**: Array of raw data entries
 
-**Location:** `knowledge_pack/raw/{category}/`
-
-**Filename format:** `{subcategory}.raw.json`
-
-**Examples:**
+**Examples**:
 ```
-carriers/geico/discounts_auto.raw.json
-carriers/progressive/states_operating.raw.json
-states/CA_minimums.raw.json
-industry/average_pricing_iii.raw.json
-```
-
-**Content:**
-- JSON array of raw data entries
-- Each entry has unique `id` (raw_{cuid2})
-- Each entry references page via `pageId` and `pageFile`
-- Preserve all duplicates and conflicts
-
-**DO NOT:**
-- Deduplicate entries
-- Resolve conflicts
-- Merge similar values
-- Clean or normalize beyond basic parsing
-
----
-
-## Example Files
-
-### Example 1: Raw Data Entry
-
-```json
-{
-  "id": "raw_ckm9x7wdx1",
-  "dataPoint": "geico_multi_policy_discount_percentage",
-  "rawValue": "up to 15%",
-  "normalizedValue": 15,
-  "source": {
-    "uri": "https://www.geico.com/auto/discounts/",
-    "pageId": "page_ckm9x7w8k0",
-    "pageFile": "_pages/page_ckm9x7w8k0.md",
-    "elementRef": "Policy Discounts section - Multi-policy bundling",
-    "extractedValue": "up to 15%",
-    "accessedDate": "2025-11-05T14:35:00Z",
-    "confidence": "high"
-  },
-  "context": {
-    "surroundingText": "Save money when you bundle auto and home insurance and get up to 15% off your premium. Available in all 50 states for qualifying policyholders.",
-    "pageTitle": "GEICO Auto Insurance Discounts",
-    "qualifier": "up to"
-  }
-}
-```
-
-### Example 2: Search Tracker Entry
-
-```json
-{
-  "id": "search_ckm9x7wdx1",
-  "query": "\"GEICO\" \"available in\" states",
-  "category": "carrier-states",
-  "carrier": "GEICO",
-  "priority": "high",
-  "status": "completed",
-  "assignedTo": "agent_ckm9x7wkm3",
-  "startedAt": "2025-11-05T14:30:00Z",
-  "completedAt": "2025-11-05T14:42:00Z",
-  "durationSeconds": 720,
-  "rawDataFiles": [
-    "carriers/geico/states_operating_search_ckm9x7wdx1.raw.json"
-  ],
-  "pageFiles": [
-    "page_ckm9x7w8k0",
-    "page_ckm9x7wdx1"
-  ],
-  "commitHash": "a1b2c3d4e5f6",
-  "errorMessage": null,
-  "retryCount": 0,
-  "notes": "Found 50 state listings from official GEICO site and CA insurance dept"
-}
-```
-
-### Example 3: Raw Data File
-
-**File:** `knowledge_pack/raw/carriers/geico/discounts_auto_search_ckm9x7wdx1.raw.json`
-
-```json
-[
-  {
-    "id": "raw_ckm9x7wdx1",
-    "dataPoint": "geico_multi_policy_discount_percentage",
-    "rawValue": "up to 15%",
-    "normalizedValue": 15,
-    "source": {
-      "uri": "https://www.geico.com/auto/discounts/",
-      "pageId": "page_ckm9x7w8k0",
-      "pageFile": "_pages/page_ckm9x7w8k0.md",
-      "elementRef": "Policy Discounts section - Multi-policy bundling",
-      "extractedValue": "up to 15%",
-      "accessedDate": "2025-11-05T14:35:00Z",
-      "confidence": "high"
-    },
-    "context": {
-      "surroundingText": "Save money when you bundle...",
-      "pageTitle": "GEICO Auto Insurance Discounts"
-    }
-  },
-  {
-    "id": "raw_ckm9x7whp2",
-    "dataPoint": "geico_good_student_discount_percentage",
-    "rawValue": "up to 15%",
-    "normalizedValue": 15,
-    "source": {
-      "uri": "https://www.geico.com/auto/discounts/",
-      "pageId": "page_ckm9x7w8k0",
-      "pageFile": "_pages/page_ckm9x7w8k0.md",
-      "elementRef": "Driver Education section - Good student discount",
-      "extractedValue": "up to 15%",
-      "accessedDate": "2025-11-05T14:35:00Z",
-      "confidence": "high"
-    },
-    "context": {
-      "surroundingText": "Full-time students with good grades...",
-      "pageTitle": "GEICO Auto Insurance Discounts"
-    }
-  }
-]
+carriers/geico/data_search_abc123.raw.json
+carriers/uncategorized/data_search_def456.raw.json
+states/CA/data_search_ghi789.raw.json
 ```
 
 ---
 
-## Progress Tracking
+## Git Commit Messages
 
-### Check Overall Progress
+Scripts automatically format commit messages:
 
 ```bash
-# Read tracker and count statuses
-cat knowledge_pack/search-tracker.json | grep '"status"' | sort | uniq -c
+# Claim
+chore(kb): claim {id} - {description}
+
+# Complete
+feat(kb): complete {id} - found N data points from {source}
+
+# Fail
+chore(kb): fail {id} - {error}
 ```
+
+**No manual git operations needed** - scripts handle everything.
 
 ---
 
 ## Success Criteria
 
-Phase 2 is complete when:
+Phase 2 is complete when `select-work.py` outputs:
 
-- ✅ All searches have status `"completed"` or `"failed"`
-- ✅ `statusCounts.pending === 0`
-- ✅ All raw data files are committed and pushed
-- ✅ All page files are saved in `_pages/` directory
-- ✅ Tracker shows `completedSearches + failedSearches === totalSearches`
+```json
+{
+  "success": true,
+  "tracker_type": null,
+  "work_item": null,
+  "summary": {
+    "search": 0,
+    "url": 0,
+    "page": 0
+  },
+  "next_steps": "No work available - Phase 2 complete! ..."
+}
+```
 
-**Next step:** Phase 3 - Conflict Detection
+**All trackers show 0 pending items** → Ready for Phase 3
 
 ---
 
 ## Troubleshooting
 
-### "Cannot find next pending search"
-
-Check tracker:
+### "No work available" but searches still pending?
+Check tracker manually:
 ```bash
-cat knowledge_pack/search-tracker.json | grep '"status": "pending"' | wc -l
+cd knowledge-pack-scraper
+cat search-tracker.json | grep '"status": "pending"' | wc -l
 ```
 
-If 0: Phase 2 is complete
-If >0: Read tracker carefully, search might be nested in categories
+If count > 0, regenerate tracker or investigate stuck items.
 
-### "Git push rejected"
-
-**This should not happen** - Steps 3 and 8 include automatic retry logic:
+### Scripts not found?
+Ensure you're in `knowledge-pack-scraper/` directory:
 ```bash
-git push || (git pull --rebase && git push)
+cd knowledge-pack-scraper
+uv run scripts/select-work.py
 ```
 
-If you see this error, the automatic retry failed. Manual resolution:
+### Push rejected (automatic retry failed)?
+Manual recovery (rare):
 ```bash
 git pull --rebase
-# Resolve any conflicts in search-tracker.json (keep both changes)
-git add knowledge_pack/search-tracker.json
+# Resolve conflicts in tracker JSON (keep both changes)
+git add .
 git rebase --continue
 git push
 ```
 
-### "WebFetch timeout"
-
-Retry:
-- Retry 3 times with 30-second delay within Step 4
-- If still fails, mark search as failed in tracker
-- Commit and push (proceed to Steps 7-8)
-- ⚠️ STOP IMMEDIATELY
-
-### "Duplicate page ID"
-
-This should never happen with cuid2. If it does:
-- Regenerate ID
-- Verify cuid2 is installed correctly
-- Check for clock skew
-
 ---
 
-**See Also:**
-- 📖 [Raw Data Schema](sot-schemas.md#raw-data-schema) - Complete specification for data structure
-- 🔗 [Source Authority Levels](sot-source-hierarchy.md#source-authority-levels) - How to assess confidence scores
-- 📊 [Extraction Examples](knowledge-pack-examples.md#phase-1-raw-data-scraping) - Real extraction samples
-- 🔍 [Search Queries Catalog](sot-search-queries.md) - Complete list of 200+ search queries
-- 🛠️ [ID Conventions](sot-id-conventions.md) - cuid2 ID generation and validation
-- 📋 [Complete Methodology](knowledge-pack-methodology.md#phase-2-raw-data-scraping) - Where Phase 2 fits in overall workflow
+## Related Documentation
 
----
-
-**Last Updated**: 2025-11-06 (Added TypeScript helper for random search selection)
-**Status**: Ready for Phase 2 Execution
-**Changes**:
-- v2.0: Restructured for master/subagent execution model
-- Integrated helper scripts directly into Steps 2 and 7
-- Removed Step 9 (subagents execute once and stop)
-- Removed advisory sections (Helper Scripts, Parallel Execution)
-- Added prescriptive execution with zero decision-making required
-- v2.1: Added automatic git push retry logic to Steps 3 and 8 for concurrent conflict handling
-- v2.2: Updated raw data file naming to include search_id (prevents concurrent write conflicts)
-- v2.3: Replaced bash jq commands with TypeScript helper script (select-random-search.ts) for consistency and reduced terminal complexity
+- [Raw Data Schema](sot-schemas.md#raw-data-schema) - Complete schema specification
+- [Source Hierarchy](sot-source-hierarchy.md) - Authority levels and confidence scores
+- [Search Queries](sot-search-queries.md) - List of all search queries
+- [ID Conventions](sot-id-conventions.md) - cuid2 ID generation
