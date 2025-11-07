@@ -1,0 +1,1322 @@
+<!DOCTYPE html><html dir="ltr" lang="en-US"><head>
+  <meta charset="utf-8">
+<script type="text/javascript">
+/* <![CDATA[ */
+
+//----------------------------------------------------------
+//------ JAVASCRIPT HOOK FUNCTIONS FOR GRAVITY FORMS -------
+//----------------------------------------------------------
+
+if ( ! gform ) {
+	document.addEventListener( 'gform_main_scripts_loaded', function() { gform.scriptsLoaded = true; } );
+	document.addEventListener( 'gform/theme/scripts_loaded', function() { gform.themeScriptsLoaded = true; } );
+	window.addEventListener( 'DOMContentLoaded', function() { gform.domLoaded = true; } );
+
+	var gform = {
+		domLoaded: false,
+		scriptsLoaded: false,
+		themeScriptsLoaded: false,
+		isFormEditor: () => typeof InitializeEditor === 'function',
+
+		/**
+		 * @deprecated 2.9 the use of initializeOnLoaded in the form editor context is deprecated.
+		 * @remove-in 3.1 this function will not check for gform.isFormEditor().
+		 */
+		callIfLoaded: function ( fn ) {
+			if ( gform.domLoaded && gform.scriptsLoaded && ( gform.themeScriptsLoaded || gform.isFormEditor() ) ) {
+				if ( gform.isFormEditor() ) {
+					console.warn( 'The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1.' );
+				}
+				fn();
+				return true;
+			}
+			return false;
+		},
+
+		/**
+		 * Call a function when all scripts are loaded
+		 *
+		 * @param function fn the callback function to call when all scripts are loaded
+		 *
+		 * @returns void
+		 */
+		initializeOnLoaded: function( fn ) {
+			if ( ! gform.callIfLoaded( fn ) ) {
+				document.addEventListener( 'gform_main_scripts_loaded', () => { gform.scriptsLoaded = true; gform.callIfLoaded( fn ); } );
+				document.addEventListener( 'gform/theme/scripts_loaded', () => { gform.themeScriptsLoaded = true; gform.callIfLoaded( fn ); } );
+				window.addEventListener( 'DOMContentLoaded', () => { gform.domLoaded = true; gform.callIfLoaded( fn ); } );
+			}
+		},
+
+		hooks: { action: {}, filter: {} },
+		addAction: function( action, callable, priority, tag ) {
+			gform.addHook( 'action', action, callable, priority, tag );
+		},
+		addFilter: function( action, callable, priority, tag ) {
+			gform.addHook( 'filter', action, callable, priority, tag );
+		},
+		doAction: function( action ) {
+			gform.doHook( 'action', action, arguments );
+		},
+		applyFilters: function( action ) {
+			return gform.doHook( 'filter', action, arguments );
+		},
+		removeAction: function( action, tag ) {
+			gform.removeHook( 'action', action, tag );
+		},
+		removeFilter: function( action, priority, tag ) {
+			gform.removeHook( 'filter', action, priority, tag );
+		},
+		addHook: function( hookType, action, callable, priority, tag ) {
+			if ( undefined == gform.hooks[hookType][action] ) {
+				gform.hooks[hookType][action] = [];
+			}
+			var hooks = gform.hooks[hookType][action];
+			if ( undefined == tag ) {
+				tag = action + '_' + hooks.length;
+			}
+			if( priority == undefined ){
+				priority = 10;
+			}
+
+			gform.hooks[hookType][action].push( { tag:tag, callable:callable, priority:priority } );
+		},
+		doHook: function( hookType, action, args ) {
+
+			// splice args from object into array and remove first index which is the hook name
+			args = Array.prototype.slice.call(args, 1);
+
+			if ( undefined != gform.hooks[hookType][action] ) {
+				var hooks = gform.hooks[hookType][action], hook;
+				//sort by priority
+				hooks.sort(function(a,b){return a["priority"]-b["priority"]});
+
+				hooks.forEach( function( hookItem ) {
+					hook = hookItem.callable;
+
+					if(typeof hook != 'function')
+						hook = window[hook];
+					if ( 'action' == hookType ) {
+						hook.apply(null, args);
+					} else {
+						args[0] = hook.apply(null, args);
+					}
+				} );
+			}
+			if ( 'filter'==hookType ) {
+				return args[0];
+			}
+		},
+		removeHook: function( hookType, action, priority, tag ) {
+			if ( undefined != gform.hooks[hookType][action] ) {
+				var hooks = gform.hooks[hookType][action];
+				hooks = hooks.filter( function(hook, index, arr) {
+					var removeHook = (undefined==tag||tag==hook.tag) && (undefined==priority||priority==hook.priority);
+					return !removeHook;
+				} );
+				gform.hooks[hookType][action] = hooks;
+			}
+		}
+	};
+}
+
+/* ]]> */
+</script>
+
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		<!-- All in One SEO 4.2.7.1 - aioseo.com -->
+		<meta name="description" content="Evolving Roof Requirements from Carriers It's no secret insurance carriers have been tightening their underwriting guidelines and coverage related to roof age, condition, and claims payouts. For independent agents in Ohio, these changes are expected to directly impact both new business and client retention. Earlier this year, OIA members alerted the association to evolving roof policy">
+		<meta name="robots" content="max-image-preview:large">
+		<meta name="google-site-verification" content="T_Vt2RDXwZDwL0S03YfUJT7vSmGtPew5HGf-ZPuPgGM">
+		<link rel="canonical" href="https://ohioinsuranceagents.com/blog/2025/analyzing-roofing-policy-changes-in-homeowners-insurance/">
+		<meta name="generator" content="All in One SEO (AIOSEO) 4.2.7.1 ">
+		<meta property="og:locale" content="en_US">
+		<meta property="og:site_name" content="Ohio Insurance Agents">
+		<meta property="og:type" content="article">
+		<meta property="og:title" content="Analyzing Roofing Policy Changes in Homeowners Insurance - Ohio Insurance Agents">
+		<meta property="og:description" content="Evolving Roof Requirements from Carriers It's no secret insurance carriers have been tightening their underwriting guidelines and coverage related to roof age, condition, and claims payouts. For independent agents in Ohio, these changes are expected to directly impact both new business and client retention. Earlier this year, OIA members alerted the association to evolving roof policy">
+		<meta property="og:url" content="https://ohioinsuranceagents.com/blog/2025/analyzing-roofing-policy-changes-in-homeowners-insurance/">
+		<meta property="og:image" content="https://ohioinsuranceagents.com/wp-content/uploads/2025/05/Carriers-changing-roof-req.png">
+		<meta property="og:image:secure_url" content="https://ohioinsuranceagents.com/wp-content/uploads/2025/05/Carriers-changing-roof-req.png">
+		<meta property="og:image:width" content="2560">
+		<meta property="og:image:height" content="1441">
+		<meta property="article:section" content="Blog">
+		<meta property="article:published_time" content="2025-05-01T15:26:29+00:00">
+		<meta property="article:modified_time" content="2025-05-05T22:58:42+00:00">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Analyzing Roofing Policy Changes in Homeowners Insurance - Ohio Insurance Agents">
+		<meta name="twitter:description" content="Evolving Roof Requirements from Carriers It's no secret insurance carriers have been tightening their underwriting guidelines and coverage related to roof age, condition, and claims payouts. For independent agents in Ohio, these changes are expected to directly impact both new business and client retention. Earlier this year, OIA members alerted the association to evolving roof policy">
+		<meta name="twitter:image" content="https://ohioinsuranceagents.com/wp-content/uploads/2025/05/Carriers-changing-roof-req.png">
+		<meta name="twitter:label1" content="Written by">
+		<meta name="twitter:data1" content="Jeannine Giesler">
+		<meta name="twitter:label2" content="Est. reading time">
+		<meta name="twitter:data2" content="5 minutes">
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"Article","@id":"https:\/\/ohioinsuranceagents.com\/blog\/2025\/analyzing-roofing-policy-changes-in-homeowners-insurance\/#article","name":"Analyzing Roofing Policy Changes in Homeowners Insurance - Ohio Insurance Agents","headline":"Analyzing Roofing Policy Changes in Homeowners Insurance","author":{"@id":"https:\/\/ohioinsuranceagents.com\/author\/jeanieohioinsuranceagents-com\/#author"},"publisher":{"@id":"https:\/\/ohioinsuranceagents.com\/#organization"},"image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2025\/05\/Carriers-changing-roof-req.png","width":2560,"height":1441},"datePublished":"2025-05-01T11:26:29-04:00","dateModified":"2025-05-05T18:58:42-04:00","inLanguage":"en-US","mainEntityOfPage":{"@id":"https:\/\/ohioinsuranceagents.com\/blog\/2025\/analyzing-roofing-policy-changes-in-homeowners-insurance\/#webpage"},"isPartOf":{"@id":"https:\/\/ohioinsuranceagents.com\/blog\/2025\/analyzing-roofing-policy-changes-in-homeowners-insurance\/#webpage"},"articleSection":"Blog"},{"@type":"BreadcrumbList","@id":"https:\/\/ohioinsuranceagents.com\/blog\/2025\/analyzing-roofing-policy-changes-in-homeowners-insurance\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/ohioinsuranceagents.com\/#listItem","position":1,"item":{"@type":"WebPage","@id":"https:\/\/ohioinsuranceagents.com\/","name":"Home","description":"OIA represents agencies of every size in Ohio, helping insurance agents by providing thought leadership, advocacy, training and data-backed insights.","url":"https:\/\/ohioinsuranceagents.com\/"},"nextItem":"https:\/\/ohioinsuranceagents.com\/blog\/#listItem"},{"@type":"ListItem","@id":"https:\/\/ohioinsuranceagents.com\/blog\/#listItem","position":2,"item":{"@type":"WebPage","@id":"https:\/\/ohioinsuranceagents.com\/blog\/","name":"Blog","description":"Evolving Roof Requirements from Carriers It's no secret insurance carriers have been tightening their underwriting guidelines and coverage related to roof age, condition, and claims payouts. For independent agents in Ohio, these changes are expected to directly impact both new business and client retention. Earlier this year, OIA members alerted the association to evolving roof policy","url":"https:\/\/ohioinsuranceagents.com\/blog\/"},"nextItem":"https:\/\/ohioinsuranceagents.com\/blog\/2025\/#listItem","previousItem":"https:\/\/ohioinsuranceagents.com\/#listItem"},{"@type":"ListItem","@id":"https:\/\/ohioinsuranceagents.com\/blog\/2025\/#listItem","position":3,"item":{"@type":"WebPage","@id":"https:\/\/ohioinsuranceagents.com\/blog\/2025\/","name":"2025","url":"https:\/\/ohioinsuranceagents.com\/blog\/2025\/"},"nextItem":"https:\/\/ohioinsuranceagents.com\/blog\/2025\/analyzing-roofing-policy-changes-in-homeowners-insurance\/#listItem","previousItem":"https:\/\/ohioinsuranceagents.com\/blog\/#listItem"},{"@type":"ListItem","@id":"https:\/\/ohioinsuranceagents.com\/blog\/2025\/analyzing-roofing-policy-changes-in-homeowners-insurance\/#listItem","position":4,"item":{"@type":"WebPage","@id":"https:\/\/ohioinsuranceagents.com\/blog\/2025\/analyzing-roofing-policy-changes-in-homeowners-insurance\/","name":"Analyzing Roofing Policy Changes in Homeowners Insurance","description":"Evolving Roof Requirements from Carriers It's no secret insurance carriers have been tightening their underwriting guidelines and coverage related to roof age, condition, and claims payouts. For independent agents in Ohio, these changes are expected to directly impact both new business and client retention. Earlier this year, OIA members alerted the association to evolving roof policy","url":"https:\/\/ohioinsuranceagents.com\/blog\/2025\/analyzing-roofing-policy-changes-in-homeowners-insurance\/"},"previousItem":"https:\/\/ohioinsuranceagents.com\/blog\/2025\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/ohioinsuranceagents.com\/#organization","name":"Ohio Insurance Agents Association, Inc.","url":"https:\/\/ohioinsuranceagents.com\/"},{"@type":"WebPage","@id":"https:\/\/ohioinsuranceagents.com\/blog\/2025\/analyzing-roofing-policy-changes-in-homeowners-insurance\/#webpage","url":"https:\/\/ohioinsuranceagents.com\/blog\/2025\/analyzing-roofing-policy-changes-in-homeowners-insurance\/","name":"Analyzing Roofing Policy Changes in Homeowners Insurance - Ohio Insurance Agents","description":"Evolving Roof Requirements from Carriers It's no secret insurance carriers have been tightening their underwriting guidelines and coverage related to roof age, condition, and claims payouts. For independent agents in Ohio, these changes are expected to directly impact both new business and client retention. Earlier this year, OIA members alerted the association to evolving roof policy","inLanguage":"en-US","isPartOf":{"@id":"https:\/\/ohioinsuranceagents.com\/#website"},"breadcrumb":{"@id":"https:\/\/ohioinsuranceagents.com\/blog\/2025\/analyzing-roofing-policy-changes-in-homeowners-insurance\/#breadcrumblist"},"author":"https:\/\/ohioinsuranceagents.com\/author\/jeanieohioinsuranceagents-com\/#author","creator":"https:\/\/ohioinsuranceagents.com\/author\/jeanieohioinsuranceagents-com\/#author","image":{"@type":"ImageObject","url":"\/wp-content\/uploads\/2025\/05\/Carriers-changing-roof-req.png","@id":"https:\/\/ohioinsuranceagents.com\/#mainImage","width":2560,"height":1441},"primaryImageOfPage":{"@id":"https:\/\/ohioinsuranceagents.com\/blog\/2025\/analyzing-roofing-policy-changes-in-homeowners-insurance\/#mainImage"},"datePublished":"2025-05-01T11:26:29-04:00","dateModified":"2025-05-05T18:58:42-04:00"},{"@type":"WebSite","@id":"https:\/\/ohioinsuranceagents.com\/#website","url":"https:\/\/ohioinsuranceagents.com\/","name":"Ohio Insurance Agents Association, Inc.","inLanguage":"en-US","publisher":{"@id":"https:\/\/ohioinsuranceagents.com\/#organization"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+
+<!-- The SEO Framework by Sybre Waaijer -->
+<meta name="robots" content="max-snippet:-1,max-image-preview:standard,max-video-preview:-1">
+<meta name="description" content="Evolving Roof Requirements from Carriers It’s no secret insurance carriers have been tightening their underwriting guidelines and coverage related to roof age…">
+<meta property="og:image" content="https://ohioinsuranceagents.com/wp-content/uploads/2025/05/Carriers-changing-roof-req.png">
+<meta property="og:image:width" content="2560">
+<meta property="og:image:height" content="1441">
+<meta property="og:image" content="https://ohioinsuranceagents.com/wp-content/uploads/2022/10/MicrosoftTeams-image-49.png">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ohio Insurance Agents | Analyzing Roofing Policy Changes in Homeowners Insurance">
+<meta property="og:description" content="Evolving Roof Requirements from Carriers It’s no secret insurance carriers have been tightening their underwriting guidelines and coverage related to roof age, condition, and claims payouts.">
+<meta property="og:url" content="https://ohioinsuranceagents.com/blog/2025/analyzing-roofing-policy-changes-in-homeowners-insurance/">
+<meta property="og:site_name" content="Ohio Insurance Agents">
+<meta property="article:published_time" content="2025-05-01T11:26+00:00">
+<meta property="article:modified_time" content="2025-05-05T18:58+00:00">
+<meta property="og:updated_time" content="2025-05-05T18:58+00:00">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ohio Insurance Agents | Analyzing Roofing Policy Changes in Homeowners Insurance">
+<meta name="twitter:description" content="Evolving Roof Requirements from Carriers It’s no secret insurance carriers have been tightening their underwriting guidelines and coverage related to roof age, condition, and claims payouts.">
+<meta name="twitter:image" content="https://ohioinsuranceagents.com/wp-content/uploads/2025/05/Carriers-changing-roof-req.png">
+<meta name="twitter:image:width" content="2560">
+<meta name="twitter:image:height" content="1441">
+<link rel="canonical" href="https://ohioinsuranceagents.com/blog/2025/analyzing-roofing-policy-changes-in-homeowners-insurance/">
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+                "@id": "https://ohioinsuranceagents.com/",
+                "name": "Ohio Insurance Agents"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+                "@id": "/category/blog/",
+                "name": "Blog"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+                "@id": "https://ohioinsuranceagents.com/blog/2025/analyzing-roofing-policy-changes-in-homeowners-insurance/",
+                "name": "Analyzing Roofing Policy Changes in Homeowners Insurance"
+            }
+        }
+    ]
+}</script>
+<meta name="google-site-verification" content="8sXMbCoWUOCxN23mYT3195pFO6JT45xbFADF2bl2c1w">
+<!-- / The SEO Framework by Sybre Waaijer | 0.45ms meta | 1.31ms boot -->
+
+
+	<!-- This site is optimized with the Yoast SEO plugin v20.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Analyzing Roofing Policy Changes in Homeowners Insurance - Ohio Insurance Agents</title>
+	<link rel="canonical" href="https://ohioinsuranceagents.com/blog/2025/analyzing-roofing-policy-changes-in-homeowners-insurance/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Analyzing Roofing Policy Changes in Homeowners Insurance - Ohio Insurance Agents">
+	<meta property="og:description" content="Evolving Roof Requirements from Carriers It’s no secret insurance carriers have been tightening their underwriting guidelines and coverage&nbsp;related to roof age, condition, and claims payouts. For independent agents in Ohio, these changes are expected to directly impact both new business and client retention.&nbsp; Earlier this year, OIA members alerted the association to evolving roof policy … Continued">
+	<meta property="og:url" content="https://ohioinsuranceagents.com/blog/2025/analyzing-roofing-policy-changes-in-homeowners-insurance/">
+	<meta property="og:site_name" content="Ohio Insurance Agents">
+	<meta property="article:published_time" content="2025-05-01T11:26:29+00:00">
+	<meta property="article:modified_time" content="2025-05-05T18:58:42+00:00">
+	<meta property="og:image" content="https://ohioinsuranceagents.com/wp-content/uploads/2025/05/Carriers-changing-roof-req-1140x642.png">
+	<meta property="og:image:width" content="1140">
+	<meta property="og:image:height" content="642">
+	<meta property="og:image:type" content="image/png">
+	<meta name="author" content="Jeannine Giesler">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:label1" content="Written by">
+	<meta name="twitter:data1" content="Jeannine Giesler">
+	<meta name="twitter:label2" content="Est. reading time">
+	<meta name="twitter:data2" content="5 minutes">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://ohioinsuranceagents.com/blog/2025/analyzing-roofing-policy-changes-in-homeowners-insurance/","url":"https://ohioinsuranceagents.com/blog/2025/analyzing-roofing-policy-changes-in-homeowners-insurance/","name":"Analyzing Roofing Policy Changes in Homeowners Insurance - Ohio Insurance Agents","isPartOf":{"@id":"https://ohioinsuranceagents.com/#website"},"primaryImageOfPage":{"@id":"https://ohioinsuranceagents.com/blog/2025/analyzing-roofing-policy-changes-in-homeowners-insurance/#primaryimage"},"image":{"@id":"https://ohioinsuranceagents.com/blog/2025/analyzing-roofing-policy-changes-in-homeowners-insurance/#primaryimage"},"thumbnailUrl":"/wp-content/uploads/2025/05/Carriers-changing-roof-req.png","datePublished":"2025-05-01T11:26:29+00:00","dateModified":"2025-05-05T18:58:42+00:00","author":{"@id":"https://ohioinsuranceagents.com/#/schema/person/b71da5af74890d1c3af1779f899d31bf"},"breadcrumb":{"@id":"https://ohioinsuranceagents.com/blog/2025/analyzing-roofing-policy-changes-in-homeowners-insurance/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://ohioinsuranceagents.com/blog/2025/analyzing-roofing-policy-changes-in-homeowners-insurance/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://ohioinsuranceagents.com/blog/2025/analyzing-roofing-policy-changes-in-homeowners-insurance/#primaryimage","url":"/wp-content/uploads/2025/05/Carriers-changing-roof-req.png","contentUrl":"/wp-content/uploads/2025/05/Carriers-changing-roof-req.png","width":2560,"height":1441},{"@type":"BreadcrumbList","@id":"https://ohioinsuranceagents.com/blog/2025/analyzing-roofing-policy-changes-in-homeowners-insurance/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ohioinsuranceagents.com/"},{"@type":"ListItem","position":2,"name":"News","item":"https://ohioinsuranceagents.com/news/"},{"@type":"ListItem","position":3,"name":"Analyzing Roofing Policy Changes in Homeowners Insurance"}]},{"@type":"WebSite","@id":"https://ohioinsuranceagents.com/#website","url":"https://ohioinsuranceagents.com/","name":"Ohio Insurance Agents","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://ohioinsuranceagents.com/search/{search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Person","@id":"https://ohioinsuranceagents.com/#/schema/person/b71da5af74890d1c3af1779f899d31bf","name":"Jeannine Giesler","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://ohioinsuranceagents.com/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/75bbead461a4cd7eeb4027a17d1f2ab018caa02c66409eed0c22f2e98ee9abb7?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/75bbead461a4cd7eeb4027a17d1f2ab018caa02c66409eed0c22f2e98ee9abb7?s=96&d=mm&r=g","caption":"Jeannine Giesler"},"url":"https://ohioinsuranceagents.com/author/jeanieohioinsuranceagents-com/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="//player.vimeo.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v9.4.1 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=G-QHB61V4CKV" data-cfasync="false" data-wpfc-render="false" type="text/javascript" async=""></script>
+			<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
+				var mi_version = '9.4.1';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+								var MonsterInsightsDefaultLocations = {"page_location":"https:\/\/ohioinsuranceagents.com\/blog\/2025\/analyzing-roofing-policy-changes-in-homeowners-insurance\/"};
+				if ( typeof MonsterInsightsPrivacyGuardFilter === 'function' ) {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsPrivacyGuardFilter( MonsterInsightsExcludeQuery ) : MonsterInsightsPrivacyGuardFilter( MonsterInsightsDefaultLocations );
+				} else {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsExcludeQuery : MonsterInsightsDefaultLocations;
+				}
+
+								var disableStrs = [
+										'ga-disable-G-QHB61V4CKV',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+					if ( MonsterInsightsLocations.page_location ) {
+						__gtagTracker('set', MonsterInsightsLocations);
+					}
+										__gtagTracker('config', 'G-QHB61V4CKV', {"forceSSL":"true","link_attribution":"true"} );
+															window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+									'referrer' : 'page_referrer',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+				<!-- / Google Analytics by MonsterInsights -->
+		<link rel="stylesheet" href="/wp-content/plugins/mgroadmaptimeline/assets/frontend.css?ver=6.8.3">
+<link rel="stylesheet" href="/wp-content/plugins/vimeo/build/style-index.css?ver=1.0.0">
+<link rel="stylesheet" href="/wp-includes/css/dist/block-library/style.css?ver=6.8.3">
+<style id="classic-theme-styles-inline-css" type="text/css">
+/**
+ * These rules are needed for backwards compatibility.
+ * They should match the button element rules in the base theme.json file.
+ */
+.wp-block-button__link {
+	color: #ffffff;
+	background-color: #32373c;
+	border-radius: 9999px; /* 100% causes an oval, but any explicit but really high value retains the pill shape. */
+
+	/* This needs a low specificity so it won't override the rules from the button element if defined in theme.json. */
+	box-shadow: none;
+	text-decoration: none;
+
+	/* The extra 2px are added to size solids the same as the outline versions.*/
+	padding: calc(0.667em + 2px) calc(1.333em + 2px);
+
+	font-size: 1.125em;
+}
+
+.wp-block-file__button {
+	background: #32373c;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+</style>
+<style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" href="/wp-content/plugins/calendar-event/CSS/Total-Soft-Calendar-Widget.css?ver=6.8.3">
+<link rel="stylesheet" href="/wp-content/plugins/calendar-event/CSS/totalsoft.css?ver=6.8.3">
+<link rel="stylesheet" href="/wp-content/plugins/counter-number-showcase/assets/css/font-awesome/css/font-awesome.min.css?ver=6.8.3">
+<link rel="stylesheet" href="/wp-content/plugins/counter-number-showcase/assets/css/bootstrap-front.css?ver=6.8.3">
+<link rel="stylesheet" href="/wp-content/plugins/counter-number-showcase/assets/css/counter-column.css?ver=6.8.3">
+<link rel="stylesheet" href="/wp-content/plugins/easy-accordion-free/public/assets/css/font-awesome.min.css?ver=2.0.8">
+<link rel="stylesheet" href="/wp-content/plugins/hide-admin-bar-based-on-user-roles/public/css/hide-admin-bar-based-on-user-roles-public.css?ver=1.7.0">
+<link rel="stylesheet" href="/wp-includes/css/dashicons.css?ver=6.8.3">
+<link rel="stylesheet" href="/wp-content/plugins/post-views-counter/css/frontend.css?ver=1.3.2">
+<link rel="stylesheet" href="/wp-content/plugins/wp-popups-lite/src/assets/css/wppopups-base.css?ver=2.2.0.2">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond%3A400%2C400i%2C700%2C700i&amp;display=swap&amp;ver=6.8.3">
+<link rel="stylesheet" href="/wp-content/themes/oia/dist/styles/main-214fa1db2e.css?ver=1590169470">
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://player.vimeo.com/api/player.js?ver=1.0.0" id="vimeo-for-wordpress-player-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/google-analytics-premium/assets/js/frontend-gtag.js?ver=1762543277" id="monsterinsights-frontend-script-js" async="async" data-wp-strategy="async"></script>
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id="monsterinsights-frontend-script-js-extra">/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/ohioinsuranceagents.com","hash_tracking":"false","v4_id":"G-QHB61V4CKV"};/* ]]> */
+</script>
+<script type="text/javascript" id="accordions_js-js-extra">
+/* <![CDATA[ */
+var accordions_ajax = {"accordions_ajaxurl":"https:\/\/ohioinsuranceagents.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/accordions/assets/frontend/js/scripts.js?ver=6.8.3" id="accordions_js-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/ui/core.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/calendar-event/JS/Total-Soft-Calendar-Widget.js?ver=6.8.3" id="Total_Soft_Cal-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/hide-admin-bar-based-on-user-roles/public/js/hide-admin-bar-based-on-user-roles-public.js?ver=1.7.0" id="hide-admin-bar-based-on-user-roles-js"></script>
+<script type="text/javascript" id="pavi_load_post-js-extra">
+/* <![CDATA[ */
+var php_array = {"admin_ajax":"https:\/\/ohioinsuranceagents.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/pressapps-video/assets//js/load-post.js?ver=6.8.3" id="pavi_load_post-js"></script>
+<meta name="google-site-verification" content="8sXMbCoWUOCxN23mYT3195pFO6JT45xbFADF2bl2c1w">	<style type="text/css">
+    .tb_notification_bar {
+        display:block;
+        width:100%;
+        vertical-align:middle;
+        text-align:center;
+        z-index:99999;
+        font-weight:normal;
+        top:0;
+        padding:2px 0;
+        min-height:30px;
+        line-height:30px;
+        background-color:#a33038;
+        color:#FFF;
+        position:absolute;
+        -webkit-animation-delay: 1000ms !important;
+        animation-duration: 1000ms !important;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode:both;
+        box-shadow:0 0 6px #111;
+    }
+    
+    .tb_fadeInDown {
+        -webkit-animation-name: fadeInDown;
+        animation-name: fadeInDown;
+    }
+    
+    .tb_inner_bar {
+        vertical-align:middle;
+    }
+    
+    .tb_specific_text {
+        margin:0 10px;
+    }
+	
+	.tb_specific_text a, .tb_specific_text a:hover {
+		color:#ffffff;
+		text-decoration:none;
+	}
+	
+	.custom-msg {
+		margin-top:32px;
+	}
+	
+	.admin-bar .tb_notification_bar {
+		margin-top:32px;
+	}
+    </style>
+
+		<script>
+		(function(h,o,t,j,a,r){
+			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+			h._hjSettings={hjid:1823909,hjsv:5};
+			a=o.getElementsByTagName('head')[0];
+			r=o.createElement('script');r.async=1;
+			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+			a.appendChild(r);
+		})(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+		</script><script async="" src="//static.hotjar.com/c/hotjar-1823909.js?sv=5"></script>
+		<link rel="icon" href="/wp-content/uploads/2019/11/cropped-icon-150x150.png" sizes="32x32">
+<link rel="icon" href="/wp-content/uploads/2019/11/cropped-icon-300x300.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/wp-content/uploads/2019/11/cropped-icon-300x300.png">
+<meta name="msapplication-TileImage" content="/wp-content/uploads/2019/11/cropped-icon-300x300.png">
+		<style type="text/css" id="wp-custom-css">
+			
+		</style>
+		<style id="wpforms-css-vars-root">
+				:root {
+					--wpforms-field-border-radius: 3px;
+--wpforms-field-background-color: #ffffff;
+--wpforms-field-border-color: rgba( 0, 0, 0, 0.25 );
+--wpforms-field-text-color: rgba( 0, 0, 0, 0.7 );
+--wpforms-label-color: rgba( 0, 0, 0, 0.85 );
+--wpforms-label-sublabel-color: rgba( 0, 0, 0, 0.55 );
+--wpforms-label-error-color: #d63637;
+--wpforms-button-border-radius: 3px;
+--wpforms-button-background-color: #066aab;
+--wpforms-button-text-color: #ffffff;
+--wpforms-field-size-input-height: 43px;
+--wpforms-field-size-input-spacing: 15px;
+--wpforms-field-size-font-size: 16px;
+--wpforms-field-size-line-height: 19px;
+--wpforms-field-size-padding-h: 14px;
+--wpforms-field-size-checkbox-size: 16px;
+--wpforms-field-size-sublabel-spacing: 5px;
+--wpforms-field-size-icon-size: 1;
+--wpforms-label-size-font-size: 16px;
+--wpforms-label-size-line-height: 19px;
+--wpforms-label-size-sublabel-font-size: 14px;
+--wpforms-label-size-sublabel-line-height: 17px;
+--wpforms-button-size-font-size: 17px;
+--wpforms-button-size-height: 41px;
+--wpforms-button-size-padding-h: 15px;
+--wpforms-button-size-margin-top: 10px;
+
+				}
+			</style><script async="" src="https://script.hotjar.com/modules.f7b829d5d96e959c0829.js" charset="utf-8"></script></head>
+  <body class="wp-singular post-template-default single single-post postid-8086 single-format-standard wp-theme-oia cooltimeline-body analyzing-roofing-policy-changes-in-homeowners-insurance">
+    <div id="page">
+      <!--[if IE]>
+        <div class="alert alert-warning">
+          You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.        </div>
+      <![endif]-->
+      <div id="header">
+  <div class="container">
+    <div id="logo">
+      <a href="https://ohioinsuranceagents.com">
+              <img src="/wp-content/uploads/2020/01/ohio-insurance-agents-logo.png" alt="Ohio Insurance Agents logo" class="img-responsive" width="520" height="122">
+            </a>
+    </div>
+
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-navigation" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav id="navigation" class="collapse navbar-collapse">
+        <form action="/" method="get" class="search-form" autocomplete="off">
+  <label class="sr-only">Search for</label>
+  <input type="text" name="s" class="search-field" value="" placeholder="Search">
+  <button type="submit" class="search-submit">
+    <span class="fa fa-search"></span>
+  </button>
+</form><ul id="menu-top-navigation" class="menu top-menu"><li class="menu-item menu-contact-us"><a href="https://ohioinsuranceagents.com/contact-us/">Contact Us</a></li>
+<li class="menu-item menu-client-log-in"><a href="https://my.ohioinsuranceagents.com/idp/login?app=0sp1U00000000c3">Client Log In</a></li>
+<li class="menu-item menu-privacy-policy"><a href="https://ohioinsuranceagents.com/privacy/">Privacy Policy</a></li>
+<li class="menu-item menu-update-my-contact-info"><a href="https://my.ohioinsuranceagents.com/s/#/profile/my_info">Update My Contact Info</a></li>
+</ul><div class="menu-separator"></div><ul id="menu-primary-navigation" class="menu main-menu"><li class="menu-item menu-item-has-children menu-membership"><a href="https://ohioinsuranceagents.com/membership/">Membership</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-become-a-member"><a href="https://ohioinsuranceagents.com/membership/become-a-member/">Become a Member</a></li>
+	<li class="menu-item menu-renew-membership"><a href="https://my.ohioinsuranceagents.com/s/#/profile/company_orders">Renew Membership</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children menu-education"><a href="http://learning.ohioinsuranceagents.com">Education</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-learning-portal"><a href="https://learning.ohioinsuranceagents.com">Learning Portal</a></li>
+	<li class="menu-item menu-on-demand-ce"><a href="https://learning.ohioinsuranceagents.com/ondemand">On Demand CE</a></li>
+	<li class="menu-item menu-pre-licensing-course"><a href="https://ohioinsuranceagents.com/pre-licensing-courses/">Pre-Licensing Course</a></li>
+	<li class="menu-item menu-designations"><a href="https://learning.ohioinsuranceagents.com/designations">Designations</a></li>
+	<li class="menu-item menu-new-hire-training"><a href="https://ohioinsuranceagents.com/agent-resources/education-resources/">New Hire Training</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children menu-agent-resources"><a href="https://ohioinsuranceagents.com/agent-resources/">Agent Resources</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-foundation-scholarship"><a href="https://ohioinsuranceagents.com/agent-resources/foundation/">Foundation Scholarship</a></li>
+	<li class="menu-item menu-marketing-resources"><a href="https://ohioinsuranceagents.com/agent-resources/marketing-resources/">Marketing Resources</a></li>
+	<li class="menu-item menu-next-gen"><a href="https://ohioinsuranceagents.com/product-services/next-gen/">Next-Gen</a></li>
+	<li class="menu-item menu-starting-an-agency"><a href="https://ohioinsuranceagents.com/agent-resources/starting-an-agency/">Starting An Agency</a></li>
+	<li class="menu-item menu-technology"><a href="https://ohioinsuranceagents.com/agent-resources/technology/">Technology</a></li>
+	<li class="menu-item menu-tools-for-your-agency"><a href="https://ohioinsuranceagents.com/agent-resources/tools-for-your-agency/">Tools For Your Agency</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children menu-advocacy"><a href="https://ohioinsuranceagents.com/advocacy/">Advocacy</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-pac"><a href="https://ohioinsuranceagents.com/advocacy/pac/">PAC</a></li>
+	<li class="menu-item menu-regulatory-issues"><a href="https://ohioinsuranceagents.com/regulatory-issues/">Regulatory Issues</a></li>
+	<li class="menu-item menu-legislative-issues"><a href="https://ohioinsuranceagents.com/legislative-issues/">Legislative Issues</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children menu-product-services"><a href="https://ohioinsuranceagents.com/product-services/">Product &amp; Services</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-agency-link"><a href="https://ohioinsuranceagents.com/product-services/agency-link/">Agency Link</a></li>
+	<li class="menu-item menu-business-consulting"><a href="https://ohioinsuranceagents.com/product-services/business-consulting/">Business Consulting</a></li>
+	<li class="menu-item menu-errors-and-omissions-insurance"><a href="https://ohioinsuranceagents.com/product-services/insurance-for-your-agency/errors-and-omissions-insurance/">Errors and Omissions Insurance</a></li>
+	<li class="menu-item menu-insurance-for-your-agency"><a href="https://ohioinsuranceagents.com/product-services/insurance-for-your-agency/">Insurance for Your Agency</a></li>
+	<li class="menu-item menu-market-access-solutions"><a href="https://ohioinsuranceagents.com/product-services/market-access-solutions/">Market Access Solutions</a></li>
+	<li class="menu-item menu-valuation-and-perpetuation"><a href="https://ohioinsuranceagents.com/product-services/valuation-and-perpetuation/">Valuation and Perpetuation</a></li>
+	<li class="menu-item menu-workers-compensation-program"><a href="https://ohioinsuranceagents.com/product-services/insurance-for-your-agency/workers-compensation-program/">Workers’ Compensation Program</a></li>
+</ul>
+</li>
+<li class="menu-item menu-resource-center"><a href="https://ohioinsuranceagents.com/resource-center-main/">Resource Center</a></li>
+<li class="menu-item menu-item-has-children menu-hr-solutions"><a href="https://ohioinsuranceagents.com/hr-solutions/">HR Solutions</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-agency-compensation-360"><a href="https://catalyit.com/comp360/oia">Agency Compensation 360</a></li>
+	<li class="menu-item menu-hr-advisory-services"><a href="https://ohioinsuranceagents.com/hr-solutions/hr-advisory-services/">HR Advisory Services</a></li>
+	<li class="menu-item menu-oia-job-board"><a href="https://ohioinsuranceagents.com/hr-solutions/oia-job-board/">OIA Job Board</a></li>
+	<li class="menu-item menu-independent-insurance-agency-careers"><a href="https://ohioinsuranceagents.com/hr-solutions/independent-insurance-agency-careers/">Independent Insurance Agency Careers</a></li>
+	<li class="menu-item menu-summer-internship-program"><a href="https://ohioinsuranceagents.com/hr-solutions/summer-internship-program/">Summer Internship Program</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children menu-news-events"><a href="https://ohioinsuranceagents.com/news-events/">News &amp; Events</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-news-blogs"><a href="https://ohioinsuranceagents.com/news-events/">News &amp; Blogs</a></li>
+	<li class="menu-item menu-oia-and-naaia-industry-networking-night"><a href="https://ohioinsuranceagents.com/upcoming-events/oia-naaia-columbus-event/">OIA and NAAIA: Industry Networking Night</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children menu-carrier-relations"><a href="https://ohioinsuranceagents.com/carrier-relations-report/">Carrier Relations</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-company-partners"><a href="https://ohioinsuranceagents.com/company-partners/">Company Partners</a></li>
+	<li class="menu-item menu-company-partners-benefits"><a href="https://ohioinsuranceagents.com/agent-resources/company-partners-benefits/">Company Partners Benefits</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children menu-about-oia"><a href="https://ohioinsuranceagents.com/about-oia/">About OIA</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-best-workplaces-in-ohio"><a href="https://ohioinsuranceagents.com/about-oia/best-workplaces-in-ohio/">Best Workplaces in Ohio</a></li>
+	<li class="menu-item menu-center-of-our-universe"><a href="https://ohioinsuranceagents.com/about-oia/the-center-of-our-universe/">Center of Our Universe</a></li>
+</ul>
+</li>
+</ul>      </nav>
+
+      <nav id="mobile-navigation" class="collapse navbar-collapse">
+        <form action="/" method="get" class="search-form" autocomplete="off">
+  <label class="sr-only">Search for</label>
+  <input type="text" name="s" class="search-field" value="" placeholder="Search">
+  <button type="submit" class="search-submit">
+    <span class="fa fa-search"></span>
+  </button>
+</form>      </nav>
+  </div>
+</div><!-- #header -->
+      <div id="blog-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 title-column">
+        <div>
+          <h3 class="text-primary">Analyzing Roofing Policy Changes in Homeowners Insurance</h3>
+        </div>
+      </div>
+            <div class="col-sm-6 image-column">
+        <div>
+          <img width="555" height="300" src="/wp-content/uploads/2025/05/Carriers-changing-roof-req-555x300.png" class="img-responsive wp-post-image" alt="" decoding="async" fetchpriority="high">        </div>
+        <span class="image-border border-color-blue will-animate viewport-appeared"><span></span></span>
+      </div>
+          </div>
+  </div>
+</div><!-- #blog-banner -->
+<div id="page-content">
+  <div class="container">
+    <div class="blog-details-wrapper">
+      <div class="blog-details-column">
+        <div class="article-meta">
+  <span class="post-author">
+    <span class="author-avatar"><img alt="" src="https://secure.gravatar.com/avatar/75bbead461a4cd7eeb4027a17d1f2ab018caa02c66409eed0c22f2e98ee9abb7?s=96&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/75bbead461a4cd7eeb4027a17d1f2ab018caa02c66409eed0c22f2e98ee9abb7?s=192&amp;d=mm&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96" decoding="async"></span>
+    By <a href="https://ohioinsuranceagents.com/author/jeanieohioinsuranceagents-com/" rel="author" class="fn">Jeannine Giesler</a>
+  </span>
+  <time class="updated" datetime="2025-05-01T11:26:29+00:00">05/01/2025</time>
+</div>
+        <div class="blog-content">
+          <p><b><span data-contrast="auto">Evolving Roof Requirements from Carriers</span></b></p>
+<p><span data-contrast="auto">It’s no secret insurance carriers have been tightening their underwriting guidelines and coverage&nbsp;related to roof age, condition, and claims payouts. For independent agents in Ohio, these changes are expected to directly impact both new business and client retention.</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">Earlier this year, OIA members alerted the association to evolving roof policy changes, often discovered only near renewal periods, leading to growing client (and agent) frustration. In response, the OIA team conducted an in-depth review of ODI rate filings from major carriers to better understand the shifting requirements. Listed below are some of the trends we detected, or you can reference carrier-specific information uncovered by OIA in <a href="https://ohioinsuranceagents.com/wp-content/uploads/2025/05/Carrier_Home_Roof_Specs_2025.pdf"><span style="color: #4891dc;">this resource</span></a>.&nbsp;</span></p>
+<p><b><span data-contrast="auto">Roof Age Matters More Than Ever</span></b><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">Roof age has always been an important factor, but now it’s front and center for many carriers. Progressive, for example, applies a roof Loss Settlement schedule, and this coverage is applied to roofs at 11 years of age. Erie Insurance is flagging 3-tab shingle roofs over 10 years old for limited or functional replacement. Westfield has started applying depreciation to roofs after their 10th year, and Auto-Owners shifts to Actual Cash Value settlements once a roof reaches 16 years — unless a specific buy-back endorsement is secured.</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">Agents should expect more friction around renewals for properties with roofs between 10 and 20 years old. Clients accustomed to Replacement Cost payouts may be surprised to learn that no longer applies, depending on where their roof age falls in the Replacement Cost threshold. </span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><b><span data-contrast="auto">The Shift Toward Actual Cash Value Settlements</span></b><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">Along with the age of roof restrictions comes the move away from Replacement Cost toward Actual Cash Value (ACV). </span><span data-contrast="none">Actual cash value</span><span data-contrast="none">&nbsp;is calculated by taking the replacement cost value and then subtracting depreciation. </span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">Some carriers are implementing ACV once roofs reach a specific number of years of age.</span><span data-contrast="auto">&nbsp;In the event of a claim, this change can dramatically reduce settlement amounts, often leaving homeowners with a hefty bill for additional necessary repairs.</span><span data-contrast="auto"> &nbsp;</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">While some carriers are offering endorsements that allow clients to “buy back” Replacement Cost coverage up to certain age limits, these solutions often require upfront action and careful documentation. Proactive conversations now can prevent difficult conversations — and potential E&amp;O exposure — later.</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><b><span data-contrast="auto">Deductible Structures Are Evolving Too</span></b><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">Wind and hail deductibles are another evolving piece of the puzzle. Rather than using the standard flat dollar amounts, many insurance carriers are implementing a </span><span data-contrast="auto">percentage-based deductible specific to roof damage by windstorm and hail, often determined by the age and type of roof. </span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335551550&quot;:0,&quot;335551620&quot;:0,&quot;335559738&quot;:240,&quot;335559739&quot;:240}">&nbsp;</span></p>
+<p><span data-contrast="auto">For example, carriers like Westfield, for windstorm and hail damage, offer a range of deductible options:</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335551550&quot;:0,&quot;335551620&quot;:0,&quot;335559738&quot;:240,&quot;335559739&quot;:240}">&nbsp;</span></p>
+<ul>
+<li data-leveltext="" data-font="Symbol" data-listid="5" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559683&quot;:0,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1"><span data-contrast="auto">Percentage Deductibles:</span><span data-contrast="auto"> These are based on a percentage of the Coverage A (dwelling) limit—typically 1%, 2%, 5%, or even 10%.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335551550&quot;:0,&quot;335551620&quot;:0,&quot;335559738&quot;:240,&quot;335559739&quot;:240}">&nbsp;</span></li>
+</ul>
+<ul>
+<li data-leveltext="" data-font="Symbol" data-listid="5" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559683&quot;:0,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1"><span data-contrast="auto">Premium Adjustment Deductibles and Higher Fixed-Dollar Deductibles: </span><span data-contrast="auto">These alternatives provide fixed but higher dollar amounts for windstorm or hail deductibles.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335551550&quot;:0,&quot;335551620&quot;:0,&quot;335559738&quot;:240,&quot;335559739&quot;:240}">&nbsp;</span></li>
+</ul>
+<p><span data-contrast="auto">This shift is particularly relevant for agents in Ohio, where seasonal hail and strong storms are becoming more frequent. Helping clients understand the connection between roof condition and storm deductibles will be key to setting proper expectations.</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><b><span data-contrast="auto">Matching Coverage May Leave Gaps</span></b><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">Another area where surprises can occur is matching coverage for roofs and siding. Insurance policies typically only provide coverage to the damaged area – a common misconception with homeowners who assume their entire roof or exterior will be replaced after partial damage. Some companies, however, do have matching endorsements that can be added on for an additional cost. Westfield’s standard limit for matching materials is $20,000 — which may not fully cover larger properties or homes in HOA-regulated communities.</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">Agents should take the time to review these limits with clients, especially for high-value homes or those with strict aesthetic requirements.</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><b><span data-contrast="auto">Stricter Inspections and Renewal Scrutiny</span></b><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">Finally, property inspections are becoming more rigorous. Carriers, such as Erie Insurance, are paying closer attention to roof condition during both underwriting and renewal. Homes with older 3-tab shingles, visible wear, or suspected installation issues may be flagged for surcharges, non-renewal, or limited coverage options.</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">Encouraging clients to perform regular maintenance, document roof updates, and share inspection results can help safeguard their eligibility — and make renewal conversations easier for everyone involved.</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><b><span data-contrast="auto">How Agents Can Get Ahead</span></b><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">The evolving roof requirements present an opportunity for agents who stay proactive. Reviewing renewal books to identify at-risk roofs, educating clients about buy-back options and deductible structures, and guiding homeowners through potential upgrades can solidify client trust and loyalty.</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">In an environment where roof-related claims and underwriting scrutiny are increasing, independent agents who lead the conversation will be positioned to grow — while those who react late may struggle with frustrated clients and diminished retention.</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">By starting the conversation now, you can help your clients maintain the protection they expect, and help your agency maintain its competitive advantage heading into the rest of 2025.</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><b><span data-contrast="auto">Agent Key Takeaways</span></b><span data-ccp-props="{}">&nbsp;</span></p>
+<ul>
+<li data-leveltext="" data-font="Symbol" data-listid="1" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1"><span data-contrast="auto">Roof Age Impacts Coverage: Watch for homes with roofs older than 10–15 years, especially regarding Replacement Cost eligibility.</span><span data-ccp-props="{}">&nbsp;</span></li>
+</ul>
+<ul>
+<li data-leveltext="" data-font="Symbol" data-listid="1" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1"><span data-contrast="auto">Replacement Cost vs. ACV: Educate clients early about buy-back options to avoid surprises at claim time.</span><span data-ccp-props="{}">&nbsp;</span></li>
+</ul>
+<ul>
+<li data-leveltext="" data-font="Symbol" data-listid="1" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="3" data-aria-level="1"><span data-contrast="auto">Storm Deductibles Are Shifting: Older or non-hail-resistant roofs could mean much higher deductibles after a loss.</span><span data-ccp-props="{}">&nbsp;</span></li>
+</ul>
+<ul>
+<li data-leveltext="" data-font="Symbol" data-listid="1" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="4" data-aria-level="1"><span data-contrast="auto">Matching Coverage Limits: Prepare clients for capped payouts on roof and siding matching. Educate yourself on the endorsements available with the companies you represent.</span><span data-ccp-props="{}">&nbsp;</span></li>
+</ul>
+<ul>
+<li data-leveltext="" data-font="Symbol" data-listid="1" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="5" data-aria-level="1"><span data-contrast="auto">Renewal Inspections Are Increasing: Help clients document roof condition to support smoother underwriting and renewals.</span><span data-ccp-props="{}">&nbsp;</span></li>
+</ul>
+<p><b><span data-contrast="auto">Disclosure</span></b><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">We want to keep the conversation going with our members. If you’re seeing increased frustration around how carriers are implementing new roofing requirements, don’t hesitate to reach out. Our team may have resources to support your conversations with clients.&nbsp;</span></p>
+<p><span data-contrast="auto">The team at OIA reviewed rate filings submitted by carriers to the Ohio Department of Insurance as part of our research. Some of the data reflects recent updates, including letters sent to insureds this year, while other filings include older changes to coverage dating back to 2023. The information provided in this article and our guides is intended to help agents stay informed about these developments.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335551550&quot;:0,&quot;335551620&quot;:0,&quot;335559738&quot;:240,&quot;335559739&quot;:240}">&nbsp;</span></p>
+<hr>
+<p><strong>About the Author</strong></p>
+<p><img decoding="async" class=" wp-image-5180 alignleft" src="https://ohioinsuranceagents.com/wp-content/uploads/2022/10/MicrosoftTeams-image-49.png" alt="" width="1080" height="1080"><a href="mailto:jeanie@ohioinsuranceagents.com">Jeannine Giesler</a>, CISR, CPIA, and past President of the OIA Board of Directors, Foundation for the Advancement of Insurance Professionals, currently serves as Resource Center Advisor for the OIA. The purpose of the Resource&nbsp;Center is to contribute to&nbsp;building a comprehensive library of resource materials for our members. We pride ourselves on being the one-stop shop for all OIA members and work to solve every problem or situation you may come across.</p>
+        </div>
+      </div>
+      <div class="blog-sidebar">
+        <section class="widget annual_archive_widget-2 Annual_Archive_Widget"><h5 class="widget-title">BLOG ARCHIVE</h5>		<ul>
+			<li><a href="/2025/">2025</a></li>
+	<li><a href="/2024/">2024</a></li>
+	<li><a href="/2023/">2023</a></li>
+	<li><a href="/2022/">2022</a></li>
+	<li><a href="/2021/">2021</a></li>
+	<li><a href="/2020/">2020</a></li>
+	<li><a href="/2019/">2019</a></li>
+	<li><a href="/2018/">2018</a></li>
+	<li><a href="/2017/">2017</a></li>
+	<li><a href="/2016/">2016</a></li>
+	<li><a href="/2015/">2015</a></li>
+	<li><a href="/2014/">2014</a></li>
+		</ul>
+		</section><section class="widget tag_cloud-2 widget_tag_cloud"><h5 class="widget-title">Tags</h5><div class="tagcloud"><a href="/tag/advocacy/" class="tag-cloud-link tag-link-6 tag-link-position-1" style="font-size: 22pt;" aria-label="advocacy (41 items)">advocacy</a>
+<a href="/tag/agency-merger/" class="tag-cloud-link tag-link-9 tag-link-position-2" style="font-size: 9.81818181818pt;" aria-label="agency merger (8 items)">agency merger</a>
+<a href="/tag/agency-nation/" class="tag-cloud-link tag-link-7 tag-link-position-3" style="font-size: 9.81818181818pt;" aria-label="agency nation (8 items)">agency nation</a>
+<a href="/tag/agency-ownership/" class="tag-cloud-link tag-link-8 tag-link-position-4" style="font-size: 16.9090909091pt;" aria-label="agency ownership (21 items)">agency ownership</a>
+<a href="/tag/agency-valuation/" class="tag-cloud-link tag-link-83 tag-link-position-5" style="font-size: 8.90909090909pt;" aria-label="agency valuation (7 items)">agency valuation</a>
+<a href="/tag/agent-story/" class="tag-cloud-link tag-link-38 tag-link-position-6" style="font-size: 13.4545454545pt;" aria-label="agent story (13 items)">agent story</a>
+<a href="/tag/awards/" class="tag-cloud-link tag-link-73 tag-link-position-7" style="font-size: 16.9090909091pt;" aria-label="awards (21 items)">awards</a>
+<a href="/tag/blog/" class="tag-cloud-link tag-link-14 tag-link-position-8" style="font-size: 12.7272727273pt;" aria-label="blog (12 items)">blog</a>
+<a href="/tag/claims/" class="tag-cloud-link tag-link-15 tag-link-position-9" style="font-size: 15.8181818182pt;" aria-label="claims (18 items)">claims</a>
+<a href="/tag/commercial-insurance/" class="tag-cloud-link tag-link-76 tag-link-position-10" style="font-size: 8pt;" aria-label="commercial insurance (6 items)">commercial insurance</a>
+<a href="/tag/content-marketing/" class="tag-cloud-link tag-link-48 tag-link-position-11" style="font-size: 8pt;" aria-label="content marketing (6 items)">content marketing</a>
+<a href="/tag/coronavirus/" class="tag-cloud-link tag-link-128 tag-link-position-12" style="font-size: 10.7272727273pt;" aria-label="coronavirus (9 items)">coronavirus</a>
+<a href="/tag/coverages/" class="tag-cloud-link tag-link-16 tag-link-position-13" style="font-size: 21.2727272727pt;" aria-label="coverages (37 items)">coverages</a>
+<a href="/tag/covid-19/" class="tag-cloud-link tag-link-129 tag-link-position-14" style="font-size: 12.1818181818pt;" aria-label="COVID-19 (11 items)">COVID-19</a>
+<a href="/tag/customer-experience/" class="tag-cloud-link tag-link-18 tag-link-position-15" style="font-size: 16.5454545455pt;" aria-label="customer experience (20 items)">customer experience</a>
+<a href="/tag/cyber-insurance/" class="tag-cloud-link tag-link-19 tag-link-position-16" style="font-size: 8.90909090909pt;" aria-label="cyber insurance (7 items)">cyber insurance</a>
+<a href="/tag/cyber-threat/" class="tag-cloud-link tag-link-40 tag-link-position-17" style="font-size: 9.81818181818pt;" aria-label="cyber threat (8 items)">cyber threat</a>
+<a href="/tag/data/" class="tag-cloud-link tag-link-21 tag-link-position-18" style="font-size: 16.9090909091pt;" aria-label="data (21 items)">data</a>
+<a href="/tag/data-breach/" class="tag-cloud-link tag-link-20 tag-link-position-19" style="font-size: 8pt;" aria-label="data breach (6 items)">data breach</a>
+<a href="/tag/digital-marketing/" class="tag-cloud-link tag-link-33 tag-link-position-20" style="font-size: 15.4545454545pt;" aria-label="digital marketing (17 items)">digital marketing</a>
+<a href="/tag/eo/" class="tag-cloud-link tag-link-134 tag-link-position-21" style="font-size: 12.7272727273pt;" aria-label="E&amp;O (12 items)">E&amp;O</a>
+<a href="/tag/eo-coverage/" class="tag-cloud-link tag-link-29 tag-link-position-22" style="font-size: 13.4545454545pt;" aria-label="e&amp;o coverage (13 items)">e&amp;o coverage</a>
+<a href="/tag/election/" class="tag-cloud-link tag-link-57 tag-link-position-23" style="font-size: 13.4545454545pt;" aria-label="election (13 items)">election</a>
+<a href="/tag/errors-and-omissions/" class="tag-cloud-link tag-link-30 tag-link-position-24" style="font-size: 14.9090909091pt;" aria-label="errors and omissions (16 items)">errors and omissions</a>
+<a href="/tag/hiring-training/" class="tag-cloud-link tag-link-59 tag-link-position-25" style="font-size: 16.5454545455pt;" aria-label="hiring &amp; training (20 items)">hiring &amp; training</a>
+<a href="/tag/iacon17/" class="tag-cloud-link tag-link-78 tag-link-position-26" style="font-size: 8pt;" aria-label="IACON17 (6 items)">IACON17</a>
+<a href="/tag/independent-agent/" class="tag-cloud-link tag-link-116 tag-link-position-27" style="font-size: 8pt;" aria-label="Independent Agent (6 items)">Independent Agent</a>
+<a href="/tag/insurance/" class="tag-cloud-link tag-link-274 tag-link-position-28" style="font-size: 8.90909090909pt;" aria-label="insurance (7 items)">insurance</a>
+<a href="/tag/insurance-companies/" class="tag-cloud-link tag-link-79 tag-link-position-29" style="font-size: 14.3636363636pt;" aria-label="insurance companies (15 items)">insurance companies</a>
+<a href="/tag/insurtech/" class="tag-cloud-link tag-link-51 tag-link-position-30" style="font-size: 8.90909090909pt;" aria-label="insurtech (7 items)">insurtech</a>
+<a href="/tag/legislation/" class="tag-cloud-link tag-link-77 tag-link-position-31" style="font-size: 15.4545454545pt;" aria-label="legislation (17 items)">legislation</a>
+<a href="/tag/marketing/" class="tag-cloud-link tag-link-34 tag-link-position-32" style="font-size: 11.4545454545pt;" aria-label="marketing (10 items)">marketing</a>
+<a href="/tag/mission-matters/" class="tag-cloud-link tag-link-159 tag-link-position-33" style="font-size: 12.7272727273pt;" aria-label="mission matters (12 items)">mission matters</a>
+<a href="/tag/next-gen/" class="tag-cloud-link tag-link-39 tag-link-position-34" style="font-size: 16.5454545455pt;" aria-label="next-gen (20 items)">next-gen</a>
+<a href="/tag/ohio-supreme-court/" class="tag-cloud-link tag-link-93 tag-link-position-35" style="font-size: 13.4545454545pt;" aria-label="ohio supreme court (13 items)">ohio supreme court</a>
+<a href="/tag/oia/" class="tag-cloud-link tag-link-74 tag-link-position-36" style="font-size: 17.6363636364pt;" aria-label="oia (23 items)">oia</a>
+<a href="/tag/perpetuation/" class="tag-cloud-link tag-link-45 tag-link-position-37" style="font-size: 20pt;" aria-label="perpetuation (31 items)">perpetuation</a>
+<a href="/tag/personal-lines/" class="tag-cloud-link tag-link-88 tag-link-position-38" style="font-size: 8.90909090909pt;" aria-label="personal lines (7 items)">personal lines</a>
+<a href="/tag/professional-development/" class="tag-cloud-link tag-link-58 tag-link-position-39" style="font-size: 12.1818181818pt;" aria-label="professional development (11 items)">professional development</a>
+<a href="/tag/recruiting/" class="tag-cloud-link tag-link-54 tag-link-position-40" style="font-size: 12.1818181818pt;" aria-label="recruiting (11 items)">recruiting</a>
+<a href="/tag/risk-management/" class="tag-cloud-link tag-link-41 tag-link-position-41" style="font-size: 14.9090909091pt;" aria-label="risk management (16 items)">risk management</a>
+<a href="/tag/social-media/" class="tag-cloud-link tag-link-37 tag-link-position-42" style="font-size: 8.90909090909pt;" aria-label="social media (7 items)">social media</a>
+<a href="/tag/technology/" class="tag-cloud-link tag-link-35 tag-link-position-43" style="font-size: 13.4545454545pt;" aria-label="technology (13 items)">technology</a>
+<a href="/tag/valuation/" class="tag-cloud-link tag-link-46 tag-link-position-44" style="font-size: 18.9090909091pt;" aria-label="valuation (27 items)">valuation</a>
+<a href="/tag/wahve/" class="tag-cloud-link tag-link-55 tag-link-position-45" style="font-size: 9.81818181818pt;" aria-label="wahve (8 items)">wahve</a></div>
+</section><section class="widget annual_archive_widget-3 Annual_Archive_Widget">		<ul>
+			<li><a href="/2025/">2025</a></li>
+	<li><a href="/2024/">2024</a></li>
+	<li><a href="/2023/">2023</a></li>
+	<li><a href="/2022/">2022</a></li>
+	<li><a href="/2021/">2021</a></li>
+	<li><a href="/2020/">2020</a></li>
+	<li><a href="/2019/">2019</a></li>
+	<li><a href="/2018/">2018</a></li>
+	<li><a href="/2017/">2017</a></li>
+	<li><a href="/2016/">2016</a></li>
+	<li><a href="/2015/">2015</a></li>
+	<li><a href="/2014/">2014</a></li>
+		</ul>
+		</section>      </div>
+    </div><!-- .blog-details-wrapper -->
+
+      </div>
+</div><!-- #page-content -->
+
+      <div id="newsletter-signup">
+  <div class="container">
+    <div class="left-column">
+      <h3>Success Starts Here</h3>
+<h5>Sign up for our newsletter today!</h5>
+    </div>
+    <div class="right-column">
+      <p>This is an OIA member benefit, please log in to confirm your membership before signing up!
+
+Not a member? Contact Andrea Heiss at andrea@ohioinsuranceagents.com!</p>
+<p>&nbsp;</p>
+    </div>
+  </div>
+</div><!-- #newsletter-signup -->
+
+<div id="footer">
+  <div class="container">
+    <div class="footer-left-column">
+      <p><a href="https://ohioinsuranceagents.com/"><img loading="lazy" decoding="async" class="alignnone wp-image-27" src="https://ohioinsuranceagents.com/wp-content/uploads/2019/11/footer-logo.png" alt="" width="204" height="48"></a></p>
+<p>Ohio Insurance Agents Association, Inc.<br>
+4266 Tuller Rd Dublin, OH 43017</p>
+
+      <div class="copyright-text">
+        <p>© 2025 – All rights reserved. <a href="https://ohioinsuranceagents.com/privacy/">PRIVACY POLICY</a> | <a href="https://ohioinsuranceagents.com/disclaimer/">DISCLAIMER</a></p>
+      </div>
+    </div>
+    <div class="footer-right-column">
+            <div class="footer-social-links">
+        <h6>Connect With Us</h6>
+          <div class="social-links">
+        <a href="https://www.facebook.com/OhioInsuranceAgents/" target="_blank" rel="nofollow">
+      <i class="fa fa-facebook"></i>
+      <span class="sr-only">facebook</span>
+    </a>
+        <a href="https://www.linkedin.com/company/ohio-insurance-agents/" target="_blank" rel="nofollow">
+      <i class="fa fa-linkedin"></i>
+      <span class="sr-only">linkedin</span>
+    </a>
+        <a href="https://twitter.com/ohioinsagents" target="_blank" rel="nofollow">
+      <i class="fa fa-twitter"></i>
+      <span class="sr-only">twitter</span>
+    </a>
+        <a href="https://www.instagram.com/ohioinsuranceagents/" target="_blank" rel="nofollow">
+      <i class="fa fa-instagram"></i>
+      <span class="sr-only">instagram</span>
+    </a>
+        <a href="https://www.youtube.com/channel/UCM58HKibTtgzZzVwj-1loog" target="_blank" rel="nofollow">
+      <i class="fa fa-youtube"></i>
+      <span class="sr-only">youtube</span>
+    </a>
+        <a href="https://vimeo.com/ohioinsuranceagents" target="_blank" rel="nofollow">
+      <i class="fa fa-vimeo"></i>
+      <span class="sr-only">vimeo</span>
+    </a>
+      </div>
+        </div>
+
+      <p class="p1"><span class="s1">Proudly affiliated with: <a href="https://www.trustedchoice.com/" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="alignnone wp-image-522" src="https://ohioinsuranceagents.com/wp-content/uploads/2019/11/trusted-choice-logo.png" alt="Ohio Insurance Agents is proudly affiliated with Independent Insurance Agents" width="159" height="70"></a></span></p>
+          </div>
+  </div>
+</div><!-- #footer -->    </div><!-- #page -->
+		<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/oia\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript">
+piAId = '841653';
+piCId = '3307';
+piHostname = 'pi.pardot.com';
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script>
+<script async="" type="text/javascript" src="https://connect.livechatinc.com/api/v1/script/5329af38-9da3-495d-84e2-c844ddaa1ff2/widget.js?lcv=1cad5152-96eb-4f30-b0f5-f1eca2d27f9b"></script>
+<div class="wppopups-whole" style="display: none"></div><script type="text/javascript">
+		/* MonsterInsights Scroll Tracking */
+		if ( typeof(jQuery) !== 'undefined' ) {
+		jQuery( document ).ready(function(){
+		function monsterinsights_scroll_tracking_load() {
+		if ( ( typeof(__gaTracker) !== 'undefined' && __gaTracker && __gaTracker.hasOwnProperty( "loaded" ) && __gaTracker.loaded == true ) || ( typeof(__gtagTracker) !== 'undefined' && __gtagTracker ) ) {
+		(function(factory) {
+		factory(jQuery);
+		}(function($) {
+
+		/* Scroll Depth */
+		"use strict";
+		var defaults = {
+		percentage: true
+		};
+
+		var $window = $(window),
+		cache = [],
+		scrollEventBound = false,
+		lastPixelDepth = 0;
+
+		/*
+		* Plugin
+		*/
+
+		$.scrollDepth = function(options) {
+
+		var startTime = +new Date();
+
+		options = $.extend({}, defaults, options);
+
+		/*
+		* Functions
+		*/
+
+		function sendEvent(action, label, scrollDistance, timing) {
+		if ( 'undefined' === typeof MonsterInsightsObject || 'undefined' === typeof MonsterInsightsObject.sendEvent ) {
+		return;
+		}
+			var paramName = action.toLowerCase();
+	var fieldsArray = {
+	send_to: 'G-QHB61V4CKV',
+	non_interaction: true
+	};
+	fieldsArray[paramName] = label;
+
+	if (arguments.length > 3) {
+	fieldsArray.scroll_timing = timing
+	MonsterInsightsObject.sendEvent('event', 'scroll_depth', fieldsArray);
+	} else {
+	MonsterInsightsObject.sendEvent('event', 'scroll_depth', fieldsArray);
+	}
+			}
+
+		function calculateMarks(docHeight) {
+		return {
+		'25%' : parseInt(docHeight * 0.25, 10),
+		'50%' : parseInt(docHeight * 0.50, 10),
+		'75%' : parseInt(docHeight * 0.75, 10),
+		/* Cushion to trigger 100% event in iOS */
+		'100%': docHeight - 5
+		};
+		}
+
+		function checkMarks(marks, scrollDistance, timing) {
+		/* Check each active mark */
+		$.each(marks, function(key, val) {
+		if ( $.inArray(key, cache) === -1 && scrollDistance >= val ) {
+		sendEvent('Percentage', key, scrollDistance, timing);
+		cache.push(key);
+		}
+		});
+		}
+
+		function rounded(scrollDistance) {
+		/* Returns String */
+		return (Math.floor(scrollDistance/250) * 250).toString();
+		}
+
+		function init() {
+		bindScrollDepth();
+		}
+
+		/*
+		* Public Methods
+		*/
+
+		/* Reset Scroll Depth with the originally initialized options */
+		$.scrollDepth.reset = function() {
+		cache = [];
+		lastPixelDepth = 0;
+		$window.off('scroll.scrollDepth');
+		bindScrollDepth();
+		};
+
+		/* Add DOM elements to be tracked */
+		$.scrollDepth.addElements = function(elems) {
+
+		if (typeof elems == "undefined" || !$.isArray(elems)) {
+		return;
+		}
+
+		$.merge(options.elements, elems);
+
+		/* If scroll event has been unbound from window, rebind */
+		if (!scrollEventBound) {
+		bindScrollDepth();
+		}
+
+		};
+
+		/* Remove DOM elements currently tracked */
+		$.scrollDepth.removeElements = function(elems) {
+
+		if (typeof elems == "undefined" || !$.isArray(elems)) {
+		return;
+		}
+
+		$.each(elems, function(index, elem) {
+
+		var inElementsArray = $.inArray(elem, options.elements);
+		var inCacheArray = $.inArray(elem, cache);
+
+		if (inElementsArray != -1) {
+		options.elements.splice(inElementsArray, 1);
+		}
+
+		if (inCacheArray != -1) {
+		cache.splice(inCacheArray, 1);
+		}
+
+		});
+
+		};
+
+		/*
+		* Throttle function borrowed from:
+		* Underscore.js 1.5.2
+		* http://underscorejs.org
+		* (c) 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+		* Underscore may be freely distributed under the MIT license.
+		*/
+
+		function throttle(func, wait) {
+		var context, args, result;
+		var timeout = null;
+		var previous = 0;
+		var later = function() {
+		previous = new Date;
+		timeout = null;
+		result = func.apply(context, args);
+		};
+		return function() {
+		var now = new Date;
+		if (!previous) previous = now;
+		var remaining = wait - (now - previous);
+		context = this;
+		args = arguments;
+		if (remaining <= 0) {
+		clearTimeout(timeout);
+		timeout = null;
+		previous = now;
+		result = func.apply(context, args);
+		} else if (!timeout) {
+		timeout = setTimeout(later, remaining);
+		}
+		return result;
+		};
+		}
+
+		/*
+		* Scroll Event
+		*/
+
+		function bindScrollDepth() {
+
+		scrollEventBound = true;
+
+		$window.on('scroll.scrollDepth', throttle(function() {
+		/*
+		* We calculate document and window height on each scroll event to
+		* account for dynamic DOM changes.
+		*/
+
+		var docHeight = $(document).height(),
+		winHeight = window.innerHeight ? window.innerHeight : $window.height(),
+		scrollDistance = $window.scrollTop() + winHeight,
+
+		/* Recalculate percentage marks */
+		marks = calculateMarks(docHeight),
+
+		/* Timing */
+		timing = +new Date - startTime;
+
+		checkMarks(marks, scrollDistance, timing);
+		}, 500));
+
+		}
+
+		init();
+		};
+
+		/* UMD export */
+		return $.scrollDepth;
+
+		}));
+
+		jQuery.scrollDepth();
+		} else {
+		setTimeout(monsterinsights_scroll_tracking_load, 200);
+		}
+		}
+		monsterinsights_scroll_tracking_load();
+		});
+		}
+		/* End MonsterInsights Scroll Tracking */
+		
+</script><style id="core-block-supports-inline-css" type="text/css">
+/**
+ * Core styles: block-supports
+ */
+
+</style>
+<script type="text/javascript" src="/wp-content/plugins/mgroadmaptimeline/assets/frontend.js?ver=6.8.3" id="mgurt-script-frontend-js"></script>
+<script type="text/javascript" src="/wp-includes/js/dist/hooks.js?ver=be67dc331e61e06d52fa" id="wp-hooks-js"></script>
+<script type="text/javascript" id="wppopups-js-extra">
+/* <![CDATA[ */
+var wppopups_vars = {"is_admin":"","ajax_url":"https:\/\/ohioinsuranceagents.com\/wp-admin\/admin-ajax.php","pid":"8086","is_front_page":"","is_blog_page":"","is_category":"","site_url":"https:\/\/ohioinsuranceagents.com","is_archive":"","is_search":"","is_singular":"1","is_preview":"","facebook":"","twitter":"","val_required":"This field is required.","val_url":"Please enter a valid URL.","val_email":"Please enter a valid email address.","val_number":"Please enter a valid number.","val_checklimit":"You have exceeded the number of allowed selections: {#}.","val_limit_characters":"{count} of {limit} max characters.","val_limit_words":"{count} of {limit} max words.","disable_form_reopen":"__return_false"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/wp-popups-lite/src/assets/js/wppopups.js?ver=2.2.0.2" id="wppopups-js"></script>
+<script type="text/javascript" src="/wp-includes/js/dist/vendor/wp-polyfill.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/vimeo/build/index.js?ver=1d4c58732c235e88d376763710eeea68" id="vimeo-for-wordpress-public-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/counter-number-showcase/assets/js/bootstrap.js?ver=6.8.3" id="wpsm_count_bootstrap-js-front-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/counter-number-showcase/assets/js/counter_nscript.js?ver=6.8.3" id="wpsm-new_count_script3-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/counter-number-showcase/assets/js/waypoints.min.js?ver=6.8.3" id="wpsm-new_count_waypoints-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/counter-number-showcase/assets/js/jquery.counterup.min.js?ver=6.8.3" id="wpsm-new_count_script2-js"></script>
+<script type="text/javascript" id="post-views-counter-frontend-js-extra">
+/* <![CDATA[ */
+var pvcArgsFrontend = {"mode":"js","requestURL":"https:\/\/ohioinsuranceagents.com\/wp-admin\/admin-ajax.php","postID":"8086","nonce":"f1c88a8aa9"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/post-views-counter/js/frontend.js?ver=1.3.2" id="post-views-counter-frontend-js"></script>
+<script type="text/javascript" id="sage/js-js-extra">
+/* <![CDATA[ */
+var js_vars = {"ajaxurl":"https:\/\/ohioinsuranceagents.com\/wp-admin\/admin-ajax.php","theme_url":"https:\/\/ohioinsuranceagents.com\/wp-content\/themes\/oia"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/oia/dist/scripts/main-51c0e7b87b.js?ver=1632779864" id="sage/js-js"></script>
+	   <script type="text/javascript">
+	     	jQuery('.soliloquy-container').removeClass('no-js');
+	   </script>
+	   
+<div class="modal fade footer-modal" id="new-employee-orientation">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <a href="#" class="custom-modal-close" data-dismiss="modal"><span class="fa fa-times"></span></a>
+
+      <div class="modal-body">
+        <script type="text/javascript">
+/* <![CDATA[ */
+
+/* ]]&gt; */
+</script>
+
+                <div class="gf_browser_gecko gform_wrapper gform_legacy_markup_wrapper gform-theme--no-framework" data-form-theme="legacy" data-form-index="0" id="gform_wrapper_6"><div id="gf_6" class="gform_anchor" tabindex="-1"></div><form method="post" enctype="multipart/form-data" target="gform_ajax_frame_6" id="gform_6" action="/blog/2025/analyzing-roofing-policy-changes-in-homeowners-insurance/#gf_6" data-formid="6" novalidate="">
+                        <div class="gform-body gform_body"><ul id="gform_fields_6" class="gform_fields top_label form_sublabel_below description_below validation_below"><li id="field_6_14" class="gfield gfield--type-honeypot gform_validation_container field_sublabel_below gfield--has-description field_description_below field_validation_below gfield_visibility_visible"><label class="gfield_label gform-field-label" for="input_6_14">Email</label><div class="ginput_container"><input name="input_14" id="input_6_14" type="text" value="" autocomplete="new-password"></div><div class="gfield_description" id="gfield_description_6_14">This field is for validation purposes and should be left unchanged.</div></li><li id="field_6_1" class="gfield gfield--type-text gfield--input-type-text gf_left_half gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"><label class="gfield_label gform-field-label" for="input_6_1">First Name<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_text"><input name="input_1" id="input_6_1" type="text" value="" class="large" placeholder="First Name" aria-required="true" aria-invalid="false"></div></li><li id="field_6_4" class="gfield gfield--type-text gfield--input-type-text gf_right_half gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"><label class="gfield_label gform-field-label" for="input_6_4">Last Name<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_text"><input name="input_4" id="input_6_4" type="text" value="" class="large" placeholder="Last Name" aria-required="true" aria-invalid="false"></div></li><li id="field_6_7" class="gfield gfield--type-text gfield--input-type-text gf_left_half gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"><label class="gfield_label gform-field-label" for="input_6_7">Agency/Company<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_text"><input name="input_7" id="input_6_7" type="text" value="" class="large" placeholder="Agency/Company" aria-required="true" aria-invalid="false"></div></li><li id="field_6_5" class="gfield gfield--type-email gfield--input-type-email gf_right_half gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"><label class="gfield_label gform-field-label" for="input_6_5">Email Address<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_email">
+                            <input name="input_5" id="input_6_5" type="email" value="" class="large" placeholder="Email Address" aria-required="true" aria-invalid="false">
+                        </div></li><li id="field_6_9" class="gfield gfield--type-date gfield--input-type-date gfield--input-type-datepicker gfield--datepicker-no-icon gf_left_half gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"><label class="gfield_label gform-field-label" for="input_6_9">Birthdate<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_date">
+                            <input name="input_9" id="input_6_9" type="text" value="" class="datepicker gform-datepicker mdy datepicker_no_icon gdatepicker-no-icon" placeholder="Birthdate" aria-describedby="input_6_9_date_format" aria-invalid="false" aria-required="true">
+                            <span id="input_6_9_date_format" class="screen-reader-text">MM slash DD slash YYYY</span>
+                        </div>
+                        <input type="hidden" id="gforms_calendar_icon_input_6_9" class="gform_hidden" value="https://ohioinsuranceagents.com/wp-content/plugins/gravityforms/images/datepicker/datepicker.svg"></li><li id="field_6_6" class="gfield gfield--type-phone gfield--input-type-phone gf_right_half gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"><label class="gfield_label gform-field-label" for="input_6_6">Phone Number<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_phone"><input name="input_6" id="input_6_6" type="tel" value="" class="large" placeholder="Phone Number" aria-required="true" aria-invalid="false"></div></li><li id="field_6_10" class="gfield gfield--type-address gfield--input-type-address gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"><label class="gfield_label gform-field-label gfield_label_before_complex">Address<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label>    
+                    <div class="ginput_complex ginput_container has_street has_street2 has_city has_state has_zip ginput_container_address gform-grid-row" id="input_6_10">
+                         <span class="ginput_full address_line_1 ginput_address_line_1 gform-grid-col" id="input_6_10_1_container">
+                                        <input type="text" name="input_10.1" id="input_6_10_1" value="" aria-required="true">
+                                        <label for="input_6_10_1" id="input_6_10_1_label" class="gform-field-label gform-field-label--type-sub ">Street Address</label>
+                                    </span><span class="ginput_full address_line_2 ginput_address_line_2 gform-grid-col" id="input_6_10_2_container">
+                                        <input type="text" name="input_10.2" id="input_6_10_2" value="" aria-required="false">
+                                        <label for="input_6_10_2" id="input_6_10_2_label" class="gform-field-label gform-field-label--type-sub ">Address Line 2</label>
+                                    </span><span class="ginput_left address_city ginput_address_city gform-grid-col" id="input_6_10_3_container">
+                                    <input type="text" name="input_10.3" id="input_6_10_3" value="" aria-required="true">
+                                    <label for="input_6_10_3" id="input_6_10_3_label" class="gform-field-label gform-field-label--type-sub ">City</label>
+                                 </span><span class="ginput_right address_state ginput_address_state gform-grid-col" id="input_6_10_4_container">
+                                        <select name="input_10.4" id="input_6_10_4" aria-required="true"><option value="" selected="selected"></option><option value="Alabama">Alabama</option><option value="Alaska">Alaska</option><option value="American Samoa">American Samoa</option><option value="Arizona">Arizona</option><option value="Arkansas">Arkansas</option><option value="California">California</option><option value="Colorado">Colorado</option><option value="Connecticut">Connecticut</option><option value="Delaware">Delaware</option><option value="District of Columbia">District of Columbia</option><option value="Florida">Florida</option><option value="Georgia">Georgia</option><option value="Guam">Guam</option><option value="Hawaii">Hawaii</option><option value="Idaho">Idaho</option><option value="Illinois">Illinois</option><option value="Indiana">Indiana</option><option value="Iowa">Iowa</option><option value="Kansas">Kansas</option><option value="Kentucky">Kentucky</option><option value="Louisiana">Louisiana</option><option value="Maine">Maine</option><option value="Maryland">Maryland</option><option value="Massachusetts">Massachusetts</option><option value="Michigan">Michigan</option><option value="Minnesota">Minnesota</option><option value="Mississippi">Mississippi</option><option value="Missouri">Missouri</option><option value="Montana">Montana</option><option value="Nebraska">Nebraska</option><option value="Nevada">Nevada</option><option value="New Hampshire">New Hampshire</option><option value="New Jersey">New Jersey</option><option value="New Mexico">New Mexico</option><option value="New York">New York</option><option value="North Carolina">North Carolina</option><option value="North Dakota">North Dakota</option><option value="Northern Mariana Islands">Northern Mariana Islands</option><option value="Ohio">Ohio</option><option value="Oklahoma">Oklahoma</option><option value="Oregon">Oregon</option><option value="Pennsylvania">Pennsylvania</option><option value="Puerto Rico">Puerto Rico</option><option value="Rhode Island">Rhode Island</option><option value="South Carolina">South Carolina</option><option value="South Dakota">South Dakota</option><option value="Tennessee">Tennessee</option><option value="Texas">Texas</option><option value="Utah">Utah</option><option value="U.S. Virgin Islands">U.S. Virgin Islands</option><option value="Vermont">Vermont</option><option value="Virginia">Virginia</option><option value="Washington">Washington</option><option value="West Virginia">West Virginia</option><option value="Wisconsin">Wisconsin</option><option value="Wyoming">Wyoming</option><option value="Armed Forces Americas">Armed Forces Americas</option><option value="Armed Forces Europe">Armed Forces Europe</option><option value="Armed Forces Pacific">Armed Forces Pacific</option></select>
+                                        <label for="input_6_10_4" id="input_6_10_4_label" class="gform-field-label gform-field-label--type-sub ">State</label>
+                                      </span><span class="ginput_left address_zip ginput_address_zip gform-grid-col" id="input_6_10_5_container">
+                                    <input type="text" name="input_10.5" id="input_6_10_5" value="" aria-required="true">
+                                    <label for="input_6_10_5" id="input_6_10_5_label" class="gform-field-label gform-field-label--type-sub ">ZIP Code</label>
+                                </span><input type="hidden" class="gform_hidden" name="input_10.6" id="input_6_10_6" value="United States">
+                    <div class="gf_clear gf_clear_complex"></div>
+                </div></li><li id="field_6_11" class="gfield gfield--type-select gfield--input-type-select gf_left_half gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"><label class="gfield_label gform-field-label" for="input_6_11">Course<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_select"><select name="input_11" id="input_6_11" class="medium gfield_select" aria-required="true" aria-invalid="false"><option value="" selected="selected" class="gf_placeholder">Course</option><option value="New Employee Orientation for Agency Personnel">New Employee Orientation for Agency Personnel</option><option value="Delivering Quality Service to the Customer and Employer">Delivering Quality Service to the Customer and Employer</option><option value="Personal Lines Coverage Basics">Personal Lines Coverage Basics</option><option value="Commercial Lines Coverage Basics">Commercial Lines Coverage Basics</option></select></div></li><li id="field_6_12" class="gfield gfield--type-text gfield--input-type-text gf_right_half gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"><label class="gfield_label gform-field-label" for="input_6_12">Session (starting month)<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_text"><input name="input_12" id="input_6_12" type="text" value="" class="medium" placeholder="Session (starting month)" aria-required="true" aria-invalid="false"></div></li><li id="field_6_13" class="gfield gfield--type-captcha gfield--input-type-captcha gfield--width-full field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"><label class="gfield_label gform-field-label" for="input_6_13">CAPTCHA</label><div id="input_6_13" class="ginput_container ginput_recaptcha" data-sitekey="6LfpyOwUAAAAAJblCsjKDcB9vgu5zSJxy_SzY69_" data-theme="light" data-tabindex="0" data-badge=""></div></li></ul></div>
+        <div class="gform-footer gform_footer top_label"> <button type="submit" id="gform_submit_button_6" class="gform_button button" onclick="gform.submission.handleButtonClick(this);" data-submission-type="submit">Get Started</button> <input type="hidden" name="gform_ajax" value="form_id=6&amp;title=&amp;description=&amp;tabindex=0&amp;theme=legacy&amp;styles=[]&amp;hash=c286143ef13d5b466600a644256898e2">
+            <input type="hidden" class="gform_hidden" name="gform_submission_method" data-js="gform_submission_method_6" value="iframe">
+            <input type="hidden" class="gform_hidden" name="gform_theme" data-js="gform_theme_6" id="gform_theme_6" value="legacy">
+            <input type="hidden" class="gform_hidden" name="gform_style_settings" data-js="gform_style_settings_6" id="gform_style_settings_6" value="[]">
+            <input type="hidden" class="gform_hidden" name="is_submit_6" value="1">
+            <input type="hidden" class="gform_hidden" name="gform_submit" value="6">
+            
+            <input type="hidden" class="gform_hidden" name="gform_unique_id" value="">
+            <input type="hidden" class="gform_hidden" name="state_6" value="WyJbXSIsImI3ZmJhZjYyZmQwNDJkMGJkYWNjYTIxZWVmYjdkODVjIl0=">
+            <input type="hidden" autocomplete="off" class="gform_hidden" name="gform_target_page_number_6" id="gform_target_page_number_6" value="0">
+            <input type="hidden" autocomplete="off" class="gform_hidden" name="gform_source_page_number_6" id="gform_source_page_number_6" value="1">
+            <input type="hidden" name="gform_field_values" value="">
+            
+        </div>
+                        </form>
+                        </div>
+		                <iframe style="display:none;width:0px;height:0px;" src="about:blank" name="gform_ajax_frame_6" id="gform_ajax_frame_6" title="This iframe contains the logic required to handle Ajax powered Gravity Forms."></iframe>
+		                <script type="text/javascript">
+/* <![CDATA[ */
+ gform.initializeOnLoaded( function() {gformInitSpinner( 6, 'https://ohioinsuranceagents.com/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery('#gform_ajax_frame_6').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_6');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_6').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_6').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_6').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_6').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_6').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_6').val();gformInitSpinner( 6, 'https://ohioinsuranceagents.com/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery(document).trigger('gform_page_loaded', [6, current_page]);window['gf_submitting_6'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}jQuery('#gform_wrapper_6').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_6').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [6]);window['gf_submitting_6'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_6').text());}else{jQuery('#gform_6').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger("gform_pre_post_render", [{ formId: "6", currentPage: "current_page", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_6" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_6";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_6" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 6, current_page );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );} ); 
+/* ]]&gt; */
+</script>
+
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="modal fade footer-modal" id="contact-oia">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <a href="#" class="custom-modal-close" data-dismiss="modal"><span class="fa fa-times"></span></a>
+
+      <div class="modal-body">
+        
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+<iframe id="_hjSafeContext_21874968" title="_hjSafeContext" tabindex="-1" aria-hidden="true" src="about:blank" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe></body></html>

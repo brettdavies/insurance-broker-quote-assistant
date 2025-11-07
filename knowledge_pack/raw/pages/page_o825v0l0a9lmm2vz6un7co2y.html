@@ -1,0 +1,864 @@
+<!DOCTYPE html><html lang="en-US" class="js no-touchevents no-forcetouch" style="--vh: 6px;"><head>
+    <!-- Google Tag Manager -->
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-186039847-1&amp;cx=c&amp;gtm=4e5b50"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-SSNW92QF5P&amp;cx=c&amp;gtm=4e5b50"></script><script src="https://connect.facebook.net/signals/config/319583516088017?v=next&amp;r=stable&amp;domain=curtislegalgroup.com&amp;hme=5bd299cb4a477effb7bd992f8c033bfd3316c17b5e8e681c5c577860e1b0bfc7&amp;ex_m=90%2C151%2C131%2C19%2C66%2C67%2C124%2C62%2C42%2C125%2C71%2C61%2C138%2C79%2C13%2C89%2C27%2C119%2C111%2C69%2C72%2C118%2C135%2C98%2C140%2C7%2C3%2C4%2C6%2C5%2C2%2C80%2C88%2C141%2C218%2C162%2C56%2C220%2C221%2C49%2C177%2C26%2C68%2C226%2C225%2C165%2C29%2C55%2C8%2C58%2C84%2C85%2C86%2C91%2C115%2C28%2C25%2C117%2C114%2C113%2C132%2C70%2C134%2C133%2C44%2C54%2C108%2C12%2C137%2C39%2C207%2C209%2C172%2C22%2C23%2C24%2C16%2C17%2C38%2C34%2C36%2C35%2C75%2C81%2C83%2C96%2C123%2C126%2C40%2C97%2C20%2C18%2C102%2C63%2C32%2C128%2C127%2C129%2C120%2C21%2C31%2C53%2C95%2C136%2C64%2C15%2C130%2C30%2C187%2C158%2C268%2C205%2C149%2C190%2C183%2C159%2C93%2C116%2C74%2C106%2C48%2C41%2C104%2C105%2C110%2C52%2C14%2C112%2C103%2C59%2C43%2C99%2C47%2C50%2C46%2C87%2C139%2C0%2C109%2C11%2C107%2C9%2C1%2C51%2C82%2C57%2C60%2C101%2C78%2C77%2C45%2C121%2C76%2C73%2C65%2C100%2C92%2C37%2C122%2C33%2C94%2C10%2C142" async=""></script><script src="https://connect.facebook.net/signals/plugins/openbridge3.js?v=next" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js?v=next"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-NB32QCD"></script><script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NB32QCD');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+<script type="text/javascript">
+/* <![CDATA[ */
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),document.addEventListener("gform/theme/scripts_loaded",function(){gform.themeScriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,themeScriptsLoaded:!1,isFormEditor:()=>"function"==typeof InitializeEditor,callIfLoaded:function(o){return!(!gform.domLoaded||!gform.scriptsLoaded||!gform.themeScriptsLoaded&&!gform.isFormEditor()||(gform.isFormEditor()&&console.warn("The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1."),o(),0))},initializeOnLoaded:function(o){gform.callIfLoaded(o)||(document.addEventListener("gform_main_scripts_loaded",()=>{gform.scriptsLoaded=!0,gform.callIfLoaded(o)}),document.addEventListener("gform/theme/scripts_loaded",()=>{gform.themeScriptsLoaded=!0,gform.callIfLoaded(o)}),window.addEventListener("DOMContentLoaded",()=>{gform.domLoaded=!0,gform.callIfLoaded(o)}))},hooks:{action:{},filter:{}},addAction:function(o,r,e,t){gform.addHook("action",o,r,e,t)},addFilter:function(o,r,e,t){gform.addHook("filter",o,r,e,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,r){gform.removeHook("action",o,r)},removeFilter:function(o,r,e){gform.removeHook("filter",o,r,e)},addHook:function(o,r,e,t,n){null==gform.hooks[o][r]&&(gform.hooks[o][r]=[]);var d=gform.hooks[o][r];null==n&&(n=r+"_"+d.length),gform.hooks[o][r].push({tag:n,callable:e,priority:t=null==t?10:t})},doHook:function(r,o,e){var t;if(e=Array.prototype.slice.call(e,1),null!=gform.hooks[r][o]&&((o=gform.hooks[r][o]).sort(function(o,r){return o.priority-r.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==r?t.apply(null,e):e[0]=t.apply(null,e)})),"filter"==r)return e[0]},removeHook:function(o,r,t,n){var e;null!=gform.hooks[o][r]&&(e=(e=gform.hooks[o][r]).filter(function(o,r,e){return!!(null!=n&&n!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][r]=e)}});
+/* ]]> */
+</script>
+
+    <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="google-site-verification" content="3i9iMVgNkdcpTcJap-fvEkPmp-LfO2gX8GQzXFUeHL8">
+    <title>Is It Illegal to Drive Without Insurance in California? (Insurance Laws Explained) | Curtis Legal Group</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://curtislegalgroup.com/wp-content/themes/curtis-legal-group/assets/images/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://curtislegalgroup.com/wp-content/themes/curtis-legal-group/assets/images/favicons/favicon-16x16.png" sizes="16x16">
+
+    <!-- WordPress -->
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="https://curtislegalgroup.com/xmlrpc.php">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<meta name="uri-translation" content="on"><link rel="alternate" hreflang="en" href="https://curtislegalgroup.com/news/driving-without-car-insurance-california/">
+<link rel="alternate" hreflang="es" href="https://curtislegalgroup.com/es/news/driving-without-car-insurance-california/">
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v25.5 (Yoast SEO v25.5) - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="description" content="Is it illegal to drive without insurance in California? If you were injured in a car accident by an uninsured driver, call Curtis Legal Group.">
+	<link rel="canonical" href="https://curtislegalgroup.com/news/driving-without-car-insurance-california/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Is It Illegal to Drive Without Insurance in California? (Insurance Laws Explained)">
+	<meta property="og:description" content="Is it illegal to drive without insurance in California? If you were injured in a car accident by an uninsured driver, call Curtis Legal Group.">
+	<meta property="og:url" content="https://curtislegalgroup.com/news/driving-without-car-insurance-california/">
+	<meta property="og:site_name" content="Curtis Legal Group">
+	<meta property="article:published_time" content="2024-12-12T19:01:02+00:00">
+	<meta property="og:image" content="https://curtislegalgroup.com/wp-content/uploads/2024/12/is-it-illegal-to-drive-without-insurance-in-california.png">
+	<meta property="og:image:width" content="750">
+	<meta property="og:image:height" content="500">
+	<meta property="og:image:type" content="image/png">
+	<meta name="author" content="Ralph Curtis">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:label1" content="Written by">
+	<meta name="twitter:data1" content="Ralph Curtis">
+	<meta name="twitter:label2" content="Est. reading time">
+	<meta name="twitter:data2" content="6 minutes">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://curtislegalgroup.com/news/driving-without-car-insurance-california/","url":"https://curtislegalgroup.com/news/driving-without-car-insurance-california/","name":"Is It Illegal to Drive Without Insurance in California? (Insurance Laws Explained) | Curtis Legal Group","isPartOf":{"@id":"https://curtislegalgroup.com/#website"},"primaryImageOfPage":{"@id":"https://curtislegalgroup.com/news/driving-without-car-insurance-california/#primaryimage"},"image":{"@id":"https://curtislegalgroup.com/news/driving-without-car-insurance-california/#primaryimage"},"thumbnailUrl":"https://curtislegalgroup.com/wp-content/uploads/2024/12/is-it-illegal-to-drive-without-insurance-in-california.png","datePublished":"2024-12-12T19:01:02+00:00","author":{"@id":"https://curtislegalgroup.com/#/schema/person/b736f73cfdfbc87e3e078d7cd756469e"},"description":"Is it illegal to drive without insurance in California? If you were injured in a car accident by an uninsured driver, call Curtis Legal Group.","breadcrumb":{"@id":"https://curtislegalgroup.com/news/driving-without-car-insurance-california/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://curtislegalgroup.com/news/driving-without-car-insurance-california/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://curtislegalgroup.com/news/driving-without-car-insurance-california/#primaryimage","url":"https://curtislegalgroup.com/wp-content/uploads/2024/12/is-it-illegal-to-drive-without-insurance-in-california.png","contentUrl":"https://curtislegalgroup.com/wp-content/uploads/2024/12/is-it-illegal-to-drive-without-insurance-in-california.png","width":750,"height":500,"caption":"is it illegal to drive without insurance in california"},{"@type":"BreadcrumbList","@id":"https://curtislegalgroup.com/news/driving-without-car-insurance-california/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://curtislegalgroup.com/"},{"@type":"ListItem","position":2,"name":"Is It Illegal to Drive Without Insurance in California? (Insurance Laws Explained)"}]},{"@type":"WebSite","@id":"https://curtislegalgroup.com/#website","url":"https://curtislegalgroup.com/","name":"Curtis Legal Group","description":"Personal Injury Law Firm Northern California","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://curtislegalgroup.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Person","@id":"https://curtislegalgroup.com/#/schema/person/b736f73cfdfbc87e3e078d7cd756469e","name":"Ralph Curtis","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://curtislegalgroup.com/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/7b32efd45e14353c645b661b9c11716c8c889aa0f983fa13e895a902e6b7ace6?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/7b32efd45e14353c645b661b9c11716c8c889aa0f983fa13e895a902e6b7ace6?s=96&d=mm&r=g","caption":"Ralph Curtis"},"sameAs":["https://wordpress-628352-4544643.cloudwaysapps.com/lawyers/ralph-curtis/"]}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/curtislegalgroup.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="google-fonts-css" href="https://curtislegalgroup.com/wp-content/themes/curtis-legal-group/assets/css/google-fonts-self-hosted.css?ver=1.5.5" type="text/css" media="all">
+<link rel="stylesheet" id="fontawesome.min-css" href="https://curtislegalgroup.com/wp-content/themes/curtis-legal-group/assets/css/fontawesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="style-css" href="https://curtislegalgroup.com/wp-content/themes/curtis-legal-group/assets/css/style.css?ver=1.5.5" type="text/css" media="all">
+        <style>
+            .dark-section,
+            .dark-section.siderbar-primary:before,
+            .menu ul,
+            .dark-section .widget-menu:before,
+            .dark-section .widget-practice-area:before {
+                background:#233a28;color:#fff;            }
+
+            .light-section {
+                background:#FFF;color:#233a28;            }
+
+            .customMarker {
+                -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(81deg) brightness(270%);
+                filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(81deg) brightness(270%);
+            }
+        </style>
+
+<!-- Meta Pixel Code -->
+<script type="text/javascript">
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js?v=next');
+</script>
+<!-- End Meta Pixel Code -->
+<script type="text/javascript">var url = window.location.origin + '?ob=open-bridge';
+            fbq('set', 'openbridge', '319583516088017', url);
+fbq('init', '319583516088017', {}, {
+    "agent": "wordpress-6.8.3-4.1.4"
+})</script><script type="text/javascript">
+    fbq('track', 'PageView', []);
+  </script>		<style type="text/css" id="wp-custom-css">
+			/* darkgreen: #233a28;
+ * light-green:#7f9654;
+ * yellow-gold: #eade8b;
+ */
+
+
+
+/* home page section */
+#introduction {
+	padding-left: 2rem !important;
+}
+
+.badge-box {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.light-grey {
+	padding: 2rem;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	margin-bottom: 2rem;
+}
+/* home page - end */
+
+.blog-top-header {
+	padding: 1rem !important;
+}
+
+.blog-top-header {
+	background-color: white;
+}
+
+.blog-top-header > .container > .mb-6 {
+	margin: 0rem !important;
+	color: #233a28;
+	font-size: 2rem !important;
+}
+
+h1.entry-title {
+	font-size: 4.2rem !important;
+font-weight: 500;
+}
+
+blockquote {
+	background-color: white;
+}
+
+@media screen and (max-width: 600px) {
+h1.entry-title {
+	font-size: 3.2rem !important;
+	
+	}
+	
+	.light-grey {
+		padding: 1rem
+	}
+}		</style>
+		    <script type="application/ld+json">
+{
+  "@context": "https://www.schema.org/",
+"@type": [
+      	"LocalBusiness",
+      	"LegalService"
+      	],
+  "name": "Curtis Legal Group - Modesto",
+  "url": "https://curtislegalgroup.com/",
+  "@id": "https://curtislegalgroup.com/",
+  "logo": "https://curtislegalgroup.com/wp-content/uploads/2021/04/logo.png",
+  "image": "https://curtislegalgroup.com/wp-content/uploads/2021/04/logo.png",
+   "email": "info@curtislegalgroup.com",
+  "description": "Curtis Legal Group is a California Personal Injury Law Firm with offices in Sacramento, Modesto, Stockton, and Fresno California. Our personal injury lawyers handle many types of personal injury cases from car accidents to wrongful death, work injuries and more. If you have been injured or lost a loved from an accident, please contact our office to schedule a free consultation, and let us use our skills to start helping you today.",
+  "telephone": [
+    "2095211800",
+    "+18005293080"],
+  "sameAs": [
+    "https://www.facebook.com/curtislegalgroup",
+    "https://twitter.com/NorCalLawTeam",
+    "https://www.linkedin.com/company/curtis-legal-group"],
+  "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+       "Monday",
+       "Tuesday",
+       "Wednesday",
+       "Thursday",
+       "Friday"     
+     ],
+     "opens": "08:00",
+     "closes": "17:00"
+   }],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.7",
+    "reviewCount": "183"
+  },
+  "priceRange": "Free Consultation",
+  "currenciesAccepted": "USD",
+  "foundingDate": "1975",
+  "hasMap": "https://www.google.com/maps/place/Curtis+Legal+Group/@37.6435514,-120.9980531,15z/data=!4m6!3m5!1s0x809053f26328de55:0x724efac6b5a809ed!8m2!3d37.6435514!4d-120.9980531!16s%2Fg%2F1tmgcp31?hl=en&entry=ttu",
+  "address": {
+	"@type": "PostalAddress",
+	"streetAddress": "1300 K St Suite B",
+	"addressLocality": "Modesto",
+	"addressRegion": "CA",
+	"postalCode": "95354",
+	"addressCountry": "US"
+		},
+  "location": {
+	"@type": "Place",
+	"geo": {
+	"@type": "GeoCoordinates",
+		"latitude": 37.6435514,
+        "longitude": -120.9980531
+			}
+		},
+  "areaServed": [{
+	"@type": "City",
+	"name": ["Sacramento-Modesto-Stockton"]
+		}],
+"department": [
+	{
+	"@type":
+      	"LegalService",
+	"name": "Curtis Legal Group - Sacramento",
+	"image": "https://curtislegalgroup.com/wp-content/uploads/2021/04/logo.png",
+    "telephone": [ 
+      "9163795895",
+      "+118005293080"],
+	"address": {
+		"@type": "PostalAddress",
+		"streetAddress": "601 University Ave #181",
+		"addressLocality": "Sacramento",
+		"addressRegion": "CA",
+		"postalCode": "95825",
+		"addressCountry": "US"
+		},
+    "priceRange": "Free Consultation",
+    "currenciesAccepted": "USD",
+    "hasMap": "https://www.google.com/maps/place/Curtis+Legal+Group/@38.5681526,-121.4198031,15z/data=!4m6!3m5!1s0x809ad12eafb07155:0x91172099e28a9093!8m2!3d38.5681526!4d-121.4198031!16s%2Fg%2F1tdhf7l8?hl=en&entry=ttu",
+	"location": {
+		"@type": "Place",
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": "38.5681526",
+			"longitude": "-121.4198031"
+			}
+		},
+	"areaServed": [{
+	"@type": "City",
+	"name": ["Modesto", "Sacramento", "Fresno", "Stockton"]		
+		}]
+	},
+	{
+	"@type": [
+      	"LocalBusiness",
+      	"LegalService"
+         ],
+	"name": "Curtis Legal Group - Fresno",
+	"image": "https://curtislegalgroup.com/wp-content/uploads/2021/04/logo.png",
+    "telephone": [
+      "5594899199",
+      "+18005293080"],
+	"address": {
+		"@type": "PostalAddress",
+		"streetAddress": "1444 Fulton St 207",
+		"addressLocality": "Fresno",
+		"addressRegion": "CA",
+		"postalCode": "93721",
+		"addressCountry": "US"
+		},
+    "priceRange": "Free Consultation",
+    "currenciesAccepted": "USD",
+    "hasMap": "https://www.google.com/maps/place/Curtis+Legal+Group/@36.7388809,-119.7952161,15z/data=!4m6!3m5!1s0x80946185758bf82b:0x9f0402c8f70f2192!8m2!3d36.7388809!4d-119.7952161!16s%2Fg%2F11lfpylhyp?hl=en&entry=ttu",  
+	"location": {
+		"@type": "Place",
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": "36.7388809",
+			"longitude": "-119.7952161"
+			}
+		},
+      "areaServed": [{
+	"@type": "City",
+	"name": ["Modesto", "Sacramento", "Fresno", "Stockton"]		
+		}]
+	},
+	{
+"@type": [
+      	"LocalBusiness",
+      	"LegalService"
+         ],
+	"name": "Curtis Legal Group - Stockton",
+	"image": "https://curtislegalgroup.com/wp-content/uploads/2021/04/logo.png",
+    "telephone": [
+      "2094723462",
+      "+18005293080"],
+	"address": {
+		"@type": "PostalAddress",
+		"streetAddress": "5250 Claremont Ave Suite #126",
+		"addressLocality": "Stockton",
+		"addressRegion": "CA",
+		"postalCode": "95207",
+		"addressCountry": "US"
+		},
+    "priceRange": "Free Consultation",
+    "currenciesAccepted": "USD",
+    "hasMap": "https://www.google.com/maps/place/Curtis+Legal+Group/@37.9987212,-121.3094186,15z/data=!4m2!3m1!1s0x0:0x35c2dcf36ce6d547?sa=X&ved=2ahUKEwjrgZjS2dWDAxWdmWoFHRQzDVsQ_BJ6BAhNEAA&hl=en", 
+	"location": {
+		"@type": "Place",
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": "37.9987212",
+			"longitude": "-121.3094186"
+			}
+		},
+	"areaServed": [{
+		"@type": "City",
+		"name": ["Modesto", "Sacramento", "Fresno", "Stockton"]
+		}]
+	}]
+}
+</script>    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-186039847-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-186039847-1');
+    </script>
+<style class="gtranslate_css">.gt_container-tij8vb .gt_switcher{font-family:Arial;font-size:12pt;text-align:left;cursor:pointer;overflow:hidden;width:173px;line-height:0}.gt_container-tij8vb .gt_switcher a{text-decoration:none;display:block;font-size:12pt;box-sizing:content-box}.gt_container-tij8vb .gt_switcher a img{width:24px;height:24px;vertical-align:middle;display:inline;border:0;padding:0;margin:0;opacity:0.8}.gt_container-tij8vb .gt_switcher a:hover img{opacity:1}.gt_container-tij8vb .gt_switcher .gt_selected{background:#fff linear-gradient(180deg, #efefef 0%, #fff 70%);position:relative;z-index:9999}.gt_container-tij8vb .gt_switcher .gt_selected a{border:1px solid #ccc;color:#666;padding:3px 5px;width:161px}.gt_container-tij8vb .gt_switcher .gt_selected a:after{height:24px;display:inline-block;position:absolute;right:10px;width:15px;background-position:50%;background-size:11px;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 285 285'><path d='M282 76.5l-14.2-14.3a9 9 0 0 0-13.1 0L142.5 174.4 30.3 62.2a9 9 0 0 0-13.2 0L3 76.5a9 9 0 0 0 0 13.1l133 133a9 9 0 0 0 13.1 0l133-133a9 9 0 0 0 0-13z' style='fill:%23666'/></svg>");background-repeat:no-repeat;content:""!important;transition:all .2s}.gt_container-tij8vb .gt_switcher .gt_selected a.open:after{transform:rotate(-180deg)}.gt_container-tij8vb .gt_switcher .gt_selected a:hover{background:#fff}.gt_container-tij8vb .gt_switcher .gt_current{display:none}.gt_container-tij8vb .gt_switcher .gt_option{position:relative;z-index:9998;border-left:1px solid #ccc;border-right:1px solid #ccc;border-top:1px solid #ccc;background-color:#eee;display:none;width:171px;max-height:198px;height:0;box-sizing:content-box;overflow-y:auto;overflow-x:hidden;transition:height 0.5s ease-in-out}.gt_container-tij8vb .gt_switcher .gt_option a{color:#000;padding:3px 5px}.gt_container-tij8vb .gt_switcher .gt_option a:hover{background:#fff}.gt_container-tij8vb .gt_switcher .gt_option::-webkit-scrollbar-track{background-color:#f5f5f5}.gt_container-tij8vb .gt_switcher .gt_option::-webkit-scrollbar{width:5px}.gt_container-tij8vb .gt_switcher .gt_option::-webkit-scrollbar-thumb{background-color:#888}</style></head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NB32QCD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="page-wrapper">
+        <div class="sticky-wrapper"><header class="header sticky-header">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                                            <div class="col-auto">
+                            <a href="https://curtislegalgroup.com/" class="logo" title="Curtis Legal Group">
+                                <img src="https://curtislegalgroup.com/wp-content/uploads/2021/04/logo.png" alt="" width="1308" height="198">
+                            </a>
+                        </div><!-- End .col-auto -->
+                                        <div class="col ml-auto d-flex flex-column">
+                        <div class="top-row d-none d-lg-flex align-items-center flex-wrap justify-content-end">
+                            <ul class="header-contact-list">
+                                                                            <li>
+                                                <a href="/contact/">
+                                                    <i class="icon-arrow-right"></i>Get a free consultation                                                </a>
+                                            </li>
+                                                            </ul><!-- End .header-contact-list -->
+                                                            <a href="tel:18005293080" class="header-tel">
+                                    1-800-LAW-3080                                </a><!-- End .header-tel -->
+                                                        </div><!-- End .top-row -->
+                        <div class="bottom-row d-flex align-items-center flex-wrap justify-content-end">
+                            <nav class="main-nav d-none d-lg-flex">
+                                <ul class="menu">
+                                    <li id="menu-item-1118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1118"><a href="https://curtislegalgroup.com/lawyers/">Lawyers</a><ul class="sub-menu"><li id="menu-item-3923" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3923"><a href="https://curtislegalgroup.com/lawyers/ralph-curtis/">Ralph S. Curtis</a></li><li id="menu-item-3924" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3924"><a href="https://curtislegalgroup.com/lawyers/andrew-mendlin/">Andrew S. Mendlin</a></li><li id="menu-item-3925" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3925"><a href="https://curtislegalgroup.com/case/results/">Case Results</a></li><li id="menu-item-3931" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3931"><a href="https://curtislegalgroup.com/case/client-review/">Client Reviews</a></li><li id="menu-item-4467" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4467"><a href="https://curtislegalgroup.com/case/community/">Community</a></li><li id="menu-item-3932" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3932"><a href="https://curtislegalgroup.com/lawyers/">All Attorneys</a></li></ul></li><li id="menu-item-3299" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3299"><a href="https://curtislegalgroup.com/ca/">Locations</a><ul class="sub-menu"><li id="menu-item-1110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1110"><a href="https://curtislegalgroup.com/personal-injury/sacramento/">Sacramento Personal Injury</a></li><li id="menu-item-1075" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1075"><a href="https://curtislegalgroup.com/personal-injury/modesto/">Modesto Personal Injury</a></li><li id="menu-item-1080" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1080"><a href="https://curtislegalgroup.com/personal-injury/stockton/">Stockton Personal Injury</a></li><li id="menu-item-3986" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3986"><a href="https://curtislegalgroup.com/ca/fresno/">Fresno Personal Injury</a></li></ul></li><li id="menu-item-5079" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5079"><a href="https://curtislegalgroup.com/ca/">Practice Areas</a><ul class="sub-menu"><li id="menu-item-2926" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2926"><a href="https://curtislegalgroup.com/car-accidents/sacramento/">Car Accidents</a></li><li id="menu-item-2891" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2891"><a href="https://curtislegalgroup.com/ca/sacramento/bicycle-accidents/">Bicycle Accidents</a></li><li id="menu-item-2924" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2924"><a href="https://curtislegalgroup.com/ca/sacramento/drunk-driving/">Drunk Driving Accidents</a></li><li id="menu-item-1121" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1121"><a href="https://curtislegalgroup.com/ca/sacramento/wrongful-death/">Wrongful Death</a></li><li id="menu-item-2885" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2885"><a href="https://curtislegalgroup.com/ca/sacramento/work-injury/">Work Injury</a></li><li id="menu-item-1280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1280"><a href="https://curtislegalgroup.com/ca/sacramento/motorcycle-accidents/">Motorcycle Accidents</a></li><li id="menu-item-1749" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1749"><a href="https://curtislegalgroup.com/ca/sacramento/truck-accidents/">Truck Accidents</a></li><li id="menu-item-2898" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2898"><a href="https://curtislegalgroup.com/ca/sacramento/pedestrian-accidents/">Pedestrian Accidents</a></li><li id="menu-item-1122" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1122"><a href="https://curtislegalgroup.com/ca/sacramento/slip-and-fall/">Slip and Fall</a></li><li id="menu-item-1127" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1127"><a href="https://curtislegalgroup.com/ca/sacramento/dog-bites/">Dog Bite Injury</a></li></ul></li><li id="menu-item-3201" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3201"><a href="/case/results/">Case Results</a></li><li id="menu-item-1119" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1119"><a href="https://curtislegalgroup.com/news/">News</a></li><li id="menu-item-1120" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1120"><a href="https://curtislegalgroup.com/contact/">Contact</a></li>
+                                </ul><!-- End .top-menu -->
+                            </nav><!-- End .main-nav -->
+
+                            <button type="button" class="menu-toggle d-flex d-lg-none" title="Toggle Menu">
+                                <span class="toggle-bar toggle-bar-top"></span>
+                                <span class="menu-text">Menu</span>
+                                <span class="toggle-bar toggle-bar-bottom"></span>
+                            </button>
+                        </div><!-- End .bottom-row -->
+                    </div><!-- End .col-auto -->
+                </div><!-- End .row -->
+            </div><!-- End .container-fluid -->
+                            <div class="d-flex d-lg-none">
+                    <a href="tel:18005293080" class="mobile header-tel">
+                        1-800-LAW-3080                    </a><!-- End .header-tel -->
+                </div>
+                    </header></div><!-- End .header --><main class="main">
+    <section class="top-header dark-section pt-5 pt-lg-7 d-flex flex-column blog-top-header">
+    <div class="container">
+                <div class="mb-6 h2-text">
+                            <a href="https://curtislegalgroup.com/news/">
+                    California Personal Injury Blog                </a>
+                    </div><!-- End .page-title -->
+    </div><!-- End .container -->
+    <figure class="top-media">
+        <img src="https://curtislegalgroup.com/wp-content/uploads/2024/12/is-it-illegal-to-drive-without-insurance-in-california.png" width="" class="image-fluid" alt="is it illegal to drive without insurance in california">    </figure><!-- End .top-media -->
+</section><!-- End .top-header -->    <section class="content pt-4 pb-8 single">
+        <div class=" container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="page-content editor-content">
+                    <article class="entry">
+                        <div class="entry-body">
+                            <h1 class="entry-title">
+                                Is It Illegal to Drive Without Insurance in California? (Insurance Laws Explained)                            </h1>
+                            <div class="entry-meta mb-1">
+                                                                <div class="entry-author">
+                                    By <a href="https://curtislegalgroup.com/news/author/ralph-c/">Ralph Curtis</a>
+                                </div><!-- End .entry-date -->
+                                <div class="entry-date">
+                                    Dec 12, 2024                                </div><!-- End .entry-date -->
+                                                                    <div class="entry-cat">
+                                        <a href="https://curtislegalgroup.com/news/car-accidents/" rel="category tag">Auto Accidents</a>                                    </div><!-- End .entry-cat -->
+                                                            </div><!-- End .entry-meta -->
+                            
+                            <div class="entry-content">
+                                                                    <figure class="entry-media">
+                                        <img src="https://curtislegalgroup.com/wp-content/uploads/2024/12/is-it-illegal-to-drive-without-insurance-in-california.png" width="750" class="" alt="is it illegal to drive without insurance in california" height="500">                                    </figure><!-- End .entry-media -->
+                                                                <p>Technically, the answer is no.</p>
+<p>California law requires <strong>all drivers</strong> and owners of motor vehicles to produce proof of their ability to pay for any damage they cause. Insurance is one way to demonstrate financial responsibility and is usually the most affordable way to meet the state’s minimum requirements.</p>
+<p>Despite the risk of penalties for breaking the law and personal liability for causing damage, uninsured drivers make up a significant number of motorists behind the wheel on California roadways.</p>
+<p>This blog explains California’s auto insurance requirements, penalties for non-compliance, protecting yourself from uninsured motorists, and more.</p>
+<h2>California Driver Financial Responsibility Requirements</h2>
+<p>The <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=16020.&amp;nodeTreePath=12.1.2&amp;lawCode=VEH">California Vehicle Code</a> requires all drivers and vehicle owners to establish proof of financial responsibility.</p>
+<p>For most private passenger vehicles this will mean purchasing auto liability insurance from the standard insurance market.</p>
+<p>Proof of financial responsibility must be carried <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=16021.&amp;nodeTreePath=12.1.2&amp;lawCode=VEH">in the vehicle at all times</a> and must be produced when requested by law enforcement, when renewing the vehicle registration, and when involved in a motor vehicle accident.</p>
+<blockquote><p>Drivers who choose to purchase insurance to meet the state’s financial responsibility requirements are also required to purchase a minimum amount of coverage.</p></blockquote>
+<p>Drivers should be aware that the minimum liability limits will increase at the first of the year, thanks to <a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202120220SB1107">Senate Bill 1107</a>, which was passed in 2022.</p>
+<p>Current minimum required liability limits are:</p>
+<ul>
+<li>$15,000 per person bodily injury</li>
+<li>$30,000 per accident bodily injury</li>
+<li>$5,000 per accident property damage</li>
+</ul>
+<p><strong>Effective January 1, 2025, the minimum liability limits are doubled or even tripled</strong>. The new limits will be:</p>
+<ul>
+<li>$30,000 per person bodily injury</li>
+<li>$60,000 per accident bodily injury</li>
+<li>$15,000 per accident property damage</li>
+</ul>
+<p>In 2035, the minimum liability limits will increase again. The per-person bodily injury limit will become $50,000, and the per-accident bodily injury limit will increase to $100,000.</p>
+<p>Property damage will be raised to $25,000.</p>
+<p>The financial responsibility requirements can also be satisfied by making a $35,000 cash deposit with the Department of Motor Vehicles (DMV) or by purchasing a surety bond for the same amount. On January 1, 2025, the cash deposit and surety bond amounts will increase to $75,000.</p>
+<h2>There Are Strict Penalties for Driving Without Auto Insurance in California</h2>
+<p><img fetchpriority="high" decoding="async" class="size-medium wp-image-4826 alignright" src="https://curtislegalgroup.com/wp-content/uploads/2024/12/California-Driver-Financial-Responsibility-Requirements-300x200.png" alt="California Driver Financial Responsibility Requirements" width="300" height="200" srcset="https://curtislegalgroup.com/wp-content/uploads/2024/12/California-Driver-Financial-Responsibility-Requirements-300x200.png 300w, https://curtislegalgroup.com/wp-content/uploads/2024/12/California-Driver-Financial-Responsibility-Requirements-700x468.png 700w, https://curtislegalgroup.com/wp-content/uploads/2024/12/California-Driver-Financial-Responsibility-Requirements.png 750w" sizes="(max-width: 300px) 100vw, 300px">Drivers who are stopped and cannot provide proof of financial responsibility are cited and will pay fines and penalties.</p>
+<p>Repeat offenders pay higher fines and penalties and risk having their vehicles impounded. Drivers who can produce proof of being insured at the time of the stop can get their case dismissed with a small fee.</p>
+<p>Drivers who were uninsured at the time of the stop but are insured at the time of their hearing will pay reduced fines and penalties.</p>
+<p>The penalties are more severe for uninsured drivers involved in accidents. Failure to produce proof of financial responsibility after an accident results in a <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=16072.&amp;nodeTreePath=12.1.4&amp;lawCode=VEH" target="_blank" rel="noopener">suspension of driving privileges</a>. The minimum suspension is one year but can be as long as four years if proof of financial responsibility is not maintained with the DMV after the first year.</p>
+<p>Those who need to drive for work or to get kids to school can apply and pay a fee to be granted limited driving privileges during the first year as long as they maintain auto insurance.</p>
+<h2>How to Protect Yourself From Uninsured Motorists</h2>
+<p>According to statistics from 2022 presented by the <a href="https://www.iii.org/fact-statistic/facts-statistics-uninsured-motorists" target="_blank" rel="noopener">Insurance Information Institute</a>, <strong>17% of the drivers on California’s roads do not have insurance</strong>.</p>
+<p>The good news is that California is not even in the top 10 states with the highest percentage of uninsured drivers.</p>
+<p>The DMV reports that there are almost <a href="https://www.dmv.ca.gov/portal/news-and-media/dmv-statistics/" target="_blank" rel="noopener">34.5 million licensed drivers</a> in the state. That means close to 6 million drivers are likely unable to compensate the persons they injure in accidents.</p>
+<blockquote><p>Fortunately, uninsured or underinsured motorist coverage is optional insurance California drivers can purchase to cover their damage from accidents caused by uninsured drivers.</p></blockquote>
+<p>Standard auto insurance quotes must include uninsured motorist coverage, and drivers who don’t want to purchase it must opt out in writing. The limits of uninsured motorist coverage are usually the same as the liability limits – except uninsured motorist property damage coverage is <a href="https://www.insurance.ca.gov/01-consumers/105-type/95-guides/01-auto/auto101.cfm#:~:text=Uninsured%20motorist%20property%20damage%20(UMPD,The%20limit%20is%20$3%2C500." target="_blank" rel="noopener">limited to $3,500</a>.</p>
+<h2>California Offers an Alternative for Motorists Who Can’t Afford Insurance</h2>
+<p>Auto liability insurance can be expensive.</p>
+<p>In fact, surveys have shown that being unable to afford insurance is one major reason people choose to drive without it. Fortunately, California has a special program that provides auto insurance at a reduced cost for qualifying drivers.</p>
+<p>Established in 1999, <a href="https://www.insurance.ca.gov/01-consumers/105-type/95-guides/01-auto/lca/" target="_blank" rel="noopener">California’s Low Cost Auto Insurance Program (CLCA)</a> requires drivers to meet income eligibility limits, have a clean driving record, and own a vehicle valued at $25,000 or less. Qualifying drivers are not required to purchase the higher standard liability limits. The basic policy provides liability limits of:</p>
+<ul>
+<li>$10,000 per person bodily injury</li>
+<li>$20,000 per accident bodily injury</li>
+<li>$3,000 per accident property damage</li>
+</ul>
+<p><strong>CLCA liability limits will remain unchanged when the standard liability limits increase.</strong></p>
+<p>The increases in policy premiums that accompany the increased insurance limits may force more drivers out of the standard insurance market and toward California’s lower cost and lower limits alternative.</p>
+<h2>What Happens When an Uninsured Driver Causes an Accident</h2>
+<p><img decoding="async" class="size-medium wp-image-4827 alignright" src="https://curtislegalgroup.com/wp-content/uploads/2024/12/What-Happens-When-an-Uninsured-Driver-Causes-an-Accident-300x200.png" alt="What Happens When an Uninsured Driver Causes an Accident" width="300" height="200" srcset="https://curtislegalgroup.com/wp-content/uploads/2024/12/What-Happens-When-an-Uninsured-Driver-Causes-an-Accident-300x200.png 300w, https://curtislegalgroup.com/wp-content/uploads/2024/12/What-Happens-When-an-Uninsured-Driver-Causes-an-Accident-700x468.png 700w, https://curtislegalgroup.com/wp-content/uploads/2024/12/What-Happens-When-an-Uninsured-Driver-Causes-an-Accident.png 750w" sizes="(max-width: 300px) 100vw, 300px">If an uninsured driver is at fault for an accident, persons who were damaged have a few options for obtaining recovery. Uninsured motorist coverage (if purchased) will pay for injuries and property damage caused by uninsured motorists and hit-and-run drivers.</p>
+<p>However, making a claim for uninsured motorist benefits is like making a claim for benefits against another insurance company. Plaintiffs must prove fault and damages against the other driver.</p>
+<p><strong>If uninsured motorist coverage is not available or inadequate, plaintiffs can bring a lawsuit directly against the uninsured motorist if the person can be located.</strong> The problem with this option is that many times, a person driving without insurance will not possess the resources to pay a judgment.</p>
+<p>If the person injured by an uninsured motorist is also uninsured, there is still a right to recover damages, but the right of recovery is limited by <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3333.4.&amp;lawCode=CIV" target="_blank" rel="noopener">California law</a>. A person who was not insured when injured in a motor vehicle accident is not allowed to recover compensation for non-economic losses such as pain, suffering, and physical impairment.</p>
+<p>This limitation does not apply when the at-fault uninsured driver was charged with and convicted of DUI.</p>
+<h2>A Law Firm You Can Turn to For Help After Being Injured By an Uninsured Driver</h2>
+<p>Requiring drivers to maintain auto liability insurance assures that there are resources available to pay for the damage caused by accidents. When people get into accidents with uninsured motorists, they have fewer options for recovery and may not be able to be fully compensated for their losses.</p>
+<p>The <a href="https://curtislegalgroup.com/">northern California personal injury attorneys</a> at Curtis Legal Group understand the frustrations of recovering compensation after an accident with an uninsured motorist. With over 100 years of combined legal experience, Curtis Legal Group prioritizes the financial well-being of clients and fights to obtain every available dollar of compensation.</p>
+<p>Schedule a free consultation with Curtis Legal Group in their Sacramento, Fresno, Modesto, or Stockton offices.</p>
+                            </div><!-- End .entry-content -->
+                        </div><!-- End .entry-body -->
+                    </article><!-- End article -->
+                </div><!-- End .page-content editor-content -->
+            </div><!-- End .col-lg-8 -->
+            <aside class="col-lg-3 offset-lg-1 sidebar siderbar-primary dark-section">
+        <div class="widget widget-menu related-posts">
+                  <h3 class="widget-title">
+            <a href="https://curtislegalgroup.com/news/car-accidents/">
+              Auto Accidents            </a>
+          </h3>
+        
+        <div class="widget-content">
+          <ul class="card-menu">
+            <li><a href="https://curtislegalgroup.com/news/car-accident-compensation/">How Car Accident Compensation Works in California</a></li><li><a href="https://curtislegalgroup.com/news/500000-recovery-for-auto-accident-in-lodi-ca/">$500,000 Recovery for Auto Accident in Lodi, CA</a></li><li><a href="https://curtislegalgroup.com/news/100000-settlement-for-t-bone-accident-in-stockton/">$100,000 Settlement for T-Bone Accident in Stockton</a></li><li><a href="https://curtislegalgroup.com/news/100000-recovery-for-auto-accident-in-modesto/">$100,000 Recovery for Auto Accident in Modesto</a></li><li><a href="https://curtislegalgroup.com/news/pedestrian-hit-by-car/">Hit By a Car as a Pedestrian – Here’s What to Do (California)</a></li>          </ul>
+                      <a href="https://curtislegalgroup.com/news/car-accidents/" class="button mt-2"> VIEW ALL POSTS </a>
+                  </div><!-- End .widget-content -->
+      </div><!-- End .widget -->
+        <div class="widget case-results">
+      <div class="widget-content">
+        <h3 class="widget-title">Case Results</h3>
+        <ul>
+          <li><a href="https://curtislegalgroup.com/news/500000-recovery-for-auto-accident-in-lodi-ca/">$500,000 Recovery for Auto Accident in Lodi, CA</a></li><li><a href="https://curtislegalgroup.com/news/100000-settlement-for-t-bone-accident-in-stockton/">$100,000 Settlement for T-Bone Accident in Stockton</a></li><li><a href="https://curtislegalgroup.com/news/100000-recovery-for-auto-accident-in-modesto/">$100,000 Recovery for Auto Accident in Modesto</a></li><li><a href="https://curtislegalgroup.com/news/wrongful-death-car-accident-settlement-in-modesto/">Wrongful Death Car Accident Settlement in Modesto</a></li><li><a href="https://curtislegalgroup.com/news/150000-settlement-for-t-bone-accident-in-sacramento/">$150,000 Settlement for T-bone Accident in Sacramento</a></li><li><a href="https://curtislegalgroup.com/news/160000-obtained-in-a-car-accident-in-sacramento-ca/">$160,000 T-Bone Accident Settlement in Sacramento, CA</a></li>        </ul><!-- End .tagcloud -->
+        <a href="/case/results/" class="button"> VIEW ALL CASE RESULTS </a>
+      </div><!-- End .widget-content -->
+    </div><!-- End .widget -->
+          <div class="widget widget-practice-area">
+        <div class="widget-content">
+
+                        <a href="/car-accidents/sacramento/">
+                            <figure>
+                <img src="https://curtislegalgroup.com/wp-content/uploads/2020/11/main-banner-template-1024x673.png" alt="" width="1024" height="673">
+              </figure>
+                            </a>
+                    <div class="body">
+                          <h3 class="widget-title">
+                                  <a href="/car-accidents/sacramento/">
+                                    Curtis Legal Group                                    </a>
+                              </h3><!-- End .widget-title -->
+                          <p>Involved in a car accident and need to speak with an attorney? <br>
+</p><h4>OVER $100 MILLION RECOVERED!</h4><p></p>
+                          <a href="/car-accidents/sacramento/">Car Accident Lawyers</a>
+                      </div><!-- .body -->
+        </div><!-- End .widget-content -->
+      </div><!-- End .widget -->
+    <div class="widget mt-5">
+    <h3 class="widget-title">Connect with Us</h3>
+    <div class="widget-content">
+          <div class="social-icons">
+                        <a href="https://www.facebook.com/curtislegalgroup" class="social-icon" target="_blank" rel="noopener">
+                    <i class="icon-facebook"></i>
+                </a><!-- End .header-social -->
+                            <a href="https://www.linkedin.com/company/curtis-legal-group" class="social-icon" target="_blank" rel="noopener">
+                    <i class="icon-linkedin"></i>
+                </a><!-- End .header-social -->
+                            <a href="https://twitter.com/NorCalLawTeam" class="social-icon" target="_blank" rel="noopener">
+                    <i class="icon-twitter"></i>
+                </a><!-- End .header-social -->
+                            <a href="https://www.youtube.com/channel/UCB0HOCMUVMSLKS9Xv6dytuw" class="social-icon" target="_blank" rel="noopener">
+                    <i class="icon-youtube"></i>
+                </a><!-- End .header-social -->
+                            <a href="https://www.yelp.com/biz/curtis-legal-group-modesto-3" class="social-icon" target="_blank" rel="noopener">
+                    <i class="fab fa-yelp"></i>
+                </a><!-- End .header-social -->
+            </div><!-- End .social-icons -->
+    </div><!-- End .widget-content -->
+  </div><!-- End .widget -->
+    <div class="widget widget-contactform">
+    <div class="widget-content contact-form">
+      
+                <div class="gf_browser_chrome gform_wrapper gravity-theme gform-theme--no-framework" data-form-theme="gravity-theme" data-form-index="0" id="gform_wrapper_3" style=""><div id="gf_3" class="gform_anchor" tabindex="-1"></div>
+                        <div class="gform_heading">
+							<p class="gform_required_legend">"<span class="gfield_required gfield_required_asterisk">*</span>" indicates required fields</p>
+                        </div><form method="post" enctype="multipart/form-data" target="gform_ajax_frame_3" id="gform_3" action="/news/driving-without-car-insurance-california/#gf_3" data-formid="3" novalidate="">
+                        <div class="gform-body gform_body"><div id="gform_fields_3" class="gform_fields top_label form_sublabel_below description_below validation_below"><div id="field_3_5" class="gfield gfield--type-html gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"><h5 class="widget-title">Do I have a case?</h5><!-- End .title-desc -->
+</div><div id="field_3_1" class="gfield gfield--type-text gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"><label class="gfield_label gform-field-label" for="input_3_1">Name<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_text"><input name="input_1" id="input_3_1" type="text" value="" class="large" tabindex="1" placeholder="Name *" aria-required="true" aria-invalid="false"></div></div><div id="field_3_2" class="gfield gfield--type-email gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"><label class="gfield_label gform-field-label" for="input_3_2">Email<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_email">
+                            <input name="input_2" id="input_3_2" type="email" value="" class="large" tabindex="2" placeholder="Email *" aria-required="true" aria-invalid="false">
+                        </div></div><div id="field_3_3" class="gfield gfield--type-text field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"><label class="gfield_label gform-field-label" for="input_3_3">Phone</label><div class="ginput_container ginput_container_text"><input name="input_3" id="input_3_3" type="text" value="" class="large" tabindex="3" placeholder="Phone" aria-invalid="false"></div></div><div id="field_3_4" class="gfield gfield--type-textarea field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"><label class="gfield_label gform-field-label" for="input_3_4">Message</label><div class="ginput_container ginput_container_textarea"><textarea name="input_4" id="input_3_4" class="textarea medium" tabindex="4" placeholder="Message" aria-invalid="false" rows="10" cols="50"></textarea></div></div><div id="field_3_6" class="gfield gfield--type-html gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"><small>Please do not include any confidential or sensitive information in this form. Submitting this contact form does not create an attorney-client relationship.</small></div><div id="field_3_7" class="gfield gfield--type-honeypot gform_validation_container field_sublabel_below gfield--has-description field_description_below field_validation_below gfield_visibility_visible"><label class="gfield_label gform-field-label" for="input_3_7">Email</label><div class="ginput_container"><input name="input_7" id="input_3_7" type="text" value="" autocomplete="new-password"></div><div class="gfield_description" id="gfield_description_3_7">This field is for validation purposes and should be left unchanged.</div></div></div></div>
+        <div class="gform-footer gform_footer top_label"> <input type="submit" id="gform_submit_button_3" class="gform_button button" onclick="gform.submission.handleButtonClick(this);" data-submission-type="submit" value="Submit" tabindex="5" data-conditional-logic="visible"> <input type="hidden" name="gform_ajax" value="form_id=3&amp;title=&amp;description=&amp;tabindex=1&amp;theme=gravity-theme&amp;hash=563b342b4716ee62d8b2d09fbe3abc91">
+            <input type="hidden" class="gform_hidden" name="gform_submission_method" data-js="gform_submission_method_3" value="iframe">
+            <input type="hidden" class="gform_hidden" name="gform_theme" data-js="gform_theme_3" id="gform_theme_3" value="gravity-theme">
+            <input type="hidden" class="gform_hidden" name="gform_style_settings" data-js="gform_style_settings_3" id="gform_style_settings_3" value="">
+            <input type="hidden" class="gform_hidden" name="is_submit_3" value="1">
+            <input type="hidden" class="gform_hidden" name="gform_submit" value="3">
+            
+            <input type="hidden" class="gform_hidden" name="gform_unique_id" value="">
+            <input type="hidden" class="gform_hidden" name="state_3" value="WyJbXSIsIjhkMzU1MTVjMmZiNDU3MWM1NGExMTE5MWU2MmU4Mjg0Il0=">
+            <input type="hidden" autocomplete="off" class="gform_hidden" name="gform_target_page_number_3" id="gform_target_page_number_3" value="0">
+            <input type="hidden" autocomplete="off" class="gform_hidden" name="gform_source_page_number_3" id="gform_source_page_number_3" value="1">
+            <input type="hidden" name="gform_field_values" value="">
+            
+        </div>
+                        <p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>Δ<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="1762543881462"><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>
+                        </div>
+		                <iframe style="display:none;width:0px;height:0px;" src="about:blank" name="gform_ajax_frame_3" id="gform_ajax_frame_3" title="This iframe contains the logic required to handle Ajax powered Gravity Forms."></iframe>
+		                <script type="text/javascript">
+/* <![CDATA[ */
+ gform.initializeOnLoaded( function() {gformInitSpinner( 3, 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', true );jQuery('#gform_ajax_frame_3').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_3');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_3').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){form_content.find('form').css('opacity', 0);jQuery('#gform_wrapper_3').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_3').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_3').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_3').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_3').val();gformInitSpinner( 3, 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', true );jQuery(document).trigger('gform_page_loaded', [3, current_page]);window['gf_submitting_3'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}jQuery('#gform_wrapper_3').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_3').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [3]);window['gf_submitting_3'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_3').text());}else{jQuery('#gform_3').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger("gform_pre_post_render", [{ formId: "3", currentPage: "current_page", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_3" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_3";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_3" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 3, current_page );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );} ); 
+/* ]]> */
+</script>
+    </div><!-- End .widget-content -->
+  </div><!-- End .widget -->
+</aside><!-- End .sidebar col-lg-3 offset-xl-1 -->        </div><!-- End .row -->
+        </div><!-- End .container -->
+    </section><!-- End .content -->
+</main><!-- End .main -->
+<footer class="footer dark-section">
+    <div class="container">
+        <div class="footer-middle">
+            <div class="row">
+
+                <div class="col-md-4 col-lg-2">
+                                            <a href="https://curtislegalgroup.com/" class="logo" title="Curtis Legal Group">
+                            <img src="https://curtislegalgroup.com/wp-content/uploads/2021/04/footer-logo.png" alt="" width="151" height="126">
+                        </a>
+                                        <a href="https://www.expertise.com/ca/turlock/personal-injury-attorney" target="_blank" rel="noopener" style="display:inline-block; border:0;"><img style="width:200px; display:block;" width="400" height="320" src="https://res.cloudinary.com/expertise-com/image/upload/f_auto,fl_lossy,q_auto/w_auto/remote_media/awards/ca_turlock_personal-injury-attorney_2021.svg" alt="Personal Injury Lawyers"></a>
+                </div><!-- End .col-lg-6 -->
+                                    <div class="col-md-8 col-lg-10">
+                        <div class="row justify-content-end">
+                                                            <div class="col-sm-12 col-lg-3">
+                                                                        <div class="widget widget-address">
+                                                                                    <h4 class="widget-title"><a href="https://curtislegalgroup.com/personal-injury/sacramento/"><span>Sacramento</span><br>Personal Injury Lawyers</a></h4><!-- End .widget-title -->
+                                                                                    <div class="widget-content">
+                                                <address>
+                                                    601 University Ave #181, Sacramento, CA 95825                                                </address>
+                                                                                                <a href="https://www.google.com/maps/search/?api=1&amp;query=Curtis+Legal+Group%2C+University+Avenue%2C+Sacramento%2C+CA%2C+USA&amp;query_place_id=ChIJLx1aXADbmoAR78y4IIVccBA" class="direction-link" target="_blank">
+                                                    Map &amp; Directions                                                </a><!-- End .direction-link -->
+                                                                                        </div><!-- End .widget-content -->
+                                    </div><!-- End .widget -->
+
+                                    <div class="widget widget-contact">
+                                        <div class="widget-content">
+                                            <ul>
+                                                                                                    <li><abbr title="Phone">P</abbr><a href="tel:9165878165">(916) 587-8165</a></li>
+                                                                                                    <li><abbr title="Fax">F</abbr><a href="fax:2095723501">(209) 572-3501</a></li>
+                                                                                                    <li><abbr title="Email">E</abbr><a href="mailto:info@curtislegalgroup.com">info@curtislegalgroup.com</a></li>
+                                                                                            </ul>
+                                        </div><!-- End .widget-content -->
+                                    </div><!-- End .widget -->
+                                </div><!-- End .col-sm-6 -->
+                                                            <div class="col-sm-12 col-lg-3">
+                                                                        <div class="widget widget-address">
+                                                                                    <h4 class="widget-title"><a href="https://curtislegalgroup.com/personal-injury/modesto/"><span>Modesto</span><br>Personal Injury Lawyers</a></h4><!-- End .widget-title -->
+                                                                                    <div class="widget-content">
+                                                <address>
+                                                    1300 K St Suite B, Modesto, CA 95354                                                </address>
+                                                                                                <a href="https://www.google.com/maps/search/?api=1&amp;query=Curtis+Legal+Group%2C+K+Street%2C+Modesto%2C+CA%2C+USA&amp;query_place_id=ChIJVd4oY_JTkIAR7Qmotcb6TnI" class="direction-link" target="_blank">
+                                                    Map &amp; Directions                                                </a><!-- End .direction-link -->
+                                                                                        </div><!-- End .widget-content -->
+                                    </div><!-- End .widget -->
+
+                                    <div class="widget widget-contact">
+                                        <div class="widget-content">
+                                            <ul>
+                                                                                                    <li><abbr title="Phone">P</abbr><a href="tel:2094575106">(209) 457-5106</a></li>
+                                                                                                    <li><abbr title="Fax">F</abbr><a href="fax:2095723501">(209) 572-3501</a></li>
+                                                                                                    <li><abbr title="Email">E</abbr><a href="mailto:info@curtislegalgroup.com">info@curtislegalgroup.com</a></li>
+                                                                                            </ul>
+                                        </div><!-- End .widget-content -->
+                                    </div><!-- End .widget -->
+                                </div><!-- End .col-sm-6 -->
+                                                            <div class="col-sm-12 col-lg-3">
+                                                                        <div class="widget widget-address">
+                                                                                    <h4 class="widget-title"><a href="https://curtislegalgroup.com/personal-injury/stockton/"><span>Stockton</span><br>Personal Injury Lawyers</a></h4><!-- End .widget-title -->
+                                                                                    <div class="widget-content">
+                                                <address>
+                                                    5250 Claremont Ave Suite #126, Stockton, CA 95207<br>
+                                                </address>
+                                                                                                <a href="https://www.google.com/maps/search/?api=1&amp;query=Curtis+Legal+Group%2C+Claremont+Avenue%2C+Stockton%2C+CA%2C+USA&amp;query_place_id=ChIJHV2NM1YMkIARR9XmbPPcwjU" class="direction-link" target="_blank">
+                                                    Map &amp; Directions                                                </a><!-- End .direction-link -->
+                                                                                        </div><!-- End .widget-content -->
+                                    </div><!-- End .widget -->
+
+                                    <div class="widget widget-contact">
+                                        <div class="widget-content">
+                                            <ul>
+                                                                                                    <li><abbr title="Phone">P</abbr><a href="tel:2094441804">(209) 444-1804</a></li>
+                                                                                                    <li><abbr title="Fax">F</abbr><a href="fax:2095723501">(209) 572-3501</a></li>
+                                                                                                    <li><abbr title="Email">E</abbr><a href="mailto:info@curtislegalgroup.com">info@curtislegalgroup.com</a></li>
+                                                                                            </ul>
+                                        </div><!-- End .widget-content -->
+                                    </div><!-- End .widget -->
+                                </div><!-- End .col-sm-6 -->
+                                                            <div class="col-sm-12 col-lg-3">
+                                                                        <div class="widget widget-address">
+                                                                                    <h4 class="widget-title"><a href="https://curtislegalgroup.com/ca/fresno/"><span>Fresno</span><br>Personal Injury Lawyers</a></h4><!-- End .widget-title -->
+                                                                                    <div class="widget-content">
+                                                <address>
+                                                    1444 Fulton Street, #207, Fresno, California 93721                                                </address>
+                                                                                                <a href="https://www.google.com/maps/search/?api=1&amp;query=Curtis+Legal+Group%2C+Fulton+Street%2C+Fresno%2C+CA%2C+USA&amp;query_place_id=ChIJK_iLdYVhlIARkiEP98gCBJ8" class="direction-link" target="_blank">
+                                                    Map &amp; Directions                                                </a><!-- End .direction-link -->
+                                                                                        </div><!-- End .widget-content -->
+                                    </div><!-- End .widget -->
+
+                                    <div class="widget widget-contact">
+                                        <div class="widget-content">
+                                            <ul>
+                                                                                                    <li><abbr title="Phone">P</abbr><a href="tel:5592544022">(559) 254-4022</a></li>
+                                                                                                    <li><abbr title="Fax">F</abbr><a href="fax:2095723501">(209) 572-3501</a></li>
+                                                                                                    <li><abbr title="Email">E</abbr><a href="mailto:info@curtislegalgroup.com">info@curtislegalgroup.com</a></li>
+                                                                                            </ul>
+                                        </div><!-- End .widget-content -->
+                                    </div><!-- End .widget -->
+                                </div><!-- End .col-sm-6 -->
+                                                    </div><!-- End .row -->
+                    </div><!-- End .col-lg-6 -->
+                            </div><!-- End .row -->
+        </div><!-- End .footer-middle -->
+
+        <div class="footer-bottom">
+            <div class="row align-items-end">
+                <div class="col-lg">
+                        <div class="social-icons">
+                        <a href="https://www.facebook.com/curtislegalgroup" class="social-icon" target="_blank" rel="noopener">
+                    <i class="icon-facebook"></i>
+                </a><!-- End .header-social -->
+                            <a href="https://www.linkedin.com/company/curtis-legal-group" class="social-icon" target="_blank" rel="noopener">
+                    <i class="icon-linkedin"></i>
+                </a><!-- End .header-social -->
+                            <a href="https://twitter.com/NorCalLawTeam" class="social-icon" target="_blank" rel="noopener">
+                    <i class="icon-twitter"></i>
+                </a><!-- End .header-social -->
+                            <a href="https://www.youtube.com/channel/UCB0HOCMUVMSLKS9Xv6dytuw" class="social-icon" target="_blank" rel="noopener">
+                    <i class="icon-youtube"></i>
+                </a><!-- End .header-social -->
+                            <a href="https://www.yelp.com/biz/curtis-legal-group-modesto-3" class="social-icon" target="_blank" rel="noopener">
+                    <i class="fab fa-yelp"></i>
+                </a><!-- End .header-social -->
+            </div><!-- End .social-icons -->
+                        <p class="footer-copyright">Copyright © Curtis Legal Group, A Professional Law Corporation | All Rights Reserved</p>
+                                    </div><!-- End .col-lg-6 -->
+                                    <div class="col-lg-auto">
+                        <ul class="footer-menu">
+                            <li id="menu-item-4997" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4997"><a href="https://curtislegalgroup.com/careers/">Careers</a></li><li id="menu-item-114" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-114"><a href="https://curtislegalgroup.com/disclaimer/">Disclaimer</a></li><li id="menu-item-112" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-112"><a rel="privacy-policy" href="https://curtislegalgroup.com/privacy-policy/">Privacy Policy</a></li>
+                        </ul><!-- End .footer-menu -->
+                    </div><!-- End .col-lg-6 -->
+                            </div><!-- End .row -->
+        </div><!-- End .footer-bottom -->
+    </div><!-- End .container -->
+</footer><!-- End .footer -->
+</div><!-- End .page-wrapper -->
+
+<!-- Scroll Top Button -->
+<a id="scroller" href="#top" title="Scroll Top" role="button">
+    <i class="icon-arrow-up"></i>
+</a>
+
+<div class="mobile-menu-overlay"></div><!-- End .mobil-menu-overlay -->
+
+<div class="mobile-menu-container">
+    <div class="mobile-menu-wrapper">
+        <button class="close mmenu-close-btn" title="Close">
+            ×
+        </button>
+
+        <nav class="mobile-nav">
+            <ul class="mobile-menu">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1118"><a href="https://curtislegalgroup.com/lawyers/">Lawyers</a><ul class="sub-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3923"><a href="https://curtislegalgroup.com/lawyers/ralph-curtis/">Ralph S. Curtis</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3924"><a href="https://curtislegalgroup.com/lawyers/andrew-mendlin/">Andrew S. Mendlin</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3925"><a href="https://curtislegalgroup.com/case/results/">Case Results</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3931"><a href="https://curtislegalgroup.com/case/client-review/">Client Reviews</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4467"><a href="https://curtislegalgroup.com/case/community/">Community</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3932"><a href="https://curtislegalgroup.com/lawyers/">All Attorneys</a></li></ul><span class="mmenu-btn"></span></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3299"><a href="https://curtislegalgroup.com/ca/">Locations</a><ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1110"><a href="https://curtislegalgroup.com/personal-injury/sacramento/">Sacramento Personal Injury</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1075"><a href="https://curtislegalgroup.com/personal-injury/modesto/">Modesto Personal Injury</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1080"><a href="https://curtislegalgroup.com/personal-injury/stockton/">Stockton Personal Injury</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3986"><a href="https://curtislegalgroup.com/ca/fresno/">Fresno Personal Injury</a></li></ul><span class="mmenu-btn"></span></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5079"><a href="https://curtislegalgroup.com/ca/">Practice Areas</a><ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2926"><a href="https://curtislegalgroup.com/car-accidents/sacramento/">Car Accidents</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2891"><a href="https://curtislegalgroup.com/ca/sacramento/bicycle-accidents/">Bicycle Accidents</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2924"><a href="https://curtislegalgroup.com/ca/sacramento/drunk-driving/">Drunk Driving Accidents</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1121"><a href="https://curtislegalgroup.com/ca/sacramento/wrongful-death/">Wrongful Death</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2885"><a href="https://curtislegalgroup.com/ca/sacramento/work-injury/">Work Injury</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1280"><a href="https://curtislegalgroup.com/ca/sacramento/motorcycle-accidents/">Motorcycle Accidents</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1749"><a href="https://curtislegalgroup.com/ca/sacramento/truck-accidents/">Truck Accidents</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2898"><a href="https://curtislegalgroup.com/ca/sacramento/pedestrian-accidents/">Pedestrian Accidents</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1122"><a href="https://curtislegalgroup.com/ca/sacramento/slip-and-fall/">Slip and Fall</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1127"><a href="https://curtislegalgroup.com/ca/sacramento/dog-bites/">Dog Bite Injury</a></li></ul><span class="mmenu-btn"></span></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3201"><a href="/case/results/">Case Results</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1119"><a href="https://curtislegalgroup.com/news/">News</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1120"><a href="https://curtislegalgroup.com/contact/">Contact</a></li>
+            </ul><!-- End .mobile-menu -->
+        </nav><!-- End .mobile-nav -->
+
+            <div class="social-icons">
+                        <a href="https://www.facebook.com/curtislegalgroup" class="social-icon" target="_blank" rel="noopener">
+                    <i class="icon-facebook"></i>
+                </a><!-- End .header-social -->
+                            <a href="https://www.linkedin.com/company/curtis-legal-group" class="social-icon" target="_blank" rel="noopener">
+                    <i class="icon-linkedin"></i>
+                </a><!-- End .header-social -->
+                            <a href="https://twitter.com/NorCalLawTeam" class="social-icon" target="_blank" rel="noopener">
+                    <i class="icon-twitter"></i>
+                </a><!-- End .header-social -->
+                            <a href="https://www.youtube.com/channel/UCB0HOCMUVMSLKS9Xv6dytuw" class="social-icon" target="_blank" rel="noopener">
+                    <i class="icon-youtube"></i>
+                </a><!-- End .header-social -->
+                            <a href="https://www.yelp.com/biz/curtis-legal-group-modesto-3" class="social-icon" target="_blank" rel="noopener">
+                    <i class="fab fa-yelp"></i>
+                </a><!-- End .header-social -->
+            </div><!-- End .social-icons -->
+    </div><!-- End .mobile-menu-wrapper -->
+</div><!-- End .mobile-menu-container -->
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/curtis-legal-group\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<div class="gtranslate_wrapper gt_container-tij8vb" id="gt-wrapper-29988560"><div class="gt_switcher_wrapper" style="position:fixed;bottom:0;left:8%;z-index:999999;"><!-- GTranslate: https://gtranslate.com --><div class="gt_switcher notranslate"><div class="gt_option"><a href="https://curtislegalgroup.com/news/driving-without-car-insurance-california/" title="English" class="nturl gt_current" data-gt-lang="en"><img width="24" height="24" alt="en" data-gt-lazy-src="/wp-content/plugins/gtranslate/flags/svg/en-us.svg"> English</a><a href="https://curtislegalgroup.com/es/news/driving-without-car-insurance-california/" title="Español" class="nturl" data-gt-lang="es"><img width="24" height="24" alt="es" data-gt-lazy-src="/wp-content/plugins/gtranslate/flags/svg/es-mx.svg"> Español</a></div><div class="gt_selected"><a href="#"><img src="/wp-content/plugins/gtranslate/flags/svg/en-us.svg" height="24" width="24" alt="en"> English</a></div></div></div></div>    <!-- Meta Pixel Event Code -->
+    <script type="text/javascript">
+        document.addEventListener( 'wpcf7mailsent', function( event ) {
+        if( "fb_pxl_code" in event.detail.apiResponse){
+            eval(event.detail.apiResponse.fb_pxl_code);
+        }
+        }, false );
+    </script>
+    <!-- End Meta Pixel Event Code -->
+        <div id="fb-pxl-ajax-code"></div><link rel="stylesheet" id="gform_basic-css" href="https://curtislegalgroup.com/wp-content/plugins/gravityforms/assets/css/dist/basic.min.css?ver=2.9.13" type="text/css" media="all">
+<link rel="stylesheet" id="gform_theme_components-css" href="https://curtislegalgroup.com/wp-content/plugins/gravityforms/assets/css/dist/theme-components.min.css?ver=2.9.13" type="text/css" media="all">
+<link rel="stylesheet" id="gform_theme-css" href="https://curtislegalgroup.com/wp-content/plugins/gravityforms/assets/css/dist/theme.min.css?ver=2.9.13" type="text/css" media="all">
+<script type="text/javascript" src="https://curtislegalgroup.com/wp-content/themes/curtis-legal-group/assets/js/modernizr.js" id="modernizer-js"></script>
+<script type="text/javascript" src="https://curtislegalgroup.com/wp-content/themes/curtis-legal-group/assets/js/jquery.min.js" id="jquery-js"></script>
+<script type="text/javascript" src="https://curtislegalgroup.com/wp-content/themes/curtis-legal-group/assets/js/jquery.waypoints.min.js" id="jquery.waypoints.min.js-js"></script>
+<script type="text/javascript" src="https://curtislegalgroup.com/wp-content/themes/curtis-legal-group/assets/js/plugins.js" id="plugins.js-js"></script>
+<script type="text/javascript" src="https://curtislegalgroup.com/wp-content/themes/curtis-legal-group/assets/js/owl.carousel.min.js" id="owl.carousel.min.js-js"></script>
+<script type="text/javascript" src="https://curtislegalgroup.com/wp-content/themes/curtis-legal-group/assets/js/collapse.js" id="collapse.js-js"></script>
+<script type="text/javascript" src="https://curtislegalgroup.com/wp-content/themes/curtis-legal-group/assets/js/main.js?ver=1.5.5" id="main-js"></script>
+<script type="text/javascript" src="https://curtislegalgroup.com/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381" id="wp-dom-ready-js"></script>
+<script type="text/javascript" src="https://curtislegalgroup.com/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://curtislegalgroup.com/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://curtislegalgroup.com/wp-includes/js/dist/a11y.min.js?ver=3156534cc54473497e14" id="wp-a11y-js"></script>
+<script type="text/javascript" defer="defer" src="https://curtislegalgroup.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.9.13" id="gform_json-js"></script>
+<script type="text/javascript" id="gform_gravityforms-js-extra">
+/* <![CDATA[ */
+var gform_i18n = {"datepicker":{"days":{"monday":"Mo","tuesday":"Tu","wednesday":"We","thursday":"Th","friday":"Fr","saturday":"Sa","sunday":"Su"},"months":{"january":"January","february":"February","march":"March","april":"April","may":"May","june":"June","july":"July","august":"August","september":"September","october":"October","november":"November","december":"December"},"firstDay":1,"iconText":"Select date"}};
+var gf_legacy_multi = [];
+var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file is not allowed. Must be one of the following:","delete_file":"Delete this file","in_progress":"in progress","file_exceeds_limit":"File exceeds size limit","illegal_extension":"This type of file is not allowed.","max_reached":"Maximum number of files reached","unknown_error":"There was a problem while saving the file on the server","currently_uploading":"Please wait for the uploading to complete","cancel":"Cancel","cancel_upload":"Cancel this upload","cancelled":"Cancelled"},"vars":{"images_url":"https:\/\/curtislegalgroup.com\/wp-content\/plugins\/gravityforms\/images"}};
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2,"code":"USD"},"base_url":"https:\/\/curtislegalgroup.com\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/curtislegalgroup.com\/wp-content\/plugins\/gravityforms\/images\/spinner.svg","version_hash":"17ec867a23ee5e60b1ab58e3c76e2ffe","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+/* ]]> */
+</script>
+<script type="text/javascript" defer="defer" src="https://curtislegalgroup.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.9.13" id="gform_gravityforms-js"></script>
+<script type="text/javascript" id="gform_conditional_logic-js-extra">
+/* <![CDATA[ */
+var gf_legacy = {"is_legacy":""};
+/* ]]> */
+</script>
+<script type="text/javascript" defer="defer" src="https://curtislegalgroup.com/wp-content/plugins/gravityforms/js/conditional_logic.min.js?ver=2.9.13" id="gform_conditional_logic-js"></script>
+<script type="text/javascript" defer="defer" src="https://curtislegalgroup.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.9.13" id="gform_placeholder-js"></script>
+<script type="text/javascript" defer="defer" src="https://curtislegalgroup.com/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=380b7a5ec0757c78876bc8a59488f2f3" id="gform_gravityforms_utils-js"></script>
+<script type="text/javascript" defer="defer" src="https://curtislegalgroup.com/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=21e5a4db1670166692ac5745329bfc80" id="gform_gravityforms_theme_vendors-js"></script>
+<script type="text/javascript" id="gform_gravityforms_theme-js-extra">
+/* <![CDATA[ */
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"17ec867a23ee5e60b1ab58e3c76e2ffe"},"ajax":{"ajaxurl":"https:\/\/curtislegalgroup.com\/wp-admin\/admin-ajax.php","ajax_submission_nonce":"1579cdd5fd","i18n":{"step_announcement":"Step %1$s of %2$s, %3$s","unknown_error":"There was an unknown error processing your request. Please try again."}}}},"hmr_dev":"","public_path":"https:\/\/curtislegalgroup.com\/wp-content\/plugins\/gravityforms\/assets\/js\/dist\/","config_nonce":"2ce9810ccc"};
+/* ]]> */
+</script>
+<script type="text/javascript" defer="defer" src="https://curtislegalgroup.com/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=b436459e6f25ebcd9e95ea18e1a35e19" id="gform_gravityforms_theme-js"></script>
+<script type="text/javascript" id="gt_widget_script_29988560-js-before">
+/* <![CDATA[ */
+window.gtranslateSettings = /* document.write */ window.gtranslateSettings || {};window.gtranslateSettings['29988560'] = {"default_language":"en","languages":["en","es"],"url_structure":"sub_directory","native_language_names":1,"flag_style":"2d","flag_size":24,"wrapper_selector":"#gt-wrapper-29988560","alt_flags":{"en":"usa","es":"mexico"},"switcher_open_direction":"top","switcher_horizontal_position":"left","switcher_vertical_position":"bottom","switcher_text_color":"#666","switcher_arrow_color":"#666","switcher_border_color":"#ccc","switcher_background_color":"#fff","switcher_background_shadow_color":"#efefef","switcher_background_hover_color":"#fff","dropdown_text_color":"#000","dropdown_hover_color":"#fff","dropdown_background_color":"#eee","flags_location":"\/wp-content\/plugins\/gtranslate\/flags\/"};
+/* ]]> */
+</script><script src="https://curtislegalgroup.com/wp-content/plugins/gtranslate/js/dwf.js?ver=6.8.3" data-no-optimize="1" data-no-minify="1" data-gt-orig-url="/news/driving-without-car-insurance-california/" data-gt-orig-domain="curtislegalgroup.com" data-gt-widget-id="29988560" defer=""></script><script type="text/javascript">
+/* <![CDATA[ */
+ gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 3) {gf_global["number_formats"][3] = {"5":{"price":false,"value":false},"1":{"price":false,"value":false},"2":{"price":false,"value":false},"3":{"price":false,"value":false},"4":{"price":false,"value":false},"6":{"price":false,"value":false},"7":{"price":false,"value":false}};if(window['jQuery']){if(!window['gf_form_conditional_logic'])window['gf_form_conditional_logic'] = new Array();window['gf_form_conditional_logic'][3] = { logic: { 0: {"field":{"actionType":"hide","logicType":"any","rules":[{"fieldId":"4","operator":"contains","value":"\u041f"},{"fieldId":"4","operator":"contains","value":"\u0439"},{"fieldId":"4","operator":"contains","value":"\u0451"},{"fieldId":"4","operator":"contains","value":"\u0434"},{"fieldId":"4","operator":"contains","value":"http:\/\/"},{"fieldId":"4","operator":"contains","value":"https:\/\/"},{"fieldId":"4","operator":"contains","value":"\u0436"},{"fieldId":"4","operator":"contains","value":"\u043b"}]},"section":null} }, dependents: { 0: [0] }, animation: 0, defaults: [], fields: {"5":[0],"1":[0],"2":[0],"3":[0],"4":[0],"6":[0],"7":[0]} }; if(!window['gf_number_format'])window['gf_number_format'] = 'decimal_dot';jQuery(document).ready(function(){gform.utils.trigger({ event: 'gform/conditionalLogic/init/start', native: false, data: { formId: 3, fields: null, isInit: true } });window['gformInitPriceFields']();gf_apply_rules(3, [0], true);jQuery('#gform_wrapper_3').show();jQuery('#gform_wrapper_3 form').css('opacity', '');jQuery(document).trigger('gform_post_conditional_logic', [3, null, true]);gform.utils.trigger({ event: 'gform/conditionalLogic/init/end', native: false, data: { formId: 3, fields: null, isInit: true } });} );} if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }} } );jQuery(document).on('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } ); 
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+ gform.initializeOnLoaded( function() {jQuery(document).trigger("gform_pre_post_render", [{ formId: "3", currentPage: "1", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_3" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_3";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_3" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 3, 1 );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } ); 
+/* ]]> */
+</script>
+
+    <script src="//blazeo.com/scripts/invitation.ashx?company=curtislegalgroupOR" async="" id="livechat_script"></script>
+    
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99af4018ae046b95',t:'MTc2MjU0Mzg4MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+
+<p id="a11y-speak-intro-text" class="a11y-speak-intro-text" style="position: absolute;margin: -1px;padding: 0;height: 1px;width: 1px;overflow: hidden;clip: rect(1px, 1px, 1px, 1px);-webkit-clip-path: inset(50%);clip-path: inset(50%);border: 0;word-wrap: normal !important;" hidden="hidden">Notifications</p><div id="a11y-speak-assertive" class="a11y-speak-region" style="position: absolute;margin: -1px;padding: 0;height: 1px;width: 1px;overflow: hidden;clip: rect(1px, 1px, 1px, 1px);-webkit-clip-path: inset(50%);clip-path: inset(50%);border: 0;word-wrap: normal !important;" aria-live="assertive" aria-relevant="additions text" aria-atomic="true"></div><div id="a11y-speak-polite" class="a11y-speak-region" style="position: absolute;margin: -1px;padding: 0;height: 1px;width: 1px;overflow: hidden;clip: rect(1px, 1px, 1px, 1px);-webkit-clip-path: inset(50%);clip-path: inset(50%);border: 0;word-wrap: normal !important;" aria-live="polite" aria-relevant="additions text" aria-atomic="true"></div></body></html>

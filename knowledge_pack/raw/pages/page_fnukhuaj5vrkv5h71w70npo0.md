@@ -1,0 +1,1522 @@
+[Jump to content](https://en.wikipedia.org/wiki/1988_California_Proposition_103#bodyContent)
+Main menu
+Main menu
+move to sidebar hide
+Navigation 
+  * [Main page](https://en.wikipedia.org/wiki/Main_Page "Visit the main page \[ctrl-option-z\]")
+  * [Contents](https://en.wikipedia.org/wiki/Wikipedia:Contents "Guides to browsing Wikipedia")
+  * [Current events](https://en.wikipedia.org/wiki/Portal:Current_events "Articles related to current events")
+  * [Random article](https://en.wikipedia.org/wiki/Special:Random "Visit a randomly selected article \[ctrl-option-x\]")
+  * [About Wikipedia](https://en.wikipedia.org/wiki/Wikipedia:About "Learn about Wikipedia and how it works")
+  * [Contact us](https://en.wikipedia.org/wiki/Wikipedia:Contact_us "How to contact Wikipedia")
+
+
+Contribute 
+  * [Help](https://en.wikipedia.org/wiki/Help:Contents "Guidance on how to use and edit Wikipedia")
+  * [Learn to edit](https://en.wikipedia.org/wiki/Help:Introduction "Learn how to edit Wikipedia")
+  * [Community portal](https://en.wikipedia.org/wiki/Wikipedia:Community_portal "The hub for editors")
+  * [Recent changes](https://en.wikipedia.org/wiki/Special:RecentChanges "A list of recent changes to Wikipedia \[ctrl-option-r\]")
+  * [Upload file](https://en.wikipedia.org/wiki/Wikipedia:File_upload_wizard "Add images or other media for use on Wikipedia")
+  * [Special pages](https://en.wikipedia.org/wiki/Special:SpecialPages)
+
+
+[ ![](https://en.wikipedia.org/static/images/icons/wikipedia.png) ![Wikipedia](https://en.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-en.svg) ![The Free Encyclopedia](https://en.wikipedia.org/static/images/mobile/copyright/wikipedia-tagline-en.svg) ](https://en.wikipedia.org/wiki/Main_Page)
+[Search ](https://en.wikipedia.org/wiki/Special:Search "Search Wikipedia \[ctrl-option-f\]")
+Search
+Appearance
+Appearance
+move to sidebar hide
+Text
+  * Small
+Standard
+Large
+
+This page always uses small font size
+Width
+  * Standard
+Wide
+
+The content is as wide as possible for your browser window.
+Color (beta)
+  * Automatic
+Light
+Dark
+
+This page is always in light mode.
+  * [Donate](https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en)
+  * [Create account](https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=1988+California+Proposition+103 "You are encouraged to create an account and log in; however, it is not mandatory")
+  * [Log in](https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=1988+California+Proposition+103 "You're encouraged to log in; however, it's not mandatory. \[ctrl-option-o\]")
+
+
+Personal tools
+  * [Donate](https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en)
+  * [Create account](https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=1988+California+Proposition+103 "You are encouraged to create an account and log in; however, it is not mandatory")
+  * [Log in](https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=1988+California+Proposition+103 "You're encouraged to log in; however, it's not mandatory. \[ctrl-option-o\]")
+
+
+[ Join #WikiOfrenda2025: edit, upload & celebrate 'Día de los Muertos' with WikiLatinos. Prizes for top contributors! ![Banner logo](https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Marigold_Illustration.png/250px-Marigold_Illustration.png) ](https://meta.wikimedia.org/wiki/WikiOfrenda_2025)
+[ ](https://en.wikipedia.org/wiki/1988_California_Proposition_103 "Hide")
+Toggle the table of contents
+## Contents
+move to sidebar hide
+  * [ (Top) ](https://en.wikipedia.org/wiki/1988_California_Proposition_103)
+  * [ 1 Insurance regulation ](https://en.wikipedia.org/wiki/1988_California_Proposition_103#Insurance_regulation)
+  * [ 2 Intervenors ](https://en.wikipedia.org/wiki/1988_California_Proposition_103#Intervenors)
+  * [ 3 Election ](https://en.wikipedia.org/wiki/1988_California_Proposition_103#Election)
+  * [ 4 Criticism ](https://en.wikipedia.org/wiki/1988_California_Proposition_103#Criticism)
+  * [ 5 See also ](https://en.wikipedia.org/wiki/1988_California_Proposition_103#See_also)
+  * [ 6 References ](https://en.wikipedia.org/wiki/1988_California_Proposition_103#References)
+
+
+# 1988 California Proposition 103
+Add languages
+[Add links](https://www.wikidata.org/wiki/Special:EntityPage/Q60742413#sitelinks-wikipedia "Add interlanguage links")
+  * [Article](https://en.wikipedia.org/wiki/1988_California_Proposition_103 "View the content page \[ctrl-option-c\]")
+  * [Talk](https://en.wikipedia.org/wiki/Talk:1988_California_Proposition_103 "Discuss improvements to the content page \[ctrl-option-t\]")
+
+
+English
+  * [Read](https://en.wikipedia.org/wiki/1988_California_Proposition_103)
+  * [Edit](https://en.wikipedia.org/w/index.php?title=1988_California_Proposition_103&action=edit "Edit this page \[ctrl-option-e\]")
+  * [View history](https://en.wikipedia.org/w/index.php?title=1988_California_Proposition_103&action=history "Past revisions of this page \[ctrl-option-h\]")
+
+
+Tools
+Tools
+move to sidebar hide
+Actions 
+  * [Read](https://en.wikipedia.org/wiki/1988_California_Proposition_103)
+  * [Edit](https://en.wikipedia.org/w/index.php?title=1988_California_Proposition_103&action=edit "Edit this page \[ctrl-option-e\]")
+  * [View history](https://en.wikipedia.org/w/index.php?title=1988_California_Proposition_103&action=history)
+
+
+General 
+  * [What links here](https://en.wikipedia.org/wiki/Special:WhatLinksHere/1988_California_Proposition_103 "List of all English Wikipedia pages containing links to this page \[ctrl-option-j\]")
+  * [Related changes](https://en.wikipedia.org/wiki/Special:RecentChangesLinked/1988_California_Proposition_103 "Recent changes in pages linked from this page \[ctrl-option-k\]")
+  * [Upload file](https://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard "Upload files \[ctrl-option-u\]")
+  * [Permanent link](https://en.wikipedia.org/w/index.php?title=1988_California_Proposition_103&oldid=1310089180 "Permanent link to this revision of this page")
+  * [Page information](https://en.wikipedia.org/w/index.php?title=1988_California_Proposition_103&action=info "More information about this page")
+  * [Cite this page](https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&page=1988_California_Proposition_103&id=1310089180&wpFormIdentifier=titleform "Information on how to cite this page")
+  * [Get shortened URL](https://en.wikipedia.org/w/index.php?title=Special:UrlShortener&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2F1988_California_Proposition_103)
+  * [Download QR code](https://en.wikipedia.org/w/index.php?title=Special:QrCode&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2F1988_California_Proposition_103)
+  * [Expand all](https://en.wikipedia.org/wiki/1988_California_Proposition_103 "Expand all collapsible elements on the current page")
+  * [Add interlanguage links](https://www.wikidata.org/wiki/Special:EntityPage/Q60742413#sitelinks-wikipedia "Add interlanguage links")
+
+
+Print/export 
+  * [Download as PDF](https://en.wikipedia.org/w/index.php?title=Special:DownloadAsPdf&page=1988_California_Proposition_103&action=show-download-screen "Download this page as a PDF file")
+  * [Printable version](https://en.wikipedia.org/w/index.php?title=1988_California_Proposition_103&printable=yes "Printable version of this page \[ctrl-option-p\]")
+
+
+In other projects 
+  * [Wikidata item](https://www.wikidata.org/wiki/Special:EntityPage/Q60742413 "Structured data on this page hosted by Wikidata \[ctrl-option-g\]")
+
+
+From Wikipedia, the free encyclopedia
+Ballot initiative for insurance rate adjustments
+Proposition 103 **Insurance Rate Reductions and Regulation Initiative**  
+---  
+Results  
+|  Choice | Votes  | %   
+---|---|---  
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Check-71-128-204-brightblue.svg/20px-Check-71-128-204-brightblue.svg.png) **Yes** |  **4,844,312** |   
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Light_brown_x.svg/20px-Light_brown_x.svg.png) **No** | 4,630,752  |   
+* * *  
+[![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/1988_California_Proposition_103_results_map_by_county.svg/330px-1988_California_Proposition_103_results_map_by_county.svg.png)](https://en.wikipedia.org/wiki/File:1988_California_Proposition_103_results_map_by_county.svg) |  **For** |  **Against**  
+---|---  
+[Elections in California](https://en.wikipedia.org/wiki/Elections_in_California "Elections in California")  
+---  
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Great_Seal_of_the_State_of_California_Colored.svg/250px-Great_Seal_of_the_State_of_California_Colored.svg.png)  
+show[Federal government](https://en.wikipedia.org/wiki/Federal_government_of_the_United_States "Federal government of the United States") |  show[U.S. President](https://en.wikipedia.org/wiki/United_States_presidential_elections_in_California "United States presidential elections in California")  
+---  
+  * [1852](https://en.wikipedia.org/wiki/1852_United_States_presidential_election_in_California "1852 United States presidential election in California")
+  * [1856](https://en.wikipedia.org/wiki/1856_United_States_presidential_election_in_California "1856 United States presidential election in California")
+  * [1860](https://en.wikipedia.org/wiki/1860_United_States_presidential_election_in_California "1860 United States presidential election in California")
+  * [1864](https://en.wikipedia.org/wiki/1864_United_States_presidential_election_in_California "1864 United States presidential election in California")
+  * [1868](https://en.wikipedia.org/wiki/1868_United_States_presidential_election_in_California "1868 United States presidential election in California")
+  * [1872](https://en.wikipedia.org/wiki/1872_United_States_presidential_election_in_California "1872 United States presidential election in California")
+  * [1876](https://en.wikipedia.org/wiki/1876_United_States_presidential_election_in_California "1876 United States presidential election in California")
+  * [1880](https://en.wikipedia.org/wiki/1880_United_States_presidential_election_in_California "1880 United States presidential election in California")
+  * [1884](https://en.wikipedia.org/wiki/1884_United_States_presidential_election_in_California "1884 United States presidential election in California")
+  * [1888](https://en.wikipedia.org/wiki/1888_United_States_presidential_election_in_California "1888 United States presidential election in California")
+  * [1892](https://en.wikipedia.org/wiki/1892_United_States_presidential_election_in_California "1892 United States presidential election in California")
+  * [1896](https://en.wikipedia.org/wiki/1896_United_States_presidential_election_in_California "1896 United States presidential election in California")
+  * [1900](https://en.wikipedia.org/wiki/1900_United_States_presidential_election_in_California "1900 United States presidential election in California")
+  * [1904](https://en.wikipedia.org/wiki/1904_United_States_presidential_election_in_California "1904 United States presidential election in California")
+  * [1908](https://en.wikipedia.org/wiki/1908_United_States_presidential_election_in_California "1908 United States presidential election in California")
+  * [1912](https://en.wikipedia.org/wiki/1912_United_States_presidential_election_in_California "1912 United States presidential election in California")
+  * [1916](https://en.wikipedia.org/wiki/1916_United_States_presidential_election_in_California "1916 United States presidential election in California")
+  * [1920](https://en.wikipedia.org/wiki/1920_United_States_presidential_election_in_California "1920 United States presidential election in California")
+  * [1924](https://en.wikipedia.org/wiki/1924_United_States_presidential_election_in_California "1924 United States presidential election in California")
+  * [1928](https://en.wikipedia.org/wiki/1928_United_States_presidential_election_in_California "1928 United States presidential election in California")
+  * [1932](https://en.wikipedia.org/wiki/1932_United_States_presidential_election_in_California "1932 United States presidential election in California")
+  * [1936](https://en.wikipedia.org/wiki/1936_United_States_presidential_election_in_California "1936 United States presidential election in California")
+  * [1940](https://en.wikipedia.org/wiki/1940_United_States_presidential_election_in_California "1940 United States presidential election in California")
+  * [1944](https://en.wikipedia.org/wiki/1944_United_States_presidential_election_in_California "1944 United States presidential election in California")
+  * [1948](https://en.wikipedia.org/wiki/1948_United_States_presidential_election_in_California "1948 United States presidential election in California")
+  * [1952](https://en.wikipedia.org/wiki/1952_United_States_presidential_election_in_California "1952 United States presidential election in California")
+  * [1956](https://en.wikipedia.org/wiki/1956_United_States_presidential_election_in_California "1956 United States presidential election in California")
+  * [1960](https://en.wikipedia.org/wiki/1960_United_States_presidential_election_in_California "1960 United States presidential election in California")
+  * [1964](https://en.wikipedia.org/wiki/1964_United_States_presidential_election_in_California "1964 United States presidential election in California")
+  * [1968](https://en.wikipedia.org/wiki/1968_United_States_presidential_election_in_California "1968 United States presidential election in California")
+  * [1972](https://en.wikipedia.org/wiki/1972_United_States_presidential_election_in_California "1972 United States presidential election in California")
+  * [1976](https://en.wikipedia.org/wiki/1976_United_States_presidential_election_in_California "1976 United States presidential election in California")
+  * [1980](https://en.wikipedia.org/wiki/1980_United_States_presidential_election_in_California "1980 United States presidential election in California")
+  * [1984](https://en.wikipedia.org/wiki/1984_United_States_presidential_election_in_California "1984 United States presidential election in California")
+  * [1988](https://en.wikipedia.org/wiki/1988_United_States_presidential_election_in_California "1988 United States presidential election in California")
+  * [1992](https://en.wikipedia.org/wiki/1992_United_States_presidential_election_in_California "1992 United States presidential election in California")
+  * [1996](https://en.wikipedia.org/wiki/1996_United_States_presidential_election_in_California "1996 United States presidential election in California")
+  * [2000](https://en.wikipedia.org/wiki/2000_United_States_presidential_election_in_California "2000 United States presidential election in California")
+  * [2004](https://en.wikipedia.org/wiki/2004_United_States_presidential_election_in_California "2004 United States presidential election in California")
+  * [2008](https://en.wikipedia.org/wiki/2008_United_States_presidential_election_in_California "2008 United States presidential election in California")
+  * [2012](https://en.wikipedia.org/wiki/2012_United_States_presidential_election_in_California "2012 United States presidential election in California")
+  * [2016](https://en.wikipedia.org/wiki/2016_United_States_presidential_election_in_California "2016 United States presidential election in California")
+  * [2020](https://en.wikipedia.org/wiki/2020_United_States_presidential_election_in_California "2020 United States presidential election in California")
+  * [2024](https://en.wikipedia.org/wiki/2024_United_States_presidential_election_in_California "2024 United States presidential election in California")
+
+  
+show[U.S. President primary](https://en.wikipedia.org/wiki/United_States_presidential_primary "United States presidential primary")  
+---  
+  * [Dem 1996](https://en.wikipedia.org/wiki/1996_California_Democratic_presidential_primary "1996 California Democratic presidential primary")
+  * [Dem 2000](https://en.wikipedia.org/wiki/2000_California_Democratic_presidential_primary "2000 California Democratic presidential primary")
+  * [Dem 2004](https://en.wikipedia.org/wiki/2004_California_Democratic_presidential_primary "2004 California Democratic presidential primary")
+  * [Dem 2008](https://en.wikipedia.org/wiki/2008_California_Democratic_presidential_primary "2008 California Democratic presidential primary")
+  * [Dem 2012](https://en.wikipedia.org/wiki/2012_United_States_presidential_election_in_California#Democratic_primary "2012 United States presidential election in California")
+  * [Dem 2016](https://en.wikipedia.org/wiki/2016_California_Democratic_presidential_primary "2016 California Democratic presidential primary")
+  * [Dem 2020](https://en.wikipedia.org/wiki/2020_California_Democratic_presidential_primary "2020 California Democratic presidential primary")
+  * [Dem 2024](https://en.wikipedia.org/wiki/2024_California_Democratic_presidential_primary "2024 California Democratic presidential primary")
+
+
+  * [Rep 1996](https://en.wikipedia.org/wiki/1996_California_Republican_presidential_primary "1996 California Republican presidential primary")
+  * [Rep 2000](https://en.wikipedia.org/wiki/2000_California_Republican_presidential_primary "2000 California Republican presidential primary")
+  * [Rep 2004](https://en.wikipedia.org/wiki/2004_California_Republican_presidential_primary "2004 California Republican presidential primary")
+  * [Rep 2008](https://en.wikipedia.org/wiki/2008_California_Republican_presidential_primary "2008 California Republican presidential primary")
+  * [Rep 2012](https://en.wikipedia.org/wiki/2012_California_Republican_presidential_primary "2012 California Republican presidential primary")
+  * [Rep 2016](https://en.wikipedia.org/wiki/2016_California_Republican_presidential_primary "2016 California Republican presidential primary")
+  * [Rep 2020](https://en.wikipedia.org/wiki/2020_California_Republican_presidential_primary "2020 California Republican presidential primary")
+  * [Rep 2024](https://en.wikipedia.org/wiki/2024_California_Republican_presidential_primary "2024 California Republican presidential primary")
+
+  
+show[U.S. Senate](https://en.wikipedia.org/wiki/List_of_United_States_Senate_elections_in_California "List of United States Senate elections in California")  
+---  
+  * [1849](https://en.wikipedia.org/wiki/1849_United_States_Senate_elections_in_California "1849 United States Senate elections in California")
+  * [1850](https://en.wikipedia.org/wiki/1850_United_States_Senate_elections_in_California "1850 United States Senate elections in California")
+  * [1852 sp](https://en.wikipedia.org/wiki/1852_United_States_Senate_special_election_in_California "1852 United States Senate special election in California")
+  * [1856](https://en.wikipedia.org/wiki/1856_United_States_Senate_election_in_California "1856 United States Senate election in California")
+  * [1857 sp](https://en.wikipedia.org/wiki/1857_United_States_Senate_special_election_in_California "1857 United States Senate special election in California")
+  * [1860](https://en.wikipedia.org/wiki/1860_United_States_Senate_election_in_California "1860 United States Senate election in California")
+  * [1860 sp](https://en.wikipedia.org/wiki/1860_United_States_Senate_special_election_in_California "1860 United States Senate special election in California")
+  * [1868](https://en.wikipedia.org/wiki/1868_United_States_Senate_election_in_California "1868 United States Senate election in California")
+  * [1872](https://en.wikipedia.org/wiki/1872_United_States_Senate_election_in_California "1872 United States Senate election in California")
+  * [1873](https://en.wikipedia.org/wiki/1873_United_States_Senate_election_in_California "1873 United States Senate election in California")
+  * [1873 sp](https://en.wikipedia.org/wiki/1873_United_States_Senate_special_election_in_California "1873 United States Senate special election in California")
+  * [1878](https://en.wikipedia.org/wiki/1878_United_States_Senate_election_in_California "1878 United States Senate election in California")
+  * [1880](https://en.wikipedia.org/wiki/1880_United_States_Senate_election_in_California "1880 United States Senate election in California")
+  * [1885](https://en.wikipedia.org/wiki/1885_United_States_Senate_election_in_California "1885 United States Senate election in California")
+  * [1886 sp](https://en.wikipedia.org/wiki/1886_United_States_Senate_special_election_in_California "1886 United States Senate special election in California")
+  * [1887](https://en.wikipedia.org/wiki/1887_United_States_Senate_election_in_California "1887 United States Senate election in California")
+  * [1891](https://en.wikipedia.org/wiki/1891_United_States_Senate_election_in_California "1891 United States Senate election in California")
+  * [1891 sp](https://en.wikipedia.org/wiki/1891_United_States_Senate_special_election_in_California "1891 United States Senate special election in California")
+  * [1893](https://en.wikipedia.org/wiki/1893_United_States_Senate_election_in_California "1893 United States Senate election in California")
+  * [1895 sp](https://en.wikipedia.org/wiki/1895_United_States_Senate_special_election_in_California "1895 United States Senate special election in California")
+  * [1897](https://en.wikipedia.org/wiki/1897_United_States_Senate_election_in_California "1897 United States Senate election in California")
+  * [1900 sp](https://en.wikipedia.org/wiki/1900_United_States_Senate_special_election_in_California "1900 United States Senate special election in California")
+  * [1903](https://en.wikipedia.org/wiki/1903_United_States_Senate_election_in_California "1903 United States Senate election in California")
+  * [1905](https://en.wikipedia.org/wiki/1905_United_States_Senate_election_in_California "1905 United States Senate election in California")
+  * [1909](https://en.wikipedia.org/wiki/1909_United_States_Senate_election_in_California "1909 United States Senate election in California")
+  * [1911](https://en.wikipedia.org/wiki/1911_United_States_Senate_election_in_California "1911 United States Senate election in California")
+  * [1914](https://en.wikipedia.org/wiki/1914_United_States_Senate_election_in_California "1914 United States Senate election in California")
+  * [1916](https://en.wikipedia.org/wiki/1916_United_States_Senate_election_in_California "1916 United States Senate election in California")
+  * [1920](https://en.wikipedia.org/wiki/1920_United_States_Senate_election_in_California "1920 United States Senate election in California")
+  * [1922](https://en.wikipedia.org/wiki/1922_United_States_Senate_election_in_California "1922 United States Senate election in California")
+  * [1926](https://en.wikipedia.org/wiki/1926_United_States_Senate_election_in_California "1926 United States Senate election in California")
+  * [1928](https://en.wikipedia.org/wiki/1928_United_States_Senate_election_in_California "1928 United States Senate election in California")
+  * [1932](https://en.wikipedia.org/wiki/1932_United_States_Senate_election_in_California "1932 United States Senate election in California")
+  * [1934](https://en.wikipedia.org/wiki/1934_United_States_Senate_election_in_California "1934 United States Senate election in California")
+  * [1938](https://en.wikipedia.org/wiki/1938_United_States_Senate_election_in_California "1938 United States Senate election in California")
+  * [1940](https://en.wikipedia.org/wiki/1940_United_States_Senate_election_in_California "1940 United States Senate election in California")
+  * [1944](https://en.wikipedia.org/wiki/1944_United_States_Senate_election_in_California "1944 United States Senate election in California")
+  * [1946](https://en.wikipedia.org/wiki/1946_United_States_Senate_elections_in_California "1946 United States Senate elections in California")
+  * [1946 sp](https://en.wikipedia.org/wiki/1946_United_States_Senate_elections_in_California "1946 United States Senate elections in California")
+  * [1950](https://en.wikipedia.org/wiki/1950_United_States_Senate_election_in_California "1950 United States Senate election in California")
+  * [1952](https://en.wikipedia.org/wiki/1952_United_States_Senate_election_in_California "1952 United States Senate election in California")
+  * [1954 sp](https://en.wikipedia.org/wiki/1954_United_States_Senate_special_election_in_California "1954 United States Senate special election in California")
+  * [1956](https://en.wikipedia.org/wiki/1956_United_States_Senate_election_in_California "1956 United States Senate election in California")
+  * [1958](https://en.wikipedia.org/wiki/1958_United_States_Senate_election_in_California "1958 United States Senate election in California")
+  * [1962](https://en.wikipedia.org/wiki/1962_United_States_Senate_election_in_California "1962 United States Senate election in California")
+  * [1964](https://en.wikipedia.org/wiki/1964_United_States_Senate_election_in_California "1964 United States Senate election in California")
+  * [1968](https://en.wikipedia.org/wiki/1968_United_States_Senate_election_in_California "1968 United States Senate election in California")
+  * [1970](https://en.wikipedia.org/wiki/1970_United_States_Senate_election_in_California "1970 United States Senate election in California")
+  * [1974](https://en.wikipedia.org/wiki/1974_United_States_Senate_election_in_California "1974 United States Senate election in California")
+  * [1976](https://en.wikipedia.org/wiki/1976_United_States_Senate_election_in_California "1976 United States Senate election in California")
+  * [1980](https://en.wikipedia.org/wiki/1980_United_States_Senate_election_in_California "1980 United States Senate election in California")
+  * [1982](https://en.wikipedia.org/wiki/1982_United_States_Senate_election_in_California "1982 United States Senate election in California")
+  * [1986](https://en.wikipedia.org/wiki/1986_United_States_Senate_election_in_California "1986 United States Senate election in California")
+  * [1988](https://en.wikipedia.org/wiki/1988_United_States_Senate_election_in_California "1988 United States Senate election in California")
+  * [1992](https://en.wikipedia.org/wiki/1992_United_States_Senate_election_in_California "1992 United States Senate election in California")
+  * [1992 sp](https://en.wikipedia.org/wiki/1992_United_States_Senate_special_election_in_California "1992 United States Senate special election in California")
+  * [1994](https://en.wikipedia.org/wiki/1994_United_States_Senate_election_in_California "1994 United States Senate election in California")
+  * [1998](https://en.wikipedia.org/wiki/1998_United_States_Senate_election_in_California "1998 United States Senate election in California")
+  * [2000](https://en.wikipedia.org/wiki/2000_United_States_Senate_election_in_California "2000 United States Senate election in California")
+  * [2004](https://en.wikipedia.org/wiki/2004_United_States_Senate_election_in_California "2004 United States Senate election in California")
+  * [2006](https://en.wikipedia.org/wiki/2006_United_States_Senate_election_in_California "2006 United States Senate election in California")
+  * [2010](https://en.wikipedia.org/wiki/2010_United_States_Senate_election_in_California "2010 United States Senate election in California")
+  * [2012](https://en.wikipedia.org/wiki/2012_United_States_Senate_election_in_California "2012 United States Senate election in California")
+  * [2016](https://en.wikipedia.org/wiki/2016_United_States_Senate_election_in_California "2016 United States Senate election in California")
+  * [2018](https://en.wikipedia.org/wiki/2018_United_States_Senate_election_in_California "2018 United States Senate election in California")
+  * [2022](https://en.wikipedia.org/wiki/2022_United_States_Senate_elections_in_California "2022 United States Senate elections in California")
+  * [2022 sp](https://en.wikipedia.org/wiki/2022_United_States_Senate_elections_in_California "2022 United States Senate elections in California")
+  * [2024](https://en.wikipedia.org/wiki/2024_United_States_Senate_elections_in_California "2024 United States Senate elections in California")
+  * [2024 sp](https://en.wikipedia.org/wiki/2024_United_States_Senate_elections_in_California "2024 United States Senate elections in California")
+  * _[2028](https://en.wikipedia.org/wiki/2028_United_States_Senate_election_in_California "2028 United States Senate election in California")_
+  * _[2030](https://en.wikipedia.org/wiki/2030_United_States_Senate_election_in_California "2030 United States Senate election in California")_
+
+  
+show[U.S. House of Representatives](https://en.wikipedia.org/wiki/List_of_United_States_representatives_from_California "List of United States representatives from California")  
+---  
+  * [1849](https://en.wikipedia.org/wiki/1849_United_States_House_of_Representatives_election_in_California "1849 United States House of Representatives election in California")
+  * [1851](https://en.wikipedia.org/wiki/1851_United_States_House_of_Representatives_election_in_California "1851 United States House of Representatives election in California")
+  * [1852](https://en.wikipedia.org/wiki/1852_United_States_House_of_Representatives_election_in_California "1852 United States House of Representatives election in California")
+  * [1854](https://en.wikipedia.org/wiki/1854_United_States_House_of_Representatives_election_in_California "1854 United States House of Representatives election in California")
+  * [1856](https://en.wikipedia.org/wiki/1856_United_States_House_of_Representatives_election_in_California "1856 United States House of Representatives election in California")
+  * [1859](https://en.wikipedia.org/wiki/1859_United_States_House_of_Representatives_election_in_California "1859 United States House of Representatives election in California")
+  * [1861](https://en.wikipedia.org/wiki/1861_United_States_House_of_Representatives_election_in_California "1861 United States House of Representatives election in California")
+  * [1863](https://en.wikipedia.org/wiki/1863_United_States_House_of_Representatives_election_in_California "1863 United States House of Representatives election in California")
+  * [1864](https://en.wikipedia.org/wiki/1864_United_States_House_of_Representatives_elections_in_California "1864 United States House of Representatives elections in California")
+  * [1867](https://en.wikipedia.org/wiki/1867_United_States_House_of_Representatives_elections_in_California "1867 United States House of Representatives elections in California")
+  * [1868](https://en.wikipedia.org/wiki/1868_United_States_House_of_Representatives_elections_in_California "1868 United States House of Representatives elections in California")
+  * [1871](https://en.wikipedia.org/wiki/1871_United_States_House_of_Representatives_elections_in_California "1871 United States House of Representatives elections in California")
+  * [1872](https://en.wikipedia.org/wiki/1872_United_States_House_of_Representatives_elections_in_California "1872 United States House of Representatives elections in California")
+  * [1875](https://en.wikipedia.org/wiki/1875_United_States_House_of_Representatives_elections_in_California "1875 United States House of Representatives elections in California")
+  * [1876](https://en.wikipedia.org/wiki/1876_United_States_House_of_Representatives_elections_in_California "1876 United States House of Representatives elections in California")
+  * [1879](https://en.wikipedia.org/wiki/1879_United_States_House_of_Representatives_elections_in_California "1879 United States House of Representatives elections in California")
+  * [1880](https://en.wikipedia.org/wiki/1880_United_States_House_of_Representatives_elections_in_California "1880 United States House of Representatives elections in California")
+  * [1882](https://en.wikipedia.org/wiki/1882_United_States_House_of_Representatives_elections_in_California "1882 United States House of Representatives elections in California")
+  * [1884](https://en.wikipedia.org/wiki/1884_United_States_House_of_Representatives_elections_in_California "1884 United States House of Representatives elections in California")
+  * [1886](https://en.wikipedia.org/wiki/1886_United_States_House_of_Representatives_elections_in_California "1886 United States House of Representatives elections in California")
+  * [1888](https://en.wikipedia.org/wiki/1888_United_States_House_of_Representatives_elections_in_California "1888 United States House of Representatives elections in California")
+  * [1890](https://en.wikipedia.org/wiki/1890_United_States_House_of_Representatives_elections_in_California "1890 United States House of Representatives elections in California")
+  * [1892](https://en.wikipedia.org/wiki/1892_United_States_House_of_Representatives_elections_in_California "1892 United States House of Representatives elections in California")
+  * [1894](https://en.wikipedia.org/wiki/1894_United_States_House_of_Representatives_elections_in_California "1894 United States House of Representatives elections in California")
+  * [1896](https://en.wikipedia.org/wiki/1896_United_States_House_of_Representatives_elections_in_California "1896 United States House of Representatives elections in California")
+  * [1898](https://en.wikipedia.org/wiki/1898_United_States_House_of_Representatives_elections_in_California "1898 United States House of Representatives elections in California")
+  * [1900](https://en.wikipedia.org/wiki/1900_United_States_House_of_Representatives_elections_in_California "1900 United States House of Representatives elections in California")
+  * [1902](https://en.wikipedia.org/wiki/1902_United_States_House_of_Representatives_elections_in_California "1902 United States House of Representatives elections in California")
+  * [1904](https://en.wikipedia.org/wiki/1904_United_States_House_of_Representatives_elections_in_California "1904 United States House of Representatives elections in California")
+  * [1906](https://en.wikipedia.org/wiki/1906_United_States_House_of_Representatives_elections_in_California "1906 United States House of Representatives elections in California")
+  * [1908](https://en.wikipedia.org/wiki/1908_United_States_House_of_Representatives_elections_in_California "1908 United States House of Representatives elections in California")
+  * [1910](https://en.wikipedia.org/wiki/1910_United_States_House_of_Representatives_elections_in_California "1910 United States House of Representatives elections in California")
+  * [1912](https://en.wikipedia.org/wiki/1912_United_States_House_of_Representatives_elections_in_California "1912 United States House of Representatives elections in California")
+  * [1914](https://en.wikipedia.org/wiki/1914_United_States_House_of_Representatives_elections_in_California "1914 United States House of Representatives elections in California")
+  * [1916](https://en.wikipedia.org/wiki/1916_United_States_House_of_Representatives_elections_in_California "1916 United States House of Representatives elections in California")
+  * [1918](https://en.wikipedia.org/wiki/1918_United_States_House_of_Representatives_elections_in_California "1918 United States House of Representatives elections in California")
+  * [1920](https://en.wikipedia.org/wiki/1920_United_States_House_of_Representatives_elections_in_California "1920 United States House of Representatives elections in California")
+  * [1922](https://en.wikipedia.org/wiki/1922_United_States_House_of_Representatives_elections_in_California "1922 United States House of Representatives elections in California")
+  * [1924](https://en.wikipedia.org/wiki/1924_United_States_House_of_Representatives_elections_in_California "1924 United States House of Representatives elections in California")
+  * [1926](https://en.wikipedia.org/wiki/1926_United_States_House_of_Representatives_elections_in_California "1926 United States House of Representatives elections in California")
+  * [1928](https://en.wikipedia.org/wiki/1928_United_States_House_of_Representatives_elections_in_California "1928 United States House of Representatives elections in California")
+  * [1930](https://en.wikipedia.org/wiki/1930_United_States_House_of_Representatives_elections_in_California "1930 United States House of Representatives elections in California")
+  * [1932](https://en.wikipedia.org/wiki/1932_United_States_House_of_Representatives_elections_in_California "1932 United States House of Representatives elections in California")
+  * [1934](https://en.wikipedia.org/wiki/1934_United_States_House_of_Representatives_elections_in_California "1934 United States House of Representatives elections in California")
+  * [1936](https://en.wikipedia.org/wiki/1936_United_States_House_of_Representatives_elections_in_California "1936 United States House of Representatives elections in California")
+  * [1938](https://en.wikipedia.org/wiki/1938_United_States_House_of_Representatives_elections_in_California "1938 United States House of Representatives elections in California")
+  * [1940](https://en.wikipedia.org/wiki/1940_United_States_House_of_Representatives_elections_in_California "1940 United States House of Representatives elections in California")
+  * [1942](https://en.wikipedia.org/wiki/1942_United_States_House_of_Representatives_elections_in_California "1942 United States House of Representatives elections in California")
+  * [1944](https://en.wikipedia.org/wiki/1944_United_States_House_of_Representatives_elections_in_California "1944 United States House of Representatives elections in California")
+  * [1946](https://en.wikipedia.org/wiki/1946_United_States_House_of_Representatives_elections_in_California "1946 United States House of Representatives elections in California")
+    * [12th](https://en.wikipedia.org/wiki/1946_California%27s_12th_congressional_district_election "1946 California's 12th congressional district election")
+  * [1948](https://en.wikipedia.org/wiki/1948_United_States_House_of_Representatives_elections_in_California "1948 United States House of Representatives elections in California")
+  * [1950](https://en.wikipedia.org/wiki/1950_United_States_House_of_Representatives_elections_in_California "1950 United States House of Representatives elections in California")
+  * [1952](https://en.wikipedia.org/wiki/1952_United_States_House_of_Representatives_elections_in_California "1952 United States House of Representatives elections in California")
+  * [1954](https://en.wikipedia.org/wiki/1954_United_States_House_of_Representatives_elections_in_California "1954 United States House of Representatives elections in California")
+  * [1956](https://en.wikipedia.org/wiki/1956_United_States_House_of_Representatives_elections_in_California "1956 United States House of Representatives elections in California")
+  * [1958](https://en.wikipedia.org/wiki/1958_United_States_House_of_Representatives_elections_in_California "1958 United States House of Representatives elections in California")
+  * [1960](https://en.wikipedia.org/wiki/1960_United_States_House_of_Representatives_elections_in_California "1960 United States House of Representatives elections in California")
+  * [1962](https://en.wikipedia.org/wiki/1962_United_States_House_of_Representatives_elections_in_California "1962 United States House of Representatives elections in California")
+  * [1964](https://en.wikipedia.org/wiki/1964_United_States_House_of_Representatives_elections_in_California "1964 United States House of Representatives elections in California")
+  * [1966](https://en.wikipedia.org/wiki/1966_United_States_House_of_Representatives_elections_in_California "1966 United States House of Representatives elections in California")
+  * [1968](https://en.wikipedia.org/wiki/1968_United_States_House_of_Representatives_elections_in_California "1968 United States House of Representatives elections in California")
+  * [1970](https://en.wikipedia.org/wiki/1970_United_States_House_of_Representatives_elections_in_California "1970 United States House of Representatives elections in California")
+  * [1972](https://en.wikipedia.org/wiki/1972_United_States_House_of_Representatives_elections_in_California "1972 United States House of Representatives elections in California")
+  * [1974](https://en.wikipedia.org/wiki/1974_United_States_House_of_Representatives_elections_in_California "1974 United States House of Representatives elections in California")
+  * [1976](https://en.wikipedia.org/wiki/1976_United_States_House_of_Representatives_elections_in_California "1976 United States House of Representatives elections in California")
+  * [1978](https://en.wikipedia.org/wiki/1978_United_States_House_of_Representatives_elections_in_California "1978 United States House of Representatives elections in California")
+  * [1980](https://en.wikipedia.org/wiki/1980_United_States_House_of_Representatives_elections_in_California "1980 United States House of Representatives elections in California")
+  * [1982](https://en.wikipedia.org/wiki/1982_United_States_House_of_Representatives_elections_in_California "1982 United States House of Representatives elections in California")
+  * [1984](https://en.wikipedia.org/wiki/1984_United_States_House_of_Representatives_elections_in_California "1984 United States House of Representatives elections in California")
+  * [1986](https://en.wikipedia.org/wiki/1986_United_States_House_of_Representatives_elections_in_California "1986 United States House of Representatives elections in California")
+  * 1987 
+    * [5th sp](https://en.wikipedia.org/wiki/1987_California%27s_5th_congressional_district_special_election "1987 California's 5th congressional district special election")
+  * [1988](https://en.wikipedia.org/wiki/1988_United_States_House_of_Representatives_elections_in_California "1988 United States House of Representatives elections in California")
+  * [1990](https://en.wikipedia.org/wiki/1990_United_States_House_of_Representatives_elections_in_California "1990 United States House of Representatives elections in California")
+  * [1992](https://en.wikipedia.org/wiki/1992_United_States_House_of_Representatives_elections_in_California "1992 United States House of Representatives elections in California")
+  * [1994](https://en.wikipedia.org/wiki/1994_United_States_House_of_Representatives_elections_in_California "1994 United States House of Representatives elections in California")
+  * [1996](https://en.wikipedia.org/wiki/1996_United_States_House_of_Representatives_elections_in_California "1996 United States House of Representatives elections in California")
+  * [1998](https://en.wikipedia.org/wiki/1998_United_States_House_of_Representatives_elections_in_California "1998 United States House of Representatives elections in California")
+  * [2000](https://en.wikipedia.org/wiki/2000_United_States_House_of_Representatives_elections_in_California "2000 United States House of Representatives elections in California")
+  * 2001 
+    * [32nd sp](https://en.wikipedia.org/wiki/2001_California%27s_32nd_congressional_district_special_election "2001 California's 32nd congressional district special election")
+  * [2002](https://en.wikipedia.org/wiki/2002_United_States_House_of_Representatives_elections_in_California "2002 United States House of Representatives elections in California")
+  * [2004](https://en.wikipedia.org/wiki/2004_United_States_House_of_Representatives_elections_in_California "2004 United States House of Representatives elections in California")
+  * 2005 
+    * [5th sp](https://en.wikipedia.org/wiki/2005_California%27s_5th_congressional_district_special_election "2005 California's 5th congressional district special election")
+    * [48th sp](https://en.wikipedia.org/wiki/2005_California%27s_48th_congressional_district_special_election "2005 California's 48th congressional district special election")
+  * [2006](https://en.wikipedia.org/wiki/2006_United_States_House_of_Representatives_elections_in_California "2006 United States House of Representatives elections in California")
+    * [50th sp](https://en.wikipedia.org/wiki/2006_California%27s_50th_congressional_district_special_election "2006 California's 50th congressional district special election")
+  * 2007 
+    * [37th sp](https://en.wikipedia.org/wiki/2007_California%27s_37th_congressional_district_special_election "2007 California's 37th congressional district special election")
+  * [2008](https://en.wikipedia.org/wiki/2008_United_States_House_of_Representatives_elections_in_California "2008 United States House of Representatives elections in California")
+    * [12th sp](https://en.wikipedia.org/wiki/2008_California%27s_12th_congressional_district_special_election "2008 California's 12th congressional district special election")
+  * 2009 
+    * [10th sp](https://en.wikipedia.org/wiki/2009_California%27s_10th_congressional_district_special_election "2009 California's 10th congressional district special election")
+    * [32nd sp](https://en.wikipedia.org/wiki/2009_California%27s_32nd_congressional_district_special_election "2009 California's 32nd congressional district special election")
+  * [2010](https://en.wikipedia.org/wiki/2010_United_States_House_of_Representatives_elections_in_California "2010 United States House of Representatives elections in California")
+  * 2011 
+    * [36th sp](https://en.wikipedia.org/wiki/2011_California%27s_36th_congressional_district_special_election "2011 California's 36th congressional district special election")
+  * [2012](https://en.wikipedia.org/wiki/2012_United_States_House_of_Representatives_elections_in_California "2012 United States House of Representatives elections in California")
+  * [2014](https://en.wikipedia.org/wiki/2014_United_States_House_of_Representatives_elections_in_California "2014 United States House of Representatives elections in California")
+  * [2016](https://en.wikipedia.org/wiki/2016_United_States_House_of_Representatives_elections_in_California "2016 United States House of Representatives elections in California")
+  * 2017 
+    * [34th sp](https://en.wikipedia.org/wiki/2017_California%27s_34th_congressional_district_special_election "2017 California's 34th congressional district special election")
+  * [2018](https://en.wikipedia.org/wiki/2018_United_States_House_of_Representatives_elections_in_California "2018 United States House of Representatives elections in California")
+  * [2020](https://en.wikipedia.org/wiki/2020_United_States_House_of_Representatives_elections_in_California "2020 United States House of Representatives elections in California")
+    * [25th sp](https://en.wikipedia.org/wiki/2020_California%27s_25th_congressional_district_special_election "2020 California's 25th congressional district special election")
+  * [2022](https://en.wikipedia.org/wiki/2022_United_States_House_of_Representatives_elections_in_California "2022 United States House of Representatives elections in California")
+    * [22nd sp](https://en.wikipedia.org/wiki/2022_California%27s_22nd_congressional_district_special_election "2022 California's 22nd congressional district special election")
+  * [2024](https://en.wikipedia.org/wiki/2024_United_States_House_of_Representatives_elections_in_California "2024 United States House of Representatives elections in California")
+    * [16th](https://en.wikipedia.org/wiki/2024_California%27s_16th_congressional_district_election "2024 California's 16th congressional district election")
+    * [20th sp](https://en.wikipedia.org/wiki/2024_California%27s_20th_congressional_district_special_election "2024 California's 20th congressional district special election")
+    * [30th](https://en.wikipedia.org/wiki/2024_California%27s_30th_congressional_district_election "2024 California's 30th congressional district election")
+    * [45th](https://en.wikipedia.org/wiki/2024_California%27s_45th_congressional_district_election "2024 California's 45th congressional district election")
+    * [47th](https://en.wikipedia.org/wiki/2024_California%27s_47th_congressional_district_election "2024 California's 47th congressional district election")
+  * _[2026](https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_California "2026 United States House of Representatives elections in California")_
+
+  
+show[State government](https://en.wikipedia.org/wiki/Government_of_California "Government of California") _[Executive](https://en.wikipedia.org/wiki/California_executive_branch "California executive branch")_  
+|  show[Governor](https://en.wikipedia.org/wiki/Governor_of_California "Governor of California")  
+---  
+  * [1849](https://en.wikipedia.org/wiki/1849_California_gubernatorial_election "1849 California gubernatorial election")
+  * [1851](https://en.wikipedia.org/wiki/1851_California_gubernatorial_election "1851 California gubernatorial election")
+  * [1853](https://en.wikipedia.org/wiki/1853_California_gubernatorial_election "1853 California gubernatorial election")
+  * [1855](https://en.wikipedia.org/wiki/1855_California_gubernatorial_election "1855 California gubernatorial election")
+  * [1857](https://en.wikipedia.org/wiki/1857_California_gubernatorial_election "1857 California gubernatorial election")
+  * [1859](https://en.wikipedia.org/wiki/1855_California_gubernatorial_election "1855 California gubernatorial election")
+  * [1861](https://en.wikipedia.org/wiki/1861_California_gubernatorial_election "1861 California gubernatorial election")
+  * [1863](https://en.wikipedia.org/wiki/1863_California_gubernatorial_election "1863 California gubernatorial election")
+  * [1867](https://en.wikipedia.org/wiki/1867_California_gubernatorial_election "1867 California gubernatorial election")
+  * [1871](https://en.wikipedia.org/wiki/1871_California_gubernatorial_election "1871 California gubernatorial election")
+  * [1875](https://en.wikipedia.org/wiki/1875_California_gubernatorial_election "1875 California gubernatorial election")
+  * [1879](https://en.wikipedia.org/wiki/1879_California_gubernatorial_election "1879 California gubernatorial election")
+  * [1882](https://en.wikipedia.org/wiki/1882_California_gubernatorial_election "1882 California gubernatorial election")
+  * [1886](https://en.wikipedia.org/wiki/1886_California_gubernatorial_election "1886 California gubernatorial election")
+  * [1890](https://en.wikipedia.org/wiki/1890_California_gubernatorial_election "1890 California gubernatorial election")
+  * [1894](https://en.wikipedia.org/wiki/1894_California_gubernatorial_election "1894 California gubernatorial election")
+  * [1898](https://en.wikipedia.org/wiki/1898_California_gubernatorial_election "1898 California gubernatorial election")
+  * [1902](https://en.wikipedia.org/wiki/1902_California_gubernatorial_election "1902 California gubernatorial election")
+  * [1906](https://en.wikipedia.org/wiki/1906_California_gubernatorial_election "1906 California gubernatorial election")
+  * [1910](https://en.wikipedia.org/wiki/1910_California_gubernatorial_election "1910 California gubernatorial election")
+  * [1914](https://en.wikipedia.org/wiki/1914_California_gubernatorial_election "1914 California gubernatorial election")
+  * [1918](https://en.wikipedia.org/wiki/1918_California_gubernatorial_election "1918 California gubernatorial election")
+  * [1922](https://en.wikipedia.org/wiki/1922_California_gubernatorial_election "1922 California gubernatorial election")
+  * [1926](https://en.wikipedia.org/wiki/1926_California_gubernatorial_election "1926 California gubernatorial election")
+  * [1930](https://en.wikipedia.org/wiki/1930_California_gubernatorial_election "1930 California gubernatorial election")
+  * [1934](https://en.wikipedia.org/wiki/1934_California_gubernatorial_election "1934 California gubernatorial election")
+  * [1938](https://en.wikipedia.org/wiki/1938_California_gubernatorial_election "1938 California gubernatorial election")
+  * [1942](https://en.wikipedia.org/wiki/1942_California_gubernatorial_election "1942 California gubernatorial election")
+  * [1946](https://en.wikipedia.org/wiki/1946_California_gubernatorial_election "1946 California gubernatorial election")
+  * [1950](https://en.wikipedia.org/wiki/1950_California_gubernatorial_election "1950 California gubernatorial election")
+  * [1954](https://en.wikipedia.org/wiki/1954_California_gubernatorial_election "1954 California gubernatorial election")
+  * [1958](https://en.wikipedia.org/wiki/1958_California_gubernatorial_election "1958 California gubernatorial election")
+  * [1962](https://en.wikipedia.org/wiki/1962_California_gubernatorial_election "1962 California gubernatorial election")
+  * [1966](https://en.wikipedia.org/wiki/1966_California_gubernatorial_election "1966 California gubernatorial election")
+  * [1970](https://en.wikipedia.org/wiki/1970_California_gubernatorial_election "1970 California gubernatorial election")
+  * [1974](https://en.wikipedia.org/wiki/1974_California_gubernatorial_election "1974 California gubernatorial election")
+  * [1978](https://en.wikipedia.org/wiki/1978_California_gubernatorial_election "1978 California gubernatorial election")
+  * [1982](https://en.wikipedia.org/wiki/1982_California_gubernatorial_election "1982 California gubernatorial election")
+  * [1986](https://en.wikipedia.org/wiki/1986_California_gubernatorial_election "1986 California gubernatorial election")
+  * [1990](https://en.wikipedia.org/wiki/1990_California_gubernatorial_election "1990 California gubernatorial election")
+  * [1994](https://en.wikipedia.org/wiki/1994_California_gubernatorial_election "1994 California gubernatorial election")
+  * [1998](https://en.wikipedia.org/wiki/1998_California_gubernatorial_election "1998 California gubernatorial election")
+  * [2002](https://en.wikipedia.org/wiki/2002_California_gubernatorial_election "2002 California gubernatorial election")
+  * [2003 (recall)](https://en.wikipedia.org/wiki/2003_California_gubernatorial_recall_election "2003 California gubernatorial recall election")
+  * [2006](https://en.wikipedia.org/wiki/2006_California_gubernatorial_election "2006 California gubernatorial election")
+  * [2010](https://en.wikipedia.org/wiki/2010_California_gubernatorial_election "2010 California gubernatorial election")
+  * [2014](https://en.wikipedia.org/wiki/2014_California_gubernatorial_election "2014 California gubernatorial election")
+  * [2018](https://en.wikipedia.org/wiki/2018_California_gubernatorial_election "2018 California gubernatorial election")
+  * [2021 (recall)](https://en.wikipedia.org/wiki/2021_California_gubernatorial_recall_election "2021 California gubernatorial recall election")
+  * [2022](https://en.wikipedia.org/wiki/2022_California_gubernatorial_election "2022 California gubernatorial election")
+  * _[2026](https://en.wikipedia.org/wiki/2026_California_gubernatorial_election "2026 California gubernatorial election")_
+
+  
+show[Lieutenant governor](https://en.wikipedia.org/wiki/Lieutenant_Governor_of_California "Lieutenant Governor of California")  
+---  
+  * [1950](https://en.wikipedia.org/wiki/1950_California_lieutenant_gubernatorial_election "1950 California lieutenant gubernatorial election")
+  * [1954](https://en.wikipedia.org/wiki/1954_California_lieutenant_gubernatorial_election "1954 California lieutenant gubernatorial election")
+  * [1958](https://en.wikipedia.org/wiki/1958_California_lieutenant_gubernatorial_election "1958 California lieutenant gubernatorial election")
+  * [1962](https://en.wikipedia.org/wiki/1962_California_lieutenant_gubernatorial_election "1962 California lieutenant gubernatorial election")
+  * [1966](https://en.wikipedia.org/wiki/1966_California_lieutenant_gubernatorial_election "1966 California lieutenant gubernatorial election")
+  * [1970](https://en.wikipedia.org/wiki/1970_California_lieutenant_gubernatorial_election "1970 California lieutenant gubernatorial election")
+  * [1974](https://en.wikipedia.org/wiki/1974_California_lieutenant_gubernatorial_election "1974 California lieutenant gubernatorial election")
+  * [1978](https://en.wikipedia.org/wiki/1978_California_lieutenant_gubernatorial_election "1978 California lieutenant gubernatorial election")
+  * [1982](https://en.wikipedia.org/wiki/1982_California_lieutenant_gubernatorial_election "1982 California lieutenant gubernatorial election")
+  * [1986](https://en.wikipedia.org/wiki/1986_California_lieutenant_gubernatorial_election "1986 California lieutenant gubernatorial election")
+  * [1990](https://en.wikipedia.org/wiki/1990_California_lieutenant_gubernatorial_election "1990 California lieutenant gubernatorial election")
+  * [1994](https://en.wikipedia.org/wiki/1994_California_lieutenant_gubernatorial_election "1994 California lieutenant gubernatorial election")
+  * [1998](https://en.wikipedia.org/wiki/1998_California_lieutenant_gubernatorial_election "1998 California lieutenant gubernatorial election")
+  * [2002](https://en.wikipedia.org/wiki/2002_California_lieutenant_gubernatorial_election "2002 California lieutenant gubernatorial election")
+  * [2006](https://en.wikipedia.org/wiki/2006_California_lieutenant_gubernatorial_election "2006 California lieutenant gubernatorial election")
+  * [2010](https://en.wikipedia.org/wiki/2010_California_lieutenant_gubernatorial_election "2010 California lieutenant gubernatorial election")
+  * [2014](https://en.wikipedia.org/wiki/2014_California_lieutenant_gubernatorial_election "2014 California lieutenant gubernatorial election")
+  * [2018](https://en.wikipedia.org/wiki/2018_California_lieutenant_gubernatorial_election "2018 California lieutenant gubernatorial election")
+  * [2022](https://en.wikipedia.org/wiki/2022_California_lieutenant_gubernatorial_election "2022 California lieutenant gubernatorial election")
+  * _[2026](https://en.wikipedia.org/wiki/2026_California_lieutenant_gubernatorial_election "2026 California lieutenant gubernatorial election")_
+
+  
+show[Secretary of state](https://en.wikipedia.org/wiki/Secretary_of_State_of_California "Secretary of State of California")  
+---  
+  * [1970](https://en.wikipedia.org/wiki/1970_California_Secretary_of_State_election "1970 California Secretary of State election")
+  * [1974](https://en.wikipedia.org/wiki/1974_California_Secretary_of_State_election "1974 California Secretary of State election")
+  * [1978](https://en.wikipedia.org/wiki/1978_California_Secretary_of_State_election "1978 California Secretary of State election")
+  * [1982](https://en.wikipedia.org/wiki/1982_California_Secretary_of_State_election "1982 California Secretary of State election")
+  * [1986](https://en.wikipedia.org/wiki/1986_California_Secretary_of_State_election "1986 California Secretary of State election")
+  * [1990](https://en.wikipedia.org/wiki/1990_California_Secretary_of_State_election "1990 California Secretary of State election")
+  * [1994](https://en.wikipedia.org/wiki/1994_California_Secretary_of_State_election "1994 California Secretary of State election")
+  * [1998](https://en.wikipedia.org/wiki/1998_California_Secretary_of_State_election "1998 California Secretary of State election")
+  * [2002](https://en.wikipedia.org/wiki/2002_California_Secretary_of_State_election "2002 California Secretary of State election")
+  * [2006](https://en.wikipedia.org/wiki/2006_California_Secretary_of_State_election "2006 California Secretary of State election")
+  * [2010](https://en.wikipedia.org/wiki/2010_California_Secretary_of_State_election "2010 California Secretary of State election")
+  * [2014](https://en.wikipedia.org/wiki/2014_California_Secretary_of_State_election "2014 California Secretary of State election")
+  * [2018](https://en.wikipedia.org/wiki/2018_California_Secretary_of_State_election "2018 California Secretary of State election")
+  * [2022](https://en.wikipedia.org/wiki/2022_California_Secretary_of_State_election "2022 California Secretary of State election")
+  * _[2026](https://en.wikipedia.org/wiki/2026_California_Secretary_of_State_election "2026 California Secretary of State election")_
+
+  
+show[Attorney general](https://en.wikipedia.org/wiki/Attorney_General_of_California "Attorney General of California")  
+---  
+  * [1970](https://en.wikipedia.org/wiki/1970_California_Attorney_General_election "1970 California Attorney General election")
+  * [1974](https://en.wikipedia.org/wiki/1974_California_Attorney_General_election "1974 California Attorney General election")
+  * [1978](https://en.wikipedia.org/wiki/1978_California_Attorney_General_election "1978 California Attorney General election")
+  * [1982](https://en.wikipedia.org/wiki/1982_California_Attorney_General_election "1982 California Attorney General election")
+  * [1986](https://en.wikipedia.org/wiki/1986_California_Attorney_General_election "1986 California Attorney General election")
+  * [1990](https://en.wikipedia.org/wiki/1990_California_Attorney_General_election "1990 California Attorney General election")
+  * [1994](https://en.wikipedia.org/wiki/1994_California_Attorney_General_election "1994 California Attorney General election")
+  * [1998](https://en.wikipedia.org/wiki/1998_California_Attorney_General_election "1998 California Attorney General election")
+  * [2002](https://en.wikipedia.org/wiki/2002_California_Attorney_General_election "2002 California Attorney General election")
+  * [2006](https://en.wikipedia.org/wiki/2006_California_Attorney_General_election "2006 California Attorney General election")
+  * [2010](https://en.wikipedia.org/wiki/2010_California_Attorney_General_election "2010 California Attorney General election")
+  * [2014](https://en.wikipedia.org/wiki/2014_California_Attorney_General_election "2014 California Attorney General election")
+  * [2018](https://en.wikipedia.org/wiki/2018_California_Attorney_General_election "2018 California Attorney General election")
+  * [2022](https://en.wikipedia.org/wiki/2022_California_Attorney_General_election "2022 California Attorney General election")
+  * _[2026](https://en.wikipedia.org/wiki/2026_California_Attorney_General_election "2026 California Attorney General election")_
+
+  
+show[Treasurer](https://en.wikipedia.org/wiki/California_State_Treasurer "California State Treasurer")  
+---  
+  * [1990](https://en.wikipedia.org/wiki/1990_California_State_Treasurer_election "1990 California State Treasurer election")
+  * [1994](https://en.wikipedia.org/wiki/1994_California_State_Treasurer_election "1994 California State Treasurer election")
+  * [1998](https://en.wikipedia.org/wiki/1998_California_State_Treasurer_election "1998 California State Treasurer election")
+  * [2002](https://en.wikipedia.org/wiki/2002_California_State_Treasurer_election "2002 California State Treasurer election")
+  * [2006](https://en.wikipedia.org/wiki/2006_California_State_Treasurer_election "2006 California State Treasurer election")
+  * [2010](https://en.wikipedia.org/wiki/2010_California_State_Treasurer_election "2010 California State Treasurer election")
+  * [2014](https://en.wikipedia.org/wiki/2014_California_State_Treasurer_election "2014 California State Treasurer election")
+  * [2018](https://en.wikipedia.org/wiki/2018_California_State_Treasurer_election "2018 California State Treasurer election")
+  * [2022](https://en.wikipedia.org/wiki/2022_California_State_Treasurer_election "2022 California State Treasurer election")
+  * _[2026](https://en.wikipedia.org/wiki/2026_California_State_Treasurer_election "2026 California State Treasurer election")_
+
+  
+show[Controller](https://en.wikipedia.org/wiki/California_State_Controller "California State Controller")  
+---  
+  * [1990](https://en.wikipedia.org/wiki/1990_California_State_Controller_election "1990 California State Controller election")
+  * [1994](https://en.wikipedia.org/wiki/1994_California_State_Controller_election "1994 California State Controller election")
+  * [1998](https://en.wikipedia.org/wiki/1998_California_State_Controller_election "1998 California State Controller election")
+  * [2002](https://en.wikipedia.org/wiki/2002_California_State_Controller_election "2002 California State Controller election")
+  * [2006](https://en.wikipedia.org/wiki/2006_California_State_Controller_election "2006 California State Controller election")
+  * [2010](https://en.wikipedia.org/wiki/2010_California_State_Controller_election "2010 California State Controller election")
+  * [2014](https://en.wikipedia.org/wiki/2014_California_State_Controller_election "2014 California State Controller election")
+  * [2018](https://en.wikipedia.org/wiki/2018_California_State_Controller_election "2018 California State Controller election")
+  * [2022](https://en.wikipedia.org/wiki/2022_California_State_Controller_election "2022 California State Controller election")
+  * _[2026](https://en.wikipedia.org/wiki/2026_California_State_Controller_election "2026 California State Controller election")_
+
+  
+show[Superintendent](https://en.wikipedia.org/wiki/California_State_Superintendent_of_Public_Instruction "California State Superintendent of Public Instruction")  
+---  
+  * [1990](https://en.wikipedia.org/wiki/1990_California_Superintendent_of_Public_Instruction_election "1990 California Superintendent of Public Instruction election")
+  * [1994](https://en.wikipedia.org/wiki/1994_California_Superintendent_of_Public_Instruction_election "1994 California Superintendent of Public Instruction election")
+  * [1998](https://en.wikipedia.org/wiki/1998_California_Superintendent_of_Public_Instruction_election "1998 California Superintendent of Public Instruction election")
+  * [2002](https://en.wikipedia.org/wiki/2002_California_Superintendent_of_Public_Instruction_election "2002 California Superintendent of Public Instruction election")
+  * [2006](https://en.wikipedia.org/wiki/2006_California_Superintendent_of_Public_Instruction_election "2006 California Superintendent of Public Instruction election")
+  * [2010](https://en.wikipedia.org/wiki/2010_California_Superintendent_of_Public_Instruction_election "2010 California Superintendent of Public Instruction election")
+  * [2014](https://en.wikipedia.org/wiki/2014_California_Superintendent_of_Public_Instruction_election "2014 California Superintendent of Public Instruction election")
+  * [2018](https://en.wikipedia.org/wiki/2018_California_Superintendent_of_Public_Instruction_election "2018 California Superintendent of Public Instruction election")
+  * [2022](https://en.wikipedia.org/wiki/2022_California_Superintendent_of_Public_Instruction_election "2022 California Superintendent of Public Instruction election")
+  * _[2026](https://en.wikipedia.org/wiki/2026_California_Superintendent_of_Public_Instruction_election "2026 California Superintendent of Public Instruction election")_
+
+  
+show[Insurance commissioner](https://en.wikipedia.org/wiki/California_Insurance_Commissioner "California Insurance Commissioner")  
+---  
+  * [1990](https://en.wikipedia.org/wiki/1990_California_Insurance_Commissioner_election "1990 California Insurance Commissioner election")
+  * [1994](https://en.wikipedia.org/wiki/1994_California_Insurance_Commissioner_election "1994 California Insurance Commissioner election")
+  * [1998](https://en.wikipedia.org/wiki/1998_California_Insurance_Commissioner_election "1998 California Insurance Commissioner election")
+  * [2002](https://en.wikipedia.org/wiki/2002_California_Insurance_Commissioner_election "2002 California Insurance Commissioner election")
+  * [2006](https://en.wikipedia.org/wiki/2006_California_Insurance_Commissioner_election "2006 California Insurance Commissioner election")
+  * [2010](https://en.wikipedia.org/wiki/2010_California_Insurance_Commissioner_election "2010 California Insurance Commissioner election")
+  * [2014](https://en.wikipedia.org/wiki/2014_California_Insurance_Commissioner_election "2014 California Insurance Commissioner election")
+  * [2018](https://en.wikipedia.org/wiki/2018_California_Insurance_Commissioner_election "2018 California Insurance Commissioner election")
+  * [2022](https://en.wikipedia.org/wiki/2022_California_Insurance_Commissioner_election "2022 California Insurance Commissioner election")
+  * _[2026](https://en.wikipedia.org/wiki/2026_California_Insurance_Commissioner_election "2026 California Insurance Commissioner election")_
+
+  
+show[Board of equalization](https://en.wikipedia.org/wiki/State_Board_of_Equalization_\(California\) "State Board of Equalization \(California\)")  
+---  
+  * [2018](https://en.wikipedia.org/wiki/2018_California_State_Board_of_Equalization_election "2018 California State Board of Equalization election")
+  * [2022](https://en.wikipedia.org/wiki/2022_California_State_Board_of_Equalization_election "2022 California State Board of Equalization election")
+
+  
+* * *
+_[Legislature](https://en.wikipedia.org/wiki/California_State_Legislature "California State Legislature")_  
+show[Senate](https://en.wikipedia.org/wiki/California_State_Senate "California State Senate")  
+---  
+  * [1988](https://en.wikipedia.org/wiki/1988_California_State_Senate_election "1988 California State Senate election")
+  * [1990](https://en.wikipedia.org/wiki/1990_California_State_Senate_election "1990 California State Senate election")
+  * [1992](https://en.wikipedia.org/wiki/1992_California_State_Senate_election "1992 California State Senate election")
+  * [1994](https://en.wikipedia.org/wiki/1994_California_State_Senate_election "1994 California State Senate election")
+  * [1996](https://en.wikipedia.org/wiki/1996_California_State_Senate_election "1996 California State Senate election")
+  * [1998](https://en.wikipedia.org/wiki/1998_California_State_Senate_election "1998 California State Senate election")
+  * [2000](https://en.wikipedia.org/wiki/2000_California_State_Senate_election "2000 California State Senate election")
+  * [2002](https://en.wikipedia.org/wiki/2002_California_State_Senate_election "2002 California State Senate election")
+  * [2004](https://en.wikipedia.org/wiki/2004_California_State_Senate_election "2004 California State Senate election")
+  * [2006](https://en.wikipedia.org/wiki/2006_California_State_Senate_election "2006 California State Senate election")
+  * [2008](https://en.wikipedia.org/wiki/2008_California_State_Senate_election "2008 California State Senate election")
+  * [2010](https://en.wikipedia.org/wiki/2010_California_State_Senate_election "2010 California State Senate election")
+  * [2012](https://en.wikipedia.org/wiki/2012_California_State_Senate_election "2012 California State Senate election")
+  * [2014](https://en.wikipedia.org/wiki/2014_California_State_Senate_election "2014 California State Senate election")
+  * [2016](https://en.wikipedia.org/wiki/2016_California_State_Senate_election "2016 California State Senate election")
+  * [2018](https://en.wikipedia.org/wiki/2018_California_State_Senate_election "2018 California State Senate election")
+  * [2020](https://en.wikipedia.org/wiki/2020_California_State_Senate_election "2020 California State Senate election")
+  * [2022](https://en.wikipedia.org/wiki/2022_California_State_Senate_election "2022 California State Senate election")
+  * [2024](https://en.wikipedia.org/wiki/2024_California_State_Senate_election "2024 California State Senate election")
+  * _[2026](https://en.wikipedia.org/wiki/2026_California_State_Senate_election "2026 California State Senate election")_
+  * [Special](https://en.wikipedia.org/wiki/List_of_special_elections_to_the_California_State_Senate "List of special elections to the California State Senate")
+
+  
+show[Assembly](https://en.wikipedia.org/wiki/California_State_Assembly "California State Assembly")  
+---  
+  * [1990](https://en.wikipedia.org/wiki/1990_California_State_Assembly_election "1990 California State Assembly election")
+  * [1992](https://en.wikipedia.org/wiki/1992_California_State_Assembly_election "1992 California State Assembly election")
+  * [1994](https://en.wikipedia.org/wiki/1994_California_State_Assembly_election "1994 California State Assembly election")
+  * [1996](https://en.wikipedia.org/wiki/1996_California_State_Assembly_election "1996 California State Assembly election")
+  * [1998](https://en.wikipedia.org/wiki/1998_California_State_Assembly_election "1998 California State Assembly election")
+  * [2000](https://en.wikipedia.org/wiki/2000_California_State_Assembly_election "2000 California State Assembly election")
+  * [2002](https://en.wikipedia.org/wiki/2002_California_State_Assembly_election "2002 California State Assembly election")
+  * [2004](https://en.wikipedia.org/wiki/2004_California_State_Assembly_election "2004 California State Assembly election")
+  * [2006](https://en.wikipedia.org/wiki/2006_California_State_Assembly_election "2006 California State Assembly election")
+  * [2008](https://en.wikipedia.org/wiki/2008_California_State_Assembly_election "2008 California State Assembly election")
+  * [2010](https://en.wikipedia.org/wiki/2010_California_State_Assembly_election "2010 California State Assembly election")
+  * [2012](https://en.wikipedia.org/wiki/2012_California_State_Assembly_election "2012 California State Assembly election")
+  * [2014](https://en.wikipedia.org/wiki/2014_California_State_Assembly_election "2014 California State Assembly election")
+  * [2016](https://en.wikipedia.org/wiki/2016_California_State_Assembly_election "2016 California State Assembly election")
+  * [2018](https://en.wikipedia.org/wiki/2018_California_State_Assembly_election "2018 California State Assembly election")
+  * [2020](https://en.wikipedia.org/wiki/2020_California_State_Assembly_election "2020 California State Assembly election")
+  * 2021 ([79th sp](https://en.wikipedia.org/wiki/2021_California%27s_79th_State_Assembly_district_special_election "2021 California's 79th State Assembly district special election"))
+  * [2022](https://en.wikipedia.org/wiki/2022_California_State_Assembly_election "2022 California State Assembly election") ([17th sp](https://en.wikipedia.org/wiki/2022_California%27s_17th_State_Assembly_district_special_election "2022 California's 17th State Assembly district special election"))
+  * [2024](https://en.wikipedia.org/wiki/2024_California_State_Assembly_election "2024 California State Assembly election")
+  * _[2026](https://en.wikipedia.org/wiki/2026_California_State_Assembly_election "2026 California State Assembly election")_
+  * [Special](https://en.wikipedia.org/wiki/List_of_special_elections_to_the_California_State_Assembly "List of special elections to the California State Assembly")
+
+  
+* * *
+_[Judiciary](https://en.wikipedia.org/wiki/Judiciary_of_California "Judiciary of California")_  
+show[Court of appeals](https://en.wikipedia.org/wiki/California_Court_of_Appeals "California Court of Appeals")  
+---  
+  * [1994](https://en.wikipedia.org/wiki/1994_California_Courts_of_Appeal_election "1994 California Courts of Appeal election")
+  * [1998](https://en.wikipedia.org/wiki/1998_California_Courts_of_Appeal_election "1998 California Courts of Appeal election")
+  * [2002](https://en.wikipedia.org/wiki/2002_California_Courts_of_Appeal_election "2002 California Courts of Appeal election")
+  * [2006](https://en.wikipedia.org/wiki/2006_California_Courts_of_Appeal_election "2006 California Courts of Appeal election")
+
+  
+* * *
+show[Elections by year](https://en.wikipedia.org/wiki/Elections_in_California "Elections in California")  
+---  
+  * [1992](https://en.wikipedia.org/wiki/1992_California_elections "1992 California elections")
+  * [1994](https://en.wikipedia.org/wiki/1994_California_elections "1994 California elections")
+  * [1996](https://en.wikipedia.org/wiki/1996_California_elections "1996 California elections")
+  * [1998](https://en.wikipedia.org/wiki/1998_California_elections "1998 California elections")
+  * [2000](https://en.wikipedia.org/wiki/2000_California_elections "2000 California elections")
+  * [2002](https://en.wikipedia.org/wiki/2002_California_elections "2002 California elections")
+  * [2004](https://en.wikipedia.org/wiki/2004_California_elections "2004 California elections")
+  * [2005](https://en.wikipedia.org/wiki/2005_California_special_election "2005 California special election")
+  * [2006](https://en.wikipedia.org/wiki/2006_California_elections "2006 California elections")
+  * 2008 
+    * [Feb](https://en.wikipedia.org/wiki/February_2008_California_elections "February 2008 California elections")
+    * [Jun](https://en.wikipedia.org/wiki/June_2008_California_elections "June 2008 California elections")
+    * [Nov](https://en.wikipedia.org/wiki/2008_California_elections "2008 California elections")
+  * [2009](https://en.wikipedia.org/wiki/2009_California_elections "2009 California elections")
+  * 2010 
+    * [Jun](https://en.wikipedia.org/wiki/June_2010_California_elections "June 2010 California elections")
+    * [Nov](https://en.wikipedia.org/wiki/November_2010_California_elections "November 2010 California elections")
+  * 2012 
+    * [Jun](https://en.wikipedia.org/wiki/June_2012_California_elections "June 2012 California elections")
+    * [Nov](https://en.wikipedia.org/wiki/November_2012_California_elections "November 2012 California elections")
+  * [2014](https://en.wikipedia.org/wiki/2014_California_elections "2014 California elections")
+  * [2016](https://en.wikipedia.org/wiki/2016_California_elections "2016 California elections")
+  * [2018](https://en.wikipedia.org/wiki/2018_California_elections "2018 California elections")
+  * [2020](https://en.wikipedia.org/wiki/2020_California_elections "2020 California elections")
+  * [2022](https://en.wikipedia.org/wiki/2022_California_elections "2022 California elections")
+  * [2024](https://en.wikipedia.org/wiki/2024_California_elections "2024 California elections")
+  * _[2026](https://en.wikipedia.org/wiki/2026_California_elections "2026 California elections")_
+
+  
+show[State propositions](https://en.wikipedia.org/wiki/California_ballot_proposition "California ballot proposition") |  show1910–1919  
+---  
+  * 1911 
+    * [4](https://en.wikipedia.org/wiki/1911_California_Proposition_4 "1911 California Proposition 4")
+    * [7](https://en.wikipedia.org/wiki/1911_California_Proposition_7 "1911 California Proposition 7")
+    * [8](https://en.wikipedia.org/wiki/1911_California_Proposition_8 "1911 California Proposition 8")
+
+  
+show1960–1969  
+---  
+  * 1964 
+    * [14](https://en.wikipedia.org/wiki/1964_California_Proposition_14 "1964 California Proposition 14")
+
+  
+show[1970–1979](https://en.wikipedia.org/wiki/List_of_California_ballot_propositions:_1970%E2%80%931979 "List of California ballot propositions: 1970–1979")  
+---  
+  * 1978 
+    * [6](https://en.wikipedia.org/wiki/Briggs_Initiative "Briggs Initiative")
+    * [8](https://en.wikipedia.org/wiki/1978_California_Proposition_8 "1978 California Proposition 8")
+    * [13](https://en.wikipedia.org/wiki/1978_California_Proposition_13 "1978 California Proposition 13")
+
+  
+show[1980–1989](https://en.wikipedia.org/wiki/List_of_California_ballot_propositions:_1980%E2%80%931989 "List of California ballot propositions: 1980–1989")  
+---  
+  * 1982 
+    * [8](https://en.wikipedia.org/wiki/1982_California_Proposition_8 "1982 California Proposition 8")
+  * 1986 
+    * [60](https://en.wikipedia.org/wiki/1986_California_Proposition_60 "1986 California Proposition 60")
+    * [63](https://en.wikipedia.org/wiki/1986_California_Proposition_63 "1986 California Proposition 63")
+    * [64](https://en.wikipedia.org/wiki/1986_California_Proposition_64 "1986 California Proposition 64")
+    * [65](https://en.wikipedia.org/wiki/1986_California_Proposition_65 "1986 California Proposition 65")
+  * 1988 
+    * [90](https://en.wikipedia.org/wiki/1988_California_Proposition_90 "1988 California Proposition 90")
+    * [98](https://en.wikipedia.org/wiki/1988_California_Proposition_98 "1988 California Proposition 98")
+    * [99](https://en.wikipedia.org/wiki/1988_California_Proposition_99 "1988 California Proposition 99")
+    * 103
+
+  
+show[1990–1999](https://en.wikipedia.org/wiki/List_of_California_ballot_propositions:_1990%E2%80%931999 "List of California ballot propositions: 1990–1999")  
+---  
+  * 1994 
+    * [187](https://en.wikipedia.org/wiki/California_Proposition_187 "California Proposition 187")
+  * 1996 
+    * [196](https://en.wikipedia.org/wiki/1996_California_Proposition_196 "1996 California Proposition 196")
+    * [209](https://en.wikipedia.org/wiki/California_Proposition_209 "California Proposition 209")
+    * [215](https://en.wikipedia.org/wiki/1996_California_Proposition_215 "1996 California Proposition 215")
+    * [218](https://en.wikipedia.org/wiki/1996_California_Proposition_218 "1996 California Proposition 218")
+  * 1998 
+    * [6](https://en.wikipedia.org/wiki/1998_California_Proposition_6 "1998 California Proposition 6")
+    * [10](https://en.wikipedia.org/wiki/1998_California_Proposition_10 "1998 California Proposition 10")
+    * [227](https://en.wikipedia.org/wiki/1998_California_Proposition_227 "1998 California Proposition 227")
+
+  
+show[2000–2009](https://en.wikipedia.org/wiki/List_of_California_ballot_propositions:_2000%E2%80%932009 "List of California ballot propositions: 2000–2009")  
+---  
+  * 2000 
+    * [21](https://en.wikipedia.org/wiki/2000_California_Proposition_21 "2000 California Proposition 21")
+    * [22](https://en.wikipedia.org/wiki/2000_California_Proposition_22 "2000 California Proposition 22")
+    * [36](https://en.wikipedia.org/wiki/2000_California_Proposition_36 "2000 California Proposition 36")
+    * [39](https://en.wikipedia.org/wiki/2000_California_Proposition_39 "2000 California Proposition 39")
+  * 2003 
+    * [53](https://en.wikipedia.org/wiki/2003_California_Proposition_53 "2003 California Proposition 53")
+    * [54](https://en.wikipedia.org/wiki/2003_California_Proposition_54 "2003 California Proposition 54")
+  * 2004 
+    * [1A](https://en.wikipedia.org/wiki/2004_California_Proposition_1A "2004 California Proposition 1A")
+    * [55](https://en.wikipedia.org/wiki/2004_California_Proposition_55 "2004 California Proposition 55")
+    * [56](https://en.wikipedia.org/wiki/2004_California_Proposition_56 "2004 California Proposition 56")
+    * [57](https://en.wikipedia.org/wiki/2004_California_Proposition_57 "2004 California Proposition 57")
+    * [58](https://en.wikipedia.org/wiki/2004_California_Proposition_58 "2004 California Proposition 58")
+    * [59](https://en.wikipedia.org/wiki/2004_California_Proposition_59 "2004 California Proposition 59")
+    * [60](https://en.wikipedia.org/wiki/2004_California_Proposition_60 "2004 California Proposition 60")
+    * [60A](https://en.wikipedia.org/wiki/2004_California_Proposition_60A "2004 California Proposition 60A")
+    * [61](https://en.wikipedia.org/wiki/2004_California_Proposition_61 "2004 California Proposition 61")
+    * [62](https://en.wikipedia.org/wiki/2004_California_Proposition_62 "2004 California Proposition 62")
+    * [63](https://en.wikipedia.org/wiki/2004_California_Proposition_63 "2004 California Proposition 63")
+    * [64](https://en.wikipedia.org/wiki/2004_California_Proposition_64 "2004 California Proposition 64")
+    * [65](https://en.wikipedia.org/wiki/2004_California_Proposition_65 "2004 California Proposition 65")
+    * [66](https://en.wikipedia.org/wiki/2004_California_Proposition_66 "2004 California Proposition 66")
+    * [69](https://en.wikipedia.org/wiki/2004_California_Proposition_69 "2004 California Proposition 69")
+    * [71](https://en.wikipedia.org/wiki/2004_California_Proposition_71 "2004 California Proposition 71")
+  * 2005 
+    * [73](https://en.wikipedia.org/wiki/2005_California_Proposition_73 "2005 California Proposition 73")
+    * [74](https://en.wikipedia.org/wiki/2005_California_Proposition_74 "2005 California Proposition 74")
+    * [75](https://en.wikipedia.org/wiki/2005_California_Proposition_75 "2005 California Proposition 75")
+    * [76](https://en.wikipedia.org/wiki/2005_California_Proposition_76 "2005 California Proposition 76")
+    * [77](https://en.wikipedia.org/wiki/2005_California_Proposition_77 "2005 California Proposition 77")
+    * [78](https://en.wikipedia.org/wiki/2005_California_Proposition_78 "2005 California Proposition 78")
+    * [79](https://en.wikipedia.org/wiki/2005_California_Proposition_79 "2005 California Proposition 79")
+    * [80](https://en.wikipedia.org/wiki/2005_California_Proposition_80 "2005 California Proposition 80")
+  * 2006 
+    * [81](https://en.wikipedia.org/wiki/2006_California_Proposition_81 "2006 California Proposition 81")
+    * [82](https://en.wikipedia.org/wiki/2006_California_Proposition_82 "2006 California Proposition 82")
+    * [83](https://en.wikipedia.org/wiki/2006_California_Proposition_83 "2006 California Proposition 83")
+    * [85](https://en.wikipedia.org/wiki/2006_California_Proposition_85 "2006 California Proposition 85")
+    * [87](https://en.wikipedia.org/wiki/2006_California_Proposition_87 "2006 California Proposition 87")
+    * [89](https://en.wikipedia.org/wiki/2006_California_Proposition_89 "2006 California Proposition 89")
+    * [90](https://en.wikipedia.org/wiki/2006_California_Proposition_90 "2006 California Proposition 90")
+  * 2008 
+    * [91](https://en.wikipedia.org/wiki/2008_California_Proposition_91 "2008 California Proposition 91")
+    * [92](https://en.wikipedia.org/wiki/2008_California_Proposition_92 "2008 California Proposition 92")
+    * [93](https://en.wikipedia.org/wiki/2008_California_Proposition_93 "2008 California Proposition 93")
+    * [94, 95, 96, and 97](https://en.wikipedia.org/wiki/2008_California_Propositions_94,_95,_96,_and_97 "2008 California Propositions 94, 95, 96, and 97")
+    * [98 and 99](https://en.wikipedia.org/wiki/2008_California_Propositions_98_and_99 "2008 California Propositions 98 and 99")
+    * [1A](https://en.wikipedia.org/wiki/2008_California_Proposition_1A "2008 California Proposition 1A")
+    * [2](https://en.wikipedia.org/wiki/2008_California_Proposition_2 "2008 California Proposition 2")
+    * [3](https://en.wikipedia.org/wiki/2008_California_Proposition_3 "2008 California Proposition 3")
+    * [4](https://en.wikipedia.org/wiki/2008_California_Proposition_4 "2008 California Proposition 4")
+    * [5](https://en.wikipedia.org/wiki/2008_California_Proposition_5 "2008 California Proposition 5")
+    * [6](https://en.wikipedia.org/wiki/2008_California_Proposition_6 "2008 California Proposition 6")
+    * [7](https://en.wikipedia.org/wiki/2008_California_Proposition_7 "2008 California Proposition 7")
+    * [8](https://en.wikipedia.org/wiki/2008_California_Proposition_8 "2008 California Proposition 8")
+    * [9](https://en.wikipedia.org/wiki/2008_California_Proposition_9 "2008 California Proposition 9")
+    * [10](https://en.wikipedia.org/wiki/2008_California_Proposition_10 "2008 California Proposition 10")
+    * [11](https://en.wikipedia.org/wiki/2008_California_Proposition_11 "2008 California Proposition 11")
+    * [12](https://en.wikipedia.org/wiki/2008_California_Proposition_12 "2008 California Proposition 12")
+  * 2009 
+    * [1A](https://en.wikipedia.org/wiki/2009_California_Proposition_1A "2009 California Proposition 1A")
+    * [1B](https://en.wikipedia.org/wiki/2009_California_Proposition_1B "2009 California Proposition 1B")
+    * [1C](https://en.wikipedia.org/wiki/2009_California_Proposition_1C "2009 California Proposition 1C")
+    * [1D](https://en.wikipedia.org/wiki/2009_California_Proposition_1D "2009 California Proposition 1D")
+    * [1E](https://en.wikipedia.org/wiki/2009_California_Proposition_1E "2009 California Proposition 1E")
+    * [1F](https://en.wikipedia.org/wiki/2009_California_Proposition_1F "2009 California Proposition 1F")
+
+  
+show[2010–2019](https://en.wikipedia.org/wiki/List_of_California_ballot_propositions:_2010%E2%80%932019 "List of California ballot propositions: 2010–2019")  
+---  
+  * 2010 
+    * [13](https://en.wikipedia.org/wiki/June_2010_California_elections#Proposition_13 "June 2010 California elections")
+    * [14](https://en.wikipedia.org/wiki/2010_California_Proposition_14 "2010 California Proposition 14")
+    * [15](https://en.wikipedia.org/wiki/June_2010_California_elections#Proposition_15 "June 2010 California elections")
+    * [16](https://en.wikipedia.org/wiki/2010_California_Proposition_16 "2010 California Proposition 16")
+    * [17](https://en.wikipedia.org/wiki/June_2010_California_elections#Proposition_17 "June 2010 California elections")
+    * [19](https://en.wikipedia.org/wiki/2010_California_Proposition_19 "2010 California Proposition 19")
+    * [20](https://en.wikipedia.org/wiki/2010_California_Proposition_20 "2010 California Proposition 20")
+    * [21](https://en.wikipedia.org/wiki/2010_California_elections#Proposition_21 "2010 California elections")
+    * [22](https://en.wikipedia.org/wiki/2010_California_elections#Proposition_22 "2010 California elections")
+    * [23](https://en.wikipedia.org/wiki/2010_California_Proposition_23 "2010 California Proposition 23")
+    * [24](https://en.wikipedia.org/wiki/2010_California_elections#Proposition_24 "2010 California elections")
+    * [25](https://en.wikipedia.org/wiki/2010_California_elections#Proposition_25 "2010 California elections")
+    * [26](https://en.wikipedia.org/wiki/2010_California_elections#Proposition_26 "2010 California elections")
+    * [27](https://en.wikipedia.org/wiki/2010_California_Proposition_27 "2010 California Proposition 27")
+  * 2012 
+    * [28](https://en.wikipedia.org/wiki/2012_California_Proposition_28 "2012 California Proposition 28")
+    * [29](https://en.wikipedia.org/wiki/2012_California_Proposition_29 "2012 California Proposition 29")
+    * [30](https://en.wikipedia.org/wiki/2012_California_Proposition_30 "2012 California Proposition 30")
+    * [31](https://en.wikipedia.org/wiki/2012_California_Proposition_31 "2012 California Proposition 31")
+    * [32](https://en.wikipedia.org/wiki/2012_California_Proposition_32 "2012 California Proposition 32")
+    * [34](https://en.wikipedia.org/wiki/2012_California_Proposition_34 "2012 California Proposition 34")
+    * [36](https://en.wikipedia.org/wiki/2012_California_Proposition_36 "2012 California Proposition 36")
+    * [37](https://en.wikipedia.org/wiki/2012_California_Proposition_37 "2012 California Proposition 37")
+    * [38](https://en.wikipedia.org/wiki/2012_California_Proposition_38 "2012 California Proposition 38")
+    * [39](https://en.wikipedia.org/wiki/2012_California_Proposition_39 "2012 California Proposition 39")
+  * 2014 
+    * [1](https://en.wikipedia.org/wiki/2014_California_Proposition_1 "2014 California Proposition 1")
+    * [2](https://en.wikipedia.org/wiki/2014_California_Proposition_2 "2014 California Proposition 2")
+    * [41](https://en.wikipedia.org/wiki/2014_California_Proposition_41 "2014 California Proposition 41")
+    * [42](https://en.wikipedia.org/wiki/2014_California_Proposition_42 "2014 California Proposition 42")
+    * [45](https://en.wikipedia.org/wiki/2014_California_Proposition_45 "2014 California Proposition 45")
+    * [46](https://en.wikipedia.org/wiki/2014_California_Proposition_46 "2014 California Proposition 46")
+    * [47](https://en.wikipedia.org/wiki/2014_California_Proposition_47 "2014 California Proposition 47")
+    * [48](https://en.wikipedia.org/wiki/2014_California_Proposition_48 "2014 California Proposition 48")
+  * 2016 
+    * [50](https://en.wikipedia.org/wiki/2016_California_Proposition_50 "2016 California Proposition 50")
+    * [51](https://en.wikipedia.org/wiki/2016_California_Proposition_51 "2016 California Proposition 51")
+    * [52](https://en.wikipedia.org/wiki/2016_California_Proposition_52 "2016 California Proposition 52")
+    * [53](https://en.wikipedia.org/wiki/2016_California_Proposition_53 "2016 California Proposition 53")
+    * [54](https://en.wikipedia.org/wiki/2016_California_Proposition_54 "2016 California Proposition 54")
+    * [55](https://en.wikipedia.org/wiki/2016_California_Proposition_55 "2016 California Proposition 55")
+    * [56](https://en.wikipedia.org/wiki/2016_California_Proposition_56 "2016 California Proposition 56")
+    * [57](https://en.wikipedia.org/wiki/2016_California_Proposition_57 "2016 California Proposition 57")
+    * [58](https://en.wikipedia.org/wiki/2016_California_Proposition_58 "2016 California Proposition 58")
+    * [59](https://en.wikipedia.org/wiki/2016_California_Proposition_59 "2016 California Proposition 59")
+    * [60](https://en.wikipedia.org/wiki/2016_California_Proposition_60 "2016 California Proposition 60")
+    * [61](https://en.wikipedia.org/wiki/2016_California_Proposition_61 "2016 California Proposition 61")
+    * [62](https://en.wikipedia.org/wiki/2016_California_Proposition_62 "2016 California Proposition 62")
+    * [63](https://en.wikipedia.org/wiki/2016_California_Proposition_63 "2016 California Proposition 63")
+    * [64](https://en.wikipedia.org/wiki/Adult_Use_of_Marijuana_Act "Adult Use of Marijuana Act")
+    * [65](https://en.wikipedia.org/wiki/2016_California_Proposition_65 "2016 California Proposition 65")
+    * [66](https://en.wikipedia.org/wiki/2016_California_Proposition_66 "2016 California Proposition 66")
+    * [67](https://en.wikipedia.org/wiki/2016_California_Proposition_67 "2016 California Proposition 67")
+  * 2018 
+    * [68](https://en.wikipedia.org/wiki/2018_California_Proposition_68 "2018 California Proposition 68")
+    * [69](https://en.wikipedia.org/wiki/2018_California_Proposition_69 "2018 California Proposition 69")
+    * [70](https://en.wikipedia.org/wiki/2018_California_Proposition_70 "2018 California Proposition 70")
+    * [71](https://en.wikipedia.org/wiki/2018_California_Proposition_71 "2018 California Proposition 71")
+    * [72](https://en.wikipedia.org/wiki/2018_California_Proposition_72 "2018 California Proposition 72")
+    * [1](https://en.wikipedia.org/wiki/2018_California_Proposition_1 "2018 California Proposition 1")
+    * [2](https://en.wikipedia.org/wiki/2018_California_Proposition_2 "2018 California Proposition 2")
+    * [3](https://en.wikipedia.org/wiki/2018_California_Proposition_3 "2018 California Proposition 3")
+    * [4](https://en.wikipedia.org/wiki/2018_California_Proposition_4 "2018 California Proposition 4")
+    * [5](https://en.wikipedia.org/wiki/2018_California_Proposition_5 "2018 California Proposition 5")
+    * [6](https://en.wikipedia.org/wiki/2018_California_Proposition_6 "2018 California Proposition 6")
+    * [7](https://en.wikipedia.org/wiki/2018_California_Proposition_7 "2018 California Proposition 7")
+    * [8](https://en.wikipedia.org/wiki/2018_California_Proposition_8 "2018 California Proposition 8")
+    * [9](https://en.wikipedia.org/wiki/Cal_3 "Cal 3")
+    * [10](https://en.wikipedia.org/wiki/2018_California_Proposition_10 "2018 California Proposition 10")
+    * [11](https://en.wikipedia.org/wiki/2018_California_Proposition_11 "2018 California Proposition 11")
+    * [12](https://en.wikipedia.org/wiki/2018_California_Proposition_12 "2018 California Proposition 12")
+
+  
+show[2020–2029](https://en.wikipedia.org/wiki/List_of_California_ballot_propositions:_2020%E2%80%932029 "List of California ballot propositions: 2020–2029")  
+---  
+  * 2020 
+    * [13](https://en.wikipedia.org/wiki/2020_California_Proposition_13 "2020 California Proposition 13")
+    * [14](https://en.wikipedia.org/wiki/2020_California_Proposition_14 "2020 California Proposition 14")
+    * [15](https://en.wikipedia.org/wiki/2020_California_Proposition_15 "2020 California Proposition 15")
+    * [16](https://en.wikipedia.org/wiki/2020_California_Proposition_16 "2020 California Proposition 16")
+    * [17](https://en.wikipedia.org/wiki/2020_California_Proposition_17 "2020 California Proposition 17")
+    * [18](https://en.wikipedia.org/wiki/2020_California_Proposition_18 "2020 California Proposition 18")
+    * [19](https://en.wikipedia.org/wiki/2020_California_Proposition_19 "2020 California Proposition 19")
+    * [20](https://en.wikipedia.org/wiki/2020_California_Proposition_20 "2020 California Proposition 20")
+    * [21](https://en.wikipedia.org/wiki/2020_California_Proposition_21 "2020 California Proposition 21")
+    * [22](https://en.wikipedia.org/wiki/2020_California_Proposition_22 "2020 California Proposition 22")
+    * [23](https://en.wikipedia.org/wiki/2020_California_Proposition_23 "2020 California Proposition 23")
+    * [24](https://en.wikipedia.org/wiki/2020_California_Proposition_24 "2020 California Proposition 24")
+    * [25](https://en.wikipedia.org/wiki/2020_California_Proposition_25 "2020 California Proposition 25")
+  * 2022 
+    * [1](https://en.wikipedia.org/wiki/2022_California_Proposition_1 "2022 California Proposition 1")
+    * [26](https://en.wikipedia.org/wiki/2022_California_Proposition_26 "2022 California Proposition 26")
+    * [27](https://en.wikipedia.org/wiki/2022_California_Proposition_27 "2022 California Proposition 27")
+    * [28](https://en.wikipedia.org/wiki/2022_California_Proposition_28 "2022 California Proposition 28")
+    * [29](https://en.wikipedia.org/wiki/2022_California_Proposition_29 "2022 California Proposition 29")
+    * [30](https://en.wikipedia.org/wiki/2022_California_Proposition_30 "2022 California Proposition 30")
+    * [31](https://en.wikipedia.org/wiki/2022_California_Proposition_31 "2022 California Proposition 31")
+  * 2024 
+    * [1](https://en.wikipedia.org/wiki/2024_California_Proposition_1 "2024 California Proposition 1")
+    * [2](https://en.wikipedia.org/wiki/2024_California_Proposition_2 "2024 California Proposition 2")
+    * [3](https://en.wikipedia.org/wiki/2024_California_Proposition_3 "2024 California Proposition 3")
+    * [4](https://en.wikipedia.org/wiki/2024_California_Proposition_4 "2024 California Proposition 4")
+    * [5](https://en.wikipedia.org/wiki/2024_California_Proposition_5 "2024 California Proposition 5")
+    * [6](https://en.wikipedia.org/wiki/2024_California_Proposition_6 "2024 California Proposition 6")
+    * [32](https://en.wikipedia.org/wiki/2024_California_Proposition_32 "2024 California Proposition 32")
+    * [33](https://en.wikipedia.org/wiki/2024_California_Proposition_33 "2024 California Proposition 33")
+    * [34](https://en.wikipedia.org/wiki/2024_California_Proposition_34 "2024 California Proposition 34")
+    * [35](https://en.wikipedia.org/wiki/2024_California_Proposition_35 "2024 California Proposition 35")
+    * [36](https://en.wikipedia.org/wiki/2024_California_Proposition_36 "2024 California Proposition 36")
+  * 2025 
+    * [50](https://en.wikipedia.org/wiki/2025_California_Proposition_50 "2025 California Proposition 50")
+
+  
+* * *
+[**Full list**](https://en.wikipedia.org/wiki/List_of_California_ballot_propositions "List of California ballot propositions")  
+show[Los Angeles County](https://en.wikipedia.org/wiki/Government_of_Los_Angeles_County "Government of Los Angeles County") _[Los Angeles County](https://en.wikipedia.org/wiki/Government_of_Los_Angeles_County "Government of Los Angeles County")_  
+|  show[Board of supervisors](https://en.wikipedia.org/wiki/Los_Angeles_County_Board_of_Supervisors "Los Angeles County Board of Supervisors")  
+---  
+  * [1980](https://en.wikipedia.org/wiki/1980_Los_Angeles_County_Board_of_Supervisors_election "1980 Los Angeles County Board of Supervisors election")
+  * [1996](https://en.wikipedia.org/wiki/1996_Los_Angeles_County_Board_of_Supervisors_election "1996 Los Angeles County Board of Supervisors election")
+  * [2006](https://en.wikipedia.org/wiki/2006_Los_Angeles_County_Board_of_Supervisors_election "2006 Los Angeles County Board of Supervisors election")
+  * [2008](https://en.wikipedia.org/wiki/2008_Los_Angeles_County_Board_of_Supervisors_election "2008 Los Angeles County Board of Supervisors election")
+  * [2010](https://en.wikipedia.org/wiki/2010_Los_Angeles_County_Board_of_Supervisors_election "2010 Los Angeles County Board of Supervisors election")
+  * [2012](https://en.wikipedia.org/wiki/2012_Los_Angeles_County_Board_of_Supervisors_election "2012 Los Angeles County Board of Supervisors election")
+  * [2014](https://en.wikipedia.org/wiki/2014_Los_Angeles_County_Board_of_Supervisors_election "2014 Los Angeles County Board of Supervisors election")
+  * [2016](https://en.wikipedia.org/wiki/2016_Los_Angeles_County_Board_of_Supervisors_election "2016 Los Angeles County Board of Supervisors election")
+  * [2018](https://en.wikipedia.org/wiki/2018_Los_Angeles_County_Board_of_Supervisors_election "2018 Los Angeles County Board of Supervisors election")
+  * [2020](https://en.wikipedia.org/wiki/2020_Los_Angeles_County_Board_of_Supervisors_election "2020 Los Angeles County Board of Supervisors election")
+  * [2022](https://en.wikipedia.org/wiki/2022_Los_Angeles_County_Board_of_Supervisors_election "2022 Los Angeles County Board of Supervisors election")
+  * [2024](https://en.wikipedia.org/wiki/2024_Los_Angeles_County_Board_of_Supervisors_election "2024 Los Angeles County Board of Supervisors election")
+  * [2026](https://en.wikipedia.org/wiki/2026_Los_Angeles_County_Board_of_Supervisors_election "2026 Los Angeles County Board of Supervisors election")
+
+  
+showBallot measures  
+---  
+  * 1980 
+    * [A](https://en.wikipedia.org/wiki/Proposition_A "Proposition A")
+  * 2008 
+    * [R](https://en.wikipedia.org/wiki/Measure_R "Measure R")
+  * 2012 
+    * [B](https://en.wikipedia.org/wiki/2012_Los_Angeles_Measure_B "2012 Los Angeles Measure B")
+    * [J](https://en.wikipedia.org/wiki/Measure_J "Measure J")
+  * 2016 
+    * [M](https://en.wikipedia.org/wiki/Measure_M "Measure M")
+  * 2024 
+    * [G](https://en.wikipedia.org/wiki/2024_Los_Angeles_County_Measure_G "2024 Los Angeles County Measure G")
+
+  
+showElections  
+---  
+  * [2020](https://en.wikipedia.org/wiki/2020_Los_Angeles_County_elections "2020 Los Angeles County elections")
+  * [2022](https://en.wikipedia.org/wiki/2022_Los_Angeles_County_elections "2022 Los Angeles County elections")
+  * [2024](https://en.wikipedia.org/wiki/2024_Los_Angeles_County_elections "2024 Los Angeles County elections")
+  * [2026](https://en.wikipedia.org/wiki/2026_Los_Angeles_County_elections "2026 Los Angeles County elections")
+  * [2028](https://en.wikipedia.org/wiki/2028_Los_Angeles_County_elections "2028 Los Angeles County elections")
+
+  
+* * *
+_[Los Angeles](https://en.wikipedia.org/wiki/Government_of_Los_Angeles "Government of Los Angeles")_  
+show[Mayor](https://en.wikipedia.org/wiki/Mayor_of_Los_Angeles "Mayor of Los Angeles")  
+---  
+  * [1896](https://en.wikipedia.org/wiki/1896_Los_Angeles_mayoral_election "1896 Los Angeles mayoral election")
+  * [1898](https://en.wikipedia.org/wiki/1898_Los_Angeles_mayoral_election "1898 Los Angeles mayoral election")
+  * [1900](https://en.wikipedia.org/wiki/1900_Los_Angeles_mayoral_election "1900 Los Angeles mayoral election")
+  * [1902](https://en.wikipedia.org/wiki/1902_Los_Angeles_mayoral_election "1902 Los Angeles mayoral election")
+  * [1904](https://en.wikipedia.org/wiki/1904_Los_Angeles_mayoral_election "1904 Los Angeles mayoral election")
+  * [1906](https://en.wikipedia.org/wiki/1906_Los_Angeles_mayoral_election "1906 Los Angeles mayoral election")
+  * [1909 (sp)](https://en.wikipedia.org/wiki/1909_Los_Angeles_mayoral_special_election "1909 Los Angeles mayoral special election")
+  * [1909](https://en.wikipedia.org/wiki/1909_Los_Angeles_mayoral_election "1909 Los Angeles mayoral election")
+  * [1911](https://en.wikipedia.org/wiki/1911_Los_Angeles_mayoral_election "1911 Los Angeles mayoral election")
+  * [1913](https://en.wikipedia.org/wiki/1913_Los_Angeles_mayoral_election "1913 Los Angeles mayoral election")
+  * [1915](https://en.wikipedia.org/wiki/1915_Los_Angeles_mayoral_election "1915 Los Angeles mayoral election")
+  * [1917](https://en.wikipedia.org/wiki/1917_Los_Angeles_mayoral_election "1917 Los Angeles mayoral election")
+  * [1919](https://en.wikipedia.org/wiki/1919_Los_Angeles_mayoral_election "1919 Los Angeles mayoral election")
+  * [1921](https://en.wikipedia.org/wiki/1921_Los_Angeles_mayoral_election "1921 Los Angeles mayoral election")
+  * [1923](https://en.wikipedia.org/wiki/1923_Los_Angeles_mayoral_election "1923 Los Angeles mayoral election")
+  * [1925](https://en.wikipedia.org/wiki/1925_Los_Angeles_mayoral_election "1925 Los Angeles mayoral election")
+  * [1929](https://en.wikipedia.org/wiki/1929_Los_Angeles_mayoral_election "1929 Los Angeles mayoral election")
+  * [1933](https://en.wikipedia.org/wiki/1933_Los_Angeles_mayoral_election "1933 Los Angeles mayoral election")
+  * [1937](https://en.wikipedia.org/wiki/1937_Los_Angeles_mayoral_election "1937 Los Angeles mayoral election")
+  * [1938](https://en.wikipedia.org/wiki/1938_Los_Angeles_mayoral_election "1938 Los Angeles mayoral election")
+  * [1941](https://en.wikipedia.org/wiki/1941_Los_Angeles_mayoral_election "1941 Los Angeles mayoral election")
+  * [1945](https://en.wikipedia.org/wiki/1945_Los_Angeles_mayoral_election "1945 Los Angeles mayoral election")
+  * [1949](https://en.wikipedia.org/wiki/1949_Los_Angeles_mayoral_election "1949 Los Angeles mayoral election")
+  * [1953](https://en.wikipedia.org/wiki/1953_Los_Angeles_mayoral_election "1953 Los Angeles mayoral election")
+  * [1957](https://en.wikipedia.org/wiki/1957_Los_Angeles_mayoral_election "1957 Los Angeles mayoral election")
+  * [1961](https://en.wikipedia.org/wiki/1961_Los_Angeles_mayoral_election "1961 Los Angeles mayoral election")
+  * [1965](https://en.wikipedia.org/wiki/1965_Los_Angeles_mayoral_election "1965 Los Angeles mayoral election")
+  * [1969](https://en.wikipedia.org/wiki/1969_Los_Angeles_mayoral_election "1969 Los Angeles mayoral election")
+  * [1973](https://en.wikipedia.org/wiki/1973_Los_Angeles_mayoral_election "1973 Los Angeles mayoral election")
+  * [1977](https://en.wikipedia.org/wiki/1977_Los_Angeles_mayoral_election "1977 Los Angeles mayoral election")
+  * [1981](https://en.wikipedia.org/wiki/1981_Los_Angeles_mayoral_election "1981 Los Angeles mayoral election")
+  * [1985](https://en.wikipedia.org/wiki/1985_Los_Angeles_mayoral_election "1985 Los Angeles mayoral election")
+  * [1989](https://en.wikipedia.org/wiki/1989_Los_Angeles_mayoral_election "1989 Los Angeles mayoral election")
+  * [1993](https://en.wikipedia.org/wiki/1993_Los_Angeles_mayoral_election "1993 Los Angeles mayoral election")
+  * [1997](https://en.wikipedia.org/wiki/1997_Los_Angeles_mayoral_election "1997 Los Angeles mayoral election")
+  * [2001](https://en.wikipedia.org/wiki/2001_Los_Angeles_mayoral_election "2001 Los Angeles mayoral election")
+  * [2005](https://en.wikipedia.org/wiki/2005_Los_Angeles_mayoral_election "2005 Los Angeles mayoral election")
+  * [2009](https://en.wikipedia.org/wiki/2009_Los_Angeles_mayoral_election "2009 Los Angeles mayoral election")
+  * [2013](https://en.wikipedia.org/wiki/2013_Los_Angeles_mayoral_election "2013 Los Angeles mayoral election")
+  * [2017](https://en.wikipedia.org/wiki/2017_Los_Angeles_mayoral_election "2017 Los Angeles mayoral election")
+  * [2022](https://en.wikipedia.org/wiki/2022_Los_Angeles_mayoral_election "2022 Los Angeles mayoral election")
+  * [2026](https://en.wikipedia.org/wiki/2026_Los_Angeles_mayoral_election "2026 Los Angeles mayoral election")
+
+  
+show[City attorney](https://en.wikipedia.org/wiki/Los_Angeles_City_Attorney "Los Angeles City Attorney")  
+---  
+  * [2009](https://en.wikipedia.org/wiki/2009_Los_Angeles_City_Attorney_election "2009 Los Angeles City Attorney election")
+
+  
+showBallot measures  
+---  
+  * 1986 
+    * [U](https://en.wikipedia.org/wiki/Proposition_U "Proposition U")
+  * 2017 
+    * [S](https://en.wikipedia.org/wiki/2017_Los_Angeles_Measure_S "2017 Los Angeles Measure S")
+
+  
+showElections  
+---  
+  * [2009](https://en.wikipedia.org/wiki/2009_Los_Angeles_elections "2009 Los Angeles elections")
+  * [2011](https://en.wikipedia.org/wiki/2011_Los_Angeles_elections "2011 Los Angeles elections")
+  * [2013](https://en.wikipedia.org/wiki/2013_Los_Angeles_elections "2013 Los Angeles elections")
+  * [2015](https://en.wikipedia.org/wiki/2015_Los_Angeles_elections "2015 Los Angeles elections")
+  * [2017](https://en.wikipedia.org/wiki/2017_Los_Angeles_elections "2017 Los Angeles elections")
+  * [2019 (sp)](https://en.wikipedia.org/wiki/2019_Los_Angeles_special_elections "2019 Los Angeles special elections")
+  * [2020](https://en.wikipedia.org/wiki/2020_Los_Angeles_elections "2020 Los Angeles elections")
+  * [2022](https://en.wikipedia.org/wiki/2022_Los_Angeles_elections "2022 Los Angeles elections")
+  * [2023 (sp)](https://en.wikipedia.org/wiki/2023_Los_Angeles_special_election "2023 Los Angeles special election")
+  * [2024](https://en.wikipedia.org/wiki/2024_Los_Angeles_elections "2024 Los Angeles elections")
+  * [2026](https://en.wikipedia.org/wiki/2026_Los_Angeles_elections "2026 Los Angeles elections")
+
+  
+* * *
+_[Long Beach](https://en.wikipedia.org/wiki/Long_Beach,_California#Government "Long Beach, California")_  
+show[Mayor](https://en.wikipedia.org/wiki/List_of_mayors_of_Long_Beach,_California "List of mayors of Long Beach, California")  
+---  
+  * [1994](https://en.wikipedia.org/wiki/1994_Long_Beach,_California_mayoral_election "1994 Long Beach, California mayoral election")
+  * [1998](https://en.wikipedia.org/wiki/1998_Long_Beach,_California_mayoral_election "1998 Long Beach, California mayoral election")
+  * [2002](https://en.wikipedia.org/wiki/2002_Long_Beach,_California_mayoral_election "2002 Long Beach, California mayoral election")
+  * [2006](https://en.wikipedia.org/wiki/2006_Long_Beach,_California_mayoral_election "2006 Long Beach, California mayoral election")
+  * [2010](https://en.wikipedia.org/wiki/2010_Long_Beach,_California_mayoral_election "2010 Long Beach, California mayoral election")
+  * [2014](https://en.wikipedia.org/wiki/2014_Long_Beach,_California_mayoral_election "2014 Long Beach, California mayoral election")
+  * [2018](https://en.wikipedia.org/wiki/2018_Long_Beach,_California_mayoral_election "2018 Long Beach, California mayoral election")
+  * [2022](https://en.wikipedia.org/wiki/2022_Long_Beach,_California_mayoral_election "2022 Long Beach, California mayoral election")
+
+  
+show[Orange County](https://en.wikipedia.org/wiki/Orange_County,_California#Government "Orange County, California") _[Orange County](https://en.wikipedia.org/wiki/Orange_County,_California#Government "Orange County, California")_  
+|  show[Board of supervisors](https://en.wikipedia.org/wiki/Orange_County_Board_of_Supervisors "Orange County Board of Supervisors")  
+---  
+  * [2018](https://en.wikipedia.org/wiki/2018_Orange_County_Board_of_Supervisors_election "2018 Orange County Board of Supervisors election")
+  * [2020](https://en.wikipedia.org/wiki/2020_Orange_County_Board_of_Supervisors_election "2020 Orange County Board of Supervisors election")
+  * [2022](https://en.wikipedia.org/wiki/2022_Orange_County_Board_of_Supervisors_election "2022 Orange County Board of Supervisors election")
+  * [2024](https://en.wikipedia.org/wiki/2024_Orange_County_Board_of_Supervisors_election "2024 Orange County Board of Supervisors election")
+
+  
+showDistrict attorney  
+---  
+  * [2018](https://en.wikipedia.org/wiki/2018_Orange_County,_California_District_Attorney_election "2018 Orange County, California District Attorney election")
+  * [2022](https://en.wikipedia.org/wiki/2022_Orange_County,_California_District_Attorney_election "2022 Orange County, California District Attorney election")
+
+  
+* * *
+_[Anaheim](https://en.wikipedia.org/wiki/Anaheim,_California#Government_and_politics "Anaheim, California")_  
+show[Mayor](https://en.wikipedia.org/wiki/List_of_mayors_of_Anaheim,_California "List of mayors of Anaheim, California")  
+---  
+  * [2002](https://en.wikipedia.org/wiki/2002_Anaheim_mayoral_election "2002 Anaheim mayoral election")
+  * [2006](https://en.wikipedia.org/wiki/2006_Anaheim_mayoral_election "2006 Anaheim mayoral election")
+  * [2010](https://en.wikipedia.org/wiki/2010_Anaheim_mayoral_election "2010 Anaheim mayoral election")
+  * [2014](https://en.wikipedia.org/wiki/2014_Anaheim_mayoral_election "2014 Anaheim mayoral election")
+  * [2018](https://en.wikipedia.org/wiki/2018_Anaheim_mayoral_election "2018 Anaheim mayoral election")
+  * [2022](https://en.wikipedia.org/wiki/2022_Anaheim_mayoral_election "2022 Anaheim mayoral election")
+
+  
+* * *
+_[Irvine](https://en.wikipedia.org/wiki/Irvine,_California#Government "Irvine, California")_  
+show[Mayor](https://en.wikipedia.org/wiki/Irvine,_California#Government "Irvine, California")  
+---  
+  * [1988](https://en.wikipedia.org/wiki/1988_Irvine_mayoral_election "1988 Irvine mayoral election")
+  * [1990](https://en.wikipedia.org/wiki/1990_Irvine_mayoral_election "1990 Irvine mayoral election")
+  * [1992](https://en.wikipedia.org/wiki/1992_Irvine_mayoral_election "1992 Irvine mayoral election")
+  * [1994](https://en.wikipedia.org/wiki/1994_Irvine_mayoral_election "1994 Irvine mayoral election")
+  * [1996](https://en.wikipedia.org/wiki/1996_Irvine_mayoral_election "1996 Irvine mayoral election")
+  * [1998](https://en.wikipedia.org/wiki/1998_Irvine_mayoral_election "1998 Irvine mayoral election")
+  * [2000](https://en.wikipedia.org/wiki/2000_Irvine_mayoral_election "2000 Irvine mayoral election")
+  * [2002](https://en.wikipedia.org/wiki/2002_Irvine_mayoral_election "2002 Irvine mayoral election")
+  * [2004](https://en.wikipedia.org/wiki/2004_Irvine_mayoral_election "2004 Irvine mayoral election")
+  * [2006](https://en.wikipedia.org/wiki/2006_Irvine_mayoral_election "2006 Irvine mayoral election")
+  * [2008](https://en.wikipedia.org/wiki/2008_Irvine_mayoral_election "2008 Irvine mayoral election")
+  * [2010](https://en.wikipedia.org/wiki/2010_Irvine_mayoral_election "2010 Irvine mayoral election")
+  * [2012](https://en.wikipedia.org/wiki/2012_Irvine_mayoral_election "2012 Irvine mayoral election")
+  * [2014](https://en.wikipedia.org/wiki/2014_Irvine_mayoral_election "2014 Irvine mayoral election")
+  * [2016](https://en.wikipedia.org/wiki/2016_Irvine_mayoral_election "2016 Irvine mayoral election")
+  * [2018](https://en.wikipedia.org/wiki/2018_Irvine_mayoral_election "2018 Irvine mayoral election")
+  * [2020](https://en.wikipedia.org/wiki/2020_Irvine_mayoral_election "2020 Irvine mayoral election")
+  * [2022](https://en.wikipedia.org/wiki/2022_Irvine_mayoral_election "2022 Irvine mayoral election")
+  * [2024](https://en.wikipedia.org/wiki/2024_Irvine_mayoral_election "2024 Irvine mayoral election")
+
+  
+* * *
+_[Costa Mesa](https://en.wikipedia.org/wiki/Costa_Mesa,_California#Government "Costa Mesa, California")_  
+show[Municipal](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California "Municipal elections in Costa Mesa, California")  
+---  
+  * [1947](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#1947_Incorporation_Election "Municipal elections in Costa Mesa, California")
+  * [1953](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#1953_Incorporation_Election "Municipal elections in Costa Mesa, California")
+  * [1954](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#1954_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [1956](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#1956_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [1958](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#1958_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [1960](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#1960_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [1962](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#1962_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [1964](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#1964_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [1966](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#1966_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [1968](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#1968_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [1970](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#1970_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [1972](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#1972_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [1974](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#1974_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [1976](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#1976_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [1978](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#1978_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [1980](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#1980_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [1982](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#1982_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [1984](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#1984_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [1986](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#1986_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [1988](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#1988_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [1990](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#1990_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [1992](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#1992_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [1994](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#1994_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [1996](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#1996_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [1998](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#1998_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [2000](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#2000_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [2002](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#2002_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [2004](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#2004_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [2006](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#2006_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [2008](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#2008_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [2010](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#2010_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [2012](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#2012_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [2014](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#2014_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [2016](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#2016_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [2018](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#2018_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [2020](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#2020_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [2022](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#2022_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [2024](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#2024_Municipal_Election "Municipal elections in Costa Mesa, California")
+  * [2026](https://en.wikipedia.org/wiki/Municipal_elections_in_Costa_Mesa,_California#2026_Municipal_Election "Municipal elections in Costa Mesa, California")
+
+  
+show[Sacramento](https://en.wikipedia.org/wiki/Sacramento,_California#Government "Sacramento, California") |  show[Mayor](https://en.wikipedia.org/wiki/List_of_mayors_of_Sacramento,_California "List of mayors of Sacramento, California")  
+---  
+  * [2000](https://en.wikipedia.org/wiki/2000_Sacramento_mayoral_election "2000 Sacramento mayoral election")
+  * [2004](https://en.wikipedia.org/wiki/2004_Sacramento_mayoral_election "2004 Sacramento mayoral election")
+  * [2008](https://en.wikipedia.org/wiki/2008_Sacramento_mayoral_election "2008 Sacramento mayoral election")
+  * [2012](https://en.wikipedia.org/wiki/2012_Sacramento_mayoral_election "2012 Sacramento mayoral election")
+  * [2016](https://en.wikipedia.org/wiki/2016_Sacramento_mayoral_election "2016 Sacramento mayoral election")
+  * [2020](https://en.wikipedia.org/wiki/2020_Sacramento_mayoral_election "2020 Sacramento mayoral election")
+  * [2024](https://en.wikipedia.org/wiki/2024_Sacramento_mayoral_election "2024 Sacramento mayoral election")
+
+  
+show[San Diego County](https://en.wikipedia.org/wiki/Government_of_San_Diego_County "Government of San Diego County") _[San Diego County](https://en.wikipedia.org/wiki/Government_of_San_Diego_County "Government of San Diego County")_  
+|  show[Board of supervisors](https://en.wikipedia.org/wiki/San_Diego_County_Board_of_Supervisors "San Diego County Board of Supervisors")  
+---  
+  * [2020](https://en.wikipedia.org/wiki/2020_San_Diego_County_Board_of_Supervisors_election "2020 San Diego County Board of Supervisors election")
+  * 2022
+  * [2024](https://en.wikipedia.org/wiki/2024_San_Diego_County_Board_of_Supervisors_election "2024 San Diego County Board of Supervisors election")
+
+  
+* * *
+_[San Diego](https://en.wikipedia.org/wiki/San_Diego#Government "San Diego")_  
+show[Mayor](https://en.wikipedia.org/wiki/Mayor_of_San_Diego "Mayor of San Diego")  
+---  
+  * [1887](https://en.wikipedia.org/wiki/1887_San_Diego_mayoral_election "1887 San Diego mayoral election")
+  * [1889](https://en.wikipedia.org/wiki/1889_San_Diego_mayoral_election "1889 San Diego mayoral election")
+  * [1891](https://en.wikipedia.org/wiki/1891_San_Diego_mayoral_election "1891 San Diego mayoral election")
+  * [1893](https://en.wikipedia.org/wiki/1893_San_Diego_mayoral_election "1893 San Diego mayoral election")
+  * [1895](https://en.wikipedia.org/wiki/1895_San_Diego_mayoral_election "1895 San Diego mayoral election")
+  * [1897](https://en.wikipedia.org/wiki/1897_San_Diego_mayoral_election "1897 San Diego mayoral election")
+  * [1899](https://en.wikipedia.org/wiki/1899_San_Diego_mayoral_election "1899 San Diego mayoral election")
+  * [1901](https://en.wikipedia.org/wiki/1901_San_Diego_mayoral_election "1901 San Diego mayoral election")
+  * [1903](https://en.wikipedia.org/wiki/1903_San_Diego_mayoral_election "1903 San Diego mayoral election")
+  * [1905](https://en.wikipedia.org/wiki/1905_San_Diego_mayoral_election "1905 San Diego mayoral election")
+  * [1907](https://en.wikipedia.org/wiki/1907_San_Diego_mayoral_election "1907 San Diego mayoral election")
+  * [1909](https://en.wikipedia.org/wiki/1909_San_Diego_mayoral_election "1909 San Diego mayoral election")
+  * [1911](https://en.wikipedia.org/wiki/1911_San_Diego_mayoral_election "1911 San Diego mayoral election")
+  * [1913](https://en.wikipedia.org/wiki/1913_San_Diego_mayoral_election "1913 San Diego mayoral election")
+  * [1915](https://en.wikipedia.org/wiki/1915_San_Diego_mayoral_election "1915 San Diego mayoral election")
+  * [1917](https://en.wikipedia.org/wiki/1917_San_Diego_mayoral_election "1917 San Diego mayoral election")
+  * [1919](https://en.wikipedia.org/wiki/1919_San_Diego_mayoral_election "1919 San Diego mayoral election")
+  * [1921](https://en.wikipedia.org/wiki/1921_San_Diego_mayoral_election "1921 San Diego mayoral election")
+  * [1923](https://en.wikipedia.org/wiki/1923_San_Diego_mayoral_election "1923 San Diego mayoral election")
+  * [1925](https://en.wikipedia.org/wiki/1925_San_Diego_mayoral_election "1925 San Diego mayoral election")
+  * [1927](https://en.wikipedia.org/wiki/1927_San_Diego_mayoral_election "1927 San Diego mayoral election")
+  * [1929](https://en.wikipedia.org/wiki/1929_San_Diego_mayoral_election "1929 San Diego mayoral election")
+  * [1931](https://en.wikipedia.org/wiki/1931_San_Diego_mayoral_election "1931 San Diego mayoral election")
+  * [1932](https://en.wikipedia.org/wiki/1932_San_Diego_mayoral_election "1932 San Diego mayoral election")
+  * [1935](https://en.wikipedia.org/wiki/1935_San_Diego_mayoral_election "1935 San Diego mayoral election")
+  * [1939](https://en.wikipedia.org/wiki/1939_San_Diego_mayoral_election "1939 San Diego mayoral election")
+  * [1943](https://en.wikipedia.org/wiki/1943_San_Diego_mayoral_election "1943 San Diego mayoral election")
+  * [1947](https://en.wikipedia.org/wiki/1947_San_Diego_mayoral_election "1947 San Diego mayoral election")
+  * [1951](https://en.wikipedia.org/wiki/1951_San_Diego_mayoral_election "1951 San Diego mayoral election")
+  * [1955](https://en.wikipedia.org/wiki/1955_San_Diego_mayoral_election "1955 San Diego mayoral election")
+  * [1959](https://en.wikipedia.org/wiki/1959_San_Diego_mayoral_election "1959 San Diego mayoral election")
+  * [1963](https://en.wikipedia.org/wiki/1963_San_Diego_mayoral_election "1963 San Diego mayoral election")
+  * [1967](https://en.wikipedia.org/wiki/1967_San_Diego_mayoral_election "1967 San Diego mayoral election")
+  * [1971](https://en.wikipedia.org/wiki/1971_San_Diego_mayoral_election "1971 San Diego mayoral election")
+  * [1975](https://en.wikipedia.org/wiki/1975_San_Diego_mayoral_election "1975 San Diego mayoral election")
+  * [1979](https://en.wikipedia.org/wiki/1979_San_Diego_mayoral_election "1979 San Diego mayoral election")
+  * [1983 (sp)](https://en.wikipedia.org/wiki/1983_San_Diego_mayoral_special_election "1983 San Diego mayoral special election")
+  * [1984](https://en.wikipedia.org/wiki/1984_San_Diego_mayoral_election "1984 San Diego mayoral election")
+  * [1986 (sp)](https://en.wikipedia.org/wiki/1986_San_Diego_mayoral_special_election "1986 San Diego mayoral special election")
+  * [1988](https://en.wikipedia.org/wiki/1988_San_Diego_mayoral_election "1988 San Diego mayoral election")
+  * [1992](https://en.wikipedia.org/wiki/1992_San_Diego_mayoral_election "1992 San Diego mayoral election")
+  * [1996](https://en.wikipedia.org/wiki/1996_San_Diego_mayoral_election "1996 San Diego mayoral election")
+  * [2000](https://en.wikipedia.org/wiki/2000_San_Diego_mayoral_election "2000 San Diego mayoral election")
+  * [2004](https://en.wikipedia.org/wiki/2004_San_Diego_mayoral_election "2004 San Diego mayoral election")
+  * [2005 (sp)](https://en.wikipedia.org/wiki/2005_San_Diego_mayoral_special_election "2005 San Diego mayoral special election")
+  * [2008](https://en.wikipedia.org/wiki/2008_San_Diego_mayoral_election "2008 San Diego mayoral election")
+  * [2012](https://en.wikipedia.org/wiki/2012_San_Diego_mayoral_election "2012 San Diego mayoral election")
+  * [2013–14 (sp)](https://en.wikipedia.org/wiki/2013%E2%80%9314_San_Diego_mayoral_special_election "2013–14 San Diego mayoral special election")
+  * [2016](https://en.wikipedia.org/wiki/2016_San_Diego_mayoral_election "2016 San Diego mayoral election")
+  * [2020](https://en.wikipedia.org/wiki/2020_San_Diego_mayoral_election "2020 San Diego mayoral election")
+  * [2024](https://en.wikipedia.org/wiki/2024_San_Diego_mayoral_election "2024 San Diego mayoral election")
+  * [2028](https://en.wikipedia.org/wiki/2028_San_Diego_mayoral_election "2028 San Diego mayoral election")
+
+  
+show[City attorney](https://en.wikipedia.org/wiki/San_Diego_City_Attorney "San Diego City Attorney")  
+---  
+  * [2004](https://en.wikipedia.org/wiki/2004_San_Diego_City_Attorney_election "2004 San Diego City Attorney election")
+  * [2008](https://en.wikipedia.org/wiki/2008_San_Diego_City_Attorney_election "2008 San Diego City Attorney election")
+  * [2012](https://en.wikipedia.org/wiki/2012_San_Diego_City_Attorney_election "2012 San Diego City Attorney election")
+  * [2016](https://en.wikipedia.org/wiki/2016_San_Diego_City_Attorney_election "2016 San Diego City Attorney election")
+  * [2020](https://en.wikipedia.org/wiki/2020_San_Diego_City_Attorney_election "2020 San Diego City Attorney election")
+
+  
+show[City council](https://en.wikipedia.org/wiki/San_Diego_City_Council "San Diego City Council")  
+---  
+  * [2002](https://en.wikipedia.org/wiki/2002_San_Diego_City_Council_election "2002 San Diego City Council election")
+  * [2004](https://en.wikipedia.org/wiki/2004_San_Diego_City_Council_election "2004 San Diego City Council election")
+  * [2006](https://en.wikipedia.org/wiki/2006_San_Diego_City_Council_election "2006 San Diego City Council election")
+  * [2008](https://en.wikipedia.org/wiki/2008_San_Diego_City_Council_election "2008 San Diego City Council election")
+  * [2010](https://en.wikipedia.org/wiki/2010_San_Diego_elections "2010 San Diego elections")
+  * [2012](https://en.wikipedia.org/wiki/2012_San_Diego_elections "2012 San Diego elections")
+  * [2014](https://en.wikipedia.org/wiki/2014_San_Diego_elections "2014 San Diego elections")
+  * [2016](https://en.wikipedia.org/wiki/2016_San_Diego_elections "2016 San Diego elections")
+  * [2018](https://en.wikipedia.org/wiki/2018_San_Diego_City_Council_election "2018 San Diego City Council election")
+  * [2020](https://en.wikipedia.org/wiki/2020_San_Diego_elections "2020 San Diego elections")
+  * [2022](https://en.wikipedia.org/wiki/2022_San_Diego_City_Council_election "2022 San Diego City Council election")
+  * [2024](https://en.wikipedia.org/wiki/2024_San_Diego_City_Council_election "2024 San Diego City Council election")
+  * [Special](https://en.wikipedia.org/wiki/List_of_special_elections_to_the_San_Diego_City_Council "List of special elections to the San Diego City Council")
+
+  
+show[San Francisco](https://en.wikipedia.org/wiki/Government_of_San_Francisco "Government of San Francisco") |  show[Mayor](https://en.wikipedia.org/wiki/Mayor_of_San_Francisco "Mayor of San Francisco")  
+---  
+  * [1901](https://en.wikipedia.org/wiki/1901_San_Francisco_mayoral_election "1901 San Francisco mayoral election")
+  * [1903](https://en.wikipedia.org/wiki/1903_San_Francisco_mayoral_election "1903 San Francisco mayoral election")
+  * [1905](https://en.wikipedia.org/wiki/1905_San_Francisco_mayoral_election "1905 San Francisco mayoral election")
+  * [1907](https://en.wikipedia.org/wiki/1907_San_Francisco_mayoral_election "1907 San Francisco mayoral election")
+  * [1909](https://en.wikipedia.org/wiki/1909_San_Francisco_mayoral_election "1909 San Francisco mayoral election")
+  * [1911](https://en.wikipedia.org/wiki/1911_San_Francisco_mayoral_election "1911 San Francisco mayoral election")
+  * [1931](https://en.wikipedia.org/wiki/1931_San_Francisco_mayoral_election "1931 San Francisco mayoral election")
+  * [1935](https://en.wikipedia.org/wiki/1935_San_Francisco_mayoral_election "1935 San Francisco mayoral election")
+  * [1939](https://en.wikipedia.org/wiki/1939_San_Francisco_mayoral_election "1939 San Francisco mayoral election")
+  * [1943](https://en.wikipedia.org/wiki/1943_San_Francisco_mayoral_election "1943 San Francisco mayoral election")
+  * [1947](https://en.wikipedia.org/wiki/1947_San_Francisco_mayoral_election "1947 San Francisco mayoral election")
+  * [1951](https://en.wikipedia.org/wiki/1951_San_Francisco_mayoral_election "1951 San Francisco mayoral election")
+  * [1955](https://en.wikipedia.org/wiki/1955_San_Francisco_mayoral_election "1955 San Francisco mayoral election")
+  * [1959](https://en.wikipedia.org/wiki/1959_San_Francisco_mayoral_election "1959 San Francisco mayoral election")
+  * [1963](https://en.wikipedia.org/wiki/1963_San_Francisco_mayoral_election "1963 San Francisco mayoral election")
+  * [1967](https://en.wikipedia.org/wiki/1967_San_Francisco_mayoral_election "1967 San Francisco mayoral election")
+  * [1971](https://en.wikipedia.org/wiki/1971_San_Francisco_mayoral_election "1971 San Francisco mayoral election")
+  * [1975](https://en.wikipedia.org/wiki/1975_San_Francisco_mayoral_election "1975 San Francisco mayoral election")
+  * [1979](https://en.wikipedia.org/wiki/1979_San_Francisco_mayoral_election "1979 San Francisco mayoral election")
+  * [1983 (recall)](https://en.wikipedia.org/wiki/1983_San_Francisco_mayoral_recall_election "1983 San Francisco mayoral recall election")
+  * [1983](https://en.wikipedia.org/wiki/1983_San_Francisco_mayoral_election "1983 San Francisco mayoral election")
+  * [1987](https://en.wikipedia.org/wiki/1987_San_Francisco_mayoral_election "1987 San Francisco mayoral election")
+  * [1991](https://en.wikipedia.org/wiki/1991_San_Francisco_mayoral_election "1991 San Francisco mayoral election")
+  * [1995](https://en.wikipedia.org/wiki/1995_San_Francisco_mayoral_election "1995 San Francisco mayoral election")
+  * [1999](https://en.wikipedia.org/wiki/1999_San_Francisco_mayoral_election "1999 San Francisco mayoral election")
+  * [2003](https://en.wikipedia.org/wiki/2003_San_Francisco_mayoral_election "2003 San Francisco mayoral election")
+  * [2007](https://en.wikipedia.org/wiki/2007_San_Francisco_mayoral_election "2007 San Francisco mayoral election")
+  * [2011](https://en.wikipedia.org/wiki/2011_San_Francisco_mayoral_election "2011 San Francisco mayoral election")
+  * [2015](https://en.wikipedia.org/wiki/2015_San_Francisco_mayoral_election "2015 San Francisco mayoral election")
+  * [2018 (sp)](https://en.wikipedia.org/wiki/2018_San_Francisco_mayoral_special_election "2018 San Francisco mayoral special election")
+  * [2019](https://en.wikipedia.org/wiki/2019_San_Francisco_mayoral_election "2019 San Francisco mayoral election")
+  * [2024](https://en.wikipedia.org/wiki/2024_San_Francisco_mayoral_election "2024 San Francisco mayoral election")
+
+  
+show[District attorney](https://en.wikipedia.org/wiki/San_Francisco_District_Attorney%27s_Office "San Francisco District Attorney's Office")  
+---  
+  * [2019](https://en.wikipedia.org/wiki/2019_San_Francisco_District_Attorney_election "2019 San Francisco District Attorney election")
+  * [2022 (recall)](https://en.wikipedia.org/wiki/2022_San_Francisco_District_Attorney_recall_election "2022 San Francisco District Attorney recall election")
+  * [2022 (sp)](https://en.wikipedia.org/wiki/2022_San_Francisco_District_Attorney_special_election "2022 San Francisco District Attorney special election")
+  * [2024](https://en.wikipedia.org/wiki/2024_San_Francisco_District_Attorney_election "2024 San Francisco District Attorney election")
+
+  
+show[Board of supervisors](https://en.wikipedia.org/wiki/San_Francisco_Board_of_Supervisors "San Francisco Board of Supervisors")  
+---  
+  * [1977](https://en.wikipedia.org/wiki/1977_San_Francisco_Board_of_Supervisors_election "1977 San Francisco Board of Supervisors election")
+  * [1996](https://en.wikipedia.org/wiki/1996_San_Francisco_Board_of_Supervisors_election "1996 San Francisco Board of Supervisors election")
+  * [1998](https://en.wikipedia.org/wiki/1998_San_Francisco_Board_of_Supervisors_election "1998 San Francisco Board of Supervisors election")
+  * [2000](https://en.wikipedia.org/wiki/2000_San_Francisco_Board_of_Supervisors_election "2000 San Francisco Board of Supervisors election")
+  * [2002](https://en.wikipedia.org/wiki/2002_San_Francisco_Board_of_Supervisors_election "2002 San Francisco Board of Supervisors election")
+  * [2004](https://en.wikipedia.org/wiki/2004_San_Francisco_Board_of_Supervisors_election "2004 San Francisco Board of Supervisors election")
+  * [2006](https://en.wikipedia.org/wiki/2006_San_Francisco_Board_of_Supervisors_election "2006 San Francisco Board of Supervisors election")
+  * [2008](https://en.wikipedia.org/wiki/2008_San_Francisco_Board_of_Supervisors_election "2008 San Francisco Board of Supervisors election")
+  * [2010](https://en.wikipedia.org/wiki/2010_San_Francisco_Board_of_Supervisors_election "2010 San Francisco Board of Supervisors election")
+  * [2012](https://en.wikipedia.org/wiki/2012_San_Francisco_Board_of_Supervisors_election "2012 San Francisco Board of Supervisors election")
+  * [2014](https://en.wikipedia.org/wiki/2014_San_Francisco_Board_of_Supervisors_election "2014 San Francisco Board of Supervisors election")
+  * [2016](https://en.wikipedia.org/wiki/2016_San_Francisco_Board_of_Supervisors_election "2016 San Francisco Board of Supervisors election")
+  * [2018](https://en.wikipedia.org/wiki/2018_San_Francisco_Board_of_Supervisors_election "2018 San Francisco Board of Supervisors election")
+  * [2020](https://en.wikipedia.org/wiki/2020_San_Francisco_Board_of_Supervisors_election "2020 San Francisco Board of Supervisors election")
+  * [2022](https://en.wikipedia.org/wiki/2022_San_Francisco_Board_of_Supervisors_election "2022 San Francisco Board of Supervisors election")
+  * [2024](https://en.wikipedia.org/wiki/2024_San_Francisco_Board_of_Supervisors_election "2024 San Francisco Board of Supervisors election")
+
+  
+show[Board of education](https://en.wikipedia.org/wiki/San_Francisco_Board_of_Education "San Francisco Board of Education")  
+---  
+  * [2018](https://en.wikipedia.org/wiki/2018_San_Francisco_Board_of_Education_election "2018 San Francisco Board of Education election")
+  * [2022 (recall)](https://en.wikipedia.org/wiki/2022_San_Francisco_Board_of_Education_recall_elections "2022 San Francisco Board of Education recall elections")
+
+  
+showBallot measures  
+---  
+  * 2024 
+    * [G](https://en.wikipedia.org/wiki/San_Francisco_Proposition_G_\(March_2024\) "San Francisco Proposition G \(March 2024\)")
+
+  
+showElections  
+---  
+  * 2004 
+    * [Mar](https://en.wikipedia.org/wiki/March_2004_San_Francisco_general_election "March 2004 San Francisco general election")
+    * [Nov](https://en.wikipedia.org/wiki/November_2004_San_Francisco_general_election "November 2004 San Francisco general election")
+  * [2005](https://en.wikipedia.org/wiki/November_2005_San_Francisco_general_election "November 2005 San Francisco general election")
+  * 2006 
+    * [Jun](https://en.wikipedia.org/wiki/June_2006_San_Francisco_general_election "June 2006 San Francisco general election")
+    * [Nov](https://en.wikipedia.org/wiki/November_2006_San_Francisco_general_election "November 2006 San Francisco general election")
+  * [2007](https://en.wikipedia.org/wiki/2007_San_Francisco_general_election "2007 San Francisco general election")
+  * 2008 
+    * [Feb](https://en.wikipedia.org/wiki/February_2008_San_Francisco_general_election "February 2008 San Francisco general election")
+    * [Jun](https://en.wikipedia.org/wiki/June_2008_San_Francisco_general_election "June 2008 San Francisco general election")
+    * [Nov](https://en.wikipedia.org/wiki/November_2008_San_Francisco_general_election "November 2008 San Francisco general election")
+  * [2009](https://en.wikipedia.org/wiki/November_2009_San_Francisco_general_election "November 2009 San Francisco general election")
+  * 2010 
+    * [Jun](https://en.wikipedia.org/wiki/June_2010_San_Francisco_general_election "June 2010 San Francisco general election")
+    * [Nov](https://en.wikipedia.org/wiki/November_2010_San_Francisco_general_election "November 2010 San Francisco general election")
+  * [2011](https://en.wikipedia.org/wiki/November_2011_San_Francisco_general_election "November 2011 San Francisco general election")
+  * 2012 
+    * [Jun](https://en.wikipedia.org/wiki/June_2012_San_Francisco_general_election "June 2012 San Francisco general election")
+    * [Nov](https://en.wikipedia.org/wiki/November_2012_San_Francisco_general_election "November 2012 San Francisco general election")
+  * [2013](https://en.wikipedia.org/wiki/November_2013_San_Francisco_general_election "November 2013 San Francisco general election")
+  * 2022 
+    * [Feb](https://en.wikipedia.org/wiki/February_2022_San_Francisco_special_election "February 2022 San Francisco special election")
+
+  
+show[San Jose](https://en.wikipedia.org/wiki/San_Jose,_California#Law_and_government "San Jose, California") |  show[Mayor](https://en.wikipedia.org/wiki/List_of_mayors_of_San_Jose,_California "List of mayors of San Jose, California")  
+---  
+  * [1974](https://en.wikipedia.org/wiki/1974_San_Jose_mayoral_election "1974 San Jose mayoral election")
+  * [1978](https://en.wikipedia.org/wiki/1978_San_Jose_mayoral_election "1978 San Jose mayoral election")
+  * [1982](https://en.wikipedia.org/wiki/1982_San_Jose_mayoral_election "1982 San Jose mayoral election")
+  * [1986](https://en.wikipedia.org/wiki/1986_San_Jose_mayoral_election "1986 San Jose mayoral election")
+  * [1990](https://en.wikipedia.org/wiki/1990_San_Jose_mayoral_election "1990 San Jose mayoral election")
+  * [1994](https://en.wikipedia.org/wiki/1994_San_Jose_mayoral_election "1994 San Jose mayoral election")
+  * [1998](https://en.wikipedia.org/wiki/1998_San_Jose_mayoral_election "1998 San Jose mayoral election")
+  * [2002](https://en.wikipedia.org/wiki/2002_San_Jose_mayoral_election "2002 San Jose mayoral election")
+  * [2006](https://en.wikipedia.org/wiki/2006_San_Jose_mayoral_election "2006 San Jose mayoral election")
+  * [2010](https://en.wikipedia.org/wiki/2010_San_Jose_mayoral_election "2010 San Jose mayoral election")
+  * [2014](https://en.wikipedia.org/wiki/2014_San_Jose_mayoral_election "2014 San Jose mayoral election")
+  * [2018](https://en.wikipedia.org/wiki/2018_San_Jose_mayoral_election "2018 San Jose mayoral election")
+  * [2022](https://en.wikipedia.org/wiki/2022_San_Jose_mayoral_election "2022 San Jose mayoral election")
+  * [2024](https://en.wikipedia.org/wiki/2024_San_Jose_mayoral_election "2024 San Jose mayoral election")
+
+  
+showOther localities |  **[Bakersfield](https://en.wikipedia.org/wiki/Bakersfield,_California#Government "Bakersfield, California")**  
+---  
+**Mayoral elections:**
+  * [2004](https://en.wikipedia.org/wiki/2004_Bakersfield,_California,_mayoral_election "2004 Bakersfield, California, mayoral election")
+  * [2008](https://en.wikipedia.org/wiki/2008_Bakersfield,_California,_mayoral_election "2008 Bakersfield, California, mayoral election")
+  * [2012](https://en.wikipedia.org/wiki/2012_Bakersfield,_California,_mayoral_election "2012 Bakersfield, California, mayoral election")
+  * [2016](https://en.wikipedia.org/wiki/2016_Bakersfield,_California,_mayoral_election "2016 Bakersfield, California, mayoral election")
+  * [2020](https://en.wikipedia.org/wiki/2020_Bakersfield,_California,_mayoral_election "2020 Bakersfield, California, mayoral election")
+  * [2024](https://en.wikipedia.org/wiki/2024_Bakersfield,_California,_mayoral_election "2024 Bakersfield, California, mayoral election")
+
+  
+**[Fresno](https://en.wikipedia.org/wiki/Fresno,_California#Government "Fresno, California")**  
+**Mayoral elections:**
+  * [1996](https://en.wikipedia.org/wiki/1996_Fresno_mayoral_election "1996 Fresno mayoral election")
+  * [2000](https://en.wikipedia.org/wiki/2000_Fresno_mayoral_election "2000 Fresno mayoral election")
+  * [2004](https://en.wikipedia.org/wiki/2004_Fresno_mayoral_election "2004 Fresno mayoral election")
+  * [2008](https://en.wikipedia.org/wiki/2008_Fresno_mayoral_election "2008 Fresno mayoral election")
+  * [2012](https://en.wikipedia.org/wiki/2012_Fresno_mayoral_election "2012 Fresno mayoral election")
+  * [2016](https://en.wikipedia.org/wiki/2016_Fresno_mayoral_election "2016 Fresno mayoral election")
+  * [2020](https://en.wikipedia.org/wiki/2020_Fresno_mayoral_election "2020 Fresno mayoral election")
+  * [2024](https://en.wikipedia.org/wiki/2024_Fresno_mayoral_election "2024 Fresno mayoral election")
+
+  
+**[Oakland](https://en.wikipedia.org/wiki/Oakland,_California#Government "Oakland, California")**  
+**Mayoral elections:**
+  * [1994](https://en.wikipedia.org/wiki/1994_Oakland_mayoral_election "1994 Oakland mayoral election")
+  * [1998](https://en.wikipedia.org/wiki/1998_Oakland_mayoral_election "1998 Oakland mayoral election")
+  * [2002](https://en.wikipedia.org/wiki/2002_Oakland_mayoral_election "2002 Oakland mayoral election")
+  * [2006](https://en.wikipedia.org/wiki/2006_Oakland_mayoral_election "2006 Oakland mayoral election")
+  * [2010](https://en.wikipedia.org/wiki/2010_Oakland_mayoral_election "2010 Oakland mayoral election")
+  * [2014](https://en.wikipedia.org/wiki/2014_Oakland_mayoral_election "2014 Oakland mayoral election")
+  * [2018](https://en.wikipedia.org/wiki/2018_Oakland_mayoral_election "2018 Oakland mayoral election")
+  * [2022](https://en.wikipedia.org/wiki/2022_Oakland_mayoral_election "2022 Oakland mayoral election")
+  * [2024 (recall)](https://en.wikipedia.org/wiki/2024_Oakland_mayoral_recall_election "2024 Oakland mayoral recall election")
+  * [2025 (sp)](https://en.wikipedia.org/wiki/2025_Oakland_mayoral_special_election "2025 Oakland mayoral special election")
+
+  
+**[Riverside](https://en.wikipedia.org/wiki/Riverside,_California#Government "Riverside, California")**  
+**Mayoral elections:**
+  * [1997](https://en.wikipedia.org/wiki/Mayoral_elections_in_Riverside,_California#1997 "Mayoral elections in Riverside, California")
+  * [2001](https://en.wikipedia.org/wiki/Mayoral_elections_in_Riverside,_California#2001 "Mayoral elections in Riverside, California")
+  * [2005](https://en.wikipedia.org/wiki/Mayoral_elections_in_Riverside,_California#2005 "Mayoral elections in Riverside, California")
+  * [2009](https://en.wikipedia.org/wiki/Mayoral_elections_in_Riverside,_California#2009 "Mayoral elections in Riverside, California")
+  * [2012](https://en.wikipedia.org/wiki/Mayoral_elections_in_Riverside,_California#2012 "Mayoral elections in Riverside, California")
+  * [2016](https://en.wikipedia.org/wiki/Mayoral_elections_in_Riverside,_California#2016 "Mayoral elections in Riverside, California")
+  * [2020](https://en.wikipedia.org/wiki/Mayoral_elections_in_Riverside,_California#2020 "Mayoral elections in Riverside, California")
+  * [2024](https://en.wikipedia.org/wiki/Mayoral_elections_in_Riverside,_California#2024 "Mayoral elections in Riverside, California")
+
+  
+**[San Bernardino](https://en.wikipedia.org/wiki/San_Bernardino,_California#Local_government "San Bernardino, California")**  
+**Mayoral elections:**
+  * [2005](https://en.wikipedia.org/wiki/2005%E2%80%9306_San_Bernardino_mayoral_election "2005–06 San Bernardino mayoral election")
+  * [2009](https://en.wikipedia.org/wiki/2009_San_Bernardino_mayoral_election "2009 San Bernardino mayoral election")
+  * [2014](https://en.wikipedia.org/wiki/2014_San_Bernardino_mayoral_election "2014 San Bernardino mayoral election")
+  * [2018](https://en.wikipedia.org/wiki/2018_San_Bernardino_mayoral_election "2018 San Bernardino mayoral election")
+  * [2022](https://en.wikipedia.org/wiki/2022_San_Bernardino_mayoral_election "2022 San Bernardino mayoral election")
+
+  
+**[Stockton](https://en.wikipedia.org/wiki/Stockton,_California#Government "Stockton, California")**  
+**Mayoral elections:**
+  * [2008](https://en.wikipedia.org/wiki/2008_Stockton,_California,_mayoral_election "2008 Stockton, California, mayoral election")
+  * [2012](https://en.wikipedia.org/wiki/2012_Stockton,_California,_mayoral_election "2012 Stockton, California, mayoral election")
+  * [2016](https://en.wikipedia.org/wiki/2016_Stockton,_California,_mayoral_election "2016 Stockton, California, mayoral election")
+  * [2020](https://en.wikipedia.org/wiki/2020_Stockton,_California,_mayoral_election "2020 Stockton, California, mayoral election")
+  * [2024](https://en.wikipedia.org/wiki/2024_Stockton,_California,_mayoral_election "2024 Stockton, California, mayoral election")
+
+  
+  * [v](https://en.wikipedia.org/wiki/Template:Elections_in_California_sidebar "Template:Elections in California sidebar")
+  * [t](https://en.wikipedia.org/wiki/Template_talk:Elections_in_California_sidebar "Template talk:Elections in California sidebar")
+  * [e](https://en.wikipedia.org/wiki/Special:EditPage/Template:Elections_in_California_sidebar "Special:EditPage/Template:Elections in California sidebar")
+
+  
+**Proposition 103** , titled **Insurance Rate Reduction and Reform Act** , was a [California ballot proposition](https://en.wikipedia.org/wiki/California_ballot_proposition "California ballot proposition") voted on in the [1988 California General Election](https://en.wikipedia.org/wiki/1988_California_State_Senate_election "1988 California State Senate election"). It passed with 51% of the vote on November 8, 1988.[[1]](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_note-1) Proposition 103 expanded the regulatory capacities of the [California Department of Insurance](https://en.wikipedia.org/wiki/California_Department_of_Insurance "California Department of Insurance"), especially in [property and casualty insurance](https://en.wikipedia.org/wiki/General_insurance "General insurance"). 
+The ballot measure required insurers to reduce their rates by at least 20 percent. [[2]](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_note-2) In addition, the act expanded the Department's responsibility for enforcement to include: [property insurance](https://en.wikipedia.org/wiki/Property_insurance "Property insurance"), [automobile insurance](https://en.wikipedia.org/wiki/Automobile_insurance "Automobile insurance"), [life insurance](https://en.wikipedia.org/wiki/Life_insurance "Life insurance") and other types of casualty coverage, requiring that the Department approve rates submitted by insurers prior to their taking effect.[[3]](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_note-3) The law also made the [California Insurance Commissioner](https://en.wikipedia.org/wiki/California_Insurance_Commissioner "California Insurance Commissioner") an [elected position](https://en.wikipedia.org/wiki/Elected_official "Elected official") (previously being a governor-appointed position).[[4]](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_note-4)
+Proposition 103 devised a process enabling consumer participation in the setting of insurance rates, and allowed consumer "intervenors" witness fees and expenses in some cases.[[5]](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_note-5)
+## Insurance regulation
+[[edit](https://en.wikipedia.org/w/index.php?title=1988_California_Proposition_103&action=edit&section=1 "Edit section: Insurance regulation")]
+Insurance types regulated by Proposition 103 are: Personal automobile, dwelling fire, earthquake, homeowners, inland marine, and umbrella; Commercial aircraft, automobile, boiler and machinery, burglary and theft, business owners, earthquake, farm owners, some fidelity, fire, glass, inland marine, medical malpractice, miscellaneous, multi-peril, other liability, professional liability, special multi-peril, umbrella, and coverage under the [Longshore and Harbor Workers' Compensation Act](https://en.wikipedia.org/wiki/Longshore_and_Harbor_Workers%27_Compensation_Act "Longshore and Harbor Workers' Compensation Act").[[6]](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_note-6)
+According to the California Insurance Commissioner, Proposition 103 "has saved consumers billions" since being implemented, specifically a $4.29 billion per year dividend.[[7]](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_note-7) It also claims "Californians spent 0.3% less on auto insurance in 2010 than they spent in 1989, while the nation spent 43.3% more". The Commissioner quotes a 2013 report of the Consumer Federation that more than $100 billion had been saved by consumers in the 25 years after passage. [[8]](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_note-8)[[9]](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_note-9)
+## Intervenors
+[[edit](https://en.wikipedia.org/w/index.php?title=1988_California_Proposition_103&action=edit&section=2 "Edit section: Intervenors")]
+Investigatory and regulatory hearings are open to intervenors. Members of the public or organizations can observe or may attend the hearing and request to be heard, submit written comments or present live testimony. Attorney fees can be reimbursed when written comments are submitted that "make a substantial contribution within the time frame in the notice".[[10]](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_note-10)
+## Election
+[[edit](https://en.wikipedia.org/w/index.php?title=1988_California_Proposition_103&action=edit&section=3 "Edit section: Election")]
+With $207 million spent, the most expensive election campaign in U.S. modern history was the 1988 California insurance initiatives election battle. Once Prop. 103 won voter approval. The $207 million spent, in 2020 dollars adjusted for inflation, which was $95 million in 1988, was reported by the Los Angeles Times.[[11]](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_note-11)
+Opponents of Prop. 103 spent over $200 million trying to defeat it or trying to pass competing initiatives. Prop. 103 raised $6.4 million in small donations of about $30 from a statewide door-to-door canvass. These small donations from the canvass paid for the modest offices and canvasser salaries, which going into the election reached one million households. TV ads for Prop. 103 were run at no cost by TV stations only due to the fairness doctrine in place at the time, with some equal-time ads. These ads were in response to the tens of millions of dollars being spent by the insurance industry, which also used large direct-mail campaigns, coordinated by consultant Clint Reilly, who acknowledged the efforts against Prop. 103 by insurance companies lacked a lot of public support. With $200 million spent among the other initiatives, both pro and con, however, it came down to the wire, with Prop. 103 winning by only 1%, with a 51% yes vote. The campaign, and its results, received extensive national attention. Court challenges were turned down, and the California Supreme Court upheld every provision of 103. 
+"Three other insurance measures--Proposition 104, the industry's no-fault proposal, Proposition 100, backed by the state's trial lawyers, and Proposition 101, ... sponsored by dissident insurer Harry Miller,--all were overwhelmingly defeated," reported Kenneth Reich, the L.A. Times staff writer who covered the insurance industry and this election. Reich wrote "But Proposition 103 campaign chairman Harvey Rosenfield suggested that if the insurance industry was in trouble with the public, it had only itself to blame."[[12]](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_note-12)
+## Criticism
+[[edit](https://en.wikipedia.org/w/index.php?title=1988_California_Proposition_103&action=edit&section=4 "Edit section: Criticism")]
+In the aftermath of the devastating [January 2025 Southern California wildfires](https://en.wikipedia.org/wiki/January_2025_Southern_California_wildfires "January 2025 Southern California wildfires"), Steven Greenhut of the [R Street Institute](https://en.wikipedia.org/wiki/R_Street_Institute "R Street Institute") harshly criticized Proposition 103 for pushing the state's property insurance system to the brink of collapse by imposing a "byzantine" system of [price controls](https://en.wikipedia.org/wiki/Price_controls "Price controls") which had already caused most insurers to flee the state because it was impossible for them to earn a profit.[[13]](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_note-Greenhut-13) In arguing for the imposition of conditions on the release of federal aid to California wildfire victims, U.S. Senator [Ron Johnson](https://en.wikipedia.org/wiki/Ron_Johnson "Ron Johnson") (R-WI) criticized the "[moral hazard](https://en.wikipedia.org/wiki/Moral_hazard "Moral hazard")" inherent in California's "laws where they made it very unattractive for private insurers to come in and actually insure their properties and assess the risk properly" and thereby "encouraged people to build multimillion ... homes and complexes in very vulnerable areas".[[14]](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_note-Inskeep-14) [Reuters](https://en.wikipedia.org/wiki/Reuters "Reuters") reported that California's price controls were so effective that before the [Palisades Fire](https://en.wikipedia.org/wiki/Palisades_Fire "Palisades Fire"), insurance costs in [Pacific Palisades, California](https://en.wikipedia.org/wiki/Pacific_Palisades,_California "Pacific Palisades, California") (which was mostly wiped out) were cheaper than in 97% of all [ZIP Codes](https://en.wikipedia.org/wiki/ZIP_Code "ZIP Code") in the United States.[[15]](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_note-Sullivan-15) [Kelsey Piper](https://en.wikipedia.org/wiki/Kelsey_Piper "Kelsey Piper") of _[Vox](https://en.wikipedia.org/wiki/Vox_\(website\) "Vox \(website\)")_ identified those price controls as one of several examples of incompetent governance before and during the wildfires that were leading Californians to the sinking realization that "no matter how bad things get, the real grown-ups can’t be called in to save the day because they don’t exist".[[16]](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_note-Piper-16)
+## See also
+[[edit](https://en.wikipedia.org/w/index.php?title=1988_California_Proposition_103&action=edit&section=5 "Edit section: See also")]
+  * [California FAIR Plan](https://en.wikipedia.org/wiki/California_FAIR_Plan "California FAIR Plan")
+
+
+## References
+[[edit](https://en.wikipedia.org/w/index.php?title=1988_California_Proposition_103&action=edit&section=6 "Edit section: References")]
+  1. **[^](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_ref-1 "Jump up")** Ralph Nader (2004). In Pursuit of Justice: Collected Writings 2000-2003. Seven Stories Press. pp. 240–. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)") [978-1-58322-629-2](https://en.wikipedia.org/wiki/Special:BookSources/978-1-58322-629-2 "Special:BookSources/978-1-58322-629-2").
+  2. **[^](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_ref-2 "Jump up")** CA Ins Code § 1861.01 (2023)
+  3. **[^](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_ref-3 "Jump up")** CA Ins Code § 1861.05 (2023)
+  4. **[^](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_ref-4 "Jump up")** Fredrick C. Harris; Robert C. Lieberman (30 June 2013). Beyond Discrimination: Racial Inequality in a Post-Racist Era. Russell Sage Foundation. pp. 280–. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)") [978-1-61044-817-8](https://en.wikipedia.org/wiki/Special:BookSources/978-1-61044-817-8 "Special:BookSources/978-1-61044-817-8").
+  5. **[^](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_ref-5 "Jump up")** J. David Cummins (23 June 2004). Deregulating Property-Liability Insurance: Restoring Competition and Increasing Market Efficiency. Brookings Institution Press. pp. 196–. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN \(identifier\)") [978-0-8157-9841-5](https://en.wikipedia.org/wiki/Special:BookSources/978-0-8157-9841-5 "Special:BookSources/978-0-8157-9841-5").
+  6. **[^](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_ref-6 "Jump up")** Dergler, Jon (July 2, 2018). ["Insurers Question California Commissioner's Authority to Make Comp Writers Report Federal Tax Savings"](https://www.insurancejournal.com/news/west/2018/07/02/494057.htm). _Insurance Journal_. Retrieved September 4, 2018.
+  7. **[^](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_ref-7 "Jump up")** Kamisher, Eliyahu; Reyes, Max; Carson, Biz (June 2, 2023). ["It's not just State Farm. Allstate no longer sells new home insurance policies in California"](https://www.latimes.com/business/story/2023-06-02/allstate-state-farm-stop-selling-new-home-insurance-in-california). _Los Angeles Times_. Bloomberg. Retrieved June 3, 2023.
+  8. **[^](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_ref-8 "Jump up")** ["Information Sheet: Proposition 103 Intervenor Process"](http://www.insurance.ca.gov/01-consumers/150-other-prog/01-intervenor/info.cfm). _insurance.ca.gov_. Retrieved September 4, 2018.
+  9. **[^](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_ref-9 "Jump up")** Daniels, Jeff (December 7, 2017). ["Why California's big fire losses this year won't mean massive insurance rate hikes in 2018"](https://www.cnbc.com/2017/12/07/californias-big-fire-losses-in-2017-wont-mean-huge-insurance-hikes-in-2018.html). _CNBC_. Retrieved September 4, 2018.
+  10. **[^](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_ref-10 "Jump up")** Impact Analysis of Weighting Auto Rating Factors to Comply with Proposition 103. Office of Policy Research, California Department of Insurance. 1994.
+  11. **[^](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_ref-11 "Jump up")** See "$23 a Vote, Insurers Spent $55.87 on Prop. 104," by Leo C. Wolinsky, Los Angeles Times, Mar. 31, 1989, p. 3 and p. 23.
+  12. **[^](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_ref-12 "Jump up")** ["Voters Splitting Evenly on Nader's Prop. 103"](https://www.latimes.com/archives/la-xpm-1988-11-09-mn-266-story.html). _Los Angeles Times_. November 9, 1988. Retrieved January 28, 2020.
+  13. **[^](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_ref-Greenhut_13-0 "Jump up")** Greenhut, Steven (January 16, 2025). ["How Policy Helped Create California's Insurance Crisis"](https://www.city-journal.org/article/what-led-to-californias-insurance-crisis). _City Journal_.
+  14. **[^](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_ref-Inskeep_14-0 "Jump up")** [Inskeep, Steve](https://en.wikipedia.org/wiki/Steve_Inskeep "Steve Inskeep"); Guevara, Milton (January 15, 2025). ["Republican Sen. Ron Johnson says fire aid to California should come with conditions"](https://www.npr.org/2025/01/15/nx-s1-5259669/california-wildfires-aid-republicans). _[Morning Edition](https://en.wikipedia.org/wiki/Morning_Edition "Morning Edition")_.
+  15. **[^](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_ref-Sullivan_15-0 "Jump up")** Sullivan, Andy (January 9, 2025). ["Pacific Palisades fire may spell an end to cheap homeowners insurance in California"](https://www.reuters.com/world/us/pacific-palisades-fire-may-spell-an-end-cheap-homeowners-insurance-california-2025-01-09/). _Reuters_.
+  16. **[^](https://en.wikipedia.org/wiki/1988_California_Proposition_103#cite_ref-Piper_16-0 "Jump up")** [Piper, Kelsey](https://en.wikipedia.org/wiki/Kelsey_Piper "Kelsey Piper") (January 17, 2025). ["There are no grown-ups in California"](https://www.vox.com/future-perfect/395335/wildfires-california-gavin-newsom-insurance-housing). _[Vox](https://en.wikipedia.org/wiki/Vox_\(website\) "Vox \(website\)")_.
+
+
+Retrieved from "[https://en.wikipedia.org/w/index.php?title=1988_California_Proposition_103&oldid=1310089180](https://en.wikipedia.org/w/index.php?title=1988_California_Proposition_103&oldid=1310089180)"
+[Categories](https://en.wikipedia.org/wiki/Help:Category "Help:Category"): 
+  * [1988 California ballot propositions](https://en.wikipedia.org/wiki/Category:1988_California_ballot_propositions "Category:1988 California ballot propositions")
+  * [Insurance law](https://en.wikipedia.org/wiki/Category:Insurance_law "Category:Insurance law")
+  * [California law](https://en.wikipedia.org/wiki/Category:California_law "Category:California law")
+  * [Propositions](https://en.wikipedia.org/wiki/Category:Propositions "Category:Propositions")
+
+
+Hidden categories: 
+  * [Articles with short description](https://en.wikipedia.org/wiki/Category:Articles_with_short_description "Category:Articles with short description")
+  * [Short description matches Wikidata](https://en.wikipedia.org/wiki/Category:Short_description_matches_Wikidata "Category:Short description matches Wikidata")
+  * [Use mdy dates from June 2023](https://en.wikipedia.org/wiki/Category:Use_mdy_dates_from_June_2023 "Category:Use mdy dates from June 2023")
+
+
+  * This page was last edited on 7 September 2025, at 17:01 (UTC).
+  * Text is available under the [Creative Commons Attribution-ShareAlike 4.0 License](https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License "Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License"); additional terms may apply. By using this site, you agree to the [Terms of Use](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use "foundation:Special:MyLanguage/Policy:Terms of Use") and [Privacy Policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy "foundation:Special:MyLanguage/Policy:Privacy policy"). Wikipedia® is a registered trademark of the [Wikimedia Foundation, Inc.](https://wikimediafoundation.org/), a non-profit organization.
+
+
+  * [Privacy policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy)
+  * [About Wikipedia](https://en.wikipedia.org/wiki/Wikipedia:About)
+  * [Disclaimers](https://en.wikipedia.org/wiki/Wikipedia:General_disclaimer)
+  * [Contact Wikipedia](https://en.wikipedia.org/wiki/Wikipedia:Contact_us)
+  * [Code of Conduct](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct)
+  * [Developers](https://developer.wikimedia.org)
+  * [Statistics](https://stats.wikimedia.org/#/en.wikipedia.org)
+  * [Cookie statement](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement)
+  * [Mobile view](https://en.wikipedia.org/w/index.php?title=1988_California_Proposition_103&mobileaction=toggle_view_mobile)
+  * [Edit preview settings](https://en.wikipedia.org/wiki/1988_California_Proposition_103)
+
+
+  * [![Wikimedia Foundation](https://en.wikipedia.org/static/images/footer/wikimedia.svg)](https://www.wikimedia.org/)
+  * [![Powered by MediaWiki](https://en.wikipedia.org/w/resources/assets/mediawiki_compact.svg)](https://www.mediawiki.org/)
+
+
+Search
+Search
+Toggle the table of contents
+1988 California Proposition 103
+[](https://en.wikipedia.org/wiki/1988_California_Proposition_103) [](https://en.wikipedia.org/wiki/1988_California_Proposition_103) [](https://en.wikipedia.org/wiki/1988_California_Proposition_103) [](https://en.wikipedia.org/wiki/1988_California_Proposition_103) [](https://en.wikipedia.org/wiki/1988_California_Proposition_103) [](https://en.wikipedia.org/wiki/1988_California_Proposition_103) [](https://en.wikipedia.org/wiki/1988_California_Proposition_103) [](https://en.wikipedia.org/wiki/1988_California_Proposition_103)
+Add languages [Add topic ](https://en.wikipedia.org/wiki/1988_California_Proposition_103)
+[](https://en.wikipedia.org/wiki/1988_California_Proposition_103?action=edit)
+  *[v]: View this template
+  *[t]: Discuss this template
+  *[e]: Edit this template

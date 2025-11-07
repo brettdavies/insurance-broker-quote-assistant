@@ -1,0 +1,388 @@
+  * [News](https://www.latimes.com/)
+    * [ Home Page ](https://www.latimes.com/)
+    * [ California](https://www.latimes.com/california)
+    * [ Election 2024](https://www.latimes.com/topic/election-2024)
+    * [ Housing & Homelessness](https://www.latimes.com/homeless-housing)
+    * [ Politics](https://www.latimes.com/politics)
+    * [ Science & Medicine](https://www.latimes.com/science)
+    * [ World & Nation](https://www.latimes.com/world-nation)
+  * [Business](https://www.latimes.com/business)
+    * [ Artificial Intelligence](https://www.latimes.com/topic/artificial-intelligence)
+    * [ Autos](https://www.latimes.com/business/autos)
+    * [ Jobs, Labor & Workplace](https://www.latimes.com/topic/jobs-labor)
+    * [ Real Estate](https://www.latimes.com/business/real-estate)
+    * [ Technology and the Internet](https://www.latimes.com/business/technology)
+  * [California](https://www.latimes.com/california)
+    * [ California Politics ](https://www.latimes.com/topic/california-law-politics)
+    * [ Earthquakes](https://www.latimes.com/topic/earthquakes)
+    * [ Education](https://www.latimes.com/topic/education)
+    * [ Housing & Homelessness](https://www.latimes.com/homeless-housing)
+    * [ L.A. Influential](https://www.latimes.com/la-influential)
+    * [ L.A. Politics ](https://www.latimes.com/topic/la-politics)
+    * [ Mental Health](https://www.latimes.com/topic/mental-health)
+  * [Climate & Environment](https://www.latimes.com/environment)
+    * [ Climate Change](https://www.latimes.com/topic/climate-change)
+    * [ Water & Drought](https://www.latimes.com/topic/california-drought)
+  * [Entertainment & Arts](https://www.latimes.com/entertainment-arts)
+    * [ Arts](https://www.latimes.com/topic/arts)
+    * [ Books](https://www.latimes.com/entertainment-arts/books)
+    * [ Stand-Up Comedy](https://www.latimes.com/topic/comedy)
+    * [ Hollywood Inc.](https://www.latimes.com/entertainment-arts/business)
+    * [ The Envelope (Awards)](https://www.latimes.com/entertainment-arts/awards)
+    * [ Movies](https://www.latimes.com/entertainment-arts/movies)
+    * [ Music](https://www.latimes.com/entertainment-arts/music)
+    * [ Television](https://www.latimes.com/entertainment-arts/tv)
+    * [ Things to Do](https://www.latimes.com/topic/things-to-do)
+  * [De Los](https://www.latimes.com/delos)
+  * [En Español](https://www.latimes.com/espanol/)
+  * [Food](https://www.latimes.com/food)
+    * [ 101 best restaurants in L.A.](https://www.latimes.com/food/list/101-best-restaurants-los-angeles)
+    * [ Recipes](https://www.latimes.com/food/recipes)
+  * [Image](https://www.latimes.com/lifestyle/image)
+    * [ Art & Culture](https://www.latimes.com/lifestyle/image/story/2022-09-13/trend-analysis)
+    * [ Conversations](https://www.latimes.com/lifestyle/image/story/2022-09-13/los-intelligentsia)
+    * [ Drip Index: Event Guides](https://www.latimes.com/lifestyle/image/story/2022-09-13/drip-index)
+    * [ Fashion ](https://www.latimes.com/topic/fashion)
+    * [ Shopping Guides](https://www.latimes.com/lifestyle/image/story/2022-09-13/coveted)
+    * [ Styling Myself](https://www.latimes.com/lifestyle/image/story/2022-09-13/styling-myself)
+  * [Lifestyle](https://www.latimes.com/lifestyle)
+    * [ Health & Wellness](https://www.latimes.com/topic/wellness)
+    * [ Home Design](https://www.latimes.com/topic/home-design)
+    * [ L.A. Affairs](https://www.latimes.com/topic/la-affairs)
+    * [ Plants](https://www.latimes.com/topic/plants)
+    * [ Travel & Experiences](https://www.latimes.com/travel)
+    * [ Weekend](https://www.latimes.com/lifestyle/weekend)
+    * [ Things to Do in L.A.](https://www.latimes.com/topic/things-to-do)
+  * [Obituaries](https://www.latimes.com/obituaries)
+  * [Voices](https://www.latimes.com/voices)
+    * [ Editorials](https://www.latimes.com/topic/editorials)
+    * [ Letters to the Editor](https://www.latimes.com/opinion/letters-to-the-editor)
+    * [ Contributors](https://www.latimes.com/topic/op-ed)
+    * [ Short Docs](https://www.latimes.com/shortdocs)
+  * [Sports](https://www.latimes.com/sports)
+    * [ Angels](https://www.latimes.com/sports/angels)
+    * [ Angel City FC](https://www.latimes.com/sports/soccer/angel-city-fc)
+    * [ Chargers](https://www.latimes.com/sports/chargers)
+    * [ Clippers](https://www.latimes.com/sports/clippers)
+    * [ Dodgers](https://www.latimes.com/sports/dodgers)
+    * [ Ducks](https://www.latimes.com/sports/hockey/ducks)
+    * [ Galaxy ](https://www.latimes.com/sports/soccer/galaxy)
+    * [ High School Sports](https://www.latimes.com/sports/highschool)
+    * [ Kings](https://www.latimes.com/sports/hockey/kings)
+    * [ Lakers](https://www.latimes.com/sports/lakers)
+    * [ Olympics](https://www.latimes.com/sports/olympics)
+    * [ USC ](https://www.latimes.com/sports/usc)
+    * [ UCLA ](https://www.latimes.com/sports/ucla)
+    * [ Rams](https://www.latimes.com/sports/rams)
+    * [ Sparks](https://www.latimes.com/sports/sparks)
+  * [World & Nation](https://www.latimes.com/world-nation)
+    * [ Immigration & the Border](https://www.latimes.com/topic/immigration)
+    * [ Israel-Hamas](https://www.latimes.com/topic/israel-hamas)
+    * [ Mexico & the Americas](https://www.latimes.com/topic/mexico-americas)
+    * [ Ukraine](https://www.latimes.com/topic/ukraine)
+  * [Times Everywhere](https://www.latimes.com/archives/topics)
+    * [ 404 by L.A. Times](https://www.instagram.com/latimes.404/?hl=en)
+    * [ Facebook](https://www.facebook.com/latimes)
+    * [ Instagram](https://www.instagram.com/latimes/)
+    * [ LA Times Today](https://www.latimes.com/topic/la-times-today)
+    * [ Newsletters](https://membership.latimes.com/newsletters/)
+    * [ Photography](https://www.latimes.com/california/photography)
+    * [ Podcasts ](https://www.latimes.com/podcasts)
+    * [ Short Docs](https://www.latimes.com/shortdocs)
+    * [ TikTok](https://www.tiktok.com/@latimes?lang=en)
+    * [ Threads](https://www.threads.net/@latimes)
+    * [ Video](https://www.latimes.com/video)
+    * [ YouTube](https://www.youtube.com/user/losangelestimes)
+    * [ X (Twitter) ](https://twitter.com/latimes)
+  * [For Subscribers](https://www.latimes.com/topic/for-la-times-subscribers)
+  * [eNewspaper](https://enewspaper.latimes.com/desktop/latimes/default.aspx?pubid=50435180-e58e-48b5-8e0c-236bf740270e)
+  * [All Sections](https://www.latimes.com/archives/topics)
+  * _________________
+  * [LA Times Studios](https://www.latimes.com/studios)
+    * [ Business](https://www.latimes.com/b2b)
+    * [ • AI & Tech](https://www.latimes.com/b2b/ai-technology)
+    * [ • Automotive](https://www.latimes.com/b2b/autos)
+    * [ • Banking & Finance](https://www.latimes.com/b2b/banking-finance)
+    * [ • Commercial Real Estate](https://www.latimes.com/b2b/commercial-real-estate)
+    * [ • Entertainment](https://www.latimes.com/b2b/entertainment)
+    * [ • Goods & Retail](https://www.latimes.com/b2b/consumer-goods-retail)
+    * [ • Healthcare & Science](https://www.latimes.com/b2b/health-life-science)
+    * [ • Law](https://www.latimes.com/b2b/law-legal)
+    * [ Decor & Design](https://www.latimes.com/spaces)
+    * [ Dentists](https://www.latimes.com/dentistry)
+    * [ Doctors & Scientists](https://www.latimes.com/doctors-scientists)
+    * [ Fitness](https://www.latimes.com/fitness)
+    * [ Hot Property](https://www.latimes.com/brandpublishing/hotproperty)
+    * [ Live & Well](https://www.latimes.com/live-well)
+    * [ Orange County](https://www.latimes.com/b2b/orange-county)
+    * [ Pets](https://www.latimes.com/companion-animals)
+    * [ The Hub: Rebuilding LA](https://www.latimes.com/wildfire-recovery)
+    * [ Travel](https://www.latimes.com/eta)
+    * [ Veterinarians](https://www.latimes.com/veterinarians)
+    * [ Weddings & Celebrations](https://www.latimes.com/weddings)
+    * [ Deals & Coupons](https://www.latimes.com/deals)
+    * [ Newsletters](https://membership.latimes.com/newsletters#la-times-studios)
+  * [Live Stream](https://www.latimes.com/00000192-788e-ddaa-a39a-7abfc6b30000-123)
+  * [Events](https://www.latimes.com/events-los-angeles-times)
+    * [ Screening Series](https://www.latimes.com/screenings)
+  * [Crossword](https://www.latimes.com/games)
+  * [Games](https://www.latimes.com/games)
+  * [L.A. Times Store](https://store.latimes.com/?utm_source=latimes&utm_medium=homepage&utm_campaign=homepage_nav)
+  * [Subscriptions](https://www.latimes.com/flyoutsubscribe)
+    * [ Manage Subscription](https://membership.latimes.com/)
+    * [ EZPAY](https://membership.latimes.com/billing-info)
+    * [ Delivery Issue](https://membership.latimes.com/subscription-info)
+    * [ eNewspaper](https://enewspaper.latimes.com/)
+    * [ Students & Educators](https://www.latimes.com/about/marketing/los-angeles-times-for-students-and-educators)
+    * [ Subscribe](https://www.latimes.com/flyoutsubscribe)
+    * [ Subscriber Terms](https://www.latimes.com/subscriber-terms-and-conditions)
+    * [ Gift Subscription Terms](https://www.latimes.com/gift-subscription-terms)
+  * [About Us ](https://www.latimes.com/about)
+    * [ About Us](https://www.latimes.com/about)
+    * [ Archives](https://www.latimes.com/archives)
+    * [ Company News](https://www.latimes.com/about/pressreleases)
+    * [ eNewspaper](https://enewspaper.latimes.com/desktop/latimes/default.aspx?pubid=50435180-e58e-48b5-8e0c-236bf740270e)
+    * [ For the Record](https://www.latimes.com/about/for-the-record/)
+    * [ Got a Tip? ](https://www.latimes.com/tips/)
+    * [ L.A. Times Careers](https://careers.latimes.com/)
+    * [ L.A. Times Store](https://store.latimes.com/?utm_source=latimes&utm_medium=homepage&utm_campaign=homepage_subnav)
+    * [ L.A. Times Studios](https://studios.latimes.com/)
+    * [ News App: Apple IOS](https://apps.apple.com/us/app/la-times/id373238146)
+    * [ News App: Google Play](https://play.google.com/store/apps/details?id=com.apptivateme.next.la&hl=en_US)
+    * [ Newsroom Directory](https://www.latimes.com/newsroom-directory)
+    * [ Public Affairs](https://www.latimes.com/about/public-affairs)
+    * [ Rights, Clearance & Permissions](https://www.latimes.com/about/how-to-obtain-rights-permissions)
+    * [ Short Docs](https://www.latimes.com/shortdocs)
+  * [Advertising](https://placeanad.latimes.com/)
+    * [ Classifieds](https://classifieds.latimes.com/)
+    * [ Find/Post Jobs](https://jobs.latimes.com/)
+    * [ Hot Property Sections](https://marketplace.latimes.com/places/types:23)
+    * [ Local Ads Marketplace](https://marketplace.latimes.com/)
+    * [ L.A. Times Digital Agency](https://digitalagency.latimes.com/)
+    * [ Media Kit: Why the L.A. Times?](https://mediakit.latimes.com/)
+    * [ People on the Move](https://peopleonthemove.latimes.com/)
+    * [ Place an Ad](https://placeanad.latimes.com/)
+    * [ Place an Open House](https://placeanad.latimes.com/open-house)
+    * [ Sotheby’s International Realty](https://marketplace.latimes.com/places/categories:43)
+  * [Special Supplements](https://www.latimes.com/specialsupplements)
+    * [ Healthy Living](https://www.latimes.com/seniorresources)
+    * [ Higher Education](https://www.latimes.com/higher-education)
+    * [ Philanthropy](https://www.latimes.com/b2b/giving)
+
+
+Copyright © 2025, Los Angeles Times | [Terms of Service](https://www.latimes.com/terms-of-service) | [Privacy Policy](https://www.latimes.com/privacy-policy) | [CA Notice of Collection](https://www.latimes.com/privacy-policy#california-notice-of-collection) | [Do Not Sell or Share My Personal Information](https://membership.latimes.com/privacy-settings)
+Sections
+[](https://www.latimes.com/)
+Tap to enable a layout that focuses on the article. 
+Focus mode 
+[Subscribe](https://www.latimes.com/california/story/2025-01-03/new-law-increases-californias-auto-insurance-minimum) or  [Log In](https://www.latimes.com/california/story/2025-01-03/new-law-increases-californias-auto-insurance-minimum) [](https://www.latimes.com/california/story/2025-01-03/new-law-increases-californias-auto-insurance-minimum)
+  * [Profile](https://www.latimes.com/california/story/2025-01-03/new-law-increases-californias-auto-insurance-minimum)
+  * [Sign Out](https://www.latimes.com/california/story/2025-01-03/new-law-increases-californias-auto-insurance-minimum)
+
+
+Show Search
+Search Query  Submit Search
+Advertisement
+[California](https://www.latimes.com/california)
+# New law increases California’s auto insurance minimums
+![Motorists make their way through Los Angeles International Airport in November.](https://ca-times.brightspotcdn.com/dims4/default/4494825/2147483647/strip/true/crop/6000x4000+0+0/resize/1200x800!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F8a%2Fb4%2Fa77ba5bb4914a957b6ebf9d71972%2F1484685-me-getaway-day-thanksgiving-04-ajs.jpg)
+Motorists make their way through Los Angeles International Airport in November.
+(Allen J. Schaben / Los Angeles Times)
+[ ![Karen Garcia.](https://ca-times.brightspotcdn.com/dims4/default/6135979/2147483647/strip/true/crop/2507x2507+1247+291/resize/130x130!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F97%2F7f%2F887f708f4971bc0232306d5a9a7e%2Fstaff-bio-karen-garcia-04.JPG) ](https://www.latimes.com/people/karen-garcia)
+By [Karen Garcia](https://www.latimes.com/people/karen-garcia)
+Staff Writer[Follow](https://bsky.app/profile/karenmg.bsky.social)
+Jan. 3, 2025 5:14 PM PT 
+  * 20 
+  * Share via Close extra sharing options
+    * Email
+    * [ Facebook ](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.latimes.com%2Fcalifornia%2Fstory%2F2025-01-03%2Fnew-law-increases-californias-auto-insurance-minimum)
+    * [ X ](https://x.com/intent/tweet?url=https%3A%2F%2Fwww.latimes.com%2Fcalifornia%2Fstory%2F2025-01-03%2Fnew-law-increases-californias-auto-insurance-minimum&text=New%20law%20increases%20California%27s%20auto%20insurance%20minimums)
+    * [ LinkedIn ](https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fwww.latimes.com%2Fcalifornia%2Fstory%2F2025-01-03%2Fnew-law-increases-californias-auto-insurance-minimum&title=New%20law%20increases%20California%27s%20auto%20insurance%20minimums&summary=California%20drivers%20who%20rely%20on%20minimum%20liability%20insurance%20will%20see%20an%20increase%20in%20their%20monthly%20premium.&source=Los%20Angeles%20Times)
+    * [ Threads ](https://threads.net/intent/post?text=New%20law%20increases%20California%27s%20auto%20insurance%20minimums%20https%3A%2F%2Fwww.latimes.com%2Fcalifornia%2Fstory%2F2025-01-03%2Fnew-law-increases-californias-auto-insurance-minimum)
+    * [ Reddit ](https://www.reddit.com/submit?url=https%3A%2F%2Fwww.latimes.com%2Fcalifornia%2Fstory%2F2025-01-03%2Fnew-law-increases-californias-auto-insurance-minimum&title=New%20law%20increases%20California%27s%20auto%20insurance%20minimums)
+    * [ WhatsApp ](https://api.whatsapp.com/send?text=New%20law%20increases%20California%27s%20auto%20insurance%20minimums%20https%3A%2F%2Fwww.latimes.com%2Fcalifornia%2Fstory%2F2025-01-03%2Fnew-law-increases-californias-auto-insurance-minimum)
+    * Copy Link URL Copied!
+    * Print
+
+
+For the first time in over five decades California is increasing its minimum auto insurance requirements this year, but the change isn’t expected to burn a hole in every driver’s wallet. 
+In 2022, Gov. Gavin Newsom signed Senate Bill 1107, also known as the Protect California Drivers Act, into law which increases the minimum auto liability limits. However, implementation of the law didn’t go into effect until the start of this month. 
+California law requires drivers to have minimum liability insurance that helps pay for injuries or damage that [you cause to others](https://www.insurance.ca.gov/01-consumers/105-type/95-guides/01-auto/auto101.cfm).   
+  
+[Subscribe to Continue Reading](https://membership.latimes.com/checkout?int_source=marketing_content&int_medium=MD&int_campaign=PERPLEXITY25&offerId=e6608c2b-aa39-4192-8128-1505bb15ff2a&int_id=4101&returnUrl=https%3A%2F%2Fwww.latimes.com%2Fcalifornia%2Fstory%2F2025-01-03%2Fnew-law-increases-californias-auto-insurance-minimum&content_id=00000194-2d66-d50c-a3bc-6d66aaf10000&int_content=fallback_paywall)
+Advertisement
+Before Protect California Drivers Act went into effect, the following minimum liability requirements were:  
+
+  * $15,000 for injuries or death to one person.
+  * $30,000 for injuries or death to multiple people in one accident. 
+  * $5,000 for property damage.
+
+
+After the law went into effect Jan. 1, the minimum requirements increased too:   
+
+  * $30,000 for injuries or death to one person. 
+  * $60,000 for injuries or death to multiple people in one accident.
+  * $15,000 for property damage.
+
+
+## Why is the change happening now?
+Insurance Commissioner Ricardo Lara previously said people expect “to be made whole by their insurance after a traffic accident, but I believe the current minimum coverage levels [before the new law] often left California’s drivers at risk of being one accident away from financial ruin, especially those from our most vulnerable communities.” 
+[Experts argued](https://www.insurance.com/auto-insurance/states-with-minimum-car-insurance-requirement-changes/) that the previous requirements for minimum liability limits were not enough to cover most claims. 
+Advertisement
+That’s because the cost of repairs and medical expenses after an accident have increased over time and exponentially so after the pandemic, said Rex Frazier, president of the Personal Insurance Federation of California. 
+It’s also wasn’t keeping up with rising costs because the minimum limits were set in 1967, according to the [American Agents Alliance](https://agentsalliance.com/sb1107/). 
+If you bump into someone’s car in a grocery store parking lot with your vehicle today, for example, there’s a lot of technology in a car bumper now including sensors that would need to be fixed. Repairing that damage can easily cost anywhere from $15,000 to $20,000, Frazier said. 
+Advertisement
+By increasing the minimum requirements, more accident-related expenses will be covered by this insurance policy. 
+## Who will be impacted by the law?
+Minimum liability limit increases will be beneficial for drivers who are involved in an accident they did not cause because they will be covered for more expenses related to the crash than previously, said Janet Ruiz, director of strategic communication at the Insurance Information Institute, an industry group. 
+Insurance professionals recommend drivers carry liability limits much higher than state minimums for a greater level of financial protection from at-fault accidents, Ruiz said. 
+Advertisement
+So, most drivers purchase insurance policies that have more than the minimum limit. 
+Driver’s with more coverage won’t feel the change on their monthly premium. 
+Drivers that currently carry bare minimum insurance coverage might experience slight rate increases due to the changes, Ruiz said. 
+“However, the cost of auto insurance varies based on numerous individual rating factors including your driving record, claim history, age of the drivers listed on the policy, city and state where you live and the make and model of your vehicle,” she said. 
+The two groups of people who are going to be impacted by the new law are younger drivers and drivers who are low-income, Frazier said. That’s because younger drivers typically purchase minimum liability insurance because they have to and low-income drivers purchase it because that’s all they can afford, he said. 
+### More to Read 
+  * [ ![PACIFIC PALISADES, CA, JANUARY 25, 2024: California Conservation Corps crews place silt socks around burned homes in Pacific Palisades in preparation for the expected rain on Saturday, January 25, 2025. \(Christina House / Los Angeles Times\)](https://ca-times.brightspotcdn.com/dims4/default/ae1aed3/2147483647/strip/true/crop/6361x4254+296+0/resize/320x214!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F53%2Ffa%2Fab446e1a4f119f798335552b1f9f%2F1492158-me-0125-post-fires-rain-forecast-cmh-07.jpg) ](https://www.latimes.com/business/story/2025-10-13/gov-newsom-signs-more-insurance-fire)
+###  [Fire survivors to get up to $350,000 for personal property without itemized list under new state law](https://www.latimes.com/business/story/2025-10-13/gov-newsom-signs-more-insurance-fire)
+Oct. 13, 2025
+  * [ ![LOS ANGELES, CALIFORNIA - FEBRUARY 08: A passenger sits in an Uber rideshare vehicle as others are lined up to pick up passengers at Los Angeles International Airport \(LAX\) on February 8, 2023 in Los Angeles, California. Ride-hailing giant Uber has beaten estimates with a strong revenue and adjusted earnings report with quarterly revenue hitting $8.6 billion, 49 percent higher than the same period last year. \(Photo by Mario Tama/Getty Images\)](https://ca-times.brightspotcdn.com/dims4/default/b83a7fd/2147483647/strip/true/crop/5304x3547+155+0/resize/320x214!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F32%2F74%2F60af0b5d4a97a404545f8b8733c4%2Fhttps-delivery-gettyimages.com%2Fdownloads%2F1464266449) ](https://www.latimes.com/california/story/2025-10-03/new-law-signed-by-newsom-allows-ride-share-drivers-to-unionize)
+###  [Uber and Lyft drivers can unionize under new law signed by Newsom. How does it work?](https://www.latimes.com/california/story/2025-10-03/new-law-signed-by-newsom-allows-ride-share-drivers-to-unionize)
+Oct. 3, 2025
+  * [ ![A Combined Charging System \(CCS\) connector is plugged into an electric vehicle at a charging station in Anaheim, Calif., Friday, June 9, 2023. Currently in the U.S. there mainly are two types of EV charging plugs, Tesla's North American Charging Standard, and CCS1, which is now used by nearly all other automakers but Tesla. \(AP Photo/Jae C. Hong\)](https://ca-times.brightspotcdn.com/dims4/default/aeb0a0c/2147483647/strip/true/crop/5981x4000+9+0/resize/320x214!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F88%2F7d%2F95dd9dc84adfb030e0ff003752cc%2Felectric-vehicle-charging-explainer-44124.jpg) ](https://www.latimes.com/environment/story/2025-05-22/senate-votes-in-bid-to-overturn-california-gas-only-car-ban)
+###  [Senate votes to overturn California’s landmark ban on new gas-only car sales](https://www.latimes.com/environment/story/2025-05-22/senate-votes-in-bid-to-overturn-california-gas-only-car-ban)
+May 22, 2025
+
+
+Show Comments
+[California](https://www.latimes.com/california)[The Latest](https://www.latimes.com/topic/breaking-news)
+### Sign up for Essential California
+The most important California stories and recommendations in your inbox every morning. 
+By continuing, you agree to our [Terms of Service](https://www.latimes.com/terms-of-service) and our [Privacy Policy](https://www.latimes.com/privacy-policy). 
+Enter email address
+Agree & Continue 
+[ ![](https://ca-times.brightspotcdn.com/dims4/default/6135979/2147483647/strip/true/crop/2507x2507+1247+291/resize/130x130!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F97%2F7f%2F887f708f4971bc0232306d5a9a7e%2Fstaff-bio-karen-garcia-04.JPG) ](https://www.latimes.com/people/karen-garcia)
+[Karen Garcia](https://www.latimes.com/people/karen-garcia)
+Follow Us
+  * [ X ](https://x.com/KarenMelissaGa7)
+  * Email
+  * [ Bluesky ](https://bsky.app/profile/karenmg.bsky.social)
+
+
+Karen Garcia is a breaking news reporter at the Los Angeles Times. She was previously a reporter on the Utility Journalism Team, which focused on service journalism. Her previous stints include reporting for the San Luis Obispo New Times and KCBX Central Coast Public Radio.
+### More From the Los Angeles Times 
+  * [ ![Antonio Brown smiles as he stands on the edge of the court after an NBA game. He's wearing shades and a large necklace](https://ca-times.brightspotcdn.com/dims4/default/a56147c/2147483647/strip/true/crop/3833x2556+864+49/resize/840x560!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fc2%2F62%2F804797ed411386431ad3e194abca%2Fhornets-heat-basketball-67395.jpg) ](https://www.latimes.com/sports/story/2025-11-07/antonio-brown-arrested-dubai-attempted-murder)
+[Sports](https://www.latimes.com/sports)
+###  [Antonio Brown apprehended in Dubai, will face attempted murder charge in Miami](https://www.latimes.com/sports/story/2025-11-07/antonio-brown-arrested-dubai-attempted-murder)
+56 minutes ago
+  * [ ![Camarillo, CA - December 16: Burned homes on Old Coach Drive in the aftermath of the Mountain fire, sparked the morning of Wednesday, Nov. 6, and exploded to more than 20,000 acres within two days, fueled by powerful Santa Ana winds and extremely low humidity. Photographed on Monday, Dec. 16, 2024 in Camarillo, CA. \(Brian van der Brug / Los Angeles Times\)](https://ca-times.brightspotcdn.com/dims4/default/209b69e/2147483647/strip/true/crop/3287x2191+157+0/resize/840x560!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Ffa%2Fdc%2F1829277d4d5683a71eb9b58a264d%2F1487309-me-mountain-fire-aftermath-10-brv.jpg) ](https://www.latimes.com/california/story/2025-11-07/mountain-fire-cause)
+[California](https://www.latimes.com/california)
+###  [Despite hot spots, firefighters left blaze that later burned 243 homes in Ventura County, investigation finds](https://www.latimes.com/california/story/2025-11-07/mountain-fire-cause)
+58 minutes ago
+  * [ ![Scene in Lincoln Heights, where a man running from police fell into a 30-foot hole a construction site.](https://ca-times.brightspotcdn.com/dims4/default/e22e19d/2147483647/strip/true/crop/3132x2088+318+0/resize/840x560!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F1b%2F16%2F4e608d474640a8a8963e737d1eb2%2Fla-me-man-rescued.JPG) ](https://www.latimes.com/california/story/2025-11-07/pursuit-suspect-hole-trapped)
+[California](https://www.latimes.com/california)
+###  [Suspect falls, traps himself in 30-foot hole during L.A. police chase](https://www.latimes.com/california/story/2025-11-07/pursuit-suspect-hole-trapped)
+Nov. 7, 2025
+  * [ ![Photo illustration of a graduate cap-gown portrait but a fingerprint replaces a face. Pinched fingers steal the fingerprint.](https://ca-times.brightspotcdn.com/dims4/default/ef74c41/2147483647/strip/true/crop/3000x2000+0+0/resize/840x560!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fb8%2F7e%2Fa50257394b8c861dbafec8f44c4c%2Fme-foreign-students-id-theft-ring.jpg) ](https://www.latimes.com/california/story/2025-11-07/former-international-scholars-become-prime-prey-for-l-a-identity-theft-ring)
+[California](https://www.latimes.com/california)
+###  [A shadowy L.A. crime ring is hijacking the IDs of foreign scholars, fraud expert says](https://www.latimes.com/california/story/2025-11-07/former-international-scholars-become-prime-prey-for-l-a-identity-theft-ring)
+Nov. 7, 2025
+
+
+### Podcasts 
+  * [ ![Podcast logo for Rebuilding LA](https://ca-times.brightspotcdn.com/dims4/default/3d9f3bb/2147483647/strip/true/crop/359x240+1+0/resize/320x214!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F7c%2F40%2F89ed286f48bf867830f3e5780504%2Fla25-rebuildingla-180x120.jpg) ](https://open.spotify.com/show/00jW0NrwKENp4dFeOJCIyL)
+###  [Rebuilding L.A.: Fire Prevention Looks Different in SoCal](https://open.spotify.com/show/00jW0NrwKENp4dFeOJCIyL)
+Why is California’s wildfire strategy wrong for SoCal? After massive blazes, the state changed its approach, but it only works for the north. Listen to find out what officials are doing wrong — and the surprising strategy they’re turning to next.
+  * [ ![Crimes of the Times logo](https://ca-times.brightspotcdn.com/dims4/default/9eee71d/2147483647/strip/true/crop/4486x3000+7+0/resize/320x214!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Ffc%2F4c%2F974f11404aaeafeff655c366b606%2Fla24-crimesofthetimes-9000x6000px.jpg) ](https://podcasts.apple.com/us/podcast/crimes-of-the-times/id1272970334)
+###  [Crimes of the Times: Satanic Panic: The Death of Ronald Baker](https://podcasts.apple.com/us/podcast/crimes-of-the-times/id1272970334)
+In 1990, UCLA student Ronald Baker was murdered in a railway tunnel. While his occult interests fueled “Satanic Panic” rumors, police found his killers knew him well — one had even carried his casket.
+  * [ ![The words L.A. Crimes superimposed on a city skyline](https://ca-times.brightspotcdn.com/dims4/default/481824d/2147483647/strip/true/crop/598x400+4+0/resize/320x214!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F57%2Fe2%2Ff48081114ea0bdeefc67498243ed%2Fla25-lacrimes-podcast-3x2.jpg) ](https://podcasts.apple.com/us/podcast/l-a-crimes/id1814405781)
+###  [L.A. Crimes: A Nearly Forgotten NorCal Rampage](https://podcasts.apple.com/us/podcast/l-a-crimes/id1814405781)
+A gunman targeted an elementary school in Rancho Tehama after a deadly rampage. The media barely covered it. Five years later, an L.A. Times reporter wants to know why.
+
+
+### Most Read in California 
+  * [ ![Los Angeles, CA - October 26: Travelers wait for their flights at Los Angeles International Airport on Monday, Nov. 3, 2025 in Los Angeles, CA. The Federal Aviation Administration issued a ground delay citing staffing shortages in Southern California's airspace, causing flight delays at LAX. \(Juliana Yamada / Los Angeles Times\)](https://ca-times.brightspotcdn.com/dims4/default/41ebd63/2147483647/strip/true/crop/8192x5461+0+1/resize/840x560!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F41%2F8c%2F6ba00d3c45e6807c1fe88984c606%2F1528605-me-lax-staffing-delays-jey-06.jpg) ](https://www.latimes.com/california/story/2025-11-07/faa-flight-cuts-airport-chaos-travelers-trace)
+[California](https://www.latimes.com/california)
+###  [Flights delayed, canceled as airport chaos begins: ‘People are just fed up’](https://www.latimes.com/california/story/2025-11-07/faa-flight-cuts-airport-chaos-travelers-trace)
+1 hour ago
+  * [ ![US Customs and Border Patrol Commander Gregory Bovino leaves federal court at Dirksen Federal Building after his hearing in Chicago, Illinois, on October 28, 2025. Bovino was ordered to appear in federal court for violating a temporary restraining order issued by District Judge Sara Ellis that orders immigration enforcement agents to limit use of tear gas and other crowd-suppression items except when there is an imminent threat. \(Photo by KAMIL KRZACZYNSKI / AFP\) \(Photo by KAMIL KRZACZYNSKI/AFP via Getty Images\)](https://ca-times.brightspotcdn.com/dims4/default/c6573a1/2147483647/strip/true/crop/4500x3000+0+1/resize/840x560!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fc0%2Ff8%2F102aa0be4f3aa32e38ff4dab3545%2Fgettyimages-2243384652.jpg) ](https://www.latimes.com/california/story/2025-11-06/fbi-alerts-police-agencies-about-masked-criminals-posing-as-ice-recommends-they-show-id)
+[California](https://www.latimes.com/california)
+###  [FBI urges ICE agents to identify themselves after string of impersonators commit crimes](https://www.latimes.com/california/story/2025-11-06/fbi-alerts-police-agencies-about-masked-criminals-posing-as-ice-recommends-they-show-id)
+Nov. 6, 2025
+  * [ ![Al Seib  Los Angeles Times OFFICIALS announced the indictment of 22 suspected MS-13 members Tuesday.](https://ca-times.brightspotcdn.com/dims4/default/35f9fba/2147483647/strip/true/crop/3600x2400+0+59/resize/840x560!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F38%2F35%2Fb399b9ab9de3a9768154cfabbb78%2Fimg-459388-me-ms13-indic-2-1-3r5kdoek.jpg) ](https://www.latimes.com/california/story/2025-11-07/ms-13-murder-in-the-mountains)
+[California](https://www.latimes.com/california)
+[For Subscribers](https://www.latimes.com/topic/for-la-times-subscribers)
+###  [MS-13 gangsters used mountains around L.A. as killing grounds, prosecutors say](https://www.latimes.com/california/story/2025-11-07/ms-13-murder-in-the-mountains)
+Nov. 7, 2025
+  * [ ![Riverside County Sheriff Chad Bianco as seen on February 17, 2025 in Riverside, California, left. \(Gina Ferazzi / Los Angeles Times\) Rep. Katie Porter, D-Calif., Tuesday, March 5, 2024, in Long Beach, Calif. \(AP Photo/Damian Dovarganes, File\)](https://ca-times.brightspotcdn.com/dims4/default/3e95bb3/2147483647/strip/true/crop/1350x900+25+0/resize/840x560!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F0c%2Ff3%2F6ed77e38475fa28e20a6f8983142%2Fla-times-berkeley-poll-on-2026-california-governors-race-2pack.jpg) ](https://www.latimes.com/california/story/2025-11-07/la-times-berkeley-poll-on-2026-california-governors-race)
+[California](https://www.latimes.com/california)
+###  [After outburst, Katie Porter’s support in the California governor’s race slips, new poll shows](https://www.latimes.com/california/story/2025-11-07/la-times-berkeley-poll-on-2026-california-governors-race)
+Nov. 7, 2025
+
+
+###  [Subscribers are Reading](https://www.latimes.com/topic/for-la-times-subscribers)
+  * Review
+###  [‘Sentimental Value’ flirts with Hollywood satire, but settles for art-house sniffles](https://www.latimes.com/entertainment-arts/movies/story/2025-11-06/sentimental-value-review-stellan-skarsgard-renate-reinsve-elle-fanning-joachim-trier)
+  * ###  [High school flag football: City Section scores, schedule](https://www.latimes.com/sports/highschool/story/2025-11-05/high-school-flag-football-city-section-scores)
+  * ###  [Months after fire in Altadena, determination turns to despair](https://www.latimes.com/california/story/2025-10-30/months-after-fires-distress-grows-a-network-of-thousands-pushes-for-help)
+  * [For Subscribers](https://www.latimes.com/topic/for-la-times-subscribers)
+###  [Drugged women, secret photos: Horrific details emerge as USC grad student confesses to police](https://www.latimes.com/california/story/2025-10-31/horrific-details-emerge-as-usc-grad-student-confesses-to-police)
+  * [For Subscribers](https://www.latimes.com/topic/for-la-times-subscribers)
+###  [‘I haven’t given my Japanese side its due’: Dave Roberts reflects ahead of Dodgers’ Tokyo opener](https://www.latimes.com/sports/dodgers/story/2025-03-13/dave-roberts-japanese-heritage-tokyo-opening-day)
+
+
+Advertisement
+### Latest California 
+  * ###  [Radioactive pollution still haunts Hunters Point in San Francisco](https://www.latimes.com/environment/story/2025-11-07/residents-wary-of-navy-protocols-after-radioactive-pollution-detected-at-hunters-point)
+11 minutes ago
+  * ###  [Facing Trump budget shortfalls and state cuts, UC seeks $130-million state loan](https://www.latimes.com/california/story/2025-11-07/uc-seeks-130-million-loan)
+1 hour ago
+  * ###  [A potential shift in California’s homelessness strategy?](https://www.latimes.com/california/story/2025-11-07/a-potential-shift-in-californias-homelessness-strategy)
+1 hour ago
+  * ###  [Housing Tracker: Southern California home values dip in September](https://www.latimes.com/california/story/2025-11-07/housing-tracker-southern-california-home-values-dip-in-september)
+Nov. 7, 2025
+  * ###  [Trump adds new reasons to deny visas to immigrants: obesity and other health issues](https://www.latimes.com/california/story/2025-11-07/immigrants-health-conditions-denied-visas-trump)
+Nov. 7, 2025
+
+
+Advertisement
+Advertisement
+Advertisement
+Advertisement
+Advertisement
+Advertisement
+Advertisement
+Advertisement
+Advertisement
+[](https://www.latimes.com/)
+![A California Times publication](https://ca-times.brightspotcdn.com/a6/d6/eea0f1094fb281dbea09e0aa79cd/art-caltimes-trademark-3x.png)
+[Subscribe for unlimited access](https://www.latimes.com/footersubscribe)  
+[Site Map](https://www.latimes.com/sitemap)
+Follow Us
+  * [ X ](https://x.com/latimes)
+  * [ Instagram ](https://www.instagram.com/latimes/)
+  * [ YouTube ](https://www.youtube.com/losangelestimes)
+  * [ Facebook ](https://www.facebook.com/latimes)
+
+
+  *     * [ eNewspaper](https://enewspaper.latimes.com)
+    * [ Find/Post Jobs](https://jobs.latimes.com)
+    * [ Place an Ad](https://placeanad.latimes.com)
+    * [ Media Kit: Why the L.A. Times? ](https://mediakit.latimes.com/)
+    * [ Invest Now: Own a Part of History](https://join.latimes.com/)
+  * MORE FROM THE L.A. TIMES 
+    * [ Crossword](https://www.latimes.com/games/daily-crossword)
+    * [ Obituaries](https://www.latimes.com/obituaries)
+    * [ Recipes](https://www.latimes.com/food/recipes)
+    * [ Guides](https://www.latimes.com/lifestyle/weekend)
+    * [ L.A. Times Store](https://store.latimes.com/)
+    * [ About/Contact](https://www.latimes.com/about)
+    * [ For the Record](https://www.latimes.com/about/for-the-record/)
+    * [ L.A. Times Careers](https://careers.latimes.com/)
+    * [ Manage Subscription](https://membership.latimes.com/)
+    * [ Reprints and Permissions](https://www.latimes.com/about/how-to-obtain-rights-permissions)
+
+
+Copyright © 2025, Los Angeles Times | [Terms of Service](https://www.latimes.com/terms-of-service) | [Privacy Policy](https://www.latimes.com/privacy-policy) | [CA Notice of Collection](https://www.latimes.com/privacy-policy#california-notice-of-collection) | [Do Not Sell or Share My Personal Information](https://membership.latimes.com/privacy-settings)

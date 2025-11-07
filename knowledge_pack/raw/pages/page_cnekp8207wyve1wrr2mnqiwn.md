@@ -1,0 +1,124 @@
+[Skip to main content](https://www.gulfshorebusiness.com/news/national/state-farm-to-start-selling-new-home-auto-and-other-policies-in-massachusetts-insurify/article_154273f2-d1d4-591d-be1b-1927be12ccbc.html#main-page-container)
+[![site-logo](https://bloximages.chicago2.vip.townnews.com/gulfshorebusiness.com/content/tncms/custom/image/d93231a5-1f68-4d46-b56f-f961242f84a3.png?resize=200%2C53)](https://www.gulfshorebusiness.com/)
+  * [ Facebook ](https://www.facebook.com/GulfshoreBusiness/)
+  * [ LinkedIn ](https://www.linkedin.com/company/gulfshore-business-magazine)
+  * [ Instagram ](https://www.instagram.com/gulfshorebusiness)
+
+
+Site search Search
+  * [ Sign Up ](https://www.gulfshorebusiness.com/users/signup/?referer_url=https%3A%2F%2Fwww.gulfshorebusiness.com%2Fnews%2Fnational%2Fstate-farm-to-start-selling-new-home-auto-and-other-policies-in-massachusetts-insurify%2Farticle_154273f2-d1d4-591d-be1b-1927be12ccbc.html)
+  * [ Log In ](https://www.gulfshorebusiness.com/users/login/?referer_url=https%3A%2F%2Fwww.gulfshorebusiness.com%2Fnews%2Fnational%2Fstate-farm-to-start-selling-new-home-auto-and-other-policies-in-massachusetts-insurify%2Farticle_154273f2-d1d4-591d-be1b-1927be12ccbc.html)
+
+
+  * [ Dashboard ](https://www.gulfshorebusiness.com/users/admin/)
+  * Logout 
+
+
+  *     * My Account
+    * [](https://www.gulfshorebusiness.com/users/admin/)
+    * [](https://www.gulfshorebusiness.com/news/national/state-farm-to-start-selling-new-home-auto-and-other-policies-in-massachusetts-insurify/article_154273f2-d1d4-591d-be1b-1927be12ccbc.html)
+    * [](https://www.gulfshorebusiness.com/users/admin/list/)
+    * 
+
+[Home](https://www.gulfshorebusiness.com/)
+  * [About Us](https://www.gulfshorebusiness.com/site/about.html)
+  * [Contact Us](https://www.gulfshorebusiness.com/site/contact.html)
+  * [Advertise](https://www.gulfshorebusiness.com/site/advertise.html)
+  * [Terms of Use](https://www.gulfshorebusiness.com/site/terms.html)
+  * [Privacy Policy](https://www.gulfshorebusiness.com/site/privacy.html)
+  * [Employment](https://gulfshorelife.applytojob.com/apply)
+
+
+[News](https://www.gulfshorebusiness.com/news/)
+  * [Real Estate](https://www.gulfshorebusiness.com/real_estate/)
+  * [Development](https://www.gulfshorebusiness.com/development/)
+  * [Hospitality](https://www.gulfshorebusiness.com/hospitality/)
+  * [Retail](https://www.gulfshorebusiness.com/retail/)
+  * [Tourism](https://www.gulfshorebusiness.com/tourism/)
+  * [Collier County](https://www.gulfshorebusiness.com/collier/)
+  * [Charlotte County](https://www.gulfshorebusiness.com/charlotte/)
+  * [Lee County](https://www.gulfshorebusiness.com/lee/)
+  * [Nonprofit](https://www.gulfshorebusiness.com/nonprofit/)
+  * [Environment](https://www.gulfshorebusiness.com/environment/)
+  * [Innovation](https://www.gulfshorebusiness.com/innovation/)
+  * [Infrastructure](https://www.gulfshorebusiness.com/infrastructure/)
+  * [Education](https://www.gulfshorebusiness.com/education/)
+  * [Health Care](https://www.gulfshorebusiness.com/health-care/)
+
+
+[GB Daily](https://www.gulfshorebusiness.com/gb-daily/)
+[Inside the Magazine](https://www.gulfshorebusiness.com/inside-the-magazine/)
+[40 Under 40](https://www.gulfshorebusiness.com/40-under-40/)
+[Women in Business](https://www.gulfshorebusiness.com/women-in-business/)
+[Best Places to Work](https://bestcompaniesgroup.com/best-places-to-work-in-southwest-florida/)
+[Best of Business](https://www.gulfshorebusiness.com/best-of-business/)
+[Giving Guide](https://www.gulfshorebusiness.com/giving-guide/)
+  * [ Facebook ](https://www.facebook.com/GulfshoreBusiness/)
+  * [ LinkedIn ](https://www.linkedin.com/company/gulfshore-business-magazine)
+  * [ Instagram ](https://www.instagram.com/gulfshorebusiness)
+
+
+Friday, November 7, 2025 
+[![site-logo](https://bloximages.chicago2.vip.townnews.com/gulfshorebusiness.com/content/tncms/custom/image/9abe4503-e0a1-4a29-b9dd-9d0cc04c6020.png?resize=200%2C63)](https://www.gulfshorebusiness.com/)
+[Subscribe](https://simplecirc.com/subscribe/gulfshore-business)
+Menu
+[![site-logo](https://bloximages.chicago2.vip.townnews.com/gulfshorebusiness.com/content/tncms/custom/image/33614eaa-6fec-4350-a9d6-4912c11665c4.png?resize=200%2C63)](https://www.gulfshorebusiness.com/)
+  *     * Search 
+
+
+  * [ Sign Up ](https://www.gulfshorebusiness.com/users/signup/?referer_url=https%3A%2F%2Fwww.gulfshorebusiness.com%2Fnews%2Fnational%2Fstate-farm-to-start-selling-new-home-auto-and-other-policies-in-massachusetts-insurify%2Farticle_154273f2-d1d4-591d-be1b-1927be12ccbc.html)
+  * [ Log In ](https://www.gulfshorebusiness.com/users/login/?referer_url=https%3A%2F%2Fwww.gulfshorebusiness.com%2Fnews%2Fnational%2Fstate-farm-to-start-selling-new-home-auto-and-other-policies-in-massachusetts-insurify%2Farticle_154273f2-d1d4-591d-be1b-1927be12ccbc.html)
+
+
+  * [ Dashboard ](https://www.gulfshorebusiness.com/users/admin/)
+  * Logout 
+
+
+  *     * My Account
+    * [](https://www.gulfshorebusiness.com/users/admin/)
+    * [](https://www.gulfshorebusiness.com/news/national/state-farm-to-start-selling-new-home-auto-and-other-policies-in-massachusetts-insurify/article_154273f2-d1d4-591d-be1b-1927be12ccbc.html)
+    * [](https://www.gulfshorebusiness.com/users/admin/list/)
+    * 
+
+  *     * Site search Search
+
+
+  * [ Home ](https://www.gulfshorebusiness.com/)
+  * [ GB Daily ](https://www.gulfshorebusiness.com/gb-daily/)
+  * [ Inside the Magazine ](https://www.gulfshorebusiness.com/inside-the-magazine/)
+  * [ Construction & Development ](https://www.gulfshorebusiness.com/development/)
+  * [ Hospitality ](https://www.gulfshorebusiness.com/hospitality/)
+  * [ Real Estate ](https://www.gulfshorebusiness.com/real_estate/)
+  * [ Tourism ](https://www.gulfshorebusiness.com/tourism/)
+  * [ 40 Under 40 ](https://www.gulfshorebusiness.com/40-under-40/)
+
+
+[![Best Places to Work 2025 nominations 728X90](https://cdn.broadstreetads.com/assets/aafb9943-773c-4382-b84f-1db7a0d4d94d.jpg)](https://bestcompaniesgroup.com/best-places-to-work-in-southwest-florida/ "Best Places to Work 2025 nominations 728X90")
+## Sorry, the page you're looking for cannot be found.
+404
+The page may have moved, you may have mistyped the address, or followed a bad link.
+Visit our [homepage](https://www.gulfshorebusiness.com/), or search for whatever you were looking for…
+[![site-logo](https://bloximages.chicago2.vip.townnews.com/gulfshorebusiness.com/content/tncms/custom/image/f7b2e7e6-9f9a-418e-97b3-c70df46ac994.png?resize=200%2C53)](https://www.gulfshorebusiness.com/)
+  * [ Facebook ](https://www.facebook.com/GulfshoreBusiness/)
+  * [ LinkedIn ](https://www.linkedin.com/company/gulfshore-business-magazine)
+  * [ Instagram ](https://www.instagram.com/gulfshorebusiness)
+
+
+####  Services 
+  * [ Contact Us ](https://www.gulfshorebusiness.com/site/contact.html)
+  * [ Search ](https://www.gulfshorebusiness.com/search/)
+  * [ Magazine Subscription ](https://simplecirc.com/subscribe/gulfshore-business)
+  * [ Single Issues ](https://simplecirc.com/shop/gulfshore-business/back-issues)
+  * [ Employment Opportunities ](https://gulfshorelife.applytojob.com/apply)
+  * [ Plaques and Reprints ](https://newskeepsake.com/pages/gulfshore-life-magazine)
+  * [ Advertise ](https://www.gulfshorebusiness.com/site/advertise.html/)
+  * [ Local Events ](https://www.gulfshorebusiness.com/local-events/)
+
+
+×
+#### Browser Compatibility
+Your browser is out of date and potentially vulnerable to security risks.  
+We recommend switching to one of the following browsers:
+[](https://www.microsoft.com/en-us/edge) [](https://www.google.com/chrome/) [](https://www.mozilla.org/en-US/firefox/)
+© Copyright 2025 [Gulfshore Business](https://www.gulfshorebusiness.com/) 26101 S. Tamiami Trail, Bonita Springs, FL | [Terms of Use](https://www.gulfshorebusiness.com/site/terms.html) | [Privacy Policy](https://www.gulfshorebusiness.com/site/privacy.html)
+Powered by [BLOX Content Management System](https://bloxcms.com "BLOX Content Management System") from [BLOX Digital](https://bloxdigital.com/ "BLOX Digital").

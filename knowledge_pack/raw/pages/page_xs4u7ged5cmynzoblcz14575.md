@@ -1,0 +1,223 @@
+Opens in a new window Opens an external website Opens an external website in a new window
+This website utilizes technologies such as cookies to enable essential site functionality, as well as for analytics, personalization, and targeted advertising.  [Privacy Policy](https://www.thezebra.com/about/help/privacy/)
+Accept  Deny Non-Essential 
+<!---->Close Cookie Preferences<!----> 
+[ Skip to content ](https://www.thezebra.com/auto-insurance/florida-car-insurance/state-laws-fl/#main)
+[ The Zebra® ](https://www.thezebra.com/)
+The Zebra doesn't support your browser version, so please give us a call or [upgrade your browser](http://browsehappy.com/?locale=en) to the latest version.
+Use of Insurance Zebra Insurance Services (DBA TheZebra.com) is subject to our [Terms of Service](https://www.thezebra.com/about/help/terms/).  
+Copyright © 2025 Insurance Zebra. All Rights Reserved. [View Licenses](https://www.thezebra.com/about/help/terms/#licenses). [Privacy Policy.](https://www.thezebra.com/about/help/privacy/)
+open/close navigation menu
+[ The Zebra® The Zebra® ](https://www.thezebra.com/)
+[ Account ](https://www.thezebra.com/auto-insurance/florida-car-insurance/state-laws-fl/)
+  * [Log in to my dashboard](https://www.thezebra.com/account/api/v1/account-login/?login_location=Florida%20Car%20Insurance%20Laws%20%28Updated%202025%29%20%7C%20The%20Zebra)
+
+
+[ Shop Chevron down icon ](https://www.thezebra.com/auto-insurance/florida-car-insurance/state-laws-fl/)
+  * [ Auto Insurance ](https://www.thezebra.com/auto-insurance/)
+  * [ Home Insurance ](https://www.thezebra.com/homeowners-insurance/)
+  * [ Renters Insurance ](https://www.thezebra.com/renters-insurance/)
+  * [ Life Insurance ](https://www.thezebra.com/life-insurance/)
+  * [ Pet Insurance ](https://www.thezebra.com/pet-insurance/)
+  * [ Other Insurance ](https://www.thezebra.com/other-insurance-types/)
+
+
+[ Compare Chevron down icon ](https://www.thezebra.com/auto-insurance/florida-car-insurance/state-laws-fl/)
+  * [ Free Car Insurance Quotes ](https://www.thezebra.com/car-insurance-quotes/)
+  * [ Best Car Insurance Companies ](https://www.thezebra.com/insurance-companies/best-car-insurance-companies/)
+  * [ Best Home Insurance Companies ](https://www.thezebra.com/insurance-companies/homeowners/)
+  * [ Average Car Insurance Cost ](https://www.thezebra.com/auto-insurance/how-to-shop/average-auto-insurance/)
+  * [ Car Insurance By Vehicle ](https://www.thezebra.com/auto-insurance/vehicles/)
+
+
+[ Tools & Tips Chevron down icon ](https://www.thezebra.com/auto-insurance/florida-car-insurance/state-laws-fl/)
+  * [ Car Insurance Calculator ](https://www.thezebra.com/auto-insurance/coverage/car-insurance-calculator/)
+  * [ Insurance Claims Calculator ](https://www.thezebra.com/auto-insurance/accidents/car-insurance-claims/)
+  * [ Car Affordability Calculator ](https://www.thezebra.com/resources/driving/how-much-car-can-i-afford/)
+  * [ Auto Loan Payoff Calculator ](https://www.thezebra.com/resources/driving/auto-loan-payoff-calculator/)
+  * [ Resource Center ](https://www.thezebra.com/resources/)
+  * [ Ask an Agent ](https://www.thezebra.com/ask/)
+  * [ FAQs ](https://www.thezebra.com/about/faqs/)
+
+
+[ Company Chevron down icon ](https://www.thezebra.com/auto-insurance/florida-car-insurance/state-laws-fl/)
+  * [ About Us ](https://www.thezebra.com/about/)
+  * [ How The Zebra Works ](https://www.thezebra.com/about/how-the-zebra-works/)
+  * [ Our Insurance Agents ](https://www.thezebra.com/about/the-zebra-insurance-agency/)
+  * [ Reviews ](https://www.thezebra.com/about/the-zebra-reviews/)
+  * [ Careers ](https://www.thezebra.com/about/careers/)
+  * [ Contact Us ](https://www.thezebra.com/about/help/)
+
+
+[ Log in ](https://www.thezebra.com/account/api/v1/account-login/?login_location=Florida%20Car%20Insurance%20Laws%20%28Updated%202025%29%20%7C%20The%20Zebra)
+Our agents can help you save. [ Call icon 1.888.419.3716 ](tel:1-888-419-3716)
+Our agents can help you save. [ Call icon 1.888.419.3716 ](tel:1-888-419-3716)
+[ Call icon ](tel:1-888-419-3716)
+[Get Quotes](https://www.thezebra.com/auto-insurance/florida-car-insurance/state-laws-fl/)
+#  Florida Car Insurance Laws 
+The Zebra [partners](https://www.thezebra.com/about/partners/) with some of the companies we write about. However, our content is [written and reviewed](https://www.thezebra.com/about/editorial-standards/) by an independent team of [editors and licensed agents](https://www.thezebra.com/about/contributors/). Reference our [data methodology](https://www.thezebra.com/about/methodology/) and learn more about [how we make money](https://www.thezebra.com/about/how-the-zebra-works/).
+Jump to Chevron down icon
+  * [Auto insurance requirements in Florida](https://www.thezebra.com/auto-insurance/florida-car-insurance/state-laws-fl/#auto-insurance-requirements-in-florida)
+  * [Liability coverage in Florida](https://www.thezebra.com/auto-insurance/florida-car-insurance/state-laws-fl/#liability-coverage-in-florida)
+  * [Florida car insurance limits](https://www.thezebra.com/auto-insurance/florida-car-insurance/state-laws-fl/#florida-car-insurance-limits)
+  * [Florida penalties](https://www.thezebra.com/auto-insurance/florida-car-insurance/state-laws-fl/#florida-penalties)
+  * [Optional coverage in Florida](https://www.thezebra.com/auto-insurance/florida-car-insurance/state-laws-fl/#optional-coverage-in-florida)
+
+
+![Author profile picture](https://cdn.thezebra.com/zfront/media/production/images/Ross_compressed.2e16d0ba.fill-100x100.jpg)
+By [Ross Martin](https://www.thezebra.com/about/ross-martin/) [](https://www.thezebra.com/auto-insurance/florida-car-insurance/state-laws-fl/)
+Updated November 3, 2025 
+[Mark Friedlander](https://www.thezebra.com/about/mark-friedlander/) [](https://www.thezebra.com/auto-insurance/florida-car-insurance/state-laws-fl/)
+[Kristine Lee](https://www.thezebra.com/about/kristine-lee/) [](https://www.thezebra.com/auto-insurance/florida-car-insurance/state-laws-fl/)
+![Author profile picture](https://cdn.thezebra.com/zfront/media/production/images/Ross_compressed.2e16d0ba.fill-100x100.jpg)
+### Ross Martin
+Insurance Writer
+Ross joined The Zebra as a writer and researcher in 2019. He specialized in writing insurance content to help shoppers make informed decisions.
+Ross h…
+  * 5+ years in the Insurance Industry
+
+
+[ View full profile Right arrow icon ](https://www.thezebra.com/about/ross-martin/)
+Close icon
+![Author profile picture](https://cdn.thezebra.com/zfront/media/production/images/Friedlander_Hi-Res_2.2e16d0ba.fill-100x100.jpg)
+### Mark Friedlander
+Director, Corporate Communications, Insurance Information Institute
+Mark Friedlander has over 30 years of experience in the insurance industry. He is the Director, Corporate Communications, at the Insurance Informatio…
+[ View full profile Right arrow icon ](https://www.thezebra.com/about/mark-friedlander/)
+Close icon
+![Author profile picture](https://cdn.thezebra.com/zfront/media/production/images/IMG_20190308_144114_1_1.2e16d0ba.fill-100x100.jpg)
+### Kristine Lee
+Insurance Analyst
+Kristine is a licensed insurance agent who joined The Zebra in 2019 as an in-house content researcher and writer. Before joining The Zebra, she was a…
+  * Licensed Insurance Agent — Property and Casualty
+  * 6+ years of Experience in the Insurance Industry
+
+
+[ View full profile Right arrow icon ](https://www.thezebra.com/about/kristine-lee/)
+Close icon
+Jump to Chevron down icon
+  1. [Auto insurance requirements in Florida](https://www.thezebra.com/auto-insurance/florida-car-insurance/state-laws-fl/#auto-insurance-requirements-in-florida)
+  2. [Liability coverage in Florida](https://www.thezebra.com/auto-insurance/florida-car-insurance/state-laws-fl/#liability-coverage-in-florida)
+  3. [Florida car insurance limits](https://www.thezebra.com/auto-insurance/florida-car-insurance/state-laws-fl/#florida-car-insurance-limits)
+  4. [Florida penalties](https://www.thezebra.com/auto-insurance/florida-car-insurance/state-laws-fl/#florida-penalties)
+  5. [Optional coverage in Florida](https://www.thezebra.com/auto-insurance/florida-car-insurance/state-laws-fl/#optional-coverage-in-florida)
+
+
+## Auto insurance requirements in Florida
+[Florida](https://www.thezebra.com/auto-insurance/florida-car-insurance/) law requires that all drivers must carry certain amounts of car insurance coverage. However, as a no-fault state, the requirements for Florida drivers are quite different than in many states. Bodily injury liability coverage is one such requirement; a mandatory coverage in most states, Florida car insurance laws do not require it, instead relying on [personal injury protection](https://www.thezebra.com/auto-insurance/insurance-guide/pip-insurance/) (PIP) to cover injuries.
+Below you’ll find the minimum car insurance requirements for the state of Florida. Keep in mind that those who [finance](https://www.thezebra.com/auto-insurance/vehicles/car-insurance-financed-vehicle/) or [lease](https://www.thezebra.com/auto-insurance/vehicles/car-insurance-leased-vehicle/) a car could face additional requirements from a lender or leasing company. 
+#### What about bodily injury coverage?
+Florida is a [no-fault state](https://www.thezebra.com/auto-insurance/insurance-guide/what-no-fault-insurance/). This means your own personal injury protection (PIP) insurance provides coverage up to policy limits, regardless of who is at fault. Unlike most states, residents of Florida are not required to have bodily injury liability, as PIP coverage handles relevant medical costs. However, PIP insurance does not cover pain and suffering, which must be sought through the legal system.
+Property Damage Liability (PDL) | Personal Injury Protection (PIP)  
+---|---  
+$10,000  |  $10,000   
+* * *
+## Liability coverage in Florida
+If you cause an accident, [liability insurance](https://www.thezebra.com/auto-insurance/coverage/liability-insurance/) covers those injured or who suffer damages. Liability insurance never covers your injuries or damages to your property. It pays the other driver only. [Property damage liability](https://www.thezebra.com/auto-insurance/insurance-guide/property-damage-liability/) will cover the cost of any damage caused to another vehicle by you. The at-fault driver is still responsible for paying for property damage caused, though the $10,000 limit is quite low.[[1]](https://www.thezebra.com/auto-insurance/arizona-car-insurance/state-laws-az/#footnote-1) As such, it’s a good idea to increase these limits to avoid being at risk.
+> In Florida, the minimum coverage required is listed as —/—/10 and is explained in more detail below.
+## What are Florida's state-mandated car insurance _limits_?
+Nearly all states require a minimum amount of insurance to be legally allowed to drive on the roads. The  _limit_ is simply the lowest amount of coverage that you can carry and still be legal. These limits can be increased for a relatively low addition to your premium. The state of Florida requires every driver to maintain a minimum amount of liability insurance in the $10,000 listed previously.
+### Do Florida's required minimums provide enough coverage?
+* * *
+Florida’s car insurance minimums are quite low. For this reason, it’s highly recommended that drivers obtain coverage above the state-mandated limits. Low minimum coverage limits may not adequately cover most costs. This can leave you at risk of having to cover the remainder of these expenses out of pocket.
+Drivers may also file a claim for compensation for any injuries that exceed the cost of their own PIP policy. If the at-fault driver causes injuries over a certain amount, it’s possible for the victim to sue. Without bodily injury liability, you could be on the line for damages.
+This can be the case if you cause an accident in Florida resulting in the permanent injury of another driver. According to the Florida legislature, you can be sued if you cause one of the following situations:
+  * Significant and permanent loss of an important bodily function
+  * Permanent injury within a reasonable degree of medical probability, other than scarring or disfigurement
+  * Significant and permanent scarring or disfigurement
+  * Death
+
+
+Also, a $10,000 limit for personal property liability won’t go far if you were to damage a high-value car. The most that your insurance will pay out for property damage for any single accident is $10,000. $10,000 wouldn’t even cover half the cost of the average new vehicle. For this reason, it’s highly encouraged that all drivers carry higher amounts of property damage liability insurance.
+### Florida is a diminished value state
+Florida is a diminished value state, meaning drivers are allowed to recover [diminished value](https://www.thezebra.com/auto-insurance/accidents/diminished-value-claims/) from the at-fault party’s insurance company. When your vehicle experiences an accident, even if it is fully repaired to its pre-loss condition, the resale value decreases. The involvement in a collision makes your car’s value lesser than similar vehicles that have not experienced an accident. A diminished value claim allows you to recoup the losses you might experience when selling your car. 
+Since Florida is one of the 15 states that offer compensation for diminution in value, you may file by contacting the at-fault party’s insurer. In order to file a diminished value claim in Florida, certain requirements must be met.
+#### FL diminished value claim requirements:
+  * You must be not at fault for the accident
+  * You must provide documentation (photos, repairs record, and proof of vehicle value from a trusted source) 
+  * You must file within 4 years of the accident
+
+
+* * *
+## Florida's penalties for driving without proof of insurance
+Drivers who operate a motor vehicle without the proper auto insurance coverage can face steep penalties, including the loss of your driving privileges. Penalties for failure to show [proof of insurance](https://www.thezebra.com/auto-insurance/insurance-guide/proof-of-insurance/) in Florida are as follows.
+| Reinstatement fee | Other Penalties  
+---|---|---  
+1st offense  |  $150  |  Driver’s license and registration suspended for up to three years.   
+2nd offense  |  $250  |  Driver’s license and registration suspended for up to three years.   
+3rd offense  |  $500  |  Driver’s license and registration suspended for up to three years.   
+Of course, if you cause an accident without insurance, the penalties above can pale in comparison to the amounts you’ll be required to pay.
+* * *
+## Optional car insurance coverage in Florida
+Florida law only requires that you carry coverage in the amounts listed above. However, the following coverages are great add-ons to your [insurance policy](https://www.thezebra.com/auto-insurance/policies/) if you are looking for more coverage:
+  * **[Bodily injury liability](https://www.thezebra.com/auto-insurance/insurance-guide/bodily-injury-liability/):** This coverage goes toward covering the medical expenses of those injured as a result of an accident you caused. Required in most states, adding this coverage can be a good idea in Florida due to the low amounts of PIP coverage required by the state. 
+  * **[Collision](https://www.thezebra.com/auto-insurance/insurance-guide/collision-insurance/)****:** This coverage steps in to cover your vehicle if you are involved in a collision with another driver or object (aside from animals). 
+  * **[Comprehensive](https://www.thezebra.com/auto-insurance/insurance-guide/comprehensive-insurance/)****:** Comprehensive insurance protects your vehicle against non-collision damages. This includes perils like theft, weather damage, and hitting an animal. Comprehensive and collision coverage — when purchased together — are typically referred to as “full coverage.” These coverages may be required by some lenders or lien-holders if you are financing your vehicle.
+  * **[Medical payments](https://www.thezebra.com/auto-insurance/insurance-guide/medical-payments-coverage-auto-insurance/)****:** This coverage goes toward paying the medical bills and expenses of you and your passengers in the event of a car accident.
+  * **[Roadside assistance](https://www.thezebra.com/auto-insurance/coverage/roadside-assistance-comparison/)****:** If you find yourself broken down, this coverage steps in to help. The particulars of the coverage differ with each company, but you can typically expect roadside assistance to fix a flat tire, jump a dead battery, and cover the cost of a tow to a nearby garage, among other perks. 
+  * **[Uninsured/underinsured motorist coverage](https://www.thezebra.com/auto-insurance/insurance-guide/uninsured-motorist-coverage/)****:** As the name implies, this coverage protects you in the event you are hit by a motorist who does not carry insurance — or doesn’t carry enough. 
+
+
+* * *
+## Why adhering to Florida's car insurance requirements is important
+Florida insurance laws are in place to protect you, your assets, and other drivers. Adhering to these requirements keeps you legal and can give you the peace of mind that you won’t be held personally liable for damages or injuries that you might cause. Of course, it’s always a good idea to increase your coverage limits to an amount you can afford and to add extra coverage that can cover your own vehicle. The best way to find affordable coverage is to compare insurance quotes from different companies. The Zebra can help you find quotes from a number of top insurers so that you can find a policy to fit your needs.
+Ready to start saving? 
+Location pin icon
+ZIP code
+Start  Start 
+!
+This ZIP code is invalid. 
+No junk mail. No spam calls. Free quotes. 
+Sources
+  1. [FLHSMV](https://www.flhsmv.gov/insurance/)
+
+
+#### Related content
+  * [High-Risk Driver Car Insurance in Florida](https://www.thezebra.com/auto-insurance/florida-car-insurance/high-risk-drivers/)
+  * [Car Insurance in Hollywood, FL](https://www.thezebra.com/auto-insurance/florida-car-insurance/hollywood-fl-car-insurance/)
+  * [Car Insurance in Tampa, FL](https://www.thezebra.com/auto-insurance/florida-car-insurance/tampa-fl-car-insurance/)
+  * [Car Insurance in Port St. Lucie, FL](https://www.thezebra.com/auto-insurance/florida-car-insurance/port-st-lucie-fl-car-insurance/)
+  * [Plantation, FL Car Insurance](https://www.thezebra.com/auto-insurance/florida-car-insurance/plantation-fl-car-insurance/)
+  * [Miramar, FL Car Insurance](https://www.thezebra.com/auto-insurance/florida-car-insurance/miramar-fl-car-insurance/)
+  * [Car Insurance in Gainesville, FL](https://www.thezebra.com/auto-insurance/florida-car-insurance/gainesville-fl-car-insurance/)
+  * [Car Insurance in Fort Lauderdale, FL](https://www.thezebra.com/auto-insurance/florida-car-insurance/fort-lauderdale-fl-car-insurance/)
+  * [Car Insurance in Jacksonville, FL](https://www.thezebra.com/auto-insurance/florida-car-insurance/jacksonville-fl-car-insurance/)
+  * [Car Insurance with a DUI in Florida](https://www.thezebra.com/auto-insurance/florida-car-insurance/fl-dui-auto-insurance/)
+
+
+  1. [ The Zebra ](https://www.thezebra.com/) Next
+  2. [ Cheap Car Insurance ](https://www.thezebra.com/auto-insurance/) Next
+  3. [ Florida Car Insurance ](https://www.thezebra.com/auto-insurance/florida-car-insurance/) Next
+  4. [ Florida Car Insurance Laws ](https://www.thezebra.com/auto-insurance/florida-car-insurance/state-laws-fl/)
+
+
+#### About The Zebra
+The Zebra is not an insurance company. We publish data-backed, expert-reviewed resources to help consumers make more informed insurance decisions.
+  * The Zebra’s insurance content is written and reviewed for accuracy by licensed insurance agents.
+  * The Zebra’s insurance editorial content is not subject to review or alteration by insurance companies or partners.
+  * The Zebra’s editorial team operates independently of the company’s partnerships and commercialization interests, publishing unbiased information for consumer benefit.
+  * The auto insurance rates published on The Zebra’s pages are based on a comprehensive analysis of car insurance pricing data, evaluating more than 83 million insurance rates from across the United States.
+
+
+[Resources](https://www.thezebra.com/resources/)
+[Cheap Liability Insurance](https://www.thezebra.com/auto-insurance/coverage/liability-insurance/) [Cheap Full Coverage Insurance](https://www.thezebra.com/auto-insurance/coverage/best-full-coverage-auto-insurance/) [Car Insurance Guide](https://www.thezebra.com/auto-insurance/insurance-guide/) [Home Insurance Guide](https://www.thezebra.com/homeowners-insurance/guide/) [Best Cheap Car Insurance](https://www.thezebra.com/auto-insurance/how-to-shop/best-cheap-auto-insurance/) [Best Cheap Home Insurance](https://www.thezebra.com/homeowners-insurance/rating-factors/best-cheap-homeowners-insurance/) [Cheap Insurance Rates by City](https://www.thezebra.com/auto-insurance/how-to-shop/car-insurance-rates-city/) [Insurance Bundling](https://www.thezebra.com/best-home-and-car-insurance/) [Sitemap](https://www.thezebra.com/sitemap/)
+[Insurance Companies](https://www.thezebra.com/insurance-companies/)
+[USAA](https://www.thezebra.com/insurance-companies/usaa-reviews-coverage-options-and-ratings/) [Progressive](https://www.thezebra.com/insurance-companies/progressive-reviews-coverage-options-and-ratings/) [Progressive vs Safeco](https://www.thezebra.com/insurance-companies/progressive-vs-safeco/) [State Farm vs Progressive](https://www.thezebra.com/insurance-companies/progressive-vs-state-farm/)
+[Esurance](https://www.thezebra.com/insurance-companies/esurance-reviews-coverage-options-and-ratings/) [State Farm](https://www.thezebra.com/insurance-companies/state-farm-reviews-coverage-options-and-ratings/) [State Farm vs Allstate](https://www.thezebra.com/insurance-companies/state-farm-vs-allstate/) [Progressive vs The General](https://www.thezebra.com/insurance-companies/progressive-vs-the-general/)
+[Erie](https://www.thezebra.com/insurance-companies/erie-insurance-reviews-coverage-options-and-ratings/) [Travelers](https://www.thezebra.com/insurance-companies/travelers-insurance-reviews-coverage-options-and-ratings/) [Metromile vs Root](https://www.thezebra.com/insurance-companies/metromile-vs-root/) [USAA vs Progressive](https://www.thezebra.com/insurance-companies/usaa-vs-progressive/)
+[Metlife](https://www.thezebra.com/insurance-companies/metlife-reviews-coverage-options-and-ratings/) [Nationwide](https://www.thezebra.com/insurance-companies/nationwide-reviews-coverage-options-and-ratings/) [State Farm vs AAA](https://www.thezebra.com/insurance-companies/state-farm-vs-aaa/) [Progressive vs Allstate](https://www.thezebra.com/insurance-companies/progressive-vs-allstate/)
+[Insurance By State](https://www.thezebra.com/states/)
+[Auto Insurance:](https://www.thezebra.com/auto-insurance/) [AL](https://www.thezebra.com/auto-insurance/alabama-car-insurance/) [AK](https://www.thezebra.com/auto-insurance/alaska-car-insurance/) [AZ](https://www.thezebra.com/auto-insurance/arizona-car-insurance/) [AR](https://www.thezebra.com/auto-insurance/arkansas-car-insurance/) [CA](https://www.thezebra.com/auto-insurance/california-car-insurance/) [CO](https://www.thezebra.com/auto-insurance/colorado-car-insurance/) [CT](https://www.thezebra.com/auto-insurance/connecticut-car-insurance/) [DC](https://www.thezebra.com/auto-insurance/washington-dc-car-insurance/) [DE](https://www.thezebra.com/auto-insurance/delaware-car-insurance/) [FL](https://www.thezebra.com/auto-insurance/florida-car-insurance/) [GA](https://www.thezebra.com/auto-insurance/georgia-car-insurance/) [HI](https://www.thezebra.com/auto-insurance/hawaii-car-insurance/) [ID](https://www.thezebra.com/auto-insurance/idaho-car-insurance/) [IL](https://www.thezebra.com/auto-insurance/illinois-car-insurance/) [IN](https://www.thezebra.com/auto-insurance/indiana-car-insurance/) [IA](https://www.thezebra.com/auto-insurance/iowa-car-insurance/) [KS](https://www.thezebra.com/auto-insurance/kansas-car-insurance/) [KY](https://www.thezebra.com/auto-insurance/kentucky-car-insurance/) [LA](https://www.thezebra.com/auto-insurance/louisiana-car-insurance/) [ME](https://www.thezebra.com/auto-insurance/maine-car-insurance/) [MD](https://www.thezebra.com/auto-insurance/maryland-car-insurance/) [MA](https://www.thezebra.com/auto-insurance/massachusetts-car-insurance/) [MI](https://www.thezebra.com/auto-insurance/michigan-car-insurance/) [MN](https://www.thezebra.com/auto-insurance/minnesota-car-insurance/) [MS](https://www.thezebra.com/auto-insurance/mississippi-car-insurance/) [MO](https://www.thezebra.com/auto-insurance/missouri-car-insurance/) [MT](https://www.thezebra.com/auto-insurance/montana-car-insurance/) [NE](https://www.thezebra.com/auto-insurance/nebraska-car-insurance/) [NV](https://www.thezebra.com/auto-insurance/nevada-car-insurance/) [NH](https://www.thezebra.com/auto-insurance/new-hampshire-car-insurance/) [NJ](https://www.thezebra.com/auto-insurance/new-jersey-car-insurance/) [NM](https://www.thezebra.com/auto-insurance/new-mexico-car-insurance/) [NY](https://www.thezebra.com/auto-insurance/new-york-car-insurance/) [NC](https://www.thezebra.com/auto-insurance/north-carolina-car-insurance/) [ND](https://www.thezebra.com/auto-insurance/north-dakota-car-insurance/) [OH](https://www.thezebra.com/auto-insurance/ohio-car-insurance/) [OK](https://www.thezebra.com/auto-insurance/oklahoma-car-insurance/) [OR](https://www.thezebra.com/auto-insurance/oregon-car-insurance/) [PA](https://www.thezebra.com/auto-insurance/pennsylvania-car-insurance/) [RI](https://www.thezebra.com/auto-insurance/rhode-island-car-insurance/) [SC](https://www.thezebra.com/auto-insurance/south-carolina-car-insurance/) [SD](https://www.thezebra.com/auto-insurance/south-dakota-car-insurance/) [TN](https://www.thezebra.com/auto-insurance/tennessee-car-insurance/) [TX](https://www.thezebra.com/auto-insurance/texas-car-insurance/) [UT](https://www.thezebra.com/auto-insurance/utah-car-insurance/) [VT](https://www.thezebra.com/auto-insurance/vermont-car-insurance/) [VA](https://www.thezebra.com/auto-insurance/virginia-car-insurance/) [WA](https://www.thezebra.com/auto-insurance/washington-car-insurance/) [WV](https://www.thezebra.com/auto-insurance/west-virginia-car-insurance/) [WI](https://www.thezebra.com/auto-insurance/wisconsin-car-insurance/) [WY](https://www.thezebra.com/auto-insurance/wyoming-car-insurance/) [| Home Insurance:](https://www.thezebra.com/homeowners-insurance/) [AL](https://www.thezebra.com/homeowners-insurance/alabama-home-insurance/) [AK](https://www.thezebra.com/homeowners-insurance/alaska-home-insurance/) [AZ](https://www.thezebra.com/homeowners-insurance/arizona-home-insurance/) [AR](https://www.thezebra.com/homeowners-insurance/arkansas-home-insurance/) [CA](https://www.thezebra.com/homeowners-insurance/california-home-insurance/) [CO](https://www.thezebra.com/homeowners-insurance/colorado-home-insurance/) [CT](https://www.thezebra.com/homeowners-insurance/connecticut-home-insurance/) [DC](https://www.thezebra.com/homeowners-insurance/washington-dc-home-insurance/) [DE](https://www.thezebra.com/homeowners-insurance/delaware-home-insurance/) [FL](https://www.thezebra.com/homeowners-insurance/florida-home-insurance/) [GA](https://www.thezebra.com/homeowners-insurance/georgia-home-insurance/) [HI](https://www.thezebra.com/homeowners-insurance/hawaii-home-insurance/) [ID](https://www.thezebra.com/homeowners-insurance/idaho-home-insurance/) [IL](https://www.thezebra.com/homeowners-insurance/illinois-home-insurance/) [IN](https://www.thezebra.com/homeowners-insurance/indiana-home-insurance/) [IA](https://www.thezebra.com/homeowners-insurance/iowa-home-insurance/) [KS](https://www.thezebra.com/homeowners-insurance/kansas-home-insurance/) [KY](https://www.thezebra.com/homeowners-insurance/kentucky-home-insurance/) [LA](https://www.thezebra.com/homeowners-insurance/louisiana-home-insurance/) [ME](https://www.thezebra.com/homeowners-insurance/maine-home-insurance/) [MD](https://www.thezebra.com/homeowners-insurance/maryland-home-insurance/) [MA](https://www.thezebra.com/homeowners-insurance/massachusetts-home-insurance/) [MI](https://www.thezebra.com/homeowners-insurance/michigan-home-insurance/) [MN](https://www.thezebra.com/homeowners-insurance/minnesota-home-insurance/) [MS](https://www.thezebra.com/homeowners-insurance/mississippi-home-insurance/) [MO](https://www.thezebra.com/homeowners-insurance/missouri-home-insurance/) [MT](https://www.thezebra.com/homeowners-insurance/montana-home-insurance/) [NE](https://www.thezebra.com/homeowners-insurance/nebraska-home-insurance/) [NV](https://www.thezebra.com/homeowners-insurance/nevada-home-insurance/) [NH](https://www.thezebra.com/homeowners-insurance/new-hampshire-home-insurance/) [NJ](https://www.thezebra.com/homeowners-insurance/new-jersey-home-insurance/) [NM](https://www.thezebra.com/homeowners-insurance/new-mexico-home-insurance/) [NY](https://www.thezebra.com/homeowners-insurance/new-york-home-insurance/) [NC](https://www.thezebra.com/homeowners-insurance/north-carolina-home-insurance/) [ND](https://www.thezebra.com/homeowners-insurance/north-dakota-home-insurance/) [OH](https://www.thezebra.com/homeowners-insurance/ohio-home-insurance/) [OK](https://www.thezebra.com/homeowners-insurance/oklahoma-home-insurance/) [OR](https://www.thezebra.com/homeowners-insurance/oregon-home-insurance/) [PA](https://www.thezebra.com/homeowners-insurance/pennsylvania-home-insurance/) [RI](https://www.thezebra.com/homeowners-insurance/rhode-island-home-insurance/) [SC](https://www.thezebra.com/homeowners-insurance/south-carolina-home-insurance/) [SD](https://www.thezebra.com/homeowners-insurance/south-dakota-home-insurance/) [TN](https://www.thezebra.com/homeowners-insurance/tennessee-home-insurance/) [TX](https://www.thezebra.com/homeowners-insurance/texas-home-insurance/) [UT](https://www.thezebra.com/homeowners-insurance/utah-home-insurance/) [VT](https://www.thezebra.com/homeowners-insurance/vermont-home-insurance/) [VA](https://www.thezebra.com/homeowners-insurance/virginia-home-insurance/) [WA](https://www.thezebra.com/homeowners-insurance/washington-home-insurance/) [WV](https://www.thezebra.com/homeowners-insurance/west-virginia-home-insurance/) [WI](https://www.thezebra.com/homeowners-insurance/wisconsin-home-insurance/) [WY](https://www.thezebra.com/homeowners-insurance/wyoming-home-insurance/)
+  * [About Us](https://www.thezebra.com/about/)
+  * [Press](https://www.thezebra.com/about/press-awards/)
+  * [We Are Hiring](https://www.thezebra.com/about/careers/)
+  * [Contact Us](https://www.thezebra.com/about/help/)
+
+
+Follow us on:
+[ Facebook icon The Zebra on Facebook ](https://www.facebook.com/TheZebraCo) [ X logo The Zebra on X ](https://www.x.com/TheZebraCo) [ The Zebra on Instagram ](https://www.instagram.com/TheZebraCo) [ Linkedin Icon The Zebra on LinkedIn ](https://www.linkedin.com/company/the-zebra)
+© 2025 Insurance Zebra. All Rights Reserved.
+[Terms of Service](https://www.thezebra.com/about/help/terms/) | [Privacy Policy](https://www.thezebra.com/about/help/privacy/) | [Licenses](https://www.thezebra.com/about/help/terms/#licenses) | [Cookie Preferences](https://www.thezebra.com/auto-insurance/florida-car-insurance/state-laws-fl/)
+Close icon
+Choose what kind of insurance you need
+[ Car We'll help you save hundreds. ](https://www.thezebra.com/insurance/car/zipentry/?insuranceline=auto) [ Car + Home ](https://www.thezebra.com/insurance/car/zipentry/?insuranceline=auto-home) [ Icon home Home ](https://www.thezebra.com/insurance/home/?insuranceline=home) [ Renters ](https://www.thezebra.com/insurance/renters/) [ Life ](https://www.thezebra.com/life-insurance/#get-life-insurance-quotes) [ Pet ](https://enroll.embracepetinsurance.com/thezebra/?brand=thezebra&utm_source=thezebra&utm_medium=partner&utm_campaign=unbounce&utm_content=main-tile) [ Motorcycle ](https://www.thezebra.com/recreational-insurance/%20) [ Commercial ](https://www.thezebra.com/small-business-insurance/commercial-auto-insurance/) [ Small Business ](https://www.thezebra.com/small-business-insurance/) [ Car + Renters ](https://www.thezebra.com/insurance/car/zipentry/?insuranceline=auto-renters) [ Recreational ](https://www.thezebra.com/recreational-insurance/)

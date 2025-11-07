@@ -1,0 +1,300 @@
+[Skip to content](https://www.investopedia.com/terms/p/preferred-auto-coverage.asp#main)
+[ Investopedia ](https://www.investopedia.com/)
+[Live](https://www.investopedia.com/dow-jones-today-11072025-11845583)
+  * Search
+Please fill out this field. 
+  * [Newsletters](https://www.investopedia.com/terms/p/preferred-auto-coverage.asp)
+
+
+Search
+Please fill out this field. 
+  * [ News ](https://www.investopedia.com/news-4427706)
+News
+    * [ Markets ](https://www.investopedia.com/markets-news-4427704)
+    * [ Companies ](https://www.investopedia.com/company-news-4427705)
+    * [ Earnings ](https://www.investopedia.com/earnings-reports-5218419)
+    * [ CD Rates ](https://www.investopedia.com/certificates-deposit-news-7111770)
+    * [ Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5184598)
+    * [ Economy ](https://www.investopedia.com/economic-news-5218422)
+    * [ Government ](https://www.investopedia.com/political-news-4689737)
+    * [ Crypto ](https://www.investopedia.com/cryptocurrency-news-5114163)
+    * [ Live Markets News ](https://www.investopedia.com/live-markets-news-11713202)
+    * [ Personal Finance ](https://www.investopedia.com/personal-finance-news-5114159)
+    * [ View All ](https://www.investopedia.com/news-4427706)
+  * [ Investing ](https://www.investopedia.com/investing-4427685)
+Investing
+    * [ Stocks ](https://www.investopedia.com/stocks-4427785)
+    * [ Cryptocurrency ](https://www.investopedia.com/cryptocurrency-4427699)
+    * [ Bonds ](https://www.investopedia.com/bonds-4689778)
+    * [ ETFs ](https://www.investopedia.com/etfs-4427784)
+    * [ Options and Derivatives ](https://www.investopedia.com/options-and-derivatives-trading-4689663)
+    * [ Commodities ](https://www.investopedia.com/commodities-4427780)
+    * [ Trading ](https://www.investopedia.com/trading-4427765)
+    * [ Automated Investing ](https://www.investopedia.com/financial-technology-and-automated-investing-4689759)
+    * [ Brokers ](https://www.investopedia.com/brokers-4689772)
+    * [ Fundamental Analysis ](https://www.investopedia.com/fundamental-analysis-4689757)
+    * [ View All ](https://www.investopedia.com/investing-4427685)
+  * [ Simulator ](https://www.investopedia.com/simulator/?inv_to_sim=global_nav)
+Simulator
+    * [ Login / Portfolio ](https://www.investopedia.com/simulator/portfolio)
+    * [ Trade ](https://www.investopedia.com/simulator/trade/stocks)
+    * [ Research ](https://www.investopedia.com/simulator/research)
+    * [ My Games ](https://www.investopedia.com/simulator/games/my-games)
+    * [ Leaderboard ](https://www.investopedia.com/simulator/games)
+  * [ Banking ](https://www.investopedia.com/banking-4427754)
+Banking
+    * [ Savings Accounts ](https://www.investopedia.com/savings-accounts-4689728)
+    * [ Certificates of Deposit (CDs) ](https://www.investopedia.com/certificate-of-deposits-4689733)
+    * [ Money Market Accounts ](https://www.investopedia.com/money-market-account-4689730)
+    * [ Checking Accounts ](https://www.investopedia.com/checking-accounts-4689732)
+    * [ View All ](https://www.investopedia.com/banking-4427754)
+  * [ Personal Finance ](https://www.investopedia.com/personal-finance-4427760)
+Personal Finance
+    * [ Budgeting and Saving ](https://www.investopedia.com/budgeting-and-savings-4427755)
+    * [ Personal Loans ](https://www.investopedia.com/personal-loans-4689729)
+    * [ Insurance ](https://www.investopedia.com/insurance-4427716)
+    * [ Mortgages ](https://www.investopedia.com/mortgage-4689703)
+    * [ Credit and Debt ](https://www.investopedia.com/credit-and-debt-4689724)
+    * [ Student Loans ](https://www.investopedia.com/student-loans-4689727)
+    * [ Taxes ](https://www.investopedia.com/taxes-4427724)
+    * [ Credit Cards ](https://www.investopedia.com/credit-card-4689721)
+    * [ Financial Literacy ](https://www.investopedia.com/financial-literacy-resource-center-7151950)
+    * [ Retirement ](https://www.investopedia.com/retirement-planning-4689695)
+    * [ View All ](https://www.investopedia.com/personal-finance-4427760)
+  * [ Economy ](https://www.investopedia.com/economy-4689801)
+Economy
+    * [ Government and Policy ](https://www.investopedia.com/government-and-policy-4689793)
+    * [ Monetary Policy ](https://www.investopedia.com/monetary-policy-4689792)
+    * [ Fiscal Policy ](https://www.investopedia.com/fiscal-policy-4689796)
+    * [ Economics ](https://www.investopedia.com/economics-4689800)
+    * [ View All ](https://www.investopedia.com/economy-4689801)
+  * [ Reviews ](https://www.investopedia.com/financial-product-reviews-7110783)
+Reviews
+    * [ Best Online Brokers ](https://www.investopedia.com/best-online-brokers-4587872)
+    * [ Best Crypto Exchanges ](https://www.investopedia.com/best-crypto-exchanges-5071855)
+    * [ Best Savings Rates ](https://www.investopedia.com/high-yield-savings-accounts-4770633)
+    * [ Best CD Rates ](https://www.investopedia.com/best-cd-rates-4770214)
+    * [ Best Life Insurance ](https://www.investopedia.com/the-best-life-insurance-companies-8763666)
+    * [ Best Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5094943)
+    * [ Best Robo-Advisors ](https://www.investopedia.com/the-best-robo-advisors-8764849)
+    * [ Best Personal Loans ](https://www.investopedia.com/the-best-personal-loans-8761582)
+    * [ Best Debt Relief Companies ](https://www.investopedia.com/the-best-debt-relief-companies-8763179)
+    * [ View All ](https://www.investopedia.com/financial-product-reviews-7110783)
+
+
+  * [Newsletters](https://www.investopedia.com/terms/p/preferred-auto-coverage.asp)
+
+
+Follow Us
+  * [ ](https://www.facebook.com/Investopedia/)
+  * [ ](https://www.instagram.com/investopedia/?hl=en)
+  * [ ](https://www.youtube.com/c/investopedia)
+  * [ ](https://www.tiktok.com/@investopedia)
+  * [ ](https://www.linkedin.com/company/investopedia-ulc)
+
+
+  * [ News ](https://www.investopedia.com/news-4427706)
+    * [ Markets ](https://www.investopedia.com/markets-news-4427704)
+    * [ Companies ](https://www.investopedia.com/company-news-4427705)
+    * [ Earnings ](https://www.investopedia.com/earnings-reports-5218419)
+    * [ CD Rates ](https://www.investopedia.com/certificates-deposit-news-7111770)
+    * [ Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5184598)
+    * [ Economy ](https://www.investopedia.com/economic-news-5218422)
+    * [ Government ](https://www.investopedia.com/political-news-4689737)
+    * [ Crypto ](https://www.investopedia.com/cryptocurrency-news-5114163)
+    * [ Live Markets News ](https://www.investopedia.com/live-markets-news-11713202)
+    * [ Personal Finance ](https://www.investopedia.com/personal-finance-news-5114159)
+    * [ View All ](https://www.investopedia.com/news-4427706)
+  * [ Investing ](https://www.investopedia.com/investing-4427685)
+    * [ Stocks ](https://www.investopedia.com/stocks-4427785)
+    * [ Cryptocurrency ](https://www.investopedia.com/cryptocurrency-4427699)
+    * [ Bonds ](https://www.investopedia.com/bonds-4689778)
+    * [ ETFs ](https://www.investopedia.com/etfs-4427784)
+    * [ Options and Derivatives ](https://www.investopedia.com/options-and-derivatives-trading-4689663)
+    * [ Commodities ](https://www.investopedia.com/commodities-4427780)
+    * [ Trading ](https://www.investopedia.com/trading-4427765)
+    * [ Automated Investing ](https://www.investopedia.com/financial-technology-and-automated-investing-4689759)
+    * [ Brokers ](https://www.investopedia.com/brokers-4689772)
+    * [ Fundamental Analysis ](https://www.investopedia.com/fundamental-analysis-4689757)
+    * [ View All ](https://www.investopedia.com/investing-4427685)
+  * [ Simulator ](https://www.investopedia.com/simulator/?inv_to_sim=global_nav)
+    * [ Login / Portfolio ](https://www.investopedia.com/simulator/portfolio)
+    * [ Trade ](https://www.investopedia.com/simulator/trade/stocks)
+    * [ Research ](https://www.investopedia.com/simulator/research)
+    * [ My Games ](https://www.investopedia.com/simulator/games/my-games)
+    * [ Leaderboard ](https://www.investopedia.com/simulator/games)
+  * [ Banking ](https://www.investopedia.com/banking-4427754)
+    * [ Savings Accounts ](https://www.investopedia.com/savings-accounts-4689728)
+    * [ Certificates of Deposit (CDs) ](https://www.investopedia.com/certificate-of-deposits-4689733)
+    * [ Money Market Accounts ](https://www.investopedia.com/money-market-account-4689730)
+    * [ Checking Accounts ](https://www.investopedia.com/checking-accounts-4689732)
+    * [ View All ](https://www.investopedia.com/banking-4427754)
+  * [ Personal Finance ](https://www.investopedia.com/personal-finance-4427760)
+    * [ Budgeting and Saving ](https://www.investopedia.com/budgeting-and-savings-4427755)
+    * [ Personal Loans ](https://www.investopedia.com/personal-loans-4689729)
+    * [ Insurance ](https://www.investopedia.com/insurance-4427716)
+    * [ Mortgages ](https://www.investopedia.com/mortgage-4689703)
+    * [ Credit and Debt ](https://www.investopedia.com/credit-and-debt-4689724)
+    * [ Student Loans ](https://www.investopedia.com/student-loans-4689727)
+    * [ Taxes ](https://www.investopedia.com/taxes-4427724)
+    * [ Credit Cards ](https://www.investopedia.com/credit-card-4689721)
+    * [ Financial Literacy ](https://www.investopedia.com/financial-literacy-resource-center-7151950)
+    * [ Retirement ](https://www.investopedia.com/retirement-planning-4689695)
+    * [ View All ](https://www.investopedia.com/personal-finance-4427760)
+  * [ Economy ](https://www.investopedia.com/economy-4689801)
+    * [ Government and Policy ](https://www.investopedia.com/government-and-policy-4689793)
+    * [ Monetary Policy ](https://www.investopedia.com/monetary-policy-4689792)
+    * [ Fiscal Policy ](https://www.investopedia.com/fiscal-policy-4689796)
+    * [ Economics ](https://www.investopedia.com/economics-4689800)
+    * [ View All ](https://www.investopedia.com/economy-4689801)
+  * [ Reviews ](https://www.investopedia.com/financial-product-reviews-7110783)
+    * [ Best Online Brokers ](https://www.investopedia.com/best-online-brokers-4587872)
+    * [ Best Crypto Exchanges ](https://www.investopedia.com/best-crypto-exchanges-5071855)
+    * [ Best Savings Rates ](https://www.investopedia.com/high-yield-savings-accounts-4770633)
+    * [ Best CD Rates ](https://www.investopedia.com/best-cd-rates-4770214)
+    * [ Best Life Insurance ](https://www.investopedia.com/the-best-life-insurance-companies-8763666)
+    * [ Best Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5094943)
+    * [ Best Robo-Advisors ](https://www.investopedia.com/the-best-robo-advisors-8764849)
+    * [ Best Personal Loans ](https://www.investopedia.com/the-best-personal-loans-8761582)
+    * [ Best Debt Relief Companies ](https://www.investopedia.com/the-best-debt-relief-companies-8763179)
+    * [ View All ](https://www.investopedia.com/financial-product-reviews-7110783)
+
+
+  * Top Stories
+  * [ This Famous Short Seller Is Betting Against AI ](https://www.investopedia.com/short-sellers-now-betting-big-against-ai-11842994)
+  * [ Here's the Average Income for 35–44-Year-Olds ](https://www.investopedia.com/are-you-keeping-up-here-s-the-average-income-for-35-44-year-olds-11841889)
+  * [ This Bank Can Help Lower Your Phone Bill ](https://www.investopedia.com/this-clever-bank-account-lowers-your-phone-bill-and-pays-4-20-on-your-savings-11844440)
+  * [ Here's the Average Salary for People in Transition ](https://www.investopedia.com/career-change-average-salary-11839914)
+
+
+Table of Contents
+Expand
+Table of Contents
+  * [What Is Preferred Auto Coverage?](https://www.investopedia.com/terms/p/preferred-auto-coverage.asp#toc-what-is-preferred-auto-coverage)
+  * [How It Works](https://www.investopedia.com/terms/p/preferred-auto-coverage.asp#toc-understanding-preferred-auto-coverage)
+  * [Preferred Risks](https://www.investopedia.com/terms/p/preferred-auto-coverage.asp#toc-preferred-risks)
+
+
+# Preferred Auto Coverage: What It Is and How It Works
+By
+[Julia Kagan](https://www.investopedia.com/contributors/53409/)
+[Full Bio](https://www.investopedia.com/contributors/53409/)
+  * [ ](https://www.linkedin.com/in/julia-kagan-4118147/)
+
+
+Julia Kagan is a financial/consumer journalist and former senior editor, personal finance, of Investopedia.
+Learn about our  [editorial policies](https://www.investopedia.com/legal-4768893#editorial-policy)
+Updated July 18, 2025
+Reviewed by [Eric Estevez](https://www.investopedia.com/eric-estevez-4799782)
+Fact checked by
+[Ariel Courage](https://www.investopedia.com/ariel-courage-5078528)
+Fact checked by Ariel Courage
+[Full Bio](https://www.investopedia.com/ariel-courage-5078528)
+Ariel Courage is an experienced editor, researcher, and former fact-checker. She has performed editing and fact-checking work for several leading finance publications, including The Motley Fool and Passport to Wall Street.
+Learn about our  [editorial policies](https://www.investopedia.com/legal-4768893#editorial-policy)
+![Preferred Auto Coverage](https://www.investopedia.com/thmb/8gjs9wvJHMcUBoXeRXETHy0UU_o=/1500x0/filters:no_upscale\(\):max_bytes\(150000\):strip_icc\(\):format\(webp\)/preferred-auto-coverage-FINAL-5c15b9ef5c884d5faccb90a3c2ade53d.png)
+Eligible drivers should have a clean driving record with no accidents, traffic violations, or DUIs.
+Investopedia / Jiaqi Zhou
+Close
+Definition
+Preferred auto coverage is a type of car insurance that is only offered to the least risky drivers.
+##  What Is Preferred Auto Coverage? 
+Preferred [auto insurance](https://www.investopedia.com/terms/a/auto-insurance.asp) is a type of insurance policy that is only available to drivers who are least likely to file a claim. These drivers pay the lowest premiums for coverage, based on their age, demographic characteristics, and driving history. 
+Being able to estimate the risk in [underwriting](https://www.investopedia.com/terms/u/underwriting.asp) a new policy can make or break an insurance company. If the company prices the policy correctly and understands the claim risk, it can be profitable, since the premiums it brings in will exceed the benefits it pays out. Most insurance companies want a mix of low[-premium](https://www.investopedia.com/terms/p/premium.asp) drivers who carry reduced risk and higher-premium drivers who are considered more likely to get into an accident. 
+If the insurer does not effectively understand the risk associated with underwriting a policy, it can wind up taking on too much risk and paying out more benefits than it receives in premiums. 
+### Key Takeaways
+  * Preferred auto coverage is low-premium insurance offered to drivers who have a clean record and are less risky than other applicants.
+  * Insurance companies consider a number of factors, such as age and driving record, and compare them to available actuarial information before deciding to offer preferred auto coverage to preferred drivers.
+  * Generally, insurance companies prefer a mix of reduced-risk drivers and high-risk drivers in their insurance pool.
+
+
+##  Understanding Preferred Auto Coverage 
+Insurance companies pay close attention to individuals and businesses when determining whether to underwrite a new policy. In the case of auto insurance, the insurer will consider the driver’s age, driving record, car usage, credit history, and location, and will compare the driver’s characteristics with [actuarial information](https://www.investopedia.com/terms/a/actuarialanalysis.asp). This information helps the company determine the likelihood of the driver getting into an accident, and is in turn used to set the premium that the insurer will charge for coverage. 
+Advertiser Disclosure 
+× 
+The offers that appear in this table are from partnerships from which Investopedia receives compensation. This compensation may impact how and where listings appear. Investopedia does not include all offers available in the marketplace.
+Popular Accounts from Our Partners
+##  Preferred Risks 
+Insurers typically divide drivers into three categories: preferred, [standard](https://www.investopedia.com/terms/s/standard-auto-insurance.asp), and [substandard](https://www.investopedia.com/terms/s/substandard-insurance.asp). Preferred drivers are considered the [least risky based on their driving history](https://www.investopedia.com/terms/p/privatepassenger-auto-insurance-policyholder-risk-profile.asp) and vehicle usage characteristics, and are offered lower premiums. Standard drivers are considered “average” in terms of risk, and pay a regular premium. Substandard drivers are considered the riskiest to insure, and they either pay the highest premiums or are denied insurance coverage and must go to a [state assigned risk pool](https://www.investopedia.com/terms/a/assigned-risk.asp) for coverage. 
+Preferred drivers are likely to have an excellent driving record, have substantial driving experience, have a good credit history, use the vehicle for commuting relatively short distances, and do not own a sports car. They may also live in areas where there is a lower incidence of car theft and vandalism. They don't miss making policy payments and don't get tickets or get into accidents, whether it's your fault or not. Many people are surprised to learn that insurance companies in some states can raise your premiums or refuse to insure you if you get into accidents that aren't your fault. 
+Sponsored
+Maximize Your Retirement Income
+[](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssjAs3oDqyeK8MuiWIMYop9YmJ3Py8kJaAH_11iq5KRYGagnZ3yiibgoyjAr7A1_leu6wO8_l3rpzVPSCCzD5voW_e1bIrb_ympeq-MnUvPe5K9DHYmOfOgDWKBHarADK3JMCezwLm9VVCRQzOyMu-TunF1urQThTGzuVt9tCZ5OSVoT397rIvBr5KqHkfNEzYp2-9lgKnVavkubb1p2p6CMrNlR6g-gnxH135XS-RRen08xhfYsHvRDWfu6FDaVJTo1Yc2_c8likHYvhVhSQnfLMrd8wAJu2LrOs9Qda1WkijJp_MUJnVWwJuy3B-8AHPa7GmndiCso_xXjPVmLJBxfFvdnOeoKfg_Fx3ideM9xPa5LacAbpVloaIG8h6UNOCZNU_eVGJGqlGC2u9anfHwTwUR6mrdW-Z24nhShrUEQ8UQqEXU1rDYww&sai=AMfl-YRD_FpiaONf5X360QhQ99KFt9QhrNNDB1D-Giu1BlBU_LqwJXzeClTMuTVf2FewE3bn2opUcZdKlIRPnStV2J1qP8Bs6LU9fBwIkHvw4e48RiGaOlDlhCWQj86z-h7gz7rg5iMQVphiU0RYKPvqorvaUFpkzWZX2kzrZh37jpBOUF_HI94WkIW7IhARs7Urb5dRdtHadRse-HbOX7uzLZLkdsVWvMFuNYWbvx9yngBw-QCUqqpIc4SLcq5NUPJyZGQmf8vSvemD_gKzqwOyRUAYpNm6eA&sig=Cg0ArKJSzBQSretIJ-udEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N510001.110872INVESTOPEDIAUS0/B23381186.385380135;dc_trk_aid=576309121;dc_trk_cid=208405767;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1) Taking a strategic approach to investing can help you [maximize your retirement income.](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssjAs3oDqyeK8MuiWIMYop9YmJ3Py8kJaAH_11iq5KRYGagnZ3yiibgoyjAr7A1_leu6wO8_l3rpzVPSCCzD5voW_e1bIrb_ympeq-MnUvPe5K9DHYmOfOgDWKBHarADK3JMCezwLm9VVCRQzOyMu-TunF1urQThTGzuVt9tCZ5OSVoT397rIvBr5KqHkfNEzYp2-9lgKnVavkubb1p2p6CMrNlR6g-gnxH135XS-RRen08xhfYsHvRDWfu6FDaVJTo1Yc2_c8likHYvhVhSQnfLMrd8wAJu2LrOs9Qda1WkijJp_MUJnVWwJuy3B-8AHPa7GmndiCso_xXjPVmLJBxfFvdnOeoKfg_Fx3ideM9xPa5LacAbpVloaIG8h6UNOCZNU_eVGJGqlGC2u9anfHwTwUR6mrdW-Z24nhShrUEQ8UQqEXU1rDYww&sai=AMfl-YRD_FpiaONf5X360QhQ99KFt9QhrNNDB1D-Giu1BlBU_LqwJXzeClTMuTVf2FewE3bn2opUcZdKlIRPnStV2J1qP8Bs6LU9fBwIkHvw4e48RiGaOlDlhCWQj86z-h7gz7rg5iMQVphiU0RYKPvqorvaUFpkzWZX2kzrZh37jpBOUF_HI94WkIW7IhARs7Urb5dRdtHadRse-HbOX7uzLZLkdsVWvMFuNYWbvx9yngBw-QCUqqpIc4SLcq5NUPJyZGQmf8vSvemD_gKzqwOyRUAYpNm6eA&sig=Cg0ArKJSzBQSretIJ-udEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N510001.110872INVESTOPEDIAUS0/B23381186.385380135;dc_trk_aid=576309121;dc_trk_cid=208405767;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1) Vanguard Personal Advisor® will work with you to build a customized financial plan that aligns with your goals. You’ll also benefit from innovative service at a low cost, and ongoing access to advisors. Learn more about how you can [access personal financial advice and start the conversation.](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssjAs3oDqyeK8MuiWIMYop9YmJ3Py8kJaAH_11iq5KRYGagnZ3yiibgoyjAr7A1_leu6wO8_l3rpzVPSCCzD5voW_e1bIrb_ympeq-MnUvPe5K9DHYmOfOgDWKBHarADK3JMCezwLm9VVCRQzOyMu-TunF1urQThTGzuVt9tCZ5OSVoT397rIvBr5KqHkfNEzYp2-9lgKnVavkubb1p2p6CMrNlR6g-gnxH135XS-RRen08xhfYsHvRDWfu6FDaVJTo1Yc2_c8likHYvhVhSQnfLMrd8wAJu2LrOs9Qda1WkijJp_MUJnVWwJuy3B-8AHPa7GmndiCso_xXjPVmLJBxfFvdnOeoKfg_Fx3ideM9xPa5LacAbpVloaIG8h6UNOCZNU_eVGJGqlGC2u9anfHwTwUR6mrdW-Z24nhShrUEQ8UQqEXU1rDYww&sai=AMfl-YRD_FpiaONf5X360QhQ99KFt9QhrNNDB1D-Giu1BlBU_LqwJXzeClTMuTVf2FewE3bn2opUcZdKlIRPnStV2J1qP8Bs6LU9fBwIkHvw4e48RiGaOlDlhCWQj86z-h7gz7rg5iMQVphiU0RYKPvqorvaUFpkzWZX2kzrZh37jpBOUF_HI94WkIW7IhARs7Urb5dRdtHadRse-HbOX7uzLZLkdsVWvMFuNYWbvx9yngBw-QCUqqpIc4SLcq5NUPJyZGQmf8vSvemD_gKzqwOyRUAYpNm6eA&sig=Cg0ArKJSzBQSretIJ-udEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N510001.110872INVESTOPEDIAUS0/B23381186.385380135;dc_trk_aid=576309121;dc_trk_cid=208405767;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1)
+Paid non-client promotion.
+[](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssjAs3oDqyeK8MuiWIMYop9YmJ3Py8kJaAH_11iq5KRYGagnZ3yiibgoyjAr7A1_leu6wO8_l3rpzVPSCCzD5voW_e1bIrb_ympeq-MnUvPe5K9DHYmOfOgDWKBHarADK3JMCezwLm9VVCRQzOyMu-TunF1urQThTGzuVt9tCZ5OSVoT397rIvBr5KqHkfNEzYp2-9lgKnVavkubb1p2p6CMrNlR6g-gnxH135XS-RRen08xhfYsHvRDWfu6FDaVJTo1Yc2_c8likHYvhVhSQnfLMrd8wAJu2LrOs9Qda1WkijJp_MUJnVWwJuy3B-8AHPa7GmndiCso_xXjPVmLJBxfFvdnOeoKfg_Fx3ideM9xPa5LacAbpVloaIG8h6UNOCZNU_eVGJGqlGC2u9anfHwTwUR6mrdW-Z24nhShrUEQ8UQqEXU1rDYww&sai=AMfl-YRD_FpiaONf5X360QhQ99KFt9QhrNNDB1D-Giu1BlBU_LqwJXzeClTMuTVf2FewE3bn2opUcZdKlIRPnStV2J1qP8Bs6LU9fBwIkHvw4e48RiGaOlDlhCWQj86z-h7gz7rg5iMQVphiU0RYKPvqorvaUFpkzWZX2kzrZh37jpBOUF_HI94WkIW7IhARs7Urb5dRdtHadRse-HbOX7uzLZLkdsVWvMFuNYWbvx9yngBw-QCUqqpIc4SLcq5NUPJyZGQmf8vSvemD_gKzqwOyRUAYpNm6eA&sig=Cg0ArKJSzBQSretIJ-udEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N510001.110872INVESTOPEDIAUS0/B23381186.385380135;dc_trk_aid=576309121;dc_trk_cid=208405767;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1) [](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssjAs3oDqyeK8MuiWIMYop9YmJ3Py8kJaAH_11iq5KRYGagnZ3yiibgoyjAr7A1_leu6wO8_l3rpzVPSCCzD5voW_e1bIrb_ympeq-MnUvPe5K9DHYmOfOgDWKBHarADK3JMCezwLm9VVCRQzOyMu-TunF1urQThTGzuVt9tCZ5OSVoT397rIvBr5KqHkfNEzYp2-9lgKnVavkubb1p2p6CMrNlR6g-gnxH135XS-RRen08xhfYsHvRDWfu6FDaVJTo1Yc2_c8likHYvhVhSQnfLMrd8wAJu2LrOs9Qda1WkijJp_MUJnVWwJuy3B-8AHPa7GmndiCso_xXjPVmLJBxfFvdnOeoKfg_Fx3ideM9xPa5LacAbpVloaIG8h6UNOCZNU_eVGJGqlGC2u9anfHwTwUR6mrdW-Z24nhShrUEQ8UQqEXU1rDYww&sai=AMfl-YRD_FpiaONf5X360QhQ99KFt9QhrNNDB1D-Giu1BlBU_LqwJXzeClTMuTVf2FewE3bn2opUcZdKlIRPnStV2J1qP8Bs6LU9fBwIkHvw4e48RiGaOlDlhCWQj86z-h7gz7rg5iMQVphiU0RYKPvqorvaUFpkzWZX2kzrZh37jpBOUF_HI94WkIW7IhARs7Urb5dRdtHadRse-HbOX7uzLZLkdsVWvMFuNYWbvx9yngBw-QCUqqpIc4SLcq5NUPJyZGQmf8vSvemD_gKzqwOyRUAYpNm6eA&sig=Cg0ArKJSzBQSretIJ-udEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=)
+Read more
+  * [Personal Finance](https://www.investopedia.com/personal-finance-4427760)
+  * [Insurance](https://www.investopedia.com/insurance-4427716)
+  * [Car Insurance](https://www.investopedia.com/car-insurance-4427710)
+  * [Car Ownership](https://www.investopedia.com/car-ownership-5224775)
+
+
+Partner Links
+## Related Articles
+[ Understanding Rebuilt Car Titles: Pros, Cons, and Buyer Considerations ](https://www.investopedia.com/is-it-worth-buying-a-car-with-a-rebuilt-title-5179621) [ How Parking Tickets Affect Your Driving Record and Insurance ](https://www.investopedia.com/do-parking-tickets-stay-on-your-driving-record-5184743) [ How to Maximize Tax Deductions for Car Expenses: 6 Proven Strategies ](https://www.investopedia.com/financial-edge/0311/6-ways-to-write-off-your-car-expenses.aspx) [ Understanding Personal Injury Protection: Coverage, Limits & Benefits ](https://www.investopedia.com/terms/p/personal-injury-protection-pip.asp) [ Understanding Capitalized Cost Reduction: Key Benefits and Applications ](https://www.investopedia.com/terms/c/capitalized-cost-reduction.asp) [ Rent-to-Own Cars: Simplified Guide to No-Credit-Check Options ](https://www.investopedia.com/articles/personal-finance/082315/renttoown-car-how-it-works.asp) [ Third-Party Liability Insurance Types ](https://www.investopedia.com/terms/t/third-party-insurance.asp) [ Understanding Group Health Insurance: Coverage, Benefits, Costs, and More ](https://www.investopedia.com/terms/g/group-health-insurance-plan.asp)
+[ Insurers Are Cutting Medicare Advantage in 2026: How Hard Is Your County Being Hit?  ](https://www.investopedia.com/insurers-are-cutting-medicare-advantage-in-2026-how-hard-is-your-county-being-hit-11842858) [ Facultative vs. Treaty Reinsurance: Key Differences Explained ](https://www.investopedia.com/articles/markets/081716/facultative-vs-treaty-reinsurance-differences-and-examples.asp) [ Best Dental Insurance Companies for November 2025 ](https://www.investopedia.com/the-best-dental-insurance-companies-8763833) [ Medical Payments Coverage (MedPay): Overview and Examples ](https://www.investopedia.com/terms/m/medical-payments-coverage.asp) [ Comprehensive Car Insurance: What It Covers and When to Buy ](https://www.investopedia.com/terms/c/comprehensive-insurance.asp) [ Compare Medicare Advantage and Supplement Plans for Optimal Coverage ](https://www.investopedia.com/articles/personal-finance/071014/medigap-vs-medicare-advantage-which-better.asp) [ Loan Protection Insurance: Benefits, Costs, and Considerations ](https://www.investopedia.com/articles/pf/08/loan-protection-insurance.asp) [ Black Box Insurance: What it Means, How it Works ](https://www.investopedia.com/terms/b/black-box-insurance.asp)
+[ Investopedia ](https://www.investopedia.com/)
+[Newsletter Sign Up](https://www.investopedia.com/terms/p/preferred-auto-coverage.asp)
+Follow Us
+  * [ ](https://www.facebook.com/Investopedia/)
+  * [ ](https://www.instagram.com/investopedia/?hl=en)
+  * [ ](https://www.linkedin.com/company/investopedia-ulc)
+  * [ ](https://www.tiktok.com/@investopedia)
+  * [ ](https://www.youtube.com/c/investopedia)
+
+
+  * [News](https://www.investopedia.com/news-4427706)
+  * [Investing](https://www.investopedia.com/investing-4427685)
+  * [Simulator](https://www.investopedia.com/simulator/?inv_to_sim=global_nav)
+  * [Banking](https://www.investopedia.com/banking-4427754)
+  * [Personal Finance](https://www.investopedia.com/personal-finance-4427760)
+  * [Economy](https://www.investopedia.com/economy-4689801)
+  * [Reviews](https://www.investopedia.com/financial-product-reviews-7110783)
+  * [Dictionary](https://www.investopedia.com/financial-term-dictionary-4769738)
+
+
+  * [ About Us ](https://www.investopedia.com/about-us-5093223)
+  * [ Editorial Process ](https://www.investopedia.com/legal-4768893#toc-editorial-policy)
+  * [ Careers ](https://www.people.inc/careers)
+  * [ Contact Us ](https://www.people.inc/contact)
+  * [ Privacy Policy ](https://www.people.inc/brands-privacy)
+  * [ Terms of Service ](https://www.people.inc/brands-termsofservice)
+  * [ Advertise ](https://www.people.inc/advertising)
+  * Your Privacy Choices
+
+
+  * [#](https://www.investopedia.com/terms-beginning-with-num-4769350)
+  * [A](https://www.investopedia.com/terms-beginning-with-a-4769351)
+  * [B](https://www.investopedia.com/terms-beginning-with-b-4769352)
+  * [C](https://www.investopedia.com/terms-beginning-with-c-4769353)
+  * [D](https://www.investopedia.com/terms-beginning-with-d-4769354)
+  * [E](https://www.investopedia.com/terms-beginning-with-e-4769355)
+  * [F](https://www.investopedia.com/terms-beginning-with-f-4769356)
+  * [G](https://www.investopedia.com/terms-beginning-with-g-4769357)
+  * [H](https://www.investopedia.com/terms-beginning-with-h-4769358)
+  * [I](https://www.investopedia.com/terms-beginning-with-i-4769359)
+  * [J](https://www.investopedia.com/terms-beginning-with-j-4769360)
+  * [K](https://www.investopedia.com/terms-beginning-with-k-4769361)
+  * [L](https://www.investopedia.com/terms-beginning-with-l-4769362)
+  * [M](https://www.investopedia.com/terms-beginning-with-m-4769363)
+  * [N](https://www.investopedia.com/terms-beginning-with-n-4769364)
+  * [O](https://www.investopedia.com/terms-beginning-with-o-4769365)
+  * [P](https://www.investopedia.com/terms-beginning-with-p-4769366)
+  * [Q](https://www.investopedia.com/terms-beginning-with-q-4769367)
+  * [R](https://www.investopedia.com/terms-beginning-with-r-4769368)
+  * [S](https://www.investopedia.com/terms-beginning-with-s-4769369)
+  * [T](https://www.investopedia.com/terms-beginning-with-t-4769370)
+  * [U](https://www.investopedia.com/terms-beginning-with-u-4769371)
+  * [V](https://www.investopedia.com/terms-beginning-with-v-4769372)
+  * [W](https://www.investopedia.com/terms-beginning-with-w-4769373)
+  * [X](https://www.investopedia.com/terms-beginning-with-x-4769374)
+  * [Y](https://www.investopedia.com/terms-beginning-with-y-4769375)
+  * [Z](https://www.investopedia.com/terms-beginning-with-z-4769376)
+
+
+Investopedia is part of the [People Inc.](https://www.people.inc) publishing family. 
+Newsletter Sign Up
+Newsletter Sign Up
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. 
+Cookies Settings Accept All Cookies
+![](https://sync.graph.bluecava.com/ds.png?p=9274e5db-ddcb-11ea-a80b-0242ac110002&segment=4l28r4sz3bl3555wt2hyave1w6u68syw&uid=&CampaignID=303C&Channel=investopedia&CreativeID=&Placement=4191070&MAID=&Keyword=&Medium=&Source=&PageName=www.investopedia.com%2Fterms%2Fp%2Fpreferred-auto-coverage.asp&Event=&Key1=4173514&Key2=4427760&Key3=4427716&Key4=4427710&Key5=5224775)

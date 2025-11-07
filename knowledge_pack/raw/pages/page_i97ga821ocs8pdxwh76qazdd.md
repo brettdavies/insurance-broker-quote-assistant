@@ -1,0 +1,562 @@
+[ HomeLight Blog  ](https://www.homelight.com/)
+[ phone (888) 861-4565 Call us ](tel:+1\(888\)8614565)
+  * [About](https://www.homelight.com/blog/buyer-buyers-agents-real-estate-commissions/)
+    * [Company](https://www.homelight.com/about-us)
+    * [Testimonials](https://www.homelight.com/testimonials)
+    * [Press](https://www.homelight.com/press)
+    * [Professionals](https://www.homelight.com/agents)
+
+
+  * Sign in or Sign up
+    * Back
+    * [I'm a buyer](https://www.homelight.com/find-agent/quiz/buyer)
+    * [I'm a seller](https://www.homelight.com/find-agent/quiz/seller)
+    * [I'm an agent](https://www.homelight.com/users/login)
+    * [I'm an iBuyer](https://www.homelight.com/users/login?user_type=investor)
+
+
+[ ![homelight logo](data:image/svg+xml;nitro-empty-id=MjIyOjE3Mg==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTYwIDMyIiB3aWR0aD0iMTYwIiBoZWlnaHQ9IjMyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==) ](https://www.homelight.com/blog/) [Find a top buyer's agent](https://www.homelight.com/find-agent/quiz/buyer#/qaas=0/)
+![Buyers Agent Commissions Explained for First-Time Shoppers](data:image/svg+xml;nitro-empty-id=MjM4OjEzNjE=-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNzc1IDQzNiIgd2lkdGg9Ijc3NSIgaGVpZ2h0PSI0MzYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+)
+# Buyers Agent Commissions Explained for First-Time Shoppers
+  * [Buyers](https://www.homelight.com/blog/for-buyers/)
+  * [Find a buyer's agent](https://www.homelight.com/blog/house-hunting/work-with-agents/)
+  * [House Hunting](https://www.homelight.com/blog/house-hunting/)
+
+
+  * Published on January 7th, 2025
+  * 13 min read
+
+
+  * ![Image of post author](https://cdn-digkohb.nitrocdn.com/BqxdURiIUFdhIpOvVcTrJrUBaMhurfTZ/assets/images/optimized/rev-7d12219/homelightblog.wpengine.com/wp-content/uploads/2019/12/amna.shamim-150x150.jpg)
+**Amna Shamim , ** Contributing Author
+[ Close ](https://www.homelight.com/blog/buyer-buyers-agents-real-estate-commissions/)
+![Image of post author](data:image/svg+xml;nitro-empty-id=Mjg2OjE3Ng==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTUwIDE1MCIgd2lkdGg9IjE1MCIgaGVpZ2h0PSIxNTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+)
+**Amna Shamim** Contributing Author
+    * Email
+    * [ LinkedIn ](https://www.linkedin.com/in/amna-shamim)
+Amna Shamim is a writer and digital marketing consultant who works with local and e-commerce businesses, ensuring they are easily findable online to and trusted by their clients. Her words have been featured in Glamour Magazine, Business Insider, Entrepreneur, Huff Post, Thrive Global, BUST, Paste, and other publications.
+[View profile](https://www.homelight.com/blog/author/amna-shamim/)
+  * ![Image of post author](https://cdn-digkohb.nitrocdn.com/BqxdURiIUFdhIpOvVcTrJrUBaMhurfTZ/assets/images/optimized/rev-7d12219/homelightblog.wpengine.com/wp-content/uploads/2024/09/Sam-Dadofalza-2-150x150.png)
+**Sam Dadofalza , ** Associate Editor
+[ Close ](https://www.homelight.com/blog/buyer-buyers-agents-real-estate-commissions/)
+![Image of post author](https://cdn-digkohb.nitrocdn.com/BqxdURiIUFdhIpOvVcTrJrUBaMhurfTZ/assets/images/optimized/rev-7d12219/homelightblog.wpengine.com/wp-content/uploads/2024/09/Sam-Dadofalza-2-150x150.png)
+**Sam Dadofalza** Associate Editor
+    * Email
+Sam Dadofalza is an associate editor at HomeLight, where she crafts insightful stories to guide homebuyers and sellers through the intricacies of real estate transactions. She has previously contributed to digital marketing firms and online business publications, honing her skills in creating engaging and informative content.
+[View profile](https://www.homelight.com/blog/author/samdadofalza/)
+
+
+  * [ Share on LinkedIn ](https://www.linkedin.com/shareArticle?mini=true&url=https://www.homelight.com/blog/buyer-buyers-agents-real-estate-commissions/&title=Buyers%20Agent%20Commissions%20Explained%20for%20First-Time%20Shoppers)
+  * [ Share on Twitter ](https://twitter.com/intent/tweet?text=Buyers%20Agent%20Commissions%20Explained%20for%20First-Time%20Shoppers&url=https://www.homelight.com/blog/buyer-buyers-agents-real-estate-commissions/)
+  * [ Share on Facebook ](https://www.facebook.com/sharer/sharer.php?u=https://www.homelight.com/blog/buyer-buyers-agents-real-estate-commissions/&t=Buyers%20Agent%20Commissions%20Explained%20for%20First-Time%20Shoppers)
+  * Share by Email
+  * [ Save to Pinterest ](https://www.pinterest.com/pin/create/button/)
+
+
+**Table of Contents**
+Buying a new house is a huge financial commitment. There is the [cost of the home](https://www.homelight.com/blog/how-much-house-can-i-afford/) itself — but then there are also the [closing costs](https://www.homelight.com/closing-costs-calculator), [HOA fees](https://www.homelight.com/blog/buyer-why-are-hoa-fees-so-high/), [property taxes](https://www.homelight.com/blog/buyer-tax-value-of-property/), homeowners insurance, and paying for [necessary repairs](https://www.homelight.com/blog/what-to-do-when-you-cant-afford-home-repairs/). So where do the buyer’s agent fees fit into this? And how much are they, again?
+![homelight logo](data:image/svg+xml;nitro-empty-id=NDM1OjIwNw==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTA4IDI1IiB3aWR0aD0iMTA4IiBoZWlnaHQ9IjI1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==)
+### Find An Agent To Help You Buy Your First Home
+Purchasing your first home? Find a buyer’s agent who will walk you through the process of buying your dream home.
+[Find a Buyer's Agent](https://www.homelight.com/find-agent/quiz/buyer#/qaas=0/)
+The buyer’s [agent commissions](https://www.homelight.com/blog/what-is-a-real-estate-commission/) can feel expensive and complicated, especially when it’s your [first time buying a home](https://www.homelight.com/blog/buyer-how-to-buy-your-first-home/). The fact that they’re usually percentage-based can feel strange, but commissions are a lot more common than most people realize.
+We spoke with top agents and real estate investors, did a lot of research, and have answered the most common questions buyers have about buyer’s agent commissions below.
+By the time you finish this article, you’ll have a solid grasp of what you’re getting for that commission fee and where it comes from and will be ready to negotiate (or not!) with your agent.
+## What is a commission?
+A [real estate commission](https://www.homelight.com/blog/real-estate-agent-commission/) is the fee paid to agents to cover the cost of their services.
+Many agents have additional operating costs that are not obvious to you, the buyer. These can include association fees if they’re part of the National Association of Realtors (NAR), special certification classes and exams, licensing fees, and much more.
+Many agents are paid purely on commission, which means the commission is their entire income. That income is completely dependent on doing a good job for you and finding you a house that you want to buy.
+[Zach Walkerleib](https://www.homelight.com/agents/zach-walkerlieb-nv-s0171335), a luxury specialist with 14 years of experience in [Las Vegas, Nevada](https://www.homelight.com/las-vegas-nv/top-real-estate-agents?Page=1), explains: “What real estate agents on the buyer’s side need to do is really show their value in ways that are above and beyond navigating the real estate transaction.
+“They need to go into vendor lists and have concierge programs where we can help you with movers [and] handyman. We can help you with all these different things in addition to just the transaction. We’re going to be there for you, as your advisor after the transaction and on, and on, and on.”
+[ ![A picture of a house for which the seller paid the realtor's fee.](data:image/svg+xml;nitro-empty-id=NDY1OjE2MDQ=-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTkyIDEwOCIgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxMDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+) How Much Are Realtor Fees and Who Pays, Buyer or Seller?  Learn more  ](https://www.homelight.com/blog/realtor-fees/)
+[ ![An image of a real estate agent meeting with a client at a house](data:image/svg+xml;nitro-empty-id=NDgyOjEzNTQ=-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTkyIDEwOCIgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxMDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+) Real Estate Agent Commission: How Much Do Agents Make in 2025?  Learn more  ](https://www.homelight.com/blog/real-estate-agent-commission/)
+## Are agents always paid on commission?
+Nope! This is definitely the most popular business model for real estate agents, but some agents and brokerages will charge a [flat fee](https://www.homelight.com/blog/flat-fee-real-estate-brokers/) instead of a commission.
+While a flat fee agent can seem like a better deal upfront, you may be sacrificing some level of service in favor of a lower commission fee. Scouring listings for your dream home can be a time-consuming process, and with a lower fee on the line, agents may have to take on more clients to break even, which can mean less time available to spend on your house hunt.
+Some agents offer tiered pricing for their flat fees, which might be a good compromise, depending on your budget and criteria for your future home.
+## Who pays the buyer’s real estate agent commission?
+This gets a bit complicated: Both the [listing agent](https://www.homelight.com/blog/what-is-listing-agent/) (representing the seller) and the [buyer’s agent](https://www.homelight.com/blog/buyer-buyers-agent/) (representing the buyer) get paid at the closing table, when money changes hands from buyer to seller.
+Historically, the seller paid both the buyer’s agent and the listing agent’s commission. However, the [2024 NAR settlement](https://www.homelight.com/blog/buyer-real-estate-commission-rules-and-regulations/) changed this structure. Now, sellers are no longer required to cover the buyer’s agent’s fees. Instead, buyers must negotiate commissions directly with their agents.
+Still, those commissions are coming out of the money that you paid for the house as the buyer. So, in a sense, they are packaged into the mortgage loan that you take out to buy the house.
+## Are commissions included in buyer closing costs?
+Realtor fees are usually not part of the buyer’s closing costs, as sellers have traditionally covered them. However, as mentioned, the new rules eliminated the requirement for sellers to pay the buyer’s agent’s commission.
+Even then, buyers can negotiate with sellers, and in a buyer’s market, sellers may be more willing to make [concessions](https://www.homelight.com/blog/buyer-sellers-assist/) and cover the buyer’s agent’s compensation to attract buyers and help move the sale along more quickly.
+Also, as mentioned above, the commission is often factored into the overall sale price and folded into your mortgage.
+As a buyer, your closing costs will typically range between 2% and 5% of the purchase price, and this is an additional expense or fee that you pay on top of the agent’s commission.
+[ ![Two buyers using a computer to find an agent.](data:image/svg+xml;nitro-empty-id=NTE3OjEzODU=-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTkyIDEwOCIgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxMDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+) What Does a Real Estate Agent Do? The Benefits of Hiring an Agent  Learn more  ](https://www.homelight.com/blog/buyer-what-does-a-real-estate-agent-do/)
+[ ![A home whose buyer is learning how to pick a real estate agent](data:image/svg+xml;nitro-empty-id=NTM0OjE0MzI=-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTkyIDEwOCIgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxMDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+) How to Pick a Real Estate Agent for Buying a Home  Learn more  ](https://www.homelight.com/blog/buyer-how-to-pick-a-real-estate-agent/)
+## How much is the typical buyer’s real estate agent commission?
+Historically, agent commissions have been around 5% to 6% of the home’s sale price, typically split between the buyer’s and seller’s agents. However, since the 2024 NAR settlement changed the structure and urged buyers to negotiate directly with their agents, the exact fees can vary. Based on traditional rates, buyers can expect to pay up to 3% of the home’s sale price in agent commissions.
+Individual agents have different commission rates. Some individual agents might charge as much as 5% on their own, while others may take as little as 1%. Don’t forget, a lower fee might also mean fewer services.
+Let’s ballpark some commission rates based on [median and average sales prices](https://fred.stlouisfed.org/release/tables?rid=97&eid=206085#snid=206087) in different parts of the country to give you an idea of what this might look like for you. For easy reference, we’ll use the 6% commission rate.
+**Area** |  **Median****Sales Price** | **Total Commission (6%)** | **Buyer Agent Commission (3%)**  
+---|---|---|---  
+**National** | 420,400 | 25,224 | 12,612  
+**Northeast** | 639,800 | 38,388 | 19,194  
+**Midwest** | 384,500 | 23,070 | 11,535  
+**South** | 376,300 | 22,578 | 11,289  
+**West** | 549,200 | 32,952 | 16,476  
+**Area** | **Average Sales Price** | **Total Commission (6%)** | **Buyer Agent Commission (3%)**  
+---|---|---|---  
+**National** | 501,100 | 30,066 | 15,033  
+**Northeast** | 883,000 | 52,980 | 26,490  
+**Midwest** | 424,300 | 25,458 | 12,729  
+**South** | 447,200 | 26,832 | 13,416  
+**West** | 610,300 | 36,618 | 18,309  
+As a [luxury real estate agent](https://www.homelight.com/blog/luxury-real-estate-agent/), Walkerleib’s numbers can be much higher, even at the standard 3% commission. “On a $1 million home, $30,000 is the commission check. On a $2 million home, it’s $60,000. It continues to go up and up and up.”
+And to justify his commission, he keeps asking himself, “So what are you bringing to the table that is worth that kind of money?” It’s a good question your agent should be able to answer, too.
+## Does the buyer’s agent keep the entire commission?
+Here’s a secret most people don’t know: The buyer’s agent almost never keeps the entire commission they earn on a deal.
+In most real estate agencies, a buyer’s agent is [supervised by a broker](https://www.homelight.com/blog/what-is-a-real-estate-broker/), who typically takes between 30% and 50% of the buyer’s agent’s commission as the broker’s fee.
+This can drop the buyer’s agent’s commission to between just 0.5% (at the low end) and 2% (at the high end) of your home’s sale price for all those hours of legwork.
+## What’s included in the buyer’s agent commission?
+A buyer’s agent commission is earned by all the extra work they do for you, some of which you might not even be aware is happening in the background.
+### A buyer’s agent will typically help you…
+**Figure out what types of homes and areas will work best for your needs,** saving you time and energy on doing this research yourself.
+**Set you up with access to the multiple listing service (MLS) and help you find homes in your budget.** If you’ve moved areas, the MLS you need now may be different from your previous one, as they vary by location. Your budget also may have changed, and [how much house you can buy](https://www.homelight.com/blog/how-much-house-can-i-afford/) might have changed with it.
+**Arrange to walk through homes that especially interest you.** As they do so, they’ll be able to share insights about the home, area, or neighborhood that they know from other showings of the same home or in the same area.
+**Answer your questions about the market in general and specific homes in particular.** Agents will know more about the area than you’ll be able to learn during your house hunt. They’ve worked in it over the course of months or years.
+They also have access to insights from other agents, including the listing agent, that may be hard to come by. And they’ll be happy to share them all with you if you just ask.
+**Determine an offer price.** A buyer’s agent is your advocate and will help you figure out the intersection of how much a realistic and good price for you for a particular house is. You may want to [offer a little more or less](https://www.homelight.com/blog/buyer-how-much-should-i-offer-on-a-house/) depending on the features of the house, and an agent will help you figure out the numbers that make the most sense for you and for _this_ house.
+**Write the offer.** Once you know that number, you need to [write the offer](https://www.homelight.com/blog/buyer-real-estate-offer-letter/) in a way that makes the seller likely to accept it. Your agent will do that for you.
+Negotiate with the seller. Your offer price may be [lower than the listed price](https://www.homelight.com/blog/buyer-what-is-reasonable-to-offer-below-asking-price/). At that point, your agent will need to negotiate with the seller on your behalf and help them see why their listed price is too high and why your offer price (or something close to it) is reasonable and fair.
+**Handle[earnest money](https://www.homelight.com/blog/how-to-protect-earnest-money/) and escrow. **When you make an offer for a house, you need to put the deposit money into escrow until you exit negotiations (and the money is either returned to you or claimed by the seller), or you close on the house (and the money is delivered to the seller.)
+**Set a timeline for the deal to close.** The average timeline for closing with a standard mortgage is [44 days](https://mortgagetech.ice.com/data-widget?u=200:100:2:2:2:10&). During that time, you will have several things you need to do to ensure you’re paying a good price for the house. Fortunately, your agent will be helping you with several of them.
+**Attend inspections.** Even if you’re [buying a home with cash](https://www.homelight.com/blog/buyer-buying-a-house-with-cash-process/) and don’t have to have an official [home inspection](https://www.homelight.com/blog/buyer-what-do-home-inspectors-look-for/), do it anyway. An inspection will surface current and potential issues that you should be aware of, even if it’s only for informational purposes.
+**Negotiate post-inspection repairs.** Your inspection may uncover issues or [concerns that should be repaired](https://www.homelight.com/blog/buyer-what-is-reasonable-to-ask-for-after-home-inspection/) before you move into your new home. Your agent will help you figure out which repairs need to happen now, and which ones can wait.
+**Discuss post-appraisal price adjustments.**[Your home appraisal](https://www.homelight.com/blog/what-appraisers-look-for-in-a-house/) might value your dream home differently than you just agreed to pay. If that’s the case and you need to renegotiate your offer price, your agent will help you with that.
+**Complete the[final walkthrough](https://www.homelight.com/blog/buyer-final-walkthrough-checklist/). **You may be distracted by the emotions of walking through your soon-to-be home. Having your agent on hand to help you confirm that basic home systems are working and which unfinished repairs you’re taking on can be really helpful.
+**Hold your hand at closing.** If you’re feeling emotional, your agent can literally or figuratively hold your hand through this big step. They’ll also reassure you by performing an unemotional final check of all the documents to ensure everything is accurate and error-free.
+[ ![A real estate agent showing a couple a house to buy.](data:image/svg+xml;nitro-empty-id=NjY0OjEyNzI=-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTkyIDEwOCIgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxMDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+) Why Hire a Real Estate Agent When You’re Selling or Buying  Learn more  ](https://www.homelight.com/blog/why-hire-a-real-estate-agent/)
+[ ![Several desirable San Francisco homes that a buyer's agent can help a client buy.](data:image/svg+xml;nitro-empty-id=NjgxOjE0OTE=-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTkyIDEwOCIgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxMDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+) What a Buyer’s Agent Does to Help Find Your Next Home  Learn more  ](https://www.homelight.com/blog/buyer-buyers-agent/)
+## Is commission ever negotiable?
+Yes, and some agents will [take less than 2% to 3%](https://www.homelight.com/blog/low-commission-real-estate-companies/) from the get-go. It’s usually smart to ask what kinds of services you’ll be provided so you can make sure the agent isn’t cutting corners anywhere significant. You’ll want to ask for the same services list from flat-fee agents, as well.
+Some brokerages or platforms will also offer you a [rebate at closing](https://www.homelight.com/blog/buyer-home-buyer-rebate/) for a portion of the commission. If you work with an agency that offers a rebate, then at closing, you’ll get a portion of the buyer’s agent’s commission to use for whatever you want, including closing costs. As this is usually percentage-based, how much you get back will depend on your house budget.
+However, Evan Roberts, real estate investor and owner of [Dependable Homebuyers](https://www.dependablehomebuyers.com/) in Baltimore, Maryland, offers a good reason not to negotiate your buyer’s agent commission:
+“We never negotiate the fee. That’s them telling us what they need to be motivated and hustle to get us the contract. With that in mind, the higher their fee, the better the deal that they bring us has to be — the numbers have to work.”
+## What if the same agent represents both the buyer and seller — will I get a break on commission?
+In theory, yes. But it’s more complicated than it seems.
+When a buyer and seller use the same agent to complete a home sale transaction, it’s called _[dual agency](https://www.homelight.com/blog/can-realtor-represent-buyer-and-seller/)_. Most states allow dual agency situations, but there are nine states where dual agency is illegal to greater or lesser degrees:
+  * Alaska
+  * Colorado
+  * Florida
+  * Kansas
+  * Oklahoma
+  * Maryland
+  * Texas
+  * Wyoming
+  * Vermont
+
+
+When two agents at the same brokerage are representing both the buyer and the seller, it’s known as _designated representation_ , and it’s not legal in some states.
+States where designated agency is illegal include:
+  * Colorado
+  * Florida
+  * Kansas
+  * Oklahoma
+
+
+Some states allow brokerages to designate a brokerage licensee to represent the buyer and one to represent the seller, and each brokerage licensee would have a fiduciary responsibility to their party. The states that don’t allow dual agency but _do_ allow designated representation include:
+  * Alaska
+  * Maryland
+  * Texas
+  * Wyoming
+  * Vermont
+
+
+The agent might advertise dual agency as a deal because the total commission paid is lower — perhaps 4% instead of 6% — but it’s all going to the same agent, so they’re earning more overall — 4% in this case, instead of half of 6% (which is 3%.)
+Think carefully before going this route. A dual agent can’t truly represent your best interests if there’s a conflict of interest in the deal.
+More so than in any other deal, a dual agent may be motivated to close the deal, earn the commission, and satisfy two clients at once, even if neither client gets as good a deal as they might have with their own agent acting wholly in their best interests.
+## The price of professional services
+Buyers’ agents are compensated for their expertise, market knowledge, and negotiation skills, typically earning around 2% to 3% of the home’s sale price. With the new homebuying rules rolled out, you can now negotiate your agent’s commission directly, giving you more control. Take advantage of the benefits of working with an experienced agent — it can save time, money, and stress throughout the buying process.
+Ready to make your move? [Partner with a top agent](https://www.homelight.com/find-real-estate-agents) today and let their expertise guide you to the perfect home.
+_Header Image Source: (Athena Sandrini/ Pexels)_
+At HomeLight, our vision is a world where every real estate transaction is simple, certain, and satisfying. Therefore, we promote strict [editorial integrity](https://www.homelight.com/blog/editorial-integrity/) in each of our posts.
+  * [How Real Estate Agent Commissions Work](https://www.homelight.com/blog/tag/how-real-estate-agent-commissions-work/)
+
+
+  * [How Real Estate Agent Commissions Work](https://www.homelight.com/blog/tag/how-real-estate-agent-commissions-work/)
+
+
+  * [ Share on LinkedIn ](https://www.linkedin.com/shareArticle?mini=true&url=https://www.homelight.com/blog/buyer-buyers-agents-real-estate-commissions/&title=Buyers%20Agent%20Commissions%20Explained%20for%20First-Time%20Shoppers)
+  * [ Share on Twitter ](https://twitter.com/intent/tweet?text=Buyers%20Agent%20Commissions%20Explained%20for%20First-Time%20Shoppers&url=https://www.homelight.com/blog/buyer-buyers-agents-real-estate-commissions/)
+  * [ Share on Facebook ](https://www.facebook.com/sharer/sharer.php?u=https://www.homelight.com/blog/buyer-buyers-agents-real-estate-commissions/&t=Buyers%20Agent%20Commissions%20Explained%20for%20First-Time%20Shoppers)
+  * Share by Email
+  * [ Save to Pinterest ](https://www.pinterest.com/pin/create/button/)
+
+
+![Image of post author](data:image/svg+xml;nitro-empty-id=Nzg5OjE0Ng==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTUwIDE1MCIgd2lkdGg9IjE1MCIgaGVpZ2h0PSIxNTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+)
+[Amna Shamim](https://www.homelight.com/blog/author/amna-shamim/)
+Contributing Author
+  * Email
+  * [ LinkedIn ](https://www.linkedin.com/in/amna-shamim)
+
+
+Amna Shamim is a writer and digital marketing consultant who works with local and e-commerce businesses, ensuring they are easily findable online to and trusted by their clients. Her words have been featured in Glamour Magazine, Business Insider, Entrepreneur, Huff Post, Thrive Global, BUST, Paste, and other publications.
+![Image of post author](data:image/svg+xml;nitro-empty-id=ODE5OjE1MA==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTUwIDE1MCIgd2lkdGg9IjE1MCIgaGVpZ2h0PSIxNTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+)
+[Sam Dadofalza](https://www.homelight.com/blog/author/samdadofalza/)
+Associate Editor
+  * Email
+
+
+Sam Dadofalza is an associate editor at HomeLight, where she crafts insightful stories to guide homebuyers and sellers through the intricacies of real estate transactions. She has previously contributed to digital marketing firms and online business publications, honing her skills in creating engaging and informative content.
+**Share** this post
+  * [ Share on LinkedIn ](https://www.linkedin.com/shareArticle?mini=true&url=https://www.homelight.com/blog/buyer-buyers-agents-real-estate-commissions/&title=Buyers%20Agent%20Commissions%20Explained%20for%20First-Time%20Shoppers)
+  * [ Share on Twitter ](https://twitter.com/intent/tweet?text=Buyers%20Agent%20Commissions%20Explained%20for%20First-Time%20Shoppers&url=https://www.homelight.com/blog/buyer-buyers-agents-real-estate-commissions/)
+  * [ Share on Facebook ](https://www.facebook.com/sharer/sharer.php?u=https://www.homelight.com/blog/buyer-buyers-agents-real-estate-commissions/&t=Buyers%20Agent%20Commissions%20Explained%20for%20First-Time%20Shoppers)
+  * Share by Email
+  * [ Save to Pinterest ](https://www.pinterest.com/pin/create/button/)
+
+
+Learn more
+[Agent commission calculator](https://www.homelight.com/real-estate-agent-commissions)
+[Who pays the Realtor fee?](https://www.homelight.com/blog/realtor-fees/)
+[How much do agents make?](https://www.homelight.com/blog/real-estate-agent-commission/)
+[Can I negotiate a commission rate?](https://www.homelight.com/blog/how-to-negotiate-real-estate-commission/)
+Selecting a real estate agent
+[What does a real estate agent do?](https://www.homelight.com/blog/buyer-what-does-a-real-estate-agent-do/)
+[Questions to ask a real estate agent](https://www.homelight.com/blog/buyer-questions-to-ask-a-real-estate-agent/)
+[How to interview a real estate agent](https://www.homelight.com/blog/how-to-interview-a-real-estate-agent/)
+[Signs of a bad real estate agent](https://www.homelight.com/blog/signs-of-a-bad-real-estate-agent/)
+[Find an agent](https://www.homelight.com/find-agent/quiz/buyer#/qaas=0/)
+## Related posts
+[ ![Blue houses where the buyer's agent has gotten commission.](data:image/svg+xml;nitro-empty-id=OTIxOjExMDA=-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDMyIDI0MyIgd2lkdGg9IjQzMiIgaGVpZ2h0PSIyNDMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+) Buyers  Does A Buyer’s Agent Get a Commission?  ](https://www.homelight.com/blog/buyer-does-a-buyers-agent-get-a-commission/)
+  * Popular Posts 
+  * Latest Posts 
+
+
+  * [ ![A pen and paper to write questions to ask a real estate agent.](data:image/svg+xml;nitro-empty-id=OTU4OjE0NjI=-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTkyIDEwOCIgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxMDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+) Buyers  Questions You Should Ask Before Hiring a Real Estate Agent  ](https://www.homelight.com/blog/buyer-questions-to-ask-a-real-estate-agent/)
+  * [ ![An aerial view of houses you can buy using a real estate agent.](data:image/svg+xml;nitro-empty-id=OTc1OjE1NTE=-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTkyIDEwMiIgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxMDIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+) Buyers  How to Fire My Real Estate Agent? 10 Things You Need to Know  ](https://www.homelight.com/blog/buyer-how-to-fire-my-real-estate-agent/)
+  * [ ![Several desirable San Francisco homes that a buyer's agent can help a client buy.](data:image/svg+xml;nitro-empty-id=OTkyOjE0OTE=-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTkyIDEwOCIgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxMDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+) Buyers  What a Buyer’s Agent Does to Help Find Your Next Home  ](https://www.homelight.com/blog/buyer-buyers-agent/)
+  * [ ![Blue houses where the buyer's agent has gotten commission.](data:image/svg+xml;nitro-empty-id=MTAwOToxMTM4-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTkyIDEwOCIgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxMDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+) Buyers  Does A Buyer’s Agent Get a Commission?  ](https://www.homelight.com/blog/buyer-does-a-buyers-agent-get-a-commission/)
+  * [ ![A home whose buyer is learning how to pick a real estate agent](data:image/svg+xml;nitro-empty-id=MTAyNjoxNDMy-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTkyIDEwOCIgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxMDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+) Buyers  How to Pick a Real Estate Agent for Buying a Home  ](https://www.homelight.com/blog/buyer-how-to-pick-a-real-estate-agent/)
+
+
+  * [ ![](data:image/svg+xml;nitro-empty-id=MTA0NToxMjYw-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTkyIDEwOCIgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxMDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+) Logistics  Square Footage Calculator  ](https://www.homelight.com/blog/square-footage-calculator/)
+  * [ ![A house that an owner might sell to we buy houses in Irvington](data:image/svg+xml;nitro-empty-id=MTA2MjoxMjQy-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTkyIDEwOCIgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxMDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+) Selling Advice  We Buy Houses Irvington: Top 5 Companies  ](https://www.homelight.com/blog/we-buy-houses-in-irvington/)
+  * [ ![A house that an owner might sell to we buy houses companies in Cherry Hill](data:image/svg+xml;nitro-empty-id=MTA3OToxMzE0-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTkyIDEwOCIgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxMDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+) Selling Advice  We Buy Houses Cherry Hill: Top 4 Companies  ](https://www.homelight.com/blog/we-buy-houses-cherry-hill/)
+  * [ ![A house that an owner might sell to we buy houses companies in Commerce City, CO](data:image/svg+xml;nitro-empty-id=MTA5NjoxMzUw-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTkyIDEwOCIgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxMDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+) Selling Advice  We Buy Houses Commerce City, CO: Top 4 Companies  ](https://www.homelight.com/blog/we-buy-houses-commerce-city-co/)
+  * [ ![A house whose owner might sell to we buy houses companies in Brookline](data:image/svg+xml;nitro-empty-id=MTExMzoxMjgw-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTkyIDEwOCIgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxMDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+) Selling Advice  We Buy Houses Brookline: Top 4 Companies  ](https://www.homelight.com/blog/we-buy-houses-brookline/)
+
+
+### Take the next step
+Find a top real estate agent in your area to help you buy your dream home.
+Find an Agent
+**Find top real estate agents in major US cities**
+  * [Albuquerque top real estate agents](https://www.homelight.com/albuquerque-nm/top-real-estate-agents)
+  * [Atlanta top real estate agents](https://www.homelight.com/atlanta-ga/top-real-estate-agents)
+  * [Austin top real estate agents](https://www.homelight.com/austin-tx/top-real-estate-agents)
+  * [Baltimore top real estate agents](https://www.homelight.com/baltimore-md/top-real-estate-agents)
+  * [Beverly Hills top real estate agents](https://www.homelight.com/beverly-hills-ca/top-real-estate-agents)
+  * [Birmingham top real estate agents](https://www.homelight.com/birmingham-al/top-real-estate-agents)
+  * [Charlotte top real estate agents](https://www.homelight.com/charlotte-nc/top-real-estate-agents)
+  * [Chattanooga top real estate agents](https://www.homelight.com/chattanooga-tn/top-real-estate-agents)
+  * [Chicago top real estate agents](https://www.homelight.com/chicago-il/top-real-estate-agents)
+  * [Cleveland top real estate agents](https://www.homelight.com/cleveland-oh/top-real-estate-agents)
+  * [Columbus top real estate agents](https://www.homelight.com/columbus-oh/top-real-estate-agents)
+  * [Dallas top real estate agents](https://www.homelight.com/dallas-tx/top-real-estate-agents)
+  * [Denver top real estate agents](https://www.homelight.com/denver-co/top-real-estate-agents)
+  * [Detroit top real estate agents](https://www.homelight.com/detroit-mi/top-real-estate-agents)
+  * [Fort Lauderdale top real estate agents](https://www.homelight.com/fort-lauderdale-fl/top-real-estate-agents)
+  * [Fort Wayne top real estate agents](https://www.homelight.com/fort-wayne-in/top-real-estate-agents)
+  * [Fort Worth top real estate agents](https://www.homelight.com/fort-worth-tx/top-real-estate-agents)
+  * [Grand Rapids top real estate agents](https://www.homelight.com/grand-rapids-mi/top-real-estate-agents)
+  * [Greensboro top real estate agents](https://www.homelight.com/greensboro-nc/top-real-estate-agents)
+  * [Greenville top real estate agents](https://www.homelight.com/greenville-sc/top-real-estate-agents)
+  * [Houston top real estate agents](https://www.homelight.com/houston-tx/top-real-estate-agents)
+  * [Indianapolis top real estate agents](https://www.homelight.com/indianapolis-in/top-real-estate-agents)
+  * [Jacksonville top real estate agents](https://www.homelight.com/jacksonville-fl/top-real-estate-agents)
+  * [Kansas City top real estate agents](https://www.homelight.com/kansas-city-mo/top-real-estate-agents)
+  * [Las Vegas top real estate agents](https://www.homelight.com/las-vegas-nv/top-real-estate-agents)
+  * [Madison top real estate agents](https://www.homelight.com/madison-wi/top-real-estate-agents)
+  * [Miami top real estate agents](https://www.homelight.com/miami-fl/top-real-estate-agents)
+  * [Myrtle Beach top real estate agents](https://www.homelight.com/myrtle-beach-sc/top-real-estate-agents)
+  * [Naples top real estate agents](https://www.homelight.com/naples-fl/top-real-estate-agents)
+  * [Nashville top real estate agents](https://www.homelight.com/nashville-tn/top-real-estate-agents)
+  * [New Orleans top real estate agents](https://www.homelight.com/new-orleans-la/top-real-estate-agents)
+  * [Ocala top real estate agents](https://www.homelight.com/ocala-fl/top-real-estate-agents)
+  * [Orlando top real estate agents](https://www.homelight.com/orlando-fl/top-real-estate-agents)
+  * [Palm Beach top real estate agents](https://www.homelight.com/palm-beach-fl/top-real-estate-agents)
+  * [Phoenix top real estate agents](https://www.homelight.com/phoenix-az/top-real-estate-agents)
+  * [Port St. Lucie top real estate agents](https://www.homelight.com/port-st-lucie-fl/top-real-estate-agents)
+  * [Portland top real estate agents](https://www.homelight.com/portland-or/top-real-estate-agents)
+  * [Raleigh top real estate agents](https://www.homelight.com/raleigh-nc/top-real-estate-agents)
+  * [San Antonio top real estate agents](https://www.homelight.com/san-antonio-tx/top-real-estate-agents)
+  * [San Diego top real estate agents](https://www.homelight.com/san-diego-ca/top-real-estate-agents)
+  * [Sarasota top real estate agents](https://www.homelight.com/sarasota-fl/top-real-estate-agents)
+  * [Savannah top real estate agents](https://www.homelight.com/savannah-ga/top-real-estate-agents)
+  * [Scottsdale top real estate agents](https://www.homelight.com/scottsdale-az/top-real-estate-agents)
+  * [Seattle top real estate agents](https://www.homelight.com/seattle-wa/top-real-estate-agents)
+  * [Spokane top real estate agents](https://www.homelight.com/spokane-wa/top-real-estate-agents)
+  * [St. Louis top real estate agents](https://www.homelight.com/st-louis-mo/top-real-estate-agents)
+  * [St. Petersburg top real estate agents](https://www.homelight.com/st-petersburg-fl/top-real-estate-agents)
+  * [Tampa top real estate agents](https://www.homelight.com/tampa-fl/top-real-estate-agents)
+  * [Tucson top real estate agents](https://www.homelight.com/tucson-az/top-real-estate-agents)
+  * [Vancouver top real estate agents](https://www.homelight.com/vancouver-wa/top-real-estate-agents)
+
+
+Show more  Show less 
+**Find top real estate agents by state**
+  * [Alabama top real estate agents](https://www.homelight.com/states/al)
+  * [Alaska top real estate agents](https://www.homelight.com/states/ak)
+  * [Arizona top real estate agents](https://www.homelight.com/states/az)
+  * [Arkansas top real estate agents](https://www.homelight.com/states/ar)
+  * [California top real estate agents](https://www.homelight.com/states/ca)
+  * [Colorado top real estate agents](https://www.homelight.com/states/co)
+  * [Connecticut top real estate agents](https://www.homelight.com/states/ct)
+  * [Delaware top real estate agents](https://www.homelight.com/states/de)
+  * [District of Columbia top real estate agents](https://www.homelight.com/states/dc)
+  * [Florida top real estate agents](https://www.homelight.com/states/fl)
+  * [Georgia top real estate agents](https://www.homelight.com/states/ga)
+  * [Hawaii top real estate agents](https://www.homelight.com/states/hi)
+  * [Idaho top real estate agents](https://www.homelight.com/states/id)
+  * [Illinois top real estate agents](https://www.homelight.com/states/il)
+  * [Indiana top real estate agents](https://www.homelight.com/states/in)
+  * [Iowa top real estate agents](https://www.homelight.com/states/ia)
+  * [Kansas top real estate agents](https://www.homelight.com/states/ks)
+  * [Kentucky top real estate agents](https://www.homelight.com/states/ky)
+  * [Louisiana top real estate agents](https://www.homelight.com/states/la)
+  * [Maine top real estate agents](https://www.homelight.com/states/me)
+  * [Maryland top real estate agents](https://www.homelight.com/states/md)
+  * [Massachusetts top real estate agents](https://www.homelight.com/states/ma)
+  * [Michigan top real estate agents](https://www.homelight.com/states/mi)
+  * [Minnesota top real estate agents](https://www.homelight.com/states/mn)
+  * [Mississippi top real estate agents](https://www.homelight.com/states/ms)
+  * [Missouri top real estate agents](https://www.homelight.com/states/mo)
+  * [Montana top real estate agents](https://www.homelight.com/states/mt)
+  * [Nebraska top real estate agents](https://www.homelight.com/states/ne)
+  * [Nevada top real estate agents](https://www.homelight.com/states/nv)
+  * [New Hampshire top real estate agents](https://www.homelight.com/states/nh)
+  * [New Jersey top real estate agents](https://www.homelight.com/states/nj)
+  * [New Mexico top real estate agents](https://www.homelight.com/states/nm)
+  * [New York top real estate agents](https://www.homelight.com/states/ny)
+  * [North Carolina top real estate agents](https://www.homelight.com/states/nc)
+  * [North Dakota top real estate agents](https://www.homelight.com/states/nd)
+  * [Ohio top real estate agents](https://www.homelight.com/states/oh)
+  * [Oklahoma top real estate agents](https://www.homelight.com/states/ok)
+  * [Oregon top real estate agents](https://www.homelight.com/states/or)
+  * [Pennsylvania top real estate agents](https://www.homelight.com/states/pa)
+  * [Rhode Island top real estate agents](https://www.homelight.com/states/ri)
+  * [South Carolina top real estate agents](https://www.homelight.com/states/sc)
+  * [South Dakota top real estate agents](https://www.homelight.com/states/sd)
+  * [Tennessee top real estate agents](https://www.homelight.com/states/tn)
+  * [Texas top real estate agents](https://www.homelight.com/states/tx)
+  * [Utah top real estate agents](https://www.homelight.com/states/ut)
+  * [Vermont top real estate agents](https://www.homelight.com/states/vt)
+  * [Virginia top real estate agents](https://www.homelight.com/states/va)
+  * [Washington top real estate agents](https://www.homelight.com/states/wa)
+  * [West Virginia top real estate agents](https://www.homelight.com/states/wv)
+  * [Wisconsin top real estate agents](https://www.homelight.com/states/wi)
+  * [Wyoming top real estate agents](https://www.homelight.com/states/wy)
+
+
+Show more  Show less 
+**Search homes for sale by city**
+  * [Albuquerque homes for sale](https://www.homelight.com/albuquerque-nm/homes-for-sale)
+  * [Atlanta homes for sale](https://www.homelight.com/atlanta-ga/homes-for-sale)
+  * [Austin homes for sale](https://www.homelight.com/austin-tx/homes-for-sale)
+  * [Beverly Hills homes for sale](https://www.homelight.com/beverly-hills-ca/homes-for-sale)
+  * [Birmingham homes for sale](https://www.homelight.com/birmingham-al/homes-for-sale)
+  * [Charlotte homes for sale](https://www.homelight.com/charlotte-nc/homes-for-sale)
+  * [Chattanooga homes for sale](https://www.homelight.com/chattanooga-tn/homes-for-sale)
+  * [Chicago homes for sale](https://www.homelight.com/chicago-il/homes-for-sale)
+  * [Cleveland homes for sale](https://www.homelight.com/cleveland-oh/homes-for-sale)
+  * [Columbus homes for sale](https://www.homelight.com/columbus-oh/homes-for-sale)
+  * [Dallas homes for sale](https://www.homelight.com/dallas-tx/homes-for-sale)
+  * [Denver homes for sale](https://www.homelight.com/denver-co/homes-for-sale)
+  * [Detroit homes for sale](https://www.homelight.com/detroit-mi/homes-for-sale)
+  * [Fort Lauderdale homes for sale](https://www.homelight.com/fort-lauderdale-fl/homes-for-sale)
+  * [Fort Wayne homes for sale](https://www.homelight.com/fort-wayne-in/homes-for-sale)
+  * [Fort Worth homes for sale](https://www.homelight.com/fort-worth-tx/homes-for-sale)
+  * [Grand Rapids homes for sale](https://www.homelight.com/grand-rapids-mi/homes-for-sale)
+  * [Greensboro homes for sale](https://www.homelight.com/greensboro-nc/homes-for-sale)
+  * [Greenville homes for sale](https://www.homelight.com/greenville-sc/homes-for-sale)
+  * [Houston homes for sale](https://www.homelight.com/houston-tx/homes-for-sale)
+  * [Indianapolis homes for sale](https://www.homelight.com/indianapolis-in/homes-for-sale)
+  * [Jacksonville homes for sale](https://www.homelight.com/jacksonville-fl/homes-for-sale)
+  * [Kansas City homes for sale](https://www.homelight.com/kansas-city-mo/homes-for-sale)
+  * [Las Vegas homes for sale](https://www.homelight.com/las-vegas-nv/homes-for-sale)
+  * [Madison homes for sale](https://www.homelight.com/madison-wi/homes-for-sale)
+  * [Miami homes for sale](https://www.homelight.com/miami-fl/homes-for-sale)
+  * [Myrtle Beach homes for sale](https://www.homelight.com/myrtle-beach-sc/homes-for-sale)
+  * [Naples homes for sale](https://www.homelight.com/naples-fl/homes-for-sale)
+  * [Nashville homes for sale](https://www.homelight.com/nashville-tn/homes-for-sale)
+  * [New Orleans homes for sale](https://www.homelight.com/new-orleans-la/homes-for-sale)
+  * [Ocala homes for sale](https://www.homelight.com/ocala-fl/homes-for-sale)
+  * [Orlando homes for sale](https://www.homelight.com/orlando-fl/homes-for-sale)
+  * [Palm Beach homes for sale](https://www.homelight.com/palm-beach-fl/homes-for-sale)
+  * [Phoenix homes for sale](https://www.homelight.com/phoenix-az/homes-for-sale)
+  * [Port St. Lucie homes for sale](https://www.homelight.com/port-st-lucie-fl/homes-for-sale)
+  * [Portland homes for sale](https://www.homelight.com/portland-or/homes-for-sale)
+  * [Raleigh homes for sale](https://www.homelight.com/raleigh-nc/homes-for-sale)
+  * [San Antonio homes for sale](https://www.homelight.com/san-antonio-tx/homes-for-sale)
+  * [San Diego homes for sale](https://www.homelight.com/san-diego-ca/homes-for-sale)
+  * [Sarasota homes for sale](https://www.homelight.com/sarasota-fl/homes-for-sale)
+  * [Savannah homes for sale](https://www.homelight.com/savannah-ga/homes-for-sale)
+  * [Scottsdale homes for sale](https://www.homelight.com/scottsdale-az/homes-for-sale)
+  * [Seattle homes for sale](https://www.homelight.com/seattle-wa/homes-for-sale)
+  * [Spokane homes for sale](https://www.homelight.com/spokane-wa/homes-for-sale)
+  * [St. Louis homes for sale](https://www.homelight.com/st-louis-mo/homes-for-sale)
+  * [St. Petersburg homes for sale](https://www.homelight.com/st-petersburg-fl/homes-for-sale)
+  * [Tampa homes for sale](https://www.homelight.com/tampa-fl/homes-for-sale)
+  * [Tucson homes for sale](https://www.homelight.com/tucson-az/homes-for-sale)
+  * [Vancouver homes for sale](https://www.homelight.com/vancouver-wa/homes-for-sale)
+
+
+Show more  Show less 
+**Search homes for sale by state**
+  * [Alabama homes for sale](https://www.homelight.com/states/al/homes-for-sale)
+  * [Arizona homes for sale](https://www.homelight.com/states/az/homes-for-sale)
+  * [Arkansas homes for sale](https://www.homelight.com/states/ar/homes-for-sale)
+  * [California homes for sale](https://www.homelight.com/states/ca/homes-for-sale)
+  * [Colorado homes for sale](https://www.homelight.com/states/co/homes-for-sale)
+  * [Connecticut homes for sale](https://www.homelight.com/states/ct/homes-for-sale)
+  * [Delaware homes for sale](https://www.homelight.com/states/de/homes-for-sale)
+  * [Florida homes for sale](https://www.homelight.com/states/fl/homes-for-sale)
+  * [Georgia homes for sale](https://www.homelight.com/states/ga/homes-for-sale)
+  * [Idaho homes for sale](https://www.homelight.com/states/id/homes-for-sale)
+  * [Illinois homes for sale](https://www.homelight.com/states/il/homes-for-sale)
+  * [Indiana homes for sale](https://www.homelight.com/states/in/homes-for-sale)
+  * [Iowa homes for sale](https://www.homelight.com/states/ia/homes-for-sale)
+  * [Kansas homes for sale](https://www.homelight.com/states/ks/homes-for-sale)
+  * [Kentucky homes for sale](https://www.homelight.com/states/ky/homes-for-sale)
+  * [Louisiana homes for sale](https://www.homelight.com/states/la/homes-for-sale)
+  * [Maine homes for sale](https://www.homelight.com/states/me/homes-for-sale)
+  * [Maryland homes for sale](https://www.homelight.com/states/md/homes-for-sale)
+  * [Massachusetts homes for sale](https://www.homelight.com/states/ma/homes-for-sale)
+  * [Michigan homes for sale](https://www.homelight.com/states/mi/homes-for-sale)
+  * [Minnesota homes for sale](https://www.homelight.com/states/mn/homes-for-sale)
+  * [Mississippi homes for sale](https://www.homelight.com/states/ms/homes-for-sale)
+  * [Missouri homes for sale](https://www.homelight.com/states/mo/homes-for-sale)
+  * [Montana homes for sale](https://www.homelight.com/states/mt/homes-for-sale)
+  * [Nebraska homes for sale](https://www.homelight.com/states/ne/homes-for-sale)
+  * [Nevada homes for sale](https://www.homelight.com/states/nv/homes-for-sale)
+  * [New Hampshire homes for sale](https://www.homelight.com/states/nh/homes-for-sale)
+  * [New Jersey homes for sale](https://www.homelight.com/states/nj/homes-for-sale)
+  * [New Mexico homes for sale](https://www.homelight.com/states/nm/homes-for-sale)
+  * [New York homes for sale](https://www.homelight.com/states/ny/homes-for-sale)
+  * [North Carolina homes for sale](https://www.homelight.com/states/nc/homes-for-sale)
+  * [North Dakota homes for sale](https://www.homelight.com/states/nd/homes-for-sale)
+  * [Ohio homes for sale](https://www.homelight.com/states/oh/homes-for-sale)
+  * [Oklahoma homes for sale](https://www.homelight.com/states/ok/homes-for-sale)
+  * [Oregon homes for sale](https://www.homelight.com/states/or/homes-for-sale)
+  * [Pennsylvania homes for sale](https://www.homelight.com/states/pa/homes-for-sale)
+  * [Rhode Island homes for sale](https://www.homelight.com/states/ri/homes-for-sale)
+  * [South Carolina homes for sale](https://www.homelight.com/states/sc/homes-for-sale)
+  * [South Dakota homes for sale](https://www.homelight.com/states/sd/homes-for-sale)
+  * [Tennessee homes for sale](https://www.homelight.com/states/tn/homes-for-sale)
+  * [Texas homes for sale](https://www.homelight.com/states/tx/homes-for-sale)
+  * [Utah homes for sale](https://www.homelight.com/states/ut/homes-for-sale)
+  * [Vermont homes for sale](https://www.homelight.com/states/vt/homes-for-sale)
+  * [Virginia homes for sale](https://www.homelight.com/states/va/homes-for-sale)
+  * [Washington homes for sale](https://www.homelight.com/states/wa/homes-for-sale)
+  * [Washington, D.C. homes for sale](https://www.homelight.com/states/dc/homes-for-sale)
+  * [West Virginia homes for sale](https://www.homelight.com/states/wv/homes-for-sale)
+  * [Wisconsin homes for sale](https://www.homelight.com/states/wi/homes-for-sale)
+  * [Wyoming homes for sale](https://www.homelight.com/states/wy/homes-for-sale)
+
+
+Show more  Show less 
+**Sell your home fast in major US cities**
+  * [Sell your home fast in Albuquerque](https://www.homelight.com/albuquerque-nm/sell-house-fast)
+  * [Sell your home fast in Atlanta](https://www.homelight.com/atlanta-ga/sell-house-fast)
+  * [Sell your home fast in Austin](https://www.homelight.com/austin-tx/sell-house-fast)
+  * [Sell your home fast in Baltimore](https://www.homelight.com/baltimore-md/sell-house-fast)
+  * [Sell your home fast in Beverly Hills](https://www.homelight.com/beverly-hills-ca/sell-house-fast)
+  * [Sell your home fast in Birmingham](https://www.homelight.com/birmingham-al/sell-house-fast)
+  * [Sell your home fast in Charlotte](https://www.homelight.com/charlotte-nc/sell-house-fast)
+  * [Sell your home fast in Chattanooga](https://www.homelight.com/chattanooga-tn/sell-house-fast)
+  * [Sell your home fast in Chicago](https://www.homelight.com/chicago-il/sell-house-fast)
+  * [Sell your home fast in Cleveland](https://www.homelight.com/cleveland-oh/sell-house-fast)
+  * [Sell your home fast in Columbus](https://www.homelight.com/columbus-oh/sell-house-fast)
+  * [Sell your home fast in Dallas](https://www.homelight.com/dallas-tx/sell-house-fast)
+  * [Sell your home fast in Denver](https://www.homelight.com/denver-co/sell-house-fast)
+  * [Sell your home fast in Detroit](https://www.homelight.com/detroit-mi/sell-house-fast)
+  * [Sell your home fast in Fort Lauderdale](https://www.homelight.com/fort-lauderdale-fl/sell-house-fast)
+  * [Sell your home fast in Fort Wayne](https://www.homelight.com/fort-wayne-in/sell-house-fast)
+  * [Sell your home fast in Fort Worth](https://www.homelight.com/fort-worth-tx/sell-house-fast)
+  * [Sell your home fast in Grand Rapids](https://www.homelight.com/grand-rapids-mi/sell-house-fast)
+  * [Sell your home fast in Greensboro](https://www.homelight.com/greensboro-nc/sell-house-fast)
+  * [Sell your home fast in Greenville](https://www.homelight.com/greenville-sc/sell-house-fast)
+  * [Sell your home fast in Houston](https://www.homelight.com/houston-tx/sell-house-fast)
+  * [Sell your home fast in Indianapolis](https://www.homelight.com/indianapolis-in/sell-house-fast)
+  * [Sell your home fast in Jacksonville](https://www.homelight.com/jacksonville-fl/sell-house-fast)
+  * [Sell your home fast in Kansas City](https://www.homelight.com/kansas-city-mo/sell-house-fast)
+  * [Sell your home fast in Las Vegas](https://www.homelight.com/las-vegas-nv/sell-house-fast)
+  * [Sell your home fast in Madison](https://www.homelight.com/madison-wi/sell-house-fast)
+  * [Sell your home fast in Miami](https://www.homelight.com/miami-fl/sell-house-fast)
+  * [Sell your home fast in Myrtle Beach](https://www.homelight.com/myrtle-beach-sc/sell-house-fast)
+  * [Sell your home fast in Naples](https://www.homelight.com/naples-fl/sell-house-fast)
+  * [Sell your home fast in Nashville](https://www.homelight.com/nashville-tn/sell-house-fast)
+  * [Sell your home fast in New Orleans](https://www.homelight.com/new-orleans-la/sell-house-fast)
+  * [Sell your home fast in Ocala](https://www.homelight.com/ocala-fl/sell-house-fast)
+  * [Sell your home fast in Orlando](https://www.homelight.com/orlando-fl/sell-house-fast)
+  * [Sell your home fast in Palm Beach](https://www.homelight.com/palm-beach-fl/sell-house-fast)
+  * [Sell your home fast in Phoenix](https://www.homelight.com/phoenix-az/sell-house-fast)
+  * [Sell your home fast in Port St. Lucie](https://www.homelight.com/port-st-lucie-fl/sell-house-fast)
+  * [Sell your home fast in Portland](https://www.homelight.com/portland-or/sell-house-fast)
+  * [Sell your home fast in Raleigh](https://www.homelight.com/raleigh-nc/sell-house-fast)
+  * [Sell your home fast in San Antonio](https://www.homelight.com/san-antonio-tx/sell-house-fast)
+  * [Sell your home fast in San Diego](https://www.homelight.com/san-diego-ca/sell-house-fast)
+  * [Sell your home fast in Sarasota](https://www.homelight.com/sarasota-fl/sell-house-fast)
+  * [Sell your home fast in Savannah](https://www.homelight.com/savannah-ga/sell-house-fast)
+  * [Sell your home fast in Scottsdale](https://www.homelight.com/scottsdale-az/sell-house-fast)
+  * [Sell your home fast in Seattle](https://www.homelight.com/seattle-wa/sell-house-fast)
+  * [Sell your home fast in Spokane](https://www.homelight.com/spokane-wa/sell-house-fast)
+  * [Sell your home fast in St. Louis](https://www.homelight.com/st-louis-mo/sell-house-fast)
+  * [Sell your home fast in St. Petersburg](https://www.homelight.com/st-petersburg-fl/sell-house-fast)
+  * [Sell your home fast in Tampa](https://www.homelight.com/tampa-fl/sell-house-fast)
+  * [Sell your home fast in Tucson](https://www.homelight.com/tucson-az/sell-house-fast)
+  * [Sell your home fast in Vancouver](https://www.homelight.com/vancouver-wa/sell-house-fast)
+
+
+Show more  Show less 
+**For Sellers**
+  * [Find a Listing Agent](https://www.homelight.com/find-real-estate-agents)
+  * [Simple Sale](https://www.homelight.com/simple)
+  * [HomeLight Buy Before You Sell](https://www.homelight.com/buy-before-you-sell)
+  * [Home Value Estimator](https://www.homelight.com/home-value-estimator)
+  * [Sellers Resource Center](https://www.homelight.com/blog/)
+  * [Sell Your Home Fast](https://www.homelight.com/sell-fast)
+  * [Best Time To Sell House](https://www.homelight.com/best-time-to-sell-house)
+  * [Commissions Calculator](https://www.homelight.com/real-estate-agent-commissions)
+  * [Net Proceeds Calculator](https://www.homelight.com/net-proceeds-calculator)
+  * [How To Sell Your Home Gulde](https://www.homelight.com/blog/guide-how-to-sell-a-house/)
+
+
+**For Buyers**
+  * [Find a Buyer’s Agent](https://www.homelight.com/find-real-estate-agents/buying)
+  * [Buyers Resource Center](https://www.homelight.com/blog/buy/)
+  * [Home Affordability Calculator](https://www.homelight.com/how-much-house-can-i-afford)
+  * [Down Payment Calculator](https://www.homelight.com/down-payment-calculator)
+  * [Find Homes for Sale](https://www.homelight.com/homes)
+
+
+**For Agents**
+  * [Sign up to be an agent partner](https://www.homelight.com/elite)
+  * [Submit a client](https://agent.homelight.com/agent-onboarding)
+  * [Agent Resource Center](https://www.homelight.com/blog/agents/)
+  * [Agent Help Center](https://help.homelight.com/)
+  * [Agent Marketing Toolkit](https://poweredby.homelight.com/)
+  * [Agent Directory](https://www.homelight.com/states)
+
+
+**Company**
+  * [About HomeLight](https://www.homelight.com/about-us)
+  * [Testimonials](https://www.homelight.com/testimonials)
+  * [Careers](https://www.homelight.com/careers)
+  * [Press](https://www.homelight.com/press)
+  * [Affiliate Program](https://affiliate.homelight.com)
+  * [Real Estate Investors](https://www.homelight.com/ibuyers)
+  * [Sign In](https://www.homelight.com/client/sign-in)
+
+
+![credits icon](data:image/svg+xml;nitro-empty-id=MTU4NzoyNTI=-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMzIgMzIiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4=) ![credits icon](data:image/svg+xml;nitro-empty-id=MTU4ODoyNDk=-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgODAgMjgiIHdpZHRoPSI4MCIgaGVpZ2h0PSIyOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4=)
+HomeLight has an A+ rating with the  
+Better Business Bureau
+[ ![social icon](data:image/svg+xml;nitro-empty-id=MTU5NToxODQ=-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4=) ](https://www.facebook.com/gohomelight/) [ ![social icon](data:image/svg+xml;nitro-empty-id=MTU5ODoxODE=-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4=) ](https://twitter.com/gohomelight) [ ![social icon](data:image/svg+xml;nitro-empty-id=MTYwMToxODM=-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4=) ](https://www.instagram.com/gohomelight/) [ ![social icon](data:image/svg+xml;nitro-empty-id=MTYwNDoxODE=-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4=) ](https://www.youtube.com/channel/UCimugR9XF17-OZ7B9fNnxWw) [ ![social icon](data:image/svg+xml;nitro-empty-id=MTYwNzoxODU=-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4=) ](https://www.pinterest.com/homelightapp/) [ ![social icon](data:image/svg+xml;nitro-empty-id=MTYxMDoxNzY=-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4=) ](https://www.homelight.com/blog/feed/)
+© HomeLight, Inc. 1375 N Scottsdale Road, Suite 140, Scottsdale, AZ 85257. 
+  * [Privacy Policy](https://www.homelight.com/privacy-policy)
+  * [Terms of Service](https://www.homelight.com/terms)
+
+

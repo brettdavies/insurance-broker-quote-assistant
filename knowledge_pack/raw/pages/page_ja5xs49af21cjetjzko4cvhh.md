@@ -1,0 +1,320 @@
+[Skip to content](https://www.investopedia.com/car-insurance-premiums-on-the-rise-are-personal-injury-attorneys-to-blame-11742480#main)
+[ Investopedia ](https://www.investopedia.com/)
+[Live](https://www.investopedia.com/dow-jones-today-11072025-11845583)
+  * Search
+Please fill out this field. 
+  * [Newsletters](https://www.investopedia.com/car-insurance-premiums-on-the-rise-are-personal-injury-attorneys-to-blame-11742480)
+
+
+Search
+Please fill out this field. 
+  * [ News ](https://www.investopedia.com/news-4427706)
+News
+    * [ Markets ](https://www.investopedia.com/markets-news-4427704)
+    * [ Companies ](https://www.investopedia.com/company-news-4427705)
+    * [ Earnings ](https://www.investopedia.com/earnings-reports-5218419)
+    * [ CD Rates ](https://www.investopedia.com/certificates-deposit-news-7111770)
+    * [ Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5184598)
+    * [ Economy ](https://www.investopedia.com/economic-news-5218422)
+    * [ Government ](https://www.investopedia.com/political-news-4689737)
+    * [ Crypto ](https://www.investopedia.com/cryptocurrency-news-5114163)
+    * [ Live Markets News ](https://www.investopedia.com/live-markets-news-11713202)
+    * [ Personal Finance ](https://www.investopedia.com/personal-finance-news-5114159)
+    * [ View All ](https://www.investopedia.com/news-4427706)
+  * [ Investing ](https://www.investopedia.com/investing-4427685)
+Investing
+    * [ Stocks ](https://www.investopedia.com/stocks-4427785)
+    * [ Cryptocurrency ](https://www.investopedia.com/cryptocurrency-4427699)
+    * [ Bonds ](https://www.investopedia.com/bonds-4689778)
+    * [ ETFs ](https://www.investopedia.com/etfs-4427784)
+    * [ Options and Derivatives ](https://www.investopedia.com/options-and-derivatives-trading-4689663)
+    * [ Commodities ](https://www.investopedia.com/commodities-4427780)
+    * [ Trading ](https://www.investopedia.com/trading-4427765)
+    * [ Automated Investing ](https://www.investopedia.com/financial-technology-and-automated-investing-4689759)
+    * [ Brokers ](https://www.investopedia.com/brokers-4689772)
+    * [ Fundamental Analysis ](https://www.investopedia.com/fundamental-analysis-4689757)
+    * [ View All ](https://www.investopedia.com/investing-4427685)
+  * [ Simulator ](https://www.investopedia.com/simulator/?inv_to_sim=global_nav)
+Simulator
+    * [ Login / Portfolio ](https://www.investopedia.com/simulator/portfolio)
+    * [ Trade ](https://www.investopedia.com/simulator/trade/stocks)
+    * [ Research ](https://www.investopedia.com/simulator/research)
+    * [ My Games ](https://www.investopedia.com/simulator/games/my-games)
+    * [ Leaderboard ](https://www.investopedia.com/simulator/games)
+  * [ Banking ](https://www.investopedia.com/banking-4427754)
+Banking
+    * [ Savings Accounts ](https://www.investopedia.com/savings-accounts-4689728)
+    * [ Certificates of Deposit (CDs) ](https://www.investopedia.com/certificate-of-deposits-4689733)
+    * [ Money Market Accounts ](https://www.investopedia.com/money-market-account-4689730)
+    * [ Checking Accounts ](https://www.investopedia.com/checking-accounts-4689732)
+    * [ View All ](https://www.investopedia.com/banking-4427754)
+  * [ Personal Finance ](https://www.investopedia.com/personal-finance-4427760)
+Personal Finance
+    * [ Budgeting and Saving ](https://www.investopedia.com/budgeting-and-savings-4427755)
+    * [ Personal Loans ](https://www.investopedia.com/personal-loans-4689729)
+    * [ Insurance ](https://www.investopedia.com/insurance-4427716)
+    * [ Mortgages ](https://www.investopedia.com/mortgage-4689703)
+    * [ Credit and Debt ](https://www.investopedia.com/credit-and-debt-4689724)
+    * [ Student Loans ](https://www.investopedia.com/student-loans-4689727)
+    * [ Taxes ](https://www.investopedia.com/taxes-4427724)
+    * [ Credit Cards ](https://www.investopedia.com/credit-card-4689721)
+    * [ Financial Literacy ](https://www.investopedia.com/financial-literacy-resource-center-7151950)
+    * [ Retirement ](https://www.investopedia.com/retirement-planning-4689695)
+    * [ View All ](https://www.investopedia.com/personal-finance-4427760)
+  * [ Economy ](https://www.investopedia.com/economy-4689801)
+Economy
+    * [ Government and Policy ](https://www.investopedia.com/government-and-policy-4689793)
+    * [ Monetary Policy ](https://www.investopedia.com/monetary-policy-4689792)
+    * [ Fiscal Policy ](https://www.investopedia.com/fiscal-policy-4689796)
+    * [ Economics ](https://www.investopedia.com/economics-4689800)
+    * [ View All ](https://www.investopedia.com/economy-4689801)
+  * [ Reviews ](https://www.investopedia.com/financial-product-reviews-7110783)
+Reviews
+    * [ Best Online Brokers ](https://www.investopedia.com/best-online-brokers-4587872)
+    * [ Best Crypto Exchanges ](https://www.investopedia.com/best-crypto-exchanges-5071855)
+    * [ Best Savings Rates ](https://www.investopedia.com/high-yield-savings-accounts-4770633)
+    * [ Best CD Rates ](https://www.investopedia.com/best-cd-rates-4770214)
+    * [ Best Life Insurance ](https://www.investopedia.com/the-best-life-insurance-companies-8763666)
+    * [ Best Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5094943)
+    * [ Best Robo-Advisors ](https://www.investopedia.com/the-best-robo-advisors-8764849)
+    * [ Best Personal Loans ](https://www.investopedia.com/the-best-personal-loans-8761582)
+    * [ Best Debt Relief Companies ](https://www.investopedia.com/the-best-debt-relief-companies-8763179)
+    * [ View All ](https://www.investopedia.com/financial-product-reviews-7110783)
+
+
+  * [Newsletters](https://www.investopedia.com/car-insurance-premiums-on-the-rise-are-personal-injury-attorneys-to-blame-11742480)
+
+
+Follow Us
+  * [ ](https://www.facebook.com/Investopedia/)
+  * [ ](https://www.instagram.com/investopedia/?hl=en)
+  * [ ](https://www.youtube.com/c/investopedia)
+  * [ ](https://www.tiktok.com/@investopedia)
+  * [ ](https://www.linkedin.com/company/investopedia-ulc)
+
+
+  * [ News ](https://www.investopedia.com/news-4427706)
+    * [ Markets ](https://www.investopedia.com/markets-news-4427704)
+    * [ Companies ](https://www.investopedia.com/company-news-4427705)
+    * [ Earnings ](https://www.investopedia.com/earnings-reports-5218419)
+    * [ CD Rates ](https://www.investopedia.com/certificates-deposit-news-7111770)
+    * [ Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5184598)
+    * [ Economy ](https://www.investopedia.com/economic-news-5218422)
+    * [ Government ](https://www.investopedia.com/political-news-4689737)
+    * [ Crypto ](https://www.investopedia.com/cryptocurrency-news-5114163)
+    * [ Live Markets News ](https://www.investopedia.com/live-markets-news-11713202)
+    * [ Personal Finance ](https://www.investopedia.com/personal-finance-news-5114159)
+    * [ View All ](https://www.investopedia.com/news-4427706)
+  * [ Investing ](https://www.investopedia.com/investing-4427685)
+    * [ Stocks ](https://www.investopedia.com/stocks-4427785)
+    * [ Cryptocurrency ](https://www.investopedia.com/cryptocurrency-4427699)
+    * [ Bonds ](https://www.investopedia.com/bonds-4689778)
+    * [ ETFs ](https://www.investopedia.com/etfs-4427784)
+    * [ Options and Derivatives ](https://www.investopedia.com/options-and-derivatives-trading-4689663)
+    * [ Commodities ](https://www.investopedia.com/commodities-4427780)
+    * [ Trading ](https://www.investopedia.com/trading-4427765)
+    * [ Automated Investing ](https://www.investopedia.com/financial-technology-and-automated-investing-4689759)
+    * [ Brokers ](https://www.investopedia.com/brokers-4689772)
+    * [ Fundamental Analysis ](https://www.investopedia.com/fundamental-analysis-4689757)
+    * [ View All ](https://www.investopedia.com/investing-4427685)
+  * [ Simulator ](https://www.investopedia.com/simulator/?inv_to_sim=global_nav)
+    * [ Login / Portfolio ](https://www.investopedia.com/simulator/portfolio)
+    * [ Trade ](https://www.investopedia.com/simulator/trade/stocks)
+    * [ Research ](https://www.investopedia.com/simulator/research)
+    * [ My Games ](https://www.investopedia.com/simulator/games/my-games)
+    * [ Leaderboard ](https://www.investopedia.com/simulator/games)
+  * [ Banking ](https://www.investopedia.com/banking-4427754)
+    * [ Savings Accounts ](https://www.investopedia.com/savings-accounts-4689728)
+    * [ Certificates of Deposit (CDs) ](https://www.investopedia.com/certificate-of-deposits-4689733)
+    * [ Money Market Accounts ](https://www.investopedia.com/money-market-account-4689730)
+    * [ Checking Accounts ](https://www.investopedia.com/checking-accounts-4689732)
+    * [ View All ](https://www.investopedia.com/banking-4427754)
+  * [ Personal Finance ](https://www.investopedia.com/personal-finance-4427760)
+    * [ Budgeting and Saving ](https://www.investopedia.com/budgeting-and-savings-4427755)
+    * [ Personal Loans ](https://www.investopedia.com/personal-loans-4689729)
+    * [ Insurance ](https://www.investopedia.com/insurance-4427716)
+    * [ Mortgages ](https://www.investopedia.com/mortgage-4689703)
+    * [ Credit and Debt ](https://www.investopedia.com/credit-and-debt-4689724)
+    * [ Student Loans ](https://www.investopedia.com/student-loans-4689727)
+    * [ Taxes ](https://www.investopedia.com/taxes-4427724)
+    * [ Credit Cards ](https://www.investopedia.com/credit-card-4689721)
+    * [ Financial Literacy ](https://www.investopedia.com/financial-literacy-resource-center-7151950)
+    * [ Retirement ](https://www.investopedia.com/retirement-planning-4689695)
+    * [ View All ](https://www.investopedia.com/personal-finance-4427760)
+  * [ Economy ](https://www.investopedia.com/economy-4689801)
+    * [ Government and Policy ](https://www.investopedia.com/government-and-policy-4689793)
+    * [ Monetary Policy ](https://www.investopedia.com/monetary-policy-4689792)
+    * [ Fiscal Policy ](https://www.investopedia.com/fiscal-policy-4689796)
+    * [ Economics ](https://www.investopedia.com/economics-4689800)
+    * [ View All ](https://www.investopedia.com/economy-4689801)
+  * [ Reviews ](https://www.investopedia.com/financial-product-reviews-7110783)
+    * [ Best Online Brokers ](https://www.investopedia.com/best-online-brokers-4587872)
+    * [ Best Crypto Exchanges ](https://www.investopedia.com/best-crypto-exchanges-5071855)
+    * [ Best Savings Rates ](https://www.investopedia.com/high-yield-savings-accounts-4770633)
+    * [ Best CD Rates ](https://www.investopedia.com/best-cd-rates-4770214)
+    * [ Best Life Insurance ](https://www.investopedia.com/the-best-life-insurance-companies-8763666)
+    * [ Best Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5094943)
+    * [ Best Robo-Advisors ](https://www.investopedia.com/the-best-robo-advisors-8764849)
+    * [ Best Personal Loans ](https://www.investopedia.com/the-best-personal-loans-8761582)
+    * [ Best Debt Relief Companies ](https://www.investopedia.com/the-best-debt-relief-companies-8763179)
+    * [ View All ](https://www.investopedia.com/financial-product-reviews-7110783)
+
+
+  * Top Stories
+  * [ This Famous Short Seller Is Betting Against AI ](https://www.investopedia.com/short-sellers-now-betting-big-against-ai-11842994)
+  * [ Here's the Average Income for 35–44-Year-Olds ](https://www.investopedia.com/are-you-keeping-up-here-s-the-average-income-for-35-44-year-olds-11841889)
+  * [ This Bank Can Help Lower Your Phone Bill ](https://www.investopedia.com/this-clever-bank-account-lowers-your-phone-bill-and-pays-4-20-on-your-savings-11844440)
+  * [ Here's the Average Salary for People in Transition ](https://www.investopedia.com/career-change-average-salary-11839914)
+
+
+Table of Contents
+Expand
+Table of Contents
+  * [Rising Car Insurance Rates](https://www.investopedia.com/car-insurance-premiums-on-the-rise-are-personal-injury-attorneys-to-blame-11742480#toc-rising-car-insurance-rates)
+  * [Litigation and Insurance Premiums](https://www.investopedia.com/car-insurance-premiums-on-the-rise-are-personal-injury-attorneys-to-blame-11742480#toc-litigation-and-insurance-premiums)
+  * [Other Factors Behind the Rise](https://www.investopedia.com/car-insurance-premiums-on-the-rise-are-personal-injury-attorneys-to-blame-11742480#toc-other-factors-behind-the-rise)
+  * [The Bottom Line](https://www.investopedia.com/car-insurance-premiums-on-the-rise-are-personal-injury-attorneys-to-blame-11742480#toc-the-bottom-line)
+
+
+# Car Insurance Premiums On The Rise: Are Personal Injury Attorneys To Blame?
+Litigation is among the many reasons for soaring car insurance premiums. 
+By
+[Carrie Pallardy](https://www.investopedia.com/carrie-pallardy-5225331)
+[Full Bio](https://www.investopedia.com/carrie-pallardy-5225331)
+Carrie Pallardy has more than nine years of experience writing about a range of topics, including healthcare and cybersecurity. Her expertise includes personal finance, insurance, real estate, and investing. She has a bachelor's degree from University of Illinois Chicago. 
+Learn about our  [editorial policies](https://www.investopedia.com/legal-4768893#editorial-policy)
+Published May 30, 2025
+Fact checked by
+[Rebecca McClay](https://www.investopedia.com/contributors/68092/)
+Fact checked by Rebecca McClay
+[Full Bio](https://www.investopedia.com/contributors/68092/)
+  * [ ](https://www.linkedin.com/in/rebeccamcclay/)
+  * [ ](https://twitter.com/rmcclay)
+
+
+Rebecca McClay has 10+ years of experience writing and editing content. Rebecca is an expert in personal finance, business, and financial markets. She received her master's in business journalism from Arizona State University and her bachelor's degree in journalism from the University of Maryland. 
+Learn about our  [editorial policies](https://www.investopedia.com/legal-4768893#editorial-policy)
+![A lawyer meets with clients.](https://www.investopedia.com/thmb/_qQgIkqVHl-gGyZC_-a33Hd_0S0=/1500x0/filters:no_upscale\(\):max_bytes\(150000\):strip_icc\(\):format\(webp\)/GettyImages-1252669860-a38c6ca9213a4b139700976e321744f2.jpg)
+Maskot / Getty Images
+Close
+Over the past year, the price of [car insurance](https://www.investopedia.com/articles/pf/08/beginner-guide-auto-insurance.asp) has increased 6.4%, according to the April 2025 [Consumer Price Index (CPI)](https://www.investopedia.com/terms/c/consumerpriceindex.asp).1 That increase is a continuation of [the price surge](https://www.investopedia.com/car-insurance-premiums-have-soared-what-is-behind-the-spike-8773774) observed over the past several years. An uptick in personal injury litigation is one of the factors linked to increasingly expensive premiums.2  
+
+### Key Takeaways
+  * Car insurance rates are expected to rise 7.5% in 2025.
+  * Litigation could be driving up insurers' costs and drivers' premiums.
+  * Other factors, such as risky driving behavior, claim severity, and inflation, are also impacting auto insurance premiums.
+  * Consumers can navigate the current environment by looking for ways to [cut their auto insurance costs](https://www.investopedia.com/how-to-cut-car-insurance-costs-5188163).  
+
+
+
+##  Rising Car Insurance Rates 
+Car insurance rates have been increasing every month since December 2021. The surge in pricing has slowed somewhat in recent years, but it hasn't stopped. According to Value Penguin, in 2023, they went up 12%, and in 2024, they went up 16.5%.3
+The upward trend is expected to continue in 2025 with an anticipated increase of 7.5%.3 Rising car insurance premiums can make the cost of owning a car, especially if financed with an [auto loan](https://www.investopedia.com/the-best-auto-loan-rates-11685069), all the more expensive. 
+##  Litigation and Insurance Premiums 
+A study commissioned by LexisNexis Risk Solutions found that 85% of claimants were approached by an attorney after they were involved in car accident.4 Among those who decided to hire an attorney, more than half ended up with a higher settlement amount. 
+Marketing tactics, including billboards and television ads, have been linked to a growth in product liability and personal injury cases.5
+Third-party litigation can increase costs for insurers who have to pay for legal expenses and potentially higher settlements. And these costs translate into higher premiums for consumers.  
+
+##  Other Factors Behind the Rise 
+While litigation has a role to play in premium prices, it is part of a larger convergence of factors. Car insurance prices are also being driven up by: 
+Advertiser Disclosure 
+× 
+The offers that appear in this table are from partnerships from which Investopedia receives compensation. This compensation may impact how and where listings appear. Investopedia does not include all offers available in the marketplace.
+Popular Accounts from Our Partners
+  * **Risky driving behavior** : Risky driving behavior is a persistent concern. Violations for distracted driving and driving under the influence are increasing, leading insurers to up their pricing.4
+  * **Increase in claim severity** : The severity of auto insurance claims has increased since the COVID pandemic, adding to insurers' costs.4
+  * **Increased repair costs** : Material and labor is getting more expensive, which in turn affects premiums.6  
+
+
+
+##  The Bottom Line 
+Most of the factors, including litigation activity, leading to the increase in car insurance rates are outside of the individual driver's control. [Consumers can costs](https://www.investopedia.com/articles/pf/08/car-insurance-costs.asp) by bundling insurance policies and seeking discounts for their responsible driving habits. And they can [shop around](https://www.investopedia.com/more-people-shop-around-for-cheaper-auto-insurance-as-inflation-pushes-rates-up-8683035) to get the best possible rate. 
+Sponsored
+Optimize Your Financial Journey
+[](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssMpIyAFNREos1rE96mUta9qrWb5ByAMKCCMzSjVb2jluoKPbpKbhlqigPuuZW_4vnz5CxjVk23KOoNpYkDzuF9keUjIeZ94RVY1NzFX6wHY9f2dz83DgJEqykc7ojE4MGnOFr53Tyf0CwHKoBDj5XQr-Qa9ZnfBuhNz3DT1_gGkvX8VSPNeCqEHKxeVgPLwJXqgg1vidbhFZHU2EUeA9EytqMP5zv_cUv9UeTQHfEdkKvl9vPs8_nblbHaLQFmHV7fJ8GfKtmbWkQIKwc1IROtOQlAFEGC7pSu270lgAztwQ1yqyw6dzKQbAxyHybAqR6Cid-xDldMvMFsj2IA44wQ_aHtvtL33hlv83iB1c2x_8VBmM2jJL73igvLWFDhb7gEL6_jul6FTnZnYWg7DI6O7nlM0v3VE9bSzYK6E4Ax_xyamfIKqzL0ptaFqyIOB8sGW1F4IA&sai=AMfl-YRz4XOvzbMMVUEjST-xuBEer-IZScO8I-_KRFMCKslr1O5n-chkAFej7xYXv2c6WMdZiXzzQzyT-Uyv-B6r8J-yR2ODqVtxoGnrmNNnFTQWg2-ShWwrh_-m6fK4DZA2vCS7Pf97XMcoESeqRD6IoQMBSB78NMC5FWKgM4PAYeSfLXaFX3_v6iRE07FtPq4LAyRODG5su_z4Oiy9vd3RLlLwVFJ05gsmS-A4ovivrV_Ve6AYNwN2e20DrgxENpH-QUBoESO2PWuQ8q1vZHrXhvTdcsDrIA&sig=Cg0ArKJSzNrm-zJ5cY0mEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N510001.110872INVESTOPEDIAUS0/B23381186.385380135;dc_trk_aid=576309121;dc_trk_cid=208405767;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1) Personal financial advice [shouldn’t cost a fortune.](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssMpIyAFNREos1rE96mUta9qrWb5ByAMKCCMzSjVb2jluoKPbpKbhlqigPuuZW_4vnz5CxjVk23KOoNpYkDzuF9keUjIeZ94RVY1NzFX6wHY9f2dz83DgJEqykc7ojE4MGnOFr53Tyf0CwHKoBDj5XQr-Qa9ZnfBuhNz3DT1_gGkvX8VSPNeCqEHKxeVgPLwJXqgg1vidbhFZHU2EUeA9EytqMP5zv_cUv9UeTQHfEdkKvl9vPs8_nblbHaLQFmHV7fJ8GfKtmbWkQIKwc1IROtOQlAFEGC7pSu270lgAztwQ1yqyw6dzKQbAxyHybAqR6Cid-xDldMvMFsj2IA44wQ_aHtvtL33hlv83iB1c2x_8VBmM2jJL73igvLWFDhb7gEL6_jul6FTnZnYWg7DI6O7nlM0v3VE9bSzYK6E4Ax_xyamfIKqzL0ptaFqyIOB8sGW1F4IA&sai=AMfl-YRz4XOvzbMMVUEjST-xuBEer-IZScO8I-_KRFMCKslr1O5n-chkAFej7xYXv2c6WMdZiXzzQzyT-Uyv-B6r8J-yR2ODqVtxoGnrmNNnFTQWg2-ShWwrh_-m6fK4DZA2vCS7Pf97XMcoESeqRD6IoQMBSB78NMC5FWKgM4PAYeSfLXaFX3_v6iRE07FtPq4LAyRODG5su_z4Oiy9vd3RLlLwVFJ05gsmS-A4ovivrV_Ve6AYNwN2e20DrgxENpH-QUBoESO2PWuQ8q1vZHrXhvTdcsDrIA&sig=Cg0ArKJSzNrm-zJ5cY0mEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N510001.110872INVESTOPEDIAUS0/B23381186.385380135;dc_trk_aid=576309121;dc_trk_cid=208405767;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1) With Vanguard Personal Advisor®, you can get advice that's [tailored to your unique goals](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssMpIyAFNREos1rE96mUta9qrWb5ByAMKCCMzSjVb2jluoKPbpKbhlqigPuuZW_4vnz5CxjVk23KOoNpYkDzuF9keUjIeZ94RVY1NzFX6wHY9f2dz83DgJEqykc7ojE4MGnOFr53Tyf0CwHKoBDj5XQr-Qa9ZnfBuhNz3DT1_gGkvX8VSPNeCqEHKxeVgPLwJXqgg1vidbhFZHU2EUeA9EytqMP5zv_cUv9UeTQHfEdkKvl9vPs8_nblbHaLQFmHV7fJ8GfKtmbWkQIKwc1IROtOQlAFEGC7pSu270lgAztwQ1yqyw6dzKQbAxyHybAqR6Cid-xDldMvMFsj2IA44wQ_aHtvtL33hlv83iB1c2x_8VBmM2jJL73igvLWFDhb7gEL6_jul6FTnZnYWg7DI6O7nlM0v3VE9bSzYK6E4Ax_xyamfIKqzL0ptaFqyIOB8sGW1F4IA&sai=AMfl-YRz4XOvzbMMVUEjST-xuBEer-IZScO8I-_KRFMCKslr1O5n-chkAFej7xYXv2c6WMdZiXzzQzyT-Uyv-B6r8J-yR2ODqVtxoGnrmNNnFTQWg2-ShWwrh_-m6fK4DZA2vCS7Pf97XMcoESeqRD6IoQMBSB78NMC5FWKgM4PAYeSfLXaFX3_v6iRE07FtPq4LAyRODG5su_z4Oiy9vd3RLlLwVFJ05gsmS-A4ovivrV_Ve6AYNwN2e20DrgxENpH-QUBoESO2PWuQ8q1vZHrXhvTdcsDrIA&sig=Cg0ArKJSzNrm-zJ5cY0mEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N510001.110872INVESTOPEDIAUS0/B23381186.385380135;dc_trk_aid=576309121;dc_trk_cid=208405767;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1) and based on Vanguard's time-tested investment strategies. They’ll partner with you to [create a financial plan](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssMpIyAFNREos1rE96mUta9qrWb5ByAMKCCMzSjVb2jluoKPbpKbhlqigPuuZW_4vnz5CxjVk23KOoNpYkDzuF9keUjIeZ94RVY1NzFX6wHY9f2dz83DgJEqykc7ojE4MGnOFr53Tyf0CwHKoBDj5XQr-Qa9ZnfBuhNz3DT1_gGkvX8VSPNeCqEHKxeVgPLwJXqgg1vidbhFZHU2EUeA9EytqMP5zv_cUv9UeTQHfEdkKvl9vPs8_nblbHaLQFmHV7fJ8GfKtmbWkQIKwc1IROtOQlAFEGC7pSu270lgAztwQ1yqyw6dzKQbAxyHybAqR6Cid-xDldMvMFsj2IA44wQ_aHtvtL33hlv83iB1c2x_8VBmM2jJL73igvLWFDhb7gEL6_jul6FTnZnYWg7DI6O7nlM0v3VE9bSzYK6E4Ax_xyamfIKqzL0ptaFqyIOB8sGW1F4IA&sai=AMfl-YRz4XOvzbMMVUEjST-xuBEer-IZScO8I-_KRFMCKslr1O5n-chkAFej7xYXv2c6WMdZiXzzQzyT-Uyv-B6r8J-yR2ODqVtxoGnrmNNnFTQWg2-ShWwrh_-m6fK4DZA2vCS7Pf97XMcoESeqRD6IoQMBSB78NMC5FWKgM4PAYeSfLXaFX3_v6iRE07FtPq4LAyRODG5su_z4Oiy9vd3RLlLwVFJ05gsmS-A4ovivrV_Ve6AYNwN2e20DrgxENpH-QUBoESO2PWuQ8q1vZHrXhvTdcsDrIA&sig=Cg0ArKJSzNrm-zJ5cY0mEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N510001.110872INVESTOPEDIAUS0/B23381186.385380135;dc_trk_aid=576309121;dc_trk_cid=208405767;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1) and help you stick with it over the long term. [Learn more](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssMpIyAFNREos1rE96mUta9qrWb5ByAMKCCMzSjVb2jluoKPbpKbhlqigPuuZW_4vnz5CxjVk23KOoNpYkDzuF9keUjIeZ94RVY1NzFX6wHY9f2dz83DgJEqykc7ojE4MGnOFr53Tyf0CwHKoBDj5XQr-Qa9ZnfBuhNz3DT1_gGkvX8VSPNeCqEHKxeVgPLwJXqgg1vidbhFZHU2EUeA9EytqMP5zv_cUv9UeTQHfEdkKvl9vPs8_nblbHaLQFmHV7fJ8GfKtmbWkQIKwc1IROtOQlAFEGC7pSu270lgAztwQ1yqyw6dzKQbAxyHybAqR6Cid-xDldMvMFsj2IA44wQ_aHtvtL33hlv83iB1c2x_8VBmM2jJL73igvLWFDhb7gEL6_jul6FTnZnYWg7DI6O7nlM0v3VE9bSzYK6E4Ax_xyamfIKqzL0ptaFqyIOB8sGW1F4IA&sai=AMfl-YRz4XOvzbMMVUEjST-xuBEer-IZScO8I-_KRFMCKslr1O5n-chkAFej7xYXv2c6WMdZiXzzQzyT-Uyv-B6r8J-yR2ODqVtxoGnrmNNnFTQWg2-ShWwrh_-m6fK4DZA2vCS7Pf97XMcoESeqRD6IoQMBSB78NMC5FWKgM4PAYeSfLXaFX3_v6iRE07FtPq4LAyRODG5su_z4Oiy9vd3RLlLwVFJ05gsmS-A4ovivrV_Ve6AYNwN2e20DrgxENpH-QUBoESO2PWuQ8q1vZHrXhvTdcsDrIA&sig=Cg0ArKJSzNrm-zJ5cY0mEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N510001.110872INVESTOPEDIAUS0/B23381186.385380135;dc_trk_aid=576309121;dc_trk_cid=208405767;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1) about the benefits of customized advice and see what Vanguard Personal Advisor® can do for you. 
+Paid non-client promotion.
+Article Sources
+Investopedia requires writers to use primary sources to support their work. These include white papers, government data, original reporting, and interviews with industry experts. We also reference original research from other reputable publishers where appropriate. You can learn more about the standards we follow in producing accurate, unbiased content in our [editorial policy.](https://www.investopedia.com/legal-4768893#EditorialPolicy)
+  1. US Bureau of Labor Statistics. "[Consumer Price Index Summary](https://www.bls.gov/news.release/cpi.nr0.htm)."
+  2. Insurance Information Institute. "[Legal System Abuse Adding to Increasing Auto Insurance Costs, Creating a New Asset Class of Investors Betting on Litigation](https://www.iii.org/press-release/legal-system-abuse-adding-to-increasing-auto-insurance-costs-creating-a-new-asset-class-of-investors-betting-on-litigation-022724)."
+  3. Value Penguin. "[State of Auto Insurance in 2025](https://www.valuepenguin.com/state-of-auto-insurance-2025)."
+  4. LexisNexis Risk Solutions. "[LexisNexis U.S. Auto Insurance Trends Report](https://risk.lexisnexis.com/insights-resources/white-paper/auto-insurance-trends-report)."
+  5. Insurance Information Institute. "[US Consumers See Link Between Attorney Involvement in Claims and Higher Auto Insurance Costs: New IRC Report](https://insuranceindustryblog.iii.org/us-consumers-see-link-between-attorney-involvement-in-claims-and-higher-auto-insurance-costs-new-irc-report/)."
+  6. CNBC. "[Why Car Insurance Costs Are Skyrocketing and Leading to Higher Inflation](https://www.cnbc.com/2024/04/11/why-car-insurance-costs-are-skyrocketing-leading-to-higher-inflation.html)."
+
+
+Read more
+  * [Personal Finance](https://www.investopedia.com/personal-finance-4427760)
+  * [Insurance](https://www.investopedia.com/insurance-4427716)
+  * [Car Insurance](https://www.investopedia.com/car-insurance-4427710)
+
+
+Partner Links
+## Related Articles
+[ How Parking Tickets Affect Your Driving Record and Insurance ](https://www.investopedia.com/do-parking-tickets-stay-on-your-driving-record-5184743) [ Understanding Rebuilt Car Titles: Pros, Cons, and Buyer Considerations ](https://www.investopedia.com/is-it-worth-buying-a-car-with-a-rebuilt-title-5179621) [ How to Maximize Tax Deductions for Car Expenses: 6 Proven Strategies ](https://www.investopedia.com/financial-edge/0311/6-ways-to-write-off-your-car-expenses.aspx) [ Understanding Capitalized Cost Reduction: Key Benefits and Applications ](https://www.investopedia.com/terms/c/capitalized-cost-reduction.asp) [ Rent-to-Own Cars: Simplified Guide to No-Credit-Check Options ](https://www.investopedia.com/articles/personal-finance/082315/renttoown-car-how-it-works.asp) [ Understanding Personal Injury Protection: Coverage, Limits & Benefits ](https://www.investopedia.com/terms/p/personal-injury-protection-pip.asp) [ Essential Disability Insurance Tips for Business Owners ](https://www.investopedia.com/articles/personal-finance/061214/disability-insurance-business-owners.asp) [ Loan Protection Insurance: Benefits, Costs, and Considerations ](https://www.investopedia.com/articles/pf/08/loan-protection-insurance.asp)
+[ Borrow Money From Life Insurance: How It Works and Key Considerations ](https://www.investopedia.com/ask/answers/111314/how-can-i-borrow-money-my-life-insurance-policy.asp) [ Understanding the 5 Basic Risk Management Methods for Better Health ](https://www.investopedia.com/articles/investing-strategy/082816/methods-handling-risk-quick-guide.asp) [ Understanding Term Life Insurance: Types, Benefits, and How It Works ](https://www.investopedia.com/ask/answers/08/term-life-insurance.asp) [ Best Dental Insurance Companies for November 2025 ](https://www.investopedia.com/the-best-dental-insurance-companies-8763833) [ 5 Best Universal Life Insurance Companies of November 2025 ](https://www.investopedia.com/the-best-universal-life-insurance-8762927) [ Is Life Insurance Worth It? Exploring When It Might Not Be ](https://www.investopedia.com/financial-edge/0312/when-life-insurance-isnt-worth-it.aspx) [ Best Term Life Insurance Companies of November 2025 ](https://www.investopedia.com/the-best-term-life-insurance-8764257) [ Understanding Cash Value in Permanent Life Insurance: A Comprehensive Guide ](https://www.investopedia.com/articles/personal-finance/082114/how-cash-value-builds-life-insurance-policy.asp)
+[ Investopedia ](https://www.investopedia.com/)
+[Newsletter Sign Up](https://www.investopedia.com/car-insurance-premiums-on-the-rise-are-personal-injury-attorneys-to-blame-11742480)
+Follow Us
+  * [ ](https://www.facebook.com/Investopedia/)
+  * [ ](https://www.instagram.com/investopedia/?hl=en)
+  * [ ](https://www.linkedin.com/company/investopedia-ulc)
+  * [ ](https://www.tiktok.com/@investopedia)
+  * [ ](https://www.youtube.com/c/investopedia)
+
+
+  * [News](https://www.investopedia.com/news-4427706)
+  * [Investing](https://www.investopedia.com/investing-4427685)
+  * [Simulator](https://www.investopedia.com/simulator/?inv_to_sim=global_nav)
+  * [Banking](https://www.investopedia.com/banking-4427754)
+  * [Personal Finance](https://www.investopedia.com/personal-finance-4427760)
+  * [Economy](https://www.investopedia.com/economy-4689801)
+  * [Reviews](https://www.investopedia.com/financial-product-reviews-7110783)
+  * [Dictionary](https://www.investopedia.com/financial-term-dictionary-4769738)
+
+
+  * [ About Us ](https://www.investopedia.com/about-us-5093223)
+  * [ Editorial Process ](https://www.investopedia.com/legal-4768893#toc-editorial-policy)
+  * [ Careers ](https://www.people.inc/careers)
+  * [ Contact Us ](https://www.people.inc/contact)
+  * [ Privacy Policy ](https://www.people.inc/brands-privacy)
+  * [ Terms of Service ](https://www.people.inc/brands-termsofservice)
+  * [ Advertise ](https://www.people.inc/advertising)
+  * Your Privacy Choices
+
+
+  * [#](https://www.investopedia.com/terms-beginning-with-num-4769350)
+  * [A](https://www.investopedia.com/terms-beginning-with-a-4769351)
+  * [B](https://www.investopedia.com/terms-beginning-with-b-4769352)
+  * [C](https://www.investopedia.com/terms-beginning-with-c-4769353)
+  * [D](https://www.investopedia.com/terms-beginning-with-d-4769354)
+  * [E](https://www.investopedia.com/terms-beginning-with-e-4769355)
+  * [F](https://www.investopedia.com/terms-beginning-with-f-4769356)
+  * [G](https://www.investopedia.com/terms-beginning-with-g-4769357)
+  * [H](https://www.investopedia.com/terms-beginning-with-h-4769358)
+  * [I](https://www.investopedia.com/terms-beginning-with-i-4769359)
+  * [J](https://www.investopedia.com/terms-beginning-with-j-4769360)
+  * [K](https://www.investopedia.com/terms-beginning-with-k-4769361)
+  * [L](https://www.investopedia.com/terms-beginning-with-l-4769362)
+  * [M](https://www.investopedia.com/terms-beginning-with-m-4769363)
+  * [N](https://www.investopedia.com/terms-beginning-with-n-4769364)
+  * [O](https://www.investopedia.com/terms-beginning-with-o-4769365)
+  * [P](https://www.investopedia.com/terms-beginning-with-p-4769366)
+  * [Q](https://www.investopedia.com/terms-beginning-with-q-4769367)
+  * [R](https://www.investopedia.com/terms-beginning-with-r-4769368)
+  * [S](https://www.investopedia.com/terms-beginning-with-s-4769369)
+  * [T](https://www.investopedia.com/terms-beginning-with-t-4769370)
+  * [U](https://www.investopedia.com/terms-beginning-with-u-4769371)
+  * [V](https://www.investopedia.com/terms-beginning-with-v-4769372)
+  * [W](https://www.investopedia.com/terms-beginning-with-w-4769373)
+  * [X](https://www.investopedia.com/terms-beginning-with-x-4769374)
+  * [Y](https://www.investopedia.com/terms-beginning-with-y-4769375)
+  * [Z](https://www.investopedia.com/terms-beginning-with-z-4769376)
+
+
+Investopedia is part of the [People Inc.](https://www.people.inc) publishing family. 
+Newsletter Sign Up
+Newsletter Sign Up
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. 
+Cookies Settings Accept All Cookies
+![](https://sync.graph.bluecava.com/ds.png?p=9274e5db-ddcb-11ea-a80b-0242ac110002&segment=4l28r4sz3bl3555wt2hyave1w6u68syw&uid=&CampaignID=303C&Channel=investopedia&CreativeID=&Placement=11742480&MAID=&Keyword=&Medium=&Source=&PageName=www.investopedia.com%2Fcar-insurance-premiums-on-the-rise-are-personal-injury-attorneys-to-blame-11742480&Event=&Key1=4173514&Key2=4427760&Key3=4427716&Key4=4427710&Key5=)

@@ -1,0 +1,132 @@
+What Is an Elevation Certificate? | Progressive
+What Is an Elevation Certificate? | Progressive
+[Skip to Main Content](https://www.progressive.com/answers/flood-insurance-elevation-certificate/#main)
+[![Progressive Insurance logo, Home page](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt483e097d64d66a25/66476d224ac76ee67740f2d5/logo-progressive.svg)](https://www.progressive.com/)
+  * Explore Products
+  * Claims
+  * About Us
+  * Resources
+
+
+  * [1-866-749-7436 , Call us](tel:1-866-749-7436)
+  * [](https://www.progressive.com/rp/login?cntgrp=A)
+
+
+  * [Answers](https://www.progressive.com/answers/)
+  * Articles by Product 
+  * Articles by Topic 
+
+
+# What is an elevation certificate?
+An elevation certificate is a document created by professional land surveyors that defines characteristics of your property using Federal Emergency Management Agency (FEMA) guidelines. It works to enforce local building ordinances and define flood insurance rates. The certificate includes the building's location in relation to flood zones, the lowest elevation point — often a basement or crawl space — and special building characteristics like an attached garage. If your home is in one of the Special Flood Hazard Area (SFHA) flood zones, an elevation certificate may be mandatory.
+4 minminute to read
+Explore [Progressive's editorial standards](https://www.progressive.com/answers/editorial-standards/) for Answers articles to find out why you can trust the insurance information you find here.
+  1. [![Progressive Insurance Homepage](https://www.progressive.com/content/images/domainprogressive/wh3/breadcrumbs/p-mark_breadcrumb.svg)](https://www.progressive.com/es/)
+  2. [Answers](https://www.progressive.com/answers/)
+  3. [Home insurance information](https://www.progressive.com/answers/home-insurance/)
+  4. What is an elevation certificate?
+
+Get quote
+## When is an elevation certificate required?
+If you live in a high-risk flood zone, you’ll likely need to obtain an elevation certificate. You won’t be able to purchase a flood insurance policy until you’ve presented a valid elevation certificate. [Flood insurance](https://www.progressive.com/flood-insurance/), often required by your lender, is critical if your home is in a high-risk flood zone because your home insurance policy typically won’t cover damage from flooding. FEMA has a [flood map](https://msc.fema.gov/portal/search) that helps determine the risk of flooding based on your address.
+If you live in a high-risk flood zone, you'll likely need to obtain an elevation certificate and will be required to supply an elevation certificate for a flood insurance policy.
+You may also be required to obtain an elevation certificate if you're completing major [home renovations](https://www.progressive.com/answers/home-improvements-renovations-insurance/). If you add an addition to your house or redo your basement, the lowest elevation point on your property could be altered, which may affect the likelihood of flooding in your home. Once your renovations are complete, you should have a new elevation certificate drawn up to reflect the changes.
+## Why are elevation certificates important?
+The purpose of an elevation certificate is to determine how susceptible a property is to flooding. Your elevation certificate will compare your property's lowest point to your area's Base Flood Elevation (BFE) as determined by [FEMA](https://www.fema.gov/glossary/elevation-certificate). Typically, the BFE indicates there's a 1% chance of flooding in that location. If your lowest elevation is above the BFE, your chances of experiencing flooding should be less than 1%.
+If your flood elevation certificate finds the lowest point in your property to be below your area's BFE, the likelihood of flooding goes up and you may be required to purchase flood insurance. Your home's elevation in relation to the BFE will also impact your insurance rates. If you're above the BFE, your rates will typically be lower, and properties that fall below the BFE will likely see higher insurance premiums.
+## How do I get an elevation certificate?
+There's a chance your house may already have a FEMA elevation certificate, especially if the land sits in a high-risk flood zone. When buying a home, ask the previous owners if they have one. If the seller has an elevation certificate, they should include it with the home's deed at closing. As long as no significant changes were made to the house after the flood elevation certificate was issued, it should still be valid.
+If you're building a new home, the builder may have previously obtained an elevation certificate and should provide a copy of the certificate once all work is completed. You can also contact a local representative from the National Flood Insurance Program and request an elevation certificate lookup. The representative can check to see if your home has a certificate on file and send it to you.
+If you can't track down an elevation certificate (or you've done renovations and need a new one), you can hire a professional to survey your property. To find a surveyor, check your state's association of professional surveyors. The surveyor will analyze your home's land and structure and will typically provide you with a new elevation certificate within five business days, although the amount of time can vary based on how well your surveyor knows the area.
+### How much does an elevation certificate cost?
+According to Homeadvisor.com, the cost for a new elevation certificate typically ranges from [$170 to $2,000 (average cost is $600)](https://www.homeadvisor.com/cost/inspectors-and-appraisers/elevation-certificate/), based on the type of property and the amount of land.
+![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt8858961b38a56d37/64ca9408193fe0d8c0f1fd10/bottom-cta_flood_roof-rain_850.jpg?auto=webp&width=306)
+Get a flood insurance quote online and protect your home
+  * Get a quote
+  * [Or, call 1-855-347-3939](tel:%201-855-347-3939)
+
+
+### Related articles
+  * [ ![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt31a9380d7b0687c2/635fc000e079731084bf1285/flood-101_card-image.svg) What is flood insurance? 4 minminute to read ](https://www.progressive.com/answers/flood-101/)
+  * [ ![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt23a01d3a45b9aeb9/635fbfff2746fd107d68c3cf/does-home-insurance-cover-water-damage_card-image.svg) Does homeowners insurance cover water damage? 4 minminute to read ](https://www.progressive.com/answers/does-home-insurance-cover-water-damage/)
+
+
+### Related categories
+  * [Terms & definitions](https://www.progressive.com/answers/insurance-basics/terms-definitions/)
+
+
+![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltc8ab3a92b3993bcb/640b52bc6d0cf81016ab92c1/explore-products.svg)
+### Have more questions? Browse articles by insurance type
+[See all articles by product](https://www.progressive.com/answers/articles-by-product/)
+  * [![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt666f20bfd7161c17/637e3e1d6160ed101ec8b3d3/auto_category-image.jpg?auto=webp&width=80) Car insurance  367 articles ](https://www.progressive.com/answers/car-insurance/)
+  * [![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blta71ca319a8802e2c/637e4001deb37610ecbb8bce/home_category-image.jpg?auto=webp&width=80) Home insurance  145 articles ](https://www.progressive.com/answers/home-insurance/)
+  * [![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt9997e9e92546d379/64a8221e6664b661a4bf77a8/renters_category-image.jpg?auto=webp&width=80) Renters insurance  28 articles ](https://www.progressive.com/answers/renters-insurance/)
+  * [![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blteb4f5b8793436f84/637e4360f33b43105dcd90bd/condo_category-image.jpg?auto=webp&width=80) Condo insurance  6 articles ](https://www.progressive.com/answers/condo-insurance/)
+  * [![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltd1596eb1b9b34f34/637e43a82f1aba10d25ad3b6/motorcycle_category-image.jpg?auto=webp&width=80) Motorcycle insurance  52 articles ](https://www.progressive.com/answers/motorcycle-insurance/)
+  * [![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt3536d8bf1abc24e7/637e3fda411e3c10e460398d/boat-and-pwc_category-image.jpg?auto=webp&width=80) Boat & PWC insurance  31 articles ](https://www.progressive.com/answers/boat-pwc-insurance/)
+  * [![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt87c4018c74541a0f/637e43e7bc4d5010302872db/rv-and-trailer_category-image.jpg?auto=webp&width=80) RV/Trailer insurance  36 articles ](https://www.progressive.com/answers/rv-trailer-insurance/)
+  * [![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt59243c9dbe8ba728/637e4387ed757210a0895822/life_category-image.jpg?auto=webp&width=80) Life insurance  89 articles ](https://www.progressive.com/answers/life-insurance/)
+  * [![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt7b7eae2d9a148b3d/637e412a77511d10a702795e/pet-category-image.jpg?auto=webp&width=80) Pet insurance  21 articles ](https://www.progressive.com/answers/pet-insurance/)
+
+
+**Please note:** The above is meant as general information to help you understand the different aspects of insurance. Read our [editorial standards for Answers content](https://www.progressive.com/answers/editorial-standards/). This information is not an insurance policy, does not refer to any specific insurance policy, and does not modify any provisions, limitations, or exclusions expressly stated in any insurance policy. Descriptions of all coverages and other features are necessarily brief; in order to fully understand the coverages and other features of a specific insurance policy, we encourage you to read the applicable policy and/or speak to an insurance representative. Coverages and other features vary between insurers, vary by state, and are not available in all states. Whether an accident or other loss is covered is subject to the terms and conditions of the actual insurance policy or policies involved in the claim. References to average or typical premiums, amounts of losses, deductibles, costs of coverages/repair, etc., are illustrative and may not apply to your situation. We are not responsible for the content of any third-party sites linked from this page.
+  * InsuranceInsurance
+    * [Car Insurance](https://www.progressive.com/auto/)
+    * [Home Insurance](https://www.progressive.com/homeowners/)
+    * [Progressive Answers](https://www.progressive.com/answers/)
+    * [Explore All Products](https://www.progressive.com/insurance/)
+  * Our CompanyOur Company
+    * [About Us](https://www.progressive.com/about/)
+    * [Careers](https://careers.progressive.com/)
+    * [Investors](https://investors.progressive.com/)
+    * [Newsroom](https://progressive.mediaroom.com/)
+  * Quick LinksQuick Links
+    * [Continue Previous Quote](https://www.progressive.com/home-retrieve/)
+    * [Report a Claim](https://www.progressive.com/claims/)
+    * [Make a Payment](https://www.progressive.com/rp/ezpay/)
+    * [PerkShare](https://www.progressive.com/perkshare/)
+  * ConnectConnect
+    * [1-866-749-7436](tel:1-866-749-7436)
+    * [Contact Us](https://www.progressive.com/contact-us/)
+    * [Progressive App](https://www.progressive.com/mobile-app/)
+    * [Partner With Us](https://www.progressive.com/partners/)
+
+
+Search / Keywords
+  * [![Facebook](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt70ffcb3929ecd23d/65d01b3c0ba017cc15012d24/facebook.svg)](https://www.facebook.com/progressive)
+  * [![Instagram](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltf77f99387dbe17a3/65d01b3b8d55b0465b61458e/instagram.svg)](https://www.instagram.com/progressive/)
+  * [![YouTube](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltb34101e9c0036193/65d01b3bbdb22a33a8c226fe/youtube.svg)](https://www.youtube.com/user/progressive)
+  * [![TikTok](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt0081d421c1d5499a/65d37b8b21be608c5f0194bb/tiktok.svg)](https://www.tiktok.com/@progressive)
+  * [![X, Formerly Twitter](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt9f1a0a21e3213494/65d37ba3d677b6499a6a28d6/x.svg)](https://www.twitter.com/progressive)
+
+
+  * [Contact Us](https://www.progressive.com/contact-us/)
+  * [Site Map](https://www.progressive.com/sitemap/)
+  * [Accessibility Services](https://www.progressive.com/web-site-accessibility/)
+  * [Technical Help](https://www.progressive.com/help/)
+  * [Privacy & Security](https://www.progressive.com/privacy/)
+  * [Terms of Use](https://www.progressive.com/copyright/)
+  * [CA Notice at Collection](https://www.progressive.com/privacy/privacy-data-request/)
+  * [Insurance Resources](https://www.progressive.com/resources/)
+  * [Do Not Sell or Share My Personal Information (CA Residents Only)](https://www.progressive.com/privacy/do-not-sell-my-information/)
+
+
+**THE #1 INSURANCE WEBSITE**
+Copyright 1995 - 2025. Progressive Casualty Insurance Company. All Rights Reserved.
+We offer insurance by phone, online and through independent agents. [Prices vary based on how you buy](https://www.progressive.com/shop/car-insurance-rates-differ/).
+ΔAverage savings based on 6-month term and not available in all states.
+Insurance carrier website ranking by Keynova Group – Q4 2024 Online Insurance Scorecard.
+Progressive Advantage Agency, Inc. refers consumers seeking Progressive Advantage® flood insurance policies online to Foremost Insurance Company of Grand Rapids and its administrator. Foremost and the administrator are not affiliated with Progressive and may share information about you with PAA. Foremost is solely responsible for the claims on its policies and pays PAA for policies sold. [Contact us](https://www.progressive.com/contact-us/) for more details.
+A different insurer may be available if you buy your flood policy by calling us or through an independent agent/broker rather than PAA. Policies sold through agents and brokers are available from them and through [https://www.progressiveagent.com](https://www.progressive.com/rp/agent).
+Availability may vary by state. All coverage is subject to policy terms and conditions.
+PAA and Progressive are not responsible for the content or operation of others' websites or how others handle or use your information.
+Progressive Home® policies are placed through Progressive Advantage Agency, Inc. with insurers affiliated with Progressive and with unaffiliated insurers. Each insurer is solely responsible for the claims on its policies and pays PAA for policies sold. Prices, coverages, and privacy policies vary among these insurers, who may share information about you with us. PAA's compensation from these insurers may vary between the insurers and based on the policy you buy, sales volume and/or profitability of policies sold. [See a list of all the insurers](https://www.progressive.com/homeowners/homeowners-companies/) that write Progressive Home policies, or [contact us](https://www.progressive.com/contact-us/) for more details.
+Site Navigation
+Menu
+  * Explore ProductsGet insurance for almost anything you need
+  * ClaimsReport/track a claim & learn about the process
+  * About UsSee who we are, what we stand for & join the team
+  * ResourcesTools, answers to your insurance questions, & more
+
+
+Close Overlay

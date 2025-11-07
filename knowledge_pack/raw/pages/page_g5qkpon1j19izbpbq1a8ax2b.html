@@ -1,0 +1,1965 @@
+<!DOCTYPE html><html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"><head><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(e){this.triggerEvents=e,this.eventOptions={passive:!0},this.userEventListener=this.triggerListener.bind(this),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventListener,e.eventOptions)))}_removeUserInteractionListener(e){this.triggerEvents.forEach((t=>window.removeEventListener(t,e.userEventListener,e.eventOptions)))}triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}async _loadEverythingNow(){this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async),await this._triggerDOMContentLoaded(),await this._triggerWindowLoad(),window.dispatchEvent(new Event("rocket-allScriptsLoaded"))}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._requestAnimFrame(),new Promise((t=>{const n=document.createElement("script");let i;[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type",i=e.nodeValue),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")&&this._isValidScriptType(i)?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t()),e.parentNode.replaceChild(n,e)}))}_isValidScriptType(e){return!e||""===e||"string"==typeof e&&["text/javascript","text/x-javascript","text/ecmascript","text/jscript","application/javascript","application/x-javascript","application/ecmascript","application/jscript","module"].includes(e.toLowerCase())}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){var e=document.createDocumentFragment();[...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async].forEach((t=>{const n=t.getAttribute("src");if(n){const t=document.createElement("link");t.href=n,t.rel="preload",t.as="script",e.appendChild(t)}})),document.head.appendChild(e)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._requestAnimFrame(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-load")),await this._requestAnimFrame(),window.rocketonload&&window.rocketonload(),await this._requestAnimFrame(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),window.dispatchEvent(new Event("rocket-pageshow")),await this._requestAnimFrame(),window.rocketonpageshow&&window.rocketonpageshow()}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript;n||console.error("WPRocket unable to document.write this: "+t);const i=document.createRange(),r=n.parentElement;let a=e.get(n);void 0===a&&(a=n.nextSibling,e.set(n,a));const o=document.createDocumentFragment();i.setStart(o,0),o.appendChild(i.createContextualFragment(t)),r.insertBefore(o,a)}}async _requestAnimFrame(){return new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts(["keydown","mousemove","touchmove","touchstart","touchend","wheel"]);e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();
+</script>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+              <meta name="theme-color" content="#87FBE6">
+            <link rel="profile" href="https://gmpg.org/xfn/11">
+            <link rel="pingback" href="https://www.ipandlegalfilings.com/xmlrpc.php">
+      <title>A critical analysis of Unfair Trade practices </title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans%3A300%2C400%2C600%2C700%26amp%3Bsubset%3Dlatin-ext%7COpen%20Sans&amp;display=swap"><link rel="stylesheet" href="https://www.ipandlegalfilings.com/wp-content/cache/min/1/e6b41a2e6af3feda77a215803d139d37.css" media="all" data-minify="1">
+
+		<!-- All in One SEO 4.1.2.1 -->
+		<meta name="description" content="The term &quot;consumer&quot; refers to individuals who buy or rent goods or services for personal consumption rather than reselling or producing.">
+		<meta name="google-site-verification" content="Lqc1lahBecVxkGwanPms2G9MkDMemBFgRsfxuxqI2VQ">
+		<meta name="msvalidate.01" content="6884A0E072DEE8DA8521F0780E01746F">
+		<meta name="yandex-verification" content="ee331e0eba9509b6">
+		<meta name="keywords" content="consumer complaints,consumer courts,consumer disputes,consumer forums,consumer protection,consumer protection act 2019,consumer protection authority,consumer rights,cpa 2019,e-commerce regulations,indian consumer law,online consumer protection.,product liability,service liability,unfair trade practices">
+		<link rel="canonical" href="https://www.ipandlegalfilings.com/unfair-trade-practices-and-deficiencies-in-service-in-the-consumer-protection-act-2019/">
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebSite","@id":"https:\/\/www.ipandlegalfilings.com\/#website","url":"https:\/\/www.ipandlegalfilings.com\/","name":"IPLF","description":"IP & Trademark Registration Services","publisher":{"@id":"https:\/\/www.ipandlegalfilings.com\/#organization"}},{"@type":"Organization","@id":"https:\/\/www.ipandlegalfilings.com\/#organization","name":"IP And Legal Filings","url":"https:\/\/www.ipandlegalfilings.com\/","logo":{"@type":"ImageObject","@id":"https:\/\/www.ipandlegalfilings.com\/#organizationLogo","url":"https:\/\/www.ipandlegalfilings.com\/wp-content\/uploads\/2020\/09\/iplf-logo-smo.jpg","width":"500","height":"500"},"image":{"@id":"https:\/\/www.ipandlegalfilings.com\/#organizationLogo"},"sameAs":["https:\/\/www.facebook.com\/IPandLF\/","https:\/\/www.youtube.com\/channel\/UCIu2HgBG4rwf7VwtTPgPaog","https:\/\/www.linkedin.com\/company\/ipandlegalfiling\/","https:\/\/www.tumblr.com\/blog\/ipandlegalfilings","https:\/\/soundcloud.com\/ip-and-legal-filings","https:\/\/myspace.com\/iplf"],"contactPoint":{"@type":"ContactPoint","telephone":"+911204296878","contactType":"Customer Support"}},{"@type":"BreadcrumbList","@id":"https:\/\/www.ipandlegalfilings.com\/unfair-trade-practices-and-deficiencies-in-service-in-the-consumer-protection-act-2019\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/www.ipandlegalfilings.com\/#listItem","position":"1","item":{"@type":"WebPage","@id":"https:\/\/www.ipandlegalfilings.com\/","name":"Home","description":"IP Search In India and IP Legal Filings have never been so seamless. Experience full-scale IP Services at lightning speed with a reputed law firm In India.","url":"https:\/\/www.ipandlegalfilings.com\/"},"nextItem":"https:\/\/www.ipandlegalfilings.com\/unfair-trade-practices-and-deficiencies-in-service-in-the-consumer-protection-act-2019\/#listItem"},{"@type":"ListItem","@id":"https:\/\/www.ipandlegalfilings.com\/unfair-trade-practices-and-deficiencies-in-service-in-the-consumer-protection-act-2019\/#listItem","position":"2","item":{"@type":"WebPage","@id":"https:\/\/www.ipandlegalfilings.com\/unfair-trade-practices-and-deficiencies-in-service-in-the-consumer-protection-act-2019\/","name":"Unfair Trade Practices and Deficiencies in service in the Consumer Protection Act, 2019","description":"The term \"consumer\" refers to individuals who buy or rent goods or services for personal consumption rather than reselling or producing.","url":"https:\/\/www.ipandlegalfilings.com\/unfair-trade-practices-and-deficiencies-in-service-in-the-consumer-protection-act-2019\/"},"previousItem":"https:\/\/www.ipandlegalfilings.com\/#listItem"}]},{"@type":"Person","@id":"https:\/\/www.ipandlegalfilings.com\/author\/iplf\/#author","url":"https:\/\/www.ipandlegalfilings.com\/author\/iplf\/","name":"IPLF","image":{"@type":"ImageObject","@id":"https:\/\/www.ipandlegalfilings.com\/unfair-trade-practices-and-deficiencies-in-service-in-the-consumer-protection-act-2019\/#authorImage","url":"https:\/\/secure.gravatar.com\/avatar\/267b1592d42d4393eb86e4ac94bbea93?s=96&d=mm&r=g","width":"96","height":"96","caption":"IPLF"},"sameAs":["https:\/\/www.facebook.com\/IPandLF\/","https:\/\/www.youtube.com\/channel\/UCIu2HgBG4rwf7VwtTPgPaog","https:\/\/www.linkedin.com\/company\/ipandlegalfiling\/","https:\/\/www.tumblr.com\/blog\/ipandlegalfilings","https:\/\/soundcloud.com\/ip-and-legal-filings","https:\/\/myspace.com\/iplf"]},{"@type":"WebPage","@id":"https:\/\/www.ipandlegalfilings.com\/unfair-trade-practices-and-deficiencies-in-service-in-the-consumer-protection-act-2019\/#webpage","url":"https:\/\/www.ipandlegalfilings.com\/unfair-trade-practices-and-deficiencies-in-service-in-the-consumer-protection-act-2019\/","name":"A critical analysis of Unfair Trade practices","description":"The term \"consumer\" refers to individuals who buy or rent goods or services for personal consumption rather than reselling or producing.","inLanguage":"en-US","isPartOf":{"@id":"https:\/\/www.ipandlegalfilings.com\/#website"},"breadcrumb":{"@id":"https:\/\/www.ipandlegalfilings.com\/unfair-trade-practices-and-deficiencies-in-service-in-the-consumer-protection-act-2019\/#breadcrumblist"},"author":"https:\/\/www.ipandlegalfilings.com\/unfair-trade-practices-and-deficiencies-in-service-in-the-consumer-protection-act-2019\/#author","creator":"https:\/\/www.ipandlegalfilings.com\/unfair-trade-practices-and-deficiencies-in-service-in-the-consumer-protection-act-2019\/#author","image":{"@type":"ImageObject","@id":"https:\/\/www.ipandlegalfilings.com\/#mainImage","url":"https:\/\/www.ipandlegalfilings.com\/wp-content\/uploads\/2025\/01\/consumer-protection-act.jpg","width":"388","height":"208"},"primaryImageOfPage":{"@id":"https:\/\/www.ipandlegalfilings.com\/unfair-trade-practices-and-deficiencies-in-service-in-the-consumer-protection-act-2019\/#mainImage"},"datePublished":"2025-01-21T08:43:27+05:30","dateModified":"2025-01-21T09:03:08+05:30"},{"@type":"Article","@id":"https:\/\/www.ipandlegalfilings.com\/unfair-trade-practices-and-deficiencies-in-service-in-the-consumer-protection-act-2019\/#article","name":"A critical analysis of Unfair Trade practices","description":"The term \"consumer\" refers to individuals who buy or rent goods or services for personal consumption rather than reselling or producing.","headline":"Unfair Trade Practices and Deficiencies in service in the Consumer Protection Act, 2019","author":{"@id":"https:\/\/www.ipandlegalfilings.com\/author\/iplf\/#author"},"publisher":{"@id":"https:\/\/www.ipandlegalfilings.com\/#organization"},"datePublished":"2025-01-21T08:43:27+05:30","dateModified":"2025-01-21T09:03:08+05:30","articleSection":"Consumer Protection Act, Uncategorized, Consumer Complaints, Consumer Courts, Consumer Disputes, Consumer Forums, Consumer Protection, Consumer Protection Act 2019, Consumer Protection Authority, Consumer Rights, CPA 2019, E-commerce Regulations, Indian Consumer Law, Online Consumer Protection., Product Liability, Service Liability, Unfair Trade Practices","mainEntityOfPage":{"@id":"https:\/\/www.ipandlegalfilings.com\/unfair-trade-practices-and-deficiencies-in-service-in-the-consumer-protection-act-2019\/#webpage"},"isPartOf":{"@id":"https:\/\/www.ipandlegalfilings.com\/unfair-trade-practices-and-deficiencies-in-service-in-the-consumer-protection-act-2019\/#webpage"},"image":{"@type":"ImageObject","@id":"https:\/\/www.ipandlegalfilings.com\/#articleImage","url":"https:\/\/www.ipandlegalfilings.com\/wp-content\/uploads\/2025\/01\/consumer-protection-act.jpg","width":"388","height":"208"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer="" type="text/javascript">//<![CDATA[
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+
+	var gtm4wp_scrollerscript_debugmode         = false;
+	var gtm4wp_scrollerscript_callbacktime      = 100;
+	var gtm4wp_scrollerscript_readerlocation    = 150;
+	var gtm4wp_scrollerscript_contentelementid  = "content";
+	var gtm4wp_scrollerscript_scannertime       = 60;
+//]]>
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//fonts.gstatic.com">
+<link href="https://fonts.gstatic.com" crossorigin="" rel="preconnect">
+<link rel="alternate" type="application/rss+xml" title="IPLF » Feed" href="https://www.ipandlegalfilings.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="IPLF » Comments Feed" href="https://www.ipandlegalfilings.com/comments/feed/">
+
+
+<link rel="stylesheet" id="user-registration-smallscreen-css" href="https://www.ipandlegalfilings.com/wp-content/plugins/user-registration/assets/css/user-registration-smallscreen.css?ver=1.9.9" type="text/css" media="only screen and (max-width: 768px)">
+
+
+
+
+
+
+<style id="rs-plugin-settings-inline-css" type="text/css">
+#rs-demo-id {}
+</style>
+
+
+
+
+
+<style id="keydesign-style-inline-css" type="text/css">
+.tt_button:hover .iconita,
+.tt_button.second-style .iconita,
+#single-page #comments input[type="submit"]:hover,
+.tt_button.tt_secondary_button,
+.tt_button.tt_secondary_button .iconita,
+.team-carousel .owl-item .team-member.design-creative .team-socials a,
+.es-accordion .es-time,
+.content-area .vc_grid-filter>.vc_grid-filter-item.vc_active>span,
+.content-area .vc_grid-filter>.vc_grid-filter-item:hover>span,
+.format-quote .entry-wrapper:before,
+.large-counter .kd_counter_units,
+.footer_widget .redux-social-media-list i,
+#single-page .bbp-login-form .user-submit:hover,
+.menubar #main-menu .navbar-nav .mega-menu.menu-item-has-children .dropdown > a,
+.key-icon-box .ib-link a,
+#popup-modal .close:hover,
+body.maintenance-mode .container h2,
+blockquote:before,
+.woocommerce nav.woocommerce-pagination ul li a:hover,
+.port-prev.tt_button,
+.port-next.tt_button,
+.upper-footer .socials-widget a:hover .fa,
+.woocommerce .woocommerce-form-login .button:hover,
+.footer_widget ul a:hover,
+.side-content-text ul li:before,
+span.bbp-admin-links a:hover,
+#bbpress-forums #bbp-single-user-details #bbp-user-navigation a:hover,
+.vc_grid-item-mini .vc_gitem-post-data.vc_gitem-post-data-source-post_date div:before,
+.vc_grid-item-mini .vc_gitem-post-data.vc_gitem-post-data-source-post_author a:before,
+.vc_grid-item-mini .blog-detailed-grid .vc_btn3-container:hover a,
+.feature-sections-wrapper .feature-sections-tabs .nav-tabs a:hover,
+.topbar-lang-switcher ul li a:hover span,
+.feature-sections-wrapper .feature-sections-tabs .nav-tabs li.active a,
+.owl-nav div:hover,
+div.bbp-breadcrumb a:hover,
+#bbpress-forums div.bbp-topic-author a.bbp-author-name, #bbpress-forums div.bbp-reply-author a.bbp-author-name,
+.kd_pie_chart .pc_percent_container,
+.kd_pie_chart .kd-piechart-icon,
+.woocommerce .checkout_coupon .button:hover:hover,
+.woocommerce-page #payment #place_order:hover,
+.team-member.design-minimal .team-socials a,
+.woocommerce-cart #single-page table.cart .button:hover,
+.wpb-js-composer .vc_tta-container .vc_tta-color-white.vc_tta-style-modern .vc_tta-tab.vc_active a,
+.team-member.design-two:hover .team-socials .fa:hover,
+.team-member.design-two .team-socials .fa:hover,
+#single-page .return-to-shop a:hover,
+.woocommerce-error a, .woocommerce-info a, .woocommerce-message a,
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover,
+.navbar-nav li.dropdown:hover .dropdown-menu:hover li a:hover,
+.woocommerce ul.products li.product h2:hover,
+.keydesign-cart .buttons .btn, .woocommerce .keydesign-cart .buttons .btn,
+.woocommerce #payment #place_order:hover, .woocommerce-page #payment #place_order:hover,
+.portfolio-meta.share-meta .fa:hover,
+.woocommerce-account #single-page .woocommerce-Button:hover,
+.woocommerce #respond input#submit:hover,
+.woocommerce-page ul.products li.product.woo-minimal-style .button:hover,
+.woocommerce-page ul.products li.product.woo-minimal-style .added_to_cart:hover,
+.blog_widget ul li a:hover,
+#posts-content .entry-meta a:hover,
+.breadcrumbs a:hover,
+.woocommerce a.button:hover,
+.keydesign-cart:hover .cart-icon,
+#comments input[type="submit"]:hover,
+.search-submit:hover,
+.blog-single-content .tags a,
+.lower-footer a:hover,
+#posts-content .post .blog-single-title a:hover,
+#posts-content.blog-minimal-list .blog-single-title a:hover,
+#posts-content.blog-img-left-list .blog-single-title a:hover,
+.socials-widget a:hover .fa, .socials-widget a:hover,
+#customizer .leadengine-tooltip,
+.footer_widget .menu li a:hover,
+.row .vc_toggle_size_md.vc_toggle_simple .vc_toggle_title:hover h4,
+#single-page .single-page-content .widget ul li a:hover,
+#comments .reply a:hover,
+#comments .comment-meta a:hover,
+#kd-slider .secondary_slider,
+#single-page .single-page-content .widget ul li.current-menu-item a,
+.team-socials .fa:hover,
+#posts-content .post .tt_button:hover .fa,
+#posts-content .post .tt_button:hover,
+.topbar-socials a:hover .fa,
+.pricing .pricing-price,
+.pricing-table .tt_button,
+.topbar-phone .iconsmind-Telephone ,
+.topbar-email .iconsmind-Mail,
+.modal-content-contact .key-icon-box .service-heading a:hover,
+.pricing-table.active .tt_button:hover,
+.footer-business-content a:hover,
+.vc_grid-item-mini .vc_gitem-zone .vc_btn3.vc_btn3-style-custom,
+.star-rating span,
+.es-accordion .es-heading h4 a:hover,
+.keydesign-cart ul.product_list_widget .cart-item:hover,
+.woocommerce .keydesign-cart ul.product_list_widget .cart-item:hover,
+#customizer .options a:hover i,
+.woocommerce .price_slider_wrapper .price_slider_amount .button,
+#customizer .options a:hover,
+#single-page input[type="submit"]:hover,
+#posts-content .post input[type="submit"]:hover,
+.active .pricing-option .fa,
+#comments .reply a:hover,
+.meta-content .tags a:hover,
+.navigation.pagination .next,
+.woocommerce-cart  #single-page table.cart .product-name a:hover,
+.navigation.pagination .prev,
+.woocommerce span.onsale,
+.product_meta a:hover,
+.tags a:hover, .tagcloud a:hover,
+.tt_button.second-style,
+.lower-footer .pull-right a:hover,
+.woocommerce-review-link:hover,
+.section .wpcf7-mail-sent-ok,
+.blog-header-form .wpcf7-mail-sent-ok,
+.upper-footer .modal-menu-item,
+.video-socials a:hover .fa,
+.kd_pie_chart .pc-link a:hover,
+.vc_grid-item-mini .vc_gitem_row .vc_gitem-col h4:hover,
+.fa,
+.wpcf7 .wpcf7-submit:hover,
+.contact .wpcf7-response-output,
+.video-bg .secondary-button:hover,
+#headerbg li a.active,
+#headerbg li a.active:hover,
+.footer-nav a:hover ,
+.wpb_wrapper .menu a:hover ,
+.text-danger,
+.blog_widget ul li a:before,
+.pricing .fa,
+.content-area .vc_grid .vc_gitem-zone-c .vc_general,
+code,
+#single-page .single-page-content ul li:before,
+.subscribe-form header .wpcf7-submit,
+#posts-content .page-content ul li:before,
+.chart-content .nc-icon-outline,
+.chart,
+.row .vc_custom_heading a:hover,
+.secondary-button-inverse,
+.primary-button.button-inverse:hover,
+.primary-button,
+a,
+.kd-process-steps .pss-step-number span,
+.navbar-default .navbar-nav > .active > a,
+.pss-link a:hover,
+.woocommerce-cart #single-page .cart_totals table td,
+.kd_number_string,
+.featured_content_parent .active-elem h4,
+.contact-map-container .toggle-map:hover .fa,
+.contact-map-container .toggle-map:hover,
+.testimonials.slider .tt-container:before,
+.tt_button:hover,
+.nc-icon-outline,
+.woocommerce ul.products li.product h3:hover,
+.wpb_text_column ol>li:before,
+.wpb_text_column ul>li:before,
+.key-icon-box .ib-link a:hover
+{
+	color: #4f6df5;
+	color: #87FBE6;
+}
+
+.pricing-table.DetailedStyle .pricing .pricing-price {
+	color: #87FBE6!important;
+}
+
+.modal-content-inner .wpcf7-not-valid-tip,
+.section .wpcf7-mail-sent-ok,
+.blog-header-form .wpcf7-mail-sent-ok,
+.blog-header-form .wpcf7-not-valid-tip,
+.section .wpcf7-not-valid-tip,
+.kd-process-steps.process-checkbox-template .pss-item:before,
+.kd-process-steps.process-checkbox-template,
+.kd-separator,
+.kd-separator .kd-separator-line {
+	border-color: #87FBE6;
+}
+
+#single-page .bbp-login-form .user-submit,
+.bbpress #user-submit,
+.gform_wrapper .gform_footer input.button,
+.gform_wrapper .gform_footer input[type=submit],
+input[type="button"].ninja-forms-field,
+.modal-content-inner .wpcf7-submit:hover,
+.searchform #searchsubmit,
+#kd-slider,
+.kd-contact-form.light_background .wpcf7 .wpcf7-submit,
+.footer-newsletter-form .wpcf7 .wpcf7-submit,
+.kd_progressbarfill,
+.phone-wrapper,
+.wpb_wrapper #loginform .button,
+.woocommerce input.button,
+.testimonial-cards .center .tcards_message,
+.email-wrapper,
+.woocommerce ul.products li.product .added_to_cart:hover,
+.footer-business-info.footer-socials a:hover,
+#comments input[type="submit"],
+.parallax.with-overlay:after,
+.content-area .vc_grid-filter>.vc_grid-filter-item span:after,
+.tt_button.tt_secondary_button:hover,
+.pricing-table .tt_button:hover,
+.modal-content-inner .wpcf7-not-valid-tip,
+.tt_button.second-style:hover,
+.pricing-table.active .tt_button,
+#customizer .screenshot a,
+.heading-separator,
+.blog-header-form .wpcf7-not-valid-tip,
+.section .wpcf7-not-valid-tip,
+.port-prev.tt_button:hover,
+.port-next.tt_button:hover,
+ .owl-buttons div:hover,
+.row .vc_toggle_default .vc_toggle_icon,
+.row .vc_toggle_default .vc_toggle_icon::after,
+.row .vc_toggle_default .vc_toggle_icon::before,
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce nav.woocommerce-pagination ul li a:hover,
+.upper-footer .modal-menu-item:hover,
+.contact-map-container .toggle-map,
+.portfolio-item .portfolio-content,
+.tt_button,
+ .owl-dot span,
+.woocommerce a.remove:hover,
+.pricing .secondary-button.secondary-button-inverse:hover,
+.with-overlay .parallax-overlay,
+.secondary-button.secondary-button-inverse:hover,
+.secondary-button,
+#kd-slider .bullet-bar.tparrows,
+.primary-button.button-inverse,
+#posts-content .post input[type="submit"],
+.btn-xl,
+.with-overlay,
+.vc_grid-item-mini .vc_gitem-zone .vc_btn3.vc_btn3-style-custom:hover,
+.woocommerce .price_slider_wrapper .ui-slider-horizontal .ui-slider-range,
+.separator,
+.woocommerce button.button,
+.cb-container.cb_main_color:hover,
+.keydesign-cart .buttons .btn:hover,
+.woocommerce .keydesign-cart .buttons .btn:hover,
+.woocommerce ul.products li.product .button:hover,
+#single-page #comments input[type="submit"]:hover,
+.contact-map-container .toggle-map:hover,
+.wpcf7 .wpcf7-submit:hover,
+.owl-dot span,
+.features-tabs .tab.active,
+.content-area .vc_grid .vc-gitem-zone-height-mode-auto.vc_gitem-zone.vc_gitem-zone-a:before,
+.row .vc_toggle_simple .vc_toggle_title:hover .vc_toggle_icon::after,
+.row .vc_toggle_simple .vc_toggle_title:hover .vc_toggle_icon::before,
+.wpcf7 .wpcf7-submit,
+.navigation.pagination .next:hover,
+#single-page .vc_col-sm-3 .wpcf7 .wpcf7-submit,
+.spinner:before,
+.content-area .vc_grid .vc_gitem-zone-c .vc_general:hover,
+.content-area .vc_grid-item-mini .vc_gitem-animate-fadeIn .vc_gitem-zone.vc_gitem-zone-a:before,
+.keydesign-cart .badge,
+div.wpcf7 .wpcf7-form .ajax-loader,
+#bbp_search_submit,
+.woocommerce .price_slider_wrapper .ui-slider .ui-slider-handle,
+.navigation.pagination .prev:hover
+{
+background: #4f6df5;
+background: #87FBE6;
+}
+
+
+.slider-scroll-down a {
+background-color: #4f6df5;
+background-color: #87FBE6;
+}
+
+::selection {
+background-color: #4f6df5;
+background: #87FBE6;
+}
+
+::-moz-selection {
+background-color: #4f6df5;
+background: #87FBE6;
+}
+
+#single-page .bbp-login-form .user-submit,
+#single-page #comments input[type="submit"]:hover,
+.navigation.pagination .next,
+.navigation.pagination .prev,
+.upper-footer .modal-menu-item,
+.wpcf7 .wpcf7-submit:hover,
+.tt_button,
+.navigation.pagination .next, .navigation.pagination .prev,
+.woocommerce ul.products li.product .button:hover,
+.woocommerce .price_slider_wrapper .ui-slider .ui-slider-handle,
+.pricing.active,
+.vc_grid-item-mini .vc_gitem-zone .vc_btn3.vc_btn3-style-custom,
+.primary-button.button-inverse:hover,
+.primary-button.button-inverse,
+.keydesign-cart .buttons .btn, .woocommerce .keydesign-cart .buttons .btn,
+.wpcf7 .wpcf7-submit,
+.wpb_wrapper #loginform .button,
+ .owl-buttons div:hover,
+.woocommerce button.button,
+.woocommerce a.button,
+.content-area .vc_grid .vc_gitem-zone-c .vc_general,
+#commentform #submit,
+.woocommerce ul.products li.product .added_to_cart,
+.woocommerce input.button,
+ .owl-dot.active span,
+ .owl-dot:hover span {
+	border: 2px solid #4f6df5;
+    border: 2px solid #87FBE6;
+}
+
+div.wpcf7 .wpcf7-form .ajax-loader {
+	border: 5px solid #4f6df5;
+    border: 5px solid #87FBE6;
+}
+
+.modal-content-inner:before  {
+	border-right: 12px solid #4f6df5;
+    border-right: 12px solid #87FBE6;
+}
+
+
+.page-404 .tt_button,
+#wrapper .widget-title,
+.blockquote-reverse,
+.testimonials.slider  .owl-dot.active span,
+.tags a:hover, .tagcloud a:hover,
+.contact-map-container .toggle-map:hover,
+.navigation.pagination .next:hover, .navigation.pagination .prev:hover,
+.contact .wpcf7-response-output,
+.video-bg .secondary-button,
+#single-page .single-page-content .widget .widgettitle,
+.image-bg .secondary-button,
+.contact .wpcf7-form-control-wrap textarea.wpcf7-form-control:focus,
+.contact .wpcf7-form-control-wrap input.wpcf7-form-control:focus,
+.team-member-down:hover .triangle,
+.team-member:hover .triangle,
+.features-tabs .tab.active:after,
+.tabs-image-left.features-tabs .tab.active:after,
+.secondary-button-inverse,
+.wpb-js-composer .vc_tta-container .vc_tta.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tabs-list li.vc_active a,
+.vc_separator .vc_sep_holder .vc_sep_line {
+	border-color: #4f6df5;
+    border-color: #87FBE6;
+}
+
+.testimonial-cards .center .tcards_message:before {
+	border-color: transparent transparent #4f6df5 #4f6df5;
+    border-color: transparent transparent #87FBE6 #87FBE6;
+}
+
+.testimonial-cards .center .tcards_message.author-bottom:before {
+	border-color: #4f6df5 transparent transparent #4f6df5;
+    border-color: #87FBE6 transparent transparent #87FBE6;
+}
+
+
+.wpb-js-composer .vc_tta-container  .vc_tta-tabs.vc_tta-tabs-position-left .vc_tta-tab:before {
+    border-right: 9px solid #87FBE6;
+}
+
+.wpb-js-composer .vc_tta-container .vc_tta.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tabs-list li:before {
+    border-top: 9px solid #87FBE6;
+}
+
+
+.tt_button.btn_secondary_color.tt_secondary_button:hover,
+.tt_button.btn_secondary_color
+{
+	background: ;
+}
+
+.tt_button.btn_secondary_color.tt_secondary_button,
+.tt_button.btn_secondary_color:hover
+{
+	color: ;
+}
+
+.tt_button.btn_secondary_color
+{
+	border: 2px solid ;
+}
+
+
+h1,h2,h3,h4,h5,
+.kd_progress_bar .kd_progb_head .kd-progb-title h4,
+.wpb-js-composer .vc_tta-container .vc_tta.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tabs-list li a:hover,
+ .es-accordion .es-heading h4 a,
+.wpb-js-composer .vc_tta-color-white.vc_tta-style-modern .vc_tta-tab>a:hover,
+#comments .fn,
+#comments .fn a,
+.portfolio-block h4,
+.rw-author-details h4,
+.testimonials.slider .author,
+.vc_grid-item-mini .vc_gitem_row .vc_gitem-col h4,
+.navbar-default.navbar-shrink .nav li a,
+.team-content h5,
+.key-icon-box .service-heading,
+#wp-calendar caption,
+.post a:hover,
+.kd_pie_chart .kd_pc_title,
+.kd_pie_chart .pc-link a,
+.testimonials .tt-content h4,
+.kd-photobox .phb-content h4,
+.kd-process-steps .pss-text-area h4,
+.widget-title,
+.kd-promobox .prb-content h4,
+.bp-content h4,
+.reply-title,
+.product_meta,
+.blog-header .section-heading,
+.testimonial-cards .tcards-title,
+.testimonial-cards .tcards_header .tcards-name,
+.woocommerce-result-count,
+.pss-link a,
+.navbar-default .nav li a,
+.logged-in .navbar-nav a, .navbar-nav .menu-item a,
+.woocommerce table.shop_attributes th,
+.portfolio-block strong,
+.keydesign-cart .nc-icon-outline-cart,
+.portfolio-meta.share-meta .fa,
+.subscribe input[type="submit"],
+.es-accordion .es-speaker-container .es-speaker-name,
+.pricing-title,
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active a,
+.woocommerce-cart  #single-page table.cart .product-name a,
+.wpb-js-composer .vc_tta-container .vc_tta-color-white.vc_tta-style-modern .vc_tta-tab>a,
+.rw_rating .rw-title,
+.group_table .label,
+.cb-container.cb_transparent_color:hover .cb-heading,
+.app-gallery .ag-section-desc h4,
+.single-post .wpb_text_column strong,
+ .owl-buttons div,
+#single-page .single-page-content .widget ul li a,
+.modal-content-contact .key-icon-box .service-heading a,
+.woocommerce-ordering select,
+.woocommerce div.product .woocommerce-tabs .panel #reply-title,
+.page-404 .section-subheading,
+.showcoupon:hover,
+.pricing-table.DetailedStyle .pricing .pricing-price,
+.pricing-table .pricing-img .fa,
+.navbar-default .navbar-nav > li > a:hover,
+.testimonials.slider.with-image .tt-container h6,
+.socials-widget a:hover .fa, .socials-widget a:hover,
+.owl-nav div,
+#comments label,
+.author-box-wrapper .author-name h6,
+.keydesign-cart .empty-cart,
+.play-video .fa-play,
+.author-website,
+.post-link:hover,
+#comments .reply a:hover,
+.author-desc-wrapper a:hover,
+.blog-single-content .tags a:hover,
+.wpb-js-composer .vc_tta-container .vc_tta.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tabs-list li a:hover,
+.wpb-js-composer .vc_tta-container .vc_tta.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tabs-list li.vc_active a,
+.woocommerce #coupon_code, .woocommerce .quantity .qty,
+.kd-price-block .pb-content-wrap .pb-pricing-wrap,
+.blog-single-title a,
+.topbar-phone a:hover,
+.topbar-email a:hover,
+.woocommerce-page ul.products li.product.woo-minimal-style .added_to_cart,
+.woocommerce-page ul.products li.product.woo-minimal-style .button,
+.woocommerce nav.woocommerce-pagination ul li span.current,
+#menu-topbar-menu li a:hover,
+.navbar-topbar li a:hover,
+.fa.toggle-search:hover,
+.business-info-header .fa,
+.tt_secondary_button.tt_third_button:hover,
+.tt_secondary_button.tt_third_button:hover .fa,
+.keydesign-cart .subtotal,
+#single-page p.cart-empty,
+blockquote cite,
+.woocommerce div.product p.price,
+.woocommerce div.product span.price,
+.cta-icon .fa,
+.wpcf7-form label,
+.upper-footer .wpcf7-form-control-wrap textarea,
+.upper-footer .wpcf7-form-control-wrap input,
+body.maintenance-mode .kd-countdown,
+.mobile-cart .keydesign-cart,
+body.woocommerce-page .entry-header .section-heading,
+.feature-sections-wrapper .feature-sections-tabs .nav-tabs a,
+.team-member.design-minimal .team-socials a:hover,
+.key-icon-box .ib-link a:hover,
+.feature-sections-wrapper .side-content-wrapper .simple-link:hover,
+.woocommerce ul.products li.product .price,
+.vc_toggle_simple .vc_toggle_title .vc_toggle_icon::after,
+.vc_toggle_simple .vc_toggle_title .vc_toggle_icon::before,
+.testimonials .tt-content .content {
+	color: #1f1f1f;
+	color: ;
+}
+
+
+.ib-link.iconbox-main-color a:hover  {
+	color: #1f1f1f;
+	color: !important;
+}
+
+.vc_toggle.vc_toggle_default .vc_toggle_icon,
+.row .vc_toggle_size_md.vc_toggle_default .vc_toggle_title .vc_toggle_icon:before,
+.row .vc_toggle_size_md.vc_toggle_default .vc_toggle_title .vc_toggle_icon:after,
+.searchform #searchsubmit:hover,
+#kd-slider .bullet-bar.tparrows:hover
+{
+	background: #1f1f1f;
+	background: ;
+}
+
+
+
+.kd-contact-form.light_background .wpcf7 .wpcf7-submit:hover {
+	background: !important;
+}
+
+
+
+.kd_counter_number:after {
+	background: ;
+}
+
+.testimonials.slider  .owl-dot:hover span
+ {
+	border-color: ;
+}
+
+.cb-container.cb_transparent_color:hover .cb-text-area p {
+	color: ;
+}
+
+
+
+.wpcf7 .wpcf7-text::-webkit-input-placeholder {color: ;}
+.wpcf7 .wpcf7-text::-moz-placeholder {color: ;}
+.wpcf7 .wpcf7-text:-ms-input-placeholder {color: ;}
+.wpcf7-form-control-wrap .wpcf7-textarea::-webkit-input-placeholder { color: ;}
+.wpcf7-form-control-wrap .wpcf7-textarea::-moz-placeholder {color: ;}
+.wpcf7-form-control-wrap .wpcf7-textarea:-ms-input-placeholder {color: ;}
+
+
+.footer-newsletter-form .wpcf7-form .wpcf7-email,
+.footer-business-info.footer-socials a,
+.upper-footer {
+	background: #f7f9fb;
+	background:  #062237;
+}
+
+.upper-footer {
+	border-color:  #062237;
+}
+
+.upper-footer .textwidget,
+.footer-business-info,
+.lower-footer {
+	background: #fff;
+	background:  #495ACC;
+}
+
+.upper-footer .textwidget,
+.lower-footer {
+	border-color:  #495ACC;
+}
+
+.lower-footer, .upper-footer, .upper-footer .socials-widget .fa {
+	color:  #EAEAEA;
+}
+
+.lower-footer a, .upper-footer a {
+	color:  !important;
+}
+
+.lower-footer a:hover, .upper-footer a:hover {
+	color:  !important;
+}
+
+.upper-footer .widget-title, .upper-footer .modal-menu-item {
+	color:  #FFFFFF;
+}
+
+
+#commentform textarea,
+.wpcf7-form textarea,
+.wpb_wrapper #loginform .input,
+.wpcf7 input[type="date"],
+.wpcf7 .wpcf7-text,
+.wpcf7 .wpcf7-email, .wpcf7 .wpcf7-select,
+.modal-content-inner .wpcf7 .wpcf7-text,
+.modal-content-inner .wpcf7 .wpcf7-email,
+.content-area .vc_grid-gutter-30px .vc_grid-item-mini .vc_gitem-zone.vc_gitem-zone-c,
+.portfolio-navigation-links,
+.related-posts,
+.comment-body,
+#single-page blockquote,
+.author-box-wrapper,
+.blog_widget .search-form .search-field,
+.blog_widget .woocommerce-product-search .search-field,
+.blog-header-form .wpcf7 .wpcf7-text,
+.blog-header-form .wpcf7 .wpcf7-email,
+.single-post #posts-content .post,
+.search #posts-content .portfolio,
+.search #posts-content .product,
+.search #posts-content .page,
+#posts-content .type-attachment,
+#posts-content .post,
+.woo-sidebar,
+.right-sidebar,
+#posts-content.blog-minimal-list .entry-meta .blog-label:before,
+#posts-content.blog-img-top-list .entry-meta .blog-label:before,
+#posts-content.blog-img-left-list .BlogFullWidth .post,
+.related-posts .post .entry-wrapper.without-image,
+.related-content .portfolio .entry-wrapper.without-image,
+#posts-content.blog-detailed-grid .entry-wrapper.without-image,
+#posts-content.blog-minimal-grid .entry-wrapper.without-image,
+.woo-entry-wrapper,
+.related-posts .post .entry-wrapper,
+.related-content .portfolio .entry-wrapper,
+#posts-content.blog-detailed-grid .entry-wrapper,
+#wrapper .blog-detailed-grid .entry-wrapper,
+#posts-content.blog-minimal-grid .entry-wrapper,
+.portfolio-template-default .entry-header .container,
+#single-page #comments input[type="text"],
+#single-page #comments input[type="email"],
+#comments input[type="text"],
+#comments input[type="email"],
+#comments input[type="url"],
+.woo-minimal-style ul.products li.product,
+.woocommerce-page ul.products li.product.woo-minimal-style,
+#single-page .select2-container--default .select2-selection--single,
+.woocommerce-checkout #single-page table,
+.woocommerce-checkout .woocommerce form .form-row select,
+.woocommerce-checkout .woocommerce form .form-row input.input-text,
+.woocommerce-checkout .woocommerce form .form-row textarea,
+.woocommerce-account .woocommerce form .form-row select,
+.woocommerce-account .woocommerce form .form-row input.input-text,
+.woocommerce-account .woocommerce form .form-row textarea,
+.woocommerce-checkout .woocommerce .login input[type="text"],
+.woocommerce-checkout .woocommerce .login input[type="password"]
+.woocommerce #coupon_code,
+.woocommerce-cart #single-page table.cart .qty ,
+.woocommerce-cart  #single-page table.cart img,
+.woocommerce-cart #single-page table.cart,
+#review_form #commentform input[type="text"],
+#review_form #commentform input[type="email"],
+.woocommerce-page div.product .woocommerce-tabs,
+.keydesign-cart ul.product_list_widget li img,
+ul.product_list_widget li img,
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message,
+.woocommerce form.checkout_coupon,
+.woocommerce form.login,
+.woocommerce form.register,
+.woocommerce #review_form #respond textarea,
+.woocommerce nav.woocommerce-pagination ul li a,
+.woocommerce nav.woocommerce-pagination ul li span,
+.woo-entry-image,
+.woocommerce div.product .woocommerce-tabs ul.tabs li,
+.woocommerce div.product .woocommerce-tabs ul.tabs,
+.single-product .woocommerce-product-gallery img,
+.woocommerce #coupon_code,
+.woocommerce .quantity .qty,
+.woocommerce .cart-collaterals .cart_totals,
+.woocommerce-page .cart-collaterals .cart_totals {
+	border-color:  ;
+}
+
+
+
+
+.transparent-navigation .navbar.navbar-default.navbar-shrink .topbar-lang-switcher ul:not(:hover) li a,
+.transparent-navigation .navbar.navbar-default.navbar-shrink .topbar-menu-search .fa.toggle-search,
+.transparent-navigation .navbar.navbar-default.navbar-shrink #menu-topbar-menu li a,
+.transparent-navigation .navbar.navbar-default.navbar-shrink .navbar-topbar li a,
+.transparent-navigation .navbar.navbar-default.navbar-shrink .topbar-phone .iconsmind-Telephone,
+.transparent-navigation .navbar.navbar-default.navbar-shrink .topbar-email .iconsmind-Mail,
+.transparent-navigation .navbar.navbar-default.navbar-shrink .topbar-phone a,
+.transparent-navigation .navbar.navbar-default.navbar-shrink .topbar-email a,
+.topbar-lang-switcher ul li a,
+.cart-icon-container,
+.topbar-lang-switcher,
+.topbar-menu,
+.topbar-search,
+.topbar-phone .iconsmind-Telephone, .topbar-email .iconsmind-Mail,
+.navbar.navbar-default .topbar-phone a, .navbar.navbar-default .topbar-email a {
+	color: #FFFFFF!important;
+}
+
+
+.topbar-lang-switcher ul li a:hover span,
+.topbar-menu-search .keydesign-cart a:hover,
+.topbar-search .fa.toggle-search:hover,
+#menu-topbar-menu a:hover,
+.navbar-topbar a:hover,
+.transparent-navigation .navbar.navbar-default .topbar-phone a:hover, .transparent-navigation .navbar.navbar-default .topbar-email a:hover,
+.navbar.navbar-default .topbar-phone a:hover, .navbar.navbar-default .topbar-email a:hover {
+	color: #1f1f1f;
+	color: #F2F2F2!important;
+}
+
+
+.transparent-navigation .navbar.navbar-shrink .topbar,
+.navbar.navbar-default.contained .topbar .container,
+.navbar .topbar {
+	background: #5E6EE7!important;
+}
+
+
+.topbar-search .search-form .search-field,
+.topbar .fa.toggle-search.fa-times {
+	color: #5E6EE7!important;
+}
+
+.navbar .topbar {
+	border-color: #5E6EE7!important;
+}
+
+
+.navbar.navbar-default.contained .container,
+.navbar.navbar-default .menubar,
+.navbar.navbar-default.navbar-shrink.fixed-menu,
+.keydesign-cart .keydesign-cart-dropdown,
+.navbar.navbar-default .dropdown-menu,
+.navbar.navbar-default {
+	background: #FFFFFF!important;}
+
+
+
+@media (min-width: 960px) {
+.transparent-navigation .navbar.navbar-default,
+.transparent-navigation .navbar.navbar-default .container,
+.transparent-navigation .navbar.navbar-default.contained,
+.transparent-navigation .navbar .topbar,
+.transparent-navigation .navbar .menubar
+{
+	background: 	border: }
+
+.transparent-navigation #menu-topbar-menu li a,
+.transparent-navigation .navbar-topbar li a,
+.transparent-navigation .topbar-phone .iconsmind-Telephone,
+.transparent-navigation .topbar-email .iconsmind-Mail,
+.transparent-navigation .navbar.navbar-default:not(.navbar-shrink) .topbar-socials a .fa,
+.transparent-navigation .navbar.navbar-default .topbar-phone a,
+.transparent-navigation .navbar.navbar-default .topbar-email a,
+.transparent-navigation .topbar-lang-switcher ul,
+.transparent-navigation .topbar-lang-switcher ul:not(:hover) li a,
+.transparent-navigation .topbar-menu-search .fa.toggle-search,
+.transparent-navigation .navbar.navbar-default .menubar .navbar-nav a,
+.transparent-navigation .keydesign-cart .cart-icon,
+.transparent-navigation .keydesign-cart .badge,
+.transparent-navigation #logo .logo
+{
+	color: }
+
+
+
+}
+
+.keydesign-cart .keydesign-cart-dropdown,
+#main-menu .navbar-nav.navbar-shrink .menu-item-has-children .dropdown-menu,
+.navbar-nav.navbar-shrink .menu-item-has-children .dropdown-menu,
+.navbar.navbar-default.navbar-shrink .keydesign-cart .keydesign-cart-dropdown,
+.navbar.navbar-default.navbar-shrink .dropdown-menu,
+.navbar.navbar-default.navbar-shrink.contained .container,
+body:not(.transparent-navigation) .navbar.navbar-default.contained .container,
+.navbar.navbar-default.navbar-shrink .menubar {
+	background: #FFFFFF!important;}
+
+
+.navbar-default .menu-item-has-children .mobile-dropdown,
+.navbar-default .menu-item-has-children:hover .dropdown-menu .dropdown:before,
+.navbar.navbar-default .mobile-cart .keydesign-cart .cart-icon,
+.keydesign-cart .nc-icon-outline-cart,
+.transparent-navigation .navbar.navbar-default .menubar .navbar-nav .dropdown-menu a,
+.navbar.navbar-default .menubar .navbar-nav a {
+	color: #1F1F1F!important;
+}
+
+
+.navbar-default .navbar-toggle .icon-bar {
+	background: #1F1F1F!important;
+}
+
+.navbar-default.navbar-shrink .navbar-toggle .icon-bar {
+	background: #1F1F1F!important;
+}
+
+
+.navbar-default.navbar-shrink .menu-item-has-children .mobile-dropdown,
+.navbar-default.navbar-shrink .menu-item-has-children:hover .dropdown-menu .dropdown:before,
+.keydesign-cart ul.product_list_widget .subtotal,
+.transparent-navigation .navbar-shrink  #logo .logo,
+.transparent-navigation .topbar-menu-search .fa.toggle-search.fa-times,
+#main-menu .navbar-nav.navbar-shrink .menu-item-has-children .mobile-dropdown,
+#main-menu .navbar-nav.navbar-shrink .menu-item-has-children:hover .dropdown-menu .dropdown:before,
+#main-menu .navbar-nav.navbar-shrink .menu-item-has-children .dropdown-menu a,
+.keydesign-cart ul.product_list_widget .cart-item,
+.transparent-navigation .navbar.navbar-default.navbar-shrink .menubar .navbar-nav .dropdown-menu a,
+.navbar.navbar-default.navbar-shrink .keydesign-cart .keydesign-cart-dropdown,
+.navbar.navbar-default.navbar-shrink .keydesign-cart .nc-icon-outline-cart,
+.navbar.navbar-default.navbar-shrink .menubar .navbar-nav a,
+.navbar.navbar-default.navbar-shrink .keydesign-cart .cart-icon
+{
+	color: #1F1F1F!important;
+}
+
+
+
+.navbar.navbar-default .navbar-nav a:hover {
+	color: #4F6DF5!important;
+}
+
+.menubar #main-menu .navbar-nav .mega-menu.menu-item-has-children .dropdown > a,
+.keydesign-cart ul.product_list_widget .cart-item:hover,
+.navbar-default.navbar-shrink .nav li.active a,
+#main-menu .navbar-nav .menu-item-has-children .dropdown-menu a:hover, .navbar-nav .menu-item-has-children .dropdown-menu a:hover,
+.body:not(.transparent-navigation) .navbar a:hover,
+.navbar-default .nav li.active a,
+.navbar.navbar-default.navbar-shrink .navbar-nav a:hover {
+	color: #4F6DF5!important;
+}
+
+#logo .logo {
+	color: #1f1f1f;
+	color: !important;
+}
+
+.transparent-navigation .navbar-shrink #logo .logo,
+.navbar-shrink #logo .logo {
+	color: #1f1f1f;
+	color: !important;
+}
+
+
+body, .box, .cb-text-area p {
+	color: ;
+	font-weight: ;
+		font-size: ;
+	line-height: ;
+}
+
+
+.container #logo .logo {
+	font-weight: 700;
+		font-size: 30px;
+}
+
+
+
+.container h1 {
+	color: ;
+	font-weight: 700;
+		font-size: ;
+	text-align: ;
+	line-height: 46px;
+	text-transform: ;
+}
+
+.container h2, #popup-modal .modal-content h2 {
+	color: #1d3548;
+	font-weight: 700;
+		font-size: 30px;
+	text-align: ;
+	line-height: 46px;
+	text-transform: ;
+}
+
+.container h3 {
+	color: ;
+	font-weight: ;
+		font-size: ;
+	text-align: ;
+	line-height: ;
+	text-transform: ;
+}
+
+.container h4, .kd-photobox .phb-content h4, .content-area .vc_grid-item-mini .vc_gitem_row .vc_gitem-col h4 {
+	color: #1d3548;
+	font-weight: ;
+		font-size: ;
+	text-align: ;
+	line-height: ;
+	text-transform: ;
+}
+
+.container h5 {
+	color: ;
+	font-weight: ;
+		font-size: ;
+	text-align: ;
+	line-height: ;
+	text-transform: ;
+}
+
+.container h6, .key-icon-box h6.service-heading {
+	color: ;
+	font-weight: ;
+		font-size: ;
+	text-align: ;
+	line-height: ;
+	text-transform: ;
+}
+
+
+
+.woocommerce ul.products li.product .added_to_cart, .woocommerce ul.products li.product .button, .woocommerce div.product form.cart .button,
+.tt_button, .wpcf7 .wpcf7-submit, .content-area .vc_grid .vc_gitem-zone-c .vc_general, .tt_button.modal-menu-item, .vc_grid-item-mini .blog-detailed-grid .vc_btn3-container a {
+	font-weight: ;
+	color: #132d41;
+		font-size: ;
+	line-height: ;
+	text-transform: ;
+}
+
+.tt_button:hover, .wpcf7 .wpcf7-submit:hover, .content-area .vc_grid .vc_gitem-zone-c .vc_general:hover, .tt_button.modal-menu-item:hover, .vc_grid-item-mini .blog-detailed-grid .vc_btn3-container:hover a {
+	color: #132d41;
+}
+
+
+.topbar-phone, .topbar-email, .topbar-socials a, #menu-topbar-menu a, .navbar-topbar a {
+	font-weight: ;
+	font-size: ;
+}
+
+
+body .navbar-default .nav li a, body .modal-menu-item {
+	font-weight: ;
+		font-size: 15px;
+	text-transform: ;
+}
+
+
+
+
+
+html {
+	background-color: ;
+	background-image: url("");
+	background-size: ;
+	background-repeat: ;
+	background-position: ;
+	background-attachment: ;
+}
+
+
+@media (max-width: 960px) {
+
+#logo .logo {
+	color: #1F1F1F!important;
+}
+
+.navbar-nav .menu-item a {
+	color: #1F1F1F!important;
+}
+
+
+
+}
+
+.entry-header.blog-header {
+	background: ;
+}
+
+.search .breadcrumbs,
+.search .entry-header .section-heading,
+.archive.author .breadcrumbs,
+.archive.author .entry-header .section-heading,
+.archive.category .breadcrumbs,
+.archive.category .entry-header .section-heading,
+.archive.tag .breadcrumbs,
+.archive.tag .entry-header .section-heading,
+.archive.date .breadcrumbs,
+.archive.date .entry-header .section-heading,
+.blog .breadcrumbs,
+.blog .entry-header .section-heading,
+.blog .entry-header .section-subheading {
+	color: #FFFFFF;
+}
+
+.page-template-default .entry-header {
+	  background: ;
+}
+
+.page-template-default .entry-header .breadcrumbs,
+.page-template-default .entry-header .section-heading,
+.page-template-default .entry-header .section-subheading {
+	  color: ;
+}
+
+.hover_solid_primary:hover {
+   background: #87FBE6!important;
+   border-color: #87FBE6!important;
+   color: #fff!important;
+}
+
+.hover_solid_secondary:hover {
+   background: !important;
+   border-color: !important;
+   color: #fff!important;
+}
+
+.hover_outline_primary:hover {
+   background: #87FBE6!important;
+   border-color: #87FBE6!important;
+   background: transparent!important;
+}
+
+.hover_outline_secondary:hover {
+   color: !important;
+   border-color: !important;
+   background: transparent!important;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+<style id="rocket-lazyload-inline-css" type="text/css">
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;cursor:pointer;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:72px;width:72px;left:50%;top:50%;margin-left:-36px;margin-top:-36px;position:absolute;background:url(https://www.ipandlegalfilings.com/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat;cursor:pointer}
+</style>
+<script type="rocketlazyloadscript">if (document.location.protocol != "https:") {document.location = document.URL.replace(/^http:/i, "https:");}</script><script type="text/javascript" src="https://www.ipandlegalfilings.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.ipandlegalfilings.com/wp-content/plugins/keydesign-addon/assets/js/jquery.easing.min.js?ver=5.5.7" id="kd_easing_script-js" defer=""></script>
+<script type="text/javascript" src="https://www.ipandlegalfilings.com/wp-content/plugins/keydesign-addon/assets/js/owl.carousel.min.js?ver=5.5.7" id="kd_carousel_script-js" defer=""></script>
+<script data-minify="1" type="text/javascript" src="https://www.ipandlegalfilings.com/wp-content/cache/min/1/wp-content/plugins/keydesign-addon/assets/js/jquery.appear.js?ver=1762523309" id="kd_jquery_appear-js" defer=""></script>
+<script data-minify="1" type="text/javascript" src="https://www.ipandlegalfilings.com/wp-content/cache/min/1/wp-content/plugins/keydesign-addon/assets/js/kd_addon_script.js?ver=1762523309" id="kd_addon_script-js" defer=""></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://www.ipandlegalfilings.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.4.8.1" id="tp-tools-js" defer=""></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://www.ipandlegalfilings.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.8.1" id="revmin-js" defer=""></script>
+<script type="text/javascript" id="ssb-front-js-js-extra">
+/* <![CDATA[ */
+var SSB = {"ajax_url":"https:\/\/www.ipandlegalfilings.com\/wp-admin\/admin-ajax.php","fb_share_nonce":"f060421efb"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" src="https://www.ipandlegalfilings.com/wp-content/cache/min/1/wp-content/plugins/simple-social-buttons/assets/js/front.js?ver=1762523309" id="ssb-front-js-js" defer=""></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" src="https://www.ipandlegalfilings.com/wp-content/cache/min/1/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-contact-form-7-tracker.js?ver=1762523309" id="gtm4wp-contact-form-7-tracker-js" defer=""></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" src="https://www.ipandlegalfilings.com/wp-content/cache/min/1/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-form-move-tracker.js?ver=1762523309" id="gtm4wp-form-move-tracker-js" defer=""></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" src="https://www.ipandlegalfilings.com/wp-content/cache/min/1/wp-content/plugins/duracelltomi-google-tag-manager/js/analytics-talk-content-tracking.js?ver=1762523309" id="gtm4wp-scroll-tracking-js" defer=""></script>
+<script type="text/javascript" src="https://www.ipandlegalfilings.com/wp-content/plugins/keydesign-addon/assets/js/jquery.easytabs.min.js?ver=5.5.7" id="kd_easytabs_script-js" defer=""></script>
+<script type="text/javascript" src="https://www.ipandlegalfilings.com/wp-content/plugins/keydesign-addon/assets/js/photoswipe.min.js?ver=5.5.7" id="photoswipejs-js" defer=""></script>
+<script type="text/javascript" src="https://www.ipandlegalfilings.com/wp-content/plugins/keydesign-addon/assets/js/photoswipe-ui-default.min.js?ver=5.5.7" id="photoswipejs-ui-js" defer=""></script>
+<link rel="https://api.w.org/" href="https://www.ipandlegalfilings.com/wp-json/"><link rel="alternate" type="application/json" href="https://www.ipandlegalfilings.com/wp-json/wp/v2/posts/20924"><link rel="prev" title="Wealth Tax in India" href="https://www.ipandlegalfilings.com/wealth-tax-in-india/">
+<link rel="next" title="The Cyber-Crimes in the Cyber-world" href="https://www.ipandlegalfilings.com/the-cyber-crimes-in-the-cyber-world/">
+<meta name="framework" content="Redux 4.1.29">
+		<!-- GA Google Analytics @ https://m0n.co/ga -->
+		<script type="rocketlazyloadscript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-BY3YRE5QLL"></script>
+		<script type="rocketlazyloadscript">
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-BY3YRE5QLL');
+		</script>
+
+	<!-- HFCM by 99 Robots - Snippet # 1: Google Analytics Tracking -->
+<!-- Global site tag (gtag.js) - Google Ads: 745087351 -->
+<script type="rocketlazyloadscript" async="" src="https://www.googletagmanager.com/gtag/js?id=AW-745087351"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-745087351');
+</script>
+<!-- /end HFCM by 99 Robots -->
+ <style media="screen">
+
+		.simplesocialbuttons.simplesocialbuttons_inline .ssb-fb-like {
+	  margin: ;
+	}
+		 /*inline margin*/
+	
+		.simplesocialbuttons.simplesocialbuttons_inline.simplesocial-simple-round button{
+	  margin: ;
+	}
+	
+	
+	
+	
+	
+			 /*margin-digbar*/
+
+	
+	
+	
+	
+	
+	
+	
+</style>
+
+<!-- Open Graph Meta Tags generated by Simple Social Buttons 3.2.2 -->
+<meta property="og:title" content="Unfair Trade Practices and Deficiencies in service in the Consumer Protection Act, 2019 - IPLF">
+<meta property="og:description" content="INTRODUCTION
+This research discusses the scope and extent of the new Consumer Protection Act of 2019, as well as its effectiveness in addressing customer concerns regarding online transactions. The creation of this new Act was necessary due to the growth of a well-organized online sector for manufacturers, traders, and service providers, which significantly impacted business and customer interactions. The notion of">
+<meta property="og:url" content="https://www.ipandlegalfilings.com/unfair-trade-practices-and-deficiencies-in-service-in-the-consumer-protection-act-2019/">
+<meta property="og:site_name" content="IPLF">
+<meta property="og:image" content="https://www.ipandlegalfilings.com/wp-content/uploads/2025/01/consumer-protection-act.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="INTRODUCTION
+This research discusses the scope and extent of the new Consumer Protection Act of 2019, as well as its effectiveness in addressing customer concerns regarding online transactions. The creation of this new Act was necessary due to the growth of a well-organized online sector for manufacturers, traders, and service providers, which significantly impacted business and customer interactions. The notion of">
+<meta name="twitter:title" content="Unfair Trade Practices and Deficiencies in service in the Consumer Protection Act, 2019 - IPLF">
+<meta property="twitter:image" content="https://www.ipandlegalfilings.com/wp-content/uploads/2025/01/consumer-protection-act.jpg">
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer="" type="text/javascript">//<![CDATA[
+var google_tag_params = {"pagePostType":"post","pagePostType2":"single-post","pageCategory":["consumer-protection-act","uncategorized"],"pageAttributes":["consumer-complaints","consumer-courts","consumer-disputes","consumer-forums","consumer-protection","consumer-protection-act-2019","consumer-protection-authority","consumer-rights","cpa-2019","e-commerce-regulations","indian-consumer-law","online-consumer-protection","product-liability","service-liability","unfair-trade-practices"],"pagePostAuthor":"IPLF","gtm.whitelist":["awct","sp","html","img","ga","tc","tdc","ua"],"gtm.blacklist":[]};
+	var dataLayer_content = {"pagePostType":"post","pagePostType2":"single-post","pageCategory":["consumer-protection-act","uncategorized"],"pageAttributes":["consumer-complaints","consumer-courts","consumer-disputes","consumer-forums","consumer-protection","consumer-protection-act-2019","consumer-protection-authority","consumer-rights","cpa-2019","e-commerce-regulations","indian-consumer-law","online-consumer-protection","product-liability","service-liability","unfair-trade-practices"],"pagePostAuthor":"IPLF","gtm.whitelist":["awct","sp","html","img","ga","tc","tdc","ua"],"gtm.blacklist":[],"google_tag_params":window.google_tag_params};
+	dataLayer.push( dataLayer_content );//]]>
+</script>
+<script type="rocketlazyloadscript" data-cfasync="false">//<![CDATA[
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.'+'js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-56B6PHF');//]]>
+</script>
+<!-- End Google Tag Manager -->
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->                
+                <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://www.ipandlegalfilings.com/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style><meta name="generator" content="Powered by Slider Revolution 5.4.8.1 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+                <style type="text/css">
+                    
+            @font-face {
+                font-family: 'aslsicons2';
+                src: url('https://www.ipandlegalfilings.com/wp-content/plugins/ajax-search-lite/css/fonts/icons2.eot');
+                src: url('https://www.ipandlegalfilings.com/wp-content/plugins/ajax-search-lite/css/fonts/icons2.eot?#iefix') format('embedded-opentype'),
+                     url('https://www.ipandlegalfilings.com/wp-content/plugins/ajax-search-lite/css/fonts/icons2.woff2') format('woff2'),
+                     url('https://www.ipandlegalfilings.com/wp-content/plugins/ajax-search-lite/css/fonts/icons2.woff') format('woff'),
+                     url('https://www.ipandlegalfilings.com/wp-content/plugins/ajax-search-lite/css/fonts/icons2.ttf') format('truetype'),
+                     url('https://www.ipandlegalfilings.com/wp-content/plugins/ajax-search-lite/css/fonts/icons2.svg#icons') format('svg');
+                font-weight: normal;
+                font-style: normal;
+            }
+            div[id*='ajaxsearchlitesettings'].searchsettings .asl_option_inner label {
+                font-size: 0px !important;
+                color: rgba(0, 0, 0, 0);
+            }
+            div[id*='ajaxsearchlitesettings'].searchsettings .asl_option_inner label:after {
+                font-size: 11px !important;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+            div[id*='ajaxsearchlite'].wpdreams_asl_container {
+                width: 90%;
+                margin: 0px 0px 0px 0px;
+            }
+            div[id*='ajaxsearchliteres'].wpdreams_asl_results div.resdrg span.highlighted {
+                font-weight: bold;
+                color: rgba(217, 49, 43, 1);
+                background-color: rgba(238, 238, 238, 1);
+            }
+            div[id*='ajaxsearchliteres'].wpdreams_asl_results .results div.asl_image {
+                width: 70px;
+                height: 70px;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            div.asl_r .results {
+                max-height: none;
+            }
+            
+                div.asl_r.asl_w.vertical .results .item::after {
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    content: '';
+                    height: 1px;
+                    width: 100%;
+                    background: #D8D8D8;
+                }
+                div.asl_r.asl_w.vertical .results .item.asl_last_item::after {
+                    display: none;
+                }
+                                </style>
+                            <script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+                if ( typeof _ASL !== "undefined" && _ASL !== null && typeof _ASL.initialize !== "undefined" )
+                    _ASL.initialize();
+            </script>
+            <!-- Google tag (gtag.js) -->
+<script type="rocketlazyloadscript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-FY1XWJRVY8"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FY1XWJRVY8');
+</script><link rel="icon" href="https://www.ipandlegalfilings.com/wp-content/uploads/2020/09/cropped-fevicon-512x512-1-32x32.png" sizes="32x32">
+<link rel="icon" href="https://www.ipandlegalfilings.com/wp-content/uploads/2020/09/cropped-fevicon-512x512-1-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://www.ipandlegalfilings.com/wp-content/uploads/2020/09/cropped-fevicon-512x512-1-180x180.png">
+<meta name="msapplication-TileImage" content="https://www.ipandlegalfilings.com/wp-content/uploads/2020/09/cropped-fevicon-512x512-1-270x270.png">
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">function setREVStartSize(e){									
+						try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+							if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+						}catch(d){console.log("Failure at Presize of Slider:"+d)}						
+					};</script>
+		<style type="text/css" id="wp-custom-css">
+			.logged-in.customer-area-active.customer-area .entry-header.blog-header.with-topbar,
+.logged-in.customer-area-active.customer-area .entry-meta .published:before, .logged-in.customer-area-active.customer-area .entry-meta .author:before,
+.logged-in.customer-area-active.customer-area .entry-meta .author,
+.logged-in.customer-area-active.customer-area .entry-meta span.blog-label,
+.logged-in.customer-area-active.customer-area .cuar-css-wrapper .cuar-menu-container .nav-container,
+.single.logged-in.customer-area-active.customer-area .cuar-css-wrapper .cuar-menu-container+.cuar-toolbar,
+.logged-in.customer-area-active.customer-area .cuar-css-wrapper .cuar-single-post-header{
+	display:none !important;
+}
+.logged-in.customer-area-active.customer-area #posts-content {
+    padding: 180px 0 50px;
+}
+.logged-in.customer-area-active.customer-area .cuar-css-wrapper .panel-title{
+		font-size:18px;
+    font-family:"Open Sans";
+}
+.logged-in.customer-area-active.customer-area .cuar-css-wrapper .cuar-single-entry {
+    margin-top:30px;
+    border-top: 1px solid #d6d6d6;
+	font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.1px;
+}
+.single.logged-in.customer-area-active.customer-area .cuar-css-wrapper .cuar-single-entry {
+	margin-top: 0px;
+}
+.single.logged-in.customer-area-active.customer-area .cuar-css-wrapper .btn-default {
+    color: #fff;
+    background-color: #5e6ee7;
+    border-color: rgb(94 110 231);
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+.logged-in.customer-area-active.customer-area .cuar-css-wrapper .btn-sm {
+    padding: 5px 8px;
+    font-size: 11px;
+    line-height: 1.5;
+    border-radius: 0;
+}
+.logged-in.customer-area-active.customer-area .blog-social-sharing {
+    display:none;
+}
+.logged-in.customer-area-active.customer-area .navbar.navbar-default {
+    box-shadow: 0 0px 20px rgba(0, 0, 0, .05);
+}
+
+.logged-in.customer-area-active.customer-area .cuar-css-wrapper .cuar-menu-container{
+    display: none;
+}
+
+.logged-in.customer-area-active.customer-area .cuar-css-wrapper .cuar-menu-container .nav-container ul,
+.logged-in.customer-area-active.customer-area .cuar-css-wrapper .panel.cuar_private_page,
+.logged-in.customer-area-active.customer-area .cuar-css-wrapper .panel-heading .widget-menu{
+    display: none !important;
+}
+.logged-in.customer-area-active.customer-area .cuar-css-wrapper .cuar-toolbar {
+    background: #f4f8fb;
+    border-top:none;
+}
+.logged-in.customer-area-active.customer-area.page-template-default #primary {
+    padding-bottom: 80px;
+    padding-top: 60px;
+}
+
+.page.logged-in.customer-area-active.customer-area .cuar-css-wrapper .panel-title,
+.logged-in.customer-area-active.customer-area .cuar-css-wrapper .mn{
+    font-size: 0;
+}
+.page.logged-in.customer-area-active.customer-area .cuar-css-wrapper .panel-title:before{
+    content:"Order Portfolio";
+    font-size:18px;
+    font-family:"Open Sans";
+}
+.page.logged-in.customer-area-active.customer-area .cuar-css-wrapper p.mn:before{
+    content: "You currently have no updates.";
+    position: relative;
+    font-size: 13px;
+}
+.logged-in.customer-area-active.customer-area .cuar-css-wrapper .cuar-content-styles i.fa {
+    position: relative;
+    top: -2px;
+}
+.logged-in.customer-area-active.customer-area .cuar-css-wrapper a {
+    color: #828282;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 600;
+}
+.search #posts-content .entry-meta {
+	display:none;
+}
+entry-image {
+	display: none;
+}
+#posts-content.blog-img-top-list .wp-post-image, .single-post #posts-content .wp-post-image {
+	display: none;
+}
+.popup-modal .modal-content-inner .cf7ic_instructions {
+    display: block;
+    color: #fff;
+}
+.advanced_iframe #header #header-wrap{
+    display:none !important;
+} 
+.blog-single .blog-single-content a{
+	color:#0000ff;
+}
+.get-started-form .vc_column_container>.vc_column-inner {
+   
+    padding-left: 10px;
+    padding-right: 10px;
+}
+span.mega-indicator::after {
+    content: '\f0d7' !important;
+	font-family: FontAwesome !important;
+}		</style>
+		<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript><style type="text/css">/** Mega Menu CSS: fs **/</style>
+
+<!-- START - Open Graph and Twitter Card Tags 3.1.1 -->
+ <!-- Facebook Open Graph -->
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="IPLF">
+  <meta property="og:title" content="Unfair Trade Practices and Deficiencies in service in the Consumer Protection Act, 2019">
+  <meta property="og:url" content="https://www.ipandlegalfilings.com/unfair-trade-practices-and-deficiencies-in-service-in-the-consumer-protection-act-2019/">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="INTRODUCTION
+This research discusses the scope and extent of the new Consumer Protection Act of 2019, as well as its effectiveness in addressing customer concerns regarding online transactions. The creation of this new Act was necessary due to the growth of a well-organized online sector for manufa">
+  <meta property="og:image" content="https://www.ipandlegalfilings.com/wp-content/uploads/2025/01/consumer-protection-act.jpg">
+  <meta property="og:image:url" content="https://www.ipandlegalfilings.com/wp-content/uploads/2025/01/consumer-protection-act.jpg">
+  <meta property="og:image:secure_url" content="https://www.ipandlegalfilings.com/wp-content/uploads/2025/01/consumer-protection-act.jpg">
+  <meta property="article:published_time" content="2025-01-21T14:13:27+05:30">
+  <meta property="article:modified_time" content="2025-01-21T14:33:08+05:30">
+  <meta property="og:updated_time" content="2025-01-21T14:33:08+05:30">
+  <meta property="article:section" content="Consumer Protection Act">
+  <meta property="article:section" content="Uncategorized">
+  <meta property="article:publisher" content="https://www.facebook.com/IPandLF/">
+ <!-- Google+ / Schema.org -->
+ <!-- Twitter Cards -->
+  <meta name="twitter:title" content="Unfair Trade Practices and Deficiencies in service in the Consumer Protection Act, 2019">
+  <meta name="twitter:url" content="https://www.ipandlegalfilings.com/unfair-trade-practices-and-deficiencies-in-service-in-the-consumer-protection-act-2019/">
+  <meta name="twitter:description" content="INTRODUCTION
+This research discusses the scope and extent of the new Consumer Protection Act of 2019, as well as its effectiveness in addressing customer concerns regarding online transactions. The creation of this new Act was necessary due to the growth of a well-organized online sector for manufa">
+  <meta name="twitter:image" content="https://www.ipandlegalfilings.com/wp-content/uploads/2025/01/consumer-protection-act.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+ <!-- SEO -->
+ <!-- Misc. tags -->
+ <!-- is_singular -->
+<!-- END - Open Graph and Twitter Card Tags 3.1.1 -->
+	
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>	   
+	   <meta name="p:domain_verify" content="05d5d52c06aefea56f13c836ec6ee106">
+   <style id="theia-sticky-sidebar-stylesheet-TSS">.theiaStickySidebar:after {content: ""; display: table; clear: both;}</style></head>
+    <body class="post-template-default single single-post postid-20924 single-format-standard user-registration-page customer-area-active mega-menu-header-menu wpb-js-composer js-comp-ver-5.6 vc_responsive kd-window-loaded">
+
+        
+      <!-- Contact Modal template -->
+            <!-- END Contact Modal template -->
+
+      <nav class="navbar navbar-default navbar-fixed-top with-topbar">
+        <!-- Topbar template -->
+          <div class="topbar first-template">
+    <div class="container">
+               <div class="topbar-contact">
+                              <span class="topbar-phone"><a href="tel:Whatsapp: +91 8920269831">Whatsapp: +91 8920269831</a></span>
+                                           <span class="topbar-email"><a href="mailto:Email: support@ipandlegalfilings.com">Email: support@ipandlegalfilings.com</a></span>
+                      </div>
+                              <div class="topbar-menu-search">
+            <div class="topbar-menu">
+               <ul id="menu-topbar-menu" class="navbar-topbar"><li id="menu-item-6475" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6475"><a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send/?lang=en&amp;phone=918920269831&amp;text=Hi%2C+we+need+assistance+regarding+IP%2Flegal+services&amp;app_absent=0"><i class="fa fa-whatsapp" aria-hidden="true"></i> +91 8920269831</a></li>
+<li id="menu-item-21020" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21020"><a href="https://www.ipandlegalfilings.com/customer-area/">Customer Login</a></li>
+</ul>            </div>
+                        
+            <!-- WooCommerce Cart -->
+                          <!-- END WooCommerce Cart -->
+         </div>
+           </div>
+</div>
+        <!-- END Topbar template -->
+
+        <div class="menubar">
+          <div class="container">
+           <div id="logo">
+                                             <!-- Image logo -->
+                 <a class="logo" href="https://www.ipandlegalfilings.com">
+                                        <img class="fixed-logo lazyloaded" src="https://www.ipandlegalfilings.com/wp-content/uploads/2020/08/IPLF-Logo-Black-1.png" width="140" height="25" alt="IPLF" data-ll-status="loaded"><noscript><img class="fixed-logo" src="https://www.ipandlegalfilings.com/wp-content/uploads/2020/08/IPLF-Logo-Black-1.png"  width="175px" height="100%" alt="IPLF" /></noscript>
+
+                                          <img class="nav-logo" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20175%20100'%3E%3C/svg%3E" width="175px" height="100%" alt="IPLF" data-lazy-src="https://www.ipandlegalfilings.com/wp-content/uploads/2020/08/IPLF-logo_V1-e1598876389533.png"><noscript><img class="nav-logo" src="https://www.ipandlegalfilings.com/wp-content/uploads/2020/08/IPLF-logo_V1-e1598876389533.png"  width="175px" height="100%" alt="IPLF" /></noscript>
+                     
+                                    </a>
+                                                    </div>
+           <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <div class="mobile-cart">
+                                            </div>
+            </div>
+            <div id="main-menu" class="collapse navbar-collapse  navbar-right">
+               <div id="mega-menu-wrap-header-menu" class="mega-menu-wrap"><div class="mega-menu-toggle"><div class="mega-toggle-blocks-left"></div><div class="mega-toggle-blocks-center"></div><div class="mega-toggle-blocks-right"><div class="mega-toggle-block mega-menu-toggle-block mega-toggle-block-1" id="mega-toggle-block-1" tabindex="0"><span class="mega-toggle-label" role="button" aria-expanded="false"><span class="mega-toggle-label-closed">MENU</span><span class="mega-toggle-label-open">MENU</span></span></div></div></div><ul id="mega-menu-header-menu" class="mega-menu max-mega-menu mega-menu-horizontal mega-no-js" data-event="hover_intent" data-effect="fade_up" data-effect-speed="200" data-effect-mobile="disabled" data-effect-speed-mobile="0" data-mobile-force-width="false" data-second-click="go" data-document-click="collapse" data-vertical-behaviour="standard" data-breakpoint="600" data-unbind="true" data-mobile-state="collapse_all" data-hover-intent-timeout="300" data-hover-intent-interval="100"><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-grid mega-menu-item-6514" id="mega-menu-item-6514"><a class="mega-menu-link" href="#" aria-haspopup="true" aria-expanded="false" tabindex="0">Patent &amp; IP<span class="mega-indicator"></span></a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-row" id="mega-menu-6514-0">
+	<ul class="mega-sub-menu">
+<li class="mega-menu-column mega-menu-columns-4-of-12" id="mega-menu-6514-0-0">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_custom_html mega-menu-item-custom_html-26" id="mega-menu-item-custom_html-26"><h4 class="mega-block-title">Patent Registration In India</h4><div class="textwidget custom-html-widget"><p><a class="cd-dropdown-item item-1" href="/services/patent-registration-in-india/" rel="noopener noreferrer">Patent Registration In India</a></p></div></li><li class="mega-menu-item mega-menu-item-type-widget widget_custom_html mega-menu-item-custom_html-9" id="mega-menu-item-custom_html-9"><h4 class="mega-block-title">Patent Services</h4><div class="textwidget custom-html-widget"><p><a class="cd-dropdown-item item-1" href="/services/patent-search/" rel="noopener noreferrer">Patent Search</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/patent-drafting-services/" rel="noopener noreferrer">Patent Drafting</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/patent-filing/" rel="noopener noreferrer">Patent Filing</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/patent-litigation/" rel="noopener noreferrer">Patent Litigation</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/patent-proof-reading/" rel="noopener noreferrer">Patent Proof Reading</a></p></div></li><li class="mega-menu-item mega-menu-item-type-widget widget_custom_html mega-menu-item-custom_html-13" id="mega-menu-item-custom_html-13"><h4 class="mega-block-title">Patent Prosecution</h4><div class="textwidget custom-html-widget"><p><a class="cd-dropdown-item item-1" href="/services/response-to-fer-or-office-action/">Response to FER/Office Action
+</a></p></div></li>		</ul>
+</li><li class="mega-menu-column mega-menu-columns-4-of-12" id="mega-menu-6514-0-1">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_custom_html mega-menu-item-custom_html-11" id="mega-menu-item-custom_html-11"><h4 class="mega-block-title">Patent Search</h4><div class="textwidget custom-html-widget"><p><a class="cd-dropdown-item item-1" href="/services/patentability-or-novelty-search/" rel="noopener noreferrer">Patentability/Novelty Search</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/freedom-to-operate-fto-search/" rel="noopener noreferrer">Freedom to Operate (FTO) Search</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/patent-validity-invalidity-search/" rel="noopener noreferrer">Patent Validity/Invalidity Search</a></p></div></li><li class="mega-menu-item mega-menu-item-type-widget widget_custom_html mega-menu-item-custom_html-12" id="mega-menu-item-custom_html-12"><h4 class="mega-block-title">International Patent Protection</h4><div class="textwidget custom-html-widget"><p><a class="cd-dropdown-item item-1" href="/services/global-patent-filing/">Global Patent Filing
+</a></p></div></li><li class="mega-menu-item mega-menu-item-type-widget widget_custom_html mega-menu-item-custom_html-15" id="mega-menu-item-custom_html-15"><h4 class="mega-block-title">Copyright And Design Services</h4><div class="textwidget custom-html-widget"><p><a class="cd-dropdown-item item-1" href="/services/copyright-services/">Copyright Registration In India</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/design-registration-india/">Design Registration In India</a></p></div></li>		</ul>
+</li><li class="mega-menu-column mega-menu-columns-4-of-12" id="mega-menu-6514-0-2">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_custom_html mega-menu-item-custom_html-14" id="mega-menu-item-custom_html-14"><h4 class="mega-block-title">Trade Mark Services</h4><div class="textwidget custom-html-widget"><p><a target="_blank" class="cd-dropdown-item item-1" href="/services/iplf-trademark-search/" rel="noopener noreferrer">Conduct Free Trade Mark Search</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/trade-mark-filing-in-india/">Trade Mark Filing In India</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/trademark-registration/">Trade Mark Registration</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/trademark-opposition/">Trade Mark Opposition</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/trademark-renewal/">Trade Mark Renewal</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/trademark-litigation-enforcement/">Trade Mark Litigation/Enforcement</a></p></div></li><li class="mega-menu-item mega-menu-item-type-widget widget_custom_html mega-menu-item-custom_html-24" id="mega-menu-item-custom_html-24"><h4 class="mega-block-title">Domain Name Dispute Services</h4><div class="textwidget custom-html-widget"><p><a class="cd-dropdown-item item-1" href="/services/domain-name-dispute-services/">Domain Name Dispute</a></p></div></li>		</ul>
+</li>	</ul>
+</li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-grid mega-menu-item-6516" id="mega-menu-item-6516"><a class="mega-menu-link" href="#" aria-haspopup="true" aria-expanded="false" tabindex="0">Legal &amp; Contracts<span class="mega-indicator"></span></a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-row" id="mega-menu-6516-0">
+	<ul class="mega-sub-menu">
+<li class="mega-menu-column mega-menu-columns-5-of-12" id="mega-menu-6516-0-0">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_custom_html mega-menu-item-custom_html-16" id="mega-menu-item-custom_html-16"><h4 class="mega-block-title">Legal Documentation Services</h4><div class="textwidget custom-html-widget"><p><a class="cd-dropdown-item item-1" href="/services/contract-or-agreement-drafting/">Contract/Agreement Drafting</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/contract-or-agreement-vetting/">Contract/Agreement Vetting</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/commercial-litigation/">Commercial Litigation</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/commercial-law-advisory/">Commercial Law Advisory</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/service-level-agreement-sla/">Service Level Agreement (SLA)</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/drafting-of-legal-notice/">Drafting of Legal Notice</a></p></div></li><li class="mega-menu-item mega-menu-item-type-widget widget_custom_html mega-menu-item-custom_html-17" id="mega-menu-item-custom_html-17"><h4 class="mega-block-title">E-Commerce Contracts</h4><div class="textwidget custom-html-widget"><p><a class="cd-dropdown-item item-1" href="/services/terms-and-conditions-policy/">Terms and Conditions Policy</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/privacy-policy/">Privacy Policy</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/vendor-agreement/">Vendor Agreement</a></p></div></li>		</ul>
+</li><li class="mega-menu-column mega-menu-columns-5-of-12" id="mega-menu-6516-0-1">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_custom_html mega-menu-item-custom_html-18" id="mega-menu-item-custom_html-18"><h4 class="mega-block-title">Collaboration Contracts</h4><div class="textwidget custom-html-widget"><p><a class="cd-dropdown-item item-1" href="/services/joint-venture/">Joint Venture</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/franchise-agreement/">Franchise Agreement</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/memorandum-of-understanding-mou/">Memorandum of Understanding (MOU)</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/partnership-agreements/">Partnership Agreements</a></p></div></li><li class="mega-menu-item mega-menu-item-type-widget widget_custom_html mega-menu-item-custom_html-19" id="mega-menu-item-custom_html-19"><h4 class="mega-block-title">Corporate Agreements</h4><div class="textwidget custom-html-widget"><p><a class="cd-dropdown-item item-1" href="/services/employment-contracts/">Employment Contracts</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/freelance-agreements/">Freelance Agreements</a></p></div></li>		</ul>
+</li>	</ul>
+</li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-grid mega-menu-item-6518" id="mega-menu-item-6518"><a class="mega-menu-link" href="#" aria-haspopup="true" aria-expanded="false" tabindex="0">Registration Services<span class="mega-indicator"></span></a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-row" id="mega-menu-6518-0">
+	<ul class="mega-sub-menu">
+<li class="mega-menu-column mega-menu-columns-5-of-12" id="mega-menu-6518-0-0">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_custom_html mega-menu-item-custom_html-20" id="mega-menu-item-custom_html-20"><h4 class="mega-block-title">Business Registrations</h4><div class="textwidget custom-html-widget"><p><a class="cd-dropdown-item item-1" href="/services/private-limited-company-registration/">Private Limited Company</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/one-person-company-opc-registration/">One Person Company (OPC)</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/limited-liability-partnership-llp-registration/">Limited Liability Partnership (LLP)</a></p>
+<p> <a class="cd-dropdown-item item-1" href="/services/partnership-firm-registration/">Partnership Firm</a></p>
+<p> <a class="cd-dropdown-item item-1" href="/services/sole-proprietorship/">Sole Proprietorship</a></p>
+<p> <a class="cd-dropdown-item item-1" href="/services/public-limited-company/">Public Limited Company Registration</a></p>
+<p> <a class="cd-dropdown-item item-1" href="/services/check-company-or-llp-name-availability/">Check Company or LLP Name Availability</a></p></div></li><li class="mega-menu-item mega-menu-item-type-widget widget_custom_html mega-menu-item-custom_html-22" id="mega-menu-item-custom_html-22"><h4 class="mega-block-title">Corporate Recognitions</h4><div class="textwidget custom-html-widget"><p><a class="cd-dropdown-item item-1" href="/services/msme-registration/">MSME Recognition</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/dpiit-start-up-registration/">DPIIT Start-Up Recognition</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/dsir-recognition-of-in-house-rd-units/">DSIR Recognition of In-House R&amp;D Unit(s)
+</a></p></div></li>		</ul>
+</li><li class="mega-menu-column mega-menu-columns-5-of-12" id="mega-menu-6518-0-1">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_custom_html mega-menu-item-custom_html-21" id="mega-menu-item-custom_html-21"><h4 class="mega-block-title">Regulatory Approvals</h4><div class="textwidget custom-html-widget"><p><a class="cd-dropdown-item item-1" href="/services/fssai-registration/">FSSAI Registration</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/central-drugs-standard-control-organisation/">CDSCO Registration</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/national-biodiversity-authority-nba-approval/">NBA Approval</a></p></div></li><li class="mega-menu-item mega-menu-item-type-widget widget_custom_html mega-menu-item-custom_html-23" id="mega-menu-item-custom_html-23"><h4 class="mega-block-title">Tax Registration</h4><div class="textwidget custom-html-widget"><p><a class="cd-dropdown-item item-1" href="/services/gst-registration/">GST Registration</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/professional-tax-registration/">Professional Tax Registration</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/employee-provident-fund-registration/">Employee Provident Fund Registration</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/income-tax-registration-for-exemption/">Income Tax Registration for Exemption</a></p></div></li>		</ul>
+</li>	</ul>
+</li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-grid mega-menu-item-6517" id="mega-menu-item-6517"><a class="mega-menu-link" href="#" aria-haspopup="true" aria-expanded="false" tabindex="0">Tax &amp; Compliance<span class="mega-indicator"></span></a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-row" id="mega-menu-6517-0">
+	<ul class="mega-sub-menu">
+<li class="mega-menu-column mega-menu-columns-5-of-12" id="mega-menu-6517-0-0">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_custom_html mega-menu-item-custom_html-25" id="mega-menu-item-custom_html-25"><h4 class="mega-block-title">Tax and Compliance</h4><div class="textwidget custom-html-widget"><p><a class="cd-dropdown-item item-1" href="/services/filing-of-gst-return/">Filing Of GST Return</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/filing-of-income-tax-it-return/">Filing Of IT Return</a></p>
+<p><a class="cd-dropdown-item item-1" href="/services/filing-of-tds-return/">Filing Of TDS Return</a></p>
+<p> <a class="cd-dropdown-item item-1" href="/services/ip-audit/">IP Audit</a></p>
+<p> <a class="cd-dropdown-item item-1" href="/services/gst-e-invoicing/">GST E-Invoicing</a></p>
+<p> <a class="cd-dropdown-item item-1" href="/services/filing-of-refund-application/">Filing of Refund Application</a></p>
+<p> <a class="cd-dropdown-item item-1" href="/services/gst-availing-and-reconciliation-input-tax-credit/">Availing and Reconciliation of ITC</a></p></div></li>		</ul>
+</li>	</ul>
+</li></ul>
+</li></ul></div>                <a class="modal-menu-item menu-item tt_button tt_primary_button btn_primary_color hover_solid_primary" target="_self" href="https://www.ipandlegalfilings.com/get-a-quote/">Get A Quote</a>
+            </div>
+            </div>
+         </div>
+      </nav>
+
+      <div id="wrapper" class=" ">
+        
+  <header class="entry-header blog-header with-topbar">
+     <div class="row blog-page-heading blog-title-center">
+                <div class="container">
+                      <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+              <!-- Breadcrumb NavXT 6.6.0 -->
+<span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to IPLF." href="https://www.ipandlegalfilings.com" class="home"><span property="name">IPLF</span></a><meta property="position" content="1"></span> <span class="fa fa-angle-right"></span> <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Blogs – IP and Legal Filing." href="https://www.ipandlegalfilings.com/blogs/" class="post-root post post-post"><span property="name">Blogs – IP and Legal Filing</span></a><meta property="position" content="2"></span> <span class="fa fa-angle-right"></span> <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to the Consumer Protection Act category archives." href="https://www.ipandlegalfilings.com/category/consumer-protection-act/" class="taxonomy category"><span property="name">Consumer Protection Act</span></a><meta property="position" content="3"></span> <span class="fa fa-angle-right"></span> <span property="itemListElement" typeof="ListItem"><span property="name" class="post post-post current-item">Unfair Trade Practices and Deficiencies in service in the Consumer Protection Act, 2019</span><meta property="url" content="https://www.ipandlegalfilings.com/unfair-trade-practices-and-deficiencies-in-service-in-the-consumer-protection-act-2019/"><meta property="position" content="4"></span>            </div>
+                    
+                            </div>
+      </div>
+  </header>
+
+
+<div id="posts-content" class="container blog-single use-sidebar">
+			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+			
+
+<article id="post-20924" class="post-20924 post type-post status-publish format-standard has-post-thumbnail hentry category-consumer-protection-act category-uncategorized tag-consumer-complaints tag-consumer-courts tag-consumer-disputes tag-consumer-forums tag-consumer-protection tag-consumer-protection-act-2019 tag-consumer-protection-authority tag-consumer-rights tag-cpa-2019 tag-e-commerce-regulations tag-indian-consumer-law tag-online-consumer-protection tag-product-liability tag-service-liability tag-unfair-trade-practices">
+	<div class="blog-single-content">
+				  <h1 class="blog-single-title">Unfair Trade Practices and Deficiencies in service in the Consumer Protection Act, 2019</h1>
+				<div class="entry-meta">
+						<span class="published"><span class="fa fa-clock-o"></span>January 21, 2025</span>
+			<span class="author"><span class="fa fa-keyboard-o"></span><a href="https://www.ipandlegalfilings.com/author/iplf/" title="Posts by IPLF" rel="author">IPLF</a></span>
+			<span class="blog-label"><span class="fa fa-folder-open-o"></span><a href="https://www.ipandlegalfilings.com/category/consumer-protection-act/" rel="category tag">Consumer Protection Act</a>, <a href="https://www.ipandlegalfilings.com/category/uncategorized/" rel="category tag">Uncategorized</a></span>
+		</div>
+		  <div class="entry-image">
+    <a href="https://www.ipandlegalfilings.com/unfair-trade-practices-and-deficiencies-in-service-in-the-consumer-protection-act-2019/" title="Unfair Trade Practices and Deficiencies in service in the Consumer Protection Act, 2019"><img width="388" height="208" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20388%20208'%3E%3C/svg%3E" class="attachment-large size-large wp-post-image" alt="consumer protection act" data-lazy-srcset="https://www.ipandlegalfilings.com/wp-content/uploads/2025/01/consumer-protection-act.jpg 388w, https://www.ipandlegalfilings.com/wp-content/uploads/2025/01/consumer-protection-act-300x161.jpg 300w" data-lazy-sizes="(max-width: 388px) 100vw, 388px" data-lazy-src="https://www.ipandlegalfilings.com/wp-content/uploads/2025/01/consumer-protection-act.jpg"><noscript><img width="388" height="208" src="https://www.ipandlegalfilings.com/wp-content/uploads/2025/01/consumer-protection-act.jpg" class="attachment-large size-large wp-post-image" alt="consumer protection act" srcset="https://www.ipandlegalfilings.com/wp-content/uploads/2025/01/consumer-protection-act.jpg 388w, https://www.ipandlegalfilings.com/wp-content/uploads/2025/01/consumer-protection-act-300x161.jpg 300w" sizes="(max-width: 388px) 100vw, 388px" /></noscript></a>
+  </div>
+		<div class="blog-content">
+			<h3 style="text-align: justify;">INTRODUCTION</h3>
+<p style="text-align: justify;">This research discusses the scope and extent of the new Consumer Protection Act of 2019, as well as its effectiveness in addressing customer concerns regarding online transactions. The creation of this new Act was necessary due to the growth of a well-organized online sector for manufacturers, traders, and service providers, which significantly impacted business and customer interactions. The notion of consumer sovereignty has been seriously eroded. The Consumer Protection Act of 2019 includes similar purposes as a previous Act. Is it possible to achieve the ideals described above in today’s globalized society, or are customers still exploited? Consumers are vulnerable to deceptive advertising on TV and YouTube due to a lack of disclosure of all relevant information. The new Act attempts to broaden the definitions of “Consumer,” “service,” and “procedures” in relation to existing redressal institutions. The Act aimed to improve society’s welfare by providing direct access to the market economy.</p>
+<p style="text-align: justify;">The initiative aims to reduce society’s perception of impotence towards powerful business leaders from the standpoint of consumers. Consumers are accepting the condition as a normal part of life, rather than opposing it. Implementing concrete facts is a positive step towards addressing the issue. The dissertation clarifies new ideas and gaps in the law, with a focus on the digital age. The dissertation examines and analyzes the new law’s content.</p>
+<h3 style="text-align: justify;"><strong><u>Author’s <em>understanding </em>and <em>opinion </em>on Unfair Trade practices</u></strong></h3>
+<p style="text-align: justify;">The word “unfair trade practice broadly refers to any business deception of constantly sold goods or services, as well as dishonest, dishonorable, or deceptive trade activity, that is illegal or has been deemed important by a court ruling”. The unlawful rejection of any kind of coordinated action, deceptive consumer solicitation, interruption of rivals’ commercial operations, and competitor exclusion are examples of unfair commercial practices. In today’s business and startup environments, where competition is fierce, entrepreneurs will do anything to gain an advantage, even if it means using unethical trade practices. While they might gain in the short term, the organization eventually suffers, as does the entire industry and society. The product fraud could appear in a variety of ways. Sellers could also experience unanticipated financial losses resulting UTP, that in return attract many civil lawsuits.</p>
+<p style="text-align: justify;">Unfair trade practices are specified in Section 2(47) of the 2019 Consumer Protection Act.</p>
+<ol style="text-align: justify;">
+<li>Producing counterfeit goods or providing subpar</li>
+<li>Not sending invoices or cash reminders for the products or services</li>
+<li>Refusing to accept or remove products or services and neglecting to return the</li>
+<li>Sharing the consumer’s sensitive</li>
+</ol>
+<p style="text-align: justify;">Examining the notion of UTP in India, the essay looks at the provisions of the Competition and Consumer Laws created in response to the problem. This research project aims to examine the problem of UTPs in India in addition to evaluating the theoretical underpinnings and divergent interpretations of “consumer welfare” in connection to unfair trade practices that are contained in both legislations. The development of UTPs in the MRTP Act, the Consumer and Competition Act&nbsp;(p. 2), the MRTP Act’s repeal, and other measures implemented by the Sachar and Raghavan Committees.</p>
+<h2 style="text-align: justify;">Unfair Trade Practices across Different Kinds of Industries:</h2>
+<h3 style="text-align: justify;"><u>The Pharmaceuticals Industry</u></h3>
+<p style="text-align: justify;">The conflict between manufacturers of name-brand and generic drugs has never been resolved. Eventually, these competitions proved to be harmful leading to several instances of unethical business activities in the pharmaceutical sector. It is well known that when doctors are in charge of the patient—who is ultimately the drug’s consumer—the pharmaceutical industry has a significant impact on their prescribing practices. One should distinguish between promotion and knowledge. By educating physicians about novel medicines and their advantages and effectiveness, a medical representative may have a pre competitive effect.</p>
+<h3 style="text-align: justify;"><u>Food Industry</u></h3>
+<p style="text-align: justify;">Global concerns about unfair trade practices and the quantity and quality of food goods have grown. “Most people are aware of the stories of products being intentionally contaminated, inferior goods being concealed, or illicit gains being made by adding chemicals on purpose during manufacture, processing, packing, and storage”. Adulterants and additives are two examples.</p>
+<p style="text-align: justify;">Such unfair and immoral business tactics pose a serious risk to the health of their clients. (In May, during a raid on a mango dealer’s store in Pune, Food and Drug Administration (FDA) inspectors found 500 weight unit mangoes worth Rs. 25,000 that had been aged with a chemical called calcium carbide.) Under the limitations of the Food Adulteration Act&nbsp;(p. 5). It is forbidden to artificially ripen food by using inorganic ingredients. Insurance Industry: The number of insurance customers is constantly rising, and people view insurance as a crucial component of the financial services sector. In this industry, the prevalence of unethical business practices rises with the number of clients. Insurance guarantees that, in the case of a future contingent event, a client will be entitled to receive a particular benefit or payment for a loss or harm.<sup>8</sup>The promise would not be fulfilled or would be fulfilled slowly if there was no commission. Consequently, it is evident that the insurance industry values the public’s confidence in its ability to fulfill the promises it has made.</p>
+<p style="text-align: justify;">Companies frequently lure clients with alluring offers in an effort to get them to commit more. They include several significant exclusion and exemption clauses that are advantageous to large businesses.</p>
+<figure id="attachment_20926" aria-describedby="caption-attachment-20926" style="width: 388px" class="wp-caption alignleft"><img class="wp-image-20926 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20388%20208'%3E%3C/svg%3E" alt="consumer protection act" width="280" height="150" data-lazy-srcset="https://www.ipandlegalfilings.com/wp-content/uploads/2025/01/consumer-protection-act.jpg 388w, https://www.ipandlegalfilings.com/wp-content/uploads/2025/01/consumer-protection-act-300x161.jpg 300w" data-lazy-sizes="(max-width: 388px) 100vw, 388px" data-lazy-src="https://www.ipandlegalfilings.com/wp-content/uploads/2025/01/consumer-protection-act.jpg"><noscript><img class="wp-image-20926 size-full" src="https://www.ipandlegalfilings.com/wp-content/uploads/2025/01/consumer-protection-act.jpg" alt="consumer protection act" width="388" height="208" srcset="https://www.ipandlegalfilings.com/wp-content/uploads/2025/01/consumer-protection-act.jpg 388w, https://www.ipandlegalfilings.com/wp-content/uploads/2025/01/consumer-protection-act-300x161.jpg 300w" sizes="(max-width: 388px) 100vw, 388px" /></noscript><figcaption id="caption-attachment-20926" class="wp-caption-text">[Image Sources: Shutterstock]</figcaption></figure>
+<h3 style="text-align: justify;">Judicial Precedents:</h3>
+<ul style="text-align: justify;">
+<li><strong><em><u>Godfrey Phillips India Ltd vs. Ajay Kumar </u></em></strong>“The lawsuit focused on the tobacco company’s challenged The product was oversubscribed under the name “red &amp;White,” which included the statement “Red &amp;White smokers are one of a kind.” The packet also included a photograph of actor Akshay Kumar and a statement emphasizing the dangers of smoking. The petitioner was confident that exhibiting a big celebrity supporting a cigarette<sup>10</sup> with a tag on it would give people the notion that they possessed the authority to carry out such actions. Businesses regularly use tempting deals to entice customers, but then attempt to increase their commitment.</li>
+</ul>
+<p style="text-align: justify;">They were numb and this may cause the customer to lose interest in the warning. Because the complaint was also brought in civil court, the district forum dismissed it. “When the matter was presented to the National Commission, the appellants claimed that there was no evidence of any harm or disaster caused by the advertising”. The National Commission determined that the litigant was not authorized to file since the action was not brought on behalf of a volunteer organization. The allurement was provided free of charge”.</p>
+<ul style="text-align: justify;">
+<li><strong><em><u> Ravindranath Kamath v. Spice Communications Limited(IV2)</u></em></strong> “According to a Karnataka map provided by WHO, the tower would be built near the Virajpet area. Kamath submitted an application for affiliation based on their assurance and paid them Rs. 3,100. A SIM card valued Rs. 6,800 was handed away. Despite being charged Rs. 22/- per day, Kamath was unable to use his mobile phone from Virajpet due to Spice Communications’<sup>12</sup> inability to construct the tower. For additional information, please contact Chris. Spice Communications chose not to build the tower because it was not economically feasible. Kamath received a combined payment of Rs. 30,000 and Rs. 10,000, which the Commission ruled was an unfair business practice”.</li>
+</ul>
+<h3 style="text-align: justify;"><strong>What is meant by “deficiency of service”?</strong></h3>
+<p style="text-align: justify;">According to Section 2(11) of the Consumer Protection Act 2019 (“the Act”), “a deficiency is any imperfection or defect in the feature, quality, amount, worth, authenticity, capacity or potential, and standard that is required to be maintained and regulated in accordance with the laws and statutes in function of any agreement or contract claimed by the seller with respect to the products and goods”. Willful and purposeful withholding of crucial information, as well as omission or negligence on the part of the seller that may cause injury or loss to the consumer(s), are all examples of insufficiency of service.</p>
+<h3 style="text-align: justify;"><u>Authors <em>Opinion </em>on “Service” under Consumer Protection Act, 2019</u></h3>
+<p style="text-align: justify;">Any act(s) that a prudent seller is supposed to do or omit but intentionally does the opposite; such activities constitute a ‘deficiency of service<sup>14</sup>‘.</p>
+<p style="text-align: justify;">Deficiencies in service can be seen in every service sector with a buyer-seller interaction, including railways, banking, legal assistance, electricity, construction, education, transportation, aviation, hospitality, restaurants, and entertainment. Deficiency of service can have small to severe repercussions, ranging from inconvenience or harassment to mental or bodily injury to death, resulting in legal implications.</p>
+<p style="text-align: justify;">The Consumer Protection Act (old and new) is a piece of legislation implemented in India only to defend and safeguard customers’ interests. The Consumer Protection Act of 2019, which went into effect on July 20, 2020, not only includes physical platforms for buyer-seller relationships, but also acknowledges services supplied via e-commerce platforms.</p>
+<p style="text-align: justify;">The definition of service has been made so wider that it includes all kinds of services such as banking, transport, finance, processing, energy, telecommunications etc. According to the authors it has both positive and negative impacts. Positive being as it includes all sectors which are important in daily lives of customers. But the negative impact being lack of clarity and no distinction between deficiency of service and simple dissatisfaction.</p>
+<p style="text-align: justify;">Inclusion of Healthcare services has been a matter of extensive debate. “Although it gives remedy to the consumers who suffer harm because of medical negligence, with time it was seen a lot of frivolous complaints can lead to use of defensive practice by doctors which in return leads to compromise in quality of medical services”.</p>
+<h3 style="text-align: justify;">Judicial Precedents</h3>
+<p style="text-align: justify;"><strong><em><u>Indian Medical Association vs. V.P. Shanth<sup>15</sup></u></em></strong>– According to a ruling by the Supreme Court, the Consumer Protection Act applies to the medical industry and instances of medical misconduct. This implies that patients who suffer as a result of medical malpractice are entitled to reimbursement for inadequate care from physicians or healthcare facilities in a civil court. But the only condition being the services rendered by doctor should not be free.</p>
+<p style="text-align: justify;"><strong><em><u>Gurshinder Singh vs. Shriram General Insurance Co. Ltd. &amp; Others 2020<sup>16</sup></u></em></strong>-Reiterating its ruling from Om Prakash v. Reliance General Insurance and Anr., the Supreme Court stressed in this case that insurance claims shouldn’t be denied on the basis of procedural grounds if the cause of the delay is adequately stated and supported. The Court went on to say that if a claim has already been proven to be legitimate, it would be unfair and wrong to reject it because of a postponed complaint of theft or robbery. As a result, the Court decided that merely postponing informing the insurance company is insufficient justification for rejecting a reasonable insurance claim.</p>
+<h3 style="text-align: justify;">Additional Suggestion and Conclusion</h3>
+<p style="text-align: justify;">In modern times, where more and more services are delivered digitally, protecting consumers’ data and giving them with relief should also be included. Specific criteria should be developed for customer transparency and fairness, particularly when AI-powered services are involved. Customers today use worldwide services on a daily basis, such as clouds, drives, and applications, thus this act should have clear cross-border transaction standards as well as a simple process for customers to address problems with foreign service.</p>
+<p style="text-align: justify;">Consumer Redressal Forum must be able to impose temporary injunctions against unfair commercial practices. Due to a defect in the former statute, many consumers suffered loss as no action was taken against the seller, merchant, or manufacturer until the problem was resolved. The court requires the ability to impose interim injunctions on demand</p>
+<p style="text-align: justify;">After the initial hearing, the court determines if a lawyer is required to prevent unnecessary delays. If the complainant hires an attorney, he must explain why. The forum should only adjourn in dire cases, not on a regular basis. After the final hearing, the verdict should be released online to prevent time-consuming appeals.</p>
+<p style="text-align: justify;">Online hearings via video conferencing can save time and money for both parties, allowing for quick resolution of small issues in the world of e-commerce.</p>
+<p style="text-align: justify;">The law does not cover all medical malpractice cases for consumers. The prior Act included the same clause; hence it should be reinstated in the new legislation. Parliaments should provide Consumer Forums with clear guidelines on their subject matter jurisdiction to avoid ambiguity. Consumer Forums frequently refuse jurisdiction, stating it falls within civil jurisdictions, which is not the case</p>
+<p style="text-align: justify;">Consumer rights education should be included in schools’ Social Studies curriculum to prevent customers from being exploited due to a lack of understanding about their rights. This can also act as a resource for parents.</p>
+<p style="text-align: justify;"><strong>Author: </strong>BHUMI SHARMA, A Student at SYMBIOSIS LAW SCHOOL, NAGPUR, in case of any queries please contact/write back to us at support@ipandlegalfilings.com or <a href="https://www.ipandlegalfilings.com/">IP &amp; Legal Filing</a></p>
+<p style="text-align: justify;"><strong>Reference</strong></p>
+<ol style="text-align: justify;">
+<li>(The Consumer Protection Act 2. S.)</li>
+<li>(The Consumer Protection Act , 2019, Section 2(7))</li>
+<li>(Monopolistic and Trade Restrictive Practices Act)</li>
+<li>(The Competition Act)</li>
+<li>(Prevention of Food Adulteration Act)</li>
+<li>(J U D G M E N T CIVIL APPEAL NO. 2339 OF 2008 (Arising out of SLP (C) No.532 of 2007) (With Civil)</li>
+<li>(The Consumer Protection Act 2. S.)</li>
+<li>(5 Indian Medical Association vs V.P. Shantha &amp; Ors, 1995 SCC (6) 651)</li>
+<li>(Gurshinder Singh vs. Shriram General Insurance Co. Ltd. &amp; Others, AIR 2020 SC 1395)</li>
+<li>(The Consumer Protection Act 2. )</li>
+<li>(IV2)</li>
+</ol>
+<p style="text-align: justify;">
+</p><div class="simplesocialbuttons simplesocial-simple-round simplesocialbuttons_inline simplesocialbuttons-align-left post-20924 post  simplesocialbuttons-inline-no-animation">
+<button class="simplesocial-fb-share" target="_blank" data-href="https://www.facebook.com/sharer/sharer.php?u=https://www.ipandlegalfilings.com/unfair-trade-practices-and-deficiencies-in-service-in-the-consumer-protection-act-2019/" onclick="javascript:window.open(this.dataset.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><span class="simplesocialtxt">Facebook </span> </button>
+<button class="simplesocial-twt-share" data-href="https://twitter.com/share?text=Unfair+Trade+Practices+and+Deficiencies+in+service+in+the+Consumer+Protection+Act%2C+2019&amp;url=https://www.ipandlegalfilings.com/unfair-trade-practices-and-deficiencies-in-service-in-the-consumer-protection-act-2019/" rel="nofollow" onclick="javascript:window.open(this.dataset.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><span class="simplesocialtxt">Twitter</span> </button>
+<button target="popup" class="simplesocial-linkedin-share" data-href="https://www.linkedin.com/cws/share?url=https://www.ipandlegalfilings.com/unfair-trade-practices-and-deficiencies-in-service-in-the-consumer-protection-act-2019/" onclick="javascript:window.open(this.dataset.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><span class="simplesocialtxt">LinkedIn</span></button>
+<button onclick="javascript:window.open(this.dataset.href, '_blank' );return false;" class="simplesocial-whatsapp-share" data-href="https://web.whatsapp.com/send?text=https://www.ipandlegalfilings.com/unfair-trade-practices-and-deficiencies-in-service-in-the-consumer-protection-act-2019/"><span class="simplesocialtxt">WhatsApp</span></button>
+</div>
+					</div>
+		<div class="meta-content">
+
+			<div class="tags"><span class="tags-label">Tags:</span><a href="https://www.ipandlegalfilings.com/tag/consumer-complaints/" rel="tag">Consumer Complaints</a> <a href="https://www.ipandlegalfilings.com/tag/consumer-courts/" rel="tag">Consumer Courts</a> <a href="https://www.ipandlegalfilings.com/tag/consumer-disputes/" rel="tag">Consumer Disputes</a> <a href="https://www.ipandlegalfilings.com/tag/consumer-forums/" rel="tag">Consumer Forums</a> <a href="https://www.ipandlegalfilings.com/tag/consumer-protection/" rel="tag">Consumer Protection</a> <a href="https://www.ipandlegalfilings.com/tag/consumer-protection-act-2019/" rel="tag">Consumer Protection Act 2019</a> <a href="https://www.ipandlegalfilings.com/tag/consumer-protection-authority/" rel="tag">Consumer Protection Authority</a> <a href="https://www.ipandlegalfilings.com/tag/consumer-rights/" rel="tag">Consumer Rights</a> <a href="https://www.ipandlegalfilings.com/tag/cpa-2019/" rel="tag">CPA 2019</a> <a href="https://www.ipandlegalfilings.com/tag/e-commerce-regulations/" rel="tag">E-commerce Regulations</a> <a href="https://www.ipandlegalfilings.com/tag/indian-consumer-law/" rel="tag">Indian Consumer Law</a> <a href="https://www.ipandlegalfilings.com/tag/online-consumer-protection/" rel="tag">Online Consumer Protection.</a> <a href="https://www.ipandlegalfilings.com/tag/product-liability/" rel="tag">Product Liability</a> <a href="https://www.ipandlegalfilings.com/tag/service-liability/" rel="tag">Service Liability</a> <a href="https://www.ipandlegalfilings.com/tag/unfair-trade-practices/" rel="tag">Unfair Trade Practices</a></div>
+			
+			
+			
+		</div>
+	</div>
+</article>
+<div class="page-content comments-content">
+	</div>
+	</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+      <div class="right-sidebar">
+		     
+            <div class="blog_widget"><form role="search" method="get" class="search-form" action="https://www.ipandlegalfilings.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search …" value="" name="s">
+				</label>
+				<input type="submit" class="search-submit" value="">
+			</form></div>
+		<div class="blog_widget">
+		<h5 class="widget-title"><span>Featured Posts</span></h5>
+		<ul>
+											<li>
+					<a href="https://www.ipandlegalfilings.com/the-battle-of-the-pe-a-look-at-the-phonepe-vs-bharatpe-trademark-case/">The Battle of the “Pe” – A Look at the PhonePe vs BharatPe Trademark Case</a>
+									</li>
+											<li>
+					<a href="https://www.ipandlegalfilings.com/the-changing-importance-of-protection-of-trademark-and-designs-for-indias-new-digital-first-brands/">The Changing Importance of Protection of Trademark and Designs for India’s New Digital First Brands</a>
+									</li>
+											<li>
+					<a href="https://www.ipandlegalfilings.com/related-party-transactions-in-india-legal-framework-risks-and-reforms/">Related Party Transactions in India: Legal Framework, Risks, And Reforms</a>
+									</li>
+											<li>
+					<a href="https://www.ipandlegalfilings.com/intellectual-property-rights-in-india-navigating-artificial-intelligence-and-traditional-knowledge-protection/">Intellectual Property Rights In India: Navigating Artificial Intelligence And Traditional Knowledge Protection</a>
+									</li>
+											<li>
+					<a href="https://www.ipandlegalfilings.com/the-growing-pollution-crisis-in-india/">The Growing Pollution Crisis In India</a>
+									</li>
+					</ul>
+
+		</div><div class="blog_widget"><h5 class="widget-title"><span>Categories</span></h5>			<div class="textwidget"><ul>
+<li><a href="/category/copyright/">Copyright</a></li>
+<li><a href="/category/creative/">Creative</a></li>
+<li><a href="/category/design/">Design</a></li>
+<li><a href="/category/intellectual-property/">Intellectual Property</a></li>
+<li><a href="/category/ip-licensing/">IP Licensing</a></li>
+<li><a href="/category/ip-litigation/">IP Litigation</a></li>
+<li><a href="/category/patent-licensing/">Patent Licensing</a></li>
+<li><a href="/category/patents/">Patents</a></li>
+<li><a href="/category/trademark/">Trademark</a></li>
+<li><a href="/category/trademark-litigation/">Trademark Litigation</a></li>
+</ul>
+</div>
+		</div>      </div>
+		</div>
+	</div>
+
+	
+<section class="related-posts">
+  <div class="container">
+          <div class="related-title">
+        <h3>Related Posts</h3>
+      </div>
+        <div class="related-content ">
+      
+
+<article id="post-21627" class="post-21627 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized tag-celebrity-beauty-brands tag-fashion-law tag-ip-rights tag-kylie-cosmetics tag-media-law tag-personality-rights tag-rare-beauty tag-right-of-publicity tag-trade-dress tag-trademark-law">
+			<div class="entry-image">
+			<a href="https://www.ipandlegalfilings.com/celebrity-beauty-brands-who-owns-the-face-the-fame-and-the-trademark/" title="Celebrity Beauty Brands: Who Owns the Face, the Fame, and the Trademark?"><img width="388" height="208" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20388%20208'%3E%3C/svg%3E" class="attachment-keydesign-grid-image size-keydesign-grid-image wp-post-image" alt="Brand Beauty" data-lazy-srcset="https://www.ipandlegalfilings.com/wp-content/uploads/2025/09/Brand-Beauty.png 388w, https://www.ipandlegalfilings.com/wp-content/uploads/2025/09/Brand-Beauty-300x161.png 300w" data-lazy-sizes="(max-width: 388px) 100vw, 388px" data-lazy-src="https://www.ipandlegalfilings.com/wp-content/uploads/2025/09/Brand-Beauty.png"><noscript><img width="388" height="208" src="https://www.ipandlegalfilings.com/wp-content/uploads/2025/09/Brand-Beauty.png" class="attachment-keydesign-grid-image size-keydesign-grid-image wp-post-image" alt="Brand Beauty" srcset="https://www.ipandlegalfilings.com/wp-content/uploads/2025/09/Brand-Beauty.png 388w, https://www.ipandlegalfilings.com/wp-content/uploads/2025/09/Brand-Beauty-300x161.png 300w" sizes="(max-width: 388px) 100vw, 388px" /></noscript></a>
+		</div>
+		<div class="entry-wrapper ">
+		<div class="entry-meta">
+						<span class="published"><span class="fa fa-clock-o"></span><a href="https://www.ipandlegalfilings.com/celebrity-beauty-brands-who-owns-the-face-the-fame-and-the-trademark/" title="Celebrity Beauty Brands: Who Owns the Face, the Fame, and the Trademark?">September 2, 2025</a></span>
+			<span class="blog-label"><span class="fa fa-folder-open-o"></span><a href="https://www.ipandlegalfilings.com/category/uncategorized/" rel="category tag">Uncategorized</a></span>
+		</div>
+		<h4 class="blog-single-title"><a href="https://www.ipandlegalfilings.com/celebrity-beauty-brands-who-owns-the-face-the-fame-and-the-trademark/" title="Celebrity Beauty Brands: Who Owns the Face, the Fame, and the Trademark?">Celebrity Beauty Brands: Who Owns the Face, the Fame, and the Trademark?</a></h4>
+		<div class="entry-content">
+			<a class="post-link" href="https://www.ipandlegalfilings.com/celebrity-beauty-brands-who-owns-the-face-the-fame-and-the-trademark/">Read more</a>
+		</div>
+	</div>
+</article>
+
+
+<article id="post-21597" class="post-21597 post type-post status-publish format-standard has-post-thumbnail hentry category-consumer-protection-act tag-consumer-protection-act-2019 tag-consumer-rights tag-misleading-advertisements">
+			<div class="entry-image">
+			<a href="https://www.ipandlegalfilings.com/misleading-advertisements-in-india-legal-protections-under-the-consumer-protection-act-2019/" title="Misleading Advertisements in India: Legal Protections Under the Consumer Protection Act 2019"><img width="388" height="208" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20388%20208'%3E%3C/svg%3E" class="attachment-keydesign-grid-image size-keydesign-grid-image wp-post-image" alt="advertisement" data-lazy-srcset="https://www.ipandlegalfilings.com/wp-content/uploads/2025/08/advertisement.png 388w, https://www.ipandlegalfilings.com/wp-content/uploads/2025/08/advertisement-300x161.png 300w" data-lazy-sizes="(max-width: 388px) 100vw, 388px" data-lazy-src="https://www.ipandlegalfilings.com/wp-content/uploads/2025/08/advertisement.png"><noscript><img width="388" height="208" src="https://www.ipandlegalfilings.com/wp-content/uploads/2025/08/advertisement.png" class="attachment-keydesign-grid-image size-keydesign-grid-image wp-post-image" alt="advertisement" srcset="https://www.ipandlegalfilings.com/wp-content/uploads/2025/08/advertisement.png 388w, https://www.ipandlegalfilings.com/wp-content/uploads/2025/08/advertisement-300x161.png 300w" sizes="(max-width: 388px) 100vw, 388px" /></noscript></a>
+		</div>
+		<div class="entry-wrapper ">
+		<div class="entry-meta">
+						<span class="published"><span class="fa fa-clock-o"></span><a href="https://www.ipandlegalfilings.com/misleading-advertisements-in-india-legal-protections-under-the-consumer-protection-act-2019/" title="Misleading Advertisements in India: Legal Protections Under the Consumer Protection Act 2019">August 20, 2025</a></span>
+			<span class="blog-label"><span class="fa fa-folder-open-o"></span><a href="https://www.ipandlegalfilings.com/category/consumer-protection-act/" rel="category tag">Consumer Protection Act</a></span>
+		</div>
+		<h4 class="blog-single-title"><a href="https://www.ipandlegalfilings.com/misleading-advertisements-in-india-legal-protections-under-the-consumer-protection-act-2019/" title="Misleading Advertisements in India: Legal Protections Under the Consumer Protection Act 2019">Misleading Advertisements in India: Legal Protections Under the Consumer Protection Act 2019</a></h4>
+		<div class="entry-content">
+			<a class="post-link" href="https://www.ipandlegalfilings.com/misleading-advertisements-in-india-legal-protections-under-the-consumer-protection-act-2019/">Read more</a>
+		</div>
+	</div>
+</article>
+
+
+<article id="post-21560" class="post-21560 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized tag-copyright tag-copyright-enforcement tag-copyright-infringement tag-copyright-protection tag-creative-theft">
+			<div class="entry-image">
+			<a href="https://www.ipandlegalfilings.com/the-importance-of-copyright-registration-why-creators-should-secure-their-rights/" title="The Importance of Copyright Registration: Why Creators Should Secure Their Rights"><img width="388" height="208" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20388%20208'%3E%3C/svg%3E" class="attachment-keydesign-grid-image size-keydesign-grid-image wp-post-image" alt="Copyright" data-lazy-srcset="https://www.ipandlegalfilings.com/wp-content/uploads/2025/07/Importance-of-Copyright.png 388w, https://www.ipandlegalfilings.com/wp-content/uploads/2025/07/Importance-of-Copyright-300x161.png 300w" data-lazy-sizes="(max-width: 388px) 100vw, 388px" data-lazy-src="https://www.ipandlegalfilings.com/wp-content/uploads/2025/07/Importance-of-Copyright.png"><noscript><img width="388" height="208" src="https://www.ipandlegalfilings.com/wp-content/uploads/2025/07/Importance-of-Copyright.png" class="attachment-keydesign-grid-image size-keydesign-grid-image wp-post-image" alt="Copyright" srcset="https://www.ipandlegalfilings.com/wp-content/uploads/2025/07/Importance-of-Copyright.png 388w, https://www.ipandlegalfilings.com/wp-content/uploads/2025/07/Importance-of-Copyright-300x161.png 300w" sizes="(max-width: 388px) 100vw, 388px" /></noscript></a>
+		</div>
+		<div class="entry-wrapper ">
+		<div class="entry-meta">
+						<span class="published"><span class="fa fa-clock-o"></span><a href="https://www.ipandlegalfilings.com/the-importance-of-copyright-registration-why-creators-should-secure-their-rights/" title="The Importance of Copyright Registration: Why Creators Should Secure Their Rights">July 31, 2025</a></span>
+			<span class="blog-label"><span class="fa fa-folder-open-o"></span><a href="https://www.ipandlegalfilings.com/category/uncategorized/" rel="category tag">Uncategorized</a></span>
+		</div>
+		<h4 class="blog-single-title"><a href="https://www.ipandlegalfilings.com/the-importance-of-copyright-registration-why-creators-should-secure-their-rights/" title="The Importance of Copyright Registration: Why Creators Should Secure Their Rights">The Importance of Copyright Registration: Why Creators Should Secure Their Rights</a></h4>
+		<div class="entry-content">
+			<a class="post-link" href="https://www.ipandlegalfilings.com/the-importance-of-copyright-registration-why-creators-should-secure-their-rights/">Read more</a>
+		</div>
+	</div>
+</article>
+    </div>
+  </div>
+</section>
+
+</div>
+<footer id="footer" class="classic">
+      
+
+    <div class="upper-footer">
+          <div class="container">
+              <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 first-widget-area">
+                      <div class="footer_widget"><h5 class="widget-title"><span>Services</span></h5><div class="menu-about-container"><ul id="menu-about" class="menu"><li id="menu-item-6499" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6499"><a href="/services/patent-search/">Patent Search Services</a></li>
+<li id="menu-item-6500" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6500"><a href="/services/patent-drafting-services/">Patent Drafting Services</a></li>
+<li id="menu-item-6501" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6501"><a href="/services/patent-litigation/">Patent Litigation Services</a></li>
+<li id="menu-item-6502" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6502"><a href="/services/patent-proof-reading/">Patent Proof Reading</a></li>
+<li id="menu-item-6503" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6503"><a href="/services/global-patent-filing/">Global Patent Filing</a></li>
+</ul></div></div>                  </div>
+              
+                                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 second-widget-area">
+                      <div class="footer_widget"><div class="menu-services-container"><ul id="menu-services" class="menu"><li id="menu-item-6504" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6504"><a href="/services/vendor-agreement/">Vendor Agreement</a></li>
+<li id="menu-item-6505" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6505"><a href="/services/joint-venture/">Joint Venture Services</a></li>
+<li id="menu-item-6506" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6506"><a href="/services/employment-contracts/">Employer Contracts</a></li>
+<li id="menu-item-6507" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6507"><a href="/services/msme-registration/">MSME Registration</a></li>
+<li id="menu-item-6508" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6508"><a href="/services/professional-tax-registration/">Professional Tax Services</a></li>
+</ul></div></div>                  </div>
+              
+                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 third-widget-area">
+                  <div class="footer_widget"><h5 class="widget-title"><span>Important Links</span></h5><div class="menu-additional-links-container"><ul id="menu-additional-links" class="menu"><li id="menu-item-6509" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6509"><a href="/about-us/">About IPLF</a></li>
+<li id="menu-item-6510" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6510"><a href="/blogs/">Blogs</a></li>
+<li id="menu-item-6511" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6511"><a href="/contact-us/">Contact Us</a></li>
+<li id="menu-item-6512" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6512"><a href="/terms-and-conditions/">Terms &amp; Conditions</a></li>
+<li id="menu-item-6513" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6513"><a href="/privacy-and-cookie-policy/">Privacy &amp; Cookie Policy</a></li>
+</ul></div></div>              </div>
+              
+                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 forth-widget-area">
+                  <div class="footer_widget"><h5 class="widget-title"><span>Get In Touch</span></h5>			<div class="textwidget"><p>IP &amp; Legal Filings (IPLF)<br>
+S-378, 1st floor, Panchsheel Park, New Delhi, Delhi-110017, India.</p>
+<p>&nbsp;</p>
+<p>Ph: <a href="tel:+918920269831">+91 8920269831</a> / <a href="tel:+911204296878">+91 120 3132 513</a><br>
+<a href="mailto:Email: support@ipandlegalfilings.com">Email: support@ipandlegalfilings.com</a></p>
+</div>
+		</div>              </div>
+                            </div>
+          </div>
+    </div>
+      <div class="lower-footer">
+          <div class="container">
+             <div class="pull-left">
+               <span>
+                 © 2025 - IPLF. All rights reserved.               </span>
+            </div>
+            <div class="pull-right">
+               <ul id="menu-footer-menu" class="navbar-footer"><li id="menu-item-6519" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6519"><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/IPandLF/"><i class="fa fa-facebook" title=""></i></a></li>
+<li id="menu-item-6520" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6520"><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/ipandlegalfiling/"><i class="fa fa-linkedin" title=""></i></a></li>
+<li id="menu-item-6521" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6521"><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCIu2HgBG4rwf7VwtTPgPaog"><i class="fa fa-youtube" title=""></i></a></li>
+</ul>            </div>
+         </div>
+      </div>
+</footer>
+      <div class="back-to-top">
+         <i class="fa fa-angle-up"></i>
+      </div>
+<!-- HFCM by 99 Robots - Snippet # 3:  -->
+<!-- Start: Copyright 2022 TraceMyIP.org Service Code (105100-04142022)- DO NOT MODIFY //-->
+<div id="elemID031021" style="line-height:16px;text-align:center;position:relative;z-index:100000;"><script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="//s3.tracemyip.org/tracker/lgUrl.php?random='+Math.random()+'&amp;stlVar2=1202&amp;rgtype=4684NR-IPIB&amp;pidnVar2=61693&amp;prtVar2=15&amp;scvVar2=12" defer=""></script><noscript><a href="https://www.tracemyip.org/website-visitors-alerts.htm"><img src="//s3.tracemyip.org/tracker/1202/4684NR-IPIB/61693/15/12/ans/" alt="web visitor IP notifications" style="border:0px;"></a></noscript></div> <!-- End: TraceMyIP.org Service Code //-->
+<!-- /end HFCM by 99 Robots -->
+<!-- HFCM by 99 Robots - Snippet # 4: open tawkto -->
+<script type="rocketlazyloadscript">
+window.Tawk_API = window.Tawk_API || {};
+window.Tawk_API.onLoad = function(){
+window.Tawk_API.maximize();
+
+};
+</script>
+<!-- /end HFCM by 99 Robots -->
+<!--Start of Tawk.to Script (0.5.4)-->
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+var Tawk_API=Tawk_API||{};
+var Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5f438dbc1e7ade5df4435fda/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script (0.5.4)-->
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56B6PHF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->    <script type="rocketlazyloadscript">
+        setTimeout(function() {
+		jQuery('#elemID031021').css('display','none');
+	}, 500);
+    </script>
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                          <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div><script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://www.ipandlegalfilings.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4" id="wp-polyfill-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="wp-polyfill-js-after">
+( 'fetch' in window ) || document.write( '<script src="https://www.ipandlegalfilings.com/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0" defer></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://www.ipandlegalfilings.com/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0" defer></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://www.ipandlegalfilings.com/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0" defer></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://www.ipandlegalfilings.com/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4" defer></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://www.ipandlegalfilings.com/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12" defer></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://www.ipandlegalfilings.com/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2" defer></scr' + 'ipt>' );
+</script>
+<script type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/www.ipandlegalfilings.com\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" src="https://www.ipandlegalfilings.com/wp-content/cache/min/1/wp-content/plugins/contact-form-7/includes/js/index.js?ver=1762523309" id="contact-form-7-js" defer=""></script>
+<script type="text/javascript" id="wpcf7-redirect-script-js-extra">
+/* <![CDATA[ */
+var wpcf7r = {"ajax_url":"https:\/\/www.ipandlegalfilings.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" src="https://www.ipandlegalfilings.com/wp-content/cache/min/1/wp-content/plugins/wpcf7-redirect/build/js/wpcf7-redirect-frontend-script.js?ver=1762523309" id="wpcf7-redirect-script-js" defer=""></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" src="https://www.ipandlegalfilings.com/wp-content/cache/min/1/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-users.js?ver=1762523309" id="gtm4wp-user-reg-login-script-js" defer=""></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/patent-calculator\/|\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm","siteUrl":"https:\/\/www.ipandlegalfilings.com","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type="text/javascript" src="https://www.ipandlegalfilings.com/wp-content/themes/bizinventive/core/assets/js/bootstrap.min.js?ver=5.5.7" id="bootstrapjs-js" defer=""></script>
+<script data-minify="1" type="text/javascript" src="https://www.ipandlegalfilings.com/wp-content/cache/min/1/wp-content/themes/bizinventive/core/assets/js/scripts.js?ver=1762523309" id="keydesign-scripts-js" defer=""></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://www.ipandlegalfilings.com/wp-includes/js/dist/hooks.min.js?ver=63769290dead574c40a54748f22ada71" id="wp-hooks-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="wpdreams-ajaxsearchlite-js-before">
+window.ASL = typeof window.ASL !== 'undefined' ? window.ASL : {}; window.ASL.ajaxurl = "https:\/\/www.ipandlegalfilings.com\/wp-admin\/admin-ajax.php"; window.ASL.backend_ajaxurl = "https:\/\/www.ipandlegalfilings.com\/wp-admin\/admin-ajax.php"; window.ASL.js_scope = "jQuery"; window.ASL.detect_ajax = 0; window.ASL.scrollbar = 1; window.ASL.js_retain_popstate = 0; window.ASL.version = 4748; window.ASL.min_script_src = ["https:\/\/www.ipandlegalfilings.com\/wp-content\/plugins\/ajax-search-lite\/js\/min\/jquery.ajaxsearchlite.min.js"]; window.ASL.highlight = {"enabled":false,"data":[]}; window.ASL.fix_duplicates = 1; window.ASL.analytics = {"method":0,"tracking_id":"","string":"?ajax_search={asl_term}","event":{"focus":{"active":1,"action":"focus","category":"ASL","label":"Input focus","value":"1"},"search_start":{"active":0,"action":"search_start","category":"ASL","label":"Phrase: {phrase}","value":"1"},"search_end":{"active":1,"action":"search_end","category":"ASL","label":"{phrase} | {results_count}","value":"1"},"magnifier":{"active":1,"action":"magnifier","category":"ASL","label":"Magnifier clicked","value":"1"},"return":{"active":1,"action":"return","category":"ASL","label":"Return button pressed","value":"1"},"facet_change":{"active":0,"action":"facet_change","category":"ASL","label":"{option_label} | {option_value}","value":"1"},"result_click":{"active":1,"action":"result_click","category":"ASL","label":"{result_title} | {result_url}","value":"1"}}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://www.ipandlegalfilings.com/wp-content/plugins/ajax-search-lite/js/min/jquery.ajaxsearchlite.min.js?ver=4.9.3" id="wpdreams-ajaxsearchlite-js"></script>
+<script data-minify="1" type="text/javascript" src="https://www.ipandlegalfilings.com/wp-content/cache/min/1/wp-content/plugins/mystickysidebar/js/detectmobilebrowser.js?ver=1762523309" id="detectmobilebrowser-js" defer=""></script>
+<script type="text/javascript" id="mystickysidebar-js-extra">
+/* <![CDATA[ */
+var mystickyside_name = {"mystickyside_string":"#secondary","mystickyside_content_string":"","mystickyside_margin_top_string":"90","mystickyside_margin_bot_string":"0","mystickyside_update_sidebar_height_string":"true","mystickyside_min_width_string":"795","device_desktop":"1","device_mobile":"1"};
+/* ]]> */
+</script>
+<script data-minify="1" type="text/javascript" src="https://www.ipandlegalfilings.com/wp-content/cache/min/1/wp-content/plugins/mystickysidebar/js/theia-sticky-sidebar.js?ver=1762523309" id="mystickysidebar-js" defer=""></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://www.ipandlegalfilings.com/wp-includes/js/hoverIntent.min.js?ver=1.8.1" id="hoverIntent-js" defer=""></script>
+<script type="text/javascript" id="megamenu-js-extra">
+/* <![CDATA[ */
+var megamenu = {"timeout":"300","interval":"100"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" src="https://www.ipandlegalfilings.com/wp-content/cache/min/1/wp-content/plugins/megamenu/js/maxmegamenu.js?ver=1762523309" id="megamenu-js" defer=""></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">function initTwitCount(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://static1.twitcount.com/js/twitcount.js';fjs.parentNode.insertBefore(js,fjs)}}
+        var ssb_twit_count_init=!1;addEventListener('mouseover',function(event){if(!ssb_twit_count_init){initTwitCount(document,'script','twitcount_plugins')
+        ssb_twit_count_init=!0}})</script><script>window.lazyLoadOptions={elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async="" src="https://www.ipandlegalfilings.com/wp-content/plugins/wp-rocket/assets/js/lazyload/16.1/lazyload.min.js"></script><script>function lazyLoadThumb(e){var t='<img loading="lazy" data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<div class="play"></div>';return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.dataset.query.length?'':'&'+this.dataset.query;e.setAttribute("src",t.replace("ID",this.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.replaceChild(e,this)}document.addEventListener("DOMContentLoaded",function(){var e,t,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id),e.onclick=lazyLoadYoutubeIframe,a[t].appendChild(e)});</script>
+
+
+</body></html>

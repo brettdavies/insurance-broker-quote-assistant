@@ -1,0 +1,268 @@
+[ Facebook ](https://www.facebook.com/consumerwatchdog "Facebook") [ Instagram ](https://instagram.com/consumerwatchdog/ "Instagram") [ Linkedin ](https://www.linkedin.com/company/consumerwatchdog "Linkedin") [ Twitter ](https://twitter.com/consumerwd "Twitter") [ Youtube ](https://youtube.com/consumerwatchdog "Youtube") [ Bluesky ](https://bsky.app/profile/consumerwatchdog.bsky.social "Bluesky") [ Threads ](https://www.threads.com/@consumerwatchdog "Threads")
+  * [Healthcare](https://consumerwatchdog.org/issues/healthcare)
+    * [News Releases](https://consumerwatchdog.org/issues/healthcare)
+    * [Video](https://consumerwatchdog.org/healthcare-video/)
+    * [Reports](https://consumerwatchdog.org/issues/healthcare/healthcare-reports/)
+    * [In The News](https://consumerwatchdog.org/issues/in-the-news/healthcare-in-the-news-in-the-news/)
+    * [Blogs](https://consumerwatchdog.org/issues/healthcare/healthcare-blogs/)
+    * [Meet the Patients](https://consumerwatchdog.org/meet-the-patients/)
+  * [Energy](https://consumerwatchdog.org/issues/energy)
+    * [News Releases](https://consumerwatchdog.org/issues/energy)
+    * [Video](https://consumerwatchdog.org/energy-video/)
+    * [Reports](https://consumerwatchdog.org/issues/energy/energy-reports/)
+    * [In The News](https://consumerwatchdog.org/issues/in-the-news/energy-in-the-news-in-the-news/)
+    * [Blogs](https://consumerwatchdog.org/issues/energy/energy-blogs/)
+  * [Privacy](https://consumerwatchdog.org/issues/privacy/)
+    * [News Releases](https://consumerwatchdog.org/privacy/)
+    * [Video](https://consumerwatchdog.org/privacy-video/)
+    * [Reports](https://consumerwatchdog.org/issues/privacy/privacy-reports/)
+    * [In The News](https://consumerwatchdog.org/issues/in-the-news/privacy-in-the-news-in-the-news/)
+    * [Blogs](https://consumerwatchdog.org/issues/privacy/privacy-blogs/)
+  * [Insurance](https://consumerwatchdog.org/issues/insurance)
+    * [News Releases](https://consumerwatchdog.org/issues/insurance)
+    * [Video](https://consumerwatchdog.org/insurance-video/)
+    * [Reports](https://consumerwatchdog.org/issues/insurance/insurance-reports/)
+    * [In The News](https://consumerwatchdog.org/issues/in-the-news/insurance-in-the-news-in-the-news/)
+    * [Podcast](https://consumerwatchdog.org/insurance/smoke-mirrors/)
+    * [Blogs](https://consumerwatchdog.org/issues/insurance/insurance-blogs/)
+    * [Homeowners Dropped by Insurers](https://consumerwatchdog.org/issues/profile/homeowners-insurance/)
+  * [Accountability](https://consumerwatchdog.org/issues/accountability)
+    * [News Releases](https://consumerwatchdog.org/issues/accountability)
+    * [Video](https://consumerwatchdog.org/accountability-video/)
+    * [Reports](https://consumerwatchdog.org/issues/accountability/accountability-reports/)
+    * [In The News](https://consumerwatchdog.org/issues/in-the-news/accountability-in-the-news/)
+    * [Blogs](https://consumerwatchdog.org/issues/accountability/blogs-accountability/)
+  * [In The Courtroom](https://consumerwatchdog.org/issues/in-the-courtroom)
+    * [News Releases](https://consumerwatchdog.org/issues/in-the-courtroom)
+    * [Video](https://consumerwatchdog.org/courtroom-video/)
+    * [In The News](https://consumerwatchdog.org/issues/in-the-news/courtroom-in-the-news-in-the-news/)
+    * [Blogs](https://consumerwatchdog.org/issues/in-the-courtroom/courtroom-blogs/)
+
+
+Search
+[![Consumer Watchdog](https://consumerwatchdog.org/wp-content/uploads/2022/11/logo_normal_mobile.png)Consumer WatchdogExpose. Confront. Change.](https://consumerwatchdog.org/ "Consumer Watchdog")
+  * [Home](https://consumerwatchdog.org/)
+  * [About](https://consumerwatchdog.org/about/)
+    * [Our Approach](https://consumerwatchdog.org/about/)
+    * [Our Team](https://consumerwatchdog.org/our-team)
+    * [Our Books](https://consumerwatchdog.org/our-books)
+    * [Rage for Justice Awards](https://consumerwatchdog.org/rage-for-justice-awards/)
+    * [Contact](https://consumerwatchdog.org/contact)
+  * [Updates](https://consumerwatchdog.org/)
+    * [News Releases](https://consumerwatchdog.org/news-releases/)
+    * [Consumer Alerts](https://consumerwatchdog.org/consumer-alerts/)
+    * [Video](https://consumerwatchdog.org/videos/)
+    * [In The News](https://consumerwatchdog.org/issues/in-the-news/)
+    * [Blogs](https://consumerwatchdog.org/Blogs)
+    * [Reports](https://consumerwatchdog.org/reports)
+    * [Podcasts](https://soundcloud.com/consumerwatchdog)
+  * [Related Sites](https://consumerwatchdog.org/)
+    * [Newsom Well Watch](http://newsomwellwatch.com)
+    * [PUCPapers](http://pucpapers.org)
+    * [Fairness For Patients](http://fairnessforpatients.org)
+    * [Capitol Watchdog](http://capitolwatchdog.org)
+    * [Inside Google](http://www.insidegoogle.com)
+    * [Brown V Trump Oil Map](http://newsomwellwatch.com)
+  * [Our Issues](https://consumerwatchdog.org/issues)
+    * [Healthcare](https://consumerwatchdog.org/healthcare/)
+    * [Energy](https://consumerwatchdog.org/energy/)
+    * [Privacy](https://consumerwatchdog.org/privacy/)
+    * [Insurance](https://consumerwatchdog.org/insurance/)
+    * [Accountability](https://consumerwatchdog.org/accountability)
+    * [In The Courtroom](https://consumerwatchdog.org/in-the-courts/)
+  * [Get Involved](https://consumerwatchdog.org/get-involved)
+    * [Donate](https://consumerwatchdog.kindful.com/?campaign=1143184)
+    * [Submit a Consumer Complaint](https://consumerwatchdog.org/submit-complaint/)
+    * [Take Action](https://consumerwatchdog.org/submit-complaint/)
+
+
+[Facebook](https://facebook.com/consumerwatchdog "Facebook")
+[Instagram](https://www.instagram.com/consumerwatchdog/ "Instagram")
+[Linkedin](https://www.linkedin.com/company/consumerwatchdog "Linkedin")
+[Twitter](https://twitter.com/consumerwd "Twitter")
+[Youtube](https://youtube.com/consumerwatchdog "Youtube")
+[Bluesky](https://bsky.app/profile/consumerwatchdog.bsky.social "Bluesky")
+[Threads](https://www.threads.com/@consumerwatchdog "Threads")
+[Consumer Watchdog![Consumer Watchdog](https://consumerwatchdog.org/wp-content/uploads/2022/11/logo_normal_mobile.png) _Expose. Confront. Change._](https://consumerwatchdog.org/ "Consumer Watchdog")
+[Donate](https://consumerwatchdog.org/in-the-news/politico-prop-103-round-two/#!)
+  * [Healthcare](https://consumerwatchdog.org/issues/healthcare)
+    * [News Releases](https://consumerwatchdog.org/issues/healthcare)
+    * [Video](https://consumerwatchdog.org/healthcare-video/)
+    * [Reports](https://consumerwatchdog.org/issues/healthcare/healthcare-reports/)
+    * [In The News](https://consumerwatchdog.org/issues/in-the-news/healthcare-in-the-news-in-the-news/)
+    * [Blogs](https://consumerwatchdog.org/issues/healthcare/healthcare-blogs/)
+    * [Meet the Patients](https://consumerwatchdog.org/meet-the-patients/)
+  * [Energy](https://consumerwatchdog.org/issues/energy)
+    * [News Releases](https://consumerwatchdog.org/issues/energy)
+    * [Video](https://consumerwatchdog.org/energy-video/)
+    * [Reports](https://consumerwatchdog.org/issues/energy/energy-reports/)
+    * [In The News](https://consumerwatchdog.org/issues/in-the-news/energy-in-the-news-in-the-news/)
+    * [Blogs](https://consumerwatchdog.org/issues/energy/energy-blogs/)
+  * [Privacy](https://consumerwatchdog.org/issues/privacy/)
+    * [News Releases](https://consumerwatchdog.org/privacy/)
+    * [Video](https://consumerwatchdog.org/privacy-video/)
+    * [Reports](https://consumerwatchdog.org/issues/privacy/privacy-reports/)
+    * [In The News](https://consumerwatchdog.org/issues/in-the-news/privacy-in-the-news-in-the-news/)
+    * [Blogs](https://consumerwatchdog.org/issues/privacy/privacy-blogs/)
+  * [Insurance](https://consumerwatchdog.org/issues/insurance)
+    * [News Releases](https://consumerwatchdog.org/issues/insurance)
+    * [Video](https://consumerwatchdog.org/insurance-video/)
+    * [Reports](https://consumerwatchdog.org/issues/insurance/insurance-reports/)
+    * [In The News](https://consumerwatchdog.org/issues/in-the-news/insurance-in-the-news-in-the-news/)
+    * [Podcast](https://consumerwatchdog.org/insurance/smoke-mirrors/)
+    * [Blogs](https://consumerwatchdog.org/issues/insurance/insurance-blogs/)
+    * [Homeowners Dropped by Insurers](https://consumerwatchdog.org/issues/profile/homeowners-insurance/)
+  * [Accountability](https://consumerwatchdog.org/issues/accountability)
+    * [News Releases](https://consumerwatchdog.org/issues/accountability)
+    * [Video](https://consumerwatchdog.org/accountability-video/)
+    * [Reports](https://consumerwatchdog.org/issues/accountability/accountability-reports/)
+    * [In The News](https://consumerwatchdog.org/issues/in-the-news/accountability-in-the-news/)
+    * [Blogs](https://consumerwatchdog.org/issues/accountability/blogs-accountability/)
+  * [In The Courtroom](https://consumerwatchdog.org/issues/in-the-courtroom)
+    * [News Releases](https://consumerwatchdog.org/issues/in-the-courtroom)
+    * [Video](https://consumerwatchdog.org/courtroom-video/)
+    * [In The News](https://consumerwatchdog.org/issues/in-the-news/courtroom-in-the-news-in-the-news/)
+    * [Blogs](https://consumerwatchdog.org/issues/in-the-courtroom/courtroom-blogs/)
+
+
+type here...
+Search
+[](https://consumerwatchdog.org/in-the-news/politico-prop-103-round-two/)
+[![Consumer Watchdog](https://consumerwatchdog.org/wp-content/uploads/2022/11/logo_normal_mobile.png)Consumer WatchdogExpose. Confront. Change.](https://consumerwatchdog.org/ "Consumer Watchdog")
+  * [Healthcare](https://consumerwatchdog.org/issues/healthcare)
+    * [News Releases](https://consumerwatchdog.org/issues/healthcare)
+    * [Video](https://consumerwatchdog.org/healthcare-video/)
+    * [Reports](https://consumerwatchdog.org/issues/healthcare/healthcare-reports/)
+    * [In The News](https://consumerwatchdog.org/issues/in-the-news/healthcare-in-the-news-in-the-news/)
+    * [Blogs](https://consumerwatchdog.org/issues/healthcare/healthcare-blogs/)
+    * [Meet the Patients](https://consumerwatchdog.org/meet-the-patients/)
+  * [Energy](https://consumerwatchdog.org/issues/energy)
+    * [News Releases](https://consumerwatchdog.org/issues/energy)
+    * [Video](https://consumerwatchdog.org/energy-video/)
+    * [Reports](https://consumerwatchdog.org/issues/energy/energy-reports/)
+    * [In The News](https://consumerwatchdog.org/issues/in-the-news/energy-in-the-news-in-the-news/)
+    * [Blogs](https://consumerwatchdog.org/issues/energy/energy-blogs/)
+  * [Privacy](https://consumerwatchdog.org/issues/privacy/)
+    * [News Releases](https://consumerwatchdog.org/privacy/)
+    * [Video](https://consumerwatchdog.org/privacy-video/)
+    * [Reports](https://consumerwatchdog.org/issues/privacy/privacy-reports/)
+    * [In The News](https://consumerwatchdog.org/issues/in-the-news/privacy-in-the-news-in-the-news/)
+    * [Blogs](https://consumerwatchdog.org/issues/privacy/privacy-blogs/)
+  * [Insurance](https://consumerwatchdog.org/issues/insurance)
+    * [News Releases](https://consumerwatchdog.org/issues/insurance)
+    * [Video](https://consumerwatchdog.org/insurance-video/)
+    * [Reports](https://consumerwatchdog.org/issues/insurance/insurance-reports/)
+    * [In The News](https://consumerwatchdog.org/issues/in-the-news/insurance-in-the-news-in-the-news/)
+    * [Podcast](https://consumerwatchdog.org/insurance/smoke-mirrors/)
+    * [Blogs](https://consumerwatchdog.org/issues/insurance/insurance-blogs/)
+    * [Homeowners Dropped by Insurers](https://consumerwatchdog.org/issues/profile/homeowners-insurance/)
+  * [Accountability](https://consumerwatchdog.org/issues/accountability)
+    * [News Releases](https://consumerwatchdog.org/issues/accountability)
+    * [Video](https://consumerwatchdog.org/accountability-video/)
+    * [Reports](https://consumerwatchdog.org/issues/accountability/accountability-reports/)
+    * [In The News](https://consumerwatchdog.org/issues/in-the-news/accountability-in-the-news/)
+    * [Blogs](https://consumerwatchdog.org/issues/accountability/blogs-accountability/)
+  * [In The Courtroom](https://consumerwatchdog.org/issues/in-the-courtroom)
+    * [News Releases](https://consumerwatchdog.org/issues/in-the-courtroom)
+    * [Video](https://consumerwatchdog.org/courtroom-video/)
+    * [In The News](https://consumerwatchdog.org/issues/in-the-news/courtroom-in-the-news-in-the-news/)
+    * [Blogs](https://consumerwatchdog.org/issues/in-the-courtroom/courtroom-blogs/)
+
+
+Search
+[](https://consumerwatchdog.org/in-the-news/politico-prop-103-round-two/)
+[](https://consumerwatchdog.org/issues/in-the-news/)[](https://consumerwatchdog.org/issues/in-the-news/insurance-in-the-news-in-the-news/)[](https://consumerwatchdog.org/issues/in-the-news/insurance-in-the-news-in-the-news/news-story-insurance-in-the-news-in-the-news/)
+# Politico – Prop 103, Round Two?
+Share
+Email[Print](https://consumerwatchdog.org/in-the-news/politico-prop-103-round-two/ "Print")[Copy URL](https://consumerwatchdog.org/in-the-news/politico-prop-103-round-two/ "Copy URL")[Facebook](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fconsumerwatchdog.org%2Fin-the-news%2Fpolitico-prop-103-round-two%2F "Facebook")[Twitter](https://twitter.com/intent/tweet?text=Politico+%E2%80%93+Prop+103%2C+Round+Two%3F&url=https%3A%2F%2Fconsumerwatchdog.org%2Fin-the-news%2Fpolitico-prop-103-round-two%2F&via=consumerwd "Twitter")[WhatsApp](https://api.whatsapp.com/send?text=Politico+%E2%80%93+Prop+103%2C+Round+Two%3F%20%0A%0A%20https://consumerwatchdog.org/in-the-news/politico-prop-103-round-two/ "WhatsApp")
+[Linkedin](https://www.linkedin.com/shareArticle?mini=true&url=https://consumerwatchdog.org/in-the-news/politico-prop-103-round-two/&title=Politico+%E2%80%93+Prop+103%2C+Round+Two%3F "Linkedin")[ReddIt](https://reddit.com/submit?url=https://consumerwatchdog.org/in-the-news/politico-prop-103-round-two/&title=Politico+%E2%80%93+Prop+103%2C+Round+Two%3F "ReddIt")[Telegram](https://telegram.me/share/url?url=https://consumerwatchdog.org/in-the-news/politico-prop-103-round-two/&text=Politico+%E2%80%93+Prop+103%2C+Round+Two%3F "Telegram") 
+[ ](https://consumerwatchdog.org/in-the-news/politico-prop-103-round-two/ "More")
+July 8, 2025
+**By Will McCarthy and[CAMILLE VON KAENEL](https://www.politico.com/staff/camille-von-kaenel), POLITICO**
+<https://www.politico.com/newsletters/california-climate/2025/07/07/californias-great-climate-retreat-00441867>
+Wildfires are heating up the property insurance fight — and it’s boiling over on to the ballot measure campaign trail, [our colleague Will McCarthy reports](https://www.politico.com/newsletters/california-playbook-pm/2025/07/07/the-next-big-insurance-fight-headed-to-californias-ballot-00441596?nname=california-playbook-pm&nid=00000177-6f21-d412-abff-6ff78f190000&nrid=bb9b7801-dc5f-4229-9f11-09f7a612101e).
+Since its narrow passage in 1988, Proposition 103 has set the rules for insurers doing business in California, requiring an elected insurance commissioner to approve any rate changes. The initiative helped keep the state’s insurance rates below many other states, even those with lower cost of living, [saving consumers more than $150 billion](https://www.insurance.ca.gov/0400-news/0100-press-releases/2018/release128-18.cfm).
+But the sight of insurers pulling coverage from risky neighborhoods has threatened that consensus. The rapidly intensifying effects of climate-related disasters — notably the tens of billions of dollars in covered losses due to the Los Angeles wildfires — [may push more companies out of the state entirely.](https://www.politico.com/news/2025/01/08/los-angeles-fires-insurance-california-00197196)
+At a Sacramento event hosted last week by the Western Insurance Agents Association, a leading insurance lobbyist proposed amending Prop 103 so that lawmakers could change the state’s insurance regime without having to go back to voters each time — although he says it was just a thought exercise.
+Consumer Watchdog, which made its name after overcoming nearly $80 million in industry spending to pass Prop 103, is not ready to leave the 2026 or 2028 ballot to its longtime antagonists. The group has long contemplated an initiative that would require insurance companies to provide coverage to residents who fireproof their homes and to offer written justifications when coverage is denied.
+“If they want to start a war, we’re happy to finish it,” Consumer Watchdog President **Jamie Court** said of any insurance industry effort to revisit Prop 103. — ** _WM, CvK_**
+[Submit A Consumer Complaint](https://consumerwatchdog.org/submit-complaint/ "Submit A Consumer Complaint")
+## [Latest Insurance Releases](https://consumerwatchdog.org/issues/insurance)
+[](https://consumerwatchdog.org/insurance/new-investigative-podcast-series-uncovers-wildfire-insurance-abuses/ "New Investigative Podcast Series Uncovers Wildfire Insurance Abuses ")
+### [New Investigative Podcast Series Uncovers Wildfire Insurance Abuses ](https://consumerwatchdog.org/insurance/new-investigative-podcast-series-uncovers-wildfire-insurance-abuses/ "New Investigative Podcast Series Uncovers Wildfire Insurance Abuses ")
+[Justin Kloczko](https://consumerwatchdog.org/author/justin-kloczko/) - October 22, 2025
+[](https://consumerwatchdog.org/insurance/california-to-create-first-public-wildfire-catastrophe-model-to-empower-homeowners-with-insurance-wildfire-risk-information/ "California to Create First Public Wildfire Catastrophe Model to Empower Homeowners with Insurance Wildfire Risk Information")
+### [California to Create First Public Wildfire Catastrophe Model to Empower Homeowners with Insurance Wildfire Risk Information](https://consumerwatchdog.org/insurance/california-to-create-first-public-wildfire-catastrophe-model-to-empower-homeowners-with-insurance-wildfire-risk-information/ "California to Create First Public Wildfire Catastrophe Model to Empower Homeowners with Insurance Wildfire Risk Information")
+[Carmen Balber](https://consumerwatchdog.org/author/carmen-balber/) - October 13, 2025
+[](https://consumerwatchdog.org/insurance/poll-shows-between-80-and-90-support-for-insurance-policyholders-bill-of-rights/ "Poll Shows Between 80% and 90% Support For Insurance Policyholders Bill of Rights ")
+### [Poll Shows Between 80% and 90% Support For Insurance Policyholders Bill of Rights ](https://consumerwatchdog.org/insurance/poll-shows-between-80-and-90-support-for-insurance-policyholders-bill-of-rights/ "Poll Shows Between 80% and 90% Support For Insurance Policyholders Bill of Rights ")
+[Jamie Court](https://consumerwatchdog.org/author/jamie-court/) - October 8, 2025
+[](https://consumerwatchdog.org/insurance/fair-plan-must-pay-fire-survivors-claims-before-lara-hikes-rates/ "FAIR Plan Must Pay Fire Survivors’ Claims Before Lara Hikes Rates")
+### [FAIR Plan Must Pay Fire Survivors’ Claims Before Lara Hikes Rates](https://consumerwatchdog.org/insurance/fair-plan-must-pay-fire-survivors-claims-before-lara-hikes-rates/ "FAIR Plan Must Pay Fire Survivors’ Claims Before Lara Hikes Rates")
+[BLOG](https://consumerwatchdog.org/in-the-news/politico-prop-103-round-two/) [Carmen Balber](https://consumerwatchdog.org/author/carmen-balber/) - October 6, 2025
+[](https://consumerwatchdog.org/insurance/ubers-dirty-deal/ "Uber’s Dirty Deal")
+### [Uber’s Dirty Deal](https://consumerwatchdog.org/insurance/ubers-dirty-deal/ "Uber’s Dirty Deal")
+[Jamie Court](https://consumerwatchdog.org/author/jamie-court/) - October 6, 2025
+[Read More Insurance Releases](https://consumerwatchdog.org/issues/insurance "Read More Insurance Releases")
+#### [Insurance In The News](https://consumerwatchdog.org/issues/in-the-news/insurance-in-the-news-in-the-news/)
+### [KNX-AM (Radio): Some Insurers Have State Approval To Pass That Cost On To You](https://consumerwatchdog.org/in-the-news/knx-am-radio-some-insurers-have-state-approval-to-pass-that-cost-on-to-you/ "KNX-AM \(Radio\): Some Insurers Have State Approval To Pass That Cost On To You")
+October 23, 2025
+### [Los Angeles Times – California insurers set to charge homeowners for L.A. County fire costs](https://consumerwatchdog.org/in-the-news/insurance-in-the-news-in-the-news/los-angeles-times-california-insurers-set-to-charge-homeowners-for-l-a-county-fire-costs/ "Los Angeles Times – California insurers set to charge homeowners for L.A. County fire costs")
+October 22, 2025
+### [KCAL Mornings: CA Homeowners Face Surcharges To Help Recoup Costs From January Wildfires](https://consumerwatchdog.org/in-the-news/kcal-mornings-ca-homeowners-face-surcharges-to-help-recoup-costs-from-january-wildfires/ "KCAL Mornings: CA Homeowners Face Surcharges To Help Recoup Costs From January Wildfires")
+October 22, 2025
+### [The Mercury News – As wildfires scorch California, should insurers divest from fossil fuels?](https://consumerwatchdog.org/in-the-news/the-mercury-news-as-wildfires-scorch-california-should-insurers-divest-from-fossil-fuels/ "The Mercury News – As wildfires scorch California, should insurers divest from fossil fuels?")
+October 19, 2025
+### [Los Angeles Times – Insurance commissioner proposes controversial changes to landmark insurance law](https://consumerwatchdog.org/in-the-news/los-angeles-times-insurance-commissioner-proposes-controversial-changes-to-landmark-insurance-law/ "Los Angeles Times – Insurance commissioner proposes controversial changes to landmark insurance law")
+October 13, 2025
+[Read More News Stories](https://consumerwatchdog.org/issues/in-the-news/insurance-in-the-news-in-the-news/ "Read More News Stories")
+Latest Report
+[](https://consumerwatchdog.org/insurance/lowballed-what-fire-survivors-want-you-to-know-about-insurance-claims/ "Lowball: What Fire Survivors Want You To Know About Insurance Claims")
+[Reports](https://consumerwatchdog.org/issues/insurance/insurance-reports/)
+### [Lowball: What Fire Survivors Want You To Know About Insurance Claims](https://consumerwatchdog.org/insurance/lowballed-what-fire-survivors-want-you-to-know-about-insurance-claims/ "Lowball: What Fire Survivors Want You To Know About Insurance Claims")
+[REPORT](https://consumerwatchdog.org/in-the-news/politico-prop-103-round-two/)
+### Subscribe to our newsletter
+To be updated with all the latest news, press releases and special reports.
+Subscribe
+## [More Insurance Releases](https://consumerwatchdog.org/issues/insurance/)
+[Continue to the category](https://consumerwatchdog.org/issues/insurance/)
+[](https://consumerwatchdog.org/insurance/new-investigative-podcast-series-uncovers-wildfire-insurance-abuses/ "New Investigative Podcast Series Uncovers Wildfire Insurance Abuses ")
+### [New Investigative Podcast Series Uncovers Wildfire Insurance Abuses ](https://consumerwatchdog.org/insurance/new-investigative-podcast-series-uncovers-wildfire-insurance-abuses/ "New Investigative Podcast Series Uncovers Wildfire Insurance Abuses ")
+[](https://consumerwatchdog.org/insurance/california-to-create-first-public-wildfire-catastrophe-model-to-empower-homeowners-with-insurance-wildfire-risk-information/ "California to Create First Public Wildfire Catastrophe Model to Empower Homeowners with Insurance Wildfire Risk Information")
+### [California to Create First Public Wildfire Catastrophe Model to Empower Homeowners with Insurance Wildfire Risk Information](https://consumerwatchdog.org/insurance/california-to-create-first-public-wildfire-catastrophe-model-to-empower-homeowners-with-insurance-wildfire-risk-information/ "California to Create First Public Wildfire Catastrophe Model to Empower Homeowners with Insurance Wildfire Risk Information")
+[](https://consumerwatchdog.org/insurance/poll-shows-between-80-and-90-support-for-insurance-policyholders-bill-of-rights/ "Poll Shows Between 80% and 90% Support For Insurance Policyholders Bill of Rights ")
+### [Poll Shows Between 80% and 90% Support For Insurance Policyholders Bill of Rights ](https://consumerwatchdog.org/insurance/poll-shows-between-80-and-90-support-for-insurance-policyholders-bill-of-rights/ "Poll Shows Between 80% and 90% Support For Insurance Policyholders Bill of Rights ")
+[](https://consumerwatchdog.org/insurance/fair-plan-must-pay-fire-survivors-claims-before-lara-hikes-rates/ "FAIR Plan Must Pay Fire Survivors’ Claims Before Lara Hikes Rates")
+### [FAIR Plan Must Pay Fire Survivors’ Claims Before Lara Hikes Rates](https://consumerwatchdog.org/insurance/fair-plan-must-pay-fire-survivors-claims-before-lara-hikes-rates/ "FAIR Plan Must Pay Fire Survivors’ Claims Before Lara Hikes Rates")
+[BLOG](https://consumerwatchdog.org/in-the-news/politico-prop-103-round-two/)
+[](https://consumerwatchdog.org/insurance/ubers-dirty-deal/ "Uber’s Dirty Deal")
+### [Uber’s Dirty Deal](https://consumerwatchdog.org/insurance/ubers-dirty-deal/ "Uber’s Dirty Deal")
+[](https://consumerwatchdog.org/insurance/updated-ca-insurance-department-data-shows-time-to-rate-approvals-same-with-or-without-intervenors-public-citizen-chimes-in-against-revenge-regulations/ "Updated CA Insurance Department Data Shows Time To Rate Approvals Same With or Without Intervenors, Public Citizen Chimes In Against Revenge Regulations")
+### [Updated CA Insurance Department Data Shows Time To Rate Approvals Same With or Without Intervenors, Public Citizen Chimes In Against Revenge Regulations](https://consumerwatchdog.org/insurance/updated-ca-insurance-department-data-shows-time-to-rate-approvals-same-with-or-without-intervenors-public-citizen-chimes-in-against-revenge-regulations/ "Updated CA Insurance Department Data Shows Time To Rate Approvals Same With or Without Intervenors, Public Citizen Chimes In Against Revenge Regulations")
+[![Consumer Watchdog](https://consumerwatchdog.org/wp-content/uploads/2022/11/logo_normal_mobile.png)](https://consumerwatchdog.org/)
+ABOUT US
+Providing an effective voice for American consumers in an era when special interests dominate public discourse, government and politics. Non-partisan.
+Contact us: contact@consumerwatchdog.org
+FOLLOW US
+[ Facebook ](https://www.facebook.com/consumerwatchdog "Facebook") [ Instagram ](https://instagram.com/consumerwatchdog/ "Instagram") [ Linkedin ](https://www.linkedin.com/company/consumerwatchdog "Linkedin") [ Twitter ](https://twitter.com/consumerwd "Twitter") [ Youtube ](https://youtube.com/consumerwatchdog "Youtube") [ Bluesky ](https://bsky.app/profile/consumerwatchdog.bsky.social "Bluesky") [ Threads ](https://www.threads.com/@consumerwatchdog "Threads")
+  * [Submit a Complaint](https://consumerwatchdog.org/submit-complaint/)
+  * [Media Kit](https://consumerwatchdog.org/mediakit/)
+  * [Donate](https://consumerwatchdog.kindful.com/?campaign=1143184)
+  * [Sitemap](https://consumerwatchdog.org/sitemap.xml)
+  * [RSS](https://consumerwatchdog.org/rss.xml)
+  * [Privacy Policy](https://consumerwatchdog.org/privacy-policy)
+  * [Contact](https://consumerwatchdog.org/contact)
+
+
+© 2025 Consumer Watchdog 
+![](https://pixel.wp.com/g.gif?v=ext&blog=213779922&post=50717&tz=-7&srv=consumerwatchdog.org&hp=atomic&ac=2&amp=0&j=1%3A15.2-a.5&host=consumerwatchdog.org&ref=&rand=0.17818985833874357)
+# Search results
+Magnifying Glass
+Search
+Close search results
+FiltersShow filters
+Sort by: 
+Relevance•Newest•Oldest
+## No results found
+## Filter options
+Close Search

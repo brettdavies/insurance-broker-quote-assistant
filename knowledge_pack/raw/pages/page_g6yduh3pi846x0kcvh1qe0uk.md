@@ -1,0 +1,704 @@
+[![consumersadvocate-logo](https://rs.consumersadvocate.org/a/images/logo-blue-v4.png)](https://www.consumersadvocate.org/)
+  * Health
+  * Home & Lifestyle
+  * Insurance
+  * Personal Finance
+  * Software
+
+
+  * [Assisted Living Services](https://www.consumersadvocate.org/assisted-living-services "Assisted Living Services")
+  * [Blood Tests](https://www.consumersadvocate.org/blood-tests "Blood Tests")
+  * [COVID Test Kits](https://www.consumersadvocate.org/covid-tests "COVID Test Kits")
+  * [Contact Lenses](https://www.consumersadvocate.org/contact-lenses "Contact Lenses")
+  * [Cord Blood Banking](https://www.consumersadvocate.org/cord-blood "Cord Blood Banking")
+  * [DNA Testing](https://www.consumersadvocate.org/dna-testing "DNA Testing")
+  * [Diet Plans](https://www.consumersadvocate.org/diet-plans "Diet Plans")
+  * [ED Treatment Options](https://www.consumersadvocate.org/erectile-dysfunction-treatment "ED Treatment Options")
+  * [Essential Oils](https://www.consumersadvocate.org/essential-oils "Essential Oils")
+  * [Fitness Tracker](https://www.consumersadvocate.org/fitness-tracker "Fitness Tracker")
+  * [Hair Loss Treatments](https://www.consumersadvocate.org/hair-loss-treatments "Hair Loss Treatments")
+  * [Hearing Aids](https://www.consumersadvocate.org/hearing-aids "Hearing Aids")
+  * [Invisible Braces](https://www.consumersadvocate.org/invisible-braces "Invisible Braces")
+  * [Medical Alerts](https://www.consumersadvocate.org/medical-alerts "Medical Alerts")
+  * [Medicare Supplement Insurance](https://www.consumersadvocate.org/medicare-supplement-insurance "Medicare Supplement Insurance")
+  * [Online Doctors](https://www.consumersadvocate.org/online-doctors "Online Doctors")
+  * [Online Methods to Quit Smoking](https://www.consumersadvocate.org/online-methods-to-quit-smoking "Online Methods to Quit Smoking")
+  * [Online Pharmacies](https://www.consumersadvocate.org/online-pharmacies "Online Pharmacies")
+  * [Online Therapy](https://www.consumersadvocate.org/online-therapy "Online Therapy")
+  * [Prenatal Vitamins](https://www.consumersadvocate.org/prenatal-vitamins "Prenatal Vitamins")
+  * [STD Tests](https://www.consumersadvocate.org/std-tests "STD Tests")
+  * [Stairlifts](https://www.consumersadvocate.org/stair-lifts "Stairlifts")
+  * [Treadmills](https://www.consumersadvocate.org/treadmills "Treadmills")
+  * [Walk-in Tubs](https://www.consumersadvocate.org/walk-in-tubs "Walk-in Tubs")
+  * [What You Need to Know About Zantac (Ranitidine) Lawsuits](https://www.consumersadvocate.org/what-you-need-to-know-about-zantac-lawsuits "What You Need to Know About Zantac \(Ranitidine\) Lawsuits")
+
+
+  * [A/C Repair](https://www.consumersadvocate.org/ac-repair "A/C Repair")
+  * [Air Purifiers](https://www.consumersadvocate.org/air-purifiers "Air Purifiers")
+  * [Appliance Repair](https://www.consumersadvocate.org/appliance-repair "Appliance Repair")
+  * [Bathroom Remodel](https://www.consumersadvocate.org/bathroom-remodel "Bathroom Remodel")
+  * [Bed Bug Control](https://www.consumersadvocate.org/bed-bug-control "Bed Bug Control")
+  * [Blinds](https://www.consumersadvocate.org/blinds "Blinds")
+  * [Car Shipping Company](https://www.consumersadvocate.org/car-shipping-company "Car Shipping Company")
+  * [Cat Food](https://www.consumersadvocate.org/cat-food "Cat Food")
+  * [Cell Phones for Seniors](https://www.consumersadvocate.org/cell-phones-for-seniors "Cell Phones for Seniors")
+  * [Cruise Lines](https://www.consumersadvocate.org/cruise-lines "Cruise Lines")
+  * [DIY Home Security](https://www.consumersadvocate.org/diy-home-security "DIY Home Security")
+  * [Dishwashers](https://www.consumersadvocate.org/dishwashers "Dishwashers")
+  * [Dog Food](https://www.consumersadvocate.org/dog-food "Dog Food")
+  * [Dog Food Delivery Services](https://www.consumersadvocate.org/dog-food-delivery "Dog Food Delivery Services")
+  * [Drones](https://www.consumersadvocate.org/drones "Drones")
+  * [Electric Dog Fences](https://www.consumersadvocate.org/electric-dog-fence "Electric Dog Fences")
+  * [Electric Toothbrushes](https://www.consumersadvocate.org/electric-toothbrushes "Electric Toothbrushes")
+  * [Engagement Rings](https://www.consumersadvocate.org/engagement-rings "Engagement Rings")
+  * [Eye Cream](https://www.consumersadvocate.org/eye-cream "Eye Cream")
+  * [Fiber Optic Internet](https://www.consumersadvocate.org/fiber-optic-internet "Fiber Optic Internet")
+  * [Flower Delivery](https://www.consumersadvocate.org/flower-delivery "Flower Delivery")
+  * [Gutter Guards](https://www.consumersadvocate.org/gutter-guard "Gutter Guards")
+  * [Home Security Systems](https://www.consumersadvocate.org/home-security "Home Security Systems")
+  * [Home Warranties](https://www.consumersadvocate.org/home-warranties "Home Warranties")
+  * [Hotels](https://www.consumersadvocate.org/hotels "Hotels")
+  * [Kitchen Remodel](https://www.consumersadvocate.org/kitchen-remodel "Kitchen Remodel")
+  * [Lawn Care Services](https://www.consumersadvocate.org/lawn-care-services "Lawn Care Services")
+  * [Mattresses](https://www.consumersadvocate.org/mattress "Mattresses")
+  * [Meal Delivery Services](https://www.consumersadvocate.org/meal-delivery "Meal Delivery Services")
+  * [Mold Removal](https://www.consumersadvocate.org/mold-removal "Mold Removal")
+  * [Moving Companies](https://www.consumersadvocate.org/moving-companies "Moving Companies")
+  * [Music Streaming Services](https://www.consumersadvocate.org/music-streaming-services "Music Streaming Services")
+  * [Online Betting Sites](https://www.consumersadvocate.org/online-betting-sites "Online Betting Sites")
+  * [Online Dating Sites](https://www.consumersadvocate.org/online-dating "Online Dating Sites")
+  * [Pest Control Services](https://www.consumersadvocate.org/pest-control "Pest Control Services")
+  * [Pet Sitting](https://www.consumersadvocate.org/pet-sitting "Pet Sitting")
+  * [Refrigerators](https://www.consumersadvocate.org/refrigerators "Refrigerators")
+  * [Replacement Windows](https://www.consumersadvocate.org/replacement-windows "Replacement Windows")
+  * [Satellite Internet](https://www.consumersadvocate.org/satellite-internet "Satellite Internet")
+  * [Satellite TV](https://www.consumersadvocate.org/satellite-tv "Satellite TV")
+  * [Solar Energy Companies](https://www.consumersadvocate.org/solar-energy "Solar Energy Companies")
+  * [Standing Desks](https://www.consumersadvocate.org/standing-desk "Standing Desks")
+  * [Storage Units](https://www.consumersadvocate.org/storage-units "Storage Units")
+  * [Sunscreen](https://www.consumersadvocate.org/sunscreen "Sunscreen")
+  * [TV Providers](https://www.consumersadvocate.org/tv-providers "TV Providers")
+  * [TV Streaming Services](https://www.consumersadvocate.org/tv-streaming-services "TV Streaming Services")
+  * [Termite Control Services](https://www.consumersadvocate.org/termite-control "Termite Control Services")
+  * [Vacation Rentals](https://www.consumersadvocate.org/vacation-rentals "Vacation Rentals")
+  * [Volunteer Opportunities in Puerto Rico](https://www.consumersadvocate.org/volunteer-opportunities-in-puerto-rico "Volunteer Opportunities in Puerto Rico")
+  * [Washers & Dryers](https://www.consumersadvocate.org/washers-and-dryers "Washers & Dryers")
+  * [Water Filters](https://www.consumersadvocate.org/water-filters "Water Filters")
+  * [Wine Clubs](https://www.consumersadvocate.org/wine-clubs "Wine Clubs")
+  * [Wireless Hotspots](https://www.consumersadvocate.org/wireless-hotspots "Wireless Hotspots")
+  * [Yoga Mats](https://www.consumersadvocate.org/yoga-mats "Yoga Mats")
+
+
+  * [Boat Insurance](https://www.consumersadvocate.org/boat-insurance "Boat Insurance")
+  * [Business Insurance](https://www.consumersadvocate.org/business-insurance "Business Insurance")
+  * [Car Insurance](https://www.consumersadvocate.org/car-insurance "Car Insurance")
+  * [Cheap Car Insurance](https://www.consumersadvocate.org/cheap-car-insurance "Cheap Car Insurance")
+  * [Cheap Home Insurance](https://www.consumersadvocate.org/cheap-home-insurance "Cheap Home Insurance")
+  * [Commercial Truck Insurance](https://www.consumersadvocate.org/commercial-truck-insurance "Commercial Truck Insurance")
+  * [Dental Insurance](https://www.consumersadvocate.org/dental-insurance "Dental Insurance")
+  * [Disability Insurance](https://www.consumersadvocate.org/disability-insurance "Disability Insurance")
+  * [Earthquake Insurance](https://www.consumersadvocate.org/earthquake-insurance "Earthquake Insurance")
+  * [Flood Insurance](https://www.consumersadvocate.org/flood-insurance "Flood Insurance")
+  * [Health Insurance](https://www.consumersadvocate.org/health-insurance "Health Insurance")
+  * [Homeowners Insurance](https://www.consumersadvocate.org/home-insurance "Homeowners Insurance")
+  * [Landlord Insurance](https://www.consumersadvocate.org/landlord-insurance "Landlord Insurance")
+  * [Life Insurance](https://www.consumersadvocate.org/life-insurance "Life Insurance")
+  * [Long Term Care Insurance](https://www.consumersadvocate.org/long-term-care-insurance "Long Term Care Insurance")
+  * [Medical Evacuation](https://www.consumersadvocate.org/medical-evacuation "Medical Evacuation")
+  * [Motorcycle Insurance](https://www.consumersadvocate.org/motorcycle-insurance "Motorcycle Insurance")
+  * [Pet Insurance](https://www.consumersadvocate.org/pet-insurance "Pet Insurance")
+  * [RV Insurance](https://www.consumersadvocate.org/rv-insurance "RV Insurance")
+  * [Renters Insurance](https://www.consumersadvocate.org/renters-insurance "Renters Insurance")
+  * [SR-22 Insurance](https://www.consumersadvocate.org/sr-22-insurance "SR-22 Insurance")
+  * [Short Term Health Insurance](https://www.consumersadvocate.org/short-term-health-insurance "Short Term Health Insurance")
+  * [Travel Insurance](https://www.consumersadvocate.org/travel-insurance "Travel Insurance")
+  * [Travel Insurance in Canada](https://www.consumersadvocate.org/travel-insurance-canada "Travel Insurance in Canada")
+  * [Vision Insurance](https://www.consumersadvocate.org/vision-insurance "Vision Insurance")
+  * [Wedding Insurance](https://www.consumersadvocate.org/wedding-insurance "Wedding Insurance")
+
+
+  * [Annuities](https://www.consumersadvocate.org/annuities "Annuities")
+  * [Auto Refinance](https://www.consumersadvocate.org/auto-refinance "Auto Refinance")
+  * [Banks](https://www.consumersadvocate.org/banks "Banks")
+  * [Business Checking Accounts](https://www.consumersadvocate.org/business-checking-accounts "Business Checking Accounts")
+  * [CDs](https://www.consumersadvocate.org/cds "CDs")
+  * [Car Warranties](https://www.consumersadvocate.org/car-warranties "Car Warranties")
+  * [Checking Accounts](https://www.consumersadvocate.org/checking-accounts "Checking Accounts")
+  * [Credit Cards](https://www.consumersadvocate.org/credit-cards "Credit Cards")
+  * [Credit Help Services](https://www.consumersadvocate.org/credit-help "Credit Help Services")
+  * [Credit Repair](https://www.consumersadvocate.org/credit-repair "Credit Repair")
+  * [Credit Reporting](https://www.consumersadvocate.org/credit-reporting "Credit Reporting")
+  * [Cryptocurrency Exchange](https://www.consumersadvocate.org/cryptocurrency-exchange "Cryptocurrency Exchange")
+  * [FHA Loans](https://www.consumersadvocate.org/fha-loans "FHA Loans")
+  * [Gold IRAs](https://www.consumersadvocate.org/gold-iras "Gold IRAs")
+  * [Hotel Rewards Programs](https://www.consumersadvocate.org/hotel-rewards-programs "Hotel Rewards Programs")
+  * [IRAs](https://www.consumersadvocate.org/iras "IRAs")
+  * [Identity Theft Protection](https://www.consumersadvocate.org/id-theft-protection "Identity Theft Protection")
+  * [Make Money](https://www.consumersadvocate.org/ways-to-make-money "Make Money")
+  * [Money Market Accounts](https://www.consumersadvocate.org/money-market-accounts "Money Market Accounts")
+  * [Online Financial Advisors](https://www.consumersadvocate.org/financial-advisors "Online Financial Advisors")
+  * [Online Stock Brokers](https://www.consumersadvocate.org/online-stock-brokers "Online Stock Brokers")
+  * [Paid Surveys](https://www.consumersadvocate.org/paid-surveys "Paid Surveys")
+  * [Paid Surveys (Canada)](https://www.consumersadvocate.org/paid-surveys-canada "Paid Surveys \(Canada\)")
+  * [Peer to Peer Lending](https://www.consumersadvocate.org/peer-to-peer-lending "Peer to Peer Lending")
+  * [Personal Finance](https://www.consumersadvocate.org/personal-finance "Personal Finance")
+  * [Personal Finance Tools](https://www.consumersadvocate.org/personal-finance-tools "Personal Finance Tools")
+  * [Personal Loans](https://www.consumersadvocate.org/personal-loans "Personal Loans")
+  * [Prepaid Cards](https://www.consumersadvocate.org/prepaid-cards "Prepaid Cards")
+  * [Real Estate Investment Trusts](https://www.consumersadvocate.org/real-estate-investment-trusts "Real Estate Investment Trusts")
+  * [Robo-Advisors](https://www.consumersadvocate.org/robo-advisors "Robo-Advisors")
+  * [Roth IRAs](https://www.consumersadvocate.org/rothiras "Roth IRAs")
+  * [Savings Accounts](https://www.consumersadvocate.org/savings-accounts "Savings Accounts")
+  * [Small Business Loans](https://www.consumersadvocate.org/small-business-loans "Small Business Loans")
+  * [Stock Tips ](https://www.consumersadvocate.org/stocktips "Stock Tips ")
+  * [Structured Settlements](https://www.consumersadvocate.org/structured-settlements "Structured Settlements")
+  * [Student Loan Refinance](https://www.consumersadvocate.org/student-loan-refinance "Student Loan Refinance")
+  * [Student Loans](https://www.consumersadvocate.org/student-loans "Student Loans")
+  * [Tax Relief](https://www.consumersadvocate.org/tax-relief "Tax Relief")
+
+
+  * [Accounting Software](https://www.consumersadvocate.org/accounting-software "Accounting Software")
+  * [Antivirus Software](https://www.consumersadvocate.org/anti-virus-software "Antivirus Software")
+  * [Background Checks](https://www.consumersadvocate.org/background-checks "Background Checks")
+  * [Business Phone Systems](https://www.consumersadvocate.org/business-phone-systems "Business Phone Systems")
+  * [CRM Software](https://www.consumersadvocate.org/crm-software "CRM Software")
+  * [Chatbots](https://www.consumersadvocate.org/chatbots "Chatbots")
+  * [Cloud Storage](https://www.consumersadvocate.org/cloud-storage "Cloud Storage")
+  * [Dedicated Hosting Services](https://www.consumersadvocate.org/dedicated-hosting-services "Dedicated Hosting Services")
+  * [Digital Signature Software](https://www.consumersadvocate.org/digital-signature "Digital Signature Software")
+  * [Domain Registrars](https://www.consumersadvocate.org/domain-registrars "Domain Registrars")
+  * [ERP Software](https://www.consumersadvocate.org/erp-software "ERP Software")
+  * [Email Marketing Service](https://www.consumersadvocate.org/email-marketing-service "Email Marketing Service")
+  * [Fleet Tracking Software](https://www.consumersadvocate.org/fleet-tracking "Fleet Tracking Software")
+  * [Hosted Exchange](https://www.consumersadvocate.org/hosted-exchange "Hosted Exchange")
+  * [Human Resources Software](https://www.consumersadvocate.org/human-resources-software "Human Resources Software")
+  * [Human Resources Software for Small Businesses](https://www.consumersadvocate.org/human-resources-software-small-business "Human Resources Software for Small Businesses")
+  * [Job Posting Sites](https://www.consumersadvocate.org/job-search-sites "Job Posting Sites")
+  * [Language Learning Software](https://www.consumersadvocate.org/language-software "Language Learning Software")
+  * [Last Will & Testament Software](https://www.consumersadvocate.org/last-will-and-testament "Last Will & Testament Software")
+  * [Live Chat Software](https://www.consumersadvocate.org/live-chat-software "Live Chat Software")
+  * [Office 365 for Business](https://www.consumersadvocate.org/o365-for-business "Office 365 for Business")
+  * [Online Backup](https://www.consumersadvocate.org/online-backup "Online Backup")
+  * [Online Personal Training Programs](https://www.consumersadvocate.org/online-personal-trainer "Online Personal Training Programs")
+  * [Parental Control Apps](https://www.consumersadvocate.org/parental-control-apps "Parental Control Apps")
+  * [Password Manager](https://www.consumersadvocate.org/password-manager "Password Manager")
+  * [Payroll Software](https://www.consumersadvocate.org/payroll-software "Payroll Software")
+  * [Point of Sale Services](https://www.consumersadvocate.org/pos-services "Point of Sale Services")
+  * [Presentation Software](https://www.consumersadvocate.org/presentation-software "Presentation Software")
+  * [Project Management Software](https://www.consumersadvocate.org/project-management-software "Project Management Software")
+  * [Resume Builders](https://www.consumersadvocate.org/resume-builder "Resume Builders")
+  * [Stock Photo Websites](https://www.consumersadvocate.org/stock-photos "Stock Photo Websites")
+  * [Tax Preparation Software](https://www.consumersadvocate.org/tax-preparation "Tax Preparation Software")
+  * [VPNs](https://www.consumersadvocate.org/vpn "VPNs")
+  * [VPS Hosting Services](https://www.consumersadvocate.org/vps-hosting-services "VPS Hosting Services")
+  * [Video Hosting](https://www.consumersadvocate.org/video-hosting "Video Hosting")
+  * [VoIP Services](https://www.consumersadvocate.org/voip-services "VoIP Services")
+  * [Web Conferencing](https://www.consumersadvocate.org/web-conferencing "Web Conferencing")
+  * [Web Hosting](https://www.consumersadvocate.org/web-hosting "Web Hosting")
+  * [WordPress Web Hosting](https://www.consumersadvocate.org/wordpress-hosting "WordPress Web Hosting")
+  * [eCommerce Websites](https://www.consumersadvocate.org/ecommerce-websites "eCommerce Websites")
+
+
+[About us](https://www.consumersadvocate.org/about)|[Careers](https://www.consumersadvocate.org/careers)
+[Login](https://www.consumersadvocate.org/users/sign_in)|[Sign Up](https://www.consumersadvocate.org/users/sign_up)
+  * Health
+    * [Assisted Living Services](https://www.consumersadvocate.org/assisted-living-services "Assisted Living Services")
+    * [Blood Tests](https://www.consumersadvocate.org/blood-tests "Blood Tests")
+    * [COVID Test Kits](https://www.consumersadvocate.org/covid-tests "COVID Test Kits")
+    * [Contact Lenses](https://www.consumersadvocate.org/contact-lenses "Contact Lenses")
+    * [Cord Blood Banking](https://www.consumersadvocate.org/cord-blood "Cord Blood Banking")
+    * [DNA Testing](https://www.consumersadvocate.org/dna-testing "DNA Testing")
+    * [Diet Plans](https://www.consumersadvocate.org/diet-plans "Diet Plans")
+    * [ED Treatment Options](https://www.consumersadvocate.org/erectile-dysfunction-treatment "ED Treatment Options")
+    * [Essential Oils](https://www.consumersadvocate.org/essential-oils "Essential Oils")
+    * [Fitness Tracker](https://www.consumersadvocate.org/fitness-tracker "Fitness Tracker")
+    * [Hair Loss Treatments](https://www.consumersadvocate.org/hair-loss-treatments "Hair Loss Treatments")
+    * [Hearing Aids](https://www.consumersadvocate.org/hearing-aids "Hearing Aids")
+    * [Invisible Braces](https://www.consumersadvocate.org/invisible-braces "Invisible Braces")
+    * [Medical Alerts](https://www.consumersadvocate.org/medical-alerts "Medical Alerts")
+    * [Medicare Supplement Insurance](https://www.consumersadvocate.org/medicare-supplement-insurance "Medicare Supplement Insurance")
+    * [Online Doctors](https://www.consumersadvocate.org/online-doctors "Online Doctors")
+    * [Online Methods to Quit Smoking](https://www.consumersadvocate.org/online-methods-to-quit-smoking "Online Methods to Quit Smoking")
+    * [Online Pharmacies](https://www.consumersadvocate.org/online-pharmacies "Online Pharmacies")
+    * [Online Therapy](https://www.consumersadvocate.org/online-therapy "Online Therapy")
+    * [Prenatal Vitamins](https://www.consumersadvocate.org/prenatal-vitamins "Prenatal Vitamins")
+    * [STD Tests](https://www.consumersadvocate.org/std-tests "STD Tests")
+    * [Stairlifts](https://www.consumersadvocate.org/stair-lifts "Stairlifts")
+    * [Treadmills](https://www.consumersadvocate.org/treadmills "Treadmills")
+    * [Walk-in Tubs](https://www.consumersadvocate.org/walk-in-tubs "Walk-in Tubs")
+    * [What You Need to Know About Zantac (Ranitidine) Lawsuits](https://www.consumersadvocate.org/what-you-need-to-know-about-zantac-lawsuits "What You Need to Know About Zantac \(Ranitidine\) Lawsuits")
+  * Home & Lifestyle
+    * [A/C Repair](https://www.consumersadvocate.org/ac-repair "A/C Repair")
+    * [Air Purifiers](https://www.consumersadvocate.org/air-purifiers "Air Purifiers")
+    * [Appliance Repair](https://www.consumersadvocate.org/appliance-repair "Appliance Repair")
+    * [Bathroom Remodel](https://www.consumersadvocate.org/bathroom-remodel "Bathroom Remodel")
+    * [Bed Bug Control](https://www.consumersadvocate.org/bed-bug-control "Bed Bug Control")
+    * [Blinds](https://www.consumersadvocate.org/blinds "Blinds")
+    * [Car Shipping Company](https://www.consumersadvocate.org/car-shipping-company "Car Shipping Company")
+    * [Cat Food](https://www.consumersadvocate.org/cat-food "Cat Food")
+    * [Cell Phones for Seniors](https://www.consumersadvocate.org/cell-phones-for-seniors "Cell Phones for Seniors")
+    * [Cruise Lines](https://www.consumersadvocate.org/cruise-lines "Cruise Lines")
+    * [DIY Home Security](https://www.consumersadvocate.org/diy-home-security "DIY Home Security")
+    * [Dishwashers](https://www.consumersadvocate.org/dishwashers "Dishwashers")
+    * [Dog Food](https://www.consumersadvocate.org/dog-food "Dog Food")
+    * [Dog Food Delivery Services](https://www.consumersadvocate.org/dog-food-delivery "Dog Food Delivery Services")
+    * [Drones](https://www.consumersadvocate.org/drones "Drones")
+    * [Electric Dog Fences](https://www.consumersadvocate.org/electric-dog-fence "Electric Dog Fences")
+    * [Electric Toothbrushes](https://www.consumersadvocate.org/electric-toothbrushes "Electric Toothbrushes")
+    * [Engagement Rings](https://www.consumersadvocate.org/engagement-rings "Engagement Rings")
+    * [Eye Cream](https://www.consumersadvocate.org/eye-cream "Eye Cream")
+    * [Fiber Optic Internet](https://www.consumersadvocate.org/fiber-optic-internet "Fiber Optic Internet")
+    * [Flower Delivery](https://www.consumersadvocate.org/flower-delivery "Flower Delivery")
+    * [Gutter Guards](https://www.consumersadvocate.org/gutter-guard "Gutter Guards")
+    * [Home Security Systems](https://www.consumersadvocate.org/home-security "Home Security Systems")
+    * [Home Warranties](https://www.consumersadvocate.org/home-warranties "Home Warranties")
+    * [Hotels](https://www.consumersadvocate.org/hotels "Hotels")
+    * [Kitchen Remodel](https://www.consumersadvocate.org/kitchen-remodel "Kitchen Remodel")
+    * [Lawn Care Services](https://www.consumersadvocate.org/lawn-care-services "Lawn Care Services")
+    * [Mattresses](https://www.consumersadvocate.org/mattress "Mattresses")
+    * [Meal Delivery Services](https://www.consumersadvocate.org/meal-delivery "Meal Delivery Services")
+    * [Mold Removal](https://www.consumersadvocate.org/mold-removal "Mold Removal")
+    * [Moving Companies](https://www.consumersadvocate.org/moving-companies "Moving Companies")
+    * [Music Streaming Services](https://www.consumersadvocate.org/music-streaming-services "Music Streaming Services")
+    * [Online Betting Sites](https://www.consumersadvocate.org/online-betting-sites "Online Betting Sites")
+    * [Online Dating Sites](https://www.consumersadvocate.org/online-dating "Online Dating Sites")
+    * [Pest Control Services](https://www.consumersadvocate.org/pest-control "Pest Control Services")
+    * [Pet Sitting](https://www.consumersadvocate.org/pet-sitting "Pet Sitting")
+    * [Refrigerators](https://www.consumersadvocate.org/refrigerators "Refrigerators")
+    * [Replacement Windows](https://www.consumersadvocate.org/replacement-windows "Replacement Windows")
+    * [Satellite Internet](https://www.consumersadvocate.org/satellite-internet "Satellite Internet")
+    * [Satellite TV](https://www.consumersadvocate.org/satellite-tv "Satellite TV")
+    * [Solar Energy Companies](https://www.consumersadvocate.org/solar-energy "Solar Energy Companies")
+    * [Standing Desks](https://www.consumersadvocate.org/standing-desk "Standing Desks")
+    * [Storage Units](https://www.consumersadvocate.org/storage-units "Storage Units")
+    * [Sunscreen](https://www.consumersadvocate.org/sunscreen "Sunscreen")
+    * [TV Providers](https://www.consumersadvocate.org/tv-providers "TV Providers")
+    * [TV Streaming Services](https://www.consumersadvocate.org/tv-streaming-services "TV Streaming Services")
+    * [Termite Control Services](https://www.consumersadvocate.org/termite-control "Termite Control Services")
+    * [Vacation Rentals](https://www.consumersadvocate.org/vacation-rentals "Vacation Rentals")
+    * [Volunteer Opportunities in Puerto Rico](https://www.consumersadvocate.org/volunteer-opportunities-in-puerto-rico "Volunteer Opportunities in Puerto Rico")
+    * [Washers & Dryers](https://www.consumersadvocate.org/washers-and-dryers "Washers & Dryers")
+    * [Water Filters](https://www.consumersadvocate.org/water-filters "Water Filters")
+    * [Wine Clubs](https://www.consumersadvocate.org/wine-clubs "Wine Clubs")
+    * [Wireless Hotspots](https://www.consumersadvocate.org/wireless-hotspots "Wireless Hotspots")
+    * [Yoga Mats](https://www.consumersadvocate.org/yoga-mats "Yoga Mats")
+  * Insurance
+    * [Boat Insurance](https://www.consumersadvocate.org/boat-insurance "Boat Insurance")
+    * [Business Insurance](https://www.consumersadvocate.org/business-insurance "Business Insurance")
+    * [Car Insurance](https://www.consumersadvocate.org/car-insurance "Car Insurance")
+    * [Cheap Car Insurance](https://www.consumersadvocate.org/cheap-car-insurance "Cheap Car Insurance")
+    * [Cheap Home Insurance](https://www.consumersadvocate.org/cheap-home-insurance "Cheap Home Insurance")
+    * [Commercial Truck Insurance](https://www.consumersadvocate.org/commercial-truck-insurance "Commercial Truck Insurance")
+    * [Dental Insurance](https://www.consumersadvocate.org/dental-insurance "Dental Insurance")
+    * [Disability Insurance](https://www.consumersadvocate.org/disability-insurance "Disability Insurance")
+    * [Earthquake Insurance](https://www.consumersadvocate.org/earthquake-insurance "Earthquake Insurance")
+    * [Flood Insurance](https://www.consumersadvocate.org/flood-insurance "Flood Insurance")
+    * [Health Insurance](https://www.consumersadvocate.org/health-insurance "Health Insurance")
+    * [Homeowners Insurance](https://www.consumersadvocate.org/home-insurance "Homeowners Insurance")
+    * [Landlord Insurance](https://www.consumersadvocate.org/landlord-insurance "Landlord Insurance")
+    * [Life Insurance](https://www.consumersadvocate.org/life-insurance "Life Insurance")
+    * [Long Term Care Insurance](https://www.consumersadvocate.org/long-term-care-insurance "Long Term Care Insurance")
+    * [Medical Evacuation](https://www.consumersadvocate.org/medical-evacuation "Medical Evacuation")
+    * [Motorcycle Insurance](https://www.consumersadvocate.org/motorcycle-insurance "Motorcycle Insurance")
+    * [Pet Insurance](https://www.consumersadvocate.org/pet-insurance "Pet Insurance")
+    * [RV Insurance](https://www.consumersadvocate.org/rv-insurance "RV Insurance")
+    * [Renters Insurance](https://www.consumersadvocate.org/renters-insurance "Renters Insurance")
+    * [SR-22 Insurance](https://www.consumersadvocate.org/sr-22-insurance "SR-22 Insurance")
+    * [Short Term Health Insurance](https://www.consumersadvocate.org/short-term-health-insurance "Short Term Health Insurance")
+    * [Travel Insurance](https://www.consumersadvocate.org/travel-insurance "Travel Insurance")
+    * [Travel Insurance in Canada](https://www.consumersadvocate.org/travel-insurance-canada "Travel Insurance in Canada")
+    * [Vision Insurance](https://www.consumersadvocate.org/vision-insurance "Vision Insurance")
+    * [Wedding Insurance](https://www.consumersadvocate.org/wedding-insurance "Wedding Insurance")
+  * Personal Finance
+    * [Annuities](https://www.consumersadvocate.org/annuities "Annuities")
+    * [Auto Refinance](https://www.consumersadvocate.org/auto-refinance "Auto Refinance")
+    * [Banks](https://www.consumersadvocate.org/banks "Banks")
+    * [Business Checking Accounts](https://www.consumersadvocate.org/business-checking-accounts "Business Checking Accounts")
+    * [CDs](https://www.consumersadvocate.org/cds "CDs")
+    * [Car Warranties](https://www.consumersadvocate.org/car-warranties "Car Warranties")
+    * [Checking Accounts](https://www.consumersadvocate.org/checking-accounts "Checking Accounts")
+    * [Credit Cards](https://www.consumersadvocate.org/credit-cards "Credit Cards")
+    * [Credit Help Services](https://www.consumersadvocate.org/credit-help "Credit Help Services")
+    * [Credit Repair](https://www.consumersadvocate.org/credit-repair "Credit Repair")
+    * [Credit Reporting](https://www.consumersadvocate.org/credit-reporting "Credit Reporting")
+    * [Cryptocurrency Exchange](https://www.consumersadvocate.org/cryptocurrency-exchange "Cryptocurrency Exchange")
+    * [FHA Loans](https://www.consumersadvocate.org/fha-loans "FHA Loans")
+    * [Gold IRAs](https://www.consumersadvocate.org/gold-iras "Gold IRAs")
+    * [Hotel Rewards Programs](https://www.consumersadvocate.org/hotel-rewards-programs "Hotel Rewards Programs")
+    * [IRAs](https://www.consumersadvocate.org/iras "IRAs")
+    * [Identity Theft Protection](https://www.consumersadvocate.org/id-theft-protection "Identity Theft Protection")
+    * [Make Money](https://www.consumersadvocate.org/ways-to-make-money "Make Money")
+    * [Money Market Accounts](https://www.consumersadvocate.org/money-market-accounts "Money Market Accounts")
+    * [Online Financial Advisors](https://www.consumersadvocate.org/financial-advisors "Online Financial Advisors")
+    * [Online Stock Brokers](https://www.consumersadvocate.org/online-stock-brokers "Online Stock Brokers")
+    * [Paid Surveys](https://www.consumersadvocate.org/paid-surveys "Paid Surveys")
+    * [Paid Surveys (Canada)](https://www.consumersadvocate.org/paid-surveys-canada "Paid Surveys \(Canada\)")
+    * [Peer to Peer Lending](https://www.consumersadvocate.org/peer-to-peer-lending "Peer to Peer Lending")
+    * [Personal Finance](https://www.consumersadvocate.org/personal-finance "Personal Finance")
+    * [Personal Finance Tools](https://www.consumersadvocate.org/personal-finance-tools "Personal Finance Tools")
+    * [Personal Loans](https://www.consumersadvocate.org/personal-loans "Personal Loans")
+    * [Prepaid Cards](https://www.consumersadvocate.org/prepaid-cards "Prepaid Cards")
+    * [Real Estate Investment Trusts](https://www.consumersadvocate.org/real-estate-investment-trusts "Real Estate Investment Trusts")
+    * [Robo-Advisors](https://www.consumersadvocate.org/robo-advisors "Robo-Advisors")
+    * [Roth IRAs](https://www.consumersadvocate.org/rothiras "Roth IRAs")
+    * [Savings Accounts](https://www.consumersadvocate.org/savings-accounts "Savings Accounts")
+    * [Small Business Loans](https://www.consumersadvocate.org/small-business-loans "Small Business Loans")
+    * [Stock Tips ](https://www.consumersadvocate.org/stocktips "Stock Tips ")
+    * [Structured Settlements](https://www.consumersadvocate.org/structured-settlements "Structured Settlements")
+    * [Student Loan Refinance](https://www.consumersadvocate.org/student-loan-refinance "Student Loan Refinance")
+    * [Student Loans](https://www.consumersadvocate.org/student-loans "Student Loans")
+    * [Tax Relief](https://www.consumersadvocate.org/tax-relief "Tax Relief")
+  * Software
+    * [Accounting Software](https://www.consumersadvocate.org/accounting-software "Accounting Software")
+    * [Antivirus Software](https://www.consumersadvocate.org/anti-virus-software "Antivirus Software")
+    * [Background Checks](https://www.consumersadvocate.org/background-checks "Background Checks")
+    * [Business Phone Systems](https://www.consumersadvocate.org/business-phone-systems "Business Phone Systems")
+    * [CRM Software](https://www.consumersadvocate.org/crm-software "CRM Software")
+    * [Chatbots](https://www.consumersadvocate.org/chatbots "Chatbots")
+    * [Cloud Storage](https://www.consumersadvocate.org/cloud-storage "Cloud Storage")
+    * [Dedicated Hosting Services](https://www.consumersadvocate.org/dedicated-hosting-services "Dedicated Hosting Services")
+    * [Digital Signature Software](https://www.consumersadvocate.org/digital-signature "Digital Signature Software")
+    * [Domain Registrars](https://www.consumersadvocate.org/domain-registrars "Domain Registrars")
+    * [ERP Software](https://www.consumersadvocate.org/erp-software "ERP Software")
+    * [Email Marketing Service](https://www.consumersadvocate.org/email-marketing-service "Email Marketing Service")
+    * [Fleet Tracking Software](https://www.consumersadvocate.org/fleet-tracking "Fleet Tracking Software")
+    * [Hosted Exchange](https://www.consumersadvocate.org/hosted-exchange "Hosted Exchange")
+    * [Human Resources Software](https://www.consumersadvocate.org/human-resources-software "Human Resources Software")
+    * [Human Resources Software for Small Businesses](https://www.consumersadvocate.org/human-resources-software-small-business "Human Resources Software for Small Businesses")
+    * [Job Posting Sites](https://www.consumersadvocate.org/job-search-sites "Job Posting Sites")
+    * [Language Learning Software](https://www.consumersadvocate.org/language-software "Language Learning Software")
+    * [Last Will & Testament Software](https://www.consumersadvocate.org/last-will-and-testament "Last Will & Testament Software")
+    * [Live Chat Software](https://www.consumersadvocate.org/live-chat-software "Live Chat Software")
+    * [Office 365 for Business](https://www.consumersadvocate.org/o365-for-business "Office 365 for Business")
+    * [Online Backup](https://www.consumersadvocate.org/online-backup "Online Backup")
+    * [Online Personal Training Programs](https://www.consumersadvocate.org/online-personal-trainer "Online Personal Training Programs")
+    * [Parental Control Apps](https://www.consumersadvocate.org/parental-control-apps "Parental Control Apps")
+    * [Password Manager](https://www.consumersadvocate.org/password-manager "Password Manager")
+    * [Payroll Software](https://www.consumersadvocate.org/payroll-software "Payroll Software")
+    * [Point of Sale Services](https://www.consumersadvocate.org/pos-services "Point of Sale Services")
+    * [Presentation Software](https://www.consumersadvocate.org/presentation-software "Presentation Software")
+    * [Project Management Software](https://www.consumersadvocate.org/project-management-software "Project Management Software")
+    * [Resume Builders](https://www.consumersadvocate.org/resume-builder "Resume Builders")
+    * [Stock Photo Websites](https://www.consumersadvocate.org/stock-photos "Stock Photo Websites")
+    * [Tax Preparation Software](https://www.consumersadvocate.org/tax-preparation "Tax Preparation Software")
+    * [VPNs](https://www.consumersadvocate.org/vpn "VPNs")
+    * [VPS Hosting Services](https://www.consumersadvocate.org/vps-hosting-services "VPS Hosting Services")
+    * [Video Hosting](https://www.consumersadvocate.org/video-hosting "Video Hosting")
+    * [VoIP Services](https://www.consumersadvocate.org/voip-services "VoIP Services")
+    * [Web Conferencing](https://www.consumersadvocate.org/web-conferencing "Web Conferencing")
+    * [Web Hosting](https://www.consumersadvocate.org/web-hosting "Web Hosting")
+    * [WordPress Web Hosting](https://www.consumersadvocate.org/wordpress-hosting "WordPress Web Hosting")
+    * [eCommerce Websites](https://www.consumersadvocate.org/ecommerce-websites "eCommerce Websites")
+
+
+[Login](https://www.consumersadvocate.org/users/sign_in)
+[Sign Up](https://www.consumersadvocate.org/users/sign_up)
+[About us](https://www.consumersadvocate.org/about)
+[Careers](https://www.consumersadvocate.org/careers)
+2025 © All Rights Reserved
+Many or all of the companies featured compensate us. Compensation and research may determine where and how companies appear. [Learn More](https://www.consumersadvocate.org/ranking?v=earthquake-insurance)
+###### At ConsumersAdvocate.org, we take transparency seriously.
+x
+To that end, you should know that many advertisers pay us a fee if you purchase products after clicking links or calling phone numbers on our website. The following companies are our partners in Earthquake Insurance: If you choose to click on the links on our site, we may receive compensation. If you don't click the links on our site or use the phone numbers listed on our site we will not be compensated. Ultimately the choice is yours. The analyses and opinions on our site are our own and our editors and staff writers are instructed to maintain editorial integrity. Our brand, ConsumersAdvocate.org, stands for accuracy and helpful information. We know we can only be successful if we take your trust in us seriously! To find out more about how we make money and our editorial process, [click here. ](https://www.consumersadvocate.org/ranking?v=earthquake-insurance)If you have any specific questions while considering which product or service you may buy, feel free to reach out to us anytime. 
+* * *
+Product name, logo, brands, and other trademarks featured or referred to within our site are the property of their respective trademark holders. Any reference in this website to third party trademarks is to identify the corresponding third party goods and/or services.
+# Best Earthquake Insurance Based on In-Depth Reviews
+* * *
+A comprehensive guide to help you decide if earthquake insurance is right for you and your property. 
+Last Updated:October 22, 2025
+  * 200+
+Hours of research
+  * 40+
+Sources used
+  * 10
+Companies vetted
+  * 3
+Features reviewed
+  * 5
+Top   
+Picks
+
+
+Our Team of Researchers:
+Our Site is Referenced By
+* * *
+![](https://rs.consumersadvocate.org/a/images/uiv4/trusted-logos-stacked.png)
+Consumer Advocacy
+What you need to know
+Earthquake Insurance
+Share on:
+[](https://www.facebook.com/sharer/sharer.php?u=https://www.consumersadvocate.org/earthquake-insurance)[](https://twitter.com/intent/tweet?url=https://www.consumersadvocate.org/earthquake-insurance&text=10+Best+Earthquake+Insurance+of+2025)
+  * It’s typically available as an add-on for homeowners insurance
+  * Your risk level is always a factor on premiums
+  * Covers structural repairs, rebuilding, and replacement costs
+  * Sinkholes, ruptured gas lines, and floods aren’t typically covered
+
+
+Our Approach
+## How We Found The Best Earthquake Insurance
+Coverage & Discounts
+We checked and picked companies that had flexible deductibles, and great coverage and discounts available, including homeowners discounts.
+Financial Strength 
+To make sure a company could pay out your claim, we checked and picked companies with a solid financial standing.
+Customer Support
+We evaluated how companies treated potential and current policyholders, assessing their functionality, knowledge, and responsiveness.
+56 People found this helpful.
+We receive compensation from these partners, which impacts the order they appear on the page. That said, the analyses and opinions on our site are our own and [we believe in](https://www.consumersadvocate.org/ranking?v=earthquake-insurance) editorial integrity.
+The following companies are our partners in Earthquake Insurance: 
+## Our Top Picks: Earthquake Insurance Reviews
+Unlike hurricanes, earthquakes are a natural phenomenon that scientists cannot predict. They can, however, assess how frequently they occur, and data suggests that they occur surprisingly often. The United States Geological Survey (USGS) concluded that there are about[ 20,000 earthquakes per year worldwide](https://www.usgs.gov/faqs/why-are-we-having-so-many-earthquakes-has-naturally-occurring-earthquake-activity-been?qt-news_science_products=0#qt-news_science_products) - approximately 55 per day-, and in the United States alone, there are about 2,000 earthquakes per year. Most of these quakes are of low magnitude and rarely felt, and the majority center around the western and central United States, but that doesn’t mean that all other states are safe from an earthquake.
+So, how do we cover our losses if our home is hit by one? Enter earthquake insurance, a policy capable of helping with the repair and/or rebuilding of your home and your personal belongings. Usually offered only in states that are prone to seismic activity, companies all around the US offer the policy. It’s important to note that insurance companies offer earthquake insurance either as an add-on to homeowner’s insurance (termed rider or endorsement) or as a separate policy altogether and that these offerings vary from state to state. If you already have homeowners insurance but would like to get earthquake protection, ask your provider if they offer it as an add-on. However, if you don’t have homeowners insurance or are looking to switch, then look no further and read on!
+### Farmers review
+[![Farmers Earthquake Insurance](https://s3.consumersadvocate.org/prd/image/image/720/medium_MQzaKFkkBjTbTpRoUoOpFvxHQdthZo.png)](https://www.consumersadvocate.org/p/farmers-earthquake-insurance-review?url=https%3A%2F%2Fwww.farmers.com%2Fhome%2Fearthquake%2F&vertical_alias=earthquake-insurance&wafid=331)
+#### Best Overall
+![](https://s3.consumersadvocate.org/prd/image/image/12216/large_ae3da119-a537-4a47-82b3-e5b94e42c962.png)
+_Screenshot Farmers.com, August 2020_
+A catchy jingle shouldn’t be the only thing that convinces you to get insurance from a company, which is why Farmers’ offers solid earthquake insurance options for states with recurring earthquakes, such as those in western and central United States. Farmer’s earthquake policy covers rebuilding, structural repairs, temporary housing due to loss of use, and personal property protection. Deductibles can be flexible depending on your home’s size and building material, ranging from 5 to 20%.
+Farmers has a few discounts available, including multiple policy, non-smoking household, security system, and fire alarm discounts. Farmers also offers a unique feature called the “Mobile Claims Center”, where if your area is hit by a major catastrophe, the company can send their Mobile Claims Center buses to the area where they will not only help with claim services, they can also provide water, telephone, food, and other helpful services to customers and non-customers. 
+[VISIT SITE](https://www.consumersadvocate.org/p/farmers-earthquake-insurance-review?url=https%3A%2F%2Fwww.farmers.com%2Fhome%2Fearthquake%2F&vertical_alias=earthquake-insurance&wafid=331)![](https://www.consumersadvocate.org/earthquake-insurance)
+### Allstate review
+[![Allstate Earthquake Insurance](https://s3.consumersadvocate.org/prd/image/image/4080/medium_fc3d1153-edd6-4efe-93f5-5a2b87b1533c.jpg)](https://www.consumersadvocate.org/p/all-state-earthquake-insurance-review?url=https%3A%2F%2Fwww.allstate.com%2Ftools-and-resources%2Fhome-insurance%2Fearthquake-insurance.aspx&vertical_alias=earthquake-insurance&wafid=316)
+#### Best for Discounts
+![](https://s3.consumersadvocate.org/prd/image/image/12217/large_7b19c730-1870-4e07-bbc2-c3a12e96a3b6.png)
+_Screenshot Allstate.com, August 2020_
+Allstate’s earthquake insurance offers flexible deductibles that range from five to 25%, making it so that you can choose how much you want to pay based on your budget. But what makes Allstate stand out is the wide variety of discounts you can get through their homeowners insurance, which can help you save on your earthquake insurance if you include it as an add-on. With more than 11 discounts available, you can save up to 5% from your homeowners and earthquake policy by setting up automatic payments, 20% when switching to Allstate without an insurance claim, up to 25% when bundling home and auto policies, and up to 10% for signing up for a new policy at least 7 days before the current one expires. Other discounts include protective device discounts if your home has theft or fire protection devices, loyalty discounts for remaining as an Allstate customer each year, homebuyer discount, and a discount for being at least 55 years old and retired.
+[VISIT SITE](https://www.consumersadvocate.org/p/all-state-earthquake-insurance-review?url=https%3A%2F%2Fwww.allstate.com%2Ftools-and-resources%2Fhome-insurance%2Fearthquake-insurance.aspx&vertical_alias=earthquake-insurance&wafid=316)![](https://www.consumersadvocate.org/earthquake-insurance)
+### State Farm review
+[![State Farm Earthquake Insurance](https://s3.consumersadvocate.org/prd/image/image/1356/medium_xReQPxiYWInRJwegeXZOZUTdPVBkbL.png)](https://www.consumersadvocate.org/p/state-farm-earthquake-insurance-review?url=https%3A%2F%2Fwww.statefarm.com%2F&vertical_alias=earthquake-insurance&wafid=334)
+#### Best for Customer Support
+![](https://s3.consumersadvocate.org/prd/image/image/12218/large_b32fb8eb-ea0b-4e64-a998-6a4aa5761149.png)
+_Screenshot StateFarm.com, August 2020_
+State Farm stands out for two things: their superb customer service and the extra features that come with its earthquake policy. To evaluate State Farm’s customer support, we called them a total of ten times to inquire about their policies, and each time their representatives were very thorough explaining each policy feature carefully, always asking if we had any questions before proceeding further. Furthermore, they always asked if we wished for them to email us an immediate breakdown of the insurance quotes we requested, something that was hit or miss with many of the other companies we reviewed-in some occasions, companies took more than two hours to email a quote, or they reassured that they would email us back with the quote, but never did. 
+For extra features, State Farm offers deductibles as low as 5% as standard, and you can opt to add debris removal and broken glass cleanup to your earthquake policy if you believe you’ll need it. They also offer a limited number of discounts, including multi-policy, claims-free, and loyalty discounts.
+[VISIT SITE](https://www.consumersadvocate.org/p/state-farm-earthquake-insurance-review?url=https%3A%2F%2Fwww.statefarm.com%2F&vertical_alias=earthquake-insurance&wafid=334)![](https://www.consumersadvocate.org/earthquake-insurance)
+### Nationwide review
+[![Nationwide Earthquake Insurance](https://s3.consumersadvocate.org/prd/image/image/1354/medium_elsTWlvlHwlwwfMJurBefnUSWWAhER.png)](https://www.consumersadvocate.org/p/nationwide-earthquake-insurance-review?url=https%3A%2F%2Fwww.nationwide.com%2Fearthquakes.jsp&vertical_alias=earthquake-insurance&wafid=332)
+#### Best for Personal Property and Loss of Use Coverage
+![](https://s3.consumersadvocate.org/prd/image/image/12219/large_d2c45493-5c55-419d-8500-d371c8c8afff.png)
+_Screenshot Nationwide.com, August 2020_
+When paying out personal property claims that result from earthquake damage, it’s typical for companies to cap them at $150,000 if you paid for this amount. Nationwide goes further, not only capping personal property insurance at $200,000 but also offering the same coverage amounts for loss of use. Typically, the coverage cap for personal property and loss of use is separate and varies, so you’d have to keep in mind how much the company offers for each. This isn’t an issue with Nationwide, however, since r your personal belongings and your out-of-home expenses are covered equally if you need them.
+Discounts are lacking when compared to other companies, however, as their website only shows eight: multi-policy, protective device, claims-free, home renovation credit, roof rating, home purchase, prior insurance, and gated community discounts.
+[VISIT SITE](https://www.consumersadvocate.org/p/nationwide-earthquake-insurance-review?url=https%3A%2F%2Fwww.nationwide.com%2Fearthquakes.jsp&vertical_alias=earthquake-insurance&wafid=332)![](https://www.consumersadvocate.org/earthquake-insurance)
+### GeoVera review
+[![GeoVera Earthquake Insurance](https://s3.consumersadvocate.org/prd/image/image/721/medium_dFiXVhianiKerSgMbtnotoGnbcURce.png)](https://www.consumersadvocate.org/p/geovera-earthquake-insurance-review?url=http%3A%2F%2Fwww.mygeosource.com%2FGVIC%2F&vertical_alias=earthquake-insurance&wafid=335)
+#### Best for Policy Transparency
+![](https://s3.consumersadvocate.org/prd/image/image/12220/large_f577e28c-a7bc-4e52-84db-5a4aeb56cfee.png)
+_Screenshot Geovera.com, August 2020_
+As we researched companies and their earthquake insurance policies, we were disappointed to see that almost none of the big brand names explained their policies on their website, so we had to inquire about policy specifics by phone. GeoVera Insurance was the exception, as their website has enough information for you to get a thorough understanding of how their policies work. GeoVera’s earthquake insurance uses a single limit policy for earthquake insurance, which means that instead of assigning separate coverage limits for dwelling, personal property, and loss of use, they assign a single, combined limit for all coverages. The downside is that, in most areas, the lowest deductible you can get is 10%, which is fairly high compared to other companies.
+There are two coverage options for earthquake insurance: comprehensive and standard. Comprehensive protection covers your home, detached structures, personal property, and loss of use expenses. Their standard coverage is cheaper but less thorough, offering full protection only for your home while limiting coverage for personal property and loss of use. If you choose comprehensive coverage, you have the option to increase your deductible from 10 to up to 25%, while standard coverage limits your deductible to up to 15%. Having the option to change your deductible is great since high deductibles translate to cheaper premiums and vice versa. The biggest drawback for GeoVera is that it only offers its earthquake policies to four states: California, Oregon, and Washington. 
+[VISIT SITE](https://www.consumersadvocate.org/p/geovera-earthquake-insurance-review?url=http%3A%2F%2Fwww.mygeosource.com%2FGVIC%2F&vertical_alias=earthquake-insurance&wafid=335)![](https://www.consumersadvocate.org/earthquake-insurance)
+![](https://rs.consumersadvocate.org/a/images/uiv4/ico-magnify-gears.png)
+Our Research
+## Further Insight into Our Methodology
+When we began researching the earthquake insurance world and its many companies, we thought it would be a straightforward journey: We would check company websites, look up their features, pros and cons, discounts, financial data, and so forth, and we would evaluate each company thoroughly based on these features. What we didn’t see coming, though, was how little information most companies had about their earthquake insurance on their websites. They either had vague information, or they purely focused on how-to guides on protecting yourself and your property from earthquakes. We thus had to call each company directly to inquire about their features, and even then, they were reluctant to provide the information if we didn’t request a quote. We, therefore, adapted our methodology to these facts, and after more than 100 hours of research, more than 40 sources studied, and 10 companies vetted, we settled on 3 key factors to evaluate: coverage and discounts, financial strength, and customer experience.
+* * *
+### Coverage & Discounts
+We checked what each company’s earthquake insurance policy covered and didn’t cover, as well as if there were any additional add-ons available for their earthquake insurance. Companies who had flexible premiums, extra add-ons, and more thorough coverage, including higher caps on personal property and loss of use protection, scored higher with us. We also checked for available discounts, and although we didn’t find as many related discounts to earthquake insurance, we found out that companies that offered earthquake insurance as an add-on could help you score great discounts if you bundle it with their homeowners. Thus, companies that had a large number of homeowner’s discounts scored higher with us.
+* * *
+### Financial Strength 
+If an earthquake ever damages or devastates your home, you really need to be sure that your insurer is capable of helping you pay for the damages. That’s why we made sure that the choices we picked were all financially sound. To do this, we checked independent financial rating websites like Standard and Poor’s, Moody’s, and A.M. Best. 
+* * *
+### Customer Support
+Because you’ll need to contact a company’s customer support to request quotes and file claims, we made sure that the companies we chose had a solid customer support base, promising an excellent customer experience. We personally called each company multiple times to evaluate the knowledge, promptness, and professionalism of their representatives, and only stuck with those that really made an effort to help their customers. 
+## Helpful Information about Earthquake Insurance
+## What is earthquake insurance
+Earthquake insurance is a form of insurance that protects your home and your personal property if an earthquake ever damages or destroys them. This type of property insurance isn’t a part of your regular homeowners, condominium or renters insurance, so it is offered by insurance companies either as an add-on to your homeowners insurance policy or as separate insurance from an alternate provider. Homeowners insurance can cover losses caused by a variety of natural and man-made disasters as long as it is specified in your policy, and these include fire or lightning, windstorms or hail, explosions, riot or civil commotion, damage caused by aircraft, damage caused by vehicles, theft, and even volcanic eruption, among others.
+Surprisingly, homeowners insurance doesn’t cover the following four disasters: floods, earthquakes, sewer backup, and maintenance damage-meaning the lack of maintenance in your home, such as mold or insect infestation. 
+Does earthquake insurance only cover damage from earthquakes? Well, yes, but it also provides specific features that aid you and your home’s protection. These include dwelling coverage, a policy that helps repair the physical structure of your home and all attached structures, such as a garage; personal property protection, which protects your TVs, computers, tablets, furniture, and other property inside your home; and it also pays for extra living expenses you and your family may need if you’re unable to live inside your home while it’s being repaired or rebuilt. In insurance terms, this is called “loss of use” protection. 
+Earthquake insurance covers damages that resulted directly from an earthquake, but it does not cover damages from other events that the earthquake might cause, such as fires or floods. The following is a quick breakdown of what earthquake insurance does and doesn’t cover.
+### What earthquake insurance covers:
+![](https://s3.amazonaws.com/s3.consumersadvocate.org/prd/docs/db/document/doc/1383/153d968d-60d8-4b5a-a0dc-06a185606e32.gif)
+  * ☑️ Dwelling damage
+  * ☑️ Damage from Attached structures to your dwelling
+  * ☑️ Loss of use expenses
+  * ☑️ Personal property damage
+
+
+### What earthquake insurance may cover:
+![](https://s3.amazonaws.com/s3.consumersadvocate.org/prd/docs/db/document/doc/1384/6ea9c881-103c-41a2-92e9-64dd64c02a4f.gif)
+  * • Cost to meet current building codes
+  * • Costs to stabilize the land under your home post-earthquake
+  * • Cost of debris removal
+  * • Masonry veneer
+
+
+### What earthquake insurance doesn’t cover:
+![](https://s3.amazonaws.com/s3.consumersadvocate.org/prd/docs/db/document/doc/1385/b509eb67-014c-4e1f-8618-b180f1d2bfba.gif)
+  * ☒ Damage from fire (covered by homeowner’s insurance)
+  * ☒ Damage from Floods (covered by flood insurance)
+  * ☒ Damage from land erosion or sinkholes
+  * ☒ Damage to vehicles (covered by car insurance)
+  * ☒ Previous dwelling damage
+
+
+### Do I need Earthquake Insurance?
+If you live in a state or an area with high earthquake probabilities, earthquake insurance is a must. Not only will it pay for your home when disaster strikes, but it will also give you peace of mind for years to come, as repairing or rebuilding your entire home might be a task you wouldn’t normally be able to afford out of pocket. Unfortunately, living in a state with a high risk of earthquakes also means that the premiums you’ll pay can be way higher than in states with lesser probabilities. For example, in California, one of the states with the[ highest history of earthquakes,](https://www.conservation.ca.gov/cgs/Pages/Earthquakes/earthquake-catalog.aspx) premiums range from $800 to $5,000 annually. With premiums so high in these places, getting earthquake insurance might seem like a fruitless endeavor, which is why [less than 10% of homeowners in](https://money.cnn.com/2014/08/25/pf/insurance/earthquake-insurance-cost/index.html) California have earthquake insurance. Is there a way to make earthquake insurance in these states cheaper? Well, through our research, we learned that the best way to reduce premium costs is to refrain from buying earthquake insurance as a separate policy, and instead opt to bundle it with your homeowners insurance. [Not only can you get a reduced quote overall](https://www.uphelp.org/does-bundling-your-insurance-policies-really-save-you-money), but you will also benefit from other discounts that the company might offer. Nonetheless, always remember to review these premium costs with your insurer to verify that you’re indeed saving money and not spending more. However, this shouldn’t demotivate you if you live in an earthquake-prone state, as the price is well worth the end result: if a disaster ever strikes, you’ll be sure that you, your family, and your home will be taken care of. 
+What about states that have lower chances of being struck by an earthquake? Well, if you live in a state with fewer probabilities of an earthquake, you could face two things: either your state won’t sell you earthquake insurance at all, or they will sell it to you at a more affordable price,[ at around $100 to $300 annually](https://www.usaa.com/inet/wc/advice-disaster-knowyourquake?akredirect=true#:~:text=According%20to%20Schirmers%2C%20for%20most,an%20average%20cost%20around%20%24800.). If you favor peace of mind, spending a little extra for earthquake insurance would be a great idea, as it only takes one rough earthquake to potentially damage your home.
+What are the states with higher chances of an earthquake, you might ask? Well, according to the 2008 United States Geological Survey’s (USGS) National Seismic[ Hazard Map](https://pubs.usgs.gov/of/2014/1091/), none of the 50 states are safe from an earthquake, but there are at least 16 states that have higher probabilities: Alaska, Arkansas, California, Hawaii, Idaho, Illinois, Kentucky, Missouri, Montana, Nevada, Oregon, South Carolina, Tennessee, Utah, Washington, and Wyoming. Conversely, there are eight states that have a very low earthquake risk: Florida, Iowa, Kansas, Louisiana, Michigan, Minnesota, North Dakota, and Wisconsin.
+Finally, if you live anywhere near a [fracking](https://www.bbc.com/news/uk-14432401) zone—even if you’re in a state that’s not naturally prone to seismic activity—you could experience an increased number of [induced earthquakes](https://www.usgs.gov/natural-hazards/earthquake-hazards/induced-earthquakes?qt-science_support_page_related_con=4#qt-science_support_page_related_con), and you should also consider getting insurance. Induced seismicity has increased the chances of earthquakes in states like[ Oklahoma](https://phys.org/news/2018-02-oklahoma-earthquakes-strongly-linked-wastewater.html), causing even the 5.8 magnitude[ Pawnee earthquake in 2016](https://earthquake.usgs.gov/earthquakes/eventpage/us10006jxs/executive). The practice has increased throughout the years, so there is a chance that more earthquakes will be generated in the future due to fracking.
+### Do I need Earthquake Insurance?
+![](https://s3.amazonaws.com/s3.consumersadvocate.org/prd/docs/db/document/doc/1375/bfa0d029-60a4-4138-9407-26f82ed43a53.jpg)
+#### States with higher chances of being hit by an earthquake:
+Alaska
+Arkansas
+California
+Hawaii
+Idaho
+Illinois
+Kentucky
+Missouri
+Montana
+Nevada
+Oregon
+South Carolina
+Tennessee
+Utah
+Washington
+Wyoming
+#### States with lower chances of being hit by an earthquake:
+Florida
+Iowa
+Kansas
+Louisiana
+Michigan
+Minnesota
+North Dakota
+Wisconsin
+![](https://s3.amazonaws.com/s3.consumersadvocate.org/prd/docs/db/document/doc/1380/2c943dff-f72a-4013-8206-e9d48a8be357.png)
+Source: [https://www.usgs.gov/](https://www.usgs.gov/media/images/2014-usgs-national-seismic-hazard-map)
+**Premiums:**
+There are a lot of variables that insurance companies juggle to establish your premium, so no matter the state or the house you live in, chances are that your premiums will differ greatly from others. Some of the factors that will determine your rate are: 
+### PREMIUMS VARY DEPENDING ON:
+![](https://s3.amazonaws.com/s3.consumersadvocate.org/prd/docs/db/document/doc/1387/16195593-4f2f-4ac2-9444-3b3737f941e2.png)
+• The state you live in  
+• Your home’s location  
+• Age of your home  
+• Material that your home is constructed from  
+• Size of your home  
+• Number of floors  
+• Your home’s foundation  
+• How much it costs to rebuild your home  
+• Your deductible(s)
+## What to Watch Out for With Earthquake Insurance
+### Earthquake insurance deductibles can be more expensive than homeowners
+When you set up a deductible with your homeowners insurance, you do so by agreeing on a dollar amount with your insurer. This is the amount of money you need to pay out of pocket before your insurance kicks in. For example, if you choose a $1,000 deductible for your homeowners, and your insurer determines that your home has an insured loss of $15,000, then you’d have to pay $1,000 and the insurer would cover the remaining $14,000. This isn’t the case with earthquake insurance, as deductibles are calculated on a percentage of your home’s insured value instead, making them more expensive. For example, let’s say that you choose a 10% deductible for your earthquake policy, and your home is insured for $100,000. In the event of an earthquake, if you want your insurance to cover the damage costs, you’d first have to pay 10% of $100,000, which would be $10,000.
+Deductible percentages vary per state and per insurance company, but they normally range from 10 to 25% of the coverage limit. Some companies offer deductibles as low as 5%, while others can be as high as 50%. It’s important that you and your insurer discuss the deductible amount that works best for you and your home. Higher deductibles can be great, since they translate to lower premiums, but if you’re unable to pay the high deductible that you and your insurer set, then your earthquake insurance would be useless. Why? Because you’d end up stuck paying an insurmountable amount before the insurance kicks in. If you can’t pay your deductible, your insurer won’t be able to help you with repair costs, so you’d be in trouble with or without insurance. 
+### Deductibles for dwelling and personal possession protection may differ
+With earthquake insurance, companies can set different deductibles for repairing your home and for personal possessions. This means that, if your home is affected by an earthquake, you’d have to pay each deductible separately before the insurance covers the rest, which can leave a huge dent on your wallet. For example, say that an earthquake ruins your home and the personal property within, and you have two separate 10% deductibles for both your dwelling and your personal property. If the coverage limits of your home and your personal property are $100,000 and $50,000, respectively, and the total damage for your dwelling and personal property are $30,000 and $20,000, you would have to pay 10% of each, or $10,000 for dwelling and $5,000 for personal property first, totaling at $15,000. For this reason, you should always ask your insurer how your earthquake insurance deductibles are calculated, as this might help you save more in the end. 
+### Companies usually wait 30 to 60 days after an earthquake to offer earthquake insurance
+The time to seek earthquake insurance should always be before an earthquake and not after. This is because, after an earthquake occurs, insurance companies wait around 30 to 60 days to offer insurance once more. The reason behind this is that, just like with a health insurance’s waiting period, this prevents customers from issuing false insurance claims. For example, say that an earthquake occurs, and your home is damaged, and you immediately seek earthquake insurance from a provider. If that waiting period wasn’t in place, you could easily file a claim to your insurer demanding reparations, even if the policy was bought after the earthquake. Setting a 30 to 60-day waiting period protects insurance providers from consumers who want to take advantage of these situations.
+### The magnitude of an earthquake doesn’t necessarily correlate to the costs of damages
+When it comes to earthquakes, a higher magnitude might not translate directly to higher property losses overall. For example, in 1994, [a 6.7 earthquake hit Northridge, Los Angeles](https://www.history.com/topics/natural-disasters-and-environment/1994-northridge-earthquake), causing an estimated $23.2 billion in insured losses, while in 1906, a 7.9 earthquake hit San Francisco, California, [causing only 1.7 billion](https://www.iii.org/article/us-earthquake-history). 
+You might wonder, then, how are the magnitude and the total damage of your home interrelated? It all comes down to four characteristics: oscillation caused by the earthquake, frequency, duration, and building type/size. Earthquakes produce oscillations or repeated vibrations that turn into waves, which spread through the earth, creating the shaking commonly experienced during the event. But these vibrations come in varying amplitudes and frequencies, and depending on the size of the structure and the ground which is built on, low amplitude/high-frequency waves and high amplitude/low-frequency waves will create different reactions. For small buildings, earthquakes with an oscillation that last less than a second per wave will cause high amounts of damage to the structure, while taller buildings won’t even feel it.[ The same applies to taller buildings](https://www.youtube.com/watch?v=6IJ99phNArM): higher oscillation periods will be catastrophic for taller buildings, but not for smaller homes. 
+![](https://s3.amazonaws.com/s3.consumersadvocate.org/prd/docs/db/document/doc/1382/fb6d0fc5-3049-4641-9461-f7c3c91916d8.gif)
+### Keep an eye for structural damages
+After an earthquake, you should always check for damages. Some might be visible—such as cracks on your walls—while others aren’t as obvious. To help you decipher the structural damages that are actually dangerous, we’ve come up with this graph that shows you the ins and outs of structural damage.
+CRACKS  
+How to identify which are and aren’t hazardous
+WHERE TO LOOK:
+Structural walls
+Load-bearing walls
+Columns
+Beams or girders
+Home’s foundation
+CRACKS ARE HAZARDOUS IF:
+![](https://s3.amazonaws.com/s3.consumersadvocate.org/prd/docs/db/document/doc/1391/f106adc0-67f7-4ba4-a977-513b313e58b4.png)  
+Their thickness is **larger than half a centimeter**
+![](https://s3.amazonaws.com/s3.consumersadvocate.org/prd/docs/db/document/doc/1392/05428912-072f-4b31-a435-1b2d1fb71e2f.png)  
+**20% of your home** show signs of cracks
+![](https://s3.amazonaws.com/s3.consumersadvocate.org/prd/docs/db/document/doc/1393/a49f80f0-fd68-4bf8-af40-5415d53ded65.png)  
+They are diagonal and **form a U or an X shape**
+![](https://s3.amazonaws.com/s3.consumersadvocate.org/prd/docs/db/document/doc/1394/2090466e-b0fd-47e9-a0fa-048e147662bb.png)  
+They are **parallel to your home’s flooring**
+![](https://s3.amazonaws.com/s3.consumersadvocate.org/prd/docs/db/document/doc/1395/c75b2043-abba-4bd7-9629-76f27ee7e62a.png)  
+They are in areas that **support the building**
+* * *
+CRACKS ARE HARMLESS IF:
+![](https://s3.amazonaws.com/s3.consumersadvocate.org/prd/docs/db/document/doc/1390/85a4dd2a-ad97-4862-9c14-b243597e07ee.png)  
+They don’t affect the **home’s structure**
+![](https://s3.amazonaws.com/s3.consumersadvocate.org/prd/docs/db/document/doc/1389/ce30fb30-5af7-4f48-8452-8776b0a2aa22.png)  
+They are between the **union of two walls or in architectural finishes**
+![](https://s3.amazonaws.com/s3.consumersadvocate.org/prd/docs/db/document/doc/1388/ec03bc9d-0f07-42d4-9389-d50415361a58.png)  
+They are found on **plaster or on top of wall paint**
+* * *
+## FAQs about Earthquake Insurance
+* * *
+#### Is earthquake insurance worth it?
+Whether earthquake insurance is worth it or not will depend on the state you live in. If you’re in a state where there’s little to no earthquake activity, chances are insurance companies won’t even have earthquake insurance available. However, if you live in a state with a history of earthquakes, or where tremors are more common, getting this type of insurance would be a great investment, for it saves you from having to pay out of pocket if your home or personal property is damaged. However, earthquake insurance premiums on tremor-prone states can be very expensive, so if you’re interested in insuring your home, you can save by increasing your deductible and by bundling earthquake insurance with homeowners’. 
+* * *
+#### How much does earthquake insurance cost?
+This will depend on the state you live in. States with a history of earthquakes will always have higher premiums, so they’ll be more expensive than states who suffer less from earthquakes. For example, in California, a state with a great history of earthquakes, the average premium cost of earthquake insurance ranges from $800 to $5,000 annually, while states with little seismic activity who have fewer earthquake cases can typically get earthquake insurance at around $300 per year.
+* * *
+#### How does the claim process work?
+First, you should take pictures of the damage in your property and keep a record of these. You should also keep receipts for food and lodging if you must live elsewhere while your home is being repaired or rebuilt.
+Next, you need to notify your insurance provider of the earthquake and report any visible damage. It’s important to remember that visible damage isn’t necessarily severe and that the most dangerous damages are those that aren’t typically seen, such as damage to the foundation of the home. Finally, you should schedule an appointment for a claims adjuster to inspect the damage to your home. The adjuster will provide an initial assessment of the damages, and if you disagree, you can try getting a second opinion through a licensed engineer or structural contractor, or through a public adjuster. To check for public insurance adjusters, you can inquire in your state’s department of insurance.
+* * *
+#### What is and isn’t covered in Earthquake Insurance?
+Earthquake insurance covers the following: damages and losses to your home and attached buildings (such as a garage) caused by the earthquake, damages, and losses to personal property inside your home (such as laptops and furniture), and additional living expenses (ALE) if you and your family aren’t able to live inside the home while it’s being repaired. It does not usually cover floods, fires, sinkholes, landslides, or any other catastrophic side-effects that result from an earthquake. This is because homeowners insurance usually covers these disasters, although flood insurance is offered as a separate policy. 
+* * *
+Advertiser Disclosure
+###### At ConsumersAdvocate.org, we take transparency seriously.
+x
+To that end, you should know that many advertisers pay us a fee if you purchase products after clicking links or calling phone numbers on our website. The following companies are our partners in Earthquake Insurance: If you choose to click on the links on our site, we may receive compensation. If you don't click the links on our site or use the phone numbers listed on our site we will not be compensated. Ultimately the choice is yours. The analyses and opinions on our site are our own and our editors and staff writers are instructed to maintain editorial integrity. Our brand, ConsumersAdvocate.org, stands for accuracy and helpful information. We know we can only be successful if we take your trust in us seriously! To find out more about how we make money and our editorial process, [click here. ](https://www.consumersadvocate.org/ranking?v=earthquake-insurance)If you have any specific questions while considering which product or service you may buy, feel free to reach out to us anytime. 
+* * *
+Product name, logo, brands, and other trademarks featured or referred to within our site are the property of their respective trademark holders. Any reference in this website to third party trademarks is to identify the corresponding third party goods and/or services.
+Table of Contents
+  * [How We Found The Best Earthquake Insurance](https://www.consumersadvocate.org/earthquake-insurance#toc-factors-overview)
+  * [Our Top Picks: Earthquake Insurance Reviews](https://www.consumersadvocate.org/earthquake-insurance#toc-mini-reviews)
+    * [Farmers review](https://www.consumersadvocate.org/earthquake-insurance#toc-farmers)
+    * [Allstate review](https://www.consumersadvocate.org/earthquake-insurance#toc-allstate)
+    * [State Farm review](https://www.consumersadvocate.org/earthquake-insurance#toc-state-farm)
+    * [Nationwide review](https://www.consumersadvocate.org/earthquake-insurance#toc-nationwide)
+    * [GeoVera review](https://www.consumersadvocate.org/earthquake-insurance#toc-geo-vera)
+  * [Further Insight into Our Methodology](https://www.consumersadvocate.org/earthquake-insurance#toc-methodology)
+    * [Coverage & Discounts](https://www.consumersadvocate.org/earthquake-insurance#toc-coverage-and-discounts)
+    * [Financial Strength ](https://www.consumersadvocate.org/earthquake-insurance#toc-financial-strength)
+    * [Customer Support](https://www.consumersadvocate.org/earthquake-insurance#toc-customer-experience)
+  * [Helpful Information about Earthquake Insurance](https://www.consumersadvocate.org/earthquake-insurance#toc-overview)
+  * [What to Watch Out for With Earthquake Insurance](https://www.consumersadvocate.org/earthquake-insurance#toc-h2-u9h067)
+  * [FAQs about Earthquake Insurance](https://www.consumersadvocate.org/earthquake-insurance#toc-faqs)
+
+
+Who We Are
+  * [About Us](https://www.consumersadvocate.org/about)
+  * [Contact](https://www.consumersadvocate.org/contact)
+  * [Careers](https://www.consumersadvocate.org/careers)
+  * [Feature Articles](https://www.consumersadvocate.org/features)
+  * [The Advocacy Blog](https://www.consumersadvocate.org/advocacy)
+  * [Privacy Policy](https://www.consumersadvocate.org/privacy)
+  * [Terms & Conditions](https://www.consumersadvocate.org/terms)
+  * [Do Not Sell My Personal Information](https://www.adpractitioners.com/eu-data-request?site=consumersadvocate.org)
+  * [Licenses & Disclosures](https://www.consumersadvocate.org/insurance-licenses)
+  * [Accessibility](https://www.consumersadvocate.org/accessibility)
+  * [Sitemap](https://www.consumersadvocate.org/sitemap)
+
+
+  * [](https://www.instagram.com/consumersadvocate_/)[](https://www.linkedin.com/company/consumersadvocate/)[](https://www.facebook.com/ConsumersAdvocate/)
+
+
+Popular Categories
+  * [Car Insurance](https://www.consumersadvocate.org/car-insurance)
+  * [Home Security Systems](https://www.consumersadvocate.org/home-security)
+  * [Home Warranties](https://www.consumersadvocate.org/home-warranties)
+  * [Life Insurance](https://www.consumersadvocate.org/life-insurance)
+  * [Medical Alerts](https://www.consumersadvocate.org/medical-alerts)
+  * [Personal Loans](https://www.consumersadvocate.org/personal-loans)
+  * [Pet Insurance](https://www.consumersadvocate.org/pet-insurance)
+  * [Tax Relief](https://www.consumersadvocate.org/tax-relief)
+
+
+Addresses
+**Physical address:**  
+Money Group, LLC  
+Distrito T-Mobile  
+250 Convention Blvd  
+San Juan, PR 00907
+**Mailing address:**  
+Money Group, LLC  
+Metro Office Park 7 calle 1 Suite 204  
+Guaynabo, PR 00968
+* * *
+Invitations for insurance applications on services we own and operate are made through Money Group Ins, LLC, an insurance agent/producer, only where licensed. All license numbers are available [here](https://www.consumersadvocate.org/insurance-licenses).
+* * *
+Product name, logo, brands, and other trademarks featured or referred to within our site are the property of their respective trademark holders. Any reference in this website to third party trademarks is to identify the corresponding third party goods and/or services.
+2025 © All Rights Reserved

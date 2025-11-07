@@ -1,0 +1,514 @@
+![](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E) [Skip to content](https://www.nstlaw.com/faqs/what-is-the-illinois-statute-of-limitations-for-personal-injury/#content)
+Free Consultation | "NST is the Way to Go!"
+[ 800-529-4004 ](tel:800-529-4004)
+[ ![NST logo](https://www.nstlaw.com/wp-content/uploads/2024/07/NSTLogo_InjuryAttysINVERSE_25_png.png) ](https://www.nstlaw.com/)
+  * [ABOUT US](https://www.nstlaw.com/about-us/)
+    * [Our Team](https://www.nstlaw.com/our-team/)
+    * [Community Involvement](https://www.nstlaw.com/community-involvement/)
+    * [Communities Served](https://www.nstlaw.com/communities-served/)
+    * [Testimonials](https://www.nstlaw.com/testimonials/)
+    * [Our Client Stories](https://www.nstlaw.com/stories/)
+      * [How Has NST Law Helped You With Your Car Accident Case?](https://www.nstlaw.com/stories/how-has-nst-law-helped-you-with-your-car-accident-case/)
+      * [How Did You Hear About NST Law?](https://www.nstlaw.com/stories/how-did-you-hear-about-nst-law/)
+      * [What Was the Highlight of Your Experience With NST Law? (Vanisia)](https://www.nstlaw.com/stories/what-was-the-highlight-of-your-experience-with-nst-law-vanisia/)
+      * [What Was the Highlight of Your Experience With NST Law? (Torsa)](https://www.nstlaw.com/stories/what-was-the-highlight-of-your-experience-with-nst-law/)
+    * [Six Pillars of NST Law](https://www.nstlaw.com/the-six-pillars-of-nst-law/)
+    * [What Is It Like to Work with NST Law?](https://www.nstlaw.com/about-us/what-is-it-like-to-work-with-nst-law/)
+  * [PRACTICE AREAS](https://www.nstlaw.com/injury-cases/)
+    * [Personal Injury](https://www.nstlaw.com/)
+      * [Memphis Personal Injury](https://www.nstlaw.com/memphis/)
+      * [Knoxville Personal Injury](https://www.nstlaw.com/knoxville/)
+      * [Jackson, TN Personal Injury](https://www.nstlaw.com/jackson-tn/)
+      * [Nashville Personal Injury](https://www.nstlaw.com/nashville/)
+      * [Columbus Personal Injury](https://www.nstlaw.com/columbus-ms/)
+      * [Tupelo, MS Personal Injury​](https://www.nstlaw.com/tupelo/)
+      * [Jackson, MS Personal Injury](https://www.nstlaw.com/jackson-ms/)
+      * [Jonesboro Personal Injury](https://www.nstlaw.com/jonesboro/)
+      * [Little Rock Personal Injury](https://www.nstlaw.com/little-rock/)
+      * [Cape Girardeau Personal Injury](https://www.nstlaw.com/cape-girardeau/)
+      * [St. Louis Personal Injury](https://www.nstlaw.com/st-louis/)
+      * [Belleville Personal Injury](https://www.nstlaw.com/belleville/)
+    * Car Accidents
+      * [Memphis Car Accident](https://www.nstlaw.com/memphis/car-accident-lawyers/)
+        * [Recent Car Accidents in Memphis](https://www.nstlaw.com/memphis/car-accident-lawyers/recent-accidents-memphis/)
+      * [Knoxville Car Accidents](https://www.nstlaw.com/knoxville/car-accident-lawyers/)
+      * [Jackson, TN Car Accidents](https://www.nstlaw.com/jackson-tn/car-accident-lawyers/)
+      * [Nashville Car Accidents](https://www.nstlaw.com/nashville/car-accident-lawyers/)
+      * [Tupelo Car Accidents](https://www.nstlaw.com/tupelo/car-accident-lawyers/)
+      * [Jackson, MS Car Accidents](https://www.nstlaw.com/jackson-ms/car-accident-lawyers/)
+      * [Columbus, MS Car Accidents](https://www.nstlaw.com/columbus-ms/car-accident-lawyers/)
+      * [Jonesboro Car Accidents](https://www.nstlaw.com/jonesboro/car-accident-lawyers/)
+      * [Little Rock Car Accidents](https://www.nstlaw.com/little-rock/car-accident-lawyers/)
+      * [Cape Girardeau Car Accidents](https://www.nstlaw.com/cape-girardeau/car-accident-lawyers/)
+      * [St. Louis Car Accidents](https://www.nstlaw.com/st-louis/car-accident-lawyers/)
+      * [Belleville Car Accidents](https://www.nstlaw.com/belleville/car-accident-lawyers/)
+    * Bus Accidents
+      * [Memphis Bus Accidents](https://www.nstlaw.com/memphis/bus-accident-lawyers/)
+      * [Knoxville Bus Accidents](https://www.nstlaw.com/knoxville/bus-accident-lawyers/)
+      * [Jackson, TN Bus Accidents](https://www.nstlaw.com/jackson-tn/bus-accident-lawyers/)
+      * [Nashville Bus Accidents](https://www.nstlaw.com/nashville/bus-accident-lawyers/)
+      * [Tupelo Bus Accidents](https://www.nstlaw.com/tupelo/bus-accident-lawyers/)
+      * [Jackson, MS Bus Accidents](https://www.nstlaw.com/jackson-ms/bus-accident-lawyers/)
+      * [Jonesboro Bus Accidents](https://www.nstlaw.com/jonesboro/bus-accident-lawyers/)
+      * [Little Rock Bus Accidents](https://www.nstlaw.com/little-rock/bus-accident-lawyers/)
+      * [Cape Girardeau Bus Accidents](https://www.nstlaw.com/cape-girardeau/bus-accident-lawyers/)
+    * Truck Accidents
+      * [Memphis Truck Accidents](https://www.nstlaw.com/memphis/truck-accident-lawyers/)
+      * [Knoxville Truck Accidents](https://www.nstlaw.com/knoxville/truck-accident-lawyers/)
+      * [Jackson, TN Truck Accidents](https://www.nstlaw.com/jackson-tn/truck-accident-lawyers/)
+      * [Nashville Truck Accidents](https://www.nstlaw.com/nashville/truck-accident-lawyers/)
+      * [Tupelo Truck Accidents](https://www.nstlaw.com/tupelo/truck-accident-lawyers/)
+      * [Jackson, MS Truck Accidents](https://www.nstlaw.com/jackson-ms/truck-accident-lawyers/)
+      * [Columbus, MS Truck Accidents](https://www.nstlaw.com/columbus-ms/truck-accident-lawyers/)
+      * [Jonesboro Truck Accidents](https://www.nstlaw.com/jonesboro/truck-accident-lawyers/)
+      * [Little Rock Truck Accidents](https://www.nstlaw.com/little-rock/truck-accident-lawyers/)
+      * [Cape Girardeau Truck Accidents](https://www.nstlaw.com/cape-girardeau/truck-accident-lawyers/)
+      * [St. Louis Truck Accidents](https://www.nstlaw.com/st-louis/truck-accident-lawyers/)
+      * [Belleville Truck Accidents](https://www.nstlaw.com/belleville/truck-accident-lawyers/)
+    * Motorcycle Accident
+      * [Memphis Motorcycle Accidents](https://www.nstlaw.com/memphis/motorcycle-accident-lawyers/)
+      * [Knoxville Motorcycle Accidents](https://www.nstlaw.com/knoxville/motorcycle-accident-lawyers/)
+      * [Jackson, TN Motorcycle Accidents](https://www.nstlaw.com/jackson-tn/motorcycle-accident-lawyers/)
+      * [Nashville Motorcycle Accidents](https://www.nstlaw.com/nashville/motorcycle-accident-lawyers/)
+      * [Tupelo Motorcycle Accidents](https://www.nstlaw.com/tupelo/motorcycle-accident-lawyers/)
+      * [Jackson, MS Motorcycle Accidents](https://www.nstlaw.com/jackson-ms/motorcycle-accident-lawyers/)
+      * [Columbus, MS Motorcycle Accidents](https://www.nstlaw.com/columbus-ms/motorcycle-accident-lawyers/)
+      * [Jonesboro Motorcycle Accidents](https://www.nstlaw.com/jonesboro/motorcycle-accident-lawyers/)
+      * [Little Rock Motorcycle Accidents](https://www.nstlaw.com/little-rock/motorcycle-accident-lawyers/)
+      * [Cape Girardeau Motorcycle Accidents](https://www.nstlaw.com/cape-girardeau/motorcycle-accident-lawyers/)
+      * [St. Louis Motorcycle Accidents](https://www.nstlaw.com/st-louis/motorcycle-accident-lawyers/)
+      * [Belleville Motorcycle Accidents](https://www.nstlaw.com/belleville/motorcycle-accident-lawyers/)
+    * Wrongful Death
+      * [Memphis Wrongful Death](https://www.nstlaw.com/memphis/wrongful-death-lawyers/)
+      * [Knoxville Wrongful Death](https://www.nstlaw.com/knoxville/wrongful-death-lawyers/)
+      * [Jackson, TN Wrongful Death](https://www.nstlaw.com/jackson-tn/wrongful-death-lawyers/)
+      * [Nashville Wrongful Death](https://www.nstlaw.com/nashville/wrongful-death-lawyers/)
+      * [Tupelo Wrongful Death](https://www.nstlaw.com/tupelo/wrongful-death-lawyers/)
+      * [Jackson, MS Wrongful Death](https://www.nstlaw.com/jackson-ms/wrongful-death-lawyers/)
+      * [Columbus, MS Wrongful Death](https://www.nstlaw.com/columbus-ms/wrongful-death-lawyers/)
+      * [Jonesboro Wrongful Death](https://www.nstlaw.com/jonesboro/wrongful-death-lawyers/)
+      * [Little Rock Wrongful Death](https://www.nstlaw.com/little-rock/wrongful-death-lawyers/)
+      * [Cape Girardeau Wrongful Death](https://www.nstlaw.com/cape-girardeau/wrongful-death-lawyers/)
+      * [St. Louis Wrongful Death](https://www.nstlaw.com/st-louis/wrongful-death-lawyers/)
+      * [Belleville Wrongful Death](https://www.nstlaw.com/belleville/wrongful-death-lawyers/)
+    * Workers’ Compensation
+      * [Memphis Workers’ Compensation](https://www.nstlaw.com/memphis/workers-compensation-lawyers/)
+      * [Knoxville Workers’ Compensation](https://www.nstlaw.com/knoxville/workers-compensation-lawyers/)
+      * [Jackson, TN Workers’ Compensation](https://www.nstlaw.com/jackson-tn/workers-compensation-lawyers/)
+      * [Nashville Workers’ Compensation](https://www.nstlaw.com/nashville/workers-compensation-lawyers/)
+      * [Tupelo Workers’ Compensation](https://www.nstlaw.com/tupelo/workers-compensation-lawyers/)
+      * [Columbus, MS Workers’ Compensation](https://www.nstlaw.com/columbus-ms/workers-compensation-lawyers/)
+      * [Cape Girardeau Workers’ Compensation](https://www.nstlaw.com/cape-girardeau/workers-compensation-lawyers/)
+      * [St. Louis Workers’ Compensation](https://www.nstlaw.com/st-louis/workers-compensation-lawyers/)
+    * Social Security Disability
+      * [Memphis Social Security Disability](https://www.nstlaw.com/memphis/disability-lawyers/)
+      * [Knoxville Social Security Disability](https://www.nstlaw.com/knoxville/disability-lawyers/)
+      * [Jackson, TN Social Security Disability](https://www.nstlaw.com/jackson-tn/disability-lawyers/)
+      * [Little Rock Social Security Disability](https://www.nstlaw.com/little-rock/disability-lawyers/)
+      * [Nashville Social Security Disability](https://www.nstlaw.com/nashville/disability-lawyers/)
+    * Medical Malpractice
+      * [Memphis Medical Malpractice](https://www.nstlaw.com/memphis/medical-malpractice-lawyers/)
+      * [Knoxville Medical Malpractice](https://www.nstlaw.com/knoxville/medical-malpractice-lawyers/)
+      * [Nashville Medical Malpractice](https://www.nstlaw.com/nashville/medical-malpractice-lawyers/)
+      * [Jackson, TN Medical Malpractice](https://www.nstlaw.com/jackson-tn/medical-malpractice-lawyers/)
+      * [Jackson, MS Medical Malpractice](https://www.nstlaw.com/jackson-ms/medical-malpractice-lawyers/)
+      * [Jonesboro Medical Malpractice](https://www.nstlaw.com/jonesboro/medical-malpractice-lawyers/)
+      * [Little Rock Medical Malpractice](https://www.nstlaw.com/little-rock/medical-malpractice-lawyers/)
+    * [Prescription Drugs & Medications](https://www.nstlaw.com/prescription-drugs-medications/)
+      * [Depo-Provera Lawsuit Lawyers](https://www.nstlaw.com/prescription-drugs-medications/depo-provera/)
+      * [Belviq](https://www.nstlaw.com/prescription-drugs-medications/belviq-lawyers/)
+      * [Elmiron](https://www.nstlaw.com/prescription-drugs-medications/elmiron-lawyers/)
+      * [Invokana](https://www.nstlaw.com/prescription-drugs-medications/invokana-lawyers/)
+      * [Low Testosterone](https://www.nstlaw.com/prescription-drugs-medications/low-testosterone-lawyers/)
+      * [Ozempic](https://www.nstlaw.com/prescription-drugs-medications/ozempic-lawsuit-lawyer/)
+      * [Zantac](https://www.nstlaw.com/prescription-drugs-medications/zantac-lawyers/)
+    * [Defective Medical Device](https://www.nstlaw.com/defective-medical-devices/)
+      * [Philips CPAP](https://www.nstlaw.com/defective-medical-devices/philips-cpap-lawsuit/)
+      * [Hernia Mesh](https://www.nstlaw.com/defective-medical-devices/hernia-mesh-lawyers/)
+      * [Ethicon Physiomesh](https://www.nstlaw.com/defective-medical-devices/ethicon-physiomesh-lawyers/)
+    * [Product Liability Lawyers](https://www.nstlaw.com/product-liability-lawyers/)
+      * [L’Oreal Hair Straightener](https://www.nstlaw.com/product-liability-lawyers/loreal-hair-straightener/)
+      * [Vape Battery Explosion](https://www.nstlaw.com/product-liability-lawyers/vape-battery-explosion/)
+      * [Airbag Defect](https://www.nstlaw.com/product-liability-lawyers/airbag-defects/)
+      * [Car Seat Defects](https://www.nstlaw.com/product-liability-lawyers/car-seat-defects/)
+      * [Infant Formula (NEC)](https://www.nstlaw.com/product-liability-lawyers/infant-formula-nec/)
+      * [Paraquat](https://www.nstlaw.com/product-liability-lawyers/paraquat/)
+      * [Roundup Cancer](https://www.nstlaw.com/product-liability-lawyers/roundup/)
+    * [View More](https://www.nstlaw.com/injury-cases/)
+  * [VERDICTS & SETTLEMENTS](https://www.nstlaw.com/verdicts-settlements/)
+  * [REFERRALS](https://www.nstlaw.com/referrals/)
+    * [Referrals](https://www.nstlaw.com/referrals/)
+  * [RESOURCES](https://www.nstlaw.com/faqs/what-is-the-illinois-statute-of-limitations-for-personal-injury/)
+    * [Blogs](https://www.nstlaw.com/blog/)
+      * [Auto Accident Articles](https://www.nstlaw.com/blog/category/auto-accident/)
+      * [Community Involvement Articles](https://www.nstlaw.com/blog/category/community-involvement/)
+      * [Federal Regulations](https://www.nstlaw.com/blog/category/federal-regulations/)
+      * [Nursing Home Neglect Articles](https://www.nstlaw.com/blog/category/nursing-home-neglect/)
+      * [Personal Injury Articles](https://www.nstlaw.com/blog/category/personal-injury/)
+      * [Truck Accidents Articles](https://www.nstlaw.com/blog/category/truck-accidents/)
+      * [Workers’ Compensation Articles](https://www.nstlaw.com/blog/category/workers-compensation/)
+    * [FAQS](https://www.nstlaw.com/faqs/)
+      * [Auto Accident FAQs](https://www.nstlaw.com/blog/faq-category/auto-accident-faqs/)
+      * [Car Accident FAQs](https://www.nstlaw.com/blog/faq-category/car-accident-faqs/)
+      * [General Personal Injury FAQs](https://www.nstlaw.com/blog/faq-category/general-personal-injury-faqs/)
+        * [Additional FAQs](https://www.nstlaw.com/blog/faq-category/additional-faqs/)
+      * [Social Security Disability FAQs](https://www.nstlaw.com/blog/faq-category/social-security-disability-faqs/)
+      * [Workers’ Compensation FAQs](https://www.nstlaw.com/blog/faq-category/workers-compensation-faqs/)
+    * [Child Safety](https://www.nstlaw.com/guides/child-safety/)
+    * [Guides](https://www.nstlaw.com/guides/)
+    * [Video Gallery](https://www.nstlaw.com/video/)
+  * [LOCATIONS](https://www.nstlaw.com/office-locations/)
+    * [Memphis](https://www.nstlaw.com/memphis/office/)
+    * [Knoxville](https://www.nstlaw.com/knoxville/office/)
+    * [Jackson, TN](https://www.nstlaw.com/jackson-tn/)
+    * [Nashville](https://www.nstlaw.com/nashville/office/)
+    * [Columbus, MS](https://www.nstlaw.com/columbus-ms/)
+    * [Tupelo](https://www.nstlaw.com/tupelo/office/)
+    * [Jackson, MS](https://www.nstlaw.com/jackson-ms/office/)
+    * [Jonesboro](https://www.nstlaw.com/jonesboro/office/)
+    * [Little Rock](https://www.nstlaw.com/little-rock/office/)
+    * [Cape Girardeau](https://www.nstlaw.com/cape-girardeau/office/)
+    * [St Louis](https://www.nstlaw.com/st-louis/)
+    * [Belleville](https://www.nstlaw.com/belleville/)
+  * [CONTACT US](https://www.nstlaw.com/contact-us/)
+
+
+  * [ABOUT US](https://www.nstlaw.com/about-us/)
+    * [Our Team](https://www.nstlaw.com/our-team/)
+    * [Community Involvement](https://www.nstlaw.com/community-involvement/)
+    * [Communities Served](https://www.nstlaw.com/communities-served/)
+    * [Testimonials](https://www.nstlaw.com/testimonials/)
+    * [Our Client Stories](https://www.nstlaw.com/stories/)
+      * [How Has NST Law Helped You With Your Car Accident Case?](https://www.nstlaw.com/stories/how-has-nst-law-helped-you-with-your-car-accident-case/)
+      * [How Did You Hear About NST Law?](https://www.nstlaw.com/stories/how-did-you-hear-about-nst-law/)
+      * [What Was the Highlight of Your Experience With NST Law? (Vanisia)](https://www.nstlaw.com/stories/what-was-the-highlight-of-your-experience-with-nst-law-vanisia/)
+      * [What Was the Highlight of Your Experience With NST Law? (Torsa)](https://www.nstlaw.com/stories/what-was-the-highlight-of-your-experience-with-nst-law/)
+    * [Six Pillars of NST Law](https://www.nstlaw.com/the-six-pillars-of-nst-law/)
+    * [What Is It Like to Work with NST Law?](https://www.nstlaw.com/about-us/what-is-it-like-to-work-with-nst-law/)
+  * [PRACTICE AREAS](https://www.nstlaw.com/injury-cases/)
+    * [Personal Injury](https://www.nstlaw.com/)
+      * [Memphis Personal Injury](https://www.nstlaw.com/memphis/)
+      * [Knoxville Personal Injury](https://www.nstlaw.com/knoxville/)
+      * [Jackson, TN Personal Injury](https://www.nstlaw.com/jackson-tn/)
+      * [Nashville Personal Injury](https://www.nstlaw.com/nashville/)
+      * [Columbus Personal Injury](https://www.nstlaw.com/columbus-ms/)
+      * [Tupelo, MS Personal Injury​](https://www.nstlaw.com/tupelo/)
+      * [Jackson, MS Personal Injury](https://www.nstlaw.com/jackson-ms/)
+      * [Jonesboro Personal Injury](https://www.nstlaw.com/jonesboro/)
+      * [Little Rock Personal Injury](https://www.nstlaw.com/little-rock/)
+      * [Cape Girardeau Personal Injury](https://www.nstlaw.com/cape-girardeau/)
+      * [St. Louis Personal Injury](https://www.nstlaw.com/st-louis/)
+      * [Belleville Personal Injury](https://www.nstlaw.com/belleville/)
+    * Car Accidents
+      * [Memphis Car Accident](https://www.nstlaw.com/memphis/car-accident-lawyers/)
+        * [Recent Car Accidents in Memphis](https://www.nstlaw.com/memphis/car-accident-lawyers/recent-accidents-memphis/)
+      * [Knoxville Car Accidents](https://www.nstlaw.com/knoxville/car-accident-lawyers/)
+      * [Jackson, TN Car Accidents](https://www.nstlaw.com/jackson-tn/car-accident-lawyers/)
+      * [Nashville Car Accidents](https://www.nstlaw.com/nashville/car-accident-lawyers/)
+      * [Tupelo Car Accidents](https://www.nstlaw.com/tupelo/car-accident-lawyers/)
+      * [Jackson, MS Car Accidents](https://www.nstlaw.com/jackson-ms/car-accident-lawyers/)
+      * [Columbus, MS Car Accidents](https://www.nstlaw.com/columbus-ms/car-accident-lawyers/)
+      * [Jonesboro Car Accidents](https://www.nstlaw.com/jonesboro/car-accident-lawyers/)
+      * [Little Rock Car Accidents](https://www.nstlaw.com/little-rock/car-accident-lawyers/)
+      * [Cape Girardeau Car Accidents](https://www.nstlaw.com/cape-girardeau/car-accident-lawyers/)
+      * [St. Louis Car Accidents](https://www.nstlaw.com/st-louis/car-accident-lawyers/)
+      * [Belleville Car Accidents](https://www.nstlaw.com/belleville/car-accident-lawyers/)
+    * Bus Accidents
+      * [Memphis Bus Accidents](https://www.nstlaw.com/memphis/bus-accident-lawyers/)
+      * [Knoxville Bus Accidents](https://www.nstlaw.com/knoxville/bus-accident-lawyers/)
+      * [Jackson, TN Bus Accidents](https://www.nstlaw.com/jackson-tn/bus-accident-lawyers/)
+      * [Nashville Bus Accidents](https://www.nstlaw.com/nashville/bus-accident-lawyers/)
+      * [Tupelo Bus Accidents](https://www.nstlaw.com/tupelo/bus-accident-lawyers/)
+      * [Jackson, MS Bus Accidents](https://www.nstlaw.com/jackson-ms/bus-accident-lawyers/)
+      * [Jonesboro Bus Accidents](https://www.nstlaw.com/jonesboro/bus-accident-lawyers/)
+      * [Little Rock Bus Accidents](https://www.nstlaw.com/little-rock/bus-accident-lawyers/)
+      * [Cape Girardeau Bus Accidents](https://www.nstlaw.com/cape-girardeau/bus-accident-lawyers/)
+    * Truck Accidents
+      * [Memphis Truck Accidents](https://www.nstlaw.com/memphis/truck-accident-lawyers/)
+      * [Knoxville Truck Accidents](https://www.nstlaw.com/knoxville/truck-accident-lawyers/)
+      * [Jackson, TN Truck Accidents](https://www.nstlaw.com/jackson-tn/truck-accident-lawyers/)
+      * [Nashville Truck Accidents](https://www.nstlaw.com/nashville/truck-accident-lawyers/)
+      * [Tupelo Truck Accidents](https://www.nstlaw.com/tupelo/truck-accident-lawyers/)
+      * [Jackson, MS Truck Accidents](https://www.nstlaw.com/jackson-ms/truck-accident-lawyers/)
+      * [Columbus, MS Truck Accidents](https://www.nstlaw.com/columbus-ms/truck-accident-lawyers/)
+      * [Jonesboro Truck Accidents](https://www.nstlaw.com/jonesboro/truck-accident-lawyers/)
+      * [Little Rock Truck Accidents](https://www.nstlaw.com/little-rock/truck-accident-lawyers/)
+      * [Cape Girardeau Truck Accidents](https://www.nstlaw.com/cape-girardeau/truck-accident-lawyers/)
+      * [St. Louis Truck Accidents](https://www.nstlaw.com/st-louis/truck-accident-lawyers/)
+      * [Belleville Truck Accidents](https://www.nstlaw.com/belleville/truck-accident-lawyers/)
+    * Motorcycle Accident
+      * [Memphis Motorcycle Accidents](https://www.nstlaw.com/memphis/motorcycle-accident-lawyers/)
+      * [Knoxville Motorcycle Accidents](https://www.nstlaw.com/knoxville/motorcycle-accident-lawyers/)
+      * [Jackson, TN Motorcycle Accidents](https://www.nstlaw.com/jackson-tn/motorcycle-accident-lawyers/)
+      * [Nashville Motorcycle Accidents](https://www.nstlaw.com/nashville/motorcycle-accident-lawyers/)
+      * [Tupelo Motorcycle Accidents](https://www.nstlaw.com/tupelo/motorcycle-accident-lawyers/)
+      * [Jackson, MS Motorcycle Accidents](https://www.nstlaw.com/jackson-ms/motorcycle-accident-lawyers/)
+      * [Columbus, MS Motorcycle Accidents](https://www.nstlaw.com/columbus-ms/motorcycle-accident-lawyers/)
+      * [Jonesboro Motorcycle Accidents](https://www.nstlaw.com/jonesboro/motorcycle-accident-lawyers/)
+      * [Little Rock Motorcycle Accidents](https://www.nstlaw.com/little-rock/motorcycle-accident-lawyers/)
+      * [Cape Girardeau Motorcycle Accidents](https://www.nstlaw.com/cape-girardeau/motorcycle-accident-lawyers/)
+      * [St. Louis Motorcycle Accidents](https://www.nstlaw.com/st-louis/motorcycle-accident-lawyers/)
+      * [Belleville Motorcycle Accidents](https://www.nstlaw.com/belleville/motorcycle-accident-lawyers/)
+    * Wrongful Death
+      * [Memphis Wrongful Death](https://www.nstlaw.com/memphis/wrongful-death-lawyers/)
+      * [Knoxville Wrongful Death](https://www.nstlaw.com/knoxville/wrongful-death-lawyers/)
+      * [Jackson, TN Wrongful Death](https://www.nstlaw.com/jackson-tn/wrongful-death-lawyers/)
+      * [Nashville Wrongful Death](https://www.nstlaw.com/nashville/wrongful-death-lawyers/)
+      * [Tupelo Wrongful Death](https://www.nstlaw.com/tupelo/wrongful-death-lawyers/)
+      * [Jackson, MS Wrongful Death](https://www.nstlaw.com/jackson-ms/wrongful-death-lawyers/)
+      * [Columbus, MS Wrongful Death](https://www.nstlaw.com/columbus-ms/wrongful-death-lawyers/)
+      * [Jonesboro Wrongful Death](https://www.nstlaw.com/jonesboro/wrongful-death-lawyers/)
+      * [Little Rock Wrongful Death](https://www.nstlaw.com/little-rock/wrongful-death-lawyers/)
+      * [Cape Girardeau Wrongful Death](https://www.nstlaw.com/cape-girardeau/wrongful-death-lawyers/)
+      * [St. Louis Wrongful Death](https://www.nstlaw.com/st-louis/wrongful-death-lawyers/)
+      * [Belleville Wrongful Death](https://www.nstlaw.com/belleville/wrongful-death-lawyers/)
+    * Workers’ Compensation
+      * [Memphis Workers’ Compensation](https://www.nstlaw.com/memphis/workers-compensation-lawyers/)
+      * [Knoxville Workers’ Compensation](https://www.nstlaw.com/knoxville/workers-compensation-lawyers/)
+      * [Jackson, TN Workers’ Compensation](https://www.nstlaw.com/jackson-tn/workers-compensation-lawyers/)
+      * [Nashville Workers’ Compensation](https://www.nstlaw.com/nashville/workers-compensation-lawyers/)
+      * [Tupelo Workers’ Compensation](https://www.nstlaw.com/tupelo/workers-compensation-lawyers/)
+      * [Columbus, MS Workers’ Compensation](https://www.nstlaw.com/columbus-ms/workers-compensation-lawyers/)
+      * [Cape Girardeau Workers’ Compensation](https://www.nstlaw.com/cape-girardeau/workers-compensation-lawyers/)
+      * [St. Louis Workers’ Compensation](https://www.nstlaw.com/st-louis/workers-compensation-lawyers/)
+    * Social Security Disability
+      * [Memphis Social Security Disability](https://www.nstlaw.com/memphis/disability-lawyers/)
+      * [Knoxville Social Security Disability](https://www.nstlaw.com/knoxville/disability-lawyers/)
+      * [Jackson, TN Social Security Disability](https://www.nstlaw.com/jackson-tn/disability-lawyers/)
+      * [Little Rock Social Security Disability](https://www.nstlaw.com/little-rock/disability-lawyers/)
+      * [Nashville Social Security Disability](https://www.nstlaw.com/nashville/disability-lawyers/)
+    * Medical Malpractice
+      * [Memphis Medical Malpractice](https://www.nstlaw.com/memphis/medical-malpractice-lawyers/)
+      * [Knoxville Medical Malpractice](https://www.nstlaw.com/knoxville/medical-malpractice-lawyers/)
+      * [Nashville Medical Malpractice](https://www.nstlaw.com/nashville/medical-malpractice-lawyers/)
+      * [Jackson, TN Medical Malpractice](https://www.nstlaw.com/jackson-tn/medical-malpractice-lawyers/)
+      * [Jackson, MS Medical Malpractice](https://www.nstlaw.com/jackson-ms/medical-malpractice-lawyers/)
+      * [Jonesboro Medical Malpractice](https://www.nstlaw.com/jonesboro/medical-malpractice-lawyers/)
+      * [Little Rock Medical Malpractice](https://www.nstlaw.com/little-rock/medical-malpractice-lawyers/)
+    * [Prescription Drugs & Medications](https://www.nstlaw.com/prescription-drugs-medications/)
+      * [Depo-Provera Lawsuit Lawyers](https://www.nstlaw.com/prescription-drugs-medications/depo-provera/)
+      * [Belviq](https://www.nstlaw.com/prescription-drugs-medications/belviq-lawyers/)
+      * [Elmiron](https://www.nstlaw.com/prescription-drugs-medications/elmiron-lawyers/)
+      * [Invokana](https://www.nstlaw.com/prescription-drugs-medications/invokana-lawyers/)
+      * [Low Testosterone](https://www.nstlaw.com/prescription-drugs-medications/low-testosterone-lawyers/)
+      * [Ozempic](https://www.nstlaw.com/prescription-drugs-medications/ozempic-lawsuit-lawyer/)
+      * [Zantac](https://www.nstlaw.com/prescription-drugs-medications/zantac-lawyers/)
+    * [Defective Medical Device](https://www.nstlaw.com/defective-medical-devices/)
+      * [Philips CPAP](https://www.nstlaw.com/defective-medical-devices/philips-cpap-lawsuit/)
+      * [Hernia Mesh](https://www.nstlaw.com/defective-medical-devices/hernia-mesh-lawyers/)
+      * [Ethicon Physiomesh](https://www.nstlaw.com/defective-medical-devices/ethicon-physiomesh-lawyers/)
+    * [Product Liability Lawyers](https://www.nstlaw.com/product-liability-lawyers/)
+      * [L’Oreal Hair Straightener](https://www.nstlaw.com/product-liability-lawyers/loreal-hair-straightener/)
+      * [Vape Battery Explosion](https://www.nstlaw.com/product-liability-lawyers/vape-battery-explosion/)
+      * [Airbag Defect](https://www.nstlaw.com/product-liability-lawyers/airbag-defects/)
+      * [Car Seat Defects](https://www.nstlaw.com/product-liability-lawyers/car-seat-defects/)
+      * [Infant Formula (NEC)](https://www.nstlaw.com/product-liability-lawyers/infant-formula-nec/)
+      * [Paraquat](https://www.nstlaw.com/product-liability-lawyers/paraquat/)
+      * [Roundup Cancer](https://www.nstlaw.com/product-liability-lawyers/roundup/)
+    * [View More](https://www.nstlaw.com/injury-cases/)
+  * [VERDICTS & SETTLEMENTS](https://www.nstlaw.com/verdicts-settlements/)
+  * [REFERRALS](https://www.nstlaw.com/referrals/)
+    * [Referrals](https://www.nstlaw.com/referrals/)
+  * [RESOURCES](https://www.nstlaw.com/faqs/what-is-the-illinois-statute-of-limitations-for-personal-injury/)
+    * [Blogs](https://www.nstlaw.com/blog/)
+      * [Auto Accident Articles](https://www.nstlaw.com/blog/category/auto-accident/)
+      * [Community Involvement Articles](https://www.nstlaw.com/blog/category/community-involvement/)
+      * [Federal Regulations](https://www.nstlaw.com/blog/category/federal-regulations/)
+      * [Nursing Home Neglect Articles](https://www.nstlaw.com/blog/category/nursing-home-neglect/)
+      * [Personal Injury Articles](https://www.nstlaw.com/blog/category/personal-injury/)
+      * [Truck Accidents Articles](https://www.nstlaw.com/blog/category/truck-accidents/)
+      * [Workers’ Compensation Articles](https://www.nstlaw.com/blog/category/workers-compensation/)
+    * [FAQS](https://www.nstlaw.com/faqs/)
+      * [Auto Accident FAQs](https://www.nstlaw.com/blog/faq-category/auto-accident-faqs/)
+      * [Car Accident FAQs](https://www.nstlaw.com/blog/faq-category/car-accident-faqs/)
+      * [General Personal Injury FAQs](https://www.nstlaw.com/blog/faq-category/general-personal-injury-faqs/)
+        * [Additional FAQs](https://www.nstlaw.com/blog/faq-category/additional-faqs/)
+      * [Social Security Disability FAQs](https://www.nstlaw.com/blog/faq-category/social-security-disability-faqs/)
+      * [Workers’ Compensation FAQs](https://www.nstlaw.com/blog/faq-category/workers-compensation-faqs/)
+    * [Child Safety](https://www.nstlaw.com/guides/child-safety/)
+    * [Guides](https://www.nstlaw.com/guides/)
+    * [Video Gallery](https://www.nstlaw.com/video/)
+  * [LOCATIONS](https://www.nstlaw.com/office-locations/)
+    * [Memphis](https://www.nstlaw.com/memphis/office/)
+    * [Knoxville](https://www.nstlaw.com/knoxville/office/)
+    * [Jackson, TN](https://www.nstlaw.com/jackson-tn/)
+    * [Nashville](https://www.nstlaw.com/nashville/office/)
+    * [Columbus, MS](https://www.nstlaw.com/columbus-ms/)
+    * [Tupelo](https://www.nstlaw.com/tupelo/office/)
+    * [Jackson, MS](https://www.nstlaw.com/jackson-ms/office/)
+    * [Jonesboro](https://www.nstlaw.com/jonesboro/office/)
+    * [Little Rock](https://www.nstlaw.com/little-rock/office/)
+    * [Cape Girardeau](https://www.nstlaw.com/cape-girardeau/office/)
+    * [St Louis](https://www.nstlaw.com/st-louis/)
+    * [Belleville](https://www.nstlaw.com/belleville/)
+  * [CONTACT US](https://www.nstlaw.com/contact-us/)
+
+
+Updated: July 18, 2025
+Published: November 3, 2023
+# What Is the Illinois Personal Injury Statute of Limitations?
+![illinois personal injury statute of limitations](https://www.nstlaw.com/wp-content/uploads/2023/11/illinois-personal-injury-statute-of-limitations-1024x1024.png)
+Statutes of limitations (SOL) is a pre-set period within which a person must file a lawsuit in the state’s civil court. If the plaintiff, or the individual starting the suit, fails to meet the deadline, the court will not hear the case. Statutes of limitations vary across the country, and they also vary based on the type of lawsuit filed and for what infraction.
+Illinois is no exception. Statutes of limitations in Illinois are found within the Illinois Code of Civil Procedure and are part of the Illinois Compiled Statutes (ILCS). The assistance of a lawyer may offer you the best chance of getting your case settled or heard in court when you’re perilously close to the deadline.
+## What is the Personal Injury Statute of Limitations in Illinois? 
+Some statutes of limitations in Illinois only give the plaintiff a year to file a civil lawsuit. Others offer up to ten years. For example, lawyers must file libel and slander cases within one year of the alleged incident. Fraud cases require a filing within five years. For many personal injury lawsuits, Illinois gives plaintiffs two years to initiate legal action, according to [735 ILCS 5/13-202](https://www.ilga.gov/Documents/legislation/ilcs/documents/073500050K13-202.htm). The statute applies to [motor vehicle accidents](https://www.nstlaw.com/belleville/car-accident-lawyers/), product liability, and premises liability.
+For most cases, the time limit of two years begins on the date of the alleged incident. Sometimes, there are exceptions via a [discovery rule](https://case.law/caselaw/?reporter=ill-app-3d&volume=288&case=0666-01), allowing for a delay to the statute of limitations to start the time tolling not on the date the incident occurred leading to injury but instead on the date of discovery of an injury or when damages were first reasonably discoverable, per 735 ILCS 5/13-214.3(b).
+Statutes for different offenses, like property damage, medical malpractice, and libel, also exist. The statute of limitations for property damage is five years, according to 735 ILCS 5/13-205. In medical malpractice lawsuits, the time limit is two years from when the plaintiff discovered the injury, governed by 735 ILCS 5/13-212.
+You must file [wrongful death lawsuits](https://www.nstlaw.com/belleville/wrongful-death-lawyers/) within two years, according to 740 ILCS 180/2. The statute of repose prevents medical malpractice cases filed more than four years after the date of the procedure that led to injury, even if the patient didn’t discover the damage until a later date. You can find that statute at 735 ILCS 5/13-212.
+## Statute of Limitations Considerations for Illinois Personal Injury Claims 
+In some instances, [exceptions](https://www.ilga.gov/Legislation/ILCS/Articles??DocName=073500050HArt%2E+XIII+Pt%2E+2&ActID=2017&ChapterID=56&SeqStart=102300000&SeqEnd=105700000) to the two-year statute of limitations for personal injury claims exist. First, the law allows for a variation to the rule for injured persons under the age of 18 when the accident occurred. The two-year time limit will not begin running until the person reaches the age of 18.
+Additionally, the statute offers special conditions for anyone legally disabled when a car or [truck accident](https://www.nstlaw.com/belleville/truck-accident-lawyers/) or other personal injury occurs. The statute of limitations is paused or “tolled” while the individual has the disability or until such a time that the condition is removed. If the disability happens after the incident occurred but before the statute of limitations expires, the period stays (pauses) until the removal of the disability. Injured persons then have two years from when they recover from their disability to file a lawsuit.
+Lastly, if the person who caused your injury leaves Illinois after the accident and before you’re able to file a lawsuit, the period during which they were absent will likely not apply toward the two-year window. In other words, if they’re gone from the state for six months during those two years, you’ll have an additional six months over the two years to file your lawsuit.
+A [personal injury lawyer](https://www.nstlaw.com/belleville/) can review the facts specific to your case and advise you about relevant deadlines you’ll need to meet to avoid a possible case dismissal.
+## What Happens if I Miss the Deadline to File My Personal Injury Claim in Illinois? 
+One of the most critical factors that can determine the success or failure of a lawsuit is adherence to deadlines. Deadlines are paramount in law to keep cases progressing through the courts timely and efficiently. Additionally, statutes of limitations are one way to keep lawsuits fresh and evidence attainable. In many cases, the opportunity to file a lawsuit ends when this time limit passes.
+If the defendant in your case has an attorney, they’ll likely immediately file a motion to dismiss the lawsuit if you file after the statute of limitations expires. Therefore, there’s a sense of urgency for personal injury lawsuits to get the compensation you need to cover your losses and assist in your recovery.
+In 2018, a court dismissed a lawsuit filed one day late per the applicable statute of limitations. In [Giles v. Parks, 2018 IL App (1st) 163152](https://www.isba.org/cases/illinois/appellate/2018/02/05/gilesvparks), the plaintiff filed a civil lawsuit against a tow truck driver who hit and killed his brother at a cross-walk. Unfortunately, he initiated the suit two years and one day after the accident, barring him from seeking compensation and pursuing accountability against the negligent commercial driver.
+NST Law can help ensure your case is timely for your claims to be valid and allow you to obtain a successful outcome.
+## What is the Discovery Rule in Illinois Personal Injury Claims? 
+## Why does Illinois limit the time to file lawsuits? 
+Not everyone realizes they have an injury on the actual day the injury occurs, and that’s why Illinois has a discovery rule for people who later become aware of an injury that might trace back to someone else’s negligence. The rule effectively extends the overall number of days you have to file a lawsuit, but it doesn’t apply in all cases. Still, you must work quickly, whether you have two years or two days to file your lawsuit, as it can take time to establish your case with necessary evidence.
+In Illinois, courts have adhered to the discovery rule in many instances, including Knox College v. Celotex, 88 Ill.2d 407 (1982), which held that the discovery rule postponed the expiration of the statute of limitations until the claimant found out about their injury.
+Other cases are Mitsias v. I-Flow, 2011 Ill.App. (1st) 101126 (Sept. 23, 2011), which concerned medical malpractice and product liability, and [Randall W. Moon v. Clarissa F. Rhode et al. (2016 IL 119572)](https://www.illinoiscourts.gov/Resources/f1c85e07-5820-44bd-8cb7-125f41837f91/119572.pdf), which was a case of medical malpractice and wrongful death.
+In Illinois and other states, there are limits placed on the amount of time someone has to file a lawsuit in civil court to prevent the degradation of evidence, as well as to avoid the untimely filing of cases that would result in an unfair advantage given to one side or the other.
+Not only are there statutes of limitations for civil cases in Illinois, but the state also maintains statutes of limitations for most criminal cases. However, certain crimes have no statute of limitations attached, allowing prosecutors to charge the alleged perpetrator at any time for the specific crime. Crimes falling under open-ended timelines to initiate a case usually involve criminal sexual assault charges.
+## NST Law's Personal Injury Lawyers Know and Adhere to Illinois' Statutes of Limitations 
+Knowing the applicable statutes of limitations in any case can ensure the viability of your lawsuit and position you for a greater likelihood for success when filing requisite documents promptly and accurately. NST Law has a compassionate and dedicated legal team committed to filing your lawsuit and all other applicable responses or motions throughout your litigation matter on time.
+We encourage you to [contact us today](https://www.nstlaw.com/contact-us/) for a free consultation regarding your personal injury claim. We’ve recovered [billion](https://www.nstlaw.com/verdicts-settlements/) across all lawsuits for our clients. We will work hard for you, too. Let us evaluate your case, determine your legal options, and decide how we can best help you before you run out of time after an accident or incident causing injury.
+Free Consultation
+[800-529-4004](tel:8005294004)
+"*" indicates required fields
+Name
+This field is for validation purposes and should be left unchanged.
+First Name*
+Last Name*
+Email*
+Phone*
+Message
+SMS
+By clicking this box, you agree to receive SMS communications from NST Law related to your inquiry at the phone number provided above. You may reply “STOP” to opt-out at any time. Reply “HELP” for assistance. Message and data rates may apply. Message frequency will vary. By clicking this box, you also agree to our Terms of Service, Form Disclaimer, and Privacy Policy.
+Unique ID
+[Form Disclaimer](https://www.nstlaw.com/disclaimers/)
+[Privacy Policy](https://www.nstlaw.com/privacy-policy/)
+1
+TOPICS
+  * [Car Accident FAQs](https://www.nstlaw.com/blog/category/car-accidents-faq/)
+  * [General Personal Injury FAQs](https://www.nstlaw.com/blog/category/general-personal-injury-faq/)
+  * [Social Security Disability FAQs](https://www.nstlaw.com/blog/category/social-security-disability-faq/)
+  * [Statute of Limitations FAQs](https://www.nstlaw.com/blog/category/statute-of-limitations-faq/)
+  * [Workers Compensation FAQs](https://www.nstlaw.com/blog/category/workers-compensation-faq/)
+
+
+RECENT ENTRIES
+[ How Long Does a Personal Injury Case Take? ](https://www.nstlaw.com/faqs/how-long-does-a-personal-injury-case-take/)
+October 29, 2025 
+[ What Does Standing Mean in a Personal Injury Case? ](https://www.nstlaw.com/faqs/what-does-standing-mean-in-a-personal-injury-case/)
+October 20, 2025 
+[ What Happens if Your Case Gets Denied or Challenged? ](https://www.nstlaw.com/faqs/what-if-your-case-gets-denied-or-challenged/)
+October 10, 2025 
+![parker trotz](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20160%20160'%3E%3C/svg%3E)
+Content Legally Reviewed by:
+Attorney A. Parker Trotz
+Mr. Trotz was recognized from 2019-2024 as a Super Lawyers Mid-South Rising Star. Mr. Trotz is also a member of the Young Lawyers Division of the Memphis Bar Association, Memphis Bar Association, Tennessee Bar Association, and the Tennessee Trial Lawyers Association where he serves on the Executive Committee. 
+[READ OUR EDITORIAL GUIDELINES](https://www.nstlaw.com/editorial-guidelines/)
+![NST logo](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20282'%3E%3C/svg%3E)
+  * [ ](https://www.facebook.com/NSTLaw/)
+  * [ ](https://www.instagram.com/nst_law/)
+  * [ ](https://x.com/NSTLawFirm/)
+  * [ ](https://www.linkedin.com/company/nst-law-injury-attorneys/)
+  * [ ](https://www.youtube.com/@NSTLaw)
+
+
+  * [About](https://www.nstlaw.com/about-us/)
+  * [Our Team](https://www.nstlaw.com/our-team/)
+  * [Practice Areas](https://www.nstlaw.com/injury-cases/)
+  * [Testimonials](https://www.nstlaw.com/testimonials/)
+  * [Contact Us](https://www.nstlaw.com/contact-us/)
+  * [Careers](https://www.nstlaw.com/careers/)
+  * [Editorial Guidelines](https://www.nstlaw.com/editorial-guidelines/)
+  * [Privacy Policy](https://www.nstlaw.com/privacy-policy/)
+  * [Disclaimers](https://www.nstlaw.com/disclaimers/)
+
+
+  * [About](https://www.nstlaw.com/about-us/)
+  * [Our Team](https://www.nstlaw.com/our-team/)
+  * [Practice Areas](https://www.nstlaw.com/injury-cases/)
+  * [Testimonials](https://www.nstlaw.com/testimonials/)
+  * [Contact Us](https://www.nstlaw.com/contact-us/)
+  * [Careers](https://www.nstlaw.com/careers/)
+  * [Editorial Guidelines](https://www.nstlaw.com/editorial-guidelines/)
+  * [Privacy Policy](https://www.nstlaw.com/privacy-policy/)
+  * [Disclaimers](https://www.nstlaw.com/disclaimers/)
+
+
+  * [ ](https://www.facebook.com/NSTLaw/)
+  * [ ](https://www.instagram.com/nst_law/)
+  * [ ](https://x.com/NSTLawFirm/)
+  * [ ](https://www.linkedin.com/company/nst-law-injury-attorneys/)
+  * [ ](https://www.youtube.com/@NSTLaw)
+
+
+Tennessee 
+[MEMPHIS](https://www.nstlaw.com/memphis/)
+[488 S. Mendenhall Road  
+Memphis, TN 38117](https://maps.app.goo.gl/Mc2eEev4Cgm2s6Z87)  
+Phone: [901-979-1449](tel:901-979-1449)
+[WHITEHAVEN](https://www.nstlaw.com/memphis/)
+[4466 Elvis Presley Blvd  
+Suite 143 Memphis, TN 38116](https://maps.app.goo.gl/zwSsj6BEMd9d8DVN7)  
+Phone: [901-910-1040](tel:901-910-1040)
+[JACKSON](https://www.nstlaw.com/jackson-tn/)
+[2709 N. Highland Avenue  
+Jackson, TN 38305](https://maps.app.goo.gl/561qxVfRCQx2ivyB8)  
+Phone: [731-341-8824](tel:731-341-8824)
+[NASHVILLE](https://www.nstlaw.com/nashville/)
+[2323 21st Avenue South  
+Suite 500 Nashville, TN 37212](https://maps.app.goo.gl/JZZyGpTx27BQT4Fs8)  
+Phone: [615-558-5451](tel:615-558-5451)
+[KNOXVILLE](https://www.nstlaw.com/knoxville/)
+[408 N. Cedar Bluff Road Suite  
+450 Knoxville, TN 37923](https://maps.app.goo.gl/5fgTbpbE7mJSSxqd8)  
+Phone: [865-326-3730](tel:865-326-3730)
+Mississippi 
+[TUPELO](https://www.nstlaw.com/tupelo/)
+[201 Magazine Street Suite201 Tupelo, MS 38804](https://maps.app.goo.gl/WmnUx7XeZSieG5M77)  
+Phone: [662-200-4124](tel:662-200-4124)
+[COLUMBUS](https://www.nstlaw.com/columbus-ms/)
+[428 24th Ave N  
+Columbus, MS 39705](https://maps.app.goo.gl/nXxPVg4VLehzGrec6)  
+Phone: [662-214-8341](tel:662-214-8341)
+[JACKSON](https://www.nstlaw.com/jackson-ms/)
+[125 South Congress Street  
+Suite 1300 Jackson, MS 39201](https://maps.app.goo.gl/cPpVPjA3zQubsEAK8)  
+Phone: [601-488-3483](tel:601-488-3483)
+HERNANDO
+2475 Memphis Street  
+Hernando, MS 38632
+Phone: [662-490-2760](tel:6624902760)
+Missouri 
+[ST. LOUIS](https://www.nstlaw.com/st-louis/)
+[701 Market St Suite 285 St. Louis, MO 63101](https://maps.app.goo.gl/E1edXoq2hfkRKkFf9)  
+Phone: [314-450-7553](tel:314-450-7553)
+[CAPE GIRARDEAU](https://www.nstlaw.com/cape-girardeau/)
+[1440 Kurre Lane  
+Cape Girardeau, MO 63701](https://maps.app.goo.gl/Z7gH5g43eryWPc1Z7)  
+Phone: [573-367-5749](tel:573-367-5749)
+Arkansas 
+[JONESBORO](https://www.nstlaw.com/jonesboro/)
+[317 Southwest Drive Suite B  
+Jonesboro, AR 72401](https://maps.app.goo.gl/NmHAj57d8iwHPgRF6)  
+Phone: [870-669-1084](tel:870-669-1084)
+[LITTLE ROCK](https://www.nstlaw.com/little-rock/)
+[4 Shackleford Plaza Suite  
+211 Little Rock, AR 72211](https://maps.app.goo.gl/X1kRYkYgWMwHoUFt5)  
+Phone: [501-725-0923](tel:501-725-0923)
+[DOWNTOWN LITTLE ROCK](https://www.nstlaw.com/little-rock/)
+[425 W Capitol Ave, Ste. 780  
+Little Rock, AR 72201](https://maps.app.goo.gl/aB5Rpq9SfCcywyJR7)  
+Phone: [501-222-4655](tel:501-222-4655)
+Illinois 
+[BELLEVILLE](https://www.nstlaw.com/belleville/)
+[6400 W Main St Suite 10  
+Belleville, IL 62223](https://maps.app.goo.gl/SaCHiXyYbeV7qqWq5)  
+Phone: [618-215-5631](tel:618-215-5631)
+Copyright © 2025, NST Law Injury Attorneys

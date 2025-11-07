@@ -1,0 +1,818 @@
+<!DOCTYPE html><html lang="en-US" class=""><head><style><!----> <!--?lit$6146222233$-->.osano-cm-window{font-family:Helvetica,Arial,Hiragino Sans GB,STXihei,Microsoft YaHei,WenQuanYi Micro Hei,Hind,MS Gothic,Apple SD Gothic Neo,NanumBarunGothic,sans-serif;font-size:16px;font-smooth:always;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothingz:auto;display:block;left:0;line-height:1;position:absolute;top:0;width:100%;z-index:2147483638;--fade-transition-time:700ms;--slide-transition-time:400ms}.osano-cm-window--context_amp{height:100%}.osano-visually-hidden{height:1px;left:-10000px;margin:-1px;opacity:0;overflow:hidden;position:absolute;width:1px}.osano-cm-button{background-color:var(--osano-button-background-color);border-color:var(--osano-button-foreground-color);border-radius:.25em;border-style:solid;border-width:thin;color:var(--osano-button-foreground-color);cursor:pointer;flex:1 1 auto;font-size:1em;font-weight:700;line-height:1;margin:.125em;min-width:6em;padding:.5em .75em;transition-duration:.2s;transition-property:background-color;transition-timing-function:ease-out}.osano-cm-button:focus,.osano-cm-button:hover{background-color:var(--osano-button-background-hover);outline:none}.osano-cm-button--type_icon{border-radius:50%;height:1em;line-height:0;min-width:1em;width:1em}.osano-cm-button--type_deny{background-color:var(--osano-button-deny-background-color);border-color:var(--osano-button-deny-foreground-color);color:var(--osano-button-deny-foreground-color)}.osano-cm-button--type_deny:focus,.osano-cm-button--type_deny:hover{background-color:var(--osano-button-deny-background-hover)}.osano-cm-close{border-radius:50%;box-sizing:content-box;cursor:pointer;height:20px;margin:.5em;min-height:20px;min-width:20px;order:0;outline:none;overflow:hidden;padding:0;width:20px;stroke-width:1px;background-color:transparent;border:2px solid transparent;display:flex;justify-content:center;line-height:normal;text-decoration:none;transform:rotate(0deg);transition-duration:.2s;transition-property:transform,color,background-color,stroke,stroke-width;transition-timing-function:ease-out;z-index:2}.osano-cm-close:focus,.osano-cm-close:hover{transform:rotate(90deg);stroke-width:2px}.ccpa-opt-out-icon{display:flex;flex:1 1 auto}.ccpa-opt-out-icon svg{max-width:40px}.osano-cm-link{color:var(--osano-link-color);cursor:pointer;text-decoration:underline;transition-duration:.2s;transition-property:color;transition-timing-function:ease-out}.osano-cm-link:active,.osano-cm-link:hover{color:var(--osano-link-color);outline:none}.osano-cm-link:focus{color:var(--osano-link-color-focus);font-weight:700;outline:none}.osano-cm-link--type_feature,.osano-cm-link--type_purpose,.osano-cm-link--type_specialFeature,.osano-cm-link--type_specialPurpose{cursor:help;display:block;-webkit-text-decoration:dashed;text-decoration:dashed}.osano-cm-link--type_denyAll{display:block;text-align:right}[dir=rtl] .osano-cm-link--type_denyAll{text-align:left}.osano-cm-link--type_vendor{display:block}.osano-cm-link-separator:before{content:"|";padding:0 .5em}.osano-cm-vendor-link{font-size:.75em}.osano-cm-list-item{margin:0}.osano-cm-list-item--type_term{border-top-style:solid;border-top-width:1px;font-size:.875rem;font-weight:400;margin-bottom:.25em;margin-top:.5em;padding:.5em .75rem 0;position:relative;top:-1px}.osano-cm-list-item--type_description{font-size:.75rem;font-weight:lighter;padding:0 .75rem}.osano-cm-list{list-style-position:outside;list-style-type:none;margin:0;padding:0}.osano-cm-list__list-item{text-indent:0}.osano-cm-list--type_description{margin:0 -1em}.osano-cm-list:first-of-type .osano-cm-list__list-item:first-of-type{border-top-width:0;margin-top:0;padding-top:0}.osano-cm-toggle{align-items:center;display:flex;flex-direction:row-reverse;justify-content:flex-start;margin:.25em 0;pointer-events:auto;position:relative}.osano-cm-toggle__label{margin:0 .5em 0 0}[dir=rtl] .osano-cm-toggle__label{margin:0 0 0 .5em}.osano-cm-toggle__switch{background-color:var(--osano-toggle-off-background-color);border-radius:14px;border-style:solid;border-width:2px;box-sizing:content-box;color:transparent;display:block;flex-shrink:0;height:18px;line-height:0;margin:0;position:relative;text-indent:-9999px;transition-duration:.2s;transition-property:background-color;transition-timing-function:ease-out;width:40px}.osano-cm-toggle__switch:hover{cursor:pointer}.osano-cm-toggle__switch:after{background-color:var(--osano-toggle-button-off-color);border-color:var(--osano-toggle-button-off-color);border-radius:9px;border-width:0;height:18px;left:0;top:0;width:18px}.osano-cm-toggle__switch:before{border-color:transparent;border-radius:16px;border-width:2px;bottom:-6px;box-sizing:border-box;left:-6px;right:-6px;top:-6px}.osano-cm-toggle__switch:after,.osano-cm-toggle__switch:before{border-style:solid;content:"";margin:0;position:absolute;transform:translateX(0);transition-duration:.3s;transition-property:transform,left,border-color;transition-timing-function:ease-out}.osano-cm-toggle__switch:after:active,.osano-cm-toggle__switch:before:active{transition-duration:.1s}.osano-cm-toggle__switch:after:active{width:26px}.osano-cm-toggle__switch:before:active{width:34px}[dir=rtl] .osano-cm-toggle__switch:after{left:100%;transform:translateX(-100%)}.osano-cm-toggle__input{height:1px;left:-10000px;margin:-1px;opacity:0;overflow:hidden;position:absolute;width:1px}[dir=rtl] .osano-cm-toggle__input{left:0;right:-10000px}.osano-cm-toggle__input:disabled{cursor:default}.osano-cm-toggle--type_checkbox .osano-cm-toggle__switch{border-radius:4px;border-style:solid;border-width:1px;height:22px;width:22px}.osano-cm-toggle--type_checkbox .osano-cm-toggle__switch:after{background-color:transparent!important;border-bottom-width:2px;border-left-width:2px;border-radius:0;content:none;height:6px;left:3px;top:3px;transform:rotate(-45deg);transition-property:color;transition-timing-function:ease-out;width:12px}.osano-cm-toggle--type_opt-out .osano-cm-toggle__switch{border-radius:4px;border-style:solid;border-width:1px;height:22px;width:22px}.osano-cm-toggle--type_opt-out .osano-cm-toggle__switch:after,.osano-cm-toggle--type_opt-out .osano-cm-toggle__switch:before{background-color:transparent!important;border-bottom-width:1px;border-radius:0;border-top-width:1px;content:none;height:0;left:-3px;top:7px;transition-property:color;transition-timing-function:ease-out;width:12px}.osano-cm-toggle--type_opt-out .osano-cm-toggle__switch:after{transform:translate(50%,50%) rotate(-45deg)}.osano-cm-toggle--type_opt-out .osano-cm-toggle__switch:before{transform:translate(50%,50%) rotate(45deg)}.osano-cm-toggle__input:checked+.osano-cm-toggle__switch{background-color:var(--osano-toggle-on-background-color);border-color:var(--osano-toggle-on-background-color)}.osano-cm-toggle__input:checked+.osano-cm-toggle__switch:after{background-color:var(--osano-toggle-button-on-color);border-color:var(--osano-toggle-button-on-color);left:100%;transform:translateX(-100%)}[dir=rtl] .osano-cm-toggle__input:checked+.osano-cm-toggle__switch:after{left:0;transform:translateX(0)}.osano-cm-toggle__input:focus+.osano-cm-toggle__switch,.osano-cm-toggle__input:hover+.osano-cm-toggle__switch{background-color:var(--osano-toggle-off-background-hover-focus);border-color:var(--osano-toggle-off-background-hover-focus)}.osano-cm-toggle__input:focus+.osano-cm-toggle__switch:before{border-color:var(--osano-toggle-off-background-hover-focus)}.osano-cm-toggle__input:disabled+.osano-cm-toggle__switch{cursor:default}.osano-cm-toggle--type_checkbox .osano-cm-toggle__input:checked+.osano-cm-toggle__switch:after{content:"";left:3px;top:3px;transform:rotate(-45deg)}.osano-cm-toggle--type_opt-out .osano-cm-toggle__input:checked+.osano-cm-toggle__switch:after,.osano-cm-toggle--type_opt-out .osano-cm-toggle__input:checked+.osano-cm-toggle__switch:before{content:"";left:-1px;top:9px}.osano-cm-toggle--type_opt-out .osano-cm-toggle__input:checked+.osano-cm-toggle__switch:after{transform:translate(50%,50%) rotate(-45deg)}.osano-cm-toggle--type_opt-out .osano-cm-toggle__input:checked+.osano-cm-toggle__switch:before{transform:translate(50%,50%) rotate(45deg)}.osano-cm-toggle--type_checkbox .osano-cm-toggle__input:disabled+.osano-cm-toggle__switch,.osano-cm-toggle--type_opt-out .osano-cm-toggle__input:disabled+.osano-cm-toggle__switch{opacity:.3}.osano-cm-toggle__input:checked:focus+.osano-cm-toggle__switch,.osano-cm-toggle__input:checked:hover+.osano-cm-toggle__switch{background-color:var(--osano-toggle-on-background-hover-focus);border-color:var(--osano-toggle-on-background-hover-focus)}.osano-cm-toggle__input:checked:focus+.osano-cm-toggle__switch:before{border-color:var(--osano-toggle-on-background-hover-focus)}.osano-cm-toggle__input:disabled+.osano-cm-toggle__switch,.osano-cm-toggle__input:disabled:focus+.osano-cm-toggle__switch,.osano-cm-toggle__input:disabled:hover+.osano-cm-toggle__switch{background-color:var(--osano-toggle-off-background-disabled);border-color:var(--osano-toggle-off-background-disabled)}.osano-cm-toggle__input:disabled+.osano-cm-toggle__switch:after,.osano-cm-toggle__input:disabled:focus+.osano-cm-toggle__switch:after,.osano-cm-toggle__input:disabled:hover+.osano-cm-toggle__switch:after{background-color:var(--osano-toggle-button-off-disabled);border-color:var(--osano-toggle-button-off-disabled)}.osano-cm-toggle__input:disabled+.osano-cm-toggle__switch:before,.osano-cm-toggle__input:disabled:focus+.osano-cm-toggle__switch:before,.osano-cm-toggle__input:disabled:hover+.osano-cm-toggle__switch:before{border-color:transparent}.osano-cm-toggle__input:disabled:checked+.osano-cm-toggle__switch,.osano-cm-toggle__input:disabled:checked:focus+.osano-cm-toggle__switch,.osano-cm-toggle__input:disabled:checked:hover+.osano-cm-toggle__switch{background-color:var(--osano-toggle-on-background-disabled);border-color:var(--osano-toggle-on-background-disabled)}.osano-cm-toggle__input:disabled:checked+.osano-cm-toggle__switch:after,.osano-cm-toggle__input:disabled:checked:focus+.osano-cm-toggle__switch:after,.osano-cm-toggle__input:disabled:checked:hover+.osano-cm-toggle__switch:after{background-color:var(--osano-toggle-button-on-disabled);border-color:var(--osano-toggle-button-on-disabled)}.osano-cm-toggle__input:disabled:checked+.osano-cm-toggle__switch:before,.osano-cm-toggle__input:disabled:checked:focus+.osano-cm-toggle__switch:before,.osano-cm-toggle__input:disabled:checked:hover+.osano-cm-toggle__switch:before{border-color:transparent}.osano-cm-widget{background:none;border:none;bottom:12px;cursor:pointer;height:40px;opacity:.9;outline:none;padding:0;position:fixed;transition:transform .1s linear 0s,opacity .2s linear 0ms,visibility 0ms linear 0ms;visibility:visible;width:40px;z-index:2147483636}.osano-cm-widget--position_right{right:12px}.osano-cm-widget--position_left{left:12px}.osano-cm-widget:focus{outline:solid;outline-offset:.2rem}.osano-cm-widget:focus,.osano-cm-widget:hover{opacity:1;transform:scale(1.1)}.osano-cm-widget--hidden{opacity:0;visibility:hidden}.osano-cm-widget--hidden:focus,.osano-cm-widget--hidden:hover{opacity:0;transform:scale(1)}.osano-cm-widget__outline{fill:var(--osano-widget-fill-color);stroke:var(--osano-widget-outline-color)}.osano-cm-widget__dot{fill:var(--osano-widget-color)}.osano-cm-dialog{align-items:center;background:var(--osano-dialog-background-color);box-sizing:border-box;color:var(--osano-dialog-foreground-color);font-size:1em;line-height:1.25;max-height:100vh;overflow:auto;padding:1.5em;position:fixed;transition-delay:0ms,0ms;transition-duration:.7s,0ms;transition-property:opacity,visibility;visibility:visible;z-index:2147483637}.osano-cm-dialog--hidden{opacity:0;transition-delay:0ms,.7s;visibility:hidden}.osano-cm-dialog--type_bar{box-sizing:border-box;display:flex;flex-direction:column;left:0;right:0}.osano-cm-dialog--type_bar .osano-cm-button{flex:none;margin:.125em auto;width:80%}@media screen and (min-width:768px){.osano-cm-dialog--type_bar{flex-direction:row}.osano-cm-dialog--type_bar .osano-cm-button{flex:1 1 100%;margin:.25em .5em;width:auto}}.osano-cm-dialog--type_box{flex-direction:column;max-height:calc(100vh - 2em);max-width:20em;width:calc(100vw - 2em)}.osano-cm-dialog__close{color:var(--osano-dialog-foreground-color);position:absolute;right:0;top:0;stroke:var(--osano-dialog-foreground-color)}.osano-cm-dialog__close:hover{stroke:var(--osano-dialog-foreground-hover)}.osano-cm-dialog__close:focus{background-color:var(--osano-dialog-foreground-color);border-color:var(--osano-dialog-foreground-color);stroke:var(--osano-dialog-background-color)}.osano-cm-dialog__close:focus:hover{stroke:var(--osano-dialog-background-hover)}.osano-cm-dialog__list{margin:.5em 0 0;padding:0}.osano-cm-dialog__list .osano-cm-item{display:flex;margin-top:0}.osano-cm-dialog__list .osano-cm-item:last-child{margin-bottom:0}.osano-cm-dialog__list .osano-cm-toggle{flex-direction:row}[dir=rtl] .osano-cm-dialog__list .osano-cm-toggle{flex-direction:row-reverse}.osano-cm-dialog__list .osano-cm-label{white-space:nowrap}[dir=ltr] .osano-cm-dialog__list .osano-cm-label{margin-left:.375em}[dir=rtl] .osano-cm-dialog__list .osano-cm-label{margin-right:.375em}.osano-cm-dialog__buttons{display:flex;flex-wrap:wrap}.osano-cm-dialog--type_bar .osano-cm-dialog__content{flex:5;margin-bottom:.25em;width:100%}.osano-cm-dialog--type_box .osano-cm-dialog__content{display:flex;flex-direction:column;flex-grow:.0001;transition:flex-grow 1s linear}.osano-cm-dialog--type_box .osano-cm-link-separator:before{content:"";padding:0}.osano-cm-dialog--type_box .osano-cm-content__link{margin-bottom:.5em}.osano-cm-dialog--type_bar .osano-cm-dialog__list{display:flex;flex-direction:column;flex-wrap:wrap;justify-content:flex-start;margin:.75em auto}@media screen and (min-width:376px){.osano-cm-dialog--type_bar .osano-cm-dialog__list{flex-direction:row}}@media screen and (min-width:768px){.osano-cm-dialog--type_bar .osano-cm-dialog__list{margin:.5em 0 0 auto}[dir=rtl] .osano-cm-dialog--type_bar .osano-cm-dialog__list{margin:.5em auto 0 0}}[dir=ltr] .osano-cm-dialog--type_bar .osano-cm-dialog__list .osano-cm-item{margin-right:.5em}[dir=rtl] .osano-cm-dialog--type_bar .osano-cm-dialog__list .osano-cm-item{margin-left:.5em}.osano-cm-dialog--type_bar .osano-cm-dialog__list .osano-cm-label{padding-top:0}.osano-cm-dialog--type_bar .osano-cm-dialog__buttons{flex:1;justify-content:flex-end;margin:0;width:100%}@media screen and (min-width:768px){.osano-cm-dialog--type_bar .osano-cm-dialog__buttons{margin:0 0 0 .5em;max-width:30vw;min-width:16em;position:sticky;top:0;width:auto}[dir=rtl] .osano-cm-dialog--type_bar .osano-cm-dialog__buttons{margin:0 .5em 0 0}}.osano-cm-dialog--type_box .osano-cm-dialog__buttons{margin:.5em 0 0}.osano-cm-dialog--type_bar.osano-cm-dialog--position_top{top:0}.osano-cm-dialog--type_bar.osano-cm-dialog--position_bottom{bottom:0}.osano-cm-dialog--type_box.osano-cm-dialog--position_top-left{left:1em;top:1em}.osano-cm-dialog--type_box.osano-cm-dialog--position_top-right{right:1em;top:1em}.osano-cm-dialog--type_box.osano-cm-dialog--position_bottom-left{bottom:1em;left:1em}.osano-cm-dialog--type_box.osano-cm-dialog--position_bottom-right{bottom:1em;right:1em}.osano-cm-dialog--type_box.osano-cm-dialog--position_center{left:50%;top:50%;transform:translate(-50%,-50%)}.osano-cm-dialog--type_box.osano-cm-dialog--wide{max-width:50em}@media screen and (max-height:800px)and (max-width:1200px){.osano-cm-dialog--type_box.osano-cm-dialog--wide{max-width:calc(100vw - 4em)}}.osano-cm-dialog--type_box.osano-cm-dialog--wide .osano-cm-dialog__list{display:flex;flex-wrap:wrap}.osano-cm-dialog--context_amp{height:100%;position:relative}.osano-cm-content__message{margin-bottom:1em;white-space:pre-line;word-break:break-word}.osano-cm-drawer-links{margin:.5em 0 0}.osano-cm-drawer-links__link{display:block}.osano-cm-storage-policy{display:inline-block}.osano-cm-usage-list{margin:0 0 .5em}.osano-cm-usage-list__list{list-style-position:inside;list-style-type:disc}:export{fadeTransitionTime:.7s;slideTransitionTime:.4s}.osano-cm-info-dialog{background:var(--osano-info-dialog-overlay-color);height:100vh;left:0;position:fixed;top:0;transition-delay:0ms,0ms;transition-duration:.2s,0ms;transition-property:opacity,visibility;visibility:visible;width:100vw;z-index:2147483638}.osano-cm-info-dialog--hidden{opacity:0;transition-delay:0ms,.2s;visibility:hidden}.osano-cm-header{background:var(--osano-info-dialog-background-color);background:linear-gradient(180deg,var(--osano-info-dialog-background-color) 2.5em,var(--osano-clear-dialog-background) 100%);margin:0 0 -1em;padding:1em 0;position:sticky;top:0;z-index:1}.osano-cm-info{animation:delay-overflow .4s;background:var(--osano-info-dialog-background-color);bottom:0;box-shadow:0 0 2px 2px #ccc;box-sizing:border-box;color:var(--osano-info-dialog-foreground-color);max-width:20em;overflow:visible visible;position:fixed;top:0;transition-duration:.4s;transition-property:transform;width:100%}.osano-cm-info--position_left{left:0;transform:translate(-100%)}.osano-cm-info--position_right{right:0;transform:translate(100%)}.osano-cm-info--open{animation:none;overflow:hidden auto;transform:translate(0)}.osano-cm-info--do_not_sell{animation:none;height:-moz-fit-content;height:fit-content;left:50%;max-height:100vh;position:fixed;right:auto;top:50%;transform:translate(-50%,-50%);transition:none}.osano-cm-info--do_not_sell .osano-cm-close{order:-1}.osano-cm-info--do_not_sell .osano-cm-header{box-sizing:content-box;display:block;flex:none}.osano-cm-info-views{align-items:flex-start;display:flex;flex-direction:row;flex-wrap:nowrap;height:100%;transition-duration:.4s;transition-property:transform;width:100%}[dir=rtl] .osano-cm-info-views{flex-direction:row-reverse}.osano-cm-info-views__view{box-sizing:border-box;flex-shrink:0;width:100%}.osano-cm-info-views--position_0>:not(:first-of-type){max-height:100%;overflow:hidden}.osano-cm-info-views--position_1{transform:translateX(-100%)}.osano-cm-info-views--position_1>:not(:nth-of-type(2)){max-height:100%;overflow:hidden}.osano-cm-info-views--position_2{transform:translateX(-200%)}.osano-cm-info-views--position_2>:not(:nth-of-type(3)){max-height:100%;overflow:hidden}.osano-cm-info--do_not_sell .osano-cm-info-views{height:-moz-fit-content;height:fit-content}.osano-cm-view{height:0;padding:0 .75em 1em;transition-delay:.4s;transition-duration:0ms;transition-property:height,visibility;visibility:hidden;width:100%}.osano-cm-view__button{font-size:.875em;margin:1em 0 0;width:100%}.osano-cm-view--active{height:auto;transition-delay:0ms;visibility:visible}.osano-cm-description{font-size:.75em;font-weight:300;line-height:1.375;margin:1em 0 0;white-space:pre-line}.osano-cm-description:first-child{margin:0}.osano-cm-description:last-of-type{margin-bottom:1em}.osano-cm-drawer-toggle .osano-cm-label{font-size:.875em;line-height:1.375em;margin:0 auto 0 0}[dir=rtl] .osano-cm-drawer-toggle .osano-cm-label{margin:0 0 0 auto}.osano-cm-info-dialog-header{align-items:center;background:var(--osano-info-dialog-background-color);background:linear-gradient(180deg,var(--osano-info-dialog-background-color) 2.5em,var(--osano-clear-dialog-background) 100%);display:flex;flex-direction:row-reverse;left:auto;min-height:3.25em;position:sticky;top:0;width:100%;z-index:1}[dir=rtl] .osano-cm-info-dialog-header{flex-direction:row}.osano-cm-info-dialog-header__header{align-items:center;display:flex;flex:1 1 auto;font-size:1em;justify-content:flex-start;margin:0;order:1;padding:1em .75em}.osano-cm-info-dialog-header__description{font-size:.75em;line-height:1.375}.osano-cm-info-dialog-header__close{color:var(--osano-info-dialog-foreground-color);position:relative;stroke:var(--osano-info-dialog-foreground-color)}.osano-cm-info-dialog-header__close:hover{stroke:var(--osano-info-dialog-foreground-hover)}.osano-cm-info-dialog-header__close:focus{background-color:var(--osano-info-dialog-foreground-color);border-color:var(--osano-info-dialog-foreground-color);stroke:var(--osano-info-dialog-background-color)}.osano-cm-info-dialog-header__close:focus:hover{stroke:var(--osano-info-dialog-background-hover)}.osano-cm-back{flex:0 1 auto;margin:0 0 0 .5em;min-width:0;order:2;position:relative;width:auto;z-index:2}[dir=rtl] .osano-cm-back{margin:0 .5em 0 0}.osano-cm-powered-by{align-items:center;display:flex;flex-direction:column;font-weight:700;justify-content:center;margin:1em 0}.osano-cm-powered-by__link{font-size:.625em;outline:none;text-decoration:none}.osano-cm-powered-by__link:focus,.osano-cm-powered-by__link:hover{text-decoration:underline}@keyframes delay-overflow{0%{overflow:hidden auto}}.osano-cm-drawer-iab-button-container{display:flex;gap:.5em;justify-content:center;margin-bottom:2em}.osano-cm-illustrations__list>.osano-cm-list-item--type_description{padding:.2rem 1rem}.osano-cm-drawer-item.osano-cm-description__list li{padding-top:.75em}.osano-cm-tcf-purpose--label{border-bottom:1px solid rgba(0,0,0,.1);display:block;margin-bottom:.5em;padding:.25em 0 .5em}.osano-cm-link.osano-cm-link--type_purpose{font-weight:400}.osano-cm-tcf-purpose--label input{accent-color:var(--osano-toggle-on-background-color);float:right;margin-right:.5em}.osano-cm-expansion-panel{border-bottom:1px solid rgba(0,0,0,.1);display:block;font-size:.75em;margin:0 -1.5em 1em;padding:1.5em 1.5em 0}.osano-cm-expansion-panel--expanded{border-bottom:none}.osano-cm-expansion-panel--empty,.osano-cm-expansion-panel--empty:not([open]){border-bottom:1px solid rgba(0,0,0,.1);padding-bottom:0}.osano-cm-expansion-panel__body{background-color:rgba(0,0,0,.1);line-height:1.25;list-style:none;margin:0 -1.5em;max-height:0;overflow:hidden;padding:0 1.5em;transition-delay:0ms,0ms,0ms,.3s;transition-duration:.3s,.3s,.3s,0s;transition-property:max-height,padding-top,padding-bottom,visibility;transition-timing-function:ease-out;visibility:hidden}.osano-cm-expansion-panel__toggle{cursor:pointer;display:block;line-height:1.25;margin:0 auto 1em 0;position:relative}.osano-cm-expansion-panel__toggle,.osano-cm-expansion-panel__toggle:active,.osano-cm-expansion-panel__toggle:hover{color:var(--osano-link-color);outline:none}.osano-cm-expansion-panel__toggle:focus{color:var(--osano-link-color-focus);outline:none}[dir=rtl] .osano-cm-expansion-panel__toggle{margin:0 0 1em auto}.osano-cm-expansion-panel--expanded .osano-cm-expansion-panel__body{max-height:none;padding:1.25em 1.5em 1em;transition-delay:0ms,0ms,0ms,0ms;visibility:visible}.osano-cm-disclosure-item__title{border:0;clear:both;display:block;flex:0 1 30%;font-size:1em;font-weight:700;line-height:1.375;margin:0 0 .5em;padding:0}.osano-cm-disclosure-item__description{flex:0 1 70%;font-size:1em;line-height:1.375;margin:0 0 .5em;overflow:hidden;padding:0;text-overflow:ellipsis;white-space:pre-line}.osano-cm-disclosure{border-bottom:none;display:block;font-size:.75em;margin:0 -1.5em 1em;padding:1.5em 1.5em 0}.osano-cm-disclosure--collapse{border-bottom:1px solid rgba(0,0,0,.1);padding-bottom:1em}.osano-cm-disclosure--empty,.osano-cm-disclosure--empty:not([open]){border-bottom:1px solid rgba(0,0,0,.1);padding-bottom:0}.osano-cm-disclosure__list{background-color:rgba(0,0,0,.1);line-height:1.25;list-style:none;margin:0 -1.5em;padding:1.25em 1.5em 1em}.osano-cm-disclosure__list:empty{border:none;padding:0 1.5em}.osano-cm-disclosure__list:first-of-type{margin-top:1em;padding:1.25em 1.5em 1em}.osano-cm-disclosure__list:first-of-type:after{background-color:var(--osano-link-color)}.osano-cm-disclosure__list:first-of-type:empty{padding:1.75em 1.5em .75em}.osano-cm-disclosure__list:not(:first-of-type):not(:empty){border-top:1px solid rgba(0,0,0,.1)}.osano-cm-disclosure__list:empty+.osano-cm-disclosure__list:not(:empty){border:none;padding:0 1.5em}.osano-cm-disclosure__list:not(:empty)~.osano-cm-disclosure__list:empty+.osano-cm-disclosure__list:not(:empty){border-top:1px solid rgba(0,0,0,.1)}.osano-cm-disclosure__list>.osano-cm-list-item{line-height:1.25}.osano-cm-disclosure__list>.osano-cm-list-item:not(:first-of-type){border-top:1px solid rgba(0,0,0,.1);margin:1em -1.25em 0;padding:1em 1.25em 0}.osano-cm-disclosure__toggle{color:var(--osano-link-color);cursor:pointer;display:block;font-weight:700;line-height:1.25;margin:0 auto 0 0;outline:none;position:relative}.osano-cm-disclosure__toggle:focus,.osano-cm-disclosure__toggle:hover{text-decoration:underline}.osano-cm-disclosure__toggle:active,.osano-cm-disclosure__toggle:hover{color:var(--osano-link-color)}.osano-cm-disclosure__toggle:focus{color:var(--osano-link-color-focus)}[dir=rtl] .osano-cm-disclosure__toggle{margin:0 0 0 auto}.osano-cm-disclosure--loading .osano-cm-disclosure__list{height:0;line-height:0;max-height:0}.osano-cm-disclosure--loading .osano-cm-disclosure__list>*{display:none}.osano-cm-disclosure--loading .osano-cm-disclosure__list:after{animation-duration:1s;animation-iteration-count:infinite;animation-name:osano-load-scale;animation-timing-function:ease-in-out;border-radius:100%;content:"";display:block;height:1em;position:relative;top:-.125em;transform:translateY(-50%);width:1em}.osano-cm-disclosure--collapse .osano-cm-disclosure__list{display:none}.osano-cm-disclosure--collapse .osano-cm-disclosure__list:after{content:none}.osano-cm-disclosure-item{display:flex;flex-wrap:wrap;margin:0}.osano-cm-disclosure-item__title:last-of-type{margin-bottom:0}.osano-cm-disclosure-item__description:hover{word-break:break-word}.osano-cm-disclosure-item__description:last-of-type{margin-bottom:0}@keyframes osano-load-scale{0%{transform:translateY(-50%) scale(0)}to{opacity:0;transform:translateY(-50%) scale(1)}} :root { --osano-button-background-color: <!--?lit$6146222233$-->#14a7d0; --osano-button-foreground-color: <!--?lit$6146222233$-->#FFFFFF; --osano-button-deny-background-color: <!--?lit$6146222233$-->#707070; --osano-button-deny-foreground-color: <!--?lit$6146222233$-->#FFFFFF; --osano-dialog-background-color: <!--?lit$6146222233$-->#252e39; --osano-dialog-foreground-color: <!--?lit$6146222233$-->#FFFFFF; --osano-info-dialog-background-color: <!--?lit$6146222233$-->#180D43; --osano-info-dialog-foreground-color: <!--?lit$6146222233$-->#FFFFFF; --osano-info-dialog-overlay-color: <!--?lit$6146222233$-->rgba(0,0,0,0.45); --osano-link-color: <!--?lit$6146222233$-->#14a7d0; --osano-toggle-off-background-color: <!--?lit$6146222233$-->#7A3FF1; --osano-toggle-button-off-color: <!--?lit$6146222233$-->#FFFFFF; --osano-toggle-on-background-color: <!--?lit$6146222233$-->#37CD8F; --osano-toggle-button-on-color: <!--?lit$6146222233$-->#FFFFFF; --osano-widget-color: <!--?lit$6146222233$-->#37cd8f; --osano-widget-fill-color: <!--?lit$6146222233$-->#fff; --osano-widget-outline-color: <!--?lit$6146222233$-->#29246a; --osano-clear-dialog-background: <!--?lit$6146222233$-->rgba(24,13,67,0); --osano-button-background-hover: <!--?lit$6146222233$-->#28bbe4; --osano-button-deny-background-hover: <!--?lit$6146222233$-->#848484; --osano-dialog-foreground-hover: <!--?lit$6146222233$-->#ebebeb; --osano-dialog-background-hover: <!--?lit$6146222233$-->#39424d; --osano-info-dialog-foreground-hover: <!--?lit$6146222233$-->#ebebeb; --osano-info-dialog-background-hover: <!--?lit$6146222233$-->#2c2157; --osano-link-color-focus: <!--?lit$6146222233$-->#28bbe4; --osano-toggle-off-background-hover-focus: <!--?lit$6146222233$-->#8e53ff; --osano-toggle-on-background-hover-focus: <!--?lit$6146222233$-->#23b97b; --osano-toggle-off-background-disabled: <!--?lit$6146222233$-->#ba7fff; --osano-toggle-button-off-disabled: <!--?lit$6146222233$-->#bfbfbf; --osano-toggle-on-background-disabled: <!--?lit$6146222233$-->#008d4f; --osano-toggle-button-on-disabled: <!--?lit$6146222233$-->#bfbfbf; } .osano-cm-window { direction: <!--?lit$6146222233$-->ltr; text-align: <!--?lit$6146222233$-->left; } </style><script async="" type="osano/blocked"></script><script async="" defer="" src="https://launchpad.privacymanager.io/latest/launchpad.bundle.js"></script><script src="https://sdk.mrf.io/statics/marfeel-sdk.es5.js?id=5546" async="" type="text/javascript" nomodule=""></script><script src="https://sdk.mrf.io/statics/marfeel-sdk.js?id=5546" type="module"></script><script type="text/javascript" async="" src="https://secure.quantserve.com/quant.js"></script><script async="" type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-1V71J0RS5C&amp;cx=c&amp;gtm=4e5b50h1"></script><script src="https://tagan.adlightning.com/mng-trib/bl-0490b65-326cf37b.js" type="text/javascript" defer=""></script><script src="https://tagan.adlightning.com/mng-trib/b-b94ff10-2731e1ae.js" type="text/javascript" defer=""></script><script type="text/javascript"></script>
+				<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"><meta charset="UTF-8"><meta name="application-name" id="app-name" content="thepressdemocrat"><meta name="viewport" content="width=device-width, initial-scale=1">			<meta name="msvalidate.01" content="4B535F7EB2971D1FCBA5D1D3E3E292C3">
+					<meta name="robots" content="noarchive">
+					<meta name="tdm-reservation" content="1">
+		<title>Page not found – The Press Democrat</title>
+<link rel="preload" as="image" fetchpriority="high" href="https://www.pressdemocrat.com/wp-content/uploads/2025/08/pressdemocratblack-1.png" type="image/png">
+<meta name="robots" content="max-image-preview:large">
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-TLFP4R"></script><script id="_mljs" defer="" async="" type="text/javascript" src="https://js.matheranalytics.com/s/ma23578/239876517/wp/ml.js?cb=1700" data-mather_state="event complete"></script><script type="text/javascript">
+/* <![CDATA[ */
+var scriptHelpers = {"staticPath":"https:\/\/www.pressdemocrat.com\/wp-content\/themes\/assets\/static\/"};
+/* ]]> */
+</script>
+<link rel="dns-prefetch" href="//cmp.osano.com">
+<link rel="dns-prefetch" href="//htlbid.com">
+<link rel="dns-prefetch" href="//ajax.googleapis.com">
+<link rel="dns-prefetch" href="//s.ntv.io">
+<link rel="dns-prefetch" href="//p468.pressdemocrat.com">
+<link rel="dns-prefetch" href="//stats.wp.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+<link rel="dns-prefetch" href="//v0.wordpress.com">
+<link rel="alternate" type="application/rss+xml" title="The Press Democrat » Feed" href="https://www.pressdemocrat.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="The Press Democrat » Comments Feed" href="https://www.pressdemocrat.com/comments/feed/">
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.pressdemocrat.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<link rel="stylesheet" id="all-css-71e3" href="https://www.pressdemocrat.com/wp-content/themes/wp-mason/static/css/osano-custom.css?m=1762444718g" type="text/css" media="all">
+<link rel="stylesheet" id="__htl_style-css" href="https://htlbid.com/v3/pressdemocrat.com/htlbid.css?ver=6.8.3" media="">
+<link rel="stylesheet" id="all-css-4514" href="https://www.pressdemocrat.com/wp-content/client-mu-plugins/src/Sitemap/includes/style.css?m=1761545064g" type="text/css" media="all">
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="stylesheet" id="digisubs_plugin_css-css" href="https://www.pressdemocrat.com/wp-content/plugins/mng-digisubs/static/mng-digisubs.styles.css?ver=1762541092" media="all">
+<link rel="stylesheet" id="all-css-9550" href="https://www.pressdemocrat.com/wp-content/client-mu-plugins/src/Ads/assets/css/mobile-adhesion-style.css?m=1761545064g" type="text/css" media="all">
+<link rel="stylesheet" id="mason-fonts-css" href="https://fonts.googleapis.com/css?family=Noto+Sans%3A400%2C700%7CNoto+Serif%3A400%2C400i%2C700%2C700i%7CArvo%3A400%2C400i%2C700%2C700i&amp;display=swap&amp;ver=6.8.3" media="all">
+<link rel="stylesheet" id="all-css-0505" href="https://www.pressdemocrat.com/wp-content/themes/assets/static/css/boldcoastal.css?m=1762541092g" type="text/css" media="all">
+<link rel="stylesheet" id="dfm-accuweather-bootstrap-icons-css" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.min.css?ver=5.2.0" media="screen">
+<link rel="stylesheet" id="all-css-e306" href="https://www.pressdemocrat.com/_static/??-eJyNzEEKgCAQQNELZYMbdROdRXQIwRnFmYhun9sWQcvHhw9XN6mxIiv0eh6FBaQomjcGimSklkZUyEUUksymd8WVCq9TC/xaSeNG8eOx02a9s85bH8IDKQ85oQ==" type="text/css" media="all">
+<script id="auth0-session-storage-js-before">
+window.auth0WPAdminMeta = '{"auth0WPAdminMeta":{"auth0UserMeta":null,"auth0AppMeta":null}}';
+</script>
+<script src="https://www.pressdemocrat.com/wp-content/client-mu-plugins/src/Auth0/assets/dist/auth0-session-storage.min.js?ver=1.0.4" id="auth0-session-storage-js"></script>
+<script src="https://cmp.osano.com/16A1AnRt2Fn8i1unj/1edc45d9-1a78-48b2-9035-037b31df744a/osano.js" id="osano-js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js?ver=3.5.1" id="jquery-js"></script>
+<script id="jquery-js-after">
+	var sonomaOptions = {"environment":"prod","clientId":"pSur0tQTFD64Khi1jhPZIh3OPRGqcI1U","loaderDomain":"pressdemocrat.com","enableDebug":false,"auth0Domain":"smi-prod.us.auth0.com","configCode":"PDWP","siteCode":"PD"};
+	var rootDomain = window.location.hostname.replace(/(www\.|develop\.|preprod\.|staging\.)/g, '').replace('.vipdev.lndo.site', '');
+	var mg2PageData = {
+	'metered' : 0,
+	'thick'   : 0,
+	'premium' : 0,
+	'breaking': 0,
+	'gifted'  : 0,
+	'isCovid' : 0
+};
+var loaderDomain = sonomaOptions.loaderDomain ? sonomaOptions.loaderDomain : rootDomain;
+jQuery(function($) {
+	$.getScript('https://loader.'+ loaderDomain + '/' + sonomaOptions.environment +'/smi/loader.min.js').done(function() {
+		var mg2InitFP = {
+			'name'       : 'FP',
+			'initOptions': {
+				'version'    : 'smi',
+				'environment': sonomaOptions.environment
+			}
+		};
+		var mg2InitDL = {
+			'name'       : 'DL',
+			'initOptions': {
+				'version'    : 'smi',
+				'collectors' : ['connext'],
+				'tagManager' : 'GTM',
+				'containerId': 'GTM-NFD2QGD'
+			}
+		};
+		var mg2InitNXT = {
+			'name'       : 'NXT',
+			'initOptions': {
+				'clientCode'  : 'smi',
+				'environment' : sonomaOptions.environment,
+				'siteCode'    : sonomaOptions.siteCode,
+				'configCode'  : sonomaOptions.configCode,
+				'debug'       : sonomaOptions.enableDebug,
+				'silentmode'  : false,
+				'authSettings': {
+					'domain'      : sonomaOptions.auth0Domain,
+					'client_id'   : sonomaOptions.clientId,
+					'redirect_uri': 'https://' + window.location.hostname + '/login'
+				}
+			}
+		};
+		if(window.mg2ConfigCode)
+			mg2InitNXT.initOptions.configCode = window.mg2ConfigCode;
+		MG2Loader.init({
+			'NXT_CNAME'  : 'engage.' + loaderDomain,
+			'DL_CNAME'   : 'g2i.' + loaderDomain,
+			'FP_CNAME'   : 'fp.' + loaderDomain,
+			'environment': sonomaOptions.environment,
+			'version'    : 'smi',
+			'plugins'    : [mg2InitFP, mg2InitDL, mg2InitNXT]
+		});
+		$(document).one('onAnyAccountStatusEvent', function() {
+			$(document).trigger('mg2:loaded');
+		});
+	}).fail(function() {
+		$(document).trigger('mg2:failed');
+	});
+});
+</script>
+<script id="__htl_script-js" src="https://htlbid.com/v3/pressdemocrat.com/htlbid.js?ver=6.8.3" async=""></script>
+<script id="__htl_script-js-after">
+	window.htlbid = window.htlbid || {};
+	htlbid.cmd = htlbid.cmd || [];
+	htlbid.cmd.push(function() {
+		htlbid.layout('universal');
+		htlbid.setTargeting("is_testing","no");
+		htlbid.setTargeting("kv", ["error"]);
+		htlbid.setTargeting("page", "error");
+		htlbid.setTargeting("content", []);
+		htlbid.setTargeting("RPN", "285306503163");
+		htlbid.setTargeting("rurl", "");
+		htlbid.setTargeting("articleid", "");
+		window.htlbid.pubads().setPublisherProvidedId("1484c87d0a3810d68ede01edafdb28afb59df8179e8e643cc7425fd329d35625");
+	});
+</script>
+<script type="text/javascript" src="https://www.pressdemocrat.com/wp-content/client-mu-plugins/src/SSO/assets/js/sso-tools.min.js?m=1761545064g"></script><script id="mg2_loader_loader-js-extra">
+var MG2 = {"settings":{"environment":"prod","version":"smi","useDocumentReady":false,"xCode":"","randomURLChoosing":false,"FP_CNAME":"","DL_CNAME":"","NXT_CNAME":"","plugins":[],"CONFIG_URL":"https:\/\/loader-config.pressdemocrat.com\/prod\/dfm\/loader-config.json","appInsightsKey":"8241cbc2-50a5-47c4-b91f-462506490fad"}};
+</script>
+<script src="https://www.pressdemocrat.com/wp-content/plugins/loader-wp/static/loader.min.js?ver=1.6.4" id="mg2_loader_loader-js"></script>
+<script id="mg2_loader_loader-js-after">
+(function( MG2, MG2Loader ) {
+	if ( 'undefined' !== typeof MG2 && 'undefined' !== typeof MG2Loader) {
+	    console.log("mg2loader: not waiting");
+		MG2Loader.init( MG2.settings );
+	}
+})( MG2, MG2Loader );
+</script>
+<script id="digisubs_settings-js-extra">
+var authentication_config = {"debug":"1","entitlementsEnabled":"","oneTapEnabled":"","useTribMainGoogle":"","googleClientId":"","gotPositionEnabled":"","gotModalPosition":"","dropdownEnabled":"","auth0Domain":"smi-prod.us.auth0.com","auth0ClientId":"pSur0tQTFD64Khi1jhPZIh3OPRGqcI1U","auth0RegwallUserEmail":"","sessionManagement":"","sessionServer":"","newsletterId":"","newslettersEnabled":"","myAccountLink":"","entitlementsEndpoint":"","entitlementsAPIKey":"","linaCheckOnArticles":"","serverEntitlements":"","bcLowaSegements":"","blueconicEnabled":"1","enableReaderDashboardLink":"","enableDashboardCancel":"","prosperstackClientid":"","enableDatadog":"","sophiOnDevice":"","sophiSDKEnabled":"","regwallPrefId":"","cookieSize":"","whiteList":"","paywallId":"","isAdfreeArticle":""};
+</script>
+<script id="connext_utils-js-extra">
+var authentication_config = {"debug":"1","entitlementsEnabled":"","oneTapEnabled":"","useTribMainGoogle":"","googleClientId":"","gotPositionEnabled":"","gotModalPosition":"","dropdownEnabled":"","auth0Domain":"smi-prod.us.auth0.com","auth0ClientId":"pSur0tQTFD64Khi1jhPZIh3OPRGqcI1U","auth0RegwallUserEmail":"","sessionManagement":"","sessionServer":"","newsletterId":"","newslettersEnabled":"","myAccountLink":"","entitlementsEndpoint":"","entitlementsAPIKey":"","linaCheckOnArticles":"","serverEntitlements":"","bcLowaSegements":"","blueconicEnabled":"1","enableReaderDashboardLink":"","enableDashboardCancel":"","prosperstackClientid":"","enableDatadog":"","sophiOnDevice":"","sophiSDKEnabled":"","regwallPrefId":"","cookieSize":"","whiteList":"","paywallId":"","isAdfreeArticle":""};
+</script>
+<script type="text/javascript" src="https://www.pressdemocrat.com/_static/??-eJydzD0OwjAMQOELkZhW/IgBcQFWDpA0luUqcaPYUeH2sCB1YGJ90vdgrW5axFAMau7EopCXkLC5tYJaMJ4AhQLhnWML7eULi591Bz9kEXKJibVH/eJt84pmLKQ+dkkZ//58gODTHsZ587qV63A+jcfDsL+M8xvd01Ho"></script><script src="https://cdn.auth0.com/js/auth0-spa-js/1.13/auth0-spa-js.production.js?ver=6.8.3" id="auth0_sdk-js"></script>
+<script id="mng_sophi-js-extra">
+var sophi_config = {"sophiGetDesicionTimer":"","sophiPluginEnabled":"1","sophiHostname":"","enableSophiSSPW":"","useEventListener":"1"};
+</script>
+<script type="text/javascript" src="https://www.pressdemocrat.com/_static/??-eJylz8EOgkAMBNAfkq0Q1HgwXv2NApulG1o2thv9fFYvhiN4nWReZuCVqn4W82KQphxIFFhCNVAgzZ2CGhr1q8wxkrguyzB5F/UAe4xSEP+2f5lMD/wAzy0QqnpTiIWc00jAaGMRuLzau+ML/Tbc+VZfzs2prY/XJi4FFIX8"></script><script src="https://p468.pressdemocrat.com/script.js" id="p468-js"></script>
+<script id="mng_apple-js-extra">
+var apple_config = {"applePayEnabled":"","sourceId":""};
+</script>
+<script type="text/javascript" src="https://www.pressdemocrat.com/wp-content/plugins/mng-digisubs/static/mng-digisubs.apple.bundle.js?m=1762541092g"></script><link rel="https://api.w.org/" href="https://www.pressdemocrat.com/wp-json/"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.pressdemocrat.com/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.8.3">
+<script id="cnx-init-script">!function(n){if(!window.cnx){window.cnx={},window.cnx.cmd=[];var t=n.createElement('iframe');t.display='none',t.onload=function(){var n=t.contentWindow.document,c=n.createElement('script');c.src='//cd.connatix.com/connatix.player.js',c.setAttribute('async','1'),c.setAttribute('type','text/javascript'),n.body.appendChild(c)},n.head.appendChild(t)}}(document);</script><iframe></iframe>        <style>
+        .getty.aligncenter {
+            text-align: center;
+        }
+        .getty.alignleft {
+            float: none;
+            margin-right: 0;
+        }
+        .getty.alignleft > div {
+            float: left;
+            margin-right: 5px;
+        }
+        .getty.alignright {
+            float: none;
+            margin-left: 0;
+        }
+        .getty.alignright > div {
+            float: right;
+            margin-left: 5px;
+        }
+        </style>
+        	<style id="htl-mobile-adhesion-override">
+		@media screen and (max-width:1000px) {
+			#mobile-adhesion {
+				display: block !important;
+			}
+		}
+	</style>	<style>img#wpstats{display:none}</style>
+		<script type="application/ld+json">[]</script><script>
+    var PushlySDK = window.PushlySDK || [];
+    function pushly() { PushlySDK.push(arguments) }
+    pushly('load', {
+        domainKey: decodeURIComponent("cNqW6ee3JwH6RL5VIvlcTWnLEhMUrIYv9jeS"),
+        sw: "https://www.pressdemocrat.com/wp-content/plugins/pushly/assets/js/pushly-sdk-worker.js.php",
+        swScope: "https://www.pressdemocrat.com/wp-content/plugins/pushly/"    });
+</script>
+
+<style id="customizer-styles">			div#page {
+			--primary: #9e0b0f;
+			}
+						div#page {
+			--secondary: #ffea00;
+			}
+						div#page {
+			--tertiary: #d10f14;
+			}
+						div#page {
+			--primary-light: #d10f14;
+			}
+						div#page {
+			--primary-dark: #9e0b0f;
+			}
+						div#page {
+			--primary-lighter: #d10f14;
+			}
+						div#page {
+			--primary-darker: #6e0b0c;
+			}
+						div#page {
+			--subsite-custom: #eeeeee;
+			}
+						div#page {
+			--subsite-text: #1e1e1e;
+			}
+			</style><script>window.addEventListener('message',
+		function s2nEventCallback(a){if('s2nEvent'===a.data.type)
+			{let t={event:'SendToNews load',sendtonews_player_key:
+				a.data.playerKey};window.dataLayer.push(t),
+				window.removeEventListener('message',s2nEventCallback)}});</script><!-- Google Tag Manager Data Layer -->
+<script type="text/javascript">
+   analyticsEvent    = function() {};
+   analyticsSocial   = function() {};
+   analyticsVPV      = function() {};
+   analyticsClearVPV = function() {};
+   analyticsForm     = function() {};
+   window.dataLayer  = window.dataLayer || [];
+   dataLayer.push({
+      'quantcast' : '',
+      'quantcast label' : '',
+      'comscore' : '',
+      'Publisher Domain' : 'pressdemocrat.com',
+      'Publisher Product' : 'pressdemocrat.com',
+      'kv' : 'other',
+      'Platform' : 'Web CMS',
+      'Release Version' : '6.8.3',
+      'Digital Publisher' : '',
+      'Section' : 'Other',
+      'Taxonomy1' : '',
+      'Taxonomy2' : '',
+      'Taxonomy3' : '',
+      'Taxonomy4' : '',
+      'Taxonomy5' : '',
+      'Publisher State' : 'SONOMA',
+      'Page Type' : 'other',
+      'User ID' : '',
+      'SiteName' : 'The Press Democrat',
+      'Cluster' : 'MNG SONOMA',
+      'errorType' : '404',
+      'Mobile Presentation' : 'no',
+      'Canonical URL' : 'https://www.pressdemocrat.com/north-bay-business-journal/article/industrynews/state-farm-jome-insurance-rates/',
+      'Content Title' : 'Other',
+      'URL' : 'https://www.pressdemocrat.com/north-bay-business-journal/article/industrynews/state-farm-jome-insurance-rates/',
+      'Page Title' : 'Other'
+   });
+</script>
+<!-- End Google Tag Manager Data Layer -->
+<!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i) {
+   w[l]=w[l]||[];
+   w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+   var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+   j.async=true;
+   j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})
+(window,document,'script','dataLayer','GTM-TLFP4R');
+</script><!-- End Google Tag Manager -->
+<link rel="icon" href="https://www.pressdemocrat.com/wp-content/uploads/2025/08/pressdemocratfav.png?w=32" sizes="32x32">
+<link rel="icon" href="https://www.pressdemocrat.com/wp-content/uploads/2025/08/pressdemocratfav.png?w=32" sizes="192x192">
+<link rel="apple-touch-icon" href="https://www.pressdemocrat.com/wp-content/uploads/2025/08/pressdemocratfav.png?w=32">
+<meta name="msapplication-TileImage" content="https://www.pressdemocrat.com/wp-content/uploads/2025/08/pressdemocratfav.png?w=32">
+			<style>@page{size:8in 10.5in}@media print{#content{display:block;margin:0;max-width:none;padding:.5in 1in}.single-post #page .pushnav,.single-post #page .header-banners,.single-post #page .dfp-ad,.single-post #page .lazy-ad-unit,.single-post #page .breaking-bar,.single-post #page .daily-deals-flyout,.single-post #page .status-bar,.single-post #page .site-header,.single-post #page .header-placeholder,.single-post #page .site-footer,.single-post #page .article-share,.single-post #page .article-sidebar,.single-post #page .recirc,.single-post #page #comments,.single-post #page .related,.single-post #page .article-slideshow,.single-post #page .more-news,.single-post #page #disqus_thread,.single-post #page .info-box-body,.single-post #page .comments-link,.single-post #page iframe{display:none}.single-post #page .full-view .header-features,.single-post #page .full-view .article-body,.single-post #page .full-view .article-footer,.single-post #page .full-view .about-the-author{margin:0;width:100%}.single-post #page .full-view .about-the-author{background-color:rgba(0,0,0,0);padding:0}.single-post #page .full-view .header-features,.single-post #page .full-view .article-body,.single-post #page .full-view .tags,.single-post #page .full-view .meta{margin-bottom:.25in}.single-post #page .full-view .body-copy{font-size:14px;position:relative}.single-post #page .full-view .body-copy>img,.single-post #page .full-view .body-copy .wp-caption{margin-bottom:.125in}.single-post #page .full-view .body-copy p,.single-post #page .full-view .body-copy img,.single-post #page .full-view .body-copy figure,.single-post #page .full-view .body-copy ul,.single-post #page .full-view .body-copy ol{break-inside:avoid;display:block;page-break-inside:avoid;position:relative}.single-post #page #content,.single-post #page .site-footer,.single-post #page .status-bar{transform:none}.cmg-styles{display:none}}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL2NsaWVudC9zY3NzL3ByaW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBYUEsTUFDRSxlQUFBLENBR0YsYUFFQyxTQUNDLGFBQUEsQ0FDQSxRQUFBLENBQ0EsY0FBQSxDQUNBLGdCQUFBLENBT0MsdXFCQXFCQyxZQUFBLENBS0EseUxBSUMsUUFBQSxDQUNBLFVBQUEsQ0FHRCxnREFDQyw4QkFBQSxDQUNBLFNBQUEsQ0FHRCxtS0FJQyxtQkFBQSxDQUdELHlDQUNDLGNBQUEsQ0FDQSxpQkFBQSxDQUVBLGtHQUVDLG9CQUFBLENBR0QsZ09BS0Msa0JBQUEsQ0FDQSxhQUFBLENBQ0EsdUJBQUEsQ0FDQSxpQkFBQSxDQUtILDJGQUdDLGNBQUEsQ0FLRixZQUNNLFlBQUEsQ0FBQSIsInNvdXJjZXNDb250ZW50IjpbIi8vIFByaW50IFN0eWxlc1xuLy9cbi8vIFByaW50IHN0eWxlcyBmb3Igc2luZ2xlIGFydGljbGVcblxuLyogc3R5bGVsaW50LWRpc2FibGUgKi9cbi8vIFJlbW92ZSBwc2V1ZG8gc2Nyb2xsXG5AbWl4aW4gbm8tcHNldWRvLXNjcm9sbCB7XG5cdGhlaWdodDogYXV0bztcblx0b3ZlcmZsb3c6IHZpc2libGU7XG5cdHBvc2l0aW9uOiBzdGF0aWM7XG5cdHdpZHRoOiBhdXRvO1xufVxuXG5AcGFnZSB7XG4gIHNpemU6IDhpbiAxMC41aW47XG59XG5cbkBtZWRpYSBwcmludCB7XG5cblx0I2NvbnRlbnQge1xuXHRcdGRpc3BsYXk6IGJsb2NrO1xuXHRcdG1hcmdpbjogMDtcblx0XHRtYXgtd2lkdGg6IG5vbmU7XG5cdFx0cGFkZGluZzogMC41aW4gMWluO1xuXHR9XG5cblx0LnNpbmdsZS1wb3N0IHtcblxuXHRcdCNwYWdlIHtcblxuXHRcdFx0LnB1c2huYXYsXG5cdFx0XHQuaGVhZGVyLWJhbm5lcnMsXG5cdFx0XHQuZGZwLWFkLFxuXHRcdFx0LmxhenktYWQtdW5pdCxcblx0XHRcdC5icmVha2luZy1iYXIsXG5cdFx0XHQuZGFpbHktZGVhbHMtZmx5b3V0LFxuXHRcdFx0LnN0YXR1cy1iYXIsXG5cdFx0XHQuc2l0ZS1oZWFkZXIsXG5cdFx0XHQuaGVhZGVyLXBsYWNlaG9sZGVyLFxuXHRcdFx0LnNpdGUtZm9vdGVyLFxuXHRcdFx0LmFydGljbGUtc2hhcmUsXG5cdFx0XHQuYXJ0aWNsZS1zaWRlYmFyLFxuXHRcdFx0LnJlY2lyYyxcblx0XHRcdCNjb21tZW50cyxcblx0XHRcdC5yZWxhdGVkLFxuXHRcdFx0LmFydGljbGUtc2xpZGVzaG93LFxuXHRcdFx0Lm1vcmUtbmV3cyxcblx0XHRcdCNkaXNxdXNfdGhyZWFkLFxuXHRcdFx0LmluZm8tYm94LWJvZHksXG5cdFx0XHQuY29tbWVudHMtbGluayxcblx0XHRcdGlmcmFtZSB7XG5cdFx0XHRcdGRpc3BsYXk6IG5vbmU7XG5cdFx0XHR9XG5cblx0XHRcdC5mdWxsLXZpZXcge1xuXG5cdFx0XHRcdC5oZWFkZXItZmVhdHVyZXMsXG5cdFx0XHRcdC5hcnRpY2xlLWJvZHksXG5cdFx0XHRcdC5hcnRpY2xlLWZvb3Rlcixcblx0XHRcdFx0LmFib3V0LXRoZS1hdXRob3Ige1xuXHRcdFx0XHRcdG1hcmdpbjogMDtcblx0XHRcdFx0XHR3aWR0aDogMTAwJTtcblx0XHRcdFx0fVxuXG5cdFx0XHRcdC5hYm91dC10aGUtYXV0aG9yIHtcblx0XHRcdFx0XHRiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcblx0XHRcdFx0XHRwYWRkaW5nOiAwO1xuXHRcdFx0XHR9XG5cblx0XHRcdFx0LmhlYWRlci1mZWF0dXJlcyxcblx0XHRcdFx0LmFydGljbGUtYm9keSxcblx0XHRcdFx0LnRhZ3MsXG5cdFx0XHRcdC5tZXRhIHtcblx0XHRcdFx0XHRtYXJnaW4tYm90dG9tOiAwLjI1aW47XG5cdFx0XHRcdH1cblxuXHRcdFx0XHQuYm9keS1jb3B5IHtcblx0XHRcdFx0XHRmb250LXNpemU6IDE0cHg7XG5cdFx0XHRcdFx0cG9zaXRpb246IHJlbGF0aXZlO1xuXG5cdFx0XHRcdFx0PiBpbWcsXG5cdFx0XHRcdFx0LndwLWNhcHRpb24ge1xuXHRcdFx0XHRcdFx0bWFyZ2luLWJvdHRvbTogMC4xMjVpbjtcblx0XHRcdFx0XHR9XG5cblx0XHRcdFx0XHRwLFxuXHRcdFx0XHRcdGltZyxcblx0XHRcdFx0XHRmaWd1cmUsXG5cdFx0XHRcdFx0dWwsXG5cdFx0XHRcdFx0b2wge1xuXHRcdFx0XHRcdFx0YnJlYWstaW5zaWRlOiBhdm9pZDtcblx0XHRcdFx0XHRcdGRpc3BsYXk6IGJsb2NrO1xuXHRcdFx0XHRcdFx0cGFnZS1icmVhay1pbnNpZGU6IGF2b2lkO1xuXHRcdFx0XHRcdFx0cG9zaXRpb246IHJlbGF0aXZlO1xuXHRcdFx0XHRcdH1cblx0XHRcdFx0fVxuXHRcdFx0fVxuXG5cdFx0XHQjY29udGVudCxcblx0XHRcdC5zaXRlLWZvb3Rlcixcblx0XHRcdC5zdGF0dXMtYmFyIHtcblx0XHRcdFx0dHJhbnNmb3JtOiBub25lO1xuXHRcdFx0fVxuXHRcdH1cblx0fVxuXG4gIC5jbWctc3R5bGVzIHtcbiAgICAgICAgZGlzcGxheTogbm9uZTtcbiAgfVxuXG59XG4vKiBzdHlsZWxpbnQtZW5hYmxlICovXG4iXSwic291cmNlUm9vdCI6IiJ9 */</style><script type="text/javascript" src="https://www.lightboxcdn.com/vendor/db6f0be6-f660-4856-9802-62d2a9838abf/custom.js?cb=6058448BA16041188E0EF5BBAE0DB2E7"></script><script src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" async=""></script><style type="text/css">/*Fixes interstitial viewability pixel not firing if size is 1x1, 18px heigh required by GAM*/
+#content .dfp-ad.dfp-interstitial {
+    position: absolute;
+    height: 18px;
+    width: 1px;
+}
+</style><script src="https://tagan.adlightning.com/mng-trib/op.js" async=""></script><script async="" src="https://launchpad-wrapper.privacymanager.io/70bb23e5-a2a7-414e-b709-7066b1333c83/launchpad-liveramp.js"></script><script src="https://c.amazon-adsystem.com/aax2/apstag.js" async=""></script><script type="text/javascript" src="https://www.lightboxcdn.com/vendor/db6f0be6-f660-4856-9802-62d2a9838abf/main.js?cb=9D54CA0E0C74154C4472CACAEE7CD8B6"></script><style>.engageLogoutLink, .engageLoginLink {display:none !important;}.engageLoginLink{display:inline-block !important;}</style><link type="text/css" rel="stylesheet" media="screen" href="https://www.lightboxcdn.com/static/fb_lightbox.2.1.5.css?cb=20240725"><style type="text/css">.fb_lightbox-margin{margin-right:0px;}</style><script type="module" src="https://marfeelexperimentsexperienceengine.mrf.io/experimentsexperience/render?siteId=5546&amp;url=https%3A%2F%2Fwww.pressdemocrat.com%2Fnorth-bay-business-journal%2Farticle%2Findustrynews%2Fstate-farm-jome-insurance-rates%2F&amp;experimentType=HeadlineAB&amp;lang=es&amp;version=esnext" async=""></script><script type="text/javascript" src="https://marfeelexperimentsexperienceengine.mrf.io/experimentsexperience/render?siteId=5546&amp;url=https%3A%2F%2Fwww.pressdemocrat.com%2Fnorth-bay-business-journal%2Farticle%2Findustrynews%2Fstate-farm-jome-insurance-rates%2F&amp;experimentType=HeadlineAB&amp;lang=es&amp;version=legacy" nomodule="" async=""></script><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9nrunKdU5m96PSN1XsSGr3qOP0lvPFUB2AiAylCDlN5DTl17uDFkpQuHj1AFtgWLxpLaiBZuhrtb2WOu7ofHwEAAACKeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A93bovR+QVXNx2/38qDbmeYYf1wdte9EO37K9eMq3r+541qo0byhYU899BhPB7Cv9QqD7wIbR1B6OAc9kEfYCA4AAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A1S5fojrAunSDrFbD8OfGmFHdRFZymSM/1ss3G+NEttCLfHkXvlcF6LGLH8Mo5PakLO1sCASXU1/gQf6XGuTBgwAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202511040101/pubads_impl.js" async=""></script><link href="https://securepubads.g.doubleclick.net/pagead/managed/dict/m202510140101/gpt" rel="compression-dictionary"><script src="https://config.aps.amazon-adsystem.com/configs/3391" type="text/javascript" async="async"></script><script esp-signal="true" src="https://oa.openxcdn.net/esp.js"></script><script esp-signal="true" src="https://cdn.prod.uidapi.com/uid2SecureSignal.js"></script><script esp-signal="true" src="https://cdn.id5-sync.com/api/1.0/esp.js"></script><script esp-signal="true" src="https://invstatic101.creativecdn.com/encrypted-signals/encrypted-tag-g.js"></script><script esp-signal="true" src="https://cdn-ima.33across.com/ob.js"></script><script src="https://az416426.vo.msecnd.net/scripts/a/ai.0.js"></script><script src="https://sdk.mrf.io/statics/compass-multimedia-sdk.js?version=2171" id="multimedia" type="module"></script><script src="https://sdk.mrf.io/statics/compass-multimedia-sdk.es5.js?version=2171" id="multimedia" nomodule="" defer=""></script><script src="//secure.cdn.fastclick.net/js/pubcid/latest/pubcid.min.js"></script><script src="https://cdn-ima.33across.com/ima.js"></script><script src="//cdn.id5-sync.com/api/1.0/id5-api.js"></script><script async="" type="text/javascript" src="https://secure.cdn.fastclick.net/js/cnvr-launcher/latest/launcher-stub.min.js"></script><style type="text/css" id="bc_async_1762544689032">div.dfm-sidebar-most-popular-flex-container, Div.dfm-most-popular-flex-container {opacity:0.0;filter:alpha(opacity=0);}
+</style><script async="" type="osano/blocked"></script><script async="" defer="" id="ntv_iiq_script" type="osano/blocked"></script><script type="text/javascript" src="https://jadserve.postrelease.com/t?ntv_mvi=&amp;us_privacy=1---&amp;ntv_url=https%253A%252F%252Fwww.pressdemocrat.com%252Fnorth-bay-business-journal%252Farticle%252Findustrynews%252Fstate-farm-jome-insurance-rates%252F"></script></head>
+
+			<body class="error404 wp-custom-logo wp-theme-wp-mason wp-child-theme-scng"><div data-nosnippet="" class="osano-cm-window" dir="ltr"><!----> <!--?lit$6146222233$--><div hidden="" class="osano-visually-hidden"> <span id="osano-cm-aria.newWindow"><!--?lit$6146222233$-->Opens in a new window</span> <span id="osano-cm-aria.external"><!--?lit$6146222233$-->Opens an external website</span> <span id="osano-cm-aria.externalNewWindow"><!--?lit$6146222233$-->Opens an external website in a new window</span> </div> <!--?lit$6146222233$--> <div role="dialog" id="4584aa2f-a079-4d2f-b457-bb75e16c6a73" aria-label="Cookie Consent Banner" aria-describedby="4584aa2f-a079-4d2f-b457-bb75e16c6a73__label" class="osano-cm-window__dialog osano-cm-dialog osano-cm-dialog--position_bottom osano-cm-dialog--type_bar"> <!--?lit$6146222233$--> <button class=" osano-cm-dialog__close osano-cm-close "> <!--?lit$6146222233$--><svg width="20px" height="20px" viewBox="0 0 20 20" role="img" aria-labelledby="88199b46-d009-4405-be87-b80aeb04257c"> <title id="88199b46-d009-4405-be87-b80aeb04257c"><!---->Close this dialog<!----></title> <line role="presentation" x1="2" y1="2" x2="18" y2="18"></line> <line role="presentation" x1="2" y1="18" x2="18" y2="2"></line> </svg> </button>  <div class=" osano-cm-dialog__content osano-cm-content "> <!--?lit$6146222233$--> <span id="4584aa2f-a079-4d2f-b457-bb75e16c6a73__label" class=" osano-cm-content__message osano-cm-message "> <!--?lit$6146222233$-->This website utilizes technologies such as cookies to enable essential site functionality, as well as for analytics, personalization, and targeted advertising. <!--?lit$6146222233$-->To learn more, view the following link: <!--?lit$6146222233$--> </span>  <!--?lit$6146222233$--> <!--?lit$6146222233$--><!--?lit$6146222233$--><a rel="noopener" tabindex="0" href="https://www.medianewsgroup.com/privacy-policy/" target="_blank" class=" osano-cm-storage-policy osano-cm-content__link osano-cm-link " aria-describedby="osano-cm-aria.newWindow"><!--?lit$6146222233$-->Data Storage Policy</a><!--?--><!--?lit$6146222233$--><!----><span class="osano-cm-link-separator"></span><!--?lit$6146222233$--><!--?lit$6146222233$--><a rel="noopener" tabindex="0" href="https://business.safety.google/privacy/" target="_blank" class=" osano-cm-additional-link osano-cm-content__link osano-cm-link " aria-describedby="osano-cm-aria.newWindow"><!--?lit$6146222233$-->Google Privacy Policy</a><!--?--><!--?--><!----> <!--?lit$6146222233$--> <!--?lit$6146222233$--> </div> <!--?lit$6146222233$--> </div>  <!--?lit$6146222233$--> <button id="1ff6a376-ee91-4f4e-92eb-aafad63f26bd" class=" osano-cm-window__widget osano-cm-widget osano-cm-widget--hidden osano-cm-widget--position_right " title="Cookie Preferences" aria-label="Cookie Preferences"> <svg role="img" width="40" height="40" viewBox="0 0 71.85 72.23" xmlns="http://www.w3.org/2000/svg" aria-labelledby="1ff6a376-ee91-4f4e-92eb-aafad63f26bd"> <path d="m67.6 36.73a6.26 6.26 0 0 1 -3.2-2.8 5.86 5.86 0 0 0 -5.2-3.1h-.3a11 11 0 0 1 -11.4-9.5 6 6 0 0 1 -.1-1.4 9.2 9.2 0 0 1 .4-2.9 8.65 8.65 0 0 0 .2-1.6 5.38 5.38 0 0 0 -1.9-4.3 7.3 7.3 0 0 1 -2.5-5.5 3.91 3.91 0 0 0 -3.5-3.9 36.46 36.46 0 0 0 -15 1.5 33.14 33.14 0 0 0 -22.1 22.7 35.62 35.62 0 0 0 -1.5 10.2 34.07 34.07 0 0 0 4.8 17.6.75.75 0 0 0 .07.12c.11.17 1.22 1.39 2.68 3-.36.47 5.18 6.16 5.65 6.52a34.62 34.62 0 0 0 55.6-21.9 4.38 4.38 0 0 0 -2.7-4.74z" stroke-width="3" class=" osano-cm-widget__outline osano-cm-outline "></path> <path d="m68 41.13a32.37 32.37 0 0 1 -52 20.5l-2-1.56c-2.5-3.28-5.62-7.15-5.81-7.44a32 32 0 0 1 -4.5-16.5 34.3 34.3 0 0 1 1.4-9.6 30.56 30.56 0 0 1 20.61-21.13 33.51 33.51 0 0 1 14.1-1.4 1.83 1.83 0 0 1 1.6 1.8 9.38 9.38 0 0 0 3.3 7.1 3.36 3.36 0 0 1 1.2 2.6 3.37 3.37 0 0 1 -.1 1 12.66 12.66 0 0 0 -.5 3.4 9.65 9.65 0 0 0 .1 1.7 13 13 0 0 0 10.5 11.2 16.05 16.05 0 0 0 3.1.2 3.84 3.84 0 0 1 3.5 2 10 10 0 0 0 4.1 3.83 2 2 0 0 1 1.4 2z" stroke-width="3" class=" osano-cm-widget__outline osano-cm-outline "></path> <g class=" osano-cm-widget__dot osano-cm-dot "> <path d="m26.6 31.43a5.4 5.4 0 1 1 5.4-5.43 5.38 5.38 0 0 1 -5.33 5.43z"></path> <path d="m25.2 53.13a5.4 5.4 0 1 1 5.4-5.4 5.44 5.44 0 0 1 -5.4 5.4z"></path> <path d="m47.9 52.33a5.4 5.4 0 1 1 5.4-5.4 5.32 5.32 0 0 1 -5.24 5.4z"></path> </g> </svg> </button>  <!--?lit$6146222233$--><div role="dialog" aria-modal="true" id="5445404f-cfe1-4feb-8b69-a8d491e52629" aria-labelledby="5445404f-cfe1-4feb-8b69-a8d491e52629__label" aria-hidden="true" class=" osano-cm-window__info-dialog osano-cm-info-dialog osano-cm-info-dialog--hidden "> <!--?lit$6146222233$--><!--?lit$6146222233$--><span tabindex="0" aria-hidden="true" data-focus="first"></span><!--?--> <div role="presentation" class=" osano-cm-info-dialog__info osano-cm-info osano-cm-info--position_right "> <!--?lit$6146222233$--><div role="presentation" class=" osano-cm-info__info-dialog-header osano-cm-info-dialog-header "> <p role="heading" aria-level="1" id="5445404f-cfe1-4feb-8b69-a8d491e52629__label" class=" osano-cm-info-dialog-header__header osano-cm-header "> <!--?lit$6146222233$--> </p> <!--?lit$6146222233$--> <button class=" osano-cm-info-dialog-header__close osano-cm-close "> <!--?lit$6146222233$--><svg width="20px" height="20px" viewBox="0 0 20 20" role="img" aria-labelledby="4fb8b6c7-1f5c-4d2b-ad37-902912eb7b0c"> <title id="4fb8b6c7-1f5c-4d2b-ad37-902912eb7b0c"><!---->Close Cookie Preferences<!----></title> <line role="presentation" x1="2" y1="2" x2="18" y2="18"></line> <line role="presentation" x1="2" y1="18" x2="18" y2="2"></line> </svg> </button> <!--?lit$6146222233$--> </div> <div role="presentation" class=" osano-cm-info__info-views osano-cm-info-views osano-cm-info-views--hidden osano-cm-info-views--position_0 "> <!--?lit$6146222233$--> </div> </div> <!--?lit$6146222233$--><!--?lit$6146222233$--><span tabindex="0" aria-hidden="true" data-focus="last"></span><!--?--> </div> </div>
+
+			<iframe name="__gppLocator" style="display: none;"></iframe><iframe name="__tcfapiLocator" style="display: none;"></iframe><iframe name="__uspapiLocator" style="display: none;"></iframe><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-TLFP4R' height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+			<a href="#content" class="sr-only">Skip to content</a>
+			
+			<div id="page" class="hfeed site">
+
+			<div class="header-placeholder" style="display: none;"></div><header class="site-header default headroom--top headroom">
+			<div class="nav-wrapper-primary">
+
+				<div class="nav-wrapper-secondary">
+
+					<div class="screen-wrapper">
+
+						<div class="nav-primary-top">
+
+										<div class="pushnav-flex-wrapper">
+				<nav class="pushnav" role="navigation" aria-label="Main Menu" id="pushnav-container"><div id="menu-toggle" class="menu-toggle" role="button" aria-expanded="false" tabindex="0" aria-label="Open menu of all sections"><span class="icon-hamburger"></span><span class="menu-label">All Sections</span></div>
+					<div class="wrapper-nav pushnav pushnav-left">
+						<div class="border-container">
+							<div class="top-pushnav-container">
+															<a href="https://subscribe.pressdemocrat.com/?g2i_source=SB&amp;g2i_medium=side-nav&amp;g2i_campaign=nav&amp;returnUrl=https%253A%252F%252Fwww.pressdemocrat.com%252Fnorth-bay-business-journal%252Farticle%252Findustrynews%252Fstate-farm-jome-insurance-rates%252F" id="mega-subscribe-button" class="subscribe-button" tabindex="-1" aria-hidden="true" style="display: flex;">
+									<span>Subscribe Now</span>								</a>
+												<div class="accuweather-wrap">
+					<div class="weather-date">
+								<div class="dfm_accuweather_current_conditions">
+				<a target="_blank" href="http://www.accuweather.com/en/us/santa-rosa-ca/95401/current-weather/39950_pc?lang=en-us" title="Current Weather Conditions" aria-label="Current temperature is 63°F, view full weather conditions in a new window" tabindex="-1" aria-hidden="true">
+					<span>63°F</span>
+					<i class="bi-clouds" role="img" aria-label="weather icon clouds"></i>
+				</a>
+			</div>						<div class="date">
+							Friday, November 7th 2025									<a title="Link to E-Edition opens in a new window" target="_blank" href="https://enewspaper.pressdemocrat.com/" tabindex="-1" aria-hidden="true">
+									<p class="e-edition">eEdition</p>									</a>
+														</div>
+					</div>
+				</div>
+											<a href="https://www.pressdemocrat.com" class="home-link icon-home3" title="Link to Home Page" tabindex="-1" aria-hidden="true">
+									<span>Home Page</span>
+								</a>
+							</div>
+							<ul id="pushnav" class="menu"><li id="menu-item-3230208" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3230208 menu-large"><a href="https://www.pressdemocrat.com/comics/" tabindex="-1" aria-hidden="true">Comics</a></li>
+<li id="menu-item-1748031" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1748031 menu-large"><a href="http://www.accuweather.com/en/us/santa-rosa-ca/95401/current-weather/39950_pc?lang=en-us" tabindex="-1" aria-hidden="true">Weather</a></li>
+<li id="menu-item-288" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-288 menu-large"><a href="https://enewspaper.pressdemocrat.com/html5/reader/production/default.aspx?pubname=&amp;pubid=fd2fe5d4-73f2-4a83-a019-681071bbd5d0" tabindex="-1" aria-hidden="true">eEdition</a></li>
+<li id="menu-item-289" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-289 menu-large"><a href="https://www.pressdemocrat.com/obituaries/" aria-expanded="false" aria-haspopup="true" tabindex="-1" aria-hidden="true">Obituaries</a>
+<ul class="sub-menu">
+	<li id="menu-item-1747905" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1747905 menu-large"><a href="https://www.legacy.com/us/obituaries/pressdemocrat/browse" tabindex="-1" aria-hidden="true">Obituaries</a></li>
+	<li id="menu-item-291" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-291 menu-large"><a href="https://www.pressdemocrat.com/news/news-obituaries/" tabindex="-1" aria-hidden="true">News Obituaries</a></li>
+</ul>
+</li>
+<li id="menu-item-292" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-292 menu-large"><a href="https://www.pressdemocrat.com/news/" aria-expanded="false" aria-haspopup="true" tabindex="-1" aria-hidden="true">News</a>
+<ul class="sub-menu">
+	<li id="menu-item-293" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-293 menu-large"><a href="https://www.pressdemocrat.com/news/" tabindex="-1" aria-hidden="true">News</a></li>
+	<li id="menu-item-294" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-294 menu-large"><a href="https://www.pressdemocrat.com/local-news/" tabindex="-1" aria-hidden="true">Local News</a></li>
+	<li id="menu-item-296" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-296 menu-large"><a href="https://www.pressdemocrat.com/news/california-news/" tabindex="-1" aria-hidden="true">State</a></li>
+	<li id="menu-item-297" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-297 menu-large"><a href="https://www.pressdemocrat.com/news/national/" tabindex="-1" aria-hidden="true">Nation</a></li>
+	<li id="menu-item-298" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-298 menu-large"><a href="https://www.pressdemocrat.com/news/world/" tabindex="-1" aria-hidden="true">World</a></li>
+	<li id="menu-item-299" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-299 menu-large"><a href="https://www.pressdemocrat.com/news/crime-public-safety/" tabindex="-1" aria-hidden="true">Crime</a></li>
+	<li id="menu-item-300" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-300 menu-large"><a href="https://www.pressdemocrat.com/news/politics/" tabindex="-1" aria-hidden="true">Politics</a></li>
+	<li id="menu-item-302" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-302 menu-large"><a href="https://www.pressdemocrat.com/news/education/" tabindex="-1" aria-hidden="true">Education</a></li>
+	<li id="menu-item-1747906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1747906 menu-large"><a href="https://www.legacy.com/us/obituaries/pressdemocrat/browse" tabindex="-1" aria-hidden="true">Obituaries</a></li>
+	<li id="menu-item-1747907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1747907 menu-large"><a href="https://www.pressdemocrat.com/weather/" tabindex="-1" aria-hidden="true">Weather</a></li>
+	<li id="menu-item-305" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-305 menu-large"><a href="https://www.pressdemocrat.com/tag/photos-and-videos/" tabindex="-1" aria-hidden="true">Galleries</a></li>
+	<li id="menu-item-306" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-306 menu-large"><a href="https://myaccount.pressdemocrat.com/pd/preference" tabindex="-1" aria-hidden="true">Newsletters</a></li>
+	<li id="menu-item-307" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-307 menu-large"><a href="https://www.pressdemocrat.com/archives-retired/?ref=nav" tabindex="-1" aria-hidden="true">Archives</a></li>
+</ul>
+</li>
+<li id="menu-item-308" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-308 menu-large"><a href="https://www.pressdemocrat.com/sports/" aria-expanded="false" aria-haspopup="true" tabindex="-1" aria-hidden="true">Sports</a>
+<ul class="sub-menu">
+	<li id="menu-item-309" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-309 menu-large"><a href="https://www.pressdemocrat.com/sports/" tabindex="-1" aria-hidden="true">Sports</a></li>
+	<li id="menu-item-310" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-310 menu-large"><a href="https://www.pressdemocrat.com/sports/high-school-sports/" tabindex="-1" aria-hidden="true">Prep</a></li>
+	<li id="menu-item-311" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-311 menu-large"><a href="https://www.pressdemocrat.com/sports/college-sports/" tabindex="-1" aria-hidden="true">College</a></li>
+	<li id="menu-item-312" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-312 menu-large"><a href="https://www.pressdemocrat.com/sports/mlb/" tabindex="-1" aria-hidden="true">MLB</a></li>
+	<li id="menu-item-313" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-313 menu-large"><a href="https://www.pressdemocrat.com/sports/nba/" tabindex="-1" aria-hidden="true">NBA</a></li>
+	<li id="menu-item-314" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-314 menu-large"><a href="https://www.pressdemocrat.com/sports/nfl/" tabindex="-1" aria-hidden="true">NFL</a></li>
+	<li id="menu-item-315" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-315 menu-large"><a href="https://www.pressdemocrat.com/sports/nhl/" tabindex="-1" aria-hidden="true">NHL</a></li>
+</ul>
+</li>
+<li id="menu-item-316" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-316 menu-large"><a href="https://www.pressdemocrat.com/opinion/" aria-expanded="false" aria-haspopup="true" tabindex="-1" aria-hidden="true">Opinion</a>
+<ul class="sub-menu">
+	<li id="menu-item-317" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-317 menu-large"><a href="https://www.pressdemocrat.com/opinion/" tabindex="-1" aria-hidden="true">Opinion</a></li>
+	<li id="menu-item-318" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-318 menu-large"><a href="https://www.pressdemocrat.com/opinion/editorials/" tabindex="-1" aria-hidden="true">Editorial</a></li>
+	<li id="menu-item-319" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-319 menu-large"><a href="https://www.pressdemocrat.com/tag/close-to-home/" tabindex="-1" aria-hidden="true">Close to Home</a></li>
+	<li id="menu-item-320" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-320 menu-large"><a href="https://www.pressdemocrat.com/opinion/letters-to-the-editor/" tabindex="-1" aria-hidden="true">Letters</a></li>
+</ul>
+</li>
+<li id="menu-item-322" class="menu-item menu-item-type-taxonomy menu-item-object-location menu-item-has-children menu-item-322 menu-large"><a href="https://www.pressdemocrat.com/location/california/northern-california/north-bay/napa-county/napa/" aria-expanded="false" aria-haspopup="true" tabindex="-1" aria-hidden="true">Napa</a>
+<ul class="sub-menu">
+	<li id="menu-item-323" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-323 menu-large"><a href="https://www.pressdemocrat.com/tag/napa-news/" tabindex="-1" aria-hidden="true">Napa News</a></li>
+	<li id="menu-item-324" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-324 menu-large"><a href="https://www.pressdemocrat.com/tag/napa-entertainment/" tabindex="-1" aria-hidden="true">Napa Entertainment</a></li>
+	<li id="menu-item-325" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-325 menu-large"><a href="https://www.pressdemocrat.com/tag/napa-lifestyle/" tabindex="-1" aria-hidden="true">Napa Lifestyle</a></li>
+	<li id="menu-item-326" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-326 menu-large"><a href="https://www.pressdemocrat.com/tag/napa-dining/" tabindex="-1" aria-hidden="true">Napa Dining</a></li>
+	<li id="menu-item-327" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-327 menu-large"><a href="https://www.pressdemocrat.com/tag/napa-business/" tabindex="-1" aria-hidden="true">Napa Business</a></li>
+	<li id="menu-item-328" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-328 menu-large"><a href="https://www.pressdemocrat.com/tag/napa-sports/" tabindex="-1" aria-hidden="true">Napa Sports</a></li>
+</ul>
+</li>
+<li id="menu-item-336" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-336 menu-large"><a href="https://www.pressdemocrat.com/things-to-do/restaurants-food-drink/" aria-expanded="false" aria-haspopup="true" tabindex="-1" aria-hidden="true">Food &amp; Wine</a>
+<ul class="sub-menu">
+	<li id="menu-item-337" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-337 menu-large"><a href="https://www.pressdemocrat.com/things-to-do/restaurants-food-drink/" tabindex="-1" aria-hidden="true">Food &amp; Wine</a></li>
+	<li id="menu-item-338" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-338 menu-large"><a href="https://www.pressdemocrat.com/things-to-do/restaurants-food-drink/" tabindex="-1" aria-hidden="true">Where to Eat Now</a></li>
+	<li id="menu-item-340" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-340 menu-large"><a href="https://www.pressdemocrat.com/tag/wine/" tabindex="-1" aria-hidden="true">Wine</a></li>
+	<li id="menu-item-341" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-341 menu-large"><a href="https://www.pressdemocrat.com/tag/beer/" tabindex="-1" aria-hidden="true">Beer</a></li>
+	<li id="menu-item-1748039" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-1748039 menu-large"><a href="https://www.pressdemocrat.com/tag/recipes/" tabindex="-1" aria-hidden="true">Recipes</a></li>
+</ul>
+</li>
+<li id="menu-item-343" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-has-children menu-item-343 menu-large"><a href="https://www.pressdemocrat.com/tag/lifestyle/" aria-expanded="false" aria-haspopup="true" tabindex="-1" aria-hidden="true">Lifestyle</a>
+<ul class="sub-menu">
+	<li id="menu-item-344" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-344 menu-large"><a href="https://www.pressdemocrat.com/tag/lifestyle/" tabindex="-1" aria-hidden="true">Lifestyle</a></li>
+	<li id="menu-item-345" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-345 menu-large"><a href="https://www.pressdemocrat.com/things-to-do/home-garden/" tabindex="-1" aria-hidden="true">Home and Garden</a></li>
+	<li id="menu-item-346" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-346 menu-large"><a href="https://www.pressdemocrat.com/things-to-do/outdoors/" tabindex="-1" aria-hidden="true">Outdoors</a></li>
+	<li id="menu-item-347" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-347 menu-large"><a href="https://www.pressdemocrat.com/tag/beer/" tabindex="-1" aria-hidden="true">Beer</a></li>
+	<li id="menu-item-348" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-348 menu-large"><a href="https://www.pressdemocrat.com/things-to-do/pets-animals/" tabindex="-1" aria-hidden="true">Pets</a></li>
+	<li id="menu-item-349" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-349 menu-large"><a href="https://www.celebratecommunity.org/" tabindex="-1" aria-hidden="true">Celebrate Community</a></li>
+</ul>
+</li>
+<li id="menu-item-350" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-350 menu-large"><a href="https://www.pressdemocrat.com/things-to-do/arts/" aria-expanded="false" aria-haspopup="true" tabindex="-1" aria-hidden="true">A &amp; E</a>
+<ul class="sub-menu">
+	<li id="menu-item-351" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-351 menu-large"><a href="https://www.pressdemocrat.com/things-to-do/arts/" tabindex="-1" aria-hidden="true">Arts</a></li>
+	<li id="menu-item-352" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-352 menu-large"><a href="https://www.pressdemocrat.com/things-to-do/entertainment/" tabindex="-1" aria-hidden="true">Entertainment</a></li>
+	<li id="menu-item-353" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-353 menu-large"><a href="https://www.pressdemocrat.com/events/" tabindex="-1" aria-hidden="true">Events Guide</a></li>
+	<li id="menu-item-354" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-354 menu-large"><a href="https://www.pressdemocrat.com/things-to-do/tv-streaming/" tabindex="-1" aria-hidden="true">Television</a></li>
+	<li id="menu-item-3181023" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3181023 menu-large"><a href="https://www.pressdemocrat.com/tv-listings/" tabindex="-1" aria-hidden="true">TV Listings</a></li>
+</ul>
+</li>
+<li id="menu-item-355" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-355 menu-large"><a href="https://www.pressdemocrat.com/fun/" aria-expanded="false" aria-haspopup="true" tabindex="-1" aria-hidden="true">Fun</a>
+<ul class="sub-menu">
+	<li id="menu-item-356" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-356 menu-large"><a href="https://www.pressdemocrat.com/daily-crossword/" tabindex="-1" aria-hidden="true">Daily Crossword</a></li>
+	<li id="menu-item-357" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-357 menu-large"><a href="https://www.pressdemocrat.com/word-games/" tabindex="-1" aria-hidden="true">Word Games</a></li>
+	<li id="menu-item-358" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-358 menu-large"><a href="https://www.pressdemocrat.com/comics/" tabindex="-1" aria-hidden="true">Comics</a></li>
+	<li id="menu-item-359" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-359 menu-large"><a href="https://www.pressdemocrat.com/sudoku/" tabindex="-1" aria-hidden="true">Sudoku</a></li>
+	<li id="menu-item-361" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-361 menu-large"><a href="https://www.pressdemocrat.com/daily-mini-crossword/" tabindex="-1" aria-hidden="true">Daily Mini Crossword</a></li>
+	<li id="menu-item-362" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-362 menu-large"><a href="https://games.pressdemocrat.com/" tabindex="-1" aria-hidden="true">Free Games</a></li>
+</ul>
+</li>
+<li id="menu-item-363" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-363 menu-large"><a href="https://www.pressdemocrat.com/events/" tabindex="-1" aria-hidden="true">Events</a></li>
+<li id="menu-item-364" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-364 menu-large"><a href="https://myaccount.pressdemocrat.com/pd/preference" tabindex="-1" aria-hidden="true">Newsletters</a></li>
+<li id="menu-item-365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-365 menu-large"><a href="https://www.pressdemocrat.com/contests/" tabindex="-1" aria-hidden="true">Contests</a></li>
+<li id="menu-item-1627527" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1627527 menu-large"><a href="https://www.pressdemocrat.com/la-prensa/" tabindex="-1" aria-hidden="true">La Prensa</a></li>
+<li id="menu-item-1748033" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1748033 menu-large"><a href="https://www.pressdemocrat.com/sonoma-county-gazette/" tabindex="-1" aria-hidden="true">Sonoma County Gazette</a></li>
+<li id="menu-item-3238196" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3238196 menu-large"><a href="https://www.pressdemocrat.com/north-bay-business-journal/real-estate/" tabindex="-1" aria-hidden="true">Real Estate</a></li>
+<li id="menu-item-3275756" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3275756 menu-large"><a href="https://www.pressdemocrat.com/north-bay-business-journal/" tabindex="-1" aria-hidden="true">North Bay Business Journal</a></li>
+<li id="menu-item-330" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-330 menu-large"><a href="https://www.pressdemocrat.com/north-bay-business-journal/" tabindex="-1" aria-hidden="true">Business</a></li>
+<li id="menu-item-334" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-334 menu-large"><a href="https://www.pressdemocrat.com/tag/wine-business/" tabindex="-1" aria-hidden="true">Wine Business</a></li>
+</ul>						</div>
+						<div class="newsletter-nav">
+								<div class="newsletter-simple">
+		<div class="newsletter-item">
+			<p class="prompt">Sign up for email newsletters</p>
+			<a class="sign-up-button" href="https://myaccount.pressdemocrat.com/pd/preference" aria-label="Click here to go to the newsletter sign up page" tabindex="-1" aria-hidden="true">
+				Sign Up</a>
+		</div>
+	</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+						<div class="hidden-logo">
+				<div class="logo custom-logo"><a href="https://www.pressdemocrat.com" aria-label="The Press Democrat"><img src="https://www.pressdemocrat.com/wp-content/uploads/2025/08/pressdemocratblack-1.png" alt="The Press Democrat" width="3456" height="386"></a></div>			</div>
+							<div class="digisubs-wrapper">
+									<nav class="digisubs-pushmenu loaded" role="navigation" aria-label="Account Menu" id="digisubs-push-container">
+						<div id="digisubs-toggle" class="digisubs-toggle pushnav" role="button" aria-expanded="false" tabindex="0" aria-label="Open menu">
+							<div id="mng-icon-image">
+								<img id="pushnav-icon" alt="">
+								<div id="blank-icon-user">
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 32 32">
+										<path fill="#000000" d="M18 22.082v-1.649c2.203-1.241 4-4.337 4-7.432 0-4.971 0-9-6-9s-6 4.029-6 9c0 3.096 1.797 6.191 4 7.432v1.649c-6.784 0.555-12 3.888-12 7.918h28c0-4.030-5.216-7.364-12-7.918z"></path>
+									</svg>
+								</div>
+								<span class="icon-arrow-down"></span>
+							</div>
+						</div>
+						<div class="wrapper-nav-subs pushnav pushnav-right">
+							<div class="border-container">
+								<ul id="dfm-digisubs-push-menu" class="menu"><li id="menu-item-22903" class="subscribe-visibility subscribe-special custom-button menu-item menu-item-type-custom menu-item-object-custom menu-item-22903" style="display: block;"><a href="https://subscribe.pressdemocrat.com/?g2i_source=SB&amp;g2i_medium=nav2&amp;g2i_campaign=nav&amp;returnUrl=https%253A%252F%252Fwww.pressdemocrat.com%252Fnorth-bay-business-journal%252Farticle%252Findustrynews%252Fstate-farm-jome-insurance-rates%252F%253FnewUser%253Dtrue" tabindex="-1" aria-hidden="true">Subscribe</a></li>
+<li id="menu-item-22904" class="log-in-button subscribe-special custom-button menu-item menu-item-type-custom menu-item-object-custom menu-item-22904" style="visibility: visible; display: block;"><a href="https://www.pressdemocrat.com/login?returnUrl=https%3A%2F%2Fwww.pressdemocrat.com%2Fnorth-bay-business-journal%2Farticle%2Findustrynews%2Fstate-farm-jome-insurance-rates%2F" tabindex="-1" aria-hidden="true">Log in</a></li>
+</ul>								<div id="push-account-content">
+									<div class="show-digisubs-push" id="email-source-wrapper">
+										<a class="account-link" id="push-email-link" tabindex="-1" aria-hidden="true"></a>
+										<p class="logged-in-source" id="push-auth-source"></p>
+									</div>
+									<a class="show-digisubs-push account-link" id="push-account-link" data-mng-click="account-settings" data-mng-category="account-link" data-mng-action="account-settings" tabindex="-1" aria-hidden="true">Account Settings</a>
+									<a class="show-digisubs-push" id="push-contact-us" href="/contact-us" data-mng-click="contact-us" data-mng-category="account-link" data-mng-action="contact-us" tabindex="-1" aria-hidden="true">Contact Us</a>
+									<a class="show-digisubs-push" id="push-log-out" href="/logout" data-mng-click="log-out" data-mng-category="account-link" data-mng-action="log-out" tabindex="-1" aria-hidden="true">Log Out</a>
+									<div class="show-digisubs-push marketing-slot" id="push-marketing-slot"></div>
+									<label class="user-spoof">Spoof a user</label>
+									<input id="push-user-spoof-control" class="user-spoof" type="checkbox">
+									<ul id="newsLetterItem-push" class="newsLetterContent"></ul>
+								</div>
+							</div>
+							<div class="newsletter-nav">
+									<div class="newsletter-simple">
+		<div class="newsletter-item">
+			<p class="prompt">Sign up for email newsletters</p>
+			<a class="sign-up-button" href="https://myaccount.pressdemocrat.com/pd/preference" aria-label="Click here to go to the newsletter sign up page" tabindex="-1" aria-hidden="true">
+				Sign Up</a>
+		</div>
+	</div>
+							</div>
+						</div>
+					</nav>
+					<div class="digisubs-wrapper-large" id="digisubs-wrapper-large">
+						<ul id="dfm-digisubs-menu" class="menu" data-status="logged-out"><li id="menu-item-22905" class="subscribe-visibility subscribe-special custom-button menu-item menu-item-type-custom menu-item-object-custom menu-item-22905" style="display: block;"><a href="https://subscribe.pressdemocrat.com/?g2i_source=SB&amp;g2i_medium=nav2&amp;g2i_campaign=nav&amp;returnUrl=https%253A%252F%252Fwww.pressdemocrat.com%252Fnorth-bay-business-journal%252Farticle%252Findustrynews%252Fstate-farm-jome-insurance-rates%252F%253FnewUser%253Dtrue">Subscribe</a></li>
+<li id="menu-item-22906" class="log-in-button subscribe-special custom-button menu-item menu-item-type-custom menu-item-object-custom menu-item-22906" style="display: block; visibility: visible;"><a href="https://www.pressdemocrat.com/login?returnUrl=https%3A%2F%2Fwww.pressdemocrat.com%2Fnorth-bay-business-journal%2Farticle%2Findustrynews%2Fstate-farm-jome-insurance-rates%2F">Log in</a></li>
+</ul>					</div>
+									</div>
+			<div class="search-icon-wrapper"><span class="icon-search" aria-label="Click here or hit enter to open a Search box" id="dfm-search-icon" role="button" tabindex="0" aria-expanded="false"></span></div><form class="search-form header-search" method="GET" id="search-bar" action="https://www.pressdemocrat.com/">
+
+		<div class="input-wrapper">
+			<span class="icon-search" aria-hidden="true"></span>
+		<input id="mng-search-focus" type="text" placeholder="Type your search" name="s" aria-label="Type your search">
+		<input name="orderby" type="hidden" value="date">
+		<input name="order" type="hidden" value="desc">
+				<div class="search-button-container">
+			<button class="search-button" type="submit">
+				<span>Search</span>
+			</button>
+		</div>
+	</div>
+	
+</form>
+
+
+						</div>
+
+					</div>
+
+					<div class="nav-primary-middle">
+
+										<div class="accuweather-wrap">
+					<div class="weather-date">
+								<div class="dfm_accuweather_current_conditions">
+				<a target="_blank" href="http://www.accuweather.com/en/us/santa-rosa-ca/95401/current-weather/39950_pc?lang=en-us" title="Current Weather Conditions" aria-label="Current temperature is 63°F, view full weather conditions in a new window">
+					<span>63°F</span>
+					<i class="bi-clouds" role="img" aria-label="weather icon clouds"></i>
+				</a>
+			</div>						<div class="date">
+							Friday, November 7th 2025									<a title="Link to E-Edition opens in a new window" target="_blank" href="https://enewspaper.pressdemocrat.com/">
+									<p class="e-edition">eEdition</p>									</a>
+														</div>
+					</div>
+				</div>
+			<div class="hidden-logo"></div>			<div class="sponsorship-ad-wrapper">
+								<div class="dfp-ad dfp-sponsorship_1" id="div-gpt-ad-sponsorship_1">
+					<div class="htlad-sponsorship_1" data-unit="pressdemocrat.com/sponsorship_1" data-targeting=""><div class="htl-ad" id="htlad-1" data-unit="pressdemocrat.com/sponsorship_1" name="htlunit-sponsorship_1" data-eager="" data-sizes="0x0:320x50,300x50|750x0:300x50,320x50|1000x0:300x50,320x50" data-prebid="0x0:sponsorship_1-Mobile|750x0:sponsorship_1-Tablet|1000x0:sponsorship_1-Desktop" data-refresh="viewable" data-refresh-secs="30" data-refresh-max="100" data-targeting="{&quot;pos&quot;:[&quot;Sponsorship_1&quot;]}"><div class="htl-ad-gpt" id="htlad-1-gpt"></div></div></div>
+				</div>			</div>
+			
+					</div>
+
+					<div class="nav-primary-bottom">
+
+									<div class="nav-primary">
+			<ul id="subnav-fallback-menu" class="menu"><li id="menu-item-405" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-405"><a href="https://www.pressdemocrat.com/news/">News</a></li>
+<li id="menu-item-416" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-416"><a href="https://www.pressdemocrat.com/sports/">Sports</a></li>
+<li id="menu-item-424" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-424"><a href="https://www.pressdemocrat.com/opinion/">Opinion</a></li>
+<li id="menu-item-1697499" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1697499"><a href="https://www.legacy.com/us/obituaries/pressdemocrat/browse">Obituaries</a></li>
+<li id="menu-item-437" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-437"><a href="https://www.pressdemocrat.com/north-bay-business-journal/">Business</a></li>
+<li id="menu-item-430" class="menu-item menu-item-type-taxonomy menu-item-object-location menu-item-430"><a href="https://www.pressdemocrat.com/location/california/northern-california/north-bay/napa-county/napa/">Napa</a></li>
+<li id="menu-item-444" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-444"><a href="https://www.pressdemocrat.com/things-to-do/restaurants-food-drink/">Dining, Wine &amp; Food</a></li>
+<li id="menu-item-1757188" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1757188"><a href="https://www.pressdemocrat.com/things-to-do/entertainment/">Entertainment</a></li>
+<li id="menu-item-3256412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3256412"><a href="https://www.pressdemocrat.com/events/">Events</a></li>
+<li id="menu-item-3273109" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3273109"><a href="https://www.sonomamag.com/">Sonoma Magazine</a></li>
+</ul>			</div>
+			
+					</div>
+
+				</div>
+
+				
+<div class="widget widget-trending-stories"><div class="trending-bar trending">
+	<div class="trending-bar-wrapper" data-mrf-recirculation="Trending Bar">
+		<p class="label">
+			Trending:		</p>
+		<nav>
+			<ul>
+					<li class="entry-title ">
+
+			<a class="article-title" href="https://www.pressdemocrat.com/2025/11/06/santa-rosa-sheryl-oloughlin-heart-attack-cpr/" title="Santa Rosa woman’s life saved by husband and bystander’s quick action, CPR training" data-mrf-link="https://www.pressdemocrat.com/2025/11/06/santa-rosa-sheryl-oloughlin-heart-attack-cpr/" cmp-ltrk="Trending Bar" cmp-ltrk-idx="0" mrfobservableid="e8739367-aaf8-4c61-9e3d-ccb412bdc9c8">
+	
+				<span class="dfm-title metered">
+			Local man saves wife’s life		</span>
+
+
+
+			</a>
+	
+	
+	</li>
+	<li class="entry-title ">
+
+			<a class="article-title" href="https://www.pressdemocrat.com/2025/11/05/sonoma-saddle-tack-shop-retail-closures/" title="Longtime Sebastopol saddle shop closes amid wider industry pressure" data-mrf-link="https://www.pressdemocrat.com/2025/11/05/sonoma-saddle-tack-shop-retail-closures/" cmp-ltrk="Trending Bar" cmp-ltrk-idx="1" mrfobservableid="e443482d-5935-40f9-848f-2b9a0fbf6163">
+	
+				<span class="dfm-title metered">
+			Saddle shop closes		</span>
+
+
+
+			</a>
+	
+	
+	</li>
+	<li class="entry-title ">
+
+			<a class="article-title" href="https://www.pressdemocrat.com/2025/11/05/miss-universe-contestants-walk-out-miss-mexico-insults/" title="Miss Universe contestants walk out after pageant exec insults Miss Mexico" data-mrf-link="https://www.pressdemocrat.com/2025/11/05/miss-universe-contestants-walk-out-miss-mexico-insults/" cmp-ltrk="Trending Bar" cmp-ltrk-idx="2" mrfobservableid="1ddfdea8-5ecb-43e9-a2d7-c9d24a3c1739">
+	
+				<span class="dfm-title metered">
+			Video: Miss Universe contestants walk out		</span>
+
+
+
+			</a>
+	
+	
+	</li>
+	<li class="entry-title ">
+
+			<a class="article-title" href="https://www.pressdemocrat.com/2025/11/04/california-prop-50-live-election-results/" title="California Prop. 50 election results by county – map" data-mrf-link="https://www.pressdemocrat.com/2025/11/04/california-prop-50-live-election-results/" cmp-ltrk="Trending Bar" cmp-ltrk-idx="3" mrfobservableid="eaf10f9b-8c22-48fd-9f5e-1b21d8b91d7a">
+	
+				<span class="dfm-title free">
+			Prop. 50 election results by county		</span>
+
+
+
+			</a>
+	
+	
+	</li>
+	<li class="entry-title ">
+
+			<a class="article-title" href="https://www.pressdemocrat.com/2025/11/02/culinary-notables-toast-memory-of-john-ash-father-of-wine-country-cuisine/" title="Culinary notables toast memory of John Ash, father of Wine Country cuisine" data-mrf-link="https://www.pressdemocrat.com/2025/11/02/culinary-notables-toast-memory-of-john-ash-father-of-wine-country-cuisine/" cmp-ltrk="Trending Bar" cmp-ltrk-idx="4" mrfobservableid="c4aefd03-29e6-45c9-a876-57d6ffb77ebb">
+	
+				<span class="dfm-title metered">
+			John Ash memorial		</span>
+
+
+
+			</a>
+	
+	
+	</li>
+	<li class="entry-title ">
+
+			<a class="article-title" href="https://www.pressdemocrat.com/2025/11/01/mike-mcguire-congress-1st-district-maps/" title="Mike McGuire won’t say, but signs point to him running for Congress if Prop. 50 passes" data-mrf-link="https://www.pressdemocrat.com/2025/11/01/mike-mcguire-congress-1st-district-maps/" cmp-ltrk="Trending Bar" cmp-ltrk-idx="5" mrfobservableid="16db86cb-f569-4aaf-954e-5e3dad07d97e">
+	
+				<span class="dfm-title metered">
+			Is Congress next for McGuire?		</span>
+
+
+
+			</a>
+	
+	
+	</li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+</div>
+			</div>
+			</header><div id="content" class="site-content headroom headroom--top">
+						<div class="header-banners">
+								<div class="dfp-ad dfp-interstitial" id="div-gpt-ad-interstitial">
+					<div class="htlad-interstitial" data-unit="pressdemocrat.com/interstitial" data-targeting=""><div class="htl-ad" id="htlad-2" data-unit="pressdemocrat.com/interstitial" name="htlunit-interstitial" data-eager="" data-sizes="0x0:1x1|750x0:1x1|1000x0:1x1" data-prebid="0x0:interstitial-Mobile|750x0:interstitial-Tablet|1000x0:interstitial-Desktop" data-targeting="{&quot;pos&quot;:[&quot;interstitial&quot;]}"><div class="htl-ad-gpt" id="htlad-2-gpt"></div></div></div>
+				</div>				<div class="dfp-ad dfp-top_leaderboard" id="div-gpt-ad-top_leaderboard">
+					<div class="htlad-top_leaderboard" data-unit="pressdemocrat.com/top_leaderboard" data-targeting=""><div class="htl-ad" id="htlad-3" data-unit="pressdemocrat.com/top_leaderboard" name="htlunit-top_leaderboard" data-eager="" data-sizes="0x0:300x50,320x100,320x50|750x0:728x90|1000x0:728x90,970x90,970x250" data-prebid="0x0:top_leaderboard-Mobile|750x0:top_leaderboard-Tablet|1000x0:top_leaderboard-Desktop" data-refresh="viewable" data-refresh-secs="30" data-refresh-max="100" data-targeting="{&quot;pos&quot;:[&quot;top_leaderboard&quot;]}"><div class="htl-ad-gpt" id="htlad-3-gpt"></div></div></div>
+				</div>			</div>
+			
+
+			
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			<section class="error-404 not-found">
+				<header>
+					<h1 class="search-title">Oops! That page can’t be found.</h1>
+											<form id="text-search" class="search-form large" method="GET" action="https://www.pressdemocrat.com/">
+							<input name="s" type="text" placeholder="Search" value="" aria-label="Search">
+														<a href="#" id="icon-search" class="icon-search"></a>
+						</form>
+									</header>
+			</section><!-- .error-404 -->
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+
+			
+			</div><!-- #content -->
+
+						<footer class="site-footer">
+
+							<div class="main-footer-wrapper">
+
+				<div class="footer-logo">
+
+					<div class="logo custom-logo"><a href="https://www.pressdemocrat.com" aria-label="The Press Democrat"><img src="https://www.pressdemocrat.com/wp-content/uploads/2025/08/pressdemocratblack-1.png" alt="The Press Democrat" width="3456" height="386"></a></div>
+				</div>
+
+				<ul id="footer-menu" class="footer-menus"><li id="menu-item-374" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-374"><a>Contact &amp; Help</a><span class="expander"><a href="#" class="icon-plus" aria-label="Click here to expand the menu"></a></span>
+
+<ul class="footer-menu">
+	<li id="menu-item-375" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-375"><a href="https://www.pressdemocrat.com/contact-us/">Contact Us</a></li>
+	<li id="menu-item-3162904" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3162904"><a href="https://www.pressdemocrat.com/advertise/">Advertise</a></li>
+	<li id="menu-item-378" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-378"><a href="http://www.pressdemocrat.com/submit-letters">Submit Letters to the Editor</a></li>
+	<li id="menu-item-379" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-379"><a href="https://classifieds.pressdemocrat.com/?ref=footer">Classified Ads</a></li>
+	<li id="menu-item-3155359" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3155359"><a href="https://www.pressdemocrat.com/legals/">Legals</a></li>
+	<li id="menu-item-1757215" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1757215"><a href="https://santarosapressdemocrat-ca.newsmemory.com/ssindex.php">Special Sections</a></li>
+	<li id="menu-item-381" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-381"><a href="https://specialsections.pressdemocrat.com/?ref=footer">Special Sections: 6/2023 – present</a></li>
+	<li id="menu-item-382" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-382"><a href="https://newsstand.pressdemocrat.com/?ref=footer">Retail Locations</a></li>
+</ul>
+</li>
+<li id="menu-item-383" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-383"><a>Services</a><span class="expander"><a href="#" class="icon-plus" aria-label="Click here to expand the menu"></a></span>
+
+<ul class="footer-menu">
+	<li id="menu-item-384" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-384"><a href="https://pressdemocrat.newsbank.com/?ref=footer">Archive Search: 1995 – present</a></li>
+	<li id="menu-item-385" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-385"><a href="https://www.newspapers.com/paper/the-press-democrat/5136/?id=5136&amp;title=the-press-democrat">Archive Search: 1923 – 1997</a></li>
+	<li id="menu-item-386" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-386"><a href="https://cdnc.ucr.edu/?ref=footer">Archive Search: 1875 – 1928</a></li>
+	<li id="menu-item-387" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-387"><a href="https://santarosapressdemocrat-ca.newsmemory.com/?token=2a6f8a1ef15feb87c36d2ed787f8021e_648b5cf8_5fde1_0&amp;archiveSearch=1">eEdition Archive</a></li>
+	<li id="menu-item-1747909" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1747909"><a href="https://www.pressdemocrat.com/events/">Events</a></li>
+</ul>
+</li>
+<li id="menu-item-389" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-389"><a href="https://myaccount.pressdemocrat.com/?ref=footer">Subscribers</a><span class="expander"><a href="#" class="icon-plus" aria-label="Click here to expand the menu"></a></span>
+
+<ul class="footer-menu">
+	<li id="menu-item-390" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-390"><a href="https://myaccount.pressdemocrat.com/?ref=footer">Manage Home Delivery</a></li>
+	<li id="menu-item-391" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-391"><a href="https://subscribe.pressdemocrat.com/?ref=footer&amp;g2i_source=SB&amp;g2i_medium=footer&amp;g2i_campaign=nav">Subscribe</a></li>
+	<li id="menu-item-392" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-392"><a href="https://www.pressdemocrat.com/eedition?ref=footer">eEdition</a></li>
+	<li id="menu-item-3162764" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3162764"><a href="https://www.pressdemocrat.com/nie-signup/">Newspapers In Education</a></li>
+	<li id="menu-item-394" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-394"><a href="https://myaccount.pressdemocrat.com/pd/preference">Newsletters</a></li>
+</ul>
+</li>
+<li id="menu-item-22901" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-22901"><a href="#">About Us</a><span class="expander"><a href="#" class="icon-plus" aria-label="Click here to expand the menu"></a></span>
+
+<ul class="footer-menu">
+	<li id="menu-item-22902" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22902"><a href="https://www.pressdemocrat.com/about-us/">About Us</a></li>
+	<li id="menu-item-399" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-399"><a href="https://www.pressdemocrat.com/faq/">FAQ</a></li>
+	<li id="menu-item-3112858" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3112858"><a href="https://www.pressdemocrat.com/sitemap/">Sitemap</a></li>
+</ul>
+</li>
+<li class="mng-follow"><div class="footer-follow"></div>
+							<a href="https://subscribe.pressdemocrat.com/?&amp;g2i_source=SB&amp;g2i_medium=side-nav&amp;g2i_campaign=nav&amp;returnUrl=https%253A%252F%252Fwww.pressdemocrat.com%252F" class="subscribe-button">
+					<span>Subscribe Now</span>				</a>
+
+				</li></ul>
+			</div>
+			
+				<div class="dfm-site-info">
+
+								<div class="colophon">
+
+					<div class="footer-flex-menu-wrap"><ul id="footer-bottom-menu" class="menu"><li id="menu-item-366" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-366"><a href="https://www.medianewsgroup.com/terms-of-use/">Terms of Use</a></li>
+<li id="menu-item-367" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-367"><a href="https://www.medianewsgroup.com/cookie-policy/">Cookie Policy</a></li>
+<li id="menu-item-368" class="cookie-policy-click menu-item menu-item-type-custom menu-item-object-custom menu-item-368"><a href="#">Cookie Preferences</a></li>
+<li id="menu-item-369" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-369"><a href="https://www.medianewsgroup.com/privacy-policy/#911-notice-at-collection-the-personal-information-that-we-collect">California Notice of Collection</a></li>
+<li id="menu-item-370" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-370"><a href="https://www.medianewsgroup.com/privacy-policy/#916-notice-of-financial-incentive">Notice of Financial Incentive</a></li>
+<li id="menu-item-371" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-371"><a href="#">Do Not Sell/Share My Personal Information</a></li>
+<li id="menu-item-372" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-372"><a href="https://www.medianewsgroup.com/arbitration/">Arbitration</a></li>
+<li id="menu-item-373" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-373"><a href="https://vip.wordpress.com/">Powered by WordPress.com VIP</a></li>
+</ul>	<div class="footer-copyright-notice">
+		<p>Copyright © 2025 MediaNews Group</p>
+	</div>	</div>
+			</div>
+			
+				</div>
+
+			</footer><!-- .site-footer -->
+			
+			</div><!-- #page -->
+
+			<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/scng\/*","\/wp-content\/themes\/wp-mason\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<div id="mobile-adhesion" class=""><button class="close-mobile-adhesion" onclick="closeMobileAdhesionAd()" onkeydown="keyboardHandler(event)">Close</button>
+			<script>
+				function closeMobileAdhesionAd() {
+				    document.getElementById("mobile-adhesion").classList.add("closed");
+				}
+
+				function keyboardHandler(e) {
+				    var keycode = ( e.keyCode ? e.keyCode : e.which );
+				    if (keycode == "13") {
+						closeMobileAdhesionAd();
+					}
+				}
+			</script>
+							<div class="dfp-ad dfp-mobile_adhesion" id="div-gpt-ad-mobile_adhesion">
+					<div class="htlad-mobile_adhesion" data-unit="pressdemocrat.com/mobile_adhesion" data-targeting=""><div class="htl-ad" id="htlad-4" data-unit="pressdemocrat.com/mobile_adhesion" name="htlunit-mobile_adhesion" data-eager="" data-sizes="0x0:320x50,300x50|750x0:728x90|1000x0:" data-prebid="0x0:mobile_adhesion-Mobile|750x0:mobile_adhesion-Tablet|1000x0:" data-sticky="" data-sticky-permanent="" data-sticky-hours="0" data-refresh="viewable" data-refresh-secs="30" data-refresh-max="100" data-targeting="{&quot;pos&quot;:[&quot;mobile_adhesion&quot;]}"><div class="htl-ad-gpt" id="htlad-4-gpt"></div></div></div>
+				</div></div><script type="text/javascript">
+/* <![CDATA[ */
+if ( 'undefined' !== typeof _snaq ) {
+_snaq.push(['setAuthor', '']);
+_snaq.push(['setArticlePublishTime','']);
+_snaq.push(['setSection', 'Other']);
+}
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.pressdemocrat.com/_static/??-eJyNy0EKwjAQBdAL2Q6VYN2IZwlxtBOSmdA/UezpVXDh0u2DR482JFNndfKFK4PeUiNMCR5dEmWQIaoNqcOtjhk7+lmt9JsoqC3mplcphe6sF1upSfK+8ofGKvp/LHF7QjbGt53raZoP+xDCPB3zCxHiQw4="></script><script src="https://www.pressdemocrat.com/wp-content/themes/wp-mason/static/js/ads.js?ver=1.0" id="can-run-ads-js"></script>
+<script type="text/javascript" src="https://www.pressdemocrat.com/_static/??/wp-content/themes/assets/static/js/polyfills.min.js,/wp-content/themes/assets/static/js/boldcoastal.min.js?m=1762541092j"></script><script id="nativo-js-js" src="https://s.ntv.io/serve/load.js" async=""></script>
+<script type="text/javascript" src="https://www.pressdemocrat.com/_static/??-eJyVzsEKAjEMBNAfshtWiutF/JbQDTVlkyxNxN+3e1Pw4nEG5jHw2lMxDdKAeJCQw2gE3RQ8MLhAc9isWmKpCSP6JKxT8xN8TPftWVkdnIPSd+jkvpJY6RiwsscBCg7jL2ccMsFfwF1u83I555yX+dreXOtNLQ=="></script><script id="mng-cache-control-js-before">
+window.cache_control_adminbar_support = {"rootUrl":"https:\/\/www.pressdemocrat.com\/wp-admin\/admin-ajax.php","rootAction":"cache_control_adminbar_action","nonce":"8a543a4c90","isSectionFront":false,"isHomepage":false}
+</script>
+<script src="https://www.pressdemocrat.com/wp-content/plugins/mng-cache-control/Src/assets/dist/mng-cache-control-adminbar.js?ver=0.2.1" id="mng-cache-control-js"></script>
+<script id="jetpack-stats-js-before">
+_stq = window._stq || [];
+_stq.push([ "view", JSON.parse("{\"v\":\"ext\",\"blog\":\"245945938\",\"post\":\"0\",\"tz\":\"-8\",\"srv\":\"www.pressdemocrat.com\",\"arch_err\":\"\\\/north-bay-business-journal\\\/article\\\/industrynews\\\/state-farm-jome-insurance-rates\\\/\",\"hp\":\"vip\",\"j\":\"1:15.1.1\"}") ]);
+_stq.push([ "clickTrackerInit", "245945938", "0" ]);
+</script>
+<script src="https://stats.wp.com/e-202545.js" id="jetpack-stats-js" defer="" data-wp-strategy="defer"></script>
+<script id="pushly-sdk-js" src="https://cdn.p-n.io/pushly-sdk.min.js?domain_key=cNqW6ee3JwH6RL5VIvlcTWnLEhMUrIYv9jeS&amp;ver=6.8.3" async=""></script>
+<script src="//www.lightboxcdn.com/vendor/db6f0be6-f660-4856-9802-62d2a9838abf/user.js?cb=638917577041638650" id="digioh-js"></script>
+
+			
+            
+			<img src="https://pixel.wp.com/g.gif?v=ext&amp;blog=245945938&amp;post=0&amp;tz=-8&amp;srv=www.pressdemocrat.com&amp;arch_err=%2Fnorth-bay-business-journal%2Farticle%2Findustrynews%2Fstate-farm-jome-insurance-rates%2F&amp;hp=vip&amp;j=1%3A15.1.1&amp;host=www.pressdemocrat.com&amp;ref=&amp;fcp=0&amp;rand=0.029254534738298754" alt="" width="6" height="5" id="wpstats"><iframe marginwidth="0" marginheight="0" scrolling="no" frameborder="0" id="1912fe18259ef68" width="0" height="0" src="about:blank" name="__pb_locator__" style="display: none; height: 0px; width: 0px; border: 0px;"></iframe><script charset="utf-8" text="" id="" type="text/javascript" src="//b-code.liadm.com/0.min.js"></script><script type="text/javascript" id="" charset="">document.querySelectorAll(".obit-flowers, .adperfect-flowers, .obit-trees, .adperfect-tree, .obit-tribute-wrapper").forEach(function(a){a.addEventListener("click",function(b){b.stopPropagation();this.classList.contains("obit-flowers")||this.classList.contains("adperfect-flowers")?dataLayer.push({event:"flower_link_clicked"}):this.classList.contains("obit-trees")||this.classList.contains("adperfect-tree")?dataLayer.push({event:"tree_link_clicked"}):this.classList.contains("obit-tribute-wrapper")&&
+dataLayer.push({event:"tribute_link_clicked"})})});</script>
+<script type="text/javascript" id="" charset="">!function(){function e(d){var b=!(arguments.length>1&&void 0!==arguments[1])||arguments[1],a=document.createElement("script");a.src=d;b?a.type="module":(a.async=!0,a.type="text/javascript",a.setAttribute("nomodule",""));b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}!function(d,b){var a=d;var c=b;var f=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{},g,h,k;f.accountId=c;null!==(g=a.marfeel)&&void 0!==g||(a.marfeel={});null!==(h=(k=a.marfeel).cmd)&&void 0!==h||
+(k.cmd=[]);a.marfeel.config=f;a="https://sdk.mrf.io/statics";e("".concat(a,"/marfeel-sdk.js?id\x3d").concat(c),!0);e("".concat(a,"/marfeel-sdk.es5.js?id\x3d").concat(c),!1);c=void 0;!c}(window,5546,{})}();</script><script type="text/javascript" id="" charset="">window.marfeel.cmd.push(["compass",function(a){a.setUserType(2)}]);</script>
+<script type="text/javascript" id="" charset="">window.marfeel.cmd.push(["compass",function(a){a.setUserType(3)}]);</script>
+<div style="display: none; visibility: hidden;"><script>(function(){var a=document.createElement("script");a.type="module";a.src="https://marfeelexperimentsexperienceengine.mrf.io/experimentsexperience/render?siteId\x3d5546\x26url\x3d"+encodeURIComponent(window.location.href)+"\x26experimentType\x3dHeadlineAB\x26lang\x3des\x26version\x3desnext";a.async=!0;document.head.appendChild(a);a=document.createElement("script");a.type="text/javascript";a.src="https://marfeelexperimentsexperienceengine.mrf.io/experimentsexperience/render?siteId\x3d5546\x26url\x3d"+
+encodeURIComponent(window.location.href)+"\x26experimentType\x3dHeadlineAB\x26lang\x3des\x26version\x3dlegacy";a.setAttribute("nomodule","");a.async=!0;document.head.appendChild(a)})();</script>
+</div><script type="text/javascript" id="" charset="">function atsDirectPass(){window.addEventListener("envelopeModuleReady",function(){for(var a=0,c=localStorage.length;a<c;++a){var b=localStorage.key(a);if(b.includes("@@auth0spajs@@::")){atsenvelopemodule.setAdditionalData({type:"email",id:JSON.parse(localStorage.getItem(b)).body.decodedToken.user.email});break}else if("trb.registration.userData"==b){atsenvelopemodule.setAdditionalData({type:"email",id:JSON.parse(localStorage.getItem("trb.registration.userData")).email});break}}})}atsDirectPass();</script><iframe height="0" width="0" style="display: none; visibility: hidden;" tagid="adltag_mhp9lmjm_duDcMkA207o"></iframe><iframe name="__launchpadLocator" style="display: none;"></iframe><img width="0" height="0" src="//ams-pageview-public.s3.amazonaws.com/1x1-pixel.png?id=b4799157bed2" alt="." style="height: 0px; width: 0px; border: 0px; display: none;"><div><iframe src="https://google-bidout-d.openx.net/w/1.0/pd?plm=5" width="0" height="0" style="display:none;"></iframe></div></body><iframe name="goog_topics_frame" src="https://securepubads.g.doubleclick.net/static/topics/topics_frame.html" style="display: none;" tagid="adltag_mhp9lmpx_AC3cRwVikHO"></iframe></html>

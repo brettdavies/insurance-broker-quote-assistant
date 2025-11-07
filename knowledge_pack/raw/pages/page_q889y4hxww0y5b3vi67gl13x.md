@@ -1,0 +1,113 @@
+Menu
+  * [Home](https://kasmanninsurance.com/)
+  * [](https://kasmanninsurance.com/2016/progressive-home-advantage/#mm-1)[Services](https://kasmanninsurance.com/services/)
+  * [Let’s Talk](https://kasmanninsurance.com/lets-talk/)
+  * [About Us](https://kasmanninsurance.com/about-us/)
+  * [Resources](https://kasmanninsurance.com/category/resources/)
+  * [Our Companies](https://kasmanninsurance.com/representing-them-to-better-serve-you/)
+  * [What’s New](https://kasmanninsurance.com/whats-new/)
+  * [Claims](https://kasmanninsurance.com/claims/)
+  * [Privacy Policy](https://www.privacypolicies.com/live/942240e343fff572abbb926e2e9e7570)
+  * [Contact](https://kasmanninsurance.com/contact-us/)
+
+
+[](https://kasmanninsurance.com/2016/progressive-home-advantage/#menu-main-menu)[Services](https://kasmanninsurance.com/2016/progressive-home-advantage/#menu-main-menu)
+  * [Life Insurance](https://kasmanninsurance.com/services/life-insurance/)
+  * [](https://kasmanninsurance.com/2016/progressive-home-advantage/#mm-2)[Personal Insurance](https://kasmanninsurance.com/services/personal-insurance/)
+  * [Commercial Insurance](https://kasmanninsurance.com/services/commercial-insurance/)
+  * [Disability Insurance](https://kasmanninsurance.com/disability/)
+  * [Long-term Care Insurance](https://kasmanninsurance.com/long-term-care-insurance/)
+
+
+[](https://kasmanninsurance.com/2016/progressive-home-advantage/#mm-1)[Personal Insurance](https://kasmanninsurance.com/2016/progressive-home-advantage/#mm-1)
+  * [Home Insurance](https://kasmanninsurance.com/home-insurance-columbia-mo/)
+  * [Car Insurance](https://kasmanninsurance.com/car-insurance-columbia-mo/)
+  * [Renters Insurance](https://kasmanninsurance.com/renters-insurance-columbia-mo/)
+  * [Dwelling Fire Insurance](https://kasmanninsurance.com/dwelling-fire-insurance-columbia-mo/)
+  * [Umbrella Insurance](https://kasmanninsurance.com/umbrella-insurance-columbia-mo/)
+
+
+Search This Site SUBMIT 
+[ toggle menu ](https://kasmanninsurance.com/2016/progressive-home-advantage/#drawer-menu)
+[![ Kasmann Insurance Agency, Inc](https://kasmanninsurance.com/wp-content/uploads/2019/05/logo.png)](https://kasmanninsurance.com " Kasmann Insurance Agency, Inc")
+  * [Home](https://kasmanninsurance.com/)
+  * [About](https://kasmanninsurance.com/about-us/)
+  * [Testimonials](https://kasmanninsurance.com/testimonials/)
+  * [Contact](https://kasmanninsurance.com/contact-us/)
+  * [(573) 442-1105](tel:5734421105)
+  * [ Open Site Search Bar ](https://kasmanninsurance.com/2016/progressive-home-advantage/#target-search_bar)
+
+
+  * [Services](https://kasmanninsurance.com/services/)
+    * [Life Insurance](https://kasmanninsurance.com/services/life-insurance/)
+    * [Personal Insurance](https://kasmanninsurance.com/services/personal-insurance/)
+      * [Home Insurance](https://kasmanninsurance.com/home-insurance-columbia-mo/)
+      * [Car Insurance](https://kasmanninsurance.com/car-insurance-columbia-mo/)
+      * [Renters Insurance](https://kasmanninsurance.com/renters-insurance-columbia-mo/)
+      * [Dwelling Fire Insurance](https://kasmanninsurance.com/dwelling-fire-insurance-columbia-mo/)
+      * [Umbrella Insurance](https://kasmanninsurance.com/umbrella-insurance-columbia-mo/)
+    * [Commercial Insurance](https://kasmanninsurance.com/services/commercial-insurance/)
+    * [Disability Insurance](https://kasmanninsurance.com/disability/)
+    * [Long-term Care Insurance](https://kasmanninsurance.com/long-term-care-insurance/)
+  * [Let’s Talk](https://kasmanninsurance.com/lets-talk/)
+  * [Resources](https://kasmanninsurance.com/category/resources/)
+  * [Our Companies](https://kasmanninsurance.com/representing-them-to-better-serve-you/)
+  * [What’s New](https://kasmanninsurance.com/whats-new/)
+  * [Claims](https://kasmanninsurance.com/claims/)
+
+[Get A  
+Quote](https://kasmanninsurance.com/lets-talk/)
+# The Progressive Home Advantage
+##### Looking for something specific? >>
+##### View By Category >>
+  * [Auto Insurance](https://kasmanninsurance.com/category/auto-insurance/)
+  * [Commercial Insurance](https://kasmanninsurance.com/category/commercial-insurance/)
+  * [Community](https://kasmanninsurance.com/category/community/)
+  * [Facts & Tips](https://kasmanninsurance.com/category/fun-facts/)
+  * [Featured Carrier](https://kasmanninsurance.com/category/our-companies/featured-carrier/)
+  * [Homeowners Insurance](https://kasmanninsurance.com/category/home-insurance/)
+  * [Life Insurance Corner](https://kasmanninsurance.com/category/life-insurance/)
+  * [Long Term Care Insurance](https://kasmanninsurance.com/category/long-term-care-insurance/)
+  * [Other](https://kasmanninsurance.com/category/other/)
+  * [Our Companies](https://kasmanninsurance.com/category/our-companies/)
+  * [Our Team](https://kasmanninsurance.com/category/our-team/)
+  * [Pet Insurance](https://kasmanninsurance.com/category/pet-insurance/)
+  * [Resources](https://kasmanninsurance.com/category/resources/)
+  * [Umbrella Insurance](https://kasmanninsurance.com/category/umbrella-insurance/)
+  * [What’s New](https://kasmanninsurance.com/category/whats-new/)
+
+
+In elementary school, getting picked first for the dodgeball team at recess was one of the best compliments. It meant you were a smart, agile competitor and the team captain wanted **you** more than anyone else. Kasmann Insurance Agency recently had the adult, insurance equivalent to that feeling, and we are so excited to share it with you all!
+##  ![stephanie-courtney-flo-progressive-insurance-34709946121_xlarge](https://kasmanninsurance.com/wp-content/uploads/2016/02/stephanie-courtney-flo-progressive-insurance-34709946121_xlarge-e1454688919888.jpeg)Progressing with Progressive
+Progressive Insurance recently announced they’re offering home insurance in Missouri alongside their established auto product. In doing so, Progressive brings their strong financial standing and industry expertise to the Missouri homeowners market. Kasmann Insurance Agency has been appointed as one of the select agencies to offer the bundle of home and auto insurance! The adult, insurance dodgeball game started with us being one of the first picks! Now, by bundling your home and auto insurance, Kasmann Insurance Agency can help you save on your premiums.
+Before this opportunity, it was easy to get auto insurance through Progressive with their flexibility and competitive rates. With this new offer, Progressive has taken away the need for a different company for your home insurance. Let Kasmann Insurance Agency help you bundle your home and auto insurance, make your life easier and save you money!
+Progressive’s new Home Advantage product sets itself apart from home products offered by other companies. In addition to the bundle discount for both your auto and home with Progressive, there are also additional discounts if your home is a new purchase, if you pay in full (this includes your premium paid through your escrow account, many companies will not do this), and cross credit if you have a Progressive umbrella. Plus, Progressive does not surcharge for weather related losses! So, no charge for hail, wind and lightning losses.
+## Insure with the people you trust.
+We want our customers to know we have their best outcome in mind when looking at pricing for insurance. No need to have insurance through multiple companies only to pay more. Let the first drafted, insurance dodgeball team help you combine your [auto](https://kasmanninsurance.com/services/personal-insurance/car-insurance-columbia-mo/) and home insurance into one bundle and save you money! If you have any questions about the new offer, or if you wanted to get an estimate on what an insurance bundle can save you, feel free to [contact our office](https://kasmanninsurance.com/contact-us/). We’re only a phone call away!
+Educational Guides
+[ ![](https://kasmanninsurance.com/wp-content/themes/skematik-child-theme/img/guides/guide_auto.png)](https://kasmanninsurance.com/wp-content/uploads/2012/03/Auto.pdf) ##### [Download](https://kasmanninsurance.com/wp-content/uploads/2012/03/Auto.pdf "Educational Guide")
+[ ![](https://kasmanninsurance.com/wp-content/themes/skematik-child-theme/img/guides/guide_homeowners.png)](https://kasmanninsurance.com/wp-content/uploads/2012/03/Home.pdf) ##### [Download](https://kasmanninsurance.com/wp-content/uploads/2012/03/Home.pdf "Educational Guide")
+[ ![](https://kasmanninsurance.com/wp-content/themes/skematik-child-theme/img/guides/guide_smbus.png)](https://kasmanninsurance.com/wp-content/uploads/2012/03/Business.pdf) ##### [Download](https://kasmanninsurance.com/wp-content/uploads/2012/03/Business.pdf "Educational Guide")
+[ ![](https://kasmanninsurance.com/wp-content/themes/skematik-child-theme/img/guides/guide_life.png)](https://kasmanninsurance.com/wp-content/uploads/2012/03/Life.pdf) ##### [Download](https://kasmanninsurance.com/wp-content/uploads/2012/03/Life.pdf "Educational Guide")
+[Claims Contact](https://kasmanninsurance.com/claims/ "Educational Guide")
+## Work with Kasmann
+[Get a Quote](https://kasmanninsurance.com/lets-talk/)
+[![](https://kasmanninsurance.com/wp-content/themes/mayecreate-theme/img/footer_logo.png)](https://kasmanninsurance.com)
+[](https://www.facebook.com/KasmannInsurance)
+[](https://twitter.com/KasmannIns)
+  * [Home](https://kasmanninsurance.com/)
+  * [About](https://kasmanninsurance.com/about-us/)
+  * [Services](https://kasmanninsurance.com/services/)
+  * [Let’s Talk](https://kasmanninsurance.com/lets-talk/)
+  * [Resources](https://kasmanninsurance.com/category/resources/)
+
+
+  * [Our Companies](https://kasmanninsurance.com/our-companies/)
+  * [What’s New](https://kasmanninsurance.com/whats-new/)
+  * [Claims](https://kasmanninsurance.com/claims/)
+  * [Contact Us](https://kasmanninsurance.com/contact-us/)
+  * [Privacy Policy](https://www.privacypolicies.com/live/942240e343fff572abbb926e2e9e7570)
+  * [Get A Quote](https://kasmanninsurance.com/lets-talk/)
+
+
+© [Kasmann Insurance Agency, Inc](https://kasmanninsurance.com) 2025 | [Web Design by MayeCreate Design](http://www.mayecreate.com/what-we-do/web-design/)

@@ -1,0 +1,397 @@
+  * [News](https://www.latimes.com/)
+    * [ Home Page ](https://www.latimes.com/)
+    * [ California](https://www.latimes.com/california)
+    * [ Election 2024](https://www.latimes.com/topic/election-2024)
+    * [ Housing & Homelessness](https://www.latimes.com/homeless-housing)
+    * [ Politics](https://www.latimes.com/politics)
+    * [ Science & Medicine](https://www.latimes.com/science)
+    * [ World & Nation](https://www.latimes.com/world-nation)
+  * [Business](https://www.latimes.com/business)
+    * [ Artificial Intelligence](https://www.latimes.com/topic/artificial-intelligence)
+    * [ Autos](https://www.latimes.com/business/autos)
+    * [ Jobs, Labor & Workplace](https://www.latimes.com/topic/jobs-labor)
+    * [ Real Estate](https://www.latimes.com/business/real-estate)
+    * [ Technology and the Internet](https://www.latimes.com/business/technology)
+  * [California](https://www.latimes.com/california)
+    * [ California Politics ](https://www.latimes.com/topic/california-law-politics)
+    * [ Earthquakes](https://www.latimes.com/topic/earthquakes)
+    * [ Education](https://www.latimes.com/topic/education)
+    * [ Housing & Homelessness](https://www.latimes.com/homeless-housing)
+    * [ L.A. Influential](https://www.latimes.com/la-influential)
+    * [ L.A. Politics ](https://www.latimes.com/topic/la-politics)
+    * [ Mental Health](https://www.latimes.com/topic/mental-health)
+  * [Climate & Environment](https://www.latimes.com/environment)
+    * [ Climate Change](https://www.latimes.com/topic/climate-change)
+    * [ Water & Drought](https://www.latimes.com/topic/california-drought)
+  * [Entertainment & Arts](https://www.latimes.com/entertainment-arts)
+    * [ Arts](https://www.latimes.com/topic/arts)
+    * [ Books](https://www.latimes.com/entertainment-arts/books)
+    * [ Stand-Up Comedy](https://www.latimes.com/topic/comedy)
+    * [ Hollywood Inc.](https://www.latimes.com/entertainment-arts/business)
+    * [ The Envelope (Awards)](https://www.latimes.com/entertainment-arts/awards)
+    * [ Movies](https://www.latimes.com/entertainment-arts/movies)
+    * [ Music](https://www.latimes.com/entertainment-arts/music)
+    * [ Television](https://www.latimes.com/entertainment-arts/tv)
+    * [ Things to Do](https://www.latimes.com/topic/things-to-do)
+  * [De Los](https://www.latimes.com/delos)
+  * [En Español](https://www.latimes.com/espanol/)
+  * [Food](https://www.latimes.com/food)
+    * [ 101 best restaurants in L.A.](https://www.latimes.com/food/list/101-best-restaurants-los-angeles)
+    * [ Recipes](https://www.latimes.com/food/recipes)
+  * [Image](https://www.latimes.com/lifestyle/image)
+    * [ Art & Culture](https://www.latimes.com/lifestyle/image/story/2022-09-13/trend-analysis)
+    * [ Conversations](https://www.latimes.com/lifestyle/image/story/2022-09-13/los-intelligentsia)
+    * [ Drip Index: Event Guides](https://www.latimes.com/lifestyle/image/story/2022-09-13/drip-index)
+    * [ Fashion ](https://www.latimes.com/topic/fashion)
+    * [ Shopping Guides](https://www.latimes.com/lifestyle/image/story/2022-09-13/coveted)
+    * [ Styling Myself](https://www.latimes.com/lifestyle/image/story/2022-09-13/styling-myself)
+  * [Lifestyle](https://www.latimes.com/lifestyle)
+    * [ Health & Wellness](https://www.latimes.com/topic/wellness)
+    * [ Home Design](https://www.latimes.com/topic/home-design)
+    * [ L.A. Affairs](https://www.latimes.com/topic/la-affairs)
+    * [ Plants](https://www.latimes.com/topic/plants)
+    * [ Travel & Experiences](https://www.latimes.com/travel)
+    * [ Weekend](https://www.latimes.com/lifestyle/weekend)
+    * [ Things to Do in L.A.](https://www.latimes.com/topic/things-to-do)
+  * [Obituaries](https://www.latimes.com/obituaries)
+  * [Voices](https://www.latimes.com/voices)
+    * [ Editorials](https://www.latimes.com/topic/editorials)
+    * [ Letters to the Editor](https://www.latimes.com/opinion/letters-to-the-editor)
+    * [ Contributors](https://www.latimes.com/topic/op-ed)
+    * [ Short Docs](https://www.latimes.com/shortdocs)
+  * [Sports](https://www.latimes.com/sports)
+    * [ Angels](https://www.latimes.com/sports/angels)
+    * [ Angel City FC](https://www.latimes.com/sports/soccer/angel-city-fc)
+    * [ Chargers](https://www.latimes.com/sports/chargers)
+    * [ Clippers](https://www.latimes.com/sports/clippers)
+    * [ Dodgers](https://www.latimes.com/sports/dodgers)
+    * [ Ducks](https://www.latimes.com/sports/hockey/ducks)
+    * [ Galaxy ](https://www.latimes.com/sports/soccer/galaxy)
+    * [ High School Sports](https://www.latimes.com/sports/highschool)
+    * [ Kings](https://www.latimes.com/sports/hockey/kings)
+    * [ Lakers](https://www.latimes.com/sports/lakers)
+    * [ Olympics](https://www.latimes.com/sports/olympics)
+    * [ USC ](https://www.latimes.com/sports/usc)
+    * [ UCLA ](https://www.latimes.com/sports/ucla)
+    * [ Rams](https://www.latimes.com/sports/rams)
+    * [ Sparks](https://www.latimes.com/sports/sparks)
+  * [World & Nation](https://www.latimes.com/world-nation)
+    * [ Immigration & the Border](https://www.latimes.com/topic/immigration)
+    * [ Israel-Hamas](https://www.latimes.com/topic/israel-hamas)
+    * [ Mexico & the Americas](https://www.latimes.com/topic/mexico-americas)
+    * [ Ukraine](https://www.latimes.com/topic/ukraine)
+  * [Times Everywhere](https://www.latimes.com/archives/topics)
+    * [ 404 by L.A. Times](https://www.instagram.com/latimes.404/?hl=en)
+    * [ Facebook](https://www.facebook.com/latimes)
+    * [ Instagram](https://www.instagram.com/latimes/)
+    * [ LA Times Today](https://www.latimes.com/topic/la-times-today)
+    * [ Newsletters](https://membership.latimes.com/newsletters/)
+    * [ Photography](https://www.latimes.com/california/photography)
+    * [ Podcasts ](https://www.latimes.com/podcasts)
+    * [ Short Docs](https://www.latimes.com/shortdocs)
+    * [ TikTok](https://www.tiktok.com/@latimes?lang=en)
+    * [ Threads](https://www.threads.net/@latimes)
+    * [ Video](https://www.latimes.com/video)
+    * [ YouTube](https://www.youtube.com/user/losangelestimes)
+    * [ X (Twitter) ](https://twitter.com/latimes)
+  * [For Subscribers](https://www.latimes.com/topic/for-la-times-subscribers)
+  * [eNewspaper](https://enewspaper.latimes.com/desktop/latimes/default.aspx?pubid=50435180-e58e-48b5-8e0c-236bf740270e)
+  * [All Sections](https://www.latimes.com/archives/topics)
+  * _________________
+  * [LA Times Studios](https://www.latimes.com/studios)
+    * [ Business](https://www.latimes.com/b2b)
+    * [ • AI & Tech](https://www.latimes.com/b2b/ai-technology)
+    * [ • Automotive](https://www.latimes.com/b2b/autos)
+    * [ • Banking & Finance](https://www.latimes.com/b2b/banking-finance)
+    * [ • Commercial Real Estate](https://www.latimes.com/b2b/commercial-real-estate)
+    * [ • Entertainment](https://www.latimes.com/b2b/entertainment)
+    * [ • Goods & Retail](https://www.latimes.com/b2b/consumer-goods-retail)
+    * [ • Healthcare & Science](https://www.latimes.com/b2b/health-life-science)
+    * [ • Law](https://www.latimes.com/b2b/law-legal)
+    * [ Decor & Design](https://www.latimes.com/spaces)
+    * [ Dentists](https://www.latimes.com/dentistry)
+    * [ Doctors & Scientists](https://www.latimes.com/doctors-scientists)
+    * [ Fitness](https://www.latimes.com/fitness)
+    * [ Hot Property](https://www.latimes.com/brandpublishing/hotproperty)
+    * [ Live & Well](https://www.latimes.com/live-well)
+    * [ Orange County](https://www.latimes.com/b2b/orange-county)
+    * [ Pets](https://www.latimes.com/companion-animals)
+    * [ The Hub: Rebuilding LA](https://www.latimes.com/wildfire-recovery)
+    * [ Travel](https://www.latimes.com/eta)
+    * [ Veterinarians](https://www.latimes.com/veterinarians)
+    * [ Weddings & Celebrations](https://www.latimes.com/weddings)
+    * [ Deals & Coupons](https://www.latimes.com/deals)
+    * [ Newsletters](https://membership.latimes.com/newsletters#la-times-studios)
+  * [Live Stream](https://www.latimes.com/00000192-788e-ddaa-a39a-7abfc6b30000-123)
+  * [Events](https://www.latimes.com/events-los-angeles-times)
+    * [ Screening Series](https://www.latimes.com/screenings)
+  * [Crossword](https://www.latimes.com/games)
+  * [Games](https://www.latimes.com/games)
+  * [L.A. Times Store](https://store.latimes.com/?utm_source=latimes&utm_medium=homepage&utm_campaign=homepage_nav)
+  * [Subscriptions](https://www.latimes.com/flyoutsubscribe)
+    * [ Manage Subscription](https://membership.latimes.com/)
+    * [ EZPAY](https://membership.latimes.com/billing-info)
+    * [ Delivery Issue](https://membership.latimes.com/subscription-info)
+    * [ eNewspaper](https://enewspaper.latimes.com/)
+    * [ Students & Educators](https://www.latimes.com/about/marketing/los-angeles-times-for-students-and-educators)
+    * [ Subscribe](https://www.latimes.com/flyoutsubscribe)
+    * [ Subscriber Terms](https://www.latimes.com/subscriber-terms-and-conditions)
+    * [ Gift Subscription Terms](https://www.latimes.com/gift-subscription-terms)
+  * [About Us ](https://www.latimes.com/about)
+    * [ About Us](https://www.latimes.com/about)
+    * [ Archives](https://www.latimes.com/archives)
+    * [ Company News](https://www.latimes.com/about/pressreleases)
+    * [ eNewspaper](https://enewspaper.latimes.com/desktop/latimes/default.aspx?pubid=50435180-e58e-48b5-8e0c-236bf740270e)
+    * [ For the Record](https://www.latimes.com/about/for-the-record/)
+    * [ Got a Tip? ](https://www.latimes.com/tips/)
+    * [ L.A. Times Careers](https://careers.latimes.com/)
+    * [ L.A. Times Store](https://store.latimes.com/?utm_source=latimes&utm_medium=homepage&utm_campaign=homepage_subnav)
+    * [ L.A. Times Studios](https://studios.latimes.com/)
+    * [ News App: Apple IOS](https://apps.apple.com/us/app/la-times/id373238146)
+    * [ News App: Google Play](https://play.google.com/store/apps/details?id=com.apptivateme.next.la&hl=en_US)
+    * [ Newsroom Directory](https://www.latimes.com/newsroom-directory)
+    * [ Public Affairs](https://www.latimes.com/about/public-affairs)
+    * [ Rights, Clearance & Permissions](https://www.latimes.com/about/how-to-obtain-rights-permissions)
+    * [ Short Docs](https://www.latimes.com/shortdocs)
+  * [Advertising](https://placeanad.latimes.com/)
+    * [ Classifieds](https://classifieds.latimes.com/)
+    * [ Find/Post Jobs](https://jobs.latimes.com/)
+    * [ Hot Property Sections](https://marketplace.latimes.com/places/types:23)
+    * [ Local Ads Marketplace](https://marketplace.latimes.com/)
+    * [ L.A. Times Digital Agency](https://digitalagency.latimes.com/)
+    * [ Media Kit: Why the L.A. Times?](https://mediakit.latimes.com/)
+    * [ People on the Move](https://peopleonthemove.latimes.com/)
+    * [ Place an Ad](https://placeanad.latimes.com/)
+    * [ Place an Open House](https://placeanad.latimes.com/open-house)
+    * [ Sotheby’s International Realty](https://marketplace.latimes.com/places/categories:43)
+  * [Special Supplements](https://www.latimes.com/specialsupplements)
+    * [ Healthy Living](https://www.latimes.com/seniorresources)
+    * [ Higher Education](https://www.latimes.com/higher-education)
+    * [ Philanthropy](https://www.latimes.com/b2b/giving)
+
+
+Copyright © 2025, Los Angeles Times | [Terms of Service](https://www.latimes.com/terms-of-service) | [Privacy Policy](https://www.latimes.com/privacy-policy) | [CA Notice of Collection](https://www.latimes.com/privacy-policy#california-notice-of-collection) | [Do Not Sell or Share My Personal Information](https://membership.latimes.com/privacy-settings)
+Sections
+[](https://www.latimes.com/)
+Tap to enable a layout that focuses on the article. 
+Focus mode 
+[Subscribe](https://www.latimes.com/business/story/2025-09-08/despite-court-loss-california-fair-plan-sticking-to-disputed-smoke-damage-policy) or  [Log In](https://www.latimes.com/business/story/2025-09-08/despite-court-loss-california-fair-plan-sticking-to-disputed-smoke-damage-policy) [](https://www.latimes.com/business/story/2025-09-08/despite-court-loss-california-fair-plan-sticking-to-disputed-smoke-damage-policy)
+  * [Profile](https://www.latimes.com/business/story/2025-09-08/despite-court-loss-california-fair-plan-sticking-to-disputed-smoke-damage-policy)
+  * [Sign Out](https://www.latimes.com/business/story/2025-09-08/despite-court-loss-california-fair-plan-sticking-to-disputed-smoke-damage-policy)
+
+
+Show Search
+Search Query  Submit Search
+Advertisement
+[Business](https://www.latimes.com/business)
+# California FAIR Plan continues denying smoke damage claims despite court loss and regulatory action
+![A woman surveys the damage to her house after a fire.](https://ca-times.brightspotcdn.com/dims4/default/9cd05b6/2147483647/strip/true/crop/3000x2000+0+0/resize/1200x800!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F81%2Fdf%2Fdd1c03eb45999fedb3ff8723b08b%2F1496634-me-eaton-fire-trees-cut-08-mjc.jpg)
+Altadena resident Seriina Covarrubias visits her house in Altadena on Feb. 28. Her garage was destroyed and her house survived but had smoke damage.
+(Myung J. Chun / Los Angeles Times)
+[ ![Laurence Darmiento. \(Ricardo DeAratanha / Los Angeles Times\)](https://ca-times.brightspotcdn.com/dims4/default/21dd9ee/2147483647/strip/true/crop/1852x1852+614+146/resize/130x130!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F67%2Fb2%2F673e0ef9479193c54ae6f52406d8%2Fstaff-bio-laurence-darmiento-02.JPG) ](https://www.latimes.com/people/laurence-darmiento)
+By [Laurence Darmiento](https://www.latimes.com/people/laurence-darmiento)
+Staff Writer[Follow](https://x.com/ldarmiento)
+Sept. 8, 2025 3 AM PT 
+  * 11 
+  * Share via Close extra sharing options
+    * Email
+    * [ Facebook ](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.latimes.com%2Fbusiness%2Fstory%2F2025-09-08%2Fdespite-court-loss-california-fair-plan-sticking-to-disputed-smoke-damage-policy)
+    * [ X ](https://x.com/intent/tweet?url=https%3A%2F%2Fwww.latimes.com%2Fbusiness%2Fstory%2F2025-09-08%2Fdespite-court-loss-california-fair-plan-sticking-to-disputed-smoke-damage-policy&text=California%20FAIR%20Plan%20continues%20denying%20smoke%20damage%20claims%20despite%20court%20loss%20and%20regulatory%20action)
+    * [ LinkedIn ](https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fwww.latimes.com%2Fbusiness%2Fstory%2F2025-09-08%2Fdespite-court-loss-california-fair-plan-sticking-to-disputed-smoke-damage-policy&title=California%20FAIR%20Plan%20continues%20denying%20smoke%20damage%20claims%20despite%20court%20loss%20and%20regulatory%20action&summary=The%20state%27s%20home%20insurer%20of%20last%20resort%2C%20the%20California%20FAIR%20Plan%20Assn.%2C%20is%20still%20rejecting%20smoke%20damage%20claims%20arising%20out%20of%20the%20January%20wildfires%20in%20L.A.%20even%20after%20losing%20a%20landmark%20court%20case%20in%20June%20and%20being%20sanctioned%20by%20regulators%20in%20July.&source=Los%20Angeles%20Times)
+    * [ Threads ](https://threads.net/intent/post?text=California%20FAIR%20Plan%20continues%20denying%20smoke%20damage%20claims%20despite%20court%20loss%20and%20regulatory%20action%20https%3A%2F%2Fwww.latimes.com%2Fbusiness%2Fstory%2F2025-09-08%2Fdespite-court-loss-california-fair-plan-sticking-to-disputed-smoke-damage-policy)
+    * [ Reddit ](https://www.reddit.com/submit?url=https%3A%2F%2Fwww.latimes.com%2Fbusiness%2Fstory%2F2025-09-08%2Fdespite-court-loss-california-fair-plan-sticking-to-disputed-smoke-damage-policy&title=California%20FAIR%20Plan%20continues%20denying%20smoke%20damage%20claims%20despite%20court%20loss%20and%20regulatory%20action)
+    * [ WhatsApp ](https://api.whatsapp.com/send?text=California%20FAIR%20Plan%20continues%20denying%20smoke%20damage%20claims%20despite%20court%20loss%20and%20regulatory%20action%20https%3A%2F%2Fwww.latimes.com%2Fbusiness%2Fstory%2F2025-09-08%2Fdespite-court-loss-california-fair-plan-sticking-to-disputed-smoke-damage-policy)
+    * Copy Link URL Copied!
+    * Print
+
+
+Despite a court loss and sanctioning by state regulators, California’s home insurer of last resort continues to deny smoke damage claims from the January wildfires — even when toxic substances have been found in homes, according to a Times review of denial letters.
+The California FAIR Plan Assn. has rebuffed policyholders seeking to have their smoke-damaged homes remediated through professional cleaning or the replacement of structures and fixtures such as drywall, insulation and lighting, the half dozen letters and email exchanges sent during July and August show.
+In denying the claims, the plan initially cited language deemed illegal by a Los Angeles County Superior Court judge in a [landmark June decision ](https://www.latimes.com/business/story/2025-06-25/landmark-ruling-judge-says-that-californias-insurer-of-last-resort-is-shortchanging-smoke-damage-victims-la-wildfires)that had required policyholders to show that their property suffered “permanent physical changes.” 
+Advertisement
+Last month, the plan changed the wording and told policyholders with smoke damage claims that they must show “distinct, demonstrable and physical alteration” to their property — citing a [2024 state Supreme Court case](https://law.justia.com/cases/california/supreme-court/2024/s277893.html) that established that threshold in an insurance dispute over a COVID-related business closure.
+[ ![LOS ANGELES, CALIFORNIA - APRIL 19: Diana Hvolka poses for a portrait at her lot where her home was destroyed by the Palisades Fire in the Pacific Palisades neighborhood of Los Angeles, California. \(Eric Thayer/For The Times\)](https://ca-times.brightspotcdn.com/dims4/default/18e6934/2147483647/strip/true/crop/7659x5106+0+0/resize/840x560!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F31%2Ffe%2F69d26b5a4f5689bcd0f8305de11f%2F1503168-fi-the-fair-plan-4390.jpg) ](https://www.latimes.com/business/story/2025-04-23/the-fair-plan-grew-and-grew-and-now-la-fire-victims-are-paying-the-price)
+[Business](https://www.latimes.com/business)
+[For Subscribers](https://www.latimes.com/topic/for-la-times-subscribers)
+###  [Insurer of last resort kept growing. Then L.A. fire victims paid the price](https://www.latimes.com/business/story/2025-04-23/the-fair-plan-grew-and-grew-and-now-la-fire-victims-are-paying-the-price)
+As insurers withdrew from the L.A. market, more homeowners joined the FAIR Plan. Now Jan. 7 fire victims are battling with the state’s insurer of last resort to get compensated.
+April 23, 2025
+Hilary McLean, a spokesperson for the FAIR Plan, said the insurer is no longer applying the language at issue in the June court decision and has been “updating all customer communications to ensure they consistently reflect the correct language.”
+“Our goal is and continues to be to provide fair and reasonable coverage for wildfire-related losses while maintaining the financial integrity of the FAIR Plan for all policyholders,” she said in an emailed statement.
+Advertisement
+But attorney Dylan Schaffer, who represented the plaintiff in the June decision and shared the correspondence reviewed by The Times, said whatever the language cited by the plan, the result is denials that are unfair to policyholders.
+“This stuff is going everywhere and it’s not dirt — it’s toxic,” he said, referring to smoke damage. “And you tell me that some 82-year-old is going to get up in the attic with a hazmat suit on, rip out the insulation and start vacuuming around?” 
+On Friday, Gov. Newsom called on the FAIR Plan to [“expeditiously and fairly”](https://www.latimes.com/business/story/2025-09-05/newsom-calls-on-fair-plan-to-process-smoke-damage-claims-fast-and-fairly) process smoke damage claims arising out of the fires, saying the state has received hundreds of complaints from policyholders.
+Advertisement
+The January fires have been the worst catastrophe in decades to hit the FAIR Plan, which is operated and backed by the state’s licensed home insurers, including State Farm, Farmers and Mercury.
+The plan estimates losses of $4 billion and it has [assessed its member carriers $1 billion](https://www.latimes.com/business/story/2025-02-11/fair-plan-to-assess-insurers-1-billion-for-l-a-fires-with-consumers-on-hook-for-nearly-half) in order to pay claims.
+[ ![Altadena, CA - January 19: Entire blocks of homes were destroyed by the Eaton fire, photographed on Sunday, Jan. 19, 2025 in Altadena, CA. \(Brian van der Brug / Los Angeles Times\)](https://ca-times.brightspotcdn.com/dims4/default/902aa72/2147483647/strip/true/crop/3287x2191+157+0/resize/840x560!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F16%2F3c%2Fc7584be5491b934bdff596fc164e%2F1491444-la-me-residents-returning-to-altadena-brv-037.jpg) ](https://www.latimes.com/business/story/2025-05-29/lawsuit-claims-insurers-colluded-to-force-california-homeowners-off-their-rolls-but-can-it-be-proved)
+[Business](https://www.latimes.com/business)
+###  [Did insurers collude to force homeowners onto state insurance plan? What to know from two blockbuster lawsuits](https://www.latimes.com/business/story/2025-05-29/lawsuit-claims-insurers-colluded-to-force-california-homeowners-off-their-rolls-but-can-it-be-proved)
+Two Los Angeles County Superior Court lawsuits accuse dozens of California home insurers of dropping policyholders and forcing them onto the FAIR Plan — the state’s insurer of last resort — where polices cover less and cost more.
+May 29, 2025
+In recent years, the plan took on hundreds of thousands of policyholders as insurers began pulling out of the state’s fire-plagued homeowners market. Enrollment in the Eaton and Palisades fire zones nearly doubled to 28,440 from 2020 to 2024, [according to a Times analysis.](https://www.latimes.com/business/story/2025-04-23/the-fair-plan-grew-and-grew-and-now-la-fire-victims-are-paying-the-price)
+Advertisement
+Schaffer believes the plan may have received more than 2,500 smoke damage claims given how many the plan reported it received for partial losses, indicating the structures were still standing.
+McLean said the plan could not say how many smoke damage claims it has received due to the fires, nor the number rejected or paid. 
+The smoke damage policy has been controversial for years and sparked multiple lawsuits, but it wasn’t until June in a case brought by a Northern California homeowner that a judge found the policy violated state law.
+That decision by Los Angeles County Superior Court Judge Stuart Rice found that the FAIR Plan’s requirement that smoke damage result in “permanent physical damage” violated the insurance code because it provides less coverage than what is required by the state’s Standard Form Fire Insurance Policy. The case is pending.
+Consumer advocates had hoped the decision might prompt the plan to alter how it handled smoke damage claims, even though the ruling wasn’t issued by an appellate court. However, in several letters denying the claims, the plan said the decision had no bearing, noting in one letter “it is not controlling legal authority.”
+“Trial court decisions have no precedential value in California; they bind the parties but not another court,” noted James Fischer, an insurance law expert and professor at Southwestern Law School in Los Angeles.
+Advertisement
+[ ![A contractor from Professional Renovation Services works to remove ash particles inside a classroom at Jackson Elementary School on Thursday, Jan. 23, in Altadena, Calif. The school was spared from fire damage but is being deep cleaned to remove any ash or smoke damage before opening to students. \( Photo by Nick Agro / For The Times \)](https://ca-times.brightspotcdn.com/dims4/default/017e3fe/2147483647/strip/true/crop/8256x5504+0+0/resize/840x560!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fe6%2F2b%2F9cd134ae4e118ec1a06ef43c8d64%2F1491994-me-altadena-school-clean-up-0002.jpg) ](https://www.latimes.com/business/story/2025-06-25/landmark-ruling-judge-says-that-californias-insurer-of-last-resort-is-shortchanging-smoke-damage-victims-la-wildfires)
+[Business](https://www.latimes.com/business)
+###  [In landmark decision, judge rules California FAIR Plan’s smoke-damage policy is illegal](https://www.latimes.com/business/story/2025-06-25/landmark-ruling-judge-says-that-californias-insurer-of-last-resort-is-shortchanging-smoke-damage-victims-la-wildfires)
+A Los Angeles County Superior Court judge has ruled that the California FAIR Plan’s smoke-damage policy, which limits claims payments by the insurer of last resort, is a violation of state insurance law.
+June 25, 2025
+After the decision, the state Department of Insurance took legal action on July 31, [threatening the FAIR Plan](https://www.latimes.com/business/story/2025-08-07/fair-plan-smoke-damage-legal-action-california-department-of-insurance-lara) with a cease-and-desist order over the language. It also accused the insurer of failing to investigate claims fairly and denying legitimate claims without a reasonable basis. 
+The plan has denied wrongdoing and is seeking an administrative hearing to dispute the allegations. 
+In one smoke damage case, the plan acknowledged that it had received a report from a policyholder’s industrial hygienist that found a home in Pacific Palisades had been exposed to “toxic” levels of carcinogens, chemicals and particulates, according to a letter sent to the homeowner in August viewed by The Times.
+Advertisement
+The firm recommended the removal of drywall, plaster, wooden floors and other building materials, according to the letter. However, an expert hired by the plan concluded the home only needed to be cleaned and so the smoke claim was rejected.
+“Under the terms of your dwelling property insurance policy, coverage for smoke damage is available only when there is a direct physical loss, which is defined in California law as a distinct, demonstrable and physical alteration of covered property,” the letter stated.
+“If the hygienist recommendations call for cleaning, including cleaning of lead and/or asbestos, and there is no direct physical loss to the property, there is no coverage,” it went on to say.
+Advertisement
+The plan did offer to reinspect the home if cleaning was not successful in removing the contaminants.
+Schaffer said he expects that the new language will become a point of contention in the dozens of lawsuits that he and other attorneys have filed on behalf of fire victims against the FAIR Plan.
+[ ![Altadena, CA - February 04: Crews dressed in hazardous materials outfits, clean up toxic debris at a home after it was destroyed in the Eaton fire on Wapello Street in Altadena Tuesday, Feb. 4, 2025. \(Allen J. Schaben / Los Angeles Times\)](https://ca-times.brightspotcdn.com/dims4/default/85bf713/2147483647/strip/true/crop/3600x2400+0+26/resize/840x560!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fd5%2F32%2F4af1f49c4313b5069508d8a39c57%2F1493660-me-altadena-cleanup-10-ajs.jpg) ](https://www.latimes.com/business/story/2025-08-07/fair-plan-smoke-damage-legal-action-california-department-of-insurance-lara)
+[Business](https://www.latimes.com/business)
+###  [Insurer of last resort faces questions over smoke damage claims](https://www.latimes.com/business/story/2025-08-07/fair-plan-smoke-damage-legal-action-california-department-of-insurance-lara)
+State regulators have taken legal action against California’s home insurer of last resort over its alleged denial and limiting of smoke damage claims stemming from the Jan. 7 and prior fires — a move critics say is overdue and may not amount to much.
+Aug. 7, 2025
+In March, California Insurance Commissioner Ricardo Lara [issued a bulletin](https://www.insurance.ca.gov/0250-insurers/0300-insurers/0200-bulletins/bulletin-notices-commiss-opinion/upload/Bulletin-2025-7-Insurance-Coverage-for-Smoke-Damage-and-Guidance-for-Proper-Handling-of-Smoke-Damage-Claims-for-Properties-Located-in-or-near-California-Wildfire-Areas.pdf) advising insurers that the Supreme Court decision does not state “smoke damage is never covered as a matter of law.” A department spokesman declined to comment further, citing the litigation with the plan.
+Advertisement
+Altadena homeowner Maral Donoyan, 59, who spoke to The Times in April about her difficulties in dealing with the plan, said she and her husband were only able to move back into their smoke-damaged home in June after taking out a Small Business Administration loan.
+The plan denied the couple’s smoke damage claim, even though their garage partially burned, she said. That forced the couple to spend close to $200,000 of their own money on remediation, with the bedroom above the garage still needing work, said Donoyan, who is a plaintiff in another lawsuit against the plan.
+“Toxic, traumatic, bad faith, immoral,” is how she describes her interactions with the plan. 
+### More to Read 
+  * [ ![ALTADENA, CA - JANUARY 8, 2025: A business and vehicle are a total loss as flames from the wind driven Eaton fire destroyed many businesses along Lake Avenue on January 8, 2025 in Altadena, California. \(Gina Ferazzi / Los Angeles Times\)](https://ca-times.brightspotcdn.com/dims4/default/3e77c44/2147483647/strip/true/crop/4486x3000+7+0/resize/320x214!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fec%2Fe0%2F56ef269e4b599156816229cc8661%2F1489921-me-eaton-fire-7-gmf.jpg) ](https://www.latimes.com/business/story/2025-09-05/newsom-calls-on-fair-plan-to-process-smoke-damage-claims-fast-and-fairly)
+###  [Newsom demands FAIR Plan process Los Angeles wildfire smoke damage claims ‘expeditiously and fairly’](https://www.latimes.com/business/story/2025-09-05/newsom-calls-on-fair-plan-to-process-smoke-damage-claims-fast-and-fairly)
+Sept. 5, 2025
+  * [ ![MALIBU, CA - MARCH 20: Dean Wenner's three-story beachfront house, along with his neighbors' houses on Pacific Coast Highway, was destroyed in the Palisades fire. He, along with hundreds of other beachfront owners, faces the challenges of rebuilding that include regulations, cost of construction, rising sea levels and erosion along the shoreline. Photographed at Big Rock Beach in Malibu, CA on Thursday, March 20, 2025. \(Myung J. Chun / Los Angeles Times\)](https://ca-times.brightspotcdn.com/dims4/default/b7f6da9/2147483647/strip/true/crop/8064x5393+0+328/resize/320x214!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F4c%2F98%2Fad4767f743b98ebedb2bbec4dbd0%2F1499143-me-palisades-fire-rebuild-challenge-07-mjc.jpg) ](https://www.latimes.com/business/story/2025-10-22/california-insurers-given-ok-to-charge-homeowners-statewide-for-l-a-county-fire-costs)
+###  [California insurers set to charge homeowners for L.A. County fire costs](https://www.latimes.com/business/story/2025-10-22/california-insurers-given-ok-to-charge-homeowners-statewide-for-l-a-county-fire-costs)
+Oct. 22, 2025
+  * [ ![Amy Harrity and Evan Reiss outside their smoke damaged Altadena home earlier this year. \(Courtesy of Amy Harrity\)](https://ca-times.brightspotcdn.com/dims4/default/d78210c/2147483647/strip/true/crop/5471x3659+8+0/resize/320x214!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fc6%2F0d%2F57d59aa2484abe33ec2ec21cebf4%2Ffi-state-farm-probe-analysis-5387.JPG) ](https://www.latimes.com/business/story/2025-07-07/angry-homeowners-california-probe-state-farm-fire-response)
+[For Subscribers](https://www.latimes.com/topic/for-la-times-subscribers)
+###  [Angry homeowners and a state probe. What went wrong with State Farm’s L.A. fire response](https://www.latimes.com/business/story/2025-07-07/angry-homeowners-california-probe-state-farm-fire-response)
+July 7, 2025
+
+
+Show Comments
+[Business](https://www.latimes.com/business)[Fires](https://www.latimes.com/topic/fires)
+### Inside the business of entertainment
+The Wide Shot brings you news, analysis and insights on everything from streaming wars to production — and what it all means for the future.
+By continuing, you agree to our [Terms of Service](https://www.latimes.com/terms-of-service) and our [Privacy Policy](https://www.latimes.com/privacy-policy). 
+Enter email address
+Agree & Continue 
+[ ![](https://ca-times.brightspotcdn.com/dims4/default/21dd9ee/2147483647/strip/true/crop/1852x1852+614+146/resize/130x130!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F67%2Fb2%2F673e0ef9479193c54ae6f52406d8%2Fstaff-bio-laurence-darmiento-02.JPG) ](https://www.latimes.com/people/laurence-darmiento)
+[Laurence Darmiento](https://www.latimes.com/people/laurence-darmiento)
+Follow Us
+  * [ X ](https://x.com/ldarmiento)
+  * Email
+
+
+Laurence Darmiento covers finance, insurance, aerospace and dealmakers in Southern California for the Los Angeles Times. He joined the paper in 2015 as an assistant Business editor and has overseen finance, real estate and Washington business coverage. Previously he had been the managing editor of the Los Angeles Business Journal and was a reporter for the Los Angeles Daily News and other outlets. A New York native, he is an alumnus of Cornell University.
+### More From the Los Angeles Times 
+  * [ ![Altadena, CA - October 03: Workers clean up contaminated possessions and surfaces months after the Eaton Fire at Brent Morgan and Corine Harmon's home on Friday, Oct. 3, 2025 in Altadena, CA. The cleanup crews are largely made up of immigrant workers who continue cleaning homes despite the ongoing immigration enforcement raids ins Los Angeles. \(Carlin Stiehl / Los Angeles Times\)](https://ca-times.brightspotcdn.com/dims4/default/cfc416c/2147483647/strip/true/crop/3000x2000+0+1/resize/840x560!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F26%2F0a%2F0b1620f74bf98dee6c7d0ca9ad4a%2F1524612-me-remediation-team-altadena-ces-00160.jpg) ](https://www.latimes.com/environment/story/2025-11-06/many-of-altadenas-standing-homes-still-contaminated-lead-asbestos-after-cleanup)
+[Climate & Environment](https://www.latimes.com/environment)
+###  [Many of Altadena’s standing homes are still contaminated with lead and asbestos even after cleanup](https://www.latimes.com/environment/story/2025-11-06/many-of-altadenas-standing-homes-still-contaminated-lead-asbestos-after-cleanup)
+Nov. 6, 2025
+  * [ ![Pasadena, CA - January 12: Power lines in Eaton Canyon on Sunday, Jan. 12, 2025 in Pasadena, CA. \(Brian van der Brug / Los Angeles Times\)](https://ca-times.brightspotcdn.com/dims4/default/46d2fd0/2147483647/strip/true/crop/3600x2400+0+0/resize/840x560!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fd6%2F36%2F7d46c6714f3fb07e06df0b868ddb%2F1490428-me-eaton-fire-powerline-2-brv.jpg) ](https://www.latimes.com/environment/story/2025-11-06/edison-blacks-out-more-customers-to-stop-utility-sparked-fires)
+[Climate & Environment](https://www.latimes.com/environment)
+###  [Edison blacked out a record number of customers to stop fires. Now regulators have warned the utility](https://www.latimes.com/environment/story/2025-11-06/edison-blacks-out-more-customers-to-stop-utility-sparked-fires)
+Nov. 6, 2025
+  * [ ![LAFD responding to the Lachman fire in the Pacific Palisades area](https://ca-times.brightspotcdn.com/dims4/default/58b5b0f/2147483647/strip/true/crop/2759x1839+332+0/resize/840x560!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F9e%2Fa5%2F770c775a4865b6c8a0f083fd7fdf%2Fla-me-lachman-fire01a.jpeg) ](https://www.latimes.com/california/story/2025-11-05/federal-prosecutors-subpoena-lafd-firefighter-text-messages)
+[California](https://www.latimes.com/california)
+###  [Federal prosecutors subpoena L.A. firefighter text messages](https://www.latimes.com/california/story/2025-11-05/federal-prosecutors-subpoena-lafd-firefighter-text-messages)
+Nov. 6, 2025
+  * [ ![Altadena, CA - October 23: An aerial view of cleared lots and construction around 2900 N Fair Oaks Ave, Altadena, after the Eaton fire destroyed much of it last year in Altadena Thursday, Oct. 23, 2025. \(Allen J. Schaben / Los Angeles Times\)](https://ca-times.brightspotcdn.com/dims4/default/27b00f8/2147483647/strip/true/crop/4455x2970+413+0/resize/840x560!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F44%2F78%2Fc1e104894005bef0991fe9f2a851%2F1519910-me-eaton-fire-timelapse-october-ajs-02.jpg) ](https://www.latimes.com/california/story/2025-11-05/in-palisades-and-eaton-fire-updates-bungled-warnings-hit-weary-victims-like-a-sucker-punch)
+Voices
+###  [Lopez: Bungled warnings hit weary Eaton and Palisades fire victims like ‘a sucker punch’](https://www.latimes.com/california/story/2025-11-05/in-palisades-and-eaton-fire-updates-bungled-warnings-hit-weary-victims-like-a-sucker-punch)
+Nov. 5, 2025
+
+
+### Most Read in Business 
+  * [ ![Zohran Mamdani habla en Nueva York tras ganar las elecciones para alcalde de esa ciudad el 4 de noviembre del 2025. \(AP foto/Yuki Iwamura\)](https://ca-times.brightspotcdn.com/dims4/default/b219628/2147483647/strip/true/crop/8640x5760+0+0/resize/840x560!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F1b%2Fdb%2F8eb5c79d4f60abd37efc522f0092%2Ftrump-mamdani-06577.jpg) ](https://www.latimes.com/business/story/2025-11-06/how-bad-is-trumps-economy-election-results-say-its-very-bad-and-getting-worse)
+Voices
+###  [Hiltzik: How bad is Trump’s economy? Election results say it’s very bad, and getting worse](https://www.latimes.com/business/story/2025-11-06/how-bad-is-trumps-economy-election-results-say-its-very-bad-and-getting-worse)
+Nov. 6, 2025
+  * [ ![Students from the Primary School interact with a humanoid robot](https://ca-times.brightspotcdn.com/dims4/default/e989647/2147483647/strip/true/crop/7662x5108+0+0/resize/840x560!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F32%2F6d%2Fb464a705413582f230fe8fca2c8a%2Fgettyimages-2243791814.jpg) ](https://www.latimes.com/business/story/2025-11-02/inside-californias-rush-to-gather-human-data-for-building-humanoid-robots)
+[Business](https://www.latimes.com/business)
+###  [Inside the race to train AI robots how to act human in the real world](https://www.latimes.com/business/story/2025-11-02/inside-californias-rush-to-gather-human-data-for-building-humanoid-robots)
+Nov. 2, 2025
+  * [ ![ALTADENA, CA - NOVEMBER 6, 2025 -- Joy Chen, center, Executive Director of Eaton Fire Survivors Network, along with Eaton and Palisades fire survivors, urge Gov. Gavin Newsom to call for the resignation of Insurance Commissioner Ricardo Lara during a press conference at the Good Neighbor Bar in Altadena on November 6, 2025. The press conference is in response to a New York Times report revealing that Lara privately struck a deal with insurers allowing them to drop tens of thousands of policyholders ahead of the Los Angeles fires. \(Genaro Molina/Los Angeles Times\)](https://ca-times.brightspotcdn.com/dims4/default/96c2c8b/2147483647/strip/true/crop/8192x5461+0+1/resize/840x560!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F2c%2F5b%2Fa275e39c4b52a78785d5f645d3a4%2F1529019-fi-1106-richard-lara-resign-rally-gem-002.jpg) ](https://www.latimes.com/business/story/2025-11-06/los-angeles-wildfires-victims-calls-resignation-insurance-commissioner-ricardo-lara-altadena-palisades)
+[Business](https://www.latimes.com/business)
+###  [L.A.-area fire victims demand resignation of state’s top insurance regulator](https://www.latimes.com/business/story/2025-11-06/los-angeles-wildfires-victims-calls-resignation-insurance-commissioner-ricardo-lara-altadena-palisades)
+Nov. 6, 2025
+  * [ ![STOCKTON, CALIFORNIA - OCTOBER 22: California Gov. Gavin Newsom speaks to reporters after he participated in a fireside chat at the California Economic Summit on October 22, 2025 in Stockton, California. Gov. Newsom answered questions about the Trump administration's plans to deploy border patrol officers and the National Guard to San Francisco. \(Photo by Justin Sullivan/Getty Images\)](https://ca-times.brightspotcdn.com/dims4/default/01675b2/2147483647/strip/true/crop/5714x3809+0+23/resize/840x560!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fbe%2F3a%2Fed46b710473b872efdd638b243ff%2F2242675747.jpg) ](https://www.latimes.com/business/story/2025-11-06/as-tech-lobbying-intensifies-california-politicians-make-concessions)
+[Business](https://www.latimes.com/business)
+###  [California backs down on AI laws so more tech leaders don’t flee the state](https://www.latimes.com/business/story/2025-11-06/as-tech-lobbying-intensifies-california-politicians-make-concessions)
+Nov. 6, 2025
+
+
+###  [Subscribers are Reading](https://www.latimes.com/topic/for-la-times-subscribers)
+  * ###  [Months after fire in Altadena, determination turns to despair](https://www.latimes.com/california/story/2025-10-30/months-after-fires-distress-grows-a-network-of-thousands-pushes-for-help)
+  * ###  [High school flag football: City Section scores, schedule](https://www.latimes.com/sports/highschool/story/2025-11-05/high-school-flag-football-city-section-scores)
+  * Voices
+[For Subscribers](https://www.latimes.com/topic/for-la-times-subscribers)
+###  [Hernández: Yamamoto’s interpreter almost quit after 2 days. Now he’s hoping his underwear can help in World Series](https://www.latimes.com/sports/dodgers/story/2025-10-23/dodgers-yoshinobu-yamamoto-yoshihiro-sonoda)
+  * [For Subscribers](https://www.latimes.com/topic/for-la-times-subscribers)
+###  [‘I haven’t given my Japanese side its due’: Dave Roberts reflects ahead of Dodgers’ Tokyo opener](https://www.latimes.com/sports/dodgers/story/2025-03-13/dave-roberts-japanese-heritage-tokyo-opening-day)
+  * [For Subscribers](https://www.latimes.com/topic/for-la-times-subscribers)
+###  [Drugged women, secret photos: Horrific details emerge as USC grad student confesses to police](https://www.latimes.com/california/story/2025-10-31/horrific-details-emerge-as-usc-grad-student-confesses-to-police)
+
+
+Advertisement
+### Latest Business 
+  * ###  [Serbia passes special bill enabling Trump’s son-in-law to build luxury compound despite opposition](https://www.latimes.com/world-nation/story/2025-11-07/serbia-passes-a-special-bill-enabling-trumps-son-in-law-to-build-luxury-compound-despite-opposition)
+Nov. 7, 2025
+  * ###  [White House shifts focus to tax cuts and drug prices as voters signal economic stress](https://www.latimes.com/business/story/2025-11-07/trump-is-ramping-up-a-new-effort-to-convince-a-skeptical-public-he-can-fix-affordability-worries)
+Nov. 7, 2025
+  * ###  [Why Trump’s tariff strategy could survive a Supreme Court defeat](https://www.latimes.com/business/story/2025-11-07/trump-has-other-tariff-options-if-the-supreme-court-strikes-down-his-worldwide-import-taxes)
+Nov. 7, 2025
+  * ###  [Low unemployment masks a ‘no hire’ job market that’s leaving Americans unemployed longer](https://www.latimes.com/business/story/2025-11-07/no-hire-job-market-leaves-unemployed-in-limbo-as-threats-to-economy-multiply)
+Nov. 7, 2025
+  * ###  [Peloton recalls nearly 878,000 exercise bikes after seats break, leading to injuries](https://www.latimes.com/business/story/2025-11-07/peloton-recalls-nearly-878-000-exercise-bikes-after-several-seat-posts-break)
+Nov. 7, 2025
+
+
+Advertisement
+Advertisement
+Advertisement
+Advertisement
+Advertisement
+Advertisement
+Advertisement
+Advertisement
+Advertisement
+[](https://www.latimes.com/)
+![A California Times publication](https://ca-times.brightspotcdn.com/a6/d6/eea0f1094fb281dbea09e0aa79cd/art-caltimes-trademark-3x.png)
+[Subscribe for unlimited access](https://www.latimes.com/footersubscribe)  
+[Site Map](https://www.latimes.com/sitemap)
+Follow Us
+  * [ X ](https://x.com/latimes)
+  * [ Instagram ](https://www.instagram.com/latimes/)
+  * [ YouTube ](https://www.youtube.com/losangelestimes)
+  * [ Facebook ](https://www.facebook.com/latimes)
+
+
+  *     * [ eNewspaper](https://enewspaper.latimes.com)
+    * [ Find/Post Jobs](https://jobs.latimes.com)
+    * [ Place an Ad](https://placeanad.latimes.com)
+    * [ Media Kit: Why the L.A. Times? ](https://mediakit.latimes.com/)
+    * [ Invest Now: Own a Part of History](https://join.latimes.com/)
+  * MORE FROM THE L.A. TIMES 
+    * [ Crossword](https://www.latimes.com/games/daily-crossword)
+    * [ Obituaries](https://www.latimes.com/obituaries)
+    * [ Recipes](https://www.latimes.com/food/recipes)
+    * [ Guides](https://www.latimes.com/lifestyle/weekend)
+    * [ L.A. Times Store](https://store.latimes.com/)
+    * [ About/Contact](https://www.latimes.com/about)
+    * [ For the Record](https://www.latimes.com/about/for-the-record/)
+    * [ L.A. Times Careers](https://careers.latimes.com/)
+    * [ Manage Subscription](https://membership.latimes.com/)
+    * [ Reprints and Permissions](https://www.latimes.com/about/how-to-obtain-rights-permissions)
+
+
+Copyright © 2025, Los Angeles Times | [Terms of Service](https://www.latimes.com/terms-of-service) | [Privacy Policy](https://www.latimes.com/privacy-policy) | [CA Notice of Collection](https://www.latimes.com/privacy-policy#california-notice-of-collection) | [Do Not Sell or Share My Personal Information](https://membership.latimes.com/privacy-settings)

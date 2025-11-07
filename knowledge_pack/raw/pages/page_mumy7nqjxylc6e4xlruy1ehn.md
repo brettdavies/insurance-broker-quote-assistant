@@ -1,0 +1,293 @@
+[Skip to main content](https://www.thecentersquare.com/florida/article_dd8d6efe-95b5-4d8d-84b0-b73dd08662c1.html#main-page-container)
+You have permission to edit this article.
+[](https://www.thecentersquare.com/tncms/admin/editorial-asset/?edit=dd8d6efe-95b5-4d8d-84b0-b73dd08662c1) Close
+Site search Search
+[Home](https://www.thecentersquare.com/)
+About
+  * [About The Center Square](https://www.thecentersquare.com/site/about/about.html)
+  * [Newsletters](https://www.thecentersquare.com/newsletters/)
+  * [Staff](https://www.thecentersquare.com/site/about/staff.html)
+  * [FAQs](https://www.thecentersquare.com/site/about/faqs.html)
+
+
+[National](https://www.thecentersquare.com/national)
+[Investigations](https://www.thecentersquare.com/issues/investigations/)
+States
+  * [Alabama](https://www.thecentersquare.com/alabama/)
+  * [Alaska](https://www.thecentersquare.com/alaska/)
+  * [Arizona](https://www.thecentersquare.com/arizona/)
+  * [Arkansas](https://www.thecentersquare.com/arkansas/)
+  * [California](https://www.thecentersquare.com/california/)
+  * [Colorado](https://www.thecentersquare.com/colorado/)
+  * [Connecticut](https://www.thecentersquare.com/connecticut/)
+  * [Delaware](https://www.thecentersquare.com/delaware/)
+  * [Florida](https://www.thecentersquare.com/florida/)
+  * [Georgia](https://www.thecentersquare.com/georgia/)
+  * [Hawaii](https://www.thecentersquare.com/hawaii/)
+  * [Idaho](https://www.thecentersquare.com/idaho/)
+  * [Illinois](https://www.thecentersquare.com/illinois/)
+  * [Indiana](https://www.thecentersquare.com/indiana/)
+  * [Iowa](https://www.thecentersquare.com/iowa)
+  * [Kansas](https://www.thecentersquare.com/kansas/)
+  * [Kentucky](https://www.thecentersquare.com/kentucky/)
+  * [Louisiana](https://www.thecentersquare.com/louisiana/)
+  * [Maine](https://www.thecentersquare.com/maine/)
+  * [Maryland](https://www.thecentersquare.com/maryland/)
+  * [Massachusetts](https://www.thecentersquare.com/massachusetts/)
+  * [Michigan](https://www.thecentersquare.com/michigan/)
+  * [Minnesota](https://www.thecentersquare.com/minnesota/)
+  * [Mississippi](https://www.thecentersquare.com/mississippi/)
+  * [Missouri](https://www.thecentersquare.com/missouri/)
+  * [Montana](https://www.thecentersquare.com/montana/)
+  * [Nebraska](https://www.thecentersquare.com/nebraska/)
+  * [Nevada](https://www.thecentersquare.com/nevada/)
+  * [New Hampshire](https://www.thecentersquare.com/new_hampshire/)
+  * [New Jersey](https://www.thecentersquare.com/new_jersey/)
+  * [New Mexico](https://www.thecentersquare.com/new_mexico/)
+  * [New York](https://www.thecentersquare.com/new_york/)
+  * [North Carolina](https://www.thecentersquare.com/north_carolina/)
+  * [North Dakota](https://www.thecentersquare.com/north_dakota/)
+  * [Ohio](https://www.thecentersquare.com/ohio/)
+  * [Oklahoma](https://www.thecentersquare.com/oklahoma/)
+  * [Oregon](https://www.thecentersquare.com/oregon/)
+  * [Pennsylvania](https://www.thecentersquare.com/pennsylvania/)
+  * [Rhode_island](https://www.thecentersquare.com/rhode_island/)
+  * [South Carolina](https://www.thecentersquare.com/south_carolina/)
+  * [South Dakota](https://www.thecentersquare.com/south_dakota/)
+  * [Tennessee](https://www.thecentersquare.com/tennessee/)
+  * [Texas](https://www.thecentersquare.com/texas/)
+  * [Utah](https://www.thecentersquare.com/utah/)
+  * [Vermont](https://www.thecentersquare.com/vermont/)
+  * [Virginia](https://www.thecentersquare.com/virginia/)
+  * [Washington](https://www.thecentersquare.com/washington/)
+  * [West Virginia](https://www.thecentersquare.com/west_virginia/)
+  * [Wisconsin](https://www.thecentersquare.com/wisconsin/)
+  * [Wyoming](https://www.thecentersquare.com/wyoming/)
+
+
+Issues
+  * [Accountability](https://www.thecentersquare.com/issues/accountability/)
+  * [Agriculture](https://www.thecentersquare.com/issues/agriculture/)
+  * [Border](https://www.thecentersquare.com/issues/border/)
+  * [Education](https://www.thecentersquare.com/issues/education/)
+  * [Energy](https://www.thecentersquare.com/issues/energy/)
+  * [Financial Services](https://www.thecentersquare.com/issues/financial-services/)
+  * [Healthcare](https://www.thecentersquare.com/issues/healthcare/)
+  * [Inflation](https://www.thecentersquare.com/issues/inflation/)
+  * [Public Safety](https://www.thecentersquare.com/issues/public-safety/)
+  * [Veterans](https://www.thecentersquare.com/issues/veterans/)
+  * [Opinion](https://www.thecentersquare.com/opinion/)
+
+
+[Polls](https://www.thecentersquare.com/polls/)
+[Video](https://www.youtube.com/@thecentersquare)
+[Donate](https://secure.anedot.com/franklin-news-foundation/central)
+  * [Mission Statement](https://www.thecentersquare.com/site/about/mission_statement.html)
+  * [Impact Statement](https://www.thecentersquare.com/site/about/impact_statement.html/)
+
+
+#  [ Florida ](https://www.thecentersquare.com/florida)
+[Newsletters](https://www.thecentersquare.com/newsletters/)
+[Donate](https://secure.anedot.com/franklin-news-foundation/central)
+Toggle navigation
+#  [ Florida ](https://www.thecentersquare.com/florida)
+  * [ Home ](https://www.thecentersquare.com/)
+  * Issues
+    * [ Accountability ](https://www.thecentersquare.com/issues/accountability/)
+    * [ Agriculture ](https://www.thecentersquare.com/issues/agriculture/)
+    * [ Border ](https://www.thecentersquare.com/issues/border/)
+    * [ Economy ](https://www.thecentersquare.com/issues/economy/)
+    * [ Education ](https://www.thecentersquare.com/issues/education/)
+    * [ Elections ](https://www.thecentersquare.com/issues/elections/)
+    * [ Energy ](https://www.thecentersquare.com/issues/energy/)
+    * [ Financial Services ](https://www.thecentersquare.com/issues/financial-services/)
+    * [ Healthcare ](https://www.thecentersquare.com/issues/healthcare/)
+    * [ Public Safety ](https://www.thecentersquare.com/issues/public-safety/)
+    * [ Veterans ](https://www.thecentersquare.com/issues/veterans/)
+    * [ Opinion ](https://www.thecentersquare.com/opinion/)
+  * States
+    * [ Alabama ](https://www.thecentersquare.com/alabama/)
+    * [ Alaska ](https://www.thecentersquare.com/alaska/)
+    * [ Arizona ](https://www.thecentersquare.com/arizona/)
+    * [ Arkansas ](https://www.thecentersquare.com/arkansas/)
+    * [ California ](https://www.thecentersquare.com/california/)
+    * [ Colorado ](https://www.thecentersquare.com/colorado/)
+    * [ Connecticut ](https://www.thecentersquare.com/connecticut/)
+    * [ Delaware ](https://www.thecentersquare.com/delaware/)
+    * [ Florida ](https://www.thecentersquare.com/florida/)
+    * [ Georgia ](https://www.thecentersquare.com/georgia/)
+    * [ Hawaii ](https://www.thecentersquare.com/hawaii/)
+    * [ Idaho ](https://www.thecentersquare.com/idaho/)
+    * [ Illinois ](https://www.thecentersquare.com/illinois/)
+    * [ Indiana ](https://www.thecentersquare.com/indiana/)
+    * [ Iowa ](https://www.thecentersquare.com/iowa/)
+    * [ Kansas ](https://www.thecentersquare.com/kansas/)
+    * [ Kentucky ](https://www.thecentersquare.com/kentucky/)
+    * [ Louisiana ](https://www.thecentersquare.com/louisiana/)
+    * [ Maine ](https://www.thecentersquare.com/maine/)
+    * [ Maryland ](https://www.thecentersquare.com/maryland/)
+    * [ Massachusetts ](https://www.thecentersquare.com/massachusetts/)
+    * [ Michigan ](https://www.thecentersquare.com/michigan/)
+    * [ Minnesota ](https://www.thecentersquare.com/minnesota/)
+    * [ Mississippi ](https://www.thecentersquare.com/mississippi/)
+    * [ Missouri ](https://www.thecentersquare.com/missouri/)
+    * [ Montana ](https://www.thecentersquare.com/montana/)
+    * [ Nebraska ](https://www.thecentersquare.com/nebraska/)
+    * [ Nevada ](https://www.thecentersquare.com/nevada/)
+    * [ New Hampshire ](https://www.thecentersquare.com/new_hampshire/)
+    * [ New Jersey ](https://www.thecentersquare.com/new_jersey/)
+    * [ New Mexico ](https://www.thecentersquare.com/new_mexico/)
+    * [ New York ](https://www.thecentersquare.com/new_york/)
+    * [ North Carolina ](https://www.thecentersquare.com/north_carolina/)
+    * [ North Dakota ](https://www.thecentersquare.com/north_dakota/)
+    * [ Ohio ](https://www.thecentersquare.com/ohio/)
+    * [ Oklahoma ](https://www.thecentersquare.com/oklahoma/)
+    * [ Oregon ](https://www.thecentersquare.com/oregon/)
+    * [ Pennsylvania ](https://www.thecentersquare.com/pennsylvania/)
+    * [ Rhode Island ](https://www.thecentersquare.com/rhode_island/)
+    * [ South Carolina ](https://www.thecentersquare.com/south_carolina/)
+    * [ South Dakota ](https://www.thecentersquare.com/south_dakota/)
+    * [ Tennessee ](https://www.thecentersquare.com/tennessee/)
+    * [ Texas ](https://www.thecentersquare.com/texas/)
+    * [ Utah ](https://www.thecentersquare.com/utah/)
+    * [ Vermont ](https://www.thecentersquare.com/vermont/)
+    * [ Virginia ](https://www.thecentersquare.com/virginia/)
+    * [ Washington ](https://www.thecentersquare.com/washington/)
+    * [ West Virginia ](https://www.thecentersquare.com/west_virginia/)
+    * [ Wisconsin ](https://www.thecentersquare.com/wisconsin/)
+    * [ Wyoming ](https://www.thecentersquare.com/wyoming/)
+  * [ National ](https://www.thecentersquare.com/national/)
+  * [ Investigations ](https://www.thecentersquare.com/issues/investigations/)
+  * [ Polls ](https://www.thecentersquare.com/polls/)
+  * [ Video ](https://www.youtube.com/@thecentersquare)
+  * About
+    * [ About The Center Square ](https://www.thecentersquare.com/site/about/about.html)
+    * [ Newsletters ](https://www.thecentersquare.com/newsletters/)
+    * [ Republishing Guidelines ](https://www.thecentersquare.com/site/resources/republishing.html)
+    * [ Editorial Staff ](https://www.thecentersquare.com/site/about/staff.html)
+    * [ Jobs ](https://www.thecentersquare.com/site/get_in_touch/jobs.html/)
+    * [ FAQs ](https://www.thecentersquare.com/site/resources/faqs.html)
+    * [ Contact Us ](https://www.thecentersquare.com/site/get_in_touch/contact.html)
+    * [ Impact Statement ](https://www.thecentersquare.com/site/about/impact_statement.html)
+
+
+Close
+![Pile of U.S. fifty-dollar bills.](https://bloximages.newyork1.vip.townnews.com/thecentersquare.com/content/tncms/assets/v3/editorial/b/87/b87294cc-c47e-41f5-a505-925ba9644149/68dd7c1937388.image.jpg?resize=400%2C225)
+![](https://bloximages.newyork1.vip.townnews.com/thecentersquare.com/content/tncms/assets/v3/editorial/b/87/b87294cc-c47e-41f5-a505-925ba9644149/68dd7c1937388.image.jpg?resize=200%2C112)
+A pile of U.S. fifty-dollar bills is displayed. Photo: Emilee Calametti / The Center Square
+  * [ Facebook ](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.thecentersquare.com%2Fimage_b87294cc-c47e-41f5-a505-925ba9644149.html%3Futm_medium%3Dsocial%26utm_source%3Dfacebook%26utm_campaign%3Duser-share "Share on Facebook")
+  * [ Twitter ](https://twitter.com/intent/tweet?&text=Pile%20of%20U.S.%20Currency&via=thecentersquare&url=https%3A%2F%2Fwww.thecentersquare.com%2Fimage_b87294cc-c47e-41f5-a505-925ba9644149.html%3Futm_medium%3Dsocial%26utm_source%3Dtwitter%26utm_campaign%3Duser-share "Tweet")
+  * [ WhatsApp ](https://wa.me/?text=https://www.thecentersquare.com/image_b87294cc-c47e-41f5-a505-925ba9644149.html "WhatsApp")
+  * [ SMS ](sms:?body=Check%20out%20this%20link:%20www.thecentersquare.com/tncms/asset/editorial/b87294cc-c47e-41f5-a505-925ba9644149 "SMS")
+  * Email
+  * [ Print ](javascript:window.print\(\) "Print")
+  * Copy article link
+  * [ Save ](https://www.thecentersquare.com/florida/article_dd8d6efe-95b5-4d8d-84b0-b73dd08662c1.html "Save to list")
+
+
+Top Story
+#  Latest State Farm rate cut has reduced Florida premiums by $1B
+  * By David Beasley | The Center Square contributor
+  * Nov 3, 2025 
+  * Nov 3, 2025
+
+
+  * [ Facebook ](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.thecentersquare.com%2Fflorida%2Farticle_dd8d6efe-95b5-4d8d-84b0-b73dd08662c1.html%3Futm_medium%3Dsocial%26utm_source%3Dfacebook%26utm_campaign%3Duser-share "Share on Facebook")
+  * [ Twitter ](https://twitter.com/intent/tweet?&text=Latest%20State%20Farm%20rate%20cut%20has%20reduced%20Florida%20premiums%20by%20%241B&via=thecentersquare&url=https%3A%2F%2Fwww.thecentersquare.com%2Fflorida%2Farticle_dd8d6efe-95b5-4d8d-84b0-b73dd08662c1.html%3Futm_medium%3Dsocial%26utm_source%3Dtwitter%26utm_campaign%3Duser-share "Tweet")
+  * [ WhatsApp ](https://wa.me/?text=https://www.thecentersquare.com/florida/article_dd8d6efe-95b5-4d8d-84b0-b73dd08662c1.html "WhatsApp")
+  * [ SMS ](sms:?body=Check%20out%20this%20link:%20www.thecentersquare.com/tncms/asset/editorial/dd8d6efe-95b5-4d8d-84b0-b73dd08662c1 "SMS")
+  * Email
+
+
+![Pile of U.S. fifty-dollar bills.](https://bloximages.newyork1.vip.townnews.com/thecentersquare.com/content/tncms/assets/v3/editorial/b/87/b87294cc-c47e-41f5-a505-925ba9644149/68dd7c1937388.image.jpg?resize=400%2C225)
+![](https://bloximages.newyork1.vip.townnews.com/thecentersquare.com/content/tncms/assets/v3/editorial/b/87/b87294cc-c47e-41f5-a505-925ba9644149/68dd7c1937388.image.jpg?resize=200%2C112)
+A pile of U.S. fifty-dollar bills is displayed. Photo: Emilee Calametti / The Center Square
+  * [ Facebook ](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.thecentersquare.com%2Fflorida%2Farticle_dd8d6efe-95b5-4d8d-84b0-b73dd08662c1.html%3Futm_medium%3Dsocial%26utm_source%3Dfacebook%26utm_campaign%3Duser-share "Share on Facebook")
+  * [ Twitter ](https://twitter.com/intent/tweet?&text=Latest%20State%20Farm%20rate%20cut%20has%20reduced%20Florida%20premiums%20by%20%241B&via=thecentersquare&url=https%3A%2F%2Fwww.thecentersquare.com%2Fflorida%2Farticle_dd8d6efe-95b5-4d8d-84b0-b73dd08662c1.html%3Futm_medium%3Dsocial%26utm_source%3Dtwitter%26utm_campaign%3Duser-share "Tweet")
+  * [ WhatsApp ](https://wa.me/?text=https://www.thecentersquare.com/florida/article_dd8d6efe-95b5-4d8d-84b0-b73dd08662c1.html "WhatsApp")
+  * [ SMS ](sms:?body=Check%20out%20this%20link:%20www.thecentersquare.com/tncms/asset/editorial/dd8d6efe-95b5-4d8d-84b0-b73dd08662c1 "SMS")
+  * Email
+  * [ Print ](javascript:window.print\(\) "Print")
+  * Copy article link
+  * [ Save ](https://www.thecentersquare.com/florida/article_dd8d6efe-95b5-4d8d-84b0-b73dd08662c1.html "Save to list")
+
+
+(The Center Square) – Another big insurer is lowering rates in Florida as a result of the state’s tort reform legislation.
+State Farm is dropping auto insurance rates by an average of 10%, matching its cut of a year ago. Combined, the two cuts will lower insurance premiums in Florida by more than $1 billion for private passenger cars, averaging $400 per vehicle, the company said.
+“This isn’t happening by accident,” Allyson Watts, the company’s senior vice president, wrote in a recent opinion piece posted on the company’s website. “It’s the direct result of Florida’s legislators and insurance regulators recognizing the impact of rising insurance costs – caused by over-litigation – and being willing to hear industry concerns and tackle the real problems behind the rising costs.”
+Other states should follow the Florida model, Watts wrote.
+“By focusing on meaningful solutions rather than short-term fixes, policymakers created a framework to benefit and protect consumers while maintaining market stability,” she wrote. “This approach recognizes that a healthy insurance market requires balance – a focus on consumers alongside conditions that allow insurers to operate sustainably and competitively.”
+Earlier this month, second-term Republican Gov. Ron DeSantis announced that Progressive Insurance is issuing close to $1 billion in refunds to Florida drivers, “reflecting reduced losses and strong savings tied directly to the state’s tort and insurance reform efforts.”
+The top five auto insurers in Florida are averaging a decline in rates of 6.5% this year, according to the state. This has dropped from an average increase in 2024 of 4.3% and an average 31.7% in 2023, the state said.
+Tort reform is also helping to attract more competition in the homeowner’s insurance market, with 17 new companies entering the market, the governor said.
+Frivolous lawsuits against property insurance companies dropped 25% in the first half of 2025 compared to the same period in 2024, due to tort reform, according to the governor’s office.
+“Every month of 2025 has reported a continued decline in litigation compared to the same month the previous year, further proof that the state’s legal environment has stabilized and is discouraging abusive lawsuits,” DeSantis said in a release.
+  * [ Facebook ](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.thecentersquare.com%2Fflorida%2Farticle_dd8d6efe-95b5-4d8d-84b0-b73dd08662c1.html%3Futm_medium%3Dsocial%26utm_source%3Dfacebook%26utm_campaign%3Duser-share "Share on Facebook")
+  * [ Twitter ](https://twitter.com/intent/tweet?&text=Latest%20State%20Farm%20rate%20cut%20has%20reduced%20Florida%20premiums%20by%20%241B&via=thecentersquare&url=https%3A%2F%2Fwww.thecentersquare.com%2Fflorida%2Farticle_dd8d6efe-95b5-4d8d-84b0-b73dd08662c1.html%3Futm_medium%3Dsocial%26utm_source%3Dtwitter%26utm_campaign%3Duser-share "Tweet")
+  * [ WhatsApp ](https://wa.me/?text=https://www.thecentersquare.com/florida/article_dd8d6efe-95b5-4d8d-84b0-b73dd08662c1.html "WhatsApp")
+  * [ SMS ](sms:?body=Check%20out%20this%20link:%20www.thecentersquare.com/tncms/asset/editorial/dd8d6efe-95b5-4d8d-84b0-b73dd08662c1 "SMS")
+  * Email
+  * [ Print ](javascript:window.print\(\) "Print")
+  * Copy article link
+  * [ Save ](https://www.thecentersquare.com/florida/article_dd8d6efe-95b5-4d8d-84b0-b73dd08662c1.html "Save to list")
+
+
+  
+  
+  
+
+###  Recommended for You 
+  * ####  [ Latest State Farm rate cut has reduced Florida premiums by $1B](https://www.thecentersquare.com/florida/article_dd8d6efe-95b5-4d8d-84b0-b73dd08662c1.html)
+  * ####  [ Apalachicola Bay to reopen for wild oyster harvesting](https://www.thecentersquare.com/florida/article_626fc0fc-5c2d-4ffc-b51e-4108567c84f1.html)
+  * ####  [ Property tax reduction referendum sought for 2026 midterms](https://www.thecentersquare.com/florida/article_be707fe3-9aa0-4fe0-908b-7faac245763b.html)
+  * ####  [ Grants, reserves keep Head Start centers open; others closing](https://www.thecentersquare.com/florida/article_b0ebac7c-09fb-40d3-8d9b-7be7e30798f4.html)
+  * ####  [ Settlement sends $1B from Progressive to Florida drivers](https://www.thecentersquare.com/florida/article_c7e5b94f-59f3-478d-99a5-09bb41874d06.html)
+
+
+###  [ Florida ](https://www.thecentersquare.com/florida)
+[ ![Apalachicola Bay to reopen for wild oyster harvesting](https://www.thecentersquare.com/florida/article_dd8d6efe-95b5-4d8d-84b0-b73dd08662c1.html) ](https://www.thecentersquare.com/florida/article_626fc0fc-5c2d-4ffc-b51e-4108567c84f1.html)
+![](https://bloximages.newyork1.vip.townnews.com/thecentersquare.com/content/tncms/assets/v3/editorial/0/62/06215177-f9dc-4313-9e2c-2abfbebb6999/690ced2b4127f.image.png?resize=200%2C113)
+####  [ Apalachicola Bay to reopen for wild oyster harvesting](https://www.thecentersquare.com/florida/article_626fc0fc-5c2d-4ffc-b51e-4108567c84f1.html)
+[ ![Outdoor “Vote Here” sign with American flag near Keewatin Community Center polling place.](https://www.thecentersquare.com/florida/article_dd8d6efe-95b5-4d8d-84b0-b73dd08662c1.html) ](https://www.thecentersquare.com/florida/article_aedac8b5-74f2-4c16-92c2-85ae6ee502bb.html)
+![](https://bloximages.newyork1.vip.townnews.com/thecentersquare.com/content/tncms/assets/v3/editorial/3/13/31326cf7-aff5-487d-afb3-f0b7f2b16d69/68d697d39861d.image.jpg?resize=200%2C112)
+####  [ Gainesville voters overwhelmingly favor utility authority amendment](https://www.thecentersquare.com/florida/article_aedac8b5-74f2-4c16-92c2-85ae6ee502bb.html)
+[ ![Student kneels to look at books on a shelf in a school library.](https://www.thecentersquare.com/florida/article_dd8d6efe-95b5-4d8d-84b0-b73dd08662c1.html) ](https://www.thecentersquare.com/florida/article_a2633393-27a8-5ade-bd5f-d8f0d2bc1bfc.html)
+![](https://bloximages.newyork1.vip.townnews.com/thecentersquare.com/content/tncms/assets/v3/editorial/2/08/20860245-ae21-4d5a-bb49-9196b28c8a49/68d59224dcd0f.image.jpg?resize=200%2C112)
+####  [ Florida book ban challenge lawsuits reach appellate courts](https://www.thecentersquare.com/florida/article_a2633393-27a8-5ade-bd5f-d8f0d2bc1bfc.html)
+[ ![ Florida state flag with seal and red cross design.](https://www.thecentersquare.com/florida/article_dd8d6efe-95b5-4d8d-84b0-b73dd08662c1.html) ](https://www.thecentersquare.com/florida/article_b0ebac7c-09fb-40d3-8d9b-7be7e30798f4.html)
+![](https://bloximages.newyork1.vip.townnews.com/thecentersquare.com/content/tncms/assets/v3/editorial/3/a6/3a651227-67f2-4fb0-8ccb-6e7aafa6a536/68d6f44c001d1.image.jpg?resize=200%2C113)
+####  [ Grants, reserves keep Head Start centers open; others closing](https://www.thecentersquare.com/florida/article_b0ebac7c-09fb-40d3-8d9b-7be7e30798f4.html)
+[ ![The Center Square](https://www.thecentersquare.com/florida/article_dd8d6efe-95b5-4d8d-84b0-b73dd08662c1.html)](https://www.thecentersquare.com/)
+####  About 
+  * [ About The Center Square ](https://www.thecentersquare.com/site/about/about.html)
+  * [ Editorial Staff ](https://www.thecentersquare.com/site/about/staff.html)
+  * [ Code of Ethics ](https://www.thecentersquare.com/site/about/ethics.html)
+  * [ Mission Statement ](https://www.thecentersquare.com/site/about/mission_statement.html/)
+  * [ Impact Statement ](https://www.thecentersquare.com/site/about/impact_statement.html)
+
+
+####  Get in Touch 
+  * [ Advertising ](https://www.thecentersquare.com/site/get_in_touch/advertising.html)
+  * [ Contact ](https://www.thecentersquare.com/site/get_in_touch/contact.html)
+  * [ Job Postings ](https://www.thecentersquare.com/site/get_in_touch/jobs.html)
+
+
+####  Resources 
+  * [ Corrections & Clarifications ](https://www.thecentersquare.com/site/resources/corrections.html)
+  * [ FAQs ](https://www.thecentersquare.com/site/resources/faqs.html)
+  * [ Republishing Guidelines ](https://www.thecentersquare.com/site/resources/republishing.html)
+  * [ RSS Feeds ](https://www.thecentersquare.com/site/resources/rss.html)
+
+
+####  Subscribe 
+×
+#### Browser Compatibility
+Your browser is out of date and potentially vulnerable to security risks.  
+We recommend switching to one of the following browsers:
+[](https://www.microsoft.com/en-us/edge) [](https://www.google.com/chrome/) [](https://www.mozilla.org/en-US/firefox/)
+© Copyright 2025 Franklin News Foundation, 20 N. Clark St., Suite #3300, Chicago, IL 60602 | [Privacy Policy](https://www.thecentersquare.com/site/about/privacy.html)
+  * [ Facebook ](https://www.facebook.com/centersquarenews/ "Facebook")
+  * [ Twitter ](http://twitter.com/thecentersquare "Twitter")
+
+
+![](https://assets.revcontent.com/master/assets/px.png)

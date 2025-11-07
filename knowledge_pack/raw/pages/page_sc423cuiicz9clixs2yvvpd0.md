@@ -1,0 +1,169 @@
+Best Car Insurance for New Drivers | Progressive
+Best Car Insurance for New Drivers | Progressive
+[Skip to Main Content](https://www.progressive.com/answers/new-driver-car-insurance/#main)
+[![Progressive Insurance logo, Home page](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt483e097d64d66a25/66476d224ac76ee67740f2d5/logo-progressive.svg)](https://www.progressive.com/)
+  * Explore Products
+  * Claims
+  * About Us
+  * Resources
+
+
+  * [1-866-749-7436 , Call us](tel:1-866-749-7436)
+  * [](https://www.progressive.com/rp/login?cntgrp=A)
+
+
+  * [Answers](https://www.progressive.com/answers/)
+  * Articles by Product 
+  * Articles by Topic 
+
+
+# Car insurance for new drivers
+New drivers need car insurance before they hit the road — most states require liability coverage by law for all drivers. You can get a policy, or if you live with another driver, they may add you to their policy. Car insurance for first-time drivers might be more expensive until you build up a driving history. If you avoid accidents and tickets, your premium may decrease over time.
+3 minminute to read
+Explore Progressive Answers' [auto editorial guidelines](https://www.progressive.com/answers/auto-editorial-standards/) to find out why you can trust the car insurance information you find here.
+Key takeaways
+  * Car insurance for first-time drivers is likely more expensive than insurance for experienced drivers with a clean driving history
+  * You can lower your car insurance premiums by qualifying for discounts and avoiding accidents and tickets
+  * First-time drivers must meet minimum state requirements for insurance before driving
+
+
+  1. [![Progressive Insurance Homepage](https://www.progressive.com/content/images/domainprogressive/wh3/breadcrumbs/p-mark_breadcrumb.svg)](https://www.progressive.com/es/)
+  2. [Answers](https://www.progressive.com/answers/)
+  3. [Car insurance information](https://www.progressive.com/answers/car-insurance/)
+  4. Car insurance for new drivers
+
+Get quote
+## How much is car insurance for a new driver? 
+Car insurance for first-time drivers might be more expensive than for someone with a long history of good driving. But if you're a new adult driver (rather than a [teen getting car insurance](https://www.progressive.com/answers/teen-driver-insurance/)), you have the advantage of age — adult drivers are generally safer and cheaper to insure than teens. Learn more about [how age impacts insurance rates](https://www.progressive.com/answers/how-age-impacts-insurance/).
+Many other [factors impact your car insurance rate](https://www.progressive.com/answers/average-car-insurance-cost/), so it won't all come down to your years behind the wheel. For instance, your location and the [make and model of your vehicle can impact your rate](https://www.progressive.com/answers/how-make-impacts-car-insurance-rates/).
+Finding cheap car insurance for new drivers can be difficult, but there are [ways to lower your car insurance premium](https://www.progressive.com/answers/lower-car-insurance-rates/):
+  * Qualify for [car insurance discounts](https://www.progressive.com/auto/discounts/)
+  * Increase your deductible
+  * Reduce your coverage
+  * Try [usage-based insurance (UBI)](https://www.progressive.com/answers/usage-based-car-insurance/)
+  * Take a [defensive driving](https://www.progressive.com/answers/defensive-driving-insurance-discount/) course
+
+
+## When do I need to buy car insurance for the first time? 
+Many people buy car insurance for the first time when they buy their first car or when they're no longer on their parents' policy. If you're planning to buy or lease a car, you must meet your [state's minimum car insurance requirements](https://www.progressive.com/answers/state-car-insurance-information/) before you can legally hit the road.
+## How to get car insurance for the first time
+Follow these steps to get car insurance as a first-time driver:
+  1. ### Determine which coverages you need
+Selecting your coverages will depend on what your state requires, your preferences, and your budget. Most states require a minimum of [liability car insurance](https://www.progressive.com/answers/auto-liability-insurance/), and if you have a car loan or lease, your lender likely also requires [auto comprehensive coverage](https://www.progressive.com/answers/comprehensive-car-insurance/) and [auto collision](https://www.progressive.com/answers/auto-collision-coverage/) coverage.
+Explore all the [car insurance coverages](https://www.progressive.com/auto/insurance-coverages/) available and use our [car insurance calculator](https://www.progressive.com/auto/insurance-coverages/calculator/) to help determine which may be right for you.
+  2. ### Gather some personal information
+[Shopping for car insurance](https://www.progressive.com/answers/how-to-shop-car-insurance/) typically requires you to provide at least:
+     * **Your driving history** : As a new driver, you may not have accidents or tickets to report, which should work to your advantage. Find out [how accidents impact your car insurance](https://www.progressive.com/answers/how-accidents-impact-insurance/), and [how tickets can affect your rate](https://www.progressive.com/answers/how-tickets-impact-insurance/).
+     * **Your car's make, model, year, and mileage** : Your vehicle type, MSRP, age, safety features, and more can affect your insurance rate, especially if you get comprehensive or collision.
+     * **Your location** : State laws will determine the minimum coverage you need. Plus, depending on your coverages, your location may affect your rate since certain areas are more prone to [car theft](https://www.progressive.com/answers/does-car-insurance-cover-theft/), [car vandalism](https://www.progressive.com/answers/does-car-insurance-cover-vandalism/), and other harm.
+Once you're ready to purchase a policy, you may also need to provide:
+     * Your [car's VIN](https://www.progressive.com/answers/what-is-a-vin/)
+     * Your driver's license number
+     * Your Social Security number
+     * Other personal information like your address
+  3. ### Compare rates
+To find the best car insurance for a first-time driver, [compare car insurance rates](https://www.progressive.com/auto/discounts/compare-car-insurance-rates/) for the coverages you want. Remember to compare apples to apples — you'll need to select the same coverages, limits, and deductibles to truly compare different insurers. Then you can play around with how changing those amounts increases or decreases your [car insurance premium](https://www.progressive.com/answers/car-insurance-premium/) before you choose the right policy for you.
+
+
+## Ready to get car insurance as a new driver?
+Get your car insurance quote today using one of these methods:
+![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blta02bf0011ce6120c/604a687508636f3d7749d728/online.svg)
+### Go online
+Customize your policy's coverages, limits, and deductibles.
+[Quote car insurance online](https://www.progressive.com/auto/)
+![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt3e904c4773d6ecc1/604a68875aedc043351b7f59/call.svg)
+### Call us
+Talk to a licensed representative who will guide you through every step of the process.
+[Call 1-866-749-7436](tel:1-866-749-7436)
+![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt43cc5ea8999383ee/604a68927d801145b7fba4e6/agent.svg)
+### Ask an agent
+Get expert advice from an independent agent near you.
+[Find an agent online](https://www.progressive.com/rp/agent)
+![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltba569a8abb1b73ee/63ee427c81222312420a3396/auto_bottom-cta-image.jpg?auto=webp&width=306)
+Quote car insurance online or give us a call
+  * Get a quote
+  * [Or, call 1-866-749-7436](tel:1-866-749-7436)
+
+
+Learn more about [car insurance](https://www.progressive.com/auto/) policies.
+### Related articles
+  * [ ![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt0e28725f2b292ecb/636bfb270ede0d10aea47d7c/auto-drying-off_card-image.jpg?auto=webp&width=192) What are the best cars for new drivers? 4 minminute to read ](https://www.progressive.com/answers/best-car-for-a-new-driver/)
+  * [ Video ![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt1f384c2c7d431744/635fbffda86a565857b1ef0c/auto-101_card-image.svg) How does car insurance work? 4 minminute to read ](https://www.progressive.com/answers/auto-101/)
+
+
+### Related categories
+  * [New drivers](https://www.progressive.com/answers/life-events/new-drivers/)
+  * [Insurance rates and savings](https://www.progressive.com/answers/insurance-rates-savings/)
+  * [Coverages explained](https://www.progressive.com/answers/insurance-basics/coverages-explained/)
+
+
+![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltc8ab3a92b3993bcb/640b52bc6d0cf81016ab92c1/explore-products.svg)
+### Have more questions? Browse articles by insurance type
+[See all articles by product](https://www.progressive.com/answers/articles-by-product/)
+  * [![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt666f20bfd7161c17/637e3e1d6160ed101ec8b3d3/auto_category-image.jpg?auto=webp&width=80) Car insurance  367 articles ](https://www.progressive.com/answers/car-insurance/)
+  * [![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blta71ca319a8802e2c/637e4001deb37610ecbb8bce/home_category-image.jpg?auto=webp&width=80) Home insurance  145 articles ](https://www.progressive.com/answers/home-insurance/)
+  * [![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt9997e9e92546d379/64a8221e6664b661a4bf77a8/renters_category-image.jpg?auto=webp&width=80) Renters insurance  28 articles ](https://www.progressive.com/answers/renters-insurance/)
+  * [![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blteb4f5b8793436f84/637e4360f33b43105dcd90bd/condo_category-image.jpg?auto=webp&width=80) Condo insurance  6 articles ](https://www.progressive.com/answers/condo-insurance/)
+  * [![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltd1596eb1b9b34f34/637e43a82f1aba10d25ad3b6/motorcycle_category-image.jpg?auto=webp&width=80) Motorcycle insurance  52 articles ](https://www.progressive.com/answers/motorcycle-insurance/)
+  * [![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt3536d8bf1abc24e7/637e3fda411e3c10e460398d/boat-and-pwc_category-image.jpg?auto=webp&width=80) Boat & PWC insurance  31 articles ](https://www.progressive.com/answers/boat-pwc-insurance/)
+  * [![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt87c4018c74541a0f/637e43e7bc4d5010302872db/rv-and-trailer_category-image.jpg?auto=webp&width=80) RV/Trailer insurance  36 articles ](https://www.progressive.com/answers/rv-trailer-insurance/)
+  * [![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt59243c9dbe8ba728/637e4387ed757210a0895822/life_category-image.jpg?auto=webp&width=80) Life insurance  89 articles ](https://www.progressive.com/answers/life-insurance/)
+  * [![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt7b7eae2d9a148b3d/637e412a77511d10a702795e/pet-category-image.jpg?auto=webp&width=80) Pet insurance  21 articles ](https://www.progressive.com/answers/pet-insurance/)
+
+
+**Please note:** The above is meant as general information to help you understand the different aspects of insurance. Read our [editorial standards for Answers content](https://www.progressive.com/answers/editorial-standards/). This information is not an insurance policy, does not refer to any specific insurance policy, and does not modify any provisions, limitations, or exclusions expressly stated in any insurance policy. Descriptions of all coverages and other features are necessarily brief; in order to fully understand the coverages and other features of a specific insurance policy, we encourage you to read the applicable policy and/or speak to an insurance representative. Coverages and other features vary between insurers, vary by state, and are not available in all states. Whether an accident or other loss is covered is subject to the terms and conditions of the actual insurance policy or policies involved in the claim. References to average or typical premiums, amounts of losses, deductibles, costs of coverages/repair, etc., are illustrative and may not apply to your situation. We are not responsible for the content of any third-party sites linked from this page.
+  * InsuranceInsurance
+    * [Car Insurance](https://www.progressive.com/auto/)
+    * [Home Insurance](https://www.progressive.com/homeowners/)
+    * [Progressive Answers](https://www.progressive.com/answers/)
+    * [Explore All Products](https://www.progressive.com/insurance/)
+  * Our CompanyOur Company
+    * [About Us](https://www.progressive.com/about/)
+    * [Careers](https://careers.progressive.com/)
+    * [Investors](https://investors.progressive.com/)
+    * [Newsroom](https://progressive.mediaroom.com/)
+  * Quick LinksQuick Links
+    * [Continue Previous Quote](https://www.progressive.com/home-retrieve/)
+    * [Report a Claim](https://www.progressive.com/claims/)
+    * [Make a Payment](https://www.progressive.com/rp/ezpay/)
+    * [PerkShare](https://www.progressive.com/perkshare/)
+  * ConnectConnect
+    * [1-866-749-7436](tel:1-866-749-7436)
+    * [Contact Us](https://www.progressive.com/contact-us/)
+    * [Progressive App](https://www.progressive.com/mobile-app/)
+    * [Partner With Us](https://www.progressive.com/partners/)
+
+
+Search / Keywords
+  * [![Facebook](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt70ffcb3929ecd23d/65d01b3c0ba017cc15012d24/facebook.svg)](https://www.facebook.com/progressive)
+  * [![Instagram](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltf77f99387dbe17a3/65d01b3b8d55b0465b61458e/instagram.svg)](https://www.instagram.com/progressive/)
+  * [![YouTube](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltb34101e9c0036193/65d01b3bbdb22a33a8c226fe/youtube.svg)](https://www.youtube.com/user/progressive)
+  * [![TikTok](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt0081d421c1d5499a/65d37b8b21be608c5f0194bb/tiktok.svg)](https://www.tiktok.com/@progressive)
+  * [![X, Formerly Twitter](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt9f1a0a21e3213494/65d37ba3d677b6499a6a28d6/x.svg)](https://www.twitter.com/progressive)
+
+
+  * [Contact Us](https://www.progressive.com/contact-us/)
+  * [Site Map](https://www.progressive.com/sitemap/)
+  * [Accessibility Services](https://www.progressive.com/web-site-accessibility/)
+  * [Technical Help](https://www.progressive.com/help/)
+  * [Privacy & Security](https://www.progressive.com/privacy/)
+  * [Terms of Use](https://www.progressive.com/copyright/)
+  * [CA Notice at Collection](https://www.progressive.com/privacy/privacy-data-request/)
+  * [Insurance Resources](https://www.progressive.com/resources/)
+  * [Do Not Sell or Share My Personal Information (CA Residents Only)](https://www.progressive.com/privacy/do-not-sell-my-information/)
+
+
+**THE #1 INSURANCE WEBSITE**
+Copyright 1995 - 2025. Progressive Casualty Insurance Company. All Rights Reserved.
+We offer insurance by phone, online and through independent agents. [Prices vary based on how you buy](https://www.progressive.com/shop/car-insurance-rates-differ/).
+ΔAverage savings based on 6-month term and not available in all states.
+Insurance carrier website ranking by Keynova Group – Q4 2024 Online Insurance Scorecard.
+Site Navigation
+Menu
+  * Explore ProductsGet insurance for almost anything you need
+  * ClaimsReport/track a claim & learn about the process
+  * About UsSee who we are, what we stand for & join the team
+  * ResourcesTools, answers to your insurance questions, & more
+
+
+Close Overlay

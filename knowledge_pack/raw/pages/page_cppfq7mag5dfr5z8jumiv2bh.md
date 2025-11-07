@@ -1,0 +1,250 @@
+Opens in a new window Opens an external website Opens an external website in a new window
+This website utilizes technologies such as cookies to enable essential site functionality, as well as for analytics, personalization, and targeted advertising.  [Privacy Policy](https://www.costulessdirect.com/privacy-policy/)
+Accept  Deny Non-Essential 
+<!---->Close Cookie Preferences<!----> 
+[Skip to main content](https://www.costulessdirect.com/blog/uninsured-motorist-coverage-california/#main)
+[ ![Cost-U-Less Logo](https://www.costulessdirect.com/blog/wp-content/themes/culv2/assets/images/components/site-header/cul-logo-new.svg) ](https://www.costulessdirect.com/)
+  * Insurance Solutions California
+    * Vehicle and Recreational
+      * [Car Insurance ](https://www.costulessdirect.com/car-insurance-quotes-online/)
+      * [Motorcycle Insurance ](https://www.costulessdirect.com/insurance-solutions-california/motorcycle-insurance/)
+      * [Motorhome and RV Insurance ](https://www.costulessdirect.com/insurance-solutions-california/motor-home/)
+      * [Travel Trailer Insurance ](https://www.costulessdirect.com/insurance-solutions-california/travel-trailer/)
+      * [Boat Insurance ](https://www.costulessdirect.com/insurance-solutions-california/boat-insurance/)
+      * [ATV Insurance ](https://www.costulessdirect.com/insurance-solutions-california/atv-insurance/)
+      * [Snowmobile Insurance ](https://www.costulessdirect.com/insurance-solutions-california/snowmobile-insurance/)
+      * [Classic Car Insurance ](https://www.costulessdirect.com/insurance-solutions-california/classic-car-insurance/)
+    * SR-22 in California
+      * [SR-22 Insurance ](https://www.costulessdirect.com/sr-22-insurance/)
+      * [DUI Resource Center ](https://www.costulessdirect.com/sr-22-insurance/dui-california/)
+      * [SR-22 Filings ](https://www.costulessdirect.com/sr-22-insurance/dui-filings/)
+    * Home and Property
+      * [Renters Insurance ](https://www.costulessdirect.com/insurance-solutions-california/renters-insurance/)
+      * [Homeowners Insurance ](https://www.costulessdirect.com/insurance-solutions-california/homeowners-insurance/)
+      * [Mobile Home Insurance ](https://www.costulessdirect.com/insurance-solutions-california/mobile-home-insurance/)
+    * Personal Protection
+      * [Life Insurance ](https://www.costulessdirect.com/insurance-solutions-california/life-insurance/)
+      * [Health Insurance ](https://www.costulessdirect.com/insurance-solutions-california/health-insurance/)
+      * [Travel Club AD&D ](https://www.costulessdirect.com/insurance-solutions-california/add-travel-club/)
+      * [Identity Theft Protection ](https://www.costulessdirect.com/insurance-solutions-california/identity-theft-protection/)
+      * [Tax Preparation Services ](https://www.costulessdirect.com/tax-preparation-services/)
+      * [Travel Club Hospital Indemnity ](https://www.costulessdirect.com/insurance-solutions-california/travel-club-hospital-indemnity/)
+      * [Telemedicine ](https://www.costulessdirect.com/insurance-solutions-california/telemedicine/)
+      * [Mexican Car Insurance ](https://www.costulessdirect.com/insurance-solutions-california/mexican-car-insurance/)
+      * [Dental Insurance ](https://www.costulessdirect.com/insurance-solutions-california/dental-insurance/)
+    * Business Insurance
+      * [Commercial Insurance ](https://www.costulessdirect.com/insurance-solutions-california/commercial-insurance/)
+      * [Workers Compensation ](https://www.costulessdirect.com/insurance-solutions-california/workers-compensation/)
+      * [Commercial Auto Insurance ](https://www.costulessdirect.com/insurance-solutions-california/commercial-auto-insurance/)
+      * [Landlord Insurance ](https://www.costulessdirect.com/insurance-solutions-california/landlord-insurance/)
+      * [Rideshare Insurance ](https://www.costulessdirect.com/insurance-solutions-california/rideshare-insurance/)
+    * Additional Products
+      * [Vehicle Registration Renewals ](https://www.costulessdirect.com/vehicle-registration-renewals/)
+      * [Tire Hazard ](https://www.costulessdirect.com/insurance-solutions-california/tire-hazard-protection-plan/)
+      * [Paintless Dent Repair ](https://www.costulessdirect.com/insurance-solutions-california/paintless-dent-repair-plan/)
+      * [Roadside Assistance ](https://www.costulessdirect.com/insurance-solutions-california/roadside-assistance/)
+      * [Pet Health and Discount Services ](https://www.costulessdirect.com/insurance-solutions-california/pet-health-and-discount-services/)
+    * [View All Insurance Products](https://www.costulessdirect.com/insurance-solutions-california/)
+  * Our Company
+    * [About Us ](https://www.costulessdirect.com/our-company/about-us/)
+    * [Careers ](https://www.costulessdirect.com/our-company/careers/)
+    * [Press ](https://www.costulessdirect.com/newsroom)
+    * [CSR ](https://www.costulessdirect.com/csr/)
+  * Customer Care
+    * [Contact Us ](https://www.costulessdirect.com/contact-us/)
+    * [Customer Service ](https://www.costulessdirect.com/customer-service/)
+    * [Payment Options ](https://www.costulessdirect.com/compare-insurance-quotes-online/insurance-payments/)
+    * [FAQ ](https://www.costulessdirect.com/car-insurance-quotes-online/car-insurance-faq/)
+    * [Accessibility ](https://www.costulessdirect.com/accessibility/)
+  * [Blog](https://www.costulessdirect.com/blog)
+  * [Office Locator](https://locations.costulessdirect.com/)
+
+
+[ Call Us 800-390-4071 ](tel:800-390-4071) [ Search ](https://www.costulessdirect.com/blog/search/) [ Español ](https://www.costulessseguros.com/) Menu
+[ ![Cost-U-Less Logo](https://www.costulessdirect.com/blog/wp-content/themes/culv2/assets/images/components/site-header/cul-logo-new.svg) ](https://www.costulessdirect.com/) Close Search
+  *     * Vehicle and Recreational 
+      * [Car Insurance ](https://www.costulessdirect.com/car-insurance-quotes-online/)
+      * [Motorcycle Insurance ](https://www.costulessdirect.com/insurance-solutions-california/motorcycle-insurance/)
+      * [Motorhome and RV Insurance ](https://www.costulessdirect.com/insurance-solutions-california/motor-home/)
+      * [Travel Trailer Insurance ](https://www.costulessdirect.com/insurance-solutions-california/travel-trailer/)
+      * [Boat Insurance ](https://www.costulessdirect.com/insurance-solutions-california/boat-insurance/)
+      * [ATV Insurance ](https://www.costulessdirect.com/insurance-solutions-california/atv-insurance/)
+      * [Snowmobile Insurance ](https://www.costulessdirect.com/insurance-solutions-california/snowmobile-insurance/)
+      * [Classic Car Insurance ](https://www.costulessdirect.com/insurance-solutions-california/classic-car-insurance/)
+    * SR-22 in California 
+      * [SR-22 Insurance ](https://www.costulessdirect.com/sr-22-insurance/)
+      * [DUI Resource Center ](https://www.costulessdirect.com/sr-22-insurance/dui-california/)
+      * [SR-22 Filings ](https://www.costulessdirect.com/sr-22-insurance/dui-filings/)
+    * Home and Property 
+      * [Renters Insurance ](https://www.costulessdirect.com/insurance-solutions-california/renters-insurance/)
+      * [Homeowners Insurance ](https://www.costulessdirect.com/insurance-solutions-california/homeowners-insurance/)
+      * [Mobile Home Insurance ](https://www.costulessdirect.com/insurance-solutions-california/mobile-home-insurance/)
+    * Personal Protection 
+      * [Life Insurance ](https://www.costulessdirect.com/insurance-solutions-california/life-insurance/)
+      * [Health Insurance ](https://www.costulessdirect.com/insurance-solutions-california/health-insurance/)
+      * [Travel Club AD&D ](https://www.costulessdirect.com/insurance-solutions-california/add-travel-club/)
+      * [Identity Theft Protection ](https://www.costulessdirect.com/insurance-solutions-california/identity-theft-protection/)
+      * [Tax Preparation Services ](https://www.costulessdirect.com/tax-preparation-services/)
+      * [Travel Club Hospital Indemnity ](https://www.costulessdirect.com/insurance-solutions-california/travel-club-hospital-indemnity/)
+      * [Telemedicine ](https://www.costulessdirect.com/insurance-solutions-california/telemedicine/)
+      * [Mexican Car Insurance ](https://www.costulessdirect.com/insurance-solutions-california/mexican-car-insurance/)
+      * [Dental Insurance ](https://www.costulessdirect.com/insurance-solutions-california/dental-insurance/)
+    * Business Insurance 
+      * [Commercial Insurance ](https://www.costulessdirect.com/insurance-solutions-california/commercial-insurance/)
+      * [Workers Compensation ](https://www.costulessdirect.com/insurance-solutions-california/workers-compensation/)
+      * [Commercial Auto Insurance ](https://www.costulessdirect.com/insurance-solutions-california/commercial-auto-insurance/)
+      * [Landlord Insurance ](https://www.costulessdirect.com/insurance-solutions-california/landlord-insurance/)
+      * [Rideshare Insurance ](https://www.costulessdirect.com/insurance-solutions-california/rideshare-insurance/)
+    * Additional Products 
+      * [Vehicle Registration Renewals ](https://www.costulessdirect.com/vehicle-registration-renewals/)
+      * [Tire Hazard ](https://www.costulessdirect.com/insurance-solutions-california/tire-hazard-protection-plan/)
+      * [Paintless Dent Repair ](https://www.costulessdirect.com/insurance-solutions-california/paintless-dent-repair-plan/)
+      * [Roadside Assistance ](https://www.costulessdirect.com/insurance-solutions-california/roadside-assistance/)
+      * [Pet Health and Discount Services ](https://www.costulessdirect.com/insurance-solutions-california/pet-health-and-discount-services/)
+    * [View All Insurance Products](https://www.costulessdirect.com/insurance-solutions-california/)
+  *     * [About Us](https://www.costulessdirect.com/our-company/about-us/)
+    * [Careers](https://www.costulessdirect.com/our-company/careers/)
+    * [Press](https://www.costulessdirect.com/newsroom)
+    * [CSR](https://www.costulessdirect.com/csr/)
+  *     * [Contact Us](https://www.costulessdirect.com/contact-us/)
+    * [Customer Service](https://www.costulessdirect.com/customer-service/)
+    * [Payment Options](https://www.costulessdirect.com/compare-insurance-quotes-online/insurance-payments/)
+    * [FAQ](https://www.costulessdirect.com/car-insurance-quotes-online/car-insurance-faq/)
+    * [Accessibility](https://www.costulessdirect.com/accessibility/)
+  * [ ](https://www.costulessdirect.com/blog)
+  * [ ](https://locations.costulessdirect.com/)
+
+
+[ ](tel:800-390-4071)
+[ ![Facebook Icon](https://www.costulessdirect.com/blog/wp-content/themes/culv2/assets/images/components/site-header/icon-fb.svg) ](https://www.facebook.com/CostULessInsurance) [ ](https://www.costulessseguros.com/)
+[ ](https://www.costulessdirect.com/blog/uninsured-motorist-coverage-california/)
+[ ](https://www.costulessdirect.com/blog/uninsured-motorist-coverage-california/) [ ](https://www.costulessdirect.com/blog/uninsured-motorist-coverage-california/)
+[ ](https://www.costulessdirect.com/blog/uninsured-motorist-coverage-california/)
+  1. [Home](https://www.costulessdirect.com/)
+  2. [Blog](https://www.costulessdirect.com/blog/)
+  3. [Auto Insurance](https://www.costulessdirect.com/blog/category/auto-insurance-coverage-california/)
+  4. [Auto Insurance Coverage in California | Guide & Tips](https://www.costulessdirect.com/blog/category/auto-insurance-coverage-california/auto-insurance-california-auto-insurance-coverage-california/)
+  5. [Why Uninsured Motorist Coverage is Essential for Drivers in California](https://www.costulessdirect.com/blog/uninsured-motorist-coverage-california/)
+
+
+# Why Uninsured Motorist Coverage is Essential for Drivers in California
+By **Cost-U-Less** | March 24, 2025 
+![A man rubs his neck, sitting behind the wheel of his car after an accident where the airbag has deployed.](https://www.costulessdirect.com/blog/wp-content/uploads/sites/4/2025/03/CUL-why-uninsured-motorist-coverage-is-essentail-for-drivers-in-california-1-240x160.jpg)
+What happens if you’re injured in a car accident caused by a driver without insurance? Despite California’s [car insurance](https://www.costulessdirect.com/car-insurance-quotes-online/) requirements, around 17% of drivers—roughly one in six—are uninsured. Others carry only the minimum coverage, which may not be enough to cover accident-related costs. If you’re hit by one of these drivers, you could end up paying out of pocket for medical expenses and vehicle repairs. 
+Uninsured motorist coverage in California offers extra financial protection in these situations. Having the right coverage can help prevent unexpected expenses after an accident with an uninsured or underinsured driver. 
+## Navigating Uninsured Motorist Coverage in California 
+You are on your way to pick up your child from school when the unthinkable happens – you are suddenly hit by a driver running a red light. It’s a scary event and your first thoughts are a jumble, especially if you are injured. Later, after the dust has settled, you find out the driver who hit you doesn’t have the necessary insurance to pay for your car repairs and medical bills. Of course, you can take them to court but that takes time and if they have no assets, you may end up with nothing. Uninsured motorist coverage is an affordable protection in a situation like this, and will help you get back on the road. 
+Uninsured/underinsured motorist (UM/UIM) coverage reimburses you for injuries, property damage, and other bills when another driver is at fault but doesn’t have insurance or doesn’t have a policy big enough to cover your medical bills and other losses. It also covers accidents in which an at-fault driver flees the scene in a hit-and-run and cannot be found. 
+Depending on your policy, you may be able to collect compensation for medical payments, lost wages, car repair bills, pain and suffering, and other losses. 
+## State Requirements and Policy Options 
+Auto insurance (referred to as financial responsibility) is required on all vehicles operated in California. At a minimum, drivers are required to have the following liability coverage. 
+  * $30,000 for injury/death to one person 
+
+
+  * $60,000 for injury/death to more than one person 
+
+
+  * $15,000 for damage to property 
+
+
+You can choose to increase your liability limits and add additional coverages to your policy, including collision and comprehensive coverage. Uninsured motorist coverage is added to your liability policy unless you sign a waiver saying you don’t want the coverage. 
+## California’s Laws on Uninsured Motorist Coverage 
+California law [does not require drivers to carry uninsured motorist coverage](https://www.costulessdirect.com/blog/is-uninsured-underinsured-motorist-car-insurance-mandatory-in-california/), but insurers must include it in bodily injury liability policies unless the policyholder explicitly waives it in writing. This coverage can help protect you financially if you’re involved in an accident with an uninsured or underinsured driver. 
+While opting out may lower your premium, it also increases the risk of having to cover accident-related expenses yourself. Without uninsured motorist coverage in California, you could face significant out-of-pocket costs if a driver without insurance causes damage or injury. 
+![A young woman talks on her cell phone while watching a young couple who have been hurt in an accident.](https://www.costulessdirect.com/blog/wp-content/uploads/sites/4/2025/03/CUL-why-uninsured-motorist-coverage-is-essentail-for-drivers-in-california-2.jpg)
+## The Claims Process with Uninsured Motorist Coverage 
+California is an “at-fault” insurance state, which means the driver who caused the accident is responsible for paying for damages. This should mean that you can file a claim with the driver’s insurance company and have the peace of mind of knowing you’ll be compensated for your injuries and damage to your vehicle. Unfortunately, many accident claims are more complex. [Knowing what to do when you’re hit by an uninsured driver](https://www.costulessdirect.com/blog/what-to-do-if-an-uninsured-driver-hits-you-in-ca/) can help you ensure you don’t have to pay for damages out of pocket. 
+Once you confirm a driver has no insurance, you can file an uninsured motorist claim with your insurance company. You’ll need to submit medical bills, car repair estimates, proof of the at-fault driver’s lack of insurance, and any other statements that outline the cost of your damages. 
+If the responsible driver is underinsured, your coverage will kick in after costs exceed the driver’s liability limits. You can make a claim to cover the remaining costs up to the coverage limits of your UM policy. 
+In either case, your insurance company will assign an adjuster to evaluate your claim. If your insurance company disputes the claim or offers a low settlement, you may need to hire an attorney to advocate for you during arbitration or assist with filing a lawsuit. 
+## Comparing Uninsured Motorist Coverage to Other Types 
+When you consider the cost of medical care and modern vehicles or car repairs, it’s easy to see that California’s minimum liability limit could quickly be exhausted by damages caused by an accident. Yet, you may wonder if you really need UM coverage when you have full coverage car insurance. 
+[Full coverage car insurance in California](https://www.costulessdirect.com/blog/cheap-full-coverage-insurance-california/) supplies two additional forms of coverage along with your liability coverage: 
+  * **Comprehensive Coverage:** This policy pays for non-collision damage to your vehicle, including theft, fire, flood, vandalism, or collision with an animal. It does not provide coverage for an accident involving another vehicle. 
+
+
+  * **Collision Coverage:** This policy pays for damage caused to your vehicle in an accident, including collisions with other vehicles, collisions with inanimate objects, and rollovers, regardless of fault. However, it does not include coverage for medical and associated costs. 
+
+
+### The Difference Between Uninsured and Underinsured Coverage 
+Uninsured motorist coverage protects you if you’re involved in an accident with a driver who lacks insurance. In contrast, underinsured motorist coverage steps in when the at-fault driver’s insurance is insufficient to cover the damages. Both types help prevent financial hardship, especially in accidents that lead to costly repairs or medical expenses. 
+### Collision vs Uninsured Motorist Property Damage Coverage 
+Most lenders won’t finance a vehicle unless you have full coverage. While collision coverage is a valuable asset in an accident, it might not be enough to keep you from ending up in debt after an accident caused by an uninsured driver. 
+Collision coverage pays for repairing or replacing your car if it’s damaged in a collision, no matter who’s at fault. However, collision insurance comes with a deductible and doesn’t pay you or your passengers for medical expenses. 
+While uninsured motorist property damage coverage only pays for a collision with an uninsured/underinsured driver, it includes a collision deductible waiver that pays for your collision deductible. UM coverage also pays for medical expenses when you or your passengers are injured. However, payout is limited to the coverage limits of your policy, which typically matches the limits on your liability policy. 
+In most cases, collision coverage and UM property damage coverage shouldn’t be an “either-or” situation. Finding [affordable car insurance](https://www.costulessdirect.com/blog/affordable-full-coverage-car-insurance/) coverage that includes both is the best way to ensure you won’t be facing insurmountable debt after a car accident that wasn’t your fault. 
+## Don’t Risk Being Unprotected! Get a Quick Quote for Uninsured Motorist Coverage in California and Drive with Peace of Mind 
+With nearly one in six drivers uninsured, having the right protection can save you from costly out-of-pocket expenses. Now is the perfect time to review your policy and ensure you’re covered. At Cost-U-Less, we help California drivers find reliable, high-value coverage at affordable rates. Call us at [(800) 390-4071](tel:\(800\)%20390-4071) for a quick quote, get a [free online estimate](https://rate.costulessdirect.com/), or visit a [local office ](https://locations.costulessdirect.com/)today. 
+![Cost-U-Less female agent.](https://www.costulessdirect.com/blog/wp-content/themes/culv2/assets/images/components/quote-callout/quote-sm.webp)
+## Ready to Get a Quick Quote? 
+Type of Insurance Product or Service Auto Insurance Life Insurance Health Insurance Homeowners Insurance Commercial Insurance Renters Insurance Motorcycle Insurance Travel Club - AD&D ATV Insurance Snowmobile Insurance Mobile Home Insurance Commercial Auto Insurance Classic Car Insurance Mexican Car Insurance Landlord Insurance Rideshare Insurance Dental Insurance
+Zip Code
+Start Quote
+## You may also like
+  * [ ![Front view of a boat traveling through the ocean](https://www.costulessdirect.com/blog/wp-content/uploads/sites/4/2015/09/boat-ins-285x160.jpg) 4 Facts Boat Insurance Buyers Need to Know  ](https://www.costulessdirect.com/blog/4-facts-boat-insurance-buyers-need-to-know/)
+  * [ ![](https://www.costulessdirect.com/blog/wp-content/themes/culv2/assets/images/default/recently-mobile.webp) Manual vs. Automatic: Which is Better?  ](https://www.costulessdirect.com/blog/manual-vs-automatic/)
+
+
+Close quote modal
+Ready to Get a Quick Quote?
+Type of Insurance Product or Service Auto Insurance Life Insurance Health Insurance Homeowners Insurance Commercial Insurance Renters Insurance Motorcycle Insurance Travel Club - AD&D ATV Insurance Snowmobile Insurance Mobile Home Insurance Commercial Auto Insurance Classic Car Insurance Mexican Car Insurance Landlord Insurance Rideshare Insurance Dental Insurance
+Zip Code
+Start Quote
+[ Go to top ](https://www.costulessdirect.com/blog/uninsured-motorist-coverage-california/#skip-content)
+[ Customer Service 866-505-6767 ](tel:866-505-6767) [ Quotes by phone 800-390-4071 ](tel:800-390-4071)
+Follow us
+[ ![Facebook logo](https://www.costulessdirect.com/blog/wp-content/themes/culv2/assets/images/components/site-footer/icon-facebook.svg) ](https://www.facebook.com/CostULessInsurance)
+Footer Navigation
+Insurance Options
+[Car Insurance](https://www.costulessdirect.com/car-insurance-quotes-online/)
+[Motorcycle Insurance](https://www.costulessdirect.com/insurance-solutions-california/motorcycle-insurance/)
+[Motorhome and RV Insurance](https://www.costulessdirect.com/insurance-solutions-california/motor-home/)
+[Travel Trailer Insurance](https://www.costulessdirect.com/insurance-solutions-california/travel-trailer/)
+[Boat Insurance](https://www.costulessdirect.com/insurance-solutions-california/jet-ski-insurance/)
+[ATV Insurance](https://www.costulessdirect.com/insurance-solutions-california/atv-insurance/)
+[Snowmobile Insurance](https://www.costulessdirect.com/insurance-solutions-california/snowmobile-insurance/)
+[Classic Car Insurance](https://www.costulessdirect.com/insurance-solutions-california/classic-car-insurance/)
+[SR-22 Insurance](https://www.costulessdirect.com/sr-22-insurance/)
+[DUI Resource Center](https://www.costulessdirect.com/sr-22-insurance/dui-california/)
+[SR-22 Filings](https://www.costulessdirect.com/sr-22-insurance/dui-filings/)
+[Renters Insurance](https://www.costulessdirect.com/insurance-solutions-california/renters-insurance/)
+[Homeowners Insurance](https://www.costulessdirect.com/insurance-solutions-california/homeowners-insurance/)
+[Mobile Home Insurance](https://www.costulessdirect.com/insurance-solutions-california/mobile-home-insurance/)
+[Life Insurance](https://www.costulessdirect.com/insurance-solutions-california/life-insurance/)
+[Health Insurance](https://www.costulessdirect.com/insurance-solutions-california/health-insurance/)
+[Travel Club AD&D](https://www.costulessdirect.com/insurance-solutions-california/add-travel-club/)
+[Identity Theft Protection](https://www.costulessdirect.com/insurance-solutions-california/identity-theft-protection/)
+[Tax Preparation Services](https://www.costulessdirect.com/tax-preparation-services/)
+[Travel Club Hospital Indemnity](https://www.costulessdirect.com/insurance-solutions-california/travel-club-hospital-indemnity/)
+[Telemedicine](https://www.costulessdirect.com/insurance-solutions-california/telemedicine/)
+[Mexican Car Insurance](https://www.costulessdirect.com/insurance-solutions-california/mexican-car-insurance/)
+[Dental Insurance](https://www.costulessdirect.com/insurance-solutions-california/dental-insurance/)
+[Commercial Insurance](https://www.costulessdirect.com/insurance-solutions-california/commercial-insurance/)
+[Workers Compensation](https://www.costulessdirect.com/insurance-solutions-california/workers-compensation/)
+[Commercial Auto Insurance](https://www.costulessdirect.com/insurance-solutions-california/commercial-auto-insurance/)
+[Landlord Insurance](https://www.costulessdirect.com/insurance-solutions-california/landlord-insurance/)
+[Rideshare Insurance](https://www.costulessdirect.com/insurance-solutions-california/rideshare-insurance/)
+[Vehicle Registration Renewals](https://www.costulessdirect.com/vehicle-registration-renewals/)
+[Tire Hazard](https://www.costulessdirect.com/insurance-solutions-california/tire-hazard-protection-plan/)
+[Paintless Dent Repair](https://www.costulessdirect.com/insurance-solutions-california/paintless-dent-repair-plan/)
+[Roadside Assistance](https://www.costulessdirect.com/insurance-solutions-california/roadside-assistance/)
+[Pet Health and Discount Services](https://www.costulessdirect.com/insurance-solutions-california/pet-health-and-discount-services/)
+Our Company
+[About Us](https://www.costulessdirect.com/our-company/about-us/)
+[Careers](https://www.costulessdirect.com/our-company/careers/)
+[Press](https://www.costulessdirect.com/newsroom/)
+[CSR](https://www.costulessdirect.com/csr/)
+Customer Care
+[Contact Us](https://www.costulessdirect.com/contact-us/)
+[Customer Service](https://www.costulessdirect.com/customer-service/)
+[Payment Options](https://www.costulessdirect.com/customer-service/policy-service/)
+[FAQ](https://www.costulessdirect.com/car-insurance-quotes-online/car-insurance-faq/)
+[Accessibility](https://www.costulessdirect.com/accessibility/)
+[Insurance Glossary](https://www.costulessdirect.com/car-insurance-quotes-online/terms-definition/)
+[Blog](https://www.costulessdirect.com/blog)
+[Office Locator](https://locations.costulessdirect.com/)
+[Sitemap](https://www.costulessdirect.com/sitemap-index/) [CA Privacy Policy](https://www.costulessdirect.com/california-consumer-privacy-policy/) [Privacy Policy](https://www.costulessdirect.com/privacy-policy/) [Affiliate Disclosure](https://www.costulessdirect.com/affiliate-disclosure/) [Terms of Use](https://www.costulessdirect.com/terms-of-use/) [E-sign](https://www.costulessdirect.com/e-sign/) [External Marketing Partners](https://www.costulessdirect.com/external-marketing-partners/)   
+  
+[ Your privacy Choices ![](https://www.costulessdirect.com/blog/wp-content/themes/culv2/assets/images/components/site-footer/privacy-check.svg) ](https://www.costulessdirect.com/blog/uninsured-motorist-coverage-california/)
+2023 Freeway Insurance Services America, LLC (CA License #6002326)
+DBA Cost U Less Insurance Center
