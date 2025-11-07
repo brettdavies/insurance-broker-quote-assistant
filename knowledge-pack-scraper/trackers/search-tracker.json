@@ -3,15 +3,15 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T04:40:32.194888",
+    "lastUpdated": "2025-11-07T04:41:12.733363",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
     "pending": 465,
-    "claimed": 1,
+    "claimed": 0,
     "urls_discovered": 0,
-    "completed": 10,
+    "completed": 11,
     "failed": 0
   },
   "searches": [
@@ -7648,16 +7648,18 @@
       "subcategory": "comparison-and-review-sites",
       "carrier": "State Farm",
       "priority": "medium",
-      "status": "claimed",
+      "status": "completed",
       "assignedTo": "agnt_e21n5kzpxoy153z5d3i67klp",
       "startedAt": null,
-      "completedAt": null,
+      "completedAt": "2025-11-07T04:41:12.731243",
       "durationSeconds": null,
-      "urlsDiscoveredCount": null,
+      "urlsDiscoveredCount": 10,
       "errorMessage": null,
       "retryCount": 0,
       "notes": null,
-      "claimedAt": "2025-11-07T04:40:32.192611"
+      "claimedAt": "2025-11-07T04:40:32.192611",
+      "urlsNewCount": 10,
+      "urlsExistingCount": 0
     },
     {
       "id": "search_mb12atwwrh1go4zugmjho7ih",
