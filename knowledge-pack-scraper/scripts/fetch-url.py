@@ -1,349 +1,310 @@
 #!/usr/bin/env python3
 """
-Autonomous URL fetching with crawl4ai.
+Concurrent URL fetching using crawl4ai's arun_many() with streaming.
 
-This script fully autonomously:
-1. Claims the URL
-2. Fetches with crawl4ai
-3. Saves HTML + MD (same page ID)
-4. Registers page in page-tracker
-5. Commits changes
-
-No agent interaction needed - this is a complete autonomous script.
+Uses crawl4ai best practices:
+- MemoryAdaptiveDispatcher for auto-managed concurrency
+- Streaming mode for real-time processing
+- Built-in rate limiting (mean_delay + max_range)
 
 Usage:
-    uv run scripts/fetch-url.py --id url_abc123
+    uv run scripts/fetch-url.py --workers 3 --delay 1.0
+    uv run scripts/fetch-url.py --workers 2 --delay 1.5 --delay-variance 0.3
 
-Output:
-    JSON with fetch results and explicit next_steps for agent
+Options:
+    --workers N             Max concurrent workers (default: 3)
+    --delay SECONDS         Mean delay between requests (default: 1.0)
+    --delay-variance SECS   Random variance for delay (default: 0.2)
+    --limit N               Limit to first N URLs (for testing)
 """
 
 import argparse
 import asyncio
 import json
-import subprocess
 import sys
 from datetime import datetime
 from pathlib import Path
+from typing import Dict, Optional
 
 # Add scripts directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent))
 
+from id_generator import generate_page_id
 from tracker_manager import TrackerManager
-from id_generator import generate_agent_id, generate_page_id
 
 # Import crawl4ai
 try:
-    from crawl4ai import AsyncWebCrawler, CrawlerRunConfig
+    from crawl4ai import AsyncWebCrawler, CrawlerRunConfig, CacheMode
+    from crawl4ai.async_dispatcher import MemoryAdaptiveDispatcher
 except ImportError:
     print(json.dumps({
         "success": False,
+        "error": "MISSING_DEPENDENCY",
         "message": "crawl4ai not installed",
-        "next_steps": "Install crawl4ai: uv sync && uv run crawl4ai-setup"
+        "next_steps": "Install: uv sync && uv run crawl4ai-setup"
     }, indent=2))
     sys.exit(1)
 
 
-# Generate unique agent ID for this process
-AGENT_ID = generate_agent_id()
+class FetchStats:
+    """Track fetching statistics."""
 
+    def __init__(self):
+        self.total = 0
+        self.completed = 0
+        self.failed = 0
+        self.start_time = datetime.now()
+        self.last_progress_report = 0
 
-def output_result(success: bool, message: str, next_steps: str, data: dict = None) -> None:
-    """
-    Output JSON result to stdout.
+    def increment_completed(self):
+        self.completed += 1
 
-    Args:
-        success: Whether operation succeeded
-        message: Status message
-        next_steps: Explicit instructions for agent
-        data: Additional data
-    """
-    result = {
-        "success": success,
-        "message": message,
-        "agent_id": AGENT_ID,
-        "next_steps": next_steps
-    }
+    def increment_failed(self):
+        self.failed += 1
 
-    if data:
-        result.update(data)
-
-    print(json.dumps(result, indent=2))
-
-
-def git_pull() -> bool:
-    """Pull latest changes."""
-    try:
-        repo_root = Path(__file__).parent.parent.parent
-        result = subprocess.run(
-            ['git', 'pull', '--rebase'],
-            capture_output=True,
-            text=True,
-            cwd=repo_root
-        )
-        return result.returncode == 0
-    except Exception:
+    def should_report_progress(self, interval: int = 50) -> bool:
+        """Check if we should report progress."""
+        current = self.completed + self.failed
+        if current - self.last_progress_report >= interval:
+            self.last_progress_report = current
+            return True
         return False
 
+    def get_summary(self) -> Dict:
+        """Get final summary stats."""
+        duration = (datetime.now() - self.start_time).total_seconds()
+        completed_total = self.completed + self.failed
 
-async def fetch_page(url: str) -> tuple[bool, str, str, str]:
-    """
-    Fetch page with crawl4ai.
+        return {
+            "total_urls": self.total,
+            "completed": self.completed,
+            "failed": self.failed,
+            "remaining": self.total - completed_total,
+            "success_rate": round(self.completed / completed_total * 100, 2) if completed_total > 0 else 0,
+            "duration_seconds": round(duration, 2),
+            "urls_per_second": round(completed_total / duration, 2) if duration > 0 else 0
+        }
 
-    Args:
-        url: URL to fetch
+    def print_progress(self):
+        """Print current progress."""
+        completed_total = self.completed + self.failed
+        progress_pct = (completed_total / self.total * 100) if self.total > 0 else 0
 
-    Returns:
-        Tuple of (success, html, markdown, error_message)
-    """
+        print(f"\nProgress: {completed_total}/{self.total} ({progress_pct:.1f}%)", file=sys.stderr)
+        print(f"  ✓ Completed: {self.completed}", file=sys.stderr)
+        print(f"  ✗ Failed: {self.failed}", file=sys.stderr)
+
+
+async def process_result(
+    result,
+    url_entry: Dict,
+    tm: TrackerManager,
+    stats: FetchStats
+) -> None:
+    """Process a single crawl result."""
+    url_id = url_entry['id']
+    url = url_entry['url']
+
+    if not result.success:
+        # Failed fetch
+        tm.update_status('url', url_id, 'failed', {
+            'fetchError': result.error_message or "Unknown error",
+            'retryCount': url_entry.get('retryCount', 0) + 1
+        })
+        stats.increment_failed()
+
+        print(json.dumps({
+            "url_id": url_id,
+            "url": url[:80],
+            "status": "failed",
+            "error": result.error_message or "Unknown error"
+        }, indent=2), file=sys.stderr)
+        return
+
+    # Success - save page files
+    page_id = generate_page_id()
+    search_ids = url_entry.get('search_ids', [])
+
+    # Ensure output directory exists
+    output_dir = tm.output_base / 'pages'
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    # Save HTML and markdown
+    html_file = output_dir / f"{page_id}.html"
+    md_file = output_dir / f"{page_id}.md"
+
+    with open(html_file, 'w', encoding='utf-8') as f:
+        f.write(result.html)
+
+    markdown_content = result.markdown.raw_markdown if hasattr(result.markdown, 'raw_markdown') else result.markdown
+    with open(md_file, 'w', encoding='utf-8') as f:
+        f.write(markdown_content)
+
+    html_size = len(result.html)
+    md_size = len(markdown_content)
+
+    # Update url-tracker
+    tm.update_status('url', url_id, 'completed', {
+        'pageId': page_id,
+        'htmlFile': f"../knowledge_pack/raw/pages/{page_id}.html",
+        'markdownFile': f"../knowledge_pack/raw/pages/{page_id}.md",
+        'fetchedAt': datetime.now().isoformat()
+    })
+
+    # Register page in page-tracker
+    page_tracker = tm.load('page')
+    page_tracker['pages'].append({
+        'id': page_id,
+        'urlId': url_id,
+        'searchIds': search_ids,
+        'htmlFile': f"../knowledge_pack/raw/pages/{page_id}.html",
+        'markdownFile': f"../knowledge_pack/raw/pages/{page_id}.md",
+        'htmlSize': html_size,
+        'markdownSize': md_size,
+        'status': 'pending',
+        'dataPointsExtracted': 0,
+        'rawDataFile': None,
+        'extractedAt': None
+    })
+    page_tracker['statusCounts']['pending'] += 1
+    page_tracker['meta']['totalPages'] = page_tracker['meta'].get('totalPages', 0) + 1
+    tm.save('page', page_tracker)
+
+    stats.increment_completed()
+
+    print(json.dumps({
+        "url_id": url_id,
+        "page_id": page_id,
+        "url": url[:80],
+        "status": "completed",
+        "html_size": html_size,
+        "markdown_size": md_size
+    }, indent=2), file=sys.stderr)
+
+
+async def main_async(args):
+    """Main async execution."""
+    tm = TrackerManager()
+
+    # Load pending URLs
+    url_tracker = tm.load('url')
+    pending_urls_entries = [u for u in url_tracker['urls'] if u['status'] == 'pending']
+
+    # Apply limit if requested
+    if args.limit:
+        pending_urls_entries = pending_urls_entries[:args.limit]
+
+    if not pending_urls_entries:
+        print(json.dumps({
+            "success": True,
+            "message": "No pending URLs to fetch",
+            "total_urls": len(url_tracker['urls'])
+        }, indent=2))
+        return
+
+    # Extract URL strings
+    pending_urls = [u['url'] for u in pending_urls_entries]
+
+    # Create URL ID lookup for result processing
+    url_lookup = {u['url']: u for u in pending_urls_entries}
+
+    # Initialize stats
+    stats = FetchStats()
+    stats.total = len(pending_urls)
+
+    print(json.dumps({
+        "message": "Starting concurrent URL fetching",
+        "total_urls": stats.total,
+        "workers": args.workers,
+        "mean_delay": args.delay,
+        "delay_variance": args.delay_variance
+    }, indent=2), file=sys.stderr)
+
+    # Configure dispatcher
+    dispatcher = MemoryAdaptiveDispatcher(
+        memory_threshold_percent=70.0,
+        max_session_permit=args.workers
+    )
+
+    # Crawler config (single config for all HTML URLs)
+    config = CrawlerRunConfig(
+        stream=True,
+        mean_delay=args.delay,
+        max_range=args.delay_variance,
+        cache_mode=CacheMode.BYPASS
+    )
+
+    # Process URLs with streaming
     try:
-        # Use context manager (recommended approach per crawl4ai docs)
-        run_config = CrawlerRunConfig()
-
         async with AsyncWebCrawler() as crawler:
-            result = await crawler.arun(url, config=run_config)
+            async for result in await crawler.arun_many(
+                urls=pending_urls,
+                config=config,
+                dispatcher=dispatcher
+            ):
+                # Find corresponding URL entry
+                url_entry = url_lookup.get(result.url)
+                if not url_entry:
+                    print(f"Warning: No entry found for URL: {result.url}", file=sys.stderr)
+                    continue
 
-            if not result.success:
-                return False, "", "", result.error_message or "Unknown crawl error"
+                # Process result
+                await process_result(result, url_entry, tm, stats)
 
-            return True, result.html, result.markdown.raw_markdown, ""
+                # Periodic progress reports
+                if stats.should_report_progress():
+                    stats.print_progress()
 
-    except Exception as e:
-        return False, "", "", str(e)
+    except KeyboardInterrupt:
+        print("\n\nInterrupted by user. Saving progress...", file=sys.stderr)
+        stats.print_progress()
+        sys.exit(130)
 
-
-async def main_async(url_id: str) -> None:
-    """Main async logic."""
-    try:
-        # Step 1: Pull latest
-        if not git_pull():
-            output_result(
-                success=False,
-                message="Git pull failed",
-                next_steps="Check git repository status and try again"
-            )
-            sys.exit(1)
-
-        # Step 2: Load tracker and find URL
-        tm = TrackerManager()
-        url_entry = tm.find_item_by_id('url', url_id)
-
-        if url_entry is None:
-            output_result(
-                success=False,
-                message=f"URL {url_id} not found in tracker",
-                next_steps="Check URL ID and try again"
-            )
-            sys.exit(1)
-
-        # Step 3: Check if still pending
-        if url_entry.get('status') != 'pending':
-            current_status = url_entry.get('status', 'unknown')
-            output_result(
-                success=False,
-                message=f"URL {url_id} not pending (status: {current_status})",
-                next_steps="Run: uv run scripts/select-work.py to select different work"
-            )
-            sys.exit(1)
-
-        # Step 4: Claim it
-        tm.update_status('url', url_id, 'claimed', {
-            'assignedTo': AGENT_ID,
-            'claimedAt': datetime.now().isoformat()
-        })
-
-        # Step 5: Commit claim
-        url = url_entry.get('url', 'unknown url')
-        result = subprocess.run(
-            [
-                'uv', 'run', 'scripts/git-commit.py',
-                '--type', 'claim',
-                '--id', url_id,
-                '--message', url[:60]
-            ],
-            capture_output=True,
-            text=True,
-            cwd=Path(__file__).parent.parent
-        )
-
-        if result.returncode != 0:
-            # Check for race condition and handle automatically
-            try:
-                error_data = json.loads(result.stdout)
-                if error_data.get('had_conflict'):
-                    # Check ownership
-                    tm = TrackerManager()
-                    url_entry = tm.find_item_by_id('url', url_id)
-                    if not url_entry or url_entry.get('assignedTo') != AGENT_ID:
-                        # Lost race - AUTOMATIC RECOVERY
-                        output_result(
-                            success=False,
-                            message="Lost race - another agent claimed this URL first",
-                            next_steps=(
-                                "Race condition detected and handled automatically.\n"
-                                "Another agent is fetching this URL.\n\n"
-                                "AUTOMATIC RECOVERY - Select new work:\n"
-                                "Run: uv run scripts/select-work.py"
-                            )
-                        )
-                        sys.exit(0)  # Exit 0 - normal behavior
-            except json.JSONDecodeError:
-                # Commit failed for other reasons - continue anyway since this is autonomous
-                pass
-
-        # Step 6: Generate page ID (same for both formats)
-        page_id = generate_page_id()
-        search_id = url_entry.get('searchId', 'unknown')
-
-        # Step 7: Ensure output directory exists
-        output_dir = tm.output_base / 'pages'
-        output_dir.mkdir(parents=True, exist_ok=True)
-
-        # Step 8: Fetch with crawl4ai
-        success, html, markdown, error_msg = await fetch_page(url)
-
-        if not success:
-            # Fetch failed - mark as failed
-            tm.update_status('url', url_id, 'failed', {
-                'fetchError': error_msg,
-                'retryCount': url_entry.get('retryCount', 0) + 1
-            })
-
-            subprocess.run(
-                [
-                    'uv', 'run', 'scripts/git-commit.py',
-                    '--type', 'fail',
-                    '--id', url_id,
-                    '--message', error_msg[:60]
-                ],
-                cwd=Path(__file__).parent.parent
-            )
-
-            output_result(
-                success=False,
-                message=f"Fetch failed: {error_msg}",
-                next_steps="Fetch failed. Chaining to next work item..."
-            )
-
-            # Auto-chain to select-work.py (even on failure)
-            result = subprocess.run(
-                ['uv', 'run', 'scripts/select-work.py'],
-                cwd=Path(__file__).parent.parent
-            )
-            sys.exit(result.returncode)
-
-        # Step 9: Save both formats with SAME page ID
-        html_file = output_dir / f"{page_id}.html"
-        md_file = output_dir / f"{page_id}.md"
-
-        with open(html_file, 'w', encoding='utf-8') as f:
-            f.write(html)
-
-        with open(md_file, 'w', encoding='utf-8') as f:
-            f.write(markdown)
-
-        html_size = len(html)
-        md_size = len(markdown)
-
-        # Step 10: Update url-tracker
-        tm.update_status('url', url_id, 'completed', {
-            'pageId': page_id,
-            'htmlFile': f"../knowledge_pack/raw/pages/{page_id}.html",
-            'markdownFile': f"../knowledge_pack/raw/pages/{page_id}.md",
-            'fetchedAt': datetime.now().isoformat()
-        })
-
-        # Step 11: Register page in page-tracker
-        page_tracker = tm.load('page')
-        page_tracker['pages'].append({
-            'id': page_id,
-            'urlId': url_id,
-            'searchId': search_id,
-            'htmlFile': f"../knowledge_pack/raw/pages/{page_id}.html",
-            'markdownFile': f"../knowledge_pack/raw/pages/{page_id}.md",
-            'htmlSize': html_size,
-            'markdownSize': md_size,
-            'status': 'pending',
-            'assignedTo': None,
-            'dataPointsExtracted': 0,
-            'rawDataFile': None,
-            'extractedAt': None
-        })
-        page_tracker['statusCounts']['pending'] += 1
-        tm.save('page', page_tracker)
-
-        # Step 12: Commit changes
-        subprocess.run(
-            [
-                'uv', 'run', 'scripts/git-commit.py',
-                '--type', 'fetch',
-                '--id', page_id,
-                '--message', url[:60]
-            ],
-            cwd=Path(__file__).parent.parent
-        )
-
-        # Success!
-        output_result(
-            success=True,
-            message="Successfully fetched and saved page",
-            next_steps=(
-                f"URL fetch completed successfully!\n\n"
-                f"Saved:\n"
-                f"  - HTML: {html_file.name} ({html_size:,} bytes)\n"
-                f"  - Markdown: {md_file.name} ({md_size:,} bytes)\n\n"
-                f"Page registered in page-tracker as {page_id}.\n"
-                f"Changes committed to git.\n\n"
-                f"Chaining to next work item..."
-            ),
-            data={
-                "url_id": url_id,
-                "page_id": page_id,
-                "url": url,
-                "html_size": html_size,
-                "markdown_size": md_size,
-                "html_file": str(html_file),
-                "markdown_file": str(md_file)
-            }
-        )
-
-        # Auto-chain to select-work.py
-        result = subprocess.run(
-            ['uv', 'run', 'scripts/select-work.py'],
-            cwd=Path(__file__).parent.parent
-        )
-        sys.exit(result.returncode)
-
-    except Exception as e:
-        output_result(
-            success=False,
-            message=f"Unexpected error: {e}",
-            next_steps="Check error message and try again"
-        )
-        sys.exit(1)
+    # Final summary
+    summary = stats.get_summary()
+    print("\n" + "=" * 60, file=sys.stderr)
+    print("FETCH COMPLETED", file=sys.stderr)
+    print("=" * 60, file=sys.stderr)
+    print(json.dumps(summary, indent=2))
 
 
-def main() -> None:
+def main():
     """Main entry point."""
     parser = argparse.ArgumentParser(
-        description="Autonomous URL fetching with crawl4ai"
+        description="Concurrent URL fetching with crawl4ai"
     )
     parser.add_argument(
-        '--id',
-        required=True,
-        help='URL ID to fetch (e.g., url_abc123)'
+        '--workers',
+        type=int,
+        default=3,
+        help='Max concurrent workers (default: 3)'
+    )
+    parser.add_argument(
+        '--delay',
+        type=float,
+        default=1.0,
+        help='Mean delay between requests in seconds (default: 1.0)'
+    )
+    parser.add_argument(
+        '--delay-variance',
+        type=float,
+        default=0.2,
+        help='Random variance for delay (default: 0.2)'
+    )
+    parser.add_argument(
+        '--limit',
+        type=int,
+        default=None,
+        help='Limit to first N URLs (for testing)'
     )
 
     args = parser.parse_args()
 
+    # Run async main
     try:
-        asyncio.run(main_async(args.id))
+        asyncio.run(main_async(args))
     except KeyboardInterrupt:
-        output_result(
-            success=False,
-            message="Interrupted by user",
-            next_steps="Restart fetch operation when ready"
-        )
+        print("\nInterrupted by user", file=sys.stderr)
         sys.exit(130)
 
 
