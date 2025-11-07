@@ -1,0 +1,22 @@
+## Request Headers
+
+#### [#](https://api-dashboard.search.brave.com/app/documentation/web-search/#WebSearchAPIRequestHeaders) Web Search API Request Headers
+
+This table lists the request headers supported by the Web Search API. Most are optional, but note that sending more information in headers (such as client location) will improve search results.
+
+| Header | Required | Name | Description |
+| --- | --- | --- | --- |
+| Accept | false | Accept | The default supported media type is `application/json` |
+| Accept-Encoding | false | Accept Encoding | The supported compression type is `gzip`. |
+| Api-Version | false | Web Search API Version | The Brave Web Search API version to use. This is denoted by the format `YYYY-MM-DD`. The latest version is used by default, and the previous ones can be found in the [API Changelog](https://api-dashboard.search.brave.com/app/documentation/web-search/api-changelog). |
+| Cache-Control | false | Cache Control | Search will return cached web search results by default. To prevent caching, set the Cache-Control header to `no-cache`. This is currently done as best effort. |
+| User-Agent | false | User Agent | The user agent of the client sending the request. Search can utilize the user agent to provide a different experience depending on the client sending the request.  The user agent should follow the commonly used browser agent strings on each platform. For more information on curating user agents, see [RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html#name-user-agent).  User agent string examples by platform:  - **Android**: Mozilla/5.0 (Linux; Android 13; Pixel 7 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36 - **iOS**: Mozilla/5.0 (iPhone; CPU iPhone OS 15\_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 - **macOS**: Mozilla/5.0 (Macintosh; Intel Mac OS X 12\_0\_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/ - **Windows**: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/ |
+| X-Loc-Lat | false | Latitude | The latitude of the client’s geographical location in degrees, to provide relevant local results. The latitiude must be greater than or equal to -90.0 degrees and less than or equal to +90.0 degrees. |
+| X-Loc-Long | false | Longitude | The longitude of the client’s geographical location in degrees, to provide relevant local results. The longitude must be greater than or equal to -180.0 degrees and less than or equal to +180.0 degrees. |
+| X-Loc-Timezone | false | Timezone | The IANA timezone for the client’s device, for example `America/New_York`.  For complete list of IANA timezones and location mappings see [IANA Database](https://www.iana.org/time-zones) and [Geonames Database](https://download.geonames.org/export/dump/). |
+| X-Loc-City | false | City Name | The generic name of the client city. |
+| X-Loc-State | false | State Code | The code representing the client’s state/region, can be up to 3 characters long.  The region is the first-level subdivision (the broadest or least specific) of the [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) code. |
+| X-Loc-State-Name | false | State Name | The name of the client’s state/region.  The region is the first-level subdivision (the broadest or least specific) of the [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) code. |
+| X-Loc-Country | false | Country Code | The two letter code for the client’s country.  For a list of country codes, see [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) |
+| X-Loc-Postal-Code | false | Postal Code | The postal code of the client’s location. |
+| X-Subscription-Token | true | Authentication token | The secret token for the subscribed plan to authenticate the request. Can be obtained from [API Keys](https://api-dashboard.search.brave.com/app/keys). |
