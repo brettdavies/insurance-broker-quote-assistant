@@ -3,12 +3,12 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T04:01:18.736228",
+    "lastUpdated": "2025-11-07T04:02:03.315559",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 23,
+    "pending": 29,
     "fetching": 0,
     "completed": 0,
     "failed": 0
@@ -395,6 +395,108 @@
       ],
       "url": "https://en.wikipedia.org/wiki/Progressive_Corporation",
       "urlHash": "2eeaac7bb576c365",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_bjgcpbxpo9u9s5kaqkw5812a",
+      "search_ids": [
+        "search_vhhrenp3isjl3ymjqrbmkgin"
+      ],
+      "url": "https://www.progressive.com/homeowners/",
+      "urlHash": "8a388e21600c3f27",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_ekfahvex8mtwio1wjhagg3fl",
+      "search_ids": [
+        "search_vhhrenp3isjl3ymjqrbmkgin"
+      ],
+      "url": "https://www.progressive.com/answers/homeowners-101/",
+      "urlHash": "922b410673ec7d52",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_a56gyzck919yhocnjj1kb0ox",
+      "search_ids": [
+        "search_vhhrenp3isjl3ymjqrbmkgin"
+      ],
+      "url": "https://www.progressive.com/homeowners/discounts/",
+      "urlHash": "0c419e9a781fea75",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_e9f2en5qmjfh64dnkgn4uzvj",
+      "search_ids": [
+        "search_vhhrenp3isjl3ymjqrbmkgin"
+      ],
+      "url": "https://www.progressive.com/homeowners/discounts/florida-wind-mitigation/",
+      "urlHash": "f63dc149ed5e3544",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_bazod1pmo2o1tr5xqy8qzoss",
+      "search_ids": [
+        "search_vhhrenp3isjl3ymjqrbmkgin"
+      ],
+      "url": "https://www.progressive.com/about/purpose/homeownership/",
+      "urlHash": "f276463722b86ab8",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_bugzbemgs2v33gm0xwr2cnwn",
+      "search_ids": [
+        "search_vhhrenp3isjl3ymjqrbmkgin"
+      ],
+      "url": "https://www.progressive.com/about/purpose/homeownership/buy-a-home/",
+      "urlHash": "06a7e1d7726a36ee",
       "priority": "high",
       "status": "pending",
       "assignedTo": null,
