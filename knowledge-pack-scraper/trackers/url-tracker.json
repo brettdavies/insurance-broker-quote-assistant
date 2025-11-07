@@ -3,12 +3,12 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T03:18:55.093976",
+    "lastUpdated": "2025-11-07T03:19:44.001714",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 38,
+    "pending": 44,
     "fetching": 0,
     "completed": 0,
     "failed": 0
@@ -651,6 +651,108 @@
       "url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute",
       "urlHash": "077e925c8d4b770c",
       "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_lvrb2sm7m10ouxuv22a3juqp",
+      "search_ids": [
+        "search_v1ll0x9ew82h939jtmyklvxp"
+      ],
+      "url": "https://www.bankrate.com/insurance/car/best-auto-insurance-discounts/",
+      "urlHash": "2413793cd2490844",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_z1ufzv5ld3te8qfyf2380e6n",
+      "search_ids": [
+        "search_v1ll0x9ew82h939jtmyklvxp"
+      ],
+      "url": "https://www.bankrate.com/insurance/reviews/geico-vs-state-farm/",
+      "urlHash": "12431bca845fc1b3",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_axhbz27gbhjwwt5puobhly0v",
+      "search_ids": [
+        "search_v1ll0x9ew82h939jtmyklvxp"
+      ],
+      "url": "https://www.bankrate.com/insurance/reviews/state-farm/",
+      "urlHash": "7a6268f13fb54a06",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_z6op3lpebde0l3j39wskyy7a",
+      "search_ids": [
+        "search_v1ll0x9ew82h939jtmyklvxp"
+      ],
+      "url": "https://www.bankrate.com/insurance/reviews/state-farm-vs-nationwide/",
+      "urlHash": "f1066d4d5a5a2f05",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_gv5r8vjwyy9p5zppjy94g6yr",
+      "search_ids": [
+        "search_v1ll0x9ew82h939jtmyklvxp"
+      ],
+      "url": "https://www.bankrate.com/insurance/reviews/state-farm-vs-farm-bureau/",
+      "urlHash": "d2b29fe6de9a2d85",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_v9yvv1xpd7hwk925q7y7qmkc",
+      "search_ids": [
+        "search_v1ll0x9ew82h939jtmyklvxp"
+      ],
+      "url": "https://www.bankrate.com/insurance/car/student-discounts/",
+      "urlHash": "49dc9b78163acbb2",
+      "priority": "medium",
       "status": "pending",
       "assignedTo": null,
       "pageId": null,
