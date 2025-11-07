@@ -3,13 +3,13 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T03:21:12.942720",
+    "lastUpdated": "2025-11-07T03:21:15.284198",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
-    "pending": 465,
-    "claimed": 1,
+    "pending": 464,
+    "claimed": 2,
     "urls_discovered": 0,
     "completed": 10,
     "failed": 0
@@ -7822,15 +7822,16 @@
       "subcategory": "industry-organizations",
       "carrier": null,
       "priority": "medium",
-      "status": "pending",
-      "assignedTo": null,
+      "status": "claimed",
+      "assignedTo": "agnt_w98w0781hjnqyn4gy90gh97e",
       "startedAt": null,
       "completedAt": null,
       "durationSeconds": null,
       "urlsDiscoveredCount": null,
       "errorMessage": null,
       "retryCount": 0,
-      "notes": null
+      "notes": null,
+      "claimedAt": "2025-11-07T03:21:15.281965"
     },
     {
       "id": "search_dmypp9wopv8sjwhe560q37en",
