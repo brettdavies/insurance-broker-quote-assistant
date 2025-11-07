@@ -224,3 +224,12 @@ class TrackerManager:
                 return item
 
         return None
+
+    def _get_timestamp(self) -> str:
+        """
+        Get current timestamp in ISO format.
+
+        Returns:
+            ISO formatted timestamp string
+        """
+        return datetime.now().isoformat()
