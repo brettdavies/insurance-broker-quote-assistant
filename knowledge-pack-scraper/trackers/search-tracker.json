@@ -3,15 +3,15 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T04:41:15.308948",
+    "lastUpdated": "2025-11-07T04:41:54.938545",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
     "pending": 464,
-    "claimed": 1,
+    "claimed": 0,
     "urls_discovered": 0,
-    "completed": 11,
+    "completed": 12,
     "failed": 0
   },
   "searches": [
@@ -5024,16 +5024,18 @@
       "subcategory": "general-commission-queries",
       "carrier": "GEICO",
       "priority": "medium",
-      "status": "claimed",
+      "status": "completed",
       "assignedTo": "agnt_wh0e7ormr1va391bcc0df18q",
       "startedAt": null,
-      "completedAt": null,
+      "completedAt": "2025-11-07T04:41:54.936410",
       "durationSeconds": null,
-      "urlsDiscoveredCount": null,
+      "urlsDiscoveredCount": 10,
       "errorMessage": null,
       "retryCount": 0,
       "notes": null,
-      "claimedAt": "2025-11-07T04:41:15.306866"
+      "claimedAt": "2025-11-07T04:41:15.306866",
+      "urlsNewCount": 10,
+      "urlsExistingCount": 0
     },
     {
       "id": "search_s3qswm3gc5l2aqy75uat2r4p",
