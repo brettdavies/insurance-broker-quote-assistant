@@ -3,12 +3,12 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T06:07:23.489463",
+    "lastUpdated": "2025-11-07T06:08:35.219198",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 636,
+    "pending": 641,
     "fetching": 0,
     "completed": 0,
     "failed": 0
@@ -259,7 +259,8 @@
       "id": "url_kq1pdflkxa3q9e4e2dzxgfla",
       "search_ids": [
         "search_bi1usriv015udl5hyyql660t",
-        "search_ekqvzv2r35c6s2iy3nfp1zxs"
+        "search_ekqvzv2r35c6s2iy3nfp1zxs",
+        "search_mtmxsntvqvbw426365py5yoi"
       ],
       "url": "https://www.moneygeek.com/insurance/homeowners/reviews/geico/",
       "urlHash": "f0d8bfc3eb9f27f2",
@@ -313,7 +314,8 @@
       "id": "url_uhxo4msk1h0pqy22q28nw727",
       "search_ids": [
         "search_bi1usriv015udl5hyyql660t",
-        "search_kl9kvs5e6xn2htdrcob1tzkv"
+        "search_kl9kvs5e6xn2htdrcob1tzkv",
+        "search_mtmxsntvqvbw426365py5yoi"
       ],
       "url": "https://www.geico.com/information/aboutinsurance/homeowners/cheapest/",
       "urlHash": "7e0ac0a8a912161d",
@@ -4752,7 +4754,8 @@
     {
       "id": "url_fgtp0d9eoqtphne4nea9ce9b",
       "search_ids": [
-        "search_kl9kvs5e6xn2htdrcob1tzkv"
+        "search_kl9kvs5e6xn2htdrcob1tzkv",
+        "search_mtmxsntvqvbw426365py5yoi"
       ],
       "url": "https://www.geico.com/homeowners-insurance/states/wv/",
       "urlHash": "c96963fb4245f7a0",
@@ -4803,7 +4806,8 @@
     {
       "id": "url_kh3fg83vwvxqxkjoczvslsfp",
       "search_ids": [
-        "search_kl9kvs5e6xn2htdrcob1tzkv"
+        "search_kl9kvs5e6xn2htdrcob1tzkv",
+        "search_mtmxsntvqvbw426365py5yoi"
       ],
       "url": "https://www.geico.com/homeowners-insurance/states/nj/",
       "urlHash": "972dee02a48c0271",
@@ -10858,6 +10862,91 @@
       ],
       "url": "https://www.nerdwallet.com/insurance/homeowners/new-york-home-insurance",
       "urlHash": "eeab0742f11f7460",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_dd3o8s3a2caoxqzdhjid1605",
+      "search_ids": [
+        "search_mtmxsntvqvbw426365py5yoi"
+      ],
+      "url": "https://www.cgaa.org/article/home-construction-types-for-insurance",
+      "urlHash": "f6331631eb26749b",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_wuxbuazf76g4b4u2jfx93dd2",
+      "search_ids": [
+        "search_mtmxsntvqvbw426365py5yoi"
+      ],
+      "url": "https://www.geico.com/homeowners-insurance/states/il/",
+      "urlHash": "d6ecde2a8ac93beb",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_qjauddzdw243f2fv9shopqvl",
+      "search_ids": [
+        "search_mtmxsntvqvbw426365py5yoi"
+      ],
+      "url": "https://floridaallrisk.com/geico-condo-insurance-florida-guide/",
+      "urlHash": "f0a042546fa16356",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_zmg317rihykp985e453wqiq2",
+      "search_ids": [
+        "search_mtmxsntvqvbw426365py5yoi"
+      ],
+      "url": "https://www.geico.com/homeowners-insurance/states/az/",
+      "urlHash": "48cba5fa21fa1b13",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_tylahjr0tvj4klg5whmxt0bd",
+      "search_ids": [
+        "search_mtmxsntvqvbw426365py5yoi"
+      ],
+      "url": "https://www.geico.com/condo-insurance/",
+      "urlHash": "ccab4325ff0b4acb",
       "priority": "high",
       "status": "pending",
       "assignedTo": null,
