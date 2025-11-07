@@ -3,13 +3,13 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T05:59:37.576502",
+    "lastUpdated": "2025-11-07T05:59:39.790993",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
-    "pending": 408,
-    "claimed": 3,
+    "pending": 407,
+    "claimed": 4,
     "urls_discovered": 0,
     "completed": 65,
     "failed": 0
@@ -8150,15 +8150,16 @@
       "subcategory": "educational-content",
       "carrier": null,
       "priority": "medium",
-      "status": "pending",
-      "assignedTo": null,
+      "status": "claimed",
+      "assignedTo": "agnt_uh6xouhr4c8y394z5p4ied7g",
       "startedAt": null,
       "completedAt": null,
       "durationSeconds": null,
       "urlsDiscoveredCount": null,
       "errorMessage": null,
       "retryCount": 0,
-      "notes": null
+      "notes": null,
+      "claimedAt": "2025-11-07T05:59:39.788033"
     },
     {
       "id": "search_v1d58pnkbrdixywihc33q1yz",
