@@ -3,12 +3,12 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T05:27:11.736078",
+    "lastUpdated": "2025-11-07T05:28:10.915519",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 463,
+    "pending": 472,
     "fetching": 0,
     "completed": 0,
     "failed": 0
@@ -2136,7 +2136,8 @@
       "search_ids": [
         "search_qseh76a2il9pmcox4ewgajcp",
         "search_vzrq1kwa4femc3s8wdgafueh",
-        "search_alh2bt49mpj724v2yv3v4yrh"
+        "search_alh2bt49mpj724v2yv3v4yrh",
+        "search_q2ebudwr8dggtzaa0zo6n9vw"
       ],
       "url": "https://www.dfs.ny.gov/consumers/auto_insurance/minimum_auto_insurance_requirements",
       "urlHash": "30a5f63042b1eae7",
@@ -7894,6 +7895,159 @@
       "url": "https://www.cigflorida.com/florida-hurricane-deductible/",
       "urlHash": "2f57a200ba4b707c",
       "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_ydn4cjkows999zt96daahn92",
+      "search_ids": [
+        "search_q2ebudwr8dggtzaa0zo6n9vw"
+      ],
+      "url": "https://www.dfs.ny.gov/consumers/auto_insurance/how_to_shop_for_auto_insurance",
+      "urlHash": "2665291f6b3eef6d",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_u7jscwb2yx0bhybsepf76j8m",
+      "search_ids": [
+        "search_q2ebudwr8dggtzaa0zo6n9vw"
+      ],
+      "url": "https://www.dfs.ny.gov/consumers/auto_insurance/Auto_resource_center",
+      "urlHash": "19bd8abf05a9b569",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_euqipszs80pojqaqukkubv3i",
+      "search_ids": [
+        "search_q2ebudwr8dggtzaa0zo6n9vw"
+      ],
+      "url": "https://www.dfs.ny.gov/consumers/auto_insurance/optional_auto_insurance",
+      "urlHash": "bf939492c5fffcf4",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_gra9bw2mo7xlh97r26v3htmv",
+      "search_ids": [
+        "search_q2ebudwr8dggtzaa0zo6n9vw"
+      ],
+      "url": "https://www.dfs.ny.gov/consumers/auto_insurance/trouble_getting_coverage",
+      "urlHash": "30deb9db4d6e1322",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_rmzwtph2t7gsnfmt4ypr48l3",
+      "search_ids": [
+        "search_q2ebudwr8dggtzaa0zo6n9vw"
+      ],
+      "url": "https://www.dfs.ny.gov/consumers/auto_insurance/discounts_and_saving_money",
+      "urlHash": "20571a780c7c5dde",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_db24wavvihipb7m9ltkssjrg",
+      "search_ids": [
+        "search_q2ebudwr8dggtzaa0zo6n9vw"
+      ],
+      "url": "https://www.dfs.ny.gov/consumers/auto_insurance/telephone_numbers_and_websites_of_auto_insurers",
+      "urlHash": "526f4da7917e4cb5",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_p5l0nlk5by0v1xk9rt1ezxng",
+      "search_ids": [
+        "search_q2ebudwr8dggtzaa0zo6n9vw"
+      ],
+      "url": "https://www.dfs.ny.gov/consumers/auto_insurance/auto_insurance_complaint_ranking",
+      "urlHash": "d3f14b9a58e4e6b2",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_wnu3c813ldep6nswoll3p44u",
+      "search_ids": [
+        "search_q2ebudwr8dggtzaa0zo6n9vw"
+      ],
+      "url": "https://www.dfs.ny.gov/consumers/auto_insurance/applying_for_auto_insurance",
+      "urlHash": "f50b116265b39cc1",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_onhltw935wldf43cxs8pzw5z",
+      "search_ids": [
+        "search_q2ebudwr8dggtzaa0zo6n9vw"
+      ],
+      "url": "https://www.dfs.ny.gov/consumers/auto_insurance/difficult-to-insure_vehicles",
+      "urlHash": "966a3928f7318c2c",
+      "priority": "high",
       "status": "pending",
       "assignedTo": null,
       "pageId": null,
