@@ -3,12 +3,12 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T05:21:12.375199",
+    "lastUpdated": "2025-11-07T05:22:02.682546",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 393,
+    "pending": 403,
     "fetching": 0,
     "completed": 0,
     "failed": 0
@@ -6704,6 +6704,176 @@
       "url": "https://connect.ebsco.com/s/article/How-can-I-search-for-an-exact-phrase-only?language=en_US",
       "urlHash": "a4965e66d0b30608",
       "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_yfmxm45oxou52apr1p6e09xa",
+      "search_ids": [
+        "search_j1ntno1phg1h6zk4ir136kqy"
+      ],
+      "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/defensive-driving-tips",
+      "urlHash": "faf566974bd59f86",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_bby9tztw3hlafwjmxcbi7pxc",
+      "search_ids": [
+        "search_j1ntno1phg1h6zk4ir136kqy"
+      ],
+      "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/driving-on-the-interstate",
+      "urlHash": "d35b65ef08b621e6",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_yq1cqtot3aqycbr9n518lwnx",
+      "search_ids": [
+        "search_j1ntno1phg1h6zk4ir136kqy"
+      ],
+      "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/driving",
+      "urlHash": "1a05fc70cf1bb0c2",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_ramj845s0xx1gzhzpy9p6bcs",
+      "search_ids": [
+        "search_j1ntno1phg1h6zk4ir136kqy"
+      ],
+      "url": "https://www.statefarm.com/insurance/auto/discounts/steer-clear/steer-clear-training-program",
+      "urlHash": "cd53ffece2878581",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_dnl7c5horh9t7yt82mwwgksz",
+      "search_ids": [
+        "search_j1ntno1phg1h6zk4ir136kqy"
+      ],
+      "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/make-your-commute-safe-and-sane",
+      "urlHash": "30cd0f215ef4d33a",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_d6myfcx62yp9gmj9cjtc98p9",
+      "search_ids": [
+        "search_j1ntno1phg1h6zk4ir136kqy"
+      ],
+      "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/things-have-changed-since-you-learned-to-drive",
+      "urlHash": "2416b4ef17099f52",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_qb5xoirfukj2nmadflv8cv51",
+      "search_ids": [
+        "search_j1ntno1phg1h6zk4ir136kqy"
+      ],
+      "url": "https://www.statefarm.com/insurance/auto/discounts/washington",
+      "urlHash": "5650d9558a196dbc",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_q8yapy43l7s4akvfesp43eih",
+      "search_ids": [
+        "search_j1ntno1phg1h6zk4ir136kqy"
+      ],
+      "url": "https://www.statefarm.com/insurance/auto/discounts/new-york",
+      "urlHash": "6554db0855b1c823",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_qxu7wh89u44qaossuqfenexh",
+      "search_ids": [
+        "search_j1ntno1phg1h6zk4ir136kqy"
+      ],
+      "url": "https://www.statefarm.com/insurance/auto/discounts/georgia",
+      "urlHash": "93a0404d4a2a1937",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_g9vjmrrno5k6vl1he9r2jho4",
+      "search_ids": [
+        "search_j1ntno1phg1h6zk4ir136kqy"
+      ],
+      "url": "https://www.statefarm.com/insurance/auto/discounts/delaware",
+      "urlHash": "ea105ec498ac0ef3",
+      "priority": "high",
       "status": "pending",
       "assignedTo": null,
       "pageId": null,
