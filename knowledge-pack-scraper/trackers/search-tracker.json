@@ -3,13 +3,13 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T05:22:51.511601",
+    "lastUpdated": "2025-11-07T05:22:53.898096",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
-    "pending": 428,
-    "claimed": 2,
+    "pending": 427,
+    "claimed": 3,
     "urls_discovered": 0,
     "completed": 46,
     "failed": 0
@@ -3474,15 +3474,16 @@
       "subcategory": "california-auto-minimums",
       "carrier": null,
       "priority": "high",
-      "status": "pending",
-      "assignedTo": null,
+      "status": "claimed",
+      "assignedTo": "agnt_djou90zqwvnlrixqq1x9bmhk",
       "startedAt": null,
       "completedAt": null,
       "durationSeconds": null,
       "urlsDiscoveredCount": null,
       "errorMessage": null,
       "retryCount": 0,
-      "notes": null
+      "notes": null,
+      "claimedAt": "2025-11-07T05:22:53.895059"
     },
     {
       "id": "search_dyrtwti3u2dlqib7y39p808y",
