@@ -3,13 +3,13 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T05:20:22.166069",
+    "lastUpdated": "2025-11-07T05:20:24.694671",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
-    "pending": 431,
-    "claimed": 2,
+    "pending": 430,
+    "claimed": 3,
     "urls_discovered": 0,
     "completed": 43,
     "failed": 0
@@ -8120,15 +8120,16 @@
       "subcategory": "google-search-operators",
       "carrier": null,
       "priority": "medium",
-      "status": "pending",
-      "assignedTo": null,
+      "status": "claimed",
+      "assignedTo": "agnt_a5o4lhzapfl2cb0fvp8don9k",
       "startedAt": null,
       "completedAt": null,
       "durationSeconds": null,
       "urlsDiscoveredCount": null,
       "errorMessage": null,
       "retryCount": 0,
-      "notes": null
+      "notes": null,
+      "claimedAt": "2025-11-07T05:20:24.692330"
     },
     {
       "id": "search_njnq00djtqmaspesu4q9tdvc",
