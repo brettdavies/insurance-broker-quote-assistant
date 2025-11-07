@@ -3,13 +3,13 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T04:50:01.303762",
+    "lastUpdated": "2025-11-07T04:50:03.622369",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
-    "pending": 453,
-    "claimed": 0,
+    "pending": 452,
+    "claimed": 1,
     "urls_discovered": 0,
     "completed": 23,
     "failed": 0
@@ -317,15 +317,16 @@
       "subcategory": "site-specific-queries",
       "carrier": "State Farm",
       "priority": "high",
-      "status": "pending",
-      "assignedTo": null,
+      "status": "claimed",
+      "assignedTo": "agnt_ty33x1dab4q92c2qv2kkvlht",
       "startedAt": null,
       "completedAt": null,
       "durationSeconds": null,
       "urlsDiscoveredCount": null,
       "errorMessage": null,
       "retryCount": 0,
-      "notes": null
+      "notes": null,
+      "claimedAt": "2025-11-07T04:50:03.620213"
     },
     {
       "id": "search_y3uqnkjfbo7dg8l038odn5e3",
