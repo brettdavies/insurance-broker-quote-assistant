@@ -1,0 +1,753 @@
+{
+  "websearch_id": "websearch_fdbfnvy5pgknpc0e0d7g6j77",
+  "search_id": "search_icfu993imo3wxh9fnx84md9o",
+  "timestamp": "2025-11-07T12:29:21.418519",
+  "startedAt": "2025-11-07T12:29:21.418519",
+  "completedAt": "2025-11-07T12:29:23.448842",
+  "durationSeconds": 2.03,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:bankrate.com GEICO average rates California",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:bankrate.com GEICO average rates California",
+      "show_strict_warning": false,
+      "cleaned": "GEICO average rates California",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO average rates California",
+        "sites": [
+          "bankrate.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Cheap Car Insurance in California for October 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/cheapest-car-insurance-in-california/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Because every driver&#x27;s needs are different, we looked for cheap carriers for drivers seeking full coverage and for those in need of a bare-bones state minimum coverage policy. In our analysis of average premium data from Quadrant Information Services, Kemper has the cheapest rate for full coverage car insurance and Geico is the cheapest carrier for state minimum coverage.",
+          "page_age": "2025-10-31T00:13:59",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/cheapest-car-insurance-in-california/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/_HBHe0Rvmt9C3ute2M_CGxkB6PMoed4RrYzLZAhdsVk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvMTI4/MHg3MjAvZDlmZDZj/MjZkNy9jaGVhcGVz/dC1jYXItaW5zdXJh/bmNlLWluLWNhbGlm/b3JuaWEtZmVhdHVy/ZWQuanBlZw",
+            "original": "https://a.storyblok.com/f/102997/1280x720/d9fd6c26d7/cheapest-car-insurance-in-california-featured.jpeg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Best Cheap Car Insurance in San Francisco, CA in 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/san-francisco-ca/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "But, depending on your driving profile, it\u2019s still possible to secure an affordable rate. Average cost of full coverage car insurance in San Francisco: $3,515 \u00b7 Average cost of minimum coverage car insurance in San Francisco: $980 \u00b7 Cheapest car insurance companies in San Francisco for minimum coverage: Geico, Progressive and Mercury",
+          "page_age": "2025-11-04T20:29:11",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/san-francisco-ca/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product_cluster",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/WmJAmRq354HwPu1QNu_yBKLqXw0BH-yd_81aCv3ZoRA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/aW5zdXJhbmNlLnJl/ZHZlbnR1cmVzLmlv/L2ltYWdlcy9tZXJj/dXJ5LnN2Zw",
+            "original": "https://cdn.insurance.redventures.io/images/mercury.svg",
+            "logo": true
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "Geico Insurance Review 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Below-average J.D. Power scores ... one of the cheapest car insurance companies. Its average cost of car insurance is $2,200 per year for full coverage and $596 per year for minimum coverage....",
+          "page_age": "2025-10-14T19:36:23",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/geico/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "Best Cheap Car Insurance in San Jose for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/san-jose-ca/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The average cost of car insurance in San Jose is $832 a year for minimum coverage, while full coverage, which includes collision and comprehensive insurance, costs an average of $2,903.",
+          "page_age": "2025-10-19T16:28:28",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/san-jose-ca/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product_cluster",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/NHWiLJIFHgR4QWSjyNZmndIBp0zODYJr_3IcEJHehS8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/aW5zdXJhbmNlLnJl/ZHZlbnR1cmVzLmlv/L2ltYWdlcy9uYXRp/b25hbGdlbmVyYWwu/c3Zn",
+            "original": "https://cdn.insurance.redventures.io/images/nationalgeneral.svg",
+            "logo": true
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "Best Car Insurance in California for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/california/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Why Geico made our list: Geico offers low average premiums across many driver profiles in California \u2014 even for drivers with marks on their records. Also, Geico offers SR-22 forms and won the 2025 Bankrate Award for Best Auto Insurance Company ...",
+          "page_age": "2025-10-30T20:02:15",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/california/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product_cluster",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/WmJAmRq354HwPu1QNu_yBKLqXw0BH-yd_81aCv3ZoRA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/aW5zdXJhbmNlLnJl/ZHZlbnR1cmVzLmlv/L2ltYWdlcy9tZXJj/dXJ5LnN2Zw",
+            "original": "https://cdn.insurance.redventures.io/images/mercury.svg",
+            "logo": true
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Average Cost of Car Insurance in California for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-california/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Bankrate breaks down the average cost of car insurance in California for different drivers. Find out how much you might pay and how to save.",
+          "page_age": "2025-11-06T02:17:23",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-california/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "age": "2 days ago"
+        },
+        {
+          "title": "Car Insurance Rates by State for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/states/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Rates were calculated based on the following insurance credit tiers assigned to our drivers: \u201cpoor, average, good (base) and excellent.\u201d Insurance credit tiers factor in your official credit scores but are not dependent on that variable alone. Four states prohibit or limit the use of credit as a rating factor in determining auto insurance rates: California, Hawaii, Massachusetts and Michigan.",
+          "page_age": "2025-11-06T23:45:39",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/states/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/zlUOzR1BVAnhcrUq5nSR2e_z0UOWwBSCQeetBW1X5EA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvODAw/eDQ1MC82ZTNjZmY3/OGE1L3N0YXRlLXJh/dGVzLTgwMC00NTAt/MS5qcGVn",
+            "original": "https://a.storyblok.com/f/102997/800x450/6e3cff78a5/state-rates-800-450-1.jpeg",
+            "logo": false
+          },
+          "age": "19 hours ago"
+        },
+        {
+          "title": "Average cost of car insurance in November 2025",
+          "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Recently, most drivers have seen their rates increase at renewal each year as the cost of insurance steadily increases due to factors like inflation and increased repair costs. On the other hand, there is the possibility that your insurance premium might go down, especially if your credit history has improved or infractions have aged enough to no longer affect your premium. According to our research, Auto-Owners, Erie and Geico rank as some of the cheapest car insurance companies on average for drivers in most states.",
+          "page_age": "2025-11-07T05:04:33",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/kS-6az4e1AuNbmx7QPLBzr-uub9l7JUS6ocG95z6O3Y/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvMTI4/MHg3MjAvYTQwMzcz/ZDkyNi9pbnN1cmFu/Y2VfYXZlcmFnZV9j/b3N0X29mX2Nhcl9p/bnN1cmFuY2UuanBn",
+            "original": "https://a.storyblok.com/f/102997/1280x720/a40373d926/insurance_average_cost_of_car_insurance.jpg",
+            "logo": false
+          },
+          "age": "13 hours ago"
+        },
+        {
+          "title": "Best Cheap Car Insurance in San Diego for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/san-diego-ca/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "While San Diego drivers can purchase Geico insurance online or over the phone, the carrier does not operate any branch offices in California. Why Geico may have the cheapest minimum coverage car insurance: Geico has the cheapest average rate for minimum coverage insurance and is one of the cheapest carriers for full coverage insurance for San Diego drivers.",
+          "page_age": "2025-10-28T04:09:03",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/san-diego-ca/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product_cluster",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/WmJAmRq354HwPu1QNu_yBKLqXw0BH-yd_81aCv3ZoRA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/aW5zdXJhbmNlLnJl/ZHZlbnR1cmVzLmlv/L2ltYWdlcy9tZXJj/dXJ5LnN2Zw",
+            "original": "https://cdn.insurance.redventures.io/images/mercury.svg",
+            "logo": true
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "Best Cheap Car Insurance in Bakersfield for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/bakersfield-ca/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Why Geico may be best for budget-conscious drivers: Geico\u2019s average rates are typically below the national average, thanks in part to a robust set of discounts.",
+          "page_age": "2025-09-08T18:54:40",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/bakersfield-ca/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "age": "September 8, 2025"
+        },
+        {
+          "title": "Geico vs State Farm | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/geico-vs-state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "While State Farm will write policies for some high-risk drivers, Geico tends to offer the same type of coverage at a cheaper rate. Below you can see how each carrier&#x27;s average rates stack up across a variety of common driver profiles.",
+          "page_age": "2025-09-08T15:15:12",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/geico-vs-state-farm/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "September 8, 2025"
+        },
+        {
+          "title": "Best Cheap Car Insurance in Los Angeles, CA in 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/los-angeles-ca/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Why Geico made our list: Geico, the third-largest U.S. auto insurer by market share, has nationwide availability and offers policies to drivers with various driving histories. This long-standing carrier has an A++ (Superior) rating from AM Best, which implies it can honor claims even when a natural disaster occurs \u2014 something that may be reassuring to drivers in California.",
+          "page_age": "2025-11-01T23:37:39",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/los-angeles-ca/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product_cluster",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/FFw1z7kVrLwNlZ8O3MWis48hxFuKeoZ_hI70iUhNrWw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/aW5zdXJhbmNlLnJl/ZHZlbnR1cmVzLmlv/L2ltYWdlcy93YXdh/bmVzYS5zdmc",
+            "original": "https://cdn.insurance.redventures.io/images/wawanesa.svg",
+            "logo": true
+          },
+          "age": "6 days ago"
+        },
+        {
+          "title": "Best Cheap Car Insurance in Fresno for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/fresno-ca/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Why Geico made our list: Geico offers one of the cheapest average minimum coverage premiums in Fresno and won the 2025 Bankrate Award for Best Auto Insurance Company for High-Risk Drivers. While Geico no longer has local agents in California, drivers can still get a policy online, through the mobile app or with an agent over the phone. Why Geico may be cheapest for minimum coverage: Along with low rates, Geico has more discount options than most carriers, including telematics, discounts for teen drivers and affiliation discounts for various clubs and memberships.",
+          "page_age": "2025-07-01T19:41:43",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/fresno-ca/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "age": "July 1, 2025"
+        },
+        {
+          "title": "Best Cheap Car Insurance in Sacramento, CA in 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/sacramento-ca/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Its average rates are well below the Sacramento average \u2014 in fact, the company&#x27;s average rate for full coverage is 30 percent less than the city average. Geico also has one of the most robust discount lists of any major carrier. You can earn discounts if you are a military member or federal ...",
+          "page_age": "2025-09-08T15:10:51",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/sacramento-ca/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "age": "September 8, 2025"
+        },
+        {
+          "title": "Geico vs Amica 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/geico-vs-amica/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In addition to possessing a larger ... and a wide range of additional insurance products. While Geico\u2019s average rates are 19 percent less than the average cost of car insurance nationwide, Amica\u2019s are 44 percent more....",
+          "page_age": "2025-10-23T13:09:07",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/geico-vs-amica/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "Car Insurance for Tesla Model Y | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/tesla/model-y/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico does offer insurance policies for Tesla vehicles, including the Model Y. In Bankrate&#x27;s research, the average annual Geico premium for a Model Y is $3,568, 7 percent less than the national average but slightly more expensive than some of the cheapest providers in our analysis.",
+          "page_age": "2025-04-04T19:25:14",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/tesla/model-y/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car  \u203a tesla"
+          },
+          "age": "April 4, 2025"
+        },
+        {
+          "title": "Allstate, Geico, Progressive and State Farm Compared | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/comparison-allstate-geico-progressive-state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Why we chose it: Geico has a history of offering low average rates for many types of drivers. Because the company also provides a robust list of potential discounts, the savings possibilities really start to add up. Geico\u2019s many discounts include military, emergency deployment, telematics, good student, multi-vehicle and more.",
+          "page_age": "2025-08-19T12:42:54",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/comparison-allstate-geico-progressive-state-farm/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/qRCWTEdsnsACE5ZamCI9jMMGha-EMK8xAQWKx_51oDI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/L2JycC8yMDI1LzAy/LzA2MTU1MzM1L0lu/c3VyYW5jZV9GcmVl/bGFuY2VfQWxsc3Rh/dGVfR2VpY29fUHJv/Z3Jlc3NpdmVfYW5k/X1N0YXRlX0Zhcm1f/Q29tcGFyZWQuanBn",
+            "original": "https://www.bankrate.com/brp/2025/02/06155335/Insurance_Freelance_Allstate_Geico_Progressive_and_State_Farm_Compared.jpg",
+            "logo": false
+          },
+          "age": "August 19, 2025"
+        },
+        {
+          "title": "Best Cheap Car Insurance in Ontario, CA in 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/ontario-ca/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Why Geico made our list: Geico ... marks on your license. Our research indicates that Geico has particularly low average rates for state minimum coverage. It also ranked third for customer satisfaction in the California region from J.D....",
+          "page_age": "2025-08-14T15:23:06",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/ontario-ca/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "age": "August 14, 2025"
+        },
+        {
+          "title": "Geico DriveEasy Review: How It Works and Whether It\u2019s Worth It | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/geico-driveeasy/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "For drivers who avoid unsafe habits like hard braking and phone use behind the wheel, DriveEasy offers discounted rates on auto insurance. The app is telematics-based, which means that your real-time driving information is transmitted to Geico via your smartphone.",
+          "page_age": "2025-06-12T20:06:15",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/geico-driveeasy/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/npy3v-wzO5Fh3Tx5xIIAshZ14hLoKb0B9o0y90383FY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/LzIwMjEvMTAvMTIx/MjM3MjgvY2FyLWdl/aWNvLWRyaXZlZWFz/eS1mZWF0dXJlZC5q/cGc",
+            "original": "https://www.bankrate.com/2021/10/12123728/car-geico-driveeasy-featured.jpg",
+            "logo": false
+          },
+          "age": "June 12, 2025"
+        },
+        {
+          "title": "California Casualty Insurance Review 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/california-casualty/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Other than that, they were cheap, (roughly $60 a month cheaper than all competition in my area) and when I did talk to someone, they were polite, to the point, and they always seem more than willing to help me out when something happens. ... I was with Geico for 15 years.",
+          "page_age": "2025-09-08T18:54:58",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/california-casualty/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "September 8, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

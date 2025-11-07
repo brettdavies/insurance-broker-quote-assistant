@@ -1,0 +1,758 @@
+{
+  "websearch_id": "websearch_uplhbfsgpnnf2umm2wbixtk7",
+  "search_id": "search_v1ll0x9ew82h939jtmyklvxp",
+  "timestamp": "2025-11-07T12:34:20.431301",
+  "startedAt": "2025-11-07T12:34:20.431301",
+  "completedAt": "2025-11-07T12:34:22.280879",
+  "durationSeconds": 1.85,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:bankrate.com State Farm discounts",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:bankrate.com State Farm discounts",
+      "show_strict_warning": false,
+      "cleaned": "State Farm discounts",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "State Farm discounts",
+        "sites": [
+          "bankrate.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "State Farm Drive Safe and Save | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/state-farm-drive-safe-and-save/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "For drivers with State Farm car insurance, the Drive Safe and Save program could be a good opportunity to save money on car insurance. Like most telematics programs, Drive Safe and Save is an optional program that allows State Farm to collect data about your driving and offer discounts for safe behaviors.",
+          "page_age": "2025-05-09T19:20:17",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/state-farm-drive-safe-and-save/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/XrAafb75PfxpAAd0LjDXlUF1Igo249KmFGXCEHzRFrE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/LzIwMjAvMTEvMjkx/MzE4NDUvU3RhdGUt/RmFybS1Ecml2ZS1T/YWZlLUFuZC1TYXZl/LmpwZWc",
+            "original": "https://www.bankrate.com/2020/11/29131845/State-Farm-Drive-Safe-And-Save.jpeg",
+            "logo": false
+          },
+          "age": "May 9, 2025"
+        },
+        {
+          "title": "Best Car Insurance Discounts | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/best-auto-insurance-discounts/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "To save money on car insurance ... offer a discount for completing a safe driving course designed for teen and young drivers, while others offer telematics programs intended to help young drivers practice safe driving habits. Offered by major insurance companies like: Amica, Progressive, State Farm...",
+          "page_age": "2025-08-12T15:28:05",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/best-auto-insurance-discounts/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/L1idzXVT6Y67bJxWYSafCWw28xg-xjeXaj0xEQtNDbM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/LzIwMjMvMDcvMzEx/NDU2MzMvSW5zdXJh/bmNlX0Jlc3RfQ2Fy/X0luc3VyYW5jZV9E/aXNjb3VudHMuanBn",
+            "original": "https://www.bankrate.com/2023/07/31145633/Insurance_Best_Car_Insurance_Discounts.jpg",
+            "logo": false
+          },
+          "age": "August 12, 2025"
+        },
+        {
+          "title": "State Farm Insurance Review 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Protective device discounts: A fire alarm, smoke detector or security system could make your State Farm home insurance policy eligible for a discount. Wind mitigation discounts: If your home is constructed to certain standards \u2014 such as those set by the Institute for Business and Home Safety\u2019s FORTIFIED program \u2014 you might be eligible for discounts from State Farm.",
+          "page_age": "2025-11-06T16:06:00",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/state-farm/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "1 day ago"
+        },
+        {
+          "title": "Geico vs State Farm | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/geico-vs-state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm and Geico both write ... State Farm has in-person agents in many communities, and ranks higher than Geico in the J.D. Power Auto Claims Satisfaction Survey. On the other hand, Geico generally has more competitive premiums and offers more discounts and a long ...",
+          "page_age": "2025-09-08T15:15:12",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/geico-vs-state-farm/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "September 8, 2025"
+        },
+        {
+          "title": "Progressive vs. State Farm 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/progressive-vs-state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Vehicle safety: Receive discounts based on the safety features of your vehicle, such as airbags and anti-theft technology. Passive restraints: For vehicles with factory-installed airbags or other passive restraint systems, State Farm offers a significant discount.",
+          "page_age": "2025-11-04T11:52:19",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/progressive-vs-state-farm/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "State Farm vs USAA: Car Insurance Comparison | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/state-farm-vs-usaa/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Both State Farm and USAA offer a range of discounts that can provide substantial savings on premiums, appealing to a broad array of customers. These discounts are designed to reward responsible behaviors and circumstances that lower the insurers&#x27; risk.",
+          "page_age": "2025-09-08T15:15:06",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/state-farm-vs-usaa/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "September 8, 2025"
+        },
+        {
+          "title": "Surprising Ways You Could Save on Your Auto Insurance | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/car-insurance-discounts-you-may-not-know-about/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Discover unexpected ways to save on your car insurance beyond typical discounts.",
+          "page_age": "2025-02-12T19:12:47",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/car-insurance-discounts-you-may-not-know-about/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Ssv0nYtLW3L94SnsIlBhqpXeTIuzI5LiHVhJiPPO1ec/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/L2JycC8yMDI0LzEy/LzA5MTU1ODEzL2Nh/ci1pbnN1cmFuY2Ut/ZGlzY291bnRzLXlv/dS1tYXktbm90LWtu/b3ctYWJvdXQuanBn",
+            "original": "https://www.bankrate.com/brp/2024/12/09155813/car-insurance-discounts-you-may-not-know-about.jpg",
+            "logo": false
+          },
+          "age": "February 12, 2025"
+        },
+        {
+          "title": "Best Cheap Home Insurance in Chicago, IL in 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/homeowners-insurance/chicago-il/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Unique features like the Premier Service Program and the partnership with Ting, which offers a free device to monitor electrical systems for fire hazards, enhance the value of State Farm&#x27;s policies.",
+          "page_age": "2025-11-05T23:22:08",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/homeowners-insurance/chicago-il/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product_cluster",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a homeowners insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/07xux7zjjxgzuV7_xVURi4Tbn9FtWd_0CRi2PhwVuGE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/aW5zdXJhbmNlLnJl/ZHZlbnR1cmVzLmlv/L2ltYWdlcy9hbWVy/aWNhbmZhbWlseS5z/dmc",
+            "original": "https://cdn.insurance.redventures.io/images/americanfamily.svg",
+            "logo": true
+          },
+          "age": "2 days ago"
+        },
+        {
+          "title": "Best Cheap Car Insurance in San Francisco, CA in 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/san-francisco-ca/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Why State Farm may be best for safe drivers: State Farm rates are closer to the San Francisco average, but policyholders have the opportunity to reduce their premium by enrolling in the Drive Safe &amp; Save telematics program. The generous discounts this program offers for responsible and courteous ...",
+          "page_age": "2025-11-04T20:29:11",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/san-francisco-ca/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product_cluster",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/WmJAmRq354HwPu1QNu_yBKLqXw0BH-yd_81aCv3ZoRA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/aW5zdXJhbmNlLnJl/ZHZlbnR1cmVzLmlv/L2ltYWdlcy9tZXJj/dXJ5LnN2Zw",
+            "original": "https://cdn.insurance.redventures.io/images/mercury.svg",
+            "logo": true
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "Best Cheap Car Insurance in Omaha, NE in 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/omaha-ne/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Why State Farm made our list: State ... offers a variety of discounts, including two app-based telematics programs, Steer Clear for drivers under 25 and Drive Safe &amp; Save for drivers over 25....",
+          "page_age": "2025-08-14T15:23:08",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/omaha-ne/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "age": "August 14, 2025"
+        },
+        {
+          "title": "Best Cheap Car Insurance in Tampa, FL in 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/tampa-fl/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Although State Farm does not offer as many specialty coverage options for policies, such as gap coverage, it has a robust list of discounts, including good student discounts and a telematics program that can save you up to 30 percent.",
+          "page_age": "2025-11-03T22:28:06",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/tampa-fl/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product_cluster",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/kdBHxlPaQFa7B2ub4TcmD0XNwLg-SZb2_V_yM9M_VP4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/aW5zdXJhbmNlLnJl/ZHZlbnR1cmVzLmlv/L2ltYWdlcy9hbGxz/dGF0ZS5zdmc",
+            "original": "https://cdn.insurance.redventures.io/images/allstate.svg",
+            "logo": true
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "Best Cheap Home Insurance in New York City, NY in 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/homeowners-insurance/new-york-city-ny/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Cheapest home insurance companies ... State Farm and Sterling Insurance ... To find the best cheap home insurance in New York City, Bankrate reviewed some of the largest companies in the state and assigned the top carriers a Bankrate Score. These Scores are calculated based on criteria like average annual premiums from Quadrant Information Services, coverage options, discounts, financial ...",
+          "page_age": "2025-11-06T19:37:38",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/homeowners-insurance/new-york-city-ny/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product_cluster",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a homeowners insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/bn54I7Q6E9jrsKFbYGi7GBmGD0ZFiDL1pTD_N8h5Aog/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/aW5zdXJhbmNlLnJl/ZHZlbnR1cmVzLmlv/L2ltYWdlcy9ueWNt/LnN2Zw",
+            "original": "https://cdn.insurance.redventures.io/images/nycm.svg",
+            "logo": true
+          },
+          "age": "1 day ago"
+        },
+        {
+          "title": "Tips for Saving With Teen Driver Discounts | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/teen-discounts/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "For instance, Allstate offers a good student discount to unmarried drivers, under 25 years of age, who have at least a B- average. Additionally, State Farm offers up to 25% savings ...",
+          "page_age": "2025-04-15T15:42:51",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/teen-discounts/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/TP8OE7ZU3BnmYqmIzGjQTm4tNIaF82YzwHhiQZI1J1s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/LzIwMTMvMDcvMTQx/MDAyMTcvdGVlbi1k/aXNjb3VudHMtZmVh/dHVyZWQuanBn",
+            "original": "https://www.bankrate.com/2013/07/14100217/teen-discounts-featured.jpg",
+            "logo": false
+          },
+          "age": "April 15, 2025"
+        },
+        {
+          "title": "Best Cheap Car Insurance in Durham, NC in 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/durham-nc/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Why State Farm made our list: State Farm might appeal to drivers in Durham because its premiums are extremely affordable and the company offers excellent discount opportunities, including two safe driver discount programs.",
+          "page_age": "2025-07-01T19:41:50",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/durham-nc/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "age": "July 1, 2025"
+        },
+        {
+          "title": "Best Cheap Car Insurance in Dallas, TX in 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/dallas-tx/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Why State Farm made our list: On top of having some of the least expensive rates for full coverage insurance, State Farm policyholders may also save on their auto insurance with the company\u2019s extensive list of discounts. State Farm extends potential discounts for good students, being accident-free, insuring multiple vehicles, having a vehicle with safety features and more.",
+          "page_age": "2025-10-22T14:21:50",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/dallas-tx/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product_cluster",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/WmJAmRq354HwPu1QNu_yBKLqXw0BH-yd_81aCv3ZoRA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/aW5zdXJhbmNlLnJl/ZHZlbnR1cmVzLmlv/L2ltYWdlcy9tZXJj/dXJ5LnN2Zw",
+            "original": "https://cdn.insurance.redventures.io/images/mercury.svg",
+            "logo": true
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "AAA vs State Farm 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/aaa-vs-state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Bundling home and auto insurance: Customers who purchase both home and auto insurance from AAA are eligible for discounts, while State Farm offers bundling discounts to auto customers who are the named insured on a home, renters, life, health or condo policy.",
+          "page_age": "2025-09-08T18:54:48",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/aaa-vs-state-farm/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "September 8, 2025"
+        },
+        {
+          "title": "Cheapest Car Insurance in Mississippi for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/cheapest-car-insurance-in-mississippi/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Cheapest car insurance for teens with an at-fault accident: State Farm \u00b7 Cheapest car insurance for young drivers with a DUI: Progressive \u00b7 It may be challenging to find cheap insurance in Mississippi if you have a teen driver on your policy. However, some carriers offer cheaper coverage for young drivers than others. Certain car insurance companies offer discounts for teens who enroll in safe driving or telematics programs, and students with good grades may score additional savings.",
+          "page_age": "2025-08-08T13:22:25",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/cheapest-car-insurance-in-mississippi/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "age": "August 8, 2025"
+        },
+        {
+          "title": "Best Car Insurance in Washington for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/washington/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Why State Farm made our list: If you\u2019re looking for a local agent, State Farm may be a great fit. This carrier offers a wide range of insurance products in addition to a solid number of potential discounts. State Farm also offers optional coverage choices like car rental, travel expenses ...",
+          "page_age": "2025-11-03T21:15:09",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/washington/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ITKCMuzEX_yHEiWygc3jTYb010oD_KUKnEjQr1IB-Fo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvODAw/eDQ1MC9kMTE0MzQx/MzQ4L3VudGl0bGVk/LTEtMi5wbmc",
+            "original": "https://a.storyblok.com/f/102997/800x450/d114341348/untitled-1-2.png",
+            "logo": false
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "Best Car Insurance in Florida for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/florida/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Why State Farm made our list: If you&#x27;re looking for the cheapest car insurance in Florida, State Farm might be an excellent place to start. In addition to the state&#x27;s low average full coverage premiums, this carrier also offers numerous potential discounts that could help you save even more.",
+          "page_age": "2025-11-01T14:59:43",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/florida/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/n_k7qYeKpDUMK11mHGbaO-PXlRp4nLiREtua_xHGHLc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvOTEy/eDUxMy85NmY3OGFj/ZjdjL2dldHR5aW1h/Z2VzLTUzNjMwNDE4/MC5qcGVn",
+            "original": "https://a.storyblok.com/f/102997/912x513/96f78acf7c/gettyimages-536304180.jpeg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Best Car Insurance in Oregon for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/oregon/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Why State Farm made our list: As the largest car insurance provider in the U.S., State Farm is a popular choice for Oregon drivers seeking a standard variety of discounts and endorsements. State Farm stands out for its two safe driving programs: Drive Safe &amp; Save for adults and Steer Clear for drivers under 25.",
+          "page_age": "2025-10-28T23:33:20",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/oregon/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "age": "1 week ago"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

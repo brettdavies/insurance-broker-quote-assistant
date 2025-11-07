@@ -1,0 +1,792 @@
+{
+  "websearch_id": "websearch_p3uq493gaqmi9rxp03mh25a9",
+  "search_id": "search_wpi0dgizcaxuqyixxrovg1s6",
+  "timestamp": "2025-11-07T12:21:11.125155",
+  "startedAt": "2025-11-07T12:21:11.125155",
+  "completedAt": "2025-11-07T12:21:13.150242",
+  "durationSeconds": 2.03,
+  "urlsDiscoveredCount": 19,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"State Farm\" Florida authorized",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"State Farm\" Florida authorized",
+      "show_strict_warning": false,
+      "cleaned": "State Farm Florida authorized",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "State Farm Florida authorized"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "r/Insurance on Reddit: State Farm basically pulled out of FL",
+          "url": "https://www.reddit.com/r/Insurance/comments/1i95bbk/state_farm_basically_pulled_out_of_fl/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Unless you&#x27;re costal or South Florida this is inaccurate. ... What is considered coastal? This property is 22 miles from coast. If that isn\u2019t coastal you can tell my agent it\u2019s inaccurate. More replies ... Floria is the #1 insurance Fraud State. I believe it has just as much to do with that than it does the climate ... Reno, NV here and they are pulling out of here as well and not just State Farm.",
+          "page_age": "2025-01-25T03:38:37",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Insurance/comments/1i95bbk/state_farm_basically_pulled_out_of_fl/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/insurance  \u203a state farm basically pulled out of fl"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A5H_aQiEBuUODR0lNeU8iDfhrWUvO8oEmRGE_mcS_gM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVkZGl0c3RhdGlj/LmNvbS9pY29uLnBu/Zw",
+            "original": "https://www.redditstatic.com/icon.png",
+            "logo": true
+          },
+          "age": "January 25, 2025"
+        },
+        {
+          "title": "State Farm - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/State_Farm",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In early 2009, the State Farm Florida subsidiary, the state&#x27;s largest insurer, offered to withdraw from writing property insurance business in Florida after state regulators refused to approve a 47% property rate increase. State Farm said that, in Florida, it had paid out US$1.21 in claims for every dollar in premiums since 2000.",
+          "page_age": "2025-10-26T17:50:12",
+          "profile": {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/State_Farm",
+            "long_name": "en.wikipedia.org",
+            "img": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "deep_results": {
+            "buttons": [
+              {
+                "type": "button_result",
+                "title": "Overview",
+                "url": "https://en.wikipedia.org/wiki/State_Farm#Overview"
+              },
+              {
+                "type": "button_result",
+                "title": "History",
+                "url": "https://en.wikipedia.org/wiki/State_Farm#History"
+              },
+              {
+                "type": "button_result",
+                "title": "Subsidiaries",
+                "url": "https://en.wikipedia.org/wiki/State_Farm#Subsidiaries"
+              },
+              {
+                "type": "button_result",
+                "title": "Marketing and promotions",
+                "url": "https://en.wikipedia.org/wiki/State_Farm#Marketing_and_promotions"
+              },
+              {
+                "type": "button_result",
+                "title": "Criticism, controversies and viewpoints",
+                "url": "https://en.wikipedia.org/wiki/State_Farm#Criticism,_controversies_and_viewpoints"
+              },
+              {
+                "type": "button_result",
+                "title": "Further reading",
+                "url": "https://en.wikipedia.org/wiki/State_Farm#Further_reading"
+              }
+            ]
+          },
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "en.wikipedia.org",
+            "hostname": "en.wikipedia.org",
+            "favicon": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw",
+            "path": "\u203a wiki  \u203a State_Farm"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/JJVmZ8RO2q5JCfHMKBjGbuEN46u7albILoDYtAb4D-s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/LzlhL1N0YXRlX0Zh/cm1fbG9nby5zdmc",
+            "original": "https://upload.wikimedia.org/wikipedia/commons/9/9a/State_Farm_logo.svg",
+            "logo": true
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "Massive Florida State Farm case over alleged patient brokering scheme clears early legal hurdle | Insurance Business America",
+          "url": "https://www.insurancebusinessmag.com/us/news/claims/massive-florida-state-farm-case-over-alleged-patient-brokering-scheme-clears-early-legal-hurdle-529865.aspx",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "A federal judge in Florida has allowed State Farm Mutual Automobile Insurance Company to move forward with most of its claims in a lawsuit alleging that a network of medical providers and surgery centers engaged in an illegal patient brokering ...",
+          "page_age": "2025-03-26T12:20:26",
+          "profile": {
+            "name": "Insurance Business America",
+            "url": "https://www.insurancebusinessmag.com/us/news/claims/massive-florida-state-farm-case-over-alleged-patient-brokering-scheme-clears-early-legal-hurdle-529865.aspx",
+            "long_name": "insurancebusinessmag.com",
+            "img": "https://imgs.search.brave.com/wSqy0D5CYsTkoVvYpYyzSqvim_TavRxGYxAzncAes7s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2NlNGVmYjdh/YzAwNDJmMzQ2YTZm/M2QwZmJhODY3NGE1/NWYzYmRhNWY0NGFh/Mjg0NjA0ZGQyNGNk/Nzg0MTBiNC93d3cu/aW5zdXJhbmNlYnVz/aW5lc3NtYWcuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurancebusinessmag.com",
+            "hostname": "www.insurancebusinessmag.com",
+            "favicon": "https://imgs.search.brave.com/wSqy0D5CYsTkoVvYpYyzSqvim_TavRxGYxAzncAes7s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2NlNGVmYjdh/YzAwNDJmMzQ2YTZm/M2QwZmJhODY3NGE1/NWYzYmRhNWY0NGFh/Mjg0NjA0ZGQyNGNk/Nzg0MTBiNC93d3cu/aW5zdXJhbmNlYnVz/aW5lc3NtYWcuY29t/Lw",
+            "path": "  \u203a claims  \u203a massive florida state farm case over alleged patient brokering scheme clears early legal hurdle"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/2R7mNigC41WrAoaNa1RofaXRT5iLE7MFUj5lPBu8fco/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4t/cmVzLmtleW1lZGlh/LmNvbS9jbXMvaW1h/Z2VzL3VzLzAwMy8w/MzExXzYzODc4NTg4/MzE2NjQ2NzAwMi5w/bmc",
+            "original": "https://cdn-res.keymedia.com/cms/images/us/003/0311_638785883166467002.png",
+            "logo": false
+          },
+          "age": "March 26, 2025"
+        },
+        {
+          "title": "Sponsored: State Farm committed to Florida homeowners | West Orange Times & Observer",
+          "url": "https://www.orangeobserver.com/news/2025/aug/28/state-farm-committed-to-florida-homeowners/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "However, 2025 has brought some good news for Florida homeowners, Earlier this year, Gov. Ron DeSantis announced Citizens would reduce rates by an average of 5.6% throughout the state. The American Property Casualty Insurance Association attributed the reduction to legislative measures that addressed a variety of issues, such as attorney fees, assignment of benefits and more. State Farm currently is writing homeowners\u2019 insurance policies for homes built in 2009 or later, subject to eligibility.",
+          "page_age": "2025-08-28T15:00:00",
+          "profile": {
+            "name": "Orange Observer",
+            "url": "https://www.orangeobserver.com/news/2025/aug/28/state-farm-committed-to-florida-homeowners/",
+            "long_name": "orangeobserver.com",
+            "img": "https://imgs.search.brave.com/ZSQnI6i89zX8fzC0af3OS7ZppNutt6UDCkrCi28VZE0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTU2OGFhM2Rl/OTc1NDk1ZDVlZmU5/YTA4MDEzZjk4NDNj/NzBiMDE2YjQ2MmE5/ZmY0ZjA4NmJmZWIy/NDlkZjc3Zi93d3cu/b3Jhbmdlb2JzZXJ2/ZXIuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "orangeobserver.com",
+            "hostname": "www.orangeobserver.com",
+            "favicon": "https://imgs.search.brave.com/ZSQnI6i89zX8fzC0af3OS7ZppNutt6UDCkrCi28VZE0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTU2OGFhM2Rl/OTc1NDk1ZDVlZmU5/YTA4MDEzZjk4NDNj/NzBiMDE2YjQ2MmE5/ZmY0ZjA4NmJmZWIy/NDlkZjc3Zi93d3cu/b3Jhbmdlb2JzZXJ2/ZXIuY29tLw",
+            "path": "\u203a news  \u203a 2025  \u203a aug  \u203a 28  \u203a state-farm-committed-to-florida-homeowners"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/R0tgmFEoN9uXzjbEy9s5uNYqWgbzvKFISA4ra2K3Mro/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS55b3Vyb2JzZXJ2/ZXIuY29tL2ltZy9w/aG90b3MvMjAyNS8w/OC8yOC9GU19GZWF0/dXJlX1Bob3RvXzEx/MDB4ODI1X1N0YXRl/X0Zhcm1fMDgyODI1/X3I4NzB4NTgwLmpw/Zz8zY2Y0NWMxZmNk/MzVkN2M4ZmI1ZDc4/YWEwYTAwMTEzZGQz/Yzc4NDA4",
+            "original": "https://media.yourobserver.com/img/photos/2025/08/28/FS_Feature_Photo_1100x825_State_Farm_082825_r870x580.jpg?3cf45c1fcd35d7c8fb5d78aa0a00113dd3c78408",
+            "logo": false
+          },
+          "age": "August 28, 2025"
+        },
+        {
+          "title": "Is State Farm Good in Florida? 2025",
+          "url": "https://wallethub.com/answers/ci/is-state-farm-good-in-florida-1000344-2140785504/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Yes, State Farm is a good insurance company in Florida. State Farm has a 4.1/5 rating from WalletHub editors, as well as an impressive \u201cF\u201d rating from the Better Business Bureau and a decent score of from the National Association of Insurance ...",
+          "page_age": "2025-09-19T09:27:25",
+          "profile": {
+            "name": "WalletHub",
+            "url": "https://wallethub.com/answers/ci/is-state-farm-good-in-florida-1000344-2140785504/",
+            "long_name": "wallethub.com",
+            "img": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "wallethub.com",
+            "hostname": "wallethub.com",
+            "favicon": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw",
+            "path": "\u203a answers  \u203a ci  \u203a is-state-farm-good-in-florida-1000344-2140785504"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YnFsFD--_0DYDN63YU7RTh6E1ZINWtslBaGMBZrgzuI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbGV0aHViLmNv/bS9pbWFnZXMvd2gy/MDE1L2Fuc3dlcnMv/d2FsbGV0aHViLWFu/c3dlcnNfVjMwYjE2/NmZfLnBuZw",
+            "original": "https://cdn.wallethub.com/images/wh2015/answers/wallethub-answers_V30b166f_.png",
+            "logo": false
+          },
+          "age": "September 19, 2025"
+        },
+        {
+          "title": "State Farm Homeowners Insurance Review (2025) | U.S. News",
+          "url": "https://www.usnews.com/insurance/homeowners-insurance/state-farm",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm \u00b7 USAA \u00b7 Amica \u00b7 Allstate \u00b7 Auto-Owners \u00b7 Nationwide \u00b7 Progressive \u00b7 Liberty Mutual \u00b7 Farmers Insurance \u00b7 TravelersCompare QuotesSee Review \u00b7 Available \u00b7 Available In: Alabama \u00b7 Alaska \u00b7 Arizona \u00b7 Arkansas \u00b7 Colorado \u00b7 Connecticut \u00b7 Delaware \u00b7 District Of Columbia \u00b7 Florida \u00b7",
+          "page_age": "2025-11-05T20:40:00",
+          "profile": {
+            "name": "U.S. News",
+            "url": "https://www.usnews.com/insurance/homeowners-insurance/state-farm",
+            "long_name": "usnews.com",
+            "img": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "usnews.com",
+            "hostname": "www.usnews.com",
+            "favicon": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8",
+            "path": "\u203a insurance  \u203a homeowners-insurance  \u203a state-farm"
+          },
+          "age": "2 days ago"
+        },
+        {
+          "title": "State Farm auto insurer announces rate decrease for Florida policies",
+          "url": "https://www.palmbeachpost.com/story/business/finance/2025/10/31/state-farm-auto-insurer-rate-decrease-florida-policies/86984628007/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The changes have reduced the number of lawsuits policyholders have filed over claims disputes, and thus litigation expenses, State Farm officials said. Pay-by-the-mile car insurance: Should you get it and where? Here&#x27;s what to know \u00b7 \u201cWe agree with recent comments by the Florida governor and the Office of Insurance Regulation that the insurance market is stabilizing \u2026",
+          "page_age": "2025-10-31T15:08:31",
+          "profile": {
+            "name": "The Palm Beach Post",
+            "url": "https://www.palmbeachpost.com/story/business/finance/2025/10/31/state-farm-auto-insurer-rate-decrease-florida-policies/86984628007/",
+            "long_name": "palmbeachpost.com",
+            "img": "https://imgs.search.brave.com/4Mhe27QCREEm3ptcLtzM6YlqQ56ZJnHZHDU8v8zGSG0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWIyNGIwYzc2/MmUwZWI3YTgxMWY3/OWQwYjA2ZjgxYjk4/YjMxMDY0YjU4ZmE1/ZjFlZGE1ZDI3NjZh/YmRjYWMwNC93d3cu/cGFsbWJlYWNocG9z/dC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "palmbeachpost.com",
+            "hostname": "www.palmbeachpost.com",
+            "favicon": "https://imgs.search.brave.com/4Mhe27QCREEm3ptcLtzM6YlqQ56ZJnHZHDU8v8zGSG0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWIyNGIwYzc2/MmUwZWI3YTgxMWY3/OWQwYjA2ZjgxYjk4/YjMxMDY0YjU4ZmE1/ZjFlZGE1ZDI3NjZh/YmRjYWMwNC93d3cu/cGFsbWJlYWNocG9z/dC5jb20v",
+            "path": "\u203a story  \u203a business  \u203a finance  \u203a 2025  \u203a 10  \u203a 31  \u203a state-farm-auto-insurer-rate-decrease-florida-policies  \u203a 86984628007"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/HYeymhhAZ_Cj7CAzUaEDjBcQb-F2NAgUHgX77-rEKGs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Z2FubmV0dC1jZG4u/Y29tL2F1dGhvcmlu/Zy9hdXRob3Jpbmct/aW1hZ2VzLzIwMjUv/MTAvMjAvTlBQUC84/NjgwNjk1OTAwNy1p/bWctMDYwNjIyLWRh/bmdlcm91cy1pbnQt/MS0xLWctOTEwLWhw/LTYtcS0yLWwtMTgz/ODQ2OTg2Ny5KUEc_/YXV0bz13ZWJwJmNy/b3A9NTAzMSwyODMw/LHgwLHkwJmZvcm1h/dD1wanBnJndpZHRo/PTEyMDA",
+            "original": "https://www.gannett-cdn.com/authoring/authoring-images/2025/10/20/NPPP/86806959007-img-060622-dangerous-int-1-1-g-910-hp-6-q-2-l-1838469867.JPG?auto=webp&crop=5031,2830,x0,y0&format=pjpg&width=1200",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "State Farm files for 10% auto insurance rate cut in Florida | FOX 13 Tampa Bay",
+          "url": "https://www.fox13news.com/news/state-farm-files-10-auto-insurance-rate-cut-florida",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Florida drivers should be getting a rebate check from their auto insurance as State Farm files to cut their rates by 10% thanks to a Florida law aimed at preventing abuse and fraud in the legal system.",
+          "page_age": "2025-10-31T10:49:38",
+          "profile": {
+            "name": "FOX 13 Tampa Bay",
+            "url": "https://www.fox13news.com/news/state-farm-files-10-auto-insurance-rate-cut-florida",
+            "long_name": "fox13news.com",
+            "img": "https://imgs.search.brave.com/PC8dIFWFEXj1uOfrYlJ86oHIuP_vk6wgj5Mse-3y8wU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzY2MWYxNDQx/ZjVkNTBmZjU0YzQ4/NGZhNmNlMTczODE0/OGU5OTJjNjUwZmQ0/NTc1MTI3NjRjOTIz/MmY3YTcwOS93d3cu/Zm94MTNuZXdzLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "fox13news.com",
+            "hostname": "www.fox13news.com",
+            "favicon": "https://imgs.search.brave.com/PC8dIFWFEXj1uOfrYlJ86oHIuP_vk6wgj5Mse-3y8wU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzY2MWYxNDQx/ZjVkNTBmZjU0YzQ4/NGZhNmNlMTczODE0/OGU5OTJjNjUwZmQ0/NTc1MTI3NjRjOTIz/MmY3YTcwOS93d3cu/Zm94MTNuZXdzLmNv/bS8",
+            "path": "\u203a news  \u203a state-farm-files-10-auto-insurance-rate-cut-florida"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/t_Len5VO_BaHugLWyxoe_ZM-Rn0LxjiPEIR5FpqKdw4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuZm94MTNuZXdz/LmNvbS93d3cuZm94/MTNuZXdzLmNvbS9j/b250ZW50L3VwbG9h/ZHMvMjAyNS8xMC92/bGNzbmFwLTIwMjUt/MTAtMzEtMDZoMzVt/MzRzODQ3LmpwZw",
+            "original": "https://static.fox13news.com/www.fox13news.com/content/uploads/2025/10/vlcsnap-2025-10-31-06h35m34s847.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Don\u2019t Look Now, But Citizens Is No Longer the Largest Property Insurer in Florida",
+          "url": "https://www.insurancejournal.com/news/southeast/2025/11/03/846101.htm",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm held some 646,429 policies at the end of August, according to the latest information from Florida regulators.",
+          "page_age": "2025-11-05T14:38:33",
+          "profile": {
+            "name": "Insurance Journal",
+            "url": "https://www.insurancejournal.com/news/southeast/2025/11/03/846101.htm",
+            "long_name": "insurancejournal.com",
+            "img": "https://imgs.search.brave.com/Z2NMt-hrP7caeNIt4HG4jkmmzjPBLwRv6v1cRD5nBlI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTVlY2IxMmJk/NDNlOGY1YjM3NzIy/MTNlYWViNGMzNmNj/N2NiNzdmYzdkMjFl/YTZjMzdkOWEwNDEw/YzQwZDNkNS93d3cu/aW5zdXJhbmNlam91/cm5hbC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurancejournal.com",
+            "hostname": "www.insurancejournal.com",
+            "favicon": "https://imgs.search.brave.com/Z2NMt-hrP7caeNIt4HG4jkmmzjPBLwRv6v1cRD5nBlI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTVlY2IxMmJk/NDNlOGY1YjM3NzIy/MTNlYWViNGMzNmNj/N2NiNzdmYzdkMjFl/YTZjMzdkOWEwNDEw/YzQwZDNkNS93d3cu/aW5zdXJhbmNlam91/cm5hbC5jb20v",
+            "path": "\u203a news  \u203a southeast  \u203a 2025  \u203a 11  \u203a 03  \u203a 846101.htm"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/WEYwYa-tkB1ayOgegpWFUCCnTNJeWu1e2w82_eigYvc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmNlam91/cm5hbC5jb20vYXBw/L3VwbG9hZHMvMjAy/NS8xMS9GbG9yaWRh/LXdlbGNvbWUtc2ln/bi1BZG9iZS0xLmpw/ZWc",
+            "original": "https://www.insurancejournal.com/app/uploads/2025/11/Florida-welcome-sign-Adobe-1.jpeg",
+            "logo": false
+          },
+          "age": "2 days ago"
+        },
+        {
+          "title": "State Farm announces major 10% auto insurance rate drop in Florida, promising $400 average savings per vehicle | Mint",
+          "url": "https://www.livemint.com/us/trending/state-farm-to-reduce-florida-car-insurance-rates-by-10-joining-trend-of-falling-premiums-statewide-11761996873130.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm\u2019s auto premiums will fall by an average of 10% - if approved - resulting in about $400 in annual savings per vehicle. The move comes as part of a broader effort to stabilize Florida\u2019s insurance market, which has long been plagued by high costs and litigation expenses.",
+          "page_age": "2025-11-01T12:29:01",
+          "profile": {
+            "name": "Livemint",
+            "url": "https://www.livemint.com/us/trending/state-farm-to-reduce-florida-car-insurance-rates-by-10-joining-trend-of-falling-premiums-statewide-11761996873130.html",
+            "long_name": "livemint.com",
+            "img": "https://imgs.search.brave.com/4_SjXmOVg6ghTUrR-Jfkp_jUfFnA69V15ZVSoZgGLaM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvY2I4ZTJlOGVi/MTNmYmU4OGNhZGE1/NDQ0NmQyNDVjZTA0/YTAyYzNmYTdmZGU5/YmYxOWI2OTk1NmFm/NDY2NTJkMi93d3cu/bGl2ZW1pbnQuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "livemint.com",
+            "hostname": "www.livemint.com",
+            "favicon": "https://imgs.search.brave.com/4_SjXmOVg6ghTUrR-Jfkp_jUfFnA69V15ZVSoZgGLaM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvY2I4ZTJlOGVi/MTNmYmU4OGNhZGE1/NDQ0NmQyNDVjZTA0/YTAyYzNmYTdmZGU5/YmYxOWI2OTk1NmFm/NDY2NTJkMi93d3cu/bGl2ZW1pbnQuY29t/Lw",
+            "path": "  \u203a business news  \u203a us  \u203a trending"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/TQqEL8Poe_lk9o1cLe6HLXfyB8Y-ZRH8ZYHrNLWnBPg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bGl2ZW1pbnQuY29t/L2xtLWltZy9pbWcv/MjAyNS8xMS8wMS8x/NjAweDkwMC9VUy1Q/T0xJVElDUy1TSE9P/VElORy1LSVJLLTJf/MTc2MTk5NzM2MTg2/N18xNzYxOTk3MzY3/NTg1LmpwZw",
+            "original": "https://www.livemint.com/lm-img/img/2025/11/01/1600x900/US-POLITICS-SHOOTING-KIRK-2_1761997361867_1761997367585.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Why insurance companies are pulling out of California and Florida, and how to fix some of the underlying problems",
+          "url": "https://theconversation.com/why-insurance-companies-are-pulling-out-of-california-and-florida-and-how-to-fix-some-of-the-underlying-problems-207172",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "https://theconversation.com/why-insurance-companies-are-pulling-out-of-california-and-florida-and-how-to-fix-some-of-the-underlying-problems-207172 ... When the nation\u2019s No. 1 and No. 4 property and casualty insurance companies \u2013 State Farm and Allstate \u2013 confirmed that they would stop issuing new home insurance policies in California, it may have been a shock but shouldn\u2019t have been a surprise.",
+          "page_age": "2025-05-05T18:31:42",
+          "profile": {
+            "name": "The Conversation",
+            "url": "https://theconversation.com/why-insurance-companies-are-pulling-out-of-california-and-florida-and-how-to-fix-some-of-the-underlying-problems-207172",
+            "long_name": "theconversation.com",
+            "img": "https://imgs.search.brave.com/HLzEVIDPYPCYB0taygkeGnfLwITnzrl1_J9i2ZUbLho/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjRkODFmMjM4/YTM5YTJhMGY4MWNk/NjU3NTBlMmM5ZDM1/NTQ5YjNmNzI4N2Ex/MTdlNjViODAyM2Nj/YTNkMTY3ZS90aGVj/b252ZXJzYXRpb24u/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "theconversation.com",
+            "hostname": "theconversation.com",
+            "favicon": "https://imgs.search.brave.com/HLzEVIDPYPCYB0taygkeGnfLwITnzrl1_J9i2ZUbLho/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjRkODFmMjM4/YTM5YTJhMGY4MWNk/NjU3NTBlMmM5ZDM1/NTQ5YjNmNzI4N2Ex/MTdlNjViODAyM2Nj/YTNkMTY3ZS90aGVj/b252ZXJzYXRpb24u/Y29tLw",
+            "path": "\u203a why-insurance-companies-are-pulling-out-of-california-and-florida-and-how-to-fix-some-of-the-underlying-problems-207172"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/2chPS9uj217aOse1vRhzgrzMOg6gUokZo6vRy_0cTYM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudGhlY29udmVy/c2F0aW9uLmNvbS9m/aWxlcy81MzA0MzQv/b3JpZ2luYWwvZmls/ZS0yMDIzMDYwNi0x/Ny1ldHBjd2IuanBn/P2l4bGliPXJiLTQu/MS4wJmFtcDtyZWN0/PTkxJTJDMCUyQzE5/ODklMkM5OTMmYW1w/O3E9NDUmYW1wO2F1/dG89Zm9ybWF0JmFt/cDt3PTEzNTYmYW1w/O2g9NjY4JmFtcDtm/aXQ9Y3JvcA",
+            "original": "https://images.theconversation.com/files/530434/original/file-20230606-17-etpcwb.jpg?ixlib=rb-4.1.0&amp;rect=91%2C0%2C1989%2C993&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop",
+            "logo": false
+          },
+          "age": "May 5, 2025"
+        },
+        {
+          "title": "State Farm cuts Florida auto rates | Insurance Business America",
+          "url": "https://www.insurancebusinessmag.com/us/news/auto-motor/state-farm-cuts-florida-auto-rates-554894.aspx",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm, which held a 17.57% market share in Florida\u2019s private-passenger auto insurance market in 2024, does not plan to issue excess refunds despite the rate cuts.",
+          "page_age": "2025-10-30T15:36:00",
+          "profile": {
+            "name": "Insurance Business America",
+            "url": "https://www.insurancebusinessmag.com/us/news/auto-motor/state-farm-cuts-florida-auto-rates-554894.aspx",
+            "long_name": "insurancebusinessmag.com",
+            "img": "https://imgs.search.brave.com/wSqy0D5CYsTkoVvYpYyzSqvim_TavRxGYxAzncAes7s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2NlNGVmYjdh/YzAwNDJmMzQ2YTZm/M2QwZmJhODY3NGE1/NWYzYmRhNWY0NGFh/Mjg0NjA0ZGQyNGNk/Nzg0MTBiNC93d3cu/aW5zdXJhbmNlYnVz/aW5lc3NtYWcuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurancebusinessmag.com",
+            "hostname": "www.insurancebusinessmag.com",
+            "favicon": "https://imgs.search.brave.com/wSqy0D5CYsTkoVvYpYyzSqvim_TavRxGYxAzncAes7s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2NlNGVmYjdh/YzAwNDJmMzQ2YTZm/M2QwZmJhODY3NGE1/NWYzYmRhNWY0NGFh/Mjg0NjA0ZGQyNGNk/Nzg0MTBiNC93d3cu/aW5zdXJhbmNlYnVz/aW5lc3NtYWcuY29t/Lw",
+            "path": "  \u203a motor & fleet  \u203a state farm cuts florida auto rates"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/46elTrnEp-8TCKal-05m3ebkeT55_gW5FQFO0XnAP_Q/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4t/cmVzLmtleW1lZGlh/LmNvbS9jbXMvaW1h/Z2VzL3VzLzAwMy8w/MDMxXzYzODk3NDI2/NDI2ODgyNDEyNC5q/cGc",
+            "original": "https://cdn-res.keymedia.com/cms/images/us/003/0031_638974264268824124.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "State Farm slashes Florida auto insurance rates, lowering them an average of 20% since October 2024",
+          "url": "https://www.wptv.com/money/consumer/automotive/state-farm-slashes-florida-auto-insurance-rates-lowering-them-an-average-of-20-since-october-2024",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The insurer said it will continue to work toward further improvements in the marketplace on behalf of all of its Florida customers. The State Farm news follows Progressive&#x27;s announcement this month that its Florida auto policyholders will receive a credit in 2026 after the company reported third-quarter earnings of more than $2.5 billion.",
+          "page_age": "2025-10-31T17:27:17",
+          "profile": {
+            "name": "WPTV",
+            "url": "https://www.wptv.com/money/consumer/automotive/state-farm-slashes-florida-auto-insurance-rates-lowering-them-an-average-of-20-since-october-2024",
+            "long_name": "wptv.com",
+            "img": "https://imgs.search.brave.com/9CA2eHlc-e3mIQS5P9cYHLrWSZdahOJbAb-hxau6kxk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzQwOGE5ZTY0/NTUxNDU5YTdhNGM4/NmVlMWJmOWM0NDZi/N2U4NTAxNDE2MThj/MzViNTc1NDU0ZGM5/ZGNiZjUwNS93d3cu/d3B0di5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "wptv.com",
+            "hostname": "www.wptv.com",
+            "favicon": "https://imgs.search.brave.com/9CA2eHlc-e3mIQS5P9cYHLrWSZdahOJbAb-hxau6kxk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzQwOGE5ZTY0/NTUxNDU5YTdhNGM4/NmVlMWJmOWM0NDZi/N2U4NTAxNDE2MThj/MzViNTc1NDU0ZGM5/ZGNiZjUwNS93d3cu/d3B0di5jb20v",
+            "path": "\u203a money  \u203a consumer  \u203a automotive  \u203a state-farm-slashes-florida-auto-insurance-rates-lowering-them-an-average-of-20-since-october-2024"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/cGWbevhHtw_bTpx9DD6WRHgdCaVmqZtqiugOXK03WAU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9ld3Nj/cmlwcHMuYnJpZ2h0/c3BvdGNkbi5jb20v/ZGltczQvZGVmYXVs/dC8zMzRkNmQ4LzIx/NDc0ODM2NDcvc3Ry/aXAvdHJ1ZS9jcm9w/LzEyODB4NjcyKzAr/MjQvcmVzaXplLzEy/MDB4NjMwIS9xdWFs/aXR5LzkwLz91cmw9/aHR0cCUzQSUyRiUy/RmV3c2NyaXBwcy1i/cmlnaHRzcG90LnMz/LmFtYXpvbmF3cy5j/b20lMkY4MyUyRjYz/JTJGZjFkZDJjM2M0/ODhjODQ5NmM2YjJi/OWM0MGE2MiUyRnRy/YWZmaWMuanBn",
+            "original": "https://ewscripps.brightspotcdn.com/dims4/default/334d6d8/2147483647/strip/true/crop/1280x672+0+24/resize/1200x630!/quality/90/?url=http%3A%2F%2Fewscripps-brightspot.s3.amazonaws.com%2F83%2F63%2Ff1dd2c3c488c8496c6b2b9c40a62%2Ftraffic.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "State Farm homeowners insurance review 2025",
+          "url": "https://www.insurance.com/home-and-renters-insurance/carriers/state-farm-homeowners-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm home insurance is available in all 50 states and Washington, D.C., with one caveat: the company isn\u2019t writing new policies in California. Although many companies are pulling back in Florida, State Farm has stated it\u2019s committed to staying.",
+          "page_age": "2025-04-03T11:14:43",
+          "profile": {
+            "name": "Insurance.com",
+            "url": "https://www.insurance.com/home-and-renters-insurance/carriers/state-farm-homeowners-insurance",
+            "long_name": "insurance.com",
+            "img": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurance.com",
+            "hostname": "www.insurance.com",
+            "favicon": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8",
+            "path": "  \u203a home  \u203a home insurance  \u203a state farm homeowners insurance review 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/mrmhNyRrsgAKLHytgrM3UtXgPNsZj2C2r9vhaX0aI8s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmNlLmNv/bS9pbWFnZXMvaG9t/ZS9zaXRlLWxvZ28t/ZGFyay5zdmc",
+            "original": "https://www.insurance.com/images/home/site-logo-dark.svg",
+            "logo": true
+          },
+          "age": "April 3, 2025"
+        },
+        {
+          "title": "Latest State Farm rate cut has reduced Florida premiums by $1B | Florida | thecentersquare.com",
+          "url": "https://www.thecentersquare.com/florida/article_dd8d6efe-95b5-4d8d-84b0-b73dd08662c1.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "\u201cIt\u2019s the direct result of Florida\u2019s legislators and insurance regulators recognizing the impact of rising insurance costs \u2013 caused by over-litigation \u2013 and being willing to hear industry concerns and tackle the real problems behind the rising costs.\u201d \u00b7 Other states should follow the Florida model, Watts wrote.",
+          "page_age": "2025-11-03T14:09:00",
+          "profile": {
+            "name": "The Center Square",
+            "url": "https://www.thecentersquare.com/florida/article_dd8d6efe-95b5-4d8d-84b0-b73dd08662c1.html",
+            "long_name": "thecentersquare.com",
+            "img": "https://imgs.search.brave.com/ti8I6eXlxEzReUtgvlZcQg8n8hYmWAfYlqMeznkf7Ns/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjY0OGU1YTZj/YmNkNGE3NjE4MWIx/NjJhYmJiZDQ3M2Y4/ZWVlOTk1ZGY3YTli/N2M3YTI5MmI0ZGJh/ZjliNGI3Yy93d3cu/dGhlY2VudGVyc3F1/YXJlLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thecentersquare.com",
+            "hostname": "www.thecentersquare.com",
+            "favicon": "https://imgs.search.brave.com/ti8I6eXlxEzReUtgvlZcQg8n8hYmWAfYlqMeznkf7Ns/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjY0OGU1YTZj/YmNkNGE3NjE4MWIx/NjJhYmJiZDQ3M2Y4/ZWVlOTk1ZGY3YTli/N2M3YTI5MmI0ZGJh/ZjliNGI3Yy93d3cu/dGhlY2VudGVyc3F1/YXJlLmNvbS8",
+            "path": "\u203a florida  \u203a article_dd8d6efe-95b5-4d8d-84b0-b73dd08662c1.html"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/-6rKsF3pqTrT8eonCS-PPAXXlC3_R2W-gWK0ErVDsSs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9ibG94/aW1hZ2VzLm5ld3lv/cmsxLnZpcC50b3du/bmV3cy5jb20vdGhl/Y2VudGVyc3F1YXJl/LmNvbS9jb250ZW50/L3RuY21zL2Fzc2V0/cy92My9lZGl0b3Jp/YWwvYi84Ny9iODcy/OTRjYy1jNDdlLTQx/ZjUtYTUwNS05MjVi/YTk2NDQxNDkvNjhk/ZDdjMTkzNzM4OC5p/bWFnZS5qcGc_Y3Jv/cD0xMjAwJTJDNjMw/JTJDMCUyQzIy",
+            "original": "https://bloximages.newyork1.vip.townnews.com/thecentersquare.com/content/tncms/assets/v3/editorial/b/87/b87294cc-c47e-41f5-a505-925ba9644149/68dd7c1937388.image.jpg?crop=1200%2C630%2C0%2C22",
+            "logo": false
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "r/Insurance on Reddit: State Farm Trying to cancel my policy for doing what they want",
+          "url": "https://www.reddit.com/r/Insurance/comments/1mgtmhl/state_farm_trying_to_cancel_my_policy_for_doing/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "I have been a State Farm policyholder for nearly 30 years. Last year, they warned me that my roof needed replacement, otherwise they would cancel my policy in September, 2025. I replaced the roof that summer and sent State Farm the evidence.",
+          "page_age": "2025-08-03T20:28:30",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Insurance/comments/1mgtmhl/state_farm_trying_to_cancel_my_policy_for_doing/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/insurance  \u203a state farm trying to cancel my policy for doing what they want"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A5H_aQiEBuUODR0lNeU8iDfhrWUvO8oEmRGE_mcS_gM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVkZGl0c3RhdGlj/LmNvbS9pY29uLnBu/Zw",
+            "original": "https://www.redditstatic.com/icon.png",
+            "logo": true
+          },
+          "age": "August 3, 2025"
+        },
+        {
+          "title": "Best Homeowners Insurance in Florida 2025 | U.S. News",
+          "url": "https://www.usnews.com/insurance/homeowners-insurance/local/florida",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm does not offer online quotes in Florida, so you\u2019ll need to contact a local agent.",
+          "page_age": "2025-11-01T20:01:00",
+          "profile": {
+            "name": "U.S. News",
+            "url": "https://www.usnews.com/insurance/homeowners-insurance/local/florida",
+            "long_name": "usnews.com",
+            "img": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "usnews.com",
+            "hostname": "www.usnews.com",
+            "favicon": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8",
+            "path": "\u203a insurance  \u203a homeowners-insurance  \u203a local  \u203a florida"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/0LULXOpRyEmzPHsKqcDEtxzWiSDKuhJVDD4TNhJZe-U/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dXNuZXdzLmNvbS9k/aW1zNC9VU05FV1Mv/NGFjMjE3Ni8yMTQ3/NDgzNjQ3L3RodW1i/bmFpbC85NzB4NjQ3/L3F1YWxpdHkvODUv/P3VybD1odHRwcyUz/QSUyRiUyRnd3dy51/c25ld3MuY29tJTJG/Y21zbWVkaWElMkYy/ZSUyRjM5JTJGZDI3/NmViYzA0ZGUyYjk1/NmJhYTc0MTdlN2U2/NCUyRmdldHR5aW1h/Z2VzLTIyMDE5ODUx/MzMuanBn",
+            "original": "https://www.usnews.com/dims4/USNEWS/4ac2176/2147483647/thumbnail/970x647/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F2e%2F39%2Fd276ebc04de2b956baa7417e7e64%2Fgettyimages-2201985133.jpg",
+            "logo": false
+          },
+          "age": "6 days ago"
+        },
+        {
+          "title": "State Farm announces rate cuts for Florida drivers | WFLA",
+          "url": "https://www.wfla.com/news/florida/state-farm-announces-rate-cuts-for-florida-drivers/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "TAMPA, Fla. (WFLA) \u2014 State Farm announced Wednesday that it is rolling out lower auto rates for Florida drivers. After a rate cut was filed this week, State Farm said customers\u2019 premiums will\u2026",
+          "page_age": "2025-10-30T20:51:34",
+          "profile": {
+            "name": "WFLA",
+            "url": "https://www.wfla.com/news/florida/state-farm-announces-rate-cuts-for-florida-drivers/",
+            "long_name": "wfla.com",
+            "img": "https://imgs.search.brave.com/C-jvo4cbXOBxXb6weqkNnlSk_PPKzwhSl_KkmeYWTHo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDI1ODJjYjlj/NWUzOWIzNDJlY2Yz/Yjk0MjI3MWFmN2M1/ZmYzMjRjZmY5NWM4/Y2ZlYjIyMzFjMTEz/MTNmNTgxZi93d3cu/d2ZsYS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "wfla.com",
+            "hostname": "www.wfla.com",
+            "favicon": "https://imgs.search.brave.com/C-jvo4cbXOBxXb6weqkNnlSk_PPKzwhSl_KkmeYWTHo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDI1ODJjYjlj/NWUzOWIzNDJlY2Yz/Yjk0MjI3MWFmN2M1/ZmYzMjRjZmY5NWM4/Y2ZlYjIyMzFjMTEz/MTNmNTgxZi93d3cu/d2ZsYS5jb20v",
+            "path": "\u203a news  \u203a florida  \u203a state-farm-announces-rate-cuts-for-florida-drivers"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/jRHmNWOLM6zfBvwn487Ux0k_wtBcmaK7yQBH_SNVbsU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/d2ZsYS5jb20vd3At/Y29udGVudC91cGxv/YWRzL3NpdGVzLzcx/LzIwMjUvMTAvR2V0/dHlJbWFnZXMtMjI0/MjA1Mzg1OC1lMTc2/MTg0MTM4NjIwMS5q/cGc",
+            "original": "https://www.wfla.com/wp-content/uploads/sites/71/2025/10/GettyImages-2242053858-e1761841386201.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Auto Insurance Rebates Coming for Florida Drivers as State Farm Files for 10% Rate Cut - SSBCrack News",
+          "url": "https://news.ssbcrack.com/auto-insurance-rebates-coming-for-florida-drivers-as-state-farm-files-for-10-rate-cut/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "This significant move comes in light of a new Florida law designed to address abuse and fraud within the legal framework, ultimately benefiting policyholders. If the proposed rate cut is approved, it will take effect in early 2026, providing additional savings for approximately two million drivers statewide. This follows a larger trend of price cuts, as State Farm has already decreased its overall auto premiums by more than 20% since October 2024, amounting to over $1 billion in annual savings for Floridians.",
+          "page_age": "2025-11-01T09:33:30",
+          "profile": {
+            "name": "SSBCrack",
+            "url": "https://news.ssbcrack.com/auto-insurance-rebates-coming-for-florida-drivers-as-state-farm-files-for-10-rate-cut/",
+            "long_name": "news.ssbcrack.com",
+            "img": "https://imgs.search.brave.com/1Hp71__HFUCTwP1K1iHkDRvzaT2M9u0IJatrMuzmO9E/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDllOWVmZGRm/ZTliM2NkOTI2OGQy/MWNmMjZkYTVkZGMz/OGE0ZmQzOWZiNDNl/NzlkZjFjZDYyZjA3/NTFiYWQ0Ny9uZXdz/LnNzYmNyYWNrLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "news.ssbcrack.com",
+            "hostname": "news.ssbcrack.com",
+            "favicon": "https://imgs.search.brave.com/1Hp71__HFUCTwP1K1iHkDRvzaT2M9u0IJatrMuzmO9E/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDllOWVmZGRm/ZTliM2NkOTI2OGQy/MWNmMjZkYTVkZGMz/OGE0ZmQzOWZiNDNl/NzlkZjFjZDYyZjA3/NTFiYWQ0Ny9uZXdz/LnNzYmNyYWNrLmNv/bS8",
+            "path": "  \u203a home  \u203a trending  \u203a auto insurance rebates coming for florida drivers as state farm files for 10% rate cut"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/19hwVMpDUCthLdE3XIeApvx1AiB1CUrS75qmebKX4_w/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9uZXdz/LnNzYmNyYWNrLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/NS8xMS9BdXRvLUlu/c3VyYW5jZS1SZWJh/dGVzLUNvbWluZy1m/b3ItRmxvcmlkYS1E/cml2ZXJzLWFzLVN0/YXRlLUZhcm0uanBn",
+            "original": "https://news.ssbcrack.com/wp-content/uploads/2025/11/Auto-Insurance-Rebates-Coming-for-Florida-Drivers-as-State-Farm.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

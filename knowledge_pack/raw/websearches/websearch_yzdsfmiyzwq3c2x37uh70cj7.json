@@ -1,0 +1,97 @@
+{
+  "websearch_id": "websearch_yzdsfmiyzwq3c2x37uh70cj7",
+  "search_id": "search_p8w88kk4wskgby6dlzz567o4",
+  "timestamp": "2025-11-07T12:29:37.333903",
+  "startedAt": "2025-11-07T12:29:37.333903",
+  "completedAt": "2025-11-07T12:29:39.228221",
+  "durationSeconds": 1.89,
+  "urlsDiscoveredCount": 1,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"insurance broker commission\" GEICO",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"insurance broker commission\" GEICO",
+      "show_strict_warning": false,
+      "cleaned": "insurance broker commission GEICO",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "insurance broker commission GEICO"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Understanding Insurance Broker Commission Structure Basics",
+          "url": "https://www.cgaa.org/article/insurance-broker-commission-structure",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Learn the basics of insurance broker commission structure, including types, rates, and how they impact your premiums and policy choices.",
+          "page_age": "2024-12-21T12:52:24",
+          "profile": {
+            "name": "CGAA",
+            "url": "https://www.cgaa.org/article/insurance-broker-commission-structure",
+            "long_name": "cgaa.org",
+            "img": "https://imgs.search.brave.com/JGYb7UMkkO9GWjH7kX-sNVYkWoFFiifhiQbeTs0f-jI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjU0NjQxNWY2/M2I0NzI3MzVkMzVm/NGQxNGNjMzNlM2Yz/YWY2Y2Y1NjFmMjI5/ZTRmNDNkOWUxMDFj/MmQwODc5NS93d3cu/Y2dhYS5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cgaa.org",
+            "hostname": "www.cgaa.org",
+            "favicon": "https://imgs.search.brave.com/JGYb7UMkkO9GWjH7kX-sNVYkWoFFiifhiQbeTs0f-jI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjU0NjQxNWY2/M2I0NzI3MzVkMzVm/NGQxNGNjMzNlM2Yz/YWY2Y2Y1NjFmMjI5/ZTRmNDNkOWUxMDFj/MmQwODc5NS93d3cu/Y2dhYS5vcmcv",
+            "path": "  \u203a insurance broker  \u203a understanding insurance broker commission structure basics"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wwbYo3D5F3SUYkMm6h2qeyH3sfxuuYyfFDX8S1zPaJ4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvODI5/MjgwNy9wZXhlbHMt/cGhvdG8tODI5Mjgw/Ny5qcGVn",
+            "original": "https://images.pexels.com/photos/8292807/pexels-photo-8292807.jpeg",
+            "logo": false
+          },
+          "age": "December 21, 2024"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

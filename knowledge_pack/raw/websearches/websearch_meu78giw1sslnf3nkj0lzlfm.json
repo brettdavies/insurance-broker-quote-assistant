@@ -1,0 +1,97 @@
+{
+  "websearch_id": "websearch_meu78giw1sslnf3nkj0lzlfm",
+  "search_id": "search_f7vrxnaf7g89v4bhz3tu3ixf",
+  "timestamp": "2025-11-07T12:33:03.150477",
+  "startedAt": "2025-11-07T12:33:03.150477",
+  "completedAt": "2025-11-07T12:33:05.150673",
+  "durationSeconds": 2.0,
+  "urlsDiscoveredCount": 1,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"mandatory notices\" insurance California",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"mandatory notices\" insurance California",
+      "show_strict_warning": false,
+      "cleaned": "mandatory notices insurance California",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "mandatory notices insurance California"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "California Employee Benefits Requirements Employers Must Follow - LegalClarity",
+          "url": "https://legalclarity.org/california-employee-benefits-requirements-employers-must-follow/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Employers must track accrued and used sick leave and display mandatory notices informing employees of their rights. Retaliation against workers for taking leave is prohibited, and employees can file complaints with the California Labor Commissioner ...",
+          "page_age": "2025-03-07T04:26:17",
+          "profile": {
+            "name": "LegalClarity",
+            "url": "https://legalclarity.org/california-employee-benefits-requirements-employers-must-follow/",
+            "long_name": "legalclarity.org",
+            "img": "https://imgs.search.brave.com/J9MxGTdj5fiLFGToourtQD6PyqQtUVTRcL8IxQbJOmI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDI3NjU2OGJk/ZjQ4NWI0M2I2M2Fi/OTM5NTgyNTY4ODNh/YmZmYTJiYWQ5Mzlh/YWU1ODI5NTg0MmJi/Y2E1MWI0NS9sZWdh/bGNsYXJpdHkub3Jn/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "legalclarity.org",
+            "hostname": "legalclarity.org",
+            "favicon": "https://imgs.search.brave.com/J9MxGTdj5fiLFGToourtQD6PyqQtUVTRcL8IxQbJOmI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDI3NjU2OGJk/ZjQ4NWI0M2I2M2Fi/OTM5NTgyNTY4ODNh/YmZmYTJiYWQ5Mzlh/YWU1ODI5NTg0MmJi/Y2E1MWI0NS9sZWdh/bGNsYXJpdHkub3Jn/Lw",
+            "path": "\u203a california-employee-benefits-requirements-employers-must-follow"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/T5g8lzaXbMQL8j3Auak1mZZI9PyxufWZHirtPhrfuqY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9sZWdh/bGNsYXJpdHkub3Jn/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI0/LzA5L2xlZ2FsY2xh/cml0eWkucG5n",
+            "original": "https://legalclarity.org/wp-content/uploads/2024/09/legalclarityi.png",
+            "logo": false
+          },
+          "age": "March 7, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

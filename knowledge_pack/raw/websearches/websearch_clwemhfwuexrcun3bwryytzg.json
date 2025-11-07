@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_clwemhfwuexrcun3bwryytzg",
+  "search_id": "search_khez4k7seizfyb58rzaaoutz",
+  "timestamp": "2025-11-07T12:20:49.640566",
+  "startedAt": "2025-11-07T12:20:49.640566",
+  "completedAt": "2025-11-07T12:20:51.652090",
+  "durationSeconds": 2.01,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"Progressive\" site:tdi.texas.gov admitted carriers",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"Progressive\" site:tdi.texas.gov admitted carriers",
+      "show_strict_warning": false,
+      "cleaned": "Progressive admitted carriers",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "Progressive admitted carriers",
+        "sites": [
+          "tdi.texas.gov"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

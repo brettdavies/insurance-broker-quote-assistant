@@ -1,0 +1,803 @@
+{
+  "websearch_id": "websearch_z7u7zee1p7pfgxm58fl3lzaq",
+  "search_id": "search_j0o4lpdt9o1pmfq4y3577g5c",
+  "timestamp": "2025-11-07T12:31:13.322301",
+  "startedAt": "2025-11-07T12:31:13.322301",
+  "completedAt": "2025-11-07T12:31:15.480826",
+  "durationSeconds": 2.16,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:progressive.com specialty coverage",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:progressive.com specialty coverage",
+      "show_strict_warning": false,
+      "cleaned": "specialty coverage",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "specialty coverage",
+        "sites": [
+          "progressive.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "What Is Bicycle Insurance? | Progressive",
+          "url": "https://www.progressive.com/answers/bicycle-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Bicycle insurance is a specialty policy that covers you for injuries and property damage you cause while riding your bike. It can also pay to repair or replace your bike if it&#x27;s lost, stolen, or damaged if you carry comprehensive and collision coverages. You may also have the option to buy additional coverage for roadside assistance (for flat tires, mechanical issues, etc.) and personal belongings that are lost or damaged while using your bike.",
+          "page_age": "2025-02-21T18:09:12",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/bicycle-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a motorcycle insurance information  \u203a what is bicycle insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/UHGEAmU8dxZmR72HBc7E0JmKBouhGc5g6VB2oaLUVQo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDc2MDk0YmIy/MDM2Nzk4NTcvNjBl/NjBhNjhjOGUwMWEz/MDEzZTYwYjk2L2Jp/Y3ljbGUtaW5zdXJh/bmNlLnBuZw",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt76094bb203679857/60e60a68c8e01a3013e60b96/bicycle-insurance.png",
+            "logo": false
+          },
+          "age": "February 21, 2025"
+        },
+        {
+          "title": "Insurance for Sports, Exotic, & Luxury Cars | Progressive",
+          "url": "https://www.progressive.com/answers/insuring-sports-exotic-cars/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If your ride is worth more than that, you may want to consider a specialty insurer. Having trouble getting standard auto insurance for your luxury vehicle? If it&#x27;s a classic car or collectible and you don&#x27;t use it as your primary vehicle, you might be able to get coverage through classic car ...",
+          "page_age": "2025-01-08T19:40:54",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/insuring-sports-exotic-cars/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a car insurance information  \u203a sports car and exotic car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/TNV1_3m5utNdeH81Rfd3za4WcAivIuxc_g-ndyZE2Bc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDAyNWIwOTcx/YjY5Yzg5MTQvNjBl/NjBhZGZlN2E4MGYz/YzJhODZhNTU1L2lu/c3VyaW5nLXNwb3J0/cy1leG90aWMtY2Fy/cy5wbmc",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt025b0971b69c8914/60e60adfe7a80f3c2a86a555/insuring-sports-exotic-cars.png",
+            "logo": false
+          },
+          "age": "January 8, 2025"
+        },
+        {
+          "title": "Second Car Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/second-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "And if you have a classic car, a classic car insurance policy can provide specialized coverages that aren&#x27;t available with standard auto insurance.",
+          "page_age": "2025-01-14T19:50:57",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/second-car-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a car insurance information  \u203a second car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GdwbouY_cxSXP5vVCIgsQqruv_TtOmVy_51CJprTGTg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvc2hh/cmUtb3BlbmdyYXBo/LTEyMDAucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/share-opengraph-1200.png",
+            "logo": false
+          },
+          "age": "January 14, 2025"
+        },
+        {
+          "title": "What is comprehensive auto insurance coverage?",
+          "url": "https://www.progressive.com/answers/comprehensive-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Comprehensive coverage is an optional coverage. Though it&#x27;s optional, auto lenders may require you to carry comprehensive when leasing or financing a vehicle. It can cover damage from fire, hail, vandalism, theft, or collisions with animals, ...",
+          "page_age": "2025-01-10T21:33:16",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/comprehensive-car-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a car insurance information  \u203a what is comprehensive auto insurance coverage?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "January 10, 2025"
+        },
+        {
+          "title": "What Is Medical Payments Coverage? | Progressive",
+          "url": "https://www.progressive.com/answers/medical-payments-coverage/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Medical payments coverage (MedPay) helps cover your or your passengers&#x27; medical and funeral expenses resulting from a car accident, no matter who is at fault.",
+          "page_age": "2025-01-14T19:22:19",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/medical-payments-coverage/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a car insurance information  \u203a what is medical payments coverage?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "January 14, 2025"
+        },
+        {
+          "title": "Comprehensive Car Insurance Deductibles | Progressive",
+          "url": "https://www.progressive.com/answers/comprehensive-auto-deductibles/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Comprehensive coverage, which protects your car from damage caused by unexpected events, includes a deductible that applies every time you file a comprehensive claim.",
+          "page_age": "2025-01-10T20:10:58",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/comprehensive-auto-deductibles/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a car insurance information  \u203a what is a comprehensive car insurance deductible?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GdwbouY_cxSXP5vVCIgsQqruv_TtOmVy_51CJprTGTg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvc2hh/cmUtb3BlbmdyYXBo/LTEyMDAucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/share-opengraph-1200.png",
+            "logo": false
+          },
+          "age": "January 10, 2025"
+        },
+        {
+          "title": "Life Insurance for Disabled Adults | Progressive",
+          "url": "https://www.progressive.com/answers/life-insurance-disabled-adults/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "There&#x27;s no separate life insurance for a disabled person \u2014 you&#x27;ll simply decide on the best policy type and coverage amount for your needs and apply. Keep in mind that for traditional life insurance types, your overall health and life expectancy will be factored into your eligibility and your rate.",
+          "page_age": "2025-02-03T19:30:04",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/life-insurance-disabled-adults/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a life insurance information  \u203a life insurance for disabled adults"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "February 3, 2025"
+        },
+        {
+          "title": "What Is Travel Insurance Medical Coverage? | Progressive",
+          "url": "https://www.progressive.com/answers/travel-insurance-medical-coverage/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Comprehensive travel insurance: A comprehensive travel insurance plan often includes travel medical coverage. If you experience an unexpected illness or injury during your trip, you may file a claim for covered medical and dental expenses. The policy may also offer coverage for the following if you experience a covered medical issue: trip cancellation or interruption, emergency evacuation, and accidental death and dismemberment.",
+          "page_age": "2025-05-14T11:43:28",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/travel-insurance-medical-coverage/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a travel insurance information  \u203a what is travel medical insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "May 14, 2025"
+        },
+        {
+          "title": "What Is Other Structures Coverage? | Progressive",
+          "url": "https://www.progressive.com/answers/other-structures-coverage/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Coverage B, also known as other structures insurance coverage, is the part of your homeowners policy that protects structures on your property not physically connected to your home, such as a detached garage, storage shed, or gazebo. Your other structures coverage limit is typically set at 10% of your policy&#x27;s dwelling coverage, but this can vary by insurer.",
+          "page_age": "2025-08-25T17:51:16",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/other-structures-coverage/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a home insurance information  \u203a what is other structures coverage?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GdwbouY_cxSXP5vVCIgsQqruv_TtOmVy_51CJprTGTg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvc2hh/cmUtb3BlbmdyYXBo/LTEyMDAucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/share-opengraph-1200.png",
+            "logo": false
+          },
+          "age": "August 25, 2025"
+        },
+        {
+          "title": "Insurance Policies: Which Kind Do You Need? | Progressive",
+          "url": "https://www.progressive.com/answers/insurance-policies/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Your policy will cover specific people, property or vehicles (if applicable), and circumstances, depending on your coverages. How each insurance policy works will be detailed in the insurance declarations page or the terms and conditions provided ...",
+          "page_age": "2025-05-28T16:02:51",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/insurance-policies/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a general insurance topics  \u203a what is an insurance policy?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GdwbouY_cxSXP5vVCIgsQqruv_TtOmVy_51CJprTGTg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvc2hh/cmUtb3BlbmdyYXBo/LTEyMDAucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/share-opengraph-1200.png",
+            "logo": false
+          },
+          "age": "May 28, 2025"
+        },
+        {
+          "title": "Named Perils vs. All Perils Coverage | Progressive",
+          "url": "https://www.progressive.com/answers/named-peril-vs-all-peril/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Coverage for \u201copen perils\u201d\u2014 and similar terms such as &quot;all perils,&quot; &quot;all risk,&quot; or &quot;special perils,&quot; coverage \u2014 means that damage or loss from all potential perils may be covered unless specifically excluded in the insurance policy.",
+          "page_age": "2025-01-10T18:09:05",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/named-peril-vs-all-peril/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a home insurance information  \u203a what's the difference between named perils vs. open perils coverage?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "January 10, 2025"
+        },
+        {
+          "title": "Aftermarket Parts & Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/aftermarket-parts-and-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "At Progressive, OEM parts coverage is offered for motorcycles but not for cars.",
+          "page_age": "2025-01-23T19:34:32",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/aftermarket-parts-and-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a car insurance information  \u203a how do aftermarket parts work with insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "January 23, 2025"
+        },
+        {
+          "title": "What Is Personal Liability Insurance Coverage? | Progressive",
+          "url": "https://www.progressive.com/answers/personal-liability-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Personal liability coverage, sometimes referred to as personal liability insurance, protects you financially if you&#x27;re responsible for damages or injuries to others. This protection extends to household relatives, so if your child accidentally ...",
+          "page_age": "2025-01-08T19:23:07",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/personal-liability-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a home insurance information  \u203a what is personal liability coverage?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Ze5WMmJhijSYyTGRg20FLkU_RJn8Hzeg1pAGl_3H-KU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGMyN2ZiZGI1/Mzg2M2ViZTIvNjFh/ZTdhOTNjZjBkOTMx/ZTU5NDJiMWQ4L2Zh/Y2Vib29rX29wZW4t/Z3JhcGhfcGVyc29u/YWwtbGlhYmlsaXR5/LWluc3VyYW5jZS5w/bmc",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltc27fbdb53863ebe2/61ae7a93cf0d931e5942b1d8/facebook_open-graph_personal-liability-insurance.png",
+            "logo": false
+          },
+          "age": "January 8, 2025"
+        },
+        {
+          "title": "Types of Car Insurance Coverages | Progressive",
+          "url": "https://www.progressive.com/answers/types-of-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Learn what car insurance covers, the different car insurance coverages you may be able to add to your auto policy, and what&#x27;s required vs. optional.",
+          "page_age": "2025-08-05T16:22:22",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/types-of-car-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a car insurance information  \u203a types of car insurance coverages"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GdwbouY_cxSXP5vVCIgsQqruv_TtOmVy_51CJprTGTg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvc2hh/cmUtb3BlbmdyYXBo/LTEyMDAucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/share-opengraph-1200.png",
+            "logo": false
+          },
+          "age": "August 5, 2025"
+        },
+        {
+          "title": "What Is Equipment Breakdown Coverage? | Progressive",
+          "url": "https://www.progressive.com/answers/equipment-breakdown-coverage/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Equipment breakdown coverage is an optional endorsement that may be added to certain homeowners insurance policies to protect against the cost of repairing or replacing appliances and systems if they break down due to certain uncontrollable circumstances.",
+          "page_age": "2025-06-25T13:00:33",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/equipment-breakdown-coverage/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a home insurance information  \u203a what is equipment breakdown coverage on a homeowners policy?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "June 25, 2025"
+        },
+        {
+          "title": "RV Comprehensive and Collision Coverages | Progressive",
+          "url": "https://www.progressive.com/answers/rv-collision-comprehensive-coverage/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Comprehensive and collision are ... to your RV. Comprehensive protects against events outside your control: theft, vandalism, fire, glass breakage, collisions with animals, and weather-related issues....",
+          "page_age": "2025-01-16T19:02:00",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/rv-collision-comprehensive-coverage/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a rv insurance information  \u203a what is rv comprehensive and collision coverage?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "January 16, 2025"
+        },
+        {
+          "title": "Full Coverage Motorcycle Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/full-coverage-motorcycle-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Most states require you to carry liability coverage before you can legally ride your motorcycle. Lender and lease agreements typically mandate comprehensive and collision coverages \u2014 which they may refer to as \u201cfull coverage\u201d in order to protect against damage to your motorcycle.",
+          "page_age": "2025-01-15T19:47:35",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/full-coverage-motorcycle-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a motorcycle insurance information  \u203a what is full coverage motorcycle insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "January 15, 2025"
+        },
+        {
+          "title": "Rental Car Reimbursement Coverage | Progressive",
+          "url": "https://www.progressive.com/answers/rental-car-reimbursement-coverage/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Rental reimbursement coverage is an optional coverage that may cover the cost of a rental car if your vehicle is damaged in a covered accident and can&#x27;t be driven. To add rental reimbursement coverage to your policy, you typically need to carry comprehensive and collision coverage as well.",
+          "page_age": "2025-04-11T18:46:11",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/rental-car-reimbursement-coverage/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a car insurance information  \u203a what is rental reimbursement coverage?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "April 11, 2025"
+        },
+        {
+          "title": "When to Drop \"Full Coverage\" Car Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/when-to-drop-comprehensive-and-collision/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Your vehicle isn&#x27;t currently being driven: Collision coverage isn&#x27;t necessary if you never take the car out on the road. While your car is garaged or kept in storage, comprehensive coverage can protect your vehicle against theft, vandalism, ...",
+          "page_age": "2025-02-03T19:06:32",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/when-to-drop-comprehensive-and-collision/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a car insurance information  \u203a when should you drop comprehensive and collision coverage?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "February 3, 2025"
+        },
+        {
+          "title": "How Much Car Insurance Do I Need? | Progressive",
+          "url": "https://www.progressive.com/answers/how-much-car-insurance-do-i-need/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Learn how much car insurance you need to protect yourself on the road, from auto liability coverage to extras like collision and rideshare insurance.",
+          "page_age": "2025-07-11T21:20:47",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/how-much-car-insurance-do-i-need/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a car insurance information  \u203a how much car insurance do i need?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/HUjU-TVVo5-nm4_LwaF14uhMFBUqsHZBQk29vuRAxFw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGMwNWRiMGVm/M2QxODI4NGUvNjBj/OGYyNmIwZWNlMDI1/NTg4OGQ3NmMzL2hv/dy1tdWNoLWNhci1p/bnN1cmFuY2UtZG8t/aS1uZWVkLnBuZw",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltc05db0ef3d18284e/60c8f26b0ece0255888d76c3/how-much-car-insurance-do-i-need.png",
+            "logo": false
+          },
+          "age": "July 11, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

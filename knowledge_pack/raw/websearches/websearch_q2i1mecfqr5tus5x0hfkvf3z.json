@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_q2i1mecfqr5tus5x0hfkvf3z",
+  "search_id": "search_rtemjn232mbk5nilo2e38pzp",
+  "timestamp": "2025-11-07T12:32:12.823247",
+  "startedAt": "2025-11-07T12:32:12.823247",
+  "completedAt": "2025-11-07T12:32:14.676150",
+  "durationSeconds": 1.85,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:tdi.texas.gov \"proof of financial responsibility\"",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:tdi.texas.gov \"proof of financial responsibility\"",
+      "show_strict_warning": false,
+      "cleaned": "proof of financial responsibility",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "proof of financial responsibility",
+        "sites": [
+          "tdi.texas.gov"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

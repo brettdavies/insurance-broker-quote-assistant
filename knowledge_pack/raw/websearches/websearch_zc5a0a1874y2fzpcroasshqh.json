@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_zc5a0a1874y2fzpcroasshqh",
+  "search_id": "search_dxwb5si4nvvjbisz56pr9yei",
+  "timestamp": "2025-11-07T12:30:39.237910",
+  "startedAt": "2025-11-07T12:30:39.237910",
+  "completedAt": "2025-11-07T12:30:40.890570",
+  "durationSeconds": 1.65,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:progressive.com/umbrella",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:progressive.com/umbrella",
+      "show_strict_warning": false,
+      "cleaned": "progressive.com/umbrella",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "progressive.com/umbrella",
+        "sites": [
+          "progressive.com/umbrella"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

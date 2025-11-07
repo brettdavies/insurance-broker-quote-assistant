@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_k2ibqqma0xluwq0m9i5sijuw",
+  "search_id": "search_azlzaspfdsz3txfd9aveic6z",
+  "timestamp": "2025-11-07T12:32:51.760855",
+  "startedAt": "2025-11-07T12:32:51.760855",
+  "completedAt": "2025-11-07T12:32:53.417672",
+  "durationSeconds": 1.66,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:illinois.gov/insurance advertising",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:illinois.gov/insurance advertising",
+      "show_strict_warning": false,
+      "cleaned": "advertising",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "advertising",
+        "sites": [
+          "illinois.gov/insurance"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

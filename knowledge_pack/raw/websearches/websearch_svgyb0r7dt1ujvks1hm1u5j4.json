@@ -1,0 +1,803 @@
+{
+  "websearch_id": "websearch_svgyb0r7dt1ujvks1hm1u5j4",
+  "search_id": "search_l6lbjoeul92e8b4o9919w3mc",
+  "timestamp": "2025-11-07T12:34:25.851019",
+  "startedAt": "2025-11-07T12:34:25.851019",
+  "completedAt": "2025-11-07T12:34:27.733082",
+  "durationSeconds": 1.88,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:valuepenguin.com State Farm coverage",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:valuepenguin.com State Farm coverage",
+      "show_strict_warning": false,
+      "cleaned": "State Farm coverage",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "State Farm coverage",
+        "sites": [
+          "valuepenguin.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "State Farm Medicare Supplement Review: Good Service, but Rates Vary - ValuePenguin",
+          "url": "https://www.valuepenguin.com/state-farm-medicare-supplement-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Plan G is the best Medigap plan for most people, unless you became eligible for Medicare before 2020. And State Farm has cheap rates for Plan G in many states. Plan F has more coverage if you qualify, but State Farm&#x27;s Plan F is expensive.",
+          "page_age": "2025-07-11T17:34:59",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/state-farm-medicare-supplement-review",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a state-farm-medicare-supplement-review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ZT0CztgVNLSSmAo2JD0h90f_khLlKJsRpIVVVGDqnco/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvY19saW1p/dCxkcHJfMS4wLGZf/YXV0byxoXzE2MDAs/cV9hdXRvLHdfMTYw/MC9yZWZlcnJhbF9s/b2dvcy91cy9pbnN1/cmFuY2Uvc3RhdGUt/ZmFybS0z",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/c_limit,dpr_1.0,f_auto,h_1600,q_auto,w_1600/referral_logos/us/insurance/state-farm-3",
+            "logo": true
+          },
+          "age": "July 11, 2025"
+        },
+        {
+          "title": "AAA vs. State Farm: Car Insurance Quotes and Coverage - ValuePenguin",
+          "url": "https://www.valuepenguin.com/compare-aaa-vs-state-farm-car-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm offers cheaper auto insurance rates than AAA for most drivers. A full coverage policy from State Farm costs around $124 per month. That&#x27;s less than half the cost of a policy from AAA.",
+          "page_age": "2025-07-09T17:34:19",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/compare-aaa-vs-state-farm-car-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a auto insurance  \u203a aaa vs. state farm: car insurance quotes and coverage"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A5QWtwo2Ob80AfzwtAASaeE2UZl4HBm-dVOJ3-4uWzk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2F1dG8taW5z/dXJhbmNlL3Rha2lu/Zy1vbmxpbmUtY291/cnNlX3JlNGtpcw",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/auto-insurance/taking-online-course_re4kis",
+            "logo": false
+          },
+          "age": "July 9, 2025"
+        },
+        {
+          "title": "Compare State Farm vs Geico, Progressive, Allstate, Farmers - ValuePenguin",
+          "url": "https://www.valuepenguin.com/state-farm-vs-geico-vs-allstate-vs-progressive-vs-farmers-car-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm is typically cheaper than other major insurance companies. At $134 per month, full coverage car insurance from State Farm costs $39 per month less than the second-cheapest major company, Progressive.",
+          "page_age": "2025-07-22T18:00:43",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/state-farm-vs-geico-vs-allstate-vs-progressive-vs-farmers-car-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a auto insurance  \u203a comparing state farm vs. geico vs. progressive vs. allstate vs. farmers"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ZjW5X9SL92LPnN_VceWvaUvIpjpMasAXmgu2LoZb-C0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2F1dG8taW5z/dXJhbmNlL2ZhbWls/eS1jYXItdHJpcF9h/b2Voa3I",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/auto-insurance/family-car-trip_aoehkr",
+            "logo": false
+          },
+          "age": "July 22, 2025"
+        },
+        {
+          "title": "Free Car Insurance Calculator: Instant Cost Estimates - ValuePenguin",
+          "url": "https://www.valuepenguin.com/auto-insurance/estimate-car-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Your location helps calculate how much you&#x27;ll pay and how much coverage you need. Compare your estimate to the national average of $69 to $175 per month. State Farm is the cheapest national car insurance company.",
+          "page_age": "2025-07-21T15:04:20",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/auto-insurance/estimate-car-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a auto insurance  \u203a car insurance calculator: estimate your car insurance cost"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/T3tOo8cib3wBpe4U8VG4aRzstMGCgV5_5yewtqdkSLg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2Nhci1pbnN1/cmFuY2UtY2RuX2ds/eGgzZg",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/car-insurance-cdn_glxh3f",
+            "logo": false
+          },
+          "age": "July 21, 2025"
+        },
+        {
+          "title": "How to Get Same-Day Car Insurance - ValuePenguin",
+          "url": "https://www.valuepenguin.com/same-day-car-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Lots of larger, affordable companies, like State Farm, American Family and Geico offer same-day insurance. On the other hand, smaller insurance companies are more likely to ask you to call one of their agents or go into an office to secure a policy. ... You can get a quote and buy car insurance online immediately from many of the largest and most affordable insurance companies. And you can often buy coverage ...",
+          "page_age": "2025-07-08T19:17:50",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/same-day-car-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a same-day-car-insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/RJfZyY3VD83lyyE6wEJ2b6y44hiL3aydXJJLMz9aahg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL0dldHR5SW1h/Z2VzLTY2NjA4ODUx/MF9wbjNqYWU",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/GettyImages-666088510_pn3jae",
+            "logo": false
+          },
+          "age": "July 8, 2025"
+        },
+        {
+          "title": "USAA vs State Farm Car Insurance: Rates & Coverage - ValuePenguin",
+          "url": "https://www.valuepenguin.com/compare-usaa-vs-state-farm-car-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "But State Farm is stillcheaper than the national average. Full coverage from USAA costs $1,170 per year, or $98 per month, on average.",
+          "page_age": "2025-08-25T15:16:50",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/compare-usaa-vs-state-farm-car-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a car insurance near me  \u203a usaa vs. state farm: compare car insurance rates and coverage"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/VJlBQNOqJt4W300kUdxQvsY03GSB9WXEqadKh_qKpj8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2F1dG8taW5z/dXJhbmNlLWNvbXBh/cmlzb25fZGY4YXBw",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/auto-insurance-comparison_df8app",
+            "logo": false
+          },
+          "age": "August 25, 2025"
+        },
+        {
+          "title": "What Is Personal Cyber Insurance and How to Get It - ValuePenguin",
+          "url": "https://www.valuepenguin.com/personal-cyber-home-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm is one of the few major insurers offering cyber insurance to individuals and their families as an add-on to its standard home insurance policies. Some other large insurers, like Allstate, Nationwide and Farmers, offer the option as &quot;identity theft protection.&quot; As the personal cyber insurance market continues to expand, more cyber policies with reasonable limits could be an affordable supplement to individuals&#x27; insurance coverage should one be concerned about this rising threat.",
+          "page_age": "2025-08-04T17:43:29",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/personal-cyber-home-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a personal-cyber-home-insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GSCCKKnj4b1v7fDJqFt06zRdOUhkvXtlyxp7nV30Vig/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL0dldHR5SW1h/Z2VzLTYxNTcwODIy/NF9jaDFua2I",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/GettyImages-615708224_ch1nkb",
+            "logo": false
+          },
+          "age": "August 4, 2025"
+        },
+        {
+          "title": "Cheapest Auto Insurance Quotes in Boise, Idaho - ValuePenguin",
+          "url": "https://www.valuepenguin.com/car-insurance-boise-idaho",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm has the cheapest car insurance in Boise, at $23 per month for minimum coverage and $54 per month for full coverage.",
+          "page_age": "2025-08-18T15:12:10",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/car-insurance-boise-idaho",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a car insurance near me  \u203a cheapest auto insurance quotes in boise, idaho"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/8niIvxaFX3a_Ldf4fuEG1CZL-1SOkTzACyFHh3ngxEk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL3lvdW5nLXdv/bWFuLXdpdGgtcGhv/bmUtaW4tZHJpdmVy/cy1zZWF0LW9mLXBh/cmtlZC1yb3lhbHR5/LWZyZWUtaW1hZ2Ux/Mjg5OTMwMjAw",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/young-woman-with-phone-in-drivers-seat-of-parked-royalty-free-image1289930200",
+            "logo": false
+          },
+          "age": "August 18, 2025"
+        },
+        {
+          "title": "State Farm Steer Clear Review: How Does It Work? - ValuePenguin",
+          "url": "https://www.valuepenguin.com/car-insurance/state-farm-steer-clear-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Teen drivers pay car insurance rates that are two to three and a half times higher than rates for drivers in their mid-30s. Completing the State Farm Steer Clear program is an easy way for teens to earn a car insurance discount.",
+          "page_age": "2025-08-05T20:54:57",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/car-insurance/state-farm-steer-clear-review",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a car-insurance  \u203a state-farm-steer-clear-review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ZT0CztgVNLSSmAo2JD0h90f_khLlKJsRpIVVVGDqnco/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvY19saW1p/dCxkcHJfMS4wLGZf/YXV0byxoXzE2MDAs/cV9hdXRvLHdfMTYw/MC9yZWZlcnJhbF9s/b2dvcy91cy9pbnN1/cmFuY2Uvc3RhdGUt/ZmFybS0z",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/c_limit,dpr_1.0,f_auto,h_1600,q_auto,w_1600/referral_logos/us/insurance/state-farm-3",
+            "logo": true
+          },
+          "age": "August 5, 2025"
+        },
+        {
+          "title": "Does Renters Insurance Cover Property in Self-Storage Units? - ValuePenguin",
+          "url": "https://www.valuepenguin.com/does-renters-insurance-cover-property-self-storage-units",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "You can combine that limit with the $5,000 from your renters policy, giving you $20,000 in coverage. State Farm offers a separate policy called a personal articles policy that gives you additional coverage for your belongings outside of your normal renters policy.",
+          "page_age": "2025-07-22T18:16:02",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/does-renters-insurance-cover-property-self-storage-units",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a does-renters-insurance-cover-property-self-storage-units"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/RKWNJFvLf2S1qr57sVSwEJhVRe11PnCWzZ4GZ6laObE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL0dldHR5SW1h/Z2VzLTE1NzY3NjE3/NV93dnI2MWM",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/GettyImages-157676175_wvr61c",
+            "logo": false
+          },
+          "age": "July 22, 2025"
+        },
+        {
+          "title": "The Best Renters Insurance Companies | ValuePenguin",
+          "url": "https://www.valuepenguin.com/best-renters-insurance-companies",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "However, it&#x27;s only available in 29 states and Washington, D.C.. Renters who can&#x27;t buy a policy from Lemonade should consider State Farm, which offers affordable rates across the country. Renters who need extra protection should consider Nationwide, which offers lots of coverage options, like earthquake protection and replacement cost coverage.",
+          "page_age": "2025-08-29T21:49:07",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/best-renters-insurance-companies",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a renters insurance  \u203a the best renters insurance companies"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/RajMOEmw-T0NUeHWAbZEncLo_iu-jzGOkabTqBjLYzU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL0dldHR5SW1h/Z2VzLTUwNDAzNzcz/NF9zdGJhN2Y",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/GettyImages-504037734_stba7f",
+            "logo": false
+          },
+          "age": "August 29, 2025"
+        },
+        {
+          "title": "How to Get the Best Flood Insurance - ValuePenguin",
+          "url": "https://www.valuepenguin.com/homeowners-insurance/best-flood-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Yes, it&#x27;s important to shop for flood insurance from multiple companies. All government-backed National Flood Insurance Program (NFIP) insurance policies will offer the same coverage and rate. But you might be able to find more protection and cheaper quotes from a private company. State Farm does not offer flood insurance.",
+          "page_age": "2025-07-15T14:38:03",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/homeowners-insurance/best-flood-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a homeowners-insurance  \u203a best-flood-insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/QLPlMBEGN1gFD0Dw-h_Y-nyeB7Dq3dHaUi-NglR-thY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL0dldHR5SW1h/Z2VzLTYzOTU5Njc0/Ml9hZW94aGI",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/GettyImages-639596742_aeoxhb",
+            "logo": false
+          },
+          "age": "July 15, 2025"
+        },
+        {
+          "title": "State Farm Drive Safe & Save Review: How Does It Work? - ValuePenguin",
+          "url": "https://www.valuepenguin.com/state-farm-drive-safe-and-save-insurance-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The Drive Safe &amp; Save program is worth it for most State Farm customers. The program is free, and State Farm won&#x27;t raise your rates for bad driving behaviors. ... State Farm has some of the cheapest car insurance quotes across the country.",
+          "page_age": "2025-07-09T17:36:38",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/state-farm-drive-safe-and-save-insurance-review",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a auto insurance  \u203a state farm drive safe & save review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/OcbVrXsnhwTWOfLhaxtR-k4lU5Eb1Jh9qYhfB6hHP-s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL3JlZmVycmFs/X2xvZ29zL3VzL2lu/c3VyYW5jZS9zdGF0/ZWZhcm0tMg",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/referral_logos/us/insurance/statefarm-2",
+            "logo": true
+          },
+          "age": "July 9, 2025"
+        },
+        {
+          "title": "Cheapest Auto Insurance Quotes in Wichita, Kansas - ValuePenguin",
+          "url": "https://www.valuepenguin.com/car-insurance-wichita-kansas",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm offers the cheapest minimum- and full-coverage car insurance rates in Wichita, Kan. On average, Wichita drivers pay $144 per month for full coverage, which is 4% more than the Kansas average.",
+          "page_age": "2025-08-13T15:20:53",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/car-insurance-wichita-kansas",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a car insurance near me  \u203a cheapest auto insurance quotes in wichita, kansas"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Gi9uXIGvb4ayfpMkWm2uICnCeeGNIYS0msFJNaN19ss/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2F1dG8taW5z/dXJhbmNlL21hbi1k/b2ctZHJpdmU",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/auto-insurance/man-dog-drive",
+            "logo": false
+          },
+          "age": "August 13, 2025"
+        },
+        {
+          "title": "Cost of Car Insurance for 23-Year-Olds - ValuePenguin",
+          "url": "https://www.valuepenguin.com/car-insurance-23-year-old",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm usually has cheap rates for 23-year-olds for both full coverage and minimum coverage. On average, full coverage from State Farm costs $203 per month and minimum coverage costs $87 per month for a 23-year-old driver.",
+          "page_age": "2025-07-08T19:25:27",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/car-insurance-23-year-old",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a car-insurance-23-year-old"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/HGTp8LcnzAuwA2tKpORP00IIwf-spBB4rchYcTuimec/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL1lvdW5nLW1h/bi1kcml2aW5nLWlu/LWNhcg",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/Young-man-driving-in-car",
+            "logo": false
+          },
+          "age": "July 8, 2025"
+        },
+        {
+          "title": "Best Cheap Non-Owner Car Insurance - ValuePenguin",
+          "url": "https://www.valuepenguin.com/best-non-owner-car-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm has the cheapest non-owner car insurance, at $213 per year. Non-owner auto insurance is for drivers who don&#x27;t own a car but still want coverage while they are renting vehicles or driving someone else&#x27;s car.",
+          "page_age": "2025-07-08T18:28:24",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/best-non-owner-car-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a best-non-owner-car-insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/XStgZynmFqt6zotzOO5uPzUa8j41UVXWNYdwYQH03wc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL0dldHR5SW1h/Z2VzLTg1Njk1MTY0/Nl96MHZ4eXI",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/GettyImages-856951646_z0vxyr",
+            "logo": false
+          },
+          "age": "July 8, 2025"
+        },
+        {
+          "title": "The Cheapest (and Best) Full Coverage Car Insurance of 2025",
+          "url": "https://www.valuepenguin.com/best-cheap-full-coverage-auto-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm has the cheapest full coverage car insurance most drivers can get, at $134 per month. That&#x27;s $41 per month less than the national average.",
+          "page_age": "2025-10-28T22:08:41",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/best-cheap-full-coverage-auto-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a car insurance near me  \u203a the cheapest (and best) full coverage car insurance of 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/jwR72us8lHYXsjXEhvfivvAXuzbnjfyJdx35LnGOY8g/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2Z1bGwtY292/ZXJhZ2UtY2RuX2xv/eXg2cg",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/full-coverage-cdn_loyx6r",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Mobile Home Insurance in Florida - ValuePenguin",
+          "url": "https://www.valuepenguin.com/mobile-home-insurance-florida",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Most well-known insurance companies, like State Farm or Allstate, don&#x27;t sell mobile home insurance in Florida.",
+          "page_age": "2025-07-08T21:52:11",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/mobile-home-insurance-florida",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a mobile-home-insurance-florida"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/_KnBrWJBIfXOU17eMjqaoWGvt9HT_igmBrD8VcsR414/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL0dldHR5SW1h/Z2VzLTgwNzI5NTM4/Ml96cGxtN2E",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/GettyImages-807295382_zplm7a",
+            "logo": false
+          },
+          "age": "July 8, 2025"
+        },
+        {
+          "title": "Cheapest Auto Insurance Quotes in Vermont (2025) - ValuePenguin",
+          "url": "https://www.valuepenguin.com/best-cheap-car-insurance-vermont",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "A minimum liability policy from State Farm costs $66 per month for an 18-year-old driver. That&#x27;s $32 per month less than the Vermont average for teens. State Farm also has the cheapest full coverage quotes for young drivers in Vermont, at $183 ...",
+          "page_age": "2025-08-12T17:55:04",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/best-cheap-car-insurance-vermont",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a car insurance near me  \u203a cheapest auto insurance quotes in vermont (2025)"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/u4o_Yj8l6FiS8eLxI8lvuYTcMnksyMFh-dMP6IM37Jw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2F1dG8taW5z/dXJhbmNlL2NvdXBs/ZS1jYXItdHJ1bmst/ZG9nLW1p",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/auto-insurance/couple-car-trunk-dog-mi",
+            "logo": false
+          },
+          "age": "August 12, 2025"
+        },
+        {
+          "title": "Best & Cheapest Car Insurance Quotes in Alabama (2024) - ValuePenguin",
+          "url": "https://www.valuepenguin.com/cheap-car-insurance-alabama-study",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm has the cheapest liability-only rates for teen drivers, at around $124 per month. That&#x27;s nearly half the state average. It also has the most affordable full coverage quotes at $297 per month for an 18-year-old driver.",
+          "page_age": "2025-08-20T15:18:37",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/cheap-car-insurance-alabama-study",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a car insurance near me  \u203a cheapest car insurance quotes in alabama (2025)"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/EK30LVIuuMyk5jb6uAOiEoGsH2f86-g9ofW5j1V6VM0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL0Jpcm1pbmdo/YW1fQUxfc2t5bGlu/ZQ",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/Birmingham_AL_skyline",
+            "logo": false
+          },
+          "age": "August 20, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

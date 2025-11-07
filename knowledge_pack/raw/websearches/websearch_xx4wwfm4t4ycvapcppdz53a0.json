@@ -1,0 +1,867 @@
+{
+  "websearch_id": "websearch_xx4wwfm4t4ycvapcppdz53a0",
+  "search_id": "search_su98e6fr1njvatqvh9gp3sjj",
+  "timestamp": "2025-11-07T12:23:50.440932",
+  "startedAt": "2025-11-07T12:23:50.440932",
+  "completedAt": "2025-11-07T12:23:52.495722",
+  "durationSeconds": 2.05,
+  "urlsDiscoveredCount": 21,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:progressive.com new home discount",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:progressive.com new home discount",
+      "show_strict_warning": false,
+      "cleaned": "new home discount",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "new home discount",
+        "sites": [
+          "progressive.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 20,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Opening the Door to Homeownership | Progressive",
+          "url": "https://www.progressive.com/about/purpose/homeownership/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "A down payment assistance grant for first-generation homebuyers.",
+          "page_age": "2025-05-15T00:00:00",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/about/purpose/homeownership/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "video",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "\u203a about  \u203a purpose  \u203a homeownership"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/RuaUZ52lqez-A8N12j7FP6LvzF93UbYfJW2FaC9Ika0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvNjg1/NWJmZmU5Y2I5NDNl/NDA4ZjNjYzlhL1BS/T0ctdXBkYXRlLWxv/Z28tT0ctaW1hZ2Vf/RmFjZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/6855bffe9cb943e408f3cc9a/PROG-update-logo-OG-image_Facebook.png",
+            "logo": true
+          },
+          "age": "May 15, 2025"
+        },
+        {
+          "title": "New York Homeowners Insurance: Get a Quote | Progressive",
+          "url": "https://www.progressive.com/answers/new-york-home-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Progressive homeowners policies in New York had an average monthly price of $94.52 or $1,134.23 for an annual policy in 2024.* Your rate will depend on many factors, such as location, roof construction, and coverage selection. Learn more about what factors influence rates and how much homeowners insurance costs. It&#x27;s possible to save on your premium with homeowners insurance discounts.",
+          "page_age": "2025-03-17T19:02:57",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/new-york-home-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a new york homeowners insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GdwbouY_cxSXP5vVCIgsQqruv_TtOmVy_51CJprTGTg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvc2hh/cmUtb3BlbmdyYXBo/LTEyMDAucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/share-opengraph-1200.png",
+            "logo": false
+          },
+          "age": "March 17, 2025"
+        },
+        {
+          "title": "How to Lower Home Insurance Cost | Progressive",
+          "url": "https://www.progressive.com/answers/lower-home-insurance-cost/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Build a bundle: The bigger the bundle, the bigger the savings. Bundle homeowners with an existing auto policy and save. Have a couple of toys to throw in? Add a boat, RV, or motorcycle to get the lowest home insurance cost. Take advantage of discounts: Who doesn&#x27;t love a discount?",
+          "page_age": "2025-08-25T22:03:32",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/lower-home-insurance-cost/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a home insurance information  \u203a ways to help lower your home insurance rate"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/6FqcNDAiXnsArx-Nnp58XPIwJK12Av2Sd5OWCkPvwZc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOTVmYzAy/YTUzYWJmODcvNjBl/NjBiZWYyNDkwZWQz/MDE0NWU2MzkwL2xv/d2VyaW5nLWhvbWUt/aW5zdXJhbmNlLnBu/Zw",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec95fc02a53abf87/60e60bef2490ed30145e6390/lowering-home-insurance.png",
+            "logo": false
+          },
+          "age": "August 25, 2025"
+        },
+        {
+          "title": "New Mexico Homeowners Insurance: Get a Quote | Progressive",
+          "url": "https://www.progressive.com/answers/new-mexico-home-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Call 1-866-749-7436, or speak to an agent in your area to help ensure you&#x27;re getting all applicable discounts. Homeowners insurance in New Mexico isn&#x27;t required by law, but if you finance your home, your lender may require you to have a homeowners insurance policy in place.",
+          "page_age": "2025-03-24T18:15:17",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/new-mexico-home-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a new mexico homeowners insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/jGXZ1Jb9xmKbTvzIGv3t75YOhUHyJj7PZ9aGvI5xVhI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDgzNDhjMTlk/Y2E1NGFlZDEvNjZj/Y2Y5M2E1YTcwZTVk/NGZkMjY1ZTAyL2hv/bWVfTmV3LW1leGlj/b19vcGVuLWdyYXBo/LnBuZw",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt8348c19dca54aed1/66ccf93a5a70e5d4fd265e02/home_New-mexico_open-graph.png",
+            "logo": false
+          },
+          "age": "March 24, 2025"
+        },
+        {
+          "title": "Benefits of Bundling Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/benefits-of-bundling-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Insurance bundling usually refers to buying home and auto insurance from the same provider. However, the term can also apply to buying two or more of any type of insurance policy from the same company. Many insurers offer a discount to customers who buy more than one policy.",
+          "page_age": "2025-01-21T18:15:46",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/benefits-of-bundling-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a general insurance topics  \u203a should i bundle home and auto insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GdwbouY_cxSXP5vVCIgsQqruv_TtOmVy_51CJprTGTg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvc2hh/cmUtb3BlbmdyYXBo/LTEyMDAucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/share-opengraph-1200.png",
+            "logo": false
+          },
+          "age": "January 21, 2025"
+        },
+        {
+          "title": "Colorado Homeowners Insurance: Get a Quote | Progressive",
+          "url": "https://www.progressive.com/answers/colorado-home-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Looking for homeowners insurance in Colorado? Learn about coverages, cost factors, discounts, and options for extra protection.",
+          "page_age": "2025-03-24T18:00:42",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/colorado-home-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a colorado homeowners insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "March 24, 2025"
+        },
+        {
+          "title": "Arkansas Homeowners Insurance: Get a Quote | Progressive",
+          "url": "https://www.progressive.com/answers/arkansas-home-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Homeowners insurance discounts are a great way to save on your premium, including discounts for quoting in advance, bundling your new homeowners policy with an existing auto policy, and installing a home security system.",
+          "page_age": "2025-03-13T20:03:16",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/arkansas-home-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a arkansas homeowners insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "March 13, 2025"
+        },
+        {
+          "title": "Nebraska Renters Insurance: Get a Quote | Progressive",
+          "url": "https://www.progressive.com/answers/nebraska-renters-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Find out about renters insurance in Nebraska. Learn about standard and additional coverages and get cost and discount information.",
+          "page_age": "2025-02-03T14:32:43",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/nebraska-renters-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a nebraska renters insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "February 3, 2025"
+        },
+        {
+          "title": "Pennsylvania Homeowners Insurance: Get a Quote | Progressive",
+          "url": "https://www.progressive.com/answers/pennsylvania-home-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Paying in full, bundling your homeowner and auto policies, installing alarm and security systems, and going paperless are just some of the discounts available.",
+          "page_age": "2025-03-24T17:13:35",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/pennsylvania-home-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a pennsylvania homeowners insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "March 24, 2025"
+        },
+        {
+          "title": "New Jersey Homeowners Insurance: Get a Quote | Progressive",
+          "url": "https://www.progressive.com/answers/new-jersey-home-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "You can save on your New Jersey homeowners insurance by taking advantage of discounts, including bundling home and auto insurance. You can also save by installing alarm and safety systems and paying your policy in full.",
+          "page_age": "2025-03-24T18:02:07",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/new-jersey-home-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a new jersey homeowners insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "March 24, 2025"
+        },
+        {
+          "title": "New Hampshire Homeowners Insurance: Get a Quote | Progressive",
+          "url": "https://www.progressive.com/answers/new-hampshire-home-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Call 1-866-749-7436, or speak to an agent to help ensure you&#x27;re getting all applicable discounts. Find a policy that&#x27;s right for you and your home with Progressive&#x27;s HomeQuote\u00ae Explorer. New Hampshire homeowners insurance isn&#x27;t required by law, but if you finance your home, your lender may require you to have a homeowners insurance policy in place.",
+          "page_age": "2025-03-24T17:12:52",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/new-hampshire-home-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a new hampshire homeowners insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GdwbouY_cxSXP5vVCIgsQqruv_TtOmVy_51CJprTGTg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvc2hh/cmUtb3BlbmdyYXBo/LTEyMDAucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/share-opengraph-1200.png",
+            "logo": false
+          },
+          "age": "March 24, 2025"
+        },
+        {
+          "title": "Buying Home Insurance for the First Time | Progressive",
+          "url": "https://www.progressive.com/answers/first-time-homebuyers-guide-to-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "During the mortgage approval process, your loan specialist will let you know when to buy homeowners insurance. However, you can start shopping for a policy as soon as you&#x27;ve solidified your new address.",
+          "page_age": "2025-01-08T20:11:53",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/first-time-homebuyers-guide-to-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a home insurance information  \u203a how to buy homeowners insurance for the first time"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/mFHypfDNRN2FmpA8RxJSR7Zt1PKZQdjCwJRvvaZFmUs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDYxYTE5OWQ2/ZDkzYjg2ZWIvNjBi/Nzg5ZTUzZjcwMWUy/NjVlNGU5MzQyL2Zp/cnN0LXRpbWUtaG9t/ZWJ1eWVycy1ndWlk/ZS10by1pbnN1cmFu/Y2UucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt61a199d6d93b86eb/60b789e53f701e265e4e9342/first-time-homebuyers-guide-to-insurance.png",
+            "logo": false
+          },
+          "age": "January 8, 2025"
+        },
+        {
+          "title": "Homeowners Insurance Requirements by State | Progressive",
+          "url": "https://www.progressive.com/answers/state-homeowners-insurance-requirements/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Learn more about average homeowners insurance cost by state and available homeowners insurance discounts.",
+          "page_age": "2025-08-25T20:32:55",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/state-homeowners-insurance-requirements/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a home insurance information  \u203a homeowners insurance requirements by state"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GdwbouY_cxSXP5vVCIgsQqruv_TtOmVy_51CJprTGTg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvc2hh/cmUtb3BlbmdyYXBo/LTEyMDAucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/share-opengraph-1200.png",
+            "logo": false
+          },
+          "age": "August 25, 2025"
+        },
+        {
+          "title": "New Mexico Renters Insurance: Get a Quote | Progressive",
+          "url": "https://www.progressive.com/answers/new-mexico-renters-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Call 1-866-749-7436 or speak with an agent in your area to help ensure you&#x27;re getting all applicable discounts. Customize your coverages and limits when you quote online.Quote renters insurance online \u00b7 Talk to a licensed representative who can help you quote renters insurance.Call 1-866-749-7436 \u00b7 Connect with an independent agent in your neighborhood.Find an agent in New Mexico",
+          "page_age": "2025-06-30T19:26:37",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/new-mexico-renters-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a new mexico renters insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/sKmmY4VSbfvA2dmcQnduSSL9uR6AN5yUhgocKOIGeY0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDljMjdlOWVm/NzMxZmNhMWUvNjc3/NDE0ODc3NzVkYTdl/YzE4MWY1NGZlL3Jl/bnRlcnNfTmV3TWV4/aWNvX29wZW4tZ3Jh/cGguanBn",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt9c27e9ef731fca1e/67741487775da7ec181f54fe/renters_NewMexico_open-graph.jpg",
+            "logo": false
+          },
+          "age": "June 30, 2025"
+        },
+        {
+          "title": "Homeowners Insurance Washington State: Get a Quote | Progressive",
+          "url": "https://www.progressive.com/answers/washington-home-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Discounts are available for bundling your homeowners and auto insurance, going paperless, paying in full, and more.",
+          "page_age": "2025-03-24T17:26:15",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/washington-home-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a washington homeowners insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/CJlJJIKEg1K-KYHr4L6viDVWkd27gfi3DtVFX8_1nxg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGZhODYwMDU1/Mjg2NjZjNDQvNjcx/MmJmZWEyMmE2MDU0/NjhlOGM3MTkxL3By/b3BlcnR5X3N0YXRl/LWhvbWUtaW5zLWhv/bWUtaW5zX3dhc2hp/bmd0b25fb3Blbi1n/cmFwaC5wbmc",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltfa86005528666c44/6712bfea22a605468e8c7191/property_state-home-ins-home-ins_washington_open-graph.png",
+            "logo": false
+          },
+          "age": "March 24, 2025"
+        },
+        {
+          "title": "Nevada Homeowners Insurance: Get a Quote | Progressive",
+          "url": "https://www.progressive.com/answers/nevada-home-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "There are lots of Progressive discounts on homeowners insurance available, including discounts for quoting in advance, bundling your new home policy with an existing auto policy, and installing a home security system.",
+          "page_age": "2025-03-13T20:07:37",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/nevada-home-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a nevada homeowners insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "March 13, 2025"
+        },
+        {
+          "title": "Connecticut Homeowners Insurance: Get a Quote | Progressive",
+          "url": "https://www.progressive.com/answers/connecticut-home-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Call 1-866-749-7436 or contact your agent to help ensure you&#x27;re getting all applicable discounts. ... Progressive&#x27;s HomeQuote Explorer\u00ae lets you find the right policy for you and your home.",
+          "page_age": "2025-01-21T19:56:33",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/connecticut-home-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a connecticut homeowners insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "January 21, 2025"
+        },
+        {
+          "title": "Homeowners Insurance in Texas: Get a Quote | Progressive",
+          "url": "https://www.progressive.com/answers/texas-home-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "There are lots of Progressive discounts on homeowners insurance available, including discounts for quoting in advance, bundling your new home policy with an existing auto policy, and installing a home security system.",
+          "page_age": "2025-03-17T19:18:32",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/texas-home-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a texas homeowners insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GdwbouY_cxSXP5vVCIgsQqruv_TtOmVy_51CJprTGTg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvc2hh/cmUtb3BlbmdyYXBo/LTEyMDAucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/share-opengraph-1200.png",
+            "logo": false
+          },
+          "age": "March 17, 2025"
+        },
+        {
+          "title": "California Homeowners Insurance: Get a Quote | Progressive",
+          "url": "https://www.progressive.com/answers/california-home-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Progressive homeowners policies in California had an average cost per month of $130.22 or $1,562.62 for an annual policy in 2024.* Remember that your cost for homeowners insurance in California varies based on many factors, including your location, type of home, and coverage limits, so that average price may not necessarily be what you end up paying for your unique policy. There are lots of Progressive discounts on homeowners insurance available, including discounts for quoting in advance and installing a home security system.",
+          "page_age": "2025-03-17T19:19:03",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/california-home-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a california homeowners insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GdwbouY_cxSXP5vVCIgsQqruv_TtOmVy_51CJprTGTg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvc2hh/cmUtb3BlbmdyYXBo/LTEyMDAucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/share-opengraph-1200.png",
+            "logo": false
+          },
+          "age": "March 17, 2025"
+        },
+        {
+          "title": "Ohio Homeowners Insurance: Get a Quote | Progressive",
+          "url": "https://www.progressive.com/answers/ohio-home-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Purchasing homeowners insurance in Ohio? Learn about coverages, cost factors, discounts, and options for extra protection.",
+          "page_age": "2025-03-24T17:15:00",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/ohio-home-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a ohio homeowners insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GdwbouY_cxSXP5vVCIgsQqruv_TtOmVy_51CJprTGTg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvc2hh/cmUtb3BlbmdyYXBo/LTEyMDAucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/share-opengraph-1200.png",
+            "logo": false
+          },
+          "age": "March 24, 2025"
+        },
+        {
+          "title": "Home",
+          "url": "https://en.wikipedia.org/wiki/Home",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "dwelling-place used as a permanent or semi-permanent residence for an individual,family,household or several families in a tribe. It is often a house, apartment, or other building, or alternatively a mobile home,houseboat,yurt, other portable shelter",
+          "profile": {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Home",
+            "long_name": "en.wikipedia.org",
+            "img": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "deep_results": {
+            "buttons": [
+              {
+                "type": "button_result",
+                "title": "History",
+                "url": "https://en.wikipedia.org/wiki/Home#History"
+              },
+              {
+                "type": "button_result",
+                "title": "Common types",
+                "url": "https://en.wikipedia.org/wiki/Home#Common_types"
+              },
+              {
+                "type": "button_result",
+                "title": "Management",
+                "url": "https://en.wikipedia.org/wiki/Home#Management"
+              },
+              {
+                "type": "button_result",
+                "title": "Tenure",
+                "url": "https://en.wikipedia.org/wiki/Home#Tenure"
+              },
+              {
+                "type": "button_result",
+                "title": "Anthropogenic significance",
+                "url": "https://en.wikipedia.org/wiki/Home#Anthropogenic_significance"
+              }
+            ]
+          },
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "en.wikipedia.org",
+            "hostname": "en.wikipedia.org",
+            "favicon": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw",
+            "path": "\u203a wiki  \u203a Home"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/nnM3mWHSqrFgtt4ZtlotMdjhu0ut-28ZuZdx6b25PE0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2M2L1NlYXJzSG91/c2UxMTUuanBn",
+            "original": "https://upload.wikimedia.org/wikipedia/commons/c/c6/SearsHouse115.jpg",
+            "logo": false
+          }
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

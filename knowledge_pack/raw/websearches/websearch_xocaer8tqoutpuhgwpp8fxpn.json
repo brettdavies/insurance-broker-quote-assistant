@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_xocaer8tqoutpuhgwpp8fxpn",
+  "search_id": "search_uf8j1yph03n7j7w2ix9uue5w",
+  "timestamp": "2025-11-07T12:20:40.861812",
+  "startedAt": "2025-11-07T12:20:40.861812",
+  "completedAt": "2025-11-07T12:20:42.641271",
+  "durationSeconds": 1.78,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:progressive.com \"where we operate\"",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:progressive.com \"where we operate\"",
+      "show_strict_warning": false,
+      "cleaned": "where we operate",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "where we operate",
+        "sites": [
+          "progressive.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

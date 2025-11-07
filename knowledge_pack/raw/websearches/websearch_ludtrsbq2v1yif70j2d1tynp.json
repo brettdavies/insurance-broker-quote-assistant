@@ -1,0 +1,790 @@
+{
+  "websearch_id": "websearch_ludtrsbq2v1yif70j2d1tynp",
+  "search_id": "search_ixxfoefhj4porgbmj6ss3yj8",
+  "timestamp": "2025-11-07T12:34:58.329638",
+  "startedAt": "2025-11-07T12:34:58.329638",
+  "completedAt": "2025-11-07T12:35:00.558269",
+  "durationSeconds": 2.23,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"Insurance Information Institute\" auto insurance costs",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"Insurance Information Institute\" auto insurance costs",
+      "show_strict_warning": false,
+      "cleaned": "Insurance Information Institute auto insurance costs",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "Insurance Information Institute auto insurance costs"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Insurance Information Institute - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Insurance_Information_Institute",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The Insurance Information Institute (I.I.I.) is a U.S. industry association which exists &quot;to improve public understanding of insurance \u2013 what it does and how it works.&quot; Founded in 1959, the organization is based in New York City. Since 1989 the I.I.I. has held 501(c)(6) tax-exempt status (defined as business leagues, chambers of commerce, boards of trade, and the like). The I.I.I. web site provides information for consumers, the media, researchers and the general public on a wide range of topics, including automobile insurance, homeowner&#x27;s insurance, life insurance, annuities, health insurance, long-term care insurance and disability insurance.",
+          "page_age": "2025-09-09T09:14:03",
+          "profile": {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Insurance_Information_Institute",
+            "long_name": "en.wikipedia.org",
+            "img": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "en.wikipedia.org",
+            "hostname": "en.wikipedia.org",
+            "favicon": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw",
+            "path": "\u203a wiki  \u203a Insurance_Information_Institute"
+          },
+          "age": "September 9, 2025"
+        },
+        {
+          "title": "Car Insurance Facts And Statistics 2025 \u2013 Forbes Advisor",
+          "url": "https://www.forbes.com/advisor/car-insurance/car-insurance-facts-and-statistics/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "According to 2022 industry data ... 0.74% of insured drivers with liability insurance had a bodily injury liability claim versus 2.37% of liability insurance policyholders who had a property damage liability claim.[1] In 2019, ...",
+          "page_age": "2025-03-06T09:48:31",
+          "profile": {
+            "name": "Forbes Advisor",
+            "url": "https://www.forbes.com/advisor/car-insurance/car-insurance-facts-and-statistics/",
+            "long_name": "forbes.com",
+            "img": "https://imgs.search.brave.com/qg6-E4bARcUpS7pHuJ2FXSeQ2YI51iPfbI8wpUBx9tg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY0NWFiMTBk/YmY2MjkyN2M0MTI0/NmRkYTM3ZjQzMGJj/Y2Q2MTBkYjVmZjA2/OGRjODBhMTM1M2Yx/YmRlZTA1NS93d3cu/Zm9yYmVzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "forbes.com",
+            "hostname": "www.forbes.com",
+            "favicon": "https://imgs.search.brave.com/qg6-E4bARcUpS7pHuJ2FXSeQ2YI51iPfbI8wpUBx9tg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY0NWFiMTBk/YmY2MjkyN2M0MTI0/NmRkYTM3ZjQzMGJj/Y2Q2MTBkYjVmZjA2/OGRjODBhMTM1M2Yx/YmRlZTA1NS93d3cu/Zm9yYmVzLmNvbS8",
+            "path": "\u203a advisor  \u203a car-insurance  \u203a car-insurance-facts-and-statistics"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/v82reNO9MgoGQxTfMqf-rbOQQ4XEXH_ofK4J-2XUPWU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Zm9yYmVzLmNvbS9h/ZHZpc29yL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI0LzAzL2Nh/cl9pbnN1cmFuY2Vf/ZmFjdHMtMS05MDB4/NTEwLmpwZw",
+            "original": "https://www.forbes.com/advisor/wp-content/uploads/2024/03/car_insurance_facts-1-900x510.jpg",
+            "logo": false
+          },
+          "age": "March 6, 2025"
+        },
+        {
+          "title": "Average cost of car insurance in November 2025",
+          "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Male drivers ages 20 and 25 pay about 11 percent more and 5 percent more for car insurance, respectively. By age 40, the national average full coverage car insurance cost for men is only 1 percent more than for women.",
+          "page_age": "2025-11-07T05:04:33",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/kS-6az4e1AuNbmx7QPLBzr-uub9l7JUS6ocG95z6O3Y/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvMTI4/MHg3MjAvYTQwMzcz/ZDkyNi9pbnN1cmFu/Y2VfYXZlcmFnZV9j/b3N0X29mX2Nhcl9p/bnN1cmFuY2UuanBn",
+            "original": "https://a.storyblok.com/f/102997/1280x720/a40373d926/insurance_average_cost_of_car_insurance.jpg",
+            "logo": false
+          },
+          "age": "14 hours ago"
+        },
+        {
+          "title": "Average Car Insurance Cost in 2025: How Much You Should Expect to Pay for Car Insurance in 2025",
+          "url": "https://www.businessinsider.com/personal-finance/auto-insurance/average-car-insurance-cost",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The type of vehicle you own determines how expensive your insurance premiums will be. The higher the replacement cost of your car, the more you&#x27;ll have to pay for coverage. The Insurance Information Institute also notes that insurers consider your vehicle&#x27;s theft rate, engine size, and overall safety record.",
+          "page_age": "2025-05-15T18:28:58",
+          "profile": {
+            "name": "Business Insider",
+            "url": "https://www.businessinsider.com/personal-finance/auto-insurance/average-car-insurance-cost",
+            "long_name": "businessinsider.com",
+            "img": "https://imgs.search.brave.com/Z6wRqiE6vvL-8sy5MskRt7Tuy1z-PxXnfSbVXVy86vw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTI3NGQzMDdi/ZjEzYTA0MTI4NWMw/MWVjOTFmNDI3Yzdk/NGQzZDE1OTAxOWVj/NWIxMjk3YTcyNTg5/N2FiZjM2Yy93d3cu/YnVzaW5lc3NpbnNp/ZGVyLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "businessinsider.com",
+            "hostname": "www.businessinsider.com",
+            "favicon": "https://imgs.search.brave.com/Z6wRqiE6vvL-8sy5MskRt7Tuy1z-PxXnfSbVXVy86vw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTI3NGQzMDdi/ZjEzYTA0MTI4NWMw/MWVjOTFmNDI3Yzdk/NGQzZDE1OTAxOWVj/NWIxMjk3YTcyNTg5/N2FiZjM2Yy93d3cu/YnVzaW5lc3NpbnNp/ZGVyLmNvbS8",
+            "path": "  \u203a personal finance  \u203a insurance  \u203a auto insurance  \u203a average car insurance cost in 2025: how much you should expect to pay for car insurance in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/D7pnVI4xdV-5fGAR9Ci6I1nq1yA-MxAaJB94M7eETKk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pLmlu/c2lkZXIuY29tLzY2/YTI2ZmE5MmQ2Njc1/OWY2NmZlNDdjZD93/aWR0aD0xMjAwJmZv/cm1hdD1qcGVn",
+            "original": "https://i.insider.com/66a26fa92d66759f66fe47cd?width=1200&format=jpeg",
+            "logo": false
+          },
+          "age": "May 15, 2025"
+        },
+        {
+          "title": "Average Cost of Car Insurance (September 2025) | Insurify",
+          "url": "https://insurify.com/car-insurance/average-car-insurance-cost/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Quotes for Allstate, Farmers, GEICO, State Farm, and USAA are estimates based on Quadrant Information Services\u2019 database of auto insurance rates. ... Insurance Information Institute.",
+          "page_age": "2025-05-15T18:30:36",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/car-insurance/average-car-insurance-cost/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a car insurance  \u203a average car insurance cost"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/egFdAe0I8IKstwmOhx8kEfz9Dbbyf-K68qaFlkdlC6Q/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xNjIyNzMvMTg1/NngxMzkyL2E5YjUw/ZDM3ZDkvamVlcC1n/cmFuZC1jaGVyb2tl/ZS1vcmFuZ2UucG5n",
+            "original": "https://a.storyblok.com/f/162273/1856x1392/a9b50d37d9/jeep-grand-cherokee-orange.png",
+            "logo": false
+          },
+          "age": "May 15, 2025"
+        },
+        {
+          "title": "Average Monthly Auto Insurance Cost: What to Expect - IBOAZ, Gilbert, Arizona",
+          "url": "https://insurancebrokersofaz.com/average-monthly-auto-insurance-cost-what-to-expect/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Full coverage costs three times more than minimum liability, but experts recommend at least $100,000/$300,000/$100,000 limits for adequate protection. You save up to 30% on premiums when you bundle auto insurance with homeowners coverage, while ...",
+          "page_age": "2025-10-05T03:07:38",
+          "profile": {
+            "name": "IBOAZ",
+            "url": "https://insurancebrokersofaz.com/average-monthly-auto-insurance-cost-what-to-expect/",
+            "long_name": "insurancebrokersofaz.com",
+            "img": "https://imgs.search.brave.com/hIJPO_f6bQbc2u7TKeNTnYKKGo5tYbTMCsyd_XLDnK4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTFlZjE5Y2U1/MTg4ODRiYjgwODc0/MzVjMmZiZmQxN2Ew/MzFlNjBjMjg0ZWYy/Yzc2MGMyMjMzM2Zi/ZjJiODk0NC9pbnN1/cmFuY2Vicm9rZXJz/b2Zhei5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurancebrokersofaz.com",
+            "hostname": "insurancebrokersofaz.com",
+            "favicon": "https://imgs.search.brave.com/hIJPO_f6bQbc2u7TKeNTnYKKGo5tYbTMCsyd_XLDnK4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTFlZjE5Y2U1/MTg4ODRiYjgwODc0/MzVjMmZiZmQxN2Ew/MzFlNjBjMjg0ZWYy/Yzc2MGMyMjMzM2Zi/ZjJiODk0NC9pbnN1/cmFuY2Vicm9rZXJz/b2Zhei5jb20v",
+            "path": "  \u203a home  \u203a average monthly auto insurance cost: what to expect"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/sgcBtTTck0D2p4Gamn74qW-cocogwL-Bm2k_5KmlLf8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbnN1/cmFuY2Vicm9rZXJz/b2Zhei5jb20vd3At/Y29udGVudC91cGxv/YWRzL2VtcGxpYm90/L0F2ZXJhZ2UtTW9u/dGhseS1BdXRvLUlu/c3VyYW5jZS1Db3N0/Xy1XaGF0LXRvLUV4/cGVjdF8xNzU5NjMz/NjU0LmpwZWc",
+            "original": "https://insurancebrokersofaz.com/wp-content/uploads/emplibot/Average-Monthly-Auto-Insurance-Cost_-What-to-Expect_1759633654.jpeg",
+            "logo": false
+          },
+          "age": "October 5, 2025"
+        },
+        {
+          "title": "Average Cost of Car Insurance in the US for 2025",
+          "url": "https://www.experian.com/blogs/ask-experian/average-cost-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Different states have different ... your auto insurance premiums. Here&#x27;s the average cost of full coverage car insurance by state and how it differs from the national full coverage policy average of $2,899 annually or $242 per month.",
+          "page_age": "2025-10-15T05:30:10",
+          "profile": {
+            "name": "Experian",
+            "url": "https://www.experian.com/blogs/ask-experian/average-cost-car-insurance/",
+            "long_name": "experian.com",
+            "img": "https://imgs.search.brave.com/Kd5ZJX6uDioWFoKktbx3echvXfRsNSuzZed0HDR5aiw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDU3YTc1NTdk/MzRhMDkwNjEyODVm/ODgyMzUwZDliOGE2/Y2Q1ODZjYmU5OWU2/MTA4OTk5NzI1NjE0/ZjE0MGJiNS93d3cu/ZXhwZXJpYW4uY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "experian.com",
+            "hostname": "www.experian.com",
+            "favicon": "https://imgs.search.brave.com/Kd5ZJX6uDioWFoKktbx3echvXfRsNSuzZed0HDR5aiw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDU3YTc1NTdk/MzRhMDkwNjEyODVm/ODgyMzUwZDliOGE2/Y2Q1ODZjYmU5OWU2/MTA4OTk5NzI1NjE0/ZjE0MGJiNS93d3cu/ZXhwZXJpYW4uY29t/Lw",
+            "path": "  \u203a home  \u203a insurance  \u203a auto insurance  \u203a average cost of car insurance in the us for 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/y0dtwdfhCc_dJcsX0371_oU3O-E3auNTpJtcvY1U-S4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/ZXhwZXJpYW4uY29t/L2Jsb2dzL2Fzay1l/eHBlcmlhbi93cC1j/b250ZW50L3VwbG9h/ZHMvYXZlcmFnZS1j/b3N0LWF1dG8taW5z/dXJhbmNlLmpwZw",
+            "original": "https://www.experian.com/blogs/ask-experian/wp-content/uploads/average-cost-auto-insurance.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "10 Car Models With the Fastest-Rising Insurance Costs Between 2024 and 2025 | Insurify - Insurance News | InsuranceNewsNet",
+          "url": "https://insurancenewsnet.com/oarticle/10-car-models-with-the-fastest-rising-insurance-costs-between-2024-and-2025-insurify",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "&quot;[Tariffs] could also cause long delays for repairs similar to the supply chain disruption and escalation of replacement costs we saw from 2020 to 2022. This generated a 45% cumulative increase in replacement costs for vehicles,&quot; he said. Regardless ...",
+          "page_age": "2025-04-10T10:59:38",
+          "profile": {
+            "name": "InsuranceNewsNet",
+            "url": "https://insurancenewsnet.com/oarticle/10-car-models-with-the-fastest-rising-insurance-costs-between-2024-and-2025-insurify",
+            "long_name": "insurancenewsnet.com",
+            "img": "https://imgs.search.brave.com/k87KUDTP4mAJQeEvxn9gr1wB2TnzE1fVUrvaqNuI0fs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTEyMWZkZDk1/NGUyYTA4Zjk0ODg3/OGRjMTEyY2ExMjE1/OWQxMWZjYjk4NDA3/NTVmZWNjZTA0ZWMz/YzA1MGVlMy9pbnN1/cmFuY2VuZXdzbmV0/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurancenewsnet.com",
+            "hostname": "insurancenewsnet.com",
+            "favicon": "https://imgs.search.brave.com/k87KUDTP4mAJQeEvxn9gr1wB2TnzE1fVUrvaqNuI0fs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTEyMWZkZDk1/NGUyYTA4Zjk0ODg3/OGRjMTEyY2ExMjE1/OWQxMWZjYjk4NDA3/NTVmZWNjZTA0ZWMz/YzA1MGVlMy9pbnN1/cmFuY2VuZXdzbmV0/LmNvbS8",
+            "path": "  \u203a home  \u203a oarticles  \u203a 10 car models with the fastest-rising insurance costs between 2024 and 2025 | insurify"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/CclKXj5B14E9DBmWaUpcrLTAzH8yHdnk6iCfJlyTbg0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbnN1/cmFuY2VuZXdzbmV0/LmNvbS93cC1jb250/ZW50L3RoZW1lcy9p/bm4tMi1jaGlsZC9p/bWcvaW5uLXNvY2lh/bC1kZWZhdWx0Lmpw/Zw",
+            "original": "https://insurancenewsnet.com/wp-content/themes/inn-2-child/img/inn-social-default.jpg",
+            "logo": false
+          },
+          "age": "April 10, 2025"
+        },
+        {
+          "title": "How much is car insurance in 2025?",
+          "url": "https://www.cnbc.com/select/average-cost-of-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Your deductible is the dollar amount you need to spend before your insurance company kicks in its share. Increasing a $200 deductible to $500 could reduce collision and comprehensive coverage costs by as much as 30%, according to the Insurance ...",
+          "page_age": "2025-11-01T04:35:01",
+          "profile": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/select/average-cost-of-car-insurance/",
+            "long_name": "Consumer News and Business Channel",
+            "img": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cnbc.com",
+            "hostname": "www.cnbc.com",
+            "favicon": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+            "path": "  \u203a cnbc select  \u203a insurance  \u203a how much is car insurance in 2025?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/fQWglqIjD-HFqoEL9hG_NkRTzoS3eP6EFqNfGDpYUb4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDgxOTMzNDYt/MTc1Njg0MzAxMjgw/My1nZXR0eWltYWdl/cy0xNDE5OTk4MTY1/LWNhdGhlcmluZWxh/bmUyMDIybmlrb25k/ODUwNWp1bHkyMDIy/MTg4NzguanBlZz92/PTE3NTg5MDg1MDI",
+            "original": "https://image.cnbcfm.com/api/v1/image/108193346-1756843012803-gettyimages-1419998165-catherinelane2022nikond8505july202218878.jpeg?v=1758908502",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Why car insurance prices are rising so much even though inflation is cooling - syracuse.com",
+          "url": "https://www.syracuse.com/business/2024/12/why-car-insurance-prices-are-rising-so-much-even-though-inflation-is-cooling.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "To make up the cash, auto insurers raised premiums. But even as inflation steadies, insurance companies may not be quite ready to stop increasing them. \u201cIt took several years to get to this situation, and it\u2019s going to take time to bring it down to a level where rates are much more moderate,\u201d says Mark Friedlander, director of corporate communications for the Insurance Information Institute. If past trends are any indication, the average cost of insurance probably won\u2019t decrease anytime soon.",
+          "page_age": "2024-12-18T14:39:43",
+          "profile": {
+            "name": "Syracuse.com",
+            "url": "https://www.syracuse.com/business/2024/12/why-car-insurance-prices-are-rising-so-much-even-though-inflation-is-cooling.html",
+            "long_name": "syracuse.com",
+            "img": "https://imgs.search.brave.com/UCT7AEMdqKvLI9htTVuWPnBcgEKzLJdW3KumjuuxGw0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWZmOWI5Njg5/MGExMGIwNWY5ZmFl/NjA1ZGQwZjAzYjIw/ZDQ5OGFkOGMyZjdh/NzJhNjYzMDZiYTE5/ODBhYzM4OC93d3cu/c3lyYWN1c2UuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "syracuse.com",
+            "hostname": "www.syracuse.com",
+            "favicon": "https://imgs.search.brave.com/UCT7AEMdqKvLI9htTVuWPnBcgEKzLJdW3KumjuuxGw0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWZmOWI5Njg5/MGExMGIwNWY5ZmFl/NjA1ZGQwZjAzYjIw/ZDQ5OGFkOGMyZjdh/NzJhNjYzMDZiYTE5/ODBhYzM4OC93d3cu/c3lyYWN1c2UuY29t/Lw",
+            "path": "\u203a business  \u203a 2024  \u203a 12  \u203a why-car-insurance-prices-are-rising-so-much-even-though-inflation-is-cooling.html"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/7hDzwsm6W515puJnTsqyagy7AFPtnub0XkH5Ir-FuI4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3lyYWN1c2UuY29t/L3Jlc2l6ZXIvdjIv/SVlRUERJMzZFQkVL/QkFTS0ZLSk1MTzVN/Qk0uanBnP2F1dGg9/ZjRmYmJiNTliNDQ0/NjdhNTlhOGJkNmE1/YzkwNjYwNzdiM2Fh/MGI1ZGU0MzcyM2M4/YWE4NGVjNDYyMGRi/MGY4ZiZ3aWR0aD0x/MjgwJnNtYXJ0PXRy/dWUmcXVhbGl0eT05/MA",
+            "original": "https://www.syracuse.com/resizer/v2/IYQPDI36EBEKBASKFKJMLO5MBM.jpg?auth=f4fbbb59b44467a59a8bd6a5c9066077b3aa0b5de43723c8aa84ec4620db0f8f&width=1280&smart=true&quality=90",
+            "logo": false
+          },
+          "age": "December 18, 2024"
+        },
+        {
+          "title": "What is the Insurance Information Institute (III)? - Definition from Insuranceopedia",
+          "url": "https://www.insuranceopedia.com/definition/2417/insurance-information-institute-iii",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The Insurance Information Institute (III) is an organization dedicated to helping the public understand insurance. It achieves this by educating people about what insurance is, how it works, and how individuals can benefit from it. The III\u2019s educational initiatives cover a broad range of insurance types, including auto insurance, homeowners insurance, and life insurance.",
+          "page_age": "2024-11-11T07:45:56",
+          "profile": {
+            "name": "Insuranceopedia",
+            "url": "https://www.insuranceopedia.com/definition/2417/insurance-information-institute-iii",
+            "long_name": "insuranceopedia.com",
+            "img": "https://imgs.search.brave.com/KsBHSl4Wc_wUe27LG7XUNuU990n3ocgt5t6hB12cOiM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc3ZjI2YjMy/ZjI1NGM1NDUxYTNh/NTg4ZTBiZmZkZDM4/NTM0MTkyZGM2MTVh/NTNkOGNhOWYzZDk0/MWRmMTViNC93d3cu/aW5zdXJhbmNlb3Bl/ZGlhLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insuranceopedia.com",
+            "hostname": "www.insuranceopedia.com",
+            "favicon": "https://imgs.search.brave.com/KsBHSl4Wc_wUe27LG7XUNuU990n3ocgt5t6hB12cOiM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc3ZjI2YjMy/ZjI1NGM1NDUxYTNh/NTg4ZTBiZmZkZDM4/NTM0MTkyZGM2MTVh/NTNkOGNhOWYzZDk0/MWRmMTViNC93d3cu/aW5zdXJhbmNlb3Bl/ZGlhLmNvbS8",
+            "path": "  \u203a home  \u203a all terms  \u203a insurance information institute"
+          },
+          "age": "November 11, 2024"
+        },
+        {
+          "title": "Insurance Inflation Index: Car insurance rates up just slightly",
+          "url": "https://www.insure.com/car-insurance/insurance-inflation-index/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "\u201cThe uncertainty around tariffs ... (Triple-I), an industry trade group, has been forecasting a countrywide average personal auto rate increase of 7% in 2025....",
+          "page_age": "2025-07-16T06:00:00",
+          "profile": {
+            "name": "Insure.com",
+            "url": "https://www.insure.com/car-insurance/insurance-inflation-index/",
+            "long_name": "insure.com",
+            "img": "https://imgs.search.brave.com/Z3l7ymA7ijOzla_9xm1wqbDVUCiXVmQ28LthFXmC9DQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGNjN2U1NDA2/YmJkOWM2ZTFjMjIx/MDM2ZTliZjE1NzVk/ZDg1NmIwM2YxODBj/Mzc2ZDE1OTg4NGY2/MzQ5OTFlZC93d3cu/aW5zdXJlLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insure.com",
+            "hostname": "www.insure.com",
+            "favicon": "https://imgs.search.brave.com/Z3l7ymA7ijOzla_9xm1wqbDVUCiXVmQ28LthFXmC9DQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGNjN2U1NDA2/YmJkOWM2ZTFjMjIx/MDM2ZTliZjE1NzVk/ZDg1NmIwM2YxODBj/Mzc2ZDE1OTg4NGY2/MzQ5OTFlZC93d3cu/aW5zdXJlLmNvbS8",
+            "path": "\u203a car-insurance  \u203a insurance-inflation-index"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/pitVmXQvsiB54a_e0Vvom63By7FIUGHN69L846Oohck/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJlLmNvbS9p/bWFnZXMvYWR2aXNv/cl90b29sL2JhY2tn/cm91bmQvYXV0b19i/Z18wLmpwZw",
+            "original": "https://www.insure.com/images/advisor_tool/background/auto_bg_0.jpg",
+            "logo": false
+          },
+          "age": "July 16, 2025"
+        },
+        {
+          "title": "Average Cost of Mercedes-Benz Car Insurance (2025) | Insurify",
+          "url": "https://insurify.com/car-insurance/vehicle/mercedes-benz/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Car insurance costs depend on various individual rating factors, such as your age, driving record, marital status, location, and more. Another major factor is which specific model of Mercedes you have. Below, you\u2019ll find the most affordable rates by model based on Insurify data. ... Offering standard features like anti-lock brakes and advanced safety features alike, the Mercedes-Benz C-Class was voted as one of the safest cars by the Insurance Institute for Highway Safety (IIHS) in 2025.[1]",
+          "page_age": "2025-11-05T19:00:00",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/car-insurance/vehicle/mercedes-benz/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a car insurance  \u203a mercedes benz"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/gZkQ_u0YCRybmPwZFSljdeyKmIy7ktG5hZAHahFbQKU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbnN1/cmlmeWNkbi5jb20v/aW1hZ2VzL2NhcnJp/ZXIvaGlnaC1kZWZp/bml0aW9uL2dlaWNv/LnN2Zw",
+            "original": "https://insurifycdn.com/images/carrier/high-definition/geico.svg",
+            "logo": true
+          },
+          "age": "2 days ago"
+        },
+        {
+          "title": "Average car insurance cost in Des Moines, IA [Compare 2024 rates]",
+          "url": "https://www.insure.com/car-insurance/average-car-insurance-cost-in-des-moines-ia/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "While the average annual cost for male drivers is $1,579 per year, which is $11 less than what female drivers pay, according to a rate analysis by Insure.com. According to the Insurance Information Institute, statistics demonstrate that women ...",
+          "page_age": "2024-12-26T06:00:00",
+          "profile": {
+            "name": "Insure.com",
+            "url": "https://www.insure.com/car-insurance/average-car-insurance-cost-in-des-moines-ia/",
+            "long_name": "insure.com",
+            "img": "https://imgs.search.brave.com/Z3l7ymA7ijOzla_9xm1wqbDVUCiXVmQ28LthFXmC9DQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGNjN2U1NDA2/YmJkOWM2ZTFjMjIx/MDM2ZTliZjE1NzVk/ZDg1NmIwM2YxODBj/Mzc2ZDE1OTg4NGY2/MzQ5OTFlZC93d3cu/aW5zdXJlLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insure.com",
+            "hostname": "www.insure.com",
+            "favicon": "https://imgs.search.brave.com/Z3l7ymA7ijOzla_9xm1wqbDVUCiXVmQ28LthFXmC9DQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGNjN2U1NDA2/YmJkOWM2ZTFjMjIx/MDM2ZTliZjE1NzVk/ZDg1NmIwM2YxODBj/Mzc2ZDE1OTg4NGY2/MzQ5OTFlZC93d3cu/aW5zdXJlLmNvbS8",
+            "path": "  \u203a home  \u203a car insurance  \u203a average car insurance cost  \u203a car insurance rates by state  \u203a iowa  \u203a des moines, ia"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/pitVmXQvsiB54a_e0Vvom63By7FIUGHN69L846Oohck/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJlLmNvbS9p/bWFnZXMvYWR2aXNv/cl90b29sL2JhY2tn/cm91bmQvYXV0b19i/Z18wLmpwZw",
+            "original": "https://www.insure.com/images/advisor_tool/background/auto_bg_0.jpg",
+            "logo": false
+          },
+          "age": "December 26, 2024"
+        },
+        {
+          "title": "Average Cost of Car Insurance in Illinois for 2025",
+          "url": "https://www.experian.com/blogs/ask-experian/average-cost-car-insurance-illinois/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Women are statistically less likely to be involved in serious car accidents or get DUIs, according to the Insurance Information Institute. As a result, women may pay less for car insurance\u2014but that&#x27;s not always the case. Source: Experian Note: Costs above are a blended average of full and minimum coverage policies \u00b7 Differences between the cost of car insurance for men and women are typically more pronounced when age is added to the mix. Younger drivers, particularly men, generally pay more for auto insurance than older drivers because they&#x27;re less experienced and have a statistically higher rate of accidents.",
+          "page_age": "2025-10-14T04:30:21",
+          "profile": {
+            "name": "Experian",
+            "url": "https://www.experian.com/blogs/ask-experian/average-cost-car-insurance-illinois/",
+            "long_name": "experian.com",
+            "img": "https://imgs.search.brave.com/Kd5ZJX6uDioWFoKktbx3echvXfRsNSuzZed0HDR5aiw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDU3YTc1NTdk/MzRhMDkwNjEyODVm/ODgyMzUwZDliOGE2/Y2Q1ODZjYmU5OWU2/MTA4OTk5NzI1NjE0/ZjE0MGJiNS93d3cu/ZXhwZXJpYW4uY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "experian.com",
+            "hostname": "www.experian.com",
+            "favicon": "https://imgs.search.brave.com/Kd5ZJX6uDioWFoKktbx3echvXfRsNSuzZed0HDR5aiw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDU3YTc1NTdk/MzRhMDkwNjEyODVm/ODgyMzUwZDliOGE2/Y2Q1ODZjYmU5OWU2/MTA4OTk5NzI1NjE0/ZjE0MGJiNS93d3cu/ZXhwZXJpYW4uY29t/Lw",
+            "path": "  \u203a home  \u203a insurance  \u203a auto insurance  \u203a average cost of car insurance in illinois for 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/-leAuOY1TUN1GHIjHy8RwLQbyzpX12Hw1-n5IAwk0fQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/ZXhwZXJpYW4uY29t/L2Jsb2dzL2Fzay1l/eHBlcmlhbi93cC1j/b250ZW50L3VwbG9h/ZHMvYXZlcmFnZS1j/b3N0LWNhci1pbnN1/cmFuY2UtaWxsaW5v/aXMuanBn",
+            "original": "https://www.experian.com/blogs/ask-experian/wp-content/uploads/average-cost-car-insurance-illinois.jpg",
+            "logo": false
+          },
+          "age": "4 weeks ago"
+        },
+        {
+          "title": "8 Reasons Why Your Car Insurance Costs Are So High (Updated 2025)",
+          "url": "https://insurify.com/car-insurance/why-your-car-insurance-costs-are-so-high/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The car you drive can affect your auto insurance rates significantly. Insurers consider car and repair costs, risk of theft, and overall safety when quoting premiums, according to the Insurance Information Institute (Triple-I).",
+          "page_age": "2025-10-09T19:00:00",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/car-insurance/why-your-car-insurance-costs-are-so-high/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a car insurance  \u203a why your car insurance costs are so high"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/5XpbDK4XRDcSnkQsYt8CnkwJ07mNeGvr-CUXVcK0iA4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xNjIyNzMvNzIw/MHg0ODAwL2I2MGY5/NWRkMTMvY2FuZGlk/LXNob3Qtb2YtYmVh/dXRpZnVsLWNvbmNl/bnRyYXRlZC15b3Vu/Zy1jYXVjYXNpYW4t/d29tYW4tdHlwaW5n/LXRleHQtbWVzc2Fn/ZS1vbi1tb2JpbGUt/cGhvbmUtd2hpbGUt/Y2FsY3VsYXRpbmct/YmlsbHMtaW4ta2l0/Y2hlbi1zaXR0aW5n/LWF0LXRhYmxlLXdp/dGgtbGFwdG9wLWNv/bXB1dGVyLXBhcGVy/cy1hbmQtY2FsY3Vs/YXRvci5wbmc",
+            "original": "https://a.storyblok.com/f/162273/7200x4800/b60f95dd13/candid-shot-of-beautiful-concentrated-young-caucasian-woman-typing-text-message-on-mobile-phone-while-calculating-bills-in-kitchen-sitting-at-table-with-laptop-computer-papers-and-calculator.png",
+            "logo": false
+          },
+          "age": "1 month ago"
+        },
+        {
+          "title": "Car Insurance Basics 101: Definition, Coverages and Costs",
+          "url": "https://www.moneygeek.com/insurance/auto/car-insurance-basics-101/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "We designed our research to cut through the confusion and give you reliable information and cost estimates based on real-world data that reflects what drivers actually pay. ... MoneyGeek builds trust through rigorous research and fact-based content. We consulted the Insurance Information Institute, the leading source for risk management and insurance information, to ensure our guidance helps you make better financial decisions.",
+          "page_age": "2025-08-15T19:10:37",
+          "profile": {
+            "name": "MoneyGeek",
+            "url": "https://www.moneygeek.com/insurance/auto/car-insurance-basics-101/",
+            "long_name": "moneygeek.com",
+            "img": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "moneygeek.com",
+            "hostname": "www.moneygeek.com",
+            "favicon": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8",
+            "path": "  \u203a home  \u203a insurance  \u203a compare car insurance  \u203a car insurance basics 101"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/zvcccqn33xR2EDsSaTLrJ2W9BUdAPUlb9HR1JIaQLG8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbW9uZXlnZWVr/L2ltYWdlL3VwbG9h/ZC9jX3NjYWxlLHFf/YXV0bzplY28sd18x/MjAwLGZfYXV0byxm/bF9sb3NzeS92MTYy/ODA2MTEwNC9mZWF0/dXJlX2ltYWdlX2Jl/Z2lubmVyc19ndWlk/ZV90b19jYXJfaW5z/dXJhY2VfTW9uZXlf/R2Vla180OTBkNWY2/M2Q4LmpwZw",
+            "original": "https://res.cloudinary.com/moneygeek/image/upload/c_scale,q_auto:eco,w_1200,f_auto,fl_lossy/v1628061104/feature_image_beginners_guide_to_car_insurace_Money_Geek_490d5f63d8.jpg",
+            "logo": false
+          },
+          "age": "August 15, 2025"
+        },
+        {
+          "title": "How to lower auto insurance costs without sacrificing security - CBS News",
+          "url": "https://www.cbsnews.com/news/how-to-lower-auto-insurance-costs-without-sacrificing-security/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "According to the Insurance Information Institute, your premiums may drop 15% to 40%, depending on the deductible you choose. Have you been driving less? Maybe you&#x27;re retired, working from home or taking public transportation more often.",
+          "page_age": "2025-07-02T14:46:02",
+          "profile": {
+            "name": "CBS News",
+            "url": "https://www.cbsnews.com/news/how-to-lower-auto-insurance-costs-without-sacrificing-security/",
+            "long_name": "cbsnews.com",
+            "img": "https://imgs.search.brave.com/WMJ84WFf8h1hcjjVVUUmzl0nnJIhOkOa5cdJGjXcdWk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDUwNTNjY2I0/ZTJkMTA1NjkzNzQ3/Mzg4OGQ4ZDNmZjg0/YTFmYzhhZjBkMTU2/N2ZkNDA4MmZjZTM4/YTI3MTllMS93d3cu/Y2JzbmV3cy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cbsnews.com",
+            "hostname": "www.cbsnews.com",
+            "favicon": "https://imgs.search.brave.com/WMJ84WFf8h1hcjjVVUUmzl0nnJIhOkOa5cdJGjXcdWk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDUwNTNjY2I0/ZTJkMTA1NjkzNzQ3/Mzg4OGQ4ZDNmZjg0/YTFmYzhhZjBkMTU2/N2ZkNDA4MmZjZTM4/YTI3MTllMS93d3cu/Y2JzbmV3cy5jb20v",
+            "path": "  \u203a moneywatch  \u203a how to lower auto insurance costs without sacrificing security"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/V0ILMzTNr-EOXhYSajsDuTa7kJFN9igTAw_FtHkmbho/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMzLmNic25ld3Nz/dGF0aWMuY29tL2h1/Yi9pL3IvMjAyNS8w/Ny8wMi85NGE2ZTc1/YS0xNGE2LTQ3YTYt/OGYwMS02NjI2NDNk/ZTk2NDQvdGh1bWJu/YWlsLzEyMDB4NjMw/LzE1NzBmZGQyMmU2/OWYxMTAzMGJkODg5/OGQ5YmY3Y2NiL2dl/dHR5aW1hZ2VzLTE0/NTQ2OTQwNzUuanBn",
+            "original": "https://assets3.cbsnewsstatic.com/hub/i/r/2025/07/02/94a6e75a-14a6-47a6-8f01-662643de9644/thumbnail/1200x630/1570fdd22e69f11030bd8898d9bf7ccb/gettyimages-1454694075.jpg",
+            "logo": false
+          },
+          "age": "July 2, 2025"
+        },
+        {
+          "title": "Best Car Insurance Companies of September 2025 | U.S. News",
+          "url": "https://www.usnews.com/insurance/auto/best-car-insurance-companies",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Be sure you\u2019re comparing quotes ... rate when you switch companies. The cost of coverage varies based on factors like your driving record, location, age, and vehicle....",
+          "page_age": "2025-11-03T17:25:00",
+          "profile": {
+            "name": "U.S. News",
+            "url": "https://www.usnews.com/insurance/auto/best-car-insurance-companies",
+            "long_name": "usnews.com",
+            "img": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "usnews.com",
+            "hostname": "www.usnews.com",
+            "favicon": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8",
+            "path": "\u203a insurance  \u203a auto  \u203a best-car-insurance-companies"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/n7CkuD0Wd8NO-LIpwzw5NXXV-iJ40kAyPHbS5c4PQ3M/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dXNuZXdzLmNvbS9j/bXNtZWRpYS9jNS9m/Ny9mYzE5NzExNjRh/OGI5MGJjYzg2N2Q1/ZTI4YTNkL3JpYmJv/bi5zdmc",
+            "original": "https://www.usnews.com/cmsmedia/c5/f7/fc1971164a8b90bcc867d5e28a3d/ribbon.svg",
+            "logo": true
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "Cheapest Car Insurance Companies of November 2025 | CNBC Select",
+          "url": "https://www.cnbc.com/select/best-cheap-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Premiums have increased for several reasons, according to the Insurance Information Institute. Economic factors: The cost of repairing and replacing vehicles has risen faster than inflation, as have medical and legal bills. Tariffs on automobiles, parts and raw materials also impact insurance ...",
+          "page_age": "2025-11-01T04:41:01",
+          "profile": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/select/best-cheap-car-insurance/",
+            "long_name": "Consumer News and Business Channel",
+            "img": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cnbc.com",
+            "hostname": "www.cnbc.com",
+            "favicon": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+            "path": "  \u203a cnbc select  \u203a insurance  \u203a best cheap car insurance companies of november 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/XXmi6-BQNanot2HNGmGTsjhGCsy5C-R3KenA_DOCsH0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDYwMzYyNjMt/MTU2Mzk0ODg4OTg0/MG5vbWluYXRlZC10/aGUtam95LWhhcHBp/bmVzcy1hbmQtZXhj/aXRlbWVudC1vZi1i/dXlpbmcteW91ci1m/aXJzdC1jYXItdG9u/eS1hbmRyZXdzLXBo/b3RvZ3JhcGh5X3Qy/MF96bDdicHIuanBn/P3Y9MTYwNjMzNDMw/Nw",
+            "original": "https://image.cnbcfm.com/api/v1/image/106036263-1563948889840nominated-the-joy-happiness-and-excitement-of-buying-your-first-car-tony-andrews-photography_t20_zl7bpr.jpg?v=1606334307",
+            "logo": false
+          },
+          "age": "1 week ago"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

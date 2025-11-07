@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_q4qtxfmpz8lh1sse1viuety0",
+  "search_id": "search_jflc9eezjz72fdng9kf97heu",
+  "timestamp": "2025-11-07T12:25:11.654204",
+  "startedAt": "2025-11-07T12:25:11.654204",
+  "completedAt": "2025-11-07T12:25:13.390924",
+  "durationSeconds": 1.74,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:geico.com SR-22",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:geico.com SR-22",
+      "show_strict_warning": false,
+      "cleaned": "SR-22",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "SR-22",
+        "sites": [
+          "geico.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "websearch_id": "websearch_xdllgyzuw0pu95wef71bj0a0",
+  "search_id": "search_hpa61c5u00mzb6tjajplflc5",
+  "timestamp": "2025-11-07T12:21:19.105024",
+  "startedAt": "2025-11-07T12:21:19.105024",
+  "completedAt": "2025-11-07T12:21:21.041855",
+  "durationSeconds": 1.94,
+  "urlsDiscoveredCount": 7,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" \"bundle discount\" \"auto\" \"home\" percentage",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"GEICO\" \"bundle discount\" \"auto\" \"home\" percentage",
+      "show_strict_warning": false,
+      "cleaned": "GEICO bundle discount auto home percentage",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO bundle discount auto home percentage"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "r/Insurance on Reddit: question about bundled auto-home discounts",
+          "url": "https://www.reddit.com/r/Insurance/comments/1ll1306/question_about_bundled_autohome_discounts/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Yes, and just for the record, auto/home discount is the biggest discount on a homeowners policy so your premium increase could be significant. 30% would not be surprising. ... Thanks for the comments, I just chatted with a rep and it looks like ...",
+          "page_age": "2025-06-26T14:08:53",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Insurance/comments/1ll1306/question_about_bundled_autohome_discounts/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/insurance  \u203a question about bundled auto-home discounts"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A5H_aQiEBuUODR0lNeU8iDfhrWUvO8oEmRGE_mcS_gM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVkZGl0c3RhdGlj/LmNvbS9pY29uLnBu/Zw",
+            "original": "https://www.redditstatic.com/icon.png",
+            "logo": true
+          },
+          "age": "June 26, 2025"
+        },
+        {
+          "title": "Best Home And Auto Insurance Bundle In Georgia 2025",
+          "url": "https://www.insuranceopedia.com/homeowners-insurance/home-auto-bundle-georgia",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Nationwide: Nationwide provides Georgia residents with a home and auto bundle discount of 20%. GEICO: Geico gives an average of 20%.",
+          "page_age": "2025-09-28T08:55:53",
+          "profile": {
+            "name": "Insuranceopedia",
+            "url": "https://www.insuranceopedia.com/homeowners-insurance/home-auto-bundle-georgia",
+            "long_name": "insuranceopedia.com",
+            "img": "https://imgs.search.brave.com/KsBHSl4Wc_wUe27LG7XUNuU990n3ocgt5t6hB12cOiM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc3ZjI2YjMy/ZjI1NGM1NDUxYTNh/NTg4ZTBiZmZkZDM4/NTM0MTkyZGM2MTVh/NTNkOGNhOWYzZDk0/MWRmMTViNC93d3cu/aW5zdXJhbmNlb3Bl/ZGlhLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insuranceopedia.com",
+            "hostname": "www.insuranceopedia.com",
+            "favicon": "https://imgs.search.brave.com/KsBHSl4Wc_wUe27LG7XUNuU990n3ocgt5t6hB12cOiM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc3ZjI2YjMy/ZjI1NGM1NDUxYTNh/NTg4ZTBiZmZkZDM4/NTM0MTkyZGM2MTVh/NTNkOGNhOWYzZDk0/MWRmMTViNC93d3cu/aW5zdXJhbmNlb3Bl/ZGlhLmNvbS8",
+            "path": "\u203a homeowners-insurance  \u203a home-auto-bundle-georgia"
+          },
+          "age": "September 28, 2025"
+        },
+        {
+          "title": "Best Home and Car Insurance Bundling Discounts in 2025 (Save up to 25% With These Companies) | Clearsurance",
+          "url": "https://clearsurance.com/blog/best-home-and-car-insurance-bundling-discounts",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Whether you are shopping at Allstate ... Allstate, Geico, Liberty Mutual, and American Family have the best bundle discount of 25%....",
+          "page_age": "2025-09-19T10:20:23",
+          "profile": {
+            "name": "Clearsurance -",
+            "url": "https://clearsurance.com/blog/best-home-and-car-insurance-bundling-discounts",
+            "long_name": "clearsurance.com",
+            "img": "https://imgs.search.brave.com/KcX9p4u9Y6Gb4ybHTKD6RJ7aDtcyBA1hsroH-6pxVKc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTY1ZTZhMWJj/ODc5NjIzOTgzODAw/NjYzZDgzNGYzZDY0/MmFhMzA1YTcxNzc1/OTBjNTBmM2M0M2Fj/N2I5ZjkzZS9jbGVh/cnN1cmFuY2UuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "clearsurance.com",
+            "hostname": "clearsurance.com",
+            "favicon": "https://imgs.search.brave.com/KcX9p4u9Y6Gb4ybHTKD6RJ7aDtcyBA1hsroH-6pxVKc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTY1ZTZhMWJj/ODc5NjIzOTgzODAw/NjYzZDgzNGYzZDY0/MmFhMzA1YTcxNzc1/OTBjNTBmM2M0M2Fj/N2I5ZjkzZS9jbGVh/cnN1cmFuY2UuY29t/Lw",
+            "path": "  \u203a home  \u203a uncategorized"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/BEl95j-VQk4WOdjWGx0-aPj-pEKW2r60NQe1HK-qdIM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9xdW90/ZS5jbGVhcnN1cmFu/Y2UuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI1LzAyL0Jl/c3RfSG9tZV9hbmRf/Q2FyX0luc3VyYW5j/ZV9CdW5kbGluZ19E/aXNjb3VudHNfU3F1/YXJlX0ltYWdlX18x/Xy5qcGc",
+            "original": "https://quote.clearsurance.com/wp-content/uploads/2025/02/Best_Home_and_Car_Insurance_Bundling_Discounts_Square_Image__1_.jpg",
+            "logo": false
+          },
+          "age": "September 19, 2025"
+        },
+        {
+          "title": "Best Home and Auto Insurance Bundles for 2025",
+          "url": "https://www.usnews.com/insurance/homeowners-insurance/best-home-and-auto-insurance-bundles",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "... When you purchase homeowners and auto insurance policies from the same company, you can typically qualify for savings of 5% to 30% off your premiums, depending on the insurer and your specific situation.",
+          "page_age": "2025-11-01T19:27:00",
+          "profile": {
+            "name": "U.S. News",
+            "url": "https://www.usnews.com/insurance/homeowners-insurance/best-home-and-auto-insurance-bundles",
+            "long_name": "usnews.com",
+            "img": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "usnews.com",
+            "hostname": "www.usnews.com",
+            "favicon": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8",
+            "path": "\u203a insurance  \u203a homeowners-insurance  \u203a best-home-and-auto-insurance-bundles"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/SPZLRN_St_tO7Lo_XkB32mpCkngPOacLIrNPgN27ZA8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dXNuZXdzLmNvbS9k/aW1zNC9VU05FV1Mv/M2M2MGRhMi8yMTQ3/NDgzNjQ3L3RodW1i/bmFpbC85NzB4NjQ3/L3F1YWxpdHkvODUv/P3VybD1odHRwcyUz/QSUyRiUyRnd3dy51/c25ld3MuY29tJTJG/Y21zbWVkaWElMkZl/YyUyRmU3JTJGYWMy/NGExYzA0MDIxYTE0/YTRlYjAzYWVhYzE3/YiUyRmlzdG9jay0x/MjgyODgzMTQ3Lmpw/Zw",
+            "original": "https://www.usnews.com/dims4/USNEWS/3c60da2/2147483647/thumbnail/970x647/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2Fec%2Fe7%2Fac24a1c04021a14a4eb03aeac17b%2Fistock-1282883147.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Best Companies to Bundle Home and Auto Insurance (2025)",
+          "url": "https://insurify.com/car-insurance/coverage/home-and-auto/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Discounts range from 10% to 25%, but if one policy has higher premiums, the overall bundle might not be cheaper than buying separate policies from two different companies. Yes. GEICO offers bundle discounts by pairing its car insurance with ...",
+          "page_age": "2025-09-09T00:00:00",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/car-insurance/coverage/home-and-auto/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a car insurance  \u203a coverage  \u203a home and auto"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/2KQRFgjXr1IBdjxEB5glUK5ixoc_zFAxWf2EtBHhoXQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xNjIyNzMvMTAw/MHg3NTAvMTNlODI3/Y2U5YS9jYXItcGFy/a2VkLW91dHNpZGUt/aG9tZS5qcGc",
+            "original": "https://a.storyblok.com/f/162273/1000x750/13e827ce9a/car-parked-outside-home.jpg",
+            "logo": false
+          },
+          "age": "September 9, 2025"
+        },
+        {
+          "title": "Geico Home Insurance Review: Is It From Geico or Another Company? | TheTruthAboutInsurance.com",
+          "url": "https://www.thetruthaboutinsurance.com/geico-home-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico home insurance is underwritten by about 30 provider partners. Read now to learn how to bundle rates for $98/mo from Geico home insurance companies.",
+          "page_age": "2025-01-06T05:01:57",
+          "profile": {
+            "name": "Thetruthaboutinsurance",
+            "url": "https://www.thetruthaboutinsurance.com/geico-home-insurance/",
+            "long_name": "thetruthaboutinsurance.com",
+            "img": "https://imgs.search.brave.com/hBd_FtEpvNv5EW-3CLomlsu-FwYBxgPjw7pSpcEWsmQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvY2M3MDc1NWIx/YmMwNzYwZmE2M2Vl/ZGMwNGJiZjg1YWNi/ODcxYTlhOWE1NmFj/ZDFmNGQyYzdiMjJm/ODc2YzQzMi93d3cu/dGhldHJ1dGhhYm91/dGluc3VyYW5jZS5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thetruthaboutinsurance.com",
+            "hostname": "www.thetruthaboutinsurance.com",
+            "favicon": "https://imgs.search.brave.com/hBd_FtEpvNv5EW-3CLomlsu-FwYBxgPjw7pSpcEWsmQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvY2M3MDc1NWIx/YmMwNzYwZmE2M2Vl/ZGMwNGJiZjg1YWNi/ODcxYTlhOWE1NmFj/ZDFmNGQyYzdiMjJm/ODc2YzQzMi93d3cu/dGhldHJ1dGhhYm91/dGluc3VyYW5jZS5j/b20v",
+            "path": "  \u203a home  \u203a top 10 homeowners insurance companies  \u203a what does homeowners insurance cover?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/m864ZOr0Mxt7aecQHbEswVAMJqR9eX8JfEhYabnbkUY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dGhldHJ1dGhhYm91/dGluc3VyYW5jZS5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjAvMTIvYzhlMDlk/MTMtdHJ1dGhhYm91/dGlucy1sb2dvLnN2/Zw",
+            "original": "https://www.thetruthaboutinsurance.com/wp-content/uploads/2020/12/c8e09d13-truthaboutins-logo.svg",
+            "logo": true
+          },
+          "age": "January 6, 2025"
+        },
+        {
+          "title": "Can You Save With a Renters and Auto Insurance Bundle? | FinanceBuzz",
+          "url": "https://financebuzz.com/save-with-renters-auto-insurance-bundle",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Erie and Amica ranked as the top renters insurance companies for customer satisfaction according to the 2024 J.D. Power U.S. Home Insurance Study. These two insurers were also ranked as some of the best car insurance companies in many of the regional markets that J.D. Power examined in the same year. Yes, GEICO offers a renters and auto insurance bundle discount, but it doesn&#x27;t advertise the amount.",
+          "page_age": "2025-05-01T20:29:37",
+          "profile": {
+            "name": "FinanceBuzz",
+            "url": "https://financebuzz.com/save-with-renters-auto-insurance-bundle",
+            "long_name": "financebuzz.com",
+            "img": "https://imgs.search.brave.com/S-NKWliRWqMFS55aFMSJ2mN0Nznm6Nk76Mt95jC6F9U/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWNjZDU5ODQy/Y2NmN2M2ZWQxZWMw/MGMxMGFkMjg1NThm/NjFmMTI0ZDUzNTIz/NDk1NzA3YzI1MTRk/MGY1OTg4Yy9maW5h/bmNlYnV6ei5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "financebuzz.com",
+            "hostname": "financebuzz.com",
+            "favicon": "https://imgs.search.brave.com/S-NKWliRWqMFS55aFMSJ2mN0Nznm6Nk76Mt95jC6F9U/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWNjZDU5ODQy/Y2NmN2M2ZWQxZWMw/MGMxMGFkMjg1NThm/NjFmMTI0ZDUzNTIz/NDk1NzA3YzI1MTRk/MGY1OTg4Yy9maW5h/bmNlYnV6ei5jb20v",
+            "path": "  \u203a insurance  \u203a car insurance  \u203a can you save with a renters and auto insurance bundle?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/4O47Pz-Fh_ie2iUvM-6q-zVIRU0gth6bQx_XjrP1sog/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/ZmluYW5jZWJ1enou/Y29tL2ZpbHRlcnM6/cXVhbGl0eSgxMDAp/L2ltYWdlcy8yMDI1/LzA0LzMwL3BlcnNv/bl9ob2xkaW5nX2Nh/cl9rZXlzLnBuZw",
+            "original": "https://cdn.financebuzz.com/filters:quality(100)/images/2025/04/30/person_holding_car_keys.png",
+            "logo": false
+          },
+          "age": "May 1, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

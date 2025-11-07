@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_xhluzuvjqlksuewj8gwjg430",
+  "search_id": "search_fp9lx132ljg2ntgmntzvheqa",
+  "timestamp": "2025-11-07T12:33:07.030742",
+  "startedAt": "2025-11-07T12:33:07.030742",
+  "completedAt": "2025-11-07T12:33:08.720294",
+  "durationSeconds": 1.69,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:insurance.ca.gov required disclosures",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:insurance.ca.gov required disclosures",
+      "show_strict_warning": false,
+      "cleaned": "required disclosures",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "required disclosures",
+        "sites": [
+          "insurance.ca.gov"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

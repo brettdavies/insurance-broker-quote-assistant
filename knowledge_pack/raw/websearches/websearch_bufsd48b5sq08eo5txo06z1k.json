@@ -1,0 +1,803 @@
+{
+  "websearch_id": "websearch_bufsd48b5sq08eo5txo06z1k",
+  "search_id": "search_raifd91fm41c8xbypxwf0eza",
+  "timestamp": "2025-11-07T12:34:52.452518",
+  "startedAt": "2025-11-07T12:34:52.452518",
+  "completedAt": "2025-11-07T12:34:54.300718",
+  "durationSeconds": 1.85,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:investopedia.com auto insurance explained",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:investopedia.com auto insurance explained",
+      "show_strict_warning": false,
+      "cleaned": "auto insurance explained",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "auto insurance explained",
+        "sites": [
+          "investopedia.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Insurance Coverage Types Explained: Auto, Life, and Homeowner\u2019s",
+          "url": "https://www.investopedia.com/terms/i/insurance-coverage.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Insurance premiums are determined by factors like risk assessment, the insured party&#x27;s location, and personal characteristics such as age and health. Auto insurance often includes options like liability, collision, and uninsured motorist coverage, while life insurance can be term-based or permanent.",
+          "page_age": "2025-08-21T20:34:11",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/i/insurance-coverage.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a i  \u203a insurance-coverage.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/3wwBqXuW4yaE6ieNADwMntu6EMS-6_q3ujUu7_pmD-U/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iLzZE/enlfNzZ3cGdDbUxJ/SmNiYTdkM1dENUxD/Zz0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0luc3VyYW5jZUNv/dmVyYWdlTWFqb3JU/eXBlc2FuZEhvd1Ro/ZXlXb3JrLTlhZTIx/MTY1YjIwYTRmYTA5/M2I1ZGNlOGZkNjA2/MTMxLmpwZw",
+            "original": "https://www.investopedia.com/thmb/6Dzy_76wpgCmLIJcba7d3WD5LCg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/InsuranceCoverageMajorTypesandHowTheyWork-9ae21165b20a4fa093b5dce8fd606131.jpg",
+            "logo": false
+          },
+          "age": "August 21, 2025"
+        },
+        {
+          "title": "What Is Insurance?",
+          "url": "https://www.investopedia.com/terms/i/insurance.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Insurance is purchased to provide financial protection or reimbursement against losses resulting from accidents, injury, or property damage. An insurance company pools clients\u2019 risks to make payments more affordable for the insured. Essential insurance policies that people tend to obtain are health insurance, auto insurance, business insurance, home insurance, and life insurance, to name a few.",
+          "page_age": "2025-08-07T21:19:34",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/i/insurance.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a i  \u203a insurance.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/4SazIOWAVT1eEwM0C24BXAXmNdHPealq0TFXUXX0eWM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL3Iw/RzhkQ0p4b1VWNXJz/YVRFdVI4bVVVeW1k/ST0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L3Rlcm1zX2lfaW5z/dXJhbmNlX0ZJTkFM/Xy0zNTU2MzkzYjNi/YmY0ODNlOWJjOGFk/OWI3MDc2NDFlNC5q/cGc",
+            "original": "https://www.investopedia.com/thmb/r0G8dCJxoUV5rsaTEuR8mUUymdI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/terms_i_insurance_FINAL_-3556393b3bbf483e9bc8ad9b707641e4.jpg",
+            "logo": false
+          },
+          "age": "August 7, 2025"
+        },
+        {
+          "title": "How the 6 Types of Car Insurance Coverage Can Affect Your Wallet",
+          "url": "https://www.investopedia.com/types-of-car-insurance-11680793",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "This is called 100/300/100 liability coverage, and some insurance companies offer discounts of 5% to 10% for selecting this coverage. In addition to bodily injury liability and property damage liability, many states require you to carry medical payments or personal injury protection (PIP) and uninsured/underinsured motorist coverage. New Hampshire is the only state that does not require auto insurance, but only if you can prove that you have $100,000 in a bank account to cover potential accidents.",
+          "page_age": "2025-04-07T16:12:59",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/types-of-car-insurance-11680793",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a types-of-car-insurance-11680793"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/hS8A4c58JiYRicz-SN2Jfhkf79MLGRgCGQDxfFOgLhI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL0lh/WGlsYWlUaDIwbEdN/T1VDS2dKVW9KXy02/Zz0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L2J1eWluZ19jYXJf/MS01NmExMDMzZTNk/Zjc4Y2FmZGFhN2My/YzkuanBn",
+            "original": "https://www.investopedia.com/thmb/IaXilaiTh20lGMOUCKgJUoJ_-6g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/buying_car_1-56a1033e3df78cafdaa7c2c9.jpg",
+            "logo": false
+          },
+          "age": "April 7, 2025"
+        },
+        {
+          "title": "Comprehensive Car Insurance: What It Covers and When to Buy",
+          "url": "https://www.investopedia.com/terms/c/comprehensive-insurance.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Comprehensive insurance, collision insurance, and liability insurance are the three components of an automobile insurance policy. In most states, the law requires drivers to carry a stated amount of liability insurance, but collision and comprehensive insurance are optional if someone owns ...",
+          "page_age": "2025-05-04T02:40:14",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/c/comprehensive-insurance.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a c  \u203a comprehensive-insurance.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/rgxVTT3kmg-oT6e1V2e_KKQ3DKh_rui_4IoczlJKzsI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL0Qz/RU05a3dWVDdPaU16/Zmd6UmVlMzdkZFZi/ST0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L2NvbXByZWhlbnNp/dmUtaW5zdXJhbmNl/LmFzcC1maW5hbC0z/ZmM4MWUwNzlkMDQ0/MjhlOGMxYzY0NTZi/MzExYzNhMS5wbmc",
+            "original": "https://www.investopedia.com/thmb/D3EM9kwVT7OiMzfgzRee37ddVbI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/comprehensive-insurance.asp-final-3fc81e079d04428e8c1c6456b311c3a1.png",
+            "logo": false
+          },
+          "age": "May 4, 2025"
+        },
+        {
+          "title": "Understanding Insurance Premiums: Definitions, Calculations, and Types",
+          "url": "https://www.investopedia.com/terms/i/insurance-premium.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "An insurance premium is a payment made by individuals or businesses to maintain coverage under an insurance policy, which provides protection against various risks. Premiums are required for health, auto, home, and life insurance policies, among others.",
+          "page_age": "2025-08-22T16:23:35",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/i/insurance-premium.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a i  \u203a insurance-premium.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/rXx68E8tWOtyN1aeSoNHA3TrcwcxrEetZ1XmIX9JkWY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL2dl/UDVfMzRTU2FNMTVJ/UmVnUmhwenYyRUlu/TT0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0luc3VyYW5jZVBy/ZW1pdW1fRmluYWxf/NDE5NDUzOS00OWM1/ZGYyNmZiYTc0NmIw/YjlkMTZkZTZlMzAy/ZmRmNS5qcGc",
+            "original": "https://www.investopedia.com/thmb/geP5_34SSaM15IRegRhpzv2EInM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/InsurancePremium_Final_4194539-49c5df26fba746b0b9d16de6e302fdf5.jpg",
+            "logo": false
+          },
+          "age": "August 22, 2025"
+        },
+        {
+          "title": "Preferred Auto Coverage: What It Is and How It Works",
+          "url": "https://www.investopedia.com/terms/p/preferred-auto-coverage.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Preferred auto insurance is a type of insurance policy that is only available to drivers who are least likely to file a claim.",
+          "page_age": "2025-07-18T16:01:42",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/p/preferred-auto-coverage.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a p  \u203a preferred-auto-coverage.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/iK0b-ofpFmOu4Cv3v_gPChfJAfLTFTCovnEN8jYgA3U/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL21y/MHYtSjg3cWtfX2NL/VnM0bURtMHEtcVYy/TT0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L3ByZWZlcnJlZC1h/dXRvLWNvdmVyYWdl/LUZJTkFMLTVjMTVi/OWVmNWM4ODRkNWZh/Y2NiOTBhM2MyYWRl/NTNkLnBuZw",
+            "original": "https://www.investopedia.com/thmb/mr0v-J87qk__cKVs4mDm0q-qV2M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/preferred-auto-coverage-FINAL-5c15b9ef5c884d5faccb90a3c2ade53d.png",
+            "logo": false
+          },
+          "age": "July 18, 2025"
+        },
+        {
+          "title": "Third-Party Liability Insurance Types",
+          "url": "https://www.investopedia.com/terms/t/third-party-insurance.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Third-party liability insurance, such as auto insurance, is a policy designed to protect you against the actions or claims of a third party. Learn how it benefits you.",
+          "page_age": "2025-07-14T07:23:17",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/t/third-party-insurance.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a t  \u203a third-party-insurance.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/T3inLzL-sihpCKA6PCRg7a-Ym7iRv8gUhBNGzPpOrv8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL3Rs/YzU5ei1ERk4yLV9E/dU5DRHdwSXdMSUQt/UT0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L3RoaXJkLXBhcnR5/LWluc3VyYW5jZS5h/c3AtZmluYWwtYjcz/NDA1ODlmNjkyNDUz/M2I5MjIxMDZkNDZi/ZDZiYTYuanBn",
+            "original": "https://www.investopedia.com/thmb/tlc59z-DFN2-_DuNCDwpIwLID-Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/third-party-insurance.asp-final-b7340589f6924533b922106d46bd6ba6.jpg",
+            "logo": false
+          },
+          "age": "July 14, 2025"
+        },
+        {
+          "title": "Car Insurance Premiums Have Soared: What Is Behind the Spike?",
+          "url": "https://www.investopedia.com/car-insurance-premiums-have-soared-what-is-behind-the-spike-8773774",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Car insurance premiums are expected to rise 7.5% in 2025, a continuation of an upward trend seen over the past several years. Inflation, risky driving, and litigation are factors driving up the price of auto insurance premiums.",
+          "page_age": "2025-01-24T23:18:55",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/car-insurance-premiums-have-soared-what-is-behind-the-spike-8773774",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a car-insurance-premiums-have-soared-what-is-behind-the-spike-8773774"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/amJZ3KSNx7Oh3D-CyGVz59eR90uoVGe7kIvtO1OxE8k/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL2R5/bGs5OWxLeG1pVWNV/ZjQ5T2xKbmIxeWxy/bz0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L2RyaXZpbmctYzUx/OGQyY2M4YzVlNGFj/ODkyOTIwMGVlZGU4/YmM2OWYuanBn",
+            "original": "https://www.investopedia.com/thmb/dylk99lKxmiUcUf49OlJnb1ylro=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/driving-c518d2cc8c5e4ac8929200eede8bc69f.jpg",
+            "logo": false
+          },
+          "age": "January 24, 2025"
+        },
+        {
+          "title": "Are You Paying Too Much for Car Insurance? How These States Are Taking the Wheel on High Rates",
+          "url": "https://www.investopedia.com/car-insurance-states-take-wheel-11757794",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Many insurers offer savings for things like safe driving, bundling car and home insurance, or driving fewer miles. \u201cThere may also be discounts for auto club members, senior drivers, and a paid-in-full bill plan,\u201d Patten said.",
+          "page_age": "2025-06-23T17:18:47",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/car-insurance-states-take-wheel-11757794",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a car-insurance-states-take-wheel-11757794"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/B2JmfgC7vGC0sNQkYgO8N-qdSUIUMyQfEM5efD7CZl8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL05j/ZWFPeEpwV2xpNjI4/TlJJR3N6TDRLMDB0/UT0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0dldHR5SW1hZ2Vz/LTE4MDU2MTIwNjUt/MmQ1ODg5MGE4Zjdl/NGNhNDhmYWUxOTQ2/ZDAwN2RkOTcuanBn",
+            "original": "https://www.investopedia.com/thmb/NceaOxJpWli628NRIGszL4K00tQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1805612065-2d58890a8f7e4ca48fae1946d007dd97.jpg",
+            "logo": false
+          },
+          "age": "June 23, 2025"
+        },
+        {
+          "title": "\u2018I Hoped I\u2019d Never Be Found Out\u2019: How Far Would You Go to Save on Car Insurance?",
+          "url": "https://www.investopedia.com/i-hoped-id-never-be-found-out-how-far-would-you-go-to-save-on-car-insurance-11760361",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Registering your car in another state to save on insurance can be tempting, but it&#x27;s risky. ... Auto insurance rates skyrocketed by 15% in 2024, and another 5% increase is expected this year, according to Insurify. Given these exorbitant spikes, if you live in a state with high rates, you may feel tempted to register your vehicle in a different state to get lower premiums.",
+          "page_age": "2025-06-24T22:42:57",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/i-hoped-id-never-be-found-out-how-far-would-you-go-to-save-on-car-insurance-11760361",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a i-hoped-id-never-be-found-out-how-far-would-you-go-to-save-on-car-insurance-11760361"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/gTj3zmkoLrqOJHYVoxm7EYIEmwkINjNZvVdUXagxZEc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL3Jm/c1Z4eWdqX0FBNUVk/NFE1NlpwQTRJSFpI/dz0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0dldHR5SW1hZ2Vz/LTE0MDczMjQ2ODMt/OTAwMzVjYmUwNzFj/NDYwMDlkZDA2NDcw/YjA3NDBiMWQuanBn",
+            "original": "https://www.investopedia.com/thmb/rfsVxygj_AA5Ed4Q56ZpA4IHZHw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1407324683-90035cbe071c46009dd06470b0740b1d.jpg",
+            "logo": false
+          },
+          "age": "June 24, 2025"
+        },
+        {
+          "title": "Car Insurance Premiums On The Rise: Are Personal Injury Attorneys To Blame?",
+          "url": "https://www.investopedia.com/car-insurance-premiums-on-the-rise-are-personal-injury-attorneys-to-blame-11742480",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Litigation could be driving up insurers&#x27; costs and drivers&#x27; premiums. Other factors, such as risky driving behavior, claim severity, and inflation, are also impacting auto insurance premiums.",
+          "page_age": "2025-05-30T19:58:09",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/car-insurance-premiums-on-the-rise-are-personal-injury-attorneys-to-blame-11742480",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a car-insurance-premiums-on-the-rise-are-personal-injury-attorneys-to-blame-11742480"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/uh1VMFxQ_CZAwOYYclp2WSeTsrdyzsz_7lxbHdtZEXk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL2JE/Qlc2VTU4ZGVMVWpZ/LXhsNS1wRkNWOEhk/OD0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0dldHR5SW1hZ2Vz/LTEyNTI2Njk4NjAt/YTM4YzZjYTkyMTNh/NGIxMzk3MDA5NzZl/MzIxNzQ0ZjIuanBn",
+            "original": "https://www.investopedia.com/thmb/bDBW6U58deLUjY-xl5-pFCV8Hd8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1252669860-a38c6ca9213a4b139700976e321744f2.jpg",
+            "logo": false
+          },
+          "age": "May 30, 2025"
+        },
+        {
+          "title": "Discrimination in Insurance Underwriting Guidelines",
+          "url": "https://www.investopedia.com/insurance-underwriting-guidelines-discrimination-5203311",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In 1938, New Hampshire passed a state insurance law mandating that insurers offer specific kinds of coverage, known as an assigned risk plan, making it the first state to do so. No-fault insurance came later, when Massachusetts introduced it in 1970. Guaranteed access to auto insurance would also come in the 1970s.",
+          "page_age": "2025-01-30T06:09:25",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/insurance-underwriting-guidelines-discrimination-5203311",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a insurance-underwriting-guidelines-discrimination-5203311"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/fFrkPYLueJdZq0wrGiZ1zfwacqe5mOq8Bmb-Ild5GRY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL3h2/cmtkcFlkRDM0Smow/NTZsdTkwWkZNRmFJ/OD0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0dldHR5SW1hZ2Vz/LTkyOTgxODI0Mi00/MjQ2ZjhjMDVlOTE0/OTEzOTdkODdmYTYy/ODljNmVhYS5qcGc",
+            "original": "https://www.investopedia.com/thmb/xvrkdpYdD34Jj056lu90ZFMFaI8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-929818242-4246f8c05e91491397d87fa6289c6eaa.jpg",
+            "logo": false
+          },
+          "age": "January 30, 2025"
+        },
+        {
+          "title": "Car Insurance That Pays You Back? It\u2019s a Thing - Here\u2019s What You Should Know",
+          "url": "https://www.investopedia.com/car-insurance-that-pays-you-back-its-a-thing-heres-what-you-should-know-11761936",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Car insurance isn\u2019t cheap, with Americans paying an average of $2,313 in 2024. A lesser-known policy type could help you save. Car insurance dividend policies return a portion of premiums to policyholders if certain conditions, typically tied to the insurer\u2019s financial performance, are met.",
+          "page_age": "2025-06-30T10:39:00",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/car-insurance-that-pays-you-back-its-a-thing-heres-what-you-should-know-11761936",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a car-insurance-that-pays-you-back-its-a-thing-heres-what-you-should-know-11761936"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/lyFxc0mie9GaEItXg2LD4y1ms_Xc_8sRE4Xp_KIkRCE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL3Ri/MDBkODJrd0laU1No/aVhER19QNjdfMUlN/cz0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0dldHR5SW1hZ2Vz/LTIxNzg3MjIyMzgt/ZmQ2NjkwMGRhMTkx/NDVlMGI1NGE3YzVi/ZjlhM2Q5MDguanBn",
+            "original": "https://www.investopedia.com/thmb/tb00d82kwIZSShiXDG_P67_1IMs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-2178722238-fd66900da19145e0b54a7c5bf9a3d908.jpg",
+            "logo": false
+          },
+          "age": "June 30, 2025"
+        },
+        {
+          "title": "Auto Insurers Have Raised Prices For Years, But 2025 Could Be A Buyer's Market",
+          "url": "https://www.investopedia.com/auto-insurers-have-raised-prices-for-years-but-2025-could-be-a-buyer-s-market-11751655",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Car insurance prices have almost doubled over the past five years as insurers raised prices to keep up with increased claims costs. They were finally profitable in 2024, which means they need to shift toward taking care of their customers to retain them.",
+          "page_age": "2025-06-11T15:13:53",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/auto-insurers-have-raised-prices-for-years-but-2025-could-be-a-buyer-s-market-11751655",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a auto-insurers-have-raised-prices-for-years-but-2025-could-be-a-buyer-s-market-11751655"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/JzlZ43zFU-lcusert5wijApABMT1W9rjXSSX2RSP4p8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL1kw/UENYYlJxN21CQnRZ/WVpDSGowaHhudzEx/TT0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0dldHR5SW1hZ2Vz/LTE1MTIwNDI0NTMt/NzJkZjJjMDkyMjk3/NGU5ZGFlODE3MjMx/MGQ4NDIzYzAuanBn",
+            "original": "https://www.investopedia.com/thmb/Y0PCXbRq7mBBtYYZCHj0hxnw11M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1512042453-72df2c0922974e9dae8172310d8423c0.jpg",
+            "logo": false
+          },
+          "age": "June 11, 2025"
+        },
+        {
+          "title": "Car Insurance Prices Keep Rising and Drivers Are Struggling to Keep Up",
+          "url": "https://www.investopedia.com/car-insurance-prices-keep-rising-and-drivers-are-struggling-to-keep-up-11678676",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "To offset the rising costs of insurance, more than a quarter of drivers have bought less coverage, and 27% chose a higher deductible for a lower monthly payment.",
+          "page_age": "2025-02-12T19:37:53",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/car-insurance-prices-keep-rising-and-drivers-are-struggling-to-keep-up-11678676",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a car-insurance-prices-keep-rising-and-drivers-are-struggling-to-keep-up-11678676"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/oqlZtsKwwXLqf65yg5Dx9nsXYbwwcKC-s2KD189Qw9w/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL2p4/MlpIbXVGZEJlYy0x/RkVvM0p2a2F1UHNT/OD0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0dldHR5SW1hZ2Vz/LTIxOTQ0NDQyNDYt/ZGMwNzc2OWJjOGM2/NDg4M2I3ZTBlMzkz/OTU1NDVhMGQuanBn",
+            "original": "https://www.investopedia.com/thmb/jx2ZHmuFdBec-1FEo3JvkauPsS8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-2194444246-dc07769bc8c64883b7e0e39395545a0d.jpg",
+            "logo": false
+          },
+          "age": "February 12, 2025"
+        },
+        {
+          "title": "Medical Payments Coverage (MedPay): Overview and Examples",
+          "url": "https://www.investopedia.com/terms/m/medical-payments-coverage.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Medical payments coverage is an add-on to an auto insurance policy that covers expenses related to vehicular accidents.",
+          "page_age": "2025-04-28T13:10:14",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/m/medical-payments-coverage.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a m  \u203a medical-payments-coverage.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/WzN2PT5B5WklNOfRlt7doN1ayk1BOWcBDf9yZC8C-y4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL2lz/OHZrWW54Rlo0OXNw/TXVtaER5NVFSaDd6/UT0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L2hlYWx0aGNhcmVf/Zm9ybS01ZThlODg4/MjIxZTk0ZjgyOTQ0/ODVmMDk4MmI4ZjFj/Ny5qcGc",
+            "original": "https://www.investopedia.com/thmb/is8vkYnxFZ49spMumhDy5QRh7zQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/healthcare_form-5e8e888221e94f8294485f0982b8f1c7.jpg",
+            "logo": false
+          },
+          "age": "April 28, 2025"
+        },
+        {
+          "title": "Umbrella Insurance Explained: Coverage, Benefits, and Who Needs It",
+          "url": "https://www.investopedia.com/terms/u/umbrella-insurance-policy.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "An umbrella insurance policy provides extra liability coverage that surpasses the limits of standard homeowners, auto, or watercraft insurance, offering protection against potential lawsuits for property damage or injuries to others.",
+          "page_age": "2025-08-02T21:01:56",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/u/umbrella-insurance-policy.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a u  \u203a umbrella-insurance-policy.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/XGajnCbgfRRpWsAWibK_TF-joNDO3lcGD7UiDoyTBGQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL2NO/UjFrWG5ZdF96cjRz/YlUyMzR5Qi1tTGJU/OD0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0dldHR5SW1hZ2Vz/LTY1NDk0Mjg2MC0z/MDNhMGI0ZDE4NzY0/MDIxOWI2NGNiYjlh/N2YyZjY3Ny5qcGc",
+            "original": "https://www.investopedia.com/thmb/cNR1kXnYt_zr4sbU234yB-mLbT8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-654942860-303a0b4d187640219b64cbb9a7f2f677.jpg",
+            "logo": false
+          },
+          "age": "August 2, 2025"
+        },
+        {
+          "title": "Self-Insurance Explained: Benefits, Risks, and Real-Life Examples",
+          "url": "https://www.investopedia.com/terms/s/selfinsurance.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Self-insurance is a financial strategy where you set aside personal funds to cover potential losses instead of relying on insurance companies. This approach means that you cover costs for events like medical procedures or property damage directly from your pocket, bypassing the need for traditional insurance claims.",
+          "page_age": "2025-09-02T16:44:15",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/s/selfinsurance.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a s  \u203a selfinsurance.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/M8ps6doj_mKeDva6XUFVuQt9EzyMzTATifIYoTlNuN0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iLzdW/RGxiVVJiMi1qbXN0/ejNnLV85S01RY1Uw/UT0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L3NodXR0ZXJzdG9j/a18xMTI1MjIzOTEt/NWJmYzJiOTg0NmUw/ZmIwMDUxYmRlMmQz/LmpwZw",
+            "original": "https://www.investopedia.com/thmb/7VDlbURb2-jmstz3g-_9KMQcU0Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/shutterstock_112522391-5bfc2b9846e0fb0051bde2d3.jpg",
+            "logo": false
+          },
+          "age": "September 2, 2025"
+        },
+        {
+          "title": "Additional Insured: Definition, Benefits, Costs, and Examples",
+          "url": "https://www.investopedia.com/terms/a/additional-insured.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Additional insured is a type of status associated with general liability insurance that provides coverage to other individuals/groups not initially named.",
+          "page_age": "2025-06-20T19:01:14",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/a/additional-insured.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a a  \u203a additional-insured.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/DxleCs7qzm6NnJJu8HbRtqb_pFzJ5Yl419fbBQhmGRc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL2kw/cHhYZ1oyQ1N4M3Rq/anRpSmRJamZ1Q2Vq/cz0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0FkZGl0aW9uYWwt/SW5zdXJlZC1GaW5h/bC1lZTY5NmNkZmQz/MzQ0NDYwOTdmZmI3/MWUwMWJiODc0Zi5q/cGc",
+            "original": "https://www.investopedia.com/thmb/i0pxXgZ2CSx3tjjtiJdIjfuCejs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Additional-Insured-Final-ee696cdfd334446097ffb71e01bb874f.jpg",
+            "logo": false
+          },
+          "age": "June 20, 2025"
+        },
+        {
+          "title": "One Third of Drivers Cut Down on Car Insurance, Expecting Tariffs to Raise Premiums",
+          "url": "https://www.investopedia.com/a-third-of-americans-cut-down-on-car-insurance-expecting-tariffs-to-raise-premiums-11748959",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "President Donald Trump&#x27;s tariffs on steel and aluminum, and a 25% tariff on imported cars, are expected to further increase the cost of car repairs and rentals. The annual cost of insurance will climb an average of $92 due to tariffs, according to Insurify, a price comparison company.",
+          "page_age": "2025-06-07T11:00:00",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/a-third-of-americans-cut-down-on-car-insurance-expecting-tariffs-to-raise-premiums-11748959",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a a-third-of-americans-cut-down-on-car-insurance-expecting-tariffs-to-raise-premiums-11748959"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/pWFs0v-IEV32yVBekSeB69rDXudlv9kjaXE21FsbNio/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL291/cHdsczU5YXRGVlE4/ZnAtZldXY3BOYzJJ/TT0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0dldHR5SW1hZ2Vz/LTIxNTIxNTEzOTkt/OGViMzE5MmU4NDdi/NDhmN2FiMjc5NWVi/NjY5NWNhYjcuanBn",
+            "original": "https://www.investopedia.com/thmb/oupwls59atFVQ8fp-fWWcpNc2IM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-2152151399-8eb3192e847b48f7ab2795eb6695cab7.jpg",
+            "logo": false
+          },
+          "age": "June 7, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

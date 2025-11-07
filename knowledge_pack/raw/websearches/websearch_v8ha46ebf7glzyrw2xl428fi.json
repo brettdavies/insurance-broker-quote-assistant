@@ -1,0 +1,100 @@
+{
+  "websearch_id": "websearch_v8ha46ebf7glzyrw2xl428fi",
+  "search_id": "search_a0j4ymkox8abyi88eeoi5kbz",
+  "timestamp": "2025-11-07T12:31:07.647846",
+  "startedAt": "2025-11-07T12:31:07.647846",
+  "completedAt": "2025-11-07T12:31:09.434713",
+  "durationSeconds": 1.79,
+  "urlsDiscoveredCount": 1,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:geico.com flood insurance",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:geico.com flood insurance",
+      "show_strict_warning": false,
+      "cleaned": "flood insurance",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": true,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "flood insurance",
+        "sites": [
+          "geico.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Tips for Senior Drivers | GEICO Living",
+          "url": "https://living.geico.com/driving/auto/car-safety-insurance/tips-for-senior-drivers/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "According to the Insurance Institute for Highway Safety (IIHS), fatal crash rates per miles traveled increase noticeably starting at age 70-74 and are highest among drivers 85 and older. Defensive Driver/Driver Safety programs are not only a refresher on safe driving, but it can help us avoid accidents in the first place.",
+          "page_age": "2025-07-22T15:57:11",
+          "profile": {
+            "name": "GEICO Living",
+            "url": "https://living.geico.com/driving/auto/car-safety-insurance/tips-for-senior-drivers/",
+            "long_name": "living.geico.com",
+            "img": "https://imgs.search.brave.com/Cve-gaVVRqJopC0zfLT35CI5tzMv9fEQel0RH0-pstQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTQwNzI2ZGQy/YzdhMzYxOGY2MGQx/YmFiNGYyOGY2MDgz/M2E5Yjc5YjJhOWY4/OTYzOGU2ZTFjMWYy/NThhZjQxMi9saXZp/bmcuZ2VpY28uY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "living.geico.com",
+            "hostname": "living.geico.com",
+            "favicon": "https://imgs.search.brave.com/Cve-gaVVRqJopC0zfLT35CI5tzMv9fEQel0RH0-pstQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTQwNzI2ZGQy/YzdhMzYxOGY2MGQx/YmFiNGYyOGY2MDgz/M2E5Yjc5YjJhOWY4/OTYzOGU2ZTFjMWYy/NThhZjQxMi9saXZp/bmcuZ2VpY28uY29t/Lw",
+            "path": "\u203a driving  \u203a auto  \u203a car-safety-insurance  \u203a tips-for-senior-drivers"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/8cRq7THRjBDkzCrfYoBji66RpAAQG63A0GKbX6qxf3Y/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9saXZp/bmcuZ2VpY28uY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy9HZXR0/eUltYWdlcy01MzM3/NjYzNDMtZTE2MTk2/MjI4NjU2NzkuanBn",
+            "original": "https://living.geico.com/wp-content/uploads/GettyImages-533766343-e1619622865679.jpg",
+            "logo": false
+          },
+          "age": "July 22, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_f365ap6gfrcbxnoylu00jyhc",
+  "search_id": "search_ftptvwdhp7vr6sbv76vi8cqf",
+  "timestamp": "2025-11-07T12:22:48.383116",
+  "startedAt": "2025-11-07T12:22:48.383116",
+  "completedAt": "2025-11-07T12:22:49.983967",
+  "durationSeconds": 1.6,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:geico.com/auto/discounts",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:geico.com/auto/discounts",
+      "show_strict_warning": false,
+      "cleaned": "geico.com/auto/discounts",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "geico.com/auto/discounts",
+        "sites": [
+          "geico.com/auto/discounts"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

@@ -1,0 +1,794 @@
+{
+  "websearch_id": "websearch_lg343osjei8tmesgz75a413w",
+  "search_id": "search_wx6bqqy8atbmt53ogexcsh2y",
+  "timestamp": "2025-11-07T12:22:31.381960",
+  "startedAt": "2025-11-07T12:22:31.381960",
+  "completedAt": "2025-11-07T12:22:33.321577",
+  "durationSeconds": 1.94,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" \"paperless\" discount percentage",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"GEICO\" \"paperless\" discount percentage",
+      "show_strict_warning": false,
+      "cleaned": "GEICO paperless discount percentage",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO paperless discount percentage"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "How to Get a Paperless Discount | Compare.com",
+          "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/paperless-discount",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "You can qualify for a paperless discount if you sign up to receive your policy and billing statements online instead of by mail. You need to have a valid email address to sign up for paperless documents. Once you do, you can get a paperless discount if your insurer offers one. Yes. GEICO has ...",
+          "page_age": "2024-11-18T19:00:00",
+          "profile": {
+            "name": "Compare",
+            "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/paperless-discount",
+            "long_name": "compare.com",
+            "img": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "compare.com",
+            "hostname": "www.compare.com",
+            "favicon": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v",
+            "path": "  \u203a auto insurance  \u203a cheap car insurance  \u203a discounts  \u203a paperless discount"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/W_vwSgp5jmRWcvWGImwFnlHFI6PSqd1WdxbbedKin0g/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8yOTU1MDgvODAw/eDYwMC9jOThiM2Zh/M2Q4L2Nsb3NldXAt/b2YtbWFuaWN1cmVk/LWhhbmQtaG9sZGlu/Zy1waG9uZS5qcGc",
+            "original": "https://a.storyblok.com/f/295508/800x600/c98b3fa3d8/closeup-of-manicured-hand-holding-phone.jpg",
+            "logo": false
+          },
+          "age": "November 18, 2024"
+        },
+        {
+          "title": "Car Insurance Discounts Guide: Save Up to 40%",
+          "url": "https://www.moneygeek.com/insurance/auto/car-insurance-discounts/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "You can stack discounts, but keep in mind that discounts apply one at a time, meaning a 20% discount followed by a 10% discount gives you 28% off, not 30%. GEICO offers the most discounts at 18, while Auto-Owners provides 14.",
+          "page_age": "2025-10-09T16:56:56",
+          "profile": {
+            "name": "MoneyGeek",
+            "url": "https://www.moneygeek.com/insurance/auto/car-insurance-discounts/",
+            "long_name": "moneygeek.com",
+            "img": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "moneygeek.com",
+            "hostname": "www.moneygeek.com",
+            "favicon": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8",
+            "path": "  \u203a home  \u203a insurance  \u203a compare car insurance  \u203a car insurance discounts"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/_00edvMoz6CFXNDt-GH30LE98DBRkXeUjyvm_2mbtZE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbW9uZXlnZWVr/L2ltYWdlL3VwbG9h/ZC92MTYwMjc3OTY5/NS9Nb25leUdlZWsu/Y29tL2RlZmF1bHQl/MjBtZXRhJTIwaW1h/Z2VzL2F1dG9fempp/bGhnLmpwZw",
+            "original": "https://res.cloudinary.com/moneygeek/image/upload/v1602779695/MoneyGeek.com/default%20meta%20images/auto_zjilhg.jpg",
+            "logo": false
+          },
+          "age": "1 month ago"
+        },
+        {
+          "title": "Paperless and Auto-Billing Auto Insurance Discount: How to Lower Your Rates\u2013 Insurantly",
+          "url": "https://www.insurantly.com/paperless-auto-billing-auto-insurance-discount/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Besides earning a discount, why opt for paperless and auto-billing in the first place? Convenience. All of your policy information, identification cards, and billing statements will live in a single, secure online space. Plus, there\u2019s no need to go through the hassle of printing out your insurance cards. Instead, you\u2019ll have access any time through a mobile app. The Geico paperless billing and paperless policy, for example, is offered as a benefit to drivers with no associated rate reductions.",
+          "page_age": "2025-03-15T08:30:49",
+          "profile": {
+            "name": "Insurantly",
+            "url": "https://www.insurantly.com/paperless-auto-billing-auto-insurance-discount/",
+            "long_name": "insurantly.com",
+            "img": "https://imgs.search.brave.com/bI3OC_uVU9Ayzpgk3Gpduv7Be38pmORsOVY-XquC5sM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWJmNjg1MjU4/YTU4OTdhNTk5Zjhi/M2QwYzMyZTViMTVi/NTRlMDYyMDgwZTRi/MjZiYTNiNjE2MDYw/MTcwNDJkZC93d3cu/aW5zdXJhbnRseS5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurantly.com",
+            "hostname": "www.insurantly.com",
+            "favicon": "https://imgs.search.brave.com/bI3OC_uVU9Ayzpgk3Gpduv7Be38pmORsOVY-XquC5sM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWJmNjg1MjU4/YTU4OTdhNTk5Zjhi/M2QwYzMyZTViMTVi/NTRlMDYyMDgwZTRi/MjZiYTNiNjE2MDYw/MTcwNDJkZC93d3cu/aW5zdXJhbnRseS5j/b20v",
+            "path": "  \u203a home  \u203a buying car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Vo-UPO2_STNabm2wVVlyFvZKG8OPP524p50u5mZstY8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbnRseS5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjUvMDMvUGFwZXJs/ZXNzLUF1dG8tQmls/bGluZy1EaXNjb3Vu/dHMtSG93LXRvLVNh/dmUtb24tQ2FyLUlu/c3VyYW5jZS5wbmc",
+            "original": "https://www.insurantly.com/wp-content/uploads/2025/03/Paperless-Auto-Billing-Discounts-How-to-Save-on-Car-Insurance.png"
+          },
+          "age": "March 15, 2025"
+        },
+        {
+          "title": "Every GEICO Car Insurance Discount Explained (2025) | Compare.com",
+          "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-discounts",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO offers several payment-related discounts. Paid-in-full: If you pay bills entirely up front, you may qualify for cheaper premiums. Auto pay: Pay bills with automatic payments to avoid insurance lapses and save on installment fees. Paperless billing: Electronic billing statements and policy ...",
+          "page_age": "2025-02-05T19:00:00",
+          "profile": {
+            "name": "Compare",
+            "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-discounts",
+            "long_name": "compare.com",
+            "img": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "compare.com",
+            "hostname": "www.compare.com",
+            "favicon": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v",
+            "path": "  \u203a auto insurance  \u203a cheap car insurance  \u203a discounts  \u203a geico car insurance discounts"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/eo6DC1oUEJ9tQ_nKLjRAcNuN4f4DvLEnyEuZwe_qSBA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8yOTU1MDgvODAw/eDYwMC80NjhmZDhl/NTBlL3dvbWFuLWRy/aXZpbmctd2l0aC1h/aXJwb2RzLmpwZw",
+            "original": "https://a.storyblok.com/f/295508/800x600/468fd8e50e/woman-driving-with-airpods.jpg",
+            "logo": false
+          },
+          "age": "February 5, 2025"
+        },
+        {
+          "title": "What Discounts Does GEICO Offer for Auto Insurance? - LegalClarity",
+          "url": "https://legalclarity.org/what-discounts-does-geico-offer-for-auto-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO offers discounts for digital payment methods. Enrolling in automatic payments via bank draft or credit card reduces administrative costs, which translates to lower premiums. Paperless billing further minimizes processing expenses and streamlines account management.",
+          "page_age": "2025-03-17T17:28:40",
+          "profile": {
+            "name": "LegalClarity",
+            "url": "https://legalclarity.org/what-discounts-does-geico-offer-for-auto-insurance/",
+            "long_name": "legalclarity.org",
+            "img": "https://imgs.search.brave.com/J9MxGTdj5fiLFGToourtQD6PyqQtUVTRcL8IxQbJOmI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDI3NjU2OGJk/ZjQ4NWI0M2I2M2Fi/OTM5NTgyNTY4ODNh/YmZmYTJiYWQ5Mzlh/YWU1ODI5NTg0MmJi/Y2E1MWI0NS9sZWdh/bGNsYXJpdHkub3Jn/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "legalclarity.org",
+            "hostname": "legalclarity.org",
+            "favicon": "https://imgs.search.brave.com/J9MxGTdj5fiLFGToourtQD6PyqQtUVTRcL8IxQbJOmI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDI3NjU2OGJk/ZjQ4NWI0M2I2M2Fi/OTM5NTgyNTY4ODNh/YmZmYTJiYWQ5Mzlh/YWU1ODI5NTg0MmJi/Y2E1MWI0NS9sZWdh/bGNsYXJpdHkub3Jn/Lw",
+            "path": "\u203a what-discounts-does-geico-offer-for-auto-insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/T5g8lzaXbMQL8j3Auak1mZZI9PyxufWZHirtPhrfuqY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9sZWdh/bGNsYXJpdHkub3Jn/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI0/LzA5L2xlZ2FsY2xh/cml0eWkucG5n",
+            "original": "https://legalclarity.org/wp-content/uploads/2024/09/legalclarityi.png",
+            "logo": false
+          },
+          "age": "March 17, 2025"
+        },
+        {
+          "title": "Best Auto-Pay Insurance Discounts in 2025 (Save up to 15% With These Companies) | Clearsurance",
+          "url": "https://clearsurance.com/blog/best-auto-pay-insurance-discounts",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico vs. Progressive \u00b7 Progressive vs. State Farm ... The best auto-pay insurance discounts come from Liberty Mutual, State Farm and Progressive, saving policyholders up to 15% for setting up automatic payments. These discounts reduce premiums, avoid late charges, and provide uninterrupted coverage by eliminating missed payments. Many insurers also allow policyholders to combine auto-pay savings with paperless ...",
+          "page_age": "2025-03-31T22:46:19",
+          "profile": {
+            "name": "Clearsurance -",
+            "url": "https://clearsurance.com/blog/best-auto-pay-insurance-discounts",
+            "long_name": "clearsurance.com",
+            "img": "https://imgs.search.brave.com/KcX9p4u9Y6Gb4ybHTKD6RJ7aDtcyBA1hsroH-6pxVKc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTY1ZTZhMWJj/ODc5NjIzOTgzODAw/NjYzZDgzNGYzZDY0/MmFhMzA1YTcxNzc1/OTBjNTBmM2M0M2Fj/N2I5ZjkzZS9jbGVh/cnN1cmFuY2UuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "clearsurance.com",
+            "hostname": "clearsurance.com",
+            "favicon": "https://imgs.search.brave.com/KcX9p4u9Y6Gb4ybHTKD6RJ7aDtcyBA1hsroH-6pxVKc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTY1ZTZhMWJj/ODc5NjIzOTgzODAw/NjYzZDgzNGYzZDY0/MmFhMzA1YTcxNzc1/OTBjNTBmM2M0M2Fj/N2I5ZjkzZS9jbGVh/cnN1cmFuY2UuY29t/Lw",
+            "path": "  \u203a home  \u203a uncategorized"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/dCBoBPb8gWY6LMqExJFobc6lirLQSOvr3uOW-SR4ypc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9xdW90/ZS5jbGVhcnN1cmFu/Y2UuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI1LzAzL0Jl/c3RfUGF5LUluLUZ1/bGxfSW5zdXJhbmNl/X0Rpc2NvdW50c19T/cXVhcmVfXzFfLmpw/Zw",
+            "original": "https://quote.clearsurance.com/wp-content/uploads/2025/03/Best_Pay-In-Full_Insurance_Discounts_Square__1_.jpg",
+            "logo": false
+          },
+          "age": "March 31, 2025"
+        },
+        {
+          "title": "Geico Insurance: Points And Premium Increases Explained | ShunIns",
+          "url": "https://shunins.com/article/how-many-points-for-geico-insurance-to-go-up",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Firstly, GEICO offers a range of discounts to its customers. For instance, opting for paperless billing can lead to savings on your premium, as GEICO and many other insurers offer a discount for digital communication and payments. Additionally, GEICO offers a Good Driver discount for customers ...",
+          "page_age": "2025-06-12T03:12:48",
+          "profile": {
+            "name": "ShunIns",
+            "url": "https://shunins.com/article/how-many-points-for-geico-insurance-to-go-up",
+            "long_name": "shunins.com",
+            "img": "https://imgs.search.brave.com/jvP4Fve05YIvAUZZWzBsRulCIHRsJJaPDya1iEAYmoU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMmFiOTRkMTI2/NGU3ZjMyYWQ3Y2Q5/NGM3ZjNmZDg3MTdh/YzA4Y2I5YzY3NDdm/ZmU0YjQyZWJmMDlj/MGFlMzdjNC9zaHVu/aW5zLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "shunins.com",
+            "hostname": "shunins.com",
+            "favicon": "https://imgs.search.brave.com/jvP4Fve05YIvAUZZWzBsRulCIHRsJJaPDya1iEAYmoU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMmFiOTRkMTI2/NGU3ZjMyYWQ3Y2Q5/NGM3ZjNmZDg3MTdh/YzA4Y2I5YzY3NDdm/ZmU0YjQyZWJmMDlj/MGFlMzdjNC9zaHVu/aW5zLmNvbS8",
+            "path": "  \u203a home  \u203a insurance for travel  \u203a geico insurance: points and premium increases explained"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/NBFZhM4gtB9Yx7TlPK6TKHGoMZmm2--RwrNf3Vqn6jo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zaHVu/aW5zLmNvbS9pbWFn/ZXMvcmVzb3VyY2Vz/L2hvdy1tYW55LXBv/aW50cy1mb3ItZ2Vp/Y28taW5zdXJhbmNl/LXRvLWdvLXVwXzIw/MjUwNjEyMTAwNzU4/LndlYnA",
+            "original": "https://shunins.com/images/resources/how-many-points-for-geico-insurance-to-go-up_20250612100758.webp",
+            "logo": false
+          },
+          "age": "June 12, 2025"
+        },
+        {
+          "title": "r/Insurance on Reddit: Progressive 1 time online e-sign discount",
+          "url": "https://www.reddit.com/r/Insurance/comments/1gkgk4i/progressive_1_time_online_esign_discount/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "This discount is quite heftier and is typically 10% off total premium. Also i would consider how &quot;helpful&quot; they are being and you can always find another agent who writes for progressive lol. or if you are getting progressive direct quotes you ...",
+          "page_age": "2024-11-07T00:33:37",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Insurance/comments/1gkgk4i/progressive_1_time_online_esign_discount/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/insurance  \u203a progressive 1 time online e-sign discount"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A5H_aQiEBuUODR0lNeU8iDfhrWUvO8oEmRGE_mcS_gM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVkZGl0c3RhdGlj/LmNvbS9pY29uLnBu/Zw",
+            "original": "https://www.redditstatic.com/icon.png",
+            "logo": true
+          },
+          "age": "November 7, 2024"
+        },
+        {
+          "title": "Geico Insurance Review for 2025 (+Rates & Options) | Quote.com",
+          "url": "https://www.quote.com/companies/geico-insurance-review/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Even the 5% savings from employee training, joining a business association, running a home-based business, or going paperless can still put around $60 back in your pocket each year, which is money you can use for everyday expenses.",
+          "page_age": "2025-09-22T17:22:28",
+          "profile": {
+            "name": "Quote.com",
+            "url": "https://www.quote.com/companies/geico-insurance-review/",
+            "long_name": "quote.com",
+            "img": "https://imgs.search.brave.com/kddem-PxrpzYtwfpKjL3Fo0CZWOxFjL--pzkA-7OGdI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODExNWFmZmUz/MjljOGY0NjU3YTkw/NGU5MWVjMDVlNTAz/ZTA4ZDIwN2JjMzUw/ZjBlYmVhZTExNGZl/YzliNjE1NS93d3cu/cXVvdGUuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "quote.com",
+            "hostname": "www.quote.com",
+            "favicon": "https://imgs.search.brave.com/kddem-PxrpzYtwfpKjL3Fo0CZWOxFjL--pzkA-7OGdI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODExNWFmZmUz/MjljOGY0NjU3YTkw/NGU5MWVjMDVlNTAz/ZTA4ZDIwN2JjMzUw/ZjBlYmVhZTExNGZl/YzliNjE1NS93d3cu/cXVvdGUuY29tLw",
+            "path": "  \u203a home  \u203a best car insurance companies"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/tqYWhzxCTGCcB5TyQiRvxGid6lT9mz6fGza0BlyUgaw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vZGF2djF6d2Jv/L2ltYWdlL3VwbG9h/ZC92MTc0MzQyNTYy/My92Z2VqdG1uemIz/bnB4bHI5ODJoZi5w/bmc",
+            "original": "https://res.cloudinary.com/davv1zwbo/image/upload/v1743425623/vgejtmnzb3npxlr982hf.png",
+            "logo": false
+          },
+          "age": "September 22, 2025"
+        },
+        {
+          "title": "How to Save With the GEICO Safe Driver Discount | Compare.com",
+          "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-safe-driver-discount",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Multi\u2011policy discount: Bundle your auto policy with home, renters, or other GEICO policies for deeper savings. You\u2019ll also find discounts for safety features, paperless billing, homeownership, and more.",
+          "page_age": "2025-07-31T19:00:00",
+          "profile": {
+            "name": "Compare",
+            "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-safe-driver-discount",
+            "long_name": "compare.com",
+            "img": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "compare.com",
+            "hostname": "www.compare.com",
+            "favicon": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v",
+            "path": "  \u203a auto insurance  \u203a cheap car insurance  \u203a discounts  \u203a geico safe driver discount"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/OyL227CTE4P10GO70XdSBJDExNNZ4R4n46m6Z3y3uEQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8yOTU1MDgvMTIw/MHg5MDAvYWI4MmNi/ZTc4MC93b21hbi1i/bGF6ZXItZHJpdmlu/Zy1oZXJvLmpwZw",
+            "original": "https://a.storyblok.com/f/295508/1200x900/ab82cbe780/woman-blazer-driving-hero.jpg",
+            "logo": false
+          },
+          "age": "July 31, 2025"
+        },
+        {
+          "title": "Why Is Geico So Cheap? Cost-Saving Secrets Explained",
+          "url": "https://www.cgaa.org/article/why-is-geico-so-cheap",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Paperless policy discount \u00b7 New vehicle discount \u00b7 GEICO consistently offers lower rates compared to other top carriers. The average premium for minimum coverage with GEICO is $796 per year, which is lower than the competitors. One of the main reasons GEICO can offer such low rates is by selling insurance directly to consumers, cutting out middlemen and saving costs.",
+          "page_age": "2025-08-10T09:57:40",
+          "profile": {
+            "name": "CGAA",
+            "url": "https://www.cgaa.org/article/why-is-geico-so-cheap",
+            "long_name": "cgaa.org",
+            "img": "https://imgs.search.brave.com/JGYb7UMkkO9GWjH7kX-sNVYkWoFFiifhiQbeTs0f-jI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjU0NjQxNWY2/M2I0NzI3MzVkMzVm/NGQxNGNjMzNlM2Yz/YWY2Y2Y1NjFmMjI5/ZTRmNDNkOWUxMDFj/MmQwODc5NS93d3cu/Y2dhYS5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cgaa.org",
+            "hostname": "www.cgaa.org",
+            "favicon": "https://imgs.search.brave.com/JGYb7UMkkO9GWjH7kX-sNVYkWoFFiifhiQbeTs0f-jI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjU0NjQxNWY2/M2I0NzI3MzVkMzVm/NGQxNGNjMzNlM2Yz/YWY2Y2Y1NjFmMjI5/ZTRmNDNkOWUxMDFj/MmQwODc5NS93d3cu/Y2dhYS5vcmcv",
+            "path": "  \u203a auto insurance  \u203a why is geico so cheap? cost-saving secrets explained"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/45AKX0LWhfJDcjJH_OjBbAkbUT02HMIM1aFg2zo8fL4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvMTAz/NDEzNTcvcGV4ZWxz/LXBob3RvLTEwMzQx/MzU3LmpwZWc",
+            "original": "https://images.pexels.com/photos/10341357/pexels-photo-10341357.jpeg",
+            "logo": false
+          },
+          "age": "August 10, 2025"
+        },
+        {
+          "title": "GEICO car insurance review 2025: 3.1 out of 5 stars",
+          "url": "https://finance.yahoo.com/personal-finance/insurance/review/geico-car-insurance-review-180541901.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO offers a discount for opting into paperless billing.",
+          "page_age": "2025-09-10T18:05:41",
+          "profile": {
+            "name": "Yahoo! Finance",
+            "url": "https://finance.yahoo.com/personal-finance/insurance/review/geico-car-insurance-review-180541901.html",
+            "long_name": "finance.yahoo.com",
+            "img": "https://imgs.search.brave.com/ZxJbtHZiiBXciqcRfJn3XPiTEOf_XYrooAjrJf1rnag/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjRkNjc1NWY5/MzM5ZjlkMWQyNjM5/OWNiMTQ4ZjcwNTQx/ZjA3ZDE4NDQ2M2Iw/MWZjZjVhOTFlM2Ji/NTE1NWRjZS9maW5h/bmNlLnlhaG9vLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "finance.yahoo.com",
+            "hostname": "finance.yahoo.com",
+            "favicon": "https://imgs.search.brave.com/ZxJbtHZiiBXciqcRfJn3XPiTEOf_XYrooAjrJf1rnag/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjRkNjc1NWY5/MzM5ZjlkMWQyNjM5/OWNiMTQ4ZjcwNTQx/ZjA3ZDE4NDQ2M2Iw/MWZjZjVhOTFlM2Ji/NTE1NWRjZS9maW5h/bmNlLnlhaG9vLmNv/bS8",
+            "path": "  \u203a personal finance  \u203a insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ZUfRTp_T6gFSbsMxymx9F3xvFuUABzroRosGv7BCvsg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zLnlp/bWcuY29tL255L2Fw/aS9yZXMvMS4yL25K/eUJiLjlPamlOR1pp/UEljXzl2UmctLS9Z/WEJ3YVdROWFHbG5h/R3hoYm1SbGNqdDNQ/VEV5TURBN2FEMDRN/REEtL2h0dHBzOi8v/cy55aW1nLmNvbS9v/cy9jcmVhdHItdXBs/b2FkZWQtaW1hZ2Vz/LzIwMjUtMDkvMmZm/YTE5ZDAtOGU2Yi0x/MWYwLWJiZjctY2Y4/YjRmYTgyZjk5",
+            "original": "https://s.yimg.com/ny/api/res/1.2/nJyBb.9OjiNGZiPIc_9vRg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2025-09/2ffa19d0-8e6b-11f0-bbf7-cf8b4fa82f99",
+            "logo": false
+          },
+          "age": "September 10, 2025"
+        },
+        {
+          "title": "Car insurance discounts: 17 ways to save",
+          "url": "https://finance.yahoo.com/personal-finance/insurance/article/car-insurance-discounts-212732172.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Have the extra cash on hand to pay for your car insurance premium up front? If so you can probably qualify for a six-month or one-year payment discount. Another way to shave a little extra off is to authorize automatic payments from your bank account and save some trees (and serious hassle) by signing up for paperless billing.",
+          "page_age": "2025-03-14T20:32:39",
+          "profile": {
+            "name": "Yahoo! Finance",
+            "url": "https://finance.yahoo.com/personal-finance/insurance/article/car-insurance-discounts-212732172.html",
+            "long_name": "finance.yahoo.com",
+            "img": "https://imgs.search.brave.com/ZxJbtHZiiBXciqcRfJn3XPiTEOf_XYrooAjrJf1rnag/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjRkNjc1NWY5/MzM5ZjlkMWQyNjM5/OWNiMTQ4ZjcwNTQx/ZjA3ZDE4NDQ2M2Iw/MWZjZjVhOTFlM2Ji/NTE1NWRjZS9maW5h/bmNlLnlhaG9vLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "finance.yahoo.com",
+            "hostname": "finance.yahoo.com",
+            "favicon": "https://imgs.search.brave.com/ZxJbtHZiiBXciqcRfJn3XPiTEOf_XYrooAjrJf1rnag/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjRkNjc1NWY5/MzM5ZjlkMWQyNjM5/OWNiMTQ4ZjcwNTQx/ZjA3ZDE4NDQ2M2Iw/MWZjZjVhOTFlM2Ji/NTE1NWRjZS9maW5h/bmNlLnlhaG9vLmNv/bS8",
+            "path": "  \u203a personal finance  \u203a insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/hX0BVoXtU-mBN7QOPW4QXqWgqmBntJ8w0q3-aACHT5k/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zLnlp/bWcuY29tL255L2Fw/aS9yZXMvMS4yL1JP/NkR0S2lueTB2THBW/d3B3T0ZfNHctLS9Z/WEJ3YVdROWFHbG5h/R3hoYm1SbGNqdDNQ/VEkwTURBN2FEMHhO/akF3L2h0dHBzOi8v/cy55aW1nLmNvbS9v/cy9jcmVhdHItdXBs/b2FkZWQtaW1hZ2Vz/LzIwMjMtMTAvMjkz/NTljZjAtNmMzNS0x/MWVlLTlmOTctMTMz/MTgzNDAyMzJh",
+            "original": "https://s.yimg.com/ny/api/res/1.2/RO6DtKiny0vLpVwpwOF_4w--/YXBwaWQ9aGlnaGxhbmRlcjt3PTI0MDA7aD0xNjAw/https://s.yimg.com/os/creatr-uploaded-images/2023-10/29359cf0-6c35-11ee-9f97-13318340232a",
+            "logo": false
+          },
+          "age": "March 14, 2025"
+        },
+        {
+          "title": "Geico Insurance Review 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "These companies set the rate and ... \u2014 Geico only sells the product. ... Bankrate utilizes Quadrant Information Services to analyze September 2025 rates for all ZIP codes and carriers in all 50 states and Washington, D.C. Rates are weighted based on the population density in each geographic region. Quoted rates for our base profile are based on the following characteristics and full coverage limits with bundling and paperless billing discounts ...",
+          "page_age": "2025-10-14T19:36:23",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/geico/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "17 Car Insurance Discounts You Can\u2019t Miss in 2025 (Save 40% With These Deals!) | Quote.com",
+          "url": "https://www.quote.com/auto-insurance/discounts/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Farmers, Geico, Progressive, and Allstate auto insurance to learn more. Insurance companies often offer discounts for bundling multiple policies, good driving records, completion of driver safety courses, installation of anti-theft devices, enrollment in paperless billing, and teen drivers ...",
+          "page_age": "2025-08-15T18:03:11",
+          "profile": {
+            "name": "Quote.com",
+            "url": "https://www.quote.com/auto-insurance/discounts/",
+            "long_name": "quote.com",
+            "img": "https://imgs.search.brave.com/kddem-PxrpzYtwfpKjL3Fo0CZWOxFjL--pzkA-7OGdI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODExNWFmZmUz/MjljOGY0NjU3YTkw/NGU5MWVjMDVlNTAz/ZTA4ZDIwN2JjMzUw/ZjBlYmVhZTExNGZl/YzliNjE1NS93d3cu/cXVvdGUuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "quote.com",
+            "hostname": "www.quote.com",
+            "favicon": "https://imgs.search.brave.com/kddem-PxrpzYtwfpKjL3Fo0CZWOxFjL--pzkA-7OGdI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODExNWFmZmUz/MjljOGY0NjU3YTkw/NGU5MWVjMDVlNTAz/ZTA4ZDIwN2JjMzUw/ZjBlYmVhZTExNGZl/YzliNjE1NS93d3cu/cXVvdGUuY29tLw",
+            "path": "  \u203a home  \u203a best car insurance companies  \u203a auto insurance discounts"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/eE6GlzpJV9-pFZmy2B7J1TNHmLe0Qa267Kh2MO4KXAo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cXVvdGUuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIxLzA4/L2ltYWdlLTIwMjEw/ODA1LTE5MjkxMy5w/bmc",
+            "original": "https://www.quote.com/wp-content/uploads/2021/08/image-20210805-192913.png",
+            "logo": false
+          },
+          "age": "August 15, 2025"
+        },
+        {
+          "title": "GEICO Insurance Review (2025) | WalletHub",
+          "url": "https://wallethub.com/edu/ci/geico-car-insurance-review/62236",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Paperless discount \u00b7 Restraint device discount \u00b7 Membership &amp; employee discount \u00b7 Emergency deployment discount \u00b7 Altogether, GEICO offers more than 16 different insurance discounts, providing savings of up to 40%. As a result, GEICO receives ...",
+          "page_age": "2025-03-25T00:00:00",
+          "profile": {
+            "name": "WalletHub",
+            "url": "https://wallethub.com/edu/ci/geico-car-insurance-review/62236",
+            "long_name": "wallethub.com",
+            "img": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "wallethub.com",
+            "hostname": "wallethub.com",
+            "favicon": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw",
+            "path": "\u203a edu  \u203a ci  \u203a geico-car-insurance-review  \u203a 62236"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/H5SXAnF1DvjyheE4ble2SGlnbs0ZUvxkgCMWwqsO3Jo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbGV0aHViLmNv/bS93YWxsZXRodWIv/cG9zdHMvMTI1NDIw/L2dlaWNvLWRyaXZl/ZWFzeS5wbmc",
+            "original": "https://cdn.wallethub.com/wallethub/posts/125420/geico-driveeasy.png",
+            "logo": false
+          },
+          "age": "March 25, 2025"
+        },
+        {
+          "title": "GEICO Insurance Review 2025",
+          "url": "https://www.autoinsurance.com/companies/geico/reviews/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Paperless Discount \u00b7 Student Away at School Discount, for drivers who live away from home to attend school full-time, as long as they don\u2019t have regular access to a covered vehicle \u00b7 Vehicle Equipment Discounts, which include discounts for restraint devices like airbags and seat belts, anti-lock brakes, anti-theft systems, and daytime running lights \u00b7 GEICO was originally founded in 1936 as an insurance provider for government officials and military personnel.",
+          "page_age": "2025-09-29T22:11:11",
+          "profile": {
+            "name": "AutoInsurance.com",
+            "url": "https://www.autoinsurance.com/companies/geico/reviews/",
+            "long_name": "autoinsurance.com",
+            "img": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.com",
+            "hostname": "www.autoinsurance.com",
+            "favicon": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v",
+            "path": "  \u203a home  \u203a companies  \u203a geico insurance review 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/FU3hr37tBh-Ikm7VXGKvyu3MEuYMGVKcUPtJXRnSUP4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYXV0b2luc3Vy/YW5jZS5jb20vYXBw/L3VwbG9hZHMvMjAy/MS8xMi8xNjIxMTQw/My9TY3JlZW4tU2hv/dC0yMDIxLTEyLTAx/LWF0LTkuMzcuNDYt/QU0ucG5n",
+            "original": "https://images.autoinsurance.com/app/uploads/2021/12/16211403/Screen-Shot-2021-12-01-at-9.37.46-AM.png",
+            "logo": false
+          },
+          "age": "September 29, 2025"
+        },
+        {
+          "title": "How To Opt Out Of Junk Mail From GEICO - PostGhost",
+          "url": "https://www.postghost.io/how-to-opt-out-of-junk-mail-from-geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Unsubscribe URL: https://www.geico.com/landingpage/optout/ ... Paperless Option for Geico Customers: If you\u2019re a Geico customer, you can go paperless by updating your preferences here.",
+          "page_age": "2025-03-06T20:18:07",
+          "profile": {
+            "name": "PostGhost",
+            "url": "https://www.postghost.io/how-to-opt-out-of-junk-mail-from-geico/",
+            "long_name": "postghost.io",
+            "img": "https://imgs.search.brave.com/Xl3U6_yd-QcMoCTDX9lJVaP2kL_mEJ-cQmBg7bkTQUw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTI2YzQxM2Rl/MjVjMzVkYTlmNDNl/NTJkYzNiNDYxY2Vk/ZTlhMGM5YTk5ZmZj/M2IyYzcyYzdlZjU2/ODc3OGI5Yy93d3cu/cG9zdGdob3N0Lmlv/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "postghost.io",
+            "hostname": "www.postghost.io",
+            "favicon": "https://imgs.search.brave.com/Xl3U6_yd-QcMoCTDX9lJVaP2kL_mEJ-cQmBg7bkTQUw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTI2YzQxM2Rl/MjVjMzVkYTlmNDNl/NTJkYzNiNDYxY2Vk/ZTlhMGM5YTk5ZmZj/M2IyYzcyYzdlZjU2/ODc3OGI5Yy93d3cu/cG9zdGdob3N0Lmlv/Lw",
+            "path": "  \u203a home  \u203a how to opt out of junk mail from geico"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/MNcFfqng8c_LEY0X1T4R6owj9PQBBYzzuyIHzYG8UXA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cG9zdGdob3N0Lmlv/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI1/LzAyL0dFSUNPLXN5/bWJvbC5qcGc",
+            "original": "https://www.postghost.io/wp-content/uploads/2025/02/GEICO-symbol.jpg",
+            "logo": false
+          },
+          "age": "March 6, 2025"
+        },
+        {
+          "title": "r/mildlyinfuriating on Reddit: GEICO says there\u2019s nothing they can do about this 25% increase in one year.",
+          "url": "https://www.reddit.com/r/mildlyinfuriating/comments/1opfq55/geico_says_theres_nothing_they_can_do_about_this/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Do they think I drive 25% more? Do they think I use their services 25% more? I\u2019m on auto pay, for years a loyal paying customer. I do paperless billing to say everyone time money resources.",
+          "page_age": "2025-11-05T21:24:21",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/mildlyinfuriating/comments/1opfq55/geico_says_theres_nothing_they_can_do_about_this/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/mildlyinfuriating  \u203a geico says there\u2019s nothing they can do about this 25% increase in one year."
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/NAhhkoBQ9lcci_OqIGh612NYRx_3GH2WgGyr3bhQLf0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pLnJl/ZGQuaXQvZ2VpY28t/c2F5cy10aGVyZXMt/bm90aGluZy10aGV5/LWNhbi1kby1hYm91/dC10aGlzLTI1LXYw/LWJoZ29sYW03YWl6/ZjEuanBnP3dpZHRo/PTEyNDImZm9ybWF0/PXBqcGcmYXV0bz13/ZWJwJnM9MzgxZTRh/ZDc0ODk1YWNiNTVh/YmEzYjcxZTQ5MjZh/YjAyMmM1MzU4NQ",
+            "original": "https://i.redd.it/geico-says-theres-nothing-they-can-do-about-this-25-v0-bhgolam7aizf1.jpg?width=1242&format=pjpg&auto=webp&s=381e4ad74895acb55aba3b71e4926ab022c53585",
+            "logo": false
+          },
+          "age": "2 days ago"
+        },
+        {
+          "title": "r/newjersey on Reddit: Car insurance just went up over 30%.",
+          "url": "https://www.reddit.com/r/newjersey/comments/1k0l5jx/car_insurance_just_went_up_over_30/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Typically your highest cost coverages are Liability, Personal Injury Protection and Collision. The first two are mandatory by law. Also, call and ask about discounts. Some popular ones are defensive driving, paperless, automatic payments, paying in full.",
+          "page_age": "2025-04-16T14:01:10",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/newjersey/comments/1k0l5jx/car_insurance_just_went_up_over_30/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/newjersey  \u203a car insurance just went up over 30%."
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A5H_aQiEBuUODR0lNeU8iDfhrWUvO8oEmRGE_mcS_gM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVkZGl0c3RhdGlj/LmNvbS9pY29uLnBu/Zw",
+            "original": "https://www.redditstatic.com/icon.png",
+            "logo": true
+          },
+          "age": "April 16, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

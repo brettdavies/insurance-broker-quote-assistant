@@ -1,0 +1,198 @@
+{
+  "websearch_id": "websearch_uby4uw9e0hkwrh9vosngutwo",
+  "search_id": "search_gb7nqtwngm9ys1khpkvulzxz",
+  "timestamp": "2025-11-07T12:30:15.971319",
+  "startedAt": "2025-11-07T12:30:15.971319",
+  "completedAt": "2025-11-07T12:30:17.935080",
+  "durationSeconds": 1.96,
+  "urlsDiscoveredCount": 4,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"contingent commission\" GEICO",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"contingent commission\" GEICO",
+      "show_strict_warning": false,
+      "cleaned": "contingent commission GEICO",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "contingent commission GEICO"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "How much commission do auto insurance agents make? (2025) | AutoInsurance.org",
+          "url": "https://www.autoinsurance.org/how-much-commission-do-auto-insurance-agents-make/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "First, they receive base commissions. These are usually a set percentage of the premiums sold by the agent and can change. In addition, insurance brokers may earn contingent commissions, which are dependent on whether they meet goals set by the insurer.",
+          "page_age": "2024-12-23T11:46:46",
+          "profile": {
+            "name": "AutoInsurance.org",
+            "url": "https://www.autoinsurance.org/how-much-commission-do-auto-insurance-agents-make/",
+            "long_name": "autoinsurance.org",
+            "img": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.org",
+            "hostname": "www.autoinsurance.org",
+            "favicon": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv",
+            "path": "  \u203a home  \u203a shopping for auto insurance  \u203a how to get auto insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/IBZLe7FjASOrsAdF79a4AjLscVHIRyrNl-5lH7xgh3E/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vcXVvdGVsbGMv/aW1hZ2UvdXBsb2Fk/L2luc3VyYW5jZS1z/aXRlLWltYWdlcy9h/aW9yZy1saXZlLzNm/YzJmYTlkLWFpb3Jn/LWxvZ28uc3Zn",
+            "original": "https://res.cloudinary.com/quotellc/image/upload/insurance-site-images/aiorg-live/3fc2fa9d-aiorg-logo.svg",
+            "logo": true
+          },
+          "age": "December 23, 2024"
+        },
+        {
+          "title": "Ontario Commission Disclosure",
+          "url": "https://ligroup.ca/contact-us/ontario-commission-disclosure/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Payment of this Contingent Commission may depend on a combination of growth, profitability (loss ratio), volume, retention and increased services that we provide on behalf of the Insurer. Contingent Commission is not guaranteed.",
+          "page_age": "2025-09-01T11:56:18",
+          "profile": {
+            "name": "Leibel Insurance",
+            "url": "https://ligroup.ca/contact-us/ontario-commission-disclosure/",
+            "long_name": "ligroup.ca",
+            "img": "https://imgs.search.brave.com/iI9cjlb8DGC_YbRtiRFIk8TMGfVkA2q0w7OBIv10ut0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGRlZDVlMGRh/ZWJkZTI3N2JhODVh/ODMzM2ZiNTBhZWM0/MDc2ZTUyMmYwMjlj/NmU0MzExYzk5NWUz/YzVkMDZiOC9saWdy/b3VwLmNhLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "ligroup.ca",
+            "hostname": "ligroup.ca",
+            "favicon": "https://imgs.search.brave.com/iI9cjlb8DGC_YbRtiRFIk8TMGfVkA2q0w7OBIv10ut0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGRlZDVlMGRh/ZWJkZTI3N2JhODVh/ODMzM2ZiNTBhZWM0/MDc2ZTUyMmYwMjlj/NmU0MzExYzk5NWUz/YzVkMDZiOC9saWdy/b3VwLmNhLw",
+            "path": "  \u203a home  \u203a contact us  \u203a ontario commission disclosure"
+          },
+          "age": "September 1, 2025"
+        },
+        {
+          "title": "Our Insurer Relationships and Broker Compensation | Cowan",
+          "url": "https://www.cowangroup.ca/home/compensation/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Payment generally depends on a combination of growth, loss ratio, volume, retention and provided services on behalf of the insurer. It is based upon our entire portfolio with that insurer, not on individual policies.",
+          "page_age": "2025-04-22T12:59:08",
+          "profile": {
+            "name": "Cowangroup",
+            "url": "https://www.cowangroup.ca/home/compensation/",
+            "long_name": "cowangroup.ca",
+            "img": "https://imgs.search.brave.com/2rfhNhY0o4ZdJFwIcfMBMNCBOGr7rh1EbwVnwIn90XQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGVlMmFlOTM2/ZTcyNTE5YjIyMzc2/ZTkwN2E2YWM2Y2M4/N2Q1OGJiMGM1OTBj/MDYwMDBiOTIyYjM4/MWEzZDAyZC93d3cu/Y293YW5ncm91cC5j/YS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cowangroup.ca",
+            "hostname": "www.cowangroup.ca",
+            "favicon": "https://imgs.search.brave.com/2rfhNhY0o4ZdJFwIcfMBMNCBOGr7rh1EbwVnwIn90XQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGVlMmFlOTM2/ZTcyNTE5YjIyMzc2/ZTkwN2E2YWM2Y2M4/N2Q1OGJiMGM1OTBj/MDYwMDBiOTIyYjM4/MWEzZDAyZC93d3cu/Y293YW5ncm91cC5j/YS8",
+            "path": "\u203a home  \u203a compensation"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/vVtd4Z6ETHgpWd9OD26Z2g8cfgsDv9q80kfQU4A_umk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y293YW5ncm91cC5j/YS93cC1jb250ZW50/L3VwbG9hZHMvMjAx/OS8wMy9Db3Jwb3Jh/dGUtUGxhbm5pbmcu/anBn",
+            "original": "https://www.cowangroup.ca/wp-content/uploads/2019/03/Corporate-Planning.jpg",
+            "logo": false
+          },
+          "age": "April 22, 2025"
+        },
+        {
+          "title": "Disclosure | Westland Express",
+          "url": "https://www.westlandexpress.ca/disclosure/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "It is paid to us on the effective date of the insurance policy. Contingency Amounts \u2013 Contingent commissions are typically based on the total premium volume placed with an insurer with payment to the broker contingent on a predefined ratio of claims paid to premium volume placed.",
+          "page_age": "2025-01-02T18:46:31",
+          "profile": {
+            "name": "Westland Express",
+            "url": "https://www.westlandexpress.ca/disclosure/",
+            "long_name": "westlandexpress.ca",
+            "img": "https://imgs.search.brave.com/qSYXV3eQVabhIxbwvnMEOV3Dx3IHVCTopNGq-QNTM3Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjUwMTgxMjZk/ZGMzNTdlMWM0Y2Qy/MGM3M2Q2NjI5YTU5/YzZjOGU2NzA4YTIw/MGZkNjZkNWE4Y2M4/ZDc5ZjQ2Mi93d3cu/d2VzdGxhbmRleHBy/ZXNzLmNhLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "westlandexpress.ca",
+            "hostname": "www.westlandexpress.ca",
+            "favicon": "https://imgs.search.brave.com/qSYXV3eQVabhIxbwvnMEOV3Dx3IHVCTopNGq-QNTM3Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjUwMTgxMjZk/ZGMzNTdlMWM0Y2Qy/MGM3M2Q2NjI5YTU5/YzZjOGU2NzA4YTIw/MGZkNjZkNWE4Y2M4/ZDc5ZjQ2Mi93d3cu/d2VzdGxhbmRleHBy/ZXNzLmNhLw",
+            "path": "  \u203a home  \u203a disclosure"
+          },
+          "age": "January 2, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

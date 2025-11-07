@@ -1,0 +1,216 @@
+{
+  "websearch_id": "websearch_icy9q4zqf6etfnse8qlbi3on",
+  "search_id": "search_j0lns7fpdpu9h8bjz7ybe3o5",
+  "timestamp": "2025-11-07T12:24:53.936134",
+  "startedAt": "2025-11-07T12:24:53.936134",
+  "completedAt": "2025-11-07T12:24:55.720334",
+  "durationSeconds": 1.78,
+  "urlsDiscoveredCount": 3,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:geico.com driving record",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:geico.com driving record",
+      "show_strict_warning": false,
+      "cleaned": "driving record",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "driving record",
+        "sites": [
+          "geico.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "How to Lower Your Car Insurance: 11 Practical Tips | GEICO Living",
+          "url": "https://living.geico.com/saving/insurance-101/4-ways-to-save-on-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Improving your driving record can help lower your car insurance premiums by demonstrating to insurers that you are a low-risk driver. Insurance companies often charge higher rates for drivers with a history of accidents, traffic violations, or claims. However, if you maintain a clean driving record over time\u2014free from speeding tickets, accidents, or other infractions\u2014your insurer may reward you with lower premiums.",
+          "page_age": "2024-11-12T19:45:04",
+          "profile": {
+            "name": "GEICO Living",
+            "url": "https://living.geico.com/saving/insurance-101/4-ways-to-save-on-car-insurance/",
+            "long_name": "living.geico.com",
+            "img": "https://imgs.search.brave.com/Cve-gaVVRqJopC0zfLT35CI5tzMv9fEQel0RH0-pstQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTQwNzI2ZGQy/YzdhMzYxOGY2MGQx/YmFiNGYyOGY2MDgz/M2E5Yjc5YjJhOWY4/OTYzOGU2ZTFjMWYy/NThhZjQxMi9saXZp/bmcuZ2VpY28uY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "living.geico.com",
+            "hostname": "living.geico.com",
+            "favicon": "https://imgs.search.brave.com/Cve-gaVVRqJopC0zfLT35CI5tzMv9fEQel0RH0-pstQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTQwNzI2ZGQy/YzdhMzYxOGY2MGQx/YmFiNGYyOGY2MDgz/M2E5Yjc5YjJhOWY4/OTYzOGU2ZTFjMWYy/NThhZjQxMi9saXZp/bmcuZ2VpY28uY29t/Lw",
+            "path": "\u203a saving  \u203a insurance-101  \u203a 4-ways-to-save-on-car-insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/SR9OF3_Pni6kOZW6ECZEEZYg8NmW_6Ca2eNGn-iCsoI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9saXZp/bmcuZ2VpY28uY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMl84/ODMxODYzMjhfU09D/X1BIT19HRUlDT19M/aXZpbmdfUGlnZ3lf/QmFua19DYXJfNjAw/eDQwMC5qcGc",
+            "original": "https://living.geico.com/wp-content/uploads/22_883186328_SOC_PHO_GEICO_Living_Piggy_Bank_Car_600x400.jpg",
+            "logo": false
+          },
+          "age": "November 12, 2024"
+        },
+        {
+          "title": "Tips for Senior Drivers | GEICO Living",
+          "url": "https://living.geico.com/driving/auto/car-safety-insurance/tips-for-senior-drivers/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "According to the Insurance Institute for Highway Safety (IIHS), fatal crash rates per miles traveled increase noticeably starting at age 70-74 and are highest among drivers 85 and older. Defensive Driver/Driver Safety programs are not only a refresher on safe driving, but it can help us avoid accidents in the first place.",
+          "page_age": "2025-07-22T15:57:11",
+          "profile": {
+            "name": "GEICO Living",
+            "url": "https://living.geico.com/driving/auto/car-safety-insurance/tips-for-senior-drivers/",
+            "long_name": "living.geico.com",
+            "img": "https://imgs.search.brave.com/Cve-gaVVRqJopC0zfLT35CI5tzMv9fEQel0RH0-pstQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTQwNzI2ZGQy/YzdhMzYxOGY2MGQx/YmFiNGYyOGY2MDgz/M2E5Yjc5YjJhOWY4/OTYzOGU2ZTFjMWYy/NThhZjQxMi9saXZp/bmcuZ2VpY28uY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "living.geico.com",
+            "hostname": "living.geico.com",
+            "favicon": "https://imgs.search.brave.com/Cve-gaVVRqJopC0zfLT35CI5tzMv9fEQel0RH0-pstQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTQwNzI2ZGQy/YzdhMzYxOGY2MGQx/YmFiNGYyOGY2MDgz/M2E5Yjc5YjJhOWY4/OTYzOGU2ZTFjMWYy/NThhZjQxMi9saXZp/bmcuZ2VpY28uY29t/Lw",
+            "path": "\u203a driving  \u203a auto  \u203a car-safety-insurance  \u203a tips-for-senior-drivers"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/8cRq7THRjBDkzCrfYoBji66RpAAQG63A0GKbX6qxf3Y/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9saXZp/bmcuZ2VpY28uY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy9HZXR0/eUltYWdlcy01MzM3/NjYzNDMtZTE2MTk2/MjI4NjU2NzkuanBn",
+            "original": "https://living.geico.com/wp-content/uploads/GettyImages-533766343-e1619622865679.jpg",
+            "logo": false
+          },
+          "age": "July 22, 2025"
+        },
+        {
+          "title": "Driving",
+          "url": "https://en.wikipedia.org/wiki/Driving",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "operation of a vehicle",
+          "profile": {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Driving",
+            "long_name": "en.wikipedia.org",
+            "img": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "deep_results": {
+            "buttons": [
+              {
+                "type": "button_result",
+                "title": "Etymology",
+                "url": "https://en.wikipedia.org/wiki/Driving#Etymology"
+              },
+              {
+                "type": "button_result",
+                "title": "Introduction of the automobile",
+                "url": "https://en.wikipedia.org/wiki/Driving#Introduction_of_the_automobile"
+              },
+              {
+                "type": "button_result",
+                "title": "Driving skills",
+                "url": "https://en.wikipedia.org/wiki/Driving#Driving_skills"
+              },
+              {
+                "type": "button_result",
+                "title": "Teenagers",
+                "url": "https://en.wikipedia.org/wiki/Driving#Teenagers"
+              },
+              {
+                "type": "button_result",
+                "title": "Driveability",
+                "url": "https://en.wikipedia.org/wiki/Driving#Driveability"
+              },
+              {
+                "type": "button_result",
+                "title": "Driving laws",
+                "url": "https://en.wikipedia.org/wiki/Driving#Driving_laws"
+              },
+              {
+                "type": "button_result",
+                "title": "Driving bans",
+                "url": "https://en.wikipedia.org/wiki/Driving#Driving_bans"
+              },
+              {
+                "type": "button_result",
+                "title": "Further reading",
+                "url": "https://en.wikipedia.org/wiki/Driving#Further_reading"
+              }
+            ]
+          },
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "en.wikipedia.org",
+            "hostname": "en.wikipedia.org",
+            "favicon": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw",
+            "path": "\u203a wiki  \u203a Driving"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Vj0BagsnHLVXlGUN3Pr-GZ8Q4KqWXsHfIYsGM6BtBjM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzFjL0NvbnZlcnRp/YmxlX01lcmNlZGVz/X0Nhcl9Ecml2aW5n/X09uX0FfSGlnaHdh/eS5qcGc",
+            "original": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Convertible_Mercedes_Car_Driving_On_A_Highway.jpg",
+            "logo": false
+          }
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

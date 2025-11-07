@@ -1,0 +1,790 @@
+{
+  "websearch_id": "websearch_gzyb3byv0wq7iwxc3ugppr5m",
+  "search_id": "search_qcs0ryuacsx9ml418cy7774z",
+  "timestamp": "2025-11-07T12:29:17.116170",
+  "startedAt": "2025-11-07T12:29:17.116170",
+  "completedAt": "2025-11-07T12:29:19.211663",
+  "durationSeconds": 2.1,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" \"average cost\" auto insurance California",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"GEICO\" \"average cost\" auto insurance California",
+      "show_strict_warning": false,
+      "cleaned": "GEICO average cost auto insurance California",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO average cost auto insurance California"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "How Much Is GEICO Car Insurance: Cost, Rates & Quote",
+          "url": "https://www.insuranks.com/how-much-is-geico-car-insurance-cost-rates-quote",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Based on our research, GEICO car insurance cost per month is $40 per month for minimum coverage and $98 per month for full coverage on average. GEICO typically offers six, nine, or twelve-month policy plans for auto insurance.",
+          "page_age": "2025-03-27T09:23:48",
+          "profile": {
+            "name": "Insuranks",
+            "url": "https://www.insuranks.com/how-much-is-geico-car-insurance-cost-rates-quote",
+            "long_name": "insuranks.com",
+            "img": "https://imgs.search.brave.com/ICeKaBOwQi-9XkT5uRQeegQZCc-E6c-b-vjj0BKHbNI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWJlZmM3ZDg1/NmU1ODI4YmExOWY4/YTU0ZjljMGY5OTA1/NGFmMDQzMGRlZDEw/MzA3NTljYTE0Nzg2/OTU1NTcyOC93d3cu/aW5zdXJhbmtzLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insuranks.com",
+            "hostname": "www.insuranks.com",
+            "favicon": "https://imgs.search.brave.com/ICeKaBOwQi-9XkT5uRQeegQZCc-E6c-b-vjj0BKHbNI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWJlZmM3ZDg1/NmU1ODI4YmExOWY4/YTU0ZjljMGY5OTA1/NGFmMDQzMGRlZDEw/MzA3NTljYTE0Nzg2/OTU1NTcyOC93d3cu/aW5zdXJhbmtzLmNv/bS8",
+            "path": "  \u203a home  \u203a auto insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/_Abzui2oLMVcvWSTkwCTkVar2dri0v8Od91VqVE1T58/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmtzLmNv/bS93cC1jb250ZW50/L3RoZW1lcy9pbnN1/cmFua3MvaW1hZ2Vz/L2luc3VyYW5rcy1z/aGFyZS1pbWFnZS5w/bmc",
+            "original": "https://www.insuranks.com/wp-content/themes/insuranks/images/insuranks-share-image.png",
+            "logo": false
+          },
+          "age": "March 27, 2025"
+        },
+        {
+          "title": "Average Car Insurance Cost in California (2025 Rates) | Insure.com",
+          "url": "https://www.insure.com/car-insurance/average-car-insurance-cost-in-california/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Its average annual cost is $2,038 per year or $170 monthly for a policy with limits of 100/300/100 and $500 collision and comprehensive deductibles. Kemper also provides affordable insurance rates in California for a full coverage policy at ...",
+          "page_age": "2025-11-06T06:00:00",
+          "profile": {
+            "name": "Insure.com",
+            "url": "https://www.insure.com/car-insurance/average-car-insurance-cost-in-california/",
+            "long_name": "insure.com",
+            "img": "https://imgs.search.brave.com/Z3l7ymA7ijOzla_9xm1wqbDVUCiXVmQ28LthFXmC9DQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGNjN2U1NDA2/YmJkOWM2ZTFjMjIx/MDM2ZTliZjE1NzVk/ZDg1NmIwM2YxODBj/Mzc2ZDE1OTg4NGY2/MzQ5OTFlZC93d3cu/aW5zdXJlLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insure.com",
+            "hostname": "www.insure.com",
+            "favicon": "https://imgs.search.brave.com/Z3l7ymA7ijOzla_9xm1wqbDVUCiXVmQ28LthFXmC9DQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGNjN2U1NDA2/YmJkOWM2ZTFjMjIx/MDM2ZTliZjE1NzVk/ZDg1NmIwM2YxODBj/Mzc2ZDE1OTg4NGY2/MzQ5OTFlZC93d3cu/aW5zdXJlLmNvbS8",
+            "path": "  \u203a home  \u203a car insurance  \u203a average car insurance cost  \u203a car insurance rates by state  \u203a average car insurance cost in california"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/pitVmXQvsiB54a_e0Vvom63By7FIUGHN69L846Oohck/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJlLmNvbS9p/bWFnZXMvYWR2aXNv/cl90b29sL2JhY2tn/cm91bmQvYXV0b19i/Z18wLmpwZw",
+            "original": "https://www.insure.com/images/advisor_tool/background/auto_bg_0.jpg",
+            "logo": false
+          },
+          "age": "2 days ago"
+        },
+        {
+          "title": "Best cheap car insurance in California for 2025",
+          "url": "https://www.insurance.com/auto-insurance/cheapest-car-insurance-in-california.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO is the best and the cheapest auto insurance company in California at an average of $1,919 a year for full coverage.",
+          "page_age": "2025-07-24T00:00:00",
+          "profile": {
+            "name": "Insurance.com",
+            "url": "https://www.insurance.com/auto-insurance/cheapest-car-insurance-in-california.html",
+            "long_name": "insurance.com",
+            "img": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurance.com",
+            "hostname": "www.insurance.com",
+            "favicon": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8",
+            "path": "  \u203a home  \u203a auto insurance  \u203a best cheap car insurance in california for 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/sSm42cxV51m4dtvODs6aiJ3rcQyhr7qtZFy14Gfm0NM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmNlLmNv/bS9pbWFnZXN2cl9j/ZS82ODk1L2Nhci1p/bnN1cmFuY2UtNy5q/cGc",
+            "original": "https://www.insurance.com/imagesvr_ce/6895/car-insurance-7.jpg",
+            "logo": false
+          },
+          "age": "July 24, 2025"
+        },
+        {
+          "title": "Average Cost of Car Insurance in California for 2025 | FinanceBuzz",
+          "url": "https://financebuzz.com/average-cost-of-car-insurance-in-ca",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The national average premium for full coverage insurance \u2014 insurance that includes liability, collision, and comprehensive coverage \u2014 is $186, but California&#x27;s average monthly premium is $199.",
+          "page_age": "2025-10-13T21:11:21",
+          "profile": {
+            "name": "FinanceBuzz",
+            "url": "https://financebuzz.com/average-cost-of-car-insurance-in-ca",
+            "long_name": "financebuzz.com",
+            "img": "https://imgs.search.brave.com/S-NKWliRWqMFS55aFMSJ2mN0Nznm6Nk76Mt95jC6F9U/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWNjZDU5ODQy/Y2NmN2M2ZWQxZWMw/MGMxMGFkMjg1NThm/NjFmMTI0ZDUzNTIz/NDk1NzA3YzI1MTRk/MGY1OTg4Yy9maW5h/bmNlYnV6ei5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "financebuzz.com",
+            "hostname": "financebuzz.com",
+            "favicon": "https://imgs.search.brave.com/S-NKWliRWqMFS55aFMSJ2mN0Nznm6Nk76Mt95jC6F9U/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWNjZDU5ODQy/Y2NmN2M2ZWQxZWMw/MGMxMGFkMjg1NThm/NjFmMTI0ZDUzNTIz/NDk1NzA3YzI1MTRk/MGY1OTg4Yy9maW5h/bmNlYnV6ei5jb20v",
+            "path": "  \u203a insurance  \u203a car insurance  \u203a average cost of car insurance in california for 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/E4GDmBjw14TILIRZ-seNZV25QeosZb0X2MhqW2Q9LXA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/ZmluYW5jZWJ1enou/Y29tL2ZpbHRlcnM6/cXVhbGl0eSgxMDAp/L2ltYWdlcy8yMDIz/LzAxLzMxL2dvbGRl/bl9nYXRlX3Nhbl9m/cmFuY2lzY28uanBn",
+            "original": "https://cdn.financebuzz.com/filters:quality(100)/images/2023/01/31/golden_gate_san_francisco.jpg",
+            "logo": false
+          },
+          "age": "4 weeks ago"
+        },
+        {
+          "title": "Compare Cheap Auto Insurance in California | AutoInsurance.com",
+          "url": "https://www.autoinsurance.com/states/california/cheap-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO and USAA offer the cheapest rates for most drivers in California, with average rates of $1,469 and $1,545, respectively, for full coverage. To be eligible for USAA, you must be an active member of the military, a veteran or the family ...",
+          "page_age": "2025-03-18T18:04:43",
+          "profile": {
+            "name": "Auto Insurance",
+            "url": "https://www.autoinsurance.com/states/california/cheap-car-insurance/",
+            "long_name": "autoinsurance.com",
+            "img": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.com",
+            "hostname": "www.autoinsurance.com",
+            "favicon": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v",
+            "path": "  \u203a home  \u203a states  \u203a compare cheap auto insurance in california"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/FU3hr37tBh-Ikm7VXGKvyu3MEuYMGVKcUPtJXRnSUP4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYXV0b2luc3Vy/YW5jZS5jb20vYXBw/L3VwbG9hZHMvMjAy/MS8xMi8xNjIxMTQw/My9TY3JlZW4tU2hv/dC0yMDIxLTEyLTAx/LWF0LTkuMzcuNDYt/QU0ucG5n",
+            "original": "https://images.autoinsurance.com/app/uploads/2021/12/16211403/Screen-Shot-2021-12-01-at-9.37.46-AM.png",
+            "logo": false
+          },
+          "age": "March 18, 2025"
+        },
+        {
+          "title": "Geico Car Insurance Review 2025: Is It Good Overall? \u2013 Forbes Advisor",
+          "url": "https://www.forbes.com/advisor/car-insurance/geico-car-insurance-review/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The national average car insurance cost for drivers with a DUI is $3,593 a year and Geico\u2019s average price comes to $658 above that. *USAA is available only to the military, veterans and their families.",
+          "page_age": "2025-05-02T08:02:11",
+          "profile": {
+            "name": "Forbes Advisor",
+            "url": "https://www.forbes.com/advisor/car-insurance/geico-car-insurance-review/",
+            "long_name": "forbes.com",
+            "img": "https://imgs.search.brave.com/qg6-E4bARcUpS7pHuJ2FXSeQ2YI51iPfbI8wpUBx9tg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY0NWFiMTBk/YmY2MjkyN2M0MTI0/NmRkYTM3ZjQzMGJj/Y2Q2MTBkYjVmZjA2/OGRjODBhMTM1M2Yx/YmRlZTA1NS93d3cu/Zm9yYmVzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "review",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "forbes.com",
+            "hostname": "www.forbes.com",
+            "favicon": "https://imgs.search.brave.com/qg6-E4bARcUpS7pHuJ2FXSeQ2YI51iPfbI8wpUBx9tg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY0NWFiMTBk/YmY2MjkyN2M0MTI0/NmRkYTM3ZjQzMGJj/Y2Q2MTBkYjVmZjA2/OGRjODBhMTM1M2Yx/YmRlZTA1NS93d3cu/Zm9yYmVzLmNvbS8",
+            "path": "\u203a advisor  \u203a car-insurance  \u203a geico-car-insurance-review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/6EtCTs5cpLhUAWJdUR5qAn_EVPT4ijjCEGnGGVp8DMU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Zm9yYmVzLmNvbS9h/ZHZpc29yL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIxLzA3L2dl/aWNvLXJldmlldy5q/cGVnLmpwZw",
+            "original": "https://www.forbes.com/advisor/wp-content/uploads/2021/07/geico-review.jpeg.jpg",
+            "logo": false
+          },
+          "age": "May 2, 2025"
+        },
+        {
+          "title": "Cheapest Car Insurance Quotes In Los Angeles, CA For 2025",
+          "url": "https://www.insuranceopedia.com/auto-insurance/best-cheap-car-insurance-los-angeles-ca",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "At $151 per month on average, GEICO offers the lowest insurance quotes for young adults in Los Angeles. Refer to the table below to compare low-cost auto insurance rates for young adults in Los Angeles.",
+          "page_age": "2025-09-12T20:11:55",
+          "profile": {
+            "name": "Insuranceopedia",
+            "url": "https://www.insuranceopedia.com/auto-insurance/best-cheap-car-insurance-los-angeles-ca",
+            "long_name": "insuranceopedia.com",
+            "img": "https://imgs.search.brave.com/KsBHSl4Wc_wUe27LG7XUNuU990n3ocgt5t6hB12cOiM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc3ZjI2YjMy/ZjI1NGM1NDUxYTNh/NTg4ZTBiZmZkZDM4/NTM0MTkyZGM2MTVh/NTNkOGNhOWYzZDk0/MWRmMTViNC93d3cu/aW5zdXJhbmNlb3Bl/ZGlhLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insuranceopedia.com",
+            "hostname": "www.insuranceopedia.com",
+            "favicon": "https://imgs.search.brave.com/KsBHSl4Wc_wUe27LG7XUNuU990n3ocgt5t6hB12cOiM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc3ZjI2YjMy/ZjI1NGM1NDUxYTNh/NTg4ZTBiZmZkZDM4/NTM0MTkyZGM2MTVh/NTNkOGNhOWYzZDk0/MWRmMTViNC93d3cu/aW5zdXJhbmNlb3Bl/ZGlhLmNvbS8",
+            "path": "\u203a auto-insurance  \u203a best-cheap-car-insurance-los-angeles-ca"
+          },
+          "age": "September 12, 2025"
+        },
+        {
+          "title": "GEICO car insurance review 2025: 3.1 out of 5 stars",
+          "url": "https://finance.yahoo.com/personal-finance/insurance/review/geico-car-insurance-review-180541901.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO&#x27;s average annual auto insurance costs range from $1,440 for basic coverage to $2,424 for full coverage.",
+          "page_age": "2025-09-10T18:05:41",
+          "profile": {
+            "name": "Yahoo! Finance",
+            "url": "https://finance.yahoo.com/personal-finance/insurance/review/geico-car-insurance-review-180541901.html",
+            "long_name": "finance.yahoo.com",
+            "img": "https://imgs.search.brave.com/ZxJbtHZiiBXciqcRfJn3XPiTEOf_XYrooAjrJf1rnag/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjRkNjc1NWY5/MzM5ZjlkMWQyNjM5/OWNiMTQ4ZjcwNTQx/ZjA3ZDE4NDQ2M2Iw/MWZjZjVhOTFlM2Ji/NTE1NWRjZS9maW5h/bmNlLnlhaG9vLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "finance.yahoo.com",
+            "hostname": "finance.yahoo.com",
+            "favicon": "https://imgs.search.brave.com/ZxJbtHZiiBXciqcRfJn3XPiTEOf_XYrooAjrJf1rnag/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjRkNjc1NWY5/MzM5ZjlkMWQyNjM5/OWNiMTQ4ZjcwNTQx/ZjA3ZDE4NDQ2M2Iw/MWZjZjVhOTFlM2Ji/NTE1NWRjZS9maW5h/bmNlLnlhaG9vLmNv/bS8",
+            "path": "  \u203a personal finance  \u203a insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ZUfRTp_T6gFSbsMxymx9F3xvFuUABzroRosGv7BCvsg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zLnlp/bWcuY29tL255L2Fw/aS9yZXMvMS4yL25K/eUJiLjlPamlOR1pp/UEljXzl2UmctLS9Z/WEJ3YVdROWFHbG5h/R3hoYm1SbGNqdDNQ/VEV5TURBN2FEMDRN/REEtL2h0dHBzOi8v/cy55aW1nLmNvbS9v/cy9jcmVhdHItdXBs/b2FkZWQtaW1hZ2Vz/LzIwMjUtMDkvMmZm/YTE5ZDAtOGU2Yi0x/MWYwLWJiZjctY2Y4/YjRmYTgyZjk5",
+            "original": "https://s.yimg.com/ny/api/res/1.2/nJyBb.9OjiNGZiPIc_9vRg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2025-09/2ffa19d0-8e6b-11f0-bbf7-cf8b4fa82f99",
+            "logo": false
+          },
+          "age": "September 10, 2025"
+        },
+        {
+          "title": "Best Car Insurance in California in 2025",
+          "url": "https://www.autoinsurance.com/states/california/best-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If you\u2019re seeking affordable ... rates for the average driver in California, with average costs hovering around $122 per month....",
+          "page_age": "2025-05-13T13:38:59",
+          "profile": {
+            "name": "Auto Insurance",
+            "url": "https://www.autoinsurance.com/states/california/best-car-insurance/",
+            "long_name": "autoinsurance.com",
+            "img": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.com",
+            "hostname": "www.autoinsurance.com",
+            "favicon": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v",
+            "path": "  \u203a home  \u203a bests  \u203a best car insurance in california in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/FU3hr37tBh-Ikm7VXGKvyu3MEuYMGVKcUPtJXRnSUP4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYXV0b2luc3Vy/YW5jZS5jb20vYXBw/L3VwbG9hZHMvMjAy/MS8xMi8xNjIxMTQw/My9TY3JlZW4tU2hv/dC0yMDIxLTEyLTAx/LWF0LTkuMzcuNDYt/QU0ucG5n",
+            "original": "https://images.autoinsurance.com/app/uploads/2021/12/16211403/Screen-Shot-2021-12-01-at-9.37.46-AM.png",
+            "logo": false
+          },
+          "age": "May 13, 2025"
+        },
+        {
+          "title": "GEICO auto insurance review for 2025 | Insurance.com",
+          "url": "https://www.insurance.com/auto-insurance/carriers/geico.aspx",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "For that reason, expect your rates to increase as you reach 65, but it will not be nearly as steep as the rates you saw in your teens. The average cost of car insurance with GEICO at age 65 is $1,659 for a male and $1,665 for a female.",
+          "page_age": "2025-02-21T00:00:00",
+          "profile": {
+            "name": "Insurance.com",
+            "url": "https://www.insurance.com/auto-insurance/carriers/geico.aspx",
+            "long_name": "insurance.com",
+            "img": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurance.com",
+            "hostname": "www.insurance.com",
+            "favicon": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8",
+            "path": "  \u203a home  \u203a auto insurance  \u203a carriers  \u203a geico auto insurance review for 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/_peY-rgrfNw3ckVrEEJ484XJgxg1twCvy56jKAx-_lw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmNlLmNv/bS9pbWFnZXN2cl9j/ZS82ODk1L2Nhci1p/bnN1cmFuY2UtMTEu/anBn",
+            "original": "https://www.insurance.com/imagesvr_ce/6895/car-insurance-11.jpg",
+            "logo": false
+          },
+          "age": "February 21, 2025"
+        },
+        {
+          "title": "Average Cost Of Car Insurance 2025 \u2013 Forbes Advisor",
+          "url": "https://www.forbes.com/advisor/car-insurance/average-cost-of-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Each auto insurance company assesses risk differently, which means prices can vary significantly among companies. Nationwide has the cheapest full coverage car insurance, followed by USAA, Travelers and Geico. USAA\u2014one of the best military car insurance companies\u2014is the cheapest for state minimum auto policies.",
+          "page_age": "2025-10-29T21:37:30",
+          "profile": {
+            "name": "Forbes Advisor",
+            "url": "https://www.forbes.com/advisor/car-insurance/average-cost-of-car-insurance/",
+            "long_name": "forbes.com",
+            "img": "https://imgs.search.brave.com/qg6-E4bARcUpS7pHuJ2FXSeQ2YI51iPfbI8wpUBx9tg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY0NWFiMTBk/YmY2MjkyN2M0MTI0/NmRkYTM3ZjQzMGJj/Y2Q2MTBkYjVmZjA2/OGRjODBhMTM1M2Yx/YmRlZTA1NS93d3cu/Zm9yYmVzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "forbes.com",
+            "hostname": "www.forbes.com",
+            "favicon": "https://imgs.search.brave.com/qg6-E4bARcUpS7pHuJ2FXSeQ2YI51iPfbI8wpUBx9tg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY0NWFiMTBk/YmY2MjkyN2M0MTI0/NmRkYTM3ZjQzMGJj/Y2Q2MTBkYjVmZjA2/OGRjODBhMTM1M2Yx/YmRlZTA1NS93d3cu/Zm9yYmVzLmNvbS8",
+            "path": "\u203a advisor  \u203a car-insurance  \u203a average-cost-of-car-insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/RUhRB3bHvfz3FS1_fasj8X1kWsPcQ8iuuRTdTNVcuzY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Zm9yYmVzLmNvbS9h/ZHZpc29yL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI1LzAxL2lt/YWdlMTctOTAweDUx/MC5qcGc",
+            "original": "https://www.forbes.com/advisor/wp-content/uploads/2025/01/image17-900x510.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "The Average Cost of Car Insurance in All 50 States | The Motley Fool",
+          "url": "https://www.fool.com/money/research/average-cost-car-insurance-50-states/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Most expensive car insurance in ... coverage car insurance: $626 \u00b7 Cheapest car insurance in Colorado: Geico, $1,875 average annual premium \u00b7...",
+          "page_age": "2025-02-12T19:24:23",
+          "profile": {
+            "name": "The Motley Fool",
+            "url": "https://www.fool.com/money/research/average-cost-car-insurance-50-states/",
+            "long_name": "fool.com",
+            "img": "https://imgs.search.brave.com/WApw2kto_pU_fkDjG9VP20wwEs08ki09eil7b1Kc_aw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWYzZjY3ZTJj/NWQzYjNhNTgxZTBl/ZDUxMTNmNjk1MTMz/ZWFjYWM5NTM4YzAx/Y2JmZmJjMDAyMWE4/NzIzMWRmZi93d3cu/Zm9vbC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "fool.com",
+            "hostname": "www.fool.com",
+            "favicon": "https://imgs.search.brave.com/WApw2kto_pU_fkDjG9VP20wwEs08ki09eil7b1Kc_aw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWYzZjY3ZTJj/NWQzYjNhNTgxZTBl/ZDUxMTNmNjk1MTMz/ZWFjYWM5NTM4YzAx/Y2JmZmJjMDAyMWE4/NzIzMWRmZi93d3cu/Zm9vbC5jb20v",
+            "path": "  \u203a knowledge  \u203a research  \u203a the average cost of car insurance in all 50 states"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/DcNVXPOYTaKBtV0PaEMQCkIZbvDN6Ub042gIijz49M4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9tLmZv/b2xjZG4uY29tL21l/ZGlhL2FmZmlsaWF0/ZXMvaW1hZ2VzL2Nh/ci1pbnN1cmFuY2Ut/cHJlbWl1bXMtYnkt/c3RhdGVfLjJlMTZk/MGJhLmZpbGwtMTUw/MHgxNTAwLmpwZw",
+            "original": "https://m.foolcdn.com/media/affiliates/images/car-insurance-premiums-by-state_.2e16d0ba.fill-1500x1500.jpg",
+            "logo": false
+          },
+          "age": "February 12, 2025"
+        },
+        {
+          "title": "California Cities With the Least Expensive Auto Insurance in 2025",
+          "url": "https://wallethub.com/answers/ci/which-city-in-california-has-the-least-expensive-auto-insurance-premiums-1000122-2140761468/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The cheapest car insurance companies ... best deal. The average cost of car insurance in California is 7% higher than the national average auto insurance premium....",
+          "page_age": "2025-09-19T09:27:25",
+          "profile": {
+            "name": "WalletHub",
+            "url": "https://wallethub.com/answers/ci/which-city-in-california-has-the-least-expensive-auto-insurance-premiums-1000122-2140761468/",
+            "long_name": "wallethub.com",
+            "img": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "wallethub.com",
+            "hostname": "wallethub.com",
+            "favicon": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw",
+            "path": "\u203a answers  \u203a ci  \u203a which-city-in-california-has-the-least-expensive-auto-insurance-premiums-1000122-2140761468"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YnFsFD--_0DYDN63YU7RTh6E1ZINWtslBaGMBZrgzuI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbGV0aHViLmNv/bS9pbWFnZXMvd2gy/MDE1L2Fuc3dlcnMv/d2FsbGV0aHViLWFu/c3dlcnNfVjMwYjE2/NmZfLnBuZw",
+            "original": "https://cdn.wallethub.com/images/wh2015/answers/wallethub-answers_V30b166f_.png",
+            "logo": false
+          },
+          "age": "September 19, 2025"
+        },
+        {
+          "title": "r/Insurance on Reddit: GEICO insurance started charging so much.",
+          "url": "https://www.reddit.com/r/Insurance/comments/1kwyqqw/geico_insurance_started_charging_so_much/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Don\u2019t bother trying to argue with Geico about why they\u2019re priced the way they are; they can\u2019t really give you an explanation besides \u201cthat\u2019s what our rates are, take it or leave it\u201d ... But from $100 to $500?",
+          "page_age": "2025-05-27T21:14:09",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Insurance/comments/1kwyqqw/geico_insurance_started_charging_so_much/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/insurance  \u203a geico insurance started charging so much."
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A5H_aQiEBuUODR0lNeU8iDfhrWUvO8oEmRGE_mcS_gM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVkZGl0c3RhdGlj/LmNvbS9pY29uLnBu/Zw",
+            "original": "https://www.redditstatic.com/icon.png",
+            "logo": true
+          },
+          "age": "May 27, 2025"
+        },
+        {
+          "title": "Geico Insurance Review 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "This is notably lower than the national average cost of car insurance which is $2,671 per year for full coverage. Your driver profile \u2014 which encompasses rating factors like your driving record, credit history (in most states) and age \u2014 gives Geico a basis for calculating your financial ...",
+          "page_age": "2025-10-14T19:36:23",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/geico/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "Cheapest Liability Car Insurance in California (2025) | Insurify",
+          "url": "https://insurify.com/car-insurance/california/liability-only/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "No additional coverage Full-coverage premium averages correspond to the same bodily injury and property damage limits in addition to: ... Quotes for Allstate, Farmers, GEICO, State Farm, and USAA are estimates based on Quadrant Information Services\u2019 database of auto insurance rates. ... California DMV. &quot;Auto Insurance Requirements.&quot; Ca.gov. &quot;California&#x27;s Low Cost Auto Insurance Program.&quot;",
+          "page_age": "2025-11-01T19:00:00",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/car-insurance/california/liability-only/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a car insurance  \u203a california  \u203a liability only"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/k6KWo7IwmWlolvlQks7fvOxHg1OjDa43FC0fRhBvvDk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xNjIyNzMvMTAw/MHg3MDAvOWM3NWI4/OGQzYy9ibHVlLWNh/ci10b3lvdGEtY29y/b2xsYS1zdW5zZXQt/b3JhbmdlLWNvbXBy/ZXNzZWQuanBn",
+            "original": "https://a.storyblok.com/f/162273/1000x700/9c75b88d3c/blue-car-toyota-corolla-sunset-orange-compressed.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Average cost of car insurance in November 2025",
+          "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Full coverage car insurance costs an average of $2,671 per year, while minimum coverage is $806 per year. On a monthly basis, full coverage averages $223, with minimum coverage averaging $67 per month.",
+          "page_age": "2025-11-07T05:04:33",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/kS-6az4e1AuNbmx7QPLBzr-uub9l7JUS6ocG95z6O3Y/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvMTI4/MHg3MjAvYTQwMzcz/ZDkyNi9pbnN1cmFu/Y2VfYXZlcmFnZV9j/b3N0X29mX2Nhcl9p/bnN1cmFuY2UuanBn",
+            "original": "https://a.storyblok.com/f/102997/1280x720/a40373d926/insurance_average_cost_of_car_insurance.jpg",
+            "logo": false
+          },
+          "age": "13 hours ago"
+        },
+        {
+          "title": "Month-to-Month Car Insurance: Best Temporary Short Term Companies",
+          "url": "https://www.moneygeek.com/insurance/auto/month-to-month-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO ranks as the best month-to-month car insurance provider for drivers who prefer digital-only service. GEICO offers the lowest average premium at $100 monthly with same-day coverage activation and instant digital ID cards.",
+          "page_age": "2025-11-06T22:42:07",
+          "profile": {
+            "name": "MoneyGeek",
+            "url": "https://www.moneygeek.com/insurance/auto/month-to-month-car-insurance/",
+            "long_name": "moneygeek.com",
+            "img": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "moneygeek.com",
+            "hostname": "www.moneygeek.com",
+            "favicon": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8",
+            "path": "  \u203a home  \u203a insurance  \u203a compare car insurance  \u203a month-to-month car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/nPaFTADsww2p4aSLKH4jXuN7JgyMeOMAVcwQG7kyNfQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbW9uZXlnZWVr/L2ltYWdlL3VwbG9h/ZC9jX3NjYWxlLHFf/YXV0bzplY28sd18x/MjAwLGZfYXV0byxm/bF9sb3NzeS92MTU5/NjAxMTM2OS95aGh2/YWNianBhY2dlOXZv/cnF2ZC5wbmc",
+            "original": "https://res.cloudinary.com/moneygeek/image/upload/c_scale,q_auto:eco,w_1200,f_auto,fl_lossy/v1596011369/yhhvacbjpacge9vorqvd.png",
+            "logo": false
+          },
+          "age": "20 hours ago"
+        },
+        {
+          "title": "USAA car insurance review 2025: 3.5 out of 5 stars",
+          "url": "https://finance.yahoo.com/personal-finance/insurance/review/usaa-car-insurance-review-183126344.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "USAA\u2019s average basic coverage premium is $99 vs. $120 for GEICO. For full coverage, USAA charges $168 monthly on average, while GEICO\u2019s average is $202. Tim Manni edited this article.",
+          "page_age": "2025-09-11T18:31:26",
+          "profile": {
+            "name": "Yahoo! Finance",
+            "url": "https://finance.yahoo.com/personal-finance/insurance/review/usaa-car-insurance-review-183126344.html",
+            "long_name": "finance.yahoo.com",
+            "img": "https://imgs.search.brave.com/ZxJbtHZiiBXciqcRfJn3XPiTEOf_XYrooAjrJf1rnag/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjRkNjc1NWY5/MzM5ZjlkMWQyNjM5/OWNiMTQ4ZjcwNTQx/ZjA3ZDE4NDQ2M2Iw/MWZjZjVhOTFlM2Ji/NTE1NWRjZS9maW5h/bmNlLnlhaG9vLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "finance.yahoo.com",
+            "hostname": "finance.yahoo.com",
+            "favicon": "https://imgs.search.brave.com/ZxJbtHZiiBXciqcRfJn3XPiTEOf_XYrooAjrJf1rnag/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjRkNjc1NWY5/MzM5ZjlkMWQyNjM5/OWNiMTQ4ZjcwNTQx/ZjA3ZDE4NDQ2M2Iw/MWZjZjVhOTFlM2Ji/NTE1NWRjZS9maW5h/bmNlLnlhaG9vLmNv/bS8",
+            "path": "  \u203a personal finance  \u203a insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/xVbP9u6Vjjr-4GAO_2xK-CDXn2ozatUCEFe2i3fZQbQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zLnlp/bWcuY29tL255L2Fw/aS9yZXMvMS4yL3Ft/VVg2VzhnRGYzQnFr/VTJ5bkZBQmctLS9Z/WEJ3YVdROWFHbG5h/R3hoYm1SbGNqdDNQ/VEV5TURBN2FEMDRN/REEtL2h0dHBzOi8v/cy55aW1nLmNvbS9v/cy9jcmVhdHItdXBs/b2FkZWQtaW1hZ2Vz/LzIwMjUtMDkvNzU4/ODk1NjAtOGYyNi0x/MWYwLWI3ZGYtZDU5/M2ViMGJkZTRh",
+            "original": "https://s.yimg.com/ny/api/res/1.2/qmUX6W8gDf3BqkU2ynFABg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2025-09/75889560-8f26-11f0-b7df-d593eb0bde4a",
+            "logo": false
+          },
+          "age": "September 11, 2025"
+        },
+        {
+          "title": "Cheapest Car Insurance for Seniors: Best Rates and Discounts 2025",
+          "url": "https://www.moneygeek.com/insurance/auto/cheapest-car-insurance-for-seniors/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO provides the cheapest full coverage car insurance for seniors with the lowest average rate of $184 per monty, saving seniors 34% compared to the national average. The average cost of car insurance for seniors across coverage levels is ...",
+          "page_age": "2025-10-31T14:13:29",
+          "profile": {
+            "name": "MoneyGeek",
+            "url": "https://www.moneygeek.com/insurance/auto/cheapest-car-insurance-for-seniors/",
+            "long_name": "moneygeek.com",
+            "img": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "moneygeek.com",
+            "hostname": "www.moneygeek.com",
+            "favicon": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8",
+            "path": "  \u203a home  \u203a insurance  \u203a compare car insurance  \u203a cheapest car insurance for seniors"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/_00edvMoz6CFXNDt-GH30LE98DBRkXeUjyvm_2mbtZE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbW9uZXlnZWVr/L2ltYWdlL3VwbG9h/ZC92MTYwMjc3OTY5/NS9Nb25leUdlZWsu/Y29tL2RlZmF1bHQl/MjBtZXRhJTIwaW1h/Z2VzL2F1dG9fempp/bGhnLmpwZw",
+            "original": "https://res.cloudinary.com/moneygeek/image/upload/v1602779695/MoneyGeek.com/default%20meta%20images/auto_zjilhg.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

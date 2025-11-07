@@ -1,0 +1,778 @@
+{
+  "websearch_id": "websearch_rl0ewnfakfmvbx2nvcwj34xv",
+  "search_id": "search_hk5lwirjyf863xxpfd3kng88",
+  "timestamp": "2025-11-07T12:34:18.536315",
+  "startedAt": "2025-11-07T12:34:18.536315",
+  "completedAt": "2025-11-07T12:34:20.424865",
+  "durationSeconds": 1.89,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:bankrate.com Progressive average cost",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:bankrate.com Progressive average cost",
+      "show_strict_warning": false,
+      "cleaned": "Progressive average cost",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "Progressive average cost",
+        "sites": [
+          "bankrate.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Progressive Snapshot Review | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/progressive-snapshot/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The average Snapshot discount is $231, according to Progressive, but beware \u2014 on average, 2 out of 10 drivers experience an increase in premium due to driving habits that are considered risky.",
+          "page_age": "2025-08-26T20:50:41",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/progressive-snapshot/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/7oav7kI4Gyb2mHYzVikwtGiVbOdGqpkGgNtDCkhvQ1M/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/LzIwMjEvMDUvMDgx/MDE0MDQvc25hcHNo/b3QtODAwLTQ1MC5q/cGVn",
+            "original": "https://www.bankrate.com/2021/05/08101404/snapshot-800-450.jpeg",
+            "logo": false
+          },
+          "age": "August 26, 2025"
+        },
+        {
+          "title": "Best Car Insurance in Oklahoma for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/oklahoma/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "On average, U.S. drivers pay $2,671 per year for full car insurance coverage and $806 per year for minimum coverage. However, buying the best car insurance is typically about more than finding the cheapest rates. According to our proprietary Bankrate Scoring method, which includes results from ...",
+          "page_age": "2025-11-06T13:17:46",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/oklahoma/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "age": "1 day ago"
+        },
+        {
+          "title": "Best Homeowners Insurance in Florida for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/homeowners-insurance/florida/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Wondering how to lower your home insurance cost? Bankrate provides strategies. ... At an average of $5,838 per year for a $300K dwelling policy, Florida homeowners pay some of the priciest premiums in the country.",
+          "page_age": "2025-11-06T20:37:51",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/homeowners-insurance/florida/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product_cluster",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a homeowners insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/mWlfUTG8fxTWlDstM_xHeWJCe2jdnMTTg0OaoLKMOgg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/aW5zdXJhbmNlLnJl/ZHZlbnR1cmVzLmlv/L2ltYWdlcy90b3dl/cmhpbGwuc3Zn",
+            "original": "https://cdn.insurance.redventures.io/images/towerhill.svg",
+            "logo": true
+          },
+          "age": "1 day ago"
+        },
+        {
+          "title": "Best Cheap Car Insurance in San Francisco, CA in 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/san-francisco-ca/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Average cost of minimum coverage car insurance in San Francisco: $980 \u00b7 Cheapest car insurance companies in San Francisco for minimum coverage: Geico, Progressive and Mercury",
+          "page_age": "2025-11-04T20:29:11",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/san-francisco-ca/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product_cluster",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/WmJAmRq354HwPu1QNu_yBKLqXw0BH-yd_81aCv3ZoRA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/aW5zdXJhbmNlLnJl/ZHZlbnR1cmVzLmlv/L2ltYWdlcy9tZXJj/dXJ5LnN2Zw",
+            "original": "https://cdn.insurance.redventures.io/images/mercury.svg",
+            "logo": true
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "Amica vs. Progressive 2025 | Bankrate.com",
+          "url": "https://www.bankrate.com/insurance/reviews/amica-vs-progressive/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "When comparing average car insurance costs from Progressive and Amica, Amica offers higher national average costs than Progressive for both minimum and full coverage.",
+          "page_age": "2025-09-01T04:00:00",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/amica-vs-progressive/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "September 1, 2025"
+        },
+        {
+          "title": "High Insurance Rates Leave Some Homeowners with Buyers Remorse - Bankrate",
+          "url": "https://www.bankrate.com/insurance/homeowners-insurance/high-insurance-rates-leave-some-homeowners-with-buyers-remorse/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Going from a $1,000 to $5,000 deductible shaved an average of $463 per year off your home insurance bill, according to Bankrate\u2019s Home Insurance Affordability Ranking. Raising your deductible can be an effective way to manage high home insurance ...",
+          "page_age": "2025-09-23T15:01:15",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/homeowners-insurance/high-insurance-rates-leave-some-homeowners-with-buyers-remorse/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a homeowners insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/UtxoUHLfTOdfbJDHlM2h9kPKW0bPHdNK3bIJBoUarIU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/L2JycC8yMDI1LzA5/LzIzMTA1NDM3L0lu/c3VyYW5jZS1IaWdo/LWluc3VyYW5jZS1y/YXRlcy1sZWF2ZS1z/b21lLWhvbWVvd25l/cnMtd2l0aC1idXll/cnMtcmVtb3JzZS5q/cGc",
+            "original": "https://www.bankrate.com/brp/2025/09/23105437/Insurance-High-insurance-rates-leave-some-homeowners-with-buyers-remorse.jpg",
+            "logo": false
+          },
+          "age": "September 23, 2025"
+        },
+        {
+          "title": "Progressive vs. State Farm 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/progressive-vs-state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "To get an idea of which company is better at paying out claims, we analyzed data from the 2024 J.D. Power U.S. Auto Claims Satisfaction Study. State Farm ranked well above average with a score of 710 out of 1,000 (the average being 697), while Progressive ranked second from last with 672.",
+          "page_age": "2025-11-04T11:52:19",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/progressive-vs-state-farm/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "Home Insurance Rates Make or Break the Best and Worst States To Retire | Bankrate",
+          "url": "https://www.bankrate.com/insurance/homeowners-insurance/worst-states-to-retire-have-highest-home-insurance-rates/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "It also earned the third-worst score in the affordability category. As of July 2025, Florida is the third-most expensive state for home insurance, with the average policy costing $5,695 per year.",
+          "page_age": "2025-09-16T14:09:32",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/homeowners-insurance/worst-states-to-retire-have-highest-home-insurance-rates/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a homeowners insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/o2c4hvDdWPkJLcs2iYuqq0-cpD4K7LUmyyf4P_MfYwc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/L2JycC8yMDI1LzA5/LzE2MDk1OTExL2hv/bWUtaW5zdXJhbmNl/LXJhdGVzLW1ha2Ut/b3ItYnJlYWstdGhl/LWJlc3QtYW5kLXdv/cnN0LXN0YXRlcy10/by1yZXRpcmUuanBn",
+            "original": "https://www.bankrate.com/brp/2025/09/16095911/home-insurance-rates-make-or-break-the-best-and-worst-states-to-retire.jpg",
+            "logo": false
+          },
+          "age": "September 16, 2025"
+        },
+        {
+          "title": "Texas Homeowners Insurance Crisis | Bankrate",
+          "url": "https://www.bankrate.com/insurance/homeowners-insurance/texas-home-insurance-crisis/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "By June 2025, the same policy cost an average of $4,049 annually.",
+          "page_age": "2025-08-06T15:51:17",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/homeowners-insurance/texas-home-insurance-crisis/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a homeowners insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/cGWNj3ztxEN6HDCj7vifv07IKLX7VlkWxn04TWywtQg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/L2JycC8yMDI1LzA3/LzE3MTUzMTIxL0dl/dHR5SW1hZ2VzLTIx/NTQyMDQ4MzMtc2Nh/bGVkLmpwZw",
+            "original": "https://www.bankrate.com/brp/2025/07/17153121/GettyImages-2154204833-scaled.jpg",
+            "logo": false
+          },
+          "age": "August 6, 2025"
+        },
+        {
+          "title": "Factors That Impact Your Cost of Homeowners Insurance | Bankrate",
+          "url": "https://www.bankrate.com/insurance/homeowners-insurance/factors-that-impact-home-insurance-rates/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "According to average rate data from Quadrant Information Services, the average cost of home insurance is $2,466 per year as of July 2025. However, your exact rate will likely be different.",
+          "page_age": "2025-07-22T13:45:06",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/homeowners-insurance/factors-that-impact-home-insurance-rates/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a homeowners insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ouijge2Z1lYcB7Il3cT-Q3AMbC1hOfvMry0xK_iEpPM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/L2JycC8yMDI1LzAy/LzIyMDkzNzQ0L2hv/bWVvd25lcnMtaW5z/dXJhbmNlX2ZhY3Rv/cnMtdGhhdC1pbXBh/Y3QtaG9tZS1pbnN1/cmFuY2UtcmF0ZXMu/cG5n",
+            "original": "https://www.bankrate.com/brp/2025/02/22093744/homeowners-insurance_factors-that-impact-home-insurance-rates.png",
+            "logo": false
+          },
+          "age": "July 22, 2025"
+        },
+        {
+          "title": "Best Cheap Home Insurance in San Francisco, CA in 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/homeowners-insurance/san-francisco-ca/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The average cost of San Francisco home insurance is $1,560 per year for $300,000 in dwelling coverage. This is about 4 percent less than the California average of $1,632 per year.",
+          "page_age": "2025-10-19T22:19:07",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/homeowners-insurance/san-francisco-ca/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product_cluster",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a homeowners insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/WmJAmRq354HwPu1QNu_yBKLqXw0BH-yd_81aCv3ZoRA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/aW5zdXJhbmNlLnJl/ZHZlbnR1cmVzLmlv/L2ltYWdlcy9tZXJj/dXJ5LnN2Zw",
+            "original": "https://cdn.insurance.redventures.io/images/mercury.svg",
+            "logo": true
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "Allstate, Geico, Progressive and State Farm Compared | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/comparison-allstate-geico-progressive-state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Learn more about Progressive car insurance. Offers a Name Your Price tool for policy customization and budget friendliness \u00b7 Offers a wide range of insurance coverage in most parts of the country \u00b7 Does not have as many local agents or locations as some competitors \u00b7 Scored second-to-last in the 2024 J.D. Power U.S. Auto Claims Satisfaction Study \u00b7 Why we chose it: Geico has a history of offering low average rates for many types of drivers.",
+          "page_age": "2025-08-19T12:42:54",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/comparison-allstate-geico-progressive-state-farm/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/qRCWTEdsnsACE5ZamCI9jMMGha-EMK8xAQWKx_51oDI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/L2JycC8yMDI1LzAy/LzA2MTU1MzM1L0lu/c3VyYW5jZV9GcmVl/bGFuY2VfQWxsc3Rh/dGVfR2VpY29fUHJv/Z3Jlc3NpdmVfYW5k/X1N0YXRlX0Zhcm1f/Q29tcGFyZWQuanBn",
+            "original": "https://www.bankrate.com/brp/2025/02/06155335/Insurance_Freelance_Allstate_Geico_Progressive_and_State_Farm_Compared.jpg",
+            "logo": false
+          },
+          "age": "August 19, 2025"
+        },
+        {
+          "title": "Average homeowners insurance cost in November 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/homeowners-insurance/homeowners-insurance-cost/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The national average cost of home insurance is $2,408 per year for a policy with a $300,000 dwelling limit. This comes out to about $201 per month. But these are just average figures \u2014 what you pay for your policy will likely be different.",
+          "page_age": "2025-11-07T03:41:43",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/homeowners-insurance/homeowners-insurance-cost/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a homeowners insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/WKkJoJc_bW1TLPVudS9K-hoypWgwB7vLtIiAzvMvNGs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvMTI4/MHg3MjAvNjU1MTM0/MGQxMi9pbnN1cmFu/Y2UtYXZlcmFnZS1j/b3N0LW9mLWhvbWVv/d25lcnMtaW5zdXJh/bmNlXy5qcGc",
+            "original": "https://a.storyblok.com/f/102997/1280x720/6551340d12/insurance-average-cost-of-homeowners-insurance_.jpg",
+            "logo": false
+          },
+          "age": "15 hours ago"
+        },
+        {
+          "title": "What Are The Most Expensive Home Maintenance Costs? | Bankrate",
+          "url": "https://www.bankrate.com/home-equity/most-expensive-home-maintenance-costs/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Along with unexpected repairs, there\u2019s routine, day-to-day upkeep \u2014 and that, too, adds up quickly. In fact, it currently averages more than $8,800 a year, according to \u00b7 Bankrate\u2019s Hidden Costs of Homeownership Study.",
+          "page_age": "2025-07-24T20:47:34",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/home-equity/most-expensive-home-maintenance-costs/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a home equity"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/trQ1rKWsHsw4huL4caFcUEP1kZzmbP2uoA5_8DIpsWM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/L2JycC8yMDI0LzEx/LzAxMTM0MzU5L0hv/bWVzLUhpZGRlbi1D/b3N0cy1vZi1Ib21l/b3duZXJzaGlwLXN0/dWR5LXBlZWwuanBn",
+            "original": "https://www.bankrate.com/brp/2024/11/01134359/Homes-Hidden-Costs-of-Homeownership-study-peel.jpg",
+            "logo": false
+          },
+          "age": "July 24, 2025"
+        },
+        {
+          "title": "Marginal vs. Effective Tax Rate: What\u2019s The Difference? | Bankrate",
+          "url": "https://www.bankrate.com/taxes/marginal-vs-effective-tax-rate/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "So, you go bracket by bracket, paying the specified tax rate on the amount of income that falls within that tax bracket, until you\u2019ve reached the bracket that matches your total taxable income. Because of this system, your effective (or average) tax rate can be significantly lower than your marginal tax rate.",
+          "page_age": "2025-06-10T03:49:20",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/taxes/marginal-vs-effective-tax-rate/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a taxes"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/JAxrUDni16O9EJU9gj8y5nGDzN_EWIhl7L4loFrIC0I/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/L2JycC8yMDI1LzAx/LzA5MjMxODE4L0dl/dHR5SW1hZ2VzLTEz/NTgyMTMyODkucG5n",
+            "original": "https://www.bankrate.com/brp/2025/01/09231818/GettyImages-1358213289.png",
+            "logo": false
+          },
+          "age": "June 10, 2025"
+        },
+        {
+          "title": "Average Cost of Car Insurance in South Carolina for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-south-carolina/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In South Carolina, full coverage car insurance costs an average of $2,023 per year and minimum coverage costs an average of $671 per year.",
+          "page_age": "2025-11-06T22:07:09",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-south-carolina/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "age": "1 day ago"
+        },
+        {
+          "title": "Cheapest Car Insurance in Iowa for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/cheapest-car-insurance-in-iowa/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The average annual cost of car insurance in the U.S. is $806 for minimum coverage and $2,671 for full coverage, compared to Iowa\u2019s rates at $331 per year for minimum coverage and $1,911 per year for full coverage car insurance.",
+          "page_age": "2025-10-24T20:17:24",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/cheapest-car-insurance-in-iowa/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "Complete Costs Of Buying A Home In Today\u2019s Market | Bankrate",
+          "url": "https://www.bankrate.com/real-estate/costs-of-buying-a-home/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "But the costs associated with buying a home go beyond just the price of the house itself. To determine how much house you can afford, it\u2019s important to factor in all the additional expenses, such as closing costs, insurance, taxes and maintenance, before committing to a purchase.",
+          "page_age": "2025-08-27T20:25:39",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/real-estate/costs-of-buying-a-home/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a real estate"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/M6yor2_WwWxMcf3ir1OSu51_1-pWc8GvBvZ_clR0trE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/L2JycC8yMDIzLzA1/LzEwMDk0ODIwL0hv/bWVzXy1Db21wbGV0/ZV9jb3N0c19vZl9i/dXlpbmdfYV9ob21l/LmpwZw",
+            "original": "https://www.bankrate.com/brp/2023/05/10094820/Homes_-Complete_costs_of_buying_a_home.jpg",
+            "logo": false
+          },
+          "age": "August 27, 2025"
+        },
+        {
+          "title": "$50K out of Pocket: Homeowners Can\u2019t Afford To Overlook Percentage-Based Deductibles | Bankrate",
+          "url": "https://www.bankrate.com/insurance/homeowners-insurance/homeowners-cant-afford-to-overlook-percentage-deductibles/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "These deductibles are calculated as a percentage of your coverage limit.",
+          "page_age": "2025-08-27T17:37:05",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/homeowners-insurance/homeowners-cant-afford-to-overlook-percentage-deductibles/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a homeowners insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/zLhH3yrFQDHUa6zC9YgyFnvUillCZsl6eXLGFADTpzY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/L2JycC8yMDI1LzA4/LzI3MTMzMDA4L25l/d3lvcmstd2luZC1o/dXJyaWNhbmUtZGVk/dWN0aWJsZS0xLmpw/Zw",
+            "original": "https://www.bankrate.com/brp/2025/08/27133008/newyork-wind-hurricane-deductible-1.jpg",
+            "logo": false
+          },
+          "age": "August 27, 2025"
+        },
+        {
+          "title": "Average Cost Of Credit Card Processing Fees | Bankrate",
+          "url": "https://www.bankrate.com/credit-cards/business/merchants-guide-to-credit-card-processing-fees/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Many small business owners discover credit card processing fees cost more than they realized. The average credit card processing fees range from 1.5 percent to 3.5 percent of each transaction, according to",
+          "page_age": "2025-07-14T00:20:44",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/credit-cards/business/merchants-guide-to-credit-card-processing-fees/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a credit cards  \u203a business"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/v6afBZzicbZsl5bNLLmKH2egsrrSG0URIG7cORrrzTg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/LzIwMjAvMDUvMjkx/MDQ0MzYvTWVyY2hh/bnQtUHJvY2Vzc2lu/Zy1GZWVzLS5wbmc",
+            "original": "https://www.bankrate.com/2020/05/29104436/Merchant-Processing-Fees-.png",
+            "logo": false
+          },
+          "age": "July 14, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

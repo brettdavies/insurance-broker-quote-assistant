@@ -1,0 +1,768 @@
+{
+  "websearch_id": "websearch_a7ar2n6yh3di6di1qkqnwwaa",
+  "search_id": "search_h9db9qi92yzqzc9qunm08p17",
+  "timestamp": "2025-11-07T12:34:16.634403",
+  "startedAt": "2025-11-07T12:34:16.634403",
+  "completedAt": "2025-11-07T12:34:18.529796",
+  "durationSeconds": 1.9,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:bankrate.com GEICO coverage comparison",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:bankrate.com GEICO coverage comparison",
+      "show_strict_warning": false,
+      "cleaned": "GEICO coverage comparison",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO coverage comparison",
+        "sites": [
+          "bankrate.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Geico Insurance Review 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico doesn&#x27;t just offer low rates to high-risk drivers, safe drivers may find significant savings with Geico, too. According to Bankrate&#x27;s analysis of average rates from Quadrant Information Services, a full coverage policy from Geico costs 18 percent less than the national average.",
+          "page_age": "2025-10-14T19:36:23",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/geico/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "Allstate, Geico, Progressive and State Farm Compared | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/comparison-allstate-geico-progressive-state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Offers a wide range of insurance coverage in most parts of the country \u00b7 Does not have as many local agents or locations as some competitors \u00b7 Scored second-to-last in the 2024 J.D. Power U.S. Auto Claims Satisfaction Study \u00b7 Why we chose it: Geico has a history of offering low average rates for many types of drivers.",
+          "page_age": "2025-08-19T12:42:54",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/comparison-allstate-geico-progressive-state-farm/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/qRCWTEdsnsACE5ZamCI9jMMGha-EMK8xAQWKx_51oDI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/L2JycC8yMDI1LzAy/LzA2MTU1MzM1L0lu/c3VyYW5jZV9GcmVl/bGFuY2VfQWxsc3Rh/dGVfR2VpY29fUHJv/Z3Jlc3NpdmVfYW5k/X1N0YXRlX0Zhcm1f/Q29tcGFyZWQuanBn",
+            "original": "https://www.bankrate.com/brp/2025/02/06155335/Insurance_Freelance_Allstate_Geico_Progressive_and_State_Farm_Compared.jpg",
+            "logo": false
+          },
+          "age": "August 19, 2025"
+        },
+        {
+          "title": "Geico vs Amica 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/geico-vs-amica/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Amica: customer experience comparison ... Based on our analysis of average premiums from Quadrant Information Services, Geico is generally cheaper than Amica. However, Geico\u2019s coverage options are a bit sparse compared to Amica\u2019s. For instance, Amica\u2019s Platinum Choice Auto package offers ...",
+          "page_age": "2025-10-23T13:09:07",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/geico-vs-amica/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "Geico vs. Liberty Mutual 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/geico-vs-liberty-mutual/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "When comparing Liberty Mutual vs. Geico, both are strong insurance companies, but each company has its potential advantages and disadvantages. For example, Liberty Mutual offers more optional coverage, but Geico has higher third-party ratings and a higher Bankrate Score.",
+          "page_age": "2025-09-10T20:51:10",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/geico-vs-liberty-mutual/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "September 10, 2025"
+        },
+        {
+          "title": "Geico vs State Farm | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/geico-vs-state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "While Geico&#x27;s average rates are below the national average for both minimum and full coverage, State Farm&#x27;s average rates are actually slightly higher than the national average, according to Bankrate\u2019s analysis of premium data from Quadrant Information Services.",
+          "page_age": "2025-09-08T15:15:12",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/geico-vs-state-farm/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "September 8, 2025"
+        },
+        {
+          "title": "Geico DriveEasy Review: How It Works and Whether It\u2019s Worth It | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/geico-driveeasy/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "That\u2019s never a bad idea, but there are a few catches to be aware of with these programs. Geico\u2019s DriveEasy is one of the best-known, and in this review, Bankrate\u2019s insurance team looks at the program\u2019s pros and cons to help you decide if it is worth participating in \u2014 or if it might cost you money instead.",
+          "page_age": "2025-06-12T20:06:15",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/geico-driveeasy/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/npy3v-wzO5Fh3Tx5xIIAshZ14hLoKb0B9o0y90383FY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/LzIwMjEvMTAvMTIx/MjM3MjgvY2FyLWdl/aWNvLWRyaXZlZWFz/eS1mZWF0dXJlZC5q/cGc",
+            "original": "https://www.bankrate.com/2021/10/12123728/car-geico-driveeasy-featured.jpg",
+            "logo": false
+          },
+          "age": "June 12, 2025"
+        },
+        {
+          "title": "Best Cheap Car Insurance in Orlando for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/orlando-fl/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Our content is backed by Coverage.com LLC, a licensed entity (NPN: 19966249). For more information, please see our Insurance Disclosure. ... According to research by Bankrate\u2019s insurance editorial team, the three cheapest car insurance companies in Orlando are Geico, State Farm and Allstate, with Geico customers paying $850 per year, on average, for state minimum coverage.",
+          "page_age": "2025-10-28T06:47:35",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/orlando-fl/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product_cluster",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/y51rgXMY46R1WhEKSD8qCHgS22YKGz9-LByfiX_ndjU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/aW5zdXJhbmNlLnJl/ZHZlbnR1cmVzLmlv/L2ltYWdlcy9kaXJl/Y3RhdXRvLnN2Zw",
+            "original": "https://cdn.insurance.redventures.io/images/directauto.svg",
+            "logo": true
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Best Cheap Car Insurance in Memphis for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/memphis-tn/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Avg. full coverage premium ... Why Geico made our list: For drivers in Memphis, Geico offers some of the lowest average prices for both full and minimum coverage, with a strong lineup of discounts that could add extra savings for some drivers.",
+          "page_age": "2025-11-05T01:21:04",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/memphis-tn/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product_cluster",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/JFIRTtTK-bahCdRmRKd7z4al_DgnPpHJI-6WVKFPU18/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/aW5zdXJhbmNlLnJl/ZHZlbnR1cmVzLmlv/L2ltYWdlcy9lcmll/LnN2Zw",
+            "original": "https://cdn.insurance.redventures.io/images/erie.svg",
+            "logo": true
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "Best Cheap Car Insurance in Boston for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/boston-ma/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Avg. full coverage premium ... Why Geico made our list: Geico tied with Amica for a 2024 Bankrate Award for Best Auto Insurance Company Overall.",
+          "page_age": "2025-10-24T23:23:14",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/boston-ma/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product_cluster",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/jsPQKxrpHvk7uifrhDO37_XDv0pUSqlynoXgFxGP3xg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/aW5zdXJhbmNlLnJl/ZHZlbnR1cmVzLmlv/L2ltYWdlcy90aGVo/YW5vdmVyLnN2Zw",
+            "original": "https://cdn.insurance.redventures.io/images/thehanover.svg",
+            "logo": true
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "Mechanical Breakdown Insurance | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/mechanical-breakdown-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "One last tip for new car owners: if your vehicle is still covered by the manufacturer\u2019s warranty, buying mechanical breakdown insurance might mean you\u2019re paying for overlapping coverage. MBI can be a useful supplement if there are gaps in your warranty, but it\u2019s important to carefully review the fine print to understand exactly what\u2019s covered. Mechanical breakdown insurance for used cars is not as widely available. For example, Geico requires that you be the original owner of the vehicle to purchase mechanical breakdown insurance.",
+          "page_age": "2025-07-22T13:56:18",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/mechanical-breakdown-insurance/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A0on89RuP9l7sRa2CF8pEzmj5NwTGsZ6Jph1a4Wx4uo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/LzIwMjAvMDkvMDgx/NDM4MTEvbWVjaGFu/aWNhbC1icmVha2Rv/d24taW5zdXJhbmNl/LWZlYXR1cmVkLmpw/Zw",
+            "original": "https://www.bankrate.com/2020/09/08143811/mechanical-breakdown-insurance-featured.jpg",
+            "logo": false
+          },
+          "age": "July 22, 2025"
+        },
+        {
+          "title": "Cheapest Car Insurance in Utah for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/cheapest-car-insurance-in-utah/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "These are below the national annual averages, which are $806 for minimum and $2,671 for full coverage insurance. Keep in mind that your own rate is likely to differ from the averages, since it is dependent on multiple factors that are unique to you, such as your age, credit rating and driving history as well as your car&#x27;s age, make and model. According to Bankrate\u2019s research, the companies with the cheapest average car insurance rates in Utah include USAA, Geico, Progressive, Nationwide and Auto-Owners.",
+          "page_age": "2025-11-07T09:21:33",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/cheapest-car-insurance-in-utah/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "age": "9 hours ago"
+        },
+        {
+          "title": "Best Car Insurance in Washington, D.C. for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/washington-dc/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "To select the top car insurance carriers in Washington, D.C., we reviewed each company holistically, examining customer service rankings from J.D. Power and financial strength ratings from AM Best, as well as coverage options, discount opportunities and digital tools. Based on these factors, we assigned each company a Bankrate Score on a five-point scale. The companies that came out on top included Geico, Progressive, State Farm, USAA and Erie.",
+          "page_age": "2025-10-17T14:56:24",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/washington-dc/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "Best Cheap Car Insurance in San Francisco, CA in 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/san-francisco-ca/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "What\u2019s considered a cheap car insurance in San Francisco may be wildly expensive compared to another city, but comparing quotes could help keep money in your pocket. Based on our research, Geico, Progressive and Mercury offer the cheapest rates on average for minimum coverage.",
+          "page_age": "2025-11-04T20:29:11",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/san-francisco-ca/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product_cluster",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/WmJAmRq354HwPu1QNu_yBKLqXw0BH-yd_81aCv3ZoRA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/aW5zdXJhbmNlLnJl/ZHZlbnR1cmVzLmlv/L2ltYWdlcy9tZXJj/dXJ5LnN2Zw",
+            "original": "https://cdn.insurance.redventures.io/images/mercury.svg",
+            "logo": true
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "Best Car Insurance in Florida for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/florida/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico also offers some of the cheapest average premiums in Florida for minimum coverage policies and plenty of discount opportunities, which could be enticing for budget-conscious drivers.",
+          "page_age": "2025-11-01T14:59:43",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/florida/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/n_k7qYeKpDUMK11mHGbaO-PXlRp4nLiREtua_xHGHLc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvOTEy/eDUxMy85NmY3OGFj/ZjdjL2dldHR5aW1h/Z2VzLTUzNjMwNDE4/MC5qcGVn",
+            "original": "https://a.storyblok.com/f/102997/912x513/96f78acf7c/gettyimages-536304180.jpeg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Best Cheap Car Insurance in Chicago, IL in 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/chicago-il/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Why Geico is best for budget-conscious drivers: Geico could be the go-to choice for budget-conscious drivers in Chicago. Our data analysis from Quadrant Information Services shows that Geico offers some of the lowest average rates for full and minimum coverage.",
+          "page_age": "2025-11-05T19:38:45",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/chicago-il/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product_cluster",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/WmJAmRq354HwPu1QNu_yBKLqXw0BH-yd_81aCv3ZoRA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/aW5zdXJhbmNlLnJl/ZHZlbnR1cmVzLmlv/L2ltYWdlcy9tZXJj/dXJ5LnN2Zw",
+            "original": "https://cdn.insurance.redventures.io/images/mercury.svg",
+            "logo": true
+          },
+          "age": "2 days ago"
+        },
+        {
+          "title": "Best Car Insurance Companies for November 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/best-car-insurance-companies/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Auto-Owners takes the top spot for drivers seeking the best budget-friendly coverage and coverage for young drivers. Geico ranks as the best car insurance company for high-risk drivers, while Amica tops the list for best customer experience.",
+          "page_age": "2025-11-06T13:11:18",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/best-car-insurance-companies/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/KTmBncKantZMjvkEfOm4KESGtpMT1mQxgujBIMErDxM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvMTI4/MHg3MjAvYTNlY2Q4/ODIyNy9pbnN1cmFu/Y2VfYmVzdF9jYXJf/aW5zdXJhbmNlX2Nv/bXBhbmllcy5qcGc",
+            "original": "https://a.storyblok.com/f/102997/1280x720/a3ecd88227/insurance_best_car_insurance_companies.jpg",
+            "logo": false
+          },
+          "age": "1 day ago"
+        },
+        {
+          "title": "If You\u2019re Planning a Road Trip to Mexico This Summer, Here\u2019s What Car Insurance You\u2019ll Need | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/car-insurance-mexico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The following companies provide a variety of coverage options, from liability to full coverage, to meet your insurance needs while driving in Mexico: AAA through Grupo Nacional Provincial \u00b7 Allstate through Grupo Nacional Provincial and El Aguila Compania de Seguros \u00b7 American Family through Grupo Nacional Provincial and El Aguila Compania de Seguros \u00b7 Baja Bound \u00b7 Geico through Grupo Nacional Provincial and El Aguila Compania de Seguros \u00b7",
+          "page_age": "2025-05-29T15:57:10",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/car-insurance-mexico/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ZXMxFYVb9Wj71-47W5Wt5uVmduWPfryDZjzCVMPJlyo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/L2JycC8yMDI0LzA2/LzI3MTEwOTU2L2lm/LXlvdS1yZS1wbGFu/bmluZy1hLXJvYWQt/dHJpcC10by1tZXhp/Y28tdGhpcy1zdW1t/ZXItaGVyZS1zLXdo/YXQtY2FyLWluc3Vy/YW5jZS15b3UtbGwt/bmVlZC5qcGc",
+            "original": "https://www.bankrate.com/brp/2024/06/27110956/if-you-re-planning-a-road-trip-to-mexico-this-summer-here-s-what-car-insurance-you-ll-need.jpg",
+            "logo": false
+          },
+          "age": "May 29, 2025"
+        },
+        {
+          "title": "Best Cheap Car Insurance in Bronx, NY in 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/bronx-ny/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Avg. full coverage premium ... Why Geico made our list: Overall, Geico stands out from the competition for affordable rates and generally positive customer service experiences. Geico\u2019s overall low pricing earned it a 2025 Bankrate Award for ...",
+          "page_age": "2025-10-25T18:17:58",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/bronx-ny/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product_cluster",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/kdBHxlPaQFa7B2ub4TcmD0XNwLg-SZb2_V_yM9M_VP4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/aW5zdXJhbmNlLnJl/ZHZlbnR1cmVzLmlv/L2ltYWdlcy9hbGxz/dGF0ZS5zdmc",
+            "original": "https://cdn.insurance.redventures.io/images/allstate.svg",
+            "logo": true
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "Best Cheap Car Insurance in West Palm Beach, FL in 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/west-palm-beach-fl/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Why Geico may be the best for discounts: While Geico may have fewer coverage options than many of its competitors, the discount selection is robust, with potential discounts for young drivers, student drivers, or driver training.",
+          "page_age": "2025-10-20T19:23:47",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/west-palm-beach-fl/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product_cluster",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/kdBHxlPaQFa7B2ub4TcmD0XNwLg-SZb2_V_yM9M_VP4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/aW5zdXJhbmNlLnJl/ZHZlbnR1cmVzLmlv/L2ltYWdlcy9hbGxz/dGF0ZS5zdmc",
+            "original": "https://cdn.insurance.redventures.io/images/allstate.svg",
+            "logo": true
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "Best Car Insurance in Ohio for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/ohio/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Drivers who prefer a hands-on approach to their car insurance may also enjoy Geico&#x27;s robust digital tools. ... Bankrate scores primarily reflect a weighted rank of industry standard ratings for financial strength and customer experience, in addition to average quoted rates. A secondary assessment of each provider&#x27;s online and mobile resources and policy management options also contributed to overall ratings. ... Avg. full coverage premium",
+          "page_age": "2025-10-28T16:29:49",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/ohio/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "age": "1 week ago"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

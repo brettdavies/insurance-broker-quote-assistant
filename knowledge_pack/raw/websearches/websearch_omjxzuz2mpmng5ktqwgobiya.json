@@ -1,0 +1,97 @@
+{
+  "websearch_id": "websearch_omjxzuz2mpmng5ktqwgobiya",
+  "search_id": "search_tf3r8z3liit8e90hjkvy7qy4",
+  "timestamp": "2025-11-07T12:34:08.861709",
+  "startedAt": "2025-11-07T12:34:08.861709",
+  "completedAt": "2025-11-07T12:34:10.793773",
+  "durationSeconds": 1.93,
+  "urlsDiscoveredCount": 1,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"stacking restrictions\" insurance discounts",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"stacking restrictions\" insurance discounts",
+      "show_strict_warning": false,
+      "cleaned": "stacking restrictions insurance discounts",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "stacking restrictions insurance discounts"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "California Insurance Stacking: LA Car Accidents | GoSuits",
+          "url": "https://gosuits.com/knowledge-base/california-insurance-stacking-la-car-accidents-gosuits/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Different UIM math due to the difference-in-limits rule. If your UIM limit is 50/100 and the at-fault driver now carries 30/60, your potential UIM is the difference, subject to damages and stacking restrictions.",
+          "page_age": "2025-10-17T18:55:10",
+          "profile": {
+            "name": "Gosuits",
+            "url": "https://gosuits.com/knowledge-base/california-insurance-stacking-la-car-accidents-gosuits/",
+            "long_name": "gosuits.com",
+            "img": "https://imgs.search.brave.com/Ofw-Q0demcPh9kptxywqlNGZNFfNUfHRfVWNOxf2yW0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWE4YzA5OWMy/NGZmYTZmMzY2MGZj/YjRiYzdlMGY5Yzdk/MzBhOWJkMzJiZDM4/NmY5OGRjZmVhZmRm/N2NhZmMxMy9nb3N1/aXRzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "gosuits.com",
+            "hostname": "gosuits.com",
+            "favicon": "https://imgs.search.brave.com/Ofw-Q0demcPh9kptxywqlNGZNFfNUfHRfVWNOxf2yW0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWE4YzA5OWMy/NGZmYTZmMzY2MGZj/YjRiYzdlMGY5Yzdk/MzBhOWJkMzJiZDM4/NmY5OGRjZmVhZmRm/N2NhZmMxMy9nb3N1/aXRzLmNvbS8",
+            "path": "  \u203a home  \u203a blog  \u203a knowledge base  \u203a california insurance stacking: la car accidents | gosuits"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/bTGZGfQI9QsfW-bmj1E-pLOv1_jkKI4fJnLMxDFTNdY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9nb3N1/aXRzLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNS8xMC9j/YWxpZm9ybmlhLWlu/c3VyYW5jZS1zdGFj/a2luZy1sYS1jYXIt/YWNjaWRlbnRzLWdv/c3VpdHMud2VicA",
+            "original": "https://gosuits.com/wp-content/uploads/2025/10/california-insurance-stacking-la-car-accidents-gosuits.webp",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

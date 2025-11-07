@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_amvkxnmqdlmrnguwvqyuabiq",
+  "search_id": "search_amlhb6sx5c7e11xqai7en5mw",
+  "timestamp": "2025-11-07T12:22:01.190484",
+  "startedAt": "2025-11-07T12:22:01.190484",
+  "completedAt": "2025-11-07T12:22:02.761543",
+  "durationSeconds": 1.57,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:geico.com good student",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:geico.com good student",
+      "show_strict_warning": false,
+      "cleaned": "good student",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "good student",
+        "sites": [
+          "geico.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "websearch_id": "websearch_ru7vz8xfyox1oiqimenn5s99",
+  "search_id": "search_zqm248fijm3hhkjw0tgd09d5",
+  "timestamp": "2025-11-07T12:25:09.711644",
+  "startedAt": "2025-11-07T12:25:09.711644",
+  "completedAt": "2025-11-07T12:25:11.650673",
+  "durationSeconds": 1.94,
+  "urlsDiscoveredCount": 3,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" \"non-standard auto\" states",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"GEICO\" \"non-standard auto\" states",
+      "show_strict_warning": false,
+      "cleaned": "GEICO non-standard auto states",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO non-standard auto states"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "What is non-standard auto insurance? | CarInsurance.com",
+          "url": "https://www.carinsurance.com/non-standard.aspx",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Some companies work only in the non-standard auto insurance business, while others file rates that are tiered into non-standard, standard and preferred tiers. Several companies offer coverage for non-standard car insurance. GEICO and Progressive are widely-known providers providing standard and non-standard car insurance.",
+          "page_age": "2025-04-08T00:00:00",
+          "profile": {
+            "name": "Carinsurance.com",
+            "url": "https://www.carinsurance.com/non-standard.aspx",
+            "long_name": "carinsurance.com",
+            "img": "https://imgs.search.brave.com/KCetfn_EHIlwz5sy6dTvSdGjOen9Qf_QsSICK4hYUH8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDdmYWUzNjM0/MGU0ODEwNzI3ZWVj/NjEwYmQ2MmE5NTZh/N2E2NDRhODA2YjRj/NjBlNzc2OTBiYzkz/YzA3ZGQzOC93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "carinsurance.com",
+            "hostname": "www.carinsurance.com",
+            "favicon": "https://imgs.search.brave.com/KCetfn_EHIlwz5sy6dTvSdGjOen9Qf_QsSICK4hYUH8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDdmYWUzNjM0/MGU0ODEwNzI3ZWVj/NjEwYmQ2MmE5NTZh/N2E2NDRhODA2YjRj/NjBlNzc2OTBiYzkz/YzA3ZGQzOC93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS8",
+            "path": "\u203a non-standard.aspx"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/UgJ_Y_LrX0rGkmLc_m68pIngh_lOS5ECjcKCnUUN0Ks/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS9pbWFnZXMv/aG9tZS9pbWFnZV9m/b3Jtc3RhcnQuanBn",
+            "original": "https://www.carinsurance.com/images/home/image_formstart.jpg",
+            "logo": false
+          },
+          "age": "April 8, 2025"
+        },
+        {
+          "title": "Best car insurance companies of November 2025",
+          "url": "https://www.cnbc.com/select/best-car-insurance-companies/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Standout benefits: Geico offers mechanical breakdown insurance, which covers repairs to parts after the manufacturer&#x27;s warranty has expired. ... Founded in 1953, Dairyland offers auto insurance in 38 states and specializes in high-risk drivers. Offerings include non-owner car insurance policies, coverage for motorcycles and off-road vehicles and limited Mexico coverage on all California policies. ... Who&#x27;s this for? Dairyland specializes in non-standard auto insurance for high-risk drivers, whether they have multiple accidents, DUIs or bad credit.",
+          "page_age": "2025-11-01T04:36:02",
+          "profile": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/select/best-car-insurance-companies/",
+            "long_name": "Consumer News and Business Channel",
+            "img": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cnbc.com",
+            "hostname": "www.cnbc.com",
+            "favicon": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+            "path": "  \u203a cnbc select  \u203a insurance  \u203a best car insurance companies of november 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/W9bWm-fJgeWchQNnRw-L-wsC-zLsPrPq-P6MoYPxFbk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDgyMTUwNjgt/MTc2MTA4ODQ5NzY5/NC1nZXR0eWltYWdl/cy0xNzQ0NjAwODU1/LWxtY2YwMDQzOC5q/cGVnP3Y9MTc2MTMx/NjI0NA",
+            "original": "https://image.cnbcfm.com/api/v1/image/108215068-1761088497694-gettyimages-1744600855-lmcf00438.jpeg?v=1761316244",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "The Best Car Insurance Companies for High-Risk Drivers (2025) | The Zebra",
+          "url": "https://www.thezebra.com/auto-insurance/driver/other-factors/cheap-car-insurance-high-risk-drivers/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "While you may forego some of the perks offered by standard carriers like GEICO or State Farm, you will be more likely to find coverage. However, if your driving record is such that even non-standard carriers are wary of taking you, most states have what is known as a high-risk pool. Your state can mandate that insurance companies provide auto coverage to these drivers, but beware, this coverage is not cheap.",
+          "page_age": "2025-10-28T21:03:49",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/auto-insurance/driver/other-factors/cheap-car-insurance-high-risk-drivers/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a cheap car insurance  \u203a your driving profile  \u203a other factors affecting car insurance rates  \u203a high-risk car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/yat32yPGXWk3IaXMfmIn5Bj5TvzgtU7YMDttuzifkog/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9pU3RvY2st/NDc4MDUwOTM0Lmpw/ZWc",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/iStock-478050934.jpeg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

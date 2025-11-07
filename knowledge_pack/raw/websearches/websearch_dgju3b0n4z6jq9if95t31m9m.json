@@ -1,0 +1,541 @@
+{
+  "websearch_id": "websearch_dgju3b0n4z6jq9if95t31m9m",
+  "search_id": "search_t6v456k4clecg095njr79dak",
+  "timestamp": "2025-11-07T12:20:15.563350",
+  "startedAt": "2025-11-07T12:20:15.563350",
+  "completedAt": "2025-11-07T12:20:17.486542",
+  "durationSeconds": 1.92,
+  "urlsDiscoveredCount": 13,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" \"operates in\" states",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"GEICO\" \"operates in\" states",
+      "show_strict_warning": false,
+      "cleaned": "GEICO operates in states",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO operates in states"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "GEICO expands in Florida and North Texas with new offices | Insurance Business America",
+          "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/geico-expands-in-florida-and-north-texas-with-new-offices-530177.aspx",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Founded in 1936, GEICO operates in all 50 states and the District of Columbia, offering commercial auto, homeowners, renters, and other insurance products through its affiliated partners.",
+          "page_age": "2025-03-28T10:41:27",
+          "profile": {
+            "name": "Insurance Business",
+            "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/geico-expands-in-florida-and-north-texas-with-new-offices-530177.aspx",
+            "long_name": "insurancebusinessmag.com",
+            "img": "https://imgs.search.brave.com/wSqy0D5CYsTkoVvYpYyzSqvim_TavRxGYxAzncAes7s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2NlNGVmYjdh/YzAwNDJmMzQ2YTZm/M2QwZmJhODY3NGE1/NWYzYmRhNWY0NGFh/Mjg0NjA0ZGQyNGNk/Nzg0MTBiNC93d3cu/aW5zdXJhbmNlYnVz/aW5lc3NtYWcuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurancebusinessmag.com",
+            "hostname": "www.insurancebusinessmag.com",
+            "favicon": "https://imgs.search.brave.com/wSqy0D5CYsTkoVvYpYyzSqvim_TavRxGYxAzncAes7s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2NlNGVmYjdh/YzAwNDJmMzQ2YTZm/M2QwZmJhODY3NGE1/NWYzYmRhNWY0NGFh/Mjg0NjA0ZGQyNGNk/Nzg0MTBiNC93d3cu/aW5zdXJhbmNlYnVz/aW5lc3NtYWcuY29t/Lw",
+            "path": "  \u203a insurance news  \u203a geico expands in florida and north texas with new offices"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/qZTQ2NhzZDkElalI-VrD32R07AMkGpJiggL7N7K77Mk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4t/cmVzLmtleW1lZGlh/LmNvbS9jbXMvaW1h/Z2VzL3VzLzAwMy8w/MzExXzYzODc4NzU1/MjgyNjgzMDg5NS5w/bmc",
+            "original": "https://cdn-res.keymedia.com/cms/images/us/003/0311_638787552826830895.png",
+            "logo": false
+          },
+          "age": "March 28, 2025"
+        },
+        {
+          "title": "Geico Auto Insurance Review for 2025 (See How Much You Could Save) | AutoInsurance.org",
+          "url": "https://www.autoinsurance.org/companies/geico-auto-insurance-review/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Some insurance companies are pulling out of California and Florida, but Geico isn\u2019t one of them. However, while Geico still operates in California, Geico car insurance reviews on Reddit claim that it takes more time to get a policy in the state.",
+          "page_age": "2025-10-29T18:49:31",
+          "profile": {
+            "name": "AutoInsurance.org",
+            "url": "https://www.autoinsurance.org/companies/geico-auto-insurance-review/",
+            "long_name": "autoinsurance.org",
+            "img": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.org",
+            "hostname": "www.autoinsurance.org",
+            "favicon": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv",
+            "path": "  \u203a home  \u203a companies  \u203a how to choose an auto insurance company"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/tqYWhzxCTGCcB5TyQiRvxGid6lT9mz6fGza0BlyUgaw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vZGF2djF6d2Jv/L2ltYWdlL3VwbG9h/ZC92MTc0MzQyNTYy/My92Z2VqdG1uemIz/bnB4bHI5ODJoZi5w/bmc",
+            "original": "https://res.cloudinary.com/davv1zwbo/image/upload/v1743425623/vgejtmnzb3npxlr982hf.png",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "GEICO Auto Insurance: User Reviews and Quotes (2025) | Insurify",
+          "url": "https://insurify.com/car-insurance/companies/geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "... GEICO is the third-largest U.S. auto insurer by market share and one of the best-known national insurance companies. Its car insurance rates are often among the cheapest available in all 50 states and Washington, D.C.",
+          "page_age": "2025-11-05T04:14:11",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/car-insurance/companies/geico/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a car insurance  \u203a companies  \u203a geico"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/gZkQ_u0YCRybmPwZFSljdeyKmIy7ktG5hZAHahFbQKU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbnN1/cmlmeWNkbi5jb20v/aW1hZ2VzL2NhcnJp/ZXIvaGlnaC1kZWZp/bml0aW9uL2dlaWNv/LnN2Zw",
+            "original": "https://insurifycdn.com/images/carrier/high-definition/geico.svg",
+            "logo": true
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "GEICO vs Costco Car Insurance: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/geico-vs-costco/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "These programs measure your driving habits in order to more accurately price your premiums. If you\u2019re a safe driver, you can earn a discount. Learn more about usage-based insurance and telematics. GEICO operates in all 50 U.S.",
+          "page_age": "2025-10-16T22:23:36",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/geico-vs-costco/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a geico vs. costco car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wLaa5ABL1FOaAK7OptGU60BZ9EYO_N4yxiZcbPpNAME/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9zdGF0/aWMvODAwZGFmYS96/ZnJvbnQvaW1nL2l6/LXNoYXJlLWxvZ28u/cG5n",
+            "original": "https://cdn.thezebra.com/zfront/static/800dafa/zfront/img/iz-share-logo.png",
+            "logo": true
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "GEICO Home Insurance Review: Ratings and Quotes (2025) | Insurify",
+          "url": "https://insurify.com/homeowners-insurance/companies/geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO has insurance agents in 44 U.S. states and Washington D.C., though it can sell coverage in all 50 states. It offers all the standard homeowners insurance coverages large insurance companies typically offer.",
+          "page_age": "2025-02-03T19:00:00",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/homeowners-insurance/companies/geico/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a homeowners insurance  \u203a geico"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/w5FgrBqAlQs8svek1OPEIVtbUegmgdfwiK49IYu68Lg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xNjIyNzMvODAw/eDYwMC9hNTk2MGZk/MmRlL2dyZWVuLWhv/dXNlLW9yYW5nZS5w/bmc",
+            "original": "https://a.storyblok.com/f/162273/800x600/a5960fd2de/green-house-orange.png",
+            "logo": false
+          },
+          "age": "February 3, 2025"
+        },
+        {
+          "title": "GEICO Reviews | Read Customer Service Reviews of geicocarinsurance.com",
+          "url": "https://www.trustpilot.com/review/geicocarinsurance.com",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "... GEICO is a criminal enterprise who commits check and wire fraud, forgery, falsifying statements, operates in the State of California illegally by doing everything they can to damage your vehicle during repairs to an unauthorized repair shop, ...",
+          "page_age": "2025-07-02T14:46:57",
+          "profile": {
+            "name": "Trustpilot",
+            "url": "https://www.trustpilot.com/review/geicocarinsurance.com",
+            "long_name": "trustpilot.com",
+            "img": "https://imgs.search.brave.com/NlrjkibCK7faHXCzWhscUaoss9Glqbw3_28UN2Bgc-o/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDZjNTAzNTcz/YTdlYTg4NjY1NWJi/ZjBkYTExODM5NTQ2/ZGVhODQ0ODIwYWMz/ODQ4MGFkYjFmZTYy/MmYyMjA3YS93d3cu/dHJ1c3RwaWxvdC5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "trustpilot.com",
+            "hostname": "www.trustpilot.com",
+            "favicon": "https://imgs.search.brave.com/NlrjkibCK7faHXCzWhscUaoss9Glqbw3_28UN2Bgc-o/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDZjNTAzNTcz/YTdlYTg4NjY1NWJi/ZjBkYTExODM5NTQ2/ZGVhODQ0ODIwYWMz/ODQ4MGFkYjFmZTYy/MmYyMjA3YS93d3cu/dHJ1c3RwaWxvdC5j/b20v",
+            "path": "  \u203a home  \u203a money & insurance  \u203a insurance  \u203a insurance company  \u203a geico reviews"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/c17cliDXjTDoBPDvF7T-YqfrdHlRv7PSCrgzp_XOk7c/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dHJ1c3RwaWxvdC5u/ZXQvYnJhbmQtYXNz/ZXRzLzQuMy4wL2Zh/dmljb25zL2FuZHJv/aWQtY2hyb21lLTUx/Mng1MTIucG5n",
+            "original": "https://cdn.trustpilot.net/brand-assets/4.3.0/favicons/android-chrome-512x512.png",
+            "logo": true
+          },
+          "age": "July 2, 2025"
+        },
+        {
+          "title": "Tired of overpaying for auto insurance? 7 expert picks worth switching to",
+          "url": "https://www.aol.com/finance/best-car-insurance-companies-183303735.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "This includes gap insurance that ... replacement coverage for vehicles under a certain age. Amica operates in 49 states plus Washington D.C., making it accessible to drivers across most of the country. Like GEICO, Amica is owned by its policyholders rather than sharehol...",
+          "page_age": "2025-09-05T15:49:10",
+          "profile": {
+            "name": "AOL",
+            "url": "https://www.aol.com/finance/best-car-insurance-companies-183303735.html",
+            "long_name": "aol.com",
+            "img": "https://imgs.search.brave.com/sVMgyMCQKPeE5Dsd6_CLz3U7W0AHJmAvX9gxV9NGAZg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZiZDhhODZj/ZGJhZTUwZmJhMTVl/MGNmNzVhNGQ2OGE0/OTUxOTYwNjc2NGUz/ZTkxMWJkZDcyOTA0/YWQ0ZjVlMS93d3cu/YW9sLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "aol.com",
+            "hostname": "www.aol.com",
+            "favicon": "https://imgs.search.brave.com/sVMgyMCQKPeE5Dsd6_CLz3U7W0AHJmAvX9gxV9NGAZg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZiZDhhODZj/ZGJhZTUwZmJhMTVl/MGNmNzVhNGQ2OGE0/OTUxOTYwNjc2NGUz/ZTkxMWJkZDcyOTA0/YWQ0ZjVlMS93d3cu/YW9sLmNvbS8",
+            "path": "\u203a finance  \u203a best-car-insurance-companies-183303735.html"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/PbXwYFq30XJYWmseyJ2j1l_ZWglm5_yQhnVC1quqjpM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zLnlp/bWcuY29tL255L2Fw/aS9yZXMvMS4yL2di/cXNJakwyanBlbTRu/M1Z5UWFESXctLS9Z/WEJ3YVdROWFHbG5h/R3hoYm1SbGNqdDNQ/VEV5TURBN2FEMDRN/REEtL2h0dHBzOi8v/cy55aW1nLmNvbS9v/cy9jcmVhdHItdXBs/b2FkZWQtaW1hZ2Vz/LzIwMjQtMDYvYjc1/NTYxZDAtMmNkZi0x/MWVmLTg5NmQtMzIz/MDg1YTM3YTVj",
+            "original": "https://s.yimg.com/ny/api/res/1.2/gbqsIjL2jpem4n3VyQaDIw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2024-06/b75561d0-2cdf-11ef-896d-323085a37a5c",
+            "logo": false
+          },
+          "age": "September 5, 2025"
+        },
+        {
+          "title": "Geico Car Insurance: What Makes It Stand Out? - Successful Insurance",
+          "url": "https://www.successfulinsurance.co.uk/geico-car-insurance-what-makes-it-stand-out/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Wide availability: Geico operates in all 50 states.",
+          "page_age": "2024-11-25T09:34:16",
+          "profile": {
+            "name": "Successful Insurance",
+            "url": "https://www.successfulinsurance.co.uk/geico-car-insurance-what-makes-it-stand-out/",
+            "long_name": "successfulinsurance.co.uk",
+            "img": "https://imgs.search.brave.com/OsemwJmjF_BYPSDAxQkssuRLMev6dzhPj9rC0A6MMyo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGVlOTNkZDA2/MzJiMDIyNGQzMDg5/YTYyNTU5MzcxZDk5/YWQyMjQyOTMyY2I1/MWYyYWMwMWRjY2Y2/MjQ5M2YwMy93d3cu/c3VjY2Vzc2Z1bGlu/c3VyYW5jZS5jby51/ay8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "successfulinsurance.co.uk",
+            "hostname": "www.successfulinsurance.co.uk",
+            "favicon": "https://imgs.search.brave.com/OsemwJmjF_BYPSDAxQkssuRLMev6dzhPj9rC0A6MMyo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGVlOTNkZDA2/MzJiMDIyNGQzMDg5/YTYyNTU5MzcxZDk5/YWQyMjQyOTMyY2I1/MWYyYWMwMWRjY2Y2/MjQ5M2YwMy93d3cu/c3VjY2Vzc2Z1bGlu/c3VyYW5jZS5jby51/ay8",
+            "path": "  \u203a home  \u203a geico car insurance: what makes it stand out?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/6YkkfuYe9bc-ZMmDhF8ZONqKdAJWB_ST-q-JKyczyVA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3VjY2Vzc2Z1bGlu/c3VyYW5jZS5jby51/ay93cC1jb250ZW50/L3VwbG9hZHMvMjAy/NC8wOS9JbnN1cmFu/Y2UtMjAuanBn",
+            "original": "https://www.successfulinsurance.co.uk/wp-content/uploads/2024/09/Insurance-20.jpg",
+            "logo": false
+          },
+          "age": "November 25, 2024"
+        },
+        {
+          "title": "Is GEICO a Good Insurance Company? (2025 Review) | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/geico-reviews-coverage-options-and-ratings/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Once fiiled, the process becomes tedious with an unclear timetable of what is happening in the background. Another key component of GEICO&#x27;s review is the types of coverage options they offer. GEICO provides all state-specific and basic coverage options you might need, including liability, collision, comprehensive, and property damage liability coverages.",
+          "page_age": "2025-11-03T15:45:14",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/geico-reviews-coverage-options-and-ratings/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a geico insurance review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/tbd0UaOOvIXqi69W48G0j_FAdMT0JxNy_qR5HBkqeCs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9zdGF0/aWMvM2I5NGRmMy96/ZnJvbnQvaW1nL2l6/LXNoYXJlLWxvZ28u/cG5n",
+            "original": "https://cdn.thezebra.com/zfront/static/3b94df3/zfront/img/iz-share-logo.png",
+            "logo": true
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "GEICO Commercial Auto Insurance Review and Quotes (2025) | Insurify",
+          "url": "https://insurify.com/business-insurance/commercial-auto/companies/geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Our editorial team follows a rigorous set of editorial standards and operates independently from our insurance partners. Learn more. ... GEICO is owned by Berkshire Hathaway, one of the five largest commercial auto insurers in the U.S.[1] That standing reflects the company\u2019s proven ability to pay for claims if your business truck gets sideswiped or your delivery van needs major repairs after an accident.",
+          "page_age": "2025-11-01T19:00:00",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/business-insurance/commercial-auto/companies/geico/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a business insurance  \u203a geico"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/gZkQ_u0YCRybmPwZFSljdeyKmIy7ktG5hZAHahFbQKU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbnN1/cmlmeWNkbi5jb20v/aW1hZ2VzL2NhcnJp/ZXIvaGlnaC1kZWZp/bml0aW9uL2dlaWNv/LnN2Zw",
+            "original": "https://insurifycdn.com/images/carrier/high-definition/geico.svg",
+            "logo": true
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Allstate vs. GEICO: Which Is the Best? (2025) | Insurify",
+          "url": "https://insurify.com/car-insurance/companies/compare/allstate-vs-geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "... Allstate and GEICO are two of the top auto insurance companies in the United States, both holding a large market share.[1] Both offer standard coverage options in all 50 states and Washington, D.C., as well as optional coverages and discounts ...",
+          "page_age": "2025-10-21T04:14:33",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/car-insurance/companies/compare/allstate-vs-geico/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a car insurance  \u203a companies  \u203a compare  \u203a allstate vs geico"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/gZkQ_u0YCRybmPwZFSljdeyKmIy7ktG5hZAHahFbQKU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbnN1/cmlmeWNkbi5jb20v/aW1hZ2VzL2NhcnJp/ZXIvaGlnaC1kZWZp/bml0aW9uL2dlaWNv/LnN2Zw",
+            "original": "https://insurifycdn.com/images/carrier/high-definition/geico.svg",
+            "logo": true
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "GEICO vs. USAA: Which Is the Best? (2025) | Insurif",
+          "url": "https://insurify.com/car-insurance/companies/compare/geico-vs-usaa/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "A.M. Best analyzes an insurer\u2019s financials, operating performance, business profile, and other factors to generate an opinion-based rating of a company\u2019s financial and credit strength. Ratings range from A++ (exceptional) to D (poor).A++ ... GEICO, a subsidiary of the Berkshire Hathaway Group, is the third-largest U.S.",
+          "page_age": "2025-10-31T04:15:03",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/car-insurance/companies/compare/geico-vs-usaa/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a car insurance  \u203a companies  \u203a compare  \u203a geico vs usaa"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/g1lsPhuu54SbfyQt99O_t7lrNzvd8ZeHrxjzai_f9uo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbnN1/cmlmeWNkbi5jb20v/aW1hZ2VzL2NhcnJp/ZXIvaGlnaC1kZWZp/bml0aW9uL3VzYWEu/c3Zn",
+            "original": "https://insurifycdn.com/images/carrier/high-definition/usaa.svg",
+            "logo": true
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Geico Data Analyst Interview Questions + Guide in 2025",
+          "url": "https://www.interviewquery.com/interview-guides/geico-data-analyst",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico is one of the largest and well-known auto insurance companies in the United States, committed to providing affordable insurance options while ensuring customer satisfaction and operational excellence.",
+          "page_age": "2025-02-13T17:07:22",
+          "profile": {
+            "name": "Interview Query",
+            "url": "https://www.interviewquery.com/interview-guides/geico-data-analyst",
+            "long_name": "interviewquery.com",
+            "img": "https://imgs.search.brave.com/gUrwMb8Sgyv4y4AcUJ8xECXJrsf1cR8qHAzj7zYB8Gs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzNjY2RkZDA0/MDQ4YjM0N2ZhNzFi/Njc3NTYyYjk5OTkz/MjlhNTVhMjQ3ZmU3/NmY5YjI1OTM4ODhk/ZWYzYWEzZC93d3cu/aW50ZXJ2aWV3cXVl/cnkuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "interviewquery.com",
+            "hostname": "www.interviewquery.com",
+            "favicon": "https://imgs.search.brave.com/gUrwMb8Sgyv4y4AcUJ8xECXJrsf1cR8qHAzj7zYB8Gs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzNjY2RkZDA0/MDQ4YjM0N2ZhNzFi/Njc3NTYyYjk5OTkz/MjlhNTVhMjQ3ZmU3/NmY5YjI1OTM4ODhk/ZWYzYWEzZC93d3cu/aW50ZXJ2aWV3cXVl/cnkuY29tLw",
+            "path": "\u203a interview-guides  \u203a geico-data-analyst"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/_yr3ytqSsc6XoHk-XtvQe4p39pBAv4czWdVdhmS3Dho/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW50ZXJ2aWV3cXVl/cnkuY29tL2ludGVy/dmlldy1ndWlkZXMv/Z2VpY28tZGF0YS1h/bmFseXN0",
+            "original": "https://www.interviewquery.com/interview-guides/geico-data-analyst",
+            "logo": false
+          },
+          "age": "February 13, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

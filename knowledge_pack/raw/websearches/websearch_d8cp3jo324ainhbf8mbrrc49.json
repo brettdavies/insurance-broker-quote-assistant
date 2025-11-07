@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_d8cp3jo324ainhbf8mbrrc49",
+  "search_id": "search_y3uqnkjfbo7dg8l038odn5e3",
+  "timestamp": "2025-11-07T12:20:48.006690",
+  "startedAt": "2025-11-07T12:20:48.006690",
+  "completedAt": "2025-11-07T12:20:49.639554",
+  "durationSeconds": 1.63,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" site:insurance.ca.gov \"licensed carriers\"",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"GEICO\" site:insurance.ca.gov \"licensed carriers\"",
+      "show_strict_warning": false,
+      "cleaned": "GEICO licensed carriers",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO licensed carriers",
+        "sites": [
+          "insurance.ca.gov"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

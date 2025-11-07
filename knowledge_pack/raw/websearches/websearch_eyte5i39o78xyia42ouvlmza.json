@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_eyte5i39o78xyia42ouvlmza",
+  "search_id": "search_rcc1cvf0tbxeuccu2n4bvjh0",
+  "timestamp": "2025-11-07T12:30:01.213298",
+  "startedAt": "2025-11-07T12:30:01.213298",
+  "completedAt": "2025-11-07T12:30:02.984938",
+  "durationSeconds": 1.77,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:reddit.com/r/insurance GEICO commission rate",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:reddit.com/r/insurance GEICO commission rate",
+      "show_strict_warning": false,
+      "cleaned": "GEICO commission rate",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO commission rate",
+        "sites": [
+          "reddit.com/r/insurance"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

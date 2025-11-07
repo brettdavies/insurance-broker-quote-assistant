@@ -1,0 +1,97 @@
+{
+  "websearch_id": "websearch_armfyuav47pa1ip7cdloysh9",
+  "search_id": "search_eum0qgxwqc5umsex2mpeee4a",
+  "timestamp": "2025-11-07T12:24:34.788965",
+  "startedAt": "2025-11-07T12:24:34.788965",
+  "completedAt": "2025-11-07T12:24:36.833270",
+  "durationSeconds": 2.04,
+  "urlsDiscoveredCount": 1,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" \"how many cars\" can insure",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"GEICO\" \"how many cars\" can insure",
+      "show_strict_warning": false,
+      "cleaned": "GEICO how many cars can insure",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO how many cars can insure"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Multi-car insurance: How does it work?",
+          "url": "https://www.insurance.com/auto-insurance/auto-insurance-basics/multi-car-policies.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The multi-car discount can be as much as the 25% offered by GEICO, which has the largest multi-vehicle discount among carriers we surveyed.",
+          "page_age": "2025-06-30T00:00:00",
+          "profile": {
+            "name": "Insurance.com",
+            "url": "https://www.insurance.com/auto-insurance/auto-insurance-basics/multi-car-policies.html",
+            "long_name": "insurance.com",
+            "img": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurance.com",
+            "hostname": "www.insurance.com",
+            "favicon": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8",
+            "path": "  \u203a home  \u203a auto insurance  \u203a auto insurance basics  \u203a multi-car insurance: how does it work and how much can you save?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/eBakuGLTJDxB635je6usVNCnc32r-BUSfkjIz9nw3qs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmNlLmNv/bS91cGxvYWRlZGZp/bGVzL21lZGlhL2Nh/ci1pbnN1cmFuY2Ut/Ni5qcGc",
+            "original": "https://www.insurance.com/uploadedfiles/media/car-insurance-6.jpg",
+            "logo": false
+          },
+          "age": "June 30, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

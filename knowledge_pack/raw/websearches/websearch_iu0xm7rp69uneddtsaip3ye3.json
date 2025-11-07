@@ -1,0 +1,814 @@
+{
+  "websearch_id": "websearch_iu0xm7rp69uneddtsaip3ye3",
+  "search_id": "search_shrtf1w1fy0zb9wjnwshp1n0",
+  "timestamp": "2025-11-07T12:21:07.223712",
+  "startedAt": "2025-11-07T12:21:07.223712",
+  "completedAt": "2025-11-07T12:21:09.180037",
+  "durationSeconds": 1.96,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" California licensed",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"GEICO\" California licensed",
+      "show_strict_warning": false,
+      "cleaned": "GEICO California licensed",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO California licensed"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "GEICO Defensive Driving Discount Course | California | IMPROV\u00ae",
+          "url": "https://www.myimprov.com/geico/california/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Our California defensive driving courses are considered a premier defensive driving course for anyone looking to help insurance rates and become a safer driver on the streets of California. Our Geico course is licensed by California and the DMV as ...",
+          "page_age": "2025-07-18T00:10:48",
+          "profile": {
+            "name": "IMPROV\u00ae",
+            "url": "https://www.myimprov.com/geico/california/",
+            "long_name": "myimprov.com",
+            "img": "https://imgs.search.brave.com/93IEcA2eGUc-v4HeBVaHzoxmIJbTaLAx_NfV3WraGDg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZThkNDY3NmUx/YTBiMmMyZjRmZmQy/MmNmM2Q3YzZhZTI2/ZjM5YjE3Mzk1MWQy/YjIwYzcxOWVlYWMy/YmMxMjNkZC93d3cu/bXlpbXByb3YuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "myimprov.com",
+            "hostname": "www.myimprov.com",
+            "favicon": "https://imgs.search.brave.com/93IEcA2eGUc-v4HeBVaHzoxmIJbTaLAx_NfV3WraGDg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZThkNDY3NmUx/YTBiMmMyZjRmZmQy/MmNmM2Q3YzZhZTI2/ZjM5YjE3Mzk1MWQy/YjIwYzcxOWVlYWMy/YmMxMjNkZC93d3cu/bXlpbXByb3YuY29t/Lw",
+            "path": "  \u203a home  \u203a geico  \u203a geico california"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/aYP23WH4JPLPKx6ixwDZkkYPA88YM9U_JFgYM7YmoOQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bXlpbXByb3YuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy9sb2dv/LWRhcmsud2VicA",
+            "original": "https://www.myimprov.com/wp-content/uploads/logo-dark.webp",
+            "logo": true
+          },
+          "age": "July 18, 2025"
+        },
+        {
+          "title": "r/Insurance on Reddit: Geico increased our rate by $300 after updating odometer and said California law prevents correcting it?",
+          "url": "https://www.reddit.com/r/Insurance/comments/1liv72z/geico_increased_our_rate_by_300_after_updating/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "CA law. In fact, CA law requires them to update. BUT that\u2019s Geicos rule. ... No law exists. It\u2019s their California guidelines, they\u2019ll want you to provide proof that you drive less with 2 separate verifications.",
+          "page_age": "2025-06-23T22:57:59",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Insurance/comments/1liv72z/geico_increased_our_rate_by_300_after_updating/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/insurance  \u203a geico increased our rate by $300 after updating odometer and said california law prevents correcting it?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/lsoEXm-Zv6-LDWEqXfG55fcJu4NqWqMLvX48KpElsRc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zaGFy/ZS5yZWRkLml0L3By/ZXZpZXcvcG9zdC8x/bGl2NzJ6",
+            "original": "https://share.redd.it/preview/post/1liv72z",
+            "logo": false
+          },
+          "age": "June 23, 2025"
+        },
+        {
+          "title": "r/Insurance on Reddit: 10% jump in Geico auto insurance in California?",
+          "url": "https://www.reddit.com/r/Insurance/comments/1jze187/10_jump_in_geico_auto_insurance_in_california/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO car Inspection waived? r/Insurance \u2022 \u00b7 r/Insurance \u00b7 All Things Insurance! Members Online \u00b7 upvotes \u00b7 \u00b7 comments \u00b7 My license is NOT suspended \u00b7 r/Geico \u2022 \u00b7 r/Geico \u00b7 One hotdog or one hamburger, not both. A space for current and ex employees of Geico to vent) Please no customers call 1-800-841-3000 for assistance \u00b7",
+          "page_age": "2025-04-15T00:06:14",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Insurance/comments/1jze187/10_jump_in_geico_auto_insurance_in_california/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/insurance  \u203a 10% jump in geico auto insurance in california?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A5H_aQiEBuUODR0lNeU8iDfhrWUvO8oEmRGE_mcS_gM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVkZGl0c3RhdGlj/LmNvbS9pY29uLnBu/Zw",
+            "original": "https://www.redditstatic.com/icon.png",
+            "logo": true
+          },
+          "age": "April 15, 2025"
+        },
+        {
+          "title": "r/Geico on Reddit: Does GEICO insure a lot of houses in California? Or have they been dropping policies like other insurers?",
+          "url": "https://www.reddit.com/r/Geico/comments/1hxk7rh/does_geico_insure_a_lot_of_houses_in_california/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "One hotdog or one hamburger, not both. A space for current and ex employees of Geico to vent) Please no customers call 1-800-841-3000 for assistance ... I&#x27;d heard that many California homes had their homeowners policies cancelled due to California&#x27;s policies and massive losses from wildfires.",
+          "page_age": "2025-01-09T18:57:38",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Geico/comments/1hxk7rh/does_geico_insure_a_lot_of_houses_in_california/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/geico  \u203a does geico insure a lot of houses in california?  or have they been dropping policies like other insurers?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A5H_aQiEBuUODR0lNeU8iDfhrWUvO8oEmRGE_mcS_gM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVkZGl0c3RhdGlj/LmNvbS9pY29uLnBu/Zw",
+            "original": "https://www.redditstatic.com/icon.png",
+            "logo": true
+          },
+          "age": "January 9, 2025"
+        },
+        {
+          "title": "Filing a Geico Insurance Claim in California: What You Need to Know - LA Law Group",
+          "url": "https://www.bizlawpro.com/filing-a-geico-insurance-claim-in-california-what-you-need-to-know/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico\u2019s claims adjusters are highly trained negotiators. Their goal is to minimize payouts or deny claims altogether. This is why having a personal injury attorney on your side can make a significant difference in the outcome of your case. California law requires filing an SR-1 form with the Department of Motor Vehicles (DMV) within 10 days if the accident caused more than $1,000 in damages or any injuries.",
+          "page_age": "2024-11-16T01:30:13",
+          "profile": {
+            "name": "LA Law Group",
+            "url": "https://www.bizlawpro.com/filing-a-geico-insurance-claim-in-california-what-you-need-to-know/",
+            "long_name": "bizlawpro.com",
+            "img": "https://imgs.search.brave.com/sTiPSR75ivAxis2YJB21AOwgPjBM-XkxWO9yG_jbZpE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTY3YjA4OTBl/MzI1OGYyZDM2NmQw/Y2JlN2VjZjBlZTEy/Zjg5ZGRlY2JiNWQ1/MTJlZTk2NDNmNzlj/NzgyYTA4OS93d3cu/Yml6bGF3cHJvLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bizlawpro.com",
+            "hostname": "www.bizlawpro.com",
+            "favicon": "https://imgs.search.brave.com/sTiPSR75ivAxis2YJB21AOwgPjBM-XkxWO9yG_jbZpE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTY3YjA4OTBl/MzI1OGYyZDM2NmQw/Y2JlN2VjZjBlZTEy/Zjg5ZGRlY2JiNWQ1/MTJlZTk2NDNmNzlj/NzgyYTA4OS93d3cu/Yml6bGF3cHJvLmNv/bS8",
+            "path": "  \u203a home  \u203a filing a geico insurance claim in california: what you need to know"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/lzBoYF_CHpEH7EIbzH1V37qmNcbNQpRKTYrRrX3vdNY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vd3d3LmJp/emxhd3Byby5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjMv/MDYvYml6bGF3cHJv/LWxvZ28tZm9vdGVy/LnBuZz9maXQ9MTU3/JTJDNzgmc3NsPTE",
+            "original": "https://i0.wp.com/www.bizlawpro.com/wp-content/uploads/2023/06/bizlawpro-logo-footer.png?fit=157%2C78&ssl=1",
+            "logo": true
+          },
+          "age": "November 16, 2024"
+        },
+        {
+          "title": "r/Geico on Reddit: Question about licensing",
+          "url": "https://www.reddit.com/r/Geico/comments/1kgf1zh/question_about_licensing/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico licensed me and won&#x27;t give me any info on my license. I&#x27;ve asked for the status or if I&#x27;m able to obtain it. They ask for my employee ID. Then\u2026",
+          "page_age": "2025-05-06T20:37:34",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Geico/comments/1kgf1zh/question_about_licensing/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/geico  \u203a question about licensing"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A5H_aQiEBuUODR0lNeU8iDfhrWUvO8oEmRGE_mcS_gM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVkZGl0c3RhdGlj/LmNvbS9pY29uLnBu/Zw",
+            "original": "https://www.redditstatic.com/icon.png",
+            "logo": true
+          },
+          "age": "May 6, 2025"
+        },
+        {
+          "title": "GEICO - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/GEICO",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO writes private passenger automobile insurance in all 50 U.S. states and the District of Columbia. The insurance agency sells policies through local agents, called GEICO Field Representatives, over the phone directly to the consumer via licensed insurance agents, and through their website.",
+          "page_age": "2025-10-04T04:04:35",
+          "profile": {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/GEICO",
+            "long_name": "en.wikipedia.org",
+            "img": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "deep_results": {
+            "buttons": [
+              {
+                "type": "button_result",
+                "title": "History",
+                "url": "https://en.wikipedia.org/wiki/GEICO#History"
+              },
+              {
+                "type": "button_result",
+                "title": "Modern development",
+                "url": "https://en.wikipedia.org/wiki/GEICO#Modern_development"
+              },
+              {
+                "type": "button_result",
+                "title": "Advertising campaigns",
+                "url": "https://en.wikipedia.org/wiki/GEICO#Advertising_campaigns"
+              },
+              {
+                "type": "button_result",
+                "title": "Motorsports",
+                "url": "https://en.wikipedia.org/wiki/GEICO#Motorsports"
+              },
+              {
+                "type": "button_result",
+                "title": "Lawsuits",
+                "url": "https://en.wikipedia.org/wiki/GEICO#Lawsuits"
+              }
+            ]
+          },
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "en.wikipedia.org",
+            "hostname": "en.wikipedia.org",
+            "favicon": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw",
+            "path": "\u203a wiki  \u203a GEICO"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/vz-kvaBtSesO4WxAy0JLLmiTPx-ZsoAeZmrSGNKHCZU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9h/L2E3L0dFSUNPX2hl/YWRxdWFydGVycy5q/cGc",
+            "original": "https://upload.wikimedia.org/wikipedia/commons/a/a7/GEICO_headquarters.jpg",
+            "logo": false
+          },
+          "age": "October 4, 2025"
+        },
+        {
+          "title": "Geico Auto Insurance Review for 2025 (See How Much You Could Save) | AutoInsurance.org",
+          "url": "https://www.autoinsurance.org/companies/geico-auto-insurance-review/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "However, while Geico still operates in California, Geico car insurance reviews on Reddit claim that it takes more time to get a policy in the state.",
+          "page_age": "2025-10-29T18:49:31",
+          "profile": {
+            "name": "AutoInsurance.org",
+            "url": "https://www.autoinsurance.org/companies/geico-auto-insurance-review/",
+            "long_name": "autoinsurance.org",
+            "img": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.org",
+            "hostname": "www.autoinsurance.org",
+            "favicon": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv",
+            "path": "  \u203a home  \u203a companies  \u203a how to choose an auto insurance company"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/tqYWhzxCTGCcB5TyQiRvxGid6lT9mz6fGza0BlyUgaw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vZGF2djF6d2Jv/L2ltYWdlL3VwbG9h/ZC92MTc0MzQyNTYy/My92Z2VqdG1uemIz/bnB4bHI5ODJoZi5w/bmc",
+            "original": "https://res.cloudinary.com/davv1zwbo/image/upload/v1743425623/vgejtmnzb3npxlr982hf.png",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Exploring Geico's Homeowners Insurance in California",
+          "url": "https://homeinsurancedecoded.com/state-differences/does-geico-offer-homeowners-insurance-in-california/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In California, where natural disasters such as wildfires and earthquakes are prevalent, having a solid homeowners insurance policy is crucial for safeguarding your investment. Yes, Geico does offer homeowners insurance in California, but it is important to note that they do not directly underwrite ...",
+          "page_age": "2025-09-09T14:18:00",
+          "profile": {
+            "name": "Homeinsurancedecoded",
+            "url": "https://homeinsurancedecoded.com/state-differences/does-geico-offer-homeowners-insurance-in-california/",
+            "long_name": "homeinsurancedecoded.com",
+            "img": "https://imgs.search.brave.com/LfGe26spFD7bl7xDd4SsI_tseisQp9XDXY59dcfIt_I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk3NjMyNDM1/NWE3ODg3YmI5NGE2/ODBiMjg0MDk1NjYz/NDE0ODliMzNmZWRh/M2I4YTYzYjI2OTVm/YzI0MGI0NS9ob21l/aW5zdXJhbmNlZGVj/b2RlZC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "homeinsurancedecoded.com",
+            "hostname": "homeinsurancedecoded.com",
+            "favicon": "https://imgs.search.brave.com/LfGe26spFD7bl7xDd4SsI_tseisQp9XDXY59dcfIt_I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk3NjMyNDM1/NWE3ODg3YmI5NGE2/ODBiMjg0MDk1NjYz/NDE0ODliMzNmZWRh/M2I4YTYzYjI2OTVm/YzI0MGI0NS9ob21l/aW5zdXJhbmNlZGVj/b2RlZC5jb20v",
+            "path": "  \u203a does geico offer homeowners insurance in california?"
+          },
+          "age": "September 9, 2025"
+        },
+        {
+          "title": "A Comprehensive Guide to Geico Car Insurance Claims | Crockett Law Group",
+          "url": "https://crockettlawgroup.com/insurance-guides/geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "However, following your accident, reporting your accident to Geico as soon as possible can help your case succeed. Acting now rather than later, especially with our attorneys on your side, can help you keep evidence fresh and keep the incident fresh on your mind as you speak about your situation. If you are struggling to report quickly, you can always reach out to us for help. But, while your insurance provider may not have a specific deadline for filing your claim, state laws do. Under California Code of Civil Procedure sections 312-366, you only have three years to file a case and pursue compensation in the courtroom.",
+          "page_age": "2025-04-01T03:50:58",
+          "profile": {
+            "name": "Crockett Law Group",
+            "url": "https://crockettlawgroup.com/insurance-guides/geico/",
+            "long_name": "crockettlawgroup.com",
+            "img": "https://imgs.search.brave.com/5S-5gb8DZAjTUtv1HYHZvI5thP3zdYlj70mv-rS86Js/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzNiMTRjNGQy/OTI0ZjQyYTdlYmZl/YTI0ZWQzOTcwN2Vm/ODhlYTc5NWU1MTQ2/NjJkMWZkMzkzODRl/NmU5NjUxZS9jcm9j/a2V0dGxhd2dyb3Vw/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "crockettlawgroup.com",
+            "hostname": "crockettlawgroup.com",
+            "favicon": "https://imgs.search.brave.com/5S-5gb8DZAjTUtv1HYHZvI5thP3zdYlj70mv-rS86Js/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzNiMTRjNGQy/OTI0ZjQyYTdlYmZl/YTI0ZWQzOTcwN2Vm/ODhlYTc5NWU1MTQ2/NjJkMWZkMzkzODRl/NmU5NjUxZS9jcm9j/a2V0dGxhd2dyb3Vw/LmNvbS8",
+            "path": "  \u203a home  \u203a a comprehensive guide to geico car insurance claims"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ZY8VLSxv400zFRILp5yu5LqxepdaajHeHVn8o99zPY4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jcm9j/a2V0dGxhd2dyb3Vw/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNC8wOC9HZWlj/by1DYXItSW5zdXJh/bmNlLUNsYWltcy5w/bmc",
+            "original": "https://crockettlawgroup.com/wp-content/uploads/2024/08/Geico-Car-Insurance-Claims.png",
+            "logo": false
+          },
+          "age": "April 1, 2025"
+        },
+        {
+          "title": "Proof of Insurance: Geico Auto Policies - Jerry",
+          "url": "https://jerry.ai/car-insurance/geico-proof-of-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "However, if you are a Geico policyholder and you need an SR-22 or FR-44, you need to call 877-206-0215. Expert-driven. Built for you. ... Our goal is clear, trustworthy information. Our content is created, edited and fact checked by a team of licensed insurance agents, automotive pros and experienced journalists who know the industry inside and out.",
+          "page_age": "2025-03-04T14:48:44",
+          "profile": {
+            "name": "Jerry",
+            "url": "https://jerry.ai/car-insurance/geico-proof-of-insurance/",
+            "long_name": "jerry.ai",
+            "img": "https://imgs.search.brave.com/iFOq-mr7jchIi-eyZpQn_xBl1gyydPtwbg9UjraFpDk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDQzMDI5ZWEx/OWQ1ZGEwMzBmODc1/MDA2MTQ4NzllNGRk/NmI4MzM3ODg3MTkz/ODhhM2Q5MTZjN2Yz/ZWQ4OWIwMS9qZXJy/eS5haS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "jerry.ai",
+            "hostname": "jerry.ai",
+            "favicon": "https://imgs.search.brave.com/iFOq-mr7jchIi-eyZpQn_xBl1gyydPtwbg9UjraFpDk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDQzMDI5ZWEx/OWQ1ZGEwMzBmODc1/MDA2MTQ4NzllNGRk/NmI4MzM3ODg3MTkz/ODhhM2Q5MTZjN2Yz/ZWQ4OWIwMS9qZXJy/eS5haS8",
+            "path": "  \u203a home  \u203a car insurance  \u203a proof of insurance: geico auto policies"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/7GqopXk6FIAt6j8dFonwljSkxqJUaOgVn1XZSPkEVMk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9qZXJy/eS5haS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNC8xMC9EZXBv/c2l0cGhvdG9zXzY3/MzczMzk0Nl9YTC0x/MDI0eDY4My5qcGc",
+            "original": "https://jerry.ai/wp-content/uploads/2024/10/Depositphotos_673733946_XL-1024x683.jpg",
+            "logo": false
+          },
+          "age": "March 4, 2025"
+        },
+        {
+          "title": "How to File a Car Accident Claim with Geico in California | Maison Law",
+          "url": "https://maisonlaw.com/personal-injury/car-accidents/car-insurance/claims/geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Using the Geico website to file a California car accident claim is easy, but getting fair coverage for damage and injuries will be harder.",
+          "page_age": "2025-10-03T14:15:14",
+          "profile": {
+            "name": "Maison Law",
+            "url": "https://maisonlaw.com/personal-injury/car-accidents/car-insurance/claims/geico/",
+            "long_name": "maisonlaw.com",
+            "img": "https://imgs.search.brave.com/JF6m8NQ23cBAIkzXnX5WNR8uLuqUecadYm2sAN71sN8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzMDkzMTU5/MzA5ZjBkYmM2ZmQz/ZTVkNzQyODJmMDlm/MzU0ODI4NGUwMzFl/ZDkzZTE5MTE2Yzlj/NmEzNWEyMS9tYWlz/b25sYXcuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "maisonlaw.com",
+            "hostname": "maisonlaw.com",
+            "favicon": "https://imgs.search.brave.com/JF6m8NQ23cBAIkzXnX5WNR8uLuqUecadYm2sAN71sN8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzMDkzMTU5/MzA5ZjBkYmM2ZmQz/ZTVkNzQyODJmMDlm/MzU0ODI4NGUwMzFl/ZDkzZTE5MTE2Yzlj/NmEzNWEyMS9tYWlz/b25sYXcuY29tLw",
+            "path": "  \u203a home  \u203a personal injury  \u203a california car accident lawyer  \u203a what you should know before contacting california car insurance companies  \u203a how to file an insurance claim after a car accident in california  \u203a how to file a car accident claim with geico in california"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/aXucc6X3noxfRIhZMIRRau0suqUWMnooEyMMXn_iNbc/rs:fit:200:200:1:0/g:ce/aHR0cDovL21haXNv/bmxhdy5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMTkvMDQv/Y3JvcHBlZC1sb2dv/LTEucG5n",
+            "original": "http://maisonlaw.com/wp-content/uploads/2019/04/cropped-logo-1.png",
+            "logo": true
+          },
+          "age": "October 3, 2025"
+        },
+        {
+          "title": "How to File a Car Accident Claim with Geico Insurance in California",
+          "url": "https://www.heidarilawgroup.com/blog/how-to-file-a-car-accident-claim-with-geico-insurance-in-california/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Learn how to file a car accident claim with Geico Insurance in California. Navigate the process smoothly with our comprehensive guide if you&#x27;re in an auto accident.",
+          "page_age": "2025-02-26T21:31:39",
+          "profile": {
+            "name": "Heidari Law Group",
+            "url": "https://www.heidarilawgroup.com/blog/how-to-file-a-car-accident-claim-with-geico-insurance-in-california/",
+            "long_name": "heidarilawgroup.com",
+            "img": "https://imgs.search.brave.com/ECrhrAOkD85QrdXXfodcVmjIkbJlvpPXat45tZfk7iw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTg2YzQ3ODgw/YTg4YjA1YWI1ZGQ2/MGM3OWNjZmZhNTAz/MDdlMzExNjliZWMw/ZWM5MDMwNWZlN2Ni/MDkzYTk5Yi93d3cu/aGVpZGFyaWxhd2dy/b3VwLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "heidarilawgroup.com",
+            "hostname": "www.heidarilawgroup.com",
+            "favicon": "https://imgs.search.brave.com/ECrhrAOkD85QrdXXfodcVmjIkbJlvpPXat45tZfk7iw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTg2YzQ3ODgw/YTg4YjA1YWI1ZGQ2/MGM3OWNjZmZhNTAz/MDdlMzExNjliZWMw/ZWM5MDMwNWZlN2Ni/MDkzYTk5Yi93d3cu/aGVpZGFyaWxhd2dy/b3VwLmNvbS8",
+            "path": "  \u203a home  \u203a how to file a car accident claim with geico insurance in california"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Di53LuEOuLUNoa4EM8px_S5cTkGn9V-E4xWEpNJtYRk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aGVpZGFyaWxhd2dy/b3VwLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNC8wNy9I/ZWlkYXJpLUxhdy1I/b3ctdG8tRmlsZS1H/ZWljby1JbnN1cmFu/Y2UtQ2xhaW0uanBn",
+            "original": "https://www.heidarilawgroup.com/wp-content/uploads/2024/07/Heidari-Law-How-to-File-Geico-Insurance-Claim.jpg",
+            "logo": false
+          },
+          "age": "February 26, 2025"
+        },
+        {
+          "title": "How to File a GEICO Accident Claim | GoSuits",
+          "url": "https://gosuits.com/knowledge-base/how-to-file-a-geico-accident-claim-gosuits/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "It is a subsidiary of Berkshire Hathaway, which means it has the financial backing of one of the world\u2019s largest holding companies. While GEICO began in 1936 serving government employees and military families, it now insures millions of policyholders nationwide. For claimants in California, Texas, and Illinois, GEICO is a centralized system with local presence.",
+          "page_age": "2025-08-31T21:33:05",
+          "profile": {
+            "name": "Gosuits",
+            "url": "https://gosuits.com/knowledge-base/how-to-file-a-geico-accident-claim-gosuits/",
+            "long_name": "gosuits.com",
+            "img": "https://imgs.search.brave.com/Ofw-Q0demcPh9kptxywqlNGZNFfNUfHRfVWNOxf2yW0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWE4YzA5OWMy/NGZmYTZmMzY2MGZj/YjRiYzdlMGY5Yzdk/MzBhOWJkMzJiZDM4/NmY5OGRjZmVhZmRm/N2NhZmMxMy9nb3N1/aXRzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "gosuits.com",
+            "hostname": "gosuits.com",
+            "favicon": "https://imgs.search.brave.com/Ofw-Q0demcPh9kptxywqlNGZNFfNUfHRfVWNOxf2yW0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWE4YzA5OWMy/NGZmYTZmMzY2MGZj/YjRiYzdlMGY5Yzdk/MzBhOWJkMzJiZDM4/NmY5OGRjZmVhZmRm/N2NhZmMxMy9nb3N1/aXRzLmNvbS8",
+            "path": "  \u203a home  \u203a blog  \u203a knowledge base  \u203a how to file a geico accident claim"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/KuzLe6u2Nmexg1eIjqJje2-dHGjTeg9LEQKr8HLEcYw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9nb3N1/aXRzLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNS8wOC9o/b3ctdG8tZmlsZS1h/LWdlaWNvLWFjY2lk/ZW50LWNsYWltLWdv/c3VpdHMud2VicA",
+            "original": "https://gosuits.com/wp-content/uploads/2025/08/how-to-file-a-geico-accident-claim-gosuits.webp",
+            "logo": false
+          },
+          "age": "August 31, 2025"
+        },
+        {
+          "title": "GEICO Car Insurance Canada Review | MyChoice",
+          "url": "https://www.mychoice.ca/insurance/car/geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "It currently has more direct sales than any other insurance company in the Country. It also has one of the largest market shares in the country, coming in second to State Farm Insurance. While GEICO insurance isn\u2019t offered in Canada, the company is well-known to Canadians because of its famous mascot, the GEICO gecko.",
+          "page_age": "2025-07-10T15:47:10",
+          "profile": {
+            "name": "MyChoice",
+            "url": "https://www.mychoice.ca/insurance/car/geico/",
+            "long_name": "mychoice.ca",
+            "img": "https://imgs.search.brave.com/SD0vmmO0rJVnC4ZtsfSmkV1svTdkql9TOIjPPCD7tAk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzI0Mzc2ZmI5/MGE3YmI5ZTE1YjBj/YjkwZjVmYzdjZmZm/MzFkOTY5ZWQxZGI1/MzAzOWEzMzRiNzFl/YjliZWFjYi93d3cu/bXljaG9pY2UuY2Ev"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "mychoice.ca",
+            "hostname": "www.mychoice.ca",
+            "favicon": "https://imgs.search.brave.com/SD0vmmO0rJVnC4ZtsfSmkV1svTdkql9TOIjPPCD7tAk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzI0Mzc2ZmI5/MGE3YmI5ZTE1YjBj/YjkwZjVmYzdjZmZm/MzFkOTY5ZWQxZGI1/MzAzOWEzMzRiNzFl/YjliZWFjYi93d3cu/bXljaG9pY2UuY2Ev",
+            "path": "  \u203a home  \u203a insurance  \u203a car insurance  \u203a geico car insurance"
+          },
+          "age": "July 10, 2025"
+        },
+        {
+          "title": "GEICO Car Insurance Pricing 2025 | AutoInurance.com",
+          "url": "https://www.autoinsurance.com/companies/geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Yes, GEICO offers accident forgiveness in all states except California, Connecticut, and Massachusetts.",
+          "page_age": "2025-10-23T17:18:41",
+          "profile": {
+            "name": "AutoInsurance.com",
+            "url": "https://www.autoinsurance.com/companies/geico/",
+            "long_name": "autoinsurance.com",
+            "img": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.com",
+            "hostname": "www.autoinsurance.com",
+            "favicon": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v",
+            "path": "  \u203a home  \u203a companies  \u203a geico car insurance pricing 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/FU3hr37tBh-Ikm7VXGKvyu3MEuYMGVKcUPtJXRnSUP4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYXV0b2luc3Vy/YW5jZS5jb20vYXBw/L3VwbG9hZHMvMjAy/MS8xMi8xNjIxMTQw/My9TY3JlZW4tU2hv/dC0yMDIxLTEyLTAx/LWF0LTkuMzcuNDYt/QU0ucG5n",
+            "original": "https://images.autoinsurance.com/app/uploads/2021/12/16211403/Screen-Shot-2021-12-01-at-9.37.46-AM.png",
+            "logo": false
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "Geico Car Insurance Review October 2025 - Coverage & Cost | U.S. News",
+          "url": "https://www.usnews.com/insurance/auto/geico-car-insurance-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "For example, anyone who works for ... of the California Association for the Education of Young Children, and members, faculty, and staff at Howard University. You can use the Geico website to find out if you qualify for a discount based on your employer or other affiliation. - Rachael Brennan, Licensed Insurance ...",
+          "page_age": "2025-11-01T19:13:00",
+          "profile": {
+            "name": "U.S. News",
+            "url": "https://www.usnews.com/insurance/auto/geico-car-insurance-review",
+            "long_name": "usnews.com",
+            "img": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "usnews.com",
+            "hostname": "www.usnews.com",
+            "favicon": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8",
+            "path": "\u203a insurance  \u203a auto  \u203a geico-car-insurance-review"
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "California car insurance guide",
+          "url": "https://www.insurance.com/auto-insurance/california-car-insurance-guide/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Car insurance in California averages $551 for state minimum coverage. California minimum requirements were 15/30/5, increasing to 30/60/15 as of January 1, 2025. The cheapest car insurance company in California is GEICO, with a rate of $367 a year for state minimum coverage and $1,919 a year for full coverage.",
+          "page_age": "2025-05-19T00:00:00",
+          "profile": {
+            "name": "Insurance.com",
+            "url": "https://www.insurance.com/auto-insurance/california-car-insurance-guide/",
+            "long_name": "insurance.com",
+            "img": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurance.com",
+            "hostname": "www.insurance.com",
+            "favicon": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8",
+            "path": "  \u203a home  \u203a auto insurance  \u203a california car insurance guide"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/D-Y06shWEoG4AkYfCzeOk39aAY6ieIOqggDFp6ywOfI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmNlLmNv/bS91cGxvYWRlZGZp/bGVzL21lZGlhL2Nh/ci1pbnN1cmFuY2Ut/MTIuanBn",
+            "original": "https://www.insurance.com/uploadedfiles/media/car-insurance-12.jpg",
+            "logo": false
+          },
+          "age": "May 19, 2025"
+        },
+        {
+          "title": "GEICO vs Costco Car Insurance: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/geico-vs-costco/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The insurer does not offer coverage in the below states: Alaska, California, Connecticut, Florida, Hawaii, Idaho, Louisiana, Maine, New Hampshire, North Carolina, North Dakota, Rhode Island, Tennessee, Washington, and Wyoming.",
+          "page_age": "2025-10-16T22:23:36",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/geico-vs-costco/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a geico vs. costco car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wLaa5ABL1FOaAK7OptGU60BZ9EYO_N4yxiZcbPpNAME/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9zdGF0/aWMvODAwZGFmYS96/ZnJvbnQvaW1nL2l6/LXNoYXJlLWxvZ28u/cG5n",
+            "original": "https://cdn.thezebra.com/zfront/static/800dafa/zfront/img/iz-share-logo.png",
+            "logo": true
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "10 Best Auto Insurance Companies in California for 2025 | Quote.com",
+          "url": "https://www.quote.com/auto-insurance/best-auto-insurance-companies-in-california/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "No, Allstate car insurance is still available in California, but drivers living in certain coastal areas or with high-risk records may not have their policies renewed (Read More: Geico vs. Allstate Auto Insurance Review) California has over 100 licensed auto insurance companies.",
+          "page_age": "2025-09-22T17:12:59",
+          "profile": {
+            "name": "Quote.com",
+            "url": "https://www.quote.com/auto-insurance/best-auto-insurance-companies-in-california/",
+            "long_name": "quote.com",
+            "img": "https://imgs.search.brave.com/kddem-PxrpzYtwfpKjL3Fo0CZWOxFjL--pzkA-7OGdI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODExNWFmZmUz/MjljOGY0NjU3YTkw/NGU5MWVjMDVlNTAz/ZTA4ZDIwN2JjMzUw/ZjBlYmVhZTExNGZl/YzliNjE1NS93d3cu/cXVvdGUuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "quote.com",
+            "hostname": "www.quote.com",
+            "favicon": "https://imgs.search.brave.com/kddem-PxrpzYtwfpKjL3Fo0CZWOxFjL--pzkA-7OGdI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODExNWFmZmUz/MjljOGY0NjU3YTkw/NGU5MWVjMDVlNTAz/ZTA4ZDIwN2JjMzUw/ZjBlYmVhZTExNGZl/YzliNjE1NS93d3cu/cXVvdGUuY29tLw",
+            "path": "  \u203a home  \u203a best car insurance companies  \u203a auto insurance by state"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/_5SN1tVa3ko5psuWLz0zNrnwP4dKP6tXaVJ1MNVVmoQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cXVvdGUuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI1LzA3/L0Jlc3QtQXV0by1J/bnMtaW4tQ2FsaWZv/cm5pYS5wbmc",
+            "original": "https://www.quote.com/wp-content/uploads/2025/07/Best-Auto-Ins-in-California.png",
+            "logo": false
+          },
+          "age": "September 22, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

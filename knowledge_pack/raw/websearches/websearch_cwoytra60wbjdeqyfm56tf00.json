@@ -1,0 +1,795 @@
+{
+  "websearch_id": "websearch_cwoytra60wbjdeqyfm56tf00",
+  "search_id": "search_fbgfymcfpesovsmu9jy40gbr",
+  "timestamp": "2025-11-07T12:21:39.683012",
+  "startedAt": "2025-11-07T12:21:39.683012",
+  "completedAt": "2025-11-07T12:21:41.665695",
+  "durationSeconds": 1.98,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" \"clean driving record\" discount",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"GEICO\" \"clean driving record\" discount",
+      "show_strict_warning": false,
+      "cleaned": "GEICO clean driving record discount",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO clean driving record discount"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "How to Save With the GEICO Safe Driver Discount | Compare.com",
+          "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-safe-driver-discount",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO advertises that it will give up to a 22% premium reduction if you\u2019ve kept a clean driving record. You can apply the discount to most insurance coverages on your policy, including liability, collision, and comprehensive.",
+          "page_age": "2025-07-31T19:00:00",
+          "profile": {
+            "name": "Compare",
+            "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-safe-driver-discount",
+            "long_name": "compare.com",
+            "img": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "compare.com",
+            "hostname": "www.compare.com",
+            "favicon": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v",
+            "path": "  \u203a auto insurance  \u203a cheap car insurance  \u203a discounts  \u203a geico safe driver discount"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/OyL227CTE4P10GO70XdSBJDExNNZ4R4n46m6Z3y3uEQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8yOTU1MDgvMTIw/MHg5MDAvYWI4MmNi/ZTc4MC93b21hbi1i/bGF6ZXItZHJpdmlu/Zy1oZXJvLmpwZw",
+            "original": "https://a.storyblok.com/f/295508/1200x900/ab82cbe780/woman-blazer-driving-hero.jpg",
+            "logo": false
+          },
+          "age": "July 31, 2025"
+        },
+        {
+          "title": "Best Geico Car Insurance Discounts in 2025 (Save 25% With These Deals!) | CarInsuranceComparison.com",
+          "url": "https://www.carinsurancecomparison.com/geico-car-insurance-discounts/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "For example, you can combine the multi-vehicle discount, good driver discount, and DriveEasy program for greater savings on your premiums. The good driver discount rewards drivers who maintain a clean driving record for five years or more.",
+          "page_age": "2025-08-20T23:44:17",
+          "profile": {
+            "name": "Carinsurancecomparison",
+            "url": "https://www.carinsurancecomparison.com/geico-car-insurance-discounts/",
+            "long_name": "carinsurancecomparison.com",
+            "img": "https://imgs.search.brave.com/F5dA4Aok9S8x6Uy4nAHvsvGdyXO5SDNU3q0EfmPIpfk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGUyN2E3Y2Ri/NDAyOTYzMWEzNWM4/OWFiYjdmYWYzZmE3/MjRmOWUwMjA0YTE3/M2VhODU3NDQzODEz/MTcwMGJjMC93d3cu/Y2FyaW5zdXJhbmNl/Y29tcGFyaXNvbi5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "carinsurancecomparison.com",
+            "hostname": "www.carinsurancecomparison.com",
+            "favicon": "https://imgs.search.brave.com/F5dA4Aok9S8x6Uy4nAHvsvGdyXO5SDNU3q0EfmPIpfk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGUyN2E3Y2Ri/NDAyOTYzMWEzNWM4/OWFiYjdmYWYzZmE3/MjRmOWUwMjA0YTE3/M2VhODU3NDQzODEz/MTcwMGJjMC93d3cu/Y2FyaW5zdXJhbmNl/Y29tcGFyaXNvbi5j/b20v",
+            "path": "\u203a geico-car-insurance-discounts"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/WIXMVa8v7PsfQhnkZel4Z0xWT3ifg3fNY76x4OFko0Q/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2FyaW5zdXJhbmNl/Y29tcGFyaXNvbi5j/b20vSW1hZ2VzL2Ey/OGU1M2RjLWNpY2Nv/bS1sb2dvLWRhcmsu/c3Zn",
+            "original": "https://www.carinsurancecomparison.com/Images/a28e53dc-ciccom-logo-dark.svg",
+            "logo": true
+          },
+          "age": "August 20, 2025"
+        },
+        {
+          "title": "Best high-risk car insurance of November 2025",
+          "url": "https://www.cnbc.com/select/best-car-insurance-high-risk-drivers/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If you are considered a high-risk driver, the cheapest auto insurance policy for you will depend on a variety of factors, including your driving record, age and coverage needs. Overall, State Farm, Erie, Geico, Progressive and USAA have some of the lowest rates and best coverage options for those with an accident, DUI or other blemishes on their record.",
+          "page_age": "2025-11-01T04:52:01",
+          "profile": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/select/best-car-insurance-high-risk-drivers/",
+            "long_name": "Consumer News and Business Channel",
+            "img": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cnbc.com",
+            "hostname": "www.cnbc.com",
+            "favicon": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+            "path": "  \u203a cnbc select  \u203a insurance  \u203a best high-risk car insurance of november 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/MN2azOFgSSlvxl2kMFeT71Kpl68oMHmsDF5-lLd3pl8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDc0MzM3MDMt/MTcxOTQyMjEyNDc4/MS1nZXR0eWltYWdl/cy05NjQ5NTYxODgt/X2dvZDgyOTIuanBl/Zz92PTE3NDU2MTI3/ODM",
+            "original": "https://image.cnbcfm.com/api/v1/image/107433703-1719422124781-gettyimages-964956188-_god8292.jpeg?v=1745612783",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "How to Save With the GEICO Defensive Driving Discount",
+          "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-defensive-driver-discount",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO rewards safe drivers with up to 22% savings on most insurance policy coverages if you go without an accident for at least a year \u2014 most companies require three to five years.",
+          "page_age": "2025-03-21T19:00:00",
+          "profile": {
+            "name": "Compare",
+            "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-defensive-driver-discount",
+            "long_name": "compare.com",
+            "img": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "compare.com",
+            "hostname": "www.compare.com",
+            "favicon": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v",
+            "path": "  \u203a auto insurance  \u203a cheap car insurance  \u203a discounts  \u203a geico defensive driver discount"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/qqPbORVi2MY6Gblmi_s_rtwiZTiF9CjnE-36M8xtO3E/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8yOTU1MDgvMTIw/MHg5MDAvNjc2NjMz/NTkzZi9tYW4tZHJp/dmluZy1oZXJvLmpw/Zw",
+            "original": "https://a.storyblok.com/f/295508/1200x900/676633593f/man-driving-hero.jpg",
+            "logo": false
+          },
+          "age": "March 21, 2025"
+        },
+        {
+          "title": "Best Geico Auto Insurance Discounts in 2025 (Save 26% With These Special Offers!) | AutoInsurance.org",
+          "url": "https://www.autoinsurance.org/geico-auto-insurance-discounts/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico offers several discounts that can help you significantly reduce your auto insurance premiums. Among the most valuable are the multi-vehicle discount, the multi-policy discount, and the good driver discount. Each discount provides substantial savings tailored to your insurance needs and driving habits. The good driver discount is designed for those with a clean driving record.",
+          "page_age": "2025-08-01T23:18:47",
+          "profile": {
+            "name": "AutoInsurance.org",
+            "url": "https://www.autoinsurance.org/geico-auto-insurance-discounts/",
+            "long_name": "autoinsurance.org",
+            "img": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.org",
+            "hostname": "www.autoinsurance.org",
+            "favicon": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv",
+            "path": "  \u203a home  \u203a shopping for auto insurance  \u203a best auto insurance discounts"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/IBZLe7FjASOrsAdF79a4AjLscVHIRyrNl-5lH7xgh3E/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vcXVvdGVsbGMv/aW1hZ2UvdXBsb2Fk/L2luc3VyYW5jZS1z/aXRlLWltYWdlcy9h/aW9yZy1saXZlLzNm/YzJmYTlkLWFpb3Jn/LWxvZ28uc3Zn",
+            "original": "https://res.cloudinary.com/quotellc/image/upload/insurance-site-images/aiorg-live/3fc2fa9d-aiorg-logo.svg",
+            "logo": true
+          },
+          "age": "August 1, 2025"
+        },
+        {
+          "title": "What discounts does GEICO offer for safe driving?",
+          "url": "https://gethuman.com/customer-service/GEICO/faq/What-discounts-does-GEICO-offer-for-safe-driving/9ipGYQ",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "One of the primary discounts is the Safe Driver Discount. This is available for individuals with a clean driving record, meaning no accidents or traffic violations over a specified period.",
+          "page_age": "2025-07-10T00:00:00",
+          "profile": {
+            "name": "GetHuman",
+            "url": "https://gethuman.com/customer-service/GEICO/faq/What-discounts-does-GEICO-offer-for-safe-driving/9ipGYQ",
+            "long_name": "gethuman.com",
+            "img": "https://imgs.search.brave.com/rIGtZkz2n-zMomn9AKiLfIQrjhWvlDjKbb_a0Kys5j4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDcxZTg4NTVl/NDM2NTc5OWQwYWUw/N2Y5MmI4N2E3NTVk/NDQyODY2NmY3Yjky/ZGM1MDI2MzVjNGFh/Y2FhNDA2Yy9nZXRo/dW1hbi5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "gethuman.com",
+            "hostname": "gethuman.com",
+            "favicon": "https://imgs.search.brave.com/rIGtZkz2n-zMomn9AKiLfIQrjhWvlDjKbb_a0Kys5j4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDcxZTg4NTVl/NDM2NTc5OWQwYWUw/N2Y5MmI4N2E3NTVk/NDQyODY2NmY3Yjky/ZGM1MDI2MzVjNGFh/Y2FhNDA2Yy9nZXRo/dW1hbi5jb20v",
+            "path": "  \u203a all companies  \u203a geico customer service  \u203a faq  \u203a what discounts does geico offer for..."
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/kWKwzRlOLA7qRNRfnfSjYUWmJgmMTAukd5azSvoQJyc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9sZWdh/Y3l3ZWIuZ2V0aHVt/YW4uY29tL2ltZy9s/b2dvL2xvZ28tNTAw/LW5hbWUucG5n",
+            "original": "https://legacyweb.gethuman.com/img/logo/logo-500-name.png",
+            "logo": true
+          },
+          "age": "July 10, 2025"
+        },
+        {
+          "title": "Geico Mature Driver Discount | Traffic Safety Institute",
+          "url": "https://www.trafficsafetyinstitute.com/geico-mature-driver-discount/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Typically, the program offers a discount to drivers who meet certain eligibility requirements, which can vary by state, but generally include meeting an age threshold, having a clean driving record, having Geico insurance, and having a valid driver\u2019s license in a state where mature driver ...",
+          "page_age": "2025-08-04T16:39:54",
+          "profile": {
+            "name": "Traffic Safety Institute",
+            "url": "https://www.trafficsafetyinstitute.com/geico-mature-driver-discount/",
+            "long_name": "trafficsafetyinstitute.com",
+            "img": "https://imgs.search.brave.com/BvXhgS4T_A0PMYn75X8HmgmoD4EuGa9ujFVT81jojsk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODE1NTJiNzk3/OTYzZWMyYTBlY2Uy/ZjEyYTYxMTg3ZDk3/MjJjZWI0NDQ0MmRl/OTc5MzE5ZmFlYmI1/NmM1NjhmZS93d3cu/dHJhZmZpY3NhZmV0/eWluc3RpdHV0ZS5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "trafficsafetyinstitute.com",
+            "hostname": "www.trafficsafetyinstitute.com",
+            "favicon": "https://imgs.search.brave.com/BvXhgS4T_A0PMYn75X8HmgmoD4EuGa9ujFVT81jojsk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODE1NTJiNzk3/OTYzZWMyYTBlY2Uy/ZjEyYTYxMTg3ZDk3/MjJjZWI0NDQ0MmRl/OTc5MzE5ZmFlYmI1/NmM1NjhmZS93d3cu/dHJhZmZpY3NhZmV0/eWluc3RpdHV0ZS5j/b20v",
+            "path": "  \u203a home  \u203a geico mature driver discount"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/awoxxNFmqs0dz-Hz4R50zX_RoI6FcGhwfbTWWwrjTvM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dHJhZmZpY3NhZmV0/eWluc3RpdHV0ZS5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjMvMTAvNzgtR2Vp/Y28tTWF0dXJlLURy/aXZlci1EaXNjb3Vu/dC0wMS5wbmc",
+            "original": "https://www.trafficsafetyinstitute.com/wp-content/uploads/2023/10/78-Geico-Mature-Driver-Discount-01.png",
+            "logo": false
+          },
+          "age": "August 4, 2025"
+        },
+        {
+          "title": "Cheapest car insurance for good drivers",
+          "url": "https://finance.yahoo.com/personal-finance/insurance/article/cheapest-car-insurance-good-drivers-195921258.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Here\u2019s a closer look at the ... had no accidents, violations, or claims within the last five years. GEICO: A discount of up to 22% is applied on most coverages if you\u2019ve been accident-free for at least one yea...",
+          "page_age": "2025-10-16T19:59:22",
+          "profile": {
+            "name": "Yahoo! Finance",
+            "url": "https://finance.yahoo.com/personal-finance/insurance/article/cheapest-car-insurance-good-drivers-195921258.html",
+            "long_name": "finance.yahoo.com",
+            "img": "https://imgs.search.brave.com/ZxJbtHZiiBXciqcRfJn3XPiTEOf_XYrooAjrJf1rnag/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjRkNjc1NWY5/MzM5ZjlkMWQyNjM5/OWNiMTQ4ZjcwNTQx/ZjA3ZDE4NDQ2M2Iw/MWZjZjVhOTFlM2Ji/NTE1NWRjZS9maW5h/bmNlLnlhaG9vLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "finance.yahoo.com",
+            "hostname": "finance.yahoo.com",
+            "favicon": "https://imgs.search.brave.com/ZxJbtHZiiBXciqcRfJn3XPiTEOf_XYrooAjrJf1rnag/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjRkNjc1NWY5/MzM5ZjlkMWQyNjM5/OWNiMTQ4ZjcwNTQx/ZjA3ZDE4NDQ2M2Iw/MWZjZjVhOTFlM2Ji/NTE1NWRjZS9maW5h/bmNlLnlhaG9vLmNv/bS8",
+            "path": "  \u203a personal finance  \u203a insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/nIsgVa6WVxiXHWYk-1Lzg0P4HljTcmYMCNHm3bwyGE0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zLnlp/bWcuY29tL255L2Fw/aS9yZXMvMS4yL29o/QlllSDdPNlZKZEpr/R3NCTGlaRFEtLS9Z/WEJ3YVdROWFHbG5h/R3hoYm1SbGNqdDNQ/VEV5TURBN2FEMDRN/REEtL2h0dHBzOi8v/cy55aW1nLmNvbS9v/cy9jcmVhdHItdXBs/b2FkZWQtaW1hZ2Vz/LzIwMjUtMDkvNmNj/M2YyMzAtOGIyZi0x/MWYwLWFmZWYtOGY2/Yjg2NmFkNDJm",
+            "original": "https://s.yimg.com/ny/api/res/1.2/ohBYeH7O6VJdJkGsBLiZDQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2025-09/6cc3f230-8b2f-11f0-afef-8f6b866ad42f",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "r/Geico on Reddit: Defensive Driver Discount??",
+          "url": "https://www.reddit.com/r/Geico/comments/1iufl1h/defensive_driver_discount/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "It depends on which state you live in as most states require you to be 50/55+ for the discount, but I have seen clients get pretty decent discounts from it. It stays on 3 years which is a bonus ... Go with a different insurance company! Full coverage on my 24 year old SUV is $110 a month. Clean driving record. ... Because I don\u2019t trust that every driver has insurance coverage, even basic coverage.",
+          "page_age": "2025-02-21T01:59:35",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Geico/comments/1iufl1h/defensive_driver_discount/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/geico  \u203a defensive driver discount??"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A5H_aQiEBuUODR0lNeU8iDfhrWUvO8oEmRGE_mcS_gM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVkZGl0c3RhdGlj/LmNvbS9pY29uLnBu/Zw",
+            "original": "https://www.redditstatic.com/icon.png",
+            "logo": true
+          },
+          "age": "February 21, 2025"
+        },
+        {
+          "title": "How to Lower Your Car Insurance: 11 Practical Tips | GEICO Living",
+          "url": "https://living.geico.com/saving/insurance-101/4-ways-to-save-on-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "However, if you maintain a clean driving record over time\u2014free from speeding tickets, accidents, or other infractions\u2014your insurer may reward you with lower premiums. GEICO, for example, offers a 5-year accident-free good driver discount to ...",
+          "page_age": "2024-11-12T19:45:04",
+          "profile": {
+            "name": "GEICO Living",
+            "url": "https://living.geico.com/saving/insurance-101/4-ways-to-save-on-car-insurance/",
+            "long_name": "living.geico.com",
+            "img": "https://imgs.search.brave.com/Cve-gaVVRqJopC0zfLT35CI5tzMv9fEQel0RH0-pstQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTQwNzI2ZGQy/YzdhMzYxOGY2MGQx/YmFiNGYyOGY2MDgz/M2E5Yjc5YjJhOWY4/OTYzOGU2ZTFjMWYy/NThhZjQxMi9saXZp/bmcuZ2VpY28uY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "living.geico.com",
+            "hostname": "living.geico.com",
+            "favicon": "https://imgs.search.brave.com/Cve-gaVVRqJopC0zfLT35CI5tzMv9fEQel0RH0-pstQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTQwNzI2ZGQy/YzdhMzYxOGY2MGQx/YmFiNGYyOGY2MDgz/M2E5Yjc5YjJhOWY4/OTYzOGU2ZTFjMWYy/NThhZjQxMi9saXZp/bmcuZ2VpY28uY29t/Lw",
+            "path": "\u203a saving  \u203a insurance-101  \u203a 4-ways-to-save-on-car-insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/SR9OF3_Pni6kOZW6ECZEEZYg8NmW_6Ca2eNGn-iCsoI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9saXZp/bmcuZ2VpY28uY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMl84/ODMxODYzMjhfU09D/X1BIT19HRUlDT19M/aXZpbmdfUGlnZ3lf/QmFua19DYXJfNjAw/eDQwMC5qcGc",
+            "original": "https://living.geico.com/wp-content/uploads/22_883186328_SOC_PHO_GEICO_Living_Piggy_Bank_Car_600x400.jpg",
+            "logo": false
+          },
+          "age": "November 12, 2024"
+        },
+        {
+          "title": "How To Get a Good Driver Discount on Your Car Insurance | FinanceBuzz",
+          "url": "https://financebuzz.com/how-to-get-a-good-driver-discount",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "You can qualify for it if you are ... Driving Record: GEICO offers the opportunity to save as much as 22% on auto insurance if you are accident-free for a full year....",
+          "page_age": "2025-07-11T19:15:00",
+          "profile": {
+            "name": "FinanceBuzz",
+            "url": "https://financebuzz.com/how-to-get-a-good-driver-discount",
+            "long_name": "financebuzz.com",
+            "img": "https://imgs.search.brave.com/S-NKWliRWqMFS55aFMSJ2mN0Nznm6Nk76Mt95jC6F9U/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWNjZDU5ODQy/Y2NmN2M2ZWQxZWMw/MGMxMGFkMjg1NThm/NjFmMTI0ZDUzNTIz/NDk1NzA3YzI1MTRk/MGY1OTg4Yy9maW5h/bmNlYnV6ei5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "financebuzz.com",
+            "hostname": "financebuzz.com",
+            "favicon": "https://imgs.search.brave.com/S-NKWliRWqMFS55aFMSJ2mN0Nznm6Nk76Mt95jC6F9U/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWNjZDU5ODQy/Y2NmN2M2ZWQxZWMw/MGMxMGFkMjg1NThm/NjFmMTI0ZDUzNTIz/NDk1NzA3YzI1MTRk/MGY1OTg4Yy9maW5h/bmNlYnV6ei5jb20v",
+            "path": "  \u203a insurance  \u203a car insurance  \u203a how to get a good driver discount on your car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/WbvECqcvVmf8OWE6rVf8SL7OKber0MiS3p4rsUgzcQI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/ZmluYW5jZWJ1enou/Y29tL2ZpbHRlcnM6/cXVhbGl0eSgxMDAp/L2ltYWdlcy8yMDI1/LzA3LzEwL3dvbWFu/X3VzZXNfa2V5Zm9i/LnBuZw",
+            "original": "https://cdn.financebuzz.com/filters:quality(100)/images/2025/07/10/woman_uses_keyfob.png",
+            "logo": false
+          },
+          "age": "July 11, 2025"
+        },
+        {
+          "title": "Best car insurance companies in 2025",
+          "url": "https://finance.yahoo.com/personal-finance/insurance/article/best-car-insurance-220609280.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "You can potentially lower your ... a clean driving record, and much more. ... GEICO offers 11 types of coverage, most of which are standard among auto insurers. It has a couple coverage options, though, that not all auto insurance companies provide, including: ... GEICO has 23 discounts, ranging from ways to reduce costs by being a safe driver to signing ...",
+          "page_age": "2025-10-21T22:06:09",
+          "profile": {
+            "name": "Yahoo! Finance",
+            "url": "https://finance.yahoo.com/personal-finance/insurance/article/best-car-insurance-220609280.html",
+            "long_name": "finance.yahoo.com",
+            "img": "https://imgs.search.brave.com/ZxJbtHZiiBXciqcRfJn3XPiTEOf_XYrooAjrJf1rnag/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjRkNjc1NWY5/MzM5ZjlkMWQyNjM5/OWNiMTQ4ZjcwNTQx/ZjA3ZDE4NDQ2M2Iw/MWZjZjVhOTFlM2Ji/NTE1NWRjZS9maW5h/bmNlLnlhaG9vLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "finance.yahoo.com",
+            "hostname": "finance.yahoo.com",
+            "favicon": "https://imgs.search.brave.com/ZxJbtHZiiBXciqcRfJn3XPiTEOf_XYrooAjrJf1rnag/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjRkNjc1NWY5/MzM5ZjlkMWQyNjM5/OWNiMTQ4ZjcwNTQx/ZjA3ZDE4NDQ2M2Iw/MWZjZjVhOTFlM2Ji/NTE1NWRjZS9maW5h/bmNlLnlhaG9vLmNv/bS8",
+            "path": "  \u203a personal finance  \u203a insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/2EJSuVtPDfBlgclE0jUWZBjmfJphQrPxqEm1Y-Yayoc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zLnlp/bWcuY29tL255L2Fw/aS9yZXMvMS4yL3ho/QnM0S3VuU3pnU0NJ/M3JPUG9tY2ctLS9Z/WEJ3YVdROWFHbG5h/R3hoYm1SbGNqdDNQ/VEV5TURBN2FEMDRN/REEtL2h0dHBzOi8v/cy55aW1nLmNvbS9v/cy9jcmVhdHItdXBs/b2FkZWQtaW1hZ2Vz/LzIwMjUtMTAvZDRk/OWVlNDAtYWVhZS0x/MWYwLWE2ZmYtMTUy/OWI4OTFlZjVl",
+            "original": "https://s.yimg.com/ny/api/res/1.2/xhBs4KunSzgSCI3rOPomcg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2025-10/d4d9ee40-aeae-11f0-a6ff-1529b891ef5e",
+            "logo": false
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "Every GEICO Car Insurance Discount Explained (2025) | Compare.com",
+          "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-discounts",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO provides several such discounts and programs designed to reward safe driving habits, including: Good driver: People who maintain a clean driving record for five years may qualify for savings of up to 22% on certain coverages.",
+          "page_age": "2025-02-05T19:00:00",
+          "profile": {
+            "name": "Compare",
+            "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-discounts",
+            "long_name": "compare.com",
+            "img": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "compare.com",
+            "hostname": "www.compare.com",
+            "favicon": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v",
+            "path": "  \u203a auto insurance  \u203a cheap car insurance  \u203a discounts  \u203a geico car insurance discounts"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/eo6DC1oUEJ9tQ_nKLjRAcNuN4f4DvLEnyEuZwe_qSBA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8yOTU1MDgvODAw/eDYwMC80NjhmZDhl/NTBlL3dvbWFuLWRy/aXZpbmctd2l0aC1h/aXJwb2RzLmpwZw",
+            "original": "https://a.storyblok.com/f/295508/800x600/468fd8e50e/woman-driving-with-airpods.jpg",
+            "logo": false
+          },
+          "age": "February 5, 2025"
+        },
+        {
+          "title": "Geico Insurance Review for 2025 (+Rates & Options) | Quote.com",
+          "url": "https://www.quote.com/companies/geico-insurance-review/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico keeps costs down by running mostly online and over the phone, which helps cut overhead. If you\u2019ve got a clean driving record, you could pay as little as $40 a month, and you can save even more with perks like multi-policy or vehicle ...",
+          "page_age": "2025-09-22T17:22:28",
+          "profile": {
+            "name": "Quote.com",
+            "url": "https://www.quote.com/companies/geico-insurance-review/",
+            "long_name": "quote.com",
+            "img": "https://imgs.search.brave.com/kddem-PxrpzYtwfpKjL3Fo0CZWOxFjL--pzkA-7OGdI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODExNWFmZmUz/MjljOGY0NjU3YTkw/NGU5MWVjMDVlNTAz/ZTA4ZDIwN2JjMzUw/ZjBlYmVhZTExNGZl/YzliNjE1NS93d3cu/cXVvdGUuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "quote.com",
+            "hostname": "www.quote.com",
+            "favicon": "https://imgs.search.brave.com/kddem-PxrpzYtwfpKjL3Fo0CZWOxFjL--pzkA-7OGdI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODExNWFmZmUz/MjljOGY0NjU3YTkw/NGU5MWVjMDVlNTAz/ZTA4ZDIwN2JjMzUw/ZjBlYmVhZTExNGZl/YzliNjE1NS93d3cu/cXVvdGUuY29tLw",
+            "path": "  \u203a home  \u203a best car insurance companies"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/tqYWhzxCTGCcB5TyQiRvxGid6lT9mz6fGza0BlyUgaw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vZGF2djF6d2Jv/L2ltYWdlL3VwbG9h/ZC92MTc0MzQyNTYy/My92Z2VqdG1uemIz/bnB4bHI5ODJoZi5w/bmc",
+            "original": "https://res.cloudinary.com/davv1zwbo/image/upload/v1743425623/vgejtmnzb3npxlr982hf.png",
+            "logo": false
+          },
+          "age": "September 22, 2025"
+        },
+        {
+          "title": "California Good Driver Discount + Other Discounts You Could Earn | Best Online Traffic School",
+          "url": "https://www.bestonlinetrafficschool.co/california-good-driver-discount/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Many insurers will lower your premiums if you stay accident-free for one to five years. In California, this perk is available to drivers insured by major carriers like: Geico \u00b7 State Farm \u00b7 Progressive \u00b7 Nationwide \u00b7 Allstate \u00b7 Amica \u00b7 Most carriers also offer discounts if your driving record stays clean.",
+          "page_age": "2025-10-09T16:48:51",
+          "profile": {
+            "name": "Best Online Traffic School",
+            "url": "https://www.bestonlinetrafficschool.co/california-good-driver-discount/",
+            "long_name": "bestonlinetrafficschool.co",
+            "img": "https://imgs.search.brave.com/k0ovSLrb3d3USXkgZMnSzLL5pSUNrwLChdCbljfoXhY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWFkYzYxMzAy/ODcxODJjZTIxMGU2/ZGMxYzEyMmQxYjI4/MGY4ZGVmOTZjNmIz/ZDIzZWY2OGMwZWQw/ZDdlN2ZlZS93d3cu/YmVzdG9ubGluZXRy/YWZmaWNzY2hvb2wu/Y28v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bestonlinetrafficschool.co",
+            "hostname": "www.bestonlinetrafficschool.co",
+            "favicon": "https://imgs.search.brave.com/k0ovSLrb3d3USXkgZMnSzLL5pSUNrwLChdCbljfoXhY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWFkYzYxMzAy/ODcxODJjZTIxMGU2/ZGMxYzEyMmQxYjI4/MGY4ZGVmOTZjNmIz/ZDIzZWY2OGMwZWQw/ZDdlN2ZlZS93d3cu/YmVzdG9ubGluZXRy/YWZmaWNzY2hvb2wu/Y28v",
+            "path": "  \u203a home  \u203a california good driver discount + other discounts you could earn"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/lV03khGIlLJ1X1fot_AIVilxw5b4vDwjuOUQiqQ_qU8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmVzdG9ubGluZXRy/YWZmaWNzY2hvb2wu/Y28vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjIvMDYvMTAtQ0Et/R29vZC1kcml2ZXIt/MDEucG5n",
+            "original": "https://www.bestonlinetrafficschool.co/wp-content/uploads/2022/06/10-CA-Good-driver-01.png",
+            "logo": false
+          },
+          "age": "1 month ago"
+        },
+        {
+          "title": "These car insurance companies are the least likely to raise rates",
+          "url": "https://www.cnbc.com/select/car-insurance-companies-least-likely-raise-rates/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "CNBC Select found that USAA, Auto-Owners, Nationwide and Geico are had the lowest average premiums. Individual rates vary, however, depending on your location, driving record and other factors. It&#x27;s possible to save on car insurance by raising your credit score, raising your deductible, bundling your insurance policies and keeping a clean driving record.",
+          "page_age": "2025-09-29T19:21:58",
+          "profile": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/select/car-insurance-companies-least-likely-raise-rates/",
+            "long_name": "Consumer News and Business Channel",
+            "img": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cnbc.com",
+            "hostname": "www.cnbc.com",
+            "favicon": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+            "path": "  \u203a cnbc select  \u203a insurance  \u203a these car insurance companies are the least likely to raise rates"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/X9oYChntQqe3k-7tdili9Wht-Mnx6r381HKJy_1NZKY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDgyMDQ3ODkt/MTc1ODk5MzQxNTU2/Ny1nZXR0eWltYWdl/cy0xODczNDAyMTU0/LWRyaXZlcmNhcmhh/bmRtb25leS5qcGVn/P3Y9MTc1ODk5MzQ3/Ng",
+            "original": "https://image.cnbcfm.com/api/v1/image/108204789-1758993415567-gettyimages-1873402154-drivercarhandmoney.jpeg?v=1758993476",
+            "logo": false
+          },
+          "age": "September 29, 2025"
+        },
+        {
+          "title": "Geico Federal Employee Discount | Everything That You Need To Know",
+          "url": "https://perkshorts.com/geico-federal-employee-discount/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Other Discounts: The federal employee discount can easily be combined with other offers which include safe driver discounts or multi-car discounts, to maximize your savings. I have below broken down an example to make you understand how much a Geico federal employee discount can actually save you. Scenario: A federal employee with a clean driving record, comprehensive car insurance, and full coverage for a 2022 Honda Accord.",
+          "page_age": "2024-11-25T10:40:46",
+          "profile": {
+            "name": "Perk Shorts",
+            "url": "https://perkshorts.com/geico-federal-employee-discount/",
+            "long_name": "perkshorts.com",
+            "img": "https://imgs.search.brave.com/PVOXybGDq2Z_UYZr9WbCn48Igygoa8ld6UQ0pjv_MR4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjUyNmEwZjlh/YmFlODhjMGJkMDkx/ZTk5M2VjMDc0YjYx/OWI5MWEwYTMwYWVl/YWM2MjYyMDMyYWI1/NGJhMjJhYi9wZXJr/c2hvcnRzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "perkshorts.com",
+            "hostname": "perkshorts.com",
+            "favicon": "https://imgs.search.brave.com/PVOXybGDq2Z_UYZr9WbCn48Igygoa8ld6UQ0pjv_MR4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjUyNmEwZjlh/YmFlODhjMGJkMDkx/ZTk5M2VjMDc0YjYx/OWI5MWEwYTMwYWVl/YWM2MjYyMDMyYWI1/NGJhMjJhYi9wZXJr/c2hvcnRzLmNvbS8",
+            "path": "  \u203a home  \u203a employee discount  \u203a geico federal employee discount | everything that you need to know"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/5JUe1yXdbSSClihPt9KHhGRKzUpYzXYbJfSOxQcpBS4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9wZXJr/c2hvcnRzLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyNC8x/MS9HZWljby1GZWRl/cmFsLndlYnA",
+            "original": "https://perkshorts.com/wp-content/uploads/2024/11/Geico-Federal.webp",
+            "logo": false
+          },
+          "age": "November 25, 2024"
+        },
+        {
+          "title": "GEICO Insurance Review 2025",
+          "url": "https://www.autoinsurance.com/companies/geico/reviews/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The most significant discount was the Good Driver Discount, which GEICO says can save customers up to 22 percent on their policy (now called a Clean Driving Record discount).2",
+          "page_age": "2025-09-29T22:11:11",
+          "profile": {
+            "name": "AutoInsurance.com",
+            "url": "https://www.autoinsurance.com/companies/geico/reviews/",
+            "long_name": "autoinsurance.com",
+            "img": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.com",
+            "hostname": "www.autoinsurance.com",
+            "favicon": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v",
+            "path": "  \u203a home  \u203a companies  \u203a geico insurance review 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/FU3hr37tBh-Ikm7VXGKvyu3MEuYMGVKcUPtJXRnSUP4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYXV0b2luc3Vy/YW5jZS5jb20vYXBw/L3VwbG9hZHMvMjAy/MS8xMi8xNjIxMTQw/My9TY3JlZW4tU2hv/dC0yMDIxLTEyLTAx/LWF0LTkuMzcuNDYt/QU0ucG5n",
+            "original": "https://images.autoinsurance.com/app/uploads/2021/12/16211403/Screen-Shot-2021-12-01-at-9.37.46-AM.png",
+            "logo": false
+          },
+          "age": "September 29, 2025"
+        },
+        {
+          "title": "GEICO Car Insurance Review [2025]: Competitive Rates + Coverage | FinanceBuzz",
+          "url": "https://financebuzz.com/geico-auto-insurance-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Get rewarded with savings for having a clean driving record. ... Car insurance can be so simple. And so affordable. ... The insurance savings you expect. ... Enjoy personalized policies, comprehensive coverage &amp; more. See how much you could save today! ... Drivers who switch their auto insurance and save with State Farm save $764 on average! GEICO&#x27;s vast array of car insurance discounts sets it apart from many other insurers, including State Farm, which is known for offering many options to save on car insurance.",
+          "page_age": "2025-10-27T16:17:16",
+          "profile": {
+            "name": "FinanceBuzz",
+            "url": "https://financebuzz.com/geico-auto-insurance-review",
+            "long_name": "financebuzz.com",
+            "img": "https://imgs.search.brave.com/S-NKWliRWqMFS55aFMSJ2mN0Nznm6Nk76Mt95jC6F9U/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWNjZDU5ODQy/Y2NmN2M2ZWQxZWMw/MGMxMGFkMjg1NThm/NjFmMTI0ZDUzNTIz/NDk1NzA3YzI1MTRk/MGY1OTg4Yy9maW5h/bmNlYnV6ei5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "financebuzz.com",
+            "hostname": "financebuzz.com",
+            "favicon": "https://imgs.search.brave.com/S-NKWliRWqMFS55aFMSJ2mN0Nznm6Nk76Mt95jC6F9U/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWNjZDU5ODQy/Y2NmN2M2ZWQxZWMw/MGMxMGFkMjg1NThm/NjFmMTI0ZDUzNTIz/NDk1NzA3YzI1MTRk/MGY1OTg4Yy9maW5h/bmNlYnV6ei5jb20v",
+            "path": "  \u203a insurance  \u203a car insurance  \u203a geico car insurance review [2025]: competitive rates + coverage"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/KgSabUcKfzEyk58f317H0tlQYqGhJNqTC3CV5e7RHcM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/ZmluYW5jZWJ1enou/Y29tL2ZpbHRlcnM6/cXVhbGl0eSgxMDAp/L2ltYWdlcy8yMDIy/LzA3LzIzL2dlaWNv/LXBob25lLWFwcC5q/cGc",
+            "original": "https://cdn.financebuzz.com/filters:quality(100)/images/2022/07/23/geico-phone-app.jpg",
+            "logo": false
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "What are the Benefits of a Clean Driving Record? - Insure On The Spot",
+          "url": "https://www.insureonthespot.com/benefits-clean-driving-record/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "These rewards stack on top of your low base rate\u2014making the savings even greater for drivers with a clean record. A significant benefit of having a clean driving record is becoming eligible for accident forgiveness programs. This means if you\u2019re involved in an accident after maintaining a claim-free record for some time, your insurer won\u2019t raise your premium for that first incident. Many major insurers, like Allstate, GEICO, and Progressive, offer accident forgiveness, but it\u2019s usually available only to drivers with a clean record.",
+          "page_age": "2025-06-20T21:29:40",
+          "profile": {
+            "name": "Insure On The Spot",
+            "url": "https://www.insureonthespot.com/benefits-clean-driving-record/",
+            "long_name": "insureonthespot.com",
+            "img": "https://imgs.search.brave.com/ZH_l3iIrD1V5_xmwua4x4SlKZZRpbhmyYEDeqdHdCDQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI3YjYxNTUz/MjA3OTY4ODg4MDVh/OWQ4YTI5MTJjN2Vl/MjE0MzQ0ODdkZDRk/NTUzNDcxYjczMzVl/MWNmYzI1NC93d3cu/aW5zdXJlb250aGVz/cG90LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insureonthespot.com",
+            "hostname": "www.insureonthespot.com",
+            "favicon": "https://imgs.search.brave.com/ZH_l3iIrD1V5_xmwua4x4SlKZZRpbhmyYEDeqdHdCDQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI3YjYxNTUz/MjA3OTY4ODg4MDVh/OWQ4YTI5MTJjN2Vl/MjE0MzQ0ODdkZDRk/NTUzNDcxYjczMzVl/MWNmYzI1NC93d3cu/aW5zdXJlb250aGVz/cG90LmNvbS8",
+            "path": "  \u203a home  \u203a tips & resources (articles)  \u203a what are the benefits of a clean driving record?"
+          },
+          "age": "June 20, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

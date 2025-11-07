@@ -1,0 +1,785 @@
+{
+  "websearch_id": "websearch_fi3inq6igg5qk9ttb1xrxueh",
+  "search_id": "search_s31ew28vn9k5irrgd8kugkzx",
+  "timestamp": "2025-11-07T12:21:53.576041",
+  "startedAt": "2025-11-07T12:21:53.576041",
+  "completedAt": "2025-11-07T12:21:55.504847",
+  "durationSeconds": 1.93,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"State Farm\" \"Drive Safe & Save\" discount",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"State Farm\" \"Drive Safe & Save\" discount",
+      "show_strict_warning": false,
+      "cleaned": "State Farm Drive Safe & Save discount",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "State Farm Drive Safe & Save discount"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Can State Farm Drive Safe & Save Raise Your Rates?",
+          "url": "https://wallethub.com/answers/ci/can-state-farm-drive-safe-and-save-raise-rates-1000226-2140784366/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm offers a good driver discount, as well as a discount of up to 30% for enrolling in their Drive Safe &amp; Save program.",
+          "page_age": "2025-09-19T09:27:25",
+          "profile": {
+            "name": "WalletHub",
+            "url": "https://wallethub.com/answers/ci/can-state-farm-drive-safe-and-save-raise-rates-1000226-2140784366/",
+            "long_name": "wallethub.com",
+            "img": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "wallethub.com",
+            "hostname": "wallethub.com",
+            "favicon": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw",
+            "path": "\u203a answers  \u203a ci  \u203a can-state-farm-drive-safe-and-save-raise-rates-1000226-2140784366"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YnFsFD--_0DYDN63YU7RTh6E1ZINWtslBaGMBZrgzuI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbGV0aHViLmNv/bS9pbWFnZXMvd2gy/MDE1L2Fuc3dlcnMv/d2FsbGV0aHViLWFu/c3dlcnNfVjMwYjE2/NmZfLnBuZw",
+            "original": "https://cdn.wallethub.com/images/wh2015/answers/wallethub-answers_V30b166f_.png",
+            "logo": false
+          },
+          "age": "September 19, 2025"
+        },
+        {
+          "title": "State Farm Drive Safe & Save Review 2025",
+          "url": "https://www.autoinsurance.com/companies/state-farm/drive-safe-and-save/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm\u2019s Drive Safe &amp; Save app offers a 5-10% discount at sign-up and up to 30% discount on auto insurance for safe driving.",
+          "page_age": "2025-10-22T22:00:28",
+          "profile": {
+            "name": "AutoInsurance.com",
+            "url": "https://www.autoinsurance.com/companies/state-farm/drive-safe-and-save/",
+            "long_name": "autoinsurance.com",
+            "img": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.com",
+            "hostname": "www.autoinsurance.com",
+            "favicon": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v",
+            "path": "  \u203a home  \u203a companies  \u203a state farm drive safe & save review 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/FU3hr37tBh-Ikm7VXGKvyu3MEuYMGVKcUPtJXRnSUP4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYXV0b2luc3Vy/YW5jZS5jb20vYXBw/L3VwbG9hZHMvMjAy/MS8xMi8xNjIxMTQw/My9TY3JlZW4tU2hv/dC0yMDIxLTEyLTAx/LWF0LTkuMzcuNDYt/QU0ucG5n",
+            "original": "https://images.autoinsurance.com/app/uploads/2021/12/16211403/Screen-Shot-2021-12-01-at-9.37.46-AM.png",
+            "logo": false
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "State Farm Drive Safe and Save reviews | CarInsurance.com",
+          "url": "https://www.carinsurance.com/Articles/state-farm-in-drive-discount.aspx",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm customers can get up to a 30% discount on insurance rates for participating in the company&#x27;s usage-based insurance program. Here&#x27;s how it works. Skip to article ... State Farm\u2019s Drive Safe &amp; Save program offers substantial insurance ...",
+          "page_age": "2025-02-20T00:00:00",
+          "profile": {
+            "name": "Carinsurance.com",
+            "url": "https://www.carinsurance.com/Articles/state-farm-in-drive-discount.aspx",
+            "long_name": "carinsurance.com",
+            "img": "https://imgs.search.brave.com/KCetfn_EHIlwz5sy6dTvSdGjOen9Qf_QsSICK4hYUH8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDdmYWUzNjM0/MGU0ODEwNzI3ZWVj/NjEwYmQ2MmE5NTZh/N2E2NDRhODA2YjRj/NjBlNzc2OTBiYzkz/YzA3ZGQzOC93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "carinsurance.com",
+            "hostname": "www.carinsurance.com",
+            "favicon": "https://imgs.search.brave.com/KCetfn_EHIlwz5sy6dTvSdGjOen9Qf_QsSICK4hYUH8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDdmYWUzNjM0/MGU0ODEwNzI3ZWVj/NjEwYmQ2MmE5NTZh/N2E2NDRhODA2YjRj/NjBlNzc2OTBiYzkz/YzA3ZGQzOC93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS8",
+            "path": "\u203a Articles  \u203a state-farm-in-drive-discount.aspx"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/CsNkFGMv3GuWF28unHgUNJQ4p6d7T7MLWxzCeCa13xI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS9pbWFnZXN2/cl9jZS81MDIxL1Bv/cnRyYWl0MzMzRHJp/dmVDYXJlZnVsU2ln/bi5qcGc",
+            "original": "https://www.carinsurance.com/imagesvr_ce/5021/Portrait333DriveCarefulSign.jpg",
+            "logo": false
+          },
+          "age": "February 20, 2025"
+        },
+        {
+          "title": "State Farm Drive Safe & Save Review for 2025 (Save 50% for Good Driving) | AutoInsurance.org",
+          "url": "https://www.autoinsurance.org/state-farm-drive-safe-and-save-review/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Drive Safe &amp; Save with State Farm auto insurance accomplishes what its name implies \u2014 it helps participants save up to 50% for good driving. This usage-based auto insurance program monitors and grades your driving style using telematics technology.",
+          "page_age": "2025-08-28T20:49:38",
+          "profile": {
+            "name": "AutoInsurance.org",
+            "url": "https://www.autoinsurance.org/state-farm-drive-safe-and-save-review/",
+            "long_name": "autoinsurance.org",
+            "img": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.org",
+            "hostname": "www.autoinsurance.org",
+            "favicon": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv",
+            "path": "  \u203a home  \u203a shopping for auto insurance  \u203a best auto insurance discounts"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/IuYiutHfNsdWI0R26VB88Vc2Gw_cJ-uXgmlDUM92Pqw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcvaW1hZ2Vz/L1N0YXRlLUZhcm0t/RHJpdmUtU2FmZS1h/bmQtU2F2ZS1SZXZp/ZXctQUkucG5n",
+            "original": "https://www.autoinsurance.org/images/State-Farm-Drive-Safe-and-Save-Review-AI.png",
+            "logo": false
+          },
+          "age": "August 28, 2025"
+        },
+        {
+          "title": "State Farm Drive Safe & Save Telematics Program Review (2025) | Insurify",
+          "url": "https://insurify.com/car-insurance/companies/state-farm/drive-safe-and-save/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "You automatically qualify for an initial discount by signing up for the State Farm Drive Safe &amp; Save program, and you can even save more based on your driving. Typically, safe and low-mileage drivers can save the most with telematic programs.",
+          "page_age": "2025-03-31T19:00:00",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/car-insurance/companies/state-farm/drive-safe-and-save/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a car insurance  \u203a companies  \u203a state farm  \u203a drive safe and save"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/CfpiqXbhrtNCXa7jDiY7b8mbrvUD3dhfX1O5tlkssKA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xNjIyNzMvMTg1/NngxMzkyL2ZhMzc0/ZWZjNmYvZHJpdmVz/aGFyZS13b21hbi1n/b2xkLnBuZw",
+            "original": "https://a.storyblok.com/f/162273/1856x1392/fa374efc6f/driveshare-woman-gold.png",
+            "logo": false
+          },
+          "age": "March 31, 2025"
+        },
+        {
+          "title": "Drive Safe and Save Business - State Farm\u00ae",
+          "url": "https://www.statefarm.com/insurance/small-business/commercial-auto/business-drive-safe-and-save",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Looking for ways to help keep your small business running smoothly? You\u2019ve come to the right place. Articles from Simple Insights draw on over 100 years of State Farm knowledge. ... * Mileage and odometer readings are excluded from the Drive Safe &amp; Save discount on certain policies in certain states.",
+          "page_age": "2025-04-16T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/insurance/small-business/commercial-auto/business-drive-safe-and-save",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a insurance  \u203a small business  \u203a commercial auto  \u203a drive safe & save business"
+          },
+          "age": "April 16, 2025"
+        },
+        {
+          "title": "State Farm Drive Safe & Save Review: How Does It Work? - ValuePenguin",
+          "url": "https://www.valuepenguin.com/state-farm-drive-safe-and-save-insurance-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm Drive Safe &amp; Save tracks a few key behaviors via the State Farm Drive Safe &amp; Save app or your connected car. ... You also have to provide an odometer reading at each policy renewal. State Farm will use this to factor your annual mileage into the discount.",
+          "page_age": "2025-07-09T17:36:38",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/state-farm-drive-safe-and-save-insurance-review",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a auto insurance  \u203a state farm drive safe & save review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/OcbVrXsnhwTWOfLhaxtR-k4lU5Eb1Jh9qYhfB6hHP-s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL3JlZmVycmFs/X2xvZ29zL3VzL2lu/c3VyYW5jZS9zdGF0/ZWZhcm0tMg",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/referral_logos/us/insurance/statefarm-2",
+            "logo": true
+          },
+          "age": "July 9, 2025"
+        },
+        {
+          "title": "State Farm Drive Safe & Save Review (2025) | 4AutoInsuranceQuote.com",
+          "url": "https://www.4autoinsurancequote.com/state-farm-drive-safe-and-save-review/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The Drive Safe &amp; Save discount is up to 30%. You can save even more by using an auto insurance discount checklist. Compare over 200 auto insurance companies at once! ... Once you sign up for Drive Safe &amp; Save, install the State Farm auto insurance app onto your Android or Apple device.",
+          "page_age": "2024-11-24T19:00:40",
+          "profile": {
+            "name": "4autoinsurancequote",
+            "url": "https://www.4autoinsurancequote.com/state-farm-drive-safe-and-save-review/",
+            "long_name": "4autoinsurancequote.com",
+            "img": "https://imgs.search.brave.com/mgnN3Cg9r0ir7XHhN9320mnaRx4ot3A9uzWY6R4XrvQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDQxNjRhZGJl/YWM3OWQwM2M4MDIz/ODdmMGQ2M2Q1MTJk/NGZkM2ZlNThlZmI2/YzQ3ZmIyODFhZTU3/MWNkN2ZjNS93d3cu/NGF1dG9pbnN1cmFu/Y2VxdW90ZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "4autoinsurancequote.com",
+            "hostname": "www.4autoinsurancequote.com",
+            "favicon": "https://imgs.search.brave.com/mgnN3Cg9r0ir7XHhN9320mnaRx4ot3A9uzWY6R4XrvQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDQxNjRhZGJl/YWM3OWQwM2M4MDIz/ODdmMGQ2M2Q1MTJk/NGZkM2ZlNThlZmI2/YzQ3ZmIyODFhZTU3/MWNkN2ZjNS93d3cu/NGF1dG9pbnN1cmFu/Y2VxdW90ZS5jb20v",
+            "path": "  \u203a home  \u203a best affordable auto insurance companies"
+          },
+          "age": "November 24, 2024"
+        },
+        {
+          "title": "Best State Farm Auto Insurance Discounts in 2025 (Save 50% With These Deals!) | AutoInsurance.org",
+          "url": "https://www.autoinsurance.org/state-farm-auto-insurance-discounts/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "... The best State Farm auto insurance discounts are multi-policy, good student, and Drive Safe &amp; Save discounts, with potential savings of up to 25% for multi-policy, 20% for good student, and 50% for Drive Safe &amp; Save discount.",
+          "page_age": "2025-08-28T20:49:38",
+          "profile": {
+            "name": "AutoInsurance.org",
+            "url": "https://www.autoinsurance.org/state-farm-auto-insurance-discounts/",
+            "long_name": "autoinsurance.org",
+            "img": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.org",
+            "hostname": "www.autoinsurance.org",
+            "favicon": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv",
+            "path": "  \u203a home  \u203a shopping for auto insurance  \u203a best auto insurance discounts"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/cg7TI_Gdrs-6_dRgkB_JwVtq7JX2kOt24Q0xpdjRp5I/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcvaW1hZ2Vz/L0Jlc3QtU3RhdGUt/RmFybS1BdXRvLUlu/c3VyYW5jZS1EaXNj/b3VudHMtMi5wbmc",
+            "original": "https://www.autoinsurance.org/images/Best-State-Farm-Auto-Insurance-Discounts-2.png",
+            "logo": false
+          },
+          "age": "August 28, 2025"
+        },
+        {
+          "title": "state farm drive safe and save review 2025 auto insurance",
+          "url": "https://blakeinsurancegroup.com/state-farm-drive-safe-and-save-review/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "You may see an initial enrollment benefit and then an updated discount at renewal based on recorded driving. Timing varies by state and policy term. ... Disclosure: This review is general information\u2014not legal or financial advice. Drive Safe &amp; Save terms, eligibility, data use, and pricing impacts vary by state and can change. Your policy, endorsements, and carrier disclosures control. Licensed insurance producer (NPR/NPN 16944666). State Farm Drive Safe and Save review, telematics discount app, usage-based insurance near me, safe driving discount factors, phone distraction, night driving, benchmark quotes near me, Phoenix Tucson Los Angeles San Diego Houston Dallas San Antonio Miami Orlando New York Columbus Charlotte Atlanta Oklahoma City Albuquerque Detroit Omaha Columbia Sioux Falls Charleston WV Virginia Beach Kansas City Des Moines.",
+          "page_age": "2025-09-12T04:08:31",
+          "profile": {
+            "name": "Blakeinsurancegroup",
+            "url": "https://blakeinsurancegroup.com/state-farm-drive-safe-and-save-review/",
+            "long_name": "blakeinsurancegroup.com",
+            "img": "https://imgs.search.brave.com/a01NlX7BtgFhqHXaWoZLIAJaIF31fpx_LFtlcXYTxgQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvY2ZiMzRiODBm/NWExZTgwZTdhMmRl/N2ZkZDRmMTZhNmMy/ODE5ZDE2MjI2ZDBk/ZmM2NDJkMzdlMTM1/NDUyMGYyYy9ibGFr/ZWluc3VyYW5jZWdy/b3VwLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "blakeinsurancegroup.com",
+            "hostname": "blakeinsurancegroup.com",
+            "favicon": "https://imgs.search.brave.com/a01NlX7BtgFhqHXaWoZLIAJaIF31fpx_LFtlcXYTxgQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvY2ZiMzRiODBm/NWExZTgwZTdhMmRl/N2ZkZDRmMTZhNmMy/ODE5ZDE2MjI2ZDBk/ZmM2NDJkMzdlMTM1/NDUyMGYyYy9ibGFr/ZWluc3VyYW5jZWdy/b3VwLmNvbS8",
+            "path": "  \u203a state farm drive safe and save review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/uPtg6vL2VWi8C2Kozfn-9ovKG0N4JHb7gTpYxJSmBTA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9ibGFr/ZWluc3VyYW5jZWdy/b3VwLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNC8wMS9J/TUdfMjA0Ni1zY2Fs/ZWQuanBlZw",
+            "original": "https://blakeinsurancegroup.com/wp-content/uploads/2024/01/IMG_2046-scaled.jpeg",
+            "logo": false
+          },
+          "age": "September 12, 2025"
+        },
+        {
+          "title": "How Much Is The State Farm Safe Driver Discount?",
+          "url": "https://wallethub.com/answers/ci/how-much-is-the-state-farm-safe-driver-discount-2140731543/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The State Farm safe driver discount is up to 30%. State Farm policyholders can enroll in the Drive Safe &amp; Save telematics program, which allows them to save 10% on sign up and up to 30% by simply engaging in a more healthy driving behavior",
+          "page_age": "2024-12-11T13:49:49",
+          "profile": {
+            "name": "WalletHub",
+            "url": "https://wallethub.com/answers/ci/how-much-is-the-state-farm-safe-driver-discount-2140731543/",
+            "long_name": "wallethub.com",
+            "img": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "wallethub.com",
+            "hostname": "wallethub.com",
+            "favicon": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw",
+            "path": "\u203a answers  \u203a ci  \u203a how-much-is-the-state-farm-safe-driver-discount-2140731543"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YnFsFD--_0DYDN63YU7RTh6E1ZINWtslBaGMBZrgzuI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbGV0aHViLmNv/bS9pbWFnZXMvd2gy/MDE1L2Fuc3dlcnMv/d2FsbGV0aHViLWFu/c3dlcnNfVjMwYjE2/NmZfLnBuZw",
+            "original": "https://cdn.wallethub.com/images/wh2015/answers/wallethub-answers_V30b166f_.png",
+            "logo": false
+          },
+          "age": "December 11, 2024"
+        },
+        {
+          "title": "Does State Farm Safe and Save Track Speed?",
+          "url": "https://wallethub.com/answers/ci/does-state-farm-safe-and-save-track-speed-1000644-2140788666/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm Drive Safe &amp; Save users are eligible for an initial discount of 10% just for signing up, as well as a discount of up to 30% based on their driving habits.",
+          "page_age": "2025-03-25T15:10:56",
+          "profile": {
+            "name": "WalletHub",
+            "url": "https://wallethub.com/answers/ci/does-state-farm-safe-and-save-track-speed-1000644-2140788666/",
+            "long_name": "wallethub.com",
+            "img": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "wallethub.com",
+            "hostname": "wallethub.com",
+            "favicon": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw",
+            "path": "\u203a answers  \u203a ci  \u203a does-state-farm-safe-and-save-track-speed-1000644-2140788666"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YnFsFD--_0DYDN63YU7RTh6E1ZINWtslBaGMBZrgzuI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbGV0aHViLmNv/bS9pbWFnZXMvd2gy/MDE1L2Fuc3dlcnMv/d2FsbGV0aHViLWFu/c3dlcnNfVjMwYjE2/NmZfLnBuZw",
+            "original": "https://cdn.wallethub.com/images/wh2015/answers/wallethub-answers_V30b166f_.png",
+            "logo": false
+          },
+          "age": "March 25, 2025"
+        },
+        {
+          "title": "Every State Farm Car Insurance Discount Explained (2025) | Compare.com",
+          "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/state-farm-discounts",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Enroll in State Farm\u2019s Drive Safe &amp; Save telematics program to get an initial discount of 10%. You can earn an additional discount of up to 30% depending on your driving habits and how many miles you drive.",
+          "page_age": "2025-01-24T19:00:00",
+          "profile": {
+            "name": "Compare",
+            "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/state-farm-discounts",
+            "long_name": "compare.com",
+            "img": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "compare.com",
+            "hostname": "www.compare.com",
+            "favicon": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v",
+            "path": "  \u203a auto insurance  \u203a cheap car insurance  \u203a discounts  \u203a state farm car insurance discounts"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/X7uoZmq64DhCF0sdqp6yR-Tj0CgjqqZjXFUCBi-11Cg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8yOTU1MDgvODAw/eDYwMC81MTZiN2Vj/M2I2L3Jvdy1vZi1j/YXJzLXBhcmtlZC5q/cGc",
+            "original": "https://a.storyblok.com/f/295508/800x600/516b7ec3b6/row-of-cars-parked.jpg",
+            "logo": false
+          },
+          "age": "January 24, 2025"
+        },
+        {
+          "title": "What Is the 'Drive Safe & Save' Program From State Farm?",
+          "url": "https://www.dailydot.com/news/state-farm-drive-safe-and-save/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In 2022, State Farm introduced the \u201cDrive Safe and Save\u201d program. This plan allows drivers to get discounts based on their behavior on the road.",
+          "page_age": "2025-04-05T08:00:00",
+          "profile": {
+            "name": "Daily Dot",
+            "url": "https://www.dailydot.com/news/state-farm-drive-safe-and-save/",
+            "long_name": "dailydot.com",
+            "img": "https://imgs.search.brave.com/XGUj0au4jylX11FqMPeujpQHAKRR_YqvGibHiWsIfVY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzVhMjJkYzJi/ZTY4Mjg2MjFkYTEz/ODg5MjM2ZWFmYzgy/NGQ2MjA5NmExNTRj/ODQ0MTIxZWZhMmFk/YTJkOTBiYy93d3cu/ZGFpbHlkb3QuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "dailydot.com",
+            "hostname": "www.dailydot.com",
+            "favicon": "https://imgs.search.brave.com/XGUj0au4jylX11FqMPeujpQHAKRR_YqvGibHiWsIfVY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzVhMjJkYzJi/ZTY4Mjg2MjFkYTEz/ODg5MjM2ZWFmYzgy/NGQ2MjA5NmExNTRj/ODQ0MTIxZWZhMmFk/YTJkOTBiYy93d3cu/ZGFpbHlkb3QuY29t/Lw",
+            "path": "  \u203a home  \u203a \u2018i just sold my soul to the dealer\u2019: woman can\u2019t afford car. then she agrees to state farm\u2019s drive safe and save tracker"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/2s3didMVPvx402-rnmLRYvWIKITER2UFziRLKMGbdNU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91cGxv/YWRzLmRhaWx5ZG90/LmNvbS8yMDI1LzA0/L3N0YXRlX2Zhcm1f/ZHJpdmVfYW5kX3Nh/dmVfdGlrX3Rvay5w/bmc_YXV0bz1jb21w/cmVzcyZmbT1wbmc",
+            "original": "https://uploads.dailydot.com/2025/04/state_farm_drive_and_save_tik_tok.png?auto=compress&fm=png",
+            "logo": false
+          },
+          "age": "April 5, 2025"
+        },
+        {
+          "title": "How to Save With the State Farm Low-Mileage Discount",
+          "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/state-farm-low-mileage-discount",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Plus, you can usually stack them to maximize your savings. A few more common discounts you may qualify for include: Drive Safe &amp; Save: You can save up to 30% by allowing State Farm to track your driving habits and mileage.",
+          "page_age": "2025-05-15T19:00:00",
+          "profile": {
+            "name": "Compare",
+            "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/state-farm-low-mileage-discount",
+            "long_name": "compare.com",
+            "img": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "compare.com",
+            "hostname": "www.compare.com",
+            "favicon": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v",
+            "path": "  \u203a auto insurance  \u203a cheap car insurance  \u203a discounts  \u203a state farm low-mileage discount"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/dFZNxNJpH2e4pnmHsL3RJHHho3JRyZAk-tc023oxL9Q/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8yOTU1MDgvMTIw/MHg5MDAvNmM0NGI5/MmVkMy93b21hbi1s/YXB0b3AtaGVyby5q/cGc",
+            "original": "https://a.storyblok.com/f/295508/1200x900/6c44b92ed3/woman-laptop-hero.jpg",
+            "logo": false
+          },
+          "age": "May 15, 2025"
+        },
+        {
+          "title": "Unlock Cheaper Rates: Your Ultimate Guide to State Farm Auto Insurance Discounts | Noble Quote",
+          "url": "https://www.noblequote.com/learning-center/auto-insurance/unlock-cheaper-rates-your-ultimate-guide-to-state-farm-auto-insurance-discounts",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Safer drivers = bigger savings. How much can you save? State Farm advertises up to 30% off\u2014some drivers even report higher savings depending on location and driving behavior. ... Complete the program to qualify for a discount, which can be up to 15% for qualifying drivers.",
+          "page_age": "2025-05-23T03:31:15",
+          "profile": {
+            "name": "Noble Quote",
+            "url": "https://www.noblequote.com/learning-center/auto-insurance/unlock-cheaper-rates-your-ultimate-guide-to-state-farm-auto-insurance-discounts",
+            "long_name": "noblequote.com",
+            "img": "https://imgs.search.brave.com/21pdbNlcd136O6nJ-kdyORIzlji8Tvfs4hJdZ0jqg04/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2I4NjdhOGJm/OWNhMGNhMWEzZWVi/MzIxMzI0ZTBiOGU3/ZjQxNzNjZjYyMmEy/YjFlNTRhMDQzOWFk/MjY3ODlhNy93d3cu/bm9ibGVxdW90ZS5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "noblequote.com",
+            "hostname": "www.noblequote.com",
+            "favicon": "https://imgs.search.brave.com/21pdbNlcd136O6nJ-kdyORIzlji8Tvfs4hJdZ0jqg04/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2I4NjdhOGJm/OWNhMGNhMWEzZWVi/MzIxMzI0ZTBiOGU3/ZjQxNzNjZjYyMmEy/YjFlNTRhMDQzOWFk/MjY3ODlhNy93d3cu/bm9ibGVxdW90ZS5j/b20v",
+            "path": "  \u203a home  \u203a learning center  \u203a auto insurance  \u203a unlock cheaper rates your ultimate guide to state farm auto insurance discounts"
+          },
+          "age": "May 23, 2025"
+        },
+        {
+          "title": "State Farm Car Insurance Pricing in 2025",
+          "url": "https://www.autoinsurance.com/companies/state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Multicar discount: You get up to 20 percent off when insure more than one vehicle with State Farm. Drive Safe &amp; Save discount: Register to track your driving habits and get up to 30 percent off your premium when you exhibit good driving habits.",
+          "page_age": "2025-10-23T17:01:58",
+          "profile": {
+            "name": "AutoInsurance.com",
+            "url": "https://www.autoinsurance.com/companies/state-farm/",
+            "long_name": "autoinsurance.com",
+            "img": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.com",
+            "hostname": "www.autoinsurance.com",
+            "favicon": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v",
+            "path": "  \u203a home  \u203a companies  \u203a state farm car insurance pricing in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/FU3hr37tBh-Ikm7VXGKvyu3MEuYMGVKcUPtJXRnSUP4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYXV0b2luc3Vy/YW5jZS5jb20vYXBw/L3VwbG9hZHMvMjAy/MS8xMi8xNjIxMTQw/My9TY3JlZW4tU2hv/dC0yMDIxLTEyLTAx/LWF0LTkuMzcuNDYt/QU0ucG5n",
+            "original": "https://images.autoinsurance.com/app/uploads/2021/12/16211403/Screen-Shot-2021-12-01-at-9.37.46-AM.png",
+            "logo": false
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "How Does State Farm Drive Safe Discount Work | TikTok",
+          "url": "https://www.tiktok.com/discover/how-does-state-farm-drive-safe-discount-work",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "How the State Farm Drive Safe and Save App Works #statefarm #drivesafeandsave #carinsurance #snapshot ... Add Drive Safe &amp; Save discount to your State Farm policy and start saving now! #safedriver #savingmoney #safetytips #subwaysurfers Drive Safe and Save: State Farm Discount Benefits.",
+          "page_age": "2025-07-28T00:00:00",
+          "profile": {
+            "name": "TikTok",
+            "url": "https://www.tiktok.com/discover/how-does-state-farm-drive-safe-discount-work",
+            "long_name": "tiktok.com",
+            "img": "https://imgs.search.brave.com/bbk0PGWgTH-0aeiLkZm-qGBkpMRb1NbsNLTOsC3kPiQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzc2YmU5MjFh/Y2U1ODE5MDE4Yjdm/ZmViNDMwNmZhMDVm/ZjE4ZjQ0MWI5YjVl/NDI4ZTExZGY4ZWFj/OGM1M2ZkOC93d3cu/dGlrdG9rLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "tiktok.com",
+            "hostname": "www.tiktok.com",
+            "favicon": "https://imgs.search.brave.com/bbk0PGWgTH-0aeiLkZm-qGBkpMRb1NbsNLTOsC3kPiQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzc2YmU5MjFh/Y2U1ODE5MDE4Yjdm/ZmViNDMwNmZhMDVm/ZjE4ZjQ0MWI5YjVl/NDI4ZTExZGY4ZWFj/OGM1M2ZkOC93d3cu/dGlrdG9rLmNvbS8",
+            "path": "  \u203a discover  \u203a how-does-state-farm-drive-safe-discount-work"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/iua10F9kWqBd_cmy9sX9xXG9DVUuC28bYlo7mJOB6SE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9sZjE2/LXRpa3Rvay1jb21t/b24uaWJ5dGVkdG9z/LmNvbS9vYmovdGlr/dG9rLXdlYi1jb21t/b24tc2cvbXRhY3Qv/c3RhdGljL2ltYWdl/cy90aWt0b2stbG9n/by9wb3N0ZXItc3F1/YXJlLnBuZw",
+            "original": "https://lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/mtact/static/images/tiktok-logo/poster-square.png",
+            "logo": true
+          },
+          "age": "July 28, 2025"
+        },
+        {
+          "title": "How to Get a Safe Driver Discount | Compare.com",
+          "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/safe-driver-discount",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Nationwide offers two ways to save money as a safe driver. You can qualify for a more affordable car insurance rate if you don\u2019t get into any accidents or have any tickets for at least five years. To save even more, you can sign up for the company\u2019s SmartRide program, which uses a mobile app or telematics device to measure miles driven, hard braking and acceleration, idle time, and nighttime driving. ... State Farm offers a good driver discount for new customers who\u2019ve gone three years or more without moving violations or at-fault accidents.",
+          "page_age": "2024-12-02T19:00:00",
+          "profile": {
+            "name": "Compare",
+            "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/safe-driver-discount",
+            "long_name": "compare.com",
+            "img": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "compare.com",
+            "hostname": "www.compare.com",
+            "favicon": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v",
+            "path": "  \u203a auto insurance  \u203a cheap car insurance  \u203a discounts  \u203a safe driver discount"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/JCkGyRrEO0pydGjwp0QTyqDgQbqQJAm9JD7KTiQhbH8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8yOTU1MDgvODAw/eDYwMC9iYmFhOWYw/NmMxL3dvbWFuLWJ1/Y2tsaW5nLXNlYXRi/ZWx0LmpwZw",
+            "original": "https://a.storyblok.com/f/295508/800x600/bbaa9f06c1/woman-buckling-seatbelt.jpg",
+            "logo": false
+          },
+          "age": "December 2, 2024"
+        },
+        {
+          "title": "State Farm Insurance Review & Ratings | FreeAdvice",
+          "url": "https://www.freeadvice.com/insurance/state-farm-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Some of the company\u2019s most popular discounts include: ... If you\u2019re a safe driver, State Farm Drive Safe and Save, the company\u2019s usage-based car insurance, could save you up to 30% on your State Farm car insurance rates.",
+          "page_age": "2025-08-18T19:24:56",
+          "profile": {
+            "name": "FreeAdvice",
+            "url": "https://www.freeadvice.com/insurance/state-farm-insurance/",
+            "long_name": "freeadvice.com",
+            "img": "https://imgs.search.brave.com/zEolwdKnj7qMwLKZ1CZ_H4bwiQdYATaTCLc9MOMi4AI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWQ4ZTk1YjM4/ZDZlODhhOGE1MzA1/YWM3NjVhOWFjZTU0/ZGEwYTM3NDU4MDc2/NmNjMzBiZGY4YTJh/YWE4ZjY0YS93d3cu/ZnJlZWFkdmljZS5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "freeadvice.com",
+            "hostname": "www.freeadvice.com",
+            "favicon": "https://imgs.search.brave.com/zEolwdKnj7qMwLKZ1CZ_H4bwiQdYATaTCLc9MOMi4AI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWQ4ZTk1YjM4/ZDZlODhhOGE1MzA1/YWM3NjVhOWFjZTU0/ZGEwYTM3NDU4MDc2/NmNjMzBiZGY4YTJh/YWE4ZjY0YS93d3cu/ZnJlZWFkdmljZS5j/b20v",
+            "path": "  \u203a home  \u203a companies"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/rfbp7lEtYxW0pLjfBVqjVDfaNrYpohD1TQZBsH7B1E8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vZGF2djF6d2Jv/L2ltYWdlL3VwbG9h/ZC92MTc0OTYxNjEy/MC9lc2x1cW12Ymhk/MmZkMXNhYm1wdi5w/bmc",
+            "original": "https://res.cloudinary.com/davv1zwbo/image/upload/v1749616120/esluqmvbhd2fd1sabmpv.png",
+            "logo": false
+          },
+          "age": "August 18, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

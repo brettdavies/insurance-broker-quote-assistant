@@ -1,0 +1,803 @@
+{
+  "websearch_id": "websearch_yxig6dwct9nw03g86rheqj6t",
+  "search_id": "search_dmypp9wopv8sjwhe560q37en",
+  "timestamp": "2025-11-07T12:34:50.550160",
+  "startedAt": "2025-11-07T12:34:50.550160",
+  "completedAt": "2025-11-07T12:34:52.447658",
+  "durationSeconds": 1.9,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:investopedia.com insurance types coverage",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:investopedia.com insurance types coverage",
+      "show_strict_warning": false,
+      "cleaned": "insurance types coverage",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "insurance types coverage",
+        "sites": [
+          "investopedia.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Insurance Coverage Types Explained: Auto, Life, and Homeowner\u2019s",
+          "url": "https://www.investopedia.com/terms/i/insurance-coverage.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Insurance coverage protects individuals or entities from financial risk and liability through various insurance services. Common types of insurance coverage include auto insurance, life insurance, and homeowner&#x27;s insurance, each serving different ...",
+          "page_age": "2025-08-21T20:34:11",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/i/insurance-coverage.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a i  \u203a insurance-coverage.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/3wwBqXuW4yaE6ieNADwMntu6EMS-6_q3ujUu7_pmD-U/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iLzZE/enlfNzZ3cGdDbUxJ/SmNiYTdkM1dENUxD/Zz0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0luc3VyYW5jZUNv/dmVyYWdlTWFqb3JU/eXBlc2FuZEhvd1Ro/ZXlXb3JrLTlhZTIx/MTY1YjIwYTRmYTA5/M2I1ZGNlOGZkNjA2/MTMxLmpwZw",
+            "original": "https://www.investopedia.com/thmb/6Dzy_76wpgCmLIJcba7d3WD5LCg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/InsuranceCoverageMajorTypesandHowTheyWork-9ae21165b20a4fa093b5dce8fd606131.jpg",
+            "logo": false
+          },
+          "age": "August 21, 2025"
+        },
+        {
+          "title": "What Is Insurance?",
+          "url": "https://www.investopedia.com/terms/i/insurance.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "There are also insurance policies available for very specific needs. Such coverage includes business closures due to civil authority, kidnap, ransom, and extortion (K&amp;R) insurance, identity theft insurance, and wedding liability and cancellation insurance.",
+          "page_age": "2025-08-07T21:19:34",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/i/insurance.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a i  \u203a insurance.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/4SazIOWAVT1eEwM0C24BXAXmNdHPealq0TFXUXX0eWM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL3Iw/RzhkQ0p4b1VWNXJz/YVRFdVI4bVVVeW1k/ST0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L3Rlcm1zX2lfaW5z/dXJhbmNlX0ZJTkFM/Xy0zNTU2MzkzYjNi/YmY0ODNlOWJjOGFk/OWI3MDc2NDFlNC5q/cGc",
+            "original": "https://www.investopedia.com/thmb/r0G8dCJxoUV5rsaTEuR8mUUymdI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/terms_i_insurance_FINAL_-3556393b3bbf483e9bc8ad9b707641e4.jpg",
+            "logo": false
+          },
+          "age": "August 7, 2025"
+        },
+        {
+          "title": "How the 6 Types of Car Insurance Coverage Can Affect Your Wallet",
+          "url": "https://www.investopedia.com/types-of-car-insurance-11680793",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Collision and comprehensive coverage will reimburse you for damage to your car. These policies may be required if you borrow money to pay for your car. The deductible is the maximum amount you&#x27;ll pay in a covered accident before your collision or comprehensive policy kicks in. The higher your deductible, the lower your premiums. Almost every state requires this type of insurance coverage for the drivers in their state.",
+          "page_age": "2025-04-07T16:12:59",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/types-of-car-insurance-11680793",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a types-of-car-insurance-11680793"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/hS8A4c58JiYRicz-SN2Jfhkf79MLGRgCGQDxfFOgLhI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL0lh/WGlsYWlUaDIwbEdN/T1VDS2dKVW9KXy02/Zz0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L2J1eWluZ19jYXJf/MS01NmExMDMzZTNk/Zjc4Y2FmZGFhN2My/YzkuanBn",
+            "original": "https://www.investopedia.com/thmb/IaXilaiTh20lGMOUCKgJUoJ_-6g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/buying_car_1-56a1033e3df78cafdaa7c2c9.jpg",
+            "logo": false
+          },
+          "age": "April 7, 2025"
+        },
+        {
+          "title": "Understanding Commercial Health Insurance: Types, Definitions, Examples",
+          "url": "https://www.investopedia.com/terms/c/commercial-health-insurance.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Obamacare (more formally known as the Affordable Care Act) is a federal law that made it possible for individuals to obtain health insurance coverage through state health exchanges or marketplaces. These plans are offered and run by private companies, so technically they are commercial insurance\u2014though they do have to follow some federally mandated guidelines. Common types of commercial health insurance include HMOs, PPOs, and POS (point-of-service) plans.",
+          "page_age": "2025-08-24T16:51:06",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/c/commercial-health-insurance.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a c  \u203a commercial-health-insurance.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/nMVyq4mqGof9xMaI533WYGsC6x-7WGaTOgHgQWPxnR8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL0hE/VTFrUkp4bExYWWVF/ZWJwZkFzNTVsUnNK/OD0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0dldHR5SW1hZ2Vz/LTEzNzAzMjEyMzMt/OTVhMjg0Mjc0MzY0/NDc2ODk3ODZhNzQ0/NWVkMDM1OTIuanBn",
+            "original": "https://www.investopedia.com/thmb/HDU1kRJxlLXYeEebpfAs55lRsJ8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1370321233-95a28427436447689786a7445ed03592.jpg",
+            "logo": false
+          },
+          "age": "August 24, 2025"
+        },
+        {
+          "title": "Complete Guide to Liability Insurance: Definition, Types, and Function",
+          "url": "https://www.investopedia.com/terms/l/liability_insurance.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Various types, including personal and business liability insurance, cover individuals and companies against different risks and potential lawsuits. Umbrella insurance provides additional coverage beyond standard home, auto, and watercraft policies, ...",
+          "page_age": "2025-08-03T21:45:16",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/l/liability_insurance.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a l  \u203a liability_insurance.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/1uRKPdqWxUvV8nd_7pkg9srZQhc99mdXHpTlF5C67xs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL3Jl/ZjFnUXE3Q054eEts/NFNfMkJkYVdJSGt1/MD0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L2xpYWJpbGl0eV9p/bnN1cmFuY2UuYXNw/LWZpbmFsLTUwNDc2/MjNlODg0MzQ0NTVh/NjI3YWFiZTlhYjJi/YmEwLnBuZw",
+            "original": "https://www.investopedia.com/thmb/ref1gQq7CNxxKl4S_2BdaWIHku0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/liability_insurance.asp-final-5047623e88434455a627aabe9ab2bba0.png",
+            "logo": false
+          },
+          "age": "August 3, 2025"
+        },
+        {
+          "title": "Life Insurance: What It Is, How It Works, and How to Buy a Policy",
+          "url": "https://www.investopedia.com/terms/l/lifeinsurance.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "There are two main types of life insurance: term life insurance, which provides coverage for a specific period, and permanent life insurance, which covers you for your entire life and often comes with a savings or investment component.",
+          "page_age": "2025-09-04T15:58:23",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/l/lifeinsurance.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a l  \u203a lifeinsurance.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/5ioEQoo-Du2KAhaqPpqiNfGa1TnDIQhBsf-l1BZXftc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL0VT/QlhWc3BTZmFLekZD/QzloZVZxUkdIUzVK/Zz0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0xpZmUtSW5zdXJh/bmNlLWE4YWVlOGUz/MDI0MTQ1YThiNDU0/ZWExOWRmMDMwNDE4/LnBuZw",
+            "original": "https://www.investopedia.com/thmb/ESBXVspSfaKzFCC9heVqRGHS5Jg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Life-Insurance-a8aee8e3024145a8b454ea19df030418.png",
+            "logo": false
+          },
+          "age": "September 4, 2025"
+        },
+        {
+          "title": "Property Insurance: Definition and How Coverage Works",
+          "url": "https://www.investopedia.com/terms/p/property-insurance.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Property insurance refers to a series of policies that offer property protection, including structural damage, theft of personal belongings, and liability coverage. Property insurance can include homeowners insurance, renters insurance, flood insurance, and earthquake insurance. The three types of ...",
+          "page_age": "2025-08-19T18:19:13",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/p/property-insurance.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a p  \u203a property-insurance.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/vmyGfWcvmm3fkXdxIgA3zniFVzCdQKdmdr4s-vEI09Q/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iLzBn/dFVKdlpHckpmTDJf/bzI3R2ZOUFNqWnRi/TT0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L1Byb3BlcnR5SW5z/dXJhbmNlLWZpbmFs/LTczNjhhYjhmOWY3/MDRiNWE5MmUxMzFk/ZGYyZTUzMzdhLnBu/Zw",
+            "original": "https://www.investopedia.com/thmb/0gtUJvZGrJfL2_o27GfNPSjZtbM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/PropertyInsurance-final-7368ab8f9f704b5a92e131ddf2e5337a.png",
+            "logo": false
+          },
+          "age": "August 19, 2025"
+        },
+        {
+          "title": "Types of Life Insurance Plans and How to Decide Which One Is Right for You",
+          "url": "https://www.investopedia.com/types-of-life-insurance-plans-and-how-to-decide-which-one-is-right-for-you-7482251",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "There are four types of life insurance plans: whole life, universal life, variable universal life, and final expense insurance. Many plans involve choices to fit your circumstances, such as how long you want the coverage to last, whether you ...",
+          "page_age": "2025-04-15T15:37:48",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/types-of-life-insurance-plans-and-how-to-decide-which-one-is-right-for-you-7482251",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a types-of-life-insurance-plans-and-how-to-decide-which-one-is-right-for-you-7482251"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ftTJhPC8mDUGKwVwy3aq4ItFxA3Y7igHBoice8tiQmE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iLzVk/Zkc5U2F3YmdBT3Bn/RVVzaXFXcE1LQ2d0/WT0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0lOVi1TUE9UTElH/SFQtTElGRUlOU1VS/QU5DRS0wMi1SRUNJ/UkMtVHlwZXMtb2Yt/TGlmZS1JbnN1cmFu/Y2UtUGxhbnMtYW5k/LUhvdy10by1EZWNp/ZGUtV2hpY2gtT25l/LUlzLVJpZ2h0LWZv/ci1Zb3UtMS1GSU5B/TC0xLTZlZTRlYmY0/ZGU0YTQyMWJhNDU0/ZmRhYTAyMDUxMjc1/LnBuZw",
+            "original": "https://www.investopedia.com/thmb/5dfG9SawbgAOpgEUsiqWpMKCgtY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/INV-SPOTLIGHT-LIFEINSURANCE-02-RECIRC-Types-of-Life-Insurance-Plans-and-How-to-Decide-Which-One-Is-Right-for-You-1-FINAL-1-6ee4ebf4de4a421ba454fdaa02051275.png",
+            "logo": false
+          },
+          "age": "April 15, 2025"
+        },
+        {
+          "title": "Understanding Commercial Insurance: Protect Your Business",
+          "url": "https://www.investopedia.com/terms/b/business-insurance.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "By securing the right coverage, businesses can mitigate potential losses and maintain operational stability even when the unexpected occurs. Commercial insurance safeguards businesses from financial losses due to unexpected events like lawsuits, natural disasters, or accidents. Different types of commercial insurance include general liability, property insurance, professional liability, and business interruption insurance.",
+          "page_age": "2025-09-07T14:18:26",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/b/business-insurance.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a b  \u203a business-insurance.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Euwhxdgtcop44MNNw2JJ3ajUub_ZzWzRpmKT0WqOw2c/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL2hM/NHRtNm85SkNiWjJU/dHFaOWI4ZGF2Tldv/dz0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0JVU0lORVNTLUlO/U1VSQU5DRS1GSU5B/TC04ZjYxOGFkNjk0/NzE0ZDIyYTI0ZGRh/NWU5Y2M1YTIzYy5q/cGc",
+            "original": "https://www.investopedia.com/thmb/hL4tm6o9JCbZ2TtqZ9b8davNWow=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/BUSINESS-INSURANCE-FINAL-8f618ad694714d22a24dda5e9cc5a23c.jpg",
+            "logo": false
+          },
+          "age": "September 7, 2025"
+        },
+        {
+          "title": "What Is All Risk Insurance, and What Does (and Doesn't) It Cover?",
+          "url": "https://www.investopedia.com/terms/a/all-risks.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Because of its comprehensive coverage, ... usually offer two types of property coverage for homeowners and businesses: named perils and &quot;all risks.&quot;...",
+          "page_age": "2025-08-29T20:22:19",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/a/all-risks.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a a  \u203a all-risks.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/mwVESp9Rc6if0wowh7Fpc3iOjq1vg59ZOZSnc9Zzrkc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL3hq/VUVFaUtsSnJvdlZL/ZURPLUlPM19YaU11/WT0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0dldHR5SW1hZ2Vz/LTUwOTUzNTY1NC0x/YzZjY2IxM2FkZDg0/OGUxODRiMjY0ODdh/NjAxMmE2Ni5qcGc",
+            "original": "https://www.investopedia.com/thmb/xjUEEiKlJrovVKeDO-IO3_XiMuY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-509535654-1c6ccb13add848e184b26487a6012a66.jpg",
+            "logo": false
+          },
+          "age": "August 29, 2025"
+        },
+        {
+          "title": "Understanding Insurance Premiums: Definitions, Calculations, and Types",
+          "url": "https://www.investopedia.com/terms/i/insurance-premium.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Premiums are required for health, auto, home, and life insurance policies, among others. Understanding how these premiums are calculated, based on factors like coverage type and personal risk factors, can help you make informed insurance decisions and potentially save on costs.",
+          "page_age": "2025-08-22T16:23:35",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/i/insurance-premium.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a i  \u203a insurance-premium.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/rXx68E8tWOtyN1aeSoNHA3TrcwcxrEetZ1XmIX9JkWY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL2dl/UDVfMzRTU2FNMTVJ/UmVnUmhwenYyRUlu/TT0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0luc3VyYW5jZVBy/ZW1pdW1fRmluYWxf/NDE5NDUzOS00OWM1/ZGYyNmZiYTc0NmIw/YjlkMTZkZTZlMzAy/ZmRmNS5qcGc",
+            "original": "https://www.investopedia.com/thmb/geP5_34SSaM15IRegRhpzv2EInM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/InsurancePremium_Final_4194539-49c5df26fba746b0b9d16de6e302fdf5.jpg",
+            "logo": false
+          },
+          "age": "August 22, 2025"
+        },
+        {
+          "title": "Comprehensive Car Insurance: What It Covers and When to Buy",
+          "url": "https://www.investopedia.com/terms/c/comprehensive-insurance.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Learn what comprehensive car insurance covers, including fire, theft, and natural disasters. Discover when it&#x27;s worth buying and how it complements collision coverage.",
+          "page_age": "2025-05-04T02:40:14",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/c/comprehensive-insurance.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a c  \u203a comprehensive-insurance.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/rgxVTT3kmg-oT6e1V2e_KKQ3DKh_rui_4IoczlJKzsI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL0Qz/RU05a3dWVDdPaU16/Zmd6UmVlMzdkZFZi/ST0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L2NvbXByZWhlbnNp/dmUtaW5zdXJhbmNl/LmFzcC1maW5hbC0z/ZmM4MWUwNzlkMDQ0/MjhlOGMxYzY0NTZi/MzExYzNhMS5wbmc",
+            "original": "https://www.investopedia.com/thmb/D3EM9kwVT7OiMzfgzRee37ddVbI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/comprehensive-insurance.asp-final-3fc81e079d04428e8c1c6456b311c3a1.png",
+            "logo": false
+          },
+          "age": "May 4, 2025"
+        },
+        {
+          "title": "Term Life Insurance: What It Is, Different Types, Pros and Cons",
+          "url": "https://www.investopedia.com/terms/t/termlife.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Level-premium insurance has a fixed monthly payment for the life of the policy. Most term life insurance has a level premium, and it\u2019s the type we\u2019ve been referring to in most of this article. As we mentioned before, this type of policy generally provides coverage for a period ranging from ...",
+          "page_age": "2024-11-26T16:54:33",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/t/termlife.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a t  \u203a termlife.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/_cZLWjrTKkrmEDWpt2cjBeNt_08sp6jAhNNli4nkKmE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL0h3/a2dobE52cnNjcWh2/MDUtcS1mN29KOUt1/VT0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0ludmVzdG9wZWRp/YS10ZXJtcy10ZXJt/bGlmZS02NDUxZmRl/OTI3NDc0ZDRmOGE4/MWE1NjgxZWZkMzkz/Zi5qcGc",
+            "original": "https://www.investopedia.com/thmb/HwkghlNvrscqhv05-q-f7oJ9KuU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Investopedia-terms-termlife-6451fde927474d4f8a81a5681efd393f.jpg",
+            "logo": false
+          },
+          "age": "November 26, 2024"
+        },
+        {
+          "title": "World Insurance: What It is, How It Works, Types",
+          "url": "https://www.investopedia.com/terms/w/world-insurance.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "World insurance provides commercial liability coverage in the event the policyholder is sued anywhere in the world, subject to some restrictions. It is common for companies with global operations or who have contracts with international partners or associates to purchase world coverage. Some common types of world insurance include foreign commercial general liability, foreign business auto, foreign voluntary workers\u2019 compensation, and foreign travel accident and sickness insurance.",
+          "page_age": "2025-04-23T11:00:14",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/w/world-insurance.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a w  \u203a world-insurance.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/cMAB2hkmVgtDmhWvZmU9tcPjVJXU8PRqtelWd0fQ4ZU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL25m/eldtX0o5ekx2a09s/YmtqZ1FZYlRldHdZ/cz0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L3dvcmxkLWluc3Vy/YW5jZS1lZGl0LTQ3/NmVlZGM1MDlmYjQ5/MGU5N2ZmNmI4YmVk/ZjM4YzY4LmpwZw",
+            "original": "https://www.investopedia.com/thmb/nfzWm_J9zLvkOlbkjgQYbTetwYs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/world-insurance-edit-476eedc509fb490e97ff6b8bedf38c68.jpg",
+            "logo": false
+          },
+          "age": "April 23, 2025"
+        },
+        {
+          "title": "Group Life Insurance Explained: Types, Benefits, and Drawbacks",
+          "url": "https://www.investopedia.com/terms/g/group-life-insurance.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Most group policies are term life ... to whole life insurance, which provides coverage no matter when you die. Whole life insurance policies are permanent, have higher premiums and death benefits, and constitute the most popular type of life insurance....",
+          "page_age": "2025-08-30T00:06:55",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/g/group-life-insurance.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a g  \u203a group-life-insurance.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/IXsbQ7DdU8Udw2dkbXZUuAaZvZkdIO3reIfPhJjrGRk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL0JC/Wk9YRlVDS2NOczJF/ako4QmF5cVJKcVRQ/QT0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L2dyb3VwLWxpZmUt/aW5zdXJhbmNlLmFz/cC1maW5hbC0yMjBk/NTgxMDZlOWQ0YzQy/YWM5MzU4MWQ5YjNi/OGEwYi5wbmc",
+            "original": "https://www.investopedia.com/thmb/BBZOXFUCKcNs2EjJ8BayqRJqTPA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/group-life-insurance.asp-final-220d58106e9d4c42ac93581d9b3b8a0b.png",
+            "logo": false
+          },
+          "age": "August 30, 2025"
+        },
+        {
+          "title": "Third-Party Liability Insurance Types",
+          "url": "https://www.investopedia.com/terms/t/third-party-insurance.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "This insurance covers all major product classes and types, including chemicals, agricultural products, and recreational equipment. It protects companies against lawsuits over products or components that cause damage or injury. Third-party liability insurance offers the policyholder coverage for their financial obligation due to injury or damage they have caused another person or business.",
+          "page_age": "2025-07-14T07:23:17",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/t/third-party-insurance.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a t  \u203a third-party-insurance.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/T3inLzL-sihpCKA6PCRg7a-Ym7iRv8gUhBNGzPpOrv8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL3Rs/YzU5ei1ERk4yLV9E/dU5DRHdwSXdMSUQt/UT0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L3RoaXJkLXBhcnR5/LWluc3VyYW5jZS5h/c3AtZmluYWwtYjcz/NDA1ODlmNjkyNDUz/M2I5MjIxMDZkNDZi/ZDZiYTYuanBn",
+            "original": "https://www.investopedia.com/thmb/tlc59z-DFN2-_DuNCDwpIwLID-Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/third-party-insurance.asp-final-b7340589f6924533b922106d46bd6ba6.jpg",
+            "logo": false
+          },
+          "age": "July 14, 2025"
+        },
+        {
+          "title": "How to Choose Life Insurance",
+          "url": "https://www.investopedia.com/how-to-choose-life-insurance-7483886",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "To choose a life insurance policy, you need to first identify which type of life insurance you need. There are two general types to consider: term and permanent. Term life insurance provides temporary coverage for a fixed period of time, typically ...",
+          "page_age": "2025-01-22T17:36:43",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/how-to-choose-life-insurance-7483886",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a how-to-choose-life-insurance-7483886"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/U-2Fypw9JFgJXAq-IWWp3HKLbcytcL34HxBCkFmmg5w/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL01m/NTVQaFlhSmdvY09P/bTRLUy0zYnRudDRo/cz0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L1ByaW1hcnktSW1h/Z2UtaG93LXRvLWNo/b29zZS1saWZlLWlu/c3VyYW5jZS03NDgz/ODg2LThkYTZjMjU5/NmQ1MzRmY2RiY2E2/MDQ1N2RhYTM4OWMw/LmpwZw",
+            "original": "https://www.investopedia.com/thmb/Mf55PhYaJgocOOm4KS-3btnt4hs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Primary-Image-how-to-choose-life-insurance-7483886-8da6c2596d534fcdbca60457daa389c0.jpg",
+            "logo": false
+          },
+          "age": "January 22, 2025"
+        },
+        {
+          "title": "Permanent Life Insurance: Definition, Types, and How It's Different From Term Life",
+          "url": "https://www.investopedia.com/terms/p/permanentlife.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Permanent life insurance refers to coverage that never expires (unlike term life insurance). Most permanent life insurance combines a death benefit with a savings component. Whole life and universal life insurance are two primary types of permanent ...",
+          "page_age": "2025-04-27T05:50:18",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/p/permanentlife.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a p  \u203a permanentlife.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/OILSYE8-hW263XczcqMj7ynIGp3Z8WYWcXlZ992sup8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL3Nu/YnU3UFkzNE1YVHpw/Y3dlYW5VTU5KakFu/cz0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L3Blcm1hbmVudGxp/ZmVpbnN1cmFuY2Ut/Y2JhYWIyMTZjNTUx/NDI5OWE4OTBlNzk1/MzI1NTU2ZmYuanBn",
+            "original": "https://www.investopedia.com/thmb/snbu7PY34MXTzpcweanUMNJjAns=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/permanentlifeinsurance-cbaab216c5514299a890e795325556ff.jpg",
+            "logo": false
+          },
+          "age": "April 27, 2025"
+        },
+        {
+          "title": "Term vs. Whole Life Insurance: What's the Difference?",
+          "url": "https://www.investopedia.com/term-life-vs-whole-life-5075430",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Term life and whole life are two of the most common types of life insurance policies\u2014providing a tax-free payout to your loved ones if you die. Term life insurance is simpler and cheaper, and may be suitable if you mainly need income replacement ...",
+          "page_age": "2025-02-27T20:33:03",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/term-life-vs-whole-life-5075430",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a term-life-vs-whole-life-5075430"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/DzDpo-6RifUrf1hBWchJ82gRU6HebCNtxi0XrigGuFI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL0R5/U3cyNUVhQ1E1Y0tm/dVVycnk1ZFd2cUFh/ST0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L2RvdGRhc2gtdGVy/bS1saWZlLXZzLXdo/b2xlLWxpZmUtNTA3/NTQzMC1GaW5hbC02/MGZiNGU4ZjdiYWU0/M2UwYTY1YTNmYWMy/NDMxNDc5Yy5qcGc",
+            "original": "https://www.investopedia.com/thmb/DySw25EaCQ5cKfuUrry5dWvqAaI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/dotdash-term-life-vs-whole-life-5075430-Final-60fb4e8f7bae43e0a65a3fac2431479c.jpg",
+            "logo": false
+          },
+          "age": "February 27, 2025"
+        },
+        {
+          "title": "Comprehensive Guide to Travel Insurance: What It Covers and Why You Need It",
+          "url": "https://www.investopedia.com/terms/t/travel-insurance.asp",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "It may exclude coverage of bicycles, hearing aids or other medical devices, keys, and tickets, or seizure by a government or customs official. Pre-existing conditions may not be covered by travel medical insurance, or may only be covered if you buy a travel insurance plan within one to two weeks of booking your trip. Comprehensive travel insurance includes many types of coverage listed below, bundled into one plan.",
+          "page_age": "2025-04-24T06:20:13",
+          "profile": {
+            "name": "Investopedia",
+            "url": "https://www.investopedia.com/terms/t/travel-insurance.asp",
+            "long_name": "investopedia.com",
+            "img": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "investopedia.com",
+            "hostname": "www.investopedia.com",
+            "favicon": "https://imgs.search.brave.com/vH1WzGlQMPqNEsgPv95DT5wzmy058riqrNA0jrAKzsQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+            "path": "\u203a terms  \u203a t  \u203a travel-insurance.asp"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/aFotxLO-P6CTX7dL6wxlWyLBgg6klQ7O3rfrguYIR78/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL3Nw/eXZJNW92ZUNsRmpv/UVpIX3pXdGs3VWZL/OD0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L3RyYXZlbGluc3Vy/YW5jZS1jYjUwYTRl/ODkyMzQ0ZDI5YTU4/NTc4ZTlkMjE3ODY4/NS5qcGc",
+            "original": "https://www.investopedia.com/thmb/spyvI5oveClFjoQZH_zWtk7UfK8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/travelinsurance-cb50a4e892344d29a58578e9d2178685.jpg",
+            "logo": false
+          },
+          "age": "April 24, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

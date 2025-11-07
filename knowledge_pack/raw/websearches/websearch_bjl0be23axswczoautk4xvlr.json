@@ -1,0 +1,803 @@
+{
+  "websearch_id": "websearch_bjl0be23axswczoautk4xvlr",
+  "search_id": "search_tmhtsn7jcjgbutehjpzpg0e3",
+  "timestamp": "2025-11-07T12:24:07.925930",
+  "startedAt": "2025-11-07T12:24:07.925930",
+  "completedAt": "2025-11-07T12:24:09.724210",
+  "durationSeconds": 1.8,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:progressive.com bundle discount",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:progressive.com bundle discount",
+      "show_strict_warning": false,
+      "cleaned": "bundle discount",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "bundle discount",
+        "sites": [
+          "progressive.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Benefits of Bundling Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/benefits-of-bundling-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "However, the term can also apply to buying two or more of any type of insurance policy from the same company. Many insurers offer a discount to customers who buy more than one policy.",
+          "page_age": "2025-01-21T18:15:46",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/benefits-of-bundling-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a general insurance topics  \u203a should i bundle home and auto insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GdwbouY_cxSXP5vVCIgsQqruv_TtOmVy_51CJprTGTg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvc2hh/cmUtb3BlbmdyYXBo/LTEyMDAucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/share-opengraph-1200.png",
+            "logo": false
+          },
+          "age": "January 21, 2025"
+        },
+        {
+          "title": "What Is an Insurance Premium? | Progressive",
+          "url": "https://www.progressive.com/answers/insurance-premium/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Bundling: Many insurers offer a bundle discount for buying vehicle and property insurance together, such as home and auto.",
+          "page_age": "2025-07-17T17:22:46",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/insurance-premium/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a general insurance topics  \u203a what is an insurance premium?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GdwbouY_cxSXP5vVCIgsQqruv_TtOmVy_51CJprTGTg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvc2hh/cmUtb3BlbmdyYXBo/LTEyMDAucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/share-opengraph-1200.png",
+            "logo": false
+          },
+          "age": "July 17, 2025"
+        },
+        {
+          "title": "How Much Is Car Insurance? | Progressive",
+          "url": "https://www.progressive.com/answers/average-car-insurance-cost/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If you have zero gaps or cancellations in your insurance history, you&#x27;ll typically get a lower car insurance rate. At Progressive, we offer a Continuous Insurance Discount.\u00a7 That means we&#x27;ll honor the amount of time you&#x27;ve been with us or your previous insurance company. One of the easiest ways to save is to bundle your home and auto insurance with one company.",
+          "page_age": "2025-08-28T19:08:53",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/average-car-insurance-cost/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a car insurance information  \u203a how much is car insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/IkERJBru2M7QmxSoEC84hAscDwoWrJoIsCVGV-HEPbk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGU5ZjgyODA3/YjY2N2YzYTcvNjBl/NjBhNjkyZWI3N2Qy/MDBmYWNhMDIwL2F2/ZXJhZ2UtY2FyLWlu/c3VyYW5jZS1jb3N0/LnBuZw",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blte9f82807b667f3a7/60e60a692eb77d200faca020/average-car-insurance-cost.png",
+            "logo": false
+          },
+          "age": "August 28, 2025"
+        },
+        {
+          "title": "Utah Car Insurance: Get a Quote | Progressive",
+          "url": "https://www.progressive.com/answers/utah-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "One way to get cheap car insurance in Utah is to combine your auto and home policies with Progressive \u2014 new customers who save bundling home and auto insurance save over 25% on average nationwide.\u2020",
+          "page_age": "2025-03-17T19:17:39",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/utah-car-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a utah car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/dtjd_AQ4OO3FpKK65x2uVjcEjtiMDoUHGEL0o4nfcc8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDBkMDc0YmFh/NGU1OTc0MDUvNjY2/OWQwNDAzNzFiY2Fj/NmY0YjhkNWUwL2F1/dG9fVXRhaF9vcGVu/LWdyYXBoLnBuZw",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt0d074baa4e597405/6669d040371bcac6f4b8d5e0/auto_Utah_open-graph.png",
+            "logo": false
+          },
+          "age": "March 17, 2025"
+        },
+        {
+          "title": "Connecticut RV Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/connecticut-rv-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "From New Haven to Norwalk, bundle and save with Progressive. Earn a multi-policy discount when you combine RV insurance with auto, homeowners, renters, boat, or motorcycle.",
+          "page_age": "2025-03-24T18:12:13",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/connecticut-rv-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a connecticut rv insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GzIYoBeU6RNtZQ1ugsQqMmKb7op8g3yUr1o2dd78YjI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDg1ZGVjOTQz/MDEyMDQyZDEvNjZk/YjE2ZmJmMDhiZmM2/ZDZhMjMwODgzL3J2/X2Nvbm5lY3RpY3V0/X29wZW4tZ3JhcGgu/cG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt85dec943012042d1/66db16fbf08bfc6d6a230883/rv_connecticut_open-graph.png",
+            "logo": false
+          },
+          "age": "March 24, 2025"
+        },
+        {
+          "title": "Maine RV Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/maine-rv-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Mainers can bundle and save with Progressive. Earn a multi-policy discount when you combine RV insurance with auto, homeowners, renters, boat, or motorcycle.",
+          "page_age": "2025-06-09T21:26:13",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/maine-rv-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a maine rv insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Ys_zb7N8QePN8OCWjdWgXy-ry-yIbaDzygqWcDcSx7o/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGE0MDdmOWEw/OGY5MzM2NTUvNjZm/ZWJlZDMwYTA2OWJk/MjcyOGIyYWU5L3J2/X21haW5lX29wZW4t/Z3JhcGgucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blta407f9a08f933655/66febed30a069bd2728b2ae9/rv_maine_open-graph.png",
+            "logo": false
+          },
+          "age": "June 9, 2025"
+        },
+        {
+          "title": "Florida Car Insurance: Get a Quote | Progressive",
+          "url": "https://www.progressive.com/answers/florida-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "See all our auto insurance discounts. ... Save when you bundle!",
+          "page_age": "2025-03-17T16:38:33",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/florida-car-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a florida car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "March 17, 2025"
+        },
+        {
+          "title": "Washington RV Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/washington-rv-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Washingtonians can bundle and save with Progressive. Earn a multi-policy discount when you combine RV insurance with auto, homeowners, renters, boat, or motorcycle.",
+          "page_age": "2025-08-06T19:13:50",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/washington-rv-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a washington rv insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/O_N77YcT44A9XvgEf30dl2mSsGve8XfjSSiD4yWKriE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDE3ZDEyMzFj/OGJlNTk3NWMvNjc0/YTI3YTc4ZTNkMDNh/N2NiMWM2MGQ3L3J2/X3dhc2hpbmd0b25f/b3Blbi1ncmFwaC5w/bmc",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt17d1231c8be5975c/674a27a78e3d03a7cb1c60d7/rv_washington_open-graph.png",
+            "logo": false
+          },
+          "age": "August 6, 2025"
+        },
+        {
+          "title": "North Dakota RV Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/north-dakota-rv-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "North Dakotans can bundle and save with Progressive. Earn a multi-policy discount when you combine RV insurance with auto, homeowners, renters, boat, or motorcycle.",
+          "page_age": "2025-07-01T18:33:47",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/north-dakota-rv-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a north dakota rv insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ds352lrPTkY4N0O4PxipMv454lLHCzQO1jJD8ff5rC8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGRjZjhkMDVm/NmQ4MWNiYmYvNjcy/ZTI1NzY4NmRkZDIz/NzNmMjRjNDA4L25v/cnRoLWRha290YS1y/di1pbnN1cmFuY2Vf/b3Blbi1ncmFwaC5w/bmc",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltdcf8d05f6d81cbbf/672e257686ddd2373f24c408/north-dakota-rv-insurance_open-graph.png",
+            "logo": false
+          },
+          "age": "July 1, 2025"
+        },
+        {
+          "title": "Oregon Car Insurance: Get a Quote | Progressive",
+          "url": "https://www.progressive.com/answers/oregon-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "See all our auto insurance discounts. ... Save when you bundle!",
+          "page_age": "2025-03-17T16:42:10",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/oregon-car-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a oregon car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "March 17, 2025"
+        },
+        {
+          "title": "Opening the Door to Homeownership | Progressive",
+          "url": "https://www.progressive.com/about/purpose/homeownership/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Bundle and save an average of 5% on auto!\u0394 \u00b7 Auto + Home \ue026, Selected \u00b7 Auto + Condo \ue026, Selected \u00b7 Auto + Renters \ue026, Selected \u00b7 Or, quote another product \u00b7 ATV/UTV \ue026, Selected \u00b7 Auto \ue026, Selected \u00b7 Autocycle \ue026, Selected \u00b7 Boat \ue026, Selected \u00b7",
+          "page_age": "2025-05-15T00:00:00",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/about/purpose/homeownership/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "video",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "\u203a about  \u203a purpose  \u203a homeownership"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/RuaUZ52lqez-A8N12j7FP6LvzF93UbYfJW2FaC9Ika0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvNjg1/NWJmZmU5Y2I5NDNl/NDA4ZjNjYzlhL1BS/T0ctdXBkYXRlLWxv/Z28tT0ctaW1hZ2Vf/RmFjZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/6855bffe9cb943e408f3cc9a/PROG-update-logo-OG-image_Facebook.png",
+            "logo": true
+          },
+          "age": "May 15, 2025"
+        },
+        {
+          "title": "Driving Lives Forward with Keys to Progress\u00ae | Progressive",
+          "url": "https://www.progressive.com/about/purpose/our-stories/keys-to-progress-impact/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Bundle and save an average of 5% on auto!\u0394 \u00b7 Auto + Home \ue026, Selected \u00b7 Auto + Condo \ue026, Selected \u00b7 Auto + Renters \ue026, Selected \u00b7 Or, quote another product \u00b7 ATV/UTV \ue026, Selected \u00b7 Auto \ue026, Selected \u00b7 Autocycle \ue026, Selected \u00b7 Boat \ue026, Selected \u00b7",
+          "page_age": "2024-12-06T00:00:00",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/about/purpose/our-stories/keys-to-progress-impact/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "video",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "\u203a about  \u203a purpose  \u203a our-stories  \u203a keys-to-progress-impact"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/RuaUZ52lqez-A8N12j7FP6LvzF93UbYfJW2FaC9Ika0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvNjg1/NWJmZmU5Y2I5NDNl/NDA4ZjNjYzlhL1BS/T0ctdXBkYXRlLWxv/Z28tT0ctaW1hZ2Vf/RmFjZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/6855bffe9cb943e408f3cc9a/PROG-update-logo-OG-image_Facebook.png",
+            "logo": true
+          },
+          "age": "December 6, 2024"
+        },
+        {
+          "title": "Nevada RV Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/nevada-rv-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Nevada RVers can bundle and save with Progressive. Earn a multi-policy discount when you combine RV insurance with auto, homeowners, renters, boat, or motorcycle.",
+          "page_age": "2025-06-30T18:33:30",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/nevada-rv-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a nevada rv insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/xc-h25Q15AFqrbGaHpqPB2V654rVA1tZdboXKbFh8pI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDgxYWM1MWM1/NWExZDRkMDUvNjc3/ZjA1MTM5YzgzMTI4/YzVkYjQ2Y2M5L3J2/X25ldmFkYV9vcGVu/LWdyYXBoLnBuZw",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt81ac51c55a1d4d05/677f05139c83128c5db46cc9/rv_nevada_open-graph.png",
+            "logo": false
+          },
+          "age": "June 30, 2025"
+        },
+        {
+          "title": "Texas RV Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/texas-rv-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Texas residents can bundle and save with Progressive. Earn a multi-policy discount when you combine RV insurance with auto, homeowners, renters, boat, or motorcycle.",
+          "page_age": "2025-03-17T17:00:07",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/texas-rv-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a texas rv insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/fFZs37ifTa9BPna-u-S1_lM8v1UKwnUPXnkT2FCoPoA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDNkMjUyY2Ey/OTRjMTZjYjYvNjc3/YzU3ZDYyNmM2YjQx/MTg1M2VjOTZiL3J2/X3RleGFzX29wZW4t/Z3JhcGgucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt3d252ca294c16cb6/677c57d626c6b411853ec96b/rv_texas_open-graph.png",
+            "logo": false
+          },
+          "age": "March 17, 2025"
+        },
+        {
+          "title": "Can Roommates Share Car Insurance? | Progressive",
+          "url": "https://www.progressive.com/answers/car-insurance-with-roommates/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "With some insurers, including Progressive, roommates can get a multi-car discount for having more than one car on a policy.",
+          "page_age": "2025-01-08T19:28:33",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/car-insurance-with-roommates/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a car insurance information  \u203a can roommates share car insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/5M6bGsCp207ZnM_xPa4XmODo4F8-kP3AJ_uOV19_fO8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDNkODI5MTVk/MDdmNDIwOWIvNjFh/YTRmMTk0ZWM1YWU3/MWM3MDY3MjVhL2Zh/Y2Vib29rX29wZW4t/Z3JhcGhfY2FyLWlu/c3VyYW5jZS13aXRo/LXJvb21tYXRlcy5w/bmc",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt3d82915d07f4209b/61aa4f194ec5ae71c706725a/facebook_open-graph_car-insurance-with-roommates.png",
+            "logo": false
+          },
+          "age": "January 8, 2025"
+        },
+        {
+          "title": "Ohio RV Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/ohio-rv-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "From Cleveland to Cincinnati, Ohioans can bundle and save with Progressive. Earn a multi-policy discount when you combine RV insurance with auto, homeowners, renters, boat, or motorcycle.",
+          "page_age": "2025-07-01T19:08:23",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/ohio-rv-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a ohio rv insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/zDN7F4euYuw_CQ0CkIDD0ASabN8nSEtCYxNW8DSMgrs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGQ1ZmE0NDA3/MmY1YjgyNTUvNjcw/MDQwYzg5ZGQ0NmUx/ZDg4Yzg5Mzk4L3J2/X29oaW9fb3Blbi1n/cmFwaC5wbmc",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltd5fa44072f5b8255/670040c89dd46e1d88c89398/rv_ohio_open-graph.png",
+            "logo": false
+          },
+          "age": "July 1, 2025"
+        },
+        {
+          "title": "Massachusetts Car Insurance: Get a Quote | Progressive",
+          "url": "https://www.progressive.com/answers/massachusetts-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "See all our auto insurance discounts. ... Bundle and save! One way to get cheaper car insurance in Massachusetts is to bundle your home and auto insurance.",
+          "page_age": "2025-03-17T16:47:54",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/massachusetts-car-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a massachusetts car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/hvufE0R4OoM11j8AfCn0Bo8C0bJvf4iia7wz4T-XvCA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjNDY0MjY3/NDJkNmJiN2UvNjVj/NGY0ZDg0OWVkZWYz/NjQ4NmEzMmQ2L2lu/c3VyYW5jZS1ieS1z/dGF0ZV9tYXNzYWNo/dXNldHRzLW9wZW4t/Z3JhcGgucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec46426742d6bb7e/65c4f4d849edef36486a32d6/insurance-by-state_massachusetts-open-graph.png",
+            "logo": false
+          },
+          "age": "March 17, 2025"
+        },
+        {
+          "title": "Utah RV Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/utah-rv-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Utah RVers can bundle and save with Progressive. Earn a multi-policy discount when you combine RV insurance with auto, homeowners, renters, boat, or motorcycle.",
+          "page_age": "2025-03-13T20:09:28",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/utah-rv-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a utah rv insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/e4e4Ch-5h--7ni_qkGpgg-_KUtkET0xlbT1WdJasDqg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGUyYmIyNGY3/OTMxYWE3MjQvNjc4/MTM2NmU1ZjFkNmEx/NTJhYTEyZjZmL3J2/X3V0YWhfb3Blbi1n/cmFwaC5wbmc",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blte2bb24f7931aa724/6781366e5f1d6a152aa12f6f/rv_utah_open-graph.png",
+            "logo": false
+          },
+          "age": "March 13, 2025"
+        },
+        {
+          "title": "Keys to Progress\u00ae Veteran Vehicle Giveaway Program | Progressive",
+          "url": "https://www.progressive.com/about/purpose/keys-to-progress/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Bundle property and save an average of 5% on auto in most states!\u0394 \u00b7 Auto + Home \ue026, Selected \u00b7 Auto + Condo \ue026, Selected \u00b7 Auto + Renters \ue026, Selected \u00b7 Or, quote another product \u00b7 ATV/UTV \ue026, Selected \u00b7 Auto \ue026, Selected \u00b7 Autocycle ...",
+          "page_age": "2025-09-03T00:00:00",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/about/purpose/keys-to-progress/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "video",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "\u203a about  \u203a purpose  \u203a keys-to-progress"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/RuaUZ52lqez-A8N12j7FP6LvzF93UbYfJW2FaC9Ika0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvNjg1/NWJmZmU5Y2I5NDNl/NDA4ZjNjYzlhL1BS/T0ctdXBkYXRlLWxv/Z28tT0ctaW1hZ2Vf/RmFjZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/6855bffe9cb943e408f3cc9a/PROG-update-logo-OG-image_Facebook.png",
+            "logo": true
+          },
+          "age": "September 3, 2025"
+        },
+        {
+          "title": "California RV Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/california-rv-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Californians can bundle and save with Progressive. Earn a multi-policy discount when you combine RV insurance with auto, homeowners, renters, boat, or motorcycle.\u2020",
+          "page_age": "2025-08-27T14:22:22",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/california-rv-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a california rv insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/FyvnzgzC21R93lG7wz54if6G0bIPjYLnHBy40IDZ8_U/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDI1MWY0MzI0/MmViZGFhODIvNjc1/MWZhNzQxOWFmNzAz/YTc4ZWI0ZjJlL3J2/X2NhbGlmb3JuaWFf/b3Blbi1ncmFwaC5w/bmc",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt251f43242ebdaa82/6751fa7419af703a78eb4f2e/rv_california_open-graph.png",
+            "logo": false
+          },
+          "age": "August 27, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_aps6sgj8eegybbexjzt0yzcm",
+  "search_id": "search_qhyztxpoip5av6duj7w1m78g",
+  "timestamp": "2025-11-07T12:34:45.311970",
+  "startedAt": "2025-11-07T12:34:45.311970",
+  "completedAt": "2025-11-07T12:34:47.028616",
+  "durationSeconds": 1.72,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:naic.org consumer information auto insurance",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:naic.org consumer information auto insurance",
+      "show_strict_warning": false,
+      "cleaned": "consumer information auto insurance",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "consumer information auto insurance",
+        "sites": [
+          "naic.org"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

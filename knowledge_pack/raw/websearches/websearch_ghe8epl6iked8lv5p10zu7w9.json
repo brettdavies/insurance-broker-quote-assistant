@@ -1,0 +1,171 @@
+{
+  "websearch_id": "websearch_ghe8epl6iked8lv5p10zu7w9",
+  "search_id": "search_gy5f76lp0g8b6ao94q062f0u",
+  "timestamp": "2025-11-07T12:24:15.481420",
+  "startedAt": "2025-11-07T12:24:15.481420",
+  "completedAt": "2025-11-07T12:24:17.479467",
+  "durationSeconds": 2.0,
+  "urlsDiscoveredCount": 3,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" \"minimum age\" auto insurance",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"GEICO\" \"minimum age\" auto insurance",
+      "show_strict_warning": false,
+      "cleaned": "GEICO minimum age auto insurance",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO minimum age auto insurance"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Over 55? Here's how to save more than $300 on car insurance",
+          "url": "https://www.cnbc.com/select/seniors-save-more-than-300-on-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The minimum age varies by insurer and state, but it&#x27;s typically 50 or 55, and classes are available in person or online. Geico, for example, recognizes online programs offered by the National Safety Council, the American Safety Council, and ...",
+          "page_age": "2025-10-28T10:01:01",
+          "profile": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/select/seniors-save-more-than-300-on-car-insurance/",
+            "long_name": "Consumer News and Business Channel",
+            "img": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cnbc.com",
+            "hostname": "www.cnbc.com",
+            "favicon": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+            "path": "  \u203a cnbc select  \u203a insurance  \u203a over 55? here's how to save more than $300 on car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/XpplUjvAMJhCMc17n7eqoDQz4MzoaItYLlhpod_iPNQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDY3OTI1NzIt/MTYwNTEyMzcwMTg3/NS1nZXR0eWltYWdl/cy03Mzg3NzU4NzMt/YmxkMjQ1NTczLmpw/ZWc_dj0xNzYxMzM2/NTQ4",
+            "original": "https://image.cnbcfm.com/api/v1/image/106792572-1605123701875-gettyimages-738775873-bld245573.jpeg?v=1761336548",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Car Insurance Discounts for Senior Citizens (2025)",
+          "url": "https://www.moneygeek.com/insurance/auto/senior-citizen-discounts-for-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "They offer the largest senior discount ... completing defensive driving courses, which are often available for seniors aged 50 and older....",
+          "page_age": "2025-10-29T18:08:51",
+          "profile": {
+            "name": "MoneyGeek",
+            "url": "https://www.moneygeek.com/insurance/auto/senior-citizen-discounts-for-car-insurance/",
+            "long_name": "moneygeek.com",
+            "img": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "moneygeek.com",
+            "hostname": "www.moneygeek.com",
+            "favicon": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8",
+            "path": "  \u203a home  \u203a insurance  \u203a compare car insurance  \u203a car insurance discounts for seniors"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/LQgCSO1njhJaps5B96TtULNdhgbXUsKXmrqsE6EQFYM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbW9uZXlnZWVr/L2ltYWdlL3VwbG9h/ZC9jX3NjYWxlLHFf/YXV0bzplY28sd18x/MjAwLGZfYXV0byxm/bF9sb3NzeS92MTY1/OTc1NTEwMC9tZXRh/X2ltYWdlX0Nhcl9J/bnN1cmFuY2VfRGlz/Y291bnRzX1Nlbmlv/cnNfTW9uZXlfR2Vl/a19iNDQ0ZjQ5ZmRj/LmpwZw",
+            "original": "https://res.cloudinary.com/moneygeek/image/upload/c_scale,q_auto:eco,w_1200,f_auto,fl_lossy/v1659755100/meta_image_Car_Insurance_Discounts_Seniors_Money_Geek_b444f49fdc.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Adding Your Child to Your Car Insurance in 2025",
+          "url": "https://www.moneygeek.com/insurance/auto/adding-your-child-to-your-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If getting a separate policy, you&#x27;ll need to co-sign it, as minors can&#x27;t legally sign contracts in any state. Nationwide offers the most affordable rates for adding young drivers of most ages. GEICO provides the best rates for 18-year-olds.",
+          "page_age": "2025-10-29T18:44:28",
+          "profile": {
+            "name": "MoneyGeek",
+            "url": "https://www.moneygeek.com/insurance/auto/adding-your-child-to-your-car-insurance/",
+            "long_name": "moneygeek.com",
+            "img": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "moneygeek.com",
+            "hostname": "www.moneygeek.com",
+            "favicon": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8",
+            "path": "  \u203a home  \u203a insurance  \u203a compare car insurance  \u203a adding your child to your car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/RTKghIujzTjUpcQ1DzKY6alW9vFBhQLgGE1NxvwEIog/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbW9uZXlnZWVr/L2ltYWdlL3VwbG9h/ZC9jX3NjYWxlLHFf/YXV0bzplY28sd18x/MjAwLGZfYXV0byxm/bF9sb3NzeS92MTY5/MTE0Mjg2Ny9BZGRp/bmdfWW91cl9DaGls/ZF90b19Zb3VyX0Nh/cl9JbnN1cmFuY2Vf/UG9saWN5X2QzZTQ5/NzdmNjguanBn",
+            "original": "https://res.cloudinary.com/moneygeek/image/upload/c_scale,q_auto:eco,w_1200,f_auto,fl_lossy/v1691142867/Adding_Your_Child_to_Your_Car_Insurance_Policy_d3e4977f68.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

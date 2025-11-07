@@ -1,0 +1,795 @@
+{
+  "websearch_id": "websearch_e3ezpdt2vxssemd36ah8ncj3",
+  "search_id": "search_xqifjympp6o5ifnn7eqcwz7g",
+  "timestamp": "2025-11-07T12:31:17.394690",
+  "startedAt": "2025-11-07T12:31:17.394690",
+  "completedAt": "2025-11-07T12:31:19.378479",
+  "durationSeconds": 1.98,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"State Farm\" earthquake coverage California",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"State Farm\" earthquake coverage California",
+      "show_strict_warning": false,
+      "cleaned": "State Farm earthquake coverage California",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "State Farm earthquake coverage California"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Do You Need Earthquake Insurance if You Don\u2019t Live on the Coast? - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/residence/do-you-need-earthquake-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "To help encourage Californians to purchase earthquake coverage, the California Earthquake Authority\u2122 (CEA) was created in 1995. The CEA is a nonprofit, privately funded insurer created by the state&#x27;s government to help make earthquake insurance more affordable.",
+          "page_age": "2025-09-19T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/residence/do-you-need-earthquake-insurance",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a residence  \u203a do you need earthquake insurance if you don\u2019t live on the coast?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/jux-3_EfM36sAt6W6ukLNNjoCe6OdDfiiPNsCFckol8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L2RvLXlvdS1uZWVk/LWVhcnRocXVha2Ut/aW5zdXJhbmNlLmpw/Zw",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/do-you-need-earthquake-insurance.jpg",
+            "logo": false
+          },
+          "age": "September 19, 2025"
+        },
+        {
+          "title": "Who Is The California Earthquake Authority? \u2013 Forbes Advisor",
+          "url": "https://www.forbes.com/advisor/homeowners-insurance/california-earthquake-authority/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "More than 1 million CEA insurance policies are in force. Insurers like Allstate, Farmers and State Farm that no longer sell their own earthquake policies are required to participate in the CEA.",
+          "page_age": "2025-06-03T10:35:57",
+          "profile": {
+            "name": "Forbes Advisor",
+            "url": "https://www.forbes.com/advisor/homeowners-insurance/california-earthquake-authority/",
+            "long_name": "forbes.com",
+            "img": "https://imgs.search.brave.com/qg6-E4bARcUpS7pHuJ2FXSeQ2YI51iPfbI8wpUBx9tg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY0NWFiMTBk/YmY2MjkyN2M0MTI0/NmRkYTM3ZjQzMGJj/Y2Q2MTBkYjVmZjA2/OGRjODBhMTM1M2Yx/YmRlZTA1NS93d3cu/Zm9yYmVzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "forbes.com",
+            "hostname": "www.forbes.com",
+            "favicon": "https://imgs.search.brave.com/qg6-E4bARcUpS7pHuJ2FXSeQ2YI51iPfbI8wpUBx9tg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY0NWFiMTBk/YmY2MjkyN2M0MTI0/NmRkYTM3ZjQzMGJj/Y2Q2MTBkYjVmZjA2/OGRjODBhMTM1M2Yx/YmRlZTA1NS93d3cu/Zm9yYmVzLmNvbS8",
+            "path": "\u203a advisor  \u203a homeowners-insurance  \u203a california-earthquake-authority"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Qznspm0cV93Z7E9FTA2kIEsuit5N-_LTd7SmxmHeSJQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Zm9yYmVzLmNvbS9h/ZHZpc29yL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIwLzEwL3Nh/bi1hbmRyZWFzLWZh/dWx0LTkwMHg1MTAu/anBn",
+            "original": "https://www.forbes.com/advisor/wp-content/uploads/2020/10/san-andreas-fault-900x510.jpg",
+            "logo": false
+          },
+          "age": "June 3, 2025"
+        },
+        {
+          "title": "Does My Homeowner's Insurance Cover Earthquakes?",
+          "url": "https://www.cnbc.com/select/earthquake-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Many top homeowners insurance companies also offer earthquake coverage, including Allstate, Amica, AAA, Farmers, Foremost, Liberty Mutual, Mercury, Nationwide, Progressive, State Farm and USAA.",
+          "page_age": "2025-04-01T16:37:43",
+          "profile": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/select/earthquake-insurance/",
+            "long_name": "Consumer News and Business Channel",
+            "img": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cnbc.com",
+            "hostname": "www.cnbc.com",
+            "favicon": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+            "path": "  \u203a cnbc select  \u203a insurance  \u203a does my homeowners insurance cover earthquakes?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/i72KrXHB2ViQxnGYRUY2C1b8r2brGDESRxIUdNsNXg4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDgxMjQyNTIt/MTc0MzUxOTYyMjYy/Ni1nZXR0eWltYWdl/cy0yMTQxMzQxNjY2/LWZyaWRheTQwMDIx/NV85ZXh2aGxpdS5q/cGVnP3Y9MTc0MzUy/NTQ1Nw",
+            "original": "https://image.cnbcfm.com/api/v1/image/108124252-1743519622626-gettyimages-2141341666-friday400215_9exvhliu.jpeg?v=1743525457",
+            "logo": false
+          },
+          "age": "April 1, 2025"
+        },
+        {
+          "title": "State Farm: Earthquake Insurance Coverage For Homeowners | ShunIns",
+          "url": "https://shunins.com/article/does-state-farm-homeowners-insurance-cover-earthquake",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Homeowners can then choose to purchase this additional coverage to protect themselves financially in the event of an earthquake. ... Earthquake insurance is not included in standard homeowners insurance policies, and this is true of State Farm&#x27;s ...",
+          "page_age": "2025-07-22T21:27:47",
+          "profile": {
+            "name": "ShunIns",
+            "url": "https://shunins.com/article/does-state-farm-homeowners-insurance-cover-earthquake",
+            "long_name": "shunins.com",
+            "img": "https://imgs.search.brave.com/jvP4Fve05YIvAUZZWzBsRulCIHRsJJaPDya1iEAYmoU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMmFiOTRkMTI2/NGU3ZjMyYWQ3Y2Q5/NGM3ZjNmZDg3MTdh/YzA4Y2I5YzY3NDdm/ZmU0YjQyZWJmMDlj/MGFlMzdjNC9zaHVu/aW5zLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "shunins.com",
+            "hostname": "shunins.com",
+            "favicon": "https://imgs.search.brave.com/jvP4Fve05YIvAUZZWzBsRulCIHRsJJaPDya1iEAYmoU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMmFiOTRkMTI2/NGU3ZjMyYWQ3Y2Q5/NGM3ZjNmZDg3MTdh/YzA4Y2I5YzY3NDdm/ZmU0YjQyZWJmMDlj/MGFlMzdjNC9zaHVu/aW5zLmNvbS8",
+            "path": "  \u203a home  \u203a homeowners' insurance  \u203a state farm: earthquake insurance coverage for homeowners"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/0oSA7AzIrL-7bnT324PRMTwIS1leQvj_FX4o-GqhGOM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zaHVu/aW5zLmNvbS9pbWFn/ZXMvcmVzb3VyY2Vz/L2RvZXMtc3RhdGUt/ZmFybS1ob21lb3du/ZXJzLWluc3VyYW5j/ZS1jb3Zlci1lYXJ0/aHF1YWtlXzIwMjUw/NzIzMDQyMzA2Lndl/YnA",
+            "original": "https://shunins.com/images/resources/does-state-farm-homeowners-insurance-cover-earthquake_20250723042306.webp",
+            "logo": false
+          },
+          "age": "July 22, 2025"
+        },
+        {
+          "title": "California map: ZIP codes State Farm won\u2019t renew insurance policies",
+          "url": "https://www.sfchronicle.com/projects/2024/ca-statefarm-nonrenewal-map/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm wrote in state filings that it would not renew policies \u201cthat present the most substantial wildfire or fire following earthquake hazards, or that are in areas of significant concentration.\u201d",
+          "page_age": "2025-08-05T00:33:00",
+          "profile": {
+            "name": "San Francisco Chronicle",
+            "url": "https://www.sfchronicle.com/projects/2024/ca-statefarm-nonrenewal-map/",
+            "long_name": "sfchronicle.com",
+            "img": "https://imgs.search.brave.com/iLyX2rAw4aqHVg0CN-ntdWtyp394I3-O7oOdhuAnBiE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmE5MmM2MGE4/NmMxYmI0N2EyMmJh/OTVjYjhhZDU2MmZk/YjhhZGE3MzY1YTQ0/NGJkNzM1ZmM2OThh/ZDY1NWJkYy93d3cu/c2ZjaHJvbmljbGUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "sfchronicle.com",
+            "hostname": "www.sfchronicle.com",
+            "favicon": "https://imgs.search.brave.com/iLyX2rAw4aqHVg0CN-ntdWtyp394I3-O7oOdhuAnBiE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmE5MmM2MGE4/NmMxYmI0N2EyMmJh/OTVjYjhhZDU2MmZk/YjhhZGE3MzY1YTQ0/NGJkNzM1ZmM2OThh/ZDY1NWJkYy93d3cu/c2ZjaHJvbmljbGUu/Y29tLw",
+            "path": "\u203a projects  \u203a 2024  \u203a ca-statefarm-nonrenewal-map"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/uhKCPSeluKiC5aeZOGil_q7P17QvTyNR0535MS8OEGM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zLmhk/bnV4LmNvbS9waG90/b3MvMC8wLzAvMC8y/NDg4Nzc2OS8xL3Jh/d0ltYWdlLmpwZw",
+            "original": "https://s.hdnux.com/photos/0/0/0/0/24887769/1/rawImage.jpg",
+            "logo": false
+          },
+          "age": "August 5, 2025"
+        },
+        {
+          "title": "How Much Does Earthquake Insurance Cost in California? - ValuePenguin",
+          "url": "https://www.valuepenguin.com/california-earthquake-insurance-cost",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "You are only responsible for a personal property deductible since the other coverages kick in without a deductible. You can buy California Earthquake Authority policies through the CEA\u2019s member insurance companies. Participating insurers include some of California&#x27;s major homeowners insurance providers, like State Farm, Allstate and USAA.",
+          "page_age": "2025-08-04T22:25:03",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/california-earthquake-insurance-cost",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a california-earthquake-insurance-cost"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/11Sxs0tujm4J-pBZ5ru8w6K3DNw418--wB4yw5Y0dyc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL0dldHR5SW1h/Z2VzLTYwMzg2NDg4/OF9hb2pucGY",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/GettyImages-603864888_aojnpf",
+            "logo": false
+          },
+          "age": "August 4, 2025"
+        },
+        {
+          "title": "Best Earthquake Insurance of 2025 | ConsumersAdvocate.org",
+          "url": "https://www.consumersadvocate.org/earthquake-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm stands out for two things: their superb customer service and the extra features that come with its earthquake policy.",
+          "page_age": "2025-10-22T00:00:00",
+          "profile": {
+            "name": "ConsumersAdvocate.org",
+            "url": "https://www.consumersadvocate.org/earthquake-insurance",
+            "long_name": "consumersadvocate.org",
+            "img": "https://imgs.search.brave.com/UfFtjN-wB7gx-kLGeUXAJ4UlTeXM7KSS3qXiaFuefMM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmY3OGNmODgy/NzA5NTcxMzUwNzVm/MWI0MGRkOTY3Nzkz/MWE0YzFiZmJkNGMw/NWE3ZWI4ZDgxNTAx/OGM0MDFhOS93d3cu/Y29uc3VtZXJzYWR2/b2NhdGUub3JnLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "consumersadvocate.org",
+            "hostname": "www.consumersadvocate.org",
+            "favicon": "https://imgs.search.brave.com/UfFtjN-wB7gx-kLGeUXAJ4UlTeXM7KSS3qXiaFuefMM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmY3OGNmODgy/NzA5NTcxMzUwNzVm/MWI0MGRkOTY3Nzkz/MWE0YzFiZmJkNGMw/NWE3ZWI4ZDgxNTAx/OGM0MDFhOS93d3cu/Y29uc3VtZXJzYWR2/b2NhdGUub3JnLw",
+            "path": "\u203a earthquake-insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/_Q_YHYe8pKsXBI3LMTFtxRE9K9CqtDmVyfk3lEziuGY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9ycy5j/b25zdW1lcnNhZHZv/Y2F0ZS5vcmcvYS9p/bWFnZXMvbG9nby1i/bHVlLXY0LnBuZw",
+            "original": "https://rs.consumersadvocate.org/a/images/logo-blue-v4.png",
+            "logo": true
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "Earthquake Insurance in California: Costs & Coverage ...",
+          "url": "https://isu-armac.com/how-much-does-california-earthquake-insurance-cost/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Coverage options range typically from about 10% to 20% of your home\u2019s value as a deductible. Premiums are affected by proximity to fault lines and the earthquake readiness of your home. The California Earthquake Authority is a primary provider, offering comprehensive plans through affiliated insurers like State Farm ...",
+          "page_age": "2025-01-22T01:50:24",
+          "profile": {
+            "name": "ISU Armac",
+            "url": "https://isu-armac.com/how-much-does-california-earthquake-insurance-cost/",
+            "long_name": "isu-armac.com",
+            "img": "https://imgs.search.brave.com/MZPuHwnQg3QM62U8OAJq4iv2gTJJ74wJIM70mQqDir4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGM3MGMwMWEz/ODNiMDJmY2YzMmU5/MTQxYzFjNTZkMDJj/NTcyMDZmOGMzYzg0/MTRhZjBiZTJiYTA2/YWRjNTMxYi9pc3Ut/YXJtYWMuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "isu-armac.com",
+            "hostname": "isu-armac.com",
+            "favicon": "https://imgs.search.brave.com/MZPuHwnQg3QM62U8OAJq4iv2gTJJ74wJIM70mQqDir4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGM3MGMwMWEz/ODNiMDJmY2YzMmU5/MTQxYzFjNTZkMDJj/NTcyMDZmOGMzYzg0/MTRhZjBiZTJiYTA2/YWRjNTMxYi9pc3Ut/YXJtYWMuY29tLw",
+            "path": "  \u203a home  \u203a blog original posts page  \u203a earthquake insurance in california: what\u2019s the price tag?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/1KCT5mbf0IGU4KpHF3f1LhABNUgTnrgGe968YM7nBfI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pc3Ut/YXJtYWMuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIyLzAx/L3BvcnRmb2xpby1k/ZXRhaWxzLTMuanBn",
+            "original": "https://isu-armac.com/wp-content/uploads/2022/01/portfolio-details-3.jpg",
+            "logo": false
+          },
+          "age": "January 22, 2025"
+        },
+        {
+          "title": "Most California homeowners don\u2019t have earthquake insurance - The North Bay Business Journal",
+          "url": "https://www.northbaybusinessjournal.com/article/industrynews/california-earthquake-coverage/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Many factors go into rating insurance, including coverage for earthquake policies. One such policy Hollingsworth wrote at GeoVera involves an East Bay home with $616,000 in coverage with a 20% deductible for $827 a year. In Sonoma County, a policy for a 2-bedroom, 1,172-square-foot town house in Oakmont under GeoVera cost $755 for $481,000 in coverage. Lisa Orloff, the Rohnert Park Chamber of Commerce CEO, worked for State Farm for decades.",
+          "page_age": "2024-12-20T22:18:40",
+          "profile": {
+            "name": "North Bay Business Journal",
+            "url": "https://www.northbaybusinessjournal.com/article/industrynews/california-earthquake-coverage/",
+            "long_name": "northbaybusinessjournal.com",
+            "img": "https://imgs.search.brave.com/Vp9O7ps7gyDuFp1uFI_P4r2qnPIH9CcnY6jiNtp0EzY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzJkNDY0NzIw/NDZiYTUxYWYyOTQ0/OTdmZjMwMjc1OGFj/MDY3NmIwM2QxMTU0/YzEwYmRlMDI2YTNj/YzYyNWJhNS93d3cu/bm9ydGhiYXlidXNp/bmVzc2pvdXJuYWwu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "northbaybusinessjournal.com",
+            "hostname": "www.northbaybusinessjournal.com",
+            "favicon": "https://imgs.search.brave.com/Vp9O7ps7gyDuFp1uFI_P4r2qnPIH9CcnY6jiNtp0EzY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzJkNDY0NzIw/NDZiYTUxYWYyOTQ0/OTdmZjMwMjc1OGFj/MDY3NmIwM2QxMTU0/YzEwYmRlMDI2YTNj/YzYyNWJhNS93d3cu/bm9ydGhiYXlidXNp/bmVzc2pvdXJuYWwu/Y29tLw",
+            "path": "  \u203a north bay  \u203a sonoma county"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/5wJID5imVwcfYpBNX1iHBW5mSqIteRqESBya7KBOXLM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWVu/Z2luZS5wcm9kLnNy/cC5uYXZpZ2FjbG91/ZC5jb20vP3V1aWQ9/OWMyNTI3ZDUtY2Rm/OS01MjI2LWE2OWYt/NGJlZjA1M2MyZjhj/JnR5cGU9cHJpbWFy/eSZxPTc1JndpZHRo/PTEyMDA",
+            "original": "https://imengine.prod.srp.navigacloud.com/?uuid=9c2527d5-cdf9-5226-a69f-4bef053c2f8c&type=primary&q=75&width=1200",
+            "logo": false
+          },
+          "age": "December 20, 2024"
+        },
+        {
+          "title": "Earthquake Insurance: Is It Worth It?",
+          "url": "https://www.cnbc.com/select/earthquake-insurance-worth-it/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Major homeowners insurance companies offer earthquake insurance, including Amica, Farmers, Foremost, State Farm and USAA. An earthquake rider is significantly cheaper, but coverage limits may be lower, there are more exclusions and deductibles are usually higher. In California, the CEA requires deductibles to start at 5%, but standalone policies can be as low as 2.5%.",
+          "page_age": "2025-07-31T18:54:33",
+          "profile": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/select/earthquake-insurance-worth-it/",
+            "long_name": "Consumer News and Business Channel",
+            "img": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cnbc.com",
+            "hostname": "www.cnbc.com",
+            "favicon": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+            "path": "  \u203a cnbc select  \u203a insurance  \u203a do i need earthquake insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/BhCxWqQYZXa7Vqddyatw2zz7bWNAAku-_FbdAZLuNhg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDczOTc0NDct/MTcxMjMyNzM4OTg1/NS1nZXR0eWltYWdl/cy04NzU1MzQxMTAt/MjAxN19zMl81MDAw/LmpwZWc_dj0xNzUz/NzI2ODQx",
+            "original": "https://image.cnbcfm.com/api/v1/image/107397447-1712327389855-gettyimages-875534110-2017_s2_5000.jpeg?v=1753726841",
+            "logo": false
+          },
+          "age": "July 31, 2025"
+        },
+        {
+          "title": "State Farm Homeowners Insurance Review (2025) | U.S. News",
+          "url": "https://www.usnews.com/insurance/homeowners-insurance/state-farm",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "For extra liability coverage beyond ... under your home insurance. As with most providers, State Farm\u2019s standard home insurance does not cover losses from earthquakes or flooding....",
+          "page_age": "2025-11-05T20:40:00",
+          "profile": {
+            "name": "U.S. News",
+            "url": "https://www.usnews.com/insurance/homeowners-insurance/state-farm",
+            "long_name": "usnews.com",
+            "img": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "usnews.com",
+            "hostname": "www.usnews.com",
+            "favicon": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8",
+            "path": "\u203a insurance  \u203a homeowners-insurance  \u203a state-farm"
+          },
+          "age": "2 days ago"
+        },
+        {
+          "title": "State Farm homeowners insurance review 2025",
+          "url": "https://www.cnbc.com/select/state-farm-homeowners-insurance-review/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Business or professional services, ... and animals, birds or insects. ... State Farm issues homeowners insurance in all states except Massachusetts, Rhode Island and California. A standard State Farm policy includes four ...",
+          "page_age": "2025-01-01T16:49:01",
+          "profile": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/select/state-farm-homeowners-insurance-review/",
+            "long_name": "Consumer News and Business Channel",
+            "img": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cnbc.com",
+            "hostname": "www.cnbc.com",
+            "favicon": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+            "path": "\u203a select  \u203a state-farm-homeowners-insurance-review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/BrvSPQ0s_AylNCLOEMmh04p2kXuD93xhMYNOc5y5ckw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDgwMjg3MjMt/MTcyNTM5NzE0NzU1/MS1nZXR0eWltYWdl/cy05MDQ0ODIzMzIt/bW9uMTEyMDA0NC5q/cGVnP3Y9MTc0MzUz/OTQwNQ",
+            "original": "https://image.cnbcfm.com/api/v1/image/108028723-1725397147551-gettyimages-904482332-mon1120044.jpeg?v=1743539405",
+            "logo": false
+          },
+          "age": "January 1, 2025"
+        },
+        {
+          "title": "Does Car Insurance Cover Earthquake Damage? | The Zebra",
+          "url": "https://www.thezebra.com/auto-insurance/coverage/natural-disasters/does-car-insurance-cover-earthquake-damage/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The best insurer for comprehensive coverage depends on your location, vehicle, and needs. Still, some top-rated options include USAA (especially for military families), State Farm (for strong claims support), and American Family (for flexible, affordable plans). For more detailed comparisons, see our full guide to the best insurance companies. ... Standard homeowners insurance policies do not cover earthquake damage.",
+          "page_age": "2025-07-29T18:37:06",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/auto-insurance/coverage/natural-disasters/does-car-insurance-cover-earthquake-damage/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a cheap car insurance  \u203a types of car insurance coverage  \u203a does car insurance cover natural disasters?  \u203a does car insurance cover earthquake damage?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/EndrEcI2COWsjHsedyGc8lOPYMSERPkMrYuWewrG31c/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9lYXJ0aHF1/YWtlX3RpbnkuanBn",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/earthquake_tiny.jpg",
+            "logo": false
+          },
+          "age": "July 29, 2025"
+        },
+        {
+          "title": "State Farm Home Insurance Review 2025: Coverage and Rates - NerdWallet",
+          "url": "https://www.nerdwallet.com/insurance/homeowners/state-farm-home-insurance-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Before choosing any of these coverage options, read the fine print or ask your agent to talk you through the limitations and exclusions. Like most homeowners insurance companies, State Farm won\u2019t cover damage from flooding or earthquakes with its standard home insurance policy.",
+          "page_age": "2025-09-08T15:05:10",
+          "profile": {
+            "name": "NerdWallet",
+            "url": "https://www.nerdwallet.com/insurance/homeowners/state-farm-home-insurance-review",
+            "long_name": "nerdwallet.com",
+            "img": "https://imgs.search.brave.com/8r72GokQ4UXZ6V4PobxSGta-ben5011_C3meSKoOMl4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGFhYzY5MDhh/NTNhODNhYjliNWNm/MTE4YTNmOGE3NjVj/M2FmMDcwMzhhMzQx/MThmYjQ2MzcxMjQy/ZDgwNTkzZS93d3cu/bmVyZHdhbGxldC5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "nerdwallet.com",
+            "hostname": "www.nerdwallet.com",
+            "favicon": "https://imgs.search.brave.com/8r72GokQ4UXZ6V4PobxSGta-ben5011_C3meSKoOMl4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGFhYzY5MDhh/NTNhODNhYjliNWNm/MTE4YTNmOGE3NjVj/M2FmMDcwMzhhMzQx/MThmYjQ2MzcxMjQy/ZDgwNTkzZS93d3cu/bmVyZHdhbGxldC5j/b20v",
+            "path": "  \u203a back to nerdwallet homepage  \u203a insurance  \u203a state farm home insurance review 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/bHZGGhoiY71OeprXNOfBLDFnrwDe0_cEeU1sI4DBQKE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bmVyZHdhbGxldC5j/b20vYXNzZXRzL2Js/b2cvd3AtY29udGVu/dC91cGxvYWRzLzIw/MjQvMDYvR2V0dHlJ/bWFnZXMtMTQ3NDk5/MTgwMS0xNDQweDg2/NC5qcGc",
+            "original": "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2024/06/GettyImages-1474991801-1440x864.jpg",
+            "logo": false
+          },
+          "age": "September 8, 2025"
+        },
+        {
+          "title": "California Landlord Insurance (Guide): Costs, Coverage & More",
+          "url": "https://inszoneinsurance.com/blog/california-landlord-insurance-guide",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Quotes vary, but Steadily, Mercury and State Farm currently deliver some of the lowest premiums on standard-risk homes. Can a landlord require renters insurance in California? Yes\u2014Civil Code \u00a7 1940.4 explicitly permits it. Most landlords mandate at least $100k liability coverage. ... Standard HO-4 does not. You or your tenant can add a low-cost California Earthquake ...",
+          "page_age": "2025-09-15T14:00:44",
+          "profile": {
+            "name": "Inszone Insurance",
+            "url": "https://inszoneinsurance.com/blog/california-landlord-insurance-guide",
+            "long_name": "inszoneinsurance.com",
+            "img": "https://imgs.search.brave.com/ywZKh9QziUtBWs3bcru0vr1NWgx3riR2oczoi6JPORI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTFiYzhiNDll/MTg5MDE0ZGIxN2I0/ZDA5ZjVlMjllYWU4/MTI4NzAwYjdiNThi/ODk0MDljNmJiMjRm/YjI1YTkwZi9pbnN6/b25laW5zdXJhbmNl/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "inszoneinsurance.com",
+            "hostname": "inszoneinsurance.com",
+            "favicon": "https://imgs.search.brave.com/ywZKh9QziUtBWs3bcru0vr1NWgx3riR2oczoi6JPORI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTFiYzhiNDll/MTg5MDE0ZGIxN2I0/ZDA5ZjVlMjllYWU4/MTI4NzAwYjdiNThi/ODk0MDljNmJiMjRm/YjI1YTkwZi9pbnN6/b25laW5zdXJhbmNl/LmNvbS8",
+            "path": "\u203a blog  \u203a california-landlord-insurance-guide"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/I8P4TEpTeBn60PC4YR4WTkQeAVkdc7yuLITv16ZdUEo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbnN6/b25laW5zdXJhbmNl/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNS8wNy9sYW5k/bG9yZC1pbnN1cmFu/Y2UtaW4tY2FsaWZv/cm5pYS5qcGc",
+            "original": "https://inszoneinsurance.com/wp-content/uploads/2025/07/landlord-insurance-in-california.jpg",
+            "logo": false
+          },
+          "age": "September 15, 2025"
+        },
+        {
+          "title": "State Farm Renters Insurance Review: Pros, Cons, Cost and More",
+          "url": "https://www.moneygeek.com/insurance/renters/reviews/state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm&#x27;s renters insurance premiums vary from state to state due to factors like the type of structure you live in, its proximity to a local fire station, crime rates, natural disasters and local regulations. The average premium for $20K personal property coverage is $66 in Colorado but $590 in California for the same coverage.",
+          "page_age": "2025-10-28T13:27:22",
+          "profile": {
+            "name": "MoneyGeek",
+            "url": "https://www.moneygeek.com/insurance/renters/reviews/state-farm/",
+            "long_name": "moneygeek.com",
+            "img": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "moneygeek.com",
+            "hostname": "www.moneygeek.com",
+            "favicon": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8",
+            "path": "  \u203a home  \u203a insurance  \u203a compare renters insurance  \u203a state farm renters insurance review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/hLigglaSWtddxUE_B93QtLt_TneqNMhIe41CoFzsODU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbW9uZXlnZWVr/L2ltYWdlL3VwbG9h/ZC92MTYwMjc3OTY5/NS9Nb25leUdlZWsu/Y29tL2RlZmF1bHQl/MjBtZXRhJTIwaW1h/Z2VzL2hvbWVfaW5z/dXJhbmNlX3dmczJt/bC5qcGc",
+            "original": "https://res.cloudinary.com/moneygeek/image/upload/v1602779695/MoneyGeek.com/default%20meta%20images/home_insurance_wfs2ml.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Los Angeles wildfires magnify California 'insurance crisis' as homeowners face $10B in losses",
+          "url": "https://www.nbcnews.com/news/us-news/los-angeles-wildfires-rage-as-homeowners-battle-insurance-crisis-rcna186783",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm said in a nonrenewal ... that the 30,000 property insurance policyholders who were being dropped across California lived in areas deemed to &quot;present the most substantial wildfire or fire following earthquake hazards.&quot;...",
+          "page_age": "2025-01-12T01:01:02",
+          "profile": {
+            "name": "NBC News",
+            "url": "https://www.nbcnews.com/news/us-news/los-angeles-wildfires-rage-as-homeowners-battle-insurance-crisis-rcna186783",
+            "long_name": "nbcnews.com",
+            "img": "https://imgs.search.brave.com/eI6piNjPQhnQicFjMZFpnZ2HlEkQUna_5IQn9Awm0PU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzJjOWM3M2Qx/ODU2MGYwNDE1MTFk/ZGZiYTRhYjUwNDg3/NjU3NjhkMjJjMWEx/MWU5NjFiYzRiN2Rj/ZmE1NzUzMC93d3cu/bmJjbmV3cy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "video",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "nbcnews.com",
+            "hostname": "www.nbcnews.com",
+            "favicon": "https://imgs.search.brave.com/eI6piNjPQhnQicFjMZFpnZ2HlEkQUna_5IQn9Awm0PU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzJjOWM3M2Qx/ODU2MGYwNDE1MTFk/ZGZiYTRhYjUwNDg3/NjU3NjhkMjJjMWEx/MWU5NjFiYzRiN2Rj/ZmE1NzUzMC93d3cu/bmJjbmV3cy5jb20v",
+            "path": "\u203a news  \u203a us-news  \u203a los-angeles-wildfires-rage-as-homeowners-battle-insurance-crisis-rcna186783"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Xs4eIVefW7CfaLP3h--SuVByk8yq7Ps90wglUQ-1Grg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS1jbGRucnkucy1u/YmNuZXdzLmNvbS9p/bWFnZS91cGxvYWQv/dF9maXQtMTUwMHcs/Zl9hdXRvLHFfYXV0/bzpiZXN0L3JvY2tj/bXMvMjAyNS0wMS8y/NTAxMDgtd2lsZGZp/cmUtY2gtMTEzOS1l/NTI1MWQuanBn",
+            "original": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/rockcms/2025-01/250108-wildfire-ch-1139-e5251d.jpg",
+            "logo": false
+          },
+          "age": "January 12, 2025"
+        },
+        {
+          "title": "State Farm in California: What you need to know",
+          "url": "https://www.insurance.com/home-insurance/state-farm-stops-selling-home-insurance-in-california",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm is among insurers that have pulled out of California as wildfires worsen the home insurance crisis there.",
+          "page_age": "2025-05-14T00:00:00",
+          "profile": {
+            "name": "Insurance.com",
+            "url": "https://www.insurance.com/home-insurance/state-farm-stops-selling-home-insurance-in-california",
+            "long_name": "insurance.com",
+            "img": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurance.com",
+            "hostname": "www.insurance.com",
+            "favicon": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8",
+            "path": "  \u203a home  \u203a home insurance  \u203a state farm in california: what you need to know"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/mrmhNyRrsgAKLHytgrM3UtXgPNsZj2C2r9vhaX0aI8s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmNlLmNv/bS9pbWFnZXMvaG9t/ZS9zaXRlLWxvZ28t/ZGFyay5zdmc",
+            "original": "https://www.insurance.com/images/home/site-logo-dark.svg",
+            "logo": true
+          },
+          "age": "May 14, 2025"
+        },
+        {
+          "title": "What Are the Different Types of Insurance? - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/residence/what-are-all-the-different-types-of-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "This type of coverage is usually excluded in a homeowners or renters policy but can be added through the purchase of an earthquake endorsement or a separate earthquake policy.",
+          "page_age": "2025-10-15T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/residence/what-are-all-the-different-types-of-insurance",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a residence  \u203a what are the different types of insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ryHvrQhmMfA6pfi0qhUuhiCPE5OovUus89OYvN3EOeE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L3doYXQtYXJlLWFs/bC10aGUtZGlmZmVy/ZW50LXR5cGVzLW9m/LWluc3VyYW5jZS5q/cGc",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/what-are-all-the-different-types-of-insurance.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "California's FAIR Plan, the home insurer of last resort, may need a bailout after the L.A. fires",
+          "url": "https://www.latimes.com/business/story/2025-01-18/california-fair-plan-the-home-insurer-of-last-resort-may-need-bailout-after-fire-losses",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm General, the state\u2019s biggest home insurer, has become a punching bag after the fires due to its announcement last year that it would not renew some 72,000 residential and commmercial policies statewide.",
+          "page_age": "2025-01-19T01:38:33",
+          "profile": {
+            "name": "Los Angeles Times",
+            "url": "https://www.latimes.com/business/story/2025-01-18/california-fair-plan-the-home-insurer-of-last-resort-may-need-bailout-after-fire-losses",
+            "long_name": "latimes.com",
+            "img": "https://imgs.search.brave.com/EIRey0HaEsL1IV9fnxScQLjHB6lv2fJwFlos_6z5T74/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDFlNWJiNjNk/ZGIzOWIzYTU2ODgz/MDYxMDMxNTY1ZjU1/NTdmNzEzMmQwMDRk/NDZmYTc3Mzg2NTA4/ZjdjOWVlMi93d3cu/bGF0aW1lcy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "latimes.com",
+            "hostname": "www.latimes.com",
+            "favicon": "https://imgs.search.brave.com/EIRey0HaEsL1IV9fnxScQLjHB6lv2fJwFlos_6z5T74/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDFlNWJiNjNk/ZGIzOWIzYTU2ODgz/MDYxMDMxNTY1ZjU1/NTdmNzEzMmQwMDRk/NDZmYTc3Mzg2NTA4/ZjdjOWVlMi93d3cu/bGF0aW1lcy5jb20v",
+            "path": "\u203a business  \u203a story  \u203a 2025-01-18  \u203a california-fair-plan-the-home-insurer-of-last-resort-may-need-bailout-after-fire-losses"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/XYYFPs6NycUF7HrR2gZ_GUX5h9FB6nyn-CeUjIKxME8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jYS10/aW1lcy5icmlnaHRz/cG90Y2RuLmNvbS9k/aW1zNC9kZWZhdWx0/LzAwMjJkNDUvMjE0/NzQ4MzY0Ny9zdHJp/cC9mYWxzZS9jcm9w/LzMyOTV4MjM2MSsw/KzAvcmVzaXplLzE0/ODZ4MTA2NSEvcXVh/bGl0eS83NS8_dXJs/PWh0dHBzJTNBJTJG/JTJGY2FsaWZvcm5p/YS10aW1lcy1icmln/aHRzcG90LnMzLmFt/YXpvbmF3cy5jb20l/MkZmYiUyRmYxJTJG/Y2VkNzcyZDM0ZWI3/YWRhMGQzZjJjZDli/YmIyNCUyRjE0ODk3/MTItbWUtcGFsaXNh/ZGVzLWZpcmUwNi1i/dmIuanBn",
+            "original": "https://ca-times.brightspotcdn.com/dims4/default/0022d45/2147483647/strip/false/crop/3295x2361+0+0/resize/1486x1065!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Ffb%2Ff1%2Fced772d34eb7ada0d3f2cd9bbb24%2F1489712-me-palisades-fire06-bvb.jpg",
+            "logo": false
+          },
+          "age": "January 19, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

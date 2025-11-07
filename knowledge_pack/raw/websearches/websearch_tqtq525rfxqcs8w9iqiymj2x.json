@@ -1,0 +1,798 @@
+{
+  "websearch_id": "websearch_tqtq525rfxqcs8w9iqiymj2x",
+  "search_id": "search_ouwgiyu9dxikt809jy4yiomp",
+  "timestamp": "2025-11-07T12:24:13.747841",
+  "startedAt": "2025-11-07T12:24:13.747841",
+  "completedAt": "2025-11-07T12:24:15.478128",
+  "durationSeconds": 1.73,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:statefarm.com bundle",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:statefarm.com bundle",
+      "show_strict_warning": false,
+      "cleaned": "bundle",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "bundle",
+        "sites": [
+          "statefarm.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "How To Save on Auto Insurance - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/how-to-save-on-auto-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Bundling policies \u2014 combine your auto insurance with renters, homeowners or life insurance to receive a significant multi-policy discount.",
+          "page_age": "2025-11-04T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/how-to-save-on-auto-insurance",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a how to save on auto insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/N2AhaEmU_VmzlFVSoG3lqVVnSETX3aaxYjCNjnIe6kY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L2hvdy10by1zYXZl/LW9uLWF1dG8taW5z/dXJhbmNlLmpwZw",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/how-to-save-on-auto-insurance.jpg",
+            "logo": false
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "How Much Car Insurance Do I Need? - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/how-much-car-insurance-do-i-need",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Bundling \u2014 check with your insurance company about choosing to combine the purchase of your home insurance or renters insurance with your auto insurance.",
+          "page_age": "2025-11-05T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/how-much-car-insurance-do-i-need",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a how much car insurance do i need"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/M6OId-hBHHM1DtadMLzp_LhsLU93Zk2nbM__kKRIf28/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/LzM1Mi1jaG9vc2lu/Zy1yaWdodC1hbW91/bnQtY2FyLWluc3Vy/YW5jZS13aWRlLmpw/Zw",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/352-choosing-right-amount-car-insurance-wide.jpg",
+            "logo": false
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "What Are the Different Types of Insurance? - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/residence/what-are-all-the-different-types-of-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Before making insurance decisions, learn the benefits of bundling insurance and how it can help you save.",
+          "page_age": "2025-10-15T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/residence/what-are-all-the-different-types-of-insurance",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a residence  \u203a what are the different types of insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ryHvrQhmMfA6pfi0qhUuhiCPE5OovUus89OYvN3EOeE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L3doYXQtYXJlLWFs/bC10aGUtZGlmZmVy/ZW50LXR5cGVzLW9m/LWluc3VyYW5jZS5q/cGc",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/what-are-all-the-different-types-of-insurance.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "Tips for First Time Car Insurance Buyers - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/first-car-insurance-policy-what-should-you-know",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Bundling \u2014 if you have renters, homeowners or life insurance, you may save by insuring your car with the same company.footnote 2",
+          "page_age": "2025-11-05T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/first-car-insurance-policy-what-should-you-know",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a tips for first time car insurance buyers"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/8O4acJDfWfB6U0ySnLqOjZ12SfEbGP4HOSpmsCM6ssQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L2ZpcnN0LWNhci1p/bnN1cmFuY2UtcG9s/aWN5LXdoYXQtc2hv/dWxkLXlvdS1rbm93/LmpwZw",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/first-car-insurance-policy-what-should-you-know.jpg",
+            "logo": false
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "How Is Car Insurance Calculated? - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/what-affects-car-insurance-premiums",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Take advantage of discounts \u2014 many companies offer discounts for maintaining safe driving habits or bundling auto insurance with another type of policy such as homeowners or renters.",
+          "page_age": "2025-11-03T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/what-affects-car-insurance-premiums",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a how is car insurance calculated?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/22W4ScVxajd6Z3MtdSyxsR4ID6vlQTx9ux_xmBznaoc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L3doYXQtYWZmZWN0/cy1jYXItaW5zdXJh/bmNlLXByZW1pdW1z/LmpwZw",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/what-affects-car-insurance-premiums.jpg",
+            "logo": false
+          },
+          "age": "5 days ago"
+        },
+        {
+          "title": "Car Rental Reimbursement Coverage Explained - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/rental-reimbursement-coverage",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Before making insurance decisions, learn the benefits of bundling insurance and how it can help you save.",
+          "page_age": "2025-11-05T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/rental-reimbursement-coverage",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a car rental reimbursement coverage explained"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Ezhj9n8OYUMgHThAxec-WguoC8CEqYHeMjkZWxRr4X4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L3JlbnRhbC1yZWlt/YnVyc2VtZW50LWNv/dmVyYWdlLmpwZw",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/rental-reimbursement-coverage.jpg",
+            "logo": false
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "Do I Need Comprehensive Car Insurance? - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/do-i-need-comprehensive-car-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Maximize your auto insurance savings by exploring common discount opportunities like safe driver, good student, bundling and telematics programs.",
+          "page_age": "2025-11-04T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/do-i-need-comprehensive-car-insurance",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a do i need comprehensive car insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/VUOM1QQPsAPZ6RdVNaa5qpalNKkqDnv5Z6to1yncU9A/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/LzEzNzgzODM2My5q/cGc",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/137838363.jpg",
+            "logo": false
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "Drive Safe and Save Business - State Farm\u00ae",
+          "url": "https://www.statefarm.com/insurance/small-business/commercial-auto/business-drive-safe-and-save",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Drive Safe and Save Business helps you save on your auto insurance by providing a discount on your commercial fleet, delivery vehicles and other methods of transportation.",
+          "page_age": "2025-04-16T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/insurance/small-business/commercial-auto/business-drive-safe-and-save",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a insurance  \u203a small business  \u203a commercial auto  \u203a drive safe & save business"
+          },
+          "age": "April 16, 2025"
+        },
+        {
+          "title": "U.S. Bank personal loans now available through State Farm\u00ae",
+          "url": "https://newsroom.statefarm.com/us-bank-state-farm-personal-loans/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In the latest expansion of the State Farm and U.S. Bank alliance, State Farm customers can now apply for U.S. Bank personal loans for up to $50,000 working directly with their agent. The new offering joins the existing suite of U.S. Bank products accessible through State Farm agents that includes deposits, co-branded credit cards and a full suit...",
+          "page_age": "2025-04-03T13:56:15",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/us-bank-state-farm-personal-loans/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a us-bank-state-farm-personal-loans"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/H-QfgQImtgeSUXbxxC39QbKl_PwV4EqgalZSFCFn13c/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vdXBsb2Fk/cy8xNDQxLzkyODMy/NDkxLWUzMGItNGZh/NS04MDM1LTI5OWRj/MDhiMDFhOS8xOTIw/X2xvZ28tcHJlc3Ny/ZWxlYXNlLTMucG5n/PzEwMDAw",
+            "original": "https://content.presspage.com/uploads/1441/92832491-e30b-4fa5-8035-299dc08b01a9/1920_logo-pressrelease-3.png?10000",
+            "logo": true
+          },
+          "age": "April 3, 2025"
+        },
+        {
+          "title": "State Farm Open Source \u2014 Amazon QuickSight User Pruning Terraform Module | by State Farm Engineering | State Farm Engineering Blog",
+          "url": "https://engineering.statefarm.com/state-farm-open-source-amazon-quicksight-user-pruning-terraform-module-3b479fcc9012",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm Open Source \u2014 Amazon QuickSight User Pruning Terraform Module By Clete Blackwell II and Rex Bennett Introduction At State Farm\u00ae, we take pride in being a good neighbor and in helping \u2026",
+          "page_age": "2024-11-25T22:51:36",
+          "profile": {
+            "name": "Medium",
+            "url": "https://engineering.statefarm.com/state-farm-open-source-amazon-quicksight-user-pruning-terraform-module-3b479fcc9012",
+            "long_name": "engineering.statefarm.com",
+            "img": "https://imgs.search.brave.com/QFnMb6tXtim57aue-GqI61pl97H036gkgcde44d_amY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzRjNGFmOTc3/OGYyOTM4YzdhYTNj/NDViYjEyZjdjMDg1/ZjZhNjU3NmMwNTJl/Y2VhNGQxZjRjNDU5/NDhiYTQxOC9lbmdp/bmVlcmluZy5zdGF0/ZWZhcm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "engineering.statefarm.com",
+            "hostname": "engineering.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/QFnMb6tXtim57aue-GqI61pl97H036gkgcde44d_amY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzRjNGFmOTc3/OGYyOTM4YzdhYTNj/NDViYjEyZjdjMDg1/ZjZhNjU3NmMwNTJl/Y2VhNGQxZjRjNDU5/NDhiYTQxOC9lbmdp/bmVlcmluZy5zdGF0/ZWZhcm0uY29tLw",
+            "path": "\u203a state-farm-open-source-amazon-quicksight-user-pruning-terraform-module-3b479fcc9012"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/BXad_q0VyIz5OF4LjBnhQZOAvJoPnbX1NHtfO1G7_KA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9taXJv/Lm1lZGl1bS5jb20v/MSphQ2pHQ3pzUVhv/TUNlMnRrUXRmRlFn/LmpwZWc",
+            "original": "https://miro.medium.com/1*aCjGCzsQXoMCe2tkQtfFQg.jpeg",
+            "logo": false
+          },
+          "age": "November 25, 2024"
+        },
+        {
+          "title": "Intent to Enter Massachusetts Marketplace",
+          "url": "https://newsroom.statefarm.com/statefarm-to-enter-massachusetts/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm is excited to begin offering products and services through State Farm agents in early 2027. For more than 100 years, State Farm has offered its products and services to consumers across the US. Today, we\u2019re pleased to announce that State Farm products and services will be offered ...",
+          "page_age": "2025-10-14T14:53:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/statefarm-to-enter-massachusetts/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a statefarm-to-enter-massachusetts"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/8sASD0Z0WNopAMjIjkSFtrKclDeCgzU-5Yb9ZUfCn28/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vY2xpZW50/cy9vXzE0NDEuanBn",
+            "original": "https://content.presspage.com/clients/o_1441.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "State Farm\u00ae Levels Up Gamerhood Season 4 with Thrilling New Game Elements",
+          "url": "https://newsroom.statefarm.com/gamerhood-season-4/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Following an impressive Season 3 with over 23-million-episode views in 2024, State Farm Gamerhood returns with its most ambitious season yet on August 1.Gamerhood Season 4 cleverly intertwines the worlds of gaming, sports and entertainment in the most exciting ways the series has ever seen.",
+          "page_age": "2025-07-03T18:23:25",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/gamerhood-season-4/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a gamerhood-season-4"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/KKfTJQ_FxejpIg3F0ECJHqZHyj-l6JZcIWVlrlwzA_w/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vdXBsb2Fk/cy8xNDQxLzUxYmE0/NDk3LTNiNjctNDBh/Ny1hMjVmLTQ1YzM1/OTIwOGU0OC8xOTIw/X2doNGhlcm9pbWFn/ZXVwZGF0ZWQucG5n/PzEwMDAw",
+            "original": "https://content.presspage.com/uploads/1441/51ba4497-3b67-40a7-a25f-45c359208e48/1920_gh4heroimageupdated.png?10000",
+            "logo": false
+          },
+          "age": "July 3, 2025"
+        },
+        {
+          "title": "Using Rental Reimbursement When Your Car's in the Shop - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/rental-reimbursement-car-in-shop",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Car in the shop after a covered loss? Learn how to use rental reimbursement and travel expenses coverage from your auto policy for temporary transport costs.",
+          "page_age": "2025-11-05T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/rental-reimbursement-car-in-shop",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a using rental reimbursement when your car's in the shop"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/1qtlEM_YTpDUBXp8IkrpPgY9-ew1tvi-ytOiUAYGJLs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L3JlbnRhbC1yZWlt/YnVyc2VtZW50LWNh/ci1pbi1zaG9wLmpw/Zw",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/rental-reimbursement-car-in-shop.jpg",
+            "logo": false
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "Op-ed Highlights Progress in Florida",
+          "url": "https://newsroom.statefarm.com/op-ed-highlights-progress-in-florida/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Update 10/29/2025There are more positive developments in the works for our Florida customers.State Farm is once again rolling out lower auto rates, overall taking them down more than 20% on average since Oct. 2024. It\u2019s welcome news for our customers as we return value with significant savings.",
+          "page_age": "2025-09-24T17:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/op-ed-highlights-progress-in-florida/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a op-ed-highlights-progress-in-florida"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/8sASD0Z0WNopAMjIjkSFtrKclDeCgzU-5Yb9ZUfCn28/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vY2xpZW50/cy9vXzE0NDEuanBn",
+            "original": "https://content.presspage.com/clients/o_1441.jpg",
+            "logo": false
+          },
+          "age": "September 24, 2025"
+        },
+        {
+          "title": "State Farm\u00ae Announces 2023 Financial Results",
+          "url": "https://newsroom.statefarm.com/2023-financial-results/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Bloomington, IL, February 29, 2024 \u2014 In 2023, State Farm property and casualty insurance companies experienced growth in policies while also reporting underwriting losses due to continued elevated claims severity and significant catastrophe activity, for both the auto and homeowners insurance ...",
+          "page_age": "2024-12-17T19:37:54",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/2023-financial-results/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a 2023-financial-results"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/aUNrJ2sG46qe7OlANKShhNALJWFgzVB0dqS6vbjjY_w/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vdXBsb2Fk/cy8xNDQxLzE5MjBf/bG9nby1wcmVzc3Jl/bGVhc2UtMi5wbmc_/MTAwMDA",
+            "original": "https://content.presspage.com/uploads/1441/1920_logo-pressrelease-2.png?10000",
+            "logo": true
+          },
+          "age": "December 17, 2024"
+        },
+        {
+          "title": "Understanding the Issues in Illinois",
+          "url": "https://newsroom.statefarm.com/understanding-the-issues-in-illinois/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Oct. 14 Update: Illinois AG Lawsuit State Farm complies with all applicable laws and remains committed to working with Illinois regulators. This Illinois taxpayer funded lawsuit is without merit and unrelated to State Farm\u2019s Illinois rates or our Illinois customers.State Farm has provided the Illinois Department of Insurance all data necessary...",
+          "page_age": "2025-10-31T13:27:13",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/understanding-the-issues-in-illinois/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a understanding-the-issues-in-illinois"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/8sASD0Z0WNopAMjIjkSFtrKclDeCgzU-5Yb9ZUfCn28/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vY2xpZW50/cy9vXzE0NDEuanBn",
+            "original": "https://content.presspage.com/clients/o_1441.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Mobile Electronic Document Safety - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/family/mobile-digital-document-safety",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Digital IDs and other sensitive information can be stored on your smartphone. Learn more about ways that can potentially help you do so safely and securely.",
+          "page_age": "2025-07-04T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/family/mobile-digital-document-safety",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a family  \u203a mobile electronic document safety"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/V7pZ8ocaIiocsO3BVmt8YukEA4APjrJ0D21WsI1rF6M/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L21vYmlsZS1kaWdp/dGFsLWRvY3VtZW50/LXNhZmV0eS5qcGc",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/mobile-digital-document-safety.jpg",
+            "logo": false
+          },
+          "age": "July 4, 2025"
+        },
+        {
+          "title": "Additional options for customers in need of a rental or replacement vehicle",
+          "url": "https://newsroom.statefarm.com/for-customers-in-need-of-a-rental-vehicle/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm is fortunate to have relationships with vendors who help our customers recover after devastating events such as the recent wildfire activity.* To support our customers:A special Enterprise Rent-A-Car rental rate is available at certain Southern California neighborhood locations on select cars and SUVs through the following link.In ne...",
+          "page_age": "2025-01-28T21:38:28",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/for-customers-in-need-of-a-rental-vehicle/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a for-customers-in-need-of-a-rental-vehicle"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/8sASD0Z0WNopAMjIjkSFtrKclDeCgzU-5Yb9ZUfCn28/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vY2xpZW50/cy9vXzE0NDEuanBn",
+            "original": "https://content.presspage.com/clients/o_1441.jpg",
+            "logo": false
+          },
+          "age": "January 28, 2025"
+        },
+        {
+          "title": "State Farm in California",
+          "url": "https://newsroom.statefarm.com/state-farm-general-insurance-company-update-on-california-2-2025/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The California FAIR Plan, with the approval of Insurance Commissioner Lara, can assess insurers licensed to sell property insurance in California if the FAIR Plan needs additional funds to help pay for property losses. Following the January 2025 wildfires in Los Angeles County, California\u2019s ...",
+          "page_age": "2025-06-30T05:41:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/state-farm-general-insurance-company-update-on-california-2-2025/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a state-farm-general-insurance-company-update-on-california-2-2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YVmJZtJCqCB4tpzwJtXCDgRC7cp5p1sLLtCkHfMD3W4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vdXBsb2Fk/cy8xNDQxL2Y1M2Fj/NzliLTUyMDMtNDc5/OS1iNWIyLTI4Mjdi/MTliYmM0OS8xOTIw/XzI1MDIxNC1jYWxp/Zm9ybmlhLXVwZGF0/ZS1idy5wbmc_MTAw/MDA",
+            "original": "https://content.presspage.com/uploads/1441/f53ac79b-5203-4799-b5b2-2827b19bbc49/1920_250214-california-update-bw.png?10000",
+            "logo": false
+          },
+          "age": "June 30, 2025"
+        },
+        {
+          "title": "State Farm\u00ae Announces 2024 Financial Results",
+          "url": "https://newsroom.statefarm.com/2024-state-farm-financial-results/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In 2024, State Farm continued to fulfill its mission of helping people manage the risks of everyday life, recover from the unexpected and realize their dreams. We maintained our commitment to helping more customers and, in turn, saw an increase of more than one million policies and accounts.",
+          "page_age": "2025-02-28T18:04:07",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/2024-state-farm-financial-results/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a 2024-state-farm-financial-results"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/H-QfgQImtgeSUXbxxC39QbKl_PwV4EqgalZSFCFn13c/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vdXBsb2Fk/cy8xNDQxLzkyODMy/NDkxLWUzMGItNGZh/NS04MDM1LTI5OWRj/MDhiMDFhOS8xOTIw/X2xvZ28tcHJlc3Ny/ZWxlYXNlLTMucG5n/PzEwMDAw",
+            "original": "https://content.presspage.com/uploads/1441/92832491-e30b-4fa5-8035-299dc08b01a9/1920_logo-pressrelease-3.png?10000",
+            "logo": true
+          },
+          "age": "February 28, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

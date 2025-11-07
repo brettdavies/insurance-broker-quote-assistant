@@ -1,0 +1,795 @@
+{
+  "websearch_id": "websearch_lxhdlk47uv2q40zths3r5gl3",
+  "search_id": "search_ucf8dpy9lsqtob7lv9cd70ri",
+  "timestamp": "2025-11-07T12:26:41.667146",
+  "startedAt": "2025-11-07T12:26:41.667146",
+  "completedAt": "2025-11-07T12:26:43.710732",
+  "durationSeconds": 2.04,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "California \"bodily injury\" minimum",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "California \"bodily injury\" minimum",
+      "show_strict_warning": false,
+      "cleaned": "California bodily injury minimum",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "California bodily injury minimum"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Understanding California's new auto liability coverage law",
+          "url": "https://newsroom.statefarm.com/understanding-californias-new-auto-liability-coverage-law-10-2024/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The second number, 60 or $60,000 is the maximum coverage for bodily injury liability for all persons injured in one accident. The third number, 15 or $15,000 is the maximum coverage for property damage liability in one accident.",
+          "page_age": "2024-11-07T21:19:27",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/understanding-californias-new-auto-liability-coverage-law-10-2024/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a understanding-californias-new-auto-liability-coverage-law-10-2024"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/0UJE-O596FiG_guwAIukFYF0Q_ip1yqWk63U_CJ1G08/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vdXBsb2Fk/cy8xNDQxL2M2ZDlm/NGE5LTEwMjYtNDNl/Zi1hM2M2LTBjMzg3/ZWQ4MjdhZi8xOTIw/XzU2Njg1LXByZGVz/aWduZ3JhcGhpY3Mt/Y2FsaWZvcm5pYXJl/Zm9ybS0wMy5qcGc_/MTAwMDA",
+            "original": "https://content.presspage.com/uploads/1441/c6d9f4a9-1026-43ef-a3c6-0c387ed827af/1920_56685-prdesigngraphics-californiareform-03.jpg?10000",
+            "logo": false
+          },
+          "age": "November 7, 2024"
+        },
+        {
+          "title": "Bodily Injury Liability in California: What Is Bodily Injury Liability Coverage (BILC)?",
+          "url": "https://www.chainlaw.com/bodily-injury-liability-coverage/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "California\u2019s minimum property damage liability coverage is $5,000. If you\u2019re shopping for car insurance, coverage is usually presented in this format: Bodily injury per person / Bodily injury per accident / Property damage per accident",
+          "page_age": "2024-12-07T16:32:32",
+          "profile": {
+            "name": "Chain",
+            "url": "https://www.chainlaw.com/bodily-injury-liability-coverage/",
+            "long_name": "chainlaw.com",
+            "img": "https://imgs.search.brave.com/wAbcG0WJkGafMDJn3yFdwEA6A2zd-icIdjorckIqnC4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTEyZTM3YjVi/ZTg3NWJjMDUxNmUw/MmRhMGViY2I4YjJi/NDAyOGVlMGFlNDhk/ZmI4MThkODBiNTA2/ZDkwMmI1Yy93d3cu/Y2hhaW5sYXcuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "chainlaw.com",
+            "hostname": "www.chainlaw.com",
+            "favicon": "https://imgs.search.brave.com/wAbcG0WJkGafMDJn3yFdwEA6A2zd-icIdjorckIqnC4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTEyZTM3YjVi/ZTg3NWJjMDUxNmUw/MmRhMGViY2I4YjJi/NDAyOGVlMGFlNDhk/ZmI4MThkODBiNTA2/ZDkwMmI1Yy93d3cu/Y2hhaW5sYXcuY29t/Lw",
+            "path": "\u203a bodily-injury-liability-coverage"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Cz30zz1WFBZL4RWocXvXIlXOuY7nXW1saC29goWYx-s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2hhaW5sYXcuY29t/L3dwLWNvbnRlbnQv/dGhlbWVzL2NoYWlu/bGF3L2ltYWdlcy9z/dHJ1Y3R1cmVkLWRh/dGEtaW1nLmpwZw",
+            "original": "https://www.chainlaw.com/wp-content/themes/chainlaw/images/structured-data-img.jpg",
+            "logo": false
+          },
+          "age": "December 7, 2024"
+        },
+        {
+          "title": "What Is the Minimum Insurance Requirement in California? | Los Angeles Personal Injury Lawyers Blog | April 21, 2025",
+          "url": "https://www.rosenstockandazran.com/blog/what-is-the-minimum-insurance-requirement-in-california/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "These changes are outlined in Senate Bill 1107 and amend California Insurance Code \u00a711580.1b. The law requires drivers to maintain the following minimum insurance in California: $30,000 for bodily injury or death to one person in an accident",
+          "page_age": "2025-08-12T20:11:14",
+          "profile": {
+            "name": "Rosenstockandazran",
+            "url": "https://www.rosenstockandazran.com/blog/what-is-the-minimum-insurance-requirement-in-california/",
+            "long_name": "rosenstockandazran.com",
+            "img": "https://imgs.search.brave.com/qXgpv7xw8sg3VVbv3uydJHTO9FVNzhyyHOxpIa4lUwg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWZlZTBiNzcx/YWI5ODAzMzMxOGVl/OGI5MzA3ZDlhNzRh/MWEzYmQyM2Y3Mjc2/ZTgzMDhlNGVjNmE0/Y2MwZDlkMi93d3cu/cm9zZW5zdG9ja2Fu/ZGF6cmFuLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "rosenstockandazran.com",
+            "hostname": "www.rosenstockandazran.com",
+            "favicon": "https://imgs.search.brave.com/qXgpv7xw8sg3VVbv3uydJHTO9FVNzhyyHOxpIa4lUwg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWZlZTBiNzcx/YWI5ODAzMzMxOGVl/OGI5MzA3ZDlhNzRh/MWEzYmQyM2Y3Mjc2/ZTgzMDhlNGVjNmE0/Y2MwZDlkMi93d3cu/cm9zZW5zdG9ja2Fu/ZGF6cmFuLmNvbS8",
+            "path": "  \u203a home  \u203a what is the minimum insurance requirement in california?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ZANLzOwilxzADcjOIB-1G9lF3CQEaiGblSPhBejqKXU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cm9zZW5zdG9ja2Fu/ZGF6cmFuLmNvbS9z/dGF0aWMvMjAyNS8w/Ny9pbWFnZS0xLnBu/Zw",
+            "original": "https://www.rosenstockandazran.com/static/2025/07/image-1.png",
+            "logo": false
+          },
+          "age": "August 12, 2025"
+        },
+        {
+          "title": "A Guide to \"Bodily Injury Liability\" Insurance in California",
+          "url": "https://www.shouselaw.com/ca/personal-injury/car-insurance/bodily-liability-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "California law requires you to maintain bodily injury liability insurance in case you injure someone in a car accident. It pays the other party\u2019s ... In California, you must carry a minimum of \u201c30/60\u201d bodily injury liability.",
+          "page_age": "2025-05-28T20:11:39",
+          "profile": {
+            "name": "Shouse Law",
+            "url": "https://www.shouselaw.com/ca/personal-injury/car-insurance/bodily-liability-insurance/",
+            "long_name": "shouselaw.com",
+            "img": "https://imgs.search.brave.com/-DOB3NOi3PdSIKaS_UsHY1lGqDDZXVzfdC8hPVfowN8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDRiMTYwODEw/Y2Y3NDU2NGFhMjZh/ZmMyZGI2ZGFkZDE1/NDljNWIwOTIyMzZi/YmI5OGRhOGI5Yjky/OGZjYWZlMS93d3cu/c2hvdXNlbGF3LmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "shouselaw.com",
+            "hostname": "www.shouselaw.com",
+            "favicon": "https://imgs.search.brave.com/-DOB3NOi3PdSIKaS_UsHY1lGqDDZXVzfdC8hPVfowN8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDRiMTYwODEw/Y2Y3NDU2NGFhMjZh/ZmMyZGI2ZGFkZDE1/NDljNWIwOTIyMzZi/YmI5OGRhOGI5Yjky/OGZjYWZlMS93d3cu/c2hvdXNlbGF3LmNv/bS8",
+            "path": "  \u203a personal injury  \u203a auto insurance  \u203a bodily injury liability insurance"
+          },
+          "age": "May 28, 2025"
+        },
+        {
+          "title": "California to raise auto liability coverage limits in 2025 | Insurance Business America",
+          "url": "https://www.insurancebusinessmag.com/us/news/auto-motor/california-to-raise-auto-liability-coverage-limits-in-2025-518079.aspx",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Additional increases are scheduled for 2035, with limits for bodily injury or death of one person set to increase by $20,000 and the aggregate limit by $40,000. Property damage coverage will rise by another $10,000.",
+          "page_age": "2024-12-13T16:25:23",
+          "profile": {
+            "name": "Insurance Business America",
+            "url": "https://www.insurancebusinessmag.com/us/news/auto-motor/california-to-raise-auto-liability-coverage-limits-in-2025-518079.aspx",
+            "long_name": "insurancebusinessmag.com",
+            "img": "https://imgs.search.brave.com/wSqy0D5CYsTkoVvYpYyzSqvim_TavRxGYxAzncAes7s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2NlNGVmYjdh/YzAwNDJmMzQ2YTZm/M2QwZmJhODY3NGE1/NWYzYmRhNWY0NGFh/Mjg0NjA0ZGQyNGNk/Nzg0MTBiNC93d3cu/aW5zdXJhbmNlYnVz/aW5lc3NtYWcuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurancebusinessmag.com",
+            "hostname": "www.insurancebusinessmag.com",
+            "favicon": "https://imgs.search.brave.com/wSqy0D5CYsTkoVvYpYyzSqvim_TavRxGYxAzncAes7s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2NlNGVmYjdh/YzAwNDJmMzQ2YTZm/M2QwZmJhODY3NGE1/NWYzYmRhNWY0NGFh/Mjg0NjA0ZGQyNGNk/Nzg0MTBiNC93d3cu/aW5zdXJhbmNlYnVz/aW5lc3NtYWcuY29t/Lw",
+            "path": "  \u203a motor & fleet  \u203a california to raise auto liability coverage limits in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/2UNUSNzcQKN_uNzY8ByYicmRUJ5vUTwl_qOAyfpQyDw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4t/cmVzLmtleW1lZGlh/LmNvbS9jbXMvaW1h/Z2VzL3VzLzAwMy8w/MzU2XzYzODY5NzAz/OTE1NDYwMDg3NC5w/bmc",
+            "original": "https://cdn-res.keymedia.com/cms/images/us/003/0356_638697039154600874.png",
+            "logo": false
+          },
+          "age": "December 13, 2024"
+        },
+        {
+          "title": "California Insurance Policy Limits Have Increased in January: What ...",
+          "url": "https://www.rmdlaw.com/personal-injury-blog/california-insurance-policy-limits/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The updated minimum liability coverage requirements will be as follows: Bodily Injury or Death for One Person: The minimum coverage will increase by $20,000, bringing the total to $50,000.",
+          "page_age": "2025-01-22T09:38:00",
+          "profile": {
+            "name": "RMD Law",
+            "url": "https://www.rmdlaw.com/personal-injury-blog/california-insurance-policy-limits/",
+            "long_name": "rmdlaw.com",
+            "img": "https://imgs.search.brave.com/AxUZ_Wa2i3gFSv1tFUJ6bPuMdf7Lx3Grj4ZvW6eA-Sc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTJmNmVlMDli/NjhlZTcxYTBiOWRk/Mjc5YmU0ZmQ0NzBl/NjlmYjAwM2YxNGY4/OWZkM2M2YWI1YjJm/ZWE3NTZiMy93d3cu/cm1kbGF3LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "rmdlaw.com",
+            "hostname": "www.rmdlaw.com",
+            "favicon": "https://imgs.search.brave.com/AxUZ_Wa2i3gFSv1tFUJ6bPuMdf7Lx3Grj4ZvW6eA-Sc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTJmNmVlMDli/NjhlZTcxYTBiOWRk/Mjc5YmU0ZmQ0NzBl/NjlmYjAwM2YxNGY4/OWZkM2M2YWI1YjJm/ZWE3NTZiMy93d3cu/cm1kbGF3LmNvbS8",
+            "path": "\u203a personal-injury-blog  \u203a california-insurance-policy-limits"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/pRJzEkAsTwWHJ3j33VCiE8gv2ubUEEqxYnaJ8dnDgw8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cm1kbGF3LmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyNS8w/MS9CYW5uZXJfQ2Fs/aWZvcm5pYS1JbnN1/cmFuY2UtUG9saWN5/LUxpbWl0cy1IYXZl/LUluY3JlYXNlZC1p/bi1KYW51YXJ5LVdo/YXQtWW91LU5lZWQt/dG8tS25vdy5wbmc",
+            "original": "https://www.rmdlaw.com/wp-content/uploads/2025/01/Banner_California-Insurance-Policy-Limits-Have-Increased-in-January-What-You-Need-to-Know.png",
+            "logo": false
+          },
+          "age": "January 22, 2025"
+        },
+        {
+          "title": "CA's New Auto Insurance Minimums: Impact on Drivers & Cyclists",
+          "url": "https://www.bikelegalfirm.com/ca-new-auto-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "New California Minimum Liability Insurance Requirements: Effective January 1, 2025, California&#x27;s Senate Bill 1107 raises auto insurance minimums to $30,000 per person injured for bodily injury, $60,000 per accident, and $15,000 for property damage.",
+          "page_age": "2024-12-02T06:35:03",
+          "profile": {
+            "name": "Texas Bicycle Accident Lawyers",
+            "url": "https://www.bikelegalfirm.com/ca-new-auto-insurance",
+            "long_name": "bikelegalfirm.com",
+            "img": "https://imgs.search.brave.com/6slVKDdUHF1EiSpq84l59z2UDRMGYNgSD0x5YyHq2Bg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjIyMjVkYjU4/YTZlNzE1N2QyY2Ji/YjcwODU2MDI0Zjg4/N2RhZDU1NjgyYjFi/MTNlZGY1MzRmMmI4/ODhkM2ZmNS93d3cu/YmlrZWxlZ2FsZmly/bS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bikelegalfirm.com",
+            "hostname": "www.bikelegalfirm.com",
+            "favicon": "https://imgs.search.brave.com/6slVKDdUHF1EiSpq84l59z2UDRMGYNgSD0x5YyHq2Bg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjIyMjVkYjU4/YTZlNzE1N2QyY2Ji/YjcwODU2MDI0Zjg4/N2RhZDU1NjgyYjFi/MTNlZGY1MzRmMmI4/ODhkM2ZmNS93d3cu/YmlrZWxlZ2FsZmly/bS5jb20v",
+            "path": "\u203a ca-new-auto-insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/dOymhBR_akQDmzUHOgDw1ibnOcN39RWmjo77-9K94lQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pcnAu/Y2RuLXdlYnNpdGUu/Y29tLzk2NzBhMjkz/L2RtczNyZXAvbXVs/dGkvY2EtbmV3LWF1/dG8taW5zdXJhbmNl/LW1pbmltdW1zLWlt/cGFjdC1vbi1kcml2/ZXJzLWFuZC1jeWNs/aXN0cy5qcGc",
+            "original": "https://irp.cdn-website.com/9670a293/dms3rep/multi/ca-new-auto-insurance-minimums-impact-on-drivers-and-cyclists.jpg",
+            "logo": false
+          },
+          "age": "December 2, 2024"
+        },
+        {
+          "title": "California's New Auto Insurance Minimums - The Zwerdling Law Firm, LLP",
+          "url": "https://zwerdlinglaw.com/blog/californias-new-auto-insurance-minimums/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Under the new law, known as the Protect California Drivers Act (Senate Bill 1107), the minimum liability limits will increase to: $30,000 for bodily injury or death of one person (up from $15,000)",
+          "page_age": "2025-01-13T17:38:39",
+          "profile": {
+            "name": "Zwerdlinglaw",
+            "url": "https://zwerdlinglaw.com/blog/californias-new-auto-insurance-minimums/",
+            "long_name": "zwerdlinglaw.com",
+            "img": "https://imgs.search.brave.com/9uaEkixdOReXYhDwgxLePaPShb9HGzdtwsb36L4ABJo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTNkOTA2ZDZi/ZjQ3NGU0NmY5ZGU3/NmVjYWU3MDJhZmFi/MTY4ZDgzYmUyOTA3/MzI1ZDVhMDkyMmI0/MmRlZjcwYy96d2Vy/ZGxpbmdsYXcuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "zwerdlinglaw.com",
+            "hostname": "zwerdlinglaw.com",
+            "favicon": "https://imgs.search.brave.com/9uaEkixdOReXYhDwgxLePaPShb9HGzdtwsb36L4ABJo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTNkOTA2ZDZi/ZjQ3NGU0NmY5ZGU3/NmVjYWU3MDJhZmFi/MTY4ZDgzYmUyOTA3/MzI1ZDVhMDkyMmI0/MmRlZjcwYy96d2Vy/ZGxpbmdsYXcuY29t/Lw",
+            "path": "  \u203a home  \u203a california\u2019s new auto insurance minimums"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/hEx-FPWxgcL8Fob4VpWxCSdfYrBY1d5UaDeMgvlE4Xw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly96d2Vy/ZGxpbmdsYXcuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIx/LzExL3RpbS1tb3Nz/aG9sZGVyLVRrMjJW/ck4xeUdFLXVuc3Bs/YXNoLmpwZw",
+            "original": "https://zwerdlinglaw.com/wp-content/uploads/2021/11/tim-mossholder-Tk22VrN1yGE-unsplash.jpg",
+            "logo": false
+          },
+          "age": "January 13, 2025"
+        },
+        {
+          "title": "California Minimum Car Insurance 2025 | Mercury Insurance",
+          "url": "https://www.mercuryinsurance.com/resources/auto/california-minimum-car-insurance-increase-2025.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Check the liability limits and compare your coverage amounts for bodily injury per person, bodily injury per accident, and property damage. If your limits are below the new minimums \u2014 $30,000/$60,000/$15,000 \u2014 you\u2019ll need to adjust your ...",
+          "page_age": "2024-12-18T00:00:00",
+          "profile": {
+            "name": "Mercury Insurance",
+            "url": "https://www.mercuryinsurance.com/resources/auto/california-minimum-car-insurance-increase-2025.html",
+            "long_name": "mercuryinsurance.com",
+            "img": "https://imgs.search.brave.com/zUEXB2Gs5n5j1PeQM9pyBYBKPsPPe4vdJpRP5ON9q8Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTQwMzM0Yzc3/NjBkYWMzM2FiZDk0/YjBmNWI2NTliMDRl/NTI5YzYzMDQxZjFl/OTgxZmMyZGYwOTll/MDY1MjE5ZS93d3cu/bWVyY3VyeWluc3Vy/YW5jZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "video",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "mercuryinsurance.com",
+            "hostname": "www.mercuryinsurance.com",
+            "favicon": "https://imgs.search.brave.com/zUEXB2Gs5n5j1PeQM9pyBYBKPsPPe4vdJpRP5ON9q8Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTQwMzM0Yzc3/NjBkYWMzM2FiZDk0/YjBmNWI2NTliMDRl/NTI5YzYzMDQxZjFl/OTgxZmMyZGYwOTll/MDY1MjE5ZS93d3cu/bWVyY3VyeWluc3Vy/YW5jZS5jb20v",
+            "path": "\u203a resources  \u203a auto  \u203a california-minimum-car-insurance-increase-2025.html"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YyddG7fSbHpzTEqqS-eScDI3oMsrfFGRHS2HV6hq6rM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5mZnljZG4ubmV0/L3VzL21lcmN1cnkt/aW5zdXJhbmNlLzVQ/cGt6U1VYQ3NkVWlp/NnlqQjNFLmpwZz9t/b2Q9djEvb3V0cHV0/PXdlYnAvY292ZXI9/MzoyL3Jlc2l6ZT0z/NTAvcXVhbGl0eT03/MA",
+            "original": "https://media.ffycdn.net/us/mercury-insurance/5PpkzSUXCsdUii6yjB3E.jpg?mod=v1/output=webp/cover=3:2/resize=350/quality=70",
+            "logo": false
+          },
+          "age": "December 18, 2024"
+        },
+        {
+          "title": "Liability Coverage for Bodily Injury",
+          "url": "https://autoaccident.com/liability-coverage-for-bodily-injury/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Those persons who were injured ... to have minimum coverage for bodily injury liability in the amount of $15,000 per person and $30,000 per incident....",
+          "page_age": "2024-12-10T21:33:02",
+          "profile": {
+            "name": "Auto Accident",
+            "url": "https://autoaccident.com/liability-coverage-for-bodily-injury/",
+            "long_name": "autoaccident.com",
+            "img": "https://imgs.search.brave.com/O9iMSpfu_tZqNfioivlNnoqWkijJC2VNTw3UK8fCCBk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzI0ZDk4YTQz/NGNiMDhmNjEwYzZh/MzI0YTMyOTc1NGU4/ZWU1NWYzZGY4NWEy/YzJkY2FlNzE0Yjlm/YzY3YWViOC9hdXRv/YWNjaWRlbnQuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoaccident.com",
+            "hostname": "autoaccident.com",
+            "favicon": "https://imgs.search.brave.com/O9iMSpfu_tZqNfioivlNnoqWkijJC2VNTw3UK8fCCBk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzI0ZDk4YTQz/NGNiMDhmNjEwYzZh/MzI0YTMyOTc1NGU4/ZWU1NWYzZGY4NWEy/YzJkY2FlNzE0Yjlm/YzY3YWViOC9hdXRv/YWNjaWRlbnQuY29t/Lw",
+            "path": "  \u203a home  \u203a liability coverage for bodily injury"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/iWjG7f7M1TU_CD11hR6acxKFgNXok90svWngCdUz4Sk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hdXRv/YWNjaWRlbnQuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8xNzZ4/MjAwX3BsYWNlaG9s/ZGVyLmpwZw",
+            "original": "https://autoaccident.com/wp-content/uploads/176x200_placeholder.jpg",
+            "logo": false
+          },
+          "age": "December 10, 2024"
+        },
+        {
+          "title": "New car insurance minimums in effect for California drivers: What this means, how it might raise premiums",
+          "url": "https://fox5sandiego.com/traffic/new-statewide-car-insurance-minimums-in-effect-for-2025/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The change stems from Senate Bill 1107, which was signed into law in 2022. It doubles the minimum insurance coverage for bodily injury liability to $30,000 per person and $60,000 per incident.",
+          "page_age": "2025-01-03T00:24:35",
+          "profile": {
+            "name": "FOX 5 San Diego",
+            "url": "https://fox5sandiego.com/traffic/new-statewide-car-insurance-minimums-in-effect-for-2025/",
+            "long_name": "fox5sandiego.com",
+            "img": "https://imgs.search.brave.com/qmsaPSFlZU4hJXCiRP_il2Q7OpHuEjCSweg-hskIbYQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjk4Yjk2MzU0/NTRjNTE3YjY3MDhh/YWM0ZDExMzNmNjE0/MGY1Mjg3N2Q1NDk2/NjdhMjVmYTA5ZGEx/YjRhYzk3ZC9mb3g1/c2FuZGllZ28uY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "fox5sandiego.com",
+            "hostname": "fox5sandiego.com",
+            "favicon": "https://imgs.search.brave.com/qmsaPSFlZU4hJXCiRP_il2Q7OpHuEjCSweg-hskIbYQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjk4Yjk2MzU0/NTRjNTE3YjY3MDhh/YWM0ZDExMzNmNjE0/MGY1Mjg3N2Q1NDk2/NjdhMjVmYTA5ZGEx/YjRhYzk3ZC9mb3g1/c2FuZGllZ28uY29t/Lw",
+            "path": "\u203a traffic  \u203a new-statewide-car-insurance-minimums-in-effect-for-2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/EDME1cTB-Fisnv5F8bfHymJ95TGPRBHZZ3_twwC1wCY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9mb3g1/c2FuZGllZ28uY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy9zaXRl/cy8xNS8yMDI0LzEy/L0dldHR5SW1hZ2Vz/LTEzMTkwNjU0ODUt/ZTE3MzQxMjkxMTM1/MTQuanBn",
+            "original": "https://fox5sandiego.com/wp-content/uploads/sites/15/2024/12/GettyImages-1319065485-e1734129113514.jpg",
+            "logo": false
+          },
+          "age": "January 3, 2025"
+        },
+        {
+          "title": "Recommended Bodily Injury Liability Coverage in California",
+          "url": "https://wallethub.com/answers/ci/recommended-bodily-injury-liability-california-1000091-2140813816/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The recommended amount of bodily injury (BI) liability coverage in California is at least $15,000 per person ($30,000 per accident), plus $5,000 for property damage, since these amounts satisfy California&#x27;s minimum coverage requirements.",
+          "page_age": "2025-07-08T15:12:44",
+          "profile": {
+            "name": "WalletHub",
+            "url": "https://wallethub.com/answers/ci/recommended-bodily-injury-liability-california-1000091-2140813816/",
+            "long_name": "wallethub.com",
+            "img": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "wallethub.com",
+            "hostname": "wallethub.com",
+            "favicon": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw",
+            "path": "\u203a answers  \u203a ci  \u203a recommended-bodily-injury-liability-california-1000091-2140813816"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YnFsFD--_0DYDN63YU7RTh6E1ZINWtslBaGMBZrgzuI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbGV0aHViLmNv/bS9pbWFnZXMvd2gy/MDE1L2Fuc3dlcnMv/d2FsbGV0aHViLWFu/c3dlcnNfVjMwYjE2/NmZfLnBuZw",
+            "original": "https://cdn.wallethub.com/images/wh2015/answers/wallethub-answers_V30b166f_.png",
+            "logo": false
+          },
+          "age": "July 8, 2025"
+        },
+        {
+          "title": "Auto Liability Coverage Law | Jassim Law | Personal Injury Lawyer",
+          "url": "https://jassimlaw.com/what-californias-new-auto-liability-coverage-law/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The updated law significantly increases ... liability coverages for all drivers: Bodily injury or death per person: Increased from $15,000 to $30,000....",
+          "page_age": "2025-03-12T16:08:58",
+          "profile": {
+            "name": "Jassim Law",
+            "url": "https://jassimlaw.com/what-californias-new-auto-liability-coverage-law/",
+            "long_name": "jassimlaw.com",
+            "img": "https://imgs.search.brave.com/03-Ih80gVsCp7l-Xxfw7GCww20RWekXuf9peDgbx0t8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODBiZDRiNmRm/OTZhNGU4ODNlYjA3/MjhlMzRmMWI0NmEw/M2FjMGFkYTYzNzg4/NzQ4NThkYjMyMmY3/NzNhODhjYy9qYXNz/aW1sYXcuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "jassimlaw.com",
+            "hostname": "jassimlaw.com",
+            "favicon": "https://imgs.search.brave.com/03-Ih80gVsCp7l-Xxfw7GCww20RWekXuf9peDgbx0t8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODBiZDRiNmRm/OTZhNGU4ODNlYjA3/MjhlMzRmMWI0NmEw/M2FjMGFkYTYzNzg4/NzQ4NThkYjMyMmY3/NzNhODhjYy9qYXNz/aW1sYXcuY29tLw",
+            "path": "  \u203a home  \u203a what is california\u2019s new auto liability coverage law?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Z3oAesC4CU9CkAWHB1RIFEa_4bvnYPQfX_uoVzbaI9Q/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9qYXNz/aW1sYXcuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI0LzEy/L0xvcy1BbmdlbGVz/LmpwZw",
+            "original": "https://jassimlaw.com/wp-content/uploads/2024/12/Los-Angeles.jpg",
+            "logo": false
+          },
+          "age": "March 12, 2025"
+        },
+        {
+          "title": "California Car Insurance Laws (Updated 2025) | The Zebra",
+          "url": "https://www.thezebra.com/auto-insurance/california-car-insurance/state-laws-ca/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "It\u2019s important to note that your own liability coverage never pays for your injuries or damages to your own property. In California, the minimum coverage required is listed as 30/60/15 and is explained in more detail below.",
+          "page_age": "2025-10-28T22:47:58",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/auto-insurance/california-car-insurance/state-laws-ca/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a cheap car insurance  \u203a california car insurance  \u203a california car insurance laws"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/dBfI_HzTMJvVCXcL6eouRB-JYrbpoISHG-tapCgnCnQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9zdGF0/aWMvMWM1YzY0OS96/ZnJvbnQvaW1nL2l6/LXNoYXJlLWxvZ28u/cG5n",
+            "original": "https://cdn.thezebra.com/zfront/static/1c5c649/zfront/img/iz-share-logo.png",
+            "logo": true
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "What Is the Minimum Insurance Requirement in California? - ValuePenguin",
+          "url": "https://www.valuepenguin.com/auto-insurance/california/requirements",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "On Jan. 1, 2025, the state of California raised its minimum requirements for car insurance to $30,000 of bodily injury liability coverage per person and $60,000 per accident, along with $15,000 in property damage coverage",
+          "page_age": "2025-08-13T14:42:20",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/auto-insurance/california/requirements",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a auto-insurance  \u203a california  \u203a requirements"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/VesT7tP_-RbdAB8RMnyBYu-GGRDD5UL70h68ZSvznuE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2F1dG8taW5z/dXJhbmNlL2NvdXBs/ZS1ydW5uaW5nLWVy/cmFuZHM",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/auto-insurance/couple-running-errands",
+            "logo": false
+          },
+          "age": "August 13, 2025"
+        },
+        {
+          "title": "A Guide To \"Bodily Injury Liability\" Insurance In California - Jonny Law",
+          "url": "https://jonny.law/guide-to-bodily-injury-liability-insurance-in-california/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Are you aware that California requires drivers to carry a minimum bodily injury liability insurance coverage of $15,000 per person and $30,000 per accident?",
+          "page_age": "2025-02-13T00:00:00",
+          "profile": {
+            "name": "Jonny Law",
+            "url": "https://jonny.law/guide-to-bodily-injury-liability-insurance-in-california/",
+            "long_name": "jonny.law",
+            "img": "https://imgs.search.brave.com/M8r64kU0mLVyry6HRr_s1GQRqLOd4-AraCVMaB2g_5s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWZmMDNiZTJl/MzA0NzYxMzQ5MjU5/ZTdiNWU3MzM1NmE3/ZTk3YmVjOGZhNDMy/MTAxYzAzZWUwNWUz/YTRjOThjYy9qb25u/eS5sYXcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "jonny.law",
+            "hostname": "jonny.law",
+            "favicon": "https://imgs.search.brave.com/M8r64kU0mLVyry6HRr_s1GQRqLOd4-AraCVMaB2g_5s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWZmMDNiZTJl/MzA0NzYxMzQ5MjU5/ZTdiNWU3MzM1NmE3/ZTk3YmVjOGZhNDMy/MTAxYzAzZWUwNWUz/YTRjOThjYy9qb25u/eS5sYXcv",
+            "path": "\u203a guide-to-bodily-injury-liability-insurance-in-california"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/R5b8BAjQZzCl4PsXaS7GkwNmjci8dK014D87s8rVK9Y/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9qb25u/eS5sYXcvd3AtY29u/dGVudC91cGxvYWRz/LzIwMjQvMTAvQm9k/aWx5LUluanVyeS1M/aWFiaWxpdHkud2Vi/cA",
+            "original": "https://jonny.law/wp-content/uploads/2024/10/Bodily-Injury-Liability.webp",
+            "logo": false
+          },
+          "age": "February 13, 2025"
+        },
+        {
+          "title": "Understanding the Different Types of Car Insurance in California - Setareh Law",
+          "url": "https://www.setarehfirm.com/different-types-of-car-insurance-in-california/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The minimum required auto insurance coverage in California includes: Bodily injury: Must have at least $15,000 for injury or death to one person and at least $30,000 for injury or death to more than one person.",
+          "page_age": "2025-06-24T13:51:42",
+          "profile": {
+            "name": "Setareh Law",
+            "url": "https://www.setarehfirm.com/different-types-of-car-insurance-in-california/",
+            "long_name": "setarehfirm.com",
+            "img": "https://imgs.search.brave.com/mUeDofJ3ZQsO2tuKXzEN-GLBoTyAh6RAUlOr_wQV4r0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODFiZjhkMWQ1/OGFmNjE3MzYxNGM5/OTUzMGMwNmI4MTky/ZmEwNjYyZTZjMTBk/NTE5N2UzYzc3NjEw/MzYyNjcwOS93d3cu/c2V0YXJlaGZpcm0u/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "setarehfirm.com",
+            "hostname": "www.setarehfirm.com",
+            "favicon": "https://imgs.search.brave.com/mUeDofJ3ZQsO2tuKXzEN-GLBoTyAh6RAUlOr_wQV4r0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODFiZjhkMWQ1/OGFmNjE3MzYxNGM5/OTUzMGMwNmI4MTky/ZmEwNjYyZTZjMTBk/NTE5N2UzYzc3NjEw/MzYyNjcwOS93d3cu/c2V0YXJlaGZpcm0u/Y29tLw",
+            "path": "\u203a different-types-of-car-insurance-in-california"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/QLKV9UaMxlNut4QJqt7RFsqIAj2DBlvRIiCuJlGMiLU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c2V0YXJlaGZpcm0u/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIyLzA5L3R5cGVz/LW9mLWF1dG8taW5z/dXJhbmNlLWluLWNh/bGlmb3JuaWEuanBn",
+            "original": "https://www.setarehfirm.com/wp-content/uploads/2022/09/types-of-auto-insurance-in-california.jpg",
+            "logo": false
+          },
+          "age": "June 24, 2025"
+        },
+        {
+          "title": "California\u2019s Auto Insurance Limits Set to Increase in 2025 | AIS Blog",
+          "url": "https://blog.aisinsurance.com/2023/08/30/california-auto-insurance-limits-2025/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Under current California law, all motorists in the state must carry liability insurance with the minimum limits of: $15,000 for bodily injury or death per person \u00b7 $30,000 for bodily injury or death per accident \u00b7 $5,000 for property damage ...",
+          "page_age": "2024-11-07T21:55:20",
+          "profile": {
+            "name": "Aisinsurance",
+            "url": "https://blog.aisinsurance.com/2023/08/30/california-auto-insurance-limits-2025/",
+            "long_name": "blog.aisinsurance.com",
+            "img": "https://imgs.search.brave.com/yLFvrNoEUCHADiZo8VbubNDsECCaRTx7q0_kFkJf2hA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWYzYzQxMGJl/YTg1YWY5MWM0YTAw/MTU3MDIzNjRjNDA2/NzMwMmNjYzYyZWE2/ZDZjZDZmMDc4NmJl/NzkxMmIyNi9ibG9n/LmFpc2luc3VyYW5j/ZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "blog.aisinsurance.com",
+            "hostname": "blog.aisinsurance.com",
+            "favicon": "https://imgs.search.brave.com/yLFvrNoEUCHADiZo8VbubNDsECCaRTx7q0_kFkJf2hA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWYzYzQxMGJl/YTg1YWY5MWM0YTAw/MTU3MDIzNjRjNDA2/NzMwMmNjYzYyZWE2/ZDZjZDZmMDc4NmJl/NzkxMmIyNi9ibG9n/LmFpc2luc3VyYW5j/ZS5jb20v",
+            "path": "  \u203a home  \u203a california\u2019s auto insurance limits set to increase in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/fEQU948BsKX0k-bPMYG0DKuIbBezNfH_-3IyMXz9WVs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9ibG9n/LmFpc2luc3VyYW5j/ZS5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjMvMDgvY2Fs/aWZvcm5pYXMtYXV0/by1pbnN1cmFuY2Ut/bGltaXRzLTIwMjUt/ZmVhdHVyZS5qcGc",
+            "original": "https://blog.aisinsurance.com/wp-content/uploads/2023/08/californias-auto-insurance-limits-2025-feature.jpg",
+            "logo": false
+          },
+          "age": "November 7, 2024"
+        },
+        {
+          "title": "Maximum Liability for Third-Party Bodily Injury",
+          "url": "https://www.kjtlawgroup.com/insights/what-is-the-maximum-liability-for-third-party-bodily-injury/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In addition, every motorist in California must carry $5,000 to cover property damage they cause others\u2019 vehicles. Bodily injury liability coverage pays for injuries or death an at-fault motorist causes another person.",
+          "page_age": "2024-11-09T06:03:07",
+          "profile": {
+            "name": "KJT Law Group",
+            "url": "https://www.kjtlawgroup.com/insights/what-is-the-maximum-liability-for-third-party-bodily-injury/",
+            "long_name": "kjtlawgroup.com",
+            "img": "https://imgs.search.brave.com/UQ2YR-XIBbK_z84fWuyhAa_1Mj8Wl93Ed1y0CWzvtmI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGE3OWQwMmM0/OWE0NjE3OWFiYzIz/MjBjMjRkNjA3ZDll/ZDVjMjIwYTRhZTdl/Yzc1MTVlN2IwYzUy/OWFlNTEzOC93d3cu/a2p0bGF3Z3JvdXAu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "kjtlawgroup.com",
+            "hostname": "www.kjtlawgroup.com",
+            "favicon": "https://imgs.search.brave.com/UQ2YR-XIBbK_z84fWuyhAa_1Mj8Wl93Ed1y0CWzvtmI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGE3OWQwMmM0/OWE0NjE3OWFiYzIz/MjBjMjRkNjA3ZDll/ZDVjMjIwYTRhZTdl/Yzc1MTVlN2IwYzUy/OWFlNTEzOC93d3cu/a2p0bGF3Z3JvdXAu/Y29tLw",
+            "path": "  \u203a home  \u203a what is the maximum liability for third-party bodily injury?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/9bMpQkeWmgB5Xp7VE52eoFueOafhcY2KsTQlhY9j9aA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/a2p0bGF3Z3JvdXAu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI0LzAxLzI5NDY0/NjMxOV80MTcyMTkz/OTcwOTA5MjZfNDA2/ODkzOTg1Mjg1MTk1/Njc5OF9uLmpwZw",
+            "original": "https://www.kjtlawgroup.com/wp-content/uploads/2024/01/294646319_417219397090926_4068939852851956798_n.jpg",
+            "logo": false
+          },
+          "age": "November 9, 2024"
+        },
+        {
+          "title": "Important Changes to California Minimum Liability Limits \u2013 United Agencies Inc.",
+          "url": "https://ua-insurance.com/important-changes-to-california-minimum-liability-limits/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Effective January 1, 2025: California raised the state-mandated minimum insurance limits for Bodily Injury and Property Damage on Personal Auto and Commercial Auto policies.",
+          "page_age": "2024-11-08T20:01:59",
+          "profile": {
+            "name": "United Agencies Inc.",
+            "url": "https://ua-insurance.com/important-changes-to-california-minimum-liability-limits/",
+            "long_name": "ua-insurance.com",
+            "img": "https://imgs.search.brave.com/C7jlGegxNxsh7XfwlaHEwZqExO9YednC1XkuIIg9El4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzkzM2EzZjE1/MjVhZjMxYzhkOWEz/NzE3YmZmZWM2OWIy/Yjg4NjVjZmE2Y2Vk/NzIxMGYzODRmYzJi/ZGNlZmE3ZC91YS1p/bnN1cmFuY2UuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "ua-insurance.com",
+            "hostname": "ua-insurance.com",
+            "favicon": "https://imgs.search.brave.com/C7jlGegxNxsh7XfwlaHEwZqExO9YednC1XkuIIg9El4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzkzM2EzZjE1/MjVhZjMxYzhkOWEz/NzE3YmZmZWM2OWIy/Yjg4NjVjZmE2Y2Vk/NzIxMGYzODRmYzJi/ZGNlZmE3ZC91YS1p/bnN1cmFuY2UuY29t/Lw",
+            "path": "  \u203a home  \u203a important changes to california minimum liability limits"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/NS9UChlGclLGAWrRPZy5-CGAXDHvXsY-VuPx72tMmxs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91YS1p/bnN1cmFuY2UuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIx/LzA5L2ltcG9ydGFu/dC1ub3RpY2UtNzBx/LmpwZw",
+            "original": "https://ua-insurance.com/wp-content/uploads/2021/09/important-notice-70q.jpg",
+            "logo": false
+          },
+          "age": "November 8, 2024"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

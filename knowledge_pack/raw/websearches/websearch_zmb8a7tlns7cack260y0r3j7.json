@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_zmb8a7tlns7cack260y0r3j7",
+  "search_id": "search_pgnh2xxwqqyhz9w8kv2pzn2f",
+  "timestamp": "2025-11-07T12:30:02.988742",
+  "startedAt": "2025-11-07T12:30:02.988742",
+  "completedAt": "2025-11-07T12:30:04.719396",
+  "durationSeconds": 1.73,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:reddit.com/r/insurance Progressive commission",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:reddit.com/r/insurance Progressive commission",
+      "show_strict_warning": false,
+      "cleaned": "Progressive commission",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "Progressive commission",
+        "sites": [
+          "reddit.com/r/insurance"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "websearch_id": "websearch_nqkal0obp1f1amupozquib9p",
+  "search_id": "search_om9dqrgrgq8m11d20bhps7au",
+  "timestamp": "2025-11-07T12:34:06.964109",
+  "startedAt": "2025-11-07T12:34:06.964109",
+  "completedAt": "2025-11-07T12:34:08.860422",
+  "durationSeconds": 1.9,
+  "urlsDiscoveredCount": 1,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"bundling\" \"multi-policy\" \"additional discounts\"",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"bundling\" \"multi-policy\" \"additional discounts\"",
+      "show_strict_warning": false,
+      "cleaned": "bundling multi-policy additional discounts",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "bundling multi-policy additional discounts"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Unlocking Savings With Multi-Policy Insurance Discounts",
+          "url": "https://mitchellinsuranceservicesllc.com/blog/multi-policy-insurance-discounts/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Home and Umbrella Insurance: Umbrella insurance provides additional liability protection and pairs well with homeowners insurance. Auto and Motorcycle Insurance: Combining these policies is convenient for individuals who own multiple vehicles. Home, Life, and Auto Insurance: Some providers offer comprehensive discounts when you bundle three or more types of coverage.",
+          "page_age": "2025-02-18T17:55:26",
+          "profile": {
+            "name": "Mitchellinsuranceservicesllc",
+            "url": "https://mitchellinsuranceservicesllc.com/blog/multi-policy-insurance-discounts/",
+            "long_name": "mitchellinsuranceservicesllc.com",
+            "img": "https://imgs.search.brave.com/0etCKMPAe4isFjdUMmiQG3P4hyWh1oSt4at51eu86t8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzYzZjMzNmNk/YWI1NDY5ODRjYzMw/OWJlZGNhNjM0ZWU0/ZDFhYjFlMmExM2Y1/YjAwOGI0ZTRkZTk5/NWI0NjJjOS9taXRj/aGVsbGluc3VyYW5j/ZXNlcnZpY2VzbGxj/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "mitchellinsuranceservicesllc.com",
+            "hostname": "mitchellinsuranceservicesllc.com",
+            "favicon": "https://imgs.search.brave.com/0etCKMPAe4isFjdUMmiQG3P4hyWh1oSt4at51eu86t8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzYzZjMzNmNk/YWI1NDY5ODRjYzMw/OWJlZGNhNjM0ZWU0/ZDFhYjFlMmExM2Y1/YjAwOGI0ZTRkZTk5/NWI0NjJjOS9taXRj/aGVsbGluc3VyYW5j/ZXNlcnZpY2VzbGxj/LmNvbS8",
+            "path": "  \u203a blog  \u203a unlocking savings with multi-policy insurance discounts"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/mZs0jY_uq6Es7jmLJuxVqcEXkMrgmHCFCsNZO9oF_fs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9taXRj/aGVsbGluc3VyYW5j/ZXNlcnZpY2VzbGxj/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/c2l0ZXMvMTkvd2F5/c190b19zYXZlX2hv/bWVvd25lcnNfcG9s/aWN5LndlYnA",
+            "original": "https://mitchellinsuranceservicesllc.com/wp-content/uploads/sites/19/ways_to_save_homeowners_policy.webp",
+            "logo": false
+          },
+          "age": "February 18, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

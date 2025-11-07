@@ -1,0 +1,134 @@
+{
+  "websearch_id": "websearch_vmhzsct20f0c16gzbj1eu11h",
+  "search_id": "search_hzu8hxxirwg28a9c6py4nr9h",
+  "timestamp": "2025-11-07T12:26:11.250594",
+  "startedAt": "2025-11-07T12:26:11.250594",
+  "completedAt": "2025-11-07T12:26:13.162784",
+  "durationSeconds": 1.91,
+  "urlsDiscoveredCount": 2,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"State Farm\" \"construction type\" eligibility",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"State Farm\" \"construction type\" eligibility",
+      "show_strict_warning": false,
+      "cleaned": "State Farm construction type eligibility",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "State Farm construction type eligibility"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Guide to builder\u2019s risk insurance for homeowners",
+          "url": "https://www.insurance.com/home-and-renters-insurance/home-insurance-basics/building-a-house.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Anyone who has a financial interest in a construction project needs builder&#x27;s risk insurance. The following is a list of some of the people to add to your insurance policy: ... &quot;Whether you need insurance depends on your contract,&quot; says Carol ...",
+          "page_age": "2025-07-02T00:00:00",
+          "profile": {
+            "name": "Insurance.com",
+            "url": "https://www.insurance.com/home-and-renters-insurance/home-insurance-basics/building-a-house.html",
+            "long_name": "insurance.com",
+            "img": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurance.com",
+            "hostname": "www.insurance.com",
+            "favicon": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8",
+            "path": "  \u203a home  \u203a home insurance  \u203a home insurance rates  \u203a home insurance rates by state  \u203a home insurance basics  \u203a builder\u2019s risk insurance: a guide for homeowners"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ttkaBo7UUu2C5eBqbQhDdMBnzN5N1lY4vETjuvd8iHk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmNlLmNv/bS91cGxvYWRlZGZp/bGVzL21lZGlhL2J1/aWxkaW5nLWEtaG91/c2UuanBn",
+            "original": "https://www.insurance.com/uploadedfiles/media/building-a-house.jpg",
+            "logo": false
+          },
+          "age": "July 2, 2025"
+        },
+        {
+          "title": "r/Insurance on Reddit: Insurance company won't believe me when I say my home construction is masonry",
+          "url": "https://www.reddit.com/r/Insurance/comments/1k1h5nl/insurance_company_wont_believe_me_when_i_say_my/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If a house is 85% masonry and 15% stucco, the underwriting rules might require masonry to constitute 90% of the construction material to justify the factorial savings. ... The answer is that &quot;it depends&quot;.",
+          "page_age": "2025-04-17T21:50:59",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Insurance/comments/1k1h5nl/insurance_company_wont_believe_me_when_i_say_my/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/insurance  \u203a insurance company won't believe me when i say my home construction is masonry"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A5H_aQiEBuUODR0lNeU8iDfhrWUvO8oEmRGE_mcS_gM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVkZGl0c3RhdGlj/LmNvbS9pY29uLnBu/Zw",
+            "original": "https://www.redditstatic.com/icon.png",
+            "logo": true
+          },
+          "age": "April 17, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

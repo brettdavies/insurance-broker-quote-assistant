@@ -1,0 +1,52 @@
+{
+  "websearch_id": "websearch_hy50ujagqc46irom2mixcepu",
+  "search_id": "search_mn6w4khvh6vh983i68j779wu",
+  "timestamp": "2025-11-07T12:27:55.292694",
+  "startedAt": "2025-11-07T12:27:55.292694",
+  "completedAt": "2025-11-07T12:27:57.235705",
+  "durationSeconds": 1.94,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "filetype:pdf Illinois auto insurance minimums",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "filetype:pdf Illinois auto insurance minimums",
+      "show_strict_warning": false,
+      "cleaned": "Illinois auto insurance minimums pdf",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "Illinois auto insurance minimums pdf"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

@@ -1,0 +1,784 @@
+{
+  "websearch_id": "websearch_kr0w5cov2b50jj1ehert9shp",
+  "search_id": "search_u3hze7633cd61oa3bzlpqhzl",
+  "timestamp": "2025-11-07T12:24:00.295427",
+  "startedAt": "2025-11-07T12:24:00.295427",
+  "completedAt": "2025-11-07T12:24:02.286158",
+  "durationSeconds": 1.99,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" \"multi-policy\" home auto save",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"GEICO\" \"multi-policy\" home auto save",
+      "show_strict_warning": false,
+      "cleaned": "GEICO multi-policy home auto save",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO multi-policy home auto save"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "11 Ways To Save On Car Insurance",
+          "url": "https://living.geico.com/saving/insurance-101/4-ways-to-save-on-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Move all your vehicles to GEICO and see how much more you could save. Depending on the state you live in, you could be eligible for a multi-policy/multi-line discount if you buy more than one type of coverage through the same insurer.",
+          "page_age": "2024-11-12T19:45:04",
+          "profile": {
+            "name": "GEICO Living",
+            "url": "https://living.geico.com/saving/insurance-101/4-ways-to-save-on-car-insurance/",
+            "long_name": "living.geico.com",
+            "img": "https://imgs.search.brave.com/Cve-gaVVRqJopC0zfLT35CI5tzMv9fEQel0RH0-pstQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTQwNzI2ZGQy/YzdhMzYxOGY2MGQx/YmFiNGYyOGY2MDgz/M2E5Yjc5YjJhOWY4/OTYzOGU2ZTFjMWYy/NThhZjQxMi9saXZp/bmcuZ2VpY28uY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "living.geico.com",
+            "hostname": "living.geico.com",
+            "favicon": "https://imgs.search.brave.com/Cve-gaVVRqJopC0zfLT35CI5tzMv9fEQel0RH0-pstQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTQwNzI2ZGQy/YzdhMzYxOGY2MGQx/YmFiNGYyOGY2MDgz/M2E5Yjc5YjJhOWY4/OTYzOGU2ZTFjMWYy/NThhZjQxMi9saXZp/bmcuZ2VpY28uY29t/Lw",
+            "path": "\u203a saving  \u203a insurance-101  \u203a 4-ways-to-save-on-car-insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/SR9OF3_Pni6kOZW6ECZEEZYg8NmW_6Ca2eNGn-iCsoI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9saXZp/bmcuZ2VpY28uY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMl84/ODMxODYzMjhfU09D/X1BIT19HRUlDT19M/aXZpbmdfUGlnZ3lf/QmFua19DYXJfNjAw/eDQwMC5qcGc",
+            "original": "https://living.geico.com/wp-content/uploads/22_883186328_SOC_PHO_GEICO_Living_Piggy_Bank_Car_600x400.jpg",
+            "logo": false
+          },
+          "age": "November 12, 2024"
+        },
+        {
+          "title": "Can I bundle my Geico car insurance with other policies? | FreeAdvice.com",
+          "url": "https://www.freeadvice.com/insurance/can-i-bundle-my-geico-car-insurance-with-other-policies/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Let us help you save money today! Yes, GEICO offers the option to bundle your car insurance with other policies such as homeowners, renters, or motorcycle insurance. Bundling your GEICO car insurance with other policies can provide several benefits including potential discounts, simplified billing, and the convenience of managing multiple policies under one provider.",
+          "page_age": "2025-01-28T00:35:57",
+          "profile": {
+            "name": "FreeAdvice",
+            "url": "https://www.freeadvice.com/insurance/can-i-bundle-my-geico-car-insurance-with-other-policies/",
+            "long_name": "freeadvice.com",
+            "img": "https://imgs.search.brave.com/zEolwdKnj7qMwLKZ1CZ_H4bwiQdYATaTCLc9MOMi4AI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWQ4ZTk1YjM4/ZDZlODhhOGE1MzA1/YWM3NjVhOWFjZTU0/ZGEwYTM3NDU4MDc2/NmNjMzBiZGY4YTJh/YWE4ZjY0YS93d3cu/ZnJlZWFkdmljZS5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "freeadvice.com",
+            "hostname": "www.freeadvice.com",
+            "favicon": "https://imgs.search.brave.com/zEolwdKnj7qMwLKZ1CZ_H4bwiQdYATaTCLc9MOMi4AI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWQ4ZTk1YjM4/ZDZlODhhOGE1MzA1/YWM3NjVhOWFjZTU0/ZGEwYTM3NDU4MDc2/NmNjMzBiZGY4YTJh/YWE4ZjY0YS93d3cu/ZnJlZWFkdmljZS5j/b20v",
+            "path": "  \u203a home  \u203a insurance  \u203a auto insurance center  \u203a auto insurance articles  \u203a buying car insurance - what to know before you buy"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/9eqQiGhTYhtGlXpZPBKCGoGeM4MtWrZEwuwKgIlD9JE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZWFkdmljZS5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjMvMTEvQ2FuLUkt/YnVuZGxlLW15LUdl/aWNvLWNhci1pbnN1/cmFuY2Utd2l0aC1v/dGhlci1wb2xpY2ll/cy5wbmcucG5n",
+            "original": "https://www.freeadvice.com/wp-content/uploads/2023/11/Can-I-bundle-my-Geico-car-insurance-with-other-policies.png.png"
+          },
+          "age": "January 28, 2025"
+        },
+        {
+          "title": "Can I bundle my GEICO car insurance with other policies? | USInsuranceAgents.com",
+          "url": "https://www.usinsuranceagents.com/can-i-bundle-my-geico-car-insurance-with-other-policies/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "By using a free tool like Exercise.com, you\u2019re able to review insurance rates from different companies online, helping you save money and find the best insurance rates. Take advantage of these resources to make an informed decision about bundling your GEICO car insurance with other policies. GEICO offers several bundling options that can provide added value and savings for policyholders. Here are a few bundling options available: One of the common bundling options with GEICO is combining auto insurance and home insurance policies.",
+          "page_age": "2025-08-21T06:38:43",
+          "profile": {
+            "name": "US Insurance Agents",
+            "url": "https://www.usinsuranceagents.com/can-i-bundle-my-geico-car-insurance-with-other-policies/",
+            "long_name": "usinsuranceagents.com",
+            "img": "https://imgs.search.brave.com/unmDQgTHhBkj5GICntEXikQ6111y84wQZvB2XH5fsUE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTMzYzYxYjBl/MjZjNzcyY2MxOTc3/MGQzYTJkZDRlZjNj/OWM1MWI4ZmE4MDY5/MDNmNjFjYjg3ODgz/ZjcwMzFjZC93d3cu/dXNpbnN1cmFuY2Vh/Z2VudHMuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "usinsuranceagents.com",
+            "hostname": "www.usinsuranceagents.com",
+            "favicon": "https://imgs.search.brave.com/unmDQgTHhBkj5GICntEXikQ6111y84wQZvB2XH5fsUE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTMzYzYxYjBl/MjZjNzcyY2MxOTc3/MGQzYTJkZDRlZjNj/OWM1MWI4ZmE4MDY5/MDNmNjFjYjg3ODgz/ZjcwMzFjZC93d3cu/dXNpbnN1cmFuY2Vh/Z2VudHMuY29tLw",
+            "path": "  \u203a home  \u203a best car insurance  \u203a how to save on car insurance  \u203a shopping for car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/UI_wLVOI88c_9ihw22L7WHe0dip4ESLLqoHPO-vMuic/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dXNpbnN1cmFuY2Vh/Z2VudHMuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIwLzA5/LzY2ZjYxZTAwLXVz/aWEtZmF2aWNvbi5z/dmc",
+            "original": "https://www.usinsuranceagents.com/wp-content/uploads/2020/09/66f61e00-usia-favicon.svg",
+            "logo": true
+          },
+          "age": "August 21, 2025"
+        },
+        {
+          "title": "GEICO Home Insurance Review",
+          "url": "https://www.moneygeek.com/insurance/homeowners/reviews/geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO offers six discounts for homeowners insurance, including a multi-policy discount when you bundle home and auto coverage, home security discounts for alarm systems and cameras, and safety equipment discounts for smoke detectors and fire ...",
+          "page_age": "2025-10-29T10:25:35",
+          "profile": {
+            "name": "MoneyGeek",
+            "url": "https://www.moneygeek.com/insurance/homeowners/reviews/geico/",
+            "long_name": "moneygeek.com",
+            "img": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "moneygeek.com",
+            "hostname": "www.moneygeek.com",
+            "favicon": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8",
+            "path": "  \u203a home  \u203a insurance  \u203a geico homeowners insurance review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/x1OQJxpE_J8W2gHMWyFTklZU6My-FdjDYddjiMVLpB4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbW9uZXlnZWVr/L2ltYWdlL3VwbG9h/ZC9jX3NjYWxlLHFf/YXV0bzplY28sd18x/MjAwLGZfYXV0byxm/bF9sb3NzeS92MTc1/NjQ5NTg0OC9nZWlj/b19sb2dvX2MwM2Nk/ZGNiN2QuanBn",
+            "original": "https://res.cloudinary.com/moneygeek/image/upload/c_scale,q_auto:eco,w_1200,f_auto,fl_lossy/v1756495848/geico_logo_c03cddcb7d.jpg",
+            "logo": true
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Best Geico Auto Insurance Discounts in 2025 (Save 26% With These Special Offers!) | AutoInsurance.org",
+          "url": "https://www.autoinsurance.org/geico-auto-insurance-discounts/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Another top discount from Geico is the multi-policy discount, which also offers up to 25% savings. This discount applies when you bundle your auto insurance with other types of insurance, such as home or renters insurance.",
+          "page_age": "2025-08-01T23:18:47",
+          "profile": {
+            "name": "AutoInsurance.org",
+            "url": "https://www.autoinsurance.org/geico-auto-insurance-discounts/",
+            "long_name": "autoinsurance.org",
+            "img": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.org",
+            "hostname": "www.autoinsurance.org",
+            "favicon": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv",
+            "path": "  \u203a home  \u203a shopping for auto insurance  \u203a best auto insurance discounts"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/IBZLe7FjASOrsAdF79a4AjLscVHIRyrNl-5lH7xgh3E/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vcXVvdGVsbGMv/aW1hZ2UvdXBsb2Fk/L2luc3VyYW5jZS1z/aXRlLWltYWdlcy9h/aW9yZy1saXZlLzNm/YzJmYTlkLWFpb3Jn/LWxvZ28uc3Zn",
+            "original": "https://res.cloudinary.com/quotellc/image/upload/insurance-site-images/aiorg-live/3fc2fa9d-aiorg-logo.svg",
+            "logo": true
+          },
+          "age": "August 1, 2025"
+        },
+        {
+          "title": "Geico Homeowners Insurance Review 2025 - Coverage Explained | U.S. News",
+          "url": "https://www.usnews.com/insurance/homeowners-insurance/geico-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "While discounts will vary depending ... to most customers, including: Multi-policy discount: You can save on your monthly premiums by bundling your homeowners insurance with another policy, such as car insurance....",
+          "page_age": "2025-07-03T17:40:00",
+          "profile": {
+            "name": "U.S. News",
+            "url": "https://www.usnews.com/insurance/homeowners-insurance/geico-review",
+            "long_name": "usnews.com",
+            "img": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "usnews.com",
+            "hostname": "www.usnews.com",
+            "favicon": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8",
+            "path": "\u203a insurance  \u203a homeowners-insurance  \u203a geico-review"
+          },
+          "age": "July 3, 2025"
+        },
+        {
+          "title": "Geico Insurance Quote - compare 2025 auto home cost coverage",
+          "url": "https://blakeinsurancegroup.com/geico-insurance-quote/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Many companies offer multi-policy savings when you combine auto with home, renters, or condo coverage. Compliance: Licensed insurance producer (NPR/NPN 16944666). Coverage, features, discounts, and eligibility vary by state and carrier.",
+          "page_age": "2025-09-04T03:23:08",
+          "profile": {
+            "name": "Blakeinsurancegroup",
+            "url": "https://blakeinsurancegroup.com/geico-insurance-quote/",
+            "long_name": "blakeinsurancegroup.com",
+            "img": "https://imgs.search.brave.com/a01NlX7BtgFhqHXaWoZLIAJaIF31fpx_LFtlcXYTxgQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvY2ZiMzRiODBm/NWExZTgwZTdhMmRl/N2ZkZDRmMTZhNmMy/ODE5ZDE2MjI2ZDBk/ZmM2NDJkMzdlMTM1/NDUyMGYyYy9ibGFr/ZWluc3VyYW5jZWdy/b3VwLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "blakeinsurancegroup.com",
+            "hostname": "blakeinsurancegroup.com",
+            "favicon": "https://imgs.search.brave.com/a01NlX7BtgFhqHXaWoZLIAJaIF31fpx_LFtlcXYTxgQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvY2ZiMzRiODBm/NWExZTgwZTdhMmRl/N2ZkZDRmMTZhNmMy/ODE5ZDE2MjI2ZDBk/ZmM2NDJkMzdlMTM1/NDUyMGYyYy9ibGFr/ZWluc3VyYW5jZWdy/b3VwLmNvbS8",
+            "path": "  \u203a geico insurance quote"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/uPtg6vL2VWi8C2Kozfn-9ovKG0N4JHb7gTpYxJSmBTA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9ibGFr/ZWluc3VyYW5jZWdy/b3VwLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNC8wMS9J/TUdfMjA0Ni1zY2Fs/ZWQuanBlZw",
+            "original": "https://blakeinsurancegroup.com/wp-content/uploads/2024/01/IMG_2046-scaled.jpeg",
+            "logo": false
+          },
+          "age": "September 4, 2025"
+        },
+        {
+          "title": "Home and Car Insurance Bundle: What It Is + How It Works | FinanceBuzz",
+          "url": "https://financebuzz.com/home-and-car-insurance-bundle",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If you check the policies and discounts of each provider, you&#x27;ll know which has the best deal. This could involve a multi-policy discount, but it might not. Yes, Geico bundles home and auto insurance and offers a multi-policy discount.",
+          "page_age": "2025-08-20T15:25:24",
+          "profile": {
+            "name": "FinanceBuzz",
+            "url": "https://financebuzz.com/home-and-car-insurance-bundle",
+            "long_name": "financebuzz.com",
+            "img": "https://imgs.search.brave.com/S-NKWliRWqMFS55aFMSJ2mN0Nznm6Nk76Mt95jC6F9U/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWNjZDU5ODQy/Y2NmN2M2ZWQxZWMw/MGMxMGFkMjg1NThm/NjFmMTI0ZDUzNTIz/NDk1NzA3YzI1MTRk/MGY1OTg4Yy9maW5h/bmNlYnV6ei5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "financebuzz.com",
+            "hostname": "financebuzz.com",
+            "favicon": "https://imgs.search.brave.com/S-NKWliRWqMFS55aFMSJ2mN0Nznm6Nk76Mt95jC6F9U/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWNjZDU5ODQy/Y2NmN2M2ZWQxZWMw/MGMxMGFkMjg1NThm/NjFmMTI0ZDUzNTIz/NDk1NzA3YzI1MTRk/MGY1OTg4Yy9maW5h/bmNlYnV6ei5jb20v",
+            "path": "  \u203a insurance  \u203a car insurance  \u203a home and car insurance bundle: what it is + how it works"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/DvDmQNy23nWREXxvrUPiJ41qlh_YXRo114tdpRQqQYA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/ZmluYW5jZWJ1enou/Y29tL2ZpbHRlcnM6/cXVhbGl0eSgxMDAp/L2ltYWdlcy8yMDIx/LzAyLzAzL2hhcHB5/LWZhbWlseS1jYXIt/aG91c2UuanBn",
+            "original": "https://cdn.financebuzz.com/filters:quality(100)/images/2021/02/03/happy-family-car-house.jpg",
+            "logo": false
+          },
+          "age": "August 20, 2025"
+        },
+        {
+          "title": "Geico Car Insurance Review | LendingTree",
+          "url": "https://www.lendingtree.com/insurance/geico-insurance-review/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Your home insurance discounts may differ based on the Geico partner that provides your coverage. However, if you have car insurance or another policy with Geico, you can get a multi-policy discount.",
+          "page_age": "2025-08-29T19:06:49",
+          "profile": {
+            "name": "LendingTree",
+            "url": "https://www.lendingtree.com/insurance/geico-insurance-review/",
+            "long_name": "lendingtree.com",
+            "img": "https://imgs.search.brave.com/yXocWnwl2PfTEvlx2rFx5rmJolpgkbGDO3CG6T07Njk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGRlZjI4ZGJk/MWJiMDE4ZjliM2Vh/ZmFlZmMyMjUxNDg1/MjUyYmQzOGU4ZTFi/ZGIxNTA3MThlZTIz/YThlYmVkZS93d3cu/bGVuZGluZ3RyZWUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "lendingtree.com",
+            "hostname": "www.lendingtree.com",
+            "favicon": "https://imgs.search.brave.com/yXocWnwl2PfTEvlx2rFx5rmJolpgkbGDO3CG6T07Njk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGRlZjI4ZGJk/MWJiMDE4ZjliM2Vh/ZmFlZmMyMjUxNDg1/MjUyYmQzOGU4ZTFi/ZGIxNTA3MThlZTIz/YThlYmVkZS93d3cu/bGVuZGluZ3RyZWUu/Y29tLw",
+            "path": "\u203a insurance  \u203a geico-insurance-review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/4ncR5r1gf85I-cvAtKoc3W4EZdS3J0zDYYPvq4_ukKY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bGVuZGluZ3RyZWUu/Y29tL2luc3VyYW5j/ZS9nZWljby1pbnN1/cmFuY2UtcmV2aWV3/Lw",
+            "original": "https://www.lendingtree.com/insurance/geico-insurance-review/",
+            "logo": false
+          },
+          "age": "August 29, 2025"
+        },
+        {
+          "title": "Geico Car Insurance Review October 2025 - Coverage & Cost | U.S. News",
+          "url": "https://www.usnews.com/insurance/auto/geico-car-insurance-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico offers a multi-policy discount even though the company only underwrites auto insurance policies. Homeowners and renters who want to bundle their coverage for a discounted rate will have their home or renters insurance coverage underwritten by one of the ten affiliate companies that works ...",
+          "page_age": "2025-11-01T19:13:00",
+          "profile": {
+            "name": "U.S. News",
+            "url": "https://www.usnews.com/insurance/auto/geico-car-insurance-review",
+            "long_name": "usnews.com",
+            "img": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "usnews.com",
+            "hostname": "www.usnews.com",
+            "favicon": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8",
+            "path": "\u203a insurance  \u203a auto  \u203a geico-car-insurance-review"
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "GEICO Home Insurance Review 2025: Coverage, Cost, and Customer Satisfaction",
+          "url": "https://www.businessinsider.com/personal-finance/homeowners-insurance/geico-homeowners-insurance-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Offers multi-policy discounts. ... GEICO homeowners insurance is one of many products the online giant offers. But, unlike its auto insurance, it encourages customers to work with its call center agents to find the right fit, buy all necessary coverage, etc.",
+          "page_age": "2025-05-19T21:56:09",
+          "profile": {
+            "name": "Business Insider",
+            "url": "https://www.businessinsider.com/personal-finance/homeowners-insurance/geico-homeowners-insurance-review",
+            "long_name": "businessinsider.com",
+            "img": "https://imgs.search.brave.com/Z6wRqiE6vvL-8sy5MskRt7Tuy1z-PxXnfSbVXVy86vw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTI3NGQzMDdi/ZjEzYTA0MTI4NWMw/MWVjOTFmNDI3Yzdk/NGQzZDE1OTAxOWVj/NWIxMjk3YTcyNTg5/N2FiZjM2Yy93d3cu/YnVzaW5lc3NpbnNp/ZGVyLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "businessinsider.com",
+            "hostname": "www.businessinsider.com",
+            "favicon": "https://imgs.search.brave.com/Z6wRqiE6vvL-8sy5MskRt7Tuy1z-PxXnfSbVXVy86vw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTI3NGQzMDdi/ZjEzYTA0MTI4NWMw/MWVjOTFmNDI3Yzdk/NGQzZDE1OTAxOWVj/NWIxMjk3YTcyNTg5/N2FiZjM2Yy93d3cu/YnVzaW5lc3NpbnNp/ZGVyLmNvbS8",
+            "path": "  \u203a personal finance  \u203a insurance  \u203a homeowners insurance  \u203a geico homeowners insurance review: pros, cons, and alternatives"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/OH3rgfR27kjjPsF49LribxpHiWko6hLRlGvFzG0hnxY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pLmlu/c2lkZXIuY29tLzY4/MmJhNjMwYzZhZDI4/OGQxNDgxNWMzYz93/aWR0aD0xMDAwJmZv/cm1hdD1qcGVn",
+            "original": "https://i.insider.com/682ba630c6ad288d14815c3c?width=1000&format=jpeg",
+            "logo": false
+          },
+          "age": "May 19, 2025"
+        },
+        {
+          "title": "Geico Auto Insurance Discounts | TheTruthAboutInsurance.com",
+          "url": "https://www.thetruthaboutinsurance.com/geico-auto-insurance-discounts/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "You will also get a discount if you are deployed overseas and leave your car parked on a military base. Multi-Car Discount \u2013 if you insure more than one vehicle with Geico, you can save ...",
+          "page_age": "2025-01-06T05:14:13",
+          "profile": {
+            "name": "Thetruthaboutinsurance",
+            "url": "https://www.thetruthaboutinsurance.com/geico-auto-insurance-discounts/",
+            "long_name": "thetruthaboutinsurance.com",
+            "img": "https://imgs.search.brave.com/hBd_FtEpvNv5EW-3CLomlsu-FwYBxgPjw7pSpcEWsmQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvY2M3MDc1NWIx/YmMwNzYwZmE2M2Vl/ZGMwNGJiZjg1YWNi/ODcxYTlhOWE1NmFj/ZDFmNGQyYzdiMjJm/ODc2YzQzMi93d3cu/dGhldHJ1dGhhYm91/dGluc3VyYW5jZS5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thetruthaboutinsurance.com",
+            "hostname": "www.thetruthaboutinsurance.com",
+            "favicon": "https://imgs.search.brave.com/hBd_FtEpvNv5EW-3CLomlsu-FwYBxgPjw7pSpcEWsmQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvY2M3MDc1NWIx/YmMwNzYwZmE2M2Vl/ZGMwNGJiZjg1YWNi/ODcxYTlhOWE1NmFj/ZDFmNGQyYzdiMjJm/ODc2YzQzMi93d3cu/dGhldHJ1dGhhYm91/dGluc3VyYW5jZS5j/b20v",
+            "path": "  \u203a home  \u203a best car insurance companies  \u203a car insurance discounts"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/m864ZOr0Mxt7aecQHbEswVAMJqR9eX8JfEhYabnbkUY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dGhldHJ1dGhhYm91/dGluc3VyYW5jZS5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjAvMTIvYzhlMDlk/MTMtdHJ1dGhhYm91/dGlucy1sb2dvLnN2/Zw",
+            "original": "https://www.thetruthaboutinsurance.com/wp-content/uploads/2020/12/c8e09d13-truthaboutins-logo.svg",
+            "logo": true
+          },
+          "age": "January 6, 2025"
+        },
+        {
+          "title": "GEICO car insurance review 2025: 3.1 out of 5 stars",
+          "url": "https://finance.yahoo.com/personal-finance/insurance/review/geico-car-insurance-review-180541901.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Multi-vehicle. You can earn a discount of up to 25% on most coverages by insuring more than one car on the same policy. Multi-policy or multi-line discount. This discount is available if you bundle GEICO auto insurance with a homeowners or renters ...",
+          "page_age": "2025-09-10T18:05:41",
+          "profile": {
+            "name": "Yahoo! Finance",
+            "url": "https://finance.yahoo.com/personal-finance/insurance/review/geico-car-insurance-review-180541901.html",
+            "long_name": "finance.yahoo.com",
+            "img": "https://imgs.search.brave.com/ZxJbtHZiiBXciqcRfJn3XPiTEOf_XYrooAjrJf1rnag/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjRkNjc1NWY5/MzM5ZjlkMWQyNjM5/OWNiMTQ4ZjcwNTQx/ZjA3ZDE4NDQ2M2Iw/MWZjZjVhOTFlM2Ji/NTE1NWRjZS9maW5h/bmNlLnlhaG9vLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "finance.yahoo.com",
+            "hostname": "finance.yahoo.com",
+            "favicon": "https://imgs.search.brave.com/ZxJbtHZiiBXciqcRfJn3XPiTEOf_XYrooAjrJf1rnag/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjRkNjc1NWY5/MzM5ZjlkMWQyNjM5/OWNiMTQ4ZjcwNTQx/ZjA3ZDE4NDQ2M2Iw/MWZjZjVhOTFlM2Ji/NTE1NWRjZS9maW5h/bmNlLnlhaG9vLmNv/bS8",
+            "path": "  \u203a personal finance  \u203a insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ZUfRTp_T6gFSbsMxymx9F3xvFuUABzroRosGv7BCvsg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zLnlp/bWcuY29tL255L2Fw/aS9yZXMvMS4yL25K/eUJiLjlPamlOR1pp/UEljXzl2UmctLS9Z/WEJ3YVdROWFHbG5h/R3hoYm1SbGNqdDNQ/VEV5TURBN2FEMDRN/REEtL2h0dHBzOi8v/cy55aW1nLmNvbS9v/cy9jcmVhdHItdXBs/b2FkZWQtaW1hZ2Vz/LzIwMjUtMDkvMmZm/YTE5ZDAtOGU2Yi0x/MWYwLWJiZjctY2Y4/YjRmYTgyZjk5",
+            "original": "https://s.yimg.com/ny/api/res/1.2/nJyBb.9OjiNGZiPIc_9vRg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2025-09/2ffa19d0-8e6b-11f0-bbf7-cf8b4fa82f99",
+            "logo": false
+          },
+          "age": "September 10, 2025"
+        },
+        {
+          "title": "Geico Personal Property Insurance: 7 Powerful Benefits 2025",
+          "url": "https://isu-armac.com/geico-personal-property-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The biggest savings come from bundling policies. When you combine your GEICO personal property insurance with auto coverage, you\u2019re looking at potential savings of 10-25% on your total premiums.",
+          "page_age": "2025-05-23T19:45:03",
+          "profile": {
+            "name": "ISU Armac",
+            "url": "https://isu-armac.com/geico-personal-property-insurance/",
+            "long_name": "isu-armac.com",
+            "img": "https://imgs.search.brave.com/MZPuHwnQg3QM62U8OAJq4iv2gTJJ74wJIM70mQqDir4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGM3MGMwMWEz/ODNiMDJmY2YzMmU5/MTQxYzFjNTZkMDJj/NTcyMDZmOGMzYzg0/MTRhZjBiZTJiYTA2/YWRjNTMxYi9pc3Ut/YXJtYWMuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "isu-armac.com",
+            "hostname": "isu-armac.com",
+            "favicon": "https://imgs.search.brave.com/MZPuHwnQg3QM62U8OAJq4iv2gTJJ74wJIM70mQqDir4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGM3MGMwMWEz/ODNiMDJmY2YzMmU5/MTQxYzFjNTZkMDJj/NTcyMDZmOGMzYzg0/MTRhZjBiZTJiYTA2/YWRjNTMxYi9pc3Ut/YXJtYWMuY29tLw",
+            "path": "  \u203a home  \u203a blog original posts page  \u203a a comprehensive guide to geico\u2019s personal property coverage"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/1KCT5mbf0IGU4KpHF3f1LhABNUgTnrgGe968YM7nBfI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pc3Ut/YXJtYWMuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIyLzAx/L3BvcnRmb2xpby1k/ZXRhaWxzLTMuanBn",
+            "original": "https://isu-armac.com/wp-content/uploads/2022/01/portfolio-details-3.jpg",
+            "logo": false
+          },
+          "age": "May 23, 2025"
+        },
+        {
+          "title": "How I learned to save $1,603 on home and auto insurance in 2025",
+          "url": "https://www.cnbc.com/select/how-to-save-on-home-and-auto-insurance-in-2025/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The insurer with the best bundling discount depends on a variety of factors, including the type of driver you are, what kind of home you have, where you live and how much your base premiums are to start out with. We&#x27;ve found that Amica, Geico and Farmers all have generous rate reductions for customers who take advantage of multi-policy discounts.",
+          "page_age": "2025-10-01T11:01:01",
+          "profile": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/select/how-to-save-on-home-and-auto-insurance-in-2025/",
+            "long_name": "Consumer News and Business Channel",
+            "img": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cnbc.com",
+            "hostname": "www.cnbc.com",
+            "favicon": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+            "path": "  \u203a cnbc select  \u203a insurance  \u203a how i learned to save $1,603 on home and auto insurance in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/I2s945QkHifkTjuIA25NtlTkaSS6WCfvaCWLcrAHydo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDczOTUxMTYt/MTcxMTk5OTkwODMw/Ny1nZXR0eWltYWdl/cy0xMzk3ODYxNTg5/LWluc3VyYW5jZS5q/cGVnP3Y9MTc1ODkw/MTAzNA",
+            "original": "https://image.cnbcfm.com/api/v1/image/107395116-1711999908307-gettyimages-1397861589-insurance.jpeg?v=1758901034",
+            "logo": false
+          },
+          "age": "October 1, 2025"
+        },
+        {
+          "title": "geico personal liability insurance: 7 Powerful Benefits for 2025",
+          "url": "https://isu-armac.com/geico-personal-liability-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Auto + Renters: Combining these policies can save you up to 15% on your renters insurance. Home + Umbrella: While the umbrella itself may not be discounted, having multiple policies with the same carrier can lead to savings on your homeowners ...",
+          "page_age": "2025-08-06T02:34:46",
+          "profile": {
+            "name": "ISU Armac",
+            "url": "https://isu-armac.com/geico-personal-liability-insurance/",
+            "long_name": "isu-armac.com",
+            "img": "https://imgs.search.brave.com/MZPuHwnQg3QM62U8OAJq4iv2gTJJ74wJIM70mQqDir4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGM3MGMwMWEz/ODNiMDJmY2YzMmU5/MTQxYzFjNTZkMDJj/NTcyMDZmOGMzYzg0/MTRhZjBiZTJiYTA2/YWRjNTMxYi9pc3Ut/YXJtYWMuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "isu-armac.com",
+            "hostname": "isu-armac.com",
+            "favicon": "https://imgs.search.brave.com/MZPuHwnQg3QM62U8OAJq4iv2gTJJ74wJIM70mQqDir4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGM3MGMwMWEz/ODNiMDJmY2YzMmU5/MTQxYzFjNTZkMDJj/NTcyMDZmOGMzYzg0/MTRhZjBiZTJiYTA2/YWRjNTMxYi9pc3Ut/YXJtYWMuY29tLw",
+            "path": "  \u203a home  \u203a blog original posts page  \u203a the ultimate guide to geico\u2019s personal liability coverage"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/1KCT5mbf0IGU4KpHF3f1LhABNUgTnrgGe968YM7nBfI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pc3Ut/YXJtYWMuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIyLzAx/L3BvcnRmb2xpby1k/ZXRhaWxzLTMuanBn",
+            "original": "https://isu-armac.com/wp-content/uploads/2022/01/portfolio-details-3.jpg",
+            "logo": false
+          },
+          "age": "August 6, 2025"
+        },
+        {
+          "title": "Geico vs. Progressive: Home Insurance Cost Comparison",
+          "url": "https://comptonfinance.co.uk/geico-vs.-progressive-home-insurance-cost-comparison",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Worth noting, however, is that Geico does not underwrite most homeowners&#x27; policies directly. Instead, they partner with other insurance companies to provide coverage. So while you might save money, it is crucial to ensure you&#x27;re comfortable with the actual insurer backing your policy. Connections to large networks of partners can have its advantages. You might find additional savings when bundling home insurance with other types of coverage, such as auto insurance. These multi-policy discounts can reduce your premiums further.",
+          "page_age": "2025-05-09T07:06:08",
+          "profile": {
+            "name": "Comptonfinance",
+            "url": "https://comptonfinance.co.uk/geico-vs.-progressive-home-insurance-cost-comparison",
+            "long_name": "comptonfinance.co.uk",
+            "img": "https://imgs.search.brave.com/ZFDMqCgwzCZmQQnr8k6LK7dpbpSh-F_zl6G9HT2GEyA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWEyYzdhYzYx/MzIwMWU1NTA5ZWQ5/MGMzY2QyMDJiYzVm/YWY3YjdjM2MzYjBl/NDljODA2NTQ3OTgy/YmY4NmYwNi9jb21w/dG9uZmluYW5jZS5j/by51ay8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "comptonfinance.co.uk",
+            "hostname": "comptonfinance.co.uk",
+            "favicon": "https://imgs.search.brave.com/ZFDMqCgwzCZmQQnr8k6LK7dpbpSh-F_zl6G9HT2GEyA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWEyYzdhYzYx/MzIwMWU1NTA5ZWQ5/MGMzY2QyMDJiYzVm/YWY3YjdjM2MzYjBl/NDljODA2NTQ3OTgy/YmY4NmYwNi9jb21w/dG9uZmluYW5jZS5j/by51ay8",
+            "path": "  \u203a home  \u203a home insurance  \u203a geico vs. progressive: home insurance cost comparison"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GyQq-bJkjbOWTPlIaWACayXX0NH7q8Ig0LTU2gyUpaI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb21w/dG9uZmluYW5jZS5j/by51ay91cGxvYWRz/LzIwMjUvMDEvZ2Vp/Y28tdnMuLXByb2dy/ZXNzaXZlLWhvbWUt/aW5zdXJhbmNlLWNv/c3QtY29tcGFyaXNv/bi53ZWJw",
+            "original": "https://comptonfinance.co.uk/uploads/2025/01/geico-vs.-progressive-home-insurance-cost-comparison.webp",
+            "logo": false
+          },
+          "age": "May 9, 2025"
+        },
+        {
+          "title": "GEICO Insurance Review 2025",
+          "url": "https://www.insuranceopedia.com/reviews/geico-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO offers several discounts to help policyholders save on home insurance premiums: Multi-Policy Discount: Bundling your home and auto insurance policies with GEICO can lead to significant savings.",
+          "page_age": "2025-01-16T12:16:51",
+          "profile": {
+            "name": "Insuranceopedia",
+            "url": "https://www.insuranceopedia.com/reviews/geico-review",
+            "long_name": "insuranceopedia.com",
+            "img": "https://imgs.search.brave.com/KsBHSl4Wc_wUe27LG7XUNuU990n3ocgt5t6hB12cOiM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc3ZjI2YjMy/ZjI1NGM1NDUxYTNh/NTg4ZTBiZmZkZDM4/NTM0MTkyZGM2MTVh/NTNkOGNhOWYzZDk0/MWRmMTViNC93d3cu/aW5zdXJhbmNlb3Bl/ZGlhLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insuranceopedia.com",
+            "hostname": "www.insuranceopedia.com",
+            "favicon": "https://imgs.search.brave.com/KsBHSl4Wc_wUe27LG7XUNuU990n3ocgt5t6hB12cOiM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc3ZjI2YjMy/ZjI1NGM1NDUxYTNh/NTg4ZTBiZmZkZDM4/NTM0MTkyZGM2MTVh/NTNkOGNhOWYzZDk0/MWRmMTViNC93d3cu/aW5zdXJhbmNlb3Bl/ZGlhLmNvbS8",
+            "path": "\u203a reviews  \u203a geico-review"
+          },
+          "age": "January 16, 2025"
+        },
+        {
+          "title": "Every GEICO Car Insurance Discount Explained (2025) | Compare.com",
+          "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-discounts",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "It offers two discounts to acknowledge ... of up to 25% on most coverages. Multi-policy: You can qualify for additional savings by bundling your auto insurance with other policies. Consider renter, condo, mobile home, or homeowner ...",
+          "page_age": "2025-02-05T19:00:00",
+          "profile": {
+            "name": "Compare",
+            "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-discounts",
+            "long_name": "compare.com",
+            "img": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "compare.com",
+            "hostname": "www.compare.com",
+            "favicon": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v",
+            "path": "  \u203a auto insurance  \u203a cheap car insurance  \u203a discounts  \u203a geico car insurance discounts"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/eo6DC1oUEJ9tQ_nKLjRAcNuN4f4DvLEnyEuZwe_qSBA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8yOTU1MDgvODAw/eDYwMC80NjhmZDhl/NTBlL3dvbWFuLWRy/aXZpbmctd2l0aC1h/aXJwb2RzLmpwZw",
+            "original": "https://a.storyblok.com/f/295508/800x600/468fd8e50e/woman-driving-with-airpods.jpg",
+            "logo": false
+          },
+          "age": "February 5, 2025"
+        },
+        {
+          "title": "Best Companies for Home and Auto Insurance Bundles (2025) | Insurify",
+          "url": "https://insurify.com/car-insurance/coverage/home-and-auto/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Discounts range from 10% to 25%, but if one policy has higher premiums, the overall bundle might not be cheaper than buying separate policies from two different companies. Yes. GEICO offers bundle discounts by pairing its car insurance with ...",
+          "page_age": "2025-09-09T00:00:00",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/car-insurance/coverage/home-and-auto/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a car insurance  \u203a coverage  \u203a home and auto"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/2KQRFgjXr1IBdjxEB5glUK5ixoc_zFAxWf2EtBHhoXQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xNjIyNzMvMTAw/MHg3NTAvMTNlODI3/Y2U5YS9jYXItcGFy/a2VkLW91dHNpZGUt/aG9tZS5qcGc",
+            "original": "https://a.storyblok.com/f/162273/1000x750/13e827ce9a/car-parked-outside-home.jpg",
+            "logo": false
+          },
+          "age": "September 9, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_ptu6thqfcesdjy6ihg51gfyp",
+  "search_id": "search_rs1e25e87tvq0oh2rxx86u1f",
+  "timestamp": "2025-11-07T12:20:51.653156",
+  "startedAt": "2025-11-07T12:20:51.653156",
+  "completedAt": "2025-11-07T12:20:53.241082",
+  "durationSeconds": 1.59,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"State Farm\" site:floir.com licensed insurers",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"State Farm\" site:floir.com licensed insurers",
+      "show_strict_warning": false,
+      "cleaned": "State Farm licensed insurers",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "State Farm licensed insurers",
+        "sites": [
+          "floir.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

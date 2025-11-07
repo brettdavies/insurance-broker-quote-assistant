@@ -1,0 +1,55 @@
+{
+  "websearch_id": "websearch_tcvziq0nqlhurl3pgfm2h8lt",
+  "search_id": "search_ugpq6lr7vdfsux6ul888jew9",
+  "timestamp": "2025-11-07T12:34:48.756713",
+  "startedAt": "2025-11-07T12:34:48.756713",
+  "completedAt": "2025-11-07T12:34:50.544883",
+  "durationSeconds": 1.79,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:naic.org state insurance data",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:naic.org state insurance data",
+      "show_strict_warning": false,
+      "cleaned": "state insurance data",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "state insurance data",
+        "sites": [
+          "naic.org"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

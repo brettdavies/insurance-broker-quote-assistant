@@ -1,0 +1,52 @@
+{
+  "websearch_id": "websearch_zsjf7421kaotck0uu2v5e84o",
+  "search_id": "search_fp57lyguovfss5sseiapi9v9",
+  "timestamp": "2025-11-07T12:34:00.959269",
+  "startedAt": "2025-11-07T12:34:00.959269",
+  "completedAt": "2025-11-07T12:34:02.979335",
+  "durationSeconds": 2.02,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"cap on discounts\" insurance",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"cap on discounts\" insurance",
+      "show_strict_warning": false,
+      "cleaned": "cap on discounts insurance",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "cap on discounts insurance"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

@@ -1,0 +1,766 @@
+{
+  "websearch_id": "websearch_l4muw8syyf9ztjjtg5a104vf",
+  "search_id": "search_vhhrenp3isjl3ymjqrbmkgin",
+  "timestamp": "2025-11-07T12:25:34.588174",
+  "startedAt": "2025-11-07T12:25:34.588174",
+  "completedAt": "2025-11-07T12:25:36.581031",
+  "durationSeconds": 1.99,
+  "urlsDiscoveredCount": 19,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "site:progressive.com home eligibility",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "site:progressive.com home eligibility",
+      "show_strict_warning": false,
+      "cleaned": "home eligibility",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "home eligibility",
+        "sites": [
+          "progressive.com"
+        ]
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "How Much House Can I Afford to Buy? | Progressive",
+          "url": "https://www.progressive.com/answers/home-affordability/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Some may qualify for a mortgage with a low down payment of 3.5% (for a $300,000 home, that&#x27;s $10,500.) However, making a down payment of less than 20% usually means you&#x27;ll need to pay private mortgage insurance, or PMI.",
+          "page_age": "2024-11-18T20:10:38",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/home-affordability/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a home insurance information  \u203a how much house can i afford to buy?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/_W03ywPBH7oYZz5coJWPDm1-H2gRfEmWN45bLbk5ZVQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDg2NTBmZWFk/M2ExOTk2NmQvNjY0/ZGY5NjY1ZThlOTUz/OTZmMzUxZDNhL2hv/bWUtYWZmb3JkYWJp/bGl0eS1jYWxjdWxh/dG9yX29wZW4tZ3Jh/cGgucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt8650fead3a19966d/664df9665e8e95396f351d3a/home-affordability-calculator_open-graph.png",
+            "logo": false
+          },
+          "age": "November 18, 2024"
+        },
+        {
+          "title": "Opening the Door to Homeownership | Progressive",
+          "url": "https://www.progressive.com/about/purpose/homeownership/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "That&#x27;s why we created the UpPayment, a down payment assistance program designed to help first-generation homebuyers get into homes faster. If selected, you could receive a down payment grant of $13.5k. No purchase necessary. Void where prohibited. Ends October 15, 2025. Open to eligible adult ...",
+          "page_age": "2025-05-15T00:00:00",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/about/purpose/homeownership/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "video",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "\u203a about  \u203a purpose  \u203a homeownership"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/RuaUZ52lqez-A8N12j7FP6LvzF93UbYfJW2FaC9Ika0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvNjg1/NWJmZmU5Y2I5NDNl/NDA4ZjNjYzlhL1BS/T0ctdXBkYXRlLWxv/Z28tT0ctaW1hZ2Vf/RmFjZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/6855bffe9cb943e408f3cc9a/PROG-update-logo-OG-image_Facebook.png",
+            "logo": true
+          },
+          "age": "May 15, 2025"
+        },
+        {
+          "title": "Homeowners Insurance for Older Homes | Progressive",
+          "url": "https://www.progressive.com/answers/homeowners-insurance-for-older-homes/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Electrical wiring: Electrical codes are much more stringent now than they were just a few decades ago. If your home still has its original wiring, there may be a higher risk of fire or other issues. Depending on the age and type of electrical system, your property may not be eligible for coverage.",
+          "page_age": "2025-06-18T20:33:23",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/homeowners-insurance-for-older-homes/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a home insurance information  \u203a how to get homeowners insurance for an older home"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "June 18, 2025"
+        },
+        {
+          "title": "What is Home Insurance & How Does it Work? | Progressive",
+          "url": "https://www.progressive.com/answers/homeowners-101/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Homeowners insurance is generally not tax-deductible. But some exceptions may warrant a possible home insurance tax deduction, including if you have a home-based business. Consult a tax professional for more details. Properties with a home-based business might not be eligible for coverage.",
+          "page_age": "2025-08-28T21:40:29",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/homeowners-101/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a home insurance information  \u203a what is homeowners insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/K2j_B0PHVg4pmGNBDZHvqBZ8s9Uylc7zCT5koXlfwXQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGQzZjE2MDA4/YWQ4MTQ3NTgvNjBj/OGUxZjcwNzA2MGE0/YWUzZjExODdjL2hv/bWVvd25lcnMtMTAx/LnBuZw",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltd3f16008ad814758/60c8e1f707060a4ae3f1187c/homeowners-101.png",
+            "logo": false
+          },
+          "age": "August 28, 2025"
+        },
+        {
+          "title": "Life Insurance & Medicaid Eligibility | Progressive",
+          "url": "https://www.progressive.com/answers/life-insurance-medicaid-eligibility/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "You received long-term medical care, such as a nursing home or assisted living",
+          "page_age": "2025-02-04T19:29:58",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/life-insurance-medicaid-eligibility/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a life insurance information  \u203a life insurance and medicaid eligibility"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GdwbouY_cxSXP5vVCIgsQqruv_TtOmVy_51CJprTGTg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvc2hh/cmUtb3BlbmdyYXBo/LTEyMDAucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/share-opengraph-1200.png",
+            "logo": false
+          },
+          "age": "February 4, 2025"
+        },
+        {
+          "title": "Loss of Use Coverage for Homeowners & Renters | Progressive",
+          "url": "https://www.progressive.com/answers/loss-of-use-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Landlords may be eligible to be reimbursed for lost rental income through their loss of use coverage if their tenants are unable to reside in the dwelling due to a covered loss (lease cancellations are not covered).",
+          "page_age": "2025-01-08T20:03:12",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/loss-of-use-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a home insurance information  \u203a what is loss of use coverage on a homeowners insurance policy?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/dts94UnzVkrLXSIiZxuG69Zq7DGQwNkNO5Qh6-KzZTM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDE1YTJmZDNh/ZTZiMmM5Y2QvNjBk/Y2I5YTExMDJjMzA0/ODU4NjYxOWQ0L2xv/c3Mtb2YtdXNlLWlu/c3VyYW5jZS5wbmc",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt15a2fd3ae6b2c9cd/60dcb9a1102c3048586619d4/loss-of-use-insurance.png",
+            "logo": false
+          },
+          "age": "January 8, 2025"
+        },
+        {
+          "title": "Homeowners Insurance in Oregon | Progressive",
+          "url": "https://www.progressive.com/answers/oregon-home-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "While wildfire risk may be just one of the many factors used in determining your homeowners insurance rate, it could also affect availability of coverage and your ability to qualify for specialized policy discounts.",
+          "page_age": "2025-03-24T17:18:27",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/oregon-home-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a oregon homeowners insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "March 24, 2025"
+        },
+        {
+          "title": "What Is Personal Property Coverage? | Progressive",
+          "url": "https://www.progressive.com/answers/personal-property-coverage/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "See how much home insurance coverage ... our home insurance calculator. Your personal property typically won&#x27;t be covered if flood water is what damaged it. You\u2019ll likely need to purchase a separate flood insurance policy to cover your personal belongings. ... Keep in mind that insurers typically set limits on certain categories of personal property. These are called &quot;sub-limits.&quot; For example, you might have $100,000 in total personal property coverage but may only be eligible for a smaller ...",
+          "page_age": "2025-01-08T15:26:55",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/personal-property-coverage/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a home insurance information  \u203a what is personal property insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GAGmCk9Xw-1AcDYLPZmLZiVR0mvhmobWK_3rCXJYhto/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGU5NzM5NjAy/ZTg2YjU0OGUvNjBk/ZGM5MzQwNjNiYmQ2/M2NkNzM5ZjA2L2Nv/bnRlbnRzLWluc3Vy/YW5jZS5wbmc",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blte9739602e86b548e/60ddc934063bbd63cd739f06/contents-insurance.png",
+            "logo": false
+          },
+          "age": "January 8, 2025"
+        },
+        {
+          "title": "How To Get Home Insurance After Non-Renewal | Progressive",
+          "url": "https://www.progressive.com/answers/homeowners-insurance-after-nonrenewal/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If your insurer nonrenewed or cancelled your policy because your house needs repairs or you filed too many claims, you may have difficulty finding an insurance company willing to insure your home. If you&#x27;re unable to get a policy through the standard market, you may be able to obtain coverage through your state&#x27;s FAIR (Fair Access to Insurance Requirements) plan.",
+          "page_age": "2025-05-28T18:43:25",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/homeowners-insurance-after-nonrenewal/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a home insurance information  \u203a how to get homeowners insurance after nonrenewal"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "May 28, 2025"
+        },
+        {
+          "title": "What is Travel Insurance & What Does it Cover? | Progressive",
+          "url": "https://www.progressive.com/answers/travel-101/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Let&#x27;s say you booked a costly international trip several months in advance, and some aspects of your travel costs are non-refundable. If you need to cancel your trip due to an unexpected illness, damage to your home, or a death in the family, travel insurance may provide relief and reimbursement for those prepaid funds that are lost.",
+          "page_age": "2025-08-05T16:05:45",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/travel-101/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a travel insurance information  \u203a what is travel insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ywl8itpVHECkplEgDF3xU-WyvyM_EtwFpXe0bbQVTCw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDU4Zjg0NGU4/NGM4OWNiY2MvNjBk/ZGZhZjM5NjQ4ZjE2/NTBmZTFhNDNmL3Ry/YXZlbC1pbnN1cmFu/Y2UtMTAxLnBuZw",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt58f844e84c89cbcc/60ddfaf39648f1650fe1a43f/travel-insurance-101.png",
+            "logo": false
+          },
+          "age": "August 5, 2025"
+        },
+        {
+          "title": "How Weight Impacts Life Insurance Rates | Progressive",
+          "url": "https://www.progressive.com/answers/life-insurance-for-overweight-high-bmi/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Being overweight doesn&#x27;t automatically disqualify you from getting life insurance, but it might affect your rate and the type of policy you qualify for. Weight is only one of the many factors life insurers use to determine your eligibility and risk. In many cases, if you&#x27;re overweight but otherwise healthy, you&#x27;ll qualify for a policy with a relatively low rate.",
+          "page_age": "2025-01-15T19:53:24",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/life-insurance-for-overweight-high-bmi/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a life insurance information  \u203a can you get life insurance if you're overweight?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "January 15, 2025"
+        },
+        {
+          "title": "Homeowners Insurance Requirements by State | Progressive",
+          "url": "https://www.progressive.com/answers/state-homeowners-insurance-requirements/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "No states have laws mandating homeowners insurance, but, if you finance your home, your lender will typically require a home insurance policy. The standard coverages for homeowners insurance are generally the same in all states.",
+          "page_age": "2025-08-25T20:32:55",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/state-homeowners-insurance-requirements/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a home insurance information  \u203a homeowners insurance requirements by state"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GdwbouY_cxSXP5vVCIgsQqruv_TtOmVy_51CJprTGTg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvc2hh/cmUtb3BlbmdyYXBo/LTEyMDAucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/share-opengraph-1200.png",
+            "logo": false
+          },
+          "age": "August 25, 2025"
+        },
+        {
+          "title": "Build Wealth Through Homeownership | Progressive",
+          "url": "https://www.progressive.com/about/purpose/homeownership/build-wealth/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Explore the financial literacy support, tools, and resources Progressive offers to help first-time homeowners unlock the full potential of their homes.",
+          "page_age": "2025-07-21T00:00:00",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/about/purpose/homeownership/build-wealth/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "video",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "\u203a about  \u203a purpose  \u203a homeownership  \u203a build-wealth"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/RuaUZ52lqez-A8N12j7FP6LvzF93UbYfJW2FaC9Ika0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvNjg1/NWJmZmU5Y2I5NDNl/NDA4ZjNjYzlhL1BS/T0ctdXBkYXRlLWxv/Z28tT0ctaW1hZ2Vf/RmFjZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/6855bffe9cb943e408f3cc9a/PROG-update-logo-OG-image_Facebook.png",
+            "logo": true
+          },
+          "age": "July 21, 2025"
+        },
+        {
+          "title": "Moving and Storage Unit Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/moving-and-storage-unit-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Example:Your 20- lb. dining room chair has a full replacement value of $50. You&#x27;re eligible to receive $12 from the required liability protection. Separate liability insurance can cover the remaining $38. Your homeowners, condo or renters policy won&#x27;t cover moving expenses.",
+          "page_age": "2025-01-08T19:29:47",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/moving-and-storage-unit-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a home insurance information  \u203a how does insurance cover moving and storage units?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/UrieTBaeQLECIx0jq6QIbAyoP56FK9oOLH5DHrL4LSA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDY2NGI1NjM1/MWE5OGI2MTQvNjBl/NjBiZWYxYTk2Y2Ix/NjRlMzNkZTk4L21v/dmluZy1hbmQtc3Rv/cmFnZS11bml0LWlu/c3VyYW5jZS5wbmc",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt664b56351a98b614/60e60bef1a96cb164e33de98/moving-and-storage-unit-insurance.png",
+            "logo": false
+          },
+          "age": "January 8, 2025"
+        },
+        {
+          "title": "Homeowners Insurance Claims | Progressive",
+          "url": "https://www.progressive.com/answers/how-do-home-insurance-claims-work/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "For any event where you consider filing a home insurance claim, consult your homeowners insurance policy, which lists specific expectations for you and your insurer.",
+          "page_age": "2025-08-25T18:40:31",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/how-do-home-insurance-claims-work/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a home insurance information  \u203a how does a homeowners insurance claim work?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GdwbouY_cxSXP5vVCIgsQqruv_TtOmVy_51CJprTGTg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvc2hh/cmUtb3BlbmdyYXBo/LTEyMDAucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/share-opengraph-1200.png",
+            "logo": false
+          },
+          "age": "August 25, 2025"
+        },
+        {
+          "title": "Illinois RV Insurance | Progressive",
+          "url": "https://www.progressive.com/answers/illinois-rv-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If your RV is your permanent residence, you may need additional coverage that a recreational RV policy doesn&#x27;t offer. However, a full-time RV insurance policy may offer protection when your RV is your primary home with the following coverages:",
+          "page_age": "2025-03-24T17:33:13",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/illinois-rv-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a illinois rv insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/D1lRe_L8ycsICWH6Ae3Vx6y2bmhCwNcRXDfCYprOMfY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDY1MWY5Mzhk/MTUzYTI3MWQvNjZm/YTliMTk4MDk2MjQ1/NjA5N2Y2ZmZlL3J2/X2RlbGF3YXJlX29w/ZW4tZ3JhcGgucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt651f938d153a271d/66fa9b1980962456097f6ffe/rv_delaware_open-graph.png",
+            "logo": false
+          },
+          "age": "March 24, 2025"
+        },
+        {
+          "title": "Keys to Progress\u00ae Veteran Vehicle Giveaway Program | Progressive",
+          "url": "https://www.progressive.com/about/purpose/keys-to-progress/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "For additional information on eligibility, please see FAQs.",
+          "page_age": "2025-09-03T00:00:00",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/about/purpose/keys-to-progress/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "video",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "\u203a about  \u203a purpose  \u203a keys-to-progress"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/RuaUZ52lqez-A8N12j7FP6LvzF93UbYfJW2FaC9Ika0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvNjg1/NWJmZmU5Y2I5NDNl/NDA4ZjNjYzlhL1BS/T0ctdXBkYXRlLWxv/Z28tT0ctaW1hZ2Vf/RmFjZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/6855bffe9cb943e408f3cc9a/PROG-update-logo-OG-image_Facebook.png",
+            "logo": true
+          },
+          "age": "September 3, 2025"
+        },
+        {
+          "title": "Homeowners Insurance For Luxury Homes | Progressive",
+          "url": "https://www.progressive.com/answers/home-insurance-for-luxury-homes/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "While some insurers require specialized policies for homes exceeding $750,000 in value, Progressive Home, one of the insurers in Progressive&#x27;s network of property insurers and part of the Progressive family of companies, accepts homes with values up to $5 million...",
+          "page_age": "2025-01-23T18:43:56",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/home-insurance-for-luxury-homes/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a home insurance information  \u203a homeowners insurance for luxury homes"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wyYB1BMvI_npqvpwaNMgcoc1Dbo4FUeDrVmP2nIDjZ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGVjOGU2NjM4/NzZmZjkzY2UvNjBh/NTI2ZDBlMmRiMTU2/ZDAwZjBiN2ZiL3Bl/cmZpY2llbnRfZmFj/ZWJvb2sucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltec8e663876ff93ce/60a526d0e2db156d00f0b7fb/perficient_facebook.png",
+            "logo": false
+          },
+          "age": "January 23, 2025"
+        },
+        {
+          "title": "California Homeowners Insurance: Get a Quote | Progressive",
+          "url": "https://www.progressive.com/answers/california-home-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Loss of Use Coverage (Coverage D) may help cover costs associated with an increase in living expenses, up to your policy&#x27;s limit, if you&#x27;re unable to stay in your home while it&#x27;s being repaired or rebuilt due to a covered loss.",
+          "page_age": "2025-03-17T19:19:03",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/california-home-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a insurance information by state  \u203a california homeowners insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GdwbouY_cxSXP5vVCIgsQqruv_TtOmVy_51CJprTGTg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdDcyYzVlYmM5/NWU4ODRmOGMvc2hh/cmUtb3BlbmdyYXBo/LTEyMDAucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt72c5ebc95e884f8c/share-opengraph-1200.png",
+            "logo": false
+          },
+          "age": "March 17, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}
