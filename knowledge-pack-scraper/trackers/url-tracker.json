@@ -3,12 +3,12 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T04:58:22.541680",
+    "lastUpdated": "2025-11-07T05:11:52.027677",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 306,
+    "pending": 309,
     "fetching": 0,
     "completed": 0,
     "failed": 0
@@ -5219,6 +5219,57 @@
       ],
       "url": "https://www.insurancefortexans.com/blog/when-is-texas-hail-season-and-how-does-it-affect-my-business",
       "urlHash": "9c248e06710b3896",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_hj2qz33upjw5inrnijfdte7l",
+      "search_ids": [
+        "search_ucf0a72ifcauguqa0tx038ol"
+      ],
+      "url": "https://www.statefarm.com/insurance/renters",
+      "urlHash": "a76c60d848d3531a",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_fbnzwp848tg8rpc32b9x0exj",
+      "search_ids": [
+        "search_ucf0a72ifcauguqa0tx038ol"
+      ],
+      "url": "https://www.statefarm.com/insurance/renters/coverage-options",
+      "urlHash": "ef87d9fba048ba44",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_n31t53ejwxg7081aw4oq0uln",
+      "search_ids": [
+        "search_ucf0a72ifcauguqa0tx038ol"
+      ],
+      "url": "https://www.statefarm.com/insurance/renters/discounts",
+      "urlHash": "f7128692396a93fe",
       "priority": "medium",
       "status": "pending",
       "assignedTo": null,
