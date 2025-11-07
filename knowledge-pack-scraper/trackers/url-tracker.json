@@ -3,12 +3,12 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T03:15:49.236169",
+    "lastUpdated": "2025-11-07T03:16:38.706212",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 17,
+    "pending": 22,
     "fetching": 0,
     "completed": 0,
     "failed": 0
@@ -294,6 +294,91 @@
       "url": "https://www.insurancejournal.com/blogs/darkhorse-insurance/2025/03/26/813356.htm",
       "urlHash": "ad8b9707f6e15fcb",
       "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_c92tf1p4hai01bvlqq4sph78",
+      "search_ids": [
+        "search_beop7h5jc8fjtxa1610gdacg"
+      ],
+      "url": "https://www.progressive.com/answers/how-roof-type-impacts-insurance/",
+      "urlHash": "67a3da186bfc254c",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_eb5tltlv5pa86m5nshbhckg9",
+      "search_ids": [
+        "search_beop7h5jc8fjtxa1610gdacg"
+      ],
+      "url": "https://www.progressive.com/answers/does-home-insurance-cover-roof-damage/",
+      "urlHash": "5d01a5a386d2df51",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_cly70n514cpkz4x669r9fqkp",
+      "search_ids": [
+        "search_beop7h5jc8fjtxa1610gdacg"
+      ],
+      "url": "https://www.progressive.com/lifelanes/household/new-roof-cost/",
+      "urlHash": "992e6e9c4d7ffbb1",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_r7izm485b5scpt5fwtkn4bm9",
+      "search_ids": [
+        "search_beop7h5jc8fjtxa1610gdacg"
+      ],
+      "url": "https://www.progressive.com/homeowners/faq/",
+      "urlHash": "db7f6fa8ae79b7c5",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_ndmxbh35r2pn5nw4bl9lglyy",
+      "search_ids": [
+        "search_beop7h5jc8fjtxa1610gdacg"
+      ],
+      "url": "https://lifelanes.progressive.com/home-roofing-types/",
+      "urlHash": "a9848d2ad011f653",
+      "priority": "high",
       "status": "pending",
       "assignedTo": null,
       "pageId": null,
