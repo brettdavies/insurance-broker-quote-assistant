@@ -61,6 +61,12 @@ def parse_markdown_queries(md_path: Path) -> list[dict]:
         # Category header (## N. Category Name)
         if re.match(r'^##\s+\d+\.\s+', line):
             category_name = re.sub(r'^##\s+\d+\.\s+', '', line).strip()
+            # Skip documentation sections (Search Techniques, Operators, etc.)
+            if any(skip in category_name for skip in ["Search Techniques", "Operators", "Examples"]):
+                current_category = None
+                current_subcategory = None
+                in_code_block = False
+                continue
             current_category = category_map.get(category_name, category_name.lower().replace(' ', '-'))
             current_subcategory = None
             in_code_block = False
@@ -121,13 +127,7 @@ def create_search_entry(query_data: dict) -> dict:
         "carrier": query_data["carrier"],
         "priority": query_data["priority"],
         "status": "pending",
-        "assignedTo": None,
-        "startedAt": None,
-        "completedAt": None,
-        "durationSeconds": None,
-        "urlsDiscoveredCount": None,
-        "errorMessage": None,
-        "retryCount": 0,
+        "lastrunAt": None,
         "notes": None
     }
 
