@@ -3,15 +3,15 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T04:33:15.186715",
+    "lastUpdated": "2025-11-07T04:33:49.958289",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
     "pending": 473,
-    "claimed": 1,
+    "claimed": 0,
     "urls_discovered": 0,
-    "completed": 2,
+    "completed": 3,
     "failed": 0
   },
   "searches": [
@@ -3357,16 +3357,18 @@
       "subcategory": "year-built-requirements",
       "carrier": "State Farm",
       "priority": "high",
-      "status": "claimed",
+      "status": "completed",
       "assignedTo": "agnt_xlhfodnp3df2165sjo0dg92v",
       "startedAt": null,
-      "completedAt": null,
+      "completedAt": "2025-11-07T04:33:49.956040",
       "durationSeconds": null,
-      "urlsDiscoveredCount": null,
+      "urlsDiscoveredCount": 1,
       "errorMessage": null,
       "retryCount": 0,
       "notes": null,
-      "claimedAt": "2025-11-07T04:33:15.184689"
+      "claimedAt": "2025-11-07T04:33:15.184689",
+      "urlsNewCount": 1,
+      "urlsExistingCount": 0
     },
     {
       "id": "search_w5wss6ug1ch9oryadu2lw3fu",
