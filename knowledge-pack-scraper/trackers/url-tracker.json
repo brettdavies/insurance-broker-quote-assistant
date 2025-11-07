@@ -3,12 +3,12 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T03:18:11.176047",
+    "lastUpdated": "2025-11-07T03:18:55.093976",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 34,
+    "pending": 38,
     "fetching": 0,
     "completed": 0,
     "failed": 0
@@ -582,6 +582,74 @@
       ],
       "url": "https://www.insurance.ca.gov/01-consumers/130-laws-regs-hearings/05-CCR/brkrdiscl.cfm",
       "urlHash": "f858321a9ecc5bf0",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_u8pitzfyowjg2wckhdzfsn2w",
+      "search_ids": [
+        "search_xp73s6u5d2rb88xpcf0rkh6u"
+      ],
+      "url": "https://www.flhsmv.gov/insurance/",
+      "urlHash": "be9601e1f850f53e",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_i47ein0gynt0sqy78eu3tuy9",
+      "search_ids": [
+        "search_xp73s6u5d2rb88xpcf0rkh6u"
+      ],
+      "url": "https://www.lorenzoandlorenzo.com/personal-injury-guide/pip-insurance-florida/",
+      "urlHash": "a5090db2f1a136ae",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_tx3km82q6dikh75dowv8eogw",
+      "search_ids": [
+        "search_xp73s6u5d2rb88xpcf0rkh6u"
+      ],
+      "url": "https://www.valuepenguin.com/car-insurance/how-pip-works-florida",
+      "urlHash": "bc91bea667d6ec52",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_a250glr78mgch8kxfrkksenh",
+      "search_ids": [
+        "search_xp73s6u5d2rb88xpcf0rkh6u"
+      ],
+      "url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute",
+      "urlHash": "077e925c8d4b770c",
       "priority": "high",
       "status": "pending",
       "assignedTo": null,
