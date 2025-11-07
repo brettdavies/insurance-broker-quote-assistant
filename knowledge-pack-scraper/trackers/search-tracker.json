@@ -3,13 +3,13 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T04:55:52.718947",
+    "lastUpdated": "2025-11-07T04:55:55.298125",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
-    "pending": 446,
-    "claimed": 0,
+    "pending": 445,
+    "claimed": 1,
     "urls_discovered": 0,
     "completed": 30,
     "failed": 0
@@ -3605,15 +3605,16 @@
       "subcategory": "texas-auto-minimums",
       "carrier": null,
       "priority": "high",
-      "status": "pending",
-      "assignedTo": null,
+      "status": "claimed",
+      "assignedTo": "agnt_vs5ieeqc2il13ipqibocn667",
       "startedAt": null,
       "completedAt": null,
       "durationSeconds": null,
       "urlsDiscoveredCount": null,
       "errorMessage": null,
       "retryCount": 0,
-      "notes": null
+      "notes": null,
+      "claimedAt": "2025-11-07T04:55:55.295340"
     },
     {
       "id": "search_mwsbtzofcl4qv8qgmdyct8cv",
