@@ -3,12 +3,12 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T06:02:59.452783",
+    "lastUpdated": "2025-11-07T06:04:07.037639",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 592,
+    "pending": 600,
     "fetching": 0,
     "completed": 0,
     "failed": 0
@@ -586,7 +586,8 @@
     {
       "id": "url_bsxbcs0kg04v5mv3192bzmyj",
       "search_ids": [
-        "search_ekqvzv2r35c6s2iy3nfp1zxs"
+        "search_ekqvzv2r35c6s2iy3nfp1zxs",
+        "search_a0ft0rkiqqq4sqiap1z3ko5z"
       ],
       "url": "https://www.geico.com/information/aboutinsurance/",
       "urlHash": "59a1db97f6e4cf7c",
@@ -8842,7 +8843,8 @@
     {
       "id": "url_r2y2p129uzn4fhcfojjb5idb",
       "search_ids": [
-        "search_wtwooj7dgt48lhitzllx655k"
+        "search_wtwooj7dgt48lhitzllx655k",
+        "search_a0ft0rkiqqq4sqiap1z3ko5z"
       ],
       "url": "https://www.coveragecat.com/blog/comparing-your-best-umbrella-insurance-options",
       "urlHash": "74e8954349a71873",
@@ -10105,6 +10107,142 @@
       "url": "https://www.jchs.harvard.edu/blog/californias-homeowners-insurance-market-national-bellwether",
       "urlHash": "442b03e9cd00ca2f",
       "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_xo3q1h243deshrieqtmzvzac",
+      "search_ids": [
+        "search_a0ft0rkiqqq4sqiap1z3ko5z"
+      ],
+      "url": "https://www.geico.com/information/aboutinsurance/umbrella/insurance-requirements/",
+      "urlHash": "0733f75e544d37f1",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_sdbltj0hrdnygmyzwbpe36j0",
+      "search_ids": [
+        "search_a0ft0rkiqqq4sqiap1z3ko5z"
+      ],
+      "url": "https://living.geico.com/saving/insurance-101/understanding-umbrella-insurance/",
+      "urlHash": "12bad87cf92549ea",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_u2hpmamg2ehts5yg7oju3vi7",
+      "search_ids": [
+        "search_a0ft0rkiqqq4sqiap1z3ko5z"
+      ],
+      "url": "https://www.geico.com/umbrella-insurance/",
+      "urlHash": "d96af26aa8561bee",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_s99inztuhcv2un645w59h40r",
+      "search_ids": [
+        "search_a0ft0rkiqqq4sqiap1z3ko5z"
+      ],
+      "url": "https://www.geico.com/additional-insurance/",
+      "urlHash": "35a53af3f99217ab",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_w1w2s1qi5j2sj81rcwyjrk5w",
+      "search_ids": [
+        "search_a0ft0rkiqqq4sqiap1z3ko5z"
+      ],
+      "url": "https://www.travelers.com/umbrella-insurance",
+      "urlHash": "8e8bfca3900d6cb2",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_r6c6e48afe5p5cd29bc4drhu",
+      "search_ids": [
+        "search_a0ft0rkiqqq4sqiap1z3ko5z"
+      ],
+      "url": "https://www.geico.com/information/aboutinsurance/umbrella/",
+      "urlHash": "23aefa650002aa80",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_xfsx2gckcfbe7xo4n4b7pbyf",
+      "search_ids": [
+        "search_a0ft0rkiqqq4sqiap1z3ko5z"
+      ],
+      "url": "https://www.quora.com/Will-Geico-Umbrella-Insurance-cover-any-aspect-of-an-uninsured-auto-accident",
+      "urlHash": "fee44e522850b9ed",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_ii8bs8v0jsbw4twadi3tvfi1",
+      "search_ids": [
+        "search_a0ft0rkiqqq4sqiap1z3ko5z"
+      ],
+      "url": "https://www.geico.com/information/aboutinsurance/umbrella/faq/",
+      "urlHash": "628d015f4747e57a",
+      "priority": "medium",
       "status": "pending",
       "assignedTo": null,
       "pageId": null,
