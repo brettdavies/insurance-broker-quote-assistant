@@ -1,7 +1,5 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
-
 ## CLI Tool Usage Guidance
 
 - **Prefer CLI tools** over direct in-memory manipulation when possible, especially for editing or searching within larger files or across the codebase.
@@ -16,11 +14,17 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
     brew list
     ```
     to enumerate all installed Homebrew tools. If your desired CLI tool is not listed, or you encounter a "command not found" error, ask the user to install the necessary tool before continuing.
-- 
 - **Summary:** Use CLI-oriented, scriptable approaches for repetitive or large-scale file/codebase operations. Prefer code-aware tools for search/replace and avoid destructive deletions. If a needed tool is missing, request that the user install it before attempting the operation.
 
+## Core Coding Principles
 
+- **DRY (Don't Repeat Yourself):** Avoid duplicating logic or data; abstract and reuse code where possible.
+- **STAR (Single Truth, Authoritative Record):** Ensure shared types, constants, and config live in a single place; always import, never duplicate.
+- **ACID (Atomic, Consistent, Isolated, Durable) for Data:** Treat every state change and file update as atomic—leave no chance for partial or inconsistent writes.
+- **Fail Fast:** Catch missing environment variables or invalid states at startup whenever possible.
+- **Explicit is Better:** Prefer clear, type-safe code and explicit imports over magic or implicit behaviors.
 
+See [Coding Standards](./docs/architecture/17-coding-standards.md) for full details.
 
 ## Project Overview
 
