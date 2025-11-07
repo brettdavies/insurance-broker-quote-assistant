@@ -3,12 +3,12 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T05:57:39.372073",
+    "lastUpdated": "2025-11-07T05:58:18.902418",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 541,
+    "pending": 550,
     "fetching": 0,
     "completed": 0,
     "failed": 0
@@ -5273,7 +5273,8 @@
     {
       "id": "url_n31t53ejwxg7081aw4oq0uln",
       "search_ids": [
-        "search_ucf0a72ifcauguqa0tx038ol"
+        "search_ucf0a72ifcauguqa0tx038ol",
+        "search_ouwgiyu9dxikt809jy4yiomp"
       ],
       "url": "https://www.statefarm.com/insurance/renters/discounts",
       "urlHash": "f7128692396a93fe",
@@ -9232,6 +9233,159 @@
       "url": "https://www.insurance.com/home-and-renters-insurance/texas-homeowners-insurance-guide",
       "urlHash": "a537ae55fe1e2c3d",
       "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_wouxf231xqkddtigyvdqgeos",
+      "search_ids": [
+        "search_ouwgiyu9dxikt809jy4yiomp"
+      ],
+      "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/bundle-insurance",
+      "urlHash": "16dc8ec1f2f45d58",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_hqrioymr67geec2clgzwbddz",
+      "search_ids": [
+        "search_ouwgiyu9dxikt809jy4yiomp"
+      ],
+      "url": "https://www.statefarm.com/insurance/bundling",
+      "urlHash": "84f070e19d90d98f",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_jucafs092oz4ckqrgugz4cz3",
+      "search_ids": [
+        "search_ouwgiyu9dxikt809jy4yiomp"
+      ],
+      "url": "https://www.statefarm.com/lp/football/ballet",
+      "urlHash": "b9906cb4ccea8c70",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_p0ebex3n78dkmb7nmhkshj1l",
+      "search_ids": [
+        "search_ouwgiyu9dxikt809jy4yiomp"
+      ],
+      "url": "https://www.statefarm.com/lp/football/bundle-is-life",
+      "urlHash": "81fed7a80784b96c",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_wxime8bchv16d9kdsw8tgp0w",
+      "search_ids": [
+        "search_ouwgiyu9dxikt809jy4yiomp"
+      ],
+      "url": "https://www.statefarm.com/lp/football/bundle-rooski",
+      "urlHash": "7d41e4adca43b587",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_zo1i06hftu2lcivei411nmt3",
+      "search_ids": [
+        "search_ouwgiyu9dxikt809jy4yiomp"
+      ],
+      "url": "https://www.statefarm.com/simple-insights/football",
+      "urlHash": "ba571296c86b98b7",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_hn42p69hx0ohftz2edvp3npv",
+      "search_ids": [
+        "search_ouwgiyu9dxikt809jy4yiomp"
+      ],
+      "url": "https://www.statefarm.com/lp/football/bundlebust",
+      "urlHash": "0ee2f37f04dfee2a",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_o5vkvrf3vwn961ketul44z0y",
+      "search_ids": [
+        "search_ouwgiyu9dxikt809jy4yiomp"
+      ],
+      "url": "https://www.statefarm.com/lp/football/unpredictable",
+      "urlHash": "68830e98e437824a",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_b3vi7rh1d8r9lsfive1spcv2",
+      "search_ids": [
+        "search_ouwgiyu9dxikt809jy4yiomp"
+      ],
+      "url": "https://www.statefarm.com/",
+      "urlHash": "adebe18fa4416aa9",
+      "priority": "medium",
       "status": "pending",
       "assignedTo": null,
       "pageId": null,
