@@ -3,13 +3,13 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T03:12:46.286408",
+    "lastUpdated": "2025-11-07T03:14:24.348984",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
-    "pending": 474,
-    "claimed": 1,
+    "pending": 473,
+    "claimed": 2,
     "urls_discovered": 0,
     "completed": 1,
     "failed": 0
@@ -7506,15 +7506,16 @@
       "subcategory": "comparison-and-review-sites",
       "carrier": "Progressive",
       "priority": "medium",
-      "status": "pending",
-      "assignedTo": null,
+      "status": "claimed",
+      "assignedTo": "agnt_xj0s556ekyyllac47o5jve5z",
       "startedAt": null,
       "completedAt": null,
       "durationSeconds": null,
       "urlsDiscoveredCount": null,
       "errorMessage": null,
       "retryCount": 0,
-      "notes": null
+      "notes": null,
+      "claimedAt": "2025-11-07T03:14:24.346898"
     },
     {
       "id": "search_v1ll0x9ew82h939jtmyklvxp",
