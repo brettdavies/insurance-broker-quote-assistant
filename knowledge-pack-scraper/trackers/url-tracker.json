@@ -3,12 +3,12 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T03:22:45.805751",
+    "lastUpdated": "2025-11-07T03:23:34.823509",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 68,
+    "pending": 73,
     "fetching": 0,
     "completed": 0,
     "failed": 0
@@ -765,7 +765,8 @@
     {
       "id": "url_k60raant4rizq3iz9spb7v9t",
       "search_ids": [
-        "search_c93v3l5bmd9h0glehur5accw"
+        "search_c93v3l5bmd9h0glehur5accw",
+        "search_v0ah0i6vgh3gy24ds18uttmf"
       ],
       "url": "https://www.statefarm.com/insurance/homeowners/discounts",
       "urlHash": "411a71add8a28968",
@@ -1160,6 +1161,91 @@
       ],
       "url": "https://www.geico.com/auto-insurance/claim-forgiveness/",
       "urlHash": "0a246767d153ef72",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_kt62n3vek9kv4l1425h6xz2f",
+      "search_ids": [
+        "search_v0ah0i6vgh3gy24ds18uttmf"
+      ],
+      "url": "https://www.statefarm.com/insurance/auto/discounts",
+      "urlHash": "1e51b73959fa6b4c",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_jxv6i0gp4evewss49ly15aao",
+      "search_ids": [
+        "search_v0ah0i6vgh3gy24ds18uttmf"
+      ],
+      "url": "https://www.noblequote.com/learning-center/auto-insurance/unlock-cheaper-rates-your-ultimate-guide-to-state-farm-auto-insurance-discounts",
+      "urlHash": "a0bcb022119c0cdf",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_mhri0nmatxru6a9pa93qtf8l",
+      "search_ids": [
+        "search_v0ah0i6vgh3gy24ds18uttmf"
+      ],
+      "url": "https://www.autoinsurance.org/state-farm-auto-insurance-discounts/",
+      "urlHash": "a5e6fb4338f952a3",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_j4xmv2r6lg784p2ex4sl9zlz",
+      "search_ids": [
+        "search_v0ah0i6vgh3gy24ds18uttmf"
+      ],
+      "url": "https://www.statefarm.com/insurance/auto/discounts/california",
+      "urlHash": "9a97bc22b67bda7a",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_sd529yycf5pcdx521o63f7k9",
+      "search_ids": [
+        "search_v0ah0i6vgh3gy24ds18uttmf"
+      ],
+      "url": "https://www.freeadvice.com/insurance/what-car-insurance-discounts-does-state-farm-general-insurance-company-offer/",
+      "urlHash": "f6f387ef445b4c04",
       "priority": "high",
       "status": "pending",
       "assignedTo": null,
