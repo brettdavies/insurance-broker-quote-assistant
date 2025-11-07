@@ -3,15 +3,15 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T05:56:12.827372",
+    "lastUpdated": "2025-11-07T05:56:55.782925",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
     "pending": 412,
-    "claimed": 4,
+    "claimed": 3,
     "urls_discovered": 0,
-    "completed": 60,
+    "completed": 61,
     "failed": 0
   },
   "searches": [
@@ -6114,16 +6114,18 @@
       "subcategory": "california-specific",
       "carrier": null,
       "priority": "medium",
-      "status": "claimed",
+      "status": "completed",
       "assignedTo": "agnt_g0xg5a7y91kn7mm46pizbqk7",
       "startedAt": null,
-      "completedAt": null,
+      "completedAt": "2025-11-07T05:56:55.780779",
       "durationSeconds": null,
-      "urlsDiscoveredCount": null,
+      "urlsDiscoveredCount": 10,
       "errorMessage": null,
       "retryCount": 0,
       "notes": null,
-      "claimedAt": "2025-11-07T05:56:12.825034"
+      "claimedAt": "2025-11-07T05:56:12.825034",
+      "urlsNewCount": 10,
+      "urlsExistingCount": 0
     },
     {
       "id": "search_fhjruyfgm1gsqzvdmaop238s",
