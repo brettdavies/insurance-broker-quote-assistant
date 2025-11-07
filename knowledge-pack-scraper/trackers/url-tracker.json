@@ -3,15 +3,118 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-06T00:00:00Z",
+    "lastUpdated": "2025-11-07T03:59:17.778061",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 0,
+    "pending": 6,
     "fetching": 0,
     "completed": 0,
     "failed": 0
   },
-  "urls": []
+  "urls": [
+    {
+      "id": "url_adz5vqm88uysu8x2wy4oddd9",
+      "search_ids": [
+        "search_bqkgkcd9jkcbitt43loilx6k"
+      ],
+      "url": "https://www.dmv.ca.gov/portal/uploads/2020/06/DL-300-R12-2011-AS-WWW.pdf",
+      "urlHash": "ab974ed63118500f",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_c54o96tow96s1ajvoz6795td",
+      "search_ids": [
+        "search_bqkgkcd9jkcbitt43loilx6k"
+      ],
+      "url": "https://www.dmv.ca.gov/portal/uploads/2020/03/ffvr18.pdf",
+      "urlHash": "7a2f492b508aa0ce",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_k0cttkwoun5uth3355doqsvx",
+      "search_ids": [
+        "search_bqkgkcd9jkcbitt43loilx6k"
+      ],
+      "url": "https://www.dmv.ca.gov/portal/uploads/2020/05/sr1.pdf",
+      "urlHash": "b10360a8ce7a5643",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_db1lsl91h8dk1c3o1unkvrnz",
+      "search_ids": [
+        "search_bqkgkcd9jkcbitt43loilx6k"
+      ],
+      "url": "https://www.dmv.ca.gov/portal/uploads/2024/12/REG-5085-R11-2024-ASB-WWW.pdf",
+      "urlHash": "4fc4262ea3d1cd63",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_tqp34mrievlvcr560wonxsvw",
+      "search_ids": [
+        "search_bqkgkcd9jkcbitt43loilx6k"
+      ],
+      "url": "https://www.dmv.ca.gov/portal/file/mcp-handbook-pdf/",
+      "urlHash": "7bd8db08d3679606",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_di553gbh1pws1ulz19ac13nw",
+      "search_ids": [
+        "search_bqkgkcd9jkcbitt43loilx6k"
+      ],
+      "url": "https://www.dmv.ca.gov/web/eng_pdf/dl600.pdf",
+      "urlHash": "cf856f33661d9b95",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    }
+  ]
 }
