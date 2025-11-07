@@ -60,10 +60,10 @@ Claims search, outputs query for agent to perform WebSearch.
 #### 3. save-urls.py - Save Discovered URLs
 
 ```bash
-uv run scripts/save-urls.py --search-id search_abc123 --urls https://url1.com https://url2.com
+uv run scripts/save-urls.py --search-id search_abc123 --urls "https://url1.com" "https://url2.com"
 ```
 
-Saves 4-6 URLs after agent performs WebSearch.
+Saves all discovered URLs after agent performs WebSearch (quote URLs to handle special characters).
 
 #### 4. fetch-url.py - Autonomous URL Fetching
 
@@ -109,10 +109,10 @@ $ uv run scripts/claim-search.py --id search_abc123
 # Output: "Perform WebSearch with query: 'GEICO discounts'"
 
 # 3. Agent performs WebSearch (Claude tool)
-# (Agent finds 4-6 URLs)
+# (Agent collects all relevant URLs)
 
-# 4. Agent saves URLs
-$ uv run scripts/save-urls.py --search-id search_abc123 --urls <url1> <url2>
+# 4. Agent saves URLs (quote URLs to handle special characters)
+$ uv run scripts/save-urls.py --search-id search_abc123 --urls "https://url1.com" "https://url2.com"
 # Output: "Continue with: uv run scripts/select-work.py"
 
 # 5. Repeat...

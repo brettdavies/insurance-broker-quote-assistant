@@ -400,7 +400,7 @@ git log --oneline --follow knowledge-pack-scraper/search-tracker.json
 ---
 
 **See Also:**
-- 📦 [Master Orchestration](phase-2-master-orchestration.md) - Complete workflow
+- 📦 [Agent Instructions](phase-2-agent-instructions.md) - Complete agent workflow
 - 🔧 [git_utils.py](../../knowledge-pack-scraper/scripts/git_utils.py) - Implementation details
 - 📊 [Tracker Schemas](sot-schemas.md) - Tracker file structures
 

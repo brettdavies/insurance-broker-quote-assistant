@@ -25,9 +25,15 @@ Phase 2 uses **autonomous Python scripts** that output JSON with `next_steps` in
 
 ## Prerequisites
 
-Before starting Phase 2:
-- ✅ `uv` installed and working
-- ✅ Git configured (user.name, user.email)
+**Prerequisites check:**
+1. Verify you're in the repository root directory
+2. Confirm uv is installed (minimum v0.9.7): `uv --version`
+   - If older than 0.9.7: `pip install --upgrade uv` (uv cannot self-update)
+   - Check for multiple installations: `which -a uv`
+   - Remove old binaries if found: `rm ~/.local/bin/uv` or `rm /root/.local/bin/uv`
+3. Confirm git is configured: `git config user.name && git config user.email`
+
+**Environment requirements:**
 - ✅ Trackers populated: `search-tracker.json`, `url-tracker.json`, `page-tracker.json`
 - ✅ WebSearch tool available (for claim-search.py)
 - ✅ Working directory: `knowledge-pack-scraper/`
@@ -72,8 +78,8 @@ uv run scripts/select-work.py
 
 **Agent action required**:
 1. Use WebSearch tool with provided query
-2. Collect 4-6 URLs from results (prefer authoritative sources - see [sot-source-hierarchy.md](sot-source-hierarchy.md))
-3. Run `save-urls.py` with discovered URLs
+2. Collect all relevant URLs from results (prefer authoritative sources - see [sot-source-hierarchy.md](sot-source-hierarchy.md))
+3. Run `save-urls.py` with discovered URLs (quote each URL to handle special characters)
 
 **Race condition**: If claim fails (another agent claimed it), script tells you to run select-work.py again
 

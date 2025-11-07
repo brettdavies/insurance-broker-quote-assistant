@@ -208,10 +208,10 @@ def main() -> None:
                 f"Claim committed successfully. You now own {search_id}.\n\n"
                 f"ACTION REQUIRED - Perform WebSearch:\n"
                 f"1. Use WebSearch tool with query: \"{query}\"\n"
-                f"2. Find 4-6 high-quality URLs related to the query\n"
+                f"2. Collect ALL relevant high-quality URLs from results (no limit)\n"
                 f"3. After WebSearch completes, save URLs using:\n"
-                f"   uv run scripts/save-urls.py --search-id {search_id} --urls <url1> <url2> <url3> ...\n\n"
-                f"Note: You MUST perform WebSearch yourself. This script cannot do it for you."
+                f"   uv run scripts/save-urls.py --search-id {search_id} --urls \"<url1>\" \"<url2>\" \"<url3>\" ...\n\n"
+                f"Note: Quote each URL to handle special characters (&, ?, etc.)."
             ),
             data={
                 "search_id": search_id,
