@@ -3,12 +3,12 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T04:35:09.494529",
+    "lastUpdated": "2025-11-07T04:36:07.740941",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 31,
+    "pending": 35,
     "fetching": 0,
     "completed": 0,
     "failed": 0
@@ -204,7 +204,8 @@
     {
       "id": "url_i1efuh4chh7rqmxk1qkcmqi9",
       "search_ids": [
-        "search_bi1usriv015udl5hyyql660t"
+        "search_bi1usriv015udl5hyyql660t",
+        "search_ekqvzv2r35c6s2iy3nfp1zxs"
       ],
       "url": "https://www.nerdwallet.com/insurance/homeowners/geico-home-insurance-review",
       "urlHash": "1d105bc5a08cb261",
@@ -221,7 +222,8 @@
     {
       "id": "url_xvhl23hgbwf1jcvaboepbj3c",
       "search_ids": [
-        "search_bi1usriv015udl5hyyql660t"
+        "search_bi1usriv015udl5hyyql660t",
+        "search_ekqvzv2r35c6s2iy3nfp1zxs"
       ],
       "url": "https://www.geico.com/homeowners-insurance/",
       "urlHash": "c27bece58e29bed1",
@@ -238,7 +240,8 @@
     {
       "id": "url_eww4wxv4i5s1akyvzr30va7k",
       "search_ids": [
-        "search_bi1usriv015udl5hyyql660t"
+        "search_bi1usriv015udl5hyyql660t",
+        "search_ekqvzv2r35c6s2iy3nfp1zxs"
       ],
       "url": "https://www.usnews.com/insurance/homeowners-insurance/geico-review",
       "urlHash": "a1b36e7cb644b70f",
@@ -255,7 +258,8 @@
     {
       "id": "url_kq1pdflkxa3q9e4e2dzxgfla",
       "search_ids": [
-        "search_bi1usriv015udl5hyyql660t"
+        "search_bi1usriv015udl5hyyql660t",
+        "search_ekqvzv2r35c6s2iy3nfp1zxs"
       ],
       "url": "https://www.moneygeek.com/insurance/homeowners/reviews/geico/",
       "urlHash": "f0d8bfc3eb9f27f2",
@@ -272,7 +276,8 @@
     {
       "id": "url_mkexvuwgxzyd1pgw1r5727og",
       "search_ids": [
-        "search_bi1usriv015udl5hyyql660t"
+        "search_bi1usriv015udl5hyyql660t",
+        "search_ekqvzv2r35c6s2iy3nfp1zxs"
       ],
       "url": "https://insurify.com/homeowners-insurance/companies/geico/",
       "urlHash": "6f2375a62f4d789d",
@@ -323,7 +328,8 @@
     {
       "id": "url_bxy1dbhympwb83d764vb46nk",
       "search_ids": [
-        "search_bi1usriv015udl5hyyql660t"
+        "search_bi1usriv015udl5hyyql660t",
+        "search_ekqvzv2r35c6s2iy3nfp1zxs"
       ],
       "url": "https://www.geico.com/information/aboutinsurance/homeowners/faq/",
       "urlHash": "79d209b9d39fead4",
@@ -531,6 +537,74 @@
       ],
       "url": "https://www.amfam.com/insurance/home/coverages-by-state/illinois",
       "urlHash": "d0b9c7f4a3ab3c57",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_w6gs9lv7bv6yg08pafz2o7wb",
+      "search_ids": [
+        "search_ekqvzv2r35c6s2iy3nfp1zxs"
+      ],
+      "url": "https://www.geico.com/homeowners-insurance/states/",
+      "urlHash": "f20b30aad247869e",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_wxb77z2q9glhs9ixq9uaglcs",
+      "search_ids": [
+        "search_ekqvzv2r35c6s2iy3nfp1zxs"
+      ],
+      "url": "https://www.geico.com/homeowners-insurance/policyholder/",
+      "urlHash": "9dc981f4cf23689f",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_bsxbcs0kg04v5mv3192bzmyj",
+      "search_ids": [
+        "search_ekqvzv2r35c6s2iy3nfp1zxs"
+      ],
+      "url": "https://www.geico.com/information/aboutinsurance/",
+      "urlHash": "59a1db97f6e4cf7c",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_tsdze3viv9hb7eit3hqxav6j",
+      "search_ids": [
+        "search_ekqvzv2r35c6s2iy3nfp1zxs"
+      ],
+      "url": "https://www.bankrate.com/insurance/reviews/geico/",
+      "urlHash": "d713f7076e9dc8f1",
       "priority": "high",
       "status": "pending",
       "assignedTo": null,
