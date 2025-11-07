@@ -3,12 +3,12 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T05:55:38.058706",
+    "lastUpdated": "2025-11-07T05:56:10.658150",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 520,
+    "pending": 521,
     "fetching": 0,
     "completed": 0,
     "failed": 0
@@ -8875,6 +8875,23 @@
       "url": "https://www.bogleheads.org/forum/viewtopic.php?t=409659",
       "urlHash": "1fd379c29db343f5",
       "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_ymz0gwhecqb5vrtv0c24w5bv",
+      "search_ids": [
+        "search_jqxghbrbreraubmw0d7dobwk"
+      ],
+      "url": "https://www.engr.psu.edu/ae/thesis/portfolios/2008/dsf139/Documents/GSA.pdf",
+      "urlHash": "3bf43ff433728ce1",
+      "priority": "high",
       "status": "pending",
       "assignedTo": null,
       "pageId": null,
