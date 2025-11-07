@@ -3,12 +3,12 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T05:20:22.157449",
+    "lastUpdated": "2025-11-07T05:21:12.375199",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 383,
+    "pending": 393,
     "fetching": 0,
     "completed": 0,
     "failed": 0
@@ -6534,6 +6534,176 @@
       "url": "https://www.geico.com/information/aboutinsurance/auto/shopping-for-car-insurance/",
       "urlHash": "45dda16505e59ba6",
       "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_saf0nn2sxbof2uhmitflh3z8",
+      "search_ids": [
+        "search_wo5u3ec8kftqgnc6esxrmtdh"
+      ],
+      "url": "https://www.ibm.com/docs/en/informix-servers/14.10.0?topic=searches-exact-phrase",
+      "urlHash": "c4c0f9174131465e",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_l658s3lirjtygmezcd720gk9",
+      "search_ids": [
+        "search_wo5u3ec8kftqgnc6esxrmtdh"
+      ],
+      "url": "https://www.collinsdictionary.com/us/dictionary/english/exact-phrase",
+      "urlHash": "9b995ea00b3b72c7",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_u3v44ekwn1wp3yq42ue8c63l",
+      "search_ids": [
+        "search_wo5u3ec8kftqgnc6esxrmtdh"
+      ],
+      "url": "https://libguides.ucmerced.edu/c.php?g=15839&p=2456748",
+      "urlHash": "dc74347efc4d6345",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_bisqktr8omnutjpxtdealgk8",
+      "search_ids": [
+        "search_wo5u3ec8kftqgnc6esxrmtdh"
+      ],
+      "url": "https://law-msu.libguides.com/c.php?g=913167&p=6579393",
+      "urlHash": "62fc856fa912b41e",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_h9dl8wm1w8sqkhvpb0091cv8",
+      "search_ids": [
+        "search_wo5u3ec8kftqgnc6esxrmtdh"
+      ],
+      "url": "https://dictionary.cambridge.org/example/english/exact-phrase",
+      "urlHash": "0bc8323a60c26d18",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_yzv2vilbp9ptkoc6dy8f1fob",
+      "search_ids": [
+        "search_wo5u3ec8kftqgnc6esxrmtdh"
+      ],
+      "url": "https://support.google.com/websearch/thread/3544867/how-do-i-make-google-search-for-a-nice-short-exact-phrase?hl=en",
+      "urlHash": "bd65a3073029f007",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_q0m0hk2xoldnsafsr2e3j2lh",
+      "search_ids": [
+        "search_wo5u3ec8kftqgnc6esxrmtdh"
+      ],
+      "url": "https://www.elsevier.support/pharmapendium/answer/how-do-i-search-for-an-exact-phrase",
+      "urlHash": "0d5c68adfc6a1304",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_q0lyq57u9mz2wlcjir2iiem7",
+      "search_ids": [
+        "search_wo5u3ec8kftqgnc6esxrmtdh"
+      ],
+      "url": "https://webapps.stackexchange.com/questions/144207/google-for-the-exact-phrase-and-no-quotation-marks-dont-help",
+      "urlHash": "792ffa4eeac1a4ce",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_wbjc45eitvn4mddijdi0lzwn",
+      "search_ids": [
+        "search_wo5u3ec8kftqgnc6esxrmtdh"
+      ],
+      "url": "https://community.intercom.com/reporting-21/how-can-i-search-for-an-exact-phrase-in-conversation-topics-1125",
+      "urlHash": "87690abc8b215109",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_a3cttjxn4vj2n8lcvb9c55cl",
+      "search_ids": [
+        "search_wo5u3ec8kftqgnc6esxrmtdh"
+      ],
+      "url": "https://connect.ebsco.com/s/article/How-can-I-search-for-an-exact-phrase-only?language=en_US",
+      "urlHash": "a4965e66d0b30608",
+      "priority": "medium",
       "status": "pending",
       "assignedTo": null,
       "pageId": null,
