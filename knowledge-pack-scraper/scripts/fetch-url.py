@@ -196,7 +196,7 @@ async def main_async(url_id: str) -> None:
         search_id = url_entry.get('searchId', 'unknown')
 
         # Step 7: Ensure output directory exists
-        output_dir = tm.output_base / '_pages'
+        output_dir = tm.output_base / 'pages'
         output_dir.mkdir(parents=True, exist_ok=True)
 
         # Step 8: Fetch with crawl4ai
@@ -248,8 +248,8 @@ async def main_async(url_id: str) -> None:
         # Step 10: Update url-tracker
         tm.update_status('url', url_id, 'completed', {
             'pageId': page_id,
-            'htmlFile': f"../knowledge_pack/raw/_pages/{page_id}.html",
-            'markdownFile': f"../knowledge_pack/raw/_pages/{page_id}.md",
+            'htmlFile': f"../knowledge_pack/raw/pages/{page_id}.html",
+            'markdownFile': f"../knowledge_pack/raw/pages/{page_id}.md",
             'fetchedAt': datetime.now().isoformat()
         })
 
@@ -259,8 +259,8 @@ async def main_async(url_id: str) -> None:
             'id': page_id,
             'urlId': url_id,
             'searchId': search_id,
-            'htmlFile': f"../knowledge_pack/raw/_pages/{page_id}.html",
-            'markdownFile': f"../knowledge_pack/raw/_pages/{page_id}.md",
+            'htmlFile': f"../knowledge_pack/raw/pages/{page_id}.html",
+            'markdownFile': f"../knowledge_pack/raw/pages/{page_id}.md",
             'htmlSize': html_size,
             'markdownSize': md_size,
             'status': 'pending',
