@@ -3,12 +3,12 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T06:00:15.521208",
+    "lastUpdated": "2025-11-07T06:00:58.802775",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 566,
+    "pending": 572,
     "fetching": 0,
     "completed": 0,
     "failed": 0
@@ -2139,7 +2139,8 @@
         "search_vzrq1kwa4femc3s8wdgafueh",
         "search_alh2bt49mpj724v2yv3v4yrh",
         "search_q2ebudwr8dggtzaa0zo6n9vw",
-        "search_vpg4akr721cdqp2x5tjszngz"
+        "search_vpg4akr721cdqp2x5tjszngz",
+        "search_ihkd99ak7wknk035wy4pte1k"
       ],
       "url": "https://www.dfs.ny.gov/consumers/auto_insurance/minimum_auto_insurance_requirements",
       "urlHash": "30a5f63042b1eae7",
@@ -7931,7 +7932,8 @@
       "id": "url_u7jscwb2yx0bhybsepf76j8m",
       "search_ids": [
         "search_q2ebudwr8dggtzaa0zo6n9vw",
-        "search_vpg4akr721cdqp2x5tjszngz"
+        "search_vpg4akr721cdqp2x5tjszngz",
+        "search_ihkd99ak7wknk035wy4pte1k"
       ],
       "url": "https://www.dfs.ny.gov/consumers/auto_insurance/Auto_resource_center",
       "urlHash": "19bd8abf05a9b569",
@@ -7949,7 +7951,8 @@
       "id": "url_euqipszs80pojqaqukkubv3i",
       "search_ids": [
         "search_q2ebudwr8dggtzaa0zo6n9vw",
-        "search_vpg4akr721cdqp2x5tjszngz"
+        "search_vpg4akr721cdqp2x5tjszngz",
+        "search_ihkd99ak7wknk035wy4pte1k"
       ],
       "url": "https://www.dfs.ny.gov/consumers/auto_insurance/optional_auto_insurance",
       "urlHash": "bf939492c5fffcf4",
@@ -7966,7 +7969,8 @@
     {
       "id": "url_gra9bw2mo7xlh97r26v3htmv",
       "search_ids": [
-        "search_q2ebudwr8dggtzaa0zo6n9vw"
+        "search_q2ebudwr8dggtzaa0zo6n9vw",
+        "search_ihkd99ak7wknk035wy4pte1k"
       ],
       "url": "https://www.dfs.ny.gov/consumers/auto_insurance/trouble_getting_coverage",
       "urlHash": "30deb9db4d6e1322",
@@ -9658,6 +9662,108 @@
       ],
       "url": "https://www.valuepenguin.com/short-term-renters-insurance-basics",
       "urlHash": "06a25bf5b51ba9c5",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_n6b50xe6m8wazhcumah4srwr",
+      "search_ids": [
+        "search_ihkd99ak7wknk035wy4pte1k"
+      ],
+      "url": "https://www.dfs.ny.gov/insurance/ogco2004/rg041116.htm",
+      "urlHash": "95cc5b2ae5625c9e",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_fmpoheuczvm724k1kkdtyb9q",
+      "search_ids": [
+        "search_ihkd99ak7wknk035wy4pte1k"
+      ],
+      "url": "https://www.dfs.ny.gov/insurance/ogco2008/rg080517.htm",
+      "urlHash": "f8caaa9d9429b8e4",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_md4hi9havuv64lt0mzf6h6h3",
+      "search_ids": [
+        "search_ihkd99ak7wknk035wy4pte1k"
+      ],
+      "url": "https://www.dfs.ny.gov/insurance/ogco2003/rg030138.htm",
+      "urlHash": "c149c3e673c56d98",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_goyk8hahjpvvsqu75av6topn",
+      "search_ids": [
+        "search_ihkd99ak7wknk035wy4pte1k"
+      ],
+      "url": "https://www.dfs.ny.gov/insurance/ogco2003/rg030406.htm",
+      "urlHash": "853b8e4b134d3f45",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_gk6zjvi1s8g9iyehoyoy6l60",
+      "search_ids": [
+        "search_ihkd99ak7wknk035wy4pte1k"
+      ],
+      "url": "https://www.dfs.ny.gov/system/files/documents/2021/01/r68ftext.pdf",
+      "urlHash": "cce904c176dd719f",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_t7fr0zqmid794eblo8ol1tyu",
+      "search_ids": [
+        "search_ihkd99ak7wknk035wy4pte1k"
+      ],
+      "url": "https://www.dfs.ny.gov/apps_and_licensing/property_insurers/nofault_old_reg68_pre04052002",
+      "urlHash": "d7cde1228e4d3b42",
       "priority": "medium",
       "status": "pending",
       "assignedTo": null,
