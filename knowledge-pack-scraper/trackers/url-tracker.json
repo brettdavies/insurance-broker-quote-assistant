@@ -3,12 +3,12 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T04:00:40.049836",
+    "lastUpdated": "2025-11-07T04:01:18.736228",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 17,
+    "pending": 23,
     "fetching": 0,
     "completed": 0,
     "failed": 0
@@ -294,6 +294,108 @@
       "url": "https://www.chicagolawyer.com/blog/a-brief-car-insurance-guide-for-illinois-drivers/",
       "urlHash": "c91d9de3a29018fa",
       "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_hnmvywwajhhw1g84x1768aoe",
+      "search_ids": [
+        "search_r0cpulepymvohlz0g2hbz6tr"
+      ],
+      "url": "https://wallethub.com/answers/ci/what-states-is-progressive-available-in-2140813668/",
+      "urlHash": "1bffc12d51cd3368",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_ihrc9mscxyvxwtl56atzx22g",
+      "search_ids": [
+        "search_r0cpulepymvohlz0g2hbz6tr"
+      ],
+      "url": "https://www.progressivecommercial.com/commercial-auto-insurance/states/",
+      "urlHash": "6d81dd7223dea1f7",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_hd0n3ufs3hxdxrh7mmid3d1q",
+      "search_ids": [
+        "search_r0cpulepymvohlz0g2hbz6tr"
+      ],
+      "url": "https://wallethub.com/answers/ci/will-my-progressive-car-insurance-cover-me-out-of-state-2140715645/",
+      "urlHash": "022002b2d5d49ffc",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_ketvuts16aas6vzz3pwowih5",
+      "search_ids": [
+        "search_r0cpulepymvohlz0g2hbz6tr"
+      ],
+      "url": "https://www.usnews.com/insurance/auto/progressive-car-insurance-review",
+      "urlHash": "d4be3bc65c704d19",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_vyyzb09axki23reloogs70q3",
+      "search_ids": [
+        "search_r0cpulepymvohlz0g2hbz6tr"
+      ],
+      "url": "https://www.insurance.com/auto-insurance/carriers/progressive.aspx",
+      "urlHash": "5da174958d6a587a",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_cqk6bzh3oo1hrhtjd774swqy",
+      "search_ids": [
+        "search_r0cpulepymvohlz0g2hbz6tr"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Progressive_Corporation",
+      "urlHash": "2eeaac7bb576c365",
+      "priority": "high",
       "status": "pending",
       "assignedTo": null,
       "pageId": null,
