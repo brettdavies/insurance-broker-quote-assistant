@@ -3,15 +3,15 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T05:14:25.658676",
+    "lastUpdated": "2025-11-07T05:14:59.142723",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
     "pending": 438,
-    "claimed": 2,
+    "claimed": 1,
     "urls_discovered": 0,
-    "completed": 36,
+    "completed": 37,
     "failed": 0
   },
   "searches": [
@@ -4171,16 +4171,18 @@
       "subcategory": "illinois-auto-minimums",
       "carrier": null,
       "priority": "high",
-      "status": "claimed",
+      "status": "completed",
       "assignedTo": "agnt_gesj6qx1v6etv5ocb76nvzl7",
       "startedAt": null,
-      "completedAt": null,
+      "completedAt": "2025-11-07T05:14:59.140515",
       "durationSeconds": null,
-      "urlsDiscoveredCount": null,
+      "urlsDiscoveredCount": 3,
       "errorMessage": null,
       "retryCount": 0,
       "notes": null,
-      "claimedAt": "2025-11-07T05:14:25.656591"
+      "claimedAt": "2025-11-07T05:14:25.656591",
+      "urlsNewCount": 3,
+      "urlsExistingCount": 0
     },
     {
       "id": "search_spxf3lnipljuonzy4cpalg4l",
