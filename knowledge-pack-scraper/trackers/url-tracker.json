@@ -3,12 +3,12 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T04:02:42.218132",
+    "lastUpdated": "2025-11-07T04:03:22.920119",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 35,
+    "pending": 41,
     "fetching": 0,
     "completed": 0,
     "failed": 0
@@ -600,6 +600,108 @@
       "url": "https://www.geico.com/",
       "urlHash": "05d0fdb3fe84bce6",
       "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_zvuiymf7png21umqvsxsjyun",
+      "search_ids": [
+        "search_bf6vfybpgeevx05xfz1okyo3"
+      ],
+      "url": "https://www.dfs.ny.gov/consumers/help_for_homeowners/insurance/basic_coverage",
+      "urlHash": "f1678c6c4e085cd8",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_k3cauehqgem38kr83gfhag3o",
+      "search_ids": [
+        "search_bf6vfybpgeevx05xfz1okyo3"
+      ],
+      "url": "https://law.justia.com/codes/new-york/isc/article-23/2351/",
+      "urlHash": "a337fa7c9d5a622c",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_cll1r9l4irszt3e2fse79f9q",
+      "search_ids": [
+        "search_bf6vfybpgeevx05xfz1okyo3"
+      ],
+      "url": "https://www.plymouthrock.com/resources/new-york-home-insurance-requirements",
+      "urlHash": "9a178f4c5504568e",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_gbgu35ocy07ht6sx78wdw3rj",
+      "search_ids": [
+        "search_bf6vfybpgeevx05xfz1okyo3"
+      ],
+      "url": "https://www.quoteble.com/home/state-laws/new-york.html",
+      "urlHash": "3ce8b9b24ce1922b",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_mfjl4vfezeqjhem1nzbgwzw6",
+      "search_ids": [
+        "search_bf6vfybpgeevx05xfz1okyo3"
+      ],
+      "url": "https://www.lemonade.com/homeowners/explained/homeowners-insurance-new-york/",
+      "urlHash": "aa54467878e053c1",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_igzcxcqm0qw0l04r70dr0a6l",
+      "search_ids": [
+        "search_bf6vfybpgeevx05xfz1okyo3"
+      ],
+      "url": "https://www.progressive.com/answers/new-york-home-insurance/",
+      "urlHash": "bb042f90dd26641b",
+      "priority": "high",
       "status": "pending",
       "assignedTo": null,
       "pageId": null,
