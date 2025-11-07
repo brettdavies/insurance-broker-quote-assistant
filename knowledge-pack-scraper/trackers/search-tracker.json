@@ -3,13 +3,13 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T05:56:55.782925",
+    "lastUpdated": "2025-11-07T05:56:57.999669",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
-    "pending": 412,
-    "claimed": 3,
+    "pending": 411,
+    "claimed": 4,
     "urls_discovered": 0,
     "completed": 61,
     "failed": 0
@@ -4262,15 +4262,16 @@
       "subcategory": "state-homeowners-minimums",
       "carrier": null,
       "priority": "high",
-      "status": "pending",
-      "assignedTo": null,
+      "status": "claimed",
+      "assignedTo": "agnt_d3hvvm0npilr1k1ydooigo6f",
       "startedAt": null,
       "completedAt": null,
       "durationSeconds": null,
       "urlsDiscoveredCount": null,
       "errorMessage": null,
       "retryCount": 0,
-      "notes": null
+      "notes": null,
+      "claimedAt": "2025-11-07T05:56:57.997425"
     },
     {
       "id": "search_u9wzca9atcdqtfetkuywffhj",
