@@ -3,12 +3,12 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T04:02:03.315559",
+    "lastUpdated": "2025-11-07T04:02:42.218132",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 29,
+    "pending": 35,
     "fetching": 0,
     "completed": 0,
     "failed": 0
@@ -498,6 +498,108 @@
       "url": "https://www.progressive.com/about/purpose/homeownership/buy-a-home/",
       "urlHash": "06a7e1d7726a36ee",
       "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_ozpjsij5bgv96flb96m9zuof",
+      "search_ids": [
+        "search_f5oqj6hv7w3nqtpti7zy0em5"
+      ],
+      "url": "https://www.geico.com/save/discounts/multi-policy-insurance-discount/",
+      "urlHash": "ed324b3a2b463534",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_t8gdig8ybo6xbku88c0ww7le",
+      "search_ids": [
+        "search_f5oqj6hv7w3nqtpti7zy0em5"
+      ],
+      "url": "https://www.geico.com/save/discounts/car-insurance-discounts/",
+      "urlHash": "72f557a509bd29d8",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_q7t644hdv9foxgznwln2ry28",
+      "search_ids": [
+        "search_f5oqj6hv7w3nqtpti7zy0em5"
+      ],
+      "url": "https://www.geico.com/save/",
+      "urlHash": "5b006c0a2d4970ef",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_tu0m9cnrfmn0x5qxincjajpq",
+      "search_ids": [
+        "search_f5oqj6hv7w3nqtpti7zy0em5"
+      ],
+      "url": "https://www.geico.com/information/aboutinsurance/homeowners/cheapest/",
+      "urlHash": "7e0ac0a8a912161d",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_n8xjv5gvajesem9dker2pbbp",
+      "search_ids": [
+        "search_f5oqj6hv7w3nqtpti7zy0em5"
+      ],
+      "url": "https://www.geico.com/information/aboutinsurance/homeowners/florida-homeowners-insurance/",
+      "urlHash": "1cff44c6f5a551ef",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_ghgc5utghteh2hr1d79d23rb",
+      "search_ids": [
+        "search_f5oqj6hv7w3nqtpti7zy0em5"
+      ],
+      "url": "https://www.geico.com/",
+      "urlHash": "05d0fdb3fe84bce6",
+      "priority": "medium",
       "status": "pending",
       "assignedTo": null,
       "pageId": null,
