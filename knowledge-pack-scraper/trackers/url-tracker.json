@@ -3,12 +3,12 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T03:21:59.571808",
+    "lastUpdated": "2025-11-07T03:22:45.805751",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 62,
+    "pending": 68,
     "fetching": 0,
     "completed": 0,
     "failed": 0
@@ -1059,6 +1059,108 @@
       "url": "https://content.naic.org/article/naic-releases-2021-2022-auto-insurance-database-report",
       "urlHash": "ae047936b554b5af",
       "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_nae9syl3l6zt6p4tsvkkbmur",
+      "search_ids": [
+        "search_fbgfymcfpesovsmu9jy40gbr"
+      ],
+      "url": "https://www.geico.com/save/discounts/car-insurance-discounts/",
+      "urlHash": "72f557a509bd29d8",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_e809hubjco864kaowc86kssv",
+      "search_ids": [
+        "search_fbgfymcfpesovsmu9jy40gbr"
+      ],
+      "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-safe-driver-discount",
+      "urlHash": "b10b027d6f5577b5",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_rti0hbac3kj7ixka4wkpwt8h",
+      "search_ids": [
+        "search_fbgfymcfpesovsmu9jy40gbr"
+      ],
+      "url": "https://www.carinsurancecomparison.com/geico-car-insurance-discounts/",
+      "urlHash": "b9458edcbd79dc47",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_ddnsmmpro0qlkjtcjl343490",
+      "search_ids": [
+        "search_fbgfymcfpesovsmu9jy40gbr"
+      ],
+      "url": "https://www.autoinsuranceez.com/geico-safe-driver-discount-how-much-can-you-save/",
+      "urlHash": "f1a169ad21eb2a9f",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_aejep6xqh63i9obdg5dn1ej0",
+      "search_ids": [
+        "search_fbgfymcfpesovsmu9jy40gbr"
+      ],
+      "url": "https://www.geico.com/save/discounts/mature-driver-discounts/",
+      "urlHash": "9796211d2f37fbf7",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_uvk9dhqoi04isd7wa1618v6c",
+      "search_ids": [
+        "search_fbgfymcfpesovsmu9jy40gbr"
+      ],
+      "url": "https://www.geico.com/auto-insurance/claim-forgiveness/",
+      "urlHash": "0a246767d153ef72",
+      "priority": "high",
       "status": "pending",
       "assignedTo": null,
       "pageId": null,
