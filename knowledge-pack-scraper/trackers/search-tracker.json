@@ -3,13 +3,13 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T05:52:58.563821",
+    "lastUpdated": "2025-11-07T05:53:00.935405",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
-    "pending": 418,
-    "claimed": 3,
+    "pending": 417,
+    "claimed": 4,
     "urls_discovered": 0,
     "completed": 55,
     "failed": 0
@@ -5044,15 +5044,16 @@
       "subcategory": "carrier-specific-average-pricing",
       "carrier": "State Farm",
       "priority": "high",
-      "status": "pending",
-      "assignedTo": null,
+      "status": "claimed",
+      "assignedTo": "agnt_k0i52w9jc9suforz6zal7rkn",
       "startedAt": null,
       "completedAt": null,
       "durationSeconds": null,
       "urlsDiscoveredCount": null,
       "errorMessage": null,
       "retryCount": 0,
-      "notes": null
+      "notes": null,
+      "claimedAt": "2025-11-07T05:53:00.933524"
     },
     {
       "id": "search_xipokpz1sacqhqrzy231kk0k",
