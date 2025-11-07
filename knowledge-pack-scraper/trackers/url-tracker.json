@@ -3,12 +3,12 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T03:59:17.778061",
+    "lastUpdated": "2025-11-07T04:00:02.312978",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 6,
+    "pending": 11,
     "fetching": 0,
     "completed": 0,
     "failed": 0
@@ -107,6 +107,91 @@
       "url": "https://www.dmv.ca.gov/web/eng_pdf/dl600.pdf",
       "urlHash": "cf856f33661d9b95",
       "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_gqwikv0zlftw7hxzhpy84l5w",
+      "search_ids": [
+        "search_kisl8826oqto8o10npzyvd1t"
+      ],
+      "url": "https://www.statefarm.com/insurance/liability/personal-umbrella-policy",
+      "urlHash": "613477834ab799a2",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_wpxbly1m7swnc1sl88pc7yd8",
+      "search_ids": [
+        "search_kisl8826oqto8o10npzyvd1t"
+      ],
+      "url": "https://www.statefarm.com/insurance/liability",
+      "urlHash": "14acd9bcfd6b471b",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_rcx2pzkds5ukkiekm1j5ykwe",
+      "search_ids": [
+        "search_kisl8826oqto8o10npzyvd1t"
+      ],
+      "url": "https://www.statefarm.com/simple-insights/residence/what-is-individual-liability-insurance-and-what-does-it-cover",
+      "urlHash": "5466385266b08210",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_pj8vbpmi0adv3ycpwss2eqkj",
+      "search_ids": [
+        "search_kisl8826oqto8o10npzyvd1t"
+      ],
+      "url": "https://www.newsweek.com/ten-activities-state-farm-says-too-risky-insure-2080320",
+      "urlHash": "c03ea240a2da8f2f",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_wja7eb9y7tjyrnjp9gfm6ltb",
+      "search_ids": [
+        "search_kisl8826oqto8o10npzyvd1t"
+      ],
+      "url": "https://www.singletonschreiber.com/theblog/too-risky-to-cover-state-farms-shrinking-liability-umbrella-puts-californians-in-the-crosshairs",
+      "urlHash": "d0a665e89c03fa6f",
+      "priority": "medium",
       "status": "pending",
       "assignedTo": null,
       "pageId": null,
