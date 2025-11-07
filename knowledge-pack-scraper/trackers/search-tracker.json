@@ -3,15 +3,15 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T03:11:44.041419",
+    "lastUpdated": "2025-11-07T03:12:43.808735",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
     "pending": 475,
-    "claimed": 1,
+    "claimed": 0,
     "urls_discovered": 0,
-    "completed": 0,
+    "completed": 1,
     "failed": 0
   },
   "searches": [
@@ -6108,16 +6108,18 @@
       "subcategory": "florida-specific",
       "carrier": null,
       "priority": "medium",
-      "status": "claimed",
+      "status": "completed",
       "assignedTo": "agnt_xvu3u8iu1u5wc6trr8x5yrz3",
       "startedAt": null,
-      "completedAt": null,
+      "completedAt": "2025-11-07T03:12:43.806938",
       "durationSeconds": null,
-      "urlsDiscoveredCount": null,
+      "urlsDiscoveredCount": 6,
       "errorMessage": null,
       "retryCount": 0,
       "notes": null,
-      "claimedAt": "2025-11-07T03:11:44.039619"
+      "claimedAt": "2025-11-07T03:11:44.039619",
+      "urlsNewCount": 6,
+      "urlsExistingCount": 0
     },
     {
       "id": "search_oqakwlnajf0s70xmoekzhfva",

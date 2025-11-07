@@ -3,15 +3,118 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-06T00:00:00Z",
+    "lastUpdated": "2025-11-07T03:12:43.806358",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 0,
+    "pending": 6,
     "fetching": 0,
     "completed": 0,
     "failed": 0
   },
-  "urls": []
+  "urls": [
+    {
+      "id": "url_i1rkfqc06boocgbtg7vamwxj",
+      "search_ids": [
+        "search_k0gkvcr6e00396fxq6ijeq3k"
+      ],
+      "url": "https://floir.com/property-casualty/homeowners-insurance",
+      "urlHash": "ac0f1745be6cca55",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_kwew6o8cm0un4n68k6wlubwr",
+      "search_ids": [
+        "search_k0gkvcr6e00396fxq6ijeq3k"
+      ],
+      "url": "https://floir.com/consumers/hurricane-season-resources",
+      "urlHash": "5a62fec5031b9ade",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_glv2yp9en7nopxi6hkb12yk2",
+      "search_ids": [
+        "search_k0gkvcr6e00396fxq6ijeq3k"
+      ],
+      "url": "https://floir.com/consumers/wind-mitigation-resources/",
+      "urlHash": "3093e48da228e4cd",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_pdux48mlnso7tagukliu2ii1",
+      "search_ids": [
+        "search_k0gkvcr6e00396fxq6ijeq3k"
+      ],
+      "url": "https://floir.com/property-casualty/premium-discounts-for-hurricane-loss-mitigation",
+      "urlHash": "185a2464302ae908",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_l200dx43xdov8tysnjv78bnz",
+      "search_ids": [
+        "search_k0gkvcr6e00396fxq6ijeq3k"
+      ],
+      "url": "https://floir.com/consumers/assignment-of-benefits-resources",
+      "urlHash": "4eb2fd32a1d39a87",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_ao5lc78h16v0ysusduq90mvo",
+      "search_ids": [
+        "search_k0gkvcr6e00396fxq6ijeq3k"
+      ],
+      "url": "https://floir.com/consumers/choices-rate-comparison-search",
+      "urlHash": "a62b1d434b51ed76",
+      "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    }
+  ]
 }
