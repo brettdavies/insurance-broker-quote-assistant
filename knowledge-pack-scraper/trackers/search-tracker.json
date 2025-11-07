@@ -3,13 +3,13 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T03:18:11.179527",
+    "lastUpdated": "2025-11-07T03:18:13.647524",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
-    "pending": 469,
-    "claimed": 1,
+    "pending": 468,
+    "claimed": 2,
     "urls_discovered": 0,
     "completed": 6,
     "failed": 0
@@ -3734,15 +3734,16 @@
       "subcategory": "florida-auto-minimums",
       "carrier": null,
       "priority": "high",
-      "status": "pending",
-      "assignedTo": null,
+      "status": "claimed",
+      "assignedTo": "agnt_ktexf81uu0647yi9vhswn4cy",
       "startedAt": null,
       "completedAt": null,
       "durationSeconds": null,
       "urlsDiscoveredCount": null,
       "errorMessage": null,
       "retryCount": 0,
-      "notes": null
+      "notes": null,
+      "claimedAt": "2025-11-07T03:18:13.645591"
     },
     {
       "id": "search_o2xfj59gtornw4en16jk08gl",
