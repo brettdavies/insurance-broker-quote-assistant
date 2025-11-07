@@ -162,7 +162,18 @@ uv run scripts/select-work.py
 ### Git Push Conflict
 **Handling**: Scripts automatically pull --rebase and retry push
 
-**Manual intervention**: Only needed if automatic retry fails (rare)
+**Auto-Resolution**: JSON array append conflicts (multiple agents appending to same tracker) are automatically resolved by merging both agents' additions and deduplicating by ID.
+
+**What gets auto-resolved**:
+- Concurrent URL registrations (save-urls.py)
+- Concurrent page registrations (fetch-url.py)
+- Concurrent extraction saves (save-extraction.py)
+- Any pure array append to tracker files
+
+**What requires manual intervention** (rare):
+- Non-array conflicts (e.g., two agents modify same item's fields)
+- Conflicts in non-tracker files
+- Auto-resolve failures will output error message with instructions
 
 ### Script Error
 **Output**: `"success": false` with error message and next_steps

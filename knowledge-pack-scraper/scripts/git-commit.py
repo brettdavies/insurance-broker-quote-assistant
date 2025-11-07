@@ -28,6 +28,8 @@ def git_pull() -> tuple[bool, str]:
     """
     Pull latest changes from remote with rebase.
 
+    Auto-resolves JSON array append conflicts in tracker files.
+
     Returns:
         Tuple of (success, error_message)
     """
@@ -43,7 +45,16 @@ def git_pull() -> tuple[bool, str]:
         )
 
         if result.returncode != 0:
-            return False, result.stderr or "Unknown git pull error"
+            # Rebase failed - try auto-resolving JSON conflicts
+            from json_conflict_resolver import resolve_json_conflicts
+
+            success, error = resolve_json_conflicts(repo_root)
+            if success:
+                # Conflict resolved successfully!
+                return True, ""
+            else:
+                # Cannot auto-resolve, return original error
+                return False, f"Rebase conflict (auto-resolve failed): {error}"
 
         return True, ""
 
