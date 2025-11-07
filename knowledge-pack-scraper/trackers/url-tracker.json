@@ -3,12 +3,12 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T04:53:28.527620",
+    "lastUpdated": "2025-11-07T04:54:19.058914",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 266,
+    "pending": 273,
     "fetching": 0,
     "completed": 0,
     "failed": 0
@@ -2133,7 +2133,8 @@
       "id": "url_iwfomcsnimsykzwrjlnh5jer",
       "search_ids": [
         "search_qseh76a2il9pmcox4ewgajcp",
-        "search_vzrq1kwa4femc3s8wdgafueh"
+        "search_vzrq1kwa4femc3s8wdgafueh",
+        "search_alh2bt49mpj724v2yv3v4yrh"
       ],
       "url": "https://www.dfs.ny.gov/consumers/auto_insurance/minimum_auto_insurance_requirements",
       "urlHash": "30a5f63042b1eae7",
@@ -3714,7 +3715,8 @@
     {
       "id": "url_ubw7i3l98792nowztx4i4ih6",
       "search_ids": [
-        "search_vzrq1kwa4femc3s8wdgafueh"
+        "search_vzrq1kwa4femc3s8wdgafueh",
+        "search_alh2bt49mpj724v2yv3v4yrh"
       ],
       "url": "https://www.plymouthrock.com/resources/what-is-the-minimum-auto-insurance-coverage-in-new-york",
       "urlHash": "e05fec57bae093f3",
@@ -3816,7 +3818,8 @@
     {
       "id": "url_qynb7ajcbvpxa7ef88kanvyu",
       "search_ids": [
-        "search_vzrq1kwa4femc3s8wdgafueh"
+        "search_vzrq1kwa4femc3s8wdgafueh",
+        "search_alh2bt49mpj724v2yv3v4yrh"
       ],
       "url": "https://www.freeadvice.com/insurance/car-insurance-requirements-in-new-york/",
       "urlHash": "641f786ca7cc6034",
@@ -4534,6 +4537,125 @@
       ],
       "url": "https://www.isba.org/public/guide/automobileinsurance",
       "urlHash": "e82f0cc0a2e8fdb0",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_uasjftunb8p7f1piic3w620k",
+      "search_ids": [
+        "search_alh2bt49mpj724v2yv3v4yrh"
+      ],
+      "url": "https://www.thezebra.com/auto-insurance/new-york-car-insurance/state-laws-ny/",
+      "urlHash": "32d392ce2294f3ce",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_ongrdr9gfugsczhn2m4hmekm",
+      "search_ids": [
+        "search_alh2bt49mpj724v2yv3v4yrh"
+      ],
+      "url": "https://www.insurance.com/auto-insurance/new-york-car-insurance-laws/",
+      "urlHash": "b2b64a78d5e1507f",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_gdfvujpt9cr3iojwiwj2d8gy",
+      "search_ids": [
+        "search_alh2bt49mpj724v2yv3v4yrh"
+      ],
+      "url": "https://www.insurance.com/auto-insurance/new-york-car-insurance-coverage-calculator/",
+      "urlHash": "6384523db6c260e8",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_nt29ua0tv8v81os61tgxsmzc",
+      "search_ids": [
+        "search_alh2bt49mpj724v2yv3v4yrh"
+      ],
+      "url": "https://www.carinsurance.com/state/state-minimum-car-insurance-in-new-york/",
+      "urlHash": "e72d1e722172a98c",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_kl5o2hjanjuw368c6k3puvsk",
+      "search_ids": [
+        "search_alh2bt49mpj724v2yv3v4yrh"
+      ],
+      "url": "https://orlowlaw.com/guide-to-ny-car-insurance/",
+      "urlHash": "841087d535c15781",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_alrolt5255cl2zoefa64ec3z",
+      "search_ids": [
+        "search_alh2bt49mpj724v2yv3v4yrh"
+      ],
+      "url": "https://clovered.com/auto-insurance/new-york/laws-and-requirements/",
+      "urlHash": "9cb6aaa4b6bd2e31",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_yxkxncd4tlpot2suqdbh6s7g",
+      "search_ids": [
+        "search_alh2bt49mpj724v2yv3v4yrh"
+      ],
+      "url": "https://www.nytagandtitle.com/post/a-guide-to-new-york-auto-insurance-requirements-for-vehicle-registration",
+      "urlHash": "c2dd21375ef7fa21",
       "priority": "high",
       "status": "pending",
       "assignedTo": null,
