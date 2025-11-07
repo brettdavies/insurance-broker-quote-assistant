@@ -3,13 +3,13 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T03:59:17.780542",
+    "lastUpdated": "2025-11-07T03:59:20.075271",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
-    "pending": 475,
-    "claimed": 0,
+    "pending": 474,
+    "claimed": 1,
     "urls_discovered": 0,
     "completed": 1,
     "failed": 0
@@ -5584,15 +5584,16 @@
       "subcategory": "umbrella-insurance-requirements",
       "carrier": "State Farm",
       "priority": "medium",
-      "status": "pending",
-      "assignedTo": null,
+      "status": "claimed",
+      "assignedTo": "agnt_kt8a2wg8qsiq88w89uy9qk2n",
       "startedAt": null,
       "completedAt": null,
       "durationSeconds": null,
       "urlsDiscoveredCount": null,
       "errorMessage": null,
       "retryCount": 0,
-      "notes": null
+      "notes": null,
+      "claimedAt": "2025-11-07T03:59:20.073045"
     },
     {
       "id": "search_uub9v4yen6iv6ic62er9l8s0",
