@@ -1,0 +1,455 @@
+{
+  "domain": "insurancenavy.com",
+  "total_pages": 2,
+  "analyzed_at": "2025-11-07T14:35:35.781475",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 21,
+      "frequency": 10.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 5,
+      "frequency": 2.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 45,
+      "frequency": 22.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 13,
+      "frequency": 6.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 130,
+      "frequency": 65.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 1,
+      "frequency": 0.5,
+      "confidence": "medium"
+    },
+    {
+      "pattern": "form",
+      "count": 27,
+      "frequency": 13.5,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-link",
+      "count": 58
+    },
+    {
+      "class": "menu-item",
+      "count": 56
+    },
+    {
+      "class": "state_link_footer",
+      "count": 24
+    },
+    {
+      "class": "c-image",
+      "count": 20
+    },
+    {
+      "class": "social-icons__list__social-icon",
+      "count": 16
+    },
+    {
+      "class": "si-small",
+      "count": 16
+    },
+    {
+      "class": "si-borderless",
+      "count": 16
+    },
+    {
+      "class": "u-hidden-visually",
+      "count": 16
+    },
+    {
+      "class": "footer_links__group__heading",
+      "count": 12
+    },
+    {
+      "class": "footer_links__group__list",
+      "count": 12
+    },
+    {
+      "class": "container",
+      "count": 11
+    },
+    {
+      "class": "sub-menu-container",
+      "count": 10
+    },
+    {
+      "class": "footer_links__group",
+      "count": 10
+    },
+    {
+      "class": "sub-menu",
+      "count": 8
+    },
+    {
+      "class": "icon-chevron-down",
+      "count": 8
+    },
+    {
+      "class": "nav-chevron",
+      "count": 8
+    },
+    {
+      "class": "c-heading",
+      "count": 8
+    },
+    {
+      "class": "c-heading--blue",
+      "count": 8
+    },
+    {
+      "class": "icon-map-marker-alt",
+      "count": 7
+    },
+    {
+      "class": "nearest-location-pin",
+      "count": 7
+    },
+    {
+      "class": "icon-twitter",
+      "count": 6
+    },
+    {
+      "class": "cls-4",
+      "count": 6
+    },
+    {
+      "class": "c-button--",
+      "count": 6
+    },
+    {
+      "class": "c-accordion",
+      "count": 6
+    },
+    {
+      "class": "c-accordion__heading",
+      "count": 6
+    },
+    {
+      "class": "c-heading--medium",
+      "count": 6
+    },
+    {
+      "class": "c-accordion__heading__chevron",
+      "count": 6
+    },
+    {
+      "class": "c-accordion__content",
+      "count": 6
+    },
+    {
+      "class": "icon-facebook",
+      "count": 5
+    },
+    {
+      "class": "c-button",
+      "count": 5
+    },
+    {
+      "class": "c-button--danger",
+      "count": 5
+    },
+    {
+      "class": "icon_area",
+      "count": 4
+    },
+    {
+      "class": "icon-globe",
+      "count": 4
+    },
+    {
+      "class": "primary-menu",
+      "count": 4
+    },
+    {
+      "class": "menu-container",
+      "count": 4
+    },
+    {
+      "class": "mega-menu-column",
+      "count": 4
+    },
+    {
+      "class": "col",
+      "count": 4
+    },
+    {
+      "class": "near_button_header",
+      "count": 4
+    },
+    {
+      "class": "item",
+      "count": 4
+    },
+    {
+      "class": "si-facebook",
+      "count": 4
+    },
+    {
+      "class": "icon-envelope2",
+      "count": 4
+    },
+    {
+      "class": "icon-instagram",
+      "count": 4
+    },
+    {
+      "class": "icon-pinterest",
+      "count": 4
+    },
+    {
+      "class": "icon-youtube",
+      "count": 4
+    },
+    {
+      "class": "icon-linkedin",
+      "count": 4
+    },
+    {
+      "class": "icon-tiktok",
+      "count": 4
+    },
+    {
+      "class": "cls-2",
+      "count": 4
+    },
+    {
+      "class": "icon-chevron-right",
+      "count": 3
+    },
+    {
+      "class": "spacing--top-small",
+      "count": 3
+    },
+    {
+      "class": "blog-page__related-blogs-grid__card",
+      "count": 3
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "zipCode",
+      "count": 3
+    },
+    {
+      "id": "header",
+      "count": 2
+    },
+    {
+      "id": "header-wrap",
+      "count": 2
+    },
+    {
+      "id": "logo",
+      "count": 2
+    },
+    {
+      "id": "primary-menu-trigger",
+      "count": 2
+    },
+    {
+      "id": "footer",
+      "count": 2
+    },
+    {
+      "id": "copyrights",
+      "count": 2
+    },
+    {
+      "id": "quote_banner_mobile_id",
+      "count": 2
+    },
+    {
+      "id": "Layer_1",
+      "count": 2
+    },
+    {
+      "id": "star-shape",
+      "count": 2
+    },
+    {
+      "id": "insuranceType",
+      "count": 2
+    },
+    {
+      "id": "8c4b3540-8c85-4457-8cdb-852fffc121f3",
+      "count": 1
+    },
+    {
+      "id": "what-are-the-minimum-coverage-limits-in-illinois",
+      "count": 1
+    },
+    {
+      "id": "liability-coverage-255020",
+      "count": 1
+    },
+    {
+      "id": "uninsuredunderinsured-motorist-bodily-injury-coverage-2550",
+      "count": 1
+    },
+    {
+      "id": "optional-illinois-car-insurance-coverages-to-consider",
+      "count": 1
+    },
+    {
+      "id": "consider-collision-insurance",
+      "count": 1
+    },
+    {
+      "id": "opt-for-comprehensive-coverage",
+      "count": 1
+    },
+    {
+      "id": "uninsuredunderinsured-motorist-property-damage",
+      "count": 1
+    },
+    {
+      "id": "understand-medical-benefits",
+      "count": 1
+    },
+    {
+      "id": "accident-forgiveness-can-help",
+      "count": 1
+    },
+    {
+      "id": "the-benefits-of-roadside-assistance",
+      "count": 1
+    },
+    {
+      "id": "sr-22-and-high-risk-drivers",
+      "count": 1
+    },
+    {
+      "id": "penalties-for-driving-without-auto-insurance",
+      "count": 1
+    },
+    {
+      "id": "how-your-car-insurance-rate-is-calculated-in-illinois",
+      "count": 1
+    },
+    {
+      "id": "how-to-save-money-while-insuring-your-vehicle",
+      "count": 1
+    },
+    {
+      "id": "how-insurance-navy-has-your-back",
+      "count": 1
+    },
+    {
+      "id": "frequently-asked-questions",
+      "count": 1
+    },
+    {
+      "id": "do-you-offer-flexible-policies",
+      "count": 1
+    },
+    {
+      "id": "is-roadside-assistance-part-of-comprehensive-insurance",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

@@ -1,0 +1,455 @@
+{
+  "domain": "cnbc.com",
+  "total_pages": 36,
+  "analyzed_at": "2025-11-07T14:35:30.824683",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 35,
+      "frequency": 0.972,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 36,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 36,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 69,
+      "frequency": 1.917,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 550,
+      "frequency": 15.278,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 929,
+      "frequency": 25.806,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 3555,
+      "frequency": 98.75,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 4,
+      "frequency": 0.111,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 23,
+      "frequency": 0.639,
+      "confidence": "medium"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 78,
+      "frequency": 2.167,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 1451,
+      "frequency": 40.306,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "shortcuts-dropdown-item-link",
+      "count": 3740
+    },
+    {
+      "class": "link-item",
+      "count": 3026
+    },
+    {
+      "class": "shortcuts-dropdown-item",
+      "count": 2142
+    },
+    {
+      "class": "dn",
+      "count": 1598
+    },
+    {
+      "class": "js-l3-dropdown",
+      "count": 1598
+    },
+    {
+      "class": "chevron",
+      "count": 748
+    },
+    {
+      "class": "ProsAndCons-styles-select-item--ZT8du",
+      "count": 548
+    },
+    {
+      "class": "group",
+      "count": 538
+    },
+    {
+      "class": "Features-styles-select-featureItem--XBWNy",
+      "count": 532
+    },
+    {
+      "class": "Features-styles-select-featureItemHeader--DHZll",
+      "count": 532
+    },
+    {
+      "class": "Features-styles-select-value--ApaQp",
+      "count": 532
+    },
+    {
+      "class": "all-link",
+      "count": 374
+    },
+    {
+      "class": "parent-item",
+      "count": 374
+    },
+    {
+      "class": "label",
+      "count": 374
+    },
+    {
+      "class": "submenu",
+      "count": 374
+    },
+    {
+      "class": "hidden",
+      "count": 374
+    },
+    {
+      "class": "offset",
+      "count": 374
+    },
+    {
+      "class": "back-item",
+      "count": 374
+    },
+    {
+      "class": "all-item",
+      "count": 374
+    },
+    {
+      "class": "lazyload-placeholder",
+      "count": 313
+    },
+    {
+      "class": "ArticleBody-styles-select-subtitle--Ge5RH",
+      "count": 313
+    },
+    {
+      "class": "h-h",
+      "count": 272
+    },
+    {
+      "class": "CallToAction-styles-select-container--jiOPm",
+      "count": 255
+    },
+    {
+      "class": "CallToAction-styles-select-button--C0Ugk",
+      "count": 255
+    },
+    {
+      "class": "jsx-912616035",
+      "count": 245
+    },
+    {
+      "class": "shortcuts-list-item",
+      "count": 238
+    },
+    {
+      "class": "shortcuts-list-item--click-dd",
+      "count": 238
+    },
+    {
+      "class": "shortcuts-list-item-link",
+      "count": 238
+    },
+    {
+      "class": "shortcuts-list-item-text",
+      "count": 238
+    },
+    {
+      "class": "shortcuts-dropdown",
+      "count": 238
+    },
+    {
+      "class": "js-shortcuts-dropdown",
+      "count": 238
+    },
+    {
+      "class": "shortcuts-dropdown-list",
+      "count": 238
+    },
+    {
+      "class": "SelectPopularOffersCard-styles-select-col1--Sm24a",
+      "count": 238
+    },
+    {
+      "class": "SelectPopularOffersCard-styles-select-imageContainer--HiUUX",
+      "count": 238
+    },
+    {
+      "class": "SelectPopularOffersCard-styles-select-button--s41Dp",
+      "count": 238
+    },
+    {
+      "class": "SelectPopularOffersCard-styles-select-terms--DW9DO",
+      "count": 238
+    },
+    {
+      "class": "SelectPopularOffersCard-styles-select-col2--wT0G3",
+      "count": 238
+    },
+    {
+      "class": "SelectPopularOffersCard-styles-select-title--JonGl",
+      "count": 238
+    },
+    {
+      "class": "SelectPopularOffersCard-styles-select-titleLink--pIvmA",
+      "count": 238
+    },
+    {
+      "class": "SelectPopularOffersCard-styles-select-description--duYEZ",
+      "count": 238
+    },
+    {
+      "class": "chevron-down",
+      "count": 204
+    },
+    {
+      "class": "PageBuilder-styles-select-pageRow--PTTRD",
+      "count": 204
+    },
+    {
+      "class": "PageBuilder-styles-select-col--qRu4W",
+      "count": 204
+    },
+    {
+      "class": "PageBuilder-styles-select-article--vymzP",
+      "count": 204
+    },
+    {
+      "class": "internal-link",
+      "count": 202
+    },
+    {
+      "class": "ProsAndCons-styles-select-column--zbHVP",
+      "count": 194
+    },
+    {
+      "class": "ProsAndCons-styles-select-columnTitle--RXXck",
+      "count": 194
+    },
+    {
+      "class": "ProsAndCons-styles-select-decoration--P6_Vt",
+      "count": 194
+    },
+    {
+      "class": "shortcuts-dropdown-item-link-with-submenu",
+      "count": 170
+    },
+    {
+      "class": "chevron-right",
+      "count": 170
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "select-product__image-container",
+      "count": 146
+    },
+    {
+      "id": "Share Published",
+      "count": 144
+    },
+    {
+      "id": "OOF",
+      "count": 136
+    },
+    {
+      "id": "questionWrap",
+      "count": 111
+    },
+    {
+      "id": "faqItemAnswer",
+      "count": 111
+    },
+    {
+      "id": "0-0",
+      "count": 102
+    },
+    {
+      "id": "0-1",
+      "count": 102
+    },
+    {
+      "id": "0-2",
+      "count": 102
+    },
+    {
+      "id": "0-3",
+      "count": 102
+    },
+    {
+      "id": "0-4",
+      "count": 102
+    },
+    {
+      "id": "0-5",
+      "count": 102
+    },
+    {
+      "id": "0-6",
+      "count": 102
+    },
+    {
+      "id": "0-7",
+      "count": 102
+    },
+    {
+      "id": "0-8",
+      "count": 102
+    },
+    {
+      "id": "0-9",
+      "count": 102
+    },
+    {
+      "id": "0-10",
+      "count": 102
+    },
+    {
+      "id": "CARDTITLE:1:SBGFunding",
+      "count": 102
+    },
+    {
+      "id": "CARDTITLE:2:GeicoAutoInsurance",
+      "count": 102
+    },
+    {
+      "id": "CARDTITLE:3:Monarch",
+      "count": 102
+    },
+    {
+      "id": "CARDTITLE:4:AllstateHomeownersInsurance",
+      "count": 102
+    },
+    {
+      "id": "CARDTITLE:5:Bluevine",
+      "count": 102
+    },
+    {
+      "id": "CARDTITLE:1:Empower",
+      "count": 102
+    },
+    {
+      "id": "CARDTITLE:2:QuickBooks",
+      "count": 102
+    },
+    {
+      "id": "+e.idSyncContainerID+",
+      "count": 70
+    },
+    {
+      "id": "destination_publishing_iframe_",
+      "count": 70
+    },
+    {
+      "id": "+encodeURIComponent(i):",
+      "count": 70
+    },
+    {
+      "id": "+e.dpid+",
+      "count": 70
+    },
+    {
+      "id": "+k+",
+      "count": 70
+    },
+    {
+      "id": "+this.id+",
+      "count": 70
+    },
+    {
+      "id": "+b.videoId+",
+      "count": 70
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "[role=\"main\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

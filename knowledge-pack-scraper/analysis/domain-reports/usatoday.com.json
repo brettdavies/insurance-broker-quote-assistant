@@ -1,0 +1,456 @@
+{
+  "domain": "usatoday.com",
+  "total_pages": 3,
+  "analyzed_at": "2025-11-07T14:35:34.448000",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 3,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 3,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 3,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 3,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 3,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 19,
+      "frequency": 6.333,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 12,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 2,
+      "frequency": 0.667,
+      "confidence": "medium"
+    },
+    {
+      "pattern": "ad",
+      "count": 932,
+      "frequency": 310.667,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 3,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 1,
+      "frequency": 0.333,
+      "confidence": "low"
+    },
+    {
+      "pattern": "menu",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 2,
+      "frequency": 0.667,
+      "confidence": "medium"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "text-white",
+      "count": 1008
+    },
+    {
+      "class": "text-xs",
+      "count": 684
+    },
+    {
+      "class": "block",
+      "count": 645
+    },
+    {
+      "class": "font-semibold",
+      "count": 643
+    },
+    {
+      "class": "hover:text-coal-300",
+      "count": 624
+    },
+    {
+      "class": "text-sm",
+      "count": 546
+    },
+    {
+      "class": "font-primary",
+      "count": 517
+    },
+    {
+      "class": "font-bold",
+      "count": 487
+    },
+    {
+      "class": "leading-[18px]",
+      "count": 422
+    },
+    {
+      "class": "flex",
+      "count": 381
+    },
+    {
+      "class": "border-b-[3px]",
+      "count": 336
+    },
+    {
+      "class": "border-primary-500",
+      "count": 329
+    },
+    {
+      "class": "mb-[10px]",
+      "count": 314
+    },
+    {
+      "class": "items-center",
+      "count": 285
+    },
+    {
+      "class": "pl-[2px]",
+      "count": 280
+    },
+    {
+      "class": "w-full",
+      "count": 235
+    },
+    {
+      "class": "inline-block",
+      "count": 222
+    },
+    {
+      "class": "wysiwyg-editor",
+      "count": 189
+    },
+    {
+      "class": "cell-content",
+      "count": 189
+    },
+    {
+      "class": "leading-6",
+      "count": 178
+    },
+    {
+      "class": "overflow-hidden",
+      "count": 162
+    },
+    {
+      "class": "?",
+      "count": 148
+    },
+    {
+      "class": ":",
+      "count": 148
+    },
+    {
+      "class": "justify-between",
+      "count": 131
+    },
+    {
+      "class": "max-h-0",
+      "count": 129
+    },
+    {
+      "class": "font-secondary",
+      "count": 125
+    },
+    {
+      "class": "transition-all",
+      "count": 122
+    },
+    {
+      "class": "space-y-[13px]",
+      "count": 112
+    },
+    {
+      "class": "duration-200",
+      "count": 106
+    },
+    {
+      "class": "mb-3",
+      "count": 105
+    },
+    {
+      "class": "''",
+      "count": 104
+    },
+    {
+      "class": "absolute",
+      "count": 102
+    },
+    {
+      "class": "text-coal-700",
+      "count": 100
+    },
+    {
+      "class": "duration-300",
+      "count": 93
+    },
+    {
+      "class": "w-1/2",
+      "count": 92
+    },
+    {
+      "class": "shrink-0",
+      "count": 90
+    },
+    {
+      "class": "text-[#303030]",
+      "count": 88
+    },
+    {
+      "class": "footer-link",
+      "count": 86
+    },
+    {
+      "class": "last:mb-6",
+      "count": 86
+    },
+    {
+      "class": "md:last:mb-0",
+      "count": 86
+    },
+    {
+      "class": "hover:text-black",
+      "count": 86
+    },
+    {
+      "class": "uppercase",
+      "count": 80
+    },
+    {
+      "class": "'rotate-180'",
+      "count": 79
+    },
+    {
+      "class": "transition",
+      "count": 78
+    },
+    {
+      "class": "text-base",
+      "count": 76
+    },
+    {
+      "class": "selected",
+      "count": 74
+    },
+    {
+      "class": "==",
+      "count": 72
+    },
+    {
+      "class": "ml-[6px]",
+      "count": 70
+    },
+    {
+      "class": "===",
+      "count": 68
+    },
+    {
+      "class": "mt-4",
+      "count": 68
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "tbl-explore-more-container",
+      "count": 42
+    },
+    {
+      "id": "gnt_tbw_1",
+      "count": 36
+    },
+    {
+      "id": "clip0_0_3",
+      "count": 32
+    },
+    {
+      "id": "rbox-t2v",
+      "count": 11
+    },
+    {
+      "id": "e82155d1-d994-44c9-b40a-050307d82ef7",
+      "count": 6
+    },
+    {
+      "id": "mkpl-table-container",
+      "count": 4
+    },
+    {
+      "id": "mkpl-table-main-container",
+      "count": 4
+    },
+    {
+      "id": "mkpl-table-scroll",
+      "count": 4
+    },
+    {
+      "id": "mkpl-market-table",
+      "count": 4
+    },
+    {
+      "id": "left-arrow",
+      "count": 4
+    },
+    {
+      "id": "right-arrow",
+      "count": 4
+    },
+    {
+      "id": "seeMoreBtn",
+      "count": 4
+    },
+    {
+      "id": "seeLessBtn",
+      "count": 4
+    },
+    {
+      "id": "Rectangle-5",
+      "count": 4
+    },
+    {
+      "id": "svg2",
+      "count": 3
+    },
+    {
+      "id": "namedview4",
+      "count": 3
+    },
+    {
+      "id": "g8",
+      "count": 3
+    },
+    {
+      "id": "g10",
+      "count": 3
+    },
+    {
+      "id": "path12",
+      "count": 3
+    },
+    {
+      "id": "path14",
+      "count": 3
+    },
+    {
+      "id": "path16",
+      "count": 3
+    },
+    {
+      "id": "path18",
+      "count": 3
+    },
+    {
+      "id": "path20",
+      "count": 3
+    },
+    {
+      "id": "path22",
+      "count": 3
+    },
+    {
+      "id": "path24",
+      "count": 3
+    },
+    {
+      "id": "path26",
+      "count": 3
+    },
+    {
+      "id": "path28",
+      "count": 3
+    },
+    {
+      "id": "path30",
+      "count": 3
+    },
+    {
+      "id": "path32",
+      "count": 3
+    },
+    {
+      "id": "path34",
+      "count": 3
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

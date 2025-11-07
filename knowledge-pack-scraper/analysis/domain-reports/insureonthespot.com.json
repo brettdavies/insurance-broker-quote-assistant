@@ -1,0 +1,455 @@
+{
+  "domain": "insureonthespot.com",
+  "total_pages": 12,
+  "analyzed_at": "2025-11-07T14:35:31.294347",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 12,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 12,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 36,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 60,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 72,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 192,
+      "frequency": 16.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 60,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 996,
+      "frequency": 83.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 96,
+      "frequency": 8.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-item",
+      "count": 588
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 456
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 456
+    },
+    {
+      "class": "cat-item",
+      "count": 180
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 132
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 132
+    },
+    {
+      "class": "wp-block-heading",
+      "count": 120
+    },
+    {
+      "class": "menu",
+      "count": 84
+    },
+    {
+      "class": "first-menu-item",
+      "count": 84
+    },
+    {
+      "class": "last-menu-item",
+      "count": 84
+    },
+    {
+      "class": "container-fluid",
+      "count": 72
+    },
+    {
+      "class": "fa",
+      "count": 72
+    },
+    {
+      "class": "wp-block-separator",
+      "count": 70
+    },
+    {
+      "class": "has-alpha-channel-opacity",
+      "count": 70
+    },
+    {
+      "class": "columnWrapper",
+      "count": 48
+    },
+    {
+      "class": "footerTitle",
+      "count": 48
+    },
+    {
+      "class": "footerLinks",
+      "count": 36
+    },
+    {
+      "class": "wp-block-list",
+      "count": 35
+    },
+    {
+      "class": "sfm-theme-",
+      "count": 24
+    },
+    {
+      "class": "sfm-has-child-menu",
+      "count": 24
+    },
+    {
+      "class": "sfm-sm-indicator",
+      "count": 24
+    },
+    {
+      "class": "sfm-child-menu",
+      "count": 24
+    },
+    {
+      "class": "sfm-menu-level-1",
+      "count": 24
+    },
+    {
+      "class": "sfm-view",
+      "count": 24
+    },
+    {
+      "class": "menu-item-9723",
+      "count": 24
+    },
+    {
+      "class": "menu-item-9514",
+      "count": 24
+    },
+    {
+      "class": "menu-item-7589",
+      "count": 24
+    },
+    {
+      "class": "menu-item-7588",
+      "count": 24
+    },
+    {
+      "class": "menu-item-7571",
+      "count": 24
+    },
+    {
+      "class": "quoteBtn",
+      "count": 24
+    },
+    {
+      "class": "menu-item-has-children",
+      "count": 24
+    },
+    {
+      "class": "dropdown",
+      "count": 24
+    },
+    {
+      "class": "caret",
+      "count": 24
+    },
+    {
+      "class": "dropdown-toggle",
+      "count": 24
+    },
+    {
+      "class": "dropdown-menu",
+      "count": 24
+    },
+    {
+      "class": "current_page_parent",
+      "count": 24
+    },
+    {
+      "class": "fa-angle-double-up",
+      "count": 24
+    },
+    {
+      "class": "back",
+      "count": 24
+    },
+    {
+      "class": "btnBack",
+      "count": 24
+    },
+    {
+      "class": "postBackButton",
+      "count": 24
+    },
+    {
+      "class": "social-share-btn",
+      "count": 24
+    },
+    {
+      "class": "text",
+      "count": 24
+    },
+    {
+      "class": "field-wrap",
+      "count": 24
+    },
+    {
+      "class": "ninja-forms-field",
+      "count": 24
+    },
+    {
+      "class": "button",
+      "count": 24
+    },
+    {
+      "class": "divider",
+      "count": 24
+    },
+    {
+      "class": "sfm-no-mobile",
+      "count": 12
+    },
+    {
+      "class": "sfm-pos-right",
+      "count": 12
+    },
+    {
+      "class": "wf-proximanova-n3-active",
+      "count": 12
+    },
+    {
+      "class": "wf-proximanova-n6-active",
+      "count": 12
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "omapi-script",
+      "count": 24
+    },
+    {
+      "id": "CCVE2QJC77U4AGK4SDKG",
+      "count": 12
+    },
+    {
+      "id": "la-icon-maneger-style-css",
+      "count": 12
+    },
+    {
+      "id": "wp-emoji-styles-inline-css",
+      "count": 12
+    },
+    {
+      "id": "wp-block-library-css",
+      "count": 12
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 12
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 12
+    },
+    {
+      "id": "sf_styles-css",
+      "count": 12
+    },
+    {
+      "id": "wpsl-styles-css",
+      "count": 12
+    },
+    {
+      "id": "layout-css",
+      "count": 12
+    },
+    {
+      "id": "custom-css",
+      "count": 12
+    },
+    {
+      "id": "default-css",
+      "count": 12
+    },
+    {
+      "id": "sweet_alert-css",
+      "count": 12
+    },
+    {
+      "id": "la-icon-manager-md5-js",
+      "count": 12
+    },
+    {
+      "id": "la-icon-manager-util-js",
+      "count": 12
+    },
+    {
+      "id": "jquery-core-js",
+      "count": 12
+    },
+    {
+      "id": "jquery-migrate-js",
+      "count": 12
+    },
+    {
+      "id": "sf_main-js-extra",
+      "count": 12
+    },
+    {
+      "id": "sf_main-js",
+      "count": 12
+    },
+    {
+      "id": "oms_solarbox-js",
+      "count": 12
+    },
+    {
+      "id": "sweet_alert-js",
+      "count": 12
+    },
+    {
+      "id": "forms-js",
+      "count": 12
+    },
+    {
+      "id": "superfly-dynamic-styles",
+      "count": 12
+    },
+    {
+      "id": "+e+",
+      "count": 12
+    },
+    {
+      "id": "sa-css",
+      "count": 12
+    },
+    {
+      "id": "omapi-css",
+      "count": 12
+    },
+    {
+      "id": "sfm-sidebar",
+      "count": 12
+    },
+    {
+      "id": "sfm-overlay-wrapper",
+      "count": 12
+    },
+    {
+      "id": "sfm-overlay",
+      "count": 12
+    },
+    {
+      "id": "masthead",
+      "count": 12
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": null,
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

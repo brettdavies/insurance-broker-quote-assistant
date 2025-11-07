@@ -1,0 +1,455 @@
+{
+  "domain": "investopedia.com",
+  "total_pages": 55,
+  "analyzed_at": "2025-11-07T14:35:29.728405",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 55,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 55,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 55,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 110,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 55,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 166,
+      "frequency": 3.018,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 2373,
+      "frequency": 43.145,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 15261,
+      "frequency": 277.473,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 3628,
+      "frequency": 65.964,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 508,
+      "frequency": 9.236,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 14,
+      "frequency": 0.255,
+      "confidence": "low"
+    },
+    {
+      "pattern": "menu",
+      "count": 588,
+      "frequency": 10.691,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 493,
+      "frequency": 8.964,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 1118,
+      "frequency": 20.327,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "comp",
+      "count": 14686
+    },
+    {
+      "class": "mntl-block",
+      "count": 7565
+    },
+    {
+      "class": "text-utility-200",
+      "count": 3410
+    },
+    {
+      "class": "mntl-fullscreen-nav__sublist-item",
+      "count": 3190
+    },
+    {
+      "class": "mntl-header-nav__sublist-item",
+      "count": 3190
+    },
+    {
+      "class": "mntl-text-link",
+      "count": 2817
+    },
+    {
+      "class": "link__wrapper",
+      "count": 2759
+    },
+    {
+      "class": "mntl-sc-block",
+      "count": 2708
+    },
+    {
+      "class": "icon",
+      "count": 2494
+    },
+    {
+      "class": "card__media",
+      "count": 2064
+    },
+    {
+      "class": "loc",
+      "count": 2046
+    },
+    {
+      "class": "universal-image__image",
+      "count": 1980
+    },
+    {
+      "class": "card__img",
+      "count": 1760
+    },
+    {
+      "class": "text-label-300",
+      "count": 1650
+    },
+    {
+      "class": "terms-bar__item",
+      "count": 1485
+    },
+    {
+      "class": "terms-bar__link",
+      "count": 1485
+    },
+    {
+      "class": "mntl-image",
+      "count": 1269
+    },
+    {
+      "class": "mm-ads-gpt-adunit",
+      "count": 1160
+    },
+    {
+      "class": "gpt",
+      "count": 1160
+    },
+    {
+      "class": "wrapper",
+      "count": 1160
+    },
+    {
+      "class": "jw-reset",
+      "count": 1142
+    },
+    {
+      "class": "lazyloadwait",
+      "count": 1036
+    },
+    {
+      "class": "mntl-sc-block-adslot",
+      "count": 1036
+    },
+    {
+      "class": "universal-image__container",
+      "count": 1033
+    },
+    {
+      "class": "mntl-document-card",
+      "count": 1032
+    },
+    {
+      "class": "mntl-card",
+      "count": 1032
+    },
+    {
+      "class": "card",
+      "count": 1032
+    },
+    {
+      "class": "card--no-image",
+      "count": 1032
+    },
+    {
+      "class": "card__top",
+      "count": 1032
+    },
+    {
+      "class": "card__content",
+      "count": 1032
+    },
+    {
+      "class": "card__header",
+      "count": 1032
+    },
+    {
+      "class": "card__title",
+      "count": 1032
+    },
+    {
+      "class": "card__title-text",
+      "count": 1032
+    },
+    {
+      "class": "img-placeholder",
+      "count": 1028
+    },
+    {
+      "class": "finance-sc-block-html",
+      "count": 999
+    },
+    {
+      "class": "mntl-sc-block-html",
+      "count": 999
+    },
+    {
+      "class": "img--noscript",
+      "count": 987
+    },
+    {
+      "class": "mntl-card-list-items",
+      "count": 880
+    },
+    {
+      "class": "mntl-universal-card",
+      "count": 880
+    },
+    {
+      "class": "card__byline",
+      "count": 880
+    },
+    {
+      "class": "mntl-card__byline",
+      "count": 880
+    },
+    {
+      "class": "global-link",
+      "count": 880
+    },
+    {
+      "class": "journey-accordion__sublist-item",
+      "count": 838
+    },
+    {
+      "class": "journey-accordion__sublist-item--link",
+      "count": 838
+    },
+    {
+      "class": "mntl-text-block",
+      "count": 769
+    },
+    {
+      "class": "gpt-requested",
+      "count": 757
+    },
+    {
+      "class": "jw-reset-text",
+      "count": 660
+    },
+    {
+      "class": "dynamic",
+      "count": 656
+    },
+    {
+      "class": "social-nav__item",
+      "count": 622
+    },
+    {
+      "class": "social-nav__link",
+      "count": 622
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "mntl-sc-block-callout",
+      "count": 128
+    },
+    {
+      "id": "mntl-author-tooltip__name_1-0",
+      "count": 70
+    },
+    {
+      "id": "schema-unified_1-0",
+      "count": 55
+    },
+    {
+      "id": "icon-menu",
+      "count": 55
+    },
+    {
+      "id": "icon-close",
+      "count": 55
+    },
+    {
+      "id": "icon-logo",
+      "count": 55
+    },
+    {
+      "id": "icon-caret_down",
+      "count": 55
+    },
+    {
+      "id": "icon-account",
+      "count": 55
+    },
+    {
+      "id": "icon-search",
+      "count": 55
+    },
+    {
+      "id": "icon-error",
+      "count": 55
+    },
+    {
+      "id": "icon-chevron",
+      "count": 55
+    },
+    {
+      "id": "icon-arrow-left",
+      "count": 55
+    },
+    {
+      "id": "icon-logo-inverted",
+      "count": 55
+    },
+    {
+      "id": "icon-facebook",
+      "count": 55
+    },
+    {
+      "id": "icon-instagram",
+      "count": 55
+    },
+    {
+      "id": "icon-linkedin",
+      "count": 55
+    },
+    {
+      "id": "icon-tiktok",
+      "count": 55
+    },
+    {
+      "id": "icon-youtube",
+      "count": 55
+    },
+    {
+      "id": "icon-x",
+      "count": 55
+    },
+    {
+      "id": "icon-privacy-options",
+      "count": 55
+    },
+    {
+      "id": "mntl-dotdash-universal-nav__logo",
+      "count": 55
+    },
+    {
+      "id": "people-inc-logo-Layer_1",
+      "count": 55
+    },
+    {
+      "id": "reviewer-icon",
+      "count": 55
+    },
+    {
+      "id": "finance-reviewer-icon",
+      "count": 55
+    },
+    {
+      "id": "header_1-0",
+      "count": 55
+    },
+    {
+      "id": "mntl-skip-to-content_1-0",
+      "count": 55
+    },
+    {
+      "id": "header-logo_1-0",
+      "count": 55
+    },
+    {
+      "id": "mntl-utility-nav_1-0",
+      "count": 55
+    },
+    {
+      "id": "header-nav__live-button_1-0",
+      "count": 55
+    },
+    {
+      "id": "live-coverage-button__icon_1-0",
+      "count": 55
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article, main, [role=\"main\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"ads\"], [id*=\"ads\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

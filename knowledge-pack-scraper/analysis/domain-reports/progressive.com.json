@@ -1,0 +1,456 @@
+{
+  "domain": "progressive.com",
+  "total_pages": 229,
+  "analyzed_at": "2025-11-07T14:24:14.976213",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 199,
+      "frequency": 0.869,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 229,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 229,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 229,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 914,
+      "frequency": 3.991,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 259,
+      "frequency": 1.131,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 1458,
+      "frequency": 6.367,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 1,
+      "frequency": 0.004,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 3574,
+      "frequency": 15.607,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 198,
+      "frequency": 0.865,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 404,
+      "frequency": 1.764,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 1306,
+      "frequency": 5.703,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 343,
+      "frequency": 1.498,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "sr-only",
+      "count": 5338
+    },
+    {
+      "class": "link",
+      "count": 4065
+    },
+    {
+      "class": "title",
+      "count": 2897
+    },
+    {
+      "class": "nowrap",
+      "count": 2563
+    },
+    {
+      "class": "p-style",
+      "count": 2484
+    },
+    {
+      "class": "wrap",
+      "count": 2435
+    },
+    {
+      "class": "icon",
+      "count": 2331
+    },
+    {
+      "class": "checkmark",
+      "count": 2269
+    },
+    {
+      "class": "text-area",
+      "count": 2178
+    },
+    {
+      "class": "sub-nav-item",
+      "count": 1796
+    },
+    {
+      "class": "sub-nav-link",
+      "count": 1796
+    },
+    {
+      "class": "count-link",
+      "count": 1782
+    },
+    {
+      "class": "article-count",
+      "count": 1782
+    },
+    {
+      "class": "h3-style",
+      "count": 1748
+    },
+    {
+      "class": "h4-style",
+      "count": 1657
+    },
+    {
+      "class": "container",
+      "count": 1330
+    },
+    {
+      "class": "text",
+      "count": 1289
+    },
+    {
+      "class": "disclosure",
+      "count": 1171
+    },
+    {
+      "class": "content-block",
+      "count": 1158
+    },
+    {
+      "class": "button",
+      "count": 1129
+    },
+    {
+      "class": "arrow",
+      "count": 1085
+    },
+    {
+      "class": "social-link",
+      "count": 1001
+    },
+    {
+      "class": "content",
+      "count": 953
+    },
+    {
+      "class": "inner",
+      "count": 927
+    },
+    {
+      "class": "item-list",
+      "count": 914
+    },
+    {
+      "class": "button-title",
+      "count": 912
+    },
+    {
+      "class": "item-list-wrap",
+      "count": 912
+    },
+    {
+      "class": "notranslate",
+      "count": 804
+    },
+    {
+      "class": "nav-item",
+      "count": 803
+    },
+    {
+      "class": "section-title",
+      "count": 800
+    },
+    {
+      "class": "sub-text",
+      "count": 800
+    },
+    {
+      "class": "pgr-button",
+      "count": 793
+    },
+    {
+      "class": "stroke",
+      "count": 793
+    },
+    {
+      "class": "readtime",
+      "count": 771
+    },
+    {
+      "class": "svg-def",
+      "count": 597
+    },
+    {
+      "class": "tertiary",
+      "count": 596
+    },
+    {
+      "class": "divider",
+      "count": 594
+    },
+    {
+      "class": "breadcrumb",
+      "count": 594
+    },
+    {
+      "class": "article-card",
+      "count": 576
+    },
+    {
+      "class": "asset",
+      "count": 576
+    },
+    {
+      "class": "last-word",
+      "count": 576
+    },
+    {
+      "class": "horizontal",
+      "count": 574
+    },
+    {
+      "class": "copy",
+      "count": 547
+    },
+    {
+      "class": "block-link",
+      "count": 518
+    },
+    {
+      "class": "is-simple",
+      "count": 514
+    },
+    {
+      "class": "bounce",
+      "count": 514
+    },
+    {
+      "class": "h5-style",
+      "count": 462
+    },
+    {
+      "class": "item",
+      "count": 461
+    },
+    {
+      "class": "nav-list",
+      "count": 458
+    },
+    {
+      "class": "claim-text",
+      "count": 456
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "bltfb6022af51ff0ffd",
+      "count": 485
+    },
+    {
+      "id": "bltbe6f6e42fced8e7f",
+      "count": 281
+    },
+    {
+      "id": "blt59083f1eb2e03454",
+      "count": 257
+    },
+    {
+      "id": "bltd38ed24c075d9d5c",
+      "count": 257
+    },
+    {
+      "id": "blt377fa2e45112bd44",
+      "count": 257
+    },
+    {
+      "id": "header",
+      "count": 229
+    },
+    {
+      "id": "utility",
+      "count": 229
+    },
+    {
+      "id": "ScreenReaderText",
+      "count": 229
+    },
+    {
+      "id": "main",
+      "count": 228
+    },
+    {
+      "id": "blt59257268d9d5e383",
+      "count": 228
+    },
+    {
+      "id": "blt25e18f5a1ca4ffd1",
+      "count": 228
+    },
+    {
+      "id": "EZ-Pay",
+      "count": 228
+    },
+    {
+      "id": "blt54afbe79f78fcd78",
+      "count": 228
+    },
+    {
+      "id": "blt4df084039f77c4cf",
+      "count": 228
+    },
+    {
+      "id": "blt97732902abfe1f9f",
+      "count": 228
+    },
+    {
+      "id": "blt7b2de2a63caa1655",
+      "count": 228
+    },
+    {
+      "id": "bltfc875e0f30b1ec4f",
+      "count": 228
+    },
+    {
+      "id": "blt3759162aedb0436b",
+      "count": 228
+    },
+    {
+      "id": "blt760138b2322e002c",
+      "count": 228
+    },
+    {
+      "id": "blt2452434d6981f0ed",
+      "count": 228
+    },
+    {
+      "id": "blt54731a69874664d5",
+      "count": 228
+    },
+    {
+      "id": "blt0b72c859e3a4a399",
+      "count": 228
+    },
+    {
+      "id": "blt4a9c7ab9588d5541",
+      "count": 228
+    },
+    {
+      "id": "blt99522e1a660aa7aa",
+      "count": 228
+    },
+    {
+      "id": "boomr-if-as",
+      "count": 227
+    },
+    {
+      "id": "time-tracking-start",
+      "count": 200
+    },
+    {
+      "id": "quantum-metrics",
+      "count": 200
+    },
+    {
+      "id": "bot-check",
+      "count": 200
+    },
+    {
+      "id": "appDynamics",
+      "count": 200
+    },
+    {
+      "id": "adrum",
+      "count": 200
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

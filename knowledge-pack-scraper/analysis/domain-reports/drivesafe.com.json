@@ -1,0 +1,454 @@
+{
+  "domain": "drivesafe.com",
+  "total_pages": 2,
+  "analyzed_at": "2025-11-07T14:35:35.600379",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "footer",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 18,
+      "frequency": 9.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 52,
+      "frequency": 26.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 6,
+      "frequency": 3.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "wpb_wrapper",
+      "count": 61
+    },
+    {
+      "class": "menu-item",
+      "count": 44
+    },
+    {
+      "class": "wpb_column",
+      "count": 43
+    },
+    {
+      "class": "vc_column-inner",
+      "count": 43
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 38
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 36
+    },
+    {
+      "class": "container",
+      "count": 27
+    },
+    {
+      "class": "vc_row",
+      "count": 24
+    },
+    {
+      "class": "wpb_row",
+      "count": 24
+    },
+    {
+      "class": "vc_row-fluid",
+      "count": 24
+    },
+    {
+      "class": "inner",
+      "count": 22
+    },
+    {
+      "class": "wpb_content_element",
+      "count": 22
+    },
+    {
+      "class": "vc_empty_space",
+      "count": 18
+    },
+    {
+      "class": "vc_empty_space_inner",
+      "count": 18
+    },
+    {
+      "class": "dark-wrapper",
+      "count": 15
+    },
+    {
+      "class": "col-sm-12",
+      "count": 15
+    },
+    {
+      "class": "wpb_text_column",
+      "count": 14
+    },
+    {
+      "class": "col-sm-3",
+      "count": 14
+    },
+    {
+      "class": "feature",
+      "count": 10
+    },
+    {
+      "class": "wow",
+      "count": 10
+    },
+    {
+      "class": "fadeIn",
+      "count": 10
+    },
+    {
+      "class": "icon",
+      "count": 10
+    },
+    {
+      "class": "icon-ok-circle",
+      "count": 10
+    },
+    {
+      "class": "checklist",
+      "count": 10
+    },
+    {
+      "class": "vc_btn3-container",
+      "count": 9
+    },
+    {
+      "class": "vc_do_btn",
+      "count": 9
+    },
+    {
+      "class": "vc_general",
+      "count": 9
+    },
+    {
+      "class": "vc_btn3",
+      "count": 9
+    },
+    {
+      "class": "vc_btn3-shape-rounded",
+      "count": 9
+    },
+    {
+      "class": "vc_btn3-icon-left",
+      "count": 9
+    },
+    {
+      "class": "col-sm-6",
+      "count": 9
+    },
+    {
+      "class": "vc_btn3-icon",
+      "count": 8
+    },
+    {
+      "class": "vc_btn3-size-lg",
+      "count": 7
+    },
+    {
+      "class": "fa",
+      "count": 7
+    },
+    {
+      "class": "fa-solid",
+      "count": 7
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 6
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 6
+    },
+    {
+      "class": "clearfix",
+      "count": 6
+    },
+    {
+      "class": "reg-bttn",
+      "count": 6
+    },
+    {
+      "class": "vc_btn3-style-3d",
+      "count": 6
+    },
+    {
+      "class": "vc_inner",
+      "count": 6
+    },
+    {
+      "class": "btn",
+      "count": 5
+    },
+    {
+      "class": "row",
+      "count": 5
+    },
+    {
+      "class": "col-sm-4",
+      "count": 5
+    },
+    {
+      "class": "vc_transform",
+      "count": 4
+    },
+    {
+      "class": "circled",
+      "count": 4
+    },
+    {
+      "class": "wpb_single_image",
+      "count": 4
+    },
+    {
+      "class": "vc_figure",
+      "count": 4
+    },
+    {
+      "class": "vc_single_image-wrapper",
+      "count": 4
+    },
+    {
+      "class": "vc_box_border_grey",
+      "count": 4
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 2
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 2
+    },
+    {
+      "id": "ebor-style-inline-css",
+      "count": 2
+    },
+    {
+      "id": "egf-frontend-styles",
+      "count": 2
+    },
+    {
+      "id": "c4wp-checkout-css",
+      "count": 2
+    },
+    {
+      "id": "c4wp-v3-lp-form-css",
+      "count": 2
+    },
+    {
+      "id": "fit-vids-style",
+      "count": 2
+    },
+    {
+      "id": "preloader",
+      "count": 2
+    },
+    {
+      "id": "status",
+      "count": 2
+    },
+    {
+      "id": "menu-standard-navigation",
+      "count": 2
+    },
+    {
+      "id": "menu-item-12074",
+      "count": 2
+    },
+    {
+      "id": "menu-item-12073",
+      "count": 2
+    },
+    {
+      "id": "menu-item-916",
+      "count": 2
+    },
+    {
+      "id": "menu-item-1379",
+      "count": 2
+    },
+    {
+      "id": "menu-item-2238",
+      "count": 2
+    },
+    {
+      "id": "menu-states-dropdown",
+      "count": 2
+    },
+    {
+      "id": "menu-item-11747",
+      "count": 2
+    },
+    {
+      "id": "menu-item-4074",
+      "count": 2
+    },
+    {
+      "id": "menu-item-12117",
+      "count": 2
+    },
+    {
+      "id": "menu-item-12953",
+      "count": 2
+    },
+    {
+      "id": "menu-item-4688",
+      "count": 2
+    },
+    {
+      "id": "menu-item-12949",
+      "count": 2
+    },
+    {
+      "id": "menu-item-1778",
+      "count": 2
+    },
+    {
+      "id": "menu-item-1776",
+      "count": 2
+    },
+    {
+      "id": "menu-item-4890",
+      "count": 2
+    },
+    {
+      "id": "menu-item-1777",
+      "count": 2
+    },
+    {
+      "id": "menu-item-4677",
+      "count": 2
+    },
+    {
+      "id": "menu-item-2308",
+      "count": 2
+    },
+    {
+      "id": "menu-item-11687",
+      "count": 2
+    },
+    {
+      "id": "menu-item-3290",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "footer",
+      "nav"
+    ],
+    "css_selector": null,
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "low"
+  }
+}

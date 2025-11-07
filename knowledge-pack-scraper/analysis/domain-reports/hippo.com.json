@@ -1,0 +1,455 @@
+{
+  "domain": "hippo.com",
+  "total_pages": 12,
+  "analyzed_at": "2025-11-07T14:35:31.448923",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 12,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 12,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 12,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "nav",
+      "count": 24,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 6,
+      "frequency": 0.5,
+      "confidence": "medium"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 409,
+      "frequency": 34.083,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 77,
+      "frequency": 6.417,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "flex",
+      "count": 643
+    },
+    {
+      "class": "relative",
+      "count": 517
+    },
+    {
+      "class": "transition-colors",
+      "count": 495
+    },
+    {
+      "class": "font-semibold",
+      "count": 449
+    },
+    {
+      "class": "no-underline",
+      "count": 388
+    },
+    {
+      "class": "flex-col",
+      "count": 377
+    },
+    {
+      "class": "duration-200",
+      "count": 345
+    },
+    {
+      "class": "outline-none",
+      "count": 305
+    },
+    {
+      "class": "group/link",
+      "count": 300
+    },
+    {
+      "class": "fill-primary-50",
+      "count": 300
+    },
+    {
+      "class": "group-hover/link:fill-primary-600",
+      "count": 300
+    },
+    {
+      "class": "group-focus/link:fill-primary-600",
+      "count": 300
+    },
+    {
+      "class": "text-neutral-800",
+      "count": 292
+    },
+    {
+      "class": "w-full",
+      "count": 248
+    },
+    {
+      "class": "builder-block",
+      "count": 218
+    },
+    {
+      "class": "text-action3",
+      "count": 204
+    },
+    {
+      "class": "text-caption1",
+      "count": 199
+    },
+    {
+      "class": "items-center",
+      "count": 184
+    },
+    {
+      "class": "builder-has-component",
+      "count": 180
+    },
+    {
+      "class": "gap-4",
+      "count": 178
+    },
+    {
+      "class": "cursor-pointer",
+      "count": 177
+    },
+    {
+      "class": "text-action2",
+      "count": 172
+    },
+    {
+      "class": "font-medium",
+      "count": 172
+    },
+    {
+      "class": "max-w-full",
+      "count": 132
+    },
+    {
+      "class": "hover:text-primary-800",
+      "count": 132
+    },
+    {
+      "class": "hover:underline",
+      "count": 132
+    },
+    {
+      "class": "text-left",
+      "count": 126
+    },
+    {
+      "class": "text-heading5",
+      "count": 114
+    },
+    {
+      "class": "text-primary-1000",
+      "count": 108
+    },
+    {
+      "class": "remixicon",
+      "count": 107
+    },
+    {
+      "class": "duration-150",
+      "count": 106
+    },
+    {
+      "class": "overflow-hidden",
+      "count": 102
+    },
+    {
+      "class": "text-neutral-900",
+      "count": 102
+    },
+    {
+      "class": "gap-2",
+      "count": 90
+    },
+    {
+      "class": "ease-in-out",
+      "count": 89
+    },
+    {
+      "class": "gap-6",
+      "count": 89
+    },
+    {
+      "class": "scroll-to-div",
+      "count": 85
+    },
+    {
+      "class": "leading-[120%]",
+      "count": 84
+    },
+    {
+      "class": "md:text-body4",
+      "count": 84
+    },
+    {
+      "class": "underline",
+      "count": 84
+    },
+    {
+      "class": "items-start",
+      "count": 81
+    },
+    {
+      "class": "text-primary-700",
+      "count": 78
+    },
+    {
+      "class": "flex-container",
+      "count": 73
+    },
+    {
+      "class": "text-body4",
+      "count": 72
+    },
+    {
+      "class": "mb-2",
+      "count": 72
+    },
+    {
+      "class": "mb-10",
+      "count": 72
+    },
+    {
+      "class": "md:gap-4",
+      "count": 72
+    },
+    {
+      "class": "ot-label-txt",
+      "count": 72
+    },
+    {
+      "class": "text-neutral-0",
+      "count": 72
+    },
+    {
+      "class": "bg-primary-700/15",
+      "count": 72
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "still-have-questions",
+      "count": 30
+    },
+    {
+      "id": "C0004",
+      "count": 24
+    },
+    {
+      "id": "C0002",
+      "count": 24
+    },
+    {
+      "id": "key-takeaways",
+      "count": 13
+    },
+    {
+      "id": "stitches",
+      "count": 12
+    },
+    {
+      "id": "onetrust-style",
+      "count": 12
+    },
+    {
+      "id": "__next",
+      "count": 12
+    },
+    {
+      "id": "address-form-sticky-navbar",
+      "count": 12
+    },
+    {
+      "id": "radix-:Riml96:-trigger-radix-:R3iml96:",
+      "count": 12
+    },
+    {
+      "id": "desktop-navigation-other-products",
+      "count": 12
+    },
+    {
+      "id": "radix-:Riml96:-trigger-radix-:R5iml96:",
+      "count": 12
+    },
+    {
+      "id": "address-form-sticky",
+      "count": 12
+    },
+    {
+      "id": "__NEXT_DATA__",
+      "count": 12
+    },
+    {
+      "id": "__next-route-announcer__",
+      "count": 12
+    },
+    {
+      "id": "heap-script",
+      "count": 12
+    },
+    {
+      "id": "gtm-script",
+      "count": 12
+    },
+    {
+      "id": "onetrust-consent-sdk",
+      "count": 12
+    },
+    {
+      "id": "onetrust-pc-sdk",
+      "count": 12
+    },
+    {
+      "id": "close-pc-btn-handler",
+      "count": 12
+    },
+    {
+      "id": "ot-pc-content",
+      "count": 12
+    },
+    {
+      "id": "ot-pc-title",
+      "count": 12
+    },
+    {
+      "id": "ot-pc-desc",
+      "count": 12
+    },
+    {
+      "id": "ot-category-title",
+      "count": 12
+    },
+    {
+      "id": "C0001",
+      "count": 12
+    },
+    {
+      "id": "ot-header-id-C0001",
+      "count": 12
+    },
+    {
+      "id": "ot-status-id-C0001",
+      "count": 12
+    },
+    {
+      "id": "ot-desc-id-C0001",
+      "count": 12
+    },
+    {
+      "id": "ot-header-id-C0004",
+      "count": 12
+    },
+    {
+      "id": "ot-group-id-C0004",
+      "count": 12
+    },
+    {
+      "id": "ot-desc-id-C0004",
+      "count": 12
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"ad\"], [id*=\"ad\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

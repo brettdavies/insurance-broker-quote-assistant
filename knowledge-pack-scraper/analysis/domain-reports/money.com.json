@@ -1,0 +1,456 @@
+{
+  "domain": "money.com",
+  "total_pages": 3,
+  "analyzed_at": "2025-11-07T14:35:34.038445",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 3,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 3,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 3,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 9,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 3,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 27,
+      "frequency": 9.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 18,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 218,
+      "frequency": 72.667,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 10,
+      "frequency": 3.333,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 15,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 12,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "external-link",
+      "count": 196
+    },
+    {
+      "class": "navlink",
+      "count": 195
+    },
+    {
+      "class": "normal",
+      "count": 168
+    },
+    {
+      "class": "item",
+      "count": 168
+    },
+    {
+      "class": "ap00646-w-map-state",
+      "count": 153
+    },
+    {
+      "class": "section",
+      "count": 48
+    },
+    {
+      "class": "content-width",
+      "count": 47
+    },
+    {
+      "class": "lits-cont",
+      "count": 40
+    },
+    {
+      "class": "header",
+      "count": 40
+    },
+    {
+      "class": "list",
+      "count": 40
+    },
+    {
+      "class": "highlight-item",
+      "count": 34
+    },
+    {
+      "class": "icon",
+      "count": 33
+    },
+    {
+      "class": "money-component-ca",
+      "count": 31
+    },
+    {
+      "class": "money",
+      "count": 25
+    },
+    {
+      "class": "li-l1",
+      "count": 24
+    },
+    {
+      "class": "dropdown",
+      "count": 24
+    },
+    {
+      "class": "sec-name",
+      "count": 24
+    },
+    {
+      "class": "panel-toggle",
+      "count": 24
+    },
+    {
+      "class": "panel",
+      "count": 24
+    },
+    {
+      "class": "panel-back",
+      "count": 24
+    },
+    {
+      "class": "mob_cat_name",
+      "count": 24
+    },
+    {
+      "class": "mm10",
+      "count": 24
+    },
+    {
+      "class": "dfct-1",
+      "count": 24
+    },
+    {
+      "class": "display-block",
+      "count": 21
+    },
+    {
+      "class": "ca-pcu-inline",
+      "count": 21
+    },
+    {
+      "class": "money-embed-ca",
+      "count": 21
+    },
+    {
+      "class": "mg-widget",
+      "count": 21
+    },
+    {
+      "class": "m00646-mc-pros-cons",
+      "count": 20
+    },
+    {
+      "class": "pros",
+      "count": 20
+    },
+    {
+      "class": "cons",
+      "count": 20
+    },
+    {
+      "class": "money-af",
+      "count": 20
+    },
+    {
+      "class": "fi",
+      "count": 18
+    },
+    {
+      "class": "fe-label-ph",
+      "count": 18
+    },
+    {
+      "class": "money-jump-anchor",
+      "count": 18
+    },
+    {
+      "class": "company-logo",
+      "count": 18
+    },
+    {
+      "class": "cta",
+      "count": 16
+    },
+    {
+      "class": "heading",
+      "count": 15
+    },
+    {
+      "class": "component",
+      "count": 15
+    },
+    {
+      "class": "money-theme",
+      "count": 13
+    },
+    {
+      "class": "flex-width",
+      "count": 13
+    },
+    {
+      "class": "company-header",
+      "count": 13
+    },
+    {
+      "class": "title-below-logo",
+      "count": 13
+    },
+    {
+      "class": "title",
+      "count": 13
+    },
+    {
+      "class": "logo-btn",
+      "count": 13
+    },
+    {
+      "class": "logo-img",
+      "count": 13
+    },
+    {
+      "class": "page",
+      "count": 12
+    },
+    {
+      "class": "fl",
+      "count": 12
+    },
+    {
+      "class": "btn-with-email",
+      "count": 12
+    },
+    {
+      "class": "btn-solid",
+      "count": 12
+    },
+    {
+      "class": "md",
+      "count": 12
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "u2990e3ad5c8",
+      "count": 62
+    },
+    {
+      "id": "oa7a298f76aa",
+      "count": 36
+    },
+    {
+      "id": "FAQs",
+      "count": 24
+    },
+    {
+      "id": "FAQs-Desktop",
+      "count": 24
+    },
+    {
+      "id": "chevron-down",
+      "count": 24
+    },
+    {
+      "id": "o091808dc881",
+      "count": 15
+    },
+    {
+      "id": "ap00646-ww",
+      "count": 13
+    },
+    {
+      "id": "ap00646-w-company-header",
+      "count": 13
+    },
+    {
+      "id": "+ApTracking.navChainId,",
+      "count": 6
+    },
+    {
+      "id": "byline",
+      "count": 6
+    },
+    {
+      "id": "filter-1",
+      "count": 6
+    },
+    {
+      "id": "path-2",
+      "count": 6
+    },
+    {
+      "id": "Mocks",
+      "count": 6
+    },
+    {
+      "id": "article_NoImg",
+      "count": 6
+    },
+    {
+      "id": "Group-21",
+      "count": 6
+    },
+    {
+      "id": "mask-3",
+      "count": 6
+    },
+    {
+      "id": "OUTLINE_copy_2",
+      "count": 6
+    },
+    {
+      "id": ")<0){var t=document.createElement(",
+      "count": 3
+    },
+    {
+      "id": ",a||ApTracking.navChainId||",
+      "count": 3
+    },
+    {
+      "id": "googleidentityservice_button_styles",
+      "count": 3
+    },
+    {
+      "id": "fe-signin-email",
+      "count": 3
+    },
+    {
+      "id": "fe-signin-password",
+      "count": 3
+    },
+    {
+      "id": "appleid-signin",
+      "count": 3
+    },
+    {
+      "id": "siw-google-btn",
+      "count": 3
+    },
+    {
+      "id": "fe-signup-email",
+      "count": 3
+    },
+    {
+      "id": "fe-signup-first-name",
+      "count": 3
+    },
+    {
+      "id": "fe-signup-last-name",
+      "count": 3
+    },
+    {
+      "id": "fe-signup-password",
+      "count": 3
+    },
+    {
+      "id": "Capa_1",
+      "count": 3
+    },
+    {
+      "id": "karma-lazy-sponsorLogo",
+      "count": 3
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

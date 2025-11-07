@@ -1,0 +1,455 @@
+{
+  "domain": "kristv.com",
+  "total_pages": 2,
+  "analyzed_at": "2025-11-07T14:35:35.840074",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 6,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 36,
+      "frequency": 18.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 52,
+      "frequency": 26.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 4,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 4,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 16,
+      "frequency": 8.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 3,
+      "frequency": 1.5,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "NavigationItem-text-link",
+      "count": 112
+    },
+    {
+      "class": "NavigationItem",
+      "count": 110
+    },
+    {
+      "class": "NavigationItem-text",
+      "count": 110
+    },
+    {
+      "class": "NavigationItem-items-item",
+      "count": 58
+    },
+    {
+      "class": "NavigationLink",
+      "count": 58
+    },
+    {
+      "class": "Navigation-items-item",
+      "count": 42
+    },
+    {
+      "class": "FooterNavigation-items-item",
+      "count": 40
+    },
+    {
+      "class": "SectionNavigation-items-item",
+      "count": 30
+    },
+    {
+      "class": "Page-body",
+      "count": 29
+    },
+    {
+      "class": "fa-solid",
+      "count": 20
+    },
+    {
+      "class": "mainNavigation",
+      "count": 14
+    },
+    {
+      "class": "menu-line",
+      "count": 12
+    },
+    {
+      "class": "userNav",
+      "count": 12
+    },
+    {
+      "class": "SocialBar-items-item",
+      "count": 12
+    },
+    {
+      "class": "SocialLink",
+      "count": 12
+    },
+    {
+      "class": "Link",
+      "count": 12
+    },
+    {
+      "class": "content-showcase-itru-sufficient-2d",
+      "count": 12
+    },
+    {
+      "class": "fas",
+      "count": 10
+    },
+    {
+      "class": "Navigation",
+      "count": 10
+    },
+    {
+      "class": "collapse-nav-button",
+      "count": 10
+    },
+    {
+      "class": "NavigationItem-items",
+      "count": 10
+    },
+    {
+      "class": "arrow",
+      "count": 8
+    },
+    {
+      "class": "open-drawer",
+      "count": 6
+    },
+    {
+      "class": "live-status",
+      "count": 6
+    },
+    {
+      "class": "is-live",
+      "count": 6
+    },
+    {
+      "class": "fa-circle",
+      "count": 6
+    },
+    {
+      "class": "m",
+      "count": 6
+    },
+    {
+      "class": "ActionBar-items-item",
+      "count": 6
+    },
+    {
+      "class": "Image",
+      "count": 6
+    },
+    {
+      "class": "accent",
+      "count": 6
+    },
+    {
+      "class": "sellwild-widget-grid",
+      "count": 6
+    },
+    {
+      "class": "sellwild-listing",
+      "count": 6
+    },
+    {
+      "class": "listing-img-container",
+      "count": 6
+    },
+    {
+      "class": "listing-img",
+      "count": 6
+    },
+    {
+      "class": "listing-title",
+      "count": 6
+    },
+    {
+      "class": "listing-price-2",
+      "count": 6
+    },
+    {
+      "class": "listing-user",
+      "count": 6
+    },
+    {
+      "class": "sellwild-widget-display",
+      "count": 6
+    },
+    {
+      "class": "menuWrap",
+      "count": 4
+    },
+    {
+      "class": "ketchup",
+      "count": 4
+    },
+    {
+      "class": "lettuce",
+      "count": 4
+    },
+    {
+      "class": "beef",
+      "count": 4
+    },
+    {
+      "class": "Header-logo",
+      "count": 4
+    },
+    {
+      "class": "PageLogo-link",
+      "count": 4
+    },
+    {
+      "class": "PageLogo-image",
+      "count": 4
+    },
+    {
+      "class": "header-button",
+      "count": 4
+    },
+    {
+      "class": "live",
+      "count": 4
+    },
+    {
+      "class": "HtmlModule",
+      "count": 4
+    },
+    {
+      "class": "icon",
+      "count": 4
+    },
+    {
+      "class": "Show-LoggedOut",
+      "count": 4
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "facebook-jssdk",
+      "count": 2
+    },
+    {
+      "id": "+window.advBidxc.customerId+",
+      "count": 2
+    },
+    {
+      "id": "+window.mnjs.customerId+",
+      "count": 2
+    },
+    {
+      "id": "sellwild-prebid-init",
+      "count": 2
+    },
+    {
+      "id": "cnx-player-css-2146273620",
+      "count": 2
+    },
+    {
+      "id": "parsely-cfg",
+      "count": 2
+    },
+    {
+      "id": "scroll-follow",
+      "count": 2
+    },
+    {
+      "id": "TopNavigationLocalNews",
+      "count": 2
+    },
+    {
+      "id": "TopNavigationNationalNews",
+      "count": 2
+    },
+    {
+      "id": "TopNavigationWeather",
+      "count": 2
+    },
+    {
+      "id": "TopNavigationSport",
+      "count": 2
+    },
+    {
+      "id": "TopNavigationTraffic",
+      "count": 2
+    },
+    {
+      "id": "TopNavigationLive",
+      "count": 2
+    },
+    {
+      "id": "live",
+      "count": 2
+    },
+    {
+      "id": "headerSocialIcons",
+      "count": 2
+    },
+    {
+      "id": "wx-alerts-count",
+      "count": 2
+    },
+    {
+      "id": "closing-alerts-count",
+      "count": 2
+    },
+    {
+      "id": "originalList",
+      "count": 2
+    },
+    {
+      "id": "firstSet",
+      "count": 2
+    },
+    {
+      "id": "moreDrop",
+      "count": 2
+    },
+    {
+      "id": "rest",
+      "count": 2
+    },
+    {
+      "id": "published-date",
+      "count": 2
+    },
+    {
+      "id": "outstream_connatix_container",
+      "count": 2
+    },
+    {
+      "id": "9d0731d98f164f60a0e8c3a167746042",
+      "count": 2
+    },
+    {
+      "id": "ArticlePageNewsletterSignupIFrame",
+      "count": 2
+    },
+    {
+      "id": "ob_holder",
+      "count": 2
+    },
+    {
+      "id": "AR_11",
+      "count": 2
+    },
+    {
+      "id": "outbrain_widget_0",
+      "count": 2
+    },
+    {
+      "id": "104575287",
+      "count": 2
+    },
+    {
+      "id": "sellwild-ad-1-300x250-0",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

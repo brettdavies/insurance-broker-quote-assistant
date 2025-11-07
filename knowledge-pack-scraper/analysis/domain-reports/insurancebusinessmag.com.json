@@ -1,0 +1,455 @@
+{
+  "domain": "insurancebusinessmag.com",
+  "total_pages": 20,
+  "analyzed_at": "2025-11-07T14:35:31.276800",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 20,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 20,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 40,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 19,
+      "frequency": 0.95,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 656,
+      "frequency": 32.8,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 60,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 260,
+      "frequency": 13.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 100,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 20,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "wrapper",
+      "count": 469
+    },
+    {
+      "class": "wrapper--detail",
+      "count": 369
+    },
+    {
+      "class": "mb-30-30-20",
+      "count": 333
+    },
+    {
+      "class": "wrapper--detail__body",
+      "count": 333
+    },
+    {
+      "class": "nav__item",
+      "count": 180
+    },
+    {
+      "class": "nav__item__link",
+      "count": 180
+    },
+    {
+      "class": "span-account",
+      "count": 120
+    },
+    {
+      "class": "clamp",
+      "count": 102
+    },
+    {
+      "class": "clamp-3",
+      "count": 102
+    },
+    {
+      "class": "fa",
+      "count": 100
+    },
+    {
+      "class": "top-down-list__item",
+      "count": 100
+    },
+    {
+      "class": "top-down-list__item--flex",
+      "count": 100
+    },
+    {
+      "class": "top-down-list__item--no-line",
+      "count": 100
+    },
+    {
+      "class": "article__img",
+      "count": 100
+    },
+    {
+      "class": "article__passage",
+      "count": 100
+    },
+    {
+      "class": "top-down-list__item--flex-subtitle",
+      "count": 100
+    },
+    {
+      "class": "top-down-list__item--flex-title",
+      "count": 100
+    },
+    {
+      "class": "wrapper-fluid",
+      "count": 80
+    },
+    {
+      "class": "login-logout-btn--hidden",
+      "count": 80
+    },
+    {
+      "class": "login-logout-btn",
+      "count": 80
+    },
+    {
+      "class": "nav__item__container",
+      "count": 80
+    },
+    {
+      "class": "nav__item__container--mid",
+      "count": 80
+    },
+    {
+      "class": "wrapper-no-min-width",
+      "count": 80
+    },
+    {
+      "class": "menu-wrapper",
+      "count": 80
+    },
+    {
+      "class": "go2417249464",
+      "count": 80
+    },
+    {
+      "class": "logo",
+      "count": 60
+    },
+    {
+      "class": "login_btn",
+      "count": 60
+    },
+    {
+      "class": "fas",
+      "count": 60
+    },
+    {
+      "class": "breadcrumb-item",
+      "count": 60
+    },
+    {
+      "class": "st-btn",
+      "count": 57
+    },
+    {
+      "class": "st-remove-label",
+      "count": 57
+    },
+    {
+      "class": "mb-60",
+      "count": 56
+    },
+    {
+      "class": "termly-styles-root-d5f974",
+      "count": 40
+    },
+    {
+      "class": "backdrop",
+      "count": 40
+    },
+    {
+      "class": "intromercial-container",
+      "count": 40
+    },
+    {
+      "class": "intromercial-header",
+      "count": 40
+    },
+    {
+      "class": "intromercial-header__logo-area",
+      "count": 40
+    },
+    {
+      "class": "intromercial-header__close-area",
+      "count": 40
+    },
+    {
+      "class": "intromercial-banner",
+      "count": 40
+    },
+    {
+      "class": "modal-show",
+      "count": 40
+    },
+    {
+      "class": "modal-hide",
+      "count": 40
+    },
+    {
+      "class": "btn-account-container",
+      "count": 40
+    },
+    {
+      "class": "my-account-btn",
+      "count": 40
+    },
+    {
+      "class": "my_account_btn",
+      "count": 40
+    },
+    {
+      "class": "logout_btn",
+      "count": 40
+    },
+    {
+      "class": "algolia-search__btn",
+      "count": 40
+    },
+    {
+      "class": "fa-search",
+      "count": 40
+    },
+    {
+      "class": "active",
+      "count": 40
+    },
+    {
+      "class": "ad-wrapper-300x600",
+      "count": 40
+    },
+    {
+      "class": "fab",
+      "count": 40
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "apple-pay-sdk",
+      "count": 20
+    },
+    {
+      "id": "pelcro-sdk",
+      "count": 20
+    },
+    {
+      "id": "hubspot-web-interactives-loader",
+      "count": 20
+    },
+    {
+      "id": "hs-analytics",
+      "count": 20
+    },
+    {
+      "id": "cookieBanner-21778215",
+      "count": 20
+    },
+    {
+      "id": "CollectedForms-21778215",
+      "count": 20
+    },
+    {
+      "id": "21778215",
+      "count": 20
+    },
+    {
+      "id": "termly-jssdk",
+      "count": 20
+    },
+    {
+      "id": "_goober",
+      "count": 20
+    },
+    {
+      "id": "hs-web-interactives-top-push-anchor",
+      "count": 20
+    },
+    {
+      "id": "termly-code-snippet-support",
+      "count": 20
+    },
+    {
+      "id": "cookie-policy-link",
+      "count": 20
+    },
+    {
+      "id": "preferences-link",
+      "count": 20
+    },
+    {
+      "id": "banner-accept",
+      "count": 20
+    },
+    {
+      "id": "intromercial-handle",
+      "count": 20
+    },
+    {
+      "id": "google_ads_iframe_/21873781324/insurance-business/ibaw/ros/ibaw_ros_640x480_pre_0__container__",
+      "count": 20
+    },
+    {
+      "id": "intromercial-handle-mobile",
+      "count": 20
+    },
+    {
+      "id": "google_ads_iframe_/21873781324/insurance-business/ibaw/ros/ibaw_ros_oop_catfish_0__container__",
+      "count": 20
+    },
+    {
+      "id": "overlay-header-btn",
+      "count": 20
+    },
+    {
+      "id": "btnCloseMenu",
+      "count": 20
+    },
+    {
+      "id": "google_ads_iframe_/21873781324/insurance-business/ibaw/ros/ibaw_ros_wallpaper_0__container__",
+      "count": 20
+    },
+    {
+      "id": "google_ads_iframe_/21873781324/insurance-business/ibaw/ros/ibaw_ros_970x250_lb_01_0__container__",
+      "count": 20
+    },
+    {
+      "id": "google_ads_iframe_/21873781324/insurance-business/ibaw/ros/ibaw_ros_970x250_lb_01_0",
+      "count": 20
+    },
+    {
+      "id": "frmSubscribe",
+      "count": 20
+    },
+    {
+      "id": "divBtnGroup",
+      "count": 20
+    },
+    {
+      "id": "txtSubscribe",
+      "count": 20
+    },
+    {
+      "id": "btnSubscribe",
+      "count": 20
+    },
+    {
+      "id": "custom_modal_contact_us",
+      "count": 20
+    },
+    {
+      "id": "search_overlay",
+      "count": 20
+    },
+    {
+      "id": "search_inner_overlay",
+      "count": 20
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": null,
+    "excluded_selector": "[class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

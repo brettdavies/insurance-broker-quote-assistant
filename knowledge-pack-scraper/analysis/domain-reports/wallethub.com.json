@@ -1,0 +1,456 @@
+{
+  "domain": "wallethub.com",
+  "total_pages": 60,
+  "analyzed_at": "2025-11-07T14:32:22.332510",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 213,
+      "frequency": 3.55,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 60,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 201,
+      "frequency": 3.35,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 240,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 786,
+      "frequency": 13.1,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 465,
+      "frequency": 7.75,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 41,
+      "frequency": 0.683,
+      "confidence": "medium"
+    },
+    {
+      "pattern": "share",
+      "count": 191,
+      "frequency": 3.183,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 1707,
+      "frequency": 28.45,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 303,
+      "frequency": 5.05,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 237,
+      "frequency": 3.95,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 6122,
+      "frequency": 102.033,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 175,
+      "frequency": 2.917,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-icon",
+      "count": 4050
+    },
+    {
+      "class": "link",
+      "count": 1797
+    },
+    {
+      "class": "side-category",
+      "count": 1548
+    },
+    {
+      "class": "arrow",
+      "count": 1531
+    },
+    {
+      "class": "hidden",
+      "count": 1143
+    },
+    {
+      "class": "btn",
+      "count": 1081
+    },
+    {
+      "class": "sub-menu",
+      "count": 1005
+    },
+    {
+      "class": "label",
+      "count": 960
+    },
+    {
+      "class": "blue",
+      "count": 871
+    },
+    {
+      "class": "brgms-button",
+      "count": 834
+    },
+    {
+      "class": "ciw-drp-li",
+      "count": 798
+    },
+    {
+      "class": "generic-box",
+      "count": 705
+    },
+    {
+      "class": "cct-list-item",
+      "count": 684
+    },
+    {
+      "class": "loggedin-link-items",
+      "count": 627
+    },
+    {
+      "class": "generated-disc",
+      "count": 570
+    },
+    {
+      "class": "bf-icon-left-open-big",
+      "count": 495
+    },
+    {
+      "class": "ic-credit-cards",
+      "count": 468
+    },
+    {
+      "class": "af-icon-right-open-big",
+      "count": 444
+    },
+    {
+      "class": "animate-spin",
+      "count": 420
+    },
+    {
+      "class": "dd",
+      "count": 399
+    },
+    {
+      "class": "sideMenuParent",
+      "count": 399
+    },
+    {
+      "class": "loggedout-link-items",
+      "count": 399
+    },
+    {
+      "class": "small",
+      "count": 395
+    },
+    {
+      "class": "af-icon-spin6",
+      "count": 363
+    },
+    {
+      "class": "hide-desktop",
+      "count": 360
+    },
+    {
+      "class": "blank",
+      "count": 345
+    },
+    {
+      "class": "menuParent",
+      "count": 342
+    },
+    {
+      "class": "side-title",
+      "count": 342
+    },
+    {
+      "class": "side-back-btn",
+      "count": 342
+    },
+    {
+      "class": "sideMenuTitle",
+      "count": 342
+    },
+    {
+      "class": "fu-item-ithaca",
+      "count": 342
+    },
+    {
+      "class": "radio",
+      "count": 342
+    },
+    {
+      "class": "cct-meta",
+      "count": 342
+    },
+    {
+      "class": "with-progress",
+      "count": 306
+    },
+    {
+      "class": "ciw-drp",
+      "count": 285
+    },
+    {
+      "class": "ciw-drp-label",
+      "count": 285
+    },
+    {
+      "class": "ciw-drp-value",
+      "count": 285
+    },
+    {
+      "class": "ciw-drp-arrow",
+      "count": 285
+    },
+    {
+      "class": "ciw-drp-content",
+      "count": 285
+    },
+    {
+      "class": "ciw-drp-val",
+      "count": 285
+    },
+    {
+      "class": "edu-as-link",
+      "count": 268
+    },
+    {
+      "class": "bold-font",
+      "count": 263
+    },
+    {
+      "class": "hide-mobile",
+      "count": 246
+    },
+    {
+      "class": "no-decoration",
+      "count": 240
+    },
+    {
+      "class": "ic-dollar-circle",
+      "count": 240
+    },
+    {
+      "class": "sub-label",
+      "count": 240
+    },
+    {
+      "class": "semi-bold-font",
+      "count": 239
+    },
+    {
+      "class": "ic-sett-wallethub",
+      "count": 234
+    },
+    {
+      "class": "thumb",
+      "count": 234
+    },
+    {
+      "class": "th-count",
+      "count": 234
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "tools-list-name",
+      "count": 114
+    },
+    {
+      "id": "side-banking-nav",
+      "count": 114
+    },
+    {
+      "id": "side-insurance-nav",
+      "count": 114
+    },
+    {
+      "id": "zip-ipt-label",
+      "count": 61
+    },
+    {
+      "id": "zip-ipt",
+      "count": 61
+    },
+    {
+      "id": "search",
+      "count": 60
+    },
+    {
+      "id": "loans-list-menu",
+      "count": 60
+    },
+    {
+      "id": "banks-list-menu",
+      "count": 60
+    },
+    {
+      "id": "burger-menu-popup",
+      "count": 60
+    },
+    {
+      "id": "accessibilityBtn",
+      "count": 60
+    },
+    {
+      "id": "footer_cta",
+      "count": 60
+    },
+    {
+      "id": "logout-form",
+      "count": 59
+    },
+    {
+      "id": "logout-button",
+      "count": 59
+    },
+    {
+      "id": "fb-root",
+      "count": 57
+    },
+    {
+      "id": "viewport",
+      "count": 57
+    },
+    {
+      "id": "a11y-search-status",
+      "count": 57
+    },
+    {
+      "id": "m-ac",
+      "count": 57
+    },
+    {
+      "id": "burger-creditcards",
+      "count": 57
+    },
+    {
+      "id": "cc-list-menu",
+      "count": 57
+    },
+    {
+      "id": "loans-list-name",
+      "count": 57
+    },
+    {
+      "id": "burger-loans",
+      "count": 57
+    },
+    {
+      "id": "banks-list-name",
+      "count": 57
+    },
+    {
+      "id": "burger-banking",
+      "count": 57
+    },
+    {
+      "id": "comp-list-name",
+      "count": 57
+    },
+    {
+      "id": "burger-companies",
+      "count": 57
+    },
+    {
+      "id": "comp-list-menu",
+      "count": 57
+    },
+    {
+      "id": "burger-tools",
+      "count": 57
+    },
+    {
+      "id": "tools-list-menu",
+      "count": 57
+    },
+    {
+      "id": "burger-more",
+      "count": 57
+    },
+    {
+      "id": "m-user",
+      "count": 57
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

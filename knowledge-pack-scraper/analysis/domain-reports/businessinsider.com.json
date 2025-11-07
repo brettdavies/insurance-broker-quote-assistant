@@ -1,0 +1,456 @@
+{
+  "domain": "businessinsider.com",
+  "total_pages": 20,
+  "analyzed_at": "2025-11-07T14:35:31.495567",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 82,
+      "frequency": 4.1,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 39,
+      "frequency": 1.95,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 40,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 78,
+      "frequency": 3.9,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 59,
+      "frequency": 2.95,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 680,
+      "frequency": 34.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 80,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 6321,
+      "frequency": 316.05,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 153,
+      "frequency": 7.65,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 198,
+      "frequency": 9.9,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 135,
+      "frequency": 6.75,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 70,
+      "frequency": 3.5,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "headline-medium",
+      "count": 2527
+    },
+    {
+      "class": "headline-regular",
+      "count": 2021
+    },
+    {
+      "class": "headline-semibold",
+      "count": 1667
+    },
+    {
+      "class": "svg-icon",
+      "count": 1305
+    },
+    {
+      "class": "accordion-row",
+      "count": 1180
+    },
+    {
+      "class": "accordion-item",
+      "count": 1180
+    },
+    {
+      "class": "accordion-link",
+      "count": 1160
+    },
+    {
+      "class": "lazy-holder",
+      "count": 706
+    },
+    {
+      "class": "links-list-link",
+      "count": 620
+    },
+    {
+      "class": "has-transparency",
+      "count": 480
+    },
+    {
+      "class": "label-md",
+      "count": 438
+    },
+    {
+      "class": "lazy-image",
+      "count": 424
+    },
+    {
+      "class": "no-script",
+      "count": 424
+    },
+    {
+      "class": "favicon-asset",
+      "count": 320
+    },
+    {
+      "class": "sticky-toc-link",
+      "count": 308
+    },
+    {
+      "class": "social-link",
+      "count": 240
+    },
+    {
+      "class": "not-content-link",
+      "count": 231
+    },
+    {
+      "class": "pros-and-cons__list-item",
+      "count": 215
+    },
+    {
+      "class": "accordion",
+      "count": 200
+    },
+    {
+      "class": "dropdown-icon",
+      "count": 200
+    },
+    {
+      "class": "brand-logo",
+      "count": 200
+    },
+    {
+      "class": "star-outline-icon",
+      "count": 195
+    },
+    {
+      "class": "body-italic",
+      "count": 182
+    },
+    {
+      "class": "dropdown-item",
+      "count": 180
+    },
+    {
+      "class": "dropdown-label",
+      "count": 180
+    },
+    {
+      "class": "chevron-down-icon",
+      "count": 179
+    },
+    {
+      "class": "accordion-button",
+      "count": 160
+    },
+    {
+      "class": "level-1",
+      "count": 160
+    },
+    {
+      "class": "hidden",
+      "count": 160
+    },
+    {
+      "class": "label-md-strong",
+      "count": 159
+    },
+    {
+      "class": "toc-anchor",
+      "count": 154
+    },
+    {
+      "class": "ignore-typography",
+      "count": 150
+    },
+    {
+      "class": "with-nested-accordion",
+      "count": 140
+    },
+    {
+      "class": "bifrost-entry",
+      "count": 140
+    },
+    {
+      "class": "style-loading",
+      "count": 119
+    },
+    {
+      "class": "featured-product-text-placeholder",
+      "count": 112
+    },
+    {
+      "class": "d-none",
+      "count": 106
+    },
+    {
+      "class": "faq-answer",
+      "count": 102
+    },
+    {
+      "class": "collapsable-faq",
+      "count": 87
+    },
+    {
+      "class": "collapsable-faq-dropdown",
+      "count": 87
+    },
+    {
+      "class": "collapsable-faq-dropdown_header",
+      "count": 87
+    },
+    {
+      "class": "collapsable-faq-dropdown_text",
+      "count": 87
+    },
+    {
+      "class": "faq-question",
+      "count": 87
+    },
+    {
+      "class": "collapsable-faq-dropdown_chevron",
+      "count": 87
+    },
+    {
+      "class": "chevron-icon",
+      "count": 87
+    },
+    {
+      "class": "chevron",
+      "count": 87
+    },
+    {
+      "class": "collapsable-faq-dropdown_wrap",
+      "count": 87
+    },
+    {
+      "class": "collapsable-faq-dropdown_content",
+      "count": 87
+    },
+    {
+      "class": "financial-product-card__product-details__list-item",
+      "count": 83
+    },
+    {
+      "class": "tout",
+      "count": 82
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "chevron-icon",
+      "count": 87
+    },
+    {
+      "id": "post",
+      "count": 82
+    },
+    {
+      "id": "a",
+      "count": 35
+    },
+    {
+      "id": "post-author-profile-link",
+      "count": 33
+    },
+    {
+      "id": "post-author-name-link",
+      "count": 33
+    },
+    {
+      "id": "fenrir-console-script",
+      "count": 20
+    },
+    {
+      "id": "fenrir-client-data",
+      "count": 20
+    },
+    {
+      "id": "gpp-stub",
+      "count": 20
+    },
+    {
+      "id": "sourcepoint-config",
+      "count": 20
+    },
+    {
+      "id": "gtm-config-script",
+      "count": 20
+    },
+    {
+      "id": "styles-loaded",
+      "count": 20
+    },
+    {
+      "id": "bi",
+      "count": 20
+    },
+    {
+      "id": "post-body",
+      "count": 20
+    },
+    {
+      "id": "l-rightrail",
+      "count": 20
+    },
+    {
+      "id": "site-footer",
+      "count": 20
+    },
+    {
+      "id": "consent-manager-script",
+      "count": 20
+    },
+    {
+      "id": "script-loader-script",
+      "count": 20
+    },
+    {
+      "id": "0-iframe",
+      "count": 20
+    },
+    {
+      "id": "1-iframe",
+      "count": 20
+    },
+    {
+      "id": "checkout-entry",
+      "count": 20
+    },
+    {
+      "id": "auth-entry",
+      "count": 20
+    },
+    {
+      "id": "dialog-entry",
+      "count": 20
+    },
+    {
+      "id": "onboarding-entry",
+      "count": 20
+    },
+    {
+      "id": "content-wall-drawer-entry",
+      "count": 20
+    },
+    {
+      "id": "appBanner-entry",
+      "count": 20
+    },
+    {
+      "id": "paywall-drawer-entry",
+      "count": 20
+    },
+    {
+      "id": "6172e1526771180013739d3a",
+      "count": 20
+    },
+    {
+      "id": "61268b19a48c9200115d0564",
+      "count": 19
+    },
+    {
+      "id": "6172e39536c0fc00130ece0c",
+      "count": 19
+    },
+    {
+      "id": "expanded0",
+      "count": 18
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

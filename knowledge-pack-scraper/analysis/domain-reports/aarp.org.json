@@ -1,0 +1,454 @@
+{
+  "domain": "aarp.org",
+  "total_pages": 2,
+  "analyzed_at": "2025-11-07T14:35:35.440018",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 6,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 0.5,
+      "confidence": "medium"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 26,
+      "frequency": 13.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 21,
+      "frequency": 10.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 325,
+      "frequency": 162.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 14,
+      "frequency": 7.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 816,
+      "frequency": 408.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 17,
+      "frequency": 8.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 206,
+      "frequency": 103.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 8,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 18,
+      "frequency": 9.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "aem-GridColumn",
+      "count": 800
+    },
+    {
+      "class": "aem-GridColumn--default--12",
+      "count": 629
+    },
+    {
+      "class": "aem-Grid",
+      "count": 403
+    },
+    {
+      "class": "aem-Grid--12",
+      "count": 380
+    },
+    {
+      "class": "aem-Grid--default--12",
+      "count": 380
+    },
+    {
+      "class": "responsivegrid",
+      "count": 358
+    },
+    {
+      "class": "cmp-text",
+      "count": 282
+    },
+    {
+      "class": "text",
+      "count": 273
+    },
+    {
+      "class": "banner-rewards-moa-container",
+      "count": 261
+    },
+    {
+      "class": "banner-moa-locked",
+      "count": 261
+    },
+    {
+      "class": "js-banner-aarpMoa",
+      "count": 261
+    },
+    {
+      "class": "banner-aarpMoa",
+      "count": 261
+    },
+    {
+      "class": "js-banner-aarpRewards",
+      "count": 261
+    },
+    {
+      "class": "banner-aarpRewards",
+      "count": 261
+    },
+    {
+      "class": "container",
+      "count": 215
+    },
+    {
+      "class": "cmp-container",
+      "count": 206
+    },
+    {
+      "class": "uxdia-c-button",
+      "count": 159
+    },
+    {
+      "class": "aem-GridColumn--default--none",
+      "count": 148
+    },
+    {
+      "class": "aem-GridColumn--phone--12",
+      "count": 144
+    },
+    {
+      "class": "uxdia-c-button--secondary",
+      "count": 143
+    },
+    {
+      "class": "uxdia-c-image",
+      "count": 142
+    },
+    {
+      "class": "uxdia-c-spinner",
+      "count": 142
+    },
+    {
+      "class": "articleimage",
+      "count": 141
+    },
+    {
+      "class": "image",
+      "count": 141
+    },
+    {
+      "class": "cmp-image",
+      "count": 141
+    },
+    {
+      "class": "cmp-image__image",
+      "count": 141
+    },
+    {
+      "class": "cmp-image__image@tablet",
+      "count": 141
+    },
+    {
+      "class": "cmp-image__picture",
+      "count": 140
+    },
+    {
+      "class": "cmp-image__picture@tablet",
+      "count": 140
+    },
+    {
+      "class": "articlelazy",
+      "count": 138
+    },
+    {
+      "class": "uxdia-c-featured-tile-wrapper",
+      "count": 129
+    },
+    {
+      "class": "uxdia-c-featured-tile-wrapper@mobile",
+      "count": 129
+    },
+    {
+      "class": "uxdia-c-featured-tile-container-link",
+      "count": 127
+    },
+    {
+      "class": "uxdia-c-featured-tile__container",
+      "count": 127
+    },
+    {
+      "class": "uxdia-c-featured-tile__container@tablet",
+      "count": 127
+    },
+    {
+      "class": "uxdia-c-featured-tile__container@mobile",
+      "count": 127
+    },
+    {
+      "class": "uxdia-c-featured-tile__content-wrapper",
+      "count": 127
+    },
+    {
+      "class": "uxdia-c-featured-tile__article-content-wrapper",
+      "count": 127
+    },
+    {
+      "class": "uxdia-c-featured-tile__content-wrapper@tablet",
+      "count": 127
+    },
+    {
+      "class": "uxdia-c-featured-tile__content-wrapper@mobile",
+      "count": 127
+    },
+    {
+      "class": "uxdia-c-featured-tile__title",
+      "count": 127
+    },
+    {
+      "class": "uxdia-c-featured-tile__title@tablet",
+      "count": 127
+    },
+    {
+      "class": "uxdia-c-featured-tile__title@mobile",
+      "count": 127
+    },
+    {
+      "class": "uxdia-u-title-card",
+      "count": 127
+    },
+    {
+      "class": "uxdia-u-title-card@mobile",
+      "count": 127
+    },
+    {
+      "class": "uxdia-c-featured-tile__title_link",
+      "count": 127
+    },
+    {
+      "class": "uxdia-c-featured-tile__title_link@tablet",
+      "count": 127
+    },
+    {
+      "class": "uxdia-c-featured-tile__title_link@mobile",
+      "count": 127
+    },
+    {
+      "class": "uxdia-c-featured-tile__image-wrapper",
+      "count": 124
+    },
+    {
+      "class": "uxdia-c-featured-tile__image-wrapper@tablet",
+      "count": 124
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "2",
+      "count": 36
+    },
+    {
+      "id": "1",
+      "count": 36
+    },
+    {
+      "id": "LNK_CLK-CLOSE_MENU",
+      "count": 34
+    },
+    {
+      "id": "3",
+      "count": 18
+    },
+    {
+      "id": "events",
+      "count": 9
+    },
+    {
+      "id": "products",
+      "count": 9
+    },
+    {
+      "id": "con8461-div",
+      "count": 8
+    },
+    {
+      "id": "con8461hw",
+      "count": 8
+    },
+    {
+      "id": "con8461h",
+      "count": 8
+    },
+    {
+      "id": "con8461-uxdia-container",
+      "count": 8
+    },
+    {
+      "id": "con8461-swat-container",
+      "count": 8
+    },
+    {
+      "id": "con8461",
+      "count": 8
+    },
+    {
+      "id": "hostName",
+      "count": 8
+    },
+    {
+      "id": "hideCategory",
+      "count": 8
+    },
+    {
+      "id": "hideDescription",
+      "count": 8
+    },
+    {
+      "id": "region",
+      "count": 8
+    },
+    {
+      "id": "requestModel",
+      "count": 8
+    },
+    {
+      "id": "aarpDomain",
+      "count": 8
+    },
+    {
+      "id": "requestFilter",
+      "count": 8
+    },
+    {
+      "id": "advertisementDisplayOrder",
+      "count": 8
+    },
+    {
+      "id": "variant",
+      "count": 8
+    },
+    {
+      "id": "model",
+      "count": 8
+    },
+    {
+      "id": "SEARCH-BTN-CLK-SEARCH-MODAL-OPEN",
+      "count": 6
+    },
+    {
+      "id": "TILE_CLK-HEALTH-HEARING_CENTER",
+      "count": 6
+    },
+    {
+      "id": "TILE_CLK-HEALTH-MAKING_CONNECTIONS",
+      "count": 6
+    },
+    {
+      "id": "TILE_CLK-HEALTH-MENTAL_HEALTH_RESOURCES",
+      "count": 6
+    },
+    {
+      "id": "TILE_CLK-HEALTH-MOA_SMART_GUIDE_GOOD_NIGHT_SLEEP",
+      "count": 6
+    },
+    {
+      "id": "TILE_CLK-MONEY-REPORT_SCAMS_IN_YOUR_AREA",
+      "count": 6
+    },
+    {
+      "id": "TILE_CLK-MONEY-GIVING_QUIZ",
+      "count": 6
+    },
+    {
+      "id": "TILE_CLK-MONEY-MONEY_MAP",
+      "count": 6
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"ads\"], [id*=\"ads\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

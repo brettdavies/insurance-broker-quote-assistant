@@ -1,0 +1,455 @@
+{
+  "domain": "trafficsafetyinstitute.com",
+  "total_pages": 4,
+  "analyzed_at": "2025-11-07T14:35:33.870848",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 4,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 4,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 4,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 4,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 680,
+      "frequency": 170.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 3,
+      "frequency": 0.75,
+      "confidence": "medium"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 304,
+      "frequency": 76.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 8,
+      "frequency": 2.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "article__category",
+      "count": 1374
+    },
+    {
+      "class": "article-simple",
+      "count": 620
+    },
+    {
+      "class": "slick-slide",
+      "count": 620
+    },
+    {
+      "class": "article__absolute",
+      "count": 620
+    },
+    {
+      "class": "article__head",
+      "count": 620
+    },
+    {
+      "class": "article__image",
+      "count": 620
+    },
+    {
+      "class": "article__content",
+      "count": 620
+    },
+    {
+      "class": "article-simple-date",
+      "count": 620
+    },
+    {
+      "class": "slick-cloned",
+      "count": 316
+    },
+    {
+      "class": "menu-item",
+      "count": 192
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 172
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 172
+    },
+    {
+      "class": "menu-item-has-children",
+      "count": 48
+    },
+    {
+      "class": "toggle-submenu",
+      "count": 48
+    },
+    {
+      "class": "link-text",
+      "count": 48
+    },
+    {
+      "class": "sub-menu",
+      "count": 48
+    },
+    {
+      "class": "rank-math-list-item",
+      "count": 26
+    },
+    {
+      "class": "rank-math-question",
+      "count": 26
+    },
+    {
+      "class": "rank-math-answer",
+      "count": 26
+    },
+    {
+      "class": "wp-block-heading",
+      "count": 24
+    },
+    {
+      "class": "shell",
+      "count": 20
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 20
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 20
+    },
+    {
+      "class": "lwptoc_item",
+      "count": 18
+    },
+    {
+      "class": "lwptoc_item_number",
+      "count": 18
+    },
+    {
+      "class": "lwptoc_item_label",
+      "count": 18
+    },
+    {
+      "class": "wp-block-image",
+      "count": 15
+    },
+    {
+      "class": "size-full",
+      "count": 15
+    },
+    {
+      "class": "padbottom-100",
+      "count": 12
+    },
+    {
+      "class": "padbottom-mob-50",
+      "count": 12
+    },
+    {
+      "class": "row-flex",
+      "count": 12
+    },
+    {
+      "class": "slick-active",
+      "count": 12
+    },
+    {
+      "class": "wp-block-list",
+      "count": 9
+    },
+    {
+      "class": "p-0",
+      "count": 8
+    },
+    {
+      "class": "menu",
+      "count": 8
+    },
+    {
+      "class": "padtop-100",
+      "count": 8
+    },
+    {
+      "class": "padtop-mob-50",
+      "count": 8
+    },
+    {
+      "class": "col-xl-3",
+      "count": 8
+    },
+    {
+      "class": "col-sm-12",
+      "count": 8
+    },
+    {
+      "class": "nounderline",
+      "count": 8
+    },
+    {
+      "class": "col-xl-6",
+      "count": 7
+    },
+    {
+      "class": "col-md-12",
+      "count": 5
+    },
+    {
+      "class": "rank-math-schema-pro",
+      "count": 4
+    },
+    {
+      "class": "wp-singular",
+      "count": 4
+    },
+    {
+      "class": "post-template-default",
+      "count": 4
+    },
+    {
+      "class": "single",
+      "count": 4
+    },
+    {
+      "class": "single-post",
+      "count": 4
+    },
+    {
+      "class": "single-format-standard",
+      "count": 4
+    },
+    {
+      "class": "wp-theme-traffic-school",
+      "count": 4
+    },
+    {
+      "class": "header",
+      "count": 4
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "wp-block-library-css",
+      "count": 4
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 4
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 4
+    },
+    {
+      "id": "crb-google-fonts-css",
+      "count": 4
+    },
+    {
+      "id": "theme-slider-styles-css",
+      "count": 4
+    },
+    {
+      "id": "theme-custom-styles-css",
+      "count": 4
+    },
+    {
+      "id": "theme-custom-styles1-css",
+      "count": 4
+    },
+    {
+      "id": "theme-styles-css",
+      "count": 4
+    },
+    {
+      "id": "jquery-core-js",
+      "count": 4
+    },
+    {
+      "id": "jquery-migrate-js",
+      "count": 4
+    },
+    {
+      "id": "theme-slider-js",
+      "count": 4
+    },
+    {
+      "id": "theme-functions-js",
+      "count": 4
+    },
+    {
+      "id": "theme-ajax-load-js-extra",
+      "count": 4
+    },
+    {
+      "id": "theme-ajax-load-js",
+      "count": 4
+    },
+    {
+      "id": "theme-jquery.history-js",
+      "count": 4
+    },
+    {
+      "id": "wp-custom-css",
+      "count": 4
+    },
+    {
+      "id": "menu-main-menu",
+      "count": 4
+    },
+    {
+      "id": "menu-item-2995",
+      "count": 4
+    },
+    {
+      "id": "menu-item-2996",
+      "count": 4
+    },
+    {
+      "id": "menu-item-4260",
+      "count": 4
+    },
+    {
+      "id": "menu-item-4257",
+      "count": 4
+    },
+    {
+      "id": "menu-item-4258",
+      "count": 4
+    },
+    {
+      "id": "menu-item-4259",
+      "count": 4
+    },
+    {
+      "id": "menu-item-4254",
+      "count": 4
+    },
+    {
+      "id": "menu-item-4256",
+      "count": 4
+    },
+    {
+      "id": "menu-item-4253",
+      "count": 4
+    },
+    {
+      "id": "menu-item-4255",
+      "count": 4
+    },
+    {
+      "id": "menu-item-4251",
+      "count": 4
+    },
+    {
+      "id": "menu-item-4252",
+      "count": 4
+    },
+    {
+      "id": "menu-item-4249",
+      "count": 4
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article",
+    "excluded_selector": "[class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

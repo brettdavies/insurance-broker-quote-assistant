@@ -1,0 +1,455 @@
+{
+  "domain": "insuranceproviders.com",
+  "total_pages": 5,
+  "analyzed_at": "2025-11-07T14:35:33.012345",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 5,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 5,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 5,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 17,
+      "frequency": 3.4,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 25,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 5,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 359,
+      "frequency": 71.8,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 1,
+      "frequency": 0.2,
+      "confidence": "low"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 5,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 1445,
+      "frequency": 289.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 35,
+      "frequency": 7.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 48,
+      "frequency": 9.6,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "mega-menu-item",
+      "count": 490
+    },
+    {
+      "class": "mega-menu-link",
+      "count": 490
+    },
+    {
+      "class": "mega-menu-item-type-custom",
+      "count": 480
+    },
+    {
+      "class": "mega-menu-item-object-custom",
+      "count": 480
+    },
+    {
+      "class": "mega-sub-menu",
+      "count": 200
+    },
+    {
+      "class": "field-holder",
+      "count": 137
+    },
+    {
+      "class": "mega-menu-item-has-children",
+      "count": 100
+    },
+    {
+      "class": "mega-menu-grid",
+      "count": 100
+    },
+    {
+      "class": "mega-indicator",
+      "count": 100
+    },
+    {
+      "class": "hide",
+      "count": 93
+    },
+    {
+      "class": "ez-toc-link",
+      "count": 90
+    },
+    {
+      "class": "nationwide",
+      "count": 88
+    },
+    {
+      "class": "statefarm",
+      "count": 88
+    },
+    {
+      "class": "allstate",
+      "count": 88
+    },
+    {
+      "class": "ez-toc-page-1",
+      "count": 83
+    },
+    {
+      "class": "ez-toc-heading-1",
+      "count": 60
+    },
+    {
+      "class": "ez-toc-section",
+      "count": 53
+    },
+    {
+      "class": "ez-toc-section-end",
+      "count": 53
+    },
+    {
+      "class": "mega-menu-megamenu",
+      "count": 50
+    },
+    {
+      "class": "mega-align-bottom-left",
+      "count": 50
+    },
+    {
+      "class": "mega-menu-row",
+      "count": 50
+    },
+    {
+      "class": "mega-menu-column",
+      "count": 50
+    },
+    {
+      "class": "mega-3",
+      "count": 50
+    },
+    {
+      "class": "mega-menu-columns-3-of-3",
+      "count": 50
+    },
+    {
+      "class": "3",
+      "count": 50
+    },
+    {
+      "class": "mega-3-columns",
+      "count": 50
+    },
+    {
+      "class": "menu-item",
+      "count": 50
+    },
+    {
+      "class": "mda-submit-field",
+      "count": 49
+    },
+    {
+      "class": "mda-submit",
+      "count": 49
+    },
+    {
+      "class": "mda",
+      "count": 45
+    },
+    {
+      "class": "ez-toc-heading-level-2",
+      "count": 45
+    },
+    {
+      "class": "ez-toc-heading-level-3",
+      "count": 45
+    },
+    {
+      "class": "mda-contents",
+      "count": 44
+    },
+    {
+      "class": "mda-form",
+      "count": 44
+    },
+    {
+      "class": "mda-ins-type-field",
+      "count": 44
+    },
+    {
+      "class": "mda-zip-field",
+      "count": 44
+    },
+    {
+      "class": "mda-zip",
+      "count": 44
+    },
+    {
+      "class": "secured-mda",
+      "count": 44
+    },
+    {
+      "class": "secured-mda-ad-disclosures",
+      "count": 44
+    },
+    {
+      "class": "ae-mda-brand-logos",
+      "count": 44
+    },
+    {
+      "class": "brands-container",
+      "count": 44
+    },
+    {
+      "class": "row",
+      "count": 41
+    },
+    {
+      "class": "container",
+      "count": 40
+    },
+    {
+      "class": "inner",
+      "count": 32
+    },
+    {
+      "class": "quote-new-360-mda",
+      "count": 31
+    },
+    {
+      "class": "col-md-12",
+      "count": 31
+    },
+    {
+      "class": "custom-logo",
+      "count": 30
+    },
+    {
+      "class": "arrow",
+      "count": 30
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 30
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 30
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "clip0_2070_2838",
+      "count": 44
+    },
+    {
+      "id": "mega-menu-wrap-menu-1",
+      "count": 10
+    },
+    {
+      "id": "mega-toggle-block-0",
+      "count": 10
+    },
+    {
+      "id": "mega-menu-menu-1",
+      "count": 10
+    },
+    {
+      "id": "mega-menu-item-550098",
+      "count": 10
+    },
+    {
+      "id": "mega-menu-550098-0",
+      "count": 10
+    },
+    {
+      "id": "mega-menu-550098-0-0",
+      "count": 10
+    },
+    {
+      "id": "mega-menu-item-550100",
+      "count": 10
+    },
+    {
+      "id": "mega-menu-item-548743",
+      "count": 10
+    },
+    {
+      "id": "mega-menu-item-548741",
+      "count": 10
+    },
+    {
+      "id": "mega-menu-item-548740",
+      "count": 10
+    },
+    {
+      "id": "mega-menu-item-550092",
+      "count": 10
+    },
+    {
+      "id": "mega-menu-item-550093",
+      "count": 10
+    },
+    {
+      "id": "mega-menu-item-465236",
+      "count": 10
+    },
+    {
+      "id": "mega-menu-item-550113",
+      "count": 10
+    },
+    {
+      "id": "mega-menu-item-548742",
+      "count": 10
+    },
+    {
+      "id": "mega-menu-item-548744",
+      "count": 10
+    },
+    {
+      "id": "mega-menu-item-550099",
+      "count": 10
+    },
+    {
+      "id": "mega-menu-550099-0",
+      "count": 10
+    },
+    {
+      "id": "mega-menu-550099-0-0",
+      "count": 10
+    },
+    {
+      "id": "mega-menu-item-550101",
+      "count": 10
+    },
+    {
+      "id": "mega-menu-item-548749",
+      "count": 10
+    },
+    {
+      "id": "mega-menu-item-550095",
+      "count": 10
+    },
+    {
+      "id": "mega-menu-item-550096",
+      "count": 10
+    },
+    {
+      "id": "mega-menu-item-550094",
+      "count": 10
+    },
+    {
+      "id": "mega-menu-item-550097",
+      "count": 10
+    },
+    {
+      "id": "mega-menu-item-548750",
+      "count": 10
+    },
+    {
+      "id": "mega-menu-item-548751",
+      "count": 10
+    },
+    {
+      "id": "mega-menu-item-550115",
+      "count": 10
+    },
+    {
+      "id": "mega-menu-item-550116",
+      "count": 10
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

@@ -1,0 +1,456 @@
+{
+  "domain": "nerdwallet.com",
+  "total_pages": 70,
+  "analyzed_at": "2025-11-07T14:29:32.926405",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 70,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 86,
+      "frequency": 1.229,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 70,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 198,
+      "frequency": 2.829,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 84,
+      "frequency": 1.2,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 60,
+      "frequency": 0.857,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 6255,
+      "frequency": 89.357,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 17,
+      "frequency": 0.243,
+      "confidence": "low"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 18,
+      "frequency": 0.257,
+      "confidence": "low"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 396,
+      "frequency": 5.657,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "flex",
+      "count": 26788
+    },
+    {
+      "class": "list-none",
+      "count": 18632
+    },
+    {
+      "class": "text-xsmall",
+      "count": 18306
+    },
+    {
+      "class": "MuiBox-root",
+      "count": 18201
+    },
+    {
+      "class": "no-underline",
+      "count": 17104
+    },
+    {
+      "class": "MuiTypography-root",
+      "count": 15315
+    },
+    {
+      "class": "py-2",
+      "count": 15292
+    },
+    {
+      "class": "hover:text-green-default",
+      "count": 14668
+    },
+    {
+      "class": "text-neutral-darkest",
+      "count": 14194
+    },
+    {
+      "class": "font-light",
+      "count": 12152
+    },
+    {
+      "class": "MuiTypography-body1",
+      "count": 9765
+    },
+    {
+      "class": "MuiTableCell-root",
+      "count": 8500
+    },
+    {
+      "class": "MuiTableCell-sizeMedium",
+      "count": 8500
+    },
+    {
+      "class": "_28z5Fp",
+      "count": 7261
+    },
+    {
+      "class": "MuiTableCell-body",
+      "count": 7245
+    },
+    {
+      "class": "ins-css-qweiau",
+      "count": 7013
+    },
+    {
+      "class": "font-medium",
+      "count": 6725
+    },
+    {
+      "class": "cursor-pointer",
+      "count": 6317
+    },
+    {
+      "class": "block",
+      "count": 4780
+    },
+    {
+      "class": "_3-to_p",
+      "count": 4729
+    },
+    {
+      "class": "flex-col",
+      "count": 4361
+    },
+    {
+      "class": "hover:underline",
+      "count": 4327
+    },
+    {
+      "class": "ins-css-t440xe",
+      "count": 4272
+    },
+    {
+      "class": "p-0",
+      "count": 3672
+    },
+    {
+      "class": "m-0",
+      "count": 3618
+    },
+    {
+      "class": "ins-css-12kb00u",
+      "count": 3359
+    },
+    {
+      "class": "px-4",
+      "count": 3264
+    },
+    {
+      "class": "items-center",
+      "count": 3211
+    },
+    {
+      "class": "mb-4",
+      "count": 3201
+    },
+    {
+      "class": "MwK-P42",
+      "count": 3150
+    },
+    {
+      "class": "l3ListItem",
+      "count": 3150
+    },
+    {
+      "class": "_3DKUn-t",
+      "count": 3150
+    },
+    {
+      "class": "-BGzY9K",
+      "count": 3150
+    },
+    {
+      "class": "_3wlVa6",
+      "count": 3145
+    },
+    {
+      "class": "_2247K8",
+      "count": 3143
+    },
+    {
+      "class": "rounded-[.25rem]",
+      "count": 3078
+    },
+    {
+      "class": "w-fit",
+      "count": 3078
+    },
+    {
+      "class": "hidden",
+      "count": 3044
+    },
+    {
+      "class": "ins-css-xp60o7",
+      "count": 3028
+    },
+    {
+      "class": "border-0",
+      "count": 2970
+    },
+    {
+      "class": "ins-css-1wn0nu9",
+      "count": 2950
+    },
+    {
+      "class": "MuiTableRow-root",
+      "count": 2928
+    },
+    {
+      "class": "whitespace-nowrap",
+      "count": 2924
+    },
+    {
+      "class": "text-blue-default",
+      "count": 2904
+    },
+    {
+      "class": "flex-row",
+      "count": 2885
+    },
+    {
+      "class": "bg-transparent",
+      "count": 2874
+    },
+    {
+      "class": "l3ItemMobile",
+      "count": 2842
+    },
+    {
+      "class": "l3Item",
+      "count": 2842
+    },
+    {
+      "class": "gap-6",
+      "count": 2766
+    },
+    {
+      "class": "ins-css-4a4xb9",
+      "count": 2661
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "KeyboardArrowDownSharpIcon",
+      "count": 490
+    },
+    {
+      "id": "HelpOutlineIcon",
+      "count": 330
+    },
+    {
+      "id": "ChevronRightIcon",
+      "count": 299
+    },
+    {
+      "id": "ArrowUpwardIcon",
+      "count": 205
+    },
+    {
+      "id": "C0004",
+      "count": 186
+    },
+    {
+      "id": "breadcrumbs",
+      "count": 162
+    },
+    {
+      "id": "navDrawerContent",
+      "count": 126
+    },
+    {
+      "id": "CheckIcon",
+      "count": 124
+    },
+    {
+      "id": "C0002",
+      "count": 124
+    },
+    {
+      "id": "C0003",
+      "count": 124
+    },
+    {
+      "id": "OpenInNewIcon",
+      "count": 92
+    },
+    {
+      "id": "CloseIcon",
+      "count": 89
+    },
+    {
+      "id": "clip0_20261_44",
+      "count": 82
+    },
+    {
+      "id": "false",
+      "count": 80
+    },
+    {
+      "id": "KeyboardArrowDownIcon",
+      "count": 76
+    },
+    {
+      "id": "zipCode",
+      "count": 70
+    },
+    {
+      "id": "vpr-capture",
+      "count": 68
+    },
+    {
+      "id": "global-footer",
+      "count": 68
+    },
+    {
+      "id": "CFE2FNBC77U208RTD9TG",
+      "count": 65
+    },
+    {
+      "id": "li_sync_frame",
+      "count": 63
+    },
+    {
+      "id": "onetrust-style",
+      "count": 62
+    },
+    {
+      "id": "onetrust-consent-sdk",
+      "count": 62
+    },
+    {
+      "id": "onetrust-pc-sdk",
+      "count": 62
+    },
+    {
+      "id": "close-pc-btn-handler",
+      "count": 62
+    },
+    {
+      "id": "ot-pc-content",
+      "count": 62
+    },
+    {
+      "id": "ot-pc-title",
+      "count": 62
+    },
+    {
+      "id": "ot-pc-desc",
+      "count": 62
+    },
+    {
+      "id": "C0001",
+      "count": 62
+    },
+    {
+      "id": "ot-header-id-C0001",
+      "count": 62
+    },
+    {
+      "id": "ot-status-id-C0001",
+      "count": 62
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

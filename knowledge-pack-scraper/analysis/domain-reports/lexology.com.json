@@ -1,0 +1,455 @@
+{
+  "domain": "lexology.com",
+  "total_pages": 3,
+  "analyzed_at": "2025-11-07T14:35:34.283022",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 0.333,
+      "confidence": "low"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 0.333,
+      "confidence": "low"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 4,
+      "frequency": 1.333,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 3,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 66,
+      "frequency": 22.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 0.333,
+      "confidence": "low"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 8,
+      "frequency": 2.667,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 18,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 84,
+      "frequency": 28.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 6,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 11,
+      "frequency": 3.667,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 21,
+      "frequency": 7.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 11,
+      "frequency": 3.667,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 19,
+      "frequency": 6.333,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "spaces-space",
+      "count": 189
+    },
+    {
+      "class": "spaces-space-inner",
+      "count": 189
+    },
+    {
+      "class": "fas",
+      "count": 60
+    },
+    {
+      "class": "section",
+      "count": 50
+    },
+    {
+      "class": "section-outer-container",
+      "count": 48
+    },
+    {
+      "class": "section-outer",
+      "count": 48
+    },
+    {
+      "class": "nav-section-container",
+      "count": 48
+    },
+    {
+      "class": "nav-section",
+      "count": 48
+    },
+    {
+      "class": "-container",
+      "count": 42
+    },
+    {
+      "class": "logclick",
+      "count": 39
+    },
+    {
+      "class": "sr-only",
+      "count": 36
+    },
+    {
+      "class": "mobile-only",
+      "count": 36
+    },
+    {
+      "class": "container",
+      "count": 33
+    },
+    {
+      "class": "hide-phone",
+      "count": 28
+    },
+    {
+      "class": "lex-navlink",
+      "count": 27
+    },
+    {
+      "class": "desktop-only",
+      "count": 24
+    },
+    {
+      "class": "active",
+      "count": 22
+    },
+    {
+      "class": "optanon-category-C0002",
+      "count": 21
+    },
+    {
+      "class": "subnav-link",
+      "count": 21
+    },
+    {
+      "class": "click-to-activate",
+      "count": 21
+    },
+    {
+      "class": "ot-hide",
+      "count": 21
+    },
+    {
+      "class": "ot-label-txt",
+      "count": 21
+    },
+    {
+      "class": "followableitem",
+      "count": 19
+    },
+    {
+      "class": "fab",
+      "count": 19
+    },
+    {
+      "class": "subnav",
+      "count": 18
+    },
+    {
+      "class": "sub-nav",
+      "count": 18
+    },
+    {
+      "class": "featureModuleContainer",
+      "count": 18
+    },
+    {
+      "class": "default",
+      "count": 18
+    },
+    {
+      "class": "foot-col-head",
+      "count": 18
+    },
+    {
+      "class": "fa-2x",
+      "count": 16
+    },
+    {
+      "class": "ct_auth2",
+      "count": 16
+    },
+    {
+      "class": "category-menu-switch-handler",
+      "count": 15
+    },
+    {
+      "class": "ot-desc-cntr",
+      "count": 15
+    },
+    {
+      "class": "ot-grp-desc",
+      "count": 15
+    },
+    {
+      "class": "pro",
+      "count": 12
+    },
+    {
+      "class": "mobile-dont-show",
+      "count": 12
+    },
+    {
+      "class": "standard",
+      "count": 12
+    },
+    {
+      "class": "small-link",
+      "count": 12
+    },
+    {
+      "class": "col-md-2",
+      "count": 12
+    },
+    {
+      "class": "ot-pc-scrollbar",
+      "count": 12
+    },
+    {
+      "class": "ot-cat-item",
+      "count": 12
+    },
+    {
+      "class": "ot-grp-hdr1",
+      "count": 12
+    },
+    {
+      "class": "ot-cat-header",
+      "count": 12
+    },
+    {
+      "class": "ot-tgl-cntr",
+      "count": 12
+    },
+    {
+      "class": "ot-category-desc",
+      "count": 12
+    },
+    {
+      "class": "ot-chkbox",
+      "count": 12
+    },
+    {
+      "class": "ot-label-status",
+      "count": 12
+    },
+    {
+      "class": "button",
+      "count": 11
+    },
+    {
+      "class": "list-inline",
+      "count": 11
+    },
+    {
+      "class": "disabled",
+      "count": 10
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "drop-down",
+      "count": 9
+    },
+    {
+      "id": "SearchForm",
+      "count": 6
+    },
+    {
+      "id": "pro-link",
+      "count": 6
+    },
+    {
+      "id": "resources-nav-link",
+      "count": 6
+    },
+    {
+      "id": "research-nav-link",
+      "count": 6
+    },
+    {
+      "id": "resource-nav-container",
+      "count": 6
+    },
+    {
+      "id": "resource-nav",
+      "count": 6
+    },
+    {
+      "id": "resource-nav-tabs",
+      "count": 6
+    },
+    {
+      "id": "C0002",
+      "count": 6
+    },
+    {
+      "id": "C0003",
+      "count": 6
+    },
+    {
+      "id": "C0004",
+      "count": 6
+    },
+    {
+      "id": "saveAndFileDialog",
+      "count": 4
+    },
+    {
+      "id": "style_resource-nav",
+      "count": 3
+    },
+    {
+      "id": "style_resource-nav-tabs",
+      "count": 3
+    },
+    {
+      "id": "onetrust-style",
+      "count": 3
+    },
+    {
+      "id": "lex-header-v3",
+      "count": 3
+    },
+    {
+      "id": "showRightPush",
+      "count": 3
+    },
+    {
+      "id": "q",
+      "count": 3
+    },
+    {
+      "id": "instruct-sub-nav-dd",
+      "count": 3
+    },
+    {
+      "id": "dropdownMenuButton",
+      "count": 3
+    },
+    {
+      "id": "mylex-nav-login",
+      "count": 3
+    },
+    {
+      "id": "mylex-nav-register",
+      "count": 3
+    },
+    {
+      "id": "mylex-nav",
+      "count": 3
+    },
+    {
+      "id": "resources-nav-mobile-link",
+      "count": 3
+    },
+    {
+      "id": "resources-nav-mobile",
+      "count": 3
+    },
+    {
+      "id": "research-nav-mobile-link",
+      "count": 3
+    },
+    {
+      "id": "research-nav-mobile",
+      "count": 3
+    },
+    {
+      "id": "nav-compete",
+      "count": 3
+    },
+    {
+      "id": "wwl-sub-nav-dd",
+      "count": 3
+    },
+    {
+      "id": "learn-sub-nav-dd",
+      "count": 3
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": null,
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

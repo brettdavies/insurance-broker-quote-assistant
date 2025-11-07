@@ -1,0 +1,455 @@
+{
+  "domain": "propertynest.com",
+  "total_pages": 8,
+  "analyzed_at": "2025-11-07T14:35:31.989795",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 8,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 8,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 8,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 56,
+      "frequency": 7.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 160,
+      "frequency": 20.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 1584,
+      "frequency": 198.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 72,
+      "frequency": 9.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "svgIcon",
+      "count": 420
+    },
+    {
+      "class": "edse-rating__star",
+      "count": 420
+    },
+    {
+      "class": "megamenu__submenu-link",
+      "count": 288
+    },
+    {
+      "class": "edse-rating__star--green",
+      "count": 210
+    },
+    {
+      "class": "megamenu-mobile__link",
+      "count": 200
+    },
+    {
+      "class": "contra__item",
+      "count": 193
+    },
+    {
+      "class": "btn",
+      "count": 144
+    },
+    {
+      "class": "remodal-is-closed",
+      "count": 120
+    },
+    {
+      "class": "hidden",
+      "count": 112
+    },
+    {
+      "class": "block-text_block",
+      "count": 110
+    },
+    {
+      "class": "promotion__list-item",
+      "count": 104
+    },
+    {
+      "class": "btn-green",
+      "count": 96
+    },
+    {
+      "class": "icon",
+      "count": 85
+    },
+    {
+      "class": "megamenu__submenu-title",
+      "count": 80
+    },
+    {
+      "class": "megamenu-mobile__item",
+      "count": 80
+    },
+    {
+      "class": "megamenu-mobile__title",
+      "count": 80
+    },
+    {
+      "class": "affiliate-product__info",
+      "count": 66
+    },
+    {
+      "class": "main-menu_item",
+      "count": 64
+    },
+    {
+      "class": "main-menu_link",
+      "count": 64
+    },
+    {
+      "class": "lazy",
+      "count": 62
+    },
+    {
+      "class": "megamenu__submenu-list",
+      "count": 56
+    },
+    {
+      "class": "mobile-menu_item",
+      "count": 56
+    },
+    {
+      "class": "mobile-menu_link",
+      "count": 56
+    },
+    {
+      "class": "remodal-wrapper",
+      "count": 56
+    },
+    {
+      "class": "remodal",
+      "count": 56
+    },
+    {
+      "class": "remodal-is-initialized",
+      "count": 56
+    },
+    {
+      "class": "remodal-close",
+      "count": 56
+    },
+    {
+      "class": "form-group",
+      "count": 56
+    },
+    {
+      "class": "edse-rating__display",
+      "count": 42
+    },
+    {
+      "class": "edse-rating__starline1",
+      "count": 42
+    },
+    {
+      "class": "edse-rating__starline2",
+      "count": 42
+    },
+    {
+      "class": "svg_text",
+      "count": 40
+    },
+    {
+      "class": "li-cat-item",
+      "count": 40
+    },
+    {
+      "class": "megamenu__submenu-link--big",
+      "count": 40
+    },
+    {
+      "class": "foot-menu_item",
+      "count": 40
+    },
+    {
+      "class": "foot-menu_link",
+      "count": 40
+    },
+    {
+      "class": "btn-default",
+      "count": 40
+    },
+    {
+      "class": "block-affiliate_lg",
+      "count": 39
+    },
+    {
+      "class": "contra__col",
+      "count": 38
+    },
+    {
+      "class": "contra__title",
+      "count": 38
+    },
+    {
+      "class": "contra__list",
+      "count": 38
+    },
+    {
+      "class": "related-articles__post",
+      "count": 37
+    },
+    {
+      "class": "m2-animated-rollover",
+      "count": 37
+    },
+    {
+      "class": "related-articles__media",
+      "count": 37
+    },
+    {
+      "class": "related-articles__picture",
+      "count": 37
+    },
+    {
+      "class": "related-articles__content",
+      "count": 37
+    },
+    {
+      "class": "related-articles__category",
+      "count": 37
+    },
+    {
+      "class": "related-articles__title",
+      "count": 37
+    },
+    {
+      "class": "block-table",
+      "count": 37
+    },
+    {
+      "class": "block-table_snippet",
+      "count": 33
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "mm_full",
+      "count": 8
+    },
+    {
+      "id": "menu-toggler",
+      "count": 8
+    },
+    {
+      "id": "menu-list",
+      "count": 8
+    },
+    {
+      "id": "blogDetailsPage",
+      "count": 8
+    },
+    {
+      "id": "scroll-top-sentinel",
+      "count": 8
+    },
+    {
+      "id": "scroll-bottom-sentinel",
+      "count": 8
+    },
+    {
+      "id": "mobile-toggle-0",
+      "count": 8
+    },
+    {
+      "id": "mobile-toggle-1",
+      "count": 8
+    },
+    {
+      "id": "mobile-toggle-2",
+      "count": 8
+    },
+    {
+      "id": "scroll_top",
+      "count": 8
+    },
+    {
+      "id": "signIn",
+      "count": 8
+    },
+    {
+      "id": "signInEmail",
+      "count": 8
+    },
+    {
+      "id": "msg-login-error",
+      "count": 8
+    },
+    {
+      "id": "login_email_modaler",
+      "count": 8
+    },
+    {
+      "id": "mod_login",
+      "count": 8
+    },
+    {
+      "id": "mod_password",
+      "count": 8
+    },
+    {
+      "id": "signUp",
+      "count": 8
+    },
+    {
+      "id": "sign_up_modaler",
+      "count": 8
+    },
+    {
+      "id": "gm_user_type",
+      "count": 8
+    },
+    {
+      "id": "select2-gm_user_type-container",
+      "count": 8
+    },
+    {
+      "id": "gm_email",
+      "count": 8
+    },
+    {
+      "id": "gm_password",
+      "count": 8
+    },
+    {
+      "id": "gm_password2",
+      "count": 8
+    },
+    {
+      "id": "fca7cfe7d49c499e8a15db3ab672d0ab",
+      "count": 8
+    },
+    {
+      "id": "id_captcha_signup_modal",
+      "count": 8
+    },
+    {
+      "id": "google_sociallogin_link",
+      "count": 8
+    },
+    {
+      "id": "forgotPassword",
+      "count": 8
+    },
+    {
+      "id": "msg-forgot-error",
+      "count": 8
+    },
+    {
+      "id": "forgot_password_modaler",
+      "count": 8
+    },
+    {
+      "id": "po_email",
+      "count": 8
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": null,
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

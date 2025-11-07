@@ -1,0 +1,455 @@
+{
+  "domain": "4autoinsurancequote.com",
+  "total_pages": 2,
+  "analyzed_at": "2025-11-07T14:35:35.333223",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 7,
+      "frequency": 3.5,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 177,
+      "frequency": 88.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 1086,
+      "frequency": 543.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 20,
+      "frequency": 10.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 21,
+      "frequency": 10.5,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "mega-menu-item",
+      "count": 468
+    },
+    {
+      "class": "mega-menu-link",
+      "count": 468
+    },
+    {
+      "class": "mega-menu-item-type-post_type",
+      "count": 348
+    },
+    {
+      "class": "mega-menu-item-object-post",
+      "count": 348
+    },
+    {
+      "class": "mega-menu-item-type-custom",
+      "count": 120
+    },
+    {
+      "class": "mega-menu-item-object-custom",
+      "count": 120
+    },
+    {
+      "class": "mega-sub-menu",
+      "count": 68
+    },
+    {
+      "class": "ez-toc-link",
+      "count": 53
+    },
+    {
+      "class": "ez-toc-page-1",
+      "count": 52
+    },
+    {
+      "class": "hide",
+      "count": 40
+    },
+    {
+      "class": "field-holder",
+      "count": 38
+    },
+    {
+      "class": "nationwide",
+      "count": 38
+    },
+    {
+      "class": "statefarm",
+      "count": 38
+    },
+    {
+      "class": "allstate",
+      "count": 38
+    },
+    {
+      "class": "ez-toc-heading-1",
+      "count": 37
+    },
+    {
+      "class": "mega-menu-item-has-children",
+      "count": 36
+    },
+    {
+      "class": "mega-indicator",
+      "count": 36
+    },
+    {
+      "class": "column-1",
+      "count": 36
+    },
+    {
+      "class": "column-2",
+      "count": 36
+    },
+    {
+      "class": "ez-toc-heading-level-2",
+      "count": 33
+    },
+    {
+      "class": "mega-menu-grid",
+      "count": 32
+    },
+    {
+      "class": "ent",
+      "count": 28
+    },
+    {
+      "class": "custom-toc",
+      "count": 21
+    },
+    {
+      "class": "mega-3-columns",
+      "count": 20
+    },
+    {
+      "class": "ez-toc-heading-level-3",
+      "count": 20
+    },
+    {
+      "class": "mda",
+      "count": 19
+    },
+    {
+      "class": "mda-contents",
+      "count": 19
+    },
+    {
+      "class": "mda-form",
+      "count": 19
+    },
+    {
+      "class": "mda-zip-field",
+      "count": 19
+    },
+    {
+      "class": "mda-zip",
+      "count": 19
+    },
+    {
+      "class": "mda-submit-field",
+      "count": 19
+    },
+    {
+      "class": "mda-submit",
+      "count": 19
+    },
+    {
+      "class": "secured-mda",
+      "count": 19
+    },
+    {
+      "class": "secured-mda-ad-disclosures",
+      "count": 19
+    },
+    {
+      "class": "ae-mda-brand-logos",
+      "count": 19
+    },
+    {
+      "class": "brands-container",
+      "count": 19
+    },
+    {
+      "class": "inner",
+      "count": 17
+    },
+    {
+      "class": "mega-menu-megamenu",
+      "count": 16
+    },
+    {
+      "class": "mega-align-bottom-left",
+      "count": 16
+    },
+    {
+      "class": "mega-menu-row",
+      "count": 16
+    },
+    {
+      "class": "mega-menu-column",
+      "count": 16
+    },
+    {
+      "class": "mega-3",
+      "count": 16
+    },
+    {
+      "class": "3",
+      "count": 16
+    },
+    {
+      "class": "ez-toc-section",
+      "count": 16
+    },
+    {
+      "class": "ez-toc-section-end",
+      "count": 16
+    },
+    {
+      "class": "question",
+      "count": 15
+    },
+    {
+      "class": "answer",
+      "count": 15
+    },
+    {
+      "class": "container",
+      "count": 14
+    },
+    {
+      "class": "row",
+      "count": 14
+    },
+    {
+      "class": "arrow",
+      "count": 12
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "type",
+      "count": 19
+    },
+    {
+      "id": "clip0_2070_2838",
+      "count": 19
+    },
+    {
+      "id": "mega-menu-wrap-menu-1",
+      "count": 4
+    },
+    {
+      "id": "mega-toggle-block-0",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-menu-1",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-126105",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-126105-0",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-126105-0-0",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-126035",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-171102",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-171103",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-171104",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-171105",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-171106",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-171107",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-171108",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-171109",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-171110",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-171110-0",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-171110-0-0",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-171111",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-171123",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-171116",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-161909",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-171118",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-171117",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-171121",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-171122",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-187312",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-187313",
+      "count": 4
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

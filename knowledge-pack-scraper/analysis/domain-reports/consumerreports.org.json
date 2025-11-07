@@ -1,0 +1,455 @@
+{
+  "domain": "consumerreports.org",
+  "total_pages": 10,
+  "analyzed_at": "2025-11-07T14:35:32.148946",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 8,
+      "frequency": 0.8,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 4,
+      "frequency": 0.4,
+      "confidence": "low"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 13,
+      "frequency": 1.3,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 10,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 14,
+      "frequency": 1.4,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 3,
+      "frequency": 0.3,
+      "confidence": "low"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 106,
+      "frequency": 10.6,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 13,
+      "frequency": 1.3,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 829,
+      "frequency": 82.9,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 20,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 5781,
+      "frequency": 578.1,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 48,
+      "frequency": 4.8,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 51,
+      "frequency": 5.1,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "cda-gnav__menu-section-item",
+      "count": 2484
+    },
+    {
+      "class": "cda__menu-item",
+      "count": 2376
+    },
+    {
+      "class": "cda-gnav__list-common-item",
+      "count": 1512
+    },
+    {
+      "class": "crux-body-copy",
+      "count": 1361
+    },
+    {
+      "class": "crux-icons",
+      "count": 1047
+    },
+    {
+      "class": "cda-gnav__category-dropdown-col",
+      "count": 477
+    },
+    {
+      "class": "cda-gnav__menu-section",
+      "count": 450
+    },
+    {
+      "class": "crux-icons-caret-up-small",
+      "count": 400
+    },
+    {
+      "class": "cda-nav__checkbox-label",
+      "count": 356
+    },
+    {
+      "class": "link__icon-animated--move",
+      "count": 342
+    },
+    {
+      "class": "link__icon-animated--move-icon",
+      "count": 342
+    },
+    {
+      "class": "cda-gnav__menu-section-title",
+      "count": 324
+    },
+    {
+      "class": "cda-nav__checkbox--hidden",
+      "count": 293
+    },
+    {
+      "class": "cr-footer__link",
+      "count": 290
+    },
+    {
+      "class": "cda-gnav__list-common",
+      "count": 288
+    },
+    {
+      "class": "cda-gnav__list-common-title",
+      "count": 288
+    },
+    {
+      "class": "cda-nav__checkbox",
+      "count": 284
+    },
+    {
+      "class": "d-md-none",
+      "count": 280
+    },
+    {
+      "class": "crux-body-copy--small",
+      "count": 258
+    },
+    {
+      "class": "crux-body-copy--extra-small--bold",
+      "count": 254
+    },
+    {
+      "class": "crux-label-style--regular",
+      "count": 247
+    },
+    {
+      "class": "cda-gnav__menu-header",
+      "count": 243
+    },
+    {
+      "class": "cda-gnav__menu-title",
+      "count": 216
+    },
+    {
+      "class": "cda-gnav__mobile-menu-header",
+      "count": 216
+    },
+    {
+      "class": "crux-icons-lock-solid",
+      "count": 210
+    },
+    {
+      "class": "cda-nav__checkbox-menu--sm",
+      "count": 207
+    },
+    {
+      "class": "cda-gnav__menu-content--sm",
+      "count": 207
+    },
+    {
+      "class": "cda-gnav__mobile-menu-label",
+      "count": 207
+    },
+    {
+      "class": "cda-gnav__mobile-menu-inner",
+      "count": 207
+    },
+    {
+      "class": "cda-gnav__menu-back",
+      "count": 207
+    },
+    {
+      "class": "cda-gnav__mobile-menu-back",
+      "count": 207
+    },
+    {
+      "class": "cda-gnav__mobile-menu-title",
+      "count": 207
+    },
+    {
+      "class": "cda-gnav__category-nav-link-trigger",
+      "count": 198
+    },
+    {
+      "class": "cda-gnav__menu-section-bottom-cta",
+      "count": 198
+    },
+    {
+      "class": "cda-gnav__category-dropdown-col-bottom-cta",
+      "count": 189
+    },
+    {
+      "class": "cda-gnav__text--green",
+      "count": 153
+    },
+    {
+      "class": "cda-gnav__category-subnav-item",
+      "count": 144
+    },
+    {
+      "class": "cda-gnav__category-subnav-menu",
+      "count": 144
+    },
+    {
+      "class": "cda-gnav__menu-section--border",
+      "count": 144
+    },
+    {
+      "class": "cda-gnav__category-dropdown-featured-col",
+      "count": 144
+    },
+    {
+      "class": "cda-gnav__category-dropdown-featured",
+      "count": 144
+    },
+    {
+      "class": "cda-gnav__category-dropdown-featured-image",
+      "count": 144
+    },
+    {
+      "class": "cda-gnav__category-dropdown-featured-label",
+      "count": 144
+    },
+    {
+      "class": "cda-gnav__category-dropdown-featured-text",
+      "count": 144
+    },
+    {
+      "class": "flex",
+      "count": 141
+    },
+    {
+      "class": "crux-body-copy--bold",
+      "count": 137
+    },
+    {
+      "class": "cda-gnav__category-nav-mobile-bar-link",
+      "count": 135
+    },
+    {
+      "class": "cda-btn",
+      "count": 129
+    },
+    {
+      "class": "baseball-cards-v2__ranges",
+      "count": 126
+    },
+    {
+      "class": "baseball-cards-v2__ranges-details",
+      "count": 126
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "clip0_201_559",
+      "count": 12
+    },
+    {
+      "id": "monetatecss",
+      "count": 10
+    },
+    {
+      "id": "funnel-relay-installer",
+      "count": 10
+    },
+    {
+      "id": "cr_dc21e",
+      "count": 10
+    },
+    {
+      "id": "PROPERTY_ID",
+      "count": 10
+    },
+    {
+      "id": "global-footer",
+      "count": 10
+    },
+    {
+      "id": "cr-footer",
+      "count": 10
+    },
+    {
+      "id": "footer-col1",
+      "count": 10
+    },
+    {
+      "id": "footer-col2",
+      "count": 10
+    },
+    {
+      "id": "footer-col3",
+      "count": 10
+    },
+    {
+      "id": "footer-col4",
+      "count": 10
+    },
+    {
+      "id": "footer-col5",
+      "count": 10
+    },
+    {
+      "id": "box",
+      "count": 10
+    },
+    {
+      "id": "lid",
+      "count": 10
+    },
+    {
+      "id": "ribbon_one",
+      "count": 10
+    },
+    {
+      "id": "clip0_201_556",
+      "count": 10
+    },
+    {
+      "id": "mask0_201_565",
+      "count": 10
+    },
+    {
+      "id": "clip0_201_569",
+      "count": 10
+    },
+    {
+      "id": "clip0_201_573",
+      "count": 10
+    },
+    {
+      "id": "clip0_201_579",
+      "count": 10
+    },
+    {
+      "id": "g-nav-new-container",
+      "count": 9
+    },
+    {
+      "id": "search",
+      "count": 9
+    },
+    {
+      "id": "clip0_5629_92454",
+      "count": 9
+    },
+    {
+      "id": "clear-recent-searches",
+      "count": 9
+    },
+    {
+      "id": "clip0_1933_3893",
+      "count": 9
+    },
+    {
+      "id": "sign-in-menu",
+      "count": 9
+    },
+    {
+      "id": "sign-in-label",
+      "count": 9
+    },
+    {
+      "id": "member-icon",
+      "count": 9
+    },
+    {
+      "id": "clip0_2195_1170",
+      "count": 9
+    },
+    {
+      "id": "gnav-signin-form",
+      "count": 9
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"ads\"], [id*=\"ads\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

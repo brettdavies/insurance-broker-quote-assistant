@@ -1,0 +1,455 @@
+{
+  "domain": "iiat.org",
+  "total_pages": 2,
+  "analyzed_at": "2025-11-07T14:35:35.690629",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 9,
+      "frequency": 4.5,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 4,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 12,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 322,
+      "frequency": 161.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 4,
+      "frequency": 2.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "no-bullet",
+      "count": 164
+    },
+    {
+      "class": "hide-for-medium",
+      "count": 152
+    },
+    {
+      "class": "tabs-title",
+      "count": 148
+    },
+    {
+      "class": "tabs-panel",
+      "count": 148
+    },
+    {
+      "class": "menu-title",
+      "count": 148
+    },
+    {
+      "class": "styled-link",
+      "count": 148
+    },
+    {
+      "class": "menu-body",
+      "count": 148
+    },
+    {
+      "class": "styled-links-list",
+      "count": 128
+    },
+    {
+      "class": "icon",
+      "count": 28
+    },
+    {
+      "class": "show-for-medium",
+      "count": 24
+    },
+    {
+      "class": "tabs",
+      "count": 22
+    },
+    {
+      "class": "tabs-content",
+      "count": 22
+    },
+    {
+      "class": "styled-link-lg",
+      "count": 20
+    },
+    {
+      "class": "menu-desc",
+      "count": 20
+    },
+    {
+      "class": "show-for-sr",
+      "count": 18
+    },
+    {
+      "class": "button",
+      "count": 17
+    },
+    {
+      "class": "cell",
+      "count": 14
+    },
+    {
+      "class": "card",
+      "count": 13
+    },
+    {
+      "class": "border-none",
+      "count": 13
+    },
+    {
+      "class": "card-section",
+      "count": 11
+    },
+    {
+      "class": "cta-card",
+      "count": 9
+    },
+    {
+      "class": "bg-primary",
+      "count": 9
+    },
+    {
+      "class": "warning",
+      "count": 9
+    },
+    {
+      "class": "grid-container",
+      "count": 8
+    },
+    {
+      "class": "tiny",
+      "count": 8
+    },
+    {
+      "class": "remove-btn",
+      "count": 8
+    },
+    {
+      "class": "primary",
+      "count": 8
+    },
+    {
+      "class": "flex-container",
+      "count": 8
+    },
+    {
+      "class": "grid-x",
+      "count": 8
+    },
+    {
+      "class": "medium-6",
+      "count": 8
+    },
+    {
+      "class": "image-holder",
+      "count": 7
+    },
+    {
+      "class": "dropdown-pane",
+      "count": 6
+    },
+    {
+      "class": "text",
+      "count": 6
+    },
+    {
+      "class": "grid-margin-x",
+      "count": 6
+    },
+    {
+      "class": "show-on-focus",
+      "count": 4
+    },
+    {
+      "class": "logo",
+      "count": 4
+    },
+    {
+      "class": "search-opener",
+      "count": 4
+    },
+    {
+      "class": "icon-search",
+      "count": 4
+    },
+    {
+      "class": "search-slide",
+      "count": 4
+    },
+    {
+      "class": "addsearch-searchfield-container",
+      "count": 4
+    },
+    {
+      "class": "search-form",
+      "count": 4
+    },
+    {
+      "class": "search-field",
+      "count": 4
+    },
+    {
+      "class": "icon-arrow-small-right",
+      "count": 4
+    },
+    {
+      "class": "burger-button",
+      "count": 4
+    },
+    {
+      "class": "flex-dir-column",
+      "count": 4
+    },
+    {
+      "class": "medium-flex-dir-row",
+      "count": 4
+    },
+    {
+      "class": "menu",
+      "count": 4
+    },
+    {
+      "class": "vertical",
+      "count": 4
+    },
+    {
+      "class": "medium-horizontal",
+      "count": 4
+    },
+    {
+      "class": "small",
+      "count": 4
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "header",
+      "count": 2
+    },
+    {
+      "id": "mobile-search-form-dropdown",
+      "count": 2
+    },
+    {
+      "id": "addsearch-input-global-mobile",
+      "count": 2
+    },
+    {
+      "id": "addsearch-autocomplete-global-mobile",
+      "count": 2
+    },
+    {
+      "id": "search-form-dropdown",
+      "count": 2
+    },
+    {
+      "id": "addsearch-input-global-desktop",
+      "count": 2
+    },
+    {
+      "id": "addsearch-autocomplete-global",
+      "count": 2
+    },
+    {
+      "id": "nav-dropdown",
+      "count": 2
+    },
+    {
+      "id": "sub-tabs",
+      "count": 2
+    },
+    {
+      "id": "panel1-label",
+      "count": 2
+    },
+    {
+      "id": "panel2-label",
+      "count": 2
+    },
+    {
+      "id": "panel3-label",
+      "count": 2
+    },
+    {
+      "id": "panel4-label",
+      "count": 2
+    },
+    {
+      "id": "panel5-label",
+      "count": 2
+    },
+    {
+      "id": "panel6-label",
+      "count": 2
+    },
+    {
+      "id": "panel7-label",
+      "count": 2
+    },
+    {
+      "id": "panel8-label",
+      "count": 2
+    },
+    {
+      "id": "panel9-label",
+      "count": 2
+    },
+    {
+      "id": "panel10-label",
+      "count": 2
+    },
+    {
+      "id": "panel1",
+      "count": 2
+    },
+    {
+      "id": "sub-sub-tabs0",
+      "count": 2
+    },
+    {
+      "id": "panel11-label",
+      "count": 2
+    },
+    {
+      "id": "panel12-label",
+      "count": 2
+    },
+    {
+      "id": "panel13-label",
+      "count": 2
+    },
+    {
+      "id": "panel14-label",
+      "count": 2
+    },
+    {
+      "id": "panel15-label",
+      "count": 2
+    },
+    {
+      "id": "panel16-label",
+      "count": 2
+    },
+    {
+      "id": "panel11",
+      "count": 2
+    },
+    {
+      "id": "panel12",
+      "count": 2
+    },
+    {
+      "id": "panel13",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

@@ -1,0 +1,455 @@
+{
+  "domain": "experian.com",
+  "total_pages": 8,
+  "analyzed_at": "2025-11-07T14:35:32.074797",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 8,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 8,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 8,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 8,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 24,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 395,
+      "frequency": 49.375,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 6,
+      "frequency": 0.75,
+      "confidence": "medium"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 104,
+      "frequency": 13.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 90,
+      "frequency": 11.25,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "mb-0",
+      "count": 578
+    },
+    {
+      "class": "d-flex",
+      "count": 451
+    },
+    {
+      "class": "d-lg-none",
+      "count": 409
+    },
+    {
+      "class": "py-3",
+      "count": 328
+    },
+    {
+      "class": "list-unstyled",
+      "count": 299
+    },
+    {
+      "class": "body-text-sm",
+      "count": 295
+    },
+    {
+      "class": "align-items-center",
+      "count": 290
+    },
+    {
+      "class": "collapse",
+      "count": 290
+    },
+    {
+      "class": "collapsed",
+      "count": 288
+    },
+    {
+      "class": "accordion-item",
+      "count": 286
+    },
+    {
+      "class": "accordion-button",
+      "count": 286
+    },
+    {
+      "class": "accordion-collapse",
+      "count": 286
+    },
+    {
+      "class": "accordion-body",
+      "count": 286
+    },
+    {
+      "class": "position-relative",
+      "count": 232
+    },
+    {
+      "class": "h6",
+      "count": 208
+    },
+    {
+      "class": "container",
+      "count": 200
+    },
+    {
+      "class": "text-gray",
+      "count": 190
+    },
+    {
+      "class": "tabpanel-control",
+      "count": 184
+    },
+    {
+      "class": "advice-box",
+      "count": 184
+    },
+    {
+      "class": "pl-md-0",
+      "count": 184
+    },
+    {
+      "class": "icons-holder",
+      "count": 179
+    },
+    {
+      "class": "ms-3",
+      "count": 178
+    },
+    {
+      "class": "align-self-start",
+      "count": 168
+    },
+    {
+      "class": "icons-holder-md",
+      "count": 168
+    },
+    {
+      "class": "icons-holder-primary",
+      "count": 168
+    },
+    {
+      "class": "px-lg-6",
+      "count": 160
+    },
+    {
+      "class": "px-0",
+      "count": 160
+    },
+    {
+      "class": "stretched-link",
+      "count": 160
+    },
+    {
+      "class": "btn-reset",
+      "count": 159
+    },
+    {
+      "class": "btn",
+      "count": 138
+    },
+    {
+      "class": "eyebrow-text",
+      "count": 136
+    },
+    {
+      "class": "d-lg-flex",
+      "count": 128
+    },
+    {
+      "class": "w-100",
+      "count": 111
+    },
+    {
+      "class": "h7",
+      "count": 111
+    },
+    {
+      "class": "text-secondary",
+      "count": 109
+    },
+    {
+      "class": "flex-fill",
+      "count": 107
+    },
+    {
+      "class": "d-lg-block",
+      "count": 99
+    },
+    {
+      "class": "h5",
+      "count": 91
+    },
+    {
+      "class": "justify-content-lg-between",
+      "count": 88
+    },
+    {
+      "class": "mb-2",
+      "count": 82
+    },
+    {
+      "class": "text-center",
+      "count": 81
+    },
+    {
+      "class": "py-4",
+      "count": 79
+    },
+    {
+      "class": "accordion-header",
+      "count": 78
+    },
+    {
+      "class": "text-decoration-underline-hover",
+      "count": 77
+    },
+    {
+      "class": "bg-light",
+      "count": 72
+    },
+    {
+      "class": "ecs-font-icon-act-check",
+      "count": 67
+    },
+    {
+      "class": "p-0",
+      "count": 64
+    },
+    {
+      "class": "p-lg-6",
+      "count": 64
+    },
+    {
+      "class": "accordion-angle-icon",
+      "count": 64
+    },
+    {
+      "class": "accordion",
+      "count": 64
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "_gatsby-scripts-1",
+      "count": 16
+    },
+    {
+      "id": "sh-numlistingcount",
+      "count": 13
+    },
+    {
+      "id": "sh-zipcode-text",
+      "count": 13
+    },
+    {
+      "id": "user-agebucket",
+      "count": 13
+    },
+    {
+      "id": "global_nav_mbox",
+      "count": 8
+    },
+    {
+      "id": "global_public_mbox",
+      "count": 8
+    },
+    {
+      "id": "___gatsby",
+      "count": 8
+    },
+    {
+      "id": "gatsby-focus-wrapper",
+      "count": 8
+    },
+    {
+      "id": "nav-overlay",
+      "count": 8
+    },
+    {
+      "id": "header",
+      "count": 8
+    },
+    {
+      "id": "nav-full",
+      "count": 8
+    },
+    {
+      "id": "nav-full-search",
+      "count": 8
+    },
+    {
+      "id": "nav-full-search-input",
+      "count": 8
+    },
+    {
+      "id": "main-navigation",
+      "count": 8
+    },
+    {
+      "id": "rpt",
+      "count": 8
+    },
+    {
+      "id": "rpt-advtitle",
+      "count": 8
+    },
+    {
+      "id": "rpt-tab-wrap",
+      "count": 8
+    },
+    {
+      "id": "rpt-tab0",
+      "count": 8
+    },
+    {
+      "id": "rpt-tab1",
+      "count": 8
+    },
+    {
+      "id": "rpt-tab2",
+      "count": 8
+    },
+    {
+      "id": "rpt-tab3",
+      "count": 8
+    },
+    {
+      "id": "rpt-tab4",
+      "count": 8
+    },
+    {
+      "id": "itp",
+      "count": 8
+    },
+    {
+      "id": "itp-advtitle",
+      "count": 8
+    },
+    {
+      "id": "itp-tab-wrap",
+      "count": 8
+    },
+    {
+      "id": "itp-tab0",
+      "count": 8
+    },
+    {
+      "id": "itp-tab1",
+      "count": 8
+    },
+    {
+      "id": "itp-tab2",
+      "count": 8
+    },
+    {
+      "id": "itp-tab3",
+      "count": 8
+    },
+    {
+      "id": "mon",
+      "count": 8
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

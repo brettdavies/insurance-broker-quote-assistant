@@ -1,0 +1,455 @@
+{
+  "domain": "lifelanes.progressive.com",
+  "total_pages": 27,
+  "analyzed_at": "2025-11-07T14:35:27.699466",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 23,
+      "frequency": 0.852,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 27,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 27,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 27,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 100,
+      "frequency": 3.704,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 2,
+      "frequency": 0.074,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 189,
+      "frequency": 7.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 22,
+      "frequency": 0.815,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 404,
+      "frequency": 14.963,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 1,
+      "frequency": 0.037,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 142,
+      "frequency": 5.259,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 50,
+      "frequency": 1.852,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "sr-only",
+      "count": 343
+    },
+    {
+      "class": "link",
+      "count": 302
+    },
+    {
+      "class": "fill",
+      "count": 220
+    },
+    {
+      "class": "wrap",
+      "count": 182
+    },
+    {
+      "class": "nav-item",
+      "count": 166
+    },
+    {
+      "class": "social-link",
+      "count": 161
+    },
+    {
+      "class": "mx-auto",
+      "count": 146
+    },
+    {
+      "class": "sub-nav-item",
+      "count": 139
+    },
+    {
+      "class": "sub-nav-link",
+      "count": 139
+    },
+    {
+      "class": "h3-style",
+      "count": 113
+    },
+    {
+      "class": "title",
+      "count": 113
+    },
+    {
+      "class": "nav-link",
+      "count": 110
+    },
+    {
+      "class": "section-title",
+      "count": 108
+    },
+    {
+      "class": "sub-text",
+      "count": 108
+    },
+    {
+      "class": "mb-1",
+      "count": 104
+    },
+    {
+      "class": "border-bottom",
+      "count": 88
+    },
+    {
+      "class": "align-together",
+      "count": 88
+    },
+    {
+      "class": "mobile-only-text",
+      "count": 88
+    },
+    {
+      "class": "nav-item-text",
+      "count": 88
+    },
+    {
+      "class": "save-button",
+      "count": 80
+    },
+    {
+      "class": "saved",
+      "count": 80
+    },
+    {
+      "class": "bookmarked-img",
+      "count": 80
+    },
+    {
+      "class": "read-time",
+      "count": 80
+    },
+    {
+      "class": "container",
+      "count": 78
+    },
+    {
+      "class": "on-the-road",
+      "count": 66
+    },
+    {
+      "class": "inner",
+      "count": 63
+    },
+    {
+      "class": "article-card",
+      "count": 61
+    },
+    {
+      "class": "asset",
+      "count": 61
+    },
+    {
+      "class": "image",
+      "count": 58
+    },
+    {
+      "class": "article-card-content",
+      "count": 58
+    },
+    {
+      "class": "category-meta",
+      "count": 58
+    },
+    {
+      "class": "category-meta-left",
+      "count": 58
+    },
+    {
+      "class": "icon",
+      "count": 58
+    },
+    {
+      "class": "category-url",
+      "count": 58
+    },
+    {
+      "class": "category",
+      "count": 58
+    },
+    {
+      "class": "read",
+      "count": 58
+    },
+    {
+      "class": "article-title",
+      "count": 58
+    },
+    {
+      "class": "article-card-title",
+      "count": 58
+    },
+    {
+      "class": "item-list",
+      "count": 56
+    },
+    {
+      "class": "nav-list",
+      "count": 54
+    },
+    {
+      "class": "svg-def",
+      "count": 51
+    },
+    {
+      "class": "grid",
+      "count": 48
+    },
+    {
+      "class": "mobile-only",
+      "count": 44
+    },
+    {
+      "class": "flex-me",
+      "count": 44
+    },
+    {
+      "class": "logo-text",
+      "count": 44
+    },
+    {
+      "class": "mobile-nav-active",
+      "count": 44
+    },
+    {
+      "class": "btn",
+      "count": 44
+    },
+    {
+      "class": "grid-l6",
+      "count": 44
+    },
+    {
+      "class": "nav-util-item",
+      "count": 44
+    },
+    {
+      "class": "border-top",
+      "count": 44
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "boomr-scr-as",
+      "count": 44
+    },
+    {
+      "id": "time-tracking-start",
+      "count": 27
+    },
+    {
+      "id": "quantum-metrics",
+      "count": 27
+    },
+    {
+      "id": "bot-check",
+      "count": 27
+    },
+    {
+      "id": "appDynamics",
+      "count": 27
+    },
+    {
+      "id": "adrum",
+      "count": 27
+    },
+    {
+      "id": "adrum-commands",
+      "count": 27
+    },
+    {
+      "id": "ScreenReaderText",
+      "count": 27
+    },
+    {
+      "id": "panelNav",
+      "count": 27
+    },
+    {
+      "id": "exploreButton",
+      "count": 27
+    },
+    {
+      "id": "claimsButton",
+      "count": 27
+    },
+    {
+      "id": "aboutButton",
+      "count": 27
+    },
+    {
+      "id": "resourcesButton",
+      "count": 27
+    },
+    {
+      "id": "__nuxt",
+      "count": 27
+    },
+    {
+      "id": "svg-right-arrow",
+      "count": 27
+    },
+    {
+      "id": "header",
+      "count": 27
+    },
+    {
+      "id": "skipContent",
+      "count": 27
+    },
+    {
+      "id": "headerNav",
+      "count": 27
+    },
+    {
+      "id": "NavMenu",
+      "count": 27
+    },
+    {
+      "id": "utility",
+      "count": 27
+    },
+    {
+      "id": "SiteSearchInput",
+      "count": 27
+    },
+    {
+      "id": "teleports",
+      "count": 27
+    },
+    {
+      "id": "__NUXT_DATA__",
+      "count": 27
+    },
+    {
+      "id": "megroups",
+      "count": 23
+    },
+    {
+      "id": "monetate",
+      "count": 23
+    },
+    {
+      "id": "main",
+      "count": 23
+    },
+    {
+      "id": "neustar-adscore",
+      "count": 23
+    },
+    {
+      "id": "lifelanes-dropdown",
+      "count": 22
+    },
+    {
+      "id": "Group_20964",
+      "count": 22
+    },
+    {
+      "id": "Path_137088",
+      "count": 22
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

@@ -1,0 +1,456 @@
+{
+  "domain": "propertyinsurancecoveragelaw.com",
+  "total_pages": 4,
+  "analyzed_at": "2025-11-07T14:35:33.868443",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 16,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 4,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 4,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 4,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 4,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 4,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 4,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 12,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 4,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 81,
+      "frequency": 20.25,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 2,
+      "frequency": 0.5,
+      "confidence": "medium"
+    },
+    {
+      "pattern": "banner",
+      "count": 6,
+      "frequency": 1.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 4,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 8,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 48,
+      "frequency": 12.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 276,
+      "frequency": 69.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "input",
+      "count": 96
+    },
+    {
+      "class": "field",
+      "count": 92
+    },
+    {
+      "class": "hs-form-field",
+      "count": 92
+    },
+    {
+      "class": "hs-input",
+      "count": 92
+    },
+    {
+      "class": "row",
+      "count": 57
+    },
+    {
+      "class": "col-lg-4",
+      "count": 56
+    },
+    {
+      "class": "hs-fieldtype-text",
+      "count": 56
+    },
+    {
+      "class": "col-6",
+      "count": 52
+    },
+    {
+      "class": "col-xl-3",
+      "count": 52
+    },
+    {
+      "class": "form-columns-1",
+      "count": 48
+    },
+    {
+      "class": "hs-form-required",
+      "count": 48
+    },
+    {
+      "class": "container",
+      "count": 33
+    },
+    {
+      "class": "menu-item",
+      "count": 32
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 32
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 32
+    },
+    {
+      "class": "mb-15",
+      "count": 32
+    },
+    {
+      "class": "img-fluid",
+      "count": 29
+    },
+    {
+      "class": "col-md-6",
+      "count": 26
+    },
+    {
+      "class": "mb-3",
+      "count": 25
+    },
+    {
+      "class": "m-0",
+      "count": 25
+    },
+    {
+      "class": "fab",
+      "count": 24
+    },
+    {
+      "class": "fa-sr-only",
+      "count": 24
+    },
+    {
+      "class": "hs-fieldtype-select",
+      "count": 24
+    },
+    {
+      "class": "mt-0",
+      "count": 21
+    },
+    {
+      "class": "plain",
+      "count": 20
+    },
+    {
+      "class": "mb-1",
+      "count": 20
+    },
+    {
+      "class": "form-columns-2",
+      "count": 20
+    },
+    {
+      "class": "text-navy",
+      "count": 17
+    },
+    {
+      "class": "post-meta",
+      "count": 17
+    },
+    {
+      "class": "date",
+      "count": 17
+    },
+    {
+      "class": "featured-image-wrapper",
+      "count": 17
+    },
+    {
+      "class": "featured-image",
+      "count": 17
+    },
+    {
+      "class": "lazyload",
+      "count": 17
+    },
+    {
+      "class": "logo",
+      "count": 16
+    },
+    {
+      "class": "fa-sharp",
+      "count": 16
+    },
+    {
+      "class": "col",
+      "count": 16
+    },
+    {
+      "class": "post",
+      "count": 16
+    },
+    {
+      "class": "type-post",
+      "count": 16
+    },
+    {
+      "class": "status-publish",
+      "count": 16
+    },
+    {
+      "class": "format-standard",
+      "count": 16
+    },
+    {
+      "class": "has-post-thumbnail",
+      "count": 16
+    },
+    {
+      "class": "hentry",
+      "count": 16
+    },
+    {
+      "class": "text-wrapper",
+      "count": 16
+    },
+    {
+      "class": "text-center",
+      "count": 16
+    },
+    {
+      "class": "col-md-4",
+      "count": 16
+    },
+    {
+      "class": "go2417249464",
+      "count": 16
+    },
+    {
+      "class": "mt-3",
+      "count": 13
+    },
+    {
+      "class": "post-item",
+      "count": 13
+    },
+    {
+      "class": "article-title",
+      "count": 13
+    },
+    {
+      "class": "mm-listitem",
+      "count": 12
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "6137185",
+      "count": 20
+    },
+    {
+      "id": "hsForm_61d52936-6d9c-4cde-abd1-5e878a354cdd",
+      "count": 8
+    },
+    {
+      "id": "hsForm_86d7e2fc-7aaf-43eb-91d8-1de023c224c5",
+      "count": 8
+    },
+    {
+      "id": "hsForm_725a4cc3-6003-41d7-9af3-c5df7d6b5776",
+      "count": 8
+    },
+    {
+      "id": "hs-ads-pixel-6137185",
+      "count": 4
+    },
+    {
+      "id": "hubspot-web-interactives-loader",
+      "count": 4
+    },
+    {
+      "id": "CollectedForms-6137185",
+      "count": 4
+    },
+    {
+      "id": "hs-analytics",
+      "count": 4
+    },
+    {
+      "id": "cookieBanner-6137185",
+      "count": 4
+    },
+    {
+      "id": "googlefonts-css",
+      "count": 4
+    },
+    {
+      "id": "adobefonts-css",
+      "count": 4
+    },
+    {
+      "id": "fontawesome-css-css",
+      "count": 4
+    },
+    {
+      "id": "fontawesome-brands-css-css",
+      "count": 4
+    },
+    {
+      "id": "fontawesome-sharp-solid-css-css",
+      "count": 4
+    },
+    {
+      "id": "fontawesome-sharp-light-css-css",
+      "count": 4
+    },
+    {
+      "id": "vendor-css-css",
+      "count": 4
+    },
+    {
+      "id": "theme-css-css",
+      "count": 4
+    },
+    {
+      "id": "jquery-core-js",
+      "count": 4
+    },
+    {
+      "id": "jquery-migrate-js",
+      "count": 4
+    },
+    {
+      "id": "blog-post",
+      "count": 4
+    },
+    {
+      "id": "wp-custom-css",
+      "count": 4
+    },
+    {
+      "id": "_goober",
+      "count": 4
+    },
+    {
+      "id": "recaptcha",
+      "count": 4
+    },
+    {
+      "id": "hs-web-interactives-top-push-anchor",
+      "count": 4
+    },
+    {
+      "id": "mmenu",
+      "count": 4
+    },
+    {
+      "id": "mobile-menu",
+      "count": 4
+    },
+    {
+      "id": "menu-item-36120",
+      "count": 4
+    },
+    {
+      "id": "menu-item-36121",
+      "count": 4
+    },
+    {
+      "id": "menu-item-36119",
+      "count": 4
+    },
+    {
+      "id": "mm-0",
+      "count": 4
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main, [role=\"main\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"ads\"], [id*=\"ads\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

@@ -1,0 +1,456 @@
+{
+  "domain": "insurify.com",
+  "total_pages": 60,
+  "analyzed_at": "2025-11-07T14:32:22.426652",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 654,
+      "frequency": 10.9,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 60,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 357,
+      "frequency": 5.95,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 60,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 60,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 60,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 8141,
+      "frequency": 135.683,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 60,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 125,
+      "frequency": 2.083,
+      "confidence": "high"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "noPadding",
+      "count": 8017
+    },
+    {
+      "class": "b5_kG",
+      "count": 7920
+    },
+    {
+      "class": "lt-col",
+      "count": 2325
+    },
+    {
+      "class": "b6_kH",
+      "count": 1920
+    },
+    {
+      "class": "b6_kM",
+      "count": 1920
+    },
+    {
+      "class": "lt-span-4-sm",
+      "count": 1632
+    },
+    {
+      "class": "r_bD",
+      "count": 1592
+    },
+    {
+      "class": "b6_kJ",
+      "count": 1560
+    },
+    {
+      "class": "lt-vstack",
+      "count": 1411
+    },
+    {
+      "class": "lt-flex-col",
+      "count": 1379
+    },
+    {
+      "class": "B_cp",
+      "count": 1320
+    },
+    {
+      "class": "r_bR",
+      "count": 1316
+    },
+    {
+      "class": "lt-content",
+      "count": 1221
+    },
+    {
+      "class": "z_cp",
+      "count": 1120
+    },
+    {
+      "class": "divider",
+      "count": 1075
+    },
+    {
+      "class": "dollar",
+      "count": 1060
+    },
+    {
+      "class": "r_bH",
+      "count": 977
+    },
+    {
+      "class": "lt-span-4-md",
+      "count": 939
+    },
+    {
+      "class": "lt-hstack",
+      "count": 896
+    },
+    {
+      "class": "bB_hn",
+      "count": 882
+    },
+    {
+      "class": "lt-flow",
+      "count": 865
+    },
+    {
+      "class": "cq_l5",
+      "count": 847
+    },
+    {
+      "class": "b7_kQ",
+      "count": 840
+    },
+    {
+      "class": "b7_j1",
+      "count": 840
+    },
+    {
+      "class": "b7_kR",
+      "count": 840
+    },
+    {
+      "class": "b7_kT",
+      "count": 840
+    },
+    {
+      "class": "b7_kS",
+      "count": 840
+    },
+    {
+      "class": "cq_l6",
+      "count": 783
+    },
+    {
+      "class": "numeric",
+      "count": 744
+    },
+    {
+      "class": "lt-row",
+      "count": 683
+    },
+    {
+      "class": "lt-span-12",
+      "count": 670
+    },
+    {
+      "class": "lt-span-6",
+      "count": 665
+    },
+    {
+      "class": "lt-row--itm-center",
+      "count": 655
+    },
+    {
+      "class": "m_2",
+      "count": 613
+    },
+    {
+      "class": "m_6",
+      "count": 613
+    },
+    {
+      "class": "m_8",
+      "count": 613
+    },
+    {
+      "class": "m_5",
+      "count": 591
+    },
+    {
+      "class": "cq_l2",
+      "count": 586
+    },
+    {
+      "class": "lt-align-center",
+      "count": 571
+    },
+    {
+      "class": "cb_kZ",
+      "count": 545
+    },
+    {
+      "class": "Z_ft",
+      "count": 523
+    },
+    {
+      "class": "lt-span-8-md",
+      "count": 521
+    },
+    {
+      "class": "Z_fw",
+      "count": 499
+    },
+    {
+      "class": "highcharts-point",
+      "count": 498
+    },
+    {
+      "class": "b6_kP",
+      "count": 480
+    },
+    {
+      "class": "b6_kN",
+      "count": 480
+    },
+    {
+      "class": "b6_kL",
+      "count": 480
+    },
+    {
+      "class": "cq_l3",
+      "count": 454
+    },
+    {
+      "class": "cq_ft",
+      "count": 452
+    },
+    {
+      "class": "d_q",
+      "count": 435
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "clip0_12912_7459",
+      "count": 207
+    },
+    {
+      "id": "zipcodeInputMoneybox",
+      "count": 158
+    },
+    {
+      "id": "tocWrapper",
+      "count": 120
+    },
+    {
+      "id": "_gatsby-scripts-1",
+      "count": 120
+    },
+    {
+      "id": "closeModalBtn",
+      "count": 119
+    },
+    {
+      "id": "faq",
+      "count": 116
+    },
+    {
+      "id": "ld-carrier",
+      "count": 86
+    },
+    {
+      "id": "ld-article",
+      "count": 60
+    },
+    {
+      "id": "gtag-script",
+      "count": 60
+    },
+    {
+      "id": "gtag-init",
+      "count": 60
+    },
+    {
+      "id": "gtm",
+      "count": 60
+    },
+    {
+      "id": "ld-generic",
+      "count": 60
+    },
+    {
+      "id": "___gatsby",
+      "count": 60
+    },
+    {
+      "id": "gatsby-focus-wrapper",
+      "count": 60
+    },
+    {
+      "id": "nav-logo",
+      "count": 60
+    },
+    {
+      "id": "clip0_76_216",
+      "count": 60
+    },
+    {
+      "id": "clip0_76_219",
+      "count": 60
+    },
+    {
+      "id": "clip0_76_228",
+      "count": 60
+    },
+    {
+      "id": "clip0_76_222",
+      "count": 60
+    },
+    {
+      "id": "clip0_74_197",
+      "count": 60
+    },
+    {
+      "id": "clip0_74_232",
+      "count": 60
+    },
+    {
+      "id": "iub-pref-choices-link",
+      "count": 60
+    },
+    {
+      "id": "gatsby-announcer",
+      "count": 60
+    },
+    {
+      "id": "wrapfabtest",
+      "count": 60
+    },
+    {
+      "id": "lux-setup",
+      "count": 60
+    },
+    {
+      "id": "lux-cdn",
+      "count": 60
+    },
+    {
+      "id": "gatsby-script-loader",
+      "count": 60
+    },
+    {
+      "id": "gatsby-chunk-mapping",
+      "count": 60
+    },
+    {
+      "id": "ld-breadcrumb",
+      "count": 59
+    },
+    {
+      "id": "ld-faq",
+      "count": 58
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"tracker\"], [id*=\"tracker\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

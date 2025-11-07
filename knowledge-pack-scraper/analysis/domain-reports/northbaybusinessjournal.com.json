@@ -1,0 +1,455 @@
+{
+  "domain": "northbaybusinessjournal.com",
+  "total_pages": 2,
+  "analyzed_at": "2025-11-07T14:35:36.428070",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 4,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 6,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 57,
+      "frequency": 28.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 290,
+      "frequency": 145.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 4,
+      "frequency": 2.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-item",
+      "count": 244
+    },
+    {
+      "class": "menu-large",
+      "count": 150
+    },
+    {
+      "class": "menu-item-type-taxonomy",
+      "count": 122
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 90
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 90
+    },
+    {
+      "class": "menu-item-object-category",
+      "count": 88
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 32
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 32
+    },
+    {
+      "class": "menu-item-object-post_tag",
+      "count": 30
+    },
+    {
+      "class": "menu-item-has-children",
+      "count": 26
+    },
+    {
+      "class": "sub-menu",
+      "count": 18
+    },
+    {
+      "class": "entry-title",
+      "count": 12
+    },
+    {
+      "class": "article-title",
+      "count": 12
+    },
+    {
+      "class": "dfm-title",
+      "count": 12
+    },
+    {
+      "class": "menu",
+      "count": 10
+    },
+    {
+      "class": "show-digisubs-push",
+      "count": 10
+    },
+    {
+      "class": "metered",
+      "count": 10
+    },
+    {
+      "class": "pushnav",
+      "count": 8
+    },
+    {
+      "class": "subscribe-special",
+      "count": 8
+    },
+    {
+      "class": "custom-button",
+      "count": 8
+    },
+    {
+      "class": "dfp-ad",
+      "count": 8
+    },
+    {
+      "class": "htl-ad",
+      "count": 8
+    },
+    {
+      "class": "htl-ad-gpt",
+      "count": 8
+    },
+    {
+      "class": "expander",
+      "count": 8
+    },
+    {
+      "class": "icon-plus",
+      "count": 8
+    },
+    {
+      "class": "footer-menu",
+      "count": 8
+    },
+    {
+      "class": "icon-search",
+      "count": 6
+    },
+    {
+      "class": "osano-cm-close",
+      "count": 4
+    },
+    {
+      "class": "osano-cm-content__link",
+      "count": 4
+    },
+    {
+      "class": "osano-cm-link",
+      "count": 4
+    },
+    {
+      "class": "osano-cm-widget__outline",
+      "count": 4
+    },
+    {
+      "class": "osano-cm-outline",
+      "count": 4
+    },
+    {
+      "class": "headroom--top",
+      "count": 4
+    },
+    {
+      "class": "headroom",
+      "count": 4
+    },
+    {
+      "class": "border-container",
+      "count": 4
+    },
+    {
+      "class": "subscribe-button",
+      "count": 4
+    },
+    {
+      "class": "accuweather-wrap",
+      "count": 4
+    },
+    {
+      "class": "weather-date",
+      "count": 4
+    },
+    {
+      "class": "dfm_accuweather_current_conditions",
+      "count": 4
+    },
+    {
+      "class": "bi-clouds",
+      "count": 4
+    },
+    {
+      "class": "date",
+      "count": 4
+    },
+    {
+      "class": "e-edition",
+      "count": 4
+    },
+    {
+      "class": "menu-item-object-location",
+      "count": 4
+    },
+    {
+      "class": "newsletter-nav",
+      "count": 4
+    },
+    {
+      "class": "newsletter-simple",
+      "count": 4
+    },
+    {
+      "class": "newsletter-item",
+      "count": 4
+    },
+    {
+      "class": "prompt",
+      "count": 4
+    },
+    {
+      "class": "sign-up-button",
+      "count": 4
+    },
+    {
+      "class": "hidden-logo",
+      "count": 4
+    },
+    {
+      "class": "logo",
+      "count": 4
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "multimedia",
+      "count": 4
+    },
+    {
+      "id": "app-name",
+      "count": 2
+    },
+    {
+      "id": "_mljs",
+      "count": 2
+    },
+    {
+      "id": "__htl_style-css",
+      "count": 2
+    },
+    {
+      "id": "wp-emoji-styles-inline-css",
+      "count": 2
+    },
+    {
+      "id": "digisubs_plugin_css-css",
+      "count": 2
+    },
+    {
+      "id": "mason-fonts-css",
+      "count": 2
+    },
+    {
+      "id": "dfm-accuweather-bootstrap-icons-css",
+      "count": 2
+    },
+    {
+      "id": "auth0-session-storage-js-before",
+      "count": 2
+    },
+    {
+      "id": "auth0-session-storage-js",
+      "count": 2
+    },
+    {
+      "id": "osano-js",
+      "count": 2
+    },
+    {
+      "id": "jquery-js",
+      "count": 2
+    },
+    {
+      "id": "jquery-js-after",
+      "count": 2
+    },
+    {
+      "id": "__htl_script-js",
+      "count": 2
+    },
+    {
+      "id": "__htl_script-js-after",
+      "count": 2
+    },
+    {
+      "id": "mg2_loader_loader-js-extra",
+      "count": 2
+    },
+    {
+      "id": "mg2_loader_loader-js",
+      "count": 2
+    },
+    {
+      "id": "mg2_loader_loader-js-after",
+      "count": 2
+    },
+    {
+      "id": "digisubs_settings-js-extra",
+      "count": 2
+    },
+    {
+      "id": "connext_utils-js-extra",
+      "count": 2
+    },
+    {
+      "id": "auth0_sdk-js",
+      "count": 2
+    },
+    {
+      "id": "mng_sophi-js-extra",
+      "count": 2
+    },
+    {
+      "id": "p468-js",
+      "count": 2
+    },
+    {
+      "id": "mng_apple-js-extra",
+      "count": 2
+    },
+    {
+      "id": "cnx-init-script",
+      "count": 2
+    },
+    {
+      "id": "htl-mobile-adhesion-override",
+      "count": 2
+    },
+    {
+      "id": "customizer-styles",
+      "count": 2
+    },
+    {
+      "id": "ntv_iiq_script",
+      "count": 2
+    },
+    {
+      "id": "osano-cm-aria.newWindow",
+      "count": 2
+    },
+    {
+      "id": "osano-cm-aria.external",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "main, [role=\"main\"]",
+    "excluded_selector": "[class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

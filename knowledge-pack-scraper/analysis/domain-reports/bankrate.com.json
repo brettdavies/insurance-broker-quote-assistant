@@ -1,0 +1,455 @@
+{
+  "domain": "bankrate.com",
+  "total_pages": 115,
+  "analyzed_at": "2025-11-07T14:29:17.332617",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 32,
+      "frequency": 0.278,
+      "confidence": "low"
+    },
+    {
+      "selector": "main",
+      "count": 112,
+      "frequency": 0.974,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 146,
+      "frequency": 1.27,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 115,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 491,
+      "frequency": 4.27,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 28,
+      "frequency": 0.243,
+      "confidence": "low"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 2078,
+      "frequency": 18.07,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 13810,
+      "frequency": 120.087,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 4,
+      "frequency": 0.035,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 184,
+      "frequency": 1.6,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 60,
+      "frequency": 0.522,
+      "confidence": "medium"
+    },
+    {
+      "pattern": "comment",
+      "count": 56,
+      "frequency": 0.487,
+      "confidence": "low"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 84,
+      "frequency": 0.73,
+      "confidence": "medium"
+    },
+    {
+      "pattern": "menu",
+      "count": 42,
+      "frequency": 0.365,
+      "confidence": "low"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 611,
+      "frequency": 5.313,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 4528,
+      "frequency": 39.374,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "border-b",
+      "count": 47186
+    },
+    {
+      "class": "hidden",
+      "count": 46324
+    },
+    {
+      "class": "border-gray-400",
+      "count": 44613
+    },
+    {
+      "class": "mb-3",
+      "count": 41670
+    },
+    {
+      "class": "insurance-state-rates__city",
+      "count": 40937
+    },
+    {
+      "class": "text-green-600",
+      "count": 31412
+    },
+    {
+      "class": "flex",
+      "count": 23093
+    },
+    {
+      "class": "icon-base",
+      "count": 19008
+    },
+    {
+      "class": "text-gray-900",
+      "count": 15016
+    },
+    {
+      "class": "font-bold",
+      "count": 13290
+    },
+    {
+      "class": "items-center",
+      "count": 13095
+    },
+    {
+      "class": "Icon",
+      "count": 12844
+    },
+    {
+      "class": "text-sm",
+      "count": 11743
+    },
+    {
+      "class": "text-gray-700",
+      "count": 11339
+    },
+    {
+      "class": "SiteNavSecondaryLink",
+      "count": 11270
+    },
+    {
+      "class": "insurance-coverage-table--td",
+      "count": 10791
+    },
+    {
+      "class": "w-full",
+      "count": 10089
+    },
+    {
+      "class": "text-red-600",
+      "count": 9602
+    },
+    {
+      "class": "text-right",
+      "count": 9359
+    },
+    {
+      "class": "block",
+      "count": 8349
+    },
+    {
+      "class": "SiteNavPrimaryLinkList-item",
+      "count": 8280
+    },
+    {
+      "class": "SiteNavPrimaryLink",
+      "count": 8280
+    },
+    {
+      "class": "{",
+      "count": 7558
+    },
+    {
+      "class": "}",
+      "count": 7558
+    },
+    {
+      "class": "Link",
+      "count": 7494
+    },
+    {
+      "class": "Icon--xs",
+      "count": 6874
+    },
+    {
+      "class": "text-left",
+      "count": 6737
+    },
+    {
+      "class": "text-blue-600",
+      "count": 6011
+    },
+    {
+      "class": "flex-col",
+      "count": 6000
+    },
+    {
+      "class": "Icon-glyph",
+      "count": 5835
+    },
+    {
+      "class": "star-rating__icon",
+      "count": 5670
+    },
+    {
+      "class": "py-3",
+      "count": 5260
+    },
+    {
+      "class": "inline-flex",
+      "count": 5149
+    },
+    {
+      "class": "Button",
+      "count": 5031
+    },
+    {
+      "class": "rounded",
+      "count": 4992
+    },
+    {
+      "class": "SiteNavFeaturedLink",
+      "count": 4945
+    },
+    {
+      "class": "SiteNavFeaturedLink-image",
+      "count": 4945
+    },
+    {
+      "class": "SiteNavFeaturedLink-content",
+      "count": 4945
+    },
+    {
+      "class": "SiteNavFeaturedLink-mainText",
+      "count": 4945
+    },
+    {
+      "class": "SiteNavFeaturedLink-supportText",
+      "count": 4945
+    },
+    {
+      "class": "text-xs",
+      "count": 4784
+    },
+    {
+      "class": "mb-0",
+      "count": 4548
+    },
+    {
+      "class": "sr-only",
+      "count": 4546
+    },
+    {
+      "class": "wysiwyg",
+      "count": 4443
+    },
+    {
+      "class": "hover:text-blue-600",
+      "count": 4216
+    },
+    {
+      "class": "'is-active':",
+      "count": 4140
+    },
+    {
+      "class": "sticky",
+      "count": 4102
+    },
+    {
+      "class": "Icon--sm",
+      "count": 4074
+    },
+    {
+      "class": "?",
+      "count": 4049
+    },
+    {
+      "class": ":",
+      "count": 4049
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "2",
+      "count": 29983
+    },
+    {
+      "id": "3",
+      "count": 5053
+    },
+    {
+      "id": "$id('subcategory', whichChild($el, $el.parentElement))",
+      "count": 2760
+    },
+    {
+      "id": "5",
+      "count": 1390
+    },
+    {
+      "id": "['subcategory']",
+      "count": 805
+    },
+    {
+      "id": "['input']",
+      "count": 361
+    },
+    {
+      "id": "$id('input')",
+      "count": 296
+    },
+    {
+      "id": "$id('tab', whichChild($el.parentElement, $refs.tablist))",
+      "count": 268
+    },
+    {
+      "id": "editorial-integrity",
+      "count": 230
+    },
+    {
+      "id": "how-we-make-money",
+      "count": 230
+    },
+    {
+      "id": "TocModal",
+      "count": 224
+    },
+    {
+      "id": "insurance-disclosure",
+      "count": 218
+    },
+    {
+      "id": "$id('toggletab', whichChild($el.parentElement, $refs.toggletablist))",
+      "count": 160
+    },
+    {
+      "id": "life-insurance-disclosure",
+      "count": 156
+    },
+    {
+      "id": "open_close_accordion_shelf_toc",
+      "count": 150
+    },
+    {
+      "id": "['radio-input']",
+      "count": 144
+    },
+    {
+      "id": "$id('radio-input')",
+      "count": 144
+    },
+    {
+      "id": "['tab']",
+      "count": 136
+    },
+    {
+      "id": "frequently-asked-questions",
+      "count": 135
+    },
+    {
+      "id": "methodology",
+      "count": 125
+    },
+    {
+      "id": "faqs",
+      "count": 121
+    },
+    {
+      "id": "tb_tfa_script",
+      "count": 115
+    },
+    {
+      "id": "category-1",
+      "count": 115
+    },
+    {
+      "id": "siteNavCategory-flyout-banking",
+      "count": 115
+    },
+    {
+      "id": "banking-tablist",
+      "count": 115
+    },
+    {
+      "id": "category-2",
+      "count": 115
+    },
+    {
+      "id": "siteNavCategory-flyout-mortgages",
+      "count": 115
+    },
+    {
+      "id": "mortgages-tablist",
+      "count": 115
+    },
+    {
+      "id": "category-3",
+      "count": 115
+    },
+    {
+      "id": "siteNavCategory-flyout-investing",
+      "count": 115
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"tracker\"], [id*=\"tracker\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

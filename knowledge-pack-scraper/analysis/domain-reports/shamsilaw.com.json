@@ -1,0 +1,455 @@
+{
+  "domain": "shamsilaw.com",
+  "total_pages": 2,
+  "analyzed_at": "2025-11-07T14:35:35.151594",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 10,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 102,
+      "frequency": 51.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 286,
+      "frequency": 143.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 30,
+      "frequency": 15.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-item",
+      "count": 204
+    },
+    {
+      "class": "bricks-menu-item",
+      "count": 204
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 132
+    },
+    {
+      "class": "brxe-div",
+      "count": 104
+    },
+    {
+      "class": "menu-item-object-practice-areas",
+      "count": 86
+    },
+    {
+      "class": "brxe-heading",
+      "count": 46
+    },
+    {
+      "class": "brxe-container",
+      "count": 40
+    },
+    {
+      "class": "text--white",
+      "count": 40
+    },
+    {
+      "class": "fas",
+      "count": 38
+    },
+    {
+      "class": "brxe-text-link",
+      "count": 38
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 36
+    },
+    {
+      "class": "css-filter",
+      "count": 34
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 32
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 32
+    },
+    {
+      "class": "n9__link_hover_white_op",
+      "count": 32
+    },
+    {
+      "class": "brxe-image",
+      "count": 30
+    },
+    {
+      "class": "text--400",
+      "count": 30
+    },
+    {
+      "class": "size-large",
+      "count": 26
+    },
+    {
+      "class": "brxe-txulqp",
+      "count": 26
+    },
+    {
+      "class": "brxe-xdaslg",
+      "count": 26
+    },
+    {
+      "class": "n9__dot_list",
+      "count": 26
+    },
+    {
+      "class": "icon",
+      "count": 26
+    },
+    {
+      "class": "fa-circle",
+      "count": 26
+    },
+    {
+      "class": "text",
+      "count": 26
+    },
+    {
+      "class": "brxe-section",
+      "count": 24
+    },
+    {
+      "class": "brxe-icon",
+      "count": 24
+    },
+    {
+      "class": "menu-item-has-children",
+      "count": 24
+    },
+    {
+      "class": "sub-menu",
+      "count": 24
+    },
+    {
+      "class": "box-shadow--m",
+      "count": 24
+    },
+    {
+      "class": "item",
+      "count": 24
+    },
+    {
+      "class": "menu-item-type-post_type_archive",
+      "count": 22
+    },
+    {
+      "class": "gap--s",
+      "count": 22
+    },
+    {
+      "class": "width--full",
+      "count": 20
+    },
+    {
+      "class": "brxe-text",
+      "count": 20
+    },
+    {
+      "class": "primary_icon",
+      "count": 20
+    },
+    {
+      "class": "menu-item-object-locations",
+      "count": 20
+    },
+    {
+      "class": "text--center",
+      "count": 20
+    },
+    {
+      "class": "menu-item-type-taxonomy",
+      "count": 18
+    },
+    {
+      "class": "menu-item-object-category",
+      "count": 18
+    },
+    {
+      "class": "brxe-block",
+      "count": 18
+    },
+    {
+      "class": "bg--white",
+      "count": 16
+    },
+    {
+      "class": "brx-submenu-toggle",
+      "count": 16
+    },
+    {
+      "class": "icon-right",
+      "count": 16
+    },
+    {
+      "class": "menu-item-icon",
+      "count": 16
+    },
+    {
+      "class": "brxe-xzhhwr",
+      "count": 16
+    },
+    {
+      "class": "justify-content--center",
+      "count": 14
+    },
+    {
+      "class": "pad--m",
+      "count": 14
+    },
+    {
+      "class": "gap--xs",
+      "count": 14
+    },
+    {
+      "class": "ff-t-cell",
+      "count": 14
+    },
+    {
+      "class": "flex--row",
+      "count": 12
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "false",
+      "count": 10
+    },
+    {
+      "id": "yaorjg",
+      "count": 4
+    },
+    {
+      "id": "brxe-xxmqno",
+      "count": 4
+    },
+    {
+      "id": "brxe-apdcal",
+      "count": 4
+    },
+    {
+      "id": "brxe-ulzmng",
+      "count": 4
+    },
+    {
+      "id": "wpr-usedcss",
+      "count": 2
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 2
+    },
+    {
+      "id": "wpgb-head-inline-css",
+      "count": 2
+    },
+    {
+      "id": "bricks-frontend-inline-css",
+      "count": 2
+    },
+    {
+      "id": "bricks-frontend-inline-inline-css",
+      "count": 2
+    },
+    {
+      "id": "apbct-public-bundle_gathering.min-js-js",
+      "count": 2
+    },
+    {
+      "id": "jquery-core-js",
+      "count": 2
+    },
+    {
+      "id": "seo-automated-link-building-js-extra",
+      "count": 2
+    },
+    {
+      "id": "seo-automated-link-building-js",
+      "count": 2
+    },
+    {
+      "id": "color-scheme-switcher-frontend-js-extra",
+      "count": 2
+    },
+    {
+      "id": "color-scheme-switcher-frontend-js",
+      "count": 2
+    },
+    {
+      "id": "wpsp-style-frontend",
+      "count": 2
+    },
+    {
+      "id": "wp-custom-css",
+      "count": 2
+    },
+    {
+      "id": "rocket-lazyload-nojs-css",
+      "count": 2
+    },
+    {
+      "id": "rocket-lazyrender-inline-css",
+      "count": 2
+    },
+    {
+      "id": "wpr-lazyload-bg-container",
+      "count": 2
+    },
+    {
+      "id": "wpr-lazyload-bg-exclusion",
+      "count": 2
+    },
+    {
+      "id": "wpr-lazyload-bg-nostyle",
+      "count": 2
+    },
+    {
+      "id": "brx-header",
+      "count": 2
+    },
+    {
+      "id": "brxe-nmcmrl",
+      "count": 2
+    },
+    {
+      "id": "brxe-zqsnxk",
+      "count": 2
+    },
+    {
+      "id": "brxe-tmwqzq",
+      "count": 2
+    },
+    {
+      "id": "brxe-acotse",
+      "count": 2
+    },
+    {
+      "id": "brxe-txnksp",
+      "count": 2
+    },
+    {
+      "id": "brxe-fbcbxd",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class*=\"ad\"], [id*=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

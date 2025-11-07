@@ -1,0 +1,455 @@
+{
+  "domain": "amica.com",
+  "total_pages": 5,
+  "analyzed_at": "2025-11-07T14:35:32.928246",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 5,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 5,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 5,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 15,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 5,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 257,
+      "frequency": 51.4,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 5,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 40,
+      "frequency": 8.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 65,
+      "frequency": 13.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 65,
+      "frequency": 13.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "cmp-list__item-title",
+      "count": 260
+    },
+    {
+      "class": "cmp-list__item-link",
+      "count": 245
+    },
+    {
+      "class": "cmp-list__item",
+      "count": 210
+    },
+    {
+      "class": "list-unstyled",
+      "count": 160
+    },
+    {
+      "class": "aem-GridColumn",
+      "count": 157
+    },
+    {
+      "class": "sr-only",
+      "count": 130
+    },
+    {
+      "class": "hidden",
+      "count": 130
+    },
+    {
+      "class": "icon",
+      "count": 130
+    },
+    {
+      "class": "dropdown-item",
+      "count": 120
+    },
+    {
+      "class": "global-typography",
+      "count": 106
+    },
+    {
+      "class": "aem-GridColumn--default--12",
+      "count": 94
+    },
+    {
+      "class": "list-inline-item",
+      "count": 80
+    },
+    {
+      "class": "textimage-text",
+      "count": 76
+    },
+    {
+      "class": "aem-GridColumn--MD--none",
+      "count": 68
+    },
+    {
+      "class": "container",
+      "count": 65
+    },
+    {
+      "class": "aem-GridColumn--default--none",
+      "count": 64
+    },
+    {
+      "class": "aem-GridColumn--offset--SM--0",
+      "count": 63
+    },
+    {
+      "class": "aem-GridColumn--offset--default--2",
+      "count": 63
+    },
+    {
+      "class": "aem-GridColumn--offset--MD--1",
+      "count": 63
+    },
+    {
+      "class": "aem-GridColumn--offset--XS--0",
+      "count": 63
+    },
+    {
+      "class": "aem-GridColumn--SM--none",
+      "count": 63
+    },
+    {
+      "class": "aem-GridColumn--default--8",
+      "count": 63
+    },
+    {
+      "class": "aem-GridColumn--XS--none",
+      "count": 63
+    },
+    {
+      "class": "aem-GridColumn--SM--12",
+      "count": 63
+    },
+    {
+      "class": "aem-GridColumn--XS--12",
+      "count": 63
+    },
+    {
+      "class": "aem-GridColumn--MD--10",
+      "count": 63
+    },
+    {
+      "class": "icon-error-triangle",
+      "count": 60
+    },
+    {
+      "class": "product-icon",
+      "count": 60
+    },
+    {
+      "class": "coverage-line",
+      "count": 55
+    },
+    {
+      "class": "icon-close",
+      "count": 55
+    },
+    {
+      "class": "aem-Grid",
+      "count": 50
+    },
+    {
+      "class": "aem-Grid--12",
+      "count": 50
+    },
+    {
+      "class": "aem-Grid--default--12",
+      "count": 50
+    },
+    {
+      "class": "data-cmp-required-message",
+      "count": 50
+    },
+    {
+      "class": "textimage",
+      "count": 49
+    },
+    {
+      "class": "textimage-wrapper",
+      "count": 49
+    },
+    {
+      "class": "floating-input",
+      "count": 45
+    },
+    {
+      "class": "floating-input-label",
+      "count": 45
+    },
+    {
+      "class": "trapfocus",
+      "count": 45
+    },
+    {
+      "class": "d-none",
+      "count": 40
+    },
+    {
+      "class": "col-md-3",
+      "count": 40
+    },
+    {
+      "class": "cmp-list",
+      "count": 40
+    },
+    {
+      "class": "product-availability-panel",
+      "count": 40
+    },
+    {
+      "class": "panel-body",
+      "count": 40
+    },
+    {
+      "class": "panel-heading",
+      "count": 40
+    },
+    {
+      "class": "close-panel",
+      "count": 40
+    },
+    {
+      "class": "close",
+      "count": 40
+    },
+    {
+      "class": "form-group",
+      "count": 40
+    },
+    {
+      "class": "icon-chevron-down",
+      "count": 35
+    },
+    {
+      "class": "input-wrapper",
+      "count": 35
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "false",
+      "count": 20
+    },
+    {
+      "id": "GetaQuote.BackToProductsScreen",
+      "count": 15
+    },
+    {
+      "id": "Header:aSearchGo",
+      "count": 10
+    },
+    {
+      "id": "zipcodeUpdateInputQuoting",
+      "count": 10
+    },
+    {
+      "id": "GetaQuote.SeeAvailablity",
+      "count": 10
+    },
+    {
+      "id": "GetaQuote.CloseReturnToQuoteScreen",
+      "count": 10
+    },
+    {
+      "id": "home-insurance:resources.GetaQuote.833-513-3881",
+      "count": 8
+    },
+    {
+      "id": "c90da248-3845-4d4e-88c4-da7158c65e6f",
+      "count": 5
+    },
+    {
+      "id": "onetrust-style",
+      "count": 5
+    },
+    {
+      "id": "experiencefragment-930bcfae59",
+      "count": 5
+    },
+    {
+      "id": "Header:aReturnToAccount",
+      "count": 5
+    },
+    {
+      "id": "image-b6f274c151",
+      "count": 5
+    },
+    {
+      "id": "Header:aHeaderLogo",
+      "count": 5
+    },
+    {
+      "id": "navbarNav",
+      "count": 5
+    },
+    {
+      "id": "navbarItemWrapper",
+      "count": 5
+    },
+    {
+      "id": "Header:aTopNavHomePreQuote",
+      "count": 5
+    },
+    {
+      "id": "Header:aHomeProducts",
+      "count": 5
+    },
+    {
+      "id": "main_nav_icon",
+      "count": 5
+    },
+    {
+      "id": "Header:aTopNavQuoteAuto",
+      "count": 5
+    },
+    {
+      "id": "Header:aTopNavQuoteHome",
+      "count": 5
+    },
+    {
+      "id": "Header:aTopNavQuoteLife",
+      "count": 5
+    },
+    {
+      "id": "Header:aTopNavQuoteUmbrella",
+      "count": 5
+    },
+    {
+      "id": "Header:aTopNavQuoteCondo",
+      "count": 5
+    },
+    {
+      "id": "Header:aTopNavQuoteRenters",
+      "count": 5
+    },
+    {
+      "id": "Header:aTopNavQuoteFlood",
+      "count": 5
+    },
+    {
+      "id": "Header:aTopNavQuoteRetirement",
+      "count": 5
+    },
+    {
+      "id": "Header:aTopNavQuoteMarine",
+      "count": 5
+    },
+    {
+      "id": "Header:aTopNavQuoteMotorcycle",
+      "count": 5
+    },
+    {
+      "id": "Header:aTopNavQuoteSmallBusiness",
+      "count": 5
+    },
+    {
+      "id": "Header:aTopNavQuoteAllProducts",
+      "count": 5
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

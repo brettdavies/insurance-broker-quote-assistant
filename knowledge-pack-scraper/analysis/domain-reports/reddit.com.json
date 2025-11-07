@@ -1,0 +1,455 @@
+{
+  "domain": "reddit.com",
+  "total_pages": 139,
+  "analyzed_at": "2025-11-07T14:28:55.983370",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 138,
+      "frequency": 0.993,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 138,
+      "frequency": 0.993,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "nav",
+      "count": 138,
+      "frequency": 0.993,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 811,
+      "frequency": 5.835,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 4332,
+      "frequency": 31.165,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 17381,
+      "frequency": 125.043,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 122,
+      "frequency": 0.878,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 552,
+      "frequency": 3.971,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 2166,
+      "frequency": 15.583,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "flex",
+      "count": 100835
+    },
+    {
+      "class": "items-center",
+      "count": 69160
+    },
+    {
+      "class": "overflow-hidden",
+      "count": 34885
+    },
+    {
+      "class": "text-12",
+      "count": 29956
+    },
+    {
+      "class": "relative",
+      "count": 27983
+    },
+    {
+      "class": "w-full",
+      "count": 26965
+    },
+    {
+      "class": "text-neutral-content-weak",
+      "count": 25786
+    },
+    {
+      "class": "inline-flex",
+      "count": 22910
+    },
+    {
+      "class": "justify-center",
+      "count": 22829
+    },
+    {
+      "class": "h-full",
+      "count": 20217
+    },
+    {
+      "class": "flex-col",
+      "count": 18843
+    },
+    {
+      "class": "rounded-full",
+      "count": 17429
+    },
+    {
+      "class": "cursor-pointer",
+      "count": 17070
+    },
+    {
+      "class": "nd:visible",
+      "count": 15998
+    },
+    {
+      "class": "no-visited",
+      "count": 15975
+    },
+    {
+      "class": "text-14",
+      "count": 15853
+    },
+    {
+      "class": "a",
+      "count": 15821
+    },
+    {
+      "class": "inline-block",
+      "count": 12574
+    },
+    {
+      "class": "shrink-0",
+      "count": 12442
+    },
+    {
+      "class": "hover:underline",
+      "count": 12214
+    },
+    {
+      "class": "min-w-0",
+      "count": 11983
+    },
+    {
+      "class": "hover:no-underline",
+      "count": 11513
+    },
+    {
+      "class": "no-underline",
+      "count": 11242
+    },
+    {
+      "class": "truncate",
+      "count": 10543
+    },
+    {
+      "class": "font-semibold",
+      "count": 10491
+    },
+    {
+      "class": "mt-2xs",
+      "count": 10108
+    },
+    {
+      "class": "grow",
+      "count": 10035
+    },
+    {
+      "class": "hover:text-neutral-content-weak",
+      "count": 10011
+    },
+    {
+      "class": "absolute",
+      "count": 9903
+    },
+    {
+      "class": "w-100",
+      "count": 9342
+    },
+    {
+      "class": "m-0",
+      "count": 9018
+    },
+    {
+      "class": "px-md",
+      "count": 8578
+    },
+    {
+      "class": "[&amp;&gt;:first-child]:rounded-[inherit]",
+      "count": 8047
+    },
+    {
+      "class": "block",
+      "count": 8040
+    },
+    {
+      "class": "border-neutral-border-weak",
+      "count": 8023
+    },
+    {
+      "class": "px-sm",
+      "count": 7967
+    },
+    {
+      "class": "[&amp;&gt;:first-child]:h-full",
+      "count": 7779
+    },
+    {
+      "class": "[&amp;&gt;:first-child]:w-full",
+      "count": 7779
+    },
+    {
+      "class": "[&amp;&gt;:first-child]:mb-0",
+      "count": 7779
+    },
+    {
+      "class": "[&amp;&gt;:first-child]:overflow-hidden",
+      "count": 7779
+    },
+    {
+      "class": "[&amp;&gt;:first-child]:max-h-full",
+      "count": 7779
+    },
+    {
+      "class": "text-neutral-content-strong",
+      "count": 7747
+    },
+    {
+      "class": "flex-row",
+      "count": 7554
+    },
+    {
+      "class": "text-neutral-content",
+      "count": 7507
+    },
+    {
+      "class": "mb-0",
+      "count": 7425
+    },
+    {
+      "class": "shreddit-subreddit-icon__icon",
+      "count": 6719
+    },
+    {
+      "class": "nd:bg-secondary-background",
+      "count": 6719
+    },
+    {
+      "class": "leading-5",
+      "count": 6488
+    },
+    {
+      "class": "font-normal",
+      "count": 6398
+    },
+    {
+      "class": "contents",
+      "count": 5814
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "t5_2qs6s",
+      "count": 4132
+    },
+    {
+      "id": "community-hover-card",
+      "count": 3244
+    },
+    {
+      "id": "t3_7w17su",
+      "count": 480
+    },
+    {
+      "id": "user-hover-card",
+      "count": 386
+    },
+    {
+      "id": "snoo-radial-gradient",
+      "count": 357
+    },
+    {
+      "id": "snoo-radial-gradient-2",
+      "count": 357
+    },
+    {
+      "id": "snoo-radial-gradient-3",
+      "count": 357
+    },
+    {
+      "id": "snoo-radial-gradient-4",
+      "count": 357
+    },
+    {
+      "id": "snoo-radial-gradient-5",
+      "count": 357
+    },
+    {
+      "id": "snoo-radial-gradient-6",
+      "count": 357
+    },
+    {
+      "id": "snoo-radial-gradient-7",
+      "count": 357
+    },
+    {
+      "id": "snoo-radial-gradient-8",
+      "count": 357
+    },
+    {
+      "id": "post-thumbnail",
+      "count": 288
+    },
+    {
+      "id": "t2_1ed7b",
+      "count": 240
+    },
+    {
+      "id": "paint0_diamond_26026_173944",
+      "count": 225
+    },
+    {
+      "id": "paint1_linear_26026_173944",
+      "count": 225
+    },
+    {
+      "id": "paint0_diamond_26526_186798",
+      "count": 225
+    },
+    {
+      "id": "t5_379e9",
+      "count": 217
+    },
+    {
+      "id": "t5_2r9c1",
+      "count": 210
+    },
+    {
+      "id": "t5_2xhe6",
+      "count": 199
+    },
+    {
+      "id": "t5_2qstm",
+      "count": 176
+    },
+    {
+      "id": "t5_2qh7q",
+      "count": 151
+    },
+    {
+      "id": "t5_31f4c",
+      "count": 147
+    },
+    {
+      "id": "tailwind",
+      "count": 138
+    },
+    {
+      "id": "reputation-recaptcha",
+      "count": 138
+    },
+    {
+      "id": "googleidentityservice_button_styles",
+      "count": 138
+    },
+    {
+      "id": "googleidentityservice",
+      "count": 138
+    },
+    {
+      "id": "shreddit-skip-link",
+      "count": 138
+    },
+    {
+      "id": "hamburger-button-tooltip",
+      "count": 138
+    },
+    {
+      "id": "navbar-menu-button",
+      "count": 138
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

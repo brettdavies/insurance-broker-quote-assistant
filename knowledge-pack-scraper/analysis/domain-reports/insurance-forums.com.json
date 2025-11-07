@@ -1,0 +1,455 @@
+{
+  "domain": "insurance-forums.com",
+  "total_pages": 24,
+  "analyzed_at": "2025-11-07T14:35:27.547932",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 168,
+      "frequency": 7.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 14,
+      "frequency": 0.583,
+      "confidence": "medium"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 94,
+      "frequency": 3.917,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 94,
+      "frequency": 3.917,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 26,
+      "frequency": 1.083,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 154,
+      "frequency": 6.417,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 495,
+      "frequency": 20.625,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 36,
+      "frequency": 1.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 215,
+      "frequency": 8.958,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 84,
+      "frequency": 3.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 50,
+      "frequency": 2.083,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 518,
+      "frequency": 21.583,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 40,
+      "frequency": 1.667,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "fa--xf",
+      "count": 434
+    },
+    {
+      "class": "fal",
+      "count": 424
+    },
+    {
+      "class": "u-dt",
+      "count": 244
+    },
+    {
+      "class": "structItem-cell",
+      "count": 240
+    },
+    {
+      "class": "avatar",
+      "count": 230
+    },
+    {
+      "class": "pairs",
+      "count": 227
+    },
+    {
+      "class": "pairs--justified",
+      "count": 227
+    },
+    {
+      "class": "username",
+      "count": 196
+    },
+    {
+      "class": "u-concealed",
+      "count": 191
+    },
+    {
+      "class": "fa",
+      "count": 168
+    },
+    {
+      "class": "sv-transparent-as-spoiler",
+      "count": 168
+    },
+    {
+      "class": "message-cell",
+      "count": 168
+    },
+    {
+      "class": "listInline",
+      "count": 144
+    },
+    {
+      "class": "structItem-minor",
+      "count": 144
+    },
+    {
+      "class": "avatar--default",
+      "count": 135
+    },
+    {
+      "class": "avatar--default--dynamic",
+      "count": 135
+    },
+    {
+      "class": "js-inlineModContainer",
+      "count": 132
+    },
+    {
+      "class": "fa-fw",
+      "count": 131
+    },
+    {
+      "class": "userBanner",
+      "count": 130
+    },
+    {
+      "class": "u-srOnly",
+      "count": 112
+    },
+    {
+      "class": "contentRow-minor",
+      "count": 102
+    },
+    {
+      "class": "contentRow-minor--hideLinks",
+      "count": 102
+    },
+    {
+      "class": "avatar--xxs",
+      "count": 98
+    },
+    {
+      "class": "structItem-cell--icon",
+      "count": 96
+    },
+    {
+      "class": "structItem-iconContainer",
+      "count": 96
+    },
+    {
+      "class": "u-anchorTarget",
+      "count": 94
+    },
+    {
+      "class": "lbContainer",
+      "count": 94
+    },
+    {
+      "class": "button",
+      "count": 92
+    },
+    {
+      "class": "button-text",
+      "count": 92
+    },
+    {
+      "class": "message",
+      "count": 84
+    },
+    {
+      "class": "message--post",
+      "count": 84
+    },
+    {
+      "class": "js-post",
+      "count": 84
+    },
+    {
+      "class": "message-header",
+      "count": 84
+    },
+    {
+      "class": "message-attribution",
+      "count": 84
+    },
+    {
+      "class": "message-attribution--split",
+      "count": 84
+    },
+    {
+      "class": "message-attribution-main",
+      "count": 84
+    },
+    {
+      "class": "message-attribution-opposite",
+      "count": 84
+    },
+    {
+      "class": "message-attribution-opposite--list",
+      "count": 84
+    },
+    {
+      "class": "fa-eye-slash",
+      "count": 84
+    },
+    {
+      "class": "fa-eye",
+      "count": 84
+    },
+    {
+      "class": "message-attribution-gadget",
+      "count": 84
+    },
+    {
+      "class": "fa-share-alt",
+      "count": 84
+    },
+    {
+      "class": "message-inner",
+      "count": 84
+    },
+    {
+      "class": "message-cell--user",
+      "count": 84
+    },
+    {
+      "class": "message-user",
+      "count": 84
+    },
+    {
+      "class": "message-avatar",
+      "count": 84
+    },
+    {
+      "class": "message-avatar-wrapper",
+      "count": 84
+    },
+    {
+      "class": "avatar--m",
+      "count": 84
+    },
+    {
+      "class": "message-userDetails",
+      "count": 84
+    },
+    {
+      "class": "message-name",
+      "count": 84
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "29087",
+      "count": 60
+    },
+    {
+      "id": "5",
+      "count": 55
+    },
+    {
+      "id": "1",
+      "count": 44
+    },
+    {
+      "id": "3260",
+      "count": 30
+    },
+    {
+      "id": "90591",
+      "count": 24
+    },
+    {
+      "id": "newPosts",
+      "count": 20
+    },
+    {
+      "id": "searchForums",
+      "count": 20
+    },
+    {
+      "id": "aHoNG5",
+      "count": 14
+    },
+    {
+      "id": "JHsxi5",
+      "count": 14
+    },
+    {
+      "id": "BAMDl0",
+      "count": 14
+    },
+    {
+      "id": "YqcjS8",
+      "count": 14
+    },
+    {
+      "id": "pCrm6",
+      "count": 14
+    },
+    {
+      "id": "challenge-success-text",
+      "count": 14
+    },
+    {
+      "id": "challenge-error-text",
+      "count": 14
+    },
+    {
+      "id": "footer-text",
+      "count": 14
+    },
+    {
+      "id": "106225",
+      "count": 12
+    },
+    {
+      "id": "6279",
+      "count": 11
+    },
+    {
+      "id": "XF",
+      "count": 10
+    },
+    {
+      "id": "top",
+      "count": 10
+    },
+    {
+      "id": "header",
+      "count": 10
+    },
+    {
+      "id": "home",
+      "count": 10
+    },
+    {
+      "id": "forums",
+      "count": 10
+    },
+    {
+      "id": "whatsNew",
+      "count": 10
+    },
+    {
+      "id": "whatsNewPosts",
+      "count": 10
+    },
+    {
+      "id": "latestActivity",
+      "count": 10
+    },
+    {
+      "id": "js-XFUniqueId1",
+      "count": 10
+    },
+    {
+      "id": "js-XFUniqueId2",
+      "count": 10
+    },
+    {
+      "id": "ctrl_search_menu_by_member",
+      "count": 10
+    },
+    {
+      "id": "lightswitch",
+      "count": 10
+    },
+    {
+      "id": "js-XFUniqueId3",
+      "count": 10
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article",
+    "excluded_selector": "[class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"ads\"], [id*=\"ads\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

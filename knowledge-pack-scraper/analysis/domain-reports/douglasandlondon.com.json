@@ -1,0 +1,456 @@
+{
+  "domain": "douglasandlondon.com",
+  "total_pages": 2,
+  "analyzed_at": "2025-11-07T14:35:35.610678",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 4,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 6,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 12,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 71,
+      "frequency": 35.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 26,
+      "frequency": 13.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 796,
+      "frequency": 398.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 4,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 150,
+      "frequency": 75.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "x-framework-icon",
+      "count": 396
+    },
+    {
+      "class": "menu-item",
+      "count": 374
+    },
+    {
+      "class": "x-framework-icon-menu",
+      "count": 370
+    },
+    {
+      "class": "x-icon",
+      "count": 356
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 334
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 298
+    },
+    {
+      "class": "gform_hidden",
+      "count": 106
+    },
+    {
+      "class": "gfield",
+      "count": 56
+    },
+    {
+      "class": "field_sublabel_below",
+      "count": 56
+    },
+    {
+      "class": "field_description_below",
+      "count": 56
+    },
+    {
+      "class": "field_validation_below",
+      "count": 56
+    },
+    {
+      "class": "gfield_visibility_visible",
+      "count": 56
+    },
+    {
+      "class": "ginput_container",
+      "count": 56
+    },
+    {
+      "class": "gfield--no-description",
+      "count": 54
+    },
+    {
+      "class": "nitro-offscreen",
+      "count": 51
+    },
+    {
+      "class": "menu-item-has-children",
+      "count": 44
+    },
+    {
+      "class": "sub-menu",
+      "count": 44
+    },
+    {
+      "class": "ginput_container_text",
+      "count": 44
+    },
+    {
+      "class": "gfield--type-hidden",
+      "count": 42
+    },
+    {
+      "class": "gfield--input-type-hidden",
+      "count": 42
+    },
+    {
+      "class": "tp-rs-img",
+      "count": 40
+    },
+    {
+      "class": "rs-lazyload",
+      "count": 40
+    },
+    {
+      "class": "nitropack-inline-script",
+      "count": 36
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 36
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 36
+    },
+    {
+      "class": "menu-item-object-attorney",
+      "count": 36
+    },
+    {
+      "class": "gfield_required",
+      "count": 24
+    },
+    {
+      "class": "rev-slidebg",
+      "count": 20
+    },
+    {
+      "class": "rs-parallax-wrap",
+      "count": 20
+    },
+    {
+      "class": "rs-layer",
+      "count": 20
+    },
+    {
+      "class": "gform-field-label",
+      "count": 16
+    },
+    {
+      "class": "x-container",
+      "count": 14
+    },
+    {
+      "class": "max",
+      "count": 14
+    },
+    {
+      "class": "width",
+      "count": 14
+    },
+    {
+      "class": "widget",
+      "count": 14
+    },
+    {
+      "class": "textwidget",
+      "count": 14
+    },
+    {
+      "class": "custom-html-widget",
+      "count": 14
+    },
+    {
+      "class": "gfield_required_asterisk",
+      "count": 14
+    },
+    {
+      "class": "gfield_label",
+      "count": 14
+    },
+    {
+      "class": "x-framework-icon-initial",
+      "count": 14
+    },
+    {
+      "class": "widget_text",
+      "count": 10
+    },
+    {
+      "class": "widget_custom_html",
+      "count": 10
+    },
+    {
+      "class": "gfield--width-full",
+      "count": 10
+    },
+    {
+      "class": "gfield_contains_required",
+      "count": 10
+    },
+    {
+      "class": "hidden_label",
+      "count": 10
+    },
+    {
+      "class": "large",
+      "count": 10
+    },
+    {
+      "class": "wp-block-heading",
+      "count": 9
+    },
+    {
+      "class": "nitro-lazy",
+      "count": 8
+    },
+    {
+      "class": "x-column",
+      "count": 8
+    },
+    {
+      "class": "x-md",
+      "count": 8
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "false",
+      "count": 54
+    },
+    {
+      "id": "wp-emoji-styles-inline-css",
+      "count": 4
+    },
+    {
+      "id": "wp-block-library-theme-inline-css",
+      "count": 4
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 4
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 4
+    },
+    {
+      "id": "wp-custom-css",
+      "count": 4
+    },
+    {
+      "id": "fa95f50b0f31c548473b5f21428bfd9c-1",
+      "count": 4
+    },
+    {
+      "id": "e407a93165f901f59f4fa3c1db698262-1",
+      "count": 4
+    },
+    {
+      "id": "dbafc4f656b53b116d55679f14b9006d-1",
+      "count": 4
+    },
+    {
+      "id": "handl-utm-grabber-js-extra",
+      "count": 4
+    },
+    {
+      "id": "c1a95203fb7f672110c5440219a9ac19-1",
+      "count": 4
+    },
+    {
+      "id": "865f7b7cb81a81ccd4b125d59b363fc3-1",
+      "count": 4
+    },
+    {
+      "id": "dfa31779468fe9e454b5ecb7243947de-1",
+      "count": 4
+    },
+    {
+      "id": "1559d16ae7a4275019f56765f538b6e8-1",
+      "count": 4
+    },
+    {
+      "id": "997d419661c0c328defdef75c9232bc3-1",
+      "count": 4
+    },
+    {
+      "id": "12d633ca13ab3277c0fedec07869b36e-1",
+      "count": 4
+    },
+    {
+      "id": "46e2ad8e5f545b334f73e728c1a5a0ff-1",
+      "count": 4
+    },
+    {
+      "id": "cs-js-extra",
+      "count": 4
+    },
+    {
+      "id": "x-site-js-extra",
+      "count": 4
+    },
+    {
+      "id": "wp-i18n-js-after",
+      "count": 4
+    },
+    {
+      "id": "gform_gravityforms-js-extra",
+      "count": 4
+    },
+    {
+      "id": "gform_gravityforms_theme-js-extra",
+      "count": 4
+    },
+    {
+      "id": "608cd1aa988c2ee92979656df2f1a2e2-1",
+      "count": 4
+    },
+    {
+      "id": "f42f8568c4f1ddb5f895478283111afd-1",
+      "count": 4
+    },
+    {
+      "id": "nitro-script",
+      "count": 4
+    },
+    {
+      "id": "nitro-web-worker",
+      "count": 2
+    },
+    {
+      "id": "nprl",
+      "count": 2
+    },
+    {
+      "id": ";function H(e,t){if(!_[e]){_[e]=[]}_[e].push(t)}function U(e,t){if(_[e]){var n=0,r=_[e];for(var n=0;n<r.length;n++){r[n].call(this,t)}}}function Y(){(function(e,t){var r=null;var i=function(e){r(e)};var o=null;var a={};var c=null;var u=null;var d=0;e.addEventListener(t,function(r){if([",
+      "count": 2
+    },
+    {
+      "id": "'+n.getAttribute(",
+      "count": 2
+    },
+    {
+      "id": "nitro-fonts",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, [role=\"main\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

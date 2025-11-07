@@ -1,0 +1,455 @@
+{
+  "domain": "carinsurance.com",
+  "total_pages": 20,
+  "analyzed_at": "2025-11-07T14:35:31.193739",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 16,
+      "frequency": 0.8,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 8,
+      "frequency": 0.4,
+      "confidence": "low"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 16,
+      "frequency": 0.8,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 16,
+      "frequency": 0.8,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 16,
+      "frequency": 0.8,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 995,
+      "frequency": 49.75,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 98,
+      "frequency": 4.9,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 480,
+      "frequency": 24.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 39,
+      "frequency": 1.95,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 175,
+      "frequency": 8.75,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "nav-item",
+      "count": 1744
+    },
+    {
+      "class": "nav-link",
+      "count": 1728
+    },
+    {
+      "class": "no-label",
+      "count": 1616
+    },
+    {
+      "class": "position-relative",
+      "count": 902
+    },
+    {
+      "class": "px-0",
+      "count": 893
+    },
+    {
+      "class": "col-12",
+      "count": 858
+    },
+    {
+      "class": "d-flex",
+      "count": 762
+    },
+    {
+      "class": "align-items-center",
+      "count": 525
+    },
+    {
+      "class": "d-block",
+      "count": 377
+    },
+    {
+      "class": "subtitle",
+      "count": 373
+    },
+    {
+      "class": "has-children",
+      "count": 352
+    },
+    {
+      "class": "dropdown-item",
+      "count": 344
+    },
+    {
+      "class": "dt-center",
+      "count": 308
+    },
+    {
+      "class": "dropdown-submenu",
+      "count": 272
+    },
+    {
+      "class": "semibold-txt",
+      "count": 216
+    },
+    {
+      "class": "wp-block-heading",
+      "count": 213
+    },
+    {
+      "class": "flex-column",
+      "count": 203
+    },
+    {
+      "class": "col-md-6",
+      "count": 196
+    },
+    {
+      "class": "d-none",
+      "count": 180
+    },
+    {
+      "class": "col-6",
+      "count": 180
+    },
+    {
+      "class": "pb-3",
+      "count": 177
+    },
+    {
+      "class": "heading",
+      "count": 175
+    },
+    {
+      "class": "text-center",
+      "count": 170
+    },
+    {
+      "class": "flex-wrap",
+      "count": 163
+    },
+    {
+      "class": "container",
+      "count": 161
+    },
+    {
+      "class": "ps-0",
+      "count": 157
+    },
+    {
+      "class": "link",
+      "count": 155
+    },
+    {
+      "class": "pb-lg-4",
+      "count": 145
+    },
+    {
+      "class": "h2-heading",
+      "count": 145
+    },
+    {
+      "class": "heading2",
+      "count": 145
+    },
+    {
+      "class": "col-lg-4",
+      "count": 144
+    },
+    {
+      "class": "justify-content-between",
+      "count": 141
+    },
+    {
+      "class": "agent-call-cta-avatar",
+      "count": 128
+    },
+    {
+      "class": "justify-content-center",
+      "count": 126
+    },
+    {
+      "class": "mx-auto",
+      "count": 121
+    },
+    {
+      "class": "author-avatar",
+      "count": 117
+    },
+    {
+      "class": "nav-link-label",
+      "count": 112
+    },
+    {
+      "class": "nav-label",
+      "count": 112
+    },
+    {
+      "class": "anchor-link-wrapper",
+      "count": 112
+    },
+    {
+      "class": "anchor-link",
+      "count": 112
+    },
+    {
+      "class": "hidden",
+      "count": 112
+    },
+    {
+      "class": "author-name",
+      "count": 106
+    },
+    {
+      "class": "row",
+      "count": 104
+    },
+    {
+      "class": "col-md-4",
+      "count": 97
+    },
+    {
+      "class": "err-m",
+      "count": 96
+    },
+    {
+      "class": "col-md-3",
+      "count": 96
+    },
+    {
+      "class": "footer-text",
+      "count": 96
+    },
+    {
+      "class": "px-3",
+      "count": 88
+    },
+    {
+      "class": "custom-scrollbar",
+      "count": 86
+    },
+    {
+      "class": "ps-3",
+      "count": 86
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "bootstrap-style",
+      "count": 16
+    },
+    {
+      "id": "theme-common-rest-css",
+      "count": 16
+    },
+    {
+      "id": "article-solid-toc-css",
+      "count": 16
+    },
+    {
+      "id": "breadcrumb-css",
+      "count": 16
+    },
+    {
+      "id": "ask-the-expert-section-css-css",
+      "count": 16
+    },
+    {
+      "id": "page-progress-css-css",
+      "count": 16
+    },
+    {
+      "id": "rocket-lazyload-inline-css",
+      "count": 16
+    },
+    {
+      "id": "rocket-lazyload-nojs-css",
+      "count": 16
+    },
+    {
+      "id": "page",
+      "count": 16
+    },
+    {
+      "id": "masthead",
+      "count": 16
+    },
+    {
+      "id": "nav-icon",
+      "count": 16
+    },
+    {
+      "id": "search-form-input",
+      "count": 16
+    },
+    {
+      "id": "nav-menu-sticky",
+      "count": 16
+    },
+    {
+      "id": "nav-menu-gq-btn",
+      "count": 16
+    },
+    {
+      "id": "progression",
+      "count": 16
+    },
+    {
+      "id": "bannerZipFormstart",
+      "count": 16
+    },
+    {
+      "id": "nunjucksEnvName",
+      "count": 16
+    },
+    {
+      "id": "nunjucksPageType",
+      "count": 16
+    },
+    {
+      "id": "zip-formstart-form",
+      "count": 16
+    },
+    {
+      "id": "zipcode-input",
+      "count": 16
+    },
+    {
+      "id": "fs-submit-btn",
+      "count": 16
+    },
+    {
+      "id": "zip-formstart-hybrid-flow",
+      "count": 16
+    },
+    {
+      "id": "toc-button",
+      "count": 16
+    },
+    {
+      "id": "toc-container",
+      "count": 16
+    },
+    {
+      "id": "ate-question",
+      "count": 16
+    },
+    {
+      "id": "ate-referrer-page",
+      "count": 16
+    },
+    {
+      "id": "ate-email",
+      "count": 16
+    },
+    {
+      "id": "ate-captcha-wrapper",
+      "count": 16
+    },
+    {
+      "id": "recaptchaResponse",
+      "count": 16
+    },
+    {
+      "id": "our-research-process",
+      "count": 16
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article",
+    "excluded_selector": "[class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

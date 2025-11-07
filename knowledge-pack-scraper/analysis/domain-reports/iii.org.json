@@ -1,0 +1,454 @@
+{
+  "domain": "iii.org",
+  "total_pages": 7,
+  "analyzed_at": "2025-11-07T14:35:32.074889",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 13,
+      "frequency": 1.857,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 7,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "aside",
+      "count": 3,
+      "frequency": 0.429,
+      "confidence": "low"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 25,
+      "frequency": 3.571,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 3,
+      "frequency": 0.429,
+      "confidence": "low"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 10,
+      "frequency": 1.429,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 584,
+      "frequency": 83.429,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 88,
+      "frequency": 12.571,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu",
+      "count": 278
+    },
+    {
+      "class": "dhtml-menu",
+      "count": 278
+    },
+    {
+      "class": "dhtml-processed",
+      "count": 234
+    },
+    {
+      "class": "cls-1",
+      "count": 84
+    },
+    {
+      "class": "clearfix",
+      "count": 55
+    },
+    {
+      "class": "first",
+      "count": 54
+    },
+    {
+      "class": "last",
+      "count": 54
+    },
+    {
+      "class": "even",
+      "count": 51
+    },
+    {
+      "class": "start-collapsed",
+      "count": 46
+    },
+    {
+      "class": "grid",
+      "count": 45
+    },
+    {
+      "class": "leaf",
+      "count": 44
+    },
+    {
+      "class": "collapsed",
+      "count": 43
+    },
+    {
+      "class": "three-column",
+      "count": 42
+    },
+    {
+      "class": "content",
+      "count": 37
+    },
+    {
+      "class": "odd",
+      "count": 35
+    },
+    {
+      "class": "link",
+      "count": 28
+    },
+    {
+      "class": "block",
+      "count": 26
+    },
+    {
+      "class": "ui-corner-all",
+      "count": 21
+    },
+    {
+      "class": "form-item",
+      "count": 21
+    },
+    {
+      "class": "form-text",
+      "count": 21
+    },
+    {
+      "class": "grid-wrapper",
+      "count": 20
+    },
+    {
+      "class": "form-required",
+      "count": 20
+    },
+    {
+      "class": "required",
+      "count": 20
+    },
+    {
+      "class": "field",
+      "count": 19
+    },
+    {
+      "class": "field-items",
+      "count": 19
+    },
+    {
+      "class": "field-item",
+      "count": 19
+    },
+    {
+      "class": "header",
+      "count": 18
+    },
+    {
+      "class": "grid-962",
+      "count": 17
+    },
+    {
+      "class": "field-label-hidden",
+      "count": 16
+    },
+    {
+      "class": "field-type-text-with-summary",
+      "count": 15
+    },
+    {
+      "class": "block-nylon-common-functions",
+      "count": 14
+    },
+    {
+      "class": "menu-panel",
+      "count": 14
+    },
+    {
+      "class": "menu-smedia",
+      "count": 14
+    },
+    {
+      "class": "smedia_tw",
+      "count": 14
+    },
+    {
+      "class": "smedia_linkedin",
+      "count": 14
+    },
+    {
+      "class": "smedia_fb",
+      "count": 14
+    },
+    {
+      "class": "smedia_youtube",
+      "count": 14
+    },
+    {
+      "class": "smedia_pinterest",
+      "count": 14
+    },
+    {
+      "class": "smedia_gplus",
+      "count": 14
+    },
+    {
+      "class": "row",
+      "count": 14
+    },
+    {
+      "class": "label",
+      "count": 14
+    },
+    {
+      "class": "ui-widget",
+      "count": 14
+    },
+    {
+      "class": "ui-widget-content",
+      "count": 14
+    },
+    {
+      "class": "description",
+      "count": 14
+    },
+    {
+      "class": "wrapper-962",
+      "count": 10
+    },
+    {
+      "class": "node",
+      "count": 10
+    },
+    {
+      "class": "rdf-meta",
+      "count": 10
+    },
+    {
+      "class": "element-hidden",
+      "count": 10
+    },
+    {
+      "class": "field-name-body",
+      "count": 10
+    },
+    {
+      "class": "wrapper",
+      "count": 10
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "f",
+      "count": 14
+    },
+    {
+      "id": "Lozenge",
+      "count": 14
+    },
+    {
+      "id": "seckit-clickjacking-no-body",
+      "count": 7
+    },
+    {
+      "id": "seckit-clickjacking-noscript-tag",
+      "count": 7
+    },
+    {
+      "id": "seckit-noscript-tag",
+      "count": 7
+    },
+    {
+      "id": "block-nylon-common-functions-responsive-header",
+      "count": 7
+    },
+    {
+      "id": "nav",
+      "count": 7
+    },
+    {
+      "id": "navigation",
+      "count": 7
+    },
+    {
+      "id": "menuBtn",
+      "count": 7
+    },
+    {
+      "id": "logo",
+      "count": 7
+    },
+    {
+      "id": "breadcrumb",
+      "count": 7
+    },
+    {
+      "id": "userBox",
+      "count": 7
+    },
+    {
+      "id": "btnSignin",
+      "count": 7
+    },
+    {
+      "id": "searchBox",
+      "count": 7
+    },
+    {
+      "id": "menu-panel-main",
+      "count": 7
+    },
+    {
+      "id": "menu-panel-search",
+      "count": 7
+    },
+    {
+      "id": "search",
+      "count": 7
+    },
+    {
+      "id": "keyword",
+      "count": 7
+    },
+    {
+      "id": "menu-search",
+      "count": 7
+    },
+    {
+      "id": "block-nylon-common-functions-responsive-footer",
+      "count": 7
+    },
+    {
+      "id": "sidebar-toggle",
+      "count": 7
+    },
+    {
+      "id": "logo-footer",
+      "count": 7
+    },
+    {
+      "id": "menu-footer",
+      "count": 7
+    },
+    {
+      "id": "copyright",
+      "count": 7
+    },
+    {
+      "id": "cboxOverlay",
+      "count": 7
+    },
+    {
+      "id": "colorbox",
+      "count": 7
+    },
+    {
+      "id": "cboxWrapper",
+      "count": 7
+    },
+    {
+      "id": "cboxTopLeft",
+      "count": 7
+    },
+    {
+      "id": "cboxTopCenter",
+      "count": 7
+    },
+    {
+      "id": "cboxTopRight",
+      "count": 7
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer"
+    ],
+    "css_selector": null,
+    "excluded_selector": "[class*=\"ad\"], [id*=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "low"
+  }
+}

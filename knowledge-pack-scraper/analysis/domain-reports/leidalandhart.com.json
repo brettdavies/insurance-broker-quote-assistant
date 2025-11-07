@@ -1,0 +1,454 @@
+{
+  "domain": "leidalandhart.com",
+  "total_pages": 2,
+  "analyzed_at": "2025-11-07T14:35:35.868617",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 12,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 10,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 99,
+      "frequency": 49.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 12,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 46,
+      "frequency": 23.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 16,
+      "frequency": 8.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "wp-block-heading",
+      "count": 53
+    },
+    {
+      "class": "col",
+      "count": 36
+    },
+    {
+      "class": "menu-item",
+      "count": 20
+    },
+    {
+      "class": "row",
+      "count": 18
+    },
+    {
+      "class": "wp-block-list",
+      "count": 16
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 16
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 16
+    },
+    {
+      "class": "inner-wrap",
+      "count": 14
+    },
+    {
+      "class": "span_12",
+      "count": 14
+    },
+    {
+      "class": "lines-button",
+      "count": 12
+    },
+    {
+      "class": "x2",
+      "count": 12
+    },
+    {
+      "class": "lines",
+      "count": 12
+    },
+    {
+      "class": "fa",
+      "count": 12
+    },
+    {
+      "class": "span_4",
+      "count": 12
+    },
+    {
+      "class": "wpb_wrapper",
+      "count": 10
+    },
+    {
+      "class": "container",
+      "count": 8
+    },
+    {
+      "class": "screen-reader-text",
+      "count": 8
+    },
+    {
+      "class": "close-line",
+      "count": 8
+    },
+    {
+      "class": "hover-effect",
+      "count": 8
+    },
+    {
+      "class": "meta-category",
+      "count": 8
+    },
+    {
+      "class": "knowledge-hub",
+      "count": 8
+    },
+    {
+      "class": "avatar",
+      "count": 8
+    },
+    {
+      "class": "photo",
+      "count": 8
+    },
+    {
+      "class": "post",
+      "count": 8
+    },
+    {
+      "class": "type-post",
+      "count": 8
+    },
+    {
+      "class": "status-publish",
+      "count": 8
+    },
+    {
+      "class": "format-standard",
+      "count": 8
+    },
+    {
+      "class": "category-knowledge-hub",
+      "count": 8
+    },
+    {
+      "class": "vc_row-fluid",
+      "count": 8
+    },
+    {
+      "class": "wpb_column",
+      "count": 8
+    },
+    {
+      "class": "column_container",
+      "count": 8
+    },
+    {
+      "class": "vc_column_container",
+      "count": 8
+    },
+    {
+      "class": "no-extra-padding",
+      "count": 8
+    },
+    {
+      "class": "inherit_tablet",
+      "count": 8
+    },
+    {
+      "class": "inherit_phone",
+      "count": 8
+    },
+    {
+      "class": "vc_column-inner",
+      "count": 8
+    },
+    {
+      "class": "nectar-cta",
+      "count": 8
+    },
+    {
+      "class": "alignment_tablet_default",
+      "count": 8
+    },
+    {
+      "class": "alignment_phone_default",
+      "count": 8
+    },
+    {
+      "class": "display_tablet_inherit",
+      "count": 8
+    },
+    {
+      "class": "display_phone_inherit",
+      "count": 8
+    },
+    {
+      "class": "link_wrap",
+      "count": 8
+    },
+    {
+      "class": "link_text",
+      "count": 8
+    },
+    {
+      "class": "nectar-sharing",
+      "count": 8
+    },
+    {
+      "class": "social-text",
+      "count": 8
+    },
+    {
+      "class": "col_last",
+      "count": 6
+    },
+    {
+      "class": "inner",
+      "count": 6
+    },
+    {
+      "class": "slide-out-from-right",
+      "count": 6
+    },
+    {
+      "class": "row-bg-wrap",
+      "count": 6
+    },
+    {
+      "class": "row-bg",
+      "count": 6
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "wp-block-library-css",
+      "count": 2
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 2
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 2
+    },
+    {
+      "id": "salient-social-css",
+      "count": 2
+    },
+    {
+      "id": "salient-social-inline-css",
+      "count": 2
+    },
+    {
+      "id": "salient-grid-system-css",
+      "count": 2
+    },
+    {
+      "id": "main-styles-css",
+      "count": 2
+    },
+    {
+      "id": "nectar-header-perma-transparent-css",
+      "count": 2
+    },
+    {
+      "id": "nectar-single-styles-css",
+      "count": 2
+    },
+    {
+      "id": "nectar-element-recent-posts-css",
+      "count": 2
+    },
+    {
+      "id": "nectar_default_font_open_sans-css",
+      "count": 2
+    },
+    {
+      "id": "responsive-css",
+      "count": 2
+    },
+    {
+      "id": "select2-css",
+      "count": 2
+    },
+    {
+      "id": "skin-material-css",
+      "count": 2
+    },
+    {
+      "id": "salient-wp-menu-dynamic-css",
+      "count": 2
+    },
+    {
+      "id": "dynamic-css-css",
+      "count": 2
+    },
+    {
+      "id": "dynamic-css-inline-css",
+      "count": 2
+    },
+    {
+      "id": "salient-child-style-css",
+      "count": 2
+    },
+    {
+      "id": "redux-google-fonts-salient_redux-css",
+      "count": 2
+    },
+    {
+      "id": "jquery-core-js",
+      "count": 2
+    },
+    {
+      "id": "jquery-migrate-js",
+      "count": 2
+    },
+    {
+      "id": "google_gtagjs-js",
+      "count": 2
+    },
+    {
+      "id": "google_gtagjs-js-after",
+      "count": 2
+    },
+    {
+      "id": "header-space",
+      "count": 2
+    },
+    {
+      "id": "header-outer",
+      "count": 2
+    },
+    {
+      "id": "search-outer",
+      "count": 2
+    },
+    {
+      "id": "search",
+      "count": 2
+    },
+    {
+      "id": "search-box",
+      "count": 2
+    },
+    {
+      "id": "s",
+      "count": 2
+    },
+    {
+      "id": "close",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "nav"
+    ],
+    "css_selector": "article, [role=\"main\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

@@ -1,0 +1,456 @@
+{
+  "domain": "newsweek.com",
+  "total_pages": 4,
+  "analyzed_at": "2025-11-07T14:35:34.050938",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 8,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 4,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 4,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 4,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 4,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 4,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 20,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 1336,
+      "frequency": 334.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 24,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 64,
+      "frequency": 16.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 20,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 736,
+      "frequency": 184.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 32,
+      "frequency": 8.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "Link_link___2y9H",
+      "count": 640
+    },
+    {
+      "class": "Link_colorPrimary__9yoFy",
+      "count": 636
+    },
+    {
+      "class": "Link_default__SCGtk",
+      "count": 624
+    },
+    {
+      "class": "NewsweekLink_link__BTn_o",
+      "count": 348
+    },
+    {
+      "class": "Link_primary__OPNzz",
+      "count": 340
+    },
+    {
+      "class": "Link_secondary__zNvZm",
+      "count": 300
+    },
+    {
+      "class": "undefined",
+      "count": 206
+    },
+    {
+      "class": "ArticleHeader_submenuLink__ivFwp",
+      "count": 180
+    },
+    {
+      "class": "ArticleHeader_menuItemText__ZnU4M",
+      "count": 180
+    },
+    {
+      "class": "ArticleSideMenuItem_subMenuItem__0mjzO",
+      "count": 180
+    },
+    {
+      "class": "text-subheadline-semibold-xs",
+      "count": 108
+    },
+    {
+      "class": "dfp-tag-wrapper",
+      "count": 104
+    },
+    {
+      "class": "Divider_customDividerContainer__iXoqr",
+      "count": 92
+    },
+    {
+      "class": "Divider_root__PhC5d",
+      "count": 92
+    },
+    {
+      "class": "ContentTile_container__cV6Sn",
+      "count": 88
+    },
+    {
+      "class": "ContentTile_small__EV5Fh",
+      "count": 88
+    },
+    {
+      "class": "ContentTile_vertical__zo7B5",
+      "count": 88
+    },
+    {
+      "class": "contentTileContainer",
+      "count": 88
+    },
+    {
+      "class": "ContentTile_mediaContainer__XuvvF",
+      "count": 88
+    },
+    {
+      "class": "ContentTile_imageLink__wB5Wl",
+      "count": 88
+    },
+    {
+      "class": "ContentTile_image__Lp15m",
+      "count": 88
+    },
+    {
+      "class": "ContentTile_contentContainer__8AjAh",
+      "count": 88
+    },
+    {
+      "class": "CategoryBadge_categoryBadge__2Ulz4",
+      "count": 88
+    },
+    {
+      "class": "CategoryBadge_sizeDefault__oAZ3O",
+      "count": 88
+    },
+    {
+      "class": "CategoryBadge_variantDefault__SFnJw",
+      "count": 88
+    },
+    {
+      "class": "text-subheadline-semibold-sm",
+      "count": 88
+    },
+    {
+      "class": "ContentTile_metadata__5Ko_v",
+      "count": 88
+    },
+    {
+      "class": "ContentTile_metadataText__xINla",
+      "count": 88
+    },
+    {
+      "class": "ContentTile_readTime__9Ot_Q",
+      "count": 88
+    },
+    {
+      "class": "Paragraph_blockParagraph__I2kr4",
+      "count": 87
+    },
+    {
+      "class": "dfp-ad-count",
+      "count": 46
+    },
+    {
+      "class": "Actionable_root__LiyqW",
+      "count": 40
+    },
+    {
+      "class": "slick-slide",
+      "count": 40
+    },
+    {
+      "class": "dfp-ad-lazy",
+      "count": 34
+    },
+    {
+      "class": "mpu-only",
+      "count": 34
+    },
+    {
+      "class": "unstick",
+      "count": 34
+    },
+    {
+      "class": "slick-active",
+      "count": 32
+    },
+    {
+      "class": "ArticleHeader_item__MpXEZ",
+      "count": 28
+    },
+    {
+      "class": "ArticleHeader_menuItemContainer__F4jqO",
+      "count": 28
+    },
+    {
+      "class": "ArticleHeader_menuLink___Wd00",
+      "count": 28
+    },
+    {
+      "class": "Link_iconTrailing___auLo",
+      "count": 28
+    },
+    {
+      "class": "ArticleHeader_disclosureButton__fc8AA",
+      "count": 28
+    },
+    {
+      "class": "ArticleHeader_submenu__WFQf6",
+      "count": 28
+    },
+    {
+      "class": "ArticleSideMenuItem_item__hHOTn",
+      "count": 28
+    },
+    {
+      "class": "ArticleSideMenuItem_label__7ExeE",
+      "count": 28
+    },
+    {
+      "class": "ArticleSideMenuItem_subMenu__7pOjB",
+      "count": 28
+    },
+    {
+      "class": "Icon_root__5T0Zw",
+      "count": 28
+    },
+    {
+      "class": "height_root__6FnI_",
+      "count": 28
+    },
+    {
+      "class": "SectionHeader_header__TlsBL",
+      "count": 28
+    },
+    {
+      "class": "Divider_highlight-start__wdVgX",
+      "count": 28
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "idward-plugin-js",
+      "count": 10
+    },
+    {
+      "id": "MjI1Mg==",
+      "count": 10
+    },
+    {
+      "id": "clip0_14674_5541",
+      "count": 8
+    },
+    {
+      "id": "clip1_14674_5541",
+      "count": 8
+    },
+    {
+      "id": "a",
+      "count": 8
+    },
+    {
+      "id": "page-focus",
+      "count": 4
+    },
+    {
+      "id": "ad-systems-init",
+      "count": 4
+    },
+    {
+      "id": "prebid",
+      "count": 4
+    },
+    {
+      "id": "amazon-aps-bootstrap",
+      "count": 4
+    },
+    {
+      "id": "aps-config",
+      "count": 4
+    },
+    {
+      "id": "aps-publisher",
+      "count": 4
+    },
+    {
+      "id": "googletag",
+      "count": 4
+    },
+    {
+      "id": "ima-init",
+      "count": 4
+    },
+    {
+      "id": "doubleverify-script",
+      "count": 4
+    },
+    {
+      "id": "dv-check",
+      "count": 4
+    },
+    {
+      "id": "ias-pubid",
+      "count": 4
+    },
+    {
+      "id": "adsafe-protected",
+      "count": 4
+    },
+    {
+      "id": "ias-check",
+      "count": 4
+    },
+    {
+      "id": "datalayer-init",
+      "count": 4
+    },
+    {
+      "id": "googleidentityservice_button_styles",
+      "count": 4
+    },
+    {
+      "id": "clip0_14522_2640",
+      "count": 4
+    },
+    {
+      "id": "menu-0-disclosure",
+      "count": 4
+    },
+    {
+      "id": "menu-0-submenu",
+      "count": 4
+    },
+    {
+      "id": "menu-1-disclosure",
+      "count": 4
+    },
+    {
+      "id": "menu-1-submenu",
+      "count": 4
+    },
+    {
+      "id": "menu-2-disclosure",
+      "count": 4
+    },
+    {
+      "id": "menu-2-submenu",
+      "count": 4
+    },
+    {
+      "id": "menu-3-disclosure",
+      "count": 4
+    },
+    {
+      "id": "menu-3-submenu",
+      "count": 4
+    },
+    {
+      "id": "menu-4-disclosure",
+      "count": 4
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"ads\"], [id*=\"ads\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

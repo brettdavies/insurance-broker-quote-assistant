@@ -1,0 +1,455 @@
+{
+  "domain": "statefarm.com",
+  "total_pages": 80,
+  "analyzed_at": "2025-11-07T14:29:29.680419",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 79,
+      "frequency": 0.988,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 79,
+      "frequency": 0.988,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 135,
+      "frequency": 1.688,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 80,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 160,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 80,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 9480,
+      "frequency": 118.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 80,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 18817,
+      "frequency": 235.213,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 568,
+      "frequency": 7.1,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 235,
+      "frequency": 2.938,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "-oneX-link--block",
+      "count": 9104
+    },
+    {
+      "class": "menuLevel2",
+      "count": 2672
+    },
+    {
+      "class": "-oneX-sub-navigation-menu-mobile",
+      "count": 2623
+    },
+    {
+      "class": "-oneX-menuLevel1-mobile",
+      "count": 2620
+    },
+    {
+      "class": "-oneX-menuLevel1",
+      "count": 2620
+    },
+    {
+      "class": "-oneX-sub-footer-list",
+      "count": 2607
+    },
+    {
+      "class": "-oneX-link--block--variant2",
+      "count": 2560
+    },
+    {
+      "class": "-oneX-link-tertiary",
+      "count": 2080
+    },
+    {
+      "class": "-oneX-col-12",
+      "count": 1789
+    },
+    {
+      "class": "-oneX-hidden",
+      "count": 1788
+    },
+    {
+      "class": "-oneX-row",
+      "count": 1550
+    },
+    {
+      "class": "aem-GridColumn",
+      "count": 1541
+    },
+    {
+      "class": "aem-GridColumn--default--12",
+      "count": 1541
+    },
+    {
+      "class": "-oneX-submenu-section-wrapper",
+      "count": 1053
+    },
+    {
+      "class": "-oneX-link--inline",
+      "count": 1025
+    },
+    {
+      "class": "-oneX-header-submenu-container",
+      "count": 956
+    },
+    {
+      "class": "-oneX-header-main-nav-list",
+      "count": 877
+    },
+    {
+      "class": "-oneX-header-top-menu-btn",
+      "count": 801
+    },
+    {
+      "class": "-oneX-header-menu",
+      "count": 796
+    },
+    {
+      "class": "-oneX-mainmenu-section-wrapper",
+      "count": 796
+    },
+    {
+      "class": "-oneX-submenu-section",
+      "count": 796
+    },
+    {
+      "class": "-oneX-btn-primary",
+      "count": 761
+    },
+    {
+      "class": "-oneX-close-X-button",
+      "count": 732
+    },
+    {
+      "class": "-oneX-icon--close",
+      "count": 732
+    },
+    {
+      "class": "-oneX-col-md-3",
+      "count": 718
+    },
+    {
+      "class": "bottom-margin",
+      "count": 713
+    },
+    {
+      "class": "cmp-container",
+      "count": 712
+    },
+    {
+      "class": "-oneX-d-none",
+      "count": 699
+    },
+    {
+      "class": "-oneX-subMenu-items",
+      "count": 648
+    },
+    {
+      "class": "-oneX-sub-navigation-menu",
+      "count": 645
+    },
+    {
+      "class": "mb-3",
+      "count": 641
+    },
+    {
+      "class": "-oneX-clipped",
+      "count": 635
+    },
+    {
+      "class": "-oneX-links-as-heading",
+      "count": 633
+    },
+    {
+      "class": "aem-Grid",
+      "count": 632
+    },
+    {
+      "class": "aem-Grid--12",
+      "count": 632
+    },
+    {
+      "class": "aem-Grid--default--12",
+      "count": 632
+    },
+    {
+      "class": "-oneX-col",
+      "count": 585
+    },
+    {
+      "class": "-oneX-textfield__floatingLabel",
+      "count": 541
+    },
+    {
+      "class": "text-gray-100",
+      "count": 529
+    },
+    {
+      "class": "footer-nav-sibling",
+      "count": 518
+    },
+    {
+      "class": "-oneX-header-top-menu-btn-hitbox",
+      "count": 482
+    },
+    {
+      "class": "-oneX-link-secondary",
+      "count": 480
+    },
+    {
+      "class": "-oneX-header-close-X-button",
+      "count": 479
+    },
+    {
+      "class": "htmlComponent",
+      "count": 474
+    },
+    {
+      "class": "my-2",
+      "count": 458
+    },
+    {
+      "class": "-oneX-heading--h4",
+      "count": 446
+    },
+    {
+      "class": "-oneX-container",
+      "count": 415
+    },
+    {
+      "class": "-oneX",
+      "count": 401
+    },
+    {
+      "class": "-oneX-td",
+      "count": 400
+    },
+    {
+      "class": "-oneX-navmenu-anchor-has-submenu",
+      "count": 398
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "false",
+      "count": 203
+    },
+    {
+      "id": "oneX-1-Banking",
+      "count": 158
+    },
+    {
+      "id": "oneX-2-Family",
+      "count": 158
+    },
+    {
+      "id": "oneX-3-Residence",
+      "count": 158
+    },
+    {
+      "id": "oneX-0-College",
+      "count": 158
+    },
+    {
+      "id": "oneX-1-Estate",
+      "count": 158
+    },
+    {
+      "id": "oneX-2-Financial",
+      "count": 158
+    },
+    {
+      "id": "oneX-3-Health",
+      "count": 158
+    },
+    {
+      "id": "oneX-0-Starting_Out",
+      "count": 158
+    },
+    {
+      "id": "oneX-1-Getting_Married",
+      "count": 158
+    },
+    {
+      "id": "oneX-2-First_Time_Home_Buyer",
+      "count": 158
+    },
+    {
+      "id": "oneX-3-Adding_a_Child",
+      "count": 158
+    },
+    {
+      "id": "oneX-1-Manage_Energy",
+      "count": 158
+    },
+    {
+      "id": "oneX-3-Starting_Today",
+      "count": 158
+    },
+    {
+      "id": "oneX-lang-modal-en",
+      "count": 80
+    },
+    {
+      "id": "dialogTitle",
+      "count": 80
+    },
+    {
+      "id": "-oneX-lang-modal-find-agent-btn",
+      "count": 80
+    },
+    {
+      "id": "-oneX-lang-modal-cancel-btn",
+      "count": 80
+    },
+    {
+      "id": "oneX-lang-modal-es",
+      "count": 80
+    },
+    {
+      "id": "dialogTitle-es",
+      "count": 80
+    },
+    {
+      "id": "-oneX-lang-modal-continue-btn",
+      "count": 80
+    },
+    {
+      "id": "-oneX-lang-modal-cancel-btn-es",
+      "count": 80
+    },
+    {
+      "id": "oneX-header",
+      "count": 80
+    },
+    {
+      "id": "oneX-sf-logo",
+      "count": 80
+    },
+    {
+      "id": "oneX-sf-logo-mobile",
+      "count": 80
+    },
+    {
+      "id": "sr-only",
+      "count": 80
+    },
+    {
+      "id": "oneX-header-main-menu-btn",
+      "count": 80
+    },
+    {
+      "id": "navMenuBack",
+      "count": 80
+    },
+    {
+      "id": "oneX-submenu-help",
+      "count": 80
+    },
+    {
+      "id": "oneX-submenu-search",
+      "count": 80
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

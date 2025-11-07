@@ -1,0 +1,455 @@
+{
+  "domain": "insurance.com",
+  "total_pages": 44,
+  "analyzed_at": "2025-11-07T14:35:27.970248",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 23,
+      "frequency": 0.523,
+      "confidence": "medium"
+    },
+    {
+      "selector": "main",
+      "count": 23,
+      "frequency": 0.523,
+      "confidence": "medium"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 23,
+      "frequency": 0.523,
+      "confidence": "medium"
+    },
+    {
+      "tag": "footer",
+      "count": 23,
+      "frequency": 0.523,
+      "confidence": "medium"
+    },
+    {
+      "tag": "nav",
+      "count": 46,
+      "frequency": 1.045,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 47,
+      "frequency": 1.068,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 2356,
+      "frequency": 53.545,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 288,
+      "frequency": 6.545,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 57,
+      "frequency": 1.295,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 161,
+      "frequency": 3.659,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 23,
+      "frequency": 0.523,
+      "confidence": "medium"
+    },
+    {
+      "pattern": "form",
+      "count": 502,
+      "frequency": 11.409,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "col-12",
+      "count": 6200
+    },
+    {
+      "class": "px-0",
+      "count": 5976
+    },
+    {
+      "class": "m-0",
+      "count": 2365
+    },
+    {
+      "class": "py-2",
+      "count": 2093
+    },
+    {
+      "class": "d-inline",
+      "count": 2024
+    },
+    {
+      "class": "subcategory-list-link",
+      "count": 2001
+    },
+    {
+      "class": "text-center",
+      "count": 1947
+    },
+    {
+      "class": "link_style",
+      "count": 1886
+    },
+    {
+      "class": "row",
+      "count": 1303
+    },
+    {
+      "class": "px-2",
+      "count": 1062
+    },
+    {
+      "class": "auto_link",
+      "count": 966
+    },
+    {
+      "class": "mx-0",
+      "count": 926
+    },
+    {
+      "class": "col-6",
+      "count": 886
+    },
+    {
+      "class": "d-block",
+      "count": 716
+    },
+    {
+      "class": "d-flex",
+      "count": 707
+    },
+    {
+      "class": "col-md-3",
+      "count": 666
+    },
+    {
+      "class": "position-relative",
+      "count": 573
+    },
+    {
+      "class": "rates",
+      "count": 549
+    },
+    {
+      "class": "px-md-4",
+      "count": 532
+    },
+    {
+      "class": "p-0",
+      "count": 521
+    },
+    {
+      "class": "pe-md-2",
+      "count": 521
+    },
+    {
+      "class": "state-section",
+      "count": 521
+    },
+    {
+      "class": "state",
+      "count": 521
+    },
+    {
+      "class": "d-none",
+      "count": 474
+    },
+    {
+      "class": "justify-content-center",
+      "count": 443
+    },
+    {
+      "class": "pt-4",
+      "count": 437
+    },
+    {
+      "class": "mx-auto",
+      "count": 436
+    },
+    {
+      "class": "mb-lg-0",
+      "count": 435
+    },
+    {
+      "class": "px-lg-2",
+      "count": 420
+    },
+    {
+      "class": "subcategory-list-bullet",
+      "count": 414
+    },
+    {
+      "class": "py-0",
+      "count": 414
+    },
+    {
+      "class": "px-xl-4",
+      "count": 414
+    },
+    {
+      "class": "list-heading-li",
+      "count": 414
+    },
+    {
+      "class": "subcategory-list-heading",
+      "count": 414
+    },
+    {
+      "class": "pb-lg-4",
+      "count": 414
+    },
+    {
+      "class": "home_link",
+      "count": 414
+    },
+    {
+      "class": "d-lg-none",
+      "count": 389
+    },
+    {
+      "class": "align-items-center",
+      "count": 388
+    },
+    {
+      "class": "theme-container",
+      "count": 369
+    },
+    {
+      "class": "col-lg-3",
+      "count": 351
+    },
+    {
+      "class": "pb-0",
+      "count": 346
+    },
+    {
+      "class": "mb-4",
+      "count": 291
+    },
+    {
+      "class": "mb-3",
+      "count": 287
+    },
+    {
+      "class": "pt-lg-0",
+      "count": 276
+    },
+    {
+      "class": "option",
+      "count": 268
+    },
+    {
+      "class": "nav-link",
+      "count": 261
+    },
+    {
+      "class": "wp-block-heading",
+      "count": 257
+    },
+    {
+      "class": "link-title",
+      "count": 253
+    },
+    {
+      "class": "health_link",
+      "count": 253
+    },
+    {
+      "class": "life_link",
+      "count": 253
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "search-site-form",
+      "count": 46
+    },
+    {
+      "id": "query-str-input",
+      "count": 46
+    },
+    {
+      "id": "sort-criteria",
+      "count": 46
+    },
+    {
+      "id": "sticky_category",
+      "count": 46
+    },
+    {
+      "id": "category",
+      "count": 44
+    },
+    {
+      "id": "expand-authors",
+      "count": 42
+    },
+    {
+      "id": "nav-icon",
+      "count": 23
+    },
+    {
+      "id": "navbarSupportedContent",
+      "count": 23
+    },
+    {
+      "id": "search",
+      "count": 23
+    },
+    {
+      "id": "nav-mobile-form",
+      "count": 23
+    },
+    {
+      "id": "nav-desktop-form",
+      "count": 23
+    },
+    {
+      "id": "sticky-menu-FS",
+      "count": 23
+    },
+    {
+      "id": "menufs-zip",
+      "count": 23
+    },
+    {
+      "id": "menufs-submit-btn",
+      "count": 23
+    },
+    {
+      "id": "progression",
+      "count": 23
+    },
+    {
+      "id": "homeListingsContainer",
+      "count": 23
+    },
+    {
+      "id": "sticky-toc-FS",
+      "count": 23
+    },
+    {
+      "id": "tocfs-zip",
+      "count": 23
+    },
+    {
+      "id": "sticky-topfs-submit-btn",
+      "count": 23
+    },
+    {
+      "id": "toc-sticky-mobile-form",
+      "count": 23
+    },
+    {
+      "id": "stickyfs-zip-mobile",
+      "count": 23
+    },
+    {
+      "id": "mobile-stickyfs-submit-btn",
+      "count": 23
+    },
+    {
+      "id": "load_ajx_bic_listing",
+      "count": 23
+    },
+    {
+      "id": "Methodology",
+      "count": 23
+    },
+    {
+      "id": "was-this-article-helpful-container",
+      "count": 23
+    },
+    {
+      "id": "was_this_helpful_form",
+      "count": 23
+    },
+    {
+      "id": "helpful_first_question_yes",
+      "count": 23
+    },
+    {
+      "id": "helpful_first_question_no",
+      "count": 23
+    },
+    {
+      "id": "helpful_second_question_yes",
+      "count": 23
+    },
+    {
+      "id": "helpful_second_question_no",
+      "count": 23
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": null,
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "low"
+  }
+}

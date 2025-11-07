@@ -1,0 +1,454 @@
+{
+  "domain": "greeneinsurancegroup.com",
+  "total_pages": 2,
+  "analyzed_at": "2025-11-07T14:35:34.859536",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "nav",
+      "count": 6,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 70,
+      "frequency": 35.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 92,
+      "frequency": 46.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 3,
+      "frequency": 1.5,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "fusion-textcolor-highlight",
+      "count": 75
+    },
+    {
+      "class": "menu-item",
+      "count": 50
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 48
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 48
+    },
+    {
+      "class": "fusion-text",
+      "count": 41
+    },
+    {
+      "class": "fusion-dropdown-submenu",
+      "count": 40
+    },
+    {
+      "class": "fusion-layout-column",
+      "count": 31
+    },
+    {
+      "class": "fusion_builder_column",
+      "count": 31
+    },
+    {
+      "class": "fusion-flex-column",
+      "count": 31
+    },
+    {
+      "class": "fusion-column-wrapper",
+      "count": 31
+    },
+    {
+      "class": "fusion-column-has-shadow",
+      "count": 31
+    },
+    {
+      "class": "fusion-flex-justify-content-flex-start",
+      "count": 31
+    },
+    {
+      "class": "fusion-content-layout-column",
+      "count": 31
+    },
+    {
+      "class": "fusion-mobile-nav-item",
+      "count": 25
+    },
+    {
+      "class": "fusion-row",
+      "count": 21
+    },
+    {
+      "class": "fusion-fullwidth",
+      "count": 17
+    },
+    {
+      "class": "fullwidth-box",
+      "count": 17
+    },
+    {
+      "class": "fusion-flex-container",
+      "count": 17
+    },
+    {
+      "class": "has-pattern-background",
+      "count": 17
+    },
+    {
+      "class": "has-mask-background",
+      "count": 17
+    },
+    {
+      "class": "hundred-percent-fullwidth",
+      "count": 17
+    },
+    {
+      "class": "non-hundred-percent-height-scrolling",
+      "count": 17
+    },
+    {
+      "class": "fusion-builder-row",
+      "count": 17
+    },
+    {
+      "class": "fusion-flex-align-items-flex-start",
+      "count": 17
+    },
+    {
+      "class": "fusion-flex-content-wrap",
+      "count": 17
+    },
+    {
+      "class": "menu-text",
+      "count": 15
+    },
+    {
+      "class": "fusion-image-element",
+      "count": 15
+    },
+    {
+      "class": "fusion-imageframe",
+      "count": 15
+    },
+    {
+      "class": "imageframe-none",
+      "count": 15
+    },
+    {
+      "class": "hover-type-none",
+      "count": 15
+    },
+    {
+      "class": "img-responsive",
+      "count": 15
+    },
+    {
+      "class": "lazyloaded",
+      "count": 13
+    },
+    {
+      "class": "menu-item-has-children",
+      "count": 12
+    },
+    {
+      "class": "sub-menu",
+      "count": 12
+    },
+    {
+      "class": "fusion_builder_column_1_1",
+      "count": 11
+    },
+    {
+      "class": "1_1",
+      "count": 11
+    },
+    {
+      "class": "fusion-no-lightbox",
+      "count": 9
+    },
+    {
+      "class": "fusion-dropdown-menu",
+      "count": 8
+    },
+    {
+      "class": "fusion-caret",
+      "count": 8
+    },
+    {
+      "class": "fusion-dropdown-indicator",
+      "count": 8
+    },
+    {
+      "class": "fusion-responsive-typography-calculated",
+      "count": 8
+    },
+    {
+      "class": "nitro-offscreen",
+      "count": 6
+    },
+    {
+      "class": "nitro-lazy",
+      "count": 6
+    },
+    {
+      "class": "fusion_builder_column_1_3",
+      "count": 6
+    },
+    {
+      "class": "1_3",
+      "count": 6
+    },
+    {
+      "class": "nitropack-inline-script",
+      "count": 5
+    },
+    {
+      "class": "lazyload",
+      "count": 5
+    },
+    {
+      "class": "page",
+      "count": 4
+    },
+    {
+      "class": "screen-reader-text",
+      "count": 4
+    },
+    {
+      "class": "wp-image-22448",
+      "count": 4
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "nitro-script",
+      "count": 4
+    },
+    {
+      "id": "google_gtagjs-js-consent-mode-data-layer",
+      "count": 3
+    },
+    {
+      "id": "google_gtagjs-js-after",
+      "count": 3
+    },
+    {
+      "id": "css-fb-visibility",
+      "count": 3
+    },
+    {
+      "id": "4144",
+      "count": 3
+    },
+    {
+      "id": "4138",
+      "count": 3
+    },
+    {
+      "id": "21537",
+      "count": 3
+    },
+    {
+      "id": "22363",
+      "count": 3
+    },
+    {
+      "id": "20647",
+      "count": 3
+    },
+    {
+      "id": "google_gtagjs-js",
+      "count": 2
+    },
+    {
+      "id": "bd5e09e12ed8c3ef6a8414c17b976151-1",
+      "count": 2
+    },
+    {
+      "id": "29f9d3dc77b8a12f22520a4669e54e63-1",
+      "count": 2
+    },
+    {
+      "id": "1190c69474289b3c09487c86f1362a67-1",
+      "count": 2
+    },
+    {
+      "id": "boxed-wrapper",
+      "count": 2
+    },
+    {
+      "id": "wrapper",
+      "count": 2
+    },
+    {
+      "id": "home",
+      "count": 2
+    },
+    {
+      "id": "menu-main-nav",
+      "count": 2
+    },
+    {
+      "id": "menu-item-4144",
+      "count": 2
+    },
+    {
+      "id": "menu-item-11992",
+      "count": 2
+    },
+    {
+      "id": "menu-item-22234",
+      "count": 2
+    },
+    {
+      "id": "menu-item-21779",
+      "count": 2
+    },
+    {
+      "id": "menu-item-11993",
+      "count": 2
+    },
+    {
+      "id": "menu-item-22416",
+      "count": 2
+    },
+    {
+      "id": "menu-item-4157",
+      "count": 2
+    },
+    {
+      "id": "menu-item-4138",
+      "count": 2
+    },
+    {
+      "id": "menu-item-21751",
+      "count": 2
+    },
+    {
+      "id": "menu-item-21746",
+      "count": 2
+    },
+    {
+      "id": "menu-item-21777",
+      "count": 2
+    },
+    {
+      "id": "menu-item-21757",
+      "count": 2
+    },
+    {
+      "id": "menu-item-21830",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "nav"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class*=\"ad\"], [id*=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

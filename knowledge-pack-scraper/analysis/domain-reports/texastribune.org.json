@@ -1,0 +1,456 @@
+{
+  "domain": "texastribune.org",
+  "total_pages": 2,
+  "analyzed_at": "2025-11-07T14:35:36.091028",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 33,
+      "frequency": 16.5,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 4,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 4,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 6,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 22,
+      "frequency": 11.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 42,
+      "frequency": 21.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 32,
+      "frequency": 16.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 86,
+      "frequency": 43.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 10,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 6,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 148,
+      "frequency": 74.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 14,
+      "frequency": 7.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-item",
+      "count": 106
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 70
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 70
+    },
+    {
+      "class": "is-layout-flex",
+      "count": 42
+    },
+    {
+      "class": "wp-block-group",
+      "count": 36
+    },
+    {
+      "class": "entry-meta",
+      "count": 35
+    },
+    {
+      "class": "entry-date",
+      "count": 35
+    },
+    {
+      "class": "wp-block-column",
+      "count": 34
+    },
+    {
+      "class": "is-layout-flow",
+      "count": 34
+    },
+    {
+      "class": "wp-block-column-is-layout-flow",
+      "count": 34
+    },
+    {
+      "class": "entry-title",
+      "count": 33
+    },
+    {
+      "class": "published",
+      "count": 33
+    },
+    {
+      "class": "updated",
+      "count": 33
+    },
+    {
+      "class": "has-text-color",
+      "count": 32
+    },
+    {
+      "class": "type-post",
+      "count": 31
+    },
+    {
+      "class": "post-has-image",
+      "count": 31
+    },
+    {
+      "class": "entry-wrapper",
+      "count": 31
+    },
+    {
+      "class": "author",
+      "count": 30
+    },
+    {
+      "class": "vcard",
+      "count": 30
+    },
+    {
+      "class": "url",
+      "count": 30
+    },
+    {
+      "class": "fn",
+      "count": 30
+    },
+    {
+      "class": "n",
+      "count": 30
+    },
+    {
+      "class": "menu-item-type-taxonomy",
+      "count": 28
+    },
+    {
+      "class": "menu-item-object-category",
+      "count": 28
+    },
+    {
+      "class": "has-link-color",
+      "count": 26
+    },
+    {
+      "class": "byline",
+      "count": 26
+    },
+    {
+      "class": "widget",
+      "count": 24
+    },
+    {
+      "class": "has-background",
+      "count": 24
+    },
+    {
+      "class": "category-politics",
+      "count": 23
+    },
+    {
+      "class": "wp-block-button",
+      "count": 22
+    },
+    {
+      "class": "has-custom-width",
+      "count": 22
+    },
+    {
+      "class": "wp-block-button__link",
+      "count": 22
+    },
+    {
+      "class": "has-dark-gray-color",
+      "count": 22
+    },
+    {
+      "class": "wp-element-button",
+      "count": 22
+    },
+    {
+      "class": "wp-block-group__inner-container",
+      "count": 20
+    },
+    {
+      "class": "is-layout-constrained",
+      "count": 20
+    },
+    {
+      "class": "wp-block-group-is-layout-constrained",
+      "count": 20
+    },
+    {
+      "class": "category-state-government",
+      "count": 20
+    },
+    {
+      "class": "has-primary-background-color",
+      "count": 20
+    },
+    {
+      "class": "svg-icon",
+      "count": 18
+    },
+    {
+      "class": "screen-reader-text",
+      "count": 16
+    },
+    {
+      "class": "wrapper",
+      "count": 16
+    },
+    {
+      "class": "widget_block",
+      "count": 16
+    },
+    {
+      "class": "wp-block-heading",
+      "count": 16
+    },
+    {
+      "class": "wp-block-group-is-layout-flex",
+      "count": 16
+    },
+    {
+      "class": "is-vertically-aligned-center",
+      "count": 16
+    },
+    {
+      "class": "wp-block-button__width-50",
+      "count": 16
+    },
+    {
+      "class": "has-custom-font-size",
+      "count": 16
+    },
+    {
+      "class": "author-prefix",
+      "count": 16
+    },
+    {
+      "class": "newspack_global_ad",
+      "count": 14
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "133632",
+      "count": 5
+    },
+    {
+      "id": "parsely-cfg",
+      "count": 4
+    },
+    {
+      "id": "perfmatters-used-css",
+      "count": 2
+    },
+    {
+      "id": "wp-block-library-css",
+      "count": 2
+    },
+    {
+      "id": "wp-block-library-theme-inline-css",
+      "count": 2
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 2
+    },
+    {
+      "id": "co-authors-plus-coauthors-style-inline-css",
+      "count": 2
+    },
+    {
+      "id": "co-authors-plus-avatar-style-inline-css",
+      "count": 2
+    },
+    {
+      "id": "co-authors-plus-image-style-inline-css",
+      "count": 2
+    },
+    {
+      "id": "safe-svg-svg-icon-style-inline-css",
+      "count": 2
+    },
+    {
+      "id": "wp-parsely-recommendations-style-inline-css",
+      "count": 2
+    },
+    {
+      "id": "mediaelement-css",
+      "count": 2
+    },
+    {
+      "id": "wp-mediaelement-css",
+      "count": 2
+    },
+    {
+      "id": "jetpack-sharing-buttons-style-inline-css",
+      "count": 2
+    },
+    {
+      "id": "everlit-block-editor-styles-css",
+      "count": 2
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 2
+    },
+    {
+      "id": "newspack-ads-media-kit-frontend-css",
+      "count": 2
+    },
+    {
+      "id": "newspack-ads-frontend-css",
+      "count": 2
+    },
+    {
+      "id": "newspack-blocks-block-styles-stylesheet-css",
+      "count": 2
+    },
+    {
+      "id": "foundation-events-styles-css",
+      "count": 2
+    },
+    {
+      "id": "foundation-locations-styles-css",
+      "count": 2
+    },
+    {
+      "id": "foundation-movies-styles-css",
+      "count": 2
+    },
+    {
+      "id": "newspack-newsletters-subscriptions-css",
+      "count": 2
+    },
+    {
+      "id": "wp-components-css",
+      "count": 2
+    },
+    {
+      "id": "newspack-commons-css",
+      "count": 2
+    },
+    {
+      "id": "newspack-reader-auth-css",
+      "count": 2
+    },
+    {
+      "id": "newspack-recaptcha-css",
+      "count": 2
+    },
+    {
+      "id": "newspack-corrections-single-css",
+      "count": 2
+    },
+    {
+      "id": "newspack-ui-css",
+      "count": 2
+    },
+    {
+      "id": "newspack-popups-view-css",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"ads\"], [id*=\"ads\"], [class*=\"tracker\"], [id*=\"tracker\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

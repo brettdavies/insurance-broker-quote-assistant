@@ -1,0 +1,456 @@
+{
+  "domain": "statesman.com",
+  "total_pages": 2,
+  "analyzed_at": "2025-11-07T14:35:36.526755",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 28,
+      "frequency": 14.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 6,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 83,
+      "frequency": 41.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 78,
+      "frequency": 39.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 10,
+      "frequency": 5.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "f",
+      "count": 441
+    },
+    {
+      "class": "x100",
+      "count": 293
+    },
+    {
+      "class": "td300",
+      "count": 288
+    },
+    {
+      "class": "rel",
+      "count": 274
+    },
+    {
+      "class": "fdc",
+      "count": 254
+    },
+    {
+      "class": "block",
+      "count": 232
+    },
+    {
+      "class": "hover:o70",
+      "count": 211
+    },
+    {
+      "class": "aic",
+      "count": 156
+    },
+    {
+      "class": "ttfeio",
+      "count": 144
+    },
+    {
+      "class": "c-black",
+      "count": 128
+    },
+    {
+      "class": "jcb",
+      "count": 108
+    },
+    {
+      "class": "y100",
+      "count": 85
+    },
+    {
+      "class": "p0",
+      "count": 82
+    },
+    {
+      "class": "tpo",
+      "count": 74
+    },
+    {
+      "class": "c-gray600",
+      "count": 71
+    },
+    {
+      "class": "g4",
+      "count": 70
+    },
+    {
+      "class": "o0",
+      "count": 70
+    },
+    {
+      "class": "tdl300",
+      "count": 70
+    },
+    {
+      "class": "opc",
+      "count": 69
+    },
+    {
+      "class": "bgpc",
+      "count": 69
+    },
+    {
+      "class": "mnh0px",
+      "count": 69
+    },
+    {
+      "class": "fill",
+      "count": 69
+    },
+    {
+      "class": "bgt",
+      "count": 66
+    },
+    {
+      "class": "tdn",
+      "count": 66
+    },
+    {
+      "class": "jcc",
+      "count": 64
+    },
+    {
+      "class": "none",
+      "count": 62
+    },
+    {
+      "class": "py8",
+      "count": 60
+    },
+    {
+      "class": "abs",
+      "count": 58
+    },
+    {
+      "class": "hamburgerMenuSection",
+      "count": 56
+    },
+    {
+      "class": "ofcv",
+      "count": 56
+    },
+    {
+      "class": "bgscv",
+      "count": 56
+    },
+    {
+      "class": "bb",
+      "count": 55
+    },
+    {
+      "class": "pen",
+      "count": 54
+    },
+    {
+      "class": "cp",
+      "count": 54
+    },
+    {
+      "class": "c-gray700",
+      "count": 52
+    },
+    {
+      "class": "hover:tdn",
+      "count": 49
+    },
+    {
+      "class": "tpt",
+      "count": 48
+    },
+    {
+      "class": "td100",
+      "count": 48
+    },
+    {
+      "class": "ttfl",
+      "count": 48
+    },
+    {
+      "class": "top",
+      "count": 46
+    },
+    {
+      "class": "y32px",
+      "count": 45
+    },
+    {
+      "class": "wsn",
+      "count": 44
+    },
+    {
+      "class": "fdr",
+      "count": 44
+    },
+    {
+      "class": "vh",
+      "count": 42
+    },
+    {
+      "class": "sm:px0",
+      "count": 41
+    },
+    {
+      "class": "g2",
+      "count": 39
+    },
+    {
+      "class": "m0",
+      "count": 39
+    },
+    {
+      "class": "px20",
+      "count": 39
+    },
+    {
+      "class": "z1",
+      "count": 39
+    },
+    {
+      "class": "r12zgbl0",
+      "count": 38
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "mediaCaptionAria",
+      "count": 37
+    },
+    {
+      "id": "6147a631-ca69-46b6-b304-25c0820ae2c8",
+      "count": 10
+    },
+    {
+      "id": "NTV7ARD",
+      "count": 8
+    },
+    {
+      "id": "Ad-Topper-Unit",
+      "count": 6
+    },
+    {
+      "id": "Crown",
+      "count": 6
+    },
+    {
+      "id": "Flex1",
+      "count": 6
+    },
+    {
+      "id": "A300",
+      "count": 6
+    },
+    {
+      "id": "Inline-1",
+      "count": 6
+    },
+    {
+      "id": "Inline-2",
+      "count": 5
+    },
+    {
+      "id": "g_id_onload",
+      "count": 4
+    },
+    {
+      "id": "Shape",
+      "count": 4
+    },
+    {
+      "id": "Type=Share Tools, Name=Facebook, State=Initial",
+      "count": 4
+    },
+    {
+      "id": "Vector",
+      "count": 4
+    },
+    {
+      "id": "Type=Share Tools, Name=Twitter, State=Initial",
+      "count": 4
+    },
+    {
+      "id": "path1009",
+      "count": 4
+    },
+    {
+      "id": "Inline-3",
+      "count": 4
+    },
+    {
+      "id": "RB-1",
+      "count": 4
+    },
+    {
+      "id": "RB-2",
+      "count": 4
+    },
+    {
+      "id": "collection-133668-simple_list",
+      "count": 4
+    },
+    {
+      "id": "collection-133671-simple_list",
+      "count": 4
+    },
+    {
+      "id": "collection-133672-simple_list",
+      "count": 4
+    },
+    {
+      "id": "collection-133673-simple_list",
+      "count": 4
+    },
+    {
+      "id": "Path 5",
+      "count": 3
+    },
+    {
+      "id": "Path 5_2",
+      "count": 3
+    },
+    {
+      "id": "internalEid",
+      "count": 2
+    },
+    {
+      "id": "page-json-ld-0",
+      "count": 2
+    },
+    {
+      "id": "page-json-ld-1",
+      "count": 2
+    },
+    {
+      "id": "ntv_iiq_script",
+      "count": 2
+    },
+    {
+      "id": "undefined",
+      "count": 2
+    },
+    {
+      "id": "exp_d3fafbab-6090-449f-abf1-dea7610ea02e",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"ad\"], [id*=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

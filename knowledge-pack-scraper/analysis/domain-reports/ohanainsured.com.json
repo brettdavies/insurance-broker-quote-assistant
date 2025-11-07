@@ -1,0 +1,453 @@
+{
+  "domain": "ohanainsured.com",
+  "total_pages": 2,
+  "analyzed_at": "2025-11-07T14:35:36.605573",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "footer",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "nav",
+      "count": 6,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 34,
+      "frequency": 17.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 30,
+      "frequency": 15.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 54,
+      "frequency": 27.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 4,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 6,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "icon",
+      "count": 76
+    },
+    {
+      "class": "unifiednav__item-wrap",
+      "count": 72
+    },
+    {
+      "class": "unifiednav__item",
+      "count": 72
+    },
+    {
+      "class": "nav-item-text",
+      "count": 72
+    },
+    {
+      "class": "dmRespCol",
+      "count": 44
+    },
+    {
+      "class": "small-12",
+      "count": 44
+    },
+    {
+      "class": "icon-angle-right",
+      "count": 42
+    },
+    {
+      "class": "clearfix",
+      "count": 42
+    },
+    {
+      "class": "dmRespRow",
+      "count": 32
+    },
+    {
+      "class": "dmRespColsWrapper",
+      "count": 32
+    },
+    {
+      "class": "icon-angle-down",
+      "count": 30
+    },
+    {
+      "class": "medium-12",
+      "count": 26
+    },
+    {
+      "class": "large-12",
+      "count": 26
+    },
+    {
+      "class": "unifiednav__container",
+      "count": 24
+    },
+    {
+      "class": "dmNewParagraph",
+      "count": 22
+    },
+    {
+      "class": "inner",
+      "count": 22
+    },
+    {
+      "class": "postArticle",
+      "count": 20
+    },
+    {
+      "class": "wow",
+      "count": 20
+    },
+    {
+      "class": "blogImgLink",
+      "count": 20
+    },
+    {
+      "class": "blogImg",
+      "count": 20
+    },
+    {
+      "class": "postTextContainer",
+      "count": 20
+    },
+    {
+      "class": "postText",
+      "count": 20
+    },
+    {
+      "class": "postTitle",
+      "count": 20
+    },
+    {
+      "class": "authorBar",
+      "count": 20
+    },
+    {
+      "class": "postDescription",
+      "count": 20
+    },
+    {
+      "class": "readMore",
+      "count": 20
+    },
+    {
+      "class": "unifiednav__item_has-sub-nav",
+      "count": 18
+    },
+    {
+      "class": "unifiednav__container_sub-nav",
+      "count": 18
+    },
+    {
+      "class": "align-center",
+      "count": 16
+    },
+    {
+      "class": "oneIcon",
+      "count": 14
+    },
+    {
+      "class": "socialHubIcon",
+      "count": 12
+    },
+    {
+      "class": "pswp__button",
+      "count": 12
+    },
+    {
+      "class": "p_hfcontainer",
+      "count": 10
+    },
+    {
+      "class": "shareLink",
+      "count": 10
+    },
+    {
+      "class": "clickTarget",
+      "count": 10
+    },
+    {
+      "class": "share-icon",
+      "count": 10
+    },
+    {
+      "class": "default",
+      "count": 8
+    },
+    {
+      "class": "imageWidget",
+      "count": 8
+    },
+    {
+      "class": "showOnMedium",
+      "count": 6
+    },
+    {
+      "class": "main-navigation",
+      "count": 6
+    },
+    {
+      "class": "unifiednav",
+      "count": 6
+    },
+    {
+      "class": "dmLinksMenu",
+      "count": 6
+    },
+    {
+      "class": "dmUDNavigationItem_010101948020",
+      "count": 6
+    },
+    {
+      "class": "dmUDNavigationItem_010101516864",
+      "count": 6
+    },
+    {
+      "class": "dmUDNavigationItem_010101818031",
+      "count": 6
+    },
+    {
+      "class": "dmUDNavigationItem_010101292893",
+      "count": 6
+    },
+    {
+      "class": "dmUDNavigationItem_010101434747",
+      "count": 6
+    },
+    {
+      "class": "dmUDNavigationItem_010101298905",
+      "count": 6
+    },
+    {
+      "class": "dmUDNavigationItem_010101645181",
+      "count": 6
+    },
+    {
+      "class": "dmUDNavigationItem_010101507025",
+      "count": 6
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "unifiedNav",
+      "count": 6
+    },
+    {
+      "id": "hamburger-header",
+      "count": 4
+    },
+    {
+      "id": "1716942098",
+      "count": 4
+    },
+    {
+      "id": "customRules",
+      "count": 2
+    },
+    {
+      "id": "view",
+      "count": 2
+    },
+    {
+      "id": "d-js-dmapi",
+      "count": 2
+    },
+    {
+      "id": "d-js-load-css",
+      "count": 2
+    },
+    {
+      "id": "forceCssIncludes",
+      "count": 2
+    },
+    {
+      "id": "cssVariables",
+      "count": 2
+    },
+    {
+      "id": "widgetCSS",
+      "count": 2
+    },
+    {
+      "id": "pageAdditionalWidgetsCss",
+      "count": 2
+    },
+    {
+      "id": "siteGlobalCss",
+      "count": 2
+    },
+    {
+      "id": "customWidgetStyle",
+      "count": 2
+    },
+    {
+      "id": "innerPagesStyle",
+      "count": 2
+    },
+    {
+      "id": "additionalGlobalCss",
+      "count": 2
+    },
+    {
+      "id": "pagestyle",
+      "count": 2
+    },
+    {
+      "id": "pagestyleDevice",
+      "count": 2
+    },
+    {
+      "id": "globalFontSizeStyle",
+      "count": 2
+    },
+    {
+      "id": "pageFontSizeStyle",
+      "count": 2
+    },
+    {
+      "id": "d-js-jquery",
+      "count": 2
+    },
+    {
+      "id": "d-js-params",
+      "count": 2
+    },
+    {
+      "id": "d-js-core",
+      "count": 2
+    },
+    {
+      "id": "hideAnimFix",
+      "count": 2
+    },
+    {
+      "id": "fontFallbacks",
+      "count": 2
+    },
+    {
+      "id": "dmRoot",
+      "count": 2
+    },
+    {
+      "id": "dm",
+      "count": 2
+    },
+    {
+      "id": "1901957768",
+      "count": 2
+    },
+    {
+      "id": "Hamburger",
+      "count": 2
+    },
+    {
+      "id": "dm-outer-wrapper",
+      "count": 2
+    },
+    {
+      "id": "dmStyle_outerContainer",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "nav"
+    ],
+    "css_selector": "[role=\"main\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"menu\"], [id*=\"menu\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "low"
+  }
+}

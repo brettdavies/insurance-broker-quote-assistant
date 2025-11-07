@@ -1,0 +1,454 @@
+{
+  "domain": "thezebra.com",
+  "total_pages": 83,
+  "analyzed_at": "2025-11-07T14:29:13.469194",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 16,
+      "frequency": 0.193,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 166,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 83,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "footer",
+      "count": 83,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 249,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 40,
+      "frequency": 0.482,
+      "confidence": "low"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 95,
+      "frequency": 1.145,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 1,
+      "frequency": 0.012,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 4996,
+      "frequency": 60.193,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 80,
+      "frequency": 0.964,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 379,
+      "frequency": 4.566,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 2944,
+      "frequency": 35.47,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "block",
+      "count": 2943
+    },
+    {
+      "class": "row",
+      "count": 2916
+    },
+    {
+      "class": "col-12",
+      "count": 1438
+    },
+    {
+      "class": "col",
+      "count": 1418
+    },
+    {
+      "class": "btn",
+      "count": 1414
+    },
+    {
+      "class": "card",
+      "count": 1213
+    },
+    {
+      "class": "card-title",
+      "count": 1209
+    },
+    {
+      "class": "card-body",
+      "count": 1207
+    },
+    {
+      "class": "wysiwyg-block",
+      "count": 1053
+    },
+    {
+      "class": "rating-fill",
+      "count": 990
+    },
+    {
+      "class": "card-product",
+      "count": 913
+    },
+    {
+      "class": "product",
+      "count": 913
+    },
+    {
+      "class": "card-icon-wrap",
+      "count": 913
+    },
+    {
+      "class": "btn-icon",
+      "count": 756
+    },
+    {
+      "class": "col-sm-6",
+      "count": 680
+    },
+    {
+      "class": "mb-0",
+      "count": 661
+    },
+    {
+      "class": "btn-sm",
+      "count": 638
+    },
+    {
+      "class": "sr-only",
+      "count": 614
+    },
+    {
+      "class": "lozad",
+      "count": 585
+    },
+    {
+      "class": "header-nav-item",
+      "count": 581
+    },
+    {
+      "class": "title-sm",
+      "count": 567
+    },
+    {
+      "class": "align-items-center",
+      "count": 522
+    },
+    {
+      "class": "horizontal-rule-block",
+      "count": 510
+    },
+    {
+      "class": "col-lg-3",
+      "count": 507
+    },
+    {
+      "class": "btn-text",
+      "count": 506
+    },
+    {
+      "class": "header-nav-headline",
+      "count": 498
+    },
+    {
+      "class": "footer-links",
+      "count": 498
+    },
+    {
+      "class": "d-flex",
+      "count": 497
+    },
+    {
+      "class": "container",
+      "count": 496
+    },
+    {
+      "class": "text-center",
+      "count": 476
+    },
+    {
+      "class": "toc-anchor",
+      "count": 471
+    },
+    {
+      "class": "btn-square",
+      "count": 464
+    },
+    {
+      "class": "btn-icon-center",
+      "count": 442
+    },
+    {
+      "class": "mb-05",
+      "count": 432
+    },
+    {
+      "class": "justify-content-center",
+      "count": 426
+    },
+    {
+      "class": "mb-1",
+      "count": 409
+    },
+    {
+      "class": "page-author-tooltip",
+      "count": 407
+    },
+    {
+      "class": "img-responsive",
+      "count": 394
+    },
+    {
+      "class": "btn-icon-right",
+      "count": 393
+    },
+    {
+      "class": "table-responsive",
+      "count": 366
+    },
+    {
+      "class": "mb-105",
+      "count": 336
+    },
+    {
+      "class": "anchor-text",
+      "count": 332
+    },
+    {
+      "class": "hidden-lg-up",
+      "count": 316
+    },
+    {
+      "class": "section-xs",
+      "count": 308
+    },
+    {
+      "class": "col-lg-6",
+      "count": 306
+    },
+    {
+      "class": "body-md",
+      "count": 304
+    },
+    {
+      "class": "form-group",
+      "count": 302
+    },
+    {
+      "class": "form-control",
+      "count": 298
+    },
+    {
+      "class": "img-circle",
+      "count": 297
+    },
+    {
+      "class": "page-author-details",
+      "count": 297
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "osano-cm-aria.newWindow",
+      "count": 83
+    },
+    {
+      "id": "osano-cm-aria.external",
+      "count": 83
+    },
+    {
+      "id": "osano-cm-aria.externalNewWindow",
+      "count": 83
+    },
+    {
+      "id": "old-browser-screen",
+      "count": 83
+    },
+    {
+      "id": "main",
+      "count": 83
+    },
+    {
+      "id": "page-author-tooltip",
+      "count": 83
+    },
+    {
+      "id": "pagevars",
+      "count": 83
+    },
+    {
+      "id": "product-cta-modal",
+      "count": 83
+    },
+    {
+      "id": "product-cta-modal-title",
+      "count": 83
+    },
+    {
+      "id": "mask0_1606_3426",
+      "count": 83
+    },
+    {
+      "id": "mask1_1606_3426",
+      "count": 83
+    },
+    {
+      "id": "mask0_87_312",
+      "count": 83
+    },
+    {
+      "id": "f36703c1-7201-4a39-ac0e-ca16dee4697a",
+      "count": 83
+    },
+    {
+      "id": "b284cc92-508b-45fc-b92f-976adb462231",
+      "count": 83
+    },
+    {
+      "id": "mask0_3029_4497",
+      "count": 83
+    },
+    {
+      "id": "page-editor-tooltip",
+      "count": 76
+    },
+    {
+      "id": "disclaimerText",
+      "count": 74
+    },
+    {
+      "id": "1518",
+      "count": 74
+    },
+    {
+      "id": "3",
+      "count": 49
+    },
+    {
+      "id": "2946",
+      "count": 48
+    },
+    {
+      "id": "1655",
+      "count": 40
+    },
+    {
+      "id": "page-reviewer-tooltip",
+      "count": 34
+    },
+    {
+      "id": "faqs",
+      "count": 33
+    },
+    {
+      "id": "discount-comparison",
+      "count": 31
+    },
+    {
+      "id": "which-company-is-better",
+      "count": 30
+    },
+    {
+      "id": "telematics-comparison",
+      "count": 30
+    },
+    {
+      "id": "roadside-assistance",
+      "count": 30
+    },
+    {
+      "id": "home-insurance-comparison",
+      "count": 30
+    },
+    {
+      "id": "bundling-options",
+      "count": 30
+    },
+    {
+      "id": "2821",
+      "count": 29
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "footer",
+      "nav"
+    ],
+    "css_selector": "main, [role=\"main\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

@@ -1,0 +1,455 @@
+{
+  "domain": "lendingtree.com",
+  "total_pages": 13,
+  "analyzed_at": "2025-11-07T14:35:31.382162",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 21,
+      "frequency": 1.615,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 13,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 39,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 30,
+      "frequency": 2.308,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 37,
+      "frequency": 2.846,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 946,
+      "frequency": 72.769,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 50,
+      "frequency": 3.846,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 20,
+      "frequency": 1.538,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 1448,
+      "frequency": 111.385,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 85,
+      "frequency": 6.538,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 81,
+      "frequency": 6.231,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "column-1",
+      "count": 498
+    },
+    {
+      "class": "column-2",
+      "count": 498
+    },
+    {
+      "class": "column-3",
+      "count": 418
+    },
+    {
+      "class": "Icon--root",
+      "count": 355
+    },
+    {
+      "class": "LendingTreeIcon--root",
+      "count": 355
+    },
+    {
+      "class": "Icon--align-left",
+      "count": 337
+    },
+    {
+      "class": "NavMenu--submenu-item",
+      "count": 333
+    },
+    {
+      "class": "NavMenu--submenu-link",
+      "count": 333
+    },
+    {
+      "class": "Paragraph--root",
+      "count": 332
+    },
+    {
+      "class": "Paragraph--align-left",
+      "count": 332
+    },
+    {
+      "class": "dt-type-numeric",
+      "count": 332
+    },
+    {
+      "class": "wp-block-paragraph",
+      "count": 323
+    },
+    {
+      "class": "LendingTreeIcon--size-small",
+      "count": 286
+    },
+    {
+      "class": "LendingTreeIcon--color-white",
+      "count": 225
+    },
+    {
+      "class": "column-4",
+      "count": 198
+    },
+    {
+      "class": "SiteMobileNavigation--submenu-link",
+      "count": 189
+    },
+    {
+      "class": "lt4-Check",
+      "count": 162
+    },
+    {
+      "class": "text-success",
+      "count": 160
+    },
+    {
+      "class": "dt-paging-button",
+      "count": 159
+    },
+    {
+      "class": "dt-layout-cell",
+      "count": 155
+    },
+    {
+      "class": "Heading--root",
+      "count": 138
+    },
+    {
+      "class": "wp-block-lendingtree-block-heading",
+      "count": 138
+    },
+    {
+      "class": "Heading--align-left",
+      "count": 138
+    },
+    {
+      "class": "has-lt-deep-blue-color",
+      "count": 138
+    },
+    {
+      "class": "Heading--content",
+      "count": 138
+    },
+    {
+      "class": "size-full",
+      "count": 112
+    },
+    {
+      "class": "alignnone",
+      "count": 109
+    },
+    {
+      "class": "dt-column-title",
+      "count": 103
+    },
+    {
+      "class": "dt-layout-row",
+      "count": 93
+    },
+    {
+      "class": "dt-column-order",
+      "count": 80
+    },
+    {
+      "class": "Heading--h2",
+      "count": 79
+    },
+    {
+      "class": "TOC--list-item",
+      "count": 77
+    },
+    {
+      "class": "TOC--link",
+      "count": 77
+    },
+    {
+      "class": "tablepress",
+      "count": 76
+    },
+    {
+      "class": "row-1",
+      "count": 76
+    },
+    {
+      "class": "row-2",
+      "count": 76
+    },
+    {
+      "class": "column-5",
+      "count": 75
+    },
+    {
+      "class": "row-3",
+      "count": 74
+    },
+    {
+      "class": "dt-orderable-asc",
+      "count": 70
+    },
+    {
+      "class": "dt-orderable-desc",
+      "count": 70
+    },
+    {
+      "class": "tablepress-responsive",
+      "count": 68
+    },
+    {
+      "class": "row-4",
+      "count": 68
+    },
+    {
+      "class": "Tooltip--root",
+      "count": 66
+    },
+    {
+      "class": "Tooltip--title",
+      "count": 66
+    },
+    {
+      "class": "Tooltip--content",
+      "count": 66
+    },
+    {
+      "class": "Tooltip--content-text",
+      "count": 66
+    },
+    {
+      "class": "tablepress-scroll-wrapper",
+      "count": 64
+    },
+    {
+      "class": "NavMenu--item",
+      "count": 63
+    },
+    {
+      "class": "NavMenu--menu-label",
+      "count": 63
+    },
+    {
+      "class": "NavMenu--arrow",
+      "count": 63
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "global-styles-inline-css",
+      "count": 13
+    },
+    {
+      "id": "tablepress-default-css",
+      "count": 13
+    },
+    {
+      "id": "tablepress-default-inline-css",
+      "count": 13
+    },
+    {
+      "id": "tablepress-datatables-buttons-css",
+      "count": 13
+    },
+    {
+      "id": "tablepress-datatables-fixedheader-css",
+      "count": 13
+    },
+    {
+      "id": "tablepress-datatables-fixedcolumns-css",
+      "count": 13
+    },
+    {
+      "id": "tablepress-datatables-scroll-buttons-css",
+      "count": 13
+    },
+    {
+      "id": "tablepress-responsive-tables-css",
+      "count": 13
+    },
+    {
+      "id": "tablepress-datatables-columnfilterwidgets-css",
+      "count": 13
+    },
+    {
+      "id": "tablepress-datatables-serverside-processing-css",
+      "count": 13
+    },
+    {
+      "id": "jquery-core-js",
+      "count": 13
+    },
+    {
+      "id": "https://assets.adobedtm.com/launch-EN21cb38a11dec4a578659a774081ffe40.min.js",
+      "count": 13
+    },
+    {
+      "id": "wl-json-ld",
+      "count": 13
+    },
+    {
+      "id": "intercept-stylesheet",
+      "count": 12
+    },
+    {
+      "id": "intercept-app",
+      "count": 12
+    },
+    {
+      "id": "tablepress-datatables-js",
+      "count": 11
+    },
+    {
+      "id": "tablepress-datatables-js-after",
+      "count": 11
+    },
+    {
+      "id": "quotebox-section",
+      "count": 10
+    },
+    {
+      "id": "quotebox-details-form",
+      "count": 10
+    },
+    {
+      "id": "Quotebox-insurance-type",
+      "count": 10
+    },
+    {
+      "id": "Quotebox-insurance-zip",
+      "count": 10
+    },
+    {
+      "id": "Quotebox-insurance-age",
+      "count": 10
+    },
+    {
+      "id": "Quotebox-insurance-insured",
+      "count": 10
+    },
+    {
+      "id": "0",
+      "count": 10
+    },
+    {
+      "id": "wp-block-library-css",
+      "count": 9
+    },
+    {
+      "id": "lendingtree-block-card-editorial-rating-style-inline-css",
+      "count": 9
+    },
+    {
+      "id": "lendingtree-block-extend-columns-style-inline-css",
+      "count": 9
+    },
+    {
+      "id": "lt-block-button-style-css",
+      "count": 9
+    },
+    {
+      "id": "lt-block-extend-list-style-css",
+      "count": 9
+    },
+    {
+      "id": "lt-block-generic-modal-style-css",
+      "count": 9
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

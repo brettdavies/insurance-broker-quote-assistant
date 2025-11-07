@@ -1,0 +1,454 @@
+{
+  "domain": "moneygeek.com",
+  "total_pages": 76,
+  "analyzed_at": "2025-11-07T14:29:32.122164",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 76,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 76,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "nav",
+      "count": 82,
+      "frequency": 1.079,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 77,
+      "frequency": 1.013,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 32210,
+      "frequency": 423.816,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 396,
+      "frequency": 5.211,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 425,
+      "frequency": 5.592,
+      "confidence": "high"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 76,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 456,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 437,
+      "frequency": 5.75,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 803,
+      "frequency": 10.566,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "text-[16px]",
+      "count": 19362
+    },
+    {
+      "class": "px-[8px]",
+      "count": 18444
+    },
+    {
+      "class": "text-center",
+      "count": 16156
+    },
+    {
+      "class": "font-bold",
+      "count": 14750
+    },
+    {
+      "class": "first:pl-[16px]",
+      "count": 14723
+    },
+    {
+      "class": "last:pr-[16px]",
+      "count": 14723
+    },
+    {
+      "class": "flex",
+      "count": 14707
+    },
+    {
+      "class": "leading-[24px]",
+      "count": 13982
+    },
+    {
+      "class": "w-auto",
+      "count": 13912
+    },
+    {
+      "class": "table-cell",
+      "count": 13497
+    },
+    {
+      "class": "py-[16px]",
+      "count": 13497
+    },
+    {
+      "class": "md:p-[8px]",
+      "count": 13497
+    },
+    {
+      "class": "font-normal",
+      "count": 11281
+    },
+    {
+      "class": "text-mg-text-dark",
+      "count": 9770
+    },
+    {
+      "class": "w-full",
+      "count": 8455
+    },
+    {
+      "class": "items-center",
+      "count": 7650
+    },
+    {
+      "class": "mb-0",
+      "count": 6852
+    },
+    {
+      "class": "inline-block",
+      "count": 6234
+    },
+    {
+      "class": "flex-col",
+      "count": 5910
+    },
+    {
+      "class": "flex-row",
+      "count": 5668
+    },
+    {
+      "class": "font-mg-header",
+      "count": 5058
+    },
+    {
+      "class": "flex-wrap",
+      "count": 4874
+    },
+    {
+      "class": "normal-case",
+      "count": 4405
+    },
+    {
+      "class": "grow",
+      "count": 4332
+    },
+    {
+      "class": "h-full",
+      "count": 4266
+    },
+    {
+      "class": "relative",
+      "count": 4173
+    },
+    {
+      "class": "last:rounded-b-[12px]",
+      "count": 4133
+    },
+    {
+      "class": "odd:bg-white",
+      "count": 3969
+    },
+    {
+      "class": "even:bg-mg-light-blue-gray",
+      "count": 3969
+    },
+    {
+      "class": "pb-[24px]",
+      "count": 3881
+    },
+    {
+      "class": "md:px-0",
+      "count": 3876
+    },
+    {
+      "class": "md:pt-0",
+      "count": 3867
+    },
+    {
+      "class": "hover:text-mg-blue-dark",
+      "count": 3840
+    },
+    {
+      "class": "md:pb-0",
+      "count": 3797
+    },
+    {
+      "class": "gap-y-[8px]",
+      "count": 3726
+    },
+    {
+      "class": "pt-[16px]",
+      "count": 3722
+    },
+    {
+      "class": "md:last:rounded-0",
+      "count": 3721
+    },
+    {
+      "class": "first:rounded-t-[12px]",
+      "count": 3721
+    },
+    {
+      "class": "leading-5",
+      "count": 3595
+    },
+    {
+      "class": "whitespace-nowrap",
+      "count": 3469
+    },
+    {
+      "class": "block",
+      "count": 3447
+    },
+    {
+      "class": "py-[8px]",
+      "count": 3394
+    },
+    {
+      "class": "px-[16px]",
+      "count": 3302
+    },
+    {
+      "class": "d-none",
+      "count": 3128
+    },
+    {
+      "class": "text-left",
+      "count": 3071
+    },
+    {
+      "class": "leading-[22.4px]",
+      "count": 2890
+    },
+    {
+      "class": "absolute",
+      "count": 2826
+    },
+    {
+      "class": "style_tableCell__a7oyj",
+      "count": 2794
+    },
+    {
+      "class": "whitespace-pre-wrap",
+      "count": 2794
+    },
+    {
+      "class": "hover:decoration-dotted",
+      "count": 2732
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "mg-mon-banner-widget-textbox",
+      "count": 166
+    },
+    {
+      "id": "mg-mon-banner-widget-button",
+      "count": 166
+    },
+    {
+      "id": "STICKY_CTA_button",
+      "count": 128
+    },
+    {
+      "id": "info_inline_svg__a",
+      "count": 126
+    },
+    {
+      "id": "AutoBanner_CTA_button",
+      "count": 100
+    },
+    {
+      "id": "KHFWQW_Zip_input",
+      "count": 83
+    },
+    {
+      "id": "FullWidthQuote_CTA_button",
+      "count": 82
+    },
+    {
+      "id": "ZIPTooltip",
+      "count": 82
+    },
+    {
+      "id": "CircularProgressbarWithChildren",
+      "count": 81
+    },
+    {
+      "id": "CircularProgressbar",
+      "count": 81
+    },
+    {
+      "id": "CircularProgressbarWithChildren__children",
+      "count": 81
+    },
+    {
+      "id": "organizationSchema",
+      "count": 76
+    },
+    {
+      "id": "vwoCode",
+      "count": 76
+    },
+    {
+      "id": "articleSchema",
+      "count": 76
+    },
+    {
+      "id": "breadcrumbSchema",
+      "count": 76
+    },
+    {
+      "id": "navbar",
+      "count": 76
+    },
+    {
+      "id": "scroll-box",
+      "count": 76
+    },
+    {
+      "id": "nav-menu-container",
+      "count": 76
+    },
+    {
+      "id": "LayoutSidebarContainer",
+      "count": 76
+    },
+    {
+      "id": "sub-navigation",
+      "count": 76
+    },
+    {
+      "id": "menu-list",
+      "count": 76
+    },
+    {
+      "id": "footer-youtube_svg__a",
+      "count": 76
+    },
+    {
+      "id": "chablivoy",
+      "count": 76
+    },
+    {
+      "id": "magnifying-glass-button",
+      "count": 75
+    },
+    {
+      "id": "_next-ga-init",
+      "count": 75
+    },
+    {
+      "id": "_next-ga",
+      "count": 75
+    },
+    {
+      "id": "clarityScript",
+      "count": 75
+    },
+    {
+      "id": "faqSchema",
+      "count": 74
+    },
+    {
+      "id": "faq",
+      "count": 71
+    },
+    {
+      "id": "chablivoy-everflow",
+      "count": 65
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "nav"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"tracker\"], [id*=\"tracker\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

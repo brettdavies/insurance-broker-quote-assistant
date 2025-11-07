@@ -1,0 +1,456 @@
+{
+  "domain": "torontoautobodyshop.ca",
+  "total_pages": 2,
+  "analyzed_at": "2025-11-07T14:35:36.056830",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 8,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 10,
+      "frequency": 5.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 64,
+      "frequency": 32.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 8,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 4,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 194,
+      "frequency": 97.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 22,
+      "frequency": 11.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-item",
+      "count": 156
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 152
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 152
+    },
+    {
+      "class": "wpv-grid",
+      "count": 126
+    },
+    {
+      "class": "unextended",
+      "count": 122
+    },
+    {
+      "class": "row",
+      "count": 120
+    },
+    {
+      "class": "first",
+      "count": 106
+    },
+    {
+      "class": "grid-1-1",
+      "count": 90
+    },
+    {
+      "class": "tp-parallax-wrap",
+      "count": 68
+    },
+    {
+      "class": "tp-loop-wrap",
+      "count": 68
+    },
+    {
+      "class": "tp-mask-wrap",
+      "count": 68
+    },
+    {
+      "class": "tp-caption",
+      "count": 68
+    },
+    {
+      "class": "tp-resizeme",
+      "count": 68
+    },
+    {
+      "class": "push",
+      "count": 56
+    },
+    {
+      "class": "icon",
+      "count": 48
+    },
+    {
+      "class": "shortcode",
+      "count": 46
+    },
+    {
+      "class": "use-hover",
+      "count": 46
+    },
+    {
+      "class": "animated-active",
+      "count": 32
+    },
+    {
+      "class": "theme",
+      "count": 30
+    },
+    {
+      "class": "tp-splitted",
+      "count": 28
+    },
+    {
+      "class": "wpv-first-level",
+      "count": 24
+    },
+    {
+      "class": "tp-charsplit",
+      "count": 24
+    },
+    {
+      "class": "wpv-hide-lowres",
+      "count": 24
+    },
+    {
+      "class": "orig-h4",
+      "count": 24
+    },
+    {
+      "class": "animation-from-bottom",
+      "count": 24
+    },
+    {
+      "class": "defaultimg",
+      "count": 20
+    },
+    {
+      "class": "has-children",
+      "count": 18
+    },
+    {
+      "class": "mp-level",
+      "count": 18
+    },
+    {
+      "class": "mp-level-header",
+      "count": 18
+    },
+    {
+      "class": "mp-back",
+      "count": 18
+    },
+    {
+      "class": "has-background",
+      "count": 16
+    },
+    {
+      "class": "grid-1-2",
+      "count": 14
+    },
+    {
+      "class": "menu-item-has-children",
+      "count": 14
+    },
+    {
+      "class": "sub-menu-wrapper",
+      "count": 14
+    },
+    {
+      "class": "sub-menu",
+      "count": 14
+    },
+    {
+      "class": "clearfix",
+      "count": 12
+    },
+    {
+      "class": "grid-1-4",
+      "count": 12
+    },
+    {
+      "class": "box",
+      "count": 12
+    },
+    {
+      "class": "char",
+      "count": 12
+    },
+    {
+      "class": "accent-5",
+      "count": 12
+    },
+    {
+      "class": "left-border",
+      "count": 12
+    },
+    {
+      "class": "size-full",
+      "count": 12
+    },
+    {
+      "class": "aligncenter",
+      "count": 12
+    },
+    {
+      "class": "tp-revslider-slidesli",
+      "count": 10
+    },
+    {
+      "class": "slotholder",
+      "count": 10
+    },
+    {
+      "class": "rev-slidebg",
+      "count": 10
+    },
+    {
+      "class": "tp-bgimg",
+      "count": 10
+    },
+    {
+      "class": "widget",
+      "count": 10
+    },
+    {
+      "class": "full",
+      "count": 8
+    },
+    {
+      "class": "limit-wrapper",
+      "count": 8
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "mp-menu",
+      "count": 4
+    },
+    {
+      "id": "www-widgetapi-script",
+      "count": 2
+    },
+    {
+      "id": "wpr-usedcss",
+      "count": 2
+    },
+    {
+      "id": "wp-emoji-styles-inline-css",
+      "count": 2
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 2
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 2
+    },
+    {
+      "id": "rs-plugin-settings-inline-css",
+      "count": 2
+    },
+    {
+      "id": "front-all-inline-css",
+      "count": 2
+    },
+    {
+      "id": "rocket-lazyload-inline-css",
+      "count": 2
+    },
+    {
+      "id": "jquery-core-js",
+      "count": 2
+    },
+    {
+      "id": "jquery-migrate-js",
+      "count": 2
+    },
+    {
+      "id": "tp-tools-js",
+      "count": 2
+    },
+    {
+      "id": "revmin-js",
+      "count": 2
+    },
+    {
+      "id": "modernizr-js",
+      "count": 2
+    },
+    {
+      "id": "rocket-lazyload-nojs-css",
+      "count": 2
+    },
+    {
+      "id": "wpr-lazyload-bg-container",
+      "count": 2
+    },
+    {
+      "id": "wpr-lazyload-bg-exclusion",
+      "count": 2
+    },
+    {
+      "id": "wpr-lazyload-bg-nostyle",
+      "count": 2
+    },
+    {
+      "id": "top",
+      "count": 2
+    },
+    {
+      "id": "mp-pusher",
+      "count": 2
+    },
+    {
+      "id": "mp-scroller",
+      "count": 2
+    },
+    {
+      "id": "page",
+      "count": 2
+    },
+    {
+      "id": "top-nav-wrapper",
+      "count": 2
+    },
+    {
+      "id": "top-nav-social",
+      "count": 2
+    },
+    {
+      "id": "top-nav-text",
+      "count": 2
+    },
+    {
+      "id": "mp-menu-trigger",
+      "count": 2
+    },
+    {
+      "id": "menus",
+      "count": 2
+    },
+    {
+      "id": "main-menu",
+      "count": 2
+    },
+    {
+      "id": "menu-main-menu",
+      "count": 2
+    },
+    {
+      "id": "menu-item-9996",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, [role=\"main\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

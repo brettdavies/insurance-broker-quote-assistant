@@ -1,0 +1,456 @@
+{
+  "domain": "nolo.com",
+  "total_pages": 3,
+  "analyzed_at": "2025-11-07T14:35:34.580802",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 3,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 3,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 6,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 5,
+      "frequency": 1.667,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 230,
+      "frequency": 76.667,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 129,
+      "frequency": 43.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 17,
+      "frequency": 5.667,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 224,
+      "frequency": 74.667,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "form-control",
+      "count": 114
+    },
+    {
+      "class": "modal-body_main-step-input",
+      "count": 102
+    },
+    {
+      "class": "error-message",
+      "count": 96
+    },
+    {
+      "class": "dropdown-item",
+      "count": 78
+    },
+    {
+      "class": "text-wrap",
+      "count": 78
+    },
+    {
+      "class": "radio-input",
+      "count": 72
+    },
+    {
+      "class": "region",
+      "count": 63
+    },
+    {
+      "class": "d-none",
+      "count": 60
+    },
+    {
+      "class": "mb-0",
+      "count": 48
+    },
+    {
+      "class": "container",
+      "count": 48
+    },
+    {
+      "class": "router",
+      "count": 48
+    },
+    {
+      "class": "validation",
+      "count": 48
+    },
+    {
+      "class": "table-of-contents__content",
+      "count": 40
+    },
+    {
+      "class": "modal-progress_bar-progress_indicator-progress_step",
+      "count": 36
+    },
+    {
+      "class": "field-label-floating",
+      "count": 36
+    },
+    {
+      "class": "form-group",
+      "count": 33
+    },
+    {
+      "class": "a-sm",
+      "count": 32
+    },
+    {
+      "class": "modal-body_main-step",
+      "count": 30
+    },
+    {
+      "class": "row",
+      "count": 29
+    },
+    {
+      "class": "list-wrapper",
+      "count": 24
+    },
+    {
+      "class": "back-one-level",
+      "count": 24
+    },
+    {
+      "class": "modal-body_main-step-continueButton",
+      "count": 24
+    },
+    {
+      "class": "clearfix",
+      "count": 23
+    },
+    {
+      "class": "py-3",
+      "count": 21
+    },
+    {
+      "class": "mt-3",
+      "count": 21
+    },
+    {
+      "class": "nested",
+      "count": 21
+    },
+    {
+      "class": "sub-menu-wrapper",
+      "count": 21
+    },
+    {
+      "class": "collapse",
+      "count": 18
+    },
+    {
+      "class": "py-4",
+      "count": 18
+    },
+    {
+      "class": "sub-menu",
+      "count": 18
+    },
+    {
+      "class": "all-legal-issues",
+      "count": 18
+    },
+    {
+      "class": "all-legal-issues-svg",
+      "count": 18
+    },
+    {
+      "class": "modal-body_main-step-header",
+      "count": 18
+    },
+    {
+      "class": "support-line",
+      "count": 18
+    },
+    {
+      "class": "btn",
+      "count": 18
+    },
+    {
+      "class": "nav-link",
+      "count": 15
+    },
+    {
+      "class": "col",
+      "count": 15
+    },
+    {
+      "class": "dropdown-header",
+      "count": 15
+    },
+    {
+      "class": "level-3",
+      "count": 15
+    },
+    {
+      "class": "site-search__select__option",
+      "count": 15
+    },
+    {
+      "class": "related-posts-section-article-info-container",
+      "count": 15
+    },
+    {
+      "class": "mbl",
+      "count": 15
+    },
+    {
+      "class": "d-md-none",
+      "count": 15
+    },
+    {
+      "class": "related-posts-section-article",
+      "count": 15
+    },
+    {
+      "class": "d-block",
+      "count": 15
+    },
+    {
+      "class": "related-posts-section-article-info",
+      "count": 15
+    },
+    {
+      "class": "related-posts-section-article-header",
+      "count": 15
+    },
+    {
+      "class": "dtop",
+      "count": 15
+    },
+    {
+      "class": "d-md-block",
+      "count": 15
+    },
+    {
+      "class": "col-md-4",
+      "count": 15
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "aop_abbreviation",
+      "count": 9
+    },
+    {
+      "id": "page-hd",
+      "count": 6
+    },
+    {
+      "id": "region-header",
+      "count": 6
+    },
+    {
+      "id": "btn-search-sign",
+      "count": 6
+    },
+    {
+      "id": "legal-issues-explained-link",
+      "count": 6
+    },
+    {
+      "id": "nolo-search-form",
+      "count": 6
+    },
+    {
+      "id": "Path_22",
+      "count": 6
+    },
+    {
+      "id": "universal-form-modal",
+      "count": 6
+    },
+    {
+      "id": "Image_8",
+      "count": 6
+    },
+    {
+      "id": "Icon_material-close",
+      "count": 6
+    },
+    {
+      "id": "First_Name",
+      "count": 6
+    },
+    {
+      "id": "Last_Name",
+      "count": 6
+    },
+    {
+      "id": "Email_Address",
+      "count": 6
+    },
+    {
+      "id": "Phone_Number",
+      "count": 6
+    },
+    {
+      "id": "Zip_Code",
+      "count": 6
+    },
+    {
+      "id": "universal-form-click-here",
+      "count": 6
+    },
+    {
+      "id": "for-trusted-ncms",
+      "count": 6
+    },
+    {
+      "id": "tf_script",
+      "count": 6
+    },
+    {
+      "id": "tf_nocsript",
+      "count": 6
+    },
+    {
+      "id": "prompt-script",
+      "count": 3
+    },
+    {
+      "id": "page-container",
+      "count": 3
+    },
+    {
+      "id": "page",
+      "count": 3
+    },
+    {
+      "id": "search-toggle",
+      "count": 3
+    },
+    {
+      "id": "navbar-toggle",
+      "count": 3
+    },
+    {
+      "id": "navbar-user-nav",
+      "count": 3
+    },
+    {
+      "id": "btn-search",
+      "count": 3
+    },
+    {
+      "id": "Icon/Cart/Default",
+      "count": 3
+    },
+    {
+      "id": "Oval",
+      "count": 3
+    },
+    {
+      "id": "Oval-Copy-5",
+      "count": 3
+    },
+    {
+      "id": "Fill-7",
+      "count": 3
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": null,
+    "excluded_selector": "[class*=\"ad\"], [id*=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

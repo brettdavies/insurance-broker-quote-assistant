@@ -1,0 +1,455 @@
+{
+  "domain": "dalyblack.com",
+  "total_pages": 2,
+  "analyzed_at": "2025-11-07T14:35:35.601563",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 6,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 6,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 10,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 127,
+      "frequency": 63.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 260,
+      "frequency": 130.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 100,
+      "frequency": 50.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "flex",
+      "count": 162
+    },
+    {
+      "class": "menu-item",
+      "count": 132
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 126
+    },
+    {
+      "class": "whitespace-nowrap",
+      "count": 126
+    },
+    {
+      "class": "justify-between",
+      "count": 124
+    },
+    {
+      "class": "p-2",
+      "count": 124
+    },
+    {
+      "class": "hover:text-tertiary",
+      "count": 124
+    },
+    {
+      "class": "transition",
+      "count": 124
+    },
+    {
+      "class": "text-gray-800",
+      "count": 118
+    },
+    {
+      "class": "xl:items-center",
+      "count": 118
+    },
+    {
+      "class": "menu-link",
+      "count": 116
+    },
+    {
+      "class": "xl:justify-start",
+      "count": 116
+    },
+    {
+      "class": "xl:gap-2",
+      "count": 116
+    },
+    {
+      "class": "text-lg",
+      "count": 116
+    },
+    {
+      "class": "no-underline",
+      "count": 116
+    },
+    {
+      "class": "text-sm",
+      "count": 112
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 78
+    },
+    {
+      "class": "onetap-level",
+      "count": 48
+    },
+    {
+      "class": "menu-item-object-db_team",
+      "count": 46
+    },
+    {
+      "class": "flex-col",
+      "count": 36
+    },
+    {
+      "class": "gform_hidden",
+      "count": 34
+    },
+    {
+      "class": "onetap-icon",
+      "count": 32
+    },
+    {
+      "class": "onetap-title",
+      "count": 32
+    },
+    {
+      "class": "onetap-box-feature",
+      "count": 30
+    },
+    {
+      "class": "onetap-icon-animation",
+      "count": 30
+    },
+    {
+      "class": "gfield_required",
+      "count": 28
+    },
+    {
+      "class": "wp-block-heading",
+      "count": 27
+    },
+    {
+      "class": "text-white",
+      "count": 26
+    },
+    {
+      "class": "font-bold",
+      "count": 26
+    },
+    {
+      "class": "items-center",
+      "count": 24
+    },
+    {
+      "class": "w-full",
+      "count": 24
+    },
+    {
+      "class": "w-8",
+      "count": 24
+    },
+    {
+      "class": "h-8",
+      "count": 24
+    },
+    {
+      "class": "size-8",
+      "count": 24
+    },
+    {
+      "class": "gfield",
+      "count": 22
+    },
+    {
+      "class": "field_description_below",
+      "count": 22
+    },
+    {
+      "class": "field_validation_below",
+      "count": 22
+    },
+    {
+      "class": "gfield_visibility_visible",
+      "count": 22
+    },
+    {
+      "class": "gform-field-label",
+      "count": 22
+    },
+    {
+      "class": "ginput_container",
+      "count": 22
+    },
+    {
+      "class": "onetap-heading",
+      "count": 22
+    },
+    {
+      "class": "uppercase",
+      "count": 20
+    },
+    {
+      "class": "field_sublabel_below",
+      "count": 20
+    },
+    {
+      "class": "3xl:px-0",
+      "count": 18
+    },
+    {
+      "class": "gfield--no-description",
+      "count": 18
+    },
+    {
+      "class": "w-fit",
+      "count": 16
+    },
+    {
+      "class": "bg-white",
+      "count": 16
+    },
+    {
+      "class": "relative",
+      "count": 16
+    },
+    {
+      "class": "xl:text-white",
+      "count": 16
+    },
+    {
+      "class": "z-10",
+      "count": 16
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "false",
+      "count": 18
+    },
+    {
+      "id": "wp-emoji-styles-inline-css",
+      "count": 2
+    },
+    {
+      "id": "wp-block-library-css",
+      "count": 2
+    },
+    {
+      "id": "font-awesome-svg-styles-default-inline-css",
+      "count": 2
+    },
+    {
+      "id": "font-awesome-svg-styles-css",
+      "count": 2
+    },
+    {
+      "id": "font-awesome-svg-styles-inline-css",
+      "count": 2
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 2
+    },
+    {
+      "id": "accessibility-onetap-css",
+      "count": 2
+    },
+    {
+      "id": "accessibility-onetap-inline-css",
+      "count": 2
+    },
+    {
+      "id": "accessibility-onetap-eicons-css",
+      "count": 2
+    },
+    {
+      "id": "thinkbox-style-css",
+      "count": 2
+    },
+    {
+      "id": "swiper-css-css",
+      "count": 2
+    },
+    {
+      "id": "lity-css-css",
+      "count": 2
+    },
+    {
+      "id": "monsterinsights-frontend-script-js",
+      "count": 2
+    },
+    {
+      "id": "monsterinsights-frontend-script-js-extra",
+      "count": 2
+    },
+    {
+      "id": "thinkbox-accordion-block-script-js",
+      "count": 2
+    },
+    {
+      "id": "jquery-core-js",
+      "count": 2
+    },
+    {
+      "id": "jquery-migrate-js",
+      "count": 2
+    },
+    {
+      "id": "font-awesome-official-js",
+      "count": 2
+    },
+    {
+      "id": "fa-main",
+      "count": 2
+    },
+    {
+      "id": "google_gtagjs-js",
+      "count": 2
+    },
+    {
+      "id": "google_gtagjs-js-after",
+      "count": 2
+    },
+    {
+      "id": "wp-custom-css",
+      "count": 2
+    },
+    {
+      "id": "wpforms-css-vars-root",
+      "count": 2
+    },
+    {
+      "id": "page",
+      "count": 2
+    },
+    {
+      "id": "site-navigation",
+      "count": 2
+    },
+    {
+      "id": "off-canvas-menu",
+      "count": 2
+    },
+    {
+      "id": "close-button",
+      "count": 2
+    },
+    {
+      "id": "primary-menu",
+      "count": 2
+    },
+    {
+      "id": "menu-item-2782",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"ad\"], [id*=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

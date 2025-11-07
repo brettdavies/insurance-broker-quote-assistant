@@ -1,0 +1,454 @@
+{
+  "domain": "usnews.com",
+  "total_pages": 39,
+  "analyzed_at": "2025-11-07T14:35:29.021574",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 105,
+      "frequency": 2.692,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 39,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "footer",
+      "count": 39,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 156,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 390,
+      "frequency": 10.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 5113,
+      "frequency": 131.103,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 9,
+      "frequency": 0.231,
+      "confidence": "low"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 1677,
+      "frequency": 43.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 561,
+      "frequency": 14.385,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 78,
+      "frequency": 2.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "Raw-slyvem-0",
+      "count": 4720
+    },
+    {
+      "class": "Box-w0dun1-0",
+      "count": 3551
+    },
+    {
+      "class": "bcZeaE",
+      "count": 3018
+    },
+    {
+      "class": "jDbFwb",
+      "count": 3015
+    },
+    {
+      "class": "Anchor-byh49a-0",
+      "count": 2821
+    },
+    {
+      "class": "item__ItemStyled-ji4pk4-0",
+      "count": 2340
+    },
+    {
+      "class": "jPUPMo",
+      "count": 2340
+    },
+    {
+      "class": "Icon-sc-9wq8ul-0",
+      "count": 2230
+    },
+    {
+      "class": "fuNHPY",
+      "count": 2110
+    },
+    {
+      "class": "Paragraph-sc-1iyax29-0",
+      "count": 1702
+    },
+    {
+      "class": "Span-sc-19wk4id-0",
+      "count": 1298
+    },
+    {
+      "class": "Heading-sc-1w5xk2o-0",
+      "count": 1263
+    },
+    {
+      "class": "Cell-sc-1abjmm4-0",
+      "count": 1192
+    },
+    {
+      "class": "MuiTypography-root",
+      "count": 1114
+    },
+    {
+      "class": "TableCell__StyledComponent-sc-1unm70f-0",
+      "count": 1094
+    },
+    {
+      "class": "bytUNX",
+      "count": 1094
+    },
+    {
+      "class": "Rating__IconSvg-sc-1naeqqj-1",
+      "count": 945
+    },
+    {
+      "class": "iVgVkc",
+      "count": 928
+    },
+    {
+      "class": "ProductComparisonTable__ItemContainer-zqroeb-5",
+      "count": 881
+    },
+    {
+      "class": "iMESpE",
+      "count": 881
+    },
+    {
+      "class": "article-body__ArticleBox-sc-138p7q2-2",
+      "count": 838
+    },
+    {
+      "class": "eYFKbH",
+      "count": 838
+    },
+    {
+      "class": "mb2",
+      "count": 780
+    },
+    {
+      "class": "dropdown-menu__MenuList-sc-1jz3ypz-1",
+      "count": 780
+    },
+    {
+      "class": "hCOIBl",
+      "count": 780
+    },
+    {
+      "class": "MuiBox-root",
+      "count": 657
+    },
+    {
+      "class": "PreZH",
+      "count": 588
+    },
+    {
+      "class": "Grid-lx2f3i-0",
+      "count": 580
+    },
+    {
+      "class": "jsnuIc",
+      "count": 575
+    },
+    {
+      "class": "mt4",
+      "count": 553
+    },
+    {
+      "class": "heading__MenuHeading-q3uk94-0",
+      "count": 546
+    },
+    {
+      "class": "jZqHH",
+      "count": 546
+    },
+    {
+      "class": "xlfSv",
+      "count": 546
+    },
+    {
+      "class": "mx3",
+      "count": 546
+    },
+    {
+      "class": "fZPEMD",
+      "count": 532
+    },
+    {
+      "class": "gzdPVF",
+      "count": 520
+    },
+    {
+      "class": "IconList__ListItem-emyavm-2",
+      "count": 492
+    },
+    {
+      "class": "IconList__Iconography-emyavm-0",
+      "count": 492
+    },
+    {
+      "class": "bMqEdY",
+      "count": 492
+    },
+    {
+      "class": "IconList__TextContainer-emyavm-3",
+      "count": 492
+    },
+    {
+      "class": "jgkucL",
+      "count": 492
+    },
+    {
+      "class": "IconList__ParagraphReversed-emyavm-4",
+      "count": 492
+    },
+    {
+      "class": "IconList__Headline-emyavm-5",
+      "count": 492
+    },
+    {
+      "class": "sm-hide",
+      "count": 479
+    },
+    {
+      "class": "md-hide",
+      "count": 478
+    },
+    {
+      "class": "mt3",
+      "count": 477
+    },
+    {
+      "class": "HeightToggler__Container-sc-1ht18ir-0",
+      "count": 468
+    },
+    {
+      "class": "jDrRTM",
+      "count": 468
+    },
+    {
+      "class": "HeightToggler__WrappedSpacer-sc-1ht18ir-1",
+      "count": 468
+    },
+    {
+      "class": "MultilineEllipsis__Container-sc-1hoyc1r-5",
+      "count": 468
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "ad-in-text-target",
+      "count": 838
+    },
+    {
+      "id": "ellipsis-container",
+      "count": 468
+    },
+    {
+      "id": "360-view-plans",
+      "count": 382
+    },
+    {
+      "id": "360-profile-link",
+      "count": 305
+    },
+    {
+      "id": "top_nav",
+      "count": 234
+    },
+    {
+      "id": "360-logo-click",
+      "count": 169
+    },
+    {
+      "id": "overall_rating",
+      "count": 168
+    },
+    {
+      "id": "CheckIcon",
+      "count": 99
+    },
+    {
+      "id": "CloseIcon",
+      "count": 70
+    },
+    {
+      "id": "360-jumplink-review",
+      "count": 42
+    },
+    {
+      "id": "usprivacy-migration",
+      "count": 39
+    },
+    {
+      "id": "utag-data",
+      "count": 39
+    },
+    {
+      "id": "request-info",
+      "count": 39
+    },
+    {
+      "id": "relCanonical",
+      "count": 39
+    },
+    {
+      "id": "blueshift-webcrawler-context",
+      "count": 39
+    },
+    {
+      "id": "googleidentityservice_button_styles",
+      "count": 39
+    },
+    {
+      "id": "googleidentityservice",
+      "count": 39
+    },
+    {
+      "id": "__SVG_SPRITE_NODE__",
+      "count": 39
+    },
+    {
+      "id": "search",
+      "count": 39
+    },
+    {
+      "id": "search_a",
+      "count": 39
+    },
+    {
+      "id": "user-circle",
+      "count": 39
+    },
+    {
+      "id": "user-circle_a",
+      "count": 39
+    },
+    {
+      "id": "hamburger",
+      "count": 39
+    },
+    {
+      "id": "check-pro",
+      "count": 39
+    },
+    {
+      "id": "bookmark-o",
+      "count": 39
+    },
+    {
+      "id": "star",
+      "count": 39
+    },
+    {
+      "id": "plus",
+      "count": 39
+    },
+    {
+      "id": "chevron",
+      "count": 39
+    },
+    {
+      "id": "minus",
+      "count": 39
+    },
+    {
+      "id": "facebook",
+      "count": 39
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

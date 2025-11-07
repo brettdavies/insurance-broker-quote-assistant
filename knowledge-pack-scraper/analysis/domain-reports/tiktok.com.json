@@ -1,0 +1,425 @@
+{
+  "domain": "tiktok.com",
+  "total_pages": 2,
+  "analyzed_at": "2025-11-07T14:35:36.066286",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 6,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 0.5,
+      "confidence": "medium"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "footer",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "nav",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 0.5,
+      "confidence": "medium"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 1,
+      "frequency": 0.5,
+      "confidence": "medium"
+    },
+    {
+      "pattern": "menu",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "css-dgf15q-5e6d46e3--SkeletonItem",
+      "count": 56
+    },
+    {
+      "class": "exvoppb3",
+      "count": 56
+    },
+    {
+      "class": "css-1tus1ip-5e6d46e3--DivBaseComponent-5e6d46e3--StyledParagraphLine",
+      "count": 40
+    },
+    {
+      "class": "elko6a5",
+      "count": 40
+    },
+    {
+      "class": "css-1pm4nzg-5e6d46e3--DivItemSkeletonContainer",
+      "count": 20
+    },
+    {
+      "class": "e1s2d8q2",
+      "count": 20
+    },
+    {
+      "class": "css-2dpj5b-5e6d46e3--DivSkeletonCard",
+      "count": 20
+    },
+    {
+      "class": "e1s2d8q3",
+      "count": 20
+    },
+    {
+      "class": "css-1jrmyyy-5e6d46e3--DivBaseComponent-5e6d46e3--StyledParagraph",
+      "count": 20
+    },
+    {
+      "class": "elko6a4",
+      "count": 20
+    },
+    {
+      "class": "css-gu04mf-5e6d46e3--DivAuthorSkeletonContainer",
+      "count": 20
+    },
+    {
+      "class": "e1s2d8q4",
+      "count": 20
+    },
+    {
+      "class": "css-1ow3o8-5e6d46e3--DivBaseComponent-5e6d46e3--StyledAvatar",
+      "count": 20
+    },
+    {
+      "class": "elko6a2",
+      "count": 20
+    },
+    {
+      "class": "css-1jz4umr-5e6d46e3--DivSkeletonAuthorParagraph",
+      "count": 20
+    },
+    {
+      "class": "e1s2d8q5",
+      "count": 20
+    },
+    {
+      "class": "css-13oovrh-5e6d46e3--ActionItemPlaceHolder",
+      "count": 14
+    },
+    {
+      "class": "e1uzablq0",
+      "count": 14
+    },
+    {
+      "class": "css-1e442et-5e6d46e3--ArticleItemContainer",
+      "count": 6
+    },
+    {
+      "class": "e1l1r7cp0",
+      "count": 6
+    },
+    {
+      "class": "css-jbg155-5e6d46e3--SectionActionBarContainer",
+      "count": 3
+    },
+    {
+      "class": "e12arnib0",
+      "count": 3
+    },
+    {
+      "class": "css-ks7lja-5e6d46e3--DivSkeletonSideNavContainer",
+      "count": 2
+    },
+    {
+      "class": "exvoppb2",
+      "count": 2
+    },
+    {
+      "class": "TUXToastProvider-topOutlet",
+      "count": 2
+    },
+    {
+      "class": "TUXToastProvider-center-outlet",
+      "count": 2
+    },
+    {
+      "class": "TUXToastProvider-bottomOutletContainer",
+      "count": 2
+    },
+    {
+      "class": "TUXToastProvider-bottomOutlet",
+      "count": 2
+    },
+    {
+      "class": "TUXToastProvider-noticeOutlet",
+      "count": 2
+    },
+    {
+      "class": "css-1mcfho6-5e6d46e3--DivContentFlexLayout",
+      "count": 2
+    },
+    {
+      "class": "e1l1r7cp1",
+      "count": 2
+    },
+    {
+      "class": "css-m56m6u-5e6d46e3--SectionMediaCardContainer",
+      "count": 2
+    },
+    {
+      "class": "e17fzb3j0",
+      "count": 2
+    },
+    {
+      "class": "css-gn3qt3-5e6d46e3--CanvasMediaCardPlaceholder",
+      "count": 2
+    },
+    {
+      "class": "e1reenm10",
+      "count": 2
+    },
+    {
+      "class": "css-1rx0x1w-5e6d46e3--BasePlayerContainer-5e6d46e3--DivVideoPlayerContainer",
+      "count": 2
+    },
+    {
+      "class": "e1reenm13",
+      "count": 2
+    },
+    {
+      "class": "css-2acemu-5e6d46e3--DivContainer",
+      "count": 2
+    },
+    {
+      "class": "e1sq7r4z0",
+      "count": 2
+    },
+    {
+      "class": "css-1gbz2iw-5e6d46e3--Box",
+      "count": 2
+    },
+    {
+      "class": "ee46mhe0",
+      "count": 2
+    },
+    {
+      "class": "css-4vqpt4-5e6d46e3--DivBasicPlayerWrapper",
+      "count": 2
+    },
+    {
+      "class": "e1sq7r4z2",
+      "count": 2
+    },
+    {
+      "class": "xgplayer-container",
+      "count": 2
+    },
+    {
+      "class": "tiktok-web-player",
+      "count": 2
+    },
+    {
+      "class": "css-1v67lty-5e6d46e3--BaseBodyContainer-5e6d46e3--KEPBodyContainer",
+      "count": 1
+    },
+    {
+      "class": "e1pgfmdu1",
+      "count": 1
+    },
+    {
+      "class": "grid-layout",
+      "count": 1
+    },
+    {
+      "class": "css-1uhlt87-5e6d46e3--DivMainContainer",
+      "count": 1
+    },
+    {
+      "class": "e19mnow70",
+      "count": 1
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "script-manager",
+      "count": 2
+    },
+    {
+      "id": "api-domains",
+      "count": 2
+    },
+    {
+      "id": "service-region",
+      "count": 2
+    },
+    {
+      "id": "slardar-config",
+      "count": 2
+    },
+    {
+      "id": "svg-sprite-container",
+      "count": 2
+    },
+    {
+      "id": "app",
+      "count": 2
+    },
+    {
+      "id": "pns-communication-service",
+      "count": 2
+    },
+    {
+      "id": "__UNIVERSAL_DATA_FOR_REHYDRATION__",
+      "count": 2
+    },
+    {
+      "id": ":r0:",
+      "count": 2
+    },
+    {
+      "id": "TUXToastProvider-topOutlet",
+      "count": 2
+    },
+    {
+      "id": "TUXToastProvider-centerOutlet",
+      "count": 2
+    },
+    {
+      "id": "TUXToastProvider-bottomOutlet",
+      "count": 2
+    },
+    {
+      "id": "TUXToastProvider-noticeOutlet",
+      "count": 2
+    },
+    {
+      "id": "main-content-homepage_hot",
+      "count": 1
+    },
+    {
+      "id": "column-list-container",
+      "count": 1
+    },
+    {
+      "id": "one-column-item-0",
+      "count": 1
+    },
+    {
+      "id": "media-card-0",
+      "count": 1
+    },
+    {
+      "id": "xgwrapper-0-7567142925482659127",
+      "count": 1
+    },
+    {
+      "id": "cbbb2a57-30bb-42c2-966b-604de3fd23b1",
+      "count": 1
+    },
+    {
+      "id": "one-column-item-1",
+      "count": 1
+    },
+    {
+      "id": "media-card-1",
+      "count": 1
+    },
+    {
+      "id": "xgwrapper-0-7567957332919913736",
+      "count": 1
+    },
+    {
+      "id": "8e09b399-2cd7-4981-828e-57fee5daf4dc",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "aside"
+    ],
+    "css_selector": "article",
+    "excluded_selector": "[class*=\"ad\"], [id*=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "low"
+  }
+}

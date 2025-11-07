@@ -1,0 +1,455 @@
+{
+  "domain": "malmlegal.com",
+  "total_pages": 2,
+  "analyzed_at": "2025-11-07T14:35:35.925581",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 0.5,
+      "confidence": "medium"
+    },
+    {
+      "selector": "main",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 3,
+      "frequency": 1.5,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 3,
+      "frequency": 1.5,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 6,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 4,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 7,
+      "frequency": 3.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 60,
+      "frequency": 30.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 8,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 4,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 12,
+      "frequency": 6.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "item",
+      "count": 292
+    },
+    {
+      "class": "tns-item",
+      "count": 60
+    },
+    {
+      "class": "tns-slide-cloned",
+      "count": 32
+    },
+    {
+      "class": "container",
+      "count": 25
+    },
+    {
+      "class": "top-el",
+      "count": 22
+    },
+    {
+      "class": "-static",
+      "count": 22
+    },
+    {
+      "class": "nav-el",
+      "count": 20
+    },
+    {
+      "class": "sub-el",
+      "count": 20
+    },
+    {
+      "class": "visually-hidden",
+      "count": 18
+    },
+    {
+      "class": "wp-block-heading",
+      "count": 18
+    },
+    {
+      "class": "icon",
+      "count": 18
+    },
+    {
+      "class": "list",
+      "count": 16
+    },
+    {
+      "class": "field",
+      "count": 16
+    },
+    {
+      "class": "label",
+      "count": 16
+    },
+    {
+      "class": "input",
+      "count": 16
+    },
+    {
+      "class": "priority_11",
+      "count": 14
+    },
+    {
+      "class": "priority_12",
+      "count": 14
+    },
+    {
+      "class": "hidden",
+      "count": 14
+    },
+    {
+      "class": "phone",
+      "count": 12
+    },
+    {
+      "class": "priority_1",
+      "count": 12
+    },
+    {
+      "class": "priority_13",
+      "count": 12
+    },
+    {
+      "class": "-text",
+      "count": 12
+    },
+    {
+      "class": "column",
+      "count": 12
+    },
+    {
+      "class": "spam-verification-code-input",
+      "count": 12
+    },
+    {
+      "class": "ui-button",
+      "count": 11
+    },
+    {
+      "class": "-phone-1",
+      "count": 10
+    },
+    {
+      "class": "level-2",
+      "count": 10
+    },
+    {
+      "class": "priority_10",
+      "count": 10
+    },
+    {
+      "class": "priority_14",
+      "count": 10
+    },
+    {
+      "class": "priority_15",
+      "count": 10
+    },
+    {
+      "class": "title",
+      "count": 10
+    },
+    {
+      "class": "icw--preview--prompt",
+      "count": 10
+    },
+    {
+      "class": "icw--preview--circle",
+      "count": 10
+    },
+    {
+      "class": "icw--preview--prompt--name",
+      "count": 10
+    },
+    {
+      "class": "ui-widget",
+      "count": 9
+    },
+    {
+      "class": "has-layers",
+      "count": 8
+    },
+    {
+      "class": "line",
+      "count": 8
+    },
+    {
+      "class": "priority_16",
+      "count": 8
+    },
+    {
+      "class": "priority_17",
+      "count": 8
+    },
+    {
+      "class": "priority_18",
+      "count": 8
+    },
+    {
+      "class": "text",
+      "count": 8
+    },
+    {
+      "class": "widget-button",
+      "count": 8
+    },
+    {
+      "class": "button-text",
+      "count": 8
+    },
+    {
+      "class": "icw-call-phone",
+      "count": 8
+    },
+    {
+      "class": "icw-call-inputStyle",
+      "count": 8
+    },
+    {
+      "class": "icw--call--done--button",
+      "count": 8
+    },
+    {
+      "class": "icw--call--done--button--invalid",
+      "count": 8
+    },
+    {
+      "class": "spam-verification-content-wrapper",
+      "count": 8
+    },
+    {
+      "class": "warning-icon",
+      "count": 8
+    },
+    {
+      "class": "spam-verification-switcher",
+      "count": 8
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "malmlegal",
+      "count": 4
+    },
+    {
+      "id": "consent",
+      "count": 4
+    },
+    {
+      "id": "critical",
+      "count": 2
+    },
+    {
+      "id": "top-numbers",
+      "count": 2
+    },
+    {
+      "id": "head",
+      "count": 2
+    },
+    {
+      "id": "tnav",
+      "count": 2
+    },
+    {
+      "id": "tnav-wrap",
+      "count": 2
+    },
+    {
+      "id": "tns1-ow",
+      "count": 2
+    },
+    {
+      "id": "tns1-mw",
+      "count": 2
+    },
+    {
+      "id": "tns1-iw",
+      "count": 2
+    },
+    {
+      "id": "tns1",
+      "count": 2
+    },
+    {
+      "id": "tns1-item0",
+      "count": 2
+    },
+    {
+      "id": "tns1-item1",
+      "count": 2
+    },
+    {
+      "id": "tns1-item2",
+      "count": 2
+    },
+    {
+      "id": "tns1-item3",
+      "count": 2
+    },
+    {
+      "id": "tns1-item4",
+      "count": 2
+    },
+    {
+      "id": "tns1-item5",
+      "count": 2
+    },
+    {
+      "id": "tns1-item6",
+      "count": 2
+    },
+    {
+      "id": "tns1-item7",
+      "count": 2
+    },
+    {
+      "id": "tns1-item8",
+      "count": 2
+    },
+    {
+      "id": "tns1-item9",
+      "count": 2
+    },
+    {
+      "id": "tns1-item10",
+      "count": 2
+    },
+    {
+      "id": "tns1-item11",
+      "count": 2
+    },
+    {
+      "id": "tns1-item12",
+      "count": 2
+    },
+    {
+      "id": "tns1-item13",
+      "count": 2
+    },
+    {
+      "id": "form-18-35",
+      "count": 2
+    },
+    {
+      "id": "form_18_f_1_Name",
+      "count": 2
+    },
+    {
+      "id": "form_18_f_2_Email",
+      "count": 2
+    },
+    {
+      "id": "form_18_f_3_Phone",
+      "count": 2
+    },
+    {
+      "id": "form_18_f_4_Message",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

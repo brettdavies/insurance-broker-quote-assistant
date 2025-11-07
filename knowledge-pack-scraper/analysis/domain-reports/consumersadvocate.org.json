@@ -1,0 +1,454 @@
+{
+  "domain": "consumersadvocate.org",
+  "total_pages": 5,
+  "analyzed_at": "2025-11-07T14:35:32.957377",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "footer",
+      "count": 5,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 5,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 2,
+      "frequency": 0.4,
+      "confidence": "low"
+    },
+    {
+      "pattern": "share",
+      "count": 4,
+      "frequency": 0.8,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 147,
+      "frequency": 29.4,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 3,
+      "frequency": 0.6,
+      "confidence": "medium"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 2,
+      "frequency": 0.4,
+      "confidence": "low"
+    },
+    {
+      "pattern": "menu",
+      "count": 14,
+      "frequency": 2.8,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 3,
+      "frequency": 0.6,
+      "confidence": "medium"
+    },
+    {
+      "pattern": "form",
+      "count": 68,
+      "frequency": 13.6,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "d-flex",
+      "count": 669
+    },
+    {
+      "class": "fa",
+      "count": 565
+    },
+    {
+      "class": "uppercase",
+      "count": 396
+    },
+    {
+      "class": "justify-content-around",
+      "count": 380
+    },
+    {
+      "class": "item",
+      "count": 376
+    },
+    {
+      "class": "text-truncate",
+      "count": 366
+    },
+    {
+      "class": "vg-name",
+      "count": 366
+    },
+    {
+      "class": "fa-angle-right",
+      "count": 366
+    },
+    {
+      "class": "float-right",
+      "count": 366
+    },
+    {
+      "class": "align-items-center",
+      "count": 137
+    },
+    {
+      "class": "col-12",
+      "count": 126
+    },
+    {
+      "class": "row",
+      "count": 102
+    },
+    {
+      "class": "flex-column",
+      "count": 81
+    },
+    {
+      "class": "justify-content-center",
+      "count": 75
+    },
+    {
+      "class": "header",
+      "count": 67
+    },
+    {
+      "class": "value",
+      "count": 67
+    },
+    {
+      "class": "fa-star",
+      "count": 64
+    },
+    {
+      "class": "justify-content-between",
+      "count": 62
+    },
+    {
+      "class": "minor",
+      "count": 60
+    },
+    {
+      "class": "text-center",
+      "count": 58
+    },
+    {
+      "class": "list-row",
+      "count": 57
+    },
+    {
+      "class": "values",
+      "count": 57
+    },
+    {
+      "class": "widget",
+      "count": 56
+    },
+    {
+      "class": "title",
+      "count": 51
+    },
+    {
+      "class": "p-3",
+      "count": 48
+    },
+    {
+      "class": "container",
+      "count": 45
+    },
+    {
+      "class": "required",
+      "count": 45
+    },
+    {
+      "class": "btn",
+      "count": 44
+    },
+    {
+      "class": "body",
+      "count": 41
+    },
+    {
+      "class": "nav-link",
+      "count": 37
+    },
+    {
+      "class": "gdpr-hide",
+      "count": 30
+    },
+    {
+      "class": "clearfix",
+      "count": 28
+    },
+    {
+      "class": "form-group",
+      "count": 28
+    },
+    {
+      "class": "nav-item",
+      "count": 27
+    },
+    {
+      "class": "p-name",
+      "count": 26
+    },
+    {
+      "class": "m-0",
+      "count": 26
+    },
+    {
+      "class": "company-rating",
+      "count": 26
+    },
+    {
+      "class": "string",
+      "count": 26
+    },
+    {
+      "class": "d-block",
+      "count": 25
+    },
+    {
+      "class": "site",
+      "count": 24
+    },
+    {
+      "class": "company-logo",
+      "count": 23
+    },
+    {
+      "class": "align-self-center",
+      "count": 23
+    },
+    {
+      "class": "mt-auto",
+      "count": 23
+    },
+    {
+      "class": "col-md-8",
+      "count": 21
+    },
+    {
+      "class": "col-md-4",
+      "count": 21
+    },
+    {
+      "class": "factor-unit",
+      "count": 21
+    },
+    {
+      "class": "imptk",
+      "count": 21
+    },
+    {
+      "class": "thin",
+      "count": 21
+    },
+    {
+      "class": "entry",
+      "count": 21
+    },
+    {
+      "class": "fa-angle-down",
+      "count": 20
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "+ApTracking.navChainId,",
+      "count": 10
+    },
+    {
+      "id": "g-recaptcha-response",
+      "count": 6
+    },
+    {
+      "id": ")<0){var t=document.createElement(",
+      "count": 5
+    },
+    {
+      "id": ",a||ApTracking.navChainId||",
+      "count": 5
+    },
+    {
+      "id": "flash",
+      "count": 5
+    },
+    {
+      "id": "main-content",
+      "count": 5
+    },
+    {
+      "id": "fb-root",
+      "count": 5
+    },
+    {
+      "id": "nav-health",
+      "count": 4
+    },
+    {
+      "id": "nav-home-lifestyle",
+      "count": 4
+    },
+    {
+      "id": "nav-insurance",
+      "count": 4
+    },
+    {
+      "id": "nav-personal-finance",
+      "count": 4
+    },
+    {
+      "id": "nav-software",
+      "count": 4
+    },
+    {
+      "id": "travelers-renters-insurance-review-0",
+      "count": 4
+    },
+    {
+      "id": "docs-internal-guid-3077d6a2-7fff-3b81-2546-2822e42b3d52",
+      "count": 4
+    },
+    {
+      "id": "top-navigation",
+      "count": 3
+    },
+    {
+      "id": "navbarDropdownMenuLink",
+      "count": 3
+    },
+    {
+      "id": "allCategoriesMenu",
+      "count": 3
+    },
+    {
+      "id": "customer_reviews",
+      "count": 3
+    },
+    {
+      "id": "review_form",
+      "count": 3
+    },
+    {
+      "id": "agree-checkbox",
+      "count": 3
+    },
+    {
+      "id": "sumit_draft_review",
+      "count": 3
+    },
+    {
+      "id": "content-warning",
+      "count": 3
+    },
+    {
+      "id": "signup-modal",
+      "count": 3
+    },
+    {
+      "id": "new_user",
+      "count": 3
+    },
+    {
+      "id": "user_name",
+      "count": 3
+    },
+    {
+      "id": "user_email",
+      "count": 3
+    },
+    {
+      "id": "user_password",
+      "count": 3
+    },
+    {
+      "id": "mnav_accordion",
+      "count": 2
+    },
+    {
+      "id": "heading_health",
+      "count": 2
+    },
+    {
+      "id": "collapse_health",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "footer",
+      "nav"
+    ],
+    "css_selector": null,
+    "excluded_selector": "[class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "low"
+  }
+}

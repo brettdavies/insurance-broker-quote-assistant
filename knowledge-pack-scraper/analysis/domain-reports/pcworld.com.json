@@ -1,0 +1,455 @@
+{
+  "domain": "pcworld.com",
+  "total_pages": 2,
+  "analyzed_at": "2025-11-07T14:35:36.182193",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 3,
+      "frequency": 1.5,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 4,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 24,
+      "frequency": 12.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 67,
+      "frequency": 33.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 3,
+      "frequency": 1.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 5,
+      "frequency": 2.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 545,
+      "frequency": 272.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 10,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 22,
+      "frequency": 11.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-item",
+      "count": 424
+    },
+    {
+      "class": "inactive",
+      "count": 404
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 364
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 350
+    },
+    {
+      "class": "jw-reset",
+      "count": 142
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 60
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 60
+    },
+    {
+      "class": "cls-1",
+      "count": 34
+    },
+    {
+      "class": "menu-item-has-children",
+      "count": 32
+    },
+    {
+      "class": "sub-menu",
+      "count": 32
+    },
+    {
+      "class": "is-dropdown",
+      "count": 30
+    },
+    {
+      "class": "jw-svg-icon",
+      "count": 29
+    },
+    {
+      "class": "cls-4",
+      "count": 28
+    },
+    {
+      "class": "jw-icon",
+      "count": 25
+    },
+    {
+      "class": "ad",
+      "count": 23
+    },
+    {
+      "class": "reset-button",
+      "count": 21
+    },
+    {
+      "class": "sr-only",
+      "count": 21
+    },
+    {
+      "class": "jw-reset-text",
+      "count": 21
+    },
+    {
+      "class": "jw-button-color",
+      "count": 21
+    },
+    {
+      "class": "menu-toggle-button",
+      "count": 20
+    },
+    {
+      "class": "menu-label-text",
+      "count": 20
+    },
+    {
+      "class": "chevron-icon",
+      "count": 20
+    },
+    {
+      "class": "jw-text",
+      "count": 19
+    },
+    {
+      "class": "jw-icon-inline",
+      "count": 18
+    },
+    {
+      "class": "page-ad",
+      "count": 17
+    },
+    {
+      "class": "has-ad-prefix",
+      "count": 17
+    },
+    {
+      "class": "menu-item-object-post",
+      "count": 14
+    },
+    {
+      "class": "jw-tooltip",
+      "count": 13
+    },
+    {
+      "class": "sub-menu-open-button",
+      "count": 12
+    },
+    {
+      "class": "price-comparison__record",
+      "count": 12
+    },
+    {
+      "class": "jw-shortcuts-row",
+      "count": 12
+    },
+    {
+      "class": "jw-shortcuts-description",
+      "count": 12
+    },
+    {
+      "class": "jw-shortcuts-key",
+      "count": 12
+    },
+    {
+      "class": "ad-article",
+      "count": 11
+    },
+    {
+      "class": "product-widget__pricing-details--link",
+      "count": 10
+    },
+    {
+      "class": "toc-item",
+      "count": 8
+    },
+    {
+      "class": "wp-block-heading",
+      "count": 8
+    },
+    {
+      "class": "toc",
+      "count": 8
+    },
+    {
+      "class": "primaryFooter-menu-wrap",
+      "count": 8
+    },
+    {
+      "class": "primaryFooter-menu",
+      "count": 8
+    },
+    {
+      "class": "footer-base-child",
+      "count": 8
+    },
+    {
+      "class": "price-comparison__price",
+      "count": 8
+    },
+    {
+      "class": "ntv-script",
+      "count": 8
+    },
+    {
+      "class": "cls-2",
+      "count": 6
+    },
+    {
+      "class": "breadcrumb-item",
+      "count": 6
+    },
+    {
+      "class": "amp-bar",
+      "count": 6
+    },
+    {
+      "class": "is-sticky",
+      "count": 4
+    },
+    {
+      "class": "cls-3",
+      "count": 4
+    },
+    {
+      "class": "byline",
+      "count": 4
+    },
+    {
+      "class": "wp-block-column",
+      "count": 4
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "005",
+      "count": 10
+    },
+    {
+      "id": "Layer_1",
+      "count": 8
+    },
+    {
+      "id": "clip-path",
+      "count": 4
+    },
+    {
+      "id": "clip-path-2",
+      "count": 4
+    },
+    {
+      "id": "PCWorld_Reverse_",
+      "count": 4
+    },
+    {
+      "id": "ai_search_icon",
+      "count": 4
+    },
+    {
+      "id": "magnify",
+      "count": 4
+    },
+    {
+      "id": "third-column-footer-menu-item-one",
+      "count": 4
+    },
+    {
+      "id": "1004658034",
+      "count": 4
+    },
+    {
+      "id": "link_wrapped_content",
+      "count": 3
+    },
+    {
+      "id": "578110",
+      "count": 3
+    },
+    {
+      "id": "15278",
+      "count": 3
+    },
+    {
+      "id": "jwplayer--floatingVideo",
+      "count": 3
+    },
+    {
+      "id": "576269",
+      "count": 3
+    },
+    {
+      "id": "14547",
+      "count": 3
+    },
+    {
+      "id": "www-widgetapi-script",
+      "count": 2
+    },
+    {
+      "id": "wp-emoji-styles-inline-css",
+      "count": 2
+    },
+    {
+      "id": "wp-block-library-css",
+      "count": 2
+    },
+    {
+      "id": "co-authors-plus-coauthors-style-inline-css",
+      "count": 2
+    },
+    {
+      "id": "co-authors-plus-avatar-style-inline-css",
+      "count": 2
+    },
+    {
+      "id": "co-authors-plus-image-style-inline-css",
+      "count": 2
+    },
+    {
+      "id": "jetpack-sharing-buttons-style-inline-css",
+      "count": 2
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 2
+    },
+    {
+      "id": "idg-sponsored-price-style-css",
+      "count": 2
+    },
+    {
+      "id": "third-party-integrations-style-css",
+      "count": 2
+    },
+    {
+      "id": "frontend-jwplayer-styles-css",
+      "count": 2
+    },
+    {
+      "id": "frontend-shared-styles-css",
+      "count": 2
+    },
+    {
+      "id": "frontend-styles-css",
+      "count": 2
+    },
+    {
+      "id": "pcworld-shared-styles-css",
+      "count": 2
+    },
+    {
+      "id": "idg_geo_edge_code-js",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"ads\"], [id*=\"ads\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

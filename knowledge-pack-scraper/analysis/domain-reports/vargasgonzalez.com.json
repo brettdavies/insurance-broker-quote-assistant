@@ -1,0 +1,455 @@
+{
+  "domain": "vargasgonzalez.com",
+  "total_pages": 2,
+  "analyzed_at": "2025-11-07T14:35:35.310387",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 4,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 8,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 17,
+      "frequency": 8.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 4,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 8,
+      "frequency": 4.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "partial_nav_item",
+      "count": 76
+    },
+    {
+      "class": "level-2",
+      "count": 43
+    },
+    {
+      "class": "tresio-nav__list-item",
+      "count": 38
+    },
+    {
+      "class": "tresio-nav__link",
+      "count": 38
+    },
+    {
+      "class": "tel",
+      "count": 36
+    },
+    {
+      "class": "ppc-href",
+      "count": 36
+    },
+    {
+      "class": "ppc-number",
+      "count": 36
+    },
+    {
+      "class": "visuallyhidden",
+      "count": 34
+    },
+    {
+      "class": "level-1",
+      "count": 33
+    },
+    {
+      "class": "item",
+      "count": 28
+    },
+    {
+      "class": "row",
+      "count": 20
+    },
+    {
+      "class": "location-label",
+      "count": 14
+    },
+    {
+      "class": "btn",
+      "count": 14
+    },
+    {
+      "class": "level-3",
+      "count": 12
+    },
+    {
+      "class": "recent-article",
+      "count": 12
+    },
+    {
+      "class": "title",
+      "count": 12
+    },
+    {
+      "class": "title-link",
+      "count": 12
+    },
+    {
+      "class": "single-link",
+      "count": 11
+    },
+    {
+      "class": "back",
+      "count": 10
+    },
+    {
+      "class": "back-button",
+      "count": 10
+    },
+    {
+      "class": "chevron",
+      "count": 10
+    },
+    {
+      "class": "f-icon",
+      "count": 10
+    },
+    {
+      "class": "icon-star",
+      "count": 10
+    },
+    {
+      "class": "partial_socials",
+      "count": 8
+    },
+    {
+      "class": "instagram-icon",
+      "count": 8
+    },
+    {
+      "class": "facebook-icon",
+      "count": 8
+    },
+    {
+      "class": "twitter-icon",
+      "count": 8
+    },
+    {
+      "class": "linkedin-icon",
+      "count": 8
+    },
+    {
+      "class": "field-row",
+      "count": 8
+    },
+    {
+      "class": "col1",
+      "count": 8
+    },
+    {
+      "class": "field",
+      "count": 8
+    },
+    {
+      "class": "tresio-nav__list",
+      "count": 7
+    },
+    {
+      "class": "inner",
+      "count": 6
+    },
+    {
+      "class": "container",
+      "count": 6
+    },
+    {
+      "class": "hidden-row",
+      "count": 6
+    },
+    {
+      "class": "hidden",
+      "count": 6
+    },
+    {
+      "class": "block",
+      "count": 6
+    },
+    {
+      "class": "tresio-nav__list-item--has-children",
+      "count": 5
+    },
+    {
+      "class": "tresio-nav__dropdown",
+      "count": 5
+    },
+    {
+      "class": "locations",
+      "count": 4
+    },
+    {
+      "class": "show",
+      "count": 4
+    },
+    {
+      "class": "logo-holder",
+      "count": 4
+    },
+    {
+      "class": "logo",
+      "count": 4
+    },
+    {
+      "class": "nav-links",
+      "count": 4
+    },
+    {
+      "class": "tresio-nav",
+      "count": 4
+    },
+    {
+      "class": "list",
+      "count": 4
+    },
+    {
+      "class": "partial_nav",
+      "count": 4
+    },
+    {
+      "class": "ignore",
+      "count": 4
+    },
+    {
+      "class": "info",
+      "count": 4
+    },
+    {
+      "class": "email",
+      "count": 4
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "s3-vendor-styles",
+      "count": 2
+    },
+    {
+      "id": "s3-helper-styles",
+      "count": 2
+    },
+    {
+      "id": "s3-site-styles",
+      "count": 2
+    },
+    {
+      "id": "vtag-ai-js",
+      "count": 2
+    },
+    {
+      "id": "1yRvJQpL8XS5mw2E1",
+      "count": 2
+    },
+    {
+      "id": "google_translate_element",
+      "count": 2
+    },
+    {
+      "id": "main",
+      "count": 2
+    },
+    {
+      "id": "content",
+      "count": 2
+    },
+    {
+      "id": "time",
+      "count": 2
+    },
+    {
+      "id": "form_newsletter",
+      "count": 2
+    },
+    {
+      "id": "newsletter_subject",
+      "count": 2
+    },
+    {
+      "id": "newsletter_redirect",
+      "count": 2
+    },
+    {
+      "id": "newsletter_email",
+      "count": 2
+    },
+    {
+      "id": "newsletter_submit_label",
+      "count": 2
+    },
+    {
+      "id": "newsletter_recaptchaV3",
+      "count": 2
+    },
+    {
+      "id": "newsletter_recaptchaV2",
+      "count": 2
+    },
+    {
+      "id": "newsletter_recaptcha",
+      "count": 2
+    },
+    {
+      "id": "form_id",
+      "count": 2
+    },
+    {
+      "id": "validate_newsletter",
+      "count": 2
+    },
+    {
+      "id": "submit_newsletter",
+      "count": 2
+    },
+    {
+      "id": "title0",
+      "count": 1
+    },
+    {
+      "id": "title1",
+      "count": 1
+    },
+    {
+      "id": "title2",
+      "count": 1
+    },
+    {
+      "id": "title3",
+      "count": 1
+    },
+    {
+      "id": "title4",
+      "count": 1
+    },
+    {
+      "id": "title5",
+      "count": 1
+    },
+    {
+      "id": "title6",
+      "count": 1
+    },
+    {
+      "id": "title7",
+      "count": 1
+    },
+    {
+      "id": "title8",
+      "count": 1
+    },
+    {
+      "id": "title9",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

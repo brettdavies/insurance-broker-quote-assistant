@@ -1,0 +1,455 @@
+{
+  "domain": "carinsurance101.com",
+  "total_pages": 2,
+  "analyzed_at": "2025-11-07T14:35:35.432028",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 6,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 116,
+      "frequency": 58.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 734,
+      "frequency": 367.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 28,
+      "frequency": 14.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 16,
+      "frequency": 8.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "mega-menu-item",
+      "count": 272
+    },
+    {
+      "class": "mega-menu-link",
+      "count": 272
+    },
+    {
+      "class": "mega-menu-item-type-post_type",
+      "count": 196
+    },
+    {
+      "class": "mega-menu-item-object-post",
+      "count": 196
+    },
+    {
+      "class": "mega-menu-inline",
+      "count": 108
+    },
+    {
+      "class": "menu-inline",
+      "count": 108
+    },
+    {
+      "class": "mega-sub-menu",
+      "count": 84
+    },
+    {
+      "class": "mega-separator",
+      "count": 60
+    },
+    {
+      "class": "separator",
+      "count": 60
+    },
+    {
+      "class": "mega-separator-2",
+      "count": 48
+    },
+    {
+      "class": "separator-2",
+      "count": 48
+    },
+    {
+      "class": "mega-menu-item-type-custom",
+      "count": 40
+    },
+    {
+      "class": "mega-menu-item-object-custom",
+      "count": 40
+    },
+    {
+      "class": "mega-menu-item-has-children",
+      "count": 36
+    },
+    {
+      "class": "mega-indicator",
+      "count": 36
+    },
+    {
+      "class": "mega-menu-item-type-taxonomy",
+      "count": 36
+    },
+    {
+      "class": "mega-menu-item-object-category",
+      "count": 36
+    },
+    {
+      "class": "hide",
+      "count": 30
+    },
+    {
+      "class": "field-holder",
+      "count": 28
+    },
+    {
+      "class": "nationwide",
+      "count": 28
+    },
+    {
+      "class": "statefarm",
+      "count": 28
+    },
+    {
+      "class": "allstate",
+      "count": 28
+    },
+    {
+      "class": "mega-menu-grid",
+      "count": 24
+    },
+    {
+      "class": "mega-menu-row",
+      "count": 24
+    },
+    {
+      "class": "mega-menu-column",
+      "count": 24
+    },
+    {
+      "class": "mega-menu-columns-1-of-1",
+      "count": 20
+    },
+    {
+      "class": "mega-no-link",
+      "count": 20
+    },
+    {
+      "class": "mega-4-columns",
+      "count": 20
+    },
+    {
+      "class": "no-link",
+      "count": 20
+    },
+    {
+      "class": "menu-item",
+      "count": 20
+    },
+    {
+      "class": "ez-toc-page-1",
+      "count": 18
+    },
+    {
+      "class": "ez-toc-link",
+      "count": 18
+    },
+    {
+      "class": "ez-toc-heading-1",
+      "count": 18
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 16
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 16
+    },
+    {
+      "class": "container",
+      "count": 14
+    },
+    {
+      "class": "mda",
+      "count": 14
+    },
+    {
+      "class": "mda-contents",
+      "count": 14
+    },
+    {
+      "class": "mda-form",
+      "count": 14
+    },
+    {
+      "class": "mda-zip-field",
+      "count": 14
+    },
+    {
+      "class": "mda-zip",
+      "count": 14
+    },
+    {
+      "class": "mda-submit-field",
+      "count": 14
+    },
+    {
+      "class": "mda-submit",
+      "count": 14
+    },
+    {
+      "class": "secured-mda",
+      "count": 14
+    },
+    {
+      "class": "secured-mda-ad-disclosures",
+      "count": 14
+    },
+    {
+      "class": "ae-mda-brand-logos",
+      "count": 14
+    },
+    {
+      "class": "brands-container",
+      "count": 14
+    },
+    {
+      "class": "row",
+      "count": 12
+    },
+    {
+      "class": "mega-menu-megamenu",
+      "count": 12
+    },
+    {
+      "class": "mega-align-bottom-left",
+      "count": 12
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "type",
+      "count": 14
+    },
+    {
+      "id": "clip0_2070_2838",
+      "count": 14
+    },
+    {
+      "id": "mega-menu-wrap-menu-1",
+      "count": 4
+    },
+    {
+      "id": "mega-toggle-block-0",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-menu-1",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-131445",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-131445-0",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-131445-0-0",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-131446",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-131453",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-131454",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-131455",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-131456",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-131457",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-131458",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-225958",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-217104",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-217105",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-217106",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-131445-1",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-131445-1-0",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-131447",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-131470",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-131471",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-131472",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-131473",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-131474",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-131475",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-131476",
+      "count": 4
+    },
+    {
+      "id": "mega-menu-item-131477",
+      "count": 4
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

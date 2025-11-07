@@ -1,0 +1,456 @@
+{
+  "domain": "aaronhall.com",
+  "total_pages": 2,
+  "analyzed_at": "2025-11-07T14:35:34.562451",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 4,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 4,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 10,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 30,
+      "frequency": 15.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 184,
+      "frequency": 92.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 6,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 40,
+      "frequency": 20.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 4,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 4,
+      "frequency": 2.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "ez-toc-link",
+      "count": 32
+    },
+    {
+      "class": "ez-toc-section",
+      "count": 32
+    },
+    {
+      "class": "ez-toc-section-end",
+      "count": 32
+    },
+    {
+      "class": "ez-toc-page-1",
+      "count": 28
+    },
+    {
+      "class": "kadence-svg-iconset",
+      "count": 22
+    },
+    {
+      "class": "kadence-svg-icon",
+      "count": 22
+    },
+    {
+      "class": "menu-item",
+      "count": 20
+    },
+    {
+      "class": "widget",
+      "count": 20
+    },
+    {
+      "class": "social-button",
+      "count": 20
+    },
+    {
+      "class": "footer-social-item",
+      "count": 20
+    },
+    {
+      "class": "ez-toc-heading-level-2",
+      "count": 17
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 16
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 16
+    },
+    {
+      "class": "widget_block",
+      "count": 16
+    },
+    {
+      "class": "widget_text",
+      "count": 16
+    },
+    {
+      "class": "site-footer-focus-item",
+      "count": 16
+    },
+    {
+      "class": "ez-toc-heading-level-3",
+      "count": 15
+    },
+    {
+      "class": "site-header-focus-item",
+      "count": 14
+    },
+    {
+      "class": "site-container",
+      "count": 14
+    },
+    {
+      "class": "has-text-align-center",
+      "count": 14
+    },
+    {
+      "class": "site-header-item",
+      "count": 10
+    },
+    {
+      "class": "widget-area",
+      "count": 10
+    },
+    {
+      "class": "site-footer-section",
+      "count": 10
+    },
+    {
+      "class": "footer-section-inner-items-1",
+      "count": 10
+    },
+    {
+      "class": "footer-widget-area",
+      "count": 10
+    },
+    {
+      "class": "content-tablet-align-default",
+      "count": 10
+    },
+    {
+      "class": "content-mobile-align-default",
+      "count": 10
+    },
+    {
+      "class": "content-valign-default",
+      "count": 10
+    },
+    {
+      "class": "content-tablet-valign-default",
+      "count": 10
+    },
+    {
+      "class": "content-mobile-valign-default",
+      "count": 10
+    },
+    {
+      "class": "footer-widget-area-inner",
+      "count": 10
+    },
+    {
+      "class": "wpil_keyword_link",
+      "count": 9
+    },
+    {
+      "class": "site-header-section",
+      "count": 8
+    },
+    {
+      "class": "menu",
+      "count": 6
+    },
+    {
+      "class": "tag-link",
+      "count": 6
+    },
+    {
+      "class": "tag-hash",
+      "count": 6
+    },
+    {
+      "class": "site-footer-row-container",
+      "count": 6
+    },
+    {
+      "class": "site-footer-row-layout-standard",
+      "count": 6
+    },
+    {
+      "class": "site-footer-row-tablet-layout-default",
+      "count": 6
+    },
+    {
+      "class": "site-footer-row-mobile-layout-default",
+      "count": 6
+    },
+    {
+      "class": "site-footer-row-container-inner",
+      "count": 6
+    },
+    {
+      "class": "site-footer-row",
+      "count": 6
+    },
+    {
+      "class": "site-footer-row-tablet-column-layout-default",
+      "count": 6
+    },
+    {
+      "class": "site-footer-row-mobile-column-layout-row",
+      "count": 6
+    },
+    {
+      "class": "ft-ro-dir-row",
+      "count": 6
+    },
+    {
+      "class": "ft-ro-collapse-normal",
+      "count": 6
+    },
+    {
+      "class": "ft-ro-t-dir-default",
+      "count": 6
+    },
+    {
+      "class": "ft-ro-m-dir-default",
+      "count": 6
+    },
+    {
+      "class": "ft-ro-lstyle-plain",
+      "count": 6
+    },
+    {
+      "class": "content-align-default",
+      "count": 6
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "wp-block-library-css",
+      "count": 2
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 2
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 2
+    },
+    {
+      "id": "page-list-style-css",
+      "count": 2
+    },
+    {
+      "id": "theme.css-css",
+      "count": 2
+    },
+    {
+      "id": "child-pages-shortcode-css-css",
+      "count": 2
+    },
+    {
+      "id": "ez-toc-css",
+      "count": 2
+    },
+    {
+      "id": "ez-toc-inline-css",
+      "count": 2
+    },
+    {
+      "id": "grw-public-main-css-css",
+      "count": 2
+    },
+    {
+      "id": "kadence-global-css",
+      "count": 2
+    },
+    {
+      "id": "kadence-global-inline-css",
+      "count": 2
+    },
+    {
+      "id": "kadence-header-css",
+      "count": 2
+    },
+    {
+      "id": "kadence-content-css",
+      "count": 2
+    },
+    {
+      "id": "kadence-sidebar-css",
+      "count": 2
+    },
+    {
+      "id": "kadence-footer-css",
+      "count": 2
+    },
+    {
+      "id": "kadence-blocks-global-variables-inline-css",
+      "count": 2
+    },
+    {
+      "id": "jquery-core-js",
+      "count": 2
+    },
+    {
+      "id": "jquery-migrate-js",
+      "count": 2
+    },
+    {
+      "id": "Popup.js-js-before",
+      "count": 2
+    },
+    {
+      "id": "Popup.js-js",
+      "count": 2
+    },
+    {
+      "id": "PopupConfig.js-js",
+      "count": 2
+    },
+    {
+      "id": "PopupBuilder.js-js-before",
+      "count": 2
+    },
+    {
+      "id": "PopupBuilder.js-js",
+      "count": 2
+    },
+    {
+      "id": "child-pages-shortcode-js",
+      "count": 2
+    },
+    {
+      "id": "grw-public-main-js-js",
+      "count": 2
+    },
+    {
+      "id": "google_gtagjs-js",
+      "count": 2
+    },
+    {
+      "id": "google_gtagjs-js-after",
+      "count": 2
+    },
+    {
+      "id": "kadence-fonts-gfonts-css",
+      "count": 2
+    },
+    {
+      "id": "wp-custom-css",
+      "count": 2
+    },
+    {
+      "id": "wrapper",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main, [role=\"main\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

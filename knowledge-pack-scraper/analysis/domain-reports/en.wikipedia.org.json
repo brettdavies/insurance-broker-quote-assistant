@@ -1,0 +1,455 @@
+{
+  "domain": "en.wikipedia.org",
+  "total_pages": 24,
+  "analyzed_at": "2025-11-07T14:35:28.149212",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 24,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 49,
+      "frequency": 2.042,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 24,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 288,
+      "frequency": 12.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 2831,
+      "frequency": 117.958,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 5,
+      "frequency": 0.208,
+      "confidence": "low"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 58,
+      "frequency": 2.417,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 550,
+      "frequency": 22.917,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 1708,
+      "frequency": 71.167,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 219,
+      "frequency": 9.125,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "cite-bracket",
+      "count": 3924
+    },
+    {
+      "class": "external",
+      "count": 2759
+    },
+    {
+      "class": "text",
+      "count": 2754
+    },
+    {
+      "class": "mw-redirect",
+      "count": 2088
+    },
+    {
+      "class": "reference",
+      "count": 1963
+    },
+    {
+      "class": "mw-list-item",
+      "count": 1927
+    },
+    {
+      "class": "mw-cite-backlink",
+      "count": 1607
+    },
+    {
+      "class": "reference-text",
+      "count": 1607
+    },
+    {
+      "class": "citation",
+      "count": 1409
+    },
+    {
+      "class": "Z3988",
+      "count": 1408
+    },
+    {
+      "class": "cs1",
+      "count": 1391
+    },
+    {
+      "class": "nowrap",
+      "count": 1284
+    },
+    {
+      "class": "interlanguage-link",
+      "count": 896
+    },
+    {
+      "class": "interlanguage-link-target",
+      "count": 896
+    },
+    {
+      "class": "reference-accessdate",
+      "count": 866
+    },
+    {
+      "class": "web",
+      "count": 786
+    },
+    {
+      "class": "mw-editsection-bracket",
+      "count": 684
+    },
+    {
+      "class": "cdx-button",
+      "count": 641
+    },
+    {
+      "class": "cdx-button--weight-quiet",
+      "count": 545
+    },
+    {
+      "class": "vector-icon",
+      "count": 544
+    },
+    {
+      "class": "mw-file-element",
+      "count": 517
+    },
+    {
+      "class": "vector-toc-list-item",
+      "count": 494
+    },
+    {
+      "class": "vector-toc-link",
+      "count": 494
+    },
+    {
+      "class": "vector-toc-text",
+      "count": 494
+    },
+    {
+      "class": "mw-portlet",
+      "count": 481
+    },
+    {
+      "class": "cdx-button--fake-button",
+      "count": 480
+    },
+    {
+      "class": "cdx-button--fake-button--enabled",
+      "count": 480
+    },
+    {
+      "class": "vector-toc-numb",
+      "count": 470
+    },
+    {
+      "class": "vector-toc-list",
+      "count": 470
+    },
+    {
+      "class": "mw-heading",
+      "count": 470
+    },
+    {
+      "class": "navbox-list",
+      "count": 457
+    },
+    {
+      "class": "vector-menu-content",
+      "count": 433
+    },
+    {
+      "class": "vector-menu-content-list",
+      "count": 433
+    },
+    {
+      "class": "cdx-button--icon-only",
+      "count": 425
+    },
+    {
+      "class": "navbox-group",
+      "count": 420
+    },
+    {
+      "class": "navbox-list-with-group",
+      "count": 420
+    },
+    {
+      "class": "vector-menu",
+      "count": 409
+    },
+    {
+      "class": "mw-file-description",
+      "count": 338
+    },
+    {
+      "class": "mw-editsection",
+      "count": 335
+    },
+    {
+      "class": "hlist",
+      "count": 289
+    },
+    {
+      "class": "navbox-odd",
+      "count": 281
+    },
+    {
+      "class": "user-links-collapsible-item",
+      "count": 263
+    },
+    {
+      "class": "new",
+      "count": 255
+    },
+    {
+      "class": "mw-collapsible",
+      "count": 234
+    },
+    {
+      "class": "mw-made-collapsible",
+      "count": 234
+    },
+    {
+      "class": "mw-collapsible-toggle",
+      "count": 234
+    },
+    {
+      "class": "mw-collapsible-toggle-default",
+      "count": 234
+    },
+    {
+      "class": "mw-collapsible-text",
+      "count": 234
+    },
+    {
+      "class": "journal",
+      "count": 233
+    },
+    {
+      "class": "vector-toc-level-1",
+      "count": 229
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "vector-main-menu-unpinned-container",
+      "count": 48
+    },
+    {
+      "id": "vector-main-menu",
+      "count": 48
+    },
+    {
+      "id": "vector-main-menu-pinned-container",
+      "count": 48
+    },
+    {
+      "id": "vector-appearance-unpinned-container",
+      "count": 48
+    },
+    {
+      "id": "vector-appearance",
+      "count": 48
+    },
+    {
+      "id": "vector-appearance-pinned-container",
+      "count": 48
+    },
+    {
+      "id": "vector-toc",
+      "count": 48
+    },
+    {
+      "id": "vector-page-tools-unpinned-container",
+      "count": 48
+    },
+    {
+      "id": "vector-page-tools",
+      "count": 48
+    },
+    {
+      "id": "vector-page-tools-pinned-container",
+      "count": 48
+    },
+    {
+      "id": "vector-main-menu-dropdown",
+      "count": 24
+    },
+    {
+      "id": "vector-main-menu-dropdown-checkbox",
+      "count": 24
+    },
+    {
+      "id": "vector-main-menu-dropdown-label",
+      "count": 24
+    },
+    {
+      "id": "p-navigation",
+      "count": 24
+    },
+    {
+      "id": "n-mainpage-description",
+      "count": 24
+    },
+    {
+      "id": "n-contents",
+      "count": 24
+    },
+    {
+      "id": "n-currentevents",
+      "count": 24
+    },
+    {
+      "id": "n-randompage",
+      "count": 24
+    },
+    {
+      "id": "n-aboutsite",
+      "count": 24
+    },
+    {
+      "id": "n-contactpage",
+      "count": 24
+    },
+    {
+      "id": "p-interaction",
+      "count": 24
+    },
+    {
+      "id": "n-help",
+      "count": 24
+    },
+    {
+      "id": "n-introduction",
+      "count": 24
+    },
+    {
+      "id": "n-portal",
+      "count": 24
+    },
+    {
+      "id": "n-recentchanges",
+      "count": 24
+    },
+    {
+      "id": "n-upload",
+      "count": 24
+    },
+    {
+      "id": "n-specialpages",
+      "count": 24
+    },
+    {
+      "id": "p-search",
+      "count": 24
+    },
+    {
+      "id": "searchform",
+      "count": 24
+    },
+    {
+      "id": "simpleSearch",
+      "count": 24
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class*=\"ad\"], [id*=\"ad\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

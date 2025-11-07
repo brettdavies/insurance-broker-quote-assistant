@@ -1,0 +1,456 @@
+{
+  "domain": "finance.yahoo.com",
+  "total_pages": 14,
+  "analyzed_at": "2025-11-07T14:35:31.737595",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 14,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 14,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 79,
+      "frequency": 5.643,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 29,
+      "frequency": 2.071,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 41,
+      "frequency": 2.929,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 16,
+      "frequency": 1.143,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 28,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 29,
+      "frequency": 2.071,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 5051,
+      "frequency": 360.786,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 3,
+      "frequency": 0.214,
+      "confidence": "low"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 122,
+      "frequency": 8.714,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 13,
+      "frequency": 0.929,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 1,
+      "frequency": 0.071,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "_yb_1effwkc",
+      "count": 5312
+    },
+    {
+      "class": "_yb_14s9lue",
+      "count": 4850
+    },
+    {
+      "class": "_yb_1sypxam",
+      "count": 4312
+    },
+    {
+      "class": "yf-kadam1",
+      "count": 4242
+    },
+    {
+      "class": "rapid-noclick-resp",
+      "count": 1684
+    },
+    {
+      "class": "yf-1211h5v",
+      "count": 1485
+    },
+    {
+      "class": "yf-nx9nxk",
+      "count": 1265
+    },
+    {
+      "class": "_yb_1r2wk2r",
+      "count": 1076
+    },
+    {
+      "class": "yf-1090901",
+      "count": 986
+    },
+    {
+      "class": "_yb_m11dfa",
+      "count": 938
+    },
+    {
+      "class": "icon",
+      "count": 920
+    },
+    {
+      "class": "fin-icon",
+      "count": 920
+    },
+    {
+      "class": "yf-sv6wwp",
+      "count": 920
+    },
+    {
+      "class": "breaking-news",
+      "count": 812
+    },
+    {
+      "class": "fin-size-medium",
+      "count": 769
+    },
+    {
+      "class": "sz-large",
+      "count": 760
+    },
+    {
+      "class": "none-link",
+      "count": 726
+    },
+    {
+      "class": "tw-w-full",
+      "count": 717
+    },
+    {
+      "class": "notification-list-item",
+      "count": 700
+    },
+    {
+      "class": "notification-list-item-contents",
+      "count": 700
+    },
+    {
+      "class": "notification-list-item-icon",
+      "count": 700
+    },
+    {
+      "class": "white-icn",
+      "count": 700
+    },
+    {
+      "class": "notification-list-item-info",
+      "count": 700
+    },
+    {
+      "class": "notification-list-item-meta",
+      "count": 700
+    },
+    {
+      "class": "notification-list-item-body",
+      "count": 700
+    },
+    {
+      "class": "fin-size-small",
+      "count": 636
+    },
+    {
+      "class": "_yb_33cyw3",
+      "count": 622
+    },
+    {
+      "class": "morning-brief",
+      "count": 588
+    },
+    {
+      "class": "_yb_le1c7o",
+      "count": 552
+    },
+    {
+      "class": "_yb_9jocsz",
+      "count": 538
+    },
+    {
+      "class": "_yb_19ulbrr",
+      "count": 538
+    },
+    {
+      "class": "_yb_xuv98",
+      "count": 538
+    },
+    {
+      "class": "_yb_13x5m53",
+      "count": 538
+    },
+    {
+      "class": "_yb_19ujfnt",
+      "count": 538
+    },
+    {
+      "class": "subtle-link",
+      "count": 532
+    },
+    {
+      "class": "yf-1woyvo2",
+      "count": 503
+    },
+    {
+      "class": "item",
+      "count": 364
+    },
+    {
+      "class": "yf-lfbf5f",
+      "count": 350
+    },
+    {
+      "class": "item-content",
+      "count": 279
+    },
+    {
+      "class": "header-scroll",
+      "count": 265
+    },
+    {
+      "class": "yf-gn6wdt",
+      "count": 265
+    },
+    {
+      "class": "yf-1fkh63j",
+      "count": 260
+    },
+    {
+      "class": "link",
+      "count": 230
+    },
+    {
+      "class": "_yb_18t83d3",
+      "count": 196
+    },
+    {
+      "class": "_yb_99ncqx",
+      "count": 196
+    },
+    {
+      "class": "dropdown-list-item",
+      "count": 189
+    },
+    {
+      "class": "_yb_rtbinu",
+      "count": 182
+    },
+    {
+      "class": "yahoo-link",
+      "count": 181
+    },
+    {
+      "class": "yf-glpa3t",
+      "count": 154
+    },
+    {
+      "class": "sz-xx-large",
+      "count": 140
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "storyitem",
+      "count": 70
+    },
+    {
+      "id": "ad-container",
+      "count": 58
+    },
+    {
+      "id": "skeleton-loader",
+      "count": 34
+    },
+    {
+      "id": "svelte",
+      "count": 28
+    },
+    {
+      "id": "app-err-banner",
+      "count": 28
+    },
+    {
+      "id": "error-msg",
+      "count": 28
+    },
+    {
+      "id": "yns-panel",
+      "count": 28
+    },
+    {
+      "id": "ticker-list-item",
+      "count": 26
+    },
+    {
+      "id": "add-to-following",
+      "count": 26
+    },
+    {
+      "id": "inarticle-ad",
+      "count": 19
+    },
+    {
+      "id": "lazy-render",
+      "count": 18
+    },
+    {
+      "id": "search-assist-input-sugglst",
+      "count": 15
+    },
+    {
+      "id": "search-assist-footer",
+      "count": 15
+    },
+    {
+      "id": "search-assist-input-recomlst",
+      "count": 15
+    },
+    {
+      "id": "result-recommend-0",
+      "count": 15
+    },
+    {
+      "id": "result-recommend-1",
+      "count": 15
+    },
+    {
+      "id": "result-recommend-2",
+      "count": 15
+    },
+    {
+      "id": "result-recommend-3",
+      "count": 15
+    },
+    {
+      "id": "result-recommend-4",
+      "count": 15
+    },
+    {
+      "id": "nimbus-benji-config",
+      "count": 14
+    },
+    {
+      "id": "ga-G-YD9K1W9DLN",
+      "count": 14
+    },
+    {
+      "id": "gpt-tag",
+      "count": 14
+    },
+    {
+      "id": "ay-script",
+      "count": 14
+    },
+    {
+      "id": "yPrebid-script",
+      "count": 14
+    },
+    {
+      "id": "opus-script",
+      "count": 14
+    },
+    {
+      "id": "notificationStyles",
+      "count": 14
+    },
+    {
+      "id": "article-metadata",
+      "count": 14
+    },
+    {
+      "id": "atomic",
+      "count": 14
+    },
+    {
+      "id": "sda-E2E",
+      "count": 14
+    },
+    {
+      "id": "ybar",
+      "count": 14
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

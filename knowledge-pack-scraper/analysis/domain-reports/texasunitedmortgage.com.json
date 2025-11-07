@@ -1,0 +1,455 @@
+{
+  "domain": "texasunitedmortgage.com",
+  "total_pages": 2,
+  "analyzed_at": "2025-11-07T14:35:36.167011",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 4,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 4,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 49,
+      "frequency": 24.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 10,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 6,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 84,
+      "frequency": 42.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 46,
+      "frequency": 23.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "hs-menu-item",
+      "count": 64
+    },
+    {
+      "class": "hs_cos_wrapper",
+      "count": 44
+    },
+    {
+      "class": "hs_cos_wrapper_widget",
+      "count": 38
+    },
+    {
+      "class": "hs-menu-depth-2",
+      "count": 38
+    },
+    {
+      "class": "hs-menu-depth-1",
+      "count": 26
+    },
+    {
+      "class": "field",
+      "count": 20
+    },
+    {
+      "class": "hs-form-field",
+      "count": 20
+    },
+    {
+      "class": "input",
+      "count": 20
+    },
+    {
+      "class": "hs-input",
+      "count": 18
+    },
+    {
+      "class": "hs_cos_wrapper_type_inline_text",
+      "count": 16
+    },
+    {
+      "class": "hs-fieldtype-text",
+      "count": 12
+    },
+    {
+      "class": "container",
+      "count": 10
+    },
+    {
+      "class": "fa",
+      "count": 10
+    },
+    {
+      "class": "hs-form-required",
+      "count": 10
+    },
+    {
+      "class": "hs_cos_wrapper_type_module",
+      "count": 8
+    },
+    {
+      "class": "hs-item-has-children",
+      "count": 8
+    },
+    {
+      "class": "child-triggerm",
+      "count": 8
+    },
+    {
+      "class": "hs-menu-children-wrapper",
+      "count": 8
+    },
+    {
+      "class": "footer_column",
+      "count": 8
+    },
+    {
+      "class": "btn__design1",
+      "count": 6
+    },
+    {
+      "class": "m_tag",
+      "count": 6
+    },
+    {
+      "class": "mortgages_date",
+      "count": 6
+    },
+    {
+      "class": "mortgages_d",
+      "count": 6
+    },
+    {
+      "class": "mortgages_a",
+      "count": 6
+    },
+    {
+      "class": "t_tst_mod_cmp",
+      "count": 6
+    },
+    {
+      "class": "t_tst_mod_a",
+      "count": 6
+    },
+    {
+      "class": "t_tst_mod_cmp_img",
+      "count": 6
+    },
+    {
+      "class": "t_tst_mod_cmp_con",
+      "count": 6
+    },
+    {
+      "class": "hs-form-private",
+      "count": 6
+    },
+    {
+      "class": "hs-form",
+      "count": 6
+    },
+    {
+      "class": "stacked",
+      "count": 6
+    },
+    {
+      "class": "hs_email",
+      "count": 6
+    },
+    {
+      "class": "hs-email",
+      "count": 6
+    },
+    {
+      "class": "hs_submit",
+      "count": 6
+    },
+    {
+      "class": "hs-submit",
+      "count": 6
+    },
+    {
+      "class": "hs-field-desc",
+      "count": 6
+    },
+    {
+      "class": "actions",
+      "count": 6
+    },
+    {
+      "class": "hs-button",
+      "count": 6
+    },
+    {
+      "class": "primary",
+      "count": 6
+    },
+    {
+      "class": "sidepopular_column",
+      "count": 6
+    },
+    {
+      "class": "sidepopular_img",
+      "count": 6
+    },
+    {
+      "class": "sidepopular_text",
+      "count": 6
+    },
+    {
+      "class": "hs-menu-wrapper",
+      "count": 4
+    },
+    {
+      "class": "active-branch",
+      "count": 4
+    },
+    {
+      "class": "flyouts",
+      "count": 4
+    },
+    {
+      "class": "hs-menu-flow-horizontal",
+      "count": 4
+    },
+    {
+      "class": "hs_cos_wrapper_type_cta",
+      "count": 4
+    },
+    {
+      "class": "hs-cta-wrapper",
+      "count": 4
+    },
+    {
+      "class": "hs-cta-node",
+      "count": 4
+    },
+    {
+      "class": "cta_button",
+      "count": 4
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "hs_cos_wrapper_module_16625242063361_",
+      "count": 16
+    },
+    {
+      "id": "8449527",
+      "count": 8
+    },
+    {
+      "id": "hs_cos_wrapper_header_",
+      "count": 6
+    },
+    {
+      "id": "Icon_ionic-ios-arrow-round-forward",
+      "count": 4
+    },
+    {
+      "id": "b0d06957-fee5-4e02-933c-bc5afd6db655",
+      "count": 4
+    },
+    {
+      "id": "hs_cos_wrapper_module_162186395776821_",
+      "count": 4
+    },
+    {
+      "id": "CollectedForms-8449527",
+      "count": 2
+    },
+    {
+      "id": "hs-analytics",
+      "count": 2
+    },
+    {
+      "id": "hubspot-messages-loader",
+      "count": 2
+    },
+    {
+      "id": "cookieBanner-8449527",
+      "count": 2
+    },
+    {
+      "id": "twitter-wjs",
+      "count": 2
+    },
+    {
+      "id": "facebook-jssdk",
+      "count": 2
+    },
+    {
+      "id": "recaptcha",
+      "count": 2
+    },
+    {
+      "id": "hs_cos_wrapper_header",
+      "count": 2
+    },
+    {
+      "id": "hs_menu_wrapper_header_",
+      "count": 2
+    },
+    {
+      "id": "47805912610",
+      "count": 2
+    },
+    {
+      "id": "hs-cta-wrapper-5de877f9-4b87-402f-b7e8-9e2ba916cfcf",
+      "count": 2
+    },
+    {
+      "id": "hs-cta-5de877f9-4b87-402f-b7e8-9e2ba916cfcf",
+      "count": 2
+    },
+    {
+      "id": "cta_button_8449527_1aadf802-6779-4bff-ab25-b5f3c125bd54",
+      "count": 2
+    },
+    {
+      "id": "hs-cta-wrapper-6f14aad0-4a55-4134-b4a3-7f426e9928b4",
+      "count": 2
+    },
+    {
+      "id": "hs-cta-6f14aad0-4a55-4134-b4a3-7f426e9928b4",
+      "count": 2
+    },
+    {
+      "id": "cta_button_8449527_f1ea41c7-a87a-4da7-b749-7f4d85e395ee",
+      "count": 2
+    },
+    {
+      "id": "main-content",
+      "count": 2
+    },
+    {
+      "id": "hs_cos_wrapper_name",
+      "count": 2
+    },
+    {
+      "id": "hs_cos_wrapper_post_body",
+      "count": 2
+    },
+    {
+      "id": "hs_cos_wrapper_blog_comments",
+      "count": 2
+    },
+    {
+      "id": "hs_cos_wrapper_blog_comments_blog_comments",
+      "count": 2
+    },
+    {
+      "id": "comments-listing",
+      "count": 2
+    },
+    {
+      "id": "hs_form_target_3d19a939-a9d1-4380-b09f-2834978e9b88",
+      "count": 2
+    },
+    {
+      "id": "hsForm_3d19a939-a9d1-4380-b09f-2834978e9b88_7871",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

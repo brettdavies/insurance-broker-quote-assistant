@@ -1,0 +1,451 @@
+{
+  "domain": "youtube.com",
+  "total_pages": 10,
+  "analyzed_at": "2025-11-07T14:35:32.685698",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 6,
+      "frequency": 0.6,
+      "confidence": "medium"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "footer",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "nav",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 132,
+      "frequency": 13.2,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 2958,
+      "frequency": 295.8,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 18,
+      "frequency": 1.8,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 227,
+      "frequency": 22.7,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 566,
+      "frequency": 56.6,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 220,
+      "frequency": 22.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "style-scope",
+      "count": 5730
+    },
+    {
+      "class": "ytp-button",
+      "count": 453
+    },
+    {
+      "class": "ytd-macro-markers-list-item-renderer",
+      "count": 434
+    },
+    {
+      "class": "skeleton-bg-color",
+      "count": 420
+    },
+    {
+      "class": "yt-icon-shape",
+      "count": 404
+    },
+    {
+      "class": "ytd-watch-flexy",
+      "count": 387
+    },
+    {
+      "class": "ytd-engagement-panel-title-header-renderer",
+      "count": 351
+    },
+    {
+      "class": "yt-core-attributed-string",
+      "count": 339
+    },
+    {
+      "class": "yt-spec-touch-feedback-shape",
+      "count": 295
+    },
+    {
+      "class": "yt-spec-touch-feedback-shape__stroke",
+      "count": 295
+    },
+    {
+      "class": "yt-spec-touch-feedback-shape__fill",
+      "count": 295
+    },
+    {
+      "class": "tp-yt-paper-spinner",
+      "count": 294
+    },
+    {
+      "class": "ytd-app",
+      "count": 269
+    },
+    {
+      "class": "yt-spec-touch-feedback-shape--touch-response",
+      "count": 262
+    },
+    {
+      "class": "yt-core-attributed-string--white-space-pre-wrap",
+      "count": 261
+    },
+    {
+      "class": "yt-core-attributed-string--link-inherit-color",
+      "count": 256
+    },
+    {
+      "class": "yt-spec-button-shape-next",
+      "count": 255
+    },
+    {
+      "class": "yt-spec-button-shape-next--enable-backdrop-filter-experiment",
+      "count": 255
+    },
+    {
+      "class": "ytIconWrapperHost",
+      "count": 253
+    },
+    {
+      "class": "text-shell",
+      "count": 240
+    },
+    {
+      "class": "ytd-masthead",
+      "count": 240
+    },
+    {
+      "class": "yt-spec-button-shape-next__icon",
+      "count": 224
+    },
+    {
+      "class": "yt-spec-button-shape-next--mono",
+      "count": 217
+    },
+    {
+      "class": "yt-spec-button-shape-next--size-m",
+      "count": 214
+    },
+    {
+      "class": "yt-formatted-string",
+      "count": 206
+    },
+    {
+      "class": "yt-simple-endpoint",
+      "count": 200
+    },
+    {
+      "class": "ytd-watch-metadata",
+      "count": 192
+    },
+    {
+      "class": "ytd-video-description-infocards-section-renderer",
+      "count": 184
+    },
+    {
+      "class": "ytd-playlist-panel-renderer",
+      "count": 180
+    },
+    {
+      "class": "ytSpecIconShapeHost",
+      "count": 160
+    },
+    {
+      "class": "yt-interaction",
+      "count": 158
+    },
+    {
+      "class": "yt-icon",
+      "count": 151
+    },
+    {
+      "class": "ytd-thumbnail",
+      "count": 138
+    },
+    {
+      "class": "ytd-horizontal-card-list-renderer",
+      "count": 137
+    },
+    {
+      "class": "ytp-svg-shadow",
+      "count": 132
+    },
+    {
+      "class": "flex-1",
+      "count": 130
+    },
+    {
+      "class": "yt-icon-button",
+      "count": 130
+    },
+    {
+      "class": "yt-dropdown-menu",
+      "count": 130
+    },
+    {
+      "class": "ytd-text-inline-expander",
+      "count": 130
+    },
+    {
+      "class": "yt-content-metadata-view-model__metadata-text",
+      "count": 126
+    },
+    {
+      "class": "circle-clipper",
+      "count": 124
+    },
+    {
+      "class": "circle",
+      "count": 124
+    },
+    {
+      "class": "yt-spec-button-shape-next--text",
+      "count": 121
+    },
+    {
+      "class": "ytd-video-primary-info-renderer",
+      "count": 120
+    },
+    {
+      "class": "ytd-engagement-panel-section-list-renderer",
+      "count": 111
+    },
+    {
+      "class": "ytCoreImageHost",
+      "count": 109
+    },
+    {
+      "class": "ytSpecButtonViewModelHost",
+      "count": 109
+    },
+    {
+      "class": "ytd-menu-renderer",
+      "count": 108
+    },
+    {
+      "class": "yt-spec-button-shape-next__button-text-content",
+      "count": 107
+    },
+    {
+      "class": "ytCoreImageFillParentHeight",
+      "count": 106
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "button",
+      "count": 101
+    },
+    {
+      "id": "header",
+      "count": 89
+    },
+    {
+      "id": "repeat",
+      "count": 84
+    },
+    {
+      "id": "title",
+      "count": 73
+    },
+    {
+      "id": "endpoint",
+      "count": 68
+    },
+    {
+      "id": "interaction",
+      "count": 65
+    },
+    {
+      "id": "thumbnail",
+      "count": 63
+    },
+    {
+      "id": "img",
+      "count": 60
+    },
+    {
+      "id": "details",
+      "count": 58
+    },
+    {
+      "id": "time",
+      "count": 58
+    },
+    {
+      "id": "menu",
+      "count": 56
+    },
+    {
+      "id": "container",
+      "count": 54
+    },
+    {
+      "id": "subtitle",
+      "count": 51
+    },
+    {
+      "id": "items",
+      "count": 46
+    },
+    {
+      "id": "tooltip",
+      "count": 46
+    },
+    {
+      "id": "content",
+      "count": 45
+    },
+    {
+      "id": "logo-icon",
+      "count": 40
+    },
+    {
+      "id": "info",
+      "count": 36
+    },
+    {
+      "id": "overlays",
+      "count": 32
+    },
+    {
+      "id": "overlay",
+      "count": 31
+    },
+    {
+      "id": "logo",
+      "count": 30
+    },
+    {
+      "id": "icon",
+      "count": 29
+    },
+    {
+      "id": "share-button",
+      "count": 29
+    },
+    {
+      "id": "repeat-button",
+      "count": 29
+    },
+    {
+      "id": "mouseover-overlay",
+      "count": 26
+    },
+    {
+      "id": "hover-overlays",
+      "count": 26
+    },
+    {
+      "id": "navigation-button",
+      "count": 25
+    },
+    {
+      "id": "title-text",
+      "count": 25
+    },
+    {
+      "id": "information-button",
+      "count": 25
+    },
+    {
+      "id": "action-button",
+      "count": 24
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [],
+    "css_selector": null,
+    "excluded_selector": "[class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"ads\"], [id*=\"ads\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "low"
+  }
+}

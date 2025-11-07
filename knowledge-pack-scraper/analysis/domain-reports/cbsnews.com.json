@@ -1,0 +1,456 @@
+{
+  "domain": "cbsnews.com",
+  "total_pages": 7,
+  "analyzed_at": "2025-11-07T14:35:32.272234",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 88,
+      "frequency": 12.571,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 21,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 14,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 27,
+      "frequency": 3.857,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 5,
+      "frequency": 0.714,
+      "confidence": "medium"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 367,
+      "frequency": 52.429,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 91,
+      "frequency": 13.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 14,
+      "frequency": 2.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "site-nav__anchor",
+      "count": 584
+    },
+    {
+      "class": "site-nav__flyout-item",
+      "count": 549
+    },
+    {
+      "class": "column--2",
+      "count": 258
+    },
+    {
+      "class": "FooterLinks-item",
+      "count": 167
+    },
+    {
+      "class": "img",
+      "count": 106
+    },
+    {
+      "class": "lazyloaded",
+      "count": 88
+    },
+    {
+      "class": "card-recirc",
+      "count": 81
+    },
+    {
+      "class": "item__anchor",
+      "count": 81
+    },
+    {
+      "class": "thumb",
+      "count": 81
+    },
+    {
+      "class": "item__thumb",
+      "count": 81
+    },
+    {
+      "class": "lazyload",
+      "count": 79
+    },
+    {
+      "class": "item__thumb--crop-0",
+      "count": 79
+    },
+    {
+      "class": "site-nav__item",
+      "count": 70
+    },
+    {
+      "class": "site-nav__item-title",
+      "count": 51
+    },
+    {
+      "class": "component",
+      "count": 42
+    },
+    {
+      "class": "site-nav__item-icon",
+      "count": 41
+    },
+    {
+      "class": "site-nav__flyout",
+      "count": 40
+    },
+    {
+      "class": "column-count--2",
+      "count": 39
+    },
+    {
+      "class": "FooterLinks-group",
+      "count": 36
+    },
+    {
+      "class": "FooterLinks-title",
+      "count": 36
+    },
+    {
+      "class": "row",
+      "count": 35
+    },
+    {
+      "class": "nocontent",
+      "count": 34
+    },
+    {
+      "class": "site-nav__item-icon_chevron-down",
+      "count": 32
+    },
+    {
+      "class": "component__item-wrapper",
+      "count": 30
+    },
+    {
+      "class": "ls-is-cached",
+      "count": 28
+    },
+    {
+      "class": "svg-sprite",
+      "count": 28
+    },
+    {
+      "class": "link",
+      "count": 26
+    },
+    {
+      "class": "ad-wrapper",
+      "count": 24
+    },
+    {
+      "class": "component--view-bulk-component",
+      "count": 23
+    },
+    {
+      "class": "separator",
+      "count": 22
+    },
+    {
+      "class": "site-logo__icon",
+      "count": 21
+    },
+    {
+      "class": "col-12",
+      "count": 21
+    },
+    {
+      "class": "smart-banner-download__icon",
+      "count": 21
+    },
+    {
+      "class": "site-header__container",
+      "count": 20
+    },
+    {
+      "class": "site-nav__container",
+      "count": 20
+    },
+    {
+      "class": "site-nav",
+      "count": 20
+    },
+    {
+      "class": "list",
+      "count": 19
+    },
+    {
+      "class": "ad-mpu-flex-inc",
+      "count": 17
+    },
+    {
+      "class": "site-nav__item--search-link",
+      "count": 14
+    },
+    {
+      "class": "site-nav__item-icon--type-search",
+      "count": 14
+    },
+    {
+      "class": "component--topic-",
+      "count": 14
+    },
+    {
+      "class": "chip",
+      "count": 14
+    },
+    {
+      "class": "content__meta",
+      "count": 14
+    },
+    {
+      "class": "byline__author__popover-btn",
+      "count": 14
+    },
+    {
+      "class": "underline-on-hover",
+      "count": 14
+    },
+    {
+      "class": "embed",
+      "count": 14
+    },
+    {
+      "class": "content__body--footer",
+      "count": 14
+    },
+    {
+      "class": "ot-sdk-show-settings",
+      "count": 14
+    },
+    {
+      "class": "smart-banner-download__buttons",
+      "count": 14
+    },
+    {
+      "class": "smart-banner-download__button",
+      "count": 14
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "dff76b49-842a-490c-b0c4-53eef3c3d687",
+      "count": 18
+    },
+    {
+      "id": "_uasdk",
+      "count": 14
+    },
+    {
+      "id": "logo-sacramento",
+      "count": 14
+    },
+    {
+      "id": "inline-recirc-item--id-2",
+      "count": 10
+    },
+    {
+      "id": "inline-recirc-item--id-3",
+      "count": 10
+    },
+    {
+      "id": "inline-recirc-item--id-4",
+      "count": 10
+    },
+    {
+      "id": "inline-recirc-item--id-1",
+      "count": 9
+    },
+    {
+      "id": "bb-cbsoptanon",
+      "count": 7
+    },
+    {
+      "id": "utag_cbsi.cbsnewssite_137",
+      "count": 7
+    },
+    {
+      "id": "fb-root",
+      "count": 7
+    },
+    {
+      "id": "ieblock",
+      "count": 7
+    },
+    {
+      "id": "search-form:",
+      "count": 7
+    },
+    {
+      "id": "lazyload--search-form",
+      "count": 7
+    },
+    {
+      "id": "breaking-news",
+      "count": 7
+    },
+    {
+      "id": "article-0",
+      "count": 7
+    },
+    {
+      "id": "article-header",
+      "count": 7
+    },
+    {
+      "id": "mpu-plus-outstream-middle",
+      "count": 7
+    },
+    {
+      "id": "mpu-flex-inc3",
+      "count": 7
+    },
+    {
+      "id": "component-story-right-rail-content",
+      "count": 7
+    },
+    {
+      "id": "5766778b-0b34-4b78-844a-d2ef0afaac8f",
+      "count": 7
+    },
+    {
+      "id": "component-queryly-right-rail-article-recirc",
+      "count": 7
+    },
+    {
+      "id": "af907f0c-7c99-459b-bad1-fc091da10a84",
+      "count": 7
+    },
+    {
+      "id": "inline-recirc-item--id-0",
+      "count": 7
+    },
+    {
+      "id": "inline-recirc-item--id-5",
+      "count": 7
+    },
+    {
+      "id": "inline-recirc-item--id-6",
+      "count": 7
+    },
+    {
+      "id": "inline-recirc-item--id-7",
+      "count": 7
+    },
+    {
+      "id": "mpu-plus-top-right-rail",
+      "count": 7
+    },
+    {
+      "id": "california-notice-link",
+      "count": 7
+    },
+    {
+      "id": "logo-browser-safari",
+      "count": 7
+    },
+    {
+      "id": "logo-browser-chrome",
+      "count": 7
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article",
+    "excluded_selector": "[class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

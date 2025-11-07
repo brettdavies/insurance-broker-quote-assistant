@@ -1,0 +1,455 @@
+{
+  "domain": "shunins.com",
+  "total_pages": 11,
+  "analyzed_at": "2025-11-07T14:35:31.899387",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 142,
+      "frequency": 12.909,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 11,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 22,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 11,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 327,
+      "frequency": 29.727,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 22,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 22,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 44,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 187,
+      "frequency": 17.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "icon",
+      "count": 363
+    },
+    {
+      "class": "small",
+      "count": 352
+    },
+    {
+      "class": "small-top",
+      "count": 352
+    },
+    {
+      "class": "col-sm-6",
+      "count": 264
+    },
+    {
+      "class": "col-md-2",
+      "count": 264
+    },
+    {
+      "class": "link-image-wrap",
+      "count": 264
+    },
+    {
+      "class": "affiliate_product_image",
+      "count": 264
+    },
+    {
+      "class": "link-image",
+      "count": 264
+    },
+    {
+      "class": "affiliate_product_title",
+      "count": 264
+    },
+    {
+      "class": "affiliate_product_price",
+      "count": 264
+    },
+    {
+      "class": "unit",
+      "count": 209
+    },
+    {
+      "class": "unit-body",
+      "count": 209
+    },
+    {
+      "class": "icon-primary",
+      "count": 176
+    },
+    {
+      "class": "flex-row",
+      "count": 154
+    },
+    {
+      "class": "unit-left",
+      "count": 154
+    },
+    {
+      "class": "fa",
+      "count": 121
+    },
+    {
+      "class": "mt-0",
+      "count": 121
+    },
+    {
+      "class": "row",
+      "count": 110
+    },
+    {
+      "class": "post",
+      "count": 99
+    },
+    {
+      "class": "post-header",
+      "count": 99
+    },
+    {
+      "class": "post-meta",
+      "count": 99
+    },
+    {
+      "class": "col-md-6",
+      "count": 99
+    },
+    {
+      "class": "text-gray-05",
+      "count": 98
+    },
+    {
+      "class": "icon-round",
+      "count": 88
+    },
+    {
+      "class": "icon-pciked-bluewood",
+      "count": 88
+    },
+    {
+      "class": "icon-xxs-smallest",
+      "count": 88
+    },
+    {
+      "class": "link-primary",
+      "count": 88
+    },
+    {
+      "class": "text-strike",
+      "count": 88
+    },
+    {
+      "class": "text-danger",
+      "count": 88
+    },
+    {
+      "class": "mt-2",
+      "count": 88
+    },
+    {
+      "class": "post-preview",
+      "count": 88
+    },
+    {
+      "class": "post-image",
+      "count": 88
+    },
+    {
+      "class": "list-meta",
+      "count": 88
+    },
+    {
+      "class": "list-inline",
+      "count": 77
+    },
+    {
+      "class": "icon-md",
+      "count": 66
+    },
+    {
+      "class": "link-primary-bold",
+      "count": 66
+    },
+    {
+      "class": "border-0",
+      "count": 66
+    },
+    {
+      "class": "pt-0",
+      "count": 66
+    },
+    {
+      "class": "unit-spacing-sm",
+      "count": 66
+    },
+    {
+      "class": "badge",
+      "count": 64
+    },
+    {
+      "class": "mark",
+      "count": 56
+    },
+    {
+      "class": "align-items-center",
+      "count": 55
+    },
+    {
+      "class": "hr-lines",
+      "count": 55
+    },
+    {
+      "class": "see-also",
+      "count": 55
+    },
+    {
+      "class": "see-also-icon",
+      "count": 55
+    },
+    {
+      "class": "icon-lg-big",
+      "count": 55
+    },
+    {
+      "class": "fa-see-also",
+      "count": 55
+    },
+    {
+      "class": "mb-0",
+      "count": 55
+    },
+    {
+      "class": "mb-4",
+      "count": 55
+    },
+    {
+      "class": "list-inline-xs",
+      "count": 55
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "rd-search-form-input",
+      "count": 11
+    },
+    {
+      "id": "rd-search-results-live",
+      "count": 11
+    },
+    {
+      "id": "faqs",
+      "count": 11
+    },
+    {
+      "id": "accordionTwo",
+      "count": 11
+    },
+    {
+      "id": "accordionTwo-accordion-head-0",
+      "count": 11
+    },
+    {
+      "id": "accordionTwo-accordion-body-0",
+      "count": 11
+    },
+    {
+      "id": "accordionTwo-accordion-head-1",
+      "count": 11
+    },
+    {
+      "id": "accordionTwo-accordion-body-1",
+      "count": 11
+    },
+    {
+      "id": "accordionTwo-accordion-head-2",
+      "count": 11
+    },
+    {
+      "id": "accordionTwo-accordion-body-2",
+      "count": 11
+    },
+    {
+      "id": "help-questions",
+      "count": 11
+    },
+    {
+      "id": "btn-help-yes",
+      "count": 11
+    },
+    {
+      "id": "btn-help-no",
+      "count": 11
+    },
+    {
+      "id": "help-yes-response",
+      "count": 11
+    },
+    {
+      "id": "help-no-response",
+      "count": 11
+    },
+    {
+      "id": "help-1",
+      "count": 11
+    },
+    {
+      "id": "help-2",
+      "count": 11
+    },
+    {
+      "id": "help-3",
+      "count": 11
+    },
+    {
+      "id": "help-4",
+      "count": 11
+    },
+    {
+      "id": "btn-help-submit",
+      "count": 11
+    },
+    {
+      "id": "help-submit-response",
+      "count": 11
+    },
+    {
+      "id": "comments",
+      "count": 11
+    },
+    {
+      "id": "aswift_1_host",
+      "count": 11
+    },
+    {
+      "id": "form-comment",
+      "count": 11
+    },
+    {
+      "id": "aswift_0_host",
+      "count": 11
+    },
+    {
+      "id": "aswift_0",
+      "count": 11
+    },
+    {
+      "id": "a!1",
+      "count": 11
+    },
+    {
+      "id": "ui-to-top",
+      "count": 11
+    },
+    {
+      "id": "google_esf",
+      "count": 11
+    },
+    {
+      "id": "accordionTwo-accordion-head-3",
+      "count": 6
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article",
+    "excluded_selector": "[class*=\"ad\"], [id*=\"ad\"], [class*=\"ads\"], [id*=\"ads\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

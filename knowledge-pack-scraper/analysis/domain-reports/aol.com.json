@@ -1,0 +1,454 @@
+{
+  "domain": "aol.com",
+  "total_pages": 4,
+  "analyzed_at": "2025-11-07T14:35:33.342829",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 56,
+      "frequency": 14.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 4,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 4,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 12,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 4,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 20,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 48,
+      "frequency": 12.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 609,
+      "frequency": 152.25,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 108,
+      "frequency": 27.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 28,
+      "frequency": 7.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 39,
+      "frequency": 9.75,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "navicon",
+      "count": 372
+    },
+    {
+      "class": "flex-container",
+      "count": 372
+    },
+    {
+      "class": "text-label",
+      "count": 360
+    },
+    {
+      "class": "align-middle",
+      "count": 336
+    },
+    {
+      "class": "link",
+      "count": 181
+    },
+    {
+      "class": "rapid-noclick-resp",
+      "count": 173
+    },
+    {
+      "class": "wafer-img-native",
+      "count": 144
+    },
+    {
+      "class": "item",
+      "count": 136
+    },
+    {
+      "class": "maas-item",
+      "count": 128
+    },
+    {
+      "class": "navrail_subitem",
+      "count": 108
+    },
+    {
+      "class": "itemLink",
+      "count": 104
+    },
+    {
+      "class": "navrail__divider",
+      "count": 96
+    },
+    {
+      "class": "navrail__divider--line",
+      "count": 96
+    },
+    {
+      "class": "m-ion__subitem_header--link",
+      "count": 96
+    },
+    {
+      "class": "wafer-img-loaded",
+      "count": 96
+    },
+    {
+      "class": "heading-4",
+      "count": 96
+    },
+    {
+      "class": "m-ion__subitem--link",
+      "count": 96
+    },
+    {
+      "class": "article-placeholder__item",
+      "count": 84
+    },
+    {
+      "class": "rmp-module",
+      "count": 72
+    },
+    {
+      "class": "col-span-full",
+      "count": 72
+    },
+    {
+      "class": "navrail_subitem_button",
+      "count": 72
+    },
+    {
+      "class": "m-gam",
+      "count": 60
+    },
+    {
+      "class": "caas-jump-link-heading",
+      "count": 54
+    },
+    {
+      "class": "rapid-with-clickid",
+      "count": 50
+    },
+    {
+      "class": "navrail",
+      "count": 48
+    },
+    {
+      "class": "icon",
+      "count": 48
+    },
+    {
+      "class": "cell",
+      "count": 48
+    },
+    {
+      "class": "m-ion__subitem",
+      "count": 48
+    },
+    {
+      "class": "m-ion__subitem_main",
+      "count": 48
+    },
+    {
+      "class": "m-ion__subitem_left",
+      "count": 48
+    },
+    {
+      "class": "m-ion__subitem_channel_mobile",
+      "count": 48
+    },
+    {
+      "class": "m-ion__subitem_header",
+      "count": 48
+    },
+    {
+      "class": "m-ion__subitem_header--title",
+      "count": 48
+    },
+    {
+      "class": "m-ion__subitem--title",
+      "count": 48
+    },
+    {
+      "class": "m-ion__subitem_right",
+      "count": 48
+    },
+    {
+      "class": "m-ion__subitem_right_content",
+      "count": 48
+    },
+    {
+      "class": "pipeDivider",
+      "count": 48
+    },
+    {
+      "class": "text-gray-200",
+      "count": 48
+    },
+    {
+      "class": "pl-3.5",
+      "count": 48
+    },
+    {
+      "class": "sm:pl-4",
+      "count": 48
+    },
+    {
+      "class": "list-disc",
+      "count": 47
+    },
+    {
+      "class": "m-gam__container",
+      "count": 44
+    },
+    {
+      "class": "hide",
+      "count": 40
+    },
+    {
+      "class": "hidden",
+      "count": 40
+    },
+    {
+      "class": "em-module",
+      "count": 36
+    },
+    {
+      "class": "!mb-0",
+      "count": 36
+    },
+    {
+      "class": "lnav_layer",
+      "count": 36
+    },
+    {
+      "class": "nav-sub-item-svg",
+      "count": 36
+    },
+    {
+      "class": "subnav",
+      "count": 36
+    },
+    {
+      "class": "back-link",
+      "count": 36
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "true",
+      "count": 68
+    },
+    {
+      "id": "m",
+      "count": 36
+    },
+    {
+      "id": "m-spotim-comments",
+      "count": 16
+    },
+    {
+      "id": "comments-login-url",
+      "count": 16
+    },
+    {
+      "id": "article-0",
+      "count": 8
+    },
+    {
+      "id": "m-0",
+      "count": 7
+    },
+    {
+      "id": "b1750304-9f14-4648-9aee-a6ac0e3174fe",
+      "count": 5
+    },
+    {
+      "id": "bca294f9-9d01-4fd0-8cb1-d2a3010a0f79",
+      "count": 5
+    },
+    {
+      "id": "atomic",
+      "count": 4
+    },
+    {
+      "id": "wafer-video-config",
+      "count": 4
+    },
+    {
+      "id": "css-vars",
+      "count": 4
+    },
+    {
+      "id": "wafer-caas-config",
+      "count": 4
+    },
+    {
+      "id": "ga-G-XXSF6S1T3W",
+      "count": 4
+    },
+    {
+      "id": "gpt-tag",
+      "count": 4
+    },
+    {
+      "id": "ay-script",
+      "count": 4
+    },
+    {
+      "id": "yPrebid-script",
+      "count": 4
+    },
+    {
+      "id": "taboola-script",
+      "count": 4
+    },
+    {
+      "id": "opus-script",
+      "count": 4
+    },
+    {
+      "id": "tbl-editorial-video-style",
+      "count": 4
+    },
+    {
+      "id": "tRecs-taboola-choice",
+      "count": 4
+    },
+    {
+      "id": "tRecs-taboola-choice-popover-container",
+      "count": 4
+    },
+    {
+      "id": "tRecs-taboola-choice-popover-content",
+      "count": 4
+    },
+    {
+      "id": "rapidInstance",
+      "count": 4
+    },
+    {
+      "id": "app",
+      "count": 4
+    },
+    {
+      "id": "render-target-default",
+      "count": 4
+    },
+    {
+      "id": "YDC-UH",
+      "count": 4
+    },
+    {
+      "id": "YDC-UH-Stack",
+      "count": 4
+    },
+    {
+      "id": "mrt-node-UH-0-Rmp",
+      "count": 4
+    },
+    {
+      "id": "UH-0-Rmp-Proxy",
+      "count": 4
+    },
+    {
+      "id": "rmp-container-UH-0-Rmp",
+      "count": 4
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer"
+    ],
+    "css_selector": "article, main, [role=\"main\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

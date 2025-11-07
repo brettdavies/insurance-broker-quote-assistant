@@ -1,0 +1,456 @@
+{
+  "domain": "theguardian.com",
+  "total_pages": 2,
+  "analyzed_at": "2025-11-07T14:35:36.086462",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 3,
+      "frequency": 1.5,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 10,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 4,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 28,
+      "frequency": 14.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 57,
+      "frequency": 28.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 5,
+      "frequency": 2.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 13,
+      "frequency": 6.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 168,
+      "frequency": 84.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "selectableMenuItem",
+      "count": 168
+    },
+    {
+      "class": "dcr-4hq641",
+      "count": 116
+    },
+    {
+      "class": "dcr-1julzi7",
+      "count": 106
+    },
+    {
+      "class": "dcr-4coeh",
+      "count": 54
+    },
+    {
+      "class": "dcr-130mj7b",
+      "count": 45
+    },
+    {
+      "class": "dcr-a1su5g",
+      "count": 30
+    },
+    {
+      "class": "dcr-9ra8aa",
+      "count": 28
+    },
+    {
+      "class": "dcr-0",
+      "count": 21
+    },
+    {
+      "class": "dcr-1oj52y1",
+      "count": 20
+    },
+    {
+      "class": "dcr-n509ks",
+      "count": 20
+    },
+    {
+      "class": "dcr-ke0s0j",
+      "count": 20
+    },
+    {
+      "class": "dcr-1xdhyk6",
+      "count": 19
+    },
+    {
+      "class": "dcr-9ucpkb",
+      "count": 16
+    },
+    {
+      "class": "dcr-1fnjjtg",
+      "count": 16
+    },
+    {
+      "class": "ad-slot",
+      "count": 15
+    },
+    {
+      "class": "ad-slot-container",
+      "count": 14
+    },
+    {
+      "class": "js-ad-slot",
+      "count": 14
+    },
+    {
+      "class": "dcr-5wkng0",
+      "count": 14
+    },
+    {
+      "class": "dcr-15o3dy0",
+      "count": 14
+    },
+    {
+      "class": "dcr-lgyw9b",
+      "count": 14
+    },
+    {
+      "class": "dcr-1acea34",
+      "count": 12
+    },
+    {
+      "class": "dcr-1gcso2u",
+      "count": 12
+    },
+    {
+      "class": "src-button-space",
+      "count": 12
+    },
+    {
+      "class": "dcr-14emo0l",
+      "count": 12
+    },
+    {
+      "class": "dcr-n4pnam",
+      "count": 10
+    },
+    {
+      "class": "dcr-1j5hrwi",
+      "count": 10
+    },
+    {
+      "class": "dcr-1b0pb7e",
+      "count": 10
+    },
+    {
+      "class": "dcr-nnfu1a",
+      "count": 10
+    },
+    {
+      "class": "dcr-e3rvah",
+      "count": 10
+    },
+    {
+      "class": "dcr-hj8byr",
+      "count": 10
+    },
+    {
+      "class": "dcr-1gwziyt",
+      "count": 10
+    },
+    {
+      "class": "dcr-1p6a6ff",
+      "count": 10
+    },
+    {
+      "class": "dcr-1q3ox8d",
+      "count": 10
+    },
+    {
+      "class": "dcr-1km5szb",
+      "count": 10
+    },
+    {
+      "class": "dcr-1qoyb3",
+      "count": 10
+    },
+    {
+      "class": "dcr-1b24z4s",
+      "count": 10
+    },
+    {
+      "class": "dcr-fbvh4p",
+      "count": 10
+    },
+    {
+      "class": "dcr-1yduq3m",
+      "count": 10
+    },
+    {
+      "class": "dcr-1byntdm",
+      "count": 10
+    },
+    {
+      "class": "dcr-4sdl03",
+      "count": 10
+    },
+    {
+      "class": "dcr-1echgku",
+      "count": 10
+    },
+    {
+      "class": "scroll-depth-marker",
+      "count": 9
+    },
+    {
+      "class": "dcr-ybr5tf",
+      "count": 8
+    },
+    {
+      "class": "dcr-2hhtc4",
+      "count": 8
+    },
+    {
+      "class": "dcr-6v110l",
+      "count": 8
+    },
+    {
+      "class": "dcr-1rg7stg",
+      "count": 8
+    },
+    {
+      "class": "dcr-7ndqby",
+      "count": 8
+    },
+    {
+      "class": "dcr-1hjrzf1",
+      "count": 8
+    },
+    {
+      "class": "dcr-1qq9bey",
+      "count": 8
+    },
+    {
+      "class": "dcr-2yd10d",
+      "count": 8
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "slot",
+      "count": 12
+    },
+    {
+      "id": "false",
+      "count": 6
+    },
+    {
+      "id": "newsLinks",
+      "count": 4
+    },
+    {
+      "id": "column-collapse-sublink-Soccer",
+      "count": 4
+    },
+    {
+      "id": "column-collapse-sublink-Newsletters",
+      "count": 4
+    },
+    {
+      "id": "column-collapse-sublink-Wellness",
+      "count": 4
+    },
+    {
+      "id": "opinionLinks",
+      "count": 4
+    },
+    {
+      "id": "sportLinks",
+      "count": 4
+    },
+    {
+      "id": "cultureLinks",
+      "count": 4
+    },
+    {
+      "id": "lifestyleLinks",
+      "count": 4
+    },
+    {
+      "id": "gu-search",
+      "count": 4
+    },
+    {
+      "id": "config",
+      "count": 2
+    },
+    {
+      "id": "gu-lightbox",
+      "count": 2
+    },
+    {
+      "id": "lightbox-selected",
+      "count": 2
+    },
+    {
+      "id": "bannerandheader",
+      "count": 2
+    },
+    {
+      "id": "dfp-ad--top-above-nav",
+      "count": 2
+    },
+    {
+      "id": "dropdown-button",
+      "count": 2
+    },
+    {
+      "id": "dropdown-options",
+      "count": 2
+    },
+    {
+      "id": "header-nav-input-checkbox",
+      "count": 2
+    },
+    {
+      "id": "navigation",
+      "count": 2
+    },
+    {
+      "id": "header-veggie-burger",
+      "count": 2
+    },
+    {
+      "id": "veggie-burger",
+      "count": 2
+    },
+    {
+      "id": "header-expanded-menu-root",
+      "count": 2
+    },
+    {
+      "id": "header-expanded-menu",
+      "count": 2
+    },
+    {
+      "id": "expanded-menu",
+      "count": 2
+    },
+    {
+      "id": "nav-menu-columns",
+      "count": 2
+    },
+    {
+      "id": "News-checkbox-input",
+      "count": 2
+    },
+    {
+      "id": "News-button",
+      "count": 2
+    },
+    {
+      "id": "column-collapse-News",
+      "count": 2
+    },
+    {
+      "id": "column-collapse-sublink-News",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"ad\"], [id*=\"ad\"], [class*=\"ads\"], [id*=\"ads\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"menu\"], [id*=\"menu\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

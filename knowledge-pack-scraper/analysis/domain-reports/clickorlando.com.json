@@ -1,0 +1,456 @@
+{
+  "domain": "clickorlando.com",
+  "total_pages": 3,
+  "analyzed_at": "2025-11-07T14:35:34.381453",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 30,
+      "frequency": 10.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 3,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 3,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 3,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 3,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 15,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 6,
+      "frequency": 2.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 6,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 12,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 228,
+      "frequency": 76.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 4,
+      "frequency": 1.333,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 2,
+      "frequency": 0.667,
+      "confidence": "medium"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 27,
+      "frequency": 9.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 3,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "dist__Box-sc-1fnzlkn-0",
+      "count": 2869
+    },
+    {
+      "class": "dist__TextBase-sc-1fnzlkn-3",
+      "count": 489
+    },
+    {
+      "class": "dist__StackBase-sc-1fnzlkn-7",
+      "count": 462
+    },
+    {
+      "class": "dist__LinkBase-sc-1fnzlkn-9",
+      "count": 456
+    },
+    {
+      "class": "gaevent",
+      "count": 345
+    },
+    {
+      "class": "eOEXrF",
+      "count": 222
+    },
+    {
+      "class": "sub",
+      "count": 222
+    },
+    {
+      "class": "ecGWWE",
+      "count": 159
+    },
+    {
+      "class": "dist__HeadingBase-sc-1fnzlkn-6",
+      "count": 131
+    },
+    {
+      "class": "dist__FlexBase-sc-1fnzlkn-1",
+      "count": 109
+    },
+    {
+      "class": "imageWrapper",
+      "count": 105
+    },
+    {
+      "class": "eppOdR",
+      "count": 104
+    },
+    {
+      "class": "qBxJJ",
+      "count": 98
+    },
+    {
+      "class": "iQviKm",
+      "count": 94
+    },
+    {
+      "class": "bHKMak",
+      "count": 75
+    },
+    {
+      "class": "gGeKzQ",
+      "count": 75
+    },
+    {
+      "class": "gMzhUd",
+      "count": 75
+    },
+    {
+      "class": "ZUZWy",
+      "count": 75
+    },
+    {
+      "class": "kSMyDq",
+      "count": 75
+    },
+    {
+      "class": "jdBbpv",
+      "count": 75
+    },
+    {
+      "class": "fLVCHE",
+      "count": 75
+    },
+    {
+      "class": "kawSzB",
+      "count": 75
+    },
+    {
+      "class": "jHZeoh",
+      "count": 75
+    },
+    {
+      "class": "svg-inline--fa",
+      "count": 66
+    },
+    {
+      "class": "bKXGpH",
+      "count": 63
+    },
+    {
+      "class": "fYWDEy",
+      "count": 61
+    },
+    {
+      "class": "itnQAU",
+      "count": 61
+    },
+    {
+      "class": "cuqaEv",
+      "count": 54
+    },
+    {
+      "class": "article-text",
+      "count": 54
+    },
+    {
+      "class": "ejhYoo",
+      "count": 51
+    },
+    {
+      "class": "bYFsJw",
+      "count": 50
+    },
+    {
+      "class": "hxqFXA",
+      "count": 49
+    },
+    {
+      "class": "gJUqRf",
+      "count": 49
+    },
+    {
+      "class": "dist__BaseButton-sc-1fnzlkn-4",
+      "count": 48
+    },
+    {
+      "class": "jQhIqq",
+      "count": 48
+    },
+    {
+      "class": "jGBOIq",
+      "count": 48
+    },
+    {
+      "class": "hTYOfq",
+      "count": 47
+    },
+    {
+      "class": "dist__BaseDivider-sc-1fnzlkn-8",
+      "count": 40
+    },
+    {
+      "class": "swiper-slide-shadow-coverflow",
+      "count": 40
+    },
+    {
+      "class": "fa-fw",
+      "count": 39
+    },
+    {
+      "class": "dist__GridBase-sc-1fnzlkn-10",
+      "count": 34
+    },
+    {
+      "class": "buttonIcon",
+      "count": 30
+    },
+    {
+      "class": "ewwUYq",
+      "count": 29
+    },
+    {
+      "class": "vf-skeleton-generic-block",
+      "count": 29
+    },
+    {
+      "class": "hUQMBa",
+      "count": 27
+    },
+    {
+      "class": "jQYNdH",
+      "count": 27
+    },
+    {
+      "class": "secondary",
+      "count": 27
+    },
+    {
+      "class": "parent",
+      "count": 27
+    },
+    {
+      "class": "zQnMR",
+      "count": 27
+    },
+    {
+      "class": "iMrAau",
+      "count": 27
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "generic-block",
+      "count": 29
+    },
+    {
+      "id": "boomr-scr-as",
+      "count": 6
+    },
+    {
+      "id": "comments-container",
+      "count": 5
+    },
+    {
+      "id": "image-wrapper",
+      "count": 5
+    },
+    {
+      "id": "comments-line-wrapper",
+      "count": 5
+    },
+    {
+      "id": "other",
+      "count": 4
+    },
+    {
+      "id": "chartbeat-video-script",
+      "count": 3
+    },
+    {
+      "id": "chartbeat-mab-script",
+      "count": 3
+    },
+    {
+      "id": "polyfill-script",
+      "count": 3
+    },
+    {
+      "id": "fusion-engine-react-script",
+      "count": 3
+    },
+    {
+      "id": "fusion-engine-combinations-script",
+      "count": 3
+    },
+    {
+      "id": "fusion-template-styles",
+      "count": 3
+    },
+    {
+      "id": "osano-cm-aria.newWindow",
+      "count": 3
+    },
+    {
+      "id": "osano-cm-aria.external",
+      "count": 3
+    },
+    {
+      "id": "osano-cm-aria.externalNewWindow",
+      "count": 3
+    },
+    {
+      "id": "fusion-app",
+      "count": 3
+    },
+    {
+      "id": "main-header",
+      "count": 3
+    },
+    {
+      "id": ":r0:",
+      "count": 3
+    },
+    {
+      "id": "gmgSigninButton",
+      "count": 3
+    },
+    {
+      "id": "navSearch",
+      "count": 3
+    },
+    {
+      "id": "navSearchInputBox",
+      "count": 3
+    },
+    {
+      "id": ":r1:",
+      "count": 3
+    },
+    {
+      "id": "MileTech_LEADER_BOARD1_DESKTOP",
+      "count": 3
+    },
+    {
+      "id": "article",
+      "count": 3
+    },
+    {
+      "id": "0f1VvA1iDrr",
+      "count": 3
+    },
+    {
+      "id": "MileTech_DISPLAY1_DESKTOP",
+      "count": 3
+    },
+    {
+      "id": ":r4:",
+      "count": 3
+    },
+    {
+      "id": ":r3:",
+      "count": 3
+    },
+    {
+      "id": ":r6:",
+      "count": 3
+    },
+    {
+      "id": ":r5:",
+      "count": 3
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main, [role=\"main\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"ads\"], [id*=\"ads\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"menu\"], [id*=\"menu\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

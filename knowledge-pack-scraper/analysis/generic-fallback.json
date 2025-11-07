@@ -1,0 +1,358 @@
+{
+  "meta": {
+    "total_pages": 601,
+    "total_domains": 601,
+    "generated_at": "2025-11-07T14:56:21.538008",
+    "description": "Analysis of all pages from domains without custom configs"
+  },
+  "content_indicators": [
+    {
+      "selector": "main",
+      "total_count": 351,
+      "avg_frequency": 0.584,
+      "page_coverage": 0.557,
+      "confidence": "medium"
+    },
+    {
+      "selector": "article",
+      "total_count": 1067,
+      "avg_frequency": 1.775,
+      "page_coverage": 0.532,
+      "confidence": "medium"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "total_count": 101,
+      "avg_frequency": 0.168,
+      "page_coverage": 0.161,
+      "confidence": "low"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "total_count": 820,
+      "avg_frequency": 1.364,
+      "page_coverage": 0.819,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "total_count": 676,
+      "avg_frequency": 1.125,
+      "page_coverage": 0.835,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "total_count": 1896,
+      "avg_frequency": 3.155,
+      "page_coverage": 0.862,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "total_count": 526,
+      "avg_frequency": 0.875,
+      "page_coverage": 0.333,
+      "confidence": "medium"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "ad",
+      "total_count": 34264,
+      "avg_frequency": 57.012,
+      "page_coverage": 0.988,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "total_count": 59540,
+      "avg_frequency": 99.068,
+      "page_coverage": 0.897,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "total_count": 12261,
+      "avg_frequency": 20.401,
+      "page_coverage": 0.839,
+      "confidence": "high"
+    },
+    {
+      "pattern": "social",
+      "total_count": 3359,
+      "avg_frequency": 5.589,
+      "page_coverage": 0.694,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "total_count": 1392,
+      "avg_frequency": 2.316,
+      "page_coverage": 0.524,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "total_count": 1872,
+      "avg_frequency": 3.115,
+      "page_coverage": 0.396,
+      "confidence": "medium"
+    },
+    {
+      "pattern": "breadcrumb",
+      "total_count": 742,
+      "avg_frequency": 1.235,
+      "page_coverage": 0.384,
+      "confidence": "medium"
+    },
+    {
+      "pattern": "banner",
+      "total_count": 1014,
+      "avg_frequency": 1.687,
+      "page_coverage": 0.28,
+      "confidence": "medium"
+    },
+    {
+      "pattern": "comment",
+      "total_count": 1600,
+      "avg_frequency": 2.662,
+      "page_coverage": 0.258,
+      "confidence": "medium"
+    },
+    {
+      "pattern": "ads",
+      "total_count": 516,
+      "avg_frequency": 0.859,
+      "page_coverage": 0.201,
+      "confidence": "medium"
+    },
+    {
+      "pattern": "tracker",
+      "total_count": 82,
+      "avg_frequency": 0.136,
+      "page_coverage": 0.05,
+      "confidence": "low"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-item",
+      "count": 27898
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 18662
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 16937
+    },
+    {
+      "class": "elementor-element",
+      "count": 8347
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 6503
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 6503
+    },
+    {
+      "class": "elementor-sub-item",
+      "count": 5351
+    },
+    {
+      "class": "elementor-widget",
+      "count": 4596
+    },
+    {
+      "class": "elementor-widget-container",
+      "count": 4005
+    },
+    {
+      "class": "BCX8",
+      "count": 3484
+    },
+    {
+      "class": "menu-item-has-children",
+      "count": 3152
+    },
+    {
+      "class": "sub-menu",
+      "count": 2913
+    },
+    {
+      "class": "elementor-item",
+      "count": 2411
+    },
+    {
+      "class": "flex",
+      "count": 2118
+    },
+    {
+      "class": "gform_hidden",
+      "count": 2086
+    },
+    {
+      "class": "e-con",
+      "count": 1847
+    },
+    {
+      "class": "e-flex",
+      "count": 1838
+    },
+    {
+      "class": "dist__Box-sc-1fnzlkn-0",
+      "count": 1786
+    },
+    {
+      "class": "fas",
+      "count": 1764
+    },
+    {
+      "class": "icon",
+      "count": 1712
+    },
+    {
+      "class": "elementor-icon-list-item",
+      "count": 1539
+    },
+    {
+      "class": "elementor-icon-list-text",
+      "count": 1539
+    },
+    {
+      "class": "wp-block-heading",
+      "count": 1506
+    },
+    {
+      "class": "e-font-icon-svg",
+      "count": 1376
+    },
+    {
+      "class": "SCXW85091519",
+      "count": 1348
+    },
+    {
+      "class": "e-child",
+      "count": 1336
+    },
+    {
+      "class": "gfield",
+      "count": 1329
+    },
+    {
+      "class": "menu-item-type-taxonomy",
+      "count": 1308
+    },
+    {
+      "class": "mega-menu-item",
+      "count": 1303
+    },
+    {
+      "class": "elementor-column",
+      "count": 1301
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "Layer_1",
+      "count": 310
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 293
+    },
+    {
+      "id": "wp-emoji-styles-inline-css",
+      "count": 211
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 210
+    },
+    {
+      "id": "jquery-core-js",
+      "count": 205
+    },
+    {
+      "id": "wp-block-library-css",
+      "count": 182
+    },
+    {
+      "id": "jquery-migrate-js",
+      "count": 172
+    },
+    {
+      "id": "wp-custom-css",
+      "count": 129
+    },
+    {
+      "id": "rbox-t2v",
+      "count": 66
+    },
+    {
+      "id": "elementor-frontend-css",
+      "count": 60
+    },
+    {
+      "id": "clip0_95_4047",
+      "count": 60
+    },
+    {
+      "id": "rocket-lazyload-nojs-css",
+      "count": 49
+    },
+    {
+      "id": "widget-heading-css",
+      "count": 49
+    },
+    {
+      "id": "widget-image-css",
+      "count": 48
+    },
+    {
+      "id": "main",
+      "count": 47
+    },
+    {
+      "id": "page",
+      "count": 45
+    },
+    {
+      "id": "wp-block-library-theme-inline-css",
+      "count": 44
+    },
+    {
+      "id": "hs_cos_wrapper_footer_area-module-2_",
+      "count": 43
+    },
+    {
+      "id": "header",
+      "count": 42
+    },
+    {
+      "id": "menu-main-menu",
+      "count": 39
+    }
+  ],
+  "generic_config": {
+    "css_selector": "main, article",
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "excluded_selector": "[class*=\"ad\"], [id*=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"], [class*=\"social\"], [id*=\"social\"], [class*=\"sidebar\"], [id*=\"sidebar\"]",
+    "word_count_threshold": 10,
+    "remove_forms": true,
+    "remove_overlay_elements": true,
+    "confidence": "medium",
+    "description": "Generic fallback config from 601 pages across 601 domains without custom configs"
+  }
+}

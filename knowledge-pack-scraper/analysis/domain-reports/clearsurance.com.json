@@ -1,0 +1,456 @@
+{
+  "domain": "clearsurance.com",
+  "total_pages": 11,
+  "analyzed_at": "2025-11-07T14:35:32.183663",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 16,
+      "frequency": 1.455,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 11,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 56,
+      "frequency": 5.091,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 11,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 19,
+      "frequency": 1.727,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 48,
+      "frequency": 4.364,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 166,
+      "frequency": 15.091,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 8,
+      "frequency": 0.727,
+      "confidence": "medium"
+    },
+    {
+      "pattern": "ad",
+      "count": 2235,
+      "frequency": 203.182,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 22,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 785,
+      "frequency": 71.364,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 118,
+      "frequency": 10.727,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "CTA-footer",
+      "count": 4268
+    },
+    {
+      "class": "score",
+      "count": 732
+    },
+    {
+      "class": "row",
+      "count": 683
+    },
+    {
+      "class": "btn",
+      "count": 562
+    },
+    {
+      "class": "lazyload",
+      "count": 558
+    },
+    {
+      "class": "large",
+      "count": 514
+    },
+    {
+      "class": "org-profile-button",
+      "count": 513
+    },
+    {
+      "class": "col-lg-12",
+      "count": 447
+    },
+    {
+      "class": "col-sm-12",
+      "count": 400
+    },
+    {
+      "class": "overall",
+      "count": 390
+    },
+    {
+      "class": "isHideMenu",
+      "count": 367
+    },
+    {
+      "class": "org-details",
+      "count": 342
+    },
+    {
+      "class": "rating-wrapper",
+      "count": 342
+    },
+    {
+      "class": "stars-container",
+      "count": 342
+    },
+    {
+      "class": "reviews",
+      "count": 342
+    },
+    {
+      "class": "divratecirle",
+      "count": 342
+    },
+    {
+      "class": "radialProgressBar",
+      "count": 342
+    },
+    {
+      "class": "overlay",
+      "count": 342
+    },
+    {
+      "class": "graph-text-panel",
+      "count": 342
+    },
+    {
+      "class": "ratingname",
+      "count": 342
+    },
+    {
+      "class": "margintopHeader",
+      "count": 308
+    },
+    {
+      "class": "radio_label",
+      "count": 266
+    },
+    {
+      "class": "heading-Menu",
+      "count": 220
+    },
+    {
+      "class": "card-body",
+      "count": 219
+    },
+    {
+      "class": "alignnone",
+      "count": 203
+    },
+    {
+      "class": "size-full",
+      "count": 200
+    },
+    {
+      "class": "main-panel",
+      "count": 171
+    },
+    {
+      "class": "spanflex",
+      "count": 171
+    },
+    {
+      "class": "indexMargin",
+      "count": 171
+    },
+    {
+      "class": "indexcount",
+      "count": 171
+    },
+    {
+      "class": "totalcount",
+      "count": 171
+    },
+    {
+      "class": "org-item-logo",
+      "count": 171
+    },
+    {
+      "class": "name",
+      "count": 171
+    },
+    {
+      "class": "score-details",
+      "count": 171
+    },
+    {
+      "class": "rating-details",
+      "count": 171
+    },
+    {
+      "class": "spanflex2",
+      "count": 171
+    },
+    {
+      "class": "first-div",
+      "count": 171
+    },
+    {
+      "class": "border-right",
+      "count": 171
+    },
+    {
+      "class": "graph-pannel-text-width",
+      "count": 171
+    },
+    {
+      "class": "second-circle",
+      "count": 171
+    },
+    {
+      "class": "spanflex3",
+      "count": 171
+    },
+    {
+      "class": "photo",
+      "count": 163
+    },
+    {
+      "class": "section-title-link",
+      "count": 154
+    },
+    {
+      "class": "ratingtag-good",
+      "count": 153
+    },
+    {
+      "class": "companyPage",
+      "count": 152
+    },
+    {
+      "class": "container",
+      "count": 150
+    },
+    {
+      "class": "btn-social",
+      "count": 150
+    },
+    {
+      "class": "fa",
+      "count": 150
+    },
+    {
+      "class": "toc-link",
+      "count": 147
+    },
+    {
+      "class": "nav-item",
+      "count": 121
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "surface1",
+      "count": 150
+    },
+    {
+      "id": "Oval",
+      "count": 33
+    },
+    {
+      "id": "header",
+      "count": 22
+    },
+    {
+      "id": "Combined-Shape",
+      "count": 22
+    },
+    {
+      "id": "text",
+      "count": 22
+    },
+    {
+      "id": "clearsurance-icon",
+      "count": 22
+    },
+    {
+      "id": "Ticks",
+      "count": 22
+    },
+    {
+      "id": "Dial",
+      "count": 22
+    },
+    {
+      "id": "C",
+      "count": 22
+    },
+    {
+      "id": "submitQuote360",
+      "count": 22
+    },
+    {
+      "id": "mymodallabel",
+      "count": 19
+    },
+    {
+      "id": "type",
+      "count": 19
+    },
+    {
+      "id": "leadid_tcpa_disclosure",
+      "count": 19
+    },
+    {
+      "id": "mdabottom",
+      "count": 19
+    },
+    {
+      "id": "menu-button-toggle",
+      "count": 11
+    },
+    {
+      "id": "mobilemenu",
+      "count": 11
+    },
+    {
+      "id": "toggle-menu-open",
+      "count": 11
+    },
+    {
+      "id": "hamburger",
+      "count": 11
+    },
+    {
+      "id": "closemenu",
+      "count": 11
+    },
+    {
+      "id": "toggle-menu-closed",
+      "count": 11
+    },
+    {
+      "id": "Page-1",
+      "count": 11
+    },
+    {
+      "id": "homepage",
+      "count": 11
+    },
+    {
+      "id": "logo",
+      "count": 11
+    },
+    {
+      "id": "Fill-14",
+      "count": 11
+    },
+    {
+      "id": "Fill-13",
+      "count": 11
+    },
+    {
+      "id": "Fill-12",
+      "count": 11
+    },
+    {
+      "id": "Fill-11",
+      "count": 11
+    },
+    {
+      "id": "Fill-10",
+      "count": 11
+    },
+    {
+      "id": "Fill-9",
+      "count": 11
+    },
+    {
+      "id": "Fill-8",
+      "count": 11
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

@@ -1,0 +1,455 @@
+{
+  "domain": "gedlawyers.com",
+  "total_pages": 2,
+  "analyzed_at": "2025-11-07T14:35:35.700736",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 4,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 0.5,
+      "confidence": "medium"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 52,
+      "frequency": 26.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 7,
+      "frequency": 3.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 222,
+      "frequency": 111.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 4,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 78,
+      "frequency": 39.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-item",
+      "count": 160
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 82
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 82
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 78
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 54
+    },
+    {
+      "class": "col-12",
+      "count": 52
+    },
+    {
+      "class": "two-column",
+      "count": 48
+    },
+    {
+      "class": "wpcf7-form-control",
+      "count": 48
+    },
+    {
+      "class": "col-md-12",
+      "count": 38
+    },
+    {
+      "class": "col-lg-6",
+      "count": 30
+    },
+    {
+      "class": "icon",
+      "count": 24
+    },
+    {
+      "class": "menu-item-object-attorneys",
+      "count": 24
+    },
+    {
+      "class": "wpcf7-hidden",
+      "count": 24
+    },
+    {
+      "class": "row",
+      "count": 24
+    },
+    {
+      "class": "col-lg-12",
+      "count": 24
+    },
+    {
+      "class": "menu-item-has-children",
+      "count": 22
+    },
+    {
+      "class": "mobile-menu-open",
+      "count": 22
+    },
+    {
+      "class": "sub-menu",
+      "count": 22
+    },
+    {
+      "class": "wpcf7-form-control-wrap",
+      "count": 21
+    },
+    {
+      "class": "cat-item",
+      "count": 19
+    },
+    {
+      "class": "input-env",
+      "count": 18
+    },
+    {
+      "class": "wpcf7-validates-as-required",
+      "count": 18
+    },
+    {
+      "class": "col-md-6",
+      "count": 18
+    },
+    {
+      "class": "wpcf7-text",
+      "count": 15
+    },
+    {
+      "class": "offices-list__item",
+      "count": 12
+    },
+    {
+      "class": "fit",
+      "count": 12
+    },
+    {
+      "class": "widget_text",
+      "count": 10
+    },
+    {
+      "class": "location-list__item",
+      "count": 10
+    },
+    {
+      "class": "offices-list__link",
+      "count": 10
+    },
+    {
+      "class": "footer-main__address",
+      "count": 10
+    },
+    {
+      "class": "footer__list-link",
+      "count": 10
+    },
+    {
+      "class": "scrollToElements",
+      "count": 9
+    },
+    {
+      "class": "menu",
+      "count": 8
+    },
+    {
+      "class": "menu-primary",
+      "count": 8
+    },
+    {
+      "class": "container",
+      "count": 8
+    },
+    {
+      "class": "location-list__link",
+      "count": 8
+    },
+    {
+      "class": "footer-main__title",
+      "count": 8
+    },
+    {
+      "class": "col-xl-6",
+      "count": 8
+    },
+    {
+      "class": "attachment-medium",
+      "count": 6
+    },
+    {
+      "class": "size-medium",
+      "count": 6
+    },
+    {
+      "class": "wp-post-image",
+      "count": 6
+    },
+    {
+      "class": "widget-wrap",
+      "count": 6
+    },
+    {
+      "class": "new-title",
+      "count": 6
+    },
+    {
+      "class": "dot",
+      "count": 6
+    },
+    {
+      "class": "customized-cta",
+      "count": 5
+    },
+    {
+      "class": "cta-container",
+      "count": 5
+    },
+    {
+      "class": "cta-content",
+      "count": 5
+    },
+    {
+      "class": "cta-button",
+      "count": 5
+    },
+    {
+      "class": "widget",
+      "count": 5
+    },
+    {
+      "class": "widget_custom_html",
+      "count": 5
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "false",
+      "count": 21
+    },
+    {
+      "id": "nitro-script",
+      "count": 4
+    },
+    {
+      "id": "location-menu-navigation",
+      "count": 4
+    },
+    {
+      "id": "genesis-blocks-style-css-css",
+      "count": 2
+    },
+    {
+      "id": "hd-genesis-child-theme-css",
+      "count": 2
+    },
+    {
+      "id": "wp-block-library-css",
+      "count": 2
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 2
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 2
+    },
+    {
+      "id": "contact-form-7-css",
+      "count": 2
+    },
+    {
+      "id": "swiper-bundle.min.css-css",
+      "count": 2
+    },
+    {
+      "id": "theme-main-css",
+      "count": 2
+    },
+    {
+      "id": "jquery-core-js",
+      "count": 2
+    },
+    {
+      "id": "jquery-migrate-js",
+      "count": 2
+    },
+    {
+      "id": "nitro-telemetry-meta",
+      "count": 2
+    },
+    {
+      "id": "nitro-generic",
+      "count": 2
+    },
+    {
+      "id": "wp-custom-css",
+      "count": 2
+    },
+    {
+      "id": "header",
+      "count": 2
+    },
+    {
+      "id": "menu-main-menu",
+      "count": 2
+    },
+    {
+      "id": "menu-item-907",
+      "count": 2
+    },
+    {
+      "id": "menu-item-996",
+      "count": 2
+    },
+    {
+      "id": "menu-item-997",
+      "count": 2
+    },
+    {
+      "id": "menu-item-999",
+      "count": 2
+    },
+    {
+      "id": "menu-item-1003",
+      "count": 2
+    },
+    {
+      "id": "menu-item-1007",
+      "count": 2
+    },
+    {
+      "id": "menu-item-1008",
+      "count": 2
+    },
+    {
+      "id": "menu-item-1009",
+      "count": 2
+    },
+    {
+      "id": "menu-item-1013",
+      "count": 2
+    },
+    {
+      "id": "menu-item-1014",
+      "count": 2
+    },
+    {
+      "id": "menu-item-1015",
+      "count": 2
+    },
+    {
+      "id": "menu-item-1016",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

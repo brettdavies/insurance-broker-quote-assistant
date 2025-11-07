@@ -1,0 +1,456 @@
+{
+  "domain": "fox13news.com",
+  "total_pages": 2,
+  "analyzed_at": "2025-11-07T14:35:35.673881",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 22,
+      "frequency": 11.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 29,
+      "frequency": 14.5,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 53,
+      "frequency": 26.5,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 6,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 4,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 87,
+      "frequency": 43.5,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 2,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 6,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 80,
+      "frequency": 40.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "nav-item",
+      "count": 340
+    },
+    {
+      "class": "global-nav-item",
+      "count": 83
+    },
+    {
+      "class": "nav-title",
+      "count": 50
+    },
+    {
+      "class": "video-label",
+      "count": 34
+    },
+    {
+      "class": "title",
+      "count": 27
+    },
+    {
+      "class": "meta",
+      "count": 25
+    },
+    {
+      "class": "info",
+      "count": 23
+    },
+    {
+      "class": "branding",
+      "count": 22
+    },
+    {
+      "class": "article",
+      "count": 20
+    },
+    {
+      "class": "m",
+      "count": 20
+    },
+    {
+      "class": "responsive-image__container",
+      "count": 20
+    },
+    {
+      "class": "responsive-image__lazy-container",
+      "count": 20
+    },
+    {
+      "class": "info-header",
+      "count": 20
+    },
+    {
+      "class": "videoCube",
+      "count": 17
+    },
+    {
+      "class": "trc_spotlight_item",
+      "count": 17
+    },
+    {
+      "class": "textItem",
+      "count": 17
+    },
+    {
+      "class": "item-thumbnail-href",
+      "count": 17
+    },
+    {
+      "class": "thumbBlock_holder",
+      "count": 17
+    },
+    {
+      "class": "thumbBlock",
+      "count": 17
+    },
+    {
+      "class": "thumbnail-overlay",
+      "count": 17
+    },
+    {
+      "class": "videoCube_aspect",
+      "count": 17
+    },
+    {
+      "class": "item-label-href",
+      "count": 17
+    },
+    {
+      "class": "video-label-box",
+      "count": 17
+    },
+    {
+      "class": "trc-main-label",
+      "count": 17
+    },
+    {
+      "class": "video-title",
+      "count": 17
+    },
+    {
+      "class": "video-description",
+      "count": 17
+    },
+    {
+      "class": "trc_rbox_border_elm",
+      "count": 16
+    },
+    {
+      "class": "article-ct",
+      "count": 13
+    },
+    {
+      "class": "origin-undefined",
+      "count": 13
+    },
+    {
+      "class": "thumbnail_top",
+      "count": 13
+    },
+    {
+      "class": "content-showcase-itru-sufficient-2d",
+      "count": 12
+    },
+    {
+      "class": "trc_related_container",
+      "count": 10
+    },
+    {
+      "class": "trc_attribution_position_after_branding",
+      "count": 10
+    },
+    {
+      "class": "tbl-trecs-container",
+      "count": 9
+    },
+    {
+      "class": "trc_spotlight_widget",
+      "count": 9
+    },
+    {
+      "class": "menu-news",
+      "count": 8
+    },
+    {
+      "class": "menu-weather",
+      "count": 8
+    },
+    {
+      "class": "menu-sports",
+      "count": 8
+    },
+    {
+      "class": "menu-good-day",
+      "count": 8
+    },
+    {
+      "class": "menu-we-live-here",
+      "count": 8
+    },
+    {
+      "class": "inner",
+      "count": 8
+    },
+    {
+      "class": "ad-container",
+      "count": 8
+    },
+    {
+      "class": "min-height-ad",
+      "count": 8
+    },
+    {
+      "class": "desktop-ad",
+      "count": 8
+    },
+    {
+      "class": "trc_elastic",
+      "count": 8
+    },
+    {
+      "class": "trc_rbox_container",
+      "count": 8
+    },
+    {
+      "class": "trc_rbox",
+      "count": 8
+    },
+    {
+      "class": "trc_rbox_header",
+      "count": 8
+    },
+    {
+      "class": "trc_header_ext",
+      "count": 8
+    },
+    {
+      "class": "trc_rbox_header_span",
+      "count": 8
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "tbl-explore-more-container",
+      "count": 50
+    },
+    {
+      "id": "rbox-t2v",
+      "count": 7
+    },
+    {
+      "id": "_uasdk",
+      "count": 4
+    },
+    {
+      "id": "tbl-editorial-video-style",
+      "count": 4
+    },
+    {
+      "id": "Rectangle-5",
+      "count": 4
+    },
+    {
+      "id": "main-nav",
+      "count": 3
+    },
+    {
+      "id": "search-site",
+      "count": 3
+    },
+    {
+      "id": "tb_loader_script",
+      "count": 2
+    },
+    {
+      "id": "description",
+      "count": 2
+    },
+    {
+      "id": "fb:app_id",
+      "count": 2
+    },
+    {
+      "id": "prism.stationId",
+      "count": 2
+    },
+    {
+      "id": "prism.stationCallSign",
+      "count": 2
+    },
+    {
+      "id": "prism.channel",
+      "count": 2
+    },
+    {
+      "id": "prism.section",
+      "count": 2
+    },
+    {
+      "id": "prism.subsection1",
+      "count": 2
+    },
+    {
+      "id": "prism.subsection2",
+      "count": 2
+    },
+    {
+      "id": "prism.subsection3",
+      "count": 2
+    },
+    {
+      "id": "prism.subsection4",
+      "count": 2
+    },
+    {
+      "id": "prism.aggregationType",
+      "count": 2
+    },
+    {
+      "id": "prism.genre",
+      "count": 2
+    },
+    {
+      "id": "pagetype",
+      "count": 2
+    },
+    {
+      "id": "strikepagetype",
+      "count": 2
+    },
+    {
+      "id": "content-creator",
+      "count": 2
+    },
+    {
+      "id": "dc.creator",
+      "count": 2
+    },
+    {
+      "id": "dc.title",
+      "count": 2
+    },
+    {
+      "id": "dc.subject",
+      "count": 2
+    },
+    {
+      "id": "dcterms.abstract",
+      "count": 2
+    },
+    {
+      "id": "dc.type",
+      "count": 2
+    },
+    {
+      "id": "dc.description",
+      "count": 2
+    },
+    {
+      "id": "dc.language",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

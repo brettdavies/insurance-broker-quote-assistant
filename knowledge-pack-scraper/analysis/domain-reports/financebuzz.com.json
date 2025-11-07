@@ -1,0 +1,456 @@
+{
+  "domain": "financebuzz.com",
+  "total_pages": 14,
+  "analyzed_at": "2025-11-07T14:35:31.536731",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 66,
+      "frequency": 4.714,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 14,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 28,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 14,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 42,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 14,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 14,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 3956,
+      "frequency": 282.571,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 14,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 2240,
+      "frequency": 160.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 88,
+      "frequency": 6.286,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "w-full",
+      "count": 3381
+    },
+    {
+      "class": "text-[#0A0832]",
+      "count": 2586
+    },
+    {
+      "class": "pl-8",
+      "count": 2464
+    },
+    {
+      "class": "text-sm",
+      "count": 2347
+    },
+    {
+      "class": "lg:hover:bg-[#F0F1F2]",
+      "count": 1890
+    },
+    {
+      "class": "active:bg-[#F0F1F2]",
+      "count": 1890
+    },
+    {
+      "class": "py-2",
+      "count": 1819
+    },
+    {
+      "class": "font-bold",
+      "count": 1801
+    },
+    {
+      "class": "header__navSubmenu--link",
+      "count": 1792
+    },
+    {
+      "class": "flex",
+      "count": 1637
+    },
+    {
+      "class": "items-center",
+      "count": 1135
+    },
+    {
+      "class": "relative",
+      "count": 610
+    },
+    {
+      "class": "justify-center",
+      "count": 542
+    },
+    {
+      "class": "text-black",
+      "count": 542
+    },
+    {
+      "class": "no-underline",
+      "count": 538
+    },
+    {
+      "class": "flex-col",
+      "count": 454
+    },
+    {
+      "class": "text-purple-dark",
+      "count": 442
+    },
+    {
+      "class": "mb-0",
+      "count": 440
+    },
+    {
+      "class": "text-[17px]",
+      "count": 434
+    },
+    {
+      "class": "shrink-0",
+      "count": 392
+    },
+    {
+      "class": "cursor-default",
+      "count": 392
+    },
+    {
+      "class": "cursor-pointer",
+      "count": 385
+    },
+    {
+      "class": "font-open-sans",
+      "count": 383
+    },
+    {
+      "class": "h-14",
+      "count": 380
+    },
+    {
+      "class": "hidden",
+      "count": 379
+    },
+    {
+      "class": "pt-4",
+      "count": 378
+    },
+    {
+      "class": "pb-2",
+      "count": 378
+    },
+    {
+      "class": "text-lg",
+      "count": 375
+    },
+    {
+      "class": "absolute",
+      "count": 352
+    },
+    {
+      "class": "text-center",
+      "count": 346
+    },
+    {
+      "class": "uppercase",
+      "count": 345
+    },
+    {
+      "class": "mt-4",
+      "count": 337
+    },
+    {
+      "class": "bg-white",
+      "count": 333
+    },
+    {
+      "class": "text-xs",
+      "count": 328
+    },
+    {
+      "class": "border-t",
+      "count": 308
+    },
+    {
+      "class": "py-3",
+      "count": 299
+    },
+    {
+      "class": "font-inter",
+      "count": 299
+    },
+    {
+      "class": "border-t-[#CECED6]",
+      "count": 294
+    },
+    {
+      "class": "text-base",
+      "count": 292
+    },
+    {
+      "class": "mb-6",
+      "count": 287
+    },
+    {
+      "class": "rounded-sm",
+      "count": 264
+    },
+    {
+      "class": "text-inherit",
+      "count": 249
+    },
+    {
+      "class": "text-white",
+      "count": 244
+    },
+    {
+      "class": "border",
+      "count": 241
+    },
+    {
+      "class": "h-full",
+      "count": 238
+    },
+    {
+      "class": "font-semibold",
+      "count": 234
+    },
+    {
+      "class": "text-left",
+      "count": 231
+    },
+    {
+      "class": "w-5",
+      "count": 223
+    },
+    {
+      "class": "top-0",
+      "count": 209
+    },
+    {
+      "class": "h-5",
+      "count": 209
+    }
+  ],
+  "top_ids": [
+    {
+      "id": " data-contentblockid=",
+      "count": 306
+    },
+    {
+      "id": "519",
+      "count": 264
+    },
+    {
+      "id": "20662",
+      "count": 264
+    },
+    {
+      "id": "36770",
+      "count": 169
+    },
+    {
+      "id": "36765",
+      "count": 70
+    },
+    {
+      "id": "36771",
+      "count": 65
+    },
+    {
+      "id": "38466",
+      "count": 42
+    },
+    {
+      "id": "488",
+      "count": 42
+    },
+    {
+      "id": "14873",
+      "count": 42
+    },
+    {
+      "id": "abbot-script",
+      "count": 28
+    },
+    {
+      "id": "50",
+      "count": 28
+    },
+    {
+      "id": "inline-css",
+      "count": 28
+    },
+    {
+      "id": "menu-cc",
+      "count": 28
+    },
+    {
+      "id": "menu-insurance",
+      "count": 28
+    },
+    {
+      "id": "menu-banking",
+      "count": 28
+    },
+    {
+      "id": "menu-investing",
+      "count": 28
+    },
+    {
+      "id": "menu-debt",
+      "count": 28
+    },
+    {
+      "id": "a",
+      "count": 28
+    },
+    {
+      "id": "menu-money",
+      "count": 28
+    },
+    {
+      "id": "menu-more",
+      "count": 28
+    },
+    {
+      "id": "BG6",
+      "count": 28
+    },
+    {
+      "id": "zip-input",
+      "count": 27
+    },
+    {
+      "id": "button-submit",
+      "count": 27
+    },
+    {
+      "id": "auto-insurance-prepop",
+      "count": 27
+    },
+    {
+      "id": "4585",
+      "count": 26
+    },
+    {
+      "id": "36768",
+      "count": 26
+    },
+    {
+      "id": "rates-Comparison__ima--container-section",
+      "count": 26
+    },
+    {
+      "id": "rates-Comparison__ima--container",
+      "count": 26
+    },
+    {
+      "id": "36772",
+      "count": 26
+    },
+    {
+      "id": "pixel_megoaa_script",
+      "count": 14
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"ad\"], [id*=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

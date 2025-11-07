@@ -1,0 +1,455 @@
+{
+  "domain": "insuranceopedia.com",
+  "total_pages": 29,
+  "analyzed_at": "2025-11-07T14:35:28.275071",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 29,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 29,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 29,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 30,
+      "frequency": 1.034,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 0.034,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 5611,
+      "frequency": 193.483,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 1,
+      "frequency": 0.034,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 3045,
+      "frequency": 105.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 887,
+      "frequency": 30.586,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "wise-block",
+      "count": 9968
+    },
+    {
+      "class": "wise-font-sans",
+      "count": 9012
+    },
+    {
+      "class": "wise-w-full",
+      "count": 8969
+    },
+    {
+      "class": "wise-text-sm",
+      "count": 6578
+    },
+    {
+      "class": "hover:wise-text-blue-400",
+      "count": 5791
+    },
+    {
+      "class": "hover:wise-no-underline",
+      "count": 5262
+    },
+    {
+      "class": "wise-text-slate-500",
+      "count": 5208
+    },
+    {
+      "class": "wise-font-normal",
+      "count": 5191
+    },
+    {
+      "class": "wise-border-solid",
+      "count": 3520
+    },
+    {
+      "class": "wise-font-bold",
+      "count": 3396
+    },
+    {
+      "class": "wise-flex",
+      "count": 2400
+    },
+    {
+      "class": "wise-cursor-pointer",
+      "count": 1735
+    },
+    {
+      "class": "wise-text-blue-950",
+      "count": 1712
+    },
+    {
+      "class": "wise-mb-1",
+      "count": 1580
+    },
+    {
+      "class": "wise-text-center",
+      "count": 1479
+    },
+    {
+      "class": "wise-flex-wrap",
+      "count": 1449
+    },
+    {
+      "class": "wise-relative",
+      "count": 1366
+    },
+    {
+      "class": "wise-bg-transparent",
+      "count": 1364
+    },
+    {
+      "class": "wise-border-2",
+      "count": 1347
+    },
+    {
+      "class": "wise-transition-all",
+      "count": 1254
+    },
+    {
+      "class": "wise-border-slate-200",
+      "count": 1237
+    },
+    {
+      "class": "wise-border-x-0",
+      "count": 1185
+    },
+    {
+      "class": "hover:wise-text-white",
+      "count": 1127
+    },
+    {
+      "class": "wise-absolute",
+      "count": 1126
+    },
+    {
+      "class": "wise-px-2.5",
+      "count": 1085
+    },
+    {
+      "class": "wise-text-slate-800",
+      "count": 1072
+    },
+    {
+      "class": "wise-content-start",
+      "count": 1057
+    },
+    {
+      "class": "wise-rounded",
+      "count": 1052
+    },
+    {
+      "class": "header-nav__sub-menu__links",
+      "count": 1044
+    },
+    {
+      "class": "wise-border-t-0",
+      "count": 1042
+    },
+    {
+      "class": "wise-items-center",
+      "count": 993
+    },
+    {
+      "class": "wise-p-1",
+      "count": 941
+    },
+    {
+      "class": "wise-prose",
+      "count": 866
+    },
+    {
+      "class": "wise-duration-300",
+      "count": 819
+    },
+    {
+      "class": "wise-ease-in-out",
+      "count": 819
+    },
+    {
+      "class": "wise-font-medium",
+      "count": 819
+    },
+    {
+      "class": "text-center",
+      "count": 813
+    },
+    {
+      "class": "flex-fill",
+      "count": 783
+    },
+    {
+      "class": "nav-item",
+      "count": 783
+    },
+    {
+      "class": "nav-link",
+      "count": 783
+    },
+    {
+      "class": "jan-js-term-letter",
+      "count": 783
+    },
+    {
+      "class": "wise-grid",
+      "count": 776
+    },
+    {
+      "class": "wise-col-span-1",
+      "count": 770
+    },
+    {
+      "class": "hover:wise-bg-slate-300",
+      "count": 760
+    },
+    {
+      "class": "hover:wise-border-slate-300",
+      "count": 760
+    },
+    {
+      "class": "focus:wise-bg-slate-300",
+      "count": 750
+    },
+    {
+      "class": "focus:wise-text-white",
+      "count": 750
+    },
+    {
+      "class": "wise-tracking-wide",
+      "count": 749
+    },
+    {
+      "class": "wise-prose-slate",
+      "count": 733
+    },
+    {
+      "class": "wise-z-10",
+      "count": 729
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "Combined-Shape",
+      "count": 1170
+    },
+    {
+      "id": "Oval",
+      "count": 936
+    },
+    {
+      "id": "Page-1",
+      "count": 846
+    },
+    {
+      "id": "Path",
+      "count": 736
+    },
+    {
+      "id": "linearGradient-1",
+      "count": 510
+    },
+    {
+      "id": "star-(2)",
+      "count": 510
+    },
+    {
+      "id": "Group-11",
+      "count": 234
+    },
+    {
+      "id": "Group-9",
+      "count": 234
+    },
+    {
+      "id": "Group-7",
+      "count": 234
+    },
+    {
+      "id": "Group-6",
+      "count": 234
+    },
+    {
+      "id": "Group-5",
+      "count": 234
+    },
+    {
+      "id": "Group-4",
+      "count": 234
+    },
+    {
+      "id": "Group-3",
+      "count": 234
+    },
+    {
+      "id": "Triangle",
+      "count": 234
+    },
+    {
+      "id": "l",
+      "count": 101
+    },
+    {
+      "id": "arrow-bend-down-right",
+      "count": 101
+    },
+    {
+      "id": "lnkOpenSearch",
+      "count": 29
+    },
+    {
+      "id": "theme-main-css",
+      "count": 29
+    },
+    {
+      "id": "wp-emoji-styles-inline-css",
+      "count": 29
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 29
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 29
+    },
+    {
+      "id": "app-styles-css",
+      "count": 29
+    },
+    {
+      "id": "jquery-core-js",
+      "count": 29
+    },
+    {
+      "id": "jquery-core-js-after",
+      "count": 29
+    },
+    {
+      "id": "jquery-migrate-js",
+      "count": 29
+    },
+    {
+      "id": "header-wrapper",
+      "count": 29
+    },
+    {
+      "id": "footer",
+      "count": 29
+    },
+    {
+      "id": "ot-sdk-btn",
+      "count": 29
+    },
+    {
+      "id": "gform_wrapper_7",
+      "count": 29
+    },
+    {
+      "id": "gf_7",
+      "count": 29
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class*=\"ad\"], [id*=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}
