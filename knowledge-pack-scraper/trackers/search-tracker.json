@@ -3,15 +3,15 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T05:53:40.955747",
+    "lastUpdated": "2025-11-07T05:54:19.611177",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
     "pending": 416,
-    "claimed": 4,
+    "claimed": 3,
     "urls_discovered": 0,
-    "completed": 56,
+    "completed": 57,
     "failed": 0
   },
   "searches": [
@@ -3111,16 +3111,18 @@
       "subcategory": "roof-age-restrictions",
       "carrier": "State Farm",
       "priority": "high",
-      "status": "claimed",
+      "status": "completed",
       "assignedTo": "agnt_rq9y0uaf2dbvccspze4lo3bv",
       "startedAt": null,
-      "completedAt": null,
+      "completedAt": "2025-11-07T05:54:19.608783",
       "durationSeconds": null,
-      "urlsDiscoveredCount": null,
+      "urlsDiscoveredCount": 10,
       "errorMessage": null,
       "retryCount": 0,
       "notes": null,
-      "claimedAt": "2025-11-07T05:53:40.953662"
+      "claimedAt": "2025-11-07T05:53:40.953662",
+      "urlsNewCount": 10,
+      "urlsExistingCount": 0
     },
     {
       "id": "search_e0gvo5skjjbl1b66nmje93o1",
