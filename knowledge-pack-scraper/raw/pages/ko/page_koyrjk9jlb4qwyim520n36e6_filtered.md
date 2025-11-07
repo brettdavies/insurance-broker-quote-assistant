@@ -1,0 +1,1 @@
+Average car insurance cost in Des Moines, Iowa [Compare 2024 rates]

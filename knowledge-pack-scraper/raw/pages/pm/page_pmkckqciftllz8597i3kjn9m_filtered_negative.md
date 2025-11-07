@@ -1,0 +1,82 @@
+If you've experienced property loss from wildfires in LA our team is here to help you. Call us today.
+[![Merlin Law Group Logo](https://www.merlinlawgroup.com/wp-content/themes/merlinlaw/images/logo-merlin-law-group.svg)](https://www.merlinlawgroup.com)
+* [Our Firm](https://www.merlinlawgroup.com/is-roof-decking-covered-by-insurance/)
+* [About](https://www.merlinlawgroup.com/about-our-firm/)
+* [Attorneys](https://www.merlinlawgroup.com/about-our-firm/attorney-directory/)
+* [Executive Team](https://www.merlinlawgroup.com/about-our-firm/executive-team/)
+* [Locations](https://www.merlinlawgroup.com/offices/)
+* [FAQs](https://www.merlinlawgroup.com/about-our-firm/faqs/)
+* [Careers](https://www.merlinlawgroup.com/about-our-firm/careers/)
+* [Types of Loss](https://www.merlinlawgroup.com/types-of-loss/)
+* [All Types of Loss](https://www.merlinlawgroup.com/types-of-loss/)
+* [Hurricanes](https://www.merlinlawgroup.com/types-of-loss/hurricanes/)
+* [Fire and Smoke](https://www.merlinlawgroup.com/types-of-loss/fire-and-smoke/)
+* [Water Damage](https://www.merlinlawgroup.com/types-of-loss/water-damage/)
+* [Wind Damage](https://www.merlinlawgroup.com/types-of-loss/wind-damage/)
+* [Hail Damage](https://www.merlinlawgroup.com/types-of-loss/hail-damage/)
+* [Large Loss](https://www.merlinlawgroup.com/types-of-loss/large-loss-insurance-claims/)
+* [Resources](https://www.merlinlawgroup.com/is-roof-decking-covered-by-insurance/)
+* [All Resources](https://www.merlinlawgroup.com/resources/)
+* [Success Stories](https://www.merlinlawgroup.com/resources/success-stories/)
+* [eBooks](https://www.merlinlawgroup.com/resources/ebooks/)
+* [Press Releases](https://www.merlinlawgroup.com/resources/press-releases/)
+* [Blog](https://www.merlinlawgroup.com/is-roof-decking-covered-by-insurance/)
+* [Property Insurance Coverage Blog](https://www.propertyinsurancecoveragelaw.com/)
+* [Merlin Law Blog](https://www.merlinlawgroup.com/merlin-property-insurance-blog/)
+* [Contact Us](https://www.merlinlawgroup.com/contact-us/)
+[ Call Now • Open 24/7  (877) 449-4700  ](tel:\(877\)%20449-4700)
+[](https://www.merlinlawgroup.com/merlin-property-insurance-blog/)
+# Can Homeowners Insurance Be Cancelled Because of Roof Conditions?
+Sep 29, 2025 **By Merlin Law Group** [California](https://www.merlinlawgroup.com/category/states/california/), [Insurance](https://www.merlinlawgroup.com/category/insurance/)
+* [ ](https://www.facebook.com/sharer.php?u=https://www.merlinlawgroup.com/is-roof-decking-covered-by-insurance/)
+* [ ](https://twitter.com/intent/tweet?url=https://www.merlinlawgroup.com/is-roof-decking-covered-by-insurance/&text=Can%20Homeowners%20Insurance%20Be%20Cancelled%20Because%20of%20Roof%20Conditions?)
+![Roof conditions on a house](https://www.merlinlawgroup.com/wp-content/uploads/2025/01/roof-conditions-1024x576.jpg)
+**Florida:** Following [recent legislative updates](https://www.flsenate.gov/Laws/Statutes/2022/0627.7011#:~:text=\(c\)%20For%20a%20roof%20that%20is%20at,issuing%20or%20renewing%20a%20homeowner's%20insurance%20policy.), insurers are generally prohibited from refusing to issue or renew a homeowners insurance policy due to a roof’s age if it is less than 15 years old. For roofs that are 15 years or older, insurers must allow homeowners the opportunity to obtain an inspection by a licensed inspector at their own expense. If the inspection determines the roof has at least five years of useful life remaining, coverage cannot be denied based on the roof’s age.
+[
+![Contact Us](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E)
+](https://cta-service-cms2.hubspot.com/web-interactives/public/v1/track/redirect?encryptedPayload=AVxigLIkKChFTQ6jEU7BF526361MmkKjVPR6mi8IZJDbwDTIYUcv5EeR8QZnMq89OolewymzJfYOFhAAbhUkZiRGPg2fDTmdO6x8Tp84FZikcJYwzEU%3D&webInteractiveContentId=192719484959&portalId=6137185)
+![](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%2078'%3E%3C/svg%3E)
+Established in 1985, Merlin Law Group is a leading insurance litigation law firm committed to assisting policyholders receive fair and just outcomes from their insurance companies.
+### Contact Us
+[(877) 449-4700](tel:8774494700)
+[MerlinLawGroup.com](https://www.merlinlawgroup.com/?__hstc=174962621.aa73001e226528ce767ca81b7d4b6232.1707202701389.1708595266222.1708608453057.8&__hssc=174962621.2.1708608453057&__hsfp=1895368747)
+### Stay Connected
+* [Facebook](https://www.merlinlawgroup.com/is-roof-decking-covered-by-insurance/)
+* [LinkedIn](https://www.merlinlawgroup.com/is-roof-decking-covered-by-insurance/)
+* [X](https://www.merlinlawgroup.com/is-roof-decking-covered-by-insurance/)
+[![A California suburban neighborhood with smoke from a wildfire in the distance.](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20817'%3E%3C/svg%3E)](https://www.merlinlawgroup.com/insurance-companies-cancel-fire-insurance/)
+#### [ California Fire Insurance Crisis: Why Insurers Are Cancelling Policies and How Homeowners Can Respond  ](https://www.merlinlawgroup.com/insurance-companies-cancel-fire-insurance/)
+Oct 03, 2025 [By Merlin Law Group ](https://www.merlinlawgroup.com/author/grosen/)
+[![Thick smoke from a Los Angeles wildfire spreads toward residential neighborhoods and urban buildings, emphasizing the widespread impact that can lead to smoke damage claims for property and air quality losses.](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20768'%3E%3C/svg%3E)](https://www.merlinlawgroup.com/smoke-damage-claims-2025-la-fires/)
+#### [ Smoke Damage Claims After the 2025 LA Fires: What You Need to Know  ](https://www.merlinlawgroup.com/smoke-damage-claims-2025-la-fires/)
+Aug 21, 2025 [By Merlin Law Group ](https://www.merlinlawgroup.com/author/grosen/)
+[![Aerial view of a suburban neighborhood in California surrounded by dry hills and vegetation, highlighting areas at risk for wildfires and relevant to wildfire insurance claims in California.](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20575'%3E%3C/svg%3E)](https://www.merlinlawgroup.com/wildfire-insurance-claims-in-california/)
+#### [ Wildfire Insurance Claims in California  ](https://www.merlinlawgroup.com/wildfire-insurance-claims-in-california/)
+Jul 02, 2025 [By Merlin Law Group ](https://www.merlinlawgroup.com/author/grosen/)
+###  Let us help you. Call now: [(877) 449-4700](tel:877-449-4700)
+info@merlinlawgroup.com | Monday – Friday, 9 AM – 5PM
+##  Why choose Merlin Law Group?
+##  Submit a free case review
+##### Quick Menu
+* [Merlin Law Group Home](https://www.merlinlawgroup.com/)
+* [Attorneys](https://www.merlinlawgroup.com/about-our-firm/attorney-directory/)
+* [Resources](https://www.merlinlawgroup.com/resources/)
+* [FAQs](https://www.merlinlawgroup.com/about-our-firm/faqs/)
+* [Careers](https://www.merlinlawgroup.com/about-our-firm/careers/)
+* [Contact Us](https://www.merlinlawgroup.com/contact-us/)
+* [Subscribe to the Blog](https://www.propertyinsurancecoveragelaw.com/)
+* [Disclaimer](https://www.merlinlawgroup.com/disclaimer/)
+##### Types of Loss
+* [Hurricanes](https://www.merlinlawgroup.com/types-of-loss/hurricanes/)
+* [Fire and Smoke](https://www.merlinlawgroup.com/types-of-loss/fire-and-smoke/)
+* [Water Damage](https://www.merlinlawgroup.com/types-of-loss/water-damage/)
+* [Wind Damage](https://www.merlinlawgroup.com/types-of-loss/wind-damage/)
+* [Hail Damage](https://www.merlinlawgroup.com/types-of-loss/hail-damage/)
+#####  Follow Us
+* [ ](https://www.facebook.com/MerlinLawGroup/)
+* [ ](https://www.linkedin.com/company/merlin-law-group/)
+* [ ](https://twitter.com/MerlinLawGroup)
+* [ ](https://youtube.com/merlinlawgroup)
+[![Merlin Law Group Logo](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20547%20184'%3E%3C/svg%3E)](https://www.merlinlawgroup.com)
+Merlin Law Group is a national insurance claim litigation firm that handles commercial property insurance claims, residential property insurance claims and bad faith claims. Our dedicated team of insurance attorneys are committed to resolving your property insurance claims.
+The accounts of recent trials, verdicts and settlements contained in this website are intended to illustrate the experience of the law firm. Prospective clients may not obtain the same or similar results as each case is unique.

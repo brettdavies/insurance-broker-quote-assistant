@@ -1,0 +1,72 @@
+If you've experienced property loss from wildfires in LA our team is here to help you. Call us today.
+[![Merlin Law Group Logo](https://www.merlinlawgroup.com/wp-content/themes/merlinlaw/images/logo-merlin-law-group.svg)](https://www.merlinlawgroup.com)
+* [Our Firm](https://www.merlinlawgroup.com/texas-fair-plan/)
+* [About](https://www.merlinlawgroup.com/about-our-firm/)
+* [Attorneys](https://www.merlinlawgroup.com/about-our-firm/attorney-directory/)
+* [Executive Team](https://www.merlinlawgroup.com/about-our-firm/executive-team/)
+* [Locations](https://www.merlinlawgroup.com/offices/)
+* [FAQs](https://www.merlinlawgroup.com/about-our-firm/faqs/)
+* [Careers](https://www.merlinlawgroup.com/about-our-firm/careers/)
+* [Types of Loss](https://www.merlinlawgroup.com/types-of-loss/)
+* [All Types of Loss](https://www.merlinlawgroup.com/types-of-loss/)
+* [Hurricanes](https://www.merlinlawgroup.com/types-of-loss/hurricanes/)
+* [Fire and Smoke](https://www.merlinlawgroup.com/types-of-loss/fire-and-smoke/)
+* [Water Damage](https://www.merlinlawgroup.com/types-of-loss/water-damage/)
+* [Wind Damage](https://www.merlinlawgroup.com/types-of-loss/wind-damage/)
+* [Hail Damage](https://www.merlinlawgroup.com/types-of-loss/hail-damage/)
+* [Large Loss](https://www.merlinlawgroup.com/types-of-loss/large-loss-insurance-claims/)
+* [Resources](https://www.merlinlawgroup.com/texas-fair-plan/)
+* [All Resources](https://www.merlinlawgroup.com/resources/)
+* [Success Stories](https://www.merlinlawgroup.com/resources/success-stories/)
+* [eBooks](https://www.merlinlawgroup.com/resources/ebooks/)
+* [Press Releases](https://www.merlinlawgroup.com/resources/press-releases/)
+* [Blog](https://www.merlinlawgroup.com/texas-fair-plan/)
+* [Property Insurance Coverage Blog](https://www.propertyinsurancecoveragelaw.com/)
+* [Merlin Law Blog](https://www.merlinlawgroup.com/merlin-property-insurance-blog/)
+* [Contact Us](https://www.merlinlawgroup.com/contact-us/)
+[ Call Now • Open 24/7  (877) 449-4700  ](tel:\(877\)%20449-4700)
+[](https://www.merlinlawgroup.com/merlin-property-insurance-blog/)
+Jan 06, 2025 **By Merlin Law Group** [Texas](https://www.merlinlawgroup.com/category/states/texas-states/)
+* [ ](https://www.facebook.com/sharer.php?u=https://www.merlinlawgroup.com/texas-fair-plan/)
+* [ ](https://twitter.com/intent/tweet?url=https://www.merlinlawgroup.com/texas-fair-plan/&text=The%20Texas%20Fair%20Plan:%20What%20It%20Is%20and%20What%20It%20Covers)
+![A white house with an American flag and a Texas state flag that benefits from the Texas FAIR plan.](https://www.merlinlawgroup.com/wp-content/uploads/2025/01/texas-fair-plan.jpg)
+The TFPA _does not_ insure commercial properties.
+![](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%2078'%3E%3C/svg%3E)
+Established in 1985, Merlin Law Group is a leading insurance litigation law firm committed to assisting policyholders receive fair and just outcomes from their insurance companies.
+### Contact Us
+[(877) 449-4700](tel:8774494700)
+[MerlinLawGroup.com](https://www.merlinlawgroup.com/?__hstc=174962621.aa73001e226528ce767ca81b7d4b6232.1707202701389.1708595266222.1708608453057.8&__hssc=174962621.2.1708608453057&__hsfp=1895368747)
+### Stay Connected
+* [Facebook](https://www.merlinlawgroup.com/texas-fair-plan/)
+* [LinkedIn](https://www.merlinlawgroup.com/texas-fair-plan/)
+* [X](https://www.merlinlawgroup.com/texas-fair-plan/)
+[![A digital highway sign in Texas warns drivers with the message “Hurricane Season Is Here, Be Prepared,” reminding residents about the importance of readiness and hurricane insurance in Texas.](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://www.merlinlawgroup.com/hurricane-insurance-texas-required-windstorm-coverage/)
+#### [ Hurricane Insurance in Texas: Why Your Mortgage Company’s Required Coverage Is Leaving You Financially Exposed  ](https://www.merlinlawgroup.com/hurricane-insurance-texas-required-windstorm-coverage/)
+Oct 02, 2025 [By Merlin Law Group ](https://www.merlinlawgroup.com/author/grosen/)
+###  Let us help you. Call now: [(877) 449-4700](tel:877-449-4700)
+info@merlinlawgroup.com | Monday – Friday, 9 AM – 5PM
+##  Why choose Merlin Law Group?
+##  Submit a free case review
+##### Quick Menu
+* [Merlin Law Group Home](https://www.merlinlawgroup.com/)
+* [Attorneys](https://www.merlinlawgroup.com/about-our-firm/attorney-directory/)
+* [Resources](https://www.merlinlawgroup.com/resources/)
+* [FAQs](https://www.merlinlawgroup.com/about-our-firm/faqs/)
+* [Careers](https://www.merlinlawgroup.com/about-our-firm/careers/)
+* [Contact Us](https://www.merlinlawgroup.com/contact-us/)
+* [Subscribe to the Blog](https://www.propertyinsurancecoveragelaw.com/)
+* [Disclaimer](https://www.merlinlawgroup.com/disclaimer/)
+##### Types of Loss
+* [Hurricanes](https://www.merlinlawgroup.com/types-of-loss/hurricanes/)
+* [Fire and Smoke](https://www.merlinlawgroup.com/types-of-loss/fire-and-smoke/)
+* [Water Damage](https://www.merlinlawgroup.com/types-of-loss/water-damage/)
+* [Wind Damage](https://www.merlinlawgroup.com/types-of-loss/wind-damage/)
+* [Hail Damage](https://www.merlinlawgroup.com/types-of-loss/hail-damage/)
+#####  Follow Us
+* [ ](https://www.facebook.com/MerlinLawGroup/)
+* [ ](https://www.linkedin.com/company/merlin-law-group/)
+* [ ](https://twitter.com/MerlinLawGroup)
+* [ ](https://youtube.com/merlinlawgroup)
+[![Merlin Law Group Logo](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20547%20184'%3E%3C/svg%3E)](https://www.merlinlawgroup.com)
+Merlin Law Group is a national insurance claim litigation firm that handles commercial property insurance claims, residential property insurance claims and bad faith claims. Our dedicated team of insurance attorneys are committed to resolving your property insurance claims.
+The accounts of recent trials, verdicts and settlements contained in this website are intended to illustrate the experience of the law firm. Prospective clients may not obtain the same or similar results as each case is unique.

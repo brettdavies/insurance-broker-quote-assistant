@@ -1,0 +1,235 @@
+[![Carinsurance.com](https://www.carinsurance.com/images/site-logo.svg)](https://www.carinsurance.com/)
+[](tel:844-645-3331)
+* What can we help you find?
+Search Please enter some text to search.
+Popular searches:
+* insurance rates by car model
+* car insurance calculator
+* car insurance rate by state
+* car insurance in texas
+* car insurance estimator
+* car insurance in california
+* where to buy gap insurance
+* do i need full coverage on my car
+*     * Find Auto Insurance
+* COMPARE AND CHOOSE
+* [Compare car insurance](https://www.carinsurance.com/car-insurance-comparison.aspx)
+* [Best car insurance companies](https://www.carinsurance.com/best-car-insurance-companies)
+* [Gap insurance providers](https://www.carinsurance.com/where-to-buy-gap-insurance)
+* [Buy car insurance online](https://www.carinsurance.com/Articles/buy-car-insurance-online.aspx)
+* SAVE ON CAR INSURANCE
+* [Cheapest car insurance TRENDING ](https://www.carinsurance.com/cheapest-car-insurance.aspx)
+* [Car insurance discounts](https://www.carinsurance.com/discounts.aspx)
+* [How to lower your car insurance](https://www.carinsurance.com/how-to-lower-car-insurance/)
+* [Cheapest liability car insurance](https://www.carinsurance.com/cheapest-liability-only-car-insurance/)
+* INSURANCE COMPANY REVIEWS
+* [Progressive insurance review](https://www.carinsurance.com/progressive-car-insurance-review)
+* [Mercury insurance review](https://www.carinsurance.com/mercury-car-insurance-reviews/)
+* [Metromile insurance review](https://www.carinsurance.com/metromile-insurance-reviews/)
+* [Root insurance review](https://www.carinsurance.com/root-car-insurance-reviews/)
+* [The General insurance review](https://www.carinsurance.com/the-general-car-insurance-reviews/)
+* Calculators
+* ESTIMATE MY RATE
+* [Car insurance estimate calculator TRENDING ](https://www.carinsurance.com/calculators/car-insurance-calculator/)
+* [Car insurance rates by ZIP code calculator](https://www.carinsurance.com/calculators/average-car-insurance-rates.aspx)
+* [Calculate car insurance rates by age](https://www.carinsurance.com/average-rates-by-age.aspx)
+* [Used car insurance calculator](https://www.carinsurance.com/used-car-insurance.aspx)
+* [Insurance rates by car model](https://www.carinsurance.com/insurance-rates-by-car/)
+* COVERAGE CALCULATORS
+* [How much car insurance do I need?](https://www.carinsurance.com/Articles/how-much-car-insurance-should-you-buy.aspx)
+* [Umbrella insurance calculator](https://www.carinsurance.com/umbrella-insurance-calculator/)
+* [Gap insurance calculator](https://www.carinsurance.com/calculators/gap-insurance-cost-calculator/)
+* [Explore all calculators](https://www.carinsurance.com/calculators/)
+* OTHER USEFUL CALCULATORS
+* [Adding a teen driver cost calculator](https://www.carinsurance.com/Articles/best-ways-to-insure-teen-driver.aspx)
+* [Will my insurance go up if I move?](https://www.carinsurance.com/Articles/will-my-insurance-go-up-if-i-move.aspx)
+* See Rates
+* RATES BY STATE
+* [California](https://www.carinsurance.com/state/how-much-is-car-insurance-in-california/)
+* [Florida](https://www.carinsurance.com/state/how-much-is-car-insurance-in-florida/)
+* [Texas](https://www.carinsurance.com/state/how-much-is-car-insurance-in-texas/)
+* [Michigan](https://www.carinsurance.com/state/how-much-is-car-insurance-in-michigan/)
+* [New York](https://www.carinsurance.com/state/how-much-is-car-insurance-in-new-york/)
+* [Find your state](https://www.carinsurance.com/state-car-insurance-rates)
+* RATES BY AGE
+* [For 16-year-old drivers TRENDING ](https://www.carinsurance.com/Articles/car-insurance-16-year-old.aspx)
+* [For 17-year-old drivers](https://www.carinsurance.com/Articles/car-insurance-17-year-old.aspx)
+* [For 18-year-old drivers](https://www.carinsurance.com/Articles/car-insurance-18-year-old.aspx)
+* [For 19-year-old drivers](https://www.carinsurance.com/Articles/car-insurance-19-year-old.aspx)
+* [For young drivers](https://www.carinsurance.com/Articles/cheap-car-insurance-for-young-drivers)
+* [For senior drivers](https://www.carinsurance.com/how-much-does-insurance-cost-for-seniors/)
+* [See rates by age](https://www.carinsurance.com/average-rates-by-age.aspx)
+* RATES BY VEHICLE TYPE
+* [Cheapest cars to insure](https://www.carinsurance.com/cheapest-cars-to-insure.aspx)
+* [Cheapest SUVs to insure](https://www.carinsurance.com/cheap-suv-insurance-rates/)
+* [Cheapest sedans to insure](https://www.carinsurance.com/cheap-sedan-insurance-rates/)
+* [Cheapest trucks to insure](https://www.carinsurance.com/cheap-truck-insurance-quotes/)
+* [Cheapest EVs and hybrids to insure](https://www.carinsurance.com/cheapest-evs-and-hybrids-to-insure/)
+* RATES AFTER ACCIDENTS & TICKETS
+* [Rates after accidents](https://www.carinsurance.com/how-much-does-insurance-go-up-after-accident.aspx)
+* [Rates after a DUI](https://www.carinsurance.com/how-much-does-your-insurance-go-up-after-a-dui/)
+* [Rates after speeding tickets](https://www.carinsurance.com/how-much-insurance-goes-up-for-speeding-ticket.aspx)
+* [Rates after texting tickets](https://www.carinsurance.com/how-much-car-insurance-goes-up-after-texting-ticket)
+* [See car insurance rates for high risk drivers](https://www.carinsurance.com/Articles/high-risk-driver-insurance)
+* News & Insights
+* TRENDS & INSIGHTS TRENDING
+* [Why does my car insurance keep going up?](https://www.carinsurance.com/why-does-my-car-insurance-keep-going-up/)
+* [Drivers switching car insurance as inflation continues](https://www.carinsurance.com/drivers-switching-car-insurance-companies-as-inflation-rises/)
+* [How AI affects your car insurance rates](https://www.carinsurance.com/trends-and-insights/how-ai-could-affect-your-car-insurance-rates/)
+* [Electric vehicle statistics in 2025](https://www.carinsurance.com/trends-and-insights/electric-vehicle-statistics/)
+* [How legislation affects your wallet in 2025](https://www.carinsurance.com/trends-and-insight/how-auto-insurance-laws-in-2024-impact-premiums-in-2025/)
+* [Trends over time: U.S. auto insurers' rates](https://www.carinsurance.com/trends-and-insights/statewise-auto-insurance-rates-trends-analysis/)
+* [More trends and insights](https://www.carinsurance.com/trends-and-insights/)
+* DATA STUDIES AND REPORTS
+* [State of auto insurance in 2025 Latest ](https://www.carinsurance.com/state-of-auto-insurance/)
+* [Best DOTs in the U.S.](https://www.carinsurance.com/trends-and-insights/study-names-best-state-transportation-departments/)
+* [Best DMVs in the U.S.](https://www.carinsurance.com/trends-and-insights/study-names-best-state-motor-vehicle-departments/)
+* [Why are drivers switching insurers? SURVEY ](https://www.carinsurance.com/drivers-switching-car-insurance-companies-as-inflation-rises/)
+* [Most drivers sticking to gas-powered cars](https://www.carinsurance.com/trends-and-insights/future-of-electric-cars/)
+* [ASK OUR EXPERTS](https://www.carinsurance.com/state/how-much-is-car-insurance-in-illinois/)
+* [Who is eligible for USAA insurance?](https://www.carinsurance.com/who-is-eligible-for-usaa-insurance/)
+* [Is gap insurance worth it?](https://www.carinsurance.com/ask-our-experts/is-gap-insurance-worth-it/)
+* [Is it worth having full coverage on an old car?](https://www.carinsurance.com/ask-our-experts/is-it-worth-having-full-coverage-on-an-old-car/)
+* [How to switch car insurance to another state?](https://www.carinsurance.com/ask-our-experts/how-to-switch-car-insurance-to-another-state/)
+* [Does being married lower your car insurance rates?](https://www.carinsurance.com/ask-our-experts/does-being-married-lower-car-insurance/)
+* [Browse all FAQs, answered by experts](https://www.carinsurance.com/ask-our-experts/)
+* Academy
+* CAR INSURANCE 101
+* [What is car insurance & how does it work?](https://www.carinsurance.com/what-is-car-insurance-and-how-does-it-works/)
+* [Factors affecting car insurance](https://www.carinsurance.com/factors-that-affect-car-insurance-rates/)
+* [State minimum requirements Latest ](https://www.carinsurance.com/Articles/minimum-liability-car-insurance-requirements-by-state.aspx)
+* HOW-TO GUIDES
+* [How to read a car insurance policy](https://www.carinsurance.com/how-to-read-car-insurance-policy/)
+* [How to insure a new car](https://www.carinsurance.com/Articles/how-to-insure-a-new-car.aspx)
+* [How to switch your car insurance](https://www.carinsurance.com/Articles/how-to-switch-car-insurance.aspx)
+* [How to get car insurance for non-U.S. citizens](https://www.carinsurance.com/kb/can-I-buy-and-insure-a-car-with-an-international-license.aspx)
+* [How to add a driver to your policy](https://www.carinsurance.com/adding-driver-cost.aspx)
+* COVERAGE TYPES
+* [Liability insurance](https://www.carinsurance.com/coverage-definition/liability-car-insurance.aspx)
+* [Collision coverage](https://www.carinsurance.com/what-is-collision-coverage-insurance)
+* [Comprehensive insurance](https://www.carinsurance.com/coverage-definition/comprehensive-insurance.aspx)
+* [SR-22 insurance](https://www.carinsurance.com/sr22.aspx)
+* [Non-owner car insurance](https://www.carinsurance.com/coverage-definition/non-owners-car-insurance.aspx)
+* [Gap insurance](https://www.carinsurance.com/gap-insurance.aspx)
+* [Non-owner SR22 insurance](https://www.carinsurance.com/non-owner-sr22.aspx)
+* [See all coverage types](https://www.carinsurance.com/types-of-car-insurance)
+* WHY TRUST US
+* [About Us](https://www.carinsurance.com/about-us/)
+* [Meet our experts](https://www.carinsurance.com/editorial-experts/)
+* [Meet Sophie - our mascot](https://www.carinsurance.com/about-us/sophie/)
+* [Editorial standards](https://www.carinsurance.com/about-us/editorial-policy/)
+* [Data methodology](https://www.carinsurance.com/data-research-methodology/)
+[Call us at: 1-888-918-0455](tel:1-888-918-0455) Get Quote
+[(844) 645-3331](tel:844-645-3331)
+* [![Car logo icon](https://www.carinsurance.com/images/car_logo_icon.png)Car Insurance Homepage ](https://www.carinsurance.com)
+* [ Car insurance by state ](https://www.carinsurance.com/state-car-insurance-rates)
+![reviewer icon](https://www.carinsurance.com/images/blueberry/highlight.svg) Updated on: Sep 16, 2025
+![reviewer icon](https://www.carinsurance.com/images/article/verified-icon.svg)
+Data Verified By Brent Buell
+The cost of car insurance in Illinois varies significantly depending on the [type and amount of insurance coverage](https://www.carinsurance.com/types-of-car-insurance) you buy, your location, age and driving history. Automobile Club MI (AAA) offers the cheapest rates at $979 a year for full coverage.
+ZIP Code Please enter valid ZIP
+Get Quotes [](tel:844-645-3331)
+[![Carinsurance.com](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%2040'%3E%3C/svg%3E)](https://www.carinsurance.com/) Contents
+* [How much is car insurance in Illinois?](https://www.carinsurance.com/state/how-much-is-car-insurance-in-illinois/#How_much_is_car_insurance_in_Illinois)
+* [Average cost of auto insurance in Illinois by coverage level](https://www.carinsurance.com/state/how-much-is-car-insurance-in-illinois/#Average_cost_of_auto_insurance_in_Illinois_by_coverage_level)
+* [Calculate the cost of car insurance in Illinois](https://www.carinsurance.com/state/how-much-is-car-insurance-in-illinois/#Calculate_the_cost_of_car_insurance_in_Illinois)
+* [Estimate car insurance in Illinois by car model](https://www.carinsurance.com/state/how-much-is-car-insurance-in-illinois/#Estimate_car_insurance_in_Illinois_by_car_model)
+* [Car insurance rates by age group in Illinois](https://www.carinsurance.com/state/how-much-is-car-insurance-in-illinois/#Car_insurance_rates_by_age_group_in_Illinois)
+* [Rates based on driver profile, history and habits in Illinois](https://www.carinsurance.com/state/how-much-is-car-insurance-in-illinois/#Rates_based_on_driver_profile_history_and_habits_in_Illinois)
+* [Car insurance cost in Illinois for high-risk drivers](https://www.carinsurance.com/state/how-much-is-car-insurance-in-illinois/#Car_insurance_cost_in_Illinois_for_high-risk_drivers)
+* [Compare car insurance quotes in Illinois](https://www.carinsurance.com/state/how-much-is-car-insurance-in-illinois/#Compare_car_insurance_quotes_in_Illinois)
+* [Car insurance rates by city in Illinois](https://www.carinsurance.com/state/how-much-is-car-insurance-in-illinois/#Car_insurance_rates_by_city_in_Illinois)
+* [How much does car insurance cost in Illinois per month?](https://www.carinsurance.com/state/how-much-is-car-insurance-in-illinois/#How_much_does_car_insurance_cost_in_Illinois_per_month)
+* [Final thoughts on choosing car insurance in Illinois](https://www.carinsurance.com/state/how-much-is-car-insurance-in-illinois/#Final_thoughts_on_choosing_car_insurance_in_Illinois)
+* [Resources & Methodology](https://www.carinsurance.com/state/how-much-is-car-insurance-in-illinois/#Resources__Methodology)
+[Liability-only policies](https://www.carinsurance.com/coverage-definition/liability-car-insurance.aspx) are the cheapest, offering bare-bones protection that meets state’s financial responsibility laws – but they don’t offer much legal protection and coverage for your medical costs or property damage.
+On the other hand, [full coverage car insurance](https://www.carinsurance.com/what-is-full-coverage-car-insurance) costs more but provides a lot more protection. It covers damage to your car in accidents, theft, natural events and animal collisions. If you have full coverage, you can be reassured that you’re well-protected.
+---|---|---
+State Minimum – Liability Only BI/PD | $35  | $421
+Liability Only – 50/100/50 BI/PD | $39  | $471
+Full Coverage – 100/300/100 Liability BI/PD with $500 Comp/Coll Deductible | $128  | $1,532
+[In Illinois, minimum car insurance requirements](https://www.carinsurance.com/state/state-minimum-car-insurance-in-illinois/) include $25,000 of bodily injury liability per person, $50,000 of bodily injury liability per accident and $20,000 of property damage liability.
+The state minimum car insurance cost in Illinois is **$421** a year. However, this basic coverage only offers limited protection. Illinois drivers can choose to add more coverage, such as [comprehensive](https://www.carinsurance.com/coverage-definition/comprehensive-insurance.aspx) and [collision](https://www.carinsurance.com/what-is-collision-coverage-insurance) insurance, raise their liability limits and include personal injury protection or other insurance coverage, for better protection.
+Your ZIP code Please enter a valid input
+Male Female
+![Zip Tool](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%2095'%3E%3C/svg%3E)
+60624 |  Chicago
+For 30 year old Male  ( Liability - Minimum)
+Highest rate $87/mo.
+Lowest rate $34/mo.
+CarInsurance.com commissioned Quadrant Information Services to provide a report of average auto insurance rates for a 2023 Honda Accord LX for nearly every ZIP code in the United States. We calculated rates using data for up to six large carriers. Averages for customized rates are based on drivers' ages and gender for the following coverage levels: state minimum liability, liability of 50/100/50 and 100/300/100 with $500 deductible on comprehensive and collision. These hypothetical drivers have clean records and good credit. Average rates are for comparative purposes. Your own rate will depend on your personal factors and vehicle. Learn more about [our editorial policies](https://www.carinsurance.com/about-us/editorial-policy/) and [expert editorial team](https://www.carinsurance.com/editorial-experts/).
+![Carinsurance.com](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20161%2020'%3E%3C/svg%3E)
+[ Call (844) 814-8854 ](tel:844-814-8854)
+![max-avatar](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2020%2020'%3E%3C/svg%3E)
+Max Available Now
+![carl-avatar](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2020%2020'%3E%3C/svg%3E)
+Carl Available Now
+![lori-avatar](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2020%2020'%3E%3C/svg%3E)
+Lori Available Now
+![rita-avatar](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2020%2020'%3E%3C/svg%3E)
+Rita Available Now
+For example, luxury brands like Maserati, BMW, Porsche and Audi tend to have [higher insurance costs](https://www.carinsurance.com/most-expensive-cars-to-insure/). On the other hand, more affordable brands like Subaru, Hyundai, Honda and Mazda typically come with the [cheapest insurance cost](https://www.carinsurance.com/cheapest-cars-to-insure.aspx).
+![Insurance rates by car model](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%2090'%3E%3C/svg%3E)
+Confidential All the information you provide for this calculator will be kept confidential. We will not ask you for any information that can be used to contact you unless you request a quote.
+Confidential All the information you provide for this calculator will be kept confidential. We will not ask you for any information that can be used to contact you unless you request a quote.
+![Carinsurance.com](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20161%2020'%3E%3C/svg%3E)
+[Guide: How to estimate car insurance using our car insurance estimator tool](https://www.carinsurance.com/calculators/car-insurance-calculator/ "Guide: How to estimate car insurance using our car insurance estimator tool")
+[Check out our detailed guide on average car insurance rates by age](https://www.carinsurance.com/average-rates-by-age.aspx "Check out our detailed guide on average car insurance rates by age")
+If your driving record includes a DUI, speeding ticket or an at-fault accident, your rates will increase significantly. A [DUI conviction](https://www.carinsurance.com/how-much-does-your-insurance-go-up-after-a-dui/) in Illinois can increase your premiums by up to 74% because insurers see you as a risky driver.
+If you receive a [speeding ticket](https://www.carinsurance.com/how-much-insurance-goes-up-for-speeding-ticket.aspx) in Illinois, be prepared for your car insurance rates to rise by up to 38% when you renew your policy. This increase might last for about three years. However, the exact amount of the increase depends on the specific laws in your state, your insurance provider and your driving record.
+In Illinois, [drivers deemed high-risk](https://www.carinsurance.com/Articles/high-risk-driver-insurance) face higher car insurance premiums due to the increased risk. Factors such as past accidents, traffic infractions and low credit scores significantly affect premium costs.
+State Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington Washington, D.C. West Virginia Wisconsin Wyoming
+Risk Factor 1 At-fault property damage accident over 2K 1 At-fault property damage accident under 2K At-fault bodily injury accident DUI/DWI first offense Speeding 30+ over limit Speeding ticket 1-10 MPH over limit Speeding ticket 11-29 MPH over limit
+---|---
+[Learn more: The 10 most important factors that affect car insurance rates](https://www.carinsurance.com/factors-that-affect-car-insurance-rates/ "Learn more: The 10 most important factors that affect car insurance rates")
+[Indiana(IN)$126/month](https://www.carinsurance.com/state/how-much-is-car-insurance-in-indiana/)
+[Iowa(IA)$136/month](https://www.carinsurance.com/state/how-much-is-car-insurance-in-iowa/)
+[Kentucky(KY)$186/month](https://www.carinsurance.com/state/how-much-is-car-insurance-in-kentucky/)
+[Michigan(MI)$189/month](https://www.carinsurance.com/state/how-much-is-car-insurance-in-michigan/)
+[Missouri(MO)$165/month](https://www.carinsurance.com/state/how-much-is-car-insurance-in-missouri/)
+[Wisconsin(WI)$139/month](https://www.carinsurance.com/state/how-much-is-car-insurance-in-wisconsin/)
+In Illinois, drivers can [save on their premiums by comparing insurance quotes](https://www.carinsurance.com/car-insurance-comparison.aspx) from different carriers. The cost of car insurance can vary based on several factors, including your driving history and the model of your car. Comparing multiple options allows you to find the right policy at an affordable price.
+---|---|---|---
+Automobile Club MI (AAA) | $461  | $450  | $979
+Travelers | $415  | $468  | $1,119
+GEICO | $298  | $372  | $1,178
+Progressive | $536  | $588  | $1,412
+Auto-Owners | $318  | $365  | $1,426
+Erie Insurance | $320  | $360  | $1,489
+Country Financial | $341  | $366  | $1,609
+State Farm | $410  | $482  | $1,633
+Allstate | $640  | $724  | $2,742
+USAA | $482  | $543  | $1,745
+City Arlington Heights Aurora Bloomington Calumet City Chicago Crest Hill Crystal Lake Decatur Des Plaines Elgin Joliet Mount Carmel
+---|---
+---|---
+[CarInsurance.com](https://www.carinsurance.com/) commissioned Quadrant Information Services to get car insurance rates in Illinois. The average premiums are based on the sample profile of a 40-year-old male and female driving a Honda Accord LX with a good insurance score and a clean driving record.
+Get advice from an experienced insurance professional. [Our experts](https://www.carinsurance.com/editorial-experts/) will help you navigate your insurance questions with clarity and confidence.
+[Browse all FAQs](https://www.carinsurance.com/ask-our-experts/#browse-articles)
+Your Question Please enter a valid input Min 50 to max 250 characters are allowed. Only (&?,.) charcters are allowed.
+Thank You, Your message has been received. Our team of auto insurance experts typically answers questions within five working days. Note that due to the volume of questions we receive, not all may be answered. You are a bot!
+↻ Ask another question
+![author-img](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2045%2045'%3E%3C/svg%3E) Shivani Gite Contributing Writer [](https://www.linkedin.com/in/shivani-gite-481714165/)
+[Read full bio ](https://www.carinsurance.com/editorial-experts/shivani-gite/)
+![author-img](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2045%2045'%3E%3C/svg%3E) Laura Longero Editor-in-Chief [](https://www.linkedin.com/in/laura-longero/)
+[Read full bio ](https://www.carinsurance.com/editorial-experts/laura-longero/)
+![author-img](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2045%2045'%3E%3C/svg%3E) Brent Buell Data Journalist [](https://www.linkedin.com/in/brent-buell-4590b9116/)
+[Read full bio ](https://www.carinsurance.com/editorial-experts/brent-buell/)
+![author-img](https://www.carinsurance.com/uploadedfiles/shivani_img.png)
+Written by Shivani Gite
+![author-img](https://www.carinsurance.com/uploadedfiles/laura-longero-1-150x150.jpg)
+Reviewed by Laura Longero
+![author-img](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2040%2040'%3E%3C/svg%3E)
+Reviewed by Laura Longero
+![Why we trust image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2068%2086'%3E%3C/svg%3E)
+Why trust CarInsurance.com? At CarInsurance.com, our mission is simple: to make car insurance easier to understand. With more than 20 years focused exclusively on auto insurance coverage, we provide expert guidance, interactive tools and trustworthy content — all designed to help you make confident, informed choices.
+56M+ Quotes compared
+170+ Insurers analyzed
+20+ Insurance experts
+10+ Tools and calculators
+[](https://www.carinsurance.com/) [Call us at: 1-888-918-0455](tel:1-888-918-0455) Disclaimer: The advertisers appearing on this website are clients from which QuinStreet receives compensation (“Sponsors”). Compensation may impact where the Sponsors appear on this website (including the order in which they appear). Our websites do not, and are not intended to, provide a comprehensive list of all companies that may provide the products and services you are seeking. Advertised example rates are returned based on the driver's self-reported data and the driver meeting certain criteria. Also, safe driver and other discounts may have been applied to achieve the advertised rate, which may not be available to the average consumer. Your actual quoted rate may vary greatly and may be subject to adjustment based on verification of your self-reported data.
+COMPANY
+[About us](https://www.carinsurance.com/about-us/) [Contact us](https://www.carinsurance.com/contact-us/) [Press room](https://www.carinsurance.com/press-room/) [Sitemap](https://www.carinsurance.com/SiteMap.aspx) [Meet our Experts](https://www.carinsurance.com/editorial-experts/) [Hey AI, learn about us](https://www.carinsurance.com/about-us/llm-info/)
+LEGAL
+[Terms of use](https://www.quinstreet.com/terms-of-use/) [Privacy notice](https://www.quinstreet.com/privacy-notice/) Privacy preference [Don't sell or share my info](https://www.quinstreet.com/personal_information)
+Follow us: [Twitter](https://x.com/carinsurance "X") [LinkedIn](https://www.linkedin.com/company/carinsurance.com "LinkedIn") [Facebook](https://www.facebook.com/carinsurance "Facebook") Copyright © 2003-2025 CarInsurance.com. All rights reserved.

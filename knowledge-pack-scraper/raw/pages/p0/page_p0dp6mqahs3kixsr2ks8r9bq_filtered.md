@@ -1,0 +1,23 @@
+This action is not available.
+
+##### Learning Objectives
+
+After reading this chapter, you should understand the following:
+
+* The general powers of the Federal Trade Commission
+* The general principles of law that govern deceptive acts and practices
+* Several categories of deceptive acts and practices, with examples
+* The remedies that the Federal Trade Commission has at its disposal to police unfair trade practices
+
+* [27.1: The Federal Trade Commission- Powers and Law Governing Deceptive Acts](https://biz.libretexts.org/Bookshelves/Civil_Law/Foundations_of_Business_Law_and_the_Legal_Environment/27%3A_Unfair_Trade_Practices_and_the_Federal_Trade_Commission/27.01%3A_The_Federal_Trade_Commission-_Powers_and_Law_Governing_Deceptive_Acts "27.1: The Federal Trade Commission- Powers and Law Governing Deceptive Acts")
+  :   This page discusses the Federal Trade Commission's (FTC) powers in regulating unfair trade practices and deceptive advertising, emphasizing its role in protecting consumers. Established initially to protect competition, the FTC expanded its focus in 1938 to include consumer protection, enabling it to enforce trade regulations, issue cease and desist orders, and impose sanctions without individual lawsuits.
+* [27.2: Deceptive Acts and Practices](https://biz.libretexts.org/Bookshelves/Civil_Law/Foundations_of_Business_Law_and_the_Legal_Environment/27%3A_Unfair_Trade_Practices_and_the_Federal_Trade_Commission/27.02%3A_Deceptive_Acts_and_Practices "27.2: Deceptive Acts and Practices")
+  :   This page outlines the FTC's regulations against deceptive advertising, emphasizing the need for businesses to disclose crucial information and avoid misleading claims. It addresses issues like misleading pricing, bait-and-switch tactics, and the importance of truthfulness in advertising. Additionally, it discusses the evolving legal landscape, including the weakening of product disparagement rules and the need for substantiated claims under the Lanham Act.
+* [27.3: Unfair Trade Practices](https://biz.libretexts.org/Bookshelves/Civil_Law/Foundations_of_Business_Law_and_the_Legal_Environment/27%3A_Unfair_Trade_Practices_and_the_Federal_Trade_Commission/27.03%3A_Unfair_Trade_Practices "27.3: Unfair Trade Practices")
+  :   This page discusses unfair trade practices, distinguishing them from deceptive practices. It covers three categories: lack of substantiation for advertising claims, non-disclosure of key information, and exploitation of consumer vulnerabilities, citing examples like Reader’s Digest sweepstakes and door-to-door sales. The Federal Trade Commission (FTC) regulates these practices to maintain market efficiency and protect consumers through Trade Regulation Rules.
+* [27.4: Remedies](https://biz.libretexts.org/Bookshelves/Civil_Law/Foundations_of_Business_Law_and_the_Legal_Environment/27%3A_Unfair_Trade_Practices_and_the_Federal_Trade_Commission/27.04%3A_Remedies "27.4: Remedies")
+  :   This page discusses the FTC's remedies against unfair trade practices, including cease and desist orders, civil penalties, and corrective advertising. It highlights the requirement for truthful disclosures and the existence of state-level "little FTC acts" that enhance consumer protection, allowing for easier redress and potential treble damages, thus improving the enforcement of consumer rights compared to federal law.
+* [27.5: Cases](https://biz.libretexts.org/Bookshelves/Civil_Law/Foundations_of_Business_Law_and_the_Legal_Environment/27%3A_Unfair_Trade_Practices_and_the_Federal_Trade_Commission/27.05%3A_Cases "27.5: Cases")
+  :   This page discusses two court cases highlighting the importance of truthful advertising. In J. B. Williams Co. v. FTC, Geritol's misleading claims about relieving tiredness linked to iron deficiency anemia were challenged, leading to mandated disclosures. Similarly, P. Lorillard Co. v. FTC addressed deceptive advertising of Old Gold cigarettes, which misrepresented health benefits based on selective reporting.
+* [27.6: Summary and Exercises](https://biz.libretexts.org/Bookshelves/Civil_Law/Foundations_of_Business_Law_and_the_Legal_Environment/27%3A_Unfair_Trade_Practices_and_the_Federal_Trade_Commission/27.06%3A_Summary_and_Exercises "27.6: Summary and Exercises")
+  :   This page discusses Section 5 of the FTC Act, which allows the FTC to prohibit unfair competitive practices and deceptive advertising without needing proof of actual deception. It highlights common violations, such as false product descriptions, and the available remedies, including cease and desist orders, monetary fines, and corrective advertising. Hypothetical cases are also presented to illustrate possible FTC violations and the corresponding remedies.

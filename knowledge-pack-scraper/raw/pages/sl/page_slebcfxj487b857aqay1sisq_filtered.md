@@ -1,0 +1,444 @@
+[In The News](https://consumerwatchdog.org/issues/in-the-news/)[Insurance](https://consumerwatchdog.org/issues/in-the-news/insurance-in-the-news-in-the-news/)[News Story](https://consumerwatchdog.org/issues/in-the-news/insurance-in-the-news-in-the-news/news-story-insurance-in-the-news-in-the-news/)
+
+# Background on Insurance Reform – A Detailed Analysis of California Proposition 103
+
+Published on
+
+June 1, 2000
+
+By [Consumer Watchdog](https://consumerwatchdog.org/author/cwdadmin/)
+
+![](https://consumerwatchdog.org/wp-content/uploads/2023/03/Harvey-Prop-103-696x553.webp "Harvey Prop 103")
+
+### Excerpted from “Auto Insurance Crisis & Reform”, by Harvey Rosenfield, published Fall 1998 in University of Memphis Law Review
+
+With the largest concentration of motorists of any state in the nation,1 California has proven to be a fertile ground for insurance reform efforts. Prior to 1988, California was one of the few states in the nation that did not require insurance companies to obtain regulatory approval of rate changes. 2 Moreover, California law shielded the industry from both competition3 and regulation. 4 Thus, neither the free market nor government supervision was permitted to moderate the impact on the economy of the insurance cycle.
+
+The 1988 ballot initiative, [Proposition 103](/search/?searchQuery=%22Proposition+103%22), sought to impose regulation and create a more competitive and fair marketplace for insurance in California. 5 The following components comprise the [Proposition 103](/search/?searchQuery=%22Proposition+103%22) model of insurance industry reform.
+
+**A. Short Term Relief: The Insurance Rate Freeze and Rollback**
+
+In order to protect consumers during the transition to the new system established by the Proposition, and to offset the rate increases during the year prior to the election, the initiative froze automobile and other property-casualty insurance rates and premiums at 80% of the November 8, 1987, levels for one year. 6 The 20% rollback avoided “locking in” the excessive rates of the preceding years, during which time insurance rates rose well in excess of the inflation rate. 7 During the period of the rate freeze and rollback, November 8, 1988, through November 8, 1989, insurers were prohibited from raising rates or premiums. However, the initiative was drafted to allow an insurer to obtain increases from the [Insurance Commissioner](/search/?searchQuery=%22Insurance+Commissioner%22) if the freeze or the rate rollback “substantially threatened” the company’s solvency. 7
+
+The rollback provision of [Proposition 103](/search/?searchQuery=%22Proposition+103%22) became the focal point of the insurance industry’s legal challenge to the initiative filed two days after the election. 9 In May, 1989, the California Supreme Court unanimously upheld the rollback but ruled that the “substantially threatened with insolvency” standard could be interpreted by the [Insurance Commissioner](/search/?searchQuery=%22Insurance+Commissioner%22) in a manner that would deny insurers their constitutional right to obtain an adequate return on their property. 10 The court substituted a “fair rate of return” constitutional standard, leaving it to the Commissioner to determine on a company-by-company basis, through the individual rollback exemption hearings contemplated by section 1861.01(b) of the California Insurance Code, whether the rate rollback would deprive an insurer of a fair rate of return. Virtually all of the insurance companies operating in California filed requests for a rollback exemption hearing, claiming that they would be deprived of a fair rate of return if forced to comply. 11
+
+The fair return standard is well established in constitutional jurisprudence, as is the corollary principle that not every enterprise is entitled to earn a rate of return–only those which operate reasonably and efficiently. 12 It was not until the California’s first elected [Insurance Commissioner](/search/?searchQuery=%22Insurance+Commissioner%22) took office in 1990 that normative standards for analyzing insurer profitability and efficiency were promulgated as regulations. These regulations contained a “rollback” formula, the application of which determines whether an insurer should be ordered to issue premium rebates with interest. 13 Specifically, the rollback formula:
+
+* caps the rate of return;
+* establishes ceilings for executive salaries and sets an overall limit on expenses equal to the industry average, rewarding insurers who operate more efficiently with a higher rate of return. Expenses in excess of the limit cannot be included in the rate base;
+* prohibits insurers from engaging in bookkeeping practices that inflate their claims losses and limits the amount insurers can set aside as surplus and reserves; and
+* forbids insurers from passing through to consumers the costs of the industry’s lobbying, political contributions, institutional advertising, the unsuccessful defense of discrimination cases, bad faith damage awards, and fines or penalties.
+
+Insurers challenged the formula as confiscatory. In August, 1994, however, the California Supreme Court unanimously upheld the regulations as constitutional. 14
+
+Between 1989 and 1997, insurance companies operating in California issued over $1.18 billion in premium refunds to more than seven million policyholders. 15 Among those companies that complied with the rollback were nine of the ten largest auto insurance companies operating in California. They represented 61.4% of the marketplace. 16
+
+**B. Regulation**
+
+[Proposition 103](/search/?searchQuery=%22Proposition+103%22) changed California’s insurance laws from a so- called “open competition” to a “[prior approval](/search/?searchQuery=%22prior+approval%22)” regulatory system. 17 Insurance companies are required to submit an application for desired rate changes to the [Department of Insurance](/search/?searchQuery=%22Department+of+Insurance%22). To justify the request, the application must comply with disclosure requirements and financial standards promulgated by regulations. 18 Properly administered, the [prior approval](/search/?searchQuery=%22prior+approval%22) system disengages the insurers’ traditional “cost-plus” approach, ending their ability to unilaterally pass through to policyholders all claims costs, accompanied by overhead and profits. 19 It substitutes a rate structure that encourages both insurers and consumers to engage in loss prevention. 20 Insurers are rewarded for research and innovative programs that lead to reduced losses and claims. 21 Consumers, in turn, are rewarded with lower premiums for their individual loss prevention efforts, such as installation of anti-theft or anti-fraud devices and maintenance of a safe driving record.
+
+Between 1989 and 1994, most insurance rates in California remained frozen pending conclusion of the legal challenges and final compliance by insurance companies with the rollback requirement. However, a new [Insurance Commissioner](/search/?searchQuery=%22Insurance+Commissioner%22), Republican Chuck [Quackenbush](/search/?searchQuery=Quackenbush), took office in January, 1995. Mr. [Quackenbush](/search/?searchQuery=Quackenbush), an avowed opponent of [Proposition 103](/search/?searchQuery=%22Proposition+103%22), 22 lifted the rate freeze and has since stirred controversy by refusing to implement or enforce many of 103’s statutory requirements, including the “[prior approval](/search/?searchQuery=%22prior+approval%22)” process, despite excessive premium levels in the state. 23
+
+**C. Competition**
+
+At its best, the insurance marketplace operates imperfectly. There can never be a truly “free,” i.e., perfectly competitive, market for auto insurance because (1) consumers are compelled by law to purchase insurance; (2) there are many variations on the product, making comparison shopping difficult; and (3) the underwriting process is often subjective and by definition excludes certain willing purchasers. Regulation and competition, however, are not mutually exclusive. To encourage a more functional marketplace, [Proposition 103](/search/?searchQuery=%22Proposition+103%22) repealed a variety of statutory barriers to competition common in other jurisdictions.
+
+1. Antitrust Exemption
+
+The insurance industry won an exemption from California’s antitrust laws in 1947; 24 similar exemptions remain on the books of virtually every other state and in federal law as well. 25 As a result, insurer-controlled “rating bureaus” freely distributed proposed pricing data, including projected losses, expenses, profits, and overhead charges, to all insurers who wished to obtain the information, allowing tacit price collusion. [Proposition 103](/search/?searchQuery=%22Proposition+103%22) repealed the insurance industry’s exemption from the antitrust laws and prohibited the operation of “rating” and “advisory” organizations set up by the industry to circulate pricing and policy information to insurance companies. 26
+
+2. Commission Discounting
+
+Commissions and related selling expenditures amount to between 15% and 30% of each year’s premiums, according to a federal study. 27 Under California’s so-called “anti-rebate law,” similar to statutes in effect in most other states, insurance agents and brokers were prohibited by law from reducing their own commissions in order to offer consumers a lower price. 28 The anti-rebate law rewarded the inefficiency of some agents because it shielded them from competition by agents who were willing to work harder to satisfy their customers. A study by the United States Department of Justice estimated savings of 6% to 7% annually for insurance consumers merely by eliminating anti-rebate laws. 29 [Proposition 103](/search/?searchQuery=%22Proposition+103%22) repealed the state anti-rebate law. To date, however, few California agents have reduced their commissions, largely because insurance companies and trade associations representing agents have actively discouraged such competition. 30
+
+3. Bank Sales of Insurance
+
+[Proposition 103](/search/?searchQuery=%22Proposition+103%22) repealed the statutory prohibition on the sale of insurance by financial institutions. 31 By 1992, an estimated 133 banks had obtained permission to enter the insurance business, including several of the state’s largest banks. 32 Suits by insurance agents to block this provision of [Proposition 103](/search/?searchQuery=%22Proposition+103%22) were unsuccessful. 33
+
+4. Expanded Group Insurance
+
+[Proposition 103](/search/?searchQuery=%22Proposition+103%22) empowered consumers to more easily negotiate group insurance purchases. 34 As a result, consumers are empowered to join together to negotiate the kind of policies and coverage they want, using their bargaining power in the insurance marketplace just as large corporations do when purchasing commercial insurance policies.
+
+5. Consumer Comparison Shopping Service
+
+It is a basic tenet of economics that consumers must be well informed if the marketplace is to operate correctly. A 1987 study documented the often insurmountable obstacles consumers confront when shopping for insurance. 35 [Proposition 103](/search/?searchQuery=%22Proposition+103%22) requires the California Commissioner to provide consumers with a current rate comparison survey for automobile, homeowner, and other lines of insurance. 36 Consumers are to be charged a modest fee to cover the costs of this system. The California [Department of Insurance](/search/?searchQuery=%22Department+of+Insurance%22) has not yet implemented this provision of 103. 37
+
+**D. Fairness**
+
+Insurance is, by definition, a discriminatory enterprise. In order to allocate risk, insurance companies group individual consumers into a larger pool composed of similar risks. To a degree often poorly understood by the insurers themselves, the business of insurance depends on the consumer’s trust in the fairness of the industry’s classification system.
+
+1. Emphasis on Driving Safety Record
+
+[Proposition 103](/search/?searchQuery=%22Proposition+103%22) prohibits the use of “territorial rating,” under which insurance companies determine an individual’s automobile insurance premium by calculating claims payments made within the motorist’s zip code. Instead, auto insurance premiums must be based primarily upon three rating factors in decreasing order of importance: a motorist’s driving safety record, the number of miles he or she drives each year, and the motorist’s years of driving experience. 38 Making the driver’s own safety record the principal determinant of premiums gives motorists a strong incentive to drive safely.
+
+The measure further requires insurers to grant a 20% good-driver discount to all qualifying consumers: individuals with a virtually clean driving record (one moving violation is permitted) for the preceding three years. 39 This provides a further incentive for careful driving.
+
+A 1986 study prepared for the California Assembly by the National Insurance Consumers Organization (NICO) illustrates the discriminatory impact of the much criticized zip code-based system of territorial rating.40 Of the 4.9 million cars insured in California between 1982 and 1984, 95.4% had no claims. 41 In central Los Angeles, 93.5% of the cars avoided claims. The modest difference in the number of claims is to be expected, given population density and reliance on automobiles in Los Angeles. Nevertheless, *accident- free* Los Angeles drivers paid on the average 66% more for property damage liability insurance than did the average accident-free driver outside Los Angeles. 42
+
+Judicial review of a legal challenge brought by insurers against implementation of this provision of the proposition blocked its implementation for more than three years. Insurers contended that rates must be “cost-based” under 103 and that the voters could not lawfully alter insurance classifications to substitute the “mandatory” factors for other factors that the industry argued could be shown to hold more predictive power (i.e., territory). On November 27, 1990, a California Court of Appeal dismissed the challenge without deciding the merits. 43 In December, 1994, the [Department of Insurance](/search/?searchQuery=%22Department+of+Insurance%22) published a study that rebutted the industry’s subsequent contention that territorial rating was consistent with the provisions of [Proposition 103](/search/?searchQuery=%22Proposition+103%22). 44
+
+In 1997, the California [Department of Insurance](/search/?searchQuery=%22Department+of+Insurance%22) promulgated new regulations to implement this provision of the initiative. 45 An independent review of the rating plans filed by three major insurance companies, however, determined that they were not in compliance with the requirements of the law. 46 Two lawsuits were subsequently filed to compel the [Insurance Commissioner](/search/?searchQuery=%22Insurance+Commissioner%22) to properly enforce the statute. 47
+
+2. Redlining
+
+The failure of insurers to service particular communities, principally in urban areas, has been amply documented. 48 [Proposition 103](/search/?searchQuery=%22Proposition+103%22)‘s emphasis on driving record and individual driving habits, discussed supra, establishes a more equitable system for determining premiums that requires insurers to diminish the importance of geography. Mandating the use of new rating factors, however, does not address the practical reality that the availability of insurance agents and brokers is extremely circumscribed in some communities. 49 To ensure that qualified drivers can obtain insurance regardless of where they live, the measure specifies that any good driver, as defined in the initiative, has the right to purchase an auto insurance policy from the insurer of his or her choice. 50 The absence of prior insurance coverage cannot disqualify an otherwise good driver. 51 This provision of [Proposition 103](/search/?searchQuery=%22Proposition+103%22) is in effect; however, many insurers have reportedly refused to comply with the provision, according to statements by insurance agents and consumers. 52
+
+3. Arbitrary Cancellations and Non-Renewals
+
+A frequent complaint among automobile insurance policyholders is that insurance companies may cancel or fail to renew policies without justification, sometimes merely for the act of filing a claim. [Proposition 103](/search/?searchQuery=%22Proposition+103%22) prohibits such arbitrary actions unless based on one of three specific reasons: non-payment of premium, fraud, or the policyholder presents a substantial increase in the hazard insured against. 53 Regulations defining the “substantial hazard” exception have yet to be promulgated.
+
+**E. Public Accountability**
+
+“Capture” of the regulators by the regulated industry is common in state-based insurance systems, 54 and highly corrupting of public faith. The public accountability of those administering insurance industry reform is critical to its success. [Proposition 103](/search/?searchQuery=%22Proposition+103%22) contained three mechanisms to ensure such accountability.
+
+1. Consumer Intervention
+
+It is a basic tenet of democratic government that each party to a proceeding has the right to be fully represented. The adversarial process enhances openness, constructive change, and consumer acceptance. [Proposition 103](/search/?searchQuery=%22Proposition+103%22) provides several avenues for consumer representation in insurance matters. First, it authorizes individual consumers to go before the [Department of Insurance](/search/?searchQuery=%22Department+of+Insurance%22) or the courts if insurance companies fail to comply with their responsibilities under the proposition. If the [Department of Insurance](/search/?searchQuery=%22Department+of+Insurance%22) fails to enforce the law or respond effectively to consumers’ complaints, consumers will not be “locked out” of the courts with no remedy, 55 as often occurs in states with lax regulators.
+
+Second, [Proposition 103](/search/?searchQuery=%22Proposition+103%22) encourages non-profit consumer advocacy groups to intervene in the regulatory process to protect the interests of the public. Citizens groups that make a “substantial contribution” to a rate hearing or other matter before the [Department of Insurance](/search/?searchQuery=%22Department+of+Insurance%22), or to an insurance matter that goes before a court, are entitled to receive reasonable attorney’s fees and reimbursement of expenses for such costs as expert witnesses. 56 Assessments collected from insurers are used to fund this program. 57 Funded citizen intervention programs protect against unnecessary or duplicative proceedings, while providing consumers with the professional, skilled representation that insurance companies are able to obtain at policyholder expense. 58
+
+Insurers typically oppose the institution of mechanisms to enhance consumer participation in regulatory proceedings as prone to result in uncontrolled, ceaseless regulatory conflict. That view is false because even the best-funded citizens’ groups rarely are able to contest any but the most important cases. 59 In California, there are approximately four organizations that routinely intervene in insurance proceedings. 60
+
+2. Elected [Insurance Commissioner](/search/?searchQuery=%22Insurance+Commissioner%22)
+
+In the majority of states, the [Insurance Commissioner](/search/?searchQuery=%22Insurance+Commissioner%22) is a political appointee with no direct accountability to the public. Often, the appointee is a former insurance industry executive, and the appointment a form of political patronage. It is no surprise then that state regulatory insurance agencies have frequently been criticized for poor enforcement and a pro-industry bias. 61 In California, for example, independent reports repeatedly criticized the appointed [Insurance Commissioner](/search/?searchQuery=%22Insurance+Commissioner%22) for inaction during the 1985-87 insurance crisis, for failure to respond to consumer complaints, and for incompetent enforcement of the Insurance Code. 62
+
+[Proposition 103](/search/?searchQuery=%22Proposition+103%22) required that the [Insurance Commissioner](/search/?searchQuery=%22Insurance+Commissioner%22) be elected, commencing in November, 1990. 63 Currently, twelve states elect their Insurance Commissioners. 64 The theoretical advantages of an elected Commissioner are consequential, particularly to the implementation of insurance industry reforms. An elected Commissioner is accountable to the public, rather than to other elected officials, whose own accountability to the public on specific issues may be less direct. Since only the voters may pass judgment on the Commissioner’s performance, the Commissioner has the independence–and incentive–necessary to act in the public interest. Because voters will evaluate the [Insurance Commissioner](/search/?searchQuery=%22Insurance+Commissioner%22) by the fairness of the rates and practices of insurers, a Commissioner who fails to satisfy the public should find it difficult to win re-election.
+
+As a practical matter, however, the ability of insurance companies–a powerful constituency within the political economy–to elect sympathetic candidates has been demonstrated in several instances, 65 including the second election of the [Insurance Commissioner](/search/?searchQuery=%22Insurance+Commissioner%22) in California in 1994. 66
+
+Critics argue that election of the Commissioner “politicizes” the office and may attract officials who view the position as a “stepping-stone” to higher office. That is certainly correct, to the same extent that every other office filled by popular vote is subject to the same politicization. And while a Commissioner’s desire to be re-elected or to proceed to higher office would seem to work to the advantage of voters in their role as policyholders, to the degree that insurance companies are more concerned about electing a supportive candidate than is the general public, the insurance companies will be the more likely to successfully dominate the electoral process.
+
+3. Statutory Remedies
+
+Prior to [Proposition 103](/search/?searchQuery=%22Proposition+103%22), California’s consumer protection, civil rights, and other statutes were inapplicable to the insurance industry by express statutory exemption. 67 The initiative repealed the exemption, making available to the consumers a host of state law remedies for improper conduct. 68
+
+—————–  
+  
+NOTES
+
+1. See U.S. BUREAU OF THE CENSUS, U.S. DEP’T OF COMMERCE, TABLE NO. 1001, STATISTICAL ABSTRACT OF THE UNITED STATES 606 (1992).  
+  
+2. Michigan, Illinois, and Ohio, like California, were so-called “open competition” states. JEFFREY A. EISENACH, FEDERAL TRADE COMM’N, THE ROLE OF COLLECTIVE PRICING IN AUTO INSURANCE (1985).  
+  
+3. 78. See, e.g., CAL. INS. CODE Ã‚Â§ 1643 (West 1947) (prohibiting sale of insurance by banks), repealed by [Proposition 103](/search/?searchQuery=%22Proposition+103%22), Ã‚Â§ 7 (West 1988).  
+  
+4. See McBride-Grunsky Insurance Regulatory Act, CAL. INS. CODE Ã‚Â§Ã‚Â§ 1850–1860.3 (West 1947), provisions repealed by [Proposition 103](/search/?searchQuery=%22Proposition+103%22), Ã‚Â§ 7 (West 1988).  
+  
+5. A complete copy of the text of [Proposition 103](/search/?searchQuery=%22Proposition+103%22) as enacted by California voters on November 8, 1988, appears in the Appendix at the end of this article.  
+  
+6. See CAL. INS. CODE Ã‚Â§ 1861.01 (West 1998).  
+  
+7. Supra note 33.  
+  
+8. CAL. INS. CODE Ã‚Â§ 1861.01(b) (West 1998).  
+  
+9. On November 10, 1988, the California Supreme Court granted the requests of numerous insurance companies and trade associations to stay the initiative in its entirety. See Calfarm Ins. Co. v. Deukmejian, 771 P.2d 1247, 1250 (Cal. 1989). On December 7, 1988, the court vacated the stay except as to the provisions (1) requiring a rate reduction to 20% below 1987 rates and (2) requiring insurers to enclose in their bills an insert notifying insureds of the opportunity to join a nonprofit corporation to advocate their interests pursuant to section 1861.10(c) of the California Insurance Code. See id. For a discussion of section 1861.10(c) of the California Insurance Code, see infra note 130 accompanying text.  
+  
+10. See Calfarm, 771 P.2d. at 1251-52. “The risk that the rate set by the statute is confiscatory as to some insurers from its inception is high enough to require an adequate method for obtaining individualized relief.” Id. at 1255.  
+  
+11. See Kenneth Reich, 443 Insurers Seek Rollback Exemptions, L.A. TIMES, June 27, 1989, Ã‚Â§ I, at 3.  
+  
+12. See, e.g., [Aetna](/search/?searchQuery=Aetna) Ins. Co. v. Hyde 275 U.S. 440, 446-47 (1928); Troy Hills Village v. Township Council, 68 N.J. 604, 627 (1975).  
+  
+13. FINDINGS AND DETERMINATIONS OF THE INS. COMM’R, STATE OF CAL., FILE NO. RCD-1, IN THE MATTER OF DETERMINATION OF EXPOSURE BASIS, RESERVE- STRENGTHENING, EXECUTIVE COMPENSATION, AND EFFICIENCY STANDARDS FOR 1989 RATE CALCULATIONS (Aug. 14, 1991); see also FINDINGS AND DETERMINATIONS OF THE INS. COMM’R, STATE OF CAL., FILE NO. RCD-2, IN THE MATTER OF DETERMINATION OF RATE OF RETURN, LEVERAGE FACTOR, AND PROJECTED YIELD FOR 1989 RATE CALCULATIONS (Aug. 14, 1991).  
+  
+14. See Twentieth Century Ins. Co. v. Garamendi, 878 P.2d (Cal. 1994) cert. denied sub nom. Century-National Ins. Co. v. [Quackenbush](/search/?searchQuery=Quackenbush), 513 U.S. 1153 (1995) and [State Farm](/search/?searchQuery=%22State+Farm%22) Mut. Auto. Ins. Co. v. [Quackenbush](/search/?searchQuery=Quackenbush), 513 U.S. 1153 (1995).  
+  
+15. See California Dep’t of Ins., Garamendi Orders 28 Insurance Companies to Pay $1.2 Billion in [Proposition 103](/search/?searchQuery=%22Proposition+103%22) Rollbacks (Nov. 22, 1994) (news release) (on file with author); CALIFORNIA DEP’T OF INS., RATE SPECIALIST BUREAU, PROPOSITION 103 ROLLBACK SETTLEMENT STATUS REPORT (1996); CALIFORNIA DEP’T OF INS., STIPULATION AND CONSENT ORDERS OF DECEMBER 23, 1994.  
+  
+16. The companies, in order of their 1996 market share, are: [Farmers](/search/?searchQuery=Farmers) Insurance, California State Automobile Association, [Allstate](/search/?searchQuery=Allstate) Insurance Group, [Auto Club](/search/?searchQuery=%22Auto+Club%22) of Southern California, Twentieth Century Insurance Company, [Mercury](/search/?searchQuery=Mercury) General Group, United States Automobile Association, [Safeco](/search/?searchQuery=Safeco) Insurance Companies, and California Casualty. See In re Rate Rollback Liability of [State Farm](/search/?searchQuery=%22State+Farm%22) Group, File No. REB-5184 (Dep’t Ins. Admin. Law Bureau 1995) (proposed decision) (on file with author). The state’s largest insurer, [State Farm](/search/?searchQuery=%22State+Farm%22), challenged its rollback obligation. An administrative law judge ruled that [State Farm](/search/?searchQuery=%22State+Farm%22) owed no rollback refund, largely on the grounds that its expense data was justified and reasonable. See id. The [Insurance Commissioner](/search/?searchQuery=%22Insurance+Commissioner%22) rejected the proposed decision. See Decision and Order of the Commissioner (Apr. 5, 1996) (on file with author). [State Farm](/search/?searchQuery=%22State+Farm%22) appealed the Commissioner’s decision to the superior court, which reversed. See [State Farm](/search/?searchQuery=%22State+Farm%22) Ins. Group v. [Quackenbush](/search/?searchQuery=Quackenbush), No. 977832 (S.F. Super. Ct. 1997). The Commissioner is now appealing the Superior Court’s decision.  
+  
+17. A 1986 study by the U.S. General Accounting Office concluded that insurance rates were higher in states without such [prior approval](/search/?searchQuery=%22prior+approval%22) systems. See U.S. GEN. ACCOUNTING OFFICE, supra note 5.  
+  
+18. See CAL. INS. CODE Ã‚Â§ 1861.05 (West 1998).  
+  
+19. Id.  
+  
+20. Under an effective regulatory regime, efficiency is rewarded with higher profits; inefficiency is rewarded with a lower rate of return. The normative standards by which insurer profits, expenses, surplus, reserves, accounting practices, and other behavior are to be measured are based upon the regulations developed for the rollback exemption hearings.  
+  
+21. For a discussion of the loss prevention responsibilities of insurance companies, see Ralph Nader, Loss Prevention and the Insurance Function, 21 SUFFOLK U. L. REV. 679 (1987).  
+  
+22. [Quackenbush](/search/?searchQuery=Quackenbush), then a member of the California Assembly, urged voters to defeat [Proposition 103](/search/?searchQuery=%22Proposition+103%22) in a campaign mailer attributed to “Republican Leadership for Insurance Reform,” but mailed to voters by Californians Against Unfair Rate Increases, a group sponsored by independent agents and insurers. See Letter from Republican Leadership for Insurance Reform to Republican Voters (Oct. 7, 1988) (on file with author).  
+  
+23. The record profit levels in California are well documented. In 1996, the average return on net worth for insurance companies selling private passenger auto insurance was 60% higher in California than in the United States as a whole. See NATIONAL ASS’N OF INS. COMM’RS, REPORT ON PROFITABILITY BY LINE BY STATE 36, 41 (1996). Consumer advocates have asked California Commissioner [Quackenbush](/search/?searchQuery=Quackenbush) to exercise his authority under section 1861.05(a) of the California Insurance Code to order appropriate rate reductions. See CONSUMERS UNION, PETITION FOR INVESTIGATION TO DETERMINE WHICH PRIVATE PASSENGER AUTO INSURANCE RATES IN CALIFORNIA ARE EXCESSIVE AND TO REDUCE RATES PURSUANT TO CCR SECTION 2644.1 (1996). However, the [Insurance Commissioner](/search/?searchQuery=%22Insurance+Commissioner%22) rejected this and similar requests by consumer organizations to take such enforcement action or even to promulgate the regulations needed to do so. See CONSUMERS UNION, PETITION FOR RULEMAKING ADOPTING GENERIC DETERMINATIONS TO APPLY TO RATE APPLICATIONS PURSUANT TO CCR SECTION 2646.3 AND ADMINISTRATIVE PROCEDURES [ACT](/search/?searchQuery=ACT) SECTION 11340.6 (1996); CALIFORNIA DEP’T OF INS., ANALYSIS OF CONSUMERS UNION EXCESS PROFITS PETITION PRIVATE PASSENGER AUTOMOBILE INSURANCE (1996) (denying petition). A group of California policyholders has sued the largest insurance companies in the state demanding return of an estimated $1.6 billion in excessive premiums charged in violation of [Proposition 103](/search/?searchQuery=%22Proposition+103%22). See Walker v. [State Farm](/search/?searchQuery=%22State+Farm%22) Ins. Group, No. 991395 (S.F. Super. Ct. 1997).  
+  
+24. See McBride-Grunsky Insurance Regulatory Act, CAL. INS. CODE Ã‚Â§Ã‚Â§ 1850–1860.3 (West 1947), provisions repealed by [Proposition 103](/search/?searchQuery=%22Proposition+103%22), Ã‚Â§ 7 (West 1988).  
+  
+25. See McCarran-Ferguson Act, 15 U.S.C. Ã‚Â§Ã‚Â§ 1101–1015 (1994).  
+  
+26. CAL. INS. CODE Ã‚Â§ 1861.03 (West 1993). [Proposition 103](/search/?searchQuery=%22Proposition+103%22), however, permits insurers to exchange certain historical data, as opposed to projections, about claims. This enables insurers–particularly new or small carriers–to obtain information that will assist them in developing their own projections and prices. All such information must also be provided to the [Insurance Commissioner](/search/?searchQuery=%22Insurance+Commissioner%22) and to the public. See CAL. INS. CODE Ã‚Â§ 1861.03(b) (West 1993). The initiative further permits insurers to continue to participate in special joint pooling arrangements to make insurance more available to certain kinds of customers, such as daycare centers and automobile drivers, as long as they are established by the [Insurance Commissioner](/search/?searchQuery=%22Insurance+Commissioner%22) or by law. See id. A series of legislative modifications, at the behest of insurers, concluded in 1996 with an enactment that purported to permit insurance advisory organizations to resume distribution among insurers of data on projected losses for price-setting purposes. See id. Ã‚Â§ 1855.5. Under [Proposition 103](/search/?searchQuery=%22Proposition+103%22) section 8(b), such amendments are prohibited. See Amwest Surety Ins. Co. v. Wilson, 906 P.2d 1112 (Cal. 1995). No challenge to the amendment has yet been filed.  
+  
+27. See BUREAU OF CONSUMER PROTECTION & BUREAU OF ECONS., FEDERAL TRADE COMM’N, LIFE INSURANCE COST DISCLOSURE 86-87 (1979).  
+  
+28. See CAL. INS. CODE Ã‚Â§ 750.1 (West 1993), repealed by [Proposition 103](/search/?searchQuery=%22Proposition+103%22), Ã‚Â§ 7 (West 1998).  
+  
+29. U.S. DEP’T OF JUSTICE, THE PRICING AND MARKETING OF INSURANCE: A REPORT OF THE U.S. DEPARTMENT OF JUSTICE TO THE TASK GROUP ON ANTITRUST IMMUNITIES 302 (1977).  
+  
+30. In 1994, an administrative law judge ruled that it did not violate the antitrust laws for an insurance company to terminate an insurance broker who engaged in such competition, so long as the company’s action was not the product of pressure from other brokers. See In re Prudential Ins. Co., OAH Nos. L-60175, L-60174, L-60173, L-60172, L- 60171, Case Nos. UPA 0053-AP, UPA 0054-AP, UPA 0055-AP, UPA 0056-AP, UPA 0057-AP (Cal. Dep’t of Ins. 1993).  
+  
+31. See CAL. INS. CODE Ã‚Â§ 1643 (West 1993), repealed by [Proposition 103](/search/?searchQuery=%22Proposition+103%22), Ã‚Â§ 7 (West 1998). California’s antitrust and consumer protection laws, applicable to the business of insurance pursuant to section 1861.03 of the California Insurance Code, ensure that financial institutions do not attempt to coercively tie the sale of insurance to other financial products or services they provide–a frequent argument against permitting competition from banks.  
+  
+32. See NATIONAL INS. CONSUMER ORG., supra note 33, at Part ii.  
+  
+33. See, e.g., Sanford v. Garamendi, 233 Cal. App. 3d 1109 (1991).  
+  
+34. See CAL. INS. CODE Ã‚Â§ 1861.12 (West 1988).  
+  
+35. See CALIFORNIA PUB. INTEREST RESEARCH GROUP, PICK A PRICE, ANY PRICE, A REPORT ON INCONSISTENT PRICE QUOTING OF AUTOMOBILE INSURANCE (1987).  
+  
+36. See CAL. INS. CODE Ã‚Â§ 1861.04(a) (West 1988).  
+  
+37. Several private firms have entered the California marketplace to provide similar information, though with limited scope and at a significant cost. See Consumer Access to Multiple Competitive Rates Grows Through Insweb Deal With Consumers Car Club, AUTO INS. REP., Dec. 1, 1997, at 8; Progressive Offers California Auto Rate Comparisons, UNDERWRITERS’ REP., Nov. 27, 1997, at 12.  
+  
+38. See CAL. INS. CODE Ã‚Â§ 1861.02(a) (West 1988). The Commissioner can approve additional rating factors but only pursuant to a formal rulemaking process and only if they “have a substantial relationship to the risk of loss.” Id. Ã‚Â§1861.02(a)(4); see Consumers Union v. [Quackenbush](/search/?searchQuery=Quackenbush) (Southern Cal. [Auto Club](/search/?searchQuery=%22Auto+Club%22)), No. 982191 (S.F. Super. Ct. 1997); [Proposition 103](/search/?searchQuery=%22Proposition+103%22) Enforcement Project v. [Quackenbush](/search/?searchQuery=Quackenbush) ([Safeco](/search/?searchQuery=Safeco) Insurance Co.), No. 982646 (S.F. Super. Ct. 1997).
+
+[![Consumer Watchdog](https://consumerwatchdog.org/wp-content/uploads/2022/12/cropped-ConsumerWatchdog_Logo_Small_FavIcon-1.gif)](https://consumerwatchdog.org/author/cwdadmin/ "Consumer Watchdog")
+
+[Consumer Watchdog](https://consumerwatchdog.org/author/cwdadmin/)<https://consumerwatchdog.org>
+
+Providing an effective voice for American consumers in an era when special interests dominate public discourse, government and politics. Non-partisan.
+
+[submit a consumer complaint](/submit-complaint/ "submit a consumer complaint")
+
+Latest Insurance Videos
+
+KCAL Mornings: CA Homeowners Face Surcharges To Help Recoup Costs From January Wildfires
+
+00:38
+
+![Video thumbnail](https://img.youtube.com/vi/Ork8jxMOQ20/default.jpg)
+
+KCAL Mornings: CA Homeowners Face Surcharges To Help Recoup Costs From January Wildfires
+
+00:38![Video thumbnail](https://img.youtube.com/vi/MFmFCvt-7sc/default.jpg)
+
+CBS News Bay Area: CA Fair Plan Proposes Rate Hike For Home Insurance Coverage
+
+03:53![Video thumbnail](https://img.youtube.com/vi/R1UzvxcVQFk/default.jpg)
+
+KTVU Mornings: CA Fair Plan Proposes 35.8% Insurance Rate Hike
+
+04:44![Video thumbnail](https://img.youtube.com/vi/W8NimebPR0A/default.jpg)
+
+KCAL Mornings: Proposed Insurance Rules Under Criticism
+
+05:33![Video thumbnail](https://img.youtube.com/vi/P_Xt3r59du0/default.jpg)
+
+ABC7 News: AI Energy Toll Could Be Passed Onto Consumers
+
+02:08![Video thumbnail](https://img.youtube.com/vi/5Ee3HXUNS4M/default.jpg)
+
+CBS 8: Are Insurance Rates Really Better?
+
+02:51![Video thumbnail](https://img.youtube.com/vi/ZcXwIDDGr-Y/default.jpg)
+
+KMPH-FRES (FOX): Major Insurance Companies Returning
+
+01:32![Video thumbnail](https://img.youtube.com/vi/2ic0eNOtAP4/default.jpg)
+
+KMPH-FRES (FOX): Ballot Measure Takes Aim At Insurers
+
+00:38![Video thumbnail](https://img.youtube.com/vi/_YLV5vdPkNc/default.jpg)
+
+CBS 13 News: Home Insurance Ballot Initiative
+
+00:24![Video thumbnail](https://img.youtube.com/vi/aGG914REmdA/default.jpg)
+
+KFMB SD CBS San Diego, CA: Rate Hikes Filed Under Insurance Reform Plan
+
+02:26![Video thumbnail](https://img.youtube.com/vi/HLMO6WK-u0w/default.jpg)
+
+KFMB SD CBS San Diego, CA: Rate Hikes Filed Under Insurance Reform Plan
+
+02:26![Video thumbnail](https://img.youtube.com/vi/SOSBLsirYjQ/default.jpg)
+
+KOVR-SAC (CBS) - Sacramento, CA: Proposing An Insurance Change
+
+02:28![Video thumbnail](https://img.youtube.com/vi/WvesXeWtox8/default.jpg)
+
+KXTV-SAC (ABC) - Sacramento, CA: Fair Plan Fee Lawsuit Scaled Down
+
+01:08![Video thumbnail](https://img.youtube.com/vi/LQCFw77jRCQ/default.jpg)
+
+KTVU-SF (FOX) - San Francisco, CA: State Farm Asks Judge To Seal Documents Justifying Rate Hike
+
+04:31![Video thumbnail](https://img.youtube.com/vi/I1UF18Pvj7A/default.jpg)
+
+Spectrum News 1 - Green Bay, WI: Grappling With Loss In LA 6 Months After Devastating Wildfires
+
+03:41![Video thumbnail](https://img.youtube.com/vi/0FfHosBLQ3Q/default.jpg)
+
+KTVU (FOX): Tips On Getting Smoke Damage Claims Paid
+
+04:31![Video thumbnail](https://img.youtube.com/vi/FpC4PK_1k1g/default.jpg)
+
+KTVU-SF (FOX): Pro-Homeowner Bills Moving Through CA Legislature
+
+02:30![Video thumbnail](https://img.youtube.com/vi/RtY3pp3fEIc/default.jpg)
+
+Spectrum News 1 (San Fernando Valley) - Los Angeles, CA: State Farm In The Hot Seat
+
+03:09![Video thumbnail](https://img.youtube.com/vi/8FoqXlgz8u0/default.jpg)
+
+KTVU-SF (FOX) - San Francisco, CA: Insurance Department Investigation
+
+02:37![Video thumbnail](https://img.youtube.com/vi/OmZPh1X22Ws/default.jpg)
+
+KCBS-LA (CBS) - Los Angeles, CA: Home Insurance Crisis
+
+05:32![Video thumbnail](https://img.youtube.com/vi/c2TvD7Hvi7k/default.jpg)
+
+KCAL-LA - Los Angeles, CA: KCAL News Special: Home insurance Crisis
+
+07:04![Video thumbnail](https://img.youtube.com/vi/DGYXCOqCA3k/default.jpg)
+
+KCAL-LA - Los Angeles, CA: KCAL News Special: Home insurance Crisis
+
+09:59![Video thumbnail](https://img.youtube.com/vi/fmXgXbNcMok/default.jpg)
+
+KGTV-SD (ABC) - San Diego, CA: Homeowners To Get Surcharge For LA Wildfires
+
+02:48![Video thumbnail](https://img.youtube.com/vi/lHlYpnHlr0g/default.jpg)
+
+My 58 - Sacramento, CA: State Farm Looking To Raise Rates
+
+01:05![Video thumbnail](https://img.youtube.com/vi/YHTzs8vNbVU/default.jpg)
+
+KGO-SF (ABC) - San Francisco, CA: State Farm Proposes More Insurance Rate Hikes
+
+02:53![Video thumbnail](https://img.youtube.com/vi/a7YM_0GNx3A/default.jpg)
+
+KOLO (ABC) - Reno, NV: Home Insurance Rate Hikes From State Farm
+
+02:32![Video thumbnail](https://img.youtube.com/vi/xTHVICpAwdg/default.jpg)
+
+KMPH-FRES (FOX) - Fresno, CA: Looking At Process For Rate Approvals
+
+07:48![Video thumbnail](https://img.youtube.com/vi/jGEiMf-KwdI/default.jpg)
+
+KGTV-SD (ABC) - San Diego, CA: State Farm Approves For Insurance Rate Hike
+
+02:06![Video thumbnail](https://img.youtube.com/vi/eZL6u0YkbMM/default.jpg)
+
+KCBA (FOX) - Monterey, CA: Insurance Rate Hikes
+
+02:17![Video thumbnail](https://img.youtube.com/vi/Z4B_0zEIzCk/default.jpg)
+
+KTVU-SF (FOX) - San Francisco, CA: State Farm Gets Okay To Raise Rates
+
+05:17![Video thumbnail](https://img.youtube.com/vi/ywqSk1kJ9NE/default.jpg)
+
+KXTV-SAC (ABC) - Sacramento, CA: State Farm Rate hike Approved
+
+04:05![Video thumbnail](https://img.youtube.com/vi/lL0WsLFztFE/default.jpg)
+
+KNTV-SF (NBC) - San Francisco, CA: Judge Backs State Farms 17% Rate Hike
+
+00:57![Video thumbnail](https://img.youtube.com/vi/fUhE1XSLQ3Y/default.jpg)
+
+KRON-SF (MyTV) - San Francisco, CA: State Farm Approved For Emergency Policy Rate Increase
+
+02:19![Video thumbnail](https://img.youtube.com/vi/Mk0Xwebw6ew/default.jpg)
+
+KPIX-SF (CBS) - San Francisco, CA:State Farm Emergency Rate Hike Approved
+
+00:49![Video thumbnail](https://img.youtube.com/vi/zBE72pysGiI/default.jpg)
+
+Spectrum News 1-Los Angeles, CA: Insurance Agencies Want To Impose Surcharges on Homeowners
+
+04:18![Video thumbnail](https://img.youtube.com/vi/LLTnrOUFCWA/default.jpg)
+
+KGO-SF (ABC) - San Francisco, CA: Insurance Hotline Part 2
+
+03:01![Video thumbnail](https://img.youtube.com/vi/YNo33MEFbno/default.jpg)
+
+KGO-SF (ABC) - San Francisco, CA: Insurance Hotline Part 1
+
+03:02
+
+## [Latest Insurance Releases](/issues/insurance)
+
+### [Smoke & Mirrors Podcast Exposes Troubling Tactics of Insurance Subcontractors in Wildfire Recovery](https://consumerwatchdog.org/insurance/smoke-mirrors-podcast-exposes-troubling-tactics-of-insurance-subcontractors-in-wildfire-recovery/ "Smoke & Mirrors Podcast Exposes Troubling Tactics of Insurance Subcontractors in Wildfire Recovery")
+
+[Justin Kloczko](https://consumerwatchdog.org/author/justin-kloczko/) -  October 27, 2025
+
+### [New Investigative Podcast Series Uncovers Wildfire Insurance Abuses](https://consumerwatchdog.org/insurance/new-investigative-podcast-series-uncovers-wildfire-insurance-abuses/ "New Investigative Podcast Series Uncovers Wildfire Insurance Abuses ")
+
+[Justin Kloczko](https://consumerwatchdog.org/author/justin-kloczko/) -  October 22, 2025
+
+### [California to Create First Public Wildfire Catastrophe Model to Empower Homeowners with Insurance Wildfire Risk Information](https://consumerwatchdog.org/insurance/california-to-create-first-public-wildfire-catastrophe-model-to-empower-homeowners-with-insurance-wildfire-risk-information/ "California to Create First Public Wildfire Catastrophe Model to Empower Homeowners with Insurance Wildfire Risk Information")
+
+[Carmen Balber](https://consumerwatchdog.org/author/carmen-balber/) -  October 13, 2025
+
+### [Poll Shows Between 80% and 90% Support For Insurance Policyholders Bill of Rights](https://consumerwatchdog.org/insurance/poll-shows-between-80-and-90-support-for-insurance-policyholders-bill-of-rights/ "Poll Shows Between 80% and 90% Support For Insurance Policyholders Bill of Rights ")
+
+[Jamie Court](https://consumerwatchdog.org/author/jamie-court/) -  October 8, 2025
+
+### [FAIR Plan Must Pay Fire Survivors’ Claims Before Lara Hikes Rates](https://consumerwatchdog.org/insurance/fair-plan-must-pay-fire-survivors-claims-before-lara-hikes-rates/ "FAIR Plan Must Pay Fire Survivors’ Claims Before Lara Hikes Rates")
+
+[BLOG](#)
+
+[Carmen Balber](https://consumerwatchdog.org/author/carmen-balber/) -  October 6, 2025
+
+[Read More Insurance Releases](/issues/insurance "Read More Insurance Releases")
+
+#### [Insurance In The News](/issues/in-the-news/insurance-in-the-news-in-the-news/)
+
+### [KNX-AM (Radio): Some Insurers Have State Approval To Pass That Cost On To You](https://consumerwatchdog.org/in-the-news/knx-am-radio-some-insurers-have-state-approval-to-pass-that-cost-on-to-you/ "KNX-AM (Radio): Some Insurers Have State Approval To Pass That Cost On To You")
+
+October 23, 2025
+
+### [Los Angeles Times – California insurers set to charge homeowners for L.A. County fire costs](https://consumerwatchdog.org/in-the-news/insurance-in-the-news-in-the-news/los-angeles-times-california-insurers-set-to-charge-homeowners-for-l-a-county-fire-costs/ "Los Angeles Times – California insurers set to charge homeowners for L.A. County fire costs")
+
+October 22, 2025
+
+### [KCAL Mornings: CA Homeowners Face Surcharges To Help Recoup Costs From January Wildfires](https://consumerwatchdog.org/in-the-news/kcal-mornings-ca-homeowners-face-surcharges-to-help-recoup-costs-from-january-wildfires/ "KCAL Mornings: CA Homeowners Face Surcharges To Help Recoup Costs From January Wildfires")
+
+October 22, 2025
+
+### [The Mercury News – As wildfires scorch California, should insurers divest from fossil fuels?](https://consumerwatchdog.org/in-the-news/the-mercury-news-as-wildfires-scorch-california-should-insurers-divest-from-fossil-fuels/ "The Mercury News – As wildfires scorch California, should insurers divest from fossil fuels?")
+
+October 19, 2025
+
+### [Los Angeles Times – Insurance commissioner proposes controversial changes to landmark insurance law](https://consumerwatchdog.org/in-the-news/los-angeles-times-insurance-commissioner-proposes-controversial-changes-to-landmark-insurance-law/ "Los Angeles Times – Insurance commissioner proposes controversial changes to landmark insurance law")
+
+October 13, 2025
+
+[Read More News Stories](/issues/in-the-news/insurance-in-the-news-in-the-news/ "Read More News Stories")
+
+Search
+
+Latest Privacy Report
+
+[Reports](https://consumerwatchdog.org/issues/insurance/insurance-reports/)
+
+### [Lowball: What Fire Survivors Want You To Know About Insurance Claims](https://consumerwatchdog.org/insurance/lowballed-what-fire-survivors-want-you-to-know-about-insurance-claims/ "Lowball: What Fire Survivors Want You To Know About Insurance Claims")
+
+### Support Consumer Watchdog
+
+Donate
+
+### Subscribe to our newsletter
+
+To be updated with all the latest news, press releases and special reports.
+
+Subscribe
+
+## [More Insurance Releases](/issues/insurance)
+
+[Continue to the category](/issues/insurance)
+
+### [Smoke & Mirrors Podcast Exposes Troubling Tactics of Insurance Subcontractors in Wildfire Recovery](https://consumerwatchdog.org/insurance/smoke-mirrors-podcast-exposes-troubling-tactics-of-insurance-subcontractors-in-wildfire-recovery/ "Smoke & Mirrors Podcast Exposes Troubling Tactics of Insurance Subcontractors in Wildfire Recovery")
+
+### [New Investigative Podcast Series Uncovers Wildfire Insurance Abuses](https://consumerwatchdog.org/insurance/new-investigative-podcast-series-uncovers-wildfire-insurance-abuses/ "New Investigative Podcast Series Uncovers Wildfire Insurance Abuses ")
+
+### [California to Create First Public Wildfire Catastrophe Model to Empower Homeowners with Insurance Wildfire Risk Information](https://consumerwatchdog.org/insurance/california-to-create-first-public-wildfire-catastrophe-model-to-empower-homeowners-with-insurance-wildfire-risk-information/ "California to Create First Public Wildfire Catastrophe Model to Empower Homeowners with Insurance Wildfire Risk Information")
+
+### [Poll Shows Between 80% and 90% Support For Insurance Policyholders Bill of Rights](https://consumerwatchdog.org/insurance/poll-shows-between-80-and-90-support-for-insurance-policyholders-bill-of-rights/ "Poll Shows Between 80% and 90% Support For Insurance Policyholders Bill of Rights ")
+
+### [FAIR Plan Must Pay Fire Survivors’ Claims Before Lara Hikes Rates](https://consumerwatchdog.org/insurance/fair-plan-must-pay-fire-survivors-claims-before-lara-hikes-rates/ "FAIR Plan Must Pay Fire Survivors’ Claims Before Lara Hikes Rates")
+
+[BLOG](#)
+
+### [Uber’s Dirty Deal](https://consumerwatchdog.org/insurance/ubers-dirty-deal/ "Uber’s Dirty Deal")

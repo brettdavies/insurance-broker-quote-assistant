@@ -1,0 +1,1 @@
+Average Car Insurance Cost in California (2025 Rates) | Insure.com

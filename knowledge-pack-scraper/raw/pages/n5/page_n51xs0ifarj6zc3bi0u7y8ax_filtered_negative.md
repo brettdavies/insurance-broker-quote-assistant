@@ -1,0 +1,22 @@
+[Skip to main content](https://www.leidalandhart.com/types-of-masonry-for-commercial-building-construction-explained/#ajax-content-wrap)
+[Close Search ](https://www.leidalandhart.com/types-of-masonry-for-commercial-building-construction-explained/)
+[![Leidal & Hart](https://www.leidalandhart.com/wp-content/uploads/2023/05/LeidalandHartdark.png) ](https://www.leidalandhart.com)
+[ Menu](https://www.leidalandhart.com/types-of-masonry-for-commercial-building-construction-explained/#sidewidgetarea)
+* [ Menu](https://www.leidalandhart.com/types-of-masonry-for-commercial-building-construction-explained/#sidewidgetarea)
+![what is masonry wall](https://www.leidalandhart.com/wp-content/uploads/2024/03/what-is-masonry-wall.jpg)
+**_Related Reading –[What is Masonry Paint?](https://www.leidalandhart.com/what-is-masonry-paint/ "What is Masonry Paint?")_**
+[See Full Bio](https://www.leidalandhart.com/author/seoadmin/) [ ](https://www.leidalandhart.com/author/seoadmin/)
+_Next Post_### [Understanding Masonry Walls: Types, Construction Techniques, and Considerations](https://www.leidalandhart.com/what-is-masonry-wall/)
+[Knowledge Hub](https://www.leidalandhart.com/category/knowledge-hub/) [](https://www.leidalandhart.com/cbs-construction-meaning/)
+[Knowledge Hub](https://www.leidalandhart.com/category/knowledge-hub/) [](https://www.leidalandhart.com/masonry-sand-vs-play-sand-key-differences/)
+[Knowledge Hub](https://www.leidalandhart.com/category/knowledge-hub/) [](https://www.leidalandhart.com/what-is-masonry-veneer-in-commercial-construction-benefits-and-applications-explained/)
+### Leave a Reply [Cancel Reply](https://www.leidalandhart.com/types-of-masonry-for-commercial-building-construction-explained/#respond)
+Name *
+Email *
+######  [Contact](https://www.leidalandhart.com/contact/)
+######  [Careers](https://www.leidalandhart.com/careers/)
+######  [Privacy Policy](https://www.leidalandhart.com/last-updated-june-30-2023/)
+######  [Terms & Conditions](https://www.leidalandhart.com/terms-and-conditions-for-leidalandhart-com/)
+[](https://www.leidalandhart.com/types-of-masonry-for-commercial-building-construction-explained/)
+[ Share ](https://www.leidalandhart.com/types-of-masonry-for-commercial-building-construction-explained/ "Share this")[ Tweet ](https://www.leidalandhart.com/types-of-masonry-for-commercial-building-construction-explained/ "Tweet this")[ Share ](https://www.leidalandhart.com/types-of-masonry-for-commercial-building-construction-explained/ "Share this")[ Pin ](https://www.leidalandhart.com/types-of-masonry-for-commercial-building-construction-explained/ "Pin this")
+[Close Menu ](https://www.leidalandhart.com/types-of-masonry-for-commercial-building-construction-explained/)

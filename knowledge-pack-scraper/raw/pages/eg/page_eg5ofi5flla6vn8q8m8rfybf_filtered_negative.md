@@ -1,0 +1,118 @@
+For more details, please review your [Cookies Preference](https://www.pacificspecialty.com/cookies-policies)
+Performance
+Performance cookies are used to understand and analyse the key performance indexes of the website which helps in delivering a better user experience for the visitors.
+Privacy policy  Save and accept  Accept All
+[![Go to PSIC homepage](https://www.pacificspecialty.com/wp-content/uploads/2024/06/Pacific-Speciality-Insurance-Logo-Horizontal.svg) ](https://www.pacificspecialty.com/)
+[ ](https://www.pacificspecialty.com/search-psic)
+[ Make a payment ](https://payment.pacificspecialty.com/)
+[ Contact us ](https://www.pacificspecialty.com/contact-psic)
+[ My account ](https://www.pacificspecialty.com/login)
+* Insurance products
+Property
+[ Homeowners ](https://www.pacificspecialty.com/homeowners-insurance)
+[ Renters ](https://www.pacificspecialty.com/renters-insurance)
+[ Condo ](https://www.pacificspecialty.com/condo-insurance)
+[ Mobile Home ](https://www.pacificspecialty.com/mobile-home-insurance)
+[ Landlord ](https://www.pacificspecialty.com/landlord-insurance)
+[ Earthquake ](https://www.pacificspecialty.com/earthquake-insurance)
+[ Flood ](https://www.pacificspecialty.com/flood-insurance)
+Powersports
+[ Motorcycle ](https://www.pacificspecialty.com/motorcycle-insurance)
+[ Off-road ](https://www.pacificspecialty.com/off-road-insurance)
+Liability
+[ Personal umbrella ](https://www.pacificspecialty.com/personal-umbrella-insurance)
+[ Personal liability ](https://www.pacificspecialty.com/liability-insurance)
+Product by state
+[ Homeowners in Connecticut ](https://www.pacificspecialty.com/homeowners-insurance/connecticut)
+[ Homeowners in New Jersey ](https://www.pacificspecialty.com/homeowners-insurance/new-jersey)
+[ Homeowners in Arizona ](https://www.pacificspecialty.com/homeowners-insurance/arizona)
+[ Renters in California ](https://www.pacificspecialty.com/renters-insurance/california)
+[ All products by state ](https://www.pacificspecialty.com/insurance-products)
+* [Resources](https://www.pacificspecialty.com/resource-center/insurance-term/what-does-non-disclosure-mean/#resources)
+[ Blog ](https://www.pacificspecialty.com/resource-center/blog)
+[ FAQs ](https://www.pacificspecialty.com/resource-center/faq)
+[ Insurance Terms ](https://www.pacificspecialty.com/resource-center/insurance-terms)
+* [Our company](https://www.pacificspecialty.com/resource-center/insurance-term/what-does-non-disclosure-mean/#aa)
+[ About us ](https://www.pacificspecialty.com/about-pacific-specialty)
+[ Our history ](https://www.pacificspecialty.com/pacific-specialty-history)
+[ Careers ](https://www.pacificspecialty.com/pacific-specialty-insurance-company-careers)
+![](https://www.pacificspecialty.com/wp-content/uploads/2024/06/p1.png)
+Do you want to work with us?
+[ See open positions ](https://www.pacificspecialty.com/resource-center/insurance-term/what-does-non-disclosure-mean/#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjMwMjk4IiwidG9nZ2xlIjpmYWxzZX0%3D)
+* [Claims](https://www.pacificspecialty.com/claims/)
+* [Producer Center](https://www.pacificspecialty.com/producer-center/)
+X
+[![Go to PSIC homepage](https://www.pacificspecialty.com/wp-content/uploads/2024/10/Pacific-Speciality-Insurance-Company-Logo-Small.svg) ](https://www.pacificspecialty.com/)
+* Insurance products
+Property
+[ Homeowners ](https://www.pacificspecialty.com/homeowners-insurance)
+[ Renters ](https://www.pacificspecialty.com/renters-insurance)
+[ Condo ](https://www.pacificspecialty.com/condo-insurance)
+[ Mobile Home ](https://www.pacificspecialty.com/mobile-home-insurance)
+[ Landlord ](https://www.pacificspecialty.com/landlord-insurance)
+[ Earthquake ](https://www.pacificspecialty.com/earthquake-insurance)
+[ Flood ](https://www.pacificspecialty.com/flood-insurance)
+Powersports
+[ Motorcycle ](https://www.pacificspecialty.com/motorcycle-insurance)
+[ Off-road ](https://www.pacificspecialty.com/off-road-insurance)
+Liability
+[ Personal umbrella ](https://www.pacificspecialty.com/personal-umbrella-insurance)
+[ Personal liability ](https://www.pacificspecialty.com/liability-insurance)
+Product by state
+[ Homeowners in Connecticut ](https://www.pacificspecialty.com/homeowners-insurance/connecticut)
+[ Homeowners in New Jersey ](https://www.pacificspecialty.com/homeowners-insurance/new-jersey)
+[ Homeowners in Arizona ](https://www.pacificspecialty.com/homeowners-insurance/arizona)
+[ Renters in California ](https://www.pacificspecialty.com/renters-insurance/california)
+[ All products by state ](https://www.pacificspecialty.com/insurance-products)
+* [Resources](https://www.pacificspecialty.com/resource-center/insurance-term/what-does-non-disclosure-mean/#resources)
+[ Blog ](https://www.pacificspecialty.com/resource-center/blog)
+[ FAQs ](https://www.pacificspecialty.com/resource-center/faq)
+[ Insurance Terms ](https://www.pacificspecialty.com/resource-center/insurance-terms)
+* [Our company](https://www.pacificspecialty.com/resource-center/insurance-term/what-does-non-disclosure-mean/#aa)
+[ About us ](https://www.pacificspecialty.com/about-pacific-specialty)
+[ Our history ](https://www.pacificspecialty.com/pacific-specialty-history)
+[ Careers ](https://www.pacificspecialty.com/pacific-specialty-insurance-company-careers)
+![](https://www.pacificspecialty.com/wp-content/uploads/2024/06/p1.png)
+Do you want to work with us?
+[ See open positions ](https://www.pacificspecialty.com/resource-center/insurance-term/what-does-non-disclosure-mean/#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjMwMjk4IiwidG9nZ2xlIjpmYWxzZX0%3D)
+* [Claims](https://www.pacificspecialty.com/claims/)
+* [Producer Center](https://www.pacificspecialty.com/producer-center/)
+X
+[ ](https://www.pacificspecialty.com/search-psic)
+[ Find a producer ](https://www.pacificspecialty.com/find-a-producer)
+[Home](https://www.pacificspecialty.com/) > [Resource center](https://www.pacificspecialty.com/resource-center) > [Insurance term](https://www.pacificspecialty.com/resource-center/insurance-term) > What does non disclosure mean
+[ Chat with our PSIC Assistant ](https://www.pacificspecialty.com/Get%20more%20info)
+[ Insurance policy ](https://www.pacificspecialty.com/resource-center/insurance-term/insurance-policy) [ Deductible ](https://www.pacificspecialty.com/resource-center/insurance-term/deductible) [ Second party ](https://www.pacificspecialty.com/resource-center/insurance-term/second-party) [ Dwelling coverage ](https://www.pacificspecialty.com/resource-center/insurance-term/dwelling-coverage)
+### [Safety Tips for Dog Owners Pets become cherished members of our family, but it’s crucial to recognize that they have unique n...![](https://www.pacificspecialty.com/wp-content/uploads/2024/08/icon-blog.svg) Blog![](https://www.pacificspecialty.com/wp-content/uploads/2024/09/girl-dogs-2.jpeg) 10 Sep 2024  5 min read![](https://www.pacificspecialty.com/wp-content/uploads/2024/08/icon-blog.svg) Blog![](https://www.pacificspecialty.com/wp-content/uploads/2024/09/girl-dogs-2.jpeg) ](https://www.pacificspecialty.com/resource-center/blog/safety-tips-for-dog-owners/)
+### [Advantages of Living in a Gated Community From enhanced safety and privacy to a strong sense of belonging, living in a gated community offer...![](https://www.pacificspecialty.com/wp-content/uploads/2024/08/icon-blog.svg) Blog![](https://www.pacificspecialty.com/wp-content/uploads/2024/09/gated-community-overview-1.jpeg) 10 Sep 2024  4 min read![](https://www.pacificspecialty.com/wp-content/uploads/2024/08/icon-blog.svg) Blog![](https://www.pacificspecialty.com/wp-content/uploads/2024/09/gated-community-overview-1.jpeg) ](https://www.pacificspecialty.com/resource-center/blog/advantages-of-living-in-a-gated-community/)
+## [Which Dwelling Fire Policy to Choose? There isn’t a right or wrong choice of coverage, all it has to do is fit your needs. DP1 Insurance...![](https://www.pacificspecialty.com/wp-content/uploads/2024/08/question-cirle.svg) FAQ![](https://www.pacificspecialty.com/wp-content/uploads/2024/10/dwelling-fire-1.jpeg)![](https://www.pacificspecialty.com/wp-content/uploads/2024/08/question-cirle.svg) FAQ![](https://www.pacificspecialty.com/wp-content/uploads/2024/10/dwelling-fire-1.jpeg) ](https://www.pacificspecialty.com/resource-center/faq/dp1-vs-dp3/)
+## [What is DP3 Insurance? DP3 Insurance, also known as Special Dwelling Insurance or Open Peril Insurance, is a protective b...![](https://www.pacificspecialty.com/wp-content/uploads/2024/08/question-cirle.svg) FAQ![](https://www.pacificspecialty.com/wp-content/uploads/2024/09/couple-special-dwelling.jpeg)![](https://www.pacificspecialty.com/wp-content/uploads/2024/08/question-cirle.svg) FAQ![](https://www.pacificspecialty.com/wp-content/uploads/2024/09/couple-special-dwelling.jpeg) ](https://www.pacificspecialty.com/resource-center/faq/dp3-insurance-explained/)
+[ More resources ](https://www.pacificspecialty.com/resource-center)
+Email
+Submit
+By submitting this form you confirm that you agree to **[PSIC’s privacy policy.](https://www.pacificspecialty.com/privacy-policy)**
+[![Pacific Speciality Insurance Company Logo](https://www.pacificspecialty.com/wp-content/uploads/2024/08/pacific-speciality-insurance-company-logo-transparent.svg) ](https://www.pacificspecialty.com/)
+[ Homeowners ](https://www.pacificspecialty.com/homeowners-insurance)
+[ Renters ](https://www.pacificspecialty.com/renters-insurance)
+[ Condo ](https://www.pacificspecialty.com/condo-insurance)
+[ Motorcycle ](https://www.pacificspecialty.com/motorcycle-insurance)
+[ All products by state ](https://www.pacificspecialty.com/insurance-products)
+[ About us ](https://www.pacificspecialty.com/about-pacific-specialty)
+[ Our history ](https://www.pacificspecialty.com/pacific-specialty-history)
+[ Careers ](https://www.pacificspecialty.com/pacific-specialty-insurance-company-careers)
+[ Make a payment ](https://payment.pacificspecialty.com/)
+[ Enroll in autopay ](https://policymgmnt.pacificspecialty.com/dashboard/policy-management)
+[ Go paperless ](https://policymgmnt.pacificspecialty.com/dashboard/policy-management)
+[ Find a producer ](https://www.pacificspecialty.com/find-a-producer)
+[ My account ](https://www.pacificspecialty.com/login)
+[ FAQs ](https://www.pacificspecialty.com/resource-center/faq)
+[ Blog ](https://www.pacificspecialty.com/resource-center/blog)
+[ Sitemap ](https://www.pacificspecialty.com/sitemap_index.xml)
+[ Insurance Terms ](https://www.pacificspecialty.com/resource-center/insurance-terms)
+[ Producer center ](https://www.pacificspecialty.com/producer-center)
+[ Become a producer ](https://www.pacificspecialty.com/become-a-producer)
+[ Resource center ](https://www.pacificspecialty.com/producer-center/resource-center/)
+Claims support:[**800-962-1172**](tel:8009621172)
+## email@pacificspecialty.com
+![We comply with the Americans with Disabilities Act \(ADA\) regulations. Go to ADA Site Compliance Accessibility Policy. Open in new window](https://www.pacificspecialty.com/wp-content/uploads/2024/06/ADA-compliance-policy.png)
+[Privacy policy](https://www.pacificspecialty.com/privacy-policy/)

@@ -1,0 +1,18 @@
+{
+  "page_id": "page_sww1jnq80sokb07pdawrg0cm",
+  "raw_word_count": 3050,
+  "filtered_word_count": 2070,
+  "removed_word_count": 980,
+  "reduction_ratio": 0.321,
+  "config": {
+    "css_selector": "article, main",
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"menu\"], [id*=\"menu\"]",
+    "confidence": "high"
+  },
+  "filtered_at": "2025-11-07T16:59:45.525663"
+}

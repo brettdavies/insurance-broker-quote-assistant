@@ -1,0 +1,1 @@
+Insurance Inflation Index: Car insurance rates up just slightly

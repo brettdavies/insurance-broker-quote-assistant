@@ -1,0 +1,41 @@
+[![](https://www.drivesafe.com/wp-content/uploads/2024/11/Drive-Safe-logo.png) ](https://www.drivesafe.com/)
+* [Ticket Dismissal](https://www.drivesafe.com/defensive-driving-course-outline-select-a-state/)
+* [Insurance Reduction](https://www.drivesafe.com/insurance-reduction/)
+* [About](https://www.drivesafe.com/about/)
+* [Driving Courses](https://www.drivesafe.com/geico/)
+* #### DMV Approved States for Driving Courses
+* [Arizona Ticket Dismissal Program](https://www.ddcaz.org/)
+* [Connecticut Operator Retraining Program](https://www.drivesafe.com/ct/)
+* [Florida Basic Driver Improvement Courses](https://www.drivesafe.com/florida-bdi-courses/)
+* [IL Cook County Traffic Safety School](https://www.drivesafe.com/il-cook-county-traffic-safety-school/)
+* [Illinois Driver Safety Programs](https://www.drivesafe.com/illinois-driver-safety-programs/)
+* [MA RMV-Approved Defensive Driving Courses](https://www.drivesafe.com/massachusetts-rmv-approved-defensive-driving-courses/)
+* [Michigan Basic Driver Improvement Course](https://www.drivesafe.com/michigan-online-defensive-driving-course/)
+* [New Jersey Online Defensive Driving Course](https://www.drivesafe.com/new-jersey-online-defensive-driving-course/)
+* [New Jersey Probationary Driver Program](https://www.drivesafe.com/new-jersey-probationary-driver-program/)
+* [New York Defensive Driving Course](https://www.drivesafe.com/new-york-online-defensive-driving-course-insurance-discount/)
+* [Orange County Court-Ordered Alive at 25 Program](https://www.drivesafe.com/orange-county/)
+* [Oregon Distracted Driving Avoidance Course](https://www.drivesafe.com/oregon-distracted-driving-avoidance-course/)
+* [Suffolk County Traffic and Parking Violation Agency Driver Safety Programs](https://www.drivesafe.com/suffolk-2-2/)
+* [VASAP Directors Association Defensive Driving](https://www.drivesafe.com/vasap/)
+* [Virginia Online Driver Improvement Course](https://www.drivesafe.com/vadic/)
+* [Washington Online Safe Driving Course](https://www.drivesafe.com/washington-safe-driving-course/)
+#### Other States
+Drivers in all states can benefit from safety courses.
+* [View All](https://www.drivesafe.com/defensive-driving-course-outline-select-a-state/)
+![](https://www.drivesafe.com/wp-content/uploads/2024/11/map_g.png)
+[](https://training.nsc.org/geico "Geico Car Insurance - Returning User")
+[](https://www.drivesafe.com/geicony)
+![geic_sm](https://www.drivesafe.com/wp-content/uploads/2025/01/geic_sm.png)
+Cost: **$12.50**(no hidden fees)
+[](https://training.nsc.org/geico?cart=%5B%7B%22purchasableType%22%3A%22course%22%2C%22purchasableId%22%3A%22f8762afb-5f27-4f5f-b022-c93236a7254a%22%2C%22couponCode%22%3A%224410018241250%22%7D%5D "Purchase Geico Car Insurance")
+[](https://training.nsc.org/geico?cart=%5B%7B%22purchasableType%22%3A%22course%22%2C%22purchasableId%22%3A%228abd5c48-ebee-4240-b07a-ce2c4c4d5f83%22%2C%22couponCode%22%3A%224410018251250%22%7D%5D "Purchase Geico Car Insurance in Spanish")
+* Check with [GEICO](https://www.geico.com/landingpage/email/defensive.htm) to see if you qualify for the Defensive Driving Course discount and for specific information about requirements in your state.
+Note: This online defensive driving course is not intended nor approved for motor vehicle point reduction or ticket dismissal programs. [View point reduction or ticket dismissal programs in your state.](https://www.drivesafe.com/defensive-driving-course-outline-select-a-state/)
+*100% Money Back Guarantee Policy: If you’re not satisfied for any reason within 30 days of purchase and before course completion, we’ll give you a full refund on your course.
+[About](https://www.drivesafe.com/about/)
+[FAQs](https://www.drivesafe.com/frequently-asked-questions/)
+[Contact Us](https://www.nsc.org/company/contact-nsc)
+[Privacy & Terms](https://www.nsc.org/privacy-policy)
+© 2025 DriveSafe.com, A Division of the National Safety Council
+Cookie Settings

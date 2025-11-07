@@ -1,0 +1,1 @@
+Latest Developments on Insurance Privacy Laws NAIC Privacy Protections (H) Working Group's Model 672 and California's SB 354 - Lexology

@@ -1,0 +1,98 @@
+SCHUMER SHUTDOWN SALE [Don't Miss Out Before the Dems Cave!](https://redstate.com/subscribe?tpcc=47saleab&promo_code=POTUS47)
+[JOIN THE FIGHT](https://redstate.com/subscribe?tpcc=47saleab&promo_code=POTUS47)
+[![RedState](https://cdn.townhall.com/web/thm/logo-redstate.svg)](https://redstate.com/ "RedState")
+[Authors](https://redstate.com/authors/ "Authors") [Podcasts](https://redstate.com/podcasts/ "Podcasts") [Videos](https://redstate.com/videos/ "Podcasts") [Store](https://store.townhallmedia.com "Store") [![Premium](https://cdn.townhall.com/web/thm/subscriptions-badge-vip.svg)](https://redstate.com/vip/) [![](https://cdn.townhall.com/web/svg/thm/townhalltv.svg) ](https://redstate.com/subscribe?tpcc=tvlogo "Townhall TV")
+* [JOIN VIP](https://redstate.com/subscribe?tpcc=home_button "JOIN VIP")
+* [LOGIN](https://redstate.com/wardclark/2025/03/27/revealed-california-insurance-commissioners-questionable-globe-trotting-n2187168 "LOGIN")
+* [ MY ACCOUNT  unread messages ](https://redstate.com/wardclark/2025/03/27/revealed-california-insurance-commissioners-questionable-globe-trotting-n2187168 "MY ACCOUNT")
+[Account Settings](https://redstate.com/account/ "ACCOUNT SETTINGS") [Messages ](https://redstate.com/account/messages) [Newsletter Subscriptions](https://redstate.com/newsletters "Newsletter Subscriptions") [Comment Settings](https://redstate.com/account#disqus "Comment Settings") [Log Out](https://redstate.com/wardclark/2025/03/27/revealed-california-insurance-commissioners-questionable-globe-trotting-n2187168 "Log Out")
+* [](https://redstate.com/search/q "Site Search")
+[![](https://cdn.townhall.com/web/thm/logo-redstate.svg)](https://redstate.com/)
+[_ _](https://redstate.com/wardclark/2025/03/27/revealed-california-insurance-commissioners-questionable-globe-trotting-n2187168 "VIP MENU")
+[ MY ACCOUNT  unread messages ](https://redstate.com/wardclark/2025/03/27/revealed-california-insurance-commissioners-questionable-globe-trotting-n2187168 "My Account")
+[Account Settings](https://redstate.com/account/ "Account") [Messages ](https://redstate.com/account/messages) [Newsletter Subscriptions](https://redstate.com/newsletters "Newsletters") [Comment Settings](https://redstate.com/account#disqus) [Log Out](https://redstate.com/wardclark/2025/03/27/revealed-california-insurance-commissioners-questionable-globe-trotting-n2187168 "Log Out")
+LOGIN
+[JOIN VIP](https://redstate.com/subscribe?tpcc=home_mobilebutton "Join VIP")
+* [ Authors ](https://redstate.com/authors)
+* [ Columns ](https://redstate.com/columns)
+* [ Videos ](https://redstate.com/videos)
+* [ Podcasts ](https://redstate.com/podcasts)
+* [ Store ](https://store.townhallmedia.com)
+* [![](https://cdn.townhall.com/web/thm/subscriptions-badge-vip.svg) ](https://redstate.com/vip)
+* [![](https://cdn.townhall.com/web/svg/thm/townhalltv.svg) ](https://redstate.com/subscribe?tpcc=tvlogo)
+* * *
+[Contact Us](https://redstate.com/contact-us "Contact Us")
+[Terms & Conditions](https://cdn.townhall.com/web/privacypolicy/termsofuse.htm "Terms and Conditions")
+[Privacy Policy](https://salemmedia.com/townhall-media-privacy-policy/ "Privacy Policy")
+[California – Do Not Sell (ccpa)](https://salemmedia.com/ccpa-sale-opt-out/ "CCPA")
+[California - CCPA Notice](https://salemmedia.com/townhall-media-ccpa-privacy-notice-for-california-residents/ "CCPA Notice")
+[![](https://cdn.townhall.com/web/thm/logo-redstate.svg)](https://redstate.com/)
+* Revealed: CA Insurance Commissioner's Questionable Taxpayer-Funded Globe-Trotting
+* [JOIN VIP](https://redstate.com/subscribe?tpcc=home_button)
+* [LOGIN](https://redstate.com/wardclark/2025/03/27/revealed-california-insurance-commissioners-questionable-globe-trotting-n2187168)
+[](https://redstate.com/author/wardclark)
+By [Ward Clark](https://redstate.com/author/wardclark) [](https://twitter.com/TheGreatLander?ref_src=twsrc%5Etfw) | 11:33 AM on March 27, 2025
+_The opinions expressed by contributors are their own and do not necessarily represent the views of RedState.com._
+__ [](https://redstate.com/wardclark/2025/03/27/revealed-california-insurance-commissioners-questionable-globe-trotting-n2187168#thm-comments-bookmark)
+![](https://media.townhall.com/cdn/hodl/2018/77/73362348-ce1e-469f-b3ec-0341c61fceff-1052x615.jpg)_AP Photo/Rich Pedroncelli, File_
+Case in point: California's Insurance Commissioner, Ricardo Lara, appears to have been soaking the people of California for a[ lot of travel he can't explain.](https://californiaglobe.com/fr/european-vacations-for-ca-insurance-commish-ricardo-lara-as-insurance-carriers-were-pulling-out-of-california/)
+* * *
+**_See Also:_**_[Now Ashley Is the Latest Biden to Face Ethics Woes As Huge Harry-Meghan Donation Raises Eyebrows](https://redstate.com/bobhoge/2025/03/15/now-ashley-is-the-latest-biden-to-face-ethics-woes-as-prince-harry-meghan-markle-donation-raises-eyebrows-n2186706)_
+[_Biden Rural Broadband Guru Who Accomplished Nothing Quits Because Trump Might Make Progress_](https://redstate.com/streiff/2025/03/18/biden-rural-broadband-guru-who-accomplished-nothing-quits-because-trump-might-make-progress-n2186819)
+* * *
+_Every single day, here at RedState, we will stand up and FIGHT, FIGHT, FIGHT against the radical left and deliver the conservative reporting our readers deserve._
+_Help us continue to tell the truth about the Trump administration and its major wins. Join[RedState VIP](https://redstate.com/subscribe?tpcc=60sale0327clark&promo_code=FIGHT "https://redstate.com/subscribe?tpcc=60sale0327clark&promo_code=FIGHT") and use promo code FIGHT to get 60% off your membership._
+__
+Ward Clark hails from Alaska’s Susitna Valley, where he maintains his rural household in one of America’s last free places. Ward is a twelve-year veteran of the U.S. Army, including service in Operation Desert Storm and (in Germany in support of) Operation Joint Endeavor, and today is a staunch minarchist libertarian, along with being an author, novelist, self-employed small businessman, woods bum, and semi-professional bad influence. You can see some of Ward's fiction writing [here](https://crimsondragonpublishing.com/ward-clark-aka-anderson-gentry/ "https://crimsondragonpublishing.com/ward-clark-aka-anderson-gentry/"), and be sure to follow Ward on [Rumble](https://rumble.com/c/AnimalAK "https://rumble.com/c/AnimalAK")!
+[ Read more by Ward Clark ](https://redstate.com/author/wardclark)
+[CALIFORNIA](https://redstate.com/tags/california) [CORRUPTION](https://redstate.com/tags/corruption) [FRAUD](https://redstate.com/tags/fraud) [GOVERNMENT WASTE](https://redstate.com/tags/government-waste)
+[At Least 200 Terrorists Are Trapped in Tunnels Behind Israeli Lines and Guess Who Wants to Free Them? ](https://redstate.com/streiff/2025/11/07/at-least-200-terrorists-are-trapped-in-tunnels-behind-israeli-lines-and-guess-who-wants-to-free-them-n2195973 "At Least 200 Terrorists Are Trapped in Tunnels Behind Israeli Lines and Guess Who Wants to Free Them?") [streiff](https://redstate.com/streiff/2025/11/07/at-least-200-terrorists-are-trapped-in-tunnels-behind-israeli-lines-and-guess-who-wants-to-free-them-n2195973 "streiff")
+[Video Emerges of the Condé Nast Offices ‘Confrontation,’ As Infantile Woke Staff Earned Their Pink Slips ](https://redstate.com/bradslager/2025/11/07/video-emerges-of-the-conde-nast-offices-confrontation-as-infantile-woke-staff-earned-their-pink-slips-n2195977 "Video Emerges of the Condé Nast Offices ‘Confrontation,’ As Infantile Woke Staff Earned Their Pink Slips") [Brad Slager](https://redstate.com/bradslager/2025/11/07/video-emerges-of-the-conde-nast-offices-confrontation-as-infantile-woke-staff-earned-their-pink-slips-n2195977 "Brad Slager")
+[Let Them Burn It Down ](https://redstate.com/eli-shepherd/2025/11/07/let-them-burn-it-down-n2195916 "Let Them Burn It Down") [Eli Shepherd](https://redstate.com/eli-shepherd/2025/11/07/let-them-burn-it-down-n2195916 "Eli Shepherd")
+[No Butts About It: Authorities Determine Cause of Massive Bronx Explosion ](https://redstate.com/bobhoge/2025/11/07/no-butts-about-it-authorities-determine-cause-of-massive-bronx-explosion-n2195975 "No Butts About It: Authorities Determine Cause of Massive Bronx Explosion") [Bob Hoge](https://redstate.com/bobhoge/2025/11/07/no-butts-about-it-authorities-determine-cause-of-massive-bronx-explosion-n2195975 "Bob Hoge")
+[The Last Line of Defense Against Zohran Mamdani Is Predictably Collapsing ](https://redstate.com/bonchie/2025/11/07/the-last-defense-in-new-york-against-zohran-mamdani-is-predictably-collapsing-n2195967 "The Last Line of Defense Against Zohran Mamdani Is Predictably Collapsing ") [Bonchie](https://redstate.com/bonchie/2025/11/07/the-last-defense-in-new-york-against-zohran-mamdani-is-predictably-collapsing-n2195967 "Bonchie")
+[Army Professor Launches Info War on Conservative School Board Members ](https://redstate.com/chase-spears/2025/11/07/army-professor-wages-information-war-on-school-board-conservatives-n2195801 "Army Professor Launches Info War on Conservative School Board Members") [Chase Spears](https://redstate.com/chase-spears/2025/11/07/army-professor-wages-information-war-on-school-board-conservatives-n2195801 "Chase Spears")
+### Join the conversation as a VIP Member
+Login to Leave a Comment
+####  Trending on RedState Videos
+###  Trending __
+[At Least 200 Terrorists Are Trapped in Tunnels Behind Israeli Lines and Guess Who Wants to Free Them? ](https://redstate.com/streiff/2025/11/07/at-least-200-terrorists-are-trapped-in-tunnels-behind-israeli-lines-and-guess-who-wants-to-free-them-n2195973 "At Least 200 Terrorists Are Trapped in Tunnels Behind Israeli Lines and Guess Who Wants to Free Them?")
+[Video Emerges of the Condé Nast Offices ‘Confrontation,’ As Infantile Woke Staff Earned Their Pink Slips ](https://redstate.com/bradslager/2025/11/07/video-emerges-of-the-conde-nast-offices-confrontation-as-infantile-woke-staff-earned-their-pink-slips-n2195977 "Video Emerges of the Condé Nast Offices ‘Confrontation,’ As Infantile Woke Staff Earned Their Pink Slips")
+[Let Them Burn It Down ](https://redstate.com/eli-shepherd/2025/11/07/let-them-burn-it-down-n2195916 "Let Them Burn It Down")
+[No Butts About It: Authorities Determine Cause of Massive Bronx Explosion ](https://redstate.com/bobhoge/2025/11/07/no-butts-about-it-authorities-determine-cause-of-massive-bronx-explosion-n2195975 "No Butts About It: Authorities Determine Cause of Massive Bronx Explosion")
+[The Last Line of Defense Against Zohran Mamdani Is Predictably Collapsing ](https://redstate.com/bonchie/2025/11/07/the-last-defense-in-new-york-against-zohran-mamdani-is-predictably-collapsing-n2195967 "The Last Line of Defense Against Zohran Mamdani Is Predictably Collapsing ")
+[![](https://media.townhall.com/cdn/hodl/rs/images/up/2019/08/358fb640-cd74-4c58-9e16-b1b855408514-536x311.jpg) ](https://redstate.com/brandon_morse/2025/11/07/do-we-really-want-autonomous-robots-in-the-home-n2195970 "Do We Really Want Autonomous Robots in the Home?")
+[Do We Really Want Autonomous Robots in the Home?](https://redstate.com/brandon_morse/2025/11/07/do-we-really-want-autonomous-robots-in-the-home-n2195970 "Do We Really Want Autonomous Robots in the Home?")
+[Brandon Morse](https://redstate.com/author/brandon_morse)
+[![](https://media.townhall.com/cdn/hodl/2017/158/d6c6c294-7651-421b-b96e-8938a373d3b2-536x311.jpg) ](https://redstate.com/wardclark/2025/11/07/start-your-weekend-right-with-six-funky-songs-from-earth-wind-and-fire-n2195937 "Start Your Weekend Right With 6 Funky Songs From Earth, Wind & Fire")
+[Start Your Weekend Right With 6 Funky Songs From Earth, Wind & Fire](https://redstate.com/wardclark/2025/11/07/start-your-weekend-right-with-six-funky-songs-from-earth-wind-and-fire-n2195937 "Start Your Weekend Right With 6 Funky Songs From Earth, Wind & Fire")
+[Ward Clark](https://redstate.com/author/wardclark)
+[![](https://media.townhall.com/cdn/hodl/rs/images/up/2025/147/a6f3dcbc-c90d-48c2-9ab5-96fb9eaccbd8-536x311.jpg) ](https://redstate.com/wardclark/2025/11/07/heroes-of-womens-sports-oregon-stars-celebrated-for-courageous-stand-n2195972 "Heroes of Women's Sports: Oregon Stars Celebrated for Courageous Stand")
+[Heroes of Women's Sports: Oregon Stars Celebrated for Courageous Stand](https://redstate.com/wardclark/2025/11/07/heroes-of-womens-sports-oregon-stars-celebrated-for-courageous-stand-n2195972 "Heroes of Women's Sports: Oregon Stars Celebrated for Courageous Stand")
+[Ward Clark](https://redstate.com/author/wardclark)
+[![](https://media.townhall.com/cdn/hodl/2025/213/1bae0b89-f5ff-4cf6-8282-9593d8d1e8eb-536x311.jpg) ](https://redstate.com/wardclark/2025/11/07/new-evac-factory-touted-as-key-to-us-independence-from-china-n2195969 "New Rare-Earth Magnet Factory Touted As Key to US Independence From China")
+[New Rare-Earth Magnet Factory Touted As Key to US Independence From China](https://redstate.com/wardclark/2025/11/07/new-evac-factory-touted-as-key-to-us-independence-from-china-n2195969 "New Rare-Earth Magnet Factory Touted As Key to US Independence From China")
+[Ward Clark](https://redstate.com/author/wardclark)
+[![](https://media.townhall.com/cdn/hodl/2025/304/d979df8d-f61f-4d3c-a955-0a40dde244ae-536x311.jpg) ](https://redstate.com/wardclark/2025/11/07/shutdown-thaw-lawmakers-now-budging-after-37-days-of-gridlock-n2195968 "Shutdown Thaw: Lawmakers Now Budging After 37 Days of Gridlock")
+[Shutdown Thaw: Lawmakers Now Budging After 37 Days of Gridlock](https://redstate.com/wardclark/2025/11/07/shutdown-thaw-lawmakers-now-budging-after-37-days-of-gridlock-n2195968 "Shutdown Thaw: Lawmakers Now Budging After 37 Days of Gridlock")
+[Ward Clark](https://redstate.com/author/wardclark)
+[![](https://media.townhall.com/cdn/hodl/2024/198/bffafcb5-3290-4f3f-a09d-420be582c87a-536x311.jpg) ](https://redstate.com/terichristoph/2025/11/07/elise-stefanik-throws-her-hat-into-the-ring-for-governor-of-new-york-n2195965 "Elise Stefanik Torches Kathy Hochul in Fiery Campaign Launch: ‘Worst Governor in America’")
+[Elise Stefanik Torches Kathy Hochul in Fiery Campaign Launch: ‘Worst Governor in America’](https://redstate.com/terichristoph/2025/11/07/elise-stefanik-throws-her-hat-into-the-ring-for-governor-of-new-york-n2195965 "Elise Stefanik Torches Kathy Hochul in Fiery Campaign Launch: ‘Worst Governor in America’")
+[Teri Christoph](https://redstate.com/author/terichristoph)
+[ ](https://townhall.com/tipsheet/mattvespa/2025/11/07/is-theres-something-fishy-with-new-jerseys-latest-election-results-n2666104 "There Might be Something Odd About New Jersey's Election Results - 240")
+[![townhall.com](https://townhall.com/svg/thm/logo-townhall.svg) ](https://townhall.com)
+[ ](https://twitchy.com/samj/2025/11/07/independent-blue-check-journo-records-video-with-cellphone-complaining-that-her-snap-benes-have-run-out-n2421381 "Blue-Check Journo Shares Video of Expensive Smartphone to Rant at Trump Over Her SNAP Balance and HOOBOY - 209")
+[![twitchy.com](https://townhall.com/svg/thm/logo-twitchy.svg) ](https://twitchy.com)
+[ ](https://redstate.com/streiff/2025/11/07/at-least-200-terrorists-are-trapped-in-tunnels-behind-israeli-lines-and-guess-who-wants-to-free-them-n2195973 "At Least 200 Terrorists Are Trapped in Tunnels Behind Israeli Lines and Guess Who Wants to Free Them? - 387")
+[![redstate.com](https://townhall.com/svg/thm/logo-redstate.svg) ](https://redstate.com)
+[ ](https://pjmedia.com/ashleymccully/2025/11/07/welcome-to-the-real-world-former-food-stampers-n4945676 "Welcome to the Real World, Former Food Stampers - 231")
+[![pjmedia.com](https://townhall.com/svg/thm/logo-pjmedia.svg) ](https://pjmedia.com)
+[![Redstate.com](https://cdn.townhall.com/web/thm/logo-redstate.svg) ](https://redstate.com/)
+Copyright Redstate.com/Salem Media. All Rights Reserved. Terms under which this service is provided to you.
+* [![Redstate.com](https://cdn.townhall.com/web/thm/logo-redstate.svg)](https://redstate.com)
+* [![townhall.com](https://townhall.com/svg/thm/logo-townhall.svg)](https://townhall.com)
+* [![pjmedia.com](https://townhall.com/svg/thm/logo-pjmedia.svg)](https://pjmedia.com)
+* [![twitchy.com](https://cdn.townhall.com/web/thm/logo-twitchy.svg)](https://twitchy.com)
+* [![hotair.com](https://cdn.townhall.com/web/thm/logo-hotair.svg)](https://hotair.com)
+* [![bearingarms.com](https://redstate.com/svg/thm/logo-bearingarms.svg)](https://bearingarms.com)
+[About RedState](https://redstate.com/about "About RedState") [Contact Us](https://redstate.com/contact-us "Contact Us") [Authors](https://redstate.com/authors "Authors") [VIP](https://redstate.com/vip "VIP") [Investigations](https://redstate.com/investigations "Investigations") [News & Politics](https://redstate.com/news-and-politics "News & Politics") [Culture](https://redstate.com/culture "Culture") [Columns](https://redstate.com/category/columns "Columns") [Podcasts](https://redstate.com/podcasts "Podcasts") [Advertise](https://townhallmedia.com/ "Advertise") [Terms & Conditions](https://media.townhall.com/townhall/privacypolicy/TermsofUse.htm "Terms & Conditions") [Privacy Policy](https://salemmedia.com/privacy-policy/ "Privacy Policy") [California - Do Not Sell My Personal Information](https://salemmedia.com/ccpa-sale-opt-out/%20 "California - Do Not Sell My Personal Information") [California - CCPA Notice](https://salemmedia.com/townhall-media-ccpa-privacy-notice-for-california-residents/ "California - CCPA Notice") [Sitemap](https://redstate.com/sitemaps/sitemapindex-redstate.xml "Sitemap") [Newsletters](https://redstate.com/newsletters "Newsletters")

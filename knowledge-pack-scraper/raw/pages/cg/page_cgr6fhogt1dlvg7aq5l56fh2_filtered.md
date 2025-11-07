@@ -1,0 +1,1 @@
+[Previous](https://needreed.com/paul-reeds-case-against-a-truck-driver-who-hit-his-client/) [Next](https://needreed.com/road-rage-lawsuit-crushed-attorney-paul-reed-wins-decisive-appellate-victory/)
