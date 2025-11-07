@@ -3,13 +3,13 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T03:21:59.575184",
+    "lastUpdated": "2025-11-07T03:22:02.054471",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
-    "pending": 464,
-    "claimed": 1,
+    "pending": 463,
+    "claimed": 2,
     "urls_discovered": 0,
     "completed": 11,
     "failed": 0
@@ -787,15 +787,16 @@
       "subcategory": "safe-driver-discount",
       "carrier": "GEICO",
       "priority": "high",
-      "status": "pending",
-      "assignedTo": null,
+      "status": "claimed",
+      "assignedTo": "agnt_npw5ibdz8sxivozrdyi5zrnt",
       "startedAt": null,
       "completedAt": null,
       "durationSeconds": null,
       "urlsDiscoveredCount": null,
       "errorMessage": null,
       "retryCount": 0,
-      "notes": null
+      "notes": null,
+      "claimedAt": "2025-11-07T03:22:02.052290"
     },
     {
       "id": "search_qz15xxi149885sr214eod9j5",
