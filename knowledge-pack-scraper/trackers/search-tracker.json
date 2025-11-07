@@ -3,15 +3,15 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T03:15:11.215065",
+    "lastUpdated": "2025-11-07T03:15:49.239252",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
     "pending": 472,
-    "claimed": 2,
+    "claimed": 1,
     "urls_discovered": 0,
-    "completed": 2,
+    "completed": 3,
     "failed": 0
   },
   "searches": [
@@ -5309,16 +5309,18 @@
       "subcategory": "compensation-structure-queries",
       "carrier": null,
       "priority": "medium",
-      "status": "claimed",
+      "status": "completed",
       "assignedTo": "agnt_l2q6x0fr7adoy1xxcrp1hyar",
       "startedAt": null,
-      "completedAt": null,
+      "completedAt": "2025-11-07T03:15:49.236990",
       "durationSeconds": null,
-      "urlsDiscoveredCount": null,
+      "urlsDiscoveredCount": 5,
       "errorMessage": null,
       "retryCount": 0,
       "notes": null,
-      "claimedAt": "2025-11-07T03:15:11.212927"
+      "claimedAt": "2025-11-07T03:15:11.212927",
+      "urlsNewCount": 5,
+      "urlsExistingCount": 0
     },
     {
       "id": "search_w1xcvaf0j33spe43prnc6qbl",
