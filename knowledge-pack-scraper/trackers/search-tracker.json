@@ -3,13 +3,13 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T04:32:29.603794",
+    "lastUpdated": "2025-11-07T04:32:33.138958",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
-    "pending": 475,
-    "claimed": 0,
+    "pending": 474,
+    "claimed": 1,
     "urls_discovered": 0,
     "completed": 1,
     "failed": 0
@@ -2793,15 +2793,16 @@
       "subcategory": "property-value-requirements",
       "carrier": "GEICO",
       "priority": "high",
-      "status": "pending",
-      "assignedTo": null,
+      "status": "claimed",
+      "assignedTo": "agnt_ok0jh18l4f2ji8t5cdf0wv86",
       "startedAt": null,
       "completedAt": null,
       "durationSeconds": null,
       "urlsDiscoveredCount": null,
       "errorMessage": null,
       "retryCount": 0,
-      "notes": null
+      "notes": null,
+      "claimedAt": "2025-11-07T04:32:33.136711"
     },
     {
       "id": "search_rekzihs1s58ipeweg25mz4pc",
