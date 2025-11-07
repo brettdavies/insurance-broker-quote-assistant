@@ -3,13 +3,13 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T06:04:09.307355",
+    "lastUpdated": "2025-11-07T06:04:37.488837",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
-    "pending": 400,
-    "claimed": 6,
+    "pending": 399,
+    "claimed": 7,
     "urls_discovered": 0,
     "completed": 70,
     "failed": 0
@@ -3231,15 +3231,16 @@
       "subcategory": "construction-type-restrictions",
       "carrier": "Progressive",
       "priority": "high",
-      "status": "pending",
-      "assignedTo": null,
+      "status": "claimed",
+      "assignedTo": "agnt_e01d1fz5i6szaq0kk3p902o4",
       "startedAt": null,
       "completedAt": null,
       "durationSeconds": null,
       "urlsDiscoveredCount": null,
       "errorMessage": null,
       "retryCount": 0,
-      "notes": null
+      "notes": null,
+      "claimedAt": "2025-11-07T06:04:37.486759"
     },
     {
       "id": "search_dtvghhtok41e2uat2yxd82xy",
