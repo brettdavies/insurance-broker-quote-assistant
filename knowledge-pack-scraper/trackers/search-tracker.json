@@ -3,13 +3,13 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T04:45:32.710045",
+    "lastUpdated": "2025-11-07T04:45:34.992973",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
-    "pending": 459,
-    "claimed": 0,
+    "pending": 458,
+    "claimed": 1,
     "urls_discovered": 0,
     "completed": 17,
     "failed": 0
@@ -5866,15 +5866,16 @@
       "subcategory": "specialty-coverage-(flood,-earthquake,-etc.)",
       "carrier": "Progressive",
       "priority": "medium",
-      "status": "pending",
-      "assignedTo": null,
+      "status": "claimed",
+      "assignedTo": "agnt_hix4frk5closxflk5csulzkq",
       "startedAt": null,
       "completedAt": null,
       "durationSeconds": null,
       "urlsDiscoveredCount": null,
       "errorMessage": null,
       "retryCount": 0,
-      "notes": null
+      "notes": null,
+      "claimedAt": "2025-11-07T04:45:34.990318"
     },
     {
       "id": "search_j0o4lpdt9o1pmfq4y3577g5c",
