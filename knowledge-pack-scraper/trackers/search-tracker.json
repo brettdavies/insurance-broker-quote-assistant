@@ -3,13 +3,13 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T04:37:25.416242",
+    "lastUpdated": "2025-11-07T04:37:28.761614",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
-    "pending": 470,
-    "claimed": 0,
+    "pending": 469,
+    "claimed": 1,
     "urls_discovered": 0,
     "completed": 6,
     "failed": 0
@@ -4678,15 +4678,16 @@
       "subcategory": "all-states-home-insurance-averages",
       "carrier": null,
       "priority": "high",
-      "status": "pending",
-      "assignedTo": null,
+      "status": "claimed",
+      "assignedTo": "agnt_y69dsvw5jqhro7katucafc03",
       "startedAt": null,
       "completedAt": null,
       "durationSeconds": null,
       "urlsDiscoveredCount": null,
       "errorMessage": null,
       "retryCount": 0,
-      "notes": null
+      "notes": null,
+      "claimedAt": "2025-11-07T04:37:28.759141"
     },
     {
       "id": "search_f9qov24mfwfz2k31hqz06evw",
