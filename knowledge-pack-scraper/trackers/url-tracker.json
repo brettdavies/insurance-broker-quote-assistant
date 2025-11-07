@@ -3,12 +3,12 @@
     "version": "1.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T04:41:54.933712",
+    "lastUpdated": "2025-11-07T04:42:40.773378",
     "totalUrls": 0,
     "description": "Phase 2 URL fetching tracker - URLs pending crawl4ai fetch"
   },
   "statusCounts": {
-    "pending": 123,
+    "pending": 133,
     "fetching": 0,
     "completed": 0,
     "failed": 0
@@ -2102,6 +2102,176 @@
       "url": "https://www.geico.com/insurance-agents/",
       "urlHash": "198d4758c0a4d689",
       "priority": "medium",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_kvwkm6neccjxnq26saarbgt0",
+      "search_ids": [
+        "search_qseh76a2il9pmcox4ewgajcp"
+      ],
+      "url": "https://www.plymouthrock.com/insurance/auto/ny/coverage-policy-options/uninsured-motorist-coverage",
+      "urlHash": "aa818318918c9af6",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_iwfomcsnimsykzwrjlnh5jer",
+      "search_ids": [
+        "search_qseh76a2il9pmcox4ewgajcp"
+      ],
+      "url": "https://www.dfs.ny.gov/consumers/auto_insurance/minimum_auto_insurance_requirements",
+      "urlHash": "30a5f63042b1eae7",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_ho3ndmrvgg76mwzyoftt0xhs",
+      "search_ids": [
+        "search_qseh76a2il9pmcox4ewgajcp"
+      ],
+      "url": "https://www.kgglaw.com/articles/uninsured-and-underinsured-motorist-insurance-in-new-york.shtml",
+      "urlHash": "f0706ec92a24c76e",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_xn3hh5k0om02hi0icjh4at1p",
+      "search_ids": [
+        "search_qseh76a2il9pmcox4ewgajcp"
+      ],
+      "url": "https://rosenblumlaw.com/personal-injury/ny/car-accidents/insurance/uninsured-claims/",
+      "urlHash": "105247a245d4fb4c",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_m04w5qeucrlbke7rc1cznlzw",
+      "search_ids": [
+        "search_qseh76a2il9pmcox4ewgajcp"
+      ],
+      "url": "https://www.dupeelaw.com/new-york-criminal-law-articles/uninsured-underinsured-motorist-coverage/",
+      "urlHash": "596f6d5d70ba24ba",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_j1i9crkoogmxkgtfvkcu90ht",
+      "search_ids": [
+        "search_qseh76a2il9pmcox4ewgajcp"
+      ],
+      "url": "https://www.chopranocerino.com/faqs/should-i-buy-uninsured-motorist-coverage-in-new-york/",
+      "urlHash": "603f830597c67642",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_j9l4r0s7mdylvxtb83kz78d8",
+      "search_ids": [
+        "search_qseh76a2il9pmcox4ewgajcp"
+      ],
+      "url": "https://www.aeelaw.com/uninsured-and-underinsured-motorist-laws-in-new-york/",
+      "urlHash": "d98541235837c3f9",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_blcgn5bu9e416xgclk0hg9a8",
+      "search_ids": [
+        "search_qseh76a2il9pmcox4ewgajcp"
+      ],
+      "url": "https://www.dfs.ny.gov/insurance/ogco2004/rg040428.htm",
+      "urlHash": "7d430cff68774685",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_pk02unvsj5rl0cd0vd5s72hu",
+      "search_ids": [
+        "search_qseh76a2il9pmcox4ewgajcp"
+      ],
+      "url": "https://www.hlgny.com/does-new-york-require-uninsured-motorist-coverage/",
+      "urlHash": "073ae3fca31fe832",
+      "priority": "high",
+      "status": "pending",
+      "assignedTo": null,
+      "pageId": null,
+      "htmlFile": null,
+      "markdownFile": null,
+      "fetchedAt": null,
+      "fetchError": null,
+      "retryCount": 0
+    },
+    {
+      "id": "url_vcnkbaj882r1gova3cm8srhe",
+      "search_ids": [
+        "search_qseh76a2il9pmcox4ewgajcp"
+      ],
+      "url": "https://www.aeelaw.com/uninsured-and-underinsured-motorist-coverage-in-new-york/",
+      "urlHash": "b29e5fb6f83e3f36",
+      "priority": "high",
       "status": "pending",
       "assignedTo": null,
       "pageId": null,
