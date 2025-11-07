@@ -3,13 +3,13 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T05:27:11.746210",
+    "lastUpdated": "2025-11-07T05:27:14.061726",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
-    "pending": 422,
-    "claimed": 3,
+    "pending": 421,
+    "claimed": 4,
     "urls_discovered": 0,
     "completed": 51,
     "failed": 0
@@ -3983,15 +3983,16 @@
       "subcategory": "new-york-auto-minimums",
       "carrier": null,
       "priority": "high",
-      "status": "pending",
-      "assignedTo": null,
+      "status": "claimed",
+      "assignedTo": "agnt_exptyaz1ysnk9zqzwmjwu7x3",
       "startedAt": null,
       "completedAt": null,
       "durationSeconds": null,
       "urlsDiscoveredCount": null,
       "errorMessage": null,
       "retryCount": 0,
-      "notes": null
+      "notes": null,
+      "claimedAt": "2025-11-07T05:27:14.059861"
     },
     {
       "id": "search_alh2bt49mpj724v2yv3v4yrh",
