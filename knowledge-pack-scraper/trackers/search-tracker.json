@@ -3,13 +3,13 @@
     "version": "2.0",
     "schemaVersion": "multi-step-v1",
     "createdDate": "2025-11-06",
-    "lastUpdated": "2025-11-07T06:00:15.533169",
+    "lastUpdated": "2025-11-07T06:00:17.905778",
     "totalSearches": 476,
     "description": "Phase 2 search execution tracker - searches pending execution"
   },
   "statusCounts": {
-    "pending": 407,
-    "claimed": 3,
+    "pending": 406,
+    "claimed": 4,
     "urls_discovered": 0,
     "completed": 66,
     "failed": 0
@@ -6393,15 +6393,16 @@
       "subcategory": "new-york-specific",
       "carrier": null,
       "priority": "medium",
-      "status": "pending",
-      "assignedTo": null,
+      "status": "claimed",
+      "assignedTo": "agnt_obgz37flm7rxpvwjetcqotfb",
       "startedAt": null,
       "completedAt": null,
       "durationSeconds": null,
       "urlsDiscoveredCount": null,
       "errorMessage": null,
       "retryCount": 0,
-      "notes": null
+      "notes": null,
+      "claimedAt": "2025-11-07T06:00:17.903295"
     },
     {
       "id": "search_pxtcvhccqkva73rs8glsy8tu",
