@@ -2,6 +2,26 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## CLI Tool Usage Guidance
+
+- **Prefer CLI tools** over direct in-memory manipulation when possible, especially for editing or searching within larger files or across the codebase.
+    - Examples: Use `sed`, `awk`, or in-place editing CLI utilities for modifying files; use code-aware tools (`ast-grep`) for refactoring.
+- **For file deletion,** do NOT use `rm` or `git rm`.  
+    - Instead, use [`trash`](https://github.com/sindresorhus/trash) to safely move files to the system trash, preserving the ability to recover accidentally deleted files.
+- **For code search:**
+    - Always use [`rg` (ripgrep)](https://github.com/BurntSushi/ripgrep) instead of `grep` for fast recursive search.
+    - [`ast-grep`](https://ast-grep.github.io/) is also available for powerful, syntax-aware, high-performance codebase traversal.
+- When uncertain what CLI tools are available on the system, first run:
+    ```bash
+    brew list
+    ```
+    to enumerate all installed Homebrew tools. If your desired CLI tool is not listed, or you encounter a "command not found" error, ask the user to install the necessary tool before continuing.
+- 
+- **Summary:** Use CLI-oriented, scriptable approaches for repetitive or large-scale file/codebase operations. Prefer code-aware tools for search/replace and avoid destructive deletions. If a needed tool is missing, request that the user install it before attempting the operation.
+
+
+
+
 ## Project Overview
 
 **IQuote Pro** is a 5-day PEAK6 interview project demonstrating a multi-agent AI assistant for insurance brokers. The system uses a **hybrid LLM + deterministic rules architecture**:
@@ -367,47 +387,6 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 - Types other than feat and fix MAY be used in your commit messages, e.g., docs: update ref docs.
 - The units of information that make up Conventional Commits MUST NOT be treated as case sensitive by implementors, with the exception of BREAKING CHANGE which MUST be uppercase.
 - BREAKING-CHANGE MUST be synonymous with BREAKING CHANGE, when used as a token in a footer.
-
----
-
-## Knowledge Pack Phase 2 Data Gathering
-
-**Trigger**: when performing knowledge pack data gathering, searching for insurance data, or executing Phase 2 scraping
-
-### Overview
-
-Phase 2 data gathering is a structured, autonomous process that requires strict adherence to the documented workflow. Each search must be executed exactly as specified, with progress committed to git after every step.
-
-### Required Reading
-
-**BEFORE starting any search**, you MUST read the complete instructions:
-- [docs/knowledge-pack/phase-2-agent-instructions.md](docs/knowledge-pack/phase-2-agent-instructions.md)
-
-**AFTER every git push**, you MUST:
-1. Clear your working memory of the previous search
-2. Re-read [phase-2-agent-instructions.md](docs/knowledge-pack/phase-2-agent-instructions.md) from the beginning
-3. Start fresh with the next search
-
-### Critical Rules
-
-- ✅ **Follow instructions exactly** - No deviations or shortcuts
-- ✅ **One search at a time** - Complete the full workflow before starting next
-- ✅ **Refresh memory** - Re-read instructions after every push
-- ✅ **Commit progress** - Git push after claim AND after completion
-- ✅ **Use cuid2 IDs** - All page files use `page_{cuid2}.{ext}` format
-- ✅ **Save full pages** - Store complete HTML/PDF content
-- ⚠️ **No screenshots** - Use full page capture instead
-- ⚠️ **No markdown conversion** - That happens post-Phase 2
-
-### Workflow Summary
-
-1. Read [phase-2-agent-instructions.md](docs/knowledge-pack/phase-2-agent-instructions.md)
-2. Execute one complete search cycle (claim → search → extract → commit)
-3. Push to git
-4. **STOP and refresh memory**
-5. Return to step 1
-
-This ensures consistency and prevents drift from the defined process.
 
 ---
 
