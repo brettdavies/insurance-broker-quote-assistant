@@ -66,15 +66,10 @@ export class PillNode extends DecoratorNode<JSX.Element> {
   }
 
   createDOM(config: EditorConfig): HTMLElement {
+    // Create simple container for the decorator content
+    // The actual pill span with attributes is created in decorate()
     const span = document.createElement('span')
-    span.className = this.getPillClasses()
-    span.setAttribute('data-pill', 'true')
-    span.setAttribute('data-key', this.__key_)
-    span.setAttribute('data-value', this.__value)
-    span.setAttribute('data-validation', this.__validation)
-    if (this.__fieldName) {
-      span.setAttribute('data-field-name', this.__fieldName)
-    }
+    span.className = 'pill-container'
     return span
   }
 
@@ -128,10 +123,12 @@ export class PillNode extends DecoratorNode<JSX.Element> {
   }
 
   decorate(): JSX.Element {
+    const nodeKey = this.getKey()
     return (
       <span
         className={this.getPillClasses()}
         data-pill="true"
+        data-pill-node-key={nodeKey}
         data-key={this.__key_}
         data-value={this.__value}
         data-validation={this.__validation}
@@ -150,7 +147,7 @@ export class PillNode extends DecoratorNode<JSX.Element> {
     return true
   }
 
-  getKey(): string {
+  getFieldKey(): string {
     return this.__key_
   }
 

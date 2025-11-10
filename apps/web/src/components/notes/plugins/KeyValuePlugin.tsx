@@ -3,101 +3,26 @@
  *
  * Detects key-value syntax (e.g., k:5, deps:4) in text nodes and transforms
  * them into PillNode instances with proper validation.
+ *
+ * Uses SINGLE transformation path (mutation listener) to follow DRY/STAR principles.
  */
 
 import { parseKeyValueSyntax } from '@/lib/key-value-parser'
 import { useLexicalComposerContext } from '@lexical/react/LexicalComposerContext'
 import { $getNodeByKey, $getSelection, $isRangeSelection, $isTextNode, TextNode } from 'lexical'
 import { useEffect } from 'react'
-import { $createPillNode, $isPillNode } from '../nodes/PillNode'
+import { $createPillNode } from '../nodes/PillNode'
 
 export function KeyValuePlugin(): null {
   const [editor] = useLexicalComposerContext()
 
   useEffect(() => {
-    // Register a text content listener to detect key-value patterns
-    const removeUpdateListener = editor.registerUpdateListener(({ editorState }) => {
-      editorState.read(() => {
-        const selection = $getSelection()
-        if (!$isRangeSelection(selection)) return
-
-        const anchorNode = selection.anchor.getNode()
-        if (!$isTextNode(anchorNode)) return
-
-        // Get the text content
-        const text = anchorNode.getTextContent()
-        if (!text) return
-
-        // Parse key-value syntax
-        const parsed = parseKeyValueSyntax(text)
-        if (parsed.length === 0) return
-
-        // Transform matches into pills
-        editor.update(() => {
-          const selection = $getSelection()
-          if (!$isRangeSelection(selection)) return
-
-          const anchorNode = selection.anchor.getNode()
-          if (!$isTextNode(anchorNode)) return
-
-          const text = anchorNode.getTextContent()
-          const parsed = parseKeyValueSyntax(text)
-
-          if (parsed.length === 0) return
-
-          // Process each match and replace with pill
-          let offset = 0
-          const parent = anchorNode.getParent()
-          if (!parent) return
-
-          for (const match of parsed) {
-            const matchIndex = text.indexOf(match.original, offset)
-            if (matchIndex === -1) continue
-
-            // Split text node at match boundaries
-            const beforeText = text.substring(offset, matchIndex)
-            const afterText = text.substring(matchIndex + match.original.length)
-
-            // Create pill node
-            const pillNode = $createPillNode({
-              key: match.key,
-              value: match.value,
-              validation: match.validation,
-              fieldName: match.fieldName,
-            })
-
-            // Replace the text node with: beforeText + pill + (new text node for afterText)
-            if (offset === 0 && matchIndex === 0) {
-              // Pill is at the start
-              anchorNode.setTextContent(afterText)
-              anchorNode.insertBefore(pillNode)
-            } else if (beforeText) {
-              // Pill is in the middle or end
-              const beforeNode = new TextNode(beforeText)
-              anchorNode.insertBefore(beforeNode)
-              anchorNode.insertBefore(pillNode)
-              anchorNode.setTextContent(afterText)
-            } else {
-              // Pill immediately follows previous content
-              anchorNode.insertBefore(pillNode)
-              anchorNode.setTextContent(afterText)
-            }
-
-            // Add a space after the pill for better UX
-            if (afterText && !afterText.startsWith(' ')) {
-              const spaceNode = new TextNode(' ')
-              pillNode.insertAfter(spaceNode)
-            }
-
-            offset = matchIndex + match.original.length
-          }
-        })
-      })
-    })
-
-    // Register a mutation listener to detect when text changes
+    // Single transformation path: mutation listener
+    // This catches all text node changes (typing, paste, programmatic updates)
     const removeMutationListener = editor.registerMutationListener(TextNode, (mutatedNodes) => {
       editor.update(() => {
+        const selection = $getSelection()
+
         for (const [nodeKey, mutation] of mutatedNodes) {
           if (mutation === 'updated' || mutation === 'created') {
             const node = $getNodeByKey(nodeKey)
@@ -108,6 +33,22 @@ export function KeyValuePlugin(): null {
 
             if (parsed.length === 0) continue
 
+            // Check if user is actively editing this specific node
+            const isEditing =
+              $isRangeSelection(selection) &&
+              selection.isCollapsed() &&
+              selection.anchor.getNode() === node
+
+            // Only skip transformation if:
+            // 1. User is actively editing this node AND
+            // 2. Text doesn't end with space (still typing)
+            //
+            // This applies to BOTH initial typing AND editing converted pills.
+            // No special cases needed - same logic for all text editing.
+            if (isEditing && !text.endsWith(' ')) {
+              continue
+            }
+
             // Transform text into pills
             transformTextToPills(node, parsed)
           }
@@ -116,7 +57,6 @@ export function KeyValuePlugin(): null {
     })
 
     return () => {
-      removeUpdateListener()
       removeMutationListener()
     }
   }, [editor])
@@ -125,7 +65,7 @@ export function KeyValuePlugin(): null {
 }
 
 /**
- * Helper function to transform text node into pills
+ * Helper function to transform text node into pills (STAR: Single source of truth for transformation logic)
  */
 function transformTextToPills(
   textNode: TextNode,
