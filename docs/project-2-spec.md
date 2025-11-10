@@ -1,7 +1,5 @@
 # Project 2: IQuote Pro Sales Assistant - Specification
 
-**Source:** PEAK6 AI Strategies Applied AI Case Studies (Nov 2025) - Pages 4-7
-
 ---
 
 ## Project Overview

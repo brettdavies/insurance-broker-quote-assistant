@@ -1,6 +1,6 @@
 # 8. Core Workflows
 
-This section illustrates the two primary workflows that fulfill PEAK6's spec requirements: conversational intake and policy-based savings analysis.
+This section illustrates the two primary workflows that fulfill the spec requirements: conversational intake and policy-based savings analysis.
 
 **Why These Workflows:**
 - **Conversational intake:** Enables brokers to start with natural language (no forms), system extracts structured data
@@ -72,6 +72,79 @@ sequenceDiagram
 2. **Routing before discounts:** Need to know which carrier to query for discount rules
 3. **Discounts before pitch:** Pitch Generator needs structured opportunity data to write compelling prose
 4. **Compliance last:** Final safeguard ensures nothing non-compliant reaches broker
+
+### 8.1.5 Pitch Generation with Citations
+
+**Purpose:** Format opportunity data into broker-facing narrative text with industry-standard footnote citations for regulatory compliance.
+
+**Project Requirement:**
+All discount information must include citation to source material (industry-standard footnote format per spec).
+
+**What Citations Must Include:**
+- Entity-level source tracking (every discount/carrier/state has `source` field with URI + accessed date)
+- Unique cuid2 ID for each entity (enables precise citation without line number fragility)
+- Footnote-style references linking narrative claims to source URLs
+
+**Example Citation Output:**
+
+```
+Based on GEICO's Multi-Policy Bundle discount: 15% off when bundling
+auto and home insurance.(1)
+
+Potential Annual Savings: $450
+
+Additional opportunity: Safe Driver Discount (10% reduction for
+accident-free record).(2)
+
+Sources:
+(1) https://www.geico.com/auto/discounts/, accessed 2025-11-09
+(2) https://www.geico.com/safe-driver/, accessed 2025-11-09
+```
+
+**Architectural Decision: Two Valid Implementation Strategies**
+
+The dev team may choose either approach based on implementation complexity vs accuracy trade-offs:
+
+**Option A: Deterministic Citation Formatting** (more predictable)
+- **What:** Build citation map programmatically, assign footnote numbers sequentially
+- **How it works:** Track entity IDs in Map, increment counter for each new source, deduplicate identical sources
+- **Pros:** Predictable output format, easier to test, no LLM variability
+- **Cons:** Requires custom string formatting logic in Pitch Generator
+
+**Option B: LLM-Generated Citations** (more flexible)
+- **What:** Include source data in system prompt, let GPT-4o format citations naturally
+- **How it works:** Pass all opportunity sources to LLM, prompt to "use footnote-style citations"
+- **Pros:** Natural integration with prose generation, handles complex citation scenarios
+- **Cons:** LLM may occasionally misformat, requires prompt engineering to ensure consistency
+
+**Why Both Are Valid:**
+- **Option A** prioritizes predictability and testability (preferred for high-stakes regulatory scenarios)
+- **Option B** prioritizes natural prose integration (acceptable if Compliance Filter validates output)
+- Choice depends on dev team's comfort with LLM reliability vs custom formatting code
+
+**Data Flow for Citations:**
+
+```
+Knowledge Pack → RAG Service → Discount Engine → Pitch Generator → Output
+     ↓                ↓                 ↓                ↓
+  source field    cuid2 ID      opportunity.source    footnote text
+```
+
+1. **Knowledge Pack:** Every entity has `source: { uri, accessed, confidence }` field
+2. **RAG Service:** Preserves source metadata when returning query results
+3. **Discount Engine:** Attaches source to each opportunity object
+4. **Pitch Generator:** Formats sources as footnotes in narrative output
+5. **Compliance Filter:** Validates citation presence (catches missing sources before output)
+
+**Why This Matters:**
+- Insurance advertising regulations require substantiation of savings claims
+- Footnote citations enable broker to verify claims with carrier websites
+- cuid2-based entity IDs enable precise audit trail (superior to line numbers which break on file edits)
+- Compliance Filter can verify citation presence as part of regulatory checks
+
+**Cross-Reference:**
+- Entity-level source tracking: See Section 6.6 (Knowledge Pack RAG - Citation Format)
+- cuid2 ID conventions: See `docs/knowledge-pack/id-conventions.md`
 
 ---
 

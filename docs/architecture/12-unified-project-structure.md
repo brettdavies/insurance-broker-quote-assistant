@@ -13,7 +13,7 @@ insurance-broker-quote-assistant/
 ├── knowledge_pack/         # Offline insurance data (JSON files)
 │   ├── carriers/           # 3 carrier files (GEICO, Progressive, State Farm)
 │   └── states/             # 5 state requirement files (CA, TX, FL, NY, IL)
-├── evaluation/             # PEAK6 test cases + evaluation harness
+├── evaluation/             # test cases + evaluation harness
 │   ├── test-cases/         # 15 scenarios (10 conversational + 5 policy)
 │   ├── harness.ts          # Automated evaluation runner
 │   └── report.md           # Results + success metrics

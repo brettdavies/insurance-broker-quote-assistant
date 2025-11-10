@@ -364,3 +364,76 @@ useEffect(() => {
 - Escape key always closes modals (standard pattern)
 
 ---
+
+## 10.6 Keyboard Shortcuts Architecture
+
+**Purpose:** Provide power users with fastest possible data entry through single-prefix slash command system (33 total shortcuts: 27 fields + 6 actions).
+
+**Architectural Decision: Single-Prefix Slash Commands**
+
+**What:**
+- All shortcuts use `/` prefix (no modifier keys required)
+- **Field shortcuts:** Single letters for speed (`/k` for kids, `/v` for vehicles, `/n` for name)
+- **Action shortcuts:** Full words for clarity (`/export`, `/copy`, `/reset`, `/policy`, `/intake`, `/help`)
+- **Command mode state machine:** 2-second timeout window after `/` press, pattern matching on subsequent keystrokes
+
+**Why This Architecture:**
+- **Zero conflicts:** No browser/OS shortcuts use unmodified `/` + letter pattern (eliminates Emacs conflict issues)
+- **Fastest input:** 2 keystrokes vs 3 with modifiers (no Ctrl/Alt/Cmd hold required)
+- **One-handed operation:** Can type `/k` with left hand while using mouse with right
+- **Slack-familiar:** Insurance brokers already know `/` commands from daily Slack usage (zero training required)
+- **Single mental model:** One pattern to learn vs three different modifier patterns
+
+**Example Workflows:**
+
+1. **Field Entry:** Broker types `/k` → kids modal opens → types "3" → presses Enter → `k:3` injected into chat
+2. **Export Pitch:** Broker types `/export` → pitch copied to clipboard with citations
+3. **Mode Switch:** Broker types `/policy` → switches from intake mode to policy analysis mode
+4. **Help:** Broker types `/help` → shortcuts browser overlay appears
+
+**Design Rationale:**
+
+Three implementation approaches were evaluated:
+
+1. **Single-Prefix Slash Commands** ✅ **SELECTED**
+   - **Pros:** Zero conflicts, fastest input (2 keys), one-handed, Slack-familiar, single pattern
+   - **Cons:** Requires smart detection to avoid triggering on dates ("1/5/2025") or URLs
+   - **Why chosen:** Best combination of speed, usability, and conflict avoidance
+
+2. **Multiple Modifier Prefixes** ❌
+   - **Pattern:** `Ctrl+` for fields, `Alt+` for actions, `Cmd+Shift+` for modes
+   - **Why rejected:** Three patterns to learn (high cognitive load), Emacs conflicts (`Ctrl+K`, `Ctrl+D`, `Ctrl+V`)
+
+3. **Cmd+Shift+ for All** ❌
+   - **Pattern:** `Cmd+Shift+K` for kids, `Cmd+Shift+E` for export
+   - **Why rejected:** Slower (3 simultaneous keys), two-handed operation, less discoverable
+
+**Smart Detection (Non-Obvious Pattern):**
+
+Command mode triggers only when appropriate (avoids false positives):
+- **Trigger:** Unmodified `/` key pressed (not preceded by digit, not in URL, not in modal input field)
+- **Don't trigger on:** `"1/5/2025"` (date), `"http://"` (URL), `"//k"` (escaped literal)
+- **Context-aware:** Some letters reused across modes (`/r` = drivers in intake, current carrier in policy mode)
+
+**Visual Feedback:**
+- Bottom-right command mode indicator shows progress: `"/..."` → `"/k"` → `"/exp..."`
+- 2-second timeout clears indicator if no match found
+- Toast notification for invalid shortcuts (e.g., `/9` → "No shortcut for '9'")
+
+**Implementation Components:**
+- `useSlashCommands` React hook - State machine logic
+- Document-level event listener - Global slash detection
+- Command mode indicator component - Visual feedback
+- Context-aware field mapping - Intake vs policy mode switching
+
+**Why This Matters:**
+- Power users can enter full client profile in seconds without touching mouse
+- Slash commands reduce cognitive load (familiar pattern from Slack)
+- Zero conflicts enable reliable keyboard-driven workflow during live client calls
+- Single pattern is easier to teach and remember than multiple modifier combinations
+
+**Cross-Reference:**
+- **Complete Implementation Guide:** See [docs/keyboard-shortcuts-reference.md](../keyboard-shortcuts-reference.md) for full specification including all 33 shortcuts, state machine details, edge cases, mnemonic letter assignments, and developer implementation notes
+- **UX Integration:** See [docs/front-end-spec.md](../front-end-spec.md) for visual design and user experience details
+
+---

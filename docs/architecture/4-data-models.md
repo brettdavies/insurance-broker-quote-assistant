@@ -149,7 +149,7 @@
 
 **Design Decisions:**
 - **Missing fields explicit:** Enables progressive disclosure UI (collect more info as needed)
-- **Trace included:** Every interaction logged for PEAK6 evaluation harness
+- **Trace included:** Every interaction logged for evaluation harness
 
 ---
 
@@ -215,7 +215,7 @@
 
 ## 4.8 DecisionTrace
 
-**Purpose:** Complete audit trail of decision-making process for compliance logging and PEAK6 evaluation.
+**Purpose:** Complete audit trail of decision-making process for compliance logging and evaluation.
 
 **Schema Location:** `packages/shared/src/schemas/decision-trace.ts`
 

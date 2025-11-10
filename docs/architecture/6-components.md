@@ -1,6 +1,6 @@
 # 6. Components
 
-This section describes the 5 core components (2 LLM Agents + 3 Deterministic Engines) and 2 supporting components (RAG + Orchestrator) that fulfill PEAK6's "multi-agent preferred" requirement.
+This section describes the 5 core components (2 LLM Agents + 3 Deterministic Engines) and 2 supporting components (RAG + Orchestrator) that fulfill the project's "multi-agent preferred" requirement.
 
 ---
 
@@ -228,6 +228,54 @@ New shortcuts can be added without LLM retraining:
   ]
 }
 ```
+
+### 6.6.1 Runtime Query Optimization
+
+**Purpose:** Provide O(1) query performance for nested array data (discounts by carrier and state) through in-memory indexing.
+
+**The Problem:**
+Knowledge pack files contain nested array structures:
+- `carriers/geico.json` contains `carrier.discounts[]` array
+- Each discount has `states[]` array indicating availability
+- Naive approach: filter entire discounts array on every query = O(n) performance
+
+**Architectural Decision: In-Memory Indexing**
+
+Build lookup indexes during `loadKnowledgePack()` for instant queries:
+- **What:** Create Map-based indexes keyed by query patterns (e.g., `carrier:state → discounts[]`)
+- **Why:** O(1) lookup vs O(n) array filtering on every query
+- **When:** Indexes built once at startup, used for all subsequent queries
+
+**Design Rationale:**
+
+Three implementation options were evaluated:
+
+1. **In-Memory Indexing** ✅ **SELECTED**
+   - **Pros:** O(1) query performance, simple JSON file structure, low file I/O overhead (load once)
+   - **Cons:** Slightly higher memory usage for indexes
+   - **Why chosen:** Best query performance, aligns with "load at startup" pattern already in spec
+
+2. **Runtime Array Filtering** ❌
+   - **Pros:** Simple implementation, lower memory usage
+   - **Cons:** O(n) query performance (filters entire array each time), inefficient for frequent queries
+   - **Why rejected:** Too slow for repeated discount lookups in real-time broker conversations
+
+3. **Fully Atomic Files** ❌
+   - **Pros:** Ultimate query flexibility, can load only needed data
+   - **Cons:** High file I/O overhead (hundreds of file opens), complex file management, slower startup
+   - **Why rejected:** Overkill for demo scale, adds unnecessary complexity
+
+**Index Examples (Non-Obvious Pattern):**
+
+Common query patterns that benefit from indexing:
+- `discountsByCarrierState`: Map key `"geico:CA"` → all GEICO discounts available in California
+- `carriersByState`: Map key `"TX"` → all carriers operating in Texas
+- `eligibilityByCarrier`: Map key `"state_farm"` → eligibility rules for State Farm
+
+**Why This Matters:**
+- Discount Engine may query discounts 50+ times during multi-carrier comparison
+- O(1) lookups keep total workflow latency under 500ms (performance requirement)
+- Deterministic performance enables predictable response times for demo
 
 ---
 

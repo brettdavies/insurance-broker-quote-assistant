@@ -11,10 +11,10 @@
 - **No cloud services required**
 
 **Why Docker with External Knowledge Pack:**
-- **Self-hosted:** PEAK6 runs on their infrastructure, no cloud dependencies
+- **Self-hosted:** Client runs on their infrastructure, no cloud dependencies
 - **Easy knowledge updates:** Update JSON files without rebuilding container (mount `/knowledge_pack` volume)
 - **Simple deployment:** Single `docker run` command, no orchestration needed
-- **Portable:** Same container runs on any machine with Docker (dev laptops, PEAK6 servers)
+- **Portable:** Same container runs on any machine with Docker (dev laptops or client servers)
 
 **Docker Architecture:**
 ```dockerfile
@@ -27,7 +27,7 @@
 **Why External Knowledge Pack Mount:**
 - **Knowledge curation workflow:** Data team updates JSON files, restart container (no rebuild)
 - **Version control separation:** Knowledge pack can have separate git repo if needed
-- **Demo flexibility:** PEAK6 judges can modify knowledge pack to test edge cases
+- **Demo flexibility:** Evaluators can modify knowledge pack to test edge cases
 
 ## 14.2 CI/CD Pipeline
 
@@ -39,7 +39,7 @@
 **Why CI/CD for 5-Day Demo:**
 - **Quality gates:** Ensures code passes tests before merging
 - **Fast feedback:** Parallel jobs complete in ~2 minutes
-- **PEAK6 confidence:** Shows production-ready practices, not throwaway demo code
+- **Professional confidence:** Shows production-ready practices, not throwaway demo code
 
 **Pipeline Steps:**
 1. Install dependencies with Bun (`bun install`)
@@ -68,14 +68,14 @@ LOG_LEVEL=info
 
 **Why Simple Environment Strategy:**
 - **5-day timeline:** Focus on local dev + production, no staging environment
-- **PEAK6 deployment:** Single docker run command with knowledge pack volume
+- **Simple deployment:** Single docker run command with knowledge pack volume
 - **Same .env structure:** Local and Docker use identical environment variables
 
 ---
 
 ## 14.4 Docker Configuration
 
-**Purpose:** One-command setup with `docker compose up` for PEAK6 evaluators, with external knowledge pack volume for data updates without rebuilds.
+**Purpose:** One-command setup with `docker compose up` for evaluators, with external knowledge pack volume for data updates without rebuilds.
 
 **What We Provide:**
 1. **docker-compose.yml** - Service orchestration for frontend + backend
@@ -88,7 +88,7 @@ LOG_LEVEL=info
 - **Knowledge Pack Updates:** External volume allows data changes without container rebuild
 - **Offline Guarantee:** No network dependencies except OpenAI API (validated in decision logs)
 - **Production Simulation:** Demonstrates deployment readiness despite local-only demo requirement
-- **Consistent Environment:** Eliminates "works on my machine" issues for PEAK6 evaluators
+- **Consistent Environment:** Eliminates "works on my machine" issues for evaluators
 
 ---
 
@@ -209,7 +209,7 @@ CMD ["node", "dist/index.js"]
 
 **Why This Endpoint:**
 - **Docker Compose depends_on:** Frontend waits for backend `healthy` status before starting
-- **Demo validation:** PEAK6 evaluators can verify knowledge pack loaded before demo
+- **Demo validation:** Evaluators can verify knowledge pack loaded before demo
 - **Offline proof:** Entity counts in health check prove data loaded from local files (not fetched from web)
 - **Debugging:** If demo fails, health check shows exactly what's wrong (missing files, parse errors)
 
@@ -221,7 +221,7 @@ CMD ["node", "dist/index.js"]
 
 ### 14.4.4 One-Command Demo Setup
 
-**What PEAK6 Evaluators Run:**
+**What Evaluators Run:**
 
 **Initial Setup:**
 ```bash
@@ -290,10 +290,10 @@ docker compose up
 ```
 
 **Why This Validation:**
-- **PEAK6 requirement:** System must work offline except for OpenAI API
+- **Project requirement:** System must work offline except for OpenAI API
 - **Decision logs prove it:** Every knowledge pack query logged with `cache_hit` flag
 - **Network test simulates reality:** Real-world deployments may have restricted network access
-- **Confidence for demo:** PEAK6 evaluators see proof system doesn't rely on web scraping
+- **Confidence for demo:** Evaluators see proof system doesn't rely on web scraping
 
 ---
 

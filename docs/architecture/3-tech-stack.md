@@ -2,7 +2,7 @@
 
 **⚠️ CRITICAL:** This is the DEFINITIVE technology selection for the entire project. This table is the single source of truth - all development must use these exact versions.
 
-**Timeline Context:** 5-day interview project for PEAK6. NO SCOPE CREEP - stick to spec requirements only.
+**Timeline Context:** 5-day interview project. NO SCOPE CREEP - stick to spec requirements only.
 
 ## 3.1 Technology Stack Table
 
@@ -28,7 +28,7 @@
 | **Database** | JSON Files (Filesystem) | - | Knowledge pack storage | Spec requires offline operation, simplest for 5-day timeline |
 | **Cache** | In-Memory (Map) | - | Knowledge pack loaded by RAG | Loaded at startup (async, non-blocking) into memory Maps for fast O(1) queries |
 | **File Storage** | Local Filesystem | - | Knowledge pack JSON files | Meets offline requirement, easy to version control |
-| **Authentication** | None (Demo) | - | Out of scope for PEAK6 demo | Not required by spec, focus on core functionality |
+| **Authentication** | None (Demo) | - | Out of scope for this demo | Not required by spec, focus on core functionality |
 | **Testing (Unit)** | Bun test | Bun 1.3+ | API + Frontend unit tests | Built-in to Bun, Jest-compatible API, faster than Vitest |
 | **Testing (Integration)** | Bun test | Bun 1.3+ | API integration tests | Same test runner, tests multiple components together |
 | **Testing Utilities** | @testing-library/react | Latest | Component testing | User-centric tests, works with Bun test |

@@ -19,7 +19,7 @@
   - **Why:** Consistent error format for frontend, comprehensive logging for debugging
 
 - **LLM API Calls:** Always include timeout and token usage logging. Use structured outputs (JSON mode) for extraction.
-  - **Why:** Prevents hanging requests, tracks costs (required for PEAK6 evaluation), ensures valid JSON
+  - **Why:** Prevents hanging requests, tracks costs (required for evaluation), ensures valid JSON
 
 - **Knowledge Pack:** Load at startup (async, non-blocking), never reload during request. Always query via RAG layer, never direct file access.
   - **Why:** Ensures data is available immediately when first query arrives, RAG layer provides citation tracking for compliance

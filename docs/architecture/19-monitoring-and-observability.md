@@ -42,10 +42,10 @@
 **Why These Metrics:**
 - **Response times:** Detect slow LLM API calls or knowledge pack queries
 - **Error rates:** Early warning for broken APIs or invalid knowledge pack data
-- **LLM token usage:** Required for PEAK6 cost evaluation, tracks expensive operations
+- **LLM token usage:** Required for cost evaluation, tracks expensive operations
 - **No user analytics:** Demo doesn't track user behavior (out of scope)
 
-## 19.3 Observability for PEAK6 Evaluation
+## 19.3 Observability for Evaluation
 
 **What We Provide:**
 - **Token usage per test case:** Logged to program.log, aggregated in evaluation report
@@ -54,7 +54,7 @@
 - **Error breakdown:** Compliance violations, extraction failures, routing failures categorized
 
 **Why This Matters:**
-- **PEAK6 requirement:** "Demonstrate cost-efficiency of LLM usage"
+- **Project requirement:** Demonstrate cost-efficiency of LLM usage
 - **Compliance audit:** Regulators can review decision traces for any recommendation
 - **Debugging:** If test case fails, decision trace shows exactly which rule/query failed
 

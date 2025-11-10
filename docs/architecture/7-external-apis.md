@@ -16,11 +16,11 @@
 - **Reliability:** Production-grade API with 99.9% uptime SLA
 
 **Critical Integration Requirements:**
-- **Token usage logging:** Every API call must log token counts for cost tracking (non-standard for demo, required for PEAK6 evaluation)
+- **Token usage logging:** Every API call must log token counts for cost tracking (non-standard for demo, required for evaluation)
 - **Structured outputs for extraction:** Use JSON mode with Zod schema validation (prevents hallucinated field names)
 - **No streaming (MVP):** Synchronous responses simplify implementation for 5-day timeline
 
-**Cost Estimation (15 PEAK6 Test Cases):**
+**Cost Estimation (15 Test Cases):**
 - Extraction: 15 × ~500 tokens × $0.15/1M = $0.001
 - Pitch generation: 15 × ~1000 tokens × $2.50/1M = $0.038
 - **Total: ~$0.04 per evaluation run**

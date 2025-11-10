@@ -14,7 +14,7 @@
 
 Insurance brokers face complexity when quoting across multiple carriers, states, and product lines—each with different eligibility rules, discount programs, and compensation structures. Manual qualification and quote preparation is time-consuming and error-prone, leading to incomplete applications and missed savings opportunities.
 
-IQuote Pro addresses this by providing an AI-powered sales assistant that guides brokers through two critical workflows: (1) conversational intake that captures shopper information and routes to the appropriate quoting path, and (2) policy analysis that generates agent-ready talking points for positioning competitive offers. The system operates entirely on an offline "knowledge pack" of carrier/state/product rules (covering 3 carriers across 5 states with defined product lines), ensuring consistent, compliant, and fast responses without runtime dependencies on web search or live rate scraping. This 5-day MVP demonstrates both production-quality architectural thinking and a working local demo suitable for PEAK6 evaluation.
+IQuote Pro addresses this by providing an AI-powered sales assistant that guides brokers through two critical workflows: (1) conversational intake that captures shopper information and routes to the appropriate quoting path, and (2) policy analysis that generates agent-ready talking points for positioning competitive offers. The system operates entirely on an offline "knowledge pack" of carrier/state/product rules (covering 3 carriers across 5 states with defined product lines), ensuring consistent, compliant, and fast responses without runtime dependencies on web search or live rate scraping. This 5-day MVP demonstrates both production-quality architectural thinking and a working local demo suitable for client evaluation.
 
 ### Primary User Persona
 
@@ -59,11 +59,13 @@ IQuote Pro addresses this by providing an AI-powered sales assistant that guides
 
 **FR7:** The system shall enforce **mandatory compliance guardrails** including: (a) displaying required insurance sales disclaimers, (b) refusing prohibited statements (guarantees, binding quotes, price promises), and (c) triggering licensed-agent handoff for regulated activities.
 
-**FR8:** The system shall provide **structured outputs** for all interactions including: route decision (carrier/state/product), missing fields checklist, pre-fill packet JSON, and savings pitch with citations to knowledge pack sections.
+**FR8:** The system shall provide **structured outputs** for all interactions including: route decision (carrier/state/product), missing fields checklist, pre-fill packet JSON, and savings pitch with **industry-standard footnote citations** (e.g., "(1) https://geico.com/discounts/, accessed 2025-11-09") to knowledge pack sections. This citation format meets PEAK6 requirements for broker credibility and regulatory compliance.
 
 **FR9:** The system shall support **test case evaluation** through an automated harness that measures routing accuracy, intake completeness, savings-pitch clarity, and compliance checks against synthetic test data.
 
 **FR10:** The system shall log **decision traces** for each interaction showing inputs received, knowledge pack sections consulted, rules applied, and outputs generated—with all PII redacted.
+
+**FR11:** The system shall include **citations for all compliance decisions** (disclaimers, prohibited statements, handoff triggers) using industry-standard footnote format with knowledge pack cuid2 IDs. This provides regulatory audit trail and broker credibility by showing the source of each compliance rule. Example format: "This statement is prohibited(1)" → "(1) CA Insurance Code §1861.01(a), knowledge pack ref: comp_ckm9x7wdx1"
 
 ### Non Functional
 
@@ -89,6 +91,10 @@ IQuote Pro addresses this by providing an AI-powered sales assistant that guides
 
 **NFR11:** The system shall implement **graceful error handling** for common failure scenarios including: (a) network failures during LLM calls with automatic retry logic, (b) LLM timeout failures with user-facing timeout messages, (c) PDF parsing failures with fallback to manual entry, (d) malformed knowledge pack data with startup warnings, and (e) invalid user inputs with clear validation error messages.
 
+**NFR12:** The system shall complete **deterministic operations in <500ms** for typical queries, specifically: routing engine carrier eligibility checks, compliance filter prohibited statement detection, and discount calculator savings estimates. This performance target enables real-time broker workflows during live client calls where sub-second response times are critical for maintaining conversation flow.
+
+**NFR13:** The system shall complete **knowledge pack cache queries in <50ms** through in-memory indexing loaded at startup. Fast cache performance supports the overall sub-second response time requirement for power users and ensures smooth UI interactions for keyboard-driven workflows.
+
 ---
 
 ## User Interface Design Goals
@@ -99,7 +105,7 @@ The IQuote Pro interface prioritizes **broker efficiency and confidence** during
 
 ### Key Interaction Paradigms
 
-- **Conversational Flow with Shortcut Overlays**: Text-based chat interface with persistent keyboard shortcut hints (e.g., `Ctrl+S` to submit, `Ctrl+N` for new intake, `Ctrl+P` for policy analysis mode)
+- **Conversational Flow with Slash Command Shortcuts**: Text-based chat interface using slash commands for rapid data entry and actions (e.g., `/k` for kids, `/v` for vehicles, `/export` for export, `/copy` for clipboard). This pattern eliminates modifier key conflicts (especially Emacs shortcuts in text inputs), provides Slack-familiar UX for target users, and achieves fastest possible input at 2 keystrokes. See [keyboard-shortcuts-reference.md](keyboard-shortcuts-reference.md) for complete shortcut list
 - **Progressive Disclosure**: Show only essential fields initially, expanding sections as the intake progresses (e.g., vehicle details only appear after Auto product is selected)
 - **Real-Time Validation Feedback**: Instant visual indicators for routing eligibility, missing required fields, and compliance warnings
 - **Export Actions**: One-click copy-to-clipboard for pre-fill packets, savings pitches, and lead summaries; plus file system export (download JSON) for pre-fill stubs
@@ -136,7 +142,7 @@ No specific branding requirements identified. Use clean, professional styling ap
 - Neutral color palette (blues/grays suggesting trust and professionalism)
 - Sans-serif fonts for readability
 - Minimal visual flourishes—function over decoration
-- Optional: PEAK6 logo placement if appropriate for demo presentation
+- Optional: client logo placement if appropriate for demo presentation
 
 ### Target Device and Platforms: **Desktop Only**
 
@@ -191,7 +197,7 @@ The following technical decisions are documented in [docs/architecture/3-tech-st
 
 **Key Architectural Decisions (Rationale Documented in Architecture):**
 - **No database:** JSON files meet offline requirement and simplify 5-day timeline
-- **No authentication:** Out of scope for demo per PEAK6 spec
+- **No authentication:** Out of scope for demo per project spec
 - **No vector store:** Structured JSON with exact queries faster/more accurate than semantic search for insurance rules
 - **React StrictMode disabled:** Reduces LLM API costs during development (prevents double-rendering)
 - **Desktop-only UI:** 1024px window size, no mobile/tablet support
@@ -203,7 +209,7 @@ The following key data entities are defined in [docs/architecture/4-data-models.
 - **UserProfile** - Shopper identity, contact info, state, product preferences, household/vehicle/property details
 - **Carrier** - Carrier name, supported states, supported products, eligibility rules, discount programs, compensation structure
 - **Product** - Product type (Auto/Home/Renters/Umbrella), required fields per product, coverage options, state-specific rules
-- **Opportunity** - Savings recommendation with estimated savings, confidence score, required actions, knowledge pack citations
+- **Opportunity** - Savings recommendation with estimated savings, confidence score, required actions, **mandatory cuid2-based citations formatted as industry-standard footnotes** (providing regulatory audit trail and stable references across knowledge pack updates)
 - **IntakeResult** - Conversational intake output: captured fields, routing decision, missing fields checklist, confidence scores
 - **PolicyAnalysisResult** - Policy analysis output: identified opportunities, bundle recommendations, coverage gaps, compliance disclaimers
 - **PreFillPacket** - IQuote Pro submission stub: shopper data, routing decision, lead handoff summary, disclaimers
@@ -245,7 +251,7 @@ Establish project infrastructure (monorepo, dev environment, UI shell) and deliv
 Enable brokers to upload existing policies (PDF or structured data), analyze coverage/limits/premiums, and generate data-driven savings recommendations including bundle opportunities, discount eligibility, and competitive positioning talking points.
 
 ### Epic 3: Evaluation Framework & Production Deployment
-Implement automated evaluation harness with 15 test cases to validate PEAK6 success metrics (90%/95%/85%/100%), complete decision trace logging, and package application as Docker Compose deployment for demo presentation.
+Implement automated evaluation harness with 15 test cases to validate success metrics (90%/95%/85%/100%), complete decision trace logging, and package application as Docker Compose deployment for demo presentation.
 
 ---
 
@@ -282,13 +288,14 @@ Implement automated evaluation harness with 15 test cases to validate PEAK6 succ
 2. Home screen displays integrated interface with two sections: (1) chat panel for conversational intake on left/center, (2) policy upload drop zone on right/sidebar
 3. Chat interface is immediately usable - broker can start typing without clicking "Start" button
 4. Policy upload panel accepts drag-and-drop PDF or manual data entry without navigation
-5. Emacs-style keyboard shortcuts with multi-keystroke combinations: `Ctrl+X Ctrl+C` new session, `Ctrl+X E` export, `Ctrl+X P` policy mode, `Ctrl+?` show shortcuts browser
-6. Field-specific shortcuts with modal popups: `Ctrl+K` (kids) → modal "How many kids?" → type number → Enter → injects `k:5` into chat
-7. TanStack Router configured with single route `/` (no separate intake/analysis routes)
-8. Desktop-only responsive design tested at 1024px window width
-9. shadcn/ui components integrated with dark mode theming
-10. **Dark mode enabled as default theme** with light mode toggle
-11. Keyboard shortcuts browser accessible via `Ctrl+?` for discoverability
+5. Slash command shortcuts for rapid data entry: field shortcuts like `/k` (kids), `/v` (vehicles), `/n` (name); action shortcuts like `/export`, `/copy`, `/reset`; mode switching with `/policy` and `/intake`; help with `/help` or `/?`
+6. Field-specific shortcuts open focused modals: `/k` → modal "How many kids?" → type number → Enter → injects `k:5` into chat
+7. See [keyboard-shortcuts-reference.md](../keyboard-shortcuts-reference.md) for complete list of 27 field + 6 action shortcuts
+8. TanStack Router configured with single route `/` (no separate intake/analysis routes)
+9. Desktop-only responsive design tested at 1024px window width
+10. shadcn/ui components integrated with dark mode theming
+11. **Dark mode enabled as default theme** with light mode toggle
+12. Keyboard shortcuts browser accessible via `/help` or `/?` for discoverability
 
 ### Story 1.3: Knowledge Pack Loader & In-Memory Cache
 
@@ -319,15 +326,16 @@ Implement automated evaluation harness with 15 test cases to validate PEAK6 succ
 2. Right sidebar shows live captured fields organized by category: Identity (name, contact), Location (state), Product (type), Details (household/vehicles/property)
 3. Missing required fields highlighted with red indicator and field name (e.g., "State: MISSING")
 4. Captured fields update in real-time as conversation progresses (optimistic UI updates)
-5. Emacs-style keyboard shortcuts: `Ctrl+X Ctrl+C` new session, `Ctrl+X E` export, `Ctrl+K` kids modal, `Ctrl+D` dependents modal, `Ctrl+V` vehicles modal, `Ctrl+?` shortcuts browser
+5. Slash command shortcuts: field shortcuts like `/k` (kids), `/d` (dependents), `/v` (vehicles); action shortcuts like `/export`, `/copy`, `/reset`; help with `/help` or `/?`
 6. Direct key-value syntax support: broker can type `kids:3`, `k:3`, `deps:4`, `car:garage` in chat and system extracts as structured fields
-7. Field-specific modals: shortcuts like `Ctrl+K` open focused modal ("How many kids?") → broker types value → Enter → injects formatted key-value (e.g., `k:5`) into chat
-8. TanStack Query manages chat state with automatic refetching and cache invalidation
-9. Adaptive compliance disclaimers displayed in chat based on discovered state and product (e.g., CA Auto disclaimer different from FL Home)
-10. No auto-generated broker prompts - broker controls conversation, system only shows missing fields
-11. Professional dark mode styling with monospace font for data fields and key-value syntax highlighting
-12. Key-value pairs visually distinct in chat (e.g., syntax highlighting for `k:5`, `deps:4`)
-13. **Chat panel displays ONLY broker input** - AI extraction is invisible (no "AI: ..." message bubbles, no chatbot dialogue)
+7. Field-specific modals: shortcuts like `/k` open focused modal ("How many kids?") → broker types value → Enter → injects formatted key-value (e.g., `k:5`) into chat
+8. See [keyboard-shortcuts-reference.md](../keyboard-shortcuts-reference.md) for complete shortcuts list
+9. TanStack Query manages chat state with automatic refetching and cache invalidation
+10. Adaptive compliance disclaimers displayed in chat based on discovered state and product (e.g., CA Auto disclaimer different from FL Home)
+11. No auto-generated broker prompts - broker controls conversation, system only shows missing fields
+12. Professional dark mode styling with monospace font for data fields and key-value syntax highlighting
+13. Key-value pairs visually distinct in chat (e.g., syntax highlighting for `k:5`, `deps:4`)
+14. **Chat panel displays ONLY broker input** - AI extraction is invisible (no "AI: ..." message bubbles, no chatbot dialogue)
 
 ### Story 1.5: Conversational Extractor (LLM Agent for Field Extraction)
 
@@ -399,11 +407,12 @@ Implement automated evaluation harness with 15 test cases to validate PEAK6 succ
 3. Missing fields clearly flagged in pre-fill packet with red indicators
 4. Lead handoff summary includes next steps for licensed agent with state/product-specific guidance
 5. Required disclaimers embedded in pre-fill packet based on state and product
-6. Keyboard shortcut `Alt+E` triggers instant export (no modal confirmation - speed over safety for demo)
+6. Slash command `/export` triggers instant export (no modal confirmation - speed over safety for demo)
 7. "Download JSON" exports pre-fill packet to filesystem with auto-generated filename (e.g., `prefill_john_doe_CA_auto_20251106.json`)
-8. Keyboard shortcut `Alt+C` copies entire pre-fill packet JSON to clipboard for pasting
-9. Zod schema validation ensures pre-fill packet matches documented stub format
-10. Decision trace logged for pre-fill generation
+8. Slash command `/copy` copies entire pre-fill packet JSON to clipboard for pasting
+9. See [keyboard-shortcuts-reference.md](../keyboard-shortcuts-reference.md) for complete shortcuts list
+10. Zod schema validation ensures pre-fill packet matches documented stub format
+11. Decision trace logged for pre-fill generation
 
 ### Story 1.9: Real-Time Missing Fields Detection & Visual Indicators
 
@@ -495,12 +504,13 @@ Implement automated evaluation harness with 15 test cases to validate PEAK6 succ
 2. Displays savings opportunities grouped by category: Discounts, Bundles, Coverage Adjustments
 3. Each opportunity shows: estimated savings, eligibility confidence, required actions, knowledge pack citation
 4. Visual prioritization: High-impact (green), Medium-impact (yellow), Low-impact (gray)
-5. Emacs shortcut `Ctrl+X S` exports savings pitch as JSON
-6. Keyboard shortcut `Ctrl+C` copies savings pitch to clipboard (formatted for client email)
-7. Savings pitch includes adaptive compliance disclaimers based on state/product
-8. Export filename auto-generated (e.g., `savings_pitch_jane_doe_CA_home_20251106.json`)
-9. Zod schema validation for savings pitch format
-10. Decision trace logged for pitch generation
+5. Slash command `/export` exports savings pitch as JSON
+6. Slash command `/copy` copies savings pitch to clipboard (formatted for client email)
+7. See [keyboard-shortcuts-reference.md](../keyboard-shortcuts-reference.md) for complete shortcuts list
+8. Savings pitch includes adaptive compliance disclaimers based on state/product
+9. Export filename auto-generated (e.g., `savings_pitch_jane_doe_CA_home_20251106.json`)
+10. Zod schema validation for savings pitch format
+11. Decision trace logged for pitch generation
 
 ### Story 2.5: Bundle Opportunity Detection
 
@@ -523,12 +533,12 @@ Implement automated evaluation harness with 15 test cases to validate PEAK6 succ
 
 ## Epic 3: Evaluation Framework & Production Deployment
 
-**Epic Goal:** Validate that the system meets all PEAK6 success criteria through automated testing, package the application for one-command deployment, and ensure comprehensive observability. By the end of this epic, the system achieves ≥90% routing accuracy, ≥95% intake completeness, ≥85% pitch clarity, and 100% compliance—all validated through automated harness and ready for demo presentation.
+**Epic Goal:** Validate that the system meets all success criteria through automated testing, package the application for one-command deployment, and ensure comprehensive observability. By the end of this epic, the system achieves ≥90% routing accuracy, ≥95% intake completeness, ≥85% pitch clarity, and 100% compliance—all validated through automated harness and ready for demo presentation.
 
 ### Story 3.1: Evaluation Harness & Test Cases
 
 **As a** developer,
-**I want** an automated harness that runs 15 synthetic test cases and reports PEAK6 metrics,
+**I want** an automated harness that runs 15 synthetic test cases and reports project metrics,
 **so that** I can objectively validate system performance before demo.
 
 **Acceptance Criteria:**
@@ -548,7 +558,7 @@ Implement automated evaluation harness with 15 test cases to validate PEAK6 succ
 
 **As a** backend system,
 **I want** comprehensive decision trace logging for every interaction,
-**so that** PEAK6 evaluators can audit system behavior and verify offline operation.
+**so that** evaluators can audit system behavior and verify offline operation.
 
 **Acceptance Criteria:**
 
@@ -566,7 +576,7 @@ Implement automated evaluation harness with 15 test cases to validate PEAK6 succ
 
 **As a** developer,
 **I want** a docker-compose.yml that starts the entire system with one command,
-**so that** PEAK6 evaluators can run the demo without environment setup.
+**so that** evaluators can run the demo without environment setup.
 
 **Acceptance Criteria:**
 
@@ -601,7 +611,7 @@ Implement automated evaluation harness with 15 test cases to validate PEAK6 succ
 ### Story 3.5: Documentation & Demo Preparation
 
 **As a** developer,
-**I want** comprehensive documentation for PEAK6 evaluators,
+**I want** comprehensive documentation for evaluators,
 **so that** they can understand architecture, run the demo, and evaluate results.
 
 **Acceptance Criteria:**
@@ -621,7 +631,7 @@ Implement automated evaluation harness with 15 test cases to validate PEAK6 succ
 
 ### Demo Script (Example Scenarios)
 
-Based on PEAK6 evaluation criteria, the following demo scenarios should be prepared:
+Based on evaluation criteria, the following demo scenarios should be prepared:
 
 **Scenario 1: Conversational Intake - Complete Flow (California Auto Insurance)**
 1. Broker starts chat, types: "Client is John Smith in California, needs auto insurance"
@@ -672,7 +682,7 @@ Based on PEAK6 evaluation criteria, the following demo scenarios should be prepa
 Review the **User Interface Design Goals** section above and create detailed UI specifications for the IQuote Pro integrated home screen. Prioritize:
 
 1. **Dark mode design system** (default theme with light mode toggle) - define color palette, component tokens, and contrast ratios
-2. **Emacs keyboard shortcuts** - design visual feedback for multi-keystroke combinations (Ctrl+X Ctrl+C, Ctrl+K, etc.) and modal popup UI patterns
+2. **Slash command shortcuts** - design visual feedback for command mode (e.g., `/...` indicator), modal popup UI patterns for field shortcuts (e.g., `/k`, `/v`, `/n`), and action shortcuts (e.g., `/export`, `/copy`). See [keyboard-shortcuts-reference.md](keyboard-shortcuts-reference.md) for complete v3.0 finalized design with 27 field + 6 action shortcuts
 3. **Field-specific modals** - specify modal dimensions, animations, and field injection behavior for structured data capture
 4. **Key-value syntax highlighting** - design inline syntax highlighting for `kids:3`, `k:3`, `deps:4` patterns in chat interface
 5. **Real-time field capture sidebar** - design layout for missing fields display and adaptive compliance disclaimers

@@ -4,13 +4,13 @@
 
 This application uses a **hybrid architecture** combining LLM agents for natural language processing with deterministic rules engines for compliance-critical business logic. The system is deployed as a monorepo containing a Hono-based API backend and a React frontend with TanStack tooling.
 
-The architecture satisfies PEAK6's "multi-agent preferred" requirement through 2 LLM Agents (Conversational Extractor + Pitch Generator) working in concert with 3 Deterministic Rules Engines (Routing + Discount + Compliance). All insurance knowledge is served from a local JSON-based knowledge pack loaded at startup (async, non-blocking), with structured RAG queries for retrieval and cuid2-based citation tracking for auditability.
+The architecture satisfies the project's "multi-agent preferred" requirement through 2 LLM Agents (Conversational Extractor + Pitch Generator) working in concert with 3 Deterministic Rules Engines (Routing + Discount + Compliance). All insurance knowledge is served from a local JSON-based knowledge pack loaded at startup (async, non-blocking), with structured RAG queries for retrieval and cuid2-based citation tracking for auditability.
 
 The frontend provides two distinct user flows: "Get Quote" (conversational intake) and "Analyze Policy" (savings identification), both feeding into the same backend orchestration layer. The system achieves insurance compliance through hard-coded prohibited statement filters and mandatory disclaimer injection, ensuring 100% regulatory adherence.
 
 ## 2.2 Platform and Infrastructure Choice
 
-**Platform:** Local Development / Cloud Agnostic (Deployment TBD based on PEAK6 feedback)
+**Platform:** Local Development / Cloud Agnostic (Deployment TBD based on client feedback)
 
 **Key Services:**
 - **Compute:** Node.js runtime for Hono API server
@@ -22,7 +22,7 @@ The frontend provides two distinct user flows: "Get Quote" (conversational intak
 - Development: Local (http://localhost:3000 frontend, http://localhost:7070 API)
 - Production: TBD - architecture supports serverless (Vercel/Cloudflare Workers) or containerized (Docker/Railway) deployment
 
-**Rationale:** Cloud-agnostic design allows PEAK6 to deploy on their preferred infrastructure. The knowledge pack architecture (local files) means zero external dependencies at runtime except LLM API calls for text processing.
+**Rationale:** Cloud-agnostic design allows flexible deployment on preferred infrastructure. The knowledge pack architecture (local files) means zero external dependencies at runtime except LLM API calls for text processing.
 
 ## 2.3 Repository Structure
 

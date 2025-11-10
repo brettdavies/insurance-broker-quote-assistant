@@ -1,6 +1,6 @@
 # 15. Security and Performance
 
-**Purpose:** Define security measures and performance targets appropriate for a 5-day PEAK6 demo.
+**Purpose:** Define security measures and performance targets appropriate for a 5-day demo.
 
 ## 15.1 Security Strategy
 
@@ -16,7 +16,7 @@
 - **No rate limiting (MVP):** Demo scope doesn't require DoS protection (production would add Hono middleware)
 
 **Key Security Decisions:**
-- **Why no auth:** Broker tool for internal use, not end-user facing (PEAK6 spec doesn't require it)
+- **Why no auth:** Broker tool for internal use, not end-user facing (spec doesn't require it)
 - **Why CORS matters:** Prevents unauthorized frontends from calling API
 - **Why Zod validation:** Insurance routing/discount engines assume valid input structure (crash without validation)
 
