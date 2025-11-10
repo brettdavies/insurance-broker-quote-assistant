@@ -171,7 +171,6 @@ function useToast() {
         listeners.splice(index, 1)
       }
     }
-    // biome-ignore lint/correctness/useExhaustiveDependencies: setState is stable, state is intentionally not in deps
   }, [])
 
   return {
