@@ -13,6 +13,7 @@ import {
   getCarriersForState,
   getStateByCode,
 } from './services/knowledge-pack-rag'
+import { getFieldValue } from './utils/field-helpers'
 import { logInfo } from './utils/logger'
 
 const app = new Hono()
@@ -68,8 +69,8 @@ app.get('/api/carriers', (c) => {
   return c.json({
     carriers: carriers.map((carrier) => ({
       name: carrier.name,
-      operatesIn: carrier.operatesIn?.value || [],
-      products: carrier.products?.value || [],
+      operatesIn: getFieldValue(carrier.operatesIn, []),
+      products: getFieldValue(carrier.products, []),
     })),
     count: carriers.length,
   })
@@ -85,8 +86,8 @@ app.get('/api/carriers/:name', (c) => {
 
   return c.json({
     name: carrier.name,
-    operatesIn: carrier.operatesIn?.value || [],
-    products: carrier.products?.value || [],
+    operatesIn: getFieldValue(carrier.operatesIn, []),
+    products: getFieldValue(carrier.products, []),
     discounts: carrier.discounts || [],
     eligibility: carrier.eligibility,
   })

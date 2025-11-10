@@ -6,6 +6,7 @@
  */
 
 import type { Carrier, State } from '@repo/shared'
+import { getFieldValue } from '../utils/field-helpers'
 import { getAllCarriers, getAllStates, getCarrier, getState } from './knowledge-pack-loader'
 
 /**
@@ -59,7 +60,7 @@ export function carrierOperatesInState(carrierName: string, stateCode: string): 
     return false
   }
 
-  const operatesIn = carrier.operatesIn?.value || []
+  const operatesIn = getFieldValue(carrier.operatesIn, [])
   return operatesIn.includes(stateCode)
 }
 
@@ -73,7 +74,7 @@ export function getCarriersForState(stateCode: string): string[] {
   const carriers = getAllCarriers()
   return carriers
     .filter((carrier) => {
-      const operatesIn = carrier.operatesIn?.value || []
+      const operatesIn = getFieldValue(carrier.operatesIn, [])
       return operatesIn.includes(stateCode)
     })
     .map((carrier) => carrier.name)
@@ -91,5 +92,5 @@ export function getCarrierProducts(carrierName: string): string[] {
     return []
   }
 
-  return carrier.products?.value || []
+  return getFieldValue(carrier.products, [])
 }

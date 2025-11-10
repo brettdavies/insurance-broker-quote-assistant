@@ -1,6 +1,7 @@
 import { afterEach, beforeEach, describe, expect, it } from 'bun:test'
 import { mkdir, rm, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
+import { createTestCarrier, createTestState } from '../../__tests__/fixtures/knowledge-pack'
 import app from '../../index'
 import { loadKnowledgePack } from '../../services/knowledge-pack-loader'
 
@@ -8,75 +9,6 @@ describe('States Endpoints Integration', () => {
   const testKnowledgePackDir = 'test_knowledge_pack'
   const testCarriersDir = join(testKnowledgePackDir, 'carriers')
   const testStatesDir = join(testKnowledgePackDir, 'states')
-
-  const createTestState = (code: string, name: string) => ({
-    meta: {
-      schemaVersion: '1.0',
-      generatedDate: new Date().toISOString(),
-      state: code,
-    },
-    state: {
-      _id: `state_${code.toLowerCase()}`,
-      _sources: [],
-      code,
-      name,
-      minimumCoverages: {
-        _id: 'fld_test1',
-        auto: {
-          _id: 'fld_test2',
-          bodilyInjuryPerPerson: {
-            _id: 'fld_test3',
-            value: 25000,
-            _sources: [],
-          },
-          bodilyInjuryPerAccident: {
-            _id: 'fld_test4',
-            value: 50000,
-            _sources: [],
-          },
-          propertyDamage: {
-            _id: 'fld_test5',
-            value: 10000,
-            _sources: [],
-          },
-        },
-        home: {
-          _id: 'fld_test6',
-        },
-        renters: {
-          _id: 'fld_test7',
-        },
-      },
-    },
-  })
-
-  const createTestCarrier = (name: string, operatesIn: string[]) => ({
-    meta: {
-      schemaVersion: '1.0',
-      generatedDate: new Date().toISOString(),
-      carrier: name,
-    },
-    carrier: {
-      _id: `carr_${name.toLowerCase()}`,
-      _sources: [],
-      name,
-      operatesIn: {
-        _id: 'fld_test1',
-        value: operatesIn,
-        _sources: [],
-      },
-      products: {
-        _id: 'fld_test2',
-        value: ['auto'],
-        _sources: [],
-      },
-      eligibility: {
-        _id: 'elig_test1',
-        _sources: [],
-      },
-      discounts: [],
-    },
-  })
 
   beforeEach(async () => {
     // Create test directories
@@ -86,8 +18,8 @@ describe('States Endpoints Integration', () => {
     // Create test data
     const ca = createTestState('CA', 'California')
     const tx = createTestState('TX', 'Texas')
-    const geico = createTestCarrier('GEICO', ['CA', 'TX'])
-    const progressive = createTestCarrier('Progressive', ['CA'])
+    const geico = createTestCarrier('GEICO', ['CA', 'TX'], ['auto'])
+    const progressive = createTestCarrier('Progressive', ['CA'], ['auto'])
 
     await writeFile(join(testStatesDir, 'CA.json'), JSON.stringify(ca), 'utf-8')
     await writeFile(join(testStatesDir, 'TX.json'), JSON.stringify(tx), 'utf-8')

@@ -1,6 +1,7 @@
 import { afterEach, beforeEach, describe, expect, it } from 'bun:test'
 import { mkdir, rm, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
+import { createTestCarrier, createTestState } from '../../__tests__/fixtures/knowledge-pack'
 import {
   getCarrier,
   getLoadingStatus,
@@ -33,33 +34,7 @@ describe('Knowledge Pack Loader', () => {
   describe('Successful loading', () => {
     it('should load all carrier and state files successfully', async () => {
       // Create test carrier file
-      const carrierData = {
-        meta: {
-          schemaVersion: '1.0',
-          generatedDate: new Date().toISOString(),
-          carrier: 'TestCarrier',
-        },
-        carrier: {
-          _id: 'carr_test123',
-          _sources: [],
-          name: 'TestCarrier',
-          operatesIn: {
-            _id: 'fld_test1',
-            value: ['CA', 'TX'],
-            _sources: [],
-          },
-          products: {
-            _id: 'fld_test2',
-            value: ['auto', 'home'],
-            _sources: [],
-          },
-          eligibility: {
-            _id: 'elig_test1',
-            _sources: [],
-          },
-          discounts: [],
-        },
-      }
+      const carrierData = createTestCarrier('TestCarrier', ['CA', 'TX'], ['auto', 'home'])
 
       await writeFile(
         join(testCarriersDir, 'test-carrier.json'),
@@ -68,31 +43,7 @@ describe('Knowledge Pack Loader', () => {
       )
 
       // Create test state file
-      const stateData = {
-        meta: {
-          schemaVersion: '1.0',
-          generatedDate: new Date().toISOString(),
-          state: 'CA',
-        },
-        state: {
-          _id: 'state_test123',
-          _sources: [],
-          code: 'CA',
-          name: 'California',
-          minimumCoverages: {
-            _id: 'fld_test3',
-            auto: {
-              _id: 'fld_test4',
-            },
-            home: {
-              _id: 'fld_test5',
-            },
-            renters: {
-              _id: 'fld_test6',
-            },
-          },
-        },
-      }
+      const stateData = createTestState('CA', 'California')
 
       await writeFile(join(testStatesDir, 'CA.json'), JSON.stringify(stateData), 'utf-8')
 
@@ -118,50 +69,29 @@ describe('Knowledge Pack Loader', () => {
     })
 
     it('should count products and discounts correctly', async () => {
-      const carrierData = {
-        meta: {
-          schemaVersion: '1.0',
-          generatedDate: new Date().toISOString(),
-          carrier: 'TestCarrier',
-        },
-        carrier: {
-          _id: 'carr_test123',
-          _sources: [],
-          name: 'TestCarrier',
-          operatesIn: {
-            _id: 'fld_test1',
-            value: ['CA'],
-            _sources: [],
+      const carrierData = createTestCarrier(
+        'TestCarrier',
+        ['CA'],
+        ['auto', 'home', 'renters', 'umbrella'],
+        [
+          {
+            _id: 'disc_test1',
+            name: { _id: 'fld_test3', value: 'Discount 1', _sources: [] },
+            percentage: { _id: 'fld_test4', value: 10, _sources: [] },
+            products: { _id: 'fld_test5', value: ['auto'], _sources: [] },
+            states: { _id: 'fld_test6', value: ['CA'], _sources: [] },
+            requirements: { _id: 'fld_test7', value: {}, _sources: [] },
           },
-          products: {
-            _id: 'fld_test2',
-            value: ['auto', 'home', 'renters', 'umbrella'],
-            _sources: [],
+          {
+            _id: 'disc_test2',
+            name: { _id: 'fld_test8', value: 'Discount 2', _sources: [] },
+            percentage: { _id: 'fld_test9', value: 15, _sources: [] },
+            products: { _id: 'fld_test10', value: ['home'], _sources: [] },
+            states: { _id: 'fld_test11', value: ['CA'], _sources: [] },
+            requirements: { _id: 'fld_test12', value: {}, _sources: [] },
           },
-          eligibility: {
-            _id: 'elig_test1',
-            _sources: [],
-          },
-          discounts: [
-            {
-              _id: 'disc_test1',
-              name: { _id: 'fld_test3', value: 'Discount 1', _sources: [] },
-              percentage: { _id: 'fld_test4', value: 10, _sources: [] },
-              products: { _id: 'fld_test5', value: ['auto'], _sources: [] },
-              states: { _id: 'fld_test6', value: ['CA'], _sources: [] },
-              requirements: { _id: 'fld_test7', value: {}, _sources: [] },
-            },
-            {
-              _id: 'disc_test2',
-              name: { _id: 'fld_test8', value: 'Discount 2', _sources: [] },
-              percentage: { _id: 'fld_test9', value: 15, _sources: [] },
-              products: { _id: 'fld_test10', value: ['home'], _sources: [] },
-              states: { _id: 'fld_test11', value: ['CA'], _sources: [] },
-              requirements: { _id: 'fld_test12', value: {}, _sources: [] },
-            },
-          ],
-        },
-      }
+        ]
+      )
 
       await writeFile(
         join(testCarriersDir, 'test-carrier.json'),
@@ -180,33 +110,7 @@ describe('Knowledge Pack Loader', () => {
   describe('Error handling', () => {
     it('should handle missing files gracefully', async () => {
       // Create only carrier file, no state files
-      const carrierData = {
-        meta: {
-          schemaVersion: '1.0',
-          generatedDate: new Date().toISOString(),
-          carrier: 'TestCarrier',
-        },
-        carrier: {
-          _id: 'carr_test123',
-          _sources: [],
-          name: 'TestCarrier',
-          operatesIn: {
-            _id: 'fld_test1',
-            value: ['CA'],
-            _sources: [],
-          },
-          products: {
-            _id: 'fld_test2',
-            value: ['auto'],
-            _sources: [],
-          },
-          eligibility: {
-            _id: 'elig_test1',
-            _sources: [],
-          },
-          discounts: [],
-        },
-      }
+      const carrierData = createTestCarrier('TestCarrier', ['CA'], ['auto'])
 
       await writeFile(
         join(testCarriersDir, 'test-carrier.json'),
@@ -228,33 +132,7 @@ describe('Knowledge Pack Loader', () => {
       await writeFile(join(testCarriersDir, 'invalid.json'), '{ invalid json }', 'utf-8')
 
       // Create valid carrier file
-      const carrierData = {
-        meta: {
-          schemaVersion: '1.0',
-          generatedDate: new Date().toISOString(),
-          carrier: 'TestCarrier',
-        },
-        carrier: {
-          _id: 'carr_test123',
-          _sources: [],
-          name: 'TestCarrier',
-          operatesIn: {
-            _id: 'fld_test1',
-            value: ['CA'],
-            _sources: [],
-          },
-          products: {
-            _id: 'fld_test2',
-            value: ['auto'],
-            _sources: [],
-          },
-          eligibility: {
-            _id: 'elig_test1',
-            _sources: [],
-          },
-          discounts: [],
-        },
-      }
+      const carrierData = createTestCarrier('TestCarrier', ['CA'], ['auto'])
 
       await writeFile(
         join(testCarriersDir, 'valid-carrier.json'),
@@ -277,33 +155,10 @@ describe('Knowledge Pack Loader', () => {
     })
 
     it('should handle missing carrier.name field gracefully', async () => {
-      const invalidCarrierData = {
-        meta: {
-          schemaVersion: '1.0',
-          generatedDate: new Date().toISOString(),
-          carrier: 'TestCarrier',
-        },
-        carrier: {
-          _id: 'carr_test123',
-          _sources: [],
-          // Missing name field
-          operatesIn: {
-            _id: 'fld_test1',
-            value: ['CA'],
-            _sources: [],
-          },
-          products: {
-            _id: 'fld_test2',
-            value: ['auto'],
-            _sources: [],
-          },
-          eligibility: {
-            _id: 'elig_test1',
-            _sources: [],
-          },
-          discounts: [],
-        },
-      }
+      // Create invalid carrier data (missing name)
+      const invalidCarrierData = createTestCarrier('TestCarrier', ['CA'], ['auto'])
+      // Remove name field to test validation
+      invalidCarrierData.carrier.name = undefined as unknown as string
 
       await writeFile(
         join(testCarriersDir, 'invalid-carrier.json'),
@@ -319,31 +174,10 @@ describe('Knowledge Pack Loader', () => {
     })
 
     it('should handle missing state.code field gracefully', async () => {
-      const invalidStateData = {
-        meta: {
-          schemaVersion: '1.0',
-          generatedDate: new Date().toISOString(),
-          state: 'CA',
-        },
-        state: {
-          _id: 'state_test123',
-          _sources: [],
-          // Missing code field
-          name: 'California',
-          minimumCoverages: {
-            _id: 'fld_test3',
-            auto: {
-              _id: 'fld_test4',
-            },
-            home: {
-              _id: 'fld_test5',
-            },
-            renters: {
-              _id: 'fld_test6',
-            },
-          },
-        },
-      }
+      // Create invalid state data (missing code)
+      const invalidStateData = createTestState('CA', 'California')
+      // Remove code field to test validation
+      invalidStateData.state.code = undefined as unknown as string
 
       await writeFile(
         join(testStatesDir, 'invalid-state.json'),
@@ -411,33 +245,7 @@ describe('Knowledge Pack Loader', () => {
 
   describe('RAG service queries Maps only', () => {
     it('should query in-memory Maps without filesystem access', async () => {
-      const carrierData = {
-        meta: {
-          schemaVersion: '1.0',
-          generatedDate: new Date().toISOString(),
-          carrier: 'TestCarrier',
-        },
-        carrier: {
-          _id: 'carr_test123',
-          _sources: [],
-          name: 'TestCarrier',
-          operatesIn: {
-            _id: 'fld_test1',
-            value: ['CA', 'TX'],
-            _sources: [],
-          },
-          products: {
-            _id: 'fld_test2',
-            value: ['auto', 'home'],
-            _sources: [],
-          },
-          eligibility: {
-            _id: 'elig_test1',
-            _sources: [],
-          },
-          discounts: [],
-        },
-      }
+      const carrierData = createTestCarrier('TestCarrier', ['CA', 'TX'], ['auto', 'home'])
 
       await writeFile(
         join(testCarriersDir, 'test-carrier.json'),
@@ -445,31 +253,7 @@ describe('Knowledge Pack Loader', () => {
         'utf-8'
       )
 
-      const stateData = {
-        meta: {
-          schemaVersion: '1.0',
-          generatedDate: new Date().toISOString(),
-          state: 'CA',
-        },
-        state: {
-          _id: 'state_test123',
-          _sources: [],
-          code: 'CA',
-          name: 'California',
-          minimumCoverages: {
-            _id: 'fld_test3',
-            auto: {
-              _id: 'fld_test4',
-            },
-            home: {
-              _id: 'fld_test5',
-            },
-            renters: {
-              _id: 'fld_test6',
-            },
-          },
-        },
-      }
+      const stateData = createTestState('CA', 'California')
 
       await writeFile(join(testStatesDir, 'CA.json'), JSON.stringify(stateData), 'utf-8')
 

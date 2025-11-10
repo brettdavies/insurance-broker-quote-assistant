@@ -8,6 +8,7 @@
 import { readFile, readdir } from 'node:fs/promises'
 import { join } from 'node:path'
 import type { Carrier, CarrierFile, State, StateFile } from '@repo/shared'
+import { getFieldValue } from '../utils/field-helpers'
 import { logError, logInfo, logWarn } from '../utils/logger'
 
 /**
@@ -85,6 +86,20 @@ export function getAllStates(): State[] {
 }
 
 /**
+ * Handle file loading error
+ */
+async function handleFileLoadError(
+  filePath: string,
+  error: unknown,
+  fileType: 'carrier' | 'state'
+): Promise<void> {
+  const fileName = filePath.split('/').pop() || filePath
+  const errorMessage = error instanceof Error ? error.message : String(error)
+  loadingStatus.errors.push({ file: fileName, error: errorMessage })
+  await logWarn(`Failed to load ${fileType} file`, { file: fileName, error: errorMessage })
+}
+
+/**
  * Load a single carrier file
  */
 async function loadCarrierFile(filePath: string): Promise<void> {
@@ -101,17 +116,14 @@ async function loadCarrierFile(filePath: string): Promise<void> {
     carriersMap.set(data.carrier.name, data.carrier)
 
     // Count products and discounts
-    const products = data.carrier.products?.value || []
+    const products = getFieldValue(data.carrier.products, [])
     const discounts = data.carrier.discounts || []
 
     loadingStatus.carriersCount++
     loadingStatus.productsCount += products.length
     loadingStatus.discountsCount += discounts.length
   } catch (error) {
-    const fileName = filePath.split('/').pop() || filePath
-    const errorMessage = error instanceof Error ? error.message : String(error)
-    loadingStatus.errors.push({ file: fileName, error: errorMessage })
-    await logWarn('Failed to load carrier file', { file: fileName, error: errorMessage })
+    await handleFileLoadError(filePath, error, 'carrier')
   }
 }
 
@@ -133,10 +145,7 @@ async function loadStateFile(filePath: string): Promise<void> {
 
     loadingStatus.statesCount++
   } catch (error) {
-    const fileName = filePath.split('/').pop() || filePath
-    const errorMessage = error instanceof Error ? error.message : String(error)
-    loadingStatus.errors.push({ file: fileName, error: errorMessage })
-    await logWarn('Failed to load state file', { file: fileName, error: errorMessage })
+    await handleFileLoadError(filePath, error, 'state')
   }
 }
 
