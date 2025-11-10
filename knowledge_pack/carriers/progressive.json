@@ -1,0 +1,570 @@
+{
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedDate": "2025-11-10T20:04:54.218Z",
+    "carrier": "Progressive",
+    "totalDataPoints": 52,
+    "totalSources": 20,
+    "conflictsResolved": 2
+  },
+  "carrier": {
+    "_id": "carr_nemqnt5tabru300u2o6nnh66",
+    "_sources": [
+      {
+        "uri": "https://www.progressive.com/",
+        "accessedDate": "2025-11-10T20:04:54.218Z",
+        "confidence": "high",
+        "primary": true
+      }
+    ],
+    "name": "Progressive",
+    "operatesIn": {
+      "_id": "fld_abzjx97ijpcasdhpofet6i5g",
+      "value": ["CA", "TX", "FL", "NY", "IL", "OH", "PA", "MI", "IN", "WI"],
+      "_sources": [
+        {
+          "uri": "https://www.progressive.com/states/",
+          "accessedDate": "2025-11-10T20:04:54.218Z",
+          "elementRef": "section#state-list",
+          "confidence": "high",
+          "primary": true
+        }
+      ]
+    },
+    "products": {
+      "_id": "fld_cgn6xqjzs4udwmpqoyhblqsd",
+      "value": ["auto", "home", "renters", "umbrella"],
+      "_sources": [
+        {
+          "uri": "https://www.progressive.com/products/",
+          "accessedDate": "2025-11-10T20:04:54.218Z",
+          "elementRef": "nav.products",
+          "confidence": "high",
+          "primary": true
+        }
+      ]
+    },
+    "eligibility": {
+      "_id": "elig_z26b812v8z39gre4yblk3ub4",
+      "_sources": [],
+      "auto": {
+        "_id": "elig_c7ez2yup95d7awibfrtrnn6f",
+        "minAge": {
+          "_id": "fld_ejds492xmgpft5wqhhm9yv8z",
+          "value": 16,
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/auto/eligibility/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "maxAge": {
+          "_id": "fld_c6wjf59bdvb477g5szj1qe6z",
+          "value": 85,
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/auto/eligibility/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "maxVehicles": {
+          "_id": "fld_f2qu1wl45prd6uat2lqr79fy",
+          "value": 4,
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/auto/eligibility/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      },
+      "home": {
+        "_id": "elig_d9t747gjf83nnp5l471bhagw",
+        "minAge": {
+          "_id": "fld_ji8cq25mngp0cy4h5apaw5h8",
+          "value": 18,
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/home/eligibility/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      },
+      "renters": {
+        "_id": "elig_r0onfgvpfsf0yvk06qd215ky",
+        "minAge": {
+          "_id": "fld_lxu5lh44qhaj96vauimhuk0y",
+          "value": 18,
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/renters/eligibility/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      },
+      "umbrella": {
+        "_id": "elig_mfaodypulalrp1752g7ga091",
+        "minAge": {
+          "_id": "fld_mo7j1kaieahsdiumqc907qn8",
+          "value": 21,
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/umbrella/eligibility/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      }
+    },
+    "discounts": [
+      {
+        "_id": "disc_yeb5wf4msfa5kznisvwnfzqc",
+        "name": {
+          "_id": "fld_ptrw7tqpnf5ag3rvv59hh4g0",
+          "value": "Multi-Policy Bundle",
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#multi-policy-bundle",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "percentage": {
+          "_id": "fld_izwzwavvpiwc5cup9760g5a4",
+          "value": 12,
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#multi-policy-bundle > p.percentage",
+              "extractedValue": "12%",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "products": {
+          "_id": "fld_hj839mxwonfxag60f3qj4gqn",
+          "value": ["auto", "home"],
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#multi-policy-bundle > p.applies-to",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "states": {
+          "_id": "fld_n20qbahb48y461jx8k4cu9wm",
+          "value": ["CA", "TX", "FL", "NY", "IL", "OH", "PA", "MI", "IN", "WI"],
+          "_sources": []
+        },
+        "requirements": {
+          "_id": "fld_shyqivgug8k0b7i8i5e4vl1o",
+          "value": {
+            "mustHaveProducts": ["auto", "home"],
+            "minProducts": 2
+          },
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#multi-policy-bundle > ul.requirements",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "stackable": {
+          "_id": "fld_czrc7xzmbprbs6xcico7l6iy",
+          "value": true,
+          "_sources": []
+        },
+        "description": {
+          "_id": "fld_pcplztgynp6tsojuflxm25o1",
+          "value": "Multi-Policy Bundle discount available for auto and home insurance",
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      },
+      {
+        "_id": "disc_ns8n0uov4o34pkg1x5uw1sah",
+        "name": {
+          "_id": "fld_h0li2cji38docv4aotor0wec",
+          "value": "Safe Driver",
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#safe-driver",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "percentage": {
+          "_id": "fld_udexxzn91t24kq9fn9inbrsb",
+          "value": 8,
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#safe-driver > p.percentage",
+              "extractedValue": "8%",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "products": {
+          "_id": "fld_fkr907czak5834gk1u4ewers",
+          "value": ["auto"],
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#safe-driver > p.applies-to",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "states": {
+          "_id": "fld_y2uc9bc9xr2fyyp78n0sdvgf",
+          "value": ["CA", "TX", "FL", "NY", "IL", "OH", "PA", "MI", "IN", "WI"],
+          "_sources": []
+        },
+        "requirements": {
+          "_id": "fld_up6r4nz1248iyzq2hnw50yi3",
+          "value": {
+            "mustHaveProducts": ["auto"],
+            "minProducts": 1
+          },
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#safe-driver > ul.requirements",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "stackable": {
+          "_id": "fld_iayovus1l5wh7v9svikhgkz3",
+          "value": true,
+          "_sources": []
+        },
+        "description": {
+          "_id": "fld_o8gicjgmba8k6nz5z242jm9m",
+          "value": "Safe Driver discount available for auto insurance",
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      },
+      {
+        "_id": "disc_q6ixeh54qyrbxs596v4qh07z",
+        "name": {
+          "_id": "fld_v4iw2chvig8baxa3kq5u6av2",
+          "value": "Snapshot",
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#snapshot",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "percentage": {
+          "_id": "fld_um4fnn7mns187953a50vgcmk",
+          "value": 20,
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#snapshot > p.percentage",
+              "extractedValue": "20%",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "products": {
+          "_id": "fld_ozegz4vu3xwj4h3qoazt5rcj",
+          "value": ["auto"],
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#snapshot > p.applies-to",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "states": {
+          "_id": "fld_uba84a4jz2bhdblkfj89plpg",
+          "value": ["CA", "TX", "FL", "NY", "IL", "OH", "PA", "MI", "IN", "WI"],
+          "_sources": []
+        },
+        "requirements": {
+          "_id": "fld_x7dcn7416fraomh7a7ykh4w8",
+          "value": {
+            "mustHaveProducts": ["auto"],
+            "minProducts": 1
+          },
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#snapshot > ul.requirements",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "stackable": {
+          "_id": "fld_k24bpxvgnacd1elje4uoovqm",
+          "value": false,
+          "_sources": []
+        },
+        "description": {
+          "_id": "fld_utusevuhqj10rb9o0i3xuav5",
+          "value": "Snapshot discount available for auto insurance",
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      },
+      {
+        "_id": "disc_ehn6j87xxurhqtk7b6ov6p5e",
+        "name": {
+          "_id": "fld_n50shsbruxejquohcj3sdj93",
+          "value": "Home Quote Discount",
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#home-quote-discount",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "percentage": {
+          "_id": "fld_pyzcspj5ggsx2ihwtzty8251",
+          "value": 5,
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#home-quote-discount > p.percentage",
+              "extractedValue": "5%",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "products": {
+          "_id": "fld_vg9w6aq77wsmjkf18ktmr3g7",
+          "value": ["home"],
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#home-quote-discount > p.applies-to",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "states": {
+          "_id": "fld_o1u3uu4r8w0k4pfhtfl73007",
+          "value": ["CA", "TX", "FL", "NY", "IL", "OH", "PA", "MI", "IN", "WI"],
+          "_sources": []
+        },
+        "requirements": {
+          "_id": "fld_beyespnidr6j4zanwk5m8duy",
+          "value": {
+            "mustHaveProducts": ["home"],
+            "minProducts": 1
+          },
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#home-quote-discount > ul.requirements",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "stackable": {
+          "_id": "fld_lyj0qb15vuj1cv126uphnmwt",
+          "value": true,
+          "_sources": []
+        },
+        "description": {
+          "_id": "fld_vasl81zjbqc6bqkt9acxd0xn",
+          "value": "Home Quote Discount discount available for home insurance",
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      },
+      {
+        "_id": "disc_id6uoyjda9e4fdwevcsbd9v2",
+        "name": {
+          "_id": "fld_k1oz7suvdixn4qj0xp5hg9iz",
+          "value": "Continuous Insurance",
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#continuous-insurance",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "percentage": {
+          "_id": "fld_bue1820picvffcwz82gmp43v",
+          "value": 5,
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#continuous-insurance > p.percentage",
+              "extractedValue": "5%",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "products": {
+          "_id": "fld_ofo2gu3ey510o8f5zf706xdt",
+          "value": ["auto"],
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#continuous-insurance > p.applies-to",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "states": {
+          "_id": "fld_nhaxg2sbmpdifv6zcq0m9evj",
+          "value": ["CA", "TX", "FL", "NY", "IL", "OH", "PA", "MI", "IN", "WI"],
+          "_sources": []
+        },
+        "requirements": {
+          "_id": "fld_cbwqxr7hr7fzh37y0lbj0csc",
+          "value": {
+            "mustHaveProducts": ["auto"],
+            "minProducts": 1
+          },
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#continuous-insurance > ul.requirements",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "stackable": {
+          "_id": "fld_zs0gn4tsdmilxq6ofzu5ncbo",
+          "value": true,
+          "_sources": []
+        },
+        "description": {
+          "_id": "fld_t9yyjct6aq4n3nwsoo5p52sn",
+          "value": "Continuous Insurance discount available for auto insurance",
+          "_sources": [
+            {
+              "uri": "https://www.progressive.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      }
+    ],
+    "compensation": {
+      "_id": "comp_t7jxywo6qc02do39wsw8ou8l",
+      "commissionRate": {
+        "_id": "fld_bpejutrlc77vwcj79vjqpqfg",
+        "value": 7.5,
+        "_sources": [
+          {
+            "uri": "https://www.progressive.com/broker/",
+            "accessedDate": "2025-11-10T20:04:54.218Z",
+            "confidence": "high",
+            "primary": true
+          }
+        ]
+      },
+      "commissionType": {
+        "_id": "fld_y51kitzppnq0hnyqjuxeev7p",
+        "value": "percentage",
+        "_sources": [
+          {
+            "uri": "https://www.progressive.com/broker/",
+            "accessedDate": "2025-11-10T20:04:54.218Z",
+            "confidence": "high",
+            "primary": true
+          }
+        ]
+      }
+    }
+  }
+}

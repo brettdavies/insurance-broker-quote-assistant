@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedDate": "2025-11-10T20:04:54.218Z",
+    "state": "CA"
+  },
+  "state": {
+    "_id": "state_xz0sfo2njp3hhwzkdpdvtolf",
+    "_sources": [
+      {
+        "uri": "https://www.insurance.ca.gov/",
+        "accessedDate": "2025-11-10T20:04:54.218Z",
+        "elementRef": "main",
+        "confidence": "high",
+        "primary": true
+      }
+    ],
+    "code": "CA",
+    "name": "California",
+    "minimumCoverages": {
+      "_id": "fld_evn243uxt5ghxz64x1exwuvr",
+      "auto": {
+        "_id": "fld_r96cgdtm02da27h5cg84asq3",
+        "bodilyInjuryPerPerson": {
+          "_id": "fld_uzchy043cib87m9azw7pjip3",
+          "value": 15000,
+          "_sources": [
+            {
+              "uri": "https://www.insurance.ca.gov/auto/minimums/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "table > tr:nth-child(1) > td:nth-child(2)",
+              "extractedValue": "$15,000",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "bodilyInjuryPerAccident": {
+          "_id": "fld_ljkjtz8sz0r1sqo6s8gtpq5l",
+          "value": 30000,
+          "_sources": [
+            {
+              "uri": "https://www.insurance.ca.gov/auto/minimums/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "table > tr:nth-child(2) > td:nth-child(2)",
+              "extractedValue": "$30,000",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "propertyDamage": {
+          "_id": "fld_j6ojl2j3tyk1kdy6cocybjrz",
+          "value": 5000,
+          "_sources": [
+            {
+              "uri": "https://www.insurance.ca.gov/auto/minimums/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "table > tr:nth-child(3) > td:nth-child(2)",
+              "extractedValue": "$5,000",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      },
+      "home": {
+        "_id": "fld_zv670s85v8vw20jaj0j9vlc2"
+      },
+      "renters": {
+        "_id": "fld_cps26c9xjwk4dn7q2epp7s7l"
+      }
+    },
+    "specialRequirements": {
+      "_id": "fld_ldco8g0wybkfjfs3tloboruk",
+      "value": {
+        "requiresProposition103Notice": true,
+        "goodDriverDiscount": {
+          "available": true,
+          "criteria": "No at-fault accidents in 3 years"
+        }
+      },
+      "_sources": [
+        {
+          "uri": "https://www.insurance.ca.gov/requirements/",
+          "accessedDate": "2025-11-10T20:04:54.218Z",
+          "confidence": "high",
+          "primary": true
+        }
+      ]
+    }
+  }
+}

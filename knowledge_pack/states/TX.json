@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedDate": "2025-11-10T20:04:54.218Z",
+    "state": "TX"
+  },
+  "state": {
+    "_id": "state_t02hjq6c47ramfi8cnwrtauw",
+    "_sources": [
+      {
+        "uri": "https://www.insurance.tx.gov/",
+        "accessedDate": "2025-11-10T20:04:54.218Z",
+        "elementRef": "main",
+        "confidence": "high",
+        "primary": true
+      }
+    ],
+    "code": "TX",
+    "name": "Texas",
+    "minimumCoverages": {
+      "_id": "fld_tlz57xako4ta0e4idbuo6hbk",
+      "auto": {
+        "_id": "fld_yy24ji1o4ga1qeqdvxt7n131",
+        "bodilyInjuryPerPerson": {
+          "_id": "fld_ht9f7lgkugz2zbj7m42r3oxd",
+          "value": 30000,
+          "_sources": [
+            {
+              "uri": "https://www.insurance.tx.gov/auto/minimums/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "table > tr:nth-child(1) > td:nth-child(2)",
+              "extractedValue": "$30,000",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "bodilyInjuryPerAccident": {
+          "_id": "fld_fhonx20rnx6pks3nzdtglgr0",
+          "value": 60000,
+          "_sources": [
+            {
+              "uri": "https://www.insurance.tx.gov/auto/minimums/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "table > tr:nth-child(2) > td:nth-child(2)",
+              "extractedValue": "$60,000",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "propertyDamage": {
+          "_id": "fld_neqgc8zrwfrhtyhbsm8197d2",
+          "value": 25000,
+          "_sources": [
+            {
+              "uri": "https://www.insurance.tx.gov/auto/minimums/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "table > tr:nth-child(3) > td:nth-child(2)",
+              "extractedValue": "$25,000",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "uninsuredMotorist": {
+          "_id": "fld_qqjvghu6jvmpap2zll41jwmv",
+          "value": 30000,
+          "_sources": [
+            {
+              "uri": "https://www.insurance.tx.gov/auto/minimums/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "table > tr:nth-child(4) > td:nth-child(2)",
+              "extractedValue": "$30,000",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      },
+      "home": {
+        "_id": "fld_l3ykk6zawh118avif9hda5iw"
+      },
+      "renters": {
+        "_id": "fld_j5f5tdjeeumnsuaqr1o0qe30"
+      }
+    },
+    "specialRequirements": {
+      "_id": "fld_r40izoqygn41ldk5pnatdygl",
+      "value": {
+        "requiresProposition103Notice": false,
+        "goodDriverDiscount": {
+          "available": true,
+          "criteria": "No at-fault accidents in 3 years"
+        }
+      },
+      "_sources": [
+        {
+          "uri": "https://www.insurance.tx.gov/requirements/",
+          "accessedDate": "2025-11-10T20:04:54.218Z",
+          "confidence": "high",
+          "primary": true
+        }
+      ]
+    }
+  }
+}
