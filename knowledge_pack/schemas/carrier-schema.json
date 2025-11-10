@@ -9,40 +9,40 @@
     "meta": {
       "type": "object",
       "properties": {
-        "schemaVersion": {"type": "string"},
-        "generatedDate": {"type": "string", "format": "date-time"},
-        "carrier": {"type": "string"},
-        "totalDataPoints": {"type": "integer"},
-        "totalSources": {"type": "integer"},
-        "conflictsResolved": {"type": "integer"}
+        "schemaVersion": { "type": "string" },
+        "generatedDate": { "type": "string", "format": "date-time" },
+        "carrier": { "type": "string" },
+        "totalDataPoints": { "type": "integer" },
+        "totalSources": { "type": "integer" },
+        "conflictsResolved": { "type": "integer" }
       }
     },
     "carrier": {
       "type": "object",
       "required": ["_id", "_sources", "name", "operatesIn", "products", "eligibility", "discounts"],
       "properties": {
-        "_id": {"type": "string", "pattern": "^carr_[a-z0-9]{10}$"},
-        "_sources": {"$ref": "#/definitions/sources"},
-        "name": {"type": "string"},
-        "operatesIn": {"$ref": "#/definitions/fieldWithMetadata"},
-        "products": {"$ref": "#/definitions/fieldWithMetadata"},
+        "_id": { "type": "string", "pattern": "^carr_[a-z0-9]{10}$" },
+        "_sources": { "$ref": "#/definitions/sources" },
+        "name": { "type": "string" },
+        "operatesIn": { "$ref": "#/definitions/fieldWithMetadata" },
+        "products": { "$ref": "#/definitions/fieldWithMetadata" },
         "eligibility": {
           "type": "object",
           "properties": {
-            "_id": {"type": "string"},
-            "_sources": {"$ref": "#/definitions/sources"},
-            "auto": {"$ref": "#/definitions/productEligibility"},
-            "home": {"$ref": "#/definitions/productEligibility"},
-            "renters": {"$ref": "#/definitions/productEligibility"},
-            "umbrella": {"$ref": "#/definitions/productEligibility"}
+            "_id": { "type": "string" },
+            "_sources": { "$ref": "#/definitions/sources" },
+            "auto": { "$ref": "#/definitions/productEligibility" },
+            "home": { "$ref": "#/definitions/productEligibility" },
+            "renters": { "$ref": "#/definitions/productEligibility" },
+            "umbrella": { "$ref": "#/definitions/productEligibility" }
           }
         },
         "discounts": {
           "type": "array",
-          "items": {"$ref": "#/definitions/discount"}
+          "items": { "$ref": "#/definitions/discount" }
         },
-        "compensation": {"$ref": "#/definitions/compensation"},
-        "averagePricing": {"$ref": "#/definitions/averagePricing"}
+        "compensation": { "$ref": "#/definitions/compensation" },
+        "averagePricing": { "$ref": "#/definitions/averagePricing" }
       }
     }
   },
@@ -54,16 +54,23 @@
         "type": "object",
         "required": ["uri", "accessedDate"],
         "properties": {
-          "uri": {"type": "string", "format": "uri"},
-          "pageId": {"type": "string", "pattern": "^page_[a-z0-9]{10}$", "description": "Optional in interface; Phase 2 MUST populate for raw data. Unique page ID (page_{cuid2})"},
-          "pageFile": {"type": "string", "description": "Optional in interface; Phase 2 MUST populate for raw data. Path relative to knowledge_pack/raw/ (e.g., '_pages/page_ckm9x7w8k0.html')"},
-          "elementRef": {"type": "string"},
-          "lineRef": {"type": "integer"},
-          "accessedDate": {"type": "string", "format": "date-time"},
-          "extractedValue": {"type": "string"},
-          "confidence": {"enum": ["high", "medium", "low"]},
-          "confidenceScore": {"type": "number", "minimum": 1.0, "maximum": 5.0},
-          "primary": {"type": "boolean"}
+          "uri": { "type": "string", "format": "uri" },
+          "pageId": {
+            "type": "string",
+            "pattern": "^page_[a-z0-9]{10}$",
+            "description": "Optional in interface; Phase 2 MUST populate for raw data. Unique page ID (page_{cuid2})"
+          },
+          "pageFile": {
+            "type": "string",
+            "description": "Optional in interface; Phase 2 MUST populate for raw data. Path relative to knowledge_pack/raw/ (e.g., '_pages/page_ckm9x7w8k0.html')"
+          },
+          "elementRef": { "type": "string" },
+          "lineRef": { "type": "integer" },
+          "accessedDate": { "type": "string", "format": "date-time" },
+          "extractedValue": { "type": "string" },
+          "confidence": { "enum": ["high", "medium", "low"] },
+          "confidenceScore": { "type": "number", "minimum": 1.0, "maximum": 5.0 },
+          "primary": { "type": "boolean" }
         }
       }
     },
@@ -71,37 +78,44 @@
       "type": "object",
       "required": ["_id", "value"],
       "properties": {
-        "_id": {"type": "string"},
+        "_id": { "type": "string" },
         "value": {},
-        "_sources": {"$ref": "#/definitions/sources"},
-        "_inheritedFrom": {"type": "string"},
-        "_resolution": {"$ref": "#/definitions/resolution"}
+        "_sources": { "$ref": "#/definitions/sources" },
+        "_inheritedFrom": { "type": "string" },
+        "_resolution": { "$ref": "#/definitions/resolution" }
       }
     },
     "resolution": {
       "type": "object",
-      "required": ["conflictId", "selectedValue", "method", "rationale", "resolvedBy", "resolvedDate"],
+      "required": [
+        "conflictId",
+        "selectedValue",
+        "method",
+        "rationale",
+        "resolvedBy",
+        "resolvedDate"
+      ],
       "properties": {
-        "conflictId": {"type": "string"},
+        "conflictId": { "type": "string" },
         "selectedValue": {},
-        "method": {"type": "string"},
-        "rationale": {"type": "string"},
-        "resolvedBy": {"type": "string"},
-        "resolvedDate": {"type": "string", "format": "date-time"}
+        "method": { "type": "string" },
+        "rationale": { "type": "string" },
+        "resolvedBy": { "type": "string" },
+        "resolvedDate": { "type": "string", "format": "date-time" }
       }
     },
     "productEligibility": {
       "type": "object",
       "properties": {
-        "_id": {"type": "string"},
-        "_sources": {"$ref": "#/definitions/sources"},
-        "minAge": {"$ref": "#/definitions/fieldWithMetadata"},
-        "maxAge": {"$ref": "#/definitions/fieldWithMetadata"},
-        "maxVehicles": {"$ref": "#/definitions/fieldWithMetadata"},
+        "_id": { "type": "string" },
+        "_sources": { "$ref": "#/definitions/sources" },
+        "minAge": { "$ref": "#/definitions/fieldWithMetadata" },
+        "maxAge": { "$ref": "#/definitions/fieldWithMetadata" },
+        "maxVehicles": { "$ref": "#/definitions/fieldWithMetadata" },
         "stateSpecific": {
           "type": "object",
           "patternProperties": {
-            "^[A-Z]{2}$": {"type": "object"}
+            "^[A-Z]{2}$": { "type": "object" }
           }
         }
       }
@@ -110,32 +124,32 @@
       "type": "object",
       "required": ["_id", "name", "percentage", "products", "states", "requirements"],
       "properties": {
-        "_id": {"type": "string", "pattern": "^disc_[a-z0-9]{10}$"},
-        "name": {"$ref": "#/definitions/fieldWithMetadata"},
-        "percentage": {"$ref": "#/definitions/fieldWithMetadata"},
-        "products": {"$ref": "#/definitions/fieldWithMetadata"},
-        "states": {"$ref": "#/definitions/fieldWithMetadata"},
-        "requirements": {"$ref": "#/definitions/fieldWithMetadata"},
-        "stackable": {"$ref": "#/definitions/fieldWithMetadata"},
-        "description": {"$ref": "#/definitions/fieldWithMetadata"}
+        "_id": { "type": "string", "pattern": "^disc_[a-z0-9]{10}$" },
+        "name": { "$ref": "#/definitions/fieldWithMetadata" },
+        "percentage": { "$ref": "#/definitions/fieldWithMetadata" },
+        "products": { "$ref": "#/definitions/fieldWithMetadata" },
+        "states": { "$ref": "#/definitions/fieldWithMetadata" },
+        "requirements": { "$ref": "#/definitions/fieldWithMetadata" },
+        "stackable": { "$ref": "#/definitions/fieldWithMetadata" },
+        "description": { "$ref": "#/definitions/fieldWithMetadata" }
       }
     },
     "compensation": {
       "type": "object",
       "properties": {
-        "_id": {"type": "string"},
-        "commissionRate": {"$ref": "#/definitions/fieldWithMetadata"},
-        "commissionType": {"$ref": "#/definitions/fieldWithMetadata"}
+        "_id": { "type": "string" },
+        "commissionRate": { "$ref": "#/definitions/fieldWithMetadata" },
+        "commissionType": { "$ref": "#/definitions/fieldWithMetadata" }
       }
     },
     "averagePricing": {
       "type": "object",
       "properties": {
-        "_id": {"type": "string"},
-        "auto": {"type": "object"},
-        "home": {"type": "object"},
-        "renters": {"type": "object"},
-        "umbrella": {"type": "object"}
+        "_id": { "type": "string" },
+        "auto": { "type": "object" },
+        "home": { "type": "object" },
+        "renters": { "type": "object" },
+        "umbrella": { "type": "object" }
       }
     }
   }

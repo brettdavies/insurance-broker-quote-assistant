@@ -5,74 +5,89 @@
  * Outputs shell commands to set SEARCH_ID and SEARCH_QUERY environment variables
  */
 
-import { readFileSync } from "fs";
-import { join } from "path";
+import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
 
-const TRACKER_PATH = "knowledge_pack/search-tracker.json";
+const TRACKER_PATH = 'knowledge_pack/search-tracker.json'
 
 interface SearchEntry {
-  id: string;
-  query: string;
-  category: string;
-  carrier?: string;
-  priority: string;
-  status: string;
+  id: string
+  query: string
+  category: string
+  carrier?: string
+  priority: string
+  status: string
 }
 
 interface Category {
-  name: string;
-  description: string;
-  searches: SearchEntry[];
+  name: string
+  description: string
+  searches: SearchEntry[]
+}
+
+interface TrackerMeta {
+  version: string
+  createdDate: string
+  lastUpdated: string
+  totalSearches: number
+  description: string
+}
+
+interface TrackerStatusCounts {
+  pending: number
+  in_progress: number
+  completed: number
+  failed: number
 }
 
 interface Tracker {
-  meta: any;
-  statusCounts: any;
-  categories: Category[];
+  meta: TrackerMeta
+  statusCounts: TrackerStatusCounts
+  categories: Category[]
 }
 
 try {
   // Read tracker
-  const tracker: Tracker = JSON.parse(readFileSync(TRACKER_PATH, "utf-8"));
+  const tracker: Tracker = JSON.parse(readFileSync(TRACKER_PATH, 'utf-8'))
 
   // Collect all pending searches
-  const pendingSearches: SearchEntry[] = [];
+  const pendingSearches: SearchEntry[] = []
   for (const category of tracker.categories) {
     for (const search of category.searches) {
-      if (search.status === "pending") {
-        pendingSearches.push(search);
+      if (search.status === 'pending') {
+        pendingSearches.push(search)
       }
     }
   }
 
   // Check if any pending searches found
   if (pendingSearches.length === 0) {
-    console.error("No pending searches found - Phase 2 complete");
-    process.exit(1);
+    console.error('No pending searches found - Phase 2 complete')
+    process.exit(1)
   }
 
   // Select one at random
-  const randomIndex = Math.floor(Math.random() * pendingSearches.length);
-  const selected = pendingSearches[randomIndex];
+  const randomIndex = Math.floor(Math.random() * pendingSearches.length)
+  const selected = pendingSearches[randomIndex]
 
   // Output shell commands to set environment variables
   // Escape double quotes in the query for shell safety
-  const escapedQuery = selected.query.replace(/"/g, '\\"');
+  const escapedQuery = selected.query.replace(/"/g, '\\"')
 
-  console.log(`export SEARCH_ID="${selected.id}"`);
-  console.log(`export SEARCH_QUERY="${escapedQuery}"`);
+  console.log(`export SEARCH_ID="${selected.id}"`)
+  console.log(`export SEARCH_QUERY="${escapedQuery}"`)
 
   // Output to stderr for visibility (won't interfere with eval)
-  console.error(`✓ Selected: ${selected.id}`);
-  console.error(`✓ Query: ${selected.query}`);
-  console.error(`✓ Category: ${selected.category}`);
+  console.error(`✓ Selected: ${selected.id}`)
+  console.error(`✓ Query: ${selected.query}`)
+  console.error(`✓ Category: ${selected.category}`)
   if (selected.carrier) {
-    console.error(`✓ Carrier: ${selected.carrier}`);
+    console.error(`✓ Carrier: ${selected.carrier}`)
   }
-  console.error(`✓ Priority: ${selected.priority}`);
+  console.error(`✓ Priority: ${selected.priority}`)
 
-  process.exit(0);
+  process.exit(0)
 } catch (error) {
-  console.error("Error selecting random search:", error);
-  process.exit(1);
+  console.error('Error selecting random search:', error)
+  process.exit(1)
 }
