@@ -16,5 +16,25 @@ beforeAll(() => {
 
     // Add KeyboardEvent constructor
     globalThis.KeyboardEvent = window.KeyboardEvent as typeof KeyboardEvent
+
+    // Add MutationObserver for Lexical editor
+    globalThis.MutationObserver = window.MutationObserver as typeof MutationObserver
+
+    // Add getComputedStyle for Lexical editor
+    if (!window.getComputedStyle) {
+      ;(window as any).getComputedStyle = () => ({
+        getPropertyValue: () => '',
+      })
+    }
+    globalThis.getComputedStyle = window.getComputedStyle
+
+    // Add IntersectionObserver stub if needed
+    if (!window.IntersectionObserver) {
+      globalThis.IntersectionObserver = class IntersectionObserver {
+        observe() {}
+        unobserve() {}
+        disconnect() {}
+      } as any
+    }
   }
 })
