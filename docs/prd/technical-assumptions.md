@@ -41,7 +41,7 @@ The following technical decisions are documented in [docs/architecture/3-tech-st
 - **Package Manager:** Bun 1.3+ (10-20x faster than npm, native TypeScript support)
 - **Validation:** Zod 3.23 for runtime schema validation across frontend/backend
 - **Storage:** JSON files on local filesystem (knowledge pack), in-memory Map cache (loaded at startup)
-- **Tooling:** Biome 1.9 (linting + formatting), Husky 9.0 (pre-commit hooks), GitHub Actions (CI)
+- **Tooling:** Biome 1.9 (linting + formatting for most files) + Prettier 3.0 with prettier-plugin-tailwindcss (React component formatting), Husky 9.0 (pre-commit hooks), GitHub Actions (CI)
 
 **Key Architectural Decisions (Rationale Documented in Architecture):**
 - **No database:** JSON files meet offline requirement and simplify 5-day timeline

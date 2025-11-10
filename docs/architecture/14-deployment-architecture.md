@@ -46,6 +46,7 @@
 2. Type check with TypeScript strict mode (`bun run typecheck`)
 3. Run all unit + integration tests (`bun test`)
 4. Lint with Biome (`bun run lint`)
+5. Format check with Biome + Prettier (`bun run format:check`)
 
 ## 14.3 Environment Configuration
 

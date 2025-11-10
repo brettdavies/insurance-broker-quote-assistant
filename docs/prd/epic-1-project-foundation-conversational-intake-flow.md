@@ -12,7 +12,7 @@
 
 1. Monorepo structure created with `apps/web`, `apps/api`, `packages/shared` workspaces
 2. TypeScript 5.6+ configured with strict mode across all packages
-3. Biome 1.9 configured for linting and formatting with pre-commit hooks (Husky)
+3. Biome 1.9 (linting + formatting for most files) and Prettier 3.0 with prettier-plugin-tailwindcss (React component formatting) configured with pre-commit hooks (Husky)
 4. GitHub Actions CI pipeline runs type-check, lint, and unit tests on pull requests
 5. `bun install` successfully installs all dependencies across workspaces
 6. `bun run dev` starts both frontend (port 3000) and backend (port 7070) concurrently

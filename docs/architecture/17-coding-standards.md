@@ -168,4 +168,85 @@ const pitch = "You qualify for Multi-Policy Bundle (15% off) [disc_ckm9x7wdx1]"
 - **Audit trail:** DecisionTrace logs all citations for regulatory review
 - **User trust:** Broker can explain "this came from GEICO's official discount rules"
 
+### 17.3.4 Linting and Formatting Strategy
+
+**Hybrid Approach: Biome + Prettier (Non-Standard Decision)**
+
+**Why Hybrid:**
+- **Biome limitation:** Does not support Tailwind CSS class sorting ([GitHub issue #1274](https://github.com/biomejs/biome/issues/1274))
+- **Prettier plugin required:** `prettier-plugin-tailwindcss` automatically sorts Tailwind classes for optimal developer experience
+- **Division of labor:** Biome handles linting + formatting for most files, Prettier handles only React components
+
+**Configuration:**
+
+`biome.json` (root):
+```json
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "formatter": {
+    "enabled": true,
+    "includes": ["**", "!**/*.tsx", "!**/*.jsx"],
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 100
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "semicolons": "asNeeded",
+      "trailingCommas": "es5"
+    }
+  }
+}
+```
+
+`.prettierrc` (root):
+```json
+{
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "printWidth": 100,
+  "plugins": ["prettier-plugin-tailwindcss"]
+}
+```
+
+**Division of Labor:**
+
+| Tool | File Types | Purpose |
+|------|-----------|---------|
+| **Biome** | `.ts`, `.js`, `.json`, `.tsx` (linting only), `.jsx` (linting only) | Linting + formatting for non-React files |
+| **Prettier** | `.tsx`, `.jsx` | Formatting React components with Tailwind class sorting |
+
+**Commands:**
+- `bun run lint` - Run Biome linting only (`biome check .`)
+- `bun run format` - Format all files (`biome format --write . && prettier --write '**/*.{tsx,jsx}'`)
+- `bun run format:check` - Check formatting without changes (`biome format . && prettier --check '**/*.{tsx,jsx}'`)
+
+**Settings Consistency:**
+
+Both tools configured with matching settings to ensure consistent code style:
+- Single quotes (`'`)
+- No semicolons
+- 2-space indentation
+- 100 character line width
+- ES5 trailing commas
+
+**Pre-commit Hook (Husky):**
+
+Runs in sequence: `typecheck` → `lint` → `format:check`
+
+**Why This Matters:**
+- **Tailwind DX:** Auto-sorted Tailwind classes prevent merge conflicts and improve readability
+- **Speed:** Biome (Rust) handles 95% of files 25x faster than ESLint
+- **Consistency:** Both tools use identical formatting settings, ensuring no conflicts
+- **CI/CD Integration:** Format check runs in GitHub Actions to enforce standards
+
 ---

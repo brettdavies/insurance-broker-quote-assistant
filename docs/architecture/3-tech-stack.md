@@ -34,7 +34,8 @@
 | **Testing Utilities** | @testing-library/react | Latest | Component testing | User-centric tests, works with Bun test |
 | **Testing (E2E)** | None (Skipped) | - | Out of scope for 5-day demo | Focus on unit + integration tests only |
 | **Build Tool (Backend)** | Bun build | Bun 1.3+ | Bundle backend if needed | Built-in bundler, ESM + CJS output, tree-shakeable (optional for demo) |
-| **Linting** | Biome | ^1.9 | Fast linting and formatting | Replaces ESLint + Prettier, written in Rust, extremely fast, zero config |
+| **Linting & Formatting (General)** | Biome | ^1.9 | Linting + formatting for most files | Rust-based, 25x faster than ESLint, handles TS/JS/JSON |
+| **Formatting (React Components)** | Prettier + prettier-plugin-tailwindcss | ^3.0 / ^0.5 | React component formatting with Tailwind class sorting | Sorts Tailwind classes (Biome doesn't support Tailwind yet - [GitHub #1274](https://github.com/biomejs/biome/issues/1274)) |
 | **Type Checking** | TypeScript strict mode | 5.6+ | All packages | `strict: true`, `noUncheckedIndexedAccess: true` |
 | **Git Hooks** | Husky | ^9.0 | Pre-commit checks | Type check + lint + format before commit (may be no-op if Biome configured correctly) |
 | **CI/CD** | GitHub Actions | - | Automated testing | Free for public repos, simple YAML config |
@@ -183,10 +184,13 @@ Two separate log streams for different purposes:
 - **Better DX:** Type inference from Zod schemas, less boilerplate
 - **Trade-off:** Smaller ecosystem than RHF, but active development
 
-**4. Biome over ESLint + Prettier**
-- **Speed:** Written in Rust, 25x faster than ESLint
-- **Simplicity:** Single tool for linting + formatting (zero config)
-- **Trade-off:** Less mature plugin ecosystem, but core rules sufficient
+**4. Hybrid Biome + Prettier (Non-Standard Decision)**
+- **Biome for most files:** Written in Rust, 25x faster than ESLint, handles linting + formatting for TS/JS/JSON
+- **Prettier for React components only:** Required for Tailwind CSS class sorting via prettier-plugin-tailwindcss
+- **Why hybrid:** Biome doesn't support Tailwind class sorting yet ([GitHub issue #1274](https://github.com/biomejs/biome/issues/1274))
+- **Configuration:** Biome excludes .tsx/.jsx from formatting via `formatter.includes: ["**", "!**/*.tsx", "!**/*.jsx"]`, Prettier handles only React components
+- **Settings consistency:** Both tools configured with matching rules (single quotes, no semis, 2-space indent, 100 char width)
+- **Trade-off:** Two tools instead of one, but necessary for Tailwind developer experience
 
 **5. Hono over Express**
 - **Performance:** Ultra-fast routing, minimal overhead
@@ -210,18 +214,20 @@ Two separate log streams for different purposes:
 
 **✅ DO:**
 - Use Bun for all package management (`bun install`, `bun run dev`)
-- Use `hono serve` for backend dev server (see `.claude/rules/hono.md`)
+- Use `hono serve` for backend dev server (see CLAUDE.md)
 - Use `hono request` for testing API without starting server
 - Use TanStack Form with Zod for all forms
-- Use Biome for linting/formatting (add `biome.json` config)
-- Use Husky for pre-commit hooks (may be no-op if Biome passes)
+- Use Biome for linting + formatting non-React files (add `biome.json` config)
+- Use Prettier with prettier-plugin-tailwindcss for React components only (add `.prettierrc` config)
+- Use Husky for pre-commit hooks (`typecheck` → `lint` → `format:check`)
 - Use `bun test` for all unit tests
 - Stick to spec requirements - NO SCOPE CREEP
 
 **❌ DON'T:**
 - Don't use npm (use Bun for speed)
 - Don't use React Hook Form (use TanStack Form)
-- Don't use ESLint + Prettier separately (use Biome)
+- Don't use ESLint (use Biome for linting)
+- Don't format React components with Biome (use Prettier with Tailwind plugin)
 - Don't use Vitest or Jest (use `bun test`)
 - Don't write E2E tests (only unit + integration)
 - Don't use OpenAPI generation (use Zod for types)

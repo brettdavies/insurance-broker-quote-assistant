@@ -15,7 +15,8 @@
 
 **Key Design Decisions:**
 - **Feature folders over technical folders:** `components/intake/IntakeForm.tsx` instead of `components/forms/IntakeForm.tsx` (easier to find related code)
-- **shadcn/ui enforced:** ESLint blocks direct Radix imports, ensures consistent styling across app
+- **shadcn/ui enforced:** Biome blocks direct Radix imports, ensures consistent styling across app
+- **Prettier for React components:** All `.tsx` files formatted with Prettier + prettier-plugin-tailwindcss for automatic Tailwind class sorting
 - **Shared types from monorepo:** All types re-exported from `@repo/shared`, single source of truth
 
 **Three Primary UI Flows:**

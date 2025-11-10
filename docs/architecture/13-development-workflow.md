@@ -32,6 +32,11 @@ hono serve apps/api/src/index.ts    # Backend only (port 7070)
 bun test                      # All workspaces
 bun test --filter apps/api    # Specific workspace
 
+# Linting and Formatting
+bun run lint                  # Lint all files with Biome
+bun run format                # Format all files (Biome + Prettier)
+bun run format:check          # Check formatting without changes (CI)
+
 # Production build
 bun run build
 ```
