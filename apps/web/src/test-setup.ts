@@ -13,5 +13,8 @@ beforeAll(() => {
     globalThis.HTMLElement = window.HTMLElement
     globalThis.Element = window.Element
     globalThis.navigator = window.navigator
+
+    // Add KeyboardEvent constructor
+    globalThis.KeyboardEvent = window.KeyboardEvent as typeof KeyboardEvent
   }
 })

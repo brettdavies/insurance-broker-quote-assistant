@@ -5,18 +5,21 @@ import { useEffect, useState } from 'react'
 export function ThemeToggle() {
   const [theme, setTheme] = useState<'dark' | 'light'>(() => {
     if (typeof window !== 'undefined') {
-      // Check HTML element first (initial state from index.html)
-      const htmlHasDark = document.documentElement.classList.contains('dark')
-      // Then check localStorage
+      // Check localStorage first
       const stored = localStorage.getItem('theme') as 'dark' | 'light' | null
-      // Use stored preference if available, otherwise use HTML state, default to dark
-      return stored || (htmlHasDark ? 'dark' : 'light') || 'dark'
+      if (stored) {
+        return stored
+      }
+      // Then check HTML element (initial state from index.html)
+      const htmlHasDark = document.documentElement.classList.contains('dark')
+      return htmlHasDark ? 'dark' : 'dark' // Default to dark
     }
     return 'dark'
   })
 
   useEffect(() => {
     const root = document.documentElement
+    // Apply theme immediately on mount
     if (theme === 'dark') {
       root.classList.add('dark')
     } else {

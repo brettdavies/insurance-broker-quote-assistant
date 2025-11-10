@@ -16,3 +16,6 @@ export type {
   HomeMinimums,
   RentersMinimums,
 } from './schemas/knowledge-pack'
+
+// Export intake types
+export type { UserProfile, IntakeResult } from './schemas/intake'

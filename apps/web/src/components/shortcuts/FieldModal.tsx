@@ -15,18 +15,19 @@ interface FieldModalProps {
   onOpenChange: (open: boolean) => void
   field: FieldCommand | null
   onSubmit: (value: string) => void
+  initialValue?: string
 }
 
-export function FieldModal({ open, onOpenChange, field, onSubmit }: FieldModalProps) {
+export function FieldModal({ open, onOpenChange, field, onSubmit, initialValue }: FieldModalProps) {
   const [value, setValue] = useState('')
   const [error, setError] = useState('')
 
   useEffect(() => {
     if (open) {
-      setValue('')
+      setValue(initialValue || '')
       setError('')
     }
-  }, [open])
+  }, [open, initialValue])
 
   const handleSubmit = () => {
     if (!field) return

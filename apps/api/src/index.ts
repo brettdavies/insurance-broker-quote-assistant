@@ -1,3 +1,4 @@
+import type { IntakeResult, UserProfile } from '@repo/shared'
 import { Hono } from 'hono'
 import {
   getLoadingStatus,
@@ -48,6 +49,94 @@ app.get('/api/health', (c) => {
     carriersCount: loadingStatus.carriersCount,
     statesCount: loadingStatus.statesCount,
   })
+})
+
+// Intake endpoint - conversational field extraction
+app.post('/api/intake', async (c) => {
+  const body = await c.req.json()
+  const { message, conversationHistory } = body as {
+    message: string
+    conversationHistory?: Array<{ role: string; content: string }>
+  }
+
+  // TODO: Replace with actual LLM-based Conversational Extractor (Story TBD)
+  // For now, use basic key-value parsing as a stub
+  const profile: UserProfile = {}
+  const extractedFields: string[] = []
+
+  // Simple key-value extraction regex
+  const kvPattern = /(\w+):(\w+|\d+)/gi
+  let match: RegExpExecArray | null
+
+  while ((match = kvPattern.exec(message)) !== null) {
+    const key = match[1]
+    const value = match[2]
+    if (!key || !value) continue
+    const lowerKey = key.toLowerCase()
+
+    // Map common aliases to field names
+    const fieldMap: Record<string, string> = {
+      k: 'householdSize',
+      kids: 'householdSize',
+      v: 'vehicles',
+      vehicles: 'vehicles',
+      s: 'state',
+      state: 'state',
+      a: 'age',
+      age: 'age',
+      l: 'productLine',
+      line: 'productLine',
+      product: 'productLine',
+    }
+
+    const fieldName = fieldMap[lowerKey]
+    if (fieldName) {
+      // Convert to appropriate type
+      if (fieldName === 'age' || fieldName === 'householdSize' || fieldName === 'vehicles') {
+        profile[fieldName] = Number.parseInt(value, 10)
+      } else {
+        profile[fieldName] = value
+      }
+      extractedFields.push(fieldName)
+    }
+  }
+
+  // Define all required fields for intake
+  const allFields = [
+    { name: 'State', fieldKey: 'state', alias: 's', priority: 'critical' as const },
+    { name: 'Product Line', fieldKey: 'productLine', alias: 'l', priority: 'critical' as const },
+    { name: 'Age', fieldKey: 'age', alias: 'a', priority: 'important' as const },
+    {
+      name: 'Household Size',
+      fieldKey: 'householdSize',
+      alias: 'k',
+      priority: 'important' as const,
+    },
+    { name: 'Vehicles', fieldKey: 'vehicles', alias: 'v', priority: 'important' as const },
+    { name: 'Owns Home', fieldKey: 'ownsHome', alias: 'h', priority: 'optional' as const },
+    {
+      name: 'Clean Record 3Yr',
+      fieldKey: 'cleanRecord3Yr',
+      alias: 'c',
+      priority: 'optional' as const,
+    },
+  ]
+
+  // Determine missing fields
+  const missingFields = allFields
+    .filter((field) => !profile[field.fieldKey])
+    .map((field) => ({
+      name: field.name,
+      priority: field.priority,
+      alias: field.alias,
+    }))
+
+  const result: IntakeResult = {
+    profile,
+    missingFields,
+  }
+
+  return c.json(result)
 })
 
 // Knowledge Pack Query Endpoints
@@ -165,6 +254,7 @@ app.get('/', (c) => {
     version: '0.1.0',
     endpoints: {
       health: '/api/health',
+      intake: 'POST /api/intake',
       carriers: '/api/carriers',
       'carriers-by-name': '/api/carriers/:name',
       'carriers-by-state': '/api/carriers?state=CA',
