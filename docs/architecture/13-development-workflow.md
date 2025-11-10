@@ -81,13 +81,20 @@ COMPLIANCE_LOG_FILE=./logs/compliance.log # Audit trail
 
 **Installation:**
 ```bash
+# Install unified TanStack DevTools (includes core + React adapter)
+bun add -d @tanstack/react-devtools
+
+# Install Query DevTools panel plugin
 bun add -d @tanstack/react-query-devtools
 ```
 
-**Setup (Floating Mode - Recommended):**
+**Setup (Unified DevTools - Recommended):**
+TanStack DevTools uses a unified panel that can compose multiple devtools (Query, Router, Form, etc.):
+
 ```typescript
 // apps/web/src/main.tsx
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+import { TanStackDevtools } from '@tanstack/react-devtools'
+import { ReactQueryDevtoolsPanel } from '@tanstack/react-query-devtools'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
 const queryClient = new QueryClient()
@@ -96,11 +103,25 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       {/* Your app components */}
-      <ReactQueryDevtools initialIsOpen={false} buttonPosition="bottom-right" />
+      <TanStackDevtools
+        plugins={[
+          {
+            name: 'TanStack Query',
+            render: <ReactQueryDevtoolsPanel />,
+          },
+          // Add more plugins as needed (Router, Form, etc.)
+        ]}
+      />
     </QueryClientProvider>
   )
 }
 ```
+
+**Benefits of Unified DevTools:**
+- Single panel for all TanStack libraries (Query, Router, Form, etc.)
+- Easy to add Router devtools when needed
+- Consistent UI across all TanStack tools
+- Composable architecture for future devtools
 
 **What You Can Debug:**
 - **Query State:** Inspect query keys, data, status (loading/success/error), timestamps

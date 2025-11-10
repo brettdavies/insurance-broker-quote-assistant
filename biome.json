@@ -1,7 +1,8 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "files": {
-    "maxSize": 5000000
+    "maxSize": 5000000,
+    "ignore": ["**/routeTree.gen.ts", "**/route-tree.gen.ts"]
   },
   "formatter": {
     "enabled": true,
