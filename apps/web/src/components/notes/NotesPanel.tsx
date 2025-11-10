@@ -11,11 +11,7 @@
  */
 
 import { FieldModal } from '@/components/shortcuts/FieldModal'
-import {
-  type ActionCommand,
-  type FieldCommand,
-  useSlashCommands,
-} from '@/hooks/useSlashCommands'
+import { type ActionCommand, type FieldCommand, useSlashCommands } from '@/hooks/useSlashCommands'
 import { LexicalComposer } from '@lexical/react/LexicalComposer'
 import { useLexicalComposerContext } from '@lexical/react/LexicalComposerContext'
 import { ContentEditable } from '@lexical/react/LexicalContentEditable'
@@ -172,7 +168,13 @@ function FieldInjectionPlugin({
   return null
 }
 
-export function NotesPanel({ mode = 'intake', onMessageSubmit, onActionCommand, onCommandError, editorRef }: NotesPanelProps) {
+export function NotesPanel({
+  mode = 'intake',
+  onMessageSubmit,
+  onActionCommand,
+  onCommandError,
+  editorRef,
+}: NotesPanelProps) {
   const [fieldModalOpen, setFieldModalOpen] = useState(false)
   const [currentField, setCurrentField] = useState<FieldCommand | null>(null)
   const [fieldValue, setFieldValue] = useState<string | null>(null)
@@ -183,10 +185,13 @@ export function NotesPanel({ mode = 'intake', onMessageSubmit, onActionCommand, 
     setFieldModalOpen(true)
   }, [])
 
-  const handleActionCommandLocal = useCallback((command: ActionCommand) => {
-    // Pass all action commands to parent - no local handling
-    onActionCommand?.(command)
-  }, [onActionCommand])
+  const handleActionCommandLocal = useCallback(
+    (command: ActionCommand) => {
+      // Pass all action commands to parent - no local handling
+      onActionCommand?.(command)
+    },
+    [onActionCommand]
+  )
 
   const { commandIndicator } = useSlashCommands({
     onFieldCommand: handleFieldCommand,

@@ -225,21 +225,21 @@ export function UnifiedChatInterface({ mode = 'intake' }: UnifiedChatInterfacePr
         setCurrentField(null)
         setFieldModalOpen(false)
         setHelpModalOpen(false)
-        
+
         // Clear any pending debounce timers
         if (debounceTimerRef.current) {
           clearTimeout(debounceTimerRef.current)
           debounceTimerRef.current = null
         }
-        
+
         // Clear editor content
         editorRef.current?.clear()
-        
+
         // Refocus editor after reset
         setTimeout(() => {
           editorRef.current?.focus()
         }, 100)
-        
+
         toast({
           title: 'Session reset',
           description: 'All data has been cleared.',

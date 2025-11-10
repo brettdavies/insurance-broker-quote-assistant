@@ -49,7 +49,11 @@ export function PillInteractionPlugin(): null {
 
           // Check if cursor is right after a pill
           const prevSibling = node.getPreviousSibling()
-          if ($isPillNode(prevSibling) && selection.isCollapsed() && selection.anchor.offset === 0) {
+          if (
+            $isPillNode(prevSibling) &&
+            selection.isCollapsed() &&
+            selection.anchor.offset === 0
+          ) {
             prevSibling.remove()
             event?.preventDefault()
             return true
@@ -170,12 +174,12 @@ export function PillInteractionPlugin(): null {
                 event?.preventDefault()
                 return true
               }
-                // Pill is at the end - create empty text node after it and position cursor there
-                const emptyTextNode = new TextNode('')
-                nextSibling.insertAfter(emptyTextNode)
-                emptyTextNode.select(0, 0)
-                event?.preventDefault()
-                return true
+              // Pill is at the end - create empty text node after it and position cursor there
+              const emptyTextNode = new TextNode('')
+              nextSibling.insertAfter(emptyTextNode)
+              emptyTextNode.select(0, 0)
+              event?.preventDefault()
+              return true
             }
           }
         }
@@ -192,12 +196,12 @@ export function PillInteractionPlugin(): null {
             event?.preventDefault()
             return true
           }
-            // Pill is at the end - create empty text node after it and position cursor there
-            const emptyTextNode = new TextNode('')
-            node.insertAfter(emptyTextNode)
-            emptyTextNode.select(0, 0)
-            event?.preventDefault()
-            return true
+          // Pill is at the end - create empty text node after it and position cursor there
+          const emptyTextNode = new TextNode('')
+          node.insertAfter(emptyTextNode)
+          emptyTextNode.select(0, 0)
+          event?.preventDefault()
+          return true
         }
 
         return false
@@ -238,21 +242,21 @@ export function PillInteractionPlugin(): null {
         // Convert pill back to plain text - completely remove pill knowledge
         // It becomes regular text that will be re-detected via normal codepath
         const text = node.getTextContent()
-        
+
         // Get surrounding text nodes to merge with
         const prevSibling = node.getPreviousSibling()
         const nextSibling = node.getNextSibling()
-        
+
         // Create text node from pill content
         const textNode = new TextNode(text)
-        
+
         // Replace pill with text node
         node.replace(textNode)
-        
+
         // Check both siblings independently - merge all three if both exist
         const hasPrevText = $isTextNode(prevSibling)
         const hasNextText = $isTextNode(nextSibling)
-        
+
         if (hasPrevText && hasNextText) {
           // Both siblings are text nodes - merge all three
           const prevText = prevSibling.getTextContent()

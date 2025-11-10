@@ -58,7 +58,16 @@ export function FieldModal({ open, onOpenChange, field, onSubmit, initialValue }
 
   // Determine input type based on field
   const getInputType = (): 'text' | 'number' | 'email' | 'tel' => {
-    if (field === 'kids' || field === 'dependents' || field === 'vehicles' || field === 'age' || field === 'household' || field === 'constructionYear' || field === 'squareFeet' || field === 'currentPremium') {
+    if (
+      field === 'kids' ||
+      field === 'dependents' ||
+      field === 'vehicles' ||
+      field === 'age' ||
+      field === 'household' ||
+      field === 'constructionYear' ||
+      field === 'squareFeet' ||
+      field === 'currentPremium'
+    ) {
       return 'number'
     }
     if (field === 'email') return 'email'

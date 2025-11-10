@@ -6,10 +6,7 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog'
 import { Input } from '@/components/ui/input'
-import {
-  ACTION_SHORTCUTS_DISPLAY,
-  FIELD_SHORTCUTS_DISPLAY,
-} from '@/config/shortcuts'
+import { ACTION_SHORTCUTS_DISPLAY, FIELD_SHORTCUTS_DISPLAY } from '@/config/shortcuts'
 import { useState } from 'react'
 
 interface HelpModalProps {

@@ -41,8 +41,9 @@ const FIELD_ALIASES: Record<string, string> = {
   productLine: 'productLine',
   a: 'age',
   age: 'age',
-  h: 'household',
-  household: 'household',
+  h: 'householdSize',
+  household: 'householdSize',
+  householdSize: 'householdSize',
   g: 'garage',
   garage: 'garage',
   i: 'vins',
@@ -55,6 +56,7 @@ const FIELD_ALIASES: Record<string, string> = {
   cleanRecord: 'cleanRecord',
   o: 'ownsHome',
   ownsHome: 'ownsHome',
+  owns: 'ownsHome',
   t: 'propertyType',
   propertyType: 'propertyType',
   y: 'constructionYear',
@@ -78,6 +80,7 @@ const FIELD_ALIASES: Record<string, string> = {
  */
 const NUMERIC_FIELDS = new Set([
   'kids',
+  'householdSize',
   'dependents',
   'vehicles',
   'age',
@@ -101,10 +104,13 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
   // Regex pattern: matches key:value followed by space, comma, period, or end of string
   // Case-insensitive matching
   const pattern = /(\w+):(\w+|\d+)(?=\s|,|\.|$)/gi
-  let match: RegExpExecArray | null
+  let match: RegExpExecArray | null = pattern.exec(text)
 
-  while ((match = pattern.exec(text)) !== null) {
-    if (!match[1] || !match[2]) continue
+  while (match !== null) {
+    if (!match[1] || !match[2]) {
+      match = pattern.exec(text)
+      continue
+    }
 
     const original = match[0]
     const key = match[1].toLowerCase()
@@ -124,6 +130,7 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
         original,
         validation: 'invalid_key',
       })
+      match = pattern.exec(text)
       continue
     }
 

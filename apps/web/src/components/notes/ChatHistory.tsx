@@ -21,13 +21,17 @@ interface ChatHistoryProps {
 
 export function ChatHistory({ messages }: ChatHistoryProps) {
   const scrollRef = useRef<HTMLDivElement>(null)
+  const messagesLengthRef = useRef(messages.length)
 
   // Auto-scroll to bottom when new messages arrive
   useEffect(() => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollTop = scrollRef.current.scrollHeight
+    if (messages.length !== messagesLengthRef.current) {
+      messagesLengthRef.current = messages.length
+      if (scrollRef.current) {
+        scrollRef.current.scrollTop = scrollRef.current.scrollHeight
+      }
     }
-  }, [messages])
+  }, [messages.length])
 
   const renderMessageWithPills = (text: string) => {
     const parsed = parseKeyValueSyntax(text)
@@ -54,9 +58,9 @@ export function ChatHistory({ messages }: ChatHistoryProps) {
 
     return (
       <>
-        {parts.map((part, index) => {
+        {parts.map((part, idx) => {
           if (typeof part === 'string') {
-            return <span key={index}>{part}</span>
+            return <span key={`text-${idx}-${part.slice(0, 10)}`}>{part}</span>
           }
 
           // Render pill
@@ -76,7 +80,7 @@ export function ChatHistory({ messages }: ChatHistoryProps) {
 
           return (
             <span
-              key={index}
+              key={`pill-${part.key}-${part.value}-${idx}`}
               contentEditable={false}
               data-key={part.key}
               data-value={part.value}

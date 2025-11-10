@@ -98,10 +98,11 @@ export function MissingFields({
                   </h4>
                   <div className="space-y-1">
                     {fields.map((field) => (
-                      <div
+                      <button
                         key={field.fieldKey}
+                        type="button"
                         onClick={() => onFieldClick(field.fieldKey)}
-                        className="flex cursor-pointer items-center justify-between rounded-md p-2 transition-all duration-200 ease-out hover:scale-[1.02] hover:bg-gray-100 dark:hover:bg-gray-700"
+                        className="flex w-full cursor-pointer items-center justify-between rounded-md p-2 text-left transition-all duration-200 ease-out hover:scale-[1.02] hover:bg-gray-100 dark:hover:bg-gray-700"
                       >
                         <div className="flex items-center gap-2">
                           <span className="text-lg">{PRIORITY_INDICATORS[field.priority]}</span>
@@ -110,7 +111,7 @@ export function MissingFields({
                           </span>
                         </div>
                         <Info className="h-4 w-4 text-gray-400 dark:text-gray-500" />
-                      </div>
+                      </button>
                     ))}
                   </div>
                 </div>

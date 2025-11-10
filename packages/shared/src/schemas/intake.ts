@@ -9,6 +9,7 @@ export interface UserProfile {
   state?: string
   productLine?: string
   age?: number
+  kids?: number
   householdSize?: number
   vehicles?: number
   ownsHome?: boolean

@@ -68,8 +68,8 @@ describe('useIntake Hook Integration', () => {
     expect(data).toBeTruthy()
     expect(data?.profile).toBeTruthy()
     // Check that fields were extracted
-    expect((data?.profile as { kids?: number }).kids).toBe(2)
-    expect((data?.profile as { vehicles?: number }).vehicles).toBe(3)
+    expect(data?.profile.kids).toBe(2)
+    expect(data?.profile.vehicles).toBe(3)
     expect(data?.profile.state).toBe('CA')
   })
 

@@ -66,9 +66,9 @@ app.post('/api/intake', async (c) => {
 
   // Simple key-value extraction regex
   const kvPattern = /(\w+):(\w+|\d+)/gi
-  let match: RegExpExecArray | null
+  let match: RegExpExecArray | null = kvPattern.exec(message)
 
-  while ((match = kvPattern.exec(message)) !== null) {
+  while (match !== null) {
     const key = match[1]
     const value = match[2]
     if (!key || !value) continue
@@ -76,8 +76,11 @@ app.post('/api/intake', async (c) => {
 
     // Map common aliases to field names
     const fieldMap: Record<string, string> = {
-      k: 'householdSize',
-      kids: 'householdSize',
+      k: 'kids',
+      kids: 'kids',
+      h: 'householdSize',
+      household: 'householdSize',
+      householdSize: 'householdSize',
       v: 'vehicles',
       vehicles: 'vehicles',
       s: 'state',
@@ -92,13 +95,19 @@ app.post('/api/intake', async (c) => {
     const fieldName = fieldMap[lowerKey]
     if (fieldName) {
       // Convert to appropriate type
-      if (fieldName === 'age' || fieldName === 'householdSize' || fieldName === 'vehicles') {
+      if (
+        fieldName === 'age' ||
+        fieldName === 'kids' ||
+        fieldName === 'householdSize' ||
+        fieldName === 'vehicles'
+      ) {
         profile[fieldName] = Number.parseInt(value, 10)
       } else {
         profile[fieldName] = value
       }
       extractedFields.push(fieldName)
     }
+    match = kvPattern.exec(message)
   }
 
   // Define all required fields for intake
@@ -107,13 +116,19 @@ app.post('/api/intake', async (c) => {
     { name: 'Product Line', fieldKey: 'productLine', alias: 'l', priority: 'critical' as const },
     { name: 'Age', fieldKey: 'age', alias: 'a', priority: 'important' as const },
     {
-      name: 'Household Size',
-      fieldKey: 'householdSize',
+      name: 'Kids',
+      fieldKey: 'kids',
       alias: 'k',
       priority: 'important' as const,
     },
+    {
+      name: 'Household Size',
+      fieldKey: 'householdSize',
+      alias: 'h',
+      priority: 'important' as const,
+    },
     { name: 'Vehicles', fieldKey: 'vehicles', alias: 'v', priority: 'important' as const },
-    { name: 'Owns Home', fieldKey: 'ownsHome', alias: 'h', priority: 'optional' as const },
+    { name: 'Owns Home', fieldKey: 'ownsHome', alias: 'o', priority: 'optional' as const },
     {
       name: 'Clean Record 3Yr',
       fieldKey: 'cleanRecord3Yr',

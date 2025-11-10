@@ -72,8 +72,8 @@ export function CompliancePanel({ mode, profile }: CompliancePanelProps) {
         <CardTitle className="text-sm font-semibold">Compliance Disclaimers</CardTitle>
       </CardHeader>
       <CardContent className="space-y-2">
-        {disclaimers.map((disclaimer, index) => (
-          <p key={index} className="text-xs text-gray-700 dark:text-gray-300">
+        {disclaimers.map((disclaimer) => (
+          <p key={disclaimer} className="text-xs text-gray-700 dark:text-gray-300">
             {disclaimer}
           </p>
         ))}

@@ -67,18 +67,20 @@ export function KeyValuePlugin(): null {
             // 3. Cursor is at a delimiter position (space/comma/period immediately before cursor)
             let shouldTransform = false
             let shouldSuppressDelimiter = false
-            
+
             if (isEditing) {
               // Check if cursor is at a delimiter position
               const cursorOffset = $isRangeSelection(selection) ? selection.anchor.offset : 0
               const charBeforeCursor = text[cursorOffset - 1]
-              const isAtDelimiter = charBeforeCursor === ' ' || charBeforeCursor === ',' || charBeforeCursor === '.'
-              
+              const isAtDelimiter =
+                charBeforeCursor === ' ' || charBeforeCursor === ',' || charBeforeCursor === '.'
+
               // Also check if entire text ends with delimiter
-              const endsWithDelimiter = text.endsWith(' ') || text.endsWith(',') || text.endsWith('.')
-              
+              const endsWithDelimiter =
+                text.endsWith(' ') || text.endsWith(',') || text.endsWith('.')
+
               shouldTransform = isAtDelimiter || endsWithDelimiter
-              
+
               // If cursor is right after a delimiter and that delimiter would cause transformation,
               // we should suppress it ONLY if it creates a duplicate delimiter
               if (isAtDelimiter && cursorOffset === text.length) {
@@ -104,12 +106,12 @@ export function KeyValuePlugin(): null {
               // Not editing - always transform if there are matches
               shouldTransform = true
             }
-            
+
             if (!shouldTransform) {
               // Still typing - wait for delimiter or cursor movement
               continue
             }
-            
+
             // If we need to suppress the delimiter, remove it from the text before transforming
             let textToTransform = text
             if (shouldSuppressDelimiter) {
@@ -119,10 +121,10 @@ export function KeyValuePlugin(): null {
               // Reparse with the updated text
               parsed = parseKeyValueSyntax(textToTransform)
             }
-            
+
             // Transform text into pills
             transformTextToPills(node, parsed)
-            
+
             // Clear tracking if this was the node being edited
             if (previousEditingNodeRef.current === node) {
               previousEditingNodeRef.current = null
@@ -136,7 +138,7 @@ export function KeyValuePlugin(): null {
     // Called when cursor moves away (click or arrow keys)
     function checkPreviouslyEditedNode() {
       const nodeToCheck = previousEditingNodeRef.current
-      
+
       if (!nodeToCheck) {
         return
       }
@@ -277,7 +279,7 @@ function transformTextToPills(
   const selection = $getSelection()
   let cursorOffset = 0
   let isInThisNode = false
-  
+
   if ($isRangeSelection(selection) && selection.isCollapsed()) {
     const anchorNode = selection.anchor.getNode()
     if (anchorNode === textNode) {
@@ -308,7 +310,7 @@ function transformTextToPills(
       const beforeText = text.substring(currentOffset, match.index)
       const beforeNode = new TextNode(beforeText)
       nodesToInsert.push(beforeNode)
-      
+
       // Track cursor position
       if (isInThisNode && cursorOffset >= currentOffset && cursorOffset <= match.index) {
         targetNode = beforeNode
@@ -324,9 +326,13 @@ function transformTextToPills(
       fieldName: match.fieldName,
     })
     nodesToInsert.push(pillNode)
-    
+
     // Track cursor position - if cursor is in the pill text, move it to after the pill
-    if (isInThisNode && cursorOffset >= match.index && cursorOffset < match.index + match.original.length) {
+    if (
+      isInThisNode &&
+      cursorOffset >= match.index &&
+      cursorOffset < match.index + match.original.length
+    ) {
       targetNode = pillNode
       targetOffset = 0 // Will be set to after pill
     }
@@ -339,14 +345,14 @@ function transformTextToPills(
     const afterText = text.substring(currentOffset)
     const afterNode = new TextNode(afterText)
     nodesToInsert.push(afterNode)
-    
+
     // Track cursor position
     if (isInThisNode && cursorOffset >= currentOffset) {
       targetNode = afterNode
       targetOffset = cursorOffset - currentOffset
     }
   }
-  
+
   // Replace the text node with the new nodes
   for (const node of nodesToInsert) {
     textNode.insertBefore(node)

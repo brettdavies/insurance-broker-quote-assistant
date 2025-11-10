@@ -1,5 +1,8 @@
 // Test setup for Bun test with DOM environment
 import { beforeAll } from 'bun:test'
+import '@testing-library/jest-dom'
+// Preload React to ensure JSX runtime is available
+import 'react/jsx-runtime'
 
 // Setup DOM environment using happy-dom
 beforeAll(() => {
@@ -22,7 +25,9 @@ beforeAll(() => {
 
     // Add getComputedStyle for Lexical editor
     if (!window.getComputedStyle) {
-      ;(window as any).getComputedStyle = () => ({
+      ;(
+        window as unknown as { getComputedStyle: () => { getPropertyValue: () => string } }
+      ).getComputedStyle = () => ({
         getPropertyValue: () => '',
       })
     }
@@ -34,7 +39,7 @@ beforeAll(() => {
         observe() {}
         unobserve() {}
         disconnect() {}
-      } as any
+      } as unknown as typeof IntersectionObserver
     }
   }
 })

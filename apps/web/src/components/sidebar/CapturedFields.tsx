@@ -105,20 +105,20 @@ export function CapturedFields({ profile, onFieldClick }: CapturedFieldsProps) {
       fieldKey: 'age',
     })
   }
+  if (profile.kids !== undefined) {
+    fieldsByCategory.details?.push({
+      name: 'Kids',
+      value: profile.kids,
+      category: 'details',
+      fieldKey: 'kids',
+    })
+  }
   if (profile.householdSize !== undefined) {
     fieldsByCategory.details?.push({
       name: 'Household Size',
       value: profile.householdSize,
       category: 'details',
-      fieldKey: 'household',
-    })
-  }
-  if ((profile as { kids?: number }).kids !== undefined) {
-    fieldsByCategory.details?.push({
-      name: 'Kids',
-      value: (profile as { kids: number }).kids,
-      category: 'details',
-      fieldKey: 'kids',
+      fieldKey: 'householdSize',
     })
   }
   if (profile.vehicles !== undefined) {
@@ -168,10 +168,11 @@ export function CapturedFields({ profile, onFieldClick }: CapturedFieldsProps) {
             <AccordionContent>
               <div className="space-y-2">
                 {fields.map((field) => (
-                  <div
+                  <button
                     key={field.fieldKey}
+                    type="button"
                     onClick={() => onFieldClick(field.fieldKey, field.value)}
-                    className="flex cursor-pointer items-center justify-between rounded-md p-2 transition-all duration-200 ease-out hover:scale-[1.02] hover:bg-gray-100 dark:hover:bg-gray-700"
+                    className="flex w-full cursor-pointer items-center justify-between rounded-md p-2 text-left transition-all duration-200 ease-out hover:scale-[1.02] hover:bg-gray-100 dark:hover:bg-gray-700"
                   >
                     <div className="flex items-center gap-2">
                       <span className="text-field-name font-semibold">{field.name}:</span>
@@ -185,7 +186,7 @@ export function CapturedFields({ profile, onFieldClick }: CapturedFieldsProps) {
                       )}
                     </div>
                     <Info className="h-4 w-4 text-gray-400 dark:text-gray-500" />
-                  </div>
+                  </button>
                 ))}
               </div>
             </AccordionContent>
