@@ -1,0 +1,252 @@
+{
+  "shortcuts": [
+    {
+      "type": "field",
+      "key": "n",
+      "command": "name",
+      "label": "Name",
+      "question": "What is the name?",
+      "category": "Identity & Contact"
+    },
+    {
+      "type": "field",
+      "key": "e",
+      "command": "email",
+      "label": "Email",
+      "question": "What is the email address?",
+      "category": "Identity & Contact"
+    },
+    {
+      "type": "field",
+      "key": "p",
+      "command": "phone",
+      "label": "Phone",
+      "question": "What is the phone number?",
+      "category": "Identity & Contact"
+    },
+    {
+      "type": "field",
+      "key": "s",
+      "command": "state",
+      "label": "State",
+      "question": "What is the state?",
+      "category": "Location"
+    },
+    {
+      "type": "field",
+      "key": "z",
+      "command": "zip",
+      "label": "Zip Code",
+      "question": "What is the zip code?",
+      "category": "Location"
+    },
+    {
+      "type": "field",
+      "key": "l",
+      "command": "productLine",
+      "label": "Product Line",
+      "question": "What is the product line?",
+      "category": "Product"
+    },
+    {
+      "type": "field",
+      "key": "a",
+      "command": "age",
+      "label": "Age",
+      "question": "What is the age?",
+      "category": "Household"
+    },
+    {
+      "type": "field",
+      "key": "h",
+      "command": "household",
+      "label": "Household Size",
+      "question": "What is the household size?",
+      "category": "Household"
+    },
+    {
+      "type": "field",
+      "key": "k",
+      "command": "kids",
+      "label": "Kids",
+      "question": "How many kids?",
+      "category": "Household"
+    },
+    {
+      "type": "field",
+      "key": "d",
+      "command": "dependents",
+      "label": "Dependents",
+      "question": "How many dependents?",
+      "category": "Household"
+    },
+    {
+      "type": "field",
+      "key": "v",
+      "command": "vehicles",
+      "label": "Vehicles",
+      "question": "How many vehicles?",
+      "category": "Vehicle"
+    },
+    {
+      "type": "field",
+      "key": "g",
+      "command": "garage",
+      "label": "Garage Type",
+      "question": "What is the garage type?",
+      "category": "Vehicle"
+    },
+    {
+      "type": "field",
+      "key": "i",
+      "command": "vins",
+      "label": "VINs",
+      "question": "What are the VINs?",
+      "category": "Vehicle"
+    },
+    {
+      "type": "field",
+      "key": "r",
+      "command": "drivers",
+      "label": "Drivers",
+      "question": "How many drivers?",
+      "category": "Vehicle"
+    },
+    {
+      "type": "field",
+      "key": "c",
+      "command": "drivingRecords",
+      "label": "Driving Records",
+      "question": "What are the driving records?",
+      "category": "Vehicle"
+    },
+    {
+      "type": "field",
+      "key": "u",
+      "command": "cleanRecord",
+      "label": "Clean Record",
+      "question": "Is there a clean record?",
+      "category": "Vehicle"
+    },
+    {
+      "type": "field",
+      "key": "o",
+      "command": "ownsHome",
+      "label": "Owns Home",
+      "question": "Does the client own a home?",
+      "category": "Property"
+    },
+    {
+      "type": "field",
+      "key": "t",
+      "command": "propertyType",
+      "label": "Property Type",
+      "question": "What is the property type?",
+      "category": "Property"
+    },
+    {
+      "type": "field",
+      "key": "y",
+      "command": "constructionYear",
+      "label": "Construction Year",
+      "question": "What is the construction year?",
+      "category": "Property"
+    },
+    {
+      "type": "field",
+      "key": "f",
+      "command": "roofType",
+      "label": "Roof Type",
+      "question": "What is the roof type?",
+      "category": "Property"
+    },
+    {
+      "type": "field",
+      "key": "q",
+      "command": "squareFeet",
+      "label": "Square Feet",
+      "question": "What is the square footage?",
+      "category": "Property"
+    },
+    {
+      "type": "field",
+      "key": "m",
+      "command": "currentPremium",
+      "label": "Current Premium",
+      "question": "What is the current premium?",
+      "category": "Coverage"
+    },
+    {
+      "type": "field",
+      "key": "b",
+      "command": "deductibles",
+      "label": "Deductibles",
+      "question": "What are the deductibles?",
+      "category": "Coverage"
+    },
+    {
+      "type": "field",
+      "key": "x",
+      "command": "limits",
+      "label": "Coverage Limits",
+      "question": "What are the coverage limits?",
+      "category": "Coverage"
+    },
+    {
+      "type": "field",
+      "key": "w",
+      "command": "existingPolicies",
+      "label": "Existing Policies",
+      "question": "What are the existing policies?",
+      "category": "Coverage"
+    },
+    {
+      "type": "action",
+      "key": "export",
+      "command": "export",
+      "label": "Export to IQuote Pro"
+    },
+    {
+      "type": "action",
+      "key": "copy",
+      "command": "copy",
+      "label": "Copy to Clipboard"
+    },
+    {
+      "type": "action",
+      "key": "reset",
+      "command": "reset",
+      "label": "Reset Session"
+    },
+    {
+      "type": "action",
+      "key": "policy",
+      "command": "policy",
+      "label": "Switch to Policy Mode"
+    },
+    {
+      "type": "action",
+      "key": "intake",
+      "command": "intake",
+      "label": "Switch to Intake Mode"
+    },
+    {
+      "type": "action",
+      "key": "convo",
+      "command": "intake",
+      "label": "Switch to Intake Mode"
+    },
+    {
+      "type": "action",
+      "key": "help",
+      "command": "help",
+      "label": "Show Keyboard Shortcuts"
+    },
+    {
+      "type": "action",
+      "key": "?",
+      "command": "help",
+      "label": "Show Keyboard Shortcuts"
+    }
+  ]
+}

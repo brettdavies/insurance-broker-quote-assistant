@@ -1,80 +1,18 @@
+import {
+  type ActionCommand,
+  type FieldCommand,
+  getActionCommand,
+  getFieldCommand,
+} from '@/config/shortcuts'
+import { hasModifiers, isNotesInput, isOtherInput, shouldIgnoreSlash } from '@/lib/keyboard-utils'
 import { useCallback, useEffect, useState } from 'react'
 
-export type FieldCommand =
-  | 'name'
-  | 'email'
-  | 'phone'
-  | 'state'
-  | 'zip'
-  | 'productLine'
-  | 'age'
-  | 'household'
-  | 'kids'
-  | 'dependents'
-  | 'vehicles'
-  | 'garage'
-  | 'vins'
-  | 'drivers'
-  | 'drivingRecords'
-  | 'cleanRecord'
-  | 'ownsHome'
-  | 'propertyType'
-  | 'constructionYear'
-  | 'roofType'
-  | 'squareFeet'
-  | 'currentPremium'
-  | 'deductibles'
-  | 'limits'
-  | 'existingPolicies'
-
-export type ActionCommand = 'export' | 'copy' | 'reset' | 'policy' | 'intake' | 'help'
-
-const FIELD_SHORTCUTS: Record<string, FieldCommand> = {
-  n: 'name',
-  e: 'email',
-  p: 'phone',
-  s: 'state',
-  z: 'zip',
-  l: 'productLine',
-  a: 'age',
-  h: 'household',
-  k: 'kids',
-  d: 'dependents',
-  v: 'vehicles',
-  g: 'garage',
-  i: 'vins',
-  r: 'drivers',
-  c: 'drivingRecords',
-  u: 'cleanRecord',
-  o: 'ownsHome',
-  t: 'propertyType',
-  y: 'constructionYear',
-  f: 'roofType',
-  q: 'squareFeet',
-  w: 'existingPolicies',
-  m: 'currentPremium',
-  b: 'deductibles',
-  x: 'limits',
-}
-
-const ACTION_SHORTCUTS: Record<string, ActionCommand> = {
-  export: 'export',
-  copy: 'copy',
-  reset: 'reset',
-  policy: 'policy',
-  intake: 'intake',
-  convo: 'intake',
-  help: 'help',
-  '?': 'help', // Support /? as alias for /help
-}
+export type { ActionCommand, FieldCommand }
 
 export interface SlashCommandCallbacks {
   onFieldCommand?: (command: FieldCommand) => void
   onActionCommand?: (command: ActionCommand) => void
-}
-
-const hasModifiers = (e: KeyboardEvent) => {
-  return e.metaKey || e.ctrlKey || e.altKey || e.shiftKey
+  onCommandError?: (command: string) => void // Callback for invalid commands
 }
 
 export function useSlashCommands(callbacks: SlashCommandCallbacks = {}) {
@@ -88,6 +26,32 @@ export function useSlashCommands(callbacks: SlashCommandCallbacks = {}) {
     setCommandIndicator(null)
   }, [])
 
+  const submitCommand = useCallback(
+    (buffer: string) => {
+      // Check if buffer matches a field command
+      const fieldCommand = getFieldCommand(buffer)
+      if (fieldCommand) {
+        callbacks.onFieldCommand?.(fieldCommand)
+        exitCommandMode()
+        return true
+      }
+
+      // Check if buffer matches an action command
+      const actionCommand = getActionCommand(buffer)
+      if (actionCommand) {
+        callbacks.onActionCommand?.(actionCommand)
+        exitCommandMode()
+        return true
+      }
+
+      // No match found
+      callbacks.onCommandError?.(buffer)
+      exitCommandMode()
+      return false
+    },
+    [callbacks, exitCommandMode]
+  )
+
   useEffect(() => {
     let timeout: NodeJS.Timeout | null = null
 
@@ -95,15 +59,13 @@ export function useSlashCommands(callbacks: SlashCommandCallbacks = {}) {
       // Enter command mode on / (no modifiers)
       if (e.key === '/' && !hasModifiers(e)) {
         const target = e.target as HTMLElement
-        const isNotesInput = target.dataset.notesInput === 'true'
-        const isOtherInput = ['INPUT', 'TEXTAREA'].includes(target.tagName)
 
         // Don't trigger in modal inputs (except notes input)
-        if (!isNotesInput && isOtherInput) return
+        if (!isNotesInput(target) && isOtherInput(target)) return
 
         // Smart detection: ignore / in dates and URLs
         const precedingText = target.textContent || ''
-        if (/\d$/.test(precedingText) || /:$/.test(precedingText)) {
+        if (shouldIgnoreSlash(precedingText)) {
           return
         }
 
@@ -129,25 +91,44 @@ export function useSlashCommands(callbacks: SlashCommandCallbacks = {}) {
           return
         }
 
+        // Handle backspace
+        if (e.key === 'Backspace') {
+          e.preventDefault()
+          if (commandBuffer.length > 0) {
+            const newBuffer = commandBuffer.slice(0, -1)
+            setCommandBuffer(newBuffer)
+            setCommandIndicator(newBuffer ? `/${newBuffer}` : '/...')
+
+            // Reset timeout
+            if (timeout) clearTimeout(timeout)
+            timeout = setTimeout(() => {
+              exitCommandMode()
+            }, 2000)
+          } else {
+            // Empty buffer - exit command mode
+            exitCommandMode()
+          }
+          return
+        }
+
+        // Submit command on Space or Enter
+        if (e.key === ' ' || e.key === 'Enter') {
+          e.preventDefault()
+          if (commandBuffer) {
+            submitCommand(commandBuffer)
+          } else {
+            exitCommandMode()
+          }
+          return
+        }
+
         // Add to buffer if letter or special character (? for help)
+        // Allow letters for both single-char field shortcuts and multi-char action shortcuts
         if (/^[a-z?]$/i.test(e.key)) {
           e.preventDefault()
           const newBuffer = commandBuffer + e.key.toLowerCase()
 
-          // Check single-letter field shortcuts (execute immediately)
-          if (newBuffer.length === 1 && FIELD_SHORTCUTS[newBuffer]) {
-            callbacks.onFieldCommand?.(FIELD_SHORTCUTS[newBuffer])
-            exitCommandMode()
-            return
-          }
-
-          // Check full-word action shortcuts or single-character shortcuts (?)
-          if (ACTION_SHORTCUTS[newBuffer]) {
-            callbacks.onActionCommand?.(ACTION_SHORTCUTS[newBuffer])
-            exitCommandMode()
-            return
-          }
-
+          // Don't auto-execute - just update buffer and wait for space/enter
           setCommandBuffer(newBuffer)
           setCommandIndicator(`/${newBuffer}`)
 
@@ -165,7 +146,7 @@ export function useSlashCommands(callbacks: SlashCommandCallbacks = {}) {
       document.removeEventListener('keydown', handleKeyDown)
       if (timeout) clearTimeout(timeout)
     }
-  }, [commandMode, commandBuffer, exitCommandMode, callbacks])
+  }, [commandMode, commandBuffer, exitCommandMode, submitCommand])
 
   return {
     commandMode,

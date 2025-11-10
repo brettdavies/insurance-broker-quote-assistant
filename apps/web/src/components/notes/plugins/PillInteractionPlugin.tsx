@@ -11,6 +11,7 @@ import { useLexicalComposerContext } from '@lexical/react/LexicalComposerContext
 import {
   $createRangeSelection,
   $getNodeByKey,
+  $getRoot,
   $getSelection,
   $isNodeSelection,
   $isRangeSelection,
@@ -169,6 +170,12 @@ export function PillInteractionPlugin(): null {
                 event?.preventDefault()
                 return true
               }
+                // Pill is at the end - create empty text node after it and position cursor there
+                const emptyTextNode = new TextNode('')
+                nextSibling.insertAfter(emptyTextNode)
+                emptyTextNode.select(0, 0)
+                event?.preventDefault()
+                return true
             }
           }
         }
@@ -185,6 +192,12 @@ export function PillInteractionPlugin(): null {
             event?.preventDefault()
             return true
           }
+            // Pill is at the end - create empty text node after it and position cursor there
+            const emptyTextNode = new TextNode('')
+            node.insertAfter(emptyTextNode)
+            emptyTextNode.select(0, 0)
+            event?.preventDefault()
+            return true
         }
 
         return false
@@ -222,15 +235,54 @@ export function PillInteractionPlugin(): null {
           return
         }
 
-        // Convert pill back to text - it will be treated like any other text being edited
-        // The KeyValuePlugin will not re-transform it until the user types a space or moves the cursor
+        // Convert pill back to plain text - completely remove pill knowledge
+        // It becomes regular text that will be re-detected via normal codepath
         const text = node.getTextContent()
+        
+        // Get surrounding text nodes to merge with
+        const prevSibling = node.getPreviousSibling()
+        const nextSibling = node.getNextSibling()
+        
+        // Create text node from pill content
         const textNode = new TextNode(text)
+        
+        // Replace pill with text node
         node.replace(textNode)
-
-        // Position cursor at end of text (collapsed selection) so user can continue typing
-        const textLength = text.length
-        textNode.select(textLength, textLength)
+        
+        // Check both siblings independently - merge all three if both exist
+        const hasPrevText = $isTextNode(prevSibling)
+        const hasNextText = $isTextNode(nextSibling)
+        
+        if (hasPrevText && hasNextText) {
+          // Both siblings are text nodes - merge all three
+          const prevText = prevSibling.getTextContent()
+          const nextText = nextSibling.getTextContent()
+          const mergedText = new TextNode(prevText + text + nextText)
+          prevSibling.replace(mergedText)
+          textNode.remove()
+          nextSibling.remove()
+          // Position cursor at end of pill text (before next text)
+          mergedText.select(prevText.length + text.length, prevText.length + text.length)
+        } else if (hasPrevText) {
+          // Only previous sibling exists - merge with it
+          const prevText = prevSibling.getTextContent()
+          const mergedText = new TextNode(prevText + text)
+          prevSibling.replace(mergedText)
+          textNode.remove()
+          // Position cursor at end of merged text (after pill text)
+          mergedText.select(prevText.length + text.length, prevText.length + text.length)
+        } else if (hasNextText) {
+          // Only next sibling exists - merge with it
+          const nextText = nextSibling.getTextContent()
+          const mergedText = new TextNode(text + nextText)
+          textNode.replace(mergedText)
+          nextSibling.remove()
+          // Position cursor at end of pill text (before next text)
+          mergedText.select(text.length, text.length)
+        } else {
+          // No siblings - just position cursor at end
+          textNode.select(text.length, text.length)
+        }
       })
     }
 

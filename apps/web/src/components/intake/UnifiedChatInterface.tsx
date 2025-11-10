@@ -14,7 +14,7 @@ import type { MissingField } from '@/components/sidebar/MissingFields'
 import { Sidebar } from '@/components/sidebar/Sidebar'
 import { useToast } from '@/components/ui/use-toast'
 import { useIntake } from '@/hooks/useIntake'
-import type { FieldCommand } from '@/hooks/useSlashCommands'
+import type { ActionCommand, FieldCommand } from '@/hooks/useSlashCommands'
 import { extractFields, parseKeyValueSyntax } from '@/lib/key-value-parser'
 import type { UserProfile } from '@repo/shared'
 import { useCallback, useRef, useState } from 'react'
@@ -33,6 +33,7 @@ export function UnifiedChatInterface({ mode = 'intake' }: UnifiedChatInterfacePr
     value?: string | number | boolean
   } | null>(null)
   const [helpModalOpen, setHelpModalOpen] = useState(false)
+  const editorRef = useRef<{ focus: () => void; clear: () => void } | null>(null)
 
   const { toast } = useToast()
   const intakeMutation = useIntake()
@@ -213,6 +214,57 @@ export function UnifiedChatInterface({ mode = 'intake' }: UnifiedChatInterfacePr
 
   const fieldCommand = currentField ? (fieldCommandMap[currentField.key] ?? null) : null
 
+  // Handle action commands (reset, help, etc.)
+  const handleActionCommand = useCallback(
+    (command: ActionCommand) => {
+      if (command === 'reset') {
+        // Clear all state
+        setMessages([])
+        setProfile({})
+        setMissingFields([])
+        setCurrentField(null)
+        setFieldModalOpen(false)
+        setHelpModalOpen(false)
+        
+        // Clear any pending debounce timers
+        if (debounceTimerRef.current) {
+          clearTimeout(debounceTimerRef.current)
+          debounceTimerRef.current = null
+        }
+        
+        // Clear editor content
+        editorRef.current?.clear()
+        
+        // Refocus editor after reset
+        setTimeout(() => {
+          editorRef.current?.focus()
+        }, 100)
+        
+        toast({
+          title: 'Session reset',
+          description: 'All data has been cleared.',
+          duration: 3000,
+        })
+      } else if (command === 'help') {
+        setHelpModalOpen(true)
+      }
+    },
+    [toast]
+  )
+
+  // Handle command errors (invalid commands)
+  const handleCommandError = useCallback(
+    (command: string) => {
+      toast({
+        title: 'Invalid command',
+        description: `Command "/${command}" not found. Type /help for available commands.`,
+        variant: 'destructive',
+        duration: 3000,
+      })
+    },
+    [toast]
+  )
+
   return (
     <>
       <div className="flex h-full flex-col">
@@ -226,7 +278,13 @@ export function UnifiedChatInterface({ mode = 'intake' }: UnifiedChatInterfacePr
 
             {/* Notes Input */}
             <div className="border-t border-gray-300 dark:border-gray-700">
-              <NotesPanel mode={mode} onMessageSubmit={handleMessageSubmit} />
+              <NotesPanel
+                mode={mode}
+                onMessageSubmit={handleMessageSubmit}
+                onActionCommand={handleActionCommand}
+                onCommandError={handleCommandError}
+                editorRef={editorRef}
+              />
             </div>
 
             {/* Compliance Panel */}

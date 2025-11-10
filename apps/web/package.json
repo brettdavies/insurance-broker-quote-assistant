@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "bun --hot server.ts",
-    "build": "bun build src/main.tsx --outdir dist",
+    "build": "bun run build.ts",
     "type-check": "tsc --noEmit",
     "lint": "biome check .",
     "test": "bun test --dom"

@@ -11,7 +11,6 @@
  */
 
 import { FieldModal } from '@/components/shortcuts/FieldModal'
-import { HelpModal } from '@/components/shortcuts/HelpModal'
 import {
   type ActionCommand,
   type FieldCommand,
@@ -33,6 +32,9 @@ import { PillInteractionPlugin } from './plugins/PillInteractionPlugin'
 interface NotesPanelProps {
   mode?: 'intake' | 'policy'
   onMessageSubmit?: (message: string) => void
+  onActionCommand?: (command: ActionCommand) => void
+  onCommandError?: (command: string) => void
+  editorRef?: React.MutableRefObject<{ focus: () => void; clear: () => void } | null>
 }
 
 // Lexical editor configuration
@@ -52,7 +54,34 @@ const editorConfig = {
   },
 }
 
-// Submit handler plugin
+// Plugin to expose editor instance via ref
+function EditorRefPlugin({
+  editorRef,
+}: {
+  editorRef?: React.MutableRefObject<{ focus: () => void; clear: () => void } | null>
+}): null {
+  const [editor] = useLexicalComposerContext()
+
+  useEffect(() => {
+    if (editorRef) {
+      editorRef.current = {
+        focus: () => {
+          const rootElement = editor.getRootElement()
+          if (rootElement) {
+            rootElement.focus()
+          }
+        },
+        clear: () => {
+          editor.update(() => {
+            $getRoot().clear()
+          })
+        },
+      }
+    }
+  }, [editor, editorRef])
+
+  return null
+}
 function SubmitPlugin({
   onSubmit,
 }: {
@@ -143,9 +172,8 @@ function FieldInjectionPlugin({
   return null
 }
 
-export function NotesPanel({ mode = 'intake', onMessageSubmit }: NotesPanelProps) {
+export function NotesPanel({ mode = 'intake', onMessageSubmit, onActionCommand, onCommandError, editorRef }: NotesPanelProps) {
   const [fieldModalOpen, setFieldModalOpen] = useState(false)
-  const [helpModalOpen, setHelpModalOpen] = useState(false)
   const [currentField, setCurrentField] = useState<FieldCommand | null>(null)
   const [fieldValue, setFieldValue] = useState<string | null>(null)
   const [content, setContent] = useState('')
@@ -155,18 +183,18 @@ export function NotesPanel({ mode = 'intake', onMessageSubmit }: NotesPanelProps
     setFieldModalOpen(true)
   }, [])
 
-  const handleActionCommand = useCallback((command: ActionCommand) => {
-    if (command === 'help') {
-      setHelpModalOpen(true)
-    } else {
-      // Other actions stubbed for future stories
-      console.log('Action command:', command)
-    }
-  }, [])
+  const handleActionCommandLocal = useCallback((command: ActionCommand) => {
+    // Pass all action commands to parent - no local handling
+    onActionCommand?.(command)
+  }, [onActionCommand])
 
   const { commandIndicator } = useSlashCommands({
     onFieldCommand: handleFieldCommand,
-    onActionCommand: handleActionCommand,
+    onActionCommand: handleActionCommandLocal,
+    onCommandError: (command) => {
+      // Pass error to parent component
+      onCommandError?.(command)
+    },
   })
 
   const handleEditorChange = useCallback((editorState: EditorState) => {
@@ -248,6 +276,7 @@ export function NotesPanel({ mode = 'intake', onMessageSubmit }: NotesPanelProps
               />
               <HistoryPlugin />
               <OnChangePlugin onChange={handleEditorChange} />
+              <EditorRefPlugin editorRef={editorRef} />
               <KeyValuePlugin />
               <PillInteractionPlugin />
               <SubmitPlugin onSubmit={handleSubmit} />
@@ -279,8 +308,6 @@ export function NotesPanel({ mode = 'intake', onMessageSubmit }: NotesPanelProps
         field={currentField}
         onSubmit={handleFieldSubmit}
       />
-
-      <HelpModal open={helpModalOpen} onOpenChange={setHelpModalOpen} />
     </>
   )
 }

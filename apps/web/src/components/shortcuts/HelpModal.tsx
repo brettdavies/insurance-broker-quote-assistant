@@ -6,74 +6,11 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog'
 import { Input } from '@/components/ui/input'
+import {
+  ACTION_SHORTCUTS_DISPLAY,
+  FIELD_SHORTCUTS_DISPLAY,
+} from '@/config/shortcuts'
 import { useState } from 'react'
-
-const FIELD_SHORTCUTS = [
-  {
-    category: 'Identity & Contact',
-    shortcuts: [
-      { key: '/n', field: 'Name' },
-      { key: '/e', field: 'Email' },
-      { key: '/p', field: 'Phone' },
-    ],
-  },
-  {
-    category: 'Location',
-    shortcuts: [
-      { key: '/s', field: 'State' },
-      { key: '/z', field: 'Zip Code' },
-    ],
-  },
-  { category: 'Product', shortcuts: [{ key: '/l', field: 'Product Line' }] },
-  {
-    category: 'Household',
-    shortcuts: [
-      { key: '/a', field: 'Age' },
-      { key: '/h', field: 'Household Size' },
-      { key: '/k', field: 'Kids' },
-      { key: '/d', field: 'Dependents' },
-    ],
-  },
-  {
-    category: 'Vehicle',
-    shortcuts: [
-      { key: '/v', field: 'Vehicles' },
-      { key: '/g', field: 'Garage Type' },
-      { key: '/i', field: 'VINs' },
-      { key: '/r', field: 'Drivers / Carrier' },
-      { key: '/c', field: 'Driving Records' },
-      { key: '/u', field: 'Clean Record' },
-    ],
-  },
-  {
-    category: 'Property',
-    shortcuts: [
-      { key: '/o', field: 'Owns Home' },
-      { key: '/t', field: 'Property Type' },
-      { key: '/y', field: 'Construction Year' },
-      { key: '/f', field: 'Roof Type' },
-      { key: '/q', field: 'Square Feet' },
-    ],
-  },
-  {
-    category: 'Coverage',
-    shortcuts: [
-      { key: '/m', field: 'Current Premium' },
-      { key: '/b', field: 'Deductibles' },
-      { key: '/x', field: 'Coverage Limits' },
-      { key: '/w', field: 'Existing Policies' },
-    ],
-  },
-]
-
-const ACTION_SHORTCUTS = [
-  { key: '/export', action: 'Export to IQuote Pro' },
-  { key: '/copy', action: 'Copy to Clipboard' },
-  { key: '/reset', action: 'Reset Session' },
-  { key: '/policy', action: 'Switch to Policy Mode' },
-  { key: '/intake', action: 'Switch to Intake Mode' },
-  { key: '/help or /?', action: 'Show Keyboard Shortcuts' },
-]
 
 interface HelpModalProps {
   open: boolean
@@ -83,7 +20,7 @@ interface HelpModalProps {
 export function HelpModal({ open, onOpenChange }: HelpModalProps) {
   const [search, setSearch] = useState('')
 
-  const filteredFieldShortcuts = FIELD_SHORTCUTS.map((category) => ({
+  const filteredFieldShortcuts = FIELD_SHORTCUTS_DISPLAY.map((category) => ({
     ...category,
     shortcuts: category.shortcuts.filter(
       (s) =>
@@ -92,7 +29,7 @@ export function HelpModal({ open, onOpenChange }: HelpModalProps) {
     ),
   })).filter((category) => category.shortcuts.length > 0)
 
-  const filteredActionShortcuts = ACTION_SHORTCUTS.filter(
+  const filteredActionShortcuts = ACTION_SHORTCUTS_DISPLAY.filter(
     (s) =>
       s.action.toLowerCase().includes(search.toLowerCase()) ||
       s.key.toLowerCase().includes(search.toLowerCase())
