@@ -5,6 +5,7 @@
  * and mode-specific panels (routing status for intake, savings dashboard for policy).
  */
 
+import { Button } from '@/components/ui/button'
 import type { UserProfile } from '@repo/shared'
 import { CapturedFields } from './CapturedFields'
 import { type MissingField, MissingFields } from './MissingFields'
@@ -16,6 +17,7 @@ interface SidebarProps {
   capturedCount: number
   totalRequired: number
   onFieldClick: (fieldKey: string, currentValue?: string | number | boolean) => void
+  onExport?: () => void
 }
 
 export function Sidebar({
@@ -25,9 +27,19 @@ export function Sidebar({
   capturedCount,
   totalRequired,
   onFieldClick,
+  onExport,
 }: SidebarProps) {
   return (
     <div className="flex h-full flex-col space-y-4 overflow-y-auto bg-gray-100 p-4 dark:bg-gray-800">
+      {/* Export Button */}
+      {onExport && (
+        <div className="flex justify-end">
+          <Button onClick={onExport} variant="outline" size="sm">
+            Download JSON
+          </Button>
+        </div>
+      )}
+
       {/* Captured Fields Section */}
       <div>
         <h2 className="mb-2 text-lg font-semibold">Captured Fields</h2>

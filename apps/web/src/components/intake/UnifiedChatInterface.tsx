@@ -16,7 +16,13 @@ import { useToast } from '@/components/ui/use-toast'
 import { FIELD_SHORTCUTS } from '@/config/shortcuts'
 import { useIntake } from '@/hooks/useIntake'
 import type { ActionCommand, FieldCommand } from '@/hooks/useSlashCommands'
-import type { UserProfile } from '@repo/shared'
+import {
+  generatePrefillFilename,
+  getPrefillPacket,
+  handleCopy,
+  handleExport,
+} from '@/lib/prefill-utils'
+import type { IntakeResult, UserProfile } from '@repo/shared'
 import { useCallback, useRef, useState } from 'react'
 
 interface UnifiedChatInterfaceProps {
@@ -39,6 +45,7 @@ export function UnifiedChatInterface({
   const [profile, setProfile] = useState<UserProfile>({})
   const [missingFields, setMissingFields] = useState<MissingField[]>([])
   const [disclaimers, setDisclaimers] = useState<string[]>([])
+  const [latestIntakeResult, setLatestIntakeResult] = useState<IntakeResult | null>(null)
   const [fieldModalOpen, setFieldModalOpen] = useState(false)
   const [currentField, setCurrentField] = useState<{
     key: string
@@ -84,6 +91,9 @@ export function UnifiedChatInterface({
             message: currentContent,
             conversationHistory: [], // No conversation history - AI extraction happens silently
           })
+
+          // Store latest intake result for prefill packet access
+          setLatestIntakeResult(result)
 
           // Reconcile with backend response
           setProfile((prev) => ({ ...prev, ...result.profile }))
@@ -184,13 +194,54 @@ export function UnifiedChatInterface({
       : null
     : null
 
-  // Handle action commands (reset, help, etc.)
+  // Handle export command
+  const handleExportCommand = useCallback(async () => {
+    try {
+      const prefillPacket = await getPrefillPacket(latestIntakeResult, profile)
+      handleExport(prefillPacket)
+      toast({
+        title: 'Export successful',
+        description: `Downloaded ${generatePrefillFilename(prefillPacket)}`,
+        duration: 3000,
+      })
+    } catch (error) {
+      toast({
+        title: 'Export failed',
+        description: error instanceof Error ? error.message : 'Failed to export prefill packet',
+        variant: 'destructive',
+        duration: 5000,
+      })
+    }
+  }, [latestIntakeResult, profile, toast])
+
+  // Handle copy command
+  const handleCopyCommand = useCallback(async () => {
+    try {
+      const prefillPacket = await getPrefillPacket(latestIntakeResult, profile)
+      await handleCopy(prefillPacket)
+      toast({
+        title: 'Copied to clipboard',
+        description: 'Prefill packet JSON copied to clipboard',
+        duration: 3000,
+      })
+    } catch (error) {
+      toast({
+        title: 'Copy failed',
+        description: error instanceof Error ? error.message : 'Failed to copy to clipboard',
+        variant: 'destructive',
+        duration: 5000,
+      })
+    }
+  }, [latestIntakeResult, profile, toast])
+
+  // Handle action commands (reset, help, export, copy, etc.)
   const handleActionCommand = useCallback(
     (command: ActionCommand) => {
       if (command === 'reset') {
         // Clear all state
         setProfile({})
         setMissingFields([])
+        setLatestIntakeResult(null)
         setCurrentField(null)
         setFieldModalOpen(false)
         setHelpModalOpen(false)
@@ -216,9 +267,13 @@ export function UnifiedChatInterface({
         })
       } else if (command === 'help') {
         setHelpModalOpen(true)
+      } else if (command === 'export') {
+        handleExportCommand()
+      } else if (command === 'copy') {
+        handleCopyCommand()
       }
     },
-    [toast, editorRef]
+    [toast, editorRef, handleExportCommand, handleCopyCommand]
   )
 
   // Handle command errors (invalid commands)
@@ -302,6 +357,7 @@ export function UnifiedChatInterface({
               capturedCount={capturedCount}
               totalRequired={totalRequired}
               onFieldClick={handleFieldClick}
+              onExport={handleExportCommand}
             />
           </div>
         </div>

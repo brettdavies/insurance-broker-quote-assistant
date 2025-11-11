@@ -1,9 +1,11 @@
-import type { IntakeResult, RouteDecision } from '@repo/shared'
+import type { IntakeResult, PrefillPacket, RouteDecision, UserProfile } from '@repo/shared'
+import { prefillPacketSchema, userProfileSchema } from '@repo/shared'
 import { Hono } from 'hono'
 import { z } from 'zod'
 import { validateOutput } from '../services/compliance-filter'
 import type { ConversationalExtractor } from '../services/conversational-extractor'
 import type { LLMProvider } from '../services/llm-provider'
+import { generatePrefillPacket, getMissingFields } from '../services/prefill-generator'
 import { routeToCarrier } from '../services/routing-engine'
 import { createDecisionTrace, logDecisionTrace } from '../utils/decision-trace'
 import { logError } from '../utils/logger'
@@ -142,6 +144,26 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
       // Log decision trace to compliance log
       await logDecisionTrace(trace)
 
+      // Generate prefill packet after compliance check
+      let prefillPacket: PrefillPacket | undefined
+      if (routeDecision) {
+        try {
+          const missingFieldsForPrefill = getMissingFields(extractionResult.profile)
+          prefillPacket = generatePrefillPacket(
+            extractionResult.profile,
+            routeDecision,
+            missingFieldsForPrefill,
+            complianceResult.disclaimers || []
+          )
+        } catch (error) {
+          // Handle prefill generation errors gracefully: if generation fails, return IntakeResult with prefill: undefined and log error
+          await logError('Prefill generation error in intake endpoint', error as Error, {
+            type: 'prefill_error',
+          })
+          prefillPacket = undefined
+        }
+      }
+
       // Build IntakeResult response
       const result: IntakeResult = {
         profile: extractionResult.profile,
@@ -150,7 +172,7 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
         confidence: extractionResult.confidence, // AC5: Include confidence scores
         route: routeDecision, // Routing decision from routing engine
         opportunities: [], // Stub for discount engine (future story)
-        prefill: undefined, // Stub for prefill packet (future story)
+        prefill: prefillPacket, // Prefill packet for broker handoff
         pitch, // Pitch (may be replaced by compliance filter replacement message)
         complianceValidated: complianceResult.passed,
         disclaimers: complianceResult.disclaimers,
@@ -162,6 +184,157 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
       // Log error (error handler middleware will catch and format response)
       await logError('Intake endpoint error', error as Error, {
         type: 'intake_error',
+      })
+
+      // Re-throw to let error handler middleware handle it
+      throw error
+    }
+  })
+
+  // Generate prefill endpoint
+  app.post('/api/intake/generate-prefill', async (c) => {
+    try {
+      // Parse and validate request body
+      const body = await c.req.json()
+      const validationResult = z
+        .object({
+          profile: userProfileSchema,
+        })
+        .safeParse(body)
+
+      if (!validationResult.success) {
+        return c.json(
+          {
+            error: {
+              code: 'INVALID_REQUEST',
+              message: 'Invalid request body',
+              details: validationResult.error.errors,
+            },
+          },
+          400
+        )
+      }
+
+      const { profile } = validationResult.data
+
+      // Call routing engine to get RouteDecision (if not already available)
+      let routeDecision: RouteDecision
+      try {
+        routeDecision = routeToCarrier(profile)
+      } catch (error) {
+        // Handle routing errors gracefully - still generate prefill with available data
+        await logError('Routing engine error in prefill generation', error as Error, {
+          type: 'routing_error',
+        })
+        // Create minimal route decision for prefill generation
+        routeDecision = {
+          primaryCarrier: 'Unknown',
+          eligibleCarriers: [],
+          confidence: 0,
+          rationale: 'Routing unavailable - prefill generated with available data',
+          citations: [],
+        }
+      }
+
+      // Call compliance filter to get disclaimers for state/product
+      let disclaimers: string[] = []
+      try {
+        const complianceResult = validateOutput(
+          '',
+          profile.state || undefined,
+          profile.productLine || undefined
+        )
+        disclaimers = complianceResult.disclaimers || []
+      } catch (error) {
+        // Handle compliance filter errors gracefully
+        await logError('Compliance filter error in prefill generation', error as Error, {
+          type: 'compliance_error',
+        })
+        // Use empty disclaimers array
+        disclaimers = []
+      }
+
+      // Determine missing fields: compare UserProfile against required fields per product type
+      const missingFields = getMissingFields(profile)
+
+      // Call prefillGenerator.generatePrefillPacket
+      let prefillPacket: PrefillPacket
+      try {
+        prefillPacket = generatePrefillPacket(profile, routeDecision, missingFields, disclaimers)
+      } catch (error) {
+        // Handle prefill generation errors gracefully
+        await logError('Prefill generation error', error as Error, {
+          type: 'prefill_error',
+        })
+        throw error
+      }
+
+      // Validate prefill packet against schema using Zod
+      const validationResult2 = prefillPacketSchema.safeParse(prefillPacket)
+      if (!validationResult2.success) {
+        await logError('Prefill packet validation failed', new Error('Invalid prefill packet'), {
+          type: 'validation_error',
+          errors: validationResult2.error.errors,
+        })
+        return c.json(
+          {
+            error: {
+              code: 'VALIDATION_ERROR',
+              message: 'Generated prefill packet failed validation',
+              details: validationResult2.error.errors,
+            },
+          },
+          500
+        )
+      }
+
+      // Log decision trace for pre-fill generation
+      const trace = createDecisionTrace(
+        'conversational',
+        {
+          profile: {
+            state: profile.state,
+            productLine: profile.productLine,
+            name: profile.name,
+          },
+        },
+        {
+          method: 'llm',
+          fields: {
+            missingFieldsCount: missingFields.length,
+            prefillPacketSize: JSON.stringify(prefillPacket).length,
+            timestamp: prefillPacket.generatedAt,
+          },
+        },
+        undefined, // llmCalls
+        routeDecision
+          ? {
+              eligibleCarriers: routeDecision.eligibleCarriers,
+              primaryCarrier: routeDecision.primaryCarrier,
+              matchScores: routeDecision.matchScores,
+              confidence: routeDecision.confidence,
+              rationale: routeDecision.rationale,
+              citations: routeDecision.citations,
+              rulesEvaluated: routeDecision.citations.map((c) => c.file),
+            }
+          : undefined,
+        {
+          passed: true,
+          violations: [],
+          disclaimersAdded: disclaimers.length,
+          state: profile.state || undefined,
+          productLine: profile.productLine || undefined,
+        }
+      )
+
+      await logDecisionTrace(trace)
+
+      // Return PrefillPacket in response
+      return c.json(prefillPacket)
+    } catch (error) {
+      // Log error (error handler middleware will catch and format response)
+      await logError('Generate prefill endpoint error', error as Error, {
+        type: 'prefill_endpoint_error',
       })
 
       // Re-throw to let error handler middleware handle it

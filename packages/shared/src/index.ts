@@ -49,6 +49,12 @@ export {
   type PrefillPacketStub,
 } from './schemas/intake-result'
 
+// Export prefill packet schema and types
+export {
+  prefillPacketSchema,
+  type PrefillPacket,
+} from './schemas/prefill-packet'
+
 // Export decision trace schema and types
 export {
   decisionTraceSchema,

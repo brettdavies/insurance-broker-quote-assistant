@@ -1,5 +1,6 @@
 import { z } from 'zod'
 import { type DecisionTrace, decisionTraceSchema } from './decision-trace'
+import { prefillPacketSchema } from './prefill-packet'
 import { type UserProfile, userProfileSchema } from './user-profile'
 
 /**
@@ -59,8 +60,8 @@ export const opportunityStubSchema = z.object({
 export type OpportunityStub = z.infer<typeof opportunityStubSchema>
 
 /**
- * Prefill Packet Stub
- * Will be fully defined in future story
+ * Prefill Packet Stub (deprecated - use prefillPacketSchema)
+ * @deprecated Use prefillPacketSchema from './prefill-packet' instead
  */
 export const prefillPacketStubSchema = z.object({
   state: z.string().optional(),
@@ -82,7 +83,7 @@ export const intakeResultSchema = z.object({
   confidence: z.record(z.number().min(0).max(1)).optional(), // Field-level confidence scores (AC5)
   route: routeDecisionSchema.optional(), // Routing decision from routing engine
   opportunities: z.array(opportunityStubSchema).optional(), // Stub for discount engine
-  prefill: prefillPacketStubSchema.optional(), // Stub for prefill packet
+  prefill: prefillPacketSchema.optional(), // Prefill packet for broker handoff
   pitch: z.string().optional(), // Agent-ready savings pitch (empty string for MVP)
   complianceValidated: z.boolean().default(true), // Compliance filter result
   disclaimers: z.array(z.string()).optional(), // Compliance disclaimers selected based on state/product
