@@ -28,11 +28,11 @@ export type LLMCall = z.infer<typeof llmCallSchema>
  */
 export const decisionTraceSchema = z.object({
   timestamp: z.string().datetime(), // ISO 8601 timestamp
-  flow: z.enum(['conversational', 'policy']),
+  flow: z.enum(['conversational', 'policy', 'prefill_generation']),
   inputs: z.record(z.unknown()), // Raw inputs (message, conversationHistory, etc.)
   extraction: z
     .object({
-      method: z.enum(['key-value', 'llm']),
+      method: z.enum(['key-value', 'llm', 'prefill_generator']),
       fields: z.record(z.unknown()),
       confidence: z.record(z.number().min(0).max(1)).optional(),
       reasoning: z.string().optional(),

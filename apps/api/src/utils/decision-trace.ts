@@ -17,10 +17,10 @@ const COMPLIANCE_LOG_FILE = process.env.COMPLIANCE_LOG_FILE || './logs/complianc
  * Creates a decision trace object with current timestamp
  */
 export function createDecisionTrace(
-  flow: 'conversational' | 'policy',
+  flow: 'conversational' | 'policy' | 'prefill_generation',
   inputs: Record<string, unknown>,
   extraction?: {
-    method: 'key-value' | 'llm'
+    method: 'key-value' | 'llm' | 'prefill_generator'
     fields: Record<string, unknown>
     confidence?: Record<string, number>
     reasoning?: string

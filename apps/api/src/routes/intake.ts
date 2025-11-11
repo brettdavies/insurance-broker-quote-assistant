@@ -290,7 +290,7 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
 
       // Log decision trace for pre-fill generation
       const trace = createDecisionTrace(
-        'conversational',
+        'prefill_generation',
         {
           profile: {
             state: profile.state,
@@ -299,7 +299,7 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
           },
         },
         {
-          method: 'llm',
+          method: 'prefill_generator',
           fields: {
             missingFieldsCount: missingFields.length,
             prefillPacketSize: JSON.stringify(prefillPacket).length,
