@@ -1,8 +1,8 @@
-import { describe, it, expect, beforeEach } from 'bun:test'
+import { beforeEach, describe, expect, it } from 'bun:test'
 import { Hono } from 'hono'
-import { createIntakeRoute } from '../intake'
 import { ConversationalExtractor } from '../../services/conversational-extractor'
 import type { LLMProvider } from '../../services/llm-provider'
+import { createIntakeRoute } from '../intake'
 
 // Mock LLM provider
 const createMockLLMProvider = (): LLMProvider => {
@@ -328,4 +328,3 @@ describe('POST /api/intake', () => {
     })
   })
 })
-

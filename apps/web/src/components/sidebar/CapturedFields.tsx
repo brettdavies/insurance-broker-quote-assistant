@@ -15,11 +15,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion'
 import { Card, CardContent } from '@/components/ui/card'
-import {
-  COMMAND_TO_FIELD_NAME,
-  FIELD_METADATA,
-  type FieldCommand,
-} from '@/config/shortcuts'
+import { COMMAND_TO_FIELD_NAME, FIELD_METADATA, type FieldCommand } from '@/config/shortcuts'
 import { userProfileFieldMetadata } from '@repo/shared'
 import type { UserProfile } from '@repo/shared'
 import { Info } from 'lucide-react'

@@ -53,4 +53,3 @@ export const decisionTraceSchema = z.object({
 })
 
 export type DecisionTrace = z.infer<typeof decisionTraceSchema>
-

@@ -54,7 +54,9 @@ export const userProfileSchema = z.object({
   // Optional eligibility fields
   cleanRecord3Yr: z.boolean().optional(), // Clean driving record (3 years)
   creditScore: z.number().int().min(300).max(850).optional(), // Credit score (FICO range)
-  propertyType: z.enum(['single-family', 'condo', 'townhouse', 'mobile-home', 'duplex', 'apartment']).optional(), // Property type for home/renters insurance
+  propertyType: z
+    .enum(['single-family', 'condo', 'townhouse', 'mobile-home', 'duplex', 'apartment'])
+    .optional(), // Property type for home/renters insurance
 
   // Property details (for home/renters insurance)
   constructionYear: z.number().int().positive().optional(),
@@ -75,4 +77,3 @@ export const userProfileSchema = z.object({
 })
 
 export type UserProfile = z.infer<typeof userProfileSchema>
-

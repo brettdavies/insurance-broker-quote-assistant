@@ -1,6 +1,6 @@
-import { describe, it, expect, beforeAll } from 'bun:test'
-import { GeminiProvider } from '../gemini-provider'
+import { beforeAll, describe, expect, it } from 'bun:test'
 import { testMessages } from '../../__tests__/fixtures/test-messages'
+import { GeminiProvider } from '../gemini-provider'
 
 /**
  * Gemini Provider Tests
@@ -29,9 +29,7 @@ describe('GeminiProvider', () => {
 
   describe.skipIf(!USE_REAL_API)('Real API Integration', () => {
     it('should extract fields from simple natural language', async () => {
-      const result = await provider.extractWithStructuredOutput(
-        testMessages.naturalLanguage.simple
-      )
+      const result = await provider.extractWithStructuredOutput(testMessages.naturalLanguage.simple)
 
       expect(result.profile).toBeDefined()
       // LLM should extract state (may be 'CA' or 'California' or 'california')
@@ -40,7 +38,9 @@ describe('GeminiProvider', () => {
       // LLM should extract productLine
       expect(result.profile.productLine).toBeDefined()
       const validProductLines = ['auto', 'home', 'renters', 'umbrella'] as const
-      expect(validProductLines.includes(result.profile.productLine as typeof validProductLines[number])).toBe(true)
+      expect(
+        validProductLines.includes(result.profile.productLine as (typeof validProductLines)[number])
+      ).toBe(true)
       expect(result.confidence).toBeDefined()
       expect(Object.keys(result.confidence).length).toBeGreaterThan(0)
     }, 15000) // Longer timeout for real API calls
@@ -57,7 +57,9 @@ describe('GeminiProvider', () => {
       // Should extract productLine
       expect(result.profile.productLine).toBeDefined()
       const validProductLines = ['auto', 'home', 'renters', 'umbrella'] as const
-      expect(validProductLines.includes(result.profile.productLine as typeof validProductLines[number])).toBe(true)
+      expect(
+        validProductLines.includes(result.profile.productLine as (typeof validProductLines)[number])
+      ).toBe(true)
       // Should extract age (may be 30 or close)
       expect(result.profile.age).toBeDefined()
       expect(typeof result.profile.age).toBe('number')
@@ -70,10 +72,9 @@ describe('GeminiProvider', () => {
     }, 15000)
 
     it('should handle conversation history', async () => {
-      const result =       await provider.extractWithStructuredOutput(
-        'I am 35 years old',
-        [...testMessages.conversationHistory.progressive]
-      )
+      const result = await provider.extractWithStructuredOutput('I am 35 years old', [
+        ...testMessages.conversationHistory.progressive,
+      ])
 
       expect(result.profile).toBeDefined()
       // Should extract age from current message
@@ -121,7 +122,9 @@ describe('GeminiProvider', () => {
       expect(typeof result.profile.state).toBe('string')
       expect(result.profile.productLine).toBeDefined()
       const validProductLines = ['auto', 'home', 'renters', 'umbrella'] as const
-      expect(validProductLines.includes(result.profile.productLine as typeof validProductLines[number])).toBe(true)
+      expect(
+        validProductLines.includes(result.profile.productLine as (typeof validProductLines)[number])
+      ).toBe(true)
       // May or may not extract vehicles (ambiguous)
       expect(result.confidence).toBeDefined()
     }, 15000)
@@ -158,45 +161,50 @@ describe('GeminiProvider', () => {
   })
 
   describe('Schema Validation', () => {
-    it.skipIf(!USE_REAL_API)('should return valid UserProfile structure', async () => {
-      const result = await provider.extractWithStructuredOutput(
-        testMessages.naturalLanguage.complete
-      )
+    it.skipIf(!USE_REAL_API)(
+      'should return valid UserProfile structure',
+      async () => {
+        const result = await provider.extractWithStructuredOutput(
+          testMessages.naturalLanguage.complete
+        )
 
-      // Check structure matches UserProfile type
-      const profile = result.profile
+        // Check structure matches UserProfile type
+        const profile = result.profile
 
-      // All keys should be valid UserProfile fields
-      const validKeys = [
-        'state',
-        'productLine',
-        'age',
-        'householdSize',
-        'vehicles',
-        'ownsHome',
-        'cleanRecord3Yr',
-        'currentCarrier',
-        'currentPremium',
-        'existingPolicies',
-        'kids',
-      ]
+        // All keys should be valid UserProfile fields
+        const validKeys = [
+          'state',
+          'productLine',
+          'age',
+          'householdSize',
+          'vehicles',
+          'ownsHome',
+          'cleanRecord3Yr',
+          'currentCarrier',
+          'currentPremium',
+          'existingPolicies',
+          'kids',
+        ]
 
-      for (const key of Object.keys(profile)) {
-        expect(validKeys).toContain(key)
-      }
+        for (const key of Object.keys(profile)) {
+          expect(validKeys).toContain(key)
+        }
 
-      // Type checks
-      if (profile.age !== undefined) {
-        expect(typeof profile.age).toBe('number')
-      }
-      if (profile.state !== undefined) {
-        expect(typeof profile.state).toBe('string')
-      }
-      if (profile.productLine !== undefined) {
-        const validProductLines = ['auto', 'home', 'renters', 'umbrella'] as const
-        expect(validProductLines.includes(profile.productLine as typeof validProductLines[number])).toBe(true)
-      }
-    }, 15000)
+        // Type checks
+        if (profile.age !== undefined) {
+          expect(typeof profile.age).toBe('number')
+        }
+        if (profile.state !== undefined) {
+          expect(typeof profile.state).toBe('string')
+        }
+        if (profile.productLine !== undefined) {
+          const validProductLines = ['auto', 'home', 'renters', 'umbrella'] as const
+          expect(
+            validProductLines.includes(profile.productLine as (typeof validProductLines)[number])
+          ).toBe(true)
+        }
+      },
+      15000
+    )
   })
 })
-

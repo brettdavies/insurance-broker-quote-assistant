@@ -106,9 +106,7 @@ const PRODUCT_LINE_VALUES = ['auto', 'home', 'renters', 'umbrella'] as const
  * @param message - Broker message containing key-value pairs
  * @returns Extraction result with profile and metadata
  */
-export function parseKeyValueSyntax(
-  message: string
-): KeyValueExtractionResult {
+export function parseKeyValueSyntax(message: string): KeyValueExtractionResult {
   const profile: Partial<UserProfile> = {}
 
   // Regex pattern: matches key:value (case-insensitive)
@@ -139,16 +137,14 @@ export function parseKeyValueSyntax(
       } else if (BOOLEAN_FIELDS.has(fieldName)) {
         // Boolean fields: "true", "1", "yes" → true, else false
         const boolValue =
-          value.toLowerCase() === 'true' ||
-          value === '1' ||
-          value.toLowerCase() === 'yes'
+          value.toLowerCase() === 'true' || value === '1' || value.toLowerCase() === 'yes'
         // @ts-expect-error - Dynamic field assignment
         profile[fieldName] = boolValue
       } else if (fieldName === 'productLine') {
         // Validate product line enum
         const productValue = value.toLowerCase()
-        if (PRODUCT_LINE_VALUES.includes(productValue as typeof PRODUCT_LINE_VALUES[number])) {
-          profile.productLine = productValue as typeof PRODUCT_LINE_VALUES[number]
+        if (PRODUCT_LINE_VALUES.includes(productValue as (typeof PRODUCT_LINE_VALUES)[number])) {
+          profile.productLine = productValue as (typeof PRODUCT_LINE_VALUES)[number]
         }
       } else if (fieldName === 'propertyType') {
         // Validate property type enum
@@ -161,8 +157,8 @@ export function parseKeyValueSyntax(
           'apartment',
         ] as const
         const propertyValue = value.toLowerCase().replace(/_/g, '-')
-        if (propertyTypes.includes(propertyValue as typeof propertyTypes[number])) {
-          profile.propertyType = propertyValue as typeof propertyTypes[number]
+        if (propertyTypes.includes(propertyValue as (typeof propertyTypes)[number])) {
+          profile.propertyType = propertyValue as (typeof propertyTypes)[number]
         }
       } else {
         // String fields
@@ -191,4 +187,3 @@ export function hasKeyValueSyntax(message: string): boolean {
   const kvPattern = /(\w+):(\w+|\d+)(?=\s|,|\.|$)/gi
   return kvPattern.test(message)
 }
-

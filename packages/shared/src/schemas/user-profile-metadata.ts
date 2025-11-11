@@ -278,10 +278,9 @@ export function getFieldFromAlias(alias: string): keyof UserProfile | undefined 
   for (const [field, metadata] of Object.entries(userProfileFieldMetadata) as Array<
     [keyof UserProfile, FieldMetadata]
   >) {
-    if (metadata.aliases && metadata.aliases.includes(alias)) {
+    if (metadata.aliases?.includes(alias)) {
       return field
     }
   }
   return undefined
 }
-

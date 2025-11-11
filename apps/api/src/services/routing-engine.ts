@@ -9,9 +9,15 @@
  * @see docs/stories/1.6.routing-rules-engine.md
  */
 
-import type { UserProfile, Carrier, RouteDecision, Citation, ProductEligibility } from '@repo/shared'
-import { getAllCarriers as defaultGetAllCarriers } from './knowledge-pack-loader'
+import type {
+  Carrier,
+  Citation,
+  ProductEligibility,
+  RouteDecision,
+  UserProfile,
+} from '@repo/shared'
 import { getFieldValue } from '../utils/field-helpers'
+import { getAllCarriers as defaultGetAllCarriers } from './knowledge-pack-loader'
 
 /**
  * Eligibility evaluation result
@@ -60,8 +66,10 @@ export function routeToCarrier(
     const products = getFieldValue(carrier.products, [])
 
     return (
-      operatesIn.includes(profile.state!) &&
-      products.includes(profile.productLine!)
+      profile.state &&
+      profile.productLine &&
+      operatesIn.includes(profile.state) &&
+      products.includes(profile.productLine)
     )
   })
 
@@ -91,19 +99,21 @@ export function routeToCarrier(
 
   // If no carriers pass eligibility, return explanation
   if (eligibleMatches.length === 0) {
-    const reasons = carrierMatches
-      .map((m) => `${m.carrier.name}: ${m.explanation}`)
-      .join('; ')
-    return createNoEligibleCarriersDecision(
-      `No carriers meet eligibility requirements: ${reasons}`
-    )
+    const reasons = carrierMatches.map((m) => `${m.carrier.name}: ${m.explanation}`).join('; ')
+    return createNoEligibleCarriersDecision(`No carriers meet eligibility requirements: ${reasons}`)
   }
 
   // Rank carriers by match score
   const rankedCarriers = rankCarriers(eligibleMatches)
 
   // Select primary carrier (highest score)
-  const primaryCarrier = rankedCarriers[0]!
+  if (rankedCarriers.length === 0) {
+    return createNoEligibleCarriersDecision('No eligible carriers found after ranking')
+  }
+  const primaryCarrier = rankedCarriers[0]
+  if (!primaryCarrier) {
+    return createNoEligibleCarriersDecision('No eligible carriers found after ranking')
+  }
 
   // Calculate overall confidence
   const confidence = calculateConfidence(rankedCarriers, profile)
@@ -117,9 +127,7 @@ export function routeToCarrier(
   return {
     primaryCarrier: primaryCarrier.carrier.name,
     eligibleCarriers: rankedCarriers.map((m) => m.carrier.name),
-    matchScores: Object.fromEntries(
-      rankedCarriers.map((m) => [m.carrier.name, m.matchScore])
-    ),
+    matchScores: Object.fromEntries(rankedCarriers.map((m) => [m.carrier.name, m.matchScore])),
     confidence,
     rationale,
     citations,
@@ -133,11 +141,15 @@ export function routeToCarrier(
  * @param profile - User profile with eligibility fields
  * @returns EligibilityResult with eligible flag, missing fields, and explanation
  */
-function evaluateEligibility(
-  carrier: Carrier,
-  profile: UserProfile
-): EligibilityResult {
-  const productLine = profile.productLine!
+function evaluateEligibility(carrier: Carrier, profile: UserProfile): EligibilityResult {
+  if (!profile.productLine) {
+    return {
+      eligible: false,
+      missingFields: ['productLine'],
+      explanation: 'Product line is required for eligibility evaluation',
+    }
+  }
+  const productLine = profile.productLine
   const eligibility = carrier.eligibility[productLine]
 
   // If no eligibility rules defined for this product, carrier is eligible
@@ -296,10 +308,7 @@ function rankCarriers(matches: CarrierMatch[]): CarrierMatch[] {
  * @param profile - User profile
  * @returns Confidence score (0-1)
  */
-function calculateConfidence(
-  rankedCarriers: CarrierMatch[],
-  profile: UserProfile
-): number {
+function calculateConfidence(rankedCarriers: CarrierMatch[], profile: UserProfile): number {
   if (rankedCarriers.length === 0) {
     return 0.0
   }
@@ -307,16 +316,15 @@ function calculateConfidence(
   // Calculate data completeness score
   const requiredFields = ['state', 'productLine']
   const optionalFields = ['age', 'vehicles']
-  const providedFields = requiredFields.length + optionalFields.filter(
-    (field) => profile[field as keyof UserProfile] !== undefined
-  ).length
+  const providedFields =
+    requiredFields.length +
+    optionalFields.filter((field) => profile[field as keyof UserProfile] !== undefined).length
   const totalFields = requiredFields.length + optionalFields.length
   const completenessScore = providedFields / totalFields
 
   // Average of top 3 carriers' match scores, weighted by data completeness
   const top3Scores = rankedCarriers.slice(0, 3).map((m) => m.matchScore)
-  const avgMatchScore =
-    top3Scores.reduce((sum, score) => sum + score, 0) / top3Scores.length
+  const avgMatchScore = top3Scores.reduce((sum, score) => sum + score, 0) / top3Scores.length
 
   // Weighted combination: 70% match score, 30% data completeness
   return avgMatchScore * 0.7 + completenessScore * 0.3
@@ -339,7 +347,10 @@ function generateRationale(
     return 'No eligible carriers found'
   }
 
-  const primary = rankedCarriers[0]!
+  const primary = rankedCarriers[0]
+  if (!primary) {
+    return 'No eligible carriers found'
+  }
   const parts: string[] = []
 
   // Explain primary carrier selection
@@ -358,9 +369,11 @@ function generateRationale(
 
   // Note missing data affecting confidence
   const allMissingFields = new Set<string>()
-  rankedCarriers.forEach((m) => {
-    m.missingFields.forEach((field) => allMissingFields.add(field))
-  })
+  for (const m of rankedCarriers) {
+    for (const field of m.missingFields) {
+      allMissingFields.add(field)
+    }
+  }
 
   if (allMissingFields.size > 0) {
     const missingList = Array.from(allMissingFields).join(', ')
@@ -407,4 +420,3 @@ function createNoEligibleCarriersDecision(explanation: string): RouteDecision {
     citations: [],
   }
 }
-

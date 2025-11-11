@@ -18,7 +18,8 @@ export const testMessages = {
   naturalLanguage: {
     simple: 'I need auto insurance in California',
     complete: 'I need auto insurance in California. I am 30 years old and have 2 vehicles.',
-    detailed: 'My client is looking for auto insurance in California. They are 35 years old, have 2 kids, own a home, and have 2 vehicles. They have a clean driving record for the past 3 years.',
+    detailed:
+      'My client is looking for auto insurance in California. They are 35 years old, have 2 kids, own a home, and have 2 vehicles. They have a clean driving record for the past 3 years.',
     conversational: [
       'I need insurance',
       'What type of insurance?',
@@ -34,9 +35,12 @@ export const testMessages = {
 
   // Complex scenarios
   complex: {
-    multiProduct: 'I need both auto and home insurance in Florida. I am 40 years old, own my home, and have 2 vehicles.',
-    existingPolicy: 'I currently have auto insurance with GEICO paying $1200 per year. I want to see if I can save money.',
-    bundleOpportunity: 'I have auto insurance with State Farm and home insurance with GEICO. Can I bundle them?',
+    multiProduct:
+      'I need both auto and home insurance in Florida. I am 40 years old, own my home, and have 2 vehicles.',
+    existingPolicy:
+      'I currently have auto insurance with GEICO paying $1200 per year. I want to see if I can save money.',
+    bundleOpportunity:
+      'I have auto insurance with State Farm and home insurance with GEICO. Can I bundle them?',
     missingInfo: 'I need insurance but I am not sure what I need. I live in New York.',
   },
 
@@ -46,7 +50,8 @@ export const testMessages = {
     onlyPunctuation: '...',
     numbersOnly: '123 456 789',
     specialChars: 's:CA!@#$%^&*()',
-    veryLong: 'I need auto insurance in California and I have been driving for 20 years and I have never had an accident and I have a perfect driving record and I am looking for the best rates possible and I want to make sure I get good coverage',
+    veryLong:
+      'I need auto insurance in California and I have been driving for 20 years and I have never had an accident and I have a perfect driving record and I am looking for the best rates possible and I want to make sure I get good coverage',
     unicode: 'I need insurance in California. I am 30 años and have 2 vehículos.',
   },
 
@@ -92,4 +97,3 @@ export const expectedExtractions = {
     vehicles: 2,
   },
 } as const
-

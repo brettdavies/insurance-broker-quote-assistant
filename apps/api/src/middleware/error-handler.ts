@@ -68,4 +68,3 @@ function getErrorCode(status: number): string {
       return 'INTERNAL_ERROR'
   }
 }
-

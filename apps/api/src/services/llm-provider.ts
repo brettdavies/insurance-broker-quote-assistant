@@ -30,4 +30,3 @@ export interface LLMProvider {
     schema?: unknown // Zod schema type
   ): Promise<ExtractionResult>
 }
-

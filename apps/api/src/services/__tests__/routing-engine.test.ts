@@ -13,10 +13,10 @@
  * @see docs/stories/1.6.routing-rules-engine.md#task-9
  */
 
-import { describe, it, expect } from 'bun:test'
-import { routeToCarrier } from '../routing-engine'
+import { describe, expect, it } from 'bun:test'
 import type { Carrier } from '@repo/shared'
 import { createTestCarrier } from '../../__tests__/fixtures/knowledge-pack'
+import { routeToCarrier } from '../routing-engine'
 
 describe('Routing Engine', () => {
   // Helper function to create mock getAllCarriers
@@ -115,14 +115,14 @@ describe('Routing Engine', () => {
           },
         }
 
-      const result = routeToCarrier(
-        {
-          state: 'CA',
-          productLine: 'auto',
-          age: 25,
-        },
-        createMockGetAllCarriers([carrier])
-      )
+        const result = routeToCarrier(
+          {
+            state: 'CA',
+            productLine: 'auto',
+            age: 25,
+          },
+          createMockGetAllCarriers([carrier])
+        )
 
         expect(result.eligibleCarriers).toContain('GEICO')
       })
@@ -139,14 +139,14 @@ describe('Routing Engine', () => {
           },
         }
 
-      const result = routeToCarrier(
-        {
-          state: 'CA',
-          productLine: 'auto',
-          age: 16,
-        },
-        createMockGetAllCarriers([carrier])
-      )
+        const result = routeToCarrier(
+          {
+            state: 'CA',
+            productLine: 'auto',
+            age: 16,
+          },
+          createMockGetAllCarriers([carrier])
+        )
 
         expect(result.eligibleCarriers).not.toContain('GEICO')
         expect(result.rationale).toContain('Age 16 below minimum 18')
@@ -164,14 +164,14 @@ describe('Routing Engine', () => {
           },
         }
 
-      const result = routeToCarrier(
-        {
-          state: 'CA',
-          productLine: 'auto',
-          age: 75,
-        },
-        createMockGetAllCarriers([carrier])
-      )
+        const result = routeToCarrier(
+          {
+            state: 'CA',
+            productLine: 'auto',
+            age: 75,
+          },
+          createMockGetAllCarriers([carrier])
+        )
 
         expect(result.eligibleCarriers).toContain('GEICO')
       })
@@ -188,14 +188,14 @@ describe('Routing Engine', () => {
           },
         }
 
-      const result = routeToCarrier(
-        {
-          state: 'CA',
-          productLine: 'auto',
-          age: 90,
-        },
-        createMockGetAllCarriers([carrier])
-      )
+        const result = routeToCarrier(
+          {
+            state: 'CA',
+            productLine: 'auto',
+            age: 90,
+          },
+          createMockGetAllCarriers([carrier])
+        )
 
         expect(result.eligibleCarriers).not.toContain('GEICO')
         expect(result.rationale).toContain('Age 90 above maximum 85')
@@ -213,13 +213,13 @@ describe('Routing Engine', () => {
           },
         }
 
-      const result = routeToCarrier(
-        {
-          state: 'CA',
-          productLine: 'auto',
-        },
-        createMockGetAllCarriers([carrier])
-      )
+        const result = routeToCarrier(
+          {
+            state: 'CA',
+            productLine: 'auto',
+          },
+          createMockGetAllCarriers([carrier])
+        )
 
         expect(result.eligibleCarriers).not.toContain('GEICO')
         expect(result.rationale).toContain('Age required')
@@ -239,15 +239,15 @@ describe('Routing Engine', () => {
           },
         }
 
-      const result = routeToCarrier(
-        {
-          state: 'CA',
-          productLine: 'auto',
-          age: 30,
-          vehicles: 2,
-        },
-        createMockGetAllCarriers([carrier])
-      )
+        const result = routeToCarrier(
+          {
+            state: 'CA',
+            productLine: 'auto',
+            age: 30,
+            vehicles: 2,
+          },
+          createMockGetAllCarriers([carrier])
+        )
 
         expect(result.eligibleCarriers).toContain('GEICO')
       })
@@ -264,15 +264,15 @@ describe('Routing Engine', () => {
           },
         }
 
-      const result = routeToCarrier(
-        {
-          state: 'CA',
-          productLine: 'auto',
-          age: 30,
-          vehicles: 5,
-        },
-        createMockGetAllCarriers([carrier])
-      )
+        const result = routeToCarrier(
+          {
+            state: 'CA',
+            productLine: 'auto',
+            age: 30,
+            vehicles: 5,
+          },
+          createMockGetAllCarriers([carrier])
+        )
 
         expect(result.eligibleCarriers).not.toContain('GEICO')
         expect(result.rationale).toContain('Vehicle count 5 exceeds maximum 4')
@@ -290,17 +290,17 @@ describe('Routing Engine', () => {
           },
         }
 
-      const result = routeToCarrier(
-        {
-          state: 'CA',
-          productLine: 'auto',
-          age: 30,
-        },
-        createMockGetAllCarriers([carrier])
-      )
+        const result = routeToCarrier(
+          {
+            state: 'CA',
+            productLine: 'auto',
+            age: 30,
+          },
+          createMockGetAllCarriers([carrier])
+        )
 
-      expect(result.eligibleCarriers).not.toContain('GEICO')
-      expect(result.rationale).toContain('Vehicle count required')
+        expect(result.eligibleCarriers).not.toContain('GEICO')
+        expect(result.rationale).toContain('Vehicle count required')
       })
     })
 
@@ -601,8 +601,7 @@ describe('Routing Engine', () => {
         },
       }
 
-      const progressive = createTestCarrier('Progressive', ['CA'], ['auto'])
-        .carrier as Carrier
+      const progressive = createTestCarrier('Progressive', ['CA'], ['auto']).carrier as Carrier
 
       const result = routeToCarrier(
         {
@@ -620,8 +619,7 @@ describe('Routing Engine', () => {
 
     it('should rank carriers by match score', () => {
       const geico = createTestCarrier('GEICO', ['CA'], ['auto']).carrier as Carrier
-      const progressive = createTestCarrier('Progressive', ['CA'], ['auto'])
-        .carrier as Carrier
+      const progressive = createTestCarrier('Progressive', ['CA'], ['auto']).carrier as Carrier
       const stateFarm = createTestCarrier('State Farm', ['CA'], ['auto']).carrier as Carrier
 
       const result = routeToCarrier(
@@ -637,8 +635,13 @@ describe('Routing Engine', () => {
       expect(result.matchScores).toBeDefined()
       if (result.matchScores) {
         const scores = Object.values(result.matchScores)
-        expect(scores[0]!).toBeGreaterThanOrEqual(scores[1]!)
-        expect(scores[1]!).toBeGreaterThanOrEqual(scores[2]!)
+        expect(scores.length).toBeGreaterThanOrEqual(3)
+        if (scores[0] !== undefined && scores[1] !== undefined) {
+          expect(scores[0]).toBeGreaterThanOrEqual(scores[1])
+        }
+        if (scores[1] !== undefined && scores[2] !== undefined) {
+          expect(scores[1]).toBeGreaterThanOrEqual(scores[2])
+        }
       }
     })
   })
@@ -765,10 +768,10 @@ describe('Routing Engine', () => {
       )
 
       expect(result.citations.length).toBeGreaterThan(0)
-      expect(result.citations[0]!.id).toBe('carr_geico_test')
-      expect(result.citations[0]!.type).toBe('carrier')
-      expect(result.citations[0]!.carrier).toBe('carr_geico_test')
-      expect(result.citations[0]!.file).toContain('geico.json')
+      expect(result.citations[0]?.id).toBe('carr_geico_test')
+      expect(result.citations[0]?.type).toBe('carrier')
+      expect(result.citations[0]?.carrier).toBe('carr_geico_test')
+      expect(result.citations[0]?.file).toContain('geico.json')
     })
   })
 
@@ -863,4 +866,3 @@ describe('Routing Engine', () => {
     })
   })
 })
-

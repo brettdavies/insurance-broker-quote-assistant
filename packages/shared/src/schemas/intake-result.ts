@@ -1,6 +1,6 @@
 import { z } from 'zod'
-import { userProfileSchema, type UserProfile } from './user-profile'
-import { decisionTraceSchema, type DecisionTrace } from './decision-trace'
+import { type DecisionTrace, decisionTraceSchema } from './decision-trace'
+import { type UserProfile, userProfileSchema } from './user-profile'
 
 /**
  * Intake Result Schema
@@ -88,4 +88,3 @@ export const intakeResultSchema = z.object({
 })
 
 export type IntakeResult = z.infer<typeof intakeResultSchema>
-

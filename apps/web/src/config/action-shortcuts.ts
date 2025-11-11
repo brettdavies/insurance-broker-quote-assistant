@@ -62,9 +62,7 @@ export const actionShortcuts: ActionShortcut[] = [
 /**
  * Extract unique action commands
  */
-export const actionCommandsArray = [
-  ...new Set(actionShortcuts.map((s) => s.command)),
-] as const
+export const actionCommandsArray = [...new Set(actionShortcuts.map((s) => s.command))] as const
 
 export type ActionCommand = (typeof actionCommandsArray)[number]
 
@@ -156,4 +154,3 @@ export function getActionShortcutsDisplay(): ActionShortcutDisplay[] {
 
   return Array.from(commandMap.values())
 }
-

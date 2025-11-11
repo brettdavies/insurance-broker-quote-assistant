@@ -1,5 +1,5 @@
-import { describe, it, expect } from 'bun:test'
-import { parseKeyValueSyntax, hasKeyValueSyntax } from '../key-value-parser'
+import { describe, expect, it } from 'bun:test'
+import { hasKeyValueSyntax, parseKeyValueSyntax } from '../key-value-parser'
 
 describe('Key-Value Parser', () => {
   describe('parseKeyValueSyntax', () => {
@@ -68,4 +68,3 @@ describe('Key-Value Parser', () => {
     })
   })
 })
-

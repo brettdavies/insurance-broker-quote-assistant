@@ -1,4 +1,9 @@
 import { Hono } from 'hono'
+import { config } from './config/env'
+import { errorHandler } from './middleware/error-handler'
+import { createIntakeRoute } from './routes/intake'
+import { ConversationalExtractor } from './services/conversational-extractor'
+import { GeminiProvider } from './services/gemini-provider'
 import {
   getLoadingStatus,
   isKnowledgePackLoaded,
@@ -15,11 +20,6 @@ import {
 } from './services/knowledge-pack-rag'
 import { getFieldValue } from './utils/field-helpers'
 import { logInfo } from './utils/logger'
-import { config } from './config/env'
-import { GeminiProvider } from './services/gemini-provider'
-import { ConversationalExtractor } from './services/conversational-extractor'
-import { createIntakeRoute } from './routes/intake'
-import { errorHandler } from './middleware/error-handler'
 
 const app = new Hono()
 

@@ -11,18 +11,18 @@
 
 import type { UserProfile } from '@repo/shared'
 import {
-  userProfileFieldMetadata,
-  getFieldFromShortcut,
-  getFieldFromAlias,
   type FieldMetadata as SharedFieldMetadata,
+  getFieldFromAlias,
+  getFieldFromShortcut,
+  userProfileFieldMetadata,
 } from '@repo/shared'
 import {
   ACTION_SHORTCUTS as ACTION_SHORTCUTS_IMPORT,
-  getActionCommand as getActionCommandImport,
-  isActionShortcut as isActionShortcutImport,
-  couldBeActionShortcut as couldBeActionShortcutImport,
-  getActionShortcutsDisplay,
   type ActionCommand as ActionCommandImport,
+  couldBeActionShortcut as couldBeActionShortcutImport,
+  getActionCommand as getActionCommandImport,
+  getActionShortcutsDisplay,
+  isActionShortcut as isActionShortcutImport,
 } from './action-shortcuts'
 
 // ============================================================================

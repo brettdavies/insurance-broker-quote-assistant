@@ -1,6 +1,6 @@
-import { describe, it, expect, beforeEach, mock } from 'bun:test'
+import { beforeEach, describe, expect, it, mock } from 'bun:test'
 import { ConversationalExtractor } from '../conversational-extractor'
-import type { LLMProvider, ExtractionResult as LLMExtractionResult } from '../llm-provider'
+import type { ExtractionResult as LLMExtractionResult, LLMProvider } from '../llm-provider'
 
 describe('ConversationalExtractor', () => {
   let mockLLMProvider: LLMProvider
@@ -44,12 +44,13 @@ describe('ConversationalExtractor', () => {
         },
         reasoning: 'Extracted from natural language',
       }
-
       ;(mockLLMProvider.extractWithStructuredOutput as ReturnType<typeof mock>).mockResolvedValue(
         mockLLMResult
       )
 
-      const result = await extractor.extractFields('I need auto insurance in California, I am 30 years old')
+      const result = await extractor.extractFields(
+        'I need auto insurance in California, I am 30 years old'
+      )
 
       expect(result.extractionMethod).toBe('llm')
       expect(result.profile.state).toBe('CA')
@@ -93,4 +94,3 @@ describe('ConversationalExtractor', () => {
     })
   })
 })
-

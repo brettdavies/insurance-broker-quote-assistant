@@ -1,8 +1,8 @@
 import type { UserProfile } from '@repo/shared'
 import { userProfileSchema } from '@repo/shared'
-import type { LLMProvider } from './llm-provider'
-import { parseKeyValueSyntax, hasKeyValueSyntax } from '../utils/key-value-parser'
+import { hasKeyValueSyntax, parseKeyValueSyntax } from '../utils/key-value-parser'
 import { logError } from '../utils/logger'
+import type { LLMProvider } from './llm-provider'
 
 /**
  * Conversational Extractor Service
@@ -31,10 +31,7 @@ export class ConversationalExtractor {
    * @param conversationHistory - Optional array of previous messages
    * @returns Extraction result with profile, method, confidence, and missing fields
    */
-  async extractFields(
-    message: string,
-    conversationHistory?: string[]
-  ): Promise<ExtractionResult> {
+  async extractFields(message: string, conversationHistory?: string[]): Promise<ExtractionResult> {
     try {
       // Step 1: Try key-value parser first (instant, free, deterministic)
       if (hasKeyValueSyntax(message)) {
@@ -108,7 +105,8 @@ export class ConversationalExtractor {
       const validProfile: Partial<UserProfile> = {}
       for (const [key, value] of Object.entries(profile)) {
         try {
-          const fieldResult = userProfileSchema.shape[key as keyof typeof userProfileSchema.shape]?.safeParse(value)
+          const fieldResult =
+            userProfileSchema.shape[key as keyof typeof userProfileSchema.shape]?.safeParse(value)
           if (fieldResult?.success) {
             // @ts-expect-error - Dynamic field assignment
             validProfile[key] = value
@@ -171,4 +169,3 @@ export class ConversationalExtractor {
     return confidence
   }
 }
-

@@ -57,4 +57,3 @@ export const config = {
 if (config.llmProvider === 'openai' && !config.openaiApiKey) {
   throw new Error('OPENAI_API_KEY is required when LLM_PROVIDER=openai')
 }
-

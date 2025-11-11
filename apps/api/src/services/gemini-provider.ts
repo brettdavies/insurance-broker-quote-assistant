@@ -1,9 +1,9 @@
 import { GoogleGenAI } from '@google/genai'
-import { zodToJsonSchema } from 'zod-to-json-schema'
+import { type UserProfile, userProfileSchema } from '@repo/shared'
 import type { ZodSchema } from 'zod'
-import type { LLMProvider, ExtractionResult } from './llm-provider'
-import { userProfileSchema, type UserProfile } from '@repo/shared'
+import { zodToJsonSchema } from 'zod-to-json-schema'
 import { logError, logInfo } from '../utils/logger'
+import type { ExtractionResult, LLMProvider } from './llm-provider'
 
 /**
  * Gemini Provider Implementation
@@ -48,7 +48,7 @@ function fixExclusiveMinimumForGemini(schema: Record<string, unknown>): Record<s
             // exclusiveMinimum: true means > 0, so use minimum: 0.0001
             fixedProp.minimum = 0.0001
           }
-          delete fixedProp.exclusiveMinimum
+          fixedProp.exclusiveMinimum = undefined
         }
 
         fixedProperties[key] = fixExclusiveMinimumForGemini(fixedProp)
@@ -212,4 +212,3 @@ export class GeminiProvider implements LLMProvider {
     return prompt
   }
 }
-
