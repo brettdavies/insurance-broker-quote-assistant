@@ -13,9 +13,10 @@ import { HelpModal } from '@/components/shortcuts/HelpModal'
 import type { MissingField } from '@/components/sidebar/MissingFields'
 import { Sidebar } from '@/components/sidebar/Sidebar'
 import { useToast } from '@/components/ui/use-toast'
-import { FIELD_SHORTCUTS } from '@/config/shortcuts'
+import { FIELD_METADATA, FIELD_SHORTCUTS } from '@/config/shortcuts'
 import { useIntake } from '@/hooks/useIntake'
 import type { ActionCommand, FieldCommand } from '@/hooks/useSlashCommands'
+import { calculateMissingFields } from '@/lib/missing-fields'
 import {
   generatePrefillFilename,
   getPrefillPacket,
@@ -23,7 +24,7 @@ import {
   handleExport,
 } from '@/lib/prefill-utils'
 import type { IntakeResult, UserProfile } from '@repo/shared'
-import { useCallback, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 
 interface UnifiedChatInterfaceProps {
   mode?: 'intake' | 'policy'
@@ -46,6 +47,7 @@ export function UnifiedChatInterface({
   const [missingFields, setMissingFields] = useState<MissingField[]>([])
   const [disclaimers, setDisclaimers] = useState<string[]>([])
   const [latestIntakeResult, setLatestIntakeResult] = useState<IntakeResult | null>(null)
+  const hasBackendMissingFields = useRef(false)
   const [fieldModalOpen, setFieldModalOpen] = useState(false)
   const [currentField, setCurrentField] = useState<{
     key: string
@@ -59,6 +61,27 @@ export function UnifiedChatInterface({
   const intakeMutation = useIntake()
   const debounceTimerRef = useRef<NodeJS.Timeout | null>(null)
   const editorContentRef = useRef<string>('')
+
+  // Calculate missing fields from current profile state
+  // This ensures missing fields are always displayed even before intake endpoint is called
+  useEffect(() => {
+    // Only calculate frontend missing fields if we don't have backend ones yet
+    if (!hasBackendMissingFields.current) {
+      const calculated = calculateMissingFields(profile)
+      // Convert to MissingField format
+      const fieldMetadata = calculated.map((field) => {
+        // Get field display name from FIELD_METADATA
+        const metadata = FIELD_METADATA[field.fieldKey as keyof typeof FIELD_METADATA]
+        const displayName = metadata?.label || field.fieldKey
+        return {
+          name: displayName,
+          priority: field.priority,
+          fieldKey: field.fieldKey,
+        }
+      })
+      setMissingFields(fieldMetadata)
+    }
+  }, [profile])
 
   // Handle field extraction from pills
   const handleFieldExtracted = useCallback(
@@ -98,12 +121,39 @@ export function UnifiedChatInterface({
           // Reconcile with backend response
           setProfile((prev) => ({ ...prev, ...result.profile }))
           // Convert string array to MissingField objects
+          // Format: "[CRITICAL] fieldName", "[IMPORTANT] fieldName", "[OPTIONAL] fieldName"
+          hasBackendMissingFields.current = true
           setMissingFields(
-            result.missingFields.map((fieldKey) => ({
-              name: fieldKey,
-              priority: 'critical' as const,
-              fieldKey,
-            }))
+            result.missingFields.map((fieldStr) => {
+              // Parse priority and field name from string like "[CRITICAL] state"
+              const priorityMatch = fieldStr.match(/^\[(CRITICAL|IMPORTANT|OPTIONAL)\]\s*(.+)$/)
+              if (priorityMatch?.[2]) {
+                const priorityStr = priorityMatch[1]
+                const fieldName = priorityMatch[2]
+                const priority =
+                  priorityStr === 'CRITICAL'
+                    ? 'critical'
+                    : priorityStr === 'IMPORTANT'
+                      ? 'important'
+                      : 'optional'
+                // Extract field key (remove priority prefix if present)
+                const fieldKey = fieldName.trim()
+                // Get field display name from FIELD_METADATA
+                const metadata = FIELD_METADATA[fieldKey as keyof typeof FIELD_METADATA]
+                const displayName = metadata?.label || fieldKey
+                return {
+                  name: displayName,
+                  priority: priority as 'critical' | 'important' | 'optional',
+                  fieldKey,
+                }
+              }
+              // Fallback: treat as critical if format doesn't match
+              return {
+                name: fieldStr,
+                priority: 'critical' as const,
+                fieldKey: fieldStr,
+              }
+            })
           )
           // Update disclaimers from backend compliance filter
           setDisclaimers(result.disclaimers || [])
@@ -242,6 +292,7 @@ export function UnifiedChatInterface({
         setProfile({})
         setMissingFields([])
         setLatestIntakeResult(null)
+        hasBackendMissingFields.current = false
         setCurrentField(null)
         setFieldModalOpen(false)
         setHelpModalOpen(false)

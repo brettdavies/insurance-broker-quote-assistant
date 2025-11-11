@@ -36,8 +36,22 @@ export async function getPrefillPacket(
     })
 
     if (!response.ok) {
-      const errorData = await response.json().catch(() => ({}))
-      throw new Error(errorData.error?.message || 'Failed to generate prefill packet')
+      let errorMessage = 'Failed to generate prefill packet'
+      try {
+        const errorData = await response.json()
+        // Handle different error response formats
+        if (errorData.error?.message) {
+          errorMessage = errorData.error.message
+        } else if (errorData.message) {
+          errorMessage = errorData.message
+        } else if (typeof errorData === 'string') {
+          errorMessage = errorData
+        }
+      } catch {
+        // If JSON parsing fails, use status text
+        errorMessage = response.statusText || `Server error (${response.status})`
+      }
+      throw new Error(errorMessage)
     }
 
     const prefillPacket: PrefillPacket = await response.json()

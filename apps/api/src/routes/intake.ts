@@ -266,7 +266,19 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
         await logError('Prefill generation error', error as Error, {
           type: 'prefill_error',
         })
-        throw error
+        // Return proper error response instead of throwing
+        const errorMessage =
+          error instanceof Error ? error.message : 'Failed to generate prefill packet'
+        return c.json(
+          {
+            error: {
+              code: 'PREFILL_GENERATION_ERROR',
+              message: errorMessage,
+              timestamp: new Date().toISOString(),
+            },
+          },
+          400
+        )
       }
 
       // Validate prefill packet against schema using Zod

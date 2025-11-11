@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "hono serve src/index.ts",
+    "dev": "bun --hot server.ts",
     "build": "bun build src/index.ts --outdir dist",
     "type-check": "tsc --noEmit",
     "lint": "biome check .",
