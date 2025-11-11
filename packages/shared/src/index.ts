@@ -50,10 +50,7 @@ export {
 } from './schemas/intake-result'
 
 // Export prefill packet schema and types
-export {
-  prefillPacketSchema,
-  type PrefillPacket,
-} from './schemas/prefill-packet'
+export { prefillPacketSchema, type PrefillPacket } from './schemas/prefill-packet'
 
 // Export missing field schema and types
 export {
@@ -71,10 +68,7 @@ export {
 } from './schemas/decision-trace'
 
 // Export compliance result schema and types
-export {
-  complianceResultSchema,
-  type ComplianceResult,
-} from './schemas/compliance-result'
+export { complianceResultSchema, type ComplianceResult } from './schemas/compliance-result'
 
 // Export policy summary schema and types
 export {

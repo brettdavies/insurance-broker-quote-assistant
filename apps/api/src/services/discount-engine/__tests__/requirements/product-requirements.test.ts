@@ -4,12 +4,12 @@
 
 import { describe, expect, it } from 'bun:test'
 import type { PolicySummary, UserProfile } from '@repo/shared'
-import type { DiscountRequirements } from '../../types'
 import {
-  checkMustHaveProducts,
   checkMinProducts,
+  checkMustHaveProducts,
   checkProductRequirements,
 } from '../../requirements/product-requirements'
+import type { DiscountRequirements } from '../../types'
 
 describe('checkMustHaveProducts', () => {
   const createPolicy = (productType?: string): PolicySummary => ({
@@ -54,9 +54,7 @@ describe('checkMustHaveProducts', () => {
       description: 'Test',
     }
     const policy = createPolicy('home')
-    const customerData = createCustomerData([
-      { product: 'auto', premium: 1000, carrier: 'GEICO' },
-    ])
+    const customerData = createCustomerData([{ product: 'auto', premium: 1000, carrier: 'GEICO' }])
 
     const missing = checkMustHaveProducts(requirements, policy, customerData)
     expect(missing).toHaveLength(0)
@@ -68,9 +66,7 @@ describe('checkMustHaveProducts', () => {
       description: 'Test',
     }
     const policy = createPolicy('auto')
-    const customerData = createCustomerData([
-      { product: 'home', premium: 1000, carrier: 'GEICO' },
-    ])
+    const customerData = createCustomerData([{ product: 'home', premium: 1000, carrier: 'GEICO' }])
 
     const missing = checkMustHaveProducts(requirements, policy, customerData)
     expect(missing).toHaveLength(0)
@@ -130,9 +126,7 @@ describe('checkMinProducts', () => {
       description: 'Test',
     }
     const policy = createPolicy('auto')
-    const customerData = createCustomerData([
-      { product: 'home', premium: 1000, carrier: 'GEICO' },
-    ])
+    const customerData = createCustomerData([{ product: 'home', premium: 1000, carrier: 'GEICO' }])
 
     const missing = checkMinProducts(requirements, policy, customerData)
     expect(missing).toHaveLength(0)
@@ -179,9 +173,7 @@ describe('checkProductRequirements', () => {
 
     const missing = checkProductRequirements(requirements, policy)
     expect(missing.length).toBeGreaterThan(0)
-    expect(missing.some((m) => m.includes('Missing required products'))).toBe(
-      true
-    )
+    expect(missing.some((m) => m.includes('Missing required products'))).toBe(true)
   })
 
   it('should return empty array when all requirements met', () => {
@@ -196,4 +188,3 @@ describe('checkProductRequirements', () => {
     expect(missing).toHaveLength(0)
   })
 })
-

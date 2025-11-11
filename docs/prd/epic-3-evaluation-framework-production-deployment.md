@@ -5,6 +5,7 @@
 ## Implementation Notes
 
 **Architectural Patterns from Epic 1:**
+
 - Decision trace logging uses `createDecisionTrace()` and `logDecisionTrace()` utilities from `apps/api/src/utils/decision-trace.ts`
 - Tests use Bun test framework with Hono test utilities (no server required)
 - Test structure: Unit tests in `services/__tests__/`, integration tests in `routes/__tests__/`

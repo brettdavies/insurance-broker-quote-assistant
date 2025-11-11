@@ -5,10 +5,10 @@
  */
 
 import type { Discount } from '@repo/shared'
+import { getFieldValue } from '../../utils/field-helpers'
+import type { DiscountEvaluator } from './evaluators/base-evaluator'
 import { BundleDiscountEvaluator } from './evaluators/bundle-evaluator'
 import { SingleProductDiscountEvaluator } from './evaluators/single-product-evaluator'
-import type { DiscountEvaluator } from './evaluators/base-evaluator'
-import { getFieldValue } from '../../utils/field-helpers'
 import type { DiscountRequirements } from './types'
 
 /**
@@ -19,15 +19,9 @@ import type { DiscountRequirements } from './types'
  */
 export function getDiscountEvaluator(discount: Discount): DiscountEvaluator {
   // Check if it's a bundle discount by looking at requirements
-  const requirements = getFieldValue(
-    discount.requirements,
-    {}
-  ) as DiscountRequirements
+  const requirements = getFieldValue(discount.requirements, {}) as DiscountRequirements
 
-  if (
-    requirements.bundleProducts &&
-    requirements.bundleProducts.length > 1
-  ) {
+  if (requirements.bundleProducts && requirements.bundleProducts.length > 1) {
     return new BundleDiscountEvaluator()
   }
 
@@ -43,4 +37,3 @@ export function getDiscountEvaluator(discount: Discount): DiscountEvaluator {
   // (driver, lifestyle, loyalty, other, or undefined)
   return new SingleProductDiscountEvaluator()
 }
-

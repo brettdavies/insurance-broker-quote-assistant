@@ -6,13 +6,9 @@
 
 import type { Discount, PolicySummary, UserProfile } from '@repo/shared'
 import { getFieldValue } from '../../../utils/field-helpers'
-import type {
-  DiscountEligibilityResult,
-  DiscountRequirements,
-  SavingsCalculation,
-} from '../types'
 import { checkFieldRequirements } from '../requirements/field-requirements'
 import { checkProductRequirements } from '../requirements/product-requirements'
+import type { DiscountEligibilityResult, DiscountRequirements, SavingsCalculation } from '../types'
 import { getEffectivePercentage } from '../utils/percentage'
 
 /**
@@ -50,39 +46,25 @@ export abstract class BaseDiscountEvaluator implements DiscountEvaluator {
     policy: PolicySummary,
     customerData?: UserProfile
   ): DiscountEligibilityResult {
-    const requirements = getFieldValue(
-      discount.requirements,
-      {}
-    ) as DiscountRequirements
+    const requirements = getFieldValue(discount.requirements, {}) as DiscountRequirements
 
     const missingRequirements: string[] = []
 
     // Check product requirements (common to all discount types)
-    missingRequirements.push(
-      ...checkProductRequirements(requirements, policy, customerData)
-    )
+    missingRequirements.push(...checkProductRequirements(requirements, policy, customerData))
 
     // Check field requirements (if customer data provided)
     if (requirements.fieldRequirements) {
       if (customerData) {
-        missingRequirements.push(
-          ...checkFieldRequirements(requirements, customerData)
-        )
+        missingRequirements.push(...checkFieldRequirements(requirements, customerData))
       } else {
-        missingRequirements.push(
-          'Customer profile data required for eligibility check'
-        )
+        missingRequirements.push('Customer profile data required for eligibility check')
       }
     }
 
     // Allow subclasses to add type-specific checks
     missingRequirements.push(
-      ...this.checkTypeSpecificRequirements(
-        discount,
-        requirements,
-        policy,
-        customerData
-      )
+      ...this.checkTypeSpecificRequirements(discount, requirements, policy, customerData)
     )
 
     return {
@@ -104,18 +86,9 @@ export abstract class BaseDiscountEvaluator implements DiscountEvaluator {
       return { annualDollars: 0, explanation: 'Invalid policy data' }
     }
 
-    const effectivePercentage = getEffectivePercentage(
-      discount,
-      policy.state,
-      policy.productType
-    )
+    const effectivePercentage = getEffectivePercentage(discount, policy.state, policy.productType)
 
-    return this.calculateTypeSpecificSavings(
-      discount,
-      policy,
-      customerData,
-      effectivePercentage
-    )
+    return this.calculateTypeSpecificSavings(discount, policy, customerData, effectivePercentage)
   }
 
   /**
@@ -140,4 +113,3 @@ export abstract class BaseDiscountEvaluator implements DiscountEvaluator {
     effectivePercentage: number
   ): SavingsCalculation
 }
-

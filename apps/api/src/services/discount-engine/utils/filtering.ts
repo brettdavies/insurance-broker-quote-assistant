@@ -24,10 +24,7 @@ export function filterByProductAndState(
     const discountProducts = getFieldValue(discount.products, [])
     const discountStates = getFieldValue(discount.states, [])
 
-    return (
-      discountProducts.includes(productType) &&
-      discountStates.includes(state)
-    )
+    return discountProducts.includes(productType) && discountStates.includes(state)
   })
 }
 
@@ -42,8 +39,5 @@ export function filterByType(
   discounts: Discount[],
   discountType: 'bundle' | 'driver' | 'lifestyle' | 'loyalty' | 'other'
 ): Discount[] {
-  return discounts.filter(
-    (discount) => discount.metadata?.discountType === discountType
-  )
+  return discounts.filter((discount) => discount.metadata?.discountType === discountType)
 }
-

@@ -36,6 +36,7 @@ This document defines the comprehensive methodology for gathering, validating, a
 Every field in the knowledge pack uses a metadata envelope for source tracking. See [sot-schemas.md#field-metadata-envelope](sot-schemas.md#field-metadata-envelope) for complete specification.
 
 **Core concept:**
+
 ```json
 {
   "_id": "fld_ckm9x7whp2",
@@ -57,6 +58,7 @@ When a child data point has no direct sources, it inherits from its parent. See 
 All entity IDs use **cuid2** format with type prefixes for global uniqueness. See [sot-id-conventions.md](sot-id-conventions.md) for complete specification.
 
 **Quick reference:**
+
 - Carriers: `carr_{cuid2}` (e.g., `carr_ckm9x7w8k0`)
 - Discounts: `disc_{cuid2}`
 - Fields: `fld_{cuid2}`
@@ -66,18 +68,19 @@ All IDs tracked in `audit-trail.json` for cross-reference.
 
 #### 1.4 Schema Files to Create
 
-| File | Purpose |
-|------|---------|
-| `schemas/carrier-schema.json` | Carrier data structure with source tracking |
-| `schemas/state-schema.json` | State data structure with source tracking |
-| `schemas/source-metadata.json` | Source object definition |
-| `schemas/resolution-metadata.json` | Conflict resolution tracking |
+| File                               | Purpose                                     |
+| ---------------------------------- | ------------------------------------------- |
+| `schemas/carrier-schema.json`      | Carrier data structure with source tracking |
+| `schemas/state-schema.json`        | State data structure with source tracking   |
+| `schemas/source-metadata.json`     | Source object definition                    |
+| `schemas/resolution-metadata.json` | Conflict resolution tracking                |
 
 **Complete schema specifications**: See [sot-schemas.md](sot-schemas.md) for all JSON schema definitions.
 
 **Deliverable**: 4 schema files in `knowledge_pack/schemas/`
 
 **See Also:**
+
 - 📖 [Complete Schemas](sot-schemas.md) - Full JSON schema specifications
 - 🔗 [ID Conventions](sot-id-conventions.md) - cuid2 usage for all entities
 
@@ -95,27 +98,30 @@ All IDs tracked in `audit-trail.json` for cross-reference.
 #### 2.1 Three-Step Automated Workflow
 
 **Step 1: Search Execution** (`brave-search.py`)
+
 1. **Load search queries** from search-tracker.json (476 queries from sot-search-queries.md)
 2. **Execute Brave API searches** with 1.1s rate limiting between requests
 3. **Extract URLs from results** (web.results array in Brave API response)
 4. **Enrich with Brave metadata**: title, description, page_age, language, type, subtype, hostname, source_name
-5. **Generate websearch ID** (websearch_{cuid2}) for each search execution
+5. **Generate websearch ID** (websearch\_{cuid2}) for each search execution
 6. **Save raw request/response** to `knowledge_pack/raw/websearches/websearch_{cuid2}.json`
 7. **Deduplicate URLs** via SHA256 hash and save to url-tracker.json
 8. **Update search status** to 'completed' with lastrunAt timestamp
 
 **Step 2: URL Fetching** (`fetch-url.py`)
+
 1. **Load pending URLs** from url-tracker.json
 2. **Fetch page content** using crawl4ai (both HTML and markdown)
-3. **Generate page ID** (page_{cuid2})
+3. **Generate page ID** (page\_{cuid2})
 4. **Save raw files** to `knowledge_pack/raw/pages/{page_id}.{html|md}`
 5. **Register page** in page-tracker.json with metadata (size, status, etc.)
 6. **Update URL status** to 'completed' with fetchedAt timestamp
 
 **Step 3: Data Extraction** (Phase 3)
+
 1. **Load pages** from page-tracker.json
 2. **Extract data points** using LLM or pattern matching
-3. **Generate unique IDs** for each extracted field (fld_{cuid2})
+3. **Generate unique IDs** for each extracted field (fld\_{cuid2})
 4. **Track element references** (CSS selectors, line numbers)
 5. **Save to raw data files** organized by category
 
@@ -144,11 +150,13 @@ All IDs tracked in `audit-trail.json` for cross-reference.
 #### 2.3 Source Categories
 
 **Carrier Official Sites** (Primary Sources):
+
 - GEICO: geico.com/auto/discounts/, geico.com/information/states/
 - Progressive: progressive.com/auto/discounts/
 - State Farm: statefarm.com/insurance/auto/discounts
 
 **State Regulatory Sites** (Authoritative):
+
 - CA: insurance.ca.gov/01-consumers/
 - TX: tdi.texas.gov/consumer/
 - FL: floir.com/
@@ -156,10 +164,12 @@ All IDs tracked in `audit-trail.json` for cross-reference.
 - IL: illinois.gov/sites/Insurance/
 
 **Industry Organizations** (Reference):
+
 - Insurance Information Institute: iii.org
 - NAIC: naic.org
 
 **Financial Sites** (Secondary):
+
 - Bankrate: bankrate.com/insurance/
 - NerdWallet: nerdwallet.com/insurance/
 
@@ -201,6 +211,7 @@ knowledge_pack/raw/
 #### 2.5 Implementation Details
 
 **Key Implementation Concepts:**
+
 - **Brave API Client**: Rate-limited (1.1s delay) with dual token management (FREE → PAID fallback)
 - **Search Tracker**: `search-tracker.json` tracks 476 searches with status, lastrunAt, and metadata
 - **URL Tracker**: `url-tracker.json` tracks 2,950 unique URLs with enrichment from Brave API (title, description, etc.)
@@ -215,6 +226,7 @@ knowledge_pack/raw/
 **Deliverable**: 30-50 `*.raw.json` files with all scraped data
 
 **See Also:**
+
 - 📖 [Agent Workflow](phase-2-agent-instructions.md) - Step-by-step autonomous execution
 - 🔗 [Search Queries](sot-search-queries.md) - 200+ queries for data gathering
 - 📊 [Raw Data Examples](knowledge-pack-examples.md#example-1-multi-policy-discount) - See raw scraping in action
@@ -233,6 +245,7 @@ knowledge_pack/raw/
 Create `scripts/detect-conflicts.ts`:
 
 **Pseudo-code**:
+
 ```typescript
 for each dataPoint:
   sources = getAllSourcesForDataPoint(dataPoint)
@@ -257,14 +270,14 @@ for each dataPoint:
 
 #### 3.2 Conflict Types
 
-| Type | Example | Detection Logic |
-|------|---------|-----------------|
-| **Range vs Specific** | "10-15%" vs "12%" | One value is range, other is specific number |
-| **Numeric Difference** | "$1200" vs "$1400" | Both numbers, differ by >5% |
-| **State Availability** | "All 50 states" vs "List of 47" | Array length differs |
-| **Boolean Difference** | `true` vs `false` | Direct contradiction |
-| **Missing Data** | Source A has value, B doesn't | One source missing data point |
-| **Date Mismatch** | Different effective dates | Temporal conflict |
+| Type                   | Example                         | Detection Logic                              |
+| ---------------------- | ------------------------------- | -------------------------------------------- |
+| **Range vs Specific**  | "10-15%" vs "12%"               | One value is range, other is specific number |
+| **Numeric Difference** | "$1200" vs "$1400"              | Both numbers, differ by >5%                  |
+| **State Availability** | "All 50 states" vs "List of 47" | Array length differs                         |
+| **Boolean Difference** | `true` vs `false`               | Direct contradiction                         |
+| **Missing Data**       | Source A has value, B doesn't   | One source missing data point                |
+| **Date Mismatch**      | Different effective dates       | Temporal conflict                            |
 
 #### 3.3 Severity Classification
 
@@ -276,12 +289,12 @@ function calculateSeverity(values, dataPoint) {
   }
 
   // High: Numeric difference >20%
-  if (numericDifference(values) > 0.20) {
+  if (numericDifference(values) > 0.2) {
     return 'high'
   }
 
   // Medium: Numeric difference 10-20%
-  if (numericDifference(values) > 0.10) {
+  if (numericDifference(values) > 0.1) {
     return 'medium'
   }
 
@@ -333,6 +346,7 @@ function calculateSeverity(values, dataPoint) {
 **Deliverable**: `knowledge_pack/conflicts.json` with all detected conflicts
 
 **See Also:**
+
 - 📖 [Conflict Detection Examples](knowledge-pack-examples.md#example-2-california-auto-minimums) - Real conflict scenarios
 - 🔗 [Resolution Schema](sot-schemas.md#4-resolution-object) - Data structure for conflicts
 
@@ -439,7 +453,9 @@ Create `knowledge_pack/resolutions.json`:
   "resolutions": [
     {
       "conflictId": "conf_cm2b6c8l0q",
-      "resolution": { /* See format above */ }
+      "resolution": {
+        /* See format above */
+      }
     }
   ],
   "statistics": {
@@ -459,11 +475,13 @@ Create `knowledge_pack/resolutions.json`:
 ```
 
 **Deliverable**:
+
 - `knowledge_pack/clean/` directory with resolved data
 - `knowledge_pack/resolutions.json` with all decisions
 - `knowledge_pack/audit-trail.json` with complete lineage
 
 **See Also:**
+
 - 📖 [Source Hierarchy](sot-source-hierarchy.md) - Complete decision tree and authority levels
 - 📊 [Resolution Examples](knowledge-pack-examples.md#example-4-three-way-conflict-with-majority-consensus) - Real conflict resolutions
 
@@ -514,14 +532,14 @@ Create `knowledge_pack/resolutions.json`:
         "_id": "disc_cm5e9f1o3t",
         "name": {
           "_id": "fld_cm7g1h3q5v",
-          "_sources": [{"uri": "...", "elementRef": "..."}],
+          "_sources": [{ "uri": "...", "elementRef": "..." }],
           "value": "Multi-Policy Bundle"
         },
         "percentage": {
           "_id": "fld_cm8h2i4r6w",
           "_sources": [
-            {"uri": "https://www.geico.com/auto/discounts/", "primary": true},
-            {"uri": "https://www.nerdwallet.com/...", "primary": false}
+            { "uri": "https://www.geico.com/auto/discounts/", "primary": true },
+            { "uri": "https://www.nerdwallet.com/...", "primary": false }
           ],
           "_resolution": {
             "conflictId": "conf_cm2b6c8l0q",
@@ -605,6 +623,7 @@ For production files, compress source references:
 **Deliverable**: 10 production JSON files ready for RAG consumption
 
 **See Also:**
+
 - 📖 [Production Schemas](sot-schemas.md#1-carrier-schema) - Complete schema specifications
 - 📊 [Complete Carrier Example](knowledge-pack-examples.md#example-5-complete-carrier-file-production-format) - Production format sample
 
@@ -627,48 +646,48 @@ const validationChecks = [
   {
     name: 'ID Uniqueness',
     check: () => allIdsAreUnique(),
-    critical: true
+    critical: true,
   },
   {
     name: 'Every field has _id',
     check: () => everyFieldHasId(),
-    critical: true
+    critical: true,
   },
   {
     name: 'Every field has source OR inheritedFrom',
     check: () => everyFieldHasSourceOrInheritance(),
-    critical: true
+    critical: true,
   },
   {
     name: 'No orphaned inheritedFrom references',
     check: () => allInheritedFromReferencesValid(),
-    critical: true
+    critical: true,
   },
   {
     name: 'All source URIs are valid',
     check: () => allSourceUrisValid(),
-    critical: false
+    critical: false,
   },
   {
     name: 'All conflicts have resolutions',
     check: () => allConflictsResolved(),
-    critical: true
+    critical: true,
   },
   {
     name: 'Cross-references valid',
     check: () => carrierStatesExistInStatesFolder(),
-    critical: true
+    critical: true,
   },
   {
     name: 'Schema validation',
     check: () => validateAgainstJsonSchema(),
-    critical: true
+    critical: true,
   },
   {
     name: 'No zero-source data points',
     check: () => noZeroSourceDataPoints(),
-    critical: true
-  }
+    critical: true,
+  },
 ]
 ```
 
@@ -735,8 +754,12 @@ const validationChecks = [
       "message": "625 fields have direct sources, 45 fields inherit (100% coverage)"
     }
   ],
-  "coverage": { /* See 6.2 */ },
-  "quality": { /* See 6.3 */ },
+  "coverage": {
+    /* See 6.2 */
+  },
+  "quality": {
+    /* See 6.3 */
+  },
   "recommendations": []
 }
 ```
@@ -744,6 +767,7 @@ const validationChecks = [
 **Deliverable**: `knowledge_pack/validation-report.json` with QA results
 
 **See Also:**
+
 - 📖 [Validation Rules](sot-schemas.md#validation-rules) - Schema validation specifications
 - 🔗 [Quality Metrics](sot-schemas.md#required-validations) - Required validation checks
 
@@ -758,24 +782,28 @@ const validationChecks = [
 
 #### 7.1 README.md Structure
 
-```markdown
+````markdown
 # Knowledge Pack - Insurance Broker Quote Assistant
 
 ## Overview
+
 This knowledge pack contains insurance carrier, state requirement, and compliance data for the IQuote Pro assistant. All data is sourced from publicly available information with complete audit trails.
 
 ## Data Collection Methodology
 
 ### Collection Period
+
 November 5-6, 2025
 
 ### Source Hierarchy
+
 1. State Regulatory Sites (Highest Authority)
 2. Carrier Official Sites (Primary Sources)
 3. Industry Organizations (Reference)
 4. Financial Sites (Secondary/Benchmarking)
 
 ### Process
+
 1. Raw data scraping (42 sources, 670 data points)
 2. Conflict detection (8 conflicts identified)
 3. Conflict resolution (8/8 resolved via documented strategies)
@@ -783,6 +811,7 @@ November 5-6, 2025
 5. Validation (all checks passed)
 
 ## Data Quality Metrics
+
 - Total Data Points: 670
 - Fully Sourced: 670 (100%)
 - Multi-Source: 23 (3.4%)
@@ -796,18 +825,22 @@ November 5-6, 2025
 ### Carrier Sources (3 carriers × ~14 URLs = 42 primary sources)
 
 #### GEICO
+
 - Main: https://www.geico.com/ (accessed 2025-11-05)
 - Discounts: https://www.geico.com/auto/discounts/ (accessed 2025-11-05)
 - States: https://www.geico.com/information/states/ (accessed 2025-11-05)
 - [See audit-trail.json for 14 total GEICO sources]
 
 #### Progressive
+
 - [Similar structure]
 
 #### State Farm
+
 - [Similar structure]
 
 ### State Regulatory Sources (5 states)
+
 - CA: https://www.insurance.ca.gov/ (accessed 2025-11-05)
 - TX: https://www.tdi.texas.gov/ (accessed 2025-11-05)
 - FL: https://www.floir.com/ (accessed 2025-11-05)
@@ -815,18 +848,21 @@ November 5-6, 2025
 - IL: https://www2.illinois.gov/sites/Insurance/ (accessed 2025-11-05)
 
 ### Industry Sources
+
 - Insurance Information Institute: https://www.iii.org/
 - NAIC: https://content.naic.org/
 
 ## Files Structure
 
 ### Production Files (Used by RAG)
+
 - `carriers/*.json` - 3 carrier files with embedded sources
 - `states/*.json` - 5 state files with embedded sources
 - `products.json` - Product definitions
 - `compliance.json` - Compliance rules
 
 ### Audit & Quality Files
+
 - `raw/*.json` - Original scraped data (preserved)
 - `clean/*.json` - Cleaned data with resolutions
 - `conflicts.json` - All detected conflicts
@@ -835,11 +871,13 @@ November 5-6, 2025
 - `validation-report.json` - QA results
 
 ### Schema Files
+
 - `schemas/*.json` - JSON schemas for validation
 
 ## Data Point Examples
 
 ### Multi-Source Data Point
+
 ```json
 "percentage": {
   "_id": "fld_cm8h2i4r6w",
@@ -851,8 +889,10 @@ November 5-6, 2025
   "value": 15
 }
 ```
+````
 
 ### Inherited Source
+
 ```json
 "states": {
   "_id": "fld_cm9i3j5s7x",
@@ -863,16 +903,20 @@ November 5-6, 2025
 ```
 
 ## Compliance Notes
+
 - All data from publicly available sources
 - Pricing is approximate for demonstration purposes
 - Actual insurance rates require underwriting
 - See `compliance.json` for required disclaimers
 
 ## Audit Trail
+
 For complete data lineage, see `audit-trail.json`. Every data point can be traced back to its original source(s).
 
 ## Updates
+
 To update data:
+
 1. Scrape new sources → raw/
 2. Detect conflicts → conflicts.json
 3. Resolve conflicts → resolutions.json
@@ -880,7 +924,8 @@ To update data:
 5. Re-run validation
 
 Last Updated: 2025-11-05
-```
+
+````
 
 #### 7.2 Audit Trail Format
 
@@ -935,11 +980,12 @@ Last Updated: 2025-11-05
     }
   ]
 }
-```
+````
 
 **Deliverable**: Complete README.md + audit-trail.json
 
 **See Also:**
+
 - 📖 [Complete Examples](knowledge-pack-examples.md) - See full audit trail examples
 - 🔗 [All Documentation Files](README.md) - Index of all knowledge pack docs
 
@@ -947,22 +993,23 @@ Last Updated: 2025-11-05
 
 ## Implementation Timeline
 
-| Phase | Duration | Effort | Deliverable |
-|-------|----------|--------|-------------|
-| 1. Schema Design | 1 hour | Light | 4 schema files |
-| 2. Raw Scraping | 4-6 hours | Heavy | 30-50 raw files |
-| 3. Conflict Detection | 2-3 hours | Medium | conflicts.json |
-| 4. Conflict Resolution | 2-3 hours | Medium | resolutions.json, clean/ |
-| 5. KB Assembly | 1-2 hours | Light | 10 production files |
-| 6. Validation | 1-2 hours | Light | validation-report.json |
-| 7. Documentation | 1 hour | Light | README.md, audit-trail.json |
-| **TOTAL** | **12-18 hours** | **Med-Heavy** | **Complete auditable KB** |
+| Phase                  | Duration        | Effort        | Deliverable                 |
+| ---------------------- | --------------- | ------------- | --------------------------- |
+| 1. Schema Design       | 1 hour          | Light         | 4 schema files              |
+| 2. Raw Scraping        | 4-6 hours       | Heavy         | 30-50 raw files             |
+| 3. Conflict Detection  | 2-3 hours       | Medium        | conflicts.json              |
+| 4. Conflict Resolution | 2-3 hours       | Medium        | resolutions.json, clean/    |
+| 5. KB Assembly         | 1-2 hours       | Light         | 10 production files         |
+| 6. Validation          | 1-2 hours       | Light         | validation-report.json      |
+| 7. Documentation       | 1 hour          | Light         | README.md, audit-trail.json |
+| **TOTAL**              | **12-18 hours** | **Med-Heavy** | **Complete auditable KB**   |
 
 ---
 
 ## Tools & Scripts
 
 ### Required Scripts
+
 ```
 scripts/
 ├── 01-scrape-carriers.ts       # Web scraping with element refs
@@ -978,6 +1025,7 @@ scripts/
 ```
 
 ### Utility Modules
+
 ```
 scripts/utils/
 ├── source-tracker.ts           # Track sources with element refs
@@ -998,7 +1046,7 @@ scripts/utils/
 ✅ **Audit Trail**: Complete lineage from raw → production  
 ✅ **Validation**: All critical checks pass  
 ✅ **Documentation**: README.md with methodology and sources  
-✅ **Compliance**: Zero unsourced data points  
+✅ **Compliance**: Zero unsourced data points
 
 ---
 

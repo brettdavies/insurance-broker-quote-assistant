@@ -3,6 +3,7 @@
 ## Test Types
 
 ### Unit Tests
+
 Fast, isolated tests for individual functions and utilities. **All LLM calls are mocked.**
 
 ```bash
@@ -10,10 +11,12 @@ bun run test:unit
 ```
 
 **Coverage:**
+
 - Key-value parser (`src/utils/__tests__/key-value-parser.test.ts`)
 - Conversational extractor service (`src/services/__tests__/conversational-extractor.test.ts`)
 
 ### Integration Tests
+
 Tests API routes using Hono test utilities (no server required). **All LLM calls are mocked.**
 
 ```bash
@@ -21,12 +24,14 @@ bun run test:integration
 ```
 
 **Coverage:**
+
 - Intake endpoint (`src/routes/__tests__/intake.test.ts`)
 - Health endpoint (`src/routes/__tests__/health.test.ts`)
 - Carriers endpoints (`src/routes/__tests__/carriers.test.ts`)
 - States endpoints (`src/routes/__tests__/states.test.ts`)
 
 ### Contract Tests (Live API)
+
 Tests against actual running server with real HTTP requests and schema validation. **Uses real Gemini API if server is running.**
 
 ```bash
@@ -38,6 +43,7 @@ TEST_API_URL=http://localhost:7070 bun run test:contract
 ```
 
 **Coverage:**
+
 - Live API contract validation (`src/routes/__tests__/intake.contract.test.ts`)
 - Response schema validation against IntakeResult Zod schema
 - Request validation
@@ -45,6 +51,7 @@ TEST_API_URL=http://localhost:7070 bun run test:contract
 - Performance benchmarks
 
 ### Gemini Provider Tests (Real API)
+
 Tests against actual Gemini API to verify integration. **Requires `TEST_GEMINI_API=true` and may incur API costs.**
 
 ```bash
@@ -52,6 +59,7 @@ TEST_GEMINI_API=true bun run test:gemini
 ```
 
 **Coverage:**
+
 - Real Gemini API integration (`src/services/__tests__/gemini-provider.test.ts`)
 - Structured output validation
 - Conversation history handling
@@ -64,6 +72,7 @@ All test messages are centralized in:
 **`src/__tests__/fixtures/test-messages.ts`**
 
 This includes:
+
 - Key-value examples (`testMessages.keyValue`)
 - Natural language examples (`testMessages.naturalLanguage`)
 - Complex scenarios (`testMessages.complex`)
@@ -83,6 +92,7 @@ const message = testMessages.naturalLanguage.complete
 ## Are We Hitting the Real Gemini API?
 
 ### Default Behavior: **NO** ❌
+
 - **Unit tests**: Mock LLM provider (no API calls)
 - **Integration tests**: Mock LLM provider (no API calls)
 - **Contract tests**: Use real API **only if server is running** (skipped otherwise)
@@ -90,6 +100,7 @@ const message = testMessages.naturalLanguage.complete
 ### To Test with Real API: **YES** ✅
 
 **Option 1: Contract Tests (Full Stack)**
+
 ```bash
 # Terminal 1: Start server (uses real Gemini API)
 bun run dev
@@ -99,6 +110,7 @@ TEST_API_URL=http://localhost:7070 bun run test:contract
 ```
 
 **Option 2: Gemini Provider Tests (Unit Level)**
+
 ```bash
 # Run tests against real Gemini API
 TEST_GEMINI_API=true bun run test:gemini
@@ -119,13 +131,13 @@ TEST_GEMINI_API=true bun run test:gemini
 
 ## Test Coverage Summary
 
-| Test Type | Count | Real API? | Status |
-|-----------|-------|-----------|--------|
-| Unit Tests | 15 | ❌ Mocked | ✅ Passing |
-| Integration Tests | 6 | ❌ Mocked | ✅ Passing |
-| Contract Tests | 8 | ✅ If server running | ✅ Passing |
-| Gemini Provider Tests | 7 | ✅ If enabled | ✅ Passing |
-| **Total** | **36** | | ✅ |
+| Test Type             | Count  | Real API?            | Status     |
+| --------------------- | ------ | -------------------- | ---------- |
+| Unit Tests            | 15     | ❌ Mocked            | ✅ Passing |
+| Integration Tests     | 6      | ❌ Mocked            | ✅ Passing |
+| Contract Tests        | 8      | ✅ If server running | ✅ Passing |
+| Gemini Provider Tests | 7      | ✅ If enabled        | ✅ Passing |
+| **Total**             | **36** |                      | ✅         |
 
 ## Schema Validation
 
@@ -139,6 +151,7 @@ expect(validationResult.success).toBe(true)
 ```
 
 This catches:
+
 - Missing required fields
 - Incorrect field types
 - Invalid enum values
@@ -170,7 +183,7 @@ kill $SERVER_PID
 - **Gemini provider tests**: Will incur API costs (use free tier `gemini-2.5-flash-lite`)
 
 To minimize costs:
+
 - Use `TEST_GEMINI_API=true` only when needed
 - Contract tests skip gracefully if server isn't running
 - Default test runs use mocks (no API calls)
-

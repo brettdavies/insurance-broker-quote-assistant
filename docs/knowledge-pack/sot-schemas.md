@@ -17,19 +17,19 @@ This document defines the JSON schemas used throughout the knowledge pack, from 
 
 ## Schema Files
 
-| Schema File | Purpose | Location |
-|------------|---------|----------|
-| `carrier-schema.json` | Carrier data with products, discounts, eligibility | `knowledge_pack/schemas/` |
-| `state-schema.json` | State requirements and minimums | `knowledge_pack/schemas/` |
-| `product-schema.json` | Product definitions | `knowledge_pack/schemas/` |
-| `compliance-schema.json` | Compliance rules and disclaimers | `knowledge_pack/schemas/` |
-| `source-metadata.json` | Source citation format | `knowledge_pack/schemas/` |
-| `resolution-metadata.json` | Conflict resolution format | `knowledge_pack/schemas/` |
-| `raw-data-schema.json` | Raw scraped data format | `knowledge_pack/schemas/` |
-| `search-tracker.json` | Phase 2 search query tracking (476 queries) | `knowledge-pack-scraper/trackers/` |
-| `url-tracker.json` | Phase 2 discovered URL tracking (2,950 URLs) | `knowledge-pack-scraper/trackers/` |
-| `page-tracker.json` | Phase 2 fetched page tracking | `knowledge-pack-scraper/trackers/` |
-| `websearch-schema.json` | Brave API execution instance format | `knowledge_pack/raw/websearches/` |
+| Schema File                | Purpose                                            | Location                           |
+| -------------------------- | -------------------------------------------------- | ---------------------------------- |
+| `carrier-schema.json`      | Carrier data with products, discounts, eligibility | `knowledge_pack/schemas/`          |
+| `state-schema.json`        | State requirements and minimums                    | `knowledge_pack/schemas/`          |
+| `product-schema.json`      | Product definitions                                | `knowledge_pack/schemas/`          |
+| `compliance-schema.json`   | Compliance rules and disclaimers                   | `knowledge_pack/schemas/`          |
+| `source-metadata.json`     | Source citation format                             | `knowledge_pack/schemas/`          |
+| `resolution-metadata.json` | Conflict resolution format                         | `knowledge_pack/schemas/`          |
+| `raw-data-schema.json`     | Raw scraped data format                            | `knowledge_pack/schemas/`          |
+| `search-tracker.json`      | Phase 2 search query tracking (476 queries)        | `knowledge-pack-scraper/trackers/` |
+| `url-tracker.json`         | Phase 2 discovered URL tracking (2,950 URLs)       | `knowledge-pack-scraper/trackers/` |
+| `page-tracker.json`        | Phase 2 fetched page tracking                      | `knowledge-pack-scraper/trackers/` |
+| `websearch-schema.json`    | Brave API execution instance format                | `knowledge_pack/raw/websearches/`  |
 
 ---
 
@@ -41,10 +41,10 @@ Every field in the knowledge pack uses this structure:
 
 ```typescript
 interface FieldWithMetadata<T> {
-  _id: string              // Unique ID (cuid2) for this field
-  value: T                 // The actual data value
-  _sources: Source[]       // Direct source citations (≥1 required if not inherited)
-  _inheritedFrom?: string  // Parent field ID (if sources inherited)
+  _id: string // Unique ID (cuid2) for this field
+  value: T // The actual data value
+  _sources: Source[] // Direct source citations (≥1 required if not inherited)
+  _inheritedFrom?: string // Parent field ID (if sources inherited)
   _resolution?: Resolution // Conflict resolution metadata (if applicable)
 }
 ```
@@ -53,16 +53,16 @@ interface FieldWithMetadata<T> {
 
 ```typescript
 interface Source {
-  uri: string              // Full URL
-  pageId?: string          // Optional in interface; Phase 2 MUST populate for raw data. Unique page ID (page_{cuid2})
-  pageFile?: string        // Optional in interface; Phase 2 MUST populate for raw data. Path relative to knowledge_pack/raw/ (e.g., "_pages/page_ckm9x7w8k0.html")
-  elementRef?: string      // CSS selector or XPath
-  lineRef?: number         // Line number (for text files)
-  accessedDate: string     // ISO 8601 date-time with timezone (YYYY-MM-DDTHH:mm:ssZ)
-  extractedValue?: string  // Raw value from source (before normalization)
-  confidence: 'high' | 'medium' | 'low'  // Classification (required). See sot-source-hierarchy.md#confidence-classifications
+  uri: string // Full URL
+  pageId?: string // Optional in interface; Phase 2 MUST populate for raw data. Unique page ID (page_{cuid2})
+  pageFile?: string // Optional in interface; Phase 2 MUST populate for raw data. Path relative to knowledge_pack/raw/ (e.g., "_pages/page_ckm9x7w8k0.html")
+  elementRef?: string // CSS selector or XPath
+  lineRef?: number // Line number (for text files)
+  accessedDate: string // ISO 8601 date-time with timezone (YYYY-MM-DDTHH:mm:ssZ)
+  extractedValue?: string // Raw value from source (before normalization)
+  confidence: 'high' | 'medium' | 'low' // Classification (required). See sot-source-hierarchy.md#confidence-classifications
   confidenceScore?: number // Calculated numeric score 1.0-5.0 (optional). See sot-source-hierarchy.md#confidence-scoring-formula
-  primary?: boolean        // Is this the primary source (for multi-source)
+  primary?: boolean // Is this the primary source (for multi-source)
 }
 ```
 
@@ -71,12 +71,14 @@ interface Source {
 The optional `pageId` and `pageFile` fields have a lifecycle that depends on data processing phase:
 
 **Phase 2 - Raw Data Collection (Required)**
+
 - `pageId`: REQUIRED. Generated as `page_{cuid2}` when fetching source (e.g., `page_ckm9x7w8k0`)
 - `pageFile`: REQUIRED. Generated as `_pages/${pageId}.{ext}` pointing to saved page content
 - Both fields enable audit trail and reverify capability for raw scraped data
 - Example: `{ pageId: "page_ckm9x7w8k0", pageFile: "_pages/page_ckm9x7w8k0.html", ... }`
 
 **Phase 3+ - Standardization and Cleanup (Optional)**
+
 - `pageId`: OPTIONAL. May be removed if page archive is deleted or consolidated
 - `pageFile`: OPTIONAL. May be removed after data extraction is complete and verified
 - Removal is safe because other fields (uri, elementRef) still provide source identity
@@ -88,12 +90,12 @@ The optional `pageId` and `pageFile` fields have a lifecycle that depends on dat
 
 ```typescript
 interface Resolution {
-  conflictId: string       // Reference to conflict in conflicts.json
-  selectedValue: any       // The chosen value
-  method: string           // Resolution strategy used
-  rationale: string        // Human-readable explanation
-  resolvedBy: string       // Curator identifier
-  resolvedDate: string     // ISO 8601 date
+  conflictId: string // Reference to conflict in conflicts.json
+  selectedValue: any // The chosen value
+  method: string // Resolution strategy used
+  rationale: string // Human-readable explanation
+  resolvedBy: string // Curator identifier
+  resolvedDate: string // ISO 8601 date
 }
 ```
 
@@ -117,40 +119,40 @@ interface Resolution {
     "meta": {
       "type": "object",
       "properties": {
-        "schemaVersion": {"type": "string"},
-        "generatedDate": {"type": "string", "format": "date-time"},
-        "carrier": {"type": "string"},
-        "totalDataPoints": {"type": "integer"},
-        "totalSources": {"type": "integer"},
-        "conflictsResolved": {"type": "integer"}
+        "schemaVersion": { "type": "string" },
+        "generatedDate": { "type": "string", "format": "date-time" },
+        "carrier": { "type": "string" },
+        "totalDataPoints": { "type": "integer" },
+        "totalSources": { "type": "integer" },
+        "conflictsResolved": { "type": "integer" }
       }
     },
     "carrier": {
       "type": "object",
       "required": ["_id", "_sources", "name", "operatesIn", "products", "eligibility", "discounts"],
       "properties": {
-        "_id": {"type": "string", "pattern": "^carr_[a-z0-9]{10}$"},
-        "_sources": {"$ref": "#/definitions/sources"},
-        "name": {"type": "string"},
-        "operatesIn": {"$ref": "#/definitions/fieldWithMetadata"},
-        "products": {"$ref": "#/definitions/fieldWithMetadata"},
+        "_id": { "type": "string", "pattern": "^carr_[a-z0-9]{10}$" },
+        "_sources": { "$ref": "#/definitions/sources" },
+        "name": { "type": "string" },
+        "operatesIn": { "$ref": "#/definitions/fieldWithMetadata" },
+        "products": { "$ref": "#/definitions/fieldWithMetadata" },
         "eligibility": {
           "type": "object",
           "properties": {
-            "_id": {"type": "string"},
-            "_sources": {"$ref": "#/definitions/sources"},
-            "auto": {"$ref": "#/definitions/productEligibility"},
-            "home": {"$ref": "#/definitions/productEligibility"},
-            "renters": {"$ref": "#/definitions/productEligibility"},
-            "umbrella": {"$ref": "#/definitions/productEligibility"}
+            "_id": { "type": "string" },
+            "_sources": { "$ref": "#/definitions/sources" },
+            "auto": { "$ref": "#/definitions/productEligibility" },
+            "home": { "$ref": "#/definitions/productEligibility" },
+            "renters": { "$ref": "#/definitions/productEligibility" },
+            "umbrella": { "$ref": "#/definitions/productEligibility" }
           }
         },
         "discounts": {
           "type": "array",
-          "items": {"$ref": "#/definitions/discount"}
+          "items": { "$ref": "#/definitions/discount" }
         },
-        "compensation": {"$ref": "#/definitions/compensation"},
-        "averagePricing": {"$ref": "#/definitions/averagePricing"}
+        "compensation": { "$ref": "#/definitions/compensation" },
+        "averagePricing": { "$ref": "#/definitions/averagePricing" }
       }
     }
   },
@@ -162,16 +164,23 @@ interface Resolution {
         "type": "object",
         "required": ["uri", "accessedDate"],
         "properties": {
-          "uri": {"type": "string", "format": "uri"},
-          "pageId": {"type": "string", "pattern": "^page_[a-z0-9]{10}$", "description": "Optional in interface; Phase 2 MUST populate for raw data. Unique page ID (page_{cuid2})"},
-          "pageFile": {"type": "string", "description": "Optional in interface; Phase 2 MUST populate for raw data. Path relative to knowledge_pack/raw/ (e.g., '_pages/page_ckm9x7w8k0.html')"},
-          "elementRef": {"type": "string"},
-          "lineRef": {"type": "integer"},
-          "accessedDate": {"type": "string", "format": "date-time"},
-          "extractedValue": {"type": "string"},
-          "confidence": {"enum": ["high", "medium", "low"]},
-          "confidenceScore": {"type": "number", "minimum": 1.0, "maximum": 5.0},
-          "primary": {"type": "boolean"}
+          "uri": { "type": "string", "format": "uri" },
+          "pageId": {
+            "type": "string",
+            "pattern": "^page_[a-z0-9]{10}$",
+            "description": "Optional in interface; Phase 2 MUST populate for raw data. Unique page ID (page_{cuid2})"
+          },
+          "pageFile": {
+            "type": "string",
+            "description": "Optional in interface; Phase 2 MUST populate for raw data. Path relative to knowledge_pack/raw/ (e.g., '_pages/page_ckm9x7w8k0.html')"
+          },
+          "elementRef": { "type": "string" },
+          "lineRef": { "type": "integer" },
+          "accessedDate": { "type": "string", "format": "date-time" },
+          "extractedValue": { "type": "string" },
+          "confidence": { "enum": ["high", "medium", "low"] },
+          "confidenceScore": { "type": "number", "minimum": 1.0, "maximum": 5.0 },
+          "primary": { "type": "boolean" }
         }
       }
     },
@@ -179,37 +188,44 @@ interface Resolution {
       "type": "object",
       "required": ["_id", "value"],
       "properties": {
-        "_id": {"type": "string"},
+        "_id": { "type": "string" },
         "value": {},
-        "_sources": {"$ref": "#/definitions/sources"},
-        "_inheritedFrom": {"type": "string"},
-        "_resolution": {"$ref": "#/definitions/resolution"}
+        "_sources": { "$ref": "#/definitions/sources" },
+        "_inheritedFrom": { "type": "string" },
+        "_resolution": { "$ref": "#/definitions/resolution" }
       }
     },
     "resolution": {
       "type": "object",
-      "required": ["conflictId", "selectedValue", "method", "rationale", "resolvedBy", "resolvedDate"],
+      "required": [
+        "conflictId",
+        "selectedValue",
+        "method",
+        "rationale",
+        "resolvedBy",
+        "resolvedDate"
+      ],
       "properties": {
-        "conflictId": {"type": "string"},
+        "conflictId": { "type": "string" },
         "selectedValue": {},
-        "method": {"type": "string"},
-        "rationale": {"type": "string"},
-        "resolvedBy": {"type": "string"},
-        "resolvedDate": {"type": "string", "format": "date-time"}
+        "method": { "type": "string" },
+        "rationale": { "type": "string" },
+        "resolvedBy": { "type": "string" },
+        "resolvedDate": { "type": "string", "format": "date-time" }
       }
     },
     "productEligibility": {
       "type": "object",
       "properties": {
-        "_id": {"type": "string"},
-        "_sources": {"$ref": "#/definitions/sources"},
-        "minAge": {"$ref": "#/definitions/fieldWithMetadata"},
-        "maxAge": {"$ref": "#/definitions/fieldWithMetadata"},
-        "maxVehicles": {"$ref": "#/definitions/fieldWithMetadata"},
+        "_id": { "type": "string" },
+        "_sources": { "$ref": "#/definitions/sources" },
+        "minAge": { "$ref": "#/definitions/fieldWithMetadata" },
+        "maxAge": { "$ref": "#/definitions/fieldWithMetadata" },
+        "maxVehicles": { "$ref": "#/definitions/fieldWithMetadata" },
         "stateSpecific": {
           "type": "object",
           "patternProperties": {
-            "^[A-Z]{2}$": {"type": "object"}
+            "^[A-Z]{2}$": { "type": "object" }
           }
         }
       }
@@ -218,32 +234,32 @@ interface Resolution {
       "type": "object",
       "required": ["_id", "name", "percentage", "products", "states", "requirements"],
       "properties": {
-        "_id": {"type": "string", "pattern": "^disc_[a-z0-9]{10}$"},
-        "name": {"$ref": "#/definitions/fieldWithMetadata"},
-        "percentage": {"$ref": "#/definitions/fieldWithMetadata"},
-        "products": {"$ref": "#/definitions/fieldWithMetadata"},
-        "states": {"$ref": "#/definitions/fieldWithMetadata"},
-        "requirements": {"$ref": "#/definitions/fieldWithMetadata"},
-        "stackable": {"$ref": "#/definitions/fieldWithMetadata"},
-        "description": {"$ref": "#/definitions/fieldWithMetadata"}
+        "_id": { "type": "string", "pattern": "^disc_[a-z0-9]{10}$" },
+        "name": { "$ref": "#/definitions/fieldWithMetadata" },
+        "percentage": { "$ref": "#/definitions/fieldWithMetadata" },
+        "products": { "$ref": "#/definitions/fieldWithMetadata" },
+        "states": { "$ref": "#/definitions/fieldWithMetadata" },
+        "requirements": { "$ref": "#/definitions/fieldWithMetadata" },
+        "stackable": { "$ref": "#/definitions/fieldWithMetadata" },
+        "description": { "$ref": "#/definitions/fieldWithMetadata" }
       }
     },
     "compensation": {
       "type": "object",
       "properties": {
-        "_id": {"type": "string"},
-        "commissionRate": {"$ref": "#/definitions/fieldWithMetadata"},
-        "commissionType": {"$ref": "#/definitions/fieldWithMetadata"}
+        "_id": { "type": "string" },
+        "commissionRate": { "$ref": "#/definitions/fieldWithMetadata" },
+        "commissionType": { "$ref": "#/definitions/fieldWithMetadata" }
       }
     },
     "averagePricing": {
       "type": "object",
       "properties": {
-        "_id": {"type": "string"},
-        "auto": {"type": "object"},
-        "home": {"type": "object"},
-        "renters": {"type": "object"},
-        "umbrella": {"type": "object"}
+        "_id": { "type": "string" },
+        "auto": { "type": "object" },
+        "home": { "type": "object" },
+        "renters": { "type": "object" },
+        "umbrella": { "type": "object" }
       }
     }
   }
@@ -443,61 +459,61 @@ interface Resolution {
     "meta": {
       "type": "object",
       "properties": {
-        "schemaVersion": {"type": "string"},
-        "generatedDate": {"type": "string", "format": "date-time"},
-        "state": {"type": "string", "pattern": "^[A-Z]{2}$"}
+        "schemaVersion": { "type": "string" },
+        "generatedDate": { "type": "string", "format": "date-time" },
+        "state": { "type": "string", "pattern": "^[A-Z]{2}$" }
       }
     },
     "state": {
       "type": "object",
       "required": ["_id", "_sources", "code", "name", "minimumCoverages"],
       "properties": {
-        "_id": {"type": "string", "pattern": "^state_[a-z0-9]{10}$"},
-        "_sources": {"$ref": "#/definitions/sources"},
-        "code": {"type": "string", "pattern": "^[A-Z]{2}$"},
-        "name": {"type": "string"},
+        "_id": { "type": "string", "pattern": "^state_[a-z0-9]{10}$" },
+        "_sources": { "$ref": "#/definitions/sources" },
+        "code": { "type": "string", "pattern": "^[A-Z]{2}$" },
+        "name": { "type": "string" },
         "minimumCoverages": {
           "type": "object",
           "properties": {
-            "_id": {"type": "string"},
-            "auto": {"$ref": "#/definitions/autoMinimums"},
-            "home": {"$ref": "#/definitions/homeMinimums"},
-            "renters": {"$ref": "#/definitions/rentersMinimums"}
+            "_id": { "type": "string" },
+            "auto": { "$ref": "#/definitions/autoMinimums" },
+            "home": { "$ref": "#/definitions/homeMinimums" },
+            "renters": { "$ref": "#/definitions/rentersMinimums" }
           }
         },
-        "specialRequirements": {"$ref": "#/definitions/fieldWithMetadata"},
-        "averagePremiums": {"$ref": "#/definitions/fieldWithMetadata"}
+        "specialRequirements": { "$ref": "#/definitions/fieldWithMetadata" },
+        "averagePremiums": { "$ref": "#/definitions/fieldWithMetadata" }
       }
     }
   },
   "definitions": {
-    "sources": {"$ref": "carrier-schema.json#/definitions/sources"},
-    "fieldWithMetadata": {"$ref": "carrier-schema.json#/definitions/fieldWithMetadata"},
+    "sources": { "$ref": "carrier-schema.json#/definitions/sources" },
+    "fieldWithMetadata": { "$ref": "carrier-schema.json#/definitions/fieldWithMetadata" },
     "autoMinimums": {
       "type": "object",
       "properties": {
-        "_id": {"type": "string"},
-        "bodilyInjuryPerPerson": {"$ref": "#/definitions/fieldWithMetadata"},
-        "bodilyInjuryPerAccident": {"$ref": "#/definitions/fieldWithMetadata"},
-        "propertyDamage": {"$ref": "#/definitions/fieldWithMetadata"},
-        "uninsuredMotorist": {"$ref": "#/definitions/fieldWithMetadata"},
-        "personalInjuryProtection": {"$ref": "#/definitions/fieldWithMetadata"}
+        "_id": { "type": "string" },
+        "bodilyInjuryPerPerson": { "$ref": "#/definitions/fieldWithMetadata" },
+        "bodilyInjuryPerAccident": { "$ref": "#/definitions/fieldWithMetadata" },
+        "propertyDamage": { "$ref": "#/definitions/fieldWithMetadata" },
+        "uninsuredMotorist": { "$ref": "#/definitions/fieldWithMetadata" },
+        "personalInjuryProtection": { "$ref": "#/definitions/fieldWithMetadata" }
       }
     },
     "homeMinimums": {
       "type": "object",
       "properties": {
-        "_id": {"type": "string"},
-        "dwellingCoverage": {"$ref": "#/definitions/fieldWithMetadata"},
-        "liabilityCoverage": {"$ref": "#/definitions/fieldWithMetadata"}
+        "_id": { "type": "string" },
+        "dwellingCoverage": { "$ref": "#/definitions/fieldWithMetadata" },
+        "liabilityCoverage": { "$ref": "#/definitions/fieldWithMetadata" }
       }
     },
     "rentersMinimums": {
       "type": "object",
       "properties": {
-        "_id": {"type": "string"},
-        "personalProperty": {"$ref": "#/definitions/fieldWithMetadata"},
-        "liabilityCoverage": {"$ref": "#/definitions/fieldWithMetadata"}
+        "_id": { "type": "string" },
+        "personalProperty": { "$ref": "#/definitions/fieldWithMetadata" },
+        "liabilityCoverage": { "$ref": "#/definitions/fieldWithMetadata" }
       }
     }
   }
@@ -631,22 +647,36 @@ Captures data during initial scraping phase, before conflict resolution.
       "type": "object",
       "required": ["uri", "accessedDate"],
       "properties": {
-        "uri": {"type": "string", "format": "uri", "description": "Source URL"},
-        "pageId": {"type": "string", "pattern": "^page_[a-z0-9]{10}$", "description": "Optional in interface; Phase 2 MUST populate for raw data. Unique page ID (page_{cuid2})"},
-        "pageFile": {"type": "string", "description": "Optional in interface; Phase 2 MUST populate for raw data. Path relative to knowledge_pack/raw/ (e.g., '_pages/page_ckm9x7w8k0.html')"},
-        "elementRef": {"type": "string", "description": "CSS selector or XPath to element"},
-        "extractedValue": {"type": "string", "description": "Exact text extracted from element"},
-        "accessedDate": {"type": "string", "format": "date-time", "description": "ISO 8601 with timezone (YYYY-MM-DDTHH:mm:ssZ)"},
-        "extractionMethod": {"enum": ["manual", "automated", "api"]},
-        "confidence": {"enum": ["high", "medium", "low"], "description": "See sot-source-hierarchy.md#confidence-scoring-formula for scoring details"}
+        "uri": { "type": "string", "format": "uri", "description": "Source URL" },
+        "pageId": {
+          "type": "string",
+          "pattern": "^page_[a-z0-9]{10}$",
+          "description": "Optional in interface; Phase 2 MUST populate for raw data. Unique page ID (page_{cuid2})"
+        },
+        "pageFile": {
+          "type": "string",
+          "description": "Optional in interface; Phase 2 MUST populate for raw data. Path relative to knowledge_pack/raw/ (e.g., '_pages/page_ckm9x7w8k0.html')"
+        },
+        "elementRef": { "type": "string", "description": "CSS selector or XPath to element" },
+        "extractedValue": { "type": "string", "description": "Exact text extracted from element" },
+        "accessedDate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 with timezone (YYYY-MM-DDTHH:mm:ssZ)"
+        },
+        "extractionMethod": { "enum": ["manual", "automated", "api"] },
+        "confidence": {
+          "enum": ["high", "medium", "low"],
+          "description": "See sot-source-hierarchy.md#confidence-scoring-formula for scoring details"
+        }
       }
     },
     "context": {
       "type": "object",
       "properties": {
-        "surroundingText": {"type": "string"},
-        "pageTitle": {"type": "string"},
-        "qualifier": {"type": "string", "description": "'up to', 'average', 'typical', etc."}
+        "surroundingText": { "type": "string" },
+        "pageTitle": { "type": "string" },
+        "qualifier": { "type": "string", "description": "'up to', 'average', 'typical', etc." }
       }
     }
   }
@@ -673,9 +703,9 @@ Captures data during initial scraping phase, before conflict resolution.
     "meta": {
       "type": "object",
       "properties": {
-        "totalConflicts": {"type": "integer"},
-        "pendingConflicts": {"type": "integer"},
-        "resolvedConflicts": {"type": "integer"}
+        "totalConflicts": { "type": "integer" },
+        "pendingConflicts": { "type": "integer" },
+        "resolvedConflicts": { "type": "integer" }
       }
     },
     "conflicts": {
@@ -684,9 +714,9 @@ Captures data during initial scraping phase, before conflict resolution.
         "type": "object",
         "required": ["id", "dataPoint", "conflictType", "severity", "sources", "status"],
         "properties": {
-          "id": {"type": "string", "pattern": "^conf_[a-z0-9]{10}$"},
-          "dataPoint": {"type": "string"},
-          "detectedDate": {"type": "string", "format": "date-time"},
+          "id": { "type": "string", "pattern": "^conf_[a-z0-9]{10}$" },
+          "dataPoint": { "type": "string" },
+          "detectedDate": { "type": "string", "format": "date-time" },
           "conflictType": {
             "enum": [
               "range_vs_specific",
@@ -697,37 +727,34 @@ Captures data during initial scraping phase, before conflict resolution.
               "date_mismatch"
             ]
           },
-          "severity": {"enum": ["critical", "high", "medium", "low"]},
+          "severity": { "enum": ["critical", "high", "medium", "low"] },
           "sources": {
             "type": "array",
             "minItems": 2,
             "items": {
               "type": "object",
               "properties": {
-                "id": {"type": "string"},
-                "uri": {"type": "string"},
+                "id": { "type": "string" },
+                "uri": { "type": "string" },
                 "value": {},
-                "confidence": {"enum": ["high", "medium", "low"]},
-                "sourceAuthority": {"type": "integer", "minimum": 1, "maximum": 5}
+                "confidence": { "enum": ["high", "medium", "low"] },
+                "sourceAuthority": { "type": "integer", "minimum": 1, "maximum": 5 }
               }
             }
           },
           "analysis": {
             "type": "object",
             "properties": {
-              "percentageDifference": {"type": "number"},
-              "affectsRouting": {"type": "boolean"},
-              "affectsCompliance": {"type": "boolean"},
-              "recommendedAction": {"type": "string"}
+              "percentageDifference": { "type": "number" },
+              "affectsRouting": { "type": "boolean" },
+              "affectsCompliance": { "type": "boolean" },
+              "recommendedAction": { "type": "string" }
             }
           },
           "resolution": {
-            "oneOf": [
-              {"type": "null"},
-              {"$ref": "carrier-schema.json#/definitions/resolution"}
-            ]
+            "oneOf": [{ "type": "null" }, { "$ref": "carrier-schema.json#/definitions/resolution" }]
           },
-          "status": {"enum": ["pending", "resolved", "escalated"]}
+          "status": { "enum": ["pending", "resolved", "escalated"] }
         }
       }
     }
@@ -740,37 +767,38 @@ Captures data during initial scraping phase, before conflict resolution.
 ## 5. Search Tracker Schema
 
 ### Purpose
+
 Track Phase 2 data gathering progress across distributed agent workflows.
 
 ### JSON Schema
 
 ```typescript
 interface SearchTracker {
-  searches: SearchEntry[];
-  status: StatusCounts;
-  categories: string[];
+  searches: SearchEntry[]
+  status: StatusCounts
+  categories: string[]
 }
 
 interface SearchEntry {
-  id: string;                 // cuid2 with "search_" prefix
-  query: string;              // Search query string
-  category: string;           // Category: "carriers", "states", "discounts", etc.
-  carrier?: string;           // Optional: specific carrier (e.g., "GEICO", "Progressive")
-  priority: "high" | "medium" | "low";
-  status: "pending" | "in_progress" | "completed" | "failed";
-  assignedTo?: string;        // Agent ID (cuid2 with "agnt_" prefix)
-  startedAt?: string;         // ISO 8601 timestamp
-  completedAt?: string;       // ISO 8601 timestamp
-  pagesCollected?: number;    // Count of pages saved
-  notes?: string;             // Optional notes or error messages
+  id: string // cuid2 with "search_" prefix
+  query: string // Search query string
+  category: string // Category: "carriers", "states", "discounts", etc.
+  carrier?: string // Optional: specific carrier (e.g., "GEICO", "Progressive")
+  priority: 'high' | 'medium' | 'low'
+  status: 'pending' | 'in_progress' | 'completed' | 'failed'
+  assignedTo?: string // Agent ID (cuid2 with "agnt_" prefix)
+  startedAt?: string // ISO 8601 timestamp
+  completedAt?: string // ISO 8601 timestamp
+  pagesCollected?: number // Count of pages saved
+  notes?: string // Optional notes or error messages
 }
 
 interface StatusCounts {
-  total: number;
-  pending: number;
-  in_progress: number;
-  completed: number;
-  failed: number;
+  total: number
+  pending: number
+  in_progress: number
+  completed: number
+  failed: number
 }
 ```
 
@@ -826,6 +854,7 @@ interface StatusCounts {
 ## 5.1. URL Tracker Schema
 
 ### Purpose
+
 Track URLs discovered during Phase 2 searches, with deduplication support and multi-search provenance tracking.
 
 ### JSON Schema
@@ -833,49 +862,49 @@ Track URLs discovered during Phase 2 searches, with deduplication support and mu
 ```typescript
 interface URLTracker {
   meta: {
-    version: string;
-    schemaVersion: string;
-    createdDate: string;
-    lastUpdated: string;
-    totalUrls: number;
-    description: string;
-  };
+    version: string
+    schemaVersion: string
+    createdDate: string
+    lastUpdated: string
+    totalUrls: number
+    description: string
+  }
   statusCounts: {
-    pending: number;
-    claimed: number;
-    completed: number;
-    failed: number;
-  };
-  urls: URLEntry[];
+    pending: number
+    claimed: number
+    completed: number
+    failed: number
+  }
+  urls: URLEntry[]
 }
 
 interface URLEntry {
-  id: string;                    // cuid2 with "url_" prefix
-  search_ids: string[];          // Array of search IDs that discovered this URL
-  websearch_ids: string[];       // Array of websearch IDs that discovered this URL
-  url: string;                   // Full URL
-  urlHash: string;               // SHA256 hash (first 16 chars) for deduplication
-  priority?: number;             // Optional priority for fetch ordering
+  id: string // cuid2 with "url_" prefix
+  search_ids: string[] // Array of search IDs that discovered this URL
+  websearch_ids: string[] // Array of websearch IDs that discovered this URL
+  url: string // Full URL
+  urlHash: string // SHA256 hash (first 16 chars) for deduplication
+  priority?: number // Optional priority for fetch ordering
 
   // Brave API enrichment fields (from websearch response)
-  title: string;                 // Page title from Brave API
-  description: string;           // Page description from Brave API
-  page_age: string;              // Page age (e.g., "2023-08-15T00:00:00")
-  language: string;              // Language code (e.g., "en")
-  type: string;                  // Result type (e.g., "search_result")
-  subtype: string;               // Result subtype (e.g., "generic")
-  hostname: string;              // Domain hostname (e.g., "www.geico.com")
-  source_name: string;           // Source name from profile (e.g., "GEICO")
+  title: string // Page title from Brave API
+  description: string // Page description from Brave API
+  page_age: string // Page age (e.g., "2023-08-15T00:00:00")
+  language: string // Language code (e.g., "en")
+  type: string // Result type (e.g., "search_result")
+  subtype: string // Result subtype (e.g., "generic")
+  hostname: string // Domain hostname (e.g., "www.geico.com")
+  source_name: string // Source name from profile (e.g., "GEICO")
 
   // Fetch status and results
-  status: "pending" | "completed" | "failed";
-  assignedTo?: string;           // Deprecated (no longer used)
-  pageId?: string;               // Generated page ID after fetch (page_{cuid2})
-  htmlFile?: string;             // Path to HTML file (relative to knowledge_pack/)
-  markdownFile?: string;         // Path to markdown file (relative to knowledge_pack/)
-  fetchedAt?: string;            // ISO 8601 timestamp
-  fetchError?: string;           // Error details if failed
-  retryCount: number;            // Number of fetch retries (defaults to 0)
+  status: 'pending' | 'completed' | 'failed'
+  assignedTo?: string // Deprecated (no longer used)
+  pageId?: string // Generated page ID after fetch (page_{cuid2})
+  htmlFile?: string // Path to HTML file (relative to knowledge_pack/)
+  markdownFile?: string // Path to markdown file (relative to knowledge_pack/)
+  fetchedAt?: string // ISO 8601 timestamp
+  fetchError?: string // Error details if failed
+  retryCount: number // Number of fetch retries (defaults to 0)
 }
 ```
 
@@ -964,6 +993,7 @@ interface URLEntry {
 ## 5.2. Page Tracker Schema
 
 ### Purpose
+
 Track pages fetched via crawl4ai, ready for data extraction.
 
 ### JSON Schema
@@ -971,32 +1001,32 @@ Track pages fetched via crawl4ai, ready for data extraction.
 ```typescript
 interface PageTracker {
   meta: {
-    version: string;
-    schemaVersion: string;
-    createdDate: string;
-    lastUpdated: string;
-    totalPages: number;
-    description: string;
-  };
+    version: string
+    schemaVersion: string
+    createdDate: string
+    lastUpdated: string
+    totalPages: number
+    description: string
+  }
   statusCounts: {
-    pending: number;
-    claimed: number;
-    completed: number;
-    failed: number;
-  };
-  pages: PageEntry[];
+    pending: number
+    claimed: number
+    completed: number
+    failed: number
+  }
+  pages: PageEntry[]
 }
 
 interface PageEntry {
-  id: string;                    // cuid2 with "page_" prefix
-  url_id: string;                // References URL tracker entry
-  status: "pending" | "claimed" | "completed" | "failed";
-  assignedTo?: string;           // Agent ID (cuid2 with "agnt_" prefix)
-  claimedAt?: string;            // ISO 8601 timestamp
-  completedAt?: string;          // ISO 8601 timestamp
-  dataPointsExtracted?: number;  // Count of raw data points extracted
-  rawDataFile?: string;          // Path to raw.json file (relative to knowledge_pack/)
-  errorMessage?: string;         // Error details if failed
+  id: string // cuid2 with "page_" prefix
+  url_id: string // References URL tracker entry
+  status: 'pending' | 'claimed' | 'completed' | 'failed'
+  assignedTo?: string // Agent ID (cuid2 with "agnt_" prefix)
+  claimedAt?: string // ISO 8601 timestamp
+  completedAt?: string // ISO 8601 timestamp
+  dataPointsExtracted?: number // Count of raw data points extracted
+  rawDataFile?: string // Path to raw.json file (relative to knowledge_pack/)
+  errorMessage?: string // Error details if failed
 }
 ```
 
@@ -1050,94 +1080,96 @@ interface PageEntry {
 ## 5.3. Websearch Schema
 
 ### Purpose
+
 Store complete Brave API request/response for each search execution. Provides audit trail and enables reprocessing of search results without re-executing API calls.
 
 ### JSON Schema
 
 ```typescript
 interface WebsearchRecord {
-  websearch_id: string;           // cuid2 with "websearch_" prefix
-  search_id: string;              // References search tracker entry (search_{cuid2})
-  timestamp: string;              // ISO 8601 timestamp
-  startedAt: string;              // ISO 8601 timestamp
-  completedAt: string;            // ISO 8601 timestamp
-  durationSeconds: number;        // Execution duration
-  urlsDiscoveredCount: number;    // Total URLs found in response
-  errorMessage?: string;          // Error details if failed
+  websearch_id: string // cuid2 with "websearch_" prefix
+  search_id: string // References search tracker entry (search_{cuid2})
+  timestamp: string // ISO 8601 timestamp
+  startedAt: string // ISO 8601 timestamp
+  completedAt: string // ISO 8601 timestamp
+  durationSeconds: number // Execution duration
+  urlsDiscoveredCount: number // Total URLs found in response
+  errorMessage?: string // Error details if failed
   request: {
-    endpoint: string;             // Brave API endpoint URL
-    query: string;                // Search query string
+    endpoint: string // Brave API endpoint URL
+    query: string // Search query string
     params: {
-      safesearch: string;         // "strict" | "moderate" | "off"
-      freshness: string;          // "py" (past year) | "pm" (past month) | etc.
-      text_decorations: boolean;
-      result_filter: string;      // "web,query"
-      extra_snippets: boolean;
-      summary: boolean;
-      count: number;              // Results per page
-      offset: number;             // Pagination offset
-    };
-  };
-  response: {                     // Complete Brave API response
-    type: string;                 // "search"
+      safesearch: string // "strict" | "moderate" | "off"
+      freshness: string // "py" (past year) | "pm" (past month) | etc.
+      text_decorations: boolean
+      result_filter: string // "web,query"
+      extra_snippets: boolean
+      summary: boolean
+      count: number // Results per page
+      offset: number // Pagination offset
+    }
+  }
+  response: {
+    // Complete Brave API response
+    type: string // "search"
     query: {
-      original: string;
-      show_strict_warning: boolean;
-      is_navigational: boolean;
-      is_news_breaking: boolean;
-      spellcheck_off: boolean;
-      country: string;
-      bad_results: boolean;
-      should_fallback: boolean;
-      postal_code: string;
-      city: string;
-      header_country: string;
-      more_results_available: boolean;
-      state: string;
-    };
+      original: string
+      show_strict_warning: boolean
+      is_navigational: boolean
+      is_news_breaking: boolean
+      spellcheck_off: boolean
+      country: string
+      bad_results: boolean
+      should_fallback: boolean
+      postal_code: string
+      city: string
+      header_country: string
+      more_results_available: boolean
+      state: string
+    }
     mixed: {
-      type: string;
-      main: Array<{type: string; index: number; all: boolean}>;
-      top: any[];
-      side: any[];
-    };
+      type: string
+      main: Array<{ type: string; index: number; all: boolean }>
+      top: any[]
+      side: any[]
+    }
     web: {
-      type: string;
+      type: string
       results: Array<{
-        title: string;
-        url: string;
-        is_source_local: boolean;
-        is_source_both: boolean;
-        description: string;
-        page_age: string;
-        page_fetched: string;
+        title: string
+        url: string
+        is_source_local: boolean
+        is_source_both: boolean
+        description: string
+        page_age: string
+        page_fetched: string
         profile: {
-          name: string;
-          long_name: string;
-          url: string;
-          img: string;
-        };
-        language: string;
-        family_friendly: boolean;
-        type: string;
-        subtype: string;
+          name: string
+          long_name: string
+          url: string
+          img: string
+        }
+        language: string
+        family_friendly: boolean
+        type: string
+        subtype: string
         meta_url: {
-          scheme: string;
-          netloc: string;
-          hostname: string;
-          favicon: string;
-          path: string;
-        };
+          scheme: string
+          netloc: string
+          hostname: string
+          favicon: string
+          path: string
+        }
         thumbnail: {
-          src: string;
-          original: string;
-          logo: boolean;
-        };
-        age: string;
-      }>;
-      family_friendly: boolean;
-    };
-  };
+          src: string
+          original: string
+          logo: boolean
+        }
+        age: string
+      }>
+      family_friendly: boolean
+    }
+  }
 }
 ```
 
@@ -1186,7 +1218,7 @@ interface WebsearchRecord {
     },
     "mixed": {
       "type": "mixed",
-      "main": [{"type": "web", "index": 0, "all": true}],
+      "main": [{ "type": "web", "index": 0, "all": true }],
       "top": [],
       "side": []
     },
@@ -1251,10 +1283,10 @@ All entity IDs use **cuid2** format with type prefixes. See [sot-id-conventions.
 ### ID Generation
 
 ```typescript
-import { createId } from '@paralleldrive/cuid2';
+import { createId } from '@paralleldrive/cuid2'
 
-const fieldId = `fld_${createId()}`;  // "fld_ckm9x7whp2"
-const carrierId = `carr_${createId()}`;  // "carr_ckm9x7w8k0"
+const fieldId = `fld_${createId()}` // "fld_ckm9x7whp2"
+const carrierId = `carr_${createId()}` // "carr_ckm9x7w8k0"
 ```
 
 ---
@@ -1272,6 +1304,7 @@ All date and timestamp values in the knowledge pack follow strict ISO 8601 stand
 **Format**: `YYYY-MM-DDTHH:mm:ssZ`
 
 **Pattern Description**:
+
 - `YYYY`: 4-digit year (e.g., `2025`)
 - `MM`: 2-digit month (01-12)
 - `DD`: 2-digit day (01-31)
@@ -1282,6 +1315,7 @@ All date and timestamp values in the knowledge pack follow strict ISO 8601 stand
 - `Z`: UTC timezone indicator (literal character)
 
 **Examples**:
+
 ```
 2025-11-05T12:00:00Z    (noon UTC on Nov 5, 2025)
 2025-11-05T15:30:45Z    (3:30:45 PM UTC)
@@ -1289,6 +1323,7 @@ All date and timestamp values in the knowledge pack follow strict ISO 8601 stand
 ```
 
 **Fields Using Timestamp Format**:
+
 - `source.accessedDate` - When data was accessed from source
 - `meta.generatedDate` - When file was generated
 - `resolution.resolvedDate` - When conflict was resolved
@@ -1301,11 +1336,13 @@ All date and timestamp values in the knowledge pack follow strict ISO 8601 stand
 **Format**: `YYYY-MM-DD`
 
 **Pattern Description**:
+
 - `YYYY`: 4-digit year
 - `MM`: 2-digit month (01-12)
 - `DD`: 2-digit day (01-31)
 
 **Examples**:
+
 ```
 2025-11-05    (November 5, 2025)
 2025-01-01    (January 1, 2025)
@@ -1313,6 +1350,7 @@ All date and timestamp values in the knowledge pack follow strict ISO 8601 stand
 ```
 
 **Fields Using Date-Only Format**:
+
 - Document header dates (e.g., `**Date**: 2025-11-05`)
 - Reference dates in documentation
 - Simple date metadata
@@ -1338,6 +1376,7 @@ All date and timestamp values in the knowledge pack follow strict ISO 8601 stand
 ### Examples in Context
 
 **Timestamp in Source Object** (from carrier schema):
+
 ```json
 {
   "uri": "https://www.geico.com/auto/discounts/",
@@ -1348,6 +1387,7 @@ All date and timestamp values in the knowledge pack follow strict ISO 8601 stand
 ```
 
 **Timestamp in Resolution Object** (from conflict resolution):
+
 ```json
 {
   "conflictId": "conf_ckm9x7x5ea",
@@ -1360,6 +1400,7 @@ All date and timestamp values in the knowledge pack follow strict ISO 8601 stand
 ```
 
 **Date in Document Header**:
+
 ```markdown
 **Date**: 2025-11-05
 **Last Updated**: 2025-11-05
@@ -1379,16 +1420,19 @@ Before committing knowledge pack files:
 ### Tools for Validation
 
 **Find inconsistent timestamps** (missing Z suffix):
+
 ```bash
 rg '[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}' docs/knowledge-pack/*.md | rg -v 'Z"'
 ```
 
 **Verify all timestamps include seconds**:
+
 ```bash
 rg '[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}' docs/knowledge-pack/*.md | rg -v ':[0-9]{2}Z'
 ```
 
 **Check for ISO 8601 documentation**:
+
 ```bash
 rg -n "ISO 8601" docs/knowledge-pack/*.md
 ```
@@ -1400,6 +1444,7 @@ rg -n "ISO 8601" docs/knowledge-pack/*.md
 ### When to Inherit
 
 Inherit parent source when:
+
 1. Child field has **no conflicting information** from direct sources
 2. Child field is **implied by parent** (e.g., discount states = carrier states)
 3. **No specific citation found** during scraping
@@ -1410,8 +1455,8 @@ Inherit parent source when:
 {
   "_id": "fld_cm3m7n9w1b",
   "value": ["CA", "TX", "FL", "NY", "IL"],
-  "_sources": [],                    // Empty array
-  "_inheritedFrom": "fld_cm6f0g2p4u",     // Parent field ID
+  "_sources": [], // Empty array
+  "_inheritedFrom": "fld_cm6f0g2p4u", // Parent field ID
   "_note": "Inherits from carrier operating states"
 }
 ```
@@ -1454,11 +1499,11 @@ Can inherit from grandparent if parent also inherits:
 
 ### Required Validations
 
-1. **Every _id is unique** across entire knowledge pack
-2. **Every field has _sources OR _inheritedFrom** (never both empty)
-3. **_inheritedFrom references valid _id** in parent/ancestor
+1. **Every \_id is unique** across entire knowledge pack
+2. **Every field has \_sources OR \_inheritedFrom** (never both empty)
+3. **\_inheritedFrom references valid \_id** in parent/ancestor
 4. **Source URIs are valid** (proper format, accessible)
-5. **Conflict IDs in _resolution exist** in conflicts.json
+5. **Conflict IDs in \_resolution exist** in conflicts.json
 6. **Primary source exists** for multi-source fields (at least one primary=true)
 7. **Metadata envelopes consistent** (all required fields present)
 
@@ -1485,6 +1530,7 @@ Use these schemas to validate all knowledge pack files before deployment.
 ---
 
 **See Also:**
+
 - 📖 [ID Conventions](sot-id-conventions.md) - Complete cuid2 ID specification and usage
 - 🔗 [Source Authority Levels](sot-source-hierarchy.md#source-authority-levels) - Understanding confidence scores
 - 📊 [Complete Examples](knowledge-pack-examples.md) - See schemas in real data transformations

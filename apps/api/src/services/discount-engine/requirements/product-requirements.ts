@@ -19,8 +19,7 @@ function getAllProducts(
   customerData?: UserProfile
 ): Array<'auto' | 'home' | 'renters' | 'umbrella'> {
   const policyProducts = policy.productType ? [policy.productType] : []
-  const existingProducts =
-    customerData?.existingPolicies?.map((p) => p.product) || []
+  const existingProducts = customerData?.existingPolicies?.map((p) => p.product) || []
   return [...policyProducts, ...existingProducts]
 }
 
@@ -47,9 +46,7 @@ export function checkMustHaveProducts(
   )
 
   if (!hasAllProducts) {
-    return [
-      `Missing required products: ${requirements.mustHaveProducts.join(', ')}`,
-    ]
+    return [`Missing required products: ${requirements.mustHaveProducts.join(', ')}`]
   }
 
   return []
@@ -76,9 +73,7 @@ export function checkMinProducts(
   const totalProducts = allProducts.length
 
   if (totalProducts < requirements.minProducts) {
-    return [
-      `Need at least ${requirements.minProducts} products (currently have ${totalProducts})`,
-    ]
+    return [`Need at least ${requirements.minProducts} products (currently have ${totalProducts})`]
   }
 
   return []
@@ -102,4 +97,3 @@ export function checkProductRequirements(
   missing.push(...checkMinProducts(requirements, policy, customerData))
   return missing
 }
-

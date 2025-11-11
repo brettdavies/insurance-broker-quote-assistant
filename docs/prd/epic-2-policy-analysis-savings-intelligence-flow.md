@@ -3,6 +3,7 @@
 **Epic Goal:** Enable brokers to upload or manually enter existing policy data, review and edit extracted information, analyze coverage/limits/premiums against the knowledge pack, and generate data-driven savings recommendations. By the end of this epic, a broker can upload a PDF declarations page or type policy details, review the extracted data in an editable text format, make corrections as needed, then receive intelligent analysis identifying bundle opportunities and discount eligibility, and download/copy a savings pitch for client discussion. This epic delivers the second major value stream.
 
 **Workflow:**
+
 1. Broker uploads PDF or enters policy data manually
 2. Backend extracts raw text from PDF (if uploaded)
 3. Backend extracts PolicySummary (structured data) from text using LLM
@@ -15,6 +16,7 @@
 ## Implementation Notes
 
 **Architectural Patterns from Epic 1:**
+
 - API endpoints use flat structure (e.g., `/api/intake`, `/api/generate-prefill`) rather than nested paths for Hono RPC client compatibility
 - LLM provider uses Gemini 2.5 Flash-Lite (via `GeminiProvider`) rather than OpenAI GPT-4o-mini
 - Endpoints are created via factory functions (e.g., `createIntakeRoute()`) and mounted at root level

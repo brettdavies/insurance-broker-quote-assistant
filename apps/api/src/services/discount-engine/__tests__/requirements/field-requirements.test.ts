@@ -4,8 +4,8 @@
 
 import { describe, expect, it } from 'bun:test'
 import type { UserProfile } from '@repo/shared'
-import type { DiscountRequirements } from '../../types'
 import { checkFieldRequirements } from '../../requirements/field-requirements'
+import type { DiscountRequirements } from '../../types'
 
 describe('checkFieldRequirements', () => {
   const createCustomerData = (overrides?: Partial<UserProfile>): UserProfile => ({
@@ -274,4 +274,3 @@ describe('checkFieldRequirements', () => {
     })
   })
 })
-

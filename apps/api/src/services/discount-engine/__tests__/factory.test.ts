@@ -4,14 +4,14 @@
 
 import { describe, expect, it } from 'bun:test'
 import type { Discount } from '@repo/shared'
-import { getDiscountEvaluator } from '../factory'
 import { BundleDiscountEvaluator } from '../evaluators/bundle-evaluator'
 import { SingleProductDiscountEvaluator } from '../evaluators/single-product-evaluator'
+import { getDiscountEvaluator } from '../factory'
 
 describe('getDiscountEvaluator', () => {
   const createTestDiscount = (
     bundleProducts?: string[],
-    discountType?: Discount['metadata']['discountType']
+    discountType?: 'bundle' | 'driver' | 'lifestyle' | 'loyalty' | 'other'
   ): Discount => ({
     _id: 'disc_test',
     name: { _id: 'fld_name', value: 'Test Discount', _sources: [] },
@@ -27,7 +27,7 @@ describe('getDiscountEvaluator', () => {
       _sources: [],
     },
     metadata: discountType
-      ? { discountType, evaluationPriority: 'medium' }
+      ? ({ discountType, evaluationPriority: 'medium' } as Discount['metadata'])
       : undefined,
   })
 
@@ -106,4 +106,3 @@ describe('getDiscountEvaluator', () => {
     })
   })
 })
-

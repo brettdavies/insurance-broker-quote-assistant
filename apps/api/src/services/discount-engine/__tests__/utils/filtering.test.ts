@@ -7,10 +7,7 @@ import type { Discount } from '@repo/shared'
 import { filterByProductAndState, filterByType } from '../../utils/filtering'
 
 describe('filterByProductAndState', () => {
-  const createTestDiscount = (
-    products: string[],
-    states: string[]
-  ): Discount => ({
+  const createTestDiscount = (products: string[], states: string[]): Discount => ({
     _id: 'disc_test',
     name: { _id: 'fld_name', value: 'Test Discount', _sources: [] },
     percentage: { _id: 'fld_pct', value: 10, _sources: [] },
@@ -32,14 +29,11 @@ describe('filterByProductAndState', () => {
 
     const filtered = filterByProductAndState(discounts, 'CA', 'auto')
     expect(filtered).toHaveLength(1)
-    expect(filtered[0]._id).toBe('disc_test')
+    expect(filtered[0]?._id).toBe('disc_test')
   })
 
   it('should return empty array when no matches', () => {
-    const discounts = [
-      createTestDiscount(['auto'], ['TX']),
-      createTestDiscount(['home'], ['CA']),
-    ]
+    const discounts = [createTestDiscount(['auto'], ['TX']), createTestDiscount(['home'], ['CA'])]
 
     const filtered = filterByProductAndState(discounts, 'CA', 'auto')
     expect(filtered).toHaveLength(0)
@@ -107,10 +101,7 @@ describe('filterByType', () => {
   })
 
   it('should return empty array when no matches', () => {
-    const discounts = [
-      createTestDiscount('driver'),
-      createTestDiscount('lifestyle'),
-    ]
+    const discounts = [createTestDiscount('driver'), createTestDiscount('lifestyle')]
 
     const filtered = filterByType(discounts, 'bundle')
     expect(filtered).toHaveLength(0)
@@ -131,10 +122,9 @@ describe('filterByType', () => {
     const types = ['bundle', 'driver', 'lifestyle', 'loyalty', 'other'] as const
     const discounts = types.map((type) => createTestDiscount(type))
 
-    types.forEach((type) => {
+    for (const type of types) {
       const filtered = filterByType(discounts, type)
       expect(filtered).toHaveLength(1)
-    })
+    }
   })
 })
-

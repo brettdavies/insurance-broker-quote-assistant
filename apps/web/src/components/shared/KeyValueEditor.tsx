@@ -112,12 +112,14 @@ function EditorRefPlugin({
             }
           })
         },
-      } as NonNullable<React.MutableRefObject<{
-        focus: () => void
-        clear: () => void
-        insertText: (text: string) => void
-        setContent: (text: string) => void
-      } | null>['current']>
+      } as NonNullable<
+        React.MutableRefObject<{
+          focus: () => void
+          clear: () => void
+          insertText: (text: string) => void
+          setContent: (text: string) => void
+        } | null>['current']
+      >
     }
   }, [editor, editorRef])
 

@@ -12,7 +12,7 @@ In addition to supporting JSON Schema in the REST API, the Google GenAI SDKs for
 
 Recipe ExtractorContent ModerationRecursive Structures
 
-This example demonstrates how to extract structured data from text using basic JSON Schema types like`object`,`array`,`string`, and`integer`.  
+This example demonstrates how to extract structured data from text using basic JSON Schema types like`object`,`array`,`string`, and`integer`.
 
 ### Python
 
@@ -233,7 +233,7 @@ This example demonstrates how to extract structured data from text using basic J
           }
         }'
 
-**Example Response:**  
+**Example Response:**
 
     {
       "recipe_name": "Delicious Chocolate Chip Cookies",
@@ -290,7 +290,7 @@ This example demonstrates how to extract structured data from text using basic J
 
 You can stream structured outputs, which allows you to start processing the response as it's being generated, without having to wait for the entire output to be complete. This can improve the perceived performance of your application.
 
-The streamed chunks will be valid partial JSON strings, which can be concatenated to form the final, complete JSON object.  
+The streamed chunks will be valid partial JSON strings, which can be concatenated to form the final, complete JSON object.
 
 ### Python
 
@@ -397,22 +397,22 @@ These descriptive properties help guide the model:
 
 The following models support structured output:
 
-|         Model         | Structured Outputs |
-|-----------------------|--------------------|
+| Model                 | Structured Outputs |
+| --------------------- | ------------------ |
 | Gemini 2.5 Pro        | ✔️                 |
 | Gemini 2.5 Flash      | ✔️                 |
 | Gemini 2.5 Flash-Lite | ✔️                 |
 | Gemini 2.0 Flash      | ✔️\*               |
 | Gemini 2.0 Flash-Lite | ✔️\*               |
 
-*\* Note that Gemini 2.0 requires an explicit`propertyOrdering`list within the JSON input to define the preferred structure. You can find an example in this[cookbook](https://github.com/google-gemini/cookbook/blob/main/examples/Pdf_structured_outputs_on_invoices_and_forms.ipynbs).*
+_\* Note that Gemini 2.0 requires an explicit`propertyOrdering`list within the JSON input to define the preferred structure. You can find an example in this[cookbook](https://github.com/google-gemini/cookbook/blob/main/examples/Pdf_structured_outputs_on_invoices_and_forms.ipynbs)._
 
 ## Structured outputs vs. function calling
 
 Both structured outputs and function calling use JSON schemas, but they serve different purposes:
 
-|        Feature         |                                                                                  Primary Use Case                                                                                  |
-|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Feature                | Primary Use Case                                                                                                                                                                   |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Structured Outputs** | **Formatting the final response to the user.** Use this when you want the model's*answer*to be in a specific format (e.g., extracting data from a document to save to a database). |
 | **Function Calling**   | **Taking action during the conversation.** Use this when the model needs to*ask you*to perform a task (e.g., "get current weather") before it can provide a final answer.          |
 

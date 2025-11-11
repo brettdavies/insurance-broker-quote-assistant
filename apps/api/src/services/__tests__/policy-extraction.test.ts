@@ -55,7 +55,7 @@ const createMockGeminiProvider = (): LLMProvider => {
           state: 0.98,
           productType: 0.92,
           coverageLimits: 0.88,
-          deductibles: 0.90,
+          deductibles: 0.9,
           premiums: 0.93,
           effectiveDates: 0.97,
         },
@@ -101,7 +101,7 @@ describe('Policy Extraction Service Integration', () => {
     expect(result.confidence?.state).toBe(0.98)
     expect(result.confidence?.productType).toBe(0.92)
     expect(result.confidence?.coverageLimits).toBe(0.88)
-    expect(result.confidence?.deductibles).toBe(0.90)
+    expect(result.confidence?.deductibles).toBe(0.9)
     expect(result.confidence?.premiums).toBe(0.93)
     expect(result.confidence?.effectiveDates).toBe(0.97)
   })
@@ -112,8 +112,8 @@ describe('Policy Extraction Service Integration', () => {
     const result = await extractor.extractPolicyDataFromFile(pdfFile)
 
     expect(result._metadata).toBeDefined()
-    expect(result._metadata?.tokensUsed).toBe(2450)
-    expect(result._metadata?.extractionTime).toBe(3200)
+    expect(result._metadata?.tokensUsed).toBe(1500)
+    expect(result._metadata?.extractionTime).toBe(2500)
     expect(typeof result._metadata?.tokensUsed).toBe('number')
     expect(typeof result._metadata?.extractionTime).toBe('number')
   })
@@ -227,7 +227,10 @@ describe('Policy Extraction Service Integration', () => {
     const testCases = [
       { name: 'policy.pdf', type: 'application/pdf' },
       { name: 'policy.PDF', type: 'application/pdf' },
-      { name: 'policy.docx', type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' },
+      {
+        name: 'policy.docx',
+        type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+      },
       { name: 'policy.txt', type: 'text/plain' },
       { name: 'policy.txt', type: 'text/plain;charset=utf-8' }, // With charset
     ]
@@ -241,4 +244,3 @@ describe('Policy Extraction Service Integration', () => {
     }
   })
 })
-

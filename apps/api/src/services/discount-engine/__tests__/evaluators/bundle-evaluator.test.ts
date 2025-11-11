@@ -41,9 +41,7 @@ describe('BundleDiscountEvaluator', () => {
       const evaluator = new BundleDiscountEvaluator()
       const discount = createTestDiscount(['auto', 'home'])
       const policy = createTestPolicy('auto', 1000)
-      const customer = createTestCustomer([
-        { product: 'home', premium: 1200, carrier: 'GEICO' },
-      ])
+      const customer = createTestCustomer([{ product: 'home', premium: 1200, carrier: 'GEICO' }])
 
       const result = evaluator.calculateSavings(discount, policy, customer)
       // 15% of (1000 + 1200) = 330
@@ -101,9 +99,7 @@ describe('BundleDiscountEvaluator', () => {
       const evaluator = new BundleDiscountEvaluator()
       const discount = createTestDiscount(['auto', 'home'])
       const policy = createTestPolicy('auto', 1000)
-      const customer = createTestCustomer([
-        { product: 'home', premium: 1200, carrier: 'GEICO' },
-      ])
+      const customer = createTestCustomer([{ product: 'home', premium: 1200, carrier: 'GEICO' }])
 
       const result = evaluator.evaluateEligibility(discount, policy, customer)
       // Should check product requirements (mustHaveProducts: auto, home)
@@ -128,10 +124,7 @@ describe('BundleDiscountEvaluator', () => {
 
       const result = evaluator.evaluateEligibility(discount, policy)
       expect(result.eligible).toBe(false)
-      expect(result.missingRequirements.some((m) => m.includes('home'))).toBe(
-        true
-      )
+      expect(result.missingRequirements.some((m) => m.includes('home'))).toBe(true)
     })
   })
 })
-

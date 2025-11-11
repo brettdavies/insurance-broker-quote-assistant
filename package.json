@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "workspaces": ["apps/*", "packages/*"],
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "dev": "concurrently \"bun run --filter @repo/web dev\" \"bun run --filter @repo/api dev\" --names \"web,api\" --prefix-colors \"cyan,magenta\"",
     "build": "bun run --filter '*' build",

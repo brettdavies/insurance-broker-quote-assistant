@@ -35,15 +35,15 @@
 
 ## 17.2 Naming Conventions
 
-| Element | Frontend | Backend | Example |
-|---------|----------|---------|---------|
-| Components | PascalCase | - | `IntakeForm.tsx` |
-| Hooks | camelCase with 'use' | - | `useIntake.ts` |
-| API Routes | kebab-case | kebab-case | `/api/policy-analysis` |
-| Functions | camelCase | camelCase | `routeToCarrier()` |
-| Types/Interfaces | PascalCase | PascalCase | `UserProfile` |
-| Constants | UPPER_SNAKE_CASE | UPPER_SNAKE_CASE | `PROHIBITED_PHRASES` |
-| Files | kebab-case | kebab-case | `routing-engine.ts` |
+| Element          | Frontend             | Backend          | Example                |
+| ---------------- | -------------------- | ---------------- | ---------------------- |
+| Components       | PascalCase           | -                | `IntakeForm.tsx`       |
+| Hooks            | camelCase with 'use' | -                | `useIntake.ts`         |
+| API Routes       | kebab-case           | kebab-case       | `/api/policy-analysis` |
+| Functions        | camelCase            | camelCase        | `routeToCarrier()`     |
+| Types/Interfaces | PascalCase           | PascalCase       | `UserProfile`          |
+| Constants        | UPPER_SNAKE_CASE     | UPPER_SNAKE_CASE | `PROHIBITED_PHRASES`   |
+| Files            | kebab-case           | kebab-case       | `routing-engine.ts`    |
 
 ## 17.3 Implementation Guidance
 
@@ -52,6 +52,7 @@
 ### Data Transformation (snake_case ↔ camelCase)
 
 **Use es-toolkit for runtime transformation:**
+
 ```typescript
 import { camelCase, snakeCase } from 'es-toolkit/string'
 
@@ -59,14 +60,15 @@ import { camelCase, snakeCase } from 'es-toolkit/string'
 const apiData = { product_line: 'auto', clean_record_3yr: true }
 const frontendData = {
   productLine: camelCase(apiData.product_line),
-  cleanRecord3Yr: apiData.clean_record_3yr
+  cleanRecord3Yr: apiData.clean_record_3yr,
 }
 
 // Frontend → Database (camelCase → snake_case)
-const dbKey = snakeCase('productLine')  // Returns 'product_line'
+const dbKey = snakeCase('productLine') // Returns 'product_line'
 ```
 
 **Why es-toolkit:**
+
 - **Modern & fast:** 2-3x faster than lodash, 97% smaller bundle size
 - **Type-safe:** First-class TypeScript support with proper type inference
 - **Standard functions:** `camelCase()`, `snakeCase()`, `kebabCase()` work like lodash equivalents
@@ -76,14 +78,15 @@ const dbKey = snakeCase('productLine')  // Returns 'product_line'
 **Cross-References:** See Section 4.2 for UserProfile schema definition and Section 6.4 for Discount Engine implementation.
 
 **Pattern for multi-carrier analysis:**
+
 ```typescript
 // UserProfile must include existingPolicies array for bundle analysis
 interface UserProfile {
   // ... other fields
   existingPolicies?: Array<{
     product: 'auto' | 'home' | 'renters' | 'umbrella'
-    carrier: string  // Carrier ID (e.g., "carr_ckm9x7w8k0")
-    premium: number  // Annual premium
+    carrier: string // Carrier ID (e.g., "carr_ckm9x7w8k0")
+    premium: number // Annual premium
   }>
 }
 
@@ -93,6 +96,7 @@ interface UserProfile {
 ```
 
 **Implementation approach:**
+
 - **Iterative questioning:** Conversational Extractor asks follow-up questions to collect existingPolicies data
 - **Progressive disclosure:** Frontend shows accordion/expandable sections for additional policy details
 - **Validation:** Zod schema validates carrier IDs match knowledge pack carriers
@@ -100,6 +104,7 @@ interface UserProfile {
 ### Progressive Disclosure UI
 
 **Pattern for missing fields:**
+
 ```typescript
 // API returns missing fields in IntakeResult
 interface IntakeResult {
@@ -122,6 +127,7 @@ interface IntakeResult {
 ```
 
 **Why progressive disclosure:**
+
 - **Better UX:** Don't overwhelm users with long forms upfront
 - **Conversational feel:** Ask for additional info only when needed
 - **Aligns with LLM extraction:** LLM extracts what's mentioned, flags what's missing
@@ -129,6 +135,7 @@ interface IntakeResult {
 ### Citation Propagation Pattern
 
 **Flow: Knowledge Pack → Discount Engine → Pitch Generator → User:**
+
 ```typescript
 // 1. Discount Engine retrieves discount with citation
 const opportunity = {
@@ -164,6 +171,7 @@ const pitch = "You qualify for Multi-Policy Bundle (15% off) [disc_ckm9x7wdx1]"
 ```
 
 **Why citation propagation matters:**
+
 - **Regulatory compliance:** Insurance recommendations must be traceable to source material
 - **Audit trail:** DecisionTrace logs all citations for regulatory review
 - **User trust:** Broker can explain "this came from GEICO's official discount rules"
@@ -173,6 +181,7 @@ const pitch = "You qualify for Multi-Policy Bundle (15% off) [disc_ckm9x7wdx1]"
 **Hybrid Approach: Biome + Prettier (Non-Standard Decision)**
 
 **Why Hybrid:**
+
 - **Biome limitation:** Does not support Tailwind CSS class sorting ([GitHub issue #1274](https://github.com/biomejs/biome/issues/1274))
 - **Prettier plugin required:** `prettier-plugin-tailwindcss` automatically sorts Tailwind classes for optimal developer experience
 - **Division of labor:** Biome handles linting + formatting for most files, Prettier handles only React components
@@ -180,6 +189,7 @@ const pitch = "You qualify for Multi-Policy Bundle (15% off) [disc_ckm9x7wdx1]"
 **Configuration:**
 
 `biome.json` (root):
+
 ```json
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
@@ -207,6 +217,7 @@ const pitch = "You qualify for Multi-Policy Bundle (15% off) [disc_ckm9x7wdx1]"
 ```
 
 `.prettierrc` (root):
+
 ```json
 {
   "semi": false,
@@ -220,12 +231,13 @@ const pitch = "You qualify for Multi-Policy Bundle (15% off) [disc_ckm9x7wdx1]"
 
 **Division of Labor:**
 
-| Tool | File Types | Purpose |
-|------|-----------|---------|
-| **Biome** | `.ts`, `.js`, `.json`, `.tsx` (linting only), `.jsx` (linting only) | Linting + formatting for non-React files |
-| **Prettier** | `.tsx`, `.jsx` | Formatting React components with Tailwind class sorting |
+| Tool         | File Types                                                          | Purpose                                                 |
+| ------------ | ------------------------------------------------------------------- | ------------------------------------------------------- |
+| **Biome**    | `.ts`, `.js`, `.json`, `.tsx` (linting only), `.jsx` (linting only) | Linting + formatting for non-React files                |
+| **Prettier** | `.tsx`, `.jsx`                                                      | Formatting React components with Tailwind class sorting |
 
 **Commands:**
+
 - `bun run lint` - Run Biome linting only (`biome check .`)
 - `bun run format` - Format all files (`biome format --write . && prettier --write '**/*.{tsx,jsx}'`)
 - `bun run format:check` - Check formatting without changes (`biome format . && prettier --check '**/*.{tsx,jsx}'`)
@@ -233,6 +245,7 @@ const pitch = "You qualify for Multi-Policy Bundle (15% off) [disc_ckm9x7wdx1]"
 **Settings Consistency:**
 
 Both tools configured with matching settings to ensure consistent code style:
+
 - Single quotes (`'`)
 - No semicolons
 - 2-space indentation
@@ -244,6 +257,7 @@ Both tools configured with matching settings to ensure consistent code style:
 Runs in sequence: `typecheck` → `lint` → `format:check`
 
 **Why This Matters:**
+
 - **Tailwind DX:** Auto-sorted Tailwind classes prevent merge conflicts and improve readability
 - **Speed:** Biome (Rust) handles 95% of files 25x faster than ESLint
 - **Consistency:** Both tools use identical formatting settings, ensuring no conflicts

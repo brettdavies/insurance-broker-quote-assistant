@@ -6,7 +6,7 @@
   },
   "formatter": {
     "enabled": true,
-    "ignore": ["**/*.tsx", "**/*.jsx"],
+    "ignore": ["**/*.tsx", "**/*.jsx", "**/*.json", "**/*.css", "**/*.code-workspace"],
     "indentStyle": "space",
     "indentWidth": 2,
     "lineWidth": 100
@@ -14,7 +14,12 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "suspicious": {
+        "noExplicitAny": {
+          "level": "warn"
+        }
+      }
     }
   },
   "javascript": {

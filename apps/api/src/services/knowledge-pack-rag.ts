@@ -228,9 +228,6 @@ export function getCarrierDiscounts(
     const discountProducts = getFieldValue(discount.products, [])
     const discountStates = getFieldValue(discount.states, [])
 
-    return (
-      discountProducts.includes(productType) &&
-      discountStates.includes(stateCode)
-    )
+    return discountProducts.includes(productType) && discountStates.includes(stateCode)
   })
 }

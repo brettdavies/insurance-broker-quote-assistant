@@ -13,11 +13,11 @@
  */
 
 import '../../../test-setup'
+import { beforeEach, describe, expect, it, vi } from 'bun:test'
+import { MAX_FILE_SIZE } from '@repo/shared'
 import { fireEvent, waitFor } from '@testing-library/react'
-import { describe, expect, it, beforeEach, vi } from 'bun:test'
 import { findElement, renderWithQueryClient, textIncludes } from '../../../__tests__/test-utils'
 import { UploadPanel } from '../UploadPanel'
-import { MAX_FILE_SIZE } from '@repo/shared'
 
 // Mock the API client
 // @ts-expect-error - Bun's vi types don't include mock, but it works at runtime
@@ -264,9 +264,12 @@ describe('UploadPanel', () => {
 
       // File should be selected (handler called)
       // Note: The handler may be called asynchronously due to validation and mutation setup
-      await waitFor(() => {
-        expect(onFileSelected).toHaveBeenCalledWith(file)
-      }, { timeout: 3000 })
+      await waitFor(
+        () => {
+          expect(onFileSelected).toHaveBeenCalledWith(file)
+        },
+        { timeout: 3000 }
+      )
     })
 
     it('should validate file type on file input change', async () => {
@@ -437,11 +440,14 @@ describe('UploadPanel', () => {
       })
 
       // Wait for file to be processed and displayed
-      await waitFor(() => {
-        expect(onFileSelected).toHaveBeenCalledWith(file)
-        // File info should be displayed in the component
-        expect(textIncludes(container, 'test-policy.pdf')).toBe(true)
-      }, { timeout: 2000 })
+      await waitFor(
+        () => {
+          expect(onFileSelected).toHaveBeenCalledWith(file)
+          // File info should be displayed in the component
+          expect(textIncludes(container, 'test-policy.pdf')).toBe(true)
+        },
+        { timeout: 2000 }
+      )
     })
   })
 })

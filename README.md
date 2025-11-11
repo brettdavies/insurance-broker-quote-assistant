@@ -20,9 +20,11 @@ cp .env.example .env
 ```
 
 Required environment variables:
+
 - `OPENAI_API_KEY` - Your OpenAI API key (required)
 
 Optional environment variables:
+
 - `NODE_ENV` - Environment (default: `development`)
 - `API_PORT` - Backend API port (default: `7070`)
 - `FRONTEND_PORT` - Frontend dev server port (default: `3000`)
@@ -39,17 +41,20 @@ bun run dev
 ```
 
 This starts:
+
 - Frontend: `http://localhost:3000` (React with Hot Module Reload)
 - Backend: `http://localhost:7070` (Hono API server)
 
 ### Individual Workspace Commands
 
 Run frontend only:
+
 ```bash
 bun run --filter web dev
 ```
 
 Run backend only:
+
 ```bash
 bun run --filter api dev
 ```
@@ -59,6 +64,7 @@ bun run --filter api dev
 ### Testing
 
 Run all tests:
+
 ```bash
 bun test
 ```
@@ -66,6 +72,7 @@ bun test
 ### Linting
 
 Run Biome linter:
+
 ```bash
 bun run lint
 ```
@@ -73,6 +80,7 @@ bun run lint
 ### Type Checking
 
 Type check all workspaces:
+
 ```bash
 bun run type-check
 ```
@@ -80,11 +88,13 @@ bun run type-check
 ### Formatting
 
 Format all files (Biome + Prettier):
+
 ```bash
 bun run format
 ```
 
 Check formatting without changes:
+
 ```bash
 bun run format:check
 ```
@@ -122,6 +132,7 @@ For complete architecture documentation, see [docs/architecture/index.md](./docs
 ## Pre-commit Hooks
 
 Git hooks (via Husky) automatically run before commits:
+
 1. Type check (`bun run type-check`)
 2. Lint (`bun run lint`)
 3. Format check (`bun run format:check`)
@@ -129,6 +140,7 @@ Git hooks (via Husky) automatically run before commits:
 ## CI/CD
 
 GitHub Actions CI pipeline runs on pull requests:
+
 - Type checking
 - Linting
 - Unit tests
@@ -138,4 +150,3 @@ See `.github/workflows/ci.yml` for details.
 ## License
 
 Private project - PEAK6 interview demo
-

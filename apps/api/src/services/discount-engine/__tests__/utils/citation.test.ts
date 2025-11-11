@@ -78,4 +78,3 @@ describe('createCitation', () => {
     expect(citation.carrier).toBe('Progressive')
   })
 })
-

@@ -44,22 +44,27 @@ Brokerages sell across multiple carriers and states with different rules and com
 ## Technical Requirements
 
 ### Required Programming Languages
+
 - Feel free to choose whatever language you want, be prepared to justify your choices.
 
 ### AI/ML Frameworks
+
 - Flexible: rules, small models, or LLMs permitted
 - No live web retrieval at runtime; all knowledge comes from student-generated offline files
 
 ### Development Tools
+
 - Minimal chat/UI for conversational intake and for rendering savings pitches
 - Local store for knowledge pack (YAML/JSON/CSV) and logs
 - RAG over the offline knowledge pack (citations to files/sections)
 
 ### Cloud Platforms
+
 - Not required; local acceptable
 - If used, keep secrets in environment variables; provide .env.example
 
 ### Other Specific Requirements
+
 - Synthetic data only; no real PII in inputs or logs
 - No binding quotes or guarantees; include required sales disclaimers and licensed-agent handoff
 - At runtime, disable network search; document how to reproduce offline
@@ -82,23 +87,29 @@ What does success look like for this project?
 ## Functional Requirements (Must-Haves)
 
 ### Two input modes:
+
 - **Conversational intake** → carrier/state/product routing → IQuote Pro pre-fill packet (or structured stub) + lead capture
 - **Policy-based analysis** → savings opportunities + agent talking points + eligibility notes
 
 ### Multi-carrier/state logic:
+
 - Encode carrier availability by state, product lines (Auto/Home/Renters/Umbrella), common eligibility rules, discount programs, and compensation/pay structure differences
 
 ### Knowledge pack (offline):
+
 - Student-generated files (YAML/JSON/CSV) that define rules, glossary, and sample FAQs; include citations in docs (not used at runtime)
 
 ### Compliance and safety:
+
 - Mandatory disclosures; prohibited statements list; refusal/escalation to licensed agent
 
 ### Interfaces:
+
 - Minimal UI or CLI for both scenarios
 - Expose structured outputs: route decision, missing fields checklist, pre-fill JSON/stub, savings pitch with cited knowledge-pack sections
 
 ### Observability:
+
 - Redacted logs; per-interaction decision trace (inputs, rules consulted, outputs)
 
 ---
@@ -150,6 +161,7 @@ What does success look like for this project?
 ## Deliverables
 
 GitHub repo with:
+
 - README (setup, architecture, flows, disclaimers, how to demo)
 - Offline knowledge pack (carrier/state/product rules) + citations in docs
 - Sample synthetic policies (declarations) and example conversations

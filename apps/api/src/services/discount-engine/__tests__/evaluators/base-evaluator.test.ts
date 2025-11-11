@@ -24,10 +24,7 @@ class TestEvaluator extends BaseDiscountEvaluator {
 }
 
 describe('BaseDiscountEvaluator', () => {
-  const createTestDiscount = (
-    requirements: any,
-    metadata?: Discount['metadata']
-  ): Discount => ({
+  const createTestDiscount = (requirements: any, metadata?: Discount['metadata']): Discount => ({
     _id: 'disc_test',
     name: { _id: 'fld_name', value: 'Test Discount', _sources: [] },
     percentage: { _id: 'fld_pct', value: 10, _sources: [] },
@@ -98,9 +95,7 @@ describe('BaseDiscountEvaluator', () => {
       // Customer is 20 but discount requires age 25+, so should be ineligible
       expect(result.eligible).toBe(false)
       expect(result.missingRequirements.length).toBeGreaterThan(0)
-      expect(result.missingRequirements.some((m) => m.includes('at least 25'))).toBe(
-        true
-      )
+      expect(result.missingRequirements.some((m) => m.includes('at least 25'))).toBe(true)
     })
 
     it('should require customer data when field requirements exist', () => {
@@ -183,4 +178,3 @@ describe('BaseDiscountEvaluator', () => {
     })
   })
 })
-

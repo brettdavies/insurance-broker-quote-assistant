@@ -33,6 +33,7 @@ uv run crawl4ai-setup
 Phase 2 uses **individual scripts** that agents call in sequence. Each script outputs JSON with explicit `next_steps` instructions.
 
 **Claude Code agents should:**
+
 1. Start with `select-work.py` to find work
 2. Read `next_steps` from output
 3. Follow instructions exactly
@@ -123,6 +124,7 @@ See [docs/knowledge-pack/phase-2-agent-instructions.md](../docs/knowledge-pack/p
 ## Output
 
 All scraped data is saved to `../knowledge_pack/raw/`:
+
 - `_pages/page_{id}.html` - Raw HTML from crawl4ai
 - `_pages/page_{id}.md` - Markdown conversion from crawl4ai
 - `carriers/`, `states/`, etc. - Extracted data points
@@ -141,6 +143,7 @@ Agents check these in waterfall order, picking the first available work from the
 ## Git Coordination
 
 Agents coordinate via GitHub:
+
 - Pull before claiming work
 - Commit claim immediately
 - Push with automatic retry on conflict
@@ -186,6 +189,7 @@ uv run scripts/tests/test_url_deduplication.py
 ```
 
 This validates:
+
 - Hash-based URL deduplication
 - Multi-search provenance tracking
 - URL normalization (protocol, case, trailing slash)
@@ -196,12 +200,15 @@ This validates:
 ## Troubleshooting
 
 ### Playwright browser not found
+
 ```bash
 uv run crawl4ai-setup
 ```
 
 ### Git conflicts
+
 Agents handle conflicts automatically. If manual resolution needed:
+
 ```bash
 git pull --rebase
 # Resolve conflicts
@@ -210,4 +217,5 @@ git push
 ```
 
 ### Check for stuck work
+
 Look for items claimed >30 minutes ago - may need manual intervention.

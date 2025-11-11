@@ -17,6 +17,7 @@ IQuote Pro addresses this by providing an AI-powered sales assistant that guides
 ## Primary User Persona
 
 **Sarah Chen, Senior Insurance Broker**
+
 - **Experience:** 8 years in insurance sales, handles 50-60 quotes per week across multiple carriers
 - **Typical Day:** Back-to-back client calls (phone + in-person), juggling multiple carrier portals, chasing missing information from clients, ensuring compliance with state regulations
 - **Pain Points:**
@@ -33,8 +34,8 @@ IQuote Pro addresses this by providing an AI-powered sales assistant that guides
 
 ## Change Log
 
-| Date | Version | Description | Author |
-|------|---------|-------------|--------|
-| 2025-11-06 | 0.1 | Initial PRD creation | John (PM Agent) |
+| Date       | Version | Description          | Author          |
+| ---------- | ------- | -------------------- | --------------- |
+| 2025-11-06 | 0.1     | Initial PRD creation | John (PM Agent) |
 
 ---
