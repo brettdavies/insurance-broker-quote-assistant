@@ -280,10 +280,9 @@ export function createPolicyRoute(extractor: ConversationalExtractor) {
         },
         [
           {
+            agent: 'conversational-extractor',
             model: 'gemini-2.5-flash-lite', // Using GeminiProvider per implementation notes
-            provider: 'gemini',
-            tokensUsed, // Actual tokens used from LLM response
-            extractionTime, // Actual extraction time in milliseconds
+            totalTokens: tokensUsed, // Actual tokens used from LLM response
           },
         ]
       )

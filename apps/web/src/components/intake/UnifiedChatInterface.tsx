@@ -37,6 +37,7 @@ interface UnifiedChatInterfaceProps {
     focus: () => void
     clear: () => void
     insertText: (text: string) => void
+    setContent: (text: string) => void
   } | null>
 }
 
@@ -65,6 +66,7 @@ export function UnifiedChatInterface({
     focus: () => void
     clear: () => void
     insertText: (text: string) => void
+    setContent: (text: string) => void
   } | null>(null)
   const editorRef = externalEditorRef || internalEditorRef
 

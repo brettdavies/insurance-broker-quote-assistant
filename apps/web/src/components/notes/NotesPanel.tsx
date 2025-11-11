@@ -10,28 +10,14 @@
  * - Atomic pill deletion
  */
 
+import { KeyValueEditor } from '@/components/shared/KeyValueEditor'
 import { FieldModal } from '@/components/shortcuts/FieldModal'
 import { COMMAND_TO_KEY, NUMERIC_FIELDS } from '@/config/shortcuts'
 import { type ActionCommand, type FieldCommand, useSlashCommands } from '@/hooks/useSlashCommands'
-import { LexicalComposer } from '@lexical/react/LexicalComposer'
 import { useLexicalComposerContext } from '@lexical/react/LexicalComposerContext'
-import { ContentEditable } from '@lexical/react/LexicalContentEditable'
-import { LexicalErrorBoundary } from '@lexical/react/LexicalErrorBoundary'
-import { HistoryPlugin } from '@lexical/react/LexicalHistoryPlugin'
-import { OnChangePlugin } from '@lexical/react/LexicalOnChangePlugin'
-import { PlainTextPlugin } from '@lexical/react/LexicalPlainTextPlugin'
-import {
-  $getNodeByKey,
-  $getRoot,
-  $insertNodes,
-  $isTextNode,
-  type EditorState,
-  TextNode,
-} from 'lexical'
+import { $getNodeByKey, $insertNodes, TextNode } from 'lexical'
 import { useCallback, useEffect, useState } from 'react'
 import { $isPillNode, PillNode } from './nodes/PillNode'
-import { KeyValuePlugin } from './plugins/KeyValuePlugin'
-import { PillInteractionPlugin } from './plugins/PillInteractionPlugin'
 
 interface NotesPanelProps {
   mode?: 'intake' | 'policy'
@@ -44,108 +30,12 @@ interface NotesPanelProps {
     focus: () => void
     clear: () => void
     insertText: (text: string) => void
+    setContent: (text: string) => void
   } | null>
   autoFocus?: boolean
 }
 
-// Lexical editor configuration
-const editorConfig = {
-  namespace: 'NotesEditor',
-  nodes: [PillNode],
-  onError(error: Error) {
-    console.error('Lexical error:', error)
-  },
-  theme: {
-    root: 'focus:ring-primary-500 focus:border-primary-500 dark:focus:border-primary-400 min-h-[200px] w-full rounded-md border border-gray-300 bg-white p-4 font-mono text-sm text-gray-900 transition-all duration-200 ease-out placeholder:text-gray-500 focus:outline-none focus:ring-2 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:placeholder:text-gray-500',
-    text: {
-      bold: 'font-bold',
-      italic: 'italic',
-      underline: 'underline',
-    },
-  },
-}
-
-// Plugin to expose editor instance via ref
-function EditorRefPlugin({
-  editorRef,
-}: {
-  editorRef?: React.MutableRefObject<{
-    focus: () => void
-    clear: () => void
-    insertText: (text: string) => void
-  } | null>
-}): null {
-  const [editor] = useLexicalComposerContext()
-
-  useEffect(() => {
-    if (editorRef) {
-      editorRef.current = {
-        focus: () => {
-          const rootElement = editor.getRootElement()
-          if (rootElement) {
-            rootElement.focus()
-          }
-        },
-        clear: () => {
-          editor.update(() => {
-            $getRoot().clear()
-          })
-        },
-        insertText: (text: string) => {
-          editor.update(() => {
-            const root = $getRoot()
-            const lastChild = root.getLastChild()
-
-            // If there's existing text, append to it; otherwise create new node
-            if (lastChild && $isTextNode(lastChild)) {
-              const currentText = lastChild.getTextContent()
-              lastChild.setTextContent(currentText + text)
-              // Select at the end of the text
-              lastChild.select(lastChild.getTextContentSize(), lastChild.getTextContentSize())
-            } else {
-              const textNode = new TextNode(text)
-              root.append(textNode)
-              // Select at the end of the text
-              textNode.select(textNode.getTextContentSize(), textNode.getTextContentSize())
-            }
-          })
-        },
-      }
-    }
-  }, [editor, editorRef])
-
-  return null
-}
-
-// Plugin to auto-focus editor on mount
-function AutoFocusPlugin({ autoFocus }: { autoFocus?: boolean }): null {
-  const [editor] = useLexicalComposerContext()
-
-  useEffect(() => {
-    if (autoFocus) {
-      // Delay to ensure DOM and content are ready (especially after transition)
-      const timeoutId = setTimeout(() => {
-        const rootElement = editor.getRootElement()
-        if (rootElement) {
-          rootElement.focus()
-          // Place cursor at end of content
-          const selection = window.getSelection()
-          if (selection) {
-            const range = document.createRange()
-            range.selectNodeContents(rootElement)
-            range.collapse(false)
-            selection.removeAllRanges()
-            selection.addRange(range)
-          }
-        }
-      }, 200)
-
-      return () => clearTimeout(timeoutId)
-    }
-  }, [editor, autoFocus])
-
-  return null
-}
+// NotesPanel-specific plugins that extend KeyValueEditor
 
 // Plugin to extract fields when valid pills are created
 function PillFieldExtractionPlugin({
@@ -271,14 +161,10 @@ export function NotesPanel({
     },
   })
 
-  const handleEditorChange = useCallback(
-    (editorState: EditorState) => {
-      editorState.read(() => {
-        const text = $getRoot().getTextContent()
-        setContent(text)
-        // Notify parent of content change
-        onContentChange?.(text)
-      })
+  const handleContentChange = useCallback(
+    (text: string) => {
+      setContent(text)
+      onContentChange?.(text)
     },
     [onContentChange]
   )
@@ -310,38 +196,24 @@ export function NotesPanel({
 
         {/* Notes Input Area */}
         <div className="flex-1 overflow-y-auto p-6">
-          <div className="relative">
-            <LexicalComposer initialConfig={editorConfig}>
-              <PlainTextPlugin
-                contentEditable={
-                  <ContentEditable
-                    className="focus:ring-primary-500 focus:border-primary-500 dark:focus:border-primary-400 min-h-[200px] w-full rounded-md border border-gray-300 bg-white p-4 font-mono text-sm text-gray-900 transition-all duration-200 ease-out placeholder:text-gray-500 focus:outline-none focus:ring-2 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:placeholder:text-gray-500"
-                    data-notes-input="true"
-                  />
-                }
-                placeholder={
-                  !content ? (
-                    <div className="pointer-events-none absolute left-4 top-4 font-mono text-sm text-gray-500 dark:text-gray-400">
-                      {placeholder}
-                    </div>
-                  ) : null
-                }
-                ErrorBoundary={LexicalErrorBoundary}
-              />
-              <HistoryPlugin />
-              <OnChangePlugin onChange={handleEditorChange} />
-              <EditorRefPlugin editorRef={editorRef} />
-              <AutoFocusPlugin autoFocus={autoFocus} />
-              <KeyValuePlugin />
-              <PillInteractionPlugin onFieldRemoved={onFieldRemoved} />
-              <PillFieldExtractionPlugin onFieldExtracted={onFieldExtracted} />
-              <FieldInjectionPlugin
-                fieldCommand={currentField}
-                value={fieldValue}
-                onComplete={handleFieldInjectionComplete}
-              />
-            </LexicalComposer>
-          </div>
+          <KeyValueEditor
+            placeholder={placeholder}
+            onContentChange={handleContentChange}
+            onFieldRemoved={onFieldRemoved}
+            editorRef={editorRef}
+            autoFocus={autoFocus}
+            contentEditableClassName="focus:ring-primary-500 focus:border-primary-500 dark:focus:border-primary-400 min-h-[200px] w-full rounded-md border border-gray-300 bg-white p-4 font-mono text-sm text-gray-900 transition-all duration-200 ease-out placeholder:text-gray-500 focus:outline-none focus:ring-2 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:placeholder:text-gray-500"
+            additionalPlugins={
+              <>
+                <PillFieldExtractionPlugin onFieldExtracted={onFieldExtracted} />
+                <FieldInjectionPlugin
+                  fieldCommand={currentField}
+                  value={fieldValue}
+                  onComplete={handleFieldInjectionComplete}
+                />
+              </>
+            }
+          />
         </div>
       </div>
 
