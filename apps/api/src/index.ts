@@ -6,6 +6,7 @@ import { z } from 'zod'
 import { config } from './config/env'
 import { errorHandler } from './middleware/error-handler'
 import { createIntakeRoute } from './routes/intake'
+import { createPolicyRoute } from './routes/policy'
 import { validateOutput } from './services/compliance-filter'
 import { ConversationalExtractor } from './services/conversational-extractor'
 import { GeminiProvider } from './services/gemini-provider'
@@ -88,6 +89,10 @@ app.get('/api/health', (c) => {
 // Intake endpoint - conversational field extraction
 const intakeRoute = createIntakeRoute(conversationalExtractor)
 app.route('/', intakeRoute)
+
+// Policy upload endpoint - policy document parsing
+const policyRoute = createPolicyRoute(conversationalExtractor)
+app.route('/', policyRoute)
 
 // Generate prefill endpoint (flattened from /api/intake/generate-prefill for Hono RPC client compatibility)
 app.post('/api/generate-prefill', async (c) => {

@@ -6,9 +6,10 @@
  */
 
 import { Button } from '@/components/ui/button'
-import type { UserProfile } from '@repo/shared'
+import type { PolicySummary, UserProfile } from '@repo/shared'
 import { CapturedFields } from './CapturedFields'
 import { type MissingField, MissingFields } from './MissingFields'
+import { PolicyFields } from './PolicyFields'
 
 interface SidebarProps {
   mode: 'intake' | 'policy'
@@ -18,6 +19,8 @@ interface SidebarProps {
   totalRequired: number
   onFieldClick: (fieldKey: string, currentValue?: string | number | boolean) => void
   onExport?: () => void
+  policySummary?: PolicySummary
+  confidence?: Record<string, number>
 }
 
 export function Sidebar({
@@ -28,6 +31,8 @@ export function Sidebar({
   totalRequired,
   onFieldClick,
   onExport,
+  policySummary,
+  confidence,
 }: SidebarProps) {
   return (
     <div className="flex h-full flex-col space-y-4 overflow-y-auto bg-gray-100 p-4 dark:bg-gray-800">
@@ -42,8 +47,14 @@ export function Sidebar({
 
       {/* Captured Fields Section */}
       <div>
-        <h2 className="mb-2 text-lg font-semibold">Captured Fields</h2>
-        <CapturedFields profile={profile} onFieldClick={onFieldClick} />
+        <h2 className="mb-2 text-lg font-semibold">
+          {mode === 'policy' ? 'Policy Fields' : 'Captured Fields'}
+        </h2>
+        {mode === 'policy' && policySummary ? (
+          <PolicyFields policySummary={policySummary} onFieldClick={onFieldClick} />
+        ) : (
+          <CapturedFields profile={profile} confidence={confidence} onFieldClick={onFieldClick} />
+        )}
       </div>
 
       {/* Missing Fields Section */}

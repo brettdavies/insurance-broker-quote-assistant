@@ -75,3 +75,38 @@ export {
   complianceResultSchema,
   type ComplianceResult,
 } from './schemas/compliance-result'
+
+// Export policy summary schema and types
+export {
+  policySummarySchema,
+  coverageLimitsSchema,
+  deductiblesSchema,
+  premiumsSchema,
+  effectiveDatesSchema,
+  confidenceScoresSchema,
+  type PolicySummary,
+  type CoverageLimits,
+  type Deductibles,
+  type Premiums,
+  type EffectiveDates,
+  type ConfidenceScores,
+} from './schemas/policy-summary'
+
+// Export file upload constants
+export {
+  MAX_FILE_SIZE,
+  ACCEPTED_MIME_TYPES,
+  ACCEPTED_EXTENSIONS,
+  FILE_TYPE_DESCRIPTIONS,
+  isAcceptedFileType,
+  isFileSizeValid,
+  formatFileSize,
+} from './constants/file-upload'
+
+// Export policy summary metadata
+export {
+  policySummaryFieldMetadata,
+  POLICY_CATEGORY_MAP,
+  POLICY_CATEGORY_LABELS,
+  type PolicyFieldMetadata,
+} from './schemas/policy-summary-metadata'
