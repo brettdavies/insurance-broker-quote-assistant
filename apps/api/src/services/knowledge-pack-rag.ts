@@ -231,3 +231,45 @@ export function getCarrierDiscounts(
     return discountProducts.includes(productType) && discountStates.includes(stateCode)
   })
 }
+
+/**
+ * Get carrier bundle discounts for a specific state
+ *
+ * Returns bundle discount rules (e.g., "auto + home = 15% off both").
+ * Bundle discounts require multiple products to qualify.
+ *
+ * @param carrierName - Carrier name
+ * @param stateCode - Two-letter state code
+ * @returns Array of bundle discount objects, or empty array if carrier not found
+ */
+export function getCarrierBundleDiscounts(
+  carrierName: string,
+  stateCode: string
+): Carrier['discounts'] {
+  const carrier = getCarrier(carrierName)
+  if (!carrier) {
+    return []
+  }
+
+  // Filter for bundle discounts (require multiple products)
+  return carrier.discounts.filter((discount) => {
+    const discountStates = getFieldValue(discount.states, [])
+    if (!discountStates.includes(stateCode)) {
+      return false
+    }
+
+    // Check if it's a bundle discount by looking at requirements
+    const requirements = getFieldValue(discount.requirements, {}) as {
+      bundleProducts?: string[]
+      mustHaveProducts?: string[]
+      minProducts?: number
+    }
+
+    // Bundle discounts have bundleProducts with length > 1, or minProducts > 1
+    return (
+      (requirements.bundleProducts && requirements.bundleProducts.length > 1) ||
+      (requirements.minProducts && requirements.minProducts > 1) ||
+      (requirements.mustHaveProducts && requirements.mustHaveProducts.length > 1)
+    )
+  })
+}

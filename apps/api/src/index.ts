@@ -91,7 +91,7 @@ const intakeRoute = createIntakeRoute(conversationalExtractor)
 app.route('/', intakeRoute)
 
 // Policy upload endpoint - policy document parsing
-const policyRoute = createPolicyRoute(conversationalExtractor)
+const policyRoute = createPolicyRoute(conversationalExtractor, llmProvider)
 app.route('/', policyRoute)
 
 // Generate prefill endpoint (flattened from /api/intake/generate-prefill for Hono RPC client compatibility)

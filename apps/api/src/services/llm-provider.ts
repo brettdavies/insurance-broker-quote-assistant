@@ -9,11 +9,23 @@ import type { UserProfile } from '@repo/shared'
  * @see docs/stories/1.5.conversational-extractor.md#task-3
  */
 
+/**
+ * Detailed token usage breakdown
+ */
+export interface TokenUsage {
+  promptTokens: number // Input tokens (prompt)
+  completionTokens: number // Output tokens (candidates)
+  totalTokens: number // Total tokens used
+  cachedTokens?: number // Cached content tokens (if context caching used)
+  thinkingTokens?: number // Thinking/reasoning tokens (if available)
+}
+
 export interface ExtractionResult {
   profile: Partial<UserProfile>
   confidence: Record<string, number> // Field-level confidence scores (0.0-1.0)
   reasoning?: string // Optional reasoning for extraction
-  tokensUsed?: number // Total tokens used (prompt + completion)
+  tokensUsed?: number // Total tokens used (prompt + completion) - kept for backward compatibility
+  tokenUsage?: TokenUsage // Detailed token usage breakdown
   extractionTime?: number // Extraction time in milliseconds
 }
 
