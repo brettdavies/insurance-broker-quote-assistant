@@ -145,6 +145,7 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
           validation: 'invalid_value',
           fieldName: normalizedKey,
         })
+        match = pattern.exec(text)
         continue
       }
     }
@@ -156,6 +157,8 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
       validation: 'valid',
       fieldName: normalizedKey,
     })
+
+    match = pattern.exec(text)
   }
 
   return results

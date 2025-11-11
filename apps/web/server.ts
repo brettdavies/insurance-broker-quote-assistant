@@ -68,16 +68,19 @@ serve({
           '.html': 'text/html',
         }
 
-        // For TypeScript/JSX files, Bun needs to transpile them to JavaScript
+        // For TypeScript/JSX files, bundle everything (including npm dependencies)
+        // This allows the browser to load a single bundled file
         if (ext === '.tsx' || ext === '.ts' || ext === '.jsx') {
           try {
-            // Use Bun's transpiler to convert TypeScript to JavaScript
+            // Bundle everything - npm dependencies and relative imports
             const result = await Bun.build({
               entrypoints: [filePath],
-              outdir: undefined, // Don't write to disk
+              outdir: undefined,
               target: 'browser',
               format: 'esm',
               minify: false,
+              // Don't externalize - bundle all dependencies
+              // This ensures npm packages are included in the bundle
             })
 
             if (result.success && result.outputs.length > 0) {
@@ -88,8 +91,30 @@ serve({
                 },
               })
             }
+            // Log detailed errors
+            const errors = result.logs.filter((log) => log.level === 'error')
+            console.error(`Build failed for ${filePath}:`)
+            for (const log of errors) {
+              console.error(`  ${log.message}`)
+            }
+
+            return new Response(`Build failed: ${errors.map((e) => e.message).join('; ')}`, {
+              status: 500,
+              headers: {
+                'Content-Type': 'text/plain',
+              },
+            })
           } catch (error) {
             console.error(`Error transpiling ${filePath}:`, error)
+            return new Response(
+              `Transpilation error: ${error instanceof Error ? error.message : String(error)}`,
+              {
+                status: 500,
+                headers: {
+                  'Content-Type': 'text/plain',
+                },
+              }
+            )
           }
         }
 

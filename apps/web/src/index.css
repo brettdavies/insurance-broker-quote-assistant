@@ -51,8 +51,27 @@
     animation: pill-in 0.2s ease-out;
   }
 
-  /* Smooth transitions for panel resizing */
+  /* Smooth transitions for panel resizing and layout changes */
   .panel-transition {
     transition: width 0.3s ease-out, height 0.3s ease-out;
+  }
+
+  /* Smooth grid layout transitions */
+  .layout-transition {
+    transition: grid-template-columns 0.3s ease-out, opacity 0.2s ease-out;
+  }
+
+  /* Fade in animation for new content */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .fade-in {
+    animation: fade-in 0.3s ease-out;
   }
 }

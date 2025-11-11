@@ -8,6 +8,7 @@
 import { CompliancePanel } from '@/components/layout/CompliancePanel'
 import { ChatHistory, type ChatMessage } from '@/components/notes/ChatHistory'
 import { NotesPanel } from '@/components/notes/NotesPanel'
+import { UploadPanel } from '@/components/policy/UploadPanel'
 import { FieldModal } from '@/components/shortcuts/FieldModal'
 import { HelpModal } from '@/components/shortcuts/HelpModal'
 import type { MissingField } from '@/components/sidebar/MissingFields'
@@ -21,9 +22,21 @@ import { useCallback, useRef, useState } from 'react'
 
 interface UnifiedChatInterfaceProps {
   mode?: 'intake' | 'policy'
+  isActive?: boolean
+  onContentChange?: (content: string) => void
+  onActionCommand?: (command: ActionCommand) => void
+  onCommandError?: (command: string) => void
+  editorRef?: React.MutableRefObject<{ focus: () => void; clear: () => void } | null>
 }
 
-export function UnifiedChatInterface({ mode = 'intake' }: UnifiedChatInterfaceProps) {
+export function UnifiedChatInterface({
+  mode = 'intake',
+  isActive = false,
+  onContentChange,
+  onActionCommand,
+  onCommandError,
+  editorRef: externalEditorRef,
+}: UnifiedChatInterfaceProps) {
   const [messages, setMessages] = useState<ChatMessage[]>([])
   const [profile, setProfile] = useState<UserProfile>({})
   const [missingFields, setMissingFields] = useState<MissingField[]>([])
@@ -33,7 +46,8 @@ export function UnifiedChatInterface({ mode = 'intake' }: UnifiedChatInterfacePr
     value?: string | number | boolean
   } | null>(null)
   const [helpModalOpen, setHelpModalOpen] = useState(false)
-  const editorRef = useRef<{ focus: () => void; clear: () => void } | null>(null)
+  const internalEditorRef = useRef<{ focus: () => void; clear: () => void } | null>(null)
+  const editorRef = externalEditorRef || internalEditorRef
 
   const { toast } = useToast()
   const intakeMutation = useIntake()
@@ -249,7 +263,7 @@ export function UnifiedChatInterface({ mode = 'intake' }: UnifiedChatInterfacePr
         setHelpModalOpen(true)
       }
     },
-    [toast]
+    [toast, editorRef]
   )
 
   // Handle command errors (invalid commands)
@@ -265,36 +279,79 @@ export function UnifiedChatInterface({ mode = 'intake' }: UnifiedChatInterfacePr
     [toast]
   )
 
+  // Merge parent callbacks with local handlers
+  const handleMessageSubmitMerged = useCallback(
+    (messageText: string) => {
+      handleMessageSubmit(messageText)
+    },
+    [handleMessageSubmit]
+  )
+
+  const handleActionCommandMerged = useCallback(
+    (command: ActionCommand) => {
+      handleActionCommand(command)
+      onActionCommand?.(command)
+    },
+    [handleActionCommand, onActionCommand]
+  )
+
+  const handleCommandErrorMerged = useCallback(
+    (command: string) => {
+      handleCommandError(command)
+      onCommandError?.(command)
+    },
+    [handleCommandError, onCommandError]
+  )
+
   return (
     <>
       <div className="flex h-full flex-col">
-        <div className="grid flex-1 grid-cols-[70%_30%] overflow-hidden">
-          {/* Left: Chat History + Notes + Compliance */}
-          <div className="flex flex-col border-r border-gray-300 dark:border-gray-700">
-            {/* Chat History */}
-            <div className="flex-1 overflow-hidden">
+        <div
+          className={`layout-transition grid flex-1 overflow-hidden ${
+            isActive ? 'grid-cols-[70%_30%]' : 'grid-cols-[50%_50%]'
+          }`}
+        >
+          {/* Left: PDF Drop Area (hidden when active) */}
+          <div
+            className={`layout-transition h-full overflow-y-auto border-r border-gray-300 bg-gray-100 dark:border-gray-700 dark:bg-gray-800 ${
+              isActive ? 'hidden' : 'block'
+            }`}
+          >
+            <UploadPanel />
+          </div>
+
+          {/* Center/Left: Chat History + Notes + Compliance (expands when active) */}
+          <div
+            className={`layout-transition flex flex-col border-r border-gray-300 dark:border-gray-700 ${
+              isActive ? 'col-span-1' : 'col-span-1'
+            }`}
+          >
+            {/* Chat History (hidden when not active) */}
+            <div className={`flex-1 overflow-hidden ${isActive ? 'block' : 'hidden'}`}>
               <ChatHistory messages={messages} />
             </div>
 
-            {/* Notes Input */}
+            {/* Notes Input (always visible) */}
             <div className="border-t border-gray-300 dark:border-gray-700">
               <NotesPanel
                 mode={mode}
-                onMessageSubmit={handleMessageSubmit}
-                onActionCommand={handleActionCommand}
-                onCommandError={handleCommandError}
+                onMessageSubmit={handleMessageSubmitMerged}
+                onContentChange={onContentChange}
+                onActionCommand={handleActionCommandMerged}
+                onCommandError={handleCommandErrorMerged}
                 editorRef={editorRef}
+                autoFocus={!isActive}
               />
             </div>
 
-            {/* Compliance Panel */}
-            <div className="border-t border-gray-300 p-4 dark:border-gray-700">
+            {/* Compliance Panel (hidden when not active) */}
+            <div className={`border-t p-4 dark:border-gray-700 ${isActive ? 'block' : 'hidden'}`}>
               <CompliancePanel mode={mode} profile={profile} />
             </div>
           </div>
 
-          {/* Right: Sidebar */}
-          <div className="overflow-y-auto">
+          {/* Right: Sidebar (hidden when not active) */}
+          <div className={`layout-transition overflow-y-auto ${isActive ? 'block' : 'hidden'}`}>
             <Sidebar
               mode={mode}
               profile={profile}

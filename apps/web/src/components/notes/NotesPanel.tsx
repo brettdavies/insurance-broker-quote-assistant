@@ -28,9 +28,11 @@ import { PillInteractionPlugin } from './plugins/PillInteractionPlugin'
 interface NotesPanelProps {
   mode?: 'intake' | 'policy'
   onMessageSubmit?: (message: string) => void
+  onContentChange?: (content: string) => void
   onActionCommand?: (command: ActionCommand) => void
   onCommandError?: (command: string) => void
   editorRef?: React.MutableRefObject<{ focus: () => void; clear: () => void } | null>
+  autoFocus?: boolean
 }
 
 // Lexical editor configuration
@@ -75,6 +77,36 @@ function EditorRefPlugin({
       }
     }
   }, [editor, editorRef])
+
+  return null
+}
+
+// Plugin to auto-focus editor on mount
+function AutoFocusPlugin({ autoFocus }: { autoFocus?: boolean }): null {
+  const [editor] = useLexicalComposerContext()
+
+  useEffect(() => {
+    if (autoFocus) {
+      // Delay to ensure DOM and content are ready (especially after transition)
+      const timeoutId = setTimeout(() => {
+        const rootElement = editor.getRootElement()
+        if (rootElement) {
+          rootElement.focus()
+          // Place cursor at end of content
+          const selection = window.getSelection()
+          if (selection) {
+            const range = document.createRange()
+            range.selectNodeContents(rootElement)
+            range.collapse(false)
+            selection.removeAllRanges()
+            selection.addRange(range)
+          }
+        }
+      }, 200)
+
+      return () => clearTimeout(timeoutId)
+    }
+  }, [editor, autoFocus])
 
   return null
 }
@@ -171,9 +203,11 @@ function FieldInjectionPlugin({
 export function NotesPanel({
   mode = 'intake',
   onMessageSubmit,
+  onContentChange,
   onActionCommand,
   onCommandError,
   editorRef,
+  autoFocus = false,
 }: NotesPanelProps) {
   const [fieldModalOpen, setFieldModalOpen] = useState(false)
   const [currentField, setCurrentField] = useState<FieldCommand | null>(null)
@@ -202,12 +236,17 @@ export function NotesPanel({
     },
   })
 
-  const handleEditorChange = useCallback((editorState: EditorState) => {
-    editorState.read(() => {
-      const text = $getRoot().getTextContent()
-      setContent(text)
-    })
-  }, [])
+  const handleEditorChange = useCallback(
+    (editorState: EditorState) => {
+      editorState.read(() => {
+        const text = $getRoot().getTextContent()
+        setContent(text)
+        // Notify parent of content change
+        onContentChange?.(text)
+      })
+    },
+    [onContentChange]
+  )
 
   const handleSubmit = useCallback(
     (text: string, editor: LexicalEditor) => {
@@ -282,6 +321,7 @@ export function NotesPanel({
               <HistoryPlugin />
               <OnChangePlugin onChange={handleEditorChange} />
               <EditorRefPlugin editorRef={editorRef} />
+              <AutoFocusPlugin autoFocus={autoFocus} />
               <KeyValuePlugin />
               <PillInteractionPlugin />
               <SubmitPlugin onSubmit={handleSubmit} />
