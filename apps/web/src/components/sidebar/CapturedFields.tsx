@@ -5,7 +5,7 @@
  * Each field shows name, value, confidence score (if LLM-extracted), and info icon.
  * All fields are clickable to open edit modal.
  *
- * Dynamically reads field definitions from shortcuts.json - no manual field mapping needed.
+ * Dynamically reads field definitions from UserProfile metadata - no manual field mapping needed.
  */
 
 import {
@@ -20,7 +20,7 @@ import {
   FIELD_METADATA,
   type FieldCommand,
 } from '@/config/shortcuts'
-import shortcutsData from '@/config/shortcuts.json'
+import { userProfileFieldMetadata } from '@repo/shared'
 import type { UserProfile } from '@repo/shared'
 import { Info } from 'lucide-react'
 
@@ -38,8 +38,8 @@ interface CapturedFieldsProps {
 }
 
 /**
- * Map shortcuts.json categories to display categories
- * Maps from shortcuts.json category names to internal category keys
+ * Map metadata categories to display categories
+ * Maps from metadata category names to internal category keys
  */
 const CATEGORY_MAP: Record<string, string> = {
   'Identity & Contact': 'identity',
@@ -60,7 +60,7 @@ const CATEGORY_LABELS: Record<string, string> = {
 }
 
 export function CapturedFields({ profile, onFieldClick }: CapturedFieldsProps) {
-  // Organize fields by category - dynamically from shortcuts.json
+  // Organize fields by category - dynamically from UserProfile metadata
   const fieldsByCategory: Record<string, CapturedField[]> = {
     identity: [],
     location: [],
@@ -68,21 +68,16 @@ export function CapturedFields({ profile, onFieldClick }: CapturedFieldsProps) {
     details: [],
   }
 
-  // Iterate through all field shortcuts from shortcuts.json
-  const fieldShortcuts = shortcutsData.shortcuts.filter(
-    (s): s is typeof shortcutsData.shortcuts[0] & { type: 'field'; category: string; command: string } =>
-      s.type === 'field' && s.category !== undefined && s.command !== undefined
-  )
-
-  for (const shortcut of fieldShortcuts) {
-    const command = shortcut.command as FieldCommand
+  // Iterate through all fields from UserProfile metadata
+  for (const [field, metadata] of Object.entries(userProfileFieldMetadata)) {
+    const command = field as FieldCommand
     const fieldName = COMMAND_TO_FIELD_NAME[command]
-    const metadata = FIELD_METADATA[command]
+    const fieldMetadata = FIELD_METADATA[command]
 
-    if (!fieldName || !metadata) continue
+    if (!fieldName || !fieldMetadata) continue
 
-    // Map shortcuts.json category to display category
-    const displayCategory = CATEGORY_MAP[shortcut.category] || 'details'
+    // Map metadata category to display category
+    const displayCategory = CATEGORY_MAP[metadata.category] || 'details'
 
     // Check if field exists in profile
     const profileValue = (profile as Record<string, unknown>)[fieldName]
@@ -97,7 +92,7 @@ export function CapturedFields({ profile, onFieldClick }: CapturedFieldsProps) {
       }
 
       fieldsByCategory[displayCategory]?.push({
-        name: metadata.label,
+        name: fieldMetadata.label,
         value: displayValue,
         category: displayCategory,
         fieldKey: fieldName,

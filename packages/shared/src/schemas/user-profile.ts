@@ -26,8 +26,14 @@ export type ExistingPolicy = z.infer<typeof existingPolicySchema>
  * Progressive disclosure pattern: most fields optional
  */
 export const userProfileSchema = z.object({
+  // Contact information
+  name: z.string().optional(),
+  email: z.string().email().optional(),
+  phone: z.string().optional(),
+
   // Required for routing
   state: z.string().optional(), // US state code (required for routing, but optional for progressive disclosure)
+  zip: z.string().optional(), // Zip code
 
   // Product type
   productLine: z.enum(['auto', 'home', 'renters', 'umbrella']).optional(),
@@ -35,17 +41,31 @@ export const userProfileSchema = z.object({
   // Optional demographic fields
   age: z.number().int().positive().optional(),
   householdSize: z.number().int().positive().optional(),
+  dependents: z.number().int().nonnegative().optional(),
   vehicles: z.number().int().nonnegative().optional(), // Required for auto, but optional for progressive disclosure
   ownsHome: z.boolean().optional(),
+
+  // Vehicle details (for auto insurance)
+  garage: z.string().optional(), // Garage type
+  vins: z.string().optional(), // Vehicle Identification Numbers (can be multiple, space-separated)
+  drivers: z.number().int().nonnegative().optional(), // Number of drivers
+  drivingRecords: z.string().optional(), // Driving record details
 
   // Optional eligibility fields
   cleanRecord3Yr: z.boolean().optional(), // Clean driving record (3 years)
   creditScore: z.number().int().min(300).max(850).optional(), // Credit score (FICO range)
   propertyType: z.enum(['single-family', 'condo', 'townhouse', 'mobile-home', 'duplex', 'apartment']).optional(), // Property type for home/renters insurance
 
+  // Property details (for home/renters insurance)
+  constructionYear: z.number().int().positive().optional(),
+  roofType: z.string().optional(),
+  squareFeet: z.number().int().positive().optional(),
+
   // Optional current policy fields (for policy analysis flow)
   currentCarrier: z.string().optional(),
   currentPremium: z.number().positive().optional(),
+  deductibles: z.string().optional(), // Current deductibles
+  limits: z.string().optional(), // Current coverage limits
 
   // Existing policies array for bundle discount analysis
   existingPolicies: z.array(existingPolicySchema).optional(),

@@ -33,7 +33,7 @@ export function FieldModal({ open, onOpenChange, field, onSubmit, initialValue }
   const handleSubmit = () => {
     if (!field) return
 
-    // Validation based on field type (derived from shortcuts.json)
+    // Validation based on field type (derived from UserProfile metadata)
     const fieldType = FIELD_TYPE[field]
     if (fieldType === 'numeric') {
       const num = Number.parseInt(value, 10)
@@ -68,7 +68,7 @@ export function FieldModal({ open, onOpenChange, field, onSubmit, initialValue }
 
   const shortcutPrefix = `${metadata.shortcut}:`
 
-  // Determine input type based on field (derived from shortcuts.json)
+  // Determine input type based on field (derived from UserProfile metadata)
   const getInputType = (): 'text' | 'number' | 'email' | 'tel' => {
     if (FIELD_TYPE[field] === 'numeric') {
       return 'number'
@@ -79,7 +79,7 @@ export function FieldModal({ open, onOpenChange, field, onSubmit, initialValue }
     return 'text'
   }
 
-  // Get placeholder based on field type (derived from shortcuts.json)
+  // Get placeholder based on field type (derived from UserProfile metadata)
   const getPlaceholder = (): string => {
     const fieldType = FIELD_TYPE[field]
     if (fieldType === 'numeric') {

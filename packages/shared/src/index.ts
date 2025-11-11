@@ -22,6 +22,17 @@ export {
   type ExistingPolicy,
 } from './schemas/user-profile'
 
+// Export user profile field metadata
+export {
+  userProfileFieldMetadata,
+  getFieldMetadata,
+  getFieldsWithShortcuts,
+  getFieldShortcut,
+  getFieldFromShortcut,
+  getFieldFromAlias,
+  type FieldMetadata,
+} from './schemas/user-profile-metadata'
+
 // Export intake result schema and types
 export {
   intakeResultSchema,

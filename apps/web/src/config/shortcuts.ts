@@ -1,191 +1,184 @@
 /**
  * Keyboard Shortcuts Configuration
  *
- * This file reads shortcut definitions from shortcuts.json and provides
- * type-safe accessors and helper functions.
+ * This file provides type-safe accessors and helper functions for keyboard shortcuts.
+ * Field shortcuts are derived from UserProfile schema metadata (shared package).
+ * Action shortcuts are UI-only and defined separately.
  *
- * To modify shortcuts, edit shortcuts.json instead of this file.
- * Each shortcut is defined once in JSON with all its properties.
+ * @see packages/shared/src/schemas/user-profile-metadata.ts
+ * @see apps/web/src/config/action-shortcuts.ts
  */
 
-import shortcutsData from './shortcuts.json'
+import type { UserProfile } from '@repo/shared'
+import {
+  userProfileFieldMetadata,
+  getFieldFromShortcut,
+  getFieldFromAlias,
+  type FieldMetadata as SharedFieldMetadata,
+} from '@repo/shared'
+import {
+  ACTION_SHORTCUTS as ACTION_SHORTCUTS_IMPORT,
+  getActionCommand as getActionCommandImport,
+  isActionShortcut as isActionShortcutImport,
+  couldBeActionShortcut as couldBeActionShortcutImport,
+  getActionShortcutsDisplay,
+  type ActionCommand as ActionCommandImport,
+} from './action-shortcuts'
 
 // ============================================================================
-// JSON Data Structure
+// Type Definitions
 // ============================================================================
 
-interface ShortcutDefinition {
-  type: 'field' | 'action'
-  key: string
-  command: string
-  label: string
-  question?: string // Only for field shortcuts
-  category?: string // Only for field shortcuts
-  fieldType?: 'numeric' | 'string' // Only for field shortcuts
-  aliases?: string[] // Optional: array of aliases for this shortcut
-}
+/**
+ * Field command type - matches UserProfile field names
+ */
+export type FieldCommand = keyof UserProfile
 
-interface ShortcutsData {
-  shortcuts: ShortcutDefinition[]
-}
+/**
+ * Action command type - re-exported from action-shortcuts
+ */
+export type ActionCommand = ActionCommandImport
 
 // ============================================================================
-// Extract and Build Data Structures
+// Field Shortcuts Data Structures
 // ============================================================================
 
-const data = shortcutsData as ShortcutsData
+/**
+ * Extract field commands from metadata (only fields with shortcuts)
+ */
+const fieldCommandsWithShortcuts = Object.entries(userProfileFieldMetadata)
+  .filter(([, metadata]) => metadata.shortcut !== '')
+  .map(([field]) => field as FieldCommand)
 
-// Extract unique commands at runtime for type inference
-const fieldCommandsArray = [
-  ...new Set(data.shortcuts.filter((s) => s.type === 'field').map((s) => s.command)),
-] as const
-
-const actionCommandsArray = [
-  ...new Set(data.shortcuts.filter((s) => s.type === 'action').map((s) => s.command)),
-] as const
-
-// Derive types from shortcuts.json - no hardcoding needed
-export type FieldCommand = (typeof fieldCommandsArray)[number]
-export type ActionCommand = (typeof actionCommandsArray)[number]
-
-// Maps commands to their actual field names
-// Commands match UserProfile field names directly, so this is just an identity mapping
-// Generated dynamically from shortcuts.json - no manual updates needed
+/**
+ * Maps commands to their actual field names
+ * Commands match UserProfile field names directly, so this is just an identity mapping
+ */
 export const COMMAND_TO_FIELD_NAME: Record<FieldCommand, string> = Object.fromEntries(
-  data.shortcuts
-    .filter(
-      (
-        s
-      ): s is ShortcutDefinition & {
-        type: 'field'
-        command: FieldCommand
-      } => s.type === 'field'
-    )
-    .map((s) => [s.command, s.command]) // Command IS the field name
+  fieldCommandsWithShortcuts.map((field) => [field, field])
 ) as Record<FieldCommand, string>
 
-// Extract numeric fields as a Set for fast lookup
-// Derived from field shortcuts with fieldType === 'numeric'
-// Uses command directly as field name (since they match)
+/**
+ * Extract numeric fields as a Set for fast lookup
+ */
 export const NUMERIC_FIELDS = new Set<string>(
-  data.shortcuts
-    .filter(
-      (
-        s
-      ): s is ShortcutDefinition & {
-        type: 'field'
-        command: FieldCommand
-        fieldType: 'numeric'
-      } => s.type === 'field' && s.fieldType === 'numeric'
-    )
-    .map((s) => s.command) // Command IS the field name
+  Object.entries(userProfileFieldMetadata)
+    .filter(([, metadata]) => metadata.fieldType === 'numeric')
+    .map(([field]) => field)
 )
 
-// Extract field shortcuts: key -> command mapping
+/**
+ * Extract field shortcuts: key -> command mapping
+ */
 export const FIELD_SHORTCUTS: Record<string, FieldCommand> = Object.fromEntries(
-  data.shortcuts
-    .filter(
-      (s): s is ShortcutDefinition & { type: 'field'; command: FieldCommand } => s.type === 'field'
-    )
-    .map((s) => [s.key, s.command])
+  Object.entries(userProfileFieldMetadata)
+    .filter(([, metadata]) => metadata.shortcut !== '')
+    .map(([field, metadata]) => [metadata.shortcut, field as FieldCommand])
 ) as Record<string, FieldCommand>
 
-// Extract action shortcuts: key -> command mapping
-export const ACTION_SHORTCUTS: Record<string, ActionCommand> = Object.fromEntries(
-  data.shortcuts
-    .filter(
-      (s): s is ShortcutDefinition & { type: 'action'; command: ActionCommand } =>
-        s.type === 'action'
-    )
-    .map((s) => [s.key, s.command])
-) as Record<string, ActionCommand>
+/**
+ * Extract action shortcuts: key -> command mapping
+ * Re-exported from action-shortcuts for backward compatibility
+ */
+export const ACTION_SHORTCUTS = ACTION_SHORTCUTS_IMPORT
 
-// Extract field metadata: command -> metadata mapping
+/**
+ * Field metadata interface (matches old structure for backward compatibility)
+ */
 export interface FieldMetadata {
   label: string
   question: string
   shortcut: string
 }
 
+/**
+ * Extract field metadata: command -> metadata mapping
+ */
 export const FIELD_METADATA: Record<FieldCommand, FieldMetadata> = Object.fromEntries(
-  data.shortcuts
-    .filter(
-      (
-        s
-      ): s is ShortcutDefinition & {
-        type: 'field'
-        command: FieldCommand
-        question: string
-        category: string
-      } => s.type === 'field' && s.question !== undefined && s.category !== undefined
-    )
-    .map((s) => [
-      s.command,
-      {
-        label: s.label,
-        question: s.question,
-        shortcut: s.key,
-      },
-    ])
+  Object.entries(userProfileFieldMetadata).map(([field, metadata]) => [
+    field as FieldCommand,
+    {
+      label: metadata.label,
+      question: metadata.question,
+      shortcut: metadata.shortcut,
+    },
+  ])
 ) as Record<FieldCommand, FieldMetadata>
 
-// Extract field type (numeric vs string) for each command
+/**
+ * Extract field type (numeric vs string) for each command
+ */
 export const FIELD_TYPE: Record<FieldCommand, 'numeric' | 'string'> = Object.fromEntries(
-  data.shortcuts
-    .filter(
-      (
-        s
-      ): s is ShortcutDefinition & {
-        type: 'field'
-        command: FieldCommand
-        fieldType: 'numeric' | 'string'
-      } => s.type === 'field' && s.fieldType !== undefined
-    )
-    .map((s) => [s.command, s.fieldType])
+  Object.entries(userProfileFieldMetadata).map(([field, metadata]) => [
+    field as FieldCommand,
+    metadata.fieldType,
+  ])
 ) as Record<FieldCommand, 'numeric' | 'string'>
 
-// Reverse mapping: command → key (for field injection)
+/**
+ * Reverse mapping: command → key (for field injection)
+ */
 export const COMMAND_TO_KEY: Record<FieldCommand, string> = Object.fromEntries(
-  data.shortcuts
-    .filter(
-      (
-        s
-      ): s is ShortcutDefinition & {
-        type: 'field'
-        command: FieldCommand
-      } => s.type === 'field'
-    )
-    .map((s) => [s.command, s.key])
+  Object.entries(userProfileFieldMetadata)
+    .filter(([, metadata]) => metadata.shortcut !== '')
+    .map(([field, metadata]) => [field as FieldCommand, metadata.shortcut])
 ) as Record<FieldCommand, string>
 
-// Extract field shortcuts display: grouped by category
+/**
+ * Extract aliases mapping (alias → command)
+ */
+export const FIELD_ALIASES_MAP: Record<string, FieldCommand> = (() => {
+  const aliasMap: Record<string, FieldCommand> = {}
+
+  for (const [field, metadata] of Object.entries(userProfileFieldMetadata)) {
+    const fieldMetadata = metadata as SharedFieldMetadata
+    if (fieldMetadata.aliases) {
+      for (const alias of fieldMetadata.aliases) {
+        aliasMap[alias] = field as FieldCommand
+      }
+    }
+  }
+
+  return aliasMap
+})()
+
+// ============================================================================
+// Display Data Structures
+// ============================================================================
+
+/**
+ * Field shortcut display format
+ */
 export interface FieldShortcutDisplay {
   key: string
   field: string
 }
 
+/**
+ * Field shortcut category
+ */
 export interface FieldShortcutCategory {
   category: string
   shortcuts: FieldShortcutDisplay[]
 }
 
+/**
+ * Extract field shortcuts display: grouped by category
+ */
 export const FIELD_SHORTCUTS_DISPLAY: FieldShortcutCategory[] = (() => {
-  const fieldShortcuts = data.shortcuts.filter(
-    (s): s is ShortcutDefinition & { type: 'field'; category: string } =>
-      s.type === 'field' && s.category !== undefined
-  )
-
   const categoryMap = new Map<string, FieldShortcutDisplay[]>()
 
-  for (const shortcut of fieldShortcuts) {
+  for (const [field, metadata] of Object.entries(userProfileFieldMetadata)) {
+    if (metadata.shortcut === '') continue
+
     const display: FieldShortcutDisplay = {
-      key: `/${shortcut.key}`,
-      field: shortcut.label,
+      key: `/${metadata.shortcut}`,
+      field: metadata.label,
     }
 
-    const existing = categoryMap.get(shortcut.category) || []
+    const existing = categoryMap.get(metadata.category) || []
     existing.push(display)
-    categoryMap.set(shortcut.category, existing)
+    categoryMap.set(metadata.category, existing)
   }
 
   return Array.from(categoryMap.entries()).map(([category, shortcuts]) => ({
@@ -194,65 +187,19 @@ export const FIELD_SHORTCUTS_DISPLAY: FieldShortcutCategory[] = (() => {
   }))
 })()
 
-// Extract action shortcuts display
+/**
+ * Action shortcut display format
+ */
 export interface ActionShortcutDisplay {
   key: string
   action: string
 }
 
-export const ACTION_SHORTCUTS_DISPLAY: ActionShortcutDisplay[] = (() => {
-  const actionShortcuts = data.shortcuts.filter(
-    (s): s is ShortcutDefinition & { type: 'action' } => s.type === 'action'
-  )
-
-  // Group by command to handle aliases
-  const commandMap = new Map<ActionCommand, ActionShortcutDisplay>()
-
-  for (const shortcut of actionShortcuts) {
-    const command = shortcut.command as ActionCommand
-
-    // Special handling for help command - combine "help" and "?" into one entry
-    if (command === 'help') {
-      const existing = commandMap.get('help')
-      if (existing) {
-        if (existing.key === '/help' && shortcut.key === '?') {
-          existing.key = '/help or /?'
-        }
-      } else {
-        commandMap.set(command, {
-          key: shortcut.key === '?' ? '/help or /?' : `/${shortcut.key}`,
-          action: shortcut.label,
-        })
-      }
-    } else {
-      // For other commands, use the first key we encounter
-      if (!commandMap.has(command)) {
-        commandMap.set(command, {
-          key: `/${shortcut.key}`,
-          action: shortcut.label,
-        })
-      }
-    }
-  }
-
-  return Array.from(commandMap.values())
-})()
-
-// Extract aliases mapping (alias → command)
-// Built from aliases arrays in each shortcut definition
-export const FIELD_ALIASES_MAP: Record<string, FieldCommand> = (() => {
-  const aliasMap: Record<string, FieldCommand> = {}
-
-  for (const shortcut of data.shortcuts) {
-    if (shortcut.type === 'field' && shortcut.aliases) {
-      for (const alias of shortcut.aliases) {
-        aliasMap[alias] = shortcut.command as FieldCommand
-      }
-    }
-  }
-
-  return aliasMap
-})()
+/**
+ * Extract action shortcuts display
+ * Re-exported from action-shortcuts
+ */
+export const ACTION_SHORTCUTS_DISPLAY = getActionShortcutsDisplay()
 
 // ============================================================================
 // Field Delimiter Configuration
@@ -296,7 +243,8 @@ export const SPECIAL_CHAR_FIELDS: Record<FieldCommand, string[]> = {
  * Get the shortcut letter for a field command
  */
 export function getFieldShortcut(field: FieldCommand): string | undefined {
-  return Object.entries(FIELD_SHORTCUTS).find(([, cmd]) => cmd === field)?.[0]
+  const metadata = userProfileFieldMetadata[field]
+  return metadata?.shortcut || undefined
 }
 
 /**
@@ -310,7 +258,7 @@ export function isFieldShortcut(buffer: string): buffer is FieldCommand {
  * Check if a buffer matches an action shortcut
  */
 export function isActionShortcut(buffer: string): buffer is ActionCommand {
-  return buffer in ACTION_SHORTCUTS
+  return isActionShortcutImport(buffer)
 }
 
 /**
@@ -323,22 +271,20 @@ export function getFieldCommand(buffer: string): FieldCommand | undefined {
     return FIELD_SHORTCUTS[buffer]
   }
   // Check aliases
-  if (buffer in FIELD_ALIASES_MAP) {
-    return FIELD_ALIASES_MAP[buffer]
-  }
-  return undefined
+  const fieldFromAlias = getFieldFromAlias(buffer)
+  return fieldFromAlias || undefined
 }
 
 /**
  * Get action command from buffer
  */
 export function getActionCommand(buffer: string): ActionCommand | undefined {
-  return ACTION_SHORTCUTS[buffer]
+  return getActionCommandImport(buffer)
 }
 
 /**
  * Check if a buffer could be the start of an action shortcut
  */
 export function couldBeActionShortcut(buffer: string): boolean {
-  return Object.keys(ACTION_SHORTCUTS).some((key) => key.startsWith(buffer))
+  return couldBeActionShortcutImport(buffer)
 }

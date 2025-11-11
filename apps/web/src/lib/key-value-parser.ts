@@ -25,9 +25,9 @@ export interface ParsedKeyValue {
 }
 
 /**
- * Field aliases mapping (derived from shortcuts.json)
+ * Field aliases mapping (derived from UserProfile metadata)
  * Maps keys/aliases → commands → field names
- * This ensures no drift - shortcuts.json is the single source of truth
+ * This ensures no drift - UserProfile schema is the single source of truth
  */
 const FIELD_ALIASES: Record<string, string> = (() => {
   const aliases: Record<string, string> = {}
@@ -42,7 +42,7 @@ const FIELD_ALIASES: Record<string, string> = (() => {
     }
   }
 
-  // Add convenience aliases from shortcuts.json (e.g., "deps" → "dependents")
+  // Add convenience aliases from UserProfile metadata (e.g., "deps" → "dependents")
   for (const [alias, command] of Object.entries(FIELD_ALIASES_MAP)) {
     const fieldName = COMMAND_TO_FIELD_NAME[command]
     if (fieldName) {
