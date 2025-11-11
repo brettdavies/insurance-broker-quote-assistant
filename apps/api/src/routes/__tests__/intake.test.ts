@@ -486,5 +486,142 @@ describe('POST /api/intake', () => {
       // Compliance should be validated
       expect(body.complianceValidated).toBe(true)
     })
+
+    it('should block prohibited phrases end-to-end and replace with handoff message', async () => {
+      // Set NODE_ENV to test to enable testPitch injection
+      const originalEnv = process.env.NODE_ENV
+      process.env.NODE_ENV = 'test'
+
+      try {
+        const req = new Request('http://localhost/api/intake', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            message: 's:CA l:auto',
+            testPitch: 'We guarantee the lowest rate for your auto insurance!',
+          }),
+        })
+
+        const res = await app.request(req)
+        expect(res.status).toBe(200)
+
+        const body = (await res.json()) as {
+          pitch?: string
+          complianceValidated?: boolean
+          trace?: {
+            complianceCheck?: {
+              passed?: boolean
+              violations?: string[]
+            }
+          }
+        }
+
+        // Compliance check should have failed
+        expect(body.complianceValidated).toBe(false)
+
+        // Pitch should be replaced with licensed agent handoff message
+        expect(body.pitch).toBeDefined()
+        expect(body.pitch).toContain('licensed insurance agent')
+        expect(body.pitch).toContain('contact your broker')
+
+        // Violations should be logged in decision trace
+        expect(body.trace?.complianceCheck).toBeDefined()
+        expect(body.trace?.complianceCheck?.passed).toBe(false)
+        expect(body.trace?.complianceCheck?.violations).toBeDefined()
+        expect(Array.isArray(body.trace?.complianceCheck?.violations)).toBe(true)
+        expect(body.trace?.complianceCheck?.violations?.length).toBeGreaterThan(0)
+        expect(
+          body.trace?.complianceCheck?.violations?.some((v) =>
+            v.toLowerCase().includes('guarantee')
+          )
+        ).toBe(true)
+      } finally {
+        // Restore original NODE_ENV
+        process.env.NODE_ENV = originalEnv
+      }
+    })
+
+    it('should detect multiple prohibited phrases and log all violations', async () => {
+      const originalEnv = process.env.NODE_ENV
+      process.env.NODE_ENV = 'test'
+
+      try {
+        const req = new Request('http://localhost/api/intake', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            message: 's:TX l:home',
+            testPitch:
+              'We guarantee the best price guaranteed and you will save money with our binding quote!',
+          }),
+        })
+
+        const res = await app.request(req)
+        expect(res.status).toBe(200)
+
+        const body = (await res.json()) as {
+          complianceValidated?: boolean
+          trace?: {
+            complianceCheck?: {
+              passed?: boolean
+              violations?: string[]
+            }
+          }
+        }
+
+        // Compliance check should have failed
+        expect(body.complianceValidated).toBe(false)
+
+        // Should detect multiple violations
+        expect(body.trace?.complianceCheck?.violations).toBeDefined()
+        expect(body.trace?.complianceCheck?.violations?.length).toBeGreaterThan(1)
+      } finally {
+        process.env.NODE_ENV = originalEnv
+      }
+    })
+
+    it('should pass compliance check for valid pitch without prohibited phrases', async () => {
+      const originalEnv = process.env.NODE_ENV
+      process.env.NODE_ENV = 'test'
+
+      try {
+        const req = new Request('http://localhost/api/intake', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            message: 's:FL l:renters',
+            testPitch:
+              'Based on your profile, we have found several insurance options that may meet your needs. Rates are subject to underwriting and approval.',
+          }),
+        })
+
+        const res = await app.request(req)
+        expect(res.status).toBe(200)
+
+        const body = (await res.json()) as {
+          pitch?: string
+          complianceValidated?: boolean
+          trace?: {
+            complianceCheck?: {
+              passed?: boolean
+              violations?: string[]
+            }
+          }
+        }
+
+        // Compliance check should have passed
+        expect(body.complianceValidated).toBe(true)
+
+        // Original pitch should be preserved (not replaced)
+        expect(body.pitch).toBeDefined()
+        expect(body.pitch).toContain('Based on your profile')
+
+        // No violations should be logged
+        expect(body.trace?.complianceCheck?.passed).toBe(true)
+        expect(body.trace?.complianceCheck?.violations).toBeUndefined()
+      } finally {
+        process.env.NODE_ENV = originalEnv
+      }
+    })
   })
 })

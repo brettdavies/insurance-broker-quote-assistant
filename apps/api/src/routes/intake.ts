@@ -20,6 +20,9 @@ import { logError } from '../utils/logger'
 const intakeRequestSchema = z.object({
   message: z.string().min(1),
   conversationHistory: z.array(z.string()).optional(),
+  // Test-only field: allows injecting a pitch for end-to-end compliance testing
+  // Only accepted when NODE_ENV=test
+  testPitch: z.string().optional(),
 })
 
 type IntakeRequest = z.infer<typeof intakeRequestSchema>
@@ -52,7 +55,7 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
         )
       }
 
-      const { message, conversationHistory } = validationResult.data
+      const { message, conversationHistory, testPitch } = validationResult.data
 
       // Extract fields using Conversational Extractor
       const extractionResult = await extractor.extractFields(message, conversationHistory)
@@ -71,7 +74,11 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
       }
 
       // Generate pitch (currently empty for MVP, but compliance filter runs on it)
+      // In test mode, allow injecting a pitch via testPitch for end-to-end compliance testing
       let pitch = ''
+      if (process.env.NODE_ENV === 'test' && testPitch !== undefined && testPitch !== null) {
+        pitch = testPitch
+      }
 
       // Run compliance filter on pitch
       let complianceResult: ReturnType<typeof validateOutput>
