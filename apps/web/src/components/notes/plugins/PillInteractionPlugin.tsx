@@ -26,12 +26,27 @@ import {
   TextNode,
 } from 'lexical'
 import { useEffect } from 'react'
-import { $isPillNode } from '../nodes/PillNode'
+import { $isPillNode, type PillNode } from '../nodes/PillNode'
 
-export function PillInteractionPlugin(): null {
+interface PillInteractionPluginProps {
+  onFieldRemoved?: (fieldName: string) => void
+}
+
+export function PillInteractionPlugin({ onFieldRemoved }: PillInteractionPluginProps = {}): null {
   const [editor] = useLexicalComposerContext()
 
   useEffect(() => {
+    // Helper to remove a pill and notify if it's a valid field
+    const removePillAndNotify = (node: PillNode) => {
+      const fieldName = node.getFieldName()
+      if (fieldName && node.getValidation() === 'valid') {
+        // Notify outside of editor.update() to avoid nested updates
+        setTimeout(() => {
+          onFieldRemoved?.(fieldName)
+        }, 0)
+      }
+      node.remove()
+    }
     // Handle backspace/delete to remove pills atomically
     const removeBackspaceListener = editor.registerCommand(
       KEY_BACKSPACE_COMMAND,
@@ -42,7 +57,7 @@ export function PillInteractionPlugin(): null {
         const nodes = selection.getNodes()
         for (const node of nodes) {
           if ($isPillNode(node)) {
-            node.remove()
+            removePillAndNotify(node)
             event?.preventDefault()
             return true
           }
@@ -54,7 +69,7 @@ export function PillInteractionPlugin(): null {
             selection.isCollapsed() &&
             selection.anchor.offset === 0
           ) {
-            prevSibling.remove()
+            removePillAndNotify(prevSibling)
             event?.preventDefault()
             return true
           }
@@ -74,7 +89,7 @@ export function PillInteractionPlugin(): null {
         const nodes = selection.getNodes()
         for (const node of nodes) {
           if ($isPillNode(node)) {
-            node.remove()
+            removePillAndNotify(node)
             event?.preventDefault()
             return true
           }
@@ -87,7 +102,7 @@ export function PillInteractionPlugin(): null {
             selection.isCollapsed() &&
             selection.anchor.offset === text.length
           ) {
-            nextSibling.remove()
+            removePillAndNotify(nextSibling)
             event?.preventDefault()
             return true
           }
@@ -297,7 +312,7 @@ export function PillInteractionPlugin(): null {
       removeArrowRightListener()
       removeClickListener()
     }
-  }, [editor])
+  }, [editor, onFieldRemoved])
 
   return null
 }

@@ -13,7 +13,7 @@ import { HelpModal } from '@/components/shortcuts/HelpModal'
 import type { MissingField } from '@/components/sidebar/MissingFields'
 import { Sidebar } from '@/components/sidebar/Sidebar'
 import { useToast } from '@/components/ui/use-toast'
-import { FIELD_METADATA, FIELD_SHORTCUTS } from '@/config/shortcuts'
+import { COMMAND_TO_KEY, FIELD_METADATA, FIELD_SHORTCUTS } from '@/config/shortcuts'
 import { useIntake } from '@/hooks/useIntake'
 import type { ActionCommand, FieldCommand } from '@/hooks/useSlashCommands'
 import { calculateMissingFields } from '@/lib/missing-fields'
@@ -32,7 +32,11 @@ interface UnifiedChatInterfaceProps {
   onContentChange?: (content: string) => void
   onActionCommand?: (command: ActionCommand) => void
   onCommandError?: (command: string) => void
-  editorRef?: React.MutableRefObject<{ focus: () => void; clear: () => void } | null>
+  editorRef?: React.MutableRefObject<{
+    focus: () => void
+    clear: () => void
+    insertText: (text: string) => void
+  } | null>
 }
 
 export function UnifiedChatInterface({
@@ -55,7 +59,11 @@ export function UnifiedChatInterface({
     value?: string | number | boolean
   } | null>(null)
   const [helpModalOpen, setHelpModalOpen] = useState(false)
-  const internalEditorRef = useRef<{ focus: () => void; clear: () => void } | null>(null)
+  const internalEditorRef = useRef<{
+    focus: () => void
+    clear: () => void
+    insertText: (text: string) => void
+  } | null>(null)
   const editorRef = externalEditorRef || internalEditorRef
 
   const { toast } = useToast()
@@ -88,6 +96,29 @@ export function UnifiedChatInterface({
       setMissingFields(fieldMetadata)
     }
   }, [profile])
+
+  // Handle field removal when pill is deleted
+  const handleFieldRemoved = useCallback(
+    (fieldName: string) => {
+      // Remove field from profile
+      setProfile((prev) => {
+        const updated = { ...prev }
+        delete updated[fieldName as keyof UserProfile]
+        profileRef.current = updated // Keep ref in sync
+        return updated
+      })
+
+      // Show toast
+      setTimeout(() => {
+        toast({
+          title: 'Field removed',
+          description: `${fieldName} has been removed`,
+          duration: 3000,
+        })
+      }, 0)
+    },
+    [toast]
+  )
 
   // Handle field extraction from pills
   const handleFieldExtracted = useCallback(
@@ -221,35 +252,24 @@ export function UnifiedChatInterface({
   )
 
   // Handle field modal submit
+  // Only inserts text into editor - profile update happens via normal pill extraction flow
   const handleFieldModalSubmit = useCallback(
     (value: string) => {
       if (currentField) {
-        // Update profile
-        const updatedProfile = { ...profile }
-        const numValue = Number.parseInt(value, 10)
-        if (!Number.isNaN(numValue)) {
-          updatedProfile[currentField.key as keyof UserProfile] = numValue as never
-        } else if (value === 'true' || value === 'false') {
-          updatedProfile[currentField.key as keyof UserProfile] = (value === 'true') as never
-        } else {
-          updatedProfile[currentField.key as keyof UserProfile] = value as never
-        }
-        setProfile(updatedProfile)
+        // Get shortcut key for the field command
+        const fieldCommand = currentField.key as FieldCommand
+        const shortcutKey = COMMAND_TO_KEY[fieldCommand]
 
-        // Show toast
-        toast({
-          title: 'Field captured',
-          description: `${currentField.key}: ${value}`,
-          duration: 5000,
-        })
-
-        // Update missing fields (remove if was missing)
-        setMissingFields((prev) => prev.filter((f) => f.fieldKey !== currentField.key))
+        // Insert field as key-value pair into editor (e.g., "k:2 " or "email:user@example.com ")
+        // The KeyValuePlugin will parse this and create a pill, which will trigger handleFieldExtracted
+        // This ensures the field appears in the textbox and follows the normal extraction flow
+        const pillText = `${shortcutKey}:${value} `
+        editorRef.current?.insertText(pillText)
       }
       setFieldModalOpen(false)
       setCurrentField(null)
     },
-    [currentField, profile, toast]
+    [currentField, editorRef]
   )
 
   // Calculate captured count
@@ -416,6 +436,7 @@ export function UnifiedChatInterface({
               <NotesPanel
                 mode={mode}
                 onFieldExtracted={handleFieldExtracted}
+                onFieldRemoved={handleFieldRemoved}
                 onContentChange={handleContentChange}
                 onActionCommand={handleActionCommandMerged}
                 onCommandError={handleCommandErrorMerged}

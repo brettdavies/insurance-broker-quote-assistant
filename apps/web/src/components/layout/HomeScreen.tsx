@@ -4,7 +4,11 @@ import { useCallback, useRef, useState } from 'react'
 
 export function HomeScreen() {
   const [isActive, setIsActive] = useState(false)
-  const editorRef = useRef<{ focus: () => void; clear: () => void } | null>(null)
+  const editorRef = useRef<{
+    focus: () => void
+    clear: () => void
+    insertText: (text: string) => void
+  } | null>(null)
 
   // Handle content change - trigger transition on first keystroke or field injection
   const handleContentChange = useCallback(

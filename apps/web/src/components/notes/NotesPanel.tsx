@@ -20,7 +20,14 @@ import { LexicalErrorBoundary } from '@lexical/react/LexicalErrorBoundary'
 import { HistoryPlugin } from '@lexical/react/LexicalHistoryPlugin'
 import { OnChangePlugin } from '@lexical/react/LexicalOnChangePlugin'
 import { PlainTextPlugin } from '@lexical/react/LexicalPlainTextPlugin'
-import { $getNodeByKey, $getRoot, $insertNodes, type EditorState, TextNode } from 'lexical'
+import {
+  $getNodeByKey,
+  $getRoot,
+  $insertNodes,
+  $isTextNode,
+  type EditorState,
+  TextNode,
+} from 'lexical'
 import { useCallback, useEffect, useState } from 'react'
 import { $isPillNode, PillNode } from './nodes/PillNode'
 import { KeyValuePlugin } from './plugins/KeyValuePlugin'
@@ -29,10 +36,15 @@ import { PillInteractionPlugin } from './plugins/PillInteractionPlugin'
 interface NotesPanelProps {
   mode?: 'intake' | 'policy'
   onFieldExtracted?: (fields: Record<string, string | number>) => void
+  onFieldRemoved?: (fieldName: string) => void
   onContentChange?: (content: string) => void
   onActionCommand?: (command: ActionCommand) => void
   onCommandError?: (command: string) => void
-  editorRef?: React.MutableRefObject<{ focus: () => void; clear: () => void } | null>
+  editorRef?: React.MutableRefObject<{
+    focus: () => void
+    clear: () => void
+    insertText: (text: string) => void
+  } | null>
   autoFocus?: boolean
 }
 
@@ -57,7 +69,11 @@ const editorConfig = {
 function EditorRefPlugin({
   editorRef,
 }: {
-  editorRef?: React.MutableRefObject<{ focus: () => void; clear: () => void } | null>
+  editorRef?: React.MutableRefObject<{
+    focus: () => void
+    clear: () => void
+    insertText: (text: string) => void
+  } | null>
 }): null {
   const [editor] = useLexicalComposerContext()
 
@@ -73,6 +89,25 @@ function EditorRefPlugin({
         clear: () => {
           editor.update(() => {
             $getRoot().clear()
+          })
+        },
+        insertText: (text: string) => {
+          editor.update(() => {
+            const root = $getRoot()
+            const lastChild = root.getLastChild()
+
+            // If there's existing text, append to it; otherwise create new node
+            if (lastChild && $isTextNode(lastChild)) {
+              const currentText = lastChild.getTextContent()
+              lastChild.setTextContent(currentText + text)
+              // Select at the end of the text
+              lastChild.select(lastChild.getTextContentSize(), lastChild.getTextContentSize())
+            } else {
+              const textNode = new TextNode(text)
+              root.append(textNode)
+              // Select at the end of the text
+              textNode.select(textNode.getTextContentSize(), textNode.getTextContentSize())
+            }
           })
         },
       }
@@ -202,6 +237,7 @@ function FieldInjectionPlugin({
 export function NotesPanel({
   mode = 'intake',
   onFieldExtracted,
+  onFieldRemoved,
   onContentChange,
   onActionCommand,
   onCommandError,
@@ -297,7 +333,7 @@ export function NotesPanel({
               <EditorRefPlugin editorRef={editorRef} />
               <AutoFocusPlugin autoFocus={autoFocus} />
               <KeyValuePlugin />
-              <PillInteractionPlugin />
+              <PillInteractionPlugin onFieldRemoved={onFieldRemoved} />
               <PillFieldExtractionPlugin onFieldExtracted={onFieldExtracted} />
               <FieldInjectionPlugin
                 fieldCommand={currentField}
