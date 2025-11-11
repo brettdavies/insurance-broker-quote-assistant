@@ -88,10 +88,10 @@
 
 **Acceptance Criteria:**
 
-1. POST `/api/intake/message` endpoint accepts broker message and conversation history
+1. POST `/api/intake` endpoint accepts broker message and conversation history
 2. **Hybrid extraction approach**: First parse for key-value syntax (`kids:3`, `k:3`, `deps:4`, `car:garage`) using deterministic regex, then optionally use LLM for natural language extraction
 3. Key-value syntax parser recognizes predefined field aliases (e.g., `k`/`kids`, `d`/`deps`, `v`/`vehicles`, `c`/`car`) and extracts structured data
-4. OpenAI GPT-4o-mini integration with structured output (JSON mode) for natural language field extraction (optional/fallback when key-value not detected)
+4. Gemini 2.5 Flash-Lite integration (via `GeminiProvider`) with structured output (JSON schema) for natural language field extraction (optional/fallback when key-value not detected)
 5. Returns JSON response with extracted fields, confidence scores, and extraction method (key-value vs LLM)
 6. Handles ambiguous natural language inputs gracefully - extracts what's clear, marks uncertain fields with low confidence
 7. Token usage logged for LLM calls only (key-value extraction is free/deterministic)
@@ -145,7 +145,7 @@
 
 **Acceptance Criteria:**
 
-1. POST `/api/intake/generate-prefill` endpoint generates IQuote Pro pre-fill packet stub
+1. POST `/api/generate-prefill` endpoint generates IQuote Pro pre-fill packet stub (flattened from `/api/intake/generate-prefill` for Hono RPC client compatibility)
 2. Pre-fill packet includes: shopper identity, state, product type, routing decision, captured details, missing fields checklist, timestamp
 3. Missing fields clearly flagged in pre-fill packet with red indicators
 4. Lead handoff summary includes next steps for licensed agent with state/product-specific guidance

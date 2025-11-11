@@ -2,6 +2,15 @@
 
 **Epic Goal:** Enable brokers to upload or manually enter existing policy data, analyze coverage/limits/premiums against the knowledge pack, and generate data-driven savings recommendations. By the end of this epic, a broker can upload a PDF declarations page or type policy details, receive intelligent analysis identifying bundle opportunities and discount eligibility, and download/copy a savings pitch for client discussion. This epic delivers the second major value stream.
 
+## Implementation Notes
+
+**Architectural Patterns from Epic 1:**
+- API endpoints use flat structure (e.g., `/api/intake`, `/api/generate-prefill`) rather than nested paths for Hono RPC client compatibility
+- LLM provider uses Gemini 2.5 Flash-Lite (via `GeminiProvider`) rather than OpenAI GPT-4o-mini
+- Endpoints are created via factory functions (e.g., `createIntakeRoute()`) and mounted at root level
+- Services follow three-layer pattern: Routes → Services → Data layer (knowledge pack RAG)
+- Decision trace logging integrated into all flows via `createDecisionTrace()` and `logDecisionTrace()`
+
 ## Story 2.1: Policy Upload & PDF Parsing
 
 **As a** broker,
@@ -29,7 +38,7 @@
 **Acceptance Criteria:**
 
 1. POST `/api/policy/analyze` endpoint accepts policy data (parsed or manual)
-2. LLM agent (GPT-4o-mini) analyzes coverage, limits, deductibles, premiums against knowledge pack
+2. LLM agent (Gemini 2.5 Flash-Lite via `GeminiProvider`) analyzes coverage, limits, deductibles, premiums against knowledge pack
 3. Identifies eligible discounts not currently applied (e.g., multi-policy, good driver, home security)
 4. Suggests bundle opportunities if only single product (e.g., "Client has home but no auto quote")
 5. Evaluates deductible/limit trade-offs (e.g., "Raising deductible $500→$1000 saves $200/yr")
