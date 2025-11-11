@@ -10,20 +10,20 @@ import { NotesPanel } from '@/components/notes/NotesPanel'
 import { UploadPanel } from '@/components/policy/UploadPanel'
 import { FieldModal } from '@/components/shortcuts/FieldModal'
 import { HelpModal } from '@/components/shortcuts/HelpModal'
-import type { MissingField } from '@/components/sidebar/MissingFields'
+import type { MissingField as MissingFieldInfo } from '@/components/sidebar/MissingFields'
 import { Sidebar } from '@/components/sidebar/Sidebar'
 import { useToast } from '@/components/ui/use-toast'
 import { COMMAND_TO_KEY, FIELD_METADATA, FIELD_SHORTCUTS } from '@/config/shortcuts'
 import { useIntake } from '@/hooks/useIntake'
 import type { ActionCommand, FieldCommand } from '@/hooks/useSlashCommands'
-import { calculateMissingFields } from '@/lib/missing-fields'
+import { calculateMissingFields, convertMissingFieldsToInfo } from '@/lib/missing-fields'
 import {
   generatePrefillFilename,
   getPrefillPacket,
   handleCopy,
   handleExport,
 } from '@/lib/prefill-utils'
-import type { IntakeResult, UserProfile } from '@repo/shared'
+import type { IntakeResult, MissingField, UserProfile } from '@repo/shared'
 import { useCallback, useEffect, useRef, useState } from 'react'
 
 interface UnifiedChatInterfaceProps {
@@ -49,7 +49,7 @@ export function UnifiedChatInterface({
 }: UnifiedChatInterfaceProps) {
   const [profile, setProfile] = useState<UserProfile>({})
   const profileRef = useRef<UserProfile>({})
-  const [missingFields, setMissingFields] = useState<MissingField[]>([])
+  const [missingFields, setMissingFields] = useState<MissingFieldInfo[]>([])
   const [disclaimers, setDisclaimers] = useState<string[]>([])
   const [latestIntakeResult, setLatestIntakeResult] = useState<IntakeResult | null>(null)
   const hasBackendMissingFields = useRef(false)
@@ -81,8 +81,13 @@ export function UnifiedChatInterface({
   useEffect(() => {
     // Only calculate frontend missing fields if we don't have backend ones yet
     if (!hasBackendMissingFields.current) {
-      const calculated = calculateMissingFields(profile)
-      // Convert to MissingField format
+      // Get carrier/state from latest intake result if available
+      const carrier = latestIntakeResult?.route?.primaryCarrier
+      const state = profile.state || latestIntakeResult?.profile?.state
+      const productLine = profile.productLine || latestIntakeResult?.profile?.productLine
+
+      const calculated = calculateMissingFields(profile, productLine, state, carrier)
+      // Convert to MissingField format for component
       const fieldMetadata = calculated.map((field) => {
         // Get field display name from FIELD_METADATA
         const metadata = FIELD_METADATA[field.fieldKey as keyof typeof FIELD_METADATA]
@@ -95,7 +100,7 @@ export function UnifiedChatInterface({
       })
       setMissingFields(fieldMetadata)
     }
-  }, [profile])
+  }, [profile, latestIntakeResult])
 
   // Handle field removal when pill is deleted
   const handleFieldRemoved = useCallback(
@@ -175,38 +180,20 @@ export function UnifiedChatInterface({
 
           // Reconcile with backend response
           setProfile((prev) => ({ ...prev, ...result.profile }))
-          // Convert string array to MissingField objects
-          // Format: "[CRITICAL] fieldName", "[IMPORTANT] fieldName", "[OPTIONAL] fieldName"
+          // Backend now returns MissingField[] (structured objects) instead of string[]
           hasBackendMissingFields.current = true
+          // Convert backend MissingField[] to frontend MissingFieldInfo[], then to component format
+          const backendMissingFields: MissingField[] = result.missingFields
+          const frontendMissingFields = convertMissingFieldsToInfo(backendMissingFields)
           setMissingFields(
-            result.missingFields.map((fieldStr) => {
-              // Parse priority and field name from string like "[CRITICAL] state"
-              const priorityMatch = fieldStr.match(/^\[(CRITICAL|IMPORTANT|OPTIONAL)\]\s*(.+)$/)
-              if (priorityMatch?.[2]) {
-                const priorityStr = priorityMatch[1]
-                const fieldName = priorityMatch[2]
-                const priority =
-                  priorityStr === 'CRITICAL'
-                    ? 'critical'
-                    : priorityStr === 'IMPORTANT'
-                      ? 'important'
-                      : 'optional'
-                // Extract field key (remove priority prefix if present)
-                const fieldKey = fieldName.trim()
-                // Get field display name from FIELD_METADATA
-                const metadata = FIELD_METADATA[fieldKey as keyof typeof FIELD_METADATA]
-                const displayName = metadata?.label || fieldKey
-                return {
-                  name: displayName,
-                  priority: priority as 'critical' | 'important' | 'optional',
-                  fieldKey,
-                }
-              }
-              // Fallback: treat as critical if format doesn't match
+            frontendMissingFields.map((field) => {
+              // Get field display name from FIELD_METADATA
+              const metadata = FIELD_METADATA[field.fieldKey as keyof typeof FIELD_METADATA]
+              const displayName = metadata?.label || field.fieldKey
               return {
-                name: fieldStr,
-                priority: 'critical' as const,
-                fieldKey: fieldStr,
+                name: displayName,
+                priority: field.priority,
+                fieldKey: field.fieldKey,
               }
             })
           )

@@ -1,4 +1,10 @@
-import type { IntakeResult, PrefillPacket, RouteDecision, UserProfile } from '@repo/shared'
+import type {
+  IntakeResult,
+  MissingField,
+  PrefillPacket,
+  RouteDecision,
+  UserProfile,
+} from '@repo/shared'
 import { prefillPacketSchema } from '@repo/shared'
 import { Hono } from 'hono'
 import { z } from 'zod'
@@ -146,13 +152,20 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
 
       // Generate prefill packet after compliance check
       let prefillPacket: PrefillPacket | undefined
+      let missingFieldsForResponse: MissingField[] = []
       if (routeDecision) {
         try {
-          const missingFieldsForPrefill = getMissingFields(extractionResult.profile)
+          // Get missing fields with carrier/state-specific requirements
+          missingFieldsForResponse = getMissingFields(
+            extractionResult.profile,
+            extractionResult.profile.productLine,
+            extractionResult.profile.state,
+            routeDecision.primaryCarrier
+          )
           prefillPacket = generatePrefillPacket(
             extractionResult.profile,
             routeDecision,
-            missingFieldsForPrefill,
+            missingFieldsForResponse,
             complianceResult.disclaimers || []
           )
         } catch (error) {
@@ -162,12 +175,19 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
           })
           prefillPacket = undefined
         }
+      } else {
+        // If no route decision, still calculate missing fields without carrier-specific requirements
+        missingFieldsForResponse = getMissingFields(
+          extractionResult.profile,
+          extractionResult.profile.productLine,
+          extractionResult.profile.state
+        )
       }
 
       // Build IntakeResult response
       const result: IntakeResult = {
         profile: extractionResult.profile,
-        missingFields: extractionResult.missingFields,
+        missingFields: missingFieldsForResponse,
         extractionMethod: extractionResult.extractionMethod, // AC5: Include extraction method
         confidence: extractionResult.confidence, // AC5: Include confidence scores
         route: routeDecision, // Routing decision from routing engine

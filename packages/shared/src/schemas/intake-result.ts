@@ -1,5 +1,6 @@
 import { z } from 'zod'
 import { type DecisionTrace, decisionTraceSchema } from './decision-trace'
+import { type MissingField, missingFieldSchema } from './missing-field'
 import { prefillPacketSchema } from './prefill-packet'
 import { type UserProfile, userProfileSchema } from './user-profile'
 
@@ -78,7 +79,7 @@ export type PrefillPacketStub = z.infer<typeof prefillPacketStubSchema>
  */
 export const intakeResultSchema = z.object({
   profile: userProfileSchema,
-  missingFields: z.array(z.string()), // Array of field names still needed
+  missingFields: z.array(missingFieldSchema), // Array of missing fields with priority indicators
   extractionMethod: z.enum(['key-value', 'llm']).optional(), // Extraction method used (AC5)
   confidence: z.record(z.number().min(0).max(1)).optional(), // Field-level confidence scores (AC5)
   route: routeDecisionSchema.optional(), // Routing decision from routing engine

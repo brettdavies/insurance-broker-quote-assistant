@@ -1,4 +1,5 @@
 import { z } from 'zod'
+import { type MissingField, missingFieldSchema } from './missing-field'
 
 /**
  * Prefill Packet Schema
@@ -48,7 +49,7 @@ export const prefillPacketSchema = z.object({
   // Routing & Agent Notes
   routingDecision: z.string(), // Explanation from RouteDecision.rationale (required)
   agentNotes: z.array(z.string()).optional(), // Talking points for licensed agent
-  missingFields: z.array(z.string()), // Checklist with priority indicators: "[CRITICAL] field", "[IMPORTANT] field", "[OPTIONAL] field" (required)
+  missingFields: z.array(missingFieldSchema), // Missing fields with priority indicators (required)
   eligibleCarriers: z.array(z.string()).optional(), // Alternative carriers from routing
 
   // Compliance

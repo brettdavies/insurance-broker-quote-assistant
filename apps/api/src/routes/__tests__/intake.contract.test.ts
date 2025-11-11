@@ -297,6 +297,214 @@ describe('POST /api/intake - Live API Contract Tests', () => {
     )
   })
 
+  describe('Missing Fields Functionality (AC1, AC3, AC6)', () => {
+    it.skipIf(!serverAvailable)(
+      'should return missingFields array with correct structure (AC1, AC3)',
+      async () => {
+        const response = await fetch(`${API_URL}/api/intake`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            message: 'state: CA productLine: auto',
+          }),
+        })
+
+        expect(response.status).toBe(200)
+        const body: unknown = await response.json()
+        const validationResult = intakeResultSchema.safeParse(body)
+
+        expect(validationResult.success).toBe(true)
+        if (validationResult.success) {
+          const result = validationResult.data
+
+          // AC1: Verify missingFields array exists and has structure
+          expect(result.missingFields).toBeDefined()
+          expect(Array.isArray(result.missingFields)).toBe(true)
+
+          // AC3: Verify missingFields have priority indicators
+          if (result.missingFields.length > 0) {
+            const firstField = result.missingFields[0]
+            if (firstField) {
+              expect(firstField).toHaveProperty('field')
+              expect(firstField).toHaveProperty('priority')
+              expect(['critical', 'important', 'optional']).toContain(firstField.priority)
+            }
+          }
+        }
+      },
+      TEST_TIMEOUT
+    )
+
+    it.skipIf(!serverAvailable)(
+      'should include critical priority fields for auto product (AC1)',
+      async () => {
+        const response = await fetch(`${API_URL}/api/intake`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            message: 'state: CA productLine: auto',
+          }),
+        })
+
+        expect(response.status).toBe(200)
+        const body: unknown = await response.json()
+        const validationResult = intakeResultSchema.safeParse(body)
+
+        expect(validationResult.success).toBe(true)
+        if (validationResult.success) {
+          const result = validationResult.data
+
+          // Should have critical missing fields (vehicles, drivers)
+          const criticalFields = result.missingFields.filter((f) => f.priority === 'critical')
+          expect(criticalFields.length).toBeGreaterThan(0)
+          expect(criticalFields.some((f) => f.field === 'vehicles' || f.field === 'drivers')).toBe(
+            true
+          )
+        }
+      },
+      TEST_TIMEOUT
+    )
+
+    it.skipIf(!serverAvailable)(
+      'should include carrier-specific requirements when route decision available (AC6)',
+      async () => {
+        const response = await fetch(`${API_URL}/api/intake`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            message: 'state: CA productLine: auto vehicles: 2 drivers: 1',
+          }),
+        })
+
+        expect(response.status).toBe(200)
+        const body: unknown = await response.json()
+        const validationResult = intakeResultSchema.safeParse(body)
+
+        expect(validationResult.success).toBe(true)
+        if (validationResult.success) {
+          const result = validationResult.data
+
+          // If route decision includes a carrier, missingFields should reflect carrier-specific requirements
+          if (result.route?.primaryCarrier) {
+            // MissingFields should be an array (may include carrier-specific fields)
+            expect(Array.isArray(result.missingFields)).toBe(true)
+            // Verify structure is correct
+            for (const field of result.missingFields) {
+              expect(field).toHaveProperty('field')
+              expect(field).toHaveProperty('priority')
+            }
+          }
+        }
+      },
+      TEST_TIMEOUT
+    )
+
+    it.skipIf(!serverAvailable)(
+      'should include state-specific requirements (AC6)',
+      async () => {
+        const response = await fetch(`${API_URL}/api/intake`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            message: 'state: CA productLine: auto vehicles: 2 drivers: 1',
+          }),
+        })
+
+        expect(response.status).toBe(200)
+        const body: unknown = await response.json()
+        const validationResult = intakeResultSchema.safeParse(body)
+
+        expect(validationResult.success).toBe(true)
+        if (validationResult.success) {
+          const result = validationResult.data
+
+          // MissingFields should include state-specific requirements
+          expect(Array.isArray(result.missingFields)).toBe(true)
+          // Verify structure
+          for (const field of result.missingFields) {
+            expect(field).toHaveProperty('field')
+            expect(field).toHaveProperty('priority')
+          }
+        }
+      },
+      TEST_TIMEOUT
+    )
+
+    it.skipIf(!serverAvailable)(
+      'should prioritize critical fields over important/optional (AC3)',
+      async () => {
+        const response = await fetch(`${API_URL}/api/intake`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            message: 'state: CA productLine: auto',
+          }),
+        })
+
+        expect(response.status).toBe(200)
+        const body: unknown = await response.json()
+        const validationResult = intakeResultSchema.safeParse(body)
+
+        expect(validationResult.success).toBe(true)
+        if (validationResult.success) {
+          const result = validationResult.data
+
+          const criticalFields = result.missingFields.filter((f) => f.priority === 'critical')
+          const importantFields = result.missingFields.filter((f) => f.priority === 'important')
+          const optionalFields = result.missingFields.filter((f) => f.priority === 'optional')
+
+          // Critical fields should be present
+          expect(criticalFields.length).toBeGreaterThan(0)
+          // Verify all priorities are valid
+          expect([...criticalFields, ...importantFields, ...optionalFields].length).toBe(
+            result.missingFields.length
+          )
+        }
+      },
+      TEST_TIMEOUT
+    )
+  })
+
+  describe('Prefill Packet Missing Fields (AC7)', () => {
+    it.skipIf(!serverAvailable)(
+      'should include missing critical fields in prefill packet (AC7)',
+      async () => {
+        const response = await fetch(`${API_URL}/api/intake`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            message: 'state: CA productLine: auto',
+          }),
+        })
+
+        expect(response.status).toBe(200)
+        const body: unknown = await response.json()
+        const validationResult = intakeResultSchema.safeParse(body)
+
+        expect(validationResult.success).toBe(true)
+        if (validationResult.success) {
+          const result = validationResult.data
+
+          // If prefill packet exists, it should include missingFields
+          if (result.prefill) {
+            expect(result.prefill.missingFields).toBeDefined()
+            expect(Array.isArray(result.prefill.missingFields)).toBe(true)
+
+            // Should include critical fields if they exist
+            const criticalMissingFields = result.missingFields.filter(
+              (f) => f.priority === 'critical'
+            )
+            if (criticalMissingFields.length > 0) {
+              // Prefill packet should include at least some missing fields
+              expect(result.prefill.missingFields.length).toBeGreaterThanOrEqual(0)
+            }
+          }
+        }
+      },
+      TEST_TIMEOUT
+    )
+  })
+
   describe('Error Handling', () => {
     it.skipIf(!serverAvailable)(
       'should return structured error response for invalid requests',

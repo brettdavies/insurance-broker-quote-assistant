@@ -1,0 +1,21 @@
+{
+  "meta": { "schemaVersion": "1.0", "generatedDate": "2025-11-11T06:28:47.780Z", "state": "CA" },
+  "state": {
+    "_id": "state_ca",
+    "_sources": [],
+    "code": "CA",
+    "name": "California",
+    "minimumCoverages": {
+      "_id": "mincov_test1",
+      "auto": {
+        "_id": "auto_min1",
+        "bodilyInjuryPerPerson": { "_id": "fld_test1", "value": 15000, "_sources": [] }
+      },
+      "home": {
+        "_id": "home_min1",
+        "dwellingCoverage": { "_id": "fld_test2", "value": 100000, "_sources": [] }
+      },
+      "renters": { "_id": "fld_test7" }
+    }
+  }
+}

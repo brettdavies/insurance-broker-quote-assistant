@@ -55,6 +55,13 @@ export {
   type PrefillPacket,
 } from './schemas/prefill-packet'
 
+// Export missing field schema and types
+export {
+  missingFieldSchema,
+  type MissingField,
+  type MissingFieldInfo,
+} from './schemas/missing-field'
+
 // Export decision trace schema and types
 export {
   decisionTraceSchema,

@@ -36,7 +36,7 @@ function fallbackParseFields(message: string): IntakeResult {
   const criticalFields = ['name', 'state', 'productLine']
   for (const field of criticalFields) {
     if (!capturedFields.has(field)) {
-      missingFields.push(field)
+      missingFields.push({ field, priority: 'critical' })
     }
   }
 

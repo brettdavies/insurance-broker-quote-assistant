@@ -7,63 +7,131 @@
  * @see docs/stories/1.8.prefill-packet-generation.md
  */
 
-import type { PrefillPacket, RouteDecision, UserProfile } from '@repo/shared'
+import type { MissingField, PrefillPacket, RouteDecision, UserProfile } from '@repo/shared'
+import { getCarrierFieldRequirements, getStateFieldRequirements } from './knowledge-pack-rag'
 
 /**
  * Get missing fields with priority indicators
  *
- * Compares UserProfile against required fields per product type and returns
- * formatted checklist with priority indicators.
+ * Compares UserProfile against required fields per product type, carrier-specific,
+ * and state-specific requirements. Returns structured MissingField objects.
  *
  * @param profile - User profile to check
- * @returns Array of missing field names with priority indicators: "[CRITICAL] field", "[IMPORTANT] field", "[OPTIONAL] field"
+ * @param productLine - Optional product line (defaults to profile.productLine)
+ * @param state - Optional state code (defaults to profile.state)
+ * @param carrier - Optional carrier name for carrier-specific requirements
+ * @returns Array of missing fields with priority indicators
  */
-export function getMissingFields(profile: UserProfile): string[] {
-  const missing: string[] = []
+export function getMissingFields(
+  profile: UserProfile,
+  productLine?: string,
+  state?: string,
+  carrier?: string
+): MissingField[] {
+  const missing: MissingField[] = []
+  const product = productLine || profile.productLine
+  const stateCode = state || profile.state
 
   // Required fields for all products
   if (!profile.state) {
-    missing.push('[CRITICAL] state')
+    missing.push({ field: 'state', priority: 'critical' })
   }
   if (!profile.productLine) {
-    missing.push('[CRITICAL] productLine')
+    missing.push({ field: 'productLine', priority: 'critical' })
   }
 
   // Product-specific required fields
-  if (profile.productLine === 'auto') {
+  if (product === 'auto') {
     if (!profile.vehicles) {
-      missing.push('[CRITICAL] vehicles')
+      missing.push({ field: 'vehicles', priority: 'critical' })
     }
     if (!profile.drivers) {
-      missing.push('[CRITICAL] drivers')
+      missing.push({ field: 'drivers', priority: 'critical' })
     }
     if (!profile.vins) {
-      missing.push('[IMPORTANT] vins')
+      missing.push({ field: 'vins', priority: 'important' })
     }
     if (!profile.garage) {
-      missing.push('[OPTIONAL] garage')
+      missing.push({ field: 'garage', priority: 'optional' })
     }
-  } else if (profile.productLine === 'home') {
+  } else if (product === 'home') {
     if (!profile.propertyType) {
-      missing.push('[CRITICAL] propertyType')
+      missing.push({ field: 'propertyType', priority: 'critical' })
     }
     if (!profile.constructionYear) {
-      missing.push('[IMPORTANT] constructionYear')
+      missing.push({ field: 'constructionYear', priority: 'important' })
     }
     if (!profile.squareFeet) {
-      missing.push('[IMPORTANT] squareFeet')
+      missing.push({ field: 'squareFeet', priority: 'important' })
     }
     if (!profile.roofType) {
-      missing.push('[OPTIONAL] roofType')
+      missing.push({ field: 'roofType', priority: 'optional' })
     }
-  } else if (profile.productLine === 'renters') {
+  } else if (product === 'renters') {
     if (!profile.propertyType) {
-      missing.push('[CRITICAL] propertyType')
+      missing.push({ field: 'propertyType', priority: 'critical' })
     }
-    // Note: personalProperty not in UserProfile schema, defer to knowledge pack if needed
-  } else if (profile.productLine === 'umbrella') {
+  } else if (product === 'umbrella') {
     if (!profile.existingPolicies || profile.existingPolicies.length === 0) {
-      missing.push('[CRITICAL] existingPolicies')
+      missing.push({ field: 'existingPolicies', priority: 'critical' })
+    }
+  }
+
+  // Add carrier-specific requirements if carrier is known
+  if (carrier && product) {
+    const carrierRequirements = getCarrierFieldRequirements(carrier, product, stateCode)
+    for (const req of carrierRequirements) {
+      // Only add if field is not already in missing list and is actually missing from profile
+      const alreadyMissing = missing.some((m) => m.field === req.field)
+      if (!alreadyMissing) {
+        // Check if field is actually missing
+        const fieldValue = profile[req.field as keyof UserProfile]
+        if (fieldValue === undefined || fieldValue === null || fieldValue === '') {
+          missing.push(req)
+        }
+      } else {
+        // Update priority if carrier requirement is more critical
+        const existingIndex = missing.findIndex((m) => m.field === req.field)
+        if (existingIndex >= 0) {
+          const existing = missing[existingIndex]
+          if (
+            existing &&
+            ((req.priority === 'critical' && existing.priority !== 'critical') ||
+              (req.priority === 'important' && existing.priority === 'optional'))
+          ) {
+            missing[existingIndex] = req
+          }
+        }
+      }
+    }
+  }
+
+  // Add state-specific requirements if state is known
+  if (stateCode && product) {
+    const stateRequirements = getStateFieldRequirements(stateCode, product)
+    for (const req of stateRequirements) {
+      // Only add if field is not already in missing list and is actually missing from profile
+      const alreadyMissing = missing.some((m) => m.field === req.field)
+      if (!alreadyMissing) {
+        // Check if field is actually missing
+        const fieldValue = profile[req.field as keyof UserProfile]
+        if (fieldValue === undefined || fieldValue === null || fieldValue === '') {
+          missing.push(req)
+        }
+      } else {
+        // Update priority if state requirement is more critical
+        const existingIndex = missing.findIndex((m) => m.field === req.field)
+        if (existingIndex >= 0) {
+          const existing = missing[existingIndex]
+          if (
+            existing &&
+            ((req.priority === 'critical' && existing.priority !== 'critical') ||
+              (req.priority === 'important' && existing.priority === 'optional'))
+          ) {
+            missing[existingIndex] = req
+          }
+        }
+      }
     }
   }
 
@@ -84,7 +152,7 @@ export function getMissingFields(profile: UserProfile): string[] {
 export function generateLeadHandoffSummary(
   profile: UserProfile,
   route: RouteDecision,
-  missingFields: string[]
+  missingFields: MissingField[]
 ): string[] {
   const notes: string[] = []
 
@@ -115,9 +183,19 @@ export function generateLeadHandoffSummary(
     notes.push(`Product-specific guidance: ${productGuidance[profile.productLine]}`)
   }
 
-  // Missing fields checklist
+  // Missing fields checklist - format with priority indicators
   if (missingFields.length > 0) {
-    notes.push(`Missing fields checklist: ${missingFields.join(', ')}`)
+    const criticalFields = missingFields
+      .filter((f) => f.priority === 'critical')
+      .map((f) => `[CRITICAL] ${f.field}`)
+    const importantFields = missingFields
+      .filter((f) => f.priority === 'important')
+      .map((f) => `[IMPORTANT] ${f.field}`)
+    const optionalFields = missingFields
+      .filter((f) => f.priority === 'optional')
+      .map((f) => `[OPTIONAL] ${f.field}`)
+    const allFields = [...criticalFields, ...importantFields, ...optionalFields]
+    notes.push(`Missing fields checklist: ${allFields.join(', ')}`)
   }
 
   // Routing rationale
@@ -151,7 +229,7 @@ export function generateLeadHandoffSummary(
 export function generatePrefillPacket(
   profile: UserProfile,
   route: RouteDecision,
-  missingFields: string[],
+  missingFields: MissingField[],
   disclaimers: string[]
 ): PrefillPacket {
   // Handle edge cases: missing state/productLine

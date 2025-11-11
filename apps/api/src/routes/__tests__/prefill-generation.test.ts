@@ -117,7 +117,7 @@ describe('POST /api/generate-prefill', () => {
     const prefill = (await res.json()) as PrefillPacket
 
     expect(prefill.missingFields.length).toBeGreaterThan(0)
-    expect(prefill.missingFields.some((f) => f.startsWith('[CRITICAL]'))).toBe(true)
+    expect(prefill.missingFields.some((f) => f.priority === 'critical')).toBe(true)
   })
 
   it('should include lead handoff summary in agentNotes', async () => {

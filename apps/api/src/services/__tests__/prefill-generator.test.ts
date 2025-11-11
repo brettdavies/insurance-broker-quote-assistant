@@ -5,7 +5,7 @@
  */
 
 import { describe, expect, it } from 'bun:test'
-import type { RouteDecision, UserProfile } from '@repo/shared'
+import type { MissingField, RouteDecision, UserProfile } from '@repo/shared'
 import {
   generateLeadHandoffSummary,
   generatePrefillPacket,
@@ -21,8 +21,8 @@ describe('getMissingFields', () => {
     }
 
     const missing = getMissingFields(profile)
-    expect(missing).toContain('[CRITICAL] vehicles')
-    expect(missing).toContain('[CRITICAL] drivers')
+    expect(missing.some((f) => f.field === 'vehicles' && f.priority === 'critical')).toBe(true)
+    expect(missing.some((f) => f.field === 'drivers' && f.priority === 'critical')).toBe(true)
   })
 
   it('should detect missing important fields for auto product', () => {
@@ -35,7 +35,7 @@ describe('getMissingFields', () => {
     }
 
     const missing = getMissingFields(profile)
-    expect(missing).toContain('[IMPORTANT] vins')
+    expect(missing.some((f) => f.field === 'vins' && f.priority === 'important')).toBe(true)
   })
 
   it('should detect missing optional fields for auto product', () => {
@@ -49,7 +49,7 @@ describe('getMissingFields', () => {
     }
 
     const missing = getMissingFields(profile)
-    expect(missing).toContain('[OPTIONAL] garage')
+    expect(missing.some((f) => f.field === 'garage' && f.priority === 'optional')).toBe(true)
   })
 
   it('should detect missing critical fields for home product', () => {
@@ -60,7 +60,7 @@ describe('getMissingFields', () => {
     }
 
     const missing = getMissingFields(profile)
-    expect(missing).toContain('[CRITICAL] propertyType')
+    expect(missing.some((f) => f.field === 'propertyType' && f.priority === 'critical')).toBe(true)
   })
 
   it('should detect missing important fields for home product', () => {
@@ -72,8 +72,10 @@ describe('getMissingFields', () => {
     }
 
     const missing = getMissingFields(profile)
-    expect(missing).toContain('[IMPORTANT] constructionYear')
-    expect(missing).toContain('[IMPORTANT] squareFeet')
+    expect(missing.some((f) => f.field === 'constructionYear' && f.priority === 'important')).toBe(
+      true
+    )
+    expect(missing.some((f) => f.field === 'squareFeet' && f.priority === 'important')).toBe(true)
   })
 
   it('should detect missing critical fields for renters product', () => {
@@ -84,7 +86,7 @@ describe('getMissingFields', () => {
     }
 
     const missing = getMissingFields(profile)
-    expect(missing).toContain('[CRITICAL] propertyType')
+    expect(missing.some((f) => f.field === 'propertyType' && f.priority === 'critical')).toBe(true)
   })
 
   it('should detect missing critical fields for umbrella product', () => {
@@ -95,15 +97,17 @@ describe('getMissingFields', () => {
     }
 
     const missing = getMissingFields(profile)
-    expect(missing).toContain('[CRITICAL] existingPolicies')
+    expect(missing.some((f) => f.field === 'existingPolicies' && f.priority === 'critical')).toBe(
+      true
+    )
   })
 
   it('should always require state and productLine', () => {
     const profile: UserProfile = {}
 
     const missing = getMissingFields(profile)
-    expect(missing).toContain('[CRITICAL] state')
-    expect(missing).toContain('[CRITICAL] productLine')
+    expect(missing.some((f) => f.field === 'state' && f.priority === 'critical')).toBe(true)
+    expect(missing.some((f) => f.field === 'productLine' && f.priority === 'critical')).toBe(true)
   })
 
   it('should return empty array when all fields present', () => {
@@ -118,7 +122,7 @@ describe('getMissingFields', () => {
 
     const missing = getMissingFields(profile)
     // Should only have state and productLine (already present)
-    expect(missing.filter((f) => f.startsWith('[CRITICAL]'))).toHaveLength(0)
+    expect(missing.filter((f) => f.priority === 'critical').length).toBe(0)
   })
 })
 
@@ -157,7 +161,10 @@ describe('generateLeadHandoffSummary', () => {
       productLine: 'auto',
     }
 
-    const missingFields = ['[CRITICAL] vehicles', '[IMPORTANT] vins']
+    const missingFields = [
+      { field: 'vehicles', priority: 'critical' as const },
+      { field: 'vins', priority: 'important' as const },
+    ]
     const summary = generateLeadHandoffSummary(profile, mockRoute, missingFields)
     expect(summary.some((note) => note.includes('Missing fields checklist'))).toBe(true)
     expect(summary.some((note) => note.includes('[CRITICAL] vehicles'))).toBe(true)
@@ -277,7 +284,9 @@ describe('generatePrefillPacket', () => {
     const prefill = generatePrefillPacket(profile, mockRoute, missingFields, mockDisclaimers)
 
     expect(prefill.missingFields.length).toBeGreaterThan(0)
-    expect(prefill.missingFields).toContain('[CRITICAL] vehicles')
+    expect(
+      prefill.missingFields.some((f) => f.field === 'vehicles' && f.priority === 'critical')
+    ).toBe(true)
   })
 
   it('should include agent notes with lead handoff summary', () => {
