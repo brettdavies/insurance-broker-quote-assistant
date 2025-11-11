@@ -9,6 +9,7 @@ This document defines the user experience goals, information architecture, user 
 #### Target User Personas
 
 **Sarah Chen, Senior Insurance Broker**
+
 - **Experience:** 8 years in insurance sales, handles 50-60 quotes per week across multiple carriers
 - **Context:** Back-to-back client calls (phone + in-person), juggling multiple carrier portals
 - **Pain Points:**
@@ -46,6 +47,7 @@ This document defines the user experience goals, information architecture, user 
 **Active State:** Once broker engages with either flow (types in chat OR uploads file), the unused flow **minimizes to a small toggle/tab** to reclaim screen real estate and eliminate attention splitting.
 
 **Implementation:**
+
 - Chat panel expands to ~80% width when active, policy upload collapses to icon/tab in sidebar
 - Policy analysis expands to full view when file uploaded, chat minimizes to bottom drawer or sidebar tab
 - Quick toggle (keyboard shortcut like `/policy` or `/intake`) to switch flows without losing state
@@ -53,10 +55,12 @@ This document defines the user experience goals, information architecture, user 
 #### Compliance Feedback Strategy
 
 **Compliance Detection Context:**
+
 - **During real-time conversation:** System shows **contextual disclaimers and sales opportunities** in sidebar based on discovered state/product, but does NOT monitor broker's verbal conversation with client
 - **At export/send stage:** Compliance filter scans **final outputs** (pre-fill packets, savings pitches, materials being sent to prospects) for prohibited statements
 
 **When Prohibited Statement Detected in Final Output:**
+
 - **Non-blocking toast notification** appears (top-right corner)
 - **Auto-dismissing** after 5 seconds (or user dismisses manually)
 - **Message format:** "⚠️ Prohibited statement detected: [specific phrase]. Replaced with licensed-agent handoff."
@@ -65,12 +69,12 @@ This document defines the user experience goals, information architecture, user 
 
 #### Change Log
 
-| Date | Version | Description | Author |
-|------|---------|-------------|--------|
-| 2025-11-09 | 0.4 | **FINAL SIMPLIFICATION - One prefix only:** Replaced ALL modifier-based shortcuts with slash commands. System now uses ONLY slash commands: `/{letter}` for fields (27: `/k`, `/v`, `/n`) and `/{word}` for actions (6: `/export`, `/copy`, `/reset`, `/policy`, `/intake`, `/help`). Zero modifier keys, maximum simplicity, one pattern to learn. Updated all diagrams, wireframes, and references. | Sally (UX Expert) |
-| 2025-11-09 | 0.3 | **Simplified to two-prefix system:** Replaced `Alt+` and `Ctrl+X` shortcuts with unified `Cmd+Shift+{letter}` for all app-level actions (export, copy, reset, mode switching, help). Fixes `Ctrl+X` cut conflict and reduces cognitive load from three prefixes to two. Updated all wireframes and references. | Sally (UX Expert) |
-| 2025-11-09 | 0.2 | Updated keyboard shortcut philosophy from `Ctrl+` modifiers to `/{letter}` slash commands based on keyboard-shortcuts-analysis.md findings. Slash commands are faster, work globally, and have zero conflicts with macOS/Chrome. | Sally (UX Expert) |
-| 2025-11-06 | 0.1 | Initial UI/UX specification creation | Sally (UX Expert) |
+| Date       | Version | Description                                                                                                                                                                                                                                                                                                                                                                                           | Author            |
+| ---------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| 2025-11-09 | 0.4     | **FINAL SIMPLIFICATION - One prefix only:** Replaced ALL modifier-based shortcuts with slash commands. System now uses ONLY slash commands: `/{letter}` for fields (27: `/k`, `/v`, `/n`) and `/{word}` for actions (6: `/export`, `/copy`, `/reset`, `/policy`, `/intake`, `/help`). Zero modifier keys, maximum simplicity, one pattern to learn. Updated all diagrams, wireframes, and references. | Sally (UX Expert) |
+| 2025-11-09 | 0.3     | **Simplified to two-prefix system:** Replaced `Alt+` and `Ctrl+X` shortcuts with unified `Cmd+Shift+{letter}` for all app-level actions (export, copy, reset, mode switching, help). Fixes `Ctrl+X` cut conflict and reduces cognitive load from three prefixes to two. Updated all wireframes and references.                                                                                        | Sally (UX Expert) |
+| 2025-11-09 | 0.2     | Updated keyboard shortcut philosophy from `Ctrl+` modifiers to `/{letter}` slash commands based on keyboard-shortcuts-analysis.md findings. Slash commands are faster, work globally, and have zero conflicts with macOS/Chrome.                                                                                                                                                                      | Sally (UX Expert) |
+| 2025-11-06 | 0.1     | Initial UI/UX specification creation                                                                                                                                                                                                                                                                                                                                                                  | Sally (UX Expert) |
 
 ---
 
@@ -105,16 +109,19 @@ graph TD
 ### Navigation Structure
 
 **Primary Navigation:**
+
 - **Single integrated workspace** at `/` (home route)
 - No traditional navigation menu - broker chooses flow by interaction (type in chat OR upload file)
 - Minimal header with: IQuote Pro logo, keyboard shortcuts browser (`/help`), theme toggle (dark/light), session reset (`/reset`)
 
 **Secondary Navigation:**
+
 - **Flow switching:** `/policy` (policy mode), `/intake` or `/convo` (intake mode) toggles between conversational intake and policy analysis
 - **Field shortcuts:** Single-letter slash commands for field-specific modals (`/k` for kids, `/v` for vehicles, `/n` for name, etc.) - works from anywhere in app
 - **Export actions:** `/export` for download JSON, `/copy` for copy to clipboard
 
 **Keyboard Shortcut Philosophy:**
+
 - **Single-prefix system** for ultimate simplicity - all shortcuts use slash commands
 - **`/{letter}` slash commands:** All field shortcuts (27 fields: `/k` for kids, `/v` for vehicles, `/n` for name, etc.) - single letters for fast data entry
 - **`/{word}` slash commands:** All app-level actions (6 actions: `/export`, `/copy`, `/reset`, `/policy`, `/intake`, `/help`) - full words for app actions
@@ -123,6 +130,7 @@ graph TD
 - **Complete reference:** See [keyboard-shortcuts-reference.md](keyboard-shortcuts-reference.md) for detailed mapping of all shortcuts
 
 **Breadcrumb Strategy:**
+
 - **None required** - flat structure with single workspace view
 - **State indicators instead:** Visual badges show current flow (e.g., "Conversational Intake" or "Policy Analysis" in header)
 - **Session context:** Captured fields and progress visible in sidebar at all times (replaces traditional breadcrumbs)
@@ -136,10 +144,12 @@ graph TD
 **User Goal:** Capture shopper information through natural conversation, route to appropriate carrier, and generate pre-fill packet for licensed agent
 
 **Entry Points:**
+
 - Broker types first message in chat input on home screen
 - Broker uses field-specific slash command (e.g., `/k` for kids modal) - works from anywhere in app
 
 **Success Criteria:**
+
 - ≥95% intake completeness (all required fields captured or flagged as missing)
 - ≥90% routing accuracy (correct carrier/state/product match)
 - Pre-fill packet exported with all disclaimers and lead handoff summary
@@ -222,10 +232,12 @@ graph TD
 **User Goal:** Upload existing policy document, analyze coverage/limits/premiums, and generate savings pitch with bundle opportunities
 
 **Entry Points:**
+
 - Broker drags PDF into policy upload drop zone on home screen
 - Broker toggles to policy mode (`/policy`) and uses editable text box for manual entry
 
 **Success Criteria:**
+
 - ≥85% savings pitch clarity (recommendations are actionable and grounded in knowledge pack)
 - All recommendations include citations (cuid2-based references to knowledge pack sources)
 - Bundle opportunities identified for single-product policies
@@ -333,6 +345,7 @@ graph TD
 **Purpose:** Provide immediate access to both workflows without navigation clicks
 
 **Layout Structure:**
+
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
 │ Header                                                                  │
@@ -360,6 +373,7 @@ graph TD
 ```
 
 **Key Elements:**
+
 - **Header (fixed):**
   - Left: IQuote Pro logo
   - Center: State badge (color-coded by mode - blue=intake, purple=policy, gray=ready)
@@ -378,6 +392,7 @@ graph TD
   - Note-taking focused placeholder
 
 **Interaction Notes:**
+
 - **First keystroke in notes:** Notes panel expands to 70%, PDF drop minimizes to icon, sidebar appears (30%)
 - **File drop in PDF area:** PDF viewer appears, notes input adjusts, sidebar appears with extracted fields
 - **All four panels visible when:** User has typed notes (sidebar visible) AND dropped PDF (viewer visible)
@@ -387,6 +402,7 @@ graph TD
 - **Toast notifications:** Bottom-right corner, stack upward as new toasts arrive, auto-dismiss after 5 seconds
 
 **Why This Design:**
+
 - **Zero navigation:** Both entry points visible immediately, no clicks to "start"
 - **Clear separation:** Vertical split makes two distinct workflows obvious (policy analysis left, note-taking right)
 - **Professional note-taking:** No AI chat bubbles - broker types notes naturally during client call
@@ -399,6 +415,7 @@ graph TD
 **Purpose:** Single notes input component serves both conversational intake AND policy analysis with adaptive UI elements. AI extraction happens silently in background - no chatbot interface.
 
 **Layout Structure:**
+
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────┐
 │ [IQuote Pro]    [INTAKE MODE]    [Ctrl+?] [Theme] [Reset]                           │
@@ -453,6 +470,7 @@ graph TD
 **Key Elements:**
 
 **Header Badge (Mode Indicator):**
+
 - **Single badge that displays current mode only** (not both modes shown simultaneously)
 - **Intake Mode:** Blue badge "INTAKE MODE"
 - **Policy Mode:** Purple badge "POLICY ANALYSIS MODE"
@@ -460,6 +478,7 @@ graph TD
 - Color-coded to prevent confusion about active flow
 
 **Notes Panel (Main Area, 70% width):**
+
 - **Single multiline contentEditable field:** All broker input happens in one continuous text area
 - **Inline pill system:**
   - Broker types: `Client needs auto in CA, k:2 v:2`
@@ -531,17 +550,20 @@ graph TD
    - Examples: "Field captured: Kids = 2", "Extraction delayed, retrying..."
 
 **Floating Action Buttons (bottom-right, above toast area):**
+
 - `/export` - Download JSON (label adapts: "Export Pre-Fill" vs "Export Pitch")
 - `/copy` - Copy to clipboard
 - Tooltips show keyboard shortcuts on hover
 
 **Horizontal Panel Resizing:**
+
 - Drag handle between notes and sidebar
 - Minimum widths: Notes 50%, Sidebar 20%
 - Maximum widths: Notes 80%, Sidebar 50%
 - All content re-renders responsively on resize
 
 **Interaction Notes:**
+
 - **Key-value pills appear in real-time** as broker types (immediately after space, comma, or period)
 - **Sidebar sections collapse independently** to maximize space
 - **Routing/savings panels slide in** with 300ms animation when data ready
@@ -556,6 +578,7 @@ graph TD
 - **Compliance proximity:** Positioned directly under input field where broker's eyes naturally focus
 
 **Why This Unified Design:**
+
 - **Professional note-taking:** No chatbot, no AI asking questions - broker controls conversation
 - **AI in background:** Silent extraction shown only in sidebar, not as chat messages
 - **Clear mode indication:** Color-coded badge + adaptive placeholders prevent confusion
@@ -571,6 +594,7 @@ graph TD
 **Purpose:** Side-by-side PDF reference when automatic extraction fails
 
 **Layout Structure:**
+
 ```
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ [IQuote Pro]    [POLICY ANALYSIS MODE]    [Ctrl+?] [Theme] [Reset]           │
@@ -599,6 +623,7 @@ graph TD
 **Key Elements:**
 
 **PDF Viewer Panel (left, 25% width when all 4 panels visible):**
+
 - **Close button (top-right X):** Dismisses PDF viewer, notes expand to 70%
 - **Zoom controls:** +/- buttons, fit-to-width, fit-to-page
 - **Page navigation:** Left/right arrows, page number dropdown
@@ -606,6 +631,7 @@ graph TD
 - **Why closable:** Broker may only need reference during initial data entry, then can reclaim space
 
 **Notes Panel (center, 45% width when PDF visible):**
+
 - **No AI messages:** Only broker's typed notes visible
 - **Inline pill system** works for policy data entry: broker types `carrier:GEICO`, `premium:1200`, `deductible:500` and they transform into green pills
 - Broker types corrections/additions while referencing PDF
@@ -613,17 +639,20 @@ graph TD
 - Same unified notes component as Screen 2 (contentEditable with pills)
 
 **Sidebar (right, 30% width):**
+
 - Identical to Screen 2 in policy mode
 - Savings Dashboard populates after analysis completes
 - Toast notifications in bottom-right corner
 - All fields (captured + missing) clickable with tooltips
 
 **Horizontal Resizing:**
+
 - All three panels resizable with drag handles
 - When PDF closed: Notes expand from 45% to 70%, sidebar stays 30%
 - Minimum widths: PDF 20%, Notes 30%, Sidebar 20%
 
 **Interaction Notes:**
+
 - **PDF auto-renders** when parse fails (no modal confirmation)
 - **Graceful degradation:** No error message - just show PDF + notes for manual entry
 - **Reference workflow:** Broker glances at PDF, types data in notes - key-value pairs transform into pills automatically
@@ -631,6 +660,7 @@ graph TD
 - **AI invisible:** No "AI: I extracted..." messages - extraction results appear in sidebar only
 
 **Why This Design:**
+
 - **No blocking errors:** Parse failure doesn't interrupt flow, just provides reference
 - **Side-by-side workflow:** Broker maintains visual continuity between source and entry
 - **Closable viewer:** Respects screen real estate once reference no longer needed
@@ -648,6 +678,7 @@ graph TD
 **Why:** Consistent user experience, reduced code duplication, muscle memory for power users
 
 **Key Behaviors:**
+
 - **Mode prop:** `mode: 'intake' | 'policy'` determines badge color, placeholder text, sidebar content
 - **Pill transformation:** Detects and transforms key-value pairs (`kids:3`, `carrier:GEICO`) into styled inline pills
 - **No AI messages:** Component only renders broker's typed notes - no conversational AI bubbles
@@ -656,6 +687,7 @@ graph TD
 - **Responsive layout:** Notes and sidebar widths adjust based on available space and resize handles
 
 **Developer Notes:**
+
 - Component uses contentEditable div with inline `<span contenteditable="false">` pills
 - Pill transformation: Regex pattern `/(\w+):(\w+|\d+)(?=\s|,|\.|$)/gi` with validation against known keys (case-insensitive)
 - Sidebar content: Load category config from backend based on `mode` and `product` type
@@ -671,6 +703,7 @@ graph TD
 **Why:** Single component adapts to both flows, reducing maintenance and ensuring consistency
 
 **Key Behaviors:**
+
 - **Dynamic categories:** Loads field categories from backend config (no hardcoding)
 - **Real-time updates:** Optimistic UI updates when broker sends notes, reconciles with backend response
 - **Collapsible sections:** Independent collapse/expand for each accordion panel
@@ -680,6 +713,7 @@ graph TD
 - **Hover tooltips:** Info icon (ℹ️) on every field shows keyboard shortcut on hover
 
 **Developer Notes:**
+
 - Use shadcn/ui Accordion component for collapsible sections
 - Field categories come from `GET /api/fields?product={type}&mode={intake|policy}` endpoint
 - Missing fields priority: Backend returns `priority: 'critical' | 'important' | 'optional'`
@@ -696,12 +730,14 @@ graph TD
 **Why:** Parse failures shouldn't block workflow - provide reference while broker manually enters data
 
 **Key Behaviors:**
+
 - **Conditional render:** Only appears in policy mode when `parseSuccess: false`
 - **Closable:** X button dismisses panel, triggers layout re-flow (notes expand)
 - **Page navigation:** Multi-page PDFs need prev/next controls
 - **Zoom controls:** Fit-to-width default, +/- zoom, fit-to-page option
 
 **Developer Notes:**
+
 - Use `react-pdf` or native `<embed>` for PDF rendering
 - Store PDF blob in component state (don't re-fetch from backend)
 - Close button triggers parent layout resize animation
@@ -716,17 +752,20 @@ graph TD
 **Why:** Provide feedback on background AI extraction without interrupting broker's note-taking flow
 
 **Visual Design:**
+
 ```
 ┌────────────────────────────────────┐
 │ ⓘ  Field captured: Kids = 2      ✕ │
 └────────────────────────────────────┘
 ```
+
 - **Left:** ⓘ icon (non-interactive, informational indicator)
 - **Center:** Status message text
 - **Right:** ✕ close button for manual dismiss
 - **Styling:** Compact padding (4px vertical, 8px horizontal), minimal design
 
 **Key Behaviors:**
+
 - **Position:** Bottom-right corner of sidebar area
 - **Stacking:** New toasts appear at bottom, push older toasts upward
 - **Dismissal:**
@@ -737,6 +776,7 @@ graph TD
 - **No AI personality:** Avoid "I captured..." - use passive voice "Field captured..."
 
 **Developer Notes:**
+
 - Use shadcn/ui Toast component with custom X button
 - Close button: `<X size={14} />` from Lucide, hover state for visibility
 - Stack direction: bottom-to-top (opposite of typical top-to-bottom)
@@ -756,22 +796,26 @@ graph TD
 **Visual Design:**
 
 **Priority Indicators (Missing Fields):**
+
 - 🔴 Red circle (12px): Critical fields
 - 🟡 Yellow circle (12px): Important fields
 - ⚪ Gray circle (12px): Optional fields
 
 **Typography (All Fields):**
+
 - Field names: 16px, semi-bold, primary text color
 - Field values: 14px, regular weight, secondary text color
 - Priority labels (missing only): 14px, light weight, muted text
 - Confidence scores (captured only): 12px, italic, tertiary text color
 
 **Spacing:**
+
 - 8px padding between rows
 - 16px padding inside card
 - 4px gap between field name and value/priority
 
 **Hover state:**
+
 - Entire row highlights with subtle background color change
 - Cursor changes to pointer
 - Info icon becomes more prominent
@@ -795,6 +839,7 @@ graph TD
    - Action: Opens modal (pre-filled for captured fields, empty for missing)
 
 **Modal Behavior:**
+
 - Opens with input field auto-focused
 - **For captured fields:** Pre-filled with current value for editing
 - **For missing fields:** Empty, ready for new entry
@@ -803,6 +848,7 @@ graph TD
 - After submission from captured field: modal closes, field value updates in place
 
 **Developer Notes:**
+
 - Component receives both `capturedFields` and `missingFields` arrays from backend
 - Each field includes: `name`, `alias`, `priority?`, `keyboardShortcut?`, `currentValue?`, `confidence?`
 - Use shadcn/ui Card for container, custom styling for priority indicators
@@ -814,12 +860,14 @@ graph TD
 ### Why These Specifications Matter
 
 **For Developers:**
+
 - **Clear scope:** Specifications define WHAT to build and WHY decisions were made
 - **Implementation freedom:** HOW to implement (specific libraries, state management) left to dev judgment
 - **Reusability:** Unified components reduce duplication and improve maintainability
 - **AI invisibility:** No chatbot UI components needed - simplified architecture
 
 **For Users (Brokers):**
+
 - **Professional tool:** Note-taking interface, not a chatbot - matches broker's mental model
 - **Consistent experience:** Same muscle memory across both workflows
 - **Visual clarity:** Color-coding and adaptive UI prevent mode confusion
@@ -827,6 +875,7 @@ graph TD
 - **Flexibility:** Multiple input methods accommodate different preferences
 
 **For Business:**
+
 - **Reduced training:** Single interface to learn, not two separate flows
 - **Faster iteration:** Changes to notes UX automatically apply to both flows
 - **Better compliance:** Unified component ensures consistent compliance checking
@@ -841,6 +890,7 @@ graph TD
 IQuote Pro uses **shadcn/ui** as its component foundation, built on Radix UI primitives with Tailwind CSS styling. shadcn/ui is not an NPM dependency - components are copied into the project (`components/ui/`) for full customization.
 
 **Why shadcn/ui:**
+
 - **Copy-paste architecture:** Full control over component code, no version lock-in
 - **Accessibility-first:** Built on Radix UI primitives with WCAG 2.1 AA compliance
 - **Tailwind integration:** Seamless styling with utility classes
@@ -848,22 +898,23 @@ IQuote Pro uses **shadcn/ui** as its component foundation, built on Radix UI pri
 
 ### Core Components Used
 
-| Component | shadcn/ui Source | Purpose | Customization |
-|-----------|------------------|---------|---------------|
-| **Accordion** | `accordion.tsx` | Collapsible sidebar sections (Captured Fields, Missing Fields) | Custom spacing for density, smooth transitions |
-| **Button** | `button.tsx` | Export/copy actions, modal triggers | Keyboard shortcut badges added to tooltips |
-| **Card** | `card.tsx` | Savings opportunities, routing status panels | Border colors adapt to mode (blue=intake, purple=policy) |
-| **Input** | `input.tsx` | Field-specific modals | Auto-focus on modal open, validation states |
-| **Modal/Dialog** | `dialog.tsx` | Field editing modals | Auto-focus on open, Enter=submit, Escape=cancel |
-| **Toast** | `toast.tsx` | System notifications | Compact design, X close button, bottom-right, 5s auto-dismiss |
-| **Tooltip** | `tooltip.tsx` | Info icons, slash commands, citations | Slash command formatting (`/k` style) |
-| **Progress** | `progress.tsx` | Missing fields completion percentage | Smooth animations, color gradient based on % |
-| **Badge** | `badge.tsx` | Mode indicator (INTAKE MODE / POLICY ANALYSIS MODE) | Color-coded: blue=intake, purple=policy, gray=ready |
-| **Custom ContentEditable** | Custom component | Notes panel with inline pills | Transforms key-value pairs into styled, atomic pills |
+| Component                  | shadcn/ui Source | Purpose                                                        | Customization                                                 |
+| -------------------------- | ---------------- | -------------------------------------------------------------- | ------------------------------------------------------------- |
+| **Accordion**              | `accordion.tsx`  | Collapsible sidebar sections (Captured Fields, Missing Fields) | Custom spacing for density, smooth transitions                |
+| **Button**                 | `button.tsx`     | Export/copy actions, modal triggers                            | Keyboard shortcut badges added to tooltips                    |
+| **Card**                   | `card.tsx`       | Savings opportunities, routing status panels                   | Border colors adapt to mode (blue=intake, purple=policy)      |
+| **Input**                  | `input.tsx`      | Field-specific modals                                          | Auto-focus on modal open, validation states                   |
+| **Modal/Dialog**           | `dialog.tsx`     | Field editing modals                                           | Auto-focus on open, Enter=submit, Escape=cancel               |
+| **Toast**                  | `toast.tsx`      | System notifications                                           | Compact design, X close button, bottom-right, 5s auto-dismiss |
+| **Tooltip**                | `tooltip.tsx`    | Info icons, slash commands, citations                          | Slash command formatting (`/k` style)                         |
+| **Progress**               | `progress.tsx`   | Missing fields completion percentage                           | Smooth animations, color gradient based on %                  |
+| **Badge**                  | `badge.tsx`      | Mode indicator (INTAKE MODE / POLICY ANALYSIS MODE)            | Color-coded: blue=intake, purple=policy, gray=ready           |
+| **Custom ContentEditable** | Custom component | Notes panel with inline pills                                  | Transforms key-value pairs into styled, atomic pills          |
 
 ### Component Customization Guidelines
 
 **Notes Input Component (Inline Pill System):**
+
 - Base: Custom `contentEditable` div (NOT `<Textarea>`)
 - Purpose: Single multiline text input where key-value pairs transform into styled, atomic "pills"
 - Pills appear immediately after typing `key:value` followed by space, comma, or period
@@ -881,6 +932,7 @@ IQuote Pro uses **shadcn/ui** as its component foundation, built on Radix UI pri
 **Required Behavior:**
 
 **Pill Transformation:**
+
 - **Trigger:** Broker types `key:value` followed by space, comma, or period
 - **Instant feedback:** Pill appears immediately (no animation delay)
 - **Pattern matching:** Case-insensitive (`K:2` and `k:2` both work)
@@ -888,18 +940,21 @@ IQuote Pro uses **shadcn/ui** as its component foundation, built on Radix UI pri
 - **Atomic editing:** Pills are `<span contenteditable="false">` elements that flow with text
 
 **Pill Interaction:**
+
 - **Backspace/Delete:** Removes entire pill as one unit
 - **Double-click:** Converts pill back to plain text for character-by-character editing
 - **Single-click:** Places cursor after pill
 - **Cursor positioning:** Pills never split across lines, cursor moves around them naturally
 
 **Key Behaviors (Non-Obvious Requirements):**
+
 - **Regex pattern:** `/(\w+):(\w+|\d+)(?=\s|,|\.|$)/gi` detects key-value pairs
 - **Valid keys:** Load from backend config (e.g., `k`, `kids`, `v`, `vehicles`, `state`, `product`)
 - **Styling:** Green (#22c55e) for valid, Red (#ef4444) for unknown key, Yellow (#eab308) for wrong value type
 - **Data attributes:** Use `data-key` and `data-value` attributes for conversion back to text on double-click
 
 **Critical Edge Cases:**
+
 - Backspace/Delete at pill boundaries removes entire pill (not character-by-character)
 - Copy/paste preserves pills OR converts to plain text (dev team decides based on browser support)
 - Multiple adjacent pills maintain space between them
@@ -910,6 +965,7 @@ IQuote Pro uses **shadcn/ui** as its component foundation, built on Radix UI pri
 ### Implementation Approach: Use Lexical
 
 **Why Lexical (not custom contentEditable):**
+
 - **Edge cases solved:** Undo/redo, cursor management, copy/paste, IME input work out-of-box
 - **Custom nodes API:** Designed for inline atomic elements (exactly our pill use case)
 - **Production-ready:** Meta-backed, used in Facebook/Instagram
@@ -917,18 +973,21 @@ IQuote Pro uses **shadcn/ui** as its component foundation, built on Radix UI pri
 - **Fast development:** 3-5 hours vs 10-18 hours for custom implementation
 
 **What to Build:**
+
 1. **PillNode:** Custom Lexical node extending `TextNode` with pill-specific rendering
 2. **Transform listener:** Watches for key-value pattern in text, converts to PillNode
 3. **Validation plugin:** Validates keys against backend schema, sets pill color classes
 4. **Double-click handler:** Converts PillNode back to plain text for editing
 
 **Key Customizations:**
+
 - Register PillNode with Lexical editor config
 - Add transform listener that matches `/(\w+):(\w+|\d+)(?=\s|,|\.|$)/gi` pattern
 - Style pills with CSS classes (`pill-valid`, `pill-error`, `pill-warning`)
 - Handle validation by fetching valid keys from backend on component mount
 
 **Non-Standard Requirements:**
+
 - Pills must transform **instantly** after space/comma/period (no debounce)
 - Pills use **case-insensitive** matching (K:2 = k:2)
 - Pills are **contenteditable="false"** spans that flow inline with text
@@ -936,6 +995,7 @@ IQuote Pro uses **shadcn/ui** as its component foundation, built on Radix UI pri
 ---
 
 **Field Modal Component:**
+
 - Base: `<Dialog>` from shadcn/ui
 - Customizations:
   - Auto-focus input on open
@@ -944,6 +1004,7 @@ IQuote Pro uses **shadcn/ui** as its component foundation, built on Radix UI pri
   - Keyboard shortcut display in footer
 
 **Sidebar Accordion:**
+
 - Base: `<Accordion>` from shadcn/ui
 - Customizations:
   - Independent collapse/expand per section
@@ -956,6 +1017,7 @@ IQuote Pro uses **shadcn/ui** as its component foundation, built on Radix UI pri
 **Important:** HSL values in Tailwind config are the source of truth. Hex values shown elsewhere in this document are approximations for reference - use HSL in implementation.
 
 **Colors:**
+
 ```javascript
 // tailwind.config.js
 module.exports = {
@@ -963,35 +1025,36 @@ module.exports = {
     extend: {
       colors: {
         // Mode-specific colors
-        'intake': {
-          DEFAULT: 'hsl(217, 91%, 60%)',  // Blue - approx #1562e8
+        intake: {
+          DEFAULT: 'hsl(217, 91%, 60%)', // Blue - approx #1562e8
           light: 'hsl(217, 91%, 70%)',
-          dark: 'hsl(217, 91%, 50%)'
+          dark: 'hsl(217, 91%, 50%)',
         },
-        'policy': {
-          DEFAULT: 'hsl(271, 76%, 53%)',  // Purple - approx #8b5cf6
+        policy: {
+          DEFAULT: 'hsl(271, 76%, 53%)', // Purple - approx #8b5cf6
           light: 'hsl(271, 76%, 63%)',
-          dark: 'hsl(271, 76%, 43%)'
+          dark: 'hsl(271, 76%, 43%)',
         },
         // Priority indicators
-        'priority': {
-          critical: 'hsl(0, 84%, 60%)',   // Red - approx #ef4444
+        priority: {
+          critical: 'hsl(0, 84%, 60%)', // Red - approx #ef4444
           important: 'hsl(45, 93%, 47%)', // Yellow - approx #eab308
-          optional: 'hsl(240, 5%, 65%)'   // Gray - approx #9ca3af
+          optional: 'hsl(240, 5%, 65%)', // Gray - approx #9ca3af
         },
         // Key-value pill styling
-        'pill': {
-          valid: 'hsl(142, 76%, 36%)',    // Green - approx #16a34a
-          error: 'hsl(0, 84%, 60%)',      // Red - approx #ef4444
-          warning: 'hsl(45, 93%, 47%)'    // Yellow - approx #eab308
-        }
-      }
-    }
-  }
+        pill: {
+          valid: 'hsl(142, 76%, 36%)', // Green - approx #16a34a
+          error: 'hsl(0, 84%, 60%)', // Red - approx #ef4444
+          warning: 'hsl(45, 93%, 47%)', // Yellow - approx #eab308
+        },
+      },
+    },
+  },
 }
 ```
 
 **Typography:**
+
 ```javascript
 // Font sizes for information density
 fontSize: {
@@ -1003,6 +1066,7 @@ fontSize: {
 ```
 
 **Spacing:**
+
 ```javascript
 // Custom spacing for dense information
 spacing: {
@@ -1071,52 +1135,54 @@ This specification uses colors derived from **professional, harmonious color sys
    - `yellow-500` (#eab308) for warnings/important states
 
 **Why these systems:**
+
 - **Proven track record:** Used by major companies (Vercel, GitHub, Linear, etc.)
 - **Harmonious by design:** Colors designed to work together across light/dark modes
 - **Accessibility built-in:** All colors tested for sufficient contrast
 - **Developer-friendly:** Available in Tailwind config, no custom color picking needed
 
 **Tailwind Spacing:** Uses **4px base unit** (0.25rem). Common values:
+
 - `2` = 8px (0.5rem) - Used for compact padding (pills, buttons)
 - `4` = 16px (1rem) - Used for card padding, standard spacing
 - `8` = 32px (2rem) - Used for large gaps between sections
 
 **Dark Mode (Default):**
 
-| Color | Hex | Usage |
-|-------|-----|-------|
-| **Background Primary** | `#0a0a0a` | Main app background |
-| **Background Secondary** | `#1a1a1a` | Card/panel backgrounds |
-| **Background Tertiary** | `#2a2a2a` | Hover states, elevated elements |
-| **Text Primary** | `#f5f5f5` | Main text, field names |
-| **Text Secondary** | `#a3a3a3` | Field values, secondary info |
-| **Text Tertiary** | `#737373` | Muted text, timestamps |
-| **Border Default** | `#2a2a2a` | Panel dividers, input borders |
-| **Border Accent** | `#3f3f46` | Active borders, drag handles |
+| Color                    | Hex       | Usage                           |
+| ------------------------ | --------- | ------------------------------- |
+| **Background Primary**   | `#0a0a0a` | Main app background             |
+| **Background Secondary** | `#1a1a1a` | Card/panel backgrounds          |
+| **Background Tertiary**  | `#2a2a2a` | Hover states, elevated elements |
+| **Text Primary**         | `#f5f5f5` | Main text, field names          |
+| **Text Secondary**       | `#a3a3a3` | Field values, secondary info    |
+| **Text Tertiary**        | `#737373` | Muted text, timestamps          |
+| **Border Default**       | `#2a2a2a` | Panel dividers, input borders   |
+| **Border Accent**        | `#3f3f46` | Active borders, drag handles    |
 
 **Mode-Specific Colors:**
 
-| Mode | Badge Color | Border Color | Accent Use |
-|------|-------------|--------------|------------|
-| **Intake** | Blue `#4a90e2` | `#4a90e2` | Compliance panel border |
-| **Policy** | Purple `#8b5cf6` | `#8b5cf6` | Compliance panel border |
-| **Ready** | Gray `#6b7280` | `#6b7280` | Initial state |
+| Mode       | Badge Color      | Border Color | Accent Use              |
+| ---------- | ---------------- | ------------ | ----------------------- |
+| **Intake** | Blue `#4a90e2`   | `#4a90e2`    | Compliance panel border |
+| **Policy** | Purple `#8b5cf6` | `#8b5cf6`    | Compliance panel border |
+| **Ready**  | Gray `#6b7280`   | `#6b7280`    | Initial state           |
 
 **Priority Colors:**
 
-| Priority | Color | Hex | Usage |
-|----------|-------|-----|-------|
-| 🔴 **Critical** | Red | `#ef4444` | Required fields for routing |
-| 🟡 **Important** | Yellow | `#eab308` | Improves accuracy |
-| ⚪ **Optional** | Gray | `#9ca3af` | Nice-to-have |
+| Priority         | Color  | Hex       | Usage                       |
+| ---------------- | ------ | --------- | --------------------------- |
+| 🔴 **Critical**  | Red    | `#ef4444` | Required fields for routing |
+| 🟡 **Important** | Yellow | `#eab308` | Improves accuracy           |
+| ⚪ **Optional**  | Gray   | `#9ca3af` | Nice-to-have                |
 
 **Pill Styling:**
 
-| State | Color | Hex | Usage |
-|-------|-------|-----|-------|
-| ✅ **Valid** | Green | `#22c55e` | Recognized key-value pills |
-| ❌ **Invalid Key** | Red | `#ef4444` | Unknown key pills |
-| ⚠️ **Invalid Value** | Yellow | `#eab308` | Wrong type/format pills |
+| State                | Color  | Hex       | Usage                      |
+| -------------------- | ------ | --------- | -------------------------- |
+| ✅ **Valid**         | Green  | `#22c55e` | Recognized key-value pills |
+| ❌ **Invalid Key**   | Red    | `#ef4444` | Unknown key pills          |
+| ⚠️ **Invalid Value** | Yellow | `#eab308` | Wrong type/format pills    |
 
 **Light Mode (Required):**
 
@@ -1124,16 +1190,16 @@ This specification uses colors derived from **professional, harmonious color sys
 
 Light mode inverts the color palette with adjustments for readability:
 
-| Color | Hex | Usage |
-|-------|-----|-------|
-| **Background Primary** | `#ffffff` | Main app background |
-| **Background Secondary** | `#f9fafb` | Card/panel backgrounds |
-| **Background Tertiary** | `#f3f4f6` | Hover states, elevated elements |
-| **Text Primary** | `#0a0a0a` | Main text, field names |
-| **Text Secondary** | `#1f2937` | Field values, secondary info |
-| **Text Tertiary** | `#6b7280` | Muted text, timestamps |
-| **Border Default** | `#e5e7eb` | Panel dividers, input borders |
-| **Border Accent** | `#d1d5db` | Active borders, drag handles |
+| Color                    | Hex       | Usage                           |
+| ------------------------ | --------- | ------------------------------- |
+| **Background Primary**   | `#ffffff` | Main app background             |
+| **Background Secondary** | `#f9fafb` | Card/panel backgrounds          |
+| **Background Tertiary**  | `#f3f4f6` | Hover states, elevated elements |
+| **Text Primary**         | `#0a0a0a` | Main text, field names          |
+| **Text Secondary**       | `#1f2937` | Field values, secondary info    |
+| **Text Tertiary**        | `#6b7280` | Muted text, timestamps          |
+| **Border Default**       | `#e5e7eb` | Panel dividers, input borders   |
+| **Border Accent**        | `#d1d5db` | Active borders, drag handles    |
 
 **Mode-specific colors:** Remain same saturation, adjusted lightness for sufficient contrast (WCAG AA minimum)
 
@@ -1143,28 +1209,28 @@ Light mode inverts the color palette with adjustments for readability:
 
 ```css
 /* Primary font (UI text) */
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-             'Helvetica Neue', Arial, sans-serif;
+font-family:
+  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 
 /* Monospace font (key-value syntax, code) */
-font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono',
-             Consolas, 'Courier New', monospace;
+font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
 ```
 
 **Type Scale:**
 
-| Element | Size | Weight | Line Height | Usage |
-|---------|------|--------|-------------|-------|
-| **H1** | 24px | 700 | 1.2 | Page title (IQuote Pro) |
-| **H2** | 20px | 600 | 1.3 | Section headers (not used) |
-| **H3** | 18px | 600 | 1.4 | Accordion headers |
-| **Body** | 14px | 400 | 1.5 | Notes text, descriptions |
-| **Field Name** | 16px | 600 | 1.5 | Sidebar field labels |
-| **Field Value** | 14px | 400 | 1.5 | Sidebar field values |
-| **Small** | 12px | 400 | 1.5 | Timestamps, confidence scores |
-| **Code** | 14px | 400 | 1.6 | Key-value syntax in notes |
+| Element         | Size | Weight | Line Height | Usage                         |
+| --------------- | ---- | ------ | ----------- | ----------------------------- |
+| **H1**          | 24px | 700    | 1.2         | Page title (IQuote Pro)       |
+| **H2**          | 20px | 600    | 1.3         | Section headers (not used)    |
+| **H3**          | 18px | 600    | 1.4         | Accordion headers             |
+| **Body**        | 14px | 400    | 1.5         | Notes text, descriptions      |
+| **Field Name**  | 16px | 600    | 1.5         | Sidebar field labels          |
+| **Field Value** | 14px | 400    | 1.5         | Sidebar field values          |
+| **Small**       | 12px | 400    | 1.5         | Timestamps, confidence scores |
+| **Code**        | 14px | 400    | 1.6         | Key-value syntax in notes     |
 
 **Font Weight Guidelines:**
+
 - **700 (Bold):** Headers, mode badge
 - **600 (Semi-bold):** Field names, accordion headers
 - **400 (Regular):** Body text, field values
@@ -1176,20 +1242,21 @@ font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono',
 
 **Core Icons Used:**
 
-| Icon | Name | Usage |
-|------|------|-------|
-| ℹ️ | `Info` | Field tooltips, help text |
-| ✓ | `Check` | Routing status checkmarks |
-| ⓘ | `CircleHelp` | Toast notifications |
-| ⚠️ | `AlertTriangle` | Compliance warnings |
-| 📄 | `FileText` | PDF viewer |
-| ✕ | `X` | Close buttons, dismiss toasts |
-| ⬇️ | `Download` | Export actions |
-| 📋 | `Clipboard` | Copy actions |
-| 🔍 | `Search` | (future use) |
-| ⚙️ | `Settings` | (future use) |
+| Icon | Name            | Usage                         |
+| ---- | --------------- | ----------------------------- |
+| ℹ️   | `Info`          | Field tooltips, help text     |
+| ✓    | `Check`         | Routing status checkmarks     |
+| ⓘ    | `CircleHelp`    | Toast notifications           |
+| ⚠️   | `AlertTriangle` | Compliance warnings           |
+| 📄   | `FileText`      | PDF viewer                    |
+| ✕    | `X`             | Close buttons, dismiss toasts |
+| ⬇️   | `Download`      | Export actions                |
+| 📋   | `Clipboard`     | Copy actions                  |
+| 🔍   | `Search`        | (future use)                  |
+| ⚙️   | `Settings`      | (future use)                  |
 
 **Priority Indicators:**
+
 - Not from icon library - use colored Unicode circles
 - 🔴 U+1F534 (Red circle) - Critical
 - 🟡 U+1F7E1 (Yellow circle) - Important
@@ -1201,16 +1268,17 @@ font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono',
 
 All spacing follows 8px increments for visual consistency:
 
-| Token | Size | Usage |
-|-------|------|-------|
-| `xs` | 4px | Icon gaps, tight spacing |
-| `sm` | 8px | Field row spacing |
-| `md` | 16px | Card padding, section gaps |
-| `lg` | 24px | Panel padding |
-| `xl` | 32px | Major section dividers |
+| Token | Size | Usage                           |
+| ----- | ---- | ------------------------------- |
+| `xs`  | 4px  | Icon gaps, tight spacing        |
+| `sm`  | 8px  | Field row spacing               |
+| `md`  | 16px | Card padding, section gaps      |
+| `lg`  | 24px | Panel padding                   |
+| `xl`  | 32px | Major section dividers          |
 | `2xl` | 48px | Unused (too large for dense UI) |
 
 **Component-Specific Spacing:**
+
 - **Field rows:** 8px vertical gap
 - **Accordion sections:** 16px padding
 - **Cards:** 16px padding
@@ -1222,11 +1290,11 @@ All spacing follows 8px increments for visual consistency:
 
 **Border Radius:**
 
-| Size | Value | Usage |
-|------|-------|-------|
-| `sm` | 4px | Buttons, badges |
-| `md` | 8px | Cards, inputs, modals |
-| `lg` | 12px | Large panels (unused in this design) |
+| Size | Value | Usage                                |
+| ---- | ----- | ------------------------------------ |
+| `sm` | 4px   | Buttons, badges                      |
+| `md` | 8px   | Cards, inputs, modals                |
+| `lg` | 12px  | Large panels (unused in this design) |
 
 **Shadows:**
 
@@ -1234,12 +1302,14 @@ Dark mode uses subtle shadows for depth:
 
 ```css
 /* Elevated elements (cards, modals) */
-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5),
-            0 2px 4px -1px rgba(0, 0, 0, 0.3);
+box-shadow:
+  0 4px 6px -1px rgba(0, 0, 0, 0.5),
+  0 2px 4px -1px rgba(0, 0, 0, 0.3);
 
 /* Hover state */
-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5),
-            0 4px 6px -2px rgba(0, 0, 0, 0.3);
+box-shadow:
+  0 10px 15px -3px rgba(0, 0, 0, 0.5),
+  0 4px 6px -2px rgba(0, 0, 0, 0.3);
 
 /* Drag handles, active states */
 box-shadow: inset 0 0 0 2px rgba(79, 70, 229, 0.5);
@@ -1252,6 +1322,7 @@ box-shadow: inset 0 0 0 2px rgba(79, 70, 229, 0.5);
 **Status:** Not included in MVP scope per PRD requirements.
 
 **Future Considerations:**
+
 - WCAG 2.1 AA compliance for production release
 - Screen reader support (ARIA labels, semantic HTML)
 - Keyboard navigation beyond shortcuts (tab order, focus management)
@@ -1267,13 +1338,14 @@ box-shadow: inset 0 0 0 2px rgba(79, 70, 229, 0.5);
 
 IQuote Pro is designed for **desktop use only** (professional insurance broker workstations):
 
-| Breakpoint | Width | Layout |
-|------------|-------|--------|
+| Breakpoint            | Width           | Layout                                    |
+| --------------------- | --------------- | ----------------------------------------- |
 | **Desktop (Primary)** | 1920px × 1080px | Full 4-panel layout with resizable panels |
-| **Desktop (Minimum)** | 1366px × 768px | Full layout with smaller panel minimums |
-| **Laptop** | 1280px × 800px | Reduced minimum panel widths |
+| **Desktop (Minimum)** | 1366px × 768px  | Full layout with smaller panel minimums   |
+| **Laptop**            | 1280px × 800px  | Reduced minimum panel widths              |
 
 **Not Supported:**
+
 - Tablets (< 1024px width) - Not a priority for 5-day demo
 - Mobile phones (< 768px width) - Brokers use desktop workstations
 
@@ -1281,23 +1353,24 @@ IQuote Pro is designed for **desktop use only** (professional insurance broker w
 
 **Panel Width Adjustments:**
 
-| Viewport | Notes Panel | Sidebar | PDF Viewer |
-|----------|-------------|---------|------------|
-| **1920px+** | 70% (default) | 30% | 25% (when visible) |
-| **1366px-1919px** | 65% | 35% | 20% (when visible) |
-| **1280px-1365px** | 60% | 40% | 20% (when visible) |
+| Viewport          | Notes Panel   | Sidebar | PDF Viewer         |
+| ----------------- | ------------- | ------- | ------------------ |
+| **1920px+**       | 70% (default) | 30%     | 25% (when visible) |
+| **1366px-1919px** | 65%           | 35%     | 20% (when visible) |
+| **1280px-1365px** | 60%           | 40%     | 20% (when visible) |
 
 **Minimum Panel Widths:**
 
-| Viewport | Notes Min | Sidebar Min | PDF Min |
-|----------|-----------|-------------|---------|
-| **1920px+** | 50% | 20% | 20% |
-| **1366px-1919px** | 45% | 25% | 15% |
-| **1280px-1365px** | 40% | 30% | 15% |
+| Viewport          | Notes Min | Sidebar Min | PDF Min |
+| ----------------- | --------- | ----------- | ------- |
+| **1920px+**       | 50%       | 20%         | 20%     |
+| **1366px-1919px** | 45%       | 25%         | 15%     |
+| **1280px-1365px** | 40%       | 30%         | 15%     |
 
 **Content Reflow:**
 
 All panels re-render content responsively when resized:
+
 - Notes: Line wrapping adjusts to width, pills reflow naturally with text
 - Sidebar: Field labels may truncate with ellipsis (`...`)
 - PDF: Zoom level adjusts to maintain readability
@@ -1326,35 +1399,38 @@ All panels re-render content responsively when resized:
 
 ### Core Animations (Duration & Effect)
 
-| Animation | Duration | Easing | Effect | Use Case |
-|-----------|----------|--------|--------|----------|
-| **Panel Resize** | 300ms | ease-out | Width transition | Broker closes PDF or switches modes |
-| **Accordion Expand/Collapse** | 200ms | ease-out | Height + opacity | Sidebar sections toggle independently |
-| **Toast Slide-In** | 250ms | ease-out | Slide from right + fade | System notifications appear bottom-right |
-| **Toast Fade-Out** | 200ms | ease-in | Opacity fade | Auto-dismiss or manual close |
-| **Modal Fade-In** | 150ms backdrop<br/>200ms content | ease-out | Backdrop fade + content scale | Field editing modals open |
-| **Progress Bar Fill** | 400ms | ease-out | Width transition | Missing fields completion animates |
+| Animation                     | Duration                         | Easing   | Effect                        | Use Case                                 |
+| ----------------------------- | -------------------------------- | -------- | ----------------------------- | ---------------------------------------- |
+| **Panel Resize**              | 300ms                            | ease-out | Width transition              | Broker closes PDF or switches modes      |
+| **Accordion Expand/Collapse** | 200ms                            | ease-out | Height + opacity              | Sidebar sections toggle independently    |
+| **Toast Slide-In**            | 250ms                            | ease-out | Slide from right + fade       | System notifications appear bottom-right |
+| **Toast Fade-Out**            | 200ms                            | ease-in  | Opacity fade                  | Auto-dismiss or manual close             |
+| **Modal Fade-In**             | 150ms backdrop<br/>200ms content | ease-out | Backdrop fade + content scale | Field editing modals open                |
+| **Progress Bar Fill**         | 400ms                            | ease-out | Width transition              | Missing fields completion animates       |
 
 ### Micro-interactions (Duration & Effect)
 
-| Interaction | Duration | Effect | Use Case |
-|-------------|----------|--------|----------|
-| **Field Row Hover** | 100ms | Background color fade | Entire row highlights on hover |
-| **Button Hover** | 100ms | Background + translateY | Button lifts slightly on hover |
-| **Icon Hover** | 100ms | Opacity + scale | Info icons become more prominent |
-| **Button Click** | 50ms | Scale down | Button press feedback |
-| **Focus Ring** | 100ms | Outline appears | Keyboard navigation |
+| Interaction         | Duration | Effect                  | Use Case                         |
+| ------------------- | -------- | ----------------------- | -------------------------------- |
+| **Field Row Hover** | 100ms    | Background color fade   | Entire row highlights on hover   |
+| **Button Hover**    | 100ms    | Background + translateY | Button lifts slightly on hover   |
+| **Icon Hover**      | 100ms    | Opacity + scale         | Info icons become more prominent |
+| **Button Click**    | 50ms     | Scale down              | Button press feedback            |
+| **Focus Ring**      | 100ms    | Outline appears         | Keyboard navigation              |
 
 ### Special Cases
 
 **Pill Transformation:** No animation - instant visual feedback
+
 - **Why:** Real-time validation needs immediate feedback (no delay)
 - **Behavior:** Pill appears immediately after space/comma/period typed after `key:value` pattern
 
 **Toast Close Button:** Opacity 0.7 default, 1.0 on hover (150ms transition)
+
 - **Why:** Subtle presence until needed, prominent when hovering
 
 **Loading States:**
+
 - **PDF Upload:** Pulse animation (1.5s infinite) while processing
 - **LLM Extraction:** No loading spinner (AI is invisible), toast notification "Processing..." appears briefly
 - **Sidebar Update:** Fields populate when ready (no loading skeleton)
@@ -1367,51 +1443,55 @@ All panels re-render content responsively when resized:
 
 **Target Total Bundle Size:** < 500KB gzipped
 
-| Bundle | Target | Components |
-|--------|--------|------------|
-| **Vendor** | < 300KB | React, TanStack Router/Query/Form, shadcn/ui components |
-| **App Code** | < 150KB | IQuote Pro components, utilities |
-| **CSS** | < 50KB | Tailwind CSS (purged), component styles |
+| Bundle       | Target  | Components                                              |
+| ------------ | ------- | ------------------------------------------------------- |
+| **Vendor**   | < 300KB | React, TanStack Router/Query/Form, shadcn/ui components |
+| **App Code** | < 150KB | IQuote Pro components, utilities                        |
+| **CSS**      | < 50KB  | Tailwind CSS (purged), component styles                 |
 
 **Why these targets:** Fast initial load on corporate networks, minimal re-downloads.
 
 ### Code Splitting Strategy
 
 **Route-based splitting:**
+
 - Use React `lazy()` for route components
 - Single route for MVP (minimal splitting needed)
 
 **Component lazy loading:**
+
 - PDF viewer loads only when PDF uploaded
 - Shortcuts modal loads only when `Ctrl+?` pressed
 - Reduces initial bundle, improves first paint
 
 ### Asset Optimization
 
-| Asset Type | Strategy | Details |
-|------------|----------|---------|
-| **Images** | None | Icon library only (Lucide React), no image files |
-| **Fonts** | System fonts | No custom downloads, fallback chain for cross-platform consistency |
-| **Icons** | Tree-shakeable | Lucide React - import only used icons, SVG format inline in bundle |
-| **Carrier Logos** | Future | WebP format, <10KB each, lazy loaded |
+| Asset Type        | Strategy       | Details                                                            |
+| ----------------- | -------------- | ------------------------------------------------------------------ |
+| **Images**        | None           | Icon library only (Lucide React), no image files                   |
+| **Fonts**         | System fonts   | No custom downloads, fallback chain for cross-platform consistency |
+| **Icons**         | Tree-shakeable | Lucide React - import only used icons, SVG format inline in bundle |
+| **Carrier Logos** | Future         | WebP format, <10KB each, lazy loaded                               |
 
 ### Runtime Performance
 
 **TanStack Query Caching:**
 
-| Setting | Value | Rationale |
-|---------|-------|-----------|
-| `staleTime` | 5 minutes | Routing/discount data doesn't change during session |
-| `cacheTime` | 10 minutes | Keep data in memory for broker session duration |
-| `refetchOnWindowFocus` | false | Brokers switch windows often, avoid unnecessary refetches |
-| `retry` | 1 | Fail fast for demo, no long waits |
+| Setting                | Value      | Rationale                                                 |
+| ---------------------- | ---------- | --------------------------------------------------------- |
+| `staleTime`            | 5 minutes  | Routing/discount data doesn't change during session       |
+| `cacheTime`            | 10 minutes | Keep data in memory for broker session duration           |
+| `refetchOnWindowFocus` | false      | Brokers switch windows often, avoid unnecessary refetches |
+| `retry`                | 1          | Fail fast for demo, no long waits                         |
 
 **Optimistic UI Updates:**
+
 - **What:** Update sidebar immediately when key-value pair typed
 - **Why:** Instant feedback (no waiting for backend/LLM)
 - **How:** Update local state first, reconcile with backend response
 
 **LLM Extraction Debouncing:**
+
 - **What:** Wait 500ms after broker stops typing before calling LLM
 - **Why:** Avoid excessive API calls (cost control), wait for complete thought
 - **How:** Use debounce wrapper around extraction API call
@@ -1419,11 +1499,13 @@ All panels re-render content responsively when resized:
 ### Memory Management
 
 **Knowledge Pack Loading (Backend):**
+
 - **What:** Load all JSON files into memory at server startup
 - **Why:** Fast O(1) queries during broker session, never reload
 - **How:** Async load on startup (non-blocking), cache in Map
 
 **Frontend State Cleanup:**
+
 - **What:** Clear TanStack Query cache, UI state, and notes on session reset
 - **Why:** Prevent memory leaks, fresh start for new client
 - **Trigger:** Broker clicks session reset (`/reset`)
@@ -1435,18 +1517,21 @@ All panels re-render content responsively when resized:
 ### Testing Strategy
 
 **Unit Tests:**
+
 - [ ] Test key-value syntax parser (valid/invalid cases)
 - [ ] Test field modal behavior (pre-fill, submit, cancel)
 - [ ] Test keyboard shortcut handlers
 - [ ] Test sidebar field categorization
 
 **Integration Tests:**
+
 - [ ] Test conversational intake flow end-to-end
 - [ ] Test policy analysis flow with PDF upload
 - [ ] Test mode switching and panel resizing
 - [ ] Test toast notifications and dismissal
 
 **Manual Testing:**
+
 - [ ] Test with real policy PDFs (parse success and failure)
 - [ ] Test at different viewport sizes (1920px, 1366px, 1280px)
 - [ ] Verify keyboard shortcuts work as expected

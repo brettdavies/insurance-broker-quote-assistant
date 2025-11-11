@@ -13,12 +13,14 @@ The frontend provides two distinct user flows: "Get Quote" (conversational intak
 **Platform:** Local Development / Cloud Agnostic (Deployment TBD based on PEAK6 feedback)
 
 **Key Services:**
+
 - **Compute:** Node.js runtime for Hono API server
 - **LLM API:** OpenAI GPT-4o-mini (extraction), GPT-4o (pitch generation)
 - **Storage:** Local filesystem for knowledge pack JSON files
 - **Frontend Hosting:** Static deployment (Vercel/Netlify/Cloudflare Pages candidates)
 
 **Deployment Host and Regions:**
+
 - Development: Local (http://localhost:3000 frontend, http://localhost:7070 API)
 - Production: TBD - architecture supports serverless (Vercel/Cloudflare Workers) or containerized (Docker/Railway) deployment
 
@@ -31,6 +33,7 @@ The frontend provides two distinct user flows: "Get Quote" (conversational intak
 **Monorepo Tool:** Bun workspaces (native Bun, zero additional tooling)
 
 **Package Organization:**
+
 ```
 apps/
   web/          - Frontend React application

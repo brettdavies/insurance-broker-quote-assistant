@@ -28,4 +28,3 @@ export class SingleProductDiscountEvaluator extends BaseDiscountEvaluator {
     }
   }
 }
-

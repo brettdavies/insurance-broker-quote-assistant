@@ -19,10 +19,7 @@ export class BundleDiscountEvaluator extends BaseDiscountEvaluator {
     customerData: UserProfile | undefined,
     effectivePercentage: number
   ): SavingsCalculation {
-    const requirements = getFieldValue(
-      discount.requirements,
-      {}
-    ) as DiscountRequirements
+    const requirements = getFieldValue(discount.requirements, {}) as DiscountRequirements
 
     const currentPremium = policy.premiums?.annual || 0
 
@@ -55,4 +52,3 @@ export class BundleDiscountEvaluator extends BaseDiscountEvaluator {
     }
   }
 }
-

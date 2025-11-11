@@ -9,27 +9,17 @@
  * @see docs/architecture/6-components.md#64-discount-engine-deterministic
  */
 
-import type {
-  Carrier,
-  PolicySummary,
-  UserProfile,
-} from '@repo/shared'
+import type { Carrier, PolicySummary, UserProfile } from '@repo/shared'
 import { getFieldValue } from '../utils/field-helpers'
+import { analyzeBundleOptions } from './discount-engine/bundle-analyzer'
+import { getDiscountEvaluator } from './discount-engine/factory'
+import type { BundleOpportunity, DiscountOpportunity } from './discount-engine/types'
+import { createCitation } from './discount-engine/utils/citation'
 import { filterByProductAndState } from './discount-engine/utils/filtering'
 import { getEffectivePercentage } from './discount-engine/utils/percentage'
-import { createCitation } from './discount-engine/utils/citation'
-import { getDiscountEvaluator } from './discount-engine/factory'
-import { analyzeBundleOptions } from './discount-engine/bundle-analyzer'
-import type {
-  DiscountOpportunity,
-  BundleOpportunity,
-} from './discount-engine/types'
 
 // Re-export types for external use
-export type {
-  DiscountOpportunity,
-  BundleOpportunity,
-} from './discount-engine/types'
+export type { DiscountOpportunity, BundleOpportunity } from './discount-engine/types'
 
 /**
  * Find applicable discounts for a policy
@@ -64,18 +54,13 @@ export function findApplicableDiscounts(
     .filter((result) => result.eligible)
 
   // Step 3: Calculate savings for each eligible discount
+  // Note: state and productType are guaranteed to be defined due to early return above
+  const state = policy.state
+  const productType = policy.productType
   return eligibleDiscounts.map((result) => {
     const evaluator = getDiscountEvaluator(result.discount)
-    const savings = evaluator.calculateSavings(
-      result.discount,
-      policy,
-      customerData
-    )
-    const effectivePercentage = getEffectivePercentage(
-      result.discount,
-      policy.state!,
-      policy.productType!
-    )
+    const savings = evaluator.calculateSavings(result.discount, policy, customerData)
+    const effectivePercentage = getEffectivePercentage(result.discount, state, productType)
 
     return {
       discountId: result.discount._id,
@@ -85,8 +70,7 @@ export function findApplicableDiscounts(
       missingRequirements: result.missingRequirements,
       citation: createCitation(result.discount, carrier),
       stackable: getFieldValue(result.discount.stackable, true),
-      requiresDocumentation:
-        result.discount.metadata?.requiresDocumentation || false,
+      requiresDocumentation: result.discount.metadata?.requiresDocumentation || false,
     }
   })
 }
@@ -110,4 +94,3 @@ export { getEffectivePercentage } from './discount-engine/utils/percentage'
  * @returns Array of bundle opportunities
  */
 export { analyzeBundleOptions } from './discount-engine/bundle-analyzer'
-

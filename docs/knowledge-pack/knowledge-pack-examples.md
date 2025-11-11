@@ -18,6 +18,7 @@ This document provides complete, realistic examples showing the transformation o
 5. Production Format
 
 Each example includes:
+
 - Multiple source citations
 - Conflict scenarios
 - Resolution decisions
@@ -28,17 +29,20 @@ Each example includes:
 ## How to Use This Document
 
 This document shows complete data transformations from raw scraping to production. Each example demonstrates:
+
 - Multi-source data gathering
 - Conflict detection and resolution
 - Source tracking and audit trails
 
 **Before diving in, review:**
+
 - 📖 [Schemas](sot-schemas.md) - Understand data structures
 - 🔗 [Source Hierarchy](sot-source-hierarchy.md) - Understand conflict resolution
 - 📖 [Methodology](knowledge-pack-methodology.md) - Understand the 7-phase process
 - 🔑 [ID Conventions](sot-id-conventions.md) - **All example IDs must match the cuid2 specifications in this SoT document**
 
 **Navigation tips:**
+
 - Examples progress from simple (2 sources) to complex (3+ sources)
 - Each example is self-contained
 - Look for "Key Lessons" sections for important takeaways
@@ -244,21 +248,42 @@ This document shows complete data transformations from raw scraping to productio
   "_id": "disc_cm5e9f1o3t",
   "name": {
     "_id": "fld_cm0j4k6t8y",
-    "_sources": [{"uri": "https://www.geico.com/auto/discounts/", "ref": "div.discount-card h3", "date": "2025-11-05"}],
+    "_sources": [
+      {
+        "uri": "https://www.geico.com/auto/discounts/",
+        "ref": "div.discount-card h3",
+        "date": "2025-11-05"
+      }
+    ],
     "value": "Multi-Policy Bundle"
   },
   "percentage": {
     "_id": "fld_cm1k5l7u9z",
     "_sources": [
-      {"uri": "https://www.geico.com/auto/discounts/", "ref": "div.discount-card p.percentage", "date": "2025-11-05", "primary": true},
-      {"uri": "https://www.nerdwallet.com/article/insurance/geico-insurance-discounts", "ref": "table tr:nth-child(3) td:nth-child(2)", "date": "2025-11-05"}
+      {
+        "uri": "https://www.geico.com/auto/discounts/",
+        "ref": "div.discount-card p.percentage",
+        "date": "2025-11-05",
+        "primary": true
+      },
+      {
+        "uri": "https://www.nerdwallet.com/article/insurance/geico-insurance-discounts",
+        "ref": "table tr:nth-child(3) td:nth-child(2)",
+        "date": "2025-11-05"
+      }
     ],
-    "_resolution": {"conflictId": "conf_cm2b6c8l0q", "method": "authoritative_source"},
+    "_resolution": { "conflictId": "conf_cm2b6c8l0q", "method": "authoritative_source" },
     "value": 15
   },
   "products": {
     "_id": "fld_cm2l6m8v0a",
-    "_sources": [{"uri": "https://www.geico.com/auto/discounts/", "ref": "div.discount-card p.applies-to", "date": "2025-11-05"}],
+    "_sources": [
+      {
+        "uri": "https://www.geico.com/auto/discounts/",
+        "ref": "div.discount-card p.applies-to",
+        "date": "2025-11-05"
+      }
+    ],
     "value": ["auto", "home"]
   }
 }
@@ -426,7 +451,7 @@ This document shows complete data transformations from raw scraping to productio
             "note": "Shows recommended ($25k), not legal minimum"
           }
         ],
-        "_resolution": {"conflictId": "conf_cm3c7d9m1r", "method": "authoritative_source"}
+        "_resolution": { "conflictId": "conf_cm3c7d9m1r", "method": "authoritative_source" }
       }
     }
   }
@@ -608,10 +633,10 @@ GEICO Multi-Policy discount doesn't specify which states it's available in. We i
   "conflictType": "numeric_difference",
   "severity": "low",
   "sources": [
-    {"id": "raw_cm2v6w8f0k", "uri": "iii.org", "value": 1200, "authority": 3},
-    {"id": "raw_cm3w7x9g1l", "uri": "bankrate.com", "value": 1150, "authority": 2},
-    {"id": "raw_cm4x8y0h2m", "uri": "nerdwallet.com", "value": 1200, "authority": 2},
-    {"id": "raw_cm5y9z1i3n", "uri": "valuepenguin.com", "value": 1250, "authority": 2}
+    { "id": "raw_cm2v6w8f0k", "uri": "iii.org", "value": 1200, "authority": 3 },
+    { "id": "raw_cm3w7x9g1l", "uri": "bankrate.com", "value": 1150, "authority": 2 },
+    { "id": "raw_cm4x8y0h2m", "uri": "nerdwallet.com", "value": 1200, "authority": 2 },
+    { "id": "raw_cm5y9z1i3n", "uri": "valuepenguin.com", "value": 1250, "authority": 2 }
   ],
   "analysis": {
     "values": [1150, 1200, 1200, 1250],

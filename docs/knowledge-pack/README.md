@@ -96,12 +96,12 @@ All entities use **cuid2** for globally unique, collision-resistant identifiers.
 
 The following documents serve as the canonical sources of truth for critical system specifications. Every data decision, ID generation, conflict resolution, and schema definition traces back to these authoritative references.
 
-| Concept | SoT Document | Description |
-|---------|--------------|-------------|
-| **cuid2 ID Specifications** | [sot-id-conventions.md](sot-id-conventions.md) | Authoritative source for all globally unique identifier conventions, prefixes, and generation methods |
-| **JSON Schemas** | [sot-schemas.md](sot-schemas.md) | Authoritative source for all data structure definitions, field metadata envelopes, and schema specifications |
+| Concept                             | SoT Document                                       | Description                                                                                                           |
+| ----------------------------------- | -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| **cuid2 ID Specifications**         | [sot-id-conventions.md](sot-id-conventions.md)     | Authoritative source for all globally unique identifier conventions, prefixes, and generation methods                 |
+| **JSON Schemas**                    | [sot-schemas.md](sot-schemas.md)                   | Authoritative source for all data structure definitions, field metadata envelopes, and schema specifications          |
 | **Authority & Conflict Resolution** | [sot-source-hierarchy.md](sot-source-hierarchy.md) | Authoritative source for source authority levels (1-5), confidence scoring, and 7-step conflict resolution strategies |
-| **Search Query Catalog** | [sot-search-queries.md](sot-search-queries.md) | Authoritative source for the complete catalog of 200+ search queries organized by data gathering category |
+| **Search Query Catalog**            | [sot-search-queries.md](sot-search-queries.md)     | Authoritative source for the complete catalog of 200+ search queries organized by data gathering category             |
 
 **Architecture Principle**: All data in the knowledge pack system is traceable to its source via unique IDs and structured metadata. The SoT documents establish the single authoritative specification for each critical system component, ensuring consistency, auditability, and regulatory compliance. When in doubt about ID formats, data structures, authority rankings, or search methodology, consult the relevant SoT document first.
 
@@ -119,6 +119,7 @@ The following documents serve as the canonical sources of truth for critical sys
 ### For Automated Data Gathering
 
 The knowledge pack uses Brave Search API for automated data discovery:
+
 1. Search queries are defined in [sot-search-queries.md](sot-search-queries.md)
 2. Brave API enriches URLs with metadata (title, description, language, etc.)
 3. URLs are fetched using crawl4ai for HTML and markdown extraction
@@ -138,6 +139,7 @@ The knowledge pack uses Brave Search API for automated data discovery:
 ## Data Coverage
 
 ### Minimum Viable Dataset
+
 - **Carriers**: 3 (GEICO, Progressive, State Farm)
 - **States**: 5 (CA, TX, FL, NY, IL)
 - **Products**: 4 (Auto, Home, Renters, Umbrella)
@@ -145,7 +147,9 @@ The knowledge pack uses Brave Search API for automated data discovery:
 - **Data Points**: ~670 total
 
 ### Complete Dataset
+
 All of the above plus:
+
 - Broker compensation data
 - Additional discount types
 - More granular eligibility rules
@@ -197,6 +201,7 @@ graph TB
 ```
 
 **Legend:**
+
 - 🔵 **Blue** (README.md): Central index and quick-start guide
 - 🟡 **Yellow** (knowledge-pack-methodology.md): Complete 7-phase workflow specification
 - 🟢 **Green** (sot-schemas.md): Canonical JSON schema definitions (SoT for data structures)
@@ -210,11 +215,13 @@ graph TB
 ### If you want to...
 
 **Understand the complete methodology:**
+
 1. Start with [knowledge-pack-methodology.md](knowledge-pack-methodology.md) for 7-phase overview
 2. Review [sot-source-hierarchy.md](sot-source-hierarchy.md) for conflict resolution
 3. See [knowledge-pack-examples.md](knowledge-pack-examples.md) for practical applications
 
 **Implement Phase 2 data gathering:**
+
 1. Reference [sot-search-queries.md](sot-search-queries.md) for search query catalog
 2. Use `knowledge-pack-scraper/scripts/brave-search.py` to execute searches via Brave API
 3. Use `knowledge-pack-scraper/scripts/fetch-url.py` to fetch discovered URLs
@@ -222,26 +229,28 @@ graph TB
 5. Reference [sot-id-conventions.md](sot-id-conventions.md) for ID generation
 
 **Create production JSON files:**
+
 1. Review [sot-schemas.md](sot-schemas.md) for data structures
 2. Review [sot-source-hierarchy.md](sot-source-hierarchy.md) for authority levels
 3. Follow [knowledge-pack-examples.md](knowledge-pack-examples.md) for transformation patterns
 
 **Generate unique IDs:**
+
 1. See [sot-id-conventions.md](sot-id-conventions.md) for complete specification and setup instructions
 
 ---
 
 ## Key Terms Quick Reference
 
-| Term | Definition | Learn More |
-|------|------------|------------|
-| **cuid2** | Globally unique identifier system (10-character cuid2 + prefix) | [sot-id-conventions.md](sot-id-conventions.md) |
-| **Field Metadata Envelope** | Data structure wrapping values with source tracking | [sot-schemas.md#field-metadata-envelope](sot-schemas.md#field-metadata-envelope) |
-| **Source Authority Level** | Ranking system (1-5) for source trustworthiness | [sot-source-hierarchy.md#source-authority-levels](sot-source-hierarchy.md#source-authority-levels) |
-| **Conflict Resolution** | Process for choosing between conflicting data | [sot-source-hierarchy.md#conflict-resolution-decision-tree](sot-source-hierarchy.md#conflict-resolution-decision-tree) |
-| **Raw Data Entry** | Unprocessed data captured during scraping | [sot-schemas.md#raw-data-schema](sot-schemas.md#raw-data-schema) |
-| **Inheritance** | Child data points borrowing parent sources | [sot-schemas.md#source-inheritance-rules](sot-schemas.md#source-inheritance-rules) |
-| **Websearch** | Brave API search execution with raw request/response | [sot-schemas.md#websearch-schema](sot-schemas.md#websearch-schema) |
+| Term                        | Definition                                                      | Learn More                                                                                                             |
+| --------------------------- | --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| **cuid2**                   | Globally unique identifier system (10-character cuid2 + prefix) | [sot-id-conventions.md](sot-id-conventions.md)                                                                         |
+| **Field Metadata Envelope** | Data structure wrapping values with source tracking             | [sot-schemas.md#field-metadata-envelope](sot-schemas.md#field-metadata-envelope)                                       |
+| **Source Authority Level**  | Ranking system (1-5) for source trustworthiness                 | [sot-source-hierarchy.md#source-authority-levels](sot-source-hierarchy.md#source-authority-levels)                     |
+| **Conflict Resolution**     | Process for choosing between conflicting data                   | [sot-source-hierarchy.md#conflict-resolution-decision-tree](sot-source-hierarchy.md#conflict-resolution-decision-tree) |
+| **Raw Data Entry**          | Unprocessed data captured during scraping                       | [sot-schemas.md#raw-data-schema](sot-schemas.md#raw-data-schema)                                                       |
+| **Inheritance**             | Child data points borrowing parent sources                      | [sot-schemas.md#source-inheritance-rules](sot-schemas.md#source-inheritance-rules)                                     |
+| **Websearch**               | Brave API search execution with raw request/response            | [sot-schemas.md#websearch-schema](sot-schemas.md#websearch-schema)                                                     |
 
 **Note:** This is a quick reference only. Follow links for complete specifications.
 

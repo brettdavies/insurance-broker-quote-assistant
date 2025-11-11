@@ -26,15 +26,11 @@ function checkAgeRequirement(
   }
 
   if (ageReq.min !== undefined && customerData.age < ageReq.min) {
-    missing.push(
-      `Age must be at least ${ageReq.min} (currently ${customerData.age})`
-    )
+    missing.push(`Age must be at least ${ageReq.min} (currently ${customerData.age})`)
   }
 
   if (ageReq.max !== undefined && customerData.age > ageReq.max) {
-    missing.push(
-      `Age must be at most ${ageReq.max} (currently ${customerData.age})`
-    )
+    missing.push(`Age must be at most ${ageReq.max} (currently ${customerData.age})`)
   }
 
   return missing
@@ -121,9 +117,7 @@ export function checkFieldRequirements(
 
   // GPA check
   if (fieldReqs.gpa?.min !== undefined) {
-    const gpa = (customerData as Record<string, unknown>).gpa as
-      | number
-      | undefined
+    const gpa = (customerData as Record<string, unknown>).gpa as number | undefined
     if (gpa === undefined || gpa < fieldReqs.gpa.min) {
       missing.push(`GPA must be at least ${fieldReqs.gpa.min}`)
     }
@@ -169,4 +163,3 @@ export function checkFieldRequirements(
 
   return missing
 }
-

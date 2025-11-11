@@ -3,6 +3,7 @@
 **Monorepo Organization:** Bun workspaces with clear separation between applications, shared packages, and data.
 
 **Top-Level Structure:**
+
 ```
 insurance-broker-quote-assistant/
 ├── apps/                   # Deployable applications
@@ -25,18 +26,21 @@ insurance-broker-quote-assistant/
 **Key Design Decisions:**
 
 **Why Monorepo:**
+
 - **Shared types:** Frontend/backend share types from `@repo/shared` without publishing to npm
 - **Single bun install:** All dependencies installed with one command
 - **Atomic changes:** Update API + frontend types in single commit
 - **Simpler than micro-repos:** For 5-day timeline, one repo easier than coordinating multiple
 
 **Why This Structure:**
+
 - **apps/ for deployables:** Clear separation between what gets deployed vs what's shared
 - **packages/ for shared code:** Types, constants, utilities used by both apps
 - **knowledge_pack/ at root:** Data is separate from code, easy to update without touching application code
 - **evaluation/ at root:** Test cases are first-class, not buried in apps/api/tests/
 
 **Workspace Configuration (Root package.json):**
+
 ```json
 {
   "name": "insurance-broker-quote-assistant",
@@ -51,6 +55,7 @@ insurance-broker-quote-assistant/
 ```
 
 **Why Bun Workspaces:**
+
 - **10-20x faster than npm:** Package installation and script execution
 - **Native TypeScript:** No build step for scripts
 - **Built-in test runner:** `bun test` replaces Jest/Vitest

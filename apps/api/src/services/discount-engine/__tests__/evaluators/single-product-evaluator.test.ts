@@ -89,4 +89,3 @@ describe('SingleProductDiscountEvaluator', () => {
     })
   })
 })
-

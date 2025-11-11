@@ -175,9 +175,7 @@ export class ConversationalExtractor {
    * @param file - Policy document file (PDF, DOCX, TXT)
    * @returns PolicySummary with extracted fields and confidence scores, plus metadata (tokens, timing)
    */
-  async extractPolicyDataFromFile(
-    file: File
-  ): Promise<
+  async extractPolicyDataFromFile(file: File): Promise<
     PolicySummary & {
       _metadata?: { tokensUsed?: number; extractionTime?: number; reasoning?: string }
     }

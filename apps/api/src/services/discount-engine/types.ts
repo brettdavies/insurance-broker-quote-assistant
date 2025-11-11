@@ -4,13 +4,7 @@
  * Shared type definitions for discount engine components
  */
 
-import type {
-  Carrier,
-  Citation,
-  Discount,
-  PolicySummary,
-  UserProfile,
-} from '@repo/shared'
+import type { Carrier, Citation, Discount, PolicySummary, UserProfile } from '@repo/shared'
 
 /**
  * Discount eligibility evaluation result
@@ -90,4 +84,3 @@ export interface EvaluationContext {
   customerData?: UserProfile
   carrier: Carrier
 }
-

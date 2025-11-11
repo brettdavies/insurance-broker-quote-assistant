@@ -3,6 +3,7 @@
 ## Repository Structure: **Monorepo**
 
 The project uses a **Bun workspace monorepo** with the structure:
+
 - `apps/web` - React frontend (port 3000)
 - `apps/api` - Hono backend (port 7070)
 - `packages/shared` - Shared TypeScript types, schemas, and utilities
@@ -12,6 +13,7 @@ The project uses a **Bun workspace monorepo** with the structure:
 ## Service Architecture: **Monolith within Monorepo**
 
 Both frontend and backend are **monolithic applications** (not microservices or serverless functions). The backend uses a **hybrid LLM + deterministic rules architecture**:
+
 - **2 LLM Agents:** Conversational Extractor (field extraction) + Pitch Generator (recommendations)
 - **3 Rules Engines:** Routing (carrier eligibility) + Discount (savings) + Compliance (regulatory guardrails)
 - **Offline Knowledge Pack:** All insurance data in local JSON files loaded at startup into in-memory cache
@@ -21,6 +23,7 @@ Both frontend and backend are **monolithic applications** (not microservices or 
 ## Testing Requirements: **Unit + Integration (No E2E)**
 
 Testing pyramid prioritizes:
+
 - **Unit tests** using Bun test (Jest-compatible) for core business logic (rules engines, LLM prompt logic)
 - **Integration tests** for API endpoints and multi-component workflows
 - **Evaluation harness** (`bun run evaluate`) for routing accuracy, intake completeness, and compliance metrics
@@ -35,6 +38,7 @@ Testing pyramid prioritizes:
 The following technical decisions are documented in [docs/architecture/3-tech-stack.md](docs/architecture/3-tech-stack.md) and serve as constraints for implementation:
 
 **Core Technology Stack:**
+
 - **Languages:** TypeScript ^5.6 (frontend + backend) with strict mode enabled
 - **Frontend:** React 18.2 + TanStack Router + TanStack Query + TanStack Form + Tailwind CSS + shadcn/ui
 - **Backend:** Hono 4.0 + OpenAI Node SDK 4.0 for LLM integration
@@ -44,6 +48,7 @@ The following technical decisions are documented in [docs/architecture/3-tech-st
 - **Tooling:** Biome 1.9 (linting + formatting for most files) + Prettier 3.0 with prettier-plugin-tailwindcss (React component formatting), Husky 9.0 (pre-commit hooks), GitHub Actions (CI)
 
 **Key Architectural Decisions (Rationale Documented in Architecture):**
+
 - **No database:** JSON files meet offline requirement and simplify 5-day timeline
 - **No authentication:** Out of scope for demo per project spec
 - **No vector store:** Structured JSON with exact queries faster/more accurate than semantic search for insurance rules
@@ -66,6 +71,7 @@ The following key data entities are defined in [docs/architecture/4-data-models.
 All models use Zod schemas for runtime validation and TypeScript type generation. See architecture documentation for complete schema definitions.
 
 **Environment Configuration:**
+
 ```bash
 # Required
 OPENAI_API_KEY=sk-...
@@ -78,11 +84,13 @@ LOG_LEVEL=info
 ```
 
 **One-Command Setup (Docker Compose):**
+
 ```bash
 docker compose up  # Starts all services: frontend (3000), backend (7070)
 ```
 
 **Development Setup (Local):**
+
 ```bash
 bun install
 bun run dev  # Starts both frontend (3000) and backend (7070)

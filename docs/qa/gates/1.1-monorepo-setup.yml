@@ -1,11 +1,11 @@
 # Quality Gate Decision: Story 1.1 - Monorepo Setup & Development Infrastructure
 schema: 1
-story: "1.1"
-story_title: "Monorepo Setup & Development Infrastructure"
+story: '1.1'
+story_title: 'Monorepo Setup & Development Infrastructure'
 gate: PASS
-status_reason: "All 8 acceptance criteria fully met. TypeScript strict mode, hybrid Biome+Prettier tooling, pre-commit hooks, CI/CD pipeline, and workspace structure properly configured. Infrastructure foundation is production-ready with no blocking issues."
-reviewer: "Quinn (Test Architect)"
-updated: "2025-11-10T00:00:00Z"
+status_reason: 'All 8 acceptance criteria fully met. TypeScript strict mode, hybrid Biome+Prettier tooling, pre-commit hooks, CI/CD pipeline, and workspace structure properly configured. Infrastructure foundation is production-ready with no blocking issues.'
+reviewer: 'Quinn (Test Architect)'
+updated: '2025-11-10T00:00:00Z'
 
 waiver: { active: false }
 
@@ -27,21 +27,21 @@ evidence:
 nfr_validation:
   security:
     status: PASS
-    notes: "Environment variables properly excluded from git (.env in .gitignore), no hardcoded secrets in codebase, .env.example provides template without real values."
+    notes: 'Environment variables properly excluded from git (.env in .gitignore), no hardcoded secrets in codebase, .env.example provides template without real values.'
   performance:
     status: PASS
-    notes: "Bun package manager provides fast installation (10-20x faster than npm). CI pipeline uses parallel jobs for efficiency. TypeScript uses moduleResolution: bundler for optimal build performance."
+    notes: 'Bun package manager provides fast installation (10-20x faster than npm). CI pipeline uses parallel jobs for efficiency. TypeScript uses moduleResolution: bundler for optimal build performance.'
   reliability:
     status: PASS
-    notes: "Pre-commit hooks prevent broken code from being committed (type-check → lint → format:check sequence). CI validates all PRs before merge with parallel jobs."
+    notes: 'Pre-commit hooks prevent broken code from being committed (type-check → lint → format:check sequence). CI validates all PRs before merge with parallel jobs.'
   maintainability:
     status: PASS
-    notes: "Clear monorepo structure matching architecture specifications. Consistent tooling (Biome + Prettier). Comprehensive README documentation with quick start guide. Path aliases (@repo/shared, @/) prevent import issues."
+    notes: 'Clear monorepo structure matching architecture specifications. Consistent tooling (Biome + Prettier). Comprehensive README documentation with quick start guide. Path aliases (@repo/shared, @/) prevent import issues.'
 
 quality_score: 100
 
 recommendations:
   immediate: []
   future:
-    - action: "Consider adding integration tests for workspace linking validation"
-      refs: ["Future enhancement - not blocking for infrastructure setup story"]
+    - action: 'Consider adding integration tests for workspace linking validation'
+      refs: ['Future enhancement - not blocking for infrastructure setup story']

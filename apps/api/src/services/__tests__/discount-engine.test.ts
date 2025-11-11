@@ -14,8 +14,8 @@
 
 import { describe, expect, it } from 'bun:test'
 import type { Carrier, PolicySummary, UserProfile } from '@repo/shared'
-import { findApplicableDiscounts, analyzeBundleOptions } from '../discount-engine'
 import { createTestCarrier } from '../../__tests__/fixtures/knowledge-pack'
+import { analyzeBundleOptions, findApplicableDiscounts } from '../discount-engine'
 
 describe('Discount Engine Integration', () => {
   const createTestPolicy = (
@@ -30,9 +30,7 @@ describe('Discount Engine Integration', () => {
     premiums: { annual: premium },
   })
 
-  const createTestCustomer = (
-    overrides?: Partial<UserProfile>
-  ): UserProfile => ({
+  const createTestCustomer = (overrides?: Partial<UserProfile>): UserProfile => ({
     state: 'CA',
     age: 30,
     cleanRecord3Yr: true,
@@ -44,9 +42,7 @@ describe('Discount Engine Integration', () => {
       const carrier = createTestCarrier('GEICO', ['CA'], ['auto']).carrier as Carrier
 
       expect(findApplicableDiscounts(carrier, {} as PolicySummary)).toHaveLength(0)
-      expect(
-        findApplicableDiscounts(carrier, { state: 'CA' } as PolicySummary)
-      ).toHaveLength(0)
+      expect(findApplicableDiscounts(carrier, { state: 'CA' } as PolicySummary)).toHaveLength(0)
     })
 
     it('should filter discounts by product and state', () => {
@@ -83,7 +79,7 @@ describe('Discount Engine Integration', () => {
 
       const opportunities = findApplicableDiscounts(carrier, policy)
       expect(opportunities).toHaveLength(1)
-      expect(opportunities[0].discountId).toBe('disc_auto_ca')
+      expect(opportunities[0]?.discountId).toBe('disc_auto_ca')
     })
 
     it('should apply CA state variation (multiplier 0.5)', () => {
@@ -105,14 +101,13 @@ describe('Discount Engine Integration', () => {
         },
       ]
 
-      const carrier = createTestCarrier('GEICO', ['CA'], ['auto'], discounts)
-        .carrier as Carrier
+      const carrier = createTestCarrier('GEICO', ['CA'], ['auto'], discounts).carrier as Carrier
       const policy = createTestPolicy('GEICO', 'CA', 'auto', 1000)
 
       const opportunities = findApplicableDiscounts(carrier, policy)
       expect(opportunities).toHaveLength(1)
-      expect(opportunities[0].percentage).toBe(5) // 10 * 0.5
-      expect(opportunities[0].annualSavings).toBe(50) // 5% of 1000
+      expect(opportunities[0]?.percentage).toBe(5) // 10 * 0.5
+      expect(opportunities[0]?.annualSavings).toBe(50) // 5% of 1000
     })
 
     it('should not apply CA multiplier for non-CA states', () => {
@@ -134,14 +129,13 @@ describe('Discount Engine Integration', () => {
         },
       ]
 
-      const carrier = createTestCarrier('GEICO', ['TX'], ['auto'], discounts)
-        .carrier as Carrier
+      const carrier = createTestCarrier('GEICO', ['TX'], ['auto'], discounts).carrier as Carrier
       const policy = createTestPolicy('GEICO', 'TX', 'auto', 1000)
 
       const opportunities = findApplicableDiscounts(carrier, policy)
       expect(opportunities).toHaveLength(1)
-      expect(opportunities[0].percentage).toBe(10) // No multiplier for TX
-      expect(opportunities[0].annualSavings).toBe(100) // 10% of 1000
+      expect(opportunities[0]?.percentage).toBe(10) // No multiplier for TX
+      expect(opportunities[0]?.annualSavings).toBe(100) // 10% of 1000
     })
 
     it('should evaluate eligibility requirements', () => {
@@ -165,26 +159,17 @@ describe('Discount Engine Integration', () => {
         },
       ]
 
-      const carrier = createTestCarrier('GEICO', ['CA'], ['auto'], discounts)
-        .carrier as Carrier
+      const carrier = createTestCarrier('GEICO', ['CA'], ['auto'], discounts).carrier as Carrier
       const policy = createTestPolicy('GEICO', 'CA', 'auto', 1000)
 
       // Customer without clean record
       const customerNoRecord = createTestCustomer({ cleanRecord3Yr: false })
-      const opportunities1 = findApplicableDiscounts(
-        carrier,
-        policy,
-        customerNoRecord
-      )
+      const opportunities1 = findApplicableDiscounts(carrier, policy, customerNoRecord)
       expect(opportunities1).toHaveLength(0)
 
       // Customer with clean record
       const customerCleanRecord = createTestCustomer({ cleanRecord3Yr: true })
-      const opportunities2 = findApplicableDiscounts(
-        carrier,
-        policy,
-        customerCleanRecord
-      )
+      const opportunities2 = findApplicableDiscounts(carrier, policy, customerCleanRecord)
       expect(opportunities2).toHaveLength(1)
     })
 
@@ -216,15 +201,13 @@ describe('Discount Engine Integration', () => {
         .carrier as Carrier
       const policy = createTestPolicy('GEICO', 'CA', 'auto', 1000)
       const customer = createTestCustomer({
-        existingPolicies: [
-          { product: 'home', premium: 1200, carrier: 'GEICO' },
-        ],
+        existingPolicies: [{ product: 'home', premium: 1200, carrier: 'GEICO' }],
       })
 
       const opportunities = findApplicableDiscounts(carrier, policy, customer)
       expect(opportunities).toHaveLength(1)
       // 15% of (1000 + 1200) = 330
-      expect(opportunities[0].annualSavings).toBe(330)
+      expect(opportunities[0]?.annualSavings).toBe(330)
     })
 
     it('should include citation in opportunities', () => {
@@ -243,14 +226,13 @@ describe('Discount Engine Integration', () => {
         },
       ]
 
-      const carrier = createTestCarrier('GEICO', ['CA'], ['auto'], discounts)
-        .carrier as Carrier
+      const carrier = createTestCarrier('GEICO', ['CA'], ['auto'], discounts).carrier as Carrier
       const policy = createTestPolicy('GEICO', 'CA', 'auto', 1000)
 
       const opportunities = findApplicableDiscounts(carrier, policy)
-      expect(opportunities[0].citation).toBeDefined()
-      expect(opportunities[0].citation.id).toBe('disc_test')
-      expect(opportunities[0].citation.carrier).toBe('GEICO')
+      expect(opportunities[0]?.citation).toBeDefined()
+      expect(opportunities[0]?.citation.id).toBe('disc_test')
+      expect(opportunities[0]?.citation.carrier).toBe('GEICO')
     })
 
     it('should include stackable and requiresDocumentation flags', () => {
@@ -274,13 +256,12 @@ describe('Discount Engine Integration', () => {
         },
       ]
 
-      const carrier = createTestCarrier('GEICO', ['CA'], ['auto'], discounts)
-        .carrier as Carrier
+      const carrier = createTestCarrier('GEICO', ['CA'], ['auto'], discounts).carrier as Carrier
       const policy = createTestPolicy('GEICO', 'CA', 'auto', 1000)
 
       const opportunities = findApplicableDiscounts(carrier, policy)
-      expect(opportunities[0].stackable).toBe(true)
-      expect(opportunities[0].requiresDocumentation).toBe(true)
+      expect(opportunities[0]?.stackable).toBe(true)
+      expect(opportunities[0]?.requiresDocumentation).toBe(true)
     })
 
     it('should handle multiple eligible discounts', () => {
@@ -316,8 +297,7 @@ describe('Discount Engine Integration', () => {
         },
       ]
 
-      const carrier = createTestCarrier('GEICO', ['CA'], ['auto'], discounts)
-        .carrier as Carrier
+      const carrier = createTestCarrier('GEICO', ['CA'], ['auto'], discounts).carrier as Carrier
       const policy = createTestPolicy('GEICO', 'CA', 'auto', 1000)
       const customer = createTestCustomer({ cleanRecord3Yr: true })
 
@@ -352,8 +332,8 @@ describe('Discount Engine Integration', () => {
 
       const opportunities = analyzeBundleOptions(carrier, policy)
       expect(opportunities).toHaveLength(1)
-      expect(opportunities[0].missingProducts).toEqual(['home'])
-      expect(opportunities[0].estimatedSavings).toBeGreaterThan(0)
+      expect(opportunities[0]?.missingProducts).toEqual(['home'])
+      expect(opportunities[0]?.estimatedSavings).toBeGreaterThan(0)
     })
 
     it('should apply CA multiplier to bundle savings calculation', () => {
@@ -384,7 +364,7 @@ describe('Discount Engine Integration', () => {
 
       const opportunities = analyzeBundleOptions(carrier, policy)
       // CA gets 7.5% (15 * 0.5) instead of 15%
-      expect(opportunities[0].estimatedSavings).toBeGreaterThan(0)
+      expect(opportunities[0]?.estimatedSavings).toBeGreaterThan(0)
     })
   })
 
@@ -435,9 +415,7 @@ describe('Discount Engine Integration', () => {
       const policy = createTestPolicy('GEICO', 'CA', 'auto', 1000)
       const customer = createTestCustomer({
         cleanRecord3Yr: true,
-        existingPolicies: [
-          { product: 'home', premium: 1200, carrier: 'GEICO' },
-        ],
+        existingPolicies: [{ product: 'home', premium: 1200, carrier: 'GEICO' }],
       })
 
       // Find applicable discounts
@@ -465,8 +443,7 @@ describe('Discount Engine Integration', () => {
         },
       ]
 
-      const carrier = createTestCarrier('GEICO', ['CA'], ['auto'], discounts)
-        .carrier as Carrier
+      const carrier = createTestCarrier('GEICO', ['CA'], ['auto'], discounts).carrier as Carrier
       const policy = createTestPolicy('GEICO', 'CA', 'auto', 1000)
 
       const opportunities = findApplicableDiscounts(carrier, policy)
@@ -474,4 +451,3 @@ describe('Discount Engine Integration', () => {
     })
   })
 })
-

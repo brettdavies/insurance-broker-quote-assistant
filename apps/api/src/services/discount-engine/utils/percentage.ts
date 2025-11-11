@@ -15,11 +15,7 @@ import { getFieldValue } from '../../../utils/field-helpers'
  * @param product - Product type (e.g., "auto", "home")
  * @returns Effective percentage after applying variations
  */
-export function getEffectivePercentage(
-  discount: Discount,
-  state: string,
-  product: string
-): number {
+export function getEffectivePercentage(discount: Discount, state: string, product: string): number {
   const basePercentage = getFieldValue(discount.percentage, 0)
 
   // Check state variations first
@@ -44,4 +40,3 @@ export function getEffectivePercentage(
   // Default to base percentage
   return basePercentage
 }
-

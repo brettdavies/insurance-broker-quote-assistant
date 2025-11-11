@@ -8,8 +8,8 @@
  */
 
 import { beforeEach, describe, expect, it } from 'bun:test'
-import { Hono } from 'hono'
 import type { PolicySummary, UserProfile } from '@repo/shared'
+import { Hono } from 'hono'
 import { ConversationalExtractor } from '../../services/conversational-extractor'
 import type { LLMProvider } from '../../services/llm-provider'
 import { createPolicyRoute } from '../policy'
@@ -336,4 +336,3 @@ describe('POST /api/policy/upload', () => {
     expect(res.status).toBe(200)
   })
 })
-

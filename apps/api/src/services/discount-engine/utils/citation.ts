@@ -21,4 +21,3 @@ export function createCitation(discount: Discount, carrier: Carrier): Citation {
     file: `knowledge_pack/carriers/${carrier.name.toLowerCase().replace(/\s+/g, '-')}.json`,
   }
 }
-

@@ -80,17 +80,25 @@ describe('getEffectivePercentage', () => {
     })
 
     it('should not apply product variation when state variation exists', () => {
-      const discount = createTestDiscount(10, { CA: { multiplier: 0.5 } }, {
-        auto: { percentage: 15 },
-      })
+      const discount = createTestDiscount(
+        10,
+        { CA: { multiplier: 0.5 } },
+        {
+          auto: { percentage: 15 },
+        }
+      )
       // State variation takes precedence
       expect(getEffectivePercentage(discount, 'CA', 'auto')).toBe(5)
     })
 
     it('should apply product variation when no state variation for that state', () => {
-      const discount = createTestDiscount(10, { CA: { multiplier: 0.5 } }, {
-        auto: { percentage: 15 },
-      })
+      const discount = createTestDiscount(
+        10,
+        { CA: { multiplier: 0.5 } },
+        {
+          auto: { percentage: 15 },
+        }
+      )
       // TX has no state variation, so product variation applies
       expect(getEffectivePercentage(discount, 'TX', 'auto')).toBe(15)
     })
@@ -115,4 +123,3 @@ describe('getEffectivePercentage', () => {
     })
   })
 })
-

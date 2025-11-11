@@ -109,7 +109,7 @@ export class GeminiProvider implements LLMProvider {
 
     // Get MIME type and strip charset if present (Gemini doesn't accept charset in MIME type)
     let mimeType = file.type ?? this.getMimeTypeFromFileName(file.name)
-    if (mimeType && mimeType.includes(';')) {
+    if (mimeType?.includes(';')) {
       mimeType = mimeType.split(';')[0]?.trim() ?? mimeType
     }
 

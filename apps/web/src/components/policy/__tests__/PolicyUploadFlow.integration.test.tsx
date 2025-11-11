@@ -16,11 +16,11 @@
 
 import '../../../test-setup'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'bun:test'
-import { fireEvent, waitFor } from '@testing-library/react'
+import type { PolicySummary } from '@repo/shared'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { fireEvent, waitFor } from '@testing-library/react'
 import { render } from '@testing-library/react'
 import { UnifiedChatInterface } from '../../intake/UnifiedChatInterface'
-import type { PolicySummary } from '@repo/shared'
 
 // Mock the API client
 const mockPolicyUpload = vi.fn()
@@ -96,7 +96,7 @@ describe('Policy Upload Flow Integration', () => {
       productType: 0.92,
       coverageLimits: 0.85,
       deductibles: 0.88,
-      premiums: 0.90,
+      premiums: 0.9,
       effectiveDates: 0.87,
     },
   })
@@ -133,9 +133,12 @@ describe('Policy Upload Flow Integration', () => {
     })
 
     // Wait for API call
-    await waitFor(() => {
-      expect(mockPolicyUpload).toHaveBeenCalled()
-    }, { timeout: 2000 })
+    await waitFor(
+      () => {
+        expect(mockPolicyUpload).toHaveBeenCalled()
+      },
+      { timeout: 2000 }
+    )
 
     // Verify API was called with correct file
     expect(mockPolicyUpload).toHaveBeenCalledWith({
@@ -145,10 +148,13 @@ describe('Policy Upload Flow Integration', () => {
     })
 
     // Wait for file name to appear (indicating upload processing started)
-    await waitFor(() => {
-      const text = container.textContent || ''
-      expect(text).toContain('test-policy.pdf')
-    }, { timeout: 3000 })
+    await waitFor(
+      () => {
+        const text = container.textContent || ''
+        expect(text).toContain('test-policy.pdf')
+      },
+      { timeout: 3000 }
+    )
 
     // Verify API response structure was processed
     // The mutation should have completed successfully
@@ -182,9 +188,12 @@ describe('Policy Upload Flow Integration', () => {
     })
 
     // Wait for API call
-    await waitFor(() => {
-      expect(mockPolicyUpload).toHaveBeenCalled()
-    }, { timeout: 2000 })
+    await waitFor(
+      () => {
+        expect(mockPolicyUpload).toHaveBeenCalled()
+      },
+      { timeout: 2000 }
+    )
 
     // Verify API response includes PolicySummary with confidence scores
     const response = await mockPolicyUpload.mock.results[0]?.value
@@ -224,9 +233,12 @@ describe('Policy Upload Flow Integration', () => {
     })
 
     // Wait for error handling
-    await waitFor(() => {
-      expect(mockPolicyUpload).toHaveBeenCalled()
-    }, { timeout: 2000 })
+    await waitFor(
+      () => {
+        expect(mockPolicyUpload).toHaveBeenCalled()
+      },
+      { timeout: 2000 }
+    )
 
     // Error should be handled gracefully (no crash)
     // Toast notification would be shown in real app
@@ -259,9 +271,12 @@ describe('Policy Upload Flow Integration', () => {
     })
 
     // Wait for file name to be displayed
-    await waitFor(() => {
-      expect(container.textContent).toContain('my-policy-document.pdf')
-    }, { timeout: 3000 })
+    await waitFor(
+      () => {
+        expect(container.textContent).toContain('my-policy-document.pdf')
+      },
+      { timeout: 3000 }
+    )
   })
 
   it('should process complete PolicySummary with all field categories', async () => {
@@ -290,9 +305,12 @@ describe('Policy Upload Flow Integration', () => {
     })
 
     // Wait for API call
-    await waitFor(() => {
-      expect(mockPolicyUpload).toHaveBeenCalled()
-    }, { timeout: 2000 })
+    await waitFor(
+      () => {
+        expect(mockPolicyUpload).toHaveBeenCalled()
+      },
+      { timeout: 2000 }
+    )
 
     // Verify API response includes all PolicySummary categories
     const response = await mockPolicyUpload.mock.results[0]?.value
@@ -318,7 +336,7 @@ describe('Policy Upload Flow Integration', () => {
       state: 'TX',
       productType: 'home',
       confidence: {
-        carrier: 0.80,
+        carrier: 0.8,
         state: 0.85,
         productType: 0.75,
       },
@@ -347,9 +365,12 @@ describe('Policy Upload Flow Integration', () => {
     })
 
     // Wait for API call
-    await waitFor(() => {
-      expect(mockPolicyUpload).toHaveBeenCalled()
-    }, { timeout: 2000 })
+    await waitFor(
+      () => {
+        expect(mockPolicyUpload).toHaveBeenCalled()
+      },
+      { timeout: 2000 }
+    )
 
     // Verify partial PolicySummary is processed correctly
     const response = await mockPolicyUpload.mock.results[0]?.value
@@ -366,4 +387,3 @@ describe('Policy Upload Flow Integration', () => {
     }
   })
 })
-

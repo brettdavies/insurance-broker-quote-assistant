@@ -229,7 +229,8 @@ export function createPolicyRoute(extractor: ConversationalExtractor) {
                 code: 'EXTRACTION_ERROR',
                 message: 'Failed to extract policy data from file',
                 details:
-                  extractionResult._metadata?.reasoning || 'No data could be extracted from the file',
+                  extractionResult._metadata?.reasoning ||
+                  'No data could be extracted from the file',
               },
             },
             500
