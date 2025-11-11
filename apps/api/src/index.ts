@@ -1,4 +1,5 @@
 import { Hono } from 'hono'
+import { cors } from 'hono/cors'
 import { config } from './config/env'
 import { errorHandler } from './middleware/error-handler'
 import { createIntakeRoute } from './routes/intake'
@@ -23,7 +24,18 @@ import { logInfo } from './utils/logger'
 
 const app = new Hono()
 
-// Global error handler middleware (must be first)
+// CORS middleware (allows frontend to call API)
+app.use(
+  '*',
+  cors({
+    origin: ['http://localhost:3000', 'http://localhost:5173'], // Frontend dev servers
+    allowMethods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowHeaders: ['Content-Type', 'Authorization'],
+    credentials: true,
+  })
+)
+
+// Global error handler middleware (must be after CORS)
 app.use('*', errorHandler)
 
 const PORT = config.apiPort
