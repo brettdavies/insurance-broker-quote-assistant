@@ -63,6 +63,116 @@ describe('Key-Value Parser', () => {
       })
     })
 
+    describe('email validation', () => {
+      it('validates valid email addresses', () => {
+        const text = 'e:test@example.com'
+        const result = parseKeyValueSyntax(text)
+
+        expect(result).toHaveLength(1)
+        expect(result[0]).toMatchObject({
+          key: 'e',
+          value: 'test@example.com',
+          validation: 'valid',
+          fieldName: 'email',
+        })
+      })
+
+      it('validates email with shortcut e:', () => {
+        const text = 'e:user@domain.com'
+        const result = parseKeyValueSyntax(text)
+
+        expect(result).toHaveLength(1)
+        expect(result[0]?.validation).toBe('valid')
+        expect(result[0]?.fieldName).toBe('email')
+      })
+
+      it('validates email with full key email:', () => {
+        const text = 'email:user@domain.com'
+        const result = parseKeyValueSyntax(text)
+
+        expect(result).toHaveLength(1)
+        expect(result[0]?.validation).toBe('valid')
+        expect(result[0]?.fieldName).toBe('email')
+      })
+
+      it('identifies invalid email format - missing @', () => {
+        const text = 'e:notanemail.com'
+        const result = parseKeyValueSyntax(text)
+
+        expect(result).toHaveLength(1)
+        expect(result[0]).toMatchObject({
+          key: 'e',
+          value: 'notanemail.com',
+          validation: 'invalid_value',
+          fieldName: 'email',
+        })
+      })
+
+      it('identifies invalid email format - missing domain', () => {
+        const text = 'e:user@'
+        const result = parseKeyValueSyntax(text)
+
+        expect(result).toHaveLength(1)
+        expect(result[0]?.validation).toBe('invalid_value')
+        expect(result[0]?.fieldName).toBe('email')
+      })
+
+      it('identifies invalid email format - missing TLD', () => {
+        const text = 'e:user@domain'
+        const result = parseKeyValueSyntax(text)
+
+        expect(result).toHaveLength(1)
+        expect(result[0]?.validation).toBe('invalid_value')
+        expect(result[0]?.fieldName).toBe('email')
+      })
+
+      it('identifies invalid email format - numeric value', () => {
+        const text = 'e:2'
+        const result = parseKeyValueSyntax(text)
+
+        expect(result).toHaveLength(1)
+        expect(result[0]).toMatchObject({
+          key: 'e',
+          value: '2',
+          validation: 'invalid_value',
+          fieldName: 'email',
+        })
+      })
+
+      it('handles email with subdomain', () => {
+        const text = 'e:user@mail.example.com'
+        const result = parseKeyValueSyntax(text)
+
+        expect(result).toHaveLength(1)
+        expect(result[0]?.validation).toBe('valid')
+        expect(result[0]?.value).toBe('user@mail.example.com')
+      })
+
+      it('handles email with plus sign', () => {
+        const text = 'e:user+tag@example.com'
+        const result = parseKeyValueSyntax(text)
+
+        expect(result).toHaveLength(1)
+        expect(result[0]?.validation).toBe('valid')
+      })
+
+      it('handles email with dots in local part', () => {
+        const text = 'e:first.last@example.com'
+        const result = parseKeyValueSyntax(text)
+
+        expect(result).toHaveLength(1)
+        expect(result[0]?.validation).toBe('valid')
+      })
+
+      it('handles email with hyphens', () => {
+        const text = 'e:user-name@example-domain.com'
+        const result = parseKeyValueSyntax(text)
+
+        expect(result).toHaveLength(1)
+        expect(result[0]?.validation).toBe('valid')
+      })
+    })
+
     it('handles multiple key-value pairs in text', () => {
       const text = 'Client has k:2 v:3 state:CA'
       const result = parseKeyValueSyntax(text)

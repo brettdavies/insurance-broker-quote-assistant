@@ -64,29 +64,37 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
   const results: ParsedKeyValue[] = []
   const knownKeys = validKeys || new Set(Object.keys(FIELD_ALIASES))
 
-  // Regex pattern: matches key:value
+  // Regex patterns: matches key:value
   // Case-insensitive matching
-  // Strategy: Match greedily, then validate based on field type
-  // - Multi-word fields: allow spaces, stop at comma/period/end or next key:value pattern
-  // - Email fields: allow periods, stop at space/comma/period/end
-  // - Numeric fields: allow commas, stop at space/comma/period/end
-  // - Other fields: stop at space/comma/period/end
-  // First, try to match multi-word fields (allow spaces) - they stop at comma, period, or next key:value
+  // Strategy: Use separate patterns for fields with special character requirements
+  // Order matters: more specific patterns first, then general fallback
+  // 1. Multi-word fields (name, productLine, etc.) - allow spaces, stop at comma/period/next key:value
   const multiWordPattern = /(\w+):((?:[^\s:,\.]+(?:\s+[^\s:,\.]+)*)+)(?=,|\.|(?:\s+\w+:)|$)/gi
-  // Then match other fields (no spaces in value) - stop at space, comma, period, or end
+  // 2. Phone pattern - allows spaces, dashes, parentheses (e.g., "(555) 123-4567")
+  const phonePattern = /(\w+):([\d\s\-\(\)]+)(?=\s|,|\.|(?:\s+\w+:)|$)/gi
+  // 3. Email pattern - allows periods, @, and other email chars
+  // More permissive to catch invalid emails too (e.g., "user.name@example.com" or "notanemail.com")
+  // Note: stops at space/comma but NOT at period (periods are part of email addresses)
+  const emailPattern = /(\w+):([a-zA-Z0-9._+-@]+)(?=\s|,|$)/gi
+  // 4. Zip pattern - allows dashes (e.g., "12345-6789")
+  const zipPattern = /(\w+):([\d\-]+)(?=\s|,|\.|$)/gi
+  // 5. Other fields (default) - stop at space, comma, period, or end
   const otherPattern = /(\w+):([^\s:,\.]+)(?=\s|,|\.|$)/gi
 
-  // Try multi-word pattern first (for fields that allow spaces)
-  multiWordPattern.lastIndex = 0
-  let match: RegExpExecArray | null = multiWordPattern.exec(text)
   const processedRanges: Array<{ start: number; end: number }> = []
 
-  // First pass: Match multi-word fields (allow spaces)
-  while (match !== null) {
-    if (!match[1] || !match[2]) {
-      match = multiWordPattern.exec(text)
-      continue
-    }
+  // Helper function to check if a range was already processed
+  const isAlreadyProcessed = (start: number, end: number): boolean => {
+    return processedRanges.some((range) => start >= range.start && end <= range.end)
+  }
+
+  // Helper function to process a match
+  const processMatch = (
+    match: RegExpExecArray,
+    patternName: string,
+    fieldFilter?: (normalizedKey: string) => boolean
+  ): boolean => {
+    if (!match[1] || !match[2]) return false
 
     const original = match[0]
     const key = match[1].toLowerCase()
@@ -94,32 +102,127 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
     const matchStart = match.index
     const matchEnd = matchStart + original.length
 
-    // Resolve field name from alias
+    if (isAlreadyProcessed(matchStart, matchEnd)) return false
+
     const fieldName = FIELD_ALIASES[key]
     const normalizedKey = fieldName || key
 
-    // Only process if this is a multi-word field
-    if (normalizedKey && MULTI_WORD_FIELDS.has(normalizedKey as FieldCommand)) {
-      // Check if key is valid
-      const isValidKey = knownKeys.has(key) || (fieldName ? knownKeys.has(fieldName) : false)
+    // Check if key is valid
+    const isValidKey = knownKeys.has(key) || (fieldName ? knownKeys.has(fieldName) : false)
+    if (!isValidKey) return false
 
-      if (isValidKey) {
-        results.push({
-          key,
-          value: value.trim(),
-          original,
-          validation: 'valid',
-          fieldName: normalizedKey,
-        })
-        processedRanges.push({ start: matchStart, end: matchEnd })
-      }
+    // Apply field filter if provided
+    if (fieldFilter && !fieldFilter(normalizedKey)) return false
+
+    // Skip if already processed as a different field type
+    if (isAlreadyProcessed(matchStart, matchEnd)) return false
+
+    return true
+  }
+
+  // Pass 1: Multi-word fields (excluding phone, which has its own pattern)
+  multiWordPattern.lastIndex = 0
+  let match: RegExpExecArray | null = multiWordPattern.exec(text)
+  while (match !== null) {
+    if (
+      processMatch(match, 'multiWord', (key) => {
+        return MULTI_WORD_FIELDS.has(key as FieldCommand) && key !== 'phone'
+      })
+    ) {
+      const original = match[0]
+      const key = match[1]?.toLowerCase() ?? ''
+      const value = match[2] ?? ''
+      const matchStart = match.index ?? 0
+      const matchEnd = matchStart + original.length
+      const fieldName = FIELD_ALIASES[key]
+      const normalizedKey = fieldName || key
+
+      results.push({
+        key,
+        value: value.trim(),
+        original,
+        validation: 'valid',
+        fieldName: normalizedKey,
+      })
+      processedRanges.push({ start: matchStart, end: matchEnd })
     }
-
     match = multiWordPattern.exec(text)
   }
 
-  // Second pass: Match other fields (no spaces in value)
-  // Skip ranges already processed by name pattern
+  // Pass 2: Phone pattern
+  phonePattern.lastIndex = 0
+  match = phonePattern.exec(text)
+  while (match !== null) {
+    if (processMatch(match, 'phone', (key) => key === 'phone')) {
+      const original = match[0]
+      const key = match[1]?.toLowerCase() ?? ''
+      const value = match[2] ?? ''
+      const matchStart = match.index ?? 0
+      const matchEnd = matchStart + original.length
+
+      results.push({
+        key,
+        value: value.trim(),
+        original,
+        validation: 'valid',
+        fieldName: 'phone',
+      })
+      processedRanges.push({ start: matchStart, end: matchEnd })
+    }
+    match = phonePattern.exec(text)
+  }
+
+  // Pass 3: Email pattern
+  emailPattern.lastIndex = 0
+  match = emailPattern.exec(text)
+  while (match !== null) {
+    if (processMatch(match, 'email', (key) => key === 'email')) {
+      const original = match[0]
+      const key = match[1]?.toLowerCase() ?? ''
+      const value = match[2] ?? ''
+      const matchStart = match.index ?? 0
+      const matchEnd = matchStart + original.length
+
+      // Validate email format
+      const emailRegex = /^[a-zA-Z0-9._+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+      const validation: ValidationResult = emailRegex.test(value) ? 'valid' : 'invalid_value'
+
+      results.push({
+        key,
+        value,
+        original,
+        validation,
+        fieldName: 'email',
+      })
+      processedRanges.push({ start: matchStart, end: matchEnd })
+    }
+    match = emailPattern.exec(text)
+  }
+
+  // Pass 4: Zip pattern
+  zipPattern.lastIndex = 0
+  match = zipPattern.exec(text)
+  while (match !== null) {
+    if (processMatch(match, 'zip', (key) => key === 'zip')) {
+      const original = match[0]
+      const key = match[1]?.toLowerCase() ?? ''
+      const value = match[2] ?? ''
+      const matchStart = match.index ?? 0
+      const matchEnd = matchStart + original.length
+
+      results.push({
+        key,
+        value,
+        original,
+        validation: 'valid',
+        fieldName: 'zip',
+      })
+      processedRanges.push({ start: matchStart, end: matchEnd })
+    }
+    match = zipPattern.exec(text)
+  }
+
+  // Pass 5: Other fields (default pattern)
   otherPattern.lastIndex = 0
   match = otherPattern.exec(text)
 
@@ -135,12 +238,8 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
     const matchStart = match.index
     const matchEnd = matchStart + original.length
 
-    // Skip if this range was already processed as a name field
-    const isAlreadyProcessed = processedRanges.some(
-      (range) => matchStart >= range.start && matchEnd <= range.end
-    )
-
-    if (isAlreadyProcessed) {
+    // Skip if already processed by a specialized pattern
+    if (isAlreadyProcessed(matchStart, matchEnd)) {
       match = otherPattern.exec(text)
       continue
     }
@@ -163,8 +262,13 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
       continue
     }
 
-    // Skip multi-word fields (already processed)
-    if (normalizedKey && MULTI_WORD_FIELDS.has(normalizedKey as FieldCommand)) {
+    // Skip fields already handled by specialized patterns
+    if (
+      normalizedKey === 'phone' ||
+      normalizedKey === 'email' ||
+      normalizedKey === 'zip' ||
+      (normalizedKey && MULTI_WORD_FIELDS.has(normalizedKey as FieldCommand))
+    ) {
       match = otherPattern.exec(text)
       continue
     }

@@ -44,6 +44,7 @@ export function UnifiedChatInterface({
   editorRef: externalEditorRef,
 }: UnifiedChatInterfaceProps) {
   const [profile, setProfile] = useState<UserProfile>({})
+  const profileRef = useRef<UserProfile>({})
   const [missingFields, setMissingFields] = useState<MissingField[]>([])
   const [disclaimers, setDisclaimers] = useState<string[]>([])
   const [latestIntakeResult, setLatestIntakeResult] = useState<IntakeResult | null>(null)
@@ -61,6 +62,11 @@ export function UnifiedChatInterface({
   const intakeMutation = useIntake()
   const debounceTimerRef = useRef<NodeJS.Timeout | null>(null)
   const editorContentRef = useRef<string>('')
+
+  // Update profile ref when profile changes
+  useEffect(() => {
+    profileRef.current = profile
+  }, [profile])
 
   // Calculate missing fields from current profile state
   // This ensures missing fields are always displayed even before intake endpoint is called
@@ -88,16 +94,34 @@ export function UnifiedChatInterface({
     (extractedFields: Record<string, string | number>) => {
       if (Object.keys(extractedFields).length === 0) return
 
-      // Update profile optimistically
-      setProfile((prev) => ({ ...prev, ...extractedFields }))
-
-      // Show toast for each captured field
+      // Track fields that actually changed before updating state
+      const currentProfile = profileRef.current
+      const changedFields: Array<[string, string | number]> = []
       for (const [key, value] of Object.entries(extractedFields)) {
-        toast({
-          title: 'Field captured',
-          description: `${key}: ${value}`,
-          duration: 5000,
-        })
+        if (currentProfile[key as keyof UserProfile] !== value) {
+          changedFields.push([key, value])
+        }
+      }
+
+      // Update profile
+      setProfile((prev) => {
+        const updated = { ...prev, ...extractedFields }
+        profileRef.current = updated
+        return updated
+      })
+
+      // Show toast for changed fields (outside of render phase)
+      // Use setTimeout to ensure this runs after the state update completes
+      if (changedFields.length > 0) {
+        setTimeout(() => {
+          for (const [key, value] of changedFields) {
+            toast({
+              title: 'Field captured',
+              description: `${key}: ${value}`,
+              duration: 3000,
+            })
+          }
+        }, 0)
       }
 
       // Debounce LLM extraction (500ms) using current editor content
@@ -267,20 +291,27 @@ export function UnifiedChatInterface({
   // Handle copy command
   const handleCopyCommand = useCallback(async () => {
     try {
+      console.log('Copy command: Starting prefill packet fetch...')
       const prefillPacket = await getPrefillPacket(latestIntakeResult, profile)
+      console.log('Copy command: Prefill packet received:', prefillPacket)
       await handleCopy(prefillPacket)
+      console.log('Copy command: Success - showing success toast')
       toast({
         title: 'Copied to clipboard',
         description: 'Prefill packet JSON copied to clipboard',
         duration: 3000,
       })
     } catch (error) {
-      toast({
+      console.error('Copy command error:', error)
+      const errorMessage = error instanceof Error ? error.message : 'Failed to copy to clipboard'
+      console.log('Copy command: Showing error toast with message:', errorMessage)
+      const toastResult = toast({
         title: 'Copy failed',
-        description: error instanceof Error ? error.message : 'Failed to copy to clipboard',
+        description: errorMessage,
         variant: 'destructive',
         duration: 5000,
       })
+      console.log('Copy command: Toast result:', toastResult)
     }
   }, [latestIntakeResult, profile, toast])
 

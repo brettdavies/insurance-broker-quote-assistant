@@ -47,16 +47,24 @@ export async function getPrefillPacket(
         } else if (typeof errorData === 'string') {
           errorMessage = errorData
         }
-      } catch {
+      } catch (parseError) {
         // If JSON parsing fails, use status text
         errorMessage = response.statusText || `Server error (${response.status})`
       }
-      throw new Error(errorMessage)
+      const error = new Error(errorMessage)
+      console.error('Prefill packet generation failed:', error)
+      throw error
     }
 
     const prefillPacket: PrefillPacket = await response.json()
     return prefillPacket
   } catch (error) {
+    // If error is already an Error with a message, re-throw it as-is
+    // Otherwise wrap it
+    if (error instanceof Error) {
+      console.error('Error in getPrefillPacket:', error)
+      throw error
+    }
     throw new Error(
       `Failed to get prefill packet: ${error instanceof Error ? error.message : 'Unknown error'}`
     )
