@@ -3,6 +3,7 @@ import { QueryClientProvider } from '@tanstack/react-query'
 import { ReactQueryDevtoolsPanel } from '@tanstack/react-query-devtools'
 import { createRoot } from 'react-dom/client'
 import { App } from './App'
+import { Toaster } from './components/ui/toaster'
 import { queryClient } from './lib/query-client'
 import './index.css'
 
@@ -19,6 +20,7 @@ if (!rootElement) {
 createRoot(rootElement).render(
   <QueryClientProvider client={queryClient}>
     <App />
+    <Toaster />
     <TanStackDevtools
       plugins={[
         {
