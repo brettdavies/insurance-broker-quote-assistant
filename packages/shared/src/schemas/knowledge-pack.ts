@@ -54,6 +54,23 @@ export interface Discount {
   requirements: FieldWithMetadata<unknown>
   stackable?: FieldWithMetadata<boolean>
   description?: FieldWithMetadata<string>
+  stateVariations?: {
+    [stateCode: string]: {
+      percentage?: number
+      multiplier?: number
+    }
+  }
+  productVariations?: {
+    [product: string]: {
+      percentage?: number
+    }
+  }
+  metadata?: {
+    discountType?: 'bundle' | 'driver' | 'lifestyle' | 'loyalty' | 'other'
+    evaluationPriority?: 'high' | 'medium' | 'low'
+    requiresDocumentation?: boolean
+    maxStackableDiscounts?: number
+  }
 }
 
 export interface Compensation {

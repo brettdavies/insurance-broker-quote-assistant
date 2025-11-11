@@ -201,3 +201,36 @@ export function getStateFieldRequirements(
 
   return requirements
 }
+
+/**
+ * Get carrier discounts for a specific state and product
+ *
+ * Returns discounts that are applicable to the given state and product.
+ * The engine will filter and evaluate these discounts based on policy data.
+ *
+ * @param carrierName - Carrier name
+ * @param stateCode - Two-letter state code
+ * @param productType - Product type ('auto', 'home', 'renters', 'umbrella')
+ * @returns Array of discount objects with citations, or empty array if carrier not found
+ */
+export function getCarrierDiscounts(
+  carrierName: string,
+  stateCode: string,
+  productType: string
+): Carrier['discounts'] {
+  const carrier = getCarrier(carrierName)
+  if (!carrier) {
+    return []
+  }
+
+  // Filter discounts by state and product
+  return carrier.discounts.filter((discount) => {
+    const discountProducts = getFieldValue(discount.products, [])
+    const discountStates = getFieldValue(discount.states, [])
+
+    return (
+      discountProducts.includes(productType) &&
+      discountStates.includes(stateCode)
+    )
+  })
+}
