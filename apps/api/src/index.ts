@@ -1,4 +1,3 @@
-import type { IntakeResult, UserProfile } from '@repo/shared'
 import { Hono } from 'hono'
 import {
   getLoadingStatus,
@@ -16,10 +15,26 @@ import {
 } from './services/knowledge-pack-rag'
 import { getFieldValue } from './utils/field-helpers'
 import { logInfo } from './utils/logger'
+import { config } from './config/env'
+import { GeminiProvider } from './services/gemini-provider'
+import { ConversationalExtractor } from './services/conversational-extractor'
+import { createIntakeRoute } from './routes/intake'
+import { errorHandler } from './middleware/error-handler'
 
 const app = new Hono()
 
-const PORT = process.env.API_PORT ? Number.parseInt(process.env.API_PORT, 10) : 7070
+// Global error handler middleware (must be first)
+app.use('*', errorHandler)
+
+const PORT = config.apiPort
+
+// Initialize LLM provider and extractor
+const llmProvider = new GeminiProvider(
+  config.geminiApiKey || undefined, // Empty string becomes undefined
+  config.geminiModel,
+  config.llmTimeoutMs
+)
+const conversationalExtractor = new ConversationalExtractor(llmProvider)
 
 // Initialize knowledge pack loading on startup (non-blocking)
 loadKnowledgePack().catch((error) => {
@@ -52,107 +67,8 @@ app.get('/api/health', (c) => {
 })
 
 // Intake endpoint - conversational field extraction
-app.post('/api/intake', async (c) => {
-  const body = await c.req.json()
-  const { message, conversationHistory } = body as {
-    message: string
-    conversationHistory?: Array<{ role: string; content: string }>
-  }
-
-  // TODO: Replace with actual LLM-based Conversational Extractor (Story TBD)
-  // For now, use basic key-value parsing as a stub
-  const profile: UserProfile = {}
-  const extractedFields: string[] = []
-
-  // Simple key-value extraction regex
-  const kvPattern = /(\w+):(\w+|\d+)/gi
-  let match: RegExpExecArray | null = kvPattern.exec(message)
-
-  while (match !== null) {
-    const key = match[1]
-    const value = match[2]
-    if (!key || !value) continue
-    const lowerKey = key.toLowerCase()
-
-    // Map common aliases to field names
-    const fieldMap: Record<string, string> = {
-      k: 'kids',
-      kids: 'kids',
-      h: 'householdSize',
-      household: 'householdSize',
-      householdSize: 'householdSize',
-      v: 'vehicles',
-      vehicles: 'vehicles',
-      s: 'state',
-      state: 'state',
-      a: 'age',
-      age: 'age',
-      l: 'productLine',
-      line: 'productLine',
-      product: 'productLine',
-    }
-
-    const fieldName = fieldMap[lowerKey]
-    if (fieldName) {
-      // Convert to appropriate type
-      if (
-        fieldName === 'age' ||
-        fieldName === 'kids' ||
-        fieldName === 'householdSize' ||
-        fieldName === 'vehicles'
-      ) {
-        profile[fieldName] = Number.parseInt(value, 10)
-      } else {
-        profile[fieldName] = value
-      }
-      extractedFields.push(fieldName)
-    }
-    match = kvPattern.exec(message)
-  }
-
-  // Define all required fields for intake
-  const allFields = [
-    { name: 'State', fieldKey: 'state', alias: 's', priority: 'critical' as const },
-    { name: 'Product Line', fieldKey: 'productLine', alias: 'l', priority: 'critical' as const },
-    { name: 'Age', fieldKey: 'age', alias: 'a', priority: 'important' as const },
-    {
-      name: 'Kids',
-      fieldKey: 'kids',
-      alias: 'k',
-      priority: 'important' as const,
-    },
-    {
-      name: 'Household Size',
-      fieldKey: 'householdSize',
-      alias: 'h',
-      priority: 'important' as const,
-    },
-    { name: 'Vehicles', fieldKey: 'vehicles', alias: 'v', priority: 'important' as const },
-    { name: 'Owns Home', fieldKey: 'ownsHome', alias: 'o', priority: 'optional' as const },
-    {
-      name: 'Clean Record 3Yr',
-      fieldKey: 'cleanRecord3Yr',
-      alias: 'c',
-      priority: 'optional' as const,
-    },
-  ]
-
-  // Determine missing fields
-  const missingFields = allFields
-    .filter((field) => !profile[field.fieldKey])
-    .map((field) => ({
-      name: field.name,
-      priority: field.priority,
-      alias: field.alias,
-    }))
-
-  const result: IntakeResult = {
-    profile,
-    missingFields,
-  }
-
-  return c.json(result)
-})
+const intakeRoute = createIntakeRoute(conversationalExtractor)
+app.route('/', intakeRoute)
 
 // Knowledge Pack Query Endpoints
 app.get('/api/carriers', (c) => {

@@ -8,12 +8,19 @@
     "build": "bun build src/index.ts --outdir dist",
     "type-check": "tsc --noEmit",
     "lint": "biome check .",
-    "test": "bun test"
+    "test": "bun test",
+    "test:unit": "bun test src/utils/__tests__ src/services/__tests__ --exclude '*.gemini-provider.test.ts'",
+    "test:integration": "bun test src/routes/__tests__ --exclude '*.contract.test.ts'",
+    "test:contract": "bun test src/routes/__tests__/*.contract.test.ts",
+    "test:gemini": "TEST_GEMINI_API=true bun test src/services/__tests__/gemini-provider.test.ts",
+    "test:all": "bun test"
   },
   "dependencies": {
+    "@google/genai": "^1.29.0",
+    "@repo/shared": "workspace:*",
     "hono": "^4.0",
     "openai": "^4.0",
     "zod": "^3.23",
-    "@repo/shared": "workspace:*"
+    "zod-to-json-schema": "^3.24.6"
   }
 }

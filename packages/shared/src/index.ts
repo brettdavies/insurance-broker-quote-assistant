@@ -1,6 +1,3 @@
-// Placeholder entry point for shared package
-export const placeholder = 'shared'
-
 // Export knowledge pack types
 export type {
   Carrier,
@@ -17,5 +14,30 @@ export type {
   RentersMinimums,
 } from './schemas/knowledge-pack'
 
-// Export intake types
-export type { UserProfile, IntakeResult } from './schemas/intake'
+// Export user profile schema and types
+export {
+  userProfileSchema,
+  existingPolicySchema,
+  type UserProfile,
+  type ExistingPolicy,
+} from './schemas/user-profile'
+
+// Export intake result schema and types
+export {
+  intakeResultSchema,
+  routeDecisionStubSchema,
+  opportunityStubSchema,
+  prefillPacketStubSchema,
+  type IntakeResult,
+  type RouteDecisionStub,
+  type OpportunityStub,
+  type PrefillPacketStub,
+} from './schemas/intake-result'
+
+// Export decision trace schema and types
+export {
+  decisionTraceSchema,
+  llmCallSchema,
+  type DecisionTrace,
+  type LLMCall,
+} from './schemas/decision-trace'
