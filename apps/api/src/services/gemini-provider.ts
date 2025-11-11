@@ -6,7 +6,7 @@ import { type UserProfile, userProfileSchema } from '@repo/shared'
 import type { ZodSchema } from 'zod'
 import { zodToJsonSchema } from 'zod-to-json-schema'
 import { logError, logInfo } from '../utils/logger'
-import type { ExtractionResult, LLMProvider } from './llm-provider'
+import type { ExtractionResult, LLMProvider, TokenUsage } from './llm-provider'
 
 /**
  * Gemini Provider Implementation
@@ -19,6 +19,56 @@ import type { ExtractionResult, LLMProvider } from './llm-provider'
 
 const DEFAULT_MODEL = 'gemini-2.5-flash-lite'
 const DEFAULT_TIMEOUT_MS = 10000 // 10 seconds
+
+/**
+ * Extract token usage from Gemini API response
+ *
+ * The @google/genai SDK provides usageMetadata with granular token counts.
+ * This function handles different SDK versions and field name variations.
+ *
+ * @param response - Gemini API response object
+ * @returns TokenUsage object with granular token counts, or undefined if not available
+ */
+function extractTokenUsage(response: unknown): TokenUsage | undefined {
+  try {
+    // Try both usageMetadata and usage (for different SDK versions)
+    const usageMetadata =
+      (response as { usageMetadata?: unknown; usage?: unknown }).usageMetadata ||
+      (response as { usage?: unknown }).usage
+
+    if (!usageMetadata || typeof usageMetadata !== 'object') {
+      return undefined
+    }
+
+    const usageObj = usageMetadata as Record<string, unknown>
+
+    // Extract all available token counts (field names may vary by SDK version)
+    const promptTokens = usageObj.promptTokenCount ?? usageObj.prompt_token_count ?? 0
+    const candidatesTokens = usageObj.candidatesTokenCount ?? usageObj.candidates_token_count ?? 0
+    const totalTokens = usageObj.totalTokenCount ?? usageObj.total_token_count ?? 0
+    const cachedTokens = usageObj.cachedContentTokenCount ?? usageObj.cached_content_token_count
+    const thinkingTokens =
+      usageObj.thinkingTokenCount ??
+      usageObj.thinking_token_count ??
+      usageObj.reasoningTokenCount ??
+      usageObj.reasoning_token_count
+
+    // Only return if we have valid token counts
+    if (typeof totalTokens === 'number' && totalTokens > 0) {
+      return {
+        promptTokens: typeof promptTokens === 'number' ? promptTokens : 0,
+        completionTokens: typeof candidatesTokens === 'number' ? candidatesTokens : 0,
+        totalTokens,
+        cachedTokens: typeof cachedTokens === 'number' ? cachedTokens : undefined,
+        thinkingTokens: typeof thinkingTokens === 'number' ? thinkingTokens : undefined,
+      }
+    }
+  } catch {
+    // Silently fail - token usage is optional
+  }
+
+  return undefined
+}
 
 /**
  * Fix exclusiveMinimum -> minimum conversion for Gemini compatibility
@@ -104,7 +154,7 @@ export class GeminiProvider implements LLMProvider {
     schema: ZodSchema = userProfileSchema
   ): Promise<ExtractionResult> {
     // Initialize tracking variables
-    let tokensUsed = 0
+    const tokensUsed = 0
     let extractionTime = 0
 
     // Get MIME type and strip charset if present (Gemini doesn't accept charset in MIME type)
@@ -234,26 +284,17 @@ Extract the information accurately and completely according to the provided sche
       extractionTime = Date.now() - startTime
 
       // Extract token usage from response metadata (if available)
-      try {
-        const usage = (response as { usage?: unknown }).usage
-        if (usage && typeof usage === 'object') {
-          const usageObj = usage as Record<string, unknown>
-          const totalTokens = usageObj.totalTokenCount
-          if (typeof totalTokens === 'number') {
-            tokensUsed = totalTokens
-          }
-          await logInfo('LLM token usage', {
-            type: 'llm_usage',
-            provider: 'gemini',
-            model: this.model,
-            promptTokens: usageObj.promptTokenCount,
-            completionTokens: usageObj.candidatesTokenCount,
-            totalTokens: usageObj.totalTokenCount,
-            extractionTime,
-          })
-        }
-      } catch {
-        // Token usage logging is optional, don't fail if unavailable
+      const tokenUsage = extractTokenUsage(response)
+      const tokensUsed = tokenUsage?.totalTokens ?? 0
+
+      if (tokenUsage) {
+        await logInfo('LLM token usage', {
+          type: 'llm_usage',
+          provider: 'gemini',
+          model: this.model,
+          ...tokenUsage,
+          extractionTime,
+        })
       }
 
       // Parse JSON response
@@ -286,7 +327,8 @@ Extract the information accurately and completely according to the provided sche
         profile: validatedData,
         confidence,
         reasoning: `Extracted from ${file.name} using Gemini structured outputs`,
-        tokensUsed,
+        tokensUsed, // Always include token tracking (0 if extraction failed before LLM call)
+        tokenUsage, // Detailed token usage breakdown
         extractionTime,
       }
     } catch (error) {
@@ -362,22 +404,16 @@ Extract the information accurately and completely according to the provided sche
       const response = await Promise.race([llmPromise, timeoutPromise])
 
       // Extract token usage from response metadata (if available)
-      // Note: Token usage structure may vary by SDK version
-      try {
-        const usage = (response as { usage?: unknown }).usage
-        if (usage && typeof usage === 'object') {
-          const usageObj = usage as Record<string, unknown>
-          await logInfo('LLM token usage', {
-            type: 'llm_usage',
-            provider: 'gemini',
-            model: this.model,
-            promptTokens: usageObj.promptTokenCount,
-            completionTokens: usageObj.candidatesTokenCount,
-            totalTokens: usageObj.totalTokenCount,
-          })
-        }
-      } catch {
-        // Token usage logging is optional, don't fail if unavailable
+      const tokenUsage = extractTokenUsage(response)
+      const tokensUsed = tokenUsage?.totalTokens ?? 0
+
+      if (tokenUsage) {
+        await logInfo('LLM token usage', {
+          type: 'llm_usage',
+          provider: 'gemini',
+          model: this.model,
+          ...tokenUsage,
+        })
       }
 
       // Parse JSON response
@@ -410,6 +446,8 @@ Extract the information accurately and completely according to the provided sche
         profile: validatedData,
         confidence,
         reasoning: 'Extracted from natural language using Gemini structured outputs',
+        tokensUsed, // Always include token tracking
+        tokenUsage, // Detailed token usage breakdown
       }
     } catch (error) {
       // Log error but don't throw (graceful degradation)
@@ -420,10 +458,12 @@ Extract the information accurately and completely according to the provided sche
       })
 
       // Return empty result with low confidence
+      // Always include tokensUsed (0 if extraction failed before LLM call)
       return {
         profile: {},
         confidence: {},
         reasoning: `Extraction failed: ${error instanceof Error ? error.message : String(error)}`,
+        tokensUsed: 0, // Always include token tracking
       }
     }
   }

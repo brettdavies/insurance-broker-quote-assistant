@@ -6,18 +6,23 @@
  * @see docs/stories/2.1.policy-upload-pdf-parsing.md#task-2
  */
 
-import type { PolicySummary } from '@repo/shared'
+import type { PolicyAnalysisResult, PolicySummary } from '@repo/shared'
 import {
   ACCEPTED_EXTENSIONS,
   ACCEPTED_MIME_TYPES,
   MAX_FILE_SIZE,
   isAcceptedFileType,
   isFileSizeValid,
+  policyAnalysisResultSchema,
+  policySummarySchema,
 } from '@repo/shared'
-import { policySummarySchema } from '@repo/shared'
 import { Hono } from 'hono'
 import { z } from 'zod'
+import { validateOutput } from '../services/compliance-filter'
 import type { ConversationalExtractor } from '../services/conversational-extractor'
+import type { LLMProvider } from '../services/llm-provider'
+import { PitchGenerator } from '../services/pitch-generator'
+import { PolicyAnalysisAgent } from '../services/policy-analysis-agent'
 import { createDecisionTrace, logDecisionTrace } from '../utils/decision-trace'
 import { logError, logInfo } from '../utils/logger'
 
@@ -114,12 +119,23 @@ function validateFile(file: File): { valid: boolean; error?: string } {
 }
 
 /**
- * Create policy upload route handler
+ * Request schema for policy analyze endpoint
+ */
+const policyAnalyzeRequestSchema = z.object({
+  policyText: z.string().min(1, 'Policy text is required'),
+  policySummary: policySummarySchema.optional(),
+})
+
+type PolicyAnalyzeRequest = z.infer<typeof policyAnalyzeRequestSchema>
+
+/**
+ * Create policy route handler
  *
- * @param extractor - ConversationalExtractor service instance (will be extended for policy extraction)
+ * @param extractor - ConversationalExtractor service instance
+ * @param llmProvider - LLM provider for policy analysis
  * @returns Hono route handler
  */
-export function createPolicyRoute(extractor: ConversationalExtractor) {
+export function createPolicyRoute(extractor: ConversationalExtractor, llmProvider: LLMProvider) {
   const app = new Hono()
 
   app.post('/api/policy/upload', async (c) => {
@@ -303,6 +319,297 @@ export function createPolicyRoute(extractor: ConversationalExtractor) {
     } catch (error) {
       await logError('Policy upload endpoint error', error as Error, {
         type: 'policy_upload_error',
+      })
+      return c.json(
+        {
+          error: {
+            code: 'INTERNAL_ERROR',
+            message: 'Internal server error',
+            details: error instanceof Error ? error.message : 'Unknown error',
+          },
+        },
+        500
+      )
+    }
+  })
+
+  // POST /api/policy/analyze endpoint
+  app.post('/api/policy/analyze', async (c) => {
+    try {
+      // Parse and validate request body
+      const body = await c.req.json()
+      const validationResult = policyAnalyzeRequestSchema.safeParse(body)
+
+      if (!validationResult.success) {
+        return c.json(
+          {
+            error: {
+              code: 'INVALID_REQUEST',
+              message: 'Invalid request body',
+              details: validationResult.error.errors,
+            },
+          },
+          400
+        )
+      }
+
+      const { policyText, policySummary: providedPolicySummary } = validationResult.data
+
+      // Step 1: Extract PolicySummary if not provided
+      let policySummary: PolicySummary
+      const extractionTokens = 0
+      const extractionTime = 0
+
+      if (providedPolicySummary) {
+        // Validate provided policy summary
+        const validationResult = policySummarySchema.safeParse(providedPolicySummary)
+        if (!validationResult.success) {
+          return c.json(
+            {
+              error: {
+                code: 'VALIDATION_ERROR',
+                message: 'Invalid policy summary provided',
+                details: validationResult.error.errors,
+              },
+            },
+            400
+          )
+        }
+        policySummary = validationResult.data
+      } else {
+        // Validate policy text is not empty
+        if (!policyText || policyText.trim().length === 0) {
+          return c.json(
+            {
+              error: {
+                code: 'VALIDATION_ERROR',
+                message: 'Policy text is required when policySummary is not provided',
+                details: 'Either provide policyText or policySummary in request body',
+              },
+            },
+            400
+          )
+        }
+
+        // Extract from policy text using Conversational Extractor
+        try {
+          const extractionResult = await extractor.extractPolicyData(policyText)
+          policySummary = extractionResult
+
+          // Validate extracted policy has minimum required fields
+          if (!policySummary.carrier || !policySummary.state || !policySummary.productType) {
+            return c.json(
+              {
+                error: {
+                  code: 'EXTRACTION_ERROR',
+                  message: 'Failed to extract required policy fields',
+                  details:
+                    'Extraction did not identify carrier, state, or productType. Please provide policySummary directly or ensure policy text contains this information.',
+                  extractedFields: {
+                    carrier: policySummary.carrier || null,
+                    state: policySummary.state || null,
+                    productType: policySummary.productType || null,
+                  },
+                },
+              },
+              400
+            )
+          }
+          // Note: extractPolicyData doesn't return tokens, so we'll log 0 for now
+        } catch (error) {
+          await logError('Policy extraction failed in analyze endpoint', error as Error, {
+            type: 'policy_extraction_error',
+            policyTextPreview: policyText.substring(0, 500),
+          })
+          return c.json(
+            {
+              error: {
+                code: 'EXTRACTION_ERROR',
+                message: 'Failed to extract policy data from text',
+                details: error instanceof Error ? error.message : 'Unknown error',
+              },
+            },
+            500
+          )
+        }
+      }
+
+      // Step 2: Call Policy Analysis Agent
+      const analysisAgent = new PolicyAnalysisAgent(llmProvider)
+      let analysisResult: PolicyAnalysisResult & {
+        _metadata?: { tokensUsed?: number; analysisTime?: number }
+      }
+      let analysisTokens = 0
+      let analysisTime = 0
+
+      try {
+        const result = await analysisAgent.analyzePolicy(policySummary, policyText)
+        analysisResult = result
+        analysisTokens = result._metadata?.tokensUsed || 0
+        analysisTime = result._metadata?.analysisTime || 0
+      } catch (error) {
+        const errorMessage = error instanceof Error ? error.message : String(error)
+        await logError('Policy analysis failed', error as Error, {
+          type: 'policy_analysis_error',
+          carrier: policySummary.carrier,
+          state: policySummary.state,
+          errorMessage,
+        })
+
+        // Handle specific error types
+        if (errorMessage.includes('KNOWLEDGE_PACK_ERROR')) {
+          return c.json(
+            {
+              error: {
+                code: 'KNOWLEDGE_PACK_ERROR',
+                message: 'Carrier not found in knowledge pack',
+                details: errorMessage.replace('KNOWLEDGE_PACK_ERROR: ', ''),
+              },
+            },
+            404
+          )
+        }
+
+        if (errorMessage.includes('ANALYSIS_ERROR')) {
+          return c.json(
+            {
+              error: {
+                code: 'ANALYSIS_ERROR',
+                message: 'LLM analysis failed',
+                details: errorMessage.replace('ANALYSIS_ERROR: ', ''),
+              },
+            },
+            500
+          )
+        }
+
+        // Generic analysis error
+        return c.json(
+          {
+            error: {
+              code: 'ANALYSIS_ERROR',
+              message: 'Failed to analyze policy',
+              details: errorMessage,
+            },
+          },
+          500
+        )
+      }
+
+      // Step 3: Generate pitch using Pitch Generator Agent
+      const pitchGenerator = new PitchGenerator(llmProvider)
+      let pitch = ''
+      let pitchTokens = 0
+
+      try {
+        const pitchResult = await pitchGenerator.generatePitch(
+          analysisResult.opportunities,
+          analysisResult.bundleOptions,
+          analysisResult.deductibleOptimizations,
+          policySummary
+        )
+        pitch = pitchResult as string
+        pitchTokens =
+          (pitchResult as { _metadata?: { tokensUsed?: number } })._metadata?.tokensUsed || 0
+      } catch (error) {
+        await logError('Pitch generation failed in policy analyze', error as Error, {
+          type: 'pitch_generation_error',
+          carrier: policySummary.carrier,
+        })
+        // Use fallback pitch (PitchGenerator handles this internally, but we'll set a default here too)
+        pitch =
+          "Based on our analysis, we've identified several savings opportunities. Please review the detailed recommendations below."
+      }
+
+      // Step 4: Run compliance filter on pitch
+      let complianceResult: ReturnType<typeof validateOutput>
+      try {
+        complianceResult = validateOutput(pitch, policySummary.state, policySummary.productType)
+      } catch (error) {
+        await logError('Compliance filter error in policy analyze', error as Error, {
+          type: 'compliance_error',
+        })
+        complianceResult = {
+          passed: false,
+          disclaimers: [],
+        }
+      }
+
+      // If compliance check failed, replace pitch with replacement message
+      if (!complianceResult.passed && complianceResult.replacementMessage) {
+        pitch = complianceResult.replacementMessage
+      }
+
+      // Add disclaimers to pitch if available
+      if (complianceResult.disclaimers && complianceResult.disclaimers.length > 0) {
+        pitch += `\n\n${complianceResult.disclaimers.join('\n')}`
+      }
+
+      // Step 5: Create decision trace
+      const decisionTrace = createDecisionTrace(
+        'policy',
+        {
+          policyText: policyText.substring(0, 1000), // Limit text length
+          policySummaryProvided: !!providedPolicySummary,
+        },
+        {
+          method: providedPolicySummary ? 'key-value' : 'llm',
+          fields: policySummary,
+          confidence: policySummary.confidence,
+        },
+        [
+          {
+            agent: 'conversational-extractor',
+            model: 'gemini-2.5-flash-lite',
+            totalTokens: extractionTokens,
+          },
+          {
+            agent: 'policy-analysis-agent',
+            model: 'gemini-2.5-flash-lite',
+            totalTokens: analysisTokens,
+          },
+          {
+            agent: 'pitch-generator',
+            model: 'gemini-2.5-flash-lite',
+            totalTokens: pitchTokens,
+          },
+        ],
+        undefined, // routingDecision
+        {
+          passed: complianceResult.passed,
+          violations: complianceResult.violations,
+          disclaimersAdded: complianceResult.disclaimers?.length || 0,
+          state: policySummary.state,
+          productLine: policySummary.productType,
+        }
+      )
+
+      // Add analysis results to trace
+      decisionTrace.outputs = {
+        opportunities: analysisResult.opportunities,
+        bundleOptions: analysisResult.bundleOptions,
+        deductibleOptimizations: analysisResult.deductibleOptimizations,
+        pitch,
+        complianceValidated: complianceResult.passed,
+      }
+
+      await logDecisionTrace(decisionTrace)
+
+      // Step 6: Return PolicyAnalysisResult
+      const finalResult: PolicyAnalysisResult = {
+        currentPolicy: policySummary,
+        opportunities: analysisResult.opportunities,
+        bundleOptions: analysisResult.bundleOptions,
+        deductibleOptimizations: analysisResult.deductibleOptimizations,
+        pitch,
+        complianceValidated: complianceResult.passed,
+        trace: decisionTrace,
+      }
+
+      return c.json(finalResult, 200)
+    } catch (error) {
+      await logError('Policy analyze endpoint error', error as Error, {
+        type: 'policy_analyze_error',
       })
       return c.json(
         {

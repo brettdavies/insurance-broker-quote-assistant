@@ -49,6 +49,23 @@ export {
   type PrefillPacketStub,
 } from './schemas/intake-result'
 
+// Export opportunity schema and types
+export {
+  opportunitySchema,
+  type Opportunity,
+} from './schemas/opportunity'
+
+// Export policy analysis result schema and types
+export {
+  policyAnalysisResultLLMSchema,
+  policyAnalysisResultSchema,
+  bundleOptionSchema,
+  deductibleOptimizationSchema,
+  type PolicyAnalysisResult,
+  type BundleOption,
+  type DeductibleOptimization,
+} from './schemas/policy-analysis-result'
+
 // Export prefill packet schema and types
 export { prefillPacketSchema, type PrefillPacket } from './schemas/prefill-packet'
 

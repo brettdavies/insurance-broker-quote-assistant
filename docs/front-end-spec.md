@@ -595,7 +595,6 @@ graph TD
 
 **Layout Structure:**
 
-```
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ [IQuote Pro]    [POLICY ANALYSIS MODE]    [Ctrl+?] [Theme] [Reset]           │
 ├─────────────────────────┬─────────────────────────┬──────────────────────────┤
@@ -603,22 +602,23 @@ graph TD
 │  PDF Viewer (25%,       │  Notes (45%)            │  Sidebar (30%)           │
 │  closable)              │                         │                          │
 │  ┌───────────────────┐  │  ┌───────────────────┐  │  [Same as Screen 2]      │
-│  │ [Close X] [Zoom]  │  │  │ carrier:GEICO     │  │                          │
-│  │                   │  │  │ premium:1200      │  │  - Captured Fields       │
-│  │  [Page 1 of 3]    │  │  │                   │  │  - Missing Fields        │
-│  │                   │  │  │ Pills appear:     │  │  - Savings Dashboard     │
-│  │  [PDF Content]    │  │  │ [carrier:GEICO]   │  │                          │
-│  │                   │  │  │ [premium:1200]    │  │  Toast Area              │
-│  │  Declarations     │  │  │ ↑ green pills     │  │  (bottom-right)          │
-│  │  Premium: $1,200  │  │  └───────────────────┘  │                          │
-│  │  Deductible: $500 │  │                         │                          │
-│  │                   │  │  Input: [Type notes...] │                          │
-│  │                   │  │                         │                          │
-│  │                   │  │  [Compliance Panel]     │                          │
-│  └───────────────────┘  │                         │                          │
+│  │ [Close X] [Zoom]  │  │  │                   │  │                          │
+│  │                   │  │  │  [Policy Notes]   │  │  - Captured Fields       │
+│  │  [Page 1 of 3]    │  │  │  (contentEditable)│  │  - Missing Fields        │
+│  │                   │  │  │                   │  │  - Savings Dashboard     │
+│  │  [PDF Content]    │  │  │  ┌─────────────┐  │  │                          │
+│  │                   │  │  │  │ green pills │  │  │  Toast Area              │
+│  │  Declarations     │  │  │  └─────────────┘  │  │  (bottom-right)          │
+│  │  Premium: $1,200  │  │  │                   │  │                          │
+│  │  Deductible: $500 │  │  │ [Type notes...]   │  │                          │
+│  │                   │  │  │                   │  │                          │
+│  │                   │  │  └───────────────────┘  │                          │
+│  │                   │  │   ───────────────────   │                          │
+│  │                   │  │  ┌───────────────────┐  │                          │
+│  │                   │  │  │ [Compliance Panel]│  │                          │
+│  └───────────────────┘  │  └───────────────────┘  │                          │
 │                         │                         │                          │
 └─────────────────────────┴─────────────────────────┴──────────────────────────┘
-```
 
 **Key Elements:**
 

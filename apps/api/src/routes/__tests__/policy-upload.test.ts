@@ -70,7 +70,7 @@ describe('POST /api/policy/upload', () => {
   beforeEach(() => {
     const mockLLMProvider = createMockLLMProvider()
     extractor = new ConversationalExtractor(mockLLMProvider)
-    const policyRoute = createPolicyRoute(extractor)
+    const policyRoute = createPolicyRoute(extractor, mockLLMProvider)
     app = new Hono()
     app.route('/', policyRoute)
   })
@@ -260,7 +260,7 @@ describe('POST /api/policy/upload', () => {
     }
 
     const errorExtractor = new ConversationalExtractor(errorProvider)
-    const errorRoute = createPolicyRoute(errorExtractor)
+    const errorRoute = createPolicyRoute(errorExtractor, errorProvider)
     const errorApp = new Hono()
     errorApp.route('/', errorRoute)
 
@@ -299,7 +299,7 @@ describe('POST /api/policy/upload', () => {
     }
 
     const emptyExtractor = new ConversationalExtractor(emptyProvider)
-    const emptyRoute = createPolicyRoute(emptyExtractor)
+    const emptyRoute = createPolicyRoute(emptyExtractor, emptyProvider)
     const emptyApp = new Hono()
     emptyApp.route('/', emptyRoute)
 
