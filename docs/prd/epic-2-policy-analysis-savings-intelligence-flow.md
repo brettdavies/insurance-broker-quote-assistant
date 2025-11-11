@@ -1,6 +1,16 @@
 # Epic 2: Policy Analysis & Savings Intelligence Flow
 
-**Epic Goal:** Enable brokers to upload or manually enter existing policy data, analyze coverage/limits/premiums against the knowledge pack, and generate data-driven savings recommendations. By the end of this epic, a broker can upload a PDF declarations page or type policy details, receive intelligent analysis identifying bundle opportunities and discount eligibility, and download/copy a savings pitch for client discussion. This epic delivers the second major value stream.
+**Epic Goal:** Enable brokers to upload or manually enter existing policy data, review and edit extracted information, analyze coverage/limits/premiums against the knowledge pack, and generate data-driven savings recommendations. By the end of this epic, a broker can upload a PDF declarations page or type policy details, review the extracted data in an editable text format, make corrections as needed, then receive intelligent analysis identifying bundle opportunities and discount eligibility, and download/copy a savings pitch for client discussion. This epic delivers the second major value stream.
+
+**Workflow:**
+1. Broker uploads PDF or enters policy data manually
+2. Backend extracts raw text from PDF (if uploaded)
+3. Backend extracts PolicySummary (structured data) from text using LLM
+4. PolicySummary is converted to key-value text format and displayed in editor
+5. Broker reviews and edits the extracted text
+6. When ready, broker triggers analysis (sends edited text to backend)
+7. Backend analyzes policy against knowledge pack and returns savings opportunities
+8. Broker views savings pitch dashboard and can export/copy results
 
 ## Implementation Notes
 
@@ -20,14 +30,19 @@
 **Acceptance Criteria:**
 
 1. Policy upload panel (right sidebar from Epic 1) accepts PDF drag-and-drop or file picker
-2. POST `/api/policy/upload` endpoint receives PDF and extracts policy data using OCR/text extraction
-3. Extracted fields include: carrier, state, product type, coverage limits, deductibles, premiums, effective dates
-4. Manual entry form available as fallback if PDF parsing fails or broker prefers typing
-5. Key-value syntax supported in manual entry (e.g., `carrier:StateFarm`, `premium:$1200/yr`, `deductible:$500`)
-6. Emacs shortcut `Ctrl+X P` focuses policy upload panel
-7. Parsing results displayed in sidebar with confidence scores
-8. Broker can edit/correct extracted fields before analysis
-9. Decision trace logged for PDF parsing and field extraction
+2. POST `/api/policy/upload` endpoint receives file and uploads to Gemini File API first (best practice: upload before processing)
+3. Backend extracts PolicySummary (structured data) directly from uploaded file using Gemini 2.5 Flash-Lite with structured outputs (no text extraction step needed)
+4. Enhanced extraction prompt includes insurance agent context: "You are an insurance agent extracting policy information from a client's insurance policy document..."
+5. PolicySummary is converted to key-value text format (e.g., `carrier:GEICO state:CA productType:auto premium:$1200/yr deductible:$500`)
+6. Converted key-value text is displayed in the manual entry text box for broker review
+7. Broker can review and edit the extracted text before sending for competitive shopping/analysis
+8. Manual entry form available as fallback if file upload fails or broker prefers typing
+9. Key-value syntax supported in manual entry (e.g., `carrier:StateFarm`, `premium:$1200/yr`, `deductible:$500`)
+10. Key-value pairs are displayed as interactive pills (green/red/yellow validation) in the editor
+11. File upload restrictions (type, size) enforced using shared constants from `@repo/shared` (single source of truth)
+12. File drop zone changes color on hover (purple accent `#8b5cf6` for policy mode per front-end-spec.md)
+13. Emacs shortcut `Ctrl+X P` focuses policy upload panel
+14. Decision trace logged for file upload, Gemini extraction, and PolicySummary conversion
 
 ## Story 2.2: Policy Analysis Agent (LLM-Powered Coverage Review)
 
@@ -37,16 +52,17 @@
 
 **Acceptance Criteria:**
 
-1. POST `/api/policy/analyze` endpoint accepts policy data (parsed or manual)
-2. LLM agent (Gemini 2.5 Flash-Lite via `GeminiProvider`) analyzes coverage, limits, deductibles, premiums against knowledge pack
-3. Identifies eligible discounts not currently applied (e.g., multi-policy, good driver, home security)
-4. Suggests bundle opportunities if only single product (e.g., "Client has home but no auto quote")
-5. Evaluates deductible/limit trade-offs (e.g., "Raising deductible $500→$1000 saves $200/yr")
-6. Returns structured JSON with savings opportunities ranked by impact
-7. All recommendations cite specific knowledge pack sections (cuid2-based citations)
-8. Token usage logged for each analysis
-9. Savings pitch clarity ≥85% validated in evaluation harness
-10. Decision trace logged with citations
+1. POST `/api/policy/analyze` endpoint accepts policy text (key-value format from editor after broker review/editing)
+2. Backend extracts PolicySummary from the edited text using LLM (if not already structured)
+3. LLM agent (Gemini 2.5 Flash-Lite via `GeminiProvider`) analyzes coverage, limits, deductibles, premiums against knowledge pack
+4. Identifies eligible discounts not currently applied (e.g., multi-policy, good driver, home security)
+5. Suggests bundle opportunities if only single product (e.g., "Client has home but no auto quote")
+6. Evaluates deductible/limit trade-offs (e.g., "Raising deductible $500→$1000 saves $200/yr")
+7. Returns structured JSON with savings opportunities ranked by impact
+8. All recommendations cite specific knowledge pack sections (cuid2-based citations)
+9. Token usage logged for each analysis
+10. Savings pitch clarity ≥85% validated in evaluation harness
+11. Decision trace logged with citations
 
 ## Story 2.3: Discount Rules Engine (Eligibility Validation)
 

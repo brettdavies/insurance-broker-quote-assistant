@@ -15,6 +15,7 @@ import { Sidebar } from '@/components/sidebar/Sidebar'
 import { useToast } from '@/components/ui/use-toast'
 import { COMMAND_TO_KEY, FIELD_METADATA, FIELD_SHORTCUTS } from '@/config/shortcuts'
 import { useIntake } from '@/hooks/useIntake'
+import { useKeyboardShortcuts } from '@/hooks/useKeyboardShortcuts'
 import type { ActionCommand, FieldCommand } from '@/hooks/useSlashCommands'
 import { calculateMissingFields, convertMissingFieldsToInfo } from '@/lib/missing-fields'
 import {
@@ -23,7 +24,7 @@ import {
   handleCopy,
   handleExport,
 } from '@/lib/prefill-utils'
-import type { IntakeResult, MissingField, UserProfile } from '@repo/shared'
+import type { IntakeResult, MissingField, PolicySummary, UserProfile } from '@repo/shared'
 import { useCallback, useEffect, useRef, useState } from 'react'
 
 interface UnifiedChatInterfaceProps {
@@ -52,6 +53,7 @@ export function UnifiedChatInterface({
   const [missingFields, setMissingFields] = useState<MissingFieldInfo[]>([])
   const [disclaimers, setDisclaimers] = useState<string[]>([])
   const [latestIntakeResult, setLatestIntakeResult] = useState<IntakeResult | null>(null)
+  const [policySummary, setPolicySummary] = useState<PolicySummary | undefined>(undefined)
   const hasBackendMissingFields = useRef(false)
   const [fieldModalOpen, setFieldModalOpen] = useState(false)
   const [currentField, setCurrentField] = useState<{
@@ -70,6 +72,25 @@ export function UnifiedChatInterface({
   const intakeMutation = useIntake()
   const debounceTimerRef = useRef<NodeJS.Timeout | null>(null)
   const editorContentRef = useRef<string>('')
+  const uploadPanelFileInputRef = useRef<HTMLInputElement | null>(null)
+  const uploadPanelEditorRef = useRef<{
+    focus: () => void
+    clear: () => void
+    insertText: (text: string) => void
+    setContent: (text: string) => void
+  } | null>(null)
+
+  // Global keyboard shortcuts
+  useKeyboardShortcuts({
+    onFocusPolicyUpload: () => {
+      // Focus the upload panel's file input or editor
+      if (uploadPanelFileInputRef.current) {
+        uploadPanelFileInputRef.current.click() // Open file picker
+      } else if (uploadPanelEditorRef.current) {
+        uploadPanelEditorRef.current.focus() // Focus manual entry editor
+      }
+    },
+  })
 
   // Update profile ref when profile changes
   useEffect(() => {
@@ -409,7 +430,18 @@ export function UnifiedChatInterface({
               isActive ? 'hidden' : 'block'
             }`}
           >
-            <UploadPanel />
+            <UploadPanel
+              onPolicyExtracted={(summary) => {
+                setPolicySummary(summary)
+                // Activate interface when policy is extracted
+                if (!isActive) {
+                  // Trigger activation through content change
+                  handleContentChange('')
+                }
+              }}
+              fileInputRef={uploadPanelFileInputRef}
+              editorRef={uploadPanelEditorRef}
+            />
           </div>
 
           {/* Center/Left: Notes + Compliance (expands when active) */}
@@ -448,6 +480,8 @@ export function UnifiedChatInterface({
               totalRequired={totalRequired}
               onFieldClick={handleFieldClick}
               onExport={handleExportCommand}
+              policySummary={policySummary}
+              confidence={latestIntakeResult?.confidence}
             />
           </div>
         </div>

@@ -1,3 +1,6 @@
+import { mkdtemp, rmdir, unlink, writeFile } from 'node:fs/promises'
+import { tmpdir } from 'node:os'
+import { dirname, join } from 'node:path'
 import { GoogleGenAI } from '@google/genai'
 import { type UserProfile, userProfileSchema } from '@repo/shared'
 import type { ZodSchema } from 'zod'
@@ -82,6 +85,240 @@ export class GeminiProvider implements LLMProvider {
     this.ai = new GoogleGenAI(apiKey ? { apiKey } : {})
     this.model = model
     this.timeoutMs = timeoutMs
+  }
+
+  /**
+   * Extract structured data from a file (PDF, DOCX, etc.) using structured outputs
+   *
+   * Uses Gemini File API: Upload file first, then reference file URI in extraction call.
+   * This is the recommended best practice for file processing.
+   *
+   * @param file - File to extract data from
+   * @param prompt - Optional prompt to guide extraction
+   * @param schema - Zod schema to convert to JSON Schema for structured output
+   * @returns Extraction result with profile, confidence scores, and optional reasoning
+   */
+  async extractFromFile(
+    file: File,
+    prompt?: string,
+    schema: ZodSchema = userProfileSchema
+  ): Promise<ExtractionResult> {
+    // Initialize tracking variables
+    let tokensUsed = 0
+    let extractionTime = 0
+
+    // Get MIME type and strip charset if present (Gemini doesn't accept charset in MIME type)
+    let mimeType = file.type ?? this.getMimeTypeFromFileName(file.name)
+    if (mimeType && mimeType.includes(';')) {
+      mimeType = mimeType.split(';')[0]?.trim() ?? mimeType
+    }
+
+    // Step 1: Upload file to Gemini File API first (best practice)
+    // SDK requires file path string, so we save to temp file first
+    let fileUri: string
+    let tempFilePath: string | null = null
+    try {
+      // Create temporary file to save uploaded file
+      const tempDir = await mkdtemp(join(tmpdir(), 'gemini-upload-'))
+      tempFilePath = join(tempDir, file.name)
+
+      // Write file to temp location
+      const arrayBuffer = await file.arrayBuffer()
+      const buffer = Buffer.from(arrayBuffer)
+      await writeFile(tempFilePath, buffer)
+
+      // Upload file to Gemini File API using file path (SDK requirement)
+      const uploadResponse = await this.ai.files.upload({
+        file: tempFilePath, // SDK accepts file path string
+        config: {
+          mimeType,
+          displayName: file.name,
+        },
+      })
+
+      // Get file URI from upload response (response.uri is the file URI)
+      fileUri = uploadResponse.uri || ''
+      if (!fileUri) {
+        throw new Error('Failed to get file URI from Gemini upload response')
+      }
+
+      await logInfo('File uploaded to Gemini', {
+        type: 'gemini_file_upload',
+        fileName: file.name,
+        fileSize: file.size,
+        fileUri,
+      })
+    } catch (error) {
+      await logError('Gemini file upload failed', error as Error, {
+        type: 'gemini_file_upload_error',
+        fileName: file.name,
+        fileSize: file.size,
+      })
+      throw error
+    } finally {
+      // Clean up temporary file and directory
+      if (tempFilePath) {
+        try {
+          await unlink(tempFilePath)
+          // Remove temp directory (should be empty after file deletion)
+          const tempDir = dirname(tempFilePath)
+          try {
+            await rmdir(tempDir)
+          } catch {
+            // Ignore directory removal errors (may not be empty or already removed)
+          }
+        } catch (cleanupError) {
+          // Log but don't throw - cleanup is best effort
+          await logError('Failed to cleanup temp file', cleanupError as Error, {
+            type: 'temp_file_cleanup_error',
+            tempFilePath,
+          })
+        }
+      }
+    }
+
+    // Step 2: Build enhanced prompt with insurance agent context
+    const extractionPrompt =
+      prompt ||
+      `You are an insurance agent extracting policy information from a client's insurance policy document. Your task is to carefully read through the document and extract all relevant policy details including carrier name, state, product type (auto, home, renters, or umbrella), coverage limits, deductibles, premiums, and effective dates. 
+
+Extract the information accurately and completely according to the provided schema. If any information is not found in the document, leave that field undefined. Be precise with numbers and dates, and ensure all extracted values match the format specified in the schema.`
+
+    // Convert Zod schema to JSON Schema
+    let jsonSchema = zodToJsonSchema(schema, {
+      target: 'openApi3',
+      $refStrategy: 'none',
+    })
+
+    // Fix exclusiveMinimum -> minimum conversion for Gemini compatibility
+    jsonSchema = fixExclusiveMinimumForGemini(jsonSchema as Record<string, unknown>)
+
+    try {
+      // Record start time for extraction timing
+      const startTime = Date.now()
+
+      // Create timeout promise
+      const timeoutPromise = new Promise<never>((_, reject) => {
+        setTimeout(() => {
+          reject(new Error(`LLM request timed out after ${this.timeoutMs}ms`))
+        }, this.timeoutMs)
+      })
+
+      // Step 3: Make LLM call with file URI reference and structured output
+      const llmPromise = this.ai.models.generateContent({
+        model: this.model,
+        contents: [
+          {
+            role: 'user',
+            parts: [
+              { text: extractionPrompt },
+              {
+                fileData: {
+                  mimeType,
+                  fileUri,
+                },
+              },
+            ],
+          },
+        ],
+        config: {
+          responseMimeType: 'application/json',
+          responseJsonSchema: jsonSchema as Record<string, unknown>,
+        },
+      })
+
+      // Race between LLM call and timeout
+      const response = await Promise.race([llmPromise, timeoutPromise])
+
+      // Calculate extraction time
+      extractionTime = Date.now() - startTime
+
+      // Extract token usage from response metadata (if available)
+      try {
+        const usage = (response as { usage?: unknown }).usage
+        if (usage && typeof usage === 'object') {
+          const usageObj = usage as Record<string, unknown>
+          const totalTokens = usageObj.totalTokenCount
+          if (typeof totalTokens === 'number') {
+            tokensUsed = totalTokens
+          }
+          await logInfo('LLM token usage', {
+            type: 'llm_usage',
+            provider: 'gemini',
+            model: this.model,
+            promptTokens: usageObj.promptTokenCount,
+            completionTokens: usageObj.candidatesTokenCount,
+            totalTokens: usageObj.totalTokenCount,
+            extractionTime,
+          })
+        }
+      } catch {
+        // Token usage logging is optional, don't fail if unavailable
+      }
+
+      // Parse JSON response
+      const responseText = (response as { text?: string }).text
+      if (!responseText) {
+        throw new Error('Empty response from Gemini API')
+      }
+
+      let extractedData: Partial<UserProfile>
+      try {
+        extractedData = JSON.parse(responseText) as Partial<UserProfile>
+      } catch (parseError) {
+        throw new Error(`Failed to parse JSON response: ${parseError}`)
+      }
+
+      // Validate against Zod schema
+      const validatedData = schema.parse(extractedData) as Partial<UserProfile>
+
+      // Calculate confidence scores (simplified: assume 0.8 for extracted fields, 0.0 for missing)
+      const confidence: Record<string, number> = {}
+      for (const [key, value] of Object.entries(validatedData)) {
+        if (value !== undefined && value !== null) {
+          confidence[key] = 0.8 // Default confidence for LLM extraction
+        } else {
+          confidence[key] = 0.0
+        }
+      }
+
+      return {
+        profile: validatedData,
+        confidence,
+        reasoning: `Extracted from ${file.name} using Gemini structured outputs`,
+        tokensUsed,
+        extractionTime,
+      }
+    } catch (error) {
+      // Log error but don't throw (graceful degradation)
+      await logError('Gemini API error', error as Error, {
+        type: 'llm_error',
+        provider: 'gemini',
+        model: this.model,
+        fileName: file.name,
+      })
+
+      // Return empty result with low confidence
+      return {
+        profile: {},
+        confidence: {},
+        reasoning: `Extraction failed: ${error instanceof Error ? error.message : String(error)}`,
+      }
+    }
+  }
+
+  /**
+   * Get MIME type from file name if file.type is not available
+   */
+  private getMimeTypeFromFileName(fileName: string): string {
+    const ext = fileName.toLowerCase().split('.').pop()
+    const mimeTypes: Record<string, string> = {
+      pdf: 'application/pdf',
+      docx: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+      doc: 'application/msword',
+      txt: 'text/plain',
+    }
+    return mimeTypes[ext || ''] || 'application/octet-stream'
   }
 
   async extractWithStructuredOutput(
