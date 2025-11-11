@@ -34,11 +34,12 @@ describe('NotesPanel', () => {
     expect(editor?.getAttribute('data-lexical-editor')).toBe('true')
   })
 
-  it('renders submit button', () => {
+  it('renders notes input without form submission', () => {
     const { container } = renderNotesPanel()
-    const submitButton = container.querySelector('button[type="submit"]')
-    expect(submitButton).toBeTruthy()
-    expect(submitButton?.textContent).toBe('Send')
+    // NotesPanel uses Lexical editor without form submission
+    // Content is extracted via pills and debounced LLM calls
+    const editor = container.querySelector('[contenteditable="true"]')
+    expect(editor).toBeTruthy()
   })
 
   it('has correct data attribute for notes input', () => {
@@ -63,16 +64,13 @@ describe('NotesPanel', () => {
     expect(placeholder?.textContent).toContain('premium:1200')
   })
 
-  it('renders form with correct structure', () => {
+  it('renders editor with correct structure', () => {
     const { container } = renderNotesPanel()
 
-    // Verify form exists
-    const form = container.querySelector('form')
-    expect(form).toBeTruthy()
-
-    // Verify button is inside form
-    const button = form?.querySelector('button[type="submit"]')
-    expect(button).toBeTruthy()
+    // Verify editor exists (no form needed - uses Lexical with pill extraction)
+    const editor = container.querySelector('[contenteditable="true"]')
+    expect(editor).toBeTruthy()
+    expect(editor?.getAttribute('data-notes-input')).toBe('true')
   })
 
   it('renders Lexical editor with correct role', () => {
@@ -99,12 +97,11 @@ describe('NotesPanel', () => {
 
     // Verify all essential elements exist
     const editor = container.querySelector('[contenteditable="true"]')
-    const form = container.querySelector('form')
-    const button = container.querySelector('button[type="submit"]')
+    const notesInput = container.querySelector('[data-notes-input="true"]')
 
     expect(editor).toBeTruthy()
-    expect(form).toBeTruthy()
-    expect(button).toBeTruthy()
+    expect(notesInput).toBeTruthy()
+    // NotesPanel doesn't use form submission - uses Lexical with pill extraction
   })
 })
 

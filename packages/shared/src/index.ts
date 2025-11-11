@@ -56,3 +56,9 @@ export {
   type DecisionTrace,
   type LLMCall,
 } from './schemas/decision-trace'
+
+// Export compliance result schema and types
+export {
+  complianceResultSchema,
+  type ComplianceResult,
+} from './schemas/compliance-result'

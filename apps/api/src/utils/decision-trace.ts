@@ -32,7 +32,14 @@ export function createDecisionTrace(
     completionTokens?: number
     totalTokens?: number
   }>,
-  routingDecision?: Record<string, unknown>
+  routingDecision?: Record<string, unknown>,
+  complianceCheck?: {
+    passed: boolean
+    violations?: string[]
+    disclaimersAdded?: number
+    state?: string
+    productLine?: string
+  }
 ): DecisionTrace {
   // Extract rulesConsulted from routing decision citations if present
   const rulesConsulted = routingDecision?.rulesEvaluated
@@ -49,9 +56,15 @@ export function createDecisionTrace(
     routingDecision: routingDecision ? { ...routingDecision } : undefined,
     llmCalls,
     rulesConsulted,
-    complianceCheck: {
-      passed: true, // Will be updated by compliance filter in future story
-    },
+    complianceCheck: complianceCheck
+      ? {
+          passed: complianceCheck.passed,
+          violations: complianceCheck.violations,
+          disclaimersAdded: complianceCheck.disclaimersAdded,
+          state: complianceCheck.state,
+          productLine: complianceCheck.productLine,
+        }
+      : undefined,
   }
 }
 

@@ -327,4 +327,164 @@ describe('POST /api/intake', () => {
       expect(body.route?.eligibleCarriers).toBeDefined()
     })
   })
+
+  describe('Compliance filter integration', () => {
+    it('should include compliance check in response', async () => {
+      const req = new Request('http://localhost/api/intake', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: 's:CA l:auto',
+        }),
+      })
+
+      const res = await app.request(req)
+      expect(res.status).toBe(200)
+
+      const body = (await res.json()) as {
+        complianceValidated?: boolean
+        disclaimers?: string[]
+      }
+      expect(body.complianceValidated).toBeDefined()
+      expect(typeof body.complianceValidated).toBe('boolean')
+      expect(body.disclaimers).toBeDefined()
+      expect(Array.isArray(body.disclaimers)).toBe(true)
+    })
+
+    it('should include disclaimers in IntakeResult response', async () => {
+      const req = new Request('http://localhost/api/intake', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: 's:CA l:auto',
+        }),
+      })
+
+      const res = await app.request(req)
+      expect(res.status).toBe(200)
+
+      const body = (await res.json()) as {
+        disclaimers?: string[]
+        profile?: { state?: string; productLine?: string }
+      }
+      expect(body.disclaimers).toBeDefined()
+      expect(Array.isArray(body.disclaimers)).toBe(true)
+      expect(body.disclaimers?.length).toBeGreaterThan(0)
+      // Should include base disclaimers
+      expect(body.disclaimers?.some((d) => d.includes('subject to underwriting'))).toBe(true)
+    })
+
+    it('should select state-specific disclaimers for CA', async () => {
+      const req = new Request('http://localhost/api/intake', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: 's:CA',
+        }),
+      })
+
+      const res = await app.request(req)
+      expect(res.status).toBe(200)
+
+      const body = (await res.json()) as {
+        disclaimers?: string[]
+      }
+      expect(body.disclaimers).toBeDefined()
+      expect(body.disclaimers?.some((d) => d.includes('California'))).toBe(true)
+    })
+
+    it('should select product-specific disclaimers for auto', async () => {
+      const req = new Request('http://localhost/api/intake', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: 'l:auto',
+        }),
+      })
+
+      const res = await app.request(req)
+      expect(res.status).toBe(200)
+
+      const body = (await res.json()) as {
+        disclaimers?: string[]
+      }
+      expect(body.disclaimers).toBeDefined()
+      expect(body.disclaimers?.some((d) => d.includes('Auto Insurance'))).toBe(true)
+    })
+
+    it('should combine state and product disclaimers', async () => {
+      const req = new Request('http://localhost/api/intake', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: 's:CA l:auto',
+        }),
+      })
+
+      const res = await app.request(req)
+      expect(res.status).toBe(200)
+
+      const body = (await res.json()) as {
+        disclaimers?: string[]
+      }
+      expect(body.disclaimers).toBeDefined()
+      expect(body.disclaimers?.some((d) => d.includes('California'))).toBe(true)
+      expect(body.disclaimers?.some((d) => d.includes('Auto Insurance'))).toBe(true)
+    })
+
+    it('should log compliance check to decision trace', async () => {
+      const req = new Request('http://localhost/api/intake', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: 's:CA l:auto',
+        }),
+      })
+
+      const res = await app.request(req)
+      expect(res.status).toBe(200)
+
+      const body = (await res.json()) as {
+        trace?: {
+          complianceCheck?: {
+            passed?: boolean
+            violations?: string[]
+            disclaimersAdded?: number
+            state?: string
+            productLine?: string
+          }
+        }
+      }
+      expect(body.trace?.complianceCheck).toBeDefined()
+      expect(body.trace?.complianceCheck?.passed).toBeDefined()
+      expect(typeof body.trace?.complianceCheck?.passed).toBe('boolean')
+      expect(body.trace?.complianceCheck?.disclaimersAdded).toBeDefined()
+      expect(typeof body.trace?.complianceCheck?.disclaimersAdded).toBe('number')
+      expect(body.trace?.complianceCheck?.state).toBe('CA')
+      expect(body.trace?.complianceCheck?.productLine).toBe('auto')
+    })
+
+    it('should run compliance filter on pitch before returning to frontend', async () => {
+      const req = new Request('http://localhost/api/intake', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: 's:CA l:auto',
+        }),
+      })
+
+      const res = await app.request(req)
+      expect(res.status).toBe(200)
+
+      const body = (await res.json()) as {
+        pitch?: string
+        complianceValidated?: boolean
+      }
+      // Pitch should be present (currently empty string for MVP)
+      expect(body.pitch).toBeDefined()
+      expect(typeof body.pitch).toBe('string')
+      // Compliance should be validated
+      expect(body.complianceValidated).toBe(true)
+    })
+  })
 })

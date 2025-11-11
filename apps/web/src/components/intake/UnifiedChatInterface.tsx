@@ -38,6 +38,7 @@ export function UnifiedChatInterface({
 }: UnifiedChatInterfaceProps) {
   const [profile, setProfile] = useState<UserProfile>({})
   const [missingFields, setMissingFields] = useState<MissingField[]>([])
+  const [disclaimers, setDisclaimers] = useState<string[]>([])
   const [fieldModalOpen, setFieldModalOpen] = useState(false)
   const [currentField, setCurrentField] = useState<{
     key: string
@@ -94,6 +95,8 @@ export function UnifiedChatInterface({
               fieldKey,
             }))
           )
+          // Update disclaimers from backend compliance filter
+          setDisclaimers(result.disclaimers || [])
         } catch (error) {
           console.error('Failed to extract fields:', error)
           toast({
@@ -286,7 +289,7 @@ export function UnifiedChatInterface({
 
             {/* Compliance Panel (directly below notes input, hidden when not active) */}
             <div className={`border-t p-4 dark:border-gray-700 ${isActive ? 'block' : 'hidden'}`}>
-              <CompliancePanel mode={mode} profile={profile} />
+              <CompliancePanel mode={mode} disclaimers={disclaimers} />
             </div>
           </div>
 

@@ -66,6 +66,7 @@ export const prefillPacketStubSchema = z.object({
   state: z.string().optional(),
   productLine: z.string().optional(),
   carrier: z.string().optional(),
+  disclaimers: z.array(z.string()).optional(), // Compliance disclaimers for state/product
 })
 
 export type PrefillPacketStub = z.infer<typeof prefillPacketStubSchema>
@@ -84,6 +85,7 @@ export const intakeResultSchema = z.object({
   prefill: prefillPacketStubSchema.optional(), // Stub for prefill packet
   pitch: z.string().optional(), // Agent-ready savings pitch (empty string for MVP)
   complianceValidated: z.boolean().default(true), // Compliance filter result
+  disclaimers: z.array(z.string()).optional(), // Compliance disclaimers selected based on state/product
   trace: decisionTraceSchema.optional(), // Decision trace for audit logging
 })
 

@@ -1,6 +1,7 @@
 import type { IntakeResult, RouteDecision } from '@repo/shared'
 import { Hono } from 'hono'
 import { z } from 'zod'
+import { validateOutput } from '../services/compliance-filter'
 import type { ConversationalExtractor } from '../services/conversational-extractor'
 import type { LLMProvider } from '../services/llm-provider'
 import { routeToCarrier } from '../services/routing-engine'
@@ -69,7 +70,35 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
         routeDecision = undefined
       }
 
-      // Create decision trace with routing decision
+      // Generate pitch (currently empty for MVP, but compliance filter runs on it)
+      let pitch = ''
+
+      // Run compliance filter on pitch
+      let complianceResult: ReturnType<typeof validateOutput>
+      try {
+        complianceResult = validateOutput(
+          pitch,
+          extractionResult.profile.state,
+          extractionResult.profile.productLine
+        )
+      } catch (error) {
+        // Handle compliance filter errors gracefully
+        await logError('Compliance filter error', error as Error, {
+          type: 'compliance_error',
+        })
+        // Default to failed compliance check
+        complianceResult = {
+          passed: false,
+          disclaimers: [],
+        }
+      }
+
+      // If compliance check failed, replace pitch with replacement message
+      if (!complianceResult.passed && complianceResult.replacementMessage) {
+        pitch = complianceResult.replacementMessage
+      }
+
+      // Create decision trace with routing decision and compliance check
       const trace = createDecisionTrace(
         'conversational',
         {
@@ -93,7 +122,14 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
               citations: routeDecision.citations,
               rulesEvaluated: routeDecision.citations.map((c) => c.file),
             }
-          : undefined
+          : undefined,
+        {
+          passed: complianceResult.passed,
+          violations: complianceResult.violations,
+          disclaimersAdded: complianceResult.disclaimers?.length || 0,
+          state: complianceResult.state,
+          productLine: complianceResult.productLine,
+        }
       )
 
       // Log decision trace to compliance log
@@ -108,8 +144,9 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
         route: routeDecision, // Routing decision from routing engine
         opportunities: [], // Stub for discount engine (future story)
         prefill: undefined, // Stub for prefill packet (future story)
-        pitch: '', // Empty for MVP
-        complianceValidated: true, // Will be updated by compliance filter (future story)
+        pitch, // Pitch (may be replaced by compliance filter replacement message)
+        complianceValidated: complianceResult.passed,
+        disclaimers: complianceResult.disclaimers,
         trace,
       }
 

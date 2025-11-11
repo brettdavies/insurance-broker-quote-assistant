@@ -57,13 +57,12 @@ describe('ChatFlow Integration', () => {
     const editor = container.querySelector('[contenteditable="true"]')
     expect(editor).toBeTruthy()
 
-    // Verify form exists
-    const form = container.querySelector('form')
-    expect(form).toBeTruthy()
+    // Verify notes input exists
+    const notesInput = container.querySelector('[data-notes-input="true"]')
+    expect(notesInput).toBeTruthy()
 
-    // Verify submit button
-    const submitButton = container.querySelector('button[type="submit"]')
-    expect(submitButton).toBeTruthy()
+    // UnifiedChatInterface uses Lexical editor without form submission
+    // Content is extracted via pills and debounced LLM calls
   })
 
   it('renders with intake mode by default', () => {
@@ -80,10 +79,9 @@ describe('ChatFlow Integration', () => {
     expect(editor?.getAttribute('role')).toBe('textbox')
     expect(editor?.getAttribute('data-notes-input')).toBe('true')
 
-    // Verify form structure
-    const form = container.querySelector('form')
-    const buttonInForm = form?.querySelector('button[type="submit"]')
-    expect(buttonInForm).toBeTruthy()
+    // UnifiedChatInterface uses Lexical editor without form submission
+    // Content is extracted via pills and debounced LLM calls
+    // No form or submit button needed
   })
 })
 
