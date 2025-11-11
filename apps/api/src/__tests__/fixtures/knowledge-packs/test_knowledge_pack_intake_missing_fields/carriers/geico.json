@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedDate": "2025-11-11T06:52:39.741Z",
+    "carrier": "GEICO"
+  },
+  "carrier": {
+    "_id": "carr_geico",
+    "_sources": [],
+    "name": "GEICO",
+    "operatesIn": { "_id": "fld_test1", "value": ["CA"], "_sources": [] },
+    "products": { "_id": "fld_test2", "value": ["auto"], "_sources": [] },
+    "eligibility": {
+      "_id": "elig_test1",
+      "_sources": [],
+      "auto": {
+        "_id": "elig_auto1",
+        "requiresCleanDrivingRecord": { "_id": "fld_test1", "value": true, "_sources": [] }
+      }
+    },
+    "discounts": [
+      {
+        "_id": "disc_test1",
+        "name": { "_id": "fld_test3", "value": "Test Discount", "_sources": [] },
+        "percentage": { "_id": "fld_test4", "value": 10, "_sources": [] },
+        "products": { "_id": "fld_test5", "value": ["auto"], "_sources": [] },
+        "states": { "_id": "fld_test6", "value": ["CA"], "_sources": [] },
+        "requirements": { "_id": "fld_test7", "value": {}, "_sources": [] }
+      }
+    ]
+  }
+}

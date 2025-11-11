@@ -1,0 +1,570 @@
+{
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedDate": "2025-11-10T20:04:54.218Z",
+    "carrier": "State Farm",
+    "totalDataPoints": 98,
+    "totalSources": 35,
+    "conflictsResolved": 3
+  },
+  "carrier": {
+    "_id": "carr_g8c6fstxl7pdid8izom4j1br",
+    "_sources": [
+      {
+        "uri": "https://www.statefarm.com/",
+        "accessedDate": "2025-11-10T20:04:54.218Z",
+        "confidence": "high",
+        "primary": true
+      }
+    ],
+    "name": "State Farm",
+    "operatesIn": {
+      "_id": "fld_f625kh00c4jnq2prg3q7tck0",
+      "value": ["CA", "TX", "FL", "NY", "IL", "AZ", "CO", "GA", "NC", "VA", "OH", "PA"],
+      "_sources": [
+        {
+          "uri": "https://www.statefarm.com/states/",
+          "accessedDate": "2025-11-10T20:04:54.218Z",
+          "elementRef": "section#state-list",
+          "confidence": "high",
+          "primary": true
+        }
+      ]
+    },
+    "products": {
+      "_id": "fld_q25mhahncjdwomkbkulj80vn",
+      "value": ["auto", "home", "renters", "umbrella"],
+      "_sources": [
+        {
+          "uri": "https://www.statefarm.com/products/",
+          "accessedDate": "2025-11-10T20:04:54.218Z",
+          "elementRef": "nav.products",
+          "confidence": "high",
+          "primary": true
+        }
+      ]
+    },
+    "eligibility": {
+      "_id": "elig_buik9fqqg0swtp51jkhkl7pj",
+      "_sources": [],
+      "auto": {
+        "_id": "elig_d08mopizdnyd4vttj85py2z6",
+        "minAge": {
+          "_id": "fld_op741mmvws8k19a35hhvuxkk",
+          "value": 16,
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/auto/eligibility/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "maxAge": {
+          "_id": "fld_g6pyfs8lv8kmd81urmk73vkr",
+          "value": 85,
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/auto/eligibility/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "maxVehicles": {
+          "_id": "fld_wuyqw72xnkr56usyyt3vl67i",
+          "value": 4,
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/auto/eligibility/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      },
+      "home": {
+        "_id": "elig_k5gwu7unz7tqaalqnsl7ylxb",
+        "minAge": {
+          "_id": "fld_rrx6af09z60ce7aqzlc4wdgp",
+          "value": 18,
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/home/eligibility/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      },
+      "renters": {
+        "_id": "elig_puhc0672kyaqlnjlkcwc2ofp",
+        "minAge": {
+          "_id": "fld_rj18occpx2qwesjadie2r9xz",
+          "value": 18,
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/renters/eligibility/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      },
+      "umbrella": {
+        "_id": "elig_ohicrkchjuwfcxm8fev8v057",
+        "minAge": {
+          "_id": "fld_v1whvxay56qrkftgngs5vcuy",
+          "value": 21,
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/umbrella/eligibility/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      }
+    },
+    "discounts": [
+      {
+        "_id": "disc_spm9bck4myux0k44mn9htdwo",
+        "name": {
+          "_id": "fld_rgfjmh9f3bdr0gnby75u4t9p",
+          "value": "Multi-Policy Bundle",
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#multi-policy-bundle",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "percentage": {
+          "_id": "fld_l1jeg5kqc65k7hw5martf5g1",
+          "value": 17,
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#multi-policy-bundle > p.percentage",
+              "extractedValue": "17%",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "products": {
+          "_id": "fld_awwdwl7hkgwpgzhx7fuku85e",
+          "value": ["auto", "home"],
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#multi-policy-bundle > p.applies-to",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "states": {
+          "_id": "fld_dvvakwv0xkvj635pmz6gvu8z",
+          "value": ["CA", "TX", "FL", "NY", "IL", "AZ", "CO", "GA", "NC", "VA", "OH", "PA"],
+          "_sources": []
+        },
+        "requirements": {
+          "_id": "fld_pibt3jhvel2l3p0uaaoe9tws",
+          "value": {
+            "mustHaveProducts": ["auto", "home"],
+            "minProducts": 2
+          },
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#multi-policy-bundle > ul.requirements",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "stackable": {
+          "_id": "fld_matcvkqwjxb8scp84ozyyfoy",
+          "value": true,
+          "_sources": []
+        },
+        "description": {
+          "_id": "fld_wjdjheiv24swg47wb3k67a5m",
+          "value": "Multi-Policy Bundle discount available for auto and home insurance",
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      },
+      {
+        "_id": "disc_jz8dzxn23lr0mkot90jcg4xs",
+        "name": {
+          "_id": "fld_hyu3vlr68y186jmydiw9wy8c",
+          "value": "Safe Driver",
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#safe-driver",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "percentage": {
+          "_id": "fld_op845k1s6cyp7lrrkw3afydl",
+          "value": 12,
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#safe-driver > p.percentage",
+              "extractedValue": "12%",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "products": {
+          "_id": "fld_nit5rwjr0qutoi00yslhji5a",
+          "value": ["auto"],
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#safe-driver > p.applies-to",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "states": {
+          "_id": "fld_bzk5z5oamh7s3wa4ntd7it3d",
+          "value": ["CA", "TX", "FL", "NY", "IL", "AZ", "CO", "GA", "NC", "VA", "OH", "PA"],
+          "_sources": []
+        },
+        "requirements": {
+          "_id": "fld_p6m6dxlsh0fdnndbtu7ns8k0",
+          "value": {
+            "mustHaveProducts": ["auto"],
+            "minProducts": 1
+          },
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#safe-driver > ul.requirements",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "stackable": {
+          "_id": "fld_ajngiurfnwl1oitwreqcrq6o",
+          "value": true,
+          "_sources": []
+        },
+        "description": {
+          "_id": "fld_k7y8c0ap4d9sg8njfnic2mpe",
+          "value": "Safe Driver discount available for auto insurance",
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      },
+      {
+        "_id": "disc_unwpintpwg9nrathpavv7mgt",
+        "name": {
+          "_id": "fld_vnzu724f9kn72f337o3jwcgb",
+          "value": "Steer Clear",
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#steer-clear",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "percentage": {
+          "_id": "fld_tdjh1wy09a92tiso25xtkw3b",
+          "value": 5,
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#steer-clear > p.percentage",
+              "extractedValue": "5%",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "products": {
+          "_id": "fld_wgf81wfyzc2of3udqdadfjml",
+          "value": ["auto"],
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#steer-clear > p.applies-to",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "states": {
+          "_id": "fld_i0lzdnexzxrfdp9uyd0fc6gb",
+          "value": ["CA", "TX", "FL", "NY", "IL", "AZ", "CO", "GA", "NC", "VA", "OH", "PA"],
+          "_sources": []
+        },
+        "requirements": {
+          "_id": "fld_lxoihb0hfaam9helaxaz8182",
+          "value": {
+            "mustHaveProducts": ["auto"],
+            "minProducts": 1
+          },
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#steer-clear > ul.requirements",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "stackable": {
+          "_id": "fld_gmn77ptg0el65n1hzf2k82f5",
+          "value": true,
+          "_sources": []
+        },
+        "description": {
+          "_id": "fld_caupciot57txb36zo1sf1bpn",
+          "value": "Steer Clear discount available for auto insurance",
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      },
+      {
+        "_id": "disc_h2u17gh48lkipvwzjd54lr9w",
+        "name": {
+          "_id": "fld_r1dnzrfq09lti0xnr89tv1mt",
+          "value": "Drive Safe & Save",
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#drive-safe-&-save",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "percentage": {
+          "_id": "fld_ti1l1q75anndbtn9naq4mcch",
+          "value": 30,
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#drive-safe-&-save > p.percentage",
+              "extractedValue": "30%",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "products": {
+          "_id": "fld_fkk7w3ydwi9xdsj7k9jsivma",
+          "value": ["auto"],
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#drive-safe-&-save > p.applies-to",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "states": {
+          "_id": "fld_cvkpn5k8u0p7wni2p68wvqmv",
+          "value": ["CA", "TX", "FL", "NY", "IL", "AZ", "CO", "GA", "NC", "VA", "OH", "PA"],
+          "_sources": []
+        },
+        "requirements": {
+          "_id": "fld_kravqecj4amz8wqht8b7i9bm",
+          "value": {
+            "mustHaveProducts": ["auto"],
+            "minProducts": 1
+          },
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#drive-safe-&-save > ul.requirements",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "stackable": {
+          "_id": "fld_dlx5rw6d7rma07rsrnorfc3q",
+          "value": false,
+          "_sources": []
+        },
+        "description": {
+          "_id": "fld_nk01l0oeqnvvws3wxg2wzbrv",
+          "value": "Drive Safe & Save discount available for auto insurance",
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      },
+      {
+        "_id": "disc_wx80ofk78qwc9pc03hr1h5d4",
+        "name": {
+          "_id": "fld_tbitnfhposbbyxy85isr58bf",
+          "value": "Home Security",
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#home-security",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "percentage": {
+          "_id": "fld_qkn6n4l1k516r1zg5ix60mk3",
+          "value": 10,
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#home-security > p.percentage",
+              "extractedValue": "10%",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "products": {
+          "_id": "fld_u7sos3l7r8g74s8fzbnsnm5m",
+          "value": ["home"],
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#home-security > p.applies-to",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "states": {
+          "_id": "fld_ntxtcsnzaert09hzc8n087q5",
+          "value": ["CA", "TX", "FL", "NY", "IL", "AZ", "CO", "GA", "NC", "VA", "OH", "PA"],
+          "_sources": []
+        },
+        "requirements": {
+          "_id": "fld_bgwwsikym8unro40j9tn5vuy",
+          "value": {
+            "mustHaveProducts": ["home"],
+            "minProducts": 1
+          },
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#home-security > ul.requirements",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "stackable": {
+          "_id": "fld_tlcl5rj15eivd23uhubtqktu",
+          "value": true,
+          "_sources": []
+        },
+        "description": {
+          "_id": "fld_svgd1ixkhr0cixw84tm5sqlw",
+          "value": "Home Security discount available for home insurance",
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      }
+    ],
+    "compensation": {
+      "_id": "comp_o4qjoh5rbzye81ptl6mffff4",
+      "commissionRate": {
+        "_id": "fld_pcebe3mrl4nr0ctzoml4z6u6",
+        "value": 9,
+        "_sources": [
+          {
+            "uri": "https://www.statefarm.com/broker/",
+            "accessedDate": "2025-11-10T20:04:54.218Z",
+            "confidence": "high",
+            "primary": true
+          }
+        ]
+      },
+      "commissionType": {
+        "_id": "fld_yc2lv7zh81zyqe0cvrlsm5y7",
+        "value": "percentage",
+        "_sources": [
+          {
+            "uri": "https://www.statefarm.com/broker/",
+            "accessedDate": "2025-11-10T20:04:54.218Z",
+            "confidence": "high",
+            "primary": true
+          }
+        ]
+      }
+    }
+  }
+}

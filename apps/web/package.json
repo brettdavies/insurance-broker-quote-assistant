@@ -1,0 +1,46 @@
+{
+  "name": "@repo/web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --hot server.ts",
+    "build": "bun run build.ts",
+    "type-check": "tsc --noEmit",
+    "lint": "biome check .",
+    "test": "bun test --dom"
+  },
+  "dependencies": {
+    "@lexical/react": "^0.38.2",
+    "@lexical/utils": "^0.38.2",
+    "@radix-ui/react-accordion": "^1.2.12",
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-slot": "^1.2.4",
+    "@radix-ui/react-toast": "^1.2.15",
+    "@repo/shared": "workspace:*",
+    "@tanstack/react-devtools": "^0.8.1",
+    "@tanstack/react-query": "^5.0",
+    "@tanstack/react-query-devtools": "^5.90.2",
+    "@tanstack/react-router": "^1.0",
+    "autoprefixer": "^10.4.21",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "hono": "^4.10.4",
+    "lexical": "^0.38.2",
+    "lucide-react": "^0.553.0",
+    "postcss": "^8.5.6",
+    "react": "^18.2",
+    "react-dom": "^18.2",
+    "tailwind-merge": "^3.4.0",
+    "tailwindcss": "^3.4",
+    "zod": "^3.23"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/react": "^18.2",
+    "@types/react-dom": "^18.2",
+    "happy-dom": "^20.0.10"
+  }
+}

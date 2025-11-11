@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedDate": "2025-11-10T20:04:54.218Z",
+    "state": "NY"
+  },
+  "state": {
+    "_id": "state_kx20lamf20scb61kxx9c768h",
+    "_sources": [
+      {
+        "uri": "https://www.insurance.ny.gov/",
+        "accessedDate": "2025-11-10T20:04:54.218Z",
+        "elementRef": "main",
+        "confidence": "high",
+        "primary": true
+      }
+    ],
+    "code": "NY",
+    "name": "New York",
+    "minimumCoverages": {
+      "_id": "fld_longjd5jxxcydz3cfz1wrhup",
+      "auto": {
+        "_id": "fld_iom1sx7omncwtipau1t99q63",
+        "bodilyInjuryPerPerson": {
+          "_id": "fld_rdq6fzfat819yrm9opchigkf",
+          "value": 25000,
+          "_sources": [
+            {
+              "uri": "https://www.insurance.ny.gov/auto/minimums/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "table > tr:nth-child(1) > td:nth-child(2)",
+              "extractedValue": "$25,000",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "bodilyInjuryPerAccident": {
+          "_id": "fld_kylxy1c2vjqrzj9f0a6yyzvj",
+          "value": 50000,
+          "_sources": [
+            {
+              "uri": "https://www.insurance.ny.gov/auto/minimums/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "table > tr:nth-child(2) > td:nth-child(2)",
+              "extractedValue": "$50,000",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "propertyDamage": {
+          "_id": "fld_ibhpyhpiu463ibctlpjf4xuc",
+          "value": 10000,
+          "_sources": [
+            {
+              "uri": "https://www.insurance.ny.gov/auto/minimums/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "table > tr:nth-child(3) > td:nth-child(2)",
+              "extractedValue": "$10,000",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "uninsuredMotorist": {
+          "_id": "fld_ans55pqz14thbcydcjfz3zik",
+          "value": 25000,
+          "_sources": [
+            {
+              "uri": "https://www.insurance.ny.gov/auto/minimums/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "table > tr:nth-child(4) > td:nth-child(2)",
+              "extractedValue": "$25,000",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "personalInjuryProtection": {
+          "_id": "fld_p6fv7fa4ucdteqvsibz6xoy2",
+          "value": 50000,
+          "_sources": [
+            {
+              "uri": "https://www.insurance.ny.gov/auto/minimums/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "table > tr:nth-child(5) > td:nth-child(2)",
+              "extractedValue": "$50,000",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      },
+      "home": {
+        "_id": "fld_g6t5dtjuz5t0t0ohxlz1cxqi"
+      },
+      "renters": {
+        "_id": "fld_yueprlfuxsnqa8zudt1bs7mw"
+      }
+    },
+    "specialRequirements": {
+      "_id": "fld_viqqvvrsvz9zgghl48wkxlnm",
+      "value": {
+        "requiresProposition103Notice": false,
+        "goodDriverDiscount": {
+          "available": true,
+          "criteria": "No at-fault accidents in 3 years"
+        }
+      },
+      "_sources": [
+        {
+          "uri": "https://www.insurance.ny.gov/requirements/",
+          "accessedDate": "2025-11-10T20:04:54.218Z",
+          "confidence": "high",
+          "primary": true
+        }
+      ]
+    }
+  }
+}

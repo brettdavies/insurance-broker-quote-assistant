@@ -13,7 +13,7 @@
 | **Frontend Framework** | React | ^18.2 | UI component library | Industry standard, excellent TypeScript support, large ecosystem (React 19 not needed for 5-day demo) |
 | **Frontend Router** | TanStack Router | ^1.0 | Type-safe routing | Better TypeScript inference than React Router, built-in data loading |
 | **Data Fetching** | TanStack Query | ^5.0 | Server state management | Automatic caching, refetching, optimistic updates for API calls |
-| **Dev Tools (Frontend)** | @tanstack/react-query-devtools | ^5.0 | TanStack Query inspection and debugging | Visualizes queries/mutations, cache state, network activity; pairs with Chrome DevTools MCP for browser automation during troubleshooting |
+| **Dev Tools (Frontend)** | @tanstack/react-devtools + @tanstack/react-query-devtools | Latest | Unified TanStack DevTools with Query panel | Unified panel for all TanStack libraries (Query, Router, Form); visualizes queries/mutations, cache state, network activity; pairs with Chrome DevTools MCP for browser automation during troubleshooting |
 | **Form Management** | TanStack Form | ^0.36 | Type-safe forms with Zod validation | Framework-agnostic, first-class Zod integration, excellent DX |
 | **UI Component Library** | shadcn/ui | Latest | Pre-built accessible components | Copy-paste components (not NPM dependency), built on Radix UI, fully customizable |
 | **CSS Framework** | Tailwind CSS | ^3.4 | Utility-first styling | Rapid styling, consistent design system, excellent with shadcn |

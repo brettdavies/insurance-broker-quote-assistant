@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedDate": "2025-11-10T20:04:54.218Z",
+    "state": "IL"
+  },
+  "state": {
+    "_id": "state_nop02bj6h75rl0sv6u7fee6v",
+    "_sources": [
+      {
+        "uri": "https://www.insurance.il.gov/",
+        "accessedDate": "2025-11-10T20:04:54.218Z",
+        "elementRef": "main",
+        "confidence": "high",
+        "primary": true
+      }
+    ],
+    "code": "IL",
+    "name": "Illinois",
+    "minimumCoverages": {
+      "_id": "fld_zq3wfayeez0rpzh0m9bs04al",
+      "auto": {
+        "_id": "fld_lb2pejmjthj1292tas5x8l32",
+        "bodilyInjuryPerPerson": {
+          "_id": "fld_ham7xu04b9ft3sr087j24pk2",
+          "value": 25000,
+          "_sources": [
+            {
+              "uri": "https://www.insurance.il.gov/auto/minimums/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "table > tr:nth-child(1) > td:nth-child(2)",
+              "extractedValue": "$25,000",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "bodilyInjuryPerAccident": {
+          "_id": "fld_yttm1a3p3mqy78p7j28v6w9u",
+          "value": 50000,
+          "_sources": [
+            {
+              "uri": "https://www.insurance.il.gov/auto/minimums/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "table > tr:nth-child(2) > td:nth-child(2)",
+              "extractedValue": "$50,000",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "propertyDamage": {
+          "_id": "fld_sl0shbaeem5zbbmun458h253",
+          "value": 20000,
+          "_sources": [
+            {
+              "uri": "https://www.insurance.il.gov/auto/minimums/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "table > tr:nth-child(3) > td:nth-child(2)",
+              "extractedValue": "$20,000",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "uninsuredMotorist": {
+          "_id": "fld_t7ydw6e64029l65y5ek1b74w",
+          "value": 25000,
+          "_sources": [
+            {
+              "uri": "https://www.insurance.il.gov/auto/minimums/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "table > tr:nth-child(4) > td:nth-child(2)",
+              "extractedValue": "$25,000",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      },
+      "home": {
+        "_id": "fld_j11sa40htnm90dpftiz86p3v"
+      },
+      "renters": {
+        "_id": "fld_nre3jfc4i2cwi74ao8ap2ihq"
+      }
+    },
+    "specialRequirements": {
+      "_id": "fld_jgasaovacrg3cu3zawr691m9",
+      "value": {
+        "requiresProposition103Notice": false,
+        "goodDriverDiscount": {
+          "available": true,
+          "criteria": "No at-fault accidents in 3 years"
+        }
+      },
+      "_sources": [
+        {
+          "uri": "https://www.insurance.il.gov/requirements/",
+          "accessedDate": "2025-11-10T20:04:54.218Z",
+          "confidence": "high",
+          "primary": true
+        }
+      ]
+    }
+  }
+}

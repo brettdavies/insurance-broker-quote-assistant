@@ -1,0 +1,570 @@
+{
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedDate": "2025-11-10T20:04:54.218Z",
+    "carrier": "GEICO",
+    "totalDataPoints": 53,
+    "totalSources": 30,
+    "conflictsResolved": 0
+  },
+  "carrier": {
+    "_id": "carr_foh5t5b435ubg3q3bq2ymodz",
+    "_sources": [
+      {
+        "uri": "https://www.geico.com/",
+        "accessedDate": "2025-11-10T20:04:54.218Z",
+        "confidence": "high",
+        "primary": true
+      }
+    ],
+    "name": "GEICO",
+    "operatesIn": {
+      "_id": "fld_h0mxjqa489vb19bj71a9t01n",
+      "value": ["CA", "TX", "FL", "NY", "IL", "AZ", "CO", "GA", "NC", "VA"],
+      "_sources": [
+        {
+          "uri": "https://www.geico.com/states/",
+          "accessedDate": "2025-11-10T20:04:54.218Z",
+          "elementRef": "section#state-list",
+          "confidence": "high",
+          "primary": true
+        }
+      ]
+    },
+    "products": {
+      "_id": "fld_v5rr7fftulackvmaa9etn1tm",
+      "value": ["auto", "home", "renters", "umbrella"],
+      "_sources": [
+        {
+          "uri": "https://www.geico.com/products/",
+          "accessedDate": "2025-11-10T20:04:54.218Z",
+          "elementRef": "nav.products",
+          "confidence": "high",
+          "primary": true
+        }
+      ]
+    },
+    "eligibility": {
+      "_id": "elig_woeuyk6h9mgi7ksnh2fsq6c2",
+      "_sources": [],
+      "auto": {
+        "_id": "elig_uz6jbuoupdd49a6vtxsa44no",
+        "minAge": {
+          "_id": "fld_azm4wh843e8yrnnt3l3ifkgm",
+          "value": 16,
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/auto/eligibility/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "maxAge": {
+          "_id": "fld_dctgilvtvlcymaf73kgbg6d6",
+          "value": 85,
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/auto/eligibility/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "maxVehicles": {
+          "_id": "fld_kbxpkw5g8zlpuk8n426fhixy",
+          "value": 4,
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/auto/eligibility/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      },
+      "home": {
+        "_id": "elig_lj7nn6fqnu787rlktdifojsy",
+        "minAge": {
+          "_id": "fld_ujsqpwvqi4vtef9xghew10r6",
+          "value": 18,
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/home/eligibility/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      },
+      "renters": {
+        "_id": "elig_mnki8jrge5tovx2oun43nv49",
+        "minAge": {
+          "_id": "fld_q08wmznpewjumfil1furzn8c",
+          "value": 18,
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/renters/eligibility/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      },
+      "umbrella": {
+        "_id": "elig_wcrfbaoscvd0wqt335xcpop2",
+        "minAge": {
+          "_id": "fld_u3qhw71s6q118oypdmpyn5eb",
+          "value": 21,
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/umbrella/eligibility/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      }
+    },
+    "discounts": [
+      {
+        "_id": "disc_k6vs03846lr85r424blw6d7b",
+        "name": {
+          "_id": "fld_z011xa75nxdso5qthwcnovtf",
+          "value": "Multi-Policy Bundle",
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#multi-policy-bundle",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "percentage": {
+          "_id": "fld_h090ki6ev70q1n1bn3u57li0",
+          "value": 15,
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#multi-policy-bundle > p.percentage",
+              "extractedValue": "15%",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "products": {
+          "_id": "fld_ni3zvx6alo3dc6uqxtmw3w0h",
+          "value": ["auto", "home"],
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#multi-policy-bundle > p.applies-to",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "states": {
+          "_id": "fld_xazjvsnhqegofkfvyvi4z5fn",
+          "value": ["CA", "TX", "FL", "NY", "IL", "AZ", "CO", "GA", "NC", "VA"],
+          "_sources": []
+        },
+        "requirements": {
+          "_id": "fld_pug5w15tvggwdsdou4zckv6c",
+          "value": {
+            "mustHaveProducts": ["auto", "home"],
+            "minProducts": 2
+          },
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#multi-policy-bundle > ul.requirements",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "stackable": {
+          "_id": "fld_igljacp2voa2xz32hokt3x2q",
+          "value": true,
+          "_sources": []
+        },
+        "description": {
+          "_id": "fld_mc8bfpsawf2kotxwafs7fav1",
+          "value": "Multi-Policy Bundle discount available for auto and home insurance",
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      },
+      {
+        "_id": "disc_xrcd4bhsnd58vx2yu99ca4bn",
+        "name": {
+          "_id": "fld_fyw80q92zpc2qz0lhjrjt0rm",
+          "value": "Safe Driver",
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#safe-driver",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "percentage": {
+          "_id": "fld_z8gpa74rn2ooy9773gmxmevy",
+          "value": 10,
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#safe-driver > p.percentage",
+              "extractedValue": "10%",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "products": {
+          "_id": "fld_vfnoz8ywhbwdk2wvze4ezcoe",
+          "value": ["auto"],
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#safe-driver > p.applies-to",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "states": {
+          "_id": "fld_o5mx5vsp8dzivlg1ha3u4kgw",
+          "value": ["CA", "TX", "FL", "NY", "IL", "AZ", "CO", "GA", "NC", "VA"],
+          "_sources": []
+        },
+        "requirements": {
+          "_id": "fld_lu4eezs4j4os5j2brgg83h8f",
+          "value": {
+            "mustHaveProducts": ["auto"],
+            "minProducts": 1
+          },
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#safe-driver > ul.requirements",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "stackable": {
+          "_id": "fld_wpsuzvgb2o0qqtyud6yyui7h",
+          "value": true,
+          "_sources": []
+        },
+        "description": {
+          "_id": "fld_sybh08gytle3g5j5itx8me5f",
+          "value": "Safe Driver discount available for auto insurance",
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      },
+      {
+        "_id": "disc_c6i8n90j7w3jbbq6fq7fuign",
+        "name": {
+          "_id": "fld_sdpatvpo7idjpp0xc0z2c210",
+          "value": "Good Student",
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#good-student",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "percentage": {
+          "_id": "fld_zjzkzjxbrn4szqofxpqpi9mi",
+          "value": 5,
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#good-student > p.percentage",
+              "extractedValue": "5%",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "products": {
+          "_id": "fld_ya19qx0a888kkk6j0o8flhea",
+          "value": ["auto"],
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#good-student > p.applies-to",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "states": {
+          "_id": "fld_wa5optcn6w1tixpw9mw9cj38",
+          "value": ["CA", "TX", "FL", "NY", "IL", "AZ", "CO", "GA", "NC", "VA"],
+          "_sources": []
+        },
+        "requirements": {
+          "_id": "fld_hi03xu9q4iks7hfm4fnzl6cm",
+          "value": {
+            "mustHaveProducts": ["auto"],
+            "minProducts": 1
+          },
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#good-student > ul.requirements",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "stackable": {
+          "_id": "fld_rr023sg4df5aqa6y2wibgmsc",
+          "value": true,
+          "_sources": []
+        },
+        "description": {
+          "_id": "fld_pzy9vnv922emhizns9juner6",
+          "value": "Good Student discount available for auto insurance",
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      },
+      {
+        "_id": "disc_cweouqp30qpwm077wkv1mjy8",
+        "name": {
+          "_id": "fld_bntbb4vudlrphzth26mszly2",
+          "value": "Military",
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#military",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "percentage": {
+          "_id": "fld_jvqek8ti2fasojjoelrgaz1e",
+          "value": 15,
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#military > p.percentage",
+              "extractedValue": "15%",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "products": {
+          "_id": "fld_pbz6jfv242cl4z3anuc3n8yj",
+          "value": ["auto", "home", "renters"],
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#military > p.applies-to",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "states": {
+          "_id": "fld_zswb0ssafw68qyndn0xx5yli",
+          "value": ["CA", "TX", "FL", "NY", "IL", "AZ", "CO", "GA", "NC", "VA"],
+          "_sources": []
+        },
+        "requirements": {
+          "_id": "fld_g9n7qiibel7ibnue7y2x9nre",
+          "value": {
+            "mustHaveProducts": ["auto", "home", "renters"],
+            "minProducts": 2
+          },
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#military > ul.requirements",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "stackable": {
+          "_id": "fld_q78fdz80sjc1lkw4eorjumt6",
+          "value": true,
+          "_sources": []
+        },
+        "description": {
+          "_id": "fld_selzkimr4vvrnufrueqm1w0h",
+          "value": "Military discount available for auto and home and renters insurance",
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      },
+      {
+        "_id": "disc_r7a9znp054om1uveu5fhwy2s",
+        "name": {
+          "_id": "fld_rrfg5w4q4euavyjltb2lgzcl",
+          "value": "Defensive Driving Course",
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#defensive-driving-course",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "percentage": {
+          "_id": "fld_bv70o3l5jqsocf064h3tejub",
+          "value": 5,
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#defensive-driving-course > p.percentage",
+              "extractedValue": "5%",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "products": {
+          "_id": "fld_kc7ey6gi434e3fxsmojzo3rx",
+          "value": ["auto"],
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#defensive-driving-course > p.applies-to",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "states": {
+          "_id": "fld_lbxcxqwmodyt4da8vs3u1ka4",
+          "value": ["CA", "TX", "FL", "NY", "IL", "AZ", "CO", "GA", "NC", "VA"],
+          "_sources": []
+        },
+        "requirements": {
+          "_id": "fld_znjb7bxy35n48cgdbkqff9qs",
+          "value": {
+            "mustHaveProducts": ["auto"],
+            "minProducts": 1
+          },
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "elementRef": "div#defensive-driving-course > ul.requirements",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        },
+        "stackable": {
+          "_id": "fld_zywa78ajedlijdzjj14juhz4",
+          "value": true,
+          "_sources": []
+        },
+        "description": {
+          "_id": "fld_fh506fo6npyn33510bwlv1do",
+          "value": "Defensive Driving Course discount available for auto insurance",
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/discounts/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      }
+    ],
+    "compensation": {
+      "_id": "comp_pamf8x1zrz4hwis9yn2lafpz",
+      "commissionRate": {
+        "_id": "fld_y0toiymm45mf6adtduz452ky",
+        "value": 8,
+        "_sources": [
+          {
+            "uri": "https://www.geico.com/broker/",
+            "accessedDate": "2025-11-10T20:04:54.218Z",
+            "confidence": "high",
+            "primary": true
+          }
+        ]
+      },
+      "commissionType": {
+        "_id": "fld_kot99qwqry8oe93clr0bh2ks",
+        "value": "percentage",
+        "_sources": [
+          {
+            "uri": "https://www.geico.com/broker/",
+            "accessedDate": "2025-11-10T20:04:54.218Z",
+            "confidence": "high",
+            "primary": true
+          }
+        ]
+      }
+    }
+  }
+}

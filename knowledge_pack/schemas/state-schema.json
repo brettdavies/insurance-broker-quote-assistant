@@ -9,30 +9,30 @@
     "meta": {
       "type": "object",
       "properties": {
-        "schemaVersion": {"type": "string"},
-        "generatedDate": {"type": "string", "format": "date-time"},
-        "state": {"type": "string", "pattern": "^[A-Z]{2}$"}
+        "schemaVersion": { "type": "string" },
+        "generatedDate": { "type": "string", "format": "date-time" },
+        "state": { "type": "string", "pattern": "^[A-Z]{2}$" }
       }
     },
     "state": {
       "type": "object",
       "required": ["_id", "_sources", "code", "name", "minimumCoverages"],
       "properties": {
-        "_id": {"type": "string", "pattern": "^state_[a-z0-9]{10}$"},
-        "_sources": {"$ref": "#/definitions/sources"},
-        "code": {"type": "string", "pattern": "^[A-Z]{2}$"},
-        "name": {"type": "string"},
+        "_id": { "type": "string", "pattern": "^state_[a-z0-9]{10}$" },
+        "_sources": { "$ref": "#/definitions/sources" },
+        "code": { "type": "string", "pattern": "^[A-Z]{2}$" },
+        "name": { "type": "string" },
         "minimumCoverages": {
           "type": "object",
           "properties": {
-            "_id": {"type": "string"},
-            "auto": {"$ref": "#/definitions/autoMinimums"},
-            "home": {"$ref": "#/definitions/homeMinimums"},
-            "renters": {"$ref": "#/definitions/rentersMinimums"}
+            "_id": { "type": "string" },
+            "auto": { "$ref": "#/definitions/autoMinimums" },
+            "home": { "$ref": "#/definitions/homeMinimums" },
+            "renters": { "$ref": "#/definitions/rentersMinimums" }
           }
         },
-        "specialRequirements": {"$ref": "#/definitions/fieldWithMetadata"},
-        "averagePremiums": {"$ref": "#/definitions/fieldWithMetadata"}
+        "specialRequirements": { "$ref": "#/definitions/fieldWithMetadata" },
+        "averagePremiums": { "$ref": "#/definitions/fieldWithMetadata" }
       }
     }
   },
@@ -44,16 +44,23 @@
         "type": "object",
         "required": ["uri", "accessedDate"],
         "properties": {
-          "uri": {"type": "string", "format": "uri"},
-          "pageId": {"type": "string", "pattern": "^page_[a-z0-9]{10}$", "description": "Optional in interface; Phase 2 MUST populate for raw data. Unique page ID (page_{cuid2})"},
-          "pageFile": {"type": "string", "description": "Optional in interface; Phase 2 MUST populate for raw data. Path relative to knowledge_pack/raw/ (e.g., '_pages/page_ckm9x7w8k0.html')"},
-          "elementRef": {"type": "string"},
-          "lineRef": {"type": "integer"},
-          "accessedDate": {"type": "string", "format": "date-time"},
-          "extractedValue": {"type": "string"},
-          "confidence": {"enum": ["high", "medium", "low"]},
-          "confidenceScore": {"type": "number", "minimum": 1.0, "maximum": 5.0},
-          "primary": {"type": "boolean"}
+          "uri": { "type": "string", "format": "uri" },
+          "pageId": {
+            "type": "string",
+            "pattern": "^page_[a-z0-9]{10}$",
+            "description": "Optional in interface; Phase 2 MUST populate for raw data. Unique page ID (page_{cuid2})"
+          },
+          "pageFile": {
+            "type": "string",
+            "description": "Optional in interface; Phase 2 MUST populate for raw data. Path relative to knowledge_pack/raw/ (e.g., '_pages/page_ckm9x7w8k0.html')"
+          },
+          "elementRef": { "type": "string" },
+          "lineRef": { "type": "integer" },
+          "accessedDate": { "type": "string", "format": "date-time" },
+          "extractedValue": { "type": "string" },
+          "confidence": { "enum": ["high", "medium", "low"] },
+          "confidenceScore": { "type": "number", "minimum": 1.0, "maximum": 5.0 },
+          "primary": { "type": "boolean" }
         }
       }
     },
@@ -61,20 +68,27 @@
       "type": "object",
       "required": ["_id", "value"],
       "properties": {
-        "_id": {"type": "string"},
+        "_id": { "type": "string" },
         "value": {},
-        "_sources": {"$ref": "#/definitions/sources"},
-        "_inheritedFrom": {"type": "string"},
+        "_sources": { "$ref": "#/definitions/sources" },
+        "_inheritedFrom": { "type": "string" },
         "_resolution": {
           "type": "object",
-          "required": ["conflictId", "selectedValue", "method", "rationale", "resolvedBy", "resolvedDate"],
+          "required": [
+            "conflictId",
+            "selectedValue",
+            "method",
+            "rationale",
+            "resolvedBy",
+            "resolvedDate"
+          ],
           "properties": {
-            "conflictId": {"type": "string"},
+            "conflictId": { "type": "string" },
             "selectedValue": {},
-            "method": {"type": "string"},
-            "rationale": {"type": "string"},
-            "resolvedBy": {"type": "string"},
-            "resolvedDate": {"type": "string", "format": "date-time"}
+            "method": { "type": "string" },
+            "rationale": { "type": "string" },
+            "resolvedBy": { "type": "string" },
+            "resolvedDate": { "type": "string", "format": "date-time" }
           }
         }
       }
@@ -82,28 +96,28 @@
     "autoMinimums": {
       "type": "object",
       "properties": {
-        "_id": {"type": "string"},
-        "bodilyInjuryPerPerson": {"$ref": "#/definitions/fieldWithMetadata"},
-        "bodilyInjuryPerAccident": {"$ref": "#/definitions/fieldWithMetadata"},
-        "propertyDamage": {"$ref": "#/definitions/fieldWithMetadata"},
-        "uninsuredMotorist": {"$ref": "#/definitions/fieldWithMetadata"},
-        "personalInjuryProtection": {"$ref": "#/definitions/fieldWithMetadata"}
+        "_id": { "type": "string" },
+        "bodilyInjuryPerPerson": { "$ref": "#/definitions/fieldWithMetadata" },
+        "bodilyInjuryPerAccident": { "$ref": "#/definitions/fieldWithMetadata" },
+        "propertyDamage": { "$ref": "#/definitions/fieldWithMetadata" },
+        "uninsuredMotorist": { "$ref": "#/definitions/fieldWithMetadata" },
+        "personalInjuryProtection": { "$ref": "#/definitions/fieldWithMetadata" }
       }
     },
     "homeMinimums": {
       "type": "object",
       "properties": {
-        "_id": {"type": "string"},
-        "dwellingCoverage": {"$ref": "#/definitions/fieldWithMetadata"},
-        "liabilityCoverage": {"$ref": "#/definitions/fieldWithMetadata"}
+        "_id": { "type": "string" },
+        "dwellingCoverage": { "$ref": "#/definitions/fieldWithMetadata" },
+        "liabilityCoverage": { "$ref": "#/definitions/fieldWithMetadata" }
       }
     },
     "rentersMinimums": {
       "type": "object",
       "properties": {
-        "_id": {"type": "string"},
-        "personalProperty": {"$ref": "#/definitions/fieldWithMetadata"},
-        "liabilityCoverage": {"$ref": "#/definitions/fieldWithMetadata"}
+        "_id": { "type": "string" },
+        "personalProperty": { "$ref": "#/definitions/fieldWithMetadata" },
+        "liabilityCoverage": { "$ref": "#/definitions/fieldWithMetadata" }
       }
     }
   }
