@@ -25,15 +25,12 @@ export async function getPrefillPacket(
     return intakeResult.prefill
   }
 
-  // Otherwise call POST /api/intake/generate-prefill endpoint
+  // Otherwise call POST /api/generate-prefill endpoint using Hono RPC client
   try {
-    const response = await fetch('http://localhost:7070/api/intake/generate-prefill', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ profile }),
-    })
+    // Use Hono RPC client (flattened route from /api/intake/generate-prefill to /api/generate-prefill)
+    // Hono RPC converts kebab-case to camelCase, but TypeScript may need bracket notation
+    // @ts-expect-error - Hono RPC type inference for kebab-case routes
+    const response = await api.api['generate-prefill'].$post({ json: { profile } })
 
     if (!response.ok) {
       let errorMessage = 'Failed to generate prefill packet'
