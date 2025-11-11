@@ -131,7 +131,48 @@
         "states": { "$ref": "#/definitions/fieldWithMetadata" },
         "requirements": { "$ref": "#/definitions/fieldWithMetadata" },
         "stackable": { "$ref": "#/definitions/fieldWithMetadata" },
-        "description": { "$ref": "#/definitions/fieldWithMetadata" }
+        "description": { "$ref": "#/definitions/fieldWithMetadata" },
+        "stateVariations": {
+          "type": "object",
+          "description": "State-specific percentage variations (exceptions only). Use multiplier for proportional changes (e.g., 0.5 for half), or percentage for absolute overrides.",
+          "patternProperties": {
+            "^[A-Z]{2}$": {
+              "type": "object",
+              "properties": {
+                "percentage": { "type": "number", "minimum": 0, "maximum": 100 },
+                "multiplier": { "type": "number", "minimum": 0 }
+              }
+            }
+          }
+        },
+        "productVariations": {
+          "type": "object",
+          "description": "Product-specific percentage variations (exceptions only)",
+          "patternProperties": {
+            "^(auto|home|renters|umbrella)$": {
+              "type": "object",
+              "properties": {
+                "percentage": { "type": "number", "minimum": 0, "maximum": 100 }
+              }
+            }
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "description": "Optional metadata for engine hints and categorization",
+          "properties": {
+            "discountType": {
+              "type": "string",
+              "enum": ["bundle", "driver", "lifestyle", "loyalty", "other"]
+            },
+            "evaluationPriority": {
+              "type": "string",
+              "enum": ["high", "medium", "low"]
+            },
+            "requiresDocumentation": { "type": "boolean" },
+            "maxStackableDiscounts": { "type": "integer", "minimum": 1 }
+          }
+        }
       }
     },
     "compensation": {
