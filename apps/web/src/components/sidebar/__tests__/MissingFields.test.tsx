@@ -7,8 +7,15 @@
  * @see docs/stories/1.9.real-time-missing-fields-detection.md#task-10
  */
 
+import '../../../test-setup'
 import { describe, expect, it } from 'bun:test'
-import { render, screen } from '@testing-library/react'
+import { render } from '@testing-library/react'
+import {
+  findElement,
+  getTextContent,
+  textIncludes,
+  textMatches,
+} from '../../../__tests__/test-utils'
 import { type MissingField, MissingFields } from '../MissingFields'
 
 describe('MissingFields Component', () => {
@@ -24,7 +31,7 @@ describe('MissingFields Component', () => {
       { name: 'Garage', priority: 'optional', fieldKey: 'garage' },
     ]
 
-    render(
+    const { container } = render(
       <MissingFields
         missingFields={missingFields}
         capturedCount={5}
@@ -34,9 +41,9 @@ describe('MissingFields Component', () => {
     )
 
     // Check for priority labels
-    expect(screen.getByText(/Critical \(2\)/i)).toBeDefined()
-    expect(screen.getByText(/Important \(1\)/i)).toBeDefined()
-    expect(screen.getByText(/Optional \(1\)/i)).toBeDefined()
+    expect(textMatches(container, /Critical \(2\)/i)).toBe(true)
+    expect(textMatches(container, /Important \(1\)/i)).toBe(true)
+    expect(textMatches(container, /Optional \(1\)/i)).toBe(true)
   })
 
   it('should display completeness percentage in "X/Y fields - Z% complete" format', () => {
@@ -44,7 +51,7 @@ describe('MissingFields Component', () => {
       { name: 'State', priority: 'critical', fieldKey: 'state' },
     ]
 
-    render(
+    const { container } = render(
       <MissingFields
         missingFields={missingFields}
         capturedCount={8}
@@ -54,7 +61,7 @@ describe('MissingFields Component', () => {
     )
 
     // Check for completeness format
-    expect(screen.getByText(/8\/12 fields - 67% complete/i)).toBeDefined()
+    expect(textMatches(container, /8\/12 fields - 67% complete/i)).toBe(true)
   })
 
   it('should calculate completeness percentage correctly', () => {
@@ -63,7 +70,7 @@ describe('MissingFields Component', () => {
       { name: 'Vehicles', priority: 'critical', fieldKey: 'vehicles' },
     ]
 
-    render(
+    const { container } = render(
       <MissingFields
         missingFields={missingFields}
         capturedCount={8}
@@ -73,7 +80,7 @@ describe('MissingFields Component', () => {
     )
 
     // 8/10 = 80%
-    expect(screen.getByText(/8\/10 fields - 80% complete/i)).toBeDefined()
+    expect(textMatches(container, /8\/10 fields - 80% complete/i)).toBe(true)
   })
 
   it('should handle 0% complete (no fields captured)', () => {
@@ -82,7 +89,7 @@ describe('MissingFields Component', () => {
       { name: 'Product Line', priority: 'critical', fieldKey: 'productLine' },
     ]
 
-    render(
+    const { container } = render(
       <MissingFields
         missingFields={missingFields}
         capturedCount={0}
@@ -91,11 +98,11 @@ describe('MissingFields Component', () => {
       />
     )
 
-    expect(screen.getByText(/0\/2 fields - 0% complete/i)).toBeDefined()
+    expect(textMatches(container, /0\/2 fields - 0% complete/i)).toBe(true)
   })
 
   it('should handle 100% complete (all fields captured)', () => {
-    render(
+    const { container } = render(
       <MissingFields
         missingFields={[]}
         capturedCount={12}
@@ -104,8 +111,9 @@ describe('MissingFields Component', () => {
       />
     )
 
-    expect(screen.getByText(/✓ All required fields captured!/i)).toBeDefined()
-    expect(screen.getByText(/12\/12 fields - 100% complete/i)).toBeDefined()
+    const content = getTextContent(container)
+    expect(textMatches(container, /✓ All required fields captured!/i)).toBe(true)
+    expect(textMatches(container, /12\/12 fields - 100% complete/i)).toBe(true)
   })
 
   it('should display visual priority indicators (red/yellow/gray circles)', () => {
@@ -115,7 +123,7 @@ describe('MissingFields Component', () => {
       { name: 'Garage', priority: 'optional', fieldKey: 'garage' },
     ]
 
-    render(
+    const { container } = render(
       <MissingFields
         missingFields={missingFields}
         capturedCount={5}
@@ -125,13 +133,9 @@ describe('MissingFields Component', () => {
     )
 
     // Check for Unicode circle indicators
-    const criticalIndicator = screen.getByText('🔴')
-    const importantIndicator = screen.getByText('🟡')
-    const optionalIndicator = screen.getByText('⚪')
-
-    expect(criticalIndicator).toBeDefined()
-    expect(importantIndicator).toBeDefined()
-    expect(optionalIndicator).toBeDefined()
+    expect(textIncludes(container, '🔴')).toBe(true)
+    expect(textIncludes(container, '🟡')).toBe(true)
+    expect(textIncludes(container, '⚪')).toBe(true)
   })
 
   it('should update when missingFields array changes', () => {
@@ -139,7 +143,7 @@ describe('MissingFields Component', () => {
       { name: 'State', priority: 'critical', fieldKey: 'state' },
     ]
 
-    const { rerender } = render(
+    const { container, rerender } = render(
       <MissingFields
         missingFields={initialFields}
         capturedCount={5}
@@ -148,7 +152,8 @@ describe('MissingFields Component', () => {
       />
     )
 
-    expect(screen.getByText(/Critical \(1\)/i)).toBeDefined()
+    let content = getTextContent(container)
+    expect(textMatches(container, /Critical \(1\)/i)).toBe(true)
 
     // Update with more fields
     const updatedFields: MissingField[] = [
@@ -165,7 +170,8 @@ describe('MissingFields Component', () => {
       />
     )
 
-    expect(screen.getByText(/Critical \(2\)/i)).toBeDefined()
+    content = getTextContent(container)
+    expect(textMatches(container, /Critical \(2\)/i)).toBe(true)
   })
 
   it('should call onFieldClick when field is clicked', () => {
@@ -178,7 +184,7 @@ describe('MissingFields Component', () => {
       { name: 'State', priority: 'critical', fieldKey: 'state' },
     ]
 
-    render(
+    const { container } = render(
       <MissingFields
         missingFields={missingFields}
         capturedCount={5}
@@ -188,8 +194,8 @@ describe('MissingFields Component', () => {
     )
 
     // Find and click the field button
-    const fieldButton = screen.getByText(/State: MISSING/i).closest('button')
-    if (fieldButton) {
+    const fieldButton = findElement(container, 'button')
+    if (fieldButton && textIncludes(container, 'State: MISSING')) {
       fieldButton.click()
       // Verify the click handler was called with correct field key
       expect(clickedFields).toContain('state')
@@ -224,7 +230,7 @@ describe('MissingFields Component', () => {
       { name: 'State', priority: 'critical', fieldKey: 'state' },
     ]
 
-    render(
+    const { container } = render(
       <MissingFields
         missingFields={missingFields}
         capturedCount={1}
@@ -234,6 +240,6 @@ describe('MissingFields Component', () => {
     )
 
     // 1/3 = 33.33%, should round to 33%
-    expect(screen.getByText(/1\/3 fields - 33% complete/i)).toBeDefined()
+    expect(textMatches(container, /1\/3 fields - 33% complete/i)).toBe(true)
   })
 })

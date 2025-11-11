@@ -1,17 +1,14 @@
 import '../../../test-setup'
 import { describe, expect, it } from 'bun:test'
 import type { UserProfile } from '@repo/shared'
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { render } from '@testing-library/react'
+import {
+  createTestQueryClient,
+  getTextContent,
+  renderWithQueryClient,
+  textIncludes,
+} from '../../../__tests__/test-utils'
 import { CapturedFields } from '../CapturedFields'
-
-const createTestQueryClient = () =>
-  new QueryClient({
-    defaultOptions: {
-      queries: { retry: false },
-      mutations: { retry: false },
-    },
-  })
 
 describe('CapturedFields', () => {
   const mockOnFieldClick = () => {
@@ -19,12 +16,9 @@ describe('CapturedFields', () => {
   }
 
   const renderWithProvider = (profile: UserProfile) => {
-    const queryClient = createTestQueryClient()
     try {
-      return render(
-        <QueryClientProvider client={queryClient}>
-          <CapturedFields profile={profile} onFieldClick={mockOnFieldClick} />
-        </QueryClientProvider>
+      return renderWithQueryClient(
+        <CapturedFields profile={profile} onFieldClick={mockOnFieldClick} />
       )
     } catch (error) {
       // If Accordion fails to render in test environment, return a mock container
@@ -33,7 +27,7 @@ describe('CapturedFields', () => {
         container: {
           textContent: JSON.stringify(profile),
         },
-      } as ReturnType<typeof render>
+      } as ReturnType<typeof renderWithQueryClient>
     }
   }
 
@@ -41,8 +35,8 @@ describe('CapturedFields', () => {
     const emptyProfile: UserProfile = {}
     const { container } = renderWithProvider(emptyProfile)
 
-    const content = container.textContent || ''
-    const emptyMessage = content.includes('No fields captured yet') || content === '{}'
+    const content = getTextContent(container)
+    const emptyMessage = textIncludes(container, 'No fields captured yet') || content === '{}'
     expect(emptyMessage).toBeTruthy()
   })
 
@@ -57,15 +51,17 @@ describe('CapturedFields', () => {
     const { container } = renderWithProvider(profile)
 
     // Check for category headers - Accordion headers are always visible
-    const content = container.textContent || ''
+    const content = getTextContent(container)
     // If accordion renders, check for headers; if not, check for profile data
     const hasCategories =
-      content.includes('Identity') ||
-      content.includes('Location') ||
-      content.includes('Product') ||
-      content.includes('Details')
+      textIncludes(container, 'Identity') ||
+      textIncludes(container, 'Location') ||
+      textIncludes(container, 'Product') ||
+      textIncludes(container, 'Details')
     const hasData =
-      content.includes('John Doe') || content.includes('CA') || content.includes('auto')
+      textIncludes(container, 'John Doe') ||
+      textIncludes(container, 'CA') ||
+      textIncludes(container, 'auto')
     expect(hasCategories || hasData).toBeTruthy()
   })
 
@@ -78,11 +74,12 @@ describe('CapturedFields', () => {
 
     const { container } = renderWithProvider(profile)
 
-    const content = container.textContent || ''
+    const content = getTextContent(container)
     // Check for field values (may be in accordion content or JSON fallback)
-    const hasState = content.includes('CA') || content.includes('"state":"CA"')
-    const hasProductLine = content.includes('auto') || content.includes('"productLine":"auto"')
-    const hasKids = content.includes('2') || content.includes('"kids":2')
+    const hasState = textIncludes(container, 'CA') || textIncludes(container, '"state":"CA"')
+    const hasProductLine =
+      textIncludes(container, 'auto') || textIncludes(container, '"productLine":"auto"')
+    const hasKids = textIncludes(container, '2') || textIncludes(container, '"kids":2')
     expect(hasState || hasProductLine || hasKids).toBeTruthy()
   })
 
@@ -95,11 +92,12 @@ describe('CapturedFields', () => {
 
     const { container } = renderWithProvider(profile)
 
-    const content = container.textContent || ''
+    const content = getTextContent(container)
     // Check for numeric values
-    const hasAge = content.includes('30') || content.includes('"age":30')
-    const hasHousehold = content.includes('4') || content.includes('"householdSize":4')
-    const hasVehicles = content.includes('2') || content.includes('"vehicles":2')
+    const hasAge = textIncludes(container, '30') || textIncludes(container, '"age":30')
+    const hasHousehold =
+      textIncludes(container, '4') || textIncludes(container, '"householdSize":4')
+    const hasVehicles = textIncludes(container, '2') || textIncludes(container, '"vehicles":2')
     expect(hasAge || hasHousehold || hasVehicles).toBeTruthy()
   })
 
@@ -110,9 +108,9 @@ describe('CapturedFields', () => {
 
     const { container } = renderWithProvider(profile)
 
-    const content = container.textContent || ''
+    const content = getTextContent(container)
     // Check for boolean value representation
-    const hasYes = content.includes('Yes') || content.includes('true')
+    const hasYes = textIncludes(container, 'Yes') || textIncludes(container, 'true')
     expect(hasYes).toBeTruthy()
   })
 })
