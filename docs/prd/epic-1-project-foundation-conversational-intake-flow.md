@@ -165,14 +165,14 @@
 
 **Acceptance Criteria:**
 
-1. System maintains checklist of required fields per product type sourced from knowledge pack (Auto: drivers/vehicles/vin, Home: property details/construction, Renters: unit info/belongings, Umbrella: existing policies)
-2. After each message, backend evaluates field completeness and returns updated missing fields list
+1. System maintains checklist of required fields per product type (Auto: drivers/vehicles/vin, Home: property details/construction, Renters: unit info/belongings, Umbrella: existing policies)
+2. Missing fields calculated in real-time on frontend when pills are added, removed, or edited in the notes textbox (no API call required)
 3. Missing fields displayed in sidebar with visual priority: Critical (red), Important (yellow), Optional (gray)
 4. Completeness percentage displayed with progress bar (e.g., "8/12 fields - 67% complete")
 5. No auto-generated questions or prompts - system only shows what's missing, trusts broker to ask appropriate questions
-6. Field requirements adapt based on discovered state and carrier (different carriers require different data)
+6. Field requirements adapt based on discovered state and carrier (different carriers require different data) - backend reconciliation after debounced API call
 7. If intake session ends with missing critical fields, pre-fill packet flags these with high priority for licensed agent
-8. Real-time updates via WebSocket or SSE for instant feedback (no polling)
+8. Real-time updates happen instantly via React state updates when pills change (no SSE/WebSocket needed)
 9. Intake completeness ≥95% validated in evaluation harness
 
 ---
