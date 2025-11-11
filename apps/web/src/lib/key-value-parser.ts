@@ -5,6 +5,15 @@
  * and validates against known field keys.
  */
 
+import {
+  COMMAND_TO_FIELD_NAME,
+  FIELD_ALIASES_MAP,
+  FIELD_SHORTCUTS,
+  type FieldCommand,
+  MULTI_WORD_FIELDS,
+  NUMERIC_FIELDS,
+} from '@/config/shortcuts'
+
 export type ValidationResult = 'valid' | 'invalid_key' | 'invalid_value'
 
 export interface ParsedKeyValue {
@@ -16,79 +25,33 @@ export interface ParsedKeyValue {
 }
 
 /**
- * Field aliases mapping (short keys to full field names)
+ * Field aliases mapping (derived from shortcuts.json)
+ * Maps keys/aliases → commands → field names
+ * This ensures no drift - shortcuts.json is the single source of truth
  */
-const FIELD_ALIASES: Record<string, string> = {
-  k: 'kids',
-  kids: 'kids',
-  d: 'dependents',
-  deps: 'dependents',
-  dependents: 'dependents',
-  v: 'vehicles',
-  vehicles: 'vehicles',
-  n: 'name',
-  name: 'name',
-  e: 'email',
-  email: 'email',
-  p: 'phone',
-  phone: 'phone',
-  s: 'state',
-  state: 'state',
-  z: 'zip',
-  zip: 'zip',
-  l: 'productLine',
-  product: 'productLine',
-  productLine: 'productLine',
-  a: 'age',
-  age: 'age',
-  h: 'householdSize',
-  household: 'householdSize',
-  householdSize: 'householdSize',
-  g: 'garage',
-  garage: 'garage',
-  i: 'vins',
-  vins: 'vins',
-  r: 'drivers',
-  drivers: 'drivers',
-  c: 'drivingRecords',
-  drivingRecords: 'drivingRecords',
-  u: 'cleanRecord',
-  cleanRecord: 'cleanRecord',
-  o: 'ownsHome',
-  ownsHome: 'ownsHome',
-  owns: 'ownsHome',
-  t: 'propertyType',
-  propertyType: 'propertyType',
-  y: 'constructionYear',
-  constructionYear: 'constructionYear',
-  f: 'roofType',
-  roofType: 'roofType',
-  q: 'squareFeet',
-  squareFeet: 'squareFeet',
-  w: 'existingPolicies',
-  existingPolicies: 'existingPolicies',
-  m: 'currentPremium',
-  currentPremium: 'currentPremium',
-  b: 'deductibles',
-  deductibles: 'deductibles',
-  x: 'limits',
-  limits: 'limits',
-}
+const FIELD_ALIASES: Record<string, string> = (() => {
+  const aliases: Record<string, string> = {}
 
-/**
- * Field types for validation
- */
-const NUMERIC_FIELDS = new Set([
-  'kids',
-  'householdSize',
-  'dependents',
-  'vehicles',
-  'age',
-  'household',
-  'constructionYear',
-  'squareFeet',
-  'currentPremium',
-])
+  // Build aliases from shortcuts: key → command → field name
+  for (const [key, command] of Object.entries(FIELD_SHORTCUTS)) {
+    const fieldName = COMMAND_TO_FIELD_NAME[command as keyof typeof COMMAND_TO_FIELD_NAME]
+    if (fieldName) {
+      aliases[key] = fieldName
+      // Also add command itself as an alias (e.g., 'kids' → 'kids')
+      aliases[command] = fieldName
+    }
+  }
+
+  // Add convenience aliases from shortcuts.json (e.g., "deps" → "dependents")
+  for (const [alias, command] of Object.entries(FIELD_ALIASES_MAP)) {
+    const fieldName = COMMAND_TO_FIELD_NAME[command]
+    if (fieldName) {
+      aliases[alias] = fieldName
+    }
+  }
+
+  return aliases
+})()
 
 /**
  * Parse key-value syntax from text
@@ -101,20 +64,86 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
   const results: ParsedKeyValue[] = []
   const knownKeys = validKeys || new Set(Object.keys(FIELD_ALIASES))
 
-  // Regex pattern: matches key:value followed by space, comma, period, or end of string
+  // Regex pattern: matches key:value
   // Case-insensitive matching
-  const pattern = /(\w+):(\w+|\d+)(?=\s|,|\.|$)/gi
-  let match: RegExpExecArray | null = pattern.exec(text)
+  // Strategy: Match greedily, then validate based on field type
+  // - Multi-word fields: allow spaces, stop at comma/period/end or next key:value pattern
+  // - Email fields: allow periods, stop at space/comma/period/end
+  // - Numeric fields: allow commas, stop at space/comma/period/end
+  // - Other fields: stop at space/comma/period/end
+  // First, try to match multi-word fields (allow spaces) - they stop at comma, period, or next key:value
+  const multiWordPattern = /(\w+):((?:[^\s:,\.]+(?:\s+[^\s:,\.]+)*)+)(?=,|\.|(?:\s+\w+:)|$)/gi
+  // Then match other fields (no spaces in value) - stop at space, comma, period, or end
+  const otherPattern = /(\w+):([^\s:,\.]+)(?=\s|,|\.|$)/gi
 
+  // Try multi-word pattern first (for fields that allow spaces)
+  multiWordPattern.lastIndex = 0
+  let match: RegExpExecArray | null = multiWordPattern.exec(text)
+  const processedRanges: Array<{ start: number; end: number }> = []
+
+  // First pass: Match multi-word fields (allow spaces)
   while (match !== null) {
     if (!match[1] || !match[2]) {
-      match = pattern.exec(text)
+      match = multiWordPattern.exec(text)
       continue
     }
 
     const original = match[0]
     const key = match[1].toLowerCase()
     const value = match[2]
+    const matchStart = match.index
+    const matchEnd = matchStart + original.length
+
+    // Resolve field name from alias
+    const fieldName = FIELD_ALIASES[key]
+    const normalizedKey = fieldName || key
+
+    // Only process if this is a multi-word field
+    if (normalizedKey && MULTI_WORD_FIELDS.has(normalizedKey as FieldCommand)) {
+      // Check if key is valid
+      const isValidKey = knownKeys.has(key) || (fieldName ? knownKeys.has(fieldName) : false)
+
+      if (isValidKey) {
+        results.push({
+          key,
+          value: value.trim(),
+          original,
+          validation: 'valid',
+          fieldName: normalizedKey,
+        })
+        processedRanges.push({ start: matchStart, end: matchEnd })
+      }
+    }
+
+    match = multiWordPattern.exec(text)
+  }
+
+  // Second pass: Match other fields (no spaces in value)
+  // Skip ranges already processed by name pattern
+  otherPattern.lastIndex = 0
+  match = otherPattern.exec(text)
+
+  while (match !== null) {
+    if (!match[1] || !match[2]) {
+      match = otherPattern.exec(text)
+      continue
+    }
+
+    const original = match[0]
+    const key = match[1].toLowerCase()
+    const value = match[2]
+    const matchStart = match.index
+    const matchEnd = matchStart + original.length
+
+    // Skip if this range was already processed as a name field
+    const isAlreadyProcessed = processedRanges.some(
+      (range) => matchStart >= range.start && matchEnd <= range.end
+    )
+
+    if (isAlreadyProcessed) {
+      match = otherPattern.exec(text)
+      continue
+    }
 
     // Resolve field name from alias
     const fieldName = FIELD_ALIASES[key]
@@ -130,13 +159,20 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
         original,
         validation: 'invalid_key',
       })
-      match = pattern.exec(text)
+      match = otherPattern.exec(text)
+      continue
+    }
+
+    // Skip multi-word fields (already processed)
+    if (normalizedKey && MULTI_WORD_FIELDS.has(normalizedKey as FieldCommand)) {
+      match = otherPattern.exec(text)
       continue
     }
 
     // Validate value type for numeric fields
     if (normalizedKey && NUMERIC_FIELDS.has(normalizedKey)) {
-      const numValue = Number.parseInt(value, 10)
+      // Remove commas for parsing (e.g., "1,200" -> 1200)
+      const numValue = Number.parseInt(value.replace(/,/g, ''), 10)
       if (Number.isNaN(numValue)) {
         results.push({
           key,
@@ -145,7 +181,7 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
           validation: 'invalid_value',
           fieldName: normalizedKey,
         })
-        match = pattern.exec(text)
+        match = otherPattern.exec(text)
         continue
       }
     }
@@ -158,7 +194,7 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
       fieldName: normalizedKey,
     })
 
-    match = pattern.exec(text)
+    match = otherPattern.exec(text)
   }
 
   return results

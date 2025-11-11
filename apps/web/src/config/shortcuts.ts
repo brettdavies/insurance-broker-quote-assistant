@@ -11,49 +11,18 @@
 import shortcutsData from './shortcuts.json'
 
 // ============================================================================
-// Types
-// ============================================================================
-
-export type FieldCommand =
-  | 'name'
-  | 'email'
-  | 'phone'
-  | 'state'
-  | 'zip'
-  | 'productLine'
-  | 'age'
-  | 'household'
-  | 'kids'
-  | 'dependents'
-  | 'vehicles'
-  | 'garage'
-  | 'vins'
-  | 'drivers'
-  | 'drivingRecords'
-  | 'cleanRecord'
-  | 'ownsHome'
-  | 'propertyType'
-  | 'constructionYear'
-  | 'roofType'
-  | 'squareFeet'
-  | 'currentPremium'
-  | 'deductibles'
-  | 'limits'
-  | 'existingPolicies'
-
-export type ActionCommand = 'export' | 'copy' | 'reset' | 'policy' | 'intake' | 'help'
-
-// ============================================================================
 // JSON Data Structure
 // ============================================================================
 
 interface ShortcutDefinition {
   type: 'field' | 'action'
   key: string
-  command: FieldCommand | ActionCommand
+  command: string
   label: string
   question?: string // Only for field shortcuts
   category?: string // Only for field shortcuts
+  fieldType?: 'numeric' | 'string' // Only for field shortcuts
+  aliases?: string[] // Optional: array of aliases for this shortcut
 }
 
 interface ShortcutsData {
@@ -65,6 +34,52 @@ interface ShortcutsData {
 // ============================================================================
 
 const data = shortcutsData as ShortcutsData
+
+// Extract unique commands at runtime for type inference
+const fieldCommandsArray = [
+  ...new Set(data.shortcuts.filter((s) => s.type === 'field').map((s) => s.command)),
+] as const
+
+const actionCommandsArray = [
+  ...new Set(data.shortcuts.filter((s) => s.type === 'action').map((s) => s.command)),
+] as const
+
+// Derive types from shortcuts.json - no hardcoding needed
+export type FieldCommand = (typeof fieldCommandsArray)[number]
+export type ActionCommand = (typeof actionCommandsArray)[number]
+
+// Maps commands to their actual field names
+// Commands match UserProfile field names directly, so this is just an identity mapping
+// Generated dynamically from shortcuts.json - no manual updates needed
+export const COMMAND_TO_FIELD_NAME: Record<FieldCommand, string> = Object.fromEntries(
+  data.shortcuts
+    .filter(
+      (
+        s
+      ): s is ShortcutDefinition & {
+        type: 'field'
+        command: FieldCommand
+      } => s.type === 'field'
+    )
+    .map((s) => [s.command, s.command]) // Command IS the field name
+) as Record<FieldCommand, string>
+
+// Extract numeric fields as a Set for fast lookup
+// Derived from field shortcuts with fieldType === 'numeric'
+// Uses command directly as field name (since they match)
+export const NUMERIC_FIELDS = new Set<string>(
+  data.shortcuts
+    .filter(
+      (
+        s
+      ): s is ShortcutDefinition & {
+        type: 'field'
+        command: FieldCommand
+        fieldType: 'numeric'
+      } => s.type === 'field' && s.fieldType === 'numeric'
+    )
+    .map((s) => s.command) // Command IS the field name
+)
 
 // Extract field shortcuts: key -> command mapping
 export const FIELD_SHORTCUTS: Record<string, FieldCommand> = Object.fromEntries(
@@ -113,6 +128,35 @@ export const FIELD_METADATA: Record<FieldCommand, FieldMetadata> = Object.fromEn
       },
     ])
 ) as Record<FieldCommand, FieldMetadata>
+
+// Extract field type (numeric vs string) for each command
+export const FIELD_TYPE: Record<FieldCommand, 'numeric' | 'string'> = Object.fromEntries(
+  data.shortcuts
+    .filter(
+      (
+        s
+      ): s is ShortcutDefinition & {
+        type: 'field'
+        command: FieldCommand
+        fieldType: 'numeric' | 'string'
+      } => s.type === 'field' && s.fieldType !== undefined
+    )
+    .map((s) => [s.command, s.fieldType])
+) as Record<FieldCommand, 'numeric' | 'string'>
+
+// Reverse mapping: command → key (for field injection)
+export const COMMAND_TO_KEY: Record<FieldCommand, string> = Object.fromEntries(
+  data.shortcuts
+    .filter(
+      (
+        s
+      ): s is ShortcutDefinition & {
+        type: 'field'
+        command: FieldCommand
+      } => s.type === 'field'
+    )
+    .map((s) => [s.command, s.key])
+) as Record<FieldCommand, string>
 
 // Extract field shortcuts display: grouped by category
 export interface FieldShortcutDisplay {
@@ -193,6 +237,56 @@ export const ACTION_SHORTCUTS_DISPLAY: ActionShortcutDisplay[] = (() => {
 
   return Array.from(commandMap.values())
 })()
+
+// Extract aliases mapping (alias → command)
+// Built from aliases arrays in each shortcut definition
+export const FIELD_ALIASES_MAP: Record<string, FieldCommand> = (() => {
+  const aliasMap: Record<string, FieldCommand> = {}
+
+  for (const shortcut of data.shortcuts) {
+    if (shortcut.type === 'field' && shortcut.aliases) {
+      for (const alias of shortcut.aliases) {
+        aliasMap[alias] = shortcut.command as FieldCommand
+      }
+    }
+  }
+
+  return aliasMap
+})()
+
+// ============================================================================
+// Field Delimiter Configuration
+// ============================================================================
+
+/**
+ * Fields that allow spaces (multi-word values)
+ * These fields stop at comma, period, or next key:value pattern (not space)
+ */
+export const MULTI_WORD_FIELDS = new Set<FieldCommand>([
+  'name',
+  'phone',
+  'productLine',
+  'propertyType',
+  'garage',
+  'roofType',
+  'drivingRecords',
+  'deductibles',
+  'limits',
+  'existingPolicies',
+  'vins', // VINs can be multiple, space-separated
+])
+
+/**
+ * Fields that allow special characters that are normally delimiters
+ * - Phone: spaces, dashes, parentheses (e.g., "(555) 123-4567")
+ * - Zip: dashes (e.g., "12345-6789")
+ * - Email: periods (already handled separately via @ detection)
+ */
+export const SPECIAL_CHAR_FIELDS: Record<FieldCommand, string[]> = {
+  phone: ['-', '(', ')', ' '], // Phone numbers can have dashes, parentheses, spaces
+  zip: ['-'], // Zip codes can have dashes (extended format)
+  email: ['.'], // Email has periods (handled via @ detection)
+} as Record<FieldCommand, string[]>
 
 // ============================================================================
 // Helper Functions

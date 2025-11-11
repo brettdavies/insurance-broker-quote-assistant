@@ -6,7 +6,6 @@
  */
 
 import { CompliancePanel } from '@/components/layout/CompliancePanel'
-import { ChatHistory, type ChatMessage } from '@/components/notes/ChatHistory'
 import { NotesPanel } from '@/components/notes/NotesPanel'
 import { UploadPanel } from '@/components/policy/UploadPanel'
 import { FieldModal } from '@/components/shortcuts/FieldModal'
@@ -14,9 +13,9 @@ import { HelpModal } from '@/components/shortcuts/HelpModal'
 import type { MissingField } from '@/components/sidebar/MissingFields'
 import { Sidebar } from '@/components/sidebar/Sidebar'
 import { useToast } from '@/components/ui/use-toast'
+import { FIELD_SHORTCUTS } from '@/config/shortcuts'
 import { useIntake } from '@/hooks/useIntake'
 import type { ActionCommand, FieldCommand } from '@/hooks/useSlashCommands'
-import { extractFields, parseKeyValueSyntax } from '@/lib/key-value-parser'
 import type { UserProfile } from '@repo/shared'
 import { useCallback, useRef, useState } from 'react'
 
@@ -37,7 +36,6 @@ export function UnifiedChatInterface({
   onCommandError,
   editorRef: externalEditorRef,
 }: UnifiedChatInterfaceProps) {
-  const [messages, setMessages] = useState<ChatMessage[]>([])
   const [profile, setProfile] = useState<UserProfile>({})
   const [missingFields, setMissingFields] = useState<MissingField[]>([])
   const [fieldModalOpen, setFieldModalOpen] = useState(false)
@@ -52,49 +50,38 @@ export function UnifiedChatInterface({
   const { toast } = useToast()
   const intakeMutation = useIntake()
   const debounceTimerRef = useRef<NodeJS.Timeout | null>(null)
+  const editorContentRef = useRef<string>('')
 
-  // Handle message submission
-  const handleMessageSubmit = useCallback(
-    async (messageText: string) => {
-      // Add message to history immediately (optimistic)
-      const newMessage: ChatMessage = {
-        id: `msg-${Date.now()}`,
-        text: messageText,
-        timestamp: new Date(),
-      }
-      setMessages((prev) => [...prev, newMessage])
+  // Handle field extraction from pills
+  const handleFieldExtracted = useCallback(
+    (extractedFields: Record<string, string | number>) => {
+      if (Object.keys(extractedFields).length === 0) return
 
-      // Extract key-value pairs immediately (optimistic UI)
-      const parsed = parseKeyValueSyntax(messageText)
-      const extractedFields = extractFields(parsed)
+      // Update profile optimistically
+      setProfile((prev) => ({ ...prev, ...extractedFields }))
 
-      if (Object.keys(extractedFields).length > 0) {
-        // Update profile optimistically
-        setProfile((prev) => ({ ...prev, ...extractedFields }))
-
-        // Show toast for each captured field
-        for (const [key, value] of Object.entries(extractedFields)) {
-          toast({
-            title: 'Field captured',
-            description: `${key}: ${value}`,
-            duration: 5000,
-          })
-        }
+      // Show toast for each captured field
+      for (const [key, value] of Object.entries(extractedFields)) {
+        toast({
+          title: 'Field captured',
+          description: `${key}: ${value}`,
+          duration: 5000,
+        })
       }
 
-      // Debounce LLM extraction (500ms)
+      // Debounce LLM extraction (500ms) using current editor content
       if (debounceTimerRef.current) {
         clearTimeout(debounceTimerRef.current)
       }
 
       const timer = setTimeout(async () => {
+        const currentContent = editorContentRef.current
+        if (!currentContent.trim()) return
+
         try {
           const result = await intakeMutation.mutateAsync({
-            message: messageText,
-            conversationHistory: messages.map((m) => ({
-              role: 'user',
-              content: m.text,
-            })),
+            message: currentContent,
+            conversationHistory: [], // No conversation history - AI extraction happens silently
           })
 
           // Reconcile with backend response
@@ -113,43 +100,25 @@ export function UnifiedChatInterface({
 
       debounceTimerRef.current = timer
     },
-    [messages, intakeMutation, toast]
+    [intakeMutation, toast]
+  )
+
+  // Handle content change to track editor content for LLM extraction
+  const handleContentChange = useCallback(
+    (content: string) => {
+      editorContentRef.current = content
+      onContentChange?.(content)
+    },
+    [onContentChange]
   )
 
   // Handle field click (from sidebar)
   const handleFieldClick = useCallback(
     (fieldKey: string, currentValue?: string | number | boolean) => {
-      // Map fieldKey to FieldCommand
-      const fieldKeyToCommand: Record<string, FieldCommand> = {
-        name: 'name',
-        email: 'email',
-        phone: 'phone',
-        state: 'state',
-        zip: 'zip',
-        productLine: 'productLine',
-        age: 'age',
-        household: 'household',
-        kids: 'kids',
-        dependents: 'dependents',
-        vehicles: 'vehicles',
-        garage: 'garage',
-        vins: 'vins',
-        drivers: 'drivers',
-        drivingRecords: 'drivingRecords',
-        cleanRecord: 'cleanRecord',
-        ownsHome: 'ownsHome',
-        propertyType: 'propertyType',
-        constructionYear: 'constructionYear',
-        roofType: 'roofType',
-        squareFeet: 'squareFeet',
-        existingPolicies: 'existingPolicies',
-        currentPremium: 'currentPremium',
-        deductibles: 'deductibles',
-        limits: 'limits',
-      }
-
-      const command = fieldKeyToCommand[fieldKey]
-      if (command) {
+      // Commands match UserProfile field names directly, so fieldKey IS the command
+      // Verify it's a valid FieldCommand by checking if it exists in FIELD_SHORTCUTS values
+      const isValidFieldCommand = Object.values(FIELD_SHORTCUTS).includes(fieldKey as FieldCommand)
+      if (isValidFieldCommand) {
         setCurrentField({ key: fieldKey, value: currentValue })
         setFieldModalOpen(true)
       }
@@ -197,43 +166,19 @@ export function UnifiedChatInterface({
 
   const totalRequired = capturedCount + missingFields.length
 
-  // Map currentField.key to FieldCommand for modal
-  const fieldCommandMap: Record<string, FieldCommand> = {
-    name: 'name',
-    email: 'email',
-    phone: 'phone',
-    state: 'state',
-    zip: 'zip',
-    productLine: 'productLine',
-    age: 'age',
-    household: 'household',
-    kids: 'kids',
-    dependents: 'dependents',
-    vehicles: 'vehicles',
-    garage: 'garage',
-    vins: 'vins',
-    drivers: 'drivers',
-    drivingRecords: 'drivingRecords',
-    cleanRecord: 'cleanRecord',
-    ownsHome: 'ownsHome',
-    propertyType: 'propertyType',
-    constructionYear: 'constructionYear',
-    roofType: 'roofType',
-    squareFeet: 'squareFeet',
-    existingPolicies: 'existingPolicies',
-    currentPremium: 'currentPremium',
-    deductibles: 'deductibles',
-    limits: 'limits',
-  }
-
-  const fieldCommand = currentField ? (fieldCommandMap[currentField.key] ?? null) : null
+  // Commands match UserProfile field names directly, so currentField.key IS the command
+  // Verify it's a valid FieldCommand
+  const fieldCommand = currentField
+    ? Object.values(FIELD_SHORTCUTS).includes(currentField.key as FieldCommand)
+      ? (currentField.key as FieldCommand)
+      : null
+    : null
 
   // Handle action commands (reset, help, etc.)
   const handleActionCommand = useCallback(
     (command: ActionCommand) => {
       if (command === 'reset') {
         // Clear all state
-        setMessages([])
         setProfile({})
         setMissingFields([])
         setCurrentField(null)
@@ -280,13 +225,6 @@ export function UnifiedChatInterface({
   )
 
   // Merge parent callbacks with local handlers
-  const handleMessageSubmitMerged = useCallback(
-    (messageText: string) => {
-      handleMessageSubmit(messageText)
-    },
-    [handleMessageSubmit]
-  )
-
   const handleActionCommandMerged = useCallback(
     (command: ActionCommand) => {
       handleActionCommand(command)
@@ -320,23 +258,18 @@ export function UnifiedChatInterface({
             <UploadPanel />
           </div>
 
-          {/* Center/Left: Chat History + Notes + Compliance (expands when active) */}
+          {/* Center/Left: Notes + Compliance (expands when active) */}
           <div
             className={`layout-transition flex flex-col border-r border-gray-300 dark:border-gray-700 ${
               isActive ? 'col-span-1' : 'col-span-1'
             }`}
           >
-            {/* Chat History (hidden when not active) */}
-            <div className={`flex-1 overflow-hidden ${isActive ? 'block' : 'hidden'}`}>
-              <ChatHistory messages={messages} />
-            </div>
-
-            {/* Notes Input (always visible) */}
-            <div className="border-t border-gray-300 dark:border-gray-700">
+            {/* Notes Input (always visible, at top) */}
+            <div className="flex-1 overflow-hidden">
               <NotesPanel
                 mode={mode}
-                onMessageSubmit={handleMessageSubmitMerged}
-                onContentChange={onContentChange}
+                onFieldExtracted={handleFieldExtracted}
+                onContentChange={handleContentChange}
                 onActionCommand={handleActionCommandMerged}
                 onCommandError={handleCommandErrorMerged}
                 editorRef={editorRef}
@@ -344,7 +277,7 @@ export function UnifiedChatInterface({
               />
             </div>
 
-            {/* Compliance Panel (hidden when not active) */}
+            {/* Compliance Panel (directly below notes input, hidden when not active) */}
             <div className={`border-t p-4 dark:border-gray-700 ${isActive ? 'block' : 'hidden'}`}>
               <CompliancePanel mode={mode} profile={profile} />
             </div>

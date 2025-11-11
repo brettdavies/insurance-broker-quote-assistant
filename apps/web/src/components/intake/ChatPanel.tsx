@@ -1,6 +1,7 @@
 import { FieldModal } from '@/components/shortcuts/FieldModal'
 import { HelpModal } from '@/components/shortcuts/HelpModal'
 import { Textarea } from '@/components/ui/textarea'
+import { COMMAND_TO_KEY } from '@/config/shortcuts'
 import { type ActionCommand, type FieldCommand, useSlashCommands } from '@/hooks/useSlashCommands'
 import { useState } from 'react'
 
@@ -38,35 +39,8 @@ export function ChatPanel() {
 
   const handleFieldSubmit = (value: string) => {
     if (currentField) {
-      // Map field command back to shortcut key
-      const fieldToKey: Record<FieldCommand, string> = {
-        name: 'n',
-        email: 'e',
-        phone: 'p',
-        state: 's',
-        zip: 'z',
-        productLine: 'l',
-        age: 'a',
-        household: 'h',
-        kids: 'k',
-        dependents: 'd',
-        vehicles: 'v',
-        garage: 'g',
-        vins: 'i',
-        drivers: 'r',
-        drivingRecords: 'c',
-        cleanRecord: 'u',
-        ownsHome: 'o',
-        propertyType: 't',
-        constructionYear: 'y',
-        roofType: 'f',
-        squareFeet: 'q',
-        existingPolicies: 'w',
-        currentPremium: 'm',
-        deductibles: 'b',
-        limits: 'x',
-      }
-      const key = fieldToKey[currentField]
+      // Get shortcut key from shortcuts config (ensures no drift)
+      const key = COMMAND_TO_KEY[currentField]
       const pill = `${key}:${value}`
       setMessage((prev) => (prev ? `${prev} ${pill}` : pill))
     }

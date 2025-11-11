@@ -7,6 +7,12 @@
  * Uses SINGLE transformation path (mutation listener) to follow DRY/STAR principles.
  */
 
+import {
+  type FieldCommand,
+  MULTI_WORD_FIELDS,
+  NUMERIC_FIELDS,
+  SPECIAL_CHAR_FIELDS,
+} from '@/config/shortcuts'
 import { parseKeyValueSyntax } from '@/lib/key-value-parser'
 import { useLexicalComposerContext } from '@lexical/react/LexicalComposerContext'
 import {
@@ -72,32 +78,140 @@ export function KeyValuePlugin(): null {
               // Check if cursor is at a delimiter position
               const cursorOffset = $isRangeSelection(selection) ? selection.anchor.offset : 0
               const charBeforeCursor = text[cursorOffset - 1]
-              const isAtDelimiter =
-                charBeforeCursor === ' ' || charBeforeCursor === ',' || charBeforeCursor === '.'
 
-              // Also check if entire text ends with delimiter
-              const endsWithDelimiter =
-                text.endsWith(' ') || text.endsWith(',') || text.endsWith('.')
+              // Parse to check what we're typing
+              const parsed = parseKeyValueSyntax(text)
 
-              shouldTransform = isAtDelimiter || endsWithDelimiter
+              // Determine if we should transform based on context
+              if (parsed.length > 0) {
+                const lastParsed = parsed[parsed.length - 1]
+                if (!lastParsed) {
+                  continue
+                }
+
+                const valueStart = text.lastIndexOf(lastParsed.original)
+                const valueEndsAt = valueStart + lastParsed.original.length
+                const isTypingValue = cursorOffset > valueStart && cursorOffset <= valueEndsAt
+
+                // Check field type to determine valid delimiters
+                const fieldName = lastParsed.fieldName
+                const isMultiWordField = fieldName
+                  ? MULTI_WORD_FIELDS.has(fieldName as FieldCommand)
+                  : false
+                const isEmailField = fieldName === 'email'
+                const isNumericField = fieldName ? NUMERIC_FIELDS.has(fieldName) : false
+                const isZipField = fieldName === 'zip'
+                const valueContainsAt = lastParsed.value.includes('@')
+                const valueContainsComma = lastParsed.value.includes(',')
+
+                // Get special characters allowed for this field (for non-multi-word fields like zip)
+                const allowedSpecialChars = fieldName
+                  ? SPECIAL_CHAR_FIELDS[fieldName as FieldCommand] || []
+                  : []
+                const valueHasSpecialChars = allowedSpecialChars.some((char) =>
+                  lastParsed.value.includes(char)
+                )
+
+                // Helper: Check if next chars look like a new key:value pattern
+                const checkNextKeyValuePattern = (): boolean => {
+                  const textAfterCursor = text.slice(cursorOffset)
+                  return /^\s+\w+:/.test(textAfterCursor)
+                }
+
+                // If typing within a value:
+                if (isTypingValue) {
+                  // Multi-word fields: spaces are part of value, stop at comma/period/next key:value pattern
+                  if (isMultiWordField) {
+                    shouldTransform =
+                      charBeforeCursor === ',' ||
+                      charBeforeCursor === '.' ||
+                      checkNextKeyValuePattern()
+                  }
+                  // Zip fields (not multi-word): dashes are part of value, only space/comma/period are delimiters
+                  else if (isZipField && valueHasSpecialChars) {
+                    shouldTransform =
+                      charBeforeCursor === ' ' ||
+                      charBeforeCursor === ',' ||
+                      charBeforeCursor === '.'
+                  }
+                  // Email fields: periods are part of value, only space is delimiter
+                  else if (isEmailField || valueContainsAt) {
+                    shouldTransform = charBeforeCursor === ' '
+                  }
+                  // Numeric fields: commas are part of value (for thousands), only space is delimiter
+                  else if (isNumericField && valueContainsComma) {
+                    shouldTransform = charBeforeCursor === ' '
+                  }
+                  // Other fields: space, comma, or period can be delimiters
+                  else {
+                    shouldTransform =
+                      charBeforeCursor === ' ' ||
+                      charBeforeCursor === ',' ||
+                      charBeforeCursor === '.'
+                  }
+                }
+                // If cursor is after the value (at delimiter position):
+                else if (cursorOffset > valueEndsAt) {
+                  // Multi-word fields: spaces are part of value, stop at comma/period/next key:value pattern
+                  if (isMultiWordField) {
+                    shouldTransform =
+                      charBeforeCursor === ',' ||
+                      charBeforeCursor === '.' ||
+                      checkNextKeyValuePattern()
+                  }
+                  // Zip fields (not multi-word): dashes are part of value
+                  else if (isZipField && valueHasSpecialChars) {
+                    shouldTransform =
+                      charBeforeCursor === ' ' ||
+                      charBeforeCursor === ',' ||
+                      charBeforeCursor === '.'
+                  }
+                  // Email fields: only space is delimiter
+                  else if (isEmailField || valueContainsAt) {
+                    shouldTransform = charBeforeCursor === ' '
+                  }
+                  // Numeric fields with comma: only space is delimiter
+                  else if (isNumericField && valueContainsComma) {
+                    shouldTransform = charBeforeCursor === ' '
+                  }
+                  // Other fields: space, comma, or period are delimiters
+                  else {
+                    shouldTransform =
+                      charBeforeCursor === ' ' ||
+                      charBeforeCursor === ',' ||
+                      charBeforeCursor === '.'
+                  }
+                }
+                // Cursor before value - don't transform
+                else {
+                  shouldTransform = false
+                }
+              } else {
+                // No parsed values yet - use standard delimiters
+                const isAtDelimiter =
+                  charBeforeCursor === ' ' || charBeforeCursor === ',' || charBeforeCursor === '.'
+                const endsWithDelimiter =
+                  text.endsWith(' ') || text.endsWith(',') || text.endsWith('.')
+                shouldTransform = isAtDelimiter || endsWithDelimiter
+              }
 
               // If cursor is right after a delimiter and that delimiter would cause transformation,
               // we should suppress it ONLY if it creates a duplicate delimiter
-              if (isAtDelimiter && cursorOffset === text.length) {
-                // Cursor is at the end and the last character is a delimiter
+              if (shouldTransform && cursorOffset === text.length && charBeforeCursor === ' ') {
+                // Cursor is at the end and the last character is a space delimiter
                 // Check if removing this delimiter would still leave a valid key-value pattern
                 const textWithoutDelimiter = text.slice(0, -1)
                 const parsedWithoutDelimiter = parseKeyValueSyntax(textWithoutDelimiter)
                 if (parsedWithoutDelimiter.length > 0) {
-                  // Only suppress if we have duplicate delimiters
+                  // Only suppress if we have duplicate spaces
                   // (e.g., "hi k:10  " -> removing last space leaves "hi k:10 " which is fine)
                   // But if we have "hi k:10 " and press space, we get "hi k:10  " - suppress the second space
                   const charBeforeDelimiter = text.length > 1 ? text[text.length - 2] : null
-                  if (charBeforeDelimiter === charBeforeCursor) {
-                    // We have duplicate delimiters - suppress the last one
+                  if (charBeforeDelimiter === ' ') {
+                    // We have duplicate spaces - suppress the last one
                     shouldSuppressDelimiter = true
                   } else {
-                    // Single delimiter at end - keep it, don't suppress
+                    // Single space at end - keep it, don't suppress
                     shouldSuppressDelimiter = false
                   }
                 }
@@ -118,6 +232,17 @@ export function KeyValuePlugin(): null {
               textToTransform = text.slice(0, -1)
               // Update the node text to remove the delimiter
               node.setTextContent(textToTransform)
+              // Adjust cursor position if it was at the end (now out of bounds)
+              const selection = $getSelection()
+              if ($isRangeSelection(selection) && selection.isCollapsed()) {
+                const anchorNode = selection.anchor.getNode()
+                if (anchorNode === node) {
+                  const newOffset = Math.min(selection.anchor.offset, textToTransform.length)
+                  if (newOffset !== selection.anchor.offset) {
+                    node.select(newOffset, newOffset)
+                  }
+                }
+              }
               // Reparse with the updated text
               parsed = parseKeyValueSyntax(textToTransform)
             }
@@ -327,11 +452,14 @@ function transformTextToPills(
     })
     nodesToInsert.push(pillNode)
 
-    // Track cursor position - if cursor is in the pill text, move it to after the pill
+    // Track cursor position - if cursor is in or at the end of the pill text, move it to after the pill
+    // CRITICAL: Must use <= (not <) to catch cursor at exact end boundary
+    // This prevents cursor from being swallowed by the pill
+    // See: apps/web/src/components/notes/plugins/__tests__/KeyValuePlugin.cursor.test.ts
     if (
       isInThisNode &&
       cursorOffset >= match.index &&
-      cursorOffset < match.index + match.original.length
+      cursorOffset <= match.index + match.original.length
     ) {
       targetNode = pillNode
       targetOffset = 0 // Will be set to after pill
@@ -365,14 +493,29 @@ function transformTextToPills(
       const maxOffset = Math.min(targetOffset, targetNode.getTextContent().length)
       targetNode.select(maxOffset, maxOffset)
     } else {
-      // Cursor was in pill - position after it
+      // Cursor was in or at end of pill - position after it
       const nextSibling = targetNode.getNextSibling()
       if (nextSibling && $isTextNode(nextSibling)) {
+        // Position cursor at start of next text node (after the pill)
         nextSibling.select(0, 0)
       } else {
-        // Create empty text node after pill
+        // Create empty text node after pill for cursor
         const emptyTextNode = new TextNode('')
         targetNode.insertAfter(emptyTextNode)
+        emptyTextNode.select(0, 0)
+      }
+    }
+  } else if (isInThisNode) {
+    // Cursor position wasn't tracked - try to position at end of last node
+    const lastNode = nodesToInsert[nodesToInsert.length - 1]
+    if (lastNode) {
+      if ($isTextNode(lastNode)) {
+        const textLength = lastNode.getTextContent().length
+        lastNode.select(textLength, textLength)
+      } else {
+        // Last node is a pill - create empty text node after it
+        const emptyTextNode = new TextNode('')
+        lastNode.insertAfter(emptyTextNode)
         emptyTextNode.select(0, 0)
       }
     }

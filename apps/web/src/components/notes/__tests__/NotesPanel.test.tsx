@@ -19,13 +19,10 @@ describe('NotesPanel', () => {
     queryClient = createTestQueryClient()
   })
 
-  const renderNotesPanel = (props?: {
-    mode?: 'intake' | 'policy'
-    onMessageSubmit?: (msg: string) => void
-  }) => {
+  const renderNotesPanel = (props?: { mode?: 'intake' | 'policy' }) => {
     return render(
       <QueryClientProvider client={queryClient}>
-        <NotesPanel mode={props?.mode || 'intake'} onMessageSubmit={props?.onMessageSubmit} />
+        <NotesPanel mode={props?.mode || 'intake'} />
       </QueryClientProvider>
     )
   }
@@ -98,7 +95,7 @@ describe('NotesPanel', () => {
   })
 
   it('component mounts without errors', () => {
-    const { container } = renderNotesPanel({ onMessageSubmit: () => {} })
+    const { container } = renderNotesPanel()
 
     // Verify all essential elements exist
     const editor = container.querySelector('[contenteditable="true"]')

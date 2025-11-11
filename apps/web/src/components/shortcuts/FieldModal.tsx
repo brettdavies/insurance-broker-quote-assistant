@@ -7,7 +7,7 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog'
 import { Input } from '@/components/ui/input'
-import { FIELD_METADATA } from '@/config/shortcuts'
+import { FIELD_METADATA, FIELD_TYPE } from '@/config/shortcuts'
 import type { FieldCommand } from '@/hooks/useSlashCommands'
 import { useEffect, useState } from 'react'
 
@@ -33,15 +33,18 @@ export function FieldModal({ open, onOpenChange, field, onSubmit, initialValue }
   const handleSubmit = () => {
     if (!field) return
 
-    // Validation based on field type
-    if (field === 'kids' || field === 'dependents' || field === 'vehicles') {
+    // Validation based on field type (derived from shortcuts.json)
+    const fieldType = FIELD_TYPE[field]
+    if (fieldType === 'numeric') {
       const num = Number.parseInt(value, 10)
-      if (Number.isNaN(num) || num < (field === 'vehicles' ? 1 : 0)) {
-        setError(`Please enter a valid number (min: ${field === 'vehicles' ? 1 : 0})`)
+      const minValue = field === 'vehicles' ? 1 : 0 // Special case: vehicles must be >= 1
+      if (Number.isNaN(num) || num < minValue) {
+        setError(`Please enter a valid number (min: ${minValue})`)
         return
       }
     }
 
+    // Name field requires non-empty value
     if (field === 'name' && !value.trim()) {
       setError('Please enter a name')
       return
@@ -54,41 +57,31 @@ export function FieldModal({ open, onOpenChange, field, onSubmit, initialValue }
   if (!field) return null
 
   const metadata = FIELD_METADATA[field]
+  if (!metadata) return null
+
   const shortcutPrefix = `${metadata.shortcut}:`
 
-  // Determine input type based on field
+  // Determine input type based on field (derived from shortcuts.json)
   const getInputType = (): 'text' | 'number' | 'email' | 'tel' => {
-    if (
-      field === 'kids' ||
-      field === 'dependents' ||
-      field === 'vehicles' ||
-      field === 'age' ||
-      field === 'household' ||
-      field === 'constructionYear' ||
-      field === 'squareFeet' ||
-      field === 'currentPremium'
-    ) {
+    if (FIELD_TYPE[field] === 'numeric') {
       return 'number'
     }
+    // Special cases for email and phone input types
     if (field === 'email') return 'email'
     if (field === 'phone') return 'tel'
     return 'text'
   }
 
+  // Get placeholder based on field type (derived from shortcuts.json)
   const getPlaceholder = (): string => {
-    switch (field) {
-      case 'kids':
-      case 'dependents':
-      case 'age':
-      case 'household':
-        return '0'
-      case 'vehicles':
-        return '1'
-      case 'name':
-        return 'John Doe'
-      default:
-        return ''
+    const fieldType = FIELD_TYPE[field]
+    if (fieldType === 'numeric') {
+      // Special case: vehicles must be >= 1
+      return field === 'vehicles' ? '1' : '0'
     }
+    // Special case: name field gets example placeholder
+    if (field === 'name') return 'John Doe'
+    return ''
   }
 
   return (

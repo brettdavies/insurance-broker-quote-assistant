@@ -11,6 +11,7 @@
  */
 
 import { FieldModal } from '@/components/shortcuts/FieldModal'
+import { COMMAND_TO_KEY, NUMERIC_FIELDS } from '@/config/shortcuts'
 import { type ActionCommand, type FieldCommand, useSlashCommands } from '@/hooks/useSlashCommands'
 import { LexicalComposer } from '@lexical/react/LexicalComposer'
 import { useLexicalComposerContext } from '@lexical/react/LexicalComposerContext'
@@ -19,15 +20,15 @@ import { LexicalErrorBoundary } from '@lexical/react/LexicalErrorBoundary'
 import { HistoryPlugin } from '@lexical/react/LexicalHistoryPlugin'
 import { OnChangePlugin } from '@lexical/react/LexicalOnChangePlugin'
 import { PlainTextPlugin } from '@lexical/react/LexicalPlainTextPlugin'
-import { $getRoot, $insertNodes, type EditorState, type LexicalEditor, TextNode } from 'lexical'
+import { $getNodeByKey, $getRoot, $insertNodes, type EditorState, TextNode } from 'lexical'
 import { useCallback, useEffect, useState } from 'react'
-import { PillNode } from './nodes/PillNode'
+import { $isPillNode, PillNode } from './nodes/PillNode'
 import { KeyValuePlugin } from './plugins/KeyValuePlugin'
 import { PillInteractionPlugin } from './plugins/PillInteractionPlugin'
 
 interface NotesPanelProps {
   mode?: 'intake' | 'policy'
-  onMessageSubmit?: (message: string) => void
+  onFieldExtracted?: (fields: Record<string, string | number>) => void
   onContentChange?: (content: string) => void
   onActionCommand?: (command: ActionCommand) => void
   onCommandError?: (command: string) => void
@@ -110,33 +111,59 @@ function AutoFocusPlugin({ autoFocus }: { autoFocus?: boolean }): null {
 
   return null
 }
-function SubmitPlugin({
-  onSubmit,
+
+// Plugin to extract fields when valid pills are created
+function PillFieldExtractionPlugin({
+  onFieldExtracted,
 }: {
-  onSubmit: (text: string, editor: LexicalEditor) => void
+  onFieldExtracted?: (fields: Record<string, string | number>) => void
 }): null {
   const [editor] = useLexicalComposerContext()
 
   useEffect(() => {
-    const handleKeyDown = (event: KeyboardEvent) => {
-      // Handle Ctrl/Cmd+Enter for submit
-      if ((event.ctrlKey || event.metaKey) && event.key === 'Enter') {
-        event.preventDefault()
-        editor.getEditorState().read(() => {
-          const text = $getRoot().getTextContent()
-          onSubmit(text, editor)
-        })
-      }
-    }
+    if (!onFieldExtracted) return
 
-    const rootElement = editor.getRootElement()
-    if (rootElement) {
-      rootElement.addEventListener('keydown', handleKeyDown)
-      return () => {
-        rootElement.removeEventListener('keydown', handleKeyDown)
-      }
+    // Listen for pill node mutations (creation)
+    const removeMutationListener = editor.registerMutationListener(PillNode, (mutatedNodes) => {
+      editor.getEditorState().read(() => {
+        const extractedFields: Record<string, string | number> = {}
+
+        for (const [nodeKey, mutation] of mutatedNodes) {
+          if (mutation === 'created') {
+            const node = $getNodeByKey(nodeKey)
+            if ($isPillNode(node) && node.getValidation() === 'valid') {
+              const fieldName = node.getFieldName()
+              const value = node.getValue()
+
+              if (fieldName && value) {
+                // Convert to number if it's a numeric field
+                if (NUMERIC_FIELDS.has(fieldName)) {
+                  const numValue = Number.parseInt(value, 10)
+                  if (!Number.isNaN(numValue)) {
+                    extractedFields[fieldName] = numValue
+                  }
+                } else {
+                  extractedFields[fieldName] = value
+                }
+              }
+            }
+          }
+        }
+
+        // Extract fields and notify parent if any valid pills were created
+        if (Object.keys(extractedFields).length > 0) {
+          // Call outside of read() to avoid nested updates
+          setTimeout(() => {
+            onFieldExtracted(extractedFields)
+          }, 0)
+        }
+      })
+    })
+
+    return () => {
+      removeMutationListener()
     }
-  }, [editor, onSubmit])
+  }, [editor, onFieldExtracted])
 
   return null
 }
@@ -156,36 +183,8 @@ function FieldInjectionPlugin({
   useEffect(() => {
     if (!fieldCommand || !value) return
 
-    // Map field command to shortcut key
-    const fieldToKey: Record<FieldCommand, string> = {
-      name: 'n',
-      email: 'e',
-      phone: 'p',
-      state: 's',
-      zip: 'z',
-      productLine: 'l',
-      age: 'a',
-      household: 'h',
-      kids: 'k',
-      dependents: 'd',
-      vehicles: 'v',
-      garage: 'g',
-      vins: 'i',
-      drivers: 'r',
-      drivingRecords: 'c',
-      cleanRecord: 'u',
-      ownsHome: 'o',
-      propertyType: 't',
-      constructionYear: 'y',
-      roofType: 'f',
-      squareFeet: 'q',
-      existingPolicies: 'w',
-      currentPremium: 'm',
-      deductibles: 'b',
-      limits: 'x',
-    }
-
-    const key = fieldToKey[fieldCommand]
+    // Get shortcut key from shortcuts config (ensures no drift)
+    const key = COMMAND_TO_KEY[fieldCommand]
     const pill = `${key}:${value}`
 
     editor.update(() => {
@@ -202,7 +201,7 @@ function FieldInjectionPlugin({
 
 export function NotesPanel({
   mode = 'intake',
-  onMessageSubmit,
+  onFieldExtracted,
   onContentChange,
   onActionCommand,
   onCommandError,
@@ -246,31 +245,6 @@ export function NotesPanel({
       })
     },
     [onContentChange]
-  )
-
-  const handleSubmit = useCallback(
-    (text: string, editor: LexicalEditor) => {
-      if (text.trim() && onMessageSubmit) {
-        onMessageSubmit(text)
-        // Clear editor
-        editor.update(() => {
-          $getRoot().clear()
-        })
-        setContent('')
-      }
-    },
-    [onMessageSubmit]
-  )
-
-  const handleFormSubmit = useCallback(
-    (e: React.FormEvent) => {
-      e.preventDefault()
-      if (content.trim() && onMessageSubmit) {
-        onMessageSubmit(content)
-        setContent('')
-      }
-    },
-    [content, onMessageSubmit]
   )
 
   const handleFieldSubmit = useCallback((value: string) => {
@@ -324,7 +298,7 @@ export function NotesPanel({
               <AutoFocusPlugin autoFocus={autoFocus} />
               <KeyValuePlugin />
               <PillInteractionPlugin />
-              <SubmitPlugin onSubmit={handleSubmit} />
+              <PillFieldExtractionPlugin onFieldExtracted={onFieldExtracted} />
               <FieldInjectionPlugin
                 fieldCommand={currentField}
                 value={fieldValue}
@@ -332,18 +306,6 @@ export function NotesPanel({
               />
             </LexicalComposer>
           </div>
-        </div>
-
-        {/* Submit Button */}
-        <div className="border-t border-gray-300 p-4 dark:border-gray-700">
-          <form onSubmit={handleFormSubmit}>
-            <button
-              type="submit"
-              className="bg-primary-600 hover:bg-primary-700 rounded-md px-4 py-2 text-sm font-medium text-white shadow-sm transition-all duration-200 ease-out hover:scale-105 hover:shadow-md active:scale-95"
-            >
-              Send
-            </button>
-          </form>
         </div>
       </div>
 
