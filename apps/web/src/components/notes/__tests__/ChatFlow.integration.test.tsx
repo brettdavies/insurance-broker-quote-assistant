@@ -67,8 +67,16 @@ describe('ChatFlow Integration', () => {
 
   it('renders with intake mode by default', () => {
     const { container } = renderChatFlow()
-    const placeholder = container.querySelector('.pointer-events-none')
-    expect(placeholder?.textContent).toContain('Type notes...')
+    // UnifiedChatInterface renders both UploadPanel (left) and NotesPanel (center)
+    // We need to find the NotesPanel's placeholder specifically
+    // The NotesPanel is in the center section, UploadPanel is on the left
+    const placeholders = container.querySelectorAll('.pointer-events-none')
+    // Find the one that contains "Type notes..." (from NotesPanel in intake mode)
+    const notesPlaceholder = Array.from(placeholders).find((p) =>
+      p.textContent?.includes('Type notes...')
+    )
+    expect(notesPlaceholder).toBeTruthy()
+    expect(notesPlaceholder?.textContent).toContain('Type notes...')
   })
 
   it('component structure includes all required elements', () => {
