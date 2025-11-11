@@ -1,6 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://iquote-pro.dev/schemas/carrier.json",
+  "schemaVersion": "1.0.0",
   "title": "Insurance Carrier",
   "description": "Complete carrier data including eligibility, discounts, and pricing",
   "type": "object",
@@ -21,7 +22,7 @@
       "type": "object",
       "required": ["_id", "_sources", "name", "operatesIn", "products", "eligibility", "discounts"],
       "properties": {
-        "_id": { "type": "string", "pattern": "^carr_[a-z0-9]{10}$" },
+        "_id": { "type": "string", "pattern": "^carr_[a-z0-9]{24,25}$" },
         "_sources": { "$ref": "#/definitions/sources" },
         "name": { "type": "string" },
         "operatesIn": { "$ref": "#/definitions/fieldWithMetadata" },
@@ -124,7 +125,7 @@
       "type": "object",
       "required": ["_id", "name", "percentage", "products", "states", "requirements"],
       "properties": {
-        "_id": { "type": "string", "pattern": "^disc_[a-z0-9]{10}$" },
+        "_id": { "type": "string", "pattern": "^disc_[a-z0-9]{24,25}$" },
         "name": { "$ref": "#/definitions/fieldWithMetadata" },
         "percentage": { "$ref": "#/definitions/fieldWithMetadata" },
         "products": { "$ref": "#/definitions/fieldWithMetadata" },

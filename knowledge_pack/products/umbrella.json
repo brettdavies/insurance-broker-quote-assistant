@@ -1,0 +1,48 @@
+{
+  "$schema": "../schemas/product.json",
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedDate": "2025-11-10T20:04:54.218Z",
+    "product": "umbrella"
+  },
+  "product": {
+    "_id": "prod_umbrella_001",
+    "_sources": [
+      {
+        "uri": "https://www.insurance.com/umbrella-insurance/",
+        "accessedDate": "2025-11-10T20:04:54.218Z",
+        "confidence": "high",
+        "primary": true
+      }
+    ],
+    "code": "umbrella",
+    "name": "Umbrella Insurance",
+    "prefillGuidance": {
+      "_id": "fld_umbrella_prefill_guidance_001",
+      "value": "Umbrella insurance requires existing policy details. Verify underlying coverage limits.",
+      "_sources": [
+        {
+          "uri": "https://www.insurance.com/umbrella-insurance/",
+          "accessedDate": "2025-11-10T20:04:54.218Z",
+          "confidence": "high",
+          "primary": true
+        }
+      ]
+    },
+    "requiredFields": {
+      "_id": "fld_umbrella_required_fields_001",
+      "value": [
+        { "field": "existingPolicies", "priority": "critical" }
+      ],
+      "_sources": [
+        {
+          "uri": "https://www.insurance.com/umbrella-insurance/requirements/",
+          "accessedDate": "2025-11-10T20:04:54.218Z",
+          "confidence": "high",
+          "primary": true
+        }
+      ]
+    }
+  }
+}
+

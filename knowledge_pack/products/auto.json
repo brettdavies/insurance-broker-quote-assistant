@@ -1,0 +1,51 @@
+{
+  "$schema": "../schemas/product.json",
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedDate": "2025-11-10T20:04:54.218Z",
+    "product": "auto"
+  },
+  "product": {
+    "_id": "prod_auto_001",
+    "_sources": [
+      {
+        "uri": "https://www.insurance.com/auto-insurance/",
+        "accessedDate": "2025-11-10T20:04:54.218Z",
+        "confidence": "high",
+        "primary": true
+      }
+    ],
+    "code": "auto",
+    "name": "Auto Insurance",
+    "prefillGuidance": {
+      "_id": "fld_auto_prefill_guidance_001",
+      "value": "Auto insurance requires VIN verification and driving record review. Collect all vehicle information.",
+      "_sources": [
+        {
+          "uri": "https://www.insurance.com/auto-insurance/",
+          "accessedDate": "2025-11-10T20:04:54.218Z",
+          "confidence": "high",
+          "primary": true
+        }
+      ]
+    },
+    "requiredFields": {
+      "_id": "fld_auto_required_fields_001",
+      "value": [
+        { "field": "vehicles", "priority": "critical" },
+        { "field": "drivers", "priority": "critical" },
+        { "field": "vins", "priority": "important" },
+        { "field": "garage", "priority": "optional" }
+      ],
+      "_sources": [
+        {
+          "uri": "https://www.insurance.com/auto-insurance/requirements/",
+          "accessedDate": "2025-11-10T20:04:54.218Z",
+          "confidence": "high",
+          "primary": true
+        }
+      ]
+    }
+  }
+}
+

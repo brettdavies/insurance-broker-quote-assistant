@@ -1,6 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://iquote-pro.dev/schemas/state.json",
+  "schemaVersion": "1.0.0",
   "title": "State Insurance Requirements",
   "description": "State-specific insurance requirements, minimums, and special rules",
   "type": "object",
@@ -18,7 +19,7 @@
       "type": "object",
       "required": ["_id", "_sources", "code", "name", "minimumCoverages"],
       "properties": {
-        "_id": { "type": "string", "pattern": "^state_[a-z0-9]{10}$" },
+        "_id": { "type": "string", "pattern": "^state_[a-z0-9]{24,25}$" },
         "_sources": { "$ref": "#/definitions/sources" },
         "code": { "type": "string", "pattern": "^[A-Z]{2}$" },
         "name": { "type": "string" },

@@ -1,4 +1,5 @@
 {
+  "$schema": "../schemas/state.json",
   "meta": {
     "schemaVersion": "1.0",
     "generatedDate": "2025-11-10T20:04:54.218Z",
@@ -111,6 +112,18 @@
       "_sources": [
         {
           "uri": "https://www.insurance.ny.gov/requirements/",
+          "accessedDate": "2025-11-10T20:04:54.218Z",
+          "confidence": "high",
+          "primary": true
+        }
+      ]
+    },
+    "prefillGuidance": {
+      "_id": "fld_ny_prefill_guidance_001",
+      "value": "New York requires additional disclosures. Ensure all state-specific forms are completed.",
+      "_sources": [
+        {
+          "uri": "https://www.insurance.ny.gov/",
           "accessedDate": "2025-11-10T20:04:54.218Z",
           "confidence": "high",
           "primary": true
