@@ -1,6 +1,6 @@
+import { mkdir, writeFile } from 'node:fs/promises'
+import { join } from 'node:path'
 import type { DecisionTrace } from '@repo/shared'
-import { writeFile, mkdir } from 'fs/promises'
-import { join } from 'path'
 
 /**
  * Decision Trace Logger
@@ -11,8 +11,7 @@ import { join } from 'path'
  * @see docs/architecture/4-data-models.md#48-decisiontrace
  */
 
-const COMPLIANCE_LOG_FILE =
-  process.env.COMPLIANCE_LOG_FILE || './logs/compliance.log'
+const COMPLIANCE_LOG_FILE = process.env.COMPLIANCE_LOG_FILE || './logs/compliance.log'
 
 /**
  * Creates a decision trace object with current timestamp
@@ -33,13 +32,23 @@ export function createDecisionTrace(
     completionTokens?: number
     totalTokens?: number
   }>,
+  routingDecision?: Record<string, unknown>
 ): DecisionTrace {
+  // Extract rulesConsulted from routing decision citations if present
+  const rulesConsulted = routingDecision?.rulesEvaluated
+    ? (routingDecision.rulesEvaluated as string[])
+    : routingDecision?.citations
+      ? (routingDecision.citations as Array<{ file: string }>).map((c) => c.file)
+      : undefined
+
   return {
     timestamp: new Date().toISOString(),
     flow,
     inputs,
     extraction,
+    routingDecision: routingDecision ? { ...routingDecision } : undefined,
     llmCalls,
+    rulesConsulted,
     complianceCheck: {
       passed: true, // Will be updated by compliance filter in future story
     },
@@ -61,7 +70,7 @@ export async function logDecisionTrace(trace: DecisionTrace): Promise<void> {
     }
 
     // Write trace as JSON line (one trace per line for easy parsing)
-    const logLine = JSON.stringify(trace) + '\n'
+    const logLine = `${JSON.stringify(trace)}\n`
     const logPath = process.env.COMPLIANCE_LOG_FILE || COMPLIANCE_LOG_FILE
 
     await writeFile(logPath, logLine, { flag: 'a' }) // Append mode
@@ -70,4 +79,3 @@ export async function logDecisionTrace(trace: DecisionTrace): Promise<void> {
     console.error('Failed to write decision trace to compliance log:', error)
   }
 }
-

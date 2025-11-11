@@ -42,6 +42,13 @@ export function FieldModal({ open, onOpenChange, field, onSubmit, initialValue }
         setError(`Please enter a valid number (min: ${minValue})`)
         return
       }
+      // Credit score validation (300-850 FICO range)
+      if (field === 'creditScore') {
+        if (num < 300 || num > 850) {
+          setError('Credit score must be between 300 and 850 (FICO range)')
+          return
+        }
+      }
     }
 
     // Name field requires non-empty value
@@ -77,7 +84,10 @@ export function FieldModal({ open, onOpenChange, field, onSubmit, initialValue }
     const fieldType = FIELD_TYPE[field]
     if (fieldType === 'numeric') {
       // Special case: vehicles must be >= 1
-      return field === 'vehicles' ? '1' : '0'
+      if (field === 'vehicles') return '1'
+      // Special case: credit score range hint
+      if (field === 'creditScore') return '650'
+      return '0'
     }
     // Special case: name field gets example placeholder
     if (field === 'name') return 'John Doe'

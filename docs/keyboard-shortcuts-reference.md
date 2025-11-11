@@ -11,8 +11,8 @@
 This document provides a comprehensive reference table of all keyboard shortcuts in IQuote Pro. For the design rationale and philosophy, see [keyboard-shortcuts-analysis.md](keyboard-shortcuts-analysis.md).
 
 **Quick Summary:**
-- **`/{letter}`** - Field shortcuts (27 fields, works globally from anywhere in app)
-  - Examples: `/k` (kids), `/v` (vehicles), `/n` (name)
+- **`/{letter}`** - Field shortcuts (28 fields, works globally from anywhere in app)
+  - Examples: `/k` (kids), `/v` (vehicles), `/n` (name), `/j` (credit score)
 - **`/{word}`** - App-level actions (6 actions, works globally from anywhere in app)
   - Examples: `/export`, `/copy`, `/reset`, `/policy`, `/intake`, `/help`
 - **One pattern, zero modifier keys** - Ultimate simplicity
@@ -53,6 +53,12 @@ All field shortcuts use the pattern `/{letter}` and work globally from anywhere 
 | `/k` | Kids (Children Count) | Opens children count modal (number input, min: 0) | Both modes |
 | `/d` | Dependents | Opens dependents count modal (number input, min: 0) | Both modes |
 
+### Eligibility Information
+
+| Shortcut | Field | Modal Action | Available In |
+|----------|-------|--------------|--------------|
+| `/j` or `/credit` | Credit Score | Opens credit score input modal (validates 300-850 FICO range) | Both modes |
+
 ### Vehicle Information (Auto Insurance)
 
 | Shortcut | Field | Modal Action | Available In |
@@ -63,6 +69,7 @@ All field shortcuts use the pattern `/{letter}` and work globally from anywhere 
 | `/r` | Drivers / Carrier | **Context-aware:** Opens driver ages modal in intake mode, current carrier modal in policy mode | Both modes |
 | `/c` | Driving Records | Opens driving records modal (structured form for violations, accidents) | Both modes |
 | `/u` | Clean Record (3yr) | Opens clean record confirmation modal (Yes/No toggle) | Both modes |
+| `/j` | Credit Score | Opens credit score input modal (validates 300-850 FICO range) | Both modes |
 
 ### Property Information (Home/Renters Insurance)
 
@@ -118,14 +125,16 @@ Slash commands work from **anywhere** in the application via document-level even
 1. User types `/` (without modifiers)
 2. App enters "command mode" for 2 seconds
 3. Visual indicator appears: `/...`
-4. Next letter press opens corresponding modal
-5. Timeout resets on inactivity
-6. Press `Escape` to cancel command mode
+4. User types command letters (e.g., `k` for kids, `credit` for credit score)
+5. User presses `Enter` or `Space` to submit command
+6. Modal opens for field commands, action executes for action commands
+7. Press `Escape` to cancel command mode at any time
 
 **Example Flow:**
 ```
 User types: / → [Command mode active, shows "/..."]
-User types: k → [Opens "Kids (Children Count)" modal]
+User types: k → [Buffer shows "/k"]
+User types: Enter or Space → [Opens "Kids (Children Count)" modal]
 User enters: 2 → [Modal closes, injects "k:2" pill into notes]
 ```
 
@@ -137,6 +146,13 @@ The system intelligently avoids false positives:
 - **URLs:** `http://example.com` does not trigger (letters before slash)
 - **Escape Sequence:** Type `//k` to insert literal `/k` without triggering modal
 - **Modal Inputs:** Slash commands disabled in modal text fields (except notes input)
+
+### Command Submission
+
+All slash commands require `Enter` or `Space` to submit:
+- Single-letter commands: `/k` + `Enter` or `Space` → Opens kids modal
+- Multi-letter commands: `/credit` + `Enter` or `Space` → Opens credit score modal
+- Action commands: `/export` + `Enter` or `Space` → Executes export action
 
 ### Modal Behavior
 
@@ -263,8 +279,8 @@ const FIELD_SHORTCUTS: Record<string, string> = {
   'n': 'name', 'e': 'email', 'p': 'phone', 's': 'state', 'z': 'zip',
   'l': 'productLine', 'a': 'age', 'h': 'household', 'k': 'kids',
   'd': 'dependents', 'v': 'vehicles', 'g': 'garage', 'i': 'vins',
-  'r': 'drivers', 'c': 'drivingRecords', 'u': 'cleanRecord',
-  'o': 'ownsHome', 't': 'propertyType', 'y': 'constructionYear',
+  'r': 'drivers', 'c': 'drivingRecords', 'u': 'cleanRecord3Yr',
+  'j': 'creditScore', 'o': 'ownsHome', 't': 'propertyType', 'y': 'constructionYear',
   'f': 'roofType', 'q': 'squareFeet', 'w': 'existingPolicies',
   'm': 'currentPremium', 'b': 'deductibles', 'x': 'limits'
 }
@@ -348,6 +364,7 @@ No. Slash commands are disabled when a modal is open to prevent interference wit
 
 | Version | Date | Changes |
 |---------|------|---------|
+| v3.1 | 2025-11-11 | Added credit score shortcut (`/j`) for eligibility evaluation. Updated cleanRecord command to cleanRecord3Yr to match UserProfile schema. Total field shortcuts: 28. |
 | v3.0 | 2025-11-09 | **FINAL SIMPLIFICATION - One prefix only:** Replaced ALL modifier-based shortcuts with slash commands. System now uses ONLY slash commands: `/{letter}` for fields (27: `/k`, `/v`, `/n`) and `/{word}` for actions (6: `/export`, `/copy`, `/reset`, `/policy`, `/intake`, `/help`). Zero modifier keys, maximum simplicity, one pattern to learn. |
 | v2.0 | 2025-11-09 | **Simplified to two prefixes:** Changed all `Alt+` actions and `Ctrl+X` mode switches to unified `Cmd+Shift+{letter}` prefix. System now has only 2 prefixes: `/{letter}` for fields (27) and `Cmd+Shift+{letter}` for app actions (6). Fixes `Ctrl+X` cut conflict. |
 | v1.0 | 2025-11-09 | Initial release with complete slash command system (27 field shortcuts, 3 action shortcuts, 3 mode shortcuts) |

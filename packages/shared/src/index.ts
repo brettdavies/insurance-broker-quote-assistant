@@ -25,11 +25,15 @@ export {
 // Export intake result schema and types
 export {
   intakeResultSchema,
+  routeDecisionSchema,
   routeDecisionStubSchema,
+  citationSchema,
   opportunityStubSchema,
   prefillPacketStubSchema,
   type IntakeResult,
+  type RouteDecision,
   type RouteDecisionStub,
+  type Citation,
   type OpportunityStub,
   type PrefillPacketStub,
 } from './schemas/intake-result'

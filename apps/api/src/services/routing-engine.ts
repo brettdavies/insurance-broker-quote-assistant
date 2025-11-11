@@ -1,0 +1,410 @@
+/**
+ * Routing Engine Service
+ *
+ * Deterministic rules engine that routes shoppers to eligible carriers
+ * based on state, product, and user profile using knowledge pack rules.
+ *
+ * 100% deterministic - no LLM calls, pure functions only.
+ *
+ * @see docs/stories/1.6.routing-rules-engine.md
+ */
+
+import type { UserProfile, Carrier, RouteDecision, Citation, ProductEligibility } from '@repo/shared'
+import { getAllCarriers as defaultGetAllCarriers } from './knowledge-pack-loader'
+import { getFieldValue } from '../utils/field-helpers'
+
+/**
+ * Eligibility evaluation result
+ */
+interface EligibilityResult {
+  eligible: boolean
+  missingFields: string[]
+  explanation: string
+}
+
+/**
+ * Carrier match with score and eligibility
+ */
+interface CarrierMatch {
+  carrier: Carrier
+  eligible: boolean
+  matchScore: number
+  missingFields: string[]
+  explanation: string
+}
+
+/**
+ * Route to eligible carriers based on user profile
+ *
+ * @param profile - User profile with state, productLine, and optional eligibility fields
+ * @param getAllCarriersFn - Optional function to get all carriers (for testing)
+ * @returns RouteDecision with primary carrier, eligible carriers, scores, and rationale
+ */
+export function routeToCarrier(
+  profile: UserProfile,
+  getAllCarriersFn: () => Carrier[] = defaultGetAllCarriers
+): RouteDecision {
+  // Handle edge cases: missing state or productLine
+  if (!profile.state || !profile.productLine) {
+    return createNoEligibleCarriersDecision(
+      !profile.state ? 'State is required for routing' : 'Product line is required for routing'
+    )
+  }
+
+  // Get all carriers from knowledge pack
+  const allCarriers = getAllCarriersFn()
+
+  // Filter carriers by state and product availability
+  const stateProductFiltered = allCarriers.filter((carrier) => {
+    const operatesIn = getFieldValue(carrier.operatesIn, [])
+    const products = getFieldValue(carrier.products, [])
+
+    return (
+      operatesIn.includes(profile.state!) &&
+      products.includes(profile.productLine!)
+    )
+  })
+
+  // If no carriers match state/product, return early
+  if (stateProductFiltered.length === 0) {
+    return createNoEligibleCarriersDecision(
+      `No carriers available for ${profile.productLine} insurance in ${profile.state}`
+    )
+  }
+
+  // Evaluate eligibility for each carrier
+  const carrierMatches: CarrierMatch[] = stateProductFiltered.map((carrier) => {
+    const eligibilityResult = evaluateEligibility(carrier, profile)
+    const matchScore = calculateMatchScore(carrier, eligibilityResult, profile)
+
+    return {
+      carrier,
+      eligible: eligibilityResult.eligible,
+      matchScore,
+      missingFields: eligibilityResult.missingFields,
+      explanation: eligibilityResult.explanation,
+    }
+  })
+
+  // Filter to only eligible carriers
+  const eligibleMatches = carrierMatches.filter((match) => match.eligible)
+
+  // If no carriers pass eligibility, return explanation
+  if (eligibleMatches.length === 0) {
+    const reasons = carrierMatches
+      .map((m) => `${m.carrier.name}: ${m.explanation}`)
+      .join('; ')
+    return createNoEligibleCarriersDecision(
+      `No carriers meet eligibility requirements: ${reasons}`
+    )
+  }
+
+  // Rank carriers by match score
+  const rankedCarriers = rankCarriers(eligibleMatches)
+
+  // Select primary carrier (highest score)
+  const primaryCarrier = rankedCarriers[0]!
+
+  // Calculate overall confidence
+  const confidence = calculateConfidence(rankedCarriers, profile)
+
+  // Generate rationale
+  const rationale = generateRationale(rankedCarriers, profile, carrierMatches)
+
+  // Extract citations for eligible carriers
+  const citations = extractCitations(rankedCarriers)
+
+  return {
+    primaryCarrier: primaryCarrier.carrier.name,
+    eligibleCarriers: rankedCarriers.map((m) => m.carrier.name),
+    matchScores: Object.fromEntries(
+      rankedCarriers.map((m) => [m.carrier.name, m.matchScore])
+    ),
+    confidence,
+    rationale,
+    citations,
+  }
+}
+
+/**
+ * Evaluate eligibility for a carrier based on product-specific rules
+ *
+ * @param carrier - Carrier to evaluate
+ * @param profile - User profile with eligibility fields
+ * @returns EligibilityResult with eligible flag, missing fields, and explanation
+ */
+function evaluateEligibility(
+  carrier: Carrier,
+  profile: UserProfile
+): EligibilityResult {
+  const productLine = profile.productLine!
+  const eligibility = carrier.eligibility[productLine]
+
+  // If no eligibility rules defined for this product, carrier is eligible
+  if (!eligibility) {
+    return {
+      eligible: true,
+      missingFields: [],
+      explanation: 'No eligibility restrictions defined',
+    }
+  }
+
+  const missingFields: string[] = []
+  const reasons: string[] = []
+
+  // Check age eligibility
+  if (eligibility.minAge) {
+    const minAge = eligibility.minAge.value
+    if (profile.age === undefined) {
+      missingFields.push('age')
+      reasons.push(`Age required (minimum ${minAge})`)
+    } else if (profile.age < minAge) {
+      reasons.push(`Age ${profile.age} below minimum ${minAge}`)
+    }
+  }
+
+  if (eligibility.maxAge) {
+    const maxAge = eligibility.maxAge.value
+    if (profile.age === undefined) {
+      if (!missingFields.includes('age')) {
+        missingFields.push('age')
+      }
+      reasons.push(`Age required (maximum ${maxAge})`)
+    } else if (profile.age > maxAge) {
+      reasons.push(`Age ${profile.age} above maximum ${maxAge}`)
+    }
+  }
+
+  // Check vehicle limits (auto only)
+  if (productLine === 'auto' && eligibility.maxVehicles) {
+    const maxVehicles = eligibility.maxVehicles.value
+    if (profile.vehicles === undefined) {
+      missingFields.push('vehicles')
+      reasons.push(`Vehicle count required (maximum ${maxVehicles})`)
+    } else if (profile.vehicles > maxVehicles) {
+      reasons.push(`Vehicle count ${profile.vehicles} exceeds maximum ${maxVehicles}`)
+    }
+  }
+
+  // Check credit score minimum
+  if (eligibility.minCreditScore) {
+    const minCreditScore = eligibility.minCreditScore.value
+    if (profile.creditScore === undefined) {
+      missingFields.push('creditScore')
+      reasons.push(`Credit score required (minimum ${minCreditScore})`)
+    } else if (profile.creditScore < minCreditScore) {
+      reasons.push(`Credit score ${profile.creditScore} below minimum ${minCreditScore}`)
+    }
+  }
+
+  // Check property type restrictions (home/renters only)
+  if (
+    (productLine === 'home' || productLine === 'renters') &&
+    eligibility.propertyTypeRestrictions
+  ) {
+    const allowedTypes = eligibility.propertyTypeRestrictions.value
+    if (profile.propertyType === undefined) {
+      missingFields.push('propertyType')
+      reasons.push(`Property type required (allowed: ${allowedTypes.join(', ')})`)
+    } else if (!allowedTypes.includes(profile.propertyType)) {
+      reasons.push(
+        `Property type '${profile.propertyType}' not allowed (allowed: ${allowedTypes.join(', ')})`
+      )
+    }
+  }
+
+  // Check driving record requirement (auto only)
+  if (productLine === 'auto' && eligibility.requiresCleanDrivingRecord) {
+    const requiresClean = eligibility.requiresCleanDrivingRecord.value
+    if (requiresClean) {
+      if (profile.cleanRecord3Yr === undefined) {
+        missingFields.push('cleanRecord3Yr')
+        reasons.push('Clean driving record (3 years) required')
+      } else if (!profile.cleanRecord3Yr) {
+        reasons.push('Clean driving record (3 years) required but not met')
+      }
+    }
+  }
+
+  // Check state-specific eligibility rules if present
+  if (eligibility.stateSpecific && profile.state) {
+    const stateRules = eligibility.stateSpecific[profile.state]
+    if (stateRules && typeof stateRules === 'object') {
+      // State-specific rules could have additional requirements
+      // For now, we'll just note that state-specific rules exist
+      // Future: implement state-specific rule evaluation
+    }
+  }
+
+  // Carrier is eligible if no reasons to exclude
+  const eligible = reasons.length === 0
+
+  return {
+    eligible,
+    missingFields,
+    explanation: reasons.length > 0 ? reasons.join('; ') : 'Eligible',
+  }
+}
+
+/**
+ * Calculate match score for a carrier
+ *
+ * @param carrier - Carrier to score
+ * @param eligibilityResult - Eligibility evaluation result
+ * @param profile - User profile
+ * @returns Match score (0-1, higher is better)
+ */
+function calculateMatchScore(
+  carrier: Carrier,
+  eligibilityResult: EligibilityResult,
+  profile: UserProfile
+): number {
+  // Base score: 1.0 if eligible, 0.0 if not
+  if (!eligibilityResult.eligible) {
+    return 0.0
+  }
+
+  let score = 1.0
+
+  // Deduct points for missing optional fields (lower data completeness)
+  const missingFieldPenalty = eligibilityResult.missingFields.length * 0.1
+  score -= missingFieldPenalty
+
+  // Bonus points for carriers with compensation data (broker preference)
+  if (carrier.compensation) {
+    score += 0.05
+  }
+
+  // Ensure score stays in valid range
+  return Math.max(0.0, Math.min(1.0, score))
+}
+
+/**
+ * Rank carriers by match score (descending)
+ *
+ * @param matches - Carrier matches to rank
+ * @returns Sorted array of carrier matches (highest score first)
+ */
+function rankCarriers(matches: CarrierMatch[]): CarrierMatch[] {
+  return [...matches].sort((a, b) => b.matchScore - a.matchScore)
+}
+
+/**
+ * Calculate overall confidence score
+ *
+ * @param rankedCarriers - Carriers ranked by match score
+ * @param profile - User profile
+ * @returns Confidence score (0-1)
+ */
+function calculateConfidence(
+  rankedCarriers: CarrierMatch[],
+  profile: UserProfile
+): number {
+  if (rankedCarriers.length === 0) {
+    return 0.0
+  }
+
+  // Calculate data completeness score
+  const requiredFields = ['state', 'productLine']
+  const optionalFields = ['age', 'vehicles']
+  const providedFields = requiredFields.length + optionalFields.filter(
+    (field) => profile[field as keyof UserProfile] !== undefined
+  ).length
+  const totalFields = requiredFields.length + optionalFields.length
+  const completenessScore = providedFields / totalFields
+
+  // Average of top 3 carriers' match scores, weighted by data completeness
+  const top3Scores = rankedCarriers.slice(0, 3).map((m) => m.matchScore)
+  const avgMatchScore =
+    top3Scores.reduce((sum, score) => sum + score, 0) / top3Scores.length
+
+  // Weighted combination: 70% match score, 30% data completeness
+  return avgMatchScore * 0.7 + completenessScore * 0.3
+}
+
+/**
+ * Generate human-readable rationale for routing decision
+ *
+ * @param rankedCarriers - Carriers ranked by match score
+ * @param profile - User profile
+ * @param allMatches - All carrier matches (including ineligible)
+ * @returns Rationale string
+ */
+function generateRationale(
+  rankedCarriers: CarrierMatch[],
+  profile: UserProfile,
+  allMatches: CarrierMatch[]
+): string {
+  if (rankedCarriers.length === 0) {
+    return 'No eligible carriers found'
+  }
+
+  const primary = rankedCarriers[0]!
+  const parts: string[] = []
+
+  // Explain primary carrier selection
+  parts.push(
+    `Selected ${primary.carrier.name} as primary carrier (match score: ${primary.matchScore.toFixed(2)})`
+  )
+
+  // List alternatives if any
+  if (rankedCarriers.length > 1) {
+    const alternatives = rankedCarriers
+      .slice(1)
+      .map((m) => `${m.carrier.name} (${m.matchScore.toFixed(2)})`)
+      .join(', ')
+    parts.push(`Alternatives: ${alternatives}`)
+  }
+
+  // Note missing data affecting confidence
+  const allMissingFields = new Set<string>()
+  rankedCarriers.forEach((m) => {
+    m.missingFields.forEach((field) => allMissingFields.add(field))
+  })
+
+  if (allMissingFields.size > 0) {
+    const missingList = Array.from(allMissingFields).join(', ')
+    parts.push(`Note: Missing fields (${missingList}) may affect accuracy`)
+  }
+
+  return parts.join('. ')
+}
+
+/**
+ * Extract citations from eligible carriers
+ *
+ * @param rankedCarriers - Carriers ranked by match score
+ * @returns Array of citation objects
+ */
+function extractCitations(rankedCarriers: CarrierMatch[]): Citation[] {
+  return rankedCarriers.map((match) => {
+    const carrier = match.carrier
+    const sourceFile =
+      carrier._sources[0]?.pageFile ||
+      `knowledge_pack/carriers/${carrier.name.toLowerCase().replace(/\s+/g, '-')}.json`
+
+    return {
+      id: carrier._id,
+      type: 'carrier',
+      carrier: carrier._id,
+      file: sourceFile,
+    }
+  })
+}
+
+/**
+ * Create RouteDecision for no eligible carriers scenario
+ *
+ * @param explanation - Explanation of why no carriers are eligible
+ * @returns RouteDecision with empty eligibleCarriers and confidence 0.0
+ */
+function createNoEligibleCarriersDecision(explanation: string): RouteDecision {
+  return {
+    primaryCarrier: '',
+    eligibleCarriers: [],
+    confidence: 0.0,
+    rationale: explanation,
+    citations: [],
+  }
+}
+

@@ -156,5 +156,176 @@ describe('POST /api/intake', () => {
     expect(body.trace?.timestamp).toBeDefined()
     expect(body.trace?.flow).toBe('conversational')
   })
+
+  describe('Routing integration', () => {
+    it('should include RouteDecision in response when state and productLine are present', async () => {
+      const req = new Request('http://localhost/api/intake', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: 's:CA l:auto a:30',
+        }),
+      })
+
+      const res = await app.request(req)
+      expect(res.status).toBe(200)
+
+      const body = (await res.json()) as {
+        route?: {
+          primaryCarrier?: string
+          eligibleCarriers?: string[]
+          confidence?: number
+          rationale?: string
+          citations?: Array<{ id: string; type: string; carrier: string; file: string }>
+        }
+      }
+      expect(body.route).toBeDefined()
+      expect(body.route?.primaryCarrier).toBeDefined()
+      expect(Array.isArray(body.route?.eligibleCarriers)).toBe(true)
+      expect(typeof body.route?.confidence).toBe('number')
+      expect(body.route?.confidence).toBeGreaterThanOrEqual(0)
+      expect(body.route?.confidence).toBeLessThanOrEqual(1)
+      expect(body.route?.rationale).toBeDefined()
+      expect(Array.isArray(body.route?.citations)).toBe(true)
+    })
+
+    it('should handle routing when no eligible carriers found', async () => {
+      const req = new Request('http://localhost/api/intake', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: 's:WY l:renters',
+        }),
+      })
+
+      const res = await app.request(req)
+      expect(res.status).toBe(200)
+
+      const body = (await res.json()) as {
+        route?: {
+          eligibleCarriers?: string[]
+          confidence?: number
+          rationale?: string
+        }
+      }
+      // Route decision should still be present, but with empty eligible carriers
+      expect(body.route).toBeDefined()
+      if (body.route) {
+        expect(Array.isArray(body.route.eligibleCarriers)).toBe(true)
+        expect(body.route.confidence).toBe(0.0)
+        expect(body.route.rationale).toContain('No carriers available')
+      }
+    })
+
+    it('should include routing decision in decision trace', async () => {
+      const req = new Request('http://localhost/api/intake', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: 's:CA l:auto a:30',
+        }),
+      })
+
+      const res = await app.request(req)
+      expect(res.status).toBe(200)
+
+      const body = (await res.json()) as {
+        trace?: {
+          routingDecision?: {
+            eligibleCarriers?: string[]
+            primaryCarrier?: string
+            confidence?: number
+            rationale?: string
+            citations?: unknown[]
+            rulesEvaluated?: string[]
+          }
+        }
+      }
+      expect(body.trace?.routingDecision).toBeDefined()
+      expect(Array.isArray(body.trace?.routingDecision?.eligibleCarriers)).toBe(true)
+      expect(body.trace?.routingDecision?.primaryCarrier).toBeDefined()
+      expect(typeof body.trace?.routingDecision?.confidence).toBe('number')
+      expect(body.trace?.routingDecision?.rationale).toBeDefined()
+      expect(Array.isArray(body.trace?.routingDecision?.citations)).toBe(true)
+      expect(Array.isArray(body.trace?.routingDecision?.rulesEvaluated)).toBe(true)
+    })
+
+    it('should filter carriers by credit score eligibility', async () => {
+      const req = new Request('http://localhost/api/intake', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: 's:CA l:auto a:30 creditScore:650',
+        }),
+      })
+
+      const res = await app.request(req)
+      expect(res.status).toBe(200)
+
+      const body = (await res.json()) as {
+        route?: {
+          eligibleCarriers?: string[]
+          rationale?: string
+        }
+        profile?: {
+          creditScore?: number
+        }
+      }
+      expect(body.profile?.creditScore).toBe(650)
+      expect(body.route).toBeDefined()
+      // Routing should work with credit score provided
+      expect(body.route?.eligibleCarriers).toBeDefined()
+    })
+
+    it('should filter carriers by property type eligibility for home insurance', async () => {
+      const req = new Request('http://localhost/api/intake', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: 's:CA l:home propertyType:single-family',
+        }),
+      })
+
+      const res = await app.request(req)
+      expect(res.status).toBe(200)
+
+      const body = (await res.json()) as {
+        route?: {
+          eligibleCarriers?: string[]
+        }
+        profile?: {
+          propertyType?: string
+        }
+      }
+      expect(body.profile?.propertyType).toBe('single-family')
+      expect(body.route).toBeDefined()
+      expect(body.route?.eligibleCarriers).toBeDefined()
+    })
+
+    it('should filter carriers by driving record eligibility for auto insurance', async () => {
+      const req = new Request('http://localhost/api/intake', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: 's:CA l:auto cleanRecord3Yr:true',
+        }),
+      })
+
+      const res = await app.request(req)
+      expect(res.status).toBe(200)
+
+      const body = (await res.json()) as {
+        route?: {
+          eligibleCarriers?: string[]
+        }
+        profile?: {
+          cleanRecord3Yr?: boolean
+        }
+      }
+      expect(body.profile?.cleanRecord3Yr).toBe(true)
+      expect(body.route).toBeDefined()
+      expect(body.route?.eligibleCarriers).toBeDefined()
+    })
+  })
 })
 

@@ -87,6 +87,16 @@ describe('Key-Value Parser', () => {
       expect(result[0]?.fieldName).toBe('kids')
       expect(result[1]?.fieldName).toBe('dependents')
     })
+
+    it('handles credit score field with j shortcut', () => {
+      const text = 'j:650'
+      const result = parseKeyValueSyntax(text)
+
+      expect(result).toHaveLength(1)
+      expect(result[0]?.fieldName).toBe('creditScore')
+      expect(result[0]?.value).toBe('650')
+      expect(result[0]?.validation).toBe('valid')
+    })
   })
 
   describe('extractFields', () => {
@@ -163,6 +173,12 @@ describe('Key-Value Parser', () => {
     it('handles case-insensitive lookups', () => {
       expect(getFieldName('K')).toBe('kids')
       expect(getFieldName('STATE')).toBe('state')
+    })
+
+    it('returns creditScore for j alias', () => {
+      expect(getFieldName('j')).toBe('creditScore')
+      expect(getFieldName('credit')).toBe('creditScore')
+      expect(getFieldName('score')).toBe('creditScore')
     })
   })
 })

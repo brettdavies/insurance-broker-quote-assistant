@@ -128,7 +128,7 @@ export function useSlashCommands(callbacks: SlashCommandCallbacks = {}) {
           e.preventDefault()
           const newBuffer = commandBuffer + e.key.toLowerCase()
 
-          // Don't auto-execute - just update buffer and wait for space/enter
+          // Update buffer and wait for space/enter to submit
           setCommandBuffer(newBuffer)
           setCommandIndicator(`/${newBuffer}`)
 

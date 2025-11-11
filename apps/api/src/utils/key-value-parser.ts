@@ -17,6 +17,8 @@ import type { UserProfile } from '@repo/shared'
  * - l/productLine → productLine
  * - o/ownsHome → ownsHome
  * - cleanRecord3Yr → cleanRecord3Yr
+ * - creditScore → creditScore
+ * - propertyType → propertyType
  */
 
 export interface KeyValueExtractionResult {
@@ -64,6 +66,16 @@ const FIELD_ALIASES: Record<string, string> = {
   clean: 'cleanRecord3Yr',
   cleanRecord: 'cleanRecord3Yr',
   cleanRecord3Yr: 'cleanRecord3Yr',
+  // Credit score (all lowercase for lookup)
+  credit: 'creditScore',
+  creditscore: 'creditScore',
+  score: 'creditScore',
+  // Property type (all lowercase for lookup)
+  property: 'propertyType',
+  propertytype: 'propertyType',
+  prop: 'propertyType',
+  // Clean record (all lowercase for lookup)
+  cleanrecord3yr: 'cleanRecord3Yr',
 }
 
 /**
@@ -75,6 +87,7 @@ const NUMERIC_FIELDS = new Set([
   'householdSize',
   'vehicles',
   'currentPremium',
+  'creditScore',
 ])
 
 /**
@@ -100,7 +113,8 @@ export function parseKeyValueSyntax(
 
   // Regex pattern: matches key:value (case-insensitive)
   // Stops at space, comma, period, or end of string
-  const kvPattern = /(\w+):(\w+|\d+)(?=\s|,|\.|$)/gi
+  // Value can contain hyphens for property types like "single-family"
+  const kvPattern = /(\w+):([\w-]+|\d+)(?=\s|,|\.|$)/gi
   let match: RegExpExecArray | null = kvPattern.exec(message)
 
   while (match !== null) {
@@ -135,6 +149,20 @@ export function parseKeyValueSyntax(
         const productValue = value.toLowerCase()
         if (PRODUCT_LINE_VALUES.includes(productValue as typeof PRODUCT_LINE_VALUES[number])) {
           profile.productLine = productValue as typeof PRODUCT_LINE_VALUES[number]
+        }
+      } else if (fieldName === 'propertyType') {
+        // Validate property type enum
+        const propertyTypes = [
+          'single-family',
+          'condo',
+          'townhouse',
+          'mobile-home',
+          'duplex',
+          'apartment',
+        ] as const
+        const propertyValue = value.toLowerCase().replace(/_/g, '-')
+        if (propertyTypes.includes(propertyValue as typeof propertyTypes[number])) {
+          profile.propertyType = propertyValue as typeof propertyTypes[number]
         }
       } else {
         // String fields

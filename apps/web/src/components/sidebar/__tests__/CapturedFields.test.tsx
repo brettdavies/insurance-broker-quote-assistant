@@ -48,7 +48,6 @@ describe('CapturedFields', () => {
 
   it('displays captured fields organized by category', () => {
     const profile: UserProfile = {
-      name: 'John Doe',
       state: 'CA',
       productLine: 'auto',
       kids: 2,
@@ -72,8 +71,8 @@ describe('CapturedFields', () => {
 
   it('displays field values correctly', () => {
     const profile: UserProfile = {
-      name: 'John Doe',
       state: 'CA',
+      productLine: 'auto',
       kids: 2,
     }
 
@@ -81,10 +80,10 @@ describe('CapturedFields', () => {
 
     const content = container.textContent || ''
     // Check for field values (may be in accordion content or JSON fallback)
-    const hasName = content.includes('John Doe') || content.includes('"name":"John Doe"')
     const hasState = content.includes('CA') || content.includes('"state":"CA"')
+    const hasProductLine = content.includes('auto') || content.includes('"productLine":"auto"')
     const hasKids = content.includes('2') || content.includes('"kids":2')
-    expect(hasName || hasState || hasKids).toBeTruthy()
+    expect(hasState || hasProductLine || hasKids).toBeTruthy()
   })
 
   it('handles numeric fields correctly', () => {

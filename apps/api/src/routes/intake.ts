@@ -1,8 +1,9 @@
+import type { IntakeResult, RouteDecision } from '@repo/shared'
 import { Hono } from 'hono'
 import { z } from 'zod'
-import type { IntakeResult } from '@repo/shared'
-import { ConversationalExtractor } from '../services/conversational-extractor'
+import type { ConversationalExtractor } from '../services/conversational-extractor'
 import type { LLMProvider } from '../services/llm-provider'
+import { routeToCarrier } from '../services/routing-engine'
 import { createDecisionTrace, logDecisionTrace } from '../utils/decision-trace'
 import { logError } from '../utils/logger'
 
@@ -53,12 +54,22 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
       const { message, conversationHistory } = validationResult.data
 
       // Extract fields using Conversational Extractor
-      const extractionResult = await extractor.extractFields(
-        message,
-        conversationHistory
-      )
+      const extractionResult = await extractor.extractFields(message, conversationHistory)
 
-      // Create decision trace
+      // Route to eligible carriers using Routing Engine
+      let routeDecision: RouteDecision | undefined
+      try {
+        routeDecision = routeToCarrier(extractionResult.profile)
+      } catch (error) {
+        // Handle routing errors gracefully
+        await logError('Routing engine error', error as Error, {
+          type: 'routing_error',
+        })
+        // Continue with undefined route decision
+        routeDecision = undefined
+      }
+
+      // Create decision trace with routing decision
       const trace = createDecisionTrace(
         'conversational',
         {
@@ -70,19 +81,31 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
           fields: extractionResult.profile,
           confidence: extractionResult.confidence,
           reasoning: extractionResult.reasoning,
-        }
+        },
+        undefined, // llmCalls
+        routeDecision
+          ? {
+              eligibleCarriers: routeDecision.eligibleCarriers,
+              primaryCarrier: routeDecision.primaryCarrier,
+              matchScores: routeDecision.matchScores,
+              confidence: routeDecision.confidence,
+              rationale: routeDecision.rationale,
+              citations: routeDecision.citations,
+              rulesEvaluated: routeDecision.citations.map((c) => c.file),
+            }
+          : undefined
       )
 
       // Log decision trace to compliance log
       await logDecisionTrace(trace)
 
-      // Build IntakeResult response (MVP version with stubs)
+      // Build IntakeResult response
       const result: IntakeResult = {
         profile: extractionResult.profile,
         missingFields: extractionResult.missingFields,
         extractionMethod: extractionResult.extractionMethod, // AC5: Include extraction method
         confidence: extractionResult.confidence, // AC5: Include confidence scores
-        route: undefined, // Stub for routing engine (future story)
+        route: routeDecision, // Routing decision from routing engine
         opportunities: [], // Stub for discount engine (future story)
         prefill: undefined, // Stub for prefill packet (future story)
         pitch: '', // Empty for MVP
@@ -104,4 +127,3 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
 
   return app
 }
-

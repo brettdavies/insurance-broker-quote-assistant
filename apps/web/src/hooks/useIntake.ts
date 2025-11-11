@@ -36,16 +36,14 @@ function fallbackParseFields(message: string): IntakeResult {
   const criticalFields = ['name', 'state', 'productLine']
   for (const field of criticalFields) {
     if (!capturedFields.has(field)) {
-      missingFields.push({
-        name: field,
-        priority: 'critical',
-      })
+      missingFields.push(field)
     }
   }
 
   return {
     profile: profile as IntakeResult['profile'],
     missingFields,
+    complianceValidated: true,
   }
 }
 

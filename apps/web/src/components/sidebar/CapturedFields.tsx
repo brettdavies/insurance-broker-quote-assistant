@@ -4,6 +4,8 @@
  * Displays captured fields organized by category (Identity, Location, Product, Details).
  * Each field shows name, value, confidence score (if LLM-extracted), and info icon.
  * All fields are clickable to open edit modal.
+ *
+ * Dynamically reads field definitions from shortcuts.json - no manual field mapping needed.
  */
 
 import {
@@ -13,6 +15,12 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion'
 import { Card, CardContent } from '@/components/ui/card'
+import {
+  COMMAND_TO_FIELD_NAME,
+  FIELD_METADATA,
+  type FieldCommand,
+} from '@/config/shortcuts'
+import shortcutsData from '@/config/shortcuts.json'
 import type { UserProfile } from '@repo/shared'
 import { Info } from 'lucide-react'
 
@@ -20,13 +28,28 @@ interface CapturedField {
   name: string
   value: string | number | boolean | undefined
   confidence?: number
-  category: 'identity' | 'location' | 'product' | 'details'
+  category: string
   fieldKey: string
 }
 
 interface CapturedFieldsProps {
   profile: UserProfile
   onFieldClick: (fieldKey: string, currentValue?: string | number | boolean) => void
+}
+
+/**
+ * Map shortcuts.json categories to display categories
+ * Maps from shortcuts.json category names to internal category keys
+ */
+const CATEGORY_MAP: Record<string, string> = {
+  'Identity & Contact': 'identity',
+  Location: 'location',
+  Product: 'product',
+  Household: 'details',
+  Vehicle: 'details',
+  Property: 'details',
+  Eligibility: 'details',
+  Coverage: 'details',
 }
 
 const CATEGORY_LABELS: Record<string, string> = {
@@ -37,7 +60,7 @@ const CATEGORY_LABELS: Record<string, string> = {
 }
 
 export function CapturedFields({ profile, onFieldClick }: CapturedFieldsProps) {
-  // Organize fields by category
+  // Organize fields by category - dynamically from shortcuts.json
   const fieldsByCategory: Record<string, CapturedField[]> = {
     identity: [],
     location: [],
@@ -45,97 +68,41 @@ export function CapturedFields({ profile, onFieldClick }: CapturedFieldsProps) {
     details: [],
   }
 
-  // Map profile fields to categories
-  if (profile.name) {
-    fieldsByCategory.identity?.push({
-      name: 'Name',
-      value: String(profile.name),
-      category: 'identity',
-      fieldKey: 'name',
-    })
-  }
-  if ((profile as { email?: string }).email) {
-    fieldsByCategory.identity?.push({
-      name: 'Email',
-      value: String((profile as { email: string }).email),
-      category: 'identity',
-      fieldKey: 'email',
-    })
-  }
-  if ((profile as { phone?: string }).phone) {
-    fieldsByCategory.identity?.push({
-      name: 'Phone',
-      value: String((profile as { phone: string }).phone),
-      category: 'identity',
-      fieldKey: 'phone',
-    })
-  }
+  // Iterate through all field shortcuts from shortcuts.json
+  const fieldShortcuts = shortcutsData.shortcuts.filter(
+    (s): s is typeof shortcutsData.shortcuts[0] & { type: 'field'; category: string; command: string } =>
+      s.type === 'field' && s.category !== undefined && s.command !== undefined
+  )
 
-  if (profile.state) {
-    fieldsByCategory.location?.push({
-      name: 'State',
-      value: String(profile.state),
-      category: 'location',
-      fieldKey: 'state',
-    })
-  }
-  if ((profile as { zip?: string }).zip) {
-    fieldsByCategory.location?.push({
-      name: 'Zip Code',
-      value: String((profile as { zip: string }).zip),
-      category: 'location',
-      fieldKey: 'zip',
-    })
-  }
+  for (const shortcut of fieldShortcuts) {
+    const command = shortcut.command as FieldCommand
+    const fieldName = COMMAND_TO_FIELD_NAME[command]
+    const metadata = FIELD_METADATA[command]
 
-  if (profile.productLine) {
-    fieldsByCategory.product?.push({
-      name: 'Product Line',
-      value: String(profile.productLine),
-      category: 'product',
-      fieldKey: 'productLine',
-    })
-  }
+    if (!fieldName || !metadata) continue
 
-  if (profile.age !== undefined) {
-    fieldsByCategory.details?.push({
-      name: 'Age',
-      value: profile.age,
-      category: 'details',
-      fieldKey: 'age',
-    })
-  }
-  if (profile.kids !== undefined) {
-    fieldsByCategory.details?.push({
-      name: 'Kids',
-      value: profile.kids,
-      category: 'details',
-      fieldKey: 'kids',
-    })
-  }
-  if (profile.householdSize !== undefined) {
-    fieldsByCategory.details?.push({
-      name: 'Household Size',
-      value: profile.householdSize,
-      category: 'details',
-      fieldKey: 'householdSize',
-    })
-  }
-  if (profile.vehicles !== undefined) {
-    fieldsByCategory.details?.push({
-      name: 'Vehicles',
-      value: profile.vehicles,
-      category: 'details',
-      fieldKey: 'vehicles',
-    })
-  }
-  if (profile.ownsHome !== undefined) {
-    fieldsByCategory.details?.push({
-      name: 'Owns Home',
-      value: profile.ownsHome ? 'Yes' : 'No',
-      category: 'details',
-      fieldKey: 'ownsHome',
-    })
+    // Map shortcuts.json category to display category
+    const displayCategory = CATEGORY_MAP[shortcut.category] || 'details'
+
+    // Check if field exists in profile
+    const profileValue = (profile as Record<string, unknown>)[fieldName]
+
+    // Handle different value types
+    if (profileValue !== undefined && profileValue !== null && profileValue !== '') {
+      let displayValue: string | number | boolean = profileValue as string | number | boolean
+
+      // Format boolean values
+      if (typeof profileValue === 'boolean') {
+        displayValue = profileValue ? 'Yes' : 'No'
+      }
+
+      fieldsByCategory[displayCategory]?.push({
+        name: metadata.label,
+        value: displayValue,
+        category: displayCategory,
+        fieldKey: fieldName,
+      })
+    }
   }
 
   const totalFields = Object.values(fieldsByCategory).reduce(

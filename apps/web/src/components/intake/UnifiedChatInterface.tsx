@@ -86,7 +86,14 @@ export function UnifiedChatInterface({
 
           // Reconcile with backend response
           setProfile((prev) => ({ ...prev, ...result.profile }))
-          setMissingFields(result.missingFields as MissingField[])
+          // Convert string array to MissingField objects
+          setMissingFields(
+            result.missingFields.map((fieldKey) => ({
+              name: fieldKey,
+              priority: 'critical' as const,
+              fieldKey,
+            }))
+          )
         } catch (error) {
           console.error('Failed to extract fields:', error)
           toast({

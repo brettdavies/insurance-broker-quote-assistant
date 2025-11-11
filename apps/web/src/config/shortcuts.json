@@ -141,11 +141,21 @@
     {
       "type": "field",
       "key": "u",
-      "command": "cleanRecord",
+      "command": "cleanRecord3Yr",
       "label": "Clean Record",
       "question": "Is there a clean record?",
       "category": "Vehicle",
       "fieldType": "string"
+    },
+    {
+      "type": "field",
+      "key": "j",
+      "command": "creditScore",
+      "label": "Credit Score",
+      "question": "What is the credit score?",
+      "category": "Eligibility",
+      "fieldType": "numeric",
+      "aliases": ["credit", "score"]
     },
     {
       "type": "field",

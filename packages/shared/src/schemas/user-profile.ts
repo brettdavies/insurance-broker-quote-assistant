@@ -39,7 +39,9 @@ export const userProfileSchema = z.object({
   ownsHome: z.boolean().optional(),
 
   // Optional eligibility fields
-  cleanRecord3Yr: z.boolean().optional(),
+  cleanRecord3Yr: z.boolean().optional(), // Clean driving record (3 years)
+  creditScore: z.number().int().min(300).max(850).optional(), // Credit score (FICO range)
+  propertyType: z.enum(['single-family', 'condo', 'townhouse', 'mobile-home', 'duplex', 'apartment']).optional(), // Property type for home/renters insurance
 
   // Optional current policy fields (for policy analysis flow)
   currentCarrier: z.string().optional(),

@@ -39,6 +39,9 @@ export interface ProductEligibility {
   minAge?: FieldWithMetadata<number>
   maxAge?: FieldWithMetadata<number>
   maxVehicles?: FieldWithMetadata<number>
+  minCreditScore?: FieldWithMetadata<number> // Minimum credit score required
+  propertyTypeRestrictions?: FieldWithMetadata<string[]> // Allowed property types (e.g., ['single-family', 'condo', 'townhouse'])
+  requiresCleanDrivingRecord?: FieldWithMetadata<boolean> // Whether clean driving record is required
   stateSpecific?: Record<string, unknown>
 }
 

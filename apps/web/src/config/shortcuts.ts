@@ -315,9 +315,18 @@ export function isActionShortcut(buffer: string): buffer is ActionCommand {
 
 /**
  * Get field command from buffer
+ * Checks both direct shortcuts and aliases
  */
 export function getFieldCommand(buffer: string): FieldCommand | undefined {
-  return FIELD_SHORTCUTS[buffer]
+  // Check direct shortcuts first
+  if (buffer in FIELD_SHORTCUTS) {
+    return FIELD_SHORTCUTS[buffer]
+  }
+  // Check aliases
+  if (buffer in FIELD_ALIASES_MAP) {
+    return FIELD_ALIASES_MAP[buffer]
+  }
+  return undefined
 }
 
 /**
