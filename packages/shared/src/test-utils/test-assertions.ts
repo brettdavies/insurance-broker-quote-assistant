@@ -6,9 +6,9 @@
  */
 
 import { expect } from 'bun:test'
-import type { TestTarget } from './test-targets'
-import type { ExtractionResult } from './llm-test-factories'
 import type { UserProfile } from '../schemas/user-profile'
+import type { ExtractionResult } from './llm-test-factories'
+import type { TestTarget } from './test-targets'
 
 /**
  * Assert extraction result matches expected values

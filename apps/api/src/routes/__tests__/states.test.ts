@@ -88,7 +88,7 @@ describe('States Endpoints Integration', () => {
 
     it('should return 404 for non-existent state', async () => {
       const res = await client.get('/api/states/XX')
-      const body = await res.json() as { error: string }
+      const body = (await res.json()) as { error: string }
       expect(res.status).toBe(404)
       expect(body.error).toBe('State not found')
     })

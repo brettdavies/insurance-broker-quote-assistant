@@ -44,7 +44,11 @@ export function expectIntakeResult(body: unknown): asserts body is IntakeResult 
   expect(Array.isArray(result.missingFields)).toBe(true)
 
   // Optional fields (if present, validate structure)
-  if (result.extractionMethod !== undefined) {
+  if (
+    result.extractionMethod !== undefined &&
+    result.extractionMethod !== null &&
+    typeof result.extractionMethod === 'string'
+  ) {
     expect(['key-value', 'llm']).toContain(result.extractionMethod)
   }
 
@@ -102,11 +106,7 @@ export function expectErrorBody(body: unknown, expectedCode?: string): void {
 /**
  * Assert response has specific field in profile
  */
-export function expectProfileField(
-  body: unknown,
-  field: string,
-  expectedValue?: unknown
-): void {
+export function expectProfileField(body: unknown, field: string, expectedValue?: unknown): void {
   const result = body as { profile?: Record<string, unknown> }
   expect(result.profile).toBeDefined()
   expect(result.profile?.[field]).toBeDefined()

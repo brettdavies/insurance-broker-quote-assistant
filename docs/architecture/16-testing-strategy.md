@@ -49,7 +49,88 @@ Frontend Unit (40%)              Backend Unit (40%)
 - **Insurance compliance requires accuracy:** Routing/discount engines must be correct (tests catch regressions)
 - **Integration tests sufficient:** Catch 80% of bugs without E2E overhead
 
-## 16.4 Shared Test Utilities
+## 16.4 Test Execution Modes
+
+### Test Targets
+
+Tests can run against different targets using the centralized test target system:
+
+**Available Targets:**
+- `'mock'` - Fast, deterministic mock LLM provider (default)
+- `'real-api'` - Real Gemini API calls (no API key required for free tier)
+- `'contract'` - Contract testing (future)
+
+**How to Use:**
+
+```bash
+# Run with default (mock) - fast, no API calls
+bun test
+
+# Run with real API
+TEST_TARGETS=real-api bun test
+
+# Run multiple targets
+TEST_TARGETS=mock,real-api bun test
+```
+
+**In Test Code:**
+
+```typescript
+import { isTargetEnabled, getTestTargets } from '@repo/shared'
+
+// Check if a target is enabled
+if (isTargetEnabled('real-api')) {
+  // Run real API tests
+}
+
+// Get all enabled targets
+const targets = getTestTargets() // ['mock'] or ['mock', 'real-api']
+```
+
+### Environment Variables
+
+**Test Configuration (Centralized):**
+
+All test configuration goes through the test-targets utility (`packages/shared/src/test-utils/test-targets.ts`):
+
+- `TEST_TARGETS` - Comma-separated list of targets (e.g., `"mock,real-api"`)
+  - **Preferred:** Use this for all test target configuration
+  - **Default:** `['mock']` if not set
+
+**Contract Tests (Server Configuration):**
+
+Contract tests require a running server, so they use a separate env var:
+
+- `TEST_API_URL` - URL of running API server for contract tests
+  - **Default:** `http://localhost:7070`
+  - **Usage:** Only needed for contract tests (`intake.contract.test.ts`)
+  - **Note:** This is different from test targets - it's about where the server is running
+
+**Application Configuration (Not Test-Related):**
+
+These are application config, not test config (handled by `apps/api/src/config/env.ts`):
+
+- `GEMINI_API_KEY` - Optional API key for Gemini (free tier works without it)
+- `NODE_ENV` - Application environment (`test`, `development`, `production`)
+- `COMPLIANCE_LOG_FILE` - Path to compliance log file
+- `API_PORT` - Port for API server
+
+**Best Practice:**
+
+✅ **DO:** Use `isTargetEnabled('real-api')` in test code  
+✅ **DO:** Use `TEST_TARGETS=real-api` to enable real API tests  
+✅ **DO:** Access test config through `@repo/shared` test utilities  
+
+❌ **DON'T:** Use env vars for test configuration outside of test-targets utility  
+
+**Why This Pattern:**
+
+- **Centralized:** All test configuration in one place
+- **Type-safe:** TypeScript types for test targets
+- **Consistent:** Same pattern across all test files
+- **Maintainable:** Easy to add new test targets or change behavior
+
+## 16.5 Shared Test Utilities
 
 **Location:** `packages/shared/src/test-utils/`
 
@@ -57,12 +138,12 @@ Frontend Unit (40%)              Backend Unit (40%)
 
 ### Test Utilities Available
 
-**Import from:** `@repo/shared/test-utils`
+**Import from:** `@repo/shared`
 
 **Test Targets:**
 - `getTestTargets()` - Returns test targets from env or defaults (`'mock' | 'real-api' | 'contract'`)
 - `isTargetEnabled(target)` - Check if specific target is enabled
-- Supports `TEST_TARGETS` env var (comma-separated) or legacy `TEST_GEMINI_API=true`
+- Supports `TEST_TARGETS` env var (comma-separated)
 
 **LLM Test Factories:**
 - `createMockLLMProvider()` - Creates deterministic mock LLM provider with pattern matching
@@ -89,7 +170,7 @@ Frontend Unit (40%)              Backend Unit (40%)
 
 **Using Test Data Builders:**
 ```typescript
-import { buildUserProfile } from '@repo/shared/test-utils'
+import { buildUserProfile } from '@repo/shared'
 
 // Instead of manual object creation:
 const profile = buildUserProfile({
@@ -101,16 +182,25 @@ const profile = buildUserProfile({
 
 **Using LLM Test Factories:**
 ```typescript
-import { createMockLLMProvider } from '@repo/shared/test-utils'
+import { createMockLLMProvider } from '@repo/shared'
 
 const mockProvider = createMockLLMProvider()
 const extractor = new ConversationalExtractor(mockProvider)
 ```
 
+**Using Test Targets:**
+```typescript
+import { isTargetEnabled } from '@repo/shared'
+
+describe.skipIf(!isTargetEnabled('real-api'))('Real API Integration', () => {
+  // Real API tests
+})
+```
+
 **Using Parameterization:**
 ```typescript
 import { test } from 'bun:test'
-import { keyValueTestCases } from '@repo/shared/test-utils'
+import { keyValueTestCases } from '@repo/shared'
 
 test.each(keyValueTestCases)(
   'should parse $description',
@@ -121,7 +211,7 @@ test.each(keyValueTestCases)(
 )
 ```
 
-## 16.5 Backend Test Helpers
+## 16.6 Backend Test Helpers
 
 **Location:** `apps/api/src/__tests__/helpers/`
 
@@ -129,7 +219,7 @@ test.each(keyValueTestCases)(
 
 ### Test Helpers Available
 
-**Import from:** `apps/api/src/__tests__/helpers` (relative to test file)
+**Import from:** `apps/api/src/routes/helpers` (re-exported from `__tests__/helpers/`)
 
 **TestClient:**
 - `new TestClient(app, baseUrl?)` - Abstraction for API requests
@@ -183,7 +273,7 @@ const body = await client.postJson<IntakeResult>('/api/intake', {
 })
 ```
 
-## 16.6 Test Patterns and Best Practices
+## 16.7 Test Patterns and Best Practices
 
 ### DRY (Don't Repeat Yourself)
 
@@ -197,6 +287,7 @@ const body = await client.postJson<IntakeResult>('/api/intake', {
 - Use `buildUserProfile()` for all test data
 - Define test cases once in `@repo/shared/test-utils/test-cases.ts`
 - Use parameterization with `test.each()` for repetitive tests
+- Use `isTargetEnabled()` instead of direct env var access
 
 ### Parameterization
 
@@ -207,7 +298,7 @@ const body = await client.postJson<IntakeResult>('/api/intake', {
 **How to Use:**
 ```typescript
 import { test } from 'bun:test'
-import { keyValueTestCases } from '@repo/shared/test-utils'
+import { keyValueTestCases } from '@repo/shared'
 
 test.each(keyValueTestCases)(
   'should parse $description',
@@ -232,7 +323,7 @@ test.each(keyValueTestCases)(
 
 **How to Use:**
 ```typescript
-import { buildUserProfile } from '@repo/shared/test-utils'
+import { buildUserProfile } from '@repo/shared'
 
 // With defaults
 const profile = buildUserProfile()
@@ -260,16 +351,21 @@ const profile = buildUserProfile({
 
 **Test Targets:**
 - `'mock'` - Fast, deterministic (default)
-- `'real-api'` - Real API calls (requires API keys)
+- `'real-api'` - Real API calls (no API key required for Gemini free tier)
 - `'contract'` - Contract testing (future)
 
 **Usage:**
 ```typescript
-import { getTestTargets, createLLMProviderForTarget } from '@repo/shared/test-utils'
+import { isTargetEnabled, createLLMProviderForTarget } from '@repo/shared'
 import { GeminiProvider } from '../gemini-provider'
 
-const targets = getTestTargets() // ['mock'] or from env
+// Check if target is enabled
+if (isTargetEnabled('real-api')) {
+  // Run real API tests
+}
 
+// Or use target-aware factory
+const targets = getTestTargets() // ['mock'] or from env
 test.each(targets)('extraction with %s provider', async (target) => {
   const provider = createLLMProviderForTarget(
     target,
@@ -281,8 +377,12 @@ test.each(targets)('extraction with %s provider', async (target) => {
 ```
 
 **Environment Variables:**
-- `TEST_TARGETS=mock,real-api` - Run tests against multiple targets
-- `TEST_GEMINI_API=true` - Legacy support (adds 'real-api' to targets)
+- `TEST_TARGETS=mock,real-api` - Run tests against multiple targets (preferred)
+
+**Best Practice:**
+- ✅ Use `isTargetEnabled('real-api')`
+- ✅ Use `TEST_TARGETS=real-api`
+- ✅ Access test configuration through `@repo/shared` utilities
 
 ### Response Assertions
 
@@ -300,7 +400,7 @@ expectIntakeResult(body) // Type-safe, comprehensive validation
 - Consistent error messages
 - Handles differences between mock (exact) and real API (flexible) expectations
 
-## 16.7 Test File Organization
+## 16.8 Test File Organization
 
 **Structure:**
 ```
@@ -311,6 +411,7 @@ apps/api/src/
   routes/
     __tests__/
       route-name.test.ts
+      route-name.contract.test.ts  # Contract tests
   utils/
     __tests__/
       utility-name.test.ts
@@ -336,10 +437,51 @@ packages/shared/src/
 
 **Naming Conventions:**
 - Test files: `*.test.ts` (e.g., `intake.test.ts`)
+- Contract tests: `*.contract.test.ts` (e.g., `intake.contract.test.ts`)
 - Helper files: `test-*.ts` or descriptive names (e.g., `test-client.ts`)
 - Fixture files: `*-fixtures.ts` or descriptive names (e.g., `knowledge-pack.ts`)
 
-## 16.8 Code Quality Metrics
+## 16.9 Running Tests
+
+### Unit Tests (Default)
+```bash
+# Run all tests (uses mock by default)
+bun test
+
+# Run specific test file
+bun test apps/api/src/services/__tests__/routing-engine.test.ts
+```
+
+### Real API Tests
+```bash
+# Run with real Gemini API (no API key required)
+TEST_TARGETS=real-api bun test
+
+# Run specific test file with real API
+TEST_TARGETS=real-api bun test apps/api/src/services/__tests__/gemini-provider.test.ts
+```
+
+### Contract Tests
+```bash
+# Start server in one terminal
+cd apps/api && bun run dev
+
+# Run contract tests in another terminal
+TEST_API_URL=http://localhost:7070 bun test apps/api/src/routes/__tests__/intake.contract.test.ts
+```
+
+### All Tests
+```bash
+# Run all tests including real API and contract tests
+# Terminal 1: Start server
+cd apps/api && bun run dev
+
+# Terminal 2: Run all tests
+TEST_TARGETS=real-api bun test
+TEST_API_URL=http://localhost:7070 bun test apps/api/src/routes/__tests__/intake.contract.test.ts
+```
+
+## 16.10 Code Quality Metrics
 
 **Refactoring Results:**
 - ✅ **60%+ reduction** in code duplication
@@ -348,12 +490,15 @@ packages/shared/src/
 - ✅ **16+ duplicate test cases** eliminated via parameterization
 - ✅ **Consistent patterns** across all test files
 - ✅ **Type-safe** throughout
+- ✅ **Centralized test configuration** through test-targets utility
 
 **Success Criteria:**
-- All tests use shared utilities from `@repo/shared/test-utils`
+- All tests use shared utilities from `@repo/shared`
 - All route tests use `TestClient` instead of `new Request()`
 - All test data uses builders instead of manual object creation
 - Parameterization used for repetitive test cases
+- Test configuration accessed through `isTargetEnabled()` and `getTestTargets()`
+- No direct `process.env` access for test configuration (except `TEST_API_URL` for contract tests)
 - No linting errors
 - All tests pass
 

@@ -1,9 +1,15 @@
 import { beforeEach, describe, expect, it } from 'bun:test'
+import { createMockLLMProvider } from '@repo/shared'
 import { Hono } from 'hono'
 import { ConversationalExtractor } from '../../services/conversational-extractor'
+import {
+  TestClient,
+  expectErrorBody,
+  expectErrorResponse,
+  expectIntakeResult,
+  expectSuccessResponse,
+} from '../helpers'
 import { createIntakeRoute } from '../intake'
-import { createMockLLMProvider } from '@repo/shared/test-utils'
-import { TestClient, expectSuccessResponse, expectErrorResponse, expectIntakeResult, expectErrorBody } from '../helpers'
 
 describe('POST /api/intake', () => {
   let app: Hono
@@ -72,7 +78,15 @@ describe('POST /api/intake', () => {
 
   describe('Routing integration', () => {
     it('should include RouteDecision in response when state and productLine are present', async () => {
-      const body = await client.postJson<{ route?: { primaryCarrier?: string; eligibleCarriers?: string[]; confidence?: number; rationale?: string; citations?: Array<{ id: string; type: string; carrier: string; file: string }> } }>('/api/intake', {
+      const body = await client.postJson<{
+        route?: {
+          primaryCarrier?: string
+          eligibleCarriers?: string[]
+          confidence?: number
+          rationale?: string
+          citations?: Array<{ id: string; type: string; carrier: string; file: string }>
+        }
+      }>('/api/intake', {
         message: 's:CA l:auto a:30',
       })
       expectIntakeResult(body)
@@ -87,7 +101,9 @@ describe('POST /api/intake', () => {
     })
 
     it('should handle routing when no eligible carriers found', async () => {
-      const body = await client.postJson<{ route?: { eligibleCarriers?: string[]; confidence?: number; rationale?: string } }>('/api/intake', {
+      const body = await client.postJson<{
+        route?: { eligibleCarriers?: string[]; confidence?: number; rationale?: string }
+      }>('/api/intake', {
         message: 's:WY l:renters',
       })
       expectIntakeResult(body)
@@ -110,12 +126,12 @@ describe('POST /api/intake', () => {
             rationale?: string
             citations?: unknown[]
             rulesEvaluated?: string[]
-          }>('/api/intake', {
-          message: 's:CA l:auto a:30',
-        })
-      expectIntakeResult(body)
+          }
         }
-      }
+      }>('/api/intake', {
+        message: 's:CA l:auto a:30',
+      })
+      expectIntakeResult(body)
       expect(body.trace?.routingDecision).toBeDefined()
       expect(Array.isArray(body.trace?.routingDecision?.eligibleCarriers)).toBe(true)
       expect(body.trace?.routingDecision?.primaryCarrier).toBeDefined()
@@ -130,14 +146,14 @@ describe('POST /api/intake', () => {
         route?: {
           eligibleCarriers?: string[]
           rationale?: string
-        }>('/api/intake', {
-          message: 's:CA l:auto a:30 creditScore:650',
-        })
-      expectIntakeResult(body)
+        }
         profile?: {
           creditScore?: number
         }
-      }
+      }>('/api/intake', {
+        message: 's:CA l:auto a:30 creditScore:650',
+      })
+      expectIntakeResult(body)
       expect(body.profile?.creditScore).toBe(650)
       expect(body.route).toBeDefined()
       // Routing should work with credit score provided
@@ -148,14 +164,14 @@ describe('POST /api/intake', () => {
       const body = await client.postJson<{
         route?: {
           eligibleCarriers?: string[]
-        }>('/api/intake', {
-          message: 's:CA l:home propertyType:single-family',
-        })
-      expectIntakeResult(body)
+        }
         profile?: {
           propertyType?: string
         }
-      }
+      }>('/api/intake', {
+        message: 's:CA l:home propertyType:single-family',
+      })
+      expectIntakeResult(body)
       expect(body.profile?.propertyType).toBe('single-family')
       expect(body.route).toBeDefined()
       expect(body.route?.eligibleCarriers).toBeDefined()
@@ -165,14 +181,14 @@ describe('POST /api/intake', () => {
       const body = await client.postJson<{
         route?: {
           eligibleCarriers?: string[]
-        }>('/api/intake', {
-          message: 's:CA l:auto cleanRecord3Yr:true',
-        })
-      expectIntakeResult(body)
+        }
         profile?: {
           cleanRecord3Yr?: boolean
         }
-      }
+      }>('/api/intake', {
+        message: 's:CA l:auto cleanRecord3Yr:true',
+      })
+      expectIntakeResult(body)
       expect(body.profile?.cleanRecord3Yr).toBe(true)
       expect(body.route).toBeDefined()
       expect(body.route?.eligibleCarriers).toBeDefined()
@@ -185,8 +201,8 @@ describe('POST /api/intake', () => {
         complianceValidated?: boolean
         disclaimers?: string[]
       }>('/api/intake', {
-          message: 's:CA l:auto',
-        })
+        message: 's:CA l:auto',
+      })
       expectIntakeResult(body)
       expect(body.complianceValidated).toBeDefined()
       expect(typeof body.complianceValidated).toBe('boolean')
@@ -197,11 +213,11 @@ describe('POST /api/intake', () => {
     it('should include disclaimers in IntakeResult response', async () => {
       const body = await client.postJson<{
         disclaimers?: string[]
-        profile?: { state?: string; productLine?: string }>('/api/intake', {
-          message: 's:CA l:auto',
-        })
+        profile?: { state?: string; productLine?: string }
+      }>('/api/intake', {
+        message: 's:CA l:auto',
+      })
       expectIntakeResult(body)
-      }
       expect(body.disclaimers).toBeDefined()
       expect(Array.isArray(body.disclaimers)).toBe(true)
       expect(body.disclaimers?.length).toBeGreaterThan(0)
@@ -213,8 +229,8 @@ describe('POST /api/intake', () => {
       const body = await client.postJson<{
         disclaimers?: string[]
       }>('/api/intake', {
-          message: 's:CA',
-        })
+        message: 's:CA',
+      })
       expectIntakeResult(body)
       expect(body.disclaimers).toBeDefined()
       expect(body.disclaimers?.some((d) => d.includes('California'))).toBe(true)
@@ -224,8 +240,8 @@ describe('POST /api/intake', () => {
       const body = await client.postJson<{
         disclaimers?: string[]
       }>('/api/intake', {
-          message: 'l:auto',
-        })
+        message: 'l:auto',
+      })
       expectIntakeResult(body)
       expect(body.disclaimers).toBeDefined()
       expect(body.disclaimers?.some((d) => d.includes('Auto Insurance'))).toBe(true)
@@ -235,8 +251,8 @@ describe('POST /api/intake', () => {
       const body = await client.postJson<{
         disclaimers?: string[]
       }>('/api/intake', {
-          message: 's:CA l:auto',
-        })
+        message: 's:CA l:auto',
+      })
       expectIntakeResult(body)
       expect(body.disclaimers).toBeDefined()
       expect(body.disclaimers?.some((d) => d.includes('California'))).toBe(true)
@@ -252,12 +268,12 @@ describe('POST /api/intake', () => {
             disclaimersAdded?: number
             state?: string
             productLine?: string
-          }>('/api/intake', {
-          message: 's:CA l:auto',
-        })
-      expectIntakeResult(body)
+          }
         }
-      }
+      }>('/api/intake', {
+        message: 's:CA l:auto',
+      })
+      expectIntakeResult(body)
       expect(body.trace?.complianceCheck).toBeDefined()
       expect(body.trace?.complianceCheck?.passed).toBeDefined()
       expect(typeof body.trace?.complianceCheck?.passed).toBe('boolean')
@@ -272,8 +288,8 @@ describe('POST /api/intake', () => {
         pitch?: string
         complianceValidated?: boolean
       }>('/api/intake', {
-          message: 's:CA l:auto',
-        })
+        message: 's:CA l:auto',
+      })
       expectIntakeResult(body)
       // Pitch should be present (currently empty string for MVP)
       expect(body.pitch).toBeDefined()
@@ -295,13 +311,13 @@ describe('POST /api/intake', () => {
             complianceCheck?: {
               passed?: boolean
               violations?: string[]
-            }>('/api/intake', {
-            message: 's:CA l:auto',
-            testPitch: 'We guarantee the lowest rate for your auto insurance!',
-          })
-      expectIntakeResult(body)
+            }
           }
-        }
+        }>('/api/intake', {
+          message: 's:CA l:auto',
+          testPitch: 'We guarantee the lowest rate for your auto insurance!',
+        })
+        expectIntakeResult(body)
 
         // Compliance check should have failed
         expect(body.complianceValidated).toBe(false)
@@ -339,14 +355,14 @@ describe('POST /api/intake', () => {
             complianceCheck?: {
               passed?: boolean
               violations?: string[]
-            }>('/api/intake', {
-            message: 's:TX l:home',
-            testPitch:
-              'We guarantee the best price guaranteed and you will save money with our binding quote!',
-          })
-      expectIntakeResult(body)
+            }
           }
-        }
+        }>('/api/intake', {
+          message: 's:TX l:home',
+          testPitch:
+            'We guarantee the best price guaranteed and you will save money with our binding quote!',
+        })
+        expectIntakeResult(body)
 
         // Compliance check should have failed
         expect(body.complianceValidated).toBe(false)
@@ -371,14 +387,14 @@ describe('POST /api/intake', () => {
             complianceCheck?: {
               passed?: boolean
               violations?: string[]
-            }>('/api/intake', {
-            message: 's:FL l:renters',
-            testPitch:
-              'Based on your profile, we have found several insurance options that may meet your needs. Rates are subject to underwriting and approval.',
-          })
-      expectIntakeResult(body)
+            }
           }
-        }
+        }>('/api/intake', {
+          message: 's:FL l:renters',
+          testPitch:
+            'Based on your profile, we have found several insurance options that may meet your needs. Rates are subject to underwriting and approval.',
+        })
+        expectIntakeResult(body)
 
         // Compliance check should have passed
         expect(body.complianceValidated).toBe(true)

@@ -1,22 +1,27 @@
 import { describe, expect, it, test } from 'bun:test'
-import { keyValueTestCases } from '@repo/shared/test-utils'
+import { keyValueTestCases } from '@repo/shared'
 import { hasKeyValueSyntax, parseKeyValueSyntax } from '../key-value-parser'
 
 describe('Key-Value Parser', () => {
   describe('parseKeyValueSyntax', () => {
     // Parameterized test using Bun's test.each()
-    test.each(keyValueTestCases)(
-      'should parse $description',
-      ({ input, expected }) => {
-        const result = parseKeyValueSyntax(input)
-        expect(result.extractionMethod).toBe('key-value')
-        expect(result.confidence).toBe(1.0)
-        
-        for (const [key, value] of Object.entries(expected)) {
-          expect(result.profile[key as keyof typeof result.profile]).toBe(value)
-        }
+    test.each(
+      keyValueTestCases as unknown as Array<{
+        input: string
+        expected: Record<string, unknown>
+        description: string
+      }>
+    )('should parse $description', ({ input, expected }) => {
+      const result = parseKeyValueSyntax(input)
+      expect(result.extractionMethod).toBe('key-value')
+      expect(result.confidence).toBe(1.0)
+
+      for (const [key, value] of Object.entries(expected)) {
+        expect(result.profile[key as keyof typeof result.profile]).toBe(
+          value as string | number | boolean | undefined
+        )
       }
-    )
+    })
 
     it('should parse simple key-value pairs', () => {
       const result = parseKeyValueSyntax('Client needs auto insurance, s:CA, a:35')

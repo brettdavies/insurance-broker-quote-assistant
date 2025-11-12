@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://iquote-pro.dev/schemas/product.json",
+  "schemaVersion": "1.0.0",
+  "title": "Insurance Product",
+  "description": "Product-specific data including prefill guidance and required fields",
+  "type": "object",
+  "required": ["meta", "product"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["schemaVersion", "generatedDate", "product"],
+      "properties": {
+        "schemaVersion": { "type": "string" },
+        "generatedDate": { "type": "string", "format": "date-time" },
+        "product": { "type": "string", "enum": ["auto", "home", "renters", "umbrella"] }
+      }
+    },
+    "product": {
+      "type": "object",
+      "required": ["_id", "_sources", "code", "name"],
+      "properties": {
+        "_id": { "type": "string", "pattern": "^prod_[a-z]+_[a-z0-9]+$" },
+        "_sources": { "$ref": "#/definitions/sources" },
+        "code": { "type": "string", "enum": ["auto", "home", "renters", "umbrella"] },
+        "name": { "type": "string" },
+        "prefillGuidance": { "$ref": "#/definitions/fieldWithMetadata" },
+        "requiredFields": { "$ref": "#/definitions/fieldWithMetadata" }
+      }
+    }
+  },
+  "definitions": {
+    "sources": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "type": "object",
+        "required": ["uri", "accessedDate", "confidence"],
+        "properties": {
+          "uri": { "type": "string", "format": "uri" },
+          "pageId": {
+            "type": "string",
+            "pattern": "^page_[a-z0-9]{10}$",
+            "description": "Optional in interface; Phase 2 MUST populate for raw data. Unique page ID (page_{cuid2})"
+          },
+          "pageFile": {
+            "type": "string",
+            "description": "Optional in interface; Phase 2 MUST populate for raw data. Path relative to knowledge_pack/raw/ (e.g., '_pages/page_ckm9x7w8k0.html')"
+          },
+          "elementRef": { "type": "string" },
+          "lineRef": { "type": "integer" },
+          "accessedDate": { "type": "string", "format": "date-time" },
+          "extractedValue": { "type": "string" },
+          "confidence": { "enum": ["high", "medium", "low"] },
+          "confidenceScore": { "type": "number", "minimum": 1.0, "maximum": 5.0 },
+          "primary": { "type": "boolean" }
+        }
+      }
+    },
+    "fieldWithMetadata": {
+      "type": "object",
+      "required": ["_id", "value"],
+      "properties": {
+        "_id": { "type": "string" },
+        "value": {},
+        "_sources": { "$ref": "#/definitions/sources" },
+        "_inheritedFrom": { "type": "string" },
+        "_resolution": { "$ref": "#/definitions/resolution" }
+      }
+    },
+    "resolution": {
+      "type": "object",
+      "required": [
+        "conflictId",
+        "selectedValue",
+        "method",
+        "rationale",
+        "resolvedBy",
+        "resolvedDate"
+      ],
+      "properties": {
+        "conflictId": { "type": "string" },
+        "selectedValue": {},
+        "method": { "type": "string" },
+        "rationale": { "type": "string" },
+        "resolvedBy": { "type": "string" },
+        "resolvedDate": { "type": "string", "format": "date-time" }
+      }
+    }
+  }
+}

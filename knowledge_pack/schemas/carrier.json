@@ -1,6 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://iquote-pro.dev/schemas/carrier.json",
+  "schemaVersion": "1.0.0",
   "title": "Insurance Carrier",
   "description": "Complete carrier data including eligibility, discounts, and pricing",
   "type": "object",
@@ -21,7 +22,7 @@
       "type": "object",
       "required": ["_id", "_sources", "name", "operatesIn", "products", "eligibility", "discounts"],
       "properties": {
-        "_id": { "type": "string", "pattern": "^carr_[a-z0-9]{10}$" },
+        "_id": { "type": "string", "pattern": "^carr_[a-z0-9]{24,25}$" },
         "_sources": { "$ref": "#/definitions/sources" },
         "name": { "type": "string" },
         "operatesIn": { "$ref": "#/definitions/fieldWithMetadata" },
@@ -124,14 +125,55 @@
       "type": "object",
       "required": ["_id", "name", "percentage", "products", "states", "requirements"],
       "properties": {
-        "_id": { "type": "string", "pattern": "^disc_[a-z0-9]{10}$" },
+        "_id": { "type": "string", "pattern": "^disc_[a-z0-9]{24,25}$" },
         "name": { "$ref": "#/definitions/fieldWithMetadata" },
         "percentage": { "$ref": "#/definitions/fieldWithMetadata" },
         "products": { "$ref": "#/definitions/fieldWithMetadata" },
         "states": { "$ref": "#/definitions/fieldWithMetadata" },
         "requirements": { "$ref": "#/definitions/fieldWithMetadata" },
         "stackable": { "$ref": "#/definitions/fieldWithMetadata" },
-        "description": { "$ref": "#/definitions/fieldWithMetadata" }
+        "description": { "$ref": "#/definitions/fieldWithMetadata" },
+        "stateVariations": {
+          "type": "object",
+          "description": "State-specific percentage variations (exceptions only). Use multiplier for proportional changes (e.g., 0.5 for half), or percentage for absolute overrides.",
+          "patternProperties": {
+            "^[A-Z]{2}$": {
+              "type": "object",
+              "properties": {
+                "percentage": { "type": "number", "minimum": 0, "maximum": 100 },
+                "multiplier": { "type": "number", "minimum": 0 }
+              }
+            }
+          }
+        },
+        "productVariations": {
+          "type": "object",
+          "description": "Product-specific percentage variations (exceptions only)",
+          "patternProperties": {
+            "^(auto|home|renters|umbrella)$": {
+              "type": "object",
+              "properties": {
+                "percentage": { "type": "number", "minimum": 0, "maximum": 100 }
+              }
+            }
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "description": "Optional metadata for engine hints and categorization",
+          "properties": {
+            "discountType": {
+              "type": "string",
+              "enum": ["bundle", "driver", "lifestyle", "loyalty", "other"]
+            },
+            "evaluationPriority": {
+              "type": "string",
+              "enum": ["high", "medium", "low"]
+            },
+            "requiresDocumentation": { "type": "boolean" },
+            "maxStackableDiscounts": { "type": "integer", "minimum": 1 }
+          }
+        }
       }
     },
     "compensation": {

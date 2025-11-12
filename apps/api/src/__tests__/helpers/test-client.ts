@@ -13,7 +13,7 @@ import type { Hono } from 'hono'
 export class TestClient {
   constructor(
     private app: Hono,
-    private baseUrl: string = 'http://localhost'
+    private baseUrl = 'http://localhost'
   ) {}
 
   /**
@@ -47,7 +47,11 @@ export class TestClient {
   /**
    * Make a request and parse JSON response
    */
-  async postJson<T = unknown>(path: string, body?: unknown, headers?: Record<string, string>): Promise<T> {
+  async postJson<T = unknown>(
+    path: string,
+    body?: unknown,
+    headers?: Record<string, string>
+  ): Promise<T> {
     const response = await this.post(path, body, headers)
     return (await response.json()) as T
   }

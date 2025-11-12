@@ -11,13 +11,13 @@ import { beforeAll, describe, expect, it } from 'bun:test'
 import { mkdir, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import type { IntakeResult } from '@repo/shared'
-import { createMockLLMProvider } from '@repo/shared/test-utils'
+import { createMockLLMProvider } from '@repo/shared'
 import { Hono } from 'hono'
 import { createTestCarrier, createTestState } from '../../__tests__/fixtures/knowledge-pack'
 import { ConversationalExtractor } from '../../services/conversational-extractor'
 import { loadKnowledgePack } from '../../services/knowledge-pack-loader'
+import { TestClient, expectIntakeResult, expectSuccessResponse } from '../helpers'
 import { createIntakeRoute } from '../intake'
-import { TestClient, expectSuccessResponse, expectIntakeResult } from '../helpers'
 
 // Path relative to project root (loadKnowledgePack resolves relative to process.cwd())
 const testKnowledgePackDir =
@@ -139,7 +139,7 @@ describe('IntakeResult Missing Fields Priority', () => {
 
   it('should return minimal missingFields when most fields present', async () => {
     const body = await client.postJson<IntakeResult>('/api/intake', {
-      message: 'state: CA productLine: auto vehicles: 2 drivers: 1 vins: ABC123 garage: attached',
+      message: 's:CA l:auto v:2 drivers:1 vins:ABC123 garage:attached',
     })
 
     // Should have minimal missing fields (may still have some optional fields)

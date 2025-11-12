@@ -6,7 +6,7 @@
 
 import { beforeEach, describe, expect, it } from 'bun:test'
 import type { PrefillPacket, UserProfile } from '@repo/shared'
-import { buildUserProfile } from '@repo/shared/test-utils'
+import { buildUserProfile } from '@repo/shared'
 import app from '../../index'
 import { TestClient, expectSuccessResponse } from '../helpers'
 
@@ -125,7 +125,7 @@ describe('POST /api/generate-prefill', () => {
     const res = await client.post('/api/generate-prefill', { invalid: 'data' })
     expect(res.status).toBe(400)
 
-    const error = await res.json() as { error?: { code?: string } }
+    const error = (await res.json()) as { error?: { code?: string } }
     expect(error.error).toBeDefined()
     expect(error.error?.code).toBe('INVALID_REQUEST')
   })

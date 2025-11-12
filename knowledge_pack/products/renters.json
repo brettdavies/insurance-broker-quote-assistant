@@ -1,0 +1,45 @@
+{
+  "$schema": "../schemas/product.json",
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedDate": "2025-11-10T20:04:54.218Z",
+    "product": "renters"
+  },
+  "product": {
+    "_id": "prod_renters_001",
+    "_sources": [
+      {
+        "uri": "https://www.insurance.com/renters-insurance/",
+        "accessedDate": "2025-11-10T20:04:54.218Z",
+        "confidence": "high",
+        "primary": true
+      }
+    ],
+    "code": "renters",
+    "name": "Renters Insurance",
+    "prefillGuidance": {
+      "_id": "fld_renters_prefill_guidance_001",
+      "value": "Renters insurance requires personal property inventory. Collect coverage limits and liability requirements.",
+      "_sources": [
+        {
+          "uri": "https://www.insurance.com/renters-insurance/",
+          "accessedDate": "2025-11-10T20:04:54.218Z",
+          "confidence": "high",
+          "primary": true
+        }
+      ]
+    },
+    "requiredFields": {
+      "_id": "fld_renters_required_fields_001",
+      "value": [{ "field": "propertyType", "priority": "critical" }],
+      "_sources": [
+        {
+          "uri": "https://www.insurance.com/renters-insurance/requirements/",
+          "accessedDate": "2025-11-10T20:04:54.218Z",
+          "confidence": "high",
+          "primary": true
+        }
+      ]
+    }
+  }
+}

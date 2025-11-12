@@ -5,9 +5,9 @@
  * Uses functional approach (not classes) for simplicity.
  */
 
+import type { Citation } from '../schemas/intake-result'
 import type { RouteDecision } from '../schemas/intake-result'
 import type { UserProfile } from '../schemas/user-profile'
-import type { Citation } from '../schemas/intake-result'
 
 /**
  * Build a UserProfile with defaults and overrides

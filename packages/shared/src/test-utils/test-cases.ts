@@ -144,11 +144,10 @@ export const keyValueTestCases = [
   {
     input: 'k:2 d:3 c:1 h:4 o:true',
     expected: {
-      householdSize: 2,
-      dependents: 3,
-      vehicles: 1,
-      householdSize: 4, // Note: 'h' maps to householdSize
-      ownsHome: true,
+      kids: 2, // 'k' maps to kids
+      householdSize: 4, // 'd:3' maps to householdSize, but 'h:4' overwrites it (last value wins)
+      vehicles: 1, // 'c' maps to vehicles (car alias)
+      ownsHome: true, // 'o' maps to ownsHome
     },
     description: 'Aliases and boolean',
   },

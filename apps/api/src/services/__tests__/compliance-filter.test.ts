@@ -33,7 +33,7 @@ const PROHIBITED_PHRASE_TEST_CASES = [
 describe('Compliance Filter', () => {
   describe('Prohibited Phrase Detection', () => {
     // Parameterized test using Bun's test.each() - eliminates 16 duplicate test cases
-    test.each(PROHIBITED_PHRASE_TEST_CASES)(
+    test.each(PROHIBITED_PHRASE_TEST_CASES as unknown as Array<{ phrase: string; text: string }>)(
       'should detect "$phrase"',
       ({ phrase, text }) => {
         const result = validateOutput(text)

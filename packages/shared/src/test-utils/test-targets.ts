@@ -20,19 +20,13 @@ export type TestTarget = 'mock' | 'real-api' | 'contract'
  *
  * Environment variables:
  * - TEST_TARGETS: Comma-separated list of targets (e.g., "mock,real-api")
- * - TEST_GEMINI_API: Legacy support - if "true", adds 'real-api' to targets
  *
  * Default: ['mock'] (fast, no API costs)
  */
 export function getTestTargets(): TestTarget[] {
   const targets: TestTarget[] = []
 
-  // Check legacy env var for backward compatibility
-  if (process.env.TEST_GEMINI_API === 'true') {
-    targets.push('real-api')
-  }
-
-  // Check new env var
+  // Check env var
   if (process.env.TEST_TARGETS) {
     const envTargets = process.env.TEST_TARGETS.split(',').map((t) => t.trim() as TestTarget)
     for (const target of envTargets) {

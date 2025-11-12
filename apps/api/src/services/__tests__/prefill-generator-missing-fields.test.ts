@@ -10,7 +10,7 @@
 import { beforeAll, describe, expect, it } from 'bun:test'
 import { mkdir, rm, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
-import { buildUserProfile } from '@repo/shared/test-utils'
+import { buildUserProfile } from '@repo/shared'
 import { createTestCarrier, createTestState } from '../../__tests__/fixtures/knowledge-pack'
 import { loadKnowledgePack } from '../knowledge-pack-loader'
 import { getMissingFields } from '../prefill-generator'
@@ -135,7 +135,10 @@ describe('getMissingFields - Product-Specific Requirements', () => {
 
 describe('getMissingFields - Priority Assignment', () => {
   it('should assign critical priority to blocking fields', () => {
-    const profile = buildUserProfile()
+    const profile = buildUserProfile({
+      vehicles: undefined,
+      drivers: undefined,
+    })
 
     const missing = getMissingFields(profile)
     const criticalFields = missing.filter((f) => f.priority === 'critical')

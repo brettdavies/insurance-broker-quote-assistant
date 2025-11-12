@@ -12,7 +12,7 @@
     "test:unit": "bun test src/utils/__tests__ src/services/__tests__ --exclude '*.gemini-provider.test.ts'",
     "test:integration": "bun test src/routes/__tests__ --exclude '*.contract.test.ts'",
     "test:contract": "bun test src/routes/__tests__/*.contract.test.ts",
-    "test:gemini": "TEST_GEMINI_API=true bun test src/services/__tests__/gemini-provider.test.ts",
+    "test:gemini": "TEST_TARGETS=real-api bun test src/services/__tests__/gemini-provider.test.ts",
     "test:all": "bun test"
   },
   "dependencies": {

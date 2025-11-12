@@ -9,9 +9,9 @@
  * Request builder for creating test requests
  */
 export class RequestBuilder {
-  private httpMethod: string = 'GET'
-  private path: string = '/'
-  private body?: unknown
+  private httpMethod = 'GET'
+  private requestPath = '/'
+  private requestBody?: unknown
   private headers: Record<string, string> = {}
 
   /**
@@ -26,7 +26,7 @@ export class RequestBuilder {
    * Set request path
    */
   path(path: string): this {
-    this.path = path
+    this.requestPath = path
     return this
   }
 
@@ -34,7 +34,7 @@ export class RequestBuilder {
    * Set request body
    */
   body(body: unknown): this {
-    this.body = body
+    this.requestBody = body
     return this
   }
 
@@ -57,21 +57,21 @@ export class RequestBuilder {
    * Set JSON body and Content-Type
    */
   json(body: unknown): this {
-    this.body = body
+    this.requestBody = body
     return this.contentType('application/json')
   }
 
   /**
    * Build Request object
    */
-  build(baseUrl: string = 'http://localhost'): Request {
-    return new Request(`${baseUrl}${this.path}`, {
+  build(baseUrl = 'http://localhost'): Request {
+    return new Request(`${baseUrl}${this.requestPath}`, {
       method: this.httpMethod,
       headers: {
         'Content-Type': 'application/json',
         ...this.headers,
       },
-      body: this.body ? JSON.stringify(this.body) : undefined,
+      body: this.requestBody ? JSON.stringify(this.requestBody) : undefined,
     })
   }
 }

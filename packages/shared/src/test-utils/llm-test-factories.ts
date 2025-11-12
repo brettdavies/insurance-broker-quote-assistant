@@ -39,72 +39,86 @@ export function createMockLLMProvider(
   }>
 ): LLMProvider {
   return {
-    extractWithStructuredOutput: overrides?.extractWithStructuredOutput ?? (async (message) => {
-      // Simple pattern matching for common test cases
-      const profile: Partial<UserProfile> = {}
-      const confidence: Record<string, number> = {}
-      let reasoning = 'Mock LLM extraction'
+    extractWithStructuredOutput:
+      overrides?.extractWithStructuredOutput ??
+      (async (message) => {
+        // Simple pattern matching for common test cases
+        const profile: Partial<UserProfile> = {}
+        const confidence: Record<string, number> = {}
+        const reasoning = 'Mock LLM extraction'
 
-      // Extract state (CA, TX, FL, NY, etc.)
-      if (message.includes('California') || message.includes('CA') || message.match(/\bs:CA\b/)) {
-        profile.state = 'CA'
-        confidence.state = 0.9
-      } else if (message.includes('Texas') || message.includes('TX') || message.match(/\bs:TX\b/)) {
-        profile.state = 'TX'
-        confidence.state = 0.9
-      } else if (message.includes('Florida') || message.includes('FL') || message.match(/\bs:FL\b/)) {
-        profile.state = 'FL'
-        confidence.state = 0.9
-      } else if (message.includes('New York') || message.includes('NY') || message.match(/\bs:NY\b/)) {
-        profile.state = 'NY'
-        confidence.state = 0.9
-      }
+        // Extract state (CA, TX, FL, NY, etc.)
+        if (message.includes('California') || message.includes('CA') || message.match(/\bs:CA\b/)) {
+          profile.state = 'CA'
+          confidence.state = 0.9
+        } else if (
+          message.includes('Texas') ||
+          message.includes('TX') ||
+          message.match(/\bs:TX\b/)
+        ) {
+          profile.state = 'TX'
+          confidence.state = 0.9
+        } else if (
+          message.includes('Florida') ||
+          message.includes('FL') ||
+          message.match(/\bs:FL\b/)
+        ) {
+          profile.state = 'FL'
+          confidence.state = 0.9
+        } else if (
+          message.includes('New York') ||
+          message.includes('NY') ||
+          message.match(/\bs:NY\b/)
+        ) {
+          profile.state = 'NY'
+          confidence.state = 0.9
+        }
 
-      // Extract product line
-      if (message.includes('auto') || message.match(/\bl:auto\b/)) {
-        profile.productLine = 'auto'
-        confidence.productLine = 0.8
-      } else if (message.includes('home') || message.match(/\bl:home\b/)) {
-        profile.productLine = 'home'
-        confidence.productLine = 0.8
-      } else if (message.includes('renters') || message.match(/\bl:renters\b/)) {
-        profile.productLine = 'renters'
-        confidence.productLine = 0.8
-      }
+        // Extract product line
+        if (message.includes('auto') || message.match(/\bl:auto\b/)) {
+          profile.productLine = 'auto'
+          confidence.productLine = 0.8
+        } else if (message.includes('home') || message.match(/\bl:home\b/)) {
+          profile.productLine = 'home'
+          confidence.productLine = 0.8
+        } else if (message.includes('renters') || message.match(/\bl:renters\b/)) {
+          profile.productLine = 'renters'
+          confidence.productLine = 0.8
+        }
 
-      // Extract age
-      const ageMatch = message.match(/\ba:(\d+)\b|(\d+)\s*years?\s*old|age[:\s]+(\d+)/i)
-      if (ageMatch) {
-        profile.age = parseInt(ageMatch[1] || ageMatch[2] || ageMatch[3] || '30', 10)
-        confidence.age = 0.85
-      }
+        // Extract age
+        const ageMatch = message.match(/\ba:(\d+)\b|(\d+)\s*years?\s*old|age[:\s]+(\d+)/i)
+        if (ageMatch) {
+          profile.age = Number.parseInt(ageMatch[1] || ageMatch[2] || ageMatch[3] || '30', 10)
+          confidence.age = 0.85
+        }
 
-      // Extract vehicles
-      const vehiclesMatch = message.match(/\bv:(\d+)\b|(\d+)\s*vehicles?/i)
-      if (vehiclesMatch) {
-        profile.vehicles = parseInt(vehiclesMatch[1] || vehiclesMatch[2] || '1', 10)
-        confidence.vehicles = 0.8
-      }
+        // Extract vehicles
+        const vehiclesMatch = message.match(/\bv:(\d+)\b|(\d+)\s*vehicles?/i)
+        if (vehiclesMatch) {
+          profile.vehicles = Number.parseInt(vehiclesMatch[1] || vehiclesMatch[2] || '1', 10)
+          confidence.vehicles = 0.8
+        }
 
-      // Extract household size / kids
-      const kidsMatch = message.match(/\bk:(\d+)\b|(\d+)\s*kids?/i)
-      if (kidsMatch) {
-        profile.householdSize = parseInt(kidsMatch[1] || kidsMatch[2] || '1', 10)
-        confidence.householdSize = 0.75
-      }
+        // Extract household size / kids
+        const kidsMatch = message.match(/\bk:(\d+)\b|(\d+)\s*kids?/i)
+        if (kidsMatch) {
+          profile.householdSize = Number.parseInt(kidsMatch[1] || kidsMatch[2] || '1', 10)
+          confidence.householdSize = 0.75
+        }
 
-      // Extract owns home
-      if (message.includes('own') && message.includes('home')) {
-        profile.ownsHome = true
-        confidence.ownsHome = 0.8
-      }
+        // Extract owns home
+        if (message.includes('own') && message.includes('home')) {
+          profile.ownsHome = true
+          confidence.ownsHome = 0.8
+        }
 
-      return {
-        profile,
-        confidence,
-        reasoning,
-      }
-    }),
+        return {
+          profile,
+          confidence,
+          reasoning,
+        }
+      }),
   }
 }
 
@@ -123,11 +137,7 @@ export function createMockLLMProvider(
  * @param options - Provider configuration
  */
 export function createRealLLMProvider(
-  ProviderClass: new (
-    apiKey?: string,
-    model?: string,
-    timeout?: number
-  ) => LLMProvider,
+  ProviderClass: new (apiKey?: string, model?: string, timeout?: number) => LLMProvider,
   options?: {
     apiKey?: string
     model?: string
@@ -157,11 +167,7 @@ export function createLLMProviderForTarget(
     mockOverrides?: Parameters<typeof createMockLLMProvider>[0]
     apiKey?: string
   },
-  ProviderClass?: new (
-    apiKey?: string,
-    model?: string,
-    timeout?: number
-  ) => LLMProvider
+  ProviderClass?: new (apiKey?: string, model?: string, timeout?: number) => LLMProvider
 ): LLMProvider {
   switch (target) {
     case 'mock':

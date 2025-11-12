@@ -6,7 +6,7 @@
 
 import { describe, expect, it } from 'bun:test'
 import type { MissingField, RouteDecision } from '@repo/shared'
-import { buildUserProfile } from '@repo/shared/test-utils'
+import { buildUserProfile } from '@repo/shared'
 import {
   generateLeadHandoffSummary,
   generatePrefillPacket,
@@ -119,7 +119,7 @@ describe('getMissingFields', () => {
       drivers: 1,
       vins: 'ABC123',
       garage: 'attached',
-    }
+    })
 
     const missing = getMissingFields(profile)
     // Should only have state and productLine (already present)
@@ -256,7 +256,10 @@ describe('generatePrefillPacket', () => {
   })
 
   it('should include missing fields in prefill packet', () => {
-    const profile = buildUserProfile()
+    const profile = buildUserProfile({
+      vehicles: undefined,
+      drivers: undefined,
+    })
 
     const missingFields = getMissingFields(profile)
     const prefill = generatePrefillPacket(profile, mockRoute, missingFields, mockDisclaimers)

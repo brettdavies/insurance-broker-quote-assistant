@@ -92,7 +92,7 @@ describe('Carriers Endpoints Integration', () => {
 
     it('should return 404 for non-existent carrier', async () => {
       const res = await client.get('/api/carriers/INVALID')
-      const body = await res.json() as { error: string }
+      const body = (await res.json()) as { error: string }
 
       expect(res.status).toBe(404)
       expect(body.error).toBe('Carrier not found')
@@ -113,7 +113,7 @@ describe('Carriers Endpoints Integration', () => {
 
     it('should return 404 for non-existent carrier', async () => {
       const res = await client.get('/api/carriers/INVALID/products')
-      const body = await res.json() as { error: string }
+      const body = (await res.json()) as { error: string }
 
       expect(res.status).toBe(404)
       expect(body.error).toBe('Carrier not found')

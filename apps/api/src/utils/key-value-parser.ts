@@ -39,6 +39,9 @@ const FIELD_ALIASES: Record<string, string> = {
   d: 'householdSize',
   deps: 'householdSize',
   dependents: 'householdSize',
+  // Drivers
+  drivers: 'drivers',
+  driver: 'drivers',
   // Vehicles
   v: 'vehicles',
   vehicles: 'vehicles',
@@ -86,6 +89,7 @@ const NUMERIC_FIELDS = new Set([
   'kids',
   'householdSize',
   'vehicles',
+  'drivers',
   'currentPremium',
   'creditScore',
 ])

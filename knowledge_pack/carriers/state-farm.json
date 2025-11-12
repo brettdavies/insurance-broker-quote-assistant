@@ -1,4 +1,5 @@
 {
+  "$schema": "../schemas/carrier.json",
   "meta": {
     "schemaVersion": "1.0",
     "generatedDate": "2025-11-10T20:04:54.218Z",
@@ -184,7 +185,9 @@
           "_id": "fld_pibt3jhvel2l3p0uaaoe9tws",
           "value": {
             "mustHaveProducts": ["auto", "home"],
-            "minProducts": 2
+            "minProducts": 2,
+            "bundleProducts": ["auto", "home"],
+            "description": "Must have both auto and home insurance policies with State Farm"
           },
           "_sources": [
             {
@@ -200,6 +203,15 @@
           "_id": "fld_matcvkqwjxb8scp84ozyyfoy",
           "value": true,
           "_sources": []
+        },
+        "stateVariations": {
+          "CA": {
+            "multiplier": 0.5
+          }
+        },
+        "metadata": {
+          "discountType": "bundle",
+          "evaluationPriority": "high"
         },
         "description": {
           "_id": "fld_wjdjheiv24swg47wb3k67a5m",
@@ -265,7 +277,11 @@
           "_id": "fld_p6m6dxlsh0fdnndbtu7ns8k0",
           "value": {
             "mustHaveProducts": ["auto"],
-            "minProducts": 1
+            "minProducts": 1,
+            "fieldRequirements": {
+              "cleanRecord3Yr": true
+            },
+            "description": "Must have clean driving record for past 3 years"
           },
           "_sources": [
             {
@@ -281,6 +297,15 @@
           "_id": "fld_ajngiurfnwl1oitwreqcrq6o",
           "value": true,
           "_sources": []
+        },
+        "stateVariations": {
+          "CA": {
+            "multiplier": 0.5
+          }
+        },
+        "metadata": {
+          "discountType": "driver",
+          "evaluationPriority": "high"
         },
         "description": {
           "_id": "fld_k7y8c0ap4d9sg8njfnic2mpe",
@@ -363,6 +388,15 @@
           "value": true,
           "_sources": []
         },
+        "stateVariations": {
+          "CA": {
+            "multiplier": 0.5
+          }
+        },
+        "metadata": {
+          "discountType": "driver",
+          "evaluationPriority": "medium"
+        },
         "description": {
           "_id": "fld_caupciot57txb36zo1sf1bpn",
           "value": "Steer Clear discount available for auto insurance",
@@ -444,6 +478,15 @@
           "value": false,
           "_sources": []
         },
+        "stateVariations": {
+          "CA": {
+            "multiplier": 0.5
+          }
+        },
+        "metadata": {
+          "discountType": "driver",
+          "evaluationPriority": "high"
+        },
         "description": {
           "_id": "fld_nk01l0oeqnvvws3wxg2wzbrv",
           "value": "Drive Safe & Save discount available for auto insurance",
@@ -508,7 +551,11 @@
           "_id": "fld_bgwwsikym8unro40j9tn5vuy",
           "value": {
             "mustHaveProducts": ["home"],
-            "minProducts": 1
+            "minProducts": 1,
+            "fieldRequirements": {
+              "homeSecurity": true
+            },
+            "description": "Must have home security system (alarm, monitored system, or smart home security)"
           },
           "_sources": [
             {
@@ -524,6 +571,15 @@
           "_id": "fld_tlcl5rj15eivd23uhubtqktu",
           "value": true,
           "_sources": []
+        },
+        "stateVariations": {
+          "CA": {
+            "multiplier": 0.5
+          }
+        },
+        "metadata": {
+          "discountType": "lifestyle",
+          "evaluationPriority": "medium"
         },
         "description": {
           "_id": "fld_svgd1ixkhr0cixw84tm5sqlw",
@@ -564,6 +620,337 @@
             "primary": true
           }
         ]
+      }
+    },
+    "averagePricing": {
+      "_id": "pricing_statefarm_2025",
+      "_sources": [
+        {
+          "uri": "https://www.statefarm.com/pricing/",
+          "accessedDate": "2025-11-10T20:04:54.218Z",
+          "confidence": "high",
+          "primary": true
+        }
+      ],
+      "auto": {
+        "_id": "pricing_auto_statefarm",
+        "states": {
+          "_id": "fld_auto_states_pricing",
+          "value": {
+            "CA": {
+              "_id": "pricing_auto_ca",
+              "baseAnnualPremium": {
+                "_id": "fld_auto_ca_base",
+                "value": 1450,
+                "_sources": [
+                  {
+                    "uri": "https://www.statefarm.com/pricing/auto/CA/",
+                    "accessedDate": "2025-11-10T20:04:54.218Z",
+                    "confidence": "medium",
+                    "primary": true
+                  }
+                ]
+              },
+              "deductibleTiers": {
+                "_id": "fld_auto_ca_deduct_tiers",
+                "value": [
+                  {
+                    "deductible": 250,
+                    "annualPremium": 1650,
+                    "savingsVsBase": 0
+                  },
+                  {
+                    "deductible": 500,
+                    "annualPremium": 1450,
+                    "savingsVsBase": 200
+                  },
+                  {
+                    "deductible": 1000,
+                    "annualPremium": 1250,
+                    "savingsVsBase": 400
+                  },
+                  {
+                    "deductible": 2000,
+                    "annualPremium": 1100,
+                    "savingsVsBase": 550
+                  }
+                ],
+                "_sources": [
+                  {
+                    "uri": "https://www.statefarm.com/pricing/auto/CA/deductibles/",
+                    "accessedDate": "2025-11-10T20:04:54.218Z",
+                    "confidence": "medium",
+                    "primary": true
+                  }
+                ]
+              }
+            },
+            "TX": {
+              "_id": "pricing_auto_tx",
+              "baseAnnualPremium": {
+                "_id": "fld_auto_tx_base",
+                "value": 1250,
+                "_sources": [
+                  {
+                    "uri": "https://www.statefarm.com/pricing/auto/TX/",
+                    "accessedDate": "2025-11-10T20:04:54.218Z",
+                    "confidence": "medium",
+                    "primary": true
+                  }
+                ]
+              },
+              "deductibleTiers": {
+                "_id": "fld_auto_tx_deduct_tiers",
+                "value": [
+                  {
+                    "deductible": 250,
+                    "annualPremium": 1450,
+                    "savingsVsBase": 0
+                  },
+                  {
+                    "deductible": 500,
+                    "annualPremium": 1250,
+                    "savingsVsBase": 200
+                  },
+                  {
+                    "deductible": 1000,
+                    "annualPremium": 1050,
+                    "savingsVsBase": 400
+                  },
+                  {
+                    "deductible": 2000,
+                    "annualPremium": 900,
+                    "savingsVsBase": 550
+                  }
+                ],
+                "_sources": [
+                  {
+                    "uri": "https://www.statefarm.com/pricing/auto/TX/deductibles/",
+                    "accessedDate": "2025-11-10T20:04:54.218Z",
+                    "confidence": "medium",
+                    "primary": true
+                  }
+                ]
+              }
+            },
+            "FL": {
+              "_id": "pricing_auto_fl",
+              "baseAnnualPremium": {
+                "_id": "fld_auto_fl_base",
+                "value": 1950,
+                "_sources": [
+                  {
+                    "uri": "https://www.statefarm.com/pricing/auto/FL/",
+                    "accessedDate": "2025-11-10T20:04:54.218Z",
+                    "confidence": "medium",
+                    "primary": true
+                  }
+                ]
+              },
+              "deductibleTiers": {
+                "_id": "fld_auto_fl_deduct_tiers",
+                "value": [
+                  {
+                    "deductible": 250,
+                    "annualPremium": 2150,
+                    "savingsVsBase": 0
+                  },
+                  {
+                    "deductible": 500,
+                    "annualPremium": 1950,
+                    "savingsVsBase": 200
+                  },
+                  {
+                    "deductible": 1000,
+                    "annualPremium": 1750,
+                    "savingsVsBase": 400
+                  },
+                  {
+                    "deductible": 2000,
+                    "annualPremium": 1600,
+                    "savingsVsBase": 550
+                  }
+                ],
+                "_sources": [
+                  {
+                    "uri": "https://www.statefarm.com/pricing/auto/FL/deductibles/",
+                    "accessedDate": "2025-11-10T20:04:54.218Z",
+                    "confidence": "medium",
+                    "primary": true
+                  }
+                ]
+              }
+            }
+          },
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/pricing/auto/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      },
+      "home": {
+        "_id": "pricing_home_statefarm",
+        "states": {
+          "_id": "fld_home_states_pricing",
+          "value": {
+            "CA": {
+              "_id": "pricing_home_ca",
+              "baseAnnualPremium": {
+                "_id": "fld_home_ca_base",
+                "value": 1350,
+                "_sources": [
+                  {
+                    "uri": "https://www.statefarm.com/pricing/home/CA/",
+                    "accessedDate": "2025-11-10T20:04:54.218Z",
+                    "confidence": "medium",
+                    "primary": true
+                  }
+                ]
+              },
+              "deductibleTiers": {
+                "_id": "fld_home_ca_deduct_tiers",
+                "value": [
+                  {
+                    "deductible": 500,
+                    "annualPremium": 1550,
+                    "savingsVsBase": 0
+                  },
+                  {
+                    "deductible": 1000,
+                    "annualPremium": 1350,
+                    "savingsVsBase": 200
+                  },
+                  {
+                    "deductible": 2500,
+                    "annualPremium": 1150,
+                    "savingsVsBase": 400
+                  },
+                  {
+                    "deductible": 5000,
+                    "annualPremium": 1000,
+                    "savingsVsBase": 550
+                  }
+                ],
+                "_sources": [
+                  {
+                    "uri": "https://www.statefarm.com/pricing/home/CA/deductibles/",
+                    "accessedDate": "2025-11-10T20:04:54.218Z",
+                    "confidence": "medium",
+                    "primary": true
+                  }
+                ]
+              }
+            },
+            "TX": {
+              "_id": "pricing_home_tx",
+              "baseAnnualPremium": {
+                "_id": "fld_home_tx_base",
+                "value": 1150,
+                "_sources": [
+                  {
+                    "uri": "https://www.statefarm.com/pricing/home/TX/",
+                    "accessedDate": "2025-11-10T20:04:54.218Z",
+                    "confidence": "medium",
+                    "primary": true
+                  }
+                ]
+              },
+              "deductibleTiers": {
+                "_id": "fld_home_tx_deduct_tiers",
+                "value": [
+                  {
+                    "deductible": 500,
+                    "annualPremium": 1350,
+                    "savingsVsBase": 0
+                  },
+                  {
+                    "deductible": 1000,
+                    "annualPremium": 1150,
+                    "savingsVsBase": 200
+                  },
+                  {
+                    "deductible": 2500,
+                    "annualPremium": 950,
+                    "savingsVsBase": 400
+                  },
+                  {
+                    "deductible": 5000,
+                    "annualPremium": 800,
+                    "savingsVsBase": 550
+                  }
+                ],
+                "_sources": [
+                  {
+                    "uri": "https://www.statefarm.com/pricing/home/TX/deductibles/",
+                    "accessedDate": "2025-11-10T20:04:54.218Z",
+                    "confidence": "medium",
+                    "primary": true
+                  }
+                ]
+              }
+            },
+            "FL": {
+              "_id": "pricing_home_fl",
+              "baseAnnualPremium": {
+                "_id": "fld_home_fl_base",
+                "value": 2350,
+                "_sources": [
+                  {
+                    "uri": "https://www.statefarm.com/pricing/home/FL/",
+                    "accessedDate": "2025-11-10T20:04:54.218Z",
+                    "confidence": "medium",
+                    "primary": true
+                  }
+                ]
+              },
+              "deductibleTiers": {
+                "_id": "fld_home_fl_deduct_tiers",
+                "value": [
+                  {
+                    "deductible": 500,
+                    "annualPremium": 2550,
+                    "savingsVsBase": 0
+                  },
+                  {
+                    "deductible": 1000,
+                    "annualPremium": 2350,
+                    "savingsVsBase": 200
+                  },
+                  {
+                    "deductible": 2500,
+                    "annualPremium": 2150,
+                    "savingsVsBase": 400
+                  },
+                  {
+                    "deductible": 5000,
+                    "annualPremium": 2000,
+                    "savingsVsBase": 550
+                  }
+                ],
+                "_sources": [
+                  {
+                    "uri": "https://www.statefarm.com/pricing/home/FL/deductibles/",
+                    "accessedDate": "2025-11-10T20:04:54.218Z",
+                    "confidence": "medium",
+                    "primary": true
+                  }
+                ]
+              }
+            }
+          },
+          "_sources": [
+            {
+              "uri": "https://www.statefarm.com/pricing/home/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
       }
     }
   }

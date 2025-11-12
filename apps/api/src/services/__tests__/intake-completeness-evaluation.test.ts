@@ -9,7 +9,8 @@
  */
 
 import { describe, expect, it } from 'bun:test'
-import { buildUserProfile } from '@repo/shared/test-utils'
+import type { UserProfile } from '@repo/shared'
+import { buildUserProfile } from '@repo/shared'
 import { getMissingFields } from '../../services/prefill-generator'
 
 /**
@@ -178,8 +179,14 @@ describe('Intake Completeness Evaluation Harness', () => {
 
   describe('Progressive Disclosure Completeness', () => {
     it('should track completeness as fields are progressively added', () => {
-      // Start with minimal profile
-      const profile1 = buildUserProfile()
+      // Start with minimal profile (only state and productLine from defaults)
+      const profile1 = buildUserProfile({
+        age: undefined,
+        vehicles: undefined,
+        householdSize: undefined,
+        ownsHome: undefined,
+        cleanRecord3Yr: undefined,
+      })
       const completeness1 = calculateCompleteness(profile1, 'auto', 'CA')
       expect(completeness1).toBeGreaterThan(0)
       expect(completeness1).toBeLessThan(50) // Low initial completeness
@@ -254,7 +261,11 @@ describe('Intake Completeness Evaluation Harness', () => {
 
   describe('Overall Completeness Validation', () => {
     it('should validate ≥95% completeness across all product types', () => {
-      const testProfiles: Array<{ profile: ReturnType<typeof buildUserProfile>; productLine: string; state: string }> = [
+      const testProfiles: Array<{
+        profile: ReturnType<typeof buildUserProfile>
+        productLine: string
+        state: string
+      }> = [
         {
           profile: buildUserProfile({
             vehicles: 2,
@@ -295,7 +306,7 @@ describe('Intake Completeness Evaluation Harness', () => {
                 premium: 1200,
               },
             ],
-          },
+          }),
           productLine: 'umbrella',
           state: 'CA',
         },
