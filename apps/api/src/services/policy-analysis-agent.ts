@@ -368,7 +368,13 @@ export class PolicyAnalysisAgent {
     try {
       // Call LLM with PolicyAnalysisResultLLMSchema (without file paths)
       // The LLMProvider will validate it against the schema, but return type is ExtractionResult
-      const result = await this.llmProvider.extractWithStructuredOutput(prompt, undefined, schema)
+      // Use temperature 0.1 for policy analysis (deterministic behavior, similar to extraction)
+      const result = await this.llmProvider.extractWithStructuredOutput(
+        prompt,
+        schema,
+        undefined, // No partial fields for policy analysis
+        0.1 // Temperature for analysis (deterministic behavior)
+      )
 
       // The profile field contains the LLM response (validated by schema.parse in GeminiProvider)
       // We need to extract it and validate against LLM schema

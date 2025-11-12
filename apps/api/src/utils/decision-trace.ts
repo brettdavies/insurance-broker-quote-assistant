@@ -1,17 +1,14 @@
-import { mkdir, writeFile } from 'node:fs/promises'
-import { join } from 'node:path'
 import type { DecisionTrace } from '@repo/shared'
+import { complianceLogger } from './logger'
 
 /**
  * Decision Trace Logger
  *
  * Logs decision traces to compliance log file for regulatory audit trail.
- * All traces are written to `logs/compliance.log` in JSON format.
+ * Uses the central logger's compliance logger instance.
  *
  * @see docs/architecture/4-data-models.md#48-decisiontrace
  */
-
-const COMPLIANCE_LOG_FILE = process.env.COMPLIANCE_LOG_FILE || './logs/compliance.log'
 
 /**
  * Creates a decision trace object with current timestamp
@@ -31,6 +28,8 @@ export function createDecisionTrace(
     promptTokens?: number
     completionTokens?: number
     totalTokens?: number
+    systemPrompt?: string
+    userPrompt?: string
   }>,
   routingDecision?: Record<string, unknown>,
   complianceCheck?: {
@@ -69,26 +68,9 @@ export function createDecisionTrace(
 }
 
 /**
- * Logs decision trace to compliance log file
+ * Logs decision trace to compliance log file using central logger
  * Ensures log directory exists before writing
  */
 export async function logDecisionTrace(trace: DecisionTrace): Promise<void> {
-  try {
-    // Ensure logs directory exists
-    const logDir = join(process.cwd(), 'logs')
-    try {
-      await mkdir(logDir, { recursive: true })
-    } catch {
-      // Directory might already exist, ignore error
-    }
-
-    // Write trace as JSON line (one trace per line for easy parsing)
-    const logLine = `${JSON.stringify(trace)}\n`
-    const logPath = process.env.COMPLIANCE_LOG_FILE || COMPLIANCE_LOG_FILE
-
-    await writeFile(logPath, logLine, { flag: 'a' }) // Append mode
-  } catch (error) {
-    // Log error to console but don't throw (compliance logging shouldn't break request)
-    console.error('Failed to write decision trace to compliance log:', error)
-  }
+  await complianceLogger.logDecisionTrace(trace)
 }

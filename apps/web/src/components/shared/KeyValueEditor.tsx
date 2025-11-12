@@ -11,6 +11,7 @@
  * - Editor ref for programmatic control
  */
 
+import { extractTextWithoutPills } from '@/lib/text-extraction'
 import { LexicalComposer } from '@lexical/react/LexicalComposer'
 import { useLexicalComposerContext } from '@lexical/react/LexicalComposerContext'
 import { ContentEditable } from '@lexical/react/LexicalContentEditable'
@@ -112,12 +113,16 @@ function EditorRefPlugin({
             }
           })
         },
+        getTextWithoutPills: () => {
+          return extractTextWithoutPills(editor)
+        },
       } as NonNullable<
         React.MutableRefObject<{
           focus: () => void
           clear: () => void
           insertText: (text: string) => void
           setContent: (text: string) => void
+          getTextWithoutPills: () => string
         } | null>['current']
       >
     }
@@ -165,6 +170,7 @@ export interface KeyValueEditorProps {
     clear: () => void
     insertText: (text: string) => void
     setContent: (text: string) => void
+    getTextWithoutPills: () => string
   } | null>
   autoFocus?: boolean
   className?: string

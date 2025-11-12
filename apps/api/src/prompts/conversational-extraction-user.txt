@@ -1,0 +1,57 @@
+Extract insurance shopper information from broker notes taken during a conversation with a prospect.
+
+These notes are informal, may contain incomplete thoughts, fragments, abbreviations, and random facts.
+They were written by the broker, not the prospect, so they may not be full sentences or paragraphs.
+
+{{ALREADY_EXTRACTED_FIELDS}}
+
+Current notes: {{MESSAGE}}
+
+Extract all mentioned fields from these notes. Look for:
+- state: US state code (REQUIRED if mentioned). Examples: "CA" (from "CA auto"), "California", "TX" (from "TX home"). IMPORTANT: When you see patterns like "CA auto" or "TX home", extract the state code (CA, TX, etc.) as the state field.
+- productType: insurance product type (REQUIRED if mentioned). Must be one of: auto, home, renters, umbrella. Examples: "auto" (from "CA auto"), "home" (from "TX home"). IMPORTANT: When you see patterns like "CA auto" or "TX home", extract the product type (auto, home, etc.) as the productType field.
+- age: age in years (may be mentioned as "35yo", "35 years old", "age 35", etc.)
+- householdSize: number of people in household (may be mentioned as "2 drivers", "lives alone", "family of 4", etc.)
+- ownsHome: boolean indicating home ownership (may be mentioned as "owns home", "homeowner", "rents", "renting", etc.)
+- zip: zip code (may be mentioned as "zip 90210", "90210", "zip code is 90210", etc.)
+- vehicles: number of vehicles (for auto insurance)
+- drivers: number of drivers (for auto insurance)
+- cleanRecord3Yr: clean driving record for 3 years (may be mentioned as "clean record 3yrs", "clean record 3 years", "no accidents 3 years", etc.)
+- cleanRecord5Yr: clean driving record for 5 years (may be mentioned as "clean record 5yrs", "clean record 5 years", "no accidents 5 years", etc.)
+
+Example 1 (input):
+"CA auto. 2 cars, 2 drivers. Clean record 5 years."
+
+Example 1 (output):
+{
+  "state": "CA",
+  "productType": "auto",
+  "vehicles": 2,
+  "drivers": 2,
+  "cleanRecord5Yr": true,
+  "cleanRecord3Yr": null,
+  "age": null,
+  "creditScore": null,
+  "existingPolicies": null,
+  "kids": null,
+  ... [all unmentioned fields as null]
+}
+
+Example 2 (input):
+"CA auto. 35yo. 2 cars, 2 drivers. Clean record 5yrs. Owns home. Zip 90210"
+
+Example 2 (output):
+{
+  "state": "CA",
+  "productType": "auto",
+  "age": 35,
+  "vehicles": 2,
+  "drivers": 2,
+  "cleanRecord5Yr": true,
+  "cleanRecord3Yr": null,
+  "ownsHome": true,
+  "zip": "90210",
+  "creditScore": null,
+  "existingPolicies": null,
+  ... [all unmentioned fields as null]
+}

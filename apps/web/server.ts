@@ -79,7 +79,9 @@ serve({
               target: 'browser',
               format: 'esm',
               minify: false,
-              // Don't externalize - bundle all dependencies
+              // Externalize bun:test - test utilities can't be bundled for browser
+              external: ['bun:test'],
+              // Don't externalize other dependencies - bundle all npm packages
               // This ensures npm packages are included in the bundle
             })
 

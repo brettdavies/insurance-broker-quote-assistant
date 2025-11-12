@@ -21,7 +21,7 @@ import { $isPillNode, PillNode } from './nodes/PillNode'
 
 interface NotesPanelProps {
   mode?: 'intake' | 'policy'
-  onFieldExtracted?: (fields: Record<string, string | number>) => void
+  onFieldExtracted?: (fields: Record<string, string | number | boolean>) => void
   onFieldRemoved?: (fieldName: string) => void
   onContentChange?: (content: string) => void
   onActionCommand?: (command: ActionCommand) => void
@@ -31,6 +31,7 @@ interface NotesPanelProps {
     clear: () => void
     insertText: (text: string) => void
     setContent: (text: string) => void
+    getTextWithoutPills: () => string
   } | null>
   autoFocus?: boolean
 }
@@ -41,7 +42,7 @@ interface NotesPanelProps {
 function PillFieldExtractionPlugin({
   onFieldExtracted,
 }: {
-  onFieldExtracted?: (fields: Record<string, string | number>) => void
+  onFieldExtracted?: (fields: Record<string, string | number | boolean>) => void
 }): null {
   const [editor] = useLexicalComposerContext()
 
@@ -51,7 +52,7 @@ function PillFieldExtractionPlugin({
     // Listen for pill node mutations (creation)
     const removeMutationListener = editor.registerMutationListener(PillNode, (mutatedNodes) => {
       editor.getEditorState().read(() => {
-        const extractedFields: Record<string, string | number> = {}
+        const extractedFields: Record<string, string | number | boolean> = {}
 
         for (const [nodeKey, mutation] of mutatedNodes) {
           if (mutation === 'created') {
@@ -67,7 +68,13 @@ function PillFieldExtractionPlugin({
                   if (!Number.isNaN(numValue)) {
                     extractedFields[fieldName] = numValue
                   }
-                } else {
+                }
+                // Convert boolean strings to actual booleans
+                else if (value === 'true' || value === 'false') {
+                  extractedFields[fieldName] = value === 'true'
+                }
+                // Keep as string for other fields (like zip)
+                else {
                   extractedFields[fieldName] = value
                 }
               }

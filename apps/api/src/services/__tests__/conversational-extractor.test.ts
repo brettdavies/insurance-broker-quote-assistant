@@ -86,10 +86,10 @@ describe('ConversationalExtractor', () => {
       expect(result.reasoning).toContain('Extraction failed')
     })
 
-    it('should pass conversation history to LLM provider', async () => {
-      const conversationHistory = ['Previous message 1', 'Previous message 2']
+    it('should pass pills to LLM provider as partialFields', async () => {
+      const pills = { state: 'CA', age: 30 }
 
-      await extractor.extractFields('Current message', conversationHistory)
+      await extractor.extractFields('Current message', pills)
 
       // Verify LLM provider was called with correct arguments
       expect(mockExtract).toHaveBeenCalled()
@@ -97,10 +97,9 @@ describe('ConversationalExtractor', () => {
       expect(callArgs).toBeDefined()
       if (callArgs) {
         expect(callArgs[0]).toBe('Current message')
-        expect(callArgs[1]).toEqual(conversationHistory)
-        expect(callArgs[2]).toBeDefined() // Zod schema
-        // 4th argument is partialFields (may be undefined or an object)
-        expect(callArgs[3] === undefined || typeof callArgs[3] === 'object').toBe(true)
+        expect(callArgs[1]).toBeDefined() // Zod schema
+        expect(callArgs[2]).toEqual(pills) // partialFields (pills)
+        expect(callArgs[3]).toBe(0.1) // temperature
       }
     })
   })

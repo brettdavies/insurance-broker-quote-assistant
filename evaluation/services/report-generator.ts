@@ -15,6 +15,10 @@ import type {
 import type { TestResult } from '../types'
 import { calculateCost, extractTokenUsage } from './token-tracker'
 
+// Log file paths (logs are at workspace root: logs/)
+const COMPLIANCE_LOG_PATH = join(import.meta.dir, '../../logs/compliance.log')
+const PROGRAM_LOG_PATH = join(import.meta.dir, '../../logs/program.log')
+
 export interface EvaluationReport {
   timestamp: string
   overallMetrics: {
@@ -57,7 +61,7 @@ export async function generateReport(results: TestResult[]): Promise<EvaluationR
   const perStateRouting = calculatePerStateRouting(results)
   const fieldCompleteness = calculateFieldCompleteness(results)
   const tokenUsage = extractTokenUsageData(results)
-  const sampleTraces = extractSampleTraces(results)
+  const sampleTraces = await extractSampleTraces(results)
 
   return {
     timestamp,
@@ -241,13 +245,69 @@ function extractTokenUsageData(results: TestResult[]) {
 
 /**
  * Extract sample traces from test results
+ * Reads traces from compliance.log and enriches with prompts from program.log
  */
-function extractSampleTraces(results: TestResult[]): Array<{ testId: string; trace: unknown }> {
+async function extractSampleTraces(
+  results: TestResult[]
+): Promise<Array<{ testId: string; trace: unknown }>> {
   const traces: Array<{ testId: string; trace: unknown }> = []
+
+  // Load traces from compliance.log and prompts from program.log
+  const { tracesByTimestamp, promptsByTimestamp } = await loadTracesAndPromptsFromLogs()
 
   for (const result of results) {
     if (result.actualResponse && traces.length < 5) {
-      const trace = extractTrace(result.actualResponse)
+      // Try to get trace from API response first
+      let trace = extractTrace(result.actualResponse)
+
+      // If trace has a timestamp, try to enrich with prompts from logs
+      if (trace?.timestamp) {
+        // Find matching prompt (within 5 seconds of trace timestamp)
+        const traceTime = new Date(trace.timestamp).getTime()
+        const matchingPrompt = findMatchingPrompt(traceTime, promptsByTimestamp)
+
+        if (matchingPrompt && trace.llmCalls?.[0]) {
+          // Use separate prompts if available, otherwise split combined prompt
+          let systemPrompt: string
+          let userPrompt: string
+
+          if (
+            'systemPrompt' in matchingPrompt &&
+            'userPrompt' in matchingPrompt &&
+            matchingPrompt.systemPrompt &&
+            matchingPrompt.userPrompt
+          ) {
+            // Use separate prompts from log entry (new format)
+            systemPrompt = matchingPrompt.systemPrompt as string
+            userPrompt = matchingPrompt.userPrompt as string
+          } else if (matchingPrompt.prompt) {
+            // Split combined prompt into system and user prompts (old format)
+            // The combined prompt format is: systemPrompt + "\n\n" + userPrompt
+            const split = splitCombinedPrompt(matchingPrompt.prompt)
+            systemPrompt = split.systemPrompt
+            userPrompt = split.userPrompt
+
+            // Log warning if system prompt is missing
+            if (split.warning) {
+              console.warn(`[Report Generator] ${split.warning} for trace at ${trace.timestamp}`)
+            }
+          } else {
+            // No prompt available
+            systemPrompt = ''
+            userPrompt = ''
+            console.warn(`[Report Generator] No prompt found for trace at ${trace.timestamp}`)
+          }
+
+          // Enrich trace with prompts
+          trace = {
+            ...trace,
+            llmCalls: trace.llmCalls.map((call, idx) =>
+              idx === 0 ? { ...call, systemPrompt, userPrompt } : call
+            ),
+          }
+        }
+      }
+
       if (trace) {
         traces.push({
           testId: result.testCase.id,
@@ -258,6 +318,235 @@ function extractSampleTraces(results: TestResult[]): Array<{ testId: string; tra
   }
 
   return traces
+}
+
+/**
+ * Load traces from compliance.log and prompts from program.log
+ */
+async function loadTracesAndPromptsFromLogs(): Promise<{
+  tracesByTimestamp: Map<number, DecisionTrace>
+  promptsByTimestamp: Map<
+    number,
+    { timestamp: string; prompt: string; systemPrompt?: string; userPrompt?: string }
+  >
+}> {
+  const tracesByTimestamp = new Map<number, DecisionTrace>()
+  const promptsByTimestamp = new Map<
+    number,
+    { timestamp: string; prompt: string; systemPrompt?: string; userPrompt?: string }
+  >()
+
+  try {
+    // Read compliance.log (one DecisionTrace JSON per line)
+    const complianceLogContent = await readFile(COMPLIANCE_LOG_PATH, 'utf-8').catch(() => '')
+    for (const line of complianceLogContent.split('\n')) {
+      if (line.trim()) {
+        try {
+          const trace = JSON.parse(line) as DecisionTrace
+          if (trace.timestamp) {
+            const timestamp = new Date(trace.timestamp).getTime()
+            tracesByTimestamp.set(timestamp, trace)
+          }
+        } catch {
+          // Skip invalid JSON lines
+        }
+      }
+    }
+  } catch {
+    // File doesn't exist or can't be read
+  }
+
+  try {
+    // Read program.log (one JSON log entry per line)
+    const programLogContent = await readFile(PROGRAM_LOG_PATH, 'utf-8').catch(() => '')
+    for (const line of programLogContent.split('\n')) {
+      if (line.trim()) {
+        try {
+          const entry = JSON.parse(line) as {
+            timestamp?: string
+            type?: string
+            prompt?: string
+            systemPrompt?: string
+            userPrompt?: string
+          }
+          // Look for LLM prompt entries
+          if (
+            entry.type === 'llm_prompt' ||
+            entry.type === 'llm_prompt_debug' ||
+            (entry.prompt && entry.timestamp)
+          ) {
+            if (entry.timestamp) {
+              const timestamp = new Date(entry.timestamp).getTime()
+
+              // Prefer separate system/user prompts if available (new format)
+              if (entry.systemPrompt && entry.userPrompt) {
+                promptsByTimestamp.set(timestamp, {
+                  timestamp: entry.timestamp,
+                  prompt: `${entry.systemPrompt}\n\n${entry.userPrompt}`, // Reconstruct combined for compatibility
+                  systemPrompt: entry.systemPrompt,
+                  userPrompt: entry.userPrompt,
+                })
+              } else if (entry.prompt) {
+                // Old format: try to split combined prompt
+                const split = splitCombinedPrompt(entry.prompt)
+                promptsByTimestamp.set(timestamp, {
+                  timestamp: entry.timestamp,
+                  prompt: entry.prompt,
+                  systemPrompt: split.systemPrompt || undefined,
+                  userPrompt: split.userPrompt,
+                })
+              }
+            }
+          }
+        } catch {
+          // Skip invalid JSON lines
+        }
+      }
+    }
+  } catch {
+    // File doesn't exist or can't be read
+  }
+
+  return { tracesByTimestamp, promptsByTimestamp }
+}
+
+/**
+ * Find matching prompt for a given timestamp (within 5 seconds)
+ */
+function findMatchingPrompt(
+  traceTimestamp: number,
+  promptsByTimestamp: Map<
+    number,
+    { timestamp: string; prompt: string; systemPrompt?: string; userPrompt?: string }
+  >
+): { timestamp: string; prompt: string; systemPrompt?: string; userPrompt?: string } | undefined {
+  // Look for prompt within 5 seconds of trace timestamp
+  for (const [promptTime, prompt] of promptsByTimestamp.entries()) {
+    const timeDiff = Math.abs(promptTime - traceTimestamp)
+    if (timeDiff < 5000) {
+      // Within 5 seconds
+      return prompt
+    }
+  }
+  return undefined
+}
+
+/**
+ * Split combined prompt into system and user prompts
+ * Format: systemPrompt + "\n\n" + userPrompt
+ *
+ * The system prompt starts with "You are a data extraction specialist" or similar
+ * The user prompt starts with "Extract insurance shopper information"
+ *
+ * Returns a warning flag if system prompt appears to be missing
+ */
+function splitCombinedPrompt(combinedPrompt: string): {
+  systemPrompt: string
+  userPrompt: string
+  warning?: string
+} {
+  // Check if prompt starts with user prompt (system prompt missing)
+  const startsWithUserPrompt = combinedPrompt
+    .trim()
+    .startsWith('Extract insurance shopper information')
+
+  if (startsWithUserPrompt) {
+    // System prompt appears to be missing - log warning
+    console.warn(
+      '[Report Generator] System prompt missing from log entry. ' +
+        'Prompt starts with user prompt instead of system prompt. ' +
+        'This may indicate the server is running old code or prompt files were not loaded correctly.'
+    )
+    return {
+      systemPrompt: '',
+      userPrompt: combinedPrompt.trim(),
+      warning: 'System prompt missing from log entry',
+    }
+  }
+
+  // Look for the user prompt marker (start of user prompt template)
+  const userPromptStart = combinedPrompt.indexOf('Extract insurance shopper information')
+
+  if (userPromptStart > 0) {
+    // Split at the user prompt start
+    const systemPrompt = combinedPrompt.substring(0, userPromptStart).trim()
+    const userPrompt = combinedPrompt.substring(userPromptStart).trim()
+
+    // Verify system prompt is not empty and contains expected content
+    if (!systemPrompt || systemPrompt.length < 50) {
+      console.warn(
+        '[Report Generator] System prompt appears to be too short or empty after splitting. ' +
+          'This may indicate the prompt format has changed.'
+      )
+      return {
+        systemPrompt: systemPrompt || '',
+        userPrompt,
+        warning: 'System prompt appears to be missing or incomplete',
+      }
+    }
+
+    // Check if system prompt contains expected markers
+    const hasSystemPromptMarkers =
+      systemPrompt.includes('You are a data extraction specialist') ||
+      systemPrompt.includes('EXTRACTION RULE') ||
+      systemPrompt.includes('CRITICAL:')
+
+    if (!hasSystemPromptMarkers) {
+      console.warn(
+        '[Report Generator] System prompt does not contain expected markers. ' +
+          'This may indicate the prompt format has changed or system prompt is missing.'
+      )
+      return {
+        systemPrompt,
+        userPrompt,
+        warning: 'System prompt does not contain expected markers',
+      }
+    }
+
+    // Remove any trailing newlines from system prompt
+    return {
+      systemPrompt: systemPrompt.replace(/\n+$/, ''),
+      userPrompt,
+    }
+  }
+
+  // Fallback: if we can't split, check if it starts with system prompt markers
+  if (
+    combinedPrompt.includes('You are a data extraction specialist') ||
+    combinedPrompt.includes('EXTRACTION RULE') ||
+    combinedPrompt.includes('CRITICAL:')
+  ) {
+    // Try to find where user prompt starts by looking for common patterns
+    const patterns = [
+      'Extract insurance shopper information',
+      'Current notes:',
+      'Already extracted fields',
+    ]
+
+    for (const pattern of patterns) {
+      const idx = combinedPrompt.indexOf(pattern)
+      if (idx > 100) {
+        // System prompt should be at least 100 chars
+        const systemPrompt = combinedPrompt.substring(0, idx).trim()
+        const userPrompt = combinedPrompt.substring(idx).trim()
+        return {
+          systemPrompt: systemPrompt.replace(/\n+$/, ''),
+          userPrompt,
+        }
+      }
+    }
+  }
+
+  // Final fallback: return empty system prompt and full prompt as user prompt
+  console.warn(
+    '[Report Generator] Unable to split combined prompt. ' +
+      'System prompt may be missing or prompt format is unrecognized.'
+  )
+  return {
+    systemPrompt: '',
+    userPrompt: combinedPrompt,
+    warning: 'Unable to split combined prompt - system prompt may be missing',
+  }
 }
 
 /**
@@ -321,14 +610,114 @@ function buildTemplateReplacements(report: EvaluationReport): Record<string, str
 
   const sampleTracesSection = sampleTraces
     .map((sample) => {
-      return `### Trace: ${sample.testId}
+      const trace = sample.trace as {
+        timestamp?: string
+        flow?: string
+        inputs?: unknown
+        extraction?: unknown
+        routingDecision?: unknown
+        complianceCheck?: unknown
+        llmCalls?: Array<{
+          agent?: string
+          model?: string
+          systemPrompt?: string
+          userPrompt?: string
+          promptTokens?: number
+          completionTokens?: number
+          totalTokens?: number
+        }>
+        rulesConsulted?: unknown
+        [key: string]: unknown
+      }
 
-\`\`\`json
-${JSON.stringify(sample.trace, null, 2)}
-\`\`\`
+      // Extract LLM prompts if available
+      const llmCall = trace.llmCalls?.[0]
+      const systemPrompt = llmCall?.systemPrompt
+      const userPrompt = llmCall?.userPrompt
 
----
-`
+      // Build trace sections
+      const sections: string[] = []
+
+      sections.push(`### Trace: ${sample.testId}`)
+
+      // System Prompt
+      if (systemPrompt) {
+        sections.push(`#### System Prompt\n\n\`\`\`\n${systemPrompt}\n\`\`\`\n`)
+      }
+
+      // User Prompt
+      if (userPrompt) {
+        sections.push(`#### User Prompt\n\n\`\`\`\n${userPrompt}\n\`\`\`\n`)
+      }
+
+      // Inputs
+      if (trace.inputs) {
+        sections.push(
+          `#### Inputs\n\n\`\`\`json\n${JSON.stringify(trace.inputs, null, 2)}\n\`\`\`\n`
+        )
+      }
+
+      // Extraction
+      if (trace.extraction) {
+        sections.push(
+          `#### Extraction\n\n\`\`\`json\n${JSON.stringify(trace.extraction, null, 2)}\n\`\`\`\n`
+        )
+      }
+
+      // Routing Decision
+      if (trace.routingDecision) {
+        sections.push(
+          `#### Routing Decision\n\n\`\`\`json\n${JSON.stringify(trace.routingDecision, null, 2)}\n\`\`\`\n`
+        )
+      }
+
+      // Compliance Check
+      if (trace.complianceCheck) {
+        sections.push(
+          `#### Compliance Check\n\n\`\`\`json\n${JSON.stringify(trace.complianceCheck, null, 2)}\n\`\`\`\n`
+        )
+      }
+
+      // LLM Calls (without prompts, already shown above)
+      if (trace.llmCalls && trace.llmCalls.length > 0) {
+        const llmCallsWithoutPrompts = trace.llmCalls.map((call) => {
+          const { systemPrompt: _, userPrompt: __, ...rest } = call
+          return rest
+        })
+        sections.push(
+          `#### LLM Calls\n\n\`\`\`json\n${JSON.stringify(llmCallsWithoutPrompts, null, 2)}\n\`\`\`\n`
+        )
+      }
+
+      // Rules Consulted
+      if (trace.rulesConsulted) {
+        sections.push(
+          `#### Rules Consulted\n\n\`\`\`json\n${JSON.stringify(trace.rulesConsulted, null, 2)}\n\`\`\`\n`
+        )
+      }
+
+      // Other fields
+      const knownFields = [
+        'timestamp',
+        'flow',
+        'inputs',
+        'extraction',
+        'routingDecision',
+        'complianceCheck',
+        'llmCalls',
+        'rulesConsulted',
+      ]
+      const otherFields = Object.entries(trace).filter(([key]) => !knownFields.includes(key))
+      if (otherFields.length > 0) {
+        const otherData = Object.fromEntries(otherFields)
+        sections.push(
+          `#### Other Data\n\n\`\`\`json\n${JSON.stringify(otherData, null, 2)}\n\`\`\`\n`
+        )
+      }
+
+      sections.push('---\n')
+
+      return sections.join('\n')
     })
     .join('\n')
 

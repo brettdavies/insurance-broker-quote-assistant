@@ -9,6 +9,7 @@ export function HomeScreen() {
     clear: () => void
     insertText: (text: string) => void
     setContent: (text: string) => void
+    getTextWithoutPills: () => string
   } | null>(null)
 
   // Handle content change - trigger transition on first keystroke or field injection

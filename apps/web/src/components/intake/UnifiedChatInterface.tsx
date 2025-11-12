@@ -47,6 +47,7 @@ interface UnifiedChatInterfaceProps {
     clear: () => void
     insertText: (text: string) => void
     setContent: (text: string) => void
+    getTextWithoutPills: () => string
   } | null>
 }
 
@@ -80,6 +81,7 @@ export function UnifiedChatInterface({
     clear: () => void
     insertText: (text: string) => void
     setContent: (text: string) => void
+    getTextWithoutPills: () => string
   } | null>(null)
   const editorRef = externalEditorRef || internalEditorRef
 
@@ -93,6 +95,7 @@ export function UnifiedChatInterface({
     clear: () => void
     insertText: (text: string) => void
     setContent: (text: string) => void
+    getTextWithoutPills: () => string
   } | null>(null)
 
   // Global keyboard shortcuts
@@ -110,6 +113,13 @@ export function UnifiedChatInterface({
   // Update profile ref when profile changes
   useEffect(() => {
     profileRef.current = profile
+  }, [profile])
+
+  // Expose profile state on window for E2E testing
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      ;(window as unknown as { __profileState?: UserProfile }).__profileState = profile
+    }
   }, [profile])
 
   // Trigger policy analysis when policySummary is available in policy mode
@@ -186,13 +196,14 @@ export function UnifiedChatInterface({
   )
 
   // Handle field extraction from pills
+  // biome-ignore lint/correctness/useExhaustiveDependencies: editorRef.current is a ref and doesn't need to be in deps
   const handleFieldExtracted = useCallback(
-    (extractedFields: Record<string, string | number>) => {
+    (extractedFields: Record<string, string | number | boolean>) => {
       if (Object.keys(extractedFields).length === 0) return
 
       // Track fields that actually changed before updating state
       const currentProfile = profileRef.current
-      const changedFields: Array<[string, string | number]> = []
+      const changedFields: Array<[string, string | number | boolean]> = []
       for (const [key, value] of Object.entries(extractedFields)) {
         if (currentProfile[key as keyof UserProfile] !== value) {
           changedFields.push([key, value])
@@ -226,13 +237,17 @@ export function UnifiedChatInterface({
       }
 
       const timer = setTimeout(async () => {
-        const currentContent = editorContentRef.current
-        if (!currentContent.trim()) return
+        // Get cleaned text (without pills) from editor
+        const cleanedText = editorRef.current?.getTextWithoutPills() || ''
+        if (!cleanedText.trim()) return
+
+        // Get current profile state (pills) to send as structured data
+        const pills = profileRef.current
 
         try {
           const result = await intakeMutation.mutateAsync({
-            message: currentContent,
-            conversationHistory: [], // No conversation history - AI extraction happens silently
+            message: cleanedText,
+            pills: Object.keys(pills).length > 0 ? pills : undefined,
           })
 
           // Store latest intake result for prefill packet access

@@ -1,17 +1,5 @@
 import type { PolicySummary, UserProfile } from '@repo/shared'
-import { policySummarySchema, userProfileSchema } from '@repo/shared'
-import {
-  type NormalizedField,
-  extractAge,
-  extractDrivers,
-  extractHouseholdSize,
-  extractKids,
-  extractNormalizedFields,
-  extractOwnsHome,
-  extractStateFromText,
-  extractZip,
-  inferHouseholdSize,
-} from '@repo/shared'
+import { extractStateFromText, policySummarySchema, userProfileSchema } from '@repo/shared'
 import { hasKeyValueSyntax, parseKeyValueSyntax } from '../utils/key-value-parser'
 import { logError } from '../utils/logger'
 import type { LLMProvider } from './llm-provider'
@@ -38,13 +26,27 @@ export class ConversationalExtractor {
   constructor(private llmProvider: LLMProvider) {}
 
   /**
+   * Get the last prompts used by the LLM provider (for trace logging)
+   */
+  getLastPrompts(): { systemPrompt?: string; userPrompt?: string } | null {
+    // Check if LLM provider has getLastPrompt method (GeminiProvider)
+    if (
+      'getLastPrompt' in this.llmProvider &&
+      typeof this.llmProvider.getLastPrompt === 'function'
+    ) {
+      return this.llmProvider.getLastPrompt() || null
+    }
+    return null
+  }
+
+  /**
    * Extract structured fields from broker message
    *
-   * @param message - Current broker message
-   * @param conversationHistory - Optional array of previous messages
+   * @param message - Current broker message (cleaned text without pills)
+   * @param pills - Optional structured fields already extracted from pills (single source of truth)
    * @returns Extraction result with profile, method, confidence, and missing fields
    */
-  async extractFields(message: string, conversationHistory?: string[]): Promise<ExtractionResult> {
+  async extractFields(message: string, pills?: Partial<UserProfile>): Promise<ExtractionResult> {
     try {
       // Step 1: Try key-value parser first (instant, free, deterministic)
       if (hasKeyValueSyntax(message)) {
@@ -72,182 +74,31 @@ export class ConversationalExtractor {
         }
       }
 
-      // Step 2: Extract normalized fields from natural language using shared utilities
-      // This handles patterns like "2 drivers", "California", "owns home", etc.
-      // These can help guide the LLM extraction
-      let partialFields: Partial<UserProfile> = {}
-      try {
-        // Use shared normalization utilities to extract fields from natural language
-        const normalizedFields = extractNormalizedFields(message)
-
-        // Build map for inference
-        const extractedFieldsMap = new Map<string, NormalizedField>()
-
-        // Convert normalized fields to partial profile
-        for (const field of normalizedFields) {
-          if (field.fieldName === 'drivers' && typeof field.value === 'number') {
-            partialFields.drivers = field.value
-            extractedFieldsMap.set('drivers', field)
-          } else if (field.fieldName === 'kids' && typeof field.value === 'number') {
-            partialFields.kids = field.value
-            extractedFieldsMap.set('kids', field)
-          } else if (field.fieldName === 'householdSize' && typeof field.value === 'number') {
-            partialFields.householdSize = field.value
-            extractedFieldsMap.set('householdSize', field)
-          } else if (field.fieldName === 'ownsHome' && typeof field.value === 'boolean') {
-            partialFields.ownsHome = field.value
-          } else if (field.fieldName === 'zip' && typeof field.value === 'string') {
-            partialFields.zip = field.value
-          } else if (field.fieldName === 'age' && typeof field.value === 'number') {
-            partialFields.age = field.value
-          }
-        }
-
-        // Infer householdSize from indicator fields if not explicitly set
-        if (!partialFields.householdSize) {
-          const inferredHouseholdSize = inferHouseholdSize(extractedFieldsMap)
-          if (inferredHouseholdSize) {
-            partialFields.householdSize = inferredHouseholdSize.value as number
-          }
-        }
-
-        // Also try explicit key-value syntax parsing (e.g., "state:CA age:35")
-        // This handles structured input that may not be caught by natural language extraction
-        try {
-          const kvResult = parseKeyValueSyntax(message)
-          const kvProfile = this.validateProfile(kvResult.profile)
-          // Merge key-value fields (they take precedence as they're explicit)
-          partialFields = { ...partialFields, ...kvProfile }
-        } catch {
-          // Ignore key-value parsing errors
-        }
-
-        // Apply deterministic state normalization if state is still missing
-        if (!partialFields.state) {
-          const extractedState = extractStateFromText(message)
-          if (extractedState) {
-            partialFields = { ...partialFields, state: extractedState }
-          }
-        }
-      } catch {
-        // Ignore errors - partial extraction is optional
-      }
-
-      // Step 3: Use LLM for natural language extraction (fallback)
-      // Pass partial fields as context in the prompt if available
+      // Step 2: Use LLM for natural language extraction
+      // Pills are passed as partialFields (single source of truth for structured data)
+      // Use temperature 0.1 for extraction (or GEMINI_TEMPERATURE_EXTRACTION env var)
       const llmResult = await this.llmProvider.extractWithStructuredOutput(
         message,
-        conversationHistory,
         userProfileSchema,
-        Object.keys(partialFields).length > 0 ? partialFields : undefined
+        pills && Object.keys(pills).length > 0 ? pills : undefined,
+        0.1 // Temperature for extraction (deterministic behavior)
       )
 
       // Validate extracted profile against schema
-      let validatedProfile = this.validateProfile(llmResult.profile)
+      const validatedProfile = this.validateProfile(llmResult.profile)
 
-      // Merge partial fields from pills with LLM extraction result
-      // Partial fields take precedence (they're deterministic from pills)
-      if (partialFields && Object.keys(partialFields).length > 0) {
-        validatedProfile = { ...validatedProfile, ...partialFields }
-      }
-
-      // Step 4: Apply deterministic field extraction for missing fields
-      // These are fallbacks when LLM doesn't extract them
-      if (!validatedProfile.state) {
-        const extractedState = extractStateFromText(message)
-        if (extractedState) {
-          validatedProfile = { ...validatedProfile, state: extractedState }
-        }
-      }
-
-      if (!validatedProfile.age) {
-        const ageField = extractAge(message)
-        if (ageField && typeof ageField.value === 'number') {
-          validatedProfile = { ...validatedProfile, age: ageField.value }
-        }
-      }
-
-      // Extract drivers and kids separately (not householdSize directly)
-      // Build map of extracted fields for inference
-      const extractedFieldsMap = new Map<string, NormalizedField>()
-
-      // Extract drivers if not already set
-      if (!validatedProfile.drivers) {
-        const driversField = extractDrivers(message)
-        if (driversField) {
-          validatedProfile = { ...validatedProfile, drivers: driversField.value as number }
-          extractedFieldsMap.set('drivers', driversField)
-        }
-      } else if (validatedProfile.drivers !== undefined) {
-        // Already set (from LLM or pills) - add to map for inference
-        extractedFieldsMap.set('drivers', {
-          fieldName: 'drivers',
-          value: validatedProfile.drivers,
-          originalText: '(already extracted)',
-          startIndex: 0,
-          endIndex: 0,
-        })
-      }
-
-      // Extract kids if not already set
-      if (!validatedProfile.kids) {
-        const kidsField = extractKids(message)
-        if (kidsField) {
-          validatedProfile = { ...validatedProfile, kids: kidsField.value as number }
-          extractedFieldsMap.set('kids', kidsField)
-        }
-      } else if (validatedProfile.kids !== undefined) {
-        // Already set (from LLM or pills) - add to map for inference
-        extractedFieldsMap.set('kids', {
-          fieldName: 'kids',
-          value: validatedProfile.kids,
-          originalText: '(already extracted)',
-          startIndex: 0,
-          endIndex: 0,
-        })
-      }
-
-      // Extract explicit householdSize mentions (never overwrite if already set)
-      if (!validatedProfile.householdSize) {
-        const householdSizeField = extractHouseholdSize(message)
-        if (householdSizeField && typeof householdSizeField.value === 'number') {
-          validatedProfile = { ...validatedProfile, householdSize: householdSizeField.value }
-          // If we extracted it explicitly, add to map to prevent inference
-          extractedFieldsMap.set('householdSize', householdSizeField)
-        }
-      }
-
-      // Infer householdSize from indicator fields if not explicitly set
-      // Never overwrites an explicitly set householdSize
-      if (!validatedProfile.householdSize) {
-        const inferredHouseholdSize = inferHouseholdSize(extractedFieldsMap)
-        if (inferredHouseholdSize) {
-          validatedProfile = {
-            ...validatedProfile,
-            householdSize: inferredHouseholdSize.value as number,
-          }
-        }
-      }
-
-      if (validatedProfile.ownsHome === undefined || validatedProfile.ownsHome === null) {
-        const ownsHomeField = extractOwnsHome(message)
-        if (ownsHomeField && typeof ownsHomeField.value === 'boolean') {
-          validatedProfile = { ...validatedProfile, ownsHome: ownsHomeField.value }
-        }
-      }
-
-      if (!validatedProfile.zip) {
-        const zipField = extractZip(message)
-        if (zipField && typeof zipField.value === 'string') {
-          validatedProfile = { ...validatedProfile, zip: zipField.value }
-        }
-      }
+      // Merge pills with LLM extraction result
+      // Pills take precedence (they're the single source of truth from frontend)
+      const finalProfile =
+        pills && Object.keys(pills).length > 0
+          ? { ...validatedProfile, ...pills }
+          : validatedProfile
 
       // Calculate missing fields
-      const missingFields = this.calculateMissingFields(validatedProfile)
+      const missingFields = this.calculateMissingFields(finalProfile)
 
       return {
-        profile: validatedProfile,
+        profile: finalProfile,
         extractionMethod: 'llm',
         confidence: llmResult.confidence,
         missingFields,
@@ -436,7 +287,6 @@ export class ConversationalExtractor {
       // Use LLM to extract structured policy data from text
       const llmResult = await this.llmProvider.extractWithStructuredOutput(
         policyText,
-        undefined, // No conversation history for policy extraction
         policySummarySchema
       )
 

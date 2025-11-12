@@ -19,7 +19,10 @@ function getAllProducts(
   customerData?: UserProfile
 ): Array<'auto' | 'home' | 'renters' | 'umbrella'> {
   const policyProducts = policy.productType ? [policy.productType] : []
-  const existingProducts = customerData?.existingPolicies?.map((p) => p.product) || []
+  const existingProducts =
+    customerData?.existingPolicies
+      ?.map((p) => p.product)
+      .filter((p): p is 'auto' | 'home' | 'renters' | 'umbrella' => p !== undefined) || []
   return [...policyProducts, ...existingProducts]
 }
 

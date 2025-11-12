@@ -33,6 +33,7 @@ interface UploadPanelProps {
     clear: () => void
     insertText: (text: string) => void
     setContent: (text: string) => void
+    getTextWithoutPills: () => string
   } | null>
 }
 
@@ -51,6 +52,7 @@ export function UploadPanel({
     clear: () => void
     insertText: (text: string) => void
     setContent: (text: string) => void
+    getTextWithoutPills: () => string
   } | null>(null)
   const internalFileInputRef = useRef<HTMLInputElement | null>(null)
   const editorRef = externalEditorRef || internalEditorRef

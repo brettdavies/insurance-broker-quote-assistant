@@ -10,7 +10,7 @@ import { z } from 'zod'
 
 /**
  * LLM Call Schema
- * Tracks individual LLM API calls with token usage
+ * Tracks individual LLM API calls with token usage and prompts
  */
 export const llmCallSchema = z.object({
   agent: z.string(), // Agent name (e.g., 'conversational-extractor', 'pitch-generator')
@@ -18,6 +18,8 @@ export const llmCallSchema = z.object({
   promptTokens: z.number().int().nonnegative().optional(),
   completionTokens: z.number().int().nonnegative().optional(),
   totalTokens: z.number().int().nonnegative().optional(),
+  systemPrompt: z.string().optional(), // System prompt used for this LLM call
+  userPrompt: z.string().optional(), // User prompt used for this LLM call
 })
 
 export type LLMCall = z.infer<typeof llmCallSchema>

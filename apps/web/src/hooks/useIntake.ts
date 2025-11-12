@@ -7,12 +7,12 @@
 
 import { api } from '@/lib/api-client'
 import { extractFields, parseKeyValueSyntax } from '@/lib/key-value-parser'
-import type { IntakeResult } from '@repo/shared'
+import type { IntakeResult, UserProfile } from '@repo/shared'
 import { useMutation, useQueryClient } from '@tanstack/react-query'
 
 export interface IntakeRequest {
   message: string
-  conversationHistory?: Array<{ role: string; content: string }>
+  pills?: Partial<UserProfile>
 }
 
 /**

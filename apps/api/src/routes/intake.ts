@@ -5,7 +5,7 @@ import type {
   RouteDecision,
   UserProfile,
 } from '@repo/shared'
-import { prefillPacketSchema } from '@repo/shared'
+import { prefillPacketSchema, userProfileSchema } from '@repo/shared'
 import { Hono } from 'hono'
 import { z } from 'zod'
 import { validateOutput } from '../services/compliance-filter'
@@ -27,7 +27,7 @@ import { logError } from '../utils/logger'
 // Request body schema
 const intakeRequestSchema = z.object({
   message: z.string().min(1),
-  conversationHistory: z.array(z.string()).optional(),
+  pills: userProfileSchema.partial().optional(),
   // Test-only field: allows injecting a pitch for end-to-end compliance testing
   // Only accepted when NODE_ENV=test
   testPitch: z.string().optional(),
@@ -63,12 +63,15 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
         )
       }
 
-      const { message, conversationHistory, testPitch } = validationResult.data
+      const { message, pills, testPitch } = validationResult.data
 
       // Extract fields using Conversational Extractor
-      const extractionResult = await extractor.extractFields(message, conversationHistory)
+      // Pills are passed as partialFields (single source of truth for structured data)
+      const extractionResult = await extractor.extractFields(message, pills)
 
-      // Build llmCalls array from extraction token usage
+      // Build llmCalls array from extraction token usage and prompts
+      // Prompts are retrieved from extractor (which gets them from LLM provider instance state)
+      const lastPrompts = extractor.getLastPrompts()
       const llmCalls =
         extractionResult.extractionMethod === 'llm' && extractionResult.tokenUsage
           ? [
@@ -78,6 +81,8 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
                 promptTokens: extractionResult.tokenUsage.promptTokens,
                 completionTokens: extractionResult.tokenUsage.completionTokens,
                 totalTokens: extractionResult.tokenUsage.totalTokens,
+                systemPrompt: lastPrompts?.systemPrompt,
+                userPrompt: lastPrompts?.userPrompt,
               },
             ]
           : undefined
@@ -132,7 +137,6 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
         'conversational',
         {
           message,
-          conversationHistory: conversationHistory || [],
         },
         {
           method: extractionResult.extractionMethod,

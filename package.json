@@ -16,7 +16,8 @@
     "format": "biome format --write . && prettier --write '**/*.{tsx,jsx}'",
     "format:check": "biome format . && prettier --check '**/*.{tsx,jsx}'",
     "validate-knowledge-pack": "bun run scripts/validate-knowledge-pack.ts",
-    "evaluate": "GEMINI_API_KEY='' bun run evaluation/harness.ts",
+    "evaluate": "bun run evaluation/run-evaluation.ts",
+    "evaluate:env": "bun run evaluation/start-eval-env.ts",
     "prepare": "husky"
   },
   "dependencies": {
@@ -35,6 +36,7 @@
     "ajv-formats": "^3.0.1",
     "concurrently": "^9.2.1",
     "husky": "^9.0",
+    "playwright": "^1.56.1",
     "prettier": "^3.0",
     "prettier-plugin-tailwindcss": "^0.5",
     "typescript": "^5.6"

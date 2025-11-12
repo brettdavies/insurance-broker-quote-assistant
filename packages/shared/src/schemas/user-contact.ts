@@ -11,7 +11,7 @@ import { z } from 'zod'
 
 export const userContactSchema = z.object({
   name: z.string().optional(), // Full name or first name
-  email: z.string().email().optional(),
+  email: z.string().optional(), // Email address (format validation removed to prevent schema issues)
   phone: z.string().optional(),
   zip: z.string().optional(), // Zip code
   state: z.string().optional(), // US state code

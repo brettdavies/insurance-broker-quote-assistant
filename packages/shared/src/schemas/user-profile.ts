@@ -15,11 +15,12 @@ import { userContactSchema } from './user-contact'
 /**
  * Existing Policy Schema
  * Represents a policy the user currently has for bundle discount analysis
+ * All fields are optional to prevent forced population that causes hallucinations
  */
 export const existingPolicySchema = z.object({
-  product: productTypeEnum,
-  carrier: z.string(), // Carrier ID/name matching knowledge pack carrier names
-  premium: z.number().positive(), // Annual premium
+  product: productTypeEnum.optional(),
+  carrier: z.string().optional(), // Carrier ID/name matching knowledge pack carrier names
+  premium: z.number().positive().optional(), // Annual premium
 })
 
 export type ExistingPolicy = z.infer<typeof existingPolicySchema>
@@ -47,6 +48,7 @@ export const userProfileSchema = userContactSchema.extend({
 
   // Optional eligibility fields
   cleanRecord3Yr: z.boolean().optional(), // Clean driving record (3 years)
+  cleanRecord5Yr: z.boolean().optional(), // Clean driving record (5 years)
   creditScore: z.number().int().min(300).max(850).optional(), // Credit score (FICO range)
   propertyType: propertyTypeEnum.optional(), // Property type for home/renters insurance
 

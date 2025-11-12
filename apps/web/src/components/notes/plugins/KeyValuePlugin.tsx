@@ -71,10 +71,24 @@ export function KeyValuePlugin(): null {
             // 1. Text ends with space, comma, or period (editing complete) - ALWAYS transform
             // 2. User is not actively editing this node (moved cursor away)
             // 3. Cursor is at a delimiter position (space/comma/period immediately before cursor)
+            // 4. Text ends with a complete field value (for normalized fields like zip)
             let shouldTransform = false
             let shouldSuppressDelimiter = false
 
-            if (isEditing) {
+            // Check if text ends with a complete normalized field (like "Zip 90210")
+            // This handles cases where normalized fields don't have trailing delimiters
+            const textEndsWithCompleteField = parsed.some((match) => {
+              const matchEnd = text.lastIndexOf(match.original) + match.original.length
+              return matchEnd === text.length
+            })
+
+            if (textEndsWithCompleteField) {
+              // If text ends with a complete field, transform it even if still editing
+              // This ensures normalized fields like "Zip 90210" get transformed
+              shouldTransform = true
+            }
+
+            if (isEditing && !shouldTransform) {
               // Check if cursor is at a delimiter position
               const cursorOffset = $isRangeSelection(selection) ? selection.anchor.offset : 0
               const charBeforeCursor = text[cursorOffset - 1]

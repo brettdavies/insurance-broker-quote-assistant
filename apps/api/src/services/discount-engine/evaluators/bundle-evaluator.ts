@@ -31,8 +31,8 @@ export class BundleDiscountEvaluator extends BaseDiscountEvaluator {
       // Add premiums from existing policies if they're part of the bundle
       if (customerData?.existingPolicies) {
         for (const existingPolicy of customerData.existingPolicies) {
-          if (bundleProducts.includes(existingPolicy.product)) {
-            totalBundlePremium += existingPolicy.premium
+          if (existingPolicy.product && bundleProducts.includes(existingPolicy.product)) {
+            totalBundlePremium += existingPolicy.premium ?? 0
           }
         }
       }

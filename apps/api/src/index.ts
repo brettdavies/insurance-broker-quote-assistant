@@ -1,6 +1,5 @@
 import type { PrefillPacket, RouteDecision, UserProfile } from '@repo/shared'
 import { prefillPacketSchema, userProfileSchema } from '@repo/shared'
-import { createMockLLMProvider } from '@repo/shared'
 import { Hono } from 'hono'
 import { cors } from 'hono/cors'
 import { z } from 'zod'
@@ -67,9 +66,16 @@ if (useRealLLM) {
   )
   console.log('✅ Using real Gemini API (LLM enabled)')
 } else {
-  // Use mock provider for testing (when TEST_TARGETS=mock)
-  llmProvider = createMockLLMProvider()
-  console.log('⚠️  Using mock LLM provider (TEST_TARGETS=mock)')
+  // Mock provider not available in production - use real LLM instead
+  // (Mock provider is only available in test files)
+  llmProvider = new GeminiProvider(
+    config.geminiApiKey || undefined,
+    config.geminiModel,
+    config.llmTimeoutMs
+  )
+  console.log(
+    '⚠️  TEST_TARGETS=mock specified but mock provider not available in production - using real Gemini API'
+  )
 }
 
 const conversationalExtractor = new ConversationalExtractor(llmProvider)

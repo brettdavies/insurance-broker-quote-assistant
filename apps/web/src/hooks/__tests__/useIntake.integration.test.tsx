@@ -114,12 +114,12 @@ describe('useIntake Hook Integration', () => {
     expect(result.current.data).toBeTruthy()
   })
 
-  it('handles conversation history parameter', async () => {
+  it('handles pills parameter', async () => {
     const { result } = renderHook(() => useIntake(), { wrapper })
 
     const request: IntakeRequest = {
       message: 'k:2',
-      conversationHistory: [{ role: 'user', content: 'Previous message' }],
+      pills: { state: 'CA' },
     }
 
     result.current.mutate(request)

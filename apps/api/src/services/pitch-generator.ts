@@ -230,10 +230,12 @@ export class PitchGenerator {
     try {
       // Use extractWithStructuredOutput but adapt for pitch generation
       // The LLMProvider interface returns ExtractionResult, but we'll extract the pitch
+      // Use temperature 0.3 for pitch generation (or GEMINI_TEMPERATURE_PITCH env var)
       const result = await this.llmProvider.extractWithStructuredOutput(
         prompt,
-        undefined,
-        pitchResultSchema
+        pitchResultSchema,
+        undefined, // No partial fields for pitch generation
+        0.3 // Temperature for pitch generation (more creative)
       )
 
       // Extract pitch from profile field (workaround for LLMProvider interface)

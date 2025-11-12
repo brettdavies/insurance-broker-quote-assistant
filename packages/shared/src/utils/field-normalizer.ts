@@ -262,6 +262,48 @@ export function extractDrivers(text: string): NormalizedField | null {
 }
 
 /**
+ * Extract number of vehicles from broker notes
+ * Looks for patterns like "2 cars", "3 vehicles", "1 car", etc.
+ */
+export function extractVehicles(text: string): NormalizedField | null {
+  const lowerText = text.toLowerCase()
+
+  // Pattern: "X cars" or "X car"
+  const carsMatch = lowerText.match(/(\d+)\s+cars?/)
+  if (carsMatch) {
+    const num = Number.parseInt(carsMatch[1] || '', 10)
+    if (!Number.isNaN(num) && num > 0) {
+      const startIndex = carsMatch.index ?? 0
+      return {
+        fieldName: 'vehicles',
+        value: num,
+        originalText: carsMatch[0],
+        startIndex,
+        endIndex: startIndex + carsMatch[0].length,
+      }
+    }
+  }
+
+  // Pattern: "X vehicles" or "X vehicle"
+  const vehiclesMatch = lowerText.match(/(\d+)\s+vehicles?/)
+  if (vehiclesMatch) {
+    const num = Number.parseInt(vehiclesMatch[1] || '', 10)
+    if (!Number.isNaN(num) && num > 0) {
+      const startIndex = vehiclesMatch.index ?? 0
+      return {
+        fieldName: 'vehicles',
+        value: num,
+        originalText: vehiclesMatch[0],
+        startIndex,
+        endIndex: startIndex + vehiclesMatch[0].length,
+      }
+    }
+  }
+
+  return null
+}
+
+/**
  * Extract number of kids from broker notes
  * Looks for patterns like "2 kids", "3 children", etc.
  */
@@ -366,33 +408,56 @@ export function extractHouseholdSize(text: string): NormalizedField | null {
 export function extractOwnsHome(text: string): NormalizedField | null {
   const lowerText = text.toLowerCase()
 
-  // Positive indicators
-  const ownsMatch = lowerText.match(
-    /\b(owns\s+home|homeowner|owns\s+house|owns\s+property|home\s+owner)\b/
-  )
-  if (ownsMatch) {
-    const startIndex = ownsMatch.index ?? 0
-    return {
-      fieldName: 'ownsHome',
-      value: true,
-      originalText: ownsMatch[0],
-      startIndex,
-      endIndex: startIndex + ownsMatch[0].length,
+  // Positive indicators - handle end of string with $ anchor
+  const ownsPatterns = [
+    /\b(owns\s+home|homeowner|owns\s+house|owns\s+property|home\s+owner)(?:\s|$|\.|,)/i,
+    /\b(owns\s+home|homeowner|owns\s+house|owns\s+property|home\s+owner)$/i, // End of string
+  ]
+
+  for (const pattern of ownsPatterns) {
+    const ownsMatch = text.match(pattern)
+    if (ownsMatch) {
+      const startIndex = ownsMatch.index ?? 0
+      // Extract just the matched phrase without trailing punctuation
+      const phraseMatch = ownsMatch[0].match(
+        /\b(owns\s+home|homeowner|owns\s+house|owns\s+property|home\s+owner)\b/i
+      )
+      if (phraseMatch?.[1] && phraseMatch.index !== undefined) {
+        const phraseStartIndex = startIndex + phraseMatch.index
+        return {
+          fieldName: 'ownsHome',
+          value: true,
+          originalText: phraseMatch[1],
+          startIndex: phraseStartIndex,
+          endIndex: phraseStartIndex + phraseMatch[1].length,
+        }
+      }
     }
   }
 
-  // Negative indicators
-  const rentsMatch = lowerText.match(
-    /\b(rents|renting|renter|rental|apartment|apt|leases|leasing)\b/
-  )
-  if (rentsMatch) {
-    const startIndex = rentsMatch.index ?? 0
-    return {
-      fieldName: 'ownsHome',
-      value: false,
-      originalText: rentsMatch[0],
-      startIndex,
-      endIndex: startIndex + rentsMatch[0].length,
+  // Negative indicators - handle end of string
+  const rentsPatterns = [
+    /\b(rents|renting|renter|rental|apartment|apt|leases|leasing)(?:\s|$|\.|,)/i,
+    /\b(rents|renting|renter|rental|apartment|apt|leases|leasing)$/i, // End of string
+  ]
+
+  for (const pattern of rentsPatterns) {
+    const rentsMatch = text.match(pattern)
+    if (rentsMatch) {
+      const startIndex = rentsMatch.index ?? 0
+      const phraseMatch = rentsMatch[0].match(
+        /\b(rents|renting|renter|rental|apartment|apt|leases|leasing)\b/i
+      )
+      if (phraseMatch?.[1] && phraseMatch.index !== undefined) {
+        const phraseStartIndex = startIndex + phraseMatch.index
+        return {
+          fieldName: 'ownsHome',
+          value: false,
+          originalText: phraseMatch[1],
+          startIndex: phraseStartIndex,
+          endIndex: phraseStartIndex + phraseMatch[1].length,
+        }
+      }
     }
   }
 
@@ -404,48 +469,202 @@ export function extractOwnsHome(text: string): NormalizedField | null {
  * Looks for patterns like "zip 90210", "90210", "zip code 90210", etc.
  */
 export function extractZip(text: string): NormalizedField | null {
-  // Pattern: "zip 90210" or "zip code 90210"
-  const zipMatch = text.match(/\bzip\s+(?:code\s+)?(\d{5}(?:-\d{4})?)\b/i)
-  if (zipMatch?.[1]) {
-    const startIndex = zipMatch.index ?? 0
-    return {
-      fieldName: 'zip',
-      value: zipMatch[1],
-      originalText: zipMatch[0],
-      startIndex,
-      endIndex: startIndex + zipMatch[0].length,
-    }
-  }
+  // Pattern: "zip 90210" or "zip code 90210" - handle end of string with $ anchor
+  // Also handle newlines, spaces, and other whitespace at end
+  const zipPatterns = [
+    // Match "zip 90210" at end of string (with optional trailing whitespace/newlines)
+    /\bzip\s+(?:code\s+)?(\d{5}(?:-\d{4})?)\s*$/i,
+    // Match "zip 90210" followed by whitespace, punctuation, or end
+    /\bzip\s+(?:code\s+)?(\d{5}(?:-\d{4})?)(?:\s+|$|\.|,|;)/i,
+  ]
 
-  // Pattern: standalone 5-digit number near "zip" keyword
-  const standaloneMatch = text.match(/\b(zip|postal|postcode|zcode)\s*:?\s*(\d{5}(?:-\d{4})?)\b/i)
-  if (standaloneMatch?.[2]) {
-    const startIndex = standaloneMatch.index ?? 0
-    return {
-      fieldName: 'zip',
-      value: standaloneMatch[2],
-      originalText: standaloneMatch[0],
-      startIndex,
-      endIndex: startIndex + standaloneMatch[0].length,
-    }
-  }
-
-  // Pattern: "90210" as standalone (only if near zip-related keywords)
-  const contextMatch = text.match(/\b(\d{5})\b/)
-  if (contextMatch) {
-    const potentialZip = contextMatch[1]
-    if (potentialZip && potentialZip.length === 5) {
-      const context = text.toLowerCase()
-      const zipIndex = context.indexOf(potentialZip)
-      const beforeContext = context.substring(Math.max(0, zipIndex - 20), zipIndex)
-      if (beforeContext.match(/\b(zip|postal|postcode|address|location)\b/)) {
-        const startIndex = contextMatch.index ?? 0
+  for (const pattern of zipPatterns) {
+    const zipMatch = text.match(pattern)
+    if (zipMatch?.[1]) {
+      const startIndex = zipMatch.index ?? 0
+      // Extract the full "zip 90210" phrase
+      const phraseMatch = text.substring(startIndex).match(/zip\s+(?:code\s+)?(\d{5}(?:-\d{4})?)/i)
+      if (phraseMatch) {
         return {
           fieldName: 'zip',
-          value: potentialZip,
-          originalText: contextMatch[0],
+          value: zipMatch[1],
+          originalText: phraseMatch[0],
           startIndex,
-          endIndex: startIndex + contextMatch[0].length,
+          endIndex: startIndex + phraseMatch[0].length,
+        }
+      }
+    }
+  }
+
+  // Pattern: standalone 5-digit number near "zip" keyword - handle end of string
+  const standalonePatterns = [
+    // Match at end of string with optional trailing whitespace
+    /\b(zip|postal|postcode|zcode)\s*:?\s*(\d{5}(?:-\d{4})?)\s*$/i,
+    // Match followed by whitespace, punctuation, or end
+    /\b(zip|postal|postcode|zcode)\s*:?\s*(\d{5}(?:-\d{4})?)(?:\s+|$|\.|,|;)/i,
+  ]
+
+  for (const pattern of standalonePatterns) {
+    const standaloneMatch = text.match(pattern)
+    if (standaloneMatch?.[2]) {
+      const startIndex = standaloneMatch.index ?? 0
+      return {
+        fieldName: 'zip',
+        value: standaloneMatch[2],
+        originalText: standaloneMatch[0],
+        startIndex,
+        endIndex: startIndex + standaloneMatch[0].length,
+      }
+    }
+  }
+
+  // Pattern: "90210" as standalone (only if near zip-related keywords) - handle end of string
+  const contextPatterns = [
+    // Match at end of string with optional trailing whitespace
+    /\b(\d{5})\s*$/,
+    // Match followed by whitespace, punctuation, or end
+    /\b(\d{5})(?:\s+|$|\.|,|;)/,
+  ]
+
+  for (const pattern of contextPatterns) {
+    const contextMatch = text.match(pattern)
+    if (contextMatch) {
+      const potentialZip = contextMatch[1]
+      if (potentialZip && potentialZip.length === 5) {
+        const context = text.toLowerCase()
+        const zipIndex = context.indexOf(potentialZip)
+        const beforeContext = context.substring(Math.max(0, zipIndex - 20), zipIndex)
+        if (beforeContext.match(/\b(zip|postal|postcode|address|location)\b/)) {
+          const startIndex = contextMatch.index ?? 0
+          return {
+            fieldName: 'zip',
+            value: potentialZip,
+            originalText: contextMatch[0],
+            startIndex,
+            endIndex: startIndex + contextMatch[0].length,
+          }
+        }
+      }
+    }
+  }
+
+  return null
+}
+
+/**
+ * Extract state from broker notes
+ * Returns NormalizedField for state extraction (used by pill creation)
+ * Handles patterns like "CA", "CA auto", "California", "in CA", etc.
+ */
+export function extractState(text: string): NormalizedField | null {
+  const stateCode = extractStateFromText(text)
+  if (!stateCode) {
+    return null
+  }
+
+  // Find the position of the state in the text
+  // Try to find state code first (2-letter codes)
+  const codeMatch = text.match(/\b([A-Z]{2})\b/)
+  if (codeMatch && normalizeState(codeMatch[1]) === stateCode) {
+    const startIndex = codeMatch.index ?? 0
+    return {
+      fieldName: 'state',
+      value: stateCode,
+      originalText: codeMatch[0],
+      startIndex,
+      endIndex: startIndex + codeMatch[0].length,
+    }
+  }
+
+  // Try to find state name
+  for (const [name, code] of Object.entries(STATE_NAME_TO_CODE)) {
+    if (code === stateCode) {
+      const namePattern = new RegExp(`\\b${name.replace(/\s+/g, '\\s+')}\\b`, 'i')
+      const nameMatch = text.match(namePattern)
+      if (nameMatch) {
+        const startIndex = nameMatch.index ?? 0
+        return {
+          fieldName: 'state',
+          value: stateCode,
+          originalText: nameMatch[0],
+          startIndex,
+          endIndex: startIndex + nameMatch[0].length,
+        }
+      }
+    }
+  }
+
+  // Fallback: if we found a state code but couldn't find its position, use the first 2-letter code
+  if (codeMatch) {
+    const startIndex = codeMatch.index ?? 0
+    return {
+      fieldName: 'state',
+      value: stateCode,
+      originalText: codeMatch[0],
+      startIndex,
+      endIndex: startIndex + codeMatch[0].length,
+    }
+  }
+
+  return null
+}
+
+/**
+ * Extract product type from broker notes
+ * Handles patterns like "auto", "CA auto", "home insurance", "renters", "umbrella", etc.
+ * IMPORTANT: Does NOT match "home" from "owns home" or "homeowner" - those are handled by ownsHome extractor
+ */
+export function extractProductType(text: string): NormalizedField | null {
+  const lowerText = text.toLowerCase()
+
+  // Product type patterns (order matters - more specific first)
+  // We'll check context manually to avoid matching "home" from "owns home"
+  const patterns = [
+    // "CA auto", "TX home" - state + product pattern (most specific)
+    /\b([A-Z]{2})\s+(auto|home|renters|umbrella)(?:\s|$|\.|,)/i,
+    // "auto insurance", "home insurance", "renters insurance", "umbrella insurance"
+    /\b(auto|home|renters|umbrella)\s+insurance(?:\s|$|\.|,)/i,
+    // Standalone product types - we'll check context after matching
+    /\b(auto|home|renters|umbrella)(?:\s|$|\.|,|insurance)/i,
+  ]
+
+  for (const pattern of patterns) {
+    const match = text.match(pattern)
+    if (match) {
+      // Extract product type (last capture group that's a product type)
+      const productType = match[match.length - 1]?.toLowerCase()
+      if (productType && ['auto', 'home', 'renters', 'umbrella'].includes(productType)) {
+        // Additional check: make sure "home" isn't from "owns home" or "homeowner"
+        const matchIndex = match.index ?? 0
+        const beforeMatch = lowerText.substring(Math.max(0, matchIndex - 10), matchIndex)
+        if (productType === 'home' && beforeMatch.match(/\b(owns|own|homeowner)\s*$/)) {
+          continue // Skip this match - it's from "owns home", not product type
+        }
+
+        const startIndex = matchIndex
+        // For "CA auto" pattern, extract just the product type part
+        if (match.length > 2 && match[2] && match[1]?.match(/^[A-Z]{2}$/)) {
+          // Find the position of the product type in the match
+          const productIndex = match[0].toLowerCase().indexOf(productType)
+          return {
+            fieldName: 'productType',
+            value: productType,
+            originalText: match[2],
+            startIndex: startIndex + productIndex,
+            endIndex: startIndex + productIndex + productType.length,
+          }
+        }
+        // Extract just the product type word, not trailing punctuation
+        const productMatch = match[0].match(new RegExp(`\\b(${productType})\\b`, 'i'))
+        if (productMatch?.[1] && productMatch.index !== undefined) {
+          const productStartIndex = startIndex + productMatch.index
+          return {
+            fieldName: 'productType',
+            value: productType,
+            originalText: productMatch[1],
+            startIndex: productStartIndex,
+            endIndex: productStartIndex + productType.length,
+          }
         }
       }
     }
@@ -532,12 +751,16 @@ export function extractNormalizedFields(text: string): NormalizedField[] {
 
   // Extract all field types (order matters - more specific patterns first)
   const extractors = [
+    extractState, // Extract state codes/names (must come before productType to handle "CA auto")
+    extractProductType, // Extract product types (after state to handle "CA auto" pattern)
+    extractVehicles, // Extract "2 cars" → vehicles: 2
     extractDrivers, // Extract "2 drivers" → drivers: 2
     extractKids, // Extract "2 kids" → kids: 2
     extractHouseholdSize, // Extract explicit household size mentions
     extractOwnsHome,
-    extractZip,
+    extractZip, // Extract "zip 90210" → zip: "90210"
     extractAge,
+    // NOTE: "clean record" is intentionally NOT extracted here - left to LLM for interpretation
   ]
 
   for (const extractor of extractors) {

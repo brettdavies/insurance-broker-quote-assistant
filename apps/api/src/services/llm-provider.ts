@@ -33,17 +33,16 @@ export interface LLMProvider {
   /**
    * Extract structured fields from natural language using structured outputs
    *
-   * @param message - Current broker message
-   * @param conversationHistory - Optional array of previous messages
+   * @param message - Current broker message (cleaned text without pills)
    * @param schema - Zod schema to convert to JSON Schema for structured output
-   * @param partialFields - Optional partial fields already extracted (e.g., from pills) to provide as context
+   * @param partialFields - Optional partial fields already extracted from pills (single source of truth)
    * @returns Extraction result with profile, confidence scores, and optional reasoning
    */
   extractWithStructuredOutput(
     message: string,
-    conversationHistory?: string[],
     schema?: unknown, // Zod schema type
-    partialFields?: Partial<UserProfile> // Partial fields from pills/key-value extraction
+    partialFields?: Partial<UserProfile>, // Partial fields from pills (single source of truth)
+    temperature?: number // Temperature for LLM generation (default: 0.1 for extraction, 0.3 for pitch)
   ): Promise<ExtractionResult>
 
   /**

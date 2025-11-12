@@ -151,6 +151,9 @@ export {
   STATE_NAME_TO_CODE,
   normalizeState,
   extractStateFromText,
+  extractState,
+  extractProductType,
+  extractVehicles,
   extractDrivers,
   extractKids,
   extractHouseholdSize,
@@ -164,4 +167,6 @@ export {
 } from './utils/field-normalizer'
 
 // Export test utilities (for use in test files only)
+// NOTE: These are excluded from browser builds - they import bun:test which can't run in browser
+// Test utilities should only be imported in test files, not in application code
 export * from './test-utils'

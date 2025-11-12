@@ -71,19 +71,21 @@ describe('GeminiProvider', () => {
       expect(result.confidence).toBeDefined()
     }, 15000)
 
-    it('should handle conversation history', async () => {
-      const result = await provider.extractWithStructuredOutput('I am 35 years old', [
-        ...testMessages.conversationHistory.progressive,
-      ])
+    it('should handle partialFields (pills)', async () => {
+      const partialFields = { state: 'CA' }
+      const result = await provider.extractWithStructuredOutput(
+        'I am 35 years old',
+        undefined, // schema (use default)
+        partialFields
+      )
 
       expect(result.profile).toBeDefined()
       // Should extract age from current message
       expect(result.profile.age).toBeDefined()
       expect(typeof result.profile.age).toBe('number')
       expect(result.profile.age).toBeGreaterThan(0)
-      // Should also extract state from conversation history (may be 'CA' or 'California')
-      expect(result.profile.state).toBeDefined()
-      expect(typeof result.profile.state).toBe('string')
+      // Should use state from partialFields
+      expect(result.profile.state).toBe('CA')
     }, 15000)
 
     it('should return structured output matching schema', async () => {
