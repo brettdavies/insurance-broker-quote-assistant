@@ -3,13 +3,16 @@ import { mkdir, rm, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import app from '../../index'
 import { loadKnowledgePack } from '../../services/knowledge-pack-loader'
+import { TestClient, expectSuccessResponse } from '../helpers'
 
 describe('Health Endpoint Integration', () => {
   const testKnowledgePackDir = 'test_knowledge_pack'
   const testCarriersDir = join(testKnowledgePackDir, 'carriers')
   const testStatesDir = join(testKnowledgePackDir, 'states')
+  let client: TestClient
 
   beforeEach(async () => {
+    client = new TestClient(app, 'http://localhost:7070')
     // Create test directories
     await mkdir(testCarriersDir, { recursive: true })
     await mkdir(testStatesDir, { recursive: true })
@@ -93,9 +96,7 @@ describe('Health Endpoint Integration', () => {
     await loadKnowledgePack(testKnowledgePackDir)
 
     // Test health endpoint
-    const req = new Request('http://localhost:7070/api/health')
-    const res = await app.request(req)
-    const body = (await res.json()) as {
+    const body = await client.getJson<{
       status: string
       timestamp: string
       service: string
@@ -104,9 +105,7 @@ describe('Health Endpoint Integration', () => {
       knowledgePackStatus: string
       carriersCount: number
       statesCount: number
-    }
-
-    expect(res.status).toBe(200)
+    }>('/api/health')
     expect(body.status).toBe('ok')
     expect(body.knowledgePackLoaded).toBe(true)
     expect(body.knowledgePackStatus).toBe('loaded')
@@ -122,9 +121,7 @@ describe('Health Endpoint Integration', () => {
     const loadPromise = loadKnowledgePack(testKnowledgePackDir)
 
     // Immediately check health endpoint (should show loading)
-    const req = new Request('http://localhost:7070/api/health')
-    const res = await app.request(req)
-    const body = (await res.json()) as {
+    const body = await client.getJson<{
       status: string
       timestamp: string
       service: string
@@ -133,10 +130,9 @@ describe('Health Endpoint Integration', () => {
       knowledgePackStatus: string
       carriersCount: number
       statesCount: number
-    }
+    }>('/api/health')
 
     // Status might be 'loading' or 'loaded' depending on timing
-    expect(res.status).toBe(200)
     expect(body.status).toBe('ok')
     expect(['loading', 'loaded']).toContain(body.knowledgePackStatus)
     expect(typeof body.knowledgePackLoaded).toBe('boolean')
@@ -154,9 +150,7 @@ describe('Health Endpoint Integration', () => {
     await loadKnowledgePack(testKnowledgePackDir)
 
     // Test health endpoint
-    const req = new Request('http://localhost:7070/api/health')
-    const res = await app.request(req)
-    const body = (await res.json()) as {
+    const body = await client.getJson<{
       status: string
       timestamp: string
       service: string
@@ -165,9 +159,7 @@ describe('Health Endpoint Integration', () => {
       knowledgePackStatus: string
       carriersCount: number
       statesCount: number
-    }
-
-    expect(res.status).toBe(200)
+    }>('/api/health')
     expect(body.status).toBe('ok')
     // Status might be 'error' or 'loaded' depending on error handling
     expect(['loading', 'loaded', 'error']).toContain(body.knowledgePackStatus)
@@ -177,9 +169,7 @@ describe('Health Endpoint Integration', () => {
   })
 
   it('should include timestamp in health response', async () => {
-    const req = new Request('http://localhost:7070/api/health')
-    const res = await app.request(req)
-    const body = (await res.json()) as {
+    const body = await client.getJson<{
       status: string
       timestamp: string
       service: string
@@ -188,9 +178,7 @@ describe('Health Endpoint Integration', () => {
       knowledgePackStatus: string
       carriersCount: number
       statesCount: number
-    }
-
-    expect(res.status).toBe(200)
+    }>('/api/health')
     expect(body.timestamp).toBeDefined()
     expect(typeof body.timestamp).toBe('string')
     // Verify timestamp is ISO 8601 format
