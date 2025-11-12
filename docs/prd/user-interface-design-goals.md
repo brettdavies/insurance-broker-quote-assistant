@@ -40,6 +40,7 @@ No formal WCAG compliance required. Focus on basic usability for target broker u
 ## Branding
 
 No specific branding requirements identified. Use clean, professional styling appropriate for financial services software:
+
 - Neutral color palette (blues/grays suggesting trust and professionalism)
 - Sans-serif fonts for readability
 - Minimal visual flourishes—function over decoration

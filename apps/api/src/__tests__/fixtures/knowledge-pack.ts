@@ -5,6 +5,8 @@
  * across test files.
  */
 
+import type { CarrierFile, Discount, ProductFile, Source, StateFile } from '@repo/shared'
+
 /**
  * Create a test carrier data structure
  *
@@ -18,34 +20,8 @@ export function createTestCarrier(
   name: string,
   operatesIn: string[],
   products: string[],
-  discounts: unknown[] = []
-): {
-  meta: {
-    schemaVersion: string
-    generatedDate: string
-    carrier: string
-  }
-  carrier: {
-    _id: string
-    _sources: unknown[]
-    name: string
-    operatesIn: {
-      _id: string
-      value: string[]
-      _sources: unknown[]
-    }
-    products: {
-      _id: string
-      value: string[]
-      _sources: unknown[]
-    }
-    eligibility: {
-      _id: string
-      _sources: unknown[]
-    }
-    discounts: unknown[]
-  }
-} {
+  discounts: Discount[] = []
+): CarrierFile {
   const now = new Date().toISOString()
   const carrierId = `carr_${name.toLowerCase().replace(/\s+/g, '-')}`
 
@@ -105,39 +81,15 @@ export function createTestState(
     _id: string
     auto?: {
       _id: string
-      bodilyInjuryPerPerson?: { _id: string; value: number; _sources: unknown[] }
-      bodilyInjuryPerAccident?: { _id: string; value: number; _sources: unknown[] }
-      propertyDamage?: { _id: string; value: number; _sources: unknown[] }
+      bodilyInjuryPerPerson?: { _id: string; value: number; _sources: Source[] }
+      bodilyInjuryPerAccident?: { _id: string; value: number; _sources: Source[] }
+      propertyDamage?: { _id: string; value: number; _sources: Source[] }
       [key: string]: unknown
     }
     home?: { _id: string; [key: string]: unknown }
     renters?: { _id: string; [key: string]: unknown }
   }
-): {
-  meta: {
-    schemaVersion: string
-    generatedDate: string
-    state: string
-  }
-  state: {
-    _id: string
-    _sources: unknown[]
-    code: string
-    name: string
-    minimumCoverages: {
-      _id: string
-      auto: {
-        _id: string
-        bodilyInjuryPerPerson?: { _id: string; value: number; _sources: unknown[] }
-        bodilyInjuryPerAccident?: { _id: string; value: number; _sources: unknown[] }
-        propertyDamage?: { _id: string; value: number; _sources: unknown[] }
-        [key: string]: unknown
-      }
-      home: { _id: string; [key: string]: unknown }
-      renters: { _id: string; [key: string]: unknown }
-    }
-  }
-} {
+): StateFile {
   const now = new Date().toISOString()
   const stateId = `state_${code.toLowerCase()}`
 
@@ -203,6 +155,44 @@ export function createTestState(
               _id: 'fld_test7',
             },
           },
+    },
+  }
+}
+
+/**
+ * Create a test product data structure
+ *
+ * @param code - Product code (e.g., "auto", "home", "renters", "umbrella")
+ * @param name - Product name (e.g., "Auto Insurance")
+ * @param requiredFields - Optional array of required fields with priorities
+ * @returns ProductFile structure for testing
+ */
+export function createTestProduct(
+  code: string,
+  name: string,
+  requiredFields?: Array<{ field: string; priority: 'critical' | 'important' | 'optional' }>
+): ProductFile {
+  const now = new Date().toISOString()
+  const productId = `prod_${code}_001`
+
+  return {
+    meta: {
+      schemaVersion: '1.0',
+      generatedDate: now,
+      product: code,
+    },
+    product: {
+      _id: productId,
+      _sources: [],
+      code,
+      name,
+      ...(requiredFields && {
+        requiredFields: {
+          _id: `fld_${code}_required_fields_001`,
+          value: requiredFields,
+          _sources: [],
+        },
+      }),
     },
   }
 }

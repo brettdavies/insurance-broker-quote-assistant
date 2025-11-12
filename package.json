@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "workspaces": ["apps/*", "packages/*"],
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "dev": "concurrently \"bun run --filter @repo/web dev\" \"bun run --filter @repo/api dev\" --names \"web,api\" --prefix-colors \"cyan,magenta\"",
     "build": "bun run --filter '*' build",
@@ -12,6 +15,8 @@
     "lint": "biome check .",
     "format": "biome format --write . && prettier --write '**/*.{tsx,jsx}'",
     "format:check": "biome format . && prettier --check '**/*.{tsx,jsx}'",
+    "validate-knowledge-pack": "bun run scripts/validate-knowledge-pack.ts",
+    "evaluate": "bun run evaluation/harness.ts",
     "prepare": "husky"
   },
   "dependencies": {
@@ -26,6 +31,8 @@
     "@biomejs/biome": "^1.9",
     "@types/bun": "^1.3.1",
     "@types/node": "^24.10.0",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
     "concurrently": "^9.2.1",
     "husky": "^9.0",
     "prettier": "^3.0",

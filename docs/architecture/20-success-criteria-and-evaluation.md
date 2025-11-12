@@ -4,21 +4,23 @@
 
 ## 20.1 PEAK6 Requirements Mapping
 
-| Requirement | Target | How Architecture Achieves It |
-|-------------|--------|------------------------------|
-| **Routing Accuracy** | ≥90% | Deterministic Routing Engine with explicit carrier/state/product filtering |
-| **Intake Completeness** | ≥95% | Conversational Extractor returns `missing_fields` array, validated against required schema |
-| **Savings Explanation Quality** | ≥85% "clear and actionable" | Pitch Generator uses GPT-4o with structured prompt requiring "because" rationales |
-| **Compliance** | 100% disclaimers, 0 prohibited | Compliance Filter hard-coded blocklist and required disclaimers (cannot be bypassed) |
-| **Offline Guarantee** | 0 runtime web searches | All knowledge from local JSON files, LLM APIs only for text processing (no web search) |
+| Requirement                     | Target                         | How Architecture Achieves It                                                               |
+| ------------------------------- | ------------------------------ | ------------------------------------------------------------------------------------------ |
+| **Routing Accuracy**            | ≥90%                           | Deterministic Routing Engine with explicit carrier/state/product filtering                 |
+| **Intake Completeness**         | ≥95%                           | Conversational Extractor returns `missing_fields` array, validated against required schema |
+| **Savings Explanation Quality** | ≥85% "clear and actionable"    | Pitch Generator uses GPT-4o with structured prompt requiring "because" rationales          |
+| **Compliance**                  | 100% disclaimers, 0 prohibited | Compliance Filter hard-coded blocklist and required disclaimers (cannot be bypassed)       |
+| **Offline Guarantee**           | 0 runtime web searches         | All knowledge from local JSON files, LLM APIs only for text processing (no web search)     |
 
 **Why These Targets:**
+
 - **90% routing accuracy:** Deterministic engines are testable, 90% is achievable with clear eligibility rules
 - **95% intake completeness:** LLM extraction is mature for structured outputs, 95% realistic with GPT-4o-mini
 - **100% compliance:** Regulatory requirement - no exceptions allowed (hard-coded filter guarantees this)
 - **Offline guarantee:** Architectural constraint - 100% or fail (no runtime web scraping possible)
 
 **Savings Explanation Quality Rubric (0-100 points):**
+
 - Includes "because" rationale for each recommendation: 25 points
 - References specific discount percentages from knowledge pack: 25 points
 - Calculates dollar savings amount (not just percentages): 25 points
@@ -26,16 +28,19 @@
 - **Pass threshold:** ≥85 points = "clear and actionable"
 
 **Example passing pitch:**
+
 > "You qualify for GEICO's Multi-Policy Bundle discount **because** you have both auto and home insurance. This saves you **15%** annually, which equals **$300/year** based on your combined premiums. [Citation: `disc_ckm9x7wdx1`]"
 
 ## 20.2 Evaluation Harness
 
 **What We Provide:**
+
 - 15 test cases (10 conversational, 5 policy) in `evaluation/test-cases/`
 - Automated harness that runs all test cases and generates report
 - Command: `bun run evaluate`
 
 **Harness Report Includes:**
+
 - Routing accuracy percentage (per carrier, per state)
 - Field completeness percentage (per required field)
 - Compliance pass rate (100% required)
@@ -43,6 +48,7 @@
 - Sample decision traces (citations for each recommendation)
 
 **Why Automated Evaluation:**
+
 - **Objective metrics:** PEAK6 can run evaluation themselves, no subjective judgment
 - **Regression prevention:** Catch broken routes/discounts before demo
 - **Cost transparency:** Token usage visible, proves cost-efficiency

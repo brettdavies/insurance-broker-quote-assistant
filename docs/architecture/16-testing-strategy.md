@@ -5,6 +5,7 @@
 ## 16.1 Testing Pyramid
 
 **What We Use:**
+
 ```
         E2E Tests (0% - skipped for MVP)
         /                             \
@@ -14,6 +15,7 @@ Frontend Unit (40%)              Backend Unit (40%)
 ```
 
 **Why This Distribution:**
+
 - **40% frontend unit:** React components, hooks, utilities (fast, easy to write)
 - **40% backend unit:** Deterministic engines, RAG, orchestrator (critical business logic)
 - **20% integration:** API routes with Hono, full agent/engine flows (ensures components work together)
@@ -22,11 +24,13 @@ Frontend Unit (40%)              Backend Unit (40%)
 ## 16.2 Testing Tools
 
 **What We Use:**
+
 - **Bun test:** Built-in test runner (Jest-compatible API)
 - **@testing-library/react:** User-centric component testing
 - **Hono test utilities:** API route testing without starting server
 
 **Why Bun Test:**
+
 - **Already installed:** No additional dependency (using Bun for package management)
 - **Faster than Jest/Vitest:** Native speed, no transform overhead
 - **Jest-compatible:** Same API (describe, it, expect) developers know
@@ -34,17 +38,20 @@ Frontend Unit (40%)              Backend Unit (40%)
 ## 16.3 Testing Focus Areas
 
 **What We Test:**
+
 - **Deterministic engines (critical):** Routing, discount, compliance logic (100% coverage goal)
 - **API routes (critical):** Request validation, response structure, error handling
 - **React components (important):** User interactions, form submissions, error states
 - **Orchestrator flows (important):** Agent/engine coordination, decision trace generation
 
 **What We Skip (5-Day MVP):**
+
 - **E2E tests:** Too slow to write and maintain for timeline
 - **LLM mocking complexity:** Test orchestrator with mocked LLM responses, not actual OpenAI calls
 - **Edge cases:** Focus on happy path + critical error cases only
 
 **Why This Focus:**
+
 - **Deterministic engines are testable:** Pure functions, predictable outputs, easy to test
 - **Insurance compliance requires accuracy:** Routing/discount engines must be correct (tests catch regressions)
 - **Integration tests sufficient:** Catch 80% of bugs without E2E overhead
@@ -483,6 +490,12 @@ TEST_API_URL=http://localhost:7070 bun test apps/api/src/routes/__tests__/intake
 
 ## 16.10 Code Quality Metrics
 
+**Current Test Status:**
+- ✅ **564 total tests** across 54 files
+- ✅ **530 passing** (94% pass rate)
+- ⏭️ **28 skipped** (contract tests, real API tests - require server or `TEST_TARGETS=real-api`)
+- ⚠️ **6 failing** (test isolation issues - pass when run individually)
+
 **Refactoring Results:**
 - ✅ **60%+ reduction** in code duplication
 - ✅ **80+ `new Request()` patterns** eliminated
@@ -491,6 +504,7 @@ TEST_API_URL=http://localhost:7070 bun test apps/api/src/routes/__tests__/intake
 - ✅ **Consistent patterns** across all test files
 - ✅ **Type-safe** throughout
 - ✅ **Centralized test configuration** through test-targets utility
+- ✅ **Knowledge pack testing** - Tests now use real knowledge pack data instead of fixtures
 
 **Success Criteria:**
 - All tests use shared utilities from `@repo/shared`

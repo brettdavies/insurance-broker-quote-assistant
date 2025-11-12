@@ -8,7 +8,13 @@
  */
 
 import type { MissingField, PrefillPacket, RouteDecision, UserProfile } from '@repo/shared'
-import { getCarrierFieldRequirements, getStateFieldRequirements } from './knowledge-pack-rag'
+import {
+  getCarrierFieldRequirements,
+  getProductByCode,
+  getProductFieldRequirements,
+  getStateByCode,
+  getStateFieldRequirements,
+} from './knowledge-pack-rag'
 
 /**
  * Get missing fields with priority indicators
@@ -17,63 +23,46 @@ import { getCarrierFieldRequirements, getStateFieldRequirements } from './knowle
  * and state-specific requirements. Returns structured MissingField objects.
  *
  * @param profile - User profile to check
- * @param productLine - Optional product line (defaults to profile.productLine)
+ * @param productType - Optional product type (defaults to profile.productType)
  * @param state - Optional state code (defaults to profile.state)
  * @param carrier - Optional carrier name for carrier-specific requirements
  * @returns Array of missing fields with priority indicators
  */
 export function getMissingFields(
   profile: UserProfile,
-  productLine?: string,
+  productType?: string,
   state?: string,
   carrier?: string
 ): MissingField[] {
   const missing: MissingField[] = []
-  const product = productLine || profile.productLine
+  const product = productType || profile.productType
   const stateCode = state || profile.state
 
   // Required fields for all products
   if (!profile.state) {
     missing.push({ field: 'state', priority: 'critical' })
   }
-  if (!profile.productLine) {
-    missing.push({ field: 'productLine', priority: 'critical' })
+  if (!profile.productType) {
+    missing.push({ field: 'productType', priority: 'critical' })
   }
 
-  // Product-specific required fields
-  if (product === 'auto') {
-    if (!profile.vehicles) {
-      missing.push({ field: 'vehicles', priority: 'critical' })
-    }
-    if (!profile.drivers) {
-      missing.push({ field: 'drivers', priority: 'critical' })
-    }
-    if (!profile.vins) {
-      missing.push({ field: 'vins', priority: 'important' })
-    }
-    if (!profile.garage) {
-      missing.push({ field: 'garage', priority: 'optional' })
-    }
-  } else if (product === 'home') {
-    if (!profile.propertyType) {
-      missing.push({ field: 'propertyType', priority: 'critical' })
-    }
-    if (!profile.constructionYear) {
-      missing.push({ field: 'constructionYear', priority: 'important' })
-    }
-    if (!profile.squareFeet) {
-      missing.push({ field: 'squareFeet', priority: 'important' })
-    }
-    if (!profile.roofType) {
-      missing.push({ field: 'roofType', priority: 'optional' })
-    }
-  } else if (product === 'renters') {
-    if (!profile.propertyType) {
-      missing.push({ field: 'propertyType', priority: 'critical' })
-    }
-  } else if (product === 'umbrella') {
-    if (!profile.existingPolicies || profile.existingPolicies.length === 0) {
-      missing.push({ field: 'existingPolicies', priority: 'critical' })
+  // Get product-specific required fields from knowledge pack
+  if (product) {
+    const productRequirements = getProductFieldRequirements(product)
+    for (const req of productRequirements) {
+      // Check if field is actually missing from profile
+      const fieldValue = profile[req.field as keyof UserProfile]
+      if (fieldValue === undefined || fieldValue === null || fieldValue === '') {
+        // Special handling for existingPolicies (array check)
+        if (req.field === 'existingPolicies') {
+          const existingPolicies = profile.existingPolicies
+          if (!existingPolicies || existingPolicies.length === 0) {
+            missing.push(req)
+          }
+        } else {
+          missing.push(req)
+        }
+      }
     }
   }
 
@@ -156,31 +145,22 @@ export function generateLeadHandoffSummary(
 ): string[] {
   const notes: string[] = []
 
-  // State-specific guidance
-  const stateGuidance: Record<string, string> = {
-    CA: 'California requires additional documentation for auto insurance. Verify VIN and driving records.',
-    TX: 'Texas requires proof of financial responsibility. Ensure all required documents are collected.',
-    FL: 'Florida has specific requirements for property insurance. Verify property details and flood zone.',
-    NY: 'New York requires additional disclosures. Ensure all state-specific forms are completed.',
-    IL: 'Illinois requires verification of coverage limits. Confirm minimum coverage requirements.',
+  // Get state-specific guidance from knowledge pack
+  if (profile.state) {
+    const state = getStateByCode(profile.state)
+    const stateGuidance = state?.prefillGuidance?.value
+    if (stateGuidance && typeof stateGuidance === 'string') {
+      notes.push(`State-specific guidance: ${stateGuidance}`)
+    }
   }
 
-  if (profile.state && stateGuidance[profile.state]) {
-    notes.push(`State-specific guidance: ${stateGuidance[profile.state]}`)
-  }
-
-  // Product-specific guidance
-  const productGuidance: Record<string, string> = {
-    auto: 'Auto insurance requires VIN verification and driving record review. Collect all vehicle information.',
-    home: 'Home insurance requires property inspection details. Verify construction year, square footage, and roof type.',
-    renters:
-      'Renters insurance requires personal property inventory. Collect coverage limits and liability requirements.',
-    umbrella:
-      'Umbrella insurance requires existing policy details. Verify underlying coverage limits.',
-  }
-
-  if (profile.productLine && productGuidance[profile.productLine]) {
-    notes.push(`Product-specific guidance: ${productGuidance[profile.productLine]}`)
+  // Get product-specific guidance from knowledge pack
+  if (profile.productType) {
+    const product = getProductByCode(profile.productType)
+    const productGuidance = product?.prefillGuidance?.value
+    if (productGuidance && typeof productGuidance === 'string') {
+      notes.push(`Product-specific guidance: ${productGuidance}`)
+    }
   }
 
   // Missing fields checklist - format with priority indicators
@@ -232,19 +212,19 @@ export function generatePrefillPacket(
   missingFields: MissingField[],
   disclaimers: string[]
 ): PrefillPacket {
-  // Handle edge cases: missing state/productLine
-  if (!profile.state || !profile.productLine) {
-    throw new Error('State and productLine are required for prefill packet generation')
+  // Handle edge cases: missing state/productType
+  if (!profile.state || !profile.productType) {
+    throw new Error('State and productType are required for prefill packet generation')
   }
 
   // Map contact information
   const prefill: PrefillPacket = {
-    fullName: profile.name,
+    name: profile.name,
     email: profile.email,
     phone: profile.phone,
     address: undefined, // Construct from available fields
     state: profile.state,
-    productLine: profile.productLine,
+    productType: profile.productType,
     carrier: route.primaryCarrier,
     routingDecision: route.rationale,
     agentNotes: generateLeadHandoffSummary(profile, route, missingFields),
@@ -260,20 +240,20 @@ export function generatePrefillPacket(
     prefill.address = profile.zip
   }
 
-  // Map product-specific data based on productLine
-  if (profile.productLine === 'auto') {
+  // Map product-specific data based on productType
+  if (profile.productType === 'auto') {
     prefill.vehicles = profile.vehicles
     prefill.drivers = profile.drivers
     prefill.vins = profile.vins
     prefill.garage = profile.garage
     // Note: primaryUse and annualMileage not in UserProfile schema, leave undefined
-  } else if (profile.productLine === 'home') {
-    prefill.yearBuilt = profile.constructionYear
+  } else if (profile.productType === 'home') {
+    prefill.yearBuilt = profile.yearBuilt
     prefill.squareFeet = profile.squareFeet
     prefill.roofType = profile.roofType
     prefill.propertyType = profile.propertyType
     // Note: homeValue and constructionType not in UserProfile schema, leave undefined
-  } else if (profile.productLine === 'renters') {
+  } else if (profile.productType === 'renters') {
     // Note: personalProperty and liability not in UserProfile schema, leave undefined
   }
 

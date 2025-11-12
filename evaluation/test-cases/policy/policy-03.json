@@ -1,0 +1,61 @@
+{
+  "id": "policy-03",
+  "name": "Policy with Deductible Optimization Opportunity - FL Auto State Farm",
+  "description": "Test case for deductible optimization opportunity detection",
+  "type": "policy",
+  "carrier": "State Farm",
+  "state": "FL",
+  "product": "auto",
+  "policyInput": "State Farm Auto Insurance Policy\nPolicy Number: SF-11111\nEffective Date: 06/01/2024\nExpiration Date: 06/01/2025\n\nInsured: Robert Johnson\nAddress: 789 Beach Blvd, Miami, FL 33101\nAge: 38\n\nVehicle: 2019 Toyota Camry\nAnnual Premium: $1,500\nDeductible: $250 (Comprehensive and Collision)\n\nCoverage:\n- Liability: $250,000/$500,000\n- Comprehensive: $250 deductible\n- Collision: $250 deductible\n- Uninsured Motorist: $250,000/$500,000\n\nDriving Record: Clean for past 4 years\nNotes: Low deductible increases premium significantly",
+  "expectedPolicy": {
+    "carrier": "State Farm",
+    "state": "FL",
+    "productType": "auto",
+    "premiums": {
+      "annual": 1500
+    },
+    "deductibles": {
+      "auto": 250,
+      "comprehensive": 250,
+      "collision": 250
+    },
+    "coverageLimits": {
+      "liability": 250000,
+      "propertyDamage": 500000,
+      "uninsuredMotorist": 250000
+    },
+    "name": "Robert Johnson",
+    "zip": "33101",
+    "address": "789 Beach Blvd, Miami, FL 33101"
+  },
+  "expectedOpportunities": [
+    {
+      "discount": "Safe Driver",
+      "percentage": 10,
+      "annualSavings": 150,
+      "requires": ["cleanRecord3Yr"],
+      "citation": {
+        "id": "disc_safe_driver",
+        "type": "discount",
+        "carrier": "carr_g8c6fstxl7pdid8izom4j1br",
+        "file": "knowledge_pack/carriers/state-farm.json"
+      }
+    }
+  ],
+  "expectedBundleOptions": [],
+  "expectedDeductibleOptimizations": [
+    {
+      "currentDeductible": 250,
+      "suggestedDeductible": 1000,
+      "estimatedSavings": 300,
+      "premiumImpact": -300,
+      "citation": {
+        "id": "disc_deductible",
+        "type": "discount",
+        "carrier": "carr_g8c6fstxl7pdid8izom4j1br",
+        "file": "knowledge_pack/carriers/state-farm.json"
+      }
+    }
+  ]
+}
+

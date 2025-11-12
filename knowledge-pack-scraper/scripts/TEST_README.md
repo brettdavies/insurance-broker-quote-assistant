@@ -11,6 +11,7 @@ This directory contains test scripts for validating the Phase 2 knowledge pack s
 **Location**: `scripts/test_url_deduplication.py`
 
 **What it tests**:
+
 - URL hash-based deduplication
 - Multi-search provenance tracking via `search_ids` array
 - URL normalization (protocol, case, trailing slash)
@@ -18,18 +19,21 @@ This directory contains test scripts for validating the Phase 2 knowledge pack s
 - Mixed new and existing URL handling
 
 **How to run**:
+
 ```bash
 cd knowledge-pack-scraper
 uv run scripts/test_url_deduplication.py
 ```
 
 **Test environment**:
+
 - Creates isolated test directory: `knowledge-pack-scraper/test_run/`
 - Stages test trackers with fake search and URL data
 - Uses `KNOWLEDGE_PACK_TEST_DIR` environment variable to redirect TrackerManager
 - Cleans up test directory on success, preserves on failure for debugging
 
 **Exit codes**:
+
 - `0`: All tests passed
 - `1`: One or more tests failed (test directory preserved for inspection)
 
@@ -38,17 +42,20 @@ uv run scripts/test_url_deduplication.py
 ### Scenario 1: Basic URL Registration
 
 **Setup**:
+
 - 1 claimed search (search_A)
 - Empty url-tracker
 - 3 new URLs to register
 
 **Expected outcome**:
+
 - 3 URL entries created
 - Each URL has unique ID and hash
 - All URLs have `search_ids: ["search_A"]`
 - Search marked as "completed"
 
 **Validates**:
+
 - URL ID generation
 - Hash calculation
 - Initial search_ids array creation
@@ -59,17 +66,20 @@ uv run scripts/test_url_deduplication.py
 ### Scenario 2: Duplicate URL Detection
 
 **Setup**:
+
 - search_A already completed with 1 URL registered
 - search_B claims same URL
 - url-tracker has existing entry: `https://geico.com/discounts`
 
 **Expected outcome**:
+
 - No new URL entry created
 - Existing URL entry updated: `search_ids: ["search_A", "search_B"]`
 - search_B marked as "completed"
 - 0 new URLs, 1 existing URL in output
 
 **Validates**:
+
 - Hash-based URL matching
 - search_ids array append logic
 - Duplicate prevention
@@ -80,16 +90,19 @@ uv run scripts/test_url_deduplication.py
 ### Scenario 3: Mixed New and Existing URLs
 
 **Setup**:
+
 - search_A completed with 2 URLs registered
 - search_C discovers 3 URLs (1 existing, 2 new)
 
 **Expected outcome**:
+
 - 2 new URL entries created
 - 1 existing URL updated with search_C appended
 - Total URLs in tracker: 4
 - Output: 2 new, 1 existing
 
 **Validates**:
+
 - Combined new/existing handling in single operation
 - Correct counting logic
 - Multiple URL processing
@@ -99,15 +112,18 @@ uv run scripts/test_url_deduplication.py
 ### Scenario 4: Idempotent Operation
 
 **Setup**:
+
 - search_D claims same URL twice
 - Run `save-urls.py` twice with same search_id and URL
 
 **Expected outcome**:
+
 - First run: URL registered with `search_ids: ["search_D"]`
 - Second run: No duplicate search_D in `search_ids` array
 - Final state: `search_ids: ["search_D"]` (NOT `["search_D", "search_D"]`)
 
 **Validates**:
+
 - Duplicate search_id prevention
 - Idempotent operations
 - Safe to re-run if git push fails
@@ -117,24 +133,28 @@ uv run scripts/test_url_deduplication.py
 ### Scenario 5: URL Normalization
 
 **Setup**:
+
 - search_E discovers 3 URL variations:
   - `http://geico.com`
   - `https://geico.com/`
   - `https://GEICO.com`
 
 **Expected outcome**:
+
 - All 3 URLs normalize to same hash: `ca98c401636cff9d`
 - Only 1 URL entry created
 - First URL format preserved in entry
 - Subsequent URLs detected as existing
 
 **Validates**:
+
 - Protocol removal (http/https)
 - Case insensitivity (GEICO → geico)
 - Trailing slash removal
 - Hash consistency across variations
 
 **Normalization rules**:
+
 ```python
 def normalize_url(url: str) -> str:
     normalized = url.lower().rstrip('/')
@@ -154,11 +174,13 @@ def normalize_url(url: str) -> str:
 **Purpose**: Validates url-tracker.json state after save-urls.py execution
 
 **Checks**:
+
 - Total URL count matches expected
 - Each URL has correct search_ids array
 - URL hashes match expected values
 
 **Usage**:
+
 ```python
 validate_url_tracker(
     expected_url_count=3,
@@ -174,10 +196,12 @@ validate_url_tracker(
 **Purpose**: Validates search entry status in search-tracker.json
 
 **Checks**:
+
 - Search status matches expected value
 - Appropriate metadata fields set (completedAt, urlsDiscoveredCount, etc.)
 
 **Usage**:
+
 ```python
 validate_search_status("search_A", expected_status="completed")
 ```
@@ -200,6 +224,7 @@ Test scenarios use inline fixture generation via helper functions:
 ### Test failures
 
 If a test fails:
+
 1. Check `knowledge-pack-scraper/test_run/` directory (preserved on failure)
 2. Inspect tracker JSON files to see actual vs expected state
 3. Review save-urls.py output in test failure message

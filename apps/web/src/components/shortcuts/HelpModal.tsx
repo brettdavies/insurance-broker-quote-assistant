@@ -95,6 +95,21 @@ export function HelpModal({ open, onOpenChange }: HelpModalProps) {
               ))}
             </div>
           </div>
+
+          {/* Global Keyboard Shortcuts */}
+          <div>
+            <h3 className="mb-3 text-lg font-semibold">Global Keyboard Shortcuts</h3>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="flex items-center justify-between rounded bg-gray-100 p-2 dark:bg-gray-800">
+                <span className="text-sm text-gray-900 dark:text-white">
+                  Focus Policy Upload Panel
+                </span>
+                <code className="rounded bg-gray-200 px-2 py-1 text-xs text-gray-900 dark:bg-gray-700 dark:text-gray-300">
+                  Ctrl+X P
+                </code>
+              </div>
+            </div>
+          </div>
         </div>
       </DialogContent>
     </Dialog>

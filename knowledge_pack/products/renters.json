@@ -31,7 +31,9 @@
     },
     "requiredFields": {
       "_id": "fld_renters_required_fields_001",
-      "value": [{ "field": "propertyType", "priority": "critical" }],
+      "value": [
+        { "field": "propertyType", "priority": "critical" }
+      ],
       "_sources": [
         {
           "uri": "https://www.insurance.com/renters-insurance/requirements/",

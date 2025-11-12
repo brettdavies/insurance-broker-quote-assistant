@@ -4,7 +4,10 @@
 /.cursor/rules/bmad
 /.claude/commands/BMad
 /.claude/skills
+
+# Generated knowledge packs
 /knowledge-pack-scraper/scripts/__pycache__
+/apps/api/src/__tests__/fixtures/knowledge-packs
 
 # Dependencies
 node_modules/
@@ -43,6 +46,10 @@ coverage/
 .test-results/
 playwright-report/
 playwright/.cache/
+
+# Evaluation reports (generated files)
+evaluation/result/report.json
+evaluation/result/report.md
 
 # Cache directories
 .cache/

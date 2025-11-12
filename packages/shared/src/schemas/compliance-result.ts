@@ -14,7 +14,7 @@ export const complianceResultSchema = z.object({
   replacementMessage: z.string().optional(), // Licensed-agent handoff message if violations detected
   disclaimers: z.array(z.string()).optional(), // Selected disclaimers if passed
   state: z.string().optional(), // State used for disclaimer selection
-  productLine: z.string().optional(), // Product used for disclaimer selection
+  productType: z.string().optional(), // Product used for disclaimer selection
 })
 
 export type ComplianceResult = z.infer<typeof complianceResultSchema>

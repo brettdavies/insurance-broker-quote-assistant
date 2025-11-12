@@ -1,7 +1,0 @@
-# Bun test configuration
-[test]
-dom = true
-jsx = "react-jsx"
-jsxImportSource = "react"
-preload = ["./src/test-setup.ts"]
-

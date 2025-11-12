@@ -38,12 +38,12 @@ describe('ConversationalExtractor', () => {
       const mockLLMResult: LLMExtractionResult = {
         profile: {
           state: 'CA',
-          productLine: 'auto',
+          productType: 'auto',
           age: 30,
         },
         confidence: {
           state: 0.9,
-          productLine: 0.8,
+          productType: 0.8,
           age: 0.85,
         },
         reasoning: 'Extracted from natural language',
@@ -58,7 +58,7 @@ describe('ConversationalExtractor', () => {
 
       expect(result.extractionMethod).toBe('llm')
       expect(result.profile.state).toBe('CA')
-      expect(result.profile.productLine).toBe('auto')
+      expect(result.profile.productType).toBe('auto')
       expect(result.profile.age).toBe(30)
       expect(result.confidence.state).toBe(0.9)
       expect(result.reasoning).toBe('Extracted from natural language')
@@ -67,7 +67,7 @@ describe('ConversationalExtractor', () => {
     it('should calculate missing fields correctly', async () => {
       const result = await extractor.extractFields('s:CA')
 
-      expect(result.missingFields).toContain('productLine')
+      expect(result.missingFields).toContain('productType')
       expect(result.missingFields).toContain('age')
       expect(result.missingFields.length).toBeGreaterThan(0)
     })

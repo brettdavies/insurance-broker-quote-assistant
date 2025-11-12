@@ -1,0 +1,38 @@
+{
+  "id": "conv-07",
+  "name": "Clean Record Discount Qualification - TX Auto GEICO",
+  "description": "Test case specifically for clean record discount qualification",
+  "type": "conversational",
+  "carrier": "GEICO",
+  "state": "TX",
+  "product": "auto",
+  "input": "I need auto insurance in Texas. I'm 38 years old, have 2 vehicles, and I've had a completely clean driving record for the past 5 years with no tickets or accidents.",
+  "expectedProfile": {
+    "state": "TX",
+    "productType": "auto",
+    "age": 38,
+    "vehicles": 2,
+    "cleanRecord3Yr": true
+  },
+  "expectedRoute": {
+    "primaryCarrier": "GEICO",
+    "eligibleCarriers": ["GEICO", "Progressive", "State Farm"],
+    "confidence": 0.9,
+    "rationale": "GEICO offers auto insurance in Texas and provides safe driver discounts for clean records."
+  },
+  "expectedOpportunities": [
+    {
+      "discount": "Safe Driver",
+      "percentage": 15,
+      "annualSavings": 250,
+      "requires": ["cleanRecord3Yr"]
+    },
+    {
+      "discount": "Multi-Vehicle",
+      "percentage": 10,
+      "annualSavings": 180,
+      "requires": ["vehicles", "vehicles >= 2"]
+    }
+  ]
+}
+

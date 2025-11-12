@@ -5,6 +5,7 @@
 Based on evaluation criteria, the following demo scenarios should be prepared:
 
 **Scenario 1: Conversational Intake - Complete Flow (California Auto Insurance)**
+
 1. Broker starts chat, types: "Client is John Smith in California, needs auto insurance"
 2. System extracts state (CA), product (Auto), routes to available carriers
 3. Broker uses key-value shortcuts: `k:2` (2 kids), `v:2` (2 vehicles), `drivers:3`
@@ -15,6 +16,7 @@ Based on evaluation criteria, the following demo scenarios should be prepared:
 8. **Validation:** Routing accuracy ≥90%, intake completeness ≥95%, 100% compliance (CA disclaimers present)
 
 **Scenario 2: Policy Analysis - Savings Pitch (Florida Home Insurance)**
+
 1. Broker drags PDF declarations page into policy upload panel
 2. System extracts: Carrier=Allstate, State=FL, Product=Home, Premium=$2400/yr, Deductible=$1000
 3. System analyzes against knowledge pack, identifies:
@@ -27,17 +29,20 @@ Based on evaluation criteria, the following demo scenarios should be prepared:
 7. **Validation:** Savings pitch clarity ≥85%, 100% compliance (FL disclaimers present), knowledge pack citations included
 
 **Scenario 3: Compliance Validation - Prohibited Statement Handling**
+
 1. Broker attempts to send message containing prohibited statement (e.g., "Guaranteed lowest price")
 2. System blocks message, displays licensed-agent handoff message
 3. **Validation:** 100% compliance enforcement (prohibited statement filtered)
 
 **Scenario 4: Offline Operation Proof**
+
 1. Disable network access (except OpenAI API)
 2. Run conversational intake flow
 3. Review decision trace logs showing knowledge pack queries as in-memory cache hits (zero external web calls)
 4. **Validation:** Offline guarantee (0 runtime web calls besides LLM)
 
 **Scenario 5: Evaluation Harness Execution**
+
 1. Run `bun run evaluate` command
 2. System executes 15 synthetic test cases (10 conversational, 5 policy)
 3. Generate report with metrics:

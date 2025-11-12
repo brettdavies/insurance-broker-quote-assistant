@@ -54,6 +54,23 @@ export interface Discount {
   requirements: FieldWithMetadata<unknown>
   stackable?: FieldWithMetadata<boolean>
   description?: FieldWithMetadata<string>
+  stateVariations?: {
+    [stateCode: string]: {
+      percentage?: number
+      multiplier?: number
+    }
+  }
+  productVariations?: {
+    [product: string]: {
+      percentage?: number
+    }
+  }
+  metadata?: {
+    discountType?: 'bundle' | 'driver' | 'lifestyle' | 'loyalty' | 'other'
+    evaluationPriority?: 'high' | 'medium' | 'low'
+    requiresDocumentation?: boolean
+    maxStackableDiscounts?: number
+  }
 }
 
 export interface Compensation {
@@ -133,6 +150,7 @@ export interface State {
   }
   specialRequirements?: FieldWithMetadata<unknown>
   averagePremiums?: FieldWithMetadata<unknown>
+  prefillGuidance?: FieldWithMetadata<string> // Guidance text for broker prefill packet generation
 }
 
 export interface StateFile {
@@ -142,4 +160,24 @@ export interface StateFile {
     state: string
   }
   state: State
+}
+
+export interface Product {
+  _id: string
+  _sources: Source[]
+  code: string
+  name: string
+  prefillGuidance?: FieldWithMetadata<string>
+  requiredFields?: FieldWithMetadata<
+    Array<{ field: string; priority: 'critical' | 'important' | 'optional' }>
+  > // Base product-level field requirements
+}
+
+export interface ProductFile {
+  meta: {
+    schemaVersion: string
+    generatedDate: string
+    product: string
+  }
+  product: Product
 }

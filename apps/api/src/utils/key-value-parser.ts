@@ -1,4 +1,5 @@
 import type { UserProfile } from '@repo/shared'
+import { unifiedFieldMetadata } from '@repo/shared'
 
 /**
  * Key-Value Syntax Parser
@@ -6,19 +7,7 @@ import type { UserProfile } from '@repo/shared'
  * Parses key-value syntax from broker input (e.g., "kids:3", "k:3", "deps:4", "car:garage")
  * and extracts structured data matching UserProfile schema.
  *
- * Field aliases supported:
- * - k/kids → kids
- * - d/deps → dependents (maps to householdSize)
- * - v/vehicles → vehicles
- * - c/car → vehicles (alias)
- * - s/state → state
- * - a/age → age
- * - h/household → householdSize
- * - l/productLine → productLine
- * - o/ownsHome → ownsHome
- * - cleanRecord3Yr → cleanRecord3Yr
- * - creditScore → creditScore
- * - propertyType → propertyType
+ * Field aliases are sourced from unified field metadata to ensure consistency.
  */
 
 export interface KeyValueExtractionResult {
@@ -28,58 +17,38 @@ export interface KeyValueExtractionResult {
 }
 
 /**
- * Field alias mapping
+ * Field alias mapping (derived from unified field metadata)
  * Maps shortcuts and aliases to UserProfile field names
+ * Built from unifiedFieldMetadata to ensure no drift
  */
-const FIELD_ALIASES: Record<string, string> = {
-  // Kids
-  k: 'kids',
-  kids: 'kids',
-  // Dependents (maps to householdSize)
-  d: 'householdSize',
-  deps: 'householdSize',
-  dependents: 'householdSize',
-  // Drivers
-  drivers: 'drivers',
-  driver: 'drivers',
-  // Vehicles
-  v: 'vehicles',
-  vehicles: 'vehicles',
-  c: 'vehicles', // car alias
-  car: 'vehicles',
-  // State
-  s: 'state',
-  state: 'state',
-  // Age
-  a: 'age',
-  age: 'age',
-  // Household size
-  h: 'householdSize',
-  household: 'householdSize',
-  householdSize: 'householdSize',
-  // Product line
-  l: 'productLine',
-  productLine: 'productLine',
-  product: 'productLine',
-  line: 'productLine',
-  // Owns home
-  o: 'ownsHome',
-  ownsHome: 'ownsHome',
-  // Clean record
-  clean: 'cleanRecord3Yr',
-  cleanRecord: 'cleanRecord3Yr',
-  cleanRecord3Yr: 'cleanRecord3Yr',
-  // Credit score (all lowercase for lookup)
-  credit: 'creditScore',
-  creditscore: 'creditScore',
-  score: 'creditScore',
-  // Property type (all lowercase for lookup)
-  property: 'propertyType',
-  propertytype: 'propertyType',
-  prop: 'propertyType',
-  // Clean record (all lowercase for lookup)
-  cleanrecord3yr: 'cleanRecord3Yr',
-}
+const FIELD_ALIASES: Record<string, string> = (() => {
+  const aliases: Record<string, string> = {}
+
+  // Build aliases from unified metadata for intake flow
+  for (const [field, metadata] of Object.entries(unifiedFieldMetadata)) {
+    // Only include fields that apply to intake flow
+    if (!metadata.flows.includes('intake')) {
+      continue
+    }
+
+    // Add shortcut → field mapping
+    if (metadata.shortcut) {
+      aliases[metadata.shortcut.toLowerCase()] = field
+    }
+
+    // Add field name itself as alias
+    aliases[field.toLowerCase()] = field
+
+    // Add aliases from metadata
+    if (metadata.aliases) {
+      for (const alias of metadata.aliases) {
+        aliases[alias.toLowerCase()] = field
+      }
+    }
+  }
+
+  return aliases
+})()
 
 /**
  * Numeric fields that require number conversion
@@ -89,9 +58,8 @@ const NUMERIC_FIELDS = new Set([
   'kids',
   'householdSize',
   'vehicles',
-  'drivers',
-  'currentPremium',
   'creditScore',
+  // Note: premiums is handled separately (object with annual/monthly/semiAnnual)
 ])
 
 /**
@@ -100,9 +68,9 @@ const NUMERIC_FIELDS = new Set([
 const BOOLEAN_FIELDS = new Set(['ownsHome', 'cleanRecord3Yr'])
 
 /**
- * Product line enum values
+ * Product type enum values
  */
-const PRODUCT_LINE_VALUES = ['auto', 'home', 'renters', 'umbrella'] as const
+const PRODUCT_TYPE_VALUES = ['auto', 'home', 'renters', 'umbrella'] as const
 
 /**
  * Parse key-value syntax from message
@@ -128,6 +96,7 @@ export function parseKeyValueSyntax(message: string): KeyValueExtractionResult {
     }
 
     const lowerKey = key.toLowerCase()
+    // Get field name from alias mapping (built from unified metadata)
     const fieldName = FIELD_ALIASES[lowerKey]
 
     if (fieldName) {
@@ -144,11 +113,11 @@ export function parseKeyValueSyntax(message: string): KeyValueExtractionResult {
           value.toLowerCase() === 'true' || value === '1' || value.toLowerCase() === 'yes'
         // @ts-expect-error - Dynamic field assignment
         profile[fieldName] = boolValue
-      } else if (fieldName === 'productLine') {
-        // Validate product line enum
+      } else if (fieldName === 'productType') {
+        // Validate product type enum
         const productValue = value.toLowerCase()
-        if (PRODUCT_LINE_VALUES.includes(productValue as (typeof PRODUCT_LINE_VALUES)[number])) {
-          profile.productLine = productValue as (typeof PRODUCT_LINE_VALUES)[number]
+        if (PRODUCT_TYPE_VALUES.includes(productValue as (typeof PRODUCT_TYPE_VALUES)[number])) {
+          profile.productType = productValue as (typeof PRODUCT_TYPE_VALUES)[number]
         }
       } else if (fieldName === 'propertyType') {
         // Validate property type enum
@@ -163,6 +132,53 @@ export function parseKeyValueSyntax(message: string): KeyValueExtractionResult {
         const propertyValue = value.toLowerCase().replace(/_/g, '-')
         if (propertyTypes.includes(propertyValue as (typeof propertyTypes)[number])) {
           profile.propertyType = propertyValue as (typeof propertyTypes)[number]
+        }
+      } else if (fieldName === 'premium' || fieldName === 'premiums') {
+        // Handle premium parsing - supports formats like:
+        // premium:1200, premium:annual:1200, premium:monthly:100, premium:$1200/yr, premium:1200/yr
+        // Check if value contains period indicator or if key has period
+        const fullMatch = match[0] // Full match including key:value
+        const premiumMatch = fullMatch.match(
+          /premium(?::(annual|monthly|semiAnnual|semi-annual))?:[\$]?(\d+)(?:\/(yr|mo|6mo))?/i
+        )
+        if (premiumMatch) {
+          const periodIndicator: string | undefined =
+            premiumMatch[3] || (premiumMatch[1] ? premiumMatch[1].toLowerCase() : undefined) // yr/mo/6mo or annual/monthly
+          const amount = Number.parseFloat(premiumMatch[2] as string)
+          if (!Number.isNaN(amount) && amount > 0) {
+            if (!profile.premiums) {
+              profile.premiums = {}
+            }
+            // Normalize period indicator to standard format
+            let normalizedPeriod: 'annual' | 'monthly' | 'semiAnnual' = 'annual'
+            const period: string = (periodIndicator ?? 'annual') as string
+            if (period === 'yr' || period === 'annual') {
+              normalizedPeriod = 'annual'
+            } else if (period === 'mo' || period === 'monthly') {
+              normalizedPeriod = 'monthly'
+            } else if (period === '6mo' || period === 'semiannual' || period === 'semi-annual') {
+              normalizedPeriod = 'semiAnnual'
+            }
+            if (normalizedPeriod === 'annual') {
+              profile.premiums.annual = amount
+            } else if (normalizedPeriod === 'monthly') {
+              profile.premiums.monthly = amount
+            } else if (normalizedPeriod === 'semiAnnual') {
+              profile.premiums.semiAnnual = amount
+            } else {
+              // Default to annual if period unclear
+              profile.premiums.annual = amount
+            }
+          }
+        } else {
+          // Simple numeric value - treat as annual premium
+          const numValue = Number.parseFloat(value.replace(/[\$,]/g, ''))
+          if (!Number.isNaN(numValue) && numValue > 0) {
+            if (!profile.premiums) {
+              profile.premiums = {}
+            }
+            profile.premiums.annual = numValue
+          }
         }
       } else {
         // String fields

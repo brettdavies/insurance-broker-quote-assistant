@@ -1,0 +1,71 @@
+{
+  "id": "policy-01",
+  "name": "Policy with Missing Discounts - CA Auto GEICO",
+  "description": "Test case for LLM identification and deterministic validation of missing discounts",
+  "type": "policy",
+  "carrier": "GEICO",
+  "state": "CA",
+  "product": "auto",
+  "policyInput": "GEICO Auto Insurance Policy\nPolicy Number: GEICO-12345\nEffective Date: 01/01/2024\nExpiration Date: 01/01/2025\n\nInsured: John Doe\nAddress: 123 Main St, Los Angeles, CA 90210\nAge: 35\n\nVehicle: 2020 Honda Accord\nAnnual Premium: $1,200\nDeductible: $500\n\nCoverage:\n- Liability: $100,000/$300,000\n- Comprehensive: $500 deductible\n- Collision: $500 deductible\n\nDriving Record: Clean for past 5 years\nMulti-Vehicle: No\nHomeowner: Yes (has home insurance with State Farm)",
+  "expectedPolicy": {
+    "carrier": "GEICO",
+    "state": "CA",
+    "productType": "auto",
+    "premiums": {
+      "annual": 1200
+    },
+    "deductibles": {
+      "auto": 500,
+      "comprehensive": 500,
+      "collision": 500
+    },
+    "coverageLimits": {
+      "liability": 100000,
+      "propertyDamage": 300000
+    },
+    "name": "John Doe",
+    "zip": "90210",
+    "address": "123 Main St, Los Angeles, CA 90210"
+  },
+  "expectedOpportunities": [
+    {
+      "discount": "Safe Driver",
+      "percentage": 10,
+      "annualSavings": 120,
+      "requires": ["cleanRecord3Yr"],
+      "citation": {
+        "id": "disc_safe_driver",
+        "type": "discount",
+        "carrier": "carr_foh5t5b435ubg3q3bq2ymodz",
+        "file": "knowledge_pack/carriers/geico.json"
+      }
+    },
+    {
+      "discount": "Multi-Policy Bundle",
+      "percentage": 15,
+      "annualSavings": 180,
+      "requires": ["existingPolicies", "ownsHome"],
+      "citation": {
+        "id": "disc_bundle",
+        "type": "discount",
+        "carrier": "carr_foh5t5b435ubg3q3bq2ymodz",
+        "file": "knowledge_pack/carriers/geico.json"
+      }
+    }
+  ],
+  "expectedBundleOptions": [
+    {
+      "product": "home",
+      "estimatedSavings": 200,
+      "requiredActions": ["Transfer home insurance from State Farm to GEICO"],
+      "citation": {
+        "id": "disc_bundle",
+        "type": "discount",
+        "carrier": "carr_foh5t5b435ubg3q3bq2ymodz",
+        "file": "knowledge_pack/carriers/geico.json"
+      }
+    }
+  ],
+  "expectedDeductibleOptimizations": []
+}
+

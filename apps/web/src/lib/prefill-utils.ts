@@ -72,19 +72,19 @@ export async function getPrefillPacket(
  * Generate filename for prefill packet download
  *
  * @param prefill - PrefillPacket to generate filename from
- * @returns Sanitized filename: prefill_{name}_{state}_{productLine}_{YYYYMMDD}.json
+ * @returns Sanitized filename: prefill_{name}_{state}_{productType}_{YYYYMMDD}.json
  */
 export function generatePrefillFilename(prefill: PrefillPacket): string {
   // Sanitize name: Remove spaces, special characters (keep only alphanumeric and underscores), convert to lowercase, limit length to 50 characters
-  const sanitizedName = prefill.fullName
-    ? prefill.fullName
+  const sanitizedName = prefill.name
+    ? prefill.name
         .replace(/[^a-zA-Z0-9_]/g, '_')
         .toLowerCase()
         .slice(0, 50)
     : 'unknown'
 
   const state = (prefill.state || 'unknown').toLowerCase()
-  const productLine = prefill.productLine || 'unknown'
+  const productType = prefill.productType || 'unknown'
 
   // Use current date in YYYYMMDD format
   const now = new Date()
@@ -93,7 +93,7 @@ export function generatePrefillFilename(prefill: PrefillPacket): string {
   const day = String(now.getDate()).padStart(2, '0')
   const dateStr = `${year}${month}${day}`
 
-  return `prefill_${sanitizedName}_${state}_${productLine}_${dateStr}.json`
+  return `prefill_${sanitizedName}_${state}_${productType}_${dateStr}.json`
 }
 
 /**

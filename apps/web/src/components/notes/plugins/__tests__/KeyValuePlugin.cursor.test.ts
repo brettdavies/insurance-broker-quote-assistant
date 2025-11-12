@@ -21,7 +21,14 @@
 import '../../../../test-setup'
 import { beforeEach, describe, expect, it } from 'bun:test'
 import { parseKeyValueSyntax } from '@/lib/key-value-parser'
-import { $getRoot, $getSelection, $isRangeSelection, $isTextNode, createEditor } from 'lexical'
+import {
+  $getRoot,
+  $getSelection,
+  $insertNodes,
+  $isRangeSelection,
+  $isTextNode,
+  createEditor,
+} from 'lexical'
 import { TextNode } from 'lexical'
 import { $createPillNode } from '../../nodes/PillNode'
 
@@ -142,8 +149,9 @@ describe('KeyValuePlugin - Cursor Position Preservation', () => {
     it('should position cursor after pill when cursor is at end of "k:2"', () => {
       editor.update(() => {
         const root = $getRoot()
+        root.selectStart()
         const textNode = new TextNode('k:2')
-        root.append(textNode)
+        $insertNodes([textNode])
         textNode.select(3, 3) // Cursor at end of "k:2"
 
         const parsed = parseKeyValueSyntax('k:2')
@@ -161,8 +169,9 @@ describe('KeyValuePlugin - Cursor Position Preservation', () => {
     it('should position cursor after pill when cursor is at end of "k:2 " (with space)', () => {
       editor.update(() => {
         const root = $getRoot()
+        root.selectStart()
         const textNode = new TextNode('k:2 ')
-        root.append(textNode)
+        $insertNodes([textNode])
         textNode.select(4, 4) // Cursor at end after space
 
         const parsed = parseKeyValueSyntax('k:2 ')
@@ -179,8 +188,9 @@ describe('KeyValuePlugin - Cursor Position Preservation', () => {
     it('should position cursor after pill when cursor is inside pill text', () => {
       editor.update(() => {
         const root = $getRoot()
+        root.selectStart()
         const textNode = new TextNode('k:2')
-        root.append(textNode)
+        $insertNodes([textNode])
         textNode.select(2, 2) // Cursor in middle of "k:2"
 
         const parsed = parseKeyValueSyntax('k:2')
@@ -197,8 +207,9 @@ describe('KeyValuePlugin - Cursor Position Preservation', () => {
     it('should handle cursor at start of pill match', () => {
       editor.update(() => {
         const root = $getRoot()
+        root.selectStart()
         const textNode = new TextNode('k:2')
-        root.append(textNode)
+        $insertNodes([textNode])
         textNode.select(0, 0) // Cursor at start
 
         const parsed = parseKeyValueSyntax('k:2')
@@ -213,8 +224,9 @@ describe('KeyValuePlugin - Cursor Position Preservation', () => {
     it('should handle cursor exactly at end of pill match (boundary)', () => {
       editor.update(() => {
         const root = $getRoot()
+        root.selectStart()
         const textNode = new TextNode('k:2')
-        root.append(textNode)
+        $insertNodes([textNode])
         textNode.select(3, 3) // Cursor exactly at end (boundary case)
 
         const parsed = parseKeyValueSyntax('k:2')
@@ -231,8 +243,9 @@ describe('KeyValuePlugin - Cursor Position Preservation', () => {
     it('should preserve cursor position with multiple pills', () => {
       editor.update(() => {
         const root = $getRoot()
+        root.selectStart()
         const textNode = new TextNode('k:2 v:3')
-        root.append(textNode)
+        $insertNodes([textNode])
         textNode.select(4, 4) // Cursor between pills
 
         const parsed = parseKeyValueSyntax('k:2 v:3')
@@ -249,8 +262,9 @@ describe('KeyValuePlugin - Cursor Position Preservation', () => {
     it('should preserve cursor at end of text with multiple pills', () => {
       editor.update(() => {
         const root = $getRoot()
+        root.selectStart()
         const textNode = new TextNode('k:2 v:3')
-        root.append(textNode)
+        $insertNodes([textNode])
         textNode.select(7, 7) // Cursor at end
 
         const parsed = parseKeyValueSyntax('k:2 v:3')
@@ -266,8 +280,9 @@ describe('KeyValuePlugin - Cursor Position Preservation', () => {
     it('should always have a cursor node when cursor was in original text', () => {
       editor.update(() => {
         const root = $getRoot()
+        root.selectStart()
         const textNode = new TextNode('k:2')
-        root.append(textNode)
+        $insertNodes([textNode])
         textNode.select(3, 3) // Cursor at end
 
         const parsed = parseKeyValueSyntax('k:2')
@@ -282,8 +297,9 @@ describe('KeyValuePlugin - Cursor Position Preservation', () => {
     it('should handle fallback when cursor position tracking fails', () => {
       editor.update(() => {
         const root = $getRoot()
+        root.selectStart()
         const textNode = new TextNode('k:2')
-        root.append(textNode)
+        $insertNodes([textNode])
         textNode.select(3, 3)
 
         const parsed = parseKeyValueSyntax('k:2')
@@ -299,8 +315,9 @@ describe('KeyValuePlugin - Cursor Position Preservation', () => {
     it('should handle empty text after pill', () => {
       editor.update(() => {
         const root = $getRoot()
+        root.selectStart()
         const textNode = new TextNode('k:2')
-        root.append(textNode)
+        $insertNodes([textNode])
         textNode.select(3, 3) // Cursor at end, no text after
 
         const parsed = parseKeyValueSyntax('k:2')
@@ -315,8 +332,9 @@ describe('KeyValuePlugin - Cursor Position Preservation', () => {
     it('should handle text before and after pill', () => {
       editor.update(() => {
         const root = $getRoot()
+        root.selectStart()
         const textNode = new TextNode('hello k:2 world')
-        root.append(textNode)
+        $insertNodes([textNode])
         textNode.select(8, 8) // Cursor in middle of pill
 
         const parsed = parseKeyValueSyntax('hello k:2 world')

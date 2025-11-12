@@ -43,7 +43,7 @@ describe('CapturedFields', () => {
   it('displays captured fields organized by category', () => {
     const profile: UserProfile = {
       state: 'CA',
-      productLine: 'auto',
+      productType: 'auto',
       kids: 2,
       vehicles: 1,
     }
@@ -68,7 +68,7 @@ describe('CapturedFields', () => {
   it('displays field values correctly', () => {
     const profile: UserProfile = {
       state: 'CA',
-      productLine: 'auto',
+      productType: 'auto',
       kids: 2,
     }
 
@@ -78,7 +78,7 @@ describe('CapturedFields', () => {
     // Check for field values (may be in accordion content or JSON fallback)
     const hasState = textIncludes(container, 'CA') || textIncludes(container, '"state":"CA"')
     const hasProductLine =
-      textIncludes(container, 'auto') || textIncludes(container, '"productLine":"auto"')
+      textIncludes(container, 'auto') || textIncludes(container, '"productType":"auto"')
     const hasKids = textIncludes(container, '2') || textIncludes(container, '"kids":2')
     expect(hasState || hasProductLine || hasKids).toBeTruthy()
   })

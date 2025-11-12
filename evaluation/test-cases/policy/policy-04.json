@@ -1,0 +1,87 @@
+{
+  "id": "policy-04",
+  "name": "Policy with Multiple Opportunity Types - NY Auto+Home GEICO",
+  "description": "Test case with multiple opportunity types: missing discounts, bundle options, and deductible optimizations",
+  "type": "policy",
+  "carrier": "GEICO",
+  "state": "NY",
+  "product": ["auto", "home"],
+  "policyInput": "GEICO Auto and Home Insurance Policies\n\nAuto Policy:\nPolicy Number: GEICO-AUTO-22222\nAnnual Premium: $1,400\nDeductible: $500\nVehicle: 2021 Ford F-150\nAge: 45\nClean Record: Yes (past 6 years)\n\nHome Policy:\nPolicy Number: GEICO-HOME-22222\nAnnual Premium: $1,000\nDeductible: $500\nProperty: Single-family home built in 2015\nSquare Feet: 2,200\n\nInsured: Michael Brown\nAddress: 321 Park Ave, New York, NY 10001\n\nCoverage:\nAuto - Liability: $100,000/$300,000\nHome - Dwelling: $400,000\n\nNotes: Customer qualifies for multiple discounts but not currently receiving them",
+  "expectedPolicy": {
+    "carrier": "GEICO",
+    "state": "NY",
+    "productType": "auto",
+    "premiums": {
+      "annual": 2400
+    },
+    "deductibles": {
+      "auto": 500,
+      "home": 500
+    },
+    "coverageLimits": {
+      "liability": 100000,
+      "propertyDamage": 300000,
+      "dwelling": 400000
+    },
+    "name": "Michael Brown",
+    "zip": "10001",
+    "address": "321 Park Ave, New York, NY 10001",
+    "yearBuilt": 2015,
+    "squareFeet": 2200,
+    "propertyType": "single_family"
+  },
+  "expectedOpportunities": [
+    {
+      "discount": "Safe Driver",
+      "percentage": 15,
+      "annualSavings": 210,
+      "requires": ["cleanRecord3Yr"],
+      "citation": {
+        "id": "disc_safe_driver",
+        "type": "discount",
+        "carrier": "carr_foh5t5b435ubg3q3bq2ymodz",
+        "file": "knowledge_pack/carriers/geico.json"
+      }
+    },
+    {
+      "discount": "Multi-Policy Bundle",
+      "percentage": 20,
+      "annualSavings": 480,
+      "requires": ["existingPolicies", "ownsHome"],
+      "citation": {
+        "id": "disc_bundle",
+        "type": "discount",
+        "carrier": "carr_foh5t5b435ubg3q3bq2ymodz",
+        "file": "knowledge_pack/carriers/geico.json"
+      }
+    }
+  ],
+  "expectedBundleOptions": [
+    {
+      "product": "umbrella",
+      "estimatedSavings": 150,
+      "requiredActions": ["Add umbrella policy for additional liability coverage"],
+      "citation": {
+        "id": "disc_bundle",
+        "type": "discount",
+        "carrier": "carr_foh5t5b435ubg3q3bq2ymodz",
+        "file": "knowledge_pack/carriers/geico.json"
+      }
+    }
+  ],
+  "expectedDeductibleOptimizations": [
+    {
+      "currentDeductible": 500,
+      "suggestedDeductible": 1000,
+      "estimatedSavings": 200,
+      "premiumImpact": -200,
+      "citation": {
+        "id": "disc_deductible",
+        "type": "discount",
+        "carrier": "carr_foh5t5b435ubg3q3bq2ymodz",
+        "file": "knowledge_pack/carriers/geico.json"
+      }
+    }
+  ]
+}
+

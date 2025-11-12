@@ -51,7 +51,7 @@ export function assertExtractionResult(
       if (typeof expectedValue === 'string' && key === 'state') {
         // State can be 'CA' or 'California' - just check it's a string
         expect(typeof actualValue).toBe('string')
-      } else if (typeof expectedValue === 'string' && key === 'productLine') {
+      } else if (typeof expectedValue === 'string' && key === 'productType') {
         // Product line must match exactly (enum)
         expect(actualValue).toBe(expectedValue)
       }
@@ -124,9 +124,9 @@ export function assertUserProfile(profile: Partial<UserProfile>): void {
     expect(typeof profile.state).toBe('string')
   }
 
-  if (profile.productLine !== undefined) {
+  if (profile.productType !== undefined) {
     const validProductLines = ['auto', 'home', 'renters', 'umbrella'] as const
-    expect(validProductLines.includes(profile.productLine)).toBe(true)
+    expect(validProductLines.includes(profile.productType)).toBe(true)
   }
 
   if (profile.age !== undefined) {

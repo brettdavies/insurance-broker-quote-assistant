@@ -1,5 +1,7 @@
 import { z } from 'zod'
 import { type MissingField, missingFieldSchema } from './missing-field'
+import { productTypeEnum, propertyTypeEnum } from './shared-enums'
+import { userContactSchema } from './user-contact'
 
 /**
  * Prefill Packet Schema
@@ -12,16 +14,9 @@ import { type MissingField, missingFieldSchema } from './missing-field'
  * @see docs/architecture/4-data-models.md#47-prefillpacket
  */
 
-export const prefillPacketSchema = z.object({
-  // Contact Information
-  fullName: z.string().optional(),
-  email: z.string().email().optional(),
-  phone: z.string().optional(),
-  address: z.string().optional(),
-
+export const prefillPacketSchema = userContactSchema.extend({
   // Quote Essentials (required)
-  state: z.string(), // US state code (required)
-  productLine: z.enum(['auto', 'home', 'renters', 'umbrella']), // Product type (required)
+  productType: productTypeEnum, // Product type (required)
   carrier: z.string().optional(), // Primary carrier from routing decision
 
   // Product-Specific Data - Auto
@@ -38,9 +33,7 @@ export const prefillPacketSchema = z.object({
   constructionType: z.string().optional(),
   squareFeet: z.number().int().positive().optional(),
   roofType: z.string().optional(),
-  propertyType: z
-    .enum(['single-family', 'condo', 'townhouse', 'mobile-home', 'duplex', 'apartment'])
-    .optional(),
+  propertyType: propertyTypeEnum.optional(),
 
   // Product-Specific Data - Renters
   personalProperty: z.number().int().positive().optional(), // Personal property value

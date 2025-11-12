@@ -14,8 +14,8 @@ This is a new project built from scratch. No existing starter templates or codeb
 
 ## 1.2 Change Log
 
-| Date | Version | Description | Author |
-|------|---------|-------------|--------|
-| 2025-11-05 | 1.0 | Initial architecture document | Winston (Architect Agent) |
+| Date       | Version | Description                   | Author                    |
+| ---------- | ------- | ----------------------------- | ------------------------- |
+| 2025-11-05 | 1.0     | Initial architecture document | Winston (Architect Agent) |
 
 ---

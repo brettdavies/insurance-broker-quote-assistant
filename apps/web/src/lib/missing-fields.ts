@@ -24,26 +24,26 @@ export interface MissingFieldInfo {
  * Backend will reconcile with carrier/state-specific requirements after API call.
  *
  * @param profile - User profile to check
- * @param productLine - Optional product line (defaults to profile.productLine)
+ * @param productType - Optional product type (defaults to profile.productType)
  * @param state - Optional state code (defaults to profile.state)
  * @param carrier - Optional carrier name (not used in frontend, backend will reconcile)
  * @returns Array of missing field information
  */
 export function calculateMissingFields(
   profile: UserProfile,
-  productLine?: string,
+  productType?: string,
   state?: string,
   carrier?: string
 ): MissingFieldInfo[] {
   const missing: MissingFieldInfo[] = []
-  const product = productLine || profile.productLine
+  const product = productType || profile.productType
 
   // Required fields for all products
   if (!profile.state) {
     missing.push({ fieldKey: 'state', priority: 'critical' })
   }
-  if (!profile.productLine) {
-    missing.push({ fieldKey: 'productLine', priority: 'critical' })
+  if (!profile.productType) {
+    missing.push({ fieldKey: 'productType', priority: 'critical' })
   }
 
   // Product-specific required fields
@@ -64,8 +64,8 @@ export function calculateMissingFields(
     if (!profile.propertyType) {
       missing.push({ fieldKey: 'propertyType', priority: 'critical' })
     }
-    if (!profile.constructionYear) {
-      missing.push({ fieldKey: 'constructionYear', priority: 'important' })
+    if (!profile.yearBuilt) {
+      missing.push({ fieldKey: 'yearBuilt', priority: 'important' })
     }
     if (!profile.squareFeet) {
       missing.push({ fieldKey: 'squareFeet', priority: 'important' })

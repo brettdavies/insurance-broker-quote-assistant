@@ -1,0 +1,7 @@
+# Bun test configuration
+[test]
+dom = true
+jsx = "react-jsx"
+jsxImportSource = "react"
+onlyFailures = true
+telemetry = false

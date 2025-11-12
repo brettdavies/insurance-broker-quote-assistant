@@ -10,6 +10,7 @@
 ## Executive Summary
 
 This document provides a complete analysis of the keyboard shortcut system for IQuote Pro, including:
+
 - **Complete field inventory** (27 unique fields requiring shortcuts)
 - **macOS + Chrome conflict analysis** (platform-specific for demo scope)
 - **Revised shortcut philosophy** with zero conflicts
@@ -22,12 +23,14 @@ This document provides a complete analysis of the keyboard shortcut system for I
 The original shortcut philosophy (`Alt+` for actions, `Ctrl+` for fields/modes) has **4 critical conflicts** with macOS Emacs-style text editing and **2 moderate conflicts** with Chrome browser functions:
 
 🔴 **Critical Emacs Conflicts:**
+
 - `Ctrl+A` (ages) → conflicts with "move to line start"
 - `Ctrl+D` (deps) → conflicts with "delete character right"
 - `Ctrl+K` (kids) → conflicts with "cut to end of line"
 - `Ctrl+V` (vehicles) → conflicts with "page down"
 
 ⚠️ **Moderate Chrome Conflicts:**
+
 - `Cmd+K` → Chrome address bar (if user accidentally uses Cmd instead of Ctrl)
 - `Cmd+D` → Bookmark page (if user accidentally uses Cmd instead of Ctrl)
 
@@ -59,65 +62,65 @@ Based on [docs/architecture/4-data-models.md](architecture/4-data-models.md) and
 
 #### Identity Fields (3 fields)
 
-| Field | Pill Syntax | Current Shortcut | Conflicts | Proposed Shortcut |
-|-------|-------------|------------------|-----------|-------------------|
-| **Name** | `name:`, `n:` | None | - | `/n` |
-| **Email** | `email:`, `e:` | None | - | `/e` |
-| **Phone** | `phone:`, `p:` | None | - | `/p` |
+| Field     | Pill Syntax    | Current Shortcut | Conflicts | Proposed Shortcut |
+| --------- | -------------- | ---------------- | --------- | ----------------- |
+| **Name**  | `name:`, `n:`  | None             | -         | `/n`              |
+| **Email** | `email:`, `e:` | None             | -         | `/e`              |
+| **Phone** | `phone:`, `p:` | None             | -         | `/p`              |
 
 #### Location Fields (2 fields)
 
-| Field | Pill Syntax | Current Shortcut | Conflicts | Proposed Shortcut |
-|-------|-------------|------------------|-----------|-------------------|
-| **State** | `state:`, `s:` | None | - | `/s` |
-| **Zip Code** | `zip:`, `z:` | None | - | `/z` |
+| Field        | Pill Syntax    | Current Shortcut | Conflicts | Proposed Shortcut |
+| ------------ | -------------- | ---------------- | --------- | ----------------- |
+| **State**    | `state:`, `s:` | None             | -         | `/s`              |
+| **Zip Code** | `zip:`, `z:`   | None             | -         | `/z`              |
 
 #### Product Selection (1 field)
 
-| Field | Pill Syntax | Current Shortcut | Conflicts | Proposed Shortcut |
-|-------|-------------|------------------|-----------|-------------------|
-| **Product Line** | `product:`, `prod:` | None | - | `/l` (L for Line) |
+| Field            | Pill Syntax         | Current Shortcut | Conflicts | Proposed Shortcut |
+| ---------------- | ------------------- | ---------------- | --------- | ----------------- |
+| **Product Line** | `product:`, `prod:` | None             | -         | `/l` (L for Line) |
 
 #### Household Fields (4 fields)
 
-| Field | Pill Syntax | Current Shortcut | Conflicts | Proposed Shortcut |
-|-------|-------------|------------------|-----------|-------------------|
-| **Age** | `age:`, `a:` | None | - | `/a` |
-| **Household Size** | `household:`, `hh:` | None | - | `/h` |
-| **Children Count** | `kids:`, `k:`, `children:` | `Ctrl+K` | 🔴 Emacs: Cut to end of line<br>⚠️ Cmd+K: Chrome address bar | `/k` |
-| **Dependents Count** | `deps:`, `d:`, `dependents:` | `Ctrl+D` | 🔴 Emacs: Delete char right<br>⚠️ Cmd+D: Bookmark | `/d` |
+| Field                | Pill Syntax                  | Current Shortcut | Conflicts                                                    | Proposed Shortcut |
+| -------------------- | ---------------------------- | ---------------- | ------------------------------------------------------------ | ----------------- |
+| **Age**              | `age:`, `a:`                 | None             | -                                                            | `/a`              |
+| **Household Size**   | `household:`, `hh:`          | None             | -                                                            | `/h`              |
+| **Children Count**   | `kids:`, `k:`, `children:`   | `Ctrl+K`         | 🔴 Emacs: Cut to end of line<br>⚠️ Cmd+K: Chrome address bar | `/k`              |
+| **Dependents Count** | `deps:`, `d:`, `dependents:` | `Ctrl+D`         | 🔴 Emacs: Delete char right<br>⚠️ Cmd+D: Bookmark            | `/d`              |
 
 #### Vehicle/Auto Fields (7 fields)
 
-| Field | Pill Syntax | Current Shortcut | Conflicts | Proposed Shortcut |
-|-------|-------------|------------------|-----------|-------------------|
-| **Vehicle Count** | `vehicles:`, `v:`, `cars:` | `Ctrl+V` | 🔴 Emacs: Page down | `/v` |
-| **Garage Type** | `garage:`, `car:`, `c:` | None | - | `/g` (G for Garage) |
-| **VINs** | `vins:`, `vin:` | None | - | `/i` (I for VIN) |
-| **Driver Ages** | `drivers:`, `driver_ages:` | `Ctrl+A` (mentioned in spec) | 🔴 Cmd+A: Select all<br>🔴 Ctrl+A: Move to line start | `/r` (R for dRivers) |
-| **Driving Records** | `records:`, `driving_records:` | None | - | `/c` (C for reCords) |
-| **Clean Record 3yr** | `clean:`, `clean_record:` | None | - | `/u` (U for Unsullied) |
-| **Vehicles Array** | `vehicles:` (full array) | None | - | (Same as vehicle count) |
+| Field                | Pill Syntax                    | Current Shortcut             | Conflicts                                             | Proposed Shortcut       |
+| -------------------- | ------------------------------ | ---------------------------- | ----------------------------------------------------- | ----------------------- |
+| **Vehicle Count**    | `vehicles:`, `v:`, `cars:`     | `Ctrl+V`                     | 🔴 Emacs: Page down                                   | `/v`                    |
+| **Garage Type**      | `garage:`, `car:`, `c:`        | None                         | -                                                     | `/g` (G for Garage)     |
+| **VINs**             | `vins:`, `vin:`                | None                         | -                                                     | `/i` (I for VIN)        |
+| **Driver Ages**      | `drivers:`, `driver_ages:`     | `Ctrl+A` (mentioned in spec) | 🔴 Cmd+A: Select all<br>🔴 Ctrl+A: Move to line start | `/r` (R for dRivers)    |
+| **Driving Records**  | `records:`, `driving_records:` | None                         | -                                                     | `/c` (C for reCords)    |
+| **Clean Record 3yr** | `clean:`, `clean_record:`      | None                         | -                                                     | `/u` (U for Unsullied)  |
+| **Vehicles Array**   | `vehicles:` (full array)       | None                         | -                                                     | (Same as vehicle count) |
 
 #### Property/Home Fields (5 fields)
 
-| Field | Pill Syntax | Current Shortcut | Conflicts | Proposed Shortcut |
-|-------|-------------|------------------|-----------|-------------------|
-| **Owns Home** | `owns_home:`, `owner:` | None | - | `/o` |
-| **Property Type** | `property:`, `prop_type:` | None | - | `/t` (T for Type) |
-| **Construction Year** | `year:`, `built:`, `construction_year:` | None | - | `/y` |
-| **Roof Type** | `roof:`, `roof_type:` | None | - | `/f` (F for rooF) |
-| **Square Feet** | `sqft:`, `square_feet:` | None | - | `/q` (Q for sQuare) |
+| Field                 | Pill Syntax                             | Current Shortcut | Conflicts | Proposed Shortcut   |
+| --------------------- | --------------------------------------- | ---------------- | --------- | ------------------- |
+| **Owns Home**         | `owns_home:`, `owner:`                  | None             | -         | `/o`                |
+| **Property Type**     | `property:`, `prop_type:`               | None             | -         | `/t` (T for Type)   |
+| **Construction Year** | `year:`, `built:`, `construction_year:` | None             | -         | `/y`                |
+| **Roof Type**         | `roof:`, `roof_type:`                   | None             | -         | `/f` (F for rooF)   |
+| **Square Feet**       | `sqft:`, `square_feet:`                 | None             | -         | `/q` (Q for sQuare) |
 
 #### Coverage/Policy Fields (5 fields)
 
-| Field | Pill Syntax | Current Shortcut | Conflicts | Proposed Shortcut |
-|-------|-------------|------------------|-----------|-------------------|
-| **Current Carrier** | `carrier:` | None | - | `/r` (R for caRrier) |
-| **Current Premium** | `premium:` | None | - | `/m` (M for preMium) |
-| **Deductibles** | `deductible:`, `ded:` | None | - | `/b` (B for deducti**B**le) |
-| **Limits** | `limits:`, `limit:` | None | - | `/x` (X for maX) |
-| **Existing Policies** | `policies:`, `existing:` | None | - | `/w` (W for poWicies) |
+| Field                 | Pill Syntax              | Current Shortcut | Conflicts | Proposed Shortcut           |
+| --------------------- | ------------------------ | ---------------- | --------- | --------------------------- |
+| **Current Carrier**   | `carrier:`               | None             | -         | `/r` (R for caRrier)        |
+| **Current Premium**   | `premium:`               | None             | -         | `/m` (M for preMium)        |
+| **Deductibles**       | `deductible:`, `ded:`    | None             | -         | `/b` (B for deducti**B**le) |
+| **Limits**            | `limits:`, `limit:`      | None             | -         | `/x` (X for maX)            |
+| **Existing Policies** | `policies:`, `existing:` | None             | -         | `/w` (W for poWicies)       |
 
 **Note on Conflicts:** Some letters are used twice (e.g., `R` for drivers and carrier, `L` for product line and clean record). This will be resolved in Section 2.3 with context-aware assignments (intake vs policy mode).
 
@@ -127,14 +130,14 @@ Based on [docs/architecture/4-data-models.md](architecture/4-data-models.md) and
 
 These shortcuts use **full-word slash commands** for all app-level actions, modes, and help - providing ultimate simplicity with just one prefix pattern.
 
-| Shortcut | Action | Category | Conflicts |
-|----------|--------|----------|-----------|
-| `/export` | Export/Download (pre-fill or savings pitch) | Action | ✅ None |
-| `/copy` | Copy to clipboard | Action | ✅ None (different from `/c` = driving records) |
-| `/reset` | Session reset | Action | ✅ None |
-| `/policy` | Toggle to Policy Analysis mode | Mode Switch | ✅ None |
-| `/intake` or `/convo` | Toggle to Intake mode | Mode Switch | ✅ None |
-| `/help` or `/?` | Show keyboard shortcuts browser | Help | ✅ None |
+| Shortcut              | Action                                      | Category    | Conflicts                                       |
+| --------------------- | ------------------------------------------- | ----------- | ----------------------------------------------- |
+| `/export`             | Export/Download (pre-fill or savings pitch) | Action      | ✅ None                                         |
+| `/copy`               | Copy to clipboard                           | Action      | ✅ None (different from `/c` = driving records) |
+| `/reset`              | Session reset                               | Action      | ✅ None                                         |
+| `/policy`             | Toggle to Policy Analysis mode              | Mode Switch | ✅ None                                         |
+| `/intake` or `/convo` | Toggle to Intake mode                       | Mode Switch | ✅ None                                         |
+| `/help` or `/?`       | Show keyboard shortcuts browser             | Help        | ✅ None                                         |
 
 **Philosophy Update:** Simplified to **one prefix pattern**: slash commands. Single letters (`/k`, `/v`) for fields (27 shortcuts), full words (`/export`, `/policy`) for actions (6 shortcuts). Zero modifier keys, maximum simplicity.
 
@@ -146,48 +149,48 @@ This table documents all shortcuts that MUST be avoided in IQuote Pro to prevent
 
 #### System-Wide macOS Shortcuts (Always Conflicting)
 
-| Shortcut | Function | Severity | Notes |
-|----------|----------|----------|-------|
-| `Cmd+A` | Select All | 🔴 Critical | Never override - users expect this everywhere |
-| `Cmd+C` | Copy | 🔴 Critical | Never override |
-| `Cmd+V` | Paste | 🔴 Critical | Never override |
-| `Cmd+X` | Cut | 🔴 Critical | Never override |
-| `Cmd+Z` | Undo | 🔴 Critical | Never override |
-| `Cmd+S` | Save | 🔴 Critical | Users expect this for saving |
-| `Cmd+Q` | Quit Application | 🔴 Critical | Never override - system-level |
-| `Cmd+W` | Close Window/Tab | 🔴 Critical | Chrome standard |
-| `Cmd+T` | New Tab | 🔴 Critical | Chrome standard |
-| `Cmd+,` | Preferences | ⚠️ Moderate | Chrome standard |
-| `Cmd+Space` | Spotlight | 🔴 Critical | macOS system-wide |
-| `Cmd+Tab` | Switch Apps | 🔴 Critical | macOS system-wide |
+| Shortcut    | Function         | Severity    | Notes                                         |
+| ----------- | ---------------- | ----------- | --------------------------------------------- |
+| `Cmd+A`     | Select All       | 🔴 Critical | Never override - users expect this everywhere |
+| `Cmd+C`     | Copy             | 🔴 Critical | Never override                                |
+| `Cmd+V`     | Paste            | 🔴 Critical | Never override                                |
+| `Cmd+X`     | Cut              | 🔴 Critical | Never override                                |
+| `Cmd+Z`     | Undo             | 🔴 Critical | Never override                                |
+| `Cmd+S`     | Save             | 🔴 Critical | Users expect this for saving                  |
+| `Cmd+Q`     | Quit Application | 🔴 Critical | Never override - system-level                 |
+| `Cmd+W`     | Close Window/Tab | 🔴 Critical | Chrome standard                               |
+| `Cmd+T`     | New Tab          | 🔴 Critical | Chrome standard                               |
+| `Cmd+,`     | Preferences      | ⚠️ Moderate | Chrome standard                               |
+| `Cmd+Space` | Spotlight        | 🔴 Critical | macOS system-wide                             |
+| `Cmd+Tab`   | Switch Apps      | 🔴 Critical | macOS system-wide                             |
 
 #### Chrome-Specific Shortcuts (Demo Scope)
 
-| Shortcut | Function | Severity | Notes |
-|----------|----------|----------|-------|
-| `Cmd+K` | Focus Address Bar | ⚠️ Moderate | Can override in web app with `event.preventDefault()` |
-| `Cmd+D` | Bookmark Page | ⚠️ Moderate | Can override in web app |
-| `Cmd+L` | Focus Address Bar | ⚠️ Moderate | Alternative to Cmd+K |
-| `Cmd+R` | Reload Page | ⚠️ Moderate | Can override but risky (users expect reload) |
-| `Cmd+1-9` | Switch to Tab N | ⚠️ Moderate | Can override |
-| `Cmd+[` | Back | ⚠️ Moderate | Can override |
-| `Cmd+]` | Forward | ⚠️ Moderate | Can override |
+| Shortcut  | Function          | Severity    | Notes                                                 |
+| --------- | ----------------- | ----------- | ----------------------------------------------------- |
+| `Cmd+K`   | Focus Address Bar | ⚠️ Moderate | Can override in web app with `event.preventDefault()` |
+| `Cmd+D`   | Bookmark Page     | ⚠️ Moderate | Can override in web app                               |
+| `Cmd+L`   | Focus Address Bar | ⚠️ Moderate | Alternative to Cmd+K                                  |
+| `Cmd+R`   | Reload Page       | ⚠️ Moderate | Can override but risky (users expect reload)          |
+| `Cmd+1-9` | Switch to Tab N   | ⚠️ Moderate | Can override                                          |
+| `Cmd+[`   | Back              | ⚠️ Moderate | Can override                                          |
+| `Cmd+]`   | Forward           | ⚠️ Moderate | Can override                                          |
 
 #### Emacs-Style Text Editing (macOS Text Fields)
 
 These shortcuts work in ALL macOS text inputs (contentEditable, textarea, input) and should NOT be overridden:
 
-| Shortcut | Function | Severity | Notes |
-|----------|----------|----------|-------|
-| `Ctrl+A` | Move to line start | 🔴 Critical | Emacs standard, expected in notes input |
-| `Ctrl+E` | Move to line end | 🔴 Critical | Emacs standard |
-| `Ctrl+F` | Move forward one character | ⚠️ Moderate | Less common, can override |
-| `Ctrl+B` | Move backward one character | ⚠️ Moderate | Less common, can override |
-| `Ctrl+N` | Move down one line | ⚠️ Moderate | Less common, can override |
-| `Ctrl+P` | Move up one line | ⚠️ Moderate | Less common, can override |
-| `Ctrl+K` | Cut to end of line | 🔴 Critical | Very commonly used in text editing |
-| `Ctrl+D` | Delete character right | 🔴 Critical | Very commonly used |
-| `Ctrl+H` | Delete character left | ⚠️ Moderate | Delete key more common |
+| Shortcut | Function                    | Severity    | Notes                                   |
+| -------- | --------------------------- | ----------- | --------------------------------------- |
+| `Ctrl+A` | Move to line start          | 🔴 Critical | Emacs standard, expected in notes input |
+| `Ctrl+E` | Move to line end            | 🔴 Critical | Emacs standard                          |
+| `Ctrl+F` | Move forward one character  | ⚠️ Moderate | Less common, can override               |
+| `Ctrl+B` | Move backward one character | ⚠️ Moderate | Less common, can override               |
+| `Ctrl+N` | Move down one line          | ⚠️ Moderate | Less common, can override               |
+| `Ctrl+P` | Move up one line            | ⚠️ Moderate | Less common, can override               |
+| `Ctrl+K` | Cut to end of line          | 🔴 Critical | Very commonly used in text editing      |
+| `Ctrl+D` | Delete character right      | 🔴 Critical | Very commonly used                      |
+| `Ctrl+H` | Delete character left       | ⚠️ Moderate | Delete key more common                  |
 
 #### Safe Shortcut Patterns
 
@@ -248,16 +251,26 @@ document.addEventListener('keydown', (e) => {
 
     // Check for single-letter field shortcuts (immediate execution)
     const fieldShortcuts: Record<string, string> = {
-      'k': 'kids', 'v': 'vehicles', 'd': 'dependents', 'n': 'name',
-      's': 'state', 'e': 'email', 'p': 'phone', 'z': 'zip',
+      k: 'kids',
+      v: 'vehicles',
+      d: 'dependents',
+      n: 'name',
+      s: 'state',
+      e: 'email',
+      p: 'phone',
+      z: 'zip',
       // ... etc for all 27 fields
     }
 
     // Check for multi-letter action shortcuts
     const actionShortcuts: Record<string, string> = {
-      'export': 'export', 'copy': 'copy', 'reset': 'reset',
-      'policy': 'policy', 'intake': 'intake', 'convo': 'intake',
-      'help': 'help'
+      export: 'export',
+      copy: 'copy',
+      reset: 'reset',
+      policy: 'policy',
+      intake: 'intake',
+      convo: 'intake',
+      help: 'help',
     }
 
     // If buffer matches single-letter field, execute immediately
@@ -389,6 +402,7 @@ On macOS, **Ctrl key is NOT the primary modifier** for copy/paste/select all. In
 - **Ctrl (^)** is used for: Emacs-style text navigation (line start/end, delete char, cut line)
 
 This means:
+
 - ✅ `Ctrl+V` does NOT conflict with paste (that's Cmd+V)
 - 🔴 `Ctrl+V` DOES conflict with Emacs "page down" in text fields
 - 🔴 `Ctrl+K` DOES conflict with "cut to end of line" (very common for power users)
@@ -396,20 +410,21 @@ This means:
 #### Chrome-Specific Behavior
 
 In Chrome on macOS:
+
 - `Cmd+K` focuses the address bar (omnibox)
 - `Cmd+D` bookmarks the current page
 - Web apps CAN override these with `event.preventDefault()`, but users may expect them
 
 #### Risk Assessment
 
-| Original Shortcut | Conflict Type | Risk Level | User Impact |
-|-------------------|---------------|------------|-------------|
-| `Ctrl+K` (kids) | Emacs: cut to line end | 🔴 High | Power users will be frustrated - this is muscle memory |
-| `Ctrl+D` (deps) | Emacs: delete char right | 🔴 High | Common deletion shortcut, breaks text editing |
-| `Ctrl+V` (vehicles) | Emacs: page down | ⚠️ Moderate | Less common, but still used |
-| `Ctrl+A` (ages) | Emacs: line start | 🔴 High | Extremely common for navigation |
-| `Alt+E` (export) | Firefox: Edit menu | 🟡 Low | Chrome demo only, minimal impact |
-| `Alt+R` (reset) | Some browsers: reload | 🟡 Low | Can override, low usage |
+| Original Shortcut   | Conflict Type            | Risk Level  | User Impact                                            |
+| ------------------- | ------------------------ | ----------- | ------------------------------------------------------ |
+| `Ctrl+K` (kids)     | Emacs: cut to line end   | 🔴 High     | Power users will be frustrated - this is muscle memory |
+| `Ctrl+D` (deps)     | Emacs: delete char right | 🔴 High     | Common deletion shortcut, breaks text editing          |
+| `Ctrl+V` (vehicles) | Emacs: page down         | ⚠️ Moderate | Less common, but still used                            |
+| `Ctrl+A` (ages)     | Emacs: line start        | 🔴 High     | Extremely common for navigation                        |
+| `Alt+E` (export)    | Firefox: Edit menu       | 🟡 Low      | Chrome demo only, minimal impact                       |
+| `Alt+R` (reset)     | Some browsers: reload    | 🟡 Low      | Can override, low usage                                |
 
 **Conclusion:** The original `Ctrl+` prefix for field shortcuts **must be replaced** to avoid breaking text editing functionality in the notes input field.
 
@@ -422,16 +437,19 @@ In Chrome on macOS:
 **Pattern:** Use Cmd+Shift+K for kids, Cmd+Shift+V for vehicles, etc.
 
 **Pros:**
+
 - ✅ Zero conflicts with system/browser shortcuts
 - ✅ Simple pattern: one modifier combo for all fields
 - ✅ Scales to all 27 fields
 
 **Cons:**
+
 - ❌ Three-key combination is slower to type (Cmd + Shift + letter)
 - ❌ Harder to reach for one-handed typing
 - ❌ Not as elegant as two-keystroke prefix pattern
 
 **Example:**
+
 ```
 Cmd+Shift+K → Kids modal
 Cmd+Shift+V → Vehicles modal
@@ -447,6 +465,7 @@ Cmd+Shift+N → Name modal
 **Pattern:** Press `/`, then single letter (e.g., `/k` for kids)
 
 **Pros:**
+
 - ✅ **Fastest possible:** Just 2 keystrokes, no modifier keys, can type with one hand
 - ✅ **Works globally:** From notes input, sidebar, PDF viewer, anywhere in app (document-level listener)
 - ✅ **Highly discoverable:** Slack/Discord users instantly recognize `/` commands
@@ -457,11 +476,13 @@ Cmd+Shift+N → Name modal
 - ✅ **No modifier fatigue:** Don't need to hold Cmd/Ctrl/Option
 
 **Cons:**
+
 - ⚠️ **Smart detection needed:** Must avoid triggering on dates (1/5/2025) or URLs (http://)
 - ⚠️ **Requires prefix state management:** Track first vs second keystroke (same as any prefix pattern)
 - ⚠️ **Less familiar to non-Slack users:** Though intuitive once explained
 
 **Example:**
+
 ```
 / → (Visual indicator: "/...")
 k → Opens kids modal
@@ -470,6 +491,7 @@ n → Opens name modal
 ```
 
 **How It Works Globally:**
+
 ```
 1. User presses / (from anywhere: sidebar, PDF, notes)
 2. System enters "command mode" for 2 seconds
@@ -480,6 +502,7 @@ n → Opens name modal
 ```
 
 **False Positive Prevention:**
+
 ```typescript
 // Don't trigger on:
 - 1/5/2025 (date with digit before /)
@@ -497,17 +520,20 @@ n → Opens name modal
 **Pattern:** Use Cmd+{letter} for fields where safe, Cmd+Shift+{letter} where conflicts exist
 
 **Pros:**
+
 - ✅ Fastest for common fields (single modifier + letter)
 - ✅ No prefix required for most shortcuts
 - ✅ Minimal conflicts when carefully assigned
 
 **Cons:**
+
 - ❌ Inconsistent pattern - users must remember which fields use Shift
 - ❌ Harder to learn (no predictable rule)
 - ❌ Requires careful conflict checking for each new field
 - ❌ Doesn't scale well (only ~10 safe Cmd+{letter} combinations)
 
 **Example:**
+
 ```
 Cmd+N → Name (safe, Cmd+N is "new email" but we can override)
 Cmd+Shift+S → State (Cmd+S conflicts with Save)
@@ -523,17 +549,20 @@ Cmd+Shift+K → Kids (Cmd+K conflicts with Chrome address bar)
 **Pattern:** Use Option+K for kids, Option+V for vehicles, etc.
 
 **Pros:**
+
 - ✅ Single modifier (faster than Cmd+Shift)
 - ✅ Option key is underutilized on macOS
 - ✅ Scales to all 26 letters
 - ✅ No Emacs conflicts
 
 **Cons:**
+
 - ⚠️ Option+{letter} sometimes triggers app menu shortcuts (Option+E, Option+F)
 - ⚠️ Doesn't match existing pattern (Ctrl+X for actions, Alt+ for actions)
 - ⚠️ Less discoverable (Option key not as obvious as Cmd)
 
 **Example:**
+
 ```
 Option+K → Kids modal
 Option+V → Vehicles modal
@@ -561,14 +590,14 @@ Option+N → Name modal
 
 **Why Slash Commands Beat Modifier-Based Shortcuts:**
 
-| Metric | `/k` | `Cmd+F K` | `Opt+K` | `Cmd+Shift+K` |
-|--------|------|-----------|---------|---------------|
-| **Keystrokes** | 2 (sequential) | 3 (2 simultaneous + 1) | 2 (simultaneous) | 3 (all simultaneous) |
-| **One-handed** | ✅ Yes | ❌ No (need two hands for Cmd+F) | 🟡 Maybe (depends on hand size) | ❌ No |
-| **Discoverability** | ✅ High (Slack users) | 🟡 Medium (tooltips) | 🟡 Medium (tooltips) | 🟡 Medium |
-| **Works globally** | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes |
-| **Zero conflicts** | ✅ Yes | 🟡 Overrides Find | 🟡 Some app menus | ✅ Yes |
-| **Speed** | ✅ Fastest | 🟡 Moderate | ✅ Fast | ❌ Slow |
+| Metric              | `/k`                  | `Cmd+F K`                        | `Opt+K`                         | `Cmd+Shift+K`        |
+| ------------------- | --------------------- | -------------------------------- | ------------------------------- | -------------------- |
+| **Keystrokes**      | 2 (sequential)        | 3 (2 simultaneous + 1)           | 2 (simultaneous)                | 3 (all simultaneous) |
+| **One-handed**      | ✅ Yes                | ❌ No (need two hands for Cmd+F) | 🟡 Maybe (depends on hand size) | ❌ No                |
+| **Discoverability** | ✅ High (Slack users) | 🟡 Medium (tooltips)             | 🟡 Medium (tooltips)            | 🟡 Medium            |
+| **Works globally**  | ✅ Yes                | ✅ Yes                           | ✅ Yes                          | ✅ Yes               |
+| **Zero conflicts**  | ✅ Yes                | 🟡 Overrides Find                | 🟡 Some app menus               | ✅ Yes               |
+| **Speed**           | ✅ Fastest            | 🟡 Moderate                      | ✅ Fast                         | ❌ Slow              |
 
 **Philosophy Update:**
 
@@ -583,6 +612,7 @@ Option+N → Name modal
    - Examples: `/export`, `/copy`, `/reset`, `/policy`, `/intake`, `/help`
 
 **Benefits:**
+
 - **One pattern** instead of three (was: `/`, `Alt+`, `Cmd+Shift+`)
 - **Zero modifier keys** - everything is slash-based
 - **Maximum simplicity** - just type `/` then a letter or word
@@ -590,17 +620,17 @@ Option+N → Name modal
 
 **Migration from Original Spec:**
 
-| Original | New | Change Reason |
-|----------|-----|---------------|
-| `Ctrl+K` (kids) | `/k` | Avoid Emacs conflict + faster input |
-| `Ctrl+V` (vehicles) | `/v` | Avoid Emacs conflict + faster input |
-| `Ctrl+D` (deps) | `/d` | Avoid Emacs conflict + faster input |
-| None (ages) | `/r` | Never use Ctrl+A (select all conflict) |
-| `Alt+E` (export) | `/export` | Simplify to ONE prefix (slash commands only) |
-| `Alt+C` (copy) | `/copy` | Simplify to ONE prefix |
-| `Alt+R` (reset) | `/reset` | Simplify to ONE prefix |
-| `Ctrl+X P` (policy) | `/policy` | Fix Ctrl+X = cut conflict + simplify to ONE prefix |
-| `Ctrl+?` (help) | `/help` or `/?` | Simplify to ONE prefix |
+| Original            | New             | Change Reason                                      |
+| ------------------- | --------------- | -------------------------------------------------- |
+| `Ctrl+K` (kids)     | `/k`            | Avoid Emacs conflict + faster input                |
+| `Ctrl+V` (vehicles) | `/v`            | Avoid Emacs conflict + faster input                |
+| `Ctrl+D` (deps)     | `/d`            | Avoid Emacs conflict + faster input                |
+| None (ages)         | `/r`            | Never use Ctrl+A (select all conflict)             |
+| `Alt+E` (export)    | `/export`       | Simplify to ONE prefix (slash commands only)       |
+| `Alt+C` (copy)      | `/copy`         | Simplify to ONE prefix                             |
+| `Alt+R` (reset)     | `/reset`        | Simplify to ONE prefix                             |
+| `Ctrl+X P` (policy) | `/policy`       | Fix Ctrl+X = cut conflict + simplify to ONE prefix |
+| `Ctrl+?` (help)     | `/help` or `/?` | Simplify to ONE prefix                             |
 
 ---
 
@@ -610,63 +640,63 @@ This table provides the definitive mapping of all 27 fields to their keyboard sh
 
 #### Group 1: Identity & Contact
 
-| Field | Pill Syntax | Shortcut | Mnemonic | Flow |
-|-------|-------------|----------|----------|------|
-| Name | `name:`, `n:` | `/n` | **N**ame | Intake |
-| Email | `email:`, `e:` | `/e` | **E**mail | Intake |
-| Phone | `phone:`, `p:` | `/p` | **P**hone | Intake |
+| Field | Pill Syntax    | Shortcut | Mnemonic  | Flow   |
+| ----- | -------------- | -------- | --------- | ------ |
+| Name  | `name:`, `n:`  | `/n`     | **N**ame  | Intake |
+| Email | `email:`, `e:` | `/e`     | **E**mail | Intake |
+| Phone | `phone:`, `p:` | `/p`     | **P**hone | Intake |
 
 #### Group 2: Location
 
-| Field | Pill Syntax | Shortcut | Mnemonic | Flow |
-|-------|-------------|----------|----------|------|
-| State | `state:`, `s:` | `/s` | **S**tate | Intake, Policy |
-| Zip Code | `zip:`, `z:` | `/z` | **Z**ip | Intake |
+| Field    | Pill Syntax    | Shortcut | Mnemonic  | Flow           |
+| -------- | -------------- | -------- | --------- | -------------- |
+| State    | `state:`, `s:` | `/s`     | **S**tate | Intake, Policy |
+| Zip Code | `zip:`, `z:`   | `/z`     | **Z**ip   | Intake         |
 
 #### Group 3: Product & Household
 
-| Field | Pill Syntax | Shortcut | Mnemonic | Flow |
-|-------|-------------|----------|----------|------|
-| Product Line | `product:`, `prod:` | `/l` | Product **L**ine | Intake, Policy |
-| Age | `age:`, `a:` | `/a` | **A**ge | Intake |
-| Household Size | `household:`, `hh:` | `/h` | **H**ousehold | Intake |
-| Children Count | `kids:`, `k:`, `children:` | `/k` | **K**ids | Intake |
-| Dependents Count | `deps:`, `d:`, `dependents:` | `/d` | **D**ependents | Intake |
+| Field            | Pill Syntax                  | Shortcut | Mnemonic         | Flow           |
+| ---------------- | ---------------------------- | -------- | ---------------- | -------------- |
+| Product Line     | `product:`, `prod:`          | `/l`     | Product **L**ine | Intake, Policy |
+| Age              | `age:`, `a:`                 | `/a`     | **A**ge          | Intake         |
+| Household Size   | `household:`, `hh:`          | `/h`     | **H**ousehold    | Intake         |
+| Children Count   | `kids:`, `k:`, `children:`   | `/k`     | **K**ids         | Intake         |
+| Dependents Count | `deps:`, `d:`, `dependents:` | `/d`     | **D**ependents   | Intake         |
 
 #### Group 4: Vehicle/Auto (Intake Mode)
 
-| Field | Pill Syntax | Shortcut | Mnemonic | Flow |
-|-------|-------------|----------|----------|------|
-| Vehicle Count | `vehicles:`, `v:`, `cars:` | `/v` | **V**ehicles | Intake |
-| Garage Type | `garage:`, `car:`, `c:` | `/g` | **G**arage | Intake |
-| VINs | `vins:`, `vin:` | `/i` | V**I**Ns | Intake |
-| Driver Ages | `drivers:`, `driver_ages:` | `/r` | D**R**ivers | Intake |
-| Driving Records | `records:`, `driving_records:` | `/c` | Re**C**ords | Intake |
-| Clean Record 3yr | `clean:`, `clean_record:` | `/u` | Clean (safe driver) → **U**nsullied record | Intake |
+| Field            | Pill Syntax                    | Shortcut | Mnemonic                                   | Flow   |
+| ---------------- | ------------------------------ | -------- | ------------------------------------------ | ------ |
+| Vehicle Count    | `vehicles:`, `v:`, `cars:`     | `/v`     | **V**ehicles                               | Intake |
+| Garage Type      | `garage:`, `car:`, `c:`        | `/g`     | **G**arage                                 | Intake |
+| VINs             | `vins:`, `vin:`                | `/i`     | V**I**Ns                                   | Intake |
+| Driver Ages      | `drivers:`, `driver_ages:`     | `/r`     | D**R**ivers                                | Intake |
+| Driving Records  | `records:`, `driving_records:` | `/c`     | Re**C**ords                                | Intake |
+| Clean Record 3yr | `clean:`, `clean_record:`      | `/u`     | Clean (safe driver) → **U**nsullied record | Intake |
 
 **Note:** VINs uses "I" (V**I**N), Driving Records uses "C" (re**C**ords), Clean Record uses "U" (**u**nsullied) to avoid conflicts with Vehicle (V) and Drivers (R).
 
 #### Group 5: Property/Home (Intake Mode)
 
-| Field | Pill Syntax | Shortcut | Mnemonic | Flow |
-|-------|-------------|----------|----------|------|
-| Owns Home | `owns_home:`, `owner:` | `/o` | **O**wner | Intake |
-| Property Type | `property:`, `prop_type:` | `/t` | Property **T**ype | Intake |
-| Construction Year | `year:`, `built:`, `construction_year:` | `/y` | **Y**ear Built | Intake |
-| Roof Type | `roof:`, `roof_type:` | `/f` | Roo**F** Type | Intake |
-| Square Feet | `sqft:`, `square_feet:` | `/q` | S**Q**uare Feet | Intake |
+| Field             | Pill Syntax                             | Shortcut | Mnemonic          | Flow   |
+| ----------------- | --------------------------------------- | -------- | ----------------- | ------ |
+| Owns Home         | `owns_home:`, `owner:`                  | `/o`     | **O**wner         | Intake |
+| Property Type     | `property:`, `prop_type:`               | `/t`     | Property **T**ype | Intake |
+| Construction Year | `year:`, `built:`, `construction_year:` | `/y`     | **Y**ear Built    | Intake |
+| Roof Type         | `roof:`, `roof_type:`                   | `/f`     | Roo**F** Type     | Intake |
+| Square Feet       | `sqft:`, `square_feet:`                 | `/q`     | S**Q**uare Feet   | Intake |
 
 **Note:** Roof Type uses "F" (roo**F**) to distinguish from other fields. Square Feet uses "Q" (s**q**uare).
 
 #### Group 6: Coverage/Policy (Policy Analysis Mode)
 
-| Field | Pill Syntax | Shortcut | Mnemonic | Flow |
-|-------|-------------|----------|----------|------|
-| Current Carrier | `carrier:` | `/r` | Ca**R**rier | Policy |
-| Current Premium | `premium:` | `/m` | Pre**M**ium | Policy |
-| Deductibles | `deductible:`, `ded:` | `/b` | Deducti**B**le | Policy |
-| Limits | `limits:`, `limit:` | `/x` | Ma**X**imum Limits | Policy |
-| Existing Policies | `policies:`, `existing:` | `/w` | Existing (other products for bundles) → **W**hat else do they have? | Policy |
+| Field             | Pill Syntax              | Shortcut | Mnemonic                                                            | Flow   |
+| ----------------- | ------------------------ | -------- | ------------------------------------------------------------------- | ------ |
+| Current Carrier   | `carrier:`               | `/r`     | Ca**R**rier                                                         | Policy |
+| Current Premium   | `premium:`               | `/m`     | Pre**M**ium                                                         | Policy |
+| Deductibles       | `deductible:`, `ded:`    | `/b`     | Deducti**B**le                                                      | Policy |
+| Limits            | `limits:`, `limit:`      | `/x`     | Ma**X**imum Limits                                                  | Policy |
+| Existing Policies | `policies:`, `existing:` | `/w`     | Existing (other products for bundles) → **W**hat else do they have? | Policy |
 
 **Note on Letter Conflicts:**
 
@@ -680,10 +710,10 @@ This table provides the definitive mapping of all 27 fields to their keyboard sh
 
 Some letters are reused across intake and policy modes. The system should show **different modal content** based on the active mode:
 
-| Shortcut | Intake Mode | Policy Mode |
-|----------|-------------|-------------|
-| `/r` | Driver Ages modal<br>"How many drivers? (ages)" | Current Carrier modal<br>"Current insurance carrier?" |
-| `/l` | Product Line modal<br>"Insurance type? (auto/home/renters/umbrella)" | Product Line modal<br>"Policy product type?" |
+| Shortcut | Intake Mode                                                          | Policy Mode                                           |
+| -------- | -------------------------------------------------------------------- | ----------------------------------------------------- |
+| `/r`     | Driver Ages modal<br>"How many drivers? (ages)"                      | Current Carrier modal<br>"Current insurance carrier?" |
+| `/l`     | Product Line modal<br>"Insurance type? (auto/home/renters/umbrella)" | Product Line modal<br>"Policy product type?"          |
 
 **Implementation:** Check active mode (`intake` or `policy`) when opening modal, render appropriate field.
 
@@ -771,16 +801,19 @@ Before deployment, validate that custom shortcuts do NOT interfere with browser/
 Test with target users (insurance brokers):
 
 **Scenario 1: New User Learning Shortcuts**
+
 - Task: Capture client info using only keyboard shortcuts (no mouse)
 - Success: User completes intake flow using shortcuts within 5 minutes
 - Metric: ≥80% of users successfully use `Cmd+F K`, `Cmd+F V`, `Cmd+F D`
 
 **Scenario 2: Power User Efficiency**
+
 - Task: Experienced user completes intake in under 2 minutes using shortcuts
 - Success: User uses shortcuts without looking at shortcut browser
 - Metric: Average time to open field modal <1 second (Cmd+F + letter)
 
 **Scenario 3: Error Recovery**
+
 - Task: User accidentally presses wrong shortcut (e.g., `Cmd+F 9`)
 - Success: Clear error message, user understands how to correct
 - Metric: 100% of users recover from wrong shortcut without assistance
@@ -824,6 +857,7 @@ Test with target users (insurance brokers):
 ### For Developers
 
 **Slash Command Implementation:**
+
 ```
 1. Listen for / keydown (document-level)
 2. Enter "command mode" (set state flag)
@@ -836,6 +870,7 @@ Test with target users (insurance brokers):
 ```
 
 **Modal Injection Pattern:**
+
 ```
 1. Modal opens (field-specific)
 2. Input auto-focused
@@ -847,6 +882,7 @@ Test with target users (insurance brokers):
 ```
 
 **Global Shortcut Access:**
+
 ```
 Slash commands work from ANYWHERE in the app:
 - Notes input: Type / then letter
@@ -861,18 +897,19 @@ Slash commands work from ANYWHERE in the app:
 
 **Cheat Sheet: Common Field Shortcuts**
 
-| Field | Shortcut | Example | Result |
-|-------|----------|---------|--------|
-| Kids | `/k` | Type "2", press Enter | Injects `k:2` |
-| Vehicles | `/v` | Type "3", press Enter | Injects `v:3` |
-| Dependents | `/d` | Type "1", press Enter | Injects `d:1` |
-| Name | `/n` | Type "John Doe", Enter | Injects `name:John Doe` |
-| State | `/s` | Type "CA", Enter | Injects `state:CA` |
-| Drivers | `/r` | Type "2", Enter | Injects `drivers:2` |
+| Field      | Shortcut | Example                | Result                  |
+| ---------- | -------- | ---------------------- | ----------------------- |
+| Kids       | `/k`     | Type "2", press Enter  | Injects `k:2`           |
+| Vehicles   | `/v`     | Type "3", press Enter  | Injects `v:3`           |
+| Dependents | `/d`     | Type "1", press Enter  | Injects `d:1`           |
+| Name       | `/n`     | Type "John Doe", Enter | Injects `name:John Doe` |
+| State      | `/s`     | Type "CA", Enter       | Injects `state:CA`      |
+| Drivers    | `/r`     | Type "2", Enter        | Injects `drivers:2`     |
 
 **Pro Tip:** Slash commands work from anywhere in the app, not just when typing in notes!
 
 **Other Shortcuts:**
+
 - `/export` - Export pre-fill packet or savings pitch
 - `/copy` - Copy to clipboard
 - `/reset` - Reset session
@@ -904,12 +941,12 @@ Slash commands work from ANYWHERE in the app:
 
 ## Change Log
 
-| Date | Version | Description | Author |
-|------|---------|-------------|--------|
-| 2025-11-09 | 4.0 | **FINAL SIMPLIFICATION - One prefix only:** Replaced ALL modifier-based shortcuts with slash commands. System now uses ONLY slash commands: `/{letter}` for fields (27 shortcuts: `/k`, `/v`, `/n`) and `/{word}` for actions (6 shortcuts: `/export`, `/copy`, `/reset`, `/policy`, `/intake`, `/help`). Zero modifier keys, maximum simplicity. | Sally (UX Expert) |
-| 2025-11-09 | 3.0 | **Simplified to two prefixes:** Replaced `Alt+` and `Ctrl+X` shortcuts with unified `Cmd+Shift+{letter}` for all app-level actions (export, copy, reset, mode switching, help). System now has only 2 prefixes: `/{letter}` for fields (27 shortcuts) and `Cmd+Shift+{letter}` for actions (6 shortcuts). Fixes `Ctrl+X` conflict (cut command) and reduces cognitive load. | Sally (UX Expert) |
-| 2025-11-09 | 2.0 | **Major revision:** Changed recommendation from `Cmd+F {letter}` to `/{letter}` slash commands based on critical feedback. Slash commands are faster (2 keystrokes vs 3), work globally, more discoverable (Slack users), and have zero conflicts. Updated all tables, code examples, and implementation notes. | Sally (UX Expert) |
-| 2025-11-09 | 1.0 | Initial keyboard shortcuts analysis with complete field inventory, macOS+Chrome conflict research, and recommended Cmd+F prefix scheme | Sally (UX Expert) |
+| Date       | Version | Description                                                                                                                                                                                                                                                                                                                                                                 | Author            |
+| ---------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| 2025-11-09 | 4.0     | **FINAL SIMPLIFICATION - One prefix only:** Replaced ALL modifier-based shortcuts with slash commands. System now uses ONLY slash commands: `/{letter}` for fields (27 shortcuts: `/k`, `/v`, `/n`) and `/{word}` for actions (6 shortcuts: `/export`, `/copy`, `/reset`, `/policy`, `/intake`, `/help`). Zero modifier keys, maximum simplicity.                           | Sally (UX Expert) |
+| 2025-11-09 | 3.0     | **Simplified to two prefixes:** Replaced `Alt+` and `Ctrl+X` shortcuts with unified `Cmd+Shift+{letter}` for all app-level actions (export, copy, reset, mode switching, help). System now has only 2 prefixes: `/{letter}` for fields (27 shortcuts) and `Cmd+Shift+{letter}` for actions (6 shortcuts). Fixes `Ctrl+X` conflict (cut command) and reduces cognitive load. | Sally (UX Expert) |
+| 2025-11-09 | 2.0     | **Major revision:** Changed recommendation from `Cmd+F {letter}` to `/{letter}` slash commands based on critical feedback. Slash commands are faster (2 keystrokes vs 3), work globally, more discoverable (Slack users), and have zero conflicts. Updated all tables, code examples, and implementation notes.                                                             | Sally (UX Expert) |
+| 2025-11-09 | 1.0     | Initial keyboard shortcuts analysis with complete field inventory, macOS+Chrome conflict research, and recommended Cmd+F prefix scheme                                                                                                                                                                                                                                      | Sally (UX Expert) |
 
 ---
 

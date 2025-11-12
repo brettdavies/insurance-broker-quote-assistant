@@ -4,6 +4,8 @@ export type {
   CarrierFile,
   State,
   StateFile,
+  Product,
+  ProductFile,
   Discount,
   Compensation,
   Source,
@@ -14,6 +16,12 @@ export type {
   RentersMinimums,
 } from './schemas/knowledge-pack'
 
+// Export user contact schema and types
+export {
+  userContactSchema,
+  type UserContact,
+} from './schemas/user-contact'
+
 // Export user profile schema and types
 export {
   userProfileSchema,
@@ -22,8 +30,20 @@ export {
   type ExistingPolicy,
 } from './schemas/user-profile'
 
-// Export user profile field metadata
+// Export unified field metadata definitions
 export {
+  unifiedFieldMetadata,
+  type UnifiedFieldMetadata,
+} from './schemas/unified-field-metadata'
+
+// Export unified field metadata utilities
+export {
+  getUnifiedFieldMetadata,
+  getFieldsForFlow,
+  getUnifiedFieldShortcut,
+  getUnifiedFieldFromShortcut,
+  getUnifiedFieldFromAlias,
+  // Backward compatibility exports (intake-only) - these filter to intake flow only
   userProfileFieldMetadata,
   getFieldMetadata,
   getFieldsWithShortcuts,
@@ -31,29 +51,47 @@ export {
   getFieldFromShortcut,
   getFieldFromAlias,
   type FieldMetadata,
-} from './schemas/user-profile-metadata'
+} from './schemas/unified-field-metadata-utils'
 
 // Export intake result schema and types
 export {
   intakeResultSchema,
   routeDecisionSchema,
-  routeDecisionStubSchema,
   citationSchema,
   opportunityStubSchema,
-  prefillPacketStubSchema,
   type IntakeResult,
   type RouteDecision,
-  type RouteDecisionStub,
   type Citation,
   type OpportunityStub,
-  type PrefillPacketStub,
 } from './schemas/intake-result'
 
-// Export prefill packet schema and types
+// Export opportunity schema and types
 export {
-  prefillPacketSchema,
-  type PrefillPacket,
-} from './schemas/prefill-packet'
+  opportunitySchema,
+  type Opportunity,
+} from './schemas/opportunity'
+
+// Export validated opportunity schema and types
+export {
+  validatedOpportunitySchema,
+  validationDetailsSchema,
+  type ValidatedOpportunity,
+  type ValidationDetails,
+} from './schemas/validated-opportunity'
+
+// Export policy analysis result schema and types
+export {
+  policyAnalysisResultLLMSchema,
+  policyAnalysisResultSchema,
+  bundleOptionSchema,
+  deductibleOptimizationSchema,
+  type PolicyAnalysisResult,
+  type BundleOption,
+  type DeductibleOptimization,
+} from './schemas/policy-analysis-result'
+
+// Export prefill packet schema and types
+export { prefillPacketSchema, type PrefillPacket } from './schemas/prefill-packet'
 
 // Export missing field schema and types
 export {
@@ -71,10 +109,42 @@ export {
 } from './schemas/decision-trace'
 
 // Export compliance result schema and types
+export { complianceResultSchema, type ComplianceResult } from './schemas/compliance-result'
+
+// Export policy summary schema and types
 export {
-  complianceResultSchema,
-  type ComplianceResult,
-} from './schemas/compliance-result'
+  policySummarySchema,
+  coverageLimitsSchema,
+  deductiblesSchema,
+  premiumsSchema,
+  effectiveDatesSchema,
+  confidenceScoresSchema,
+  type PolicySummary,
+  type CoverageLimits,
+  type Deductibles,
+  type Premiums,
+  type EffectiveDates,
+  type ConfidenceScores,
+} from './schemas/policy-summary'
+
+// Export file upload constants
+export {
+  MAX_FILE_SIZE,
+  ACCEPTED_MIME_TYPES,
+  ACCEPTED_EXTENSIONS,
+  FILE_TYPE_DESCRIPTIONS,
+  isAcceptedFileType,
+  isFileSizeValid,
+  formatFileSize,
+} from './constants/file-upload'
+
+// Export shared enums
+export {
+  productTypeEnum,
+  propertyTypeEnum,
+  type ProductType,
+  type PropertyType,
+} from './schemas/shared-enums'
 
 // Export test utilities (for use in test files only)
 export * from './test-utils'

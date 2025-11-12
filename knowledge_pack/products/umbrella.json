@@ -31,7 +31,9 @@
     },
     "requiredFields": {
       "_id": "fld_umbrella_required_fields_001",
-      "value": [{ "field": "existingPolicies", "priority": "critical" }],
+      "value": [
+        { "field": "existingPolicies", "priority": "critical" }
+      ],
       "_sources": [
         {
           "uri": "https://www.insurance.com/umbrella-insurance/requirements/",

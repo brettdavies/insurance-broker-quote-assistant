@@ -129,7 +129,7 @@ describe('POST /api/intake - Live API Contract Tests', () => {
         expect(result.profile).toBeDefined()
         expect(result.profile.state).toBe('CA')
         expect(result.profile.age).toBe(30)
-        expect(result.profile.productLine).toBe('auto')
+        expect(result.profile.productType).toBe('auto')
         expect(result.profile.vehicles).toBe(2)
         expect(result.missingFields).toBeDefined()
         expect(Array.isArray(result.missingFields)).toBe(true)
@@ -305,7 +305,7 @@ describe('POST /api/intake - Live API Contract Tests', () => {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            message: 'state: CA productLine: auto',
+            message: 'state: CA productType: auto',
           }),
         })
 
@@ -342,7 +342,7 @@ describe('POST /api/intake - Live API Contract Tests', () => {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            message: 'state: CA productLine: auto',
+            message: 'state: CA productType: auto',
           }),
         })
 
@@ -372,7 +372,7 @@ describe('POST /api/intake - Live API Contract Tests', () => {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            message: 'state: CA productLine: auto vehicles: 2 drivers: 1',
+            message: 'state: CA productType: auto vehicles: 2 drivers: 1',
           }),
         })
 
@@ -406,7 +406,7 @@ describe('POST /api/intake - Live API Contract Tests', () => {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            message: 'state: CA productLine: auto vehicles: 2 drivers: 1',
+            message: 'state: CA productType: auto vehicles: 2 drivers: 1',
           }),
         })
 
@@ -437,7 +437,7 @@ describe('POST /api/intake - Live API Contract Tests', () => {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            message: 'state: CA productLine: auto',
+            message: 'state: CA productType: auto',
           }),
         })
 
@@ -473,7 +473,7 @@ describe('POST /api/intake - Live API Contract Tests', () => {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            message: 'state: CA productLine: auto',
+            message: 'state: CA productType: auto',
           }),
         })
 

@@ -76,14 +76,14 @@ export function createMockLLMProvider(
 
         // Extract product line
         if (message.includes('auto') || message.match(/\bl:auto\b/)) {
-          profile.productLine = 'auto'
-          confidence.productLine = 0.8
+          profile.productType = 'auto'
+          confidence.productType = 0.8
         } else if (message.includes('home') || message.match(/\bl:home\b/)) {
-          profile.productLine = 'home'
-          confidence.productLine = 0.8
+          profile.productType = 'home'
+          confidence.productType = 0.8
         } else if (message.includes('renters') || message.match(/\bl:renters\b/)) {
-          profile.productLine = 'renters'
-          confidence.productLine = 0.8
+          profile.productType = 'renters'
+          confidence.productType = 0.8
         }
 
         // Extract age

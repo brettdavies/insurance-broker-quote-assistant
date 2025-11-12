@@ -26,6 +26,10 @@ export {
   buildUserProfile,
   buildRouteDecision,
   buildCitation,
+  buildPolicySummary,
+  buildOpportunity,
+  buildBundleOption,
+  buildDeductibleOptimization,
 } from './test-data-builders'
 
 // Test cases

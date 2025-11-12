@@ -2,6 +2,16 @@
 
 **Epic Goal:** Validate that the system meets all success criteria through automated testing, package the application for one-command deployment, and ensure comprehensive observability. By the end of this epic, the system achieves ≥90% routing accuracy, ≥95% intake completeness, ≥85% pitch clarity, and 100% compliance—all validated through automated harness and ready for demo presentation.
 
+## Implementation Notes
+
+**Architectural Patterns from Epic 1:**
+
+- Decision trace logging uses `createDecisionTrace()` and `logDecisionTrace()` utilities from `apps/api/src/utils/decision-trace.ts`
+- Tests use Bun test framework with Hono test utilities (no server required)
+- Test structure: Unit tests in `services/__tests__/`, integration tests in `routes/__tests__/`
+- Error handling follows global error handler middleware pattern
+- LLM calls use `GeminiProvider` with structured output via JSON schema
+
 ## Story 3.1: Evaluation Harness & Test Cases
 
 **As a** developer,
@@ -11,6 +21,7 @@
 **Acceptance Criteria:**
 
 1. Create 15 synthetic test cases in `evaluation/test-cases/`: 10 conversational intake, 5 policy analysis
+   - Note: Policy analysis test cases should validate both LLM identification (Story 2.2) and deterministic validation (Story 2.3)
 2. Test cases cover all 3 carriers, 5 states, 4 product types with varied scenarios (complete data, missing fields, edge cases)
 3. Command `bun run evaluate` executes all test cases and generates report
 4. Report includes: routing accuracy %, intake completeness %, savings pitch clarity scores, compliance pass/fail
@@ -30,10 +41,10 @@
 **Acceptance Criteria:**
 
 1. Every API call logs structured decision trace to `logs/decisions/` directory
-2. Trace includes: timestamp, interaction ID, inputs received, knowledge pack sections queried, rules evaluated, LLM calls (if any), outputs generated
+2. Trace includes: timestamp, interaction ID, inputs received, knowledge pack sections queried, rules evaluated, LLM calls (if any), validation results (for policy analysis flow), outputs generated
 3. All PII redacted from logs (names/addresses replaced with placeholder IDs)
 4. Citations include knowledge pack file paths and cuid2 IDs for recommendations
-5. Offline operation proof: logs show zero external API calls except OpenAI (knowledge pack queries logged as in-memory cache hits)
+5. Offline operation proof: logs show zero external API calls except Gemini API (knowledge pack queries logged as in-memory cache hits)
 6. Log rotation implemented (max 100MB per file, 7-day retention for demo)
 7. Structured JSON format for machine parsing
 8. Unit tests validate PII redaction works correctly
@@ -66,7 +77,7 @@
 
 **Acceptance Criteria:**
 
-1. Integration tests cover critical API flows: `/api/intake/message`, `/api/policy/analyze`, `/api/intake/generate-prefill`
+1. Integration tests cover critical API flows: `/api/intake`, `/api/policy/analyze`, `/api/generate-prefill`
 2. Tests validate end-to-end workflows: conversational intake → routing → pre-fill, policy upload → analysis → savings pitch
 3. Bun test runner executes unit + integration tests
 4. GitHub Actions CI pipeline runs on pull requests: type-check, lint, unit tests, integration tests

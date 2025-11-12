@@ -1,0 +1,61 @@
+{
+  "id": "policy-02",
+  "name": "Policy with Bundle Opportunity - TX Home Progressive",
+  "description": "Test case for bundle opportunity detection (single product → multi-product)",
+  "type": "policy",
+  "carrier": "Progressive",
+  "state": "TX",
+  "product": "home",
+  "policyInput": "Progressive Homeowners Insurance Policy\nPolicy Number: PROG-67890\nEffective Date: 03/15/2024\nExpiration Date: 03/15/2025\n\nInsured: Jane Smith\nAddress: 456 Oak Ave, Houston, TX 77001\nAge: 42\n\nProperty: Single-family home built in 2010\nSquare Feet: 2,000\nAnnual Premium: $1,200\nDeductible: $1,000\n\nCoverage:\n- Dwelling: $300,000\n- Personal Property: $150,000\n- Liability: $300,000\n\nAdditional Info:\n- Customer owns 2 vehicles (currently insured with GEICO)\n- Clean claims history\n- Good credit score",
+  "expectedPolicy": {
+    "carrier": "Progressive",
+    "state": "TX",
+    "productType": "home",
+    "premiums": {
+      "annual": 1200
+    },
+    "deductibles": {
+      "home": 1000
+    },
+    "coverageLimits": {
+      "dwelling": 300000,
+      "personalProperty": 150000,
+      "liability": 300000
+    },
+    "name": "Jane Smith",
+    "zip": "77001",
+    "address": "456 Oak Ave, Houston, TX 77001",
+    "yearBuilt": 2010,
+    "squareFeet": 2000,
+    "propertyType": "single_family"
+  },
+  "expectedOpportunities": [
+    {
+      "discount": "Home Safety Features",
+      "percentage": 5,
+      "annualSavings": 60,
+      "requires": ["homeSafetyFeatures"],
+      "citation": {
+        "id": "disc_home_safety",
+        "type": "discount",
+        "carrier": "carr_nemqnt5tabru300u2o6nnh66",
+        "file": "knowledge_pack/carriers/progressive.json"
+      }
+    }
+  ],
+  "expectedBundleOptions": [
+    {
+      "product": "auto",
+      "estimatedSavings": 300,
+      "requiredActions": ["Transfer auto insurance from GEICO to Progressive", "Bundle auto and home policies"],
+      "citation": {
+        "id": "disc_bundle",
+        "type": "discount",
+        "carrier": "carr_nemqnt5tabru300u2o6nnh66",
+        "file": "knowledge_pack/carriers/progressive.json"
+      }
+    }
+  ],
+  "expectedDeductibleOptimizations": []
+}
+

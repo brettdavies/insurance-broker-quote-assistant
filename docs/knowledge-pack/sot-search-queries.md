@@ -925,6 +925,7 @@ OR                        # Either term
 ### Quality Signals to Look For
 
 When evaluating search results:
+
 - ✅ Official carrier domain (.com)
 - ✅ State .gov domain
 - ✅ Recent update date (< 1 year)
@@ -959,6 +960,7 @@ When evaluating search results:
 ### Quality Checklist
 
 For each data point found:
+
 - [ ] Full URL recorded
 - [ ] Element reference captured (CSS selector or XPath)
 - [ ] Access date documented
@@ -973,6 +975,7 @@ For each data point found:
 **Total Queries**: 200+
 
 **By Category**:
+
 - Carrier availability: 20 queries
 - Auto discounts: 35 queries
 - Home discounts: 20 queries
@@ -988,6 +991,7 @@ For each data point found:
 - Industry benchmarking: 20 queries
 
 **Coverage**:
+
 - 3 carriers (GEICO, Progressive, State Farm)
 - 5 states (CA, TX, FL, NY, IL)
 - 4 products (Auto, Home, Renters, Umbrella)

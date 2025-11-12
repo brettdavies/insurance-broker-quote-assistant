@@ -1,0 +1,48 @@
+{
+  "id": "conv-10",
+  "name": "Complex Multi-Field Extraction - IL Auto Progressive",
+  "description": "Complex test case with multiple fields: vehicles, drivers, mileage",
+  "type": "conversational",
+  "carrier": "Progressive",
+  "state": "IL",
+  "product": "auto",
+  "input": "I need auto insurance in Illinois. I have 3 vehicles: a 2021 Ford F-150, a 2019 Toyota Camry, and a 2020 Honda CR-V. There are 3 drivers in my household including me. I'm 36 years old. I drive about 12,000 miles per year for work. I have a clean driving record and good credit score around 750.",
+  "expectedProfile": {
+    "state": "IL",
+    "productType": "auto",
+    "age": 36,
+    "vehicles": 3,
+    "drivers": 3,
+    "householdSize": 3,
+    "annualMileage": 12000,
+    "cleanRecord3Yr": true,
+    "creditScore": 750
+  },
+  "expectedRoute": {
+    "primaryCarrier": "Progressive",
+    "eligibleCarriers": ["Progressive", "GEICO", "State Farm"],
+    "confidence": 0.88,
+    "rationale": "Progressive offers auto insurance in Illinois and handles multi-vehicle policies well."
+  },
+  "expectedOpportunities": [
+    {
+      "discount": "Multi-Vehicle",
+      "percentage": 15,
+      "annualSavings": 450,
+      "requires": ["vehicles", "vehicles >= 3"]
+    },
+    {
+      "discount": "Safe Driver",
+      "percentage": 10,
+      "annualSavings": 200,
+      "requires": ["cleanRecord3Yr"]
+    },
+    {
+      "discount": "Good Credit",
+      "percentage": 5,
+      "annualSavings": 100,
+      "requires": ["creditScore", "creditScore >= 700"]
+    }
+  ]
+}
+
