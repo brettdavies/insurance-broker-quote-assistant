@@ -183,35 +183,35 @@ describe('Compliance Filter', () => {
   })
 
   describe('Product-Specific Disclaimer Selection', () => {
-    it('should select auto disclaimers when productLine="auto"', () => {
+    it('should select auto disclaimers when productType="auto"', () => {
       const result = validateOutput('Valid output', undefined, 'auto')
       expect(result.passed).toBe(true)
       expect(result.disclaimers).toBeDefined()
       expect(result.disclaimers?.some((d) => d.includes('Auto Insurance'))).toBe(true)
     })
 
-    it('should select home disclaimers when productLine="home"', () => {
+    it('should select home disclaimers when productType="home"', () => {
       const result = validateOutput('Valid output', undefined, 'home')
       expect(result.passed).toBe(true)
       expect(result.disclaimers).toBeDefined()
       expect(result.disclaimers?.some((d) => d.includes('Home Insurance'))).toBe(true)
     })
 
-    it('should select renters disclaimers when productLine="renters"', () => {
+    it('should select renters disclaimers when productType="renters"', () => {
       const result = validateOutput('Valid output', undefined, 'renters')
       expect(result.passed).toBe(true)
       expect(result.disclaimers).toBeDefined()
       expect(result.disclaimers?.some((d) => d.includes('Renters Insurance'))).toBe(true)
     })
 
-    it('should select umbrella disclaimers when productLine="umbrella"', () => {
+    it('should select umbrella disclaimers when productType="umbrella"', () => {
       const result = validateOutput('Valid output', undefined, 'umbrella')
       expect(result.passed).toBe(true)
       expect(result.disclaimers).toBeDefined()
       expect(result.disclaimers?.some((d) => d.includes('Umbrella Insurance'))).toBe(true)
     })
 
-    it('should return base disclaimers when productLine not provided', () => {
+    it('should return base disclaimers when productType not provided', () => {
       const result = validateOutput('Valid output')
       expect(result.passed).toBe(true)
       expect(result.disclaimers).toBeDefined()
@@ -342,18 +342,18 @@ describe('Compliance Filter', () => {
       expect(result.state).toBeUndefined()
     })
 
-    it('should handle null productLine', () => {
+    it('should handle null productType', () => {
       const result = validateOutput('Valid output', undefined, null)
       expect(result.passed).toBe(true)
       expect(result.disclaimers).toBeDefined()
-      expect(result.productLine).toBeUndefined()
+      expect(result.productType).toBeUndefined()
     })
 
-    it('should handle undefined productLine', () => {
+    it('should handle undefined productType', () => {
       const result = validateOutput('Valid output', undefined, undefined)
       expect(result.passed).toBe(true)
       expect(result.disclaimers).toBeDefined()
-      expect(result.productLine).toBeUndefined()
+      expect(result.productType).toBeUndefined()
     })
 
     it('should handle invalid state code', () => {
@@ -364,7 +364,7 @@ describe('Compliance Filter', () => {
       expect(result.disclaimers?.some((d) => d.includes('subject to underwriting'))).toBe(true)
     })
 
-    it('should handle invalid productLine value', () => {
+    it('should handle invalid productType value', () => {
       const result = validateOutput('Valid output', undefined, 'INVALID')
       expect(result.passed).toBe(true)
       expect(result.disclaimers).toBeDefined()
@@ -372,10 +372,10 @@ describe('Compliance Filter', () => {
       expect(result.disclaimers?.some((d) => d.includes('subject to underwriting'))).toBe(true)
     })
 
-    it('should include state and productLine in result', () => {
+    it('should include state and productType in result', () => {
       const result = validateOutput('Valid output', 'CA', 'auto')
       expect(result.state).toBe('CA')
-      expect(result.productLine).toBe('auto')
+      expect(result.productType).toBe('auto')
     })
   })
 })

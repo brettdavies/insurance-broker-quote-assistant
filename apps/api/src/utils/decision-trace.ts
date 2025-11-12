@@ -38,7 +38,7 @@ export function createDecisionTrace(
     violations?: string[]
     disclaimersAdded?: number
     state?: string
-    productLine?: string
+    productType?: string
   }
 ): DecisionTrace {
   // Extract rulesConsulted from routing decision citations if present
@@ -62,7 +62,7 @@ export function createDecisionTrace(
           violations: complianceCheck.violations,
           disclaimersAdded: complianceCheck.disclaimersAdded,
           state: complianceCheck.state,
-          productLine: complianceCheck.productLine,
+          productType: complianceCheck.productType,
         }
       : undefined,
   }

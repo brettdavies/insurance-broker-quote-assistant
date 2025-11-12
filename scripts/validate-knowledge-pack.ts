@@ -2,15 +2,15 @@
 
 /**
  * Validates all knowledge pack JSON files against their respective schemas.
- * 
+ *
  * Usage: bun run scripts/validate-knowledge-pack.ts
  */
 
+import { readFile, readdir } from 'node:fs/promises'
+import { dirname, join } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import Ajv from 'ajv'
 import addFormats from 'ajv-formats'
-import { readdir, readFile } from 'fs/promises'
-import { join, dirname } from 'path'
-import { fileURLToPath } from 'url'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
@@ -45,7 +45,7 @@ async function validateFiles(): Promise<void> {
 
   // Validate carrier files
   const carrierFiles = await readdir(join(knowledgePackDir, 'carriers'))
-  for (const file of carrierFiles.filter(f => f.endsWith('.json'))) {
+  for (const file of carrierFiles.filter((f) => f.endsWith('.json'))) {
     const filePath = join(knowledgePackDir, 'carriers', file)
     const content = await readFile(filePath, 'utf-8')
     const data = JSON.parse(content)
@@ -54,13 +54,13 @@ async function validateFiles(): Promise<void> {
     results.push({
       file: `carriers/${file}`,
       valid: valid || false,
-      errors: validateCarrier.errors?.map(e => `${e.instancePath} ${e.message}`) || []
+      errors: validateCarrier.errors?.map((e) => `${e.instancePath} ${e.message}`) || [],
     })
   }
 
   // Validate state files
   const stateFiles = await readdir(join(knowledgePackDir, 'states'))
-  for (const file of stateFiles.filter(f => f.endsWith('.json'))) {
+  for (const file of stateFiles.filter((f) => f.endsWith('.json'))) {
     const filePath = join(knowledgePackDir, 'states', file)
     const content = await readFile(filePath, 'utf-8')
     const data = JSON.parse(content)
@@ -69,13 +69,13 @@ async function validateFiles(): Promise<void> {
     results.push({
       file: `states/${file}`,
       valid: valid || false,
-      errors: validateState.errors?.map(e => `${e.instancePath} ${e.message}`) || []
+      errors: validateState.errors?.map((e) => `${e.instancePath} ${e.message}`) || [],
     })
   }
 
   // Validate product files
   const productFiles = await readdir(join(knowledgePackDir, 'products'))
-  for (const file of productFiles.filter(f => f.endsWith('.json'))) {
+  for (const file of productFiles.filter((f) => f.endsWith('.json'))) {
     const filePath = join(knowledgePackDir, 'products', file)
     const content = await readFile(filePath, 'utf-8')
     const data = JSON.parse(content)
@@ -84,13 +84,13 @@ async function validateFiles(): Promise<void> {
     results.push({
       file: `products/${file}`,
       valid: valid || false,
-      errors: validateProduct.errors?.map(e => `${e.instancePath} ${e.message}`) || []
+      errors: validateProduct.errors?.map((e) => `${e.instancePath} ${e.message}`) || [],
     })
   }
 
   // Report results
-  const validCount = results.filter(r => r.valid).length
-  const invalidCount = results.filter(r => !r.valid).length
+  const validCount = results.filter((r) => r.valid).length
+  const invalidCount = results.filter((r) => !r.valid).length
 
   console.log('\n📋 Knowledge Pack Validation Results\n')
   console.log(`✅ Valid: ${validCount}`)
@@ -99,7 +99,7 @@ async function validateFiles(): Promise<void> {
 
   if (invalidCount > 0) {
     console.log('❌ Validation Errors:\n')
-    for (const result of results.filter(r => !r.valid)) {
+    for (const result of results.filter((r) => !r.valid)) {
       console.log(`  ${result.file}:`)
       for (const error of result.errors) {
         console.log(`    - ${error}`)
@@ -117,4 +117,3 @@ validateFiles().catch((error) => {
   console.error('❌ Validation script error:', error)
   process.exit(1)
 })
-

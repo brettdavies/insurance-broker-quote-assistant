@@ -107,9 +107,9 @@ export function UnifiedChatInterface({
       // Get carrier/state from latest intake result if available
       const carrier = latestIntakeResult?.route?.primaryCarrier
       const state = profile.state || latestIntakeResult?.profile?.state
-      const productLine = profile.productLine || latestIntakeResult?.profile?.productLine
+      const productType = profile.productType || latestIntakeResult?.profile?.productType
 
-      const calculated = calculateMissingFields(profile, productLine, state, carrier)
+      const calculated = calculateMissingFields(profile, productType, state, carrier)
       // Convert to MissingField format for component
       const fieldMetadata = calculated.map((field) => {
         // Get field display name from FIELD_METADATA

@@ -13,7 +13,6 @@ import {
   MAX_FILE_SIZE,
   isAcceptedFileType,
   isFileSizeValid,
-  policyAnalysisResultSchema,
   policySummarySchema,
 } from '@repo/shared'
 import { Hono } from 'hono'
@@ -120,10 +119,13 @@ function validateFile(file: File): { valid: boolean; error?: string } {
 
 /**
  * Request schema for policy analyze endpoint
+ *
+ * Note: policyText is optional and user-facing only (for validation/debugging).
+ * PolicySummary is the source of truth for system processing.
  */
 const policyAnalyzeRequestSchema = z.object({
-  policyText: z.string().min(1, 'Policy text is required'),
-  policySummary: policySummarySchema.optional(),
+  policySummary: policySummarySchema, // Required - system SoT
+  policyText: z.string().optional(), // Optional - user-facing only, not used for processing
 })
 
 type PolicyAnalyzeRequest = z.infer<typeof policyAnalyzeRequestSchema>
@@ -353,85 +355,45 @@ export function createPolicyRoute(extractor: ConversationalExtractor, llmProvide
         )
       }
 
-      const { policyText, policySummary: providedPolicySummary } = validationResult.data
+      const { policySummary, policyText } = validationResult.data
 
-      // Step 1: Extract PolicySummary if not provided
-      let policySummary: PolicySummary
-      const extractionTokens = 0
-      const extractionTime = 0
-
-      if (providedPolicySummary) {
-        // Validate provided policy summary
-        const validationResult = policySummarySchema.safeParse(providedPolicySummary)
-        if (!validationResult.success) {
-          return c.json(
+      // PolicySummary is the source of truth - use it directly
+      // Optional: If policyText provided, validate it matches PolicySummary (for debugging)
+      if (policyText) {
+        const { parsePolicySummaryFromKeyValueText, policiesMatch } = await import(
+          '../utils/policy-key-value-parser'
+        )
+        const parsedFromText = parsePolicySummaryFromKeyValueText(policyText)
+        if (!policiesMatch(parsedFromText, policySummary)) {
+          // Log warning but don't fail - PolicySummary is SoT
+          await logError(
+            'PolicySummary and policyText mismatch in analyze endpoint',
+            new Error('Sync issue detected'),
             {
-              error: {
-                code: 'VALIDATION_ERROR',
-                message: 'Invalid policy summary provided',
-                details: validationResult.error.errors,
-              },
-            },
-            400
+              type: 'policy_sync_warning',
+              policyTextPreview: policyText.substring(0, 500),
+            }
           )
         }
-        policySummary = validationResult.data
-      } else {
-        // Validate policy text is not empty
-        if (!policyText || policyText.trim().length === 0) {
-          return c.json(
-            {
-              error: {
-                code: 'VALIDATION_ERROR',
-                message: 'Policy text is required when policySummary is not provided',
-                details: 'Either provide policyText or policySummary in request body',
+      }
+
+      // Validate policy summary has minimum required fields
+      if (!policySummary.carrier || !policySummary.state || !policySummary.productType) {
+        return c.json(
+          {
+            error: {
+              code: 'VALIDATION_ERROR',
+              message: 'Policy summary missing required fields',
+              details: 'PolicySummary must include carrier, state, and productType',
+              missingFields: {
+                carrier: !policySummary.carrier,
+                state: !policySummary.state,
+                productType: !policySummary.productType,
               },
             },
-            400
-          )
-        }
-
-        // Extract from policy text using Conversational Extractor
-        try {
-          const extractionResult = await extractor.extractPolicyData(policyText)
-          policySummary = extractionResult
-
-          // Validate extracted policy has minimum required fields
-          if (!policySummary.carrier || !policySummary.state || !policySummary.productType) {
-            return c.json(
-              {
-                error: {
-                  code: 'EXTRACTION_ERROR',
-                  message: 'Failed to extract required policy fields',
-                  details:
-                    'Extraction did not identify carrier, state, or productType. Please provide policySummary directly or ensure policy text contains this information.',
-                  extractedFields: {
-                    carrier: policySummary.carrier || null,
-                    state: policySummary.state || null,
-                    productType: policySummary.productType || null,
-                  },
-                },
-              },
-              400
-            )
-          }
-          // Note: extractPolicyData doesn't return tokens, so we'll log 0 for now
-        } catch (error) {
-          await logError('Policy extraction failed in analyze endpoint', error as Error, {
-            type: 'policy_extraction_error',
-            policyTextPreview: policyText.substring(0, 500),
-          })
-          return c.json(
-            {
-              error: {
-                code: 'EXTRACTION_ERROR',
-                message: 'Failed to extract policy data from text',
-                details: error instanceof Error ? error.message : 'Unknown error',
-              },
-            },
-            500
-          )
-        }
+          },
+          400
+        )
       }
 
       // Step 2: Call Policy Analysis Agent
@@ -443,6 +405,7 @@ export function createPolicyRoute(extractor: ConversationalExtractor, llmProvide
       let analysisTime = 0
 
       try {
+        // Pass policyText if provided (for context), but PolicySummary is the source of truth
         const result = await analysisAgent.analyzePolicy(policySummary, policyText)
         analysisResult = result
         analysisTokens = result._metadata?.tokensUsed || 0
@@ -549,20 +512,16 @@ export function createPolicyRoute(extractor: ConversationalExtractor, llmProvide
       const decisionTrace = createDecisionTrace(
         'policy',
         {
-          policyText: policyText.substring(0, 1000), // Limit text length
-          policySummaryProvided: !!providedPolicySummary,
+          policyText: policyText?.substring(0, 1000) || '', // Limit text length (optional)
+          policySummaryProvided: true, // Always provided now
         },
         {
-          method: providedPolicySummary ? 'key-value' : 'llm',
+          method: 'key-value', // PolicySummary always provided as structured data
           fields: policySummary,
           confidence: policySummary.confidence,
         },
         [
-          {
-            agent: 'conversational-extractor',
-            model: 'gemini-2.5-flash-lite',
-            totalTokens: extractionTokens,
-          },
+          // No extraction step - PolicySummary always provided
           {
             agent: 'policy-analysis-agent',
             model: 'gemini-2.5-flash-lite',
@@ -580,7 +539,7 @@ export function createPolicyRoute(extractor: ConversationalExtractor, llmProvide
           violations: complianceResult.violations,
           disclaimersAdded: complianceResult.disclaimers?.length || 0,
           state: policySummary.state,
-          productLine: policySummary.productType,
+          productType: policySummary.productType,
         }
       )
 

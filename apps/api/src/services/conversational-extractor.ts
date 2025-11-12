@@ -140,14 +140,14 @@ export class ConversationalExtractor {
   private getAllFieldNames(): string[] {
     return [
       'state',
-      'productLine',
+      'productType',
       'age',
       'householdSize',
       'vehicles',
       'ownsHome',
       'cleanRecord3Yr',
       'currentCarrier',
-      'currentPremium',
+      'premiums',
       'existingPolicies',
       'kids', // Legacy field
     ]

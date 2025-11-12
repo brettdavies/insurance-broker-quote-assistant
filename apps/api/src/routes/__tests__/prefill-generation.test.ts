@@ -20,7 +20,7 @@ describe('POST /api/generate-prefill', () => {
       email: 'john@example.com',
       phone: '555-1234',
       state: 'CA',
-      productLine: 'auto',
+      productType: 'auto',
       vehicles: 2,
       drivers: 1,
     }
@@ -40,7 +40,7 @@ describe('POST /api/generate-prefill', () => {
 
     // Check required fields
     expect(prefill.state).toBe('CA')
-    expect(prefill.productLine).toBe('auto')
+    expect(prefill.productType).toBe('auto')
     expect(prefill.routingDecision).toBeDefined()
     expect(prefill.missingFields).toBeDefined()
     expect(Array.isArray(prefill.missingFields)).toBe(true)
@@ -56,7 +56,7 @@ describe('POST /api/generate-prefill', () => {
       email: 'jane@example.com',
       phone: '555-5678',
       state: 'CA',
-      productLine: 'auto',
+      productType: 'auto',
     }
 
     const req = new Request('http://localhost:7070/api/generate-prefill', {
@@ -78,7 +78,7 @@ describe('POST /api/generate-prefill', () => {
   it('should include routing decision in prefill packet', async () => {
     const profile: UserProfile = {
       state: 'CA',
-      productLine: 'auto',
+      productType: 'auto',
       vehicles: 1,
     }
 
@@ -101,7 +101,7 @@ describe('POST /api/generate-prefill', () => {
   it('should flag missing fields with priority indicators', async () => {
     const profile: UserProfile = {
       state: 'CA',
-      productLine: 'auto',
+      productType: 'auto',
       // Missing vehicles and drivers (critical)
     }
 
@@ -123,7 +123,7 @@ describe('POST /api/generate-prefill', () => {
   it('should include lead handoff summary in agentNotes', async () => {
     const profile: UserProfile = {
       state: 'CA',
-      productLine: 'auto',
+      productType: 'auto',
     }
 
     const req = new Request('http://localhost:7070/api/generate-prefill', {
@@ -145,7 +145,7 @@ describe('POST /api/generate-prefill', () => {
   it('should embed disclaimers based on state/product', async () => {
     const profile: UserProfile = {
       state: 'CA',
-      productLine: 'auto',
+      productType: 'auto',
     }
 
     const req = new Request('http://localhost:7070/api/generate-prefill', {
@@ -167,7 +167,7 @@ describe('POST /api/generate-prefill', () => {
   it('should validate prefill packet against schema', async () => {
     const profile: UserProfile = {
       state: 'CA',
-      productLine: 'auto',
+      productType: 'auto',
       vehicles: 2,
       drivers: 1,
     }
@@ -185,7 +185,7 @@ describe('POST /api/generate-prefill', () => {
 
     // Validate structure matches PrefillPacket schema
     expect(prefill).toHaveProperty('state')
-    expect(prefill).toHaveProperty('productLine')
+    expect(prefill).toHaveProperty('productType')
     expect(prefill).toHaveProperty('routingDecision')
     expect(prefill).toHaveProperty('missingFields')
     expect(prefill).toHaveProperty('disclaimers')
@@ -194,7 +194,7 @@ describe('POST /api/generate-prefill', () => {
 
     // Validate types
     expect(typeof prefill.state).toBe('string')
-    expect(['auto', 'home', 'renters', 'umbrella']).toContain(prefill.productLine)
+    expect(['auto', 'home', 'renters', 'umbrella']).toContain(prefill.productType)
     expect(typeof prefill.routingDecision).toBe('string')
     expect(Array.isArray(prefill.missingFields)).toBe(true)
     expect(Array.isArray(prefill.disclaimers)).toBe(true)
@@ -223,7 +223,7 @@ describe('POST /api/generate-prefill', () => {
     // Profile with invalid state that might cause routing to fail
     const profile: UserProfile = {
       state: 'XX', // Invalid state code
-      productLine: 'auto',
+      productType: 'auto',
     }
 
     const req = new Request('http://localhost:7070/api/generate-prefill', {
@@ -240,7 +240,7 @@ describe('POST /api/generate-prefill', () => {
 
     const prefill = (await res.json()) as PrefillPacket
     expect(prefill.state).toBe('XX')
-    expect(prefill.productLine).toBe('auto')
+    expect(prefill.productType).toBe('auto')
   })
 })
 
@@ -270,17 +270,17 @@ describe('Prefill generation integrated with intake endpoint', () => {
       profile?: UserProfile
     }
 
-    // Prefill packet should be included if routing succeeded AND state/productLine are extracted
-    // Note: Prefill generation requires state and productLine, so it may be undefined even if route exists
-    if (result.route && result.profile?.state && result.profile?.productLine) {
+    // Prefill packet should be included if routing succeeded AND state/productType are extracted
+    // Note: Prefill generation requires state and productType, so it may be undefined even if route exists
+    if (result.route && result.profile?.state && result.profile?.productType) {
       expect(result.prefill).toBeDefined()
       if (result.prefill) {
         expect(result.prefill.state).toBeDefined()
-        expect(result.prefill.productLine).toBeDefined()
+        expect(result.prefill.productType).toBeDefined()
         expect(result.prefill.routingDecision).toBeDefined()
       }
     } else {
-      // Prefill may be undefined if state/productLine not extracted - this is expected behavior
+      // Prefill may be undefined if state/productType not extracted - this is expected behavior
       // The test should not fail in this case
     }
   })
@@ -338,7 +338,7 @@ describe('Prefill generation integrated with intake endpoint', () => {
     if (result.prefill) {
       // Should include extracted profile data
       expect(result.prefill.state).toBeDefined()
-      expect(result.prefill.productLine).toBeDefined()
+      expect(result.prefill.productType).toBeDefined()
 
       // Should include routing decision
       expect(result.prefill.routingDecision).toBeDefined()

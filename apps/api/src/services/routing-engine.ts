@@ -42,7 +42,7 @@ interface CarrierMatch {
 /**
  * Route to eligible carriers based on user profile
  *
- * @param profile - User profile with state, productLine, and optional eligibility fields
+ * @param profile - User profile with state, productType, and optional eligibility fields
  * @param getAllCarriersFn - Optional function to get all carriers (for testing)
  * @returns RouteDecision with primary carrier, eligible carriers, scores, and rationale
  */
@@ -50,10 +50,10 @@ export function routeToCarrier(
   profile: UserProfile,
   getAllCarriersFn: () => Carrier[] = defaultGetAllCarriers
 ): RouteDecision {
-  // Handle edge cases: missing state or productLine
-  if (!profile.state || !profile.productLine) {
+  // Handle edge cases: missing state or productType
+  if (!profile.state || !profile.productType) {
     return createNoEligibleCarriersDecision(
-      !profile.state ? 'State is required for routing' : 'Product line is required for routing'
+      !profile.state ? 'State is required for routing' : 'Product type is required for routing'
     )
   }
 
@@ -67,16 +67,16 @@ export function routeToCarrier(
 
     return (
       profile.state &&
-      profile.productLine &&
+      profile.productType &&
       operatesIn.includes(profile.state) &&
-      products.includes(profile.productLine)
+      products.includes(profile.productType)
     )
   })
 
   // If no carriers match state/product, return early
   if (stateProductFiltered.length === 0) {
     return createNoEligibleCarriersDecision(
-      `No carriers available for ${profile.productLine} insurance in ${profile.state}`
+      `No carriers available for ${profile.productType} insurance in ${profile.state}`
     )
   }
 
@@ -142,15 +142,15 @@ export function routeToCarrier(
  * @returns EligibilityResult with eligible flag, missing fields, and explanation
  */
 function evaluateEligibility(carrier: Carrier, profile: UserProfile): EligibilityResult {
-  if (!profile.productLine) {
+  if (!profile.productType) {
     return {
       eligible: false,
-      missingFields: ['productLine'],
-      explanation: 'Product line is required for eligibility evaluation',
+      missingFields: ['productType'],
+      explanation: 'Product type is required for eligibility evaluation',
     }
   }
-  const productLine = profile.productLine
-  const eligibility = carrier.eligibility[productLine]
+  const productType = profile.productType
+  const eligibility = carrier.eligibility[productType]
 
   // If no eligibility rules defined for this product, carrier is eligible
   if (!eligibility) {
@@ -188,7 +188,7 @@ function evaluateEligibility(carrier: Carrier, profile: UserProfile): Eligibilit
   }
 
   // Check vehicle limits (auto only)
-  if (productLine === 'auto' && eligibility.maxVehicles) {
+  if (productType === 'auto' && eligibility.maxVehicles) {
     const maxVehicles = eligibility.maxVehicles.value
     if (profile.vehicles === undefined) {
       missingFields.push('vehicles')
@@ -211,7 +211,7 @@ function evaluateEligibility(carrier: Carrier, profile: UserProfile): Eligibilit
 
   // Check property type restrictions (home/renters only)
   if (
-    (productLine === 'home' || productLine === 'renters') &&
+    (productType === 'home' || productType === 'renters') &&
     eligibility.propertyTypeRestrictions
   ) {
     const allowedTypes = eligibility.propertyTypeRestrictions.value
@@ -226,7 +226,7 @@ function evaluateEligibility(carrier: Carrier, profile: UserProfile): Eligibilit
   }
 
   // Check driving record requirement (auto only)
-  if (productLine === 'auto' && eligibility.requiresCleanDrivingRecord) {
+  if (productType === 'auto' && eligibility.requiresCleanDrivingRecord) {
     const requiresClean = eligibility.requiresCleanDrivingRecord.value
     if (requiresClean) {
       if (profile.cleanRecord3Yr === undefined) {
@@ -314,7 +314,7 @@ function calculateConfidence(rankedCarriers: CarrierMatch[], profile: UserProfil
   }
 
   // Calculate data completeness score
-  const requiredFields = ['state', 'productLine']
+  const requiredFields = ['state', 'productType']
   const optionalFields = ['age', 'vehicles']
   const providedFields =
     requiredFields.length +

@@ -1,4 +1,5 @@
 import { z } from 'zod'
+import { premiumsSchema } from './policy-summary'
 
 /**
  * User Profile Schema
@@ -36,7 +37,7 @@ export const userProfileSchema = z.object({
   zip: z.string().optional(), // Zip code
 
   // Product type
-  productLine: z.enum(['auto', 'home', 'renters', 'umbrella']).optional(),
+  productType: z.enum(['auto', 'home', 'renters', 'umbrella']).optional(),
 
   // Optional demographic fields
   age: z.number().int().positive().optional(),
@@ -65,7 +66,7 @@ export const userProfileSchema = z.object({
 
   // Optional current policy fields (for policy analysis flow)
   currentCarrier: z.string().optional(),
-  currentPremium: z.number().positive().optional(),
+  premiums: premiumsSchema.optional(), // Current premiums (annual, monthly, semiAnnual)
   deductibles: z.string().optional(), // Current deductibles
   limits: z.string().optional(), // Current coverage limits
 

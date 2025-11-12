@@ -10,11 +10,11 @@ const createMockLLMProvider = (): LLMProvider => {
     extractWithStructuredOutput: async () => ({
       profile: {
         state: 'CA',
-        productLine: 'auto',
+        productType: 'auto',
       },
       confidence: {
         state: 0.9,
-        productLine: 0.8,
+        productType: 0.8,
       },
       reasoning: 'Mock LLM extraction',
     }),
@@ -72,7 +72,7 @@ describe('POST /api/intake', () => {
     expect(res.status).toBe(200)
 
     const body = (await res.json()) as {
-      profile?: { state?: string; age?: number; productLine?: string }
+      profile?: { state?: string; age?: number; productType?: string }
       extractionMethod?: string
       confidence?: Record<string, number>
       missingFields?: string[]
@@ -80,7 +80,7 @@ describe('POST /api/intake', () => {
     expect(body.profile).toBeDefined()
     expect(body.profile?.state).toBe('CA')
     expect(body.profile?.age).toBe(30)
-    expect(body.profile?.productLine).toBe('auto')
+    expect(body.profile?.productType).toBe('auto')
     expect(body.extractionMethod).toBe('key-value') // AC5: extraction method in response
     expect(body.confidence).toBeDefined() // AC5: confidence scores in response
     expect(body.missingFields).toBeDefined()
@@ -158,7 +158,7 @@ describe('POST /api/intake', () => {
   })
 
   describe('Routing integration', () => {
-    it('should include RouteDecision in response when state and productLine are present', async () => {
+    it('should include RouteDecision in response when state and productType are present', async () => {
       const req = new Request('http://localhost/api/intake', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -365,7 +365,7 @@ describe('POST /api/intake', () => {
 
       const body = (await res.json()) as {
         disclaimers?: string[]
-        profile?: { state?: string; productLine?: string }
+        profile?: { state?: string; productType?: string }
       }
       expect(body.disclaimers).toBeDefined()
       expect(Array.isArray(body.disclaimers)).toBe(true)
@@ -451,7 +451,7 @@ describe('POST /api/intake', () => {
             violations?: string[]
             disclaimersAdded?: number
             state?: string
-            productLine?: string
+            productType?: string
           }
         }
       }
@@ -461,7 +461,7 @@ describe('POST /api/intake', () => {
       expect(body.trace?.complianceCheck?.disclaimersAdded).toBeDefined()
       expect(typeof body.trace?.complianceCheck?.disclaimersAdded).toBe('number')
       expect(body.trace?.complianceCheck?.state).toBe('CA')
-      expect(body.trace?.complianceCheck?.productLine).toBe('auto')
+      expect(body.trace?.complianceCheck?.productType).toBe('auto')
     })
 
     it('should run compliance filter on pitch before returning to frontend', async () => {

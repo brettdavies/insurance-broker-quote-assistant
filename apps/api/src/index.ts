@@ -145,7 +145,7 @@ app.post('/api/generate-prefill', async (c) => {
       const complianceResult = validateOutput(
         '',
         profile.state || undefined,
-        profile.productLine || undefined
+        profile.productType || undefined
       )
       disclaimers = complianceResult.disclaimers || []
     } catch (error) {
@@ -209,7 +209,7 @@ app.post('/api/generate-prefill', async (c) => {
       {
         profile: {
           state: profile.state,
-          productLine: profile.productLine,
+          productType: profile.productType,
           name: profile.name,
         },
       },
@@ -238,7 +238,7 @@ app.post('/api/generate-prefill', async (c) => {
         violations: [],
         disclaimersAdded: disclaimers.length,
         state: profile.state || undefined,
-        productLine: profile.productLine || undefined,
+        productType: profile.productType || undefined,
       }
     )
 
@@ -285,6 +285,7 @@ app.get('/api/carriers', (c) => {
 
 app.get('/api/carriers/:name', (c) => {
   const name = c.req.param('name')
+  // getCarrierByName is now case-insensitive
   const carrier = getCarrierByName(name)
 
   if (!carrier) {
@@ -302,14 +303,16 @@ app.get('/api/carriers/:name', (c) => {
 
 app.get('/api/carriers/:name/products', (c) => {
   const name = c.req.param('name')
+  // getCarrierProducts uses getCarrierByName which is case-insensitive
   const products = getCarrierProducts(name)
+  const carrier = getCarrierByName(name)
 
-  if (products.length === 0 && !getCarrierByName(name)) {
+  if (products.length === 0 && !carrier) {
     return c.json({ error: 'Carrier not found' }, 404)
   }
 
   return c.json({
-    carrier: name,
+    carrier: carrier?.name || name, // Return actual carrier name from knowledge pack
     products,
     count: products.length,
   })
@@ -318,10 +321,12 @@ app.get('/api/carriers/:name/products', (c) => {
 app.get('/api/carriers/:name/operates-in/:state', (c) => {
   const name = c.req.param('name')
   const stateCode = c.req.param('state').toUpperCase()
+  // carrierOperatesInState is now case-insensitive for carrier name
   const operates = carrierOperatesInState(name, stateCode)
+  const carrier = getCarrierByName(name) // Get actual carrier name
 
   return c.json({
-    carrier: name,
+    carrier: carrier?.name || name, // Return actual carrier name from knowledge pack
     state: stateCode,
     operatesIn: operates,
   })
@@ -341,6 +346,7 @@ app.get('/api/states', (c) => {
 
 app.get('/api/states/:code', (c) => {
   const code = c.req.param('code').toUpperCase()
+  // getStateByCode normalizes to uppercase internally
   const state = getStateByCode(code)
 
   if (!state) {

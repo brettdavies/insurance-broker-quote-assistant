@@ -181,12 +181,44 @@ describe('PolicyAnalysisAgent - LLM Integration Tests', () => {
       return
     }
 
-    const { loadKnowledgePack } = await import('../knowledge-pack-loader')
-    await loadKnowledgePack()
+    // Use real knowledge pack as base
+    const { setupTestKnowledgePack } = await import(
+      '../../__tests__/helpers/knowledge-pack-test-setup'
+    )
+    await setupTestKnowledgePack()
 
     llmProvider = new GeminiProvider(process.env.GEMINI_API_KEY, 'gemini-2.5-flash-lite', 30000)
 
     agent = new PolicyAnalysisAgent(llmProvider)
+  })
+
+  afterAll(async () => {
+    const useRealLLM = process.env.USE_REAL_LLM === 'true'
+
+    if (useRealLLM && testResults.length > 0) {
+      await generateMarkdownReport(testResults)
+
+      // Also write JSON for programmatic access
+      const fs = require('node:fs')
+      const path = require('node:path')
+      const reportPath = path.join(
+        process.cwd(),
+        'test-reports',
+        'policy-analysis-agent-llm-results.json'
+      )
+      const dir = path.dirname(reportPath)
+      if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true })
+      }
+      fs.writeFileSync(reportPath, JSON.stringify(testResults, null, 2))
+    }
+
+    if (useRealLLM) {
+      const { cleanupTestKnowledgePack } = await import(
+        '../../__tests__/helpers/knowledge-pack-test-setup'
+      )
+      await cleanupTestKnowledgePack()
+    }
   })
 
   it('should analyze policy with real LLM - Basic Policy', async () => {
@@ -482,26 +514,6 @@ describe('PolicyAnalysisAgent - LLM Integration Tests', () => {
     } finally {
       testResults.push(currentTest)
       currentTest = null
-    }
-  })
-
-  afterAll(async () => {
-    if (process.env.USE_REAL_LLM === 'true' && testResults.length > 0) {
-      await generateMarkdownReport(testResults)
-
-      // Also write JSON for programmatic access
-      const fs = require('node:fs')
-      const path = require('node:path')
-      const reportPath = path.join(
-        process.cwd(),
-        'test-reports',
-        'policy-analysis-agent-llm-results.json'
-      )
-      const dir = path.dirname(reportPath)
-      if (!fs.existsSync(dir)) {
-        fs.mkdirSync(dir, { recursive: true })
-      }
-      fs.writeFileSync(reportPath, JSON.stringify(testResults, null, 2))
     }
   })
 })

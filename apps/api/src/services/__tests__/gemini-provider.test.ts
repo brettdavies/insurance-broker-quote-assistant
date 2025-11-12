@@ -35,11 +35,11 @@ describe('GeminiProvider', () => {
       // LLM should extract state (may be 'CA' or 'California' or 'california')
       expect(result.profile.state).toBeDefined()
       expect(typeof result.profile.state).toBe('string')
-      // LLM should extract productLine
-      expect(result.profile.productLine).toBeDefined()
+      // LLM should extract productType
+      expect(result.profile.productType).toBeDefined()
       const validProductLines = ['auto', 'home', 'renters', 'umbrella'] as const
       expect(
-        validProductLines.includes(result.profile.productLine as (typeof validProductLines)[number])
+        validProductLines.includes(result.profile.productType as (typeof validProductLines)[number])
       ).toBe(true)
       expect(result.confidence).toBeDefined()
       expect(Object.keys(result.confidence).length).toBeGreaterThan(0)
@@ -54,11 +54,11 @@ describe('GeminiProvider', () => {
       // Should extract state (may be 'CA' or 'California')
       expect(result.profile.state).toBeDefined()
       expect(typeof result.profile.state).toBe('string')
-      // Should extract productLine
-      expect(result.profile.productLine).toBeDefined()
+      // Should extract productType
+      expect(result.profile.productType).toBeDefined()
       const validProductLines = ['auto', 'home', 'renters', 'umbrella'] as const
       expect(
-        validProductLines.includes(result.profile.productLine as (typeof validProductLines)[number])
+        validProductLines.includes(result.profile.productType as (typeof validProductLines)[number])
       ).toBe(true)
       // Should extract age (may be 30 or close)
       expect(result.profile.age).toBeDefined()
@@ -94,14 +94,14 @@ describe('GeminiProvider', () => {
       // Validate all extracted fields are valid UserProfile fields
       const validFields = [
         'state',
-        'productLine',
+        'productType',
         'age',
         'householdSize',
         'vehicles',
         'ownsHome',
         'cleanRecord3Yr',
         'currentCarrier',
-        'currentPremium',
+        'premiums',
         'existingPolicies',
         'kids',
       ]
@@ -120,10 +120,10 @@ describe('GeminiProvider', () => {
       // Should extract what's clear (state, product)
       expect(result.profile.state).toBeDefined()
       expect(typeof result.profile.state).toBe('string')
-      expect(result.profile.productLine).toBeDefined()
+      expect(result.profile.productType).toBeDefined()
       const validProductLines = ['auto', 'home', 'renters', 'umbrella'] as const
       expect(
-        validProductLines.includes(result.profile.productLine as (typeof validProductLines)[number])
+        validProductLines.includes(result.profile.productType as (typeof validProductLines)[number])
       ).toBe(true)
       // May or may not extract vehicles (ambiguous)
       expect(result.confidence).toBeDefined()
@@ -174,14 +174,14 @@ describe('GeminiProvider', () => {
         // All keys should be valid UserProfile fields
         const validKeys = [
           'state',
-          'productLine',
+          'productType',
           'age',
           'householdSize',
           'vehicles',
           'ownsHome',
           'cleanRecord3Yr',
           'currentCarrier',
-          'currentPremium',
+          'premiums',
           'existingPolicies',
           'kids',
         ]
@@ -197,10 +197,10 @@ describe('GeminiProvider', () => {
         if (profile.state !== undefined) {
           expect(typeof profile.state).toBe('string')
         }
-        if (profile.productLine !== undefined) {
+        if (profile.productType !== undefined) {
           const validProductLines = ['auto', 'home', 'renters', 'umbrella'] as const
           expect(
-            validProductLines.includes(profile.productLine as (typeof validProductLines)[number])
+            validProductLines.includes(profile.productType as (typeof validProductLines)[number])
           ).toBe(true)
         }
       },

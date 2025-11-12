@@ -41,14 +41,6 @@ export const routeDecisionSchema = z.object({
 export type RouteDecision = z.infer<typeof routeDecisionSchema>
 
 /**
- * Route Decision Stub (deprecated - use routeDecisionSchema)
- * @deprecated Use routeDecisionSchema instead
- */
-export const routeDecisionStubSchema = routeDecisionSchema.partial()
-
-export type RouteDecisionStub = z.infer<typeof routeDecisionStubSchema>
-
-/**
  * Opportunity Stub
  * Will be fully defined in future story (discount engine)
  */
@@ -59,19 +51,6 @@ export const opportunityStubSchema = z.object({
 })
 
 export type OpportunityStub = z.infer<typeof opportunityStubSchema>
-
-/**
- * Prefill Packet Stub (deprecated - use prefillPacketSchema)
- * @deprecated Use prefillPacketSchema from './prefill-packet' instead
- */
-export const prefillPacketStubSchema = z.object({
-  state: z.string().optional(),
-  productLine: z.string().optional(),
-  carrier: z.string().optional(),
-  disclaimers: z.array(z.string()).optional(), // Compliance disclaimers for state/product
-})
-
-export type PrefillPacketStub = z.infer<typeof prefillPacketStubSchema>
 
 /**
  * Intake Result Schema

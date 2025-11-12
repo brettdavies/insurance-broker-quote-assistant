@@ -191,8 +191,8 @@ describe('Discount Engine Integration', () => {
             _sources: [],
           },
           metadata: {
-            discountType: 'bundle',
-            evaluationPriority: 'high',
+            discountType: 'bundle' as const,
+            evaluationPriority: 'high' as const,
           },
         },
       ]
@@ -250,7 +250,7 @@ describe('Discount Engine Integration', () => {
           },
           stackable: { _id: 'fld6', value: true, _sources: [] },
           metadata: {
-            discountType: 'lifestyle',
+            discountType: 'lifestyle' as const,
             requiresDocumentation: true,
           },
         },
@@ -386,7 +386,7 @@ describe('Discount Engine Integration', () => {
             },
             _sources: [],
           },
-          metadata: { discountType: 'bundle', evaluationPriority: 'high' },
+          metadata: { discountType: 'bundle' as const, evaluationPriority: 'high' as const },
           stateVariations: { CA: { multiplier: 0.5 } },
         },
         {
@@ -405,7 +405,7 @@ describe('Discount Engine Integration', () => {
             },
             _sources: [],
           },
-          metadata: { discountType: 'driver', evaluationPriority: 'high' },
+          metadata: { discountType: 'driver' as const, evaluationPriority: 'high' as const },
           stateVariations: { CA: { multiplier: 0.5 } },
         },
       ]

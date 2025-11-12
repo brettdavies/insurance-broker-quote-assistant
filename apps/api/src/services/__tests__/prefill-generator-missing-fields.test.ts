@@ -7,23 +7,55 @@
  * @see docs/stories/1.9.real-time-missing-fields-detection.md#task-8
  */
 
-import { beforeAll, describe, expect, it } from 'bun:test'
-import { mkdir, rm, writeFile } from 'node:fs/promises'
-import { join } from 'node:path'
+import { afterAll, beforeAll, describe, expect, it } from 'bun:test'
 import type { UserProfile } from '@repo/shared'
-import { createTestCarrier, createTestState } from '../../__tests__/fixtures/knowledge-pack'
-import { loadKnowledgePack } from '../knowledge-pack-loader'
+import {
+  createTestCarrier,
+  createTestProduct,
+  createTestState,
+} from '../../__tests__/fixtures/knowledge-pack'
+import {
+  cleanupTestKnowledgePack,
+  setupTestKnowledgePack,
+} from '../../__tests__/helpers/knowledge-pack-test-setup'
 import { getMissingFields } from '../prefill-generator'
 
-// Path relative to project root (loadKnowledgePack resolves relative to process.cwd())
-const testKnowledgePackDir =
-  'apps/api/src/__tests__/fixtures/knowledge-packs/test_knowledge_pack_missing_fields'
-
 describe('getMissingFields - Product-Specific Requirements', () => {
+  beforeAll(async () => {
+    // Use real knowledge pack as base, extend with test products that have specific required fields
+    // Note: Real knowledge pack products may already have these fields, but we're ensuring test consistency
+    await setupTestKnowledgePack({
+      products: [
+        createTestProduct('auto', 'Auto Insurance', [
+          { field: 'vehicles', priority: 'critical' },
+          { field: 'drivers', priority: 'critical' },
+          { field: 'vins', priority: 'important' },
+          { field: 'garage', priority: 'optional' },
+        ]),
+        createTestProduct('home', 'Home Insurance', [
+          { field: 'propertyType', priority: 'critical' },
+          { field: 'constructionYear', priority: 'important' },
+          { field: 'squareFeet', priority: 'important' },
+          { field: 'roofType', priority: 'optional' },
+        ]),
+        createTestProduct('renters', 'Renters Insurance', [
+          { field: 'propertyType', priority: 'critical' },
+        ]),
+        createTestProduct('umbrella', 'Umbrella Insurance', [
+          { field: 'existingPolicies', priority: 'critical' },
+        ]),
+      ],
+    })
+  })
+
+  afterAll(async () => {
+    await cleanupTestKnowledgePack()
+  })
+
   it('should detect missing critical fields for auto product', () => {
     const profile: UserProfile = {
       state: 'CA',
-      productLine: 'auto',
+      productType: 'auto',
       // Missing vehicles and drivers (critical)
     }
 
@@ -35,7 +67,7 @@ describe('getMissingFields - Product-Specific Requirements', () => {
   it('should detect missing important fields for auto product', () => {
     const profile: UserProfile = {
       state: 'CA',
-      productLine: 'auto',
+      productType: 'auto',
       vehicles: 2,
       drivers: 1,
       // Missing vins (important)
@@ -48,7 +80,7 @@ describe('getMissingFields - Product-Specific Requirements', () => {
   it('should detect missing optional fields for auto product', () => {
     const profile: UserProfile = {
       state: 'CA',
-      productLine: 'auto',
+      productType: 'auto',
       vehicles: 2,
       drivers: 1,
       vins: 'ABC123',
@@ -62,7 +94,7 @@ describe('getMissingFields - Product-Specific Requirements', () => {
   it('should detect missing critical fields for home product', () => {
     const profile: UserProfile = {
       state: 'CA',
-      productLine: 'home',
+      productType: 'home',
       // Missing propertyType (critical)
     }
 
@@ -73,7 +105,7 @@ describe('getMissingFields - Product-Specific Requirements', () => {
   it('should detect missing important fields for home product', () => {
     const profile: UserProfile = {
       state: 'CA',
-      productLine: 'home',
+      productType: 'home',
       propertyType: 'single-family',
       // Missing constructionYear and squareFeet (important)
     }
@@ -88,7 +120,7 @@ describe('getMissingFields - Product-Specific Requirements', () => {
   it('should detect missing critical fields for renters product', () => {
     const profile: UserProfile = {
       state: 'CA',
-      productLine: 'renters',
+      productType: 'renters',
       // Missing propertyType (critical)
     }
 
@@ -99,7 +131,7 @@ describe('getMissingFields - Product-Specific Requirements', () => {
   it('should detect missing critical fields for umbrella product', () => {
     const profile: UserProfile = {
       state: 'CA',
-      productLine: 'umbrella',
+      productType: 'umbrella',
       // Missing existingPolicies (critical)
     }
 
@@ -109,18 +141,18 @@ describe('getMissingFields - Product-Specific Requirements', () => {
     )
   })
 
-  it('should always require state and productLine', () => {
+  it('should always require state and productType', () => {
     const profile: UserProfile = {}
 
     const missing = getMissingFields(profile)
     expect(missing.some((f) => f.field === 'state' && f.priority === 'critical')).toBe(true)
-    expect(missing.some((f) => f.field === 'productLine' && f.priority === 'critical')).toBe(true)
+    expect(missing.some((f) => f.field === 'productType' && f.priority === 'critical')).toBe(true)
   })
 
   it('should return empty array when all required fields present', () => {
     const profile: UserProfile = {
       state: 'CA',
-      productLine: 'auto',
+      productType: 'auto',
       vehicles: 2,
       drivers: 1,
       vins: 'ABC123',
@@ -134,10 +166,27 @@ describe('getMissingFields - Product-Specific Requirements', () => {
 })
 
 describe('getMissingFields - Priority Assignment', () => {
+  beforeAll(async () => {
+    await setupTestKnowledgePack({
+      products: [
+        createTestProduct('auto', 'Auto Insurance', [
+          { field: 'vehicles', priority: 'critical' },
+          { field: 'drivers', priority: 'critical' },
+          { field: 'vins', priority: 'important' },
+          { field: 'garage', priority: 'optional' },
+        ]),
+      ],
+    })
+  })
+
+  afterAll(async () => {
+    await cleanupTestKnowledgePack()
+  })
+
   it('should assign critical priority to blocking fields', () => {
     const profile: UserProfile = {
       state: 'CA',
-      productLine: 'auto',
+      productType: 'auto',
     }
 
     const missing = getMissingFields(profile)
@@ -150,7 +199,7 @@ describe('getMissingFields - Priority Assignment', () => {
   it('should assign important priority to accuracy-affecting fields', () => {
     const profile: UserProfile = {
       state: 'CA',
-      productLine: 'auto',
+      productType: 'auto',
       vehicles: 2,
       drivers: 1,
     }
@@ -163,7 +212,7 @@ describe('getMissingFields - Priority Assignment', () => {
   it('should assign optional priority to nice-to-have fields', () => {
     const profile: UserProfile = {
       state: 'CA',
-      productLine: 'auto',
+      productType: 'auto',
       vehicles: 2,
       drivers: 1,
       vins: 'ABC123',
@@ -177,11 +226,6 @@ describe('getMissingFields - Priority Assignment', () => {
 
 describe('getMissingFields - Carrier-Specific Requirements', () => {
   beforeAll(async () => {
-    // Setup test knowledge pack
-    await mkdir(testKnowledgePackDir, { recursive: true })
-    await mkdir(join(testKnowledgePackDir, 'carriers'), { recursive: true })
-    await mkdir(join(testKnowledgePackDir, 'states'), { recursive: true })
-
     // Create test carrier with clean driving record requirement
     const carrierWithCleanRecord = createTestCarrier('TestCarrier', ['CA'], ['auto'])
     carrierWithCleanRecord.carrier.eligibility = {
@@ -226,19 +270,26 @@ describe('getMissingFields - Carrier-Specific Requirements', () => {
       }
     }
 
-    await writeFile(
-      join(testKnowledgePackDir, 'carriers', 'test-carrier.json'),
-      JSON.stringify(carrierWithCleanRecord),
-      'utf-8'
-    )
+    await setupTestKnowledgePack({
+      products: [
+        createTestProduct('auto', 'Auto Insurance', [
+          { field: 'vehicles', priority: 'critical' },
+          { field: 'drivers', priority: 'critical' },
+          { field: 'vins', priority: 'important' },
+        ]),
+      ],
+      carriers: [carrierWithCleanRecord],
+    })
+  })
 
-    await loadKnowledgePack(testKnowledgePackDir)
+  afterAll(async () => {
+    await cleanupTestKnowledgePack()
   })
 
   it('should add carrier-specific critical requirements', () => {
     const profile: UserProfile = {
       state: 'CA',
-      productLine: 'auto',
+      productType: 'auto',
       vehicles: 2,
       drivers: 1,
       // Missing cleanRecord3Yr (carrier-specific critical)
@@ -253,7 +304,7 @@ describe('getMissingFields - Carrier-Specific Requirements', () => {
   it('should add carrier-specific important requirements (age)', () => {
     const profile: UserProfile = {
       state: 'CA',
-      productLine: 'auto',
+      productType: 'auto',
       vehicles: 2,
       drivers: 1,
       // Missing age (carrier-specific important)
@@ -266,7 +317,7 @@ describe('getMissingFields - Carrier-Specific Requirements', () => {
   it('should add carrier-specific important requirements (creditScore)', () => {
     const profile: UserProfile = {
       state: 'CA',
-      productLine: 'auto',
+      productType: 'auto',
       vehicles: 2,
       drivers: 1,
       // Missing creditScore (carrier-specific important)
@@ -279,7 +330,7 @@ describe('getMissingFields - Carrier-Specific Requirements', () => {
   it('should not duplicate fields already in missing list', () => {
     const profile: UserProfile = {
       state: 'CA',
-      productLine: 'auto',
+      productType: 'auto',
       vehicles: 2,
       drivers: 1,
       // vins already in product-level requirements
@@ -293,7 +344,7 @@ describe('getMissingFields - Carrier-Specific Requirements', () => {
   it('should upgrade priority if carrier requirement is more critical', () => {
     const profile: UserProfile = {
       state: 'CA',
-      productLine: 'auto',
+      productType: 'auto',
       vehicles: 2,
       drivers: 1,
       // vins is important at product level, but carrier might require it as critical
@@ -309,10 +360,6 @@ describe('getMissingFields - Carrier-Specific Requirements', () => {
 
 describe('getMissingFields - State-Specific Requirements', () => {
   beforeAll(async () => {
-    // Setup test knowledge pack with state requirements
-    await mkdir(testKnowledgePackDir, { recursive: true })
-    await mkdir(join(testKnowledgePackDir, 'states'), { recursive: true })
-
     // Create test state with minimum coverage requirements
     const stateWithMinimums = createTestState('CA', 'California', {
       _id: 'mincov_test1',
@@ -334,39 +381,55 @@ describe('getMissingFields - State-Specific Requirements', () => {
       },
     })
 
-    await writeFile(
-      join(testKnowledgePackDir, 'states', 'CA.json'),
-      JSON.stringify(stateWithMinimums),
-      'utf-8'
-    )
+    await setupTestKnowledgePack({
+      products: [
+        createTestProduct('auto', 'Auto Insurance', [
+          { field: 'vehicles', priority: 'critical' },
+          { field: 'drivers', priority: 'critical' },
+          { field: 'vins', priority: 'important' },
+        ]),
+        createTestProduct('home', 'Home Insurance', [
+          { field: 'propertyType', priority: 'critical' },
+          { field: 'constructionYear', priority: 'important' },
+          { field: 'squareFeet', priority: 'important' },
+        ]),
+      ],
+      states: [stateWithMinimums],
+    })
+  })
 
-    await loadKnowledgePack(testKnowledgePackDir)
+  afterAll(async () => {
+    await cleanupTestKnowledgePack()
   })
 
   it('should add state-specific important requirements for auto', () => {
     const profile: UserProfile = {
       state: 'CA',
-      productLine: 'auto',
+      productType: 'auto',
       vehicles: 2,
       drivers: 1,
-      // Missing vins (state-specific important for minimums verification)
+      // Missing vins (product-level important, state may also require for minimums verification)
     }
 
     const missing = getMissingFields(profile, 'auto', 'CA')
-    // State requirements may add vins as important if not already present
+    // vins should be in missing list (from product requirements)
+    // State requirements may also add it if not already present
     const vinsField = missing.find((f) => f.field === 'vins')
     expect(vinsField).toBeDefined()
+    expect(vinsField?.priority).toBe('important')
   })
 
   it('should add state-specific important requirements for home', () => {
     const profile: UserProfile = {
       state: 'CA',
-      productLine: 'home',
+      productType: 'home',
       propertyType: 'single-family',
-      // Missing squareFeet and constructionYear (state-specific important)
+      // Missing squareFeet and constructionYear (product-level important, state may also require)
     }
 
     const missing = getMissingFields(profile, 'home', 'CA')
+    // These fields should be in missing list (from product requirements)
+    // State requirements may also add them if not already present
     expect(missing.some((f) => f.field === 'squareFeet' && f.priority === 'important')).toBe(true)
     expect(missing.some((f) => f.field === 'constructionYear' && f.priority === 'important')).toBe(
       true
@@ -375,10 +438,26 @@ describe('getMissingFields - State-Specific Requirements', () => {
 })
 
 describe('getMissingFields - Edge Cases', () => {
+  beforeAll(async () => {
+    await setupTestKnowledgePack({
+      products: [
+        createTestProduct('auto', 'Auto Insurance', [
+          { field: 'vehicles', priority: 'critical' },
+          { field: 'drivers', priority: 'critical' },
+          { field: 'vins', priority: 'important' },
+        ]),
+      ],
+    })
+  })
+
+  afterAll(async () => {
+    await cleanupTestKnowledgePack()
+  })
+
   it('should fall back to product-level defaults when carrier unknown', () => {
     const profile: UserProfile = {
       state: 'CA',
-      productLine: 'auto',
+      productType: 'auto',
       vehicles: 2,
       drivers: 1,
     }
@@ -391,7 +470,7 @@ describe('getMissingFields - Edge Cases', () => {
   it('should fall back to product-level defaults when state unknown', () => {
     const profile: UserProfile = {
       state: 'XX', // Unknown state
-      productLine: 'auto',
+      productType: 'auto',
       vehicles: 2,
       drivers: 1,
     }
@@ -401,13 +480,13 @@ describe('getMissingFields - Edge Cases', () => {
     expect(missing.some((f) => f.field === 'vins')).toBe(true)
   })
 
-  it('should handle missing productLine gracefully', () => {
+  it('should handle missing productType gracefully', () => {
     const profile: UserProfile = {
       state: 'CA',
     }
 
     const missing = getMissingFields(profile)
-    expect(missing.some((f) => f.field === 'productLine' && f.priority === 'critical')).toBe(true)
+    expect(missing.some((f) => f.field === 'productType' && f.priority === 'critical')).toBe(true)
     // Should not throw error
   })
 
@@ -417,13 +496,13 @@ describe('getMissingFields - Edge Cases', () => {
     const missing = getMissingFields(profile)
     expect(missing.length).toBeGreaterThan(0)
     expect(missing.some((f) => f.field === 'state')).toBe(true)
-    expect(missing.some((f) => f.field === 'productLine')).toBe(true)
+    expect(missing.some((f) => f.field === 'productType')).toBe(true)
   })
 
   it('should not include fields that are present', () => {
     const profile: UserProfile = {
       state: 'CA',
-      productLine: 'auto',
+      productType: 'auto',
       vehicles: 2,
       drivers: 1,
       vins: 'ABC123',

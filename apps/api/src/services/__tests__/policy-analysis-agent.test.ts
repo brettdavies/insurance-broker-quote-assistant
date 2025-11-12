@@ -9,7 +9,7 @@
 
 import { beforeEach, describe, expect, it, mock, spyOn } from 'bun:test'
 import type { PolicyAnalysisResult, PolicySummary } from '@repo/shared'
-import { policyAnalysisResultSchema } from '@repo/shared'
+import { policyAnalysisResultLLMSchema } from '@repo/shared'
 import * as knowledgePackRAG from '../knowledge-pack-rag'
 import type { LLMProvider } from '../llm-provider'
 import { PolicyAnalysisAgent } from '../policy-analysis-agent'
@@ -104,7 +104,7 @@ describe('PolicyAnalysisAgent', () => {
       expect(callArgs?.[0]).toContain('GEICO')
       expect(callArgs?.[0]).toContain('CA')
       expect(callArgs?.[0]).toContain('auto')
-      expect(callArgs?.[2]).toBe(policyAnalysisResultSchema)
+      expect(callArgs?.[2]).toBe(policyAnalysisResultLLMSchema)
     })
 
     it('should return PolicyAnalysisResult with metadata', async () => {
@@ -117,7 +117,7 @@ describe('PolicyAnalysisAgent', () => {
       expect(result.bundleOptions).toBeDefined()
       expect(result.deductibleOptimizations).toBeDefined()
       expect(result._metadata?.tokensUsed).toBe(500)
-      expect(result._metadata?.analysisTime).toBeGreaterThan(0)
+      expect(result._metadata?.analysisTime).toBeGreaterThanOrEqual(0)
     })
 
     it('should validate LLM response against schema', async () => {

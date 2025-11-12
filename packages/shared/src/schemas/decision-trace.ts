@@ -46,7 +46,7 @@ export const decisionTraceSchema = z.object({
       violations: z.array(z.string()).optional(),
       disclaimersAdded: z.number().int().nonnegative().optional(),
       state: z.string().optional(),
-      productLine: z.string().optional(),
+      productType: z.string().optional(),
     })
     .optional(),
   llmCalls: z.array(llmCallSchema).optional(),

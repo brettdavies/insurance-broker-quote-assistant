@@ -212,7 +212,7 @@ export const ACTION_SHORTCUTS_DISPLAY = getActionShortcutsDisplay()
 export const MULTI_WORD_FIELDS = new Set<FieldCommand>([
   'name',
   'phone',
-  'productLine',
+  'productType',
   'propertyType',
   'garage',
   'roofType',
@@ -272,7 +272,7 @@ export function getFieldCommand(buffer: string): FieldCommand | undefined {
   }
   // Check aliases
   const fieldFromAlias = getFieldFromAlias(buffer)
-  return fieldFromAlias || undefined
+  return (fieldFromAlias as FieldCommand | undefined) || undefined
 }
 
 /**
