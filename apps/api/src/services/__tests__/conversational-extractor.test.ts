@@ -6,10 +6,11 @@ import type { ExtractionResult as LLMExtractionResult, LLMProvider } from '../ll
 describe('ConversationalExtractor', () => {
   let mockLLMProvider: LLMProvider
   let extractor: ConversationalExtractor
+  let mockExtract: ReturnType<typeof mock>
 
   beforeEach(() => {
     // Create mock LLM provider with spyable mock function
-    const mockExtract = mock(async () => ({
+    mockExtract = mock(async () => ({
       profile: {},
       confidence: {},
       reasoning: 'Mock LLM extraction',
@@ -90,11 +91,17 @@ describe('ConversationalExtractor', () => {
 
       await extractor.extractFields('Current message', conversationHistory)
 
-      expect(mockLLMProvider.extractWithStructuredOutput).toHaveBeenCalledWith(
-        'Current message',
-        conversationHistory,
-        expect.anything() // Zod schema
-      )
+      // Verify LLM provider was called with correct arguments
+      expect(mockExtract).toHaveBeenCalled()
+      const callArgs = mockExtract.mock.calls[0]
+      expect(callArgs).toBeDefined()
+      if (callArgs) {
+        expect(callArgs[0]).toBe('Current message')
+        expect(callArgs[1]).toEqual(conversationHistory)
+        expect(callArgs[2]).toBeDefined() // Zod schema
+        // 4th argument is partialFields (may be undefined or an object)
+        expect(callArgs[3] === undefined || typeof callArgs[3] === 'object').toBe(true)
+      }
     })
   })
 })

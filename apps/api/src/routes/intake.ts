@@ -68,6 +68,20 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
       // Extract fields using Conversational Extractor
       const extractionResult = await extractor.extractFields(message, conversationHistory)
 
+      // Build llmCalls array from extraction token usage
+      const llmCalls =
+        extractionResult.extractionMethod === 'llm' && extractionResult.tokenUsage
+          ? [
+              {
+                agent: 'conversational-extractor',
+                model: 'gemini-2.5-flash-lite', // TODO: Get actual model from LLM provider
+                promptTokens: extractionResult.tokenUsage.promptTokens,
+                completionTokens: extractionResult.tokenUsage.completionTokens,
+                totalTokens: extractionResult.tokenUsage.totalTokens,
+              },
+            ]
+          : undefined
+
       // Route to eligible carriers using Routing Engine
       let routeDecision: RouteDecision | undefined
       try {
@@ -126,7 +140,7 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
           confidence: extractionResult.confidence,
           reasoning: extractionResult.reasoning,
         },
-        undefined, // llmCalls
+        llmCalls, // Include LLM token usage if available
         routeDecision
           ? {
               eligibleCarriers: routeDecision.eligibleCarriers,

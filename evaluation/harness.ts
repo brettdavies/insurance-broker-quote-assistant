@@ -31,6 +31,25 @@ async function main() {
   const apiBaseUrl = process.env.EVALUATION_API_URL || 'http://localhost:7070/api'
   console.log(`📡 API Base URL: ${apiBaseUrl}`)
 
+  // Check if LLM is enabled (default: enabled, use TEST_TARGETS=mock to disable)
+  const testTargets = process.env.TEST_TARGETS?.split(',').map((t) => t.trim()) || []
+  const useRealLLM = !testTargets.includes('mock') || testTargets.includes('real-api')
+  if (useRealLLM) {
+    console.log('✅ LLM enabled (real Gemini API)')
+    // Show API key status (empty = free tier)
+    const apiKeyStatus =
+      process.env.GEMINI_API_KEY === ''
+        ? 'free tier (no API key)'
+        : process.env.GEMINI_API_KEY
+          ? 'using API key'
+          : 'free tier (no API key)'
+    console.log(`   Gemini API: ${apiKeyStatus}`)
+    console.log("   Note: Make sure API server is running with GEMINI_API_KEY='' to use free tier")
+  } else {
+    console.log('⚠️  LLM disabled (using mock provider)')
+    console.log('   Set TEST_TARGETS=real-api to enable LLM for evaluations')
+  }
+
   try {
     // Load test cases
     const testCases = await loadTestCases()

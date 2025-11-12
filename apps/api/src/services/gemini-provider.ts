@@ -366,10 +366,11 @@ Extract the information accurately and completely according to the provided sche
   async extractWithStructuredOutput(
     message: string,
     conversationHistory?: string[],
-    schema: ZodSchema = userProfileSchema
+    schema: ZodSchema = userProfileSchema,
+    partialFields?: Partial<UserProfile>
   ): Promise<ExtractionResult> {
     // Build conversation prompt
-    const prompt = this.buildPrompt(message, conversationHistory)
+    const prompt = this.buildPrompt(message, conversationHistory, partialFields)
 
     // Convert Zod schema to JSON Schema
     // Note: Gemini requires minimum instead of exclusiveMinimum for positive numbers
@@ -471,20 +472,56 @@ Extract the information accurately and completely according to the provided sche
   /**
    * Build conversation prompt from message and history
    */
-  private buildPrompt(message: string, conversationHistory?: string[]): string {
-    let prompt = 'Extract insurance shopper information from the following conversation.\n\n'
+  private buildPrompt(
+    message: string,
+    conversationHistory?: string[],
+    partialFields?: Partial<UserProfile>
+  ): string {
+    let prompt =
+      'Extract insurance shopper information from broker notes taken during a conversation with a prospect.\n'
+    prompt +=
+      'These notes are informal, may contain incomplete thoughts, fragments, abbreviations, and random facts.\n'
+    prompt +=
+      'They were written by the broker, not the prospect, so they may not be full sentences or paragraphs.\n\n'
+
+    // Include partial fields from pills/key-value extraction as context
+    if (partialFields && Object.keys(partialFields).length > 0) {
+      prompt += 'Already extracted fields (from structured pills/key-value pairs):\n'
+      for (const [key, value] of Object.entries(partialFields)) {
+        if (value !== undefined && value !== null) {
+          prompt += `- ${key}: ${JSON.stringify(value)}\n`
+        }
+      }
+      prompt +=
+        '\nUse these as context, but still extract any additional fields mentioned in the notes below.\n\n'
+    }
 
     if (conversationHistory && conversationHistory.length > 0) {
-      prompt += 'Previous conversation:\n'
+      prompt += 'Previous notes:\n'
       for (const historyMessage of conversationHistory) {
         prompt += `- ${historyMessage}\n`
       }
       prompt += '\n'
     }
 
-    prompt += `Current message: ${message}\n\n`
+    prompt += `Current notes: ${message}\n\n`
+    prompt += 'Extract all mentioned fields from these notes. Look for:\n'
     prompt +=
-      'Extract all mentioned fields. Return only the fields that are clearly mentioned. Leave fields undefined if not mentioned or uncertain.'
+      '- householdSize: number of people in household (may be mentioned as "2 drivers", "lives alone", "family of 4", etc.)\n'
+    prompt +=
+      '- ownsHome: boolean indicating home ownership (may be mentioned as "owns home", "homeowner", "rents", "renting", etc.)\n'
+    prompt +=
+      '- zip: zip code (may be mentioned as "zip 90210", "90210", "zip code is 90210", etc.)\n'
+    prompt += '- age: age in years\n'
+    prompt +=
+      '- state: US state code (may be full name like "California" or abbreviation like "CA")\n'
+    prompt += '- productType: insurance product type (auto, home, renters, umbrella)\n'
+    prompt += '- vehicles: number of vehicles (for auto insurance)\n'
+    prompt += '- drivers: number of drivers (for auto insurance)\n'
+    prompt +=
+      '- cleanRecord3Yr: clean driving record (may be mentioned as "clean record", "no accidents", "good driving", etc.)\n'
+    prompt +=
+      'Return only the fields that are clearly mentioned or can be inferred. Leave fields undefined if not mentioned or uncertain.'
 
     return prompt
   }

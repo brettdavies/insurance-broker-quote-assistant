@@ -146,5 +146,22 @@ export {
   type PropertyType,
 } from './schemas/shared-enums'
 
+// Export field normalization utilities
+export {
+  STATE_NAME_TO_CODE,
+  normalizeState,
+  extractStateFromText,
+  extractDrivers,
+  extractKids,
+  extractHouseholdSize,
+  extractOwnsHome,
+  extractZip,
+  extractAge,
+  extractNormalizedFields,
+  inferHouseholdSize,
+  normalizedFieldToKeyValue,
+  type NormalizedField,
+} from './utils/field-normalizer'
+
 // Export test utilities (for use in test files only)
 export * from './test-utils'

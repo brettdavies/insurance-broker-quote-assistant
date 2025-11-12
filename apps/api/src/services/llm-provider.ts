@@ -36,12 +36,14 @@ export interface LLMProvider {
    * @param message - Current broker message
    * @param conversationHistory - Optional array of previous messages
    * @param schema - Zod schema to convert to JSON Schema for structured output
+   * @param partialFields - Optional partial fields already extracted (e.g., from pills) to provide as context
    * @returns Extraction result with profile, confidence scores, and optional reasoning
    */
   extractWithStructuredOutput(
     message: string,
     conversationHistory?: string[],
-    schema?: unknown // Zod schema type
+    schema?: unknown, // Zod schema type
+    partialFields?: Partial<UserProfile> // Partial fields from pills/key-value extraction
   ): Promise<ExtractionResult>
 
   /**

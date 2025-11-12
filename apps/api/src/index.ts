@@ -1,5 +1,6 @@
 import type { PrefillPacket, RouteDecision, UserProfile } from '@repo/shared'
 import { prefillPacketSchema, userProfileSchema } from '@repo/shared'
+import { createMockLLMProvider } from '@repo/shared'
 import { Hono } from 'hono'
 import { cors } from 'hono/cors'
 import { z } from 'zod'
@@ -24,6 +25,7 @@ import {
   getCarriersForState,
   getStateByCode,
 } from './services/knowledge-pack-rag'
+import type { LLMProvider } from './services/llm-provider'
 import { generatePrefillPacket, getMissingFields } from './services/prefill-generator'
 import { routeToCarrier } from './services/routing-engine'
 import { createDecisionTrace, logDecisionTrace } from './utils/decision-trace'
@@ -49,11 +51,27 @@ app.use('*', errorHandler)
 const PORT = config.apiPort
 
 // Initialize LLM provider and extractor
-const llmProvider = new GeminiProvider(
-  config.geminiApiKey || undefined, // Empty string becomes undefined
-  config.geminiModel,
-  config.llmTimeoutMs
-)
+// Support TEST_TARGETS env var to enable/disable real LLM (similar to test strategy)
+// Default: use real Gemini API (free tier works without API key)
+// Set TEST_TARGETS=mock to use mock provider (for testing without API calls)
+// Set TEST_TARGETS=real-api or leave unset to use real Gemini API
+const testTargets = process.env.TEST_TARGETS?.split(',').map((t) => t.trim()) || []
+const useRealLLM = !testTargets.includes('mock') || testTargets.includes('real-api')
+
+let llmProvider: LLMProvider
+if (useRealLLM) {
+  llmProvider = new GeminiProvider(
+    config.geminiApiKey || undefined, // Empty string becomes undefined
+    config.geminiModel,
+    config.llmTimeoutMs
+  )
+  console.log('✅ Using real Gemini API (LLM enabled)')
+} else {
+  // Use mock provider for testing (when TEST_TARGETS=mock)
+  llmProvider = createMockLLMProvider()
+  console.log('⚠️  Using mock LLM provider (TEST_TARGETS=mock)')
+}
+
 const conversationalExtractor = new ConversationalExtractor(llmProvider)
 
 // Initialize knowledge pack loading on startup (non-blocking)

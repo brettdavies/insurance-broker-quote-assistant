@@ -334,7 +334,7 @@ ${JSON.stringify(sample.trace, null, 2)}
 
   const testCaseDetails = testResults
     .map((result) => {
-      const status = result.passed ? '✅ Pass' : '❌ Fail'
+      const status = result.passed ? '✅ Pass  ' : '❌ Fail  '
       const resultMetrics = result.metrics
       const metricsSection = resultMetrics
         ? `
@@ -342,7 +342,7 @@ ${JSON.stringify(sample.trace, null, 2)}
 - Routing Accuracy: ${formatPercentage(resultMetrics.routingAccuracy || 0)}
 - Intake Completeness: ${formatPercentage(resultMetrics.intakeCompleteness || 0)}
 - Pitch Clarity: ${formatPercentage(resultMetrics.pitchClarity || 0)}
-- Compliance: ${resultMetrics.compliancePassed ? '✅ Pass' : '❌ Fail'}`
+- Compliance: ${resultMetrics.compliancePassed ? '✅ Pass  ' : '❌ Fail  '}`
         : ''
 
       const errorSection = result.error ? `\n**Error:** ${result.error}` : ''

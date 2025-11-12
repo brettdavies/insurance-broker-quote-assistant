@@ -3,6 +3,7 @@ import { mkdir, rm, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import { createTestCarrier, createTestState } from '../../__tests__/fixtures/knowledge-pack'
 import {
+  getAllCarriers,
   getCarrier,
   getLoadingStatus,
   getState,
@@ -314,7 +315,6 @@ describe('Knowledge Pack Loader', () => {
       expect(directCarrier?.name).toBe('TestCarrier')
 
       // Verify that only TestCarrier exists in the Maps (no pollution from other tests)
-      const { getAllCarriers } = await import('../knowledge-pack-loader')
       const allCarriers = getAllCarriers()
       expect(allCarriers).toHaveLength(1)
       expect(allCarriers[0]?.name).toBe('TestCarrier')

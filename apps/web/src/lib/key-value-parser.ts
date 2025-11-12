@@ -13,6 +13,7 @@ import {
   MULTI_WORD_FIELDS,
   NUMERIC_FIELDS,
 } from '@/config/shortcuts'
+import { type NormalizedField, extractNormalizedFields, inferHouseholdSize } from '@repo/shared'
 
 export type ValidationResult = 'valid' | 'invalid_key' | 'invalid_value'
 
@@ -55,6 +56,7 @@ const FIELD_ALIASES: Record<string, string> = (() => {
 
 /**
  * Parse key-value syntax from text
+ * Also includes natural language normalization (e.g., "2 drivers" → householdSize:2)
  *
  * @param text - Text containing key-value pairs (e.g., "Client needs auto, k:2 v:3")
  * @param validKeys - Optional set of valid keys (if not provided, uses all known aliases)
@@ -63,6 +65,60 @@ const FIELD_ALIASES: Record<string, string> = (() => {
 export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): ParsedKeyValue[] {
   const results: ParsedKeyValue[] = []
   const knownKeys = validKeys || new Set(Object.keys(FIELD_ALIASES))
+
+  const processedRanges: Array<{ start: number; end: number }> = []
+
+  // Step 1: Extract normalized fields from natural language patterns
+  // This runs before key-value parsing so normalized fields can be converted to pills
+  // Extract direct fields: "2 drivers" → drivers: 2, "2 kids" → kids: 2, etc.
+  const extractedFieldsMap = new Map<string, NormalizedField>()
+
+  try {
+    const normalizedFields = extractNormalizedFields(text)
+
+    // Convert normalized fields to parsed key-value format
+    for (const field of normalizedFields) {
+      // Check if field is in known keys
+      if (knownKeys.has(field.fieldName)) {
+        const key = field.fieldName
+        const value = String(field.value)
+
+        results.push({
+          key,
+          value,
+          original: field.originalText,
+          validation: 'valid',
+          fieldName: field.fieldName,
+        })
+
+        // Store in map for inference
+        extractedFieldsMap.set(field.fieldName, field)
+
+        // Track processed range to avoid duplicate extraction
+        processedRanges.push({ start: field.startIndex, end: field.endIndex })
+      }
+    }
+
+    // Step 2: Infer householdSize from indicator fields if not explicitly set
+    // This ensures "2 drivers" creates drivers: 2 pill, and optionally infers householdSize: 2
+    const inferredHouseholdSize = inferHouseholdSize(extractedFieldsMap)
+    if (inferredHouseholdSize && knownKeys.has('householdSize')) {
+      // Only add inferred householdSize if it wasn't already extracted explicitly
+      if (!extractedFieldsMap.has('householdSize')) {
+        results.push({
+          key: 'householdSize',
+          value: String(inferredHouseholdSize.value),
+          original: inferredHouseholdSize.originalText,
+          validation: 'valid',
+          fieldName: 'householdSize',
+        })
+      }
+    }
+  } catch (error) {
+    // If normalization fails, skip it (graceful degradation)
+    // This can happen if shared package isn't available or normalization logic has issues
+    console.warn('Field normalization failed:', error)
+  }
 
   // Regex patterns: matches key:value
   // Case-insensitive matching
@@ -80,8 +136,6 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
   const zipPattern = /(\w+):([\d\-]+)(?=\s|,|\.|$)/gi
   // 5. Other fields (default) - stop at space, comma, period, or end
   const otherPattern = /(\w+):([^\s:,\.]+)(?=\s|,|\.|$)/gi
-
-  const processedRanges: Array<{ start: number; end: number }> = []
 
   // Helper function to check if a range was already processed
   const isAlreadyProcessed = (start: number, end: number): boolean => {
