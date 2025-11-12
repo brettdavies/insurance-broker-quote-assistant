@@ -16,6 +16,7 @@
     "format": "biome format --write . && prettier --write '**/*.{tsx,jsx}'",
     "format:check": "biome format . && prettier --check '**/*.{tsx,jsx}'",
     "validate-knowledge-pack": "bun run scripts/validate-knowledge-pack.ts",
+    "evaluate": "bun run evaluation/harness.ts",
     "prepare": "husky"
   },
   "dependencies": {

@@ -1,0 +1,42 @@
+{
+  "id": "conv-01",
+  "name": "Complete Data Extraction - CA Auto GEICO",
+  "description": "Test case with all fields present - complete data extraction scenario",
+  "type": "conversational",
+  "carrier": "GEICO",
+  "state": "CA",
+  "product": "auto",
+  "input": "Hi, I'm looking for auto insurance in California. I'm 35 years old, have 2 vehicles, 2 drivers in my household, clean driving record for the past 5 years, and I own my home. My zip code is 90210.",
+  "expectedProfile": {
+    "state": "CA",
+    "productType": "auto",
+    "age": 35,
+    "vehicles": 2,
+    "drivers": 2,
+    "householdSize": 2,
+    "ownsHome": true,
+    "cleanRecord3Yr": true,
+    "zip": "90210"
+  },
+  "expectedRoute": {
+    "primaryCarrier": "GEICO",
+    "eligibleCarriers": ["GEICO", "Progressive", "State Farm"],
+    "confidence": 0.9,
+    "rationale": "GEICO is eligible for auto insurance in California and matches all eligibility criteria."
+  },
+  "expectedOpportunities": [
+    {
+      "discount": "Multi-Policy Bundle",
+      "percentage": 15,
+      "annualSavings": 300,
+      "requires": ["ownsHome", "existingPolicies"]
+    },
+    {
+      "discount": "Safe Driver",
+      "percentage": 10,
+      "annualSavings": 150,
+      "requires": ["cleanRecord3Yr"]
+    }
+  ]
+}
+

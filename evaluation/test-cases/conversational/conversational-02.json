@@ -1,0 +1,34 @@
+{
+  "id": "conv-02",
+  "name": "Missing Critical Fields - TX Home Progressive",
+  "description": "Test case with missing state and product fields - tests LLM's ability to extract from context",
+  "type": "conversational",
+  "carrier": "Progressive",
+  "state": "TX",
+  "product": "home",
+  "input": "I need homeowners insurance. I live in Texas, have a 3 bedroom house built in 2010, 2000 square feet, and I'm 42 years old.",
+  "expectedProfile": {
+    "state": "TX",
+    "productType": "home",
+    "age": 42,
+    "yearBuilt": 2010,
+    "squareFeet": 2000,
+    "propertyType": "single_family"
+  },
+  "expectedRoute": {
+    "primaryCarrier": "Progressive",
+    "eligibleCarriers": ["Progressive", "GEICO", "State Farm"],
+    "confidence": 0.85,
+    "rationale": "Progressive offers home insurance in Texas and matches eligibility criteria."
+  },
+  "expectedOpportunities": [
+    {
+      "discount": "Home Safety Features",
+      "percentage": 5,
+      "annualSavings": 100,
+      "requires": ["homeSafetyFeatures"]
+    }
+  ],
+  "missingFields": ["state", "productType"]
+}
+

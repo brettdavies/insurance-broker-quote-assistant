@@ -1,0 +1,32 @@
+{
+  "id": "conv-04",
+  "name": "Ambiguous Product Mention - NY Auto GEICO",
+  "description": "Edge case with ambiguous product mention - tests LLM's ability to disambiguate",
+  "type": "conversational",
+  "carrier": "GEICO",
+  "state": "NY",
+  "product": "auto",
+  "input": "I need coverage for my car in New York. I drive a 2020 Honda Accord, have a clean record, and I'm 32.",
+  "expectedProfile": {
+    "state": "NY",
+    "productType": "auto",
+    "age": 32,
+    "vehicles": 1,
+    "cleanRecord3Yr": true
+  },
+  "expectedRoute": {
+    "primaryCarrier": "GEICO",
+    "eligibleCarriers": ["GEICO", "Progressive", "State Farm"],
+    "confidence": 0.87,
+    "rationale": "GEICO offers auto insurance in New York and matches eligibility criteria."
+  },
+  "expectedOpportunities": [
+    {
+      "discount": "Safe Driver",
+      "percentage": 10,
+      "annualSavings": 120,
+      "requires": ["cleanRecord3Yr"]
+    }
+  ]
+}
+

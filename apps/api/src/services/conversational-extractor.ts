@@ -2,6 +2,7 @@ import type { PolicySummary, UserProfile } from '@repo/shared'
 import { policySummarySchema, userProfileSchema } from '@repo/shared'
 import { hasKeyValueSyntax, parseKeyValueSyntax } from '../utils/key-value-parser'
 import { logError } from '../utils/logger'
+import { extractStateFromText } from '../utils/state-normalizer'
 import type { LLMProvider } from './llm-provider'
 
 /**
@@ -38,7 +39,15 @@ export class ConversationalExtractor {
         const kvResult = parseKeyValueSyntax(message)
 
         // Validate extracted profile against schema
-        const validatedProfile = this.validateProfile(kvResult.profile)
+        let validatedProfile = this.validateProfile(kvResult.profile)
+
+        // Apply deterministic state normalization if state is missing
+        if (!validatedProfile.state) {
+          const extractedState = extractStateFromText(message)
+          if (extractedState) {
+            validatedProfile = { ...validatedProfile, state: extractedState }
+          }
+        }
 
         // Calculate missing fields
         const missingFields = this.calculateMissingFields(validatedProfile)
@@ -59,7 +68,16 @@ export class ConversationalExtractor {
       )
 
       // Validate extracted profile against schema
-      const validatedProfile = this.validateProfile(llmResult.profile)
+      let validatedProfile = this.validateProfile(llmResult.profile)
+
+      // Step 3: Apply deterministic state normalization if state is missing
+      // This handles cases where LLM didn't extract state or isn't available
+      if (!validatedProfile.state) {
+        const extractedState = extractStateFromText(message)
+        if (extractedState) {
+          validatedProfile = { ...validatedProfile, state: extractedState }
+        }
+      }
 
       // Calculate missing fields
       const missingFields = this.calculateMissingFields(validatedProfile)

@@ -1,0 +1,43 @@
+{
+  "id": "conv-09",
+  "name": "Umbrella Product Routing - NY Umbrella GEICO",
+  "description": "Test case for umbrella insurance product routing",
+  "type": "conversational",
+  "carrier": "GEICO",
+  "state": "NY",
+  "product": "umbrella",
+  "input": "I'm looking for umbrella insurance in New York. I already have auto and home insurance with GEICO, and I want additional liability coverage. I'm 50 years old and own a home.",
+  "expectedProfile": {
+    "state": "NY",
+    "productType": "umbrella",
+    "age": 50,
+    "ownsHome": true,
+    "existingPolicies": [
+      {
+        "product": "auto",
+        "carrier": "GEICO",
+        "premium": 1200
+      },
+      {
+        "product": "home",
+        "carrier": "GEICO",
+        "premium": 800
+      }
+    ]
+  },
+  "expectedRoute": {
+    "primaryCarrier": "GEICO",
+    "eligibleCarriers": ["GEICO", "State Farm"],
+    "confidence": 0.91,
+    "rationale": "GEICO offers umbrella insurance in New York and customer already has auto and home policies with GEICO."
+  },
+  "expectedOpportunities": [
+    {
+      "discount": "Multi-Policy Bundle",
+      "percentage": 10,
+      "annualSavings": 200,
+      "requires": ["existingPolicies", "existingPolicies.length >= 2"]
+    }
+  ]
+}
+

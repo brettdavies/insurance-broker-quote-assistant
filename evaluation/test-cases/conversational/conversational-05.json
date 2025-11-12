@@ -1,0 +1,47 @@
+{
+  "id": "conv-05",
+  "name": "Multi-Product Inquiry - IL Auto+Home State Farm",
+  "description": "Test case for multi-product bundle inquiry - tests bundle opportunity detection",
+  "type": "conversational",
+  "carrier": "State Farm",
+  "state": "IL",
+  "product": ["auto", "home"],
+  "input": "I'm looking to bundle my auto and home insurance in Illinois. I have a 2018 Toyota Camry and own a house built in 2015. I'm 40 years old, have 2 vehicles total, and a clean driving record.",
+  "expectedProfile": {
+    "state": "IL",
+    "productType": "auto",
+    "age": 40,
+    "vehicles": 2,
+    "ownsHome": true,
+    "yearBuilt": 2015,
+    "cleanRecord3Yr": true,
+    "existingPolicies": [
+      {
+        "product": "home",
+        "carrier": "State Farm",
+        "premium": 800
+      }
+    ]
+  },
+  "expectedRoute": {
+    "primaryCarrier": "State Farm",
+    "eligibleCarriers": ["State Farm", "GEICO", "Progressive"],
+    "confidence": 0.92,
+    "rationale": "State Farm offers both auto and home insurance in Illinois and provides bundle discounts."
+  },
+  "expectedOpportunities": [
+    {
+      "discount": "Multi-Policy Bundle",
+      "percentage": 20,
+      "annualSavings": 400,
+      "requires": ["ownsHome", "existingPolicies"]
+    },
+    {
+      "discount": "Safe Driver",
+      "percentage": 10,
+      "annualSavings": 150,
+      "requires": ["cleanRecord3Yr"]
+    }
+  ]
+}
+
