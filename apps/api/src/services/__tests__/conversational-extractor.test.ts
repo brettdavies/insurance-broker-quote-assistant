@@ -1,20 +1,24 @@
 import { beforeEach, describe, expect, it, mock } from 'bun:test'
 import { ConversationalExtractor } from '../conversational-extractor'
 import type { ExtractionResult as LLMExtractionResult, LLMProvider } from '../llm-provider'
+import { createMockLLMProvider } from '@repo/shared/test-utils'
 
 describe('ConversationalExtractor', () => {
   let mockLLMProvider: LLMProvider
   let extractor: ConversationalExtractor
 
   beforeEach(() => {
-    // Create mock LLM provider
+    // Create mock LLM provider with spyable mock function
+    const mockExtract = mock(async () => ({
+      profile: {},
+      confidence: {},
+      reasoning: 'Mock LLM extraction',
+    }))
+    
     mockLLMProvider = {
-      extractWithStructuredOutput: mock(async () => ({
-        profile: {},
-        confidence: {},
-        reasoning: 'Mock LLM extraction',
-      })),
-    } as unknown as LLMProvider
+      ...createMockLLMProvider(),
+      extractWithStructuredOutput: mockExtract,
+    } as LLMProvider
 
     extractor = new ConversationalExtractor(mockLLMProvider)
   })
