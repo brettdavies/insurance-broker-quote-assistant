@@ -21,6 +21,7 @@
 **Acceptance Criteria:**
 
 1. Create 15 synthetic test cases in `evaluation/test-cases/`: 10 conversational intake, 5 policy analysis
+   - Note: Policy analysis test cases should validate both LLM identification (Story 2.2) and deterministic validation (Story 2.3)
 2. Test cases cover all 3 carriers, 5 states, 4 product types with varied scenarios (complete data, missing fields, edge cases)
 3. Command `bun run evaluate` executes all test cases and generates report
 4. Report includes: routing accuracy %, intake completeness %, savings pitch clarity scores, compliance pass/fail
@@ -40,7 +41,7 @@
 **Acceptance Criteria:**
 
 1. Every API call logs structured decision trace to `logs/decisions/` directory
-2. Trace includes: timestamp, interaction ID, inputs received, knowledge pack sections queried, rules evaluated, LLM calls (if any), outputs generated
+2. Trace includes: timestamp, interaction ID, inputs received, knowledge pack sections queried, rules evaluated, LLM calls (if any), validation results (for policy analysis flow), outputs generated
 3. All PII redacted from logs (names/addresses replaced with placeholder IDs)
 4. Citations include knowledge pack file paths and cuid2 IDs for recommendations
 5. Offline operation proof: logs show zero external API calls except Gemini API (knowledge pack queries logged as in-memory cache hits)

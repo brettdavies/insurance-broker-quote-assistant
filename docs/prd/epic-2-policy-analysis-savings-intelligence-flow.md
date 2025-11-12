@@ -10,8 +10,10 @@
 4. PolicySummary is converted to key-value text format and displayed in editor
 5. Broker reviews and edits the extracted text
 6. When ready, broker triggers analysis (sends edited text to backend)
-7. Backend analyzes policy against knowledge pack and returns savings opportunities
-8. Broker views savings pitch dashboard and can export/copy results
+7. Backend analyzes policy against knowledge pack (LLM-powered identification via Policy Analysis Agent)
+8. Backend validates identified opportunities against knowledge pack rules (deterministic validation via Discount Rules Validator)
+9. Backend generates savings pitch from validated opportunities
+10. Broker views savings pitch dashboard and can export/copy results
 
 ## Implementation Notes
 
@@ -22,6 +24,13 @@
 - Endpoints are created via factory functions (e.g., `createIntakeRoute()`) and mounted at root level
 - Services follow three-layer pattern: Routes → Services → Data layer (knowledge pack RAG)
 - Decision trace logging integrated into all flows via `createDecisionTrace()` and `logDecisionTrace()`
+
+**Hybrid LLM + Validation Pattern:**
+
+- Policy Analysis Agent (Story 2.2) uses LLM to identify opportunities (non-deterministic)
+- Discount Rules Validator (Story 2.3) validates LLM-identified opportunities against knowledge pack rules (deterministic)
+- This two-layer approach ensures accuracy: LLM provides intelligent identification, validator ensures compliance
+- Flow sequence: Policy Analysis Agent → Discount Rules Validator → Pitch Generator → Compliance Filter
 
 ## Story 2.1: Policy Upload & PDF Parsing
 
@@ -61,6 +70,7 @@
 5. Suggests bundle opportunities if only single product (e.g., "Client has home but no auto quote")
 6. Evaluates deductible/limit trade-offs (e.g., "Raising deductible $500→$1000 saves $200/yr")
 7. Returns structured JSON with savings opportunities ranked by impact
+   - Note: Returns raw `Opportunity[]` (not validated) - validation happens in Story 2.3
 8. All recommendations cite specific knowledge pack sections (cuid2-based citations)
 9. Token usage logged for each analysis
 10. Savings pitch clarity ≥85% validated in evaluation harness
@@ -74,7 +84,7 @@
 
 **Acceptance Criteria:**
 
-1. Cross-references identified discounts against knowledge pack eligibility rules
+1. Cross-references identified discounts (from Story 2.2 Policy Analysis Agent) against knowledge pack eligibility rules
 2. Validates discount stacking rules (which discounts can combine)
 3. Calculates accurate savings estimates based on knowledge pack pricing data
 4. Flags discounts requiring additional documentation (e.g., good student requires transcript)

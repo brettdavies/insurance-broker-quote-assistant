@@ -87,77 +87,143 @@ sequenceDiagram
 
 **Key Architectural Decisions:**
 
-- **5-step sequential pipeline:** Parse → Route → Discounts (includes bundle analysis) → Pitch → Compliance
-- **Bundle analysis workflow:** Two invocations of the same Discount Engine component (Section 6.4):
-  - **First call:** `findDiscounts()` identifies missing discounts on current policy
-  - **Second call:** `analyzeBundleOptions()` identifies additional products for bundle discounts
-  - Both functions are methods of the same Discount Engine, not separate components
-- **Reuses routing/discount engines:** Same deterministic logic as conversational intake (code reuse)
+- **7-step sequential pipeline:** PolicySummary (pre-parsed) → Policy Analysis Agent (LLM) → Bundle Analyzer (deterministic) → Discount Rules Validator → Pitch → Compliance → Decision Trace
+- **Policy parsing separation:** Policy parsing happens in `/api/policy/upload` endpoint (Story 2.1), not in analyze flow. Analyze endpoint receives pre-parsed `PolicySummary` as source of truth.
+- **LLM-based opportunity identification:** Policy Analysis Agent uses LLM (Gemini 2.5 Flash-Lite) to identify opportunities from policy data + knowledge pack context, not deterministic discount engine calls
+- **Dual bundle analysis approach:** 
+  - **LLM identification:** Policy Analysis Agent identifies bundle options via LLM analysis
+  - **Deterministic validation:** Bundle Analyzer (`analyzeBundleOptions()`) runs separately using deterministic rules
+  - **Merge and deduplicate:** Results from both sources are merged, keeping highest estimated savings per product
+- **Validation layer (Story 2.3):** Discount Rules Validator validates LLM-identified opportunities before pitch generation:
+  - Validates stacking rules (which discounts can combine)
+  - Re-validates eligibility using Discount Engine evaluators
+  - Validates savings calculations
+  - Calculates confidence scores based on data completeness
+  - Flags discounts requiring additional documentation
 - **Three opportunity types:** Missing discounts, bundle options, deductible trade-offs (comprehensive savings analysis per spec)
-- **No new carrier routing:** Analyzes current carrier only (scope limitation for 5-day timeline)
+- **No carrier routing:** Analyzes current carrier only (scope limitation for 5-day timeline)
+- **Decision trace logging:** All analysis steps logged to `logs/compliance.log` for audit trail and debugging
 
 ```mermaid
 sequenceDiagram
     participant User
     participant Frontend
     participant API
-    participant Extractor
-    participant Discount
-    participant Pitch
-    participant Compliance
-    participant OpenAI
-    participant KnowledgePack
+    participant PAA as Policy Analysis Agent<br/>(LLM-based)
+    participant BA as Bundle Analyzer<br/>(Deterministic)
+    participant DRV as Discount Rules Validator<br/>(Deterministic)
+    participant PG as Pitch Generator<br/>(LLM-based)
+    participant CF as Compliance Filter<br/>(Deterministic)
+    participant LLM as External LLM Provider<br/>(Gemini 2.5 Flash-Lite)
+    participant KP as Knowledge Pack<br/>(Data Layer)
+    participant DE as Discount Engine<br/>(Deterministic)
 
     User->>Frontend: Upload/paste existing policy
-    Frontend->>API: POST /api/policy/analyze { policy_text }
+    Note over Frontend: Policy parsing happens<br/>in /api/policy/upload<br/>(Story 2.1)
+    Frontend->>API: POST /api/policy/analyze<br/>{ policySummary, policyText? }
 
-    API->>Extractor: extractPolicy(policy_text)
-    Extractor->>OpenAI: GPT-4o-mini parse policy
-    OpenAI-->>Extractor: { carrier: "GEICO", premium: 1200, ... }
-    Extractor-->>API: PolicySummary
+    Note over API: Step 1: PolicySummary already provided<br/>(parsing done in upload endpoint)
+    API->>KP: getCarrierByName(carrier)
+    KP-->>API: Carrier data
 
-    API->>Discount: findDiscounts(current_policy)
-    Discount->>KnowledgePack: retrieveDiscounts(carrier, state)
-    KnowledgePack-->>Discount: Available discounts
-    Discount->>Discount: Compare current vs available
-    Discount-->>API: Missing discounts as opportunities
+    Note over API: Step 2: Policy Analysis Agent (LLM)
+    API->>PAA: analyzePolicy(policySummary, policyText)
+    PAA->>KP: getCarrierByName(carrier)
+    KP-->>PAA: Carrier data with discounts
+    PAA->>KP: getCarrierDiscounts(carrier, state, product)
+    KP-->>PAA: Available discounts with citations
+    
+    PAA->>PAA: buildAnalysisPrompt(policy, discounts, bundleRules)
+    PAA->>LLM: extractWithStructuredOutput()<br/>Identify opportunities from policy + KP context
+    Note right of LLM: LLM identifies opportunities<br/>Returns JSON with citations<br/>⚠️ NON-DETERMINISTIC
+    LLM-->>PAA: { opportunities, bundleOptions, deductibleOptimizations }
+    PAA->>PAA: normalizeCitations() - adds file paths
+    PAA-->>API: Raw Opportunity[] (not validated)
 
-    API->>Discount: analyzeBundleOptions(current_policy)
-    Discount->>KnowledgePack: getCarrier(carrier)
-    KnowledgePack-->>Discount: Carrier products and bundle discounts
-    Discount-->>API: [BundleOption: add home for 15% off]
+    Note over API: Step 3: Bundle Analyzer (Deterministic)
+    API->>BA: analyzeBundleOptions(carrier, policySummary)
+    BA->>KP: getCarrier(carrier)
+    KP-->>BA: Carrier products and bundle discounts
+    BA->>DE: Evaluate bundle eligibility
+    DE-->>BA: Bundle eligibility results
+    BA-->>API: [BundleOption: add home for 15% off]
 
-    API->>Pitch: generate(opportunities, bundles, profile)
-    Pitch->>OpenAI: GPT-4o with savings context
-    OpenAI-->>Pitch: "Here are 3 ways to save..."
-    Pitch-->>API: Agent talking points
+    Note over API: Merge LLM + deterministic bundle options<br/>(deduplicate by product, keep highest savings)
 
-    API->>Compliance: validate(pitch)
-    Compliance-->>API: { valid: true, output }
+    Note over API: Step 4: Discount Rules Validator (Deterministic)
+    API->>DRV: validateOpportunities(opportunities, policy, carrier)
+    Note right of DRV: ✅ DETERMINISTIC<br/>No LLM calls
+    
+    DRV->>DRV: validateStacking(opportunities, carrier)
+    
+    loop For each opportunity
+        DRV->>KP: getDiscountById(citation.id)
+        KP-->>DRV: Discount object with requirements
+        DRV->>DE: getDiscountEvaluator(discount)
+        DE-->>DRV: Evaluator instance
+        DRV->>DE: evaluator.evaluateEligibility()
+        DE-->>DRV: { eligible, missingRequirements }
+        DRV->>DE: evaluator.calculateSavings()
+        DE-->>DRV: { annualSavings, explanation }
+        DRV->>DRV: calculateConfidenceScore()
+    end
+    
+    DRV-->>API: ValidatedOpportunity[] with confidence scores
 
-    API-->>Frontend: PolicyAnalysisResult
-    Frontend-->>User: Display savings opportunities
+    Note over API: Step 5: Pitch Generator (LLM)
+    API->>PG: generatePitch(validatedOpportunities, bundles, deductibles, policy)
+    PG->>LLM: extractWithStructuredOutput()<br/>Generate agent-ready talking points
+    Note right of LLM: Creates narrative<br/>Includes "because" rationales<br/>⚠️ NON-DETERMINISTIC
+    LLM-->>PG: Savings pitch (markdown)
+    PG-->>API: Pitch string
+
+    Note over API: Step 6: Compliance Filter (Deterministic)
+    API->>CF: validateOutput(pitch, state, productType)
+    Note right of CF: ✅ DETERMINISTIC<br/>No LLM calls
+    CF->>CF: Check prohibited statements
+    CF->>CF: Inject required disclaimers
+    CF-->>API: { passed: true, output: pitch + disclaimers }
+
+    Note over API: Step 7: Decision Trace
+    API->>API: createDecisionTrace()<br/>Includes validation results, LLM calls, stacking results
+    API->>API: logDecisionTrace() - write to compliance.log
+
+    API-->>Frontend: PolicyAnalysisResult<br/>{ opportunities, bundleOptions, pitch, trace, ... }
+    Frontend-->>User: Display savings dashboard<br/>with confidence scores
 ```
 
 **Why This Sequence:**
 
-1. **Parse policy first:** Extract current carrier, premium, coverage details
-2. **Missing discounts:** Compare what user has vs what they qualify for
-3. **Bundle analysis:** Identify additional products (home, umbrella) that qualify for multi-policy discount
-4. **Pitch generation:** Synthesize all opportunities into agent-ready talking points
-5. **Compliance last:** Ensures savings claims don't violate insurance advertising regulations
+1. **PolicySummary pre-parsed:** Policy parsing happens in upload endpoint (Story 2.1), analyze endpoint receives structured data as source of truth
+2. **LLM opportunity identification:** Policy Analysis Agent uses LLM to identify opportunities from policy context + knowledge pack, enabling nuanced analysis of policy details
+3. **Dual bundle analysis:** Combines LLM insights with deterministic rules for comprehensive bundle opportunity detection
+4. **Validation layer:** Discount Rules Validator ensures LLM-identified opportunities are valid, eligible, and properly calculated before pitch generation
+5. **Pitch generation:** Synthesizes validated opportunities into agent-ready talking points with "because" rationales
+6. **Compliance last:** Ensures savings claims don't violate insurance advertising regulations
+7. **Decision trace:** Logs all analysis steps for audit trail and debugging
 
-**Key Difference from Intake Flow:**
+**Key Differences from Intake Flow:**
 
-- No routing engine (analyzes existing carrier only)
-- Bundle analysis step added (home + auto = 15% discount)
-- Pitch format optimized for "here's how to save" vs "here's a new quote"
+- **No routing engine:** Analyzes existing carrier only (no carrier selection needed)
+- **LLM-based opportunity identification:** Uses Policy Analysis Agent instead of deterministic Discount Engine `findDiscounts()` call
+- **Validation layer added:** Discount Rules Validator validates LLM-identified opportunities (Story 2.3)
+- **Dual bundle analysis:** LLM + deterministic bundle analysis with merge/deduplication
+- **Policy parsing separated:** Parsing happens in upload endpoint, not in analyze flow
+- **Decision trace logging:** Comprehensive logging of all analysis steps
+- **Pitch format:** Optimized for "here's how to save" vs "here's a new quote"
 
-**Bundle Discount Analysis (Non-Standard Implementation):**
+**Bundle Discount Analysis Implementation:**
 
-- **Requires multi-carrier data:** Bundle opportunities depend on `existingPolicies` field in UserProfile tracking which carriers the user currently has for each product
-- **Example:** User has auto with GEICO ($1200) + home with State Farm ($800) → Discount Engine identifies consolidation opportunity: move both to GEICO for 15% multi-policy discount = $300/year savings
-- **Why this matters:** Many users have fragmented coverage across carriers and don't realize consolidation savings potential
+- **Dual approach:** 
+  - Policy Analysis Agent (LLM) identifies bundle opportunities from policy context
+  - Bundle Analyzer (deterministic) identifies bundle opportunities using Discount Engine rules
+  - Results merged and deduplicated by product, keeping highest estimated savings
+- **Deterministic bundle analysis:** Uses `analyzeBundleOptions()` function from Discount Engine to check:
+  - Carrier product availability in state
+  - Bundle discount eligibility rules
+  - Estimated savings calculations
+- **Example:** User has auto with GEICO ($1200) → Both LLM and Bundle Analyzer identify home insurance bundle opportunity → System merges results, shows highest savings estimate
+- **Why this matters:** Combines LLM's ability to infer context with deterministic rules' reliability for comprehensive bundle opportunity detection
 
 ---
 
