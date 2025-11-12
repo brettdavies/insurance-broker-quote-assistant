@@ -9,7 +9,8 @@
 
 import { beforeEach, describe, expect, it, mock, spyOn } from 'bun:test'
 import type { PolicySummary } from '@repo/shared'
-import { buildOpportunity, buildPolicySummary, policyAnalysisResultLLMSchema } from '@repo/shared'
+import { policyAnalysisResultLLMSchema } from '@repo/shared'
+import { buildOpportunity, buildPolicySummary, buildUserProfile } from '@repo/shared/src/test-utils'
 import * as knowledgePackRAG from '../knowledge-pack-rag'
 import type { LLMProvider } from '../llm-provider'
 import { PolicyAnalysisAgent } from '../policy-analysis-agent'

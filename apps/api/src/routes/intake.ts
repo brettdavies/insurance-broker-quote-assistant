@@ -136,7 +136,8 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
       const trace = createDecisionTrace(
         'conversational',
         {
-          message,
+          message, // Cleaned text (pills removed)
+          pills, // Extracted pill data
         },
         {
           method: extractionResult.extractionMethod,
@@ -176,8 +177,8 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
           // Get missing fields with carrier/state-specific requirements
           missingFieldsForResponse = getMissingFields(
             extractionResult.profile,
-            extractionResult.profile.productType,
-            extractionResult.profile.state,
+            extractionResult.profile.productType ?? undefined,
+            extractionResult.profile.state ?? undefined,
             routeDecision.primaryCarrier
           )
           prefillPacket = generatePrefillPacket(
@@ -197,8 +198,8 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
         // If no route decision, still calculate missing fields without carrier-specific requirements
         missingFieldsForResponse = getMissingFields(
           extractionResult.profile,
-          extractionResult.profile.productType,
-          extractionResult.profile.state
+          extractionResult.profile.productType ?? undefined,
+          extractionResult.profile.state ?? undefined
         )
       }
 

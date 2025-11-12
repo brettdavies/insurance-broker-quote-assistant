@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it, mock } from 'bun:test'
-import { createMockLLMProvider } from '@repo/shared'
+import { createMockLLMProvider } from '@repo/shared/src/test-utils'
 import { ConversationalExtractor } from '../conversational-extractor'
 import type { ExtractionResult as LLMExtractionResult, LLMProvider } from '../llm-provider'
 

@@ -167,7 +167,7 @@ function evaluateEligibility(carrier: Carrier, profile: UserProfile): Eligibilit
   // Check age eligibility
   if (eligibility.minAge) {
     const minAge = eligibility.minAge.value
-    if (profile.age === undefined) {
+    if (profile.age === undefined || profile.age === null) {
       missingFields.push('age')
       reasons.push(`Age required (minimum ${minAge})`)
     } else if (profile.age < minAge) {
@@ -177,7 +177,7 @@ function evaluateEligibility(carrier: Carrier, profile: UserProfile): Eligibilit
 
   if (eligibility.maxAge) {
     const maxAge = eligibility.maxAge.value
-    if (profile.age === undefined) {
+    if (profile.age === undefined || profile.age === null) {
       if (!missingFields.includes('age')) {
         missingFields.push('age')
       }
@@ -190,7 +190,7 @@ function evaluateEligibility(carrier: Carrier, profile: UserProfile): Eligibilit
   // Check vehicle limits (auto only)
   if (productType === 'auto' && eligibility.maxVehicles) {
     const maxVehicles = eligibility.maxVehicles.value
-    if (profile.vehicles === undefined) {
+    if (profile.vehicles === undefined || profile.vehicles === null) {
       missingFields.push('vehicles')
       reasons.push(`Vehicle count required (maximum ${maxVehicles})`)
     } else if (profile.vehicles > maxVehicles) {
@@ -201,7 +201,7 @@ function evaluateEligibility(carrier: Carrier, profile: UserProfile): Eligibilit
   // Check credit score minimum
   if (eligibility.minCreditScore) {
     const minCreditScore = eligibility.minCreditScore.value
-    if (profile.creditScore === undefined) {
+    if (profile.creditScore === undefined || profile.creditScore === null) {
       missingFields.push('creditScore')
       reasons.push(`Credit score required (minimum ${minCreditScore})`)
     } else if (profile.creditScore < minCreditScore) {
@@ -215,7 +215,7 @@ function evaluateEligibility(carrier: Carrier, profile: UserProfile): Eligibilit
     eligibility.propertyTypeRestrictions
   ) {
     const allowedTypes = eligibility.propertyTypeRestrictions.value
-    if (profile.propertyType === undefined) {
+    if (profile.propertyType === undefined || profile.propertyType === null) {
       missingFields.push('propertyType')
       reasons.push(`Property type required (allowed: ${allowedTypes.join(', ')})`)
     } else if (!allowedTypes.includes(profile.propertyType)) {

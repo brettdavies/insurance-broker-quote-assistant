@@ -18,9 +18,9 @@ import { userContactSchema } from './user-contact'
  * All fields are optional to prevent forced population that causes hallucinations
  */
 export const existingPolicySchema = z.object({
-  product: productTypeEnum.optional(),
-  carrier: z.string().optional(), // Carrier ID/name matching knowledge pack carrier names
-  premium: z.number().positive().optional(), // Annual premium
+  product: productTypeEnum.nullish(),
+  carrier: z.string().nullish(), // Carrier ID/name matching knowledge pack carrier names
+  premium: z.number().positive().nullish(), // Annual premium
 })
 
 export type ExistingPolicy = z.infer<typeof existingPolicySchema>
@@ -31,43 +31,43 @@ export type ExistingPolicy = z.infer<typeof existingPolicySchema>
  */
 export const userProfileSchema = userContactSchema.extend({
   // Product type
-  productType: productTypeEnum.optional(),
+  productType: productTypeEnum.nullish(),
 
   // Optional demographic fields
-  age: z.number().int().positive().optional(),
-  householdSize: z.number().int().positive().optional(),
-  dependents: z.number().int().nonnegative().optional(),
-  vehicles: z.number().int().nonnegative().optional(), // Required for auto, but optional for progressive disclosure
-  ownsHome: z.boolean().optional(),
+  age: z.number().int().positive().nullish(),
+  householdSize: z.number().int().positive().nullish(),
+  dependents: z.number().int().nonnegative().nullish(),
+  vehicles: z.number().int().nonnegative().nullish(), // Required for auto, but optional for progressive disclosure
+  ownsHome: z.boolean().nullish(),
 
   // Vehicle details (for auto insurance)
-  garage: z.string().optional(), // Garage type
-  vins: z.string().optional(), // Vehicle Identification Numbers (can be multiple, space-separated)
-  drivers: z.number().int().nonnegative().optional(), // Number of drivers
-  drivingRecords: z.string().optional(), // Driving record details
+  garage: z.string().nullish(), // Garage type
+  vins: z.string().nullish(), // Vehicle Identification Numbers (can be multiple, space-separated)
+  drivers: z.number().int().nonnegative().nullish(), // Number of drivers
+  drivingRecords: z.string().nullish(), // Driving record details
 
   // Optional eligibility fields
-  cleanRecord3Yr: z.boolean().optional(), // Clean driving record (3 years)
-  cleanRecord5Yr: z.boolean().optional(), // Clean driving record (5 years)
-  creditScore: z.number().int().min(300).max(850).optional(), // Credit score (FICO range)
-  propertyType: propertyTypeEnum.optional(), // Property type for home/renters insurance
+  cleanRecord3Yr: z.boolean().nullish(), // Clean driving record (3 years)
+  cleanRecord5Yr: z.boolean().nullish(), // Clean driving record (5 years)
+  creditScore: z.number().int().min(300).max(850).nullish(), // Credit score (FICO range)
+  propertyType: propertyTypeEnum.nullish(), // Property type for home/renters insurance
 
   // Property details (for home/renters insurance)
-  yearBuilt: z.number().int().positive().optional(), // Construction year
-  roofType: z.string().optional(),
-  squareFeet: z.number().int().positive().optional(),
+  yearBuilt: z.number().int().positive().nullish(), // Construction year
+  roofType: z.string().nullish(),
+  squareFeet: z.number().int().positive().nullish(),
 
   // Optional current policy fields (for policy analysis flow)
-  currentCarrier: z.string().optional(),
-  premiums: premiumsSchema.optional(), // Current premiums (annual, monthly, semiAnnual)
-  deductibles: z.string().optional(), // Current deductibles
-  limits: z.string().optional(), // Current coverage limits
+  currentCarrier: z.string().nullish(),
+  premiums: premiumsSchema.nullish(), // Current premiums (annual, monthly, semiAnnual)
+  deductibles: z.string().nullish(), // Current deductibles
+  limits: z.string().nullish(), // Current coverage limits
 
   // Existing policies array for bundle discount analysis
-  existingPolicies: z.array(existingPolicySchema).optional(),
+  existingPolicies: z.array(existingPolicySchema).nullish(),
 
   // Legacy field name support (kids -> householdSize)
-  kids: z.number().int().nonnegative().optional(),
+  kids: z.number().int().nonnegative().nullish(),
 })
 
 export type UserProfile = z.infer<typeof userProfileSchema>

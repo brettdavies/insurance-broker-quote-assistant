@@ -10,12 +10,12 @@ import { z } from 'zod'
  */
 
 export const userContactSchema = z.object({
-  name: z.string().optional(), // Full name or first name
-  email: z.string().optional(), // Email address (format validation removed to prevent schema issues)
-  phone: z.string().optional(),
-  zip: z.string().optional(), // Zip code
-  state: z.string().optional(), // US state code
-  address: z.string().optional(), // Street address
+  name: z.string().nullish(), // Full name or first name (nullish = accepts null, undefined, or string)
+  email: z.string().nullish(), // Email address (format validation removed to prevent schema issues)
+  phone: z.string().nullish(),
+  zip: z.string().nullish(), // Zip code
+  state: z.string().nullish(), // US state code
+  address: z.string().nullish(), // Street address
 })
 
 export type UserContact = z.infer<typeof userContactSchema>

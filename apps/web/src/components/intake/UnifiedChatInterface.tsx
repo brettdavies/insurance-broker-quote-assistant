@@ -85,6 +85,14 @@ export function UnifiedChatInterface({
   } | null>(null)
   const editorRef = externalEditorRef || internalEditorRef
 
+  // Expose editor ref to window for evaluation harness
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      ;(window as any).editorRef = editorRef
+      ;(window as any).profile = profile
+    }
+  }, [editorRef, profile])
+
   const { toast } = useToast()
   const intakeMutation = useIntake()
   const debounceTimerRef = useRef<NodeJS.Timeout | null>(null)
@@ -156,7 +164,12 @@ export function UnifiedChatInterface({
       const state = profile.state || latestIntakeResult?.profile?.state
       const productType = profile.productType || latestIntakeResult?.profile?.productType
 
-      const calculated = calculateMissingFields(profile, productType, state, carrier)
+      const calculated = calculateMissingFields(
+        profile,
+        productType ?? undefined,
+        state ?? undefined,
+        carrier
+      )
       // Convert to MissingField format for component
       const fieldMetadata = calculated.map((field) => {
         // Get field display name from FIELD_METADATA

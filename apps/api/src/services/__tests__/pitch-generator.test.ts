@@ -12,7 +12,8 @@ import {
   buildDeductibleOptimization,
   buildOpportunity,
   buildPolicySummary,
-} from '@repo/shared'
+  buildUserProfile,
+} from '@repo/shared/src/test-utils'
 import type { LLMProvider } from '../llm-provider'
 import { PitchGenerator } from '../pitch-generator'
 

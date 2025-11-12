@@ -133,6 +133,16 @@ Extract the information accurately and completely according to the provided sche
 
       // Parse and validate response
       const { data: extractedData } = parseJsonResponse<Partial<UserProfile>>(response)
+
+      // Log raw LLM response BEFORE validation (so we can see what was returned even if validation fails)
+      await logInfo('LLM response (raw, before validation)', {
+        type: 'llm_response',
+        provider: 'gemini',
+        model: this.model,
+        response: extractedData,
+        fileName: file.name,
+      })
+
       const validatedData = validateResponse(extractedData, schema)
       const confidence = calculateConfidence(validatedData)
 
@@ -231,6 +241,15 @@ Extract the information accurately and completely according to the provided sche
 
       // Parse and validate response
       const { data: extractedData } = parseJsonResponse<Partial<UserProfile>>(response)
+
+      // Log raw LLM response BEFORE validation (so we can see what was returned even if validation fails)
+      await logInfo('LLM response (raw, before validation)', {
+        type: 'llm_response',
+        provider: 'gemini',
+        model: this.model,
+        response: extractedData,
+      })
+
       const validatedData = validateResponse(extractedData, schema)
       const confidence = calculateConfidence(validatedData)
 

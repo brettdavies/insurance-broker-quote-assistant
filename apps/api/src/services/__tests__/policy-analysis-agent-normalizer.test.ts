@@ -13,7 +13,8 @@ import {
   buildDeductibleOptimization,
   buildOpportunity,
   buildPolicySummary,
-} from '@repo/shared'
+  buildUserProfile,
+} from '@repo/shared/src/test-utils'
 import * as knowledgePackRAG from '../knowledge-pack-rag'
 import { normalizePolicyAnalysisResult } from '../policy-analysis-agent/normalizer'
 import type { NormalizerInput } from '../policy-analysis-agent/types'

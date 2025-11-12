@@ -260,49 +260,91 @@ async function extractSampleTraces(
       // Try to get trace from API response first
       let trace = extractTrace(result.actualResponse)
 
-      // If trace has a timestamp, try to enrich with prompts from logs
+      // Try to enrich with prompts from logs
+      // First try timestamp matching, then fall back to most recent prompt
+      let matchingPrompt:
+        | {
+            timestamp: string
+            prompt: string
+            systemPrompt?: string
+            userPrompt?: string
+            response?: unknown
+          }
+        | undefined
+
       if (trace?.timestamp) {
         // Find matching prompt (within 5 seconds of trace timestamp)
         const traceTime = new Date(trace.timestamp).getTime()
-        const matchingPrompt = findMatchingPrompt(traceTime, promptsByTimestamp)
+        matchingPrompt = findMatchingPrompt(traceTime, promptsByTimestamp)
+      }
 
-        if (matchingPrompt && trace.llmCalls?.[0]) {
-          // Use separate prompts if available, otherwise split combined prompt
-          let systemPrompt: string
-          let userPrompt: string
+      // If no matching prompt by timestamp, use the most recent prompt
+      if (!matchingPrompt && promptsByTimestamp.size > 0) {
+        const sortedPrompts = Array.from(promptsByTimestamp.entries()).sort((a, b) => b[0] - a[0])
+        const [, latestPrompt] = sortedPrompts[0]
+        matchingPrompt = latestPrompt
+      }
 
-          if (
-            'systemPrompt' in matchingPrompt &&
-            'userPrompt' in matchingPrompt &&
-            matchingPrompt.systemPrompt &&
-            matchingPrompt.userPrompt
-          ) {
-            // Use separate prompts from log entry (new format)
-            systemPrompt = matchingPrompt.systemPrompt as string
-            userPrompt = matchingPrompt.userPrompt as string
-          } else if (matchingPrompt.prompt) {
-            // Split combined prompt into system and user prompts (old format)
-            // The combined prompt format is: systemPrompt + "\n\n" + userPrompt
-            const split = splitCombinedPrompt(matchingPrompt.prompt)
-            systemPrompt = split.systemPrompt
-            userPrompt = split.userPrompt
+      if (matchingPrompt) {
+        // Use separate prompts if available, otherwise split combined prompt
+        let systemPrompt: string
+        let userPrompt: string
 
-            // Log warning if system prompt is missing
-            if (split.warning) {
-              console.warn(`[Report Generator] ${split.warning} for trace at ${trace.timestamp}`)
-            }
-          } else {
-            // No prompt available
-            systemPrompt = ''
-            userPrompt = ''
-            console.warn(`[Report Generator] No prompt found for trace at ${trace.timestamp}`)
+        if (
+          'systemPrompt' in matchingPrompt &&
+          'userPrompt' in matchingPrompt &&
+          matchingPrompt.systemPrompt &&
+          matchingPrompt.userPrompt
+        ) {
+          // Use separate prompts from log entry (new format)
+          systemPrompt = matchingPrompt.systemPrompt as string
+          userPrompt = matchingPrompt.userPrompt as string
+        } else if (matchingPrompt.prompt) {
+          // Split combined prompt into system and user prompts (old format)
+          // The combined prompt format is: systemPrompt + "\n\n" + userPrompt
+          const split = splitCombinedPrompt(matchingPrompt.prompt)
+          systemPrompt = split.systemPrompt
+          userPrompt = split.userPrompt
+
+          // Log warning if system prompt is missing
+          if (split.warning) {
+            console.warn(`[Report Generator] ${split.warning}`)
           }
+        } else {
+          // No prompt available
+          systemPrompt = ''
+          userPrompt = ''
+          console.warn('[Report Generator] No prompt found in logs')
+        }
 
-          // Enrich trace with prompts
+        // Enrich trace with prompts AND raw response (if available from logs)
+        // Create llmCalls array if it doesn't exist
+        if (!trace.llmCalls || trace.llmCalls.length === 0) {
+          trace = {
+            ...trace,
+            llmCalls: [
+              {
+                agent: 'conversational-extractor',
+                model: 'gemini-2.5-flash-lite',
+                systemPrompt,
+                userPrompt,
+                rawResponse: matchingPrompt.response,
+              },
+            ],
+          }
+        } else {
+          // Enrich existing llmCalls
           trace = {
             ...trace,
             llmCalls: trace.llmCalls.map((call, idx) =>
-              idx === 0 ? { ...call, systemPrompt, userPrompt } : call
+              idx === 0
+                ? {
+                    ...call,
+                    systemPrompt,
+                    userPrompt,
+                    rawResponse: matchingPrompt.response,
+                  }
+                : call
             ),
           }
         }
@@ -327,13 +369,25 @@ async function loadTracesAndPromptsFromLogs(): Promise<{
   tracesByTimestamp: Map<number, DecisionTrace>
   promptsByTimestamp: Map<
     number,
-    { timestamp: string; prompt: string; systemPrompt?: string; userPrompt?: string }
+    {
+      timestamp: string
+      prompt: string
+      systemPrompt?: string
+      userPrompt?: string
+      response?: unknown
+    }
   >
 }> {
   const tracesByTimestamp = new Map<number, DecisionTrace>()
   const promptsByTimestamp = new Map<
     number,
-    { timestamp: string; prompt: string; systemPrompt?: string; userPrompt?: string }
+    {
+      timestamp: string
+      prompt: string
+      systemPrompt?: string
+      userPrompt?: string
+      response?: unknown
+    }
   >()
 
   try {
@@ -359,7 +413,10 @@ async function loadTracesAndPromptsFromLogs(): Promise<{
   try {
     // Read program.log (one JSON log entry per line)
     const programLogContent = await readFile(PROGRAM_LOG_PATH, 'utf-8').catch(() => '')
-    for (const line of programLogContent.split('\n')) {
+    const lines = programLogContent.split('\n')
+
+    // First pass: collect all prompts
+    for (const line of lines) {
       if (line.trim()) {
         try {
           const entry = JSON.parse(line) as {
@@ -394,6 +451,49 @@ async function loadTracesAndPromptsFromLogs(): Promise<{
                   prompt: entry.prompt,
                   systemPrompt: split.systemPrompt || undefined,
                   userPrompt: split.userPrompt,
+                })
+              }
+            }
+          }
+        } catch {
+          // Skip invalid JSON lines
+        }
+      }
+    }
+
+    // Second pass: attach LLM responses to the corresponding prompts
+    for (const line of lines) {
+      if (line.trim()) {
+        try {
+          const entry = JSON.parse(line) as {
+            timestamp?: string
+            type?: string
+            response?: unknown
+          }
+          // Look for LLM response entries
+          if (entry.type === 'llm_response' && entry.timestamp && entry.response) {
+            const responseTime = new Date(entry.timestamp).getTime()
+
+            // Find the closest prompt within 5 seconds before this response
+            let closestPromptTime: number | null = null
+            let minTimeDiff = 5000 // 5 seconds max
+
+            for (const promptTime of promptsByTimestamp.keys()) {
+              const timeDiff = responseTime - promptTime
+              // Response should be after the prompt (positive diff) and within 5 seconds
+              if (timeDiff >= 0 && timeDiff < minTimeDiff) {
+                closestPromptTime = promptTime
+                minTimeDiff = timeDiff
+              }
+            }
+
+            // Attach response to the closest prompt
+            if (closestPromptTime !== null) {
+              const existingPrompt = promptsByTimestamp.get(closestPromptTime)
+              if (existingPrompt) {
+                promptsByTimestamp.set(closestPromptTime, {
+                  ...existingPrompt,
+                  response: entry.response,
                 })
               }
             }
@@ -609,7 +709,7 @@ function buildTemplateReplacements(report: EvaluationReport): Record<string, str
     .join('\n')
 
   const sampleTracesSection = sampleTraces
-    .map((sample) => {
+    .map((sample, index) => {
       const trace = sample.trace as {
         timestamp?: string
         flow?: string
@@ -625,42 +725,120 @@ function buildTemplateReplacements(report: EvaluationReport): Record<string, str
           promptTokens?: number
           completionTokens?: number
           totalTokens?: number
+          rawResponse?: unknown
         }>
         rulesConsulted?: unknown
         [key: string]: unknown
       }
 
-      // Extract LLM prompts if available
+      // Extract LLM prompts and response from llmCalls if available
       const llmCall = trace.llmCalls?.[0]
-      const systemPrompt = llmCall?.systemPrompt
-      const userPrompt = llmCall?.userPrompt
+      const systemPrompt = llmCall?.systemPrompt || ''
+      const userPrompt = llmCall?.userPrompt || ''
+      const model = llmCall?.model || 'Unknown'
+      const promptTokens = llmCall?.promptTokens || 0
+      const completionTokens = llmCall?.completionTokens || 0
+      const rawResponse = llmCall?.rawResponse
 
       // Build trace sections
       const sections: string[] = []
 
       sections.push(`### Trace: ${sample.testId}`)
 
-      // System Prompt
-      if (systemPrompt) {
-        sections.push(`#### System Prompt\n\n\`\`\`\n${systemPrompt}\n\`\`\`\n`)
-      }
-
-      // User Prompt
-      if (userPrompt) {
-        sections.push(`#### User Prompt\n\n\`\`\`\n${userPrompt}\n\`\`\`\n`)
-      }
-
-      // Inputs
+      // Show Test Input & Processing FIRST (before LLM Request)
       if (trace.inputs) {
+        const inputs = trace.inputs as { message?: string; pills?: unknown }
+
+        sections.push('#### Test Input & Processing\n')
+
+        // Show original test input - find test result by testId
+        const testResult = testResults.find((r) => r.testCase.id === sample.testId)
+        const testCase = testResult?.testCase
+        if (testCase?.input) {
+          sections.push(`**Original Test Input:**\n\`\`\`\n${testCase.input}\n\`\`\`\n`)
+        }
+
+        // Show extracted pills
+        if (inputs.pills && Object.keys(inputs.pills as object).length > 0) {
+          sections.push(
+            `\n**Extracted Pills (removed from text):**\n\`\`\`json\n${JSON.stringify(inputs.pills, null, 2)}\n\`\`\`\n`
+          )
+        } else {
+          sections.push('\n**Extracted Pills:** None\n')
+        }
+
+        // Show cleaned message sent to LLM
         sections.push(
-          `#### Inputs\n\n\`\`\`json\n${JSON.stringify(trace.inputs, null, 2)}\n\`\`\`\n`
+          `\n**Cleaned Message (sent to LLM):**\n\`\`\`\n${inputs.message || ''}\n\`\`\`\n`
         )
       }
 
-      // Extraction
-      if (trace.extraction) {
+      // Show LLM Request section if we have prompts
+      if (systemPrompt || userPrompt) {
+        sections.push('#### LLM Request\n')
+        sections.push(`**Model:** ${model}\n`)
+
+        if (promptTokens > 0 || completionTokens > 0) {
+          sections.push(`**Tokens:** ${promptTokens} input, ${completionTokens} output\n`)
+        }
+
+        if (systemPrompt) {
+          sections.push(`**System Prompt:**\n\`\`\`\n${systemPrompt}\n\`\`\`\n`)
+        }
+
+        if (userPrompt) {
+          sections.push(`**User Prompt:**\n\`\`\`\n${userPrompt}\n\`\`\`\n`)
+        }
+
+        // Note about JSON schema
         sections.push(
-          `#### Extraction\n\n\`\`\`json\n${JSON.stringify(trace.extraction, null, 2)}\n\`\`\`\n`
+          '**JSON Schema:** UserProfile schema (see [packages/shared/src/schemas/user-profile.ts](packages/shared/src/schemas/user-profile.ts))\n'
+        )
+      }
+
+      // Show Raw LLM Response if available
+      if (rawResponse) {
+        sections.push('#### Raw LLM Response (Before Validation)\n')
+        sections.push(`\`\`\`json\n${JSON.stringify(rawResponse, null, 2)}\n\`\`\`\n`)
+      }
+
+      // Extraction and LLM Response
+      if (trace.extraction) {
+        sections.push('#### LLM Response & Extraction\n')
+
+        const extraction = trace.extraction as {
+          method?: string
+          fields?: unknown
+          confidence?: unknown
+          reasoning?: string
+        }
+
+        // Show extraction status
+        // Check for extracted fields to determine success, not just reasoning text
+        const hasFields = extraction.fields && Object.keys(extraction.fields as object).length > 0
+        if (extraction.reasoning?.includes('Extraction failed')) {
+          sections.push('**Status:** ❌ Extraction failed (Zod validation error)\n')
+        } else if (hasFields) {
+          sections.push('**Status:** ✅ Extraction successful\n')
+        } else {
+          sections.push('**Status:** ⚠️  Unknown\n')
+        }
+
+        // Show extracted fields
+        if (extraction.fields) {
+          sections.push(
+            `\n**Extracted Fields:**\n\`\`\`json\n${JSON.stringify(extraction.fields, null, 2)}\n\`\`\`\n`
+          )
+        }
+
+        // Show validation errors if present
+        if (extraction.reasoning?.includes('Extraction failed')) {
+          sections.push(`\n**Validation Errors:**\n\`\`\`\n${extraction.reasoning}\n\`\`\`\n`)
+        }
+
+        // Show full extraction data
+        sections.push(
+          `\n**Full Extraction Result:**\n\`\`\`json\n${JSON.stringify(trace.extraction, null, 2)}\n\`\`\`\n`
         )
       }
 
@@ -675,17 +853,6 @@ function buildTemplateReplacements(report: EvaluationReport): Record<string, str
       if (trace.complianceCheck) {
         sections.push(
           `#### Compliance Check\n\n\`\`\`json\n${JSON.stringify(trace.complianceCheck, null, 2)}\n\`\`\`\n`
-        )
-      }
-
-      // LLM Calls (without prompts, already shown above)
-      if (trace.llmCalls && trace.llmCalls.length > 0) {
-        const llmCallsWithoutPrompts = trace.llmCalls.map((call) => {
-          const { systemPrompt: _, userPrompt: __, ...rest } = call
-          return rest
-        })
-        sections.push(
-          `#### LLM Calls\n\n\`\`\`json\n${JSON.stringify(llmCallsWithoutPrompts, null, 2)}\n\`\`\`\n`
         )
       }
 
@@ -753,8 +920,14 @@ function buildTemplateReplacements(report: EvaluationReport): Record<string, str
   const failedTests = testResults.filter((r) => !r.passed).length
   const passRate = testResults.length > 0 ? Math.round((passedTests / testResults.length) * 100) : 0
 
+  // Format timestamp to be human-readable
+  const formattedTimestamp = new Date(report.timestamp).toLocaleString('en-US', {
+    dateStyle: 'full',
+    timeStyle: 'long',
+  })
+
   return {
-    timestamp: report.timestamp,
+    timestamp: formattedTimestamp,
     routingAccuracy: overallMetrics.routingAccuracy.toString(),
     intakeCompleteness: overallMetrics.intakeCompleteness.toString(),
     pitchClarity: overallMetrics.pitchClarityAverage.toString(),

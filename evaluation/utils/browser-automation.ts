@@ -104,8 +104,8 @@ export async function injectTextIntoEditor(page: Page, text: string): Promise<vo
   // Type the text character by character to trigger Lexical's input handlers
   await page.type(editorSelector, text, { delay: 20 })
 
-  // Wait longer for pill extraction to complete
-  await page.waitForTimeout(1000)
+  // Wait for pill detection (real-time ~10-50ms) + DOM updates (~50-100ms)
+  await page.waitForTimeout(150)
 }
 
 /**

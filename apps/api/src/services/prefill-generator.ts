@@ -35,8 +35,8 @@ export function getMissingFields(
   carrier?: string
 ): MissingField[] {
   const missing: MissingField[] = []
-  const product = productType || profile.productType
-  const stateCode = state || profile.state
+  const product = productType || profile.productType || undefined
+  const stateCode = state || profile.state || undefined
 
   // Required fields for all products
   if (!profile.state) {
@@ -240,18 +240,18 @@ export function generatePrefillPacket(
     prefill.address = profile.zip
   }
 
-  // Map product-specific data based on productType
+  // Map product-specific data based on productType (convert null to undefined)
   if (profile.productType === 'auto') {
-    prefill.vehicles = profile.vehicles
-    prefill.drivers = profile.drivers
-    prefill.vins = profile.vins
-    prefill.garage = profile.garage
+    prefill.vehicles = profile.vehicles ?? undefined
+    prefill.drivers = profile.drivers ?? undefined
+    prefill.vins = profile.vins ?? undefined
+    prefill.garage = profile.garage ?? undefined
     // Note: primaryUse and annualMileage not in UserProfile schema, leave undefined
   } else if (profile.productType === 'home') {
-    prefill.yearBuilt = profile.yearBuilt
-    prefill.squareFeet = profile.squareFeet
-    prefill.roofType = profile.roofType
-    prefill.propertyType = profile.propertyType
+    prefill.yearBuilt = profile.yearBuilt ?? undefined
+    prefill.squareFeet = profile.squareFeet ?? undefined
+    prefill.roofType = profile.roofType ?? undefined
+    prefill.propertyType = profile.propertyType ?? undefined
     // Note: homeValue and constructionType not in UserProfile schema, leave undefined
   } else if (profile.productType === 'renters') {
     // Note: personalProperty and liability not in UserProfile schema, leave undefined

@@ -9,8 +9,8 @@
 
 import { spawn } from 'node:child_process'
 
-const FRONTEND_PORT = process.env.EVAL_FRONTEND_PORT || '3001'
-const API_PORT = process.env.EVAL_API_PORT || '7071'
+const FRONTEND_PORT = process.env.EVAL_FRONTEND_PORT || '3000'
+const API_PORT = process.env.EVAL_API_PORT || '7070'
 const FRONTEND_URL = `http://localhost:${FRONTEND_PORT}`
 const API_URL = `http://localhost:${API_PORT}/api`
 

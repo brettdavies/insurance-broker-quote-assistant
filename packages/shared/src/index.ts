@@ -167,6 +167,6 @@ export {
 } from './utils/field-normalizer'
 
 // Export test utilities (for use in test files only)
-// NOTE: These are excluded from browser builds - they import bun:test which can't run in browser
-// Test utilities should only be imported in test files, not in application code
-export * from './test-utils'
+// NOTE: DO NOT export test-utils from main package - they import bun:test which breaks browser builds
+// Test files should import directly: import { ... } from '@repo/shared/src/test-utils'
+// export * from './test-utils'  // DISABLED - breaks browser builds

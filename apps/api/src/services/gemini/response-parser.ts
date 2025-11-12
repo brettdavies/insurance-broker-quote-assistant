@@ -31,10 +31,23 @@ export function parseJsonResponse<T>(response: unknown): ParsedResponse<T> {
 }
 
 /**
- * Validate parsed data against Zod schema
+ * Validate parsed data against Zod schema and strip out null/undefined values
+ * Returns a partial object containing only fields with actual values
  */
 export function validateResponse<T>(parsedData: Partial<T>, schema: ZodSchema): Partial<T> {
-  return schema.parse(parsedData) as Partial<T>
+  // First validate with Zod (now accepts null values with .nullish())
+  const validated = schema.parse(parsedData) as Partial<T>
+
+  // Strip out null and undefined values to return a clean partial object
+  const cleaned: Partial<T> = {}
+  for (const [key, value] of Object.entries(validated)) {
+    if (value !== null && value !== undefined) {
+      // Type assertion needed because Object.entries loses type information
+      cleaned[key as keyof T] = value as T[keyof T]
+    }
+  }
+
+  return cleaned
 }
 
 /**

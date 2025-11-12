@@ -20,7 +20,7 @@ function checkAgeRequirement(
 ): string[] {
   const missing: string[] = []
 
-  if (customerData.age === undefined) {
+  if (customerData.age === undefined || customerData.age === null) {
     missing.push('Age required for eligibility')
     return missing
   }

@@ -45,6 +45,11 @@ serve({
       const filePath = join(import.meta.dir, pathname)
       const file = Bun.file(filePath)
 
+      // NEVER serve test files - they should not be loaded in the browser
+      if (pathname.includes('.test.') || pathname.includes('/__tests__/')) {
+        return new Response('Not Found', { status: 404 })
+      }
+
       if (await file.exists()) {
         const ext = extname(pathname)
 
@@ -66,6 +71,13 @@ serve({
           '.jsx': 'application/javascript',
           '.json': 'application/json',
           '.html': 'text/html',
+          '.svg': 'image/svg+xml',
+          '.ico': 'image/x-icon',
+          '.png': 'image/png',
+          '.jpg': 'image/jpeg',
+          '.jpeg': 'image/jpeg',
+          '.gif': 'image/gif',
+          '.webp': 'image/webp',
         }
 
         // For TypeScript/JSX files, bundle everything (including npm dependencies)
@@ -81,6 +93,22 @@ serve({
               minify: false,
               // Externalize bun:test - test utilities can't be bundled for browser
               external: ['bun:test'],
+              // Plugin to completely skip test files during bundling
+              plugins: [
+                {
+                  name: 'skip-test-files',
+                  setup(build) {
+                    build.onResolve({ filter: /\.test\.(ts|tsx|js|jsx)$/ }, () => ({
+                      path: 'data:text/javascript,export {}',
+                      external: true,
+                    }))
+                    build.onResolve({ filter: /__tests__/ }, () => ({
+                      path: 'data:text/javascript,export {}',
+                      external: true,
+                    }))
+                  },
+                },
+              ],
               // Don't externalize other dependencies - bundle all npm packages
               // This ensures npm packages are included in the bundle
             })

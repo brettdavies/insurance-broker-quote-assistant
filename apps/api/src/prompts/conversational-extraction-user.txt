@@ -5,7 +5,17 @@ They were written by the broker, not the prospect, so they may not be full sente
 
 {{ALREADY_EXTRACTED_FIELDS}}
 
-Current notes: {{MESSAGE}}
+
+===================
+=== Start notes ===
+===================
+
+{{MESSAGE}}
+
+=================
+=== End notes ===
+=================
+
 
 Extract all mentioned fields from these notes. Look for:
 - state: US state code (REQUIRED if mentioned). Examples: "CA" (from "CA auto"), "California", "TX" (from "TX home"). IMPORTANT: When you see patterns like "CA auto" or "TX home", extract the state code (CA, TX, etc.) as the state field.

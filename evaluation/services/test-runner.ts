@@ -14,8 +14,8 @@ import {
 } from '../utils/browser-automation'
 import { calculateMetrics } from './metrics-calculator'
 
-const FRONTEND_URL = process.env.EVALUATION_FRONTEND_URL || 'http://localhost:3001'
-const API_BASE_URL = process.env.EVALUATION_API_URL || 'http://localhost:7071/api'
+const FRONTEND_URL = process.env.EVALUATION_FRONTEND_URL || 'http://localhost:3000'
+const API_BASE_URL = process.env.EVALUATION_API_URL || 'http://localhost:7070/api'
 
 /**
  * Run a single test case against the API
@@ -95,8 +95,34 @@ async function callIntakeEndpoint(input: string): Promise<unknown> {
     // Wait for extraction to complete (debounce + API call)
     await waitForExtraction(page)
 
-    // Extract cleaned text and pills from frontend
-    const { cleanedText, pills } = await extractCleanedTextAndPills(page)
+    // Extract cleaned text and pills from frontend with retry
+    let cleanedText = ''
+    let pills = {}
+    for (let attempt = 0; attempt < 3; attempt++) {
+      const extracted = await extractCleanedTextAndPills(page)
+      cleanedText = extracted.cleanedText
+      pills = extracted.pills
+
+      if (cleanedText) {
+        console.log(`✅ Pill extraction successful (attempt ${attempt + 1})`)
+        console.log(`   Original: "${input.substring(0, 60)}..."`)
+        console.log(`   Cleaned:  "${cleanedText.substring(0, 60)}..."`)
+        console.log(`   Pills:    ${JSON.stringify(pills)}`)
+        break
+      }
+
+      if (attempt < 2) {
+        console.log(`⚠️  No text extracted, retrying (attempt ${attempt + 1}/3)...`)
+        await page.waitForTimeout(100) // Short retry delay
+      }
+    }
+
+    // Fail fast if pill extraction didn't work
+    if (!cleanedText) {
+      throw new Error(
+        `Pill extraction failed for test ${testCase.id}. Extracted: "${cleanedText}". Pills: ${JSON.stringify(pills)}. This means editorRef isn't exposed or extraction logic failed.`
+      )
+    }
 
     console.log('📦 Extracted cleaned text:', JSON.stringify(cleanedText))
     console.log('💊 Extracted pills:', JSON.stringify(pills, null, 2))
@@ -106,7 +132,7 @@ async function callIntakeEndpoint(input: string): Promise<unknown> {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        message: cleanedText || input, // Fallback to original if cleaned is empty
+        message: cleanedText, // No fallback - fail if extraction failed
         pills: Object.keys(pills).length > 0 ? pills : undefined,
       }),
     })

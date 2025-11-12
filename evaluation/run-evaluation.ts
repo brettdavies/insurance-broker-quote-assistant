@@ -10,8 +10,8 @@
 import { spawn } from 'node:child_process'
 import { join } from 'node:path'
 
-const FRONTEND_PORT = process.env.EVAL_FRONTEND_PORT || '3001'
-const API_PORT = process.env.EVAL_API_PORT || '7071'
+const FRONTEND_PORT = process.env.EVAL_FRONTEND_PORT || '3000'
+const API_PORT = process.env.EVAL_API_PORT || '7070'
 const FRONTEND_URL = `http://localhost:${FRONTEND_PORT}`
 const API_URL = `http://localhost:${API_PORT}/api`
 
@@ -41,12 +41,15 @@ let frontendReady = false
 let apiReady = false
 
 const waitForServers = async (): Promise<void> => {
-  return new Promise((resolve) => {
+  const startTime = Date.now()
+  const TIMEOUT_MS = 30000 // 30 seconds
+
+  return new Promise((resolve, reject) => {
     const checkInterval = setInterval(async () => {
       // Check frontend
       if (!frontendReady) {
         try {
-          const response = await fetch(FRONTEND_URL)
+          const response = await fetch(FRONTEND_URL, { signal: AbortSignal.timeout(2000) })
           if (response.ok) {
             frontendReady = true
             console.log('✅ Frontend server ready')
@@ -59,7 +62,7 @@ const waitForServers = async (): Promise<void> => {
       // Check API
       if (!apiReady) {
         try {
-          const response = await fetch(`${API_URL}/health`)
+          const response = await fetch(`${API_URL}/health`, { signal: AbortSignal.timeout(2000) })
           if (response.ok) {
             apiReady = true
             console.log('✅ API server ready')
@@ -74,22 +77,25 @@ const waitForServers = async (): Promise<void> => {
         console.log('')
         resolve()
       }
-    }, 1000)
 
-    // Timeout after 30 seconds
-    setTimeout(() => {
-      if (!frontendReady || !apiReady) {
+      // Timeout check
+      if (Date.now() - startTime > TIMEOUT_MS) {
         clearInterval(checkInterval)
-        console.error('❌ Timeout waiting for servers to start')
-        evalEnv.kill()
-        process.exit(1)
+        reject(new Error('Timeout waiting for servers to start'))
       }
-    }, 30000)
+    }, 1000)
   })
 }
 
 // Wait for servers
-await waitForServers()
+try {
+  await waitForServers()
+} catch (error) {
+  console.error('❌ Failed to start servers:', error)
+  evalEnv.kill('SIGTERM')
+  setTimeout(() => evalEnv.kill('SIGKILL'), 2000)
+  process.exit(1)
+}
 
 console.log('▶️  Running evaluation harness...')
 console.log('')
@@ -105,19 +111,36 @@ const harness = spawn('bun', ['run', join(import.meta.dir, 'harness.ts')], {
   },
 })
 
-// Handle cleanup
-const cleanup = () => {
+// Handle cleanup with proper signal handling
+const cleanup = (exitCode = 0) => {
   console.log('\n🛑 Shutting down evaluation environment...')
-  evalEnv.kill()
-  harness.kill()
-  process.exit(0)
+  evalEnv.kill('SIGTERM')
+  try {
+    harness.kill('SIGTERM')
+  } catch {
+    // Harness may already be dead
+  }
+
+  // Force kill after 2 seconds if not terminated
+  setTimeout(() => {
+    try {
+      evalEnv.kill('SIGKILL')
+      harness.kill('SIGKILL')
+    } catch {
+      // Processes already dead
+    }
+    process.exit(exitCode)
+  }, 2000)
 }
 
-process.on('SIGINT', cleanup)
-process.on('SIGTERM', cleanup)
+process.on('SIGINT', () => cleanup(130))
+process.on('SIGTERM', () => cleanup(143))
 
 harness.on('exit', (code) => {
-  console.log('\n🛑 Shutting down evaluation environment...')
-  evalEnv.kill()
-  process.exit(code || 0)
+  cleanup(code || 0)
+})
+
+harness.on('error', (error) => {
+  console.error('❌ Harness error:', error)
+  cleanup(1)
 })

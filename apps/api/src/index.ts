@@ -37,7 +37,10 @@ const app = new Hono()
 app.use(
   '*',
   cors({
-    origin: ['http://localhost:3000', 'http://localhost:5173'], // Frontend dev servers
+    origin: [
+      'http://localhost:3000', // Dev & Eval frontend
+      'http://localhost:5173', // Vite fallback
+    ],
     allowMethods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowHeaders: ['Content-Type', 'Authorization'],
     credentials: true,

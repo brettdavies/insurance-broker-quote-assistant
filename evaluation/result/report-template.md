@@ -1,6 +1,19 @@
 # Evaluation Report
 
-Generated: {{timestamp}}
+**Generated:** {{timestamp}}
+
+## Table of Contents
+
+1. [Executive Summary](#executive-summary)
+2. [Per-Carrier Routing Accuracy](#per-carrier-routing-accuracy)
+3. [Per-State Routing Accuracy](#per-state-routing-accuracy)
+4. [Field Completeness](#field-completeness)
+5. [LLM Token Usage & Cost](#llm-token-usage--cost)
+6. [Sample Decision Traces](#sample-decision-traces)
+7. [Test Case Details](#test-case-details)
+8. [Summary Statistics](#summary-statistics)
+
+---
 
 ## Executive Summary
 

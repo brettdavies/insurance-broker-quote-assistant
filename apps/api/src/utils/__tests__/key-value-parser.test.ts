@@ -1,5 +1,5 @@
 import { describe, expect, it, test } from 'bun:test'
-import { keyValueTestCases } from '@repo/shared'
+import { keyValueTestCases } from '@repo/shared/src/test-utils'
 import { hasKeyValueSyntax, parseKeyValueSyntax } from '../key-value-parser'
 
 describe('Key-Value Parser', () => {
