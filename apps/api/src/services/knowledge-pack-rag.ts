@@ -323,3 +323,24 @@ export function getCarrierBundleDiscounts(
     )
   })
 }
+
+/**
+ * Get discount by cuid2 ID
+ *
+ * Searches through all carriers to find a discount with the matching _id.
+ *
+ * @param discountId - Discount cuid2 ID
+ * @returns Discount object with carrier context, or undefined if not found
+ */
+export function getDiscountById(
+  discountId: string
+): { discount: Carrier['discounts'][number]; carrier: Carrier } | undefined {
+  const allCarriers = getAllCarriers()
+  for (const carrier of allCarriers) {
+    const discount = carrier.discounts.find((d) => d._id === discountId)
+    if (discount) {
+      return { discount, carrier }
+    }
+  }
+  return undefined
+}

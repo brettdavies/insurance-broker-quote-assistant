@@ -1,0 +1,47 @@
+schema: 1
+story: "2.3"
+story_title: "Discount Rules Engine (Eligibility Validation)"
+gate: WAIVED
+status_reason: "High-quality implementation meets all functional requirements. Tests intentionally skipped per team decision to defer until testing overhaul completes."
+reviewer: "Quinn (Test Architect)"
+updated: "2025-01-26T00:00:00Z"
+
+waiver:
+  active: true
+  reason: "Unit tests (AC6) intentionally skipped per user request - testing overhaul being implemented by another team. Tests will be added when overhaul completes."
+  approved_by: "Team Decision"
+
+top_issues: []
+
+quality_score: 85
+expires: "2025-02-09T00:00:00Z"
+
+evidence:
+  tests_reviewed: 0
+  risks_identified: 1
+  trace:
+    ac_covered: [1, 2, 3, 4, 5, 7, 8]
+    ac_gaps: [6]
+
+nfr_validation:
+  security:
+    status: PASS
+    notes: "No security vulnerabilities. Read-only knowledge pack access, validated inputs."
+  performance:
+    status: PASS
+    notes: "Acceptable performance for current scale. O(n²) stacking validation acceptable for typical opportunity counts."
+  reliability:
+    status: PASS
+    notes: "Robust error handling with graceful fallback to unvalidated opportunities (confidence 0)."
+  maintainability:
+    status: PASS
+    notes: "Clean separation of concerns, proper dependency injection, follows architectural patterns."
+
+recommendations:
+  immediate: []
+  future:
+    - action: "Add comprehensive unit tests when testing overhaul completes"
+      refs: ["docs/stories/2.3.discount-rules-engine.md:90-103"]
+    - action: "Consider caching discount lookups if performance becomes an issue"
+      refs: ["apps/api/src/services/discount-rules-validator.ts:100-116"]
+

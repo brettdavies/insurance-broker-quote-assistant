@@ -166,12 +166,25 @@ async function normalizeDeductibleOptimization(
  *
  * @param result - Raw result from LLM
  * @param carrierName - Carrier name for citation resolution
- * @returns Normalized result with resolved citations and normalized values
+ * @returns Normalized result with resolved citations and normalized values (opportunities are raw, will be validated)
  */
 export async function normalizePolicyAnalysisResult(
-  result: PolicyAnalysisResult & { _metadata?: { tokensUsed?: number; analysisTime?: number } },
+  result: {
+    currentPolicy: import('@repo/shared').PolicySummary
+    opportunities: import('@repo/shared').Opportunity[]
+    bundleOptions: import('@repo/shared').BundleOption[]
+    deductibleOptimizations: import('@repo/shared').DeductibleOptimization[]
+    pitch: string
+    complianceValidated: boolean
+    _metadata?: { tokensUsed?: number; analysisTime?: number }
+  },
   carrierName: string
-): Promise<PolicyAnalysisResult & { _metadata?: { tokensUsed?: number; analysisTime?: number } }> {
+): Promise<
+  Omit<PolicyAnalysisResult, 'opportunities'> & {
+    opportunities: import('@repo/shared').Opportunity[]
+    _metadata?: { tokensUsed?: number; analysisTime?: number }
+  }
+> {
   try {
     // Normalize opportunities (async - resolve file paths from knowledge pack)
     const normalizedOpportunities = await Promise.all(

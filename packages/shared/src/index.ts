@@ -65,6 +65,14 @@ export {
   type Opportunity,
 } from './schemas/opportunity'
 
+// Export validated opportunity schema and types
+export {
+  validatedOpportunitySchema,
+  validationDetailsSchema,
+  type ValidatedOpportunity,
+  type ValidationDetails,
+} from './schemas/validated-opportunity'
+
 // Export policy analysis result schema and types
 export {
   policyAnalysisResultLLMSchema,

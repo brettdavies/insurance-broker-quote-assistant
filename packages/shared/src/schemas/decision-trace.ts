@@ -40,6 +40,37 @@ export const decisionTraceSchema = z.object({
     .optional(),
   routingDecision: z.record(z.unknown()).optional(), // Will be defined in future story
   discountCalculations: z.record(z.unknown()).optional(), // Will be defined in future story
+  discountValidation: z
+    .object({
+      rulesEvaluated: z.array(
+        z.object({
+          rule: z.string(),
+          citation: z.object({
+            id: z.string(),
+            type: z.string(),
+            carrier: z.string(),
+            file: z.string(),
+          }),
+          result: z.enum(['pass', 'fail', 'partial']),
+        })
+      ),
+      opportunitiesValidated: z.number().int().nonnegative(),
+      confidenceScores: z.record(z.number().min(0).max(100)),
+      stackingResults: z
+        .object({
+          validCombinations: z.array(z.array(z.string())),
+          conflicts: z.array(
+            z.object({
+              opportunity1: z.string(),
+              opportunity2: z.string(),
+              reason: z.string(),
+            })
+          ),
+          maxStackable: z.number().int().nonnegative().optional(),
+        })
+        .optional(),
+    })
+    .optional(),
   complianceCheck: z
     .object({
       passed: z.boolean(),

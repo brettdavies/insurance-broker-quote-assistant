@@ -26,7 +26,10 @@ export class PolicyAnalysisAgent {
   // Expose intermediate outputs for testing/debugging
   public lastPrompt?: string
   public lastLLMRawOutput?: unknown
-  public lastNormalizedOutput?: PolicyAnalysisResult
+  public lastNormalizedOutput?: Omit<PolicyAnalysisResult, 'opportunities'> & {
+    opportunities: import('@repo/shared').Opportunity[]
+    _metadata?: { tokensUsed?: number; analysisTime?: number }
+  }
 
   constructor(private llmProvider: LLMProvider) {}
 
@@ -35,13 +38,16 @@ export class PolicyAnalysisAgent {
    *
    * @param policySummary - Policy summary with carrier, state, product, coverage, deductibles, premiums
    * @param policyText - Optional policy text (key-value format) for additional context
-   * @returns Policy analysis result with opportunities, bundle options, deductible optimizations
+   * @returns Policy analysis result with opportunities (raw from LLM, will be validated by DiscountRulesValidator)
    */
   async analyzePolicy(
     policySummary: PolicySummary,
     policyText?: string
   ): Promise<
-    PolicyAnalysisResult & { _metadata?: { tokensUsed?: number; analysisTime?: number } }
+    Omit<PolicyAnalysisResult, 'opportunities'> & {
+      opportunities: import('@repo/shared').Opportunity[]
+      _metadata?: { tokensUsed?: number; analysisTime?: number }
+    }
   > {
     const startTime = Date.now()
 
@@ -353,7 +359,12 @@ export class PolicyAnalysisAgent {
   private async callLLMAnalysis(
     prompt: string,
     schema: ZodSchema
-  ): Promise<PolicyAnalysisResult & { _metadata?: { tokensUsed?: number } }> {
+  ): Promise<
+    Omit<PolicyAnalysisResult, 'opportunities'> & {
+      opportunities: import('@repo/shared').Opportunity[]
+      _metadata?: { tokensUsed?: number }
+    }
+  > {
     try {
       // Call LLM with PolicyAnalysisResultLLMSchema (without file paths)
       // The LLMProvider will validate it against the schema, but return type is ExtractionResult

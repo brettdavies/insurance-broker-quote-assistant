@@ -10,7 +10,13 @@
  * @see docs/architecture/6-components.md#62-pitch-generator-agent-llm
  */
 
-import type { BundleOption, DeductibleOptimization, Opportunity, PolicySummary } from '@repo/shared'
+import type {
+  BundleOption,
+  DeductibleOptimization,
+  Opportunity,
+  PolicySummary,
+  ValidatedOpportunity,
+} from '@repo/shared'
 import { z } from 'zod'
 import { logError, logInfo } from '../utils/logger'
 import type { LLMProvider } from './llm-provider'
@@ -38,14 +44,14 @@ export class PitchGenerator {
   /**
    * Generate savings pitch from opportunities
    *
-   * @param opportunities - Missing discount opportunities
+   * @param opportunities - Missing discount opportunities (can be Opportunity or ValidatedOpportunity)
    * @param bundleOptions - Bundle opportunities
    * @param deductibleOptimizations - Deductible trade-offs
    * @param policySummary - Current policy context
    * @returns Agent-ready pitch with "because" rationales
    */
   async generatePitch(
-    opportunities: Opportunity[],
+    opportunities: (Opportunity | ValidatedOpportunity)[],
     bundleOptions: BundleOption[],
     deductibleOptimizations: DeductibleOptimization[],
     policySummary: PolicySummary

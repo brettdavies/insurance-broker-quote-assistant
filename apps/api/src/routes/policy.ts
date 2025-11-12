@@ -19,7 +19,9 @@ import { Hono } from 'hono'
 import { z } from 'zod'
 import { validateOutput } from '../services/compliance-filter'
 import type { ConversationalExtractor } from '../services/conversational-extractor'
+import { DiscountRulesValidator } from '../services/discount-rules-validator'
 import type { LLMProvider } from '../services/llm-provider'
+import * as knowledgePackRAG from '../services/knowledge-pack-rag'
 import { PitchGenerator } from '../services/pitch-generator'
 import { PolicyAnalysisAgent } from '../services/policy-analysis-agent'
 import { createDecisionTrace, logDecisionTrace } from '../utils/decision-trace'
@@ -396,18 +398,31 @@ export function createPolicyRoute(extractor: ConversationalExtractor, llmProvide
         )
       }
 
-      // Step 2: Call Policy Analysis Agent
-      const analysisAgent = new PolicyAnalysisAgent(llmProvider)
-      let analysisResult: PolicyAnalysisResult & {
-        _metadata?: { tokensUsed?: number; analysisTime?: number }
+      // Step 2: Get carrier from knowledge pack for validator
+      const carrier = knowledgePackRAG.getCarrierByName(policySummary.carrier)
+      if (!carrier) {
+        return c.json(
+          {
+            error: {
+              code: 'KNOWLEDGE_PACK_ERROR',
+              message: 'Carrier not found in knowledge pack',
+              details: `Carrier "${policySummary.carrier}" not found`,
+            },
+          },
+          404
+        )
       }
+
+      // Step 3: Call Policy Analysis Agent
+      const analysisAgent = new PolicyAnalysisAgent(llmProvider)
+      let rawAnalysisResult: Awaited<ReturnType<PolicyAnalysisAgent['analyzePolicy']>>
       let analysisTokens = 0
       let analysisTime = 0
 
       try {
         // Pass policyText if provided (for context), but PolicySummary is the source of truth
         const result = await analysisAgent.analyzePolicy(policySummary, policyText)
-        analysisResult = result
+        rawAnalysisResult = result
         analysisTokens = result._metadata?.tokensUsed || 0
         analysisTime = result._metadata?.analysisTime || 0
       } catch (error) {
@@ -459,16 +474,92 @@ export function createPolicyRoute(extractor: ConversationalExtractor, llmProvide
         )
       }
 
-      // Step 3: Generate pitch using Pitch Generator Agent
+      // Step 4: Validate opportunities using Discount Rules Validator
+      const discountValidator = new DiscountRulesValidator(knowledgePackRAG)
+      // Initialize with raw opportunities as fallback (will be replaced if validation succeeds)
+      // Convert raw opportunities to ValidatedOpportunity format with minimal validation
+      let validatedOpportunities: import('@repo/shared').ValidatedOpportunity[] = rawAnalysisResult.opportunities.map(
+        (opp) => ({
+          ...opp,
+          confidenceScore: 0,
+          validationDetails: {
+            rulesEvaluated: [],
+            missingData: [],
+            eligibilityChecks: {
+              discountFound: false,
+              eligibilityValidated: false,
+              savingsCalculated: false,
+              stackingValidated: false,
+            },
+          },
+          requiresDocumentation: false,
+          validatedAt: new Date().toISOString(),
+        })
+      )
+      let validationResults: {
+        rulesEvaluated: Array<{
+          rule: string
+          citation: { id: string; type: string; carrier: string; file: string }
+          result: 'pass' | 'fail' | 'partial'
+        }>
+        confidenceScores: Record<string, number>
+        stackingResults?: {
+          validCombinations: string[][]
+          conflicts: Array<{ opportunity1: string; opportunity2: string; reason: string }>
+          maxStackable?: number
+        }
+      } | null = null
+      try {
+        // Note: customerData is not available in policy flow, pass undefined
+        validatedOpportunities = await discountValidator.validateOpportunities(
+          rawAnalysisResult.opportunities,
+          policySummary,
+          carrier,
+          undefined // customerData not available in policy analysis flow
+        )
+
+        // Extract validation results for decision trace
+        const allRulesEvaluated = validatedOpportunities.flatMap(
+          (opp) => opp.validationDetails.rulesEvaluated
+        )
+        const confidenceScores: Record<string, number> = {}
+        for (const opp of validatedOpportunities) {
+          confidenceScores[opp.citation.id] = opp.confidenceScore
+        }
+
+        // Get stacking results (we need to call validateStacking again to get results)
+        const { validateStacking } = await import(
+          '../services/discount-rules-validator/stacking-validator'
+        )
+        const stackingResults = validateStacking(validatedOpportunities, carrier)
+
+        validationResults = {
+          rulesEvaluated: allRulesEvaluated,
+          confidenceScores,
+          stackingResults: {
+            validCombinations: stackingResults.validCombinations,
+            conflicts: stackingResults.conflicts,
+            maxStackable: stackingResults.maxStackable,
+          },
+        }
+      } catch (error) {
+        await logError('Discount validation failed', error as Error, {
+          type: 'discount_validation_error',
+          carrier: policySummary.carrier,
+        })
+        // Continue with unvalidated opportunities if validation fails
+      }
+
+      // Step 5: Generate pitch using Pitch Generator Agent
       const pitchGenerator = new PitchGenerator(llmProvider)
       let pitch = ''
       let pitchTokens = 0
 
       try {
         const pitchResult = await pitchGenerator.generatePitch(
-          analysisResult.opportunities,
-          analysisResult.bundleOptions,
-          analysisResult.deductibleOptimizations,
+          validatedOpportunities,
+          rawAnalysisResult.bundleOptions,
+          rawAnalysisResult.deductibleOptimizations,
           policySummary
         )
         pitch = pitchResult as string
@@ -484,7 +575,7 @@ export function createPolicyRoute(extractor: ConversationalExtractor, llmProvide
           "Based on our analysis, we've identified several savings opportunities. Please review the detailed recommendations below."
       }
 
-      // Step 4: Run compliance filter on pitch
+      // Step 6: Run compliance filter on pitch
       let complianceResult: ReturnType<typeof validateOutput>
       try {
         complianceResult = validateOutput(pitch, policySummary.state, policySummary.productType)
@@ -508,7 +599,7 @@ export function createPolicyRoute(extractor: ConversationalExtractor, llmProvide
         pitch += `\n\n${complianceResult.disclaimers.join('\n')}`
       }
 
-      // Step 5: Create decision trace
+      // Step 7: Create decision trace
       const decisionTrace = createDecisionTrace(
         'policy',
         {
@@ -543,23 +634,33 @@ export function createPolicyRoute(extractor: ConversationalExtractor, llmProvide
         }
       )
 
+      // Add discount validation results to trace
+      if (validationResults) {
+        decisionTrace.discountValidation = {
+          rulesEvaluated: validationResults.rulesEvaluated,
+          opportunitiesValidated: validatedOpportunities.length,
+          confidenceScores: validationResults.confidenceScores,
+          stackingResults: validationResults.stackingResults,
+        }
+      }
+
       // Add analysis results to trace
       decisionTrace.outputs = {
-        opportunities: analysisResult.opportunities,
-        bundleOptions: analysisResult.bundleOptions,
-        deductibleOptimizations: analysisResult.deductibleOptimizations,
+        opportunities: validatedOpportunities,
+        bundleOptions: rawAnalysisResult.bundleOptions,
+        deductibleOptimizations: rawAnalysisResult.deductibleOptimizations,
         pitch,
         complianceValidated: complianceResult.passed,
       }
 
       await logDecisionTrace(decisionTrace)
 
-      // Step 6: Return PolicyAnalysisResult
+      // Step 8: Return PolicyAnalysisResult
       const finalResult: PolicyAnalysisResult = {
         currentPolicy: policySummary,
-        opportunities: analysisResult.opportunities,
-        bundleOptions: analysisResult.bundleOptions,
-        deductibleOptimizations: analysisResult.deductibleOptimizations,
+        opportunities: validatedOpportunities,
+        bundleOptions: rawAnalysisResult.bundleOptions,
+        deductibleOptimizations: rawAnalysisResult.deductibleOptimizations,
         pitch,
         complianceValidated: complianceResult.passed,
         trace: decisionTrace,

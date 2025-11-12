@@ -3,6 +3,7 @@ import { type DecisionTrace, decisionTraceSchema } from './decision-trace'
 import { citationSchema } from './intake-result'
 import { opportunitySchema } from './opportunity'
 import { type PolicySummary, policySummarySchema } from './policy-summary'
+import { validatedOpportunitySchema } from './validated-opportunity'
 
 /**
  * Policy Analysis Result Schema
@@ -97,11 +98,11 @@ export const policyAnalysisResultLLMSchema = z.object({
 
 /**
  * Policy Analysis Result Schema
- * Main schema for policy analysis output (with hydrated file paths)
+ * Main schema for policy analysis output (with hydrated file paths and validated opportunities)
  */
 export const policyAnalysisResultSchema = z.object({
   currentPolicy: policySummarySchema, // Current policy being analyzed
-  opportunities: z.array(opportunitySchema), // Missing discounts identified
+  opportunities: z.array(validatedOpportunitySchema), // Validated opportunities with confidence scores
   bundleOptions: z.array(bundleOptionSchema), // Bundle opportunities
   deductibleOptimizations: z.array(deductibleOptimizationSchema), // Deductible trade-offs
   pitch: z.string(), // Agent-ready savings pitch with "because" rationales
