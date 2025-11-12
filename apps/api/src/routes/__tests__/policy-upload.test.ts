@@ -20,11 +20,11 @@ const createMockLLMProvider = (): LLMProvider => {
     extractWithStructuredOutput: async () => ({
       profile: {
         state: 'CA',
-        productLine: 'auto',
+        productType: 'auto',
       },
       confidence: {
         state: 0.9,
-        productLine: 0.8,
+        productType: 0.8,
       },
       reasoning: 'Mock LLM extraction',
     }),

@@ -21,7 +21,7 @@ export const prefillPacketSchema = z.object({
 
   // Quote Essentials (required)
   state: z.string(), // US state code (required)
-  productLine: z.enum(['auto', 'home', 'renters', 'umbrella']), // Product type (required)
+  productType: z.enum(['auto', 'home', 'renters', 'umbrella']), // Product type (required)
   carrier: z.string().optional(), // Primary carrier from routing decision
 
   // Product-Specific Data - Auto

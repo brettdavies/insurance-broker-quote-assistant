@@ -302,7 +302,6 @@ const FIELD_SHORTCUTS: Record<string, string> = {
   f: 'roofType',
   q: 'squareFeet',
   w: 'existingPolicies',
-  m: 'currentPremium',
   b: 'deductibles',
   x: 'limits',
 }

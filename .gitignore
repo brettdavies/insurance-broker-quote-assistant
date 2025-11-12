@@ -4,7 +4,10 @@
 /.cursor/rules/bmad
 /.claude/commands/BMad
 /.claude/skills
+
+# Generated knowledge packs
 /knowledge-pack-scraper/scripts/__pycache__
+/apps/api/src/__tests__/fixtures/knowledge-packs
 
 # Dependencies
 node_modules/
@@ -120,4 +123,3 @@ out/
 # Optional stylelint cache
 .stylelintcache
 
-/apps/api/src/__tests__/fixtures/knowledge-packs

@@ -17,9 +17,17 @@ import { createPolicyRoute } from '../policy'
 
 const createMockLLMProvider = (): LLMProvider => {
   return {
-    extractWithStructuredOutput: mock(async (message: string) => {
-      // Mock policy extraction
-      if (message.includes('carrier:GEICO') || message.includes('GEICO')) {
+    extractWithStructuredOutput: mock(async (message: string, _history, schema) => {
+      // Check schema type to determine what to return
+      const schemaName = schema?._def?.typeName || 'unknown'
+
+      // Mock policy extraction (for UserProfile/PolicySummary schema)
+      // Only return extraction result if message looks like extraction, not analysis
+      if (
+        (message.includes('carrier:GEICO') || message.includes('GEICO')) &&
+        !message.includes('Analyze the following insurance policy') &&
+        !message.includes('Current Policy:')
+      ) {
         return {
           profile: {
             carrier: 'GEICO',
@@ -37,7 +45,11 @@ const createMockLLMProvider = (): LLMProvider => {
       }
 
       // Mock policy analysis - return PolicyAnalysisResult structure
-      if (message.includes('Analyze the following insurance policy')) {
+      // Check for analysis prompt (starts with "Analyze the following insurance policy")
+      if (
+        message.includes('Analyze the following insurance policy') ||
+        message.includes('Current Policy:')
+      ) {
         const analysisResult = {
           currentPolicy: {
             carrier: 'GEICO',
@@ -55,7 +67,7 @@ const createMockLLMProvider = (): LLMProvider => {
                 id: 'disc_test',
                 type: 'discount',
                 carrier: 'carr_test',
-                file: 'knowledge_pack/carriers/geico.json',
+                file: '', // Empty - will be hydrated by normalizer
               },
             },
           ],
@@ -65,6 +77,7 @@ const createMockLLMProvider = (): LLMProvider => {
           complianceValidated: false,
         }
         // Return as profile (workaround for LLMProvider interface)
+        // The profile should match policyAnalysisResultLLMSchema structure
         return {
           profile: analysisResult as unknown as Record<string, unknown>,
           confidence: {},
@@ -86,10 +99,25 @@ const createMockLLMProvider = (): LLMProvider => {
         }
       }
 
+      // Default: Assume it's a policy analysis call if not extraction or pitch
+      // Return valid PolicyAnalysisResult structure
+      const defaultAnalysisResult = {
+        currentPolicy: {
+          carrier: 'GEICO',
+          state: 'CA',
+          productType: 'auto',
+          premiums: { annual: 1200 },
+        },
+        opportunities: [],
+        bundleOptions: [],
+        deductibleOptimizations: [],
+        pitch: '',
+        complianceValidated: false,
+      }
       return {
-        profile: {},
+        profile: defaultAnalysisResult as unknown as Record<string, unknown>,
         confidence: {},
-        tokensUsed: 0,
+        tokensUsed: 600,
       }
     }),
   } as unknown as LLMProvider
@@ -137,28 +165,34 @@ describe('POST /api/policy/analyze', () => {
     expect(body.error?.code).toBe('INVALID_REQUEST')
   })
 
-  it('should return 400 for empty policy text', async () => {
+  it('should return 400 for missing PolicySummary', async () => {
     const req = new Request('http://localhost/api/policy/analyze', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ policyText: '' }),
+      body: JSON.stringify({}), // Missing required policySummary
     })
 
     const res = await app.request(req)
-    // Empty policy text should be caught by validation (400) or fail during analysis (500)
-    // Both are acceptable - the important thing is it doesn't return 200
-    expect(res.status).toBeGreaterThanOrEqual(400)
+    expect(res.status).toBe(400)
 
     const body = (await res.json()) as { error?: { code?: string } }
-    expect(body.error).toBeDefined()
+    expect(body.error?.code).toBe('INVALID_REQUEST')
   })
 
-  it('should extract policy data from text and analyze', async () => {
+  it('should analyze policy with PolicySummary', async () => {
+    const policySummary: PolicySummary = {
+      carrier: 'GEICO',
+      state: 'CA',
+      productType: 'auto',
+      premiums: { annual: 1200 },
+    }
+
     const req = new Request('http://localhost/api/policy/analyze', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        policyText: 'carrier:GEICO state:CA productType:auto premium:$1200/yr',
+        policySummary,
+        policyText: 'carrier:GEICO state:CA productType:auto premium:$1200/yr', // Optional, for validation
       }),
     })
 
@@ -203,24 +237,17 @@ describe('POST /api/policy/analyze', () => {
     expect(body.currentPolicy.carrier).toBe('GEICO')
   })
 
-  it('should return 400 if extracted policy missing required fields', async () => {
-    // Mock extraction to return incomplete policy
-    ;(
-      mockLLMProvider.extractWithStructuredOutput as ReturnType<typeof mock>
-    ).mockImplementationOnce(async () => ({
-      profile: {
-        carrier: 'GEICO',
-        // Missing state and productType
-      },
-      confidence: {},
-      tokensUsed: 200,
-    }))
+  it('should return 400 if PolicySummary missing required fields', async () => {
+    const incompletePolicySummary: PolicySummary = {
+      carrier: 'GEICO',
+      // Missing state and productType
+    }
 
     const req = new Request('http://localhost/api/policy/analyze', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        policyText: 'carrier:GEICO',
+        policySummary: incompletePolicySummary,
       }),
     })
 
@@ -228,7 +255,7 @@ describe('POST /api/policy/analyze', () => {
     expect(res.status).toBe(400)
 
     const body = (await res.json()) as { error?: { code?: string } }
-    expect(body.error?.code).toBe('EXTRACTION_ERROR')
+    expect(body.error?.code).toBe('VALIDATION_ERROR')
   })
 
   it('should return 400 for invalid policySummary', async () => {
@@ -251,11 +278,18 @@ describe('POST /api/policy/analyze', () => {
   })
 
   it('should include decision trace in response', async () => {
+    const policySummary: PolicySummary = {
+      carrier: 'GEICO',
+      state: 'CA',
+      productType: 'auto',
+      premiums: { annual: 1200 },
+    }
+
     const req = new Request('http://localhost/api/policy/analyze', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        policyText: 'carrier:GEICO state:CA productType:auto premium:$1200/yr',
+        policySummary,
       }),
     })
 
@@ -271,11 +305,18 @@ describe('POST /api/policy/analyze', () => {
   })
 
   it('should log token usage in decision trace', async () => {
+    const policySummary: PolicySummary = {
+      carrier: 'GEICO',
+      state: 'CA',
+      productType: 'auto',
+      premiums: { annual: 1200 },
+    }
+
     const req = new Request('http://localhost/api/policy/analyze', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        policyText: 'carrier:GEICO state:CA productType:auto premium:$1200/yr',
+        policySummary,
       }),
     })
 
@@ -285,18 +326,24 @@ describe('POST /api/policy/analyze', () => {
     const body = (await res.json()) as PolicyAnalysisResult
     const llmCalls = body.trace?.llmCalls
     expect(llmCalls).toBeDefined()
-    expect(llmCalls?.length).toBeGreaterThanOrEqual(2) // At least extraction + analysis
-    expect(llmCalls?.some((call) => call.agent === 'conversational-extractor')).toBe(true)
+    expect(llmCalls?.length).toBeGreaterThanOrEqual(2) // At least analysis + pitch
     expect(llmCalls?.some((call) => call.agent === 'policy-analysis-agent')).toBe(true)
     expect(llmCalls?.some((call) => call.agent === 'pitch-generator')).toBe(true)
   })
 
   it('should validate response against PolicyAnalysisResult schema', async () => {
+    const policySummary: PolicySummary = {
+      carrier: 'GEICO',
+      state: 'CA',
+      productType: 'auto',
+      premiums: { annual: 1200 },
+    }
+
     const req = new Request('http://localhost/api/policy/analyze', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        policyText: 'carrier:GEICO state:CA productType:auto premium:$1200/yr',
+        policySummary,
       }),
     })
 
@@ -305,6 +352,10 @@ describe('POST /api/policy/analyze', () => {
 
     const body = (await res.json()) as PolicyAnalysisResult
     const validationResult = policyAnalysisResultSchema.safeParse(body)
+    if (!validationResult.success) {
+      console.error('Validation errors:', JSON.stringify(validationResult.error.errors, null, 2))
+      console.error('Response body:', JSON.stringify(body, null, 2))
+    }
     expect(validationResult.success).toBe(true)
   })
 
@@ -312,11 +363,17 @@ describe('POST /api/policy/analyze', () => {
     // Override the beforeEach mock to return undefined carrier
     const spy = spyOn(knowledgePackRAG, 'getCarrierByName').mockReturnValue(undefined)
 
+    const policySummary: PolicySummary = {
+      carrier: 'UnknownCarrier',
+      state: 'CA',
+      productType: 'auto',
+    }
+
     const req = new Request('http://localhost/api/policy/analyze', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        policyText: 'carrier:UnknownCarrier state:CA productType:auto',
+        policySummary,
       }),
     })
 
@@ -329,11 +386,18 @@ describe('POST /api/policy/analyze', () => {
   })
 
   it('should run compliance filter on generated pitch', async () => {
+    const policySummary: PolicySummary = {
+      carrier: 'GEICO',
+      state: 'CA',
+      productType: 'auto',
+      premiums: { annual: 1200 },
+    }
+
     const req = new Request('http://localhost/api/policy/analyze', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        policyText: 'carrier:GEICO state:CA productType:auto premium:$1200/yr',
+        policySummary,
       }),
     })
 

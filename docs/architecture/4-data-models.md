@@ -54,7 +54,7 @@
 - `ownsHome` - Optional, determines bundle eligibility
 - `cleanRecord3Yr` - Optional, qualifies for safe driver discounts
 - `currentCarrier` - Optional, used in policy analysis flow
-- `currentPremium` - Optional, calculates savings in policy analysis
+- `premiums` - Optional, current premiums object with `annual`, `monthly`, `semiAnnual` fields (used for savings calculations)
 - `existingPolicies` - **Required for bundle discount analysis**, optional otherwise. Array of other products user currently has for multi-carrier consolidation analysis (e.g., `[{ product: 'home', carrier: 'State Farm', premium: 800 }, { product: 'auto', carrier: 'GEICO', premium: 1200 }]`). Carrier IDs must match knowledge pack carrier names.
 
 **Design Decisions:**

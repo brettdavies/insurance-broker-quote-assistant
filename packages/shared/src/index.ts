@@ -4,6 +4,8 @@ export type {
   CarrierFile,
   State,
   StateFile,
+  Product,
+  ProductFile,
   Discount,
   Compensation,
   Source,
@@ -22,8 +24,20 @@ export {
   type ExistingPolicy,
 } from './schemas/user-profile'
 
-// Export user profile field metadata
+// Export unified field metadata definitions
 export {
+  unifiedFieldMetadata,
+  type UnifiedFieldMetadata,
+} from './schemas/unified-field-metadata'
+
+// Export unified field metadata utilities
+export {
+  getUnifiedFieldMetadata,
+  getFieldsForFlow,
+  getUnifiedFieldShortcut,
+  getUnifiedFieldFromShortcut,
+  getUnifiedFieldFromAlias,
+  // Backward compatibility exports (intake-only) - these filter to intake flow only
   userProfileFieldMetadata,
   getFieldMetadata,
   getFieldsWithShortcuts,
@@ -31,22 +45,18 @@ export {
   getFieldFromShortcut,
   getFieldFromAlias,
   type FieldMetadata,
-} from './schemas/user-profile-metadata'
+} from './schemas/unified-field-metadata-utils'
 
 // Export intake result schema and types
 export {
   intakeResultSchema,
   routeDecisionSchema,
-  routeDecisionStubSchema,
   citationSchema,
   opportunityStubSchema,
-  prefillPacketStubSchema,
   type IntakeResult,
   type RouteDecision,
-  type RouteDecisionStub,
   type Citation,
   type OpportunityStub,
-  type PrefillPacketStub,
 } from './schemas/intake-result'
 
 // Export opportunity schema and types

@@ -32,7 +32,7 @@ describe('Routing Engine', () => {
       const result = routeToCarrier(
         {
           state: 'CA',
-          productLine: 'auto',
+          productType: 'auto',
           age: 30,
         },
         createMockGetAllCarriers([geico, progressive])
@@ -51,7 +51,7 @@ describe('Routing Engine', () => {
       const result = routeToCarrier(
         {
           state: 'FL',
-          productLine: 'auto',
+          productType: 'auto',
           age: 30,
         },
         createMockGetAllCarriers([geico, progressive])
@@ -74,7 +74,7 @@ describe('Routing Engine', () => {
       const result = routeToCarrier(
         {
           state: 'CA',
-          productLine: 'renters',
+          productType: 'renters',
           age: 25,
         },
         createMockGetAllCarriers([geico, progressive])
@@ -90,7 +90,7 @@ describe('Routing Engine', () => {
       const result = routeToCarrier(
         {
           state: 'CA',
-          productLine: 'umbrella',
+          productType: 'umbrella',
           age: 30,
         },
         createMockGetAllCarriers([geico])
@@ -118,7 +118,7 @@ describe('Routing Engine', () => {
         const result = routeToCarrier(
           {
             state: 'CA',
-            productLine: 'auto',
+            productType: 'auto',
             age: 25,
           },
           createMockGetAllCarriers([carrier])
@@ -142,7 +142,7 @@ describe('Routing Engine', () => {
         const result = routeToCarrier(
           {
             state: 'CA',
-            productLine: 'auto',
+            productType: 'auto',
             age: 16,
           },
           createMockGetAllCarriers([carrier])
@@ -167,7 +167,7 @@ describe('Routing Engine', () => {
         const result = routeToCarrier(
           {
             state: 'CA',
-            productLine: 'auto',
+            productType: 'auto',
             age: 75,
           },
           createMockGetAllCarriers([carrier])
@@ -191,7 +191,7 @@ describe('Routing Engine', () => {
         const result = routeToCarrier(
           {
             state: 'CA',
-            productLine: 'auto',
+            productType: 'auto',
             age: 90,
           },
           createMockGetAllCarriers([carrier])
@@ -216,7 +216,7 @@ describe('Routing Engine', () => {
         const result = routeToCarrier(
           {
             state: 'CA',
-            productLine: 'auto',
+            productType: 'auto',
           },
           createMockGetAllCarriers([carrier])
         )
@@ -242,7 +242,7 @@ describe('Routing Engine', () => {
         const result = routeToCarrier(
           {
             state: 'CA',
-            productLine: 'auto',
+            productType: 'auto',
             age: 30,
             vehicles: 2,
           },
@@ -267,7 +267,7 @@ describe('Routing Engine', () => {
         const result = routeToCarrier(
           {
             state: 'CA',
-            productLine: 'auto',
+            productType: 'auto',
             age: 30,
             vehicles: 5,
           },
@@ -293,7 +293,7 @@ describe('Routing Engine', () => {
         const result = routeToCarrier(
           {
             state: 'CA',
-            productLine: 'auto',
+            productType: 'auto',
             age: 30,
           },
           createMockGetAllCarriers([carrier])
@@ -320,7 +320,7 @@ describe('Routing Engine', () => {
         const result = routeToCarrier(
           {
             state: 'CA',
-            productLine: 'auto',
+            productType: 'auto',
             age: 30,
             creditScore: 650,
           },
@@ -345,7 +345,7 @@ describe('Routing Engine', () => {
         const result = routeToCarrier(
           {
             state: 'CA',
-            productLine: 'auto',
+            productType: 'auto',
             age: 30,
             creditScore: 550,
           },
@@ -371,7 +371,7 @@ describe('Routing Engine', () => {
         const result = routeToCarrier(
           {
             state: 'CA',
-            productLine: 'auto',
+            productType: 'auto',
             age: 30,
           },
           createMockGetAllCarriers([carrier])
@@ -398,7 +398,7 @@ describe('Routing Engine', () => {
         const result = routeToCarrier(
           {
             state: 'CA',
-            productLine: 'home',
+            productType: 'home',
             age: 30,
             propertyType: 'single-family',
           },
@@ -423,7 +423,7 @@ describe('Routing Engine', () => {
         const result = routeToCarrier(
           {
             state: 'CA',
-            productLine: 'home',
+            productType: 'home',
             age: 30,
             propertyType: 'mobile-home',
           },
@@ -449,7 +449,7 @@ describe('Routing Engine', () => {
         const result = routeToCarrier(
           {
             state: 'CA',
-            productLine: 'home',
+            productType: 'home',
             age: 30,
           },
           createMockGetAllCarriers([carrier])
@@ -474,7 +474,7 @@ describe('Routing Engine', () => {
         const result = routeToCarrier(
           {
             state: 'CA',
-            productLine: 'renters',
+            productType: 'renters',
             age: 25,
             propertyType: 'apartment',
           },
@@ -501,7 +501,7 @@ describe('Routing Engine', () => {
         const result = routeToCarrier(
           {
             state: 'CA',
-            productLine: 'auto',
+            productType: 'auto',
             age: 30,
             cleanRecord3Yr: true,
           },
@@ -526,7 +526,7 @@ describe('Routing Engine', () => {
         const result = routeToCarrier(
           {
             state: 'CA',
-            productLine: 'auto',
+            productType: 'auto',
             age: 30,
             cleanRecord3Yr: false,
           },
@@ -552,7 +552,7 @@ describe('Routing Engine', () => {
         const result = routeToCarrier(
           {
             state: 'CA',
-            productLine: 'auto',
+            productType: 'auto',
             age: 30,
           },
           createMockGetAllCarriers([carrier])
@@ -577,7 +577,7 @@ describe('Routing Engine', () => {
         const result = routeToCarrier(
           {
             state: 'CA',
-            productLine: 'auto',
+            productType: 'auto',
             age: 30,
             cleanRecord3Yr: false,
           },
@@ -606,7 +606,7 @@ describe('Routing Engine', () => {
       const result = routeToCarrier(
         {
           state: 'CA',
-          productLine: 'auto',
+          productType: 'auto',
           age: 30,
         },
         createMockGetAllCarriers([geico, progressive])
@@ -625,7 +625,7 @@ describe('Routing Engine', () => {
       const result = routeToCarrier(
         {
           state: 'CA',
-          productLine: 'auto',
+          productType: 'auto',
           age: 30,
         },
         createMockGetAllCarriers([geico, progressive, stateFarm])
@@ -656,7 +656,7 @@ describe('Routing Engine', () => {
       const resultFull = routeToCarrier(
         {
           state: 'CA',
-          productLine: 'auto',
+          productType: 'auto',
           age: 30,
           vehicles: 2,
         },
@@ -667,7 +667,7 @@ describe('Routing Engine', () => {
       const resultPartial = routeToCarrier(
         {
           state: 'CA',
-          productLine: 'auto',
+          productType: 'auto',
         },
         getAllCarriers
       )
@@ -685,7 +685,7 @@ describe('Routing Engine', () => {
       const result = routeToCarrier(
         {
           state: 'WY',
-          productLine: 'renters',
+          productType: 'renters',
           age: 25,
         },
         createMockGetAllCarriers([carrier])
@@ -712,7 +712,7 @@ describe('Routing Engine', () => {
       const result = routeToCarrier(
         {
           state: 'CA',
-          productLine: 'auto',
+          productType: 'auto',
           age: 16,
         },
         createMockGetAllCarriers([carrier])
@@ -726,7 +726,7 @@ describe('Routing Engine', () => {
 
     it('should handle missing state', () => {
       const result = routeToCarrier({
-        productLine: 'auto',
+        productType: 'auto',
         age: 30,
       })
 
@@ -734,14 +734,14 @@ describe('Routing Engine', () => {
       expect(result.rationale).toContain('State is required')
     })
 
-    it('should handle missing productLine', () => {
+    it('should handle missing productType', () => {
       const result = routeToCarrier({
         state: 'CA',
         age: 30,
       })
 
       expect(result.eligibleCarriers).toEqual([])
-      expect(result.rationale).toContain('Product line is required')
+      expect(result.rationale).toContain('Product type is required')
     })
   })
 
@@ -761,7 +761,7 @@ describe('Routing Engine', () => {
       const result = routeToCarrier(
         {
           state: 'CA',
-          productLine: 'auto',
+          productType: 'auto',
           age: 30,
         },
         createMockGetAllCarriers([geico])
@@ -834,7 +834,7 @@ describe('Routing Engine', () => {
           const result = routeToCarrier(
             {
               state,
-              productLine: product as 'auto' | 'home' | 'renters' | 'umbrella',
+              productType: product as 'auto' | 'home' | 'renters' | 'umbrella',
               age: 30,
             },
             getAllCarriers

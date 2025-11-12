@@ -80,10 +80,10 @@ const PRODUCT_DISCLAIMERS: Record<string, string[]> = {
  * Get disclaimers based on state and product line
  *
  * @param state - State code (e.g., 'CA', 'TX')
- * @param productLine - Product line (e.g., 'auto', 'home')
+ * @param productType - Product type (e.g., 'auto', 'home')
  * @returns Array of disclaimers (base + state-specific + product-specific)
  */
-function getDisclaimers(state?: string, productLine?: string): string[] {
+function getDisclaimers(state?: string, productType?: string): string[] {
   const disclaimers: string[] = [...BASE_DISCLAIMERS]
 
   // Add state-specific disclaimers
@@ -92,8 +92,8 @@ function getDisclaimers(state?: string, productLine?: string): string[] {
   }
 
   // Add product-specific disclaimers
-  if (productLine && PRODUCT_DISCLAIMERS[productLine]) {
-    disclaimers.push(...PRODUCT_DISCLAIMERS[productLine])
+  if (productType && PRODUCT_DISCLAIMERS[productType]) {
+    disclaimers.push(...PRODUCT_DISCLAIMERS[productType])
   }
 
   // Remove duplicates (preserve order)
@@ -128,21 +128,21 @@ function detectProhibitedPhrases(output: string): string[] {
  *
  * @param output - Output text to validate
  * @param state - Optional state code for disclaimer selection
- * @param productLine - Optional product line for disclaimer selection
+ * @param productType - Optional product type for disclaimer selection
  * @returns ComplianceResult with validation result, violations, and disclaimers
  */
 export function validateOutput(
   output: string,
   state?: string | null,
-  productLine?: string | null
+  productType?: string | null
 ): ComplianceResult {
   // Handle edge cases
   if (!output || output.trim().length === 0) {
     return {
       passed: true,
-      disclaimers: getDisclaimers(state || undefined, productLine || undefined),
+      disclaimers: getDisclaimers(state || undefined, productType || undefined),
       state: state || undefined,
-      productLine: productLine || undefined,
+      productType: productType || undefined,
     }
   }
 
@@ -156,15 +156,15 @@ export function validateOutput(
       violations,
       replacementMessage: LICENSED_AGENT_HANDOFF_MESSAGE,
       state: state || undefined,
-      productLine: productLine || undefined,
+      productType: productType || undefined,
     }
   }
 
   // No violations - return disclaimers
   return {
     passed: true,
-    disclaimers: getDisclaimers(state || undefined, productLine || undefined),
+    disclaimers: getDisclaimers(state || undefined, productType || undefined),
     state: state || undefined,
-    productLine: productLine || undefined,
+    productType: productType || undefined,
   }
 }

@@ -7,7 +7,7 @@
 
 import { readFile, readdir } from 'node:fs/promises'
 import { join } from 'node:path'
-import type { Carrier, CarrierFile, State, StateFile } from '@repo/shared'
+import type { Carrier, CarrierFile, Product, ProductFile, State, StateFile } from '@repo/shared'
 import { getFieldValue } from '../utils/field-helpers'
 import { logError, logInfo, logWarn } from '../utils/logger'
 
@@ -37,6 +37,11 @@ const carriersMap = new Map<string, Carrier>()
  * In-memory storage for states (keyed by state code)
  */
 const statesMap = new Map<string, State>()
+
+/**
+ * In-memory storage for products (keyed by product code)
+ */
+const productsMap = new Map<string, Product>()
 
 /**
  * Current loading status
@@ -86,12 +91,26 @@ export function getAllStates(): State[] {
 }
 
 /**
+ * Get a product by code
+ */
+export function getProduct(code: string): Product | undefined {
+  return productsMap.get(code)
+}
+
+/**
+ * Get all products
+ */
+export function getAllProducts(): Product[] {
+  return Array.from(productsMap.values())
+}
+
+/**
  * Handle file loading error
  */
 async function handleFileLoadError(
   filePath: string,
   error: unknown,
-  fileType: 'carrier' | 'state'
+  fileType: 'carrier' | 'state' | 'product'
 ): Promise<void> {
   const fileName = filePath.split('/').pop() || filePath
   const errorMessage = error instanceof Error ? error.message : String(error)
@@ -150,6 +169,26 @@ async function loadStateFile(filePath: string): Promise<void> {
 }
 
 /**
+ * Load a single product file
+ */
+async function loadProductFile(filePath: string): Promise<void> {
+  try {
+    const content = await readFile(filePath, 'utf-8')
+    const data: ProductFile = JSON.parse(content)
+
+    // Validate required fields
+    if (!data.product || !data.product.code) {
+      throw new Error('Invalid product file: missing product.code')
+    }
+
+    // Store in map keyed by product code
+    productsMap.set(data.product.code, data.product)
+  } catch (error) {
+    await handleFileLoadError(filePath, error, 'product')
+  }
+}
+
+/**
  * Load all knowledge pack files asynchronously
  *
  * This function is non-blocking - it starts loading files but doesn't wait for completion.
@@ -158,12 +197,15 @@ async function loadStateFile(filePath: string): Promise<void> {
 export async function loadKnowledgePack(knowledgePackDir = 'knowledge_pack'): Promise<void> {
   await logInfo('Loading knowledge pack from knowledge_pack/...', {
     type: 'knowledge_pack_load_start',
+    knowledgePackDir,
   })
 
   // Clear existing Maps before loading new data
   carriersMap.clear()
   statesMap.clear()
+  productsMap.clear()
 
+  // Reset loading status
   loadingStatus = {
     state: 'loading',
     carriersCount: 0,
@@ -174,19 +216,46 @@ export async function loadKnowledgePack(knowledgePackDir = 'knowledge_pack'): Pr
   }
 
   try {
-    // Resolve knowledge pack directory relative to project root (not apps/api)
-    // When running from monorepo root, process.cwd() is the project root
-    // When running from apps/api, we need to go up two levels
-    const projectRoot = process.cwd().includes('apps/api')
-      ? join(process.cwd(), '..', '..')
-      : process.cwd()
+    // If knowledgePackDir is already an absolute path, use it directly
+    // Otherwise, resolve relative to project root (not apps/api)
+    let resolvedKnowledgePackDir: string
+    if (knowledgePackDir.startsWith('/') || knowledgePackDir.includes('__tests__')) {
+      // Absolute path or test directory path - use as-is
+      resolvedKnowledgePackDir = knowledgePackDir
+    } else {
+      // Relative path - resolve relative to project root
+      const projectRoot = process.cwd().includes('apps/api')
+        ? join(process.cwd(), '..', '..')
+        : process.cwd()
+      resolvedKnowledgePackDir = join(projectRoot, knowledgePackDir)
+    }
 
-    const carriersDir = join(projectRoot, knowledgePackDir, 'carriers')
-    const statesDir = join(projectRoot, knowledgePackDir, 'states')
+    const carriersDir = join(resolvedKnowledgePackDir, 'carriers')
+    const statesDir = join(resolvedKnowledgePackDir, 'states')
+    const productsDir = join(resolvedKnowledgePackDir, 'products')
 
-    // Read directory contents
-    const carrierFiles = await readdir(carriersDir)
-    const stateFiles = await readdir(statesDir)
+    // Read directory contents (handle missing directories gracefully)
+    let carrierFiles: string[] = []
+    let stateFiles: string[] = []
+    let productFiles: string[] = []
+
+    try {
+      carrierFiles = await readdir(carriersDir)
+    } catch {
+      // Directory doesn't exist, use empty array
+    }
+
+    try {
+      stateFiles = await readdir(statesDir)
+    } catch {
+      // Directory doesn't exist, use empty array
+    }
+
+    try {
+      productFiles = await readdir(productsDir)
+    } catch {
+      // Directory doesn't exist, use empty array
+    }
 
     // Filter to JSON files only
     const carrierJsonFiles = carrierFiles
@@ -197,10 +266,15 @@ export async function loadKnowledgePack(knowledgePackDir = 'knowledge_pack'): Pr
       .filter((file) => file.endsWith('.json'))
       .map((file) => join(statesDir, file))
 
+    const productJsonFiles = productFiles
+      .filter((file) => file.endsWith('.json'))
+      .map((file) => join(productsDir, file))
+
     // Load all files concurrently
     const loadPromises = [
       ...carrierJsonFiles.map((file) => loadCarrierFile(file)),
       ...stateJsonFiles.map((file) => loadStateFile(file)),
+      ...productJsonFiles.map((file) => loadProductFile(file)),
     ]
 
     await Promise.all(loadPromises)

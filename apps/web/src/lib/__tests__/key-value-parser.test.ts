@@ -195,7 +195,7 @@ describe('Key-Value Parser', () => {
 
       expect(result).toHaveLength(2)
       expect(result[0]?.fieldName).toBe('kids')
-      expect(result[1]?.fieldName).toBe('dependents')
+      expect(result[1]?.fieldName).toBe('householdSize') // 'deps' alias maps to householdSize (dependents was removed)
     })
 
     it('handles credit score field with j shortcut', () => {

@@ -45,13 +45,13 @@ describe('Key-Value Parser', () => {
       expect(result.profile.kids).toBe(2)
     })
 
-    it('should parse productLine enum values', () => {
+    it('should parse productType enum values', () => {
       const result = parseKeyValueSyntax('l:auto')
-      expect(result.profile.productLine).toBe('auto')
+      expect(result.profile.productType).toBe('auto')
 
-      // Note: Full field name "productLine" contains colon in regex pattern, so use alias
-      const result2 = parseKeyValueSyntax('line:home')
-      expect(result2.profile.productLine).toBe('home')
+      // Test alias
+      const result2 = parseKeyValueSyntax('product:home')
+      expect(result2.profile.productType).toBe('home')
     })
 
     it('should parse boolean fields', () => {
@@ -65,9 +65,12 @@ describe('Key-Value Parser', () => {
       expect(result.profile.vehicles).toBe(1) // Last value wins
     })
 
-    it('should handle deps alias for householdSize', () => {
+    it('should handle deps/dependents alias for householdSize', () => {
       const result = parseKeyValueSyntax('d:3 deps:4')
       expect(result.profile.householdSize).toBe(4) // Last value wins
+
+      const result2 = parseKeyValueSyntax('dependents:5')
+      expect(result2.profile.householdSize).toBe(5)
     })
 
     it('should return empty profile for no matches', () => {

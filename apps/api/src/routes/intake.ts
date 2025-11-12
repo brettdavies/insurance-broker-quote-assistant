@@ -94,7 +94,7 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
         complianceResult = validateOutput(
           pitch,
           extractionResult.profile.state,
-          extractionResult.profile.productLine
+          extractionResult.profile.productType
         )
       } catch (error) {
         // Handle compliance filter errors gracefully
@@ -143,7 +143,7 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
           violations: complianceResult.violations,
           disclaimersAdded: complianceResult.disclaimers?.length || 0,
           state: complianceResult.state,
-          productLine: complianceResult.productLine,
+          productType: complianceResult.productType,
         }
       )
 
@@ -158,7 +158,7 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
           // Get missing fields with carrier/state-specific requirements
           missingFieldsForResponse = getMissingFields(
             extractionResult.profile,
-            extractionResult.profile.productLine,
+            extractionResult.profile.productType,
             extractionResult.profile.state,
             routeDecision.primaryCarrier
           )
@@ -179,7 +179,7 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
         // If no route decision, still calculate missing fields without carrier-specific requirements
         missingFieldsForResponse = getMissingFields(
           extractionResult.profile,
-          extractionResult.profile.productLine,
+          extractionResult.profile.productType,
           extractionResult.profile.state
         )
       }

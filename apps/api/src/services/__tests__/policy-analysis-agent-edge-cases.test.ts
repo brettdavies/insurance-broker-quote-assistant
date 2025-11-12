@@ -110,6 +110,25 @@ describe('PolicyAnalysisAgent - Edge Cases', () => {
       spyOn(knowledgePackRAG, 'getCarrierBundleDiscounts').mockReturnValue([])
       spyOn(knowledgePackRAG, 'getCarrierProducts').mockReturnValue(['auto'])
 
+      // Update mock LLM to return the high premium value
+      ;(mockLLMProvider.extractWithStructuredOutput as any) = async () => ({
+        profile: {
+          currentPolicy: {
+            carrier: 'GEICO',
+            state: 'CA',
+            productType: 'auto',
+            premiums: { annual: 50000 },
+          },
+          opportunities: [],
+          bundleOptions: [],
+          deductibleOptimizations: [],
+          pitch: '',
+          complianceValidated: false,
+        },
+        confidence: {},
+        tokensUsed: 500,
+      })
+
       const policy: PolicySummary = {
         carrier: 'GEICO',
         state: 'CA',
@@ -136,6 +155,25 @@ describe('PolicyAnalysisAgent - Edge Cases', () => {
       spyOn(knowledgePackRAG, 'getCarrierDiscounts').mockReturnValue([])
       spyOn(knowledgePackRAG, 'getCarrierBundleDiscounts').mockReturnValue([])
       spyOn(knowledgePackRAG, 'getCarrierProducts').mockReturnValue(['auto'])
+
+      // Update mock LLM to return the low premium value
+      ;(mockLLMProvider.extractWithStructuredOutput as any) = async () => ({
+        profile: {
+          currentPolicy: {
+            carrier: 'GEICO',
+            state: 'CA',
+            productType: 'auto',
+            premiums: { annual: 100 },
+          },
+          opportunities: [],
+          bundleOptions: [],
+          deductibleOptimizations: [],
+          pitch: '',
+          complianceValidated: false,
+        },
+        confidence: {},
+        tokensUsed: 500,
+      })
 
       const policy: PolicySummary = {
         carrier: 'GEICO',
@@ -164,6 +202,25 @@ describe('PolicyAnalysisAgent - Edge Cases', () => {
       spyOn(knowledgePackRAG, 'getCarrierBundleDiscounts').mockReturnValue([])
       spyOn(knowledgePackRAG, 'getCarrierProducts').mockReturnValue(['auto'])
 
+      // Update mock LLM to return the zero premium value
+      ;(mockLLMProvider.extractWithStructuredOutput as any) = async () => ({
+        profile: {
+          currentPolicy: {
+            carrier: 'GEICO',
+            state: 'CA',
+            productType: 'auto',
+            premiums: { annual: 0 },
+          },
+          opportunities: [],
+          bundleOptions: [],
+          deductibleOptimizations: [],
+          pitch: '',
+          complianceValidated: false,
+        },
+        confidence: {},
+        tokensUsed: 500,
+      })
+
       const policy: PolicySummary = {
         carrier: 'GEICO',
         state: 'CA',
@@ -191,6 +248,34 @@ describe('PolicyAnalysisAgent - Edge Cases', () => {
       spyOn(knowledgePackRAG, 'getCarrierDiscounts').mockReturnValue([])
       spyOn(knowledgePackRAG, 'getCarrierBundleDiscounts').mockReturnValue([])
       spyOn(knowledgePackRAG, 'getCarrierProducts').mockReturnValue(['auto'])
+
+      // Update mock LLM to return all deductible types
+      ;(mockLLMProvider.extractWithStructuredOutput as any) = async () => ({
+        profile: {
+          currentPolicy: {
+            carrier: 'GEICO',
+            state: 'CA',
+            productType: 'auto',
+            premiums: { annual: 1200 },
+            deductibles: {
+              auto: 500,
+              comprehensive: 250,
+              collision: 1000,
+            },
+            coverageLimits: {
+              liability: 100000,
+              propertyDamage: 50000,
+            },
+          },
+          opportunities: [],
+          bundleOptions: [],
+          deductibleOptimizations: [],
+          pitch: '',
+          complianceValidated: false,
+        },
+        confidence: {},
+        tokensUsed: 500,
+      })
 
       const policy: PolicySummary = {
         carrier: 'GEICO',
