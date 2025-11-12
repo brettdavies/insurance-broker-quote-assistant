@@ -35,7 +35,7 @@ export const extractionTestCases: ExtractionTestCase[] = [
     expected: {
       state: 'CA',
       age: 30,
-      productLine: 'auto',
+      productType: 'auto',
     },
     description: 'Key-value syntax with state, age, and product',
   },
@@ -43,7 +43,7 @@ export const extractionTestCases: ExtractionTestCase[] = [
     input: 'I need auto insurance in California',
     expected: {
       state: 'CA',
-      productLine: 'auto',
+      productType: 'auto',
     },
     description: 'Natural language with state and product',
   },
@@ -51,7 +51,7 @@ export const extractionTestCases: ExtractionTestCase[] = [
     input: 'I need auto insurance in California. I am 30 years old and have 2 vehicles.',
     expected: {
       state: 'CA',
-      productLine: 'auto',
+      productType: 'auto',
       age: 30,
       vehicles: 2,
     },
@@ -61,7 +61,7 @@ export const extractionTestCases: ExtractionTestCase[] = [
     input: 's:TX l:home a:35 h:4',
     expected: {
       state: 'TX',
-      productLine: 'home',
+      productType: 'home',
       age: 35,
       householdSize: 4,
     },
@@ -71,7 +71,7 @@ export const extractionTestCases: ExtractionTestCase[] = [
     input: 'Client needs renters insurance in Florida, age 25',
     expected: {
       state: 'FL',
-      productLine: 'renters',
+      productType: 'renters',
       age: 25,
     },
     description: 'Natural language with renters insurance',
@@ -86,7 +86,7 @@ export const routingTestCases: RoutingTestCase[] = [
   {
     profile: {
       state: 'CA',
-      productLine: 'auto',
+      productType: 'auto',
       age: 30,
     },
     expectedCarriers: ['GEICO', 'Progressive'],
@@ -95,7 +95,7 @@ export const routingTestCases: RoutingTestCase[] = [
   {
     profile: {
       state: 'TX',
-      productLine: 'home',
+      productType: 'home',
       age: 35,
       ownsHome: true,
     },
@@ -105,7 +105,7 @@ export const routingTestCases: RoutingTestCase[] = [
   {
     profile: {
       state: 'FL',
-      productLine: 'renters',
+      productType: 'renters',
       age: 25,
     },
     expectedCarriers: ['GEICO'],
@@ -114,7 +114,7 @@ export const routingTestCases: RoutingTestCase[] = [
   {
     profile: {
       state: 'NY',
-      productLine: 'auto',
+      productType: 'auto',
       age: 18,
     },
     expectedCarriers: [],
@@ -138,7 +138,7 @@ export const keyValueTestCases = [
   },
   {
     input: 's:CA a:30 l:auto v:2',
-    expected: { state: 'CA', age: 30, productLine: 'auto', vehicles: 2 },
+    expected: { state: 'CA', age: 30, productType: 'auto', vehicles: 2 },
     description: 'Multiple fields',
   },
   {
@@ -159,17 +159,17 @@ export const keyValueTestCases = [
 export const naturalLanguageTestCases = [
   {
     input: 'I need auto insurance in California',
-    expectedFields: ['state', 'productLine'],
+    expectedFields: ['state', 'productType'],
     description: 'Simple natural language',
   },
   {
     input: 'My client is 35 years old and needs home insurance in Texas',
-    expectedFields: ['age', 'productLine', 'state'],
+    expectedFields: ['age', 'productType', 'state'],
     description: 'Natural language with age',
   },
   {
     input: 'Client has 2 vehicles and needs auto coverage in Florida',
-    expectedFields: ['vehicles', 'productLine', 'state'],
+    expectedFields: ['vehicles', 'productType', 'state'],
     description: 'Natural language with vehicles',
   },
 ] as const

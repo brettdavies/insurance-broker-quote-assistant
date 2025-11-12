@@ -84,15 +84,15 @@ export const expectedExtractions = {
   's:CA a:30 l:auto': {
     state: 'CA',
     age: 30,
-    productLine: 'auto',
+    productType: 'auto',
   },
   'I need auto insurance in California': {
     state: 'CA',
-    productLine: 'auto',
+    productType: 'auto',
   },
   'I need auto insurance in California. I am 30 years old and have 2 vehicles.': {
     state: 'CA',
-    productLine: 'auto',
+    productType: 'auto',
     age: 30,
     vehicles: 2,
   },

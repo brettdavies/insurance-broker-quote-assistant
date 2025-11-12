@@ -5,16 +5,16 @@ import { GeminiProvider } from '../gemini-provider'
 /**
  * Gemini Provider Tests
  *
- * Tests against actual Gemini API (when enabled via TEST_GEMINI_API env var).
+ * Tests against actual Gemini API (when enabled via TEST_TARGETS=real-api env var).
  * These tests verify the real API integration works correctly.
  *
  * To run with real API:
- *   TEST_GEMINI_API=true bun test src/services/__tests__/gemini-provider.test.ts
+ *   TEST_TARGETS=real-api bun test src/services/__tests__/gemini-provider.test.ts
  *
  * Note: These tests may incur API costs and require network access.
  */
 
-const USE_REAL_API = process.env.TEST_GEMINI_API === 'true'
+const USE_REAL_API = process.env.TEST_TARGETS === 'real-api'
 
 describe('GeminiProvider', () => {
   let provider: GeminiProvider

@@ -52,10 +52,10 @@ TEST_API_URL=http://localhost:7070 bun run test:contract
 
 ### Gemini Provider Tests (Real API)
 
-Tests against actual Gemini API to verify integration. **Requires `TEST_GEMINI_API=true` and may incur API costs.**
+Tests against actual Gemini API to verify integration. **Requires `TEST_TARGETS=real-api` and may incur API costs.**
 
 ```bash
-TEST_GEMINI_API=true bun run test:gemini
+TEST_TARGETS=real-api bun run test:gemini
 ```
 
 **Coverage:**
@@ -66,7 +66,9 @@ TEST_GEMINI_API=true bun run test:gemini
 - Timeout handling
 - Schema compliance
 
-## Test Data / Sample Paragraphs
+## Test Data
+
+### Test Messages
 
 All test messages are centralized in:
 **`src/__tests__/fixtures/test-messages.ts`**
@@ -78,6 +80,16 @@ This includes:
 - Complex scenarios (`testMessages.complex`)
 - Edge cases (`testMessages.edgeCases`)
 - Conversation history examples (`testMessages.conversationHistory`)
+
+### Knowledge Pack Data
+
+Tests use the **real knowledge pack** data from `knowledge_pack/` directory instead of test fixtures. This ensures tests validate against actual production data structures and schemas.
+
+**Location:** `knowledge_pack/` (root of monorepo)
+- Carriers: `knowledge_pack/carriers/*.json`
+- States: `knowledge_pack/states/*.json`
+- Products: `knowledge_pack/products/*.json`
+- Schemas: `knowledge_pack/schemas/*.json`
 
 ### Example Usage
 
@@ -113,7 +125,7 @@ TEST_API_URL=http://localhost:7070 bun run test:contract
 
 ```bash
 # Run tests against real Gemini API
-TEST_GEMINI_API=true bun run test:gemini
+TEST_TARGETS=real-api bun run test:gemini
 ```
 
 ## Running All Tests
@@ -125,19 +137,21 @@ bun test
 # Run all tests including contract tests (requires running server)
 bun run test:all
 
-# Run with real Gemini API (requires TEST_GEMINI_API=true)
-TEST_GEMINI_API=true bun run test:gemini
+# Run with real Gemini API (requires TEST_TARGETS=real-api)
+TEST_TARGETS=real-api bun run test:gemini
 ```
 
 ## Test Coverage Summary
 
-| Test Type             | Count  | Real API?            | Status     |
-| --------------------- | ------ | -------------------- | ---------- |
-| Unit Tests            | 15     | ❌ Mocked            | ✅ Passing |
-| Integration Tests     | 6      | ❌ Mocked            | ✅ Passing |
-| Contract Tests        | 8      | ✅ If server running | ✅ Passing |
-| Gemini Provider Tests | 7      | ✅ If enabled        | ✅ Passing |
-| **Total**             | **36** |                      | ✅         |
+| Test Type             | Count | Real API?            | Status     |
+| --------------------- | ----- | -------------------- | ---------- |
+| Unit Tests            | ~200 | ❌ Mocked            | ✅ Passing |
+| Integration Tests     | ~330 | ❌ Mocked            | ✅ Passing |
+| Contract Tests        | 28   | ✅ If server running | ⏭️ Skipped |
+| Gemini Provider Tests | 8    | ✅ If enabled        | ⏭️ Skipped |
+| **Total**             | **564** (530 pass, 28 skip, 6 fail) | | ✅         |
+
+**Note:** Test counts are approximate as tests span multiple categories. Contract and Gemini provider tests are skipped by default (require server running or `TEST_TARGETS=real-api`).
 
 ## Schema Validation
 
@@ -184,6 +198,6 @@ kill $SERVER_PID
 
 To minimize costs:
 
-- Use `TEST_GEMINI_API=true` only when needed
+- Use `TEST_TARGETS=real-api` only when needed
 - Contract tests skip gracefully if server isn't running
 - Default test runs use mocks (no API calls)

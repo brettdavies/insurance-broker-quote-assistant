@@ -10,8 +10,8 @@ import { GoogleGenAI } from '@google/genai'
 import { policySummarySchema } from '@repo/shared'
 import { GeminiProvider } from '../gemini-provider'
 
-// Skip if no API key (use TEST_GEMINI_API=true to run)
-const USE_REAL_API = process.env.TEST_GEMINI_API === 'true'
+// Skip if no API key (use TEST_TARGETS=real-api to run)
+const USE_REAL_API = process.env.TEST_TARGETS === 'real-api'
 
 describe('GeminiProvider File Upload', () => {
   let provider: GeminiProvider

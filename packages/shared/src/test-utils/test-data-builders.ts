@@ -18,7 +18,7 @@ import type { UserProfile } from '../schemas/user-profile'
 export function buildUserProfile(overrides?: Partial<UserProfile>): UserProfile {
   return {
     state: 'CA',
-    productLine: 'auto',
+    productType: 'auto',
     age: 30,
     vehicles: 1,
     householdSize: 2,

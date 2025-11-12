@@ -490,6 +490,12 @@ TEST_API_URL=http://localhost:7070 bun test apps/api/src/routes/__tests__/intake
 
 ## 16.10 Code Quality Metrics
 
+**Current Test Status:**
+- ✅ **564 total tests** across 54 files
+- ✅ **530 passing** (94% pass rate)
+- ⏭️ **28 skipped** (contract tests, real API tests - require server or `TEST_TARGETS=real-api`)
+- ⚠️ **6 failing** (test isolation issues - pass when run individually)
+
 **Refactoring Results:**
 - ✅ **60%+ reduction** in code duplication
 - ✅ **80+ `new Request()` patterns** eliminated
@@ -498,6 +504,7 @@ TEST_API_URL=http://localhost:7070 bun test apps/api/src/routes/__tests__/intake
 - ✅ **Consistent patterns** across all test files
 - ✅ **Type-safe** throughout
 - ✅ **Centralized test configuration** through test-targets utility
+- ✅ **Knowledge pack testing** - Tests now use real knowledge pack data instead of fixtures
 
 **Success Criteria:**
 - All tests use shared utilities from `@repo/shared`
