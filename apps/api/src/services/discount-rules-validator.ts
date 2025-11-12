@@ -20,17 +20,17 @@ import type {
 import { getFieldValue } from '../utils/field-helpers'
 import { logInfo } from '../utils/logger'
 import { getDiscountEvaluator } from './discount-engine/factory'
-import * as knowledgePackRAG from './knowledge-pack-rag'
 import { calculateConfidenceScore } from './discount-rules-validator/confidence-scorer'
 import { validateStacking } from './discount-rules-validator/stacking-validator'
+import * as knowledgePackRAGModule from './knowledge-pack-rag'
 
-type KnowledgePackRAG = typeof knowledgePackRAG
+type KnowledgePackRAG = typeof knowledgePackRAGModule
 
 /**
  * Discount Rules Validator
  */
 export class DiscountRulesValidator {
-  constructor(private knowledgePackRAG: KnowledgePackRAG = knowledgePackRAG) {}
+  constructor(private knowledgePackRAG: KnowledgePackRAG = knowledgePackRAGModule) {}
 
   /**
    * Validate opportunities against knowledge pack rules
@@ -100,7 +100,7 @@ export class DiscountRulesValidator {
     }
 
     // Step 1: Fetch discount from knowledge pack using citation ID
-    const discountLookup = knowledgePackRAG.getDiscountById(opportunity.citation.id)
+    const discountLookup = this.knowledgePackRAG.getDiscountById(opportunity.citation.id)
     if (!discountLookup) {
       validationDetails.rulesEvaluated.push({
         rule: 'Discount lookup by citation ID',
@@ -186,9 +186,7 @@ export class DiscountRulesValidator {
     })
 
     // Use discount engine calculated savings if there's a significant difference
-    const validatedSavings = savingsMatch
-      ? opportunity.annualSavings
-      : savingsResult.annualDollars
+    const validatedSavings = savingsMatch ? opportunity.annualSavings : savingsResult.annualDollars
 
     // Step 4: Check stacking validation
     validationDetails.eligibilityChecks.stackingValidated = true
@@ -211,7 +209,7 @@ export class DiscountRulesValidator {
         for (const pattern of docPatterns) {
           const matches = description.match(pattern)
           if (matches) {
-            documentationRequirements.push(...matches.map((m) => m.trim()))
+            documentationRequirements.push(...matches.map((m: string) => m.trim()))
           }
         }
       }
@@ -260,10 +258,10 @@ export class DiscountRulesValidator {
       confidenceScore,
       validationDetails,
       requiresDocumentation,
-      documentationRequirements: documentationRequirements.length > 0 ? documentationRequirements : undefined,
+      documentationRequirements:
+        documentationRequirements.length > 0 ? documentationRequirements : undefined,
       stackableWith: stackableWith && stackableWith.length > 0 ? stackableWith : undefined,
       validatedAt: new Date().toISOString(),
     }
   }
 }
-

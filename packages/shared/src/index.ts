@@ -16,6 +16,12 @@ export type {
   RentersMinimums,
 } from './schemas/knowledge-pack'
 
+// Export user contact schema and types
+export {
+  userContactSchema,
+  type UserContact,
+} from './schemas/user-contact'
+
 // Export user profile schema and types
 export {
   userProfileSchema,
@@ -132,13 +138,13 @@ export {
   formatFileSize,
 } from './constants/file-upload'
 
-// Export policy summary metadata
+// Export shared enums
 export {
-  policySummaryFieldMetadata,
-  POLICY_CATEGORY_MAP,
-  POLICY_CATEGORY_LABELS,
-  type PolicyFieldMetadata,
-} from './schemas/policy-summary-metadata'
+  productTypeEnum,
+  propertyTypeEnum,
+  type ProductType,
+  type PropertyType,
+} from './schemas/shared-enums'
 
 // Export test utilities (for use in test files only)
 export * from './test-utils'

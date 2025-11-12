@@ -99,7 +99,7 @@ describe('Intake Completeness Evaluation Harness', () => {
         state: 'CA',
         productType: 'home',
         propertyType: 'single-family',
-        constructionYear: 2000,
+        yearBuilt: 2000,
         squareFeet: 2000,
         roofType: 'asphalt',
       }
@@ -117,7 +117,7 @@ describe('Intake Completeness Evaluation Harness', () => {
 
       const completeness = calculateCompleteness(profile, 'home', 'CA')
       // Critical fields should achieve reasonable completeness
-      // With state, productType, propertyType (3 fields) and missing constructionYear, squareFeet, roofType (3 fields)
+      // With state, productType, propertyType (3 fields) and missing yearBuilt, squareFeet, roofType (3 fields)
       // Completeness = 3 / 6 = 50%, which is reasonable for critical fields only
       expect(completeness).toBeGreaterThanOrEqual(40) // Adjusted threshold for critical fields only
     })
@@ -285,7 +285,7 @@ describe('Intake Completeness Evaluation Harness', () => {
             state: 'CA',
             productType: 'home',
             propertyType: 'single-family',
-            constructionYear: 2000,
+            yearBuilt: 2000,
             squareFeet: 2000,
             roofType: 'asphalt',
           },

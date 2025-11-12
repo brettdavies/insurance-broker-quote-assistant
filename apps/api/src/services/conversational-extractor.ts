@@ -279,16 +279,26 @@ export class ConversationalExtractor {
 
       // Return empty policy summary with low confidence
       return {
-        carrier: undefined,
+        name: undefined,
+        email: undefined,
+        phone: undefined,
+        zip: undefined,
         state: undefined,
+        address: undefined,
+        carrier: undefined,
         productType: undefined,
         coverageLimits: undefined,
         deductibles: undefined,
         premiums: undefined,
         effectiveDates: undefined,
         confidence: {
-          carrier: 0.0,
+          name: 0.0,
+          email: 0.0,
+          phone: 0.0,
+          zip: 0.0,
           state: 0.0,
+          address: 0.0,
+          carrier: 0.0,
           productType: 0.0,
           coverageLimits: 0.0,
           deductibles: 0.0,
@@ -349,11 +359,28 @@ export class ConversationalExtractor {
     const confidence: PolicySummary['confidence'] = {}
 
     // Map LLM confidence scores to policy confidence structure
-    if (llmConfidence.carrier !== undefined) {
-      confidence.carrier = llmConfidence.carrier
+    // User contact fields
+    if (llmConfidence.name !== undefined) {
+      confidence.name = llmConfidence.name
+    }
+    if (llmConfidence.email !== undefined) {
+      confidence.email = llmConfidence.email
+    }
+    if (llmConfidence.phone !== undefined) {
+      confidence.phone = llmConfidence.phone
+    }
+    if (llmConfidence.zip !== undefined) {
+      confidence.zip = llmConfidence.zip
     }
     if (llmConfidence.state !== undefined) {
       confidence.state = llmConfidence.state
+    }
+    if (llmConfidence.address !== undefined) {
+      confidence.address = llmConfidence.address
+    }
+    // Policy-specific fields
+    if (llmConfidence.carrier !== undefined) {
+      confidence.carrier = llmConfidence.carrier
     }
     if (llmConfidence.productType !== undefined) {
       confidence.productType = llmConfidence.productType
@@ -373,11 +400,28 @@ export class ConversationalExtractor {
 
     // If no confidence scores from LLM, use default based on whether field exists
     const defaultConfidence = 0.8 // Default confidence for extracted fields
-    if (policy.carrier && confidence.carrier === undefined) {
-      confidence.carrier = defaultConfidence
+    // User contact fields
+    if (policy.name && confidence.name === undefined) {
+      confidence.name = defaultConfidence
+    }
+    if (policy.email && confidence.email === undefined) {
+      confidence.email = defaultConfidence
+    }
+    if (policy.phone && confidence.phone === undefined) {
+      confidence.phone = defaultConfidence
+    }
+    if (policy.zip && confidence.zip === undefined) {
+      confidence.zip = defaultConfidence
     }
     if (policy.state && confidence.state === undefined) {
       confidence.state = defaultConfidence
+    }
+    if (policy.address && confidence.address === undefined) {
+      confidence.address = defaultConfidence
+    }
+    // Policy-specific fields
+    if (policy.carrier && confidence.carrier === undefined) {
+      confidence.carrier = defaultConfidence
     }
     if (policy.productType && confidence.productType === undefined) {
       confidence.productType = defaultConfidence

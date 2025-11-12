@@ -34,7 +34,7 @@ describe('getMissingFields - Product-Specific Requirements', () => {
         ]),
         createTestProduct('home', 'Home Insurance', [
           { field: 'propertyType', priority: 'critical' },
-          { field: 'constructionYear', priority: 'important' },
+          { field: 'yearBuilt', priority: 'important' },
           { field: 'squareFeet', priority: 'important' },
           { field: 'roofType', priority: 'optional' },
         ]),
@@ -107,13 +107,11 @@ describe('getMissingFields - Product-Specific Requirements', () => {
       state: 'CA',
       productType: 'home',
       propertyType: 'single-family',
-      // Missing constructionYear and squareFeet (important)
+      // Missing yearBuilt and squareFeet (important)
     }
 
     const missing = getMissingFields(profile)
-    expect(missing.some((f) => f.field === 'constructionYear' && f.priority === 'important')).toBe(
-      true
-    )
+    expect(missing.some((f) => f.field === 'yearBuilt' && f.priority === 'important')).toBe(true)
     expect(missing.some((f) => f.field === 'squareFeet' && f.priority === 'important')).toBe(true)
   })
 
@@ -390,7 +388,7 @@ describe('getMissingFields - State-Specific Requirements', () => {
         ]),
         createTestProduct('home', 'Home Insurance', [
           { field: 'propertyType', priority: 'critical' },
-          { field: 'constructionYear', priority: 'important' },
+          { field: 'yearBuilt', priority: 'important' },
           { field: 'squareFeet', priority: 'important' },
         ]),
       ],
@@ -424,16 +422,14 @@ describe('getMissingFields - State-Specific Requirements', () => {
       state: 'CA',
       productType: 'home',
       propertyType: 'single-family',
-      // Missing squareFeet and constructionYear (product-level important, state may also require)
+      // Missing squareFeet and yearBuilt (product-level important, state may also require)
     }
 
     const missing = getMissingFields(profile, 'home', 'CA')
     // These fields should be in missing list (from product requirements)
     // State requirements may also add them if not already present
     expect(missing.some((f) => f.field === 'squareFeet' && f.priority === 'important')).toBe(true)
-    expect(missing.some((f) => f.field === 'constructionYear' && f.priority === 'important')).toBe(
-      true
-    )
+    expect(missing.some((f) => f.field === 'yearBuilt' && f.priority === 'important')).toBe(true)
   })
 })
 

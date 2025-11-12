@@ -8,11 +8,27 @@
  */
 
 import { beforeEach, describe, expect, it, mock, spyOn } from 'bun:test'
-import type { PolicyAnalysisResult, PolicySummary } from '@repo/shared'
+import type {
+  BundleOption,
+  DeductibleOptimization,
+  Opportunity,
+  PolicyAnalysisResult,
+  PolicySummary,
+} from '@repo/shared'
 import { policyAnalysisResultLLMSchema } from '@repo/shared'
 import * as knowledgePackRAG from '../knowledge-pack-rag'
 import type { LLMProvider } from '../llm-provider'
 import { PolicyAnalysisAgent } from '../policy-analysis-agent'
+
+// Type for LLM output (before validation) - matches what the agent receives from LLM
+type LLMAnalysisOutput = {
+  currentPolicy: PolicySummary
+  opportunities: Opportunity[]
+  bundleOptions: BundleOption[]
+  deductibleOptimizations: DeductibleOptimization[]
+  pitch: string
+  complianceValidated: boolean
+}
 
 describe('PolicyAnalysisAgent', () => {
   let mockLLMProvider: LLMProvider
@@ -122,7 +138,7 @@ describe('PolicyAnalysisAgent', () => {
 
     it('should validate LLM response against schema', async () => {
       const policy = createTestPolicy()
-      const mockAnalysisResult: PolicyAnalysisResult = {
+      const mockAnalysisResult: LLMAnalysisOutput = {
         currentPolicy: policy,
         opportunities: [
           {
@@ -195,7 +211,7 @@ describe('PolicyAnalysisAgent', () => {
 
     it('should rank opportunities by annual savings (highest first)', async () => {
       const policy = createTestPolicy()
-      const mockAnalysisResult: PolicyAnalysisResult = {
+      const mockAnalysisResult: LLMAnalysisOutput = {
         currentPolicy: policy,
         opportunities: [
           {

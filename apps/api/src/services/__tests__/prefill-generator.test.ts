@@ -81,13 +81,11 @@ describe('getMissingFields', () => {
       state: 'CA',
       productType: 'home',
       propertyType: 'single-family',
-      // Missing constructionYear and squareFeet (important)
+      // Missing yearBuilt and squareFeet (important)
     }
 
     const missing = getMissingFields(profile)
-    expect(missing.some((f) => f.field === 'constructionYear' && f.priority === 'important')).toBe(
-      true
-    )
+    expect(missing.some((f) => f.field === 'yearBuilt' && f.priority === 'important')).toBe(true)
     expect(missing.some((f) => f.field === 'squareFeet' && f.priority === 'important')).toBe(true)
   })
 
@@ -250,7 +248,7 @@ describe('generatePrefillPacket', () => {
     const missingFields = getMissingFields(profile)
     const prefill = generatePrefillPacket(profile, mockRoute, missingFields, mockDisclaimers)
 
-    expect(prefill.fullName).toBe('John Doe')
+    expect(prefill.name).toBe('John Doe')
     expect(prefill.email).toBe('john@example.com')
     expect(prefill.phone).toBe('555-1234')
     expect(prefill.address).toBe('90210')
@@ -280,7 +278,7 @@ describe('generatePrefillPacket', () => {
     expect(prefill.state).toBe('CA')
     expect(prefill.productType).toBe('auto')
     expect(prefill.vehicles).toBe(1)
-    expect(prefill.fullName).toBeUndefined()
+    expect(prefill.name).toBeUndefined()
     expect(prefill.email).toBeUndefined()
   })
 
@@ -289,7 +287,7 @@ describe('generatePrefillPacket', () => {
       state: 'CA',
       productType: 'home',
       propertyType: 'single-family',
-      constructionYear: 2000,
+      yearBuilt: 2000,
       squareFeet: 2000,
       roofType: 'asphalt',
     }

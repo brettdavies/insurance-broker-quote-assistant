@@ -92,8 +92,12 @@ describe('DiscountRulesValidator', () => {
       ]
 
       // Mock knowledge pack RAG
+      const discount = discounts[0]
+      if (!discount) {
+        throw new Error('Test setup error: discounts array is empty')
+      }
       spyOn(knowledgePackRAG, 'getDiscountById').mockReturnValue({
-        discount: discounts[0],
+        discount,
         carrier,
       })
 
@@ -161,8 +165,12 @@ describe('DiscountRulesValidator', () => {
         createTestOpportunity('disc_good_student', 'Good Student Discount', 10, 120, 'GEICO'),
       ]
 
+      const discount = discounts[0]
+      if (!discount) {
+        throw new Error('Test setup error: discounts array is empty')
+      }
       spyOn(knowledgePackRAG, 'getDiscountById').mockReturnValue({
-        discount: discounts[0],
+        discount,
         carrier,
       })
 
@@ -209,8 +217,12 @@ describe('DiscountRulesValidator', () => {
         createTestOpportunity('disc_safe_driver', 'Safe Driver Discount', 10, 150, 'GEICO'),
       ]
 
+      const discount = discounts[0]
+      if (!discount) {
+        throw new Error('Test setup error: discounts array is empty')
+      }
       spyOn(knowledgePackRAG, 'getDiscountById').mockReturnValue({
-        discount: discounts[0],
+        discount,
         carrier,
       })
 
@@ -261,8 +273,12 @@ describe('DiscountRulesValidator', () => {
         createTestOpportunity('disc_safe_driver', 'Safe Driver Discount', 10, 125, 'GEICO'),
       ]
 
+      const discount = discounts[0]
+      if (!discount) {
+        throw new Error('Test setup error: discounts array is empty')
+      }
       spyOn(knowledgePackRAG, 'getDiscountById').mockReturnValue({
-        discount: discounts[0],
+        discount,
         carrier,
       })
 
@@ -450,8 +466,12 @@ describe('DiscountRulesValidator', () => {
         createTestOpportunity('disc_safe_driver', 'Safe Driver Discount', 10, 120, 'GEICO'),
       ]
 
+      const discount = discounts[0]
+      if (!discount) {
+        throw new Error('Test setup error: discounts array is empty')
+      }
       spyOn(knowledgePackRAG, 'getDiscountById').mockReturnValue({
-        discount: discounts[0],
+        discount,
         carrier,
       })
 
@@ -500,8 +520,12 @@ describe('DiscountRulesValidator', () => {
         createTestOpportunity('disc_safe_driver', 'Safe Driver Discount', 10, 120, 'GEICO'),
       ]
 
+      const discount = discounts[0]
+      if (!discount) {
+        throw new Error('Test setup error: discounts array is empty')
+      }
       spyOn(knowledgePackRAG, 'getDiscountById').mockReturnValue({
-        discount: discounts[0],
+        discount,
         carrier,
       })
 
@@ -557,13 +581,21 @@ describe('DiscountRulesValidator', () => {
 
       const carrier = createTestCarrier('GEICO', ['CA'], ['auto'], discounts).carrier as Carrier
       const policy = createTestPolicy('GEICO', 'CA', 'auto', 1200)
-      const customer = buildUserProfile({ goodStudent: true })
+      // Note: goodStudent is not a UserProfile field, but the discount validator
+      // checks fieldRequirements which may include custom fields via dynamic property access
+      const customer = buildUserProfile({}) as UserProfile & { goodStudent?: boolean }
+      // Set goodStudent for eligibility check (discount evaluator supports dynamic fields)
+      ;(customer as any).goodStudent = true
       const opportunities = [
         createTestOpportunity('disc_good_student', 'Good Student Discount', 10, 120, 'GEICO'),
       ]
 
+      const discount = discounts[0]
+      if (!discount) {
+        throw new Error('Test setup error: discounts array is empty')
+      }
       spyOn(knowledgePackRAG, 'getDiscountById').mockReturnValue({
-        discount: discounts[0],
+        discount,
         carrier,
       })
 
@@ -610,8 +642,12 @@ describe('DiscountRulesValidator', () => {
         createTestOpportunity('disc_safe_driver', 'Safe Driver Discount', 10, 120, 'GEICO'),
       ]
 
+      const discount = discounts[0]
+      if (!discount) {
+        throw new Error('Test setup error: discounts array is empty')
+      }
       spyOn(knowledgePackRAG, 'getDiscountById').mockReturnValue({
-        discount: discounts[0],
+        discount,
         carrier,
       })
 
@@ -670,8 +706,12 @@ describe('DiscountRulesValidator', () => {
             ),
           ]
 
+          const discount = discounts[0]
+          if (!discount) {
+            throw new Error('Test setup error: discounts array is empty')
+          }
           spyOn(knowledgePackRAG, 'getDiscountById').mockReturnValue({
-            discount: discounts[0],
+            discount,
             carrier,
           })
 
@@ -720,8 +760,12 @@ describe('DiscountRulesValidator', () => {
         createTestOpportunity('disc_safe_driver', 'Safe Driver Discount', 10, 120, 'GEICO'),
       ]
 
+      const discount = discounts[0]
+      if (!discount) {
+        throw new Error('Test setup error: discounts array is empty')
+      }
       spyOn(knowledgePackRAG, 'getDiscountById').mockReturnValue({
-        discount: discounts[0],
+        discount,
         carrier,
       })
 

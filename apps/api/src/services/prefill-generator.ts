@@ -219,7 +219,7 @@ export function generatePrefillPacket(
 
   // Map contact information
   const prefill: PrefillPacket = {
-    fullName: profile.name,
+    name: profile.name,
     email: profile.email,
     phone: profile.phone,
     address: undefined, // Construct from available fields
@@ -248,7 +248,7 @@ export function generatePrefillPacket(
     prefill.garage = profile.garage
     // Note: primaryUse and annualMileage not in UserProfile schema, leave undefined
   } else if (profile.productType === 'home') {
-    prefill.yearBuilt = profile.constructionYear
+    prefill.yearBuilt = profile.yearBuilt
     prefill.squareFeet = profile.squareFeet
     prefill.roofType = profile.roofType
     prefill.propertyType = profile.propertyType

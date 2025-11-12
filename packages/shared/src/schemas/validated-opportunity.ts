@@ -52,4 +52,3 @@ export const validatedOpportunitySchema = opportunitySchema.extend({
 })
 
 export type ValidatedOpportunity = z.infer<typeof validatedOpportunitySchema>
-

@@ -85,7 +85,7 @@ export function validateStacking(
         result.conflicts.push({
           opportunity1: opp1Id,
           opportunity2: opp2Id,
-          reason: `One or both discounts are not stackable`,
+          reason: 'One or both discounts are not stackable',
         })
         continue
       }
@@ -125,7 +125,7 @@ export function validateStacking(
             result.conflicts.push({
               opportunity1: opp1Id,
               opportunity2: opp2Id,
-              reason: `Conflicting bundle product requirements`,
+              reason: 'Conflicting bundle product requirements',
             })
             continue
           }
@@ -153,4 +153,3 @@ export function validateStacking(
 
   return result
 }
-

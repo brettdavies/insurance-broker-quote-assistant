@@ -20,8 +20,8 @@ import { z } from 'zod'
 import { validateOutput } from '../services/compliance-filter'
 import type { ConversationalExtractor } from '../services/conversational-extractor'
 import { DiscountRulesValidator } from '../services/discount-rules-validator'
-import type { LLMProvider } from '../services/llm-provider'
 import * as knowledgePackRAG from '../services/knowledge-pack-rag'
+import type { LLMProvider } from '../services/llm-provider'
 import { PitchGenerator } from '../services/pitch-generator'
 import { PolicyAnalysisAgent } from '../services/policy-analysis-agent'
 import { createDecisionTrace, logDecisionTrace } from '../utils/decision-trace'
@@ -478,8 +478,8 @@ export function createPolicyRoute(extractor: ConversationalExtractor, llmProvide
       const discountValidator = new DiscountRulesValidator(knowledgePackRAG)
       // Initialize with raw opportunities as fallback (will be replaced if validation succeeds)
       // Convert raw opportunities to ValidatedOpportunity format with minimal validation
-      let validatedOpportunities: import('@repo/shared').ValidatedOpportunity[] = rawAnalysisResult.opportunities.map(
-        (opp) => ({
+      let validatedOpportunities: import('@repo/shared').ValidatedOpportunity[] =
+        rawAnalysisResult.opportunities.map((opp) => ({
           ...opp,
           confidenceScore: 0,
           validationDetails: {
@@ -494,8 +494,7 @@ export function createPolicyRoute(extractor: ConversationalExtractor, llmProvide
           },
           requiresDocumentation: false,
           validatedAt: new Date().toISOString(),
-        })
-      )
+        }))
       let validationResults: {
         rulesEvaluated: Array<{
           rule: string

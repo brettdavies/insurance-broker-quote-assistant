@@ -9,11 +9,7 @@ import type { FieldItemData } from '@/components/shared/FieldItem'
 import { COMMAND_TO_FIELD_NAME, FIELD_METADATA } from '@/config/shortcuts'
 import type { FieldCommand } from '@/config/shortcuts'
 import type { PolicySummary } from '@repo/shared'
-import {
-  POLICY_CATEGORY_LABELS,
-  POLICY_CATEGORY_MAP,
-  policySummaryFieldMetadata,
-} from '@repo/shared'
+import { unifiedFieldMetadata } from '@repo/shared'
 import type { UserProfile } from '@repo/shared'
 import { userProfileFieldMetadata } from '@repo/shared'
 
@@ -89,7 +85,34 @@ export function extractUserProfileFields(
 }
 
 /**
+ * Category mapping for PolicySummary fields
+ * Maps unified metadata categories to display categories
+ */
+const POLICY_CATEGORY_MAP: Record<string, string> = {
+  'Policy Information': 'policy',
+  'Contact Information': 'policy', // User contact fields go in policy category
+  Location: 'policy', // Location fields go in policy category
+  Coverage: 'coverage',
+  Deductibles: 'deductibles',
+  Premiums: 'premiums',
+  Dates: 'dates',
+  Metadata: 'metadata', // Hidden category for confidence scores
+}
+
+/**
+ * Category labels for PolicySummary display
+ */
+const POLICY_CATEGORY_LABELS: Record<string, string> = {
+  policy: 'Policy Information',
+  coverage: 'Coverage Limits',
+  deductibles: 'Deductibles',
+  premiums: 'Premiums',
+  dates: 'Effective Dates',
+}
+
+/**
  * Extract fields from PolicySummary and organize by category
+ * Uses unifiedFieldMetadata directly, filtering for policy flow fields
  * Handles nested objects (coverageLimits, deductibles, premiums, effectiveDates)
  */
 export function extractPolicySummaryFields(
@@ -104,11 +127,20 @@ export function extractPolicySummaryFields(
     dates: [],
   }
 
-  // Extract flat fields (carrier, state, productType)
-  for (const [fieldKey, metadata] of Object.entries(policySummaryFieldMetadata)) {
+  // Get all PolicySummary field keys
+  const policyFields = Object.keys(summary) as Array<keyof PolicySummary>
+
+  // Extract fields using unified metadata
+  for (const fieldKey of policyFields) {
     if (fieldKey === 'confidence') continue // Skip confidence object
 
-    const value = summary[fieldKey as keyof PolicySummary]
+    const metadata = unifiedFieldMetadata[fieldKey as string]
+    if (!metadata) continue // Skip if not in unified metadata
+
+    // Only process fields that apply to policy flow
+    if (!metadata.flows.includes('policy')) continue
+
+    const value = summary[fieldKey]
 
     if (value === undefined || value === null) continue
 
@@ -126,7 +158,7 @@ export function extractPolicySummaryFields(
             name: nestedMetadata.label,
             value: nestedValue as string | number,
             category: nestedCategory,
-            fieldKey: `${fieldKey}.${nestedKey}`, // e.g., "coverageLimits.liability"
+            fieldKey: `${String(fieldKey)}.${nestedKey}`, // e.g., "coverageLimits.liability"
             confidence: confidence?.[fieldKey as keyof typeof confidence],
           })
         }
@@ -138,7 +170,7 @@ export function extractPolicySummaryFields(
         name: metadata.label,
         value: value as string | number,
         category,
-        fieldKey,
+        fieldKey: String(fieldKey),
         confidence: confidence?.[fieldKey as keyof typeof confidence],
       })
     }

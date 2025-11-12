@@ -49,10 +49,23 @@ export function parsePolicySummaryFromKeyValueText(text: string): Partial<Policy
     if (!key || !value) continue
 
     // Parse flat fields
-    if (key === 'carrier') {
-      summary.carrier = value
+    // User contact fields
+    if (key === 'name') {
+      summary.name = value
+    } else if (key === 'email') {
+      summary.email = value
+    } else if (key === 'phone') {
+      summary.phone = value
+    } else if (key === 'zip') {
+      summary.zip = value
     } else if (key === 'state') {
       summary.state = value.toUpperCase()
+    } else if (key === 'address') {
+      summary.address = value
+    }
+    // Policy-specific fields
+    else if (key === 'carrier') {
+      summary.carrier = value
     } else if (key === 'producttype' || key === 'product') {
       // Validate product type enum
       const productType = value.toLowerCase()

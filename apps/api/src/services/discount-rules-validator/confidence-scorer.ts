@@ -82,4 +82,3 @@ export function calculateConfidenceScore(
     total: Math.min(100, Math.max(0, total)), // Clamp to 0-100
   }
 }
-

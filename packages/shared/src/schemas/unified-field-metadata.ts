@@ -78,6 +78,15 @@ export const unifiedFieldMetadata: Record<string, UnifiedFieldMetadata> = {
     flows: ['intake', 'policy'],
   },
 
+  address: {
+    shortcut: '',
+    label: 'Address',
+    question: 'What is the address?',
+    category: 'Location',
+    fieldType: 'string',
+    flows: ['intake', 'policy'],
+  },
+
   // ============================================================================
   // Additional shared fields that are useful for policy analysis
   // ============================================================================

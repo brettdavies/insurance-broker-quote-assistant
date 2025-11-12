@@ -1,4 +1,6 @@
 import { z } from 'zod'
+import { productTypeEnum } from './shared-enums'
+import { userContactSchema } from './user-contact'
 
 /**
  * Policy Summary Schema
@@ -67,10 +69,18 @@ export type EffectiveDates = z.infer<typeof effectiveDatesSchema>
 /**
  * Confidence Scores Schema
  * Represents confidence scores (0-1) for each extracted field
+ * Includes confidence for user contact fields (name, email, phone, zip, state, address)
  */
 export const confidenceScoresSchema = z.object({
-  carrier: z.number().min(0).max(1).optional(),
+  // User contact fields
+  name: z.number().min(0).max(1).optional(),
+  email: z.number().min(0).max(1).optional(),
+  phone: z.number().min(0).max(1).optional(),
+  zip: z.number().min(0).max(1).optional(),
   state: z.number().min(0).max(1).optional(),
+  address: z.number().min(0).max(1).optional(),
+  // Policy-specific fields
+  carrier: z.number().min(0).max(1).optional(),
   productType: z.number().min(0).max(1).optional(),
   coverageLimits: z.number().min(0).max(1).optional(),
   deductibles: z.number().min(0).max(1).optional(),
@@ -83,11 +93,11 @@ export type ConfidenceScores = z.infer<typeof confidenceScoresSchema>
 /**
  * Policy Summary Schema
  * Main schema for extracted policy data
+ * Extends userContactSchema to include name, email, phone, zip fields
  */
-export const policySummarySchema = z.object({
+export const policySummarySchema = userContactSchema.extend({
   carrier: z.string().optional(),
-  state: z.string().optional(),
-  productType: z.enum(['auto', 'home', 'renters', 'umbrella']).optional(),
+  productType: productTypeEnum.optional(),
   coverageLimits: coverageLimitsSchema.optional(),
   deductibles: deductiblesSchema.optional(),
   premiums: premiumsSchema.optional(),

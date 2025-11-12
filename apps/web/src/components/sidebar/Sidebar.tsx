@@ -6,10 +6,11 @@
  */
 
 import { Button } from '@/components/ui/button'
-import type { PolicySummary, UserProfile } from '@repo/shared'
+import type { PolicyAnalysisResult, PolicySummary, UserProfile } from '@repo/shared'
 import { CapturedFields } from './CapturedFields'
 import { type MissingField, MissingFields } from './MissingFields'
 import { PolicyFields } from './PolicyFields'
+import { SavingsDashboard } from './SavingsDashboard'
 
 interface SidebarProps {
   mode: 'intake' | 'policy'
@@ -21,6 +22,8 @@ interface SidebarProps {
   onExport?: () => void
   policySummary?: PolicySummary
   confidence?: Record<string, number>
+  policyAnalysisResult?: PolicyAnalysisResult
+  isAnalyzing?: boolean
 }
 
 export function Sidebar({
@@ -33,6 +36,8 @@ export function Sidebar({
   onExport,
   policySummary,
   confidence,
+  policyAnalysisResult,
+  isAnalyzing = false,
 }: SidebarProps) {
   return (
     <div className="flex h-full flex-col space-y-4 overflow-y-auto bg-gray-100 p-4 dark:bg-gray-800">
@@ -82,12 +87,27 @@ export function Sidebar({
 
       {mode === 'policy' && (
         <div>
-          <h2 className="mb-2 text-lg font-semibold">Savings Dashboard</h2>
-          <div className="rounded-lg border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800">
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              Savings opportunities will appear here after policy analysis...
-            </p>
-          </div>
+          {isAnalyzing ? (
+            <>
+              <h2 className="mb-2 text-lg font-semibold">Savings Dashboard</h2>
+              <div className="rounded-lg border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800">
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  Analyzing policy for savings opportunities...
+                </p>
+              </div>
+            </>
+          ) : policyAnalysisResult ? (
+            <SavingsDashboard analysisResult={policyAnalysisResult} />
+          ) : (
+            <>
+              <h2 className="mb-2 text-lg font-semibold">Savings Dashboard</h2>
+              <div className="rounded-lg border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800">
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  Savings opportunities will appear here after policy analysis...
+                </p>
+              </div>
+            </>
+          )}
         </div>
       )}
     </div>

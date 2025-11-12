@@ -8,9 +8,26 @@
  */
 
 import { beforeEach, describe, expect, it, spyOn } from 'bun:test'
-import type { PolicyAnalysisResult } from '@repo/shared'
+import type {
+  BundleOption,
+  DeductibleOptimization,
+  Opportunity,
+  PolicyAnalysisResult,
+  PolicySummary,
+} from '@repo/shared'
 import * as knowledgePackRAG from '../knowledge-pack-rag'
 import { normalizePolicyAnalysisResult } from '../policy-analysis-agent/normalizer'
+
+// Type for normalizer input (matches function signature)
+type NormalizerInput = {
+  currentPolicy: PolicySummary
+  opportunities: Opportunity[]
+  bundleOptions: BundleOption[]
+  deductibleOptimizations: DeductibleOptimization[]
+  pitch: string
+  complianceValidated: boolean
+  _metadata?: { tokensUsed?: number; analysisTime?: number }
+}
 
 describe('normalizePolicyAnalysisResult', () => {
   beforeEach(() => {
@@ -48,7 +65,8 @@ describe('normalizePolicyAnalysisResult', () => {
   })
 
   it('should normalize percentage from decimal to integer', async () => {
-    const result: PolicyAnalysisResult & { _metadata?: { tokensUsed?: number } } = {
+    // Normalizer accepts Opportunity[], not ValidatedOpportunity[]
+    const llmResult: NormalizerInput = {
       currentPolicy: {
         carrier: 'GEICO',
         state: 'CA',
@@ -65,7 +83,7 @@ describe('normalizePolicyAnalysisResult', () => {
             id: 'disc_test',
             type: 'discount',
             carrier: 'GEICO',
-            file: '', // Will be hydrated
+            file: '', // Will be resolved by normalizer
           },
         },
       ],
@@ -78,13 +96,13 @@ describe('normalizePolicyAnalysisResult', () => {
       },
     }
 
-    const normalized = await normalizePolicyAnalysisResult(result, 'GEICO')
+    const normalized = await normalizePolicyAnalysisResult(llmResult, 'GEICO')
 
     expect(normalized.opportunities[0]?.percentage).toBe(10) // Normalized from 0.1
   })
 
   it('should resolve citation file paths from knowledge pack', async () => {
-    const result: PolicyAnalysisResult & { _metadata?: { tokensUsed?: number } } = {
+    const result: NormalizerInput = {
       currentPolicy: {
         carrier: 'GEICO',
         state: 'CA',
@@ -124,9 +142,7 @@ describe('normalizePolicyAnalysisResult', () => {
   })
 
   it('should preserve token tracking in metadata', async () => {
-    const result: PolicyAnalysisResult & {
-      _metadata?: { tokensUsed?: number; analysisTime?: number }
-    } = {
+    const result: NormalizerInput = {
       currentPolicy: {
         carrier: 'GEICO',
         state: 'CA',
@@ -151,7 +167,7 @@ describe('normalizePolicyAnalysisResult', () => {
   })
 
   it('should handle missing token tracking gracefully', async () => {
-    const result: PolicyAnalysisResult = {
+    const result: NormalizerInput = {
       currentPolicy: {
         carrier: 'GEICO',
         state: 'CA',
@@ -172,7 +188,7 @@ describe('normalizePolicyAnalysisResult', () => {
   })
 
   it('should normalize all opportunity types', async () => {
-    const result: PolicyAnalysisResult & { _metadata?: { tokensUsed?: number } } = {
+    const result: NormalizerInput = {
       currentPolicy: {
         carrier: 'GEICO',
         state: 'CA',
@@ -238,7 +254,7 @@ describe('normalizePolicyAnalysisResult', () => {
   it('should use fallback path if carrier not found', async () => {
     spyOn(knowledgePackRAG, 'getCarrierByName').mockReturnValue(undefined)
 
-    const result: PolicyAnalysisResult & { _metadata?: { tokensUsed?: number } } = {
+    const result: NormalizerInput = {
       currentPolicy: {
         carrier: 'UnknownCarrier',
         state: 'CA',

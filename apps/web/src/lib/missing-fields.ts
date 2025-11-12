@@ -64,8 +64,8 @@ export function calculateMissingFields(
     if (!profile.propertyType) {
       missing.push({ fieldKey: 'propertyType', priority: 'critical' })
     }
-    if (!profile.constructionYear) {
-      missing.push({ fieldKey: 'constructionYear', priority: 'important' })
+    if (!profile.yearBuilt) {
+      missing.push({ fieldKey: 'yearBuilt', priority: 'important' })
     }
     if (!profile.squareFeet) {
       missing.push({ fieldKey: 'squareFeet', priority: 'important' })

@@ -236,7 +236,7 @@ export function getStateFieldRequirements(
   if (productType === 'home' && minimums) {
     // Home insurance may require property details for state minimums
     requirements.push({ field: 'squareFeet', priority: 'important' })
-    requirements.push({ field: 'constructionYear', priority: 'important' })
+    requirements.push({ field: 'yearBuilt', priority: 'important' })
   }
 
   // Check special requirements

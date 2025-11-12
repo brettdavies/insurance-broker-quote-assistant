@@ -16,7 +16,10 @@ import { useToast } from '@/components/ui/use-toast'
 import { COMMAND_TO_KEY, FIELD_METADATA, FIELD_SHORTCUTS } from '@/config/shortcuts'
 import { useIntake } from '@/hooks/useIntake'
 import { useKeyboardShortcuts } from '@/hooks/useKeyboardShortcuts'
+import { usePolicyAnalysis } from '@/hooks/usePolicyAnalysis'
 import type { ActionCommand, FieldCommand } from '@/hooks/useSlashCommands'
+import { copySavingsPitchToClipboard } from '@/lib/clipboard-utils'
+import { exportSavingsPitch } from '@/lib/export-utils'
 import { calculateMissingFields, convertMissingFieldsToInfo } from '@/lib/missing-fields'
 import {
   generatePrefillFilename,
@@ -24,7 +27,13 @@ import {
   handleCopy,
   handleExport,
 } from '@/lib/prefill-utils'
-import type { IntakeResult, MissingField, PolicySummary, UserProfile } from '@repo/shared'
+import type {
+  IntakeResult,
+  MissingField,
+  PolicyAnalysisResult,
+  PolicySummary,
+  UserProfile,
+} from '@repo/shared'
 import { useCallback, useEffect, useRef, useState } from 'react'
 
 interface UnifiedChatInterfaceProps {
@@ -55,7 +64,11 @@ export function UnifiedChatInterface({
   const [disclaimers, setDisclaimers] = useState<string[]>([])
   const [latestIntakeResult, setLatestIntakeResult] = useState<IntakeResult | null>(null)
   const [policySummary, setPolicySummary] = useState<PolicySummary | undefined>(undefined)
+  const [policyAnalysisResult, setPolicyAnalysisResult] = useState<
+    PolicyAnalysisResult | undefined
+  >(undefined)
   const hasBackendMissingFields = useRef(false)
+  const policyAnalysisMutation = usePolicyAnalysis()
   const [fieldModalOpen, setFieldModalOpen] = useState(false)
   const [currentField, setCurrentField] = useState<{
     key: string
@@ -98,6 +111,30 @@ export function UnifiedChatInterface({
   useEffect(() => {
     profileRef.current = profile
   }, [profile])
+
+  // Trigger policy analysis when policySummary is available in policy mode
+  useEffect(() => {
+    if (mode === 'policy' && policySummary && !policyAnalysisMutation.isPending) {
+      // Only trigger if we don't already have a result or if policySummary changed
+      policyAnalysisMutation.mutate(
+        { policySummary },
+        {
+          onSuccess: (result) => {
+            setPolicyAnalysisResult(result)
+          },
+          onError: (error) => {
+            console.error('Policy analysis failed:', error)
+            toast({
+              title: 'Analysis failed',
+              description: error instanceof Error ? error.message : 'Failed to analyze policy',
+              variant: 'destructive',
+              duration: 5000,
+            })
+          },
+        }
+      )
+    }
+  }, [mode, policySummary, policyAnalysisMutation, toast])
 
   // Calculate missing fields from current profile state
   // This ensures missing fields are always displayed even before intake endpoint is called
@@ -380,12 +417,82 @@ export function UnifiedChatInterface({
       } else if (command === 'help') {
         setHelpModalOpen(true)
       } else if (command === 'export') {
-        handleExportCommand()
+        if (mode === 'policy' && policyAnalysisResult) {
+          // Export savings pitch in policy mode
+          try {
+            exportSavingsPitch(policyAnalysisResult)
+            // Log decision trace
+            console.log('[Decision Trace] Export action', {
+              timestamp: new Date().toISOString(),
+              action: 'export',
+              type: 'savings_pitch',
+              summary: {
+                opportunities: policyAnalysisResult.opportunities.length,
+                bundleOptions: policyAnalysisResult.bundleOptions.length,
+                deductibleOptimizations: policyAnalysisResult.deductibleOptimizations.length,
+                carrier: policyAnalysisResult.currentPolicy.carrier,
+                state: policyAnalysisResult.currentPolicy.state,
+                product: policyAnalysisResult.currentPolicy.productType,
+              },
+            })
+            toast({
+              title: 'Export successful',
+              description: 'Savings pitch exported as JSON',
+              duration: 3000,
+            })
+          } catch (error) {
+            toast({
+              title: 'Export failed',
+              description:
+                error instanceof Error ? error.message : 'Failed to export savings pitch',
+              variant: 'destructive',
+              duration: 5000,
+            })
+          }
+        } else {
+          // Export prefill packet in intake mode
+          handleExportCommand()
+        }
       } else if (command === 'copy') {
-        handleCopyCommand()
+        if (mode === 'policy' && policyAnalysisResult) {
+          // Copy savings pitch in policy mode
+          copySavingsPitchToClipboard(policyAnalysisResult)
+            .then(() => {
+              // Log decision trace
+              console.log('[Decision Trace] Copy action', {
+                timestamp: new Date().toISOString(),
+                action: 'copy',
+                type: 'savings_pitch',
+                summary: {
+                  opportunities: policyAnalysisResult.opportunities.length,
+                  bundleOptions: policyAnalysisResult.bundleOptions.length,
+                  deductibleOptimizations: policyAnalysisResult.deductibleOptimizations.length,
+                  carrier: policyAnalysisResult.currentPolicy.carrier,
+                  state: policyAnalysisResult.currentPolicy.state,
+                  product: policyAnalysisResult.currentPolicy.productType,
+                },
+              })
+              toast({
+                title: 'Copied to clipboard',
+                description: 'Savings pitch copied to clipboard',
+                duration: 3000,
+              })
+            })
+            .catch((error) => {
+              toast({
+                title: 'Copy failed',
+                description: error instanceof Error ? error.message : 'Failed to copy to clipboard',
+                variant: 'destructive',
+                duration: 5000,
+              })
+            })
+        } else {
+          // Copy prefill packet in intake mode
+          handleCopyCommand()
+        }
       }
     },
-    [toast, editorRef, handleExportCommand, handleCopyCommand]
+    [toast, editorRef, handleExportCommand, handleCopyCommand, mode, policyAnalysisResult]
   )
 
   // Handle command errors (invalid commands)
@@ -484,6 +591,8 @@ export function UnifiedChatInterface({
               onExport={handleExportCommand}
               policySummary={policySummary}
               confidence={latestIntakeResult?.confidence}
+              policyAnalysisResult={policyAnalysisResult}
+              isAnalyzing={policyAnalysisMutation.isPending}
             />
           </div>
         </div>

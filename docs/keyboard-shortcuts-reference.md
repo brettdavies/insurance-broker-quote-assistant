@@ -298,7 +298,7 @@ const FIELD_SHORTCUTS: Record<string, string> = {
   j: 'creditScore',
   o: 'ownsHome',
   t: 'propertyType',
-  y: 'constructionYear',
+  y: 'yearBuilt',
   f: 'roofType',
   q: 'squareFeet',
   w: 'existingPolicies',

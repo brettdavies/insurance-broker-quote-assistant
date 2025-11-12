@@ -76,8 +76,8 @@ export async function getPrefillPacket(
  */
 export function generatePrefillFilename(prefill: PrefillPacket): string {
   // Sanitize name: Remove spaces, special characters (keep only alphanumeric and underscores), convert to lowercase, limit length to 50 characters
-  const sanitizedName = prefill.fullName
-    ? prefill.fullName
+  const sanitizedName = prefill.name
+    ? prefill.name
         .replace(/[^a-zA-Z0-9_]/g, '_')
         .toLowerCase()
         .slice(0, 50)

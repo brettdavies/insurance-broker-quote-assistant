@@ -70,7 +70,7 @@ describe('POST /api/generate-prefill', () => {
     const res = await app.fetch(req)
     const prefill = (await res.json()) as PrefillPacket
 
-    expect(prefill.fullName).toBe('Jane Smith')
+    expect(prefill.name).toBe('Jane Smith')
     expect(prefill.email).toBe('jane@example.com')
     expect(prefill.phone).toBe('555-5678')
   })

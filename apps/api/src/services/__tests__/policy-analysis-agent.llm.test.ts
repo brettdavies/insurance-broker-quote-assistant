@@ -39,7 +39,11 @@ interface TestStep {
 interface TestResult {
   testName: string
   steps: TestStep[]
-  finalOutput?: PolicyAnalysisResult & {
+  // Agent returns PolicyAnalysisResult, but we store it with metadata
+  finalOutput?: (
+    | PolicyAnalysisResult
+    | (Omit<PolicyAnalysisResult, 'opportunities'> & { opportunities: unknown[] })
+  ) & {
     _metadata?: { tokensUsed?: number; analysisTime?: number }
   }
   error?: string
