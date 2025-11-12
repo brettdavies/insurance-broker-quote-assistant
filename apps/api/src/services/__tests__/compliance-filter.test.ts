@@ -7,106 +7,40 @@
  * @see docs/stories/1.7.adaptive-compliance-filter.md#task-8
  */
 
-import { describe, expect, it } from 'bun:test'
+import { describe, expect, it, test } from 'bun:test'
 import { validateOutput } from '../compliance-filter'
+
+// Prohibited phrases test cases - defined once, reused
+const PROHIBITED_PHRASE_TEST_CASES = [
+  { phrase: 'guaranteed lowest rate', text: 'We have the guaranteed lowest rate for you!' },
+  { phrase: "we'll definitely save you", text: "We'll definitely save you money!" },
+  { phrase: 'best price guaranteed', text: 'Best price guaranteed in town!' },
+  { phrase: 'you will save', text: 'You will save hundreds of dollars!' },
+  { phrase: 'guaranteed approval', text: 'Guaranteed approval for all applicants!' },
+  { phrase: 'guaranteed savings', text: 'Guaranteed savings of up to 30%!' },
+  { phrase: 'we guarantee', text: 'We guarantee the best rates!' },
+  { phrase: 'definitely save', text: 'You will definitely save money!' },
+  { phrase: 'best rate guaranteed', text: 'Best rate guaranteed!' },
+  { phrase: 'lowest price guaranteed', text: 'Lowest price guaranteed!' },
+  { phrase: 'guaranteed quote', text: 'Get your guaranteed quote today!' },
+  { phrase: 'binding quote', text: 'This is a binding quote!' },
+  { phrase: 'final price', text: 'Your final price is $500!' },
+  { phrase: 'exact price', text: 'The exact price is $500!' },
+  { phrase: 'medical advice', text: 'This is medical advice for your health!' },
+  { phrase: 'health advice', text: 'Here is some health advice!' },
+] as const
 
 describe('Compliance Filter', () => {
   describe('Prohibited Phrase Detection', () => {
-    it('should detect "guaranteed lowest rate"', () => {
-      const result = validateOutput('We have the guaranteed lowest rate for you!')
-      expect(result.passed).toBe(false)
-      expect(result.violations).toContain('guaranteed lowest rate')
-    })
-
-    it('should detect "we\'ll definitely save you"', () => {
-      const result = validateOutput("We'll definitely save you money!")
-      expect(result.passed).toBe(false)
-      expect(result.violations).toContain("we'll definitely save you")
-    })
-
-    it('should detect "best price guaranteed"', () => {
-      const result = validateOutput('Best price guaranteed in town!')
-      expect(result.passed).toBe(false)
-      expect(result.violations).toContain('best price guaranteed')
-    })
-
-    it('should detect "you will save"', () => {
-      const result = validateOutput('You will save hundreds of dollars!')
-      expect(result.passed).toBe(false)
-      expect(result.violations).toContain('you will save')
-    })
-
-    it('should detect "guaranteed approval"', () => {
-      const result = validateOutput('Guaranteed approval for all applicants!')
-      expect(result.passed).toBe(false)
-      expect(result.violations).toContain('guaranteed approval')
-    })
-
-    it('should detect "guaranteed savings"', () => {
-      const result = validateOutput('Guaranteed savings of up to 30%!')
-      expect(result.passed).toBe(false)
-      expect(result.violations).toContain('guaranteed savings')
-    })
-
-    it('should detect "we guarantee"', () => {
-      const result = validateOutput('We guarantee the best rates!')
-      expect(result.passed).toBe(false)
-      expect(result.violations).toContain('we guarantee')
-    })
-
-    it('should detect "definitely save"', () => {
-      const result = validateOutput('You will definitely save money!')
-      expect(result.passed).toBe(false)
-      expect(result.violations).toContain('definitely save')
-    })
-
-    it('should detect "best rate guaranteed"', () => {
-      const result = validateOutput('Best rate guaranteed!')
-      expect(result.passed).toBe(false)
-      expect(result.violations).toContain('best rate guaranteed')
-    })
-
-    it('should detect "lowest price guaranteed"', () => {
-      const result = validateOutput('Lowest price guaranteed!')
-      expect(result.passed).toBe(false)
-      expect(result.violations).toContain('lowest price guaranteed')
-    })
-
-    it('should detect "guaranteed quote"', () => {
-      const result = validateOutput('Get your guaranteed quote today!')
-      expect(result.passed).toBe(false)
-      expect(result.violations).toContain('guaranteed quote')
-    })
-
-    it('should detect "binding quote"', () => {
-      const result = validateOutput('This is a binding quote!')
-      expect(result.passed).toBe(false)
-      expect(result.violations).toContain('binding quote')
-    })
-
-    it('should detect "final price"', () => {
-      const result = validateOutput('Your final price is $500!')
-      expect(result.passed).toBe(false)
-      expect(result.violations).toContain('final price')
-    })
-
-    it('should detect "exact price"', () => {
-      const result = validateOutput('The exact price is $500!')
-      expect(result.passed).toBe(false)
-      expect(result.violations).toContain('exact price')
-    })
-
-    it('should detect "medical advice"', () => {
-      const result = validateOutput('This is medical advice for your health!')
-      expect(result.passed).toBe(false)
-      expect(result.violations).toContain('medical advice')
-    })
-
-    it('should detect "health advice"', () => {
-      const result = validateOutput('Here is some health advice!')
-      expect(result.passed).toBe(false)
-      expect(result.violations).toContain('health advice')
-    })
+    // Parameterized test using Bun's test.each() - eliminates 16 duplicate test cases
+    test.each(PROHIBITED_PHRASE_TEST_CASES as unknown as Array<{ phrase: string; text: string }>)(
+      'should detect "$phrase"',
+      ({ phrase, text }) => {
+        const result = validateOutput(text)
+        expect(result.passed).toBe(false)
+        expect(result.violations).toContain(phrase)
+      }
+    )
 
     it('should detect case-insensitive matches', () => {
       const result = validateOutput('GUARANTEED LOWEST RATE!')

@@ -1,4 +1,5 @@
 {
+  "$schema": "../schemas/state.json",
   "meta": {
     "schemaVersion": "1.0",
     "generatedDate": "2025-11-10T20:04:54.218Z",
@@ -97,6 +98,18 @@
       "_sources": [
         {
           "uri": "https://www.insurance.fl.gov/requirements/",
+          "accessedDate": "2025-11-10T20:04:54.218Z",
+          "confidence": "high",
+          "primary": true
+        }
+      ]
+    },
+    "prefillGuidance": {
+      "_id": "fld_fl_prefill_guidance_001",
+      "value": "Florida has specific requirements for property insurance. Verify property details and flood zone.",
+      "_sources": [
+        {
+          "uri": "https://www.insurance.fl.gov/",
           "accessedDate": "2025-11-10T20:04:54.218Z",
           "confidence": "high",
           "primary": true

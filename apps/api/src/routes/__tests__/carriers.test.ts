@@ -4,13 +4,16 @@ import { join } from 'node:path'
 import { createTestCarrier } from '../../__tests__/fixtures/knowledge-pack'
 import app from '../../index'
 import { loadKnowledgePack } from '../../services/knowledge-pack-loader'
+import { TestClient } from '../helpers'
 
 describe('Carriers Endpoints Integration', () => {
   const testKnowledgePackDir = 'test_knowledge_pack'
   const testCarriersDir = join(testKnowledgePackDir, 'carriers')
   const testStatesDir = join(testKnowledgePackDir, 'states')
+  let client: TestClient
 
   beforeEach(async () => {
+    client = new TestClient(app, 'http://localhost:7070')
     // Create test directories
     await mkdir(testCarriersDir, { recursive: true })
     await mkdir(testStatesDir, { recursive: true })
@@ -37,14 +40,10 @@ describe('Carriers Endpoints Integration', () => {
 
   describe('GET /api/carriers', () => {
     it('should return all carriers', async () => {
-      const req = new Request('http://localhost:7070/api/carriers')
-      const res = await app.request(req)
-      const body = (await res.json()) as {
+      const body = await client.getJson<{
         carriers: Array<{ name: string; operatesIn: string[]; products: string[] }>
         count: number
-      }
-
-      expect(res.status).toBe(200)
+      }>('/api/carriers')
       expect(body.count).toBe(2)
       expect(body.carriers).toHaveLength(2)
       expect(body.carriers.map((c) => c.name)).toContain('GEICO')
@@ -52,15 +51,11 @@ describe('Carriers Endpoints Integration', () => {
     })
 
     it('should return carriers filtered by state query param', async () => {
-      const req = new Request('http://localhost:7070/api/carriers?state=CA')
-      const res = await app.request(req)
-      const body = (await res.json()) as {
+      const body = await client.getJson<{
         state: string
         carriers: string[]
         count: number
-      }
-
-      expect(res.status).toBe(200)
+      }>('/api/carriers?state=CA')
       expect(body.state).toBe('CA')
       expect(body.count).toBe(2)
       expect(body.carriers).toContain('GEICO')
@@ -68,15 +63,11 @@ describe('Carriers Endpoints Integration', () => {
     })
 
     it('should return empty array for state with no carriers', async () => {
-      const req = new Request('http://localhost:7070/api/carriers?state=XX')
-      const res = await app.request(req)
-      const body = (await res.json()) as {
+      const body = await client.getJson<{
         state: string
         carriers: string[]
         count: number
-      }
-
-      expect(res.status).toBe(200)
+      }>('/api/carriers?state=XX')
       expect(body.state).toBe('XX')
       expect(body.count).toBe(0)
       expect(body.carriers).toHaveLength(0)
@@ -85,17 +76,13 @@ describe('Carriers Endpoints Integration', () => {
 
   describe('GET /api/carriers/:name', () => {
     it('should return carrier details by name', async () => {
-      const req = new Request('http://localhost:7070/api/carriers/GEICO')
-      const res = await app.request(req)
-      const body = (await res.json()) as {
+      const body = await client.getJson<{
         name: string
         operatesIn: string[]
         products: string[]
         discounts: unknown[]
         eligibility: unknown
-      }
-
-      expect(res.status).toBe(200)
+      }>('/api/carriers/GEICO')
       expect(body.name).toBe('GEICO')
       expect(body.operatesIn).toEqual(['CA', 'TX', 'FL'])
       expect(body.products).toEqual(['auto', 'home'])
@@ -104,8 +91,7 @@ describe('Carriers Endpoints Integration', () => {
     })
 
     it('should return 404 for non-existent carrier', async () => {
-      const req = new Request('http://localhost:7070/api/carriers/INVALID')
-      const res = await app.request(req)
+      const res = await client.get('/api/carriers/INVALID')
       const body = (await res.json()) as { error: string }
 
       expect(res.status).toBe(404)
@@ -115,23 +101,18 @@ describe('Carriers Endpoints Integration', () => {
 
   describe('GET /api/carriers/:name/products', () => {
     it('should return products for a carrier', async () => {
-      const req = new Request('http://localhost:7070/api/carriers/GEICO/products')
-      const res = await app.request(req)
-      const body = (await res.json()) as {
+      const body = await client.getJson<{
         carrier: string
         products: string[]
         count: number
-      }
-
-      expect(res.status).toBe(200)
+      }>('/api/carriers/GEICO/products')
       expect(body.carrier).toBe('GEICO')
       expect(body.products).toEqual(['auto', 'home'])
       expect(body.count).toBe(2)
     })
 
     it('should return 404 for non-existent carrier', async () => {
-      const req = new Request('http://localhost:7070/api/carriers/INVALID/products')
-      const res = await app.request(req)
+      const res = await client.get('/api/carriers/INVALID/products')
       const body = (await res.json()) as { error: string }
 
       expect(res.status).toBe(404)
@@ -141,30 +122,22 @@ describe('Carriers Endpoints Integration', () => {
 
   describe('GET /api/carriers/:name/operates-in/:state', () => {
     it('should return true if carrier operates in state', async () => {
-      const req = new Request('http://localhost:7070/api/carriers/GEICO/operates-in/CA')
-      const res = await app.request(req)
-      const body = (await res.json()) as {
+      const body = await client.getJson<{
         carrier: string
         state: string
         operatesIn: boolean
-      }
-
-      expect(res.status).toBe(200)
+      }>('/api/carriers/GEICO/operates-in/CA')
       expect(body.carrier).toBe('GEICO')
       expect(body.state).toBe('CA')
       expect(body.operatesIn).toBe(true)
     })
 
     it('should return false if carrier does not operate in state', async () => {
-      const req = new Request('http://localhost:7070/api/carriers/GEICO/operates-in/XX')
-      const res = await app.request(req)
-      const body = (await res.json()) as {
+      const body = await client.getJson<{
         carrier: string
         state: string
         operatesIn: boolean
-      }
-
-      expect(res.status).toBe(200)
+      }>('/api/carriers/GEICO/operates-in/XX')
       expect(body.carrier).toBe('GEICO')
       expect(body.state).toBe('XX')
       expect(body.operatesIn).toBe(false)

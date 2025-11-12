@@ -75,3 +75,6 @@ export {
   complianceResultSchema,
   type ComplianceResult,
 } from './schemas/compliance-result'
+
+// Export test utilities (for use in test files only)
+export * from './test-utils'

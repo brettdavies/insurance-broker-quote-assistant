@@ -1,29 +1,20 @@
 import { beforeEach, describe, expect, it } from 'bun:test'
+import { createMockLLMProvider } from '@repo/shared'
 import { Hono } from 'hono'
 import { ConversationalExtractor } from '../../services/conversational-extractor'
-import type { LLMProvider } from '../../services/llm-provider'
+import {
+  TestClient,
+  expectErrorBody,
+  expectErrorResponse,
+  expectIntakeResult,
+  expectSuccessResponse,
+} from '../helpers'
 import { createIntakeRoute } from '../intake'
-
-// Mock LLM provider
-const createMockLLMProvider = (): LLMProvider => {
-  return {
-    extractWithStructuredOutput: async () => ({
-      profile: {
-        state: 'CA',
-        productLine: 'auto',
-      },
-      confidence: {
-        state: 0.9,
-        productLine: 0.8,
-      },
-      reasoning: 'Mock LLM extraction',
-    }),
-  }
-}
 
 describe('POST /api/intake', () => {
   let app: Hono
   let extractor: ConversationalExtractor
+  let client: TestClient
 
   beforeEach(() => {
     const mockLLMProvider = createMockLLMProvider()
@@ -31,126 +22,54 @@ describe('POST /api/intake', () => {
     const intakeRoute = createIntakeRoute(extractor)
     app = new Hono()
     app.route('/', intakeRoute)
+    client = new TestClient(app)
   })
 
   it('should return 400 for invalid request body', async () => {
-    const req = new Request('http://localhost/api/intake', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ invalid: 'data' }),
-    })
+    const res = await client.post('/api/intake', { invalid: 'data' })
+    expectErrorResponse(res, 400)
 
-    const res = await app.request(req)
-    expect(res.status).toBe(400)
-
-    const body = (await res.json()) as { error?: { code?: string } }
-    expect(body.error).toBeDefined()
-    expect(body.error?.code).toBe('INVALID_REQUEST') // Route returns INVALID_REQUEST for validation errors
+    const body = await res.json()
+    expectErrorBody(body, 'INVALID_REQUEST')
   })
 
   it('should return 400 for missing message field', async () => {
-    const req = new Request('http://localhost/api/intake', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ conversationHistory: [] }),
-    })
-
-    const res = await app.request(req)
-    expect(res.status).toBe(400)
+    const res = await client.post('/api/intake', { conversationHistory: [] })
+    expectErrorResponse(res, 400)
   })
 
   it('should extract fields from key-value syntax', async () => {
-    const req = new Request('http://localhost/api/intake', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        message: 's:CA a:30 l:auto',
-      }),
+    const body = await client.postJson('/api/intake', {
+      message: 's:CA a:30 l:auto',
     })
-
-    const res = await app.request(req)
-    expect(res.status).toBe(200)
-
-    const body = (await res.json()) as {
-      profile?: { state?: string; age?: number; productLine?: string }
-      extractionMethod?: string
-      confidence?: Record<string, number>
-      missingFields?: string[]
-    }
-    expect(body.profile).toBeDefined()
-    expect(body.profile?.state).toBe('CA')
-    expect(body.profile?.age).toBe(30)
-    expect(body.profile?.productLine).toBe('auto')
-    expect(body.extractionMethod).toBe('key-value') // AC5: extraction method in response
-    expect(body.confidence).toBeDefined() // AC5: confidence scores in response
-    expect(body.missingFields).toBeDefined()
-    expect(Array.isArray(body.missingFields)).toBe(true)
+    expectIntakeResult(body)
+    expect(body.profile.state).toBe('CA')
+    expect(body.profile.age).toBe(30)
+    expect(body.profile.productLine).toBe('auto')
+    expect(body.extractionMethod).toBe('key-value')
   })
 
   it('should extract fields from natural language using LLM', async () => {
-    const req = new Request('http://localhost/api/intake', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        message: 'I need auto insurance in California',
-      }),
+    const body = await client.postJson('/api/intake', {
+      message: 'I need auto insurance in California',
     })
-
-    const res = await app.request(req)
-    expect(res.status).toBe(200)
-
-    const body = (await res.json()) as {
-      profile?: unknown
-      missingFields?: unknown[]
-    }
-    expect(body.profile).toBeDefined()
-    expect(body.missingFields).toBeDefined()
-    expect(Array.isArray(body.missingFields)).toBe(true)
+    expectIntakeResult(body)
   })
 
   it('should accept conversation history', async () => {
-    const req = new Request('http://localhost/api/intake', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        message: 's:CA',
-        conversationHistory: ['Previous message 1', 'Previous message 2'],
-      }),
+    const body = await client.postJson('/api/intake', {
+      message: 's:CA',
+      conversationHistory: ['Previous message 1', 'Previous message 2'],
     })
-
-    const res = await app.request(req)
-    expect(res.status).toBe(200)
-
-    const body = (await res.json()) as { profile?: unknown }
-    expect(body.profile).toBeDefined()
+    expectIntakeResult(body)
   })
 
   it('should return IntakeResult with all required fields', async () => {
-    const req = new Request('http://localhost/api/intake', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        message: 's:CA l:auto',
-      }),
+    const body = await client.postJson('/api/intake', {
+      message: 's:CA l:auto',
     })
-
-    const res = await app.request(req)
-    expect(res.status).toBe(200)
-
-    const body = (await res.json()) as {
-      profile?: unknown
-      missingFields?: unknown[]
-      extractionMethod?: string
-      confidence?: Record<string, number>
-      complianceValidated?: boolean
-      trace?: { timestamp?: string; flow?: string }
-    }
-    expect(body.profile).toBeDefined()
-    expect(body.missingFields).toBeDefined()
-    expect(Array.isArray(body.missingFields)).toBe(true)
-    expect(body.extractionMethod).toBeDefined() // AC5: extraction method in response
+    expectIntakeResult(body)
     expect(body.extractionMethod === 'key-value' || body.extractionMethod === 'llm').toBe(true)
-    expect(body.confidence).toBeDefined() // AC5: confidence scores in response
     expect(body.complianceValidated).toBe(true)
     expect(body.trace).toBeDefined()
     expect(body.trace?.timestamp).toBeDefined()
@@ -159,18 +78,7 @@ describe('POST /api/intake', () => {
 
   describe('Routing integration', () => {
     it('should include RouteDecision in response when state and productLine are present', async () => {
-      const req = new Request('http://localhost/api/intake', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          message: 's:CA l:auto a:30',
-        }),
-      })
-
-      const res = await app.request(req)
-      expect(res.status).toBe(200)
-
-      const body = (await res.json()) as {
+      const body = await client.postJson<{
         route?: {
           primaryCarrier?: string
           eligibleCarriers?: string[]
@@ -178,7 +86,10 @@ describe('POST /api/intake', () => {
           rationale?: string
           citations?: Array<{ id: string; type: string; carrier: string; file: string }>
         }
-      }
+      }>('/api/intake', {
+        message: 's:CA l:auto a:30',
+      })
+      expectIntakeResult(body)
       expect(body.route).toBeDefined()
       expect(body.route?.primaryCarrier).toBeDefined()
       expect(Array.isArray(body.route?.eligibleCarriers)).toBe(true)
@@ -190,24 +101,12 @@ describe('POST /api/intake', () => {
     })
 
     it('should handle routing when no eligible carriers found', async () => {
-      const req = new Request('http://localhost/api/intake', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          message: 's:WY l:renters',
-        }),
+      const body = await client.postJson<{
+        route?: { eligibleCarriers?: string[]; confidence?: number; rationale?: string }
+      }>('/api/intake', {
+        message: 's:WY l:renters',
       })
-
-      const res = await app.request(req)
-      expect(res.status).toBe(200)
-
-      const body = (await res.json()) as {
-        route?: {
-          eligibleCarriers?: string[]
-          confidence?: number
-          rationale?: string
-        }
-      }
+      expectIntakeResult(body)
       // Route decision should still be present, but with empty eligible carriers
       expect(body.route).toBeDefined()
       if (body.route) {
@@ -218,18 +117,7 @@ describe('POST /api/intake', () => {
     })
 
     it('should include routing decision in decision trace', async () => {
-      const req = new Request('http://localhost/api/intake', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          message: 's:CA l:auto a:30',
-        }),
-      })
-
-      const res = await app.request(req)
-      expect(res.status).toBe(200)
-
-      const body = (await res.json()) as {
+      const body = await client.postJson<{
         trace?: {
           routingDecision?: {
             eligibleCarriers?: string[]
@@ -240,7 +128,10 @@ describe('POST /api/intake', () => {
             rulesEvaluated?: string[]
           }
         }
-      }
+      }>('/api/intake', {
+        message: 's:CA l:auto a:30',
+      })
+      expectIntakeResult(body)
       expect(body.trace?.routingDecision).toBeDefined()
       expect(Array.isArray(body.trace?.routingDecision?.eligibleCarriers)).toBe(true)
       expect(body.trace?.routingDecision?.primaryCarrier).toBeDefined()
@@ -251,18 +142,7 @@ describe('POST /api/intake', () => {
     })
 
     it('should filter carriers by credit score eligibility', async () => {
-      const req = new Request('http://localhost/api/intake', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          message: 's:CA l:auto a:30 creditScore:650',
-        }),
-      })
-
-      const res = await app.request(req)
-      expect(res.status).toBe(200)
-
-      const body = (await res.json()) as {
+      const body = await client.postJson<{
         route?: {
           eligibleCarriers?: string[]
           rationale?: string
@@ -270,7 +150,10 @@ describe('POST /api/intake', () => {
         profile?: {
           creditScore?: number
         }
-      }
+      }>('/api/intake', {
+        message: 's:CA l:auto a:30 creditScore:650',
+      })
+      expectIntakeResult(body)
       expect(body.profile?.creditScore).toBe(650)
       expect(body.route).toBeDefined()
       // Routing should work with credit score provided
@@ -278,50 +161,34 @@ describe('POST /api/intake', () => {
     })
 
     it('should filter carriers by property type eligibility for home insurance', async () => {
-      const req = new Request('http://localhost/api/intake', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          message: 's:CA l:home propertyType:single-family',
-        }),
-      })
-
-      const res = await app.request(req)
-      expect(res.status).toBe(200)
-
-      const body = (await res.json()) as {
+      const body = await client.postJson<{
         route?: {
           eligibleCarriers?: string[]
         }
         profile?: {
           propertyType?: string
         }
-      }
+      }>('/api/intake', {
+        message: 's:CA l:home propertyType:single-family',
+      })
+      expectIntakeResult(body)
       expect(body.profile?.propertyType).toBe('single-family')
       expect(body.route).toBeDefined()
       expect(body.route?.eligibleCarriers).toBeDefined()
     })
 
     it('should filter carriers by driving record eligibility for auto insurance', async () => {
-      const req = new Request('http://localhost/api/intake', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          message: 's:CA l:auto cleanRecord3Yr:true',
-        }),
-      })
-
-      const res = await app.request(req)
-      expect(res.status).toBe(200)
-
-      const body = (await res.json()) as {
+      const body = await client.postJson<{
         route?: {
           eligibleCarriers?: string[]
         }
         profile?: {
           cleanRecord3Yr?: boolean
         }
-      }
+      }>('/api/intake', {
+        message: 's:CA l:auto cleanRecord3Yr:true',
+      })
+      expectIntakeResult(body)
       expect(body.profile?.cleanRecord3Yr).toBe(true)
       expect(body.route).toBeDefined()
       expect(body.route?.eligibleCarriers).toBeDefined()
@@ -330,21 +197,13 @@ describe('POST /api/intake', () => {
 
   describe('Compliance filter integration', () => {
     it('should include compliance check in response', async () => {
-      const req = new Request('http://localhost/api/intake', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          message: 's:CA l:auto',
-        }),
-      })
-
-      const res = await app.request(req)
-      expect(res.status).toBe(200)
-
-      const body = (await res.json()) as {
+      const body = await client.postJson<{
         complianceValidated?: boolean
         disclaimers?: string[]
-      }
+      }>('/api/intake', {
+        message: 's:CA l:auto',
+      })
+      expectIntakeResult(body)
       expect(body.complianceValidated).toBeDefined()
       expect(typeof body.complianceValidated).toBe('boolean')
       expect(body.disclaimers).toBeDefined()
@@ -352,21 +211,13 @@ describe('POST /api/intake', () => {
     })
 
     it('should include disclaimers in IntakeResult response', async () => {
-      const req = new Request('http://localhost/api/intake', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          message: 's:CA l:auto',
-        }),
-      })
-
-      const res = await app.request(req)
-      expect(res.status).toBe(200)
-
-      const body = (await res.json()) as {
+      const body = await client.postJson<{
         disclaimers?: string[]
         profile?: { state?: string; productLine?: string }
-      }
+      }>('/api/intake', {
+        message: 's:CA l:auto',
+      })
+      expectIntakeResult(body)
       expect(body.disclaimers).toBeDefined()
       expect(Array.isArray(body.disclaimers)).toBe(true)
       expect(body.disclaimers?.length).toBeGreaterThan(0)
@@ -375,76 +226,41 @@ describe('POST /api/intake', () => {
     })
 
     it('should select state-specific disclaimers for CA', async () => {
-      const req = new Request('http://localhost/api/intake', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          message: 's:CA',
-        }),
-      })
-
-      const res = await app.request(req)
-      expect(res.status).toBe(200)
-
-      const body = (await res.json()) as {
+      const body = await client.postJson<{
         disclaimers?: string[]
-      }
+      }>('/api/intake', {
+        message: 's:CA',
+      })
+      expectIntakeResult(body)
       expect(body.disclaimers).toBeDefined()
       expect(body.disclaimers?.some((d) => d.includes('California'))).toBe(true)
     })
 
     it('should select product-specific disclaimers for auto', async () => {
-      const req = new Request('http://localhost/api/intake', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          message: 'l:auto',
-        }),
-      })
-
-      const res = await app.request(req)
-      expect(res.status).toBe(200)
-
-      const body = (await res.json()) as {
+      const body = await client.postJson<{
         disclaimers?: string[]
-      }
+      }>('/api/intake', {
+        message: 'l:auto',
+      })
+      expectIntakeResult(body)
       expect(body.disclaimers).toBeDefined()
       expect(body.disclaimers?.some((d) => d.includes('Auto Insurance'))).toBe(true)
     })
 
     it('should combine state and product disclaimers', async () => {
-      const req = new Request('http://localhost/api/intake', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          message: 's:CA l:auto',
-        }),
-      })
-
-      const res = await app.request(req)
-      expect(res.status).toBe(200)
-
-      const body = (await res.json()) as {
+      const body = await client.postJson<{
         disclaimers?: string[]
-      }
+      }>('/api/intake', {
+        message: 's:CA l:auto',
+      })
+      expectIntakeResult(body)
       expect(body.disclaimers).toBeDefined()
       expect(body.disclaimers?.some((d) => d.includes('California'))).toBe(true)
       expect(body.disclaimers?.some((d) => d.includes('Auto Insurance'))).toBe(true)
     })
 
     it('should log compliance check to decision trace', async () => {
-      const req = new Request('http://localhost/api/intake', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          message: 's:CA l:auto',
-        }),
-      })
-
-      const res = await app.request(req)
-      expect(res.status).toBe(200)
-
-      const body = (await res.json()) as {
+      const body = await client.postJson<{
         trace?: {
           complianceCheck?: {
             passed?: boolean
@@ -454,7 +270,10 @@ describe('POST /api/intake', () => {
             productLine?: string
           }
         }
-      }
+      }>('/api/intake', {
+        message: 's:CA l:auto',
+      })
+      expectIntakeResult(body)
       expect(body.trace?.complianceCheck).toBeDefined()
       expect(body.trace?.complianceCheck?.passed).toBeDefined()
       expect(typeof body.trace?.complianceCheck?.passed).toBe('boolean')
@@ -465,21 +284,13 @@ describe('POST /api/intake', () => {
     })
 
     it('should run compliance filter on pitch before returning to frontend', async () => {
-      const req = new Request('http://localhost/api/intake', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          message: 's:CA l:auto',
-        }),
-      })
-
-      const res = await app.request(req)
-      expect(res.status).toBe(200)
-
-      const body = (await res.json()) as {
+      const body = await client.postJson<{
         pitch?: string
         complianceValidated?: boolean
-      }
+      }>('/api/intake', {
+        message: 's:CA l:auto',
+      })
+      expectIntakeResult(body)
       // Pitch should be present (currently empty string for MVP)
       expect(body.pitch).toBeDefined()
       expect(typeof body.pitch).toBe('string')
@@ -493,19 +304,7 @@ describe('POST /api/intake', () => {
       process.env.NODE_ENV = 'test'
 
       try {
-        const req = new Request('http://localhost/api/intake', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            message: 's:CA l:auto',
-            testPitch: 'We guarantee the lowest rate for your auto insurance!',
-          }),
-        })
-
-        const res = await app.request(req)
-        expect(res.status).toBe(200)
-
-        const body = (await res.json()) as {
+        const body = await client.postJson<{
           pitch?: string
           complianceValidated?: boolean
           trace?: {
@@ -514,7 +313,11 @@ describe('POST /api/intake', () => {
               violations?: string[]
             }
           }
-        }
+        }>('/api/intake', {
+          message: 's:CA l:auto',
+          testPitch: 'We guarantee the lowest rate for your auto insurance!',
+        })
+        expectIntakeResult(body)
 
         // Compliance check should have failed
         expect(body.complianceValidated).toBe(false)
@@ -546,20 +349,7 @@ describe('POST /api/intake', () => {
       process.env.NODE_ENV = 'test'
 
       try {
-        const req = new Request('http://localhost/api/intake', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            message: 's:TX l:home',
-            testPitch:
-              'We guarantee the best price guaranteed and you will save money with our binding quote!',
-          }),
-        })
-
-        const res = await app.request(req)
-        expect(res.status).toBe(200)
-
-        const body = (await res.json()) as {
+        const body = await client.postJson<{
           complianceValidated?: boolean
           trace?: {
             complianceCheck?: {
@@ -567,7 +357,12 @@ describe('POST /api/intake', () => {
               violations?: string[]
             }
           }
-        }
+        }>('/api/intake', {
+          message: 's:TX l:home',
+          testPitch:
+            'We guarantee the best price guaranteed and you will save money with our binding quote!',
+        })
+        expectIntakeResult(body)
 
         // Compliance check should have failed
         expect(body.complianceValidated).toBe(false)
@@ -585,20 +380,7 @@ describe('POST /api/intake', () => {
       process.env.NODE_ENV = 'test'
 
       try {
-        const req = new Request('http://localhost/api/intake', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            message: 's:FL l:renters',
-            testPitch:
-              'Based on your profile, we have found several insurance options that may meet your needs. Rates are subject to underwriting and approval.',
-          }),
-        })
-
-        const res = await app.request(req)
-        expect(res.status).toBe(200)
-
-        const body = (await res.json()) as {
+        const body = await client.postJson<{
           pitch?: string
           complianceValidated?: boolean
           trace?: {
@@ -607,7 +389,12 @@ describe('POST /api/intake', () => {
               violations?: string[]
             }
           }
-        }
+        }>('/api/intake', {
+          message: 's:FL l:renters',
+          testPitch:
+            'Based on your profile, we have found several insurance options that may meet your needs. Rates are subject to underwriting and approval.',
+        })
+        expectIntakeResult(body)
 
         // Compliance check should have passed
         expect(body.complianceValidated).toBe(true)

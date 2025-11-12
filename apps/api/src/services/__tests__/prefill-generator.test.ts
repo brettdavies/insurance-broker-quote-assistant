@@ -5,7 +5,8 @@
  */
 
 import { describe, expect, it } from 'bun:test'
-import type { MissingField, RouteDecision, UserProfile } from '@repo/shared'
+import type { MissingField, RouteDecision } from '@repo/shared'
+import { buildUserProfile } from '@repo/shared'
 import {
   generateLeadHandoffSummary,
   generatePrefillPacket,
@@ -14,11 +15,11 @@ import {
 
 describe('getMissingFields', () => {
   it('should detect missing critical fields for auto product', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
+    const profile = buildUserProfile({
       // Missing vehicles and drivers (critical)
-    }
+      vehicles: undefined,
+      drivers: undefined,
+    })
 
     const missing = getMissingFields(profile)
     expect(missing.some((f) => f.field === 'vehicles' && f.priority === 'critical')).toBe(true)
@@ -26,50 +27,49 @@ describe('getMissingFields', () => {
   })
 
   it('should detect missing important fields for auto product', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
+    const profile = buildUserProfile({
       vehicles: 2,
       drivers: 1,
       // Missing vins (important)
-    }
+      vins: undefined,
+    })
 
     const missing = getMissingFields(profile)
     expect(missing.some((f) => f.field === 'vins' && f.priority === 'important')).toBe(true)
   })
 
   it('should detect missing optional fields for auto product', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
+    const profile = buildUserProfile({
       vehicles: 2,
       drivers: 1,
       vins: 'ABC123',
       // Missing garage (optional)
-    }
+      garage: undefined,
+    })
 
     const missing = getMissingFields(profile)
     expect(missing.some((f) => f.field === 'garage' && f.priority === 'optional')).toBe(true)
   })
 
   it('should detect missing critical fields for home product', () => {
-    const profile: UserProfile = {
-      state: 'CA',
+    const profile = buildUserProfile({
       productLine: 'home',
       // Missing propertyType (critical)
-    }
+      propertyType: undefined,
+    })
 
     const missing = getMissingFields(profile)
     expect(missing.some((f) => f.field === 'propertyType' && f.priority === 'critical')).toBe(true)
   })
 
   it('should detect missing important fields for home product', () => {
-    const profile: UserProfile = {
-      state: 'CA',
+    const profile = buildUserProfile({
       productLine: 'home',
       propertyType: 'single-family',
       // Missing constructionYear and squareFeet (important)
-    }
+      constructionYear: undefined,
+      squareFeet: undefined,
+    })
 
     const missing = getMissingFields(profile)
     expect(missing.some((f) => f.field === 'constructionYear' && f.priority === 'important')).toBe(
@@ -79,22 +79,22 @@ describe('getMissingFields', () => {
   })
 
   it('should detect missing critical fields for renters product', () => {
-    const profile: UserProfile = {
-      state: 'CA',
+    const profile = buildUserProfile({
       productLine: 'renters',
       // Missing propertyType (critical)
-    }
+      propertyType: undefined,
+    })
 
     const missing = getMissingFields(profile)
     expect(missing.some((f) => f.field === 'propertyType' && f.priority === 'critical')).toBe(true)
   })
 
   it('should detect missing critical fields for umbrella product', () => {
-    const profile: UserProfile = {
-      state: 'CA',
+    const profile = buildUserProfile({
       productLine: 'umbrella',
       // Missing existingPolicies (critical)
-    }
+      existingPolicies: undefined,
+    })
 
     const missing = getMissingFields(profile)
     expect(missing.some((f) => f.field === 'existingPolicies' && f.priority === 'critical')).toBe(
@@ -103,7 +103,10 @@ describe('getMissingFields', () => {
   })
 
   it('should always require state and productLine', () => {
-    const profile: UserProfile = {}
+    const profile = buildUserProfile({
+      state: undefined,
+      productLine: undefined,
+    })
 
     const missing = getMissingFields(profile)
     expect(missing.some((f) => f.field === 'state' && f.priority === 'critical')).toBe(true)
@@ -111,14 +114,12 @@ describe('getMissingFields', () => {
   })
 
   it('should return empty array when all fields present', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
+    const profile = buildUserProfile({
       vehicles: 2,
       drivers: 1,
       vins: 'ABC123',
       garage: 'attached',
-    }
+    })
 
     const missing = getMissingFields(profile)
     // Should only have state and productLine (already present)
@@ -136,30 +137,21 @@ describe('generateLeadHandoffSummary', () => {
   }
 
   it('should include state-specific guidance for CA', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
-    }
+    const profile = buildUserProfile()
 
     const summary = generateLeadHandoffSummary(profile, mockRoute, [])
     expect(summary.some((note) => note.includes('California'))).toBe(true)
   })
 
   it('should include product-specific guidance for auto', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
-    }
+    const profile = buildUserProfile()
 
     const summary = generateLeadHandoffSummary(profile, mockRoute, [])
     expect(summary.some((note) => note.includes('Auto insurance'))).toBe(true)
   })
 
   it('should include missing fields checklist', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
-    }
+    const profile = buildUserProfile()
 
     const missingFields = [
       { field: 'vehicles', priority: 'critical' as const },
@@ -171,10 +163,7 @@ describe('generateLeadHandoffSummary', () => {
   })
 
   it('should include routing rationale', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
-    }
+    const profile = buildUserProfile()
 
     const summary = generateLeadHandoffSummary(profile, mockRoute, [])
     expect(summary.some((note) => note.includes('Routing rationale'))).toBe(true)
@@ -182,10 +171,7 @@ describe('generateLeadHandoffSummary', () => {
   })
 
   it('should include alternative carriers', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
-    }
+    const profile = buildUserProfile()
 
     const summary = generateLeadHandoffSummary(profile, mockRoute, [])
     expect(summary.some((note) => note.includes('Alternative carriers'))).toBe(true)
@@ -205,18 +191,16 @@ describe('generatePrefillPacket', () => {
   const mockDisclaimers = ['Disclaimer 1', 'Disclaimer 2']
 
   it('should generate complete prefill packet with all fields mapped correctly', () => {
-    const profile: UserProfile = {
+    const profile = buildUserProfile({
       name: 'John Doe',
       email: 'john@example.com',
       phone: '555-1234',
       zip: '90210',
-      state: 'CA',
-      productLine: 'auto',
       vehicles: 2,
       drivers: 1,
       vins: 'ABC123 DEF456',
       garage: 'attached',
-    }
+    })
 
     const missingFields = getMissingFields(profile)
     const prefill = generatePrefillPacket(profile, mockRoute, missingFields, mockDisclaimers)
@@ -239,11 +223,9 @@ describe('generatePrefillPacket', () => {
   })
 
   it('should generate prefill packet with partial UserProfile', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
+    const profile = buildUserProfile({
       vehicles: 1,
-    }
+    })
 
     const missingFields = getMissingFields(profile)
     const prefill = generatePrefillPacket(profile, mockRoute, missingFields, mockDisclaimers)
@@ -256,14 +238,13 @@ describe('generatePrefillPacket', () => {
   })
 
   it('should map home product fields correctly', () => {
-    const profile: UserProfile = {
-      state: 'CA',
+    const profile = buildUserProfile({
       productLine: 'home',
       propertyType: 'single-family',
       constructionYear: 2000,
       squareFeet: 2000,
       roofType: 'asphalt',
-    }
+    })
 
     const missingFields = getMissingFields(profile)
     const prefill = generatePrefillPacket(profile, mockRoute, missingFields, mockDisclaimers)
@@ -275,10 +256,10 @@ describe('generatePrefillPacket', () => {
   })
 
   it('should include missing fields in prefill packet', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
-    }
+    const profile = buildUserProfile({
+      vehicles: undefined,
+      drivers: undefined,
+    })
 
     const missingFields = getMissingFields(profile)
     const prefill = generatePrefillPacket(profile, mockRoute, missingFields, mockDisclaimers)
@@ -290,10 +271,7 @@ describe('generatePrefillPacket', () => {
   })
 
   it('should include agent notes with lead handoff summary', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
-    }
+    const profile = buildUserProfile()
 
     const missingFields = getMissingFields(profile)
     const prefill = generatePrefillPacket(profile, mockRoute, missingFields, mockDisclaimers)
@@ -304,10 +282,7 @@ describe('generatePrefillPacket', () => {
   })
 
   it('should set reviewedByLicensedAgent to false', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
-    }
+    const profile = buildUserProfile()
 
     const missingFields = getMissingFields(profile)
     const prefill = generatePrefillPacket(profile, mockRoute, missingFields, mockDisclaimers)
@@ -316,9 +291,9 @@ describe('generatePrefillPacket', () => {
   })
 
   it('should throw error if state is missing', () => {
-    const profile: UserProfile = {
-      productLine: 'auto',
-    }
+    const profile = buildUserProfile({
+      state: undefined,
+    })
 
     const missingFields = getMissingFields(profile)
     expect(() => {
@@ -327,9 +302,9 @@ describe('generatePrefillPacket', () => {
   })
 
   it('should throw error if productLine is missing', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-    }
+    const profile = buildUserProfile({
+      productLine: undefined,
+    })
 
     const missingFields = getMissingFields(profile)
     expect(() => {
@@ -338,23 +313,18 @@ describe('generatePrefillPacket', () => {
   })
 
   it('should handle empty missingFields array', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
+    const profile = buildUserProfile({
       vehicles: 2,
       drivers: 1,
       vins: 'ABC123',
-    }
+    })
 
     const prefill = generatePrefillPacket(profile, mockRoute, [], mockDisclaimers)
     expect(prefill.missingFields).toEqual([])
   })
 
   it('should handle empty disclaimers array', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
-    }
+    const profile = buildUserProfile()
 
     const missingFields = getMissingFields(profile)
     const prefill = generatePrefillPacket(profile, mockRoute, missingFields, [])

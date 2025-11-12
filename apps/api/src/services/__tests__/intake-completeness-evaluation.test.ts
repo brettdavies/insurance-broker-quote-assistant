@@ -10,6 +10,7 @@
 
 import { describe, expect, it } from 'bun:test'
 import type { UserProfile } from '@repo/shared'
+import { buildUserProfile } from '@repo/shared'
 import { getMissingFields } from '../../services/prefill-generator'
 
 /**
@@ -45,28 +46,24 @@ function calculateCompleteness(
 describe('Intake Completeness Evaluation Harness', () => {
   describe('Auto Insurance Completeness', () => {
     it('should achieve ≥95% completeness with all critical and important fields', () => {
-      const profile: UserProfile = {
-        state: 'CA',
-        productLine: 'auto',
+      const profile = buildUserProfile({
         vehicles: 2,
         drivers: 1,
         vins: 'ABC123 DEF456',
         garage: 'attached',
         age: 35,
         cleanRecord3Yr: true,
-      }
+      })
 
       const completeness = calculateCompleteness(profile, 'auto', 'CA', 'GEICO')
       expect(completeness).toBeGreaterThanOrEqual(95)
     })
 
     it('should achieve ≥95% completeness with critical fields only', () => {
-      const profile: UserProfile = {
-        state: 'CA',
-        productLine: 'auto',
+      const profile = buildUserProfile({
         vehicles: 2,
         drivers: 1,
-      }
+      })
 
       const completeness = calculateCompleteness(profile, 'auto', 'CA')
       // Critical fields are most important - should achieve reasonable completeness
@@ -76,9 +73,7 @@ describe('Intake Completeness Evaluation Harness', () => {
     })
 
     it('should achieve ≥95% completeness with complete auto profile', () => {
-      const profile: UserProfile = {
-        state: 'CA',
-        productLine: 'auto',
+      const profile = buildUserProfile({
         vehicles: 2,
         drivers: 1,
         vins: 'ABC123',
@@ -86,7 +81,7 @@ describe('Intake Completeness Evaluation Harness', () => {
         age: 30,
         cleanRecord3Yr: true,
         creditScore: 750,
-      }
+      })
 
       const completeness = calculateCompleteness(profile, 'auto', 'CA', 'GEICO')
       expect(completeness).toBeGreaterThanOrEqual(95)
@@ -95,25 +90,23 @@ describe('Intake Completeness Evaluation Harness', () => {
 
   describe('Home Insurance Completeness', () => {
     it('should achieve ≥95% completeness with all critical and important fields', () => {
-      const profile: UserProfile = {
-        state: 'CA',
+      const profile = buildUserProfile({
         productLine: 'home',
         propertyType: 'single-family',
         constructionYear: 2000,
         squareFeet: 2000,
         roofType: 'asphalt',
-      }
+      })
 
       const completeness = calculateCompleteness(profile, 'home', 'CA')
       expect(completeness).toBeGreaterThanOrEqual(95)
     })
 
     it('should achieve ≥95% completeness with critical fields only', () => {
-      const profile: UserProfile = {
-        state: 'CA',
+      const profile = buildUserProfile({
         productLine: 'home',
         propertyType: 'single-family',
-      }
+      })
 
       const completeness = calculateCompleteness(profile, 'home', 'CA')
       // Critical fields should achieve reasonable completeness
@@ -125,11 +118,10 @@ describe('Intake Completeness Evaluation Harness', () => {
 
   describe('Renters Insurance Completeness', () => {
     it('should achieve ≥95% completeness with critical fields', () => {
-      const profile: UserProfile = {
-        state: 'CA',
+      const profile = buildUserProfile({
         productLine: 'renters',
         propertyType: 'apartment',
-      }
+      })
 
       const completeness = calculateCompleteness(profile, 'renters', 'CA')
       // Renters has fewer required fields, should achieve high completeness
@@ -139,8 +131,7 @@ describe('Intake Completeness Evaluation Harness', () => {
 
   describe('Umbrella Insurance Completeness', () => {
     it('should achieve ≥95% completeness with critical fields', () => {
-      const profile: UserProfile = {
-        state: 'CA',
+      const profile = buildUserProfile({
         productLine: 'umbrella',
         existingPolicies: [
           {
@@ -149,7 +140,7 @@ describe('Intake Completeness Evaluation Harness', () => {
             premium: 1200,
           },
         ],
-      }
+      })
 
       const completeness = calculateCompleteness(profile, 'umbrella', 'CA')
       expect(completeness).toBeGreaterThanOrEqual(95)
@@ -158,15 +149,13 @@ describe('Intake Completeness Evaluation Harness', () => {
 
   describe('Carrier-Specific Completeness', () => {
     it('should maintain ≥95% completeness with carrier-specific requirements', () => {
-      const profile: UserProfile = {
-        state: 'CA',
-        productLine: 'auto',
+      const profile = buildUserProfile({
         vehicles: 2,
         drivers: 1,
         vins: 'ABC123',
         cleanRecord3Yr: true, // Carrier-specific requirement
         age: 30, // Carrier-specific requirement
-      }
+      })
 
       const completeness = calculateCompleteness(profile, 'auto', 'CA', 'GEICO')
       // With many fields captured, should achieve high completeness
@@ -176,13 +165,11 @@ describe('Intake Completeness Evaluation Harness', () => {
 
   describe('State-Specific Completeness', () => {
     it('should maintain ≥95% completeness with state-specific requirements', () => {
-      const profile: UserProfile = {
-        state: 'CA',
-        productLine: 'auto',
+      const profile = buildUserProfile({
         vehicles: 2,
         drivers: 1,
         vins: 'ABC123', // State-specific important requirement
-      }
+      })
 
       const completeness = calculateCompleteness(profile, 'auto', 'CA')
       // With critical + important fields, should achieve high completeness
@@ -192,29 +179,32 @@ describe('Intake Completeness Evaluation Harness', () => {
 
   describe('Progressive Disclosure Completeness', () => {
     it('should track completeness as fields are progressively added', () => {
-      // Start with minimal profile
-      const profile1: UserProfile = {
-        state: 'CA',
-        productLine: 'auto',
-      }
+      // Start with minimal profile (only state and productLine from defaults)
+      const profile1 = buildUserProfile({
+        age: undefined,
+        vehicles: undefined,
+        householdSize: undefined,
+        ownsHome: undefined,
+        cleanRecord3Yr: undefined,
+      })
       const completeness1 = calculateCompleteness(profile1, 'auto', 'CA')
       expect(completeness1).toBeGreaterThan(0)
       expect(completeness1).toBeLessThan(50) // Low initial completeness
 
       // Add critical fields
-      const profile2: UserProfile = {
-        ...profile1,
+      const profile2 = buildUserProfile({
         vehicles: 2,
         drivers: 1,
-      }
+      })
       const completeness2 = calculateCompleteness(profile2, 'auto', 'CA')
       expect(completeness2).toBeGreaterThan(completeness1) // Improved completeness
 
       // Add important fields
-      const profile3: UserProfile = {
-        ...profile2,
+      const profile3 = buildUserProfile({
+        vehicles: 2,
+        drivers: 1,
         vins: 'ABC123',
-      }
+      })
       const completeness3 = calculateCompleteness(profile3, 'auto', 'CA')
       expect(completeness3).toBeGreaterThan(completeness2) // Further improved
 
@@ -225,15 +215,21 @@ describe('Intake Completeness Evaluation Harness', () => {
 
   describe('Edge Cases Completeness', () => {
     it('should handle empty profile gracefully', () => {
-      const profile: UserProfile = {}
+      const profile = buildUserProfile({
+        state: undefined,
+        productLine: undefined,
+        age: undefined,
+        vehicles: undefined,
+        householdSize: undefined,
+        ownsHome: undefined,
+        cleanRecord3Yr: undefined,
+      })
       const completeness = calculateCompleteness(profile)
       expect(completeness).toBe(0) // No fields captured
     })
 
     it('should handle complete profile correctly', () => {
-      const profile: UserProfile = {
-        state: 'CA',
-        productLine: 'auto',
+      const profile = buildUserProfile({
         vehicles: 2,
         drivers: 1,
         vins: 'ABC123',
@@ -244,20 +240,18 @@ describe('Intake Completeness Evaluation Harness', () => {
         name: 'John Doe',
         email: 'john@example.com',
         phone: '555-1234',
-      }
+      })
 
       const completeness = calculateCompleteness(profile, 'auto', 'CA', 'GEICO')
       expect(completeness).toBeGreaterThanOrEqual(95)
     })
 
     it('should handle unknown carrier gracefully', () => {
-      const profile: UserProfile = {
-        state: 'CA',
-        productLine: 'auto',
+      const profile = buildUserProfile({
         vehicles: 2,
         drivers: 1,
         vins: 'ABC123',
-      }
+      })
 
       const completeness = calculateCompleteness(profile, 'auto', 'CA', 'UnknownCarrier')
       // Should still calculate completeness without carrier-specific requirements
@@ -267,42 +261,42 @@ describe('Intake Completeness Evaluation Harness', () => {
 
   describe('Overall Completeness Validation', () => {
     it('should validate ≥95% completeness across all product types', () => {
-      const testProfiles: Array<{ profile: UserProfile; productLine: string; state: string }> = [
+      const testProfiles: Array<{
+        profile: ReturnType<typeof buildUserProfile>
+        productLine: string
+        state: string
+      }> = [
         {
-          profile: {
-            state: 'CA',
-            productLine: 'auto',
+          profile: buildUserProfile({
             vehicles: 2,
             drivers: 1,
             vins: 'ABC123',
             garage: 'attached',
-          },
+          }),
           productLine: 'auto',
           state: 'CA',
         },
         {
-          profile: {
-            state: 'CA',
+          profile: buildUserProfile({
             productLine: 'home',
             propertyType: 'single-family',
             constructionYear: 2000,
             squareFeet: 2000,
             roofType: 'asphalt',
-          },
+          }),
           productLine: 'home',
           state: 'CA',
         },
         {
-          profile: {
-            state: 'CA',
+          profile: buildUserProfile({
             productLine: 'renters',
             propertyType: 'apartment',
-          },
+          }),
           productLine: 'renters',
           state: 'CA',
         },
         {
-          profile: {
+          profile: buildUserProfile({
             state: 'CA',
             productLine: 'umbrella',
             existingPolicies: [
@@ -312,7 +306,7 @@ describe('Intake Completeness Evaluation Harness', () => {
                 premium: 1200,
               },
             ],
-          },
+          }),
           productLine: 'umbrella',
           state: 'CA',
         },

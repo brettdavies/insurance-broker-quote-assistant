@@ -45,10 +45,10 @@ TEST_API_URL=http://localhost:7070 bun run test:contract
 - Performance benchmarks
 
 ### Gemini Provider Tests (Real API)
-Tests against actual Gemini API to verify integration. **Requires `TEST_GEMINI_API=true` and may incur API costs.**
+Tests against actual Gemini API to verify integration. **Requires `TEST_TARGETS=real-api` and may incur API costs.**
 
 ```bash
-TEST_GEMINI_API=true bun run test:gemini
+TEST_TARGETS=real-api bun run test:gemini
 ```
 
 **Coverage:**
@@ -101,7 +101,7 @@ TEST_API_URL=http://localhost:7070 bun run test:contract
 **Option 2: Gemini Provider Tests (Unit Level)**
 ```bash
 # Run tests against real Gemini API
-TEST_GEMINI_API=true bun run test:gemini
+TEST_TARGETS=real-api bun run test:gemini
 ```
 
 ## Running All Tests
@@ -113,8 +113,8 @@ bun test
 # Run all tests including contract tests (requires running server)
 bun run test:all
 
-# Run with real Gemini API (requires TEST_GEMINI_API=true)
-TEST_GEMINI_API=true bun run test:gemini
+# Run with real Gemini API (requires TEST_TARGETS=real-api)
+TEST_TARGETS=real-api bun run test:gemini
 ```
 
 ## Test Coverage Summary
@@ -170,7 +170,7 @@ kill $SERVER_PID
 - **Gemini provider tests**: Will incur API costs (use free tier `gemini-2.5-flash-lite`)
 
 To minimize costs:
-- Use `TEST_GEMINI_API=true` only when needed
+- Use `TEST_TARGETS=real-api` only when needed
 - Contract tests skip gracefully if server isn't running
 - Default test runs use mocks (no API calls)
 

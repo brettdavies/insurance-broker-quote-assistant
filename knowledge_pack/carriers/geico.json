@@ -1,4 +1,5 @@
 {
+  "$schema": "../schemas/carrier.json",
   "meta": {
     "schemaVersion": "1.0",
     "generatedDate": "2025-11-10T20:04:54.218Z",
@@ -184,7 +185,9 @@
           "_id": "fld_pug5w15tvggwdsdou4zckv6c",
           "value": {
             "mustHaveProducts": ["auto", "home"],
-            "minProducts": 2
+            "minProducts": 2,
+            "bundleProducts": ["auto", "home"],
+            "description": "Must have both auto and home insurance policies with GEICO"
           },
           "_sources": [
             {
@@ -200,6 +203,15 @@
           "_id": "fld_igljacp2voa2xz32hokt3x2q",
           "value": true,
           "_sources": []
+        },
+        "stateVariations": {
+          "CA": {
+            "multiplier": 0.5
+          }
+        },
+        "metadata": {
+          "discountType": "bundle",
+          "evaluationPriority": "high"
         },
         "description": {
           "_id": "fld_mc8bfpsawf2kotxwafs7fav1",
@@ -265,7 +277,11 @@
           "_id": "fld_lu4eezs4j4os5j2brgg83h8f",
           "value": {
             "mustHaveProducts": ["auto"],
-            "minProducts": 1
+            "minProducts": 1,
+            "fieldRequirements": {
+              "cleanRecord3Yr": true
+            },
+            "description": "Must have clean driving record for past 3 years"
           },
           "_sources": [
             {
@@ -281,6 +297,15 @@
           "_id": "fld_wpsuzvgb2o0qqtyud6yyui7h",
           "value": true,
           "_sources": []
+        },
+        "stateVariations": {
+          "CA": {
+            "multiplier": 0.5
+          }
+        },
+        "metadata": {
+          "discountType": "driver",
+          "evaluationPriority": "high"
         },
         "description": {
           "_id": "fld_sybh08gytle3g5j5itx8me5f",
@@ -346,7 +371,15 @@
           "_id": "fld_hi03xu9q4iks7hfm4fnzl6cm",
           "value": {
             "mustHaveProducts": ["auto"],
-            "minProducts": 1
+            "minProducts": 1,
+            "fieldRequirements": {
+              "age": {
+                "min": 16,
+                "max": 25
+              },
+              "goodStudent": true
+            },
+            "description": "Student must be 16-25 years old with GPA 3.0 or higher (transcript required)"
           },
           "_sources": [
             {
@@ -362,6 +395,16 @@
           "_id": "fld_rr023sg4df5aqa6y2wibgmsc",
           "value": true,
           "_sources": []
+        },
+        "stateVariations": {
+          "CA": {
+            "multiplier": 0.5
+          }
+        },
+        "metadata": {
+          "discountType": "lifestyle",
+          "evaluationPriority": "medium",
+          "requiresDocumentation": true
         },
         "description": {
           "_id": "fld_pzy9vnv922emhizns9juner6",
@@ -444,6 +487,15 @@
           "value": true,
           "_sources": []
         },
+        "stateVariations": {
+          "CA": {
+            "multiplier": 0.5
+          }
+        },
+        "metadata": {
+          "discountType": "lifestyle",
+          "evaluationPriority": "high"
+        },
         "description": {
           "_id": "fld_selzkimr4vvrnufrueqm1w0h",
           "value": "Military discount available for auto and home and renters insurance",
@@ -525,6 +577,16 @@
           "value": true,
           "_sources": []
         },
+        "stateVariations": {
+          "CA": {
+            "multiplier": 0.5
+          }
+        },
+        "metadata": {
+          "discountType": "driver",
+          "evaluationPriority": "medium",
+          "requiresDocumentation": true
+        },
         "description": {
           "_id": "fld_fh506fo6npyn33510bwlv1do",
           "value": "Defensive Driving Course discount available for auto insurance",
@@ -564,6 +626,337 @@
             "primary": true
           }
         ]
+      }
+    },
+    "averagePricing": {
+      "_id": "pricing_geico_2025",
+      "_sources": [
+        {
+          "uri": "https://www.geico.com/pricing/",
+          "accessedDate": "2025-11-10T20:04:54.218Z",
+          "confidence": "high",
+          "primary": true
+        }
+      ],
+      "auto": {
+        "_id": "pricing_auto_geico",
+        "states": {
+          "_id": "fld_auto_states_pricing",
+          "value": {
+            "CA": {
+              "_id": "pricing_auto_ca",
+              "baseAnnualPremium": {
+                "_id": "fld_auto_ca_base",
+                "value": 1400,
+                "_sources": [
+                  {
+                    "uri": "https://www.geico.com/pricing/auto/CA/",
+                    "accessedDate": "2025-11-10T20:04:54.218Z",
+                    "confidence": "medium",
+                    "primary": true
+                  }
+                ]
+              },
+              "deductibleTiers": {
+                "_id": "fld_auto_ca_deduct_tiers",
+                "value": [
+                  {
+                    "deductible": 250,
+                    "annualPremium": 1600,
+                    "savingsVsBase": 0
+                  },
+                  {
+                    "deductible": 500,
+                    "annualPremium": 1400,
+                    "savingsVsBase": 200
+                  },
+                  {
+                    "deductible": 1000,
+                    "annualPremium": 1200,
+                    "savingsVsBase": 400
+                  },
+                  {
+                    "deductible": 2000,
+                    "annualPremium": 1050,
+                    "savingsVsBase": 550
+                  }
+                ],
+                "_sources": [
+                  {
+                    "uri": "https://www.geico.com/pricing/auto/CA/deductibles/",
+                    "accessedDate": "2025-11-10T20:04:54.218Z",
+                    "confidence": "medium",
+                    "primary": true
+                  }
+                ]
+              }
+            },
+            "TX": {
+              "_id": "pricing_auto_tx",
+              "baseAnnualPremium": {
+                "_id": "fld_auto_tx_base",
+                "value": 1200,
+                "_sources": [
+                  {
+                    "uri": "https://www.geico.com/pricing/auto/TX/",
+                    "accessedDate": "2025-11-10T20:04:54.218Z",
+                    "confidence": "medium",
+                    "primary": true
+                  }
+                ]
+              },
+              "deductibleTiers": {
+                "_id": "fld_auto_tx_deduct_tiers",
+                "value": [
+                  {
+                    "deductible": 250,
+                    "annualPremium": 1400,
+                    "savingsVsBase": 0
+                  },
+                  {
+                    "deductible": 500,
+                    "annualPremium": 1200,
+                    "savingsVsBase": 200
+                  },
+                  {
+                    "deductible": 1000,
+                    "annualPremium": 1000,
+                    "savingsVsBase": 400
+                  },
+                  {
+                    "deductible": 2000,
+                    "annualPremium": 850,
+                    "savingsVsBase": 550
+                  }
+                ],
+                "_sources": [
+                  {
+                    "uri": "https://www.geico.com/pricing/auto/TX/deductibles/",
+                    "accessedDate": "2025-11-10T20:04:54.218Z",
+                    "confidence": "medium",
+                    "primary": true
+                  }
+                ]
+              }
+            },
+            "FL": {
+              "_id": "pricing_auto_fl",
+              "baseAnnualPremium": {
+                "_id": "fld_auto_fl_base",
+                "value": 1800,
+                "_sources": [
+                  {
+                    "uri": "https://www.geico.com/pricing/auto/FL/",
+                    "accessedDate": "2025-11-10T20:04:54.218Z",
+                    "confidence": "medium",
+                    "primary": true
+                  }
+                ]
+              },
+              "deductibleTiers": {
+                "_id": "fld_auto_fl_deduct_tiers",
+                "value": [
+                  {
+                    "deductible": 250,
+                    "annualPremium": 2000,
+                    "savingsVsBase": 0
+                  },
+                  {
+                    "deductible": 500,
+                    "annualPremium": 1800,
+                    "savingsVsBase": 200
+                  },
+                  {
+                    "deductible": 1000,
+                    "annualPremium": 1600,
+                    "savingsVsBase": 400
+                  },
+                  {
+                    "deductible": 2000,
+                    "annualPremium": 1450,
+                    "savingsVsBase": 550
+                  }
+                ],
+                "_sources": [
+                  {
+                    "uri": "https://www.geico.com/pricing/auto/FL/deductibles/",
+                    "accessedDate": "2025-11-10T20:04:54.218Z",
+                    "confidence": "medium",
+                    "primary": true
+                  }
+                ]
+              }
+            }
+          },
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/pricing/auto/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
+      },
+      "home": {
+        "_id": "pricing_home_geico",
+        "states": {
+          "_id": "fld_home_states_pricing",
+          "value": {
+            "CA": {
+              "_id": "pricing_home_ca",
+              "baseAnnualPremium": {
+                "_id": "fld_home_ca_base",
+                "value": 1400,
+                "_sources": [
+                  {
+                    "uri": "https://www.geico.com/pricing/home/CA/",
+                    "accessedDate": "2025-11-10T20:04:54.218Z",
+                    "confidence": "medium",
+                    "primary": true
+                  }
+                ]
+              },
+              "deductibleTiers": {
+                "_id": "fld_home_ca_deduct_tiers",
+                "value": [
+                  {
+                    "deductible": 500,
+                    "annualPremium": 1600,
+                    "savingsVsBase": 0
+                  },
+                  {
+                    "deductible": 1000,
+                    "annualPremium": 1400,
+                    "savingsVsBase": 200
+                  },
+                  {
+                    "deductible": 2500,
+                    "annualPremium": 1200,
+                    "savingsVsBase": 400
+                  },
+                  {
+                    "deductible": 5000,
+                    "annualPremium": 1050,
+                    "savingsVsBase": 550
+                  }
+                ],
+                "_sources": [
+                  {
+                    "uri": "https://www.geico.com/pricing/home/CA/deductibles/",
+                    "accessedDate": "2025-11-10T20:04:54.218Z",
+                    "confidence": "medium",
+                    "primary": true
+                  }
+                ]
+              }
+            },
+            "TX": {
+              "_id": "pricing_home_tx",
+              "baseAnnualPremium": {
+                "_id": "fld_home_tx_base",
+                "value": 1200,
+                "_sources": [
+                  {
+                    "uri": "https://www.geico.com/pricing/home/TX/",
+                    "accessedDate": "2025-11-10T20:04:54.218Z",
+                    "confidence": "medium",
+                    "primary": true
+                  }
+                ]
+              },
+              "deductibleTiers": {
+                "_id": "fld_home_tx_deduct_tiers",
+                "value": [
+                  {
+                    "deductible": 500,
+                    "annualPremium": 1400,
+                    "savingsVsBase": 0
+                  },
+                  {
+                    "deductible": 1000,
+                    "annualPremium": 1200,
+                    "savingsVsBase": 200
+                  },
+                  {
+                    "deductible": 2500,
+                    "annualPremium": 1000,
+                    "savingsVsBase": 400
+                  },
+                  {
+                    "deductible": 5000,
+                    "annualPremium": 850,
+                    "savingsVsBase": 550
+                  }
+                ],
+                "_sources": [
+                  {
+                    "uri": "https://www.geico.com/pricing/home/TX/deductibles/",
+                    "accessedDate": "2025-11-10T20:04:54.218Z",
+                    "confidence": "medium",
+                    "primary": true
+                  }
+                ]
+              }
+            },
+            "FL": {
+              "_id": "pricing_home_fl",
+              "baseAnnualPremium": {
+                "_id": "fld_home_fl_base",
+                "value": 2200,
+                "_sources": [
+                  {
+                    "uri": "https://www.geico.com/pricing/home/FL/",
+                    "accessedDate": "2025-11-10T20:04:54.218Z",
+                    "confidence": "medium",
+                    "primary": true
+                  }
+                ]
+              },
+              "deductibleTiers": {
+                "_id": "fld_home_fl_deduct_tiers",
+                "value": [
+                  {
+                    "deductible": 500,
+                    "annualPremium": 2400,
+                    "savingsVsBase": 0
+                  },
+                  {
+                    "deductible": 1000,
+                    "annualPremium": 2200,
+                    "savingsVsBase": 200
+                  },
+                  {
+                    "deductible": 2500,
+                    "annualPremium": 2000,
+                    "savingsVsBase": 400
+                  },
+                  {
+                    "deductible": 5000,
+                    "annualPremium": 1850,
+                    "savingsVsBase": 550
+                  }
+                ],
+                "_sources": [
+                  {
+                    "uri": "https://www.geico.com/pricing/home/FL/deductibles/",
+                    "accessedDate": "2025-11-10T20:04:54.218Z",
+                    "confidence": "medium",
+                    "primary": true
+                  }
+                ]
+              }
+            }
+          },
+          "_sources": [
+            {
+              "uri": "https://www.geico.com/pricing/home/",
+              "accessedDate": "2025-11-10T20:04:54.218Z",
+              "confidence": "high",
+              "primary": true
+            }
+          ]
+        }
       }
     }
   }

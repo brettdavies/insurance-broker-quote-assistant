@@ -1,0 +1,50 @@
+{
+  "$schema": "../schemas/product.json",
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedDate": "2025-11-10T20:04:54.218Z",
+    "product": "home"
+  },
+  "product": {
+    "_id": "prod_home_001",
+    "_sources": [
+      {
+        "uri": "https://www.insurance.com/home-insurance/",
+        "accessedDate": "2025-11-10T20:04:54.218Z",
+        "confidence": "high",
+        "primary": true
+      }
+    ],
+    "code": "home",
+    "name": "Home Insurance",
+    "prefillGuidance": {
+      "_id": "fld_home_prefill_guidance_001",
+      "value": "Home insurance requires property inspection details. Verify construction year, square footage, and roof type.",
+      "_sources": [
+        {
+          "uri": "https://www.insurance.com/home-insurance/",
+          "accessedDate": "2025-11-10T20:04:54.218Z",
+          "confidence": "high",
+          "primary": true
+        }
+      ]
+    },
+    "requiredFields": {
+      "_id": "fld_home_required_fields_001",
+      "value": [
+        { "field": "propertyType", "priority": "critical" },
+        { "field": "constructionYear", "priority": "important" },
+        { "field": "squareFeet", "priority": "important" },
+        { "field": "roofType", "priority": "optional" }
+      ],
+      "_sources": [
+        {
+          "uri": "https://www.insurance.com/home-insurance/requirements/",
+          "accessedDate": "2025-11-10T20:04:54.218Z",
+          "confidence": "high",
+          "primary": true
+        }
+      ]
+    }
+  }
+}
