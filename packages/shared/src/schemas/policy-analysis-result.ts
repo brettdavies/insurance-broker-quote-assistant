@@ -3,6 +3,7 @@ import { type DecisionTrace, decisionTraceSchema } from './decision-trace'
 import { citationSchema } from './intake-result'
 import { opportunitySchema } from './opportunity'
 import { type PolicySummary, policySummarySchema } from './policy-summary'
+import { productTypeEnum } from './shared-enums'
 import { validatedOpportunitySchema } from './validated-opportunity'
 
 /**
@@ -29,10 +30,10 @@ const citationLLMSchema = z.object({
  * Represents opportunity to add additional products for bundle discount
  */
 export const bundleOptionSchema = z.object({
-  product: z.string(), // Product to add (e.g., "home", "auto")
-  estimatedSavings: z.number().nonnegative(), // Estimated annual savings in dollars
-  requiredActions: z.array(z.string()), // Actions needed (e.g., "Add home insurance policy")
-  citation: citationSchema, // Citation with cuid2 ID for bundle discount rule
+  product: productTypeEnum, // Product to add (must be one of: 'auto', 'home', 'renters', 'umbrella')
+  estimatedSavings: z.number().nonnegative(), // Estimated annual savings in dollars (must be non-negative)
+  requiredActions: z.array(z.string()).min(1), // Actions needed (must be non-empty array)
+  citation: citationSchema, // Citation with cuid2 ID and file path for bundle discount rule
 })
 
 export type BundleOption = z.infer<typeof bundleOptionSchema>

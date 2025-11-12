@@ -19,6 +19,7 @@ import { Hono } from 'hono'
 import { z } from 'zod'
 import { validateOutput } from '../services/compliance-filter'
 import type { ConversationalExtractor } from '../services/conversational-extractor'
+import { analyzeBundleOptions } from '../services/discount-engine'
 import { DiscountRulesValidator } from '../services/discount-rules-validator'
 import * as knowledgePackRAG from '../services/knowledge-pack-rag'
 import type { LLMProvider } from '../services/llm-provider'
@@ -474,6 +475,47 @@ export function createPolicyRoute(extractor: ConversationalExtractor, llmProvide
         )
       }
 
+      // Step 3.5: Call Bundle Analyzer to detect bundle opportunities
+      let bundleOptionsFromAnalyzer: import('@repo/shared').BundleOption[] = []
+      try {
+        bundleOptionsFromAnalyzer = analyzeBundleOptions(carrier, policySummary, undefined)
+        await logInfo('Bundle analysis completed', {
+          type: 'bundle_analysis_success',
+          carrier: policySummary.carrier,
+          state: policySummary.state,
+          bundleOptionsCount: bundleOptionsFromAnalyzer.length,
+        })
+      } catch (error) {
+        await logError('Bundle analysis failed', error as Error, {
+          type: 'bundle_analysis_error',
+          carrier: policySummary.carrier,
+          state: policySummary.state,
+        })
+        // Continue with other opportunities if bundle analysis fails (don't block entire analysis)
+        bundleOptionsFromAnalyzer = []
+      }
+
+      // Merge bundle options from analyzer with LLM-generated ones
+      // Deduplicate by product to avoid showing the same opportunity twice
+      const allBundleOptions = [...rawAnalysisResult.bundleOptions, ...bundleOptionsFromAnalyzer]
+      const uniqueBundleOptions = allBundleOptions.reduce(
+        (acc: import('@repo/shared').BundleOption[], option) => {
+          // Check if we already have a bundle option for this product
+          const existing = acc.find((opt) => opt.product === option.product)
+          if (!existing) {
+            acc.push(option)
+          } else {
+            // Keep the one with higher estimated savings
+            if (option.estimatedSavings > existing.estimatedSavings) {
+              const index = acc.indexOf(existing)
+              acc[index] = option
+            }
+          }
+          return acc
+        },
+        []
+      )
+
       // Step 4: Validate opportunities using Discount Rules Validator
       const discountValidator = new DiscountRulesValidator(knowledgePackRAG)
       // Initialize with raw opportunities as fallback (will be replaced if validation succeeds)
@@ -557,7 +599,7 @@ export function createPolicyRoute(extractor: ConversationalExtractor, llmProvide
       try {
         const pitchResult = await pitchGenerator.generatePitch(
           validatedOpportunities,
-          rawAnalysisResult.bundleOptions,
+          uniqueBundleOptions,
           rawAnalysisResult.deductibleOptimizations,
           policySummary
         )
@@ -646,10 +688,37 @@ export function createPolicyRoute(extractor: ConversationalExtractor, llmProvide
       // Add analysis results to trace
       decisionTrace.outputs = {
         opportunities: validatedOpportunities,
-        bundleOptions: rawAnalysisResult.bundleOptions,
+        bundleOptions: uniqueBundleOptions,
         deductibleOptimizations: rawAnalysisResult.deductibleOptimizations,
         pitch,
         complianceValidated: complianceResult.passed,
+      }
+
+      // Add bundle analysis results to decision trace
+      if (bundleOptionsFromAnalyzer.length > 0) {
+        decisionTrace.bundleAnalysis = {
+          currentProduct: policySummary.productType || '',
+          bundleOpportunities: bundleOptionsFromAnalyzer.map((opt) => ({
+            product: opt.product,
+            estimatedSavings: opt.estimatedSavings,
+            requiredActions: opt.requiredActions,
+          })),
+          carrierAvailabilityChecks: [
+            {
+              carrier: carrier.name,
+              state: policySummary.state || '',
+              operatesInState: knowledgePackRAG.getCarrierStateAvailability(
+                carrier.name,
+                policySummary.state || ''
+              ),
+              availableProducts: knowledgePackRAG.getCarrierProductsForState(
+                carrier.name,
+                policySummary.state || ''
+              ),
+            },
+          ],
+          citations: bundleOptionsFromAnalyzer.map((opt) => opt.citation),
+        }
       }
 
       await logDecisionTrace(decisionTrace)
@@ -658,7 +727,7 @@ export function createPolicyRoute(extractor: ConversationalExtractor, llmProvide
       const finalResult: PolicyAnalysisResult = {
         currentPolicy: policySummary,
         opportunities: validatedOpportunities,
-        bundleOptions: rawAnalysisResult.bundleOptions,
+        bundleOptions: uniqueBundleOptions,
         deductibleOptimizations: rawAnalysisResult.deductibleOptimizations,
         pitch,
         complianceValidated: complianceResult.passed,

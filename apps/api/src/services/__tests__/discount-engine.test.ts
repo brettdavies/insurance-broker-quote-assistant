@@ -12,13 +12,47 @@
  * @see docs/architecture/6-components.md#64-discount-engine-deterministic
  */
 
-import { describe, expect, it } from 'bun:test'
+import { afterEach, beforeEach, describe, expect, it, spyOn } from 'bun:test'
 import type { Carrier, PolicySummary } from '@repo/shared'
 import { buildUserProfile } from '@repo/shared'
 import { createTestCarrier } from '../../__tests__/fixtures/knowledge-pack'
 import { analyzeBundleOptions, findApplicableDiscounts } from '../discount-engine'
+import * as knowledgePackRAG from '../knowledge-pack-rag'
 
 describe('Discount Engine Integration', () => {
+  // Helper to create a mock that returns discounts from a specific carrier
+  const createMockForCarrier = (carrier: Carrier) => {
+    // Mock getCarrierByName so the actual helper functions can use it
+    spyOn(knowledgePackRAG, 'getCarrierByName').mockImplementation((carrierName: string) => {
+      if (carrierName.toLowerCase() === carrier.name.toLowerCase()) {
+        return carrier
+      }
+      return undefined
+    })
+
+    // Mock getCarrierBundleDiscounts to filter discounts by state
+    spyOn(knowledgePackRAG, 'getCarrierBundleDiscounts').mockImplementation(
+      (carrierName: string, stateCode: string) => {
+        if (carrierName.toLowerCase() !== carrier.name.toLowerCase()) {
+          return []
+        }
+        return carrier.discounts.filter((d) => {
+          const states = d.states?.value || []
+          return states.includes(stateCode.toUpperCase())
+        })
+      }
+    )
+
+    // Don't mock the helper functions - let them use the actual implementation
+    // They will call getCarrierByName (which we mocked above) and use getFieldValue
+  }
+
+  afterEach(() => {
+    // Restore original implementations
+    ;(knowledgePackRAG.getCarrierByName as any).mockRestore?.()
+    ;(knowledgePackRAG.getCarrierBundleDiscounts as any).mockRestore?.()
+  })
+
   const createTestPolicy = (
     carrier: string,
     state: string,
@@ -322,12 +356,13 @@ describe('Discount Engine Integration', () => {
 
       const carrier = createTestCarrier('GEICO', ['CA'], ['auto', 'home'], discounts)
         .carrier as Carrier
+      createMockForCarrier(carrier)
       const policy = createTestPolicy('GEICO', 'CA', 'auto', 1000)
 
-      const opportunities = analyzeBundleOptions(carrier, policy)
-      expect(opportunities).toHaveLength(1)
-      expect(opportunities[0]?.missingProducts).toEqual(['home'])
-      expect(opportunities[0]?.estimatedSavings).toBeGreaterThan(0)
+      const bundleOptions = analyzeBundleOptions(carrier, policy)
+      expect(bundleOptions).toHaveLength(1)
+      expect(bundleOptions[0]?.product).toBe('home')
+      expect(bundleOptions[0]?.estimatedSavings).toBeGreaterThan(0)
     })
 
     it('should apply CA multiplier to bundle savings calculation', () => {
@@ -354,11 +389,12 @@ describe('Discount Engine Integration', () => {
 
       const carrier = createTestCarrier('GEICO', ['CA'], ['auto', 'home'], discounts)
         .carrier as Carrier
+      createMockForCarrier(carrier)
       const policy = createTestPolicy('GEICO', 'CA', 'auto', 1000)
 
-      const opportunities = analyzeBundleOptions(carrier, policy)
+      const bundleOptions = analyzeBundleOptions(carrier, policy)
       // CA gets 7.5% (15 * 0.5) instead of 15%
-      expect(opportunities[0]?.estimatedSavings).toBeGreaterThan(0)
+      expect(bundleOptions[0]?.estimatedSavings).toBeGreaterThan(0)
     })
   })
 
@@ -417,6 +453,7 @@ describe('Discount Engine Integration', () => {
       expect(opportunities.length).toBeGreaterThanOrEqual(1)
 
       // Analyze bundle options (should be empty since client has full bundle)
+      createMockForCarrier(carrier)
       const bundleOpportunities = analyzeBundleOptions(carrier, policy, customer)
       expect(bundleOpportunities).toHaveLength(0)
     })

@@ -390,6 +390,7 @@ export class PolicyAnalysisAgent {
         })),
         bundleOptions: validated.bundleOptions.map((bundle) => ({
           ...bundle,
+          product: bundle.product as 'auto' | 'home' | 'renters' | 'umbrella',
           citation: {
             ...bundle.citation,
             file: '', // Will be hydrated by normalizer

@@ -82,6 +82,34 @@ export const decisionTraceSchema = z.object({
     .optional(),
   llmCalls: z.array(llmCallSchema).optional(),
   rulesConsulted: z.array(z.string()).optional(), // Knowledge pack file paths or cuid2 IDs
+  bundleAnalysis: z
+    .object({
+      currentProduct: z.string(),
+      bundleOpportunities: z.array(
+        z.object({
+          product: z.string(),
+          estimatedSavings: z.number().nonnegative(),
+          requiredActions: z.array(z.string()),
+        })
+      ),
+      carrierAvailabilityChecks: z.array(
+        z.object({
+          carrier: z.string(),
+          state: z.string(),
+          operatesInState: z.boolean(),
+          availableProducts: z.array(z.string()),
+        })
+      ),
+      citations: z.array(
+        z.object({
+          id: z.string(),
+          type: z.string(),
+          carrier: z.string(),
+          file: z.string(),
+        })
+      ),
+    })
+    .optional(),
   outputs: z.record(z.unknown()).optional(), // Final outputs sent to user
 })
 

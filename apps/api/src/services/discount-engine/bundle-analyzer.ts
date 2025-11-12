@@ -4,9 +4,10 @@
  * Analyzes bundle opportunities for adding additional products
  */
 
-import type { Carrier, PolicySummary, UserProfile } from '@repo/shared'
+import type { BundleOption, Carrier, PolicySummary, UserProfile } from '@repo/shared'
 import { getFieldValue } from '../../utils/field-helpers'
-import type { BundleOpportunity, DiscountRequirements } from './types'
+import * as knowledgePackRAG from '../knowledge-pack-rag'
+import type { DiscountRequirements } from './types'
 import { createCitation } from './utils/citation'
 import { getEffectivePercentage } from './utils/percentage'
 
@@ -16,79 +17,92 @@ import { getEffectivePercentage } from './utils/percentage'
  * @param carrier - Carrier from knowledge pack
  * @param policy - Current policy summary
  * @param customerData - Optional customer profile data
- * @returns Array of bundle opportunities
+ * @returns Array of bundle options (one per missing product)
  */
 export function analyzeBundleOptions(
   carrier: Carrier,
   policy: PolicySummary,
   customerData?: UserProfile
-): BundleOpportunity[] {
+): BundleOption[] {
   if (!policy.state || !policy.productType) {
     return []
   }
 
-  // Find bundle discounts
-  const bundleDiscounts = carrier.discounts.filter((d) => {
-    const reqs = getFieldValue(d.requirements, {}) as DiscountRequirements
-    return reqs.bundleProducts && reqs.bundleProducts.length > 1
-  })
+  // Query knowledge pack for bundle discounts using RAG layer
+  const bundleDiscounts = knowledgePackRAG.getCarrierBundleDiscounts(carrier.name, policy.state)
 
-  const opportunities: BundleOpportunity[] = []
+  const bundleOptions: BundleOption[] = []
   const currentProducts = policy.productType ? [policy.productType] : []
   const existingProducts = customerData?.existingPolicies?.map((p) => p.product) || []
   const allCurrentProducts = [...currentProducts, ...existingProducts]
+
+  // Check carrier availability using RAG helper functions
+  if (!knowledgePackRAG.getCarrierStateAvailability(carrier.name, policy.state)) {
+    return []
+  }
+
+  // Get carrier products for state using RAG helper function
+  const carrierProducts = knowledgePackRAG.getCarrierProductsForState(carrier.name, policy.state)
 
   for (const discount of bundleDiscounts) {
     const requirements = getFieldValue(discount.requirements, {}) as DiscountRequirements
     const bundleProducts = requirements.bundleProducts || []
 
-    // Find missing products
+    // Find missing products that would qualify for bundle
     const missingProducts = bundleProducts.filter(
       (product) => !allCurrentProducts.includes(product as 'auto' | 'home' | 'renters' | 'umbrella')
     )
 
+    // Only consider bundles where client has some but not all products
     if (missingProducts.length > 0 && missingProducts.length < bundleProducts.length) {
-      // Partial bundle opportunity - client has some but not all products
       if (!policy.state || bundleProducts.length === 0 || !bundleProducts[0]) {
         continue // Skip if no state or no bundle products
       }
+
       const effectivePercentage = getEffectivePercentage(
         discount,
         policy.state,
         bundleProducts[0] // Use first product for state check
       )
 
-      // Calculate current bundle premium
-      let currentBundlePremium = 0
-      for (const product of bundleProducts) {
-        if (product === policy.productType && policy.premiums?.annual) {
-          currentBundlePremium += policy.premiums.annual
-        } else if (customerData?.existingPolicies) {
-          const existingPolicy = customerData.existingPolicies.find((p) => p.product === product)
-          if (existingPolicy?.premium) {
-            currentBundlePremium += existingPolicy.premium
-          }
-        }
+      // Calculate estimated savings using current premium
+      const currentPremium = policy.premiums?.annual || 0
+      let estimatedSavings = 0
+
+      if (currentPremium > 0) {
+        // Use discount percentage × current premium
+        estimatedSavings = (effectivePercentage / 100) * currentPremium
+      } else {
+        // Fallback: Estimate based on bundle products count
+        // Rough estimate: assume equal premium distribution
+        const estimatedNewProductPremium = 1000 // Default estimate
+        const totalBundlePremium = currentPremium + estimatedNewProductPremium
+        estimatedSavings = (totalBundlePremium * effectivePercentage) / 100
       }
 
-      // Estimate new product premium (simplified - could use knowledge pack pricing data)
-      // For now, use a rough estimate based on current premium
-      const estimatedNewProductPremium = currentBundlePremium / bundleProducts.length
-      const totalBundlePremium = currentBundlePremium + estimatedNewProductPremium
-      const estimatedSavings = (totalBundlePremium * effectivePercentage) / 100
+      const citation = createCitation(discount, carrier)
 
-      opportunities.push({
-        discountId: discount._id,
-        discountName: getFieldValue(discount.name, ''),
-        missingProducts,
-        estimatedSavings,
-        requiredActions: [
-          `Add ${missingProducts.join(' and ')} insurance to qualify for bundle discount`,
-        ],
-        citation: createCitation(discount, carrier),
-      })
+      // Create one BundleOption per missing product
+      for (const missingProduct of missingProducts) {
+        // Product availability check: Verify carrier offers the recommended product
+        if (!carrierProducts.includes(missingProduct)) {
+          continue // Skip if carrier doesn't offer this product
+        }
+
+        // Type assertion: missingProduct comes from bundleProducts which is validated
+        const productType = missingProduct as 'auto' | 'home' | 'renters' | 'umbrella'
+
+        bundleOptions.push({
+          product: productType,
+          estimatedSavings,
+          requiredActions: [
+            `Add ${missingProduct} insurance to qualify for ${getFieldValue(discount.name, 'bundle')} discount`,
+          ],
+          citation,
+        })
+      }
     }
   }
 
-  return opportunities
+  return bundleOptions
 }
