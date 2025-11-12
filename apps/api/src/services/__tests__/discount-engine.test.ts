@@ -13,7 +13,8 @@
  */
 
 import { describe, expect, it } from 'bun:test'
-import type { Carrier, PolicySummary, UserProfile } from '@repo/shared'
+import type { Carrier, PolicySummary } from '@repo/shared'
+import { buildUserProfile } from '@repo/shared'
 import { createTestCarrier } from '../../__tests__/fixtures/knowledge-pack'
 import { analyzeBundleOptions, findApplicableDiscounts } from '../discount-engine'
 
@@ -28,13 +29,6 @@ describe('Discount Engine Integration', () => {
     state,
     productType: productType as any,
     premiums: { annual: premium },
-  })
-
-  const createTestCustomer = (overrides?: Partial<UserProfile>): UserProfile => ({
-    state: 'CA',
-    age: 30,
-    cleanRecord3Yr: true,
-    ...overrides,
   })
 
   describe('findApplicableDiscounts', () => {
@@ -163,12 +157,12 @@ describe('Discount Engine Integration', () => {
       const policy = createTestPolicy('GEICO', 'CA', 'auto', 1000)
 
       // Customer without clean record
-      const customerNoRecord = createTestCustomer({ cleanRecord3Yr: false })
+      const customerNoRecord = buildUserProfile({ cleanRecord3Yr: false })
       const opportunities1 = findApplicableDiscounts(carrier, policy, customerNoRecord)
       expect(opportunities1).toHaveLength(0)
 
       // Customer with clean record
-      const customerCleanRecord = createTestCustomer({ cleanRecord3Yr: true })
+      const customerCleanRecord = buildUserProfile({ cleanRecord3Yr: true })
       const opportunities2 = findApplicableDiscounts(carrier, policy, customerCleanRecord)
       expect(opportunities2).toHaveLength(1)
     })
@@ -200,7 +194,7 @@ describe('Discount Engine Integration', () => {
       const carrier = createTestCarrier('GEICO', ['CA'], ['auto', 'home'], discounts)
         .carrier as Carrier
       const policy = createTestPolicy('GEICO', 'CA', 'auto', 1000)
-      const customer = createTestCustomer({
+      const customer = buildUserProfile({
         existingPolicies: [{ product: 'home', premium: 1200, carrier: 'GEICO' }],
       })
 
@@ -299,7 +293,7 @@ describe('Discount Engine Integration', () => {
 
       const carrier = createTestCarrier('GEICO', ['CA'], ['auto'], discounts).carrier as Carrier
       const policy = createTestPolicy('GEICO', 'CA', 'auto', 1000)
-      const customer = createTestCustomer({ cleanRecord3Yr: true })
+      const customer = buildUserProfile({ cleanRecord3Yr: true })
 
       const opportunities = findApplicableDiscounts(carrier, policy, customer)
       expect(opportunities.length).toBeGreaterThanOrEqual(1)
@@ -413,7 +407,7 @@ describe('Discount Engine Integration', () => {
       const carrier = createTestCarrier('GEICO', ['CA'], ['auto', 'home'], discounts)
         .carrier as Carrier
       const policy = createTestPolicy('GEICO', 'CA', 'auto', 1000)
-      const customer = createTestCustomer({
+      const customer = buildUserProfile({
         cleanRecord3Yr: true,
         existingPolicies: [{ product: 'home', premium: 1200, carrier: 'GEICO' }],
       })

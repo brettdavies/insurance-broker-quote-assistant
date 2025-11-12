@@ -17,6 +17,27 @@ describe('Knowledge Pack Loader', () => {
   const testStatesDir = join(testKnowledgePackDir, 'states')
 
   beforeEach(async () => {
+    // Clean up any existing test directory first
+    try {
+      await rm(testKnowledgePackDir, { recursive: true, force: true })
+    } catch {
+      // Ignore cleanup errors if directory doesn't exist
+    }
+
+    // Reload the real knowledge pack first to ensure clean Maps
+    // This prevents test data (like TestCarrier) from previous tests from polluting the Maps
+    const projectRoot = process.cwd().includes('apps/api')
+      ? join(process.cwd(), '..', '..')
+      : process.cwd()
+    const realKnowledgePackDir = join(projectRoot, 'knowledge_pack')
+
+    try {
+      await loadKnowledgePack(realKnowledgePackDir)
+    } catch {
+      // If real knowledge pack doesn't exist or fails to load, that's okay
+      // The Maps will be cleared on next load anyway
+    }
+
     // Create test directories
     await mkdir(testCarriersDir, { recursive: true })
     await mkdir(testStatesDir, { recursive: true })
@@ -28,6 +49,20 @@ describe('Knowledge Pack Loader', () => {
       await rm(testKnowledgePackDir, { recursive: true, force: true })
     } catch {
       // Ignore cleanup errors
+    }
+
+    // Reload the real knowledge pack to clear test data (like TestCarrier) from Maps
+    // This ensures test isolation - each test suite starts with clean Maps
+    const projectRoot = process.cwd().includes('apps/api')
+      ? join(process.cwd(), '..', '..')
+      : process.cwd()
+    const realKnowledgePackDir = join(projectRoot, 'knowledge_pack')
+
+    try {
+      await loadKnowledgePack(realKnowledgePackDir)
+    } catch {
+      // If real knowledge pack doesn't exist or fails to load, that's okay
+      // The Maps will be cleared on next load anyway
     }
   })
 
@@ -245,6 +280,10 @@ describe('Knowledge Pack Loader', () => {
 
   describe('RAG service queries Maps only', () => {
     it('should query in-memory Maps without filesystem access', async () => {
+      // Ensure test directory is clean before writing files
+      const testProductsDir = join(testKnowledgePackDir, 'products')
+      await mkdir(testProductsDir, { recursive: true })
+
       const carrierData = createTestCarrier('TestCarrier', ['CA', 'TX'], ['auto', 'home'])
 
       await writeFile(
@@ -259,9 +298,28 @@ describe('Knowledge Pack Loader', () => {
 
       await loadKnowledgePack(testKnowledgePackDir)
 
+      // Verify the pack loaded correctly
+      const status = getLoadingStatus()
+      expect(status.state).toBe('loaded')
+      expect(status.carriersCount).toBe(1)
+
       // Verify RAG service works (using in-memory Maps)
       // Note: We can't delete the files because loadKnowledgePack needs them
       // But we can verify the RAG service uses the in-memory Maps, not filesystem
+
+      // First verify direct Map access to ensure TestCarrier is loaded
+      // This checks the Map directly, not through case-insensitive search
+      const directCarrier = getCarrier('TestCarrier')
+      expect(directCarrier).toBeDefined()
+      expect(directCarrier?.name).toBe('TestCarrier')
+
+      // Verify that only TestCarrier exists in the Maps (no pollution from other tests)
+      const { getAllCarriers } = await import('../knowledge-pack-loader')
+      const allCarriers = getAllCarriers()
+      expect(allCarriers).toHaveLength(1)
+      expect(allCarriers[0]?.name).toBe('TestCarrier')
+
+      // Then verify case-insensitive lookup works
       const carrier = getCarrierByName('TestCarrier')
       expect(carrier).toBeDefined()
       expect(carrier?.name).toBe('TestCarrier')
@@ -272,11 +330,6 @@ describe('Knowledge Pack Loader', () => {
 
       // Verify isKnowledgePackLoaded still works
       expect(isKnowledgePackLoaded()).toBe(true)
-
-      // Verify direct Map access (not filesystem)
-      const directCarrier = getCarrier('TestCarrier')
-      expect(directCarrier).toBeDefined()
-      expect(directCarrier?.name).toBe('TestCarrier')
 
       const directState = getState('CA')
       expect(directState).toBeDefined()

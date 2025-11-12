@@ -4,7 +4,7 @@
  * Handles multi-policy bundle discounts
  */
 
-import type { PolicySummary, UserProfile } from '@repo/shared'
+import type { Discount, PolicySummary, UserProfile } from '@repo/shared'
 import { getFieldValue } from '../../../utils/field-helpers'
 import type { DiscountRequirements, SavingsCalculation } from '../types'
 import { BaseDiscountEvaluator } from './base-evaluator'
@@ -14,7 +14,7 @@ import { BaseDiscountEvaluator } from './base-evaluator'
  */
 export class BundleDiscountEvaluator extends BaseDiscountEvaluator {
   protected calculateTypeSpecificSavings(
-    discount: any,
+    discount: Discount,
     policy: PolicySummary,
     customerData: UserProfile | undefined,
     effectivePercentage: number

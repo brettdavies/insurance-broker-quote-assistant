@@ -11,9 +11,10 @@ import type { CarrierFile, ProductFile, StateFile } from '@repo/shared'
 import { loadKnowledgePack } from '../../services/knowledge-pack-loader'
 
 /**
- * Test knowledge pack directory (temporary, cleaned up after tests)
+ * Test knowledge pack directories (temporary, cleaned up after tests)
+ * Tracks all directories created during test execution
  */
-let testKnowledgePackDir: string | null = null
+const testKnowledgePackDirs: string[] = []
 
 /**
  * Setup test knowledge pack using real knowledge_pack as base
@@ -38,11 +39,14 @@ export async function setupTestKnowledgePack(overrides?: {
 
   // Create unique test directory
   const timestamp = Date.now()
-  testKnowledgePackDir = join(
+  const testKnowledgePackDir = join(
     projectRoot,
     'apps/api/src/__tests__/fixtures/knowledge-packs',
     `test_knowledge_pack_${timestamp}`
   )
+
+  // Track this directory for cleanup
+  testKnowledgePackDirs.push(testKnowledgePackDir)
 
   const carriersDir = join(testKnowledgePackDir, 'carriers')
   const statesDir = join(testKnowledgePackDir, 'states')
@@ -150,21 +154,90 @@ async function copyKnowledgePackFiles(sourceDir: string, destDir: string): Promi
 
 /**
  * Clean up test knowledge pack directory
+ * Removes the most recently created directory (for single-test cleanup)
+ * Also reloads the real knowledge pack to clear test data from Maps
  */
 export async function cleanupTestKnowledgePack(): Promise<void> {
-  if (testKnowledgePackDir) {
-    try {
-      await rm(testKnowledgePackDir, { recursive: true, force: true })
-      testKnowledgePackDir = null
-    } catch {
-      // Ignore cleanup errors
+  if (testKnowledgePackDirs.length > 0) {
+    const dirToClean = testKnowledgePackDirs.pop()
+    if (dirToClean) {
+      try {
+        await rm(dirToClean, { recursive: true, force: true })
+      } catch {
+        // Ignore cleanup errors
+      }
     }
+  }
+
+  // Reload the real knowledge pack to clear test data (like TestCarrier) from Maps
+  // This ensures test isolation - each test suite starts with clean Maps
+  const projectRoot = process.cwd().includes('apps/api')
+    ? join(process.cwd(), '..', '..')
+    : process.cwd()
+  const realKnowledgePackDir = join(projectRoot, 'knowledge_pack')
+
+  try {
+    await loadKnowledgePack(realKnowledgePackDir)
+  } catch {
+    // If real knowledge pack doesn't exist or fails to load, that's okay
+    // The Maps will be cleared on next load anyway
   }
 }
 
 /**
- * Get the current test knowledge pack directory
+ * Clean up all tracked test knowledge pack directories
+ * Useful for cleaning up after test suites or when tests fail
  */
-export function getTestKnowledgePackDir(): string | null {
-  return testKnowledgePackDir
+export async function cleanupAllTestKnowledgePacks(): Promise<void> {
+  const dirsToClean = [...testKnowledgePackDirs]
+  testKnowledgePackDirs.length = 0 // Clear the array
+
+  await Promise.allSettled(
+    dirsToClean.map(async (dir) => {
+      try {
+        await rm(dir, { recursive: true, force: true })
+      } catch {
+        // Ignore cleanup errors
+      }
+    })
+  )
+}
+
+/**
+ * Clean up ALL test directories in the fixtures/knowledge-packs folder
+ * Safety net function to remove any leftover directories from failed tests
+ */
+export async function cleanupAllTestDirectories(): Promise<void> {
+  const { readdir } = await import('node:fs/promises')
+  const projectRoot = process.cwd().includes('apps/api')
+    ? join(process.cwd(), '..', '..')
+    : process.cwd()
+
+  const fixturesDir = join(projectRoot, 'apps/api/src/__tests__/fixtures/knowledge-packs')
+
+  try {
+    const entries = await readdir(fixturesDir, { withFileTypes: true })
+    const dirsToClean = entries
+      .filter((entry) => entry.isDirectory() && entry.name.startsWith('test_knowledge_pack_'))
+      .map((entry) => join(fixturesDir, entry.name))
+
+    await Promise.allSettled(
+      dirsToClean.map(async (dir) => {
+        try {
+          await rm(dir, { recursive: true, force: true })
+        } catch {
+          // Ignore cleanup errors
+        }
+      })
+    )
+  } catch {
+    // Directory doesn't exist or can't be read, nothing to clean
+  }
+}
+
+/**
+ * Get all tracked test knowledge pack directories
+ */
+export function getTestKnowledgePackDirs(): string[] {
+  return [...testKnowledgePackDirs]
 }

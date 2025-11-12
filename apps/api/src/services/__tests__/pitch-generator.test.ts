@@ -7,7 +7,12 @@
  */
 
 import { beforeEach, describe, expect, it, mock } from 'bun:test'
-import type { BundleOption, DeductibleOptimization, Opportunity, PolicySummary } from '@repo/shared'
+import {
+  buildBundleOption,
+  buildDeductibleOptimization,
+  buildOpportunity,
+  buildPolicySummary,
+} from '@repo/shared'
 import type { LLMProvider } from '../llm-provider'
 import { PitchGenerator } from '../pitch-generator'
 
@@ -31,54 +36,14 @@ describe('PitchGenerator', () => {
   })
 
   describe('generatePitch', () => {
-    const createTestPolicy = (): PolicySummary => ({
-      carrier: 'GEICO',
-      state: 'CA',
-      productType: 'auto',
-      premiums: { annual: 1200 },
-    })
-
-    const createTestOpportunity = (): Opportunity => ({
-      discount: 'Good Driver Discount',
-      percentage: 10,
-      annualSavings: 120,
-      requires: ['cleanRecord3Yr'],
-      citation: {
-        id: 'disc_test',
-        type: 'discount',
-        carrier: 'carr_test',
-        file: 'knowledge_pack/carriers/geico.json',
-      },
-    })
-
-    const createTestBundleOption = (): BundleOption => ({
-      product: 'home',
-      estimatedSavings: 200,
-      requiredActions: ['Add home insurance policy'],
-      citation: {
-        id: 'disc_bundle',
-        type: 'discount',
-        carrier: 'carr_test',
-        file: 'knowledge_pack/carriers/geico.json',
-      },
-    })
-
-    const createTestDeductibleOptimization = (): DeductibleOptimization => ({
-      currentDeductible: 500,
-      suggestedDeductible: 1000,
-      estimatedSavings: 150,
-      premiumImpact: -150,
-      citation: {
-        id: 'disc_deductible',
-        type: 'discount',
-        carrier: 'carr_test',
-        file: 'knowledge_pack/carriers/geico.json',
-      },
-    })
-
     it('should generate pitch from opportunities', async () => {
-      const policy = createTestPolicy()
-      const opportunities = [createTestOpportunity()]
+      const policy = buildPolicySummary()
+      const opportunities = [
+        buildOpportunity({
+          discount: 'Good Driver Discount',
+          requires: ['cleanRecord3Yr'],
+        }),
+      ]
 
       const pitch = await generator.generatePitch(opportunities, [], [], policy)
 
@@ -88,8 +53,13 @@ describe('PitchGenerator', () => {
     })
 
     it('should include opportunities in prompt', async () => {
-      const policy = createTestPolicy()
-      const opportunities = [createTestOpportunity()]
+      const policy = buildPolicySummary()
+      const opportunities = [
+        buildOpportunity({
+          discount: 'Good Driver Discount',
+          requires: ['cleanRecord3Yr'],
+        }),
+      ]
 
       await generator.generatePitch(opportunities, [], [], policy)
 
@@ -101,8 +71,12 @@ describe('PitchGenerator', () => {
     })
 
     it('should include bundle options in prompt', async () => {
-      const policy = createTestPolicy()
-      const bundleOptions = [createTestBundleOption()]
+      const policy = buildPolicySummary()
+      const bundleOptions = [
+        buildBundleOption({
+          requiredActions: ['Add home insurance policy'],
+        }),
+      ]
 
       await generator.generatePitch([], bundleOptions, [], policy)
 
@@ -113,8 +87,8 @@ describe('PitchGenerator', () => {
     })
 
     it('should include deductible optimizations in prompt', async () => {
-      const policy = createTestPolicy()
-      const optimizations = [createTestDeductibleOptimization()]
+      const policy = buildPolicySummary()
+      const optimizations = [buildDeductibleOptimization()]
 
       await generator.generatePitch([], [], optimizations, policy)
 
@@ -126,8 +100,13 @@ describe('PitchGenerator', () => {
     })
 
     it('should include policy context in prompt', async () => {
-      const policy = createTestPolicy()
-      const opportunities = [createTestOpportunity()] // Need at least one opportunity to call LLM
+      const policy = buildPolicySummary()
+      const opportunities = [
+        buildOpportunity({
+          discount: 'Good Driver Discount',
+          requires: ['cleanRecord3Yr'],
+        }),
+      ] // Need at least one opportunity to call LLM
       ;(mockLLMProvider.extractWithStructuredOutput as ReturnType<typeof mock>).mockResolvedValue({
         profile: { pitch: 'Test pitch' },
         confidence: {},
@@ -145,8 +124,13 @@ describe('PitchGenerator', () => {
     })
 
     it('should return fallback pitch when LLM fails', async () => {
-      const policy = createTestPolicy()
-      const opportunities = [createTestOpportunity()]
+      const policy = buildPolicySummary()
+      const opportunities = [
+        buildOpportunity({
+          discount: 'Good Driver Discount',
+          requires: ['cleanRecord3Yr'],
+        }),
+      ]
       ;(mockLLMProvider.extractWithStructuredOutput as ReturnType<typeof mock>).mockRejectedValue(
         new Error('LLM error')
       )
@@ -159,7 +143,7 @@ describe('PitchGenerator', () => {
     })
 
     it('should return appropriate message when no opportunities', async () => {
-      const policy = createTestPolicy()
+      const policy = buildPolicySummary()
       ;(mockLLMProvider.extractWithStructuredOutput as ReturnType<typeof mock>).mockRejectedValue(
         new Error('LLM error')
       )
@@ -171,8 +155,13 @@ describe('PitchGenerator', () => {
     })
 
     it('should log token usage', async () => {
-      const policy = createTestPolicy()
-      const opportunities = [createTestOpportunity()]
+      const policy = buildPolicySummary()
+      const opportunities = [
+        buildOpportunity({
+          discount: 'Good Driver Discount',
+          requires: ['cleanRecord3Yr'],
+        }),
+      ]
 
       await generator.generatePitch(opportunities, [], [], policy)
 

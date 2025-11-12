@@ -108,6 +108,10 @@ describe('IntakeResult Missing Fields Priority', () => {
     app.route('/', intakeRoute)
   })
 
+  afterAll(async () => {
+    await cleanupTestKnowledgePack()
+  })
+
   it('should return missingFields as MissingField[] with priority indicators', async () => {
     const req = new Request('http://localhost/api/intake', {
       method: 'POST',

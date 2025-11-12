@@ -8,26 +8,15 @@
  */
 
 import { beforeEach, describe, expect, it, spyOn } from 'bun:test'
-import type {
-  BundleOption,
-  DeductibleOptimization,
-  Opportunity,
-  PolicyAnalysisResult,
-  PolicySummary,
+import {
+  buildBundleOption,
+  buildDeductibleOptimization,
+  buildOpportunity,
+  buildPolicySummary,
 } from '@repo/shared'
 import * as knowledgePackRAG from '../knowledge-pack-rag'
 import { normalizePolicyAnalysisResult } from '../policy-analysis-agent/normalizer'
-
-// Type for normalizer input (matches function signature)
-type NormalizerInput = {
-  currentPolicy: PolicySummary
-  opportunities: Opportunity[]
-  bundleOptions: BundleOption[]
-  deductibleOptimizations: DeductibleOptimization[]
-  pitch: string
-  complianceValidated: boolean
-  _metadata?: { tokensUsed?: number; analysisTime?: number }
-}
+import type { NormalizerInput } from '../policy-analysis-agent/types'
 
 describe('normalizePolicyAnalysisResult', () => {
   beforeEach(() => {
@@ -67,25 +56,19 @@ describe('normalizePolicyAnalysisResult', () => {
   it('should normalize percentage from decimal to integer', async () => {
     // Normalizer accepts Opportunity[], not ValidatedOpportunity[]
     const llmResult: NormalizerInput = {
-      currentPolicy: {
-        carrier: 'GEICO',
-        state: 'CA',
-        productType: 'auto',
-        premiums: { annual: 1200 },
-      },
+      currentPolicy: buildPolicySummary(),
       opportunities: [
-        {
+        buildOpportunity({
           discount: 'Test Discount',
           percentage: 0.1, // Decimal (should be normalized to 10)
           annualSavings: 120,
-          requires: [],
           citation: {
             id: 'disc_test',
             type: 'discount',
             carrier: 'GEICO',
             file: '', // Will be resolved by normalizer
           },
-        },
+        }),
       ],
       bundleOptions: [],
       deductibleOptimizations: [],
@@ -103,25 +86,19 @@ describe('normalizePolicyAnalysisResult', () => {
 
   it('should resolve citation file paths from knowledge pack', async () => {
     const result: NormalizerInput = {
-      currentPolicy: {
-        carrier: 'GEICO',
-        state: 'CA',
-        productType: 'auto',
-        premiums: { annual: 1200 },
-      },
+      currentPolicy: buildPolicySummary(),
       opportunities: [
-        {
+        buildOpportunity({
           discount: 'Test Discount',
           percentage: 10,
           annualSavings: 120,
-          requires: [],
           citation: {
             id: 'disc_test',
             type: 'discount',
             carrier: 'GEICO',
             file: '', // Empty - should be resolved
           },
-        },
+        }),
       ],
       bundleOptions: [],
       deductibleOptimizations: [],
@@ -143,12 +120,7 @@ describe('normalizePolicyAnalysisResult', () => {
 
   it('should preserve token tracking in metadata', async () => {
     const result: NormalizerInput = {
-      currentPolicy: {
-        carrier: 'GEICO',
-        state: 'CA',
-        productType: 'auto',
-        premiums: { annual: 1200 },
-      },
+      currentPolicy: buildPolicySummary(),
       opportunities: [],
       bundleOptions: [],
       deductibleOptimizations: [],
@@ -168,12 +140,7 @@ describe('normalizePolicyAnalysisResult', () => {
 
   it('should handle missing token tracking gracefully', async () => {
     const result: NormalizerInput = {
-      currentPolicy: {
-        carrier: 'GEICO',
-        state: 'CA',
-        productType: 'auto',
-        premiums: { annual: 1200 },
-      },
+      currentPolicy: buildPolicySummary(),
       opportunities: [],
       bundleOptions: [],
       deductibleOptimizations: [],
@@ -189,41 +156,34 @@ describe('normalizePolicyAnalysisResult', () => {
 
   it('should normalize all opportunity types', async () => {
     const result: NormalizerInput = {
-      currentPolicy: {
-        carrier: 'GEICO',
-        state: 'CA',
-        productType: 'auto',
-        premiums: { annual: 1200 },
-      },
+      currentPolicy: buildPolicySummary(),
       opportunities: [
-        {
+        buildOpportunity({
           discount: 'Discount 1',
           percentage: 0.15, // Decimal
           annualSavings: 180,
-          requires: [],
           citation: {
             id: 'disc_test',
             type: 'discount',
             carrier: 'GEICO',
             file: '',
           },
-        },
+        }),
       ],
       bundleOptions: [
-        {
+        buildBundleOption({
           product: 'home',
           estimatedSavings: 200,
-          requiredActions: [],
           citation: {
             id: 'disc_test',
             type: 'discount',
             carrier: 'GEICO',
             file: '',
           },
-        },
+        }),
       ],
       deductibleOptimizations: [
-        {
+        buildDeductibleOptimization({
           currentDeductible: 500,
           suggestedDeductible: 1000,
           estimatedSavings: 150,
@@ -234,7 +194,7 @@ describe('normalizePolicyAnalysisResult', () => {
             carrier: 'GEICO',
             file: '',
           },
-        },
+        }),
       ],
       pitch: '',
       complianceValidated: false,
@@ -255,25 +215,21 @@ describe('normalizePolicyAnalysisResult', () => {
     spyOn(knowledgePackRAG, 'getCarrierByName').mockReturnValue(undefined)
 
     const result: NormalizerInput = {
-      currentPolicy: {
+      currentPolicy: buildPolicySummary({
         carrier: 'UnknownCarrier',
-        state: 'CA',
-        productType: 'auto',
-        premiums: { annual: 1200 },
-      },
+      }),
       opportunities: [
-        {
+        buildOpportunity({
           discount: 'Test Discount',
           percentage: 10,
           annualSavings: 120,
-          requires: [],
           citation: {
             id: 'disc_test',
             type: 'discount',
             carrier: 'UnknownCarrier',
             file: '',
           },
-        },
+        }),
       ],
       bundleOptions: [],
       deductibleOptimizations: [],

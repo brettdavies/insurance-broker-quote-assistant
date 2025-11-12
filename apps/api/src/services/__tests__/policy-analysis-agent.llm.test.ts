@@ -11,21 +11,12 @@
 import { afterAll, beforeAll, describe, expect, it } from 'bun:test'
 import { mkdir, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
-import type { PolicyAnalysisResult, PolicySummary } from '@repo/shared'
-import { policyAnalysisResultSchema } from '@repo/shared'
+import type { PolicyAnalysisResult } from '@repo/shared'
+import { buildPolicySummary, policyAnalysisResultSchema } from '@repo/shared'
 import { GeminiProvider } from '../gemini-provider'
 import * as knowledgePackRAG from '../knowledge-pack-rag'
 import type { LLMProvider } from '../llm-provider'
 import { PolicyAnalysisAgent } from '../policy-analysis-agent'
-
-// Shared test inputs (same as unit tests)
-const createTestPolicy = (overrides?: Partial<PolicySummary>): PolicySummary => ({
-  carrier: 'GEICO',
-  state: 'CA',
-  productType: 'auto',
-  premiums: { annual: 1200 },
-  ...overrides,
-})
 
 // Test results storage for reporting
 interface TestStep {
@@ -230,7 +221,7 @@ describe('PolicyAnalysisAgent - LLM Integration Tests', () => {
       return
     }
 
-    const policy = createTestPolicy()
+    const policy = buildPolicySummary()
     const policyText = 'carrier:GEICO state:CA productType:auto premium:$1200/yr deductible:$500'
 
     currentTest = {
@@ -354,7 +345,7 @@ describe('PolicyAnalysisAgent - LLM Integration Tests', () => {
       return
     }
 
-    const policy = createTestPolicy({
+    const policy = buildPolicySummary({
       productType: 'home',
       premiums: { annual: 2000 },
     })
@@ -431,7 +422,7 @@ describe('PolicyAnalysisAgent - LLM Integration Tests', () => {
       return
     }
 
-    const policy = createTestPolicy({
+    const policy = buildPolicySummary({
       premiums: { annual: 1500 },
       deductibles: { auto: 500 },
     })
@@ -479,7 +470,7 @@ describe('PolicyAnalysisAgent - LLM Integration Tests', () => {
       return
     }
 
-    const policy = createTestPolicy({
+    const policy = buildPolicySummary({
       productType: 'auto',
     })
     const policyText = 'carrier:GEICO state:CA productType:auto premium:$1200/yr'

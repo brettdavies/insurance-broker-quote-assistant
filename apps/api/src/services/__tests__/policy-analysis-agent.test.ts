@@ -8,27 +8,12 @@
  */
 
 import { beforeEach, describe, expect, it, mock, spyOn } from 'bun:test'
-import type {
-  BundleOption,
-  DeductibleOptimization,
-  Opportunity,
-  PolicyAnalysisResult,
-  PolicySummary,
-} from '@repo/shared'
-import { policyAnalysisResultLLMSchema } from '@repo/shared'
+import type { PolicySummary } from '@repo/shared'
+import { buildOpportunity, buildPolicySummary, policyAnalysisResultLLMSchema } from '@repo/shared'
 import * as knowledgePackRAG from '../knowledge-pack-rag'
 import type { LLMProvider } from '../llm-provider'
 import { PolicyAnalysisAgent } from '../policy-analysis-agent'
-
-// Type for LLM output (before validation) - matches what the agent receives from LLM
-type LLMAnalysisOutput = {
-  currentPolicy: PolicySummary
-  opportunities: Opportunity[]
-  bundleOptions: BundleOption[]
-  deductibleOptimizations: DeductibleOptimization[]
-  pitch: string
-  complianceValidated: boolean
-}
+import type { LLMAnalysisOutput } from '../policy-analysis-agent/types'
 
 describe('PolicyAnalysisAgent', () => {
   let mockLLMProvider: LLMProvider
@@ -75,14 +60,6 @@ describe('PolicyAnalysisAgent', () => {
   })
 
   describe('analyzePolicy', () => {
-    const createTestPolicy = (overrides?: Partial<PolicySummary>): PolicySummary => ({
-      carrier: 'GEICO',
-      state: 'CA',
-      productType: 'auto',
-      premiums: { annual: 1200 },
-      ...overrides,
-    })
-
     it('should require carrier, state, and productType', async () => {
       const policy = { carrier: 'GEICO' } as PolicySummary
 
@@ -92,7 +69,7 @@ describe('PolicyAnalysisAgent', () => {
     })
 
     it('should query knowledge pack for carrier discounts', async () => {
-      const policy = createTestPolicy()
+      const policy = buildPolicySummary()
 
       await agent.analyzePolicy(policy)
 
@@ -104,13 +81,13 @@ describe('PolicyAnalysisAgent', () => {
 
     it('should throw error if carrier not found in knowledge pack', async () => {
       spyOn(knowledgePackRAG, 'getCarrierByName').mockReturnValue(undefined)
-      const policy = createTestPolicy()
+      const policy = buildPolicySummary()
 
       await expect(agent.analyzePolicy(policy)).rejects.toThrow('KNOWLEDGE_PACK_ERROR')
     })
 
     it('should call LLM with structured outputs', async () => {
-      const policy = createTestPolicy()
+      const policy = buildPolicySummary()
 
       await agent.analyzePolicy(policy)
 
@@ -124,7 +101,7 @@ describe('PolicyAnalysisAgent', () => {
     })
 
     it('should return PolicyAnalysisResult with metadata', async () => {
-      const policy = createTestPolicy()
+      const policy = buildPolicySummary()
 
       const result = await agent.analyzePolicy(policy)
 
@@ -137,13 +114,12 @@ describe('PolicyAnalysisAgent', () => {
     })
 
     it('should validate LLM response against schema', async () => {
-      const policy = createTestPolicy()
+      const policy = buildPolicySummary()
       const mockAnalysisResult: LLMAnalysisOutput = {
         currentPolicy: policy,
         opportunities: [
-          {
+          buildOpportunity({
             discount: 'Good Driver',
-            percentage: 10,
             annualSavings: 120,
             requires: ['cleanRecord3Yr'],
             citation: {
@@ -152,7 +128,7 @@ describe('PolicyAnalysisAgent', () => {
               carrier: 'carr_test',
               file: 'knowledge_pack/carriers/geico.json',
             },
-          },
+          }),
         ],
         bundleOptions: [],
         deductibleOptimizations: [],
@@ -173,7 +149,7 @@ describe('PolicyAnalysisAgent', () => {
     })
 
     it('should handle LLM errors gracefully', async () => {
-      const policy = createTestPolicy()
+      const policy = buildPolicySummary()
       ;(mockLLMProvider.extractWithStructuredOutput as ReturnType<typeof mock>).mockRejectedValue(
         new Error('LLM timeout')
       )
@@ -182,7 +158,7 @@ describe('PolicyAnalysisAgent', () => {
     })
 
     it('should return empty result for non-critical errors', async () => {
-      const policy = createTestPolicy()
+      const policy = buildPolicySummary()
       ;(mockLLMProvider.extractWithStructuredOutput as ReturnType<typeof mock>).mockRejectedValue(
         new Error('Network error')
       )
@@ -199,7 +175,7 @@ describe('PolicyAnalysisAgent', () => {
     })
 
     it('should include policy text in prompt when provided', async () => {
-      const policy = createTestPolicy()
+      const policy = buildPolicySummary()
       const policyText = 'carrier:GEICO state:CA productType:auto premium:$1200/yr'
 
       await agent.analyzePolicy(policy, policyText)
@@ -210,34 +186,32 @@ describe('PolicyAnalysisAgent', () => {
     })
 
     it('should rank opportunities by annual savings (highest first)', async () => {
-      const policy = createTestPolicy()
+      const policy = buildPolicySummary()
       const mockAnalysisResult: LLMAnalysisOutput = {
         currentPolicy: policy,
         opportunities: [
-          {
+          buildOpportunity({
             discount: 'Low Savings',
             percentage: 5,
             annualSavings: 60,
-            requires: [],
             citation: {
               id: 'disc_low',
               type: 'discount',
               carrier: 'carr_test',
               file: 'knowledge_pack/carriers/geico.json',
             },
-          },
-          {
+          }),
+          buildOpportunity({
             discount: 'High Savings',
             percentage: 15,
             annualSavings: 180,
-            requires: [],
             citation: {
               id: 'disc_high',
               type: 'discount',
               carrier: 'carr_test',
               file: 'knowledge_pack/carriers/geico.json',
             },
-          },
+          }),
         ],
         bundleOptions: [],
         deductibleOptimizations: [],

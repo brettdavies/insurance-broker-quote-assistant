@@ -11,56 +11,15 @@
 import { afterAll, beforeAll, describe, expect, it } from 'bun:test'
 import { mkdir, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
-import type { BundleOption, DeductibleOptimization, Opportunity, PolicySummary } from '@repo/shared'
+import {
+  buildBundleOption,
+  buildDeductibleOptimization,
+  buildOpportunity,
+  buildPolicySummary,
+} from '@repo/shared'
 import { GeminiProvider } from '../gemini-provider'
 import type { LLMProvider } from '../llm-provider'
 import { PitchGenerator } from '../pitch-generator'
-
-// Shared test inputs (same as unit tests)
-const createTestPolicy = (): PolicySummary => ({
-  carrier: 'GEICO',
-  state: 'CA',
-  productType: 'auto',
-  premiums: { annual: 1200 },
-})
-
-const createTestOpportunity = (): Opportunity => ({
-  discount: 'Good Driver Discount',
-  percentage: 10,
-  annualSavings: 120,
-  requires: ['cleanRecord3Yr'],
-  citation: {
-    id: 'disc_test',
-    type: 'discount',
-    carrier: 'carr_test',
-    file: 'knowledge_pack/carriers/geico.json',
-  },
-})
-
-const createTestBundleOption = (): BundleOption => ({
-  product: 'home',
-  estimatedSavings: 200,
-  requiredActions: ['Add home insurance policy'],
-  citation: {
-    id: 'disc_bundle',
-    type: 'discount',
-    carrier: 'carr_test',
-    file: 'knowledge_pack/carriers/geico.json',
-  },
-})
-
-const createTestDeductibleOptimization = (): DeductibleOptimization => ({
-  currentDeductible: 500,
-  suggestedDeductible: 1000,
-  estimatedSavings: 150,
-  premiumImpact: -150,
-  citation: {
-    id: 'disc_deductible',
-    type: 'discount',
-    carrier: 'carr_test',
-    file: 'knowledge_pack/carriers/geico.json',
-  },
-})
 
 // Test results storage for reporting
 interface TestStep {
@@ -237,8 +196,13 @@ describe('PitchGenerator - LLM Integration Tests', () => {
       return
     }
 
-    const policy = createTestPolicy()
-    const opportunities = [createTestOpportunity()]
+    const policy = buildPolicySummary()
+    const opportunities = [
+      buildOpportunity({
+        discount: 'Good Driver Discount',
+        requires: ['cleanRecord3Yr'],
+      }),
+    ]
 
     currentTest = {
       testName: 'Generate Pitch from Opportunities',
@@ -331,8 +295,12 @@ describe('PitchGenerator - LLM Integration Tests', () => {
       return
     }
 
-    const policy = createTestPolicy()
-    const bundleOptions = [createTestBundleOption()]
+    const policy = buildPolicySummary()
+    const bundleOptions = [
+      buildBundleOption({
+        requiredActions: ['Add home insurance policy'],
+      }),
+    ]
 
     currentTest = {
       testName: 'Generate Pitch with Bundle Options',
@@ -391,8 +359,8 @@ describe('PitchGenerator - LLM Integration Tests', () => {
       return
     }
 
-    const policy = createTestPolicy()
-    const optimizations = [createTestDeductibleOptimization()]
+    const policy = buildPolicySummary()
+    const optimizations = [buildDeductibleOptimization()]
 
     currentTest = {
       testName: 'Generate Pitch with Deductible Optimizations',
@@ -453,10 +421,19 @@ describe('PitchGenerator - LLM Integration Tests', () => {
       return
     }
 
-    const policy = createTestPolicy()
-    const opportunities = [createTestOpportunity()]
-    const bundleOptions = [createTestBundleOption()]
-    const optimizations = [createTestDeductibleOptimization()]
+    const policy = buildPolicySummary()
+    const opportunities = [
+      buildOpportunity({
+        discount: 'Good Driver Discount',
+        requires: ['cleanRecord3Yr'],
+      }),
+    ]
+    const bundleOptions = [
+      buildBundleOption({
+        requiredActions: ['Add home insurance policy'],
+      }),
+    ]
+    const optimizations = [buildDeductibleOptimization()]
 
     currentTest = {
       testName: 'Generate Pitch with All Opportunity Types',
@@ -520,7 +497,7 @@ describe('PitchGenerator - LLM Integration Tests', () => {
       return
     }
 
-    const policy = createTestPolicy()
+    const policy = buildPolicySummary()
 
     currentTest = {
       testName: 'Generate Pitch with No Opportunities',

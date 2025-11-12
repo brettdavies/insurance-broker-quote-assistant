@@ -15,6 +15,7 @@ import type {
 } from '@repo/shared'
 import { logError } from '../../utils/logger'
 import { getCarrierByName } from '../knowledge-pack-rag'
+import type { NormalizerInput } from './types'
 
 /**
  * Resolve citation file path from knowledge pack
@@ -169,15 +170,7 @@ async function normalizeDeductibleOptimization(
  * @returns Normalized result with resolved citations and normalized values (opportunities are raw, will be validated)
  */
 export async function normalizePolicyAnalysisResult(
-  result: {
-    currentPolicy: import('@repo/shared').PolicySummary
-    opportunities: import('@repo/shared').Opportunity[]
-    bundleOptions: import('@repo/shared').BundleOption[]
-    deductibleOptimizations: import('@repo/shared').DeductibleOptimization[]
-    pitch: string
-    complianceValidated: boolean
-    _metadata?: { tokensUsed?: number; analysisTime?: number }
-  },
+  result: NormalizerInput,
   carrierName: string
 ): Promise<
   Omit<PolicyAnalysisResult, 'opportunities'> & {

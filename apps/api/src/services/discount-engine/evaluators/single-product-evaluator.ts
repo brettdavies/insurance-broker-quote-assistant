@@ -4,7 +4,7 @@
  * Handles discounts that apply to a single product (driver, lifestyle, loyalty, etc.)
  */
 
-import type { PolicySummary } from '@repo/shared'
+import type { Discount, PolicySummary, UserProfile } from '@repo/shared'
 import type { SavingsCalculation } from '../types'
 import { BaseDiscountEvaluator } from './base-evaluator'
 
@@ -14,9 +14,9 @@ import { BaseDiscountEvaluator } from './base-evaluator'
  */
 export class SingleProductDiscountEvaluator extends BaseDiscountEvaluator {
   protected calculateTypeSpecificSavings(
-    discount: any,
+    discount: Discount,
     policy: PolicySummary,
-    customerData: any,
+    customerData: UserProfile | undefined,
     effectivePercentage: number
   ): SavingsCalculation {
     const currentPremium = policy.premiums?.annual || 0
