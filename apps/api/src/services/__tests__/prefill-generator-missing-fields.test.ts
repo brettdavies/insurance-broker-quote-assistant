@@ -10,7 +10,7 @@
 import { beforeAll, describe, expect, it } from 'bun:test'
 import { mkdir, rm, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
-import type { UserProfile } from '@repo/shared'
+import { buildUserProfile } from '@repo/shared/test-utils'
 import { createTestCarrier, createTestState } from '../../__tests__/fixtures/knowledge-pack'
 import { loadKnowledgePack } from '../knowledge-pack-loader'
 import { getMissingFields } from '../prefill-generator'
@@ -21,11 +21,11 @@ const testKnowledgePackDir =
 
 describe('getMissingFields - Product-Specific Requirements', () => {
   it('should detect missing critical fields for auto product', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
+    const profile = buildUserProfile({
       // Missing vehicles and drivers (critical)
-    }
+      vehicles: undefined,
+      drivers: undefined,
+    })
 
     const missing = getMissingFields(profile)
     expect(missing.some((f) => f.field === 'vehicles' && f.priority === 'critical')).toBe(true)
@@ -33,50 +33,49 @@ describe('getMissingFields - Product-Specific Requirements', () => {
   })
 
   it('should detect missing important fields for auto product', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
+    const profile = buildUserProfile({
       vehicles: 2,
       drivers: 1,
       // Missing vins (important)
-    }
+      vins: undefined,
+    })
 
     const missing = getMissingFields(profile)
     expect(missing.some((f) => f.field === 'vins' && f.priority === 'important')).toBe(true)
   })
 
   it('should detect missing optional fields for auto product', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
+    const profile = buildUserProfile({
       vehicles: 2,
       drivers: 1,
       vins: 'ABC123',
       // Missing garage (optional)
-    }
+      garage: undefined,
+    })
 
     const missing = getMissingFields(profile)
     expect(missing.some((f) => f.field === 'garage' && f.priority === 'optional')).toBe(true)
   })
 
   it('should detect missing critical fields for home product', () => {
-    const profile: UserProfile = {
-      state: 'CA',
+    const profile = buildUserProfile({
       productLine: 'home',
       // Missing propertyType (critical)
-    }
+      propertyType: undefined,
+    })
 
     const missing = getMissingFields(profile)
     expect(missing.some((f) => f.field === 'propertyType' && f.priority === 'critical')).toBe(true)
   })
 
   it('should detect missing important fields for home product', () => {
-    const profile: UserProfile = {
-      state: 'CA',
+    const profile = buildUserProfile({
       productLine: 'home',
       propertyType: 'single-family',
       // Missing constructionYear and squareFeet (important)
-    }
+      constructionYear: undefined,
+      squareFeet: undefined,
+    })
 
     const missing = getMissingFields(profile)
     expect(missing.some((f) => f.field === 'constructionYear' && f.priority === 'important')).toBe(
@@ -86,22 +85,22 @@ describe('getMissingFields - Product-Specific Requirements', () => {
   })
 
   it('should detect missing critical fields for renters product', () => {
-    const profile: UserProfile = {
-      state: 'CA',
+    const profile = buildUserProfile({
       productLine: 'renters',
       // Missing propertyType (critical)
-    }
+      propertyType: undefined,
+    })
 
     const missing = getMissingFields(profile)
     expect(missing.some((f) => f.field === 'propertyType' && f.priority === 'critical')).toBe(true)
   })
 
   it('should detect missing critical fields for umbrella product', () => {
-    const profile: UserProfile = {
-      state: 'CA',
+    const profile = buildUserProfile({
       productLine: 'umbrella',
       // Missing existingPolicies (critical)
-    }
+      existingPolicies: undefined,
+    })
 
     const missing = getMissingFields(profile)
     expect(missing.some((f) => f.field === 'existingPolicies' && f.priority === 'critical')).toBe(
@@ -110,7 +109,10 @@ describe('getMissingFields - Product-Specific Requirements', () => {
   })
 
   it('should always require state and productLine', () => {
-    const profile: UserProfile = {}
+    const profile = buildUserProfile({
+      state: undefined,
+      productLine: undefined,
+    })
 
     const missing = getMissingFields(profile)
     expect(missing.some((f) => f.field === 'state' && f.priority === 'critical')).toBe(true)
@@ -118,14 +120,12 @@ describe('getMissingFields - Product-Specific Requirements', () => {
   })
 
   it('should return empty array when all required fields present', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
+    const profile = buildUserProfile({
       vehicles: 2,
       drivers: 1,
       vins: 'ABC123',
       garage: 'attached',
-    }
+    })
 
     const missing = getMissingFields(profile)
     // Should not have any critical missing fields
@@ -135,10 +135,7 @@ describe('getMissingFields - Product-Specific Requirements', () => {
 
 describe('getMissingFields - Priority Assignment', () => {
   it('should assign critical priority to blocking fields', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
-    }
+    const profile = buildUserProfile()
 
     const missing = getMissingFields(profile)
     const criticalFields = missing.filter((f) => f.priority === 'critical')
@@ -148,12 +145,10 @@ describe('getMissingFields - Priority Assignment', () => {
   })
 
   it('should assign important priority to accuracy-affecting fields', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
+    const profile = buildUserProfile({
       vehicles: 2,
       drivers: 1,
-    }
+    })
 
     const missing = getMissingFields(profile)
     const importantFields = missing.filter((f) => f.priority === 'important')
@@ -161,13 +156,11 @@ describe('getMissingFields - Priority Assignment', () => {
   })
 
   it('should assign optional priority to nice-to-have fields', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
+    const profile = buildUserProfile({
       vehicles: 2,
       drivers: 1,
       vins: 'ABC123',
-    }
+    })
 
     const missing = getMissingFields(profile)
     const optionalFields = missing.filter((f) => f.priority === 'optional')
@@ -236,13 +229,12 @@ describe('getMissingFields - Carrier-Specific Requirements', () => {
   })
 
   it('should add carrier-specific critical requirements', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
+    const profile = buildUserProfile({
       vehicles: 2,
       drivers: 1,
       // Missing cleanRecord3Yr (carrier-specific critical)
-    }
+      cleanRecord3Yr: undefined,
+    })
 
     const missing = getMissingFields(profile, 'auto', 'CA', 'TestCarrier')
     expect(missing.some((f) => f.field === 'cleanRecord3Yr' && f.priority === 'critical')).toBe(
@@ -251,39 +243,36 @@ describe('getMissingFields - Carrier-Specific Requirements', () => {
   })
 
   it('should add carrier-specific important requirements (age)', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
+    const profile = buildUserProfile({
       vehicles: 2,
       drivers: 1,
       // Missing age (carrier-specific important)
-    }
+      age: undefined,
+    })
 
     const missing = getMissingFields(profile, 'auto', 'CA', 'TestCarrier')
     expect(missing.some((f) => f.field === 'age' && f.priority === 'important')).toBe(true)
   })
 
   it('should add carrier-specific important requirements (creditScore)', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
+    const profile = buildUserProfile({
       vehicles: 2,
       drivers: 1,
       // Missing creditScore (carrier-specific important)
-    }
+      creditScore: undefined,
+    })
 
     const missing = getMissingFields(profile, 'auto', 'CA', 'TestCarrier')
     expect(missing.some((f) => f.field === 'creditScore' && f.priority === 'important')).toBe(true)
   })
 
   it('should not duplicate fields already in missing list', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
+    const profile = buildUserProfile({
       vehicles: 2,
       drivers: 1,
       // vins already in product-level requirements
-    }
+      vins: undefined,
+    })
 
     const missing = getMissingFields(profile, 'auto', 'CA', 'TestCarrier')
     const vinsFields = missing.filter((f) => f.field === 'vins')
@@ -291,13 +280,12 @@ describe('getMissingFields - Carrier-Specific Requirements', () => {
   })
 
   it('should upgrade priority if carrier requirement is more critical', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
+    const profile = buildUserProfile({
       vehicles: 2,
       drivers: 1,
       // vins is important at product level, but carrier might require it as critical
-    }
+      vins: undefined,
+    })
 
     const missing = getMissingFields(profile, 'auto', 'CA', 'TestCarrier')
     // If carrier requires vins as critical, it should be critical
@@ -344,13 +332,12 @@ describe('getMissingFields - State-Specific Requirements', () => {
   })
 
   it('should add state-specific important requirements for auto', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
+    const profile = buildUserProfile({
       vehicles: 2,
       drivers: 1,
       // Missing vins (state-specific important for minimums verification)
-    }
+      vins: undefined,
+    })
 
     const missing = getMissingFields(profile, 'auto', 'CA')
     // State requirements may add vins as important if not already present
@@ -359,12 +346,13 @@ describe('getMissingFields - State-Specific Requirements', () => {
   })
 
   it('should add state-specific important requirements for home', () => {
-    const profile: UserProfile = {
-      state: 'CA',
+    const profile = buildUserProfile({
       productLine: 'home',
       propertyType: 'single-family',
       // Missing squareFeet and constructionYear (state-specific important)
-    }
+      squareFeet: undefined,
+      constructionYear: undefined,
+    })
 
     const missing = getMissingFields(profile, 'home', 'CA')
     expect(missing.some((f) => f.field === 'squareFeet' && f.priority === 'important')).toBe(true)
@@ -376,12 +364,10 @@ describe('getMissingFields - State-Specific Requirements', () => {
 
 describe('getMissingFields - Edge Cases', () => {
   it('should fall back to product-level defaults when carrier unknown', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
+    const profile = buildUserProfile({
       vehicles: 2,
       drivers: 1,
-    }
+    })
 
     const missing = getMissingFields(profile, 'auto', 'CA', 'UnknownCarrier')
     // Should still return product-level requirements
@@ -389,12 +375,11 @@ describe('getMissingFields - Edge Cases', () => {
   })
 
   it('should fall back to product-level defaults when state unknown', () => {
-    const profile: UserProfile = {
+    const profile = buildUserProfile({
       state: 'XX', // Unknown state
-      productLine: 'auto',
       vehicles: 2,
       drivers: 1,
-    }
+    })
 
     const missing = getMissingFields(profile, 'auto', 'XX')
     // Should still return product-level requirements
@@ -402,9 +387,9 @@ describe('getMissingFields - Edge Cases', () => {
   })
 
   it('should handle missing productLine gracefully', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-    }
+    const profile = buildUserProfile({
+      productLine: undefined,
+    })
 
     const missing = getMissingFields(profile)
     expect(missing.some((f) => f.field === 'productLine' && f.priority === 'critical')).toBe(true)
@@ -412,7 +397,15 @@ describe('getMissingFields - Edge Cases', () => {
   })
 
   it('should handle empty profile', () => {
-    const profile: UserProfile = {}
+    const profile = buildUserProfile({
+      state: undefined,
+      productLine: undefined,
+      age: undefined,
+      vehicles: undefined,
+      householdSize: undefined,
+      ownsHome: undefined,
+      cleanRecord3Yr: undefined,
+    })
 
     const missing = getMissingFields(profile)
     expect(missing.length).toBeGreaterThan(0)
@@ -421,13 +414,11 @@ describe('getMissingFields - Edge Cases', () => {
   })
 
   it('should not include fields that are present', () => {
-    const profile: UserProfile = {
-      state: 'CA',
-      productLine: 'auto',
+    const profile = buildUserProfile({
       vehicles: 2,
       drivers: 1,
       vins: 'ABC123',
-    }
+    })
 
     const missing = getMissingFields(profile)
     expect(missing.some((f) => f.field === 'vehicles')).toBe(false)
