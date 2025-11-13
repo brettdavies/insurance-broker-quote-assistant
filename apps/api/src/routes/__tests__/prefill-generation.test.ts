@@ -122,7 +122,7 @@ describe('POST /api/generate-prefill', () => {
     expect(prefill.missingFields.some((f) => f.priority === 'critical')).toBe(true)
   })
 
-  it('should include lead handoff summary in agentNotes', async () => {
+  it('should include lead handoff summary in producerNotes', async () => {
     const profile: UserProfile = {
       state: 'CA',
       productType: 'auto',
@@ -139,9 +139,9 @@ describe('POST /api/generate-prefill', () => {
     const res = await app.fetch(req)
     const prefill = (await res.json()) as PrefillPacket
 
-    expect(prefill.agentNotes).toBeDefined()
-    expect(Array.isArray(prefill.agentNotes)).toBe(true)
-    expect(prefill.agentNotes?.length).toBeGreaterThan(0)
+    expect(prefill.producerNotes).toBeDefined()
+    expect(Array.isArray(prefill.producerNotes)).toBe(true)
+    expect(prefill.producerNotes?.length).toBeGreaterThan(0)
   })
 
   it('should embed disclaimers based on state/product', async () => {

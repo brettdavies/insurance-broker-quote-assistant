@@ -59,7 +59,8 @@ export const PROMPT_MARKERS = {
 export const FILE_PATHS = {
   COMPLIANCE_LOG: join(import.meta.dir, '../../logs/compliance.log'),
   PROGRAM_LOG: join(import.meta.dir, '../../logs/program.log'),
-  REPORT_TEMPLATE: join(import.meta.dir, '../result/report-template.md'),
+  REPORT_TEMPLATE: join(import.meta.dir, '../templates/main-report-template.md'),
+  INDIVIDUAL_REPORT_TEMPLATE: join(import.meta.dir, '../templates/individual-report-template.md'),
 } as const
 
 /**
@@ -93,3 +94,9 @@ export const TRACE_FIELDS = {
 export const SAMPLE_LIMITS = {
   MAX_TRACES: 5,
 } as const
+
+/**
+ * Convenience exports for template paths
+ */
+export const REPORT_TEMPLATE_PATH = FILE_PATHS.REPORT_TEMPLATE
+export const INDIVIDUAL_REPORT_TEMPLATE_PATH = FILE_PATHS.INDIVIDUAL_REPORT_TEMPLATE

@@ -321,7 +321,7 @@ describe('generatePrefillPacket', () => {
     ).toBe(true)
   })
 
-  it('should include agent notes with lead handoff summary', () => {
+  it('should include producer notes with lead handoff summary', () => {
     const profile: UserProfile = {
       state: 'CA',
       productType: 'auto',
@@ -330,9 +330,9 @@ describe('generatePrefillPacket', () => {
     const missingFields = getMissingFields(profile)
     const prefill = generatePrefillPacket(profile, mockRoute, missingFields, mockDisclaimers)
 
-    expect(prefill.agentNotes).toBeDefined()
-    expect(Array.isArray(prefill.agentNotes)).toBe(true)
-    expect(prefill.agentNotes?.length).toBeGreaterThan(0)
+    expect(prefill.producerNotes).toBeDefined()
+    expect(Array.isArray(prefill.producerNotes)).toBe(true)
+    expect(prefill.producerNotes?.length).toBeGreaterThan(0)
   })
 
   it('should set reviewedByLicensedAgent to false', () => {

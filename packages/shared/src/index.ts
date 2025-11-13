@@ -94,10 +94,10 @@ export {
 export {
   prefillPacketSchema,
   prefillRoutingSchema,
-  brokerInfoSchema,
+  producerInfoSchema,
   type PrefillPacket,
   type PrefillRouting,
-  type BrokerInfo,
+  type ProducerInfo,
 } from './schemas/prefill-packet'
 
 // Export missing field schema and types

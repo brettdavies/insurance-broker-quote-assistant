@@ -8,10 +8,10 @@
  */
 
 import type {
-  BrokerInfo,
   MissingField,
   PrefillPacket,
   PrefillRouting,
+  ProducerInfo,
   RouteDecision,
   UserProfile,
 } from '@repo/shared'
@@ -202,22 +202,22 @@ export function generateLeadHandoffSummary(
 }
 
 /**
- * Get hardcoded broker information
+ * Get hardcoded producer information
  * TODO: In production, this would come from authenticated user session or environment config
  *
- * @returns BrokerInfo with hardcoded demo agent details
+ * @returns ProducerInfo with hardcoded demo producer details
  */
-function getBrokerInfo(): BrokerInfo {
+function getProducerInfo(): ProducerInfo {
   return {
-    agentName: 'Sarah Johnson',
-    agentLicenseNumber: 'TX-0123456',
+    producerName: 'Sarah Johnson',
+    producerLicenseNumber: 'TX-0123456',
     licenseState: 'TX',
     licenseExpiration: '2026-12-31',
     npn: '18765432', // National Producer Number
+    producerPhone: '(512) 555-1234',
+    producerEmail: 'sarah.johnson@example.com',
     brokerageName: 'Example Insurance Agency',
-    agentPhone: '(512) 555-1234',
-    agentEmail: 'sarah.johnson@example.com',
-    agencyAddress: '123 Insurance Way, Austin, TX 78701',
+    brokerageAddress: '123 Insurance Way, Austin, TX 78701',
   }
 }
 
@@ -269,10 +269,10 @@ export function generatePrefillPacket(
   const prefill: PrefillPacket = {
     profile, // Complete user profile with all extracted fields
     routing: createPrefillRouting(route), // Simplified routing (no internal scores or alternatives)
-    broker: getBrokerInfo(), // Licensed agent information (hardcoded for demo)
+    producer: getProducerInfo(), // Licensed agent information (hardcoded for demo)
     missingFields: missingFields.length > 0 ? missingFields : [],
     disclaimers: disclaimers.length > 0 ? disclaimers : [],
-    agentNotes: generateLeadHandoffSummary(profile, route, missingFields),
+    producerNotes: generateLeadHandoffSummary(profile, route, missingFields),
     reviewedByLicensedAgent: false,
     generatedAt: new Date().toISOString(),
   }

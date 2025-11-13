@@ -10,11 +10,7 @@
   - [Policy Flow Metrics](#policy-flow-metrics)
   - [Per-Carrier Routing Accuracy](#per-carrier-routing-accuracy)
   - [Per-State Routing Accuracy](#per-state-routing-accuracy)
-  - [Field Completeness](#field-completeness)
   - [LLM Token Usage \& Cost](#llm-token-usage--cost)
-    - [Summary](#summary)
-    - [Per Test Case](#per-test-case)
-  - [Sample Decision Traces](#sample-decision-traces)
   - [Test Case Details](#test-case-details)
   - [Summary Statistics](#summary-statistics)
 
@@ -58,29 +54,11 @@
 |-------|----------|
 {{stateTableRows}}
 
-## Field Completeness
-
-| Field | Completeness |
-|-------|--------------|
-{{fieldTableRows}}
-
 ## LLM Token Usage & Cost
 
-### Summary
-
-- Total Input Tokens: {{totalInputTokens}}
-- Total Output Tokens: {{totalOutputTokens}}
-- Estimated Cost: {{totalCost}}
-
-### Per Test Case
-
-| Test ID | Input Tokens | Output Tokens | Cost |
-|---------|--------------|---------------|------|
-{{tokenTableRows}}
-
-## Sample Decision Traces
-
-{{sampleTracesSection}}
+- **Total Input Tokens:** {{totalInputTokens}}
+- **Total Output Tokens:** {{totalOutputTokens}}
+- **Estimated Cost:** {{totalCost}}
 
 ## Test Case Details
 

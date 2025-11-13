@@ -5,6 +5,7 @@
  * Follows SRP (Single Responsibility Principle).
  */
 
+import type { IntakeResult, PolicyAnalysisResult } from '@repo/shared'
 import type { TestResult } from '../types'
 import { METRIC_THRESHOLDS, STATUS } from './report-constants'
 import type { OverallMetrics, TokenUsageData } from './report-metrics-aggregator'
@@ -18,17 +19,14 @@ export function buildTemplateReplacements(
   overallMetrics: OverallMetrics,
   perCarrierRouting: Record<string, number>,
   perStateRouting: Record<string, number>,
-  fieldCompleteness: Record<string, number>,
   tokenUsage: TokenUsageData,
-  sampleTracesSection: string,
   testResults: TestResult[]
 ): Record<string, string> {
   return {
     ...buildTimestampReplacement(timestamp),
     ...buildMetricsReplacements(overallMetrics),
     ...buildFlowSpecificMetricsReplacements(overallMetrics),
-    ...buildTableReplacements(perCarrierRouting, perStateRouting, fieldCompleteness, tokenUsage),
-    ...buildTracesReplacement(sampleTracesSection),
+    ...buildTableReplacements(perCarrierRouting, perStateRouting, tokenUsage),
     ...buildTestCaseDetailsReplacements(testResults),
     ...buildSummaryReplacements(testResults),
   }
@@ -175,7 +173,6 @@ function buildFlowSpecificMetricsReplacements(metrics: OverallMetrics): Record<s
 function buildTableReplacements(
   perCarrierRouting: Record<string, number>,
   perStateRouting: Record<string, number>,
-  fieldCompleteness: Record<string, number>,
   tokenUsage: TokenUsageData
 ): Record<string, string> {
   const carrierTableRows = formatTableRows(
@@ -188,36 +185,38 @@ function buildTableReplacements(
     (state, accuracy) => `| ${state} | ${formatPercentage(accuracy)} |`
   )
 
-  const fieldTableRows = formatTableRows(
-    fieldCompleteness,
-    (field, completeness) => `| ${field} | ${formatPercentage(completeness)} |`
-  )
-
-  const tokenTableRows = tokenUsage.perTest
-    .map(
-      (usage) =>
-        `| ${usage.testId} | ${usage.inputTokens.toLocaleString()} | ${usage.outputTokens.toLocaleString()} | ${formatCurrency(usage.cost)} |`
-    )
-    .join('\n')
-
   return {
     carrierTableRows: carrierTableRows || '| - | - |',
     stateTableRows: stateTableRows || '| - | - |',
-    fieldTableRows: fieldTableRows || '| - | - |',
     totalInputTokens: tokenUsage.totalInputTokens.toLocaleString(),
     totalOutputTokens: tokenUsage.totalOutputTokens.toLocaleString(),
     totalCost: formatCurrency(tokenUsage.totalCost),
-    tokenTableRows: tokenTableRows || '| - | - | - | - |',
   }
 }
 
 /**
- * Build traces replacement
+ * Extract prefill packet from result
  */
-function buildTracesReplacement(sampleTracesSection: string): Record<string, string> {
-  return {
-    sampleTracesSection: sampleTracesSection || '_No traces available_',
+function extractPrefillPacket(result: TestResult): string {
+  if (!result.actualResponse) return '{}'
+
+  const response = result.actualResponse as IntakeResult | PolicyAnalysisResult
+
+  // IntakeResult has prefill at top level
+  if ('prefill' in response) {
+    return JSON.stringify(response.prefill, null, 2)
   }
+
+  // PolicyAnalysisResult may have prefill in different location
+  if (typeof response === 'object' && response !== null) {
+    for (const key of Object.keys(response)) {
+      if (key.toLowerCase().includes('prefill')) {
+        return JSON.stringify(response[key as keyof typeof response], null, 2)
+      }
+    }
+  }
+
+  return '{}'
 }
 
 /**
@@ -226,27 +225,37 @@ function buildTracesReplacement(sampleTracesSection: string): Record<string, str
 function buildTestCaseDetailsReplacements(testResults: TestResult[]): Record<string, string> {
   const testCaseDetails = testResults
     .map((result) => {
-      const status = result.passed ? '✅ Pass  ' : '❌ Fail  '
-      const resultMetrics = result.metrics
-      const metricsSection = resultMetrics
-        ? `
-**Metrics:**
-- Routing Accuracy: ${formatPercentage(resultMetrics.routingAccuracy || 0)}
-- Intake Completeness: ${formatPercentage(resultMetrics.intakeCompleteness || 0)}
-- Discount Accuracy: ${formatPercentage(resultMetrics.discountAccuracy || 0)}
-- Pitch Clarity: ${formatPercentage(resultMetrics.pitchClarity || 0)}
-- Compliance: ${resultMetrics.compliancePassed ? '✅ Pass  ' : '❌ Fail  '}`
-        : ''
+      const status = result.passed ? '✅ PASS' : '❌ FAIL'
 
-      const errorSection = result.error ? `\n**Error:** ${result.error}` : ''
+      // Get file name for individual report link
+      const testId = result.testCase.id
+      let fileName = testId
+      if (testId.startsWith('conv-')) {
+        fileName = `conversational-${testId.replace('conv-', '')}`
+      } else if (testId.startsWith('policy-')) {
+        fileName = testId
+      }
 
-      return `### ${result.testCase.name} (ID: ${result.testCase.id})
+      const detailLink = `[View Detailed Report →](./${fileName}.md)`
 
-**Type:** ${result.testCase.type}
-**Carrier:** ${result.testCase.carrier}
-**State:** ${result.testCase.state}
-**Product:** ${Array.isArray(result.testCase.product) ? result.testCase.product.join(', ') : result.testCase.product}
-**Status:** ${status}${metricsSection}${errorSection}
+      // Extract prefill packet
+      const prefillPacket = extractPrefillPacket(result)
+
+      return `### ${result.testCase.name}
+
+- **ID:** ${result.testCase.id}
+- **Type:** ${result.testCase.type}
+- **Carrier:** ${result.testCase.carrier}
+- **State:** ${result.testCase.state}
+- **Product:** ${Array.isArray(result.testCase.product) ? result.testCase.product.join(', ') : result.testCase.product}
+- **Status:** ${status}
+
+**Prefill Packet:**
+\`\`\`json
+${prefillPacket}
+\`\`\`
+
+${detailLink}
 
 ---
 `

@@ -52,8 +52,23 @@ async function main() {
 
   try {
     // Load test cases
-    const testCases = await loadTestCases()
-    console.log(`📋 Loaded ${testCases.length} test cases`)
+    let testCases = await loadTestCases()
+
+    // Filter by test IDs if specified
+    const testIdsFilter = process.env.EVALUATION_TEST_IDS?.split(',').map((id) => id.trim())
+    if (testIdsFilter && testIdsFilter.length > 0) {
+      testCases = testCases.filter((tc) => testIdsFilter.includes(tc.id))
+      console.log(
+        `📋 Loaded ${testCases.length} test cases (filtered by: ${testIdsFilter.join(', ')})`
+      )
+    } else {
+      console.log(`📋 Loaded ${testCases.length} test cases`)
+    }
+
+    if (testCases.length === 0) {
+      console.error('❌ No test cases found matching the filter')
+      process.exit(1)
+    }
 
     // Run test cases
     const results = await runAllTestCases(testCases)
@@ -105,13 +120,15 @@ async function writeReports(report: Awaited<ReturnType<typeof generateReport>>):
   // Write JSON report
   await writeFile(REPORT_JSON_PATH, JSON.stringify(report, null, 2))
 
-  // Write markdown report
-  const markdownReport = await generateMarkdownReport(report)
+  // Write markdown report (also generates individual reports)
+  const markdownReport = await generateMarkdownReport(report, RESULT_DIR)
   await writeFile(REPORT_MD_PATH, markdownReport)
 
+  const testCount = report.testResults.length
   console.log('\n📊 Reports generated:')
-  console.log(`   JSON: ${REPORT_JSON_PATH}`)
-  console.log(`   Markdown: ${REPORT_MD_PATH}`)
+  console.log(`   Main Report: ${REPORT_MD_PATH}`)
+  console.log(`   Individual Reports: ${testCount} files in ${RESULT_DIR}`)
+  console.log(`   JSON Data: ${REPORT_JSON_PATH}`)
 }
 
 // Run harness if executed directly

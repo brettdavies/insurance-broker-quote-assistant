@@ -18,19 +18,19 @@
  */
 
 import { readFile } from 'node:fs/promises'
+import { join } from 'node:path'
 import type { TestResult } from '../types'
+import { generateIndividualReport } from './individual-report-generator'
 import { FILE_PATHS } from './report-constants'
 import {
   type OverallMetrics,
   type TokenUsageData,
-  calculateFieldCompleteness,
   calculateOverallMetrics,
   calculatePerCarrierRouting,
   calculatePerStateRouting,
   extractTokenUsageData,
 } from './report-metrics-aggregator'
 import { buildTemplateReplacements } from './template-builder'
-import { buildTraceSections, extractSampleTraces } from './trace-enricher'
 
 /**
  * Evaluation report structure
@@ -40,12 +40,7 @@ export interface EvaluationReport {
   overallMetrics: OverallMetrics
   perCarrierRouting: Record<string, number>
   perStateRouting: Record<string, number>
-  fieldCompleteness: Record<string, number>
   tokenUsage: TokenUsageData
-  sampleTraces: Array<{
-    testId: string
-    trace: unknown
-  }>
   testResults: TestResult[]
 }
 
@@ -56,20 +51,11 @@ export async function generateReport(results: TestResult[]): Promise<EvaluationR
   const timestamp = new Date().toISOString()
 
   // Calculate all metrics in parallel for performance
-  const [
-    overallMetrics,
-    perCarrierRouting,
-    perStateRouting,
-    fieldCompleteness,
-    tokenUsage,
-    sampleTraces,
-  ] = await Promise.all([
+  const [overallMetrics, perCarrierRouting, perStateRouting, tokenUsage] = await Promise.all([
     Promise.resolve(calculateOverallMetrics(results)),
     Promise.resolve(calculatePerCarrierRouting(results)),
     Promise.resolve(calculatePerStateRouting(results)),
-    Promise.resolve(calculateFieldCompleteness(results)),
     Promise.resolve(extractTokenUsageData(results)),
-    extractSampleTraces(results),
   ])
 
   return {
@@ -77,9 +63,7 @@ export async function generateReport(results: TestResult[]): Promise<EvaluationR
     overallMetrics,
     perCarrierRouting,
     perStateRouting,
-    fieldCompleteness,
     tokenUsage,
-    sampleTraces,
     testResults: results,
   }
 }
@@ -89,12 +73,14 @@ export async function generateReport(results: TestResult[]): Promise<EvaluationR
  *
  * Uses markdown template with {{variable}} placeholders.
  * Template-based approach is simple and requires no additional dependencies.
+ *
+ * Also generates individual report files for each test case.
  */
-export async function generateMarkdownReport(report: EvaluationReport): Promise<string> {
+export async function generateMarkdownReport(
+  report: EvaluationReport,
+  outputDir: string
+): Promise<string> {
   const template = await readFile(FILE_PATHS.REPORT_TEMPLATE, 'utf-8')
-
-  // Build trace sections from enriched traces
-  const sampleTracesSection = buildTraceSections(report.sampleTraces, report.testResults)
 
   // Build all template replacements
   const replacements = buildTemplateReplacements(
@@ -102,10 +88,19 @@ export async function generateMarkdownReport(report: EvaluationReport): Promise<
     report.overallMetrics,
     report.perCarrierRouting,
     report.perStateRouting,
-    report.fieldCompleteness,
     report.tokenUsage,
-    sampleTracesSection,
     report.testResults
+  )
+
+  // Generate individual reports for each test case in parallel
+  await Promise.all(
+    report.testResults.map(async (result) => {
+      try {
+        await generateIndividualReport(result, outputDir)
+      } catch (error) {
+        console.error(`Failed to generate individual report for ${result.testCase.id}:`, error)
+      }
+    })
   )
 
   // Replace template variables

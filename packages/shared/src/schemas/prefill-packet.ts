@@ -5,18 +5,15 @@ import { userProfileSchema } from './user-profile'
 /**
  * Prefill Packet Schema
  *
- * IQuote Pro pre-fill packet for broker handoff to licensed agents.
+ * IQuote Pro pre-fill packet for broker handoff to licensed producers.
  * Uses structured format with nested objects for type safety and easier import/export.
  *
  * Contains:
  * - Complete shopper profile (UserProfile) with all extracted fields
  * - Simplified routing decision (carrier and rationale only - no internal scores)
- * - Broker/agent contact information (required for compliance)
- * - Missing fields checklist with priority indicators
- * - Compliance disclaimers based on state/product
- *
- * Note: Full routing decision with match scores and all carriers is kept in IntakeResult
- * for internal compliance logs. The prefill packet only shows the recommended carrier.
+ * - Producer contact information (required for compliance)
+ * - Missing fields checklist with priority indicators (required for compliance)
+ * - Compliance disclaimers based on state/product (required for compliance)
  *
  * @see docs/stories/1.8.prefill-packet-generation.md
  * @see docs/architecture/4-data-models.md#47-prefillpacket
@@ -38,19 +35,19 @@ export type PrefillRouting = z.infer<typeof prefillRoutingSchema>
  * Broker/Agent Information Schema
  * Required for compliance and commission tracking
  */
-export const brokerInfoSchema = z.object({
-  agentName: z.string(), // Licensed agent name
-  agentLicenseNumber: z.string(), // State-issued license number
+export const producerInfoSchema = z.object({
+  producerName: z.string(), // Licensed producer name
+  producerLicenseNumber: z.string(), // State-issued license number
   licenseState: z.string(), // State where license is issued (e.g., "CA", "TX")
   licenseExpiration: z.string(), // License expiration date (YYYY-MM-DD)
   npn: z.string(), // National Producer Number (unique identifier across all states)
-  brokerageName: z.string(), // Agency/brokerage name
-  agentPhone: z.string(), // Agent contact phone
-  agentEmail: z.string(), // Agent contact email
-  agencyAddress: z.string().optional(), // Optional agency address
+  producerPhone: z.string(), // Producer contact phone
+  producerEmail: z.string(), // Producer contact email
+  brokerageName: z.string(), // Brokerage name
+  brokerageAddress: z.string().optional(), // Optional brokerage address
 })
 
-export type BrokerInfo = z.infer<typeof brokerInfoSchema>
+export type ProducerInfo = z.infer<typeof producerInfoSchema>
 
 export const prefillPacketSchema = z.object({
   // Core structured data
@@ -58,7 +55,7 @@ export const prefillPacketSchema = z.object({
   routing: prefillRoutingSchema, // Simplified routing (carrier and rationale only)
 
   // Broker/Agent information (required for compliance)
-  broker: brokerInfoSchema, // Licensed agent information
+  producer: producerInfoSchema, // Licensed producer information
 
   // Missing fields checklist
   missingFields: z.array(missingFieldSchema), // Fields needed for quote with priority indicators
@@ -67,7 +64,7 @@ export const prefillPacketSchema = z.object({
   disclaimers: z.array(z.string()), // Compliance disclaimers from compliance filter
 
   // Broker workflow fields
-  agentNotes: z.array(z.string()).optional(), // Talking points for licensed agent
+  producerNotes: z.array(z.string()).optional(), // Talking points for licensed producer
   reviewedByLicensedAgent: z.boolean().default(false), // Always false until broker reviews
   generatedAt: z.string(), // ISO 8601 timestamp of generation
 })
