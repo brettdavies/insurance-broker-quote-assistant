@@ -149,6 +149,7 @@ export {
 // Export field normalization utilities
 export {
   STATE_NAME_TO_CODE,
+  CARRIER_NORMALIZATIONS,
   normalizeState,
   extractStateFromText,
   extractState,
@@ -160,11 +161,14 @@ export {
   extractOwnsHome,
   extractZip,
   extractAge,
+  extractCurrentCarrier,
+  extractCleanRecord,
   extractNormalizedFields,
   inferHouseholdSize,
+  inferExistingPolicies,
   normalizedFieldToKeyValue,
   type NormalizedField,
-} from './utils/field-normalizer'
+} from './utils/field-normalization'
 
 // Export test utilities (for use in test files only)
 // NOTE: DO NOT export test-utils from main package - they import bun:test which breaks browser builds
