@@ -75,11 +75,6 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
 
   try {
     const normalizedFields = extractNormalizedFields(text)
-    console.log(
-      '[pill-parser] extractNormalizedFields returned:',
-      normalizedFields.length,
-      'fields'
-    )
 
     // Convert normalized fields to parsed key-value format
     for (const field of normalizedFields) {
@@ -107,14 +102,9 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
     // Step 2: Infer householdSize from indicator fields if not explicitly set
     // This ensures "2 drivers" creates drivers: 2 pill, and optionally infers householdSize: 2
     const inferredHouseholdSize = inferHouseholdSize(extractedFieldsMap)
-    console.log('[pill-parser] inferHouseholdSize result:', inferredHouseholdSize)
     if (inferredHouseholdSize && knownKeys.has('householdSize')) {
       // Only add inferred householdSize if it wasn't already extracted explicitly
       if (!extractedFieldsMap.has('householdSize')) {
-        console.log(
-          '[pill-parser] Adding inferred householdSize to results:',
-          inferredHouseholdSize.value
-        )
         results.push({
           key: 'householdSize',
           value: String(inferredHouseholdSize.value),
@@ -122,8 +112,6 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
           validation: 'valid',
           fieldName: 'householdSize',
         })
-      } else {
-        console.log('[pill-parser] Skipping inferred householdSize (already explicitly set)')
       }
     }
   } catch (error) {
@@ -370,12 +358,6 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
     match = otherPattern.exec(text)
   }
 
-  console.log(
-    '[pill-parser] Returning',
-    results.length,
-    'parsed fields:',
-    results.map((r) => `${r.key}:${r.value}`)
-  )
   return results
 }
 

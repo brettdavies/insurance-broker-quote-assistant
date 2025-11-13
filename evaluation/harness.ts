@@ -12,6 +12,7 @@
 
 import { mkdir, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
+import { generateIndividualReport } from './services/individual-report-generator'
 import { validateMetrics } from './services/metrics-validator'
 import { generateMarkdownReport, generateReport } from './services/report-generator'
 import { loadTestCases } from './services/test-case-loader'
@@ -89,9 +90,17 @@ async function main() {
 
 /**
  * Run all test cases and collect results
+ *
+ * Individual reports are generated immediately after each test completes
+ * for better UX (users can read results while other tests are running).
  */
 async function runAllTestCases(testCases: TestResult['testCase'][]): Promise<TestResult[]> {
   const results: TestResult[] = []
+
+  // Ensure result directory exists
+  await mkdir(RESULT_DIR, { recursive: true }).catch(() => {
+    // Directory might already exist, ignore
+  })
 
   for (const testCase of testCases) {
     console.log(`\n▶️  Running: ${testCase.name} (${testCase.type})`)
@@ -102,6 +111,14 @@ async function runAllTestCases(testCases: TestResult['testCase'][]): Promise<Tes
       console.log('✅ Passed')
     } else {
       console.log(`❌ Failed: ${result.error}`)
+    }
+
+    // Generate individual report immediately after test completes
+    try {
+      await generateIndividualReport(result, RESULT_DIR)
+      console.log('📄 Individual report generated')
+    } catch (error) {
+      console.error(`⚠️  Failed to generate individual report: ${error}`)
     }
   }
 
@@ -120,8 +137,8 @@ async function writeReports(report: Awaited<ReturnType<typeof generateReport>>):
   // Write JSON report
   await writeFile(REPORT_JSON_PATH, JSON.stringify(report, null, 2))
 
-  // Write markdown report (also generates individual reports)
-  const markdownReport = await generateMarkdownReport(report, RESULT_DIR)
+  // Write markdown report (individual reports already generated after each test)
+  const markdownReport = await generateMarkdownReport(report)
   await writeFile(REPORT_MD_PATH, markdownReport)
 
   const testCount = report.testResults.length

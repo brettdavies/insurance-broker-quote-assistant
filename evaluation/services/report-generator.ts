@@ -20,7 +20,6 @@
 import { readFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import type { TestResult } from '../types'
-import { generateIndividualReport } from './individual-report-generator'
 import { FILE_PATHS } from './report-constants'
 import {
   type OverallMetrics,
@@ -74,12 +73,10 @@ export async function generateReport(results: TestResult[]): Promise<EvaluationR
  * Uses markdown template with {{variable}} placeholders.
  * Template-based approach is simple and requires no additional dependencies.
  *
- * Also generates individual report files for each test case.
+ * Note: Individual reports are generated immediately after each test completes
+ * in the harness for better UX (users can read results while tests are running).
  */
-export async function generateMarkdownReport(
-  report: EvaluationReport,
-  outputDir: string
-): Promise<string> {
+export async function generateMarkdownReport(report: EvaluationReport): Promise<string> {
   const template = await readFile(FILE_PATHS.REPORT_TEMPLATE, 'utf-8')
 
   // Build all template replacements
@@ -90,17 +87,6 @@ export async function generateMarkdownReport(
     report.perStateRouting,
     report.tokenUsage,
     report.testResults
-  )
-
-  // Generate individual reports for each test case in parallel
-  await Promise.all(
-    report.testResults.map(async (result) => {
-      try {
-        await generateIndividualReport(result, outputDir)
-      } catch (error) {
-        console.error(`Failed to generate individual report for ${result.testCase.id}:`, error)
-      }
-    })
   )
 
   // Replace template variables

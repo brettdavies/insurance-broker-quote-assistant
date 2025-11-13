@@ -44,21 +44,13 @@ export function KeyValuePlugin(): null {
 
         for (const [nodeKey, mutation] of mutatedNodes) {
           if (mutation === 'updated' || mutation === 'created') {
-            console.log('[KeyValuePlugin] Mutation detected:', mutation, 'nodeKey:', nodeKey)
             const node = $getNodeByKey(nodeKey)
             if (!$isTextNode(node)) {
               continue
             }
 
             const text = node.getTextContent()
-            console.log('[KeyValuePlugin] Text node content:', text)
             let parsed = parseKeyValueSyntax(text)
-            console.log(
-              '[KeyValuePlugin] Parsed',
-              parsed.length,
-              'fields from text:',
-              parsed.map((p) => `${p.key}:${p.value}`)
-            )
 
             if (parsed.length === 0) {
               continue
@@ -282,7 +274,6 @@ export function KeyValuePlugin(): null {
             )
 
             if (inferredField) {
-              console.log('[KeyValuePlugin] Found inferred householdSize:', inferredField)
               // Get all existing pills to check if householdSize pill already exists
               const root = $getRoot()
               const allNodes = root.getAllTextNodes()
@@ -297,7 +288,6 @@ export function KeyValuePlugin(): null {
               }
 
               if (!hasHouseholdSizePill) {
-                console.log('[KeyValuePlugin] Creating householdSize pill directly')
                 // Create pill directly (don't inject text - it won't be found for transformation)
                 const pillNode = $createPillNode({
                   key: 'householdSize',
@@ -310,16 +300,12 @@ export function KeyValuePlugin(): null {
                 if (parentBeforeTransform) {
                   parentBeforeTransform.append(new TextNode(' ')) // Space before pill
                   parentBeforeTransform.append(pillNode)
-                  console.log('[KeyValuePlugin] householdSize pill created successfully')
                 } else {
                   // Fallback: append to root if parent was null
                   const root = $getRoot()
                   root.append(new TextNode(' '))
                   root.append(pillNode)
-                  console.log('[KeyValuePlugin] householdSize pill created via root fallback')
                 }
-              } else {
-                console.log('[KeyValuePlugin] Skipping householdSize pill (already exists)')
               }
             }
 
