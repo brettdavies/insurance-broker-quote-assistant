@@ -6,6 +6,7 @@
  */
 
 import { chromium } from 'playwright'
+import type { IntakeResult, PolicyAnalysisResult } from '../../packages/shared/src/index'
 import type { TestCase, TestResult } from '../types'
 import {
   extractCleanedTextAndPills,
@@ -43,9 +44,11 @@ export async function runTestCase(testCase: TestCase): Promise<TestResult> {
 /**
  * Call appropriate API endpoint based on test case type
  */
-async function callApi(testCase: TestCase): Promise<unknown> {
+async function callApi(
+  testCase: TestCase
+): Promise<IntakeResult | PolicyAnalysisResult | undefined> {
   if (testCase.type === 'conversational') {
-    return callIntakeEndpoint(testCase.input || '')
+    return callIntakeEndpoint(testCase.input || '', testCase.id)
   }
   return callPolicyAnalyzeEndpoint(testCase.policyInput, testCase.expectedPolicy)
 }
@@ -60,7 +63,10 @@ async function callApi(testCase: TestCase): Promise<unknown> {
  * 4. Send both cleaned text and pills to API endpoint
  * 5. Return API response
  */
-async function callIntakeEndpoint(input: string): Promise<unknown> {
+async function callIntakeEndpoint(
+  input: string,
+  testId: string
+): Promise<IntakeResult | undefined> {
   // Launch browser (non-headless so we can see it working)
   const browser = await chromium.launch({ headless: false })
   const page = await browser.newPage()
@@ -82,11 +88,11 @@ async function callIntakeEndpoint(input: string): Promise<unknown> {
 
     // Wait for React to render (give it extra time)
     console.log('⏳ Waiting for React to render...')
-    await page.waitForTimeout(2000)
+    await page.waitForTimeout(1000)
 
     // Take initial screenshot for debugging
-    await page.screenshot({ path: 'evaluation/debug-screenshot-initial.png' })
-    console.log('📸 Initial screenshot saved to evaluation/debug-screenshot-initial.png')
+    await page.screenshot({ path: '.ai/debug-screenshot-initial.png' })
+    console.log('📸 Initial screenshot saved to .ai/debug-screenshot-initial.png')
 
     // Inject text into editor (triggers pill extraction via KeyValuePlugin)
     console.log(`⌨️  Injecting text: "${input}"`)
@@ -120,7 +126,7 @@ async function callIntakeEndpoint(input: string): Promise<unknown> {
     // Fail fast if pill extraction didn't work
     if (!cleanedText) {
       throw new Error(
-        `Pill extraction failed for test ${testCase.id}. Extracted: "${cleanedText}". Pills: ${JSON.stringify(pills)}. This means editorRef isn't exposed or extraction logic failed.`
+        `Pill extraction failed for test ${testId}. Extracted: "${cleanedText}". Pills: ${JSON.stringify(pills)}. This means editorRef isn't exposed or extraction logic failed.`
       )
     }
 
@@ -142,14 +148,14 @@ async function callIntakeEndpoint(input: string): Promise<unknown> {
       throw new Error(`API error: ${error.error?.message || response.statusText}`)
     }
 
-    const result = await response.json()
+    const result = (await response.json()) as IntakeResult
 
     // Wait a bit more to ensure all console logs are captured
     await page.waitForTimeout(500)
 
     // Take final screenshot before closing
-    await page.screenshot({ path: 'evaluation/debug-screenshot-final.png' })
-    console.log('📸 Final screenshot saved to evaluation/debug-screenshot-final.png')
+    await page.screenshot({ path: '.ai/debug-screenshot-final.png' })
+    console.log('📸 Final screenshot saved to .ai/debug-screenshot-final.png')
 
     // Print all console logs
     console.log(`\n${'='.repeat(80)}`)
@@ -178,7 +184,7 @@ async function callIntakeEndpoint(input: string): Promise<unknown> {
 async function callPolicyAnalyzeEndpoint(
   policyInput?: string | unknown,
   expectedPolicy?: unknown
-): Promise<unknown> {
+): Promise<PolicyAnalysisResult | undefined> {
   // API requires policySummary (PolicySummary object), policyText is optional
   // Use expectedPolicy if available, otherwise try to use policyInput if it's an object
   const policySummary =
@@ -203,5 +209,5 @@ async function callPolicyAnalyzeEndpoint(
     throw new Error(`API error: ${error.error?.message || response.statusText}`)
   }
 
-  return response.json()
+  return (await response.json()) as PolicyAnalysisResult
 }

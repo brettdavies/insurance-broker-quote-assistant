@@ -7,7 +7,7 @@
  * runs the evaluation harness, then cleans up.
  */
 
-import { spawn, execSync } from 'node:child_process'
+import { execSync, spawn } from 'node:child_process'
 import { join } from 'node:path'
 
 const FRONTEND_PORT = process.env.EVAL_FRONTEND_PORT || '3000'

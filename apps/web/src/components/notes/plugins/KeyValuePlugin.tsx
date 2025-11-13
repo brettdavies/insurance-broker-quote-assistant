@@ -53,7 +53,12 @@ export function KeyValuePlugin(): null {
             const text = node.getTextContent()
             console.log('[KeyValuePlugin] Text node content:', text)
             let parsed = parseKeyValueSyntax(text)
-            console.log('[KeyValuePlugin] Parsed', parsed.length, 'fields from text:', parsed.map(p => `${p.key}:${p.value}`))
+            console.log(
+              '[KeyValuePlugin] Parsed',
+              parsed.length,
+              'fields from text:',
+              parsed.map((p) => `${p.key}:${p.value}`)
+            )
 
             if (parsed.length === 0) {
               continue

@@ -7,9 +7,9 @@
 
 import { readFile } from 'node:fs/promises'
 import type { DecisionTrace } from '@repo/shared'
+import { splitCombinedPrompt } from './prompt-parser'
 import { FILE_PATHS, LOG_ENTRY_TYPES, TIME_WINDOWS } from './report-constants'
 import { findClosestBeforeTime, parseTimestamp } from './report-utils'
-import { splitCombinedPrompt } from './prompt-parser'
 
 /**
  * Prompt entry from logs
@@ -141,7 +141,7 @@ async function attachResponses(
 
       // Look for LLM response entries
       if (isResponseEntry(entry)) {
-        const responseTime = parseTimestamp(entry.timestamp!)
+        const responseTime = parseTimestamp(entry.timestamp)
         const closestPrompt = findClosestBeforeTime(
           responseTime,
           promptsByTimestamp,
@@ -175,7 +175,9 @@ function isPromptEntry(entry: LogEntry): boolean {
 /**
  * Check if log entry is a response entry
  */
-function isResponseEntry(entry: LogEntry): boolean {
+function isResponseEntry(
+  entry: LogEntry
+): entry is LogEntry & { timestamp: string; response: string } {
   return entry.type === LOG_ENTRY_TYPES.LLM_RESPONSE && !!entry.timestamp && !!entry.response
 }
 

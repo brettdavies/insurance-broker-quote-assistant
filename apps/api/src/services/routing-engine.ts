@@ -140,7 +140,11 @@ export function routeToCarrier(
       const sortedByName = [...tiedMatches].sort((a, b) =>
         a.carrier.name.localeCompare(b.carrier.name)
       )
-      primaryCarrier = sortedByName[0]!
+      const firstMatch = sortedByName[0]
+      if (!firstMatch) {
+        throw new Error('Unexpected: No carrier found in tied matches')
+      }
+      primaryCarrier = firstMatch
       tiedCarriers = sortedByName.slice(1).map((m) => m.carrier.name)
     }
   } else {

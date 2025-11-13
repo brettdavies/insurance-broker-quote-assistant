@@ -154,7 +154,11 @@ function calculateFieldCompleteness(
     const actualValue = actualObj[key]
 
     // Case-insensitive comparison for carrier fields
-    if (key === 'currentCarrier' && typeof expectedValue === 'string' && typeof actualValue === 'string') {
+    if (
+      key === 'currentCarrier' &&
+      typeof expectedValue === 'string' &&
+      typeof actualValue === 'string'
+    ) {
       return expectedValue.toLowerCase() === actualValue.toLowerCase()
     }
 

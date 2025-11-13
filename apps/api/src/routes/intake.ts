@@ -210,8 +210,7 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
       // Find applicable discounts using discount engine
       let opportunities: IntakeResult['opportunities'] = []
       if (
-        routeDecision &&
-        routeDecision.primaryCarrier &&
+        routeDecision?.primaryCarrier &&
         extractionResult.profile.state &&
         extractionResult.profile.productType
       ) {
@@ -229,8 +228,7 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
             ...(profile.state && { state: profile.state }),
             ...(profile.address && { address: profile.address }),
             ...(profile.productType && { productType: profile.productType }),
-            ...(profile.age !== null &&
-              profile.age !== undefined && { age: profile.age }),
+            ...(profile.age !== null && profile.age !== undefined && { age: profile.age }),
             ...(profile.householdSize !== null &&
               profile.householdSize !== undefined && { householdSize: profile.householdSize }),
             ...(profile.ownsHome !== null &&

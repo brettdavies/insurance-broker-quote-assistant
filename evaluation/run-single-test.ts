@@ -8,7 +8,7 @@
  * Usage: bun run evaluation/run-single-test.ts conv-01
  */
 
-import { spawn, execSync } from 'node:child_process'
+import { execSync, spawn } from 'node:child_process'
 import { readFile, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import { generateMarkdownReport, generateReport } from './services/report-generator'

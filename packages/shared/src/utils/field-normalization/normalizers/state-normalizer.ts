@@ -10,69 +10,69 @@
  */
 export const STATE_NAME_TO_CODE: Record<string, string> = {
   // AL - Alabama
-  'alabama': 'AL',
+  alabama: 'AL',
   // AK - Alaska
-  'alaska': 'AK',
+  alaska: 'AK',
   // AZ - Arizona
-  'arizona': 'AZ',
+  arizona: 'AZ',
   // AR - Arkansas
-  'arkansas': 'AR',
+  arkansas: 'AR',
   // CA - California
-  'california': 'CA',
-  'cali': 'CA',
+  california: 'CA',
+  cali: 'CA',
   // CO - Colorado
-  'colorado': 'CO',
+  colorado: 'CO',
   // CT - Connecticut
-  'connecticut': 'CT',
+  connecticut: 'CT',
   // DE - Delaware
-  'delaware': 'DE',
+  delaware: 'DE',
   // FL - Florida
-  'florida': 'FL',
-  'fla': 'FL',
+  florida: 'FL',
+  fla: 'FL',
   // GA - Georgia
-  'georgia': 'GA',
+  georgia: 'GA',
   // HI - Hawaii
-  'hawaii': 'HI',
+  hawaii: 'HI',
   // ID - Idaho
-  'idaho': 'ID',
+  idaho: 'ID',
   // IL - Illinois
-  'illinois': 'IL',
-  'ill': 'IL',
+  illinois: 'IL',
+  ill: 'IL',
   // IN - Indiana
-  'indiana': 'IN',
+  indiana: 'IN',
   // IA - Iowa
-  'iowa': 'IA',
+  iowa: 'IA',
   // KS - Kansas
-  'kansas': 'KS',
+  kansas: 'KS',
   // KY - Kentucky
-  'kentucky': 'KY',
+  kentucky: 'KY',
   // LA - Louisiana
-  'louisiana': 'LA',
+  louisiana: 'LA',
   // ME - Maine
-  'maine': 'ME',
+  maine: 'ME',
   // MD - Maryland
-  'maryland': 'MD',
+  maryland: 'MD',
   // MA - Massachusetts
-  'massachusetts': 'MA',
-  'mass': 'MA',
+  massachusetts: 'MA',
+  mass: 'MA',
   // MI - Michigan
-  'michigan': 'MI',
-  'mich': 'MI',
+  michigan: 'MI',
+  mich: 'MI',
   // MN - Minnesota
-  'minnesota': 'MN',
-  'minn': 'MN',
+  minnesota: 'MN',
+  minn: 'MN',
   // MS - Mississippi
-  'mississippi': 'MS',
-  'miss': 'MS',
+  mississippi: 'MS',
+  miss: 'MS',
   // MO - Missouri
-  'missouri': 'MO',
+  missouri: 'MO',
   // MT - Montana
-  'montana': 'MT',
+  montana: 'MT',
   // NE - Nebraska
-  'nebraska': 'NE',
-  'neb': 'NE',
+  nebraska: 'NE',
+  neb: 'NE',
   // NV - Nevada
-  'nevada': 'NV',
+  nevada: 'NV',
   // NH - New Hampshire
   'new hampshire': 'NH',
   // NJ - New Jersey
@@ -86,15 +86,15 @@ export const STATE_NAME_TO_CODE: Record<string, string> = {
   // ND - North Dakota
   'north dakota': 'ND',
   // OH - Ohio
-  'ohio': 'OH',
+  ohio: 'OH',
   // OK - Oklahoma
-  'oklahoma': 'OK',
-  'okla': 'OK',
+  oklahoma: 'OK',
+  okla: 'OK',
   // OR - Oregon
-  'oregon': 'OR',
+  oregon: 'OR',
   // PA - Pennsylvania
-  'pennsylvania': 'PA',
-  'penn': 'PA',
+  pennsylvania: 'PA',
+  penn: 'PA',
   // RI - Rhode Island
   'rhode island': 'RI',
   // SC - South Carolina
@@ -102,27 +102,27 @@ export const STATE_NAME_TO_CODE: Record<string, string> = {
   // SD - South Dakota
   'south dakota': 'SD',
   // TN - Tennessee
-  'tennessee': 'TN',
-  'tenn': 'TN',
+  tennessee: 'TN',
+  tenn: 'TN',
   // TX - Texas
-  'texas': 'TX',
-  'tex': 'TX',
+  texas: 'TX',
+  tex: 'TX',
   // UT - Utah
-  'utah': 'UT',
+  utah: 'UT',
   // VT - Vermont
-  'vermont': 'VT',
+  vermont: 'VT',
   // VA - Virginia
-  'virginia': 'VA',
+  virginia: 'VA',
   // WA - Washington
-  'washington': 'WA',
-  'wash': 'WA',
+  washington: 'WA',
+  wash: 'WA',
   // WV - West Virginia
   'west virginia': 'WV',
   // WI - Wisconsin
-  'wisconsin': 'WI',
-  'wisc': 'WI',
+  wisconsin: 'WI',
+  wisc: 'WI',
   // WY - Wyoming
-  'wyoming': 'WY',
+  wyoming: 'WY',
   // DC - District of Columbia
   'district of columbia': 'DC',
   'washington dc': 'DC',

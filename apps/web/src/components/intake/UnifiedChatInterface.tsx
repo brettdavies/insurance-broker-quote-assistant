@@ -88,8 +88,14 @@ export function UnifiedChatInterface({
   // Expose editor ref to window for evaluation harness
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      ;(window as any).editorRef = editorRef
-      ;(window as any).profile = profile
+      // Extend window with debug properties for evaluation harness
+      interface WindowWithDebug extends Window {
+        editorRef?: typeof editorRef
+        profile?: typeof profile
+      }
+      const win = window as unknown as WindowWithDebug
+      win.editorRef = editorRef
+      win.profile = profile
     }
   }, [editorRef, profile])
 

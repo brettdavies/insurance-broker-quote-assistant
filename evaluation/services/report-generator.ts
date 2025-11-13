@@ -21,13 +21,13 @@ import { readFile } from 'node:fs/promises'
 import type { TestResult } from '../types'
 import { FILE_PATHS } from './report-constants'
 import {
+  type OverallMetrics,
+  type TokenUsageData,
   calculateFieldCompleteness,
   calculateOverallMetrics,
   calculatePerCarrierRouting,
   calculatePerStateRouting,
   extractTokenUsageData,
-  type OverallMetrics,
-  type TokenUsageData,
 } from './report-metrics-aggregator'
 import { buildTemplateReplacements } from './template-builder'
 import { buildTraceSections, extractSampleTraces } from './trace-enricher'
@@ -115,10 +115,7 @@ export async function generateMarkdownReport(report: EvaluationReport): Promise<
 /**
  * Replace template variables with actual values
  */
-function replaceTemplateVariables(
-  template: string,
-  replacements: Record<string, string>
-): string {
+function replaceTemplateVariables(template: string, replacements: Record<string, string>): string {
   let result = template
   for (const [key, value] of Object.entries(replacements)) {
     result = result.replace(new RegExp(`{{${key}}}`, 'g'), value)

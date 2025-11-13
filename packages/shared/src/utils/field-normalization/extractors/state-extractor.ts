@@ -5,8 +5,8 @@
  * Handles patterns like "CA", "CA auto", "California", "in CA", etc.
  */
 
+import { STATE_NAME_TO_CODE, normalizeState } from '../normalizers'
 import type { NormalizedField } from '../types'
-import { normalizeState, STATE_NAME_TO_CODE } from '../normalizers'
 
 /**
  * Extract state from broker notes text

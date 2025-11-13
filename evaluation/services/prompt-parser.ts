@@ -99,9 +99,7 @@ function splitAtIndex(prompt: string, index: number): SplitPrompt {
 /**
  * Validate system prompt and return any warnings
  */
-function validateSystemPrompt(
-  systemPrompt: string
-): { valid: boolean; warning?: string } {
+function validateSystemPrompt(systemPrompt: string): { valid: boolean; warning?: string } {
   // Check if system prompt is too short
   if (!systemPrompt || systemPrompt.length < PROMPT_MARKERS.MIN_SYSTEM_PROMPT_LENGTH) {
     return {

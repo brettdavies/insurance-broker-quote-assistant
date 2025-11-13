@@ -60,8 +60,7 @@ export function buildTraceSections(
  */
 function extractTrace(response: unknown): DecisionTrace | undefined {
   return (
-    (response as { trace?: DecisionTrace }).trace ||
-    (response as { trace?: DecisionTrace }).trace
+    (response as { trace?: DecisionTrace }).trace || (response as { trace?: DecisionTrace }).trace
   )
 }
 
@@ -128,7 +127,11 @@ function findMatchingPrompt(
   // Try timestamp matching first
   if (trace.timestamp) {
     const traceTime = parseTimestamp(trace.timestamp)
-    const match = findClosestInTimeWindow(traceTime, promptsByTimestamp, TIME_WINDOWS.PROMPT_MATCH_MS)
+    const match = findClosestInTimeWindow(
+      traceTime,
+      promptsByTimestamp,
+      TIME_WINDOWS.PROMPT_MATCH_MS
+    )
     if (match) return match
   }
 

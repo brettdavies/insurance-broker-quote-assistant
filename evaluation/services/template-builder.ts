@@ -183,8 +183,7 @@ function buildTestCaseDetailsReplacements(testResults: TestResult[]): Record<str
 function buildSummaryReplacements(testResults: TestResult[]): Record<string, string> {
   const passedTests = testResults.filter((r) => r.passed).length
   const failedTests = testResults.filter((r) => !r.passed).length
-  const passRate =
-    testResults.length > 0 ? Math.round((passedTests / testResults.length) * 100) : 0
+  const passRate = testResults.length > 0 ? Math.round((passedTests / testResults.length) * 100) : 0
 
   return {
     totalTests: testResults.length.toString(),

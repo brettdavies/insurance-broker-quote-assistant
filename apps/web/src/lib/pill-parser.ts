@@ -75,7 +75,11 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
 
   try {
     const normalizedFields = extractNormalizedFields(text)
-    console.log('[pill-parser] extractNormalizedFields returned:', normalizedFields.length, 'fields')
+    console.log(
+      '[pill-parser] extractNormalizedFields returned:',
+      normalizedFields.length,
+      'fields'
+    )
 
     // Convert normalized fields to parsed key-value format
     for (const field of normalizedFields) {
@@ -107,7 +111,10 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
     if (inferredHouseholdSize && knownKeys.has('householdSize')) {
       // Only add inferred householdSize if it wasn't already extracted explicitly
       if (!extractedFieldsMap.has('householdSize')) {
-        console.log('[pill-parser] Adding inferred householdSize to results:', inferredHouseholdSize.value)
+        console.log(
+          '[pill-parser] Adding inferred householdSize to results:',
+          inferredHouseholdSize.value
+        )
         results.push({
           key: 'householdSize',
           value: String(inferredHouseholdSize.value),
@@ -142,9 +149,12 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
   // 5. Other fields (default) - stop at space, comma, period, or end
   const otherPattern = /(\w+):([^\s:,\.]+)(?=\s|,|\.|$)/gi
 
-  // Helper function to check if a range was already processed
+  // Helper function to check if a range was already processed (any overlap)
   const isAlreadyProcessed = (start: number, end: number): boolean => {
-    return processedRanges.some((range) => start >= range.start && end <= range.end)
+    return processedRanges.some((range) => {
+      // Check for any overlap: ranges overlap if they don't NOT overlap
+      return !(end <= range.start || start >= range.end)
+    })
   }
 
   // Helper function to process a match
@@ -360,7 +370,12 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
     match = otherPattern.exec(text)
   }
 
-  console.log('[pill-parser] Returning', results.length, 'parsed fields:', results.map(r => `${r.key}:${r.value}`))
+  console.log(
+    '[pill-parser] Returning',
+    results.length,
+    'parsed fields:',
+    results.map((r) => `${r.key}:${r.value}`)
+  )
   return results
 }
 

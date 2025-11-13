@@ -5,7 +5,12 @@
  * Follows SRP and OCP (Single Responsibility, Open/Closed Principles).
  */
 
-import type { DecisionTrace, DiscountOpportunity, IntakeResult, PolicyAnalysisResult } from '@repo/shared'
+import type {
+  DecisionTrace,
+  DiscountOpportunity,
+  IntakeResult,
+  PolicyAnalysisResult,
+} from '@repo/shared'
 import type { TestCase, TestResult } from '../types'
 import { TRACE_FIELDS } from './report-constants'
 
@@ -187,7 +192,7 @@ function buildDiscountOpportunitiesSection(testResult?: TestResult): string {
   if (!opportunities || opportunities.length === 0) return ''
 
   const sections: string[] = []
-  sections.push(`#### Discount Opportunities\n\n`)
+  sections.push('#### Discount Opportunities\n\n')
   sections.push(
     `Found ${opportunities.length} discount ${opportunities.length === 1 ? 'opportunity' : 'opportunities'}:\n\n`
   )
@@ -224,10 +229,10 @@ function buildSingleDiscountOpportunity(opp: DiscountOpportunity): string {
     if (opp.metRequirements && opp.metRequirements.length > 0) {
       sections.push(`- **Eligibility:** ${opp.metRequirements.join(', ')}\n`)
     } else {
-      sections.push(`- **Eligibility:** Meets all requirements\n`)
+      sections.push('- **Eligibility:** Meets all requirements\n')
     }
   } else {
-    sections.push(`- **Missing Requirements:**\n`)
+    sections.push('- **Missing Requirements:**\n')
     for (const req of opp.missingRequirements) {
       sections.push(`  - ${req}\n`)
     }
@@ -265,9 +270,7 @@ function buildRulesConsultedSection(trace: DecisionTrace): string {
  * Build other fields section
  */
 function buildOtherFieldsSection(trace: DecisionTrace): string {
-  const otherFields = Object.entries(trace).filter(
-    ([key]) => !TRACE_FIELDS.KNOWN.includes(key)
-  )
+  const otherFields = Object.entries(trace).filter(([key]) => !TRACE_FIELDS.KNOWN.includes(key))
 
   if (otherFields.length === 0) return ''
 

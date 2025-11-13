@@ -6,9 +6,6 @@
  */
 
 import type { NormalizedField } from '../types'
-import { extractState } from './state-extractor'
-import { extractProductType } from './product-type-extractor'
-import { extractCurrentCarrier, extractZip } from './text-extractors'
 import { extractCleanRecord, extractOwnsHome } from './boolean-extractors'
 import {
   extractAge,
@@ -17,6 +14,9 @@ import {
   extractKids,
   extractVehicles,
 } from './numeric-extractors'
+import { extractProductType } from './product-type-extractor'
+import { extractState } from './state-extractor'
+import { extractCurrentCarrier, extractZip } from './text-extractors'
 
 /**
  * Extract all normalized fields from broker notes

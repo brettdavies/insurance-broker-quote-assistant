@@ -9,14 +9,14 @@
  * Maps common variations and abbreviations to standard carrier names (uppercase)
  */
 export const CARRIER_NORMALIZATIONS: Record<string, string> = {
-  'geico': 'GEICO',
+  geico: 'GEICO',
   'state farm': 'STATE FARM',
-  'progressive': 'PROGRESSIVE',
-  'allstate': 'ALLSTATE',
+  progressive: 'PROGRESSIVE',
+  allstate: 'ALLSTATE',
   'liberty mutual': 'LIBERTY MUTUAL',
-  'usaa': 'USAA',
-  'nationwide': 'NATIONWIDE',
-  'farmers': 'FARMERS',
+  usaa: 'USAA',
+  nationwide: 'NATIONWIDE',
+  farmers: 'FARMERS',
   'american family': 'AMERICAN FAMILY',
-  'travelers': 'TRAVELERS',
+  travelers: 'TRAVELERS',
 }

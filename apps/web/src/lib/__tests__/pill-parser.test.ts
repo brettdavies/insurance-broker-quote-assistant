@@ -12,14 +12,21 @@ describe('Key-Value Parser', () => {
       const text = 'Client needs auto, k:2 v:3'
       const result = parseKeyValueSyntax(text)
 
-      expect(result).toHaveLength(2)
+      // Expect 3 fields: productType extracted from "auto", plus k:2 and v:3
+      expect(result).toHaveLength(3)
       expect(result[0]).toMatchObject({
+        key: 'productType',
+        value: 'auto',
+        validation: 'valid',
+        fieldName: 'productType',
+      })
+      expect(result[1]).toMatchObject({
         key: 'k',
         value: '2',
         validation: 'valid',
         fieldName: 'kids',
       })
-      expect(result[1]).toMatchObject({
+      expect(result[2]).toMatchObject({
         key: 'v',
         value: '3',
         validation: 'valid',

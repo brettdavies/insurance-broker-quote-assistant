@@ -1,8 +1,8 @@
 import type { PolicySummary, UserProfile } from '@repo/shared'
 import {
+  type NormalizedField,
   extractStateFromText,
   inferExistingPolicies,
-  type NormalizedField,
   policySummarySchema,
   userProfileSchema,
 } from '@repo/shared'
@@ -93,7 +93,10 @@ export class ConversationalExtractor {
 
       // Validate extracted profile against schema
       const validatedProfile = this.validateProfile(llmResult.profile)
-      console.log('[conversational-extractor] LLM validated profile householdSize:', validatedProfile.householdSize)
+      console.log(
+        '[conversational-extractor] LLM validated profile householdSize:',
+        validatedProfile.householdSize
+      )
 
       // Merge pills with LLM extraction result
       // Pills take precedence (they're the single source of truth from frontend)
@@ -101,12 +104,18 @@ export class ConversationalExtractor {
         pills && Object.keys(pills).length > 0
           ? { ...validatedProfile, ...pills }
           : validatedProfile
-      console.log('[conversational-extractor] After merging pills, finalProfile householdSize:', finalProfile.householdSize)
+      console.log(
+        '[conversational-extractor] After merging pills, finalProfile householdSize:',
+        finalProfile.householdSize
+      )
 
       // Normalize carrier name to uppercase (knowledge pack standard)
       if (finalProfile.currentCarrier) {
         finalProfile.currentCarrier = finalProfile.currentCarrier.toUpperCase()
-        console.log('[conversational-extractor] Normalized currentCarrier to:', finalProfile.currentCarrier)
+        console.log(
+          '[conversational-extractor] Normalized currentCarrier to:',
+          finalProfile.currentCarrier
+        )
       }
 
       // Infer existingPolicies from currentCarrier + productType
