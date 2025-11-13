@@ -91,62 +91,88 @@ function buildMetricsReplacements(metrics: OverallMetrics): Record<string, strin
  * Build flow-specific metrics replacements (conversational vs policy)
  */
 function buildFlowSpecificMetricsReplacements(metrics: OverallMetrics): Record<string, string> {
-  // Conversational flow metrics
-  const convRoutingStatus =
-    metrics.conversational.routingAccuracy >= METRIC_THRESHOLDS.ROUTING_ACCURACY
-      ? STATUS.PASS
-      : STATUS.FAIL
-  const convIntakeStatus =
-    metrics.conversational.intakeCompleteness >= METRIC_THRESHOLDS.INTAKE_COMPLETENESS
-      ? STATUS.PASS
-      : STATUS.FAIL
-  const convPrefillStatus =
-    metrics.conversational.prefillCompleteness >= METRIC_THRESHOLDS.INTAKE_COMPLETENESS
-      ? STATUS.PASS
-      : STATUS.FAIL
-  const convComplianceStatus =
-    metrics.conversational.compliancePassRate === METRIC_THRESHOLDS.COMPLIANCE_PASS_RATE
-      ? STATUS.PASS
-      : STATUS.FAIL
+  // Check if conversational tests were run
+  const hasConversationalTests = metrics.conversational.testCount > 0
 
-  const convOverallStatus =
-    metrics.conversational.routingAccuracy >= METRIC_THRESHOLDS.ROUTING_ACCURACY &&
-    metrics.conversational.intakeCompleteness >= METRIC_THRESHOLDS.INTAKE_COMPLETENESS &&
-    metrics.conversational.prefillCompleteness >= METRIC_THRESHOLDS.INTAKE_COMPLETENESS &&
-    metrics.conversational.compliancePassRate === METRIC_THRESHOLDS.COMPLIANCE_PASS_RATE
+  // Conversational flow metrics (show '-' if no tests)
+  const convRoutingStatus = hasConversationalTests
+    ? metrics.conversational.routingAccuracy >= METRIC_THRESHOLDS.ROUTING_ACCURACY
+      ? STATUS.PASS
+      : STATUS.FAIL
+    : '-'
+  const convIntakeStatus = hasConversationalTests
+    ? metrics.conversational.intakeCompleteness >= METRIC_THRESHOLDS.INTAKE_COMPLETENESS
+      ? STATUS.PASS
+      : STATUS.FAIL
+    : '-'
+  const convPrefillStatus = hasConversationalTests
+    ? metrics.conversational.prefillCompleteness >= METRIC_THRESHOLDS.INTAKE_COMPLETENESS
+      ? STATUS.PASS
+      : STATUS.FAIL
+    : '-'
+  const convComplianceStatus = hasConversationalTests
+    ? metrics.conversational.compliancePassRate === METRIC_THRESHOLDS.COMPLIANCE_PASS_RATE
+      ? STATUS.PASS
+      : STATUS.FAIL
+    : '-'
+
+  const convOverallStatus = hasConversationalTests
+    ? metrics.conversational.routingAccuracy >= METRIC_THRESHOLDS.ROUTING_ACCURACY &&
+      metrics.conversational.intakeCompleteness >= METRIC_THRESHOLDS.INTAKE_COMPLETENESS &&
+      metrics.conversational.prefillCompleteness >= METRIC_THRESHOLDS.INTAKE_COMPLETENESS &&
+      metrics.conversational.compliancePassRate === METRIC_THRESHOLDS.COMPLIANCE_PASS_RATE
       ? '✅ All conversational metrics meet target thresholds'
       : '❌ Some conversational metrics below thresholds'
+    : 'No conversational tests run'
 
-  // Policy flow metrics
-  const policyIntakeStatus =
-    metrics.policy.intakeCompleteness >= METRIC_THRESHOLDS.INTAKE_COMPLETENESS
-      ? STATUS.PASS
-      : STATUS.FAIL
-  const policyDiscountStatus =
-    metrics.policy.discountAccuracy >= METRIC_THRESHOLDS.DISCOUNT_ACCURACY
-      ? STATUS.PASS
-      : STATUS.FAIL
-  const policyPitchStatus =
-    metrics.policy.pitchClarity >= METRIC_THRESHOLDS.PITCH_CLARITY ? STATUS.PASS : STATUS.FAIL
-  const policyComplianceStatus =
-    metrics.policy.compliancePassRate === METRIC_THRESHOLDS.COMPLIANCE_PASS_RATE
-      ? STATUS.PASS
-      : STATUS.FAIL
+  // Check if policy tests were run
+  const hasPolicyTests = metrics.policy.testCount > 0
 
-  const policyOverallStatus =
-    metrics.policy.intakeCompleteness >= METRIC_THRESHOLDS.INTAKE_COMPLETENESS &&
-    metrics.policy.discountAccuracy >= METRIC_THRESHOLDS.DISCOUNT_ACCURACY &&
-    metrics.policy.pitchClarity >= METRIC_THRESHOLDS.PITCH_CLARITY &&
-    metrics.policy.compliancePassRate === METRIC_THRESHOLDS.COMPLIANCE_PASS_RATE
+  // Policy flow metrics (show '-' if no tests)
+  const policyIntakeStatus = hasPolicyTests
+    ? metrics.policy.intakeCompleteness >= METRIC_THRESHOLDS.INTAKE_COMPLETENESS
+      ? STATUS.PASS
+      : STATUS.FAIL
+    : '-'
+  const policyDiscountStatus = hasPolicyTests
+    ? metrics.policy.discountAccuracy >= METRIC_THRESHOLDS.DISCOUNT_ACCURACY
+      ? STATUS.PASS
+      : STATUS.FAIL
+    : '-'
+  const policyPitchStatus = hasPolicyTests
+    ? metrics.policy.pitchClarity >= METRIC_THRESHOLDS.PITCH_CLARITY
+      ? STATUS.PASS
+      : STATUS.FAIL
+    : '-'
+  const policyComplianceStatus = hasPolicyTests
+    ? metrics.policy.compliancePassRate === METRIC_THRESHOLDS.COMPLIANCE_PASS_RATE
+      ? STATUS.PASS
+      : STATUS.FAIL
+    : '-'
+
+  const policyOverallStatus = hasPolicyTests
+    ? metrics.policy.intakeCompleteness >= METRIC_THRESHOLDS.INTAKE_COMPLETENESS &&
+      metrics.policy.discountAccuracy >= METRIC_THRESHOLDS.DISCOUNT_ACCURACY &&
+      metrics.policy.pitchClarity >= METRIC_THRESHOLDS.PITCH_CLARITY &&
+      metrics.policy.compliancePassRate === METRIC_THRESHOLDS.COMPLIANCE_PASS_RATE
       ? '✅ All policy metrics meet target thresholds'
       : '❌ Some policy metrics below thresholds'
+    : 'No policy tests run'
 
   return {
     // Conversational flow
-    convRoutingAccuracy: metrics.conversational.routingAccuracy.toString(),
-    convIntakeCompleteness: metrics.conversational.intakeCompleteness.toString(),
-    convPrefillCompleteness: metrics.conversational.prefillCompleteness.toString(),
-    convCompliancePassRate: metrics.conversational.compliancePassRate.toString(),
+    convRoutingAccuracy: hasConversationalTests
+      ? `${metrics.conversational.routingAccuracy}%`
+      : '-',
+    convIntakeCompleteness: hasConversationalTests
+      ? `${metrics.conversational.intakeCompleteness}%`
+      : '-',
+    convPrefillCompleteness: hasConversationalTests
+      ? `${metrics.conversational.prefillCompleteness}%`
+      : '-',
+    convCompliancePassRate: hasConversationalTests
+      ? `${metrics.conversational.compliancePassRate}%`
+      : '-',
     convTestCount: metrics.conversational.testCount.toString(),
     convRoutingStatus,
     convIntakeStatus,
@@ -154,10 +180,10 @@ function buildFlowSpecificMetricsReplacements(metrics: OverallMetrics): Record<s
     convComplianceStatus,
     convOverallStatus,
     // Policy flow
-    policyIntakeCompleteness: metrics.policy.intakeCompleteness.toString(),
-    policyDiscountAccuracy: metrics.policy.discountAccuracy.toString(),
-    policyPitchClarity: metrics.policy.pitchClarity.toString(),
-    policyCompliancePassRate: metrics.policy.compliancePassRate.toString(),
+    policyIntakeCompleteness: hasPolicyTests ? `${metrics.policy.intakeCompleteness}%` : '-',
+    policyDiscountAccuracy: hasPolicyTests ? `${metrics.policy.discountAccuracy}%` : '-',
+    policyPitchClarity: hasPolicyTests ? `${metrics.policy.pitchClarity}%` : '-',
+    policyCompliancePassRate: hasPolicyTests ? `${metrics.policy.compliancePassRate}%` : '-',
     policyTestCount: metrics.policy.testCount.toString(),
     policyIntakeStatus,
     policyDiscountStatus,

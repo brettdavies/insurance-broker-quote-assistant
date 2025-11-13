@@ -22,10 +22,10 @@
 
 | Metric | Target | Actual | Status |
 |--------|--------|--------|--------|
-| Routing Accuracy | ≥90% | {{convRoutingAccuracy}}% | {{convRoutingStatus}} |
-| Intake Completeness | ≥95% | {{convIntakeCompleteness}}% | {{convIntakeStatus}} |
-| Prefill Completeness | ≥95% | {{convPrefillCompleteness}}% | {{convPrefillStatus}} |
-| Compliance Pass Rate | 100% | {{convCompliancePassRate}}% | {{convComplianceStatus}} |
+| Routing Accuracy | ≥90% | {{convRoutingAccuracy}} | {{convRoutingStatus}} |
+| Intake Completeness | ≥95% | {{convIntakeCompleteness}} | {{convIntakeStatus}} |
+| Prefill Completeness | ≥95% | {{convPrefillCompleteness}} | {{convPrefillStatus}} |
+| Compliance Pass Rate | 100% | {{convCompliancePassRate}} | {{convComplianceStatus}} |
 
 **Conversational Flow Status:** {{convOverallStatus}}
 
@@ -35,10 +35,10 @@
 
 | Metric | Target | Actual | Status |
 |--------|--------|--------|--------|
-| Intake Completeness | ≥95% | {{policyIntakeCompleteness}}% | {{policyIntakeStatus}} |
-| Discount Accuracy | ≥90% | {{policyDiscountAccuracy}}% | {{policyDiscountStatus}} |
-| Savings Pitch Clarity | ≥85% | {{policyPitchClarity}}% | {{policyPitchStatus}} |
-| Compliance Pass Rate | 100% | {{policyCompliancePassRate}}% | {{policyComplianceStatus}} |
+| Intake Completeness | ≥95% | {{policyIntakeCompleteness}} | {{policyIntakeStatus}} |
+| Discount Accuracy | ≥90% | {{policyDiscountAccuracy}} | {{policyDiscountStatus}} |
+| Savings Pitch Clarity | ≥85% | {{policyPitchClarity}} | {{policyPitchStatus}} |
+| Compliance Pass Rate | 100% | {{policyCompliancePassRate}} | {{policyComplianceStatus}} |
 
 **Policy Flow Status:** {{policyOverallStatus}}
 
