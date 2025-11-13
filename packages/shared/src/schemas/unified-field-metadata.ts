@@ -2,6 +2,68 @@ import type { PolicySummary } from './policy-summary'
 import type { UserProfile } from './user-profile'
 
 /**
+ * Inference Rule for Field-to-Field Inferences
+ *
+ * Defines how one field's value can deterministically infer another field's value.
+ * Used by the InferenceEngine to derive additional fields from known fields.
+ *
+ * **Architecture Context:**
+ * Part of the "known vs inferred pills" architecture (Epic 4: Field Extraction Bulletproofing).
+ * Field-to-field inferences complement text pattern inferences to improve extraction accuracy.
+ *
+ * **Usage Example:**
+ * ```typescript
+ * // productType field has inference rule for ownsHome
+ * {
+ *   targetField: 'ownsHome',
+ *   inferValue: (productType) => {
+ *     if (productType === 'renters') return false  // Renters don't own
+ *     if (productType === 'home') return true       // Home insurance requires ownership
+ *     return undefined                              // No inference for other products
+ *   },
+ *   confidence: 'high',
+ *   reasoning: 'Renters insurance implies tenant status; home insurance implies ownership'
+ * }
+ * ```
+ *
+ * @see packages/shared/src/config/text-pattern-inferences.ts - Text pattern inferences
+ * @see docs/architecture/field-extraction-bulletproofing.md - Architecture documentation
+ */
+export interface InferenceRule {
+  /**
+   * Target field name to infer (must match field name in UserProfile or PolicySummary).
+   * @example 'ownsHome', 'householdSize', 'cleanRecord3Yr'
+   */
+  targetField: string
+
+  /**
+   * Function to compute inferred value from source field value.
+   * Return `undefined` if no inference can be made for the given source value.
+   *
+   * @param sourceValue - The value of the source field (field containing this inference rule)
+   * @returns Inferred value for target field, or undefined if no inference possible
+   *
+   * @example (productType) => productType === 'renters' ? false : undefined
+   */
+  // biome-ignore lint/suspicious/noExplicitAny: Generic inference function must accept any field type (string, number, boolean)
+  inferValue: (sourceValue: any) => any
+
+  /**
+   * Confidence level for this inference.
+   * Affects UI display (high = bold, medium = normal, low = italic).
+   */
+  confidence: 'high' | 'medium' | 'low'
+
+  /**
+   * Human-readable explanation of why this inference is made.
+   * Shown in UI tooltip to help broker understand inference logic.
+   *
+   * @example "Renters insurance implies tenant status; home insurance implies ownership"
+   */
+  reasoning: string
+}
+
+/**
  * Unified Field Metadata Schema
  *
  * Single source of truth for all field metadata across both intake and policy flows.
@@ -23,6 +85,7 @@ export interface UnifiedFieldMetadata {
   nestedFields?: Record<string, UnifiedFieldMetadata> // For nested objects (coverageLimits, deductibles, etc.)
   min?: number // Minimum value for numeric fields
   max?: number // Maximum value for numeric fields
+  infers?: InferenceRule[] // Optional field-to-field inference rules (part of known vs inferred pills architecture)
 }
 
 /**

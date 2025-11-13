@@ -215,6 +215,20 @@ export const sharedFields: Record<string, UnifiedFieldMetadata> = {
     fieldType: 'string',
     aliases: ['product', 'productLine'],
     flows: ['intake', 'policy'],
+    // Field-to-field inference: productType → ownsHome
+    // Part of known vs inferred pills architecture (Epic 4: Field Extraction Bulletproofing)
+    infers: [
+      {
+        targetField: 'ownsHome',
+        inferValue: (productType: string) => {
+          if (productType === 'renters') return false // Renters don't own their home
+          if (productType === 'home') return true // Home insurance requires ownership
+          return undefined // No inference for other product types (auto, umbrella, etc.)
+        },
+        confidence: 'high',
+        reasoning: 'Renters insurance implies tenant status; home insurance implies ownership',
+      },
+    ],
   },
 
   premiums: {
