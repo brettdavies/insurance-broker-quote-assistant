@@ -76,15 +76,15 @@ export async function getPrefillPacket(
  */
 export function generatePrefillFilename(prefill: PrefillPacket): string {
   // Sanitize name: Remove spaces, special characters (keep only alphanumeric and underscores), convert to lowercase, limit length to 50 characters
-  const sanitizedName = prefill.name
-    ? prefill.name
+  const sanitizedName = prefill.profile.name
+    ? prefill.profile.name
         .replace(/[^a-zA-Z0-9_]/g, '_')
         .toLowerCase()
         .slice(0, 50)
     : 'unknown'
 
-  const state = (prefill.state || 'unknown').toLowerCase()
-  const productType = prefill.productType || 'unknown'
+  const state = (prefill.profile.state || 'unknown').toLowerCase()
+  const productType = prefill.profile.productType || 'unknown'
 
   // Use current date in YYYYMMDD format
   const now = new Date()

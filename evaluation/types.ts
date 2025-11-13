@@ -21,6 +21,12 @@ import type { TestMetrics } from './services/metrics-calculator'
  *
  * Represents a single test case for evaluation harness.
  * Uses shared types for expected values to ensure type safety.
+ *
+ * FLOW-SPECIFIC FIELDS:
+ * - Conversational: input, expectedProfile, expectedRoute, expectedDisclaimers
+ * - Policy: policyInput, expectedPolicy, expectedOpportunities, expectedBundleOptions, expectedDeductibleOptimizations, expectedDisclaimers
+ *
+ * Note: expectedOpportunities is IGNORED for conversational tests (not required by PEAK6 spec)
  */
 export interface TestCase {
   id: string
@@ -30,16 +36,21 @@ export interface TestCase {
   carrier: string
   state: string
   product: string | string[]
-  // Conversational test case fields
-  input?: string
-  expectedProfile?: UserProfile
-  expectedRoute?: RouteDecision
-  expectedOpportunities?: Opportunity[]
-  // Policy test case fields
-  policyInput?: string | PolicySummary
-  expectedPolicy?: PolicySummary
-  expectedBundleOptions?: BundleOption[]
-  expectedDeductibleOptimizations?: DeductibleOptimization[]
+
+  // Conversational test case fields (PEAK6 spec requirements)
+  input?: string // User message for conversational intake
+  expectedProfile?: UserProfile // Expected extracted fields
+  expectedRoute?: RouteDecision // Expected routing decision
+  expectedDisclaimers?: string[] // Expected compliance disclaimers (substrings to match)
+
+  // Policy test case fields (PEAK6 spec requirements)
+  policyInput?: string | PolicySummary // Policy document or structured policy data
+  expectedPolicy?: PolicySummary // Expected parsed policy
+  expectedOpportunities?: Opportunity[] // Expected discount opportunities (POLICY ONLY - ignored for conversational)
+  expectedBundleOptions?: BundleOption[] // Expected bundle opportunities (POLICY ONLY)
+  expectedDeductibleOptimizations?: DeductibleOptimization[] // Expected deductible optimizations (POLICY ONLY)
+
+  // Common fields
   missingFields?: string[]
   notes?: string
 }

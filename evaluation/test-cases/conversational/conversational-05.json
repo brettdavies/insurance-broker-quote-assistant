@@ -33,19 +33,12 @@
     "confidence": 0.92,
     "rationale": "State Farm offers both auto and home insurance in Illinois and provides bundle discounts."
   },
-  "expectedOpportunities": [
-    {
-      "discount": "Multi-Policy Bundle",
-      "percentage": 17,
-      "annualSavings": 425,
-      "requires": ["ownsHome", "existingPolicies"]
-    },
-    {
-      "discount": "Safe Driver",
-      "percentage": 12,
-      "annualSavings": 300,
-      "requires": ["cleanRecord3Yr"]
-    }
+  "expectedDisclaimers": [
+    "Rates subject to underwriting and approval",
+    "Actual rates may vary based on complete application",
+    "Must be reviewed and finalized by a licensed insurance agent",
+    "Not a binding quote",
+    "Illinois: Rates are estimates only",
+    "Auto Insurance: Coverage limits and deductibles affect premium"
   ]
 }
-

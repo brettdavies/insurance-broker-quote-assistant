@@ -23,13 +23,12 @@
     "confidence": 0.89,
     "rationale": "State Farm offers home insurance in Florida with hurricane coverage options."
   },
-  "expectedOpportunities": [
-    {
-      "discount": "Home Security",
-      "percentage": 10,
-      "annualSavings": 235,
-      "requires": ["homeSecurity"]
-    }
+  "expectedDisclaimers": [
+    "Rates subject to underwriting and approval",
+    "Actual rates may vary based on complete application",
+    "Must be reviewed and finalized by a licensed insurance agent",
+    "Not a binding quote",
+    "Florida: Quote estimates are preliminary",
+    "Home Insurance: Property details and location impact rates"
   ]
 }
-

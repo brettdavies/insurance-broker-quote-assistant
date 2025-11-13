@@ -1,8 +1,9 @@
 /**
  * Metrics Calculator
  *
- * Calculates evaluation metrics for test cases: routing accuracy, intake completeness,
- * pitch clarity, and compliance pass rate.
+ * Calculates evaluation metrics for test cases with flow-specific requirements:
+ * - Conversational: routing, intake completeness, prefill, compliance
+ * - Policy: intake completeness, discount accuracy, pitch clarity, compliance
  */
 
 import type {
@@ -15,11 +16,12 @@ import type {
 import type { TestCase } from '../types'
 
 export interface TestMetrics {
-  routingAccuracy: number
-  intakeCompleteness: number
-  discountAccuracy: number
-  pitchClarity: number
-  compliancePassed: boolean
+  routingAccuracy: number // Conversational only (N/A for policy = 100)
+  intakeCompleteness: number // Both flows
+  discountAccuracy: number // Policy only (N/A for conversational = 100)
+  pitchClarity: number // Policy only (N/A for conversational = 0)
+  prefillCompleteness: number // Conversational only (N/A for policy = 100)
+  compliancePassed: boolean // Both flows
 }
 
 /**
@@ -30,7 +32,9 @@ export function calculateMetrics(testCase: TestCase, actualResponse: unknown): T
     return {
       routingAccuracy: 0,
       intakeCompleteness: 0,
+      discountAccuracy: 0,
       pitchClarity: 0,
+      prefillCompleteness: 0,
       compliancePassed: false,
     }
   }
@@ -43,32 +47,33 @@ export function calculateMetrics(testCase: TestCase, actualResponse: unknown): T
 
 /**
  * Calculate metrics for conversational intake test case
+ * Per PEAK6 spec: conversational flow does NOT require pitch or discount detection
  */
 function calculateConversationalMetrics(testCase: TestCase, response: IntakeResult): TestMetrics {
   const routingAccuracy = calculateRoutingAccuracy(testCase.expectedRoute, response.route)
   const intakeCompleteness = calculateFieldCompleteness(testCase.expectedProfile, response.profile)
-  const discountAccuracy = calculateDiscountAccuracy(
-    testCase.expectedOpportunities,
-    response.opportunities
-  )
-  const pitchClarity = scorePitchClarity(response.pitch || '', response.opportunities || [])
-  const compliancePassed = response.complianceValidated === true
+  const prefillCompleteness = calculatePrefillCompleteness(response.prefill)
+
+  // Compliance check: both complianceValidated AND expected disclaimers must be present
+  const compliancePassed =
+    response.complianceValidated === true &&
+    verifyDisclaimers(testCase.expectedDisclaimers, response.disclaimers)
 
   return {
     routingAccuracy,
     intakeCompleteness,
-    discountAccuracy,
-    pitchClarity,
+    discountAccuracy: 100, // N/A for conversational (not required by spec)
+    pitchClarity: 0, // N/A for conversational (not required by spec)
+    prefillCompleteness,
     compliancePassed,
   }
 }
 
 /**
  * Calculate metrics for policy analysis test case
+ * Per PEAK6 spec: policy flow DOES require pitch generation and discount detection
  */
 function calculatePolicyMetrics(testCase: TestCase, response: PolicyAnalysisResult): TestMetrics {
-  // Routing accuracy is N/A for policy analysis
-  const routingAccuracy = 100
   const intakeCompleteness = calculateFieldCompleteness(
     testCase.expectedPolicy,
     response.currentPolicy
@@ -78,13 +83,18 @@ function calculatePolicyMetrics(testCase: TestCase, response: PolicyAnalysisResu
     response.opportunities
   )
   const pitchClarity = scorePitchClarity(response.pitch || '', response.opportunities || [])
-  const compliancePassed = response.complianceValidated === true
+
+  // Compliance check: both complianceValidated AND expected disclaimers must be present
+  const compliancePassed =
+    response.complianceValidated === true &&
+    verifyDisclaimers(testCase.expectedDisclaimers, response.disclaimers)
 
   return {
-    routingAccuracy,
+    routingAccuracy: 100, // N/A for policy analysis (not applicable)
     intakeCompleteness,
     discountAccuracy,
     pitchClarity,
+    prefillCompleteness: 100, // N/A for policy (not applicable)
     compliancePassed,
   }
 }
@@ -188,4 +198,57 @@ function scorePitchClarity(pitch: string, opportunities: unknown[]): number {
   if (/\[.*?\]|disc_\w+|cite_\w+/i.test(pitch)) score += 25
 
   return score
+}
+
+/**
+ * Calculate prefill packet completeness
+ * Checks if prefill packet exists and has required structured fields
+ */
+function calculatePrefillCompleteness(prefill: unknown): number {
+  if (!prefill || typeof prefill !== 'object') return 0
+
+  const prefillObj = prefill as Record<string, unknown>
+
+  // Required fields for structured IQuote Pro prefill packet
+  const requiredFields = [
+    'profile', // UserProfile object with complete shopper data
+    'routing', // RouteDecision object with carrier recommendations
+    'missingFields', // Array of missing fields with priorities
+    'disclaimers', // Array of compliance disclaimers
+    'generatedAt', // ISO 8601 timestamp
+  ]
+
+  const presentFields = requiredFields.filter((field) => {
+    const value = prefillObj[field]
+    // Check for both existence and non-empty values
+    if (value === undefined || value === null) return false
+    // Arrays should have length check
+    if (Array.isArray(value)) return true // Empty arrays are valid
+    // Objects should be non-empty
+    if (typeof value === 'object') return Object.keys(value).length > 0
+    return true
+  })
+
+  return Math.round((presentFields.length / requiredFields.length) * 100)
+}
+
+/**
+ * Verify that expected disclaimers are present in actual disclaimers
+ * Uses substring matching to allow for partial matches
+ *
+ * @param expectedDisclaimers - Array of expected disclaimer substrings from test case
+ * @param actualDisclaimers - Array of actual disclaimers from API response
+ * @returns true if all expected disclaimers are present (or no expected disclaimers), false otherwise
+ */
+function verifyDisclaimers(expectedDisclaimers?: string[], actualDisclaimers?: string[]): boolean {
+  // If no expected disclaimers, pass (nothing to verify)
+  if (!expectedDisclaimers || expectedDisclaimers.length === 0) return true
+
+  // If expected disclaimers but no actual disclaimers, fail
+  if (!actualDisclaimers || actualDisclaimers.length === 0) return false
+
+  // Check if all expected disclaimers are present in actual disclaimers (substring matching)
+  return expectedDisclaimers.every((expectedDisclaimer) =>
+    actualDisclaimers.some((actualDisclaimer) => actualDisclaimer.includes(expectedDisclaimer))
+  )
 }

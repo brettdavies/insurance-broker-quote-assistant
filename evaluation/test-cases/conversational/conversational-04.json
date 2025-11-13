@@ -21,13 +21,12 @@
     "confidence": 0.87,
     "rationale": "GEICO offers auto insurance in New York and matches eligibility criteria."
   },
-  "expectedOpportunities": [
-    {
-      "discount": "Safe Driver",
-      "percentage": 10,
-      "annualSavings": 120,
-      "requires": ["cleanRecord3Yr"]
-    }
+  "expectedDisclaimers": [
+    "Rates subject to underwriting and approval",
+    "Actual rates may vary based on complete application",
+    "Must be reviewed and finalized by a licensed insurance agent",
+    "Not a binding quote",
+    "New York: Quote estimates are non-binding",
+    "Auto Insurance: Coverage limits and deductibles affect premium"
   ]
 }
-

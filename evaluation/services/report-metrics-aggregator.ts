@@ -3,6 +3,7 @@
  *
  * Aggregates metrics across multiple test results for report generation.
  * Follows SRP (Single Responsibility Principle).
+ * Enhanced with flow-specific metrics for conversational vs policy tests.
  */
 
 import type { DecisionTrace, IntakeResult, PolicyAnalysisResult } from '@repo/shared'
@@ -19,6 +20,21 @@ export interface OverallMetrics {
   discountAccuracyAverage: number
   pitchClarityAverage: number
   compliancePassRate: number
+  // Flow-specific metrics (per PEAK6 spec)
+  conversational: {
+    routingAccuracy: number
+    intakeCompleteness: number
+    prefillCompleteness: number
+    compliancePassRate: number
+    testCount: number
+  }
+  policy: {
+    intakeCompleteness: number
+    discountAccuracy: number
+    pitchClarity: number
+    compliancePassRate: number
+    testCount: number
+  }
 }
 
 /**
@@ -41,6 +57,7 @@ export interface TokenUsageData {
  */
 export function calculateOverallMetrics(results: TestResult[]): OverallMetrics {
   const conversationalResults = filterByTestType(results, 'conversational')
+  const policyResults = filterByTestType(results, 'policy')
 
   // Routing accuracy (conversational only)
   const routingAccuracies = conversationalResults
@@ -52,12 +69,12 @@ export function calculateOverallMetrics(results: TestResult[]): OverallMetrics {
   const intakeCompletenesses = results.map((r) => r.metrics?.intakeCompleteness || 0)
   const intakeCompleteness = calculateAverage(intakeCompletenesses)
 
-  // Discount accuracy (all results)
-  const discountAccuracies = results.map((r) => r.metrics?.discountAccuracy || 0)
+  // Discount accuracy (policy only - filter out N/A values)
+  const discountAccuracies = policyResults.map((r) => r.metrics?.discountAccuracy || 0)
   const discountAccuracyAverage = calculateAverage(discountAccuracies)
 
-  // Pitch clarity (all results)
-  const pitchClarities = results.map((r) => r.metrics?.pitchClarity || 0)
+  // Pitch clarity (policy only - filter out N/A values)
+  const pitchClarities = policyResults.map((r) => r.metrics?.pitchClarity || 0)
   const pitchClarityAverage = calculateAverage(pitchClarities)
 
   // Compliance pass rate (all results)
@@ -65,12 +82,52 @@ export function calculateOverallMetrics(results: TestResult[]): OverallMetrics {
   const compliancePassRate =
     results.length > 0 ? Math.round((compliancePassed / results.length) * 100) : 0
 
+  // Conversational-specific metrics
+  const convRoutingAccuracies = conversationalResults.map((r) => r.metrics?.routingAccuracy || 0)
+  const convIntakeCompletenesses = conversationalResults.map(
+    (r) => r.metrics?.intakeCompleteness || 0
+  )
+  const convPrefillCompletenesses = conversationalResults.map(
+    (r) => r.metrics?.prefillCompleteness || 0
+  )
+  const convCompliancePassed = conversationalResults.filter(
+    (r) => r.metrics?.compliancePassed === true
+  ).length
+  const convCompliancePassRate =
+    conversationalResults.length > 0
+      ? Math.round((convCompliancePassed / conversationalResults.length) * 100)
+      : 0
+
+  // Policy-specific metrics
+  const policyIntakeCompletenesses = policyResults.map((r) => r.metrics?.intakeCompleteness || 0)
+  const policyDiscountAccuracies = policyResults.map((r) => r.metrics?.discountAccuracy || 0)
+  const policyPitchClarities = policyResults.map((r) => r.metrics?.pitchClarity || 0)
+  const policyCompliancePassed = policyResults.filter(
+    (r) => r.metrics?.compliancePassed === true
+  ).length
+  const policyCompliancePassRate =
+    policyResults.length > 0 ? Math.round((policyCompliancePassed / policyResults.length) * 100) : 0
+
   return {
     routingAccuracy,
     intakeCompleteness,
     discountAccuracyAverage,
     pitchClarityAverage,
     compliancePassRate,
+    conversational: {
+      routingAccuracy: calculateAverage(convRoutingAccuracies),
+      intakeCompleteness: calculateAverage(convIntakeCompletenesses),
+      prefillCompleteness: calculateAverage(convPrefillCompletenesses),
+      compliancePassRate: convCompliancePassRate,
+      testCount: conversationalResults.length,
+    },
+    policy: {
+      intakeCompleteness: calculateAverage(policyIntakeCompletenesses),
+      discountAccuracy: calculateAverage(policyDiscountAccuracies),
+      pitchClarity: calculateAverage(policyPitchClarities),
+      compliancePassRate: policyCompliancePassRate,
+      testCount: policyResults.length,
+    },
   }
 }
 

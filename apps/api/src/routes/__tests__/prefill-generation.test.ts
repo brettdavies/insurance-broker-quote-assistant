@@ -38,10 +38,11 @@ describe('POST /api/generate-prefill', () => {
 
     const prefill = (await res.json()) as PrefillPacket
 
-    // Check required fields
-    expect(prefill.state).toBe('CA')
-    expect(prefill.productType).toBe('auto')
-    expect(prefill.routingDecision).toBeDefined()
+    // Check required fields - using structured format
+    expect(prefill.profile.state).toBe('CA')
+    expect(prefill.profile.productType).toBe('auto')
+    expect(prefill.routing).toBeDefined()
+    expect(prefill.routing.primaryCarrier).toBeDefined()
     expect(prefill.missingFields).toBeDefined()
     expect(Array.isArray(prefill.missingFields)).toBe(true)
     expect(prefill.disclaimers).toBeDefined()
@@ -70,9 +71,9 @@ describe('POST /api/generate-prefill', () => {
     const res = await app.fetch(req)
     const prefill = (await res.json()) as PrefillPacket
 
-    expect(prefill.name).toBe('Jane Smith')
-    expect(prefill.email).toBe('jane@example.com')
-    expect(prefill.phone).toBe('555-5678')
+    expect(prefill.profile.name).toBe('Jane Smith')
+    expect(prefill.profile.email).toBe('jane@example.com')
+    expect(prefill.profile.phone).toBe('555-5678')
   })
 
   it('should include routing decision in prefill packet', async () => {
@@ -93,9 +94,10 @@ describe('POST /api/generate-prefill', () => {
     const res = await app.fetch(req)
     const prefill = (await res.json()) as PrefillPacket
 
-    expect(prefill.routingDecision).toBeDefined()
-    expect(typeof prefill.routingDecision).toBe('string')
-    expect(prefill.routingDecision.length).toBeGreaterThan(0)
+    expect(prefill.routing).toBeDefined()
+    expect(typeof prefill.routing).toBe('object')
+    expect(prefill.routing.primaryCarrier).toBeDefined()
+    expect(prefill.routing.rationale).toBeDefined()
   })
 
   it('should flag missing fields with priority indicators', async () => {
@@ -183,19 +185,27 @@ describe('POST /api/generate-prefill', () => {
     const res = await app.fetch(req)
     const prefill = (await res.json()) as PrefillPacket
 
-    // Validate structure matches PrefillPacket schema
-    expect(prefill).toHaveProperty('state')
-    expect(prefill).toHaveProperty('productType')
-    expect(prefill).toHaveProperty('routingDecision')
+    // Validate structure matches PrefillPacket schema (structured format)
+    expect(prefill).toHaveProperty('profile')
+    expect(prefill).toHaveProperty('routing')
     expect(prefill).toHaveProperty('missingFields')
     expect(prefill).toHaveProperty('disclaimers')
     expect(prefill).toHaveProperty('generatedAt')
     expect(prefill).toHaveProperty('reviewedByLicensedAgent')
 
-    // Validate types
-    expect(typeof prefill.state).toBe('string')
-    expect(['auto', 'home', 'renters', 'umbrella']).toContain(prefill.productType)
-    expect(typeof prefill.routingDecision).toBe('string')
+    // Validate nested profile object
+    expect(typeof prefill.profile).toBe('object')
+    expect(typeof prefill.profile.state).toBe('string')
+    expect(prefill.profile.productType).toBeDefined()
+    if (prefill.profile.productType) {
+      expect(['auto', 'home', 'renters', 'umbrella']).toContain(prefill.profile.productType)
+    }
+
+    // Validate nested routing object
+    expect(typeof prefill.routing).toBe('object')
+    expect(prefill.routing.primaryCarrier).toBeDefined()
+
+    // Validate other types
     expect(Array.isArray(prefill.missingFields)).toBe(true)
     expect(Array.isArray(prefill.disclaimers)).toBe(true)
     expect(typeof prefill.generatedAt).toBe('string')
@@ -239,8 +249,8 @@ describe('POST /api/generate-prefill', () => {
     expect(res.status).toBe(200)
 
     const prefill = (await res.json()) as PrefillPacket
-    expect(prefill.state).toBe('XX')
-    expect(prefill.productType).toBe('auto')
+    expect(prefill.profile.state).toBe('XX')
+    expect(prefill.profile.productType).toBe('auto')
   })
 })
 
@@ -275,9 +285,11 @@ describe('Prefill generation integrated with intake endpoint', () => {
     if (result.route && result.profile?.state && result.profile?.productType) {
       expect(result.prefill).toBeDefined()
       if (result.prefill) {
-        expect(result.prefill.state).toBeDefined()
-        expect(result.prefill.productType).toBeDefined()
-        expect(result.prefill.routingDecision).toBeDefined()
+        expect(result.prefill.profile).toBeDefined()
+        expect(result.prefill.profile.state).toBeDefined()
+        expect(result.prefill.profile.productType).toBeDefined()
+        expect(result.prefill.routing).toBeDefined()
+        expect(result.prefill.routing.primaryCarrier).toBeDefined()
       }
     } else {
       // Prefill may be undefined if state/productType not extracted - this is expected behavior
@@ -337,11 +349,13 @@ describe('Prefill generation integrated with intake endpoint', () => {
 
     if (result.prefill) {
       // Should include extracted profile data
-      expect(result.prefill.state).toBeDefined()
-      expect(result.prefill.productType).toBeDefined()
+      expect(result.prefill.profile).toBeDefined()
+      expect(result.prefill.profile.state).toBeDefined()
+      expect(result.prefill.profile.productType).toBeDefined()
 
       // Should include routing decision
-      expect(result.prefill.routingDecision).toBeDefined()
+      expect(result.prefill.routing).toBeDefined()
+      expect(result.prefill.routing.primaryCarrier).toBeDefined()
 
       // Should include missing fields
       expect(result.prefill.missingFields).toBeDefined()

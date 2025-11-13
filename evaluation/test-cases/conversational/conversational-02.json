@@ -22,14 +22,12 @@
     "confidence": 0.85,
     "rationale": "Progressive offers home insurance in Texas and matches eligibility criteria."
   },
-  "expectedOpportunities": [
-    {
-      "discount": "Home Quote Discount",
-      "percentage": 5,
-      "annualSavings": 65,
-      "requires": []
-    }
-  ],
-  "missingFields": ["state", "productType"]
+  "expectedDisclaimers": [
+    "Rates subject to underwriting and approval",
+    "Actual rates may vary based on complete application",
+    "Must be reviewed and finalized by a licensed insurance agent",
+    "Not a binding quote",
+    "Texas: Rates are estimates and may vary",
+    "Home Insurance: Property details and location impact rates"
+  ]
 }
-

@@ -21,13 +21,13 @@
     "confidence": 0.86,
     "rationale": "Progressive offers auto insurance in California and accepts drivers age 25+."
   },
-  "expectedOpportunities": [
-    {
-      "discount": "Safe Driver",
-      "percentage": 4,
-      "annualSavings": 60,
-      "requires": ["cleanRecord3Yr"]
-    }
+  "expectedDisclaimers": [
+    "Rates subject to underwriting and approval",
+    "Actual rates may vary based on complete application",
+    "Must be reviewed and finalized by a licensed insurance agent",
+    "Not a binding quote",
+    "California: This quote is an estimate only",
+    "Auto Insurance: Coverage limits and deductibles affect premium"
   ]
 }
 

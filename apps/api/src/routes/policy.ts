@@ -731,6 +731,7 @@ export function createPolicyRoute(extractor: ConversationalExtractor, llmProvide
         deductibleOptimizations: rawAnalysisResult.deductibleOptimizations,
         pitch,
         complianceValidated: complianceResult.passed,
+        disclaimers: complianceResult.disclaimers,
         trace: decisionTrace,
       }
 

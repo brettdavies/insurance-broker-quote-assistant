@@ -108,6 +108,7 @@ export const policyAnalysisResultSchema = z.object({
   deductibleOptimizations: z.array(deductibleOptimizationSchema), // Deductible trade-offs
   pitch: z.string(), // Agent-ready savings pitch with "because" rationales
   complianceValidated: z.boolean(), // Compliance filter result
+  disclaimers: z.array(z.string()).optional(), // Compliance disclaimers selected based on state/product
   trace: decisionTraceSchema.optional(), // Decision trace for audit logging
 })
 

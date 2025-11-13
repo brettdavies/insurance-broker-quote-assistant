@@ -248,18 +248,23 @@ describe('generatePrefillPacket', () => {
     const missingFields = getMissingFields(profile)
     const prefill = generatePrefillPacket(profile, mockRoute, missingFields, mockDisclaimers)
 
-    expect(prefill.name).toBe('John Doe')
-    expect(prefill.email).toBe('john@example.com')
-    expect(prefill.phone).toBe('555-1234')
-    expect(prefill.address).toBe('90210')
-    expect(prefill.state).toBe('CA')
-    expect(prefill.productType).toBe('auto')
-    expect(prefill.carrier).toBe('GEICO')
-    expect(prefill.vehicles).toBe(2)
-    expect(prefill.drivers).toBe(1)
-    expect(prefill.vins).toBe('ABC123 DEF456')
-    expect(prefill.garage).toBe('attached')
-    expect(prefill.routingDecision).toBe(mockRoute.rationale)
+    // Validate nested profile object
+    expect(prefill.profile.name).toBe('John Doe')
+    expect(prefill.profile.email).toBe('john@example.com')
+    expect(prefill.profile.phone).toBe('555-1234')
+    expect(prefill.profile.zip).toBe('90210')
+    expect(prefill.profile.state).toBe('CA')
+    expect(prefill.profile.productType).toBe('auto')
+    expect(prefill.profile.vehicles).toBe(2)
+    expect(prefill.profile.drivers).toBe(1)
+    expect(prefill.profile.vins).toBe('ABC123 DEF456')
+    expect(prefill.profile.garage).toBe('attached')
+
+    // Validate nested routing object
+    expect(prefill.routing.primaryCarrier).toBe('GEICO')
+    expect(prefill.routing.rationale).toBe(mockRoute.rationale)
+
+    // Validate top-level fields
     expect(prefill.disclaimers).toEqual(mockDisclaimers)
     expect(prefill.reviewedByLicensedAgent).toBe(false)
     expect(prefill.generatedAt).toMatch(/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}/) // ISO 8601 format
@@ -275,11 +280,11 @@ describe('generatePrefillPacket', () => {
     const missingFields = getMissingFields(profile)
     const prefill = generatePrefillPacket(profile, mockRoute, missingFields, mockDisclaimers)
 
-    expect(prefill.state).toBe('CA')
-    expect(prefill.productType).toBe('auto')
-    expect(prefill.vehicles).toBe(1)
-    expect(prefill.name).toBeUndefined()
-    expect(prefill.email).toBeUndefined()
+    expect(prefill.profile.state).toBe('CA')
+    expect(prefill.profile.productType).toBe('auto')
+    expect(prefill.profile.vehicles).toBe(1)
+    expect(prefill.profile.name).toBeUndefined()
+    expect(prefill.profile.email).toBeUndefined()
   })
 
   it('should map home product fields correctly', () => {
@@ -295,10 +300,10 @@ describe('generatePrefillPacket', () => {
     const missingFields = getMissingFields(profile)
     const prefill = generatePrefillPacket(profile, mockRoute, missingFields, mockDisclaimers)
 
-    expect(prefill.propertyType).toBe('single-family')
-    expect(prefill.yearBuilt).toBe(2000)
-    expect(prefill.squareFeet).toBe(2000)
-    expect(prefill.roofType).toBe('asphalt')
+    expect(prefill.profile.propertyType).toBe('single-family')
+    expect(prefill.profile.yearBuilt).toBe(2000)
+    expect(prefill.profile.squareFeet).toBe(2000)
+    expect(prefill.profile.roofType).toBe('asphalt')
   })
 
   it('should include missing fields in prefill packet', () => {

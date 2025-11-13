@@ -197,8 +197,8 @@ export function generateLeadHandoffSummary(
 /**
  * Generate prefill packet from user profile, route decision, missing fields, and disclaimers
  *
- * Maps UserProfile fields to PrefillPacket structure, generates lead handoff summary,
- * formats missing fields with priority indicators, and embeds disclaimers.
+ * Creates structured PrefillPacket with complete profile and routing data.
+ * Uses nested objects for type safety and easier import/export to broker systems.
  *
  * @param profile - User profile with captured shopper data
  * @param route - Route decision from routing engine
@@ -217,44 +217,15 @@ export function generatePrefillPacket(
     throw new Error('State and productType are required for prefill packet generation')
   }
 
-  // Map contact information
+  // Create structured prefill packet
   const prefill: PrefillPacket = {
-    name: profile.name,
-    email: profile.email,
-    phone: profile.phone,
-    address: undefined, // Construct from available fields
-    state: profile.state,
-    productType: profile.productType,
-    carrier: route.primaryCarrier,
-    routingDecision: route.rationale,
-    agentNotes: generateLeadHandoffSummary(profile, route, missingFields),
+    profile, // Complete user profile with all extracted fields
+    routing: route, // Full routing decision with carriers, scores, and rationale
     missingFields: missingFields.length > 0 ? missingFields : [],
-    eligibleCarriers: route.eligibleCarriers,
     disclaimers: disclaimers.length > 0 ? disclaimers : [],
+    agentNotes: generateLeadHandoffSummary(profile, route, missingFields),
     reviewedByLicensedAgent: false,
     generatedAt: new Date().toISOString(),
-  }
-
-  // Construct address from available fields
-  if (profile.zip) {
-    prefill.address = profile.zip
-  }
-
-  // Map product-specific data based on productType (convert null to undefined)
-  if (profile.productType === 'auto') {
-    prefill.vehicles = profile.vehicles ?? undefined
-    prefill.drivers = profile.drivers ?? undefined
-    prefill.vins = profile.vins ?? undefined
-    prefill.garage = profile.garage ?? undefined
-    // Note: primaryUse and annualMileage not in UserProfile schema, leave undefined
-  } else if (profile.productType === 'home') {
-    prefill.yearBuilt = profile.yearBuilt ?? undefined
-    prefill.squareFeet = profile.squareFeet ?? undefined
-    prefill.roofType = profile.roofType ?? undefined
-    prefill.propertyType = profile.propertyType ?? undefined
-    // Note: homeValue and constructionType not in UserProfile schema, leave undefined
-  } else if (profile.productType === 'renters') {
-    // Note: personalProperty and liability not in UserProfile schema, leave undefined
   }
 
   return prefill

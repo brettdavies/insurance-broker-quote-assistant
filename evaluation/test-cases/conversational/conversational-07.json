@@ -21,13 +21,12 @@
     "confidence": 0.9,
     "rationale": "GEICO offers auto insurance in Texas and provides safe driver discounts for clean records."
   },
-  "expectedOpportunities": [
-    {
-      "discount": "Safe Driver",
-      "percentage": 10,
-      "annualSavings": 240,
-      "requires": ["cleanRecord3Yr"]
-    }
+  "expectedDisclaimers": [
+    "Rates subject to underwriting and approval",
+    "Actual rates may vary based on complete application",
+    "Must be reviewed and finalized by a licensed insurance agent",
+    "Not a binding quote",
+    "Texas: Rates are estimates and may vary",
+    "Auto Insurance: Coverage limits and deductibles affect premium"
   ]
 }
-

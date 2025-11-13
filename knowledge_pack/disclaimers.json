@@ -1,0 +1,87 @@
+{
+  "$schema": "./schemas/disclaimers.json",
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedDate": "2025-11-12T00:00:00.000Z",
+    "description": "Base disclaimers and product-specific disclaimers for compliance"
+  },
+  "disclaimers": {
+    "_id": "disclaimers_base",
+    "base": {
+      "_id": "fld_disclaimers_base",
+      "value": [
+        "Rates subject to underwriting and approval",
+        "Actual rates may vary based on complete application",
+        "Must be reviewed and finalized by a licensed insurance agent",
+        "Not a binding quote"
+      ],
+      "_sources": [
+        {
+          "uri": "https://www.naic.org/compliance/",
+          "accessedDate": "2025-11-12T00:00:00.000Z",
+          "confidence": "high",
+          "primary": true
+        }
+      ]
+    },
+    "products": {
+      "_id": "fld_disclaimers_products",
+      "auto": {
+        "_id": "fld_disclaimers_auto",
+        "value": [
+          "Auto Insurance: Coverage limits and deductibles affect premium. Final quote may vary."
+        ],
+        "_sources": [
+          {
+            "uri": "https://www.naic.org/auto-insurance/",
+            "accessedDate": "2025-11-12T00:00:00.000Z",
+            "confidence": "high",
+            "primary": true
+          }
+        ]
+      },
+      "home": {
+        "_id": "fld_disclaimers_home",
+        "value": [
+          "Home Insurance: Property details and location impact rates. Underwriting required."
+        ],
+        "_sources": [
+          {
+            "uri": "https://www.naic.org/home-insurance/",
+            "accessedDate": "2025-11-12T00:00:00.000Z",
+            "confidence": "high",
+            "primary": true
+          }
+        ]
+      },
+      "renters": {
+        "_id": "fld_disclaimers_renters",
+        "value": [
+          "Renters Insurance: Property details and coverage limits affect premium. Underwriting required."
+        ],
+        "_sources": [
+          {
+            "uri": "https://www.naic.org/renters-insurance/",
+            "accessedDate": "2025-11-12T00:00:00.000Z",
+            "confidence": "high",
+            "primary": true
+          }
+        ]
+      },
+      "umbrella": {
+        "_id": "fld_disclaimers_umbrella",
+        "value": [
+          "Umbrella Insurance: Coverage limits and underlying policies affect premium. Underwriting required."
+        ],
+        "_sources": [
+          {
+            "uri": "https://www.naic.org/umbrella-insurance/",
+            "accessedDate": "2025-11-12T00:00:00.000Z",
+            "confidence": "high",
+            "primary": true
+          }
+        ]
+      }
+    }
+  }
+}

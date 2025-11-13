@@ -50,7 +50,7 @@ export function buildTraceSection(
   sections.push(buildExtractionSection(trace))
   sections.push(buildRoutingSection(trace))
   sections.push(buildDiscountOpportunitiesSection(testResult))
-  sections.push(buildComplianceSection(trace))
+  sections.push(buildComplianceSection(trace, testResult))
   sections.push(buildRulesConsultedSection(trace))
   sections.push(buildOtherFieldsSection(trace))
 
@@ -191,70 +191,44 @@ function buildDiscountOpportunitiesSection(testResult?: TestResult): string {
 
   if (!opportunities || opportunities.length === 0) return ''
 
-  const sections: string[] = []
-  sections.push('#### Discount Opportunities\n\n')
-  sections.push(
-    `Found ${opportunities.length} discount ${opportunities.length === 1 ? 'opportunity' : 'opportunities'}:\n\n`
-  )
-
-  for (const opp of opportunities) {
-    sections.push(buildSingleDiscountOpportunity(opp))
-  }
-
-  return sections.join('\n')
-}
-
-/**
- * Build single discount opportunity details
- */
-function buildSingleDiscountOpportunity(opp: DiscountOpportunity): string {
-  const sections: string[] = []
-  const eligible = opp.missingRequirements.length === 0
-  const status = eligible ? '✅ Eligible' : '❌ Not Eligible'
-
-  sections.push(`**${opp.discountName}** - ${status}\n\n`)
-  sections.push(`- **Discount:** ${opp.percentage}%\n`)
-  sections.push(`- **Annual Savings:** $${opp.annualSavings}`)
-
-  if (opp.annualSavings === 0) {
-    sections.push(' (requires premium data)\n')
-  } else {
-    sections.push('\n')
-  }
-
-  sections.push(`- **Stackable:** ${opp.stackable ? 'Yes' : 'No'}\n`)
-
-  // Eligibility rationale
-  if (eligible) {
-    if (opp.metRequirements && opp.metRequirements.length > 0) {
-      sections.push(`- **Eligibility:** ${opp.metRequirements.join(', ')}\n`)
-    } else {
-      sections.push('- **Eligibility:** Meets all requirements\n')
-    }
-  } else {
-    sections.push('- **Missing Requirements:**\n')
-    for (const req of opp.missingRequirements) {
-      sections.push(`  - ${req}\n`)
-    }
-  }
-
-  // Citation info
-  if (opp.citation) {
-    sections.push(`- **Source:** ${opp.citation.carrier} (${opp.citation.file.split('/').pop()})\n`)
-  }
-
-  sections.push('\n')
-
-  return sections.join('\n')
+  return `#### Discount Opportunities\n\n\`\`\`json\n${JSON.stringify(opportunities, null, 2)}\n\`\`\`\n`
 }
 
 /**
  * Build compliance check section
  */
-function buildComplianceSection(trace: DecisionTrace): string {
+function buildComplianceSection(trace: DecisionTrace, testResult?: TestResult): string {
   if (!trace.complianceCheck) return ''
 
-  return `#### Compliance Check\n\n\`\`\`json\n${JSON.stringify(trace.complianceCheck, null, 2)}\n\`\`\`\n`
+  const sections: string[] = []
+  sections.push('#### Compliance Check\n')
+
+  // Get disclaimers from actualResponse
+  const actualResponse = testResult?.actualResponse as
+    | IntakeResult
+    | PolicyAnalysisResult
+    | undefined
+  const disclaimersShown = actualResponse?.disclaimers || []
+  const disclaimersRequired = testResult?.testCase.expectedDisclaimers || []
+
+  // Calculate missed disclaimers
+  const disclaimersMissed = disclaimersRequired.filter(
+    (required) => !disclaimersShown.some((shown) => shown.includes(required))
+  )
+
+  // Build disclaimer analysis
+  const disclaimerAnalysis = {
+    disclaimersRequired: disclaimersRequired.length,
+    disclaimersShown: disclaimersShown.length,
+    disclaimersMissed: disclaimersMissed.length,
+    required: disclaimersRequired,
+    shown: disclaimersShown,
+    missed: disclaimersMissed,
+  }
+
+  sections.push(`\`\`\`json\n${JSON.stringify(disclaimerAnalysis, null, 2)}\n\`\`\`\n`)
+
+  return sections.join('\n')
 }
 
 /**

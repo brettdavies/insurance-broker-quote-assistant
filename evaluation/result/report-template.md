@@ -6,7 +6,8 @@
 
 - [Evaluation Report](#evaluation-report)
   - [Table of Contents](#table-of-contents)
-  - [Executive Summary](#executive-summary)
+  - [Conversational Flow Metrics](#conversational-flow-metrics)
+  - [Policy Flow Metrics](#policy-flow-metrics)
   - [Per-Carrier Routing Accuracy](#per-carrier-routing-accuracy)
   - [Per-State Routing Accuracy](#per-state-routing-accuracy)
   - [Field Completeness](#field-completeness)
@@ -19,17 +20,31 @@
 
 ---
 
-## Executive Summary
+## Conversational Flow Metrics
+
+**Tests:** {{convTestCount}}
 
 | Metric | Target | Actual | Status |
 |--------|--------|--------|--------|
-| Routing Accuracy | ≥90% | {{routingAccuracy}}% | {{routingStatus}} |
-| Intake Completeness | ≥95% | {{intakeCompleteness}}% | {{intakeStatus}} |
-| Discount Accuracy | ≥90% | {{discountAccuracy}}% | {{discountStatus}} |
-| Savings Pitch Clarity | ≥85% | {{pitchClarity}}% | {{pitchStatus}} |
-| Compliance Pass Rate | 100% | {{compliancePassRate}}% | {{complianceStatus}} |
+| Routing Accuracy | ≥90% | {{convRoutingAccuracy}}% | {{convRoutingStatus}} |
+| Intake Completeness | ≥95% | {{convIntakeCompleteness}}% | {{convIntakeStatus}} |
+| Prefill Completeness | ≥95% | {{convPrefillCompleteness}}% | {{convPrefillStatus}} |
+| Compliance Pass Rate | 100% | {{convCompliancePassRate}}% | {{convComplianceStatus}} |
 
-**Overall Status:** {{overallStatus}}
+**Conversational Flow Status:** {{convOverallStatus}}
+
+## Policy Flow Metrics
+
+**Tests:** {{policyTestCount}}
+
+| Metric | Target | Actual | Status |
+|--------|--------|--------|--------|
+| Intake Completeness | ≥95% | {{policyIntakeCompleteness}}% | {{policyIntakeStatus}} |
+| Discount Accuracy | ≥90% | {{policyDiscountAccuracy}}% | {{policyDiscountStatus}} |
+| Savings Pitch Clarity | ≥85% | {{policyPitchClarity}}% | {{policyPitchStatus}} |
+| Compliance Pass Rate | 100% | {{policyCompliancePassRate}}% | {{policyComplianceStatus}} |
+
+**Policy Flow Status:** {{policyOverallStatus}}
 
 ## Per-Carrier Routing Accuracy
 

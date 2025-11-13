@@ -26,6 +26,7 @@ export function buildTemplateReplacements(
   return {
     ...buildTimestampReplacement(timestamp),
     ...buildMetricsReplacements(overallMetrics),
+    ...buildFlowSpecificMetricsReplacements(overallMetrics),
     ...buildTableReplacements(perCarrierRouting, perStateRouting, fieldCompleteness, tokenUsage),
     ...buildTracesReplacement(sampleTracesSection),
     ...buildTestCaseDetailsReplacements(testResults),
@@ -85,6 +86,86 @@ function buildMetricsReplacements(metrics: OverallMetrics): Record<string, strin
     pitchStatus,
     complianceStatus,
     overallStatus,
+  }
+}
+
+/**
+ * Build flow-specific metrics replacements (conversational vs policy)
+ */
+function buildFlowSpecificMetricsReplacements(metrics: OverallMetrics): Record<string, string> {
+  // Conversational flow metrics
+  const convRoutingStatus =
+    metrics.conversational.routingAccuracy >= METRIC_THRESHOLDS.ROUTING_ACCURACY
+      ? STATUS.PASS
+      : STATUS.FAIL
+  const convIntakeStatus =
+    metrics.conversational.intakeCompleteness >= METRIC_THRESHOLDS.INTAKE_COMPLETENESS
+      ? STATUS.PASS
+      : STATUS.FAIL
+  const convPrefillStatus =
+    metrics.conversational.prefillCompleteness >= METRIC_THRESHOLDS.INTAKE_COMPLETENESS
+      ? STATUS.PASS
+      : STATUS.FAIL
+  const convComplianceStatus =
+    metrics.conversational.compliancePassRate === METRIC_THRESHOLDS.COMPLIANCE_PASS_RATE
+      ? STATUS.PASS
+      : STATUS.FAIL
+
+  const convOverallStatus =
+    metrics.conversational.routingAccuracy >= METRIC_THRESHOLDS.ROUTING_ACCURACY &&
+    metrics.conversational.intakeCompleteness >= METRIC_THRESHOLDS.INTAKE_COMPLETENESS &&
+    metrics.conversational.prefillCompleteness >= METRIC_THRESHOLDS.INTAKE_COMPLETENESS &&
+    metrics.conversational.compliancePassRate === METRIC_THRESHOLDS.COMPLIANCE_PASS_RATE
+      ? '✅ All conversational metrics meet target thresholds'
+      : '❌ Some conversational metrics below thresholds'
+
+  // Policy flow metrics
+  const policyIntakeStatus =
+    metrics.policy.intakeCompleteness >= METRIC_THRESHOLDS.INTAKE_COMPLETENESS
+      ? STATUS.PASS
+      : STATUS.FAIL
+  const policyDiscountStatus =
+    metrics.policy.discountAccuracy >= METRIC_THRESHOLDS.DISCOUNT_ACCURACY
+      ? STATUS.PASS
+      : STATUS.FAIL
+  const policyPitchStatus =
+    metrics.policy.pitchClarity >= METRIC_THRESHOLDS.PITCH_CLARITY ? STATUS.PASS : STATUS.FAIL
+  const policyComplianceStatus =
+    metrics.policy.compliancePassRate === METRIC_THRESHOLDS.COMPLIANCE_PASS_RATE
+      ? STATUS.PASS
+      : STATUS.FAIL
+
+  const policyOverallStatus =
+    metrics.policy.intakeCompleteness >= METRIC_THRESHOLDS.INTAKE_COMPLETENESS &&
+    metrics.policy.discountAccuracy >= METRIC_THRESHOLDS.DISCOUNT_ACCURACY &&
+    metrics.policy.pitchClarity >= METRIC_THRESHOLDS.PITCH_CLARITY &&
+    metrics.policy.compliancePassRate === METRIC_THRESHOLDS.COMPLIANCE_PASS_RATE
+      ? '✅ All policy metrics meet target thresholds'
+      : '❌ Some policy metrics below thresholds'
+
+  return {
+    // Conversational flow
+    convRoutingAccuracy: metrics.conversational.routingAccuracy.toString(),
+    convIntakeCompleteness: metrics.conversational.intakeCompleteness.toString(),
+    convPrefillCompleteness: metrics.conversational.prefillCompleteness.toString(),
+    convCompliancePassRate: metrics.conversational.compliancePassRate.toString(),
+    convTestCount: metrics.conversational.testCount.toString(),
+    convRoutingStatus,
+    convIntakeStatus,
+    convPrefillStatus,
+    convComplianceStatus,
+    convOverallStatus,
+    // Policy flow
+    policyIntakeCompleteness: metrics.policy.intakeCompleteness.toString(),
+    policyDiscountAccuracy: metrics.policy.discountAccuracy.toString(),
+    policyPitchClarity: metrics.policy.pitchClarity.toString(),
+    policyCompliancePassRate: metrics.policy.compliancePassRate.toString(),
+    policyTestCount: metrics.policy.testCount.toString(),
+    policyIntakeStatus,
+    policyDiscountStatus,
+    policyPitchStatus,
+    policyComplianceStatus,
+    policyOverallStatus,
   }
 }
 
