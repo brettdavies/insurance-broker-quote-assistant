@@ -4,7 +4,7 @@ import {
   extractFields,
   getFieldName,
   parseKeyValueSyntax,
-} from '../key-value-parser'
+} from '../pill-parser'
 
 describe('Key-Value Parser', () => {
   describe('parseKeyValueSyntax', () => {

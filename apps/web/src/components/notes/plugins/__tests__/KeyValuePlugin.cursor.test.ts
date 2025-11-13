@@ -20,7 +20,7 @@
 
 import '../../../../test-setup'
 import { beforeEach, describe, expect, it } from 'bun:test'
-import { parseKeyValueSyntax } from '@/lib/key-value-parser'
+import { parseKeyValueSyntax } from '@/lib/pill-parser'
 import {
   $getRoot,
   $getSelection,

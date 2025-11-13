@@ -20,7 +20,17 @@
 
 - **DRY (Don't Repeat Yourself):** Avoid duplicating logic or data; abstract and reuse code where possible.
 - **STAR (Single Truth, Authoritative Record):** Ensure shared types, constants, and config live in a single place; always import, never duplicate.
+- **SRP (Single Responsibility Principle):** Each module, class, or function should have exactly one responsibility or reason to change.
+- **OCP (Open/Closed Principle):** Code entities should be open for extension but closed for modification.
+- **SOLID (Object-Oriented Design Principles):**
+  - **S**ingle Responsibility: Each module/class has only one reason to change.
+  - **O**pen/Closed: Code is open for extension, closed for modification.
+  - **L**iskov Substitution: Types are replaceable by their subtypes without correctness errors.
+  - **I**nterface Segregation: Prefer many small, focused interfaces to large, generic ones.
+  - **D**ependency Inversion: Rely on abstractions, not concrete implementations.
 - **ACID (Atomic, Consistent, Isolated, Durable) for Data:** Treat every state change and file update as atomic—leave no chance for partial or inconsistent writes.
+- **KISS (Keep It Simple, Stupid):** Prioritize simplicity in code and design; avoid unnecessary complexity.
+- **YAGNI (You Aren't Gonna Need It):** Don't add features or abstractions until they are necessary.
 - **Fail Fast:** Catch missing environment variables or invalid states at startup whenever possible.
 - **Explicit is Better:** Prefer clear, type-safe code and explicit imports over magic or implicit behaviors.
 

@@ -83,6 +83,50 @@ export function checkMinProducts(
 }
 
 /**
+ * Check if user is eligible for required products based on ownership indicators
+ *
+ * Maps ownership indicators to product eligibility:
+ * - ownsHome: true → eligible for "home" product
+ * - vehicles > 0 OR drivers > 0 → eligible for "auto" product
+ *
+ * @param requirements - Discount requirements
+ * @param policy - Policy summary
+ * @param customerData - Optional customer profile data
+ * @returns Missing eligibility messages if not eligible, empty array if eligible
+ */
+export function checkEligibleProducts(
+  requirements: DiscountRequirements,
+  policy: PolicySummary,
+  customerData?: UserProfile
+): string[] {
+  if (!requirements.eligibleProducts) {
+    return []
+  }
+
+  const missingEligibility: string[] = []
+
+  for (const product of requirements.eligibleProducts) {
+    if (product === 'home') {
+      // Check if user owns a home
+      const ownsHome = customerData?.ownsHome === true
+      if (!ownsHome) {
+        missingEligibility.push('Not eligible for home product (does not own home)')
+      }
+    } else if (product === 'auto') {
+      // Check if user has vehicles or drivers
+      const hasVehicles = (customerData?.vehicles ?? 0) > 0
+      const hasDrivers = (customerData?.drivers ?? 0) > 0
+      if (!hasVehicles && !hasDrivers) {
+        missingEligibility.push('Not eligible for auto product (no vehicles or drivers)')
+      }
+    }
+    // Note: renters and umbrella eligibility rules can be added later if needed
+  }
+
+  return missingEligibility
+}
+
+/**
  * Check all product requirements
  *
  * @param requirements - Discount requirements
@@ -98,5 +142,6 @@ export function checkProductRequirements(
   const missing: string[] = []
   missing.push(...checkMustHaveProducts(requirements, policy, customerData))
   missing.push(...checkMinProducts(requirements, policy, customerData))
+  missing.push(...checkEligibleProducts(requirements, policy, customerData))
   return missing
 }

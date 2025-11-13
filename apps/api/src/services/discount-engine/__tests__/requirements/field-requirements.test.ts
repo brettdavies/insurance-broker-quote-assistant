@@ -115,6 +115,20 @@ describe('checkFieldRequirements', () => {
       expect(missing).toHaveLength(1)
     })
 
+    it('should accept cleanRecord5Yr when cleanRecord3Yr is required (5yr implies 3yr)', () => {
+      const requirements: DiscountRequirements = {
+        fieldRequirements: {
+          cleanRecord3Yr: true,
+        },
+        description: 'Test',
+      }
+      const customerData = createCustomerData({ cleanRecord3Yr: undefined })
+      ;(customerData as any).cleanRecord5Yr = true
+
+      const missing = checkFieldRequirements(requirements, customerData)
+      expect(missing).toHaveLength(0) // Should pass (5yr implies 3yr)
+    })
+
     it('should check cleanRecord5Yr when field exists', () => {
       const requirements: DiscountRequirements = {
         fieldRequirements: {

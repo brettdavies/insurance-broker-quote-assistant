@@ -13,7 +13,7 @@ import {
   NUMERIC_FIELDS,
   SPECIAL_CHAR_FIELDS,
 } from '@/config/shortcuts'
-import { parseKeyValueSyntax } from '@/lib/key-value-parser'
+import { parseKeyValueSyntax } from '@/lib/pill-parser'
 import { useLexicalComposerContext } from '@lexical/react/LexicalComposerContext'
 import {
   $getNodeByKey,
@@ -44,13 +44,16 @@ export function KeyValuePlugin(): null {
 
         for (const [nodeKey, mutation] of mutatedNodes) {
           if (mutation === 'updated' || mutation === 'created') {
+            console.log('[KeyValuePlugin] Mutation detected:', mutation, 'nodeKey:', nodeKey)
             const node = $getNodeByKey(nodeKey)
             if (!$isTextNode(node)) {
               continue
             }
 
             const text = node.getTextContent()
+            console.log('[KeyValuePlugin] Text node content:', text)
             let parsed = parseKeyValueSyntax(text)
+            console.log('[KeyValuePlugin] Parsed', parsed.length, 'fields from text:', parsed.map(p => `${p.key}:${p.value}`))
 
             if (parsed.length === 0) {
               continue
@@ -261,8 +264,59 @@ export function KeyValuePlugin(): null {
               parsed = parseKeyValueSyntax(textToTransform)
             }
 
+            // Capture parent reference before transformation (while node is still attached)
+            const parentBeforeTransform = node.getParent()
+
             // Transform text into pills
             transformTextToPills(node, parsed)
+
+            // Check for inferred householdSize that wasn't transformed into a pill
+            // (because its "original" text doesn't exist in the editor)
+            const inferredField = parsed.find(
+              (p) => p.key === 'householdSize' && p.original.includes('(inferred from')
+            )
+
+            if (inferredField) {
+              console.log('[KeyValuePlugin] Found inferred householdSize:', inferredField)
+              // Get all existing pills to check if householdSize pill already exists
+              const root = $getRoot()
+              const allNodes = root.getAllTextNodes()
+              let hasHouseholdSizePill = false
+
+              for (const textNode of allNodes) {
+                const parent = textNode.getParent()
+                if ($isPillNode(parent) && parent.getFieldName() === 'householdSize') {
+                  hasHouseholdSizePill = true
+                  break
+                }
+              }
+
+              if (!hasHouseholdSizePill) {
+                console.log('[KeyValuePlugin] Creating householdSize pill directly')
+                // Create pill directly (don't inject text - it won't be found for transformation)
+                const pillNode = $createPillNode({
+                  key: 'householdSize',
+                  value: String(inferredField.value),
+                  validation: 'valid',
+                  fieldName: 'householdSize',
+                })
+
+                // Use captured parent reference (not detached node's parent)
+                if (parentBeforeTransform) {
+                  parentBeforeTransform.append(new TextNode(' ')) // Space before pill
+                  parentBeforeTransform.append(pillNode)
+                  console.log('[KeyValuePlugin] householdSize pill created successfully')
+                } else {
+                  // Fallback: append to root if parent was null
+                  const root = $getRoot()
+                  root.append(new TextNode(' '))
+                  root.append(pillNode)
+                  console.log('[KeyValuePlugin] householdSize pill created via root fallback')
+                }
+              } else {
+                console.log('[KeyValuePlugin] Skipping householdSize pill (already exists)')
+              }
+            }
 
             // Clear tracking if this was the node being edited
             if (previousEditingNodeRef.current === node) {

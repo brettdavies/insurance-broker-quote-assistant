@@ -274,6 +274,27 @@ export const unifiedFieldMetadata: Record<string, UnifiedFieldMetadata> = {
     flows: ['intake'],
   },
 
+  currentCarrier: {
+    shortcut: '',
+    label: 'Current Carrier',
+    question: 'Who is the current insurance carrier?',
+    description: 'Current insurance carrier name',
+    category: 'Eligibility',
+    fieldType: 'string',
+    aliases: ['carrier'],
+    flows: ['intake'], // Used for current carrier preference in routing
+  },
+
+  existingPolicies: {
+    shortcut: '',
+    label: 'Existing Policies',
+    question: 'What existing policies does the client have?',
+    description: 'Existing insurance policies',
+    category: 'Eligibility',
+    fieldType: 'object',
+    flows: ['intake'], // Used for bundle discount eligibility
+  },
+
   premiums: {
     shortcut: '',
     label: 'Premiums',

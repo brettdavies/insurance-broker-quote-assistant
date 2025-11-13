@@ -58,11 +58,11 @@ export {
   intakeResultSchema,
   routeDecisionSchema,
   citationSchema,
-  opportunityStubSchema,
+  discountOpportunitySchema,
   type IntakeResult,
   type RouteDecision,
   type Citation,
-  type OpportunityStub,
+  type DiscountOpportunity,
 } from './schemas/intake-result'
 
 // Export opportunity schema and types

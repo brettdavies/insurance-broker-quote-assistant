@@ -1,6 +1,7 @@
 import type {
   IntakeResult,
   MissingField,
+  PolicySummary,
   PrefillPacket,
   RouteDecision,
   UserProfile,
@@ -10,6 +11,8 @@ import { Hono } from 'hono'
 import { z } from 'zod'
 import { validateOutput } from '../services/compliance-filter'
 import type { ConversationalExtractor } from '../services/conversational-extractor'
+import { findApplicableDiscounts } from '../services/discount-engine'
+import { getCarrierByName } from '../services/knowledge-pack-rag'
 import type { LLMProvider } from '../services/llm-provider'
 import { generatePrefillPacket, getMissingFields } from '../services/prefill-generator'
 import { routeToCarrier } from '../services/routing-engine'
@@ -150,6 +153,7 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
           ? {
               eligibleCarriers: routeDecision.eligibleCarriers,
               primaryCarrier: routeDecision.primaryCarrier,
+              tiedCarriers: routeDecision.tiedCarriers,
               matchScores: routeDecision.matchScores,
               confidence: routeDecision.confidence,
               rationale: routeDecision.rationale,
@@ -203,6 +207,49 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
         )
       }
 
+      // Find applicable discounts using discount engine
+      let opportunities: IntakeResult['opportunities'] = []
+      if (
+        routeDecision &&
+        routeDecision.primaryCarrier &&
+        extractionResult.profile.state &&
+        extractionResult.profile.productType
+      ) {
+        const carrier = getCarrierByName(routeDecision.primaryCarrier)
+        if (carrier) {
+          // Convert UserProfile to PolicySummary for discount engine
+          // Filter out null values to match PolicySummary schema (which uses optional, not nullish)
+          const profile = extractionResult.profile
+          const policySummary: PolicySummary = {
+            carrier: routeDecision.primaryCarrier,
+            ...(profile.name && { name: profile.name }),
+            ...(profile.email && { email: profile.email }),
+            ...(profile.phone && { phone: profile.phone }),
+            ...(profile.zip && { zip: profile.zip }),
+            ...(profile.state && { state: profile.state }),
+            ...(profile.address && { address: profile.address }),
+            ...(profile.productType && { productType: profile.productType }),
+            ...(profile.age !== null &&
+              profile.age !== undefined && { age: profile.age }),
+            ...(profile.householdSize !== null &&
+              profile.householdSize !== undefined && { householdSize: profile.householdSize }),
+            ...(profile.ownsHome !== null &&
+              profile.ownsHome !== undefined && { ownsHome: profile.ownsHome }),
+            ...(profile.vehicles !== null &&
+              profile.vehicles !== undefined && { vehicles: profile.vehicles }),
+            ...(profile.drivers !== null &&
+              profile.drivers !== undefined && { drivers: profile.drivers }),
+            ...(profile.cleanRecord3Yr !== null &&
+              profile.cleanRecord3Yr !== undefined && { cleanRecord3Yr: profile.cleanRecord3Yr }),
+            ...(profile.cleanRecord5Yr !== null &&
+              profile.cleanRecord5Yr !== undefined && { cleanRecord5Yr: profile.cleanRecord5Yr }),
+            ...(profile.existingPolicies && { existingPolicies: profile.existingPolicies }),
+          }
+
+          opportunities = findApplicableDiscounts(carrier, policySummary, extractionResult.profile)
+        }
+      }
+
       // Build IntakeResult response
       const result: IntakeResult = {
         profile: extractionResult.profile,
@@ -210,7 +257,7 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
         extractionMethod: extractionResult.extractionMethod, // AC5: Include extraction method
         confidence: extractionResult.confidence, // AC5: Include confidence scores
         route: routeDecision, // Routing decision from routing engine
-        opportunities: [], // Stub for discount engine (future story)
+        opportunities, // Discount opportunities from discount engine
         prefill: prefillPacket, // Prefill packet for broker handoff
         pitch, // Pitch (may be replaced by compliance filter replacement message)
         complianceValidated: complianceResult.passed,

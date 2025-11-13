@@ -8,7 +8,7 @@
  * Usage: bun run evaluation/run-single-test.ts conv-01
  */
 
-import { spawn } from 'node:child_process'
+import { spawn, execSync } from 'node:child_process'
 import { readFile, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import { generateMarkdownReport, generateReport } from './services/report-generator'
@@ -132,6 +132,14 @@ async function main() {
   const cleanup = (exitCode = 0) => {
     console.log('\n🛑 Shutting down servers...')
     evalEnv.kill('SIGTERM')
+
+    // Kill any remaining bun processes using kill-eval-servers.sh
+    try {
+      const killScript = join(import.meta.dir, 'kill-eval-servers.sh')
+      execSync(`bash ${killScript}`, { stdio: 'inherit' })
+    } catch (error) {
+      console.error('⚠️  Error running kill-eval-servers.sh:', error)
+    }
 
     // Force kill after 2 seconds if not terminated
     setTimeout(() => {

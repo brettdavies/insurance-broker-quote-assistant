@@ -31,6 +31,7 @@ export type Citation = z.infer<typeof citationSchema>
  */
 export const routeDecisionSchema = z.object({
   primaryCarrier: z.string(), // Carrier name/ID of top recommendation
+  tiedCarriers: z.array(z.string()).optional(), // Carriers with equal match scores (if tie exists)
   eligibleCarriers: z.array(z.string()), // All eligible carriers ranked by match quality
   matchScores: z.record(z.string(), z.number()).optional(), // Match quality scores per carrier
   confidence: z.number().min(0).max(1), // Overall confidence in routing decision (0-1)
@@ -41,16 +42,22 @@ export const routeDecisionSchema = z.object({
 export type RouteDecision = z.infer<typeof routeDecisionSchema>
 
 /**
- * Opportunity Stub
- * Will be fully defined in future story (discount engine)
+ * Discount Opportunity Schema
+ * Represents a discount with eligibility status and savings calculation
  */
-export const opportunityStubSchema = z.object({
-  discount: z.string().optional(),
-  percentage: z.number().optional(),
-  annualSavings: z.number().optional(),
+export const discountOpportunitySchema = z.object({
+  discountId: z.string(),
+  discountName: z.string(),
+  percentage: z.number(),
+  annualSavings: z.number(),
+  missingRequirements: z.array(z.string()),
+  metRequirements: z.array(z.string()).optional(),
+  citation: citationSchema,
+  stackable: z.boolean(),
+  requiresDocumentation: z.boolean().optional(),
 })
 
-export type OpportunityStub = z.infer<typeof opportunityStubSchema>
+export type DiscountOpportunity = z.infer<typeof discountOpportunitySchema>
 
 /**
  * Intake Result Schema
@@ -62,7 +69,7 @@ export const intakeResultSchema = z.object({
   extractionMethod: z.enum(['key-value', 'llm']).optional(), // Extraction method used (AC5)
   confidence: z.record(z.number().min(0).max(1)).optional(), // Field-level confidence scores (AC5)
   route: routeDecisionSchema.optional(), // Routing decision from routing engine
-  opportunities: z.array(opportunityStubSchema).optional(), // Stub for discount engine
+  opportunities: z.array(discountOpportunitySchema).optional(), // Discount opportunities from discount engine
   prefill: prefillPacketSchema.optional(), // Prefill packet for broker handoff
   pitch: z.string().optional(), // Agent-ready savings pitch (empty string for MVP)
   complianceValidated: z.boolean().default(true), // Compliance filter result

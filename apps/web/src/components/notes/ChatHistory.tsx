@@ -6,7 +6,7 @@
  * Key-value pills render inline within message text.
  */
 
-import { parseKeyValueSyntax } from '@/lib/key-value-parser'
+import { parseKeyValueSyntax } from '@/lib/pill-parser'
 import { useEffect, useRef } from 'react'
 
 export interface ChatMessage {

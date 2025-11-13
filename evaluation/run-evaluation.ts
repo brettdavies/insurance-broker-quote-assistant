@@ -7,7 +7,7 @@
  * runs the evaluation harness, then cleans up.
  */
 
-import { spawn } from 'node:child_process'
+import { spawn, execSync } from 'node:child_process'
 import { join } from 'node:path'
 
 const FRONTEND_PORT = process.env.EVAL_FRONTEND_PORT || '3000'
@@ -119,6 +119,14 @@ const cleanup = (exitCode = 0) => {
     harness.kill('SIGTERM')
   } catch {
     // Harness may already be dead
+  }
+
+  // Kill any remaining bun processes using kill-eval-servers.sh
+  try {
+    const killScript = join(import.meta.dir, 'kill-eval-servers.sh')
+    execSync(`bash ${killScript}`, { stdio: 'inherit' })
+  } catch (error) {
+    console.error('⚠️  Error running kill-eval-servers.sh:', error)
   }
 
   // Force kill after 2 seconds if not terminated

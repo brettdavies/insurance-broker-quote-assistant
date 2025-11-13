@@ -24,6 +24,7 @@ export interface DiscountOpportunity {
   percentage: number
   annualSavings: number
   missingRequirements: string[]
+  metRequirements?: string[] // List of requirements customer meets (for eligible discounts)
   citation: Citation
   stackable: boolean
   requiresDocumentation?: boolean
@@ -48,6 +49,7 @@ export interface DiscountRequirements {
   mustHaveProducts?: string[]
   minProducts?: number
   bundleProducts?: string[]
+  eligibleProducts?: string[]
   fieldRequirements?: {
     age?: {
       min?: number
@@ -63,6 +65,11 @@ export interface DiscountRequirements {
     veteran?: boolean
     homeSecuritySystem?: boolean
     deadboltLocks?: boolean
+    [key: string]: unknown
+  }
+  fieldExclusions?: {
+    cleanRecord3Yr?: boolean
+    cleanRecord5Yr?: boolean
     [key: string]: unknown
   }
   description: string

@@ -4,14 +4,18 @@
 
 ## Table of Contents
 
-1. [Executive Summary](#executive-summary)
-2. [Per-Carrier Routing Accuracy](#per-carrier-routing-accuracy)
-3. [Per-State Routing Accuracy](#per-state-routing-accuracy)
-4. [Field Completeness](#field-completeness)
-5. [LLM Token Usage & Cost](#llm-token-usage--cost)
-6. [Sample Decision Traces](#sample-decision-traces)
-7. [Test Case Details](#test-case-details)
-8. [Summary Statistics](#summary-statistics)
+- [Evaluation Report](#evaluation-report)
+  - [Table of Contents](#table-of-contents)
+  - [Executive Summary](#executive-summary)
+  - [Per-Carrier Routing Accuracy](#per-carrier-routing-accuracy)
+  - [Per-State Routing Accuracy](#per-state-routing-accuracy)
+  - [Field Completeness](#field-completeness)
+  - [LLM Token Usage \& Cost](#llm-token-usage--cost)
+    - [Summary](#summary)
+    - [Per Test Case](#per-test-case)
+  - [Sample Decision Traces](#sample-decision-traces)
+  - [Test Case Details](#test-case-details)
+  - [Summary Statistics](#summary-statistics)
 
 ---
 
@@ -21,6 +25,7 @@
 |--------|--------|--------|--------|
 | Routing Accuracy | ≥90% | {{routingAccuracy}}% | {{routingStatus}} |
 | Intake Completeness | ≥95% | {{intakeCompleteness}}% | {{intakeStatus}} |
+| Discount Accuracy | ≥90% | {{discountAccuracy}}% | {{discountStatus}} |
 | Savings Pitch Clarity | ≥85% | {{pitchClarity}}% | {{pitchStatus}} |
 | Compliance Pass Rate | 100% | {{compliancePassRate}}% | {{complianceStatus}} |
 
@@ -71,5 +76,5 @@
 - **Total Tests:** {{totalTests}}
 - **Passed:** {{passedTests}}
 - **Failed:** {{failedTests}}
-- **Pass Rate:** {{passRate}}%
+- **Pass Rate:** {{passRate}}
 

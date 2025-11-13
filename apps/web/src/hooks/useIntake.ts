@@ -6,7 +6,7 @@
  */
 
 import { api } from '@/lib/api-client'
-import { extractFields, parseKeyValueSyntax } from '@/lib/key-value-parser'
+import { extractFields, parseKeyValueSyntax } from '@/lib/pill-parser'
 import type { IntakeResult, UserProfile } from '@repo/shared'
 import { useMutation, useQueryClient } from '@tanstack/react-query'
 

@@ -1,5 +1,11 @@
 import type { PolicySummary, UserProfile } from '@repo/shared'
-import { extractStateFromText, policySummarySchema, userProfileSchema } from '@repo/shared'
+import {
+  extractStateFromText,
+  inferExistingPolicies,
+  type NormalizedField,
+  policySummarySchema,
+  userProfileSchema,
+} from '@repo/shared'
 import { hasKeyValueSyntax, parseKeyValueSyntax } from '../utils/key-value-parser'
 import { logError } from '../utils/logger'
 import type { LLMProvider } from './llm-provider'
@@ -47,6 +53,7 @@ export class ConversationalExtractor {
    * @returns Extraction result with profile, method, confidence, and missing fields
    */
   async extractFields(message: string, pills?: Partial<UserProfile>): Promise<ExtractionResult> {
+    console.log('[conversational-extractor] extractFields called with pills:', pills)
     try {
       // Step 1: Try key-value parser first (instant, free, deterministic)
       if (hasKeyValueSyntax(message)) {
@@ -86,6 +93,7 @@ export class ConversationalExtractor {
 
       // Validate extracted profile against schema
       const validatedProfile = this.validateProfile(llmResult.profile)
+      console.log('[conversational-extractor] LLM validated profile householdSize:', validatedProfile.householdSize)
 
       // Merge pills with LLM extraction result
       // Pills take precedence (they're the single source of truth from frontend)
@@ -93,9 +101,43 @@ export class ConversationalExtractor {
         pills && Object.keys(pills).length > 0
           ? { ...validatedProfile, ...pills }
           : validatedProfile
+      console.log('[conversational-extractor] After merging pills, finalProfile householdSize:', finalProfile.householdSize)
+
+      // Normalize carrier name to uppercase (knowledge pack standard)
+      if (finalProfile.currentCarrier) {
+        finalProfile.currentCarrier = finalProfile.currentCarrier.toUpperCase()
+        console.log('[conversational-extractor] Normalized currentCarrier to:', finalProfile.currentCarrier)
+      }
+
+      // Infer existingPolicies from currentCarrier + productType
+      if (finalProfile.currentCarrier && finalProfile.productType) {
+        // Build a map for inference function
+        const fieldsMap = new Map<string, NormalizedField>()
+        fieldsMap.set('currentCarrier', {
+          fieldName: 'currentCarrier',
+          value: finalProfile.currentCarrier,
+          originalText: finalProfile.currentCarrier,
+          startIndex: 0,
+          endIndex: 0,
+        })
+        fieldsMap.set('productType', {
+          fieldName: 'productType',
+          value: finalProfile.productType,
+          originalText: finalProfile.productType,
+          startIndex: 0,
+          endIndex: 0,
+        })
+
+        const inferredPolicies = inferExistingPolicies(fieldsMap)
+        if (inferredPolicies.length > 0) {
+          finalProfile.existingPolicies = inferredPolicies
+          console.log('[conversational-extractor] Inferred existingPolicies:', inferredPolicies)
+        }
+      }
 
       // Calculate missing fields
       const missingFields = this.calculateMissingFields(finalProfile)
+      console.log('[conversational-extractor] Final profile before return:', finalProfile)
 
       return {
         profile: finalProfile,

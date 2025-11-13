@@ -110,22 +110,57 @@ export function routeToCarrier(
   if (rankedCarriers.length === 0) {
     return createNoEligibleCarriersDecision('No eligible carriers found after ranking')
   }
-  const primaryCarrier = rankedCarriers[0]
-  if (!primaryCarrier) {
+  const topCarrier = rankedCarriers[0]
+  if (!topCarrier) {
     return createNoEligibleCarriersDecision('No eligible carriers found after ranking')
+  }
+
+  // Handle ties: collect all carriers with the top match score
+  const topScore = topCarrier.matchScore
+  const tiedMatches = rankedCarriers.filter((m) => m.matchScore === topScore)
+
+  let primaryCarrier: CarrierMatch
+  let tiedCarriers: string[] | undefined
+
+  if (tiedMatches.length > 1) {
+    // Multiple carriers tied for top score - apply tiebreaker
+    const currentCarrier = profile.currentCarrier
+    const currentCarrierMatch = tiedMatches.find(
+      (m) => m.carrier.name.toLowerCase() === currentCarrier?.toLowerCase()
+    )
+
+    if (currentCarrierMatch) {
+      // Prefer current carrier if it's in the tied set
+      primaryCarrier = currentCarrierMatch
+      tiedCarriers = tiedMatches
+        .filter((m) => m.carrier.name !== currentCarrierMatch.carrier.name)
+        .map((m) => m.carrier.name)
+    } else {
+      // Deterministic selection: alphabetical order for reproducible results
+      const sortedByName = [...tiedMatches].sort((a, b) =>
+        a.carrier.name.localeCompare(b.carrier.name)
+      )
+      primaryCarrier = sortedByName[0]!
+      tiedCarriers = sortedByName.slice(1).map((m) => m.carrier.name)
+    }
+  } else {
+    // No tie - use top carrier
+    primaryCarrier = topCarrier
+    tiedCarriers = undefined
   }
 
   // Calculate overall confidence
   const confidence = calculateConfidence(rankedCarriers, profile)
 
   // Generate rationale
-  const rationale = generateRationale(rankedCarriers, profile, carrierMatches)
+  const rationale = generateRationale(rankedCarriers, profile, carrierMatches, primaryCarrier)
 
   // Extract citations for eligible carriers
   const citations = extractCitations(rankedCarriers)
 
   return {
     primaryCarrier: primaryCarrier.carrier.name,
+    tiedCarriers,
     eligibleCarriers: rankedCarriers.map((m) => m.carrier.name),
     matchScores: Object.fromEntries(rankedCarriers.map((m) => [m.carrier.name, m.matchScore])),
     confidence,
@@ -336,18 +371,20 @@ function calculateConfidence(rankedCarriers: CarrierMatch[], profile: UserProfil
  * @param rankedCarriers - Carriers ranked by match score
  * @param profile - User profile
  * @param allMatches - All carrier matches (including ineligible)
+ * @param selectedPrimary - The actual selected primary carrier (after tiebreaker logic)
  * @returns Rationale string
  */
 function generateRationale(
   rankedCarriers: CarrierMatch[],
   profile: UserProfile,
-  allMatches: CarrierMatch[]
+  allMatches: CarrierMatch[],
+  selectedPrimary: CarrierMatch
 ): string {
   if (rankedCarriers.length === 0) {
     return 'No eligible carriers found'
   }
 
-  const primary = rankedCarriers[0]
+  const primary = selectedPrimary
   if (!primary) {
     return 'No eligible carriers found'
   }
@@ -358,10 +395,10 @@ function generateRationale(
     `Selected ${primary.carrier.name} as primary carrier (match score: ${primary.matchScore.toFixed(2)})`
   )
 
-  // List alternatives if any
-  if (rankedCarriers.length > 1) {
-    const alternatives = rankedCarriers
-      .slice(1)
+  // List alternatives if any (exclude the selected primary carrier)
+  const alternativeCarriers = rankedCarriers.filter((m) => m.carrier.name !== primary.carrier.name)
+  if (alternativeCarriers.length > 0) {
+    const alternatives = alternativeCarriers
       .map((m) => `${m.carrier.name} (${m.matchScore.toFixed(2)})`)
       .join(', ')
     parts.push(`Alternatives: ${alternatives}`)

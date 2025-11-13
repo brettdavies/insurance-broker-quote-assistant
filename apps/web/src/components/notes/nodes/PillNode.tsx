@@ -5,7 +5,7 @@
  * with visual styling based on validation state.
  */
 
-import type { ValidationResult } from '@/lib/key-value-parser'
+import type { ValidationResult } from '@/lib/pill-parser'
 import {
   type DOMConversionMap,
   type DOMConversionOutput,

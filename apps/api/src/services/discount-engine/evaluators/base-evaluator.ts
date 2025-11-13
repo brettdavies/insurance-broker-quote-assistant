@@ -54,7 +54,7 @@ export abstract class BaseDiscountEvaluator implements DiscountEvaluator {
     missingRequirements.push(...checkProductRequirements(requirements, policy, customerData))
 
     // Check field requirements (if customer data provided)
-    if (requirements.fieldRequirements) {
+    if (requirements.fieldRequirements || requirements.fieldExclusions) {
       if (customerData) {
         missingRequirements.push(...checkFieldRequirements(requirements, customerData))
       } else {
