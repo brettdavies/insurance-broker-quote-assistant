@@ -17,6 +17,7 @@ import type {
   ValidatedOpportunity,
   ValidationDetails,
 } from '@repo/shared'
+import { SAVINGS_TOLERANCE_DOLLARS } from '@repo/shared'
 import { getFieldValue } from '../utils/field-helpers'
 import { logInfo } from '../utils/logger'
 import { getDiscountEvaluator } from './discount-engine/factory'
@@ -172,7 +173,7 @@ export class DiscountRulesValidator {
 
     // Compare LLM-identified savings with discount engine calculated savings
     const savingsDifference = Math.abs(opportunity.annualSavings - savingsResult.annualDollars)
-    const savingsMatch = savingsDifference < 10 // Allow $10 difference for rounding
+    const savingsMatch = savingsDifference < SAVINGS_TOLERANCE_DOLLARS
 
     validationDetails.rulesEvaluated.push({
       rule: 'Savings calculation validation',

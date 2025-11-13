@@ -14,10 +14,12 @@ import type { MissingField as MissingFieldInfo } from '@/components/sidebar/Miss
 import { Sidebar } from '@/components/sidebar/Sidebar'
 import { useToast } from '@/components/ui/use-toast'
 import { COMMAND_TO_KEY, FIELD_METADATA, FIELD_SHORTCUTS } from '@/config/shortcuts'
+import { EXTRACTION_DEBOUNCE_MS } from '@/constants/debounce'
 import { useIntake } from '@/hooks/useIntake'
 import { useKeyboardShortcuts } from '@/hooks/useKeyboardShortcuts'
 import { usePolicyAnalysis } from '@/hooks/usePolicyAnalysis'
 import type { ActionCommand, FieldCommand } from '@/hooks/useSlashCommands'
+import { useUnifiedChatState } from '@/hooks/useUnifiedChatState'
 import { copySavingsPitchToClipboard } from '@/lib/clipboard-utils'
 import { exportSavingsPitch } from '@/lib/export-utils'
 import { calculateMissingFields, convertMissingFieldsToInfo } from '@/lib/missing-fields'
@@ -34,7 +36,7 @@ import type {
   PolicySummary,
   UserProfile,
 } from '@repo/shared'
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef } from 'react'
 
 interface UnifiedChatInterfaceProps {
   mode?: 'intake' | 'policy'
@@ -59,23 +61,37 @@ export function UnifiedChatInterface({
   onCommandError,
   editorRef: externalEditorRef,
 }: UnifiedChatInterfaceProps) {
-  const [profile, setProfile] = useState<UserProfile>({})
-  const profileRef = useRef<UserProfile>({})
-  const [missingFields, setMissingFields] = useState<MissingFieldInfo[]>([])
-  const [disclaimers, setDisclaimers] = useState<string[]>([])
-  const [latestIntakeResult, setLatestIntakeResult] = useState<IntakeResult | null>(null)
-  const [policySummary, setPolicySummary] = useState<PolicySummary | undefined>(undefined)
-  const [policyAnalysisResult, setPolicyAnalysisResult] = useState<
-    PolicyAnalysisResult | undefined
-  >(undefined)
-  const hasBackendMissingFields = useRef(false)
+  const {
+    state,
+    profileRef,
+    updateProfile,
+    removeField,
+    setMissingFields,
+    setDisclaimers,
+    setLatestIntakeResult,
+    setPolicySummary,
+    setPolicyAnalysisResult,
+    setHasBackendMissingFields,
+    setFieldModalOpen,
+    setCurrentField,
+    setHelpModalOpen,
+    reset,
+  } = useUnifiedChatState()
+
+  const {
+    profile,
+    missingFields,
+    disclaimers,
+    latestIntakeResult,
+    policySummary,
+    policyAnalysisResult,
+    hasBackendMissingFields,
+    fieldModalOpen,
+    currentField,
+    helpModalOpen,
+  } = state
+
   const policyAnalysisMutation = usePolicyAnalysis()
-  const [fieldModalOpen, setFieldModalOpen] = useState(false)
-  const [currentField, setCurrentField] = useState<{
-    key: string
-    value?: string | number | boolean
-  } | null>(null)
-  const [helpModalOpen, setHelpModalOpen] = useState(false)
   const internalEditorRef = useRef<{
     focus: () => void
     clear: () => void
@@ -124,10 +140,7 @@ export function UnifiedChatInterface({
     },
   })
 
-  // Update profile ref when profile changes
-  useEffect(() => {
-    profileRef.current = profile
-  }, [profile])
+  // Profile ref is automatically kept in sync by useUnifiedChatState
 
   // Expose profile state on window for E2E testing
   useEffect(() => {
@@ -158,13 +171,13 @@ export function UnifiedChatInterface({
         }
       )
     }
-  }, [mode, policySummary, policyAnalysisMutation, toast])
+  }, [mode, policySummary, policyAnalysisMutation, toast, setPolicyAnalysisResult])
 
   // Calculate missing fields from current profile state
   // This ensures missing fields are always displayed even before intake endpoint is called
   useEffect(() => {
     // Only calculate frontend missing fields if we don't have backend ones yet
-    if (!hasBackendMissingFields.current) {
+    if (!hasBackendMissingFields) {
       // Get carrier/state from latest intake result if available
       const carrier = latestIntakeResult?.route?.primaryCarrier
       const state = profile.state || latestIntakeResult?.profile?.state
@@ -189,18 +202,12 @@ export function UnifiedChatInterface({
       })
       setMissingFields(fieldMetadata)
     }
-  }, [profile, latestIntakeResult])
+  }, [profile, latestIntakeResult, hasBackendMissingFields, setMissingFields])
 
   // Handle field removal when pill is deleted
   const handleFieldRemoved = useCallback(
     (fieldName: string) => {
-      // Remove field from profile
-      setProfile((prev) => {
-        const updated = { ...prev }
-        delete updated[fieldName as keyof UserProfile]
-        profileRef.current = updated // Keep ref in sync
-        return updated
-      })
+      removeField(fieldName)
 
       // Show toast
       setTimeout(() => {
@@ -211,7 +218,7 @@ export function UnifiedChatInterface({
         })
       }, 0)
     },
-    [toast]
+    [toast, removeField]
   )
 
   // Handle field extraction from pills
@@ -230,11 +237,7 @@ export function UnifiedChatInterface({
       }
 
       // Update profile
-      setProfile((prev) => {
-        const updated = { ...prev, ...extractedFields }
-        profileRef.current = updated
-        return updated
-      })
+      updateProfile(extractedFields)
 
       // Show toast for changed fields (outside of render phase)
       // Use setTimeout to ensure this runs after the state update completes
@@ -273,9 +276,9 @@ export function UnifiedChatInterface({
           setLatestIntakeResult(result)
 
           // Reconcile with backend response
-          setProfile((prev) => ({ ...prev, ...result.profile }))
+          updateProfile(result.profile)
           // Backend now returns MissingField[] (structured objects) instead of string[]
-          hasBackendMissingFields.current = true
+          setHasBackendMissingFields(true)
           // Convert backend MissingField[] to frontend MissingFieldInfo[], then to component format
           const backendMissingFields: MissingField[] = result.missingFields
           const frontendMissingFields = convertMissingFieldsToInfo(backendMissingFields)
@@ -302,7 +305,7 @@ export function UnifiedChatInterface({
             duration: 5000,
           })
         }
-      }, 500)
+      }, EXTRACTION_DEBOUNCE_MS)
 
       debounceTimerRef.current = timer
     },
@@ -329,7 +332,7 @@ export function UnifiedChatInterface({
         setFieldModalOpen(true)
       }
     },
-    []
+    [setCurrentField, setFieldModalOpen]
   )
 
   // Handle field modal submit
@@ -350,7 +353,7 @@ export function UnifiedChatInterface({
       setFieldModalOpen(false)
       setCurrentField(null)
     },
-    [currentField, editorRef]
+    [currentField, editorRef, setFieldModalOpen, setCurrentField]
   )
 
   // Calculate captured count
@@ -420,11 +423,8 @@ export function UnifiedChatInterface({
   const handleActionCommand = useCallback(
     (command: ActionCommand) => {
       if (command === 'reset') {
-        // Clear all state
-        setProfile({})
-        setMissingFields([])
-        setLatestIntakeResult(null)
-        hasBackendMissingFields.current = false
+        // Clear all state atomically
+        reset()
         setCurrentField(null)
         setFieldModalOpen(false)
         setHelpModalOpen(false)
@@ -526,7 +526,18 @@ export function UnifiedChatInterface({
         }
       }
     },
-    [toast, editorRef, handleExportCommand, handleCopyCommand, mode, policyAnalysisResult]
+    [
+      toast,
+      editorRef,
+      handleExportCommand,
+      handleCopyCommand,
+      mode,
+      policyAnalysisResult,
+      reset,
+      setCurrentField,
+      setFieldModalOpen,
+      setHelpModalOpen,
+    ]
   )
 
   // Handle command errors (invalid commands)

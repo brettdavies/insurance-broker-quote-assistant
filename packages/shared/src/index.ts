@@ -145,6 +145,19 @@ export {
   formatFileSize,
 } from './constants/file-upload'
 
+// Export LLM configuration constants
+export {
+  DEFAULT_GEMINI_MODEL,
+  DEFAULT_EXTRACTION_TEMPERATURE,
+  DEFAULT_PITCH_TEMPERATURE,
+} from './constants/llm-config'
+
+// Export validation constants
+export { SAVINGS_TOLERANCE_DOLLARS, MISSING_FIELD_PENALTY } from './constants/validation'
+
+// Export error message constants
+export { ERROR_CODES, ERROR_DETAILS, ERROR_MESSAGES } from './constants/error-messages'
+
 // Export shared enums
 export {
   productTypeEnum,

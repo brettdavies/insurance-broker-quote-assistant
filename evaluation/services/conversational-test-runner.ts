@@ -94,7 +94,7 @@ async function callIntakeEndpoint(
 
     // Wait for React to render (give it extra time)
     console.log('⏳ Waiting for React to render...')
-    await page.waitForTimeout(1000)
+    await page.waitForTimeout(200)
 
     // Take initial screenshot for debugging
     await takeScreenshot(
@@ -118,7 +118,7 @@ async function callIntakeEndpoint(
     for (let attempt = 0; attempt < 3; attempt++) {
       try {
         console.log(`🔄 Attempting pill extraction (attempt ${attempt + 1}/3)...`)
-        const extracted = await extractCleanedTextAndPills(page, 10000) // 10 second timeout
+        const extracted = await extractCleanedTextAndPills(page)
         cleanedText = extracted.cleanedText
         pills = extracted.pills
 
@@ -142,7 +142,7 @@ async function callIntakeEndpoint(
         if (attempt < 2) {
           console.log('🔄 Refreshing page and retrying...')
           await page.reload({ waitUntil: 'networkidle' })
-          await page.waitForTimeout(1000)
+          await page.waitForTimeout(200)
 
           // Re-inject text after refresh
           console.log(`⌨️  Re-injecting text after refresh: "${input}"`)
@@ -152,7 +152,7 @@ async function callIntakeEndpoint(
       }
 
       if (attempt < 2 && !cleanedText) {
-        await page.waitForTimeout(500) // Wait before retry
+        await page.waitForTimeout(100) // Wait before retry
       }
     }
 
@@ -176,7 +176,7 @@ async function callIntakeEndpoint(
     })
 
     // Wait a bit more to ensure all console logs are captured
-    await page.waitForTimeout(500)
+    await page.waitForTimeout(100)
 
     // Take final screenshot before closing
     await takeScreenshot(

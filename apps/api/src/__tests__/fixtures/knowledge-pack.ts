@@ -5,7 +5,15 @@
  * across test files.
  */
 
-import type { CarrierFile, Discount, ProductFile, Source, StateFile } from '@repo/shared'
+import type {
+  CarrierFile,
+  Discount,
+  Opportunity,
+  PolicySummary,
+  ProductFile,
+  Source,
+  StateFile,
+} from '@repo/shared'
 
 /**
  * Create a test carrier data structure
@@ -193,6 +201,62 @@ export function createTestProduct(
           _sources: [],
         },
       }),
+    },
+  }
+}
+
+/**
+ * Create a test policy summary
+ *
+ * @param carrier - Carrier name (e.g., "GEICO")
+ * @param state - State code (e.g., "CA")
+ * @param productType - Product type (e.g., "auto")
+ * @param annualPremium - Annual premium amount
+ * @returns PolicySummary for testing
+ */
+export function createTestPolicy(
+  carrier: string,
+  state: string,
+  productType: 'auto' | 'home' | 'renters' | 'umbrella',
+  annualPremium: number
+): PolicySummary {
+  return {
+    carrier,
+    state,
+    productType,
+    premiums: {
+      annual: annualPremium,
+    },
+  }
+}
+
+/**
+ * Create a test opportunity
+ *
+ * @param discountId - Discount ID (e.g., "disc_safe_driver")
+ * @param discountName - Discount name (e.g., "Safe Driver Discount")
+ * @param percentage - Discount percentage (e.g., 10)
+ * @param annualSavings - Annual savings amount (e.g., 120)
+ * @param carrier - Carrier name (e.g., "GEICO")
+ * @returns Opportunity for testing
+ */
+export function createTestOpportunity(
+  discountId: string,
+  discountName: string,
+  percentage: number,
+  annualSavings: number,
+  carrier: string
+): Opportunity {
+  return {
+    discount: discountName,
+    percentage,
+    annualSavings,
+    requires: [],
+    citation: {
+      id: discountId,
+      type: 'discount',
+      carrier: `carr_${carrier.toLowerCase().replace(/\s+/g, '-')}`,
+      file: `knowledge_pack/carriers/${carrier.toLowerCase().replace(/\s+/g, '-')}.json`,
     },
   }
 }

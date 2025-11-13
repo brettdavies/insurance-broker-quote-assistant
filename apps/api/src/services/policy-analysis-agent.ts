@@ -10,7 +10,7 @@
  */
 
 import type { PolicyAnalysisResult, PolicySummary } from '@repo/shared'
-import { policyAnalysisResultLLMSchema } from '@repo/shared'
+import { DEFAULT_EXTRACTION_TEMPERATURE, policyAnalysisResultLLMSchema } from '@repo/shared'
 import type { ZodSchema } from 'zod'
 import type { z } from 'zod'
 import { getFieldValue } from '../utils/field-helpers'
@@ -373,7 +373,7 @@ export class PolicyAnalysisAgent {
         prompt,
         schema,
         undefined, // No partial fields for policy analysis
-        0.1 // Temperature for analysis (deterministic behavior)
+        DEFAULT_EXTRACTION_TEMPERATURE // Temperature for analysis (deterministic behavior)
       )
 
       // The profile field contains the LLM response (validated by schema.parse in GeminiProvider)

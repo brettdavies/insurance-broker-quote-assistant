@@ -1,5 +1,6 @@
 import type { PolicySummary, UserProfile } from '@repo/shared'
 import {
+  DEFAULT_EXTRACTION_TEMPERATURE,
   type NormalizedField,
   extractStateFromText,
   inferExistingPolicies,
@@ -7,8 +8,11 @@ import {
   policySummarySchema,
   userProfileSchema,
 } from '@repo/shared'
+import { buildPolicyConfidenceMap, buildProfileConfidenceMap } from '../utils/confidence-builder'
 import { hasKeyValueSyntax, parseKeyValueSyntax } from '../utils/key-value-parser'
 import { logError } from '../utils/logger'
+import { validatePolicySummary } from './extractors/policy-validator'
+import { validateProfile } from './extractors/profile-validator'
 import type { LLMProvider } from './llm-provider'
 
 /**
@@ -61,7 +65,7 @@ export class ConversationalExtractor {
         const kvResult = parseKeyValueSyntax(message)
 
         // Validate extracted profile against schema
-        let validatedProfile = this.validateProfile(kvResult.profile)
+        let validatedProfile = validateProfile(kvResult.profile)
 
         // Apply deterministic state normalization if state is missing
         if (!validatedProfile.state) {
@@ -77,7 +81,7 @@ export class ConversationalExtractor {
         return {
           profile: validatedProfile,
           extractionMethod: 'key-value',
-          confidence: this.buildConfidenceMap(validatedProfile, 1.0), // Key-value is always 100% confident
+          confidence: buildProfileConfidenceMap(validatedProfile, {}, 1.0), // Key-value is always 100% confident
           missingFields,
         }
       }
@@ -89,11 +93,11 @@ export class ConversationalExtractor {
         message,
         userProfileSchema,
         pills && Object.keys(pills).length > 0 ? pills : undefined,
-        0.1 // Temperature for extraction (deterministic behavior)
+        DEFAULT_EXTRACTION_TEMPERATURE // Temperature for extraction (deterministic behavior)
       )
 
       // Validate extracted profile against schema
-      const validatedProfile = this.validateProfile(llmResult.profile)
+      const validatedProfile = validateProfile(llmResult.profile)
       console.log(
         '[conversational-extractor] LLM validated profile householdSize:',
         validatedProfile.householdSize
@@ -176,39 +180,6 @@ export class ConversationalExtractor {
   }
 
   /**
-   * Validate profile against UserProfile schema
-   * Returns partial profile with only valid fields
-   */
-  private validateProfile(profile: Partial<UserProfile>): Partial<UserProfile> {
-    try {
-      // Use Zod schema to validate and sanitize
-      const result = userProfileSchema.safeParse(profile)
-      if (result.success) {
-        return result.data
-      }
-
-      // If validation fails, return only valid fields
-      const validProfile: Partial<UserProfile> = {}
-      for (const [key, value] of Object.entries(profile)) {
-        try {
-          const fieldResult =
-            userProfileSchema.shape[key as keyof typeof userProfileSchema.shape]?.safeParse(value)
-          if (fieldResult?.success) {
-            // @ts-expect-error - Dynamic field assignment
-            validProfile[key] = value
-          }
-        } catch {
-          // Skip invalid fields
-        }
-      }
-      return validProfile
-    } catch {
-      // If validation completely fails, return empty profile
-      return {}
-    }
-  }
-
-  /**
    * Calculate missing fields for progressive disclosure
    * Returns array of field names that are not extracted
    */
@@ -240,22 +211,6 @@ export class ConversationalExtractor {
   }
 
   /**
-   * Build confidence map from profile
-   */
-  private buildConfidenceMap(
-    profile: Partial<UserProfile>,
-    defaultConfidence: number
-  ): Record<string, number> {
-    const confidence: Record<string, number> = {}
-    for (const key of Object.keys(profile)) {
-      if (profile[key as keyof UserProfile] !== undefined) {
-        confidence[key] = defaultConfidence
-      }
-    }
-    return confidence
-  }
-
-  /**
    * Extract policy data directly from a policy document file
    *
    * @param file - Policy document file (PDF, DOCX, TXT)
@@ -275,15 +230,12 @@ export class ConversationalExtractor {
         const llmResult = await this.llmProvider.extractFromFile(file, prompt, policySummarySchema)
 
         // Validate extracted policy summary against schema
-        const validatedSummary = this.validatePolicySummary(
+        const validatedSummary = validatePolicySummary(
           llmResult.profile as unknown as Partial<PolicySummary>
         )
 
         // Build confidence scores from LLM result
-        const confidenceScores = this.buildPolicyConfidenceMap(
-          validatedSummary,
-          llmResult.confidence
-        )
+        const confidenceScores = buildPolicyConfidenceMap(validatedSummary, llmResult.confidence)
 
         // Return PolicySummary with metadata attached (will be stripped before returning to client)
         return {
@@ -344,12 +296,12 @@ export class ConversationalExtractor {
 
       // Validate extracted policy summary against schema
       // LLM returns profile as Partial<UserProfile> type, but content matches PolicySummary schema
-      const validatedSummary = this.validatePolicySummary(
+      const validatedSummary = validatePolicySummary(
         llmResult.profile as unknown as Partial<PolicySummary>
       )
 
       // Build confidence scores from LLM result
-      const confidenceScores = this.buildPolicyConfidenceMap(validatedSummary, llmResult.confidence)
+      const confidenceScores = buildPolicyConfidenceMap(validatedSummary, llmResult.confidence)
 
       return {
         ...validatedSummary,
@@ -392,138 +344,5 @@ export class ConversationalExtractor {
         },
       }
     }
-  }
-
-  /**
-   * Validate policy summary against PolicySummary schema
-   * Returns partial policy summary with only valid fields
-   */
-  private validatePolicySummary(policy: Partial<PolicySummary>): Partial<PolicySummary> {
-    try {
-      // Use Zod schema to validate and sanitize
-      const result = policySummarySchema.safeParse(policy)
-      if (result.success) {
-        return result.data
-      }
-
-      // If validation fails, return only valid fields
-      const validPolicy: Partial<PolicySummary> = {}
-      for (const [key, value] of Object.entries(policy)) {
-        try {
-          // Check if field exists in schema
-          if (key in policySummarySchema.shape) {
-            const fieldSchema = (policySummarySchema.shape as Record<string, unknown>)[key]
-            if (fieldSchema && typeof fieldSchema === 'object' && 'safeParse' in fieldSchema) {
-              const fieldResult = (
-                fieldSchema as { safeParse: (val: unknown) => { success: boolean; data?: unknown } }
-              ).safeParse(value)
-              if (fieldResult?.success) {
-                // @ts-expect-error - Dynamic field assignment
-                validPolicy[key] = value
-              }
-            }
-          }
-        } catch {
-          // Skip invalid fields
-        }
-      }
-      return validPolicy
-    } catch {
-      // If validation completely fails, return empty policy
-      return {}
-    }
-  }
-
-  /**
-   * Build confidence map for policy summary from LLM confidence scores
-   */
-  private buildPolicyConfidenceMap(
-    policy: Partial<PolicySummary>,
-    llmConfidence: Record<string, number>
-  ): PolicySummary['confidence'] {
-    const confidence: PolicySummary['confidence'] = {}
-
-    // Map LLM confidence scores to policy confidence structure
-    // User contact fields
-    if (llmConfidence.name !== undefined) {
-      confidence.name = llmConfidence.name
-    }
-    if (llmConfidence.email !== undefined) {
-      confidence.email = llmConfidence.email
-    }
-    if (llmConfidence.phone !== undefined) {
-      confidence.phone = llmConfidence.phone
-    }
-    if (llmConfidence.zip !== undefined) {
-      confidence.zip = llmConfidence.zip
-    }
-    if (llmConfidence.state !== undefined) {
-      confidence.state = llmConfidence.state
-    }
-    if (llmConfidence.address !== undefined) {
-      confidence.address = llmConfidence.address
-    }
-    // Policy-specific fields
-    if (llmConfidence.carrier !== undefined) {
-      confidence.carrier = llmConfidence.carrier
-    }
-    if (llmConfidence.productType !== undefined) {
-      confidence.productType = llmConfidence.productType
-    }
-    if (llmConfidence.coverageLimits !== undefined) {
-      confidence.coverageLimits = llmConfidence.coverageLimits
-    }
-    if (llmConfidence.deductibles !== undefined) {
-      confidence.deductibles = llmConfidence.deductibles
-    }
-    if (llmConfidence.premiums !== undefined) {
-      confidence.premiums = llmConfidence.premiums
-    }
-    if (llmConfidence.effectiveDates !== undefined) {
-      confidence.effectiveDates = llmConfidence.effectiveDates
-    }
-
-    // If no confidence scores from LLM, use default based on whether field exists
-    const defaultConfidence = 0.8 // Default confidence for extracted fields
-    // User contact fields
-    if (policy.name && confidence.name === undefined) {
-      confidence.name = defaultConfidence
-    }
-    if (policy.email && confidence.email === undefined) {
-      confidence.email = defaultConfidence
-    }
-    if (policy.phone && confidence.phone === undefined) {
-      confidence.phone = defaultConfidence
-    }
-    if (policy.zip && confidence.zip === undefined) {
-      confidence.zip = defaultConfidence
-    }
-    if (policy.state && confidence.state === undefined) {
-      confidence.state = defaultConfidence
-    }
-    if (policy.address && confidence.address === undefined) {
-      confidence.address = defaultConfidence
-    }
-    // Policy-specific fields
-    if (policy.carrier && confidence.carrier === undefined) {
-      confidence.carrier = defaultConfidence
-    }
-    if (policy.productType && confidence.productType === undefined) {
-      confidence.productType = defaultConfidence
-    }
-    if (policy.coverageLimits && confidence.coverageLimits === undefined) {
-      confidence.coverageLimits = defaultConfidence
-    }
-    if (policy.deductibles && confidence.deductibles === undefined) {
-      confidence.deductibles = defaultConfidence
-    }
-    if (policy.premiums && confidence.premiums === undefined) {
-      confidence.premiums = defaultConfidence
-    }
-    if (policy.effectiveDates && confidence.effectiveDates === undefined) {
-      confidence.effectiveDates = defaultConfidence
-    }
-
-    return confidence
   }
 }

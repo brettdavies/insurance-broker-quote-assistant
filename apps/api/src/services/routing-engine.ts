@@ -16,8 +16,10 @@ import type {
   RouteDecision,
   UserProfile,
 } from '@repo/shared'
+import { MISSING_FIELD_PENALTY } from '@repo/shared'
 import { getFieldValue } from '../utils/field-helpers'
 import { getAllCarriers as defaultGetAllCarriers } from './knowledge-pack-loader'
+import { defaultEvaluatorFactory } from './routing/eligibility/evaluator-factory'
 
 /**
  * Eligibility evaluation result
@@ -176,11 +178,19 @@ export function routeToCarrier(
 /**
  * Evaluate eligibility for a carrier based on product-specific rules
  *
+ * Uses strategy pattern with evaluator factory to allow extensible eligibility checks.
+ * New eligibility rules can be added by registering new evaluators without modifying this function.
+ *
  * @param carrier - Carrier to evaluate
  * @param profile - User profile with eligibility fields
+ * @param evaluatorFactory - Optional evaluator factory (defaults to defaultEvaluatorFactory)
  * @returns EligibilityResult with eligible flag, missing fields, and explanation
  */
-function evaluateEligibility(carrier: Carrier, profile: UserProfile): EligibilityResult {
+function evaluateEligibility(
+  carrier: Carrier,
+  profile: UserProfile,
+  evaluatorFactory = defaultEvaluatorFactory
+): EligibilityResult {
   if (!profile.productType) {
     return {
       eligible: false,
@@ -200,81 +210,15 @@ function evaluateEligibility(carrier: Carrier, profile: UserProfile): Eligibilit
     }
   }
 
-  const missingFields: string[] = []
-  const reasons: string[] = []
+  const allMissingFields: string[] = []
+  const allReasons: string[] = []
 
-  // Check age eligibility
-  if (eligibility.minAge) {
-    const minAge = eligibility.minAge.value
-    if (profile.age === undefined || profile.age === null) {
-      missingFields.push('age')
-      reasons.push(`Age required (minimum ${minAge})`)
-    } else if (profile.age < minAge) {
-      reasons.push(`Age ${profile.age} below minimum ${minAge}`)
-    }
-  }
-
-  if (eligibility.maxAge) {
-    const maxAge = eligibility.maxAge.value
-    if (profile.age === undefined || profile.age === null) {
-      if (!missingFields.includes('age')) {
-        missingFields.push('age')
-      }
-      reasons.push(`Age required (maximum ${maxAge})`)
-    } else if (profile.age > maxAge) {
-      reasons.push(`Age ${profile.age} above maximum ${maxAge}`)
-    }
-  }
-
-  // Check vehicle limits (auto only)
-  if (productType === 'auto' && eligibility.maxVehicles) {
-    const maxVehicles = eligibility.maxVehicles.value
-    if (profile.vehicles === undefined || profile.vehicles === null) {
-      missingFields.push('vehicles')
-      reasons.push(`Vehicle count required (maximum ${maxVehicles})`)
-    } else if (profile.vehicles > maxVehicles) {
-      reasons.push(`Vehicle count ${profile.vehicles} exceeds maximum ${maxVehicles}`)
-    }
-  }
-
-  // Check credit score minimum
-  if (eligibility.minCreditScore) {
-    const minCreditScore = eligibility.minCreditScore.value
-    if (profile.creditScore === undefined || profile.creditScore === null) {
-      missingFields.push('creditScore')
-      reasons.push(`Credit score required (minimum ${minCreditScore})`)
-    } else if (profile.creditScore < minCreditScore) {
-      reasons.push(`Credit score ${profile.creditScore} below minimum ${minCreditScore}`)
-    }
-  }
-
-  // Check property type restrictions (home/renters only)
-  if (
-    (productType === 'home' || productType === 'renters') &&
-    eligibility.propertyTypeRestrictions
-  ) {
-    const allowedTypes = eligibility.propertyTypeRestrictions.value
-    if (profile.propertyType === undefined || profile.propertyType === null) {
-      missingFields.push('propertyType')
-      reasons.push(`Property type required (allowed: ${allowedTypes.join(', ')})`)
-    } else if (!allowedTypes.includes(profile.propertyType)) {
-      reasons.push(
-        `Property type '${profile.propertyType}' not allowed (allowed: ${allowedTypes.join(', ')})`
-      )
-    }
-  }
-
-  // Check driving record requirement (auto only)
-  if (productType === 'auto' && eligibility.requiresCleanDrivingRecord) {
-    const requiresClean = eligibility.requiresCleanDrivingRecord.value
-    if (requiresClean) {
-      if (profile.cleanRecord3Yr === undefined) {
-        missingFields.push('cleanRecord3Yr')
-        reasons.push('Clean driving record (3 years) required')
-      } else if (!profile.cleanRecord3Yr) {
-        reasons.push('Clean driving record (3 years) required but not met')
-      }
-    }
+  // Run all registered evaluators
+  const evaluators = evaluatorFactory.getAllEvaluators()
+  for (const evaluator of evaluators) {
+    const result = evaluator.evaluate(eligibility, profile, productType)
+    allMissingFields.push(...result.missingFields)
+    allReasons.push(...result.reasons)
   }
 
   // Check state-specific eligibility rules if present
@@ -288,12 +232,15 @@ function evaluateEligibility(carrier: Carrier, profile: UserProfile): Eligibilit
   }
 
   // Carrier is eligible if no reasons to exclude
-  const eligible = reasons.length === 0
+  const eligible = allReasons.length === 0
+
+  // Deduplicate missing fields
+  const uniqueMissingFields = Array.from(new Set(allMissingFields))
 
   return {
     eligible,
-    missingFields,
-    explanation: reasons.length > 0 ? reasons.join('; ') : 'Eligible',
+    missingFields: uniqueMissingFields,
+    explanation: allReasons.length > 0 ? allReasons.join('; ') : 'Eligible',
   }
 }
 
@@ -318,7 +265,7 @@ function calculateMatchScore(
   let score = 1.0
 
   // Deduct points for missing optional fields (lower data completeness)
-  const missingFieldPenalty = eligibilityResult.missingFields.length * 0.1
+  const missingFieldPenalty = eligibilityResult.missingFields.length * MISSING_FIELD_PENALTY
   score -= missingFieldPenalty
 
   // Bonus points for carriers with compensation data (broker preference)

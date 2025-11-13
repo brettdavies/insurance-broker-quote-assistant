@@ -1,6 +1,8 @@
 import type { UserProfile } from '@repo/shared'
 import { unifiedFieldMetadata } from '@repo/shared'
 
+import { assignBooleanField, assignNumericField, assignStringField } from './type-guards'
+
 /**
  * Key-Value Syntax Parser
  *
@@ -104,15 +106,13 @@ export function parseKeyValueSyntax(message: string): KeyValueExtractionResult {
       if (NUMERIC_FIELDS.has(fieldName)) {
         const numValue = Number.parseInt(value, 10)
         if (!Number.isNaN(numValue)) {
-          // @ts-expect-error - Dynamic field assignment
-          profile[fieldName] = numValue
+          assignNumericField(profile, fieldName, numValue)
         }
       } else if (BOOLEAN_FIELDS.has(fieldName)) {
         // Boolean fields: "true", "1", "yes" → true, else false
         const boolValue =
           value.toLowerCase() === 'true' || value === '1' || value.toLowerCase() === 'yes'
-        // @ts-expect-error - Dynamic field assignment
-        profile[fieldName] = boolValue
+        assignBooleanField(profile, fieldName, boolValue)
       } else if (fieldName === 'productType') {
         // Validate product type enum
         const productValue = value.toLowerCase()
@@ -182,8 +182,7 @@ export function parseKeyValueSyntax(message: string): KeyValueExtractionResult {
         }
       } else {
         // String fields
-        // @ts-expect-error - Dynamic field assignment
-        profile[fieldName] = value
+        assignStringField(profile, fieldName, value)
       }
     }
 

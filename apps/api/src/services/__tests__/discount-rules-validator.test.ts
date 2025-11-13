@@ -18,7 +18,11 @@
 import { beforeEach, describe, expect, it, spyOn } from 'bun:test'
 import type { Carrier, Opportunity, PolicySummary, UserProfile } from '@repo/shared'
 import { buildOpportunity, buildPolicySummary, buildUserProfile } from '@repo/shared/src/test-utils'
-import { createTestCarrier } from '../../__tests__/fixtures/knowledge-pack'
+import {
+  createTestCarrier,
+  createTestOpportunity,
+  createTestPolicy,
+} from '../../__tests__/fixtures/knowledge-pack'
 import { DiscountRulesValidator } from '../discount-rules-validator'
 import * as knowledgePackRAG from '../knowledge-pack-rag'
 
@@ -27,38 +31,6 @@ describe('DiscountRulesValidator', () => {
 
   beforeEach(() => {
     validator = new DiscountRulesValidator(knowledgePackRAG)
-  })
-
-  // Helper functions
-  const createTestPolicy = (
-    carrier: string,
-    state: string,
-    productType: string,
-    premium: number
-  ): PolicySummary => ({
-    carrier,
-    state,
-    productType: productType as any,
-    premiums: { annual: premium },
-  })
-
-  const createTestOpportunity = (
-    discountId: string,
-    discountName: string,
-    percentage: number,
-    annualSavings: number,
-    carrierName: string
-  ): Opportunity => ({
-    discount: discountName,
-    percentage,
-    annualSavings,
-    requires: [],
-    citation: {
-      id: discountId,
-      type: 'discount',
-      carrier: carrierName,
-      file: `knowledge_pack/carriers/${carrierName.toLowerCase()}.json`,
-    },
   })
 
   describe('validateOpportunities', () => {
