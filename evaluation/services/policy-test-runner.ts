@@ -7,6 +7,7 @@
  * Follows SRP: Only handles policy test execution.
  */
 
+import type { Browser } from 'playwright'
 import type { PolicyAnalysisResult } from '../../packages/shared/src/index'
 import type { TestCase, TestResult } from '../types'
 import { calculateMetrics } from './metrics-calculator'
@@ -14,8 +15,14 @@ import { fetchAPI } from './test-runner-common'
 
 /**
  * Run a single policy analysis test case
+ *
+ * @param testCase - Test case to run
+ * @param _sharedBrowser - Unused for policy tests (no browser needed)
  */
-export async function runPolicyTest(testCase: TestCase): Promise<TestResult> {
+export async function runPolicyTest(
+  testCase: TestCase,
+  _sharedBrowser?: Browser
+): Promise<TestResult> {
   if (testCase.type !== 'policy') {
     throw new Error('This runner only handles policy test cases')
   }

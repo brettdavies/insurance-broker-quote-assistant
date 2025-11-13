@@ -115,116 +115,127 @@ export async function injectTextIntoEditor(page: Page, text: string): Promise<vo
  * Accesses UnifiedChatInterface's editorRef and profile state.
  *
  * @param page - Playwright Page instance
+ * @param timeout - Maximum wait time in milliseconds (default: 10 seconds)
  * @returns Object with cleaned text and pills
  */
 export async function extractCleanedTextAndPills(
-  page: Page
+  page: Page,
+  timeout = 10000
 ): Promise<{ cleanedText: string; pills: Partial<UserProfile> }> {
-  const result = await page.evaluate(() => {
-    // Try to access React component state via React DevTools
-    const win = window as unknown as {
-      __REACT_DEVTOOLS_GLOBAL_HOOK__?: {
-        renderers?: Map<
-          number,
-          {
-            findFiberByHostInstance?: (node: Node) => unknown
-            findHostInstanceByFiber?: (fiber: unknown) => Node | null
-          }
-        >
-      }
-      editorRef?: {
-        current?: {
-          getTextWithoutPills?: () => string
+  // Set a timeout for the evaluation to prevent indefinite hangs
+  const result = await Promise.race([
+    page.evaluate(() => {
+      // Try to access React component state via React DevTools
+      const win = window as unknown as {
+        __REACT_DEVTOOLS_GLOBAL_HOOK__?: {
+          renderers?: Map<
+            number,
+            {
+              findFiberByHostInstance?: (node: Node) => unknown
+              findHostInstanceByFiber?: (fiber: unknown) => Node | null
+            }
+          >
         }
-      }
-      profile?: Partial<UserProfile>
-      __profileState?: Partial<UserProfile>
-    }
-
-    // Try to access profile state from window (exposed by UnifiedChatInterface)
-    let profile: Partial<UserProfile> = {}
-    let cleanedText = ''
-
-    const winWithProfile = win as unknown as { __profileState?: Partial<UserProfile> }
-    if (winWithProfile.__profileState) {
-      profile = winWithProfile.__profileState
-    }
-
-    // Try window.editorRef first (if frontend exposes it)
-    if (win.editorRef?.current?.getTextWithoutPills) {
-      cleanedText = win.editorRef.current.getTextWithoutPills()
-      if (Object.keys(profile).length === 0 && win.profile) {
-        profile = win.profile
-      }
-      return { cleanedText, pills: profile }
-    }
-
-    // Fallback: Try to find editor element and extract text manually
-    // This is a simplified approach - ideally frontend would expose editorRef
-    const editorElement = document.querySelector(
-      '[contenteditable="true"][data-notes-input="true"]'
-    )
-    if (editorElement) {
-      // Get text content, but exclude pill elements
-      const textNodes: string[] = []
-      const walker = document.createTreeWalker(editorElement, NodeFilter.SHOW_TEXT, {
-        acceptNode(node) {
-          // Skip if parent is a pill
-          const parent = node.parentElement
-          if (parent?.hasAttribute('data-pill')) {
-            return NodeFilter.FILTER_REJECT
-          }
-          return NodeFilter.FILTER_ACCEPT
-        },
-      })
-
-      let node: Node | null = null
-      // biome-ignore lint/suspicious/noAssignInExpressions: Standard pattern for TreeWalker
-      while ((node = walker.nextNode())) {
-        if (node.textContent) {
-          textNodes.push(node.textContent)
-        }
-      }
-
-      const cleanedText = textNodes.join('').trim()
-
-      // Try to extract pills from DOM (pill elements have data-key and data-value)
-      const pills: Partial<UserProfile> = {}
-      const pillElements = editorElement.querySelectorAll('[data-pill="true"]')
-      for (const pill of pillElements) {
-        const key = pill.getAttribute('data-key')
-        const value = pill.getAttribute('data-value')
-        const fieldName = pill.getAttribute('data-field-name')
-        if (key && value) {
-          // Use fieldName if available, otherwise use key
-          const finalKey = fieldName || key
-          // Try to parse value as number, otherwise keep as string
-          const numValue = Number(value)
-          if (!Number.isNaN(numValue)) {
-            ;(pills as Record<string, unknown>)[finalKey] = numValue
-          } else if (value === 'true' || value === 'false') {
-            ;(pills as Record<string, unknown>)[finalKey] = value === 'true'
-          } else {
-            ;(pills as Record<string, unknown>)[finalKey] = value
+        editorRef?: {
+          current?: {
+            getTextWithoutPills?: () => string
           }
         }
+        profile?: Partial<UserProfile>
+        __profileState?: Partial<UserProfile>
       }
 
-      // If we found profile from React state, use that instead (it's more reliable)
-      if (Object.keys(profile).length > 0) {
+      // Try to access profile state from window (exposed by UnifiedChatInterface)
+      let profile: Partial<UserProfile> = {}
+      let cleanedText = ''
+
+      const winWithProfile = win as unknown as { __profileState?: Partial<UserProfile> }
+      if (winWithProfile.__profileState) {
+        profile = winWithProfile.__profileState
+      }
+
+      // Try window.editorRef first (if frontend exposes it)
+      if (win.editorRef?.current?.getTextWithoutPills) {
+        cleanedText = win.editorRef.current.getTextWithoutPills()
+        if (Object.keys(profile).length === 0 && win.profile) {
+          profile = win.profile
+        }
         return { cleanedText, pills: profile }
       }
 
-      return { cleanedText, pills }
-    }
+      // Fallback: Try to find editor element and extract text manually
+      // This is a simplified approach - ideally frontend would expose editorRef
+      const editorElement = document.querySelector(
+        '[contenteditable="true"][data-notes-input="true"]'
+      )
+      if (editorElement) {
+        // Get text content, but exclude pill elements
+        const textNodes: string[] = []
+        const walker = document.createTreeWalker(editorElement, NodeFilter.SHOW_TEXT, {
+          acceptNode(node) {
+            // Skip if parent is a pill
+            const parent = node.parentElement
+            if (parent?.hasAttribute('data-pill')) {
+              return NodeFilter.FILTER_REJECT
+            }
+            return NodeFilter.FILTER_ACCEPT
+          },
+        })
 
-    // If we found profile from React state but no editor element, still return it
-    if (Object.keys(profile).length > 0) {
-      return { cleanedText: '', pills: profile }
-    }
+        let node: Node | null = null
+        // biome-ignore lint/suspicious/noAssignInExpressions: Standard pattern for TreeWalker
+        while ((node = walker.nextNode())) {
+          if (node.textContent) {
+            textNodes.push(node.textContent)
+          }
+        }
 
-    return { cleanedText: '', pills: {} }
-  })
+        const cleanedText = textNodes.join('').trim()
+
+        // Try to extract pills from DOM (pill elements have data-key and data-value)
+        const pills: Partial<UserProfile> = {}
+        const pillElements = editorElement.querySelectorAll('[data-pill="true"]')
+        for (const pill of pillElements) {
+          const key = pill.getAttribute('data-key')
+          const value = pill.getAttribute('data-value')
+          const fieldName = pill.getAttribute('data-field-name')
+          if (key && value) {
+            // Use fieldName if available, otherwise use key
+            const finalKey = fieldName || key
+            // Try to parse value as number, otherwise keep as string
+            const numValue = Number(value)
+            if (!Number.isNaN(numValue)) {
+              ;(pills as Record<string, unknown>)[finalKey] = numValue
+            } else if (value === 'true' || value === 'false') {
+              ;(pills as Record<string, unknown>)[finalKey] = value === 'true'
+            } else {
+              ;(pills as Record<string, unknown>)[finalKey] = value
+            }
+          }
+        }
+
+        // If we found profile from React state, use that instead (it's more reliable)
+        if (Object.keys(profile).length > 0) {
+          return { cleanedText, pills: profile }
+        }
+
+        return { cleanedText, pills }
+      }
+
+      // If we found profile from React state but no editor element, still return it
+      if (Object.keys(profile).length > 0) {
+        return { cleanedText: '', pills: profile }
+      }
+
+      return { cleanedText: '', pills: {} }
+    }),
+    // Timeout promise - rejects after specified time
+    new Promise<never>((_, reject) => {
+      setTimeout(() => {
+        reject(new Error(`Pill extraction timed out after ${timeout}ms`))
+      }, timeout)
+    }),
+  ])
 
   return result
 }

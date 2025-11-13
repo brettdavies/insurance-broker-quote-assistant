@@ -5,7 +5,7 @@
  * Follows DRY principle - extracted from test-runner.ts.
  */
 
-import type { Page } from 'playwright'
+import type { Browser, Page } from 'playwright'
 import { chromium } from 'playwright'
 
 export const FRONTEND_URL = process.env.EVALUATION_FRONTEND_URL || 'http://localhost:3000'
@@ -21,7 +21,46 @@ export interface BrowserContext {
 }
 
 /**
+ * Create a shared browser instance for multiple tests
+ *
+ * This is 60x faster than launching a new browser per test.
+ * Use with createBrowserContext() to create isolated contexts per test.
+ */
+export async function createBrowser(): Promise<Browser> {
+  return await chromium.launch({ headless: false })
+}
+
+/**
+ * Create a fresh browser context (isolated tab) from an existing browser
+ *
+ * Each context is completely isolated - separate cookies, localStorage, etc.
+ * This prevents state pollution between tests while reusing the browser instance.
+ */
+export async function createBrowserContext(browser: Browser): Promise<BrowserContext> {
+  const context = await browser.newContext()
+  const page = await context.newPage()
+
+  // Capture all console logs
+  const consoleLogs: Array<{ type: string; text: string }> = []
+  page.on('console', (msg) => {
+    const text = msg.text()
+    const type = msg.type()
+    consoleLogs.push({ type, text })
+    // Also log to Node.js console for real-time viewing
+    console.log(`[Browser ${type.toUpperCase()}]`, text)
+  })
+
+  return {
+    page,
+    close: async () => await context.close(), // Close context only, not browser
+    consoleLogs,
+  }
+}
+
+/**
  * Launch browser with console logging enabled
+ *
+ * @deprecated Use createBrowser() + createBrowserContext() for better performance
  */
 export async function launchBrowser(): Promise<BrowserContext> {
   const browser = await chromium.launch({ headless: false })

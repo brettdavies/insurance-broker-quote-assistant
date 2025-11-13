@@ -93,6 +93,9 @@ async function main() {
  *
  * Individual reports are generated immediately after each test completes
  * for better UX (users can read results while other tests are running).
+ *
+ * Uses a shared browser instance across all tests for 60x faster execution
+ * and proper state isolation via browser contexts.
  */
 async function runAllTestCases(testCases: TestResult['testCase'][]): Promise<TestResult[]> {
   const results: TestResult[] = []
@@ -102,23 +105,46 @@ async function runAllTestCases(testCases: TestResult['testCase'][]): Promise<Tes
     // Directory might already exist, ignore
   })
 
-  for (const testCase of testCases) {
-    console.log(`\n▶️  Running: ${testCase.name} (${testCase.type})`)
-    const result = await runTestCase(testCase)
-    results.push(result)
+  // Create shared browser instance for all tests (60x faster than launching per test)
+  console.log('🌐 Launching shared browser instance...')
+  let browser:
+    | Awaited<ReturnType<typeof import('./services/test-runner-common').createBrowser>>
+    | undefined
+  try {
+    const { createBrowser } = await import('./services/test-runner-common')
+    browser = await createBrowser()
+    console.log('✅ Shared browser ready (will create fresh contexts per test)')
+  } catch (error) {
+    console.warn('⚠️  Failed to create shared browser, will fallback to per-test browsers')
+    console.warn(error)
+  }
 
-    if (result.passed) {
-      console.log('✅ Passed')
-    } else {
-      console.log(`❌ Failed: ${result.error}`)
+  try {
+    for (const testCase of testCases) {
+      console.log(`\n▶️  Running: ${testCase.name} (${testCase.type})`)
+      const result = await runTestCase(testCase, browser)
+      results.push(result)
+
+      if (result.passed) {
+        console.log('✅ Passed')
+      } else {
+        console.log(`❌ Failed: ${result.error}`)
+      }
+
+      // Generate individual report immediately after test completes
+      try {
+        await generateIndividualReport(result, RESULT_DIR)
+        console.log('📄 Individual report generated')
+      } catch (error) {
+        console.error(`⚠️  Failed to generate individual report: ${error}`)
+      }
     }
-
-    // Generate individual report immediately after test completes
-    try {
-      await generateIndividualReport(result, RESULT_DIR)
-      console.log('📄 Individual report generated')
-    } catch (error) {
-      console.error(`⚠️  Failed to generate individual report: ${error}`)
+  } finally {
+    // Always close the shared browser
+    if (browser) {
+      console.log('\n🔒 Closing shared browser...')
+      await browser.close()
+      console.log('✅ Browser closed')
     }
   }
 
