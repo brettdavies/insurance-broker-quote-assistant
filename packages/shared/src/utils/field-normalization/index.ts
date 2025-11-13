@@ -10,7 +10,7 @@ export type { NormalizedField } from './types'
 
 // Export normalizers
 export { STATE_NAME_TO_CODE, normalizeState, extractStateFromText } from './normalizers'
-export { CARRIER_NORMALIZATIONS } from './normalizers'
+export { CARRIER_NORMALIZATIONS, normalizeCarrierName } from './normalizers'
 
 // Export extractors
 export {

@@ -5,24 +5,8 @@
  * Handles patterns for zip code and current carrier.
  */
 
+import { CARRIER_NORMALIZATIONS } from '../normalizers/carrier-normalizer'
 import type { NormalizedField } from '../types'
-
-/**
- * Carrier name normalization mapping
- * Maps common variations and abbreviations to standard carrier names (uppercase)
- */
-export const CARRIER_NORMALIZATIONS: Record<string, string> = {
-  geico: 'GEICO',
-  'state farm': 'STATE FARM',
-  progressive: 'PROGRESSIVE',
-  allstate: 'ALLSTATE',
-  'liberty mutual': 'LIBERTY MUTUAL',
-  usaa: 'USAA',
-  nationwide: 'NATIONWIDE',
-  farmers: 'FARMERS',
-  'american family': 'AMERICAN FAMILY',
-  travelers: 'TRAVELERS',
-}
 
 /**
  * Extract zip code from broker notes

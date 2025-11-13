@@ -3,6 +3,7 @@ import {
   type NormalizedField,
   extractStateFromText,
   inferExistingPolicies,
+  normalizeCarrierName,
   policySummarySchema,
   userProfileSchema,
 } from '@repo/shared'
@@ -109,9 +110,9 @@ export class ConversationalExtractor {
         finalProfile.householdSize
       )
 
-      // Normalize carrier name to uppercase (knowledge pack standard)
+      // Normalize carrier name using alias map (handles abbreviations like "pro" → "PROGRESSIVE")
       if (finalProfile.currentCarrier) {
-        finalProfile.currentCarrier = finalProfile.currentCarrier.toUpperCase()
+        finalProfile.currentCarrier = normalizeCarrierName(finalProfile.currentCarrier)
         console.log(
           '[conversational-extractor] Normalized currentCarrier to:',
           finalProfile.currentCarrier

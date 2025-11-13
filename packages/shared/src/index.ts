@@ -158,6 +158,7 @@ export {
   STATE_NAME_TO_CODE,
   CARRIER_NORMALIZATIONS,
   normalizeState,
+  normalizeCarrierName,
   extractStateFromText,
   extractState,
   extractProductType,

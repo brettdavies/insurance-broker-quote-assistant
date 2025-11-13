@@ -21,7 +21,7 @@ export {
 export { extractCleanRecord, extractOwnsHome } from './boolean-extractors'
 
 // Text field extraction
-export { CARRIER_NORMALIZATIONS, extractCurrentCarrier, extractZip } from './text-extractors'
+export { extractCurrentCarrier, extractZip } from './text-extractors'
 
 // Product type extraction
 export { extractProductType } from './product-type-extractor'

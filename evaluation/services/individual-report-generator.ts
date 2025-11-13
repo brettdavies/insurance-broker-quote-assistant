@@ -150,6 +150,50 @@ ${JSON.stringify(policyData, null, 2)}
 }
 
 /**
+ * Build field comparison section (expected vs extracted)
+ * Shows which fields were successfully extracted and which were missed
+ */
+function buildFieldComparisonSection(result: TestResult): string {
+  const expected = result.testCase.expectedProfile
+  const actual =
+    result.testCase.type === 'conversational'
+      ? (result.actualResponse as IntakeResult | undefined)?.profile
+      : (result.actualResponse as PolicyAnalysisResult | undefined)?.policy
+
+  if (!expected || !actual) return ''
+
+  const rows: string[] = []
+  rows.push('## Field Extraction Comparison\n')
+  rows.push('| Field | Expected | Extracted | Match |')
+  rows.push('|-------|----------|-----------|-------|')
+
+  // Iterate over expected fields
+  for (const [field, expectedValue] of Object.entries(expected)) {
+    if (expectedValue === undefined || expectedValue === null || expectedValue === '') continue
+
+    const actualValue = (actual as Record<string, unknown>)[field]
+    const expectedStr = JSON.stringify(expectedValue)
+    const actualStr = actualValue !== undefined ? JSON.stringify(actualValue) : 'null'
+
+    // Determine if fields match
+    let match = expectedStr === actualStr
+    // Special handling for currentCarrier (case-insensitive)
+    if (
+      field === 'currentCarrier' &&
+      typeof expectedValue === 'string' &&
+      typeof actualValue === 'string'
+    ) {
+      match = expectedValue.toLowerCase() === actualValue.toLowerCase()
+    }
+
+    rows.push(`| ${field} | ${expectedStr} | ${actualStr} | ${match ? '✅' : '❌'} |`)
+  }
+
+  rows.push('')
+  return rows.join('\n')
+}
+
+/**
  * Extract prefill packet from result
  */
 function extractPrefillPacket(result: TestResult): string {
@@ -267,6 +311,7 @@ export async function generateIndividualReport(
     metricsTableRows: buildMetricsTableRows(result),
     errorSection: buildErrorSection(result),
     testInputSection: buildTestInputSection(result),
+    fieldComparisonSection: buildFieldComparisonSection(result),
     traceSection,
     prefillPacket: extractPrefillPacket(result),
     inputTokens: tokenUsage.inputTokens.toLocaleString(),

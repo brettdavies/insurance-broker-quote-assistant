@@ -35,6 +35,10 @@
 
 ---
 
+{{fieldComparisonSection}}
+
+---
+
 ## Detailed Trace
 
 {{traceSection}}

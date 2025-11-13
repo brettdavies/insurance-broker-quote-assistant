@@ -6,12 +6,13 @@
  * - Policy: intake completeness, discount accuracy, pitch clarity, compliance
  */
 
-import type {
-  IntakeResult,
-  PolicyAnalysisResult,
-  PolicySummary,
-  RouteDecision,
-  UserProfile,
+import {
+  type IntakeResult,
+  type PolicyAnalysisResult,
+  type PolicySummary,
+  type RouteDecision,
+  type UserProfile,
+  normalizeCarrierName,
 } from '../../packages/shared/src/index'
 import type { TestCase } from '../types'
 
@@ -163,13 +164,13 @@ function calculateFieldCompleteness(
     const expectedValue = expectedObj[key]
     const actualValue = actualObj[key]
 
-    // Case-insensitive comparison for carrier fields
+    // Normalize carrier fields using alias map (handles abbreviations like "pro" → "PROGRESSIVE")
     if (
       key === 'currentCarrier' &&
       typeof expectedValue === 'string' &&
       typeof actualValue === 'string'
     ) {
-      return expectedValue.toLowerCase() === actualValue.toLowerCase()
+      return normalizeCarrierName(expectedValue) === normalizeCarrierName(actualValue)
     }
 
     return JSON.stringify(expectedValue) === JSON.stringify(actualValue)
