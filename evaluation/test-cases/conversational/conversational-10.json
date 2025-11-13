@@ -27,22 +27,10 @@
   },
   "expectedOpportunities": [
     {
-      "discount": "Multi-Vehicle",
-      "percentage": 15,
-      "annualSavings": 450,
-      "requires": ["vehicles", "vehicles >= 3"]
-    },
-    {
       "discount": "Safe Driver",
-      "percentage": 10,
-      "annualSavings": 200,
+      "percentage": 8,
+      "annualSavings": 312,
       "requires": ["cleanRecord3Yr"]
-    },
-    {
-      "discount": "Good Credit",
-      "percentage": 5,
-      "annualSavings": 100,
-      "requires": ["creditScore", "creditScore >= 700"]
     }
   ]
 }

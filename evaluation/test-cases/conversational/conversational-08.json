@@ -25,16 +25,10 @@
   },
   "expectedOpportunities": [
     {
-      "discount": "Home Safety Features",
-      "percentage": 5,
-      "annualSavings": 120,
-      "requires": ["homeSafetyFeatures"]
-    },
-    {
-      "discount": "Wind Mitigation",
+      "discount": "Home Security",
       "percentage": 10,
-      "annualSavings": 200,
-      "requires": ["windMitigation", "state === FL"]
+      "annualSavings": 235,
+      "requires": ["homeSecurity"]
     }
   ]
 }

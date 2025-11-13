@@ -30,13 +30,6 @@
     "confidence": 0.91,
     "rationale": "GEICO offers umbrella insurance in New York and customer already has auto and home policies with GEICO."
   },
-  "expectedOpportunities": [
-    {
-      "discount": "Multi-Policy Bundle",
-      "percentage": 10,
-      "annualSavings": 200,
-      "requires": ["existingPolicies", "existingPolicies.length >= 2"]
-    }
-  ]
+  "expectedOpportunities": []
 }
 

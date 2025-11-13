@@ -20,14 +20,7 @@
     "confidence": 0.88,
     "rationale": "State Farm offers renters insurance in Florida and matches eligibility criteria."
   },
-  "expectedOpportunities": [
-    {
-      "discount": "Multi-Policy Bundle",
-      "percentage": 10,
-      "annualSavings": 50,
-      "requires": ["existingPolicies"]
-    }
-  ],
+  "expectedOpportunities": [],
   "missingFields": ["personalProperty", "liability"]
 }
 

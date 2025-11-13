@@ -28,14 +28,14 @@
   "expectedOpportunities": [
     {
       "discount": "Multi-Policy Bundle",
-      "percentage": 15,
-      "annualSavings": 300,
+      "percentage": 7.5,
+      "annualSavings": 105,
       "requires": ["ownsHome", "existingPolicies"]
     },
     {
       "discount": "Safe Driver",
-      "percentage": 10,
-      "annualSavings": 150,
+      "percentage": 5,
+      "annualSavings": 70,
       "requires": ["cleanRecord3Yr"]
     }
   ]

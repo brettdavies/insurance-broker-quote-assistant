@@ -24,15 +24,9 @@
   "expectedOpportunities": [
     {
       "discount": "Safe Driver",
-      "percentage": 10,
-      "annualSavings": 100,
+      "percentage": 4,
+      "annualSavings": 60,
       "requires": ["cleanRecord3Yr"]
-    },
-    {
-      "discount": "Good Student",
-      "percentage": 5,
-      "annualSavings": 50,
-      "requires": ["goodStudent"]
     }
   ]
 }

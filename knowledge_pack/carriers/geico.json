@@ -560,7 +560,12 @@
           "_id": "fld_znjb7bxy35n48cgdbkqff9qs",
           "value": {
             "mustHaveProducts": ["auto"],
-            "minProducts": 1
+            "minProducts": 1,
+            "fieldExclusions": {
+              "cleanRecord3Yr": true,
+              "cleanRecord5Yr": true
+            },
+            "description": "Must NOT have clean driving record (discount is for drivers without clean record)"
           },
           "_sources": [
             {

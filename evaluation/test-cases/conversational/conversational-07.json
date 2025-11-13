@@ -24,15 +24,9 @@
   "expectedOpportunities": [
     {
       "discount": "Safe Driver",
-      "percentage": 15,
-      "annualSavings": 250,
-      "requires": ["cleanRecord3Yr"]
-    },
-    {
-      "discount": "Multi-Vehicle",
       "percentage": 10,
-      "annualSavings": 180,
-      "requires": ["vehicles", "vehicles >= 2"]
+      "annualSavings": 240,
+      "requires": ["cleanRecord3Yr"]
     }
   ]
 }
