@@ -51,6 +51,7 @@ export function buildTraceSection(
   sections.push(buildRoutingSection(trace))
   sections.push(buildDiscountOpportunitiesSection(testResult))
   sections.push(buildComplianceSection(trace, testResult))
+  sections.push(buildPrefillPacketSection(testResult))
   sections.push(buildRulesConsultedSection(trace))
   sections.push(buildOtherFieldsSection(trace))
 
@@ -229,6 +230,23 @@ function buildComplianceSection(trace: DecisionTrace, testResult?: TestResult): 
   sections.push(`\`\`\`json\n${JSON.stringify(disclaimerAnalysis, null, 2)}\n\`\`\`\n`)
 
   return sections.join('\n')
+}
+
+/**
+ * Build prefill packet section
+ */
+function buildPrefillPacketSection(testResult?: TestResult): string {
+  if (!testResult?.actualResponse) return ''
+
+  const actualResponse = testResult.actualResponse as
+    | IntakeResult
+    | PolicyAnalysisResult
+    | undefined
+  const prefill = actualResponse?.prefill
+
+  if (!prefill) return ''
+
+  return `#### Prefill Packet (IQuote Pro Format)\n\n\`\`\`json\n${JSON.stringify(prefill, null, 2)}\n\`\`\`\n`
 }
 
 /**

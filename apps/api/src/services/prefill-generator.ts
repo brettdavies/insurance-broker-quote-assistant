@@ -7,7 +7,14 @@
  * @see docs/stories/1.8.prefill-packet-generation.md
  */
 
-import type { MissingField, PrefillPacket, RouteDecision, UserProfile } from '@repo/shared'
+import type {
+  BrokerInfo,
+  MissingField,
+  PrefillPacket,
+  PrefillRouting,
+  RouteDecision,
+  UserProfile,
+} from '@repo/shared'
 import {
   getCarrierFieldRequirements,
   getProductByCode,
@@ -195,10 +202,51 @@ export function generateLeadHandoffSummary(
 }
 
 /**
+ * Get hardcoded broker information
+ * TODO: In production, this would come from authenticated user session or environment config
+ *
+ * @returns BrokerInfo with hardcoded demo agent details
+ */
+function getBrokerInfo(): BrokerInfo {
+  return {
+    agentName: 'Sarah Johnson',
+    agentLicenseNumber: 'TX-0123456',
+    licenseState: 'TX',
+    licenseExpiration: '2026-12-31',
+    npn: '18765432', // National Producer Number
+    brokerageName: 'Example Insurance Agency',
+    agentPhone: '(512) 555-1234',
+    agentEmail: 'sarah.johnson@example.com',
+    agencyAddress: '123 Insurance Way, Austin, TX 78701',
+  }
+}
+
+/**
+ * Create simplified routing decision for prefill packet
+ * Only includes carrier and rationale, not internal match scores or alternatives
+ *
+ * @param route - Full routing decision from routing engine
+ * @returns Simplified routing for customer-facing prefill packet
+ */
+function createPrefillRouting(route: RouteDecision): PrefillRouting {
+  // Create brief rationale without exposing internal scores
+  const briefRationale = `${route.primaryCarrier} recommended based on your profile and coverage needs.`
+
+  return {
+    primaryCarrier: route.primaryCarrier,
+    confidence: route.confidence,
+    rationale: briefRationale,
+  }
+}
+
+/**
  * Generate prefill packet from user profile, route decision, missing fields, and disclaimers
  *
  * Creates structured PrefillPacket with complete profile and routing data.
  * Uses nested objects for type safety and easier import/export to broker systems.
+ *
+ * Note: Full routing decision with match scores is kept in IntakeResult for compliance logs.
+ * The prefill packet only shows the recommended carrier (not alternatives or internal scores).
  *
  * @param profile - User profile with captured shopper data
  * @param route - Route decision from routing engine
@@ -220,7 +268,8 @@ export function generatePrefillPacket(
   // Create structured prefill packet
   const prefill: PrefillPacket = {
     profile, // Complete user profile with all extracted fields
-    routing: route, // Full routing decision with carriers, scores, and rationale
+    routing: createPrefillRouting(route), // Simplified routing (no internal scores or alternatives)
+    broker: getBrokerInfo(), // Licensed agent information (hardcoded for demo)
     missingFields: missingFields.length > 0 ? missingFields : [],
     disclaimers: disclaimers.length > 0 ? disclaimers : [],
     agentNotes: generateLeadHandoffSummary(profile, route, missingFields),
