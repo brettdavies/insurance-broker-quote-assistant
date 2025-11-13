@@ -6,7 +6,7 @@
   "carrier": "Progressive",
   "state": "IL",
   "product": "auto",
-  "input": "IL auto. 3 vehicles: 2021 F-150, 2019 Camry, 2020 CR-V. 3 drivers. Age 36. 12k miles/yr. Clean record. Credit 750",
+  "input": "IL auto. 3 vehicles: 2021 F-150, 2019 Camry, 2020 CR-V. 3 drivers. Age 36. 12k miles/yr. Clean record. Credit 750. Has pro",
   "expectedProfile": {
     "state": "IL",
     "productType": "auto",
@@ -16,7 +16,8 @@
     "householdSize": 3,
     "annualMileage": 12000,
     "cleanRecord3Yr": true,
-    "creditScore": 750
+    "creditScore": 750,
+    "currentCarrier": "Progressive"
   },
   "expectedRoute": {
     "primaryCarrier": "Progressive",

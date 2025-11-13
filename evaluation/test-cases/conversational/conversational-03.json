@@ -6,12 +6,13 @@
   "carrier": "State Farm",
   "state": "FL",
   "product": "renters",
-  "input": "FL renters. Apt. Age 28. Lives alone",
+  "input": "FL renters. Apt. Age 28. Lives alone. Has SF",
   "expectedProfile": {
     "state": "FL",
     "productType": "renters",
     "age": 28,
-    "householdSize": 1
+    "householdSize": 1,
+    "currentCarrier": "State Farm"
   },
   "expectedRoute": {
     "primaryCarrier": "State Farm",

@@ -6,13 +6,14 @@
   "carrier": "GEICO",
   "state": "TX",
   "product": "auto",
-  "input": "TX auto. Age 38. 2 vehicles. Clean record 5yrs. No tickets. No accidents",
+  "input": "TX auto. Age 38. 2 vehicles. Has geico. Clean record 5yrs. No tickets. No accidents",
   "expectedProfile": {
     "state": "TX",
     "productType": "auto",
     "age": 38,
     "vehicles": 2,
-    "cleanRecord3Yr": true
+    "cleanRecord5Yr": true,
+    "currentCarrier": "GEICO"
   },
   "expectedRoute": {
     "primaryCarrier": "GEICO",

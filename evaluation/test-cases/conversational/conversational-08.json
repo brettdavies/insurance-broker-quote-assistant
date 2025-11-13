@@ -6,7 +6,7 @@
   "carrier": "State Farm",
   "state": "FL",
   "product": "home",
-  "input": "FL home. Built 2012. 1800sqft. Tile roof. Age 45. Hurricane coverage needed",
+  "input": "FL home. SF. Built 2012. 1800sqft. Tile roof. Age 45. Hurricane coverage needed",
   "expectedProfile": {
     "state": "FL",
     "productType": "home",
@@ -14,7 +14,8 @@
     "yearBuilt": 2012,
     "squareFeet": 1800,
     "roofType": "tile",
-    "propertyType": "single_family"
+    "propertyType": "single_family",
+    "currentCarrier": "State Farm"
   },
   "expectedRoute": {
     "primaryCarrier": "State Farm",

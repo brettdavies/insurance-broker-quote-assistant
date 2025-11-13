@@ -6,7 +6,7 @@
   "carrier": "State Farm",
   "state": "IL",
   "product": ["auto", "home"],
-  "input": "IL bundle auto+home. 2018 Camry. Owns house built 2015. Age 40. 2 vehicles. Clean record",
+  "input": "IL bundle auto+home. 2018 Camry. Owns house built 2015. Currently has SF. Age 40. 2 vehicles. Clean record",
   "expectedProfile": {
     "state": "IL",
     "productType": "auto",
@@ -15,11 +15,11 @@
     "ownsHome": true,
     "yearBuilt": 2015,
     "cleanRecord3Yr": true,
+    "currentCarrier": "State Farm",
     "existingPolicies": [
       {
         "product": "home",
-        "carrier": "State Farm",
-        "premium": 800
+        "carrier": "State Farm"
       }
     ]
   },

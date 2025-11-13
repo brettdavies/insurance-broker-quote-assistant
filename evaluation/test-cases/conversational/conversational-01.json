@@ -6,7 +6,7 @@
   "carrier": "GEICO",
   "state": "CA",
   "product": "auto",
-  "input": "CA auto. 35yo. 2 cars, 2 drivers. Clean record 5yrs. Owns home. Zip 90210",
+  "input": "CA auto. 35yo. 2 cars, 2 drivers. Has geico. Clean record 5yrs. Owns home. Zip 90210",
   "expectedProfile": {
     "state": "CA",
     "productType": "auto",
@@ -14,8 +14,9 @@
     "vehicles": 2,
     "drivers": 2,
     "householdSize": 2,
+    "currentCarrier": "GEICO",
     "ownsHome": true,
-    "cleanRecord3Yr": true,
+    "cleanRecord5Yr": true,
     "zip": "90210"
   },
   "expectedRoute": {

@@ -6,13 +6,14 @@
   "carrier": "Progressive",
   "state": "CA",
   "product": "auto",
-  "input": "CA auto. Age 25. 1 car - 2019 Civic. 7yrs driving. No accidents",
+  "input": "CA auto. Age 25. 1 car - 2019 Civic. 7yrs driving. No accidents. Progressive",
   "expectedProfile": {
     "state": "CA",
     "productType": "auto",
     "age": 25,
     "vehicles": 1,
-    "cleanRecord3Yr": true
+    "cleanRecord3Yr": true,
+    "currentCarrier": "Progressive"
   },
   "expectedRoute": {
     "primaryCarrier": "Progressive",

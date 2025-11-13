@@ -6,14 +6,15 @@
   "carrier": "Progressive",
   "state": "TX",
   "product": "home",
-  "input": "TX home insurance. 3br house. Built 2010. 2000sqft. Age 42",
+  "input": "TX home insurance. 3br house. Built 2010. Currently with pro. 2000sqft. Age 42",
   "expectedProfile": {
     "state": "TX",
     "productType": "home",
     "age": 42,
     "yearBuilt": 2010,
     "squareFeet": 2000,
-    "propertyType": "single_family"
+    "propertyType": "single_family",
+    "currentCarrier": "Progressive"
   },
   "expectedRoute": {
     "primaryCarrier": "Progressive",
