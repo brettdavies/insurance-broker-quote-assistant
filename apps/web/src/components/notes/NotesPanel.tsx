@@ -34,6 +34,7 @@ interface NotesPanelProps {
     insertText: (text: string) => void
     setContent: (text: string) => void
     getTextWithoutPills: () => string
+    getEditor: () => import('lexical').LexicalEditor
   } | null>
   autoFocus?: boolean
   // Inferred fields (optional - populated by inference engine in future stories)
@@ -300,7 +301,7 @@ export function NotesPanel({
         onSubmit={handleFieldSubmit}
       />
 
-      {/* Inferred field modal (Story 4.4) */}
+      {/* Inferred field modal (Story 4.4 + 4.5) */}
       {inferredModalField && (
         <FieldModal
           open={inferredModalOpen}
@@ -314,6 +315,7 @@ export function NotesPanel({
           onDelete={() => handleDeleteInferred(inferredModalField.fieldName)}
           onSaveInferred={(value) => handleSaveInferred(inferredModalField.fieldName, value)}
           onSaveKnown={(value) => handleSaveKnown(inferredModalField.fieldName, value)}
+          editor={editorRef?.current?.getEditor() ?? null}
         />
       )}
     </>

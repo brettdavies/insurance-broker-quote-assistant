@@ -10,6 +10,7 @@ export function HomeScreen() {
     insertText: (text: string) => void
     setContent: (text: string) => void
     getTextWithoutPills: () => string
+    getEditor: () => import('lexical').LexicalEditor
   } | null>(null)
 
   // Handle content change - trigger transition on first keystroke or field injection

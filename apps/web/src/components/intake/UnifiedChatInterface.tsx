@@ -50,6 +50,7 @@ interface UnifiedChatInterfaceProps {
     insertText: (text: string) => void
     setContent: (text: string) => void
     getTextWithoutPills: () => string
+    getEditor: () => import('lexical').LexicalEditor
   } | null>
 }
 
@@ -98,6 +99,7 @@ export function UnifiedChatInterface({
     insertText: (text: string) => void
     setContent: (text: string) => void
     getTextWithoutPills: () => string
+    getEditor: () => import('lexical').LexicalEditor
   } | null>(null)
   const editorRef = externalEditorRef || internalEditorRef
 
@@ -126,6 +128,7 @@ export function UnifiedChatInterface({
     insertText: (text: string) => void
     setContent: (text: string) => void
     getTextWithoutPills: () => string
+    getEditor: () => import('lexical').LexicalEditor
   } | null>(null)
 
   // Global keyboard shortcuts

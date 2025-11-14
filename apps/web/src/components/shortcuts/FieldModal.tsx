@@ -8,7 +8,9 @@ import {
 } from '@/components/ui/dialog'
 import { Input } from '@/components/ui/input'
 import { FIELD_METADATA, FIELD_TYPE } from '@/config/shortcuts'
+import { usePillInjection } from '@/hooks/usePillInjection'
 import type { FieldCommand } from '@/hooks/useSlashCommands'
+import type { LexicalEditor } from 'lexical'
 import { useCallback, useEffect, useState } from 'react'
 
 /**
@@ -47,6 +49,8 @@ interface FieldModalProps {
   onSaveInferred?: (value: unknown) => void
   /** Callback when [Save Known] button clicked (converts to known field) */
   onSaveKnown?: (value: unknown) => void
+  /** Lexical editor instance (required for pill injection when using [Save Known]) */
+  editor?: LexicalEditor | null
 }
 
 export function FieldModal({
@@ -64,9 +68,13 @@ export function FieldModal({
   onDelete,
   onSaveInferred,
   onSaveKnown,
+  editor,
 }: FieldModalProps) {
   const [value, setValue] = useState('')
   const [error, setError] = useState('')
+
+  // Pill injection hook for [Save Known] button
+  const { injectPill } = usePillInjection(editor ?? null)
 
   useEffect(() => {
     if (open) {
@@ -121,11 +129,15 @@ export function FieldModal({
   }, [onSaveInferred, value, onOpenChange])
 
   const handleSaveKnown = useCallback(() => {
-    // Story 4.5 will implement pill injection
-    // For now, just call callback
+    // Story 4.5: Inject pill into lexical editor before converting to known
+    if (fieldName) {
+      injectPill(fieldName, value)
+    }
+
+    // Call parent callback to update state
     onSaveKnown?.(value)
     onOpenChange(false)
-  }, [onSaveKnown, value, onOpenChange])
+  }, [onSaveKnown, value, onOpenChange, fieldName, injectPill])
 
   // Keyboard shortcuts for inferred fields
   useEffect(() => {

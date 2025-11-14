@@ -34,6 +34,7 @@ interface UploadPanelProps {
     insertText: (text: string) => void
     setContent: (text: string) => void
     getTextWithoutPills: () => string
+    getEditor: () => import('lexical').LexicalEditor
   } | null>
 }
 
@@ -53,6 +54,7 @@ export function UploadPanel({
     insertText: (text: string) => void
     setContent: (text: string) => void
     getTextWithoutPills: () => string
+    getEditor: () => import('lexical').LexicalEditor
   } | null>(null)
   const internalFileInputRef = useRef<HTMLInputElement | null>(null)
   const editorRef = externalEditorRef || internalEditorRef

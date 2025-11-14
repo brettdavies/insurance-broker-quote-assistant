@@ -59,6 +59,9 @@ function EditorRefPlugin({
     focus: () => void
     clear: () => void
     insertText: (text: string) => void
+    setContent: (text: string) => void
+    getTextWithoutPills: () => string
+    getEditor: () => import('lexical').LexicalEditor
   } | null>
 }): null {
   const [editor] = useLexicalComposerContext()
@@ -116,6 +119,7 @@ function EditorRefPlugin({
         getTextWithoutPills: () => {
           return extractTextWithoutPills(editor)
         },
+        getEditor: () => editor,
       } as NonNullable<
         React.MutableRefObject<{
           focus: () => void
@@ -123,6 +127,7 @@ function EditorRefPlugin({
           insertText: (text: string) => void
           setContent: (text: string) => void
           getTextWithoutPills: () => string
+          getEditor: () => import('lexical').LexicalEditor
         } | null>['current']
       >
     }
@@ -171,6 +176,7 @@ export interface KeyValueEditorProps {
     insertText: (text: string) => void
     setContent: (text: string) => void
     getTextWithoutPills: () => string
+    getEditor: () => import('lexical').LexicalEditor
   } | null>
   autoFocus?: boolean
   className?: string
