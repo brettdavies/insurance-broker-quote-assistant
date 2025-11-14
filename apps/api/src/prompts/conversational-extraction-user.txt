@@ -3,19 +3,31 @@ Extract insurance shopper information from broker notes taken during a conversat
 These notes are informal, may contain incomplete thoughts, fragments, abbreviations, and random facts.
 They were written by the broker, not the prospect, so they may not be full sentences or paragraphs.
 
-{{ALREADY_EXTRACTED_FIELDS}}
+Already Known (do not modify):
+{{knownFields}}
 
+Currently Inferred (you may modify):
+{{inferredFields}}
+
+Suppressed (do not infer):
+{{suppressedFields}}
 
 ===================
 === Start notes ===
 ===================
 
-{{MESSAGE}}
+{{message}}
 
-=================
-=== End notes ===
-=================
+===================
+==== End notes ====
+===================
 
+
+Extract any additional fields not already known. For inferred fields, you may:
+- Confirm with same value if text supports it
+- Edit if text provides better/different value
+- Delete (set to null) if text contradicts the inference
+- Upgrade to known if confidence ≥85%
 
 Extract all mentioned fields from these notes. Look for:
 - state: US state code (REQUIRED if mentioned). Examples: "CA" (from "CA auto"), "California", "TX" (from "TX home"). IMPORTANT: When you see patterns like "CA auto" or "TX home", extract the state code (CA, TX, etc.) as the state field.
@@ -65,3 +77,9 @@ Example 2 (output):
   "existingPolicies": null,
   ... [all unmentioned fields as null]
 }
+
+IMPORTANT: Return JSON with the following structure:
+- known: fields with high confidence (≥85%) that you extracted from the text
+- inferred: fields with medium/low confidence (<85%) or confirmed/edited from existing inferred fields
+- confidence: confidence scores (0.0-1.0) for each field in both known and inferred
+- reasoning: explanation for each inferred field modification or new inference

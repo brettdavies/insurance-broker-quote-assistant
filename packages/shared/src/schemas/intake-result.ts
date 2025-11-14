@@ -54,14 +54,30 @@ export const discountOpportunitySchema = z.object({
 export type DiscountOpportunity = z.infer<typeof discountOpportunitySchema>
 
 /**
+ * Extraction Result Schema
+ * Contains extraction details with known/inferred field separation (Epic 4)
+ */
+export const extractionResultSchema = z.object({
+  method: z.enum(['key-value', 'llm']), // Extraction method used
+  known: userProfileSchema.partial().optional(), // Known fields (high confidence or broker-set)
+  inferred: userProfileSchema.partial().optional(), // Inferred fields (medium/low confidence)
+  suppressedFields: z.array(z.string()).optional(), // Fields broker dismissed
+  inferenceReasons: z.record(z.string()).optional(), // Reasoning for each inferred field
+  confidence: z.record(z.number().min(0).max(1)).optional(), // Field-level confidence scores
+})
+
+export type ExtractionResult = z.infer<typeof extractionResultSchema>
+
+/**
  * Intake Result Schema
  * MVP version with stubs for future components
  */
 export const intakeResultSchema = z.object({
-  profile: userProfileSchema,
+  profile: userProfileSchema, // DEPRECATED: Use extraction.known + extraction.inferred (kept for backward compatibility)
+  extraction: extractionResultSchema.optional(), // NEW (Epic 4): Extraction details with known/inferred separation
   missingFields: z.array(missingFieldSchema), // Array of missing fields with priority indicators
-  extractionMethod: z.enum(['key-value', 'llm']).optional(), // Extraction method used (AC5)
-  confidence: z.record(z.number().min(0).max(1)).optional(), // Field-level confidence scores (AC5)
+  extractionMethod: z.enum(['key-value', 'llm']).optional(), // DEPRECATED: Use extraction.method (kept for backward compatibility)
+  confidence: z.record(z.number().min(0).max(1)).optional(), // DEPRECATED: Use extraction.confidence (kept for backward compatibility)
   route: routeDecisionSchema.optional(), // Routing decision from routing engine
   opportunities: z.array(discountOpportunitySchema).optional(), // Discount opportunities from discount engine
   prefill: prefillPacketSchema.optional(), // Prefill packet for broker handoff

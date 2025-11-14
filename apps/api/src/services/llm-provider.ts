@@ -36,13 +36,16 @@ export interface LLMProvider {
    * @param message - Current broker message (cleaned text without pills)
    * @param schema - Zod schema to convert to JSON Schema for structured output
    * @param partialFields - Optional partial fields already extracted from pills (single source of truth)
+   * @param temperature - Temperature for LLM generation (default: 0.1 for extraction, 0.3 for pitch)
+   * @param systemPrompt - Optional custom system prompt (overrides default prompt building)
    * @returns Extraction result with profile, confidence scores, and optional reasoning
    */
   extractWithStructuredOutput(
     message: string,
     schema?: unknown, // Zod schema type
     partialFields?: Partial<UserProfile>, // Partial fields from pills (single source of truth)
-    temperature?: number // Temperature for LLM generation (default: 0.1 for extraction, 0.3 for pitch)
+    temperature?: number, // Temperature for LLM generation (default: 0.1 for extraction, 0.3 for pitch)
+    systemPrompt?: string // Custom system prompt (overrides default)
   ): Promise<ExtractionResult>
 
   /**

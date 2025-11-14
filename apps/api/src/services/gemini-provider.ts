@@ -182,11 +182,24 @@ Extract the information accurately and completely according to the provided sche
     message: string,
     schema: ZodSchema = userProfileSchema,
     partialFields?: Partial<UserProfile>,
-    temperature?: number
+    temperature?: number,
+    customSystemPrompt?: string
   ): Promise<ExtractionResult> {
     try {
-      // Load and build prompts
-      const prompts = await this.loadAndBuildPrompts({ message, partialFields })
+      // Load and build prompts (or use custom prompts)
+      let prompts: { systemPrompt: string; userPrompt: string; fullPrompt: string }
+
+      if (customSystemPrompt) {
+        // Use custom system prompt (for known/inferred/suppressed fields)
+        prompts = {
+          systemPrompt: customSystemPrompt,
+          userPrompt: message,
+          fullPrompt: `${customSystemPrompt}\n\n${message}`,
+        }
+      } else {
+        // Use default prompt building (backward compatibility)
+        prompts = await this.loadAndBuildPrompts({ message, partialFields })
+      }
 
       // Store prompts for trace logging
       this.lastSystemPrompt = prompts.systemPrompt

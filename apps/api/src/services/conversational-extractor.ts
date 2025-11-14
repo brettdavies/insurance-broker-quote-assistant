@@ -1,3 +1,5 @@
+import fs from 'node:fs'
+import path from 'node:path'
 import type { PolicySummary, UserProfile } from '@repo/shared'
 import {
   DEFAULT_EXTRACTION_TEMPERATURE,
@@ -25,12 +27,15 @@ import type { LLMProvider } from './llm-provider'
  */
 
 export interface ExtractionResult {
-  profile: Partial<UserProfile>
+  profile: Partial<UserProfile> // DEPRECATED: Use known + inferred instead (kept for backward compatibility)
+  known?: Partial<UserProfile> // Known fields (high confidence ≥85% or explicitly set by broker)
+  inferred?: Partial<UserProfile> // Inferred fields (confidence <85%)
   extractionMethod: 'key-value' | 'llm'
   confidence: Record<string, number> // Field-level confidence scores
   missingFields: string[] // Fields not extracted (for progressive disclosure)
   reasoning?: string // Optional reasoning for extraction
   tokenUsage?: import('./llm-provider').TokenUsage // Token usage from LLM (if extractionMethod === 'llm')
+  inferenceReasons?: Record<string, string> // Reasoning for each inferred field
 }
 
 export class ConversationalExtractor {
@@ -51,19 +56,75 @@ export class ConversationalExtractor {
   }
 
   /**
+   * Build system prompt with known/inferred/suppressed fields injected
+   */
+  private buildSystemPrompt(
+    knownFields: Partial<UserProfile>,
+    inferredFields: Partial<UserProfile>,
+    suppressedFields: string[]
+  ): string {
+    // Load template from conversational-extraction-system.txt
+    const templatePath = path.join(
+      process.cwd(),
+      'apps/api/src/prompts/conversational-extraction-system.txt'
+    )
+    const template = fs.readFileSync(templatePath, 'utf-8')
+
+    // Inject known/inferred/suppressed fields
+    return template
+      .replace('{{knownFields}}', JSON.stringify(knownFields))
+      .replace('{{inferredFields}}', JSON.stringify(inferredFields))
+      .replace('{{suppressedFields}}', suppressedFields.join(', '))
+  }
+
+  /**
+   * Build user prompt with known/inferred/suppressed fields injected
+   */
+  private buildUserPrompt(
+    message: string,
+    knownFields: Partial<UserProfile>,
+    inferredFields: Partial<UserProfile>,
+    suppressedFields: string[]
+  ): string {
+    // Load template from conversational-extraction-user.txt
+    const templatePath = path.join(
+      process.cwd(),
+      'apps/api/src/prompts/conversational-extraction-user.txt'
+    )
+    const template = fs.readFileSync(templatePath, 'utf-8')
+
+    // Inject all fields
+    return template
+      .replace('{{knownFields}}', JSON.stringify(knownFields, null, 2))
+      .replace('{{inferredFields}}', JSON.stringify(inferredFields, null, 2))
+      .replace('{{suppressedFields}}', suppressedFields.join(', '))
+      .replace('{{message}}', message)
+  }
+
+  /**
    * Extract structured fields from broker message
    *
    * @param message - Current broker message (cleaned text without pills)
-   * @param pills - Optional structured fields already extracted from pills (single source of truth)
+   * @param knownFields - Optional known fields explicitly set by broker (read-only for LLM)
+   * @param inferredFields - Optional inferred fields from InferenceEngine (modifiable by LLM)
    * @param suppressedFields - Optional array of field names to skip during inference
    * @returns Extraction result with profile, method, confidence, and missing fields
    */
   async extractFields(
     message: string,
-    pills?: Partial<UserProfile>,
+    knownFields?: Partial<UserProfile>,
+    inferredFields?: Partial<UserProfile>,
     suppressedFields?: string[]
   ): Promise<ExtractionResult> {
-    console.log('[conversational-extractor] extractFields called with pills:', pills)
+    console.log('[conversational-extractor] extractFields called with knownFields:', knownFields)
+    console.log(
+      '[conversational-extractor] extractFields called with inferredFields:',
+      inferredFields
+    )
+    console.log(
+      '[conversational-extractor] extractFields called with suppressedFields:',
+      suppressedFields
+    )
     try {
       // Step 1: Try key-value parser first (instant, free, deterministic)
       if (hasKeyValueSyntax(message)) {
@@ -92,13 +153,29 @@ export class ConversationalExtractor {
       }
 
       // Step 2: Use LLM for natural language extraction
-      // Pills are passed as partialFields (single source of truth for structured data)
-      // Use temperature 0.1 for extraction (or GEMINI_TEMPERATURE_EXTRACTION env var)
-      const llmResult = await this.llmProvider.extractWithStructuredOutput(
+      // Build custom prompts with known/inferred/suppressed fields
+      const systemPrompt = this.buildSystemPrompt(
+        knownFields || {},
+        inferredFields || {},
+        suppressedFields || []
+      )
+      const userPrompt = this.buildUserPrompt(
         message,
+        knownFields || {},
+        inferredFields || {},
+        suppressedFields || []
+      )
+
+      console.log('[conversational-extractor] System prompt:', systemPrompt)
+      console.log('[conversational-extractor] User prompt:', userPrompt)
+
+      // Use LLM with custom system prompt
+      const llmResult = await this.llmProvider.extractWithStructuredOutput(
+        userPrompt,
         userProfileSchema,
-        pills && Object.keys(pills).length > 0 ? pills : undefined,
-        DEFAULT_EXTRACTION_TEMPERATURE // Temperature for extraction (deterministic behavior)
+        undefined, // No partialFields needed (using prompts instead)
+        DEFAULT_EXTRACTION_TEMPERATURE, // Temperature for extraction (deterministic behavior)
+        systemPrompt // NEW: Pass custom system prompt
       )
 
       // Validate extracted profile against schema
@@ -108,24 +185,72 @@ export class ConversationalExtractor {
         validatedProfile.householdSize
       )
 
-      // Merge pills with LLM extraction result
-      // Pills take precedence (they're the single source of truth from frontend)
-      const finalProfile =
-        pills && Object.keys(pills).length > 0
-          ? { ...validatedProfile, ...pills }
-          : validatedProfile
+      // Separate LLM extracted fields into known vs inferred based on confidence
+      const llmKnownFields: Partial<UserProfile> = {}
+      const llmInferredFields: Partial<UserProfile> = {}
+      const inferenceReasons: Record<string, string> = {}
+
+      for (const [fieldName, fieldValue] of Object.entries(validatedProfile)) {
+        const confidence = llmResult.confidence[fieldName] ?? 0
+
+        if (confidence >= 0.85) {
+          // High confidence: treat as known
+          // Type assertion needed because Object.entries loses type information
+          ;(llmKnownFields as Record<string, unknown>)[fieldName] = fieldValue
+        } else if (confidence > 0) {
+          // Medium/low confidence: treat as inferred
+          // Type assertion needed because Object.entries loses type information
+          ;(llmInferredFields as Record<string, unknown>)[fieldName] = fieldValue
+          inferenceReasons[fieldName] =
+            llmResult.reasoning ?? `Extracted with ${(confidence * 100).toFixed(0)}% confidence`
+        }
+      }
+
+      // Merge with input knownFields (broker-set fields always take precedence)
+      const finalKnownFields: Partial<UserProfile> = {
+        ...llmKnownFields,
+        ...(knownFields || {}), // Broker-set known fields override LLM extractions
+      }
+
+      // Use ONLY LLM's extracted inferred fields (don't merge input inferredFields)
+      // The input inferredFields are just for LLM context, not to be carried forward automatically
+      // The LLM decides which inferred fields to keep/modify/delete/upgrade
+      const finalInferredFields: Partial<UserProfile> = {
+        ...llmInferredFields,
+      }
+
+      // Remove suppressed fields from inferred (should never appear due to prompt, but defensive)
+      if (suppressedFields && suppressedFields.length > 0) {
+        for (const suppressedField of suppressedFields) {
+          delete finalInferredFields[suppressedField as keyof UserProfile]
+        }
+      }
+
+      // Merge all fields for backward compatibility (profile field)
+      const finalProfile: Partial<UserProfile> = {
+        ...finalInferredFields,
+        ...finalKnownFields, // Known fields take precedence
+      }
+
+      console.log('[conversational-extractor] Final known fields:', finalKnownFields)
+      console.log('[conversational-extractor] Final inferred fields:', finalInferredFields)
       console.log(
-        '[conversational-extractor] After merging pills, finalProfile householdSize:',
-        finalProfile.householdSize
+        '[conversational-extractor] Final profile (backward compatibility):',
+        finalProfile
       )
 
       // Normalize carrier name using alias map (handles abbreviations like "pro" → "PROGRESSIVE")
       if (finalProfile.currentCarrier) {
         finalProfile.currentCarrier = normalizeCarrierName(finalProfile.currentCarrier)
-        console.log(
-          '[conversational-extractor] Normalized currentCarrier to:',
-          finalProfile.currentCarrier
-        )
+        // Also normalize in known/inferred fields
+        if (finalKnownFields.currentCarrier) {
+          finalKnownFields.currentCarrier = normalizeCarrierName(finalKnownFields.currentCarrier)
+        }
+        if (finalInferredFields.currentCarrier) {
+          finalInferredFields.currentCarrier = normalizeCarrierName(
+            finalInferredFields.currentCarrier
+          )
+        }
       }
 
       // Infer existingPolicies from currentCarrier + productType
@@ -150,21 +275,28 @@ export class ConversationalExtractor {
         const inferredPolicies = inferExistingPolicies(fieldsMap)
         if (inferredPolicies.length > 0) {
           finalProfile.existingPolicies = inferredPolicies
+          // Add to inferred fields if not in known
+          if (!finalKnownFields.existingPolicies) {
+            finalInferredFields.existingPolicies = inferredPolicies
+            inferenceReasons.existingPolicies = 'Inferred from currentCarrier + productType'
+          }
           console.log('[conversational-extractor] Inferred existingPolicies:', inferredPolicies)
         }
       }
 
       // Calculate missing fields
       const missingFields = this.calculateMissingFields(finalProfile)
-      console.log('[conversational-extractor] Final profile before return:', finalProfile)
 
       return {
-        profile: finalProfile,
+        profile: finalProfile, // Backward compatibility
+        known: finalKnownFields, // NEW: Known fields
+        inferred: finalInferredFields, // NEW: Inferred fields
         extractionMethod: 'llm',
         confidence: llmResult.confidence,
         missingFields,
         reasoning: llmResult.reasoning,
         tokenUsage: llmResult.tokenUsage, // Include token usage from LLM
+        inferenceReasons, // NEW: Reasoning for each inferred field
       }
     } catch (error) {
       // Log error but return partial result (graceful degradation)

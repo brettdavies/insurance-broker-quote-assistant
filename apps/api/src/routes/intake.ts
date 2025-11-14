@@ -69,10 +69,21 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
 
       const { message, pills, suppressedFields, testPitch } = validationResult.data
 
+      // Pills are now treated as knownFields (broker-curated, read-only for LLM)
+      const knownFields = pills || {}
+
+      // TODO: Call InferenceEngine to get inferred fields from known fields (Story 4.2)
+      // For now, use empty object for inferredFields until InferenceEngine is available
+      const inferredFields = {}
+
       // Extract fields using Conversational Extractor
-      // Pills are passed as partialFields (single source of truth for structured data)
-      // suppressedFields array passed to skip inference for dismissed fields
-      const extractionResult = await extractor.extractFields(message, pills, suppressedFields)
+      // Pass knownFields (pills), inferredFields, and suppressedFields
+      const extractionResult = await extractor.extractFields(
+        message,
+        knownFields,
+        inferredFields,
+        suppressedFields
+      )
 
       // Build llmCalls array from extraction token usage and prompts
       // Prompts are retrieved from extractor (which gets them from LLM provider instance state)
@@ -252,10 +263,19 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
 
       // Build IntakeResult response
       const result: IntakeResult = {
-        profile: extractionResult.profile,
+        profile: extractionResult.profile, // DEPRECATED: Use extraction.known + extraction.inferred (kept for backward compatibility)
+        extraction: {
+          // NEW (Epic 4): Extraction details with known/inferred separation
+          method: extractionResult.extractionMethod,
+          known: extractionResult.known,
+          inferred: extractionResult.inferred,
+          suppressedFields: suppressedFields || [],
+          inferenceReasons: extractionResult.inferenceReasons,
+          confidence: extractionResult.confidence,
+        },
         missingFields: missingFieldsForResponse,
-        extractionMethod: extractionResult.extractionMethod, // AC5: Include extraction method
-        confidence: extractionResult.confidence, // AC5: Include confidence scores
+        extractionMethod: extractionResult.extractionMethod, // DEPRECATED: Use extraction.method (kept for backward compatibility)
+        confidence: extractionResult.confidence, // DEPRECATED: Use extraction.confidence (kept for backward compatibility)
         route: routeDecision, // Routing decision from routing engine
         opportunities, // Discount opportunities from discount engine
         prefill: prefillPacket, // Prefill packet for broker handoff
