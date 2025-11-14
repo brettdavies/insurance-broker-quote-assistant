@@ -19,6 +19,7 @@ import { useIntake } from '@/hooks/useIntake'
 import { useKeyboardShortcuts } from '@/hooks/useKeyboardShortcuts'
 import { usePolicyAnalysis } from '@/hooks/usePolicyAnalysis'
 import type { ActionCommand, FieldCommand } from '@/hooks/useSlashCommands'
+import { useSuppressionManager } from '@/hooks/useSuppressionManager'
 import { useUnifiedChatState } from '@/hooks/useUnifiedChatState'
 import { copySavingsPitchToClipboard } from '@/lib/clipboard-utils'
 import { exportSavingsPitch } from '@/lib/export-utils'
@@ -93,6 +94,7 @@ export function UnifiedChatInterface({
   } = state
 
   const policyAnalysisMutation = usePolicyAnalysis()
+  const suppression = useSuppressionManager()
   const internalEditorRef = useRef<{
     focus: () => void
     clear: () => void
@@ -273,6 +275,7 @@ export function UnifiedChatInterface({
           const result = await intakeMutation.mutateAsync({
             message: cleanedText,
             pills: Object.keys(pills).length > 0 ? pills : undefined,
+            suppressedFields: suppression.getSuppressed(),
           })
 
           // Store latest intake result for prefill packet access
@@ -422,6 +425,44 @@ export function UnifiedChatInterface({
     }
   }, [latestIntakeResult, profile, toast])
 
+  // Handle inferred field dismissal (Story 4.7)
+  const handleDismissInference = useCallback(
+    (fieldName: string) => {
+      suppression.addSuppression(fieldName)
+      toast({
+        title: 'Field dismissed',
+        description: `${fieldName} will not be inferred again this session`,
+        duration: 3000,
+      })
+    },
+    [suppression, toast]
+  )
+
+  // Handle inferred field edit (Story 4.4/4.5)
+  const handleEditInference = useCallback(
+    (fieldName: string, value: unknown) => {
+      // Update profile with edited inferred value (stays as inferred)
+      updateProfile({ [fieldName]: value })
+    },
+    [updateProfile]
+  )
+
+  // Handle convert inferred to known (Story 4.5/4.7)
+  const handleConvertToKnown = useCallback(
+    (fieldName: string, value: unknown) => {
+      // Remove from suppression list (if present)
+      suppression.removeSuppression(fieldName)
+      // Update profile with known value
+      updateProfile({ [fieldName]: value })
+      toast({
+        title: 'Field saved',
+        description: `${fieldName} saved as known field`,
+        duration: 3000,
+      })
+    },
+    [suppression, updateProfile, toast]
+  )
+
   // Handle action commands (reset, help, export, copy, etc.)
   const handleActionCommand = useCallback(
     (command: ActionCommand) => {
@@ -431,6 +472,9 @@ export function UnifiedChatInterface({
         setCurrentField(null)
         setFieldModalOpen(false)
         setHelpModalOpen(false)
+
+        // Clear suppression list
+        suppression.clearSuppressed()
 
         // Clear any pending debounce timers
         if (debounceTimerRef.current) {
@@ -540,6 +584,7 @@ export function UnifiedChatInterface({
       setCurrentField,
       setFieldModalOpen,
       setHelpModalOpen,
+      suppression,
     ]
   )
 
@@ -618,6 +663,12 @@ export function UnifiedChatInterface({
                 onCommandError={handleCommandErrorMerged}
                 editorRef={editorRef}
                 autoFocus={!isActive}
+                inferredFields={{}}
+                inferenceReasons={{}}
+                confidence={{}}
+                onDismissInference={handleDismissInference}
+                onEditInference={handleEditInference}
+                onConvertToKnown={handleConvertToKnown}
               />
             </div>
 

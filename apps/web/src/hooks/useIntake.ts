@@ -7,13 +7,8 @@
 
 import { api } from '@/lib/api-client'
 import { extractFields, parseKeyValueSyntax } from '@/lib/pill-parser'
-import type { IntakeResult, UserProfile } from '@repo/shared'
+import type { IntakeRequest, IntakeResult } from '@repo/shared'
 import { useMutation, useQueryClient } from '@tanstack/react-query'
-
-export interface IntakeRequest {
-  message: string
-  pills?: Partial<UserProfile>
-}
 
 /**
  * Fallback function to parse fields locally when API is unavailable

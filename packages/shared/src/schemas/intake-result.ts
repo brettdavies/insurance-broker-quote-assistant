@@ -11,6 +11,20 @@ import {
 import { type UserProfile, userProfileSchema } from './user-profile'
 
 /**
+ * Intake Request Schema
+ *
+ * Input to conversational intake flow.
+ * Includes message text, known fields from pills, and suppressed fields list.
+ */
+export const intakeRequestSchema = z.object({
+  message: z.string(),
+  pills: userProfileSchema.partial().optional(),
+  suppressedFields: z.array(z.string()).optional(),
+})
+
+export type IntakeRequest = z.infer<typeof intakeRequestSchema>
+
+/**
  * Intake Result Schema
  *
  * Complete output from conversational intake flow, ready for broker to finalize quote.

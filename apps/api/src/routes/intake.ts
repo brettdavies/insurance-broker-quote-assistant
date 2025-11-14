@@ -31,6 +31,7 @@ import { logError } from '../utils/logger'
 const intakeRequestSchema = z.object({
   message: z.string().min(1),
   pills: userProfileSchema.partial().optional(),
+  suppressedFields: z.array(z.string()).optional(),
   // Test-only field: allows injecting a pitch for end-to-end compliance testing
   // Only accepted when NODE_ENV=test
   testPitch: z.string().optional(),
@@ -66,11 +67,12 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
         )
       }
 
-      const { message, pills, testPitch } = validationResult.data
+      const { message, pills, suppressedFields, testPitch } = validationResult.data
 
       // Extract fields using Conversational Extractor
       // Pills are passed as partialFields (single source of truth for structured data)
-      const extractionResult = await extractor.extractFields(message, pills)
+      // suppressedFields array passed to skip inference for dismissed fields
+      const extractionResult = await extractor.extractFields(message, pills, suppressedFields)
 
       // Build llmCalls array from extraction token usage and prompts
       // Prompts are retrieved from extractor (which gets them from LLM provider instance state)

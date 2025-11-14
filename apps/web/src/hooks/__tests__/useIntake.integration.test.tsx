@@ -1,9 +1,9 @@
 import '../../test-setup'
 import { afterEach, beforeEach, describe, expect, it } from 'bun:test'
+import type { IntakeRequest } from '@repo/shared'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { renderHook, waitFor } from '@testing-library/react'
 import { useIntake } from '../useIntake'
-import type { IntakeRequest } from '../useIntake'
 
 const createTestQueryClient = () =>
   new QueryClient({

@@ -56,10 +56,12 @@ export {
 
 // Export intake result schema and types
 export {
+  intakeRequestSchema,
   intakeResultSchema,
   routeDecisionSchema,
   citationSchema,
   discountOpportunitySchema,
+  type IntakeRequest,
   type IntakeResult,
   type RouteDecision,
   type Citation,

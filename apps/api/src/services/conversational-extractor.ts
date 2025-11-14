@@ -55,9 +55,14 @@ export class ConversationalExtractor {
    *
    * @param message - Current broker message (cleaned text without pills)
    * @param pills - Optional structured fields already extracted from pills (single source of truth)
+   * @param suppressedFields - Optional array of field names to skip during inference
    * @returns Extraction result with profile, method, confidence, and missing fields
    */
-  async extractFields(message: string, pills?: Partial<UserProfile>): Promise<ExtractionResult> {
+  async extractFields(
+    message: string,
+    pills?: Partial<UserProfile>,
+    suppressedFields?: string[]
+  ): Promise<ExtractionResult> {
     console.log('[conversational-extractor] extractFields called with pills:', pills)
     try {
       // Step 1: Try key-value parser first (instant, free, deterministic)
