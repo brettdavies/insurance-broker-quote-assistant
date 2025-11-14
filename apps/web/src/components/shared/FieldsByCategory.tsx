@@ -21,6 +21,7 @@ export interface FieldsByCategoryProps {
   onFieldClick: (fieldKey: string, currentValue?: string | number | boolean) => void
   emptyMessage?: string
   defaultOpenCategories?: string[]
+  onDismiss?: (fieldKey: string) => void
 }
 
 export function FieldsByCategory({
@@ -29,6 +30,7 @@ export function FieldsByCategory({
   onFieldClick,
   emptyMessage = 'No fields captured yet.',
   defaultOpenCategories,
+  onDismiss,
 }: FieldsByCategoryProps) {
   const totalFields = Object.values(fieldsByCategory).reduce(
     (sum, fields) => sum + fields.length,
@@ -61,7 +63,12 @@ export function FieldsByCategory({
             <AccordionContent>
               <div className="space-y-2">
                 {fields.map((field) => (
-                  <FieldItem key={field.fieldKey} field={field} onClick={onFieldClick} />
+                  <FieldItem
+                    key={field.fieldKey}
+                    field={field}
+                    onClick={onFieldClick}
+                    onDismiss={onDismiss}
+                  />
                 ))}
               </div>
             </AccordionContent>

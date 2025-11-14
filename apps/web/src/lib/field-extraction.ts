@@ -39,7 +39,9 @@ const USER_PROFILE_CATEGORY_LABELS: Record<string, string> = {
  */
 export function extractUserProfileFields(
   profile: UserProfile,
-  confidence?: Record<string, number>
+  confidence?: Record<string, number>,
+  inferredFields?: Partial<UserProfile>,
+  inferenceReasons?: Record<string, string>
 ): Record<string, FieldItemData[]> {
   const fieldsByCategory: Record<string, FieldItemData[]> = {
     identity: [],
@@ -71,12 +73,19 @@ export function extractUserProfileFields(
         displayValue = profileValue ? 'Yes' : 'No'
       }
 
+      // Determine if field is inferred (check if it exists in inferredFields object)
+      const isInferred = inferredFields
+        ? (inferredFields as Record<string, unknown>)[fieldName] !== undefined
+        : false
+
       fieldsByCategory[displayCategory]?.push({
         name: fieldMetadata.label,
         value: displayValue,
         category: displayCategory,
         fieldKey: fieldName,
         confidence: confidence?.[fieldName],
+        isInferred,
+        inferenceReason: isInferred ? inferenceReasons?.[fieldName] : undefined,
       })
     }
   }
