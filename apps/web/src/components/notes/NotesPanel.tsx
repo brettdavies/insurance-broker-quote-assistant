@@ -15,8 +15,10 @@ import { FieldModal } from '@/components/shortcuts/FieldModal'
 import { COMMAND_TO_KEY, NUMERIC_FIELDS } from '@/config/shortcuts'
 import { type ActionCommand, type FieldCommand, useSlashCommands } from '@/hooks/useSlashCommands'
 import { useLexicalComposerContext } from '@lexical/react/LexicalComposerContext'
+import type { UserProfile } from '@repo/shared'
 import { $getNodeByKey, $insertNodes, TextNode } from 'lexical'
 import { useCallback, useEffect, useState } from 'react'
+import { InferredFieldsSection } from './InferredFieldsSection'
 import { $isPillNode, PillNode } from './nodes/PillNode'
 
 interface NotesPanelProps {
@@ -34,6 +36,13 @@ interface NotesPanelProps {
     getTextWithoutPills: () => string
   } | null>
   autoFocus?: boolean
+  // Inferred fields (optional - populated by inference engine in future stories)
+  inferredFields?: Partial<UserProfile>
+  inferenceReasons?: Record<string, string>
+  confidence?: Record<string, number>
+  onDismissInference?: (fieldName: string) => void
+  onEditInference?: (fieldName: string, value: unknown) => void
+  onConvertToKnown?: (fieldName: string, value: unknown) => void
 }
 
 // NotesPanel-specific plugins that extend KeyValueEditor
@@ -140,6 +149,12 @@ export function NotesPanel({
   onCommandError,
   editorRef,
   autoFocus = false,
+  inferredFields = {},
+  inferenceReasons = {},
+  confidence = {},
+  onDismissInference = () => {},
+  onEditInference = () => {},
+  onConvertToKnown = () => {},
 }: NotesPanelProps) {
   const [fieldModalOpen, setFieldModalOpen] = useState(false)
   const [currentField, setCurrentField] = useState<FieldCommand | null>(null)
@@ -220,6 +235,16 @@ export function NotesPanel({
                 />
               </>
             }
+          />
+
+          {/* Inferred Fields Section */}
+          <InferredFieldsSection
+            inferredFields={inferredFields}
+            inferenceReasons={inferenceReasons}
+            confidence={confidence}
+            onDismiss={onDismissInference}
+            onEdit={onEditInference}
+            onConvertToKnown={onConvertToKnown}
           />
         </div>
       </div>
