@@ -15,7 +15,7 @@ import { FieldModal } from '@/components/shortcuts/FieldModal'
 import { COMMAND_TO_KEY, NUMERIC_FIELDS } from '@/config/shortcuts'
 import { type ActionCommand, type FieldCommand, useSlashCommands } from '@/hooks/useSlashCommands'
 import { useLexicalComposerContext } from '@lexical/react/LexicalComposerContext'
-import type { UserProfile } from '@repo/shared'
+import { type UserProfile, unifiedFieldMetadata } from '@repo/shared'
 import { $getNodeByKey, $insertNodes, TextNode } from 'lexical'
 import { useCallback, useEffect, useState } from 'react'
 import { InferredFieldsSection } from './InferredFieldsSection'
@@ -161,10 +161,53 @@ export function NotesPanel({
   const [fieldValue, setFieldValue] = useState<string | null>(null)
   const [content, setContent] = useState('')
 
+  // Inferred field modal state (Story 4.4)
+  const [inferredModalOpen, setInferredModalOpen] = useState(false)
+  const [inferredModalField, setInferredModalField] = useState<{
+    fieldName: string
+    fieldLabel: string
+    value: unknown
+  } | null>(null)
+
   const handleFieldCommand = useCallback((command: FieldCommand) => {
     setCurrentField(command)
     setFieldModalOpen(true)
   }, [])
+
+  // Inferred field modal handlers (Story 4.4)
+  const handleEditInferenceLocal = useCallback((fieldName: string, value: unknown) => {
+    const metadata = unifiedFieldMetadata[fieldName]
+    setInferredModalField({
+      fieldName,
+      fieldLabel: metadata?.label || fieldName,
+      value,
+    })
+    setInferredModalOpen(true)
+  }, [])
+
+  const handleSaveInferred = useCallback(
+    (fieldName: string, value: unknown) => {
+      onEditInference(fieldName, value)
+      setInferredModalOpen(false)
+    },
+    [onEditInference]
+  )
+
+  const handleSaveKnown = useCallback(
+    (fieldName: string, value: unknown) => {
+      onConvertToKnown(fieldName, value)
+      setInferredModalOpen(false)
+    },
+    [onConvertToKnown]
+  )
+
+  const handleDeleteInferred = useCallback(
+    (fieldName: string) => {
+      onDismissInference(fieldName)
+      setInferredModalOpen(false)
+    },
+    [onDismissInference]
+  )
 
   const handleActionCommandLocal = useCallback(
     (command: ActionCommand) => {
@@ -243,18 +286,36 @@ export function NotesPanel({
             inferenceReasons={inferenceReasons}
             confidence={confidence}
             onDismiss={onDismissInference}
-            onEdit={onEditInference}
+            onEdit={handleEditInferenceLocal}
             onConvertToKnown={onConvertToKnown}
           />
         </div>
       </div>
 
+      {/* Slash command field modal (legacy) */}
       <FieldModal
         open={fieldModalOpen}
         onOpenChange={setFieldModalOpen}
         field={currentField}
         onSubmit={handleFieldSubmit}
       />
+
+      {/* Inferred field modal (Story 4.4) */}
+      {inferredModalField && (
+        <FieldModal
+          open={inferredModalOpen}
+          onOpenChange={setInferredModalOpen}
+          isInferred={true}
+          fieldName={inferredModalField.fieldName}
+          fieldLabel={inferredModalField.fieldLabel}
+          currentValue={inferredModalField.value}
+          reasoning={inferenceReasons[inferredModalField.fieldName]}
+          confidence={confidence[inferredModalField.fieldName]}
+          onDelete={() => handleDeleteInferred(inferredModalField.fieldName)}
+          onSaveInferred={(value) => handleSaveInferred(inferredModalField.fieldName, value)}
+          onSaveKnown={(value) => handleSaveKnown(inferredModalField.fieldName, value)}
+        />
+      )}
     </>
   )
 }
