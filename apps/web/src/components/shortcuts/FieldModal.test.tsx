@@ -18,13 +18,13 @@ describe('FieldModal - Legacy Mode (Slash Commands)', () => {
     const { container } = render(
       <FieldModal open={true} onOpenChange={onOpenChange} field="name" onSubmit={onSubmit} />
     )
+    const body = within(container.ownerDocument.body)
 
-    const withinContainer = within(container)
-    expect(withinContainer.getByText('Name')).toBeDefined()
-    expect(withinContainer.getByText('Cancel')).toBeDefined()
-    expect(withinContainer.getByText('Submit')).toBeDefined()
-    expect(withinContainer.queryByText('Delete')).toBeNull()
-    expect(withinContainer.queryByText('Save Inferred')).toBeNull()
+    expect(body.getByText('Name')).toBeDefined()
+    expect(body.getByText('Cancel')).toBeDefined()
+    expect(body.getByText('Submit')).toBeDefined()
+    expect(body.queryByText('Delete')).toBeNull()
+    expect(body.queryByText('Save Inferred')).toBeNull()
   })
 
   test('does not show reasoning or confidence sections in legacy mode', () => {
@@ -34,10 +34,10 @@ describe('FieldModal - Legacy Mode (Slash Commands)', () => {
     const { container } = render(
       <FieldModal open={true} onOpenChange={onOpenChange} field="name" onSubmit={onSubmit} />
     )
+    const body = within(container.ownerDocument.body)
 
-    const withinContainer = within(container)
-    expect(withinContainer.queryByText('Reasoning:')).toBeNull()
-    expect(withinContainer.queryByText(/Confidence:/)).toBeNull()
+    expect(body.queryByText('Reasoning:')).toBeNull()
+    expect(body.queryByText(/Confidence:/)).toBeNull()
   })
 })
 
@@ -60,9 +60,9 @@ describe('FieldModal - Inferred Mode (3-Button Layout)', () => {
         onSaveKnown={onSaveKnown}
       />
     )
+    const body = within(container.ownerDocument.body)
 
-    const withinContainer = within(container)
-    expect(withinContainer.getByText('Owns Home (Inferred)')).toBeDefined()
+    expect(body.getByText('Owns Home (Inferred)')).toBeDefined()
   })
 
   test('displays reasoning section when provided', () => {
@@ -84,10 +84,10 @@ describe('FieldModal - Inferred Mode (3-Button Layout)', () => {
         onSaveKnown={onSaveKnown}
       />
     )
+    const body = within(container.ownerDocument.body)
 
-    const withinContainer = within(container)
-    expect(withinContainer.getByText('Reasoning:')).toBeDefined()
-    expect(withinContainer.getByText('Renters insurance implies tenant status')).toBeDefined()
+    expect(body.getByText('Reasoning:')).toBeDefined()
+    expect(body.getByText('Renters insurance implies tenant status')).toBeDefined()
   })
 
   test('displays confidence score when < 90%', () => {
@@ -109,9 +109,9 @@ describe('FieldModal - Inferred Mode (3-Button Layout)', () => {
         onSaveKnown={onSaveKnown}
       />
     )
+    const body = within(container.ownerDocument.body)
 
-    const withinContainer = within(container)
-    expect(withinContainer.getByText('Confidence: 75%')).toBeDefined()
+    expect(body.getByText('Confidence: 75%')).toBeDefined()
   })
 
   test('hides confidence score when ≥ 90%', () => {
@@ -133,9 +133,9 @@ describe('FieldModal - Inferred Mode (3-Button Layout)', () => {
         onSaveKnown={onSaveKnown}
       />
     )
+    const body = within(container.ownerDocument.body)
 
-    const withinContainer = within(container)
-    expect(withinContainer.queryByText(/Confidence:/)).toBeNull()
+    expect(body.queryByText(/Confidence:/)).toBeNull()
   })
 
   test('shows 3 buttons in inferred mode', () => {
@@ -156,13 +156,13 @@ describe('FieldModal - Inferred Mode (3-Button Layout)', () => {
         onSaveKnown={onSaveKnown}
       />
     )
+    const body = within(container.ownerDocument.body)
 
-    const withinContainer = within(container)
-    expect(withinContainer.getByText('Delete')).toBeDefined()
-    expect(withinContainer.getByText('Save Inferred')).toBeDefined()
-    expect(withinContainer.getByText('Save Known')).toBeDefined()
-    expect(withinContainer.queryByText('Cancel')).toBeNull()
-    expect(withinContainer.queryByText('Submit')).toBeNull()
+    expect(body.getByText('Delete')).toBeDefined()
+    expect(body.getByText('Save Inferred')).toBeDefined()
+    expect(body.getByText('Save Known')).toBeDefined()
+    expect(body.queryByText('Cancel')).toBeNull()
+    expect(body.queryByText('Submit')).toBeNull()
   })
 
   test('[Save Inferred] button disabled when value unchanged', () => {
@@ -183,9 +183,9 @@ describe('FieldModal - Inferred Mode (3-Button Layout)', () => {
         onSaveKnown={onSaveKnown}
       />
     )
+    const body = within(container.ownerDocument.body)
 
-    const withinContainer = within(container)
-    const saveInferredBtn = withinContainer.getByText('Save Inferred')
+    const saveInferredBtn = body.getByText('Save Inferred')
     expect(saveInferredBtn.hasAttribute('disabled')).toBe(true)
   })
 })
@@ -210,9 +210,9 @@ describe('FieldModal - Styling Tests', () => {
         onSaveKnown={onSaveKnown}
       />
     )
+    const body = within(container.ownerDocument.body)
 
-    const withinContainer = within(container)
-    const reasoningText = withinContainer.getByText('Test reasoning')
+    const reasoningText = body.getByText('Test reasoning')
     expect(reasoningText.className).toContain('text-[#a3a3a3]')
   })
 
@@ -235,9 +235,9 @@ describe('FieldModal - Styling Tests', () => {
         onSaveKnown={onSaveKnown}
       />
     )
+    const body = within(container.ownerDocument.body)
 
-    const withinContainer = within(container)
-    const confidenceText = withinContainer.getByText('Confidence: 75%')
+    const confidenceText = body.getByText('Confidence: 75%')
     expect(confidenceText.className).toContain('text-[#737373]')
     expect(confidenceText.className).toContain('italic')
   })
