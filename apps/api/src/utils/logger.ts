@@ -74,6 +74,24 @@ export class Logger {
   }
 
   /**
+   * Log debug message
+   */
+  async logDebug(message: string, data?: Record<string, unknown>): Promise<void> {
+    // Only log debug messages if LOG_LEVEL is 'debug'
+    const logLevel = process.env.LOG_LEVEL || 'info'
+    if (logLevel !== 'debug') {
+      return
+    }
+
+    await this.writeLog({
+      level: 'debug',
+      timestamp: new Date().toISOString(),
+      message,
+      ...data,
+    })
+  }
+
+  /**
    * Log info message
    */
   async logInfo(message: string, data?: Record<string, unknown>): Promise<void> {
@@ -175,6 +193,10 @@ export const complianceLogger = new Logger({
  * Convenience functions using default production logger
  * (for backward compatibility)
  */
+export async function logDebug(message: string, data?: Record<string, unknown>): Promise<void> {
+  return productionLogger.logDebug(message, data)
+}
+
 export async function logInfo(message: string, data?: Record<string, unknown>): Promise<void> {
   return productionLogger.logInfo(message, data)
 }

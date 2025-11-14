@@ -1,4 +1,5 @@
 import type {
+  InferenceRule,
   IntakeResult,
   MissingField,
   PolicySummary,
@@ -6,7 +7,13 @@ import type {
   RouteDecision,
   UserProfile,
 } from '@repo/shared'
-import { prefillPacketSchema, userProfileSchema } from '@repo/shared'
+import {
+  InferenceEngine,
+  TEXT_PATTERN_INFERENCES,
+  prefillPacketSchema,
+  unifiedFieldMetadata,
+  userProfileSchema,
+} from '@repo/shared'
 import { Hono } from 'hono'
 import { z } from 'zod'
 import { validateOutput } from '../services/compliance-filter'
@@ -72,9 +79,27 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
       // Pills are now treated as knownFields (broker-curated, read-only for LLM)
       const knownFields = pills || {}
 
-      // TODO: Call InferenceEngine to get inferred fields from known fields (Story 4.2)
-      // For now, use empty object for inferredFields until InferenceEngine is available
-      const inferredFields = {}
+      // InferenceEngine Integration (Story 4.2)
+      // ---------------------------------------------------------
+      // Extract field-to-field inference rules from unified field metadata
+      const fieldInferences: Record<string, InferenceRule[]> = {}
+      for (const [fieldName, metadata] of Object.entries(unifiedFieldMetadata)) {
+        if (metadata.infers) {
+          fieldInferences[fieldName] = metadata.infers
+        }
+      }
+
+      // Initialize InferenceEngine with field inferences, text patterns, and suppression list
+      const inferenceEngine = new InferenceEngine(
+        fieldInferences,
+        TEXT_PATTERN_INFERENCES,
+        suppressedFields || []
+      )
+
+      // Apply deterministic inference rules to known fields and message text
+      // This pre-populates inferred fields before LLM extraction, improving efficiency
+      const inferenceResult = inferenceEngine.applyInferences(knownFields, message)
+      const inferredFields = inferenceResult.inferred
 
       // Extract fields using Conversational Extractor
       // Pass knownFields (pills), inferredFields, and suppressedFields

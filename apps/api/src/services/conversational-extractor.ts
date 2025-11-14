@@ -2,6 +2,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import type { PolicySummary, UserProfile } from '@repo/shared'
 import {
+  CONFIDENCE_THRESHOLD_HIGH,
   DEFAULT_EXTRACTION_TEMPERATURE,
   type NormalizedField,
   extractStateFromText,
@@ -12,7 +13,7 @@ import {
 } from '@repo/shared'
 import { buildPolicyConfidenceMap, buildProfileConfidenceMap } from '../utils/confidence-builder'
 import { hasKeyValueSyntax, parseKeyValueSyntax } from '../utils/key-value-parser'
-import { logError } from '../utils/logger'
+import { logDebug, logError } from '../utils/logger'
 import { validatePolicySummary } from './extractors/policy-validator'
 import { validateProfile } from './extractors/profile-validator'
 import type { LLMProvider } from './llm-provider'
@@ -66,7 +67,7 @@ export class ConversationalExtractor {
     // Load template from conversational-extraction-system.txt
     const templatePath = path.join(
       process.cwd(),
-      'apps/api/src/prompts/conversational-extraction-system.txt'
+      'src/prompts/conversational-extraction-system.txt'
     )
     const template = fs.readFileSync(templatePath, 'utf-8')
 
@@ -87,10 +88,7 @@ export class ConversationalExtractor {
     suppressedFields: string[]
   ): string {
     // Load template from conversational-extraction-user.txt
-    const templatePath = path.join(
-      process.cwd(),
-      'apps/api/src/prompts/conversational-extraction-user.txt'
-    )
+    const templatePath = path.join(process.cwd(), 'src/prompts/conversational-extraction-user.txt')
     const template = fs.readFileSync(templatePath, 'utf-8')
 
     // Inject all fields
@@ -116,15 +114,11 @@ export class ConversationalExtractor {
     inferredFields?: Partial<UserProfile>,
     suppressedFields?: string[]
   ): Promise<ExtractionResult> {
-    console.log('[conversational-extractor] extractFields called with knownFields:', knownFields)
-    console.log(
-      '[conversational-extractor] extractFields called with inferredFields:',
-      inferredFields
-    )
-    console.log(
-      '[conversational-extractor] extractFields called with suppressedFields:',
-      suppressedFields
-    )
+    await logDebug('Conversational extractor: extractFields called', {
+      knownFields,
+      inferredFields,
+      suppressedFields,
+    })
     try {
       // Step 1: Try key-value parser first (instant, free, deterministic)
       if (hasKeyValueSyntax(message)) {
@@ -166,8 +160,10 @@ export class ConversationalExtractor {
         suppressedFields || []
       )
 
-      console.log('[conversational-extractor] System prompt:', systemPrompt)
-      console.log('[conversational-extractor] User prompt:', userPrompt)
+      await logDebug('Conversational extractor: LLM prompts generated', {
+        systemPrompt,
+        userPrompt,
+      })
 
       // Use LLM with custom system prompt
       const llmResult = await this.llmProvider.extractWithStructuredOutput(
@@ -180,10 +176,9 @@ export class ConversationalExtractor {
 
       // Validate extracted profile against schema
       const validatedProfile = validateProfile(llmResult.profile)
-      console.log(
-        '[conversational-extractor] LLM validated profile householdSize:',
-        validatedProfile.householdSize
-      )
+      await logDebug('Conversational extractor: LLM profile validated', {
+        householdSize: validatedProfile.householdSize,
+      })
 
       // Separate LLM extracted fields into known vs inferred based on confidence
       const llmKnownFields: Partial<UserProfile> = {}
@@ -193,12 +188,12 @@ export class ConversationalExtractor {
       for (const [fieldName, fieldValue] of Object.entries(validatedProfile)) {
         const confidence = llmResult.confidence[fieldName] ?? 0
 
-        if (confidence >= 0.85) {
-          // High confidence: treat as known
+        if (confidence >= CONFIDENCE_THRESHOLD_HIGH) {
+          // High confidence (≥85%): treat as known
           // Type assertion needed because Object.entries loses type information
           ;(llmKnownFields as Record<string, unknown>)[fieldName] = fieldValue
         } else if (confidence > 0) {
-          // Medium/low confidence: treat as inferred
+          // Medium/low confidence (<85%): treat as inferred
           // Type assertion needed because Object.entries loses type information
           ;(llmInferredFields as Record<string, unknown>)[fieldName] = fieldValue
           inferenceReasons[fieldName] =
@@ -232,12 +227,11 @@ export class ConversationalExtractor {
         ...finalKnownFields, // Known fields take precedence
       }
 
-      console.log('[conversational-extractor] Final known fields:', finalKnownFields)
-      console.log('[conversational-extractor] Final inferred fields:', finalInferredFields)
-      console.log(
-        '[conversational-extractor] Final profile (backward compatibility):',
-        finalProfile
-      )
+      await logDebug('Conversational extractor: Final extraction results', {
+        knownFields: finalKnownFields,
+        inferredFields: finalInferredFields,
+        profile: finalProfile,
+      })
 
       // Normalize carrier name using alias map (handles abbreviations like "pro" → "PROGRESSIVE")
       if (finalProfile.currentCarrier) {
@@ -280,7 +274,9 @@ export class ConversationalExtractor {
             finalInferredFields.existingPolicies = inferredPolicies
             inferenceReasons.existingPolicies = 'Inferred from currentCarrier + productType'
           }
-          console.log('[conversational-extractor] Inferred existingPolicies:', inferredPolicies)
+          await logDebug('Conversational extractor: Inferred existingPolicies', {
+            inferredPolicies,
+          })
         }
       }
 
