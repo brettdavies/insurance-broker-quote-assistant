@@ -18,7 +18,10 @@ This section illustrates the two primary workflows that fulfill PEAK6's spec req
 
 **Key Architectural Decisions:**
 
-- **5-step sequential pipeline:** Extract → Route → Discounts → Pitch → Compliance (cannot parallelize due to data dependencies)
+- **5-step sequential pipeline:** Extract (Inference + LLM) → Route → Discounts → Pitch → Compliance (cannot parallelize due to data dependencies)
+- **Hybrid extraction approach:** Deterministic InferenceEngine runs first, then LLM extraction with known/inferred awareness
+- **Known vs inferred separation:** System separates broker-curated fields (known, read-only) from system-derived fields (inferred, editable)
+- **Suppression list enforcement:** System respects broker's explicit field dismissals across entire session
 - **LLM for extraction and pitch only:** Deterministic engines handle routing/discounts/compliance (insurance regulatory requirement)
 - **Compliance filter runs last:** Ensures 100% of outputs are regulation-compliant before reaching broker
 - **Missing fields tracked:** Enables progressive disclosure UI (system asks for more info as needed)
@@ -28,37 +31,49 @@ sequenceDiagram
     participant User
     participant Frontend
     participant API
-    participant Extractor
+    participant Inference as InferenceEngine<br/>(Deterministic)
+    participant Extractor as ConversationalExtractor<br/>(Hybrid LLM)
     participant Routing
     participant Discount
     participant Pitch
     participant Compliance
-    participant OpenAI
+    participant Gemini as Gemini API<br/>(1.5 Flash)
     participant KnowledgePack
 
-    User->>Frontend: "I need auto insurance in CA for 2 cars"
-    Frontend->>API: POST /api/intake { message }
+    User->>Frontend: "I need renters in FL. Age 28. Lives alone."
+    Frontend->>API: POST /api/intake<br/>{ message, knownFields, suppressedFields }
 
-    API->>Extractor: extract(message)
-    Extractor->>OpenAI: GPT-4o-mini chat completion
-    OpenAI-->>Extractor: { state: "CA", product: "auto", vehicles: 2 }
-    Extractor-->>API: UserProfile + missing_fields
+    Note over API: Step 1: Deterministic Inferences
+    API->>Inference: applyInferences(knownFields, message)
+    Note right of Inference: Field-to-field rules:<br/>productType="renters" → ownsHome=false<br/>Text patterns:<br/>"Lives alone" → householdSize=1<br/>Skip suppressed fields
+    Inference-->>API: { inferred, reasons, confidence }
 
-    API->>Routing: routeToCarrier(profile)
+    Note over API: Step 2: LLM Extraction (Hybrid)
+    API->>Extractor: extractFields(message, knownFields, inferred, suppressedFields)
+    Extractor->>Extractor: buildSystemPrompt()<br/>Inject CRITICAL RULES for known/inferred/suppressed
+    Extractor->>Extractor: buildUserPrompt()<br/>Inject field data + message
+    Extractor->>Gemini: extractWithStructuredOutput(prompt, schema)
+    Note right of Gemini: Respects 5 CRITICAL RULES:<br/>1. Never modify known fields<br/>2. Can edit/delete/upgrade inferred<br/>3. Never infer suppressed fields<br/>4. Confidence thresholds (≥85% → known)<br/>5. Fill missing fields
+    Gemini-->>Extractor: { known, inferred, confidence, reasoning }
+    Extractor->>Extractor: Separate known (≥85%) vs inferred (<85%)
+    Extractor->>Extractor: Filter suppressed fields (defensive)
+    Extractor-->>API: ExtractionResult { known, inferred, suppressedFields, inferenceReasons, confidence }
+
+    API->>Routing: routeToCarrier(known + inferred)
     Routing->>KnowledgePack: getCarriers()
     KnowledgePack-->>Routing: [GEICO, Progressive, State Farm]
     Routing->>Routing: Filter by state/product/eligibility
     Routing-->>API: [GEICO (primary), Progressive, State Farm]
 
-    API->>Discount: findDiscounts(carrier, profile)
+    API->>Discount: findDiscounts(carrier, known + inferred)
     Discount->>KnowledgePack: retrieveDiscounts(carrier, state)
     KnowledgePack-->>Discount: [multi-policy 15%, safe-driver 10%, ...]
     Discount->>Discount: Check eligibility for each
     Discount-->>API: [Opportunity with citations]
 
-    API->>Pitch: generate(opportunities, profile)
-    Pitch->>OpenAI: GPT-4o chat completion with context
-    OpenAI-->>Pitch: "Based on your CA auto needs..."
+    API->>Pitch: generate(opportunities, known + inferred)
+    Pitch->>Gemini: extractWithStructuredOutput(prompt, schema)
+    Gemini-->>Pitch: "Based on your FL renters needs..."
     Pitch-->>API: Human-friendly pitch with rationales
 
     API->>Compliance: validate(pitch)
@@ -66,16 +81,46 @@ sequenceDiagram
     Compliance->>Compliance: Inject required disclaimers
     Compliance-->>API: { valid: true, output: pitch + disclaimers }
 
-    API-->>Frontend: IntakeResult
-    Frontend-->>User: Display pitch, prefill packet, route decision
+    API-->>Frontend: IntakeResult { extraction: { known, inferred, suppressedFields, inferenceReasons, confidence }, ... }
+    Frontend-->>User: Display pitch, prefill packet, route decision<br/>Known fields: normal styling<br/>Inferred fields: muted + [✕] button
 ```
 
 **Why This Sequence:**
 
-1. **Extraction first:** Must understand what user wants before routing
-2. **Routing before discounts:** Need to know which carrier to query for discount rules
-3. **Discounts before pitch:** Pitch Generator needs structured opportunity data to write compelling prose
-4. **Compliance last:** Final safeguard ensures nothing non-compliant reaches broker
+1. **Deterministic inferences first:** Fast, cheap, reliable rule-based inferences run before expensive LLM call
+2. **Hybrid LLM extraction:** LLM receives inferred fields as context, can confirm/edit/delete/upgrade based on text evidence
+3. **Known vs inferred separation:** Enables transparent broker control - known fields are read-only, inferred fields are editable
+4. **Suppression enforcement:** System respects broker's explicit dismissals (passed to both InferenceEngine and ConversationalExtractor)
+5. **Routing before discounts:** Need to know which carrier to query for discount rules
+6. **Discounts before pitch:** Pitch Generator needs structured opportunity data to write compelling prose
+7. **Compliance last:** Final safeguard ensures nothing non-compliant reaches broker
+
+**Hybrid Extraction Details:**
+
+**InferenceEngine (Deterministic):**
+- Field-to-field rules: `productType="renters"` → `ownsHome=false` (75% confidence)
+- Text pattern rules: `"Lives alone"` → `householdSize=1` (82% confidence)
+- Generates inference reasons and confidence scores
+- Respects suppression list (skips dismissed fields)
+
+**ConversationalExtractor (LLM):**
+- Receives known fields, inferred fields, and suppressed fields as context
+- Applies 5 CRITICAL RULES via system prompt:
+  1. **KNOWN FIELDS (read-only):** Never modify broker-set fields
+  2. **INFERRED FIELDS (can modify):** Confirm, edit, delete, or upgrade based on text evidence
+  3. **SUPPRESSED FIELDS (never infer):** Respect user dismissals
+  4. **CONFIDENCE LEVELS:** High (≥85%), Medium (70-84%), Low (<70%). Upgrade to known if ≥85%
+  5. **EXTRACTION PRIORITY:** Fill missing fields, improve inferred fields with better evidence
+- Separates response into known (≥85% confidence) vs inferred (<85% confidence)
+- Filters suppressed fields (defensive layer, should be handled by prompt)
+
+**Frontend Integration:**
+
+- **Known fields:** Normal color (#f5f5f5), 2 buttons (ℹ️ + [Click])
+- **Inferred fields:** Muted color (#a3a3a3), 3 buttons (ℹ️ + [✕] + [Click])
+- **Clicking [✕] or [Delete]:** Adds field to suppression list (sent in next API request)
+- **Clicking [Save Known]:** Injects pill into notes, converts inferred → known, removes from suppression list
+- **Page refresh:** Clears suppression list (session-scoped only, no localStorage)
 
 ---
 

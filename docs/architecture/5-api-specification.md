@@ -35,13 +35,36 @@
 **Request:**
 
 - `message` (string, required) - User's conversational input
+- `pills` (Partial<UserProfile>, optional) - Known fields extracted from lexical editor pills (broker-curated, read-only for LLM)
+- `suppressedFields` (string[], optional) - Fields broker has explicitly dismissed (never re-infer)
 - `conversationHistory` (array, optional) - Previous messages for context (future: multi-turn conversations)
 
-**Response:** IntakeResult (see [Section 4.5](#45-intakeresult))
+**Response:** IntakeResult (see [Section 4.6](#46-intakeresult))
+
+**Response Structure:**
+
+The response includes an `extraction` object with known/inferred field separation:
+
+```typescript
+{
+  extraction: {
+    method: 'key-value' | 'llm',           // Extraction method used
+    known: Partial<UserProfile>,            // Known fields (high confidence ≥85% or broker-set)
+    inferred: Partial<UserProfile>,        // Inferred fields (confidence <85%)
+    suppressedFields: string[],            // Fields broker dismissed (echoed back)
+    inferenceReasons: Record<string, string>, // Reasoning for each inferred field
+    confidence: Record<string, number>     // Field-level confidence scores (0-1)
+  },
+  // ... rest of IntakeResult (route, opportunities, prefill, pitch, etc.)
+}
+```
 
 **Design Decisions:**
 
-- **Conversation history optional:** MVP supports single-turn, but structure allows multi-turn expansion
+- **Known vs inferred separation:** Enables broker curation workflow (dismiss or convert inferred → known)
+- **Hybrid inference architecture:** Deterministic InferenceEngine runs first (free, instant), then LLM extraction receives inferred fields as context
+- **Suppression list:** Prevents re-inferring dismissed fields (broker has final say)
+- **Progressive enhancement:** Both `pills` and `suppressedFields` optional for backward compatibility (first request has no pills)
 - **Synchronous:** Returns complete result (extraction + routing + pitch) in one call
 
 ---
@@ -64,7 +87,7 @@
 - **Text extraction:** PDF/DOCX files converted to text, then passed to LLM for structured extraction
 - **Max file size:** 5MB per upload (configurable via environment variable)
 
-**Response:** PolicyAnalysisResult (see [Section 4.6](#46-policyanalysisresult))
+**Response:** PolicyAnalysisResult (see [Section 4.7](#47-policyanalysisresult))
 
 **Design Decisions:**
 
@@ -204,7 +227,7 @@ const data = await parseResponse(api.api.intake.$post({ json: message }))
 | `COMPLIANCE_VIOLATION`  | 400         | Output blocked by compliance filter  | Pitch contained prohibited statements   |
 | `DISCOUNT_ENGINE_ERROR` | 500         | Discount calculation failed          | Unexpected error calculating savings    |
 | `KNOWLEDGE_PACK_ERROR`  | 500         | Knowledge pack query failed          | Missing or corrupt data files           |
-| `LLM_API_ERROR`         | 503         | OpenAI API call failed               | API timeout or rate limit               |
+| `LLM_API_ERROR`         | 503         | Gemini API call failed               | API timeout or rate limit               |
 | `INTERNAL_ERROR`        | 500         | Unexpected error                     | Unhandled exception                     |
 
 **Note:** Complete error code reference with detailed definitions in Section 18.3. Error types are defined in `packages/shared/src/types/errors.ts`.

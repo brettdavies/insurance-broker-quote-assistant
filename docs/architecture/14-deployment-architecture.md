@@ -66,7 +66,7 @@
 
 ```bash
 # Required
-OPENAI_API_KEY=sk-...              # OpenAI API key
+GEMINI_API_KEY=...                  # Google Gemini API key (optional for free tier)
 KNOWLEDGE_PACK_PATH=/knowledge_pack # External mount point
 
 # Optional

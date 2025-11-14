@@ -57,7 +57,7 @@
 
 - **Token usage per test case:** Logged to program.log, aggregated in evaluation report
 - **Decision traces:** Every routing/discount decision logged to compliance.log with citations
-- **Cost estimation:** Total OpenAI cost calculated from token usage logs
+- **Cost estimation:** Total Gemini cost calculated from token usage logs
 - **Error breakdown:** Compliance violations, extraction failures, routing failures categorized
 
 **Why This Matters:**

@@ -4,28 +4,165 @@ This section describes the 5 core components (2 LLM Agents + 3 Deterministic Eng
 
 ---
 
-## 6.1 Conversational Extractor Agent (LLM)
+## 6.1 Conversational Extractor Agent (Hybrid LLM + Inference)
 
-**Purpose:** Extract structured insurance shopper data from natural language input or policy documents.
+**Purpose:** Extract structured insurance shopper data from natural language input or policy documents using a hybrid approach: deterministic inference rules + LLM extraction.
 
 **Key Responsibilities:**
 
 - Parse free-form broker messages into structured UserProfile fields
 - Extract existing policy details from uploaded policy text
+- Apply deterministic field-to-field inferences (e.g., `productType="renters"` → `ownsHome=false`)
+- Apply text pattern inferences (e.g., "Lives alone" → `householdSize=1`)
+- Separate **known fields** (broker-curated, read-only) from **inferred fields** (system-derived, editable)
+- Respect suppression list (fields broker has explicitly dismissed)
 - Identify missing required fields for quote completion
 - Support progressive disclosure (extract what's mentioned, flag what's missing)
 
 **Dependencies:**
 
-- OpenAI API (GPT-4o-mini for cost efficiency)
+- Google Gemini API (Gemini 1.5 Flash for cost efficiency and structured outputs)
+- InferenceEngine (deterministic rule application from `@repo/shared`)
 - Zod schemas for structured output validation
+- Field metadata with inference rules (`packages/shared/src/schemas/unified-field-metadata.ts`)
+- Text pattern inferences (`packages/shared/src/config/text-pattern-inferences.ts`)
+
+**Hybrid Architecture (Inference + LLM):**
+
+**Step 1: Deterministic Inferences** (InferenceEngine)
+- Apply field-to-field rules (e.g., `productType="renters"` → `ownsHome=false`, confidence: 75%)
+- Apply text pattern rules (e.g., "Lives alone" → `householdSize=1`, confidence: 82%)
+- Skip suppressed fields (broker has dismissed these inferences)
+- Generate inference reasons and confidence scores
+
+**Step 2: LLM Extraction** (ConversationalExtractor)
+- Receive known fields (broker-curated), inferred fields (from Step 1), and suppressed fields
+- Apply **5 Critical Rules for Field Extraction:**
+  1. **KNOWN FIELDS (read-only):** Never modify broker-set fields
+  2. **INFERRED FIELDS (can modify):** Confirm, edit, delete, or upgrade based on text evidence
+  3. **SUPPRESSED FIELDS (never infer):** Respect user dismissals
+  4. **CONFIDENCE LEVELS:** High (≥85%), Medium (70-84%), Low (<70%). Upgrade to known if ≥85%
+  5. **EXTRACTION PRIORITY:** Fill missing fields, improve inferred fields with better evidence
+- Separate fields into known (≥85% confidence) vs inferred (<85% confidence)
+- Return structured ExtractionResult with known/inferred separation
+
+**Method Signature:**
+
+```typescript
+async extractFields(
+  message: string,
+  knownFields?: Partial<UserProfile>,
+  inferredFields?: Partial<UserProfile>,
+  suppressedFields?: string[]
+): Promise<ExtractionResult>
+```
+
+**Response Schema:**
+
+```typescript
+{
+  extraction: {
+    method: 'hybrid',
+    known: Partial<UserProfile>,           // Broker-curated + high-confidence (≥85%)
+    inferred: Partial<UserProfile>,        // Low-medium confidence (<85%)
+    suppressedFields: string[],            // Dismissed fields
+    inferenceReasons: Record<string, string>, // Why each field was inferred
+    confidence: Record<string, number>     // Confidence scores (0-1)
+  }
+}
+```
 
 **Design Decisions:**
 
-- **LLM for flexibility:** Natural language parsing requires LLM, not regex/rules
+- **Hybrid approach:** Deterministic inferences run first (faster, cheaper), then LLM fills gaps and improves results
+- **Known vs inferred separation:** Enables transparent field curation by brokers with visual distinction in UI
+- **Suppression list:** Respects broker's explicit rejections, prevents re-inferring dismissed fields
+- **LLM for flexibility:** Natural language parsing requires LLM, not regex/rules alone
 - **Structured outputs:** JSON mode with Zod schema enforcement ensures type safety
 - **Missing fields tracking:** Enables progressive disclosure UX (collect more info as needed)
-- **GPT-4o-mini selected:** 10x cheaper than GPT-4o, sufficient for extraction task
+- **Gemini 1.5 Flash selected:** Cost-efficient with native structured outputs, sufficient for extraction task
+- **Confidence thresholds:** ≥85% promotes inferred → known, balancing accuracy with broker control
+
+**Inference Architecture Diagram:**
+
+```mermaid
+graph TB
+    subgraph "Input"
+        A[User Message:<br/>'I need renters in FL.<br/>Age 28. Lives alone.']
+        B[Known Fields:<br/>state: FL<br/>productType: renters<br/>age: 28]
+        C[Suppressed Fields:<br/>drivers]
+    end
+
+    subgraph "Step 1: Deterministic Inferences (InferenceEngine)"
+        D[Field Metadata<br/>with Inference Rules]
+        E[Text Pattern<br/>Inferences]
+        F{Apply Field-to-Field Rules}
+        G{Apply Text Pattern Rules}
+        H{Skip Suppressed?}
+        I[Inferred Fields:<br/>ownsHome: false 75%<br/>householdSize: 1 82%]
+        J[Inference Reasons:<br/>ownsHome: 'Renters implies tenant'<br/>householdSize: 'Lives alone → 1']
+
+        D --> F
+        E --> G
+        B --> F
+        A --> G
+        C --> H
+        F --> H
+        G --> H
+        H -->|No| I
+        H -->|No| J
+    end
+
+    subgraph "Step 2: LLM Extraction (ConversationalExtractor)"
+        K[Build System Prompt<br/>with CRITICAL RULES]
+        L[Build User Prompt<br/>with Known/Inferred/Suppressed]
+        M[Gemini 1.5 Flash<br/>Structured Output]
+        N{Separate by Confidence}
+        O[Known: ≥85% confidence]
+        P[Inferred: <85% confidence]
+        Q{Filter Suppressed}
+
+        B --> K
+        I --> K
+        J --> K
+        C --> K
+        K --> L
+        A --> L
+        L --> M
+        M --> N
+        N -->|≥85%| O
+        N -->|<85%| P
+        O --> Q
+        P --> Q
+    end
+
+    subgraph "Output"
+        R[ExtractionResult:<br/>known: state, productType, age<br/>inferred: ownsHome, householdSize<br/>suppressedFields: drivers<br/>inferenceReasons: ...<br/>confidence: ...]
+    end
+
+    Q --> R
+
+    style A fill:#e3f2fd
+    style B fill:#e8f5e9
+    style C fill:#ffebee
+    style I fill:#fff3e0
+    style R fill:#f3e5f5
+```
+
+**Diagram Explanation:**
+
+1. **Input:** User message + known fields (broker-curated) + suppressed fields (dismissed)
+2. **Step 1 (InferenceEngine):** Deterministic rules apply field-to-field and text pattern inferences, skipping suppressed fields
+3. **Step 2 (ConversationalExtractor):** LLM receives all context, applies CRITICAL RULES, separates known (≥85%) vs inferred (<85%)
+4. **Output:** Structured ExtractionResult with separated known/inferred fields, reasons, and confidence scores
+
+**File Locations:**
+
+- **ConversationalExtractor:** `apps/api/src/services/conversational-extractor.ts`
+- **InferenceEngine:** `packages/shared/src/services/inference-engine.ts`
+- **Field Metadata:** `packages/shared/src/schemas/unified-field-metadata.ts`
+- **Text Patterns:** `packages/shared/src/config/text-pattern-inferences.ts`
+- **LLM Prompts:** `apps/api/src/prompts/conversational-extraction-*.txt`
 
 ---
 
@@ -42,14 +179,14 @@ This section describes the 5 core components (2 LLM Agents + 3 Deterministic Eng
 
 **Dependencies:**
 
-- OpenAI API (GPT-4o for quality)
+- Google Gemini API (Gemini 1.5 Flash for quality and cost-efficiency)
 - Opportunity data with citations
 - UserProfile for personalization context
 
 **Design Decisions:**
 
 - **LLM for narrative generation:** Broker-ready prose requires natural language generation
-- **GPT-4o selected:** Higher quality than 4o-mini, worth cost for client-facing text
+- **Gemini 1.5 Flash selected:** Unified model for both extraction and pitch generation (simpler integration, cost-efficient)
 - **Structured input → prose output:** Deterministic data fed to LLM for consistent style
 - **Citation preservation:** Pitch references opportunity citations for compliance traceability
 

@@ -15,7 +15,7 @@ The frontend provides two distinct user flows: "Get Quote" (conversational intak
 **Key Services:**
 
 - **Compute:** Node.js runtime for Hono API server
-- **LLM API:** OpenAI GPT-4o-mini (extraction), GPT-4o (pitch generation)
+- **LLM API:** Google Gemini 1.5 Flash (extraction and pitch generation)
 - **Storage:** Local filesystem for knowledge pack JSON files
 - **Frontend Hosting:** Static deployment (Vercel/Netlify/Cloudflare Pages candidates)
 
@@ -87,7 +87,7 @@ graph TB
     end
 
     KP[(Knowledge Pack<br/>JSON Files<br/>Loaded at Startup)]
-    LLM_API[OpenAI API<br/>GPT-4o/GPT-4o-mini]
+    LLM_API[Google Gemini API<br/>Gemini 1.5 Flash]
     ProgramLog[logs/program.log]
     ComplianceLog[logs/compliance.log]
 

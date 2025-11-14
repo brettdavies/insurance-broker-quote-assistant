@@ -17,7 +17,7 @@ sequenceDiagram
     API->>Service: orchestrator.intakeFlow()
 
     alt LLM API Fails
-        Service->>LLM: OpenAI API call
+        Service->>LLM: Gemini API call
         LLM-->>Service: Network error
         Service->>ErrorHandler: throw LLM_API_ERROR
         ErrorHandler->>Logger: Log error + request context
@@ -76,7 +76,7 @@ interface ApiError {
 | `EXTRACTION_FAILED`     | 400         | LLM cannot extract UserProfile fields         | "We couldn't understand your request. Please provide more details."                    | `{ missingFields?: string[] }` |
 | `ROUTING_FAILED`        | 400         | No carriers available for user profile        | "No insurance carriers are available for your profile."                                | `{ reason: string }`           |
 | `DISCOUNT_ENGINE_ERROR` | 500         | Discount calculation fails unexpectedly       | "Unable to calculate discounts. Please try again."                                     | `{ carrier: string }`          |
-| `LLM_API_ERROR`         | 503         | OpenAI API timeout or network error           | "Our AI service is temporarily unavailable. Please try again."                         | `{ provider: 'openai' }`       |
+| `LLM_API_ERROR`         | 503         | Gemini API timeout or network error           | "Our AI service is temporarily unavailable. Please try again."                         | `{ provider: 'gemini' }`       |
 | `VALIDATION_ERROR`      | 400         | Zod validation fails on API request           | "Invalid request format. Please check your input."                                     | `{ errors: ZodError[] }`       |
 | `KNOWLEDGE_PACK_ERROR`  | 500         | RAG query fails (file not found, parse error) | "System configuration error. Please contact support."                                  | `{ file: string }`             |
 | `INTERNAL_ERROR`        | 500         | Unexpected errors (catch-all)                 | "An unexpected error occurred. Please try again."                                      | `{}`                           |
@@ -86,7 +86,7 @@ interface ApiError {
 - **COMPLIANCE_VIOLATION:** Insurance regulatory requirement - must block non-compliant outputs
 - **EXTRACTION_FAILED:** User feedback - LLM couldn't parse message (ask for more info)
 - **ROUTING_FAILED:** Business logic - no carriers match user profile (legitimate rejection)
-- **LLM_API_ERROR:** Service dependency - OpenAI down/timeout (retry makes sense)
+- **LLM_API_ERROR:** Service dependency - Gemini down/timeout (retry makes sense)
 - **VALIDATION_ERROR:** Input validation - Zod caught malformed request (dev error or malicious input)
 - **KNOWLEDGE_PACK_ERROR:** Data integrity - missing/corrupt knowledge pack files (deployment issue)
 - **INTERNAL_ERROR:** Catch-all for unexpected errors (unknown bugs)

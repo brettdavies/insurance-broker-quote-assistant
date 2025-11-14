@@ -24,7 +24,7 @@
 | **Backend Framework**              | Hono                                                      | ^4.0          | Lightweight web framework                                               | Ultra-fast, edge-compatible, excellent TypeScript support, simpler than Express                                                                                                                           |
 | **Backend Dev Server**             | Hono CLI                                                  | Built-in      | Local API testing without server                                        | AI-friendly (`hono request`, `hono docs`), fast dev workflow                                                                                                                                              |
 | **API Style**                      | REST JSON                                                 | -             | Simple request/response API                                             | Straightforward for this use case, no need for GraphQL complexity                                                                                                                                         |
-| **LLM Integration**                | OpenAI Node SDK                                           | ^4.0          | GPT-4o/GPT-4o-mini API calls                                            | Official SDK, structured outputs support, JSON mode                                                                                                                                                       |
+| **LLM Integration**                | @google/generative-ai                                     | ^0.21.0       | Google Gemini 1.5 Flash API calls                                       | Official Google SDK, native structured outputs (JSON schema), cost-efficient, faster than OpenAI GPT-4o-mini                                                                                              |
 | **Database**                       | JSON Files (Filesystem)                                   | -             | Knowledge pack storage                                                  | Spec requires offline operation, simplest for 5-day timeline                                                                                                                                              |
 | **Cache**                          | In-Memory (Map)                                           | -             | Knowledge pack loaded by RAG                                            | Loaded at startup (async, non-blocking) into memory Maps for fast O(1) queries                                                                                                                            |
 | **File Storage**                   | Local Filesystem                                          | -             | Knowledge pack JSON files                                               | Meets offline requirement, easy to version control                                                                                                                                                        |
@@ -98,7 +98,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 
 ```bash
 # Required
-OPENAI_API_KEY=sk-...
+GEMINI_API_KEY=...  # Google Gemini API key (optional for free tier)
 
 # Optional
 NODE_ENV=development

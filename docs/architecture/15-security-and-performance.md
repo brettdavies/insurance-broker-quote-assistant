@@ -7,7 +7,7 @@
 **What We Use:**
 
 - **Frontend:** React's built-in XSS protection, CSP headers, no localStorage for sensitive data
-- **Backend:** Zod validation on all inputs, CORS policy, OpenAI API key in environment only
+- **Backend:** Zod validation on all inputs, CORS policy, Gemini API key in environment only
 - **No authentication:** Out of scope for demo (broker tool, not end-user app)
 
 **Why This Approach:**
@@ -22,6 +22,7 @@
 - **Why no auth:** Broker tool for internal use, not end-user facing (PEAK6 spec doesn't require it)
 - **Why CORS matters:** Prevents unauthorized frontends from calling API
 - **Why Zod validation:** Insurance routing/discount engines assume valid input structure (crash without validation)
+- **Why Gemini API key in env:** API key never in code, never in git (environment variables only)
 
 ## 15.2 Performance Strategy
 
@@ -34,14 +35,14 @@
 **Why These Targets:**
 
 - **< 200KB bundle:** Fast load on typical broadband (< 1s at 10 Mbps)
-- **< 5s with LLM:** GPT-4o-mini averages 1-2s, leaves buffer for routing/discounts/compliance
+- **< 5s with LLM:** Gemini 1.5 Flash averages 1-2s, leaves buffer for routing/discounts/compliance
 - **Startup loading (async):** Non-blocking load ensures data is available immediately when first query arrives
 - **In-memory Maps:** O(1) lookups after initial load, sufficient for demo scale (20 JSON files)
 
 **LLM Cost Optimization:**
 
-- **GPT-4o-mini for extraction:** 10x cheaper than GPT-4o, 2x faster, sufficient for structured data extraction
-- **GPT-4o for pitch:** Quality matters for client-facing text, worth premium cost
+- **Gemini 1.5 Flash for extraction:** 2x cheaper than GPT-4o-mini ($0.075/1M input tokens vs $0.15/1M), faster inference, sufficient for structured data extraction
+- **Gemini 1.5 Flash for pitch:** Unified model for both extraction and pitch generation (simpler integration, cost-efficient)
 - **No streaming (MVP):** Simplifies implementation (pitch must pass compliance filter before sending)
 
 ---

@@ -40,14 +40,22 @@ Frontend Unit (40%)              Backend Unit (40%)
 **What We Test:**
 
 - **Deterministic engines (critical):** Routing, discount, compliance logic (100% coverage goal)
-- **API routes (critical):** Request validation, response structure, error handling
-- **React components (important):** User interactions, form submissions, error states
-- **Orchestrator flows (important):** Agent/engine coordination, decision trace generation
+- **InferenceEngine (critical):** Field-to-field and text pattern inference rules, suppression list respect (Epic 4)
+- **API routes (critical):** Request validation, response structure, error handling, known/inferred field separation
+- **React components (important):** User interactions, form submissions, error states, known vs inferred field UI
+- **Orchestrator flows (important):** Agent/engine coordination, decision trace generation, hybrid inference architecture
+
+**Epic 4 Test Focus Areas:**
+
+- **InferenceEngine unit tests:** Field-to-field inferences, text pattern inferences, suppression list respect, confidence scores, reasoning
+- **Known vs inferred field separation:** ConversationalExtractor separates fields by confidence threshold (≥85% known, <85% inferred)
+- **Suppression list respect:** Backend never re-infers suppressed fields, frontend suppression manager tracks dismissed fields
+- **Frontend components:** InferredFieldsSection display, FieldModal 3-button behavior, FieldItem known/inferred styling, pill injection
 
 **What We Skip (5-Day MVP):**
 
 - **E2E tests:** Too slow to write and maintain for timeline
-- **LLM mocking complexity:** Test orchestrator with mocked LLM responses, not actual OpenAI calls
+- **LLM mocking complexity:** Test orchestrator with mocked LLM responses, not actual Gemini calls
 - **Edge cases:** Focus on happy path + critical error cases only
 
 **Why This Focus:**
@@ -407,6 +415,49 @@ expectIntakeResult(body) // Type-safe, comprehensive validation
 - Consistent error messages
 - Handles differences between mock (exact) and real API (flexible) expectations
 
+### Epic 4 Test Patterns
+
+**Hybrid Inference Testing Pattern:**
+
+```typescript
+// Test InferenceEngine applies rules before LLM extraction
+const inferenceEngine = new InferenceEngine(fieldInferences, textPatternInferences, suppressedFields)
+const { inferred, reasons, confidence } = inferenceEngine.applyInferences(knownFields, message)
+
+// Then test ConversationalExtractor receives inferred fields
+const result = await extractor.extractFields(message, knownFields, inferred, suppressedFields)
+expect(result.known).toMatchObject(expectedKnown)
+expect(result.inferred).toMatchObject(expectedInferred)
+```
+
+**Known/Inferred Field Assertion Patterns:**
+
+```typescript
+// Assert known fields (confidence ≥85%)
+expect(result.extraction?.known).toMatchObject({ state: 'CA', productType: 'auto' })
+
+// Assert inferred fields (confidence <85%)
+expect(result.extraction?.inferred).toMatchObject({ ownsHome: false })
+
+// Assert suppression list respect
+expect(result.extraction?.suppressedFields).toContain('drivers')
+expect(result.extraction?.inferred).not.toHaveProperty('drivers')
+```
+
+**Suppression List Testing Pattern:**
+
+```typescript
+// Frontend: Test SuppressionManager
+const manager = new SuppressionManager()
+manager.addSuppression('ownsHome')
+expect(manager.isSuppressed('ownsHome')).toBe(true)
+
+// Backend: Test InferenceEngine skips suppressed fields
+const engine = new InferenceEngine(fieldInferences, textPatternInferences, ['ownsHome'])
+const result = engine.applyInferences(knownFields, message)
+expect(result.inferred).not.toHaveProperty('ownsHome')
+```
+
 ## 16.8 Test File Organization
 
 **Structure:**
@@ -415,6 +466,9 @@ apps/api/src/
   services/
     __tests__/
       service-name.test.ts
+      inference-engine.test.ts          # Epic 4: InferenceEngine tests
+      conversational-extractor.test.ts  # Epic 4: Known/inferred separation tests
+      llm-prompts.test.ts               # Epic 4: Prompt generation with known/inferred/suppressed
   routes/
     __tests__/
       route-name.test.ts
@@ -432,7 +486,26 @@ apps/api/src/
       knowledge-pack.ts
       test-messages.ts
 
+apps/web/src/
+  components/
+    notes/
+      __tests__/
+        InferredFieldsSection.test.tsx  # Epic 4: Inferred fields UI tests
+        NotesPanel.test.tsx
+    sidebar/
+      __tests__/
+        CapturedFields.test.tsx         # Epic 4: Known vs inferred styling tests
+  hooks/
+    __tests__/
+      useIntake.integration.test.tsx
+  lib/
+    __tests__/
+      suppression-manager.test.ts       # Epic 4: Suppression list tests
+
 packages/shared/src/
+  services/
+    __tests__/
+      inference-engine.test.ts          # Epic 4: Core InferenceEngine tests
   test-utils/         # Shared test utilities
     test-targets.ts
     llm-test-factories.ts
@@ -491,10 +564,19 @@ TEST_API_URL=http://localhost:7070 bun test apps/api/src/routes/__tests__/intake
 ## 16.10 Code Quality Metrics
 
 **Current Test Status:**
-- ✅ **564 total tests** across 54 files
-- ✅ **530 passing** (94% pass rate)
+- ✅ **564+ total tests** across 60+ files
+- ✅ **530+ passing** (94% pass rate)
 - ⏭️ **28 skipped** (contract tests, real API tests - require server or `TEST_TARGETS=real-api`)
 - ⚠️ **6 failing** (test isolation issues - pass when run individually)
+
+**Epic 4 Test Files (6 new files, 85+ tests):**
+
+1. **packages/shared/src/services/inference-engine.test.ts** - Core InferenceEngine tests (field-to-field, text patterns, suppression)
+2. **apps/api/src/services/__tests__/conversational-extractor.test.ts** - Known/inferred separation, suppression respect
+3. **apps/api/src/services/__tests__/llm-prompts.test.ts** - Prompt generation with known/inferred/suppressed fields
+4. **apps/web/src/lib/__tests__/suppression-manager.test.ts** - SuppressionManager class tests
+5. **apps/web/src/components/notes/InferredFieldsSection.test.tsx** - Inferred fields UI component tests
+6. **apps/web/src/components/sidebar/__tests__/CapturedFields.test.tsx** - Known vs inferred styling tests
 
 **Refactoring Results:**
 - ✅ **60%+ reduction** in code duplication
