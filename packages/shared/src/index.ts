@@ -34,6 +34,7 @@ export {
 export {
   unifiedFieldMetadata,
   type UnifiedFieldMetadata,
+  type InferenceRule,
 } from './schemas/unified-field-metadata'
 
 // Export unified field metadata utilities
@@ -165,6 +166,18 @@ export {
   type ProductType,
   type PropertyType,
 } from './schemas/shared-enums'
+
+// Export text pattern inferences config
+export {
+  TEXT_PATTERN_INFERENCES,
+  type TextPatternInference,
+} from './config/text-pattern-inferences'
+
+// Export inference engine service
+export {
+  InferenceEngine,
+  type InferenceResult,
+} from './services/inference-engine'
 
 // Export field normalization utilities
 export {
