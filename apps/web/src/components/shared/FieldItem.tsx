@@ -10,7 +10,7 @@
  */
 
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
-import { Info, X } from 'lucide-react'
+import { Check, Info, X } from 'lucide-react'
 
 export interface FieldItemData {
   name: string
@@ -26,9 +26,10 @@ interface FieldItemProps {
   field: FieldItemData
   onClick: (fieldKey: string, currentValue?: string | number | boolean) => void
   onDismiss?: (fieldKey: string) => void
+  onConvertToKnown?: (fieldKey: string, value: unknown) => void
 }
 
-export function FieldItem({ field, onClick, onDismiss }: FieldItemProps) {
+export function FieldItem({ field, onClick, onDismiss, onConvertToKnown }: FieldItemProps) {
   const showConfidence =
     field.isInferred && field.confidence !== undefined && field.confidence < 0.9
   const confidencePercent = field.confidence ? Math.round(field.confidence * 100) : 0
@@ -63,14 +64,22 @@ export function FieldItem({ field, onClick, onDismiss }: FieldItemProps) {
           {/* Info icon with tooltip */}
           <Tooltip>
             <TooltipTrigger asChild>
-              <button
-                type="button"
-                className="opacity-60 transition-opacity hover:opacity-100"
+              <div
+                className="cursor-pointer opacity-60 transition-opacity hover:opacity-100"
                 aria-label={tooltipContent}
                 onClick={(e) => e.stopPropagation()}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.stopPropagation()
+                    e.preventDefault()
+                  }
+                }}
+                // biome-ignore lint/a11y/useSemanticElements: Using div to avoid nested button warning
+                role="button"
+                tabIndex={0}
               >
                 <Info className="h-4 w-4 text-gray-400 dark:text-gray-500" />
-              </button>
+              </div>
             </TooltipTrigger>
             <TooltipContent className="max-w-xs">
               <p className="text-xs">
@@ -83,20 +92,60 @@ export function FieldItem({ field, onClick, onDismiss }: FieldItemProps) {
           {field.isInferred && onDismiss && (
             <Tooltip>
               <TooltipTrigger asChild>
-                <button
-                  type="button"
-                  className="opacity-60 transition-colors hover:text-[#ef4444] hover:opacity-100"
+                <div
+                  className="cursor-pointer opacity-60 transition-colors hover:text-[#ef4444] hover:opacity-100"
                   onClick={(e) => {
                     e.stopPropagation()
                     onDismiss(field.fieldKey)
                   }}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.stopPropagation()
+                      e.preventDefault()
+                      onDismiss(field.fieldKey)
+                    }
+                  }}
                   aria-label="Dismiss inference"
+                  // biome-ignore lint/a11y/useSemanticElements: Using div to avoid nested button warning
+                  role="button"
+                  tabIndex={0}
                 >
                   <X className="h-3.5 w-3.5" />
-                </button>
+                </div>
               </TooltipTrigger>
               <TooltipContent>
                 <p className="text-xs">Dismiss inference</p>
+              </TooltipContent>
+            </Tooltip>
+          )}
+
+          {/* Convert to known button (only for inferred fields) */}
+          {field.isInferred && onConvertToKnown && (
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <div
+                  className="cursor-pointer opacity-60 transition-colors hover:text-green-500 hover:opacity-100"
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    onConvertToKnown(field.fieldKey, field.value)
+                  }}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.stopPropagation()
+                      e.preventDefault()
+                      onConvertToKnown(field.fieldKey, field.value)
+                    }
+                  }}
+                  aria-label="Convert to known field"
+                  // biome-ignore lint/a11y/useSemanticElements: Using div to avoid nested button warning
+                  role="button"
+                  tabIndex={0}
+                >
+                  <Check className="h-3.5 w-3.5" />
+                </div>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p className="text-xs">Convert to known field</p>
               </TooltipContent>
             </Tooltip>
           )}

@@ -141,8 +141,11 @@ export function usePillInjection(editor: LexicalEditor | null) {
         paragraph.append($createTextNode(' '))
 
         // Position cursor at the end (after the trailing space)
+        // Set both anchor and focus to the same position for a collapsed selection (cursor, not text selection)
         const selection = $createRangeSelection()
-        selection.focus.set(paragraph.getKey(), paragraph.getChildrenSize(), 'element')
+        const offset = paragraph.getChildrenSize()
+        selection.anchor.set(paragraph.getKey(), offset, 'element')
+        selection.focus.set(paragraph.getKey(), offset, 'element')
         $setSelection(selection)
       })
     },

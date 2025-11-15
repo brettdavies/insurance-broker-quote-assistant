@@ -18,6 +18,7 @@ interface FieldModalInputProps {
   value: string
   onChange: (value: string) => void
   onKeyDown?: (e: React.KeyboardEvent) => void
+  onEnterSelect?: (value: string) => void // Callback when Enter selects an item in Combobox
   prefix: string
   fieldName?: string
   fieldType?: string
@@ -31,6 +32,7 @@ export function FieldModalInput({
   value,
   onChange,
   onKeyDown,
+  onEnterSelect,
   prefix,
   fieldName,
   fieldType,
@@ -39,18 +41,27 @@ export function FieldModalInput({
   isNumericField,
   handleNumericChange,
 }: FieldModalInputProps) {
-  const comboboxOptions: ComboboxOption[] = hasOptions
-    ? getEnumOptionsForCombobox(fieldName, options)
+  // Boolean fields should use combobox with true/false options
+  const isBooleanField = fieldType === 'boolean'
+  const booleanOptions: string[] = ['true', 'false']
+
+  // Use combobox if field has enum options OR is a boolean field
+  const shouldUseCombobox = hasOptions || isBooleanField
+  const comboboxOptions: ComboboxOption[] = shouldUseCombobox
+    ? isBooleanField
+      ? getEnumOptionsForCombobox(fieldName, booleanOptions)
+      : getEnumOptionsForCombobox(fieldName, options)
     : []
 
   return (
     <div className="flex items-center rounded-md border border-gray-300 bg-white dark:border-gray-700 dark:bg-gray-800">
       <span className="px-3 py-2 font-mono text-sm text-gray-500 dark:text-gray-400">{prefix}</span>
-      {hasOptions ? (
+      {shouldUseCombobox ? (
         <Combobox
           options={comboboxOptions}
           value={value}
           onChange={onChange}
+          onEnterSelect={onEnterSelect}
           placeholder="Type to search..."
           className="border-0 focus-visible:ring-0"
           autoFocus

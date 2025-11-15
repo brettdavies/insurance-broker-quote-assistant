@@ -10,6 +10,7 @@
 import { extractNormalizedFields, normalizeFieldName, unifiedFieldMetadata } from '../../index'
 import type { NormalizedField } from '../../utils/field-normalization'
 import { buildFieldAliasesMap, getFieldNameFromAlias } from './field-name-resolver'
+import { normalizeFieldValue } from './field-value-normalizer'
 import type { ParsedKeyValue, ValidationResult } from './types'
 
 /**
@@ -35,18 +36,14 @@ export function buildFieldTypeConfig(): FieldTypeConfig {
   for (const [fieldName, metadata] of Object.entries(unifiedFieldMetadata)) {
     // Determine multi-word fields (fields that commonly have spaces in values)
     // This is a heuristic based on field names and types
+    // Note: Object/array fields (like existingPolicies) are NOT multi-word - they're not parsed as simple strings
     if (
-      fieldName === 'name' ||
-      fieldName === 'phone' ||
-      fieldName === 'productType' ||
-      fieldName === 'propertyType' ||
-      fieldName === 'garage' ||
-      fieldName === 'roofType' ||
-      fieldName === 'drivingRecords' ||
-      fieldName === 'deductibles' ||
-      fieldName === 'limits' ||
-      fieldName === 'existingPolicies' ||
-      fieldName === 'vins'
+      fieldName === 'name' || // Names can have spaces (e.g., "John Smith")
+      fieldName === 'phone' || // Phone numbers can have spaces (e.g., "(555) 123-4567")
+      fieldName === 'drivingRecords' || // Can be multi-word (e.g., "clean record", "one accident")
+      fieldName === 'deductibles' || // Can be multi-word (e.g., "$500 comprehensive, $1000 collision")
+      fieldName === 'limits' || // Can be multi-word (e.g., "$100k/$300k liability")
+      fieldName === 'vins' // VINs can be multiple, space-separated
     ) {
       multiWordFields.add(fieldName)
     }
@@ -143,7 +140,7 @@ export function parseKeyValueSyntax(
   // Case-insensitive matching
   // Strategy: Use separate patterns for fields with special character requirements
   // Order matters: more specific patterns first, then general fallback
-  // 1. Multi-word fields (name, productLine, etc.) - allow spaces, stop at comma/period/next key:value
+  // 1. Multi-word fields (name, productType, etc.) - allow spaces, stop at comma/period/next key:value
   const multiWordPattern = /(\w+):((?:[^\s:,\.]+(?:\s+[^\s:,\.]+)*)+)(?=,|\.|(?:\s+\w+:)|$)/gi
   // 2. Phone pattern - allows spaces, dashes, parentheses (e.g., "(555) 123-4567")
   const phonePattern = /(\w+):([\d\s\-\(\)]+)(?=\s|,|\.|(?:\s+\w+:)|$)/gi
@@ -366,9 +363,25 @@ export function parseKeyValueSyntax(
       }
     }
 
+    // Normalize field values (state, productType, etc.)
+    const normalizedValue = normalizeFieldValue(normalizedKey, value)
+    if (normalizedValue === null) {
+      // normalizeFieldValue returns null when the value is invalid for the field type
+      // Create invalid_value pill for any field where normalization fails
+      addResult({
+        key,
+        value,
+        original,
+        validation: 'invalid_value',
+        fieldName: normalizedKey,
+      })
+      match = otherPattern.exec(text)
+      continue
+    }
+
     addResult({
       key,
-      value,
+      value: normalizedValue,
       original,
       validation: 'valid',
       fieldName: normalizedKey,
@@ -393,7 +406,14 @@ export function parseKeyValueSyntax(
         }
 
         const key = field.fieldName
-        const value = String(field.value)
+        const rawValue = String(field.value)
+
+        // Normalize field values (state, productType, etc.)
+        const value = normalizeFieldValue(field.fieldName, rawValue)
+        if (value === null) {
+          // Invalid enum value - skip this field
+          continue
+        }
 
         addResult({
           key,

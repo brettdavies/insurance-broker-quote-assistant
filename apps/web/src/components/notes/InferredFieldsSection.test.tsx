@@ -50,8 +50,8 @@ describe('InferredFieldsSection', () => {
       }
       const { container } = renderWithQueryClient(<InferredFieldsSection {...props} />)
 
-      // ownsHome is in "Property" category - should show
-      expect(textIncludes(container, 'Property:')).toBe(true)
+      // ownsHome is in "Details" category - should show
+      expect(textIncludes(container, 'Details:')).toBe(true)
 
       // "Identity & Contact" category should not show (no fields)
       expect(textIncludes(container, 'Identity & Contact:')).toBe(false)
@@ -75,9 +75,8 @@ describe('InferredFieldsSection', () => {
       }
       const { container } = renderWithQueryClient(<InferredFieldsSection {...props} />)
 
-      // Both categories should show
-      expect(textIncludes(container, 'Property:')).toBe(true)
-      expect(textIncludes(container, 'Household:')).toBe(true)
+      // Both categories should show (both map to Details)
+      expect(textIncludes(container, 'Details:')).toBe(true)
     })
   })
 
@@ -105,8 +104,7 @@ describe('InferredFieldsSection', () => {
 
       // Check that categories exist
       expect(textIncludes(container, 'Location:')).toBe(true)
-      expect(textIncludes(container, 'Property:')).toBe(true)
-      expect(textIncludes(container, 'Household:')).toBe(true)
+      expect(textIncludes(container, 'Details:')).toBe(true)
 
       // Verify fields are grouped correctly
       expect(textIncludes(container, 'State:')).toBe(true)
@@ -164,7 +162,7 @@ describe('InferredFieldsSection', () => {
 
       // Should have separate category headers
       expect(textIncludes(container, 'Location:')).toBe(true)
-      expect(textIncludes(container, 'Property:')).toBe(true)
+      expect(textIncludes(container, 'Details:')).toBe(true)
     })
   })
 
@@ -201,9 +199,11 @@ describe('InferredFieldsSection', () => {
       }
       const { container } = renderWithQueryClient(<InferredFieldsSection {...props} />)
 
-      // Find button with text "Click"
+      // Find button containing the field label (entire row is clickable)
       const buttons = findAllElements(container, 'button')
-      const editButton = Array.from(buttons).find((btn) => btn.textContent === 'Click')
+      const editButton = Array.from(buttons).find(
+        (btn) => btn.textContent?.includes('Owns Home') || btn.textContent?.includes('ownsHome')
+      )
       expect(editButton).toBeTruthy()
       if (editButton) {
         fireEvent.click(editButton)

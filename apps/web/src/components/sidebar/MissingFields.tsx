@@ -126,17 +126,25 @@ export function MissingFields({
                             <TooltipProvider>
                               <Tooltip>
                                 <TooltipTrigger asChild>
-                                  <button
-                                    type="button"
-                                    className="opacity-60 transition-opacity hover:opacity-100"
+                                  <div
+                                    className="cursor-pointer opacity-60 transition-opacity hover:opacity-100"
                                     aria-label={tooltipContent}
                                     onClick={(e) => {
                                       e.stopPropagation()
                                       e.preventDefault()
                                     }}
+                                    onKeyDown={(e) => {
+                                      if (e.key === 'Enter' || e.key === ' ') {
+                                        e.stopPropagation()
+                                        e.preventDefault()
+                                      }
+                                    }}
+                                    // biome-ignore lint/a11y/useSemanticElements: Using div to avoid nested button warning
+                                    role="button"
+                                    tabIndex={0}
                                   >
                                     <Info className="h-4 w-4 text-gray-400 dark:text-gray-500" />
-                                  </button>
+                                  </div>
                                 </TooltipTrigger>
                                 <TooltipContent className="max-w-xs">
                                   <p className="text-xs">{tooltipContent}</p>

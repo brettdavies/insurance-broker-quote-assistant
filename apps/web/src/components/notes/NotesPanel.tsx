@@ -13,7 +13,10 @@
 import { CompliancePanel } from '@/components/layout/CompliancePanel'
 import { KeyValueEditor } from '@/components/shared/KeyValueEditor'
 import { FieldModal } from '@/components/shortcuts/FieldModal'
+import { RoutingStatus } from '@/components/sidebar/RoutingStatus'
 import { useComplianceDisclaimers } from '@/hooks/useComplianceDisclaimers'
+import { usePillInjection } from '@/hooks/usePillInjection'
+import { useRouting } from '@/hooks/useRouting'
 import { type ActionCommand, type FieldCommand, useSlashCommands } from '@/hooks/useSlashCommands'
 import { type UserProfile, unifiedFieldMetadata } from '@repo/shared'
 import { useCallback, useState } from 'react'
@@ -44,6 +47,7 @@ interface NotesPanelProps {
   onDismissInference?: (fieldName: string) => void
   onEditInference?: (fieldName: string, value: unknown) => void
   onConvertToKnown?: (fieldName: string, value: unknown) => void
+  onConvertToKnownFromPill?: (fieldName: string) => void
   // Profile for compliance disclaimers
   profile?: UserProfile
 }
@@ -63,6 +67,7 @@ export function NotesPanel({
   onDismissInference = () => {},
   onEditInference = () => {},
   onConvertToKnown = () => {},
+  onConvertToKnownFromPill = () => {},
   profile = {},
 }: NotesPanelProps) {
   const [fieldModalOpen, setFieldModalOpen] = useState(false)
@@ -102,8 +107,33 @@ export function NotesPanel({
     [onEditInference]
   )
 
+  // Get pill injection hook for converting inferred fields to known
+  const editor = editorRef?.current?.getEditor() ?? null
+  const { injectPill } = usePillInjection(editor)
+
+  // Handle converting inferred field to known from Check button (inferred fields section)
+  const handleConvertToKnownLocal = useCallback(
+    (fieldName: string, value: unknown) => {
+      // Inject pill into editor (textbox is source of truth)
+      if (fieldName) {
+        injectPill(fieldName, value)
+      }
+      // Pill injection will trigger PillFieldExtractionPlugin which calls onFieldExtracted
+      // to update the profile. We just need to remove suppression and re-run inference.
+      // Use a small delay to ensure pill extraction completes first
+      setTimeout(() => {
+        onConvertToKnownFromPill(fieldName)
+      }, 0)
+    },
+    [onConvertToKnownFromPill, injectPill]
+  )
+
   const handleSaveKnown = useCallback(
     (fieldName: string, value: unknown) => {
+      // Pill injection is already handled in useFieldModalHandlers.handleSaveKnown
+      // The pill injection will trigger PillFieldExtractionPlugin which updates the profile.
+      // We just need to remove suppression and re-run inference.
+      // Note: This callback is only used as a fallback if onSaveKnownFromPill is not provided
       onConvertToKnown(fieldName, value)
       setInferredModalOpen(false)
     },
@@ -161,6 +191,9 @@ export function NotesPanel({
   // Fetch disclaimers from backend API when state or product changes
   const disclaimers = useComplianceDisclaimers(profile)
 
+  // Fetch routing decision reactively when profile changes (intake mode only)
+  const routeDecision = useRouting(profile)
+
   return (
     <>
       <div className="flex h-full flex-col bg-gray-50 dark:bg-gray-900">
@@ -199,12 +232,17 @@ export function NotesPanel({
             confidence={confidence}
             onDismiss={onDismissInference}
             onEdit={handleEditInferenceLocal}
-            onConvertToKnown={onConvertToKnown}
+            onConvertToKnown={handleConvertToKnownLocal}
           />
 
           {/* Compliance Panel (directly below Inferred Fields Section) */}
           <div className="mt-4">
             <CompliancePanel mode={mode} disclaimers={disclaimers} />
+          </div>
+
+          {/* Routing Status (directly below Compliance Panel, intake mode only) */}
+          <div className="mt-4">
+            <RoutingStatus route={routeDecision} mode={mode} />
           </div>
         </div>
       </div>
@@ -231,6 +269,12 @@ export function NotesPanel({
           onDelete={() => handleDeleteInferred(inferredModalField.fieldName)}
           onSaveInferred={(value) => handleSaveInferred(inferredModalField.fieldName, value)}
           onSaveKnown={(value) => handleSaveKnown(inferredModalField.fieldName, value)}
+          onSaveKnownFromPill={() => {
+            // Pill injection triggers profile update via extraction
+            // Just remove suppression and re-run inference
+            onConvertToKnownFromPill(inferredModalField.fieldName)
+            setInferredModalOpen(false)
+          }}
           editor={editorRef?.current?.getEditor() ?? null}
         />
       )}

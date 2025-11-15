@@ -8,19 +8,12 @@ import { KeyValueEditor } from '@/components/shared/KeyValueEditor'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Progress } from '@/components/ui/progress'
-import { useToast } from '@/components/ui/use-toast'
-import { api } from '@/lib/api-client'
 import type { PolicySummary } from '@repo/shared'
-import {
-  ACCEPTED_EXTENSIONS,
-  ACCEPTED_MIME_TYPES,
-  MAX_FILE_SIZE,
-  isAcceptedFileType,
-  isFileSizeValid,
-} from '@repo/shared'
-import { useMutation } from '@tanstack/react-query'
+import { ACCEPTED_EXTENSIONS, MAX_FILE_SIZE } from '@repo/shared'
 import { Loader2 } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
+import { useDragAndDrop } from './hooks/useDragAndDrop'
+import { useFileUpload } from './hooks/useFileUpload'
 
 interface UploadPanelProps {
   onFileSelected?: (file: File) => void
@@ -46,7 +39,6 @@ export function UploadPanel({
   fileInputRef: externalFileInputRef,
   editorRef: externalEditorRef,
 }: UploadPanelProps) {
-  const [file, setFile] = useState<File | null>(null)
   const [extractedText, setExtractedText] = useState<string | null>(null)
   const internalEditorRef = useRef<{
     focus: () => void
@@ -59,7 +51,30 @@ export function UploadPanel({
   const internalFileInputRef = useRef<HTMLInputElement | null>(null)
   const editorRef = externalEditorRef || internalEditorRef
   const fileInputRef = externalFileInputRef || internalFileInputRef
-  const { toast } = useToast()
+
+  // File upload hook
+  const {
+    file,
+    uploadMutation,
+    handleFileChange: handleFileChangeInternal,
+    clearFile,
+  } = useFileUpload({
+    onFileSelected: (f) => onFileSelected?.(f as File),
+    onPolicyExtracted,
+  })
+
+  // Drag and drop hook
+  const { isDragging, handleDrop, handleDragOver, handleDragEnter, handleDragLeave } =
+    useDragAndDrop({
+      onFileDropped: (droppedFile) => {
+        if (handleFileChangeInternal(droppedFile) && fileInputRef.current) {
+          // Create a DataTransfer object to simulate file input change
+          const dataTransfer = new DataTransfer()
+          dataTransfer.items.add(droppedFile)
+          fileInputRef.current.files = dataTransfer.files
+        }
+      },
+    })
 
   // Expose file input ref to parent
   useEffect(() => {
@@ -75,107 +90,6 @@ export function UploadPanel({
     }
   }, [externalEditorRef])
 
-  // Policy upload mutation
-  const uploadMutation = useMutation({
-    mutationFn: async (file: File) => {
-      // Hono RPC uses 'form' property for file uploads, not 'body'
-      // @ts-expect-error - Hono RPC type inference for nested routes
-      const response = await api.api.policy.upload.$post({
-        form: {
-          file: file,
-        },
-      })
-
-      if (!response.ok) {
-        const errorData = await response
-          .json()
-          .catch(() => ({ error: { message: 'Upload failed' } }))
-
-        // Handle structured error responses
-        if (errorData.error) {
-          const errorCode = errorData.error.code || 'UNKNOWN_ERROR'
-          const errorMessage = errorData.error.message || 'Upload failed'
-          const errorDetails = errorData.error.details
-
-          // Map error codes to user-friendly messages
-          let userMessage = errorMessage
-          if (errorCode === 'INVALID_FILE') {
-            userMessage = `Invalid file type. Supported: ${ACCEPTED_EXTENSIONS.map((ext) => ext.toUpperCase().slice(1)).join(', ')}`
-          } else if (errorCode === 'INVALID_REQUEST') {
-            userMessage = 'No file provided. Please select a file to upload.'
-          } else if (errorCode === 'EXTRACTION_ERROR') {
-            userMessage =
-              'Failed to extract policy data. Please try manual entry or check the file format.'
-          } else if (errorCode === 'INTERNAL_ERROR') {
-            userMessage = 'An internal error occurred. Please try again or contact support.'
-          }
-
-          const error = new Error(userMessage)
-          // @ts-expect-error - Add error code to error object
-          error.code = errorCode
-          // @ts-expect-error - Add error details to error object
-          error.details = errorDetails
-          throw error
-        }
-
-        throw new Error(errorData.error?.message || 'Failed to upload policy')
-      }
-
-      const data = await response.json()
-      return data as {
-        extractedText: string
-        fileName: string
-        policySummary?: PolicySummary
-      }
-    },
-    onSuccess: (data) => {
-      setExtractedText(data.extractedText)
-      if (data.policySummary) {
-        onPolicyExtracted?.(data.policySummary)
-      }
-      toast({
-        title: 'Policy uploaded',
-        description: `Extracted ${Object.keys(data.policySummary || {}).length} fields from ${data.fileName}`,
-      })
-    },
-    onError: (error: Error) => {
-      // Enhanced error handling with specific error types
-      let title = 'Upload failed'
-      let description = error.message
-
-      // @ts-expect-error - Check for error code
-      const errorCode = error.code
-
-      if (errorCode === 'INVALID_FILE') {
-        title = 'Invalid file type'
-        description = `Please upload a ${ACCEPTED_EXTENSIONS.map((ext) => ext.toUpperCase().slice(1)).join(', ')} file.`
-      } else if (errorCode === 'INVALID_REQUEST') {
-        title = 'Invalid request'
-        description = 'No file provided. Please select a file to upload.'
-      } else if (errorCode === 'EXTRACTION_ERROR') {
-        title = 'Extraction failed'
-        description =
-          'Failed to extract policy data from the file. You can try manual entry instead.'
-      } else if (errorCode === 'INTERNAL_ERROR') {
-        title = 'Server error'
-        description = 'An internal error occurred. Please try again or contact support.'
-      } else if (error.message.includes('NetworkError') || error.message.includes('fetch')) {
-        title = 'Network error'
-        description = 'Failed to connect to the server. Please check your connection and try again.'
-      } else if (error.message.includes('timeout')) {
-        title = 'Request timeout'
-        description = 'The upload took too long. Please try again with a smaller file.'
-      }
-
-      toast({
-        variant: 'destructive',
-        title,
-        description,
-        duration: 5000, // Longer duration for error messages
-      })
-    },
-  })
-
   // Populate editor when extracted text is available
   // biome-ignore lint/correctness/useExhaustiveDependencies: editorRef is a stable ref and doesn't need to be in dependencies
   useEffect(() => {
@@ -185,98 +99,23 @@ export function UploadPanel({
     }
   }, [extractedText])
 
+  // Update extracted text from mutation result
+  useEffect(() => {
+    if (uploadMutation.data?.extractedText) {
+      setExtractedText(uploadMutation.data.extractedText)
+    }
+  }, [uploadMutation.data])
+
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = e.target.files?.[0]
     if (!selectedFile) return
 
-    // Validate file type using shared constants (single source of truth)
-    if (!isAcceptedFileType(selectedFile.name, selectedFile.type)) {
-      toast({
-        variant: 'destructive',
-        title: 'Invalid file type',
-        description: `Please upload a ${ACCEPTED_EXTENSIONS.map((ext) => ext.toUpperCase().slice(1)).join(', ')} file.`,
-        duration: 5000,
-      })
-      // Reset file input
+    if (!handleFileChangeInternal(selectedFile)) {
+      // Reset file input if validation failed
       if (fileInputRef.current) {
         fileInputRef.current.value = ''
       }
-      return
     }
-
-    // Validate file size using shared constants
-    if (!isFileSizeValid(selectedFile.size)) {
-      const maxSizeMB = MAX_FILE_SIZE / 1024 / 1024
-      const fileSizeMB = (selectedFile.size / 1024 / 1024).toFixed(2)
-      toast({
-        variant: 'destructive',
-        title: 'File too large',
-        description: `File size (${fileSizeMB}MB) exceeds the ${maxSizeMB}MB limit. Please choose a smaller file.`,
-        duration: 5000,
-      })
-      // Reset file input
-      if (fileInputRef.current) {
-        fileInputRef.current.value = ''
-      }
-      return
-    }
-
-    setFile(selectedFile)
-    onFileSelected?.(selectedFile)
-    // Trigger upload
-    uploadMutation.mutate(selectedFile)
-  }
-
-  const [isDragging, setIsDragging] = useState(false)
-
-  const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
-    e.preventDefault()
-    setIsDragging(false)
-    const droppedFile = e.dataTransfer.files[0]
-    if (droppedFile) {
-      // Validate file type
-      if (!isAcceptedFileType(droppedFile.name, droppedFile.type)) {
-        toast({
-          variant: 'destructive',
-          title: 'Invalid file type',
-          description: `Please upload a ${ACCEPTED_EXTENSIONS.map((ext) => ext.toUpperCase().slice(1)).join(', ')} file.`,
-          duration: 5000,
-        })
-        return
-      }
-
-      // Validate file size
-      if (!isFileSizeValid(droppedFile.size)) {
-        const maxSizeMB = MAX_FILE_SIZE / 1024 / 1024
-        const fileSizeMB = (droppedFile.size / 1024 / 1024).toFixed(2)
-        toast({
-          variant: 'destructive',
-          title: 'File too large',
-          description: `File size (${fileSizeMB}MB) exceeds the ${maxSizeMB}MB limit. Please choose a smaller file.`,
-          duration: 5000,
-        })
-        return
-      }
-
-      // Directly set file and trigger upload (don't use synthetic event)
-      setFile(droppedFile)
-      onFileSelected?.(droppedFile)
-      uploadMutation.mutate(droppedFile)
-    }
-  }
-
-  const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
-    e.preventDefault()
-  }
-
-  const handleDragEnter = (e: React.DragEvent<HTMLDivElement>) => {
-    e.preventDefault()
-    setIsDragging(true)
-  }
-
-  const handleDragLeave = (e: React.DragEvent<HTMLDivElement>) => {
-    e.preventDefault()
-    setIsDragging(false)
   }
 
   const handleManualDataChange = (content: string) => {
@@ -284,10 +123,12 @@ export function UploadPanel({
   }
 
   const handleClear = () => {
-    setFile(null)
+    clearFile()
     editorRef.current?.clear()
-    onFileSelected?.(null as unknown as File)
     onManualDataChange?.('')
+    if (fileInputRef.current) {
+      fileInputRef.current.value = ''
+    }
   }
 
   return (

@@ -8,6 +8,9 @@
 import { useEffect, useRef, useState } from 'react'
 import { Input } from './input'
 
+// Track if Enter was used to select (so parent can submit after state update)
+const pendingEnterSelection: string | null = null
+
 export interface ComboboxOption {
   value: string
   label: string // Display label (e.g., "CA - California")
@@ -22,6 +25,7 @@ interface ComboboxProps {
   className?: string
   autoFocus?: boolean
   onKeyDown?: (e: React.KeyboardEvent<HTMLInputElement>) => void
+  onEnterSelect?: (value: string) => void // Callback when Enter selects an item
 }
 
 export function Combobox({
@@ -32,6 +36,7 @@ export function Combobox({
   className = '',
   autoFocus = false,
   onKeyDown,
+  onEnterSelect,
 }: ComboboxProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [searchTerm, setSearchTerm] = useState('')
@@ -86,11 +91,16 @@ export function Combobox({
     setHighlightedIndex(0)
   }
 
-  const handleSelect = (optionValue: string) => {
+  const handleSelect = (optionValue: string, fromEnter = false) => {
     onChange(optionValue)
     setIsOpen(false)
     setSearchTerm('')
     inputRef.current?.blur()
+
+    // If selected via Enter, notify parent
+    if (fromEnter && onEnterSelect) {
+      onEnterSelect(optionValue)
+    }
   }
 
   const handleInputFocus = () => {
@@ -105,8 +115,11 @@ export function Combobox({
     setTimeout(() => {
       if (!listRef.current?.contains(document.activeElement)) {
         setIsOpen(false)
-        // Reset search term to selected value
-        if (value && selectedOption) {
+        // If there's a highlighted item but no value, use the highlighted item
+        if (!value && filteredOptions[highlightedIndex]) {
+          handleSelect(filteredOptions[highlightedIndex].value, false)
+        } else if (value && selectedOption) {
+          // Reset search term to selected value
           setSearchTerm(selectedOption.label)
         } else {
           setSearchTerm('')
@@ -126,8 +139,13 @@ export function Combobox({
     } else if (e.key === 'Enter') {
       e.preventDefault()
       if (filteredOptions[highlightedIndex]) {
-        handleSelect(filteredOptions[highlightedIndex].value)
+        // Select the highlighted item via Enter
+        const selectedValue = filteredOptions[highlightedIndex].value
+        handleSelect(selectedValue, true)
+        // Don't call onKeyDown here - onEnterSelect callback will handle submission
+        return
       }
+      // If no item is highlighted, pass through to parent
       onKeyDown?.(e)
     } else if (e.key === 'Escape') {
       setIsOpen(false)
@@ -167,7 +185,7 @@ export function Combobox({
               } ${option.value === value ? 'font-semibold' : ''}`}
               onMouseDown={(e) => {
                 e.preventDefault() // Prevent input blur
-                handleSelect(option.value)
+                handleSelect(option.value, false)
               }}
               onMouseEnter={() => setHighlightedIndex(index)}
             >

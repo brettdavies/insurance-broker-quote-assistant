@@ -93,6 +93,8 @@ export function transformTextToPills(textNode: TextNode, parsed: ParsedKeyValue[
   const nodesToInsert: Array<TextNode | ReturnType<typeof $createPillNode>> = []
   let targetNode: TextNode | ReturnType<typeof $createPillNode> | null = null
   let targetOffset = 0
+  // Track pills being created in this batch to prevent duplicates within the same transformation
+  const pillsInBatch = new Set<string>()
 
   for (const match of sortedMatches) {
     // Add text before the match
@@ -111,6 +113,14 @@ export function transformTextToPills(textNode: TextNode, parsed: ParsedKeyValue[
     // Normalize field name to ensure consistency (even though it should already be normalized from parsing)
     const normalizedFieldName = match.fieldName ? normalizeFieldName(match.fieldName) : null
     const metadata = normalizedFieldName ? unifiedFieldMetadata[normalizedFieldName] : null
+
+    // Check if this is a single-instance field and if we've already processed it in this batch
+    if (normalizedFieldName && metadata?.singleInstance && pillsInBatch.has(normalizedFieldName)) {
+      // Skip duplicate within the same batch - just update the offset and continue
+      currentOffset = match.index + match.original.length
+      continue
+    }
+
     const existingPill =
       normalizedFieldName && metadata?.singleInstance
         ? existingPills.get(normalizedFieldName)
@@ -129,6 +139,10 @@ export function transformTextToPills(textNode: TextNode, parsed: ParsedKeyValue[
         fieldName: normalizedFieldName || match.fieldName, // Use normalized field name
       })
       nodesToInsert.push(pillNode)
+      // Track this pill in the batch
+      if (normalizedFieldName && metadata?.singleInstance) {
+        pillsInBatch.add(normalizedFieldName)
+      }
     } else {
       // No existing pill, create new one with normalized field name
       pillNode = $createPillNode({
@@ -138,6 +152,10 @@ export function transformTextToPills(textNode: TextNode, parsed: ParsedKeyValue[
         fieldName: normalizedFieldName || match.fieldName, // Use normalized field name
       })
       nodesToInsert.push(pillNode)
+      // Track this pill in the batch
+      if (normalizedFieldName && metadata?.singleInstance) {
+        pillsInBatch.add(normalizedFieldName)
+      }
     }
 
     // Track cursor position - if cursor is in or at the end of the pill text, move it to after the pill

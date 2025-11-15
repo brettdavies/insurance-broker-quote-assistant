@@ -54,25 +54,23 @@ const FIELD_ALIASES: Record<string, string> = (() => {
 
 /**
  * Numeric fields that require number conversion
+ * Derived from unified field metadata to ensure consistency
  */
-const NUMERIC_FIELDS = new Set([
-  'age',
-  'kids',
-  'householdSize',
-  'vehicles',
-  'creditScore',
-  // Note: premiums is handled separately (object with annual/monthly/semiAnnual)
-])
+const NUMERIC_FIELDS = new Set(
+  Object.entries(unifiedFieldMetadata)
+    .filter(([, metadata]) => metadata.fieldType === 'numeric')
+    .map(([fieldName]) => fieldName)
+)
 
 /**
  * Boolean fields
+ * Derived from unified field metadata to ensure consistency
  */
-const BOOLEAN_FIELDS = new Set(['ownsHome', 'cleanRecord3Yr'])
-
-/**
- * Product type enum values
- */
-const PRODUCT_TYPE_VALUES = ['auto', 'home', 'renters', 'umbrella'] as const
+const BOOLEAN_FIELDS = new Set(
+  Object.entries(unifiedFieldMetadata)
+    .filter(([, metadata]) => metadata.fieldType === 'boolean')
+    .map(([fieldName]) => fieldName)
+)
 
 /**
  * Parse key-value syntax from message
@@ -114,24 +112,18 @@ export function parseKeyValueSyntax(message: string): KeyValueExtractionResult {
           value.toLowerCase() === 'true' || value === '1' || value.toLowerCase() === 'yes'
         assignBooleanField(profile, fieldName, boolValue)
       } else if (fieldName === 'productType') {
-        // Validate product type enum
+        // Validate product type enum using metadata options
+        const metadata = unifiedFieldMetadata[fieldName]
         const productValue = value.toLowerCase()
-        if (PRODUCT_TYPE_VALUES.includes(productValue as (typeof PRODUCT_TYPE_VALUES)[number])) {
-          profile.productType = productValue as (typeof PRODUCT_TYPE_VALUES)[number]
+        if (metadata?.options?.includes(productValue)) {
+          profile.productType = productValue as typeof profile.productType
         }
       } else if (fieldName === 'propertyType') {
-        // Validate property type enum
-        const propertyTypes = [
-          'single-family',
-          'condo',
-          'townhouse',
-          'mobile-home',
-          'duplex',
-          'apartment',
-        ] as const
+        // Validate property type enum using metadata options
+        const metadata = unifiedFieldMetadata[fieldName]
         const propertyValue = value.toLowerCase().replace(/_/g, '-')
-        if (propertyTypes.includes(propertyValue as (typeof propertyTypes)[number])) {
-          profile.propertyType = propertyValue as (typeof propertyTypes)[number]
+        if (metadata?.options?.includes(propertyValue)) {
+          profile.propertyType = propertyValue as typeof profile.propertyType
         }
       } else if (fieldName === 'premium' || fieldName === 'premiums') {
         // Handle premium parsing - supports formats like:

@@ -6,6 +6,7 @@
  */
 
 import { unifiedFieldMetadata } from '../../schemas/field-metadata'
+import { normalizeFieldValue } from './field-value-normalizer'
 import { buildFieldTypeConfig } from './key-value-parser'
 import type { ParsedKeyValue } from './types'
 
@@ -34,7 +35,13 @@ export function extractFields(
           fields[normalizedKey] = numValue
         }
       } else {
-        fields[normalizedKey] = item.value
+        // Normalize field values (state, productType, etc.)
+        const normalizedValue = normalizeFieldValue(normalizedKey, item.value)
+        if (normalizedValue === null) {
+          // Invalid enum value - skip it
+          continue
+        }
+        fields[normalizedKey] = normalizedValue
       }
     }
   }

@@ -80,7 +80,7 @@ export interface UnifiedFieldMetadata {
   description?: string // Concise field description for LLM schema (e.g., "Age in years" instead of "What is the age?")
   category: string // Category for grouping in UI
   fieldType: 'string' | 'numeric' | 'date' | 'object' | 'boolean' // Field type for validation/input
-  aliases?: string[] // Optional aliases for field name (e.g., ['product'] for productLine)
+  aliases?: string[] // Optional aliases for field name (e.g., ['product'] for productType)
   flows: ('intake' | 'policy')[] // Which flows this field applies to
   nestedFields?: Record<string, UnifiedFieldMetadata> // For nested objects (coverageLimits, deductibles, etc.)
   min?: number // Minimum value for numeric fields

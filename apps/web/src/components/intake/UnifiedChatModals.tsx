@@ -32,6 +32,7 @@ interface UnifiedChatModalsProps {
   onDeleteInferred: (fieldName: string) => void
   onSaveInferred: (fieldName: string, value: unknown) => void
   onSaveKnown: (fieldName: string, value: unknown) => void
+  onSaveKnownFromPill: (fieldName: string) => void
 }
 
 export function UnifiedChatModals({
@@ -51,6 +52,7 @@ export function UnifiedChatModals({
   onDeleteInferred,
   onSaveInferred,
   onSaveKnown,
+  onSaveKnownFromPill,
 }: UnifiedChatModalsProps) {
   return (
     <>
@@ -82,6 +84,10 @@ export function UnifiedChatModals({
           }}
           onSaveKnown={(value) => {
             onSaveKnown(inferredModalField.fieldName, value)
+            setInferredModalOpen(false)
+          }}
+          onSaveKnownFromPill={() => {
+            onSaveKnownFromPill(inferredModalField.fieldName)
             setInferredModalOpen(false)
           }}
           editor={editor}

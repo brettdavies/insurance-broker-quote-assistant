@@ -16,6 +16,7 @@ interface CapturedFieldsProps {
   inferredFields?: Partial<UserProfile>
   inferenceReasons?: Record<string, string>
   onDismiss?: (fieldKey: string) => void
+  onConvertToKnown?: (fieldKey: string, value: unknown) => void
 }
 
 export function CapturedFields({
@@ -25,6 +26,7 @@ export function CapturedFields({
   inferredFields,
   inferenceReasons,
   onDismiss,
+  onConvertToKnown,
 }: CapturedFieldsProps) {
   const fieldsByCategory = extractUserProfileFields(
     profile,
@@ -40,6 +42,7 @@ export function CapturedFields({
       categoryLabels={categoryLabels}
       onFieldClick={onFieldClick}
       onDismiss={onDismiss}
+      onConvertToKnown={onConvertToKnown}
       emptyMessage="No fields captured yet. Start typing to capture information."
       defaultOpenCategories={['identity', 'location', 'product', 'details']}
     />

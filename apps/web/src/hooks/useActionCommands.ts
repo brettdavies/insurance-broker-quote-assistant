@@ -175,21 +175,32 @@ export function useActionCommands({
     }
 
     const pills = profileRef.current
-    intakeMutation.mutate(
-      {
-        message: cleanedText,
-        pills: Object.keys(pills).length > 0 ? pills : undefined,
-        suppressedFields: suppression.getSuppressed(),
+    const request = {
+      message: cleanedText,
+      pills: Object.keys(pills).length > 0 ? pills : undefined,
+      suppressedFields: suppression.getSuppressed(),
+    }
+
+    console.log('[Frontend] handleExtract: Calling API with request:', {
+      messageLength: cleanedText.length,
+      hasPills: Object.keys(pills).length > 0,
+      suppressedFieldsCount: suppression.getSuppressed().length,
+    })
+
+    intakeMutation.mutate(request, {
+      onSuccess: (result: IntakeResult) => {
+        console.log('[Frontend] handleExtract: onSuccess called with result:', {
+          hasRoute: !!result.route,
+          routePrimaryCarrier: result.route?.primaryCarrier,
+          routeEligibleCarriersCount: result.route?.eligibleCarriers?.length || 0,
+        })
+        onIntakeSuccess?.(result)
       },
-      {
-        onSuccess: (result: IntakeResult) => {
-          onIntakeSuccess?.(result)
-        },
-        onError: (error: Error) => {
-          onIntakeError?.(error)
-        },
-      }
-    )
+      onError: (error: Error) => {
+        console.error('[Frontend] handleExtract: onError called:', error)
+        onIntakeError?.(error)
+      },
+    })
   }, [editorRef, profileRef, intakeMutation, suppression, toast, onIntakeSuccess, onIntakeError])
 
   const handleActionCommand = useCallback(

@@ -1,41 +1,18 @@
-// Export knowledge pack types
-export type {
-  Carrier,
-  CarrierFile,
-  State,
-  StateFile,
-  Product,
-  ProductFile,
-  Discount,
-  Compensation,
-  Source,
-  FieldWithMetadata,
-  ProductEligibility,
-  AutoMinimums,
-  HomeMinimums,
-  RentersMinimums,
-} from './schemas/knowledge-pack'
+/**
+ * Shared Package Index
+ *
+ * Main entry point for the shared package.
+ * Re-exports all schemas, services, utils, and constants.
+ */
 
-// Export user contact schema and types
-export {
-  userContactSchema,
-  type UserContact,
-} from './schemas/user-contact'
+// Re-export all schemas
+export * from './index/schemas'
 
-// Export user profile schema and types
-export {
-  userProfileSchema,
-  existingPolicySchema,
-  type UserProfile,
-  type ExistingPolicy,
-} from './schemas/user-profile'
+// Re-export all services
+export * from './index/services'
 
-// Export unified field metadata definitions
-export {
-  unifiedFieldMetadata,
-  type UnifiedFieldMetadata,
-  type InferenceRule,
-} from './schemas/unified-field-metadata'
+// Re-export all utils
+export * from './index/utils'
 
 // Export unified field metadata utilities
 export {
@@ -213,6 +190,9 @@ export {
   normalizeFieldName,
   type NormalizedField,
 } from './utils/field-normalization'
+
+// Re-export all constants
+export * from './index/constants'
 
 // Export number formatting utilities
 export {

@@ -35,6 +35,17 @@ const USER_PROFILE_CATEGORY_LABELS: Record<string, string> = {
 }
 
 /**
+ * Category order for UserProfile fields (used by both CapturedFields and InferredFieldsSection)
+ * This ensures consistent ordering across all field displays.
+ */
+export const USER_PROFILE_CATEGORY_ORDER: readonly string[] = [
+  'identity',
+  'location',
+  'product',
+  'details',
+] as const
+
+/**
  * Extract fields from UserProfile and organize by category
  */
 export function extractUserProfileFields(

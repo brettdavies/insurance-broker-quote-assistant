@@ -12,7 +12,7 @@ import { useCallback } from 'react'
 interface UseFieldModalHandlersParams {
   value: string
   isNumericField: boolean
-  fieldMetadata: { min?: number; max?: number } | null
+  fieldMetadata: { min?: number; max?: number; fieldType?: string } | null
   validateField: (
     value: string,
     fieldName?: string
@@ -29,6 +29,7 @@ interface UseFieldModalHandlersParams {
   onDelete?: () => void
   onSaveInferred?: (value: unknown) => void
   onSaveKnown?: (value: unknown) => void
+  onSaveKnownFromPill?: (fieldName: string) => void // For when pill injection triggers profile update
   fieldName?: string
   currentValue?: unknown
   editor?: LexicalEditor | null
@@ -51,6 +52,7 @@ export function useFieldModalHandlers({
   onDelete,
   onSaveInferred,
   onSaveKnown,
+  onSaveKnownFromPill,
   fieldName,
   currentValue,
   editor,
@@ -98,14 +100,26 @@ export function useFieldModalHandlers({
     // For numeric fields, use parsed value
     if (isNumericField && validation.parsedValue !== undefined) {
       finalValue = validation.parsedValue
+    } else if (fieldMetadata?.fieldType === 'boolean') {
+      // Convert boolean string values to actual booleans
+      finalValue = value === 'true'
     }
 
     onSaveInferred(finalValue)
     onOpenChange(false)
-  }, [value, isNumericField, fieldName, validateField, setError, onSaveInferred, onOpenChange])
+  }, [
+    value,
+    isNumericField,
+    fieldName,
+    fieldMetadata,
+    validateField,
+    setError,
+    onSaveInferred,
+    onOpenChange,
+  ])
 
   const handleSaveKnown = useCallback(() => {
-    if (!onSaveKnown) return
+    if (!fieldName) return
 
     const validation = validateField(value, fieldName)
     if (!validation.valid) {
@@ -118,24 +132,44 @@ export function useFieldModalHandlers({
     // For numeric fields, use parsed value
     if (isNumericField && validation.parsedValue !== undefined) {
       finalValue = validation.parsedValue
+    } else if (fieldMetadata?.fieldType === 'boolean') {
+      // Convert boolean string values to actual booleans
+      finalValue = value === 'true'
     }
 
-    // Story 4.5: Inject pill into lexical editor before converting to known
-    if (fieldName) {
-      injectPill(fieldName, String(finalValue))
+    // Inject pill into editor (textbox is source of truth)
+    // Pill injection will trigger PillFieldExtractionPlugin which calls onFieldExtracted
+    // to update the profile. We just need to remove suppression and re-run inference.
+    if (fieldName && editor) {
+      injectPill(fieldName, finalValue)
+
+      // Use the new callback that only handles suppression/inference (not profile update)
+      if (onSaveKnownFromPill) {
+        // Use a small delay to ensure pill extraction completes first
+        setTimeout(() => {
+          onSaveKnownFromPill(fieldName)
+        }, 0)
+      } else if (onSaveKnown) {
+        // Fallback to old behavior for backward compatibility
+        onSaveKnown(finalValue)
+      }
+    } else if (onSaveKnown) {
+      // Fallback if no editor or fieldName
+      onSaveKnown(finalValue)
     }
 
-    // Call parent callback to update state
-    onSaveKnown(finalValue)
     onOpenChange(false)
   }, [
     value,
     isNumericField,
     fieldName,
+    fieldMetadata,
     validateField,
     setError,
     onSaveKnown,
+    onSaveKnownFromPill,
     injectPill,
+    editor,
     onOpenChange,
   ])
 

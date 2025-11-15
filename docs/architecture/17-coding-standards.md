@@ -57,14 +57,14 @@
 import { camelCase, snakeCase } from 'es-toolkit/string'
 
 // Database → Frontend (snake_case → camelCase)
-const apiData = { product_line: 'auto', clean_record_3yr: true }
+const apiData = { product_type: 'auto', clean_record_3yr: true }
 const frontendData = {
-  productLine: camelCase(apiData.product_line),
+  productType: camelCase(apiData.product_type),
   cleanRecord3Yr: apiData.clean_record_3yr,
 }
 
 // Frontend → Database (camelCase → snake_case)
-const dbKey = snakeCase('productLine') // Returns 'product_line'
+const dbKey = snakeCase('productType') // Returns 'product_type'
 ```
 
 **Why es-toolkit:**

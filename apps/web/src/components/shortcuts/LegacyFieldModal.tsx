@@ -33,6 +33,7 @@ interface LegacyFieldModalProps {
   handleNumericChange: (value: string) => void
   onChange: (value: string) => void
   onSubmit: () => void
+  onEnterSelect?: (value: string) => void // Callback when Enter selects an item in Combobox
 }
 
 export function LegacyFieldModal({
@@ -45,13 +46,15 @@ export function LegacyFieldModal({
   handleNumericChange,
   onChange,
   onSubmit,
+  onEnterSelect,
 }: LegacyFieldModalProps) {
   const metadata = FIELD_METADATA[field]
   if (!metadata) return null
 
   // Get unified metadata to check for enum options
-  const fieldName = COMMAND_TO_FIELD_NAME[field]
-  const unifiedMetadata = fieldName ? unifiedFieldMetadata[fieldName] : null
+  // Use field directly if not in COMMAND_TO_FIELD_NAME (fields without shortcuts)
+  const fieldName = COMMAND_TO_FIELD_NAME[field] || field
+  const unifiedMetadata = unifiedFieldMetadata[fieldName]
   const hasOptions = Boolean(unifiedMetadata?.options && unifiedMetadata.options.length > 0)
 
   // If field has a shortcut, use it; otherwise use the normalized field name
@@ -73,9 +76,13 @@ export function LegacyFieldModal({
           <FieldModalInput
             value={value}
             onChange={onChange}
+            onEnterSelect={onEnterSelect}
             onKeyDown={(e) => {
               if (e.key === 'Enter') {
-                onSubmit()
+                // Submit when Enter is pressed (either from typing or Combobox selection)
+                if (value) {
+                  onSubmit()
+                }
               }
               if (e.key === 'Escape') {
                 onOpenChange(false)

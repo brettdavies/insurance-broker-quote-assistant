@@ -12,6 +12,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion'
 import { Card, CardContent } from '@/components/ui/card'
+import { USER_PROFILE_CATEGORY_ORDER } from '@/lib/field-extraction'
 import type { FieldItemData } from './FieldItem'
 import { FieldItem } from './FieldItem'
 
@@ -22,6 +23,7 @@ export interface FieldsByCategoryProps {
   emptyMessage?: string
   defaultOpenCategories?: string[]
   onDismiss?: (fieldKey: string) => void
+  onConvertToKnown?: (fieldKey: string, value: unknown) => void
 }
 
 export function FieldsByCategory({
@@ -31,6 +33,7 @@ export function FieldsByCategory({
   emptyMessage = 'No fields captured yet.',
   defaultOpenCategories,
   onDismiss,
+  onConvertToKnown,
 }: FieldsByCategoryProps) {
   const totalFields = Object.values(fieldsByCategory).reduce(
     (sum, fields) => sum + fields.length,
@@ -50,10 +53,19 @@ export function FieldsByCategory({
   // Determine default open categories
   const defaultOpen = defaultOpenCategories || Object.keys(categoryLabels)
 
+  // Use shared category order to ensure consistent ordering
+  // Fall back to Object.keys if category order doesn't match (e.g., for PolicySummary)
+  const orderedCategories = USER_PROFILE_CATEGORY_ORDER.filter((cat) => cat in fieldsByCategory)
+  const remainingCategories = Object.keys(fieldsByCategory).filter(
+    (cat) => !USER_PROFILE_CATEGORY_ORDER.includes(cat)
+  )
+  const allCategories = [...orderedCategories, ...remainingCategories]
+
   return (
     <Accordion type="multiple" defaultValue={defaultOpen}>
-      {Object.entries(fieldsByCategory).map(([category, fields]) => {
-        if (fields.length === 0) return null
+      {allCategories.map((category) => {
+        const fields = fieldsByCategory[category]
+        if (!fields || fields.length === 0) return null
 
         return (
           <AccordionItem key={category} value={category}>
@@ -68,6 +80,7 @@ export function FieldsByCategory({
                     field={field}
                     onClick={onFieldClick}
                     onDismiss={onDismiss}
+                    onConvertToKnown={onConvertToKnown}
                   />
                 ))}
               </div>

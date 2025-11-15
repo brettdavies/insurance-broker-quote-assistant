@@ -30,6 +30,19 @@ export function useIntakeCallbacks({
 }: UseIntakeCallbacksParams) {
   const handleIntakeSuccess = useCallback(
     (result: IntakeResult) => {
+      // Log routing data for debugging
+      console.log('[Frontend] Intake result received:', {
+        hasRoute: !!result.route,
+        routePrimaryCarrier: result.route?.primaryCarrier,
+        routeEligibleCarriers: result.route?.eligibleCarriers,
+        routeEligibleCarriersCount: result.route?.eligibleCarriers?.length || 0,
+        routeConfidence: result.route?.confidence,
+        hasPrefill: !!result.prefill,
+        prefillRoutingPrimaryCarrier: result.prefill?.routing?.primaryCarrier,
+        prefillRoutingEligibleCarriers: result.prefill?.routing?.eligibleCarriers,
+        prefillRoutingEligibleCarriersCount: result.prefill?.routing?.eligibleCarriers?.length || 0,
+      })
+
       setLatestIntakeResult(result)
       updateProfile(result.profile)
       setHasBackendMissingFields(true)

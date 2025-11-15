@@ -56,6 +56,7 @@ describe('getMissingFields - Product-Specific Requirements', () => {
     const profile: UserProfile = {
       state: 'CA',
       productType: 'auto',
+      age: 30,
       // Missing vehicles and drivers (critical)
     }
 
@@ -68,6 +69,7 @@ describe('getMissingFields - Product-Specific Requirements', () => {
     const profile: UserProfile = {
       state: 'CA',
       productType: 'auto',
+      age: 30,
       vehicles: 2,
       drivers: 1,
       // Missing vins (important)
@@ -81,6 +83,7 @@ describe('getMissingFields - Product-Specific Requirements', () => {
     const profile: UserProfile = {
       state: 'CA',
       productType: 'auto',
+      age: 30,
       vehicles: 2,
       drivers: 1,
       vins: 'ABC123',
@@ -95,6 +98,7 @@ describe('getMissingFields - Product-Specific Requirements', () => {
     const profile: UserProfile = {
       state: 'CA',
       productType: 'home',
+      age: 30,
       // Missing propertyType (critical)
     }
 
@@ -106,6 +110,7 @@ describe('getMissingFields - Product-Specific Requirements', () => {
     const profile: UserProfile = {
       state: 'CA',
       productType: 'home',
+      age: 30,
       propertyType: 'single-family',
       // Missing yearBuilt and squareFeet (important)
     }
@@ -119,6 +124,7 @@ describe('getMissingFields - Product-Specific Requirements', () => {
     const profile: UserProfile = {
       state: 'CA',
       productType: 'renters',
+      age: 30,
       // Missing propertyType (critical)
     }
 
@@ -130,6 +136,7 @@ describe('getMissingFields - Product-Specific Requirements', () => {
     const profile: UserProfile = {
       state: 'CA',
       productType: 'umbrella',
+      age: 30,
       // Missing existingPolicies (critical)
     }
 
@@ -139,12 +146,13 @@ describe('getMissingFields - Product-Specific Requirements', () => {
     )
   })
 
-  it('should always require state and productType', () => {
+  it('should always require state, productType, and age', () => {
     const profile: UserProfile = {}
 
     const missing = getMissingFields(profile)
     expect(missing.some((f) => f.field === 'state' && f.priority === 'critical')).toBe(true)
     expect(missing.some((f) => f.field === 'productType' && f.priority === 'critical')).toBe(true)
+    expect(missing.some((f) => f.field === 'age' && f.priority === 'critical')).toBe(true)
   })
 
   it('should return empty array when all required fields present', () => {

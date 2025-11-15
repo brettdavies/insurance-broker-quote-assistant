@@ -59,7 +59,7 @@ test_coverage:
   failing: 0
   skipped: 13
   coverage_areas:
-    - 'Key-value parser (10 tests): field aliases, case-insensitive matching, productLine enum, boolean fields'
+¬    - 'Key-value parser (10 tests): field aliases, case-insensitive matching, productType enum, boolean fields'
     - 'Conversational extractor service (6 tests): hybrid extraction, LLM fallback, missing fields, error handling'
     - 'Intake endpoint (6 tests): request validation, key-value extraction, LLM extraction, conversation history, response structure'
     - 'Contract tests (13 tests, skipped): live API validation, schema validation, performance benchmarks'

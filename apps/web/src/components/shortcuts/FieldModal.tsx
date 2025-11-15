@@ -15,7 +15,7 @@ import { useNumericInputFormatting } from '@/hooks/useNumericInputFormatting'
 import type { FieldCommand } from '@/hooks/useSlashCommands'
 import { getEnumOptionsForCombobox, unifiedFieldMetadata } from '@repo/shared'
 import type { LexicalEditor } from 'lexical'
-import { useMemo } from 'react'
+import { useEffect, useMemo, useRef } from 'react'
 import { FieldModalButtons } from './FieldModalButtons'
 import { FieldModalInput } from './FieldModalInput'
 import { InferredFieldModal } from './InferredFieldModal'
@@ -57,6 +57,8 @@ interface FieldModalProps {
   onSaveInferred?: (value: unknown) => void
   /** Callback when [Save Known] button clicked (converts to known field) */
   onSaveKnown?: (value: unknown) => void
+  /** Callback when [Save Known] button clicked and pill is injected (textbox is source of truth) */
+  onSaveKnownFromPill?: (fieldName: string) => void
   /** Lexical editor instance (required for pill injection when using [Save Known]) */
   editor?: LexicalEditor | null
 }
@@ -76,6 +78,7 @@ export function FieldModal({
   onDelete,
   onSaveInferred,
   onSaveKnown,
+  onSaveKnownFromPill,
   editor,
 }: FieldModalProps) {
   // Determine if current field is numeric
@@ -96,8 +99,9 @@ export function FieldModal({
       return unifiedFieldMetadata[fieldName]
     }
     if (field) {
-      const fieldNameFromCommand = COMMAND_TO_FIELD_NAME[field]
-      return fieldNameFromCommand ? unifiedFieldMetadata[fieldNameFromCommand] : null
+      // Use field directly if not in COMMAND_TO_FIELD_NAME (fields without shortcuts)
+      const fieldNameFromCommand = COMMAND_TO_FIELD_NAME[field] || field
+      return unifiedFieldMetadata[fieldNameFromCommand] || null
     }
     return null
   }, [isInferred, fieldName, field])
@@ -110,6 +114,10 @@ export function FieldModal({
     currentValue,
     isNumericField,
   })
+
+  // Track previous value to detect changes from Combobox selection
+  const prevValueRef = useRef<string>(value)
+  const pendingSubmitRef = useRef(false)
 
   // Numeric input formatting
   const handleNumericChange = useNumericInputFormatting(setValue, setError)
@@ -133,6 +141,7 @@ export function FieldModal({
       onDelete,
       onSaveInferred,
       onSaveKnown,
+      onSaveKnownFromPill,
       fieldName,
       currentValue,
       editor,
@@ -149,6 +158,18 @@ export function FieldModal({
     handleSaveInferred,
     handleSaveKnown,
   })
+
+  // Auto-submit when value changes from Combobox Enter selection (legacy mode only)
+  useEffect(() => {
+    if (!isInferred && pendingSubmitRef.current && value) {
+      pendingSubmitRef.current = false
+      // Submit after a brief delay to ensure state is fully updated
+      const timeoutId = setTimeout(() => {
+        handleSubmit()
+      }, 10)
+      return () => clearTimeout(timeoutId)
+    }
+  }, [value, isInferred, handleSubmit])
 
   // Legacy mode: render LegacyFieldModal
   if (!isInferred) {
@@ -168,6 +189,15 @@ export function FieldModal({
         onChange={(newValue: string) => {
           setValue(newValue)
           setError('')
+        }}
+        onEnterSelect={(selectedValue: string) => {
+          // When Enter is pressed in Combobox to select an item, auto-submit
+          // Update the value first, then mark for submission
+          setValue(selectedValue)
+          setError('')
+          prevValueRef.current = selectedValue
+          pendingSubmitRef.current = true
+          // The useEffect will trigger submission after value updates
         }}
         onSubmit={handleSubmit}
       />

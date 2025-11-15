@@ -15,12 +15,12 @@
  * @see docs/stories/4.3.add-inferred-fields-section.md
  */
 
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
+import { USER_PROFILE_CATEGORY_ORDER, getUserProfileCategoryLabels } from '@/lib/field-extraction'
 import { unifiedFieldMetadata } from '@repo/shared'
 import type { UserProfile } from '@repo/shared'
-import { Info, X } from 'lucide-react'
+import { Check, Info, X } from 'lucide-react'
 import { useMemo, useState } from 'react'
 
 export interface InferredFieldsSectionProps {
@@ -45,24 +45,39 @@ interface GroupedField {
 }
 
 /**
- * Helper function to group inferred fields by category
+ * Helper function to group inferred fields by display category
  *
- * Uses unified field metadata to determine category for each field.
- * Returns Map with category names as keys and field arrays as values.
+ * Uses unified field metadata to determine category for each field,
+ * then maps to display categories (identity, location, product, details)
+ * to match CapturedFields ordering.
  */
 function groupFieldsByCategory(inferredFields: Partial<UserProfile>): Map<string, GroupedField[]> {
   const grouped = new Map<string, GroupedField[]>()
+
+  // Map from metadata categories to display categories (matching CapturedFields)
+  const categoryMap: Record<string, string> = {
+    'Identity & Contact': 'identity',
+    Location: 'location',
+    Product: 'product',
+    Household: 'details',
+    Vehicle: 'details',
+    Property: 'details',
+    Eligibility: 'details',
+    Coverage: 'details',
+  }
 
   for (const [fieldName, value] of Object.entries(inferredFields)) {
     const metadata = unifiedFieldMetadata[fieldName]
     if (!metadata) continue
 
-    const category = metadata.category
-    if (!grouped.has(category)) {
-      grouped.set(category, [])
+    const metadataCategory = metadata.category
+    const displayCategory = categoryMap[metadataCategory] || 'details'
+
+    if (!grouped.has(displayCategory)) {
+      grouped.set(displayCategory, [])
     }
 
-    grouped.get(category)?.push({ fieldName, value, category })
+    grouped.get(displayCategory)?.push({ fieldName, value, category: displayCategory })
   }
 
   return grouped
@@ -88,10 +103,12 @@ interface InferredFieldRowProps {
   confidence: number
   onDismiss: () => void
   onEdit: () => void
+  onConvertToKnown: () => void
 }
 
 /**
  * Individual inferred field row with interactive elements
+ * Entire row is clickable
  */
 function InferredFieldRow({
   fieldName,
@@ -100,6 +117,7 @@ function InferredFieldRow({
   confidence,
   onDismiss,
   onEdit,
+  onConvertToKnown,
 }: InferredFieldRowProps) {
   const metadata = unifiedFieldMetadata[fieldName]
   const label = metadata?.label || fieldName
@@ -108,55 +126,108 @@ function InferredFieldRow({
   const confidencePercent = Math.round(confidence * 100)
 
   return (
-    <div className="flex items-center gap-2 py-1 text-sm text-gray-400">
-      <span className="select-none opacity-40">└─</span>
-      <span className="font-normal">
-        {label}: {formattedValue}
-      </span>
-      {showConfidence && (
-        <span className="text-xs italic text-gray-500">({confidencePercent}%)</span>
-      )}
+    <button
+      type="button"
+      className="flex w-full cursor-pointer items-center justify-between rounded-md p-1.5 text-left text-sm transition-all duration-200 ease-out hover:bg-gray-100 dark:hover:bg-gray-700"
+      onClick={() => onEdit()}
+    >
+      <div className="flex items-center gap-2">
+        <span className="select-none opacity-40">└─</span>
+        <span className="font-normal text-gray-400">
+          {label}: {formattedValue}
+        </span>
+        {showConfidence && (
+          <span className="text-xs italic text-gray-500">({confidencePercent}%)</span>
+        )}
+      </div>
 
-      <TooltipProvider>
-        {/* Info icon with reasoning tooltip */}
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <button
-              type="button"
-              className="ml-1 opacity-60 transition-opacity hover:opacity-100"
-              aria-label="Show inference reasoning"
-            >
-              <Info className="h-3.5 w-3.5" />
-            </button>
-          </TooltipTrigger>
-          <TooltipContent className="max-w-xs">
-            <p className="text-xs">{reasoning}</p>
-          </TooltipContent>
-        </Tooltip>
+      <div className="flex items-center gap-2">
+        <TooltipProvider>
+          {/* Info icon with reasoning tooltip */}
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <div
+                className="cursor-pointer opacity-60 transition-opacity hover:opacity-100"
+                aria-label="Show inference reasoning"
+                onClick={(e) => e.stopPropagation()}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.stopPropagation()
+                    e.preventDefault()
+                  }
+                }}
+                // biome-ignore lint/a11y/useSemanticElements: Using div to avoid nested button warning
+                role="button"
+                tabIndex={0}
+              >
+                <Info className="h-3.5 w-3.5 text-gray-400 dark:text-gray-500" />
+              </div>
+            </TooltipTrigger>
+            <TooltipContent className="max-w-xs">
+              <p className="text-xs">{reasoning}</p>
+            </TooltipContent>
+          </Tooltip>
 
-        {/* Dismiss button */}
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <button
-              type="button"
-              className="opacity-60 transition-colors hover:text-red-500 hover:opacity-100"
-              onClick={onDismiss}
-              aria-label="Dismiss inference"
-            >
-              <X className="h-3.5 w-3.5" />
-            </button>
-          </TooltipTrigger>
-          <TooltipContent>
-            <p className="text-xs">Dismiss inference</p>
-          </TooltipContent>
-        </Tooltip>
-      </TooltipProvider>
+          {/* Dismiss button */}
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <div
+                className="cursor-pointer opacity-60 transition-colors hover:text-red-500 hover:opacity-100"
+                onClick={(e) => {
+                  e.stopPropagation()
+                  onDismiss()
+                }}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.stopPropagation()
+                    e.preventDefault()
+                    onDismiss()
+                  }
+                }}
+                aria-label="Dismiss inference"
+                // biome-ignore lint/a11y/useSemanticElements: Using div to avoid nested button warning
+                role="button"
+                tabIndex={0}
+              >
+                <X className="h-3.5 w-3.5" />
+              </div>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="text-xs">Dismiss inference</p>
+            </TooltipContent>
+          </Tooltip>
 
-      {/* Edit/convert button */}
-      <Button variant="outline" size="sm" className="h-6 px-2 text-xs" onClick={onEdit}>
-        Click
-      </Button>
-    </div>
+          {/* Convert to known button (tick icon) */}
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <div
+                className="cursor-pointer opacity-60 transition-colors hover:text-green-500 hover:opacity-100"
+                onClick={(e) => {
+                  e.stopPropagation()
+                  onConvertToKnown()
+                }}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.stopPropagation()
+                    e.preventDefault()
+                    onConvertToKnown()
+                  }
+                }}
+                aria-label="Convert to known field"
+                // biome-ignore lint/a11y/useSemanticElements: Using div to avoid nested button warning
+                role="button"
+                tabIndex={0}
+              >
+                <Check className="h-3.5 w-3.5" />
+              </div>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="text-xs">Convert to known field</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+      </div>
+    </button>
   )
 }
 
@@ -185,18 +256,9 @@ export function InferredFieldsSection({
     return null
   }
 
-  // Category order (same as Captured Fields sidebar)
-  const categoryOrder = [
-    'Identity & Contact',
-    'Location',
-    'Product',
-    'Household',
-    'Vehicle',
-    'Property',
-    'Eligibility',
-    'Premiums',
-    'Details',
-  ]
+  // Use shared category order and labels (same as CapturedFields)
+  const categoryOrder = USER_PROFILE_CATEGORY_ORDER
+  const categoryLabels = getUserProfileCategoryLabels()
 
   return (
     <Card className="bg-gray-850 my-4 border-gray-700">
@@ -208,29 +270,32 @@ export function InferredFieldsSection({
       </CardHeader>
 
       {isExpanded && (
-        <CardContent className="space-y-3 pb-4">
-          {categoryOrder.map((category) => {
-            const fields = groupedFields.get(category) || []
-            // Hide empty categories
-            if (fields.length === 0) return null
+        <CardContent className="pb-4">
+          <div className="flex flex-wrap gap-4">
+            {categoryOrder.map((category) => {
+              const fields = groupedFields.get(category) || []
+              // Hide empty categories
+              if (fields.length === 0) return null
 
-            return (
-              <div key={category} className="space-y-1">
-                <h4 className="text-sm font-medium text-gray-400">{category}:</h4>
-                {fields.map(({ fieldName, value }) => (
-                  <InferredFieldRow
-                    key={fieldName}
-                    fieldName={fieldName}
-                    value={value}
-                    reasoning={inferenceReasons[fieldName] || 'No reasoning available'}
-                    confidence={confidence[fieldName] || 0}
-                    onDismiss={() => onDismiss(fieldName)}
-                    onEdit={() => onEdit(fieldName, value)}
-                  />
-                ))}
-              </div>
-            )
-          })}
+              return (
+                <div key={category} className="min-w-[200px] flex-1 space-y-1">
+                  <h4 className="text-sm font-medium text-gray-400">{categoryLabels[category]}:</h4>
+                  {fields.map(({ fieldName, value }) => (
+                    <InferredFieldRow
+                      key={fieldName}
+                      fieldName={fieldName}
+                      value={value}
+                      reasoning={inferenceReasons[fieldName] || 'No reasoning available'}
+                      confidence={confidence[fieldName] || 0}
+                      onDismiss={() => onDismiss(fieldName)}
+                      onEdit={() => onEdit(fieldName, value)}
+                      onConvertToKnown={() => onConvertToKnown(fieldName, value)}
+                    />
+                  ))}
+                </div>
+              )
+            })}
+          </div>
         </CardContent>
       )}
     </Card>

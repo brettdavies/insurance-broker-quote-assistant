@@ -90,6 +90,7 @@ export function UnifiedChatInterface({
     handleDismissInference,
     handleEditInference,
     handleConvertToKnown,
+    handleConvertToKnownFromPill,
     handleContentChange,
     handleFieldModalSubmit,
     handleCommandError,
@@ -191,6 +192,7 @@ export function UnifiedChatInterface({
         onDismissInference={handleDismissInference}
         onEditInference={handleEditInference}
         onConvertToKnown={handleConvertToKnown}
+        onConvertToKnownFromPill={handleConvertToKnownFromPill}
       />
 
       <UnifiedChatModals
@@ -210,6 +212,7 @@ export function UnifiedChatInterface({
         onDeleteInferred={handleDismissInference}
         onSaveInferred={handleEditInference}
         onSaveKnown={handleConvertToKnown}
+        onSaveKnownFromPill={handleConvertToKnownFromPill}
       />
     </>
   )

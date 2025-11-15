@@ -44,6 +44,7 @@ export const intakeFields: Record<string, UnifiedFieldMetadata> = {
     fieldType: 'string',
     flows: ['intake'],
     singleInstance: true,
+    options: ['attached', 'detached', 'carport', 'none', 'street'],
   },
 
   vins: {

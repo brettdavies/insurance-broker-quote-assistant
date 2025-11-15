@@ -13,7 +13,7 @@ import { validateOutput } from '../services/compliance-filter'
 import { generatePrefillPacket, getMissingFields } from '../services/prefill-generator'
 import { routeToCarrier } from '../services/routing-engine'
 import { createDecisionTrace, logDecisionTrace } from '../utils/decision-trace'
-import { logError } from '../utils/logger'
+import { logDebug, logError } from '../utils/logger'
 
 /**
  * Create prefill generation route
@@ -48,10 +48,27 @@ export function createPrefillRoute(): Hono {
 
       const { profile } = validationResult.data
 
+      // Log prefill request for debugging
+      await logDebug('Prefill endpoint: Request received', {
+        type: 'prefill_request',
+        profileState: profile.state,
+        profileProductType: profile.productType,
+        profileKeys: Object.keys(profile),
+      })
+
       // Call routing engine to get RouteDecision (if not already available)
       let routeDecision: RouteDecision
       try {
         routeDecision = routeToCarrier(profile)
+
+        // Log routing result
+        await logDebug('Prefill endpoint: Routing complete', {
+          type: 'prefill_routing_complete',
+          primaryCarrier: routeDecision.primaryCarrier,
+          eligibleCarriers: routeDecision.eligibleCarriers,
+          eligibleCarriersCount: routeDecision.eligibleCarriers.length,
+          confidence: routeDecision.confidence,
+        })
       } catch (error) {
         // Handle routing errors gracefully - still generate prefill with available data
         await logError('Routing engine error in prefill generation', error as Error, {
@@ -91,7 +108,22 @@ export function createPrefillRoute(): Hono {
       // Call prefillGenerator.generatePrefillPacket
       let prefillPacket: PrefillPacket
       try {
-        prefillPacket = generatePrefillPacket(profile, routeDecision, missingFields, disclaimers)
+        prefillPacket = await generatePrefillPacket(
+          profile,
+          routeDecision,
+          missingFields,
+          disclaimers
+        )
+
+        // Log prefill packet routing data
+        await logDebug('Prefill endpoint: Prefill packet generated', {
+          type: 'prefill_packet_generated',
+          hasRouting: !!prefillPacket.routing,
+          routingPrimaryCarrier: prefillPacket.routing?.primaryCarrier,
+          routingEligibleCarriers: prefillPacket.routing?.eligibleCarriers,
+          routingEligibleCarriersCount: prefillPacket.routing?.eligibleCarriers?.length || 0,
+          routingConfidence: prefillPacket.routing?.confidence,
+        })
       } catch (error) {
         // Handle prefill generation errors gracefully
         await logError('Prefill generation error', error as Error, {

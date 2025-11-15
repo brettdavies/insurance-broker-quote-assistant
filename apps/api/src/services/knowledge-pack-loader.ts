@@ -5,11 +5,13 @@
  * Provides non-blocking async loading with error handling.
  */
 
-import { readFile, readdir } from 'node:fs/promises'
+import { readdir } from 'node:fs/promises'
 import { join } from 'node:path'
-import type { Carrier, CarrierFile, Product, ProductFile, State, StateFile } from '@repo/shared'
-import { getFieldValue } from '../utils/field-helpers'
-import { logError, logInfo, logWarn } from '../utils/logger'
+import type { Carrier, Product, State } from '@repo/shared'
+import { logError, logInfo } from '../utils/logger'
+import { loadCarrierFile } from './knowledge-pack-loader/loaders/carrier-loader'
+import { loadProductFile } from './knowledge-pack-loader/loaders/product-loader'
+import { loadStateFile } from './knowledge-pack-loader/loaders/state-loader'
 
 /**
  * Loading state for knowledge pack
@@ -105,90 +107,6 @@ export function getAllProducts(): Product[] {
 }
 
 /**
- * Handle file loading error
- */
-async function handleFileLoadError(
-  filePath: string,
-  error: unknown,
-  fileType: 'carrier' | 'state' | 'product'
-): Promise<void> {
-  const fileName = filePath.split('/').pop() || filePath
-  const errorMessage = error instanceof Error ? error.message : String(error)
-  loadingStatus.errors.push({ file: fileName, error: errorMessage })
-  await logWarn(`Failed to load ${fileType} file`, { file: fileName, error: errorMessage })
-}
-
-/**
- * Load a single carrier file
- */
-async function loadCarrierFile(filePath: string): Promise<void> {
-  try {
-    const content = await readFile(filePath, 'utf-8')
-    const data: CarrierFile = JSON.parse(content)
-
-    // Validate required fields
-    if (!data.carrier || !data.carrier.name) {
-      throw new Error('Invalid carrier file: missing carrier.name')
-    }
-
-    // Store in map keyed by carrier name
-    carriersMap.set(data.carrier.name, data.carrier)
-
-    // Count products and discounts
-    const products = getFieldValue(data.carrier.products, [])
-    const discounts = data.carrier.discounts || []
-
-    loadingStatus.carriersCount++
-    loadingStatus.productsCount += products.length
-    loadingStatus.discountsCount += discounts.length
-  } catch (error) {
-    await handleFileLoadError(filePath, error, 'carrier')
-  }
-}
-
-/**
- * Load a single state file
- */
-async function loadStateFile(filePath: string): Promise<void> {
-  try {
-    const content = await readFile(filePath, 'utf-8')
-    const data: StateFile = JSON.parse(content)
-
-    // Validate required fields
-    if (!data.state || !data.state.code) {
-      throw new Error('Invalid state file: missing state.code')
-    }
-
-    // Store in map keyed by state code
-    statesMap.set(data.state.code, data.state)
-
-    loadingStatus.statesCount++
-  } catch (error) {
-    await handleFileLoadError(filePath, error, 'state')
-  }
-}
-
-/**
- * Load a single product file
- */
-async function loadProductFile(filePath: string): Promise<void> {
-  try {
-    const content = await readFile(filePath, 'utf-8')
-    const data: ProductFile = JSON.parse(content)
-
-    // Validate required fields
-    if (!data.product || !data.product.code) {
-      throw new Error('Invalid product file: missing product.code')
-    }
-
-    // Store in map keyed by product code
-    productsMap.set(data.product.code, data.product)
-  } catch (error) {
-    await handleFileLoadError(filePath, error, 'product')
-  }
-}
-
-/**
  * Load all knowledge pack files asynchronously
  *
  * This function is non-blocking - it starts loading files but doesn't wait for completion.
@@ -272,9 +190,9 @@ export async function loadKnowledgePack(knowledgePackDir = 'knowledge_pack'): Pr
 
     // Load all files concurrently
     const loadPromises = [
-      ...carrierJsonFiles.map((file) => loadCarrierFile(file)),
-      ...stateJsonFiles.map((file) => loadStateFile(file)),
-      ...productJsonFiles.map((file) => loadProductFile(file)),
+      ...carrierJsonFiles.map((file) => loadCarrierFile(file, carriersMap, loadingStatus)),
+      ...stateJsonFiles.map((file) => loadStateFile(file, statesMap, loadingStatus)),
+      ...productJsonFiles.map((file) => loadProductFile(file, productsMap, loadingStatus)),
     ]
 
     await Promise.all(loadPromises)

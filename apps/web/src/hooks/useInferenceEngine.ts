@@ -104,6 +104,8 @@ export function useInferenceEngine({
         const inferenceResult = engine.applyInferences(knownFields, cleanedText, currentInferred)
 
         // CRITICAL: First inference wins - merge new results with existing inferred fields
+        const fieldsToRemove = new Set<string>()
+
         setInferredFields((prevInferred) => {
           const merged: Partial<UserProfile> = { ...prevInferred }
 
@@ -121,17 +123,70 @@ export function useInferenceEngine({
             if (knownFields[fieldName as keyof UserProfile] !== undefined) {
               // biome-ignore lint/suspicious/noExplicitAny: UserProfile has dynamic field types
               delete (merged as any)[fieldName]
+              fieldsToRemove.add(fieldName)
+              continue
             }
             // If field is now suppressed, remove it from inferred
             if (suppressedFields.includes(fieldName)) {
               // biome-ignore lint/suspicious/noExplicitAny: UserProfile has dynamic field types
               delete (merged as any)[fieldName]
+              fieldsToRemove.add(fieldName)
+              continue
             }
-            // For householdSize, check if source fields are gone
-            if (fieldName === 'householdSize' && !(fieldName in inferenceResult.inferred)) {
-              if (knownFields.kids === undefined && knownFields.drivers === undefined) {
+            // If field is no longer in the new inference result, check if it should be removed
+            // Only remove if it's not in the new result AND:
+            // 1. No text pattern would still infer it, AND
+            // 2. No field-to-field inference would still infer it (from knownFields)
+            // This prevents flickering when user is typing or when pills are created
+            if (!(fieldName in inferenceResult.inferred)) {
+              // Check if any text pattern would still infer this field
+              // This prevents removing fields while user is still typing the pattern
+              let patternStillMatches = false
+              for (const pattern of TEXT_PATTERN_INFERENCES) {
+                // Reset regex lastIndex to avoid state issues
+                pattern.pattern.lastIndex = 0
+                if (pattern.pattern.test(cleanedText)) {
+                  // Check if this pattern infers the field we're checking
+                  for (const inference of pattern.infers) {
+                    if (inference.field === fieldName) {
+                      patternStillMatches = true
+                      break
+                    }
+                  }
+                  if (patternStillMatches) break
+                }
+              }
+
+              // Check if any field-to-field inference would still infer this field
+              // This prevents removing fields inferred from pills when text changes
+              let fieldInferenceStillApplies = false
+              if (!patternStillMatches) {
+                // Check if any known field would infer this field
+                for (const [sourceFieldName, sourceFieldValue] of Object.entries(knownFields)) {
+                  const sourceMetadata = fieldInferences[sourceFieldName]
+                  if (!sourceMetadata) continue
+
+                  for (const rule of sourceMetadata) {
+                    if (rule.targetField === fieldName) {
+                      // Check if this rule would still infer the field
+                      const inferredValue = rule.inferValue(sourceFieldValue)
+                      if (inferredValue !== undefined) {
+                        fieldInferenceStillApplies = true
+                        break
+                      }
+                    }
+                  }
+                  if (fieldInferenceStillApplies) break
+                }
+              }
+
+              // Only remove if no pattern matches AND no field inference still applies
+              if (!patternStillMatches && !fieldInferenceStillApplies) {
+                // Field was in prevInferred but not in new result and neither pattern
+                // nor field inference still applies - user actually removed the source
                 // biome-ignore lint/suspicious/noExplicitAny: UserProfile has dynamic field types
                 delete (merged as any)[fieldName]
+                fieldsToRemove.add(fieldName)
               }
             }
           }
@@ -139,19 +194,29 @@ export function useInferenceEngine({
           return merged
         })
 
-        // Update reasons and confidence
+        // Update reasons and confidence, and clean up removed fields
         setInferenceReasons((prevReasons) => {
           const merged = { ...prevReasons }
+          // Add new reasons
           for (const [fieldName, reason] of Object.entries(inferenceResult.reasons)) {
             merged[fieldName] = reason
+          }
+          // Remove reasons for fields that were removed
+          for (const fieldName of fieldsToRemove) {
+            delete merged[fieldName]
           }
           return merged
         })
 
         setInferenceConfidence((prevConfidence) => {
           const merged = { ...prevConfidence }
+          // Add new confidence scores
           for (const [fieldName, conf] of Object.entries(inferenceResult.confidence)) {
             merged[fieldName] = conf
+          }
+          // Remove confidence scores for fields that were removed
+          for (const fieldName of fieldsToRemove) {
+            delete merged[fieldName]
           }
           return merged
         })

@@ -163,14 +163,18 @@ export function useUnifiedChatHooks({
   })
 
   // Inferred field handlers hook
-  const { handleDismissInference, handleEditInference, handleConvertToKnown } =
-    useInferredFieldHandlers({
-      suppression,
-      updateProfile,
-      updateInferredField,
-      runInference,
-      toast,
-    })
+  const {
+    handleDismissInference,
+    handleEditInference,
+    handleConvertToKnown,
+    handleConvertToKnownFromPill,
+  } = useInferredFieldHandlers({
+    suppression,
+    updateProfile,
+    updateInferredField,
+    runInference,
+    toast,
+  })
 
   // Intake callbacks hook
   const { handleIntakeSuccess, handleIntakeError } = useIntakeCallbacks({
@@ -279,6 +283,7 @@ export function useUnifiedChatHooks({
     handleDismissInference,
     handleEditInference,
     handleConvertToKnown,
+    handleConvertToKnownFromPill,
     handleContentChange,
     handleFieldModalSubmit,
     handleCommandError,

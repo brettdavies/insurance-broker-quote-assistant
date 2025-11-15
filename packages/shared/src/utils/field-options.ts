@@ -50,14 +50,16 @@ export function getStateOptionsForCombobox(stateCodes: string[]): ComboboxOption
   // Special case for DC
   stateCodeToName.DC = 'District of Columbia'
 
-  return stateCodes.map((code) => {
-    const fullName = stateCodeToName[code] || code
-    return {
-      value: code,
-      label: fullName !== code ? `${code} - ${fullName}` : code,
-      searchText: fullName, // Allow searching by full name
-    }
-  })
+  return stateCodes
+    .map((code) => {
+      const fullName = stateCodeToName[code] || code
+      return {
+        value: code,
+        label: fullName !== code ? `${code} - ${fullName}` : code,
+        searchText: fullName, // Allow searching by full name
+      }
+    })
+    .sort((a, b) => a.label.localeCompare(b.label))
 }
 
 /**
@@ -80,8 +82,11 @@ export function getEnumOptionsForCombobox(
   }
 
   // For other enum fields, just use the option value as both value and label
-  return options.map((option) => ({
-    value: option,
-    label: option,
-  }))
+  // Sort alphabetically by label
+  return options
+    .map((option) => ({
+      value: option,
+      label: option,
+    }))
+    .sort((a, b) => a.label.localeCompare(b.label))
 }

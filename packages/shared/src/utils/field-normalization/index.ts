@@ -29,7 +29,7 @@ export {
 } from './extractors'
 
 // Export inference utilities
-export { inferExistingPolicies } from './inference'
+export { inferExistingPolicies, inferHouseholdSize } from './inference'
 
 // Export utility functions
 /**

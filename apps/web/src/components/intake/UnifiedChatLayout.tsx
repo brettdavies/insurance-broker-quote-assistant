@@ -54,6 +54,7 @@ interface UnifiedChatLayoutProps {
   onDismissInference: (fieldName: string) => void
   onEditInference: (fieldName: string, value: unknown) => void
   onConvertToKnown: (fieldName: string, value: unknown) => void
+  onConvertToKnownFromPill: (fieldName: string) => void
 }
 
 export function UnifiedChatLayout({
@@ -84,6 +85,7 @@ export function UnifiedChatLayout({
   onDismissInference,
   onEditInference,
   onConvertToKnown,
+  onConvertToKnownFromPill,
 }: UnifiedChatLayoutProps) {
   return (
     <div className="flex h-full flex-col pt-14">
@@ -128,6 +130,7 @@ export function UnifiedChatLayout({
               onDismissInference={onDismissInference}
               onEditInference={onEditInference}
               onConvertToKnown={onConvertToKnown}
+              onConvertToKnownFromPill={onConvertToKnownFromPill}
               profile={profile}
             />
           </div>
@@ -149,6 +152,7 @@ export function UnifiedChatLayout({
             inferredFields={inferredFields}
             inferenceReasons={inferenceReasons}
             onDismiss={onDismissInference}
+            onConvertToKnown={onConvertToKnown}
           />
         </div>
       </div>

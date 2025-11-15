@@ -21,17 +21,29 @@ export async function getPrefillPacket(
   intakeResult: IntakeResult | null,
   profile: UserProfile
 ): Promise<PrefillPacket> {
+  console.log('[Frontend] getPrefillPacket: Called with', {
+    hasIntakeResult: !!intakeResult,
+    hasPrefillInResult: !!intakeResult?.prefill,
+    profileKeys: Object.keys(profile),
+    profileState: profile.state,
+    profileProductType: profile.productType,
+  })
+
   // Prefer using prefill from IntakeResult if already available (more efficient, already validated by compliance filter)
   if (intakeResult?.prefill) {
+    console.log('[Frontend] getPrefillPacket: Using prefill from intakeResult')
     return intakeResult.prefill
   }
 
   // Otherwise call POST /api/generate-prefill endpoint using Hono RPC client
+  console.log('[Frontend] getPrefillPacket: Calling /api/generate-prefill endpoint')
   try {
     // Use Hono RPC client (flattened route from /api/intake/generate-prefill to /api/generate-prefill)
     // Hono RPC converts kebab-case to camelCase, but TypeScript may need bracket notation
     // @ts-expect-error - Hono RPC type inference for kebab-case routes
     const response = await api.api['generate-prefill'].$post({ json: { profile } })
+
+    console.log('[Frontend] getPrefillPacket: API response status:', response.status, response.ok)
 
     if (!response.ok) {
       let errorMessage = 'Failed to generate prefill packet'
@@ -55,6 +67,16 @@ export async function getPrefillPacket(
     }
 
     const prefillPacket: PrefillPacket = await response.json()
+
+    console.log('[Frontend] getPrefillPacket: Prefill packet received:', {
+      hasRouting: !!prefillPacket.routing,
+      routingPrimaryCarrier: prefillPacket.routing?.primaryCarrier,
+      routingEligibleCarriers: prefillPacket.routing?.eligibleCarriers,
+      routingEligibleCarriersCount: prefillPacket.routing?.eligibleCarriers?.length || 0,
+      routingConfidence: prefillPacket.routing?.confidence,
+      routingRationale: prefillPacket.routing?.rationale,
+    })
+
     return prefillPacket
   } catch (error) {
     // If error is already an Error with a message, re-throw it as-is

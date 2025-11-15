@@ -21,10 +21,11 @@ import { userProfileSchema } from './user-profile'
 
 /**
  * Simplified Routing Decision for Prefill Packet
- * Only includes information needed by the carrier, not internal scores or alternatives
+ * Includes primary carrier, eligible carriers, confidence, and rationale
  */
 export const prefillRoutingSchema = z.object({
   primaryCarrier: z.string(), // Recommended carrier name
+  eligibleCarriers: z.array(z.string()), // All eligible carriers
   confidence: z.number().min(0).max(1), // Confidence in recommendation (0-1)
   rationale: z.string(), // Brief explanation of why this carrier was selected
 })

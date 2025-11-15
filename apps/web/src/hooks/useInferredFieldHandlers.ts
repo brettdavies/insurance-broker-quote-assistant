@@ -71,9 +71,28 @@ export function useInferredFieldHandlers({
     [suppression, updateProfile, runInference, toast]
   )
 
+  // Handler for when pill is injected (textbox is source of truth)
+  // Only removes suppression and re-runs inference - profile update comes from pill extraction
+  const handleConvertToKnownFromPill = useCallback(
+    (fieldName: string) => {
+      // Remove from suppression list (if present)
+      suppression.removeSuppression(fieldName)
+      // Re-run inference - it will see the field is now in profile (from pill extraction)
+      // and remove it from inferred fields
+      runInference()
+      toast({
+        title: 'Field saved',
+        description: `${fieldName} saved as known field`,
+        duration: 3000,
+      })
+    },
+    [suppression, runInference, toast]
+  )
+
   return {
     handleDismissInference,
     handleEditInference,
     handleConvertToKnown,
+    handleConvertToKnownFromPill,
   }
 }

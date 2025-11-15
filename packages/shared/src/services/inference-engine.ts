@@ -1,6 +1,8 @@
 import type { TextPatternInference } from '../config/text-pattern-inferences'
 import type { InferenceRule } from '../schemas/unified-field-metadata'
 import type { UserProfile } from '../schemas/user-profile'
+import { replaceCaptureGroups } from './inference-engine/capture-group-replacer'
+import { confidenceToNumber } from './inference-engine/confidence-converter'
 
 /**
  * Inference Result
@@ -57,7 +59,8 @@ export interface InferenceResult {
  * **Inference Priority:**
  * 1. Field-to-field inferences run first (higher confidence, based on structured data)
  * 2. Text pattern inferences run second (lower confidence, based on natural language)
- * 3. Already-inferred fields from step 1 are not overwritten by step 2
+ * 3. Field-to-field inferences from inferred fields (chained inferences)
+ * 4. Already-inferred fields from earlier steps are not overwritten by later steps
  *
  * **Suppression List:**
  * User can dismiss inferred fields, which adds them to the suppression list.
@@ -96,7 +99,8 @@ export class InferenceEngine {
    * **Process:**
    * 1. Apply field-to-field inferences from known fields
    * 2. Apply text pattern inferences from input text
-   * 3. Skip fields that are already known, inferred, or suppressed
+   * 3. Apply field-to-field inferences from inferred fields (chained inferences)
+   * 4. Skip fields that are already known, inferred, or suppressed
    *
    * @param knownFields - Fields extracted from user input (high confidence)
    * @param inputText - User's conversational input text
@@ -108,7 +112,8 @@ export class InferenceEngine {
    * const knownFields = { productType: 'renters', age: 28 }
    * const inputText = 'FL renters. Age 28. Lives alone.'
    * const result = engine.applyInferences(knownFields, inputText)
-   * // result.inferred = { ownsHome: false, householdSize: 1 }
+   * // result.inferred = { ownsHome: false, householdSize: 1, kids: 0 }
+   * // "lives alone" → householdSize:1 (text pattern) → kids:0 (chained inference)
    * ```
    */
   applyInferences(
@@ -151,7 +156,7 @@ export class InferenceEngine {
           // biome-ignore lint/suspicious/noExplicitAny: UserProfile has dynamic field types
           ;(inferred as any)[rule.targetField] = inferredValue
           reasons[rule.targetField] = rule.reasoning
-          confidence[rule.targetField] = this.confidenceToNumber(rule.confidence)
+          confidence[rule.targetField] = confidenceToNumber(rule.confidence)
         }
       }
     }
@@ -180,88 +185,68 @@ export class InferenceEngine {
         }
 
         // Handle capture group references (e.g., "$1" means capture group 1)
-        const value = this.replaceCaptureGroups(inference.value, match)
+        const value = replaceCaptureGroups(inference.value, match)
 
         if (value !== undefined) {
           // Debug logging removed - callers should log inference events if needed
           // biome-ignore lint/suspicious/noExplicitAny: UserProfile has dynamic field types
           ;(inferred as any)[inference.field] = value
           reasons[inference.field] = inference.reasoning
-          confidence[inference.field] = this.confidenceToNumber(inference.confidence)
+          confidence[inference.field] = confidenceToNumber(inference.confidence)
+        }
+      }
+    }
+
+    // Step 3: Field-to-field inferences from inferred fields (chained inferences)
+    // This allows inferred fields to trigger other inferences (e.g., "lives alone" → householdSize:1 → kids:0)
+    // Iterate until no new inferences are made (but limit iterations to prevent infinite loops)
+    let hasNewInferences = true
+    let iterations = 0
+    const maxIterations = 10 // Safety limit to prevent infinite loops
+
+    while (hasNewInferences && iterations < maxIterations) {
+      hasNewInferences = false
+      iterations++
+
+      // Create a snapshot of current inferred fields to iterate over
+      // Include ALL fields from inferred (Steps 1 and 2) - we want to apply inference rules
+      // from all fields that were just inferred, regardless of whether they were in existingInferred
+      const currentInferred = { ...inferred }
+
+      for (const [fieldName, fieldValue] of Object.entries(currentInferred)) {
+        const metadata = this.fieldInferences[fieldName]
+        if (!metadata) continue
+
+        for (const rule of metadata) {
+          // Skip if target field already known, already inferred, or suppressed
+          if (knownFields[rule.targetField as keyof UserProfile] !== undefined) {
+            continue
+          }
+          // Check if already in current inferred (from previous iterations)
+          // biome-ignore lint/suspicious/noExplicitAny: UserProfile has dynamic field types
+          if ((inferred as any)[rule.targetField] !== undefined) {
+            continue
+          }
+          // Check if already in existing inferred fields (first inference wins)
+          if (existingInferred && rule.targetField in existingInferred) {
+            continue
+          }
+          if (this.suppressedFields.includes(rule.targetField)) {
+            continue
+          }
+
+          const inferredValue = rule.inferValue(fieldValue)
+          if (inferredValue !== undefined) {
+            // biome-ignore lint/suspicious/noExplicitAny: UserProfile has dynamic field types
+            ;(inferred as any)[rule.targetField] = inferredValue
+            reasons[rule.targetField] = rule.reasoning
+            confidence[rule.targetField] = confidenceToNumber(rule.confidence)
+            hasNewInferences = true
+          }
         }
       }
     }
 
     return { inferred, reasons, confidence }
-  }
-
-  /**
-   * Convert confidence level to numeric score
-   *
-   * Maps confidence levels to numeric scores for API response.
-   * Scores are aligned with LLM upgrade threshold (≥85% allows LLM to upgrade inferred → known).
-   *
-   * @param level - Confidence level from inference rule
-   * @returns Numeric confidence score (0-1 scale)
-   *
-   * **Mapping:**
-   * - 'high' → 0.85 (≥85% threshold allows LLM to upgrade to known field)
-   * - 'medium' → 0.70
-   * - 'low' → 0.50
-   */
-  private confidenceToNumber(level: 'high' | 'medium' | 'low'): number {
-    switch (level) {
-      case 'high':
-        return 0.85
-      case 'medium':
-        return 0.7
-      case 'low':
-        return 0.5
-    }
-  }
-
-  /**
-   * Replace capture group references in inference value
-   *
-   * Handles capture group references like "$1", "$2", etc. from regex match.
-   * If value is not a string or doesn't start with "$", returns as-is.
-   * If capture group index is invalid, returns undefined.
-   *
-   * @param value - Inference value (may contain capture group reference)
-   * @param match - Regex match array with capture groups
-   * @returns Processed value with capture groups replaced
-   *
-   * @example
-   * ```typescript
-   * const match = 'family of 4'.match(/family of (\d+)/)
-   * replaceCaptureGroups('$1', match) // Returns '4'
-   * replaceCaptureGroups(true, match) // Returns true (no replacement)
-   * ```
-   */
-  // biome-ignore lint/suspicious/noExplicitAny: Value can be any type (string, number, boolean) or capture group reference
-  private replaceCaptureGroups(value: any, match: RegExpMatchArray): any {
-    // Only process string values starting with "$"
-    if (typeof value !== 'string' || !value.startsWith('$')) {
-      return value
-    }
-
-    // Extract capture group index (e.g., "$1" → 1)
-    const captureGroupIndex = Number.parseInt(value.substring(1), 10)
-
-    // Validate capture group index
-    if (Number.isNaN(captureGroupIndex) || captureGroupIndex >= match.length) {
-      // Invalid capture group - return undefined (no inference)
-      return undefined
-    }
-
-    // Return capture group value
-    const capturedValue = match[captureGroupIndex]
-
-    // Convert numeric strings to numbers
-    if (capturedValue && /^\d+$/.test(capturedValue)) {
-      return Number.parseInt(capturedValue, 10)
-    }
-
-    return capturedValue
   }
 }

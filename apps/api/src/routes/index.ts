@@ -14,6 +14,7 @@ import { createKnowledgePackRoute } from './knowledge-pack'
 import { createLogRoute } from './log'
 import { createPolicyRoute } from './policy'
 import { createPrefillRoute } from './prefill'
+import { createRoutingRoute } from './routing'
 
 /**
  * Register all routes on the Hono app
@@ -42,6 +43,10 @@ export function registerRoutes(
   // Disclaimers endpoint - get disclaimers from knowledge pack
   const disclaimersRoute = createDisclaimersRoute()
   app.route('/', disclaimersRoute)
+
+  // Routing endpoint - get routing decisions based on profile
+  const routingRoute = createRoutingRoute()
+  app.route('/', routingRoute)
 
   // Prefill generation endpoint
   const prefillRoute = createPrefillRoute()

@@ -2,7 +2,8 @@
  * Sidebar Component
  *
  * Adaptive sidebar container that displays captured fields, missing fields,
- * and mode-specific panels (routing status for intake, savings dashboard for policy).
+ * and mode-specific panels (savings dashboard for policy mode).
+ * Note: Routing status has been moved to NotesPanel below compliance disclaimers.
  */
 
 import { Button } from '@/components/ui/button'
@@ -26,6 +27,7 @@ interface SidebarProps {
   inferredFields?: Partial<UserProfile>
   inferenceReasons?: Record<string, string>
   onDismiss?: (fieldKey: string) => void
+  onConvertToKnown?: (fieldKey: string, value: unknown) => void
 }
 
 export function Sidebar({
@@ -42,6 +44,7 @@ export function Sidebar({
   inferredFields,
   inferenceReasons,
   onDismiss,
+  onConvertToKnown,
 }: SidebarProps) {
   return (
     <div className="flex h-full flex-col space-y-3 overflow-y-auto bg-gray-100 p-3 dark:bg-gray-800">
@@ -60,6 +63,7 @@ export function Sidebar({
             inferredFields={inferredFields}
             inferenceReasons={inferenceReasons}
             onDismiss={onDismiss}
+            onConvertToKnown={onConvertToKnown}
           />
         )}
       </div>
@@ -75,18 +79,7 @@ export function Sidebar({
         />
       </div>
 
-      {/* Mode-specific panels will be added here */}
-      {mode === 'intake' && (
-        <div>
-          <h2 className="mb-1.5 text-base font-semibold">Routing Status</h2>
-          <div className="rounded-lg border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800">
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              Routing information will appear here when enough data is captured...
-            </p>
-          </div>
-        </div>
-      )}
-
+      {/* Mode-specific panels */}
       {mode === 'policy' && (
         <div>
           {isAnalyzing ? (

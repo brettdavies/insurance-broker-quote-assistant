@@ -5,8 +5,8 @@
 - **All types defined as Zod schemas** in `packages/shared/src/schemas/`
 - **TypeScript types inferred** via `z.infer<typeof schema>`
 - **Naming conventions:**
-  - TypeScript/JavaScript: `camelCase` (e.g., `productLine`, `cleanRecord3Yr`)
-  - API/JSON boundaries: `snake_case` (e.g., `product_line`, `clean_record_3yr`)
+  - TypeScript/JavaScript: `camelCase` (e.g., `productType`, `cleanRecord3Yr`)
+  - API/JSON boundaries: `snake_case` (e.g., `product_type`, `clean_record_3yr`)
   - Automatic transformation at API boundaries (see Section 17.2: Naming Conventions)
 
 **Cross-Reference:** See Section 17.2 for complete naming standards and transformation rules.
@@ -51,7 +51,7 @@
 **Key Fields:**
 
 - `state` - US state code (required for routing)
-- `productLine` - Insurance product type (`'auto' | 'home' | 'renters' | 'umbrella'`)
+- `productType` - Insurance product type (`'auto' | 'home' | 'renters' | 'umbrella'`)
 - `age` - Optional, used for age-based eligibility and discounts
 - `householdSize` - Optional, affects bundle discounts
 - `vehicles` - Optional, required for auto insurance routing
@@ -223,7 +223,7 @@ extraction: {
 **Quote Essentials:**
 
 - `state` - Required for rating
-- `productLine` - Insurance type
+- `productType` - Insurance type
 - `carrier` - Primary recommendation from routing
 
 **Product-Specific Data:**

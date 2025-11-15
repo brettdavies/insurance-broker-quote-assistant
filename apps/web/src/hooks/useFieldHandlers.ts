@@ -7,7 +7,12 @@
  */
 
 import { COMMAND_TO_KEY, type FieldCommand } from '@/config/shortcuts'
-import { type UserProfile, normalizeFieldName, unifiedFieldMetadata } from '@repo/shared'
+import {
+  type UserProfile,
+  normalizeFieldName,
+  normalizeFieldValue,
+  unifiedFieldMetadata,
+} from '@repo/shared'
 import { useCallback } from 'react'
 
 interface UseFieldHandlersParams {
@@ -42,21 +47,32 @@ export function useFieldHandlers({
         const normalizedKey = normalizeFieldName(key)
         const metadata = unifiedFieldMetadata[normalizedKey]
 
+        // Normalize field values (state, productType, etc.)
+        let normalizedValue: string | number | boolean = value
+        if (typeof value === 'string') {
+          const normalized = normalizeFieldValue(normalizedKey, value)
+          if (normalized === null) {
+            // Invalid enum value - skip this field
+            continue
+          }
+          normalizedValue = normalized
+        }
+
         // For single-instance fields, check if value already exists
         if (
           metadata?.singleInstance &&
           currentProfile[normalizedKey as keyof UserProfile] !== undefined
         ) {
           // Field already exists - update it (deduplication)
-          if (currentProfile[normalizedKey as keyof UserProfile] !== value) {
-            normalizedFields[normalizedKey] = value
-            changedFields.push([normalizedKey, value])
+          if (currentProfile[normalizedKey as keyof UserProfile] !== normalizedValue) {
+            normalizedFields[normalizedKey] = normalizedValue
+            changedFields.push([normalizedKey, normalizedValue])
           }
         } else {
           // New field or not single-instance - add it
-          normalizedFields[normalizedKey] = value
-          if (currentProfile[normalizedKey as keyof UserProfile] !== value) {
-            changedFields.push([normalizedKey, value])
+          normalizedFields[normalizedKey] = normalizedValue
+          if (currentProfile[normalizedKey as keyof UserProfile] !== normalizedValue) {
+            changedFields.push([normalizedKey, normalizedValue])
           }
         }
       }
@@ -77,8 +93,10 @@ export function useFieldHandlers({
 
   const handleFieldRemoved = useCallback(
     (fieldName: string) => {
-      removeField(fieldName)
-      onFieldRemoved?.(fieldName)
+      // Normalize field name before removing (handles shortcuts, aliases, etc.)
+      const normalizedFieldName = normalizeFieldName(fieldName)
+      removeField(normalizedFieldName)
+      onFieldRemoved?.(normalizedFieldName)
     },
     [removeField, onFieldRemoved]
   )

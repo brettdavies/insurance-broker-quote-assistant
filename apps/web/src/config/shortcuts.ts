@@ -208,18 +208,15 @@ export const ACTION_SHORTCUTS_DISPLAY = getActionShortcutsDisplay()
 /**
  * Fields that allow spaces (multi-word values)
  * These fields stop at comma, period, or next key:value pattern (not space)
+ * Note: Enum fields (like productType, propertyType) are NOT multi-word - they have specific single-word options
+ * Note: Object/array fields (like existingPolicies) are NOT multi-word - they're not parsed as simple strings
  */
 export const MULTI_WORD_FIELDS = new Set<FieldCommand>([
-  'name',
-  'phone',
-  'productType',
-  'propertyType',
-  'garage',
-  'roofType',
-  'drivingRecords',
-  'deductibles',
-  'limits',
-  'existingPolicies',
+  'name', // Names can have spaces (e.g., "John Smith")
+  'phone', // Phone numbers can have spaces (e.g., "(555) 123-4567")
+  'drivingRecords', // Can be multi-word (e.g., "clean record", "one accident")
+  'deductibles', // Can be multi-word (e.g., "$500 comprehensive, $1000 collision")
+  'limits', // Can be multi-word (e.g., "$100k/$300k liability")
   'vins', // VINs can be multiple, space-separated
 ])
 

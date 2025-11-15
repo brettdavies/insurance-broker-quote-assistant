@@ -179,12 +179,12 @@ export function getProhibitedPhrases(): string[] {
  *
  * @param state - State code (e.g., 'CA', 'TX')
  * @param productType - Product type (e.g., 'auto', 'home')
- * @returns Array of disclaimers (base + state-specific + product-specific)
+ * @returns Array of disclaimers ordered: state-specific, product-specific, then generic (base)
  */
 export function getDisclaimers(state?: string, productType?: string): string[] {
-  const disclaimers: string[] = [...baseDisclaimers]
+  const disclaimers: string[] = []
 
-  // Add state-specific disclaimers
+  // 1. Add state-specific disclaimers first
   if (state) {
     const stateCode = state.toUpperCase()
     const stateDisclaimers = stateDisclaimersMap.get(stateCode)
@@ -193,13 +193,16 @@ export function getDisclaimers(state?: string, productType?: string): string[] {
     }
   }
 
-  // Add product-specific disclaimers
+  // 2. Add product-specific disclaimers second
   if (productType) {
     const productDisclaimers = productDisclaimersMap.get(productType)
     if (productDisclaimers) {
       disclaimers.push(...productDisclaimers)
     }
   }
+
+  // 3. Add generic (base) disclaimers last
+  disclaimers.push(...baseDisclaimers)
 
   // Remove duplicates (preserve order)
   return Array.from(new Set(disclaimers))

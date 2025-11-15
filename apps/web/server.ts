@@ -19,7 +19,6 @@ async function processCSS(filePath: string): Promise<string> {
     return result.css
   } catch (error) {
     // CSS processing errors in dev server - log to console for visibility
-    // biome-ignore lint/suspicious/noConsole: Dev server error handling
     console.error('Error processing CSS:', error)
     // Fallback to raw CSS if processing fails
     return readFileSync(filePath, 'utf-8')
@@ -44,7 +43,6 @@ serve({
         return apiResponse
       } catch (error) {
         // Proxy errors in dev server - log to console for visibility
-        // biome-ignore lint/suspicious/noConsole: Dev server error handling
         console.error(`Proxy error for ${pathname}:`, error)
         return new Response(
           JSON.stringify({
@@ -156,10 +154,8 @@ serve({
             }
             // Log detailed errors
             const errors = result.logs.filter((log) => log.level === 'error')
-            // biome-ignore lint/suspicious/noConsole: Dev server build error logging
             console.error(`Build failed for ${filePath}:`)
             for (const log of errors) {
-              // biome-ignore lint/suspicious/noConsole: Dev server build error logging
               console.error(`  ${log.message}`)
             }
 
@@ -171,7 +167,6 @@ serve({
             })
           } catch (error) {
             // Transpilation errors in dev server - log to console for visibility
-            // biome-ignore lint/suspicious/noConsole: Dev server error handling
             console.error(`Error transpiling ${filePath}:`, error)
             return new Response(
               `Transpilation error: ${error instanceof Error ? error.message : String(error)}`,
@@ -211,7 +206,5 @@ serve({
 
 // Dev server startup messages - using console for dev server visibility
 // These are informational messages for developers, not application logs
-// biome-ignore lint/suspicious/noConsole: Dev server startup messages
 console.log(`🚀 Dev server running at http://localhost:${PORT}`)
-// biome-ignore lint/suspicious/noConsole: Dev server startup messages
 console.log('📝 Hot reload enabled')
