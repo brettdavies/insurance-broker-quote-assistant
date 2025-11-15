@@ -21,8 +21,8 @@ export const routeDecisionSchema = z.object({
   primaryCarrier: z.string(), // Carrier name/ID of top recommendation
   tiedCarriers: z.array(z.string()).optional(), // Carriers with equal match scores (if tie exists)
   eligibleCarriers: z.array(z.string()), // All eligible carriers ranked by match quality
-  matchScores: z.record(z.string(), z.number()).optional(), // Match quality scores per carrier
-  confidence: z.number().min(0).max(1), // Overall confidence in routing decision (0-1)
+  matchScores: z.record(z.string(), z.number().int().min(0).max(100)).optional(), // Match quality scores per carrier (0-100 integer percentage)
+  confidence: z.number().int().min(0).max(100), // Overall confidence in routing decision (0-100 percentage)
   rationale: z.string(), // Human-readable explanation of routing decision
   citations: z.array(citationSchema), // Knowledge pack citations for each eligible carrier
 })

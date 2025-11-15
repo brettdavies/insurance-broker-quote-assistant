@@ -16,7 +16,7 @@ import {
   handleCopy,
   handleExport,
 } from '@/lib/prefill-utils'
-import type { IntakeResult, PolicyAnalysisResult, UserProfile } from '@repo/shared'
+import type { IntakeResult, PolicyAnalysisResult, PrefillPacket, UserProfile } from '@repo/shared'
 import { useCallback } from 'react'
 
 interface UseExportHandlersParams {
@@ -25,6 +25,7 @@ interface UseExportHandlersParams {
   policyAnalysisResult?: PolicyAnalysisResult
   mode: 'intake' | 'policy'
   toast: typeof ToastFn
+  onPrefillModalOpen?: (prefill: PrefillPacket) => void
 }
 
 export function useExportHandlers({
@@ -33,6 +34,7 @@ export function useExportHandlers({
   policyAnalysisResult,
   mode,
   toast,
+  onPrefillModalOpen,
 }: UseExportHandlersParams) {
   const handleExportCommand = useCallback(async () => {
     try {
@@ -58,14 +60,19 @@ export function useExportHandlers({
           duration: 3000,
         })
       } else {
-        // Export prefill packet in intake mode
+        // Open prefill modal in intake mode instead of directly downloading
         const prefillPacket = await getPrefillPacket(latestIntakeResult, profile)
-        handleExport(prefillPacket)
-        toast({
-          title: 'Export successful',
-          description: `Downloaded ${generatePrefillFilename(prefillPacket)}`,
-          duration: 3000,
-        })
+        if (onPrefillModalOpen) {
+          onPrefillModalOpen(prefillPacket)
+        } else {
+          // Fallback to direct download if modal handler not provided
+          handleExport(prefillPacket)
+          toast({
+            title: 'Export successful',
+            description: `Downloaded ${generatePrefillFilename(prefillPacket)}`,
+            duration: 3000,
+          })
+        }
       }
     } catch (error) {
       toast({
@@ -75,7 +82,7 @@ export function useExportHandlers({
         duration: 5000,
       })
     }
-  }, [profile, latestIntakeResult, policyAnalysisResult, mode, toast])
+  }, [profile, latestIntakeResult, policyAnalysisResult, mode, toast, onPrefillModalOpen])
 
   const handleCopyCommand = useCallback(async () => {
     try {

@@ -12,11 +12,11 @@ import type { CarrierMatch } from './carrier-ranker'
  *
  * @param rankedCarriers - Carriers ranked by match score
  * @param profile - User profile
- * @returns Confidence score (0-1)
+ * @returns Confidence score (0-100 integer percentage)
  */
 export function calculateConfidence(rankedCarriers: CarrierMatch[], profile: UserProfile): number {
   if (rankedCarriers.length === 0) {
-    return 0.0
+    return 0
   }
 
   // Calculate data completeness score
@@ -29,9 +29,12 @@ export function calculateConfidence(rankedCarriers: CarrierMatch[], profile: Use
   const completenessScore = providedFields / totalFields
 
   // Average of top 3 carriers' match scores, weighted by data completeness
-  const top3Scores = rankedCarriers.slice(0, 3).map((m) => m.matchScore)
+  // Match scores are now 0-100 integers, so divide by 100 to get 0-1 decimal for calculation
+  const top3Scores = rankedCarriers.slice(0, 3).map((m) => m.matchScore / 100)
   const avgMatchScore = top3Scores.reduce((sum, score) => sum + score, 0) / top3Scores.length
 
   // Weighted combination: 70% match score, 30% data completeness
-  return avgMatchScore * 0.7 + completenessScore * 0.3
+  // Convert to integer percentage (0-100)
+  const decimalConfidence = avgMatchScore * 0.7 + completenessScore * 0.3
+  return Math.round(decimalConfidence * 100)
 }

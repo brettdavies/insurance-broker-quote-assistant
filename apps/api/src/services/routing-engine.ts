@@ -281,13 +281,13 @@ export function routeToCarrier(
  * Create RouteDecision for no eligible carriers scenario
  *
  * @param explanation - Explanation of why no carriers are eligible
- * @returns RouteDecision with empty eligibleCarriers and confidence 0.0
+ * @returns RouteDecision with empty eligibleCarriers and confidence 0
  */
 function createNoEligibleCarriersDecision(explanation: string): RouteDecision {
   return {
     primaryCarrier: '',
     eligibleCarriers: [],
-    confidence: 0.0,
+    confidence: 0,
     rationale: explanation,
     citations: [],
   }

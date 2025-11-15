@@ -52,6 +52,8 @@ interface UseUnifiedChatHooksParams {
   setFieldModalOpen: (open: boolean) => void
   setCurrentField: (field: { key: string; value?: string | number | boolean } | null) => void
   setHelpModalOpen: (open: boolean) => void
+  setPrefillModalOpen: (open: boolean) => void
+  setPrefillData: (prefill: import('@repo/shared').PrefillPacket | null) => void
   reset: () => void
   latestIntakeResult: IntakeResult | null
   policySummary?: import('@repo/shared').PolicySummary
@@ -78,6 +80,8 @@ export function useUnifiedChatHooks({
   setFieldModalOpen,
   setCurrentField,
   setHelpModalOpen,
+  setPrefillModalOpen,
+  setPrefillData,
   reset,
   latestIntakeResult,
   policySummary,
@@ -160,6 +164,10 @@ export function useUnifiedChatHooks({
     policyAnalysisResult,
     mode,
     toast,
+    onPrefillModalOpen: (prefill) => {
+      setPrefillData(prefill)
+      setPrefillModalOpen(true)
+    },
   })
 
   // Inferred field handlers hook

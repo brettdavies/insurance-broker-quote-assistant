@@ -36,72 +36,82 @@ export function RoutingStatus({ route, mode }: RoutingStatusProps) {
     )
   }
 
-  const { primaryCarrier, eligibleCarriers, confidence, rationale, tiedCarriers } = route
+  const { primaryCarrier, eligibleCarriers, confidence, rationale, tiedCarriers, matchScores } =
+    route
 
-  // Format confidence as percentage
-  const confidencePercent = Math.round(confidence * 100)
+  // Confidence is already 0-100 integer percentage from backend (overall routing confidence)
+  // Match scores are also 0-100 integer percentages (carrier-specific match quality)
 
   return (
     <Card className="border-2 border-blue-500 dark:border-blue-400">
-      <CardHeader className="pb-3">
+      <CardHeader className="pb-2">
         <CardTitle className="text-sm font-semibold">Routing Status</CardTitle>
       </CardHeader>
-      <CardContent className="space-y-3">
-        {/* Primary Carrier */}
-        {primaryCarrier && (
-          <div>
-            <div className="mb-1 flex items-center justify-between">
-              <span className="text-xs font-medium text-gray-700 dark:text-gray-300">
-                Primary Carrier
+      <CardContent className="space-y-2">
+        {/* Confidence and Primary Carrier - Compact Horizontal Layout */}
+        <div className="space-y-1.5">
+          {confidence > 0 && (
+            <div className="text-xs">
+              <span className="font-medium text-gray-700 dark:text-gray-300">
+                Routing Confidence:{' '}
               </span>
-              {confidence > 0 && (
-                <span className="text-xs text-gray-500 dark:text-gray-400">
-                  {confidencePercent}% confidence
+              <span className="font-semibold text-blue-600 dark:text-blue-400">{confidence}%</span>
+            </div>
+          )}
+
+          {primaryCarrier && (
+            <div className="flex items-center justify-between rounded-md bg-blue-50 px-2.5 py-1.5 text-xs dark:bg-blue-900/20">
+              <span className="font-semibold text-blue-900 dark:text-blue-100">
+                {primaryCarrier}
+              </span>
+              {matchScores?.[primaryCarrier] !== undefined && (
+                <span className="ml-2 font-medium text-blue-700 dark:text-blue-300">
+                  {matchScores[primaryCarrier]}% match
                 </span>
               )}
             </div>
-            <div className="rounded-md bg-blue-50 px-3 py-2 text-xs font-semibold text-blue-900 dark:bg-blue-900/20 dark:text-blue-100">
-              {primaryCarrier}
-            </div>
-          </div>
-        )}
+          )}
+        </div>
 
-        {/* Eligible Carriers */}
-        {eligibleCarriers && eligibleCarriers.length > 0 && (
+        {/* Other Eligible Carriers - Compact Grid Layout */}
+        {eligibleCarriers && eligibleCarriers.filter((c) => c !== primaryCarrier).length > 0 && (
           <div>
             <div className="mb-1 text-xs font-medium text-gray-700 dark:text-gray-300">
-              Eligible Carriers ({eligibleCarriers.length})
+              Other Eligible Carriers ({eligibleCarriers.filter((c) => c !== primaryCarrier).length}
+              )
             </div>
-            <div className="space-y-1">
-              {eligibleCarriers.map((carrier) => (
-                <div
-                  key={carrier}
-                  className={`rounded-md px-3 py-1.5 text-xs ${
-                    carrier === primaryCarrier
-                      ? 'bg-blue-100 font-semibold text-blue-900 dark:bg-blue-900/30 dark:text-blue-100'
-                      : 'bg-gray-50 text-gray-700 dark:bg-gray-700/50 dark:text-gray-300'
-                  }`}
-                >
-                  {carrier}
-                  {carrier === primaryCarrier && (
-                    <span className="ml-2 text-xs text-blue-600 dark:text-blue-400">(Primary)</span>
-                  )}
-                  {tiedCarriers?.includes(carrier) && (
-                    <span className="ml-2 text-xs text-gray-500 dark:text-gray-400">(Tied)</span>
-                  )}
-                </div>
-              ))}
+            <div className="grid grid-cols-1 gap-1">
+              {eligibleCarriers
+                .filter((carrier) => carrier !== primaryCarrier)
+                .map((carrier) => {
+                  const matchScore = matchScores?.[carrier]
+                  return (
+                    <div
+                      key={carrier}
+                      className="flex items-center justify-between rounded-md bg-gray-50 px-2.5 py-1 text-xs text-gray-700 dark:bg-gray-700/50 dark:text-gray-300"
+                    >
+                      <span>
+                        {carrier}
+                        {tiedCarriers?.includes(carrier) && (
+                          <span className="ml-1.5 text-gray-500 dark:text-gray-400">(Tied)</span>
+                        )}
+                      </span>
+                      {matchScore !== undefined && (
+                        <span className="ml-2 font-medium text-gray-600 dark:text-gray-400">
+                          {matchScore}% match
+                        </span>
+                      )}
+                    </div>
+                  )
+                })}
             </div>
           </div>
         )}
 
-        {/* Rationale */}
+        {/* Rationale - Compact */}
         {rationale && (
-          <div>
-            <div className="mb-1 text-xs font-medium text-gray-700 dark:text-gray-300">
-              Rationale
-            </div>
-            <p className="text-xs text-gray-600 dark:text-gray-400">{rationale}</p>
+          <div className="pt-0.5">
+            <p className="text-xs leading-relaxed text-gray-600 dark:text-gray-400">{rationale}</p>
           </div>
         )}
 

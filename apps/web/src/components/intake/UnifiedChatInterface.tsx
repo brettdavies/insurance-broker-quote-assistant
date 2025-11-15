@@ -54,6 +54,8 @@ export function UnifiedChatInterface({
     setFieldModalOpen,
     setCurrentField,
     setHelpModalOpen,
+    setPrefillModalOpen,
+    setPrefillData,
     reset,
   } = useUnifiedChatState()
 
@@ -67,6 +69,8 @@ export function UnifiedChatInterface({
     fieldModalOpen,
     currentField,
     helpModalOpen,
+    prefillModalOpen,
+    prefillData,
   } = state
 
   // Reset key for forcing NotesPanel remount
@@ -114,6 +118,8 @@ export function UnifiedChatInterface({
     setFieldModalOpen,
     setCurrentField,
     setHelpModalOpen,
+    setPrefillModalOpen,
+    setPrefillData,
     reset,
     latestIntakeResult,
     policySummary,
@@ -213,6 +219,9 @@ export function UnifiedChatInterface({
         onSaveInferred={handleEditInference}
         onSaveKnown={handleConvertToKnown}
         onSaveKnownFromPill={handleConvertToKnownFromPill}
+        prefillModalOpen={prefillModalOpen}
+        setPrefillModalOpen={setPrefillModalOpen}
+        prefillData={prefillData}
       />
     </>
   )

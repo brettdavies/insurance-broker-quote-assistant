@@ -682,6 +682,14 @@ describe('InferenceEngine', () => {
         "Pattern 'lives alone' strongly suggests single-person household"
       )
       expect(result.confidence.householdSize).toBe(0.7)
+
+      // Should infer kids from householdSize (chained inference: Step 3)
+      // householdSize:1 → kids:0 (single adult with no children)
+      expect(result.inferred.kids).toBe(0)
+      expect(result.reasons.kids).toBe(
+        'Household size of 1 indicates a single adult with no children'
+      )
+      expect(result.confidence.kids).toBe(0.85)
     })
 
     test('Field-to-field inference takes precedence over text pattern', () => {

@@ -4,6 +4,7 @@ import type {
   MissingField,
   PolicyAnalysisResult,
   PolicySummary,
+  PrefillPacket,
   UserProfile,
 } from '@repo/shared'
 import { useCallback, useReducer, useRef } from 'react'
@@ -18,6 +19,8 @@ interface UnifiedChatState {
   fieldModalOpen: boolean
   currentField: { key: string; value?: string | number | boolean } | null
   helpModalOpen: boolean
+  prefillModalOpen: boolean
+  prefillData: PrefillPacket | null
 }
 
 type UnifiedChatAction =
@@ -35,6 +38,8 @@ type UnifiedChatAction =
       payload: { key: string; value?: string | number | boolean } | null
     }
   | { type: 'SET_HELP_MODAL_OPEN'; payload: boolean }
+  | { type: 'SET_PREFILL_MODAL_OPEN'; payload: boolean }
+  | { type: 'SET_PREFILL_DATA'; payload: PrefillPacket | null }
   | { type: 'RESET' }
 
 const initialState: UnifiedChatState = {
@@ -47,6 +52,8 @@ const initialState: UnifiedChatState = {
   fieldModalOpen: false,
   currentField: null,
   helpModalOpen: false,
+  prefillModalOpen: false,
+  prefillData: null,
 }
 
 function unifiedChatReducer(state: UnifiedChatState, action: UnifiedChatAction): UnifiedChatState {
@@ -76,6 +83,10 @@ function unifiedChatReducer(state: UnifiedChatState, action: UnifiedChatAction):
       return { ...state, currentField: action.payload }
     case 'SET_HELP_MODAL_OPEN':
       return { ...state, helpModalOpen: action.payload }
+    case 'SET_PREFILL_MODAL_OPEN':
+      return { ...state, prefillModalOpen: action.payload }
+    case 'SET_PREFILL_DATA':
+      return { ...state, prefillData: action.payload }
     case 'RESET':
       return initialState
     default:
@@ -143,6 +154,14 @@ export function useUnifiedChatState() {
     dispatch({ type: 'SET_HELP_MODAL_OPEN', payload: open })
   }, [])
 
+  const setPrefillModalOpen = useCallback((open: boolean) => {
+    dispatch({ type: 'SET_PREFILL_MODAL_OPEN', payload: open })
+  }, [])
+
+  const setPrefillData = useCallback((prefill: PrefillPacket | null) => {
+    dispatch({ type: 'SET_PREFILL_DATA', payload: prefill })
+  }, [])
+
   const reset = useCallback(() => {
     dispatch({ type: 'RESET' })
   }, [])
@@ -161,6 +180,8 @@ export function useUnifiedChatState() {
     setFieldModalOpen,
     setCurrentField,
     setHelpModalOpen,
+    setPrefillModalOpen,
+    setPrefillData,
     reset,
   }
 }

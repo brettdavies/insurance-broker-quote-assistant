@@ -26,7 +26,7 @@ import { userProfileSchema } from './user-profile'
 export const prefillRoutingSchema = z.object({
   primaryCarrier: z.string(), // Recommended carrier name
   eligibleCarriers: z.array(z.string()), // All eligible carriers
-  confidence: z.number().min(0).max(1), // Confidence in recommendation (0-1)
+  confidence: z.number().int().min(0).max(100), // Confidence in recommendation (0-100 percentage)
   rationale: z.string(), // Brief explanation of why this carrier was selected
 })
 

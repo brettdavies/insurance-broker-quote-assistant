@@ -33,15 +33,16 @@ export function generateRationale(
   const parts: string[] = []
 
   // Explain primary carrier selection
+  // Match scores are now 0-100 integers
   parts.push(
-    `Selected ${primary.carrier.name} as primary carrier (match score: ${primary.matchScore.toFixed(2)})`
+    `Selected ${primary.carrier.name} as primary carrier (match score: ${primary.matchScore}%)`
   )
 
   // List alternatives if any (exclude the selected primary carrier)
   const alternativeCarriers = rankedCarriers.filter((m) => m.carrier.name !== primary.carrier.name)
   if (alternativeCarriers.length > 0) {
     const alternatives = alternativeCarriers
-      .map((m) => `${m.carrier.name} (${m.matchScore.toFixed(2)})`)
+      .map((m) => `${m.carrier.name} (${m.matchScore}%)`)
       .join(', ')
     parts.push(`Alternatives: ${alternatives}`)
   }

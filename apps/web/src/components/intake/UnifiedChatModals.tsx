@@ -6,10 +6,11 @@
  * Single Responsibility: Modal rendering only
  */
 
+import { PrefillViewerModal } from '@/components/shared/PrefillViewerModal'
 import { FieldModal } from '@/components/shortcuts/FieldModal'
 import { HelpModal } from '@/components/shortcuts/HelpModal'
 import type { FieldCommand } from '@/hooks/useSlashCommands'
-import type { UserProfile } from '@repo/shared'
+import type { PrefillPacket, UserProfile } from '@repo/shared'
 
 interface UnifiedChatModalsProps {
   fieldModalOpen: boolean
@@ -33,6 +34,9 @@ interface UnifiedChatModalsProps {
   onSaveInferred: (fieldName: string, value: unknown) => void
   onSaveKnown: (fieldName: string, value: unknown) => void
   onSaveKnownFromPill: (fieldName: string) => void
+  prefillModalOpen: boolean
+  setPrefillModalOpen: (open: boolean) => void
+  prefillData: PrefillPacket | null
 }
 
 export function UnifiedChatModals({
@@ -53,6 +57,9 @@ export function UnifiedChatModals({
   onSaveInferred,
   onSaveKnown,
   onSaveKnownFromPill,
+  prefillModalOpen,
+  setPrefillModalOpen,
+  prefillData,
 }: UnifiedChatModalsProps) {
   return (
     <>
@@ -95,6 +102,12 @@ export function UnifiedChatModals({
       )}
 
       <HelpModal open={helpModalOpen} onOpenChange={setHelpModalOpen} />
+
+      <PrefillViewerModal
+        open={prefillModalOpen}
+        onOpenChange={setPrefillModalOpen}
+        prefill={prefillData}
+      />
     </>
   )
 }
