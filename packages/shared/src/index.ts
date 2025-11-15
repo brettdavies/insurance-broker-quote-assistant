@@ -222,7 +222,38 @@ export {
   parseAndValidateInteger,
 } from './utils/number-formatting'
 
-// Export test utilities (for use in test files only)
-// NOTE: DO NOT export test-utils from main package - they import bun:test which breaks browser builds
-// Test files should import directly: import { ... } from '@repo/shared/src/test-utils'
-// export * from './test-utils'  // DISABLED - breaks browser builds
+// Export pill parsing utilities
+export {
+  type ParsedKeyValue,
+  type ValidationResult,
+  buildFieldAliasesMap,
+  getFieldNameFromAlias,
+  parseKeyValueSyntax,
+  buildFieldTypeConfig,
+  type FieldTypeConfig,
+  extractFields,
+  getValidDelimitersForField,
+  shouldTransformOnDelimiter,
+  findExistingSingleInstancePills,
+  deduplicateSingleInstanceFields,
+} from './utils/pill-parsing'
+
+// Export field options utilities
+export {
+  type ComboboxOption,
+  getStateOptionsForCombobox,
+  getEnumOptionsForCombobox,
+} from './utils/field-options'
+
+// Export prompts utilities
+export { buildSystemPrompt, buildUserPrompt } from './utils/prompts'
+
+// Export extraction utilities
+export {
+  type SeparatedFields,
+  separateKnownFromInferred,
+  getAllUserProfileFieldNames,
+} from './utils/extraction'
+
+// Export field input configuration utilities
+export { getInputTypeForField, getPlaceholderForField } from './utils/field-input-config'

@@ -1,22 +1,22 @@
 import fs from 'node:fs'
 import path from 'node:path'
-import type { PolicySummary, UserProfile } from '@repo/shared'
+import type { UserProfile } from '@repo/shared'
 import {
   CONFIDENCE_THRESHOLD_HIGH,
   DEFAULT_EXTRACTION_TEMPERATURE,
-  type NormalizedField,
+  buildSystemPrompt,
+  buildUserPrompt,
   extractStateFromText,
-  inferExistingPolicies,
-  normalizeCarrierName,
-  policySummarySchema,
+  getAllUserProfileFieldNames,
+  separateKnownFromInferred,
   userProfileSchema,
 } from '@repo/shared'
-import { buildPolicyConfidenceMap, buildProfileConfidenceMap } from '../utils/confidence-builder'
-import { hasKeyValueSyntax, parseKeyValueSyntax } from '../utils/key-value-parser'
+import { hasKeyValueSyntax } from '../utils/key-value-parser'
 import { logDebug, logError } from '../utils/logger'
-import { validatePolicySummary } from './extractors/policy-validator'
-import { validateProfile } from './extractors/profile-validator'
+import { extractFieldsWithKeyValue } from './extractors/key-value-extraction'
+import { extractFieldsWithLLM } from './extractors/llm-extraction'
 import type { LLMProvider } from './llm-provider'
+import { extractPolicyData, extractPolicyDataFromFile } from './policy-extractor'
 
 /**
  * Conversational Extractor Service
@@ -57,6 +57,25 @@ export class ConversationalExtractor {
   }
 
   /**
+   * Load system prompt template from file
+   */
+  private loadSystemPromptTemplate(): string {
+    const templatePath = path.join(
+      process.cwd(),
+      'src/prompts/conversational-extraction-system.txt'
+    )
+    return fs.readFileSync(templatePath, 'utf-8')
+  }
+
+  /**
+   * Load user prompt template from file
+   */
+  private loadUserPromptTemplate(): string {
+    const templatePath = path.join(process.cwd(), 'src/prompts/conversational-extraction-user.txt')
+    return fs.readFileSync(templatePath, 'utf-8')
+  }
+
+  /**
    * Build system prompt with known/inferred/suppressed fields injected
    */
   private buildSystemPrompt(
@@ -64,18 +83,8 @@ export class ConversationalExtractor {
     inferredFields: Partial<UserProfile>,
     suppressedFields: string[]
   ): string {
-    // Load template from conversational-extraction-system.txt
-    const templatePath = path.join(
-      process.cwd(),
-      'src/prompts/conversational-extraction-system.txt'
-    )
-    const template = fs.readFileSync(templatePath, 'utf-8')
-
-    // Inject known/inferred/suppressed fields
-    return template
-      .replace('{{knownFields}}', JSON.stringify(knownFields))
-      .replace('{{inferredFields}}', JSON.stringify(inferredFields))
-      .replace('{{suppressedFields}}', suppressedFields.join(', '))
+    const template = this.loadSystemPromptTemplate()
+    return buildSystemPrompt(template, knownFields, inferredFields, suppressedFields)
   }
 
   /**
@@ -87,16 +96,8 @@ export class ConversationalExtractor {
     inferredFields: Partial<UserProfile>,
     suppressedFields: string[]
   ): string {
-    // Load template from conversational-extraction-user.txt
-    const templatePath = path.join(process.cwd(), 'src/prompts/conversational-extraction-user.txt')
-    const template = fs.readFileSync(templatePath, 'utf-8')
-
-    // Inject all fields
-    return template
-      .replace('{{knownFields}}', JSON.stringify(knownFields, null, 2))
-      .replace('{{inferredFields}}', JSON.stringify(inferredFields, null, 2))
-      .replace('{{suppressedFields}}', suppressedFields.join(', '))
-      .replace('{{message}}', message)
+    const template = this.loadUserPromptTemplate()
+    return buildUserPrompt(template, message, knownFields, inferredFields, suppressedFields)
   }
 
   /**
@@ -122,28 +123,7 @@ export class ConversationalExtractor {
     try {
       // Step 1: Try key-value parser first (instant, free, deterministic)
       if (hasKeyValueSyntax(message)) {
-        const kvResult = parseKeyValueSyntax(message)
-
-        // Validate extracted profile against schema
-        let validatedProfile = validateProfile(kvResult.profile)
-
-        // Apply deterministic state normalization if state is missing
-        if (!validatedProfile.state) {
-          const extractedState = extractStateFromText(message)
-          if (extractedState) {
-            validatedProfile = { ...validatedProfile, state: extractedState }
-          }
-        }
-
-        // Calculate missing fields
-        const missingFields = this.calculateMissingFields(validatedProfile)
-
-        return {
-          profile: validatedProfile,
-          extractionMethod: 'key-value',
-          confidence: buildProfileConfidenceMap(validatedProfile, {}, 1.0), // Key-value is always 100% confident
-          missingFields,
-        }
+        return extractFieldsWithKeyValue(message, (profile) => this.calculateMissingFields(profile))
       }
 
       // Step 2: Use LLM for natural language extraction
@@ -160,140 +140,15 @@ export class ConversationalExtractor {
         suppressedFields || []
       )
 
-      await logDebug('Conversational extractor: LLM prompts generated', {
+      return extractFieldsWithLLM(
+        this.llmProvider,
+        message,
         systemPrompt,
         userPrompt,
-      })
-
-      // Use LLM with custom system prompt
-      const llmResult = await this.llmProvider.extractWithStructuredOutput(
-        userPrompt,
-        userProfileSchema,
-        undefined, // No partialFields needed (using prompts instead)
-        DEFAULT_EXTRACTION_TEMPERATURE, // Temperature for extraction (deterministic behavior)
-        systemPrompt // NEW: Pass custom system prompt
+        knownFields || {},
+        suppressedFields || [],
+        (profile) => this.calculateMissingFields(profile)
       )
-
-      // Validate extracted profile against schema
-      const validatedProfile = validateProfile(llmResult.profile)
-      await logDebug('Conversational extractor: LLM profile validated', {
-        householdSize: validatedProfile.householdSize,
-      })
-
-      // Separate LLM extracted fields into known vs inferred based on confidence
-      const llmKnownFields: Partial<UserProfile> = {}
-      const llmInferredFields: Partial<UserProfile> = {}
-      const inferenceReasons: Record<string, string> = {}
-
-      for (const [fieldName, fieldValue] of Object.entries(validatedProfile)) {
-        const confidence = llmResult.confidence[fieldName] ?? 0
-
-        if (confidence >= CONFIDENCE_THRESHOLD_HIGH) {
-          // High confidence (≥85%): treat as known
-          // Type assertion needed because Object.entries loses type information
-          ;(llmKnownFields as Record<string, unknown>)[fieldName] = fieldValue
-        } else if (confidence > 0) {
-          // Medium/low confidence (<85%): treat as inferred
-          // Type assertion needed because Object.entries loses type information
-          ;(llmInferredFields as Record<string, unknown>)[fieldName] = fieldValue
-          inferenceReasons[fieldName] =
-            llmResult.reasoning ?? `Extracted with ${(confidence * 100).toFixed(0)}% confidence`
-        }
-      }
-
-      // Merge with input knownFields (broker-set fields always take precedence)
-      const finalKnownFields: Partial<UserProfile> = {
-        ...llmKnownFields,
-        ...(knownFields || {}), // Broker-set known fields override LLM extractions
-      }
-
-      // Use ONLY LLM's extracted inferred fields (don't merge input inferredFields)
-      // The input inferredFields are just for LLM context, not to be carried forward automatically
-      // The LLM decides which inferred fields to keep/modify/delete/upgrade
-      const finalInferredFields: Partial<UserProfile> = {
-        ...llmInferredFields,
-      }
-
-      // Remove suppressed fields from inferred (should never appear due to prompt, but defensive)
-      if (suppressedFields && suppressedFields.length > 0) {
-        for (const suppressedField of suppressedFields) {
-          delete finalInferredFields[suppressedField as keyof UserProfile]
-        }
-      }
-
-      // Merge all fields for backward compatibility (profile field)
-      const finalProfile: Partial<UserProfile> = {
-        ...finalInferredFields,
-        ...finalKnownFields, // Known fields take precedence
-      }
-
-      await logDebug('Conversational extractor: Final extraction results', {
-        knownFields: finalKnownFields,
-        inferredFields: finalInferredFields,
-        profile: finalProfile,
-      })
-
-      // Normalize carrier name using alias map (handles abbreviations like "pro" → "PROGRESSIVE")
-      if (finalProfile.currentCarrier) {
-        finalProfile.currentCarrier = normalizeCarrierName(finalProfile.currentCarrier)
-        // Also normalize in known/inferred fields
-        if (finalKnownFields.currentCarrier) {
-          finalKnownFields.currentCarrier = normalizeCarrierName(finalKnownFields.currentCarrier)
-        }
-        if (finalInferredFields.currentCarrier) {
-          finalInferredFields.currentCarrier = normalizeCarrierName(
-            finalInferredFields.currentCarrier
-          )
-        }
-      }
-
-      // Infer existingPolicies from currentCarrier + productType
-      if (finalProfile.currentCarrier && finalProfile.productType) {
-        // Build a map for inference function
-        const fieldsMap = new Map<string, NormalizedField>()
-        fieldsMap.set('currentCarrier', {
-          fieldName: 'currentCarrier',
-          value: finalProfile.currentCarrier,
-          originalText: finalProfile.currentCarrier,
-          startIndex: 0,
-          endIndex: 0,
-        })
-        fieldsMap.set('productType', {
-          fieldName: 'productType',
-          value: finalProfile.productType,
-          originalText: finalProfile.productType,
-          startIndex: 0,
-          endIndex: 0,
-        })
-
-        const inferredPolicies = inferExistingPolicies(fieldsMap)
-        if (inferredPolicies.length > 0) {
-          finalProfile.existingPolicies = inferredPolicies
-          // Add to inferred fields if not in known
-          if (!finalKnownFields.existingPolicies) {
-            finalInferredFields.existingPolicies = inferredPolicies
-            inferenceReasons.existingPolicies = 'Inferred from currentCarrier + productType'
-          }
-          await logDebug('Conversational extractor: Inferred existingPolicies', {
-            inferredPolicies,
-          })
-        }
-      }
-
-      // Calculate missing fields
-      const missingFields = this.calculateMissingFields(finalProfile)
-
-      return {
-        profile: finalProfile, // Backward compatibility
-        known: finalKnownFields, // NEW: Known fields
-        inferred: finalInferredFields, // NEW: Inferred fields
-        extractionMethod: 'llm',
-        confidence: llmResult.confidence,
-        missingFields,
-        reasoning: llmResult.reasoning,
-        tokenUsage: llmResult.tokenUsage, // Include token usage from LLM
-        inferenceReasons, // NEW: Reasoning for each inferred field
-      }
     } catch (error) {
       // Log error but return partial result (graceful degradation)
       await logError('Extraction failed', error as Error, {
@@ -328,19 +183,7 @@ export class ConversationalExtractor {
    * Get all UserProfile field names
    */
   private getAllFieldNames(): string[] {
-    return [
-      'state',
-      'productType',
-      'age',
-      'householdSize',
-      'vehicles',
-      'ownsHome',
-      'cleanRecord3Yr',
-      'currentCarrier',
-      'premiums',
-      'existingPolicies',
-      'kids', // Legacy field
-    ]
+    return getAllUserProfileFieldNames()
   }
 
   /**
@@ -350,67 +193,11 @@ export class ConversationalExtractor {
    * @returns PolicySummary with extracted fields and confidence scores, plus metadata (tokens, timing)
    */
   async extractPolicyDataFromFile(file: File): Promise<
-    PolicySummary & {
+    import('@repo/shared').PolicySummary & {
       _metadata?: { tokensUsed?: number; extractionTime?: number; reasoning?: string }
     }
   > {
-    try {
-      // Check if LLM provider supports direct file extraction
-      if (this.llmProvider.extractFromFile) {
-        const prompt =
-          'Extract policy information from this insurance policy document. Extract all relevant fields including carrier, state, product type, coverage limits, deductibles, premiums, and effective dates according to the provided schema.'
-
-        const llmResult = await this.llmProvider.extractFromFile(file, prompt, policySummarySchema)
-
-        // Validate extracted policy summary against schema
-        const validatedSummary = validatePolicySummary(
-          llmResult.profile as unknown as Partial<PolicySummary>
-        )
-
-        // Build confidence scores from LLM result
-        const confidenceScores = buildPolicyConfidenceMap(validatedSummary, llmResult.confidence)
-
-        // Return PolicySummary with metadata attached (will be stripped before returning to client)
-        return {
-          ...validatedSummary,
-          confidence: confidenceScores,
-          _metadata: {
-            tokensUsed: llmResult.tokensUsed,
-            extractionTime: llmResult.extractionTime,
-            reasoning: llmResult.reasoning,
-          },
-        }
-      }
-
-      // Fallback: Extract text first, then use LLM
-      throw new Error('Direct file extraction not supported by LLM provider')
-    } catch (error) {
-      // Log error but return partial result (graceful degradation)
-      await logError('Policy extraction from file failed', error as Error, {
-        type: 'policy_extraction_error',
-        fileName: file.name,
-      })
-
-      // Return empty policy summary with low confidence
-      return {
-        carrier: undefined,
-        state: undefined,
-        productType: undefined,
-        coverageLimits: undefined,
-        deductibles: undefined,
-        premiums: undefined,
-        effectiveDates: undefined,
-        confidence: {
-          carrier: 0.0,
-          state: 0.0,
-          productType: 0.0,
-          coverageLimits: 0.0,
-          deductibles: 0.0,
-          premiums: 0.0,
-          effectiveDates: 0.0,
-        },
-      }
-    }
+    return extractPolicyDataFromFile(this.llmProvider, file)
   }
 
   /**
@@ -419,63 +206,7 @@ export class ConversationalExtractor {
    * @param policyText - Raw text extracted from PDF/DOCX/TXT policy document
    * @returns PolicySummary with extracted fields and confidence scores
    */
-  async extractPolicyData(policyText: string): Promise<PolicySummary> {
-    try {
-      // Use LLM to extract structured policy data from text
-      const llmResult = await this.llmProvider.extractWithStructuredOutput(
-        policyText,
-        policySummarySchema
-      )
-
-      // Validate extracted policy summary against schema
-      // LLM returns profile as Partial<UserProfile> type, but content matches PolicySummary schema
-      const validatedSummary = validatePolicySummary(
-        llmResult.profile as unknown as Partial<PolicySummary>
-      )
-
-      // Build confidence scores from LLM result
-      const confidenceScores = buildPolicyConfidenceMap(validatedSummary, llmResult.confidence)
-
-      return {
-        ...validatedSummary,
-        confidence: confidenceScores,
-      }
-    } catch (error) {
-      // Log error but return partial result (graceful degradation)
-      await logError('Policy extraction failed', error as Error, {
-        type: 'policy_extraction_error',
-        policyTextPreview: policyText.substring(0, 500),
-      })
-
-      // Return empty policy summary with low confidence
-      return {
-        name: undefined,
-        email: undefined,
-        phone: undefined,
-        zip: undefined,
-        state: undefined,
-        address: undefined,
-        carrier: undefined,
-        productType: undefined,
-        coverageLimits: undefined,
-        deductibles: undefined,
-        premiums: undefined,
-        effectiveDates: undefined,
-        confidence: {
-          name: 0.0,
-          email: 0.0,
-          phone: 0.0,
-          zip: 0.0,
-          state: 0.0,
-          address: 0.0,
-          carrier: 0.0,
-          productType: 0.0,
-          coverageLimits: 0.0,
-          deductibles: 0.0,
-          premiums: 0.0,
-          effectiveDates: 0.0,
-        },
-      }
-    }
+  async extractPolicyData(policyText: string): Promise<import('@repo/shared').PolicySummary> {
+    return extractPolicyData(this.llmProvider, policyText)
   }
 }

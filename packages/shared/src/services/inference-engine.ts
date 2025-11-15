@@ -147,25 +147,11 @@ export class InferenceEngine {
 
         const inferredValue = rule.inferValue(fieldValue)
         if (inferredValue !== undefined) {
-          console.log(
-            `[InferenceEngine] Creating inference: ${fieldName}(${fieldValue}) → ${rule.targetField}(${inferredValue})`,
-            {
-              sourceField: fieldName,
-              sourceValue: fieldValue,
-              targetField: rule.targetField,
-              inferredValue,
-              confidence: rule.confidence,
-              reasoning: rule.reasoning,
-            }
-          )
+          // Debug logging removed - callers should log inference events if needed
           // biome-ignore lint/suspicious/noExplicitAny: UserProfile has dynamic field types
           ;(inferred as any)[rule.targetField] = inferredValue
           reasons[rule.targetField] = rule.reasoning
           confidence[rule.targetField] = this.confidenceToNumber(rule.confidence)
-        } else {
-          console.log(
-            `[InferenceEngine] No inference: ${fieldName}(${fieldValue}) → ${rule.targetField}: inferValue returned undefined`
-          )
         }
       }
     }
@@ -197,25 +183,11 @@ export class InferenceEngine {
         const value = this.replaceCaptureGroups(inference.value, match)
 
         if (value !== undefined) {
-          console.log(
-            `[InferenceEngine] Creating text pattern inference: pattern "${pattern.pattern}" → ${inference.field}(${value})`,
-            {
-              pattern: pattern.pattern.toString(),
-              match: match[0],
-              targetField: inference.field,
-              inferredValue: value,
-              confidence: inference.confidence,
-              reasoning: inference.reasoning,
-            }
-          )
+          // Debug logging removed - callers should log inference events if needed
           // biome-ignore lint/suspicious/noExplicitAny: UserProfile has dynamic field types
           ;(inferred as any)[inference.field] = value
           reasons[inference.field] = inference.reasoning
           confidence[inference.field] = this.confidenceToNumber(inference.confidence)
-        } else {
-          console.log(
-            `[InferenceEngine] No text pattern inference: pattern "${pattern.pattern}" → ${inference.field}: value is undefined`
-          )
         }
       }
     }

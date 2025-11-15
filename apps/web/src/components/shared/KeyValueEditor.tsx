@@ -2,7 +2,6 @@
  * Key Value Editor Component
  *
  * Shared Lexical editor component with key-value pill support.
- * Extracted from NotesPanel for reuse across different contexts.
  *
  * Provides:
  * - Lexical editor with pill system

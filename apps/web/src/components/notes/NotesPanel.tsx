@@ -13,15 +13,13 @@
 import { CompliancePanel } from '@/components/layout/CompliancePanel'
 import { KeyValueEditor } from '@/components/shared/KeyValueEditor'
 import { FieldModal } from '@/components/shortcuts/FieldModal'
-import { COMMAND_TO_KEY, NUMERIC_FIELDS } from '@/config/shortcuts'
+import { useComplianceDisclaimers } from '@/hooks/useComplianceDisclaimers'
 import { type ActionCommand, type FieldCommand, useSlashCommands } from '@/hooks/useSlashCommands'
-import { getDisclaimers } from '@/lib/compliance-utils'
-import { useLexicalComposerContext } from '@lexical/react/LexicalComposerContext'
 import { type UserProfile, unifiedFieldMetadata } from '@repo/shared'
-import { $getNodeByKey, $insertNodes, TextNode } from 'lexical'
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useState } from 'react'
 import { InferredFieldsSection } from './InferredFieldsSection'
-import { $isPillNode, PillNode } from './nodes/PillNode'
+import { FieldInjectionPlugin } from './plugins/FieldInjectionPlugin'
+import { PillFieldExtractionPlugin } from './plugins/PillFieldExtractionPlugin'
 
 interface NotesPanelProps {
   mode?: 'intake' | 'policy'
@@ -48,101 +46,6 @@ interface NotesPanelProps {
   onConvertToKnown?: (fieldName: string, value: unknown) => void
   // Profile for compliance disclaimers
   profile?: UserProfile
-}
-
-// NotesPanel-specific plugins that extend KeyValueEditor
-
-// Plugin to extract fields when valid pills are created
-function PillFieldExtractionPlugin({
-  onFieldExtracted,
-}: {
-  onFieldExtracted?: (fields: Record<string, string | number | boolean>) => void
-}): null {
-  const [editor] = useLexicalComposerContext()
-
-  useEffect(() => {
-    if (!onFieldExtracted) return
-
-    // Listen for pill node mutations (creation)
-    const removeMutationListener = editor.registerMutationListener(PillNode, (mutatedNodes) => {
-      editor.getEditorState().read(() => {
-        const extractedFields: Record<string, string | number | boolean> = {}
-
-        for (const [nodeKey, mutation] of mutatedNodes) {
-          if (mutation === 'created') {
-            const node = $getNodeByKey(nodeKey)
-            if ($isPillNode(node) && node.getValidation() === 'valid') {
-              const fieldName = node.getFieldName()
-              const value = node.getValue()
-
-              if (fieldName && value) {
-                // Convert to number if it's a numeric field
-                if (NUMERIC_FIELDS.has(fieldName)) {
-                  const numValue = Number.parseInt(value, 10)
-                  if (!Number.isNaN(numValue)) {
-                    extractedFields[fieldName] = numValue
-                  }
-                }
-                // Convert boolean strings to actual booleans
-                else if (value === 'true' || value === 'false') {
-                  extractedFields[fieldName] = value === 'true'
-                }
-                // Keep as string for other fields (like zip)
-                else {
-                  extractedFields[fieldName] = value
-                }
-              }
-            }
-          }
-        }
-
-        // Extract fields and notify parent if any valid pills were created
-        if (Object.keys(extractedFields).length > 0) {
-          // Call outside of read() to avoid nested updates
-          setTimeout(() => {
-            onFieldExtracted(extractedFields)
-          }, 0)
-        }
-      })
-    })
-
-    return () => {
-      removeMutationListener()
-    }
-  }, [editor, onFieldExtracted])
-
-  return null
-}
-
-// Field injection plugin
-function FieldInjectionPlugin({
-  fieldCommand,
-  value,
-  onComplete,
-}: {
-  fieldCommand: FieldCommand | null
-  value: string | null
-  onComplete: () => void
-}): null {
-  const [editor] = useLexicalComposerContext()
-
-  useEffect(() => {
-    if (!fieldCommand || !value) return
-
-    // Get shortcut key from shortcuts config (ensures no drift)
-    const key = COMMAND_TO_KEY[fieldCommand]
-    const pill = `${key}:${value}`
-
-    editor.update(() => {
-      const textNode = new TextNode(`${pill} `)
-      $insertNodes([textNode])
-      textNode.selectNext()
-    })
-
-    onComplete()
-  }, [fieldCommand, value, editor, onComplete])
-
-  return null
 }
 
 export function NotesPanel({
@@ -256,28 +159,7 @@ export function NotesPanel({
       : 'Type policy details... (carrier:GEICO, premium:1200, /help for shortcuts)'
 
   // Fetch disclaimers from backend API when state or product changes
-  const [disclaimers, setDisclaimers] = useState<string[]>([])
-
-  useEffect(() => {
-    // Extract state and productType from profile (use string values to ensure dependency tracking works)
-    const state = profile?.state
-    const productType = profile?.productType
-
-    // Only fetch if we have at least state or product
-    if (state || productType) {
-      getDisclaimers(state ?? undefined, productType ?? undefined)
-        .then((fetchedDisclaimers) => {
-          setDisclaimers(fetchedDisclaimers)
-        })
-        .catch((error) => {
-          // Error already logged in getDisclaimers
-          setDisclaimers([])
-        })
-    } else {
-      // No state/product yet - clear disclaimers
-      setDisclaimers([])
-    }
-  }, [profile?.state, profile?.productType])
+  const disclaimers = useComplianceDisclaimers(profile)
 
   return (
     <>

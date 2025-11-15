@@ -5,20 +5,15 @@
  * them into PillNode instances with proper validation.
  *
  * Uses SINGLE transformation path (mutation listener) to follow DRY/STAR principles.
+ * Single Responsibility: Plugin registration and event handling only
  */
 
-import {
-  type FieldCommand,
-  MULTI_WORD_FIELDS,
-  NUMERIC_FIELDS,
-  SPECIAL_CHAR_FIELDS,
-} from '@/config/shortcuts'
+import { checkDelimiterForTransformation } from '@/hooks/useDelimiterDetection'
+import { transformTextToPills } from '@/hooks/usePillTransformation'
 import { parseKeyValueSyntax } from '@/lib/pill-parser'
 import { useLexicalComposerContext } from '@lexical/react/LexicalComposerContext'
-import { normalizeFieldName, unifiedFieldMetadata } from '@repo/shared'
 import {
   $getNodeByKey,
-  $getRoot,
   $getSelection,
   $isRangeSelection,
   $isTextNode,
@@ -26,12 +21,9 @@ import {
   KEY_ARROW_LEFT_COMMAND,
   KEY_ARROW_RIGHT_COMMAND,
   KEY_SPACE_COMMAND,
-  type LexicalNode,
   TextNode,
 } from 'lexical'
 import { useEffect, useRef } from 'react'
-import { $createPillNode } from '../nodes/PillNode'
-import { $isPillNode } from '../nodes/PillNode'
 
 export function KeyValuePlugin(): null {
   const [editor] = useLexicalComposerContext()
@@ -69,179 +61,12 @@ export function KeyValuePlugin(): null {
               previousEditingNodeRef.current = node
             }
 
-            // Transform immediately if:
-            // 1. Text ends with space, comma, or period (editing complete) - ALWAYS transform
-            // 2. User is not actively editing this node (moved cursor away)
-            // 3. Cursor is at a delimiter position (space/comma/period immediately before cursor)
-            // CRITICAL: Normalized fields only extract when delimiter is present
-            let shouldTransform = false
-            let shouldSuppressDelimiter = false
-
-            // Check if text ends with a delimiter (space, comma, period)
-            // Only extract normalized fields when delimiter is present (prevents early matching like "renter" without space)
-            const textEndsWithDelimiter = /[\s,\.]$/.test(text)
-            if (textEndsWithDelimiter && parsed.length > 0) {
-              const lastMatch = parsed[parsed.length - 1]
-              if (lastMatch) {
-                const matchEnd = text.lastIndexOf(lastMatch.original) + lastMatch.original.length
-                // Only transform if delimiter immediately follows match (prevents matching "renter" at end of string)
-                const charAtMatchEnd = text[matchEnd]
-                if (
-                  matchEnd < text.length &&
-                  charAtMatchEnd !== undefined &&
-                  /[\s,\.]/.test(charAtMatchEnd)
-                ) {
-                  shouldTransform = true
-                }
-              }
-            }
-
-            if (isEditing && !shouldTransform) {
-              // Check if cursor is at a delimiter position
-              const cursorOffset = $isRangeSelection(selection) ? selection.anchor.offset : 0
-              const charBeforeCursor = text[cursorOffset - 1]
-
-              // Parse to check what we're typing
-              const parsed = parseKeyValueSyntax(text)
-
-              // Determine if we should transform based on context
-              if (parsed.length > 0) {
-                const lastParsed = parsed[parsed.length - 1]
-                if (!lastParsed) {
-                  continue
-                }
-
-                const valueStart = text.lastIndexOf(lastParsed.original)
-                const valueEndsAt = valueStart + lastParsed.original.length
-                const isTypingValue = cursorOffset > valueStart && cursorOffset <= valueEndsAt
-
-                // Check field type to determine valid delimiters
-                const fieldName = lastParsed.fieldName
-                const isMultiWordField = fieldName
-                  ? MULTI_WORD_FIELDS.has(fieldName as FieldCommand)
-                  : false
-                const isEmailField = fieldName === 'email'
-                const isNumericField = fieldName ? NUMERIC_FIELDS.has(fieldName) : false
-                const isZipField = fieldName === 'zip'
-                const valueContainsAt = lastParsed.value.includes('@')
-                const valueContainsComma = lastParsed.value.includes(',')
-
-                // Get special characters allowed for this field (for non-multi-word fields like zip)
-                const allowedSpecialChars = fieldName
-                  ? SPECIAL_CHAR_FIELDS[fieldName as FieldCommand] || []
-                  : []
-                const valueHasSpecialChars = allowedSpecialChars.some((char) =>
-                  lastParsed.value.includes(char)
-                )
-
-                // Helper: Check if next chars look like a new key:value pattern
-                const checkNextKeyValuePattern = (): boolean => {
-                  const textAfterCursor = text.slice(cursorOffset)
-                  return /^\s+\w+:/.test(textAfterCursor)
-                }
-
-                // If typing within a value:
-                if (isTypingValue) {
-                  // Multi-word fields: spaces are part of value, stop at comma/period/next key:value pattern
-                  if (isMultiWordField) {
-                    shouldTransform =
-                      charBeforeCursor === ',' ||
-                      charBeforeCursor === '.' ||
-                      checkNextKeyValuePattern()
-                  }
-                  // Zip fields (not multi-word): dashes are part of value, only space/comma/period are delimiters
-                  else if (isZipField && valueHasSpecialChars) {
-                    shouldTransform =
-                      charBeforeCursor === ' ' ||
-                      charBeforeCursor === ',' ||
-                      charBeforeCursor === '.'
-                  }
-                  // Email fields: periods are part of value, only space is delimiter
-                  else if (isEmailField || valueContainsAt) {
-                    shouldTransform = charBeforeCursor === ' '
-                  }
-                  // Numeric fields: commas are part of value (for thousands), only space is delimiter
-                  else if (isNumericField && valueContainsComma) {
-                    shouldTransform = charBeforeCursor === ' '
-                  }
-                  // Other fields: space, comma, or period can be delimiters
-                  else {
-                    shouldTransform =
-                      charBeforeCursor === ' ' ||
-                      charBeforeCursor === ',' ||
-                      charBeforeCursor === '.'
-                  }
-                }
-                // If cursor is after the value (at delimiter position):
-                else if (cursorOffset > valueEndsAt) {
-                  // Multi-word fields: spaces are part of value, stop at comma/period/next key:value pattern
-                  if (isMultiWordField) {
-                    shouldTransform =
-                      charBeforeCursor === ',' ||
-                      charBeforeCursor === '.' ||
-                      checkNextKeyValuePattern()
-                  }
-                  // Zip fields (not multi-word): dashes are part of value
-                  else if (isZipField && valueHasSpecialChars) {
-                    shouldTransform =
-                      charBeforeCursor === ' ' ||
-                      charBeforeCursor === ',' ||
-                      charBeforeCursor === '.'
-                  }
-                  // Email fields: only space is delimiter
-                  else if (isEmailField || valueContainsAt) {
-                    shouldTransform = charBeforeCursor === ' '
-                  }
-                  // Numeric fields with comma: only space is delimiter
-                  else if (isNumericField && valueContainsComma) {
-                    shouldTransform = charBeforeCursor === ' '
-                  }
-                  // Other fields: space, comma, or period are delimiters
-                  else {
-                    shouldTransform =
-                      charBeforeCursor === ' ' ||
-                      charBeforeCursor === ',' ||
-                      charBeforeCursor === '.'
-                  }
-                }
-                // Cursor before value - don't transform
-                else {
-                  shouldTransform = false
-                }
-              } else {
-                // No parsed values yet - use standard delimiters
-                const isAtDelimiter =
-                  charBeforeCursor === ' ' || charBeforeCursor === ',' || charBeforeCursor === '.'
-                const endsWithDelimiter =
-                  text.endsWith(' ') || text.endsWith(',') || text.endsWith('.')
-                shouldTransform = isAtDelimiter || endsWithDelimiter
-              }
-
-              // If cursor is right after a delimiter and that delimiter would cause transformation,
-              // we should suppress it ONLY if it creates a duplicate delimiter
-              if (shouldTransform && cursorOffset === text.length && charBeforeCursor === ' ') {
-                // Cursor is at the end and the last character is a space delimiter
-                // Check if removing this delimiter would still leave a valid key-value pattern
-                const textWithoutDelimiter = text.slice(0, -1)
-                const parsedWithoutDelimiter = parseKeyValueSyntax(textWithoutDelimiter)
-                if (parsedWithoutDelimiter.length > 0) {
-                  // Only suppress if we have duplicate spaces
-                  // (e.g., "hi k:10  " -> removing last space leaves "hi k:10 " which is fine)
-                  // But if we have "hi k:10 " and press space, we get "hi k:10  " - suppress the second space
-                  const charBeforeDelimiter = text.length > 1 ? text[text.length - 2] : null
-                  if (charBeforeDelimiter === ' ') {
-                    // We have duplicate spaces - suppress the last one
-                    shouldSuppressDelimiter = true
-                  } else {
-                    // Single space at end - keep it, don't suppress
-                    shouldSuppressDelimiter = false
-                  }
-                }
-              }
-            } else {
-              // Not editing - always transform if there are matches
-              shouldTransform = true
-            }
+            // Use delimiter detection utility
+            const { shouldTransform, shouldSuppressDelimiter } = checkDelimiterForTransformation(
+              text,
+              node,
+              isEditing
+            )
 
             if (!shouldTransform) {
               // Still typing - wait for delimiter or cursor movement
@@ -268,9 +93,6 @@ export function KeyValuePlugin(): null {
               // Reparse with the updated text
               parsed = parseKeyValueSyntax(textToTransform)
             }
-
-            // Capture parent reference before transformation (while node is still attached)
-            const parentBeforeTransform = node.getParent()
 
             // Transform text into pills
             transformTextToPills(node, parsed)
@@ -410,196 +232,4 @@ export function KeyValuePlugin(): null {
   }, [editor])
 
   return null
-}
-
-/**
- * Helper function to transform text node into pills (STAR: Single source of truth for transformation logic)
- */
-function transformTextToPills(
-  textNode: TextNode,
-  parsed: ReturnType<typeof parseKeyValueSyntax>
-): void {
-  const text = textNode.getTextContent()
-  const parent = textNode.getParent()
-  if (!parent) {
-    return
-  }
-
-  // Get current selection to preserve cursor position
-  const selection = $getSelection()
-  let cursorOffset = 0
-  let isInThisNode = false
-
-  if ($isRangeSelection(selection) && selection.isCollapsed()) {
-    const anchorNode = selection.anchor.getNode()
-    if (anchorNode === textNode) {
-      isInThisNode = true
-      cursorOffset = selection.anchor.offset
-    }
-  }
-
-  // Sort matches by index to process in order
-  const sortedMatches = parsed
-    .map((match) => ({
-      ...match,
-      index: text.indexOf(match.original),
-    }))
-    .filter((m) => m.index !== -1)
-    .sort((a, b) => a.index - b.index)
-
-  if (sortedMatches.length === 0) return
-
-  // Get all existing pills in the editor to check for duplicates (for single-instance fields)
-  const root = $getRoot()
-  const existingPills = new Map<string, ReturnType<typeof $createPillNode>>()
-
-  // Traverse the editor tree to find all PillNodes
-  const traverseNodes = (node: LexicalNode) => {
-    if ($isPillNode(node)) {
-      const fieldName = node.getFieldName()
-      if (fieldName) {
-        // Normalize field name for comparison
-        const normalizedFieldName = normalizeFieldName(fieldName)
-        const metadata = unifiedFieldMetadata[normalizedFieldName]
-        // Only track single-instance fields for deduplication
-        if (metadata?.singleInstance) {
-          existingPills.set(normalizedFieldName, node)
-        }
-      }
-    }
-
-    // Traverse children if this is an ElementNode
-    if ('getChildren' in node && typeof node.getChildren === 'function') {
-      const children = node.getChildren()
-      for (const child of children) {
-        traverseNodes(child)
-      }
-    }
-  }
-
-  // Start traversal from root
-  const rootChildren = root.getChildren()
-  for (const child of rootChildren) {
-    traverseNodes(child)
-  }
-
-  let currentOffset = 0
-  const nodesToInsert: Array<TextNode | ReturnType<typeof $createPillNode>> = []
-  let targetNode: TextNode | ReturnType<typeof $createPillNode> | null = null
-  let targetOffset = 0
-
-  for (const match of sortedMatches) {
-    // Add text before the match
-    if (match.index > currentOffset) {
-      const beforeText = text.substring(currentOffset, match.index)
-      const beforeNode = new TextNode(beforeText)
-      nodesToInsert.push(beforeNode)
-
-      // Track cursor position
-      if (isInThisNode && cursorOffset >= currentOffset && cursorOffset <= match.index) {
-        targetNode = beforeNode
-        targetOffset = cursorOffset - currentOffset
-      }
-    }
-
-    // Normalize field name to ensure consistency (even though it should already be normalized from parsing)
-    const normalizedFieldName = match.fieldName ? normalizeFieldName(match.fieldName) : null
-    const metadata = normalizedFieldName ? unifiedFieldMetadata[normalizedFieldName] : null
-    const existingPill =
-      normalizedFieldName && metadata?.singleInstance
-        ? existingPills.get(normalizedFieldName)
-        : null
-
-    let pillNode: ReturnType<typeof $createPillNode>
-    if (existingPill) {
-      // Update existing pill instead of creating a new one
-      // Remove the existing pill from the editor (it will be replaced)
-      existingPill.remove()
-      // Create updated pill node with normalized field name
-      pillNode = $createPillNode({
-        key: normalizedFieldName || match.key, // Use normalized field name as key
-        value: match.value,
-        validation: match.validation,
-        fieldName: normalizedFieldName || match.fieldName, // Use normalized field name
-      })
-      nodesToInsert.push(pillNode)
-    } else {
-      // No existing pill, create new one with normalized field name
-      pillNode = $createPillNode({
-        key: normalizedFieldName || match.key, // Use normalized field name as key
-        value: match.value,
-        validation: match.validation,
-        fieldName: normalizedFieldName || match.fieldName, // Use normalized field name
-      })
-      nodesToInsert.push(pillNode)
-    }
-
-    // Track cursor position - if cursor is in or at the end of the pill text, move it to after the pill
-    // CRITICAL: Must use <= (not <) to catch cursor at exact end boundary
-    // This prevents cursor from being swallowed by the pill
-    // See: apps/web/src/components/notes/plugins/__tests__/KeyValuePlugin.cursor.test.ts
-    if (
-      isInThisNode &&
-      cursorOffset >= match.index &&
-      cursorOffset <= match.index + match.original.length
-    ) {
-      targetNode = pillNode
-      targetOffset = 0 // Will be set to after pill
-    }
-
-    currentOffset = match.index + match.original.length
-  }
-
-  // Add remaining text after last match
-  if (currentOffset < text.length) {
-    const afterText = text.substring(currentOffset)
-    const afterNode = new TextNode(afterText)
-    nodesToInsert.push(afterNode)
-
-    // Track cursor position
-    if (isInThisNode && cursorOffset >= currentOffset) {
-      targetNode = afterNode
-      targetOffset = cursorOffset - currentOffset
-    }
-  }
-
-  // Replace the text node with the new nodes
-  for (const node of nodesToInsert) {
-    textNode.insertBefore(node)
-  }
-  textNode.remove()
-
-  // Restore cursor position
-  if (targetNode) {
-    if ($isTextNode(targetNode)) {
-      const maxOffset = Math.min(targetOffset, targetNode.getTextContent().length)
-      targetNode.select(maxOffset, maxOffset)
-    } else {
-      // Cursor was in or at end of pill - position after it
-      const nextSibling = targetNode.getNextSibling()
-      if (nextSibling && $isTextNode(nextSibling)) {
-        // Position cursor at start of next text node (after the pill)
-        nextSibling.select(0, 0)
-      } else {
-        // Create empty text node after pill for cursor
-        const emptyTextNode = new TextNode('')
-        targetNode.insertAfter(emptyTextNode)
-        emptyTextNode.select(0, 0)
-      }
-    }
-  } else if (isInThisNode) {
-    // Cursor position wasn't tracked - try to position at end of last node
-    const lastNode = nodesToInsert[nodesToInsert.length - 1]
-    if (lastNode) {
-      if ($isTextNode(lastNode)) {
-        const textLength = lastNode.getTextContent().length
-        lastNode.select(textLength, textLength)
-      } else {
-        // Last node is a pill - create empty text node after it
-        const emptyTextNode = new TextNode('')
-        lastNode.insertAfter(emptyTextNode)
-        emptyTextNode.select(0, 0)
-      }
-    }
-  }
 }
