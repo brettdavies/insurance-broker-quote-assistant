@@ -1,6 +1,8 @@
 import type { TextPatternInference } from '../config/text-pattern-inferences'
 import type { InferenceRule } from '../schemas/unified-field-metadata'
 import type { UserProfile } from '../schemas/user-profile'
+import { confidenceToNumber } from './inference-engine/confidence-converter'
+import { replaceCaptureGroups } from './inference-engine/capture-group-replacer'
 
 /**
  * Inference Result
@@ -130,7 +132,7 @@ export class InferenceEngine {
           // biome-ignore lint/suspicious/noExplicitAny: UserProfile has dynamic field types
           ;(inferred as any)[rule.targetField] = inferredValue
           reasons[rule.targetField] = rule.reasoning
-          confidence[rule.targetField] = this.confidenceToNumber(rule.confidence)
+          confidence[rule.targetField] = confidenceToNumber(rule.confidence)
         }
       }
     }
@@ -149,85 +151,16 @@ export class InferenceEngine {
         if (this.suppressedFields.includes(inference.field)) continue
 
         // Handle capture group references (e.g., "$1" means capture group 1)
-        const value = this.replaceCaptureGroups(inference.value, match)
+        const value = replaceCaptureGroups(inference.value, match)
 
         // biome-ignore lint/suspicious/noExplicitAny: UserProfile has dynamic field types
         ;(inferred as any)[inference.field] = value
         reasons[inference.field] = inference.reasoning
-        confidence[inference.field] = this.confidenceToNumber(inference.confidence)
+        confidence[inference.field] = confidenceToNumber(inference.confidence)
       }
     }
 
     return { inferred, reasons, confidence }
   }
 
-  /**
-   * Convert confidence level to numeric score
-   *
-   * Maps confidence levels to numeric scores for API response.
-   * Scores are aligned with LLM upgrade threshold (≥85% allows LLM to upgrade inferred → known).
-   *
-   * @param level - Confidence level from inference rule
-   * @returns Numeric confidence score (0-1 scale)
-   *
-   * **Mapping:**
-   * - 'high' → 0.85 (≥85% threshold allows LLM to upgrade to known field)
-   * - 'medium' → 0.70
-   * - 'low' → 0.50
-   */
-  private confidenceToNumber(level: 'high' | 'medium' | 'low'): number {
-    switch (level) {
-      case 'high':
-        return 0.85
-      case 'medium':
-        return 0.7
-      case 'low':
-        return 0.5
-    }
-  }
-
-  /**
-   * Replace capture group references in inference value
-   *
-   * Handles capture group references like "$1", "$2", etc. from regex match.
-   * If value is not a string or doesn't start with "$", returns as-is.
-   * If capture group index is invalid, returns undefined.
-   *
-   * @param value - Inference value (may contain capture group reference)
-   * @param match - Regex match array with capture groups
-   * @returns Processed value with capture groups replaced
-   *
-   * @example
-   * ```typescript
-   * const match = 'family of 4'.match(/family of (\d+)/)
-   * replaceCaptureGroups('$1', match) // Returns '4'
-   * replaceCaptureGroups(true, match) // Returns true (no replacement)
-   * ```
-   */
-  // biome-ignore lint/suspicious/noExplicitAny: Value can be any type (string, number, boolean) or capture group reference
-  private replaceCaptureGroups(value: any, match: RegExpMatchArray): any {
-    // Only process string values starting with "$"
-    if (typeof value !== 'string' || !value.startsWith('$')) {
-      return value
-    }
-
-    // Extract capture group index (e.g., "$1" → 1)
-    const captureGroupIndex = Number.parseInt(value.substring(1), 10)
-
-    // Validate capture group index
-    if (Number.isNaN(captureGroupIndex) || captureGroupIndex >= match.length) {
-      // Invalid capture group - return undefined (no inference)
-      return undefined
-    }
-
-    // Return capture group value
-    const capturedValue = match[captureGroupIndex]
-
-    // Convert numeric strings to numbers
-    if (capturedValue && /^\d+$/.test(capturedValue)) {
-      return Number.parseInt(capturedValue, 10)
-    }
-
-    return capturedValue
-  }
 }
