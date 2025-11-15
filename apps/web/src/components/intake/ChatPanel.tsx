@@ -3,6 +3,7 @@ import { HelpModal } from '@/components/shortcuts/HelpModal'
 import { Textarea } from '@/components/ui/textarea'
 import { COMMAND_TO_KEY } from '@/config/shortcuts'
 import { type ActionCommand, type FieldCommand, useSlashCommands } from '@/hooks/useSlashCommands'
+import { logDebug, logInfo } from '@/lib/logger'
 import { useState } from 'react'
 
 export function ChatPanel() {
@@ -21,7 +22,7 @@ export function ChatPanel() {
       setHelpModalOpen(true)
     } else {
       // Other actions stubbed for future stories
-      console.log('Action command:', command)
+      void logDebug('Action command', { command })
     }
   }
 
@@ -33,7 +34,7 @@ export function ChatPanel() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     // Stubbed for this story - will integrate with API in Story 1.4
-    console.log('Message submitted:', message)
+    void logInfo('Message submitted', { message })
     setMessage('')
   }
 

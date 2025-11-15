@@ -33,15 +33,8 @@ export function ThemeToggle() {
   }
 
   return (
-    <Button
-      variant="ghost"
-      size="icon"
-      onClick={toggleTheme}
-      className="fixed right-4 top-4 z-50"
-      aria-label="Toggle theme"
-    >
-      {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-      <span className="sr-only">Toggle theme</span>
+    <Button variant="ghost" size="sm" onClick={toggleTheme} aria-label="Toggle theme">
+      {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
     </Button>
   )
 }

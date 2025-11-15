@@ -176,13 +176,14 @@ export function InferredFieldsSection({
 }: InferredFieldsSectionProps) {
   const [isExpanded, setIsExpanded] = useState(true)
 
+  // Group fields by category (memoized to avoid re-computing on every render)
+  // MUST be called before early return to satisfy Rules of Hooks
+  const groupedFields = useMemo(() => groupFieldsByCategory(inferredFields), [inferredFields])
+
   // Hide section if no inferred fields
   if (Object.keys(inferredFields).length === 0) {
     return null
   }
-
-  // Group fields by category (memoized to avoid re-computing on every render)
-  const groupedFields = useMemo(() => groupFieldsByCategory(inferredFields), [inferredFields])
 
   // Category order (same as Captured Fields sidebar)
   const categoryOrder = [

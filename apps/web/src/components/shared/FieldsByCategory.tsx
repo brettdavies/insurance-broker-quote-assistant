@@ -61,7 +61,7 @@ export function FieldsByCategory({
               {categoryLabels[category]} ({fields.length})
             </AccordionTrigger>
             <AccordionContent>
-              <div className="space-y-2">
+              <div className={`grid gap-1.5 ${fields.length > 6 ? 'grid-cols-2' : 'grid-cols-1'}`}>
                 {fields.map((field) => (
                   <FieldItem
                     key={field.fieldKey}

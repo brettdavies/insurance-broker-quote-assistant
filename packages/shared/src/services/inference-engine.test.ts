@@ -132,6 +132,138 @@ describe('InferenceEngine', () => {
       expect(result.inferred.ownsHome).toBeUndefined()
       expect(result.reasons.ownsHome).toBeUndefined()
     })
+
+    test('kids=2 infers householdSize=3 (kids + 1)', () => {
+      // Arrange
+      const fieldInferences: Record<string, InferenceRule[]> = {}
+      for (const [fieldName, metadata] of Object.entries(unifiedFieldMetadata)) {
+        if (metadata.infers) {
+          fieldInferences[fieldName] = metadata.infers
+        }
+      }
+
+      const engine = new InferenceEngine(fieldInferences, [], [])
+
+      const knownFields: Partial<UserProfile> = {
+        kids: 2,
+      }
+
+      // Act
+      const result = engine.applyInferences(knownFields, '')
+
+      // Assert
+      expect(result.inferred.householdSize).toBe(3) // kids + 1
+      expect(result.reasons.householdSize).toBe(
+        'Number of kids plus one adult indicates household size'
+      )
+      expect(result.confidence.householdSize).toBe(0.7) // Medium confidence
+    })
+
+    test('drivers=2 infers householdSize=2', () => {
+      // Arrange
+      const fieldInferences: Record<string, InferenceRule[]> = {}
+      for (const [fieldName, metadata] of Object.entries(unifiedFieldMetadata)) {
+        if (metadata.infers) {
+          fieldInferences[fieldName] = metadata.infers
+        }
+      }
+
+      const engine = new InferenceEngine(fieldInferences, [], [])
+
+      const knownFields: Partial<UserProfile> = {
+        drivers: 2,
+      }
+
+      // Act
+      const result = engine.applyInferences(knownFields, '')
+
+      // Assert
+      expect(result.inferred.householdSize).toBe(2) // drivers = householdSize
+      expect(result.reasons.householdSize).toBe('Number of drivers typically equals household size')
+      expect(result.confidence.householdSize).toBe(0.7) // Medium confidence
+    })
+
+    test('householdSize already known - does not infer from kids', () => {
+      // Arrange
+      const fieldInferences: Record<string, InferenceRule[]> = {}
+      for (const [fieldName, metadata] of Object.entries(unifiedFieldMetadata)) {
+        if (metadata.infers) {
+          fieldInferences[fieldName] = metadata.infers
+        }
+      }
+
+      const engine = new InferenceEngine(fieldInferences, [], [])
+
+      const knownFields: Partial<UserProfile> = {
+        kids: 2,
+        householdSize: 5, // Already known
+      }
+
+      // Act
+      const result = engine.applyInferences(knownFields, '')
+
+      // Assert
+      // Should NOT infer householdSize because it's already known
+      expect(result.inferred.householdSize).toBeUndefined()
+      expect(result.reasons.householdSize).toBeUndefined()
+    })
+
+    test('householdSize already inferred in same call - does not update (first inference wins)', () => {
+      // Arrange
+      const fieldInferences: Record<string, InferenceRule[]> = {}
+      for (const [fieldName, metadata] of Object.entries(unifiedFieldMetadata)) {
+        if (metadata.infers) {
+          fieldInferences[fieldName] = metadata.infers
+        }
+      }
+
+      const engine = new InferenceEngine(fieldInferences, [], [])
+
+      // Simulate both kids and drivers in same call - first one processed wins
+      // Note: Object.entries order is not guaranteed, but one will be processed first
+      const knownFields: Partial<UserProfile> = {
+        kids: 2,
+        drivers: 2,
+      }
+
+      // Act
+      const result = engine.applyInferences(knownFields, '')
+
+      // Assert
+      // Should infer householdSize from first field processed (either kids or drivers)
+      // The check for already-inferred prevents the second field from overwriting
+      expect(result.inferred.householdSize).toBeDefined()
+      // It will be either 3 (from kids) or 2 (from drivers), depending on processing order
+      expect([2, 3]).toContain(result.inferred.householdSize ?? 0)
+
+      // Verify that only one inference was created (not both)
+      // This is tested by checking the value is one of the expected values, not both
+    })
+
+    test('householdSize suppressed - does not infer from kids', () => {
+      // Arrange
+      const fieldInferences: Record<string, InferenceRule[]> = {}
+      for (const [fieldName, metadata] of Object.entries(unifiedFieldMetadata)) {
+        if (metadata.infers) {
+          fieldInferences[fieldName] = metadata.infers
+        }
+      }
+
+      const suppressedFields = ['householdSize']
+      const engine = new InferenceEngine(fieldInferences, [], suppressedFields)
+
+      const knownFields: Partial<UserProfile> = {
+        kids: 2,
+      }
+
+      // Act
+      const result = engine.applyInferences(knownFields, '')
+
+      // Assert
+      // Should NOT infer householdSize because it's suppressed
+      expect(result.inferred.householdSize).toBeUndefined()
+      expect(result.reasons.householdSize).toBeUndefined()
+    })
   })
 
   describe('Text pattern inferences', () => {
@@ -626,6 +758,116 @@ describe('InferenceEngine', () => {
       expect(result.inferred.ownsHome).toBe(false)
 
       // Should NOT infer householdSize (suppressed)
+      expect(result.inferred.householdSize).toBeUndefined()
+      expect(result.reasons.householdSize).toBeUndefined()
+    })
+
+    test('Integration: "I have 2 kids. She has three kids." - deduplication and inference', () => {
+      // Arrange
+      const fieldInferences: Record<string, InferenceRule[]> = {}
+      for (const [fieldName, metadata] of Object.entries(unifiedFieldMetadata)) {
+        if (metadata.infers) {
+          fieldInferences[fieldName] = metadata.infers
+        }
+      }
+
+      const engine = new InferenceEngine(fieldInferences, [], [])
+
+      // Simulate the final state after deduplication: kids=3 (from "three kids")
+      // Note: In real scenario, deduplication happens in pill-parser.ts before InferenceEngine is called
+      // The first inference (kids:2 → householdSize:3) would have happened in a previous InferenceEngine call
+      // This test verifies that when InferenceEngine is called with kids:3, it infers householdSize:4
+      // The "first inference wins" behavior is handled by the caller (UnifiedChatInterface) which
+      // tracks previous inferences and doesn't update them if they already exist
+      const knownFields: Partial<UserProfile> = {
+        kids: 3, // After deduplication from "2 kids" and "three kids"
+      }
+
+      // Act
+      const result = engine.applyInferences(knownFields, '')
+
+      // Assert
+      // InferenceEngine will infer householdSize:4 from kids:3
+      // The caller (UnifiedChatInterface) is responsible for preserving the first inference (householdSize:3)
+      // if it was already inferred in a previous call
+      expect(result.inferred.householdSize).toBe(4) // kids + 1
+      expect(result.reasons.householdSize).toBe(
+        'Number of kids plus one adult indicates household size'
+      )
+    })
+
+    test('Integration: "2 drivers" infers householdSize=2', () => {
+      // Arrange
+      const fieldInferences: Record<string, InferenceRule[]> = {}
+      for (const [fieldName, metadata] of Object.entries(unifiedFieldMetadata)) {
+        if (metadata.infers) {
+          fieldInferences[fieldName] = metadata.infers
+        }
+      }
+
+      const engine = new InferenceEngine(fieldInferences, [], [])
+
+      const knownFields: Partial<UserProfile> = {
+        drivers: 2,
+      }
+
+      // Act
+      const result = engine.applyInferences(knownFields, '')
+
+      // Assert
+      expect(result.inferred.householdSize).toBe(2)
+      expect(result.reasons.householdSize).toBe('Number of drivers typically equals household size')
+    })
+
+    test('Integration: "2 kids" and "2 drivers" together - first match wins', () => {
+      // Arrange
+      const fieldInferences: Record<string, InferenceRule[]> = {}
+      for (const [fieldName, metadata] of Object.entries(unifiedFieldMetadata)) {
+        if (metadata.infers) {
+          fieldInferences[fieldName] = metadata.infers
+        }
+      }
+
+      const engine = new InferenceEngine(fieldInferences, [], [])
+
+      // Both kids and drivers are present - first one processed wins
+      const knownFields: Partial<UserProfile> = {
+        kids: 2,
+        drivers: 2,
+      }
+
+      // Act
+      const result = engine.applyInferences(knownFields, '')
+
+      // Assert
+      // First field processed (order is not guaranteed, but one will win)
+      // The first inference wins, so householdSize should be inferred from whichever field is processed first
+      expect(result.inferred.householdSize).toBeDefined()
+      // It will be either 3 (from kids) or 2 (from drivers), depending on processing order
+      expect([2, 3]).toContain(result.inferred.householdSize ?? 0)
+    })
+
+    test('Integration: householdSize explicitly set - no inference', () => {
+      // Arrange
+      const fieldInferences: Record<string, InferenceRule[]> = {}
+      for (const [fieldName, metadata] of Object.entries(unifiedFieldMetadata)) {
+        if (metadata.infers) {
+          fieldInferences[fieldName] = metadata.infers
+        }
+      }
+
+      const engine = new InferenceEngine(fieldInferences, [], [])
+
+      const knownFields: Partial<UserProfile> = {
+        kids: 2,
+        householdSize: 5, // Explicitly set
+      }
+
+      // Act
+      const result = engine.applyInferences(knownFields, '')
+
+      // Assert
+      // Should NOT infer householdSize because it's explicitly set
       expect(result.inferred.householdSize).toBeUndefined()
       expect(result.reasons.householdSize).toBeUndefined()
     })

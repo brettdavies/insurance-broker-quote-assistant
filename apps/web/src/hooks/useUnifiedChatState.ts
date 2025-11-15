@@ -11,7 +11,6 @@ import { useCallback, useReducer, useRef } from 'react'
 interface UnifiedChatState {
   profile: UserProfile
   missingFields: MissingFieldInfo[]
-  disclaimers: string[]
   latestIntakeResult: IntakeResult | null
   policySummary: PolicySummary | undefined
   policyAnalysisResult: PolicyAnalysisResult | undefined
@@ -26,7 +25,6 @@ type UnifiedChatAction =
   | { type: 'UPDATE_PROFILE'; payload: Partial<UserProfile> }
   | { type: 'REMOVE_FIELD'; payload: string }
   | { type: 'SET_MISSING_FIELDS'; payload: MissingFieldInfo[] }
-  | { type: 'SET_DISCLAIMERS'; payload: string[] }
   | { type: 'SET_LATEST_INTAKE_RESULT'; payload: IntakeResult | null }
   | { type: 'SET_POLICY_SUMMARY'; payload: PolicySummary | undefined }
   | { type: 'SET_POLICY_ANALYSIS_RESULT'; payload: PolicyAnalysisResult | undefined }
@@ -42,7 +40,6 @@ type UnifiedChatAction =
 const initialState: UnifiedChatState = {
   profile: {},
   missingFields: [],
-  disclaimers: [],
   latestIntakeResult: null,
   policySummary: undefined,
   policyAnalysisResult: undefined,
@@ -65,8 +62,6 @@ function unifiedChatReducer(state: UnifiedChatState, action: UnifiedChatAction):
     }
     case 'SET_MISSING_FIELDS':
       return { ...state, missingFields: action.payload }
-    case 'SET_DISCLAIMERS':
-      return { ...state, disclaimers: action.payload }
     case 'SET_LATEST_INTAKE_RESULT':
       return { ...state, latestIntakeResult: action.payload }
     case 'SET_POLICY_SUMMARY':
@@ -117,10 +112,6 @@ export function useUnifiedChatState() {
     dispatch({ type: 'SET_MISSING_FIELDS', payload: fields })
   }, [])
 
-  const setDisclaimers = useCallback((disclaimers: string[]) => {
-    dispatch({ type: 'SET_DISCLAIMERS', payload: disclaimers })
-  }, [])
-
   const setLatestIntakeResult = useCallback((result: IntakeResult | null) => {
     dispatch({ type: 'SET_LATEST_INTAKE_RESULT', payload: result })
   }, [])
@@ -163,7 +154,6 @@ export function useUnifiedChatState() {
     updateProfile,
     removeField,
     setMissingFields,
-    setDisclaimers,
     setLatestIntakeResult,
     setPolicySummary,
     setPolicyAnalysisResult,

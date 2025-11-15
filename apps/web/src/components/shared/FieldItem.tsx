@@ -5,11 +5,10 @@
  * Used by both CapturedFields (UserProfile) and PolicyFields (PolicySummary).
  *
  * Supports known vs inferred field styling:
- * - Known fields: normal color (#f5f5f5), 2 buttons (ℹ️ + [Click])
- * - Inferred fields: muted color (#a3a3a3), 3 buttons (ℹ️ + [✕] + [Click])
+ * - Known fields: normal color (#f5f5f5), info icon (ℹ️), entire row clickable
+ * - Inferred fields: muted color (#a3a3a3), info icon (ℹ️) + dismiss button (✕), entire row clickable
  */
 
-import { Button } from '@/components/ui/button'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 import { Info, X } from 'lucide-react'
 
@@ -46,7 +45,11 @@ export function FieldItem({ field, onClick, onDismiss }: FieldItemProps) {
     : `${field.name} - Click to edit`
 
   return (
-    <div className="flex w-full items-center justify-between rounded-md p-2 transition-all duration-200 ease-out hover:bg-gray-100 dark:hover:bg-gray-700">
+    <button
+      type="button"
+      className="flex w-full cursor-pointer items-center justify-between rounded-md p-1.5 text-left transition-all duration-200 ease-out hover:bg-gray-100 dark:hover:bg-gray-700"
+      onClick={() => onClick(field.fieldKey, field.value)}
+    >
       <div className="flex items-center gap-2">
         <span className={`text-field-name font-normal ${textColor}`}>{field.name}:</span>
         <span className={`text-field-value font-normal ${valueColor}`}>{String(field.value)}</span>
@@ -64,6 +67,7 @@ export function FieldItem({ field, onClick, onDismiss }: FieldItemProps) {
                 type="button"
                 className="opacity-60 transition-opacity hover:opacity-100"
                 aria-label={tooltipContent}
+                onClick={(e) => e.stopPropagation()}
               >
                 <Info className="h-4 w-4 text-gray-400 dark:text-gray-500" />
               </button>
@@ -82,7 +86,10 @@ export function FieldItem({ field, onClick, onDismiss }: FieldItemProps) {
                 <button
                   type="button"
                   className="opacity-60 transition-colors hover:text-[#ef4444] hover:opacity-100"
-                  onClick={() => onDismiss(field.fieldKey)}
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    onDismiss(field.fieldKey)
+                  }}
                   aria-label="Dismiss inference"
                 >
                   <X className="h-3.5 w-3.5" />
@@ -94,17 +101,7 @@ export function FieldItem({ field, onClick, onDismiss }: FieldItemProps) {
             </Tooltip>
           )}
         </TooltipProvider>
-
-        {/* Click/Edit button */}
-        <Button
-          variant="outline"
-          size="sm"
-          className="h-6 px-2 text-xs"
-          onClick={() => onClick(field.fieldKey, field.value)}
-        >
-          Click
-        </Button>
       </div>
-    </div>
+    </button>
   )
 }

@@ -10,10 +10,12 @@
  * - Atomic pill deletion
  */
 
+import { CompliancePanel } from '@/components/layout/CompliancePanel'
 import { KeyValueEditor } from '@/components/shared/KeyValueEditor'
 import { FieldModal } from '@/components/shortcuts/FieldModal'
 import { COMMAND_TO_KEY, NUMERIC_FIELDS } from '@/config/shortcuts'
 import { type ActionCommand, type FieldCommand, useSlashCommands } from '@/hooks/useSlashCommands'
+import { getDisclaimers } from '@/lib/compliance-utils'
 import { useLexicalComposerContext } from '@lexical/react/LexicalComposerContext'
 import { type UserProfile, unifiedFieldMetadata } from '@repo/shared'
 import { $getNodeByKey, $insertNodes, TextNode } from 'lexical'
@@ -44,6 +46,8 @@ interface NotesPanelProps {
   onDismissInference?: (fieldName: string) => void
   onEditInference?: (fieldName: string, value: unknown) => void
   onConvertToKnown?: (fieldName: string, value: unknown) => void
+  // Profile for compliance disclaimers
+  profile?: UserProfile
 }
 
 // NotesPanel-specific plugins that extend KeyValueEditor
@@ -156,6 +160,7 @@ export function NotesPanel({
   onDismissInference = () => {},
   onEditInference = () => {},
   onConvertToKnown = () => {},
+  profile = {},
 }: NotesPanelProps) {
   const [fieldModalOpen, setFieldModalOpen] = useState(false)
   const [currentField, setCurrentField] = useState<FieldCommand | null>(null)
@@ -250,6 +255,30 @@ export function NotesPanel({
       ? 'Type notes... (k:2 for kids, v:3 for vehicles, /k for modal, /help for shortcuts)'
       : 'Type policy details... (carrier:GEICO, premium:1200, /help for shortcuts)'
 
+  // Fetch disclaimers from backend API when state or product changes
+  const [disclaimers, setDisclaimers] = useState<string[]>([])
+
+  useEffect(() => {
+    // Extract state and productType from profile (use string values to ensure dependency tracking works)
+    const state = profile?.state
+    const productType = profile?.productType
+
+    // Only fetch if we have at least state or product
+    if (state || productType) {
+      getDisclaimers(state ?? undefined, productType ?? undefined)
+        .then((fetchedDisclaimers) => {
+          setDisclaimers(fetchedDisclaimers)
+        })
+        .catch((error) => {
+          // Error already logged in getDisclaimers
+          setDisclaimers([])
+        })
+    } else {
+      // No state/product yet - clear disclaimers
+      setDisclaimers([])
+    }
+  }, [profile?.state, profile?.productType])
+
   return (
     <>
       <div className="flex h-full flex-col bg-gray-50 dark:bg-gray-900">
@@ -290,6 +319,11 @@ export function NotesPanel({
             onEdit={handleEditInferenceLocal}
             onConvertToKnown={onConvertToKnown}
           />
+
+          {/* Compliance Panel (directly below Inferred Fields Section) */}
+          <div className="mt-4">
+            <CompliancePanel mode={mode} disclaimers={disclaimers} />
+          </div>
         </div>
       </div>
 

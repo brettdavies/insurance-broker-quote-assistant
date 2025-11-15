@@ -40,33 +40,6 @@ export function extractOwnsHome(text: string): NormalizedField | null {
       }
     }
   }
-
-  // Negative indicators - handle end of string
-  const rentsPatterns = [
-    /\b(rents|renting|renter|rental|apartment|apt|leases|leasing)(?:\s|$|\.|,)/i,
-    /\b(rents|renting|renter|rental|apartment|apt|leases|leasing)$/i, // End of string
-  ]
-
-  for (const pattern of rentsPatterns) {
-    const rentsMatch = text.match(pattern)
-    if (rentsMatch) {
-      const startIndex = rentsMatch.index ?? 0
-      const phraseMatch = rentsMatch[0].match(
-        /\b(rents|renting|renter|rental|apartment|apt|leases|leasing)\b/i
-      )
-      if (phraseMatch?.[1] && phraseMatch.index !== undefined) {
-        const phraseStartIndex = startIndex + phraseMatch.index
-        return {
-          fieldName: 'ownsHome',
-          value: false,
-          originalText: phraseMatch[1],
-          startIndex: phraseStartIndex,
-          endIndex: phraseStartIndex + phraseMatch[1].length,
-        }
-      }
-    }
-  }
-
   return null
 }
 

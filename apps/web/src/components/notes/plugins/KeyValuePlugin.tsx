@@ -15,6 +15,7 @@ import {
 } from '@/config/shortcuts'
 import { parseKeyValueSyntax } from '@/lib/pill-parser'
 import { useLexicalComposerContext } from '@lexical/react/LexicalComposerContext'
+import { normalizeFieldName, unifiedFieldMetadata } from '@repo/shared'
 import {
   $getNodeByKey,
   $getRoot,
@@ -25,6 +26,7 @@ import {
   KEY_ARROW_LEFT_COMMAND,
   KEY_ARROW_RIGHT_COMMAND,
   KEY_SPACE_COMMAND,
+  type LexicalNode,
   TextNode,
 } from 'lexical'
 import { useEffect, useRef } from 'react'
@@ -71,21 +73,27 @@ export function KeyValuePlugin(): null {
             // 1. Text ends with space, comma, or period (editing complete) - ALWAYS transform
             // 2. User is not actively editing this node (moved cursor away)
             // 3. Cursor is at a delimiter position (space/comma/period immediately before cursor)
-            // 4. Text ends with a complete field value (for normalized fields like zip)
+            // CRITICAL: Normalized fields only extract when delimiter is present
             let shouldTransform = false
             let shouldSuppressDelimiter = false
 
-            // Check if text ends with a complete normalized field (like "Zip 90210")
-            // This handles cases where normalized fields don't have trailing delimiters
-            const textEndsWithCompleteField = parsed.some((match) => {
-              const matchEnd = text.lastIndexOf(match.original) + match.original.length
-              return matchEnd === text.length
-            })
-
-            if (textEndsWithCompleteField) {
-              // If text ends with a complete field, transform it even if still editing
-              // This ensures normalized fields like "Zip 90210" get transformed
-              shouldTransform = true
+            // Check if text ends with a delimiter (space, comma, period)
+            // Only extract normalized fields when delimiter is present (prevents early matching like "renter" without space)
+            const textEndsWithDelimiter = /[\s,\.]$/.test(text)
+            if (textEndsWithDelimiter && parsed.length > 0) {
+              const lastMatch = parsed[parsed.length - 1]
+              if (lastMatch) {
+                const matchEnd = text.lastIndexOf(lastMatch.original) + lastMatch.original.length
+                // Only transform if delimiter immediately follows match (prevents matching "renter" at end of string)
+                const charAtMatchEnd = text[matchEnd]
+                if (
+                  matchEnd < text.length &&
+                  charAtMatchEnd !== undefined &&
+                  /[\s,\.]/.test(charAtMatchEnd)
+                ) {
+                  shouldTransform = true
+                }
+              }
             }
 
             if (isEditing && !shouldTransform) {
@@ -267,48 +275,6 @@ export function KeyValuePlugin(): null {
             // Transform text into pills
             transformTextToPills(node, parsed)
 
-            // Check for inferred householdSize that wasn't transformed into a pill
-            // (because its "original" text doesn't exist in the editor)
-            const inferredField = parsed.find(
-              (p) => p.key === 'householdSize' && p.original.includes('(inferred from')
-            )
-
-            if (inferredField) {
-              // Get all existing pills to check if householdSize pill already exists
-              const root = $getRoot()
-              const allNodes = root.getAllTextNodes()
-              let hasHouseholdSizePill = false
-
-              for (const textNode of allNodes) {
-                const parent = textNode.getParent()
-                if ($isPillNode(parent) && parent.getFieldName() === 'householdSize') {
-                  hasHouseholdSizePill = true
-                  break
-                }
-              }
-
-              if (!hasHouseholdSizePill) {
-                // Create pill directly (don't inject text - it won't be found for transformation)
-                const pillNode = $createPillNode({
-                  key: 'householdSize',
-                  value: String(inferredField.value),
-                  validation: 'valid',
-                  fieldName: 'householdSize',
-                })
-
-                // Use captured parent reference (not detached node's parent)
-                if (parentBeforeTransform) {
-                  parentBeforeTransform.append(new TextNode(' ')) // Space before pill
-                  parentBeforeTransform.append(pillNode)
-                } else {
-                  // Fallback: append to root if parent was null
-                  const root = $getRoot()
-                  root.append(new TextNode(' '))
-                  root.append(pillNode)
-                }
-              }
-            }
-
             // Clear tracking if this was the node being edited
             if (previousEditingNodeRef.current === node) {
               previousEditingNodeRef.current = null
@@ -483,6 +449,40 @@ function transformTextToPills(
 
   if (sortedMatches.length === 0) return
 
+  // Get all existing pills in the editor to check for duplicates (for single-instance fields)
+  const root = $getRoot()
+  const existingPills = new Map<string, ReturnType<typeof $createPillNode>>()
+
+  // Traverse the editor tree to find all PillNodes
+  const traverseNodes = (node: LexicalNode) => {
+    if ($isPillNode(node)) {
+      const fieldName = node.getFieldName()
+      if (fieldName) {
+        // Normalize field name for comparison
+        const normalizedFieldName = normalizeFieldName(fieldName)
+        const metadata = unifiedFieldMetadata[normalizedFieldName]
+        // Only track single-instance fields for deduplication
+        if (metadata?.singleInstance) {
+          existingPills.set(normalizedFieldName, node)
+        }
+      }
+    }
+
+    // Traverse children if this is an ElementNode
+    if ('getChildren' in node && typeof node.getChildren === 'function') {
+      const children = node.getChildren()
+      for (const child of children) {
+        traverseNodes(child)
+      }
+    }
+  }
+
+  // Start traversal from root
+  const rootChildren = root.getChildren()
+  for (const child of rootChildren) {
+    traverseNodes(child)
+  }
+
   let currentOffset = 0
   const nodesToInsert: Array<TextNode | ReturnType<typeof $createPillNode>> = []
   let targetNode: TextNode | ReturnType<typeof $createPillNode> | null = null
@@ -502,14 +502,37 @@ function transformTextToPills(
       }
     }
 
-    // Add pill node
-    const pillNode = $createPillNode({
-      key: match.key,
-      value: match.value,
-      validation: match.validation,
-      fieldName: match.fieldName,
-    })
-    nodesToInsert.push(pillNode)
+    // Normalize field name to ensure consistency (even though it should already be normalized from parsing)
+    const normalizedFieldName = match.fieldName ? normalizeFieldName(match.fieldName) : null
+    const metadata = normalizedFieldName ? unifiedFieldMetadata[normalizedFieldName] : null
+    const existingPill =
+      normalizedFieldName && metadata?.singleInstance
+        ? existingPills.get(normalizedFieldName)
+        : null
+
+    let pillNode: ReturnType<typeof $createPillNode>
+    if (existingPill) {
+      // Update existing pill instead of creating a new one
+      // Remove the existing pill from the editor (it will be replaced)
+      existingPill.remove()
+      // Create updated pill node with normalized field name
+      pillNode = $createPillNode({
+        key: normalizedFieldName || match.key, // Use normalized field name as key
+        value: match.value,
+        validation: match.validation,
+        fieldName: normalizedFieldName || match.fieldName, // Use normalized field name
+      })
+      nodesToInsert.push(pillNode)
+    } else {
+      // No existing pill, create new one with normalized field name
+      pillNode = $createPillNode({
+        key: normalizedFieldName || match.key, // Use normalized field name as key
+        value: match.value,
+        validation: match.validation,
+        fieldName: normalizedFieldName || match.fieldName, // Use normalized field name
+      })
+      nodesToInsert.push(pillNode)
+    }
 
     // Track cursor position - if cursor is in or at the end of the pill text, move it to after the pill
     // CRITICAL: Must use <= (not <) to catch cursor at exact end boundary

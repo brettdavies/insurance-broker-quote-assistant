@@ -16,6 +16,7 @@ export const sharedFields: Record<string, UnifiedFieldMetadata> = {
     category: 'Identity & Contact',
     fieldType: 'string',
     flows: ['intake', 'policy'],
+    singleInstance: true,
   },
 
   email: {
@@ -26,6 +27,7 @@ export const sharedFields: Record<string, UnifiedFieldMetadata> = {
     category: 'Identity & Contact',
     fieldType: 'string',
     flows: ['intake', 'policy'],
+    singleInstance: true,
   },
 
   phone: {
@@ -36,6 +38,7 @@ export const sharedFields: Record<string, UnifiedFieldMetadata> = {
     category: 'Identity & Contact',
     fieldType: 'string',
     flows: ['intake', 'policy'],
+    singleInstance: true,
   },
 
   state: {
@@ -46,6 +49,60 @@ export const sharedFields: Record<string, UnifiedFieldMetadata> = {
     category: 'Location',
     fieldType: 'string',
     flows: ['intake', 'policy'],
+    singleInstance: true,
+    options: [
+      'AL',
+      'AK',
+      'AZ',
+      'AR',
+      'CA',
+      'CO',
+      'CT',
+      'DE',
+      'FL',
+      'GA',
+      'HI',
+      'ID',
+      'IL',
+      'IN',
+      'IA',
+      'KS',
+      'KY',
+      'LA',
+      'ME',
+      'MD',
+      'MA',
+      'MI',
+      'MN',
+      'MS',
+      'MO',
+      'MT',
+      'NE',
+      'NV',
+      'NH',
+      'NJ',
+      'NM',
+      'NY',
+      'NC',
+      'ND',
+      'OH',
+      'OK',
+      'OR',
+      'PA',
+      'RI',
+      'SC',
+      'SD',
+      'TN',
+      'TX',
+      'UT',
+      'VT',
+      'VA',
+      'WA',
+      'WV',
+      'WI',
+      'WY',
+      'DC',
+    ],
   },
 
   zip: {
@@ -56,6 +113,7 @@ export const sharedFields: Record<string, UnifiedFieldMetadata> = {
     category: 'Location',
     fieldType: 'string',
     flows: ['intake', 'policy'],
+    singleInstance: true,
   },
 
   address: {
@@ -66,6 +124,7 @@ export const sharedFields: Record<string, UnifiedFieldMetadata> = {
     category: 'Location',
     fieldType: 'string',
     flows: ['intake', 'policy'],
+    singleInstance: true,
   },
 
   age: {
@@ -78,6 +137,7 @@ export const sharedFields: Record<string, UnifiedFieldMetadata> = {
     flows: ['intake', 'policy'],
     min: 0,
     max: 150,
+    singleInstance: true,
   },
 
   cleanRecord3Yr: {
@@ -89,6 +149,7 @@ export const sharedFields: Record<string, UnifiedFieldMetadata> = {
     fieldType: 'boolean',
     aliases: ['clean', 'cleanRecord', 'cleanrecord3yr'],
     flows: ['intake', 'policy'],
+    singleInstance: true,
   },
 
   cleanRecord5Yr: {
@@ -99,6 +160,7 @@ export const sharedFields: Record<string, UnifiedFieldMetadata> = {
     category: 'Vehicle',
     fieldType: 'boolean',
     flows: ['intake', 'policy'],
+    singleInstance: true,
   },
 
   ownsHome: {
@@ -109,6 +171,7 @@ export const sharedFields: Record<string, UnifiedFieldMetadata> = {
     category: 'Property',
     fieldType: 'boolean',
     flows: ['intake', 'policy'],
+    singleInstance: true,
   },
 
   creditScore: {
@@ -122,6 +185,7 @@ export const sharedFields: Record<string, UnifiedFieldMetadata> = {
     flows: ['intake', 'policy'],
     min: 300,
     max: 850,
+    singleInstance: true,
   },
 
   propertyType: {
@@ -133,6 +197,8 @@ export const sharedFields: Record<string, UnifiedFieldMetadata> = {
     fieldType: 'string',
     aliases: ['property', 'propertytype', 'prop'],
     flows: ['intake', 'policy'],
+    singleInstance: true,
+    options: ['single-family', 'condo', 'townhouse', 'mobile-home', 'duplex', 'apartment'],
   },
 
   yearBuilt: {
@@ -145,6 +211,7 @@ export const sharedFields: Record<string, UnifiedFieldMetadata> = {
     flows: ['intake', 'policy'],
     min: 1800,
     max: 2100,
+    singleInstance: true,
   },
 
   roofType: {
@@ -155,6 +222,7 @@ export const sharedFields: Record<string, UnifiedFieldMetadata> = {
     category: 'Property',
     fieldType: 'string',
     flows: ['intake', 'policy'],
+    singleInstance: true,
   },
 
   squareFeet: {
@@ -166,6 +234,8 @@ export const sharedFields: Record<string, UnifiedFieldMetadata> = {
     fieldType: 'numeric',
     flows: ['intake', 'policy'],
     min: 0,
+    max: 20000,
+    singleInstance: true,
   },
 
   vehicles: {
@@ -179,6 +249,7 @@ export const sharedFields: Record<string, UnifiedFieldMetadata> = {
     flows: ['intake', 'policy'],
     min: 0,
     max: 50,
+    singleInstance: true,
   },
 
   drivers: {
@@ -191,6 +262,22 @@ export const sharedFields: Record<string, UnifiedFieldMetadata> = {
     flows: ['intake', 'policy'],
     min: 0,
     max: 20,
+    singleInstance: true,
+    // Field-to-field inference: drivers → householdSize
+    infers: [
+      {
+        targetField: 'householdSize',
+        inferValue: (drivers: number) => {
+          // Infer householdSize = drivers (assuming drivers = household size)
+          if (typeof drivers === 'number' && drivers >= 0) {
+            return drivers
+          }
+          return undefined
+        },
+        confidence: 'medium',
+        reasoning: 'Number of drivers typically equals household size',
+      },
+    ],
   },
 
   householdSize: {
@@ -204,6 +291,7 @@ export const sharedFields: Record<string, UnifiedFieldMetadata> = {
     flows: ['intake', 'policy'],
     min: 0,
     max: 50,
+    singleInstance: true,
   },
 
   productType: {
@@ -215,6 +303,7 @@ export const sharedFields: Record<string, UnifiedFieldMetadata> = {
     fieldType: 'string',
     aliases: ['product', 'productLine'],
     flows: ['intake', 'policy'],
+    options: ['auto', 'home', 'renters', 'umbrella'],
     // Field-to-field inference: productType → ownsHome
     // Part of known vs inferred pills architecture (Epic 4: Field Extraction Bulletproofing)
     infers: [

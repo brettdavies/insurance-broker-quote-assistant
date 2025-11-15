@@ -30,6 +30,35 @@ serve({
     const url = new URL(req.url)
     const pathname = url.pathname
 
+    // Proxy API requests to backend server (port 7070)
+    if (pathname.startsWith('/api/')) {
+      const apiUrl = `http://localhost:7070${pathname}${url.search}`
+      try {
+        const apiResponse = await fetch(apiUrl, {
+          method: req.method,
+          headers: req.headers,
+          body: req.method !== 'GET' && req.method !== 'HEAD' ? await req.arrayBuffer() : undefined,
+        })
+        return apiResponse
+      } catch (error) {
+        console.error(`Proxy error for ${pathname}:`, error)
+        return new Response(
+          JSON.stringify({
+            error: {
+              code: 'PROXY_ERROR',
+              message: `Failed to proxy request to backend: ${error instanceof Error ? error.message : String(error)}`,
+            },
+          }),
+          {
+            status: 502,
+            headers: {
+              'Content-Type': 'application/json',
+            },
+          }
+        )
+      }
+    }
+
     // Serve index.html for root and all routes (SPA routing)
     if (pathname === '/' || pathname === '/index.html') {
       const html = readFileSync(join(import.meta.dir, 'index.html'), 'utf-8')

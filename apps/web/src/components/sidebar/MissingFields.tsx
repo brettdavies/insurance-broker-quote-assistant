@@ -9,6 +9,8 @@
 
 import { Card, CardContent } from '@/components/ui/card'
 import { Progress } from '@/components/ui/progress'
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
+import { unifiedFieldMetadata } from '@repo/shared'
 import { Info } from 'lucide-react'
 
 export interface MissingField {
@@ -73,10 +75,10 @@ export function MissingFields({
 
   return (
     <Card className="border-gray-200 dark:border-gray-700">
-      <CardContent className="p-4">
-        <div className="space-y-4">
+      <CardContent className="p-3">
+        <div className="space-y-3">
           {/* Progress Bar */}
-          <div className="space-y-2">
+          <div className="space-y-1.5">
             <div className="flex items-center justify-between text-sm">
               <span className="font-semibold">Progress</span>
               <span className="text-gray-600 dark:text-gray-400">
@@ -87,32 +89,64 @@ export function MissingFields({
           </div>
 
           {/* Missing Fields by Priority */}
-          <div className="space-y-3">
+          <div className="space-y-2">
             {Object.entries(fieldsByPriority).map(([priority, fields]) => {
               if (fields.length === 0) return null
 
               return (
-                <div key={priority} className="space-y-2">
+                <div key={priority} className="space-y-1.5">
                   <h4 className="text-xs font-semibold uppercase text-gray-600 dark:text-gray-400">
                     {PRIORITY_LABELS[priority as keyof typeof PRIORITY_LABELS]} ({fields.length})
                   </h4>
-                  <div className="space-y-1">
-                    {fields.map((field) => (
-                      <button
-                        key={field.fieldKey}
-                        type="button"
-                        onClick={() => onFieldClick(field.fieldKey)}
-                        className="flex w-full cursor-pointer items-center justify-between rounded-md p-2 text-left transition-all duration-200 ease-out hover:scale-[1.02] hover:bg-gray-100 dark:hover:bg-gray-700"
-                      >
-                        <div className="flex items-center gap-2">
-                          <span className="text-lg">{PRIORITY_INDICATORS[field.priority]}</span>
-                          <span className="text-field-name font-semibold text-red-600 dark:text-red-400">
-                            {field.name}: MISSING
-                          </span>
-                        </div>
-                        <Info className="h-4 w-4 text-gray-400 dark:text-gray-500" />
-                      </button>
-                    ))}
+                  <div
+                    className={`grid gap-1 ${fields.length > 4 ? 'grid-cols-2' : 'grid-cols-1'}`}
+                  >
+                    {fields.map((field) => {
+                      // Get field metadata for tooltip
+                      const fieldMetadata = unifiedFieldMetadata[field.fieldKey]
+                      const tooltipContent =
+                        fieldMetadata?.question ||
+                        fieldMetadata?.description ||
+                        `${field.name} - Click to add`
+
+                      return (
+                        <button
+                          key={field.fieldKey}
+                          type="button"
+                          onClick={() => onFieldClick(field.fieldKey)}
+                          className="flex w-full cursor-pointer items-center justify-between rounded-md p-1.5 text-left transition-all duration-200 ease-out hover:bg-gray-100 dark:hover:bg-gray-700"
+                        >
+                          <div className="flex items-center gap-2">
+                            <span className="text-lg">{PRIORITY_INDICATORS[field.priority]}</span>
+                            <span className="text-field-name font-semibold text-red-600 dark:text-red-400">
+                              {field.name}: MISSING
+                            </span>
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <TooltipProvider>
+                              <Tooltip>
+                                <TooltipTrigger asChild>
+                                  <button
+                                    type="button"
+                                    className="opacity-60 transition-opacity hover:opacity-100"
+                                    aria-label={tooltipContent}
+                                    onClick={(e) => {
+                                      e.stopPropagation()
+                                      e.preventDefault()
+                                    }}
+                                  >
+                                    <Info className="h-4 w-4 text-gray-400 dark:text-gray-500" />
+                                  </button>
+                                </TooltipTrigger>
+                                <TooltipContent className="max-w-xs">
+                                  <p className="text-xs">{tooltipContent}</p>
+                                </TooltipContent>
+                              </Tooltip>
+                            </TooltipProvider>
+                          </div>
+                        </button>
+                      )
+                    })}
                   </div>
                 </div>
               )

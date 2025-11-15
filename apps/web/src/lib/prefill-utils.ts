@@ -7,6 +7,7 @@
  */
 
 import { api } from '@/lib/api-client'
+import { logError } from '@/lib/logger'
 import type { IntakeResult, PrefillPacket, UserProfile } from '@repo/shared'
 
 /**
@@ -49,7 +50,7 @@ export async function getPrefillPacket(
         errorMessage = response.statusText || `Server error (${response.status})`
       }
       const error = new Error(errorMessage)
-      console.error('Prefill packet generation failed:', error)
+      void logError('Prefill packet generation failed', error)
       throw error
     }
 
@@ -59,7 +60,7 @@ export async function getPrefillPacket(
     // If error is already an Error with a message, re-throw it as-is
     // Otherwise wrap it
     if (error instanceof Error) {
-      console.error('Error in getPrefillPacket:', error)
+      void logError('Error in getPrefillPacket', error)
       throw error
     }
     throw new Error(

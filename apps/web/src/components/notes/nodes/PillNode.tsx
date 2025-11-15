@@ -118,12 +118,16 @@ export class PillNode extends DecoratorNode<JSX.Element> {
     element.setAttribute('data-pill', 'true')
     element.setAttribute('data-key', this.__key_)
     element.setAttribute('data-value', this.__value)
-    element.textContent = `${this.__key_}:${this.__value}`
+    // Use fieldName for display if available (normalized), otherwise use key
+    const displayKey = this.__fieldName || this.__key_
+    element.textContent = `${displayKey}:${this.__value}`
     return { element }
   }
 
   decorate(): JSX.Element {
     const nodeKey = this.getKey()
+    // Use fieldName for display if available (normalized), otherwise use key
+    const displayKey = this.__fieldName || this.__key_
     return (
       <span
         className={this.getPillClasses()}
@@ -134,7 +138,7 @@ export class PillNode extends DecoratorNode<JSX.Element> {
         data-validation={this.__validation}
         data-field-name={this.__fieldName}
       >
-        {this.__key_}:{this.__value}
+        {displayKey}:{this.__value}
       </span>
     )
   }

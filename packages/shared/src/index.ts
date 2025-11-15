@@ -157,6 +157,12 @@ export {
   CONFIDENCE_THRESHOLD_MEDIUM,
 } from './constants/llm-config'
 
+// Export compliance constants and utilities
+export {
+  detectProhibitedPhrases,
+  LICENSED_AGENT_HANDOFF_MESSAGE,
+} from './constants/compliance'
+
 // Export validation constants
 export { SAVINGS_TOLERANCE_DOLLARS, MISSING_FIELD_PENALTY } from './constants/validation'
 
@@ -202,11 +208,19 @@ export {
   extractCurrentCarrier,
   extractCleanRecord,
   extractNormalizedFields,
-  inferHouseholdSize,
   inferExistingPolicies,
   normalizedFieldToKeyValue,
+  normalizeFieldName,
   type NormalizedField,
 } from './utils/field-normalization'
+
+// Export number formatting utilities
+export {
+  formatNumberForDisplay,
+  parseFormattedInteger,
+  validateInteger,
+  parseAndValidateInteger,
+} from './utils/number-formatting'
 
 // Export test utilities (for use in test files only)
 // NOTE: DO NOT export test-utils from main package - they import bun:test which breaks browser builds

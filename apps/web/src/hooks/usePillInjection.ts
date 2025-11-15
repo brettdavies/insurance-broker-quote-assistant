@@ -16,6 +16,8 @@
  */
 
 import { $createPillNode } from '@/components/notes/nodes/PillNode'
+import { logError } from '@/lib/logger'
+import { normalizeFieldName } from '@repo/shared'
 import type { LexicalEditor } from 'lexical'
 import {
   $createParagraphNode,
@@ -95,7 +97,7 @@ export function usePillInjection(editor: LexicalEditor | null) {
   const injectPill = useCallback(
     (fieldKey: string, value: unknown) => {
       if (!editor) {
-        console.error('Lexical editor not available for pill injection')
+        void logError('Lexical editor not available for pill injection')
         return
       }
 
@@ -121,12 +123,15 @@ export function usePillInjection(editor: LexicalEditor | null) {
           paragraph.append($createTextNode(' '))
         }
 
+        // Normalize field name to ensure consistency
+        const normalizedFieldName = normalizeFieldName(fieldKey)
+
         // Create pill node with 'valid' validation (always valid for converted fields)
         const pillNode = $createPillNode({
-          key: fieldKey,
+          key: normalizedFieldName, // Use normalized field name as key
           value: formatPillValue(value),
           validation: 'valid',
-          fieldName: fieldKey,
+          fieldName: normalizedFieldName, // Use normalized field name
         })
 
         // Append pill to paragraph

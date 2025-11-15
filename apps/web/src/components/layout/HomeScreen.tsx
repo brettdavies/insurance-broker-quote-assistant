@@ -26,11 +26,9 @@ export function HomeScreen() {
   // Handle action commands
   const handleActionCommand = useCallback((command: ActionCommand) => {
     if (command === 'reset') {
+      // Reset to home page (inactive state)
       setIsActive(false)
-      editorRef.current?.clear()
-      setTimeout(() => {
-        editorRef.current?.focus()
-      }, 100)
+      // Editor will be cleared by UnifiedChatInterface
     }
   }, [])
 

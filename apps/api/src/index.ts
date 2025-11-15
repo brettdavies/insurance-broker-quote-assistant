@@ -5,10 +5,13 @@ import { cors } from 'hono/cors'
 import { z } from 'zod'
 import { config } from './config/env'
 import { errorHandler } from './middleware/error-handler'
+import { createDisclaimersRoute } from './routes/disclaimers'
 import { createIntakeRoute } from './routes/intake'
+import { createLogRoute } from './routes/log'
 import { createPolicyRoute } from './routes/policy'
 import { validateOutput } from './services/compliance-filter'
 import { ConversationalExtractor } from './services/conversational-extractor'
+import { loadDisclaimers } from './services/disclaimers-loader'
 import { GeminiProvider } from './services/gemini-provider'
 import {
   getLoadingStatus,
@@ -84,7 +87,8 @@ if (useRealLLM) {
 const conversationalExtractor = new ConversationalExtractor(llmProvider)
 
 // Initialize knowledge pack loading on startup (non-blocking)
-loadKnowledgePack().catch((error) => {
+// Load knowledge pack and disclaimers
+Promise.all([loadKnowledgePack(), loadDisclaimers()]).catch((error) => {
   console.error('Failed to initialize knowledge pack:', error)
 })
 
@@ -120,6 +124,14 @@ app.route('/', intakeRoute)
 // Policy upload endpoint - policy document parsing
 const policyRoute = createPolicyRoute(conversationalExtractor, llmProvider)
 app.route('/', policyRoute)
+
+// Log endpoint - receive logs from frontend
+const logRoute = createLogRoute()
+app.route('/', logRoute)
+
+// Disclaimers endpoint - get disclaimers from knowledge pack
+const disclaimersRoute = createDisclaimersRoute()
+app.route('/', disclaimersRoute)
 
 // Generate prefill endpoint (flattened from /api/intake/generate-prefill for Hono RPC client compatibility)
 app.post('/api/generate-prefill', async (c) => {

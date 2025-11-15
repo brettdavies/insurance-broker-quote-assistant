@@ -17,6 +17,22 @@ export const intakeFields: Record<string, UnifiedFieldMetadata> = {
     flows: ['intake'],
     min: 0,
     max: 20,
+    singleInstance: true,
+    // Field-to-field inference: kids → householdSize
+    infers: [
+      {
+        targetField: 'householdSize',
+        inferValue: (kids: number) => {
+          // Infer householdSize = kids + 1 (assuming 1 adult)
+          if (typeof kids === 'number' && kids >= 0) {
+            return kids + 1
+          }
+          return undefined
+        },
+        confidence: 'medium',
+        reasoning: 'Number of kids plus one adult indicates household size',
+      },
+    ],
   },
 
   garage: {
@@ -27,6 +43,7 @@ export const intakeFields: Record<string, UnifiedFieldMetadata> = {
     category: 'Vehicle',
     fieldType: 'string',
     flows: ['intake'],
+    singleInstance: true,
   },
 
   vins: {

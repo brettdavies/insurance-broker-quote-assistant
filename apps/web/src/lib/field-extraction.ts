@@ -50,7 +50,10 @@ export function extractUserProfileFields(
     details: [],
   }
 
-  // Iterate through all fields from UserProfile metadata
+  // Track which fields we've already added (to avoid duplicates)
+  const addedFields = new Set<string>()
+
+  // First, iterate through all fields from UserProfile metadata (known fields)
   for (const [field, metadata] of Object.entries(userProfileFieldMetadata)) {
     const command = field as FieldCommand
     const fieldName = COMMAND_TO_FIELD_NAME[command]
@@ -86,6 +89,45 @@ export function extractUserProfileFields(
         confidence: confidence?.[fieldName],
         isInferred,
         inferenceReason: isInferred ? inferenceReasons?.[fieldName] : undefined,
+      })
+
+      addedFields.add(fieldName)
+    }
+  }
+
+  // Second, iterate through inferredFields to add fields that are ONLY inferred (not in profile)
+  if (inferredFields) {
+    for (const [fieldName, inferredValue] of Object.entries(inferredFields)) {
+      // Skip if already added (field exists in profile)
+      if (addedFields.has(fieldName)) continue
+
+      // Skip if value is invalid
+      if (inferredValue === undefined || inferredValue === null || inferredValue === '') continue
+
+      // Find metadata for this field
+      // Try to find by field name in unifiedFieldMetadata
+      const metadata = unifiedFieldMetadata[fieldName]
+      if (!metadata) continue // Skip if no metadata found
+
+      // Map metadata category to display category
+      const displayCategory = USER_PROFILE_CATEGORY_MAP[metadata.category] || 'details'
+
+      let displayValue: string | number | boolean = inferredValue as string | number | boolean
+
+      // Format boolean values
+      if (typeof inferredValue === 'boolean') {
+        displayValue = inferredValue ? 'Yes' : 'No'
+      }
+
+      // This is an inferred-only field (not in profile)
+      fieldsByCategory[displayCategory]?.push({
+        name: metadata.label,
+        value: displayValue,
+        category: displayCategory,
+        fieldKey: fieldName,
+        confidence: confidence?.[fieldName],
+        isInferred: true, // Always inferred if only in inferredFields
+        inferenceReason: inferenceReasons?.[fieldName],
       })
     }
   }

@@ -29,9 +29,9 @@ export {
 } from './extractors'
 
 // Export inference utilities
-export { inferHouseholdSize, inferExistingPolicies } from './inference'
+export { inferExistingPolicies } from './inference'
 
-// Export utility function
+// Export utility functions
 /**
  * Convert normalized field to key-value format for pill creation
  * Returns format like "householdSize:2" that can be parsed by key-value parser
@@ -39,3 +39,6 @@ export { inferHouseholdSize, inferExistingPolicies } from './inference'
 export function normalizedFieldToKeyValue(field: import('./types').NormalizedField): string {
   return `${field.fieldName}:${field.value}`
 }
+
+// Export field name normalization
+export { normalizeFieldName } from './normalize-field-name'

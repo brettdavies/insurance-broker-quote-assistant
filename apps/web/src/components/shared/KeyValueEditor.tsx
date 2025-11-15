@@ -11,6 +11,7 @@
  * - Editor ref for programmatic control
  */
 
+import { logError } from '@/lib/logger'
 import { extractTextWithoutPills } from '@/lib/text-extraction'
 import { LexicalComposer } from '@lexical/react/LexicalComposer'
 import { useLexicalComposerContext } from '@lexical/react/LexicalComposerContext'
@@ -39,7 +40,7 @@ const editorConfig = {
   namespace: 'KeyValueEditor',
   nodes: [PillNode],
   onError(error: Error) {
-    console.error('Lexical error:', error)
+    void logError('Lexical error', error)
   },
   theme: {
     root: 'focus:ring-primary-500 focus:border-primary-500 dark:focus:border-primary-400 min-h-[150px] w-full rounded-md border border-gray-300 bg-white p-4 font-mono text-sm text-gray-900 transition-all duration-200 ease-out placeholder:text-gray-500 focus:outline-none focus:ring-2 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:placeholder:text-gray-500',

@@ -100,6 +100,7 @@ export class InferenceEngine {
    *
    * @param knownFields - Fields extracted from user input (high confidence)
    * @param inputText - User's conversational input text
+   * @param existingInferred - Optional existing inferred fields (for "first inference wins" behavior)
    * @returns InferenceResult with inferred fields, reasons, and confidence scores
    *
    * @example
@@ -110,7 +111,11 @@ export class InferenceEngine {
    * // result.inferred = { ownsHome: false, householdSize: 1 }
    * ```
    */
-  applyInferences(knownFields: Partial<UserProfile>, inputText: string): InferenceResult {
+  applyInferences(
+    knownFields: Partial<UserProfile>,
+    inputText: string,
+    existingInferred?: Partial<UserProfile>
+  ): InferenceResult {
     const inferred: Partial<UserProfile> = {}
     const reasons: Record<string, string> = {}
     const confidence: Record<string, number> = {}
@@ -121,16 +126,46 @@ export class InferenceEngine {
       if (!metadata) continue
 
       for (const rule of metadata) {
-        // Skip if target field already known or suppressed
-        if (knownFields[rule.targetField as keyof UserProfile] !== undefined) continue
-        if (this.suppressedFields.includes(rule.targetField)) continue
+        // Skip if target field already known, already inferred, or suppressed
+        // CRITICAL: First inference wins - if target field already exists in inferred,
+        // do NOT update it when source field changes (e.g., kids:2 → kids:3)
+        if (knownFields[rule.targetField as keyof UserProfile] !== undefined) {
+          continue
+        }
+        // Check if already in current inference run
+        // biome-ignore lint/suspicious/noExplicitAny: UserProfile has dynamic field types
+        if ((inferred as any)[rule.targetField] !== undefined) {
+          continue
+        }
+        // Check if already in existing inferred fields (first inference wins)
+        if (existingInferred && rule.targetField in existingInferred) {
+          continue
+        }
+        if (this.suppressedFields.includes(rule.targetField)) {
+          continue
+        }
 
         const inferredValue = rule.inferValue(fieldValue)
         if (inferredValue !== undefined) {
+          console.log(
+            `[InferenceEngine] Creating inference: ${fieldName}(${fieldValue}) → ${rule.targetField}(${inferredValue})`,
+            {
+              sourceField: fieldName,
+              sourceValue: fieldValue,
+              targetField: rule.targetField,
+              inferredValue,
+              confidence: rule.confidence,
+              reasoning: rule.reasoning,
+            }
+          )
           // biome-ignore lint/suspicious/noExplicitAny: UserProfile has dynamic field types
           ;(inferred as any)[rule.targetField] = inferredValue
           reasons[rule.targetField] = rule.reasoning
           confidence[rule.targetField] = this.confidenceToNumber(rule.confidence)
+        } else {
+          console.log(
+            `[InferenceEngine] No inference: ${fieldName}(${fieldValue}) → ${rule.targetField}: inferValue returned undefined`
+          )
         }
       }
     }
@@ -142,19 +177,46 @@ export class InferenceEngine {
 
       for (const inference of pattern.infers) {
         // Skip if field already known or suppressed
-        if (knownFields[inference.field as keyof UserProfile] !== undefined) continue
+        if (knownFields[inference.field as keyof UserProfile] !== undefined) {
+          continue
+        }
         // Skip if already inferred from field-to-field (step 1 takes precedence)
         // biome-ignore lint/suspicious/noExplicitAny: UserProfile has dynamic field types
-        if ((inferred as any)[inference.field] !== undefined) continue
-        if (this.suppressedFields.includes(inference.field)) continue
+        if ((inferred as any)[inference.field] !== undefined) {
+          continue
+        }
+        // Check if already in existing inferred fields (first inference wins)
+        if (existingInferred && inference.field in existingInferred) {
+          continue
+        }
+        if (this.suppressedFields.includes(inference.field)) {
+          continue
+        }
 
         // Handle capture group references (e.g., "$1" means capture group 1)
         const value = this.replaceCaptureGroups(inference.value, match)
 
-        // biome-ignore lint/suspicious/noExplicitAny: UserProfile has dynamic field types
-        ;(inferred as any)[inference.field] = value
-        reasons[inference.field] = inference.reasoning
-        confidence[inference.field] = this.confidenceToNumber(inference.confidence)
+        if (value !== undefined) {
+          console.log(
+            `[InferenceEngine] Creating text pattern inference: pattern "${pattern.pattern}" → ${inference.field}(${value})`,
+            {
+              pattern: pattern.pattern.toString(),
+              match: match[0],
+              targetField: inference.field,
+              inferredValue: value,
+              confidence: inference.confidence,
+              reasoning: inference.reasoning,
+            }
+          )
+          // biome-ignore lint/suspicious/noExplicitAny: UserProfile has dynamic field types
+          ;(inferred as any)[inference.field] = value
+          reasons[inference.field] = inference.reasoning
+          confidence[inference.field] = this.confidenceToNumber(inference.confidence)
+        } else {
+          console.log(
+            `[InferenceEngine] No text pattern inference: pattern "${pattern.pattern}" → ${inference.field}: value is undefined`
+          )
+        }
       }
     }
 

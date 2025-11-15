@@ -298,4 +298,87 @@ describe('Key-Value Parser', () => {
       expect(getFieldName('score')).toBe('creditScore')
     })
   })
+
+  describe('Deduplication for single-instance fields', () => {
+    it('deduplicates kids field - "kids:2" then "kids:3" → single kids:3', () => {
+      const text = 'kids:2 kids:3'
+      const result = parseKeyValueSyntax(text)
+
+      // Should have only one kids field (deduplicated)
+      const kidsFields = result.filter((r) => r.fieldName === 'kids')
+      expect(kidsFields).toHaveLength(1)
+      expect(kidsFields[0]?.value).toBe('3') // Latest value wins
+      expect(kidsFields[0]?.validation).toBe('valid')
+    })
+
+    it('deduplicates householdSize field - "h:2" then "householdSize:3" → single householdSize:3', () => {
+      const text = 'h:2 householdSize:3'
+      const result = parseKeyValueSyntax(text)
+
+      // Should have only one householdSize field (deduplicated and normalized)
+      const householdSizeFields = result.filter((r) => r.fieldName === 'householdSize')
+      expect(householdSizeFields).toHaveLength(1)
+      expect(householdSizeFields[0]?.value).toBe('3') // Latest value wins
+      expect(householdSizeFields[0]?.validation).toBe('valid')
+      // Key should be normalized to householdSize (not 'h')
+      expect(householdSizeFields[0]?.key).toBe('householdSize')
+    })
+
+    it('deduplicates multiple single-instance fields', () => {
+      const text = 'kids:2 kids:3 ownsHome:true ownsHome:false age:25 age:30'
+      const result = parseKeyValueSyntax(text)
+
+      // Should have one of each field
+      const kidsFields = result.filter((r) => r.fieldName === 'kids')
+      const ownsHomeFields = result.filter((r) => r.fieldName === 'ownsHome')
+      const ageFields = result.filter((r) => r.fieldName === 'age')
+
+      expect(kidsFields).toHaveLength(1)
+      expect(kidsFields[0]?.value).toBe('3')
+      expect(ownsHomeFields).toHaveLength(1)
+      expect(ownsHomeFields[0]?.value).toBe('false')
+      expect(ageFields).toHaveLength(1)
+      expect(ageFields[0]?.value).toBe('30')
+    })
+  })
+
+  describe('householdSize inference removed from parsing', () => {
+    it('does not include householdSize in parsed results from "I have 2 kids. She has three kids."', () => {
+      const text = 'I have 2 kids. She has three kids.'
+      const result = parseKeyValueSyntax(text)
+
+      // Should have single kids:3 (deduplicated from "2 kids" and "three kids")
+      const kidsFields = result.filter((r) => r.fieldName === 'kids')
+      expect(kidsFields).toHaveLength(1)
+      expect(kidsFields[0]?.value).toBe('3') // "three kids" → 3
+
+      // Should NOT have householdSize in parsed results (moved to InferenceEngine)
+      const householdSizeFields = result.filter((r) => r.fieldName === 'householdSize')
+      expect(householdSizeFields).toHaveLength(0)
+    })
+
+    it('never creates householdSize as a known pill from parsing', () => {
+      const text = '2 kids'
+      const result = parseKeyValueSyntax(text)
+
+      // Should have kids field
+      const kidsFields = result.filter((r) => r.fieldName === 'kids')
+      expect(kidsFields.length).toBeGreaterThan(0)
+
+      // Should NOT have householdSize in parsed results
+      const householdSizeFields = result.filter((r) => r.fieldName === 'householdSize')
+      expect(householdSizeFields).toHaveLength(0)
+    })
+
+    it('allows explicit householdSize key-value pairs', () => {
+      const text = 'householdSize:4'
+      const result = parseKeyValueSyntax(text)
+
+      // Explicit key-value pairs should still work
+      const householdSizeFields = result.filter((r) => r.fieldName === 'householdSize')
+      expect(householdSizeFields).toHaveLength(1)
+      expect(householdSizeFields[0]?.value).toBe('4')
+      expect(householdSizeFields[0]?.validation).toBe('valid')
+    })
+  })
 })

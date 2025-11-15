@@ -13,7 +13,13 @@ import {
   MULTI_WORD_FIELDS,
   NUMERIC_FIELDS,
 } from '@/config/shortcuts'
-import { type NormalizedField, extractNormalizedFields, inferHouseholdSize } from '@repo/shared'
+import {
+  type NormalizedField,
+  extractNormalizedFields,
+  normalizeFieldName,
+  unifiedFieldMetadata,
+} from '@repo/shared'
+import { logWarn } from './logger'
 
 export type ValidationResult = 'valid' | 'invalid_key' | 'invalid_value'
 
@@ -68,58 +74,49 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
 
   const processedRanges: Array<{ start: number; end: number }> = []
 
-  // Step 1: Extract normalized fields from natural language patterns
-  // This runs before key-value parsing so normalized fields can be converted to pills
-  // Extract direct fields: "2 drivers" → drivers: 2, "2 kids" → kids: 2, etc.
-  const extractedFieldsMap = new Map<string, NormalizedField>()
+  // Track single-instance fields to handle deduplication
+  // Map: normalizedFieldName -> index in results array
+  const singleInstanceFieldIndices = new Map<string, number>()
 
-  try {
-    const normalizedFields = extractNormalizedFields(text)
-
-    // Convert normalized fields to parsed key-value format
-    for (const field of normalizedFields) {
-      // Check if field is in known keys
-      if (knownKeys.has(field.fieldName)) {
-        const key = field.fieldName
-        const value = String(field.value)
-
-        results.push({
-          key,
-          value,
-          original: field.originalText,
-          validation: 'valid',
-          fieldName: field.fieldName,
-        })
-
-        // Store in map for inference
-        extractedFieldsMap.set(field.fieldName, field)
-
-        // Track processed range to avoid duplicate extraction
-        processedRanges.push({ start: field.startIndex, end: field.endIndex })
-      }
+  // Helper function to add result with deduplication for single-instance fields
+  const addResult = (result: ParsedKeyValue) => {
+    if (!result.fieldName) {
+      // No field name, just add it
+      results.push(result)
+      return
     }
 
-    // Step 2: Infer householdSize from indicator fields if not explicitly set
-    // This ensures "2 drivers" creates drivers: 2 pill, and optionally infers householdSize: 2
-    const inferredHouseholdSize = inferHouseholdSize(extractedFieldsMap)
-    if (inferredHouseholdSize && knownKeys.has('householdSize')) {
-      // Only add inferred householdSize if it wasn't already extracted explicitly
-      if (!extractedFieldsMap.has('householdSize')) {
-        results.push({
-          key: 'householdSize',
-          value: String(inferredHouseholdSize.value),
-          original: inferredHouseholdSize.originalText,
-          validation: 'valid',
-          fieldName: 'householdSize',
-        })
+    // Normalize field name to element name from field-metadata
+    const normalizedFieldName = normalizeFieldName(result.fieldName)
+    const metadata = unifiedFieldMetadata[normalizedFieldName]
+
+    // Check if this is a single-instance field
+    if (metadata?.singleInstance) {
+      const existingIndex = singleInstanceFieldIndices.get(normalizedFieldName)
+      if (existingIndex !== undefined) {
+        // Update existing result instead of creating new one
+        results[existingIndex] = {
+          ...result,
+          key: normalizedFieldName, // Use normalized field name as key for display
+          fieldName: normalizedFieldName, // Ensure normalized field name
+        }
+        return
       }
+      // First occurrence, track it
+      singleInstanceFieldIndices.set(normalizedFieldName, results.length)
     }
-  } catch (error) {
-    // If normalization fails, skip it (graceful degradation)
-    // This can happen if shared package isn't available or normalization logic has issues
-    console.warn('Field normalization failed:', error)
+
+    // Add new result with normalized field name
+    // Also normalize the key to use fieldName for display (so shortcuts like 'h' show as 'householdSize')
+    results.push({
+      ...result,
+      key: normalizedFieldName, // Use normalized field name as key for display
+      fieldName: normalizedFieldName,
+    })
   }
 
+  // Step 1: Parse key-value syntax FIRST (e.g., "k:3", "kids:2", "productType:renters")
+  // This ensures explicit key-value pairs take precedence over pattern matching
   // Regex patterns: matches key:value
   // Case-insensitive matching
   // Strategy: Use separate patterns for fields with special character requirements
@@ -194,7 +191,7 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
       const fieldName = FIELD_ALIASES[key]
       const normalizedKey = fieldName || key
 
-      results.push({
+      addResult({
         key,
         value: value.trim(),
         original,
@@ -217,7 +214,7 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
       const matchStart = match.index ?? 0
       const matchEnd = matchStart + original.length
 
-      results.push({
+      addResult({
         key,
         value: value.trim(),
         original,
@@ -244,7 +241,7 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
       const emailRegex = /^[a-zA-Z0-9._+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
       const validation: ValidationResult = emailRegex.test(value) ? 'valid' : 'invalid_value'
 
-      results.push({
+      addResult({
         key,
         value,
         original,
@@ -267,7 +264,7 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
       const matchStart = match.index ?? 0
       const matchEnd = matchStart + original.length
 
-      results.push({
+      addResult({
         key,
         value,
         original,
@@ -309,7 +306,7 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
     const isValidKey = knownKeys.has(key) || (fieldName ? knownKeys.has(fieldName) : false)
 
     if (!isValidKey) {
-      results.push({
+      addResult({
         key,
         value,
         original,
@@ -335,7 +332,7 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
       // Remove commas for parsing (e.g., "1,200" -> 1200)
       const numValue = Number.parseInt(value.replace(/,/g, ''), 10)
       if (Number.isNaN(numValue)) {
-        results.push({
+        addResult({
           key,
           value,
           original,
@@ -347,7 +344,7 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
       }
     }
 
-    results.push({
+    addResult({
       key,
       value,
       original,
@@ -357,6 +354,53 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
 
     match = otherPattern.exec(text)
   }
+
+  // Step 2: Extract normalized fields from natural language patterns
+  // This runs AFTER key-value parsing so explicit key-value pairs take precedence
+  // Extract direct fields: "2 drivers" → drivers: 2, "2 kids" → kids: 2, "renter" → productType: renters, etc.
+  const extractedFieldsMap = new Map<string, NormalizedField>()
+
+  try {
+    const normalizedFields = extractNormalizedFields(text)
+
+    // Convert normalized fields to parsed key-value format
+    for (const field of normalizedFields) {
+      // Check if field is in known keys
+      if (knownKeys.has(field.fieldName)) {
+        // Skip if this range was already processed by key-value parsing
+        if (isAlreadyProcessed(field.startIndex, field.endIndex)) {
+          continue
+        }
+
+        const key = field.fieldName
+        const value = String(field.value)
+
+        addResult({
+          key,
+          value,
+          original: field.originalText,
+          validation: 'valid',
+          fieldName: field.fieldName,
+        })
+
+        // Store in map for inference
+        extractedFieldsMap.set(field.fieldName, field)
+
+        // Track processed range to avoid duplicate extraction
+        processedRanges.push({ start: field.startIndex, end: field.endIndex })
+      }
+    }
+  } catch (error) {
+    // If extraction fails, log warning and continue with key-value parsing results
+    logWarn('Failed to extract normalized fields from text', {
+      error: error instanceof Error ? error.message : String(error),
+      text,
+    })
+  }
+
+  // NOTE: householdSize inference is now handled exclusively by InferenceEngine
+  // in UnifiedChatInterface.tsx. No manual inference here.
+  // Removed Step 3 that called inferHouseholdSize() and created parsed results.
 
   return results
 }

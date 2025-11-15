@@ -1,0 +1,206 @@
+{
+  "$schema": "./schemas/disclaimers.json",
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedDate": "2025-11-12T00:00:00.000Z",
+    "description": "Prohibited phrases that violate insurance compliance regulations"
+  },
+  "prohibitedPhrases": {
+    "_id": "prohibited_phrases_base",
+    "phrases": [
+      {
+        "_id": "fld_prohibited_guaranteed_lowest_rate",
+        "value": "guaranteed lowest rate",
+        "_sources": [
+          {
+            "uri": "https://www.naic.org/compliance/",
+            "accessedDate": "2025-11-12T00:00:00.000Z",
+            "confidence": "high",
+            "primary": true
+          }
+        ]
+      },
+      {
+        "_id": "fld_prohibited_well_definitely_save",
+        "value": "we'll definitely save you",
+        "_sources": [
+          {
+            "uri": "https://www.naic.org/compliance/",
+            "accessedDate": "2025-11-12T00:00:00.000Z",
+            "confidence": "high",
+            "primary": true
+          }
+        ]
+      },
+      {
+        "_id": "fld_prohibited_best_price_guaranteed",
+        "value": "best price guaranteed",
+        "_sources": [
+          {
+            "uri": "https://www.naic.org/compliance/",
+            "accessedDate": "2025-11-12T00:00:00.000Z",
+            "confidence": "high",
+            "primary": true
+          }
+        ]
+      },
+      {
+        "_id": "fld_prohibited_you_will_save",
+        "value": "you will save",
+        "_sources": [
+          {
+            "uri": "https://www.naic.org/compliance/",
+            "accessedDate": "2025-11-12T00:00:00.000Z",
+            "confidence": "high",
+            "primary": true
+          }
+        ]
+      },
+      {
+        "_id": "fld_prohibited_guaranteed_approval",
+        "value": "guaranteed approval",
+        "_sources": [
+          {
+            "uri": "https://www.naic.org/compliance/",
+            "accessedDate": "2025-11-12T00:00:00.000Z",
+            "confidence": "high",
+            "primary": true
+          }
+        ]
+      },
+      {
+        "_id": "fld_prohibited_guaranteed_savings",
+        "value": "guaranteed savings",
+        "_sources": [
+          {
+            "uri": "https://www.naic.org/compliance/",
+            "accessedDate": "2025-11-12T00:00:00.000Z",
+            "confidence": "high",
+            "primary": true
+          }
+        ]
+      },
+      {
+        "_id": "fld_prohibited_we_guarantee",
+        "value": "we guarantee",
+        "_sources": [
+          {
+            "uri": "https://www.naic.org/compliance/",
+            "accessedDate": "2025-11-12T00:00:00.000Z",
+            "confidence": "high",
+            "primary": true
+          }
+        ]
+      },
+      {
+        "_id": "fld_prohibited_definitely_save",
+        "value": "definitely save",
+        "_sources": [
+          {
+            "uri": "https://www.naic.org/compliance/",
+            "accessedDate": "2025-11-12T00:00:00.000Z",
+            "confidence": "high",
+            "primary": true
+          }
+        ]
+      },
+      {
+        "_id": "fld_prohibited_best_rate_guaranteed",
+        "value": "best rate guaranteed",
+        "_sources": [
+          {
+            "uri": "https://www.naic.org/compliance/",
+            "accessedDate": "2025-11-12T00:00:00.000Z",
+            "confidence": "high",
+            "primary": true
+          }
+        ]
+      },
+      {
+        "_id": "fld_prohibited_lowest_price_guaranteed",
+        "value": "lowest price guaranteed",
+        "_sources": [
+          {
+            "uri": "https://www.naic.org/compliance/",
+            "accessedDate": "2025-11-12T00:00:00.000Z",
+            "confidence": "high",
+            "primary": true
+          }
+        ]
+      },
+      {
+        "_id": "fld_prohibited_guaranteed_quote",
+        "value": "guaranteed quote",
+        "_sources": [
+          {
+            "uri": "https://www.naic.org/compliance/",
+            "accessedDate": "2025-11-12T00:00:00.000Z",
+            "confidence": "high",
+            "primary": true
+          }
+        ]
+      },
+      {
+        "_id": "fld_prohibited_binding_quote",
+        "value": "binding quote",
+        "_sources": [
+          {
+            "uri": "https://www.naic.org/compliance/",
+            "accessedDate": "2025-11-12T00:00:00.000Z",
+            "confidence": "high",
+            "primary": true
+          }
+        ]
+      },
+      {
+        "_id": "fld_prohibited_final_price",
+        "value": "final price",
+        "_sources": [
+          {
+            "uri": "https://www.naic.org/compliance/",
+            "accessedDate": "2025-11-12T00:00:00.000Z",
+            "confidence": "high",
+            "primary": true
+          }
+        ]
+      },
+      {
+        "_id": "fld_prohibited_exact_price",
+        "value": "exact price",
+        "_sources": [
+          {
+            "uri": "https://www.naic.org/compliance/",
+            "accessedDate": "2025-11-12T00:00:00.000Z",
+            "confidence": "high",
+            "primary": true
+          }
+        ]
+      },
+      {
+        "_id": "fld_prohibited_medical_advice",
+        "value": "medical advice",
+        "_sources": [
+          {
+            "uri": "https://www.naic.org/compliance/",
+            "accessedDate": "2025-11-12T00:00:00.000Z",
+            "confidence": "high",
+            "primary": true
+          }
+        ]
+      },
+      {
+        "_id": "fld_prohibited_health_advice",
+        "value": "health advice",
+        "_sources": [
+          {
+            "uri": "https://www.naic.org/compliance/",
+            "accessedDate": "2025-11-12T00:00:00.000Z",
+            "confidence": "high",
+            "primary": true
+          }
+        ]
+      }
+    ]
+  }
+}
+
