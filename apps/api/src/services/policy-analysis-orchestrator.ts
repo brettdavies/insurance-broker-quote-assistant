@@ -1,20 +1,14 @@
-import type {
-  BundleOption,
-  Carrier,
-  PolicyAnalysisResult,
-  PolicySummary,
-  ValidatedOpportunity,
-} from '@repo/shared'
+import type { PolicyAnalysisResult, PolicySummary } from '@repo/shared'
 import { DEFAULT_GEMINI_MODEL } from '@repo/shared'
 import { createDecisionTrace, logDecisionTrace } from '../utils/decision-trace'
-import { logError, logInfo } from '../utils/logger'
-import { validateOutput } from './compliance-filter'
-import { analyzeBundleOptions } from './discount-engine'
-import { DiscountRulesValidator } from './discount-rules-validator'
 import * as knowledgePackRAG from './knowledge-pack-rag'
 import type { LLMProvider } from './llm-provider'
-import { PitchGenerator } from './pitch-generator'
-import { PolicyAnalysisAgent } from './policy-analysis-agent'
+import { analyzeBundleOpportunities } from './policy-analysis-orchestrator/steps/analyze-bundles'
+import { applyComplianceFilter } from './policy-analysis-orchestrator/steps/apply-compliance'
+import { generatePitch } from './policy-analysis-orchestrator/steps/generate-pitch'
+import { runPolicyAnalysis } from './policy-analysis-orchestrator/steps/run-analysis'
+import { validateOpportunities } from './policy-analysis-orchestrator/steps/validate-opportunities'
+import { validatePolicyAndGetCarrier } from './policy-analysis-orchestrator/steps/validate-policy'
 
 export interface PolicyAnalysisOrchestratorOptions {
   policySummary: PolicySummary
@@ -46,193 +40,44 @@ export async function orchestratePolicyAnalysis(
 ): Promise<PolicyAnalysisOrchestratorResult> {
   const { policySummary, policyText, llmProvider } = options
 
-  // Step 1: Validate policy summary has minimum required fields
-  if (!policySummary.carrier || !policySummary.state || !policySummary.productType) {
-    throw new Error(
-      'Policy summary missing required fields: carrier, state, and productType are required'
-    )
-  }
+  // Step 1: Validate policy summary and get carrier
+  const carrier = validatePolicyAndGetCarrier(policySummary)
 
-  // Step 2: Get carrier from knowledge pack
-  const carrier = knowledgePackRAG.getCarrierByName(policySummary.carrier)
-  if (!carrier) {
-    throw new Error(`Carrier "${policySummary.carrier}" not found in knowledge pack`)
-  }
-
-  // Step 3: Call Policy Analysis Agent
-  const analysisAgent = new PolicyAnalysisAgent(llmProvider)
-  let rawAnalysisResult: Awaited<ReturnType<PolicyAnalysisAgent['analyzePolicy']>>
-  let analysisTokens = 0
-  let analysisTime = 0
-
-  try {
-    const result = await analysisAgent.analyzePolicy(policySummary, policyText)
-    rawAnalysisResult = result
-    analysisTokens = result._metadata?.tokensUsed || 0
-    analysisTime = result._metadata?.analysisTime || 0
-  } catch (error) {
-    const errorMessage = error instanceof Error ? error.message : String(error)
-    await logError('Policy analysis failed', error as Error, {
-      type: 'policy_analysis_error',
-      carrier: policySummary.carrier,
-      state: policySummary.state,
-      errorMessage,
-    })
-    throw error
-  }
-
-  // Step 3.5: Call Bundle Analyzer to detect bundle opportunities
-  let bundleOptionsFromAnalyzer: BundleOption[] = []
-  try {
-    bundleOptionsFromAnalyzer = analyzeBundleOptions(carrier, policySummary, undefined)
-    await logInfo('Bundle analysis completed', {
-      type: 'bundle_analysis_success',
-      carrier: policySummary.carrier,
-      state: policySummary.state,
-      bundleOptionsCount: bundleOptionsFromAnalyzer.length,
-    })
-  } catch (error) {
-    await logError('Bundle analysis failed', error as Error, {
-      type: 'bundle_analysis_error',
-      carrier: policySummary.carrier,
-      state: policySummary.state,
-    })
-    // Continue with other opportunities if bundle analysis fails
-    bundleOptionsFromAnalyzer = []
-  }
-
-  // Merge bundle options from analyzer with LLM-generated ones
-  // Deduplicate by product to avoid showing the same opportunity twice
-  const allBundleOptions = [...rawAnalysisResult.bundleOptions, ...bundleOptionsFromAnalyzer]
-  const uniqueBundleOptions = allBundleOptions.reduce((acc: BundleOption[], option) => {
-    const existing = acc.find((opt) => opt.product === option.product)
-    if (!existing) {
-      acc.push(option)
-    } else {
-      // Keep the one with higher estimated savings
-      if (option.estimatedSavings > existing.estimatedSavings) {
-        const index = acc.indexOf(existing)
-        acc[index] = option
-      }
-    }
-    return acc
-  }, [])
-
-  // Step 4: Validate opportunities using Discount Rules Validator
-  const discountValidator = new DiscountRulesValidator(knowledgePackRAG)
-  // Initialize with raw opportunities as fallback (will be replaced if validation succeeds)
-  let validatedOpportunities: ValidatedOpportunity[] = rawAnalysisResult.opportunities.map(
-    (opp) => ({
-      ...opp,
-      confidenceScore: 0,
-      validationDetails: {
-        rulesEvaluated: [],
-        missingData: [],
-        eligibilityChecks: {
-          discountFound: false,
-          eligibilityValidated: false,
-          savingsCalculated: false,
-          stackingValidated: false,
-        },
-      },
-      requiresDocumentation: false,
-      validatedAt: new Date().toISOString(),
-    })
+  // Step 2: Run policy analysis
+  const { result: rawAnalysisResult, tokens: analysisTokens } = await runPolicyAnalysis(
+    policySummary,
+    policyText,
+    llmProvider
   )
 
-  let validationResults: {
-    rulesEvaluated: Array<{
-      rule: string
-      citation: { id: string; type: string; carrier: string; file: string }
-      result: 'pass' | 'fail' | 'partial'
-    }>
-    confidenceScores: Record<string, number>
-    stackingResults?: {
-      validCombinations: string[][]
-      conflicts: Array<{ opportunity1: string; opportunity2: string; reason: string }>
-      maxStackable?: number
-    }
-  } | null = null
+  // Step 3: Analyze bundle opportunities
+  const { uniqueBundleOptions, bundleOptionsFromAnalyzer } = await analyzeBundleOpportunities(
+    carrier,
+    policySummary,
+    rawAnalysisResult.bundleOptions
+  )
 
-  try {
-    // Note: customerData is not available in policy flow, pass undefined
-    validatedOpportunities = await discountValidator.validateOpportunities(
-      rawAnalysisResult.opportunities,
-      policySummary,
-      carrier,
-      undefined // customerData not available in policy analysis flow
-    )
+  // Step 4: Validate opportunities
+  const { validatedOpportunities, validationResults } = await validateOpportunities(
+    rawAnalysisResult.opportunities,
+    policySummary,
+    carrier
+  )
 
-    // Extract validation results for decision trace
-    const allRulesEvaluated = validatedOpportunities.flatMap(
-      (opp) => opp.validationDetails.rulesEvaluated
-    )
-    const confidenceScores: Record<string, number> = {}
-    for (const opp of validatedOpportunities) {
-      confidenceScores[opp.citation.id] = opp.confidenceScore
-    }
+  // Step 5: Generate pitch
+  const { pitch: initialPitch, tokens: pitchTokens } = await generatePitch(
+    validatedOpportunities,
+    uniqueBundleOptions,
+    rawAnalysisResult.deductibleOptimizations,
+    policySummary,
+    llmProvider
+  )
 
-    // Get stacking results
-    const { validateStacking } = await import('./discount-rules-validator/stacking-validator')
-    const stackingResults = validateStacking(validatedOpportunities, carrier)
-
-    validationResults = {
-      rulesEvaluated: allRulesEvaluated,
-      confidenceScores,
-      stackingResults: {
-        validCombinations: stackingResults.validCombinations,
-        conflicts: stackingResults.conflicts,
-        maxStackable: stackingResults.maxStackable,
-      },
-    }
-  } catch (error) {
-    await logError('Discount validation failed', error as Error, {
-      type: 'discount_validation_error',
-      carrier: policySummary.carrier,
-    })
-    // Continue with unvalidated opportunities if validation fails
-  }
-
-  // Step 5: Generate pitch using Pitch Generator Agent
-  const pitchGenerator = new PitchGenerator(llmProvider)
-  let pitch = ''
-  let pitchTokens = 0
-
-  try {
-    const pitchResult = await pitchGenerator.generatePitch(
-      validatedOpportunities,
-      uniqueBundleOptions,
-      rawAnalysisResult.deductibleOptimizations,
-      policySummary
-    )
-    pitch = pitchResult as string
-    pitchTokens =
-      (pitchResult as { _metadata?: { tokensUsed?: number } })._metadata?.tokensUsed || 0
-  } catch (error) {
-    await logError('Pitch generation failed in policy analyze', error as Error, {
-      type: 'pitch_generation_error',
-      carrier: policySummary.carrier,
-    })
-    // Use fallback pitch
-    pitch =
-      "Based on our analysis, we've identified several savings opportunities. Please review the detailed recommendations below."
-  }
-
-  // Step 6: Run compliance filter on pitch
-  let complianceResult: ReturnType<typeof validateOutput>
-  try {
-    complianceResult = validateOutput(pitch, policySummary.state, policySummary.productType)
-  } catch (error) {
-    await logError('Compliance filter error in policy analyze', error as Error, {
-      type: 'compliance_error',
-    })
-    complianceResult = {
-      passed: false,
-      disclaimers: [],
-    }
-  }
+  // Step 6: Apply compliance filter
+  const complianceResult = applyComplianceFilter(initialPitch, policySummary)
 
   // If compliance check failed, replace pitch with replacement message
+  let pitch = initialPitch
   if (!complianceResult.passed && complianceResult.replacementMessage) {
     pitch = complianceResult.replacementMessage
   }
