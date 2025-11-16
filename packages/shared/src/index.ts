@@ -191,6 +191,16 @@ export {
   type NormalizedField,
 } from './utils/field-normalization'
 
+// Export unified field extraction orchestrator (single source of truth for FE and BE)
+export {
+  runDeterministicExtraction,
+  runInferenceEngine,
+  extractFieldsFrontend,
+  extractFieldsBackendPreLLM,
+  validateAndReExtractPostLLM,
+  type ExtractionResult,
+} from './utils/field-extraction-orchestrator'
+
 // Re-export all constants
 export * from './index/constants'
 

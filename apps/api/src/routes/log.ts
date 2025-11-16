@@ -86,7 +86,23 @@ export function createLogRoute() {
             break
           case 'error': {
             // For errors, extract error object if present in data
-            const error = data?.error instanceof Error ? data.error : new Error(message)
+            // Handle both Error instances and serialized errors (from frontend JSON)
+            let error: Error
+            if (data?.error instanceof Error) {
+              error = data.error
+            } else if (
+              data?.error &&
+              typeof data.error === 'object' &&
+              'message' in data.error &&
+              'stack' in data.error
+            ) {
+              // Reconstruct Error from serialized frontend error
+              error = new Error(String(data.error.message))
+              error.name = String(data.error.name || 'Error')
+              error.stack = String(data.error.stack || '')
+            } else {
+              error = new Error(message)
+            }
             await logger.logError(message, error, data)
             break
           }

@@ -64,7 +64,13 @@ export function buildTraceSection(
  * Build input and processing section
  */
 function buildInputSection(trace: DecisionTrace, testCase?: TestCase): string {
-  const inputs = trace.inputs as { message?: string; pills?: unknown } | undefined
+  const inputs = trace.inputs as {
+    message?: string
+    pills?: unknown
+    knownFields?: unknown
+    inferredFields?: unknown
+    suppressedFields?: string[]
+  } | undefined
   if (!inputs) return ''
 
   const sections: string[] = []
@@ -75,12 +81,36 @@ function buildInputSection(trace: DecisionTrace, testCase?: TestCase): string {
     sections.push(`**Original Test Input:**\n\`\`\`\n${testCase.input}\n\`\`\`\n`)
   }
 
-  // Show extracted pills
+  // Show known fields (from frontend pills - explicitly typed by broker)
+  const hasKnownFields = inputs.knownFields && Object.keys(inputs.knownFields as object).length > 0
+  if (hasKnownFields) {
+    sections.push(
+      `\n**Known Fields (from FE pills):**\n\`\`\`json\n${JSON.stringify(inputs.knownFields, null, 2)}\n\`\`\`\n`
+    )
+  }
+
+  // Show inferred fields (from text patterns)
+  const hasInferredFields =
+    inputs.inferredFields && Object.keys(inputs.inferredFields as object).length > 0
+  if (hasInferredFields) {
+    sections.push(
+      `\n**Inferred Fields (from text patterns):**\n\`\`\`json\n${JSON.stringify(inputs.inferredFields, null, 2)}\n\`\`\`\n`
+    )
+  }
+
+  // Show suppressed fields (explicitly dismissed by broker)
+  if (inputs.suppressedFields && inputs.suppressedFields.length > 0) {
+    sections.push(
+      `\n**Suppressed Fields (dismissed by broker):**\n\`\`\`json\n${JSON.stringify(inputs.suppressedFields, null, 2)}\n\`\`\`\n`
+    )
+  }
+
+  // Show extracted pills (for backward compatibility)
   if (inputs.pills && Object.keys(inputs.pills as object).length > 0) {
     sections.push(
       `\n**Extracted Pills (removed from text):**\n\`\`\`json\n${JSON.stringify(inputs.pills, null, 2)}\n\`\`\`\n`
     )
-  } else {
+  } else if (!hasKnownFields && !hasInferredFields) {
     sections.push('\n**Extracted Pills:** None\n')
   }
 

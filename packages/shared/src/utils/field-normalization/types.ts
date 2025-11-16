@@ -12,7 +12,7 @@
  */
 export interface NormalizedField {
   fieldName: string
-  value: string | number | boolean
+  value: string | number | boolean | any[] | Record<string, any> | null
   originalText: string
   startIndex: number
   endIndex: number

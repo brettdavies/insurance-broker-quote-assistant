@@ -11,6 +11,7 @@ export { extractState, extractStateFromText } from './state-extractor'
 // Numeric field extraction
 export {
   extractAge,
+  extractCreditScore,
   extractDrivers,
   extractHouseholdSize,
   extractKids,

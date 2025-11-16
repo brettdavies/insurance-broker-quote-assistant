@@ -9,6 +9,7 @@ import type { NormalizedField } from '../types'
 import { extractCleanRecord, extractOwnsHome } from './boolean-extractors'
 import {
   extractAge,
+  extractCreditScore,
   extractDrivers,
   extractHouseholdSize,
   extractKids,
@@ -48,7 +49,8 @@ export function extractNormalizedFields(text: string): NormalizedField[] {
     extractHouseholdSize, // Extract explicit household size mentions
     extractOwnsHome,
     extractZip, // Extract "zip 90210" → zip: "90210"
-    extractAge,
+    extractAge, // Extract "35yo", "age 35", "35 years old" → age: 35
+    extractCreditScore, // Extract "credit 750", "score 750", "credit score 720" → creditScore: 750
   ]
 
   for (const extractor of extractors) {

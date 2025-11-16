@@ -38,8 +38,8 @@ Extract all mentioned fields from these notes. Look for:
 - zip: zip code (may be mentioned as "zip 90210", "90210", "zip code is 90210", etc.)
 - vehicles: number of vehicles (for auto insurance)
 - drivers: number of drivers (for auto insurance)
-- cleanRecord3Yr: clean driving record for 3 years (may be mentioned as "clean record 3yrs", "clean record 3 years", "no accidents 3 years", etc.)
-- cleanRecord5Yr: clean driving record for 5 years (may be mentioned as "clean record 5yrs", "clean record 5 years", "no accidents 5 years", etc.)
+- cleanRecord3Yr: clean driving record for 3 years (may be mentioned as "clean record 3yrs", "clean record 3 years", "no accidents 3 years", "0 accidents 3 years", etc.). IMPORTANT: "no accidents" or "0 accidents" without a time period indicates a clean record - use cleanRecord5Yr if driving experience ≥5 years, otherwise cleanRecord3Yr.
+- cleanRecord5Yr: clean driving record for 5 years (may be mentioned as "clean record 5yrs", "clean record 5 years", "no accidents 5 years", "0 accidents 5 years", etc.). IMPORTANT: "no accidents" or "0 accidents" without a time period indicates a clean record - use cleanRecord5Yr if driving experience ≥5 years, otherwise cleanRecord3Yr.
 
 Example 1 (input):
 "CA auto. 2 cars, 2 drivers. Clean record 5 years."
@@ -60,7 +60,7 @@ Example 1 (output):
 }
 
 Example 2 (input):
-"CA auto. 35yo. 2 cars, 2 drivers. Clean record 5yrs. Owns home. Zip 90210"
+"CA auto. 35yo. 2 cars, 2 drivers. Clean record 4yrs. Owns home. Zip 90210"
 
 Example 2 (output):
 {
@@ -69,10 +69,26 @@ Example 2 (output):
   "age": 35,
   "vehicles": 2,
   "drivers": 2,
-  "cleanRecord5Yr": true,
-  "cleanRecord3Yr": null,
+  "cleanRecord5Yr": null,
+  "cleanRecord3Yr": true,
   "ownsHome": true,
   "zip": "90210",
+  "creditScore": null,
+  "existingPolicies": null,
+  ... [all unmentioned fields as null]
+}
+
+Example 3 (input):
+"CA auto. Age 25. 1 car - 2019 Civic. 6yrs driving. No accidents."
+
+Example 3 (output):
+{
+  "state": "CA",
+  "productType": "auto",
+  "age": 25,
+  "vehicles": 1,
+  "cleanRecord5Yr": true,
+  "cleanRecord3Yr": null,
   "creditScore": null,
   "existingPolicies": null,
   ... [all unmentioned fields as null]

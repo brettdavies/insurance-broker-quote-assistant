@@ -45,26 +45,47 @@ export function extractOwnsHome(text: string): NormalizedField | null {
 
 /**
  * Extract clean driving record from broker notes
- * Looks for patterns like "clean record 3yrs", "clean record 5 years", "no accidents 3 years"
+ * Looks for patterns like:
+ * - "clean record 3yrs", "clean record 5 years", "no accidents 3 years"
+ * - "3 years clean", "5 clean", "3yr clean" (number-first patterns)
  */
 export function extractCleanRecord(text: string): NormalizedField | null {
   const lowerText = text.toLowerCase()
 
-  // Pattern: "clean record X years/yrs" or "no accidents X years/yrs"
+  // Pattern 1: "clean record X years/yrs" or "no accidents X years/yrs"
   const cleanRecordPattern =
     /\b(clean record|no accidents|accident[- ]free)\s+(\d+)\s*(?:years?|yrs?)(?:\s|$|\.|\,)/i
-  const match = text.match(cleanRecordPattern)
-  if (match?.[2]) {
-    const years = Number.parseInt(match[2], 10)
+  const match1 = text.match(cleanRecordPattern)
+  if (match1?.[2]) {
+    const years = Number.parseInt(match1[2], 10)
     if (!Number.isNaN(years) && years > 0) {
-      const startIndex = match.index ?? 0
+      const startIndex = match1.index ?? 0
       const fieldName = years >= 5 ? 'cleanRecord5Yr' : 'cleanRecord3Yr'
       return {
         fieldName,
         value: true,
-        originalText: match[0],
+        originalText: match1[0],
         startIndex,
-        endIndex: startIndex + match[0].length,
+        endIndex: startIndex + match1[0].length,
+      }
+    }
+  }
+
+  // Pattern 2: "X years clean" or "X clean" (number-first patterns)
+  // Matches: "3 years clean", "5 clean", "3yr clean", "5yrs clean"
+  const reversedPattern = /\b(\d+)\s*(?:years?|yrs?)?\s+clean(?:\s+record)?(?:\s|$|\.|\,)/i
+  const match2 = text.match(reversedPattern)
+  if (match2?.[1]) {
+    const years = Number.parseInt(match2[1], 10)
+    if (!Number.isNaN(years) && years > 0) {
+      const startIndex = match2.index ?? 0
+      const fieldName = years >= 5 ? 'cleanRecord5Yr' : 'cleanRecord3Yr'
+      return {
+        fieldName,
+        value: true,
+        originalText: match2[0],
+        startIndex,
+        endIndex: startIndex + match2[0].length,
       }
     }
   }

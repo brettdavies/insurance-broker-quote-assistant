@@ -42,4 +42,6 @@ NEVER:
 PATTERNS ONLY:
 - "CA auto" → state: "CA", productType: "auto"
 - "clean record 5yrs" → cleanRecord5Yr: true
+- "no accidents" or "0 accidents" → cleanRecord5Yr: true (if driving experience ≥5 years) or cleanRecord3Yr: true (if <5 years)
+- "6yrs driving. No accidents." → cleanRecord5Yr: true (6 years ≥ 5 years)
 - "35yo" → age: 35

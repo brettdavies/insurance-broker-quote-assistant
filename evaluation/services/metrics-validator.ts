@@ -32,7 +32,11 @@ export function validateMetrics(report: EvaluationReport): void {
     )
   }
 
-  if (overallMetrics.pitchClarityAverage < TARGETS.pitchClarity) {
+  // Only validate pitch clarity for policy tests (not conversational)
+  if (
+    overallMetrics.policy.testCount > 0 &&
+    overallMetrics.pitchClarityAverage < TARGETS.pitchClarity
+  ) {
     errors.push(
       `Pitch clarity ${overallMetrics.pitchClarityAverage}% below ${TARGETS.pitchClarity}% threshold`
     )

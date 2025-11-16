@@ -17,6 +17,15 @@
 | **State** | {{state}} |
 | **Product** | {{product}} |
 
+## LLM Token Usage & Cost
+
+| Metric | Value |
+|--------|-------|
+
+| **Input Tokens** | {{inputTokens}} |
+| **Output Tokens** | {{outputTokens}} |
+| **Estimated Cost** | {{cost}} |
+
 ---
 
 ## Overall Scores
@@ -42,14 +51,6 @@
 ## Detailed Trace
 
 {{traceSection}}
-
-## LLM Token Usage & Cost
-
-| Metric | Value |
-|--------|-------|
-| **Input Tokens** | {{inputTokens}} |
-| **Output Tokens** | {{outputTokens}} |
-| **Estimated Cost** | {{cost}} |
 
 ---
 

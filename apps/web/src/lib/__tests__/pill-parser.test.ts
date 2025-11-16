@@ -1,10 +1,5 @@
 import { describe, expect, it } from 'bun:test'
-import {
-  type ParsedKeyValue,
-  extractFields,
-  getFieldName,
-  parseKeyValueSyntax,
-} from '../pill-parser'
+import { type ParsedKeyValue, extractFields, parseKeyValueSyntax } from '../pill-parser'
 
 describe('Key-Value Parser', () => {
   describe('parseKeyValueSyntax', () => {
@@ -271,31 +266,6 @@ describe('Key-Value Parser', () => {
       expect(typeof fields.name).toBe('string')
       expect(fields.state).toBe('CA')
       expect(fields.name).toBe('John')
-    })
-  })
-
-  describe('getFieldName', () => {
-    it('returns field name for valid alias', () => {
-      expect(getFieldName('k')).toBe('kids')
-      expect(getFieldName('kids')).toBe('kids')
-      expect(getFieldName('v')).toBe('vehicles')
-      expect(getFieldName('state')).toBe('state')
-    })
-
-    it('returns undefined for invalid alias', () => {
-      expect(getFieldName('xyz')).toBeUndefined()
-      expect(getFieldName('invalid')).toBeUndefined()
-    })
-
-    it('handles case-insensitive lookups', () => {
-      expect(getFieldName('K')).toBe('kids')
-      expect(getFieldName('STATE')).toBe('state')
-    })
-
-    it('returns creditScore for j alias', () => {
-      expect(getFieldName('j')).toBe('creditScore')
-      expect(getFieldName('credit')).toBe('creditScore')
-      expect(getFieldName('score')).toBe('creditScore')
     })
   })
 

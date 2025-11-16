@@ -20,6 +20,7 @@ export {
   extractKids,
   extractHouseholdSize,
   extractAge,
+  extractCreditScore,
   extractOwnsHome,
   extractCleanRecord,
   extractZip,

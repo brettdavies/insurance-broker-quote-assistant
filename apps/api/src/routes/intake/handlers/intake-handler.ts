@@ -127,7 +127,10 @@ export async function handleIntake(
       'conversational',
       {
         message, // Cleaned text (pills removed)
-        pills, // Extracted pill data
+        pills, // Extracted pill data (backward compatibility)
+        knownFields, // Pills as known fields
+        inferredFields, // Fields inferred from text patterns
+        suppressedFields, // Fields explicitly dismissed by broker
       },
       {
         method: extractionResult.extractionMethod,

@@ -1,15 +1,17 @@
 import fs from 'node:fs'
 import path from 'node:path'
-import type { UserProfile } from '@repo/shared'
+import type { NormalizedField, UserProfile } from '@repo/shared'
 import {
   CONFIDENCE_THRESHOLD_HIGH,
   DEFAULT_EXTRACTION_TEMPERATURE,
   buildSystemPrompt,
   buildUserPrompt,
+  extractFieldsBackendPreLLM,
   extractStateFromText,
   getAllUserProfileFieldNames,
   separateKnownFromInferred,
   userProfileSchema,
+  validateAndReExtractPostLLM,
 } from '@repo/shared'
 import { hasKeyValueSyntax } from '../utils/key-value-parser'
 import { logDebug, logError } from '../utils/logger'
@@ -101,7 +103,44 @@ export class ConversationalExtractor {
   }
 
   /**
+   * Convert NormalizedField[] to Partial<UserProfile>
+   */
+  private normalizedFieldsToProfile(fields: NormalizedField[]): Partial<UserProfile> {
+    const profile: Partial<UserProfile> = {}
+    for (const field of fields) {
+      // @ts-expect-error - Dynamic field assignment
+      profile[field.fieldName] = field.value
+    }
+    return profile
+  }
+
+  /**
+   * Convert Partial<UserProfile> to NormalizedField[]
+   */
+  private profileToNormalizedFields(profile: Partial<UserProfile>): NormalizedField[] {
+    const fields: NormalizedField[] = []
+    for (const [key, value] of Object.entries(profile)) {
+      if (value !== undefined) {
+        fields.push({
+          fieldName: key,
+          value,
+          originalText: `${key}:${value}`,
+          startIndex: 0,
+          endIndex: 0,
+        })
+      }
+    }
+    return fields
+  }
+
+  /**
    * Extract structured fields from broker message
+   *
+   * UNIFIED EXTRACTION FLOW (used by both FE and BE):
+   * 1. Run deterministic extraction (key-value + regex) + inference
+   * 2. Send remaining text to LLM (not full message)
+   * 3. Re-run deterministic extraction on LLM results
+   * 4. Loop until convergence (max 3 iterations)
    *
    * @param message - Current broker message (cleaned text without pills)
    * @param knownFields - Optional known fields explicitly set by broker (read-only for LLM)
@@ -115,40 +154,96 @@ export class ConversationalExtractor {
     inferredFields?: Partial<UserProfile>,
     suppressedFields?: string[]
   ): Promise<ExtractionResult> {
-    await logDebug('Conversational extractor: extractFields called', {
+    await logDebug('Conversational extractor: extractFields called (unified flow)', {
       knownFields,
       inferredFields,
       suppressedFields,
     })
     try {
-      // Step 1: Try key-value parser first (instant, free, deterministic)
-      if (hasKeyValueSyntax(message)) {
-        return extractFieldsWithKeyValue(message, (profile) => this.calculateMissingFields(profile))
+      // Step 1: Run unified deterministic extraction (key-value + regex + inference)
+      const { fields: deterministicFields, remainingText } = extractFieldsBackendPreLLM(message)
+      const deterministicProfile = this.normalizedFieldsToProfile(deterministicFields)
+
+      await logDebug('Deterministic extraction results', {
+        extractedFields: Object.keys(deterministicProfile),
+        remainingText,
+      })
+
+      // Step 2: Check if we need LLM (if no remaining text or we have enough fields)
+      if (remainingText.trim().length === 0) {
+        // All patterns extracted, no need for LLM
+        return {
+          profile: deterministicProfile,
+          known: deterministicProfile,
+          extractionMethod: 'key-value',
+          confidence: Object.fromEntries(
+            Object.keys(deterministicProfile).map((key) => [key, 100])
+          ),
+          missingFields: this.calculateMissingFields(deterministicProfile),
+        }
       }
 
-      // Step 2: Use LLM for natural language extraction
-      // Build custom prompts with known/inferred/suppressed fields
+      // Step 3: Use LLM for remaining natural language text
       const systemPrompt = this.buildSystemPrompt(
-        knownFields || {},
+        { ...knownFields, ...deterministicProfile }, // Include deterministic fields as known
         inferredFields || {},
         suppressedFields || []
       )
       const userPrompt = this.buildUserPrompt(
-        message,
-        knownFields || {},
+        remainingText, // Only send remaining text to LLM
+        { ...knownFields, ...deterministicProfile },
         inferredFields || {},
         suppressedFields || []
       )
 
-      return extractFieldsWithLLM(
+      const llmResult = await extractFieldsWithLLM(
         this.llmProvider,
-        message,
+        remainingText,
         systemPrompt,
         userPrompt,
-        knownFields || {},
+        { ...knownFields, ...deterministicProfile }, // Pass deterministic fields to LLM
         suppressedFields || [],
         (profile) => this.calculateMissingFields(profile)
       )
+
+      // Step 4: Post-LLM validation loop (re-run deterministic extraction until convergence)
+      let currentFields = this.profileToNormalizedFields(llmResult.profile)
+      let iterations = 0
+      const MAX_ITERATIONS = 3
+
+      while (iterations < MAX_ITERATIONS) {
+        const { fields: validatedFields, hasChanges } = validateAndReExtractPostLLM(
+          message,
+          currentFields
+        )
+
+        await logDebug(`Post-LLM validation iteration ${iterations + 1}`, {
+          hasChanges,
+          fieldCount: validatedFields.length,
+        })
+
+        if (!hasChanges) {
+          // Convergence reached, no more changes
+          break
+        }
+
+        currentFields = validatedFields
+        iterations++
+      }
+
+      // Convert final fields to profile
+      const finalProfile = this.normalizedFieldsToProfile(currentFields)
+
+      // Return combined result
+      return {
+        profile: finalProfile,
+        known: finalProfile,
+        extractionMethod: 'llm',
+        confidence: llmResult.confidence,
+        missingFields: this.calculateMissingFields(finalProfile),
+        reasoning: llmResult.reasoning,
+        tokenUsage: llmResult.tokenUsage,
+      }
     } catch (error) {
       // Log error but return partial result (graceful degradation)
       await logError('Extraction failed', error as Error, {

@@ -230,3 +230,29 @@ export function extractAge(text: string): NormalizedField | null {
 
   return null
 }
+
+/**
+ * Extract credit score from broker notes
+ * Looks for patterns like "credit 750", "score 650", "credit score 720"
+ */
+export function extractCreditScore(text: string): NormalizedField | null {
+  const lowerText = text.toLowerCase()
+
+  // Pattern: "credit 750" or "credit: 750" or "score 750" or "credit score 720"
+  const creditMatch = lowerText.match(/\b(?:credit\s*(?:score)?\s*:?\s*|score\s*:?\s*)(\d{3})\b/i)
+  if (creditMatch?.[1]) {
+    const num = Number.parseInt(creditMatch[1], 10)
+    if (!Number.isNaN(num) && num >= 300 && num <= 850) {
+      const startIndex = creditMatch.index ?? 0
+      return {
+        fieldName: 'creditScore',
+        value: num,
+        originalText: creditMatch[0],
+        startIndex,
+        endIndex: startIndex + creditMatch[0].length,
+      }
+    }
+  }
+
+  return null
+}

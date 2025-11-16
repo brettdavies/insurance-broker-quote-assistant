@@ -1,233 +1,184 @@
 /**
- * KeyValuePlugin - Lexical plugin for key-value pill transformation
+ * KeyValuePlugin - Lexical plugin for unified field extraction
  *
- * Detects key-value syntax (e.g., k:5, deps:4) in text nodes and transforms
- * them into PillNode instances with proper validation.
+ * Triggers extraction ONLY on delimiter keys (space, comma, period, enter).
+ * Extracts from FULL editor content in a SINGLE call to the orchestrator.
+ * Uses the SAME extraction logic as backend for consistency.
  *
- * Uses SINGLE transformation path (mutation listener) to follow DRY/STAR principles.
- * Single Responsibility: Plugin registration and event handling only
+ * Single Responsibility: Plugin registration and delimiter-based extraction triggering
  */
 
-import { checkDelimiterForTransformation } from '@/hooks/useDelimiterDetection'
-import { transformTextToPills } from '@/hooks/usePillTransformation'
 import { parseKeyValueSyntax } from '@/lib/pill-parser'
 import { useLexicalComposerContext } from '@lexical/react/LexicalComposerContext'
 import {
-  $getNodeByKey,
-  $getSelection,
-  $isRangeSelection,
+  $getRoot,
   $isTextNode,
   COMMAND_PRIORITY_LOW,
-  KEY_ARROW_LEFT_COMMAND,
-  KEY_ARROW_RIGHT_COMMAND,
+  KEY_ENTER_COMMAND,
   KEY_SPACE_COMMAND,
   TextNode,
 } from 'lexical'
-import { useEffect, useRef } from 'react'
+import { useEffect } from 'react'
+import { $createPillNode, $isPillNode } from '../nodes/PillNode'
 
 export function KeyValuePlugin(): null {
   const [editor] = useLexicalComposerContext()
-  const previousEditingNodeRef = useRef<TextNode | null>(null)
 
   useEffect(() => {
-    // Single transformation path: mutation listener
-    // This catches all text node changes (typing, paste, programmatic updates)
-    const removeMutationListener = editor.registerMutationListener(TextNode, (mutatedNodes) => {
+    /**
+     * Extract fields from full editor content and create pills
+     * Called ONLY on delimiter keys (space, comma, period, enter)
+     */
+    function extractAndCreatePills() {
       editor.update(() => {
-        const selection = $getSelection()
+        const root = $getRoot()
+        const allTextNodes: TextNode[] = []
 
-        for (const [nodeKey, mutation] of mutatedNodes) {
-          if (mutation === 'updated' || mutation === 'created') {
-            const node = $getNodeByKey(nodeKey)
-            if (!$isTextNode(node)) {
-              continue
-            }
+        // Recursively collect all text nodes (skip pill nodes to avoid extracting from already-processed text)
+        function collectTextNodes(node: any) {
+          // Skip pill nodes - they're already processed
+          if ($isPillNode(node)) {
+            return
+          }
 
-            const text = node.getTextContent()
-            let parsed = parseKeyValueSyntax(text)
-
-            if (parsed.length === 0) {
-              continue
-            }
-
-            // Check if user is actively editing this specific node
-            const isEditing =
-              $isRangeSelection(selection) &&
-              selection.isCollapsed() &&
-              selection.anchor.getNode() === node
-
-            // Track which node is being edited
-            if (isEditing) {
-              previousEditingNodeRef.current = node
-            }
-
-            // Use delimiter detection utility
-            const { shouldTransform, shouldSuppressDelimiter } = checkDelimiterForTransformation(
-              text,
-              node,
-              isEditing
-            )
-
-            if (!shouldTransform) {
-              // Still typing - wait for delimiter or cursor movement
-              continue
-            }
-
-            // If we need to suppress the delimiter, remove it from the text before transforming
-            let textToTransform = text
-            if (shouldSuppressDelimiter) {
-              textToTransform = text.slice(0, -1)
-              // Update the node text to remove the delimiter
-              node.setTextContent(textToTransform)
-              // Adjust cursor position if it was at the end (now out of bounds)
-              const selection = $getSelection()
-              if ($isRangeSelection(selection) && selection.isCollapsed()) {
-                const anchorNode = selection.anchor.getNode()
-                if (anchorNode === node) {
-                  const newOffset = Math.min(selection.anchor.offset, textToTransform.length)
-                  if (newOffset !== selection.anchor.offset) {
-                    node.select(newOffset, newOffset)
-                  }
-                }
-              }
-              // Reparse with the updated text
-              parsed = parseKeyValueSyntax(textToTransform)
-            }
-
-            // Transform text into pills
-            transformTextToPills(node, parsed)
-
-            // Clear tracking if this was the node being edited
-            if (previousEditingNodeRef.current === node) {
-              previousEditingNodeRef.current = null
+          if ($isTextNode(node)) {
+            allTextNodes.push(node)
+          } else {
+            const children = node.getChildren ? node.getChildren() : []
+            for (const child of children) {
+              collectTextNodes(child)
             }
           }
         }
-      })
-    })
 
-    // Helper function to check the previously edited node and transform if needed
-    // Called when cursor moves away (click or arrow keys)
-    function checkPreviouslyEditedNode() {
-      const nodeToCheck = previousEditingNodeRef.current
+        root.getChildren().forEach((child) => {
+          collectTextNodes(child)
+        })
 
-      if (!nodeToCheck) {
-        return
-      }
+        // Build plain text from NON-pill text nodes only (avoids extracting from corrupted "state:IL" text)
+        const fullText = allTextNodes.map((node) => node.getTextContent()).join('')
 
-      editor.update(() => {
-        // Check if node still exists and is still a text node
-        try {
-          if (!nodeToCheck.isAttached()) {
-            previousEditingNodeRef.current = null
-            return
+        console.log('[KeyValuePlugin] Plain text (excluding pills):', fullText)
+        console.log('[KeyValuePlugin] Text nodes:', allTextNodes.length)
+
+        // Make SINGLE call to unified orchestrator
+        const parsed = parseKeyValueSyntax(fullText)
+
+        console.log('[KeyValuePlugin] Parsed fields:', parsed.length)
+
+        if (parsed.length === 0) {
+          return
+        }
+
+        // For each parsed field, create a pill
+        for (const field of parsed) {
+          // Skip fields without a fieldName
+          if (!field.fieldName) {
+            continue
           }
 
-          if (!$isTextNode(nodeToCheck)) {
-            previousEditingNodeRef.current = null
-            return
-          }
+          // Find the text node containing this field's original text (case-insensitive)
+          for (const node of allTextNodes) {
+            const nodeText = node.getTextContent()
+            const originalText = field.original
 
-          const selection = $getSelection()
-          const isStillEditing =
-            $isRangeSelection(selection) &&
-            selection.isCollapsed() &&
-            selection.anchor.getNode() === nodeToCheck
+            // Case-insensitive search
+            const lowerNodeText = nodeText.toLowerCase()
+            const lowerOriginalText = originalText.toLowerCase()
 
-          // If user moved away from this node, check if it needs transformation
-          if (!isStillEditing) {
-            const text = nodeToCheck.getTextContent()
-            const parsed = parseKeyValueSyntax(text)
+            if (lowerNodeText.includes(lowerOriginalText)) {
+              // Split the node and insert pill (using case-insensitive index)
+              const startIndex = lowerNodeText.indexOf(lowerOriginalText)
+              const endIndex = startIndex + originalText.length
 
-            if (parsed.length > 0) {
-              // Transform immediately since cursor moved away
-              transformTextToPills(nodeToCheck, parsed)
+              // Split text: before | pill | after
+              const beforeText = nodeText.slice(0, startIndex)
+              const afterText = nodeText.slice(endIndex)
+
+              // Create pill node
+              const pillNode = $createPillNode({
+                key: field.fieldName,
+                value: field.value,
+                validation: field.validation,
+                fieldName: field.fieldName,
+              })
+
+              // Replace node with: beforeNode + pillNode + afterNode
+              if (beforeText) {
+                const beforeNode = new TextNode(beforeText)
+                node.insertBefore(beforeNode)
+              }
+
+              node.insertBefore(pillNode)
+
+              if (afterText) {
+                const afterNode = new TextNode(afterText)
+                node.insertBefore(afterNode)
+              }
+
+              // Remove original node
+              node.remove()
+
+              console.log('[KeyValuePlugin] Created pill:', field.fieldName, '=', field.value)
+
+              // Only replace first occurrence
+              break
             }
-
-            previousEditingNodeRef.current = null
           }
-        } catch (error) {
-          // Node might have been removed
-          previousEditingNodeRef.current = null
         }
       })
     }
 
-    // Listen for cursor movement (arrow keys) to trigger transformation
-    const removeArrowLeftListener = editor.registerCommand(
-      KEY_ARROW_LEFT_COMMAND,
-      () => {
-        // Let arrow key execute first, then check for pill transformation
-        setTimeout(() => {
-          checkPreviouslyEditedNode()
-        }, 0)
-        return false // Allow default behavior
-      },
-      COMMAND_PRIORITY_LOW
-    )
-
-    const removeArrowRightListener = editor.registerCommand(
-      KEY_ARROW_RIGHT_COMMAND,
-      () => {
-        // Let arrow key execute first, then check for pill transformation
-        setTimeout(() => {
-          checkPreviouslyEditedNode()
-        }, 0)
-        return false // Allow default behavior
-      },
-      COMMAND_PRIORITY_LOW
-    )
-
-    // Listen for space, comma, period to trigger transformation
+    // Register command handler for SPACE key
     const removeSpaceListener = editor.registerCommand(
       KEY_SPACE_COMMAND,
       () => {
-        // Space will be inserted, mutation listener will handle transformation
+        // Let space be inserted first, then extract
+        setTimeout(() => {
+          extractAndCreatePills()
+        }, 0)
         return false // Allow default behavior
       },
       COMMAND_PRIORITY_LOW
     )
 
-    // Listen for comma and period via keyboard events
+    // Register command handler for ENTER key
+    const removeEnterListener = editor.registerCommand(
+      KEY_ENTER_COMMAND,
+      () => {
+        // Let enter be inserted first, then extract
+        setTimeout(() => {
+          extractAndCreatePills()
+        }, 0)
+        return false // Allow default behavior
+      },
+      COMMAND_PRIORITY_LOW
+    )
+
+    // Register keyboard event handler for COMMA and PERIOD
     const removeKeyDownListener = editor.registerRootListener((rootElement, prevRootElement) => {
       if (prevRootElement) {
         prevRootElement.removeEventListener('keydown', handleKeyDown)
       }
       if (rootElement) {
-        rootElement.addEventListener('keydown', handleKeyDown, true)
+        rootElement.addEventListener('keydown', handleKeyDown)
       }
     })
 
     function handleKeyDown(event: KeyboardEvent) {
       // Check for comma or period
-      // Let the key be inserted first, then mutation listener will handle transformation
-      // No need to do anything here - mutation listener catches it
-    }
-
-    // Listen for click events to trigger transformation when cursor moves
-    const removeClickListener = editor.registerRootListener((rootElement, prevRootElement) => {
-      if (prevRootElement) {
-        prevRootElement.removeEventListener('click', handleClick)
+      if (event.key === ',' || event.key === '.') {
+        // Let key be inserted first, then extract
+        setTimeout(() => {
+          extractAndCreatePills()
+        }, 0)
       }
-      if (rootElement) {
-        rootElement.addEventListener('click', handleClick, true)
-      }
-    })
-
-    function handleClick() {
-      // After click, check if we need to transform pills
-      setTimeout(() => {
-        checkPreviouslyEditedNode()
-      }, 0)
     }
 
     return () => {
-      removeMutationListener()
-      removeArrowLeftListener()
-      removeArrowRightListener()
       removeSpaceListener()
+      removeEnterListener()
       removeKeyDownListener()
-      removeClickListener()
     }
   }, [editor])
 

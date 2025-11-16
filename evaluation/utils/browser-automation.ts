@@ -79,12 +79,13 @@ export async function injectTextIntoEditor(page: Page, text: string): Promise<vo
       await editors[editorInfo.notesEditorIndex].click()
       await page.waitForTimeout(100)
 
-      // Clear and type - use fill instead of type to ensure full text
+      // Clear and inject text at once using .fill() to avoid triggering on intermediate states
       await editors[editorInfo.notesEditorIndex].fill('')
       await page.waitForTimeout(50)
-      // Type character by character to trigger Lexical's input handlers
-      await editors[editorInfo.notesEditorIndex].type(text, { delay: 20 })
-      await page.waitForTimeout(200) // Wait for pill extraction
+      await editors[editorInfo.notesEditorIndex].fill(text)
+      // Trigger KeyValuePlugin by pressing Space key (after all text is filled)
+      await editors[editorInfo.notesEditorIndex].press('Space')
+      await page.waitForTimeout(300) // Wait for single pill extraction pass
       return
     }
   }
@@ -94,18 +95,16 @@ export async function injectTextIntoEditor(page: Page, text: string): Promise<vo
   await page.waitForSelector(editorSelector, { timeout: 10000, state: 'visible' })
   console.log('✅ Found editor')
 
-  // Click to focus the editor
+  // Click to focus and fill the editor
   await page.click(editorSelector)
-
-  // Clear any existing content - use fill to ensure complete clearing
   await page.fill(editorSelector, '')
   await page.waitForTimeout(50)
+  await page.fill(editorSelector, text)
+  // Trigger KeyValuePlugin by pressing Space key (after all text is filled)
+  await page.keyboard.press('Space')
 
-  // Type the text character by character to trigger Lexical's input handlers
-  await page.type(editorSelector, text, { delay: 20 })
-
-  // Wait for pill detection (real-time ~10-50ms) + DOM updates (~50-100ms)
-  await page.waitForTimeout(50)
+  // Wait for pill extraction to complete
+  await page.waitForTimeout(300)
 }
 
 /**

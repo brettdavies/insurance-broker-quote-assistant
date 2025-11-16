@@ -1,42 +1,50 @@
 /**
- * Key-Value Syntax Parser
+ * Unified Field Extraction Parser
  *
- * Frontend wrapper around shared pill parsing utilities.
- * Adds frontend-specific logging.
+ * Frontend wrapper around unified extraction orchestrator.
+ * Extracts ALL patterns: key-value syntax, natural language, inference.
+ *
+ * Uses the SAME extraction logic as backend for consistency.
  */
 
-import {
-  type ParsedKeyValue,
-  type ValidationResult,
-  buildFieldAliasesMap,
-  buildFieldTypeConfig,
-  extractFields as sharedExtractFields,
-  getFieldNameFromAlias as sharedGetFieldNameFromAlias,
-  parseKeyValueSyntax as sharedParseKeyValueSyntax,
-} from '@repo/shared'
+import { type ParsedKeyValue, type ValidationResult, extractFieldsFrontend } from '@repo/shared'
 import { logWarn } from './logger'
 
-// Re-export types for backward compatibility
+// Re-export types
 export type { ParsedKeyValue, ValidationResult }
 
-// Cache field aliases and config for performance
-const fieldAliasesMap = buildFieldAliasesMap()
-const fieldTypeConfig = buildFieldTypeConfig()
-
 /**
- * Parse key-value syntax from text
- * Also includes natural language normalization (e.g., "2 drivers" → householdSize:2)
+ * Parse ALL fields from text using unified extraction orchestrator
+ * Extracts: key-value syntax, natural language patterns, and inferred fields
  *
- * @param text - Text containing key-value pairs (e.g., "Client needs auto, k:2 v:3")
- * @param validKeys - Optional set of valid keys (if not provided, uses all known aliases)
- * @returns Array of parsed key-value pairs with validation results
+ * Examples:
+ * - "state:IL" → {fieldName: "state", value: "IL"}
+ * - "Age 36" → {fieldName: "age", value: 36}
+ * - "3 drivers" → {fieldName: "drivers", value: 3} + inferred householdSize
+ *
+ * @param text - Text containing any combination of patterns
+ * @returns Array of parsed fields with validation results
  */
-export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): ParsedKeyValue[] {
+export function parseKeyValueSyntax(text: string): ParsedKeyValue[] {
   try {
-    return sharedParseKeyValueSyntax(text, validKeys, fieldTypeConfig, fieldAliasesMap)
+    console.log('[pill-parser] Input text:', text)
+    const normalizedFields = extractFieldsFrontend(text)
+    console.log('[pill-parser] Extracted fields count:', normalizedFields.length)
+    console.log('[pill-parser] Extracted fields:', normalizedFields.map(f => `${f.fieldName}:${f.value}`).join(', '))
+
+    const result = normalizedFields.map((field) => ({
+      key: field.fieldName,
+      value: String(field.value),
+      original: field.originalText,
+      validation: 'valid' as const,
+      fieldName: field.fieldName,
+    }))
+
+    console.log('[pill-parser] Returning parsed fields:', result.length)
+    return result
   } catch (error) {
-    // Log warning and return empty array on error
-    logWarn('Failed to parse key-value syntax', {
+    console.error('[pill-parser] ERROR:', error)
+    logWarn('Failed to parse fields with unified extraction', {
       error: error instanceof Error ? error.message : String(error),
       text,
     })
@@ -51,15 +59,13 @@ export function parseKeyValueSyntax(text: string, validKeys?: Set<string>): Pars
  * @returns Object mapping field names to values
  */
 export function extractFields(parsed: ParsedKeyValue[]): Record<string, string | number> {
-  return sharedExtractFields(parsed, fieldTypeConfig)
-}
-
-/**
- * Get field name from key alias
- *
- * @param key - Key alias (e.g., "k", "kids")
- * @returns Full field name or undefined if not found
- */
-export function getFieldName(key: string): string | undefined {
-  return sharedGetFieldNameFromAlias(key, fieldAliasesMap)
+  const result: Record<string, string | number> = {}
+  for (const item of parsed) {
+    if (item.fieldName) {
+      // Try to convert to number if possible
+      const numValue = Number(item.value)
+      result[item.fieldName] = Number.isNaN(numValue) ? item.value : numValue
+    }
+  }
+  return result
 }

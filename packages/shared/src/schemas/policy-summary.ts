@@ -16,16 +16,16 @@ import { userContactSchema } from './user-contact'
  * Represents coverage limits for different coverage types
  */
 export const coverageLimitsSchema = z.object({
-  liability: z.number().positive().optional(),
-  propertyDamage: z.number().positive().optional(),
-  comprehensive: z.number().positive().optional(),
-  collision: z.number().positive().optional(),
-  uninsuredMotorist: z.number().positive().optional(),
-  personalInjuryProtection: z.number().positive().optional(),
-  dwelling: z.number().positive().optional(),
-  personalProperty: z.number().positive().optional(),
-  lossOfUse: z.number().positive().optional(),
-  medicalPayments: z.number().positive().optional(),
+  liability: z.number().positive().nullish(),
+  propertyDamage: z.number().positive().nullish(),
+  comprehensive: z.number().positive().nullish(),
+  collision: z.number().positive().nullish(),
+  uninsuredMotorist: z.number().positive().nullish(),
+  personalInjuryProtection: z.number().positive().nullish(),
+  dwelling: z.number().positive().nullish(),
+  personalProperty: z.number().positive().nullish(),
+  lossOfUse: z.number().positive().nullish(),
+  medicalPayments: z.number().positive().nullish(),
 })
 
 export type CoverageLimits = z.infer<typeof coverageLimitsSchema>
@@ -35,10 +35,10 @@ export type CoverageLimits = z.infer<typeof coverageLimitsSchema>
  * Represents deductible amounts for different coverage types
  */
 export const deductiblesSchema = z.object({
-  auto: z.number().nonnegative().optional(),
-  home: z.number().nonnegative().optional(),
-  comprehensive: z.number().nonnegative().optional(),
-  collision: z.number().nonnegative().optional(),
+  auto: z.number().nonnegative().nullish(),
+  home: z.number().nonnegative().nullish(),
+  comprehensive: z.number().nonnegative().nullish(),
+  collision: z.number().nonnegative().nullish(),
 })
 
 export type Deductibles = z.infer<typeof deductiblesSchema>
@@ -48,9 +48,9 @@ export type Deductibles = z.infer<typeof deductiblesSchema>
  * Represents premium amounts (annual, monthly, etc.)
  */
 export const premiumsSchema = z.object({
-  annual: z.number().positive().optional(),
-  monthly: z.number().positive().optional(),
-  semiAnnual: z.number().positive().optional(),
+  annual: z.number().positive().nullish(),
+  monthly: z.number().positive().nullish(),
+  semiAnnual: z.number().positive().nullish(),
 })
 
 export type Premiums = z.infer<typeof premiumsSchema>
@@ -60,8 +60,8 @@ export type Premiums = z.infer<typeof premiumsSchema>
  * Represents policy effective and expiration dates
  */
 export const effectiveDatesSchema = z.object({
-  effectiveDate: z.string().optional(), // ISO date string or formatted date
-  expirationDate: z.string().optional(), // ISO date string or formatted date
+  effectiveDate: z.string().nullish(), // ISO date string or formatted date
+  expirationDate: z.string().nullish(), // ISO date string or formatted date
 })
 
 export type EffectiveDates = z.infer<typeof effectiveDatesSchema>
@@ -73,19 +73,19 @@ export type EffectiveDates = z.infer<typeof effectiveDatesSchema>
  */
 export const confidenceScoresSchema = z.object({
   // User contact fields
-  name: z.number().min(0).max(1).optional(),
-  email: z.number().min(0).max(1).optional(),
-  phone: z.number().min(0).max(1).optional(),
-  zip: z.number().min(0).max(1).optional(),
-  state: z.number().min(0).max(1).optional(),
-  address: z.number().min(0).max(1).optional(),
+  name: z.number().min(0).max(1).nullish(),
+  email: z.number().min(0).max(1).nullish(),
+  phone: z.number().min(0).max(1).nullish(),
+  zip: z.number().min(0).max(1).nullish(),
+  state: z.number().min(0).max(1).nullish(),
+  address: z.number().min(0).max(1).nullish(),
   // Policy-specific fields
-  carrier: z.number().min(0).max(1).optional(),
-  productType: z.number().min(0).max(1).optional(),
-  coverageLimits: z.number().min(0).max(1).optional(),
-  deductibles: z.number().min(0).max(1).optional(),
-  premiums: z.number().min(0).max(1).optional(),
-  effectiveDates: z.number().min(0).max(1).optional(),
+  carrier: z.number().min(0).max(1).nullish(),
+  productType: z.number().min(0).max(1).nullish(),
+  coverageLimits: z.number().min(0).max(1).nullish(),
+  deductibles: z.number().min(0).max(1).nullish(),
+  premiums: z.number().min(0).max(1).nullish(),
+  effectiveDates: z.number().min(0).max(1).nullish(),
 })
 
 export type ConfidenceScores = z.infer<typeof confidenceScoresSchema>
@@ -96,13 +96,13 @@ export type ConfidenceScores = z.infer<typeof confidenceScoresSchema>
  * Extends userContactSchema to include name, email, phone, zip fields
  */
 export const policySummarySchema = userContactSchema.extend({
-  carrier: z.string().optional(),
-  productType: productTypeEnum.optional(),
-  coverageLimits: coverageLimitsSchema.optional(),
-  deductibles: deductiblesSchema.optional(),
-  premiums: premiumsSchema.optional(),
-  effectiveDates: effectiveDatesSchema.optional(),
-  confidence: confidenceScoresSchema.optional(),
+  carrier: z.string().nullish(),
+  productType: productTypeEnum.nullish(),
+  coverageLimits: coverageLimitsSchema.nullish(),
+  deductibles: deductiblesSchema.nullish(),
+  premiums: premiumsSchema.nullish(),
+  effectiveDates: effectiveDatesSchema.nullish(),
+  confidence: confidenceScoresSchema.nullish(),
 })
 
 export type PolicySummary = z.infer<typeof policySummarySchema>
