@@ -97,7 +97,13 @@ export async function orchestratePolicyAnalysis(
     {
       method: 'key-value',
       fields: policySummary,
-      confidence: policySummary.confidence,
+      confidence: policySummary.confidence
+        ? Object.fromEntries(
+            Object.entries(policySummary.confidence)
+              .filter(([_, v]) => v !== null && v !== undefined)
+              .map(([k, v]) => [k, v as number])
+          )
+        : undefined,
     },
     [
       {

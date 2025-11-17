@@ -24,9 +24,6 @@ interface UnifiedChatLayoutProps {
   policySummary?: PolicySummary
   policyAnalysisResult?: PolicyAnalysisResult
   isAnalyzing: boolean
-  inferredFields: Partial<UserProfile>
-  inferenceReasons: Record<string, string>
-  inferenceConfidence: Record<string, number>
   editorRef: React.MutableRefObject<{
     focus: () => void
     clear: () => void
@@ -55,6 +52,7 @@ interface UnifiedChatLayoutProps {
   onEditInference: (fieldName: string, value: unknown) => void
   onConvertToKnown: (fieldName: string, value: unknown) => void
   onConvertToKnownFromPill: (fieldName: string) => void
+  onProfileUpdate: (userProfile: UserProfile) => void
 }
 
 export function UnifiedChatLayout({
@@ -69,9 +67,6 @@ export function UnifiedChatLayout({
   policySummary,
   policyAnalysisResult,
   isAnalyzing,
-  inferredFields,
-  inferenceReasons,
-  inferenceConfidence,
   editorRef,
   uploadPanelFileInputRef,
   uploadPanelEditorRef,
@@ -86,7 +81,20 @@ export function UnifiedChatLayout({
   onEditInference,
   onConvertToKnown,
   onConvertToKnownFromPill,
+  onProfileUpdate,
 }: UnifiedChatLayoutProps) {
+  // Derive inferred fields from profile._inferred
+  const inferredFields = profile._inferred || {}
+  // Default inference reasons (can be enhanced later)
+  const inferenceReasons: Record<string, string> = {}
+  for (const fieldName of Object.keys(inferredFields)) {
+    inferenceReasons[fieldName] = 'Inferred from extracted fields'
+  }
+  // Default confidence (can be enhanced later)
+  const inferenceConfidence: Record<string, number> = {}
+  for (const fieldName of Object.keys(inferredFields)) {
+    inferenceConfidence[fieldName] = 0.85
+  }
   return (
     <div className="flex h-full flex-col pt-14">
       <div
@@ -124,14 +132,12 @@ export function UnifiedChatLayout({
               onCommandError={onCommandError}
               editorRef={editorRef}
               autoFocus={!isActive}
-              inferredFields={inferredFields}
-              inferenceReasons={inferenceReasons}
-              confidence={inferenceConfidence}
               onDismissInference={onDismissInference}
               onEditInference={onEditInference}
               onConvertToKnown={onConvertToKnown}
               onConvertToKnownFromPill={onConvertToKnownFromPill}
               profile={profile}
+              onProfileUpdate={onProfileUpdate}
             />
           </div>
         </div>
@@ -149,7 +155,6 @@ export function UnifiedChatLayout({
             confidence={latestIntakeResult?.confidence}
             policyAnalysisResult={policyAnalysisResult}
             isAnalyzing={isAnalyzing}
-            inferredFields={inferredFields}
             inferenceReasons={inferenceReasons}
             onDismiss={onDismissInference}
             onConvertToKnown={onConvertToKnown}

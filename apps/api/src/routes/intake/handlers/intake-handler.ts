@@ -4,7 +4,12 @@
  * Main handler for the /api/intake endpoint.
  */
 
-import type { PrefillPacket, RouteDecision } from '@repo/shared'
+import {
+  type PrefillPacket,
+  type RouteDecision,
+  type UserProfile,
+  removePillMarkers,
+} from '@repo/shared'
 import type { Context } from 'hono'
 import { validateOutput } from '../../../services/compliance-filter'
 import type { ConversationalExtractor } from '../../../services/conversational-extractor'
@@ -22,21 +27,69 @@ export async function handleIntake(
   c: Context,
   extractor: ConversationalExtractor,
   message: string,
-  pills: Record<string, unknown> | undefined,
-  suppressedFields: string[] | undefined,
+  userProfile: Partial<UserProfile> | undefined,
+  legacyPills: Record<string, unknown> | undefined,
+  legacySuppressed: string[] | undefined,
   testPitch: string | undefined
 ): Promise<Response> {
   try {
-    // Pills are now treated as knownFields (broker-curated, read-only for LLM)
-    const knownFields = pills || {}
+    // Extract known/inferred/suppressed from userProfile
+    // Known fields = all fields except metadata (keys starting with _)
+    const knownFields: Partial<UserProfile> = {}
+    const inferredFields: Partial<UserProfile> = {}
+    const suppressedFields: string[] = []
+
+    if (userProfile) {
+      // Extract known fields (main object, excluding metadata)
+      for (const [key, value] of Object.entries(userProfile)) {
+        if (!key.startsWith('_') && value !== null && value !== undefined) {
+          // biome-ignore lint/suspicious/noExplicitAny: UserProfile has dynamic field types
+          knownFields[key as keyof UserProfile] = value as any
+        }
+      }
+
+      // Extract inferred fields from _inferred object
+      if (userProfile._inferred) {
+        Object.assign(inferredFields, userProfile._inferred)
+      }
+
+      // Extract suppressed fields from _suppressed array
+      if (userProfile._suppressed) {
+        suppressedFields.push(...userProfile._suppressed)
+      }
+    } else {
+      // Legacy support: use pills as knownFields
+      Object.assign(knownFields, legacyPills || {})
+      suppressedFields.push(...(legacySuppressed || []))
+    }
+
+    // Remove pill markers from message before sending to LLM
+    // Pill markers are in format [[key:value]] and must be stripped
+    const cleanedMessage = removePillMarkers(message)
+
+    // Log pill marker removal for debugging
+    if (cleanedMessage !== message) {
+      await logDebug('Removed pill markers from message', {
+        original: message,
+        cleaned: cleanedMessage,
+      })
+    }
 
     // Setup inference engine and apply inferences
-    const { inferredFields } = setupInferenceEngine(knownFields, message, suppressedFields)
+    // Note: inferredFields from userProfile are already extracted above
+    // This will add any additional inferences from the message
+    const { inferredFields: additionalInferredFields } = setupInferenceEngine(
+      knownFields,
+      cleanedMessage,
+      suppressedFields
+    )
+    // Merge userProfile inferred fields with additional inferred fields
+    Object.assign(inferredFields, additionalInferredFields)
 
     // Extract fields using Conversational Extractor
-    // Pass knownFields (pills), inferredFields, and suppressedFields
+    // Pass cleanedMessage (without pill markers), knownFields (pills), inferredFields, and suppressedFields
     const extractionResult = await extractor.extractFields(
-      message,
+      cleanedMessage,
       knownFields,
       inferredFields,
       suppressedFields
@@ -126,8 +179,8 @@ export async function handleIntake(
     const trace = createDecisionTrace(
       'conversational',
       {
-        message, // Cleaned text (pills removed)
-        pills, // Extracted pill data (backward compatibility)
+        message: cleanedMessage, // Cleaned text (pill markers removed)
+        pills: legacyPills || knownFields, // Extracted pill data (backward compatibility)
         knownFields, // Pills as known fields
         inferredFields, // Fields inferred from text patterns
         suppressedFields, // Fields explicitly dismissed by broker
@@ -153,10 +206,10 @@ export async function handleIntake(
         : undefined,
       {
         passed: complianceResult.passed,
-        violations: complianceResult.violations,
+        violations: complianceResult.violations ?? undefined,
         disclaimersAdded: complianceResult.disclaimers?.length || 0,
-        state: complianceResult.state,
-        productType: complianceResult.productType,
+        state: complianceResult.state ?? undefined,
+        productType: complianceResult.productType ?? undefined,
       }
     )
 
@@ -196,7 +249,11 @@ export async function handleIntake(
     const result = await buildIntakeResult(
       extractionResult,
       routeDecision,
-      complianceResult,
+      {
+        passed: complianceResult.passed,
+        disclaimers: complianceResult.disclaimers ?? undefined,
+        replacementMessage: complianceResult.replacementMessage ?? undefined,
+      },
       missingFieldsForResponse,
       prefillPacket,
       pitch,

@@ -14,10 +14,14 @@ import { type UserProfile, userProfileSchema } from './user-profile'
  * Intake Request Schema
  *
  * Input to conversational intake flow.
- * Includes message text, known fields from pills, and suppressed fields list.
+ * Includes message text and userProfile (with known fields in main object, inferred in _inferred, suppressed in _suppressed).
+ * Legacy support: pills and suppressedFields for backward compatibility.
  */
 export const intakeRequestSchema = z.object({
   message: z.string(),
+  // userProfile contains known fields in main object, inferred in _inferred, suppressed in _suppressed
+  userProfile: userProfileSchema.partial().optional(),
+  // Legacy support: pills and suppressedFields (for backward compatibility)
   pills: userProfileSchema.partial().optional(),
   suppressedFields: z.array(z.string()).optional(),
 })

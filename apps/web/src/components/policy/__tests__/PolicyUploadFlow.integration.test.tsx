@@ -24,7 +24,6 @@ import { UnifiedChatInterface } from '../../intake/UnifiedChatInterface'
 
 // Mock the API client
 const mockPolicyUpload = vi.fn()
-// @ts-expect-error - Bun's vi types don't include mock, but it works at runtime
 vi.mock('@/lib/api-client', () => {
   return {
     api: {

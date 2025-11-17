@@ -13,7 +13,6 @@ interface CapturedFieldsProps {
   profile: UserProfile
   confidence?: Record<string, number>
   onFieldClick: (fieldKey: string, currentValue?: string | number | boolean) => void
-  inferredFields?: Partial<UserProfile>
   inferenceReasons?: Record<string, string>
   onDismiss?: (fieldKey: string) => void
   onConvertToKnown?: (fieldKey: string, value: unknown) => void
@@ -23,17 +22,11 @@ export function CapturedFields({
   profile,
   confidence,
   onFieldClick,
-  inferredFields,
   inferenceReasons,
   onDismiss,
   onConvertToKnown,
 }: CapturedFieldsProps) {
-  const fieldsByCategory = extractUserProfileFields(
-    profile,
-    confidence,
-    inferredFields,
-    inferenceReasons
-  )
+  const fieldsByCategory = extractUserProfileFields(profile, confidence, inferenceReasons)
   const categoryLabels = getUserProfileCategoryLabels()
 
   return (

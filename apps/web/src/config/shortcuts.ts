@@ -83,7 +83,7 @@ export const FIELD_SHORTCUTS: Record<string, FieldCommand> = Object.fromEntries(
 export const ACTION_SHORTCUTS = ACTION_SHORTCUTS_IMPORT
 
 /**
- * Field metadata interface (matches old structure for backward compatibility)
+ * Field metadata interface (backward compatibility)
  */
 export interface FieldMetadata {
   label: string
@@ -123,24 +123,6 @@ export const COMMAND_TO_KEY: Record<FieldCommand, string> = Object.fromEntries(
     .filter(([, metadata]) => metadata.shortcut !== '')
     .map(([field, metadata]) => [field as FieldCommand, metadata.shortcut])
 ) as Record<FieldCommand, string>
-
-/**
- * Extract aliases mapping (alias → command)
- */
-export const FIELD_ALIASES_MAP: Record<string, FieldCommand> = (() => {
-  const aliasMap: Record<string, FieldCommand> = {}
-
-  for (const [field, metadata] of Object.entries(userProfileFieldMetadata)) {
-    const fieldMetadata = metadata as SharedFieldMetadata
-    if (fieldMetadata.aliases) {
-      for (const alias of fieldMetadata.aliases) {
-        aliasMap[alias] = field as FieldCommand
-      }
-    }
-  }
-
-  return aliasMap
-})()
 
 // ============================================================================
 // Display Data Structures
@@ -200,37 +182,6 @@ export interface ActionShortcutDisplay {
  * Re-exported from action-shortcuts
  */
 export const ACTION_SHORTCUTS_DISPLAY = getActionShortcutsDisplay()
-
-// ============================================================================
-// Field Delimiter Configuration
-// ============================================================================
-
-/**
- * Fields that allow spaces (multi-word values)
- * These fields stop at comma, period, or next key:value pattern (not space)
- * Note: Enum fields (like productType, propertyType) are NOT multi-word - they have specific single-word options
- * Note: Object/array fields (like existingPolicies) are NOT multi-word - they're not parsed as simple strings
- */
-export const MULTI_WORD_FIELDS = new Set<FieldCommand>([
-  'name', // Names can have spaces (e.g., "John Smith")
-  'phone', // Phone numbers can have spaces (e.g., "(555) 123-4567")
-  'drivingRecords', // Can be multi-word (e.g., "clean record", "one accident")
-  'deductibles', // Can be multi-word (e.g., "$500 comprehensive, $1000 collision")
-  'limits', // Can be multi-word (e.g., "$100k/$300k liability")
-  'vins', // VINs can be multiple, space-separated
-])
-
-/**
- * Fields that allow special characters that are normally delimiters
- * - Phone: spaces, dashes, parentheses (e.g., "(555) 123-4567")
- * - Zip: dashes (e.g., "12345-6789")
- * - Email: periods (already handled separately via @ detection)
- */
-export const SPECIAL_CHAR_FIELDS: Record<FieldCommand, string[]> = {
-  phone: ['-', '(', ')', ' '], // Phone numbers can have dashes, parentheses, spaces
-  zip: ['-'], // Zip codes can have dashes (extended format)
-  email: ['.'], // Email has periods (handled via @ detection)
-} as Record<FieldCommand, string[]>
 
 // ============================================================================
 // Helper Functions

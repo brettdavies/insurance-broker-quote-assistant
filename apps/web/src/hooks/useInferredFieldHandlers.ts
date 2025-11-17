@@ -2,6 +2,7 @@
  * useInferredFieldHandlers Hook
  *
  * Manages inferred field operations: dismissal, editing, and conversion to known.
+ * Works directly with userProfile._suppressed and userProfile._inferred.
  *
  * Single Responsibility: Inferred field handling logic only
  */
@@ -9,84 +10,112 @@
 import type { toast as ToastFn } from '@/components/ui/use-toast'
 import type { UserProfile } from '@repo/shared'
 import { useCallback } from 'react'
-interface SuppressionManagerHook {
-  getSuppressed: () => string[]
-  addSuppression: (fieldName: string) => void
-  removeSuppression: (fieldName: string) => void
-  isSuppressed: (fieldName: string) => boolean
-  clearSuppressed: () => void
-}
 
 interface UseInferredFieldHandlersParams {
-  suppression: SuppressionManagerHook
+  profile: UserProfile
   updateProfile: (updates: Partial<UserProfile>) => void
-  updateInferredField: (fieldName: string, value: unknown) => void
-  runInference: () => void
   toast: typeof ToastFn
 }
 
 export function useInferredFieldHandlers({
-  suppression,
+  profile,
   updateProfile,
-  updateInferredField,
-  runInference,
   toast,
 }: UseInferredFieldHandlersParams) {
   const handleDismissInference = useCallback(
     (fieldName: string) => {
-      suppression.addSuppression(fieldName)
-      runInference()
+      // Add to _suppressed array
+      const suppressed = profile._suppressed || []
+      if (!suppressed.includes(fieldName)) {
+        updateProfile({
+          _suppressed: [...suppressed, fieldName],
+        })
+      }
+
+      // Remove from _inferred if present
+      if (profile._inferred && profile._inferred[fieldName] !== undefined) {
+        const newInferred = { ...profile._inferred }
+        delete newInferred[fieldName]
+        updateProfile({
+          _inferred: Object.keys(newInferred).length > 0 ? newInferred : undefined,
+        })
+      }
+
       toast({
         title: 'Field dismissed',
         description: `${fieldName} will not be inferred again this session`,
         duration: 3000,
       })
     },
-    [suppression, runInference, toast]
+    [profile, updateProfile, toast]
   )
 
   const handleEditInference = useCallback(
     (fieldName: string, value: unknown) => {
-      // Update inferred fields state directly (keeps field as inferred, not known)
-      updateInferredField(fieldName, value)
-      // Don't re-run inference here - it's just an edit to an existing inferred field
+      // Update inferred field in _inferred object
+      const inferred = profile._inferred || {}
+      updateProfile({
+        _inferred: {
+          ...inferred,
+          [fieldName]: value,
+        },
+      })
     },
-    [updateInferredField]
+    [profile, updateProfile]
   )
 
   const handleConvertToKnown = useCallback(
     (fieldName: string, value: unknown) => {
-      // Remove from suppression list (if present)
-      suppression.removeSuppression(fieldName)
-      // Update profile with known value
-      updateProfile({ [fieldName]: value })
-      // Re-run inference with updated suppression list and known fields
-      runInference()
+      // Remove from _suppressed if present
+      const suppressed = profile._suppressed || []
+      const newSuppressed = suppressed.filter((f) => f !== fieldName)
+
+      // Remove from _inferred if present
+      const inferred = profile._inferred || {}
+      const newInferred = { ...inferred }
+      delete newInferred[fieldName]
+
+      // Add to main profile as known field
+      updateProfile({
+        [fieldName]: value,
+        _suppressed: newSuppressed.length > 0 ? newSuppressed : undefined,
+        _inferred: Object.keys(newInferred).length > 0 ? newInferred : undefined,
+      })
+
       toast({
         title: 'Field saved',
         description: `${fieldName} saved as known field`,
         duration: 3000,
       })
     },
-    [suppression, updateProfile, runInference, toast]
+    [profile, updateProfile, toast]
   )
 
   // Handler for when pill is injected (textbox is source of truth)
-  // Only removes suppression and re-runs inference - profile update comes from pill extraction
+  // Only removes from _suppressed and _inferred - profile update comes from pill extraction
   const handleConvertToKnownFromPill = useCallback(
     (fieldName: string) => {
-      // Remove from suppression list (if present)
-      suppression.removeSuppression(fieldName)
-      // Re-run inference - it will see the field is now in profile (from pill extraction)
-      // and remove it from inferred fields
-      runInference()
+      // Remove from _suppressed if present
+      const suppressed = profile._suppressed || []
+      const newSuppressed = suppressed.filter((f) => f !== fieldName)
+
+      // Remove from _inferred if present
+      const inferred = profile._inferred || {}
+      const newInferred = { ...inferred }
+      delete newInferred[fieldName]
+
+      updateProfile({
+        _suppressed: newSuppressed.length > 0 ? newSuppressed : undefined,
+        _inferred: Object.keys(newInferred).length > 0 ? newInferred : undefined,
+      })
+
       toast({
         title: 'Field saved',
         description: `${fieldName} saved as known field`,
         duration: 3000,
       })
     },
-    [suppression, runInference, toast]
+    [profile, updateProfile, toast]
   )
 
   return {

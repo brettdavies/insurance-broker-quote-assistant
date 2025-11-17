@@ -47,11 +47,13 @@ export const USER_PROFILE_CATEGORY_ORDER: readonly string[] = [
 
 /**
  * Extract fields from UserProfile and organize by category
+ *
+ * Processes known fields first (from main userProfile object), then inferred fields (from _inferred object).
+ * Skips suppressed fields (in _suppressed array).
  */
 export function extractUserProfileFields(
   profile: UserProfile,
   confidence?: Record<string, number>,
-  inferredFields?: Partial<UserProfile>,
   inferenceReasons?: Record<string, string>
 ): Record<string, FieldItemData[]> {
   const fieldsByCategory: Record<string, FieldItemData[]> = {
@@ -61,10 +63,17 @@ export function extractUserProfileFields(
     details: [],
   }
 
+  // Get suppressed fields (skip these completely)
+  const suppressedFields = new Set(profile._suppressed || [])
+
+  // Get inferred fields from profile._inferred
+  const inferredFields = profile._inferred || {}
+
   // Track which fields we've already added (to avoid duplicates)
   const addedFields = new Set<string>()
 
   // First, iterate through all fields from UserProfile metadata (known fields)
+  // Only process fields in main profile object (not metadata fields starting with _)
   for (const [field, metadata] of Object.entries(userProfileFieldMetadata)) {
     const command = field as FieldCommand
     const fieldName = COMMAND_TO_FIELD_NAME[command]
@@ -72,10 +81,13 @@ export function extractUserProfileFields(
 
     if (!fieldName || !fieldMetadata) continue
 
+    // Skip suppressed fields
+    if (suppressedFields.has(fieldName)) continue
+
     // Map metadata category to display category
     const displayCategory = USER_PROFILE_CATEGORY_MAP[metadata.category] || 'details'
 
-    // Check if field exists in profile
+    // Check if field exists in profile (main object, not _inferred)
     const profileValue = (profile as Record<string, unknown>)[fieldName]
 
     // Handle different value types
@@ -87,10 +99,8 @@ export function extractUserProfileFields(
         displayValue = profileValue ? 'Yes' : 'No'
       }
 
-      // Determine if field is inferred (check if it exists in inferredFields object)
-      const isInferred = inferredFields
-        ? (inferredFields as Record<string, unknown>)[fieldName] !== undefined
-        : false
+      // Determine if field is inferred (check if it exists in _inferred object)
+      const isInferred = inferredFields[fieldName] !== undefined
 
       fieldsByCategory[displayCategory]?.push({
         name: fieldMetadata.label,
@@ -106,41 +116,42 @@ export function extractUserProfileFields(
     }
   }
 
-  // Second, iterate through inferredFields to add fields that are ONLY inferred (not in profile)
-  if (inferredFields) {
-    for (const [fieldName, inferredValue] of Object.entries(inferredFields)) {
-      // Skip if already added (field exists in profile)
-      if (addedFields.has(fieldName)) continue
+  // Second, iterate through inferredFields to add fields that are ONLY inferred (not in main profile)
+  for (const [fieldName, inferredValue] of Object.entries(inferredFields)) {
+    // Skip suppressed fields
+    if (suppressedFields.has(fieldName)) continue
 
-      // Skip if value is invalid
-      if (inferredValue === undefined || inferredValue === null || inferredValue === '') continue
+    // Skip if already added (field exists in main profile)
+    if (addedFields.has(fieldName)) continue
 
-      // Find metadata for this field
-      // Try to find by field name in unifiedFieldMetadata
-      const metadata = unifiedFieldMetadata[fieldName]
-      if (!metadata) continue // Skip if no metadata found
+    // Skip if value is invalid
+    if (inferredValue === undefined || inferredValue === null || inferredValue === '') continue
 
-      // Map metadata category to display category
-      const displayCategory = USER_PROFILE_CATEGORY_MAP[metadata.category] || 'details'
+    // Find metadata for this field
+    // Try to find by field name in unifiedFieldMetadata
+    const metadata = unifiedFieldMetadata[fieldName]
+    if (!metadata) continue // Skip if no metadata found
 
-      let displayValue: string | number | boolean = inferredValue as string | number | boolean
+    // Map metadata category to display category
+    const displayCategory = USER_PROFILE_CATEGORY_MAP[metadata.category] || 'details'
 
-      // Format boolean values
-      if (typeof inferredValue === 'boolean') {
-        displayValue = inferredValue ? 'Yes' : 'No'
-      }
+    let displayValue: string | number | boolean = inferredValue as string | number | boolean
 
-      // This is an inferred-only field (not in profile)
-      fieldsByCategory[displayCategory]?.push({
-        name: metadata.label,
-        value: displayValue,
-        category: displayCategory,
-        fieldKey: fieldName,
-        confidence: confidence?.[fieldName],
-        isInferred: true, // Always inferred if only in inferredFields
-        inferenceReason: inferenceReasons?.[fieldName],
-      })
+    // Format boolean values
+    if (typeof inferredValue === 'boolean') {
+      displayValue = inferredValue ? 'Yes' : 'No'
     }
+
+    // This is an inferred-only field (not in main profile)
+    fieldsByCategory[displayCategory]?.push({
+      name: metadata.label,
+      value: displayValue,
+      category: displayCategory,
+      fieldKey: fieldName,
+      confidence: confidence?.[fieldName],
+      isInferred: true, // Always inferred if only in _inferred
+      inferenceReason: inferenceReasons?.[fieldName],
+    })
   }
 
   return fieldsByCategory
@@ -221,7 +232,7 @@ export function extractPolicySummaryFields(
             value: nestedValue as string | number,
             category: nestedCategory,
             fieldKey: `${String(fieldKey)}.${nestedKey}`, // e.g., "coverageLimits.liability"
-            confidence: confidence?.[fieldKey as keyof typeof confidence],
+            confidence: confidence?.[fieldKey as keyof typeof confidence] ?? undefined,
           })
         }
       }
@@ -233,7 +244,7 @@ export function extractPolicySummaryFields(
         value: value as string | number,
         category,
         fieldKey: String(fieldKey),
-        confidence: confidence?.[fieldKey as keyof typeof confidence],
+        confidence: confidence?.[fieldKey as keyof typeof confidence] ?? undefined,
       })
     }
   }

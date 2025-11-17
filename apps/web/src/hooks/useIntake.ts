@@ -14,14 +14,11 @@ import { useMutation, useQueryClient } from '@tanstack/react-query'
  * Fallback function to parse fields locally when API is unavailable
  */
 function fallbackParseFields(message: string): IntakeResult {
-  const parsed = parseKeyValueSyntax(message)
-  const extractedFields = extractFields(parsed)
+  const { pills, userProfile } = parseKeyValueSyntax(message)
+  const extractedFields = extractFields(pills)
 
-  // Convert extracted fields to UserProfile format
-  const profile: Record<string, unknown> = {}
-  for (const [key, value] of Object.entries(extractedFields)) {
-    profile[key] = value
-  }
+  // Use userProfile from centralized engine (FE never generates profile itself)
+  const profile: Record<string, unknown> = userProfile
 
   // Generate basic missing fields list (simplified for fallback)
   const missingFields: IntakeResult['missingFields'] = []

@@ -13,9 +13,8 @@ import {
   userProfileSchema,
   validateAndReExtractPostLLM,
 } from '@repo/shared'
-import { hasKeyValueSyntax } from '../utils/key-value-parser'
+import { getAllCarriers } from '../services/knowledge-pack-loader'
 import { logDebug, logError } from '../utils/logger'
-import { extractFieldsWithKeyValue } from './extractors/key-value-extraction'
 import { extractFieldsWithLLM } from './extractors/llm-extraction'
 import type { LLMProvider } from './llm-provider'
 import { extractPolicyData, extractPolicyDataFromFile } from './policy-extractor'
@@ -96,10 +95,18 @@ export class ConversationalExtractor {
     message: string,
     knownFields: Partial<UserProfile>,
     inferredFields: Partial<UserProfile>,
-    suppressedFields: string[]
+    suppressedFields: string[],
+    carrierNames?: string[]
   ): string {
     const template = this.loadUserPromptTemplate()
-    return buildUserPrompt(template, message, knownFields, inferredFields, suppressedFields)
+    return buildUserPrompt(
+      template,
+      message,
+      knownFields,
+      inferredFields,
+      suppressedFields,
+      carrierNames
+    )
   }
 
   /**
@@ -161,12 +168,49 @@ export class ConversationalExtractor {
     })
     try {
       // Step 1: Run unified deterministic extraction (key-value + regex + inference)
-      const { fields: deterministicFields, remainingText } = extractFieldsBackendPreLLM(message)
-      const deterministicProfile = this.normalizedFieldsToProfile(deterministicFields)
+      // Uses shared extraction engine (same as FE) to ensure identical behavior
+      const {
+        fields: allExtractedFields,
+        remainingText,
+        userProfile: extractedUserProfile,
+        deterministicFields: extractedDeterministicFields,
+        inferredFields: extractedInferredFields,
+      } = extractFieldsBackendPreLLM(message)
+
+      // Extract known/inferred/suppressed from extracted userProfile
+      // Known fields = all fields except metadata (keys starting with _)
+      const extractedKnownFields: Partial<UserProfile> = {}
+      const extractedInferredFieldsMap: Partial<UserProfile> = {}
+      const extractedSuppressedFields: string[] = []
+
+      for (const [key, value] of Object.entries(extractedUserProfile)) {
+        if (!key.startsWith('_') && value !== null && value !== undefined) {
+          // biome-ignore lint/suspicious/noExplicitAny: UserProfile has dynamic field types
+          extractedKnownFields[key as keyof UserProfile] = value as any
+        }
+      }
+
+      if (extractedUserProfile._inferred) {
+        Object.assign(extractedInferredFieldsMap, extractedUserProfile._inferred)
+      }
+
+      if (extractedUserProfile._suppressed) {
+        extractedSuppressedFields.push(...extractedUserProfile._suppressed)
+      }
+
+      // Merge with passed-in known/inferred/suppressed fields
+      const mergedKnownFields = { ...knownFields, ...extractedKnownFields }
+      const mergedInferredFields = { ...inferredFields, ...extractedInferredFieldsMap }
+      const mergedSuppressedFields = [...(suppressedFields || []), ...extractedSuppressedFields]
+
+      // Build deterministic profile from deterministic fields for backward compatibility
+      const deterministicProfile = this.normalizedFieldsToProfile(extractedDeterministicFields)
 
       await logDebug('Deterministic extraction results', {
         extractedFields: Object.keys(deterministicProfile),
         remainingText,
+        extractedKnownFields: Object.keys(extractedKnownFields),
+        extractedInferredFields: Object.keys(extractedInferredFieldsMap),
       })
 
       // Step 2: Check if we need LLM (if no remaining text or we have enough fields)
@@ -183,17 +227,30 @@ export class ConversationalExtractor {
         }
       }
 
-      // Step 3: Use LLM for remaining natural language text
+      // Step 3: Remove duplicate fields from inferred (if they exist in known)
+      // A field should only appear in one section, not both
+      const cleanedInferredFields = { ...mergedInferredFields }
+      for (const key of Object.keys(mergedKnownFields)) {
+        if (key in cleanedInferredFields) {
+          delete cleanedInferredFields[key as keyof UserProfile]
+        }
+      }
+
+      // Step 4: Use LLM for remaining natural language text
       const systemPrompt = this.buildSystemPrompt(
-        { ...knownFields, ...deterministicProfile }, // Include deterministic fields as known
-        inferredFields || {},
-        suppressedFields || []
+        mergedKnownFields, // Known fields (deterministic + pills)
+        cleanedInferredFields, // Inferred fields (with duplicates removed)
+        mergedSuppressedFields
       )
+      // Get carrier names from knowledge pack for enum values
+      const carrierNames = getAllCarriers().map((carrier) => carrier.name)
+
       const userPrompt = this.buildUserPrompt(
         remainingText, // Only send remaining text to LLM
-        { ...knownFields, ...deterministicProfile },
-        inferredFields || {},
-        suppressedFields || []
+        mergedKnownFields,
+        cleanedInferredFields,
+        mergedSuppressedFields,
+        carrierNames // Pass carrier names for dynamic enum values
       )
 
       const llmResult = await extractFieldsWithLLM(
@@ -201,8 +258,8 @@ export class ConversationalExtractor {
         remainingText,
         systemPrompt,
         userPrompt,
-        { ...knownFields, ...deterministicProfile }, // Pass deterministic fields to LLM
-        suppressedFields || [],
+        mergedKnownFields, // Pass merged known fields to LLM
+        mergedSuppressedFields,
         (profile) => this.calculateMissingFields(profile)
       )
 

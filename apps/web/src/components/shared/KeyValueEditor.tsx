@@ -13,6 +13,7 @@ import { LexicalErrorBoundary } from '@lexical/react/LexicalErrorBoundary'
 import { HistoryPlugin } from '@lexical/react/LexicalHistoryPlugin'
 import { OnChangePlugin } from '@lexical/react/LexicalOnChangePlugin'
 import { PlainTextPlugin } from '@lexical/react/LexicalPlainTextPlugin'
+import type { UserProfile } from '@repo/shared'
 import { KeyValuePlugin } from '../notes/plugins/KeyValuePlugin'
 import { PillInteractionPlugin } from '../notes/plugins/PillInteractionPlugin'
 import {
@@ -30,12 +31,15 @@ export interface KeyValueEditorProps {
   placeholder?: string
   onContentChange?: (content: string) => void
   onFieldRemoved?: (fieldName: string) => void
+  onFieldsExtracted?: (userProfile: UserProfile) => void
   editorRef?: EditorRefObject
   autoFocus?: boolean
   className?: string
   additionalPlugins?: React.ReactNode
   contentEditableClassName?: string
   initialContent?: string
+  /** Current suppressed fields (from userProfile._suppressed) */
+  suppressedFields?: string[]
 }
 
 // Re-export types for convenience
@@ -45,12 +49,14 @@ export function KeyValueEditor({
   placeholder = 'Type here...',
   onContentChange,
   onFieldRemoved,
+  onFieldsExtracted,
   editorRef,
   autoFocus = false,
   className,
   additionalPlugins,
   contentEditableClassName,
   initialContent,
+  suppressedFields,
 }: KeyValueEditorProps) {
   const { content, handleEditorChange } = useContentChangeHandler(onContentChange, initialContent)
 
@@ -83,7 +89,10 @@ export function KeyValueEditor({
           <InitialContentPlugin content={initialContent} />
           <DataAttributePlugin />
           <DynamicHeightPlugin />
-          <KeyValuePlugin />
+          <KeyValuePlugin
+            onFieldsExtracted={onFieldsExtracted}
+            suppressedFields={suppressedFields}
+          />
           <PillInteractionPlugin onFieldRemoved={onFieldRemoved} />
           {additionalPlugins}
         </LexicalComposer>

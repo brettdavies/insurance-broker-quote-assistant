@@ -51,12 +51,12 @@ function insertTextWithTransformation(editor: import('lexical').LexicalEditor, t
         const lastChild = root.getLastChild()
         if (lastChild && $isTextNode(lastChild)) {
           const nodeText = lastChild.getTextContent()
-          const parsed = parseKeyValueSyntax(nodeText)
-          if (parsed.length > 0) {
+          const { pills } = parseKeyValueSyntax(nodeText)
+          if (pills.length > 0) {
             // Only transform if the text ends with a space (delimiter)
             // This prevents transforming while user is still typing
             if (nodeText.trim().length > 0 && (nodeText.endsWith(' ') || nodeText.endsWith('\n'))) {
-              transformTextToPills(lastChild, parsed)
+              transformTextToPills(lastChild, pills)
             }
           }
         }

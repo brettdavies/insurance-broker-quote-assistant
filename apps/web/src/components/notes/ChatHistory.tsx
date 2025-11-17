@@ -34,16 +34,16 @@ export function ChatHistory({ messages }: ChatHistoryProps) {
   }, [messages.length])
 
   const renderMessageWithPills = (text: string) => {
-    const parsed = parseKeyValueSyntax(text)
-    if (parsed.length === 0) {
+    const { pills } = parseKeyValueSyntax(text)
+    if (pills.length === 0) {
       return <span>{text}</span>
     }
 
     // Split text and insert pills
-    const parts: Array<string | ReturnType<typeof parseKeyValueSyntax>[0]> = []
+    const parts: Array<string | ReturnType<typeof parseKeyValueSyntax>['pills'][0]> = []
     let lastIndex = 0
 
-    for (const match of parsed) {
+    for (const match of pills) {
       const matchIndex = text.indexOf(match.original, lastIndex)
       if (matchIndex > lastIndex) {
         parts.push(text.slice(lastIndex, matchIndex))

@@ -12,6 +12,7 @@
  */
 export interface NormalizedField {
   fieldName: string
+  // biome-ignore lint/suspicious/noExplicitAny: Value can be various complex types including nested structures
   value: string | number | boolean | any[] | Record<string, any> | null
   originalText: string
   startIndex: number

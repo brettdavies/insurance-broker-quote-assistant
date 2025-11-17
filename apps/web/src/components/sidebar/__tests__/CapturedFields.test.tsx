@@ -29,7 +29,6 @@ describe('CapturedFields', () => {
         <CapturedFields
           profile={profile}
           onFieldClick={mockOnFieldClick}
-          inferredFields={options?.inferredFields}
           inferenceReasons={options?.inferenceReasons}
           confidence={options?.confidence}
           onDismiss={options?.onDismiss}

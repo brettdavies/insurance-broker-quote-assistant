@@ -40,16 +40,14 @@ interface NotesPanelProps {
     getEditor: () => import('lexical').LexicalEditor
   } | null>
   autoFocus?: boolean
-  // Inferred fields (optional - populated by inference engine in future stories)
-  inferredFields?: Partial<UserProfile>
-  inferenceReasons?: Record<string, string>
-  confidence?: Record<string, number>
   onDismissInference?: (fieldName: string) => void
   onEditInference?: (fieldName: string, value: unknown) => void
   onConvertToKnown?: (fieldName: string, value: unknown) => void
   onConvertToKnownFromPill?: (fieldName: string) => void
-  // Profile for compliance disclaimers
+  // Profile contains all fields (known in main object, inferred in _inferred object)
   profile?: UserProfile
+  // Callback when userProfile is updated from extraction
+  onProfileUpdate?: (userProfile: UserProfile) => void
 }
 
 export function NotesPanel({
@@ -61,15 +59,25 @@ export function NotesPanel({
   onCommandError,
   editorRef,
   autoFocus = false,
-  inferredFields = {},
-  inferenceReasons = {},
-  confidence = {},
   onDismissInference = () => {},
   onEditInference = () => {},
   onConvertToKnown = () => {},
   onConvertToKnownFromPill = () => {},
   profile = {},
+  onProfileUpdate,
 }: NotesPanelProps) {
+  // Derive inferred fields from userProfile._inferred
+  const inferredFields = profile._inferred || {}
+  // Default inference reasons (can be enhanced later to store in userProfile)
+  const inferenceReasons: Record<string, string> = {}
+  for (const fieldName of Object.keys(inferredFields)) {
+    inferenceReasons[fieldName] = 'Inferred from extracted fields'
+  }
+  // Default confidence (can be enhanced later to store in userProfile)
+  const confidence: Record<string, number> = {}
+  for (const fieldName of Object.keys(inferredFields)) {
+    confidence[fieldName] = 0.85 // Default high confidence
+  }
   const [fieldModalOpen, setFieldModalOpen] = useState(false)
   const [currentField, setCurrentField] = useState<FieldCommand | null>(null)
   const [fieldValue, setFieldValue] = useState<string | null>(null)
@@ -210,6 +218,22 @@ export function NotesPanel({
             placeholder={placeholder}
             onContentChange={handleContentChange}
             onFieldRemoved={onFieldRemoved}
+            onFieldsExtracted={(userProfile) => {
+              // Convert known fields (main userProfile object, excluding metadata) to Record format
+              const fields: Record<string, string | number | boolean> = {}
+              for (const [key, value] of Object.entries(userProfile)) {
+                // Skip metadata fields (starting with _)
+                if (key.startsWith('_')) continue
+                if (value !== null && value !== undefined) {
+                  fields[key] = value as string | number | boolean
+                }
+              }
+              onFieldExtracted?.(fields)
+
+              // Notify parent of complete userProfile update (includes inferred fields in _inferred)
+              onProfileUpdate?.(userProfile)
+            }}
+            suppressedFields={profile._suppressed ?? undefined}
             editorRef={editorRef}
             autoFocus={autoFocus}
             contentEditableClassName="focus:ring-primary-500 focus:border-primary-500 dark:focus:border-primary-400 min-h-[200px] w-full rounded-md border border-gray-300 bg-white p-4 font-mono text-sm text-gray-900 transition-all duration-200 ease-out placeholder:text-gray-500 focus:outline-none focus:ring-2 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:placeholder:text-gray-500"

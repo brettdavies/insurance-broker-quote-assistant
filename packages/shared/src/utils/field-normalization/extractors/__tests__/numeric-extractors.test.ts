@@ -179,7 +179,8 @@ describe('extractAge and extractCreditScore integration', () => {
   })
 
   test('real test case: conversational-10 format', () => {
-    const text = 'IL auto. 3 vehicles: 2021 F-150, 2019 Camry, 2020 CR-V. 3 drivers. Age 36. 12k miles/yr. Clean record. Credit 750. Has pro'
+    const text =
+      'IL auto. 3 vehicles: 2021 F-150, 2019 Camry, 2020 CR-V. 3 drivers. Age 36. 12k miles/yr. Clean record. Credit 750. Has pro'
 
     const ageResult = extractAge(text)
     expect(ageResult).not.toBeNull()

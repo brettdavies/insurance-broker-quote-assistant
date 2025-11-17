@@ -24,9 +24,9 @@ export function checkDelimiterForTransformation(
   isEditing: boolean
 ): { shouldTransform: boolean; shouldSuppressDelimiter: boolean } {
   // Parse the text to get key-value pairs
-  const parsed = parseKeyValueSyntax(text)
+  const { pills } = parseKeyValueSyntax(text)
 
-  if (parsed.length === 0) {
+  if (pills.length === 0) {
     return { shouldTransform: false, shouldSuppressDelimiter: false }
   }
 
@@ -36,7 +36,7 @@ export function checkDelimiterForTransformation(
     $isRangeSelection(selection) && selection.isCollapsed() ? selection.anchor.offset : text.length
 
   // Use shared delimiter detection utility
-  const result = shouldTransformOnDelimiter(text, parsed, cursorOffset)
+  const result = shouldTransformOnDelimiter(text, pills, cursorOffset)
 
   // If not editing, always transform if there are matches
   if (!isEditing) {

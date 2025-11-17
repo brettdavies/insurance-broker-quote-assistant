@@ -177,9 +177,6 @@ export function UnifiedChatInterface({
         policySummary={policySummary}
         policyAnalysisResult={policyAnalysisResult}
         isAnalyzing={policyAnalysisMutation.isPending}
-        inferredFields={inferredFields}
-        inferenceReasons={inferenceReasons}
-        inferenceConfidence={inferenceConfidence}
         editorRef={editorRef}
         uploadPanelFileInputRef={uploadPanelFileInputRef}
         uploadPanelEditorRef={uploadPanelEditorRef}
@@ -199,6 +196,10 @@ export function UnifiedChatInterface({
         onEditInference={handleEditInference}
         onConvertToKnown={handleConvertToKnown}
         onConvertToKnownFromPill={handleConvertToKnownFromPill}
+        onProfileUpdate={(userProfile) => {
+          // Update profile with complete userProfile (includes _inferred and _suppressed)
+          updateProfile(userProfile)
+        }}
       />
 
       <UnifiedChatModals

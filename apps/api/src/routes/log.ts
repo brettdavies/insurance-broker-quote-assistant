@@ -98,7 +98,7 @@ export function createLogRoute() {
             ) {
               // Reconstruct Error from serialized frontend error
               error = new Error(String(data.error.message))
-              error.name = String(data.error.name || 'Error')
+              error.name = String('name' in data.error ? data.error.name : 'Error')
               error.stack = String(data.error.stack || '')
             } else {
               error = new Error(message)

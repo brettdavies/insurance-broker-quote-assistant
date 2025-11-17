@@ -15,6 +15,9 @@ import { handleIntake } from './intake/handlers/intake-handler'
 // Request body schema
 const intakeRequestSchema = z.object({
   message: z.string().min(1),
+  // userProfile contains known fields in main object, inferred in _inferred, suppressed in _suppressed
+  userProfile: userProfileSchema.partial().optional(),
+  // Legacy support: pills and suppressedFields (for backward compatibility)
   pills: userProfileSchema.partial().optional(),
   suppressedFields: z.array(z.string()).optional(),
   // Test-only field: allows injecting a pitch for end-to-end compliance testing
@@ -51,9 +54,14 @@ export function createIntakeRoute(extractor: ConversationalExtractor) {
       )
     }
 
-    const { message, pills, suppressedFields, testPitch } = validationResult.data
+    const { message, userProfile, pills, suppressedFields, testPitch } = validationResult.data
 
-    return handleIntake(c, extractor, message, pills, suppressedFields, testPitch)
+    // Use userProfile if provided, otherwise fall back to legacy pills/suppressedFields
+    const profile = userProfile || {}
+    const legacyPills = pills || {}
+    const legacySuppressed = suppressedFields || []
+
+    return handleIntake(c, extractor, message, profile, legacyPills, legacySuppressed, testPitch)
   })
 
   // Note: Generate prefill endpoint moved to main app at /api/generate-prefill

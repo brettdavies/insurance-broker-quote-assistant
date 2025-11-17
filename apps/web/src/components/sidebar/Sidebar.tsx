@@ -24,7 +24,6 @@ interface SidebarProps {
   confidence?: Record<string, number>
   policyAnalysisResult?: PolicyAnalysisResult
   isAnalyzing?: boolean
-  inferredFields?: Partial<UserProfile>
   inferenceReasons?: Record<string, string>
   onDismiss?: (fieldKey: string) => void
   onConvertToKnown?: (fieldKey: string, value: unknown) => void
@@ -41,7 +40,6 @@ export function Sidebar({
   confidence,
   policyAnalysisResult,
   isAnalyzing = false,
-  inferredFields,
   inferenceReasons,
   onDismiss,
   onConvertToKnown,
@@ -60,7 +58,6 @@ export function Sidebar({
             profile={profile}
             confidence={confidence}
             onFieldClick={onFieldClick}
-            inferredFields={inferredFields}
             inferenceReasons={inferenceReasons}
             onDismiss={onDismiss}
             onConvertToKnown={onConvertToKnown}

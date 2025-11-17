@@ -60,6 +60,11 @@ export function useInferenceEngine({
   const [inferenceReasons, setInferenceReasons] = useState<Record<string, string>>({})
   const [inferenceConfidence, setInferenceConfidence] = useState<Record<string, number>>({})
 
+  // Track which fields came from extraction engine (should not be removed when in profile)
+  // These fields are inferred from extraction (e.g., k:2 → householdSize) and should
+  // remain marked as inferred even if they're also in the profile
+  const extractionInferredFieldsRef = useRef<Set<string>>(new Set())
+
   // Refs for debouncing and preventing infinite loops
   const inferenceRunningRef = useRef(false)
   const inferenceTimeoutRef = useRef<NodeJS.Timeout | null>(null)
@@ -120,7 +125,13 @@ export function useInferenceEngine({
           // Remove fields that are no longer inferred
           for (const fieldName of Object.keys(prevInferred)) {
             // If field is now in knownFields, remove it from inferred
-            if (knownFields[fieldName as keyof UserProfile] !== undefined) {
+            // UNLESS it came from extraction engine (extraction-inferred fields should
+            // remain marked as inferred even if they're in profile, since they're still
+            // technically inferred from the extraction, not explicitly provided)
+            if (
+              knownFields[fieldName as keyof UserProfile] !== undefined &&
+              !extractionInferredFieldsRef.current.has(fieldName)
+            ) {
               // biome-ignore lint/suspicious/noExplicitAny: UserProfile has dynamic field types
               delete (merged as any)[fieldName]
               fieldsToRemove.add(fieldName)
@@ -240,6 +251,7 @@ export function useInferenceEngine({
 
     // Reset refs
     existingInferredRef.current = {}
+    extractionInferredFieldsRef.current.clear()
     inferenceRunningRef.current = false
   }, [])
 
@@ -255,6 +267,40 @@ export function useInferenceEngine({
     }))
   }, [])
 
+  /**
+   * Merge inferred fields from centralized extraction engine
+   * Used when extraction engine returns inferred fields (e.g., from k:2 → householdSize)
+   */
+  const mergeInferredFields = useCallback((newInferred: Partial<UserProfile>) => {
+    // Track which fields came from extraction engine (so they're not removed when in profile)
+    for (const fieldName of Object.keys(newInferred)) {
+      extractionInferredFieldsRef.current.add(fieldName)
+    }
+
+    setInferredFields((prev) => ({
+      ...prev,
+      ...newInferred,
+    }))
+    // Add reasons for each new inferred field
+    const newReasons: Record<string, string> = {}
+    for (const fieldName of Object.keys(newInferred)) {
+      newReasons[fieldName] = 'Inferred from extracted fields'
+    }
+    setInferenceReasons((prev) => ({
+      ...prev,
+      ...newReasons,
+    }))
+    // Set confidence to high (85%) for extraction-based inferences
+    const newConfidence: Record<string, number> = {}
+    for (const fieldName of Object.keys(newInferred)) {
+      newConfidence[fieldName] = 0.85
+    }
+    setInferenceConfidence((prev) => ({
+      ...prev,
+      ...newConfidence,
+    }))
+  }, [])
+
   return {
     inferredFields,
     inferenceReasons,
@@ -262,6 +308,7 @@ export function useInferenceEngine({
     runInference,
     clearInference,
     updateInferredField,
+    mergeInferredFields,
     inferenceTimeoutRef,
     existingInferredRef,
   }

@@ -23,7 +23,16 @@ export async function applyComplianceFilter(
   productType?: string
 }> {
   try {
-    return validateOutput(pitch, policySummary.state, policySummary.productType)
+    const result = validateOutput(pitch, policySummary.state, policySummary.productType)
+    // Convert null to undefined for type compatibility
+    return {
+      passed: result.passed,
+      disclaimers: result.disclaimers ?? undefined,
+      replacementMessage: result.replacementMessage ?? undefined,
+      violations: result.violations ?? undefined,
+      state: result.state ?? undefined,
+      productType: result.productType ?? undefined,
+    }
   } catch (error) {
     await logError('Compliance filter error in policy analyze', error as Error, {
       type: 'compliance_error',

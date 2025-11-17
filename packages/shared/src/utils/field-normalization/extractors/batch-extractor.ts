@@ -7,6 +7,7 @@
 
 import type { NormalizedField } from '../types'
 import { extractCleanRecord, extractOwnsHome } from './boolean-extractors'
+import { extractKeyValueSyntax } from './key-value-extractor'
 import {
   extractAge,
   extractCreditScore,
@@ -37,7 +38,17 @@ export function extractNormalizedFields(text: string): NormalizedField[] {
     })
   }
 
-  // Extract all field types (order matters - more specific patterns first)
+  // STEP 1: Extract key:value syntax FIRST (highest priority)
+  // This must run before natural language extractors to capture explicit syntax like "k:2", "state:CA"
+  const keyValueFields = extractKeyValueSyntax(text)
+  for (const field of keyValueFields) {
+    if (!isOverlapping(field.startIndex, field.endIndex)) {
+      fields.push(field)
+      processedRanges.push({ start: field.startIndex, end: field.endIndex })
+    }
+  }
+
+  // STEP 2: Extract natural language patterns (order matters - more specific patterns first)
   const extractors = [
     extractState, // Extract state codes/names (must come before productType to handle "CA auto")
     extractProductType, // Extract product types (after state to handle "CA auto" pattern)

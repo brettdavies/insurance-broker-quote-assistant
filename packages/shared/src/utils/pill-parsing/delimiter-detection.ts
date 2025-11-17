@@ -5,8 +5,12 @@
  * Used by frontend Lexical plugin for real-time pill transformation.
  */
 
+import { EXTRACTION_DELIMITERS } from '../../constants/delimiters'
 import { type FieldTypeConfig, buildFieldTypeConfig } from './key-value-parser'
 import type { ParsedKeyValue } from './types'
+
+// Default delimiters (excluding newline for inline text processing)
+const DEFAULT_INLINE_DELIMITERS = EXTRACTION_DELIMITERS.filter((d) => d !== '\n')
 
 /**
  * Get valid delimiters for a field based on its type
@@ -22,7 +26,7 @@ export function getValidDelimitersForField(
   const config = fieldTypeConfig || buildFieldTypeConfig()
 
   if (!fieldName) {
-    return [' ', ',', '.']
+    return DEFAULT_INLINE_DELIMITERS
   }
 
   // Multi-word fields: spaces are part of value, only comma/period are delimiters
@@ -37,14 +41,14 @@ export function getValidDelimitersForField(
 
   // Zip fields: dashes are part of value, space/comma/period are delimiters
   if (fieldName === 'zip') {
-    return [' ', ',', '.']
+    return DEFAULT_INLINE_DELIMITERS
   }
 
   // Numeric fields with commas: commas are part of value (thousands separator), only space is delimiter
   // This is determined at runtime based on value content, not field type alone
 
   // Default: space, comma, or period are delimiters
-  return [' ', ',', '.']
+  return DEFAULT_INLINE_DELIMITERS
 }
 
 /**

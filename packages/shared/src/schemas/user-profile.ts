@@ -68,6 +68,12 @@ export const userProfileSchema = userContactSchema.extend({
 
   // Legacy field name support (kids -> householdSize)
   kids: z.number().int().nonnegative().nullish(),
+
+  // Metadata fields (not part of actual user data)
+  // _inferred: Object containing inferred field values (fields NOT in main userProfile)
+  _inferred: z.record(z.unknown()).nullish(),
+  // _suppressed: Array of field names that are suppressed (should not appear in known or inferred)
+  _suppressed: z.array(z.string()).nullish(),
 })
 
 export type UserProfile = z.infer<typeof userProfileSchema>

@@ -26,7 +26,13 @@ export function parseDeductibles(
 ): DeductiblesInfo {
   // First, try to get deductibles from policySummary
   if (policySummary.deductibles) {
-    return policySummary.deductibles
+    // Convert null values to undefined for type compatibility
+    return {
+      auto: policySummary.deductibles.auto ?? undefined,
+      home: policySummary.deductibles.home ?? undefined,
+      comprehensive: policySummary.deductibles.comprehensive ?? undefined,
+      collision: policySummary.deductibles.collision ?? undefined,
+    }
   }
 
   // If not in policySummary, try to parse from policyText

@@ -201,6 +201,22 @@ export {
   type ExtractionResult,
 } from './utils/field-extraction-orchestrator'
 
+// Export centralized extraction engine (single source of truth for FE and BE)
+export {
+  extractFieldsAndReplace,
+  removePillMarkers,
+  type ExtractionResult as CentralizedExtractionResult,
+} from './extraction-engine'
+
+// Export delimiter constants
+export {
+  EXTRACTION_DELIMITERS,
+  PILL_MARKER_START,
+  PILL_MARKER_END,
+  PILL_MARKER_PATTERN,
+  type ExtractionDelimiter,
+} from './constants/delimiters'
+
 // Re-export all constants
 export * from './index/constants'
 

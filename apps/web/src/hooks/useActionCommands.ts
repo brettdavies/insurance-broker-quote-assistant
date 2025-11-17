@@ -16,14 +16,6 @@ import type { IntakeResult, PolicyAnalysisResult, UserProfile } from '@repo/shar
 import type { MissingField } from '@repo/shared'
 import { useCallback } from 'react'
 
-interface SuppressionManagerHook {
-  getSuppressed: () => string[]
-  addSuppression: (fieldName: string) => void
-  removeSuppression: (fieldName: string) => void
-  isSuppressed: (fieldName: string) => boolean
-  clearSuppressed: () => void
-}
-
 interface UseActionCommandsParams {
   mode: 'intake' | 'policy'
   editorRef: React.MutableRefObject<{
@@ -31,13 +23,14 @@ interface UseActionCommandsParams {
     clear: () => void
   } | null>
   profileRef: React.MutableRefObject<UserProfile>
-  suppression: SuppressionManagerHook
+  profile: UserProfile
   intakeMutation: {
     mutate: (
       request: {
         message: string
+        userProfile?: UserProfile
         pills?: UserProfile
-        suppressedFields: string[]
+        suppressedFields?: string[]
       },
       options?: {
         onSuccess?: (result: IntakeResult) => void
@@ -52,17 +45,6 @@ interface UseActionCommandsParams {
   setCurrentField: (field: { key: string; value?: string | number | boolean } | null) => void
   setFieldModalOpen: (open: boolean) => void
   setHelpModalOpen: (open: boolean) => void
-  clearInference: () => void
-  setInferredModalOpen: (open: boolean) => void
-  setInferredModalField: (
-    field: {
-      fieldName: string
-      fieldLabel: string
-      value: unknown
-    } | null
-  ) => void
-  inferenceTimeoutRef: React.MutableRefObject<NodeJS.Timeout | null>
-  existingInferredRef: React.MutableRefObject<Partial<UserProfile>>
   editorContentRef: React.MutableRefObject<string>
   queryClient: { clear: () => void }
   setLatestIntakeResult: (result: IntakeResult | null) => void
@@ -79,7 +61,7 @@ export function useActionCommands({
   mode,
   editorRef,
   profileRef,
-  suppression,
+  profile,
   intakeMutation,
   policyAnalysisResult,
   handleExportCommand,
@@ -88,11 +70,6 @@ export function useActionCommands({
   setCurrentField,
   setFieldModalOpen,
   setHelpModalOpen,
-  clearInference,
-  setInferredModalOpen,
-  setInferredModalField,
-  inferenceTimeoutRef,
-  existingInferredRef,
   editorContentRef,
   queryClient,
   setLatestIntakeResult,
@@ -105,30 +82,20 @@ export function useActionCommands({
   toast,
 }: UseActionCommandsParams) {
   const handleReset = useCallback(() => {
-    // Clear inference timeout if pending
-    if (inferenceTimeoutRef.current) {
-      clearTimeout(inferenceTimeoutRef.current)
-      inferenceTimeoutRef.current = null
-    }
-
     // Clear all state atomically
     reset()
     setCurrentField(null)
     setFieldModalOpen(false)
     setHelpModalOpen(false)
 
-    // Clear suppression list
-    suppression.clearSuppressed()
-
-    // Clear inferred fields
-    clearInference()
-    setInferredModalOpen(false)
-    setInferredModalField(null)
+    // Clear userProfile metadata (_inferred and _suppressed)
+    updateProfile({
+      _inferred: undefined,
+      _suppressed: undefined,
+    })
 
     // Clear refs
-    existingInferredRef.current = {}
     editorContentRef.current = ''
-    inferenceTimeoutRef.current = null
 
     // Clear TanStack Query cache
     queryClient.clear()
@@ -149,12 +116,7 @@ export function useActionCommands({
     setCurrentField,
     setFieldModalOpen,
     setHelpModalOpen,
-    suppression,
-    clearInference,
-    setInferredModalOpen,
-    setInferredModalField,
-    inferenceTimeoutRef,
-    existingInferredRef,
+    updateProfile,
     editorContentRef,
     queryClient,
     editorRef,
@@ -174,17 +136,30 @@ export function useActionCommands({
       return
     }
 
-    const pills = profileRef.current
+    // Build userProfile from current profile state
+    // Known fields are in main profile object, inferred in _inferred, suppressed in _suppressed
+    const currentProfile = profileRef.current
+    const userProfile: UserProfile = {
+      ...currentProfile,
+      _inferred: currentProfile._inferred || {},
+      _suppressed: currentProfile._suppressed || [],
+    }
+
     const request = {
       message: cleanedText,
-      pills: Object.keys(pills).length > 0 ? pills : undefined,
-      suppressedFields: suppression.getSuppressed(),
+      userProfile: Object.keys(userProfile).length > 0 ? userProfile : undefined,
+      // Legacy support (for backward compatibility)
+      pills: Object.keys(currentProfile).length > 0 ? currentProfile : undefined,
+      suppressedFields:
+        userProfile._suppressed && userProfile._suppressed.length > 0
+          ? userProfile._suppressed
+          : undefined,
     }
 
     console.log('[Frontend] handleExtract: Calling API with request:', {
       messageLength: cleanedText.length,
-      hasPills: Object.keys(pills).length > 0,
-      suppressedFieldsCount: suppression.getSuppressed().length,
+      hasUserProfile: Object.keys(userProfile).length > 0,
+      suppressedFieldsCount: userProfile._suppressed?.length || 0,
     })
 
     intakeMutation.mutate(request, {
@@ -201,7 +176,7 @@ export function useActionCommands({
         onIntakeError?.(error)
       },
     })
-  }, [editorRef, profileRef, intakeMutation, suppression, toast, onIntakeSuccess, onIntakeError])
+  }, [editorRef, profileRef, intakeMutation, toast, onIntakeSuccess, onIntakeError])
 
   const handleActionCommand = useCallback(
     (command: ActionCommand) => {

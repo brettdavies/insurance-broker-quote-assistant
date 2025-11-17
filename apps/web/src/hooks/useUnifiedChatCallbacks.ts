@@ -14,7 +14,6 @@ import { useCallback } from 'react'
 
 interface UseUnifiedChatCallbacksParams {
   editorContentRef: React.MutableRefObject<string>
-  runInference: () => void
   onContentChange?: (content: string) => void
   toast: typeof ToastFn
   currentField: { key: string; value?: string | number | boolean } | null
@@ -26,7 +25,6 @@ interface UseUnifiedChatCallbacksParams {
 
 export function useUnifiedChatCallbacks({
   editorContentRef,
-  runInference,
   onContentChange,
   toast,
   currentField,
@@ -38,10 +36,10 @@ export function useUnifiedChatCallbacks({
   const handleContentChange = useCallback(
     (content: string) => {
       editorContentRef.current = content
-      runInference()
+      // Inference now happens in extraction engine, no need to call runInference
       onContentChange?.(content)
     },
-    [runInference, onContentChange, editorContentRef]
+    [onContentChange, editorContentRef]
   )
 
   const handleFieldModalSubmit = useCallback(

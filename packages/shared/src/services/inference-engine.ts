@@ -128,35 +128,62 @@ export class InferenceEngine {
     // Step 1: Field-to-field inferences (from known fields)
     for (const [fieldName, fieldValue] of Object.entries(knownFields)) {
       const metadata = this.fieldInferences[fieldName]
-      if (!metadata) continue
+      if (!metadata) {
+        console.log(`[InferenceEngine] No inference rules for field: ${fieldName}`)
+        continue
+      }
+
+      console.log(
+        `[InferenceEngine] Processing field: ${fieldName} = ${fieldValue} (type: ${typeof fieldValue}), has ${metadata.length} inference rules`
+      )
 
       for (const rule of metadata) {
+        console.log(`[InferenceEngine] Checking rule: ${fieldName} → ${rule.targetField}`)
+
         // Skip if target field already known, already inferred, or suppressed
         // CRITICAL: First inference wins - if target field already exists in inferred,
         // do NOT update it when source field changes (e.g., kids:2 → kids:3)
         if (knownFields[rule.targetField as keyof UserProfile] !== undefined) {
+          console.log(`[InferenceEngine] Skipping ${rule.targetField}: already in known fields`)
           continue
         }
         // Check if already in current inference run
         // biome-ignore lint/suspicious/noExplicitAny: UserProfile has dynamic field types
         if ((inferred as any)[rule.targetField] !== undefined) {
+          console.log(
+            `[InferenceEngine] Skipping ${rule.targetField}: already in current inference run`
+          )
           continue
         }
         // Check if already in existing inferred fields (first inference wins)
         if (existingInferred && rule.targetField in existingInferred) {
+          console.log(
+            `[InferenceEngine] Skipping ${rule.targetField}: already in existing inferred fields`
+          )
           continue
         }
         if (this.suppressedFields.includes(rule.targetField)) {
+          console.log(`[InferenceEngine] Skipping ${rule.targetField}: suppressed`)
           continue
         }
 
         const inferredValue = rule.inferValue(fieldValue)
+        console.log(
+          `[InferenceEngine] Rule ${fieldName} → ${rule.targetField}: inferValue(${fieldValue}) = ${inferredValue}`
+        )
         if (inferredValue !== undefined) {
           // Debug logging removed - callers should log inference events if needed
           // biome-ignore lint/suspicious/noExplicitAny: UserProfile has dynamic field types
           ;(inferred as any)[rule.targetField] = inferredValue
           reasons[rule.targetField] = rule.reasoning
           confidence[rule.targetField] = confidenceToNumber(rule.confidence)
+          console.log(
+            `[InferenceEngine] Added inferred field: ${rule.targetField} = ${inferredValue}`
+          )
+        } else {
+          console.log(
+            `[InferenceEngine] Rule ${fieldName} → ${rule.targetField}: inferValue returned undefined`
+          )
         }
       }
     }
@@ -204,9 +231,15 @@ export class InferenceEngine {
     let iterations = 0
     const maxIterations = 10 // Safety limit to prevent infinite loops
 
+    console.log(
+      '[InferenceEngine] Starting Step 3: Chained inferences. Current inferred:',
+      Object.keys(inferred).join(', ')
+    )
+
     while (hasNewInferences && iterations < maxIterations) {
       hasNewInferences = false
       iterations++
+      console.log(`[InferenceEngine] Step 3 iteration ${iterations}`)
 
       // Create a snapshot of current inferred fields to iterate over
       // Include ALL fields from inferred (Steps 1 and 2) - we want to apply inference rules
@@ -217,35 +250,62 @@ export class InferenceEngine {
         const metadata = this.fieldInferences[fieldName]
         if (!metadata) continue
 
+        console.log(
+          `[InferenceEngine] Step 3: Processing inferred field: ${fieldName} = ${fieldValue}`
+        )
+
         for (const rule of metadata) {
+          console.log(`[InferenceEngine] Step 3: Checking rule: ${fieldName} → ${rule.targetField}`)
+
           // Skip if target field already known, already inferred, or suppressed
           if (knownFields[rule.targetField as keyof UserProfile] !== undefined) {
+            console.log(
+              `[InferenceEngine] Step 3: Skipping ${rule.targetField}: already in known fields`
+            )
             continue
           }
           // Check if already in current inferred (from previous iterations)
           // biome-ignore lint/suspicious/noExplicitAny: UserProfile has dynamic field types
           if ((inferred as any)[rule.targetField] !== undefined) {
+            console.log(
+              `[InferenceEngine] Step 3: Skipping ${rule.targetField}: already in current inferred`
+            )
             continue
           }
           // Check if already in existing inferred fields (first inference wins)
           if (existingInferred && rule.targetField in existingInferred) {
+            console.log(
+              `[InferenceEngine] Step 3: Skipping ${rule.targetField}: already in existing inferred fields`
+            )
             continue
           }
           if (this.suppressedFields.includes(rule.targetField)) {
+            console.log(`[InferenceEngine] Step 3: Skipping ${rule.targetField}: suppressed`)
             continue
           }
 
           const inferredValue = rule.inferValue(fieldValue)
+          console.log(
+            `[InferenceEngine] Step 3: Rule ${fieldName} → ${rule.targetField}: inferValue(${fieldValue}) = ${inferredValue}`
+          )
           if (inferredValue !== undefined) {
             // biome-ignore lint/suspicious/noExplicitAny: UserProfile has dynamic field types
             ;(inferred as any)[rule.targetField] = inferredValue
             reasons[rule.targetField] = rule.reasoning
             confidence[rule.targetField] = confidenceToNumber(rule.confidence)
             hasNewInferences = true
+            console.log(
+              `[InferenceEngine] Step 3: Added inferred field: ${rule.targetField} = ${inferredValue}`
+            )
           }
         }
       }
     }
+
+    console.log(
+      '[InferenceEngine] Final inferred fields after all steps:',
+      Object.keys(inferred).join(', ')
+    )
 
     return { inferred, reasons, confidence }
   }

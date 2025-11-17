@@ -13,7 +13,6 @@ import { useEditorRefs } from '@/hooks/useEditorRefs'
 import { useExportHandlers } from '@/hooks/useExportHandlers'
 import { useFieldClickHandler } from '@/hooks/useFieldClickHandler'
 import { useFieldHandlers } from '@/hooks/useFieldHandlers'
-import { useInferenceEngine } from '@/hooks/useInferenceEngine'
 import { useInferredFieldHandlers } from '@/hooks/useInferredFieldHandlers'
 import { useInferredFieldModal } from '@/hooks/useInferredFieldModal'
 import { useIntake } from '@/hooks/useIntake'
@@ -23,12 +22,11 @@ import { useMissingFieldsCalculator } from '@/hooks/useMissingFieldsCalculator'
 import { usePolicyAnalysis } from '@/hooks/usePolicyAnalysis'
 import { usePolicyAnalysisTrigger } from '@/hooks/usePolicyAnalysisTrigger'
 import type { ActionCommand } from '@/hooks/useSlashCommands'
-import { useSuppressionManager } from '@/hooks/useSuppressionManager'
 import { useUnifiedChatCallbacks } from '@/hooks/useUnifiedChatCallbacks'
 import { showFieldCapturedToast, showFieldRemovedToast } from '@/utils/toast-helpers'
 import type { IntakeResult, UserProfile } from '@repo/shared'
 import { useQueryClient } from '@tanstack/react-query'
-import { useCallback } from 'react'
+import { useCallback, useMemo } from 'react'
 
 interface UseUnifiedChatHooksParams {
   mode: 'intake' | 'policy'
@@ -97,7 +95,6 @@ export function useUnifiedChatHooks({
   const queryClient = useQueryClient()
   const policyAnalysisMutation = usePolicyAnalysis()
   const intakeMutation = useIntake()
-  const suppression = useSuppressionManager()
 
   // Editor refs management
   const { editorRef, editorContentRef, uploadPanelFileInputRef, uploadPanelEditorRef } =
@@ -110,21 +107,24 @@ export function useUnifiedChatHooks({
   const { inferredModalOpen, inferredModalField, setInferredModalOpen, openModal } =
     useInferredFieldModal()
 
-  // Inference engine hook
-  const {
-    inferredFields,
-    inferenceReasons,
-    inferenceConfidence,
-    runInference,
-    clearInference,
-    updateInferredField,
-    inferenceTimeoutRef,
-    existingInferredRef,
-  } = useInferenceEngine({
-    suppression,
-    editorRef,
-    profileRef,
-  })
+  // Derive inferred fields from profile._inferred
+  const inferredFields = useMemo(() => profile._inferred || {}, [profile._inferred])
+  // Default inference reasons (can be enhanced later to store in userProfile)
+  const inferenceReasons = useMemo(() => {
+    const reasons: Record<string, string> = {}
+    for (const fieldName of Object.keys(inferredFields)) {
+      reasons[fieldName] = 'Inferred from extracted fields'
+    }
+    return reasons
+  }, [inferredFields])
+  // Default confidence (can be enhanced later to store in userProfile)
+  const inferenceConfidence = useMemo(() => {
+    const confidence: Record<string, number> = {}
+    for (const fieldName of Object.keys(inferredFields)) {
+      confidence[fieldName] = 0.85 // Default high confidence
+    }
+    return confidence
+  }, [inferredFields])
 
   // Field handlers hook
   const {
@@ -143,9 +143,9 @@ export function useUnifiedChatHooks({
             showFieldCapturedToast(toast, key, value)
           }
         }, 0)
-        runInference()
+        // Inference now happens in extraction engine, no need to call runInference
       },
-      [toast, runInference]
+      [toast]
     ),
     onFieldRemoved: useCallback(
       (fieldName: string) => {
@@ -177,10 +177,8 @@ export function useUnifiedChatHooks({
     handleConvertToKnown,
     handleConvertToKnownFromPill,
   } = useInferredFieldHandlers({
-    suppression,
+    profile,
     updateProfile,
-    updateInferredField,
-    runInference,
     toast,
   })
 
@@ -197,7 +195,6 @@ export function useUnifiedChatHooks({
   const { handleContentChange, handleFieldModalSubmit, handleCommandError, getFieldCommand } =
     useUnifiedChatCallbacks({
       editorContentRef,
-      runInference,
       onContentChange,
       toast,
       currentField,
@@ -212,7 +209,7 @@ export function useUnifiedChatHooks({
     mode,
     editorRef,
     profileRef,
-    suppression,
+    profile,
     intakeMutation,
     policyAnalysisResult,
     handleExportCommand,
@@ -221,11 +218,6 @@ export function useUnifiedChatHooks({
     setCurrentField,
     setFieldModalOpen,
     setHelpModalOpen,
-    clearInference,
-    setInferredModalOpen: () => {},
-    setInferredModalField: () => {},
-    inferenceTimeoutRef,
-    existingInferredRef,
     editorContentRef,
     queryClient,
     setLatestIntakeResult,
