@@ -59,12 +59,17 @@ export function InferredFieldModal({
       : fieldName || ''
   const shortcutPrefix = `${shortcutKey}:`
 
+  const descriptionId = `field-modal-desc-${fieldName || 'inferred'}`
+
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent>
+      <DialogContent aria-describedby={descriptionId}>
         <DialogHeader>
           <DialogTitle>{title}</DialogTitle>
         </DialogHeader>
+        <span id={descriptionId} className="sr-only">
+          {reasoning ? `Edit inferred field. Reasoning: ${reasoning}` : 'Edit inferred field'}
+        </span>
         <div className="space-y-4">
           <FieldModalInput
             value={value}

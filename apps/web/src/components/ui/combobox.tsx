@@ -60,12 +60,14 @@ export function Combobox({
     )
   })
 
-  // Update search term when value changes externally
+  // Update search term when value changes externally (only when dropdown is closed)
   useEffect(() => {
-    if (!isOpen && value) {
-      setSearchTerm(selectedOption?.label || value)
-    } else if (!isOpen) {
-      setSearchTerm('')
+    if (!isOpen) {
+      if (value) {
+        setSearchTerm(selectedOption?.label || value)
+      } else {
+        setSearchTerm('')
+      }
     }
   }, [value, isOpen, selectedOption])
 
