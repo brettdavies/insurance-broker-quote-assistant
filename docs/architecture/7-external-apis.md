@@ -20,12 +20,12 @@
 
 **Critical Integration Requirements:**
 
-- **Token usage logging:** Every API call must log token counts for cost tracking (non-standard for demo, required for PEAK6 evaluation)
+- **Token usage logging:** Every API call must log token counts for cost tracking (non-standard for demo, required for evaluation)
 - **Structured outputs for extraction:** Use JSON schema with `responseSchema` parameter (prevents hallucinated field names)
 - **No streaming (MVP):** Synchronous responses simplify implementation for 5-day timeline
 - **Error handling:** Gemini API has different error formats than OpenAI (wrapped in `candidates[0].content`)
 
-**Cost Estimation (15 PEAK6 Test Cases):**
+**Cost Estimation (15 Test Cases):**
 
 - Extraction: 15 × ~500 tokens × $0.075/1M = $0.0006
 - Pitch generation: 15 × ~1000 tokens × $0.30/1M = $0.0045

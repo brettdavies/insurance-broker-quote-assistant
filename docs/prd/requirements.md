@@ -16,7 +16,7 @@
 
 **FR7:** The system shall enforce **mandatory compliance guardrails** including: (a) displaying required insurance sales disclaimers, (b) refusing prohibited statements (guarantees, binding quotes, price promises), and (c) triggering licensed-agent handoff for regulated activities.
 
-**FR8:** The system shall provide **structured outputs** for all interactions including: route decision (carrier/state/product), missing fields checklist, pre-fill packet JSON, and savings pitch with **industry-standard footnote citations** (e.g., "(1) https://geico.com/discounts/, accessed 2025-11-09") to knowledge pack sections. This citation format meets PEAK6 requirements for broker credibility and regulatory compliance.
+**FR8:** The system shall provide **structured outputs** for all interactions including: route decision (carrier/state/product), missing fields checklist, pre-fill packet JSON, and savings pitch with **industry-standard footnote citations** (e.g., "(1) https://geico.com/discounts/, accessed 2025-11-09") to knowledge pack sections. This citation format meets the client's requirements for broker credibility and regulatory compliance.
 
 **FR9:** The system shall support **test case evaluation** through an automated harness that measures routing accuracy, intake completeness, savings-pitch clarity, and compliance checks against synthetic test data.
 

@@ -1050,7 +1050,7 @@ scripts/utils/
 
 ---
 
-## Benefits for PEAK6 Demo
+## Benefits for Demo
 
 This methodology provides:
 

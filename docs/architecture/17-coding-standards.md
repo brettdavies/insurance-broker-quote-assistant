@@ -19,7 +19,7 @@
   - **Why:** Consistent error format for frontend, comprehensive logging for debugging
 
 - **LLM API Calls:** Always include timeout and token usage logging. Use structured outputs (JSON mode) for extraction.
-  - **Why:** Prevents hanging requests, tracks costs (required for PEAK6 evaluation), ensures valid JSON
+  - **Why:** Prevents hanging requests, tracks costs (required for the client's evaluation), ensures valid JSON
 
 - **Knowledge Pack:** Load at startup (async, non-blocking), never reload during request. Always query via RAG layer, never direct file access.
   - **Why:** Ensures data is available immediately when first query arrives, RAG layer provides citation tracking for compliance
@@ -33,7 +33,22 @@
 - **Imports:** Use `@repo/shared` for shared package, `@/` for relative imports within app. Never use `../../../` relative paths.
   - **Why:** Monorepo path aliases prevent broken imports when moving files
 
-## 17.2 Naming Conventions
+## 17.2 As-Built Architectural Rules
+
+**Additional Rules Observed in Implementation:**
+
+6. **DRY Principle:** Shared extraction engine, unified field metadata, centralized constants
+7. **Single Responsibility:** Each service/component has one clear purpose
+8. **Hook Composition:** Frontend uses composed hooks vs prop drilling (never pass more than 5 props)
+9. **Service Layer:** Backend routes delegate to handlers → services pattern
+10. **Error Boundaries:** Centralized error handling middleware
+
+**File Organization Patterns:**
+- **Feature-based components** (`intake/`, `policy/`, `notes/`) - Grouped by user flow
+- **Modular service structure** (`routing/`, `discount-engine/`, `gemini/`) - Feature-based subdirectories
+- **Colocated tests** (`__tests__/` folders) - Tests next to source files
+
+## 17.3 Naming Conventions
 
 | Element          | Frontend             | Backend          | Example                |
 | ---------------- | -------------------- | ---------------- | ---------------------- |
@@ -45,7 +60,25 @@
 | Constants        | UPPER_SNAKE_CASE     | UPPER_SNAKE_CASE | `PROHIBITED_PHRASES`   |
 | Files            | kebab-case           | kebab-case       | `routing-engine.ts`    |
 
-## 17.3 Implementation Guidance
+## 17.4 Import/Export Patterns
+
+**Barrel Exports:**
+- `packages/shared/src/index.ts` - Main entry point
+- `packages/shared/src/index/schemas.ts` - Schema exports
+- Organized by category (schemas, constants, services, utils)
+
+**Path Aliases:**
+- `@repo/shared` - Shared package
+- `@repo/web` - Web app
+- `@repo/api` - API app
+- `@/*` - Local imports within package
+
+**Import Order:**
+1. External dependencies (React, Zod, etc.)
+2. Internal workspace imports (`@repo/*`)
+3. Relative imports (`./`, `../`)
+
+## 17.5 Implementation Guidance
 
 **Purpose:** Practical patterns for common implementation tasks across the architecture.
 

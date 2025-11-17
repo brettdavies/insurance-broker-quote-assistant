@@ -1,8 +1,8 @@
 # 20. Success Criteria and Evaluation
 
-**Purpose:** Define measurable success metrics that prove the architecture meets PEAK6 requirements.
+**Purpose:** Define measurable success metrics that prove the architecture meets the client's requirements.
 
-## 20.1 PEAK6 Requirements Mapping
+## 20.1 Requirements Mapping
 
 | Requirement                     | Target                         | How Architecture Achieves It                                                               |
 | ------------------------------- | ------------------------------ | ------------------------------------------------------------------------------------------ |
@@ -61,7 +61,7 @@
 
 **Why Automated Evaluation:**
 
-- **Objective metrics:** PEAK6 can run evaluation themselves, no subjective judgment
+- **Objective metrics:** The client can run evaluation themselves, no subjective judgment
 - **Regression prevention:** Catch broken routes/discounts before demo
 - **Cost transparency:** Token usage visible, proves cost-efficiency
 

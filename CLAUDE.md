@@ -38,7 +38,7 @@ See [Coding Standards](./docs/architecture/17-coding-standards.md) for full deta
 
 ## Project Overview
 
-**IQuote Pro** is a 5-day PEAK6 interview project demonstrating a multi-agent AI assistant for insurance brokers. The system uses a **hybrid LLM + deterministic rules architecture**:
+**IQuote Pro** is a 5-day interview project demonstrating a multi-agent AI assistant for insurance brokers. The system uses a **hybrid LLM + deterministic rules architecture**:
 
 - **2 LLM Agents:** Conversational Extractor (field extraction) + Pitch Generator (recommendations)
 - **3 Rules Engines:** Routing (carrier eligibility) + Discount (savings) + Compliance (regulatory guardrails)
@@ -77,7 +77,7 @@ bun run lint
 - **[Tech Stack](./docs/architecture/3-tech-stack.md#31-technology-stack-table)** - React + TanStack + Hono + TypeScript + Bun
 - **[Development Workflow](./docs/architecture/13-development-workflow.md#131-development-tools)** - Commands and environment setup
 - **[Coding Standards](./docs/architecture/17-coding-standards.md#171-critical-architectural-rules)** - Critical rules for development
-- **[Success Criteria](./docs/architecture/20-success-criteria-and-evaluation.md#201-peak6-requirements-mapping)** - PEAK6 evaluation metrics
+- **[Success Criteria](./docs/architecture/20-success-criteria-and-evaluation.md#201-requirements-mapping)** - Evaluation metrics
 
 **Core Workflows:**
 

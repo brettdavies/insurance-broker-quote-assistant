@@ -23,7 +23,7 @@ export interface OverallMetrics {
   disclaimersShown: number
   disclaimersMissed: number
   compliancePassRate: number
-  // Flow-specific metrics (per PEAK6 spec)
+  // Flow-specific metrics (per spec)
   conversational: {
     routingAccuracy: number
     intakeCompleteness: number

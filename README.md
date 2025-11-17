@@ -149,4 +149,4 @@ See `.github/workflows/ci.yml` for details.
 
 ## License
 
-Private project - PEAK6 interview demo
+Private project - interview demo

@@ -55,7 +55,7 @@ export function calculateMetrics(testCase: TestCase, actualResponse: unknown): T
 
 /**
  * Calculate metrics for conversational intake test case
- * Per PEAK6 spec: conversational flow does NOT require pitch or discount detection
+ * Per spec: conversational flow does NOT require pitch or discount detection
  */
 function calculateConversationalMetrics(testCase: TestCase, response: IntakeResult): TestMetrics {
   const routingAccuracy = calculateRoutingAccuracy(testCase.expectedRoute, response.route)
@@ -86,7 +86,7 @@ function calculateConversationalMetrics(testCase: TestCase, response: IntakeResu
 
 /**
  * Calculate metrics for policy analysis test case
- * Per PEAK6 spec: policy flow DOES require pitch generation and discount detection
+ * Per spec: policy flow DOES require pitch generation and discount detection
  */
 function calculatePolicyMetrics(testCase: TestCase, response: PolicyAnalysisResult): TestMetrics {
   const intakeCompleteness = calculateFieldCompleteness(

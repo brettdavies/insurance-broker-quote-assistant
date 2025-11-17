@@ -26,7 +26,7 @@ import type { TestMetrics } from './services/metrics-calculator'
  * - Conversational: input, expectedProfile, expectedRoute, expectedDisclaimers
  * - Policy: policyInput, expectedPolicy, expectedOpportunities, expectedBundleOptions, expectedDeductibleOptimizations, expectedDisclaimers
  *
- * Note: expectedOpportunities is IGNORED for conversational tests (not required by PEAK6 spec)
+ * Note: expectedOpportunities is IGNORED for conversational tests (not required by spec)
  */
 export interface TestCase {
   id: string
@@ -37,13 +37,13 @@ export interface TestCase {
   state: string
   product: string | string[]
 
-  // Conversational test case fields (PEAK6 spec requirements)
+  // Conversational test case fields (spec requirements)
   input?: string // User message for conversational intake
   expectedProfile?: UserProfile // Expected extracted fields
   expectedRoute?: RouteDecision // Expected routing decision
   expectedDisclaimers?: string[] // Expected compliance disclaimers (substrings to match)
 
-  // Policy test case fields (PEAK6 spec requirements)
+  // Policy test case fields (spec requirements)
   policyInput?: string | PolicySummary // Policy document or structured policy data
   expectedPolicy?: PolicySummary // Expected parsed policy
   expectedOpportunities?: Opportunity[] // Expected discount opportunities (POLICY ONLY - ignored for conversational)

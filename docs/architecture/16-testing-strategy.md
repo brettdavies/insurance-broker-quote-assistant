@@ -7,7 +7,7 @@
 **What We Use:**
 
 ```
-        E2E Tests (0% - skipped for MVP)
+        E2E Tests (Evaluation Framework - 15 test cases)
         /                             \
     Integration Tests (20%)
     /                                \
@@ -19,7 +19,7 @@ Frontend Unit (40%)              Backend Unit (40%)
 - **40% frontend unit:** React components, hooks, utilities (fast, easy to write)
 - **40% backend unit:** Deterministic engines, RAG, orchestrator (critical business logic)
 - **20% integration:** API routes with Hono, full agent/engine flows (ensures components work together)
-- **0% E2E for MVP:** Too slow for 5-day timeline, integration tests cover critical paths
+- **E2E Evaluation Framework:** Production-grade automated testing with 15 test cases (10 conversational + 5 policy) for the client's evaluation criteria
 
 ## 16.2 Testing Tools
 
@@ -54,8 +54,8 @@ Frontend Unit (40%)              Backend Unit (40%)
 
 **What We Skip (5-Day MVP):**
 
-- **E2E tests:** Too slow to write and maintain for timeline
-- **LLM mocking complexity:** Test orchestrator with mocked LLM responses, not actual Gemini calls
+- **Playwright E2E tests:** Too slow to write and maintain for timeline (evaluation framework serves this purpose)
+- **LLM mocking complexity:** Test orchestrator with mocked LLM responses, not actual Gemini calls (except in evaluation framework)
 - **Edge cases:** Focus on happy path + critical error cases only
 
 **Why This Focus:**
@@ -561,7 +561,96 @@ TEST_TARGETS=real-api bun test
 TEST_API_URL=http://localhost:7070 bun test apps/api/src/routes/__tests__/intake.contract.test.ts
 ```
 
-## 16.10 Code Quality Metrics
+## 16.10 Evaluation Framework
+
+**Purpose:** Production E2E testing with metrics for the client's evaluation criteria
+
+**Location:** `evaluation/` directory
+
+**Structure:**
+
+```
+evaluation/
+├── test-cases/
+│   ├── conversational/           # 10 conversational intake tests
+│   │   ├── conversational-01-geico-ca-auto.json
+│   │   └── [9 more tests]
+│   └── policy/                   # 5 policy analysis tests
+│       ├── policy-01-geico-ca-auto.json
+│       └── [4 more tests]
+├── services/
+│   ├── test-runner.ts            # Main orchestrator
+│   ├── conversational-test-runner.ts
+│   ├── policy-test-runner.ts
+│   ├── metrics-calculator.ts     # Scoring logic
+│   └── report-generator.ts       # Report output
+├── templates/                    # Report templates
+└── result/                       # Generated reports
+    ├── report.json               # Metrics data
+    ├── report.md                 # Summary report
+    └── conversational-*.md       # Individual test reports
+```
+
+**Test Case Format:**
+
+```typescript
+interface TestCase {
+  id: string                      // 'conv-01' or 'policy-01'
+  name: string
+  type: 'conversational' | 'policy'
+  input: string                   // User message or policy data
+  expectedProfile?: UserProfile
+  expectedRoute?: RouteDecision
+  expectedOpportunities?: Opportunity[]
+  missingFields?: string[]
+}
+```
+
+**Metrics Tracked:**
+
+- **Routing accuracy** (0-100%) - Primary carrier match
+- **Intake completeness** (% fields matched) - Extracted fields vs expected
+- **Discount accuracy** (% opportunities matched) - Discount opportunities identified
+- **Pitch clarity** (rubric score) - Quality of generated pitch
+- **Compliance pass rate** (% passed) - Compliance filter validation
+- **Token usage and cost** - LLM API costs per test
+
+**Running Evaluations:**
+
+```bash
+# Run all evaluations (requires servers running)
+bun run eval
+
+# Start servers + run evaluations
+bun run eval:env
+
+# Manual execution (requires servers)
+bun run evaluation/harness.ts
+```
+
+**Output:**
+
+- `result/report.json` - Metrics data (JSON format)
+- `result/report.md` - Summary report (Markdown)
+- `result/conversational-*.md` - Individual test reports (10 files)
+- `result/policy-*.md` - Individual policy test reports (5 files)
+
+**Integration with CI/CD:**
+
+- Evaluation framework can be run in CI pipeline
+- Metrics tracked over time for regression detection
+- Evaluation criteria measured automatically
+
+**Design Decisions:**
+
+- **Automated E2E testing:** Replaces manual testing for the client's evaluation
+- **Synthetic test cases:** 15 test cases cover common scenarios
+- **Metrics-based:** Quantitative scoring for objective evaluation
+- **Report generation:** JSON + Markdown outputs for different use cases
+
+---
+
+## 16.11 Code Quality Metrics
 
 **Current Test Status:**
 - ✅ **564+ total tests** across 60+ files

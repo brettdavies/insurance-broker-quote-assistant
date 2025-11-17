@@ -1,6 +1,6 @@
 # 8. Core Workflows
 
-This section illustrates the two primary workflows that fulfill PEAK6's spec requirements: conversational intake and policy-based savings analysis.
+This section illustrates the two primary workflows that fulfill the client's spec requirements: conversational intake and policy-based savings analysis.
 
 **Why These Workflows:**
 
