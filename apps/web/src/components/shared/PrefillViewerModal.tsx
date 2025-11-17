@@ -86,7 +86,23 @@ export function PrefillViewerModal({ open, onOpenChange, prefill }: PrefillViewe
               code={jsonString}
               language="json"
             >
-              {({ className, style, tokens, getLineProps, getTokenProps }) => (
+              {({
+                className,
+                style,
+                tokens,
+                getLineProps,
+                getTokenProps,
+              }: {
+                className: string
+                style: React.CSSProperties
+                tokens: Array<Array<{ types: string[]; content: string; empty?: boolean }>>
+                getLineProps: (props: {
+                  line: Array<{ types: string[]; content: string; empty?: boolean }>
+                }) => React.HTMLAttributes<HTMLDivElement>
+                getTokenProps: (props: {
+                  token: { types: string[]; content: string; empty?: boolean }
+                }) => React.HTMLAttributes<HTMLSpanElement>
+              }) => (
                 <pre
                   className={`${className} flex-1 overflow-auto rounded-md p-4 font-mono text-sm leading-[1.6]`}
                   style={{
@@ -94,16 +110,26 @@ export function PrefillViewerModal({ open, onOpenChange, prefill }: PrefillViewe
                     margin: 0,
                   }}
                 >
-                  {tokens.map((line, lineIndex) => (
-                    <div key={`line-${lineIndex}`} {...getLineProps({ line })}>
-                      {line.map((token, tokenIndex) => (
-                        <span
-                          key={`token-${lineIndex}-${tokenIndex}`}
-                          {...getTokenProps({ token })}
-                        />
-                      ))}
-                    </div>
-                  ))}
+                  {tokens.map(
+                    (
+                      line: Array<{ types: string[]; content: string; empty?: boolean }>,
+                      lineIndex: number
+                    ) => (
+                      <div key={`line-${lineIndex}`} {...getLineProps({ line })}>
+                        {line.map(
+                          (
+                            token: { types: string[]; content: string; empty?: boolean },
+                            tokenIndex: number
+                          ) => (
+                            <span
+                              key={`token-${lineIndex}-${tokenIndex}`}
+                              {...getTokenProps({ token })}
+                            />
+                          )
+                        )}
+                      </div>
+                    )
+                  )}
                 </pre>
               )}
             </Highlight>
