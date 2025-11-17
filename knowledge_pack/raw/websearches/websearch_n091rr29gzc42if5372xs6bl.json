@@ -1,0 +1,833 @@
+{
+  "websearch_id": "websearch_n091rr29gzc42if5372xs6bl",
+  "search_id": "search_gpzenw8axe6g3k0knhaeaza9",
+  "timestamp": "2025-11-07T12:20:33.461754",
+  "startedAt": "2025-11-07T12:20:33.461754",
+  "completedAt": "2025-11-07T12:20:35.498992",
+  "durationSeconds": 2.04,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"State Farm\" state presence",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"State Farm\" state presence",
+      "show_strict_warning": false,
+      "cleaned": "State Farm state presence",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "State Farm state presence"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "State Farm - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/State_Farm",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "It consists of a simple three-oval design with no wording in the ovals adjacent to the State Farm wordmark. According to Pam El, marketing vice president at State Farm, a change in image was needed to employ a bolder presence that could compete ...",
+          "page_age": "2025-10-26T17:50:12",
+          "profile": {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/State_Farm",
+            "long_name": "en.wikipedia.org",
+            "img": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "deep_results": {
+            "buttons": [
+              {
+                "type": "button_result",
+                "title": "Overview",
+                "url": "https://en.wikipedia.org/wiki/State_Farm#Overview"
+              },
+              {
+                "type": "button_result",
+                "title": "History",
+                "url": "https://en.wikipedia.org/wiki/State_Farm#History"
+              },
+              {
+                "type": "button_result",
+                "title": "Subsidiaries",
+                "url": "https://en.wikipedia.org/wiki/State_Farm#Subsidiaries"
+              },
+              {
+                "type": "button_result",
+                "title": "Marketing and promotions",
+                "url": "https://en.wikipedia.org/wiki/State_Farm#Marketing_and_promotions"
+              },
+              {
+                "type": "button_result",
+                "title": "Criticism, controversies and viewpoints",
+                "url": "https://en.wikipedia.org/wiki/State_Farm#Criticism,_controversies_and_viewpoints"
+              },
+              {
+                "type": "button_result",
+                "title": "Further reading",
+                "url": "https://en.wikipedia.org/wiki/State_Farm#Further_reading"
+              }
+            ]
+          },
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "en.wikipedia.org",
+            "hostname": "en.wikipedia.org",
+            "favicon": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw",
+            "path": "\u203a wiki  \u203a State_Farm"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/JJVmZ8RO2q5JCfHMKBjGbuEN46u7albILoDYtAb4D-s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/LzlhL1N0YXRlX0Zh/cm1fbG9nby5zdmc",
+            "original": "https://upload.wikimedia.org/wikipedia/commons/9/9a/State_Farm_logo.svg",
+            "logo": true
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "State Farm eyes Massachusetts expansion with new insurance offerings | Insurance Business America",
+          "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/state-farm-eyes-massachusetts-expansion-with-new-insurance-offerings-553724.aspx",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm is preparing to expand its presence in Massachusetts by offering new homeowners, automobile, and other insurance products.",
+          "page_age": "2025-10-21T15:31:00",
+          "profile": {
+            "name": "Insurance Business",
+            "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/state-farm-eyes-massachusetts-expansion-with-new-insurance-offerings-553724.aspx",
+            "long_name": "insurancebusinessmag.com",
+            "img": "https://imgs.search.brave.com/wSqy0D5CYsTkoVvYpYyzSqvim_TavRxGYxAzncAes7s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2NlNGVmYjdh/YzAwNDJmMzQ2YTZm/M2QwZmJhODY3NGE1/NWYzYmRhNWY0NGFh/Mjg0NjA0ZGQyNGNk/Nzg0MTBiNC93d3cu/aW5zdXJhbmNlYnVz/aW5lc3NtYWcuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurancebusinessmag.com",
+            "hostname": "www.insurancebusinessmag.com",
+            "favicon": "https://imgs.search.brave.com/wSqy0D5CYsTkoVvYpYyzSqvim_TavRxGYxAzncAes7s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2NlNGVmYjdh/YzAwNDJmMzQ2YTZm/M2QwZmJhODY3NGE1/NWYzYmRhNWY0NGFh/Mjg0NjA0ZGQyNGNk/Nzg0MTBiNC93d3cu/aW5zdXJhbmNlYnVz/aW5lc3NtYWcuY29t/Lw",
+            "path": "  \u203a insurance news  \u203a state farm eyes massachusetts expansion with new insurance offerings"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/0sfFuFMoTgsI7_5JgNCAm47Ad9pz9WoVfV-yYF5B7g8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4t/cmVzLmtleW1lZGlh/LmNvbS9jbXMvaW1h/Z2VzL3VzLzAwMy8w/MzgzXzYzODk2NjQx/OTQ0Nzc3MjA1NS5q/cGc",
+            "original": "https://cdn-res.keymedia.com/cms/images/us/003/0383_638966419447772055.jpg",
+            "logo": false
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "State Farm to expand into Massachusetts homeowners and auto market by 2027",
+          "url": "https://beinsure.com/news/state-farm-to-expand-into-massachusetts/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "AM Best recently described Safety\u2019s profile as \u201cneutral,\u201d citing its consistent market presence across personal and commercial auto as well as homeowners, supported by a modestly diverse product portfolio. For State Farm, the move into Massachusetts looks like a long-term play.",
+          "page_age": "2025-10-21T20:26:02",
+          "profile": {
+            "name": "Bloomberg",
+            "url": "https://beinsure.com/news/state-farm-to-expand-into-massachusetts/",
+            "long_name": "beinsure.com",
+            "img": "https://imgs.search.brave.com/IYSuEpMwpB2d9p5ygbptlMoSIOEaWUa8hId3-X3h87M/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYmRlYjk0MjQ1/ODQyNDEzOGY5MzBk/ZTU1MTBhN2I1YmM0/YmVhOTZkMmIzZTM5/NDcxY2EzYWM0NWQx/ZmM0NDQ5NC9iZWlu/c3VyZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "beinsure.com",
+            "hostname": "beinsure.com",
+            "favicon": "https://imgs.search.brave.com/IYSuEpMwpB2d9p5ygbptlMoSIOEaWUa8hId3-X3h87M/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYmRlYjk0MjQ1/ODQyNDEzOGY5MzBk/ZTU1MTBhN2I1YmM0/YmVhOTZkMmIzZTM5/NDcxY2EzYWM0NWQx/ZmM0NDQ5NC9iZWlu/c3VyZS5jb20v",
+            "path": "  \u203a news  \u203a insurance  \u203a car & auto insurance  \u203a state farm to expand into massachusetts homeowners and auto market by 2027"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/4fIwbcHrsUtYZ0T7tlo85JZzQofbaaDHi1AvWIe2Zf4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9iZWlu/c3VyZS5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjUvMTAv/MS00Ni5qcGc",
+            "original": "https://beinsure.com/wp-content/uploads/2025/10/1-46.jpg",
+            "logo": false
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "State Farm in California",
+          "url": "https://newsroom.statefarm.com/state-farm-general-insurance-company-update-on-california-2-2025/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm has had a presence in California since 1928 and currently serves almost 7.8 million policies in California.",
+          "page_age": "2025-06-30T05:41:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/state-farm-general-insurance-company-update-on-california-2-2025/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a state-farm-general-insurance-company-update-on-california-2-2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YVmJZtJCqCB4tpzwJtXCDgRC7cp5p1sLLtCkHfMD3W4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vdXBsb2Fk/cy8xNDQxL2Y1M2Fj/NzliLTUyMDMtNDc5/OS1iNWIyLTI4Mjdi/MTliYmM0OS8xOTIw/XzI1MDIxNC1jYWxp/Zm9ybmlhLXVwZGF0/ZS1idy5wbmc_MTAw/MDA",
+            "original": "https://content.presspage.com/uploads/1441/f53ac79b-5203-4799-b5b2-2827b19bbc49/1920_250214-california-update-bw.png?10000",
+            "logo": false
+          },
+          "age": "June 30, 2025"
+        },
+        {
+          "title": "What States is State Farm Available In?",
+          "url": "https://wallethub.com/answers/ci/what-states-is-state-farm-available-in-1000198-2140813670/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm offers coverage in all 50 states, as well as the District of Columbia, and underwrites more than 94 million insurance policies. State Farm is headquartered in Bloomington, IL and offers property and casualty insurance",
+          "page_age": "2025-09-19T09:27:25",
+          "profile": {
+            "name": "WalletHub",
+            "url": "https://wallethub.com/answers/ci/what-states-is-state-farm-available-in-1000198-2140813670/",
+            "long_name": "wallethub.com",
+            "img": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "wallethub.com",
+            "hostname": "wallethub.com",
+            "favicon": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw",
+            "path": "\u203a answers  \u203a ci  \u203a what-states-is-state-farm-available-in-1000198-2140813670"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YnFsFD--_0DYDN63YU7RTh6E1ZINWtslBaGMBZrgzuI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbGV0aHViLmNv/bS9pbWFnZXMvd2gy/MDE1L2Fuc3dlcnMv/d2FsbGV0aHViLWFu/c3dlcnNfVjMwYjE2/NmZfLnBuZw",
+            "original": "https://cdn.wallethub.com/images/wh2015/answers/wallethub-answers_V30b166f_.png",
+            "logo": false
+          },
+          "age": "September 19, 2025"
+        },
+        {
+          "title": "State Farm\u00ae in California: Understanding the issues",
+          "url": "https://newsroom.statefarm.com/state-farm-in-california-understanding-the-issues/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In the meantime, we\u2019re still here for you, serving almost 7.9 million policies and accounts every day. To learn more about our presence and impact in California, check out \u00b7 State Farm in California 2024 by the numbers.",
+          "page_age": "2025-08-25T18:38:06",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/state-farm-in-california-understanding-the-issues/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a state-farm-in-california-understanding-the-issues"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/d0ZaqicUUm2FrIRqt8Y4qlPbUUT-qzVCvY1Mx4ABI5g/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vdXBsb2Fk/cy8xNDQxLzM0NDYz/MDE4LTkyMDAtNGQ1/NC04NTcwLTc5YjBi/ODQxNmRkOC8xOTIw/X2hvbWVpbmRlbG1h/cmNhLmpwZz8xMDAw/MA",
+            "original": "https://content.presspage.com/uploads/1441/34463018-9200-4d54-8570-79b0b8416dd8/1920_homeindelmarca.jpg?10000",
+            "logo": false
+          },
+          "age": "August 25, 2025"
+        },
+        {
+          "title": "State Farm change: Some Californians can continue coverage after moving",
+          "url": "https://www.sfchronicle.com/california/article/state-farm-insurance-california-21102990.php",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Starting Jan. 1, some State Farm policyholders who have renters or condo insurance will be able to maintain their coverage if they move within the state, according to new documents filed with the California Department of Insurance.Jessica Christian/S.F.",
+          "page_age": "2025-10-19T11:00:18",
+          "profile": {
+            "name": "San Francisco Chronicle",
+            "url": "https://www.sfchronicle.com/california/article/state-farm-insurance-california-21102990.php",
+            "long_name": "sfchronicle.com",
+            "img": "https://imgs.search.brave.com/iLyX2rAw4aqHVg0CN-ntdWtyp394I3-O7oOdhuAnBiE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmE5MmM2MGE4/NmMxYmI0N2EyMmJh/OTVjYjhhZDU2MmZk/YjhhZGE3MzY1YTQ0/NGJkNzM1ZmM2OThh/ZDY1NWJkYy93d3cu/c2ZjaHJvbmljbGUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "sfchronicle.com",
+            "hostname": "www.sfchronicle.com",
+            "favicon": "https://imgs.search.brave.com/iLyX2rAw4aqHVg0CN-ntdWtyp394I3-O7oOdhuAnBiE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmE5MmM2MGE4/NmMxYmI0N2EyMmJh/OTVjYjhhZDU2MmZk/YjhhZGE3MzY1YTQ0/NGJkNzM1ZmM2OThh/ZDY1NWJkYy93d3cu/c2ZjaHJvbmljbGUu/Y29tLw",
+            "path": "\u203a california  \u203a article  \u203a state-farm-insurance-california-21102990.php"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Sgnj7E_AZSvPf6sBV6XFTF9tkTG11et9C9r5XiIIBJo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zLmhk/bnV4LmNvbS9waG90/b3MvMDEvNTQvNjYv/MTIvMjg1MzM0MzMv/My9yYXdJbWFnZS5q/cGc",
+            "original": "https://s.hdnux.com/photos/01/54/66/12/28533433/3/rawImage.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "State Farm - 2025 Company Profile, Team, Funding & Competitors - Tracxn",
+          "url": "https://tracxn.com/d/companies/state-farm/__SmzJJoeLz_GJozbrEK_Dpvrntfi_NkEmo-m6PAxrsm4",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm is a series C company based in Bloomington (United States), founded in 1922 by George J Mecherle. It operates as a Provider of life, auto, health, mortgage, and other insurance services.",
+          "page_age": "2025-10-18T19:19:48",
+          "profile": {
+            "name": "Tracxn",
+            "url": "https://tracxn.com/d/companies/state-farm/__SmzJJoeLz_GJozbrEK_Dpvrntfi_NkEmo-m6PAxrsm4",
+            "long_name": "tracxn.com",
+            "img": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "tracxn.com",
+            "hostname": "tracxn.com",
+            "favicon": "https://imgs.search.brave.com/nzB0_WjyGC_evkqvO7ZEs5xI6dVUXnxuwSiKDcsNo2Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTJjNDdiZmI3/MDk3MzllZTFkZGU1/M2Y1NTZiNmFhZjhi/YTAzNzhmOGU0MDM5/YTRmZDhkMmZiN2Yw/ODg5MTcxYy90cmFj/eG4uY29tLw",
+            "path": "  \u203a discover  \u203a companies  \u203a state farm"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Uc3EOr66xAJ0M711clPy-JjV_NwpSrTB6JihC73SD9E/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dHJhY3huLmNvbS9p/bWFnZXMvc2VvL3Nv/Y2lhbC9jb21wYW5p/ZXMvc3RhdGUtZmFy/bS1vdmVydmlldy0x/NzUyNTQ5NDIzMTU4/LndlYnA",
+            "original": "https://cdn.tracxn.com/images/seo/social/companies/state-farm-overview-1752549423158.webp",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "State Farm in California: What you need to know",
+          "url": "https://www.insurance.com/home-insurance/state-farm-stops-selling-home-insurance-in-california",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm&#x27;s strategy reflects broader trends in the insurance industry in California, where other insurers are also withdrawing or reducing their presence due to wildfire risks and other financial pressures.",
+          "page_age": "2025-05-14T00:00:00",
+          "profile": {
+            "name": "Insurance.com",
+            "url": "https://www.insurance.com/home-insurance/state-farm-stops-selling-home-insurance-in-california",
+            "long_name": "insurance.com",
+            "img": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurance.com",
+            "hostname": "www.insurance.com",
+            "favicon": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8",
+            "path": "  \u203a home  \u203a home insurance  \u203a state farm in california: what you need to know"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/mrmhNyRrsgAKLHytgrM3UtXgPNsZj2C2r9vhaX0aI8s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmNlLmNv/bS9pbWFnZXMvaG9t/ZS9zaXRlLWxvZ28t/ZGFyay5zdmc",
+            "original": "https://www.insurance.com/images/home/site-logo-dark.svg",
+            "logo": true
+          },
+          "age": "May 14, 2025"
+        },
+        {
+          "title": "State Farm Headquarters and Office locations In 2025",
+          "url": "https://headquartersoffice.com/state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm&#x27;s corporate headquarters are in Bloomington, Illinois, U.S. See more locations...Phone: +1 309-766-2311",
+          "page_age": "2025-03-06T13:22:30",
+          "profile": {
+            "name": "Headquarters Office",
+            "url": "https://headquartersoffice.com/state-farm/",
+            "long_name": "headquartersoffice.com",
+            "img": "https://imgs.search.brave.com/kXQQXL520nMdFK4f9fZOG7NRWCVGypNjNzij9R5io2I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYmUyZjljMmEx/NjJjMDkwNTcxY2Jh/NDYxNDYyYzg5NjJi/M2I2ODk3NjNjNzI3/MmVmMmNiOTI1MzBj/ZmM3MGZkYi9oZWFk/cXVhcnRlcnNvZmZp/Y2UuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "headquartersoffice.com",
+            "hostname": "headquartersoffice.com",
+            "favicon": "https://imgs.search.brave.com/kXQQXL520nMdFK4f9fZOG7NRWCVGypNjNzij9R5io2I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYmUyZjljMmEx/NjJjMDkwNTcxY2Jh/NDYxNDYyYzg5NjJi/M2I2ODk3NjNjNzI3/MmVmMmNiOTI1MzBj/ZmM3MGZkYi9oZWFk/cXVhcnRlcnNvZmZp/Y2UuY29tLw",
+            "path": "  \u203a home  \u203a state farm headquarters"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/EwrK89UnRFzzC_vLUqS8YmvFifdUzWRTwk8d5NUxuEg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9oZWFk/cXVhcnRlcnNvZmZp/Y2UuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDE3LzA1L1N0/YXRlLUZhcm0taGVh/ZHF1YXJ0ZXJzLW9m/ZmljZS1sb2dvLnBu/Zw",
+            "original": "https://headquartersoffice.com/wp-content/uploads/2017/05/State-Farm-headquarters-office-logo.png",
+            "logo": true
+          },
+          "age": "March 6, 2025"
+        },
+        {
+          "title": "State Farm\u2019s Super Bowl Pivot Spotlights Lower Ad Spend by Insurers",
+          "url": "https://www.sportico.com/business/sponsorship/2025/state-farm-super-bowl-reduced-insurance-spend-1234825710/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In email correspondence with Sportico, State Farm reiterated that it will not advertise in the Super Bowl, adding that it \u201cwill not have a presence in, and/or around, the game itself.\u201d The company also said even before the wildfires compelled ...",
+          "page_age": "2025-02-02T14:00:00",
+          "profile": {
+            "name": "Sportico",
+            "url": "https://www.sportico.com/business/sponsorship/2025/state-farm-super-bowl-reduced-insurance-spend-1234825710/",
+            "long_name": "sportico.com",
+            "img": "https://imgs.search.brave.com/c93QJZUQMW6knqm--A-XROchW52DXyLE6aVL2M1l5qs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzQxNTVhYjMx/MDI4MmE1MmU1Njc5/MzY5MjU3N2JiOGVh/Y2MwZGRmMTk3NzFk/ZDVjYjNmOGRmMzA2/NWFiNWE5My93d3cu/c3BvcnRpY28uY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "sportico.com",
+            "hostname": "www.sportico.com",
+            "favicon": "https://imgs.search.brave.com/c93QJZUQMW6knqm--A-XROchW52DXyLE6aVL2M1l5qs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzQxNTVhYjMx/MDI4MmE1MmU1Njc5/MzY5MjU3N2JiOGVh/Y2MwZGRmMTk3NzFk/ZDVjYjNmOGRmMzA2/NWFiNWE5My93d3cu/c3BvcnRpY28uY29t/Lw",
+            "path": "\u203a business  \u203a sponsorship  \u203a 2025  \u203a state-farm-super-bowl-reduced-insurance-spend-1234825710"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/O8lW5cf4g8AehYn-gzvfhZjvd9BYMVrmvRGp1SCTzRU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3BvcnRpY28uY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI1/LzAxL0dldHR5SW1h/Z2VzLTE5MDUyMDU5/NzktZTE3MzgxNzMz/MzMxNDEuanBn",
+            "original": "https://www.sportico.com/wp-content/uploads/2025/01/GettyImages-1905205979-e1738173333141.jpg",
+            "logo": false
+          },
+          "age": "February 2, 2025"
+        },
+        {
+          "title": "Is State Farm General Too Big to Fail? Calif. Rate Hearing Concludes - Carrier Management",
+          "url": "https://www.carriermanagement.com/features/2025/04/15/274175.htm",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "While Carrier Management did not hear any attorneys or witnesses for State Farm General (SFG) or the California Department of Insurance (CDI) actually use the term \u201ctoo big to fail\u201d during the three-day hearing, Pletcher used it to describe the gist of arguments about systemic collapse made to Administrative Law Judge Karl-Fredric Seligman by the insurer and the regulator.",
+          "page_age": "2025-04-15T14:03:50",
+          "profile": {
+            "name": "Carrier Management",
+            "url": "https://www.carriermanagement.com/features/2025/04/15/274175.htm",
+            "long_name": "carriermanagement.com",
+            "img": "https://imgs.search.brave.com/-eMdg-lz3aGqn0lzer-GPng2sHAwtIrj7XCCNcZmLgY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjg3NDk4ZGE0/ZmIxNmU2OWE1NTMw/YTNmY2JkNGIwMWYw/NDUwMjA0MmFmM2E2/ZGNjZGJhYTI2ZTM2/MzMzM2IzOS93d3cu/Y2Fycmllcm1hbmFn/ZW1lbnQuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "carriermanagement.com",
+            "hostname": "www.carriermanagement.com",
+            "favicon": "https://imgs.search.brave.com/-eMdg-lz3aGqn0lzer-GPng2sHAwtIrj7XCCNcZmLgY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjg3NDk4ZGE0/ZmIxNmU2OWE1NTMw/YTNmY2JkNGIwMWYw/NDUwMjA0MmFmM2E2/ZGNjZGJhYTI2ZTM2/MzMzM2IzOS93d3cu/Y2Fycmllcm1hbmFn/ZW1lbnQuY29tLw",
+            "path": "  \u203a features  \u203a is state farm general too big to fail? calif. rate hearing concludes"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/LRKxUwTCWp8Zol3f93Dz1IVezw9g7dRKHn5eVsqAsVo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2Fycmllcm1hbmFn/ZW1lbnQuY29tL2Fz/c2V0cy9iaWdzdG9j/ay1Ib21lLUluLUxp/ZmUtUHJlc2VydmVy/LU9uLVdhdGUtODAw/NzY1NC5qcGc",
+            "original": "https://www.carriermanagement.com/assets/bigstock-Home-In-Life-Preserver-On-Wate-8007654.jpg",
+            "logo": false
+          },
+          "age": "April 15, 2025"
+        },
+        {
+          "title": "Is State Farm Guilty of Racial Discrimination? The Presence of Algorithmic Bias in Claims Systems",
+          "url": "https://www.fulr.org/post/is-state-farm-guilty-of-racial-discrimination-the-presence-of-algorithmic-bias-in-claims-systems",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "(27) The complaint alleges that the reason behind the unfair bias in State Farm\u2019s automated claims processing system has to do with its reliance on \u201c(1) biometric data that function as proxies for race, such as physical appearance, genetics, and voice; (2) intrusive behavioral data that function as proxies for race, such as geolocation, social media presence, and browser search history; and (3) historical housing and claims data that are themselves infected with racial bias.\u201d (28) Given the algorithm\u2019s reliance on data that functions as a proxy for race, State Farm\u2019s claims processing system unfairly identifies a higher number of claims submitted by Black homeowners as \u2018high touch\u2019 and, in turn, evaluates them with greater scrutiny compared to their white counterparts.",
+          "page_age": "2025-07-03T21:30:11",
+          "profile": {
+            "name": "FULR",
+            "url": "https://www.fulr.org/post/is-state-farm-guilty-of-racial-discrimination-the-presence-of-algorithmic-bias-in-claims-systems",
+            "long_name": "fulr.org",
+            "img": "https://imgs.search.brave.com/unKvcCUrAa4yfCxYH4256dv0ahQ0zVFRpIr1ioUPWqI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODNlOTQ2OTI3/YTM1Njc2NjFhMWMy/MmI5ZTllNzM5ZGU1/MjYyMmNmOTM1YjMw/ZmQyNDZjNjBiODg4/MzdhMTFhYi93d3cu/ZnVsci5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "fulr.org",
+            "hostname": "www.fulr.org",
+            "favicon": "https://imgs.search.brave.com/unKvcCUrAa4yfCxYH4256dv0ahQ0zVFRpIr1ioUPWqI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODNlOTQ2OTI3/YTM1Njc2NjFhMWMy/MmI5ZTllNzM5ZGU1/MjYyMmNmOTM1YjMw/ZmQyNDZjNjBiODg4/MzdhMTFhYi93d3cu/ZnVsci5vcmcv",
+            "path": "\u203a post  \u203a is-state-farm-guilty-of-racial-discrimination-the-presence-of-algorithmic-bias-in-claims-systems"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/damkK-_e6AxYNyKSsABfezMyyFiV9xzXjrULgWk_qBI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2l4c3RhdGlj/LmNvbS9tZWRpYS9k/M2NmOGNfNzAxYThl/OWUwZmYxNGE1ZGEy/Njc2NzUzZjAzOWVk/ZmR-bXYyLnBuZy92/MS9maWxsL3dfODgw/LGhfNTUwLGFsX2Ms/cV85MC9kM2NmOGNf/NzAxYThlOWUwZmYx/NGE1ZGEyNjc2NzUz/ZjAzOWVkZmR-bXYy/LnBuZw",
+            "original": "https://static.wixstatic.com/media/d3cf8c_701a8e9e0ff14a5da2676753f039edfd~mv2.png/v1/fill/w_880,h_550,al_c,q_90/d3cf8c_701a8e9e0ff14a5da2676753f039edfd~mv2.png",
+            "logo": false
+          },
+          "age": "July 3, 2025"
+        },
+        {
+          "title": "State Rep. Sharon Chung wants Gov. JB Pritzker to back off State Farm | WGLT",
+          "url": "https://www.wglt.org/local-news/2025-11-06/state-rep-sharon-chung-wants-gov-jb-pritzker-to-back-off-state-farm",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Chung noted the community&#x27;s long history with two of the area&#x27;s top employers, State Farm and Country Financial, in opposing price controls.",
+          "page_age": "2025-11-06T23:19:51",
+          "profile": {
+            "name": "WGLT",
+            "url": "https://www.wglt.org/local-news/2025-11-06/state-rep-sharon-chung-wants-gov-jb-pritzker-to-back-off-state-farm",
+            "long_name": "wglt.org",
+            "img": "https://imgs.search.brave.com/MBazzRt0NS7_YglW8Nfkm1wTQd4uMi8kBQsU4xE9R3g/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYmUxNjlhNzA0/NDA4OWQyNjNkNGQ1/MjNkNDg5NzI5NzFj/MjdmNjIyYTlhMGZl/NTMwOTljYTI3ZjZj/YzExMzA4NC93d3cu/d2dsdC5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "wglt.org",
+            "hostname": "www.wglt.org",
+            "favicon": "https://imgs.search.brave.com/MBazzRt0NS7_YglW8Nfkm1wTQd4uMi8kBQsU4xE9R3g/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYmUxNjlhNzA0/NDA4OWQyNjNkNGQ1/MjNkNDg5NzI5NzFj/MjdmNjIyYTlhMGZl/NTMwOTljYTI3ZjZj/YzExMzA4NC93d3cu/d2dsdC5vcmcv",
+            "path": "  \u203a local news (wglt)"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/-Q0843bSKxtqK8MBx-REEQnO1WrZg-1cJ9hUakcOy6s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9ucHIu/YnJpZ2h0c3BvdGNk/bi5jb20vNDEvMTEv/NTcwMzZkY2Q0YTQ1/YWVkNTA1NDVjNTZm/ZWEyMS9zaGFyb24t/Y2h1bmctamItcHJp/dHprZXItbGl6emUt/d2hpdGVob3JuLWJv/bGxpbmdlcjAwMS5q/cGc",
+            "original": "https://npr.brightspotcdn.com/41/11/57036dcd4a45aed50545c56fea21/sharon-chung-jb-pritzker-lizze-whitehorn-bollinger001.jpg",
+            "logo": false
+          },
+          "age": "19 hours ago"
+        },
+        {
+          "title": "Who owns State Farm - Under30CEO",
+          "url": "https://www.under30ceo.com/who-owns-state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Who owns State Farm Insurance? State Farm is a mutual company, which means that it is owned by its policyholders. Unlike publicly traded companies, State Farm does not have shareholders to whom it needs to provide dividends. Instead, the company\u2019s profits are distributed back to its policyholders in the form of lower premiums, better coverage, or policy improvements.",
+          "page_age": "2024-12-04T23:00:39",
+          "profile": {
+            "name": "Under30CEO",
+            "url": "https://www.under30ceo.com/who-owns-state-farm/",
+            "long_name": "under30ceo.com",
+            "img": "https://imgs.search.brave.com/g8Cu-Wz3FnMrIftN39T371aAhVVe_5cBBxGg6-fQdKY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODdjYWRmMjZm/NTNmZmJmM2JkZWVi/NzYxNzA3ZTMwYmUw/ZGY0ODRhNTFjYzQ1/N2ZkZjhhNmMyZDgw/YzA3YzU5YS93d3cu/dW5kZXIzMGNlby5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "under30ceo.com",
+            "hostname": "www.under30ceo.com",
+            "favicon": "https://imgs.search.brave.com/g8Cu-Wz3FnMrIftN39T371aAhVVe_5cBBxGg6-fQdKY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODdjYWRmMjZm/NTNmZmJmM2JkZWVi/NzYxNzA3ZTMwYmUw/ZGY0ODRhNTFjYzQ1/N2ZkZjhhNmMyZDgw/YzA3YzU5YS93d3cu/dW5kZXIzMGNlby5j/b20v",
+            "path": "  \u203a home  \u203a who owns state farm insurance?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/M2LuSQZmMo8TjfNXNtYD-CcC7T43WTDoT_hTIJrZXo4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dW5kZXIzMGNlby5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjQvMTIvbWNxaTNt/bGpjNGUuanBn",
+            "original": "https://cdn.under30ceo.com/wp-content/uploads/2024/12/mcqi3mljc4e.jpg",
+            "logo": false
+          },
+          "age": "December 4, 2024"
+        },
+        {
+          "title": "State Farm Stronger as Underwriting Losses Shrink\u2014But Not in California - Carrier Management",
+          "url": "https://www.carriermanagement.com/news/2025/03/02/272410.htm",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The reference to the separate financial strength of each affiliate appeared again in a footnote to the media statement: \u201cState Farm Mutual Automobile Insurance Company and each of its affiliates must meet solvency and regulatory requirements on an individual entity-by-entity basis without regard to the solvency or financial condition of any other affiliated entity.\u201d",
+          "page_age": "2025-03-03T14:24:53",
+          "profile": {
+            "name": "Carrier Management",
+            "url": "https://www.carriermanagement.com/news/2025/03/02/272410.htm",
+            "long_name": "carriermanagement.com",
+            "img": "https://imgs.search.brave.com/-eMdg-lz3aGqn0lzer-GPng2sHAwtIrj7XCCNcZmLgY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjg3NDk4ZGE0/ZmIxNmU2OWE1NTMw/YTNmY2JkNGIwMWYw/NDUwMjA0MmFmM2E2/ZGNjZGJhYTI2ZTM2/MzMzM2IzOS93d3cu/Y2Fycmllcm1hbmFn/ZW1lbnQuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "carriermanagement.com",
+            "hostname": "www.carriermanagement.com",
+            "favicon": "https://imgs.search.brave.com/-eMdg-lz3aGqn0lzer-GPng2sHAwtIrj7XCCNcZmLgY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjg3NDk4ZGE0/ZmIxNmU2OWE1NTMw/YTNmY2JkNGIwMWYw/NDUwMjA0MmFmM2E2/ZGNjZGJhYTI2ZTM2/MzMzM2IzOS93d3cu/Y2Fycmllcm1hbmFn/ZW1lbnQuY29tLw",
+            "path": "\u203a news  \u203a 2025  \u203a 03  \u203a 02  \u203a 272410.htm"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/t24_J2lQIxtPGHZEc2hQZkJpoYJgDwxvG3y8JOfGgEo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2Fycmllcm1hbmFn/ZW1lbnQuY29tL2Fz/c2V0cy9wYXJlbnQt/cmVkLXBvbG8tc2hp/cnQtd2l0aC13aGl0/ZS10cmltLWFuZC1r/aGFraS1wYW50cy1z/dXBwb3J0aW5nLXdl/YWstYm95LWZhY2lu/Zy1iYWNrLUNhbGlm/b3JuaWEtd2lsZGZp/cmVzX0ZpcmVmbHlf/MmZjYjNlYTMtMGY0/ZC00Yjg4LTllZmMt/MWM5MmVjOTBjOTcx/LmpwZWc",
+            "original": "https://www.carriermanagement.com/assets/parent-red-polo-shirt-with-white-trim-and-khaki-pants-supporting-weak-boy-facing-back-California-wildfires_Firefly_2fcb3ea3-0f4d-4b88-9efc-1c92ec90c971.jpeg",
+            "logo": false
+          },
+          "age": "March 3, 2025"
+        },
+        {
+          "title": "Unrivaled Signs State Farm to Official Sponsorship Ahead of Inaugural Season | Unrivaled",
+          "url": "https://www.unrivaled.basketball/news/unrivaled-signs-state-farm-to-official-sponsorship-ahead-of-inaugural-season-zx9uttnh7aw0",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm will have a visible ... which will be produced and hosted at the league\u2019s state-of-the-art facility in Miami, Florida....",
+          "page_age": "2024-11-18T14:00:00",
+          "profile": {
+            "name": "Unrivaled",
+            "url": "https://www.unrivaled.basketball/news/unrivaled-signs-state-farm-to-official-sponsorship-ahead-of-inaugural-season-zx9uttnh7aw0",
+            "long_name": "unrivaled.basketball",
+            "img": "https://imgs.search.brave.com/Kn4p4jq1jSEdC6Xi4Ysiub7YTmmf8OuwII90useI52A/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTBmOGFjNzA2/MzIxOTRhYjk1ODNm/YzZkMDA2YmYwYjZi/MzgwNDVkOTg5NTUy/MGYxMDc2YzZkYWQy/YzgyOWE4OC93d3cu/dW5yaXZhbGVkLmJh/c2tldGJhbGwv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "unrivaled.basketball",
+            "hostname": "www.unrivaled.basketball",
+            "favicon": "https://imgs.search.brave.com/Kn4p4jq1jSEdC6Xi4Ysiub7YTmmf8OuwII90useI52A/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTBmOGFjNzA2/MzIxOTRhYjk1ODNm/YzZkMDA2YmYwYjZi/MzgwNDVkOTg5NTUy/MGYxMDc2YzZkYWQy/YzgyOWE4OC93d3cu/dW5yaXZhbGVkLmJh/c2tldGJhbGwv",
+            "path": "\u203a news  \u203a unrivaled-signs-state-farm-to-official-sponsorship-ahead-of-inaugural-season-zx9uttnh7aw0"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/1QF3-sQqkI5oETYfiv7TsU4DHMFWZ_R3Y26haSxXiYs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9wdWIt/YWQ4Y2M2OTM3NTli/NGI1NWExODFhNzZh/ZjA0MWVmYTAucjIu/ZGV2L2ltYWdlcy92/b2xtcDJ5YmxuMzkv/anBnLzE2eDkvMTQ0/MHg4MTAuanBn",
+            "original": "https://pub-ad8cc693759b4b55a181a76af041efa0.r2.dev/images/volmp2ybln39/jpg/16x9/1440x810.jpg",
+            "logo": false
+          },
+          "age": "November 18, 2024"
+        },
+        {
+          "title": "State Farm Car Insurance Guide [Best and Cheapest Rates + More]",
+          "url": "https://www.insurantly.com/state-farm-auto-insurance-review/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm has multiple ways to access information, creating a strong presence.",
+          "page_age": "2025-02-11T14:02:46",
+          "profile": {
+            "name": "Insurantly",
+            "url": "https://www.insurantly.com/state-farm-auto-insurance-review/",
+            "long_name": "insurantly.com",
+            "img": "https://imgs.search.brave.com/bI3OC_uVU9Ayzpgk3Gpduv7Be38pmORsOVY-XquC5sM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWJmNjg1MjU4/YTU4OTdhNTk5Zjhi/M2QwYzMyZTViMTVi/NTRlMDYyMDgwZTRi/MjZiYTNiNjE2MDYw/MTcwNDJkZC93d3cu/aW5zdXJhbnRseS5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurantly.com",
+            "hostname": "www.insurantly.com",
+            "favicon": "https://imgs.search.brave.com/bI3OC_uVU9Ayzpgk3Gpduv7Be38pmORsOVY-XquC5sM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWJmNjg1MjU4/YTU4OTdhNTk5Zjhi/M2QwYzMyZTViMTVi/NTRlMDYyMDgwZTRi/MjZiYTNiNjE2MDYw/MTcwNDJkZC93d3cu/aW5zdXJhbnRseS5j/b20v",
+            "path": "  \u203a home  \u203a top auto insurance companies"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/bUg5NL1o9X7apljOUOXlj7EqJI-1TEVqkE2njF1CXCs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbnRseS5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTkvMTIvU3RhdGUt/RmFybS1DYXItSW5z/dXJhbmNlLUd1aWRl/LnBuZw",
+            "original": "https://www.insurantly.com/wp-content/uploads/2019/12/State-Farm-Car-Insurance-Guide.png"
+          },
+          "age": "February 11, 2025"
+        },
+        {
+          "title": "10 Largest Auto Insurance Companies (November 2025) - ValuePenguin",
+          "url": "https://www.valuepenguin.com/largest-auto-insurance-companies",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The insurance industry is naturally a very segmented one. There are approximately 6,000 firms active in the industry, but the largest 10 firms command over 50% of the premium revenue. So we have an industry that has a few very large firms, such as Progressive and State Farm, and numerous small firms.",
+          "page_age": "2025-10-01T13:51:18",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/largest-auto-insurance-companies",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a auto insurance  \u203a 10 largest auto insurance companies (november 2025)"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/m265_o2CwuBz-56oXhpUEWKUZFn1Pz07VFYFHV2a55Y/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2Jlc3QtaW5z/dXJhbmNlX2JvZ2ht/MQ",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/best-insurance_boghm1",
+            "logo": false
+          },
+          "age": "October 1, 2025"
+        },
+        {
+          "title": "CDI says \"serious questions\" over State Farm's financial condition | Insurance Business America",
+          "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/cdi-says-serious-questions-over-state-farms-financial-condition-523259.aspx",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "California\u2019s largest homeowners\u2019 insurer, State Farm, has petitioned state regulators for an urgent 22% rate hike, a move that underscores the deepening instability in the state\u2019s insurance market.",
+          "page_age": "2025-02-04T15:18:00",
+          "profile": {
+            "name": "Insurance Business",
+            "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/cdi-says-serious-questions-over-state-farms-financial-condition-523259.aspx",
+            "long_name": "insurancebusinessmag.com",
+            "img": "https://imgs.search.brave.com/wSqy0D5CYsTkoVvYpYyzSqvim_TavRxGYxAzncAes7s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2NlNGVmYjdh/YzAwNDJmMzQ2YTZm/M2QwZmJhODY3NGE1/NWYzYmRhNWY0NGFh/Mjg0NjA0ZGQyNGNk/Nzg0MTBiNC93d3cu/aW5zdXJhbmNlYnVz/aW5lc3NtYWcuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurancebusinessmag.com",
+            "hostname": "www.insurancebusinessmag.com",
+            "favicon": "https://imgs.search.brave.com/wSqy0D5CYsTkoVvYpYyzSqvim_TavRxGYxAzncAes7s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2NlNGVmYjdh/YzAwNDJmMzQ2YTZm/M2QwZmJhODY3NGE1/NWYzYmRhNWY0NGFh/Mjg0NjA0ZGQyNGNk/Nzg0MTBiNC93d3cu/aW5zdXJhbmNlYnVz/aW5lc3NtYWcuY29t/Lw",
+            "path": "  \u203a insurance news  \u203a cdi says \"serious questions\" over state farm's financial condition"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/DqXT7kqlmNzQzshNByjYP4aFGBx18ejDHMlygDpfPbk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4t/cmVzLmtleW1lZGlh/LmNvbS9jbXMvaW1h/Z2VzL3VzLzAwMy8w/MzExXzYzODc0MjY5/MTEyNzYxOTU5Ni5w/bmc",
+            "original": "https://cdn-res.keymedia.com/cms/images/us/003/0311_638742691127619596.png",
+            "logo": false
+          },
+          "age": "February 4, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

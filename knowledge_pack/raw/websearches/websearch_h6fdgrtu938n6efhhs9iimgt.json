@@ -1,0 +1,795 @@
+{
+  "websearch_id": "websearch_h6fdgrtu938n6efhhs9iimgt",
+  "search_id": "search_lqpdc1b1avgp3ja67p1b4e3x",
+  "timestamp": "2025-11-07T12:26:45.759608",
+  "startedAt": "2025-11-07T12:26:45.759608",
+  "completedAt": "2025-11-07T12:26:47.780105",
+  "durationSeconds": 2.02,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"California\" \"uninsured motorist\" required",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"California\" \"uninsured motorist\" required",
+      "show_strict_warning": false,
+      "cleaned": "California uninsured motorist required",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "California uninsured motorist required"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Do I Need Uninsured Motorist Insurance Coverage?",
+          "url": "https://www.chainlaw.com/resources/faqs/do-i-need-uninsured-motorist-coverage/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "California law does require insurance companies to offer uninsured/underinsured motorist coverage; if you don\u2019t want it, you must reject the coverage in writing.",
+          "page_age": "2025-04-15T18:43:10",
+          "profile": {
+            "name": "Chain",
+            "url": "https://www.chainlaw.com/resources/faqs/do-i-need-uninsured-motorist-coverage/",
+            "long_name": "chainlaw.com",
+            "img": "https://imgs.search.brave.com/wAbcG0WJkGafMDJn3yFdwEA6A2zd-icIdjorckIqnC4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTEyZTM3YjVi/ZTg3NWJjMDUxNmUw/MmRhMGViY2I4YjJi/NDAyOGVlMGFlNDhk/ZmI4MThkODBiNTA2/ZDkwMmI1Yy93d3cu/Y2hhaW5sYXcuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "chainlaw.com",
+            "hostname": "www.chainlaw.com",
+            "favicon": "https://imgs.search.brave.com/wAbcG0WJkGafMDJn3yFdwEA6A2zd-icIdjorckIqnC4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTEyZTM3YjVi/ZTg3NWJjMDUxNmUw/MmRhMGViY2I4YjJi/NDAyOGVlMGFlNDhk/ZmI4MThkODBiNTA2/ZDkwMmI1Yy93d3cu/Y2hhaW5sYXcuY29t/Lw",
+            "path": "\u203a resources  \u203a faqs  \u203a do-i-need-uninsured-motorist-coverage"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Cz30zz1WFBZL4RWocXvXIlXOuY7nXW1saC29goWYx-s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2hhaW5sYXcuY29t/L3dwLWNvbnRlbnQv/dGhlbWVzL2NoYWlu/bGF3L2ltYWdlcy9z/dHJ1Y3R1cmVkLWRh/dGEtaW1nLmpwZw",
+            "original": "https://www.chainlaw.com/wp-content/themes/chainlaw/images/structured-data-img.jpg",
+            "logo": false
+          },
+          "age": "April 15, 2025"
+        },
+        {
+          "title": "Uninsured Motorist Coverage in California: Understanding Your Options and Protecting Yourself",
+          "url": "https://www.blairramirezlaw.com/uninsured-motorist-coverage-in-california-understanding-your-options-and-protecting-yourself",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In California, every driver is required by law to demonstrate they can cover the cost of the damages they are responsible for \u2013 in the event they cause a traffic accident. Generally, drivers must carry liability insurance for specific minimum ...",
+          "page_age": "2025-08-06T09:24:25",
+          "profile": {
+            "name": "Blair & Ramirez LLP",
+            "url": "https://www.blairramirezlaw.com/uninsured-motorist-coverage-in-california-understanding-your-options-and-protecting-yourself",
+            "long_name": "blairramirezlaw.com",
+            "img": "https://imgs.search.brave.com/3IRyQUKxnRFWuu1xjhGBLSO_a8-1N9gV3oRqSCiPvK8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTdhNDE0OWUx/NGViNmMyYTMzMjgw/ZGQ5NTEyMjIyMzFi/ZjdjMDNmM2VmMWNi/ZTJlMjYzY2Q5NzQ2/YTUyMGQ3Mi93d3cu/YmxhaXJyYW1pcmV6/bGF3LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "blairramirezlaw.com",
+            "hostname": "www.blairramirezlaw.com",
+            "favicon": "https://imgs.search.brave.com/3IRyQUKxnRFWuu1xjhGBLSO_a8-1N9gV3oRqSCiPvK8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTdhNDE0OWUx/NGViNmMyYTMzMjgw/ZGQ5NTEyMjIyMzFi/ZjdjMDNmM2VmMWNi/ZTJlMjYzY2Q5NzQ2/YTUyMGQ3Mi93d3cu/YmxhaXJyYW1pcmV6/bGF3LmNvbS8",
+            "path": "  \u203a home  \u203a blog  \u203a uninsured motorist coverage in california: understanding your options and protecting yourself"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/NsP4dXtgHtjYwSK_4DUCHoqlp_2d2R8wxZoojtSpXIU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmxhaXJyYW1pcmV6/bGF3LmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxOS8xMi9H/bGVuZGFsZS1DQS1B/dXRvLUNvbGxpc2lv/bi1IZWFkZXItSW1h/Z2UtMTAweDY3Lmpw/Zw",
+            "original": "https://www.blairramirezlaw.com/wp-content/uploads/2019/12/Glendale-CA-Auto-Collision-Header-Image-100x67.jpg",
+            "logo": false
+          },
+          "age": "August 6, 2025"
+        },
+        {
+          "title": "CA Uninsured Motorist Coverage: A 2025 Guide",
+          "url": "https://www.sallymorinlaw.com/personal-injury/how-much-uninsured-motorist-insurance-coverage-should-i-get/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "No, California does not legally require drivers to carry UM/UIM coverage, which is why it\u2019s so important to proactively add it to your policy to protect yourself. 3. What does uninsured motorist bodily injury (UMBI) cover?",
+          "page_age": "2025-07-21T18:58:37",
+          "profile": {
+            "name": "Sally Morin Law",
+            "url": "https://www.sallymorinlaw.com/personal-injury/how-much-uninsured-motorist-insurance-coverage-should-i-get/",
+            "long_name": "sallymorinlaw.com",
+            "img": "https://imgs.search.brave.com/ntDTCADh7HBPLKVfANBwtmz3raRTP1tnaRmpiVvlEoU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNGU4OTA3YWI4/ZjI1MmQ1M2RkNmIy/ZjYxMDM4Yjg3OGQ3/ZGZkMTVmMDFhNjQ4/Njg1MjZhZGI2MjVj/ODVmOWEwNy93d3cu/c2FsbHltb3Jpbmxh/dy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "sallymorinlaw.com",
+            "hostname": "www.sallymorinlaw.com",
+            "favicon": "https://imgs.search.brave.com/ntDTCADh7HBPLKVfANBwtmz3raRTP1tnaRmpiVvlEoU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNGU4OTA3YWI4/ZjI1MmQ1M2RkNmIy/ZjYxMDM4Yjg3OGQ3/ZGZkMTVmMDFhNjQ4/Njg1MjZhZGI2MjVj/ODVmOWEwNy93d3cu/c2FsbHltb3Jpbmxh/dy5jb20v",
+            "path": "\u203a personal-injury  \u203a how-much-uninsured-motorist-insurance-coverage-should-i-get"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/8OUZa4auZu2BZGkNH6iIGtM49hIMEiMz9MyVjZtZoHQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c2FsbHltb3Jpbmxh/dy5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjAvMTIvcGEt/Y2FyYWNjaWQtbGcu/anBn",
+            "original": "https://www.sallymorinlaw.com/wp-content/uploads/2020/12/pa-caraccid-lg.jpg",
+            "logo": false
+          },
+          "age": "July 21, 2025"
+        },
+        {
+          "title": "Uninsured Motorist Claims in California: What You Need to Know",
+          "url": "https://phoonglaw.com/uninsured-motorist-claims-in-california-what-you-need-to-know/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In California, the minimum liability insurance requirements for drivers are $15,000 per person for bodily injury or death, $30,000 for bodily injury or death to more than one person, and $5,000 for property damage.",
+          "page_age": "2024-12-06T09:21:40",
+          "profile": {
+            "name": "Phoong Law",
+            "url": "https://phoonglaw.com/uninsured-motorist-claims-in-california-what-you-need-to-know/",
+            "long_name": "phoonglaw.com",
+            "img": "https://imgs.search.brave.com/4B9zRb-t4YTDsxiqwDAOE9zPuoabKS8AaACDg9ioQt0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWM1MDE4MGU5/ZjE5OGU5NTgzNzgw/ZjI3OTQ5Y2UwMmY4/ZmExZDFhYjc1ZTBi/YTc3NDE2NGQzZGI2/OWMyYmNlMy9waG9v/bmdsYXcuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "phoonglaw.com",
+            "hostname": "phoonglaw.com",
+            "favicon": "https://imgs.search.brave.com/4B9zRb-t4YTDsxiqwDAOE9zPuoabKS8AaACDg9ioQt0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWM1MDE4MGU5/ZjE5OGU5NTgzNzgw/ZjI3OTQ5Y2UwMmY4/ZmExZDFhYjc1ZTBi/YTc3NDE2NGQzZGI2/OWMyYmNlMy9waG9v/bmdsYXcuY29tLw",
+            "path": "  \u203a sacramento personal injury lawyers | phoong law \u2013 official website  \u203a fresno  \u203a uninsured motorist claims in california: what you need to know"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/W25Ss66iVM6MiOtS1wESRQCeY8v3QtigoOHf75ePRAY/rs:fit:200:200:1:0/g:ce/aHR0cDovL3Bob29u/Z2xhdy5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjQvMTAv/VW5pbnN1cmVkLU1v/dG9yaXN0LUNsYWlt/cy1pbi1DYWxpZm9y/bmlhLVdoYXQtWW91/LU5lZWQtdG8tS25v/dy5qcGc",
+            "original": "http://phoonglaw.com/wp-content/uploads/2024/10/Uninsured-Motorist-Claims-in-California-What-You-Need-to-Know.jpg",
+            "logo": false
+          },
+          "age": "December 6, 2024"
+        },
+        {
+          "title": "Is Uninsured Motorist Coverage Necessary in California?",
+          "url": "https://tulekyanlaw.com/blog/california-uninsured-coverage/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "California law does not mandate uninsured motorist (UM) coverage, but insurance policies must include it unless explicitly waived in writing. If both the policyholder and the insurer agree, UM coverage can be reduced or excluded entirely.",
+          "page_age": "2025-06-09T04:19:54",
+          "profile": {
+            "name": "Tulekyanlaw",
+            "url": "https://tulekyanlaw.com/blog/california-uninsured-coverage/",
+            "long_name": "tulekyanlaw.com",
+            "img": "https://imgs.search.brave.com/44Osca3TOnOUPG9_jLdDFjbLNkKN2PsacW3QMkHMXQA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYWI2ZDdlZDgw/ZDBjZjNhM2Q0OTNm/Yzk4YzVlNjQ2OTU3/ZjVjYmU3ODAxOTc0/NTUyNWUxODAzNTQz/ZjhkODA4NC90dWxl/a3lhbmxhdy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "tulekyanlaw.com",
+            "hostname": "tulekyanlaw.com",
+            "favicon": "https://imgs.search.brave.com/44Osca3TOnOUPG9_jLdDFjbLNkKN2PsacW3QMkHMXQA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYWI2ZDdlZDgw/ZDBjZjNhM2Q0OTNm/Yzk4YzVlNjQ2OTU3/ZjVjYmU3ODAxOTc0/NTUyNWUxODAzNTQz/ZjhkODA4NC90dWxl/a3lhbmxhdy5jb20v",
+            "path": "  \u203a home  \u203a is uninsured motorist coverage necessary in california?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/sRLrSz-YCg4j_vWOtNhhq8GTkpXAD81yx7by6rEN8Rw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly90dWxl/a3lhbmxhdy5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjUv/MDEvdW5pbnN1cmVk/LW1vdG9yaXN0LWNv/dmVyYWdlLmpwZw",
+            "original": "https://tulekyanlaw.com/wp-content/uploads/2025/01/uninsured-motorist-coverage.jpg",
+            "logo": false
+          },
+          "age": "June 9, 2025"
+        },
+        {
+          "title": "Understanding Uninsured Motorist Coverage in California",
+          "url": "https://www.michaelwaks.com/understanding-uninsured-motorist-coverage-in-california/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "California law does not require drivers to have uninsured motorist coverage. However, insurers are required to offer it when you purchase or renew your auto insurance policy.",
+          "page_age": "2025-03-07T16:38:11",
+          "profile": {
+            "name": "Michaelwaks",
+            "url": "https://www.michaelwaks.com/understanding-uninsured-motorist-coverage-in-california/",
+            "long_name": "michaelwaks.com",
+            "img": "https://imgs.search.brave.com/epWSN2Ny0vU9jtSd9XXdhhzKyVIEc3grFwoAon_jtZ4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGIxMDIxMDkw/ZDRhNzUwZmY0Yzgx/ZDg3NGM5MmQ0ZWNm/MjU2ZGFkYTk1OTg1/N2ExMzkxYmEwMWVl/MWQyYjc1Mi93d3cu/bWljaGFlbHdha3Mu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "review",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "michaelwaks.com",
+            "hostname": "www.michaelwaks.com",
+            "favicon": "https://imgs.search.brave.com/epWSN2Ny0vU9jtSd9XXdhhzKyVIEc3grFwoAon_jtZ4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGIxMDIxMDkw/ZDRhNzUwZmY0Yzgx/ZDg3NGM5MmQ0ZWNm/MjU2ZGFkYTk1OTg1/N2ExMzkxYmEwMWVl/MWQyYjc1Mi93d3cu/bWljaGFlbHdha3Mu/Y29tLw",
+            "path": "  \u203a home  \u203a understanding uninsured motorist coverage in california"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/mdV2qXHNSrpQUbZOrQHTozqhW3kRAbx7n64dvWWZmW8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bWljaGFlbHdha3Mu/Y29tL3VuZGVyc3Rh/bmRpbmctdW5pbnN1/cmVkLW1vdG9yaXN0/LWNvdmVyYWdlLWlu/LWNhbGlmb3JuaWEv",
+            "original": "https://www.michaelwaks.com/understanding-uninsured-motorist-coverage-in-california/",
+            "logo": false
+          },
+          "age": "March 7, 2025"
+        },
+        {
+          "title": "Uninsured Motorist (UM) Coverage and How It Works",
+          "url": "https://autoaccident.com/uninsured-motorist-coverage-how-it-works/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Uninsured motorist (or UM) coverage is optional insurance \u2013 it\u2019s not one we\u2019re required to have. It is, however, one that our insurance companies are required to offer to us when we get liability insurance from them.",
+          "page_age": "2024-12-10T21:33:19",
+          "profile": {
+            "name": "Auto Accident",
+            "url": "https://autoaccident.com/uninsured-motorist-coverage-how-it-works/",
+            "long_name": "autoaccident.com",
+            "img": "https://imgs.search.brave.com/O9iMSpfu_tZqNfioivlNnoqWkijJC2VNTw3UK8fCCBk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzI0ZDk4YTQz/NGNiMDhmNjEwYzZh/MzI0YTMyOTc1NGU4/ZWU1NWYzZGY4NWEy/YzJkY2FlNzE0Yjlm/YzY3YWViOC9hdXRv/YWNjaWRlbnQuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoaccident.com",
+            "hostname": "autoaccident.com",
+            "favicon": "https://imgs.search.brave.com/O9iMSpfu_tZqNfioivlNnoqWkijJC2VNTw3UK8fCCBk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzI0ZDk4YTQz/NGNiMDhmNjEwYzZh/MzI0YTMyOTc1NGU4/ZWU1NWYzZGY4NWEy/YzJkY2FlNzE0Yjlm/YzY3YWViOC9hdXRv/YWNjaWRlbnQuY29t/Lw",
+            "path": "  \u203a home  \u203a uninsured motorist (um) coverage and how it works"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/iWjG7f7M1TU_CD11hR6acxKFgNXok90svWngCdUz4Sk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hdXRv/YWNjaWRlbnQuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8xNzZ4/MjAwX3BsYWNlaG9s/ZGVyLmpwZw",
+            "original": "https://autoaccident.com/wp-content/uploads/176x200_placeholder.jpg",
+            "logo": false
+          },
+          "age": "December 10, 2024"
+        },
+        {
+          "title": "Does California Require Uninsured Motorist Coverage? \u2013 Caputo & Van Der Walde llp",
+          "url": "https://www.vanderwalde.com/does-california-require-uninsured-motorist-coverage/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Although California does not require drivers to carry uninsured and underinsured motorist coverage, it strongly encourages it by mandating that insurers offer this protection.",
+          "page_age": "2025-05-09T20:52:20",
+          "profile": {
+            "name": "Vanderwalde",
+            "url": "https://www.vanderwalde.com/does-california-require-uninsured-motorist-coverage/",
+            "long_name": "vanderwalde.com",
+            "img": "https://imgs.search.brave.com/-IY6LBAHx-E0_dL8Q_Mepju1NvVNt4DDVdy-6pQLC1w/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2U0YmE4N2Yz/MGZiZDI4ODkwMWQ1/ZWY2ZTdjMWYzODk1/NmE4Y2ZmZjNmNGIz/YmIwNDI3NTQ5ZGVj/YTkzYmY4Yi93d3cu/dmFuZGVyd2FsZGUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "vanderwalde.com",
+            "hostname": "www.vanderwalde.com",
+            "favicon": "https://imgs.search.brave.com/-IY6LBAHx-E0_dL8Q_Mepju1NvVNt4DDVdy-6pQLC1w/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2U0YmE4N2Yz/MGZiZDI4ODkwMWQ1/ZWY2ZTdjMWYzODk1/NmE4Y2ZmZjNmNGIz/YmIwNDI3NTQ5ZGVj/YTkzYmY4Yi93d3cu/dmFuZGVyd2FsZGUu/Y29tLw",
+            "path": "  \u203a home  \u203a blog  \u203a traffic laws  \u203a does california require uninsured motorist coverage?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/y12EbXtSqrTwzGzkvm0M0iCKauAzds8BCB2UvzJuCK8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dmFuZGVyd2FsZGUu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI1LzA1L0FmdGVy/LUNhci1BY2NpZGVu/dC5qcGc",
+            "original": "https://www.vanderwalde.com/wp-content/uploads/2025/05/After-Car-Accident.jpg",
+            "logo": false
+          },
+          "age": "May 9, 2025"
+        },
+        {
+          "title": "Is Uninsured Motorist Coverage Necessary in the California?",
+          "url": "https://shamsilaw.com/blog/is-uninsured-motorist-coverage-necessary-in-california/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "While you\u2019re not required to purchase uninsured motorist coverage, having only the state-mandated liability insurance might leave you financially vulnerable. If you\u2019re involved in an accident with an uninsured or underinsured driver, you ...",
+          "page_age": "2025-06-03T17:36:26",
+          "profile": {
+            "name": "Shamsilaw",
+            "url": "https://shamsilaw.com/blog/is-uninsured-motorist-coverage-necessary-in-california/",
+            "long_name": "shamsilaw.com",
+            "img": "https://imgs.search.brave.com/pDl-AyZLEFmnhS6NVEpQBmDOtviL3CatvcuqXTBMSEI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjkzYzUxMDQw/ZjBkNTMxZDljZGMx/NzZlMzgwYTJiMTA4/MDJjOTRhYmZiMDM0/OTZlMDRhYTVlNzJm/MDkzZWY5Mi9zaGFt/c2lsYXcuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "shamsilaw.com",
+            "hostname": "shamsilaw.com",
+            "favicon": "https://imgs.search.brave.com/pDl-AyZLEFmnhS6NVEpQBmDOtviL3CatvcuqXTBMSEI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjkzYzUxMDQw/ZjBkNTMxZDljZGMx/NzZlMzgwYTJiMTA4/MDJjOTRhYmZiMDM0/OTZlMDRhYTVlNzJm/MDkzZWY5Mi9zaGFt/c2lsYXcuY29tLw",
+            "path": "  \u203a home  \u203a is uninsured motorist coverage necessary in california?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/v7reiCWn-gdIaO8GCU0mMw1DbHeaAjpHo6IBoznUkfA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zaGFt/c2lsYXcuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy9Jcy1Vbmlu/c3VyZWQtTW90b3Jp/c3QtQ292ZXJhZ2Ut/TmVjZXNzYXJ5LWlu/LUNhbGlmb3JuaWEu/cG5n",
+            "original": "https://shamsilaw.com/wp-content/uploads/Is-Uninsured-Motorist-Coverage-Necessary-in-California.png",
+            "logo": false
+          },
+          "age": "June 3, 2025"
+        },
+        {
+          "title": "Is Uninsured Motorist Coverage Required in California? - Deldar Legal | Personal Injury Lawyers in California",
+          "url": "https://deldarlegal.com/insurance-claims/is-uninsured-motorist-coverage-required-in-california/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If you\u2019re recovering from a recent collision or shopping around for car insurance, understanding how uninsured motorist protection works can help you make informed choices and avoid costly surprises after an accident. Follow along with our experienced California car accident attorneys at Deldar Legal to learn more. Before we get started, let\u2019s highlight some key takeaways: California doesn\u2019t require uninsured motorist (UM) or underinsured motorist (UIM) coverage.",
+          "page_age": "2025-10-22T21:23:33",
+          "profile": {
+            "name": "Deldar",
+            "url": "https://deldarlegal.com/insurance-claims/is-uninsured-motorist-coverage-required-in-california/",
+            "long_name": "deldarlegal.com",
+            "img": "https://imgs.search.brave.com/l_k3nIvCTGFinxE-og9q2jOQSr2oHbiaoXG1I4c9uzs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzQxYzljZjFj/MDg2ZGVhY2ZmNTM3/N2QzYzBmYWU1NDI5/MjdiOGZiYTc4M2M2/YjY1NzQwOWM3YzI3/MjEzZDJhNC9kZWxk/YXJsZWdhbC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "deldarlegal.com",
+            "hostname": "deldarlegal.com",
+            "favicon": "https://imgs.search.brave.com/l_k3nIvCTGFinxE-og9q2jOQSr2oHbiaoXG1I4c9uzs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzQxYzljZjFj/MDg2ZGVhY2ZmNTM3/N2QzYzBmYWU1NDI5/MjdiOGZiYTc4M2M2/YjY1NzQwOWM3YzI3/MjEzZDJhNC9kZWxk/YXJsZWdhbC5jb20v",
+            "path": "  \u203a return home  \u203a news blogs  \u203a is uninsured motorist coverage required in california?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/fJkVH55zPA84MuLTODLA8xmsVnY2wgdv7YQH0KDqxo4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9kZWxk/YXJsZWdhbC5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjUv/MTAvSXMtVW5pbnN1/cmVkLU1vdG9yaXN0/LUNvdmVyYWdlLVJl/cXVpcmVkLWluLUNh/bGlmb3JuaWEtc2Nh/bGVkLmpwZWc",
+            "original": "https://deldarlegal.com/wp-content/uploads/2025/10/Is-Uninsured-Motorist-Coverage-Required-in-California-scaled.jpeg",
+            "logo": false
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "The California Uninsured Motorist Process Explained.",
+          "url": "https://leslieinjurylaw.com/library/the-california-uninsured-motorist-claims-process/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If you live in California you, by law, must be offered uninsured motorist coverage. If you decline the coverage, the insurance company must have a signed decline by you in writing, otherwise you will be afforded the coverage by law at a later ...",
+          "page_age": "2024-11-15T13:08:04",
+          "profile": {
+            "name": "Leslie Law Firm",
+            "url": "https://leslieinjurylaw.com/library/the-california-uninsured-motorist-claims-process/",
+            "long_name": "leslieinjurylaw.com",
+            "img": "https://imgs.search.brave.com/HWwSebiZ_FHsF4ERZMK1-JzxOFGBGHyCB6U_6R6Eteo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDZjNjNlNWRi/ODQ5ZjdjMzQyNTQ2/NmEwOWMyZjA5MTc0/NzE1MzJlZWRkN2I3/NDY1ODBkMzUwYTQ2/NDM4NmU5ZS9sZXNs/aWVpbmp1cnlsYXcu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "leslieinjurylaw.com",
+            "hostname": "leslieinjurylaw.com",
+            "favicon": "https://imgs.search.brave.com/HWwSebiZ_FHsF4ERZMK1-JzxOFGBGHyCB6U_6R6Eteo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDZjNjNlNWRi/ODQ5ZjdjMzQyNTQ2/NmEwOWMyZjA5MTc0/NzE1MzJlZWRkN2I3/NDY1ODBkMzUwYTQ2/NDM4NmU5ZS9sZXNs/aWVpbmp1cnlsYXcu/Y29tLw",
+            "path": "  \u203a home  \u203a library  \u203a the california uninsured motorist process explained."
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/lw-_0J2zVGxk5vyA4snHIpuxbTOxiYszaUTtMmZX_B8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9sZXNs/aWVpbmp1cnlsYXcu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI0LzExL2xlc2xp/ZWxhd2Zvcm1sb2ct/cmVtb3ZlYmctcHJl/dmlldy5wbmc",
+            "original": "https://leslieinjurylaw.com/wp-content/uploads/2024/11/leslielawformlog-removebg-preview.png",
+            "logo": false
+          },
+          "age": "November 15, 2024"
+        },
+        {
+          "title": "California's New Auto Insurance Minimums - The Zwerdling Law Firm, LLP",
+          "url": "https://zwerdlinglaw.com/blog/californias-new-auto-insurance-minimums/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "More specifically, uninsured motorist coverage applies if the at-fault driver is illegally driving without liability insurance. Underinsured motorist coverage applies if your damages exceed the amount of the at-fault party\u2019s liability insurance ...",
+          "page_age": "2025-01-13T17:38:39",
+          "profile": {
+            "name": "Zwerdlinglaw",
+            "url": "https://zwerdlinglaw.com/blog/californias-new-auto-insurance-minimums/",
+            "long_name": "zwerdlinglaw.com",
+            "img": "https://imgs.search.brave.com/9uaEkixdOReXYhDwgxLePaPShb9HGzdtwsb36L4ABJo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTNkOTA2ZDZi/ZjQ3NGU0NmY5ZGU3/NmVjYWU3MDJhZmFi/MTY4ZDgzYmUyOTA3/MzI1ZDVhMDkyMmI0/MmRlZjcwYy96d2Vy/ZGxpbmdsYXcuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "zwerdlinglaw.com",
+            "hostname": "zwerdlinglaw.com",
+            "favicon": "https://imgs.search.brave.com/9uaEkixdOReXYhDwgxLePaPShb9HGzdtwsb36L4ABJo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTNkOTA2ZDZi/ZjQ3NGU0NmY5ZGU3/NmVjYWU3MDJhZmFi/MTY4ZDgzYmUyOTA3/MzI1ZDVhMDkyMmI0/MmRlZjcwYy96d2Vy/ZGxpbmdsYXcuY29t/Lw",
+            "path": "  \u203a home  \u203a california\u2019s new auto insurance minimums"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/hEx-FPWxgcL8Fob4VpWxCSdfYrBY1d5UaDeMgvlE4Xw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly96d2Vy/ZGxpbmdsYXcuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIx/LzExL3RpbS1tb3Nz/aG9sZGVyLVRrMjJW/ck4xeUdFLXVuc3Bs/YXNoLmpwZw",
+            "original": "https://zwerdlinglaw.com/wp-content/uploads/2021/11/tim-mossholder-Tk22VrN1yGE-unsplash.jpg",
+            "logo": false
+          },
+          "age": "January 13, 2025"
+        },
+        {
+          "title": "Uninsured Motorist Coverage in California: Why You Need It | Cost-U-Less",
+          "url": "https://www.costulessdirect.com/blog/uninsured-motorist-coverage-california-2/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Underinsured motorist coverage ... didn\u2019t have enough insurance coverage. Insurance companies in California are required to offer uninsured and underinsured motorist insurance, but you can decline it in writing...",
+          "page_age": "2025-05-12T14:56:16",
+          "profile": {
+            "name": "Blog",
+            "url": "https://www.costulessdirect.com/blog/uninsured-motorist-coverage-california-2/",
+            "long_name": "costulessdirect.com",
+            "img": "https://imgs.search.brave.com/HeDPzbFj8XiawvzI0V_pcEM2eK6Kgg5T7T4brY8q1Kk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDk0MTkzNDE1/MDk1ZmVlYmFkYjlm/MzQ1MTc1ZDYzMzky/ZTRmMjA2YTBkYWYw/MDk0ZWFmY2RjMTQ5/ZGE0Y2RlOS93d3cu/Y29zdHVsZXNzZGly/ZWN0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "costulessdirect.com",
+            "hostname": "www.costulessdirect.com",
+            "favicon": "https://imgs.search.brave.com/HeDPzbFj8XiawvzI0V_pcEM2eK6Kgg5T7T4brY8q1Kk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDk0MTkzNDE1/MDk1ZmVlYmFkYjlm/MzQ1MTc1ZDYzMzky/ZTRmMjA2YTBkYWYw/MDk0ZWFmY2RjMTQ5/ZGE0Y2RlOS93d3cu/Y29zdHVsZXNzZGly/ZWN0LmNvbS8",
+            "path": "  \u203a home  \u203a auto insurance  \u203a why you need uninsured motorist coverage in california: protect yourself from the unexpected"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/52uJi5fexgrwG_JaelOiSy0F3f5Kr_Z7VfL9JEjnlk8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y29zdHVsZXNzZGly/ZWN0LmNvbS9ibG9n/L3dwLWNvbnRlbnQv/dXBsb2Fkcy9zaXRl/cy80LzIwMjUvMDUv/Y3VsLXdoeS15b3Ut/bmVlZC11bmluc3Vy/ZWQtbW90b3Jpc3Qt/Y292ZXJhZ2UtaW4t/Y2FsaWZvcm5pYS0x/LmpwZw",
+            "original": "https://www.costulessdirect.com/blog/wp-content/uploads/sites/4/2025/05/cul-why-you-need-uninsured-motorist-coverage-in-california-1.jpg",
+            "logo": false
+          },
+          "age": "May 12, 2025"
+        },
+        {
+          "title": "Is Uninsured Motorist Coverage Required In California? | Martinian Lawyers",
+          "url": "https://www.martinianlaw.com/is-uninsured-motorist-coverage-required-in-california/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Uninsured motorist coverage isn&#x27;t required in California, but insurers must offer it. Drivers who decline it must sign a waiver.",
+          "page_age": "2025-09-17T15:20:59",
+          "profile": {
+            "name": "Martinian Lawyers",
+            "url": "https://www.martinianlaw.com/is-uninsured-motorist-coverage-required-in-california/",
+            "long_name": "martinianlaw.com",
+            "img": "https://imgs.search.brave.com/-fg37zeKF5aWMqP_r-hQmdOOHiUDQtajgdf-qZqnhKk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDdhODU1NWQ2/NzYzODhkNzg0MDEw/NmU0NjY4MDA2N2U0/NWUxNjEwMmNmZTdk/NTA2NTAzMTc3MzI2/MTI0ZDAyMC93d3cu/bWFydGluaWFubGF3/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "martinianlaw.com",
+            "hostname": "www.martinianlaw.com",
+            "favicon": "https://imgs.search.brave.com/-fg37zeKF5aWMqP_r-hQmdOOHiUDQtajgdf-qZqnhKk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDdhODU1NWQ2/NzYzODhkNzg0MDEw/NmU0NjY4MDA2N2U0/NWUxNjEwMmNmZTdk/NTA2NTAzMTc3MzI2/MTI0ZDAyMC93d3cu/bWFydGluaWFubGF3/LmNvbS8",
+            "path": "  \u203a blog  \u203a is uninsured motorist coverage required in california?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/nDT4jix1RndPR1P8D0YbD1VpeSnQ2Ua64abFNw-ggUc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bWFydGluaWFubGF3/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMy8xMC9sb2dv/LnN2Zw",
+            "original": "https://www.martinianlaw.com/wp-content/uploads/2023/10/logo.svg",
+            "logo": true
+          },
+          "age": "September 17, 2025"
+        },
+        {
+          "title": "Understanding Uninsured Motorist Coverage in California | Barry Regar APLC",
+          "url": "https://www.barryregarlaw.com/blog/2025/september/understanding-uninsured-motorist-coverage-in-cal/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "While California law does not make uninsured motorist coverage mandatory, it does require insurance carriers to offer it when issuing a policy. If you opt out, you must sign a written waiver acknowledging you understand the risks of declining ...",
+          "page_age": "2025-09-11T00:00:00",
+          "profile": {
+            "name": "BarryRegarLaw",
+            "url": "https://www.barryregarlaw.com/blog/2025/september/understanding-uninsured-motorist-coverage-in-cal/",
+            "long_name": "barryregarlaw.com",
+            "img": "https://imgs.search.brave.com/VVdY14M0wLYKyxcoF4Ts8VIKNseL-VDGTYNE1QaOhV8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDZhYWQ5ZmEz/YzdlOWY1ZTFiYzY2/MjFiMzBhNGZmZWQx/OWMwYWQ4N2U2NTAx/MDM5M2Q2ZjViMmQz/MzI2Mjc4NS93d3cu/YmFycnlyZWdhcmxh/dy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "barryregarlaw.com",
+            "hostname": "www.barryregarlaw.com",
+            "favicon": "https://imgs.search.brave.com/VVdY14M0wLYKyxcoF4Ts8VIKNseL-VDGTYNE1QaOhV8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDZhYWQ5ZmEz/YzdlOWY1ZTFiYzY2/MjFiMzBhNGZmZWQx/OWMwYWQ4N2U2NTAx/MDM5M2Q2ZjViMmQz/MzI2Mjc4NS93d3cu/YmFycnlyZWdhcmxh/dy5jb20v",
+            "path": "\u203a blog  \u203a 2025  \u203a september  \u203a understanding-uninsured-motorist-coverage-in-cal"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/o3aG7DEy6xeMpNRt7zQZg_VIrd4044MjUOctQQlg3zo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFycnlyZWdhcmxh/dy5jb20vaW1hZ2Vz/L2xvZ28uMjEwMTA2/MTAzNjMxNS5wbmc",
+            "original": "https://www.barryregarlaw.com/images/logo.2101061036315.png",
+            "logo": true
+          },
+          "age": "September 11, 2025"
+        },
+        {
+          "title": "Pros and Cons of Uninsured Motorist Coverage in California | San Diego, CA | Pines Salomon Personal Injury Lawyers",
+          "url": "https://seriousaccidents.com/blog/pros-and-cons-of-uninsured-motorist-coverage-in-california/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Uninsured motorist (UM) coverage is not required in California, but insurance companies must offer it. If you decline the coverage, you must sign a waiver stating you are turning it down.",
+          "page_age": "2025-02-07T23:04:21",
+          "profile": {
+            "name": "Serious Accidents",
+            "url": "https://seriousaccidents.com/blog/pros-and-cons-of-uninsured-motorist-coverage-in-california/",
+            "long_name": "seriousaccidents.com",
+            "img": "https://imgs.search.brave.com/8BNd3C45MV4tkgcgd0B2QSSeiXu4lrxbeCjOnV-UPgw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzM0NzA0MjNh/YTkyODQyMjUwMzQ5/YzA2MGNlYjlkNmRm/ZDk2NDY2ZGQ1NDEy/NmE3YWRiMDViZjU2/N2VmZGNjOC9zZXJp/b3VzYWNjaWRlbnRz/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "seriousaccidents.com",
+            "hostname": "seriousaccidents.com",
+            "favicon": "https://imgs.search.brave.com/8BNd3C45MV4tkgcgd0B2QSSeiXu4lrxbeCjOnV-UPgw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzM0NzA0MjNh/YTkyODQyMjUwMzQ5/YzA2MGNlYjlkNmRm/ZDk2NDY2ZGQ1NDEy/NmE3YWRiMDViZjU2/N2VmZGNjOC9zZXJp/b3VzYWNjaWRlbnRz/LmNvbS8",
+            "path": "  \u203a home  \u203a blog  \u203a pros and cons of uninsured motorist coverage in california"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YHN4pJYN9sSvbvGHV4uP9dOQhs9QVy2mzTZjaTr8B1g/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zZXJp/b3VzYWNjaWRlbnRz/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNC8xMC9BYm91/dC1UaGUtRmlybS0x/LTc2OHg2MTQuanBn",
+            "original": "https://seriousaccidents.com/wp-content/uploads/2024/10/About-The-Firm-1-768x614.jpg",
+            "logo": false
+          },
+          "age": "February 7, 2025"
+        },
+        {
+          "title": "How Does Uninsured Motorist Coverage Work in California",
+          "url": "https://www.mesrianilaw.com/blog/understanding-how-uninsured-motorist-coverage-works-in-california/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The purpose behind this California requirement is to protect other drivers if you\u2019re negligent while driving a vehicle. However, drivers are not required to carry uninsured motorist coverage.",
+          "page_age": "2025-07-20T09:43:31",
+          "profile": {
+            "name": "Mesriani Law Group",
+            "url": "https://www.mesrianilaw.com/blog/understanding-how-uninsured-motorist-coverage-works-in-california/",
+            "long_name": "mesrianilaw.com",
+            "img": "https://imgs.search.brave.com/6k6vVh7UqVdJKoEAkHlzj0OeM3R7QjnVofmQy6v6vko/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDhmNDRiNjZk/YzQxN2U3ZWQyYjRi/MzgxOTgwM2NlMDY1/OTdlMmYzZmUwYjNj/ODI0NWQyMzMyM2Qy/NGY0OWY5MC93d3cu/bWVzcmlhbmlsYXcu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "mesrianilaw.com",
+            "hostname": "www.mesrianilaw.com",
+            "favicon": "https://imgs.search.brave.com/6k6vVh7UqVdJKoEAkHlzj0OeM3R7QjnVofmQy6v6vko/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDhmNDRiNjZk/YzQxN2U3ZWQyYjRi/MzgxOTgwM2NlMDY1/OTdlMmYzZmUwYjNj/ODI0NWQyMzMyM2Qy/NGY0OWY5MC93d3cu/bWVzcmlhbmlsYXcu/Y29tLw",
+            "path": "\u203a blog  \u203a understanding-how-uninsured-motorist-coverage-works-in-california"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/XYbvbLK-ubZig7eBEpJ-pYxHq-5RReTvjX_fWpdXm8A/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bWVzcmlhbmlsYXcu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIwLzEyL3VuaW5z/aXJlZC1tb3Rvcmlz/dC1zY2FsZWQtMS5q/cGc",
+            "original": "https://www.mesrianilaw.com/wp-content/uploads/2020/12/uninsired-motorist-scaled-1.jpg",
+            "logo": false
+          },
+          "age": "July 20, 2025"
+        },
+        {
+          "title": "The Importance of Uninsured & Underinsured Motorist Coverage | Freedman Law",
+          "url": "https://www.freedmanlaw.com/the-importance-of-uninsured-underinsured-motorist-coverage/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "It also applies in hit-and-run ... to cover the full cost of your damages. California\u2019s minimum liability limits are $15,000 per person and $30,000 per accident for bodily injury....",
+          "page_age": "2025-05-29T15:27:24",
+          "profile": {
+            "name": "Freedman Law",
+            "url": "https://www.freedmanlaw.com/the-importance-of-uninsured-underinsured-motorist-coverage/",
+            "long_name": "freedmanlaw.com",
+            "img": "https://imgs.search.brave.com/ojRprEKk2mVaVRJXXRIYb-vygn7ubHIsG2H8pqYnmaI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzNiZjhjZGVi/MzY4MzVjYzhlNzVh/OGIyNDczM2ZiNmQy/ZjYyNmNhMTg3ODdk/MzdkMzI1YmY0ZTE3/YzI2YzkyMC93d3cu/ZnJlZWRtYW5sYXcu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "freedmanlaw.com",
+            "hostname": "www.freedmanlaw.com",
+            "favicon": "https://imgs.search.brave.com/ojRprEKk2mVaVRJXXRIYb-vygn7ubHIsG2H8pqYnmaI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzNiZjhjZGVi/MzY4MzVjYzhlNzVh/OGIyNDczM2ZiNmQy/ZjYyNmNhMTg3ODdk/MzdkMzI1YmY0ZTE3/YzI2YzkyMC93d3cu/ZnJlZWRtYW5sYXcu/Y29tLw",
+            "path": "  \u203a blog  \u203a the importance of uninsured & underinsured motorist coverage"
+          },
+          "age": "May 29, 2025"
+        },
+        {
+          "title": "Uninsured Motorist Coverage in California: Why It\u2019s Essential for Drivers",
+          "url": "https://www.costulessdirect.com/blog/uninsured-motorist-coverage-california/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "California law does not require drivers to carry uninsured motorist coverage, but insurers must include it in bodily injury liability policies unless the policyholder explicitly waives it in writing.",
+          "page_age": "2025-03-24T15:15:14",
+          "profile": {
+            "name": "Blog",
+            "url": "https://www.costulessdirect.com/blog/uninsured-motorist-coverage-california/",
+            "long_name": "costulessdirect.com",
+            "img": "https://imgs.search.brave.com/HeDPzbFj8XiawvzI0V_pcEM2eK6Kgg5T7T4brY8q1Kk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDk0MTkzNDE1/MDk1ZmVlYmFkYjlm/MzQ1MTc1ZDYzMzky/ZTRmMjA2YTBkYWYw/MDk0ZWFmY2RjMTQ5/ZGE0Y2RlOS93d3cu/Y29zdHVsZXNzZGly/ZWN0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "costulessdirect.com",
+            "hostname": "www.costulessdirect.com",
+            "favicon": "https://imgs.search.brave.com/HeDPzbFj8XiawvzI0V_pcEM2eK6Kgg5T7T4brY8q1Kk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDk0MTkzNDE1/MDk1ZmVlYmFkYjlm/MzQ1MTc1ZDYzMzky/ZTRmMjA2YTBkYWYw/MDk0ZWFmY2RjMTQ5/ZGE0Y2RlOS93d3cu/Y29zdHVsZXNzZGly/ZWN0LmNvbS8",
+            "path": "  \u203a home  \u203a auto insurance coverage in california | guide & tips  \u203a why uninsured motorist coverage is essential for drivers in california"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YZ2h-80uj8N6f_uxUGCjONjamYQwxUbPghJdVXscupM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y29zdHVsZXNzZGly/ZWN0LmNvbS9ibG9n/L3dwLWNvbnRlbnQv/dXBsb2Fkcy9zaXRl/cy80LzIwMjUvMDMv/Q1VMLXdoeS11bmlu/c3VyZWQtbW90b3Jp/c3QtY292ZXJhZ2Ut/aXMtZXNzZW50YWls/LWZvci1kcml2ZXJz/LWluLWNhbGlmb3Ju/aWEtMS5qcGc",
+            "original": "https://www.costulessdirect.com/blog/wp-content/uploads/sites/4/2025/03/CUL-why-uninsured-motorist-coverage-is-essentail-for-drivers-in-california-1.jpg",
+            "logo": false
+          },
+          "age": "March 24, 2025"
+        },
+        {
+          "title": "Is It Illegal to Drive Without Insurance in California? (Insurance Laws Explained) | Curtis Legal Group",
+          "url": "https://curtislegalgroup.com/news/driving-without-car-insurance-california/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "California law requires all drivers and owners of motor vehicles to produce proof of their ability to pay for any damage they cause. Insurance is one way to demonstrate financial responsibility and is usually the most affordable way to meet ...",
+          "page_age": "2024-12-12T19:01:02",
+          "profile": {
+            "name": "Curtis Legal Group",
+            "url": "https://curtislegalgroup.com/news/driving-without-car-insurance-california/",
+            "long_name": "curtislegalgroup.com",
+            "img": "https://imgs.search.brave.com/SErh2OPBj5PLLKQkTI3yVBfo51490waJFjIOsV3Ahuw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWM4ZDM0YTMz/MTUxNTZjNmE4NTdh/MWNkZDgwMGQ5MTY4/YmY5OTM0NjgzMWE2/MDBhZGQ5MDYxMjJj/NTkxYzgzZC9jdXJ0/aXNsZWdhbGdyb3Vw/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "curtislegalgroup.com",
+            "hostname": "curtislegalgroup.com",
+            "favicon": "https://imgs.search.brave.com/SErh2OPBj5PLLKQkTI3yVBfo51490waJFjIOsV3Ahuw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWM4ZDM0YTMz/MTUxNTZjNmE4NTdh/MWNkZDgwMGQ5MTY4/YmY5OTM0NjgzMWE2/MDBhZGQ5MDYxMjJj/NTkxYzgzZC9jdXJ0/aXNsZWdhbGdyb3Vw/LmNvbS8",
+            "path": "  \u203a home  \u203a is it illegal to drive without insurance in california? (insurance laws explained)"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ww2jB7W-pCQ9_HlTNXtMJazRsVx26VJAwZjwpDFKnnI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jdXJ0/aXNsZWdhbGdyb3Vw/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMS8wNC9sb2dv/LnBuZw",
+            "original": "https://curtislegalgroup.com/wp-content/uploads/2021/04/logo.png",
+            "logo": true
+          },
+          "age": "December 12, 2024"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

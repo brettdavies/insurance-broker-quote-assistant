@@ -1,0 +1,97 @@
+{
+  "websearch_id": "websearch_yiag5tdsplilt7v4tsfjlc9d",
+  "search_id": "search_m71a2bbr4tm8wyc4s758ynu6",
+  "timestamp": "2025-11-07T12:29:53.180935",
+  "startedAt": "2025-11-07T12:29:53.180935",
+  "completedAt": "2025-11-07T12:29:55.297460",
+  "durationSeconds": 2.12,
+  "urlsDiscoveredCount": 1,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"commission percentage\" renters insurance",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"commission percentage\" renters insurance",
+      "show_strict_warning": false,
+      "cleaned": "commission percentage renters insurance",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "commission percentage renters insurance"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Average Realtor Commission Fees in Michigan: 2025 Survey",
+          "url": "https://listwithclever.com/average-real-estate-commission-rate/michigan/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "5.73% is the average real estate commission rate in Michigan. Learn how Michigan real estate commission works and how you can save on realtor fees.",
+          "page_age": "2025-09-22T16:07:09",
+          "profile": {
+            "name": "Clever Real Estate",
+            "url": "https://listwithclever.com/average-real-estate-commission-rate/michigan/",
+            "long_name": "listwithclever.com",
+            "img": "https://imgs.search.brave.com/o2HIAQGZpy6aSTsCJwPfeUTbgZY_qQUUD3IwxW9V35A/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTkyM2Q4MDk2/ZDk3YWI5NDgwOTNi/M2I3NjVmMWQwNWQ5/NjMyZjFhZmFkNzhm/YmE2ZTRlZTk0MDgz/M2VkOTM2Mi9saXN0/d2l0aGNsZXZlci5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "listwithclever.com",
+            "hostname": "listwithclever.com",
+            "favicon": "https://imgs.search.brave.com/o2HIAQGZpy6aSTsCJwPfeUTbgZY_qQUUD3IwxW9V35A/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTkyM2Q4MDk2/ZDk3YWI5NDgwOTNi/M2I3NjVmMWQwNWQ5/NjMyZjFhZmFkNzhm/YmE2ZTRlZTk0MDgz/M2VkOTM2Mi9saXN0/d2l0aGNsZXZlci5j/b20v",
+            "path": "  \u203a home  \u203a average commission  \u203a michigan"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/qPHs-ND8vDVGE2OaXfYkEDeatd0rVwFNe2tvt9SdqIc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9saXN0/d2l0aGNsZXZlci5j/b20vd3AtY29udGVu/dC91cGxvYWRzL2Qx/NzAxNjEwLWJlNWEt/MTFlYi05ODM5LTFm/ZGVjMDY2ZTg2NC1h/dmVyYWdlLXJlYWwt/ZXN0YXRlLWNvbW1p/c3Npb24ucG5n",
+            "original": "https://listwithclever.com/wp-content/uploads/d1701610-be5a-11eb-9839-1fdec066e864-average-real-estate-commission.png",
+            "logo": false
+          },
+          "age": "September 22, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

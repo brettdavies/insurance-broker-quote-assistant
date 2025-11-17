@@ -1,0 +1,134 @@
+{
+  "websearch_id": "websearch_prgm904h7a6ealh5271mgk16",
+  "search_id": "search_eqkjk1ytp2zv46o875tg5jfv",
+  "timestamp": "2025-11-07T12:33:01.263969",
+  "startedAt": "2025-11-07T12:33:01.263969",
+  "completedAt": "2025-11-07T12:33:03.145986",
+  "durationSeconds": 1.88,
+  "urlsDiscoveredCount": 2,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"required disclosures\" insurance [state] [product]",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"required disclosures\" insurance [state] [product]",
+      "show_strict_warning": false,
+      "cleaned": "required disclosures insurance [state] [product]",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "required disclosures insurance [state] [product]"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Required Landlord Disclosure to Tell Your Tenants",
+          "url": "https://www.steadily.com/blog/landlord-disclosure-requirements",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The patchwork of disclosure requirements across different states and municipalities is a complex minefield for landlords to navigate. Here, we will discuss some of the common requirements to include in your landlord disclosure agreements and the specific requirements for the four largest states.",
+          "page_age": "2025-09-30T00:00:00",
+          "profile": {
+            "name": "Steadily",
+            "url": "https://www.steadily.com/blog/landlord-disclosure-requirements",
+            "long_name": "steadily.com",
+            "img": "https://imgs.search.brave.com/-wNW9UvWDf3vgV8syFio0pZmYe75bqEDa1XLBEz2GLc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjJjZTVhNzRj/NTg1NDAzMmE1ZDgw/NTYwOTlmMTM5ZDZj/MDUzOGY4ZTI2Mjgw/MDllYjg2N2Q1MGNl/YTI4ZTY1Ni93d3cu/c3RlYWRpbHkuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "steadily.com",
+            "hostname": "www.steadily.com",
+            "favicon": "https://imgs.search.brave.com/-wNW9UvWDf3vgV8syFio0pZmYe75bqEDa1XLBEz2GLc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjJjZTVhNzRj/NTg1NDAzMmE1ZDgw/NTYwOTlmMTM5ZDZj/MDUzOGY4ZTI2Mjgw/MDllYjg2N2Q1MGNl/YTI4ZTY1Ni93d3cu/c3RlYWRpbHkuY29t/Lw",
+            "path": "  \u203a home  \u203a blog  \u203a required landlord disclosure to tell your tenants"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Nv5tWSD-vw_rnqM6KXPhpi0eps0VvJfKu9EF-cxeg-s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvZC53ZWJzaXRl/LWZpbGVzLmNvbS82/MjAwM2ExMzVjMjYx/M2RiNDI5MmJjMDQv/Njc5YmYwNjVjNjhl/ZTNjMDU4NzllOWVm/XzIwMjUwMTMwVDA4/NDUtYmQxYzE2MjYt/OTFlYS00Yzg1LTg4/OTgtNTcyNTA0ZDJh/MDA1LndlYnA",
+            "original": "https://cdn.prod.website-files.com/62003a135c2613db4292bc04/679bf065c68ee3c05879e9ef_20250130T0845-bd1c1626-91ea-4c85-8898-572504d2a005.webp",
+            "logo": false
+          },
+          "age": "September 30, 2025"
+        },
+        {
+          "title": "Landlord Disclosure to Tenants | San Francisco, California",
+          "url": "https://samlaw.net/practice-areas/real-estate-litigation/landlord-disclosure-to-tenants/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "California landlords and property owners are required to follow their federal, state, and local laws about informing tenants of policies, facts, and rules about the rental property and its surrounding area. Any information that is shared with a renter about the property or a renter\u2019s rights is considered disclosure.",
+          "page_age": "2025-04-23T08:02:00",
+          "profile": {
+            "name": "Samlaw",
+            "url": "https://samlaw.net/practice-areas/real-estate-litigation/landlord-disclosure-to-tenants/",
+            "long_name": "samlaw.net",
+            "img": "https://imgs.search.brave.com/uFRm4QuXadACegZSCG0HSYNhWjaJv5yNs8lAJGdOZ8g/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTA3ZGZlMTFm/MDQxYmM1YWE4OTEx/OTFiOGQyZjAzZGU4/MjQ2MzNkN2FhNjM0/NWU1MWVhZjViYWU2/MzJhYjMxZS9zYW1s/YXcubmV0Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "samlaw.net",
+            "hostname": "samlaw.net",
+            "favicon": "https://imgs.search.brave.com/uFRm4QuXadACegZSCG0HSYNhWjaJv5yNs8lAJGdOZ8g/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTA3ZGZlMTFm/MDQxYmM1YWE4OTEx/OTFiOGQyZjAzZGU4/MjQ2MzNkN2FhNjM0/NWU1MWVhZjViYWU2/MzJhYjMxZS9zYW1s/YXcubmV0Lw",
+            "path": "  \u203a home  \u203a practice areas  \u203a san francisco real estate litigation attorney  \u203a landlord disclosure to tenants"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/0DmaT46ZGHX-2BT_pwSVk06h8G3xogyf9Zv5R1Oxuqk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zYW1s/YXcubmV0L3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIxLzA2L3Nh/bi1mcmFuY2lzY28t/cmVhbC1lc3RhdGUt/YXR0b3JuZXkucG5n",
+            "original": "https://samlaw.net/wp-content/uploads/2021/06/san-francisco-real-estate-attorney.png",
+            "logo": false
+          },
+          "age": "April 23, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

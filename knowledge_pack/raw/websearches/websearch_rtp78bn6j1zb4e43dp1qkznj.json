@@ -1,0 +1,52 @@
+{
+  "websearch_id": "websearch_rtp78bn6j1zb4e43dp1qkznj",
+  "search_id": "search_cxae432qznq6q7vh1e4kspum",
+  "timestamp": "2025-11-07T12:33:31.495501",
+  "startedAt": "2025-11-07T12:33:31.495501",
+  "completedAt": "2025-11-07T12:33:33.362946",
+  "durationSeconds": 1.87,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"estimate only\" insurance disclaimer",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"estimate only\" insurance disclaimer",
+      "show_strict_warning": false,
+      "cleaned": "estimate only insurance disclaimer",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "estimate only insurance disclaimer"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

@@ -1,0 +1,799 @@
+{
+  "websearch_id": "websearch_d671jhp83y3mpjgpm32dmgod",
+  "search_id": "search_alh2bt49mpj724v2yv3v4yrh",
+  "timestamp": "2025-11-07T12:27:33.477400",
+  "startedAt": "2025-11-07T12:27:33.477400",
+  "completedAt": "2025-11-07T12:27:35.474733",
+  "durationSeconds": 2.0,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"New York\" \"25/50/10\" minimum coverage",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"New York\" \"25/50/10\" minimum coverage",
+      "show_strict_warning": false,
+      "cleaned": "New York 25/50/10 minimum coverage",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "New York 25/50/10 minimum coverage"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "New York Car Insurance Laws (Updated 2025) | The Zebra",
+          "url": "https://www.thezebra.com/auto-insurance/new-york-car-insurance/state-laws-ny/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "For instance, New York\u2019s PIP limits require a minimum of $50,000 per person. Liability coverage limits are normally split into three categories: bodily injury per person, bodily injury per accident, and property damage.",
+          "page_age": "2025-11-03T15:30:25",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/auto-insurance/new-york-car-insurance/state-laws-ny/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a cheap car insurance  \u203a new york car insurance  \u203a new york car insurance laws"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/tbd0UaOOvIXqi69W48G0j_FAdMT0JxNy_qR5HBkqeCs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9zdGF0/aWMvM2I5NGRmMy96/ZnJvbnQvaW1nL2l6/LXNoYXJlLWxvZ28u/cG5n",
+            "original": "https://cdn.thezebra.com/zfront/static/3b94df3/zfront/img/iz-share-logo.png",
+            "logo": true
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "Minimum car insurance requirements in New York",
+          "url": "https://www.carinsurance.com/state/state-minimum-car-insurance-in-new-york/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In New York, drivers must carry ... the minimum liability coverage your state requires. It covers the accidental bodily injury and property damage you cause to others....",
+          "page_age": "2025-06-04T00:00:00",
+          "profile": {
+            "name": "Carinsurance.com",
+            "url": "https://www.carinsurance.com/state/state-minimum-car-insurance-in-new-york/",
+            "long_name": "carinsurance.com",
+            "img": "https://imgs.search.brave.com/KCetfn_EHIlwz5sy6dTvSdGjOen9Qf_QsSICK4hYUH8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDdmYWUzNjM0/MGU0ODEwNzI3ZWVj/NjEwYmQ2MmE5NTZh/N2E2NDRhODA2YjRj/NjBlNzc2OTBiYzkz/YzA3ZGQzOC93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "carinsurance.com",
+            "hostname": "www.carinsurance.com",
+            "favicon": "https://imgs.search.brave.com/KCetfn_EHIlwz5sy6dTvSdGjOen9Qf_QsSICK4hYUH8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDdmYWUzNjM0/MGU0ODEwNzI3ZWVj/NjEwYmQ2MmE5NTZh/N2E2NDRhODA2YjRj/NjBlNzc2OTBiYzkz/YzA3ZGQzOC93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS8",
+            "path": "  \u203a car insurance homepage  \u203a car insurance by state  \u203a car insurance in new york  \u203a minimum car insurance requirements in new york"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/UgJ_Y_LrX0rGkmLc_m68pIngh_lOS5ECjcKCnUUN0Ks/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS9pbWFnZXMv/aG9tZS9pbWFnZV9m/b3Jtc3RhcnQuanBn",
+            "original": "https://www.carinsurance.com/images/home/image_formstart.jpg",
+            "logo": false
+          },
+          "age": "June 4, 2025"
+        },
+        {
+          "title": "New York car insurance laws and requirements: What is changing in 2025",
+          "url": "https://www.insurance.com/auto-insurance/new-york-car-insurance-laws/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "NYCM Insurance provides the lowest minimum coverage rates with an average of $420. Mandatory coverage limits are low, and drivers should consider increasing liability limits and adding coverage to be more fully protected.",
+          "page_age": "2025-04-24T00:00:00",
+          "profile": {
+            "name": "Insurance.com",
+            "url": "https://www.insurance.com/auto-insurance/new-york-car-insurance-laws/",
+            "long_name": "insurance.com",
+            "img": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurance.com",
+            "hostname": "www.insurance.com",
+            "favicon": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8",
+            "path": "  \u203a home  \u203a auto insurance  \u203a state minimum requirements  \u203a new york car insurance laws and requirements: what is changing in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/mrmhNyRrsgAKLHytgrM3UtXgPNsZj2C2r9vhaX0aI8s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmNlLmNv/bS9pbWFnZXMvaG9t/ZS9zaXRlLWxvZ28t/ZGFyay5zdmc",
+            "original": "https://www.insurance.com/images/home/site-logo-dark.svg",
+            "logo": true
+          },
+          "age": "April 24, 2025"
+        },
+        {
+          "title": "New York car insurance coverage calculator",
+          "url": "https://www.insurance.com/auto-insurance/new-york-car-insurance-coverage-calculator/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Every state has slightly different car insurance requirements. New York minimum auto insurance coverage requires 25/50/10 in liability coverage to pay for bodily injuries and property damages you cause in an accident.",
+          "page_age": "2025-06-13T00:00:00",
+          "profile": {
+            "name": "Insurance.com",
+            "url": "https://www.insurance.com/auto-insurance/new-york-car-insurance-coverage-calculator/",
+            "long_name": "insurance.com",
+            "img": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurance.com",
+            "hostname": "www.insurance.com",
+            "favicon": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8",
+            "path": "  \u203a home  \u203a auto insurance  \u203a new york car insurance coverage calculator"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/tyEWZBkDK-cqnRCZmjwLP0gh9KYPCCAfohBlkojZEPw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmNlLmNv/bS91cGxvYWRlZGZp/bGVzL21lZGlhL2Nh/ci1pbnN1cmFuY2Ut/My0xLXNjYWxlZC5q/cGc",
+            "original": "https://www.insurance.com/uploadedfiles/media/car-insurance-3-1-scaled.jpg",
+            "logo": false
+          },
+          "age": "June 13, 2025"
+        },
+        {
+          "title": "What is the minimum auto insurance coverage in New York?",
+          "url": "https://www.plymouthrock.com/resources/what-is-the-minimum-auto-insurance-coverage-in-new-york",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "For example, a car insurance policy with the New York minimum insurance limits will be shown as 25/50/10. These numbers indicate the coverage limits for the insurance policy in thousands of dollars.",
+          "page_age": "2025-07-17T18:50:30",
+          "profile": {
+            "name": "Plymouth Rock",
+            "url": "https://www.plymouthrock.com/resources/what-is-the-minimum-auto-insurance-coverage-in-new-york",
+            "long_name": "plymouthrock.com",
+            "img": "https://imgs.search.brave.com/e8fRJ4soirDKsbJ8gUvvviOV0ICPOpaaRTniOAI6RWQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2M1MDUwODc3/ODE1ZDNmOWE5Njdm/MDNlM2QxMzQ0OGUx/NzEzNWI2OGRmOWEy/MmUzZmQyNGJmYmI2/M2IyNWY2ZC93d3cu/cGx5bW91dGhyb2Nr/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "plymouthrock.com",
+            "hostname": "www.plymouthrock.com",
+            "favicon": "https://imgs.search.brave.com/e8fRJ4soirDKsbJ8gUvvviOV0ICPOpaaRTniOAI6RWQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2M1MDUwODc3/ODE1ZDNmOWE5Njdm/MDNlM2QxMzQ0OGUx/NzEzNWI2OGRmOWEy/MmUzZmQyNGJmYmI2/M2IyNWY2ZC93d3cu/cGx5bW91dGhyb2Nr/LmNvbS8",
+            "path": "  \u203a home  \u203a resources  \u203a what is the minimum auto insurance coverage in new york?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/133jGOdGHSg9SssZ3EOaQ5YwlrZZZkBgEFZtuWE3H6s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cGx5bW91dGhyb2Nr/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMi8wNi9ncmVl/bi13YWxscy1wZW9w/bGUtY291Y2guanBn",
+            "original": "https://www.plymouthrock.com/wp-content/uploads/2022/06/green-walls-people-couch.jpg",
+            "logo": false
+          },
+          "age": "July 17, 2025"
+        },
+        {
+          "title": "New York state car insurance: Review your options and how to save",
+          "url": "https://finance.yahoo.com/personal-finance/insurance/article/car-insurance-new-york-181927911.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The minimum coverage amount for a basic policy is $10,000 per accident. Insurance companies sometimes refer to these minimum bodily and property liability limits as \u201c$25,000/$50,000/$10,000\u201d or \u201c25/50/10...",
+          "page_age": "2025-04-29T18:19:27",
+          "profile": {
+            "name": "Yahoo! Finance",
+            "url": "https://finance.yahoo.com/personal-finance/insurance/article/car-insurance-new-york-181927911.html",
+            "long_name": "finance.yahoo.com",
+            "img": "https://imgs.search.brave.com/ZxJbtHZiiBXciqcRfJn3XPiTEOf_XYrooAjrJf1rnag/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjRkNjc1NWY5/MzM5ZjlkMWQyNjM5/OWNiMTQ4ZjcwNTQx/ZjA3ZDE4NDQ2M2Iw/MWZjZjVhOTFlM2Ji/NTE1NWRjZS9maW5h/bmNlLnlhaG9vLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "finance.yahoo.com",
+            "hostname": "finance.yahoo.com",
+            "favicon": "https://imgs.search.brave.com/ZxJbtHZiiBXciqcRfJn3XPiTEOf_XYrooAjrJf1rnag/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjRkNjc1NWY5/MzM5ZjlkMWQyNjM5/OWNiMTQ4ZjcwNTQx/ZjA3ZDE4NDQ2M2Iw/MWZjZjVhOTFlM2Ji/NTE1NWRjZS9maW5h/bmNlLnlhaG9vLmNv/bS8",
+            "path": "  \u203a personal finance  \u203a insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/jVm2YGIXsdgbwc3IIFzmpdArJ8cUxlk8RmGc2lQM868/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zLnlp/bWcuY29tL255L2Fw/aS9yZXMvMS4yL2Ux/V0IwU09PbWwuRXRi/R3lVb1VwelEtLS9Z/WEJ3YVdROWFHbG5h/R3hoYm1SbGNqdDNQ/VEkwTURBN2FEMDRN/REEtL2h0dHBzOi8v/cy55aW1nLmNvbS9v/cy9jcmVhdHItdXBs/b2FkZWQtaW1hZ2Vz/LzIwMjMtMDkvODdh/OGZiNTAtNDhmNS0x/MWVlLWI5YWItNTFi/OTM1YzY5Yzkx",
+            "original": "https://s.yimg.com/ny/api/res/1.2/e1WB0SOOml.EtbGyUoUpzQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTI0MDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2023-09/87a8fb50-48f5-11ee-b9ab-51b935c69c91",
+            "logo": false
+          },
+          "age": "April 29, 2025"
+        },
+        {
+          "title": "Guide to Car Insurance for New York City Drivers [2025]",
+          "url": "https://orlowlaw.com/guide-to-ny-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Summary of required coverage: To legally drive in NY, your auto policy must include liability insurance (25/50/10 minimum), PIP no-fault coverage ($50k min), and uninsured motorist bodily injury coverage (25/50).",
+          "page_age": "2025-06-07T02:31:19",
+          "profile": {
+            "name": "The Orlow Firm",
+            "url": "https://orlowlaw.com/guide-to-ny-car-insurance/",
+            "long_name": "orlowlaw.com",
+            "img": "https://imgs.search.brave.com/HeYx0wSkh0tDImgqFfqtnHj90LZ87O3LejpTXASrkdw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODkzODIzZjZh/NzNjNjVkYzcwODc4/MDA0MWUzMTdjYjVi/M2RiZGU4Y2YwODYz/NjgzNmMwMDg1N2Uz/Nzk0MjZjMC9vcmxv/d2xhdy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "orlowlaw.com",
+            "hostname": "orlowlaw.com",
+            "favicon": "https://imgs.search.brave.com/HeYx0wSkh0tDImgqFfqtnHj90LZ87O3LejpTXASrkdw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODkzODIzZjZh/NzNjNjVkYzcwODc4/MDA0MWUzMTdjYjVi/M2RiZGU4Y2YwODYz/NjgzNmMwMDg1N2Uz/Nzk0MjZjMC9vcmxv/d2xhdy5jb20v",
+            "path": "  \u203a home  \u203a guide to car insurance for new york city drivers [2025]"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Z50XBsCU1vX_iGQ0diV1V4oHAvPqMmfsZPW1XoLYmrg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9vcmxv/d2xhdy5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjUvMDYv/bWluaW11bS1jb3Zl/cmFnZS1yZXF1aXJl/bWVudHMtZm9yLW55/LWNhci1pbnN1cmFu/Y2UtMTAyNHg2ODMu/cG5n",
+            "original": "https://orlowlaw.com/wp-content/uploads/2025/06/minimum-coverage-requirements-for-ny-car-insurance-1024x683.png",
+            "logo": false
+          },
+          "age": "June 7, 2025"
+        },
+        {
+          "title": "Min Car Insurance Coverage in NY | Mazzu Law, PLLC",
+          "url": "https://mazzulaw.com/minimum-car-insurance-coverage/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Liability coverage for bodily injury and property damage is often lumped together and noted as \u201c25/50/10.\u201d \u00b7 What if someone injures you in an auto accident or causes property damage to your vehicle?",
+          "page_age": "2025-02-10T09:45:27",
+          "profile": {
+            "name": "Mazzu Law",
+            "url": "https://mazzulaw.com/minimum-car-insurance-coverage/",
+            "long_name": "mazzulaw.com",
+            "img": "https://imgs.search.brave.com/OwX95pHygKMkt4iIWmo1_v62yuspcWLaqI00K8XpakU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTAzNWQxYWQ5/MzA2YWQ5ZWQwOWE1/ZGJlYzRmYzc4ODE1/MGNmZmQ2OWEwMjE5/ZmRlOWY1YjBmNTdm/NTI1YjEyMC9tYXp6/dWxhdy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "mazzulaw.com",
+            "hostname": "mazzulaw.com",
+            "favicon": "https://imgs.search.brave.com/OwX95pHygKMkt4iIWmo1_v62yuspcWLaqI00K8XpakU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTAzNWQxYWQ5/MzA2YWQ5ZWQwOWE1/ZGJlYzRmYzc4ODE1/MGNmZmQ2OWEwMjE5/ZmRlOWY1YjBmNTdm/NTI1YjEyMC9tYXp6/dWxhdy5jb20v",
+            "path": "  \u203a home  \u203a what is the minimum car insurance coverage you need in new york?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/5gCPcWfx9cKYk4CsLqh6DuFxjTgyRb31LUxGHWUvWig/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9tYXp6/dWxhdy5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjUvMDIv/c2h1dHRlcnN0b2Nr/XzU1NDAzMDkzOC1z/Y2FsZWQud2VicA",
+            "original": "https://mazzulaw.com/wp-content/uploads/2025/02/shutterstock_554030938-scaled.webp",
+            "logo": false
+          },
+          "age": "February 10, 2025"
+        },
+        {
+          "title": "Auto Insurance Requirements in New York for 2025 (NY Minimum Coverage Guide) | FreeAdvice",
+          "url": "https://www.freeadvice.com/insurance/car-insurance-requirements-in-new-york/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Carrying only the New York minimum coverage of 25/50/10 with PIP is legal, but choosing higher limits gives drivers better protection against serious accidents.",
+          "page_age": "2025-05-10T10:09:53",
+          "profile": {
+            "name": "FreeAdvice",
+            "url": "https://www.freeadvice.com/insurance/car-insurance-requirements-in-new-york/",
+            "long_name": "freeadvice.com",
+            "img": "https://imgs.search.brave.com/zEolwdKnj7qMwLKZ1CZ_H4bwiQdYATaTCLc9MOMi4AI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWQ4ZTk1YjM4/ZDZlODhhOGE1MzA1/YWM3NjVhOWFjZTU0/ZGEwYTM3NDU4MDc2/NmNjMzBiZGY4YTJh/YWE4ZjY0YS93d3cu/ZnJlZWFkdmljZS5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "freeadvice.com",
+            "hostname": "www.freeadvice.com",
+            "favicon": "https://imgs.search.brave.com/zEolwdKnj7qMwLKZ1CZ_H4bwiQdYATaTCLc9MOMi4AI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWQ4ZTk1YjM4/ZDZlODhhOGE1MzA1/YWM3NjVhOWFjZTU0/ZGEwYTM3NDU4MDc2/NmNjMzBiZGY4YTJh/YWE4ZjY0YS93d3cu/ZnJlZWFkdmljZS5j/b20v",
+            "path": "  \u203a home  \u203a insurance  \u203a auto insurance center  \u203a auto insurance articles  \u203a buying car insurance - what to know before you buy"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/aOyK8bOcpTQ3bOwZCFaWSdbbQumiYjWA6HX8Etc-MfI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZWFkdmljZS5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjQvMDUvQXV0by1J/bnN1cmFuY2UtUmVx/dWlyZW1lbnRzLWlu/LU5ldy1Zb3JrLnBu/Zw",
+            "original": "https://www.freeadvice.com/wp-content/uploads/2024/05/Auto-Insurance-Requirements-in-New-York.png"
+          },
+          "age": "May 10, 2025"
+        },
+        {
+          "title": "New York Auto Insurance Requirements & Laws Explained",
+          "url": "https://clovered.com/auto-insurance/new-york/laws-and-requirements/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Residents must maintain a minimum of at least $25,000 in bodily injury liability per person, $50,000 in bodily injury liability per accident, $10,000 in property damage liability per accident (25/50/10 liability coverage), $25,000 in uninsured ...",
+          "page_age": "2025-05-12T13:54:51",
+          "profile": {
+            "name": "Clovered",
+            "url": "https://clovered.com/auto-insurance/new-york/laws-and-requirements/",
+            "long_name": "clovered.com",
+            "img": "https://imgs.search.brave.com/FMvsDfAYLtW0L_vkIDwl109FIUd01bit67bRxDQuYXk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDY2ZjEyMWY2/MDhiYTczNDdiZDFm/NTcyMDYwMGY5Zjgx/M2JhYTM2NmQ1NjA5/M2U3ZDlhYmEyODZl/MDQwYWVjOC9jbG92/ZXJlZC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "clovered.com",
+            "hostname": "clovered.com",
+            "favicon": "https://imgs.search.brave.com/FMvsDfAYLtW0L_vkIDwl109FIUd01bit67bRxDQuYXk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDY2ZjEyMWY2/MDhiYTczNDdiZDFm/NTcyMDYwMGY5Zjgx/M2JhYTM2NmQ1NjA5/M2U3ZDlhYmEyODZl/MDQwYWVjOC9jbG92/ZXJlZC5jb20v",
+            "path": "  \u203a articles  \u203a new york auto insurance requirements & laws explained"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ocAfld8MsI8VUTJSYZG4rHbdMfsBAMJPH68536Kd9WQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jbG92/ZXJlZC5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMTAv/TmV3LVlvcmstQXV0/by1IZXJvLUltYWdl/LTAxLW1pbi53ZWJw",
+            "original": "https://clovered.com/wp-content/uploads/2023/10/New-York-Auto-Hero-Image-01-min.webp",
+            "logo": false
+          },
+          "age": "May 12, 2025"
+        },
+        {
+          "title": "New York Auto Insurance Laws: What Drivers Must Know for 2026",
+          "url": "https://nicrisinsurance.com/new-york-auto-insurance-laws-what-drivers-must-know/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "New York has established minimum liability coverage limits that all drivers are required to meet. This is commonly referred to as \u201c25/50/10 coverage,\u201d which breaks down as follows:",
+          "page_age": "2025-10-29T04:39:21",
+          "profile": {
+            "name": "Nicrisinsurance",
+            "url": "https://nicrisinsurance.com/new-york-auto-insurance-laws-what-drivers-must-know/",
+            "long_name": "nicrisinsurance.com",
+            "img": "https://imgs.search.brave.com/UQ3m5fpAY-Bm75LqCrsFhw0AcMA3oM_OMJSWKA4cbDM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2ZjNmViMzQ2/ZjZkOTZhNDAwNTVi/NzFmYjUzYjhiMDJi/NDdmOWRkZGIxOTc0/ZjA3MzU3NDIyN2Y0/ZTU5NGI0YS9uaWNy/aXNpbnN1cmFuY2Uu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "nicrisinsurance.com",
+            "hostname": "nicrisinsurance.com",
+            "favicon": "https://imgs.search.brave.com/UQ3m5fpAY-Bm75LqCrsFhw0AcMA3oM_OMJSWKA4cbDM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2ZjNmViMzQ2/ZjZkOTZhNDAwNTVi/NzFmYjUzYjhiMDJi/NDdmOWRkZGIxOTc0/ZjA3MzU3NDIyN2Y0/ZTU5NGI0YS9uaWNy/aXNpbnN1cmFuY2Uu/Y29tLw",
+            "path": "  \u203a home  \u203a new york auto insurance laws: what drivers must know for 2026"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/96NH29_XcNLm6ZknFjI2VlA8uualr_tm4pPhxVHJ-b4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9uaWNy/aXNpbnN1cmFuY2Uu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI1LzEwL25ldy15/b3JrLWF1dG8taW5z/dXJhbmNlLWxhd3Mt/d2hhdC1kcml2ZXJz/LW11c3Qta25vdy5q/cGc",
+            "original": "https://nicrisinsurance.com/wp-content/uploads/2025/10/new-york-auto-insurance-laws-what-drivers-must-know.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Car Insurance in New York (2025) - Clovered.com",
+          "url": "https://clovered.com/auto-insurance/new-york/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "A minimum coverage policy in the state has at least $25,000 in bodily injury liability per person, $50,000 in bodily injury liability per accident, $10,000 in property damage liability per accident (25/50/10 liability coverage), $25,000 in uninsured ...",
+          "page_age": "2025-01-29T18:15:55",
+          "profile": {
+            "name": "Clovered",
+            "url": "https://clovered.com/auto-insurance/new-york/",
+            "long_name": "clovered.com",
+            "img": "https://imgs.search.brave.com/FMvsDfAYLtW0L_vkIDwl109FIUd01bit67bRxDQuYXk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDY2ZjEyMWY2/MDhiYTczNDdiZDFm/NTcyMDYwMGY5Zjgx/M2JhYTM2NmQ1NjA5/M2U3ZDlhYmEyODZl/MDQwYWVjOC9jbG92/ZXJlZC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "clovered.com",
+            "hostname": "clovered.com",
+            "favicon": "https://imgs.search.brave.com/FMvsDfAYLtW0L_vkIDwl109FIUd01bit67bRxDQuYXk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDY2ZjEyMWY2/MDhiYTczNDdiZDFm/NTcyMDYwMGY5Zjgx/M2JhYTM2NmQ1NjA5/M2U3ZDlhYmEyODZl/MDQwYWVjOC9jbG92/ZXJlZC5jb20v",
+            "path": "  \u203a articles  \u203a car insurance in new york (2025)"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ocAfld8MsI8VUTJSYZG4rHbdMfsBAMJPH68536Kd9WQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jbG92/ZXJlZC5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMTAv/TmV3LVlvcmstQXV0/by1IZXJvLUltYWdl/LTAxLW1pbi53ZWJw",
+            "original": "https://clovered.com/wp-content/uploads/2023/10/New-York-Auto-Hero-Image-01-min.webp",
+            "logo": false
+          },
+          "age": "January 29, 2025"
+        },
+        {
+          "title": "New York Car Insurance Laws | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/new-york-car-insurance-laws/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "You may see New York\u2019s required ... is shorthand for $25,000 of bodily injury liability per person, $50,000 of bodily injury liability per accident and $10,000 of property damage liability per accident....",
+          "page_age": "2025-02-06T15:46:30",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/new-york-car-insurance-laws/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/4j9bv8iG53R0jVRtu2J0RESk4U_CbYMeYirDu8Wm3rk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/LzIwMjAvMTIvMTcx/NTU1MDcvbmV3LXlv/cmstY2FyLWluc3Vy/YW5jZS1sYXdzLWZl/YXR1cmVkLmpwZw",
+            "original": "https://www.bankrate.com/2020/12/17155507/new-york-car-insurance-laws-featured.jpg",
+            "logo": false
+          },
+          "age": "February 6, 2025"
+        },
+        {
+          "title": "New York Car Insurance Laws 2025 (Required Coverage in NY)\u00bb Expert Insurance Reviews",
+          "url": "https://www.expertinsurancereviews.com/new-york-car-insurance-laws/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "This means bodily injury liability coverage of $25,000 per person/$50,000 per accident and property damage liability coverage of $10,000 per accident. New York Car Insurance Minimum Coverage Requirements",
+          "page_age": "2025-04-30T07:22:51",
+          "profile": {
+            "name": "Expertinsurancereviews",
+            "url": "https://www.expertinsurancereviews.com/new-york-car-insurance-laws/",
+            "long_name": "expertinsurancereviews.com",
+            "img": "https://imgs.search.brave.com/7_8P2l_wN9mNyYLI3ehSaXhEbUZMpmnBE8VWo6B_okc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGE4YTJmNTYw/ODZjZGUzNWUxZTQz/OWEwNDVjNTliOGJh/NDYxMWVmOTUwYzJj/OTEwYzM1Yjg3ZjBj/MzAyMGIzMi93d3cu/ZXhwZXJ0aW5zdXJh/bmNlcmV2aWV3cy5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "expertinsurancereviews.com",
+            "hostname": "www.expertinsurancereviews.com",
+            "favicon": "https://imgs.search.brave.com/7_8P2l_wN9mNyYLI3ehSaXhEbUZMpmnBE8VWo6B_okc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGE4YTJmNTYw/ODZjZGUzNWUxZTQz/OWEwNDVjNTliOGJh/NDYxMWVmOTUwYzJj/OTEwYzM1Yjg3ZjBj/MzAyMGIzMi93d3cu/ZXhwZXJ0aW5zdXJh/bmNlcmV2aWV3cy5j/b20v",
+            "path": "  \u203a home  \u203a best car insurance companies  \u203a car insurance requirements"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ceeeses_tRFzlzzKp_d62rwX5zutbuU0ar-jYtbKEyI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vcXVvdGVsbGMv/aW1hZ2UvdXBsb2Fk/L2luc3VyYW5jZS1z/aXRlLWltYWdlcy9l/eHBlcnRpbnN1cmFu/Y2VyZXZpZXdzLWxp/dmUvMjAxMi8wNi9s/b2dvLXZlcnRpY2Fs/LnBuZw",
+            "original": "https://res.cloudinary.com/quotellc/image/upload/insurance-site-images/expertinsurancereviews-live/2012/06/logo-vertical.png",
+            "logo": true
+          },
+          "age": "April 30, 2025"
+        },
+        {
+          "title": "Guide to Auto Insurance in NYC by Car Accident Attorney Queens",
+          "url": "https://www.gabriellegal.com/blogs/minimum-auto-insurance-coverage-nyc-car-accident-attorney-queens",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The main purpose of liability insurance is to compensate for the damages and injuries suffered by the other party. Liability insurance in New York is often referred to in shorthand as the \u201825/50/10\u2019 because ...",
+          "page_age": "2025-10-10T00:00:00",
+          "profile": {
+            "name": "Gabriellegal",
+            "url": "https://www.gabriellegal.com/blogs/minimum-auto-insurance-coverage-nyc-car-accident-attorney-queens",
+            "long_name": "gabriellegal.com",
+            "img": "https://imgs.search.brave.com/BFmeIc7ue8l_WMOmYE1GggS7dOLrqzNWsIcqDulH9KI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDExODE5NDll/NGMyYjllZTE1NTY3/YWRiZDg5MzQyYzBh/ZmQ4ZTc4NDNiYWQw/ZDQxMmIwZTBlOWRm/YWFlZDMyYi93d3cu/Z2FicmllbGxlZ2Fs/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "gabriellegal.com",
+            "hostname": "www.gabriellegal.com",
+            "favicon": "https://imgs.search.brave.com/BFmeIc7ue8l_WMOmYE1GggS7dOLrqzNWsIcqDulH9KI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDExODE5NDll/NGMyYjllZTE1NTY3/YWRiZDg5MzQyYzBh/ZmQ4ZTc4NDNiYWQw/ZDQxMmIwZTBlOWRm/YWFlZDMyYi93d3cu/Z2FicmllbGxlZ2Fs/LmNvbS8",
+            "path": "\u203a blogs  \u203a minimum-auto-insurance-coverage-nyc-car-accident-attorney-queens"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/BFUegjPMsbFqjng_DL53L3LOtUl-UWiQcwwqUxd1o3M/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvZC53ZWJzaXRl/LWZpbGVzLmNvbS82/NWIwOTE3MWI5NTUy/NjNkYjcwMGNlZWMv/NjhkZjU1YzllYjkx/ZTUxM2ViNmZmNGRk/X0NhciUyMGFjY2lk/ZW50JTIwYXR0b3Ju/ZXklMjBRdWVlbnMu/anBn",
+            "original": "https://cdn.prod.website-files.com/65b09171b955263db700ceec/68df55c9eb91e513eb6ff4dd_Car%20accident%20attorney%20Queens.jpg",
+            "logo": false
+          },
+          "age": "1 month ago"
+        },
+        {
+          "title": "New York Car Insurance Requirements for 2025 (Minimum Coverage in NY) | US Insurance Agents",
+          "url": "https://www.usinsuranceagents.com/new-york-car-insurance-requirements/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "New York car insurance requirements mandate a minimum of 25/50/10 coverage, which includes $25,000 bodily injury liability per person, $50,000 per accident, and $10,000 for property damage.",
+          "page_age": "2025-01-30T22:44:31",
+          "profile": {
+            "name": "US Insurance Agents",
+            "url": "https://www.usinsuranceagents.com/new-york-car-insurance-requirements/",
+            "long_name": "usinsuranceagents.com",
+            "img": "https://imgs.search.brave.com/unmDQgTHhBkj5GICntEXikQ6111y84wQZvB2XH5fsUE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTMzYzYxYjBl/MjZjNzcyY2MxOTc3/MGQzYTJkZDRlZjNj/OWM1MWI4ZmE4MDY5/MDNmNjFjYjg3ODgz/ZjcwMzFjZC93d3cu/dXNpbnN1cmFuY2Vh/Z2VudHMuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "usinsuranceagents.com",
+            "hostname": "www.usinsuranceagents.com",
+            "favicon": "https://imgs.search.brave.com/unmDQgTHhBkj5GICntEXikQ6111y84wQZvB2XH5fsUE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTMzYzYxYjBl/MjZjNzcyY2MxOTc3/MGQzYTJkZDRlZjNj/OWM1MWI4ZmE4MDY5/MDNmNjFjYjg3ODgz/ZjcwMzFjZC93d3cu/dXNpbnN1cmFuY2Vh/Z2VudHMuY29tLw",
+            "path": "  \u203a home  \u203a new york car insurance requirements for 2025 (minimum coverage in ny)"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/hDFEdYBDOkSSo9HIcIk3epeEu--RCbI6iKOcioubCxo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dXNpbnN1cmFuY2Vh/Z2VudHMuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIyLzAy/L2Q0YTVlOTE2LXVz/aWEtbG9nby1kYXJr/LnN2Zw",
+            "original": "https://www.usinsuranceagents.com/wp-content/uploads/2022/02/d4a5e916-usia-logo-dark.svg",
+            "logo": true
+          },
+          "age": "January 30, 2025"
+        },
+        {
+          "title": "Auto Insurance Requirements In New York State - Smart Insurance Solutions",
+          "url": "https://nginx.iws.edu/insurance/auto-insurance-requirements-in-new-york-state.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Auto Insurance Requirements In ... your vehicle registration and your driver license. In new york, drivers must carry a minimum of 25/50/10 of auto....",
+          "page_age": "2024-12-19T11:41:50",
+          "profile": {
+            "name": "Iws",
+            "url": "https://nginx.iws.edu/insurance/auto-insurance-requirements-in-new-york-state.html",
+            "long_name": "nginx.iws.edu",
+            "img": "https://imgs.search.brave.com/m4qDQ_XFbZYfXSSW0N1YUD35U_o9-zNQFbAnAXC8m8Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWM1MTc2Y2Nk/ZjVhZGZiZjJjNDY2/MmQyNGM0ZDlhNzI2/N2I2YmNkNjc3ZDY4/NTgyZTYxZmY2ZjA2/Y2M5NmEwNy9uZ2lu/eC5pd3MuZWR1Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "nginx.iws.edu",
+            "hostname": "nginx.iws.edu",
+            "favicon": "https://imgs.search.brave.com/m4qDQ_XFbZYfXSSW0N1YUD35U_o9-zNQFbAnAXC8m8Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWM1MTc2Y2Nk/ZjVhZGZiZjJjNDY2/MmQyNGM0ZDlhNzI2/N2I2YmNkNjc3ZDY4/NTgyZTYxZmY2ZjA2/Y2M5NmEwNy9uZ2lu/eC5pd3MuZWR1Lw",
+            "path": "\u203a insurance  \u203a auto-insurance-requirements-in-new-york-state.html"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/yeMMpd2nd-99isAaPLqitHUGYM8OcvDdGoT3k9N__Hk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP3E9YXV0byUy/MGluc3VyYW5jZSUy/MHJlcXVpcmVtZW50/cyUyMGluJTIwbmV3/JTIweW9yayUyMHN0/YXRl",
+            "original": "https://tse1.mm.bing.net/th?q=auto%20insurance%20requirements%20in%20new%20york%20state",
+            "logo": false
+          },
+          "age": "December 19, 2024"
+        },
+        {
+          "title": "What Is the Minimum Auto Insurance Coverage in New York?",
+          "url": "https://mazzulaw.com/what-is-the-minimum-auto-insurance-coverage-in-new-york/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Often noted as 25/50/10, it denotes the $25,000 of bodily injury liability for each person, $50,000 of bodily injury liability coverage per accident, and $10,000 of property damage liability coverage per accident.",
+          "page_age": "2025-02-05T14:36:06",
+          "profile": {
+            "name": "Mazzu Law",
+            "url": "https://mazzulaw.com/what-is-the-minimum-auto-insurance-coverage-in-new-york/",
+            "long_name": "mazzulaw.com",
+            "img": "https://imgs.search.brave.com/OwX95pHygKMkt4iIWmo1_v62yuspcWLaqI00K8XpakU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTAzNWQxYWQ5/MzA2YWQ5ZWQwOWE1/ZGJlYzRmYzc4ODE1/MGNmZmQ2OWEwMjE5/ZmRlOWY1YjBmNTdm/NTI1YjEyMC9tYXp6/dWxhdy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "mazzulaw.com",
+            "hostname": "mazzulaw.com",
+            "favicon": "https://imgs.search.brave.com/OwX95pHygKMkt4iIWmo1_v62yuspcWLaqI00K8XpakU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTAzNWQxYWQ5/MzA2YWQ5ZWQwOWE1/ZGJlYzRmYzc4ODE1/MGNmZmQ2OWEwMjE5/ZmRlOWY1YjBmNTdm/NTI1YjEyMC9tYXp6/dWxhdy5jb20v",
+            "path": "  \u203a home  \u203a what is the minimum auto insurance coverage in new york?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/9SlToOS9IPVN4_GESOlCUVfWj4HgC8MCCaPA2zQteFs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9tYXp6/dWxhdy5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjUvMDIv/c2h1dHRlcnN0b2Nr/XzIzMzY4MjgyMTkt/c2NhbGVkLndlYnA",
+            "original": "https://mazzulaw.com/wp-content/uploads/2025/02/shutterstock_2336828219-scaled.webp",
+            "logo": false
+          },
+          "age": "February 5, 2025"
+        },
+        {
+          "title": "New York State Auto Insurance Requirements - Best Insurance Providers",
+          "url": "https://phpmyadmin.muycomputerpro.com/insurance/new-york-state-auto-insurance-requirements.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "New york car insurance requirements mandate that all drivers carry a minimum coverage of 25/50/10. Every driver must have auto liability. Why do i need liability insurance on my car, truck, or motorcycle?",
+          "page_age": "2025-06-29T12:37:33",
+          "profile": {
+            "name": "Muycomputerpro",
+            "url": "https://phpmyadmin.muycomputerpro.com/insurance/new-york-state-auto-insurance-requirements.html",
+            "long_name": "phpmyadmin.muycomputerpro.com",
+            "img": "https://imgs.search.brave.com/NKSSlKXNWGwNnD4SOIuVxcuwYGr96e7NF9kQIxszCQY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjcwNDQ0NjA2/NDRkZDM5Y2RlNTBl/OTJiMzIzMDU1MDc4/MTEwNzI1Zjc0MTMy/NzY4ODVkMjVlZWM0/ZTViMjg4Yi9waHBt/eWFkbWluLm11eWNv/bXB1dGVycHJvLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "phpmyadmin.muycomputerpro.com",
+            "hostname": "phpmyadmin.muycomputerpro.com",
+            "favicon": "https://imgs.search.brave.com/NKSSlKXNWGwNnD4SOIuVxcuwYGr96e7NF9kQIxszCQY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjcwNDQ0NjA2/NDRkZDM5Y2RlNTBl/OTJiMzIzMDU1MDc4/MTEwNzI1Zjc0MTMy/NzY4ODVkMjVlZWM0/ZTViMjg4Yi9waHBt/eWFkbWluLm11eWNv/bXB1dGVycHJvLmNv/bS8",
+            "path": "\u203a insurance  \u203a new-york-state-auto-insurance-requirements.html"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/vSx1xocTeiNHJuQiKJx4NXhAYdDUmgyymVBAcMfbocQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP3E9bmV3JTIw/eW9yayUyMHN0YXRl/JTIwYXV0byUyMGlu/c3VyYW5jZSUyMHJl/cXVpcmVtZW50cw",
+            "original": "https://tse1.mm.bing.net/th?q=new%20york%20state%20auto%20insurance%20requirements",
+            "logo": false
+          },
+          "age": "June 29, 2025"
+        },
+        {
+          "title": "How much is insurance in New York? Average rates in 2025",
+          "url": "https://www.carinsurance.com/state/how-much-is-car-insurance-in-new-york/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Minimum liability coverage in New York costs around $731 annually for limits of 25/50/10, while liability-only coverage costs $827 per year for limits of 50/100/50.",
+          "page_age": "2025-09-10T00:00:00",
+          "profile": {
+            "name": "Carinsurance.com",
+            "url": "https://www.carinsurance.com/state/how-much-is-car-insurance-in-new-york/",
+            "long_name": "carinsurance.com",
+            "img": "https://imgs.search.brave.com/KCetfn_EHIlwz5sy6dTvSdGjOen9Qf_QsSICK4hYUH8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDdmYWUzNjM0/MGU0ODEwNzI3ZWVj/NjEwYmQ2MmE5NTZh/N2E2NDRhODA2YjRj/NjBlNzc2OTBiYzkz/YzA3ZGQzOC93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "carinsurance.com",
+            "hostname": "www.carinsurance.com",
+            "favicon": "https://imgs.search.brave.com/KCetfn_EHIlwz5sy6dTvSdGjOen9Qf_QsSICK4hYUH8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDdmYWUzNjM0/MGU0ODEwNzI3ZWVj/NjEwYmQ2MmE5NTZh/N2E2NDRhODA2YjRj/NjBlNzc2OTBiYzkz/YzA3ZGQzOC93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS8",
+            "path": "  \u203a car insurance homepage  \u203a car insurance by state  \u203a how much is car insurance in new york?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/UgJ_Y_LrX0rGkmLc_m68pIngh_lOS5ECjcKCnUUN0Ks/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS9pbWFnZXMv/aG9tZS9pbWFnZV9m/b3Jtc3RhcnQuanBn",
+            "original": "https://www.carinsurance.com/images/home/image_formstart.jpg",
+            "logo": false
+          },
+          "age": "September 10, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

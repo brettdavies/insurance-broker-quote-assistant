@@ -1,0 +1,800 @@
+{
+  "websearch_id": "websearch_fgqyczxmeok668clz788nnd0",
+  "search_id": "search_ow12sj9n3xrx20rdgiaerct0",
+  "timestamp": "2025-11-07T12:28:47.722809",
+  "startedAt": "2025-11-07T12:28:47.722809",
+  "completedAt": "2025-11-07T12:28:49.768123",
+  "durationSeconds": 2.05,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"auto insurance\" typical cost [state] monthly",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"auto insurance\" typical cost [state] monthly",
+      "show_strict_warning": false,
+      "cleaned": "auto insurance typical cost [state] monthly",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "auto insurance typical cost [state] monthly"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Average Cost of Car Insurance in the US for 2025",
+          "url": "https://www.experian.com/blogs/ask-experian/average-cost-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The national average cost of full coverage car insurance is $2,899 annually or $242 per month. The cheapest states for car insurance are Vermont, where a full coverage policy costs an average of $1,003 annually ($84 per month), followed by Maine ...",
+          "page_age": "2025-10-15T05:30:10",
+          "profile": {
+            "name": "Experian",
+            "url": "https://www.experian.com/blogs/ask-experian/average-cost-car-insurance/",
+            "long_name": "experian.com",
+            "img": "https://imgs.search.brave.com/Kd5ZJX6uDioWFoKktbx3echvXfRsNSuzZed0HDR5aiw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDU3YTc1NTdk/MzRhMDkwNjEyODVm/ODgyMzUwZDliOGE2/Y2Q1ODZjYmU5OWU2/MTA4OTk5NzI1NjE0/ZjE0MGJiNS93d3cu/ZXhwZXJpYW4uY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "experian.com",
+            "hostname": "www.experian.com",
+            "favicon": "https://imgs.search.brave.com/Kd5ZJX6uDioWFoKktbx3echvXfRsNSuzZed0HDR5aiw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDU3YTc1NTdk/MzRhMDkwNjEyODVm/ODgyMzUwZDliOGE2/Y2Q1ODZjYmU5OWU2/MTA4OTk5NzI1NjE0/ZjE0MGJiNS93d3cu/ZXhwZXJpYW4uY29t/Lw",
+            "path": "  \u203a home  \u203a insurance  \u203a auto insurance  \u203a average cost of car insurance in the us for 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/y0dtwdfhCc_dJcsX0371_oU3O-E3auNTpJtcvY1U-S4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/ZXhwZXJpYW4uY29t/L2Jsb2dzL2Fzay1l/eHBlcmlhbi93cC1j/b250ZW50L3VwbG9h/ZHMvYXZlcmFnZS1j/b3N0LWF1dG8taW5z/dXJhbmNlLmpwZw",
+            "original": "https://www.experian.com/blogs/ask-experian/wp-content/uploads/average-cost-auto-insurance.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "Car Insurance Rates by State for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/states/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "While Alabama experiences its fair ... than the national average with an average cost of full coverage in Alabama sitting at $2,155 per year....",
+          "page_age": "2025-11-06T23:45:39",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/states/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/zlUOzR1BVAnhcrUq5nSR2e_z0UOWwBSCQeetBW1X5EA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvODAw/eDQ1MC82ZTNjZmY3/OGE1L3N0YXRlLXJh/dGVzLTgwMC00NTAt/MS5qcGVn",
+            "original": "https://a.storyblok.com/f/102997/800x450/6e3cff78a5/state-rates-800-450-1.jpeg",
+            "logo": false
+          },
+          "age": "19 hours ago"
+        },
+        {
+          "title": "Auto Insurance Rates by State in 2025 (+How to Save!) | Quote.com",
+          "url": "https://www.quote.com/auto-insurance/cost-by-state/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Arkansas is one of the most affordable places when comparing the lowest car insurance rates by state, with minimum auto insurance averaging $38 per month (Read More: 10 Best Auto Insurance Companies in Arkansas).",
+          "page_age": "2025-11-06T19:34:43",
+          "profile": {
+            "name": "Quote.com",
+            "url": "https://www.quote.com/auto-insurance/cost-by-state/",
+            "long_name": "quote.com",
+            "img": "https://imgs.search.brave.com/kddem-PxrpzYtwfpKjL3Fo0CZWOxFjL--pzkA-7OGdI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODExNWFmZmUz/MjljOGY0NjU3YTkw/NGU5MWVjMDVlNTAz/ZTA4ZDIwN2JjMzUw/ZjBlYmVhZTExNGZl/YzliNjE1NS93d3cu/cXVvdGUuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "quote.com",
+            "hostname": "www.quote.com",
+            "favicon": "https://imgs.search.brave.com/kddem-PxrpzYtwfpKjL3Fo0CZWOxFjL--pzkA-7OGdI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODExNWFmZmUz/MjljOGY0NjU3YTkw/NGU5MWVjMDVlNTAz/ZTA4ZDIwN2JjMzUw/ZjBlYmVhZTExNGZl/YzliNjE1NS93d3cu/cXVvdGUuY29tLw",
+            "path": "  \u203a home  \u203a best car insurance companies  \u203a auto insurance by state"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/74ZeAl8etctzIPO-xLsZVexBl8CJ2KPJSnHGpECl8Js/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cXVvdGUuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI1LzEw/L0F1dG8tSW5zdXJh/bmNlLVJhdGVzLWJ5/LVN0YXRlLnBuZw",
+            "original": "https://www.quote.com/wp-content/uploads/2025/10/Auto-Insurance-Rates-by-State.png",
+            "logo": false
+          },
+          "age": "1 day ago"
+        },
+        {
+          "title": "Car Insurance Rates By State For 2025 \u2013 Forbes Advisor",
+          "url": "https://www.forbes.com/advisor/car-insurance/rates-by-state/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The national average cost for car ... state for car insurance and Vermont is the cheapest. ... Auto insurance rates as low as $29/mo. Auto insurance rates as low as $29/mo....",
+          "page_age": "2025-10-30T19:29:11",
+          "profile": {
+            "name": "Forbes Advisor",
+            "url": "https://www.forbes.com/advisor/car-insurance/rates-by-state/",
+            "long_name": "forbes.com",
+            "img": "https://imgs.search.brave.com/qg6-E4bARcUpS7pHuJ2FXSeQ2YI51iPfbI8wpUBx9tg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY0NWFiMTBk/YmY2MjkyN2M0MTI0/NmRkYTM3ZjQzMGJj/Y2Q2MTBkYjVmZjA2/OGRjODBhMTM1M2Yx/YmRlZTA1NS93d3cu/Zm9yYmVzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "forbes.com",
+            "hostname": "www.forbes.com",
+            "favicon": "https://imgs.search.brave.com/qg6-E4bARcUpS7pHuJ2FXSeQ2YI51iPfbI8wpUBx9tg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY0NWFiMTBk/YmY2MjkyN2M0MTI0/NmRkYTM3ZjQzMGJj/Y2Q2MTBkYjVmZjA2/OGRjODBhMTM1M2Yx/YmRlZTA1NS93d3cu/Zm9yYmVzLmNvbS8",
+            "path": "\u203a advisor  \u203a car-insurance  \u203a rates-by-state"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/qF-wz4niQf86DyD8WdXJ-pOiw0TI_oKfrb0fKDXKIKI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Zm9yYmVzLmNvbS9h/ZHZpc29yL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI1LzAxL2lt/YWdlMS04LTkwMHg1/MTAuanBn",
+            "original": "https://www.forbes.com/advisor/wp-content/uploads/2025/01/image1-8-900x510.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Average Cost Of Car Insurance 2025 \u2013 Forbes Advisor",
+          "url": "https://www.forbes.com/advisor/car-insurance/average-cost-of-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The average cost of car insurance is $179 a month for a full coverage policy, according to Forbes Advisor\u2019s analysis. The average cost of state-minimum liability car insurance is $53 a month.",
+          "page_age": "2025-10-29T21:37:30",
+          "profile": {
+            "name": "Forbes Advisor",
+            "url": "https://www.forbes.com/advisor/car-insurance/average-cost-of-car-insurance/",
+            "long_name": "forbes.com",
+            "img": "https://imgs.search.brave.com/qg6-E4bARcUpS7pHuJ2FXSeQ2YI51iPfbI8wpUBx9tg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY0NWFiMTBk/YmY2MjkyN2M0MTI0/NmRkYTM3ZjQzMGJj/Y2Q2MTBkYjVmZjA2/OGRjODBhMTM1M2Yx/YmRlZTA1NS93d3cu/Zm9yYmVzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "forbes.com",
+            "hostname": "www.forbes.com",
+            "favicon": "https://imgs.search.brave.com/qg6-E4bARcUpS7pHuJ2FXSeQ2YI51iPfbI8wpUBx9tg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY0NWFiMTBk/YmY2MjkyN2M0MTI0/NmRkYTM3ZjQzMGJj/Y2Q2MTBkYjVmZjA2/OGRjODBhMTM1M2Yx/YmRlZTA1NS93d3cu/Zm9yYmVzLmNvbS8",
+            "path": "\u203a advisor  \u203a car-insurance  \u203a average-cost-of-car-insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/RUhRB3bHvfz3FS1_fasj8X1kWsPcQ8iuuRTdTNVcuzY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Zm9yYmVzLmNvbS9h/ZHZpc29yL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI1LzAxL2lt/YWdlMTctOTAweDUx/MC5qcGc",
+            "original": "https://www.forbes.com/advisor/wp-content/uploads/2025/01/image17-900x510.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Car Insurance Rates by State: 2025 Comparison - ValuePenguin",
+          "url": "https://www.valuepenguin.com/car-insurance-by-state",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Nevada is the most expensive state for car insurance. Nevada drivers pay an average of $286 per month for full coverage insurance. Maine has the lowest car insurance rates, at $103 per month for full coverage.",
+          "page_age": "2025-08-27T13:08:24",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/car-insurance-by-state",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a car-insurance-by-state"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/qJRVGe4nrRCB_hlQTffpCwE8RFBnXAaVIYEdIkf3_Qo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL3lvdW5nLW1h/bGUtZHJpdmVyX3Az/Y20ycQ",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/young-male-driver_p3cm2q",
+            "logo": false
+          },
+          "age": "August 27, 2025"
+        },
+        {
+          "title": "Average Cost of Car Insurance in California for 2025",
+          "url": "https://www.experian.com/blogs/ask-experian/average-cost-car-insurance-california/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The average cost of car insurance in California is $2,110 annually or $176 per month, according to Experian data from September 2025 and based on policies sold through our automotive insurance marketplace.",
+          "page_age": "2025-10-14T06:30:19",
+          "profile": {
+            "name": "Experian",
+            "url": "https://www.experian.com/blogs/ask-experian/average-cost-car-insurance-california/",
+            "long_name": "experian.com",
+            "img": "https://imgs.search.brave.com/Kd5ZJX6uDioWFoKktbx3echvXfRsNSuzZed0HDR5aiw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDU3YTc1NTdk/MzRhMDkwNjEyODVm/ODgyMzUwZDliOGE2/Y2Q1ODZjYmU5OWU2/MTA4OTk5NzI1NjE0/ZjE0MGJiNS93d3cu/ZXhwZXJpYW4uY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "experian.com",
+            "hostname": "www.experian.com",
+            "favicon": "https://imgs.search.brave.com/Kd5ZJX6uDioWFoKktbx3echvXfRsNSuzZed0HDR5aiw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDU3YTc1NTdk/MzRhMDkwNjEyODVm/ODgyMzUwZDliOGE2/Y2Q1ODZjYmU5OWU2/MTA4OTk5NzI1NjE0/ZjE0MGJiNS93d3cu/ZXhwZXJpYW4uY29t/Lw",
+            "path": "  \u203a home  \u203a insurance  \u203a auto insurance  \u203a average cost of car insurance in california for 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Cf2-p6PcJO5Mc92hoVPKg01QkFBWyRQJfwIWoUot9_g/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/ZXhwZXJpYW4uY29t/L2Jsb2dzL2Fzay1l/eHBlcmlhbi93cC1j/b250ZW50L3VwbG9h/ZHMvYXZlcmFnZS1j/b3N0LWNhci1pbnN1/cmFuY2UtY2FsaWZv/cm5pYS5qcGc",
+            "original": "https://www.experian.com/blogs/ask-experian/wp-content/uploads/average-cost-car-insurance-california.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "The Average Cost of Car Insurance in All 50 States | The Motley Fool",
+          "url": "https://www.fool.com/money/research/average-cost-car-insurance-50-states/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The cost of minimum and standard ... cost of car insurance in 2023 was $3,017, according to Quadrant. That amounts to about $251 a month....",
+          "page_age": "2025-02-12T19:24:23",
+          "profile": {
+            "name": "The Motley Fool",
+            "url": "https://www.fool.com/money/research/average-cost-car-insurance-50-states/",
+            "long_name": "fool.com",
+            "img": "https://imgs.search.brave.com/WApw2kto_pU_fkDjG9VP20wwEs08ki09eil7b1Kc_aw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWYzZjY3ZTJj/NWQzYjNhNTgxZTBl/ZDUxMTNmNjk1MTMz/ZWFjYWM5NTM4YzAx/Y2JmZmJjMDAyMWE4/NzIzMWRmZi93d3cu/Zm9vbC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "fool.com",
+            "hostname": "www.fool.com",
+            "favicon": "https://imgs.search.brave.com/WApw2kto_pU_fkDjG9VP20wwEs08ki09eil7b1Kc_aw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWYzZjY3ZTJj/NWQzYjNhNTgxZTBl/ZDUxMTNmNjk1MTMz/ZWFjYWM5NTM4YzAx/Y2JmZmJjMDAyMWE4/NzIzMWRmZi93d3cu/Zm9vbC5jb20v",
+            "path": "  \u203a knowledge  \u203a research  \u203a the average cost of car insurance in all 50 states"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/DcNVXPOYTaKBtV0PaEMQCkIZbvDN6Ub042gIijz49M4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9tLmZv/b2xjZG4uY29tL21l/ZGlhL2FmZmlsaWF0/ZXMvaW1hZ2VzL2Nh/ci1pbnN1cmFuY2Ut/cHJlbWl1bXMtYnkt/c3RhdGVfLjJlMTZk/MGJhLmZpbGwtMTUw/MHgxNTAwLmpwZw",
+            "original": "https://m.foolcdn.com/media/affiliates/images/car-insurance-premiums-by-state_.2e16d0ba.fill-1500x1500.jpg",
+            "logo": false
+          },
+          "age": "February 12, 2025"
+        },
+        {
+          "title": "The average cost of car insurance in 2025",
+          "url": "https://www.insurance.com/auto-insurance/average-cost-car-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The average cost of car insurance nationwide is $52 a month for state minimum coverage and $209 a month for full coverage at 100/300/100 with $500 deductibles",
+          "page_age": "2025-10-07T00:42:00",
+          "profile": {
+            "name": "Insurance.com",
+            "url": "https://www.insurance.com/auto-insurance/average-cost-car-insurance",
+            "long_name": "insurance.com",
+            "img": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurance.com",
+            "hostname": "www.insurance.com",
+            "favicon": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8",
+            "path": "  \u203a home  \u203a auto insurance  \u203a the average cost of car insurance in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/op4dftLxSGp-i7CTYOWYKiUBVTHD6kdBKisheHrllH4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmNlLmNv/bS9pbWFnZXN2cl9j/ZS81OTAzL0F2ZXJh/Z2UgY29zdCBvZiBj/YXIgaW5zdXJhbmNl/LmpwZw",
+            "original": "https://www.insurance.com/imagesvr_ce/5903/Average cost of car insurance.jpg",
+            "logo": false
+          },
+          "age": "October 7, 2025"
+        },
+        {
+          "title": "Average Cost of Car Insurance in New York for 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-new-york/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "On average, New Yorkers pay $341 per month for full coverage auto insurance and $148 per month for state minimum insurance. Average full coverage insurance in the state costs 52 percent more than the national average.",
+          "page_age": "2025-11-05T19:18:32",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance-in-new-york/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/_SKDjJ9sBQbF_--ZMa7VWQC4hlLWU6UgtzvZEjrlnJ4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvMTI4/MHg3MjAvOGNhOWE0/MTIzYS9hdmVyYWdl/LWNvc3Qtb2YtY2Fy/LWluc3VyYW5jZS1p/bi1uZXcteW9yay1m/ZWF0dXJlZC5qcGVn",
+            "original": "https://a.storyblok.com/f/102997/1280x720/8ca9a4123a/average-cost-of-car-insurance-in-new-york-featured.jpeg",
+            "logo": false
+          },
+          "age": "2 days ago"
+        },
+        {
+          "title": "How Much Does Car Insurance Cost (2025) | LendingTree",
+          "url": "https://www.lendingtree.com/car-insurance/how-much-does-car-insurance-cost/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The average cost of full-coverage car insurance per month is $175. Nevada is the most expensive state for full-coverage car insurance. Its drivers pay an average of $3,439 a year, or $287 a month.",
+          "page_age": "2025-04-24T20:21:17",
+          "profile": {
+            "name": "LendingTree",
+            "url": "https://www.lendingtree.com/car-insurance/how-much-does-car-insurance-cost/",
+            "long_name": "lendingtree.com",
+            "img": "https://imgs.search.brave.com/yXocWnwl2PfTEvlx2rFx5rmJolpgkbGDO3CG6T07Njk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGRlZjI4ZGJk/MWJiMDE4ZjliM2Vh/ZmFlZmMyMjUxNDg1/MjUyYmQzOGU4ZTFi/ZGIxNTA3MThlZTIz/YThlYmVkZS93d3cu/bGVuZGluZ3RyZWUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "lendingtree.com",
+            "hostname": "www.lendingtree.com",
+            "favicon": "https://imgs.search.brave.com/yXocWnwl2PfTEvlx2rFx5rmJolpgkbGDO3CG6T07Njk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGRlZjI4ZGJk/MWJiMDE4ZjliM2Vh/ZmFlZmMyMjUxNDg1/MjUyYmQzOGU4ZTFi/ZGIxNTA3MThlZTIz/YThlYmVkZS93d3cu/bGVuZGluZ3RyZWUu/Y29tLw",
+            "path": "  \u203a home  \u203a car insurance  \u203a average cost of car insurance (2025)"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/BanlJideHVDol5jLTjTo8yYFnWRSvNtzbmkLLzenpTQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bGVuZGluZ3RyZWUu/Y29tL2FwcC91cGxv/YWRzLzIwMjUvMDYv/YmVzdC1ob21lLWlu/c3VyYW5jZS53ZWJw",
+            "original": "https://www.lendingtree.com/app/uploads/2025/06/best-home-insurance.webp",
+            "logo": false
+          },
+          "age": "April 24, 2025"
+        },
+        {
+          "title": "Average cost of car insurance in November 2025",
+          "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "How much is car insurance per month? Calculate what you might pay based on your state, age, vehicle and more.",
+          "page_age": "2025-11-07T05:04:33",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/average-cost-of-car-insurance/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a car"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/kS-6az4e1AuNbmx7QPLBzr-uub9l7JUS6ocG95z6O3Y/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xMDI5OTcvMTI4/MHg3MjAvYTQwMzcz/ZDkyNi9pbnN1cmFu/Y2VfYXZlcmFnZV9j/b3N0X29mX2Nhcl9p/bnN1cmFuY2UuanBn",
+            "original": "https://a.storyblok.com/f/102997/1280x720/a40373d926/insurance_average_cost_of_car_insurance.jpg",
+            "logo": false
+          },
+          "age": "13 hours ago"
+        },
+        {
+          "title": "Average Cost of Car Insurance in New York State for 2025",
+          "url": "https://www.experian.com/blogs/ask-experian/average-cost-car-insurance-new-york/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The average cost of car insurance in New York State is $3,313 annually or $276 per month, according to Experian data from September 2025 and based on policies sold through our automotive insurance marketplace.",
+          "page_age": "2025-10-15T05:30:41",
+          "profile": {
+            "name": "Experian",
+            "url": "https://www.experian.com/blogs/ask-experian/average-cost-car-insurance-new-york/",
+            "long_name": "experian.com",
+            "img": "https://imgs.search.brave.com/Kd5ZJX6uDioWFoKktbx3echvXfRsNSuzZed0HDR5aiw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDU3YTc1NTdk/MzRhMDkwNjEyODVm/ODgyMzUwZDliOGE2/Y2Q1ODZjYmU5OWU2/MTA4OTk5NzI1NjE0/ZjE0MGJiNS93d3cu/ZXhwZXJpYW4uY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "experian.com",
+            "hostname": "www.experian.com",
+            "favicon": "https://imgs.search.brave.com/Kd5ZJX6uDioWFoKktbx3echvXfRsNSuzZed0HDR5aiw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDU3YTc1NTdk/MzRhMDkwNjEyODVm/ODgyMzUwZDliOGE2/Y2Q1ODZjYmU5OWU2/MTA4OTk5NzI1NjE0/ZjE0MGJiNS93d3cu/ZXhwZXJpYW4uY29t/Lw",
+            "path": "  \u203a home  \u203a insurance  \u203a auto insurance  \u203a average cost of car insurance in new york state for 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/3htU_usZNZKyaZmY4CNl5zZAspvYY7eOtCwxF0uPNig/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/ZXhwZXJpYW4uY29t/L2Jsb2dzL2Fzay1l/eHBlcmlhbi93cC1j/b250ZW50L3VwbG9h/ZHMvYXZlcmFnZS1j/b3N0LWNhci1pbnN1/cmFuY2UtbmV3LXlv/cmsuanBn",
+            "original": "https://www.experian.com/blogs/ask-experian/wp-content/uploads/average-cost-car-insurance-new-york.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "Car Insurance Rates by State (November 2025)",
+          "url": "https://insurify.com/car-insurance/states/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Its average monthly full-coverage rate is $248, and its average liability-only rate is $168. North Carolina has the cheapest car insurance rates, with average monthly rates of $91 for full coverage and $64 for liability only.",
+          "page_age": "2025-11-05T19:00:00",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/car-insurance/states/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a car insurance  \u203a states"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/WbtP2Iw-zlPjUZ_MvcNUF1QT9NBpKOuMWPkP0eF-Fa8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xNjIyNzMvMTg1/NngxMzkyLzExYjNj/MWYzZjIvY2FyLXRv/eW90YS1jb3JvbGxh/LWFtZXRoeXN0LnBu/Zw",
+            "original": "https://a.storyblok.com/f/162273/1856x1392/11b3c1f3f2/car-toyota-corolla-amethyst.png",
+            "logo": false
+          },
+          "age": "2 days ago"
+        },
+        {
+          "title": "Average Monthly Auto Insurance Cost: What to Expect - IBOAZ, Gilbert, Arizona",
+          "url": "https://insurancebrokersofaz.com/average-monthly-auto-insurance-cost-what-to-expect/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Auto insurance costs vary dramatically across states, with Wyoming drivers who pay $92 monthly while Louisiana residents face $358 monthly premiums. Arizona drivers pay $218 monthly, which exceeds the national average auto insurance cost per ...",
+          "page_age": "2025-10-05T03:07:38",
+          "profile": {
+            "name": "IBOAZ",
+            "url": "https://insurancebrokersofaz.com/average-monthly-auto-insurance-cost-what-to-expect/",
+            "long_name": "insurancebrokersofaz.com",
+            "img": "https://imgs.search.brave.com/hIJPO_f6bQbc2u7TKeNTnYKKGo5tYbTMCsyd_XLDnK4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTFlZjE5Y2U1/MTg4ODRiYjgwODc0/MzVjMmZiZmQxN2Ew/MzFlNjBjMjg0ZWYy/Yzc2MGMyMjMzM2Zi/ZjJiODk0NC9pbnN1/cmFuY2Vicm9rZXJz/b2Zhei5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurancebrokersofaz.com",
+            "hostname": "insurancebrokersofaz.com",
+            "favicon": "https://imgs.search.brave.com/hIJPO_f6bQbc2u7TKeNTnYKKGo5tYbTMCsyd_XLDnK4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTFlZjE5Y2U1/MTg4ODRiYjgwODc0/MzVjMmZiZmQxN2Ew/MzFlNjBjMjg0ZWYy/Yzc2MGMyMjMzM2Zi/ZjJiODk0NC9pbnN1/cmFuY2Vicm9rZXJz/b2Zhei5jb20v",
+            "path": "  \u203a home  \u203a average monthly auto insurance cost: what to expect"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/sgcBtTTck0D2p4Gamn74qW-cocogwL-Bm2k_5KmlLf8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbnN1/cmFuY2Vicm9rZXJz/b2Zhei5jb20vd3At/Y29udGVudC91cGxv/YWRzL2VtcGxpYm90/L0F2ZXJhZ2UtTW9u/dGhseS1BdXRvLUlu/c3VyYW5jZS1Db3N0/Xy1XaGF0LXRvLUV4/cGVjdF8xNzU5NjMz/NjU0LmpwZWc",
+            "original": "https://insurancebrokersofaz.com/wp-content/uploads/emplibot/Average-Monthly-Auto-Insurance-Cost_-What-to-Expect_1759633654.jpeg",
+            "logo": false
+          },
+          "age": "October 5, 2025"
+        },
+        {
+          "title": "Average Cost of Car Insurance in New York State in 2025",
+          "url": "https://www.autoinsurance.com/states/new-york/cost/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The average cost of auto insurance per month in New York is $188. New York is a no-fault state, making it more expensive than most states in the U.S.",
+          "page_age": "2025-06-21T02:53:44",
+          "profile": {
+            "name": "Auto Insurance",
+            "url": "https://www.autoinsurance.com/states/new-york/cost/",
+            "long_name": "autoinsurance.com",
+            "img": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.com",
+            "hostname": "www.autoinsurance.com",
+            "favicon": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v",
+            "path": "  \u203a home  \u203a states  \u203a average cost of car insurance in new york state in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/FU3hr37tBh-Ikm7VXGKvyu3MEuYMGVKcUPtJXRnSUP4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYXV0b2luc3Vy/YW5jZS5jb20vYXBw/L3VwbG9hZHMvMjAy/MS8xMi8xNjIxMTQw/My9TY3JlZW4tU2hv/dC0yMDIxLTEyLTAx/LWF0LTkuMzcuNDYt/QU0ucG5n",
+            "original": "https://images.autoinsurance.com/app/uploads/2021/12/16211403/Screen-Shot-2021-12-01-at-9.37.46-AM.png",
+            "logo": false
+          },
+          "age": "June 21, 2025"
+        },
+        {
+          "title": "How Much Does Car Insurance Cost? (2024 Rates) - ValuePenguin",
+          "url": "https://www.valuepenguin.com/average-cost-of-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The cost of car insurance varies by state from $133 per month in Michigan to $31 per month in Wyoming for minimum coverage. Erie is the cheapest car insurance company, with an average rate of $43 per month for minimum coverage.",
+          "page_age": "2025-08-06T16:21:52",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/average-cost-of-insurance",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a auto insurance  \u203a average cost of car insurance (2025)"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/LtR-Fhhe504DW6gpvZHTZ1irKA8ZmnoV6Q4srvvqvCE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2F2Zy1jb3N0/LWF1dG9fdW4xOWpo",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/avg-cost-auto_un19jh",
+            "logo": false
+          },
+          "age": "August 6, 2025"
+        },
+        {
+          "title": "What's the Average Cost of Auto Insurance in 2025?",
+          "url": "https://www.autoinsurance.com/cost/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "However, it\u2019s important to remember that insurance costs vary greatly by state and other factors, including credit score, driving history, and whether or not you live in a city. If you\u2019re paying $200 a month for full coverage auto insurance, ...",
+          "page_age": "2025-07-25T16:13:40",
+          "profile": {
+            "name": "Auto Insurance",
+            "url": "https://www.autoinsurance.com/cost/",
+            "long_name": "autoinsurance.com",
+            "img": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.com",
+            "hostname": "www.autoinsurance.com",
+            "favicon": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v",
+            "path": "  \u203a home  \u203a what\u2019s the average cost of auto insurance in 2025?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/FU3hr37tBh-Ikm7VXGKvyu3MEuYMGVKcUPtJXRnSUP4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYXV0b2luc3Vy/YW5jZS5jb20vYXBw/L3VwbG9hZHMvMjAy/MS8xMi8xNjIxMTQw/My9TY3JlZW4tU2hv/dC0yMDIxLTEyLTAx/LWF0LTkuMzcuNDYt/QU0ucG5n",
+            "original": "https://images.autoinsurance.com/app/uploads/2021/12/16211403/Screen-Shot-2021-12-01-at-9.37.46-AM.png",
+            "logo": false
+          },
+          "age": "July 25, 2025"
+        },
+        {
+          "title": "How much is car insurance in 2025?",
+          "url": "https://www.cnbc.com/select/average-cost-of-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The price of car insurance has accelerated in recent years: In 2025, the average cost of a full coverage policy is $2,638 a year, according to Bankrate data, or about $220 a month.",
+          "page_age": "2025-11-01T04:35:01",
+          "profile": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/select/average-cost-of-car-insurance/",
+            "long_name": "Consumer News and Business Channel",
+            "img": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cnbc.com",
+            "hostname": "www.cnbc.com",
+            "favicon": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+            "path": "  \u203a cnbc select  \u203a insurance  \u203a how much is car insurance in 2025?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/fQWglqIjD-HFqoEL9hG_NkRTzoS3eP6EFqNfGDpYUb4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDgxOTMzNDYt/MTc1Njg0MzAxMjgw/My1nZXR0eWltYWdl/cy0xNDE5OTk4MTY1/LWNhdGhlcmluZWxh/bmUyMDIybmlrb25k/ODUwNWp1bHkyMDIy/MTg4NzguanBlZz92/PTE3NTg5MDg1MDI",
+            "original": "https://image.cnbcfm.com/api/v1/image/108193346-1756843012803-gettyimages-1419998165-catherinelane2022nikond8505july202218878.jpeg?v=1758908502",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Average Car Insurance Cost in Pennsylvania (2025 Rates)",
+          "url": "https://www.moneygeek.com/insurance/auto/average-cost-car-insurance-pennsylvania/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In Pennsylvania, full coverage car insurance averages $117 per month, while minimum coverage costs around $47 monthly. Discover affordable Pennsylvania car insurance below. ... Pennsylvania car insurance costs range from $568 to $3,625 per year ...",
+          "page_age": "2025-10-17T08:43:54",
+          "profile": {
+            "name": "MoneyGeek",
+            "url": "https://www.moneygeek.com/insurance/auto/average-cost-car-insurance-pennsylvania/",
+            "long_name": "moneygeek.com",
+            "img": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "moneygeek.com",
+            "hostname": "www.moneygeek.com",
+            "favicon": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8",
+            "path": "  \u203a home  \u203a insurance  \u203a compare car insurance  \u203a average car insurance costs in pennsylvania"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/_00edvMoz6CFXNDt-GH30LE98DBRkXeUjyvm_2mbtZE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbW9uZXlnZWVr/L2ltYWdlL3VwbG9h/ZC92MTYwMjc3OTY5/NS9Nb25leUdlZWsu/Y29tL2RlZmF1bHQl/MjBtZXRhJTIwaW1h/Z2VzL2F1dG9fempp/bGhnLmpwZw",
+            "original": "https://res.cloudinary.com/moneygeek/image/upload/v1602779695/MoneyGeek.com/default%20meta%20images/auto_zjilhg.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

@@ -1,0 +1,795 @@
+{
+  "websearch_id": "websearch_p9mlcs2aef2vy60tvmorz5y2",
+  "search_id": "search_xipokpz1sacqhqrzy231kk0k",
+  "timestamp": "2025-11-07T12:29:33.476544",
+  "startedAt": "2025-11-07T12:29:33.476544",
+  "completedAt": "2025-11-07T12:29:35.475064",
+  "durationSeconds": 2.0,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"State Farm\" typical rate auto California",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"State Farm\" typical rate auto California",
+      "show_strict_warning": false,
+      "cleaned": "State Farm typical rate auto California",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "State Farm typical rate auto California"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "State Farm to again raise California car insurance rates by double digits",
+          "url": "https://www.sfchronicle.com/california/article/state-farm-car-insurance-19964552.php",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "On Friday, the insurer \u2014 California\u2019s largest \u2014 was approved to raise rates on personal auto insurance by an average of 17.7% starting at the end of January, filings with the California Department of Insurance show.",
+          "page_age": "2024-12-07T18:30:06",
+          "profile": {
+            "name": "San Francisco Chronicle",
+            "url": "https://www.sfchronicle.com/california/article/state-farm-car-insurance-19964552.php",
+            "long_name": "sfchronicle.com",
+            "img": "https://imgs.search.brave.com/iLyX2rAw4aqHVg0CN-ntdWtyp394I3-O7oOdhuAnBiE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmE5MmM2MGE4/NmMxYmI0N2EyMmJh/OTVjYjhhZDU2MmZk/YjhhZGE3MzY1YTQ0/NGJkNzM1ZmM2OThh/ZDY1NWJkYy93d3cu/c2ZjaHJvbmljbGUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "sfchronicle.com",
+            "hostname": "www.sfchronicle.com",
+            "favicon": "https://imgs.search.brave.com/iLyX2rAw4aqHVg0CN-ntdWtyp394I3-O7oOdhuAnBiE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmE5MmM2MGE4/NmMxYmI0N2EyMmJh/OTVjYjhhZDU2MmZk/YjhhZGE3MzY1YTQ0/NGJkNzM1ZmM2OThh/ZDY1NWJkYy93d3cu/c2ZjaHJvbmljbGUu/Y29tLw",
+            "path": "\u203a california  \u203a article  \u203a state-farm-car-insurance-19964552.php"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/TKPWLXuv27CTIAgVvssd8Bl3YR9xOoPxehEECnYka3w/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zLmhk/bnV4LmNvbS9waG90/b3MvMDEvNDYvMjUv/MDEvMjY4MjQ3ODIv/My9yYXdJbWFnZS5q/cGc",
+            "original": "https://s.hdnux.com/photos/01/46/25/01/26824782/3/rawImage.jpg",
+            "logo": false
+          },
+          "age": "December 7, 2024"
+        },
+        {
+          "title": "San Francisco Chronicle - State Farm to raise California car insurance rates by double digits for second year in a row - Consumer Watchdog",
+          "url": "https://consumerwatchdog.org/in-the-news/san-francisco-chronicle-state-farm-to-raise-california-car-insurance-rates-by-double-digits-for-second-year-in-a-row/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "On Friday, the insurer \u2014 California\u2019s largest \u2014 was approved to raise rates on personal auto insurance by an average of 17.7% starting at the end of January, filings with the California [\u2026]",
+          "page_age": "2024-12-09T19:17:24",
+          "profile": {
+            "name": "Consumer Watchdog",
+            "url": "https://consumerwatchdog.org/in-the-news/san-francisco-chronicle-state-farm-to-raise-california-car-insurance-rates-by-double-digits-for-second-year-in-a-row/",
+            "long_name": "consumerwatchdog.org",
+            "img": "https://imgs.search.brave.com/5CjhCO2w6jXRQ3GgIZO-V69EfdVMMaPGWBFxlXBxp1s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDk1OGRlNGMy/ZjIyMjMzM2ZjZjdk/ODY0ZGE4MWI2NDBl/ODdhNmI4M2FhZWYz/ZGZiMWViZDk4ZDU3/YzZmNDFmYi9jb25z/dW1lcndhdGNoZG9n/Lm9yZy8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "video",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "consumerwatchdog.org",
+            "hostname": "consumerwatchdog.org",
+            "favicon": "https://imgs.search.brave.com/5CjhCO2w6jXRQ3GgIZO-V69EfdVMMaPGWBFxlXBxp1s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDk1OGRlNGMy/ZjIyMjMzM2ZjZjdk/ODY0ZGE4MWI2NDBl/ODdhNmI4M2FhZWYz/ZGZiMWViZDk4ZDU3/YzZmNDFmYi9jb25z/dW1lcndhdGNoZG9n/Lm9yZy8",
+            "path": "  \u203a consumer watchdog  \u203a in the news  \u203a san francisco chronicle \u2013 state farm to raise california car insurance rates by double digits for se ..."
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/FmyG4BaNWma_BEkh2rwlrNhacT3xxAwYPDf3u4431rk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb25z/dW1lcndhdGNoZG9n/Lm9yZy93cC1jb250/ZW50L3VwbG9hZHMv/MjAxMi8wOS9pbWFn/ZXNfZWRpdG9yaWFs/bmV3cy01ODB4NDgx/LTEyMDB4OTk1Lmpw/Zw",
+            "original": "https://consumerwatchdog.org/wp-content/uploads/2012/09/images_editorialnews-580x481-1200x995.jpg",
+            "logo": false
+          },
+          "age": "December 9, 2024"
+        },
+        {
+          "title": "State Farm in California",
+          "url": "https://newsroom.statefarm.com/state-farm-general-insurance-company-update-on-california-2-2025/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm General has taken numerous actions, including the June 2024 rate increase request, to ensure our financial strength allows us to continue to protect our California customers. The recent emergency interim rate approval by the Commissioner and receipt of a $400 million investment from State Farm Mutual Automobile Insurance Company\u00ae, through the issuance of a surplus note in June 2025, are critical steps in the process to continue serving our California customers.",
+          "page_age": "2025-06-30T05:41:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/state-farm-general-insurance-company-update-on-california-2-2025/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a state-farm-general-insurance-company-update-on-california-2-2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YVmJZtJCqCB4tpzwJtXCDgRC7cp5p1sLLtCkHfMD3W4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vdXBsb2Fk/cy8xNDQxL2Y1M2Fj/NzliLTUyMDMtNDc5/OS1iNWIyLTI4Mjdi/MTliYmM0OS8xOTIw/XzI1MDIxNC1jYWxp/Zm9ybmlhLXVwZGF0/ZS1idy5wbmc_MTAw/MDA",
+            "original": "https://content.presspage.com/uploads/1441/f53ac79b-5203-4799-b5b2-2827b19bbc49/1920_250214-california-update-bw.png?10000",
+            "logo": false
+          },
+          "age": "June 30, 2025"
+        },
+        {
+          "title": "California approves double digit premium increases for State Farm second year in a row | Repairer Driven News",
+          "url": "https://www.repairerdrivennews.com/2024/12/10/california-approves-double-digit-premium-increases-for-state-farm-second-year-in-a-row/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm was approved to raise auto insurance rates in California by an average of 17.7% starting at the end of January, according to the San Francisco Chronicle. About 4 million customers will \u2026",
+          "page_age": "2024-12-09T19:52:44",
+          "profile": {
+            "name": "Repairer Driven News",
+            "url": "https://www.repairerdrivennews.com/2024/12/10/california-approves-double-digit-premium-increases-for-state-farm-second-year-in-a-row/",
+            "long_name": "repairerdrivennews.com",
+            "img": "https://imgs.search.brave.com/0UKZntQ-pN-8PZ397ST5jcWULgGNgND6mLHEcaejKN8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzE5OWIyNjA2/NmZkYjg4YzkzYTNk/MzRhNTdmZDljODY4/OGQ4M2NlMWQ0YTlh/ZmFiYmI5NmNmMDJh/NTgwMGMwNC93d3cu/cmVwYWlyZXJkcml2/ZW5uZXdzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "repairerdrivennews.com",
+            "hostname": "www.repairerdrivennews.com",
+            "favicon": "https://imgs.search.brave.com/0UKZntQ-pN-8PZ397ST5jcWULgGNgND6mLHEcaejKN8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzE5OWIyNjA2/NmZkYjg4YzkzYTNk/MzRhNTdmZDljODY4/OGQ4M2NlMWQ0YTlh/ZmFiYmI5NmNmMDJh/NTgwMGMwNC93d3cu/cmVwYWlyZXJkcml2/ZW5uZXdzLmNvbS8",
+            "path": "\u203a 2024  \u203a 12  \u203a 10  \u203a california-approves-double-digit-premium-increases-for-state-farm-second-year-in-a-row"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/UYszwdY0-xOEywoyeAyYXSCtg3NTVA1XQSyeYd2GXIY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVwYWlyZXJkcml2/ZW5uZXdzLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyNC8x/Mi9pU3RvY2stNDU5/Mzk0ODE5LTQtc2Nh/bGVkLmpwZw",
+            "original": "https://www.repairerdrivennews.com/wp-content/uploads/2024/12/iStock-459394819-4-scaled.jpg",
+            "logo": false
+          },
+          "age": "December 9, 2024"
+        },
+        {
+          "title": "State Farm Car Insurance Pricing in 2025",
+          "url": "https://www.autoinsurance.com/companies/state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm offers below-average auto insurance rates at $2,167 annually, cheaper than the national average, but GEICO is 20% cheaper than State Farm.",
+          "page_age": "2025-10-23T17:01:58",
+          "profile": {
+            "name": "AutoInsurance.com",
+            "url": "https://www.autoinsurance.com/companies/state-farm/",
+            "long_name": "autoinsurance.com",
+            "img": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.com",
+            "hostname": "www.autoinsurance.com",
+            "favicon": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v",
+            "path": "  \u203a home  \u203a companies  \u203a state farm car insurance pricing in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/FU3hr37tBh-Ikm7VXGKvyu3MEuYMGVKcUPtJXRnSUP4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYXV0b2luc3Vy/YW5jZS5jb20vYXBw/L3VwbG9hZHMvMjAy/MS8xMi8xNjIxMTQw/My9TY3JlZW4tU2hv/dC0yMDIxLTEyLTAx/LWF0LTkuMzcuNDYt/QU0ucG5n",
+            "original": "https://images.autoinsurance.com/app/uploads/2021/12/16211403/Screen-Shot-2021-12-01-at-9.37.46-AM.png",
+            "logo": false
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "California approves State Farm\u2019s 22% insurance rate hike with conditions | Insurance Business America",
+          "url": "https://www.insurancebusinessmag.com/us/news/catastrophe/california-approves-state-farms-22-insurance-rate-hike-with-conditions-528660.aspx",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "California regulators have given State Farm Mutual Automobile Insurance Co. preliminary approval to raise home insurance premiums by an average of 22%, a decision that could affect nearly a million homeowners in the state.",
+          "page_age": "2025-03-17T11:40:00",
+          "profile": {
+            "name": "Insurance Business America",
+            "url": "https://www.insurancebusinessmag.com/us/news/catastrophe/california-approves-state-farms-22-insurance-rate-hike-with-conditions-528660.aspx",
+            "long_name": "insurancebusinessmag.com",
+            "img": "https://imgs.search.brave.com/wSqy0D5CYsTkoVvYpYyzSqvim_TavRxGYxAzncAes7s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2NlNGVmYjdh/YzAwNDJmMzQ2YTZm/M2QwZmJhODY3NGE1/NWYzYmRhNWY0NGFh/Mjg0NjA0ZGQyNGNk/Nzg0MTBiNC93d3cu/aW5zdXJhbmNlYnVz/aW5lc3NtYWcuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurancebusinessmag.com",
+            "hostname": "www.insurancebusinessmag.com",
+            "favicon": "https://imgs.search.brave.com/wSqy0D5CYsTkoVvYpYyzSqvim_TavRxGYxAzncAes7s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2NlNGVmYjdh/YzAwNDJmMzQ2YTZm/M2QwZmJhODY3NGE1/NWYzYmRhNWY0NGFh/Mjg0NjA0ZGQyNGNk/Nzg0MTBiNC93d3cu/aW5zdXJhbmNlYnVz/aW5lc3NtYWcuY29t/Lw",
+            "path": "  \u203a catastrophe & flood  \u203a california approves state farm\u2019s 22% insurance rate hike with conditions"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Ym-wkHrZipkOpUt0TyP1drf3kOuwg4AhxDbjKgzEZgw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4t/cmVzLmtleW1lZGlh/LmNvbS9jbXMvaW1h/Z2VzL3VzLzAwMy8w/MzA1XzYzODc3NzM3/NzgxNDEyMzM3My5w/bmc",
+            "original": "https://cdn-res.keymedia.com/cms/images/us/003/0305_638777377814123373.png",
+            "logo": false
+          },
+          "age": "March 17, 2025"
+        },
+        {
+          "title": "State Farm Car Insurance Review 2025: Pros and Cons - NerdWallet",
+          "url": "https://www.nerdwallet.com/insurance/auto/state-farm-auto-insurance-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "California, Hawaii and Massachusetts don&#x27;t allow insurers to use credit when determining car insurance rates. ... Here are State Farm\u2019s average annual auto insurance rates for different coverage types and driving histories compared to national averages, according to NerdWallet\u2019s October ...",
+          "page_age": "2025-05-22T00:35:56",
+          "profile": {
+            "name": "NerdWallet",
+            "url": "https://www.nerdwallet.com/insurance/auto/state-farm-auto-insurance-review",
+            "long_name": "nerdwallet.com",
+            "img": "https://imgs.search.brave.com/8r72GokQ4UXZ6V4PobxSGta-ben5011_C3meSKoOMl4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGFhYzY5MDhh/NTNhODNhYjliNWNm/MTE4YTNmOGE3NjVj/M2FmMDcwMzhhMzQx/MThmYjQ2MzcxMjQy/ZDgwNTkzZS93d3cu/bmVyZHdhbGxldC5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "nerdwallet.com",
+            "hostname": "www.nerdwallet.com",
+            "favicon": "https://imgs.search.brave.com/8r72GokQ4UXZ6V4PobxSGta-ben5011_C3meSKoOMl4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGFhYzY5MDhh/NTNhODNhYjliNWNm/MTE4YTNmOGE3NjVj/M2FmMDcwMzhhMzQx/MThmYjQ2MzcxMjQy/ZDgwNTkzZS93d3cu/bmVyZHdhbGxldC5j/b20v",
+            "path": "  \u203a back to nerdwallet homepage  \u203a insurance  \u203a state farm car insurance: 2025 review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/F9u2R_UXcXPS1grWvZB4rNulMfo3acX7ocput2-iUto/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bmVyZHdhbGxldC5j/b20vdGFjaHlvbi8y/MDIxLzExL0dldHR5/SW1hZ2VzLTEyMDM5/MDc4NzctcmV2aWV3/c2luc3VyYW5jZXN0/YXRlLWZhcm0uanBn/P3Jlc2l6ZT0xNDQw/JTJDODY0",
+            "original": "https://www.nerdwallet.com/tachyon/2021/11/GettyImages-1203907877-reviewsinsurancestate-farm.jpg?resize=1440%2C864",
+            "logo": false
+          },
+          "age": "May 22, 2025"
+        },
+        {
+          "title": "State Farm Car Insurance Review 2025 - Coverage & Cost | U.S. News",
+          "url": "https://www.usnews.com/insurance/auto/state-farm-car-insurance-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm has one of the lowest average annual rates in our study for this group of drivers. It\u2019s $984 lower than the national average. Most states require at least a minimum amount of car insurance. Typically, a minimum coverage policy is the cheapest coverage you can buy, but additional ...",
+          "page_age": "2025-10-01T13:56:00",
+          "profile": {
+            "name": "U.S. News",
+            "url": "https://www.usnews.com/insurance/auto/state-farm-car-insurance-review",
+            "long_name": "usnews.com",
+            "img": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "usnews.com",
+            "hostname": "www.usnews.com",
+            "favicon": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8",
+            "path": "\u203a insurance  \u203a auto  \u203a state-farm-car-insurance-review"
+          },
+          "age": "October 1, 2025"
+        },
+        {
+          "title": "California Insurance Commissioner Rejects State Farm\u2019s 22% Rate Request",
+          "url": "https://www.insurancejournal.com/news/west/2025/02/14/812157.htm",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm General earlier this month asked the California Department of Insurance to immediately approve interim rate increases, including 22% average for homeowners. The carrier, the state\u2019s top homeowners insurer, is partly blaming the ...",
+          "page_age": "2025-02-14T23:23:13",
+          "profile": {
+            "name": "Insurance Journal",
+            "url": "https://www.insurancejournal.com/news/west/2025/02/14/812157.htm",
+            "long_name": "insurancejournal.com",
+            "img": "https://imgs.search.brave.com/Z2NMt-hrP7caeNIt4HG4jkmmzjPBLwRv6v1cRD5nBlI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTVlY2IxMmJk/NDNlOGY1YjM3NzIy/MTNlYWViNGMzNmNj/N2NiNzdmYzdkMjFl/YTZjMzdkOWEwNDEw/YzQwZDNkNS93d3cu/aW5zdXJhbmNlam91/cm5hbC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurancejournal.com",
+            "hostname": "www.insurancejournal.com",
+            "favicon": "https://imgs.search.brave.com/Z2NMt-hrP7caeNIt4HG4jkmmzjPBLwRv6v1cRD5nBlI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTVlY2IxMmJk/NDNlOGY1YjM3NzIy/MTNlYWViNGMzNmNj/N2NiNzdmYzdkMjFl/YTZjMzdkOWEwNDEw/YzQwZDNkNS93d3cu/aW5zdXJhbmNlam91/cm5hbC5jb20v",
+            "path": "\u203a news  \u203a west  \u203a 2025  \u203a 02  \u203a 14  \u203a 812157.htm"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/dVcLUHChOyyCk8JeiHzDSxg6197hT8Y1NGboSxpuRwo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmNlam91/cm5hbC5jb20vaW1n/L3NvY2lhbC9vcGVu/Z3JhcGgvaWotc29j/aWFsLWRlZmF1bHQt/MTIwMHg2MzAucG5n",
+            "original": "https://www.insurancejournal.com/img/social/opengraph/ij-social-default-1200x630.png",
+            "logo": false
+          },
+          "age": "February 14, 2025"
+        },
+        {
+          "title": "r/Insurance on Reddit: State Farm Keeps Increasing Rates",
+          "url": "https://www.reddit.com/r/Insurance/comments/1iomhwg/state_farm_keeps_increasing_rates/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Use regional ones not affected by Florida hurricanes and California fires. ... Everyone needs to shop around &amp; not get too cumfy with their Insurance Company!!!!! My insurance went up 55% or more in the last 3 years! Zero changes &amp; zero claims!!! Currently have State Farm. ... I understand things have changed, but we are with SF and our auto policies basically DOUBLED from last policy period to this one (starting in April).",
+          "page_age": "2025-02-13T16:08:36",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Insurance/comments/1iomhwg/state_farm_keeps_increasing_rates/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/insurance  \u203a state farm keeps increasing rates"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A5H_aQiEBuUODR0lNeU8iDfhrWUvO8oEmRGE_mcS_gM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVkZGl0c3RhdGlj/LmNvbS9pY29uLnBu/Zw",
+            "original": "https://www.redditstatic.com/icon.png",
+            "logo": true
+          },
+          "age": "February 13, 2025"
+        },
+        {
+          "title": "State Farm Stronger as Underwriting Losses Shrink\u2014But Not in California - Carrier Management",
+          "url": "https://www.carriermanagement.com/news/2025/03/02/272410.htm",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "\u201c[G]iven our current exposure and where we are, we would not be in a position to fiscally and responsibly starting to regrow within the California market just because of this rate in the very near term,\u201d he said, according to the transcript. Both Schwamberger and Krause talked about State Farm\u2019s desire to remain in California, however.",
+          "page_age": "2025-03-03T14:24:53",
+          "profile": {
+            "name": "Carrier Management",
+            "url": "https://www.carriermanagement.com/news/2025/03/02/272410.htm",
+            "long_name": "carriermanagement.com",
+            "img": "https://imgs.search.brave.com/-eMdg-lz3aGqn0lzer-GPng2sHAwtIrj7XCCNcZmLgY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjg3NDk4ZGE0/ZmIxNmU2OWE1NTMw/YTNmY2JkNGIwMWYw/NDUwMjA0MmFmM2E2/ZGNjZGJhYTI2ZTM2/MzMzM2IzOS93d3cu/Y2Fycmllcm1hbmFn/ZW1lbnQuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "carriermanagement.com",
+            "hostname": "www.carriermanagement.com",
+            "favicon": "https://imgs.search.brave.com/-eMdg-lz3aGqn0lzer-GPng2sHAwtIrj7XCCNcZmLgY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjg3NDk4ZGE0/ZmIxNmU2OWE1NTMw/YTNmY2JkNGIwMWYw/NDUwMjA0MmFmM2E2/ZGNjZGJhYTI2ZTM2/MzMzM2IzOS93d3cu/Y2Fycmllcm1hbmFn/ZW1lbnQuY29tLw",
+            "path": "\u203a news  \u203a 2025  \u203a 03  \u203a 02  \u203a 272410.htm"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/t24_J2lQIxtPGHZEc2hQZkJpoYJgDwxvG3y8JOfGgEo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2Fycmllcm1hbmFn/ZW1lbnQuY29tL2Fz/c2V0cy9wYXJlbnQt/cmVkLXBvbG8tc2hp/cnQtd2l0aC13aGl0/ZS10cmltLWFuZC1r/aGFraS1wYW50cy1z/dXBwb3J0aW5nLXdl/YWstYm95LWZhY2lu/Zy1iYWNrLUNhbGlm/b3JuaWEtd2lsZGZp/cmVzX0ZpcmVmbHlf/MmZjYjNlYTMtMGY0/ZC00Yjg4LTllZmMt/MWM5MmVjOTBjOTcx/LmpwZWc",
+            "original": "https://www.carriermanagement.com/assets/parent-red-polo-shirt-with-white-trim-and-khaki-pants-supporting-weak-boy-facing-back-California-wildfires_Firefly_2fcb3ea3-0f4d-4b88-9efc-1c92ec90c971.jpeg",
+            "logo": false
+          },
+          "age": "March 3, 2025"
+        },
+        {
+          "title": "How State Farm's emergency rate hike approval in California will affect you",
+          "url": "https://calmatters.org/economy/2025/05/state-farm-rate-hikes-decision/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The decision means State Farm can raise its rates an average 17% for homeowners, 15% for renters and condominiums and 38% for rental dwellings starting June 1. \u201cI am balancing all the facts,\u201d Lara said in a statement.",
+          "page_age": "2025-05-14T00:57:55",
+          "profile": {
+            "name": "CalMatters",
+            "url": "https://calmatters.org/economy/2025/05/state-farm-rate-hikes-decision/",
+            "long_name": "calmatters.org",
+            "img": "https://imgs.search.brave.com/pQmgjZKW7LRyPvLBasXp4mDoiULN94OsUSwgZfRDhGA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjA3Y2VkNzEz/MTFhZTJjNGI0NTBi/MzFkYzQzMzQwODU2/NDQ0OWQ3Y2UwOTlh/ZGEzMDZlZTJhNzVm/MGJmN2I1NC9jYWxt/YXR0ZXJzLm9yZy8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "calmatters.org",
+            "hostname": "calmatters.org",
+            "favicon": "https://imgs.search.brave.com/pQmgjZKW7LRyPvLBasXp4mDoiULN94OsUSwgZfRDhGA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjA3Y2VkNzEz/MTFhZTJjNGI0NTBi/MzFkYzQzMzQwODU2/NDQ0OWQ3Y2UwOTlh/ZGEzMDZlZTJhNzVm/MGJmN2I1NC9jYWxt/YXR0ZXJzLm9yZy8",
+            "path": "\u203a economy  \u203a 2025  \u203a 05  \u203a state-farm-rate-hikes-decision"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/0CHMf0v9necBzqC6I6qe1LxS0VwvFk7uskJFiOHwNvI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vY2FsbWF0/dGVycy5vcmcvd3At/Y29udGVudC91cGxv/YWRzLzIwMjUvMDUv/MDEyMDI1X09keXNz/ZXktQ2hhcnRlcl9K/SF9DTV81OS5qcGc_/Zml0PTIwMDAlMkMx/MzMzJnNzbD0x",
+            "original": "https://i0.wp.com/calmatters.org/wp-content/uploads/2025/05/012025_Odyssey-Charter_JH_CM_59.jpg?fit=2000%2C1333&ssl=1",
+            "logo": false
+          },
+          "age": "May 14, 2025"
+        },
+        {
+          "title": "r/Insurance on Reddit: Reasonable State Farm rate increase?",
+          "url": "https://www.reddit.com/r/Insurance/comments/1m7rkb6/reasonable_state_farm_rate_increase/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Call it what you want, but I&#x27;ve just been autopaying coverage since I&#x27;ve got the car and not really shopped for competitive rates beyond &quot;who can get me insured by my deadline in the least amount of my time spent chasing them&quot;. ... We\u2019ve had luck arguing the \u201cat fault\u201d decision in cases like yours by appealing the decision and arguing that accident was unavoidable. For example swerving to avoid the debris would have caused you to strike another vehicle or object in another lane. Talk to your agent they might be of some help. ... State Farm in California has raised rates in California the last two years.",
+          "page_age": "2025-07-24T01:41:03",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Insurance/comments/1m7rkb6/reasonable_state_farm_rate_increase/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/insurance  \u203a reasonable state farm rate increase?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/MNV-7UdPfyVmv2fF_7WJ2EgBv0JJEQO0ZDwBfvdp32A/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zaGFy/ZS5yZWRkLml0L3By/ZXZpZXcvcG9zdC8x/bTdya2I2",
+            "original": "https://share.redd.it/preview/post/1m7rkb6",
+            "logo": false
+          },
+          "age": "July 24, 2025"
+        },
+        {
+          "title": "How Is Car Insurance Calculated? - State Farm\u00ae",
+          "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/what-affects-car-insurance-premiums",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Learn how car insurance is calculated, some common factors that affect car insurance rates and tips that may lower the premium.",
+          "page_age": "2025-11-03T00:00:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://www.statefarm.com/simple-insights/auto-and-vehicles/what-affects-car-insurance-premiums",
+            "long_name": "statefarm.com",
+            "img": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "statefarm.com",
+            "hostname": "www.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/I6b-VZo5H3tBHDmquT_kSz3t4FGWwN63iCV5nyB0rLs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDIzOTZkYjQ4/NDUzMDQ4MDQ0MTkx/MWU0NDNkMGNiMjNl/NjZlNzgwYjA4MDdj/ZjE4ZTRjNTgxNjNj/MDU3MjRkNS93d3cu/c3RhdGVmYXJtLmNv/bS8",
+            "path": "  \u203a simple insights  \u203a auto and vehicles  \u203a how is car insurance calculated?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/22W4ScVxajd6Z3MtdSyxsR4ID6vlQTx9ux_xmBznaoc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3RhdGVmYXJtLmNv/bS9jb250ZW50L2Rh/bS9zZi1saWJyYXJ5/L2VuLXVzL3NlY3Vy/ZS9sZWdhY3kvc2lt/cGxlLWluc2lnaHRz/L3doYXQtYWZmZWN0/cy1jYXItaW5zdXJh/bmNlLXByZW1pdW1z/LmpwZw",
+            "original": "https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/what-affects-car-insurance-premiums.jpg",
+            "logo": false
+          },
+          "age": "5 days ago"
+        },
+        {
+          "title": "State Farm Still Wants a 30% Rate Increase in California",
+          "url": "https://www.insurancejournal.com/news/west/2025/05/21/824685.htm",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm isn\u2019t done seeking a rate increase in California, upping its request a week after getting the OK for a large rate hike to what the company had originally wanted before being rejected and agreeing to an interim deal for an increase.",
+          "page_age": "2025-05-22T14:32:10",
+          "profile": {
+            "name": "Insurance Journal",
+            "url": "https://www.insurancejournal.com/news/west/2025/05/21/824685.htm",
+            "long_name": "insurancejournal.com",
+            "img": "https://imgs.search.brave.com/Z2NMt-hrP7caeNIt4HG4jkmmzjPBLwRv6v1cRD5nBlI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTVlY2IxMmJk/NDNlOGY1YjM3NzIy/MTNlYWViNGMzNmNj/N2NiNzdmYzdkMjFl/YTZjMzdkOWEwNDEw/YzQwZDNkNS93d3cu/aW5zdXJhbmNlam91/cm5hbC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurancejournal.com",
+            "hostname": "www.insurancejournal.com",
+            "favicon": "https://imgs.search.brave.com/Z2NMt-hrP7caeNIt4HG4jkmmzjPBLwRv6v1cRD5nBlI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTVlY2IxMmJk/NDNlOGY1YjM3NzIy/MTNlYWViNGMzNmNj/N2NiNzdmYzdkMjFl/YTZjMzdkOWEwNDEw/YzQwZDNkNS93d3cu/aW5zdXJhbmNlam91/cm5hbC5jb20v",
+            "path": "\u203a news  \u203a west  \u203a 2025  \u203a 05  \u203a 21  \u203a 824685.htm"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Y8zx3hRy5JZihWTvVSfQH8QGGOQV2U8d198TasyjnlI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmNlam91/cm5hbC5jb20vaW1n/L3NvY2lhbC9vcGVu/Z3JhcGgvaWotc29j/aWFsLXRyZW5kcy0x/MjAweDYzMC5wbmc",
+            "original": "https://www.insurancejournal.com/img/social/opengraph/ij-social-trends-1200x630.png",
+            "logo": false
+          },
+          "age": "May 22, 2025"
+        },
+        {
+          "title": "r/California on Reddit: State Farm asks to increase California insurance prices again",
+          "url": "https://www.reddit.com/r/California/comments/1kr4j98/state_farm_asks_to_increase_california_insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "... San Diegan here. State Farm wants to raise my Auto insurance from 350 to 430 a month for 2 cars. I think I&#x27;m going to have to start shopping around. This is after the raised it a year ago.",
+          "page_age": "2025-05-20T13:12:47",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/California/comments/1kr4j98/state_farm_asks_to_increase_california_insurance/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/california  \u203a state farm asks to increase california insurance prices again"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/4fejLocvyRsAtEV5drtydGOU3fpgFzRAM_tC7qUdT2c/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9leHRl/cm5hbC1wcmV2aWV3/LnJlZGQuaXQvc3Rh/dGUtZmFybS1hc2tz/LXRvLWluY3JlYXNl/LWNhbGlmb3JuaWEt/aW5zdXJhbmNlLXBy/aWNlcy12MC1IZkJq/dEhYeHdCX01Ra2F1/ZkFMRWhKSDl3YUhL/a3J3ekE1X0pSVVdz/bjJzLmpwZz9hdXRv/PXdlYnAmcz01MDBk/ZTQ4YzQ4NzQwNjhk/MTIxNzhlMzY3ZGIz/ZGEzMjU1Y2I1YmQ5",
+            "original": "https://external-preview.redd.it/state-farm-asks-to-increase-california-insurance-prices-v0-HfBjtHXxwB_MQkaufALEhJH9waHKkrwzA5_JRUWsn2s.jpg?auto=webp&s=500de48c4874068d12178e367db3da3255cb5bd9",
+            "logo": false
+          },
+          "age": "May 20, 2025"
+        },
+        {
+          "title": "State Farm Auto Insurance: User Reviews and Quotes (2025) | Insurify",
+          "url": "https://insurify.com/car-insurance/companies/state-farm/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Bodily injury limits between state-minimum rates and $50,000 per person, $100,000 per accident \u00b7 Property damage limits between $10,000 and $50,000 \u00b7 No additional coverage Full-coverage premium averages correspond to the same bodily injury and property damage limits in addition to: ... Quotes for Allstate, Farmers, GEICO, State Farm, and USAA are estimates based on Quadrant Information Services\u2019 database of auto insurance rates.",
+          "page_age": "2025-10-28T04:14:50",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/car-insurance/companies/state-farm/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a car insurance  \u203a companies  \u203a state farm"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/CNKRe2bQdQNjvtk5gqRnDSZBqkNFbz__EM0-w5dclqc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbnN1/cmlmeWNkbi5jb20v/aW1hZ2VzL2NhcnJp/ZXIvaGlnaC1kZWZp/bml0aW9uL3N0YXRl/LWZhcm0uc3Zn",
+            "original": "https://insurifycdn.com/images/carrier/high-definition/state-farm.svg",
+            "logo": true
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "California insurance commissioner to approve State Farm rate hike \u2014 if conditions are met",
+          "url": "https://www.sacbee.com/news/politics-government/capitol-alert/article301590469.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Commissioner Ricardo Lara to review State Farm\u2019s 22% rate hike request at a public hearing after consumer advocacy disputes.",
+          "page_age": "2025-03-15T20:16:55",
+          "profile": {
+            "name": "Sacramento Bee",
+            "url": "https://www.sacbee.com/news/politics-government/capitol-alert/article301590469.html",
+            "long_name": "sacbee.com",
+            "img": "https://imgs.search.brave.com/DcicfVu8_s0v8qctL6aMGc1WMbIxGlVtdhF1NQyFZhQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjAxZTc0NmYx/NDE0MWUzNDJjOTM3/OTI2OGU5YTJjNDFj/MDA4ZGI2ZThkMDM0/NTI5ZDIyZjQ1OGY3/YjBmYTM5ZC93d3cu/c2FjYmVlLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "sacbee.com",
+            "hostname": "www.sacbee.com",
+            "favicon": "https://imgs.search.brave.com/DcicfVu8_s0v8qctL6aMGc1WMbIxGlVtdhF1NQyFZhQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjAxZTc0NmYx/NDE0MWUzNDJjOTM3/OTI2OGU5YTJjNDFj/MDA4ZGI2ZThkMDM0/NTI5ZDIyZjQ1OGY3/YjBmYTM5ZC93d3cu/c2FjYmVlLmNvbS8",
+            "path": "\u203a news  \u203a politics-government  \u203a capitol-alert  \u203a article301590469.html"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/8Kt8EZftMD1BlbaKZ6D3NbUoKJNfCLe_RNblY4Ovh18/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c2FjYmVlLmNvbS9w/dWJsaWMvbGF0ZXN0/LW5ld3MvNm83MnM5/L3BpY3R1cmUyOTgz/ODU3MTgvYWx0ZXJu/YXRlcy9MQU5EU0NB/UEVfMTE0MC9QQUxJ/U0FERVMtV0lMREZJ/UkVTX0FFUklBTC5K/UEc",
+            "original": "https://www.sacbee.com/public/latest-news/6o72s9/picture298385718/alternates/LANDSCAPE_1140/PALISADES-WILDFIRES_AERIAL.JPG",
+            "logo": false
+          },
+          "age": "March 15, 2025"
+        },
+        {
+          "title": "State Farm Car Insurance Review: Cost and Coverage (2025) \u2013 Forbes Advisor",
+          "url": "https://www.forbes.com/advisor/car-insurance/state-farm-car-insurance-review/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Its rates for drivers with poor credit are a whopping $4,300 a year above the national average of $4,064. All states except California, Hawaii, Massachusetts and Michigan allow car insurance companies to use a credit history when determining rates.",
+          "page_age": "2025-07-30T09:13:55",
+          "profile": {
+            "name": "Forbes Advisor",
+            "url": "https://www.forbes.com/advisor/car-insurance/state-farm-car-insurance-review/",
+            "long_name": "forbes.com",
+            "img": "https://imgs.search.brave.com/qg6-E4bARcUpS7pHuJ2FXSeQ2YI51iPfbI8wpUBx9tg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY0NWFiMTBk/YmY2MjkyN2M0MTI0/NmRkYTM3ZjQzMGJj/Y2Q2MTBkYjVmZjA2/OGRjODBhMTM1M2Yx/YmRlZTA1NS93d3cu/Zm9yYmVzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "forbes.com",
+            "hostname": "www.forbes.com",
+            "favicon": "https://imgs.search.brave.com/qg6-E4bARcUpS7pHuJ2FXSeQ2YI51iPfbI8wpUBx9tg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY0NWFiMTBk/YmY2MjkyN2M0MTI0/NmRkYTM3ZjQzMGJj/Y2Q2MTBkYjVmZjA2/OGRjODBhMTM1M2Yx/YmRlZTA1NS93d3cu/Zm9yYmVzLmNvbS8",
+            "path": "\u203a advisor  \u203a car-insurance  \u203a state-farm-car-insurance-review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/EeDxLpIad8Q05arClH3b4sr5CBA4fdbQryor__vgL7I/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Zm9yYmVzLmNvbS9h/ZHZpc29yL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIxLzA3L3N0/YXRlLWZhcm0tcmV2/aWV3LmpwZWcuanBn",
+            "original": "https://www.forbes.com/advisor/wp-content/uploads/2021/07/state-farm-review.jpeg.jpg",
+            "logo": false
+          },
+          "age": "July 30, 2025"
+        },
+        {
+          "title": "A 22% emergency rate hike for State Farm premiums in California?",
+          "url": "https://www.usatoday.com/story/money/personalfinance/real-estate/2025/02/03/state-farm-emergency-rate-hike-california/78188233007/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Citing what it calls a potentially \u201cdire situation,\u201d State Farm asked California for permission to hike insurance rates by an average of 22%.",
+          "page_age": "2025-02-05T17:10:25",
+          "profile": {
+            "name": "USA Today",
+            "url": "https://www.usatoday.com/story/money/personalfinance/real-estate/2025/02/03/state-farm-emergency-rate-hike-california/78188233007/",
+            "long_name": "usatoday.com",
+            "img": "https://imgs.search.brave.com/Y_nf32M16mWMcRGYv2Qt8GUxybiADIXv_NwrMFam-Oc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjRiNmM1Y2E0/MzMwMWQzYTYzNzhk/YjkzZjU0NTRmMDdl/ZWNmMjRiMWIwZjUz/ZDk4M2I5NDlmZjYw/ZTkyNjE4Yy93d3cu/dXNhdG9kYXkuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "usatoday.com",
+            "hostname": "www.usatoday.com",
+            "favicon": "https://imgs.search.brave.com/Y_nf32M16mWMcRGYv2Qt8GUxybiADIXv_NwrMFam-Oc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjRiNmM1Y2E0/MzMwMWQzYTYzNzhk/YjkzZjU0NTRmMDdl/ZWNmMjRiMWIwZjUz/ZDk4M2I5NDlmZjYw/ZTkyNjE4Yy93d3cu/dXNhdG9kYXkuY29t/Lw",
+            "path": "\u203a story  \u203a money  \u203a personalfinance  \u203a real-estate  \u203a 2025  \u203a 02  \u203a 03  \u203a state-farm-emergency-rate-hike-california  \u203a 78188233007"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Aopi3mC2kjBqbryFKA_5SFjLBmp00wvFwgra7me45wU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Z2FubmV0dC1jZG4u/Y29tL2F1dGhvcmlu/Zy9hdXRob3Jpbmct/aW1hZ2VzLzIwMjUv/MDIvMDMvVVNBVC83/ODE5MTYzNzAwNy11/c2F0c2ktMjUyMDg0/OTAuanBnP2F1dG89/d2VicCZjcm9wPTE2/NzksOTQ1LHgwLHk4/NyZmb3JtYXQ9cGpw/ZyZ3aWR0aD0xMjAw",
+            "original": "https://www.gannett-cdn.com/authoring/authoring-images/2025/02/03/USAT/78191637007-usatsi-25208490.jpg?auto=webp&crop=1679,945,x0,y87&format=pjpg&width=1200",
+            "logo": false
+          },
+          "age": "February 5, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

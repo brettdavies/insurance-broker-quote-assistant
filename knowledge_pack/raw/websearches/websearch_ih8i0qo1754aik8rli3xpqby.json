@@ -1,0 +1,792 @@
+{
+  "websearch_id": "websearch_ih8i0qo1754aik8rli3xpqby",
+  "search_id": "search_oqakwlnajf0s70xmoekzhfva",
+  "timestamp": "2025-11-07T12:31:42.720457",
+  "startedAt": "2025-11-07T12:31:42.720457",
+  "completedAt": "2025-11-07T12:31:44.663697",
+  "durationSeconds": 1.94,
+  "urlsDiscoveredCount": 19,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"Florida\" \"Citizens Property Insurance\"",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"Florida\" \"Citizens Property Insurance\"",
+      "show_strict_warning": false,
+      "cleaned": "Florida Citizens Property Insurance",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "Florida Citizens Property Insurance"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Citizens Property Insurance Corporation - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Citizens_Property_Insurance_Corporation",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "By 1999, Florida Insurance Commissioner Bill Nelson stated that FRPCJUA and FWUA were close to shifting most of their 711,000 policies to private insurers. In 2002, the Florida Legislature passed legislation to merge the Florida Residential Property and Casualty Joint Underwriting Association (FRPCJUA) and the Florida Windstorm Underwriting Association (FWUA). This resulted in the creation of Citizens Property Insurance Corporation (Citizens), whose goal is to more efficiently and effectively provide insurance to, and serve the needs of, home-owners in high-risk areas and others who cannot find coverage in the open, private insurance market.",
+          "page_age": "2025-09-15T21:47:39",
+          "profile": {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Citizens_Property_Insurance_Corporation",
+            "long_name": "en.wikipedia.org",
+            "img": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "deep_results": {
+            "buttons": [
+              {
+                "type": "button_result",
+                "title": "History",
+                "url": "https://en.wikipedia.org/wiki/Citizens_Property_Insurance_Corporation#History"
+              },
+              {
+                "type": "button_result",
+                "title": "Post-recession",
+                "url": "https://en.wikipedia.org/wiki/Citizens_Property_Insurance_Corporation#Post-recession"
+              },
+              {
+                "type": "button_result",
+                "title": "Post Michael situation",
+                "url": "https://en.wikipedia.org/wiki/Citizens_Property_Insurance_Corporation#Post_Michael_situation"
+              },
+              {
+                "type": "button_result",
+                "title": "Depopulation",
+                "url": "https://en.wikipedia.org/wiki/Citizens_Property_Insurance_Corporation#Depopulation"
+              },
+              {
+                "type": "button_result",
+                "title": "End of crisis",
+                "url": "https://en.wikipedia.org/wiki/Citizens_Property_Insurance_Corporation#End_of_crisis"
+              },
+              {
+                "type": "button_result",
+                "title": "Problems remain",
+                "url": "https://en.wikipedia.org/wiki/Citizens_Property_Insurance_Corporation#Problems_remain"
+              }
+            ]
+          },
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "en.wikipedia.org",
+            "hostname": "en.wikipedia.org",
+            "favicon": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw",
+            "path": "\u203a wiki  \u203a Citizens_Property_Insurance_Corporation"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/NQ1WGUyOPUFrxTcO0OHgsvBkiOAyh5r0h71KN513cLA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy80/LzQ2L0NpdGl6ZW5z/TG9nby5wbmc",
+            "original": "https://upload.wikimedia.org/wikipedia/commons/4/46/CitizensLogo.png",
+            "logo": true
+          },
+          "age": "September 15, 2025"
+        },
+        {
+          "title": "Citizens Property Insurance Corporation: What Florida Homeowners Should Know | Blog | Vargas Gonzalez Delombard, LLP",
+          "url": "https://vargasgonzalez.com/blog/citizens-property-insurance-corporation-what-florida-homeowners-should-know/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Citizens Property Insurance Corporation is a state-run insurance company in Florida. It was created to help Florida residents who cannot get insurance from private companies. Citizens Insurance is meant to be a safety net.",
+          "page_age": "2025-10-27T11:23:00",
+          "profile": {
+            "name": "Vargasgonzalez",
+            "url": "https://vargasgonzalez.com/blog/citizens-property-insurance-corporation-what-florida-homeowners-should-know/",
+            "long_name": "vargasgonzalez.com",
+            "img": "https://imgs.search.brave.com/q-RoSkO1VHKhgh6YIZmX8a9kX7BsfPSnucQ60Udj4KE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjEwZTZhNWNl/ZDMyOGE2Njc1M2Zj/Y2Y3NWM2ZjVhNTAw/NzM1ODQ2MTMyYTdi/OTYyZDFhZDhiNTcx/MWQ5MjI0NS92YXJn/YXNnb256YWxlei5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "vargasgonzalez.com",
+            "hostname": "vargasgonzalez.com",
+            "favicon": "https://imgs.search.brave.com/q-RoSkO1VHKhgh6YIZmX8a9kX7BsfPSnucQ60Udj4KE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjEwZTZhNWNl/ZDMyOGE2Njc1M2Zj/Y2Y3NWM2ZjVhNTAw/NzM1ODQ2MTMyYTdi/OTYyZDFhZDhiNTcx/MWQ5MjI0NS92YXJn/YXNnb256YWxlei5j/b20v",
+            "path": "\u203a blog  \u203a citizens-property-insurance-corporation-what-florida-homeowners-should-know"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/0ogZamvgi7xR_jw0lzru8tOhu2fHCSQJPQzyok594sE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/ZGF0b2Ntcy1hc3Nl/dHMuY29tLzEzMDAy/MC8xNzE2OTIyMDk1/LXJlcXVlc3QtYS1m/cmVlLWNhc2UtZXZh/bHVhdGlvbi1iYW5u/ZXIuanBn",
+            "original": "https://www.datocms-assets.com/130020/1716922095-request-a-free-case-evaluation-banner.jpg",
+            "logo": false
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "Don\u2019t Look Now, But Citizens Is No Longer the Largest Property Insurer in Florida",
+          "url": "https://www.insurancejournal.com/news/southeast/2025/11/03/846101.htm",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Citizens Property Insurance Corp., the state-created insurer of last resort, is no longer the largest carrier in Florida. The ranking is seen as a",
+          "page_age": "2025-11-05T14:38:33",
+          "profile": {
+            "name": "Insurance Journal",
+            "url": "https://www.insurancejournal.com/news/southeast/2025/11/03/846101.htm",
+            "long_name": "insurancejournal.com",
+            "img": "https://imgs.search.brave.com/Z2NMt-hrP7caeNIt4HG4jkmmzjPBLwRv6v1cRD5nBlI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTVlY2IxMmJk/NDNlOGY1YjM3NzIy/MTNlYWViNGMzNmNj/N2NiNzdmYzdkMjFl/YTZjMzdkOWEwNDEw/YzQwZDNkNS93d3cu/aW5zdXJhbmNlam91/cm5hbC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurancejournal.com",
+            "hostname": "www.insurancejournal.com",
+            "favicon": "https://imgs.search.brave.com/Z2NMt-hrP7caeNIt4HG4jkmmzjPBLwRv6v1cRD5nBlI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTVlY2IxMmJk/NDNlOGY1YjM3NzIy/MTNlYWViNGMzNmNj/N2NiNzdmYzdkMjFl/YTZjMzdkOWEwNDEw/YzQwZDNkNS93d3cu/aW5zdXJhbmNlam91/cm5hbC5jb20v",
+            "path": "\u203a news  \u203a southeast  \u203a 2025  \u203a 11  \u203a 03  \u203a 846101.htm"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/WEYwYa-tkB1ayOgegpWFUCCnTNJeWu1e2w82_eigYvc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmNlam91/cm5hbC5jb20vYXBw/L3VwbG9hZHMvMjAy/NS8xMS9GbG9yaWRh/LXdlbGNvbWUtc2ln/bi1BZG9iZS0xLmpw/ZWc",
+            "original": "https://www.insurancejournal.com/app/uploads/2025/11/Florida-welcome-sign-Adobe-1.jpeg",
+            "logo": false
+          },
+          "age": "2 days ago"
+        },
+        {
+          "title": "Citizens Insurance Review 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/citizens-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "To qualify for a policy from Citizens, ... will roll out in several phases. Citizens Property Insurance Corporation of Florida is a nonprofit insurer operating in the state of Florida only....",
+          "page_age": "2025-09-25T21:00:32",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/citizens-insurance/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "September 25, 2025"
+        },
+        {
+          "title": "Three insurers approved to take over 135,000 Citizens Property Insurance policies | Insurance Business America",
+          "url": "https://www.insurancebusinessmag.com/us/news/catastrophe/three-insurers-approved-to-take-over-135000-citizens-property-insurance-policies-529534.aspx",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The depopulation effort has become a key strategy as state leaders try to stabilize Florida\u2019s troubled insurance market. Citizens had reached an unsustainable high of 1.4 million policies in 2023, making it the largest property insurer in ...",
+          "page_age": "2025-03-24T11:57:39",
+          "profile": {
+            "name": "Insurance Business America",
+            "url": "https://www.insurancebusinessmag.com/us/news/catastrophe/three-insurers-approved-to-take-over-135000-citizens-property-insurance-policies-529534.aspx",
+            "long_name": "insurancebusinessmag.com",
+            "img": "https://imgs.search.brave.com/wSqy0D5CYsTkoVvYpYyzSqvim_TavRxGYxAzncAes7s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2NlNGVmYjdh/YzAwNDJmMzQ2YTZm/M2QwZmJhODY3NGE1/NWYzYmRhNWY0NGFh/Mjg0NjA0ZGQyNGNk/Nzg0MTBiNC93d3cu/aW5zdXJhbmNlYnVz/aW5lc3NtYWcuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurancebusinessmag.com",
+            "hostname": "www.insurancebusinessmag.com",
+            "favicon": "https://imgs.search.brave.com/wSqy0D5CYsTkoVvYpYyzSqvim_TavRxGYxAzncAes7s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2NlNGVmYjdh/YzAwNDJmMzQ2YTZm/M2QwZmJhODY3NGE1/NWYzYmRhNWY0NGFh/Mjg0NjA0ZGQyNGNk/Nzg0MTBiNC93d3cu/aW5zdXJhbmNlYnVz/aW5lc3NtYWcuY29t/Lw",
+            "path": "  \u203a catastrophe & flood  \u203a three insurers approved to take over 135,000 citizens property insurance policies"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ur79dI_Jonympql-ZwUXsKZsLPHr_yf2tuLxjiCczF0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4t/cmVzLmtleW1lZGlh/LmNvbS9jbXMvaW1h/Z2VzL3VzLzAwMy8w/MzExXzYzODc4NDE0/MTQzMjAxNTUwOC5w/bmc",
+            "original": "https://cdn-res.keymedia.com/cms/images/us/003/0311_638784141432015508.png",
+            "logo": false
+          },
+          "age": "March 24, 2025"
+        },
+        {
+          "title": "Citizens Property Insurance paid $823 million for 2024 hurricane season claims \u2022 Florida Phoenix",
+          "url": "https://floridaphoenix.com/2025/01/14/citizens-property-insurance-paid-823-million-for-2024-hurricane-season-claims/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "(Photo by Joe Raedle/Getty Images) The state\u2019s insurer of last resort has paid about $823 million in claims related to the 2024 hurricane season, Citizens Property Insurance CEO Tim Cerio told state ...",
+          "page_age": "2025-01-14T20:20:53",
+          "profile": {
+            "name": "Florida Phoenix",
+            "url": "https://floridaphoenix.com/2025/01/14/citizens-property-insurance-paid-823-million-for-2024-hurricane-season-claims/",
+            "long_name": "floridaphoenix.com",
+            "img": "https://imgs.search.brave.com/q1F0-DAzIiexN7OB-GNbqmp18ki0tFNJ4YwfTV1y1BM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjJiMTljMjkw/YTgzODA2MmNhYzBh/MGE4YWZiMDY4NDlk/NWVhMTI3NzBjMjZh/YjQwY2M4ZGMyOTJm/M2JhZTZjNi9mbG9y/aWRhcGhvZW5peC5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "floridaphoenix.com",
+            "hostname": "floridaphoenix.com",
+            "favicon": "https://imgs.search.brave.com/q1F0-DAzIiexN7OB-GNbqmp18ki0tFNJ4YwfTV1y1BM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjJiMTljMjkw/YTgzODA2MmNhYzBh/MGE4YWZiMDY4NDlk/NWVhMTI3NzBjMjZh/YjQwY2M4ZGMyOTJm/M2JhZTZjNi9mbG9y/aWRhcGhvZW5peC5j/b20v",
+            "path": "  \u203a home  \u203a citizens property insurance paid $823 million for 2024 hurricane season claims"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/9MQnjuEOqWluLIov00O7r4KBMUJOjhb4A0L5Kh1sMoc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9mbG9y/aWRhcGhvZW5peC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjQvMTAvR2V0dHlJ/bWFnZXMtMjE3Nzc2/MDYwNS5qcGc",
+            "original": "https://floridaphoenix.com/wp-content/uploads/2024/10/GettyImages-2177760605.jpg",
+            "logo": false
+          },
+          "age": "January 14, 2025"
+        },
+        {
+          "title": "Private insurers assuming policies from Florida's Citizens Property Insurance Corporation | WUSF",
+          "url": "https://www.wusf.org/economy-business/2025-08-27/private-insurers-assuming-policies-floridas-citizens-property-insurance-corporation",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The orders signed last week would allow Manatee Insurance Exchange to assume up to 51,500 policies in November; Monarch National Insurance Co. to assume up to 25,000 in November; Universal North America Insurance Co. to assume up to 10,000 in November and December; Slide Insurance Co. to assume up to 1,000 in November; and Trident Reciprocal Exchange to assume up to 425 in November. The vast majority of the policies are what are known as residential multi-peril policies, while others are for such things as commercial residential coverage for apartment and condominium buildings. State leaders have tried to reduce the size of Citizens, at least in part, because of concerns about financial risks if Florida gets hit by a major hurricane or multiple hurricanes.",
+          "page_age": "2025-08-27T15:27:44",
+          "profile": {
+            "name": "WUSF Public Media",
+            "url": "https://www.wusf.org/economy-business/2025-08-27/private-insurers-assuming-policies-floridas-citizens-property-insurance-corporation",
+            "long_name": "wusf.org",
+            "img": "https://imgs.search.brave.com/d0DOcoKWZJFEqBiwYTlVOfICIBatLck0AE0j2FOzFo8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGQyYzZiODgw/YTg4YTAyNGQ5MjEx/NTRiMzNkY2Y4MjE1/YmIzYjM3YjFhMWVk/OGRjYWU5MTIyZmQw/N2I0Yjc4NC93d3cu/d3VzZi5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "wusf.org",
+            "hostname": "www.wusf.org",
+            "favicon": "https://imgs.search.brave.com/d0DOcoKWZJFEqBiwYTlVOfICIBatLck0AE0j2FOzFo8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGQyYzZiODgw/YTg4YTAyNGQ5MjEx/NTRiMzNkY2Y4MjE1/YmIzYjM3YjFhMWVk/OGRjYWU5MTIyZmQw/N2I0Yjc4NC93d3cu/d3VzZi5vcmcv",
+            "path": "  \u203a economy / business"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/9-YQPB5DanJnOfYwcwQnM0k9fIoYvruV_w7D-iPJIGc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9ucHIu/YnJpZ2h0c3BvdGNk/bi5jb20vNGIvZTMv/ZjE4Yjc1YzM0ZGYx/ODgyMGRlNDNlMTBk/OTQ1OC9ob21lb3du/ZXJzLWluc3VyYW5j/ZS5qcGc",
+            "original": "https://npr.brightspotcdn.com/4b/e3/f18b75c34df18820de43e10d9458/homeowners-insurance.jpg",
+            "logo": false
+          },
+          "age": "August 27, 2025"
+        },
+        {
+          "title": "Citizens Property Insurance Review 2025: Coverage and Discounts - NerdWallet",
+          "url": "https://www.nerdwallet.com/insurance/homeowners/citizens-property-insurance-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Citizens Property Insurance was created in 2002 by the Florida legislature to provide coverage for homeowners who couldn\u2019t find insurance on the private market. But today, what was designed to be a \u201clast resort\u201d option has ballooned into one of the state\u2019s largest insurers.",
+          "page_age": "2025-09-08T16:25:50",
+          "profile": {
+            "name": "NerdWallet",
+            "url": "https://www.nerdwallet.com/insurance/homeowners/citizens-property-insurance-review",
+            "long_name": "nerdwallet.com",
+            "img": "https://imgs.search.brave.com/8r72GokQ4UXZ6V4PobxSGta-ben5011_C3meSKoOMl4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGFhYzY5MDhh/NTNhODNhYjliNWNm/MTE4YTNmOGE3NjVj/M2FmMDcwMzhhMzQx/MThmYjQ2MzcxMjQy/ZDgwNTkzZS93d3cu/bmVyZHdhbGxldC5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "nerdwallet.com",
+            "hostname": "www.nerdwallet.com",
+            "favicon": "https://imgs.search.brave.com/8r72GokQ4UXZ6V4PobxSGta-ben5011_C3meSKoOMl4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGFhYzY5MDhh/NTNhODNhYjliNWNm/MTE4YTNmOGE3NjVj/M2FmMDcwMzhhMzQx/MThmYjQ2MzcxMjQy/ZDgwNTkzZS93d3cu/bmVyZHdhbGxldC5j/b20v",
+            "path": "  \u203a back to nerdwallet homepage  \u203a insurance  \u203a citizens property insurance review 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/AltODWTp0Nl_KVqb_SFjRGk6Q0nVtLfU_anf4STOoL8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bmVyZHdhbGxldC5j/b20vYXNzZXRzL2Js/b2cvd3AtY29udGVu/dC91cGxvYWRzLzIw/MjMvMTEvR2V0dHlJ/bWFnZXMtMTQ1OTM0/MDIwMi0xLWUxNjk5/Mjk5NTc3Mjc0LTE0/NDB4ODY0LmpwZw",
+            "original": "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2023/11/GettyImages-1459340202-1-e1699299577274-1440x864.jpg",
+            "logo": false
+          },
+          "age": "September 8, 2025"
+        },
+        {
+          "title": "Florida's Citizens property insurance count inches up",
+          "url": "https://www.gulfcoastnewsnow.com/article/citizens-property-insurance-florida-increase/63422172",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The number of customers of the state\u2019s Citizens Property Insurance Corp. increased slightly last week but has remained stable over the past three weeks.Related video above &gt;&gt; No Florida state Senators willing to sponsor insurance bill Data posted on the Citizens website showed it had 936,943 policies as of Friday, up from 935,576 policies a week earlier and 936,203 two weeks earlier.Citizens was created as an insurer of last resort but grew to become the state\u2019s largest insurer in recent years because of financial problems among private carriers.After reaching as many as 1.412 million policies in 2023, Citizens has used what is known as a \u201cdepopulation\u201d program to shift policies to private insurers.It dipped below 1 million policies in November.",
+          "page_age": "2025-01-16T18:04:14",
+          "profile": {
+            "name": "Gulf Coast News Now",
+            "url": "https://www.gulfcoastnewsnow.com/article/citizens-property-insurance-florida-increase/63422172",
+            "long_name": "gulfcoastnewsnow.com",
+            "img": "https://imgs.search.brave.com/SX6bfK_e5---d5KU-mpmwXERl024PvmmJ0ElStdu6pU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWI1NDM0YWFm/NjFhMDliN2NjZDc3/ZGZiNmJlOWRiYzg1/NWE2OGNlNTcyM2M5/MDQ0NGRkNTUzMzJj/ZjNmMWNmMy93d3cu/Z3VsZmNvYXN0bmV3/c25vdy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "gulfcoastnewsnow.com",
+            "hostname": "www.gulfcoastnewsnow.com",
+            "favicon": "https://imgs.search.brave.com/SX6bfK_e5---d5KU-mpmwXERl024PvmmJ0ElStdu6pU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWI1NDM0YWFm/NjFhMDliN2NjZDc3/ZGZiNmJlOWRiYzg1/NWE2OGNlNTcyM2M5/MDQ0NGRkNTUzMzJj/ZjNmMWNmMy93d3cu/Z3VsZmNvYXN0bmV3/c25vdy5jb20v",
+            "path": "\u203a article  \u203a citizens-property-insurance-florida-increase  \u203a 63422172"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/xP2Y4fuSYzClg9eWPZngGuBrz09y6tZI7C_U9sKJkqU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9rdWJy/aWNrLmh0dmFwcHMu/Y29tL2h0di1wcm9k/LW1lZGlhLnMzLmFt/YXpvbmF3cy5jb20v/aW1hZ2VzL21hdGxh/Y2hhLTY3MDZiMWFm/ZDkyOWEuanBnP2Ny/b3A9MS4wMHh3OjAu/NzUyeGg7MCwwLjE0/NnhoJnJlc2l6ZT0x/MjAwOio",
+            "original": "https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/matlacha-6706b1afd929a.jpg?crop=1.00xw:0.752xh;0,0.146xh&resize=1200:*",
+            "logo": false
+          },
+          "age": "January 16, 2025"
+        },
+        {
+          "title": "Citizens Property Insurance Corp. gaining ground | Jax Daily Record",
+          "url": "https://www.jaxdailyrecord.com/news/2025/jul/25/citizens-property-insurance-corp-gaining-ground/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Citizens was created in 2002 from the merger of two entities to provide windstorm coverage and general property insurance for homeowners who could not obtain insurance elsewhere. It was established by the Florida Legislature as a not-for-profit ...",
+          "page_age": "2025-07-25T04:00:00",
+          "profile": {
+            "name": "Jax Daily Record",
+            "url": "https://www.jaxdailyrecord.com/news/2025/jul/25/citizens-property-insurance-corp-gaining-ground/",
+            "long_name": "jaxdailyrecord.com",
+            "img": "https://imgs.search.brave.com/Y8GlCpifLs0OJFj3-fkVqW-VGyomEiEdI08HcbbqMqY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjdiODE5YTFk/MTc4MGNmYjJjNGIw/NjE5NmE2ZDVhN2Ux/MDIxYTUwZDkwMWJm/NDlmNWFlNzI0ZGI3/NjQ2NzJlZC93d3cu/amF4ZGFpbHlyZWNv/cmQuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "jaxdailyrecord.com",
+            "hostname": "www.jaxdailyrecord.com",
+            "favicon": "https://imgs.search.brave.com/Y8GlCpifLs0OJFj3-fkVqW-VGyomEiEdI08HcbbqMqY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjdiODE5YTFk/MTc4MGNmYjJjNGIw/NjE5NmE2ZDVhN2Ux/MDIxYTUwZDkwMWJm/NDlmNWFlNzI0ZGI3/NjQ2NzJlZC93d3cu/amF4ZGFpbHlyZWNv/cmQuY29tLw",
+            "path": "\u203a news  \u203a 2025  \u203a jul  \u203a 25  \u203a citizens-property-insurance-corp-gaining-ground"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/MNRahe81WTjUgCQMRPDDb4pHK2rQtHBQAnoMOBkDcYA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS55b3Vyb2JzZXJ2/ZXIuY29tL2ltZy9w/aG90b3MvMjAyNS8w/Ny8yNC9jaXRpemVu/c19ldmVyYmFua19i/dWlsZGluZ190MTEw/MF9yODcweDU4MC5q/cGc_M2NmNDVjMWZj/ZDM1ZDdjOGZiNWQ3/OGFhMGEwMDExM2Rk/M2M3ODQwOA",
+            "original": "https://media.yourobserver.com/img/photos/2025/07/24/citizens_everbank_building_t1100_r870x580.jpg?3cf45c1fcd35d7c8fb5d78aa0a00113dd3c78408",
+            "logo": false
+          },
+          "age": "July 25, 2025"
+        },
+        {
+          "title": "Florida's Citizens Insurance to cut rates by 5.6% in 2025 | Insurance Business America",
+          "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/floridas-citizens-insurance-to-cut-rates-by-5-6-in-2025-523903.aspx",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Florida\u2019s Citizens Property Insurance Corp. will reduce rates by an average of 5.6% statewide in 2025, according to Gov.",
+          "page_age": "2025-02-07T15:29:06",
+          "profile": {
+            "name": "Insurance Business",
+            "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/floridas-citizens-insurance-to-cut-rates-by-5-6-in-2025-523903.aspx",
+            "long_name": "insurancebusinessmag.com",
+            "img": "https://imgs.search.brave.com/wSqy0D5CYsTkoVvYpYyzSqvim_TavRxGYxAzncAes7s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2NlNGVmYjdh/YzAwNDJmMzQ2YTZm/M2QwZmJhODY3NGE1/NWYzYmRhNWY0NGFh/Mjg0NjA0ZGQyNGNk/Nzg0MTBiNC93d3cu/aW5zdXJhbmNlYnVz/aW5lc3NtYWcuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurancebusinessmag.com",
+            "hostname": "www.insurancebusinessmag.com",
+            "favicon": "https://imgs.search.brave.com/wSqy0D5CYsTkoVvYpYyzSqvim_TavRxGYxAzncAes7s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2NlNGVmYjdh/YzAwNDJmMzQ2YTZm/M2QwZmJhODY3NGE1/NWYzYmRhNWY0NGFh/Mjg0NjA0ZGQyNGNk/Nzg0MTBiNC93d3cu/aW5zdXJhbmNlYnVz/aW5lc3NtYWcuY29t/Lw",
+            "path": "  \u203a insurance news  \u203a florida's citizens insurance to cut rates by 5.6% in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/C1XPDyfUkvJJ9wUVPb5DF7Oeg5w1-bBSJvs4AeL5C8w/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4t/cmVzLmtleW1lZGlh/LmNvbS9jbXMvaW1h/Z2VzL3VzLzAwMy8w/MzU2XzYzODc0NTM4/ODkwODY0OTUyNS5q/cGc",
+            "original": "https://cdn-res.keymedia.com/cms/images/us/003/0356_638745388908649525.jpg",
+            "logo": false
+          },
+          "age": "February 7, 2025"
+        },
+        {
+          "title": "Florida regulators approve new rates for Citizens with changes taking effect June 1 | FOX 13 Tampa Bay",
+          "url": "https://www.fox13news.com/news/florida-regulators-approve-new-rates-citizens-changes-taking-effect-june-1",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "TALLAHASSEE, Fla. - Florida regulators have approved new rates for the state\u2019s Citizens Property Insurance Corp., with premiums for the most-common type of homeowners policy increasing by a statewide average of 6.6 percent.",
+          "page_age": "2025-02-10T15:35:13",
+          "profile": {
+            "name": "FOX 13 Tampa Bay",
+            "url": "https://www.fox13news.com/news/florida-regulators-approve-new-rates-citizens-changes-taking-effect-june-1",
+            "long_name": "fox13news.com",
+            "img": "https://imgs.search.brave.com/PC8dIFWFEXj1uOfrYlJ86oHIuP_vk6wgj5Mse-3y8wU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzY2MWYxNDQx/ZjVkNTBmZjU0YzQ4/NGZhNmNlMTczODE0/OGU5OTJjNjUwZmQ0/NTc1MTI3NjRjOTIz/MmY3YTcwOS93d3cu/Zm94MTNuZXdzLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "fox13news.com",
+            "hostname": "www.fox13news.com",
+            "favicon": "https://imgs.search.brave.com/PC8dIFWFEXj1uOfrYlJ86oHIuP_vk6wgj5Mse-3y8wU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzY2MWYxNDQx/ZjVkNTBmZjU0YzQ4/NGZhNmNlMTczODE0/OGU5OTJjNjUwZmQ0/NTc1MTI3NjRjOTIz/MmY3YTcwOS93d3cu/Zm94MTNuZXdzLmNv/bS8",
+            "path": "\u203a news  \u203a florida-regulators-approve-new-rates-citizens-changes-taking-effect-june-1"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/t4_rpAJ49wTp-KhgqXuEAdDxvvKNJHB4t3--oR-c6O0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuZm94MTNuZXdz/LmNvbS93d3cuZm94/MTNuZXdzLmNvbS9j/b250ZW50L3VwbG9h/ZHMvMjAyNC8wMi92/bGNzbmFwLTIwMjQt/MDItMDgtMTBoMjdt/MDVzNTYwLmpwZw",
+            "original": "https://static.fox13news.com/www.fox13news.com/content/uploads/2024/02/vlcsnap-2024-02-08-10h27m05s560.jpg",
+            "logo": false
+          },
+          "age": "February 10, 2025"
+        },
+        {
+          "title": "Citizens Insurance moves 355,000 Florida homeowners to private insurers as takeout efforts continue",
+          "url": "https://www.wptv.com/money/real-estate-news/citizens-insurance-moves-350-000-florida-homeowners-to-private-insurers-as-takeout-efforts-continue",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Citizens Property Insurance Corporation \u00b7 By: Matt Sczesny \u00b7 Posted \u00b7 and last updated \u00b7 LAKE WORTH BEACH, Fla. \u2014 Citizens Insurance has successfully moved about 355,000 policies off its books this year, with 42% of those homeowners ...",
+          "page_age": "2025-10-31T21:35:47",
+          "profile": {
+            "name": "WPTV",
+            "url": "https://www.wptv.com/money/real-estate-news/citizens-insurance-moves-350-000-florida-homeowners-to-private-insurers-as-takeout-efforts-continue",
+            "long_name": "wptv.com",
+            "img": "https://imgs.search.brave.com/9CA2eHlc-e3mIQS5P9cYHLrWSZdahOJbAb-hxau6kxk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzQwOGE5ZTY0/NTUxNDU5YTdhNGM4/NmVlMWJmOWM0NDZi/N2U4NTAxNDE2MThj/MzViNTc1NDU0ZGM5/ZGNiZjUwNS93d3cu/d3B0di5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "wptv.com",
+            "hostname": "www.wptv.com",
+            "favicon": "https://imgs.search.brave.com/9CA2eHlc-e3mIQS5P9cYHLrWSZdahOJbAb-hxau6kxk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzQwOGE5ZTY0/NTUxNDU5YTdhNGM4/NmVlMWJmOWM0NDZi/N2U4NTAxNDE2MThj/MzViNTc1NDU0ZGM5/ZGNiZjUwNS93d3cu/d3B0di5jb20v",
+            "path": "\u203a money  \u203a real-estate-news  \u203a citizens-insurance-moves-350-000-florida-homeowners-to-private-insurers-as-takeout-efforts-continue"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/58GaJ0PsWHqLWYSX4xoWAx7XDTiY93Uox0YW31FDSeY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9ld3Nj/cmlwcHMuYnJpZ2h0/c3BvdGNkbi5jb20v/ZGltczQvZGVmYXVs/dC8yMTY5MTAyLzIx/NDc0ODM2NDcvc3Ry/aXAvdHJ1ZS9jcm9w/LzEyODB4NjcyKzAr/MjQvcmVzaXplLzEy/MDB4NjMwIS9xdWFs/aXR5LzkwLz91cmw9/aHR0cCUzQSUyRiUy/RmV3c2NyaXBwcy1i/cmlnaHRzcG90LnMz/LmFtYXpvbmF3cy5j/b20lMkY3NCUyRmVh/JTJGZGM5M2VhN2Y0/ZjJhOGUwNGU1MjI3/YjVjZTgzNCUyRmNp/dGl6ZW5zLXByb3Bl/cnR5LWluc3VyYW5j/ZS5qcGc",
+            "original": "https://ewscripps.brightspotcdn.com/dims4/default/2169102/2147483647/strip/true/crop/1280x672+0+24/resize/1200x630!/quality/90/?url=http%3A%2F%2Fewscripps-brightspot.s3.amazonaws.com%2F74%2Fea%2Fdc93ea7f4f2a8e04e5227b5ce834%2Fcitizens-property-insurance.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Property insurance companies get the OK to take over more Florida Citizens policies",
+          "url": "https://www.clickorlando.com/news/florida/2025/03/22/property-insurance-companies-get-the-ok-to-take-over-more-florida-citizens-policies/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "TALLAHASSEE, Fla. \u2013 Florida regulators this week approved proposals by three insurers to take as many as 135,540 policies in June from the state\u2019s Citizens Property Insurance Corp., as some carriers use the process of assuming Citizens policies to help fuel growth.",
+          "page_age": "2025-03-22T13:55:54",
+          "profile": {
+            "name": "ClickOrlando",
+            "url": "https://www.clickorlando.com/news/florida/2025/03/22/property-insurance-companies-get-the-ok-to-take-over-more-florida-citizens-policies/",
+            "long_name": "clickorlando.com",
+            "img": "https://imgs.search.brave.com/ZN-sLVdp_do8O8IQLPLaavxZ9M5JzSSmx04f00rDMS4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDY2NjllZWU3/MDk3MDYwMjNjMDg2/ODA4NDc4ZGRjOTc1/MmNiY2IzMzkxY2M3/NGU0ZWY2MmE0Zjc5/OTgzOTJjMi93d3cu/Y2xpY2tvcmxhbmRv/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "clickorlando.com",
+            "hostname": "www.clickorlando.com",
+            "favicon": "https://imgs.search.brave.com/ZN-sLVdp_do8O8IQLPLaavxZ9M5JzSSmx04f00rDMS4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDY2NjllZWU3/MDk3MDYwMjNjMDg2/ODA4NDc4ZGRjOTc1/MmNiY2IzMzkxY2M3/NGU0ZWY2MmE0Zjc5/OTgzOTJjMi93d3cu/Y2xpY2tvcmxhbmRv/LmNvbS8",
+            "path": "\u203a news  \u203a florida  \u203a 2025  \u203a 03  \u203a 22  \u203a property-insurance-companies-get-the-ok-to-take-over-more-florida-citizens-policies"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/M9ijGoGBYGDCV_Sy9GQMX2a_7ZSFeuXnmP4KRnqQud4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vZ3JhaGFtLW1l/ZGlhLWdyb3VwL2lt/YWdlL3VwbG9hZC9m/X2F1dG8vcV9hdXRv/L2NfdGh1bWIsd183/MDAvdjEvbWVkaWEv/Z21nL1I3VFRWM1BJ/U0ZHUzdIUUZYMzU0/RTdYQUlJLnBuZz9f/YT1EQVRBZzFlQVpB/QTA",
+            "original": "https://res.cloudinary.com/graham-media-group/image/upload/f_auto/q_auto/c_thumb,w_700/v1/media/gmg/R7TTV3PISFGS7HQFX354E7XAII.png?_a=DATAg1eAZAA0",
+            "logo": false
+          },
+          "age": "March 22, 2025"
+        },
+        {
+          "title": "Florida Peninsula Insurance is approved to take policies from Citizens - WMNF 88.5 FM",
+          "url": "https://www.wmnf.org/florida-peninsula-insurance-approved-take-policies-from-citizens/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Continuing to try to shrink the state\u2019s Citizens Property Insurance Corp., regulators Tuesday approved a proposal by Florida Peninsula Insurance Co. to assume up to 40,000 Citizens policies in October. An order posted on the state Office of Insurance Regulation website said Florida Peninsula would assume policies around Oct.",
+          "page_age": "2025-07-16T16:41:06",
+          "profile": {
+            "name": "WMNF",
+            "url": "https://www.wmnf.org/florida-peninsula-insurance-approved-take-policies-from-citizens/",
+            "long_name": "wmnf.org",
+            "img": "https://imgs.search.brave.com/EZtPG8Vb6FWDBfKwNAz3cuY1huO4QHNcKlN7Tt9_bzU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2RhYjJkNDAw/NGE2YmQyMjI5NWI2/NDY2MmI5NGE2ZjVi/NDIwZTY2MjA0ODIw/NjY3ZTY5OTRmMjE4/NGRmNmI3NC93d3cu/d21uZi5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "wmnf.org",
+            "hostname": "www.wmnf.org",
+            "favicon": "https://imgs.search.brave.com/EZtPG8Vb6FWDBfKwNAz3cuY1huO4QHNcKlN7Tt9_bzU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2RhYjJkNDAw/NGE2YmQyMjI5NWI2/NDY2MmI5NGE2ZjVi/NDIwZTY2MjA0ODIw/NjY3ZTY5OTRmMjE4/NGRmNmI3NC93d3cu/d21uZi5vcmcv",
+            "path": "  \u203a home  \u203a blog  \u203a news and public affairs  \u203a florida peninsula insurance is approved to take policies from citizens"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/BtT3rpryHdaMmOBCM7Kqomx2HnZoqGwGKwnQt5ZNfbA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/d21uZi5vcmcvd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMTAv/cHJvcGVydHktaW5z/dXJhbmNlLWhvbWVv/d25lcnMtYnktZGVz/aWduZXI0OTEtdmlh/LWlTdG9jay1mb3It/d21uZi1uZXdzLmpw/Zw",
+            "original": "https://cdn.wmnf.org/wp-content/uploads/2023/10/property-insurance-homeowners-by-designer491-via-iStock-for-wmnf-news.jpg",
+            "logo": false
+          },
+          "age": "July 16, 2025"
+        },
+        {
+          "title": "Florida\u2019s Citizens Property Insurance Wins Most of Its Claim Disputes in Mandatory Arbitration \u2014 ProPublica",
+          "url": "https://www.propublica.org/article/citizens-property-insurance-florida-arbitration-cases",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The call was the beginning of the Kilfoils\u2019 journey through an alternate legal universe set up by Citizens, a quasi-governmental insurer in Florida, to reduce its staggering legal costs. In this state-sanctioned world, the judges\u2019 salaries are funded by Citizens, the rules followed in Florida\u2019s circuit courts don\u2019t all apply and the insurance company almost always triumphs.",
+          "page_age": "2025-09-15T15:05:29",
+          "profile": {
+            "name": "ProPublica",
+            "url": "https://www.propublica.org/article/citizens-property-insurance-florida-arbitration-cases",
+            "long_name": "propublica.org",
+            "img": "https://imgs.search.brave.com/CI6S435KnIPTeJyb50pEYOSiE5E34fddDlUqTq1g3K4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzM3Yzc0ZWI1/OWJlMmM3YWM5ODE3/YTUzNDI5MzhhMzli/Yzg3NDRiMTExMmEw/YTMzNjI1NDMyNGFm/ZjIxOGQyZS93d3cu/cHJvcHVibGljYS5v/cmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "propublica.org",
+            "hostname": "www.propublica.org",
+            "favicon": "https://imgs.search.brave.com/CI6S435KnIPTeJyb50pEYOSiE5E34fddDlUqTq1g3K4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzM3Yzc0ZWI1/OWJlMmM3YWM5ODE3/YTUzNDI5MzhhMzli/Yzg3NDRiMTExMmEw/YTMzNjI1NDMyNGFm/ZjIxOGQyZS93d3cu/cHJvcHVibGljYS5v/cmcv",
+            "path": "  \u203a home  \u203a archive  \u203a a florida home insurer was allowed to bypass the courts during claim disputes. it won more than 90% of the time."
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/EAYs714nIPhCpujvv6PjdSaC6gvD65xlygzzcwnnQ04/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cHJvcHVibGljYS5v/cmcvd3AtY29udGVu/dC91cGxvYWRzLzIw/MjUvMDkvMjAyNTA1/MjMtR29yZG9uLUNp/dGl6ZW5zLUluc3Vy/YW5jZS0zeDItcHJv/bW9fMjAyNS0wNS0y/OC0xNTA3MjJfanVw/dS5qcGc",
+            "original": "https://www.propublica.org/wp-content/uploads/2025/09/20250523-Gordon-Citizens-Insurance-3x2-promo_2025-05-28-150722_jupu.jpg",
+            "logo": false
+          },
+          "age": "September 15, 2025"
+        },
+        {
+          "title": "Citizens Property Insurance Corp. sheds 100,000 policies \u2013 NBC 6 South Florida",
+          "url": "https://www.nbcmiami.com/news/local/citizens-property-insurance-corp-sheds-100000-policies/3552938/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Florida \u00b7 BOOKMARKER \u00b7 The state\u2019s Citizens Property Insurance Corp. last week shed about 100,000 policies, with its number of customers dropping to the lowest total in nearly three years.",
+          "page_age": "2025-02-26T19:03:13",
+          "profile": {
+            "name": "NBC 6 South Florida",
+            "url": "https://www.nbcmiami.com/news/local/citizens-property-insurance-corp-sheds-100000-policies/3552938/",
+            "long_name": "nbcmiami.com",
+            "img": "https://imgs.search.brave.com/VHi_dmsWolMDPYJ1_9qbH8H7pU7_BGGNrP6K1Tz1mFA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjM2Y2ZkOGRm/YmU0ZmVlNzA1ZmUz/ODRkNTRlYjVhZDY2/MWM1YWE2YzFhNDFi/NTg2MTlkOTRmY2E2/ZjAwYjc0Ny93d3cu/bmJjbWlhbWkuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "nbcmiami.com",
+            "hostname": "www.nbcmiami.com",
+            "favicon": "https://imgs.search.brave.com/VHi_dmsWolMDPYJ1_9qbH8H7pU7_BGGNrP6K1Tz1mFA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjM2Y2ZkOGRm/YmU0ZmVlNzA1ZmUz/ODRkNTRlYjVhZDY2/MWM1YWE2YzFhNDFi/NTg2MTlkOTRmY2E2/ZjAwYjc0Ny93d3cu/bmJjbWlhbWkuY29t/Lw",
+            "path": "\u203a news  \u203a local  \u203a citizens-property-insurance-corp-sheds-100000-policies  \u203a 3552938"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/VpnslsjNgQgRfS18c318s0u-ggBgxGjU_NxEJP3eDAY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5uYmNtaWFtaS5j/b20vMjAyMy8wOC8y/MDIzMDgyM19JbnN1/cmFuY2VfRXhscGFp/bmVyX0xhdXJhLjAw/XzAwXzI2XzAwLlN0/aWxsMDAxLmpwZz9x/dWFsaXR5PTg1JnN0/cmlwPWFsbCZyZXNp/emU9MTIwMCUyQzY3/NQ",
+            "original": "https://media.nbcmiami.com/2023/08/20230823_Insurance_Exlpainer_Laura.00_00_26_00.Still001.jpg?quality=85&strip=all&resize=1200%2C675",
+            "logo": false
+          },
+          "age": "February 26, 2025"
+        },
+        {
+          "title": "Florida property insurance sees positive shift as Citizens shrinks | Insurance Business America",
+          "url": "https://www.insurancebusinessmag.com/us/news/property/florida-property-insurance-sees-positive-shift-as-citizens-shrinks-516869.aspx",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "For the first time in more than two years, Citizens Property Insurance Corporation announced that it has reduced its policy count below 1 million as the Florida property insurance market shows signs of recovery.",
+          "page_age": "2024-12-05T16:20:34",
+          "profile": {
+            "name": "Insurance Business America",
+            "url": "https://www.insurancebusinessmag.com/us/news/property/florida-property-insurance-sees-positive-shift-as-citizens-shrinks-516869.aspx",
+            "long_name": "insurancebusinessmag.com",
+            "img": "https://imgs.search.brave.com/wSqy0D5CYsTkoVvYpYyzSqvim_TavRxGYxAzncAes7s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2NlNGVmYjdh/YzAwNDJmMzQ2YTZm/M2QwZmJhODY3NGE1/NWYzYmRhNWY0NGFh/Mjg0NjA0ZGQyNGNk/Nzg0MTBiNC93d3cu/aW5zdXJhbmNlYnVz/aW5lc3NtYWcuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurancebusinessmag.com",
+            "hostname": "www.insurancebusinessmag.com",
+            "favicon": "https://imgs.search.brave.com/wSqy0D5CYsTkoVvYpYyzSqvim_TavRxGYxAzncAes7s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2NlNGVmYjdh/YzAwNDJmMzQ2YTZm/M2QwZmJhODY3NGE1/NWYzYmRhNWY0NGFh/Mjg0NjA0ZGQyNGNk/Nzg0MTBiNC93d3cu/aW5zdXJhbmNlYnVz/aW5lc3NtYWcuY29t/Lw",
+            "path": "  \u203a property  \u203a florida property insurance sees positive shift as citizens shrinks"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/E9iwf2gjJUKu8qSJq0q9GAQoqZXkFo0SpiNTllGOPnk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4t/cmVzLmtleW1lZGlh/LmNvbS9jbXMvaW1h/Z2VzL3VzLzAwMy8w/MjcwXzYzODY5MDEy/NTE2OTYzMTkyMC5q/cGc",
+            "original": "https://cdn-res.keymedia.com/cms/images/us/003/0270_638690125169631920.jpg",
+            "logo": false
+          },
+          "age": "December 5, 2024"
+        },
+        {
+          "title": "Florida court rules against Citizens Property Insurance in dispute with homeowner | Insurance Business America",
+          "url": "https://www.insurancebusinessmag.com/us/news/legal-insights/florida-court-rules-against-citizens-property-insurance-in-dispute-with-homeowner-526880.aspx",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The case arose from a property damage dispute in which Mayra Avila, a Florida homeowner, filed a claim with Citizens Property Insurance Corporation, the state-backed insurer of last resort.",
+          "page_age": "2025-03-03T12:56:06",
+          "profile": {
+            "name": "Insurance Business America",
+            "url": "https://www.insurancebusinessmag.com/us/news/legal-insights/florida-court-rules-against-citizens-property-insurance-in-dispute-with-homeowner-526880.aspx",
+            "long_name": "insurancebusinessmag.com",
+            "img": "https://imgs.search.brave.com/wSqy0D5CYsTkoVvYpYyzSqvim_TavRxGYxAzncAes7s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2NlNGVmYjdh/YzAwNDJmMzQ2YTZm/M2QwZmJhODY3NGE1/NWYzYmRhNWY0NGFh/Mjg0NjA0ZGQyNGNk/Nzg0MTBiNC93d3cu/aW5zdXJhbmNlYnVz/aW5lc3NtYWcuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurancebusinessmag.com",
+            "hostname": "www.insurancebusinessmag.com",
+            "favicon": "https://imgs.search.brave.com/wSqy0D5CYsTkoVvYpYyzSqvim_TavRxGYxAzncAes7s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2NlNGVmYjdh/YzAwNDJmMzQ2YTZm/M2QwZmJhODY3NGE1/NWYzYmRhNWY0NGFh/Mjg0NjA0ZGQyNGNk/Nzg0MTBiNC93d3cu/aW5zdXJhbmNlYnVz/aW5lc3NtYWcuY29t/Lw",
+            "path": "  \u203a legal insights  \u203a florida court rules against citizens property insurance in dispute with homeowner"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/LDaDfXmmDYrVx2OOd9kcdu57TaRlyz9ynH4UF6KtfTA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4t/cmVzLmtleW1lZGlh/LmNvbS9jbXMvaW1h/Z2VzL3VzLzAwMy8w/MzExXzYzODc2NjAz/MTM4ODgzNDgwOS5w/bmc",
+            "original": "https://cdn-res.keymedia.com/cms/images/us/003/0311_638766031388834809.png",
+            "logo": false
+          },
+          "age": "March 3, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

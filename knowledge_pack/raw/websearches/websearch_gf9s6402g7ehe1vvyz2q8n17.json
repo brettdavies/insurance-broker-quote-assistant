@@ -1,0 +1,800 @@
+{
+  "websearch_id": "websearch_gf9s6402g7ehe1vvyz2q8n17",
+  "search_id": "search_d74elagblpkxhrdc2s73xlm9",
+  "timestamp": "2025-11-07T12:29:31.496151",
+  "startedAt": "2025-11-07T12:29:31.496151",
+  "completedAt": "2025-11-07T12:29:33.471500",
+  "durationSeconds": 1.98,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"State Farm\" average cost California",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"State Farm\" average cost California",
+      "show_strict_warning": false,
+      "cleaned": "State Farm average cost California",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "State Farm average cost California"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "State Farm in California",
+          "url": "https://newsroom.statefarm.com/state-farm-general-insurance-company-update-on-california-2-2025/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In spite of the elevated risk and ... average. In fact, over the last nine years, State Farm General paid $1.26 for every premium dollar collected, resulting in over $5 billion in cumulative losses....",
+          "page_age": "2025-06-30T05:41:00",
+          "profile": {
+            "name": "State Farm",
+            "url": "https://newsroom.statefarm.com/state-farm-general-insurance-company-update-on-california-2-2025/",
+            "long_name": "newsroom.statefarm.com",
+            "img": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsroom.statefarm.com",
+            "hostname": "newsroom.statefarm.com",
+            "favicon": "https://imgs.search.brave.com/4s_J01A6trRWFAwM8d3r2zgk5SlzL9QrV7tGIYKJIaY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIyZTE4YzUy/ZDFlMjE5ZTZhZDc0/MzdkM2QwMDZhMjJk/NWUyYzE0NzE3MDk1/OWU5OWM4MGVmNjQz/NWZmYTI3My9uZXdz/cm9vbS5zdGF0ZWZh/cm0uY29tLw",
+            "path": "\u203a state-farm-general-insurance-company-update-on-california-2-2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YVmJZtJCqCB4tpzwJtXCDgRC7cp5p1sLLtCkHfMD3W4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LnByZXNzcGFn/ZS5jb20vdXBsb2Fk/cy8xNDQxL2Y1M2Fj/NzliLTUyMDMtNDc5/OS1iNWIyLTI4Mjdi/MTliYmM0OS8xOTIw/XzI1MDIxNC1jYWxp/Zm9ybmlhLXVwZGF0/ZS1idy5wbmc_MTAw/MDA",
+            "original": "https://content.presspage.com/uploads/1441/f53ac79b-5203-4799-b5b2-2827b19bbc49/1920_250214-california-update-bw.png?10000",
+            "logo": false
+          },
+          "age": "June 30, 2025"
+        },
+        {
+          "title": "Climate Group Says State Farm Rate Hike to Cost California Homeowners $1,000",
+          "url": "https://www.insurancejournal.com/news/national/2025/06/13/827210.htm",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "A report from a climate activist group says State Farm\u2019s rate increases, if approved, would cost the average California homeowner more than $1,000.",
+          "page_age": "2025-06-13T06:27:27",
+          "profile": {
+            "name": "Insurance Journal",
+            "url": "https://www.insurancejournal.com/news/national/2025/06/13/827210.htm",
+            "long_name": "insurancejournal.com",
+            "img": "https://imgs.search.brave.com/Z2NMt-hrP7caeNIt4HG4jkmmzjPBLwRv6v1cRD5nBlI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTVlY2IxMmJk/NDNlOGY1YjM3NzIy/MTNlYWViNGMzNmNj/N2NiNzdmYzdkMjFl/YTZjMzdkOWEwNDEw/YzQwZDNkNS93d3cu/aW5zdXJhbmNlam91/cm5hbC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurancejournal.com",
+            "hostname": "www.insurancejournal.com",
+            "favicon": "https://imgs.search.brave.com/Z2NMt-hrP7caeNIt4HG4jkmmzjPBLwRv6v1cRD5nBlI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTVlY2IxMmJk/NDNlOGY1YjM3NzIy/MTNlYWViNGMzNmNj/N2NiNzdmYzdkMjFl/YTZjMzdkOWEwNDEw/YzQwZDNkNS93d3cu/aW5zdXJhbmNlam91/cm5hbC5jb20v",
+            "path": "\u203a news  \u203a national  \u203a 2025  \u203a 06  \u203a 13  \u203a 827210.htm"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/NeJXiLZ0AhT6jWLfgFEmjVGobtoXqphJSPpo7iyPOF0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmNlam91/cm5hbC5jb20vaW1n/L3NvY2lhbC9vcGVu/Z3JhcGgvaWotc29j/aWFsLWhvbWVvd25l/cnMtMTIwMHg2MzAu/cG5n",
+            "original": "https://www.insurancejournal.com/img/social/opengraph/ij-social-homeowners-1200x630.png",
+            "logo": false
+          },
+          "age": "June 13, 2025"
+        },
+        {
+          "title": "How State Farm's emergency rate hike approval in California will affect you",
+          "url": "https://calmatters.org/economy/2025/05/state-farm-rate-hikes-decision/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The decision means State Farm can raise its rates an average 17% for homeowners, 15% for renters and condominiums and 38% for rental dwellings starting June 1. \u201cI am balancing all the facts,\u201d Lara said in a statement.",
+          "page_age": "2025-05-14T00:57:55",
+          "profile": {
+            "name": "CalMatters",
+            "url": "https://calmatters.org/economy/2025/05/state-farm-rate-hikes-decision/",
+            "long_name": "calmatters.org",
+            "img": "https://imgs.search.brave.com/pQmgjZKW7LRyPvLBasXp4mDoiULN94OsUSwgZfRDhGA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjA3Y2VkNzEz/MTFhZTJjNGI0NTBi/MzFkYzQzMzQwODU2/NDQ0OWQ3Y2UwOTlh/ZGEzMDZlZTJhNzVm/MGJmN2I1NC9jYWxt/YXR0ZXJzLm9yZy8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "calmatters.org",
+            "hostname": "calmatters.org",
+            "favicon": "https://imgs.search.brave.com/pQmgjZKW7LRyPvLBasXp4mDoiULN94OsUSwgZfRDhGA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjA3Y2VkNzEz/MTFhZTJjNGI0NTBi/MzFkYzQzMzQwODU2/NDQ0OWQ3Y2UwOTlh/ZGEzMDZlZTJhNzVm/MGJmN2I1NC9jYWxt/YXR0ZXJzLm9yZy8",
+            "path": "\u203a economy  \u203a 2025  \u203a 05  \u203a state-farm-rate-hikes-decision"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/0CHMf0v9necBzqC6I6qe1LxS0VwvFk7uskJFiOHwNvI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vY2FsbWF0/dGVycy5vcmcvd3At/Y29udGVudC91cGxv/YWRzLzIwMjUvMDUv/MDEyMDI1X09keXNz/ZXktQ2hhcnRlcl9K/SF9DTV81OS5qcGc_/Zml0PTIwMDAlMkMx/MzMzJnNzbD0x",
+            "original": "https://i0.wp.com/calmatters.org/wp-content/uploads/2025/05/012025_Odyssey-Charter_JH_CM_59.jpg?fit=2000%2C1333&ssl=1",
+            "logo": false
+          },
+          "age": "May 14, 2025"
+        },
+        {
+          "title": "Big homeowner rate hike from State Farm shot down by California regulator",
+          "url": "https://calmatters.org/economy/2025/02/regulator-stops-california-home-insurance-price-hike/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Insurance Commissioner Ricardo Lara has rejected a request from State Farm to hike home insurance rates in California by 22% on average. The increase was billed by State Farm as an &quot;emergency&quot; measure after the Los Angeles fires. Lara spoke at an event at CalMatters&#x27; studio in Sacramento on Sept.",
+          "page_age": "2025-02-15T01:20:39",
+          "profile": {
+            "name": "CalMatters",
+            "url": "https://calmatters.org/economy/2025/02/regulator-stops-california-home-insurance-price-hike/",
+            "long_name": "calmatters.org",
+            "img": "https://imgs.search.brave.com/pQmgjZKW7LRyPvLBasXp4mDoiULN94OsUSwgZfRDhGA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjA3Y2VkNzEz/MTFhZTJjNGI0NTBi/MzFkYzQzMzQwODU2/NDQ0OWQ3Y2UwOTlh/ZGEzMDZlZTJhNzVm/MGJmN2I1NC9jYWxt/YXR0ZXJzLm9yZy8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "calmatters.org",
+            "hostname": "calmatters.org",
+            "favicon": "https://imgs.search.brave.com/pQmgjZKW7LRyPvLBasXp4mDoiULN94OsUSwgZfRDhGA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjA3Y2VkNzEz/MTFhZTJjNGI0NTBi/MzFkYzQzMzQwODU2/NDQ0OWQ3Y2UwOTlh/ZGEzMDZlZTJhNzVm/MGJmN2I1NC9jYWxt/YXR0ZXJzLm9yZy8",
+            "path": "\u203a economy  \u203a 2025  \u203a 02  \u203a regulator-stops-california-home-insurance-price-hike"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/57owihthxUhJoD-BuDD8t1Y7EtAGTB1PrOAWVGUpCpc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vY2FsbWF0/dGVycy5vcmcvd3At/Y29udGVudC91cGxv/YWRzLzIwMjQvMDkv/MDkxOTI0LVJpY2Fy/ZG8tTGFyYS1GRy1D/TS0wMi5qcGc_Zml0/PTIwMDAlMkMxMzMz/JnNzbD0x",
+            "original": "https://i0.wp.com/calmatters.org/wp-content/uploads/2024/09/091924-Ricardo-Lara-FG-CM-02.jpg?fit=2000%2C1333&ssl=1",
+            "logo": false
+          },
+          "age": "February 15, 2025"
+        },
+        {
+          "title": "State Farm can hike rates on California homeowners \u2014 if it pauses cancellations and proves need",
+          "url": "https://calmatters.org/economy/2025/03/state-farm-can-hike-insurance-premiums-with-conditions/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "California Insurance Commissioner Ricardo Lara said today he will grant State Farm\u2019s request to raise home insurance premiums by 22% on average if the company agrees to certain conditions \u2014 and wins approval at a public rate hearing next month.",
+          "page_age": "2025-03-15T00:23:00",
+          "profile": {
+            "name": "CalMatters",
+            "url": "https://calmatters.org/economy/2025/03/state-farm-can-hike-insurance-premiums-with-conditions/",
+            "long_name": "calmatters.org",
+            "img": "https://imgs.search.brave.com/pQmgjZKW7LRyPvLBasXp4mDoiULN94OsUSwgZfRDhGA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjA3Y2VkNzEz/MTFhZTJjNGI0NTBi/MzFkYzQzMzQwODU2/NDQ0OWQ3Y2UwOTlh/ZGEzMDZlZTJhNzVm/MGJmN2I1NC9jYWxt/YXR0ZXJzLm9yZy8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "calmatters.org",
+            "hostname": "calmatters.org",
+            "favicon": "https://imgs.search.brave.com/pQmgjZKW7LRyPvLBasXp4mDoiULN94OsUSwgZfRDhGA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjA3Y2VkNzEz/MTFhZTJjNGI0NTBi/MzFkYzQzMzQwODU2/NDQ0OWQ3Y2UwOTlh/ZGEzMDZlZTJhNzVm/MGJmN2I1NC9jYWxt/YXR0ZXJzLm9yZy8",
+            "path": "\u203a economy  \u203a 2025  \u203a 03  \u203a state-farm-can-hike-insurance-premiums-with-conditions"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/gWgiyjW0Un94EsBYURHRqADuYVn9eutCKuwRmCW6V68/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vY2FsbWF0/dGVycy5vcmcvd3At/Y29udGVudC91cGxv/YWRzLzIwMjUvMDMv/MDMxMzI1LVN0YXRl/LUZhcm0tUEYtR2V0/dHktMDEtQ00uanBn/P2ZpdD0yMDAwJTJD/MTMzMyZzc2w9MQ",
+            "original": "https://i0.wp.com/calmatters.org/wp-content/uploads/2025/03/031325-State-Farm-PF-Getty-01-CM.jpg?fit=2000%2C1333&ssl=1",
+            "logo": false
+          },
+          "age": "March 15, 2025"
+        },
+        {
+          "title": "State Farm's California home insurance rates on track to rise $600 a year",
+          "url": "https://www.sfchronicle.com/california/article/home-insurance-state-farm-rate-20215509.php",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Based on the amount of premiums State Farm took in last year, the Chronicle calculates that the rate increases would average $600 annually for homeowners, $163 for condo owners, $30 for renters and $456 for rental dwellings.",
+          "page_age": "2025-03-14T17:58:15",
+          "profile": {
+            "name": "San Francisco Chronicle",
+            "url": "https://www.sfchronicle.com/california/article/home-insurance-state-farm-rate-20215509.php",
+            "long_name": "sfchronicle.com",
+            "img": "https://imgs.search.brave.com/iLyX2rAw4aqHVg0CN-ntdWtyp394I3-O7oOdhuAnBiE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmE5MmM2MGE4/NmMxYmI0N2EyMmJh/OTVjYjhhZDU2MmZk/YjhhZGE3MzY1YTQ0/NGJkNzM1ZmM2OThh/ZDY1NWJkYy93d3cu/c2ZjaHJvbmljbGUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "sfchronicle.com",
+            "hostname": "www.sfchronicle.com",
+            "favicon": "https://imgs.search.brave.com/iLyX2rAw4aqHVg0CN-ntdWtyp394I3-O7oOdhuAnBiE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmE5MmM2MGE4/NmMxYmI0N2EyMmJh/OTVjYjhhZDU2MmZk/YjhhZGE3MzY1YTQ0/NGJkNzM1ZmM2OThh/ZDY1NWJkYy93d3cu/c2ZjaHJvbmljbGUu/Y29tLw",
+            "path": "\u203a california  \u203a article  \u203a home-insurance-state-farm-rate-20215509.php"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/DpIUprnQBwftBUhgI8JxmLMCGi0zwDieRNdyYeBign8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zLmhk/bnV4LmNvbS9waG90/b3MvMDEvNDcvNTIv/MjIvMjcxNzQwMTYv/Ni9yYXdJbWFnZS5q/cGc",
+            "original": "https://s.hdnux.com/photos/01/47/52/22/27174016/6/rawImage.jpg",
+            "logo": false
+          },
+          "age": "March 14, 2025"
+        },
+        {
+          "title": "State Farm moves one step closer to emergency California rate hike",
+          "url": "https://calmatters.org/economy/2025/04/state-farm-rate-hearing/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If the judge approves, starting in June the company\u2019s customers will see average increases of 17% for homeowners \u2014 down from the 22% the insurer originally requested after it reached a deal with the California Insurance Department; 15% for ...",
+          "page_age": "2025-04-10T23:29:45",
+          "profile": {
+            "name": "CalMatters",
+            "url": "https://calmatters.org/economy/2025/04/state-farm-rate-hearing/",
+            "long_name": "calmatters.org",
+            "img": "https://imgs.search.brave.com/pQmgjZKW7LRyPvLBasXp4mDoiULN94OsUSwgZfRDhGA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjA3Y2VkNzEz/MTFhZTJjNGI0NTBi/MzFkYzQzMzQwODU2/NDQ0OWQ3Y2UwOTlh/ZGEzMDZlZTJhNzVm/MGJmN2I1NC9jYWxt/YXR0ZXJzLm9yZy8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "calmatters.org",
+            "hostname": "calmatters.org",
+            "favicon": "https://imgs.search.brave.com/pQmgjZKW7LRyPvLBasXp4mDoiULN94OsUSwgZfRDhGA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjA3Y2VkNzEz/MTFhZTJjNGI0NTBi/MzFkYzQzMzQwODU2/NDQ0OWQ3Y2UwOTlh/ZGEzMDZlZTJhNzVm/MGJmN2I1NC9jYWxt/YXR0ZXJzLm9yZy8",
+            "path": "\u203a economy  \u203a 2025  \u203a 04  \u203a state-farm-rate-hearing"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/-VR6m-BjtQrx8T0JIb0KjF5_IA5IiAp8a7Fg6KT-SxU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vY2FsbWF0/dGVycy5vcmcvd3At/Y29udGVudC91cGxv/YWRzLzIwMjUvMDQv/MDEyNjI1X0VhdG9u/LUZpcmUtUmFpbl9K/SF9DTV82OS5qcGc_/Zml0PTIwMDAlMkMx/MzMzJnNzbD0x",
+            "original": "https://i0.wp.com/calmatters.org/wp-content/uploads/2025/04/012625_Eaton-Fire-Rain_JH_CM_69.jpg?fit=2000%2C1333&ssl=1",
+            "logo": false
+          },
+          "age": "April 10, 2025"
+        },
+        {
+          "title": "State Farm approved for unprecedented rate hike",
+          "url": "https://calmatters.org/newsletter/state-farm-rate-hike-newsletter/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Three months after first making ... 1, State Farm can hike up its rates by an average of 17% for homeowners, 15% for renters and condos and 38% for rental dwellings....",
+          "page_age": "2025-05-14T16:38:34",
+          "profile": {
+            "name": "CalMatters",
+            "url": "https://calmatters.org/newsletter/state-farm-rate-hike-newsletter/",
+            "long_name": "calmatters.org",
+            "img": "https://imgs.search.brave.com/pQmgjZKW7LRyPvLBasXp4mDoiULN94OsUSwgZfRDhGA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjA3Y2VkNzEz/MTFhZTJjNGI0NTBi/MzFkYzQzMzQwODU2/NDQ0OWQ3Y2UwOTlh/ZGEzMDZlZTJhNzVm/MGJmN2I1NC9jYWxt/YXR0ZXJzLm9yZy8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "calmatters.org",
+            "hostname": "calmatters.org",
+            "favicon": "https://imgs.search.brave.com/pQmgjZKW7LRyPvLBasXp4mDoiULN94OsUSwgZfRDhGA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjA3Y2VkNzEz/MTFhZTJjNGI0NTBi/MzFkYzQzMzQwODU2/NDQ0OWQ3Y2UwOTlh/ZGEzMDZlZTJhNzVm/MGJmN2I1NC9jYWxt/YXR0ZXJzLm9yZy8",
+            "path": "  \u203a newsletters  \u203a state farm approved for unprecedented rate hike"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/tkkOmieOKhMtx57Q9QatoxkkzsWar-rl-rySMv97aEI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vY2FsbWF0/dGVycy5vcmcvd3At/Y29udGVudC91cGxv/YWRzLzIwMjUvMDEv/MDEwODI1X0VhdG9u/LUZpcmVfVFNfQ01f/MDYuanBnP2ZpdD0y/MDAwJTJDMTMzMyZz/c2w9MQ",
+            "original": "https://i0.wp.com/calmatters.org/wp-content/uploads/2025/01/010825_Eaton-Fire_TS_CM_06.jpg?fit=2000%2C1333&ssl=1",
+            "logo": false
+          },
+          "age": "May 14, 2025"
+        },
+        {
+          "title": "State Farm asks for emergency 22% increase for California premiums, but critics cry foul",
+          "url": "https://www.usatoday.com/story/money/personalfinance/real-estate/2025/02/03/state-farm-emergency-rate-hike-california/78188233007/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Citing what it calls a potentially ... wildfires that occurred in January, the insurer said, it has already paid out more than $1 billion to customers, after receiving more than 8,700 claims....",
+          "page_age": "2025-02-05T17:10:25",
+          "profile": {
+            "name": "USA Today",
+            "url": "https://www.usatoday.com/story/money/personalfinance/real-estate/2025/02/03/state-farm-emergency-rate-hike-california/78188233007/",
+            "long_name": "usatoday.com",
+            "img": "https://imgs.search.brave.com/Y_nf32M16mWMcRGYv2Qt8GUxybiADIXv_NwrMFam-Oc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjRiNmM1Y2E0/MzMwMWQzYTYzNzhk/YjkzZjU0NTRmMDdl/ZWNmMjRiMWIwZjUz/ZDk4M2I5NDlmZjYw/ZTkyNjE4Yy93d3cu/dXNhdG9kYXkuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "usatoday.com",
+            "hostname": "www.usatoday.com",
+            "favicon": "https://imgs.search.brave.com/Y_nf32M16mWMcRGYv2Qt8GUxybiADIXv_NwrMFam-Oc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjRiNmM1Y2E0/MzMwMWQzYTYzNzhk/YjkzZjU0NTRmMDdl/ZWNmMjRiMWIwZjUz/ZDk4M2I5NDlmZjYw/ZTkyNjE4Yy93d3cu/dXNhdG9kYXkuY29t/Lw",
+            "path": "\u203a story  \u203a money  \u203a personalfinance  \u203a real-estate  \u203a 2025  \u203a 02  \u203a 03  \u203a state-farm-emergency-rate-hike-california  \u203a 78188233007"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Aopi3mC2kjBqbryFKA_5SFjLBmp00wvFwgra7me45wU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Z2FubmV0dC1jZG4u/Y29tL2F1dGhvcmlu/Zy9hdXRob3Jpbmct/aW1hZ2VzLzIwMjUv/MDIvMDMvVVNBVC83/ODE5MTYzNzAwNy11/c2F0c2ktMjUyMDg0/OTAuanBnP2F1dG89/d2VicCZjcm9wPTE2/NzksOTQ1LHgwLHk4/NyZmb3JtYXQ9cGpw/ZyZ3aWR0aD0xMjAw",
+            "original": "https://www.gannett-cdn.com/authoring/authoring-images/2025/02/03/USAT/78191637007-usatsi-25208490.jpg?auto=webp&crop=1679,945,x0,y87&format=pjpg&width=1200",
+            "logo": false
+          },
+          "age": "February 5, 2025"
+        },
+        {
+          "title": "State Farm Seeks an Urgent Increase in California Rates After Fires - The New York Times",
+          "url": "https://www.nytimes.com/2025/02/03/us/state-farm-california-rate-increase.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The company asked state regulators to approve a 22 percent increase on average. ... State Farm has received more than 8,700 claims from the Los Angeles fires alone and paid more than $1 billion to customers, the company said.",
+          "page_age": "2025-02-04T02:02:57",
+          "profile": {
+            "name": "NYTimes",
+            "url": "https://www.nytimes.com/2025/02/03/us/state-farm-california-rate-increase.html",
+            "long_name": "The New York Times",
+            "img": "https://imgs.search.brave.com/lWA-zkTMlWM2cUvrcYa1Fls86e-Vl-rkSBOjichQqVs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGFlZWRkYmVh/YWFhZmFjYjM4MWYy/NTQzZmExMTIwN2Nm/NGJmZjgwYTRhYjI5/OTliM2JkYmI2MWY0/M2RlOGFlMi93d3cu/bnl0aW1lcy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "nytimes.com",
+            "hostname": "www.nytimes.com",
+            "favicon": "https://imgs.search.brave.com/lWA-zkTMlWM2cUvrcYa1Fls86e-Vl-rkSBOjichQqVs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGFlZWRkYmVh/YWFhZmFjYjM4MWYy/NTQzZmExMTIwN2Nm/NGJmZjgwYTRhYjI5/OTliM2JkYmI2MWY0/M2RlOGFlMi93d3cu/bnl0aW1lcy5jb20v",
+            "path": "\u203a 2025  \u203a 02  \u203a 03  \u203a us  \u203a state-farm-california-rate-increase.html"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/CGh-jVPrniUpjFMA_t11GoSxuvxAZ9Xvo3iDO3LUSow/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwMS5ueXQuY29t/L2ltYWdlcy8yMDI1/LzAyLzAzL211bHRp/bWVkaWEvMDNuYXQt/Y2Etc3RhdGVmYXJt/LTEtYmtndC8wM25h/dC1jYS1zdGF0ZWZh/cm0tMS1ia2d0LXZp/ZGVvU2l4dGVlbkJ5/TmluZUp1bWJvMTYw/MC5qcGc",
+            "original": "https://static01.nyt.com/images/2025/02/03/multimedia/03nat-ca-statefarm-1-bkgt/03nat-ca-statefarm-1-bkgt-videoSixteenByNineJumbo1600.jpg",
+            "logo": false
+          },
+          "age": "February 4, 2025"
+        },
+        {
+          "title": "State Farm Car Insurance Review 2025: Pros and Cons - NerdWallet",
+          "url": "https://www.nerdwallet.com/insurance/auto/state-farm-auto-insurance-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm car insurance costs an average of $2,090 per year for full coverage, compared to the national average of $2,301.",
+          "page_age": "2025-05-22T00:35:56",
+          "profile": {
+            "name": "NerdWallet",
+            "url": "https://www.nerdwallet.com/insurance/auto/state-farm-auto-insurance-review",
+            "long_name": "nerdwallet.com",
+            "img": "https://imgs.search.brave.com/8r72GokQ4UXZ6V4PobxSGta-ben5011_C3meSKoOMl4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGFhYzY5MDhh/NTNhODNhYjliNWNm/MTE4YTNmOGE3NjVj/M2FmMDcwMzhhMzQx/MThmYjQ2MzcxMjQy/ZDgwNTkzZS93d3cu/bmVyZHdhbGxldC5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "nerdwallet.com",
+            "hostname": "www.nerdwallet.com",
+            "favicon": "https://imgs.search.brave.com/8r72GokQ4UXZ6V4PobxSGta-ben5011_C3meSKoOMl4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGFhYzY5MDhh/NTNhODNhYjliNWNm/MTE4YTNmOGE3NjVj/M2FmMDcwMzhhMzQx/MThmYjQ2MzcxMjQy/ZDgwNTkzZS93d3cu/bmVyZHdhbGxldC5j/b20v",
+            "path": "  \u203a back to nerdwallet homepage  \u203a insurance  \u203a state farm car insurance: 2025 review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/F9u2R_UXcXPS1grWvZB4rNulMfo3acX7ocput2-iUto/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bmVyZHdhbGxldC5j/b20vdGFjaHlvbi8y/MDIxLzExL0dldHR5/SW1hZ2VzLTEyMDM5/MDc4NzctcmV2aWV3/c2luc3VyYW5jZXN0/YXRlLWZhcm0uanBn/P3Jlc2l6ZT0xNDQw/JTJDODY0",
+            "original": "https://www.nerdwallet.com/tachyon/2021/11/GettyImages-1203907877-reviewsinsurancestate-farm.jpg?resize=1440%2C864",
+            "logo": false
+          },
+          "age": "May 22, 2025"
+        },
+        {
+          "title": "State Farm asks for approval to increase California home insurance rates by an average of 22% - CBS Sacramento",
+          "url": "https://www.cbsnews.com/sacramento/news/state-farm-emergency-california-home-insurance-rate-increase/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The rate hike could work out to an average increase of 22% for California homeowners, State Farm General revealed Monday. &quot;The costs of the January 2025 wildfires will further deplete capital from State Farm General.",
+          "page_age": "2025-02-05T07:58:00",
+          "profile": {
+            "name": "CBS News",
+            "url": "https://www.cbsnews.com/sacramento/news/state-farm-emergency-california-home-insurance-rate-increase/",
+            "long_name": "cbsnews.com",
+            "img": "https://imgs.search.brave.com/WMJ84WFf8h1hcjjVVUUmzl0nnJIhOkOa5cdJGjXcdWk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDUwNTNjY2I0/ZTJkMTA1NjkzNzQ3/Mzg4OGQ4ZDNmZjg0/YTFmYzhhZjBkMTU2/N2ZkNDA4MmZjZTM4/YTI3MTllMS93d3cu/Y2JzbmV3cy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cbsnews.com",
+            "hostname": "www.cbsnews.com",
+            "favicon": "https://imgs.search.brave.com/WMJ84WFf8h1hcjjVVUUmzl0nnJIhOkOa5cdJGjXcdWk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDUwNTNjY2I0/ZTJkMTA1NjkzNzQ3/Mzg4OGQ4ZDNmZjg0/YTFmYzhhZjBkMTU2/N2ZkNDA4MmZjZTM4/YTI3MTllMS93d3cu/Y2JzbmV3cy5jb20v",
+            "path": "  \u203a local news  \u203a state farm asks for approval to increase california home insurance rates by an average of 22%"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/5QGvfPGoz7IEghIrNn9Mq_-F8s_diuLtQ9GKfRSR3dI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMzLmNic25ld3Nz/dGF0aWMuY29tL2h1/Yi9pL3IvMjAyNS8w/Mi8wMy83MmUwMmI2/YS05YjE3LTQ3NDQt/OGQ0OC0zNWFiN2Nl/ZGUzZjQvdGh1bWJu/YWlsLzEyMDB4NjMw/L2U1NzVlMWNjYmUw/ZjZiNjc2YzY4NWUy/NDMwNWRiNjAxL2dl/dHR5aW1hZ2VzLTIx/OTM2Njk4MDIuanBn",
+            "original": "https://assets3.cbsnewsstatic.com/hub/i/r/2025/02/03/72e02b6a-9b17-4744-8d48-35ab7cede3f4/thumbnail/1200x630/e575e1ccbe0f6b676c685e24305db601/gettyimages-2193669802.jpg",
+            "logo": false
+          },
+          "age": "February 5, 2025"
+        },
+        {
+          "title": "California approves State Farm rate hike following LA wildfires",
+          "url": "https://san.com/cc/california-approves-state-farm-rate-hike-following-la-wildfires/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "As of May 12, the company reports that it has paid $3.5 billion on over 12,600 wildfire claims and cites a $5 billion reduction in its surplus over a decade. Consumer groups estimate the hikes could mean an average $468 more per year for homeowners.",
+          "page_age": "2025-05-15T22:35:52",
+          "profile": {
+            "name": "Straight Arrow News",
+            "url": "https://san.com/cc/california-approves-state-farm-rate-hike-following-la-wildfires/",
+            "long_name": "san.com",
+            "img": "https://imgs.search.brave.com/ko7S8FGCD7Ck2tTglpkvVENfAE_kLx4e95ZbncGCT24/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYWY3ZGMzMjk1/MWNjODJkOTdkNGU2/OGI2M2NmZTE1ZTlj/NDM1MmMxMTY0Y2M1/OGIyYmJkYmE1YjE0/NDcxMzdmZS9zYW4u/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "san.com",
+            "hostname": "san.com",
+            "favicon": "https://imgs.search.brave.com/ko7S8FGCD7Ck2tTglpkvVENfAE_kLx4e95ZbncGCT24/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYWY3ZGMzMjk1/MWNjODJkOTdkNGU2/OGI2M2NmZTE1ZTlj/NDM1MmMxMTY0Y2M1/OGIyYmJkYmE1YjE0/NDcxMzdmZS9zYW4u/Y29tLw",
+            "path": "  \u203a home  \u203a news  \u203a california approves state farm rate hike following la wildfires"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/qp0Az9-Xoe9FI121wcYyfnWsOpy1JExVE4q9WE9vfbs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zYW4u/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI1LzA1L1N0YXRl/LUZhcm0tRmVhdHVy/ZWQtSW1hZ2UtSnVz/dGluLVN1bGxpdmFu/X0dldHR5LUltYWdl/cy5qcGc",
+            "original": "https://san.com/wp-content/uploads/2025/05/State-Farm-Featured-Image-Justin-Sullivan_Getty-Images.jpg",
+            "logo": false
+          },
+          "age": "May 15, 2025"
+        },
+        {
+          "title": "California Approves 17 Percent Rate Increase for State Farm - The New York Times",
+          "url": "https://www.nytimes.com/2025/05/13/realestate/state-farm-rate-increase-california.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm requested the emergency rate increase in February, the month after fires ripped through the Pacific Palisades and Altadena neighborhoods of Los Angeles, razing over 16,000 homes and structures. The company \u2014 which insures one out of every five homes in California or roughly 1 million homeowner customers \u2014 had requested even more: a nearly 22 percent rate increase on homeowners\u2019 policies, citing a \u201cdire situation.\u201d",
+          "page_age": "2025-05-14T03:36:58",
+          "profile": {
+            "name": "NYTimes",
+            "url": "https://www.nytimes.com/2025/05/13/realestate/state-farm-rate-increase-california.html",
+            "long_name": "The New York Times",
+            "img": "https://imgs.search.brave.com/lWA-zkTMlWM2cUvrcYa1Fls86e-Vl-rkSBOjichQqVs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGFlZWRkYmVh/YWFhZmFjYjM4MWYy/NTQzZmExMTIwN2Nm/NGJmZjgwYTRhYjI5/OTliM2JkYmI2MWY0/M2RlOGFlMi93d3cu/bnl0aW1lcy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "nytimes.com",
+            "hostname": "www.nytimes.com",
+            "favicon": "https://imgs.search.brave.com/lWA-zkTMlWM2cUvrcYa1Fls86e-Vl-rkSBOjichQqVs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGFlZWRkYmVh/YWFhZmFjYjM4MWYy/NTQzZmExMTIwN2Nm/NGJmZjgwYTRhYjI5/OTliM2JkYmI2MWY0/M2RlOGFlMi93d3cu/bnl0aW1lcy5jb20v",
+            "path": "\u203a 2025  \u203a 05  \u203a 13  \u203a realestate  \u203a state-farm-rate-increase-california.html"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/r81m993SGFvotKRks5Pt9rqrf0PKPO-t3k16fKxA1n4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwMS5ueXQuY29t/L2ltYWdlcy8yMDI1/LzA1LzEzL211bHRp/bWVkaWEvMTNyZS1s/YWZpcmUtc3RhdGVm/YXJtaW5jcmVhc2Ut/dmt3Zy8xM3JlLWxh/ZmlyZS1zdGF0ZWZh/cm1pbmNyZWFzZS12/a3dnLXZpZGVvU2l4/dGVlbkJ5TmluZUp1/bWJvMTYwMC5qcGc",
+            "original": "https://static01.nyt.com/images/2025/05/13/multimedia/13re-lafire-statefarmincrease-vkwg/13re-lafire-statefarmincrease-vkwg-videoSixteenByNineJumbo1600.jpg",
+            "logo": false
+          },
+          "age": "May 14, 2025"
+        },
+        {
+          "title": "California insurance commissioner to approve State Farm rate hike \u2014 if conditions are met",
+          "url": "https://www.sacbee.com/news/politics-government/capitol-alert/article301590469.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Insurance Commissioner Ricardo Lara said Friday he would approve State Farm\u2019s request for an emergency rate increase, but only if the company\u2019s California arm can justify its need for it at a public hearing next month. \u201cTo resolve this matter, I am ordering State Farm to respond to questions in an official hearing, promoting transparency and a path forward,\u201d he said in a statement. State Farm General Insurance Co. leaders asked Lara for an almost 22% average price increase for homeowners policies across the state on Feb.",
+          "page_age": "2025-03-15T20:16:55",
+          "profile": {
+            "name": "Sacramento Bee",
+            "url": "https://www.sacbee.com/news/politics-government/capitol-alert/article301590469.html",
+            "long_name": "sacbee.com",
+            "img": "https://imgs.search.brave.com/DcicfVu8_s0v8qctL6aMGc1WMbIxGlVtdhF1NQyFZhQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjAxZTc0NmYx/NDE0MWUzNDJjOTM3/OTI2OGU5YTJjNDFj/MDA4ZGI2ZThkMDM0/NTI5ZDIyZjQ1OGY3/YjBmYTM5ZC93d3cu/c2FjYmVlLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "sacbee.com",
+            "hostname": "www.sacbee.com",
+            "favicon": "https://imgs.search.brave.com/DcicfVu8_s0v8qctL6aMGc1WMbIxGlVtdhF1NQyFZhQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjAxZTc0NmYx/NDE0MWUzNDJjOTM3/OTI2OGU5YTJjNDFj/MDA4ZGI2ZThkMDM0/NTI5ZDIyZjQ1OGY3/YjBmYTM5ZC93d3cu/c2FjYmVlLmNvbS8",
+            "path": "\u203a news  \u203a politics-government  \u203a capitol-alert  \u203a article301590469.html"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/8Kt8EZftMD1BlbaKZ6D3NbUoKJNfCLe_RNblY4Ovh18/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c2FjYmVlLmNvbS9w/dWJsaWMvbGF0ZXN0/LW5ld3MvNm83MnM5/L3BpY3R1cmUyOTgz/ODU3MTgvYWx0ZXJu/YXRlcy9MQU5EU0NB/UEVfMTE0MC9QQUxJ/U0FERVMtV0lMREZJ/UkVTX0FFUklBTC5K/UEc",
+            "original": "https://www.sacbee.com/public/latest-news/6o72s9/picture298385718/alternates/LANDSCAPE_1140/PALISADES-WILDFIRES_AERIAL.JPG",
+            "logo": false
+          },
+          "age": "March 15, 2025"
+        },
+        {
+          "title": "r/Insurance on Reddit: State Farm Keeps Increasing Rates",
+          "url": "https://www.reddit.com/r/Insurance/comments/1iomhwg/state_farm_keeps_increasing_rates/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The other insurance carriers I spoke with (American Family and Allstate) both quoted me similar policies for a little over half of what State Farm has been charging me prior to the increase. After hearing about them un-insuring folks in California recently because of fire risks I was suspicious.",
+          "page_age": "2025-02-13T16:08:36",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Insurance/comments/1iomhwg/state_farm_keeps_increasing_rates/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/insurance  \u203a state farm keeps increasing rates"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A5H_aQiEBuUODR0lNeU8iDfhrWUvO8oEmRGE_mcS_gM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVkZGl0c3RhdGlj/LmNvbS9pY29uLnBu/Zw",
+            "original": "https://www.redditstatic.com/icon.png",
+            "logo": true
+          },
+          "age": "February 13, 2025"
+        },
+        {
+          "title": "California approves State Farm\u2019s request for 17% premium increase for homeowners",
+          "url": "https://www.nbcbayarea.com/news/california/california-approves-state-farm-request-premium-increase-homeowners/3868018/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm can soon start raising premiums by 17% for its California home insurance customers. State Insurance Commissioner Ricardo Lara approved the rate hike Tuesday.",
+          "page_age": "2025-05-14T06:30:10",
+          "profile": {
+            "name": "NBC Bay Area",
+            "url": "https://www.nbcbayarea.com/news/california/california-approves-state-farm-request-premium-increase-homeowners/3868018/",
+            "long_name": "nbcbayarea.com",
+            "img": "https://imgs.search.brave.com/qGhn5yVtZg3KP12RrVqYYk_rQC9R-FoWcFgxx9K3zMQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmNiNTJkMWZm/ZGFiZjE0NGZiMmJh/M2VkNmI0ODM3OTZi/OGQyNzg2MjI5ZTNm/YjQ2YWQyMDIwYjIy/ODUzZDJiYS93d3cu/bmJjYmF5YXJlYS5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "nbcbayarea.com",
+            "hostname": "www.nbcbayarea.com",
+            "favicon": "https://imgs.search.brave.com/qGhn5yVtZg3KP12RrVqYYk_rQC9R-FoWcFgxx9K3zMQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmNiNTJkMWZm/ZGFiZjE0NGZiMmJh/M2VkNmI0ODM3OTZi/OGQyNzg2MjI5ZTNm/YjQ2YWQyMDIwYjIy/ODUzZDJiYS93d3cu/bmJjYmF5YXJlYS5j/b20v",
+            "path": "\u203a news  \u203a california  \u203a california-approves-state-farm-request-premium-increase-homeowners  \u203a 3868018"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/fmcfPCThWo5DzRwt9NHzKwWY-B4XqaUDuH5OkOdKg20/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5uYmNiYXlhcmVh/LmNvbS8yMDI0LzA1/L0dldHR5SW1hZ2Vz/LTE4MDY1ODQzNjkt/MS5qcGc_cXVhbGl0/eT04NSZzdHJpcD1h/bGwmcmVzaXplPTEy/MDAlMkM2NzU",
+            "original": "https://media.nbcbayarea.com/2024/05/GettyImages-1806584369-1.jpg?quality=85&strip=all&resize=1200%2C675",
+            "logo": false
+          },
+          "age": "May 14, 2025"
+        },
+        {
+          "title": "State Farm pursues additional 11% rate increase in California after emergency rate hike approval | California | The Guardian",
+          "url": "https://www.theguardian.com/us-news/2025/may/21/state-farm-california-emergency-rate-hike-approval",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If approved, the average annual premium could rise by about $600 for homeowners, $163 for condo owners and $30 for renters, the Chronicle reported. A spokesperson for the California ...",
+          "page_age": "2025-05-22T00:05:39",
+          "profile": {
+            "name": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2025/may/21/state-farm-california-emergency-rate-hike-approval",
+            "long_name": "theguardian.com",
+            "img": "https://imgs.search.brave.com/rC70n-17a9InstnH-PH4YuXbWwFkdbesPtRJKvIQAwQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNGRmYTNkMTZl/NmJhYTQwYmQ4NDRj/MzQ4NDZkNGQ0YTgy/ZWRlZDM4YWVkMzM4/NmM0Y2Y2NTgyMTQ5/NzQxOTExYy93d3cu/dGhlZ3VhcmRpYW4u/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "theguardian.com",
+            "hostname": "www.theguardian.com",
+            "favicon": "https://imgs.search.brave.com/rC70n-17a9InstnH-PH4YuXbWwFkdbesPtRJKvIQAwQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNGRmYTNkMTZl/NmJhYTQwYmQ4NDRj/MzQ4NDZkNGQ0YTgy/ZWRlZDM4YWVkMzM4/NmM0Y2Y2NTgyMTQ5/NzQxOTExYy93d3cu/dGhlZ3VhcmRpYW4u/Y29tLw",
+            "path": "\u203a us-news  \u203a 2025  \u203a may  \u203a 21  \u203a state-farm-california-emergency-rate-hike-approval"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/y23IRlVU9iy2TTNnris_N_HEdxUDuuf0oYg-igT_8do/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pLmd1/aW0uY28udWsvaW1n/L21lZGlhLzE3NzY0/ZDg4YmJiYzkwNjAy/OTY2NTE3ODE4NmEx/MzUwYjg4ZWU1YTkv/NTM0XzBfNDgxOV8z/ODU1L21hc3Rlci80/ODE5LmpwZz93aWR0/aD0xMjAwJmhlaWdo/dD02MzAmcXVhbGl0/eT04NSZhdXRvPWZv/cm1hdCZmaXQ9Y3Jv/cCZwcmVjcm9wPTQw/OjIxLG9mZnNldC14/NTAsb2Zmc2V0LXkw/Jm92ZXJsYXktYWxp/Z249Ym90dG9tJTJD/bGVmdCZvdmVybGF5/LXdpZHRoPTEwMHAm/b3ZlcmxheS1iYXNl/NjQ9TDJsdFp5OXpk/R0YwYVdNdmIzWmxj/bXhoZVhNdmRHY3Ra/R1ZtWVhWc2RDNXdi/bWMmZW5hYmxlPXVw/c2NhbGUmcz03NGQ0/MmQ4MmFiMjYzZTYy/ZjUxZDBhZDA5YTI5/MTE0YQ",
+            "original": "https://i.guim.co.uk/img/media/17764d88bbbc906029665178186a1350b88ee5a9/534_0_4819_3855/master/4819.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=74d42d82ab263e62f51d0ad09a29114a",
+            "logo": false
+          },
+          "age": "May 22, 2025"
+        },
+        {
+          "title": "California insurance commissioner meets privately with State Farm, hopes to make rate hike decision within two weeks",
+          "url": "https://calmatters.org/economy/2025/02/insurance-commissioner-hopes-to-make-state-farm-rate-hike-decision-within-two-weeks/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "State Farm executives said in a letter to Lara dated Feb. 25 that the company has paid $1.75 billion so far on about 9,500 claims and expects about $7.6 billion in total claim payments.",
+          "page_age": "2025-02-27T00:02:30",
+          "profile": {
+            "name": "CalMatters",
+            "url": "https://calmatters.org/economy/2025/02/insurance-commissioner-hopes-to-make-state-farm-rate-hike-decision-within-two-weeks/",
+            "long_name": "calmatters.org",
+            "img": "https://imgs.search.brave.com/pQmgjZKW7LRyPvLBasXp4mDoiULN94OsUSwgZfRDhGA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjA3Y2VkNzEz/MTFhZTJjNGI0NTBi/MzFkYzQzMzQwODU2/NDQ0OWQ3Y2UwOTlh/ZGEzMDZlZTJhNzVm/MGJmN2I1NC9jYWxt/YXR0ZXJzLm9yZy8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "calmatters.org",
+            "hostname": "calmatters.org",
+            "favicon": "https://imgs.search.brave.com/pQmgjZKW7LRyPvLBasXp4mDoiULN94OsUSwgZfRDhGA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjA3Y2VkNzEz/MTFhZTJjNGI0NTBi/MzFkYzQzMzQwODU2/NDQ0OWQ3Y2UwOTlh/ZGEzMDZlZTJhNzVm/MGJmN2I1NC9jYWxt/YXR0ZXJzLm9yZy8",
+            "path": "\u203a economy  \u203a 2025  \u203a 02  \u203a insurance-commissioner-hopes-to-make-state-farm-rate-hike-decision-within-two-weeks"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/KVyvqHE9NK-03AypIBC6-L1pQrwg5ZNWVoENfz7_TRw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vY2FsbWF0/dGVycy5vcmcvd3At/Y29udGVudC91cGxv/YWRzLzIwMjUvMDIv/MDEwODI0X0VhdG9u/LUZpcmVfSkhfQ01f/MjQuanBnP2ZpdD0y/MDAwJTJDMTMzMyZz/c2w9MQ",
+            "original": "https://i0.wp.com/calmatters.org/wp-content/uploads/2025/02/010824_Eaton-Fire_JH_CM_24.jpg?fit=2000%2C1333&ssl=1",
+            "logo": false
+          },
+          "age": "February 27, 2025"
+        },
+        {
+          "title": "State Farm to again raise California car insurance rates by double digits",
+          "url": "https://www.sfchronicle.com/california/article/state-farm-car-insurance-19964552.php",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "On Friday, the insurer \u2014 ... by an average of 17.7% starting at the end of January, filings with the California Department of Insurance show. About 4 million customers will be affected, according to the filing.",
+          "page_age": "2024-12-07T18:30:06",
+          "profile": {
+            "name": "San Francisco Chronicle",
+            "url": "https://www.sfchronicle.com/california/article/state-farm-car-insurance-19964552.php",
+            "long_name": "sfchronicle.com",
+            "img": "https://imgs.search.brave.com/iLyX2rAw4aqHVg0CN-ntdWtyp394I3-O7oOdhuAnBiE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmE5MmM2MGE4/NmMxYmI0N2EyMmJh/OTVjYjhhZDU2MmZk/YjhhZGE3MzY1YTQ0/NGJkNzM1ZmM2OThh/ZDY1NWJkYy93d3cu/c2ZjaHJvbmljbGUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "sfchronicle.com",
+            "hostname": "www.sfchronicle.com",
+            "favicon": "https://imgs.search.brave.com/iLyX2rAw4aqHVg0CN-ntdWtyp394I3-O7oOdhuAnBiE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmE5MmM2MGE4/NmMxYmI0N2EyMmJh/OTVjYjhhZDU2MmZk/YjhhZGE3MzY1YTQ0/NGJkNzM1ZmM2OThh/ZDY1NWJkYy93d3cu/c2ZjaHJvbmljbGUu/Y29tLw",
+            "path": "\u203a california  \u203a article  \u203a state-farm-car-insurance-19964552.php"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/TKPWLXuv27CTIAgVvssd8Bl3YR9xOoPxehEECnYka3w/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zLmhk/bnV4LmNvbS9waG90/b3MvMDEvNDYvMjUv/MDEvMjY4MjQ3ODIv/My9yYXdJbWFnZS5q/cGc",
+            "original": "https://s.hdnux.com/photos/01/46/25/01/26824782/3/rawImage.jpg",
+            "logo": false
+          },
+          "age": "December 7, 2024"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

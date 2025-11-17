@@ -1,0 +1,92 @@
+{
+  "websearch_id": "websearch_a5sqwx26pn1cegysywikzuma",
+  "search_id": "search_e60hk8rcw7i8ofndd40299cg",
+  "timestamp": "2025-11-07T12:30:20.084952",
+  "startedAt": "2025-11-07T12:30:20.084952",
+  "completedAt": "2025-11-07T12:30:21.976874",
+  "durationSeconds": 1.89,
+  "urlsDiscoveredCount": 1,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"commission schedule\" State Farm agent",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"commission schedule\" State Farm agent",
+      "show_strict_warning": false,
+      "cleaned": "commission schedule State Farm agent",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "commission schedule State Farm agent"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "State Farm Account Representative : r/InsuranceAgent",
+          "url": "https://www.reddit.com/r/InsuranceAgent/comments/1kkzneu/state_farm_account_representative/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Everything else will be contingent on the amount he sells and that specific office&#x27;s commission structure. He&#x27;ll be paid to answer phones &amp; do clerical work until he gets licensed (if the agent is cool, he&#x27;ll be able to do licensing classes on the clock as long as he keeps up with these light receptionist-like duties that are assigned to him).",
+          "page_age": "2025-05-12T18:14:22",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/InsuranceAgent/comments/1kkzneu/state_farm_account_representative/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/insuranceagent  \u203a state farm account representative"
+          },
+          "age": "May 12, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

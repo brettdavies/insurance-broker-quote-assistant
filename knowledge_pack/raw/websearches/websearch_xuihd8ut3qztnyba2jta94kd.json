@@ -1,0 +1,52 @@
+{
+  "websearch_id": "websearch_xuihd8ut3qztnyba2jta94kd",
+  "search_id": "search_mbe87binz2o8dzjkm2xiycb6",
+  "timestamp": "2025-11-07T12:32:57.315929",
+  "startedAt": "2025-11-07T12:32:57.315929",
+  "completedAt": "2025-11-07T12:32:59.219372",
+  "durationSeconds": 1.9,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "filetype:pdf insurance advertising guidelines [state]",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "filetype:pdf insurance advertising guidelines [state]",
+      "show_strict_warning": false,
+      "cleaned": "insurance advertising guidelines [state] pdf",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "insurance advertising guidelines [state] pdf"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}
