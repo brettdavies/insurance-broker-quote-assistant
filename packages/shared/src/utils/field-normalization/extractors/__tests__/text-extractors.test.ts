@@ -1,11 +1,11 @@
 /**
  * Text Extractors Tests
  *
- * Tests for name and email extraction from natural language.
+ * Tests for name, email, and phone extraction from natural language.
  */
 
 import { describe, expect, test } from 'bun:test'
-import { extractEmail, extractName } from '../text-extractors'
+import { extractEmail, extractName, extractPhone } from '../text-extractors'
 
 describe('extractName', () => {
   test('extracts name from "John Doe," pattern (comma delimiter)', () => {
@@ -146,5 +146,84 @@ describe('extractName and extractEmail integration', () => {
     const emailResult = extractEmail(text)
     expect(emailResult).not.toBeNull()
     expect(emailResult?.value).toBe('sarah.j@email.com')
+  })
+})
+
+describe('extractPhone', () => {
+  test('extracts phone from "(nnn) nnn-nnnn" pattern', () => {
+    const result = extractPhone('(555) 123-4567')
+    expect(result).not.toBeNull()
+    expect(result?.fieldName).toBe('phone')
+    expect(result?.value).toBe('555-123-4567')
+    expect(result?.originalText).toBe('(555) 123-4567')
+  })
+
+  test('extracts phone from "(nnn)nnn-nnnn" pattern', () => {
+    const result = extractPhone('(555)123-4567')
+    expect(result).not.toBeNull()
+    expect(result?.fieldName).toBe('phone')
+    expect(result?.value).toBe('555-123-4567')
+    expect(result?.originalText).toBe('(555)123-4567')
+  })
+
+  test('extracts phone from "nnn-nnn-nnnn" pattern', () => {
+    const result = extractPhone('555-123-4567')
+    expect(result).not.toBeNull()
+    expect(result?.fieldName).toBe('phone')
+    expect(result?.value).toBe('555-123-4567')
+    expect(result?.originalText).toBe('555-123-4567')
+  })
+
+  test('extracts phone from mixed text "Contact me at 555-123-4567 for details"', () => {
+    const result = extractPhone('Contact me at 555-123-4567 for details')
+    expect(result).not.toBeNull()
+    expect(result?.fieldName).toBe('phone')
+    expect(result?.value).toBe('555-123-4567')
+  })
+
+  test('extracts phone with context "phone is 305-555-1234"', () => {
+    const result = extractPhone('phone is 305-555-1234')
+    expect(result).not.toBeNull()
+    expect(result?.fieldName).toBe('phone')
+    expect(result?.value).toBe('305-555-1234')
+  })
+
+  test('does NOT extract phone from key-value syntax "phone:555-123-4567" (handled by key-value extractor)', () => {
+    const result = extractPhone('phone:555-123-4567')
+    expect(result).toBeNull()
+  })
+
+  test('does NOT extract phone from key-value syntax "p:555-123-4567"', () => {
+    const result = extractPhone('p:555-123-4567')
+    expect(result).toBeNull()
+  })
+
+  test('extracts phone when key-value syntax has space "phone: 555-123-4567"', () => {
+    // This should still extract because there's a space, so it's not key-value syntax
+    const result = extractPhone('phone: 555-123-4567')
+    expect(result).not.toBeNull()
+    expect(result?.value).toBe('555-123-4567')
+  })
+
+  test('does NOT extract partial phone numbers', () => {
+    const result = extractPhone('555-123')
+    expect(result).toBeNull()
+  })
+
+  test('does NOT extract phone numbers that are part of longer numbers', () => {
+    // Should not match 10 digits that are part of a longer number
+    const result = extractPhone('123456789012345')
+    expect(result).toBeNull()
+  })
+
+  test('returns null when no phone pattern found', () => {
+    const result = extractPhone('No phone mentioned here')
+    expect(result).toBeNull()
+  })
+
+  test('extracts first phone match when multiple phones present', () => {
+    const result = extractPhone('Contact 555-123-4567 or 555-987-6543')
+    expect(result).not.toBeNull()
+    expect(result?.value).toBe('555-123-4567')
   })
 })

@@ -2,7 +2,7 @@
  * Text Field Extractors
  *
  * Extracts text field values from broker notes text.
- * Handles patterns for zip code, current carrier, name, and email.
+ * Handles patterns for zip code, current carrier, name, email, and phone.
  */
 
 import { CARRIER_NORMALIZATIONS } from '../normalizers/carrier-normalizer'
@@ -214,6 +214,69 @@ export function extractEmail(text: string): NormalizedField | null {
         originalText: matchedEmail,
         startIndex: matchIndex,
         endIndex: matchIndex + matchedEmail.length,
+      }
+    }
+  }
+
+  return null
+}
+
+/**
+ * Extract phone number from broker notes
+ * Looks for deterministic phone number patterns:
+ * - (nnn) nnn-nnnn
+ * - (nnn)nnn-nnnn
+ * - nnn-nnn-nnnn
+ * Normalizes to nnn-nnn-nnnn format
+ */
+export function extractPhone(text: string): NormalizedField | null {
+  // Phone number patterns (order matters - more specific first)
+  const phonePatterns = [
+    // Pattern 1: (nnn) nnn-nnnn
+    {
+      regex: /\((\d{3})\)\s+(\d{3})-(\d{4})/g,
+      normalize: (match: RegExpExecArray) => `${match[1]}-${match[2]}-${match[3]}`,
+    },
+    // Pattern 2: (nnn)nnn-nnnn
+    {
+      regex: /\((\d{3})\)(\d{3})-(\d{4})/g,
+      normalize: (match: RegExpExecArray) => `${match[1]}-${match[2]}-${match[3]}`,
+    },
+    // Pattern 3: nnn-nnn-nnnn
+    {
+      regex: /\b(\d{3})-(\d{3})-(\d{4})\b/g,
+      normalize: (match: RegExpExecArray) => `${match[1]}-${match[2]}-${match[3]}`,
+    },
+  ]
+
+  for (const { regex, normalize } of phonePatterns) {
+    regex.lastIndex = 0
+    const match = regex.exec(text)
+    if (match) {
+      const startIndex = match.index
+      const originalText = match[0]
+      const normalizedValue = normalize(match)
+
+      // Skip if it's part of key-value syntax (already handled by key-value-extractor)
+      // Check if there's a colon immediately before the phone with NO space
+      if (startIndex > 0) {
+        const charBefore = text[startIndex - 1]
+        if (charBefore === ':') {
+          // Check if it's "phone:" or "p:" pattern
+          const beforePhone = text.substring(Math.max(0, startIndex - 10), startIndex)
+          if (beforePhone.match(/\b(phone|p):$/i)) {
+            // Try next pattern or continue
+            continue
+          }
+        }
+      }
+
+      return {
+        fieldName: 'phone',
+        value: normalizedValue,
+        originalText,
+        startIndex,
+        endIndex: startIndex + originalText.length,
       }
     }
   }
