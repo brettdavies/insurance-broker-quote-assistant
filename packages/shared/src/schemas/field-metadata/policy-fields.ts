@@ -8,7 +8,7 @@ import type { UnifiedFieldMetadata } from '../unified-field-metadata'
 
 export const policyFields: Record<string, UnifiedFieldMetadata> = {
   carrier: {
-    shortcut: 'c',
+    shortcut: '', // Removed 'c' shortcut to avoid conflict with vehicles alias 'c' (car/cars)
     label: 'Carrier',
     question: 'What is the carrier?',
     description: 'Insurance carrier name',
