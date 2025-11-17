@@ -6,23 +6,22 @@ import { createMockLLMProvider } from '@repo/shared/src/test-utils'
 import { ConversationalExtractor } from '../conversational-extractor'
 import type { ExtractionResult as LLMExtractionResult, LLMProvider } from '../llm-provider'
 
+// Helper to get the correct prompt path
+const getPromptPath = (filename: string): string => {
+  return path.join(import.meta.dir, '../../prompts', filename)
+}
+
 describe('LLM Prompt Generation', () => {
   describe('System Prompt Template', () => {
     it('should include CRITICAL RULES FOR FIELD EXTRACTION section', () => {
-      const systemPromptPath = path.join(
-        process.cwd(),
-        'src/prompts/conversational-extraction-system.txt'
-      )
+      const systemPromptPath = getPromptPath('conversational-extraction-system.txt')
       const systemPrompt = fs.readFileSync(systemPromptPath, 'utf-8')
 
       expect(systemPrompt).toContain('CRITICAL RULES FOR FIELD EXTRACTION')
     })
 
     it('should include Rule 1: KNOWN FIELDS (read-only)', () => {
-      const systemPromptPath = path.join(
-        process.cwd(),
-        'src/prompts/conversational-extraction-system.txt'
-      )
+      const systemPromptPath = getPromptPath('conversational-extraction-system.txt')
       const systemPrompt = fs.readFileSync(systemPromptPath, 'utf-8')
 
       expect(systemPrompt).toContain('1. KNOWN FIELDS (read-only)')
@@ -31,10 +30,7 @@ describe('LLM Prompt Generation', () => {
     })
 
     it('should include Rule 2: INFERRED FIELDS (can modify)', () => {
-      const systemPromptPath = path.join(
-        process.cwd(),
-        'src/prompts/conversational-extraction-system.txt'
-      )
+      const systemPromptPath = getPromptPath('conversational-extraction-system.txt')
       const systemPrompt = fs.readFileSync(systemPromptPath, 'utf-8')
 
       expect(systemPrompt).toContain('2. INFERRED FIELDS (can modify)')
@@ -43,10 +39,7 @@ describe('LLM Prompt Generation', () => {
     })
 
     it('should include Rule 3: SUPPRESSED FIELDS (never infer)', () => {
-      const systemPromptPath = path.join(
-        process.cwd(),
-        'src/prompts/conversational-extraction-system.txt'
-      )
+      const systemPromptPath = getPromptPath('conversational-extraction-system.txt')
       const systemPrompt = fs.readFileSync(systemPromptPath, 'utf-8')
 
       expect(systemPrompt).toContain('3. SUPPRESSED FIELDS (never infer)')
@@ -55,10 +48,7 @@ describe('LLM Prompt Generation', () => {
     })
 
     it('should include Rule 4: CONFIDENCE LEVELS', () => {
-      const systemPromptPath = path.join(
-        process.cwd(),
-        'src/prompts/conversational-extraction-system.txt'
-      )
+      const systemPromptPath = getPromptPath('conversational-extraction-system.txt')
       const systemPrompt = fs.readFileSync(systemPromptPath, 'utf-8')
 
       expect(systemPrompt).toContain('4. CONFIDENCE LEVELS')
@@ -68,10 +58,7 @@ describe('LLM Prompt Generation', () => {
     })
 
     it('should include Rule 5: EXTRACTION PRIORITY', () => {
-      const systemPromptPath = path.join(
-        process.cwd(),
-        'src/prompts/conversational-extraction-system.txt'
-      )
+      const systemPromptPath = getPromptPath('conversational-extraction-system.txt')
       const systemPrompt = fs.readFileSync(systemPromptPath, 'utf-8')
 
       expect(systemPrompt).toContain('5. EXTRACTION PRIORITY')
@@ -81,10 +68,7 @@ describe('LLM Prompt Generation', () => {
 
   describe('User Prompt Template', () => {
     it('should include "Already Known (do not modify):" section', () => {
-      const userPromptPath = path.join(
-        process.cwd(),
-        'src/prompts/conversational-extraction-user.txt'
-      )
+      const userPromptPath = getPromptPath('conversational-extraction-user.txt')
       const userPrompt = fs.readFileSync(userPromptPath, 'utf-8')
 
       expect(userPrompt).toContain('Already Known (do not modify):')
@@ -92,10 +76,7 @@ describe('LLM Prompt Generation', () => {
     })
 
     it('should include "Currently Inferred (you may modify):" section', () => {
-      const userPromptPath = path.join(
-        process.cwd(),
-        'src/prompts/conversational-extraction-user.txt'
-      )
+      const userPromptPath = getPromptPath('conversational-extraction-user.txt')
       const userPrompt = fs.readFileSync(userPromptPath, 'utf-8')
 
       expect(userPrompt).toContain('Currently Inferred (you may modify):')
@@ -103,10 +84,7 @@ describe('LLM Prompt Generation', () => {
     })
 
     it('should include "Suppressed (do not infer):" section', () => {
-      const userPromptPath = path.join(
-        process.cwd(),
-        'src/prompts/conversational-extraction-user.txt'
-      )
+      const userPromptPath = getPromptPath('conversational-extraction-user.txt')
       const userPrompt = fs.readFileSync(userPromptPath, 'utf-8')
 
       expect(userPrompt).toContain('Suppressed (do not infer):')
@@ -114,20 +92,14 @@ describe('LLM Prompt Generation', () => {
     })
 
     it('should include user message placeholder', () => {
-      const userPromptPath = path.join(
-        process.cwd(),
-        'src/prompts/conversational-extraction-user.txt'
-      )
+      const userPromptPath = getPromptPath('conversational-extraction-user.txt')
       const userPrompt = fs.readFileSync(userPromptPath, 'utf-8')
 
       expect(userPrompt).toContain('{{message}}')
     })
 
     it('should include extraction instructions for inferred fields', () => {
-      const userPromptPath = path.join(
-        process.cwd(),
-        'src/prompts/conversational-extraction-user.txt'
-      )
+      const userPromptPath = getPromptPath('conversational-extraction-user.txt')
       const userPrompt = fs.readFileSync(userPromptPath, 'utf-8')
 
       expect(userPrompt).toContain('you may:')
@@ -138,10 +110,7 @@ describe('LLM Prompt Generation', () => {
     })
 
     it('should include expected response format instructions', () => {
-      const userPromptPath = path.join(
-        process.cwd(),
-        'src/prompts/conversational-extraction-user.txt'
-      )
+      const userPromptPath = getPromptPath('conversational-extraction-user.txt')
       const userPrompt = fs.readFileSync(userPromptPath, 'utf-8')
 
       expect(userPrompt).toContain('IMPORTANT: Return JSON with the following structure')

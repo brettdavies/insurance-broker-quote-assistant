@@ -61,9 +61,10 @@ export class ConversationalExtractor {
    * Load system prompt template from file
    */
   private loadSystemPromptTemplate(): string {
+    // Use import.meta.dir to get the directory of this file, then navigate to prompts
     const templatePath = path.join(
-      process.cwd(),
-      'src/prompts/conversational-extraction-system.txt'
+      import.meta.dir,
+      '../prompts/conversational-extraction-system.txt'
     )
     return fs.readFileSync(templatePath, 'utf-8')
   }
@@ -72,7 +73,8 @@ export class ConversationalExtractor {
    * Load user prompt template from file
    */
   private loadUserPromptTemplate(): string {
-    const templatePath = path.join(process.cwd(), 'src/prompts/conversational-extraction-user.txt')
+    // Use import.meta.dir to get the directory of this file, then navigate to prompts
+    const templatePath = path.join(import.meta.dir, '../prompts/conversational-extraction-user.txt')
     return fs.readFileSync(templatePath, 'utf-8')
   }
 

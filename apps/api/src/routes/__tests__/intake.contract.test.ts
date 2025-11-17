@@ -342,7 +342,7 @@ describe('POST /api/intake - Live API Contract Tests', () => {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            message: 'state: CA productType: auto',
+            message: 's:CA l:auto',
           }),
         })
 

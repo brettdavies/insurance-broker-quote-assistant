@@ -92,6 +92,12 @@ Extract the information accurately and completely according to the provided sche
       // Record start time for extraction timing
       const startTime = Date.now()
 
+      // Normalize MIME type (strip charset if present - Gemini doesn't accept charset in MIME type)
+      let mimeType = file.type ?? 'application/pdf'
+      if (mimeType?.includes(';')) {
+        mimeType = mimeType.split(';')[0]?.trim() ?? mimeType
+      }
+
       // Make LLM call with file URI reference and structured output
       const response = await this.callLLMWithTimeout({
         contents: [
@@ -101,7 +107,7 @@ Extract the information accurately and completely according to the provided sche
               { text: extractionPrompt },
               {
                 fileData: {
-                  mimeType: file.type ?? 'application/pdf',
+                  mimeType,
                   fileUri,
                 },
               },

@@ -7,8 +7,9 @@
  * @see docs/stories/1.7.adaptive-compliance-filter.md#task-8
  */
 
-import { describe, expect, it, test } from 'bun:test'
+import { beforeAll, describe, expect, it, test } from 'bun:test'
 import { validateOutput } from '../compliance-filter'
+import { loadDisclaimers } from '../disclaimers-loader'
 
 // Prohibited phrases test cases - defined once, reused
 const PROHIBITED_PHRASE_TEST_CASES = [
@@ -31,6 +32,12 @@ const PROHIBITED_PHRASE_TEST_CASES = [
 ] as const
 
 describe('Compliance Filter', () => {
+  beforeAll(async () => {
+    // Load disclaimers and prohibited phrases before running tests
+    // loadDisclaimers() naturally clears Maps before loading, ensuring clean state
+    await loadDisclaimers()
+  })
+
   describe('Prohibited Phrase Detection', () => {
     // Parameterized test using Bun's test.each() - eliminates 16 duplicate test cases
     test.each(PROHIBITED_PHRASE_TEST_CASES as unknown as Array<{ phrase: string; text: string }>)(

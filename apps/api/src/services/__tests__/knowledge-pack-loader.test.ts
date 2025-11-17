@@ -6,6 +6,7 @@ import {
   createTestProduct,
   createTestState,
 } from '../../__tests__/fixtures/knowledge-pack'
+import { resetSharedStateWithKnowledgePack } from '../../__tests__/helpers/test-isolation'
 import {
   getAllCarriers,
   getCarrier,
@@ -24,6 +25,9 @@ describe('Knowledge Pack Loader', () => {
   let absoluteTestKnowledgePackDir: string
 
   beforeEach(async () => {
+    // Reset shared state and reload knowledge pack for clean baseline
+    await resetSharedStateWithKnowledgePack()
+
     // Resolve absolute paths
     const projectRoot = process.cwd().includes('apps/api')
       ? join(process.cwd(), '..', '..')
@@ -32,22 +36,12 @@ describe('Knowledge Pack Loader', () => {
     testCarriersDir = join(absoluteTestKnowledgePackDir, 'carriers')
     testStatesDir = join(absoluteTestKnowledgePackDir, 'states')
     testProductsDir = join(absoluteTestKnowledgePackDir, 'products')
+
     // Clean up any existing test directory first
     try {
       await rm(absoluteTestKnowledgePackDir, { recursive: true, force: true })
     } catch {
       // Ignore cleanup errors if directory doesn't exist
-    }
-
-    // Reload the real knowledge pack first to ensure clean Maps
-    // This prevents test data (like TestCarrier) from previous tests from polluting the Maps
-    const realKnowledgePackDir = join(projectRoot, 'knowledge_pack')
-
-    try {
-      await loadKnowledgePack(realKnowledgePackDir)
-    } catch {
-      // If real knowledge pack doesn't exist or fails to load, that's okay
-      // The Maps will be cleared on next load anyway
     }
 
     // Create test directories
@@ -64,19 +58,8 @@ describe('Knowledge Pack Loader', () => {
       // Ignore cleanup errors
     }
 
-    // Reload the real knowledge pack to clear test data (like TestCarrier) from Maps
-    // This ensures test isolation - each test suite starts with clean Maps
-    const projectRoot = process.cwd().includes('apps/api')
-      ? join(process.cwd(), '..', '..')
-      : process.cwd()
-    const realKnowledgePackDir = join(projectRoot, 'knowledge_pack')
-
-    try {
-      await loadKnowledgePack(realKnowledgePackDir)
-    } catch {
-      // If real knowledge pack doesn't exist or fails to load, that's okay
-      // The Maps will be cleared on next load anyway
-    }
+    // Reset shared state after each test to ensure isolation
+    await resetSharedStateWithKnowledgePack()
   })
 
   describe('Successful loading', () => {

@@ -194,7 +194,7 @@ export async function loadKnowledgePack(knowledgePackDir = 'knowledge_pack'): Pr
       .filter((file) => file.endsWith('.json'))
       .map((file) => join(productsDir, file))
 
-    // Load all files concurrently
+    // Load all files concurrently for better performance
     const loadPromises = [
       ...carrierJsonFiles.map((file) => loadCarrierFile(file, carriersMap, loadingStatus)),
       ...stateJsonFiles.map((file) => loadStateFile(file, statesMap, loadingStatus)),
@@ -229,7 +229,7 @@ export async function loadKnowledgePack(knowledgePackDir = 'knowledge_pack'): Pr
     loadingStatus.state = 'error'
     const errorMessage = error instanceof Error ? error.message : String(error)
     loadingStatus.errors.push({ file: 'knowledge_pack', error: errorMessage })
-    await logError('Failed to load knowledge pack', error)
+    await logError('Failed to load knowledge pack', error as Error)
   }
 }
 

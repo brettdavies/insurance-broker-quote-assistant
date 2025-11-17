@@ -62,20 +62,46 @@ describe('analyzeBundleOptions', () => {
       }
     )
 
-    // Don't mock the helper functions - let them use the actual implementation
-    // They will call getCarrierByName (which we mocked above) and use getFieldValue
+    // Mock getCarrierStateAvailability - check if carrier operates in state
+    spyOn(knowledgePackRAG, 'getCarrierStateAvailability').mockImplementation(
+      (carrierName: string, stateCode: string) => {
+        if (carrierName.toLowerCase() !== carrier.name.toLowerCase()) {
+          return false
+        }
+        const operatesIn = carrier.operatesIn?.value || []
+        return operatesIn.includes(stateCode.toUpperCase())
+      }
+    )
+
+    // Mock getCarrierProductsForState - return products if carrier operates in state
+    spyOn(knowledgePackRAG, 'getCarrierProductsForState').mockImplementation(
+      (carrierName: string, stateCode: string) => {
+        if (carrierName.toLowerCase() !== carrier.name.toLowerCase()) {
+          return []
+        }
+        const operatesIn = carrier.operatesIn?.value || []
+        if (!operatesIn.includes(stateCode.toUpperCase())) {
+          return []
+        }
+        return carrier.products?.value || []
+      }
+    )
   }
 
   beforeEach(() => {
     // Clear any existing mocks before each test
     ;(knowledgePackRAG.getCarrierByName as any).mockRestore?.()
     ;(knowledgePackRAG.getCarrierBundleDiscounts as any).mockRestore?.()
+    ;(knowledgePackRAG.getCarrierStateAvailability as any).mockRestore?.()
+    ;(knowledgePackRAG.getCarrierProductsForState as any).mockRestore?.()
   })
 
   afterEach(() => {
     // Restore original implementations
     ;(knowledgePackRAG.getCarrierByName as any).mockRestore?.()
     ;(knowledgePackRAG.getCarrierBundleDiscounts as any).mockRestore?.()
+    ;(knowledgePackRAG.getCarrierStateAvailability as any).mockRestore?.()
+    ;(knowledgePackRAG.getCarrierProductsForState as any).mockRestore?.()
   })
 
   it('should return empty array when policy missing state or product', () => {

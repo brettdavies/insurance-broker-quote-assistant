@@ -94,7 +94,12 @@ async function processLogQueue(): Promise<void> {
 }
 
 // Process queue periodically (every 5 seconds)
-if (typeof window !== 'undefined') {
+// Skip in test/CI environment to avoid hanging tests
+// GitHub Actions sets CI=true, and we also check for test environment
+const isTestOrCI =
+  (typeof process !== 'undefined' && Boolean(process.env.CI)) ||
+  (typeof process !== 'undefined' && process.env.NODE_ENV === 'test')
+if (typeof window !== 'undefined' && !isTestOrCI) {
   setInterval(processLogQueue, 5000)
 
   // Also process queue when coming back online
