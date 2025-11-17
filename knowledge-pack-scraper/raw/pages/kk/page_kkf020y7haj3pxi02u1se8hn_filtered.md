@@ -1,0 +1,1 @@
+Common Exclusions In Florida Home Insurance Policies - Herman & Wells

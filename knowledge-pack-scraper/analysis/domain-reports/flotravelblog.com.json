@@ -1,0 +1,438 @@
+{
+  "domain": "flotravelblog.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:18.948685",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 92,
+      "frequency": 92.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "body",
+      "count": 44
+    },
+    {
+      "class": "layout-element",
+      "count": 32
+    },
+    {
+      "class": "block-header-item",
+      "count": 22
+    },
+    {
+      "class": "block-header-item__label",
+      "count": 22
+    },
+    {
+      "class": "item-content-wrapper",
+      "count": 22
+    },
+    {
+      "class": "block-header-item__item",
+      "count": 22
+    },
+    {
+      "class": "item-content",
+      "count": 22
+    },
+    {
+      "class": "transition",
+      "count": 17
+    },
+    {
+      "class": "transition--scale",
+      "count": 17
+    },
+    {
+      "class": "layout-element--layout",
+      "count": 16
+    },
+    {
+      "class": "layout-element__component",
+      "count": 16
+    },
+    {
+      "class": "text-box",
+      "count": 12
+    },
+    {
+      "class": "layout-element__component--GridTextBox",
+      "count": 12
+    },
+    {
+      "class": "block-header-item__mobile-dropdown-trigger",
+      "count": 4
+    },
+    {
+      "class": "item-content__icon-container-wrapper",
+      "count": 4
+    },
+    {
+      "class": "item-content__icon-container",
+      "count": 4
+    },
+    {
+      "class": "item-content__icon",
+      "count": 4
+    },
+    {
+      "class": "block-header-item__dropdown-area",
+      "count": 4
+    },
+    {
+      "class": "block-header-item__dropdown",
+      "count": 4
+    },
+    {
+      "class": "block",
+      "count": 4
+    },
+    {
+      "class": "block-background",
+      "count": 4
+    },
+    {
+      "class": "image",
+      "count": 4
+    },
+    {
+      "class": "image--grid",
+      "count": 4
+    },
+    {
+      "class": "image__image",
+      "count": 4
+    },
+    {
+      "class": "transition--root-hidden",
+      "count": 3
+    },
+    {
+      "class": "block-layout",
+      "count": 3
+    },
+    {
+      "class": "block-layout--layout",
+      "count": 3
+    },
+    {
+      "class": "block-header__nav",
+      "count": 2
+    },
+    {
+      "class": "block-header__nav-links",
+      "count": 2
+    },
+    {
+      "class": "burger__bun",
+      "count": 2
+    },
+    {
+      "class": "font-secondary",
+      "count": 2
+    },
+    {
+      "class": "image-wrapper",
+      "count": 2
+    },
+    {
+      "class": "image-wrapper--layout",
+      "count": 2
+    },
+    {
+      "class": "layout-element__component--GridImage",
+      "count": 2
+    },
+    {
+      "class": "image-wrapper--desktop",
+      "count": 2
+    },
+    {
+      "class": "image-wrapper--mobile",
+      "count": 2
+    },
+    {
+      "class": "grid-button",
+      "count": 2
+    },
+    {
+      "class": "grid-button--primary",
+      "count": 2
+    },
+    {
+      "class": "image--link",
+      "count": 2
+    },
+    {
+      "class": "page",
+      "count": 1
+    },
+    {
+      "class": "sticky-trigger",
+      "count": 1
+    },
+    {
+      "class": "top-blocks--sticky",
+      "count": 1
+    },
+    {
+      "class": "top-blocks",
+      "count": 1
+    },
+    {
+      "class": "block-header",
+      "count": 1
+    },
+    {
+      "class": "background",
+      "count": 1
+    },
+    {
+      "class": "block-header-layout-desktop",
+      "count": 1
+    },
+    {
+      "class": "block-header-layout-desktop--desktop-3",
+      "count": 1
+    },
+    {
+      "class": "block-header-layout-desktop__right-side",
+      "count": 1
+    },
+    {
+      "class": "block-header-layout-mobile",
+      "count": 1
+    },
+    {
+      "class": "block-header-layout-mobile--mobile-1",
+      "count": 1
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "Z1biyOs",
+      "count": 1
+    },
+    {
+      "id": "ZpnBue",
+      "count": 1
+    },
+    {
+      "id": "zuf2d3",
+      "count": 1
+    },
+    {
+      "id": "roof-age-insurance-rule-florida",
+      "count": 1
+    },
+    {
+      "id": "zP-ASS",
+      "count": 1
+    },
+    {
+      "id": "zDcQrA",
+      "count": 1
+    },
+    {
+      "id": "zRiq_D",
+      "count": 1
+    },
+    {
+      "id": "florida-flood-insurance-requirements",
+      "count": 1
+    },
+    {
+      "id": "zPod31",
+      "count": 1
+    },
+    {
+      "id": "zXtBcr",
+      "count": 1
+    },
+    {
+      "id": "zy-9bQ",
+      "count": 1
+    },
+    {
+      "id": "zv_KdR",
+      "count": 1
+    },
+    {
+      "id": "zU8U5s",
+      "count": 1
+    },
+    {
+      "id": "zmBrEJ",
+      "count": 1
+    },
+    {
+      "id": "Email address",
+      "count": 1
+    },
+    {
+      "id": "zgw6qT",
+      "count": 1
+    },
+    {
+      "id": "zdxw7h",
+      "count": 1
+    },
+    {
+      "id": "zCF_vA",
+      "count": 1
+    },
+    {
+      "id": "zQ1G6j",
+      "count": 1
+    },
+    {
+      "id": "zk5qra",
+      "count": 1
+    },
+    {
+      "id": "zGY43Y",
+      "count": 1
+    },
+    {
+      "id": "znyrfl",
+      "count": 1
+    },
+    {
+      "id": "zMmJGg",
+      "count": 1
+    },
+    {
+      "id": "z58Qch",
+      "count": 1
+    },
+    {
+      "id": "ziaOem",
+      "count": 1
+    },
+    {
+      "id": "20QEeH",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "nav"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

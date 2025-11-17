@@ -1,0 +1,96 @@
+[![](https://marwoodsurveyors.com/wp-content/uploads/2021/03/Group-3-2.svg)![](https://marwoodsurveyors.com/wp-content/uploads/2021/03/Group-3-2.svg)](https://marwoodsurveyors.com/)
+[Residential](https://marwoodsurveyors.com/residential-services/)[Commercial](https://marwoodsurveyors.com/commercial-services/)[Block Management](https://marwoodsurveyors.com/residential-services/block-management/)
+![](https://marwoodsurveyors.com/wp-content/uploads/2025/03/Regulated_by_RICS_Logo-White.png)
+![](https://marwoodsurveyors.com/wp-content/uploads/2021/03/Group-3-2.svg)
+[Residential](https://marwoodsurveyors.com/residential-services/)
+[Commercial](https://marwoodsurveyors.com/commercial-services/)
+[Get a Quote](https://marwoodsurveyors.com/survey/ "Get a Quote")
+8 High Street,
+Sutton Coldfield,
+B72 1XA
+[0121 321 6058](tel:01213216058)
+info@marwoodsurveyors.com
+[](https://www.facebook.com/marwoodsurveyors/)
+[](https://www.instagram.com/marwoodsurveyors/?hl=en-gb)
+[](https://www.linkedin.com/company/marwood-surveyors/)
+![](https://marwoodsurveyors.com/wp-content/uploads/2025/03/Regulated_by_RICS_Logo-White.png)
+#### Marwood Surveyors
+[About Us](https://marwoodsurveyors.com/about-us/)
+[What Our Clients Say](https://marwoodsurveyors.com/what-our-clients-say/)
+[Meet The Team](https://marwoodsurveyors.com/meet-the-team/)
+[Vacancies](https://marwoodsurveyors.com/join-the-team/)
+[Blog](https://marwoodsurveyors.com/news/)
+[Contact](https://marwoodsurveyors.com/contact-us/)
+#### Residential Services
+[Residential Property Surveys](https://marwoodsurveyors.com/residential-services/residential-property-surveys/)
+[RICS Valuations](https://marwoodsurveyors.com/residential-services/rics-valuation/)
+[Land Registry Compliant Plans](https://marwoodsurveyors.com/residential-services/land-registry-compliant-plans/)
+[Party Wall Awards](https://marwoodsurveyors.com/residential-services/party-wall-awards/)
+[Residential Project Management Services](https://marwoodsurveyors.com/residential-services/residential-project-management-services/)
+[Residential Drone Services](https://marwoodsurveyors.com/residential-services/residential-drone-services/)
+#### Commercial Services
+[Commercial Property Surveys](https://marwoodsurveyors.com/commercial-services/commercial-property-surveys/)
+[Commercial Valuations](https://marwoodsurveyors.com/commercial-services/commercial-valuations/)
+[Facilities & Property Management](https://marwoodsurveyors.com/commercial-services/facilities-property-management/)
+[Land Registry Compliant Plans](https://marwoodsurveyors.com/commercial-services/land-registry-compliant-plans/)
+[Block Management](https://marwoodsurveyors.com/residential-services/block-management/)
+[Quinquennial Surveys](https://marwoodsurveyors.com/commercial-services/quinquennial-surveys/)
+[Commercial Project Management Services](https://marwoodsurveyors.com/commercial-services/commercial-project-management-services/)
+[Commercial Drone Services](https://marwoodsurveyors.com/commercial-services/commercial-drone-services/)
+# How to identify Property Construction Type: Solid Wall, Cavity Wall or Timber- Framed
+12 months ago
+[![](https://marwoodsurveyors.com/wp-content/uploads/2024/01/Untitled-1.jpg)](https://marwoodsurveyors.com/blog/were-proud-to-announce-our-partnership-with-paul-carr-estate-agents/)
+## [We’re proud to announce our partnership with Paul Carr Estate Agents!](https://marwoodsurveyors.com/blog/were-proud-to-announce-our-partnership-with-paul-carr-estate-agents/)
+[Read More](https://marwoodsurveyors.com/blog/were-proud-to-announce-our-partnership-with-paul-carr-estate-agents/)
+[![](https://marwoodsurveyors.com/wp-content/uploads/2025/01/shutterstock_254112634-scaled.jpg)](https://marwoodsurveyors.com/blog/prepare-your-commercial-property-for-winter-five-energy-efficiency-tips-for-landlords/)
+## [Prepare Your Commercial Property for Winter: Five Energy Efficiency Tips for Landlords](https://marwoodsurveyors.com/blog/prepare-your-commercial-property-for-winter-five-energy-efficiency-tips-for-landlords/)
+[Read More](https://marwoodsurveyors.com/blog/prepare-your-commercial-property-for-winter-five-energy-efficiency-tips-for-landlords/)
+[![](https://marwoodsurveyors.com/wp-content/uploads/2024/12/shutterstock_1869018118-scaled.jpg)](https://marwoodsurveyors.com/blog/prepare-your-home-for-winter-five-practical-tips-for-energy-efficiency/)
+## [Prepare Your Home for Winter: Five Practical Tips for Energy Efficiency](https://marwoodsurveyors.com/blog/prepare-your-home-for-winter-five-practical-tips-for-energy-efficiency/)
+[Read More](https://marwoodsurveyors.com/blog/prepare-your-home-for-winter-five-practical-tips-for-energy-efficiency/)
+[![](https://marwoodsurveyors.com/wp-content/uploads/2024/10/shutterstock_1940357152-scaled.jpg)](https://marwoodsurveyors.com/blog/understanding-block-management-the-key-to-a-well-maintained-property/)
+## [Understanding Block Management: The Key to a Well-Maintained Property](https://marwoodsurveyors.com/blog/understanding-block-management-the-key-to-a-well-maintained-property/)
+[Read More](https://marwoodsurveyors.com/blog/understanding-block-management-the-key-to-a-well-maintained-property/)
+[![What is a Homebuyers Report](https://marwoodsurveyors.com/wp-content/uploads/2022/03/shutterstock_1150026539.jpg)](https://marwoodsurveyors.com/blog/what-is-a-homebuyers-report/)
+## [What is a Homebuyers Report?](https://marwoodsurveyors.com/blog/what-is-a-homebuyers-report/)
+[Read More](https://marwoodsurveyors.com/blog/what-is-a-homebuyers-report/)
+[![Types Of House Survey](https://marwoodsurveyors.com/wp-content/uploads/2020/11/shutterstock_1246495240.jpg)](https://marwoodsurveyors.com/blog/what-type-of-survey-do-i-need/)
+## [Types Of House Survey | What Survey Do I Need?](https://marwoodsurveyors.com/blog/what-type-of-survey-do-i-need/)
+[Read More](https://marwoodsurveyors.com/blog/what-type-of-survey-do-i-need/)
+[![](https://marwoodsurveyors.com/wp-content/uploads/2021/03/post-3.jpg)](https://marwoodsurveyors.com/blog/what-is-a-snagging-list/)
+## [What is a Snagging List?](https://marwoodsurveyors.com/blog/what-is-a-snagging-list/)
+[Read More](https://marwoodsurveyors.com/blog/what-is-a-snagging-list/)
+[![](https://marwoodsurveyors.com/wp-content/uploads/2018/12/shutterstock_344634785.jpg)](https://marwoodsurveyors.com/blog/4-main-disadvantages-of-solar-energy/)
+## [4 Main Disadvantages Of Solar Energy](https://marwoodsurveyors.com/blog/4-main-disadvantages-of-solar-energy/)
+[Read More](https://marwoodsurveyors.com/blog/4-main-disadvantages-of-solar-energy/)
+[![](https://marwoodsurveyors.com/wp-content/uploads/2018/08/shutterstock_675391414.jpg)](https://marwoodsurveyors.com/blog/level-2-rics-home-survey/)
+## [Why a Level 2 RICS Home Survey could be the best investment you make?](https://marwoodsurveyors.com/blog/level-2-rics-home-survey/)
+[Read More](https://marwoodsurveyors.com/blog/level-2-rics-home-survey/)
+[![](https://marwoodsurveyors.com/wp-content/uploads/2022/02/Group-215.png)](https://marwoodsurveyors.com/blog/party-wall-letter/)
+## [Party Wall Letter](https://marwoodsurveyors.com/blog/party-wall-letter/)
+[Read More](https://marwoodsurveyors.com/blog/party-wall-letter/)
+![](https://marwoodsurveyors.com/wp-content/uploads/2021/03/Group-3-2.svg)
+[](https://www.facebook.com/marwoodsurveyors/)
+[](https://www.instagram.com/marwoodsurveyors/?hl=en-gb)
+[](https://www.linkedin.com/company/marwood-surveyors/)
+#### Get in touch
+8 High Street,
+Sutton Coldfield,
+B72 1XA
+[0121 321 6058](tel:01213216058)
+info@marwoodsurveyors.com
+#### Go to…
+> [Residential](https://marwoodsurveyors.com/residential-services/)
+> [Commercial](https://marwoodsurveyors.com/commercial-services/)
+> [About us](https://marwoodsurveyors.com/about-us/)
+> [Join the team](https://marwoodsurveyors.com/join-the-team/)
+> [What our clients say](https://marwoodsurveyors.com/what-our-clients-say/)
+> [Complaints procedure](https://marwoodsurveyors.com/complaints-procedure/)
+![](https://marwoodsurveyors.com/wp-content/uploads/2025/03/Regulated_by_RICS_Logo-White.png)
+[Get a Quote](https://marwoodsurveyors.com/survey)
+© Marwood Surveyors Ltd 2022
+[Privacy Policy](https://marwoodsurveyors.com/privacy-policy/)
+[![](https://marwoodsurveyors.com/wp-content/uploads/2021/03/Group-18.svg)](https://swof.media/)
+[](https://marwoodsurveyors.com/blog/how-to-identify-property-construction-type-solid-wall-cavity-wall-or-timber-framed/ "Back to top") Menu
+This website uses cookies to improve your experience. If you continue to use this site, you agree with our [Privacy Policy](https://marwoodsurveyors.com/privacy-policy/)
+Ok

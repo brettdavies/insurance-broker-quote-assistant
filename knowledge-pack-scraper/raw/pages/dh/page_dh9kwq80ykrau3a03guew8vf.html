@@ -1,0 +1,2128 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en" class="pointer skrollr skrollr-desktop"><head>
+    <style id="customRules"></style><meta charset="utf-8">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-613CX7F7LD&amp;cx=c&amp;gtm=4e5b50"></script><script async="" src="//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js"></script><script type="text/javascript">
+    window._currentDevice = 'desktop';
+    window.Parameters = window.Parameters || {
+        HomeUrl: 'https://www.chrinco.com/',
+        AccountUUID: '65183e55b1444b6b9340fc93fefd6a8b',
+        SystemID: 'US_DIRECT_PRODUCTION',
+        SiteAlias: 'd28573c9',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Fri May 16 20:14:47 UTC 2025',
+        ExternalUid: null,
+        IsSiteMultilingual: false,
+        InitialPostAlias: 'blog/frame-construction-masonry-construction',
+        InitialPostPageUuid: 'b4a26f4e738d4ce393213411cb13ab33',
+        InitialDynamicItem: '',
+        DynamicPageInfo: {
+            isDynamicPage: false,
+            base64JsonRowData: 'null',
+        },
+        InitialPageAlias: 'd1-internal-blog-post',
+        InitialPageUuid: '7e0b1408008b451181733085c0d0e1d2',
+        InitialPageId: '34328432',
+        InitialEncodedPageAlias: 'ZDEtaW50ZXJuYWwtYmxvZy1wb3N0',
+        InitialHeaderUuid: 'e912538e32b1454292c29bfbc73e8384',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: false,
+        AllowAjax: false,
+        AfterAjaxCommand: null,
+        HomeLinkText: 'Back To Home',
+        UseGalleryModule: false,
+        CurrentThemeName: 'Layout Theme',
+        ThemeVersion: '52700',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        IsBfs: true,
+        StorePageAlias: 'null',
+        StorePagesUrls: 'e30=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        HasCustomDomain: true,
+        SimpleSite: false,
+        showCookieNotification: false,
+        cookiesNotificationMarkup: 'null',
+        translatedPageUrl: '',
+        isFastMigrationSite: false,
+        sidebarPosition: 'NA',
+        currentLanguage: 'en',
+        currentLocale: 'en',
+        NavItems: '{}',
+        errors: {
+            general: 'There was an error connecting to the page.<br/> Make sure you are not offline.',
+            password: 'Incorrect name/password combination',
+            tryAgain: 'Try again'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: -1,
+            NavbarLiveHomePage: 'https://www.chrinco.com/',
+            BlockContainerSelector: '.dmBody',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        hasCustomCode: true,
+        planID: '7',
+        customTemplateId: 'null',
+        siteTemplateId: 'null',
+        productId: 'DM_DIRECT',
+        disableTracking: false,
+        pageType: 'BLOG_LAYOUT',
+        isRuntimeServer: true,
+        isInEditor: false,
+        hasNativeStore: false,
+        defaultLang: 'en',
+        hamburgerMigration: null,
+        isFlexSite: false
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 6;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+<!-- Inject secured cdn script -->
+
+
+<!-- ========= Meta Tags ========= -->
+<!-- PWA settings -->
+<script>
+    function toHash(str) {
+        var hash = 5381, i = str.length;
+        while (i) {
+            hash = hash * 33 ^ str.charCodeAt(--i)
+        }
+        return hash >>> 0
+    }
+</script>
+<script>
+    (function (global) {
+    //const cacheKey = global.cacheKey;
+    const isOffline = 'onLine' in navigator && navigator.onLine === false;
+    const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+    if (isOffline) {
+        console.log('offline mode');
+    }
+    if (!hasServiceWorkerSupport) {
+        console.log('service worker is not supported');
+    }
+    if (hasServiceWorkerSupport && !isOffline) {
+        window.addEventListener('load', function () {
+            const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+            navigator.serviceWorker
+                .register(serviceWorkerPath, { scope: './' })
+                .then(
+                    function (registration) {
+                        // Registration was successful
+                        console.log(
+                            'ServiceWorker registration successful with scope: ',
+                            registration.scope
+                        );
+                    },
+                    function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    }
+                )
+                .catch(function (err) {
+                    console.log(err);
+                });
+        });
+
+        // helper function to refresh the page
+        var refreshPage = (function () {
+            var refreshing;
+            return function () {
+                if (refreshing) return;
+                // prevent multiple refreshes
+                var refreshkey = 'refreshed' + location.href;
+                var prevRefresh = localStorage.getItem(refreshkey);
+                if (prevRefresh) {
+                    localStorage.removeItem(refreshkey);
+                    if (Date.now() - prevRefresh < 30000) {
+                        return; // dont go into a refresh loop
+                    }
+                }
+                refreshing = true;
+                localStorage.setItem(refreshkey, Date.now());
+                console.log('refereshing page');
+                window.location.reload();
+            };
+        })();
+
+        function messageServiceWorker(data) {
+            return new Promise(function (resolve, reject) {
+                if (navigator.serviceWorker.controller) {
+                    var worker = navigator.serviceWorker.controller;
+                    var messageChannel = new MessageChannel();
+                    messageChannel.port1.onmessage = replyHandler;
+                    worker.postMessage(data, [messageChannel.port2]);
+                    function replyHandler(event) {
+                        resolve(event.data);
+                    }
+                } else {
+                    resolve();
+                }
+            });
+        }
+    }
+})(window);
+</script>
+<!-- Add manifest -->
+<!-- End PWA settings -->
+
+
+
+<link rel="canonical" href="http://www.chrinco.com/frame-construction-masonry-construction">
+
+<meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--Add favorites icons-->
+
+<link rel="apple-touch-icon" href="https://irp.cdn-website.com/d28573c9/dms3rep/multi/apple-touch-icon.png">
+
+<link rel="icon" type="image/x-icon" href="https://irp.cdn-website.com/d28573c9/site_favicon_16_1738666868084.ico">
+
+<!-- End favorite icons -->
+<link rel="preconnect" href="https://lirp.cdn-website.com/">
+
+
+
+<!-- render the required CSS and JS in the head section -->
+<script id="d-js-dmapi">
+    window.SystemID = 'US_DIRECT_PRODUCTION';
+
+    if (!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function () {
+            },
+            getCurrentDeviceType: function () {
+                return window._currentDevice;
+            },
+            runOnReady: (ns, fn) => {
+                const safeFn = dmAPI.toSafeFn(fn);
+                ns = ns || 'global_' + Math.random().toString(36).slice(2, 11);
+                const eventName = 'afterAjax.' + ns;
+
+                if (document.readyState === 'complete') {
+                    $.DM.events.off(eventName).on(eventName, safeFn);
+                    setTimeout(function () {
+                        safeFn({
+                            isAjax: false,
+                        });
+                    }, 0);
+                } else {
+                    window?.waitForDeferred?.('dmAjax', () => {
+                        $.DM.events.off(eventName).on(eventName, safeFn);
+                        safeFn({
+                            isAjax: false,
+                        });
+                    });
+                }
+            },
+            toSafeFn: (fn) => {
+                if (fn?.safe) {
+                    return fn;
+                }
+                const safeFn = function (...args) {
+                    try {
+                        return fn?.apply(null, args);
+                    } catch (e) {
+                        console.log('function failed ' + e.message);
+                    }
+                };
+                safeFn.safe = true;
+                return safeFn;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+
+<!-- loadCSS function header.jsp-->
+
+
+
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+      const widgetCssLink = document.querySelector("[id*='widgetCSS']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page) && (!widgetCssLink || cssLinks.widget)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+            const storedWidgetCssLink = cssLinks.widget;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            if(storedWidgetCssLink) {
+                storedWidgetCssLink.disabled = true;
+                loadCssLink(storedWidgetCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    if (storedWidgetCssLink) {
+                      storedWidgetCssLink.disabled = false;
+                    }
+                    // (SUP-4179) Clear the accumulated cssLinks only when we're
+                    // sure that the document has finished loading and the document 
+                    // has been parsed.
+                    if(document.readyState === 'interactive') {
+                      cssLinks = null;
+                    }
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href && link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if (link.id && link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      } else if (link.id && link.id.includes("widgetCSS")) {
+        cssLinks.widget = link;
+        checkCss();
+      }
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def() {
+        this.promise = new Promise((function (a, b) {
+            this.resolve = a, this.reject = b
+        }).bind(this))
+    }
+
+    const defs = {};
+    window.getDeferred = function (a) {
+        return null == defs[a] && (defs[a] = new Def), defs[a]
+    }
+    window.waitForDeferred = function (b, a, c) {
+        let d = window?.getDeferred?.(b);
+        d
+            ? d.promise.then(a)
+            : c && ["complete", "interactive"].includes(document.readyState)
+                ? setTimeout(a, 1)
+                : c
+                    ? document.addEventListener("DOMContentLoaded", a)
+                    : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}#dmRoot div.stickyHeaderFix div.site_content{margin-top:0!important}#dmRoot div.stickyHeaderFix div.hamburger-header-container{position:relative}
+    
+
+</style>
+<style id="cssVariables" type="text/css">
+    :root {
+  --color_1: rgba(119, 150, 203, 1);
+  --color_2: rgba(233, 242, 251, 1);
+  --color_3: rgba(161, 187, 213, 1);
+  --color_4: rgba(42, 114, 163, 1);
+  --color_5: rgba(45, 35, 46, 1);
+  --color_6: rgba(45, 93, 123, 1);
+  --color_7: rgba(69, 126, 172, 1);
+  --color_8: rgba(0, 0, 0, 0);
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- loadCSS function fonts.jsp-->
+
+
+
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/fonts/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Inter:ital,wght@0,100..900;1,100..900&amp;family=Rock+Salt:ital,wght@0,400&amp;family=Amiko:ital,wght@0,400;0,600;0,700&amp;family=Syne:ital,wght@0,400..800;1,400..800&amp;family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&amp;subset=latin-ext&amp;display=swap">
+
+<style>
+@font-face {
+  font-family: "Syne-Regular";
+  src: url("https://irp.cdn-website.com/d28573c9/fonts/Syne-Regular-9994_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+
+
+
+
+<!-- RT CSS Include d-css-runtime-desktop-one-package-structured-global-->
+<link rel="stylesheet" type="text/css" href="https://static.cdn-website.com/mnlt/production/5918/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-structured-global.min.css">
+
+<!-- End of RT CSS Include -->
+
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/WIDGET_CSS/e7654bd7447ccb6143f57517a0cd8a40.css" id="widgetCSS">
+
+<!-- Support `img` size attributes -->
+<style>img[width][height] {
+  height: auto;
+}</style>
+
+<!-- Support showing sticky element on page only -->
+<style>
+  body[data-page-alias="d1-internal-blog-post"] #dm [data-show-on-page-only="d1-internal-blog-post"] {
+    display: block !important;
+  }
+</style>
+
+<!-- This is populated in Ajax navigation -->
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+<!-- Site CSS -->
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/d28573c9/files/d28573c9_1.min.css?v=83" id="siteGlobalCss">
+
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+    *#dm *.dmBody a.span.textonly {
+ color: rgb(255, 255, 255) !important;
+ }
+*#dm *.dmBody a.span.textonly {
+ color: rgb(255, 255, 255) !important;
+ }
+*#dm *.dmBody div.dmform-error {
+ font-style: normal !important;
+ }
+*#dm *.dmBody div.dmforminput textarea {
+ font-style: italic !important;
+ }
+*#dm *.dmBody div.dmforminput *.fileUploadLink {
+ font-style: italic !important;
+ }
+*#dm *.dmBody div.checkboxwrapper span {
+ font-style: italic !important;
+ }
+*#dm *.dmBody div.radiowrapper span {
+ font-style: italic !important;
+ }
+*#dm *.dmBody *.u_1250789679 {
+ text-align: LEFT !important;
+ }
+*#dm *.dmBody *.u_1250789679 *.rteBlock {
+ text-align: LEFT !important;
+ }
+*#dm *.d-page-1716942098 DIV.dmInner
+{
+	background-repeat:no-repeat !important;
+	background-size:cover !important;
+	background-attachment:fixed !important;
+	background-position:50% 50% !important;
+}
+*#dm *.d-page-1716942098 DIV#dmSlideRightNavRight
+{
+	background-repeat:no-repeat !important;
+	background-image:none !important;
+	background-size:cover !important;
+	background-attachment:fixed !important;
+	background-position:50% 50% !important;
+}
+*.dmTabletBody *.hamburger-header
+{
+	display:null !important;
+}
+*.dmTabletBody *.hamburger-drawer
+{
+	display:null !important;
+}
+*.dmTabletBody *.layout-drawer-hamburger
+{
+	display:null !important;
+}
+*.dmTabletBody *.layout-drawer-hamburger
+{
+	display:null !important;
+}
+*.dmTabletBody *[dmtemplateid*="amburger"] *#site_content *.site_content
+{
+	margin-top:null !important;
+}
+*#dm *.dmBody div.u_1668470589
+{
+	padding-top:0px !important;
+}
+*#dm *.dmBody div.u_1250789679
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:150.5px !important;
+	margin-left:0px !important;
+	max-width:100% !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	display:block !important;
+	text-align:left !important;
+}
+*#dm *.dmBody div.u_1471232539
+{
+	padding-top:15px !important;
+	padding-left:0px !important;
+	margin-top:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1750185103
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:150.5px !important;
+	margin-left:0px !important;
+	max-width:100% !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:start !important;
+	display:block !important;
+}
+
+    
+</style>
+
+
+<style id="additionalGlobalCss" type="text/css">
+</style>
+
+<style id="pagestyle" type="text/css">
+    *#dm *.dmBody a.span.textonly
+{
+	color:var(--color_2) !important;
+}
+*#dm *.dmBody div.dmform-error
+{
+	font-style:normal !important;
+}
+*#dm *.dmBody div.dmforminput textarea
+{
+	font-style:italic !important;
+}
+*#dm *.dmBody div.dmforminput *.fileUploadLink
+{
+	font-style:italic !important;
+}
+*#dm *.dmBody div.checkboxwrapper span
+{
+	font-style:italic !important;
+}
+*#dm *.dmBody div.radiowrapper span
+{
+	font-style:italic !important;
+}
+*#dm *.dmBody div.u_1639724380
+{
+	background-color:rgba(0,0,0,0) !important;
+}
+*.dmFooterContainer
+{
+	display:null !important;
+}
+*#dm *.dmBody div.u_1214401551
+{
+	background-color:rgba(0,0,0,0) !important;
+}
+*#dm *.dmBody *.u_1315103047 *.title
+{
+	text-align:CENTER !important;
+}
+*#dm *.dmBody *.u_1852899778
+{
+	text-align:LEFT !important;
+}
+*#dm *.dmBody *.u_1852899778 *.rteBlock
+{
+	text-align:LEFT !important;
+}
+*#dm *.dmBody *.u_1131577706
+{
+	text-align:LEFT !important;
+}
+*#dm *.dmBody *.u_1131577706 *.rteBlock
+{
+	text-align:LEFT !important;
+}
+*#dm *.dmBody *.u_1325247579:before
+{
+	opacity:0.5 !important;
+	background-color:var(--color_1) !important;
+}
+*#dm *.dmBody *.u_1325247579.before
+{
+	opacity:0.5 !important;
+	background-color:var(--color_1) !important;
+}
+*#dm *.dmBody *.u_1325247579>*.bgExtraLayerOverlay
+{
+	opacity:0.5 !important;
+	background-color:var(--color_1) !important;
+}
+*#dm *.dmBody h3.u_1852899778
+{
+	color:var(--color_2) !important;
+}
+*#dm *.dmBody div.u_1131577706
+{
+	color:var(--color_2) !important;
+}
+*#dm *.dmBody div.u_1846542956 .postArticle>.inner
+{
+	box-shadow:none !important;
+	-moz-box-shadow:none !important;
+	-webkit-box-shadow:none !important;
+}
+*#dm *.dmBody div.u_1846542956 .postDescription
+{
+	max-height:2.6999999999999997em !important;
+	color:var(--color_1) !important;
+}
+*#dm *.dmBody div.u_1846542956 .readMore a
+{
+	font-family:Syne !important;
+	font-weight:bold !important;
+	text-decoration:underline !important;
+}
+*#dm *.dmBody h1.u_1852899778 p
+{
+	color:var(--color_2) !important;
+}
+*#dm *.dmBody h1.u_1852899778
+{
+	line-height:normal !important;
+	color:var(--color_2) !important;
+}
+*#dm *.dmBody div.u_1325247579
+{
+	background-repeat:no-repeat !important;
+	background-image:url(https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/neil-bates-E2BlPfv6YXE-unsplash-ec049e08-2880w.jpg) !important;
+	background-color:var(--color_2) !important;
+}
+*#dm *.dmBody div.u_1325247579:before
+{
+	background-color:var(--color_1) !important;
+	opacity:0.53 !important;
+}
+*#dm *.dmBody div.u_1325247579.before
+{
+	background-color:var(--color_1) !important;
+	opacity:0.53 !important;
+}
+*#dm *.dmBody div.u_1325247579>.bgExtraLayerOverlay
+{
+	background-color:var(--color_1) !important;
+	opacity:0.53 !important;
+}
+*#dm *.dmBody div.u_1325247579>*.bgExtraLayerOverlay
+{
+	background-color:var(--color_1) !important;
+	opacity:0.53 !important;
+}
+
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    *#dm *.d-page-1716942098 DIV.dmInner
+{
+	background-repeat:no-repeat !important;
+	background-size:cover !important;
+	background-attachment:fixed !important;
+	background-position:50% 50% !important;
+}
+*#dm *.d-page-1716942098 DIV#dmSlideRightNavRight
+{
+	background-repeat:no-repeat !important;
+	background-image:none !important;
+	background-size:cover !important;
+	background-attachment:fixed !important;
+	background-position:50% 50% !important;
+}
+*#dm *.dmBody div.u_1061888463
+{
+	padding-top:15px !important;
+	margin-top:0px !important;
+	padding-left:200px !important;
+	padding-right:200px !important;
+}
+*#dm *.dmBody div.u_1879452075
+{
+	padding-top:0px !important;
+	padding-right:50px !important;
+	padding-left:50px !important;
+}
+*#dm *.dmBody div.u_1846542956
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:40px !important;
+	margin-left:0px !important;
+	max-width:100% !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1749144169
+{
+	padding-top:15px !important;
+	margin-top:0px !important;
+	padding-left:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1287730679
+{
+	padding-top:0px !important;
+	padding-right:50px !important;
+	padding-left:50px !important;
+}
+*#dm *.dmBody div.u_1639724380
+{
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-right:0px !important;
+	margin-left:50px !important;
+	margin-right:50px !important;
+}
+*.dmTabletBody *.hamburger-header
+{
+	display:null !important;
+}
+*.dmTabletBody *.hamburger-drawer
+{
+	display:null !important;
+}
+*.dmTabletBody *.layout-drawer-hamburger
+{
+	display:null !important;
+}
+*.dmTabletBody *[dmtemplateid*="amburger"] *#site_content *.site_content
+{
+	margin-top:null !important;
+}
+*#dm *.dmBody div.u_1214401551
+{
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-right:0px !important;
+	margin-left:50px !important;
+	margin-right:50px !important;
+}
+*#dm *.dmBody div.u_1861057944
+{
+	padding-top:0px !important;
+	padding-right:0px !important;
+	padding-left:0px !important;
+	margin-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	margin-right:0px !important;
+}
+*#dm *.dmBody div.u_1315103047
+{
+	padding-top:0px !important;
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:calc(100% - 42px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:860px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:center !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1815935546
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1200968374
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	display:block !important;
+}
+*#dm *.dmBody h1.u_1852899778
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:860px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	display:block !important;
+	text-align:center !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+}
+*#dm *.dmBody div.u_1821464270
+{
+	padding-top:40px !important;
+	padding-left:0px !important;
+	padding-right:0px !important;
+}
+*#dm *.dmBody div.u_1955241875
+{
+	padding-top:40px !important;
+	padding-left:0px !important;
+	padding-right:0px !important;
+	margin-top:0px !important;
+	padding-bottom:50px !important;
+}
+*#dm *.dmBody div.u_1131577706
+{
+	padding-top:2px !important;
+	display:block !important;
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:calc(100% - 58px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:744px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:center !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:15px !important;
+	margin-bottom:0px !important;
+	font-size:16px !important;
+}
+*#dm *.dmBody h3.u_1852899778
+{
+	display:block !important;
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:calc(100% - 231px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:638px !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:center !important;
+	font-size:38px !important;
+}
+*#dm *.dmBody div.u_1325247579
+{
+	padding-top:275px !important;
+	padding-left:0px !important;
+	padding-right:0px !important;
+	background-attachment:fixed !important;
+	background-size:cover !important;
+	padding-bottom:150px !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:100% !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	min-width:0 !important;
+	text-align:start !important;
+}
+
+</style>
+
+<!-- Flex Sections CSS -->
+
+
+
+
+
+
+
+<style id="globalFontSizeStyle" type="text/css">
+    .font-size-30, .size-30, .size-30 > font { font-size: 30px !important; }
+</style>
+<style id="pageFontSizeStyle" type="text/css">
+</style>
+
+
+
+
+<style id="hideAnimFix">
+  .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+    visibility: hidden;
+  }
+
+  .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+    visibility: hidden !important;
+  }
+
+
+  #dmRoot:not(.editGrid) .flex-element [data-anim-extended] {
+    visibility: hidden;
+  }
+
+</style>
+
+
+
+
+<style id="fontFallbacks">
+    @font-face {
+  font-family: "Roboto Fallback";
+  src: local('Arial');
+  ascent-override: 92.6709%;
+  descent-override: 24.3871%;
+  size-adjust: 100.1106%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Montserrat Fallback";
+  src: local('Arial');
+  ascent-override: 84.9466%;
+  descent-override: 22.0264%;
+  size-adjust: 113.954%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Inter Fallback";
+  src: local('Arial');
+  ascent-override: 90.199%;
+  descent-override: 22.4836%;
+  size-adjust: 107.4014%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Rock Salt Fallback";
+  src: local('Arial');
+  ascent-override: 112.6419%;
+  descent-override: 54.69%;
+  line-gap-override: 2.2209%;
+  size-adjust: 140.708%;
+}@font-face {
+  font-family: "Amiko Fallback";
+  src: local('Arial');
+  ascent-override: 82.254%;
+  descent-override: 35.9861%;
+  size-adjust: 112.8212%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Syne Fallback";
+  src: local('Arial');
+  ascent-override: 93.4327%;
+  descent-override: 27.7773%;
+  size-adjust: 99.0018%;
+  line-gap-override: 0%;
+ }
+</style>
+
+
+<!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+
+  <link type="application/rss+xml" rel="alternate" href="http://www.chrinco.com/feed/rss2">
+  <link type="application/atom+xml" rel="alternate" href="http://www.chrinco.com/feed/atom">
+  <script type="application/ld+json">
+
+{
+  "@context" : {
+    "@vocab" : "http://schema.org/"
+  },
+  "@type" : "BlogPosting",
+  "headline" : "Masonry or frame construction – which is the more expensive home to insure?",
+  "datePublished" : "2018-05-25T14:32:00",
+  "dateModified" : "2025-02-03T14:41:58",
+  "author" : {
+    "@type" : "Person",
+    "name" : "tony"
+  },
+  "image" : "https://irp.cdn-website.com/d28573c9/dms3rep/multi/Frame-Construction.jpg"
+}
+
+  </script>
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Masonry or frame construction – which is the more expensive home to insure?">
+  <meta name="twitter:image" content="https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/Frame-Construction-1920w.jpg">
+  <meta name="article:published_time" content="2018-05-25T14:32Z">
+  <meta property="og:url" content="http://www.chrinco.com/frame-construction-masonry-construction">
+  <meta property="og:title" content="Masonry or frame construction – which is the more expensive home to insure?">
+  <meta property="og:image" content="https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/Frame-Construction-1920w.jpg">
+  <title>
+    
+    Masonry or frame construction – which is the more expensive home to insure?
+  
+  </title>
+  <meta name="keywords" content="insurance agency, home insurance, auto insurance, boat insurance, flood insurance, liability insurance, umbrella insurance, specialized insurance, church insurance, contractor insurance, transportation insurance
+
+">
+  <meta name="description" content="Discover stress-free insurance with Chrinco. From home to auto, boat, and flood policies, we provide competitive quotes and proactive, customer-first service.
+
+">
+
+
+
+
+<!-- SYS- VVNfRElSRUNUX1BST0RVQ1RJT04= -->
+<script src="https://static.cdn-website.com/libs/bower-skrollr/skrollr.min.js"></script></head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="d1-internal-blog-post" class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite dmLargeBody responsiveTablet pcCustomScrollbar d1SiteBody dmBodyNoIscroll" style="padding:0;margin:0;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========= Site Content ========= -->
+<div id="dm" class="dmwr">
+    
+    <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+         <div dmwrapped="true" id="1901957768" class="dm-home-page" themewaschanged="true" desktop-global-classes="header-over-content" tablet-global-classes="header-over-content"> <div dmtemplateid="Hamburger" data-responsive-name="ResponsiveDesktopTopTabletHamburger" class="runtime-module-container dm-bfs dm-layout-sec hasAnimations hasStickyHeader inMiniHeaderMode rows-1200 hamburger-reverse header-over-content dmPageBody d-page-1716942098 inputs-css-clean dmFreeHeader" id="dm-outer-wrapper" data-page-class="1716942098" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div id="site_content"> <div class="p_hfcontainer showOnMedium"> <div id="hamburger-drawer" class="hamburger-drawer layout-drawer" layout="e9d510f4eb904e939c2be8efaf777e6e===header" data-origin="side-reverse" data-auto-height="true" aria-hidden="true" inert=""> <div class="u_1826294544 dmRespRow" style="text-align: center;" id="1826294544"> <div class="dmRespColsWrapper" id="1337204992"> <div class="u_1183846399 dmRespCol small-12 medium-12 large-12 empty-column" id="1183846399"></div> 
+</div> 
+</div> 
+ <div class="u_1021493186 dmRespRow middleDrawerRow" style="text-align: center;" id="1021493186"> <div class="dmRespColsWrapper" id="1170137577"> <div class="dmRespCol small-12 u_1808057136 medium-12 large-12" id="1808057136"> <nav class="u_1786825950 effect-bottom2 main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="vertical_nav_layout_2" layout-sub="" data-show-vertical-sub-items="HIDE" id="1786825950" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-nav-structure="VERTICAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item dmUDNavigationItem_00" target="" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="
+         Home
+        " data-auto="page-text-style">Home<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/about-us" class="unifiednav__item dmUDNavigationItem_010101436714" target="" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="About Us" data-auto="page-text-style">About Us<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/what-we-do" class="unifiednav__item dmUDNavigationItem_010101200826 unifiednav__item_has-sub-nav" target="" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="What We Do" data-auto="page-text-style">What We Do<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/home-insurance" class="unifiednav__item dmUDNavigationItem_010101704545" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="Home Insurance" data-auto="page-text-style">Home Insurance<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/auto-insurance" class="unifiednav__item dmUDNavigationItem_0101012747" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="Auto Insurance" data-auto="page-text-style">Auto Insurance<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/boat-marine-insurance" class="unifiednav__item dmUDNavigationItem_010101922658" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="Boat &amp; Marine Insurance" data-auto="page-text-style">Boat &amp; Marine Insurance<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/flood-insurance" class="unifiednav__item dmUDNavigationItem_010101739899" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="Flood Insurance" data-auto="page-text-style">Flood Insurance<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/umbrella-insurance" class="unifiednav__item dmUDNavigationItem_010101805411" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="Umbrella Insurance" data-auto="page-text-style">Umbrella Insurance<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/liability-insurance" class="unifiednav__item dmUDNavigationItem_010101935756" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="Liability Insurance" data-auto="page-text-style">Liability Insurance<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/blog" class="unifiednav__item dmUDNavigationItem_010101939839" target="" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="Blog" data-auto="page-text-style">Blog<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/contact" class="unifiednav__item dmUDNavigationItem_010101943230" target="" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="
+         Contact
+        " data-auto="page-text-style">Contact<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1676049285" style="text-align: center;" id="1676049285"> <div class="dmRespColsWrapper" id="1888750820"> <div class="u_1916182198 dmRespCol small-12 medium-12 large-12" id="1916182198"> <div class="u_1919575698 dmNewParagraph" id="1919575698" style="transition:none;line-height:initial;" data-version="5"> <h3><span style="display: initial;">Get in touch</span></h3> 
+</div> <div class="u_1359743311 dmNewParagraph" id="1359743311" style="transition: none; text-align: left; display: block;" data-version="5" data-diy-text=""><p><a href="tel:321-757-4014" type="call" style="display: initial; text-decoration: none;" runtime_url="tel:321-757-4014" target="_blank">321-757-4014</a><span style="display: initial;"><br></span></p></div></div> 
+</div> 
+</div> 
+</div> 
+ <div class="layout-drawer-overlay" id="layout-drawer-overlay"></div> 
+</div> 
+ <div class="site_content"> <div id="hamburger-header-container" class="showOnMedium hamburger-header-container p_hfcontainer"> <div id="hamburger-header" class="hamburger-header p_hfcontainer" layout="44dc38f951e9489490b055748e10ba9f===header"> <div class="u_1705692124 dmRespRow" style="text-align: center;" id="1705692124"> <div class="dmRespColsWrapper" id="1469942216"> <div class="dmRespCol small-12 u_1655486006 medium-12 large-12" id="1655486006"> <div class="u_1923160809 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1923160809" data-binding="W3siYmluZGluZ05hbWUiOiJpbWFnZSIsInZhbHVlIjoic2l0ZV9pbWFnZXMubG9nbyJ9XQ==" editablewidget="true"> <a href="/" id="1573522578" file="false"><img src="https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/Chrinco-logo-white-png-transparent-e1522907272276-1920w.png" id="1761992403" class="" data-dm-image-path="https://irp.cdn-website.com/d28573c9/dms3rep/multi/Chrinco-logo-white-png-transparent-e1522907272276.png" width="300" height="30" alt="logo" data-diy-image="" onerror="handleImageLoadError(this)"></a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <button class="showOnMedium layout-drawer-hamburger hamburger-on-header" id="layout-drawer-hamburger" aria-label="menu" aria-controls="hamburger-drawer" aria-expanded="false"> <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+</button> 
+ <div class="dmHeaderContainer fHeader d-header-wrapper showOnLarge"> <div id="hcontainer" class="u_hcontainer dmHeader p_hfcontainer" freeheader="true" headerlayout="b58ba5b5703b4cd7b5f5f7951565dc87===horizontal-layout-5" data-scrollable-target="body" data-scrollable-target-threshold="1" data-scroll-responder-id="1" preserve-sticky-header="true" logo-size-target="100%" layout="78f5c343822e4eb3aac27f4ad5d13812===header"> <div dm:templateorder="85" class="dmHeaderResp dmHeaderStack noSwitch" id="1709005236"> <div class="u_1861705244 dmRespRow dmDefaultListContentRow fullBleedChanged fullBleedMode mini-header-show-row" style="text-align:center" id="1861705244"> <div class="dmRespColsWrapper" id="1914255413"> <div class="u_1677919435 small-12 dmRespCol large-2 medium-2 has-one-widget-only" id="1677919435"> <div class="u_1567100598 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1567100598" editablewidget="true"> <a href="/" id="1943938859"><img src="https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/Chrinco-logo-white-png-transparent-e1522907272276-1920w.png" id="1407939830" class="" data-dm-image-path="https://irp.cdn-website.com/d28573c9/dms3rep/multi/Chrinco-logo-white-png-transparent-e1522907272276.png" width="200" height="44" alt="The logo for chrinco insurance simplifies insurance" onerror="handleImageLoadError(this)"></a> 
+</div> 
+</div> 
+ <div class="u_1246161842 dmRespCol small-12 large-8 medium-8 has-one-widget-only" id="1246161842"> <span id="1630001966"></span> 
+ <nav class="u_1112353738 effect-bottom main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="horizontal_nav_layout_1" layout-sub="submenu_horizontal_1" data-show-vertical-sub-items="HOVER" id="1112353738" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item dmUDNavigationItem_00" target="" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="
+         Home
+        " data-auto="page-text-style">Home<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/about-us" class="unifiednav__item dmUDNavigationItem_010101436714" target="" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="About Us" data-auto="page-text-style">About Us<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/what-we-do" class="unifiednav__item dmUDNavigationItem_010101200826 unifiednav__item_has-sub-nav" target="" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="What We Do" data-auto="page-text-style">What We Do<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/home-insurance" class="unifiednav__item dmUDNavigationItem_010101704545" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="Home Insurance" data-auto="page-text-style">Home Insurance<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/auto-insurance" class="unifiednav__item dmUDNavigationItem_0101012747" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="Auto Insurance" data-auto="page-text-style">Auto Insurance<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/boat-marine-insurance" class="unifiednav__item dmUDNavigationItem_010101922658" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="Boat &amp; Marine Insurance" data-auto="page-text-style">Boat &amp; Marine Insurance<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/flood-insurance" class="unifiednav__item dmUDNavigationItem_010101739899" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="Flood Insurance" data-auto="page-text-style">Flood Insurance<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/umbrella-insurance" class="unifiednav__item dmUDNavigationItem_010101805411" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="Umbrella Insurance" data-auto="page-text-style">Umbrella Insurance<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/liability-insurance" class="unifiednav__item dmUDNavigationItem_010101935756" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="Liability Insurance" data-auto="page-text-style">Liability Insurance<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/blog" class="unifiednav__item dmUDNavigationItem_010101939839" target="" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="Blog" data-auto="page-text-style">Blog<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/contact" class="unifiednav__item dmUDNavigationItem_010101943230" target="" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="
+         Contact
+        " data-auto="page-text-style">Contact<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+ <div class="u_1252265195 dmRespCol small-12 large-2 medium-2 has-one-widget-only" id="1252265195"> <a data-display-type="block" class="u_1829727279 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="tel:321-757-4014" data-element-type="dButtonLinkId" id="1829727279" target="_blank"> <span class="iconBg" id="1581139956"> <span class="icon hasFontIcon icon-star" id="1076835582"></span> 
+</span> 
+ <span class="text" id="1246898961">321-757-4014</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="stickyHeaderSpacer" id="stickyHeaderSpacer" data-new="true"></div> 
+ <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_d1-internal-blog-post dm-home-page" themewaschanged="true" desktop-global-classes="header-over-content" tablet-global-classes="header-over-content"> <div id="allWrapper" class="allWrapper"><!-- navigation placeholders --> <div id="dm_content" class="dmContent" role="main"> <div dm:templateorder="170" class="dmHomeRespTmpl mainBorder dmRespRowsWrapper dmFullRowRespTmpl dmRespRowsWrapperSize1" id="1716942098"> <div class="u_1325247579 dmRespRow mobile-columns-reversed dmSectionParallaxNew hasBackgroundOverlay skrollable skrollable-between" id="1325247579" data-blog-template="bind-bg-img" data-binding="W3siYmluZGluZ05hbWUiOiJiYWNrZ3JvdW5kIiwidmFsdWUiOiJibG9nLmJhY2tncm91bmRJbWFnZSJ9XQ==" style="background-image: url(&quot;https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/Frame-Construction-1920w.jpg&quot;) !important; background-position: 50% 0px;" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 0px;"> <div class="dmRespColsWrapper" id="1462856210"> <div class="u_1287730679 dmRespCol small-12 medium-12 large-12" id="1287730679"> <h1 class="u_1852899778 dmNewParagraph" data-element-type="paragraph" id="1852899778" data-blog-template="bind-title" style="transition: none 0s ease 0s;" data-binding="W3siYmluZGluZ05hbWUiOiJ0ZXh0IiwidmFsdWUiOiJibG9nLnRpdGxlIn1d" data-diy-text="">Masonry or frame construction – which is the more expensive home to insure?</h1> <div class="u_1131577706 dmNewParagraph" data-element-type="paragraph" id="1131577706" data-blog-template="bind-author" style="transition: opacity 1s ease-in-out 0s; display: block;" data-binding="W3siYmluZGluZ05hbWUiOiJ0ZXh0IiwidmFsdWUiOiJibG9nLmNvbXBvc2VkQXV0aG9yIn1d" data-diy-text="">tony • May 25, 2018</div></div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1821464270" id="1821464270"> <div class="dmRespColsWrapper" id="1484962664"> <div class="dmRespCol large-12 medium-12 small-12 u_1214401551 postPageExtRoot" id="1214401551" server_id="1716942098"> <div class="dmRespRow u_1471232539 blog-post-row" id="1471232539" style="background-color:transparent;padding-top:0px !important;padding-bottom:0px !important"> <div class="dmRespColsWrapper" id="1292474755"> <div class="dmRespCol large-12 medium-12 small-12 u_1668470589" id="1668470589"> <div class="dmNewParagraph" id="1655430375" style="padding-top:0px;padding-bottom:0px;margin-top:0px;margin-bottom:35px;"> <p id="1426441823" style="margin:0px;">The short answer is a frame construction home will typically be more expensive to insure when compared to a masonry construction home.&nbsp; There are three main reasons why this is the case:</p> 
+</div> 
+ <div class="html" id="1078700458" style="padding-top:0px;width:100%;padding-bottom:0px;margin-top:0px;margin-bottom:35px;" data-element-type="html"> <div id="1120198503" style="margin:0px;"> <ol id="1872877818"> <li id="1060256343">Masonry construction homes are considered less combustible than frame construction home</li> 
+ <li id="1595717256">Masonry construction homes are less prone to degradation over time.</li> 
+ <li id="1033373337">Masonry construction homes have a lesser risk of Wood Destroying Organism, such as termites, weakening the structural integrity of the home.</li> 
+</ol> 
+</div> 
+</div> 
+ <div class="dmNewParagraph" id="1127099203" style="padding-top:0px;padding-bottom:0px;margin-top:0px;margin-bottom:35px;"> <p id="1024390696" style="margin:0px;">It’s only natural for insurance companies to price for these additional layers of risk when determining the insurance premium.&nbsp; Another interesting fact is that frame construction homes have insurance premiums that increase at an increasing rate when compared to masonry construction homes.</p> 
+</div> 
+ <div class="dmNewParagraph" id="1623791296" style="padding-top:0px;padding-bottom:0px;margin-top:0px;margin-bottom:35px;"> <p id="1310261203" style="margin:0px;"> <b id="1912609322"> <em id="1886357546">Say what?</em> 
+</b> 
+</p> 
+</div> 
+ <div class="dmNewParagraph" id="1073396039" style="padding-top:0px;padding-bottom:0px;margin-top:0px;margin-bottom:35px;"> <p id="1700210758" style="margin:0px;">While a new frame construction home may only have $100 difference in annual premium when compared to a masonry construction home, a 25 year old frame construction home may have a premium difference of $1000 or more.</p> 
+</div> 
+ <div class="dmNewParagraph" id="1943974894" style="padding-top:0px;padding-bottom:0px;margin-top:0px;margin-bottom:35px;"> <p id="1108879667" style="margin:0px;"> <b id="1114379664"> <em id="1798065125">So what happens when you have a home of mixed construction such as a masonry construction first floor and a frame construction second floor?</em> 
+</b> 
+</p> 
+</div> 
+ <div class="dmNewParagraph" id="1322931090" style="padding-top:0px;padding-bottom:0px;margin-top:0px;margin-bottom:35px;"> <p id="1487283166" style="margin:0px;">Every insurance company looks at this situation differently.&nbsp; Some companies will consider the home masonry construction for rating purposes if the frame construction is less than 33% of the total construction.&nbsp; Other carriers will consider a home masonry construction if the home is less than 50% frame construction.&nbsp; While other carriers will give a masonry type of rating if the frame home is covered with masonry stucco.</p> 
+</div> 
+ <div class="dmNewParagraph" id="1664862760" style="padding-top:0px;padding-bottom:0px;margin-top:0px;margin-bottom:35px;"> <p id="1892228728" style="margin:0px;"></p> 
+ <p style="text-align: center;" id="1936584788">We’re building amazing technology that will simplify insurance shopping.&nbsp; Want to learn more – <a href="http://chrinco.com/follow-chrinco/" id="1246556129">Click Here</a> 
+and let us know!</p> 
+ <p id="1071621596"></p> 
+</div> 
+ <div class="dmNewParagraph" id="1170303219" style="padding-top:0px;padding-bottom:0px;margin-top:0px;margin-bottom:35px;"> <p id="1627419945" style="margin:0px;"></p> 
+ <p style="text-align: center;" id="1571230484"> <b id="1672595289">Want more tips like this? Join the Chrinco.com community and follow us as we not only provide insurance tips to consumers but are also developing a new way to shop for insurance. Join the journey that we believe will change an industry. Chrinco.com – Insurance Simplified.</b> 
+</p> 
+ <p id="1405833328"></p> 
+</div> 
+ <div class="dmNewParagraph" id="1422016452" style="padding-top:0px;padding-bottom:0px;margin-top:0px;margin-bottom:35px;"> <p id="1418552062" style="margin:0px;">The post <a href="/frame-construction-masonry-construction/" id="1844868454">Masonry or frame construction – which is the more expensive home to insure?</a> 
+appeared first on <a href="https://chrinco.com" id="1205870344">Chrinco</a>.</p> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow" id="1004334844" style="background-color:transparent;padding-left:0;padding-right:0;" exclude="true"> <div class="dmRespColsWrapper" id="1303688322"> <div class="dmRespCol small-12 medium-12 large-12 dmBlockElement" id="1702287429"> <a id="1335334409" href="/home-insurance" data-blog-post-alias="home-insurance" style="float:left;width:50%;text-align:left;"> <p>&lt; Older Post</p> 
+</a> 
+ <a id="1151086603" href="/will-home-insurance-cover-furniture-while-moving" data-blog-post-alias="will-home-insurance-cover-furniture-while-moving" style="float:right;width:50%;text-align:right;"> <p>Newer Post &gt;</p> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1061888463" id="1061888463"> <div class="dmRespColsWrapper" id="1262657630"> <div class="dmRespCol large-12 medium-12 small-12 u_1861057944" id="1861057944"> <div class="u_1315103047 default dmDefaultGradient dmShare dmNoMark dmShareDesktop clearfix" id="1315103047" dmle_extension="shareextension" data-element-type="shareextension" google_plus="true" wr="true" data-display-type="block" icon="true" surround="true" icon-name="icon-share" facebook="true" twitter="true" email="true" like="true" use_new_design="true" use_popup="true" linked_in="true" data-title="" data-display-title="false" data-layout="layout-1" data-share-hover-effect="zoomout" text="I wanted to share this great website with you" design="large" share_button_text="Share" share_popup_title="Share by:"> <div class="share-icons gapSpacing"> <div data-target="facebook" class="shareLink fbShare clickTarget" data-href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.chrinco.com%2Fframe-construction-masonry-construction" data-hover-effect="zoomout"> <span class="share-icon dm-social-icons-facebook"></span> 
+</div> 
+ <div data-target="twitter" class="shareLink twitterShare clickTarget" data-href="http://twitter.com/intent/tweet?text=I wanted to share this great website with you&amp;url=http%3A%2F%2Fwww.chrinco.com%2Fframe-construction-masonry-construction" data-hover-effect="zoomout"> <span class="share-icon dm-social-icons-twitter"></span> 
+</div> 
+ <div data-target="linkedin" class="shareLink linkedinShare clickTarget" data-href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fwww.chrinco.com%2Fframe-construction-masonry-construction&amp;title=I wanted to share this great website with you" data-hover-effect="zoomout"> <span class="share-icon dm-social-icons-linkedin"></span> 
+</div> 
+ <a data-target="whatsapp" class="shareLink whatsappShare clickTarget" target="_blank" href="https://api.whatsapp.com/send?text=I wanted to share this great website with you http%3A%2F%2Fwww.chrinco.com%2Fframe-construction-masonry-construction" data-hover-effect="zoomout"> <span class="share-icon dm-social-icons-whatsapp"></span> 
+</a> 
+ <a data-target="email" class="shareLink emailShare clickTarget" href="mailto:?subject=I wanted to share this great website with you&amp;body=http%3A%2F%2Fwww.chrinco.com%2Fframe-construction-masonry-construction" data-hover-effect="zoomout" target="_blank"> <span class="share-icon dm-social-icons-email"></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1749144169" id="1749144169"> <div class="dmRespColsWrapper" id="1072097650"> <div class="dmRespCol large-12 medium-12 small-12 u_1639724380" id="1639724380" data-blog-template="inject-fb"> <div id="1890101100" class="dmFacebookComments" dmle_comments="true" dmle_extension="facebook_comments" data-element-type="facebook_comments" color="light" icon="true" surround="false"> <div class="fb-comments" data-href="http://www.chrinco.com/frame-construction-masonry-construction" data-mobile="false" data-num-posts="10" data-colorscheme="light"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1955241875" id="1955241875"> <div class="dmRespColsWrapper" id="1640503916"> <div class="dmRespCol large-12 medium-12 small-12 u_1879452075" id="1879452075"> <div class="u_1846542956 default mainBlog layout4" id="1846542956" dmle_extension="internal_blog_list" data-element-type="internal_blog_list" show-images="true" wr="true" trim-title="false" show-blog-title="false" posts-animation="none" show-action-text="true" text-align="left" icon="true" surround="true" adwords="" list-layout="layout4" visible-items="10" visible-post-lines="2" search-tags="" search-term="" more-posts-text="More Posts" header-type="H2" posts-padding="10" posts-per-row="3" show-author="false" text-box-padding="true" action-text="Read more" skip-post-index="2254684" blog-posts-feature-flag="true" data-image-hover-effect="zoomout" show-more-posts-text="true" data-paginate-total-elements="120"> <div class="inner "> <div style="-ms-grid-column:1; -ms-grid-row:1" class="postArticle "> <div class="inner clearfix wow" style="animation-delay: 200.0ms;"> <a class="blogImgLink" dont-color-link="true" href="/how-do-alarms-affect-insurance14d1cd4a" data-blog-post-alias="how-do-alarms-affect-insurance14d1cd4a"> <div class="blogImg" style="background-image: url('https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/Alarm-1920w.jpg');"><img src="https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/Alarm-1920w.jpg" alt="A hand is pressing a button on a security system." onerror="handleImageLoadError(this)" width="1920" height="1301"></div> 
+</a> 
+ <div class="postTextContainer"> <div class="postText clearfix"> <div class="postTitle"> <h3> <a dont-color-link="true" href="/how-do-alarms-affect-insurance14d1cd4a" data-blog-post-alias="how-do-alarms-affect-insurance14d1cd4a">How do alarms affect insurance?</a> 
+</h3> 
+</div> 
+ <div class="authorBar"> <span>February 21, 2022</span> 
+</div> 
+ <div class="postDescription">If you’re thinking about getting an alarm on your home here’s what you need to know about the discounts.</div> 
+</div> 
+ <div class="readMore"> <a dont-color-link="true" href="/how-do-alarms-affect-insurance14d1cd4a"></a> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div style="-ms-grid-column:2; -ms-grid-row:1" class="postArticle "> <div class="inner clearfix wow" style="animation-delay: 400.0ms;"> <a class="blogImgLink" dont-color-link="true" href="/are-you-underinsured-on-your-homea23ab413" data-blog-post-alias="are-you-underinsured-on-your-homea23ab413"> <div class="blogImg" style="background-image: url('https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/Underinsured-1920w.jpg');"><img src="https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/Underinsured-1920w.jpg" alt="A woman is using a calculator in front of a laptop computer." onerror="handleImageLoadError(this)" width="1920" height="1275"></div> 
+</a> 
+ <div class="postTextContainer"> <div class="postText clearfix"> <div class="postTitle"> <h3> <a dont-color-link="true" href="/are-you-underinsured-on-your-homea23ab413" data-blog-post-alias="are-you-underinsured-on-your-homea23ab413">Are you underinsured on your home?</a> 
+</h3> 
+</div> 
+ <div class="authorBar"> <span>By tony</span> 
+ <span>•</span> 
+ <span>February 17, 2022</span> 
+</div> 
+ <div class="postDescription">It’s no secret that things are getting more and more expensive.  From food prices to energy prices, it seems like all corners of the economy are being affected.  We’re seeing supply chain issues, raw material shortages and labor supply issues all putting inflationary pressures on most consumables.  And one area we’re seeing significant increases is in the cost to build a home.</div> 
+</div> 
+ <div class="readMore"> <a dont-color-link="true" href="/are-you-underinsured-on-your-homea23ab413"></a> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div style="-ms-grid-column:3; -ms-grid-row:1" class="postArticle "> <div class="inner clearfix wow" style="animation-delay: 600.0ms;"> <a class="blogImgLink" dont-color-link="true" href="/home-insurance-claim-denial3f22cc6a" data-blog-post-alias="home-insurance-claim-denial3f22cc6a"> <div class="blogImg" style="background-image: url('https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/Home-Insurance-Claim-1920w.jpg');"><img src="https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/Home-Insurance-Claim-1920w.jpg" alt="A house that has been upside down in the sand" onerror="handleImageLoadError(this)" width="1920" height="1280"></div> 
+</a> 
+ <div class="postTextContainer"> <div class="postText clearfix"> <div class="postTitle"> <h3> <a dont-color-link="true" href="/home-insurance-claim-denial3f22cc6a" data-blog-post-alias="home-insurance-claim-denial3f22cc6a">Home Insurance Claim Denial?</a> 
+</h3> 
+</div> 
+ <div class="authorBar"> <span>By tony</span> 
+ <span>•</span> 
+ <span>February 10, 2022</span> 
+</div> 
+ <div class="postDescription">Today we’re discussing one of the most common reasons for a home insurance claim denial but before we get there, let’s briefly discuss what a home insurance policy is and what it is not.</div> 
+</div> 
+ <div class="readMore"> <a dont-color-link="true" href="/home-insurance-claim-denial3f22cc6a"></a> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div style="-ms-grid-column:1; -ms-grid-row:2" class="postArticle "> <div class="inner clearfix wow" style="animation-delay: 800.0ms;"> <a class="blogImgLink" dont-color-link="true" href="/auto-insurance-rate-increases-in-202271880381" data-blog-post-alias="auto-insurance-rate-increases-in-202271880381"> <div class="blogImg" style="background-image: url('https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/Car-Insurance-Increase-1920w.jpg');"><img src="https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/Car-Insurance-Increase-1920w.jpg" alt="A person is holding a hat out of the window of a car." onerror="handleImageLoadError(this)" width="1920" height="1280"></div> 
+</a> 
+ <div class="postTextContainer"> <div class="postText clearfix"> <div class="postTitle"> <h3> <a dont-color-link="true" href="/auto-insurance-rate-increases-in-202271880381" data-blog-post-alias="auto-insurance-rate-increases-in-202271880381">Auto insurance rate increases in 2022?&nbsp;</a> 
+</h3> 
+</div> 
+ <div class="authorBar"> <span>By tony</span> 
+ <span>•</span> 
+ <span>January 30, 2022</span> 
+</div> 
+ <div class="postDescription">Recently we had a customer call in to let us know that he had sold one of his cars and that he would like the vehicle removed from his policy.  While talking to the customer he mentioned that he sold the vehicle for $4,000 more than what he paid for it.  While that is great news for him it underscores a potential issue in the auto insurance marketplace that we expect will trickle down to you, the consumer, later this year.</div> 
+</div> 
+ <div class="readMore"> <a dont-color-link="true" href="/auto-insurance-rate-increases-in-202271880381"></a> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div style="-ms-grid-column:2; -ms-grid-row:2" class="postArticle "> <div class="inner clearfix wow" style="animation-delay: 1000.0ms;"> <a class="blogImgLink" dont-color-link="true" href="/mortgage-company-didnt-pay-insurance9dabce5e" data-blog-post-alias="mortgage-company-didnt-pay-insurance9dabce5e"> <div class="blogImg" style="background-image: url('https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/Insurance-Escrow-1920w.png');"><img src="https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/Insurance-Escrow-1920w.png" alt="A green paid stamp on a white background" onerror="handleImageLoadError(this)" width="1280" height="1274"></div> 
+</a> 
+ <div class="postTextContainer"> <div class="postText clearfix"> <div class="postTitle"> <h3> <a dont-color-link="true" href="/mortgage-company-didnt-pay-insurance9dabce5e" data-blog-post-alias="mortgage-company-didnt-pay-insurance9dabce5e">Mortgage company didn’t pay insurance?</a> 
+</h3> 
+</div> 
+ <div class="authorBar"> <span>By tony</span> 
+ <span>•</span> 
+ <span>January 8, 2022</span> 
+</div> 
+ <div class="postDescription">If you have a mortgage with an escrow account, you have likely or will likely experience a time when your home insurance fails to get paid by your mortgage servicer before its expiration.  This can be a terribly frustrating time for you.  But if you live in Florida, just know that the state of Florida has your back.</div> 
+</div> 
+ <div class="readMore"> <a dont-color-link="true" href="/mortgage-company-didnt-pay-insurance9dabce5e"></a> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div style="-ms-grid-column:3; -ms-grid-row:2" class="postArticle "> <div class="inner clearfix wow" style="animation-delay: 1200.0ms;"> <a class="blogImgLink" dont-color-link="true" href="/what-happened-to-flood-insurance5ec2a972" data-blog-post-alias="what-happened-to-flood-insurance5ec2a972"> <div class="blogImg" style="background-image: url('https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/Flood-1920w.jpg');"><img src="https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/Flood-1920w.jpg" alt="An aerial view of a flooded city" onerror="handleImageLoadError(this)" width="1920" height="1276"></div> 
+</a> 
+ <div class="postTextContainer"> <div class="postText clearfix"> <div class="postTitle"> <h3> <a dont-color-link="true" href="/what-happened-to-flood-insurance5ec2a972" data-blog-post-alias="what-happened-to-flood-insurance5ec2a972">What happened to flood insurance?</a> 
+</h3> 
+</div> 
+ <div class="authorBar"> <span>By tony</span> 
+ <span>•</span> 
+ <span>November 19, 2021</span> 
+</div> 
+ <div class="postDescription">Recently, FEMA rolled out Risk Rating 2.0 and the rollout has been quite shocking for many Florida residents.  Risk Rating 2.0 is a methodology used to accurately charge for flood insurance based upon a property’s own unique flood risks.  Prior to Risk Rating 2.0 flood insurance rates were largely determined by what flood zone a property was located in.</div> 
+</div> 
+ <div class="readMore"> <a dont-color-link="true" href="/what-happened-to-flood-insurance5ec2a972"></a> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div style="-ms-grid-column:1; -ms-grid-row:3" class="postArticle "> <div class="inner clearfix wow" style="animation-delay: 1400.0ms;"> <a class="blogImgLink" dont-color-link="true" href="/rental-car58620be4" data-blog-post-alias="rental-car58620be4"> <div class="blogImg" style="background-image: url('https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/Rental-Car-Reimbursement-1920w.jpg');"><img src="https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/Rental-Car-Reimbursement-1920w.jpg" alt="A man is laying on the ground working on a car in a garage." onerror="handleImageLoadError(this)" width="1920" height="1280"></div> 
+</a> 
+ <div class="postTextContainer"> <div class="postText clearfix"> <div class="postTitle"> <h3> <a dont-color-link="true" href="/rental-car58620be4" data-blog-post-alias="rental-car58620be4">How is COVID affecting car insurance?</a> 
+</h3> 
+</div> 
+ <div class="authorBar"> <span>By tony</span> 
+ <span>•</span> 
+ <span>November 6, 2021</span> 
+</div> 
+ <div class="postDescription">It’s no secret that COVID has changed the way many companies are doing business in the United States and the same is true for auto insurance carriers as well.  With all the supply chain issues and manufacturing shortages, we’re not only seeing the price of new and used automobiles increase in value, which is increasing the cost to insure, but more importantly we’re seeing vehicles take longer and longer to get repaired after a covered claim.  In fact, we’ve seen completely repaired vehicles sit for months waiting for a chip.  We’ve seen parts that used to take days to come in, take months.  We’ve seen some parts come in and have to sit for weeks while other parts make their way to the repair facility.</div> 
+</div> 
+ <div class="readMore"> <a dont-color-link="true" href="/rental-car58620be4"></a> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div style="-ms-grid-column:2; -ms-grid-row:3" class="postArticle "> <div class="inner clearfix wow" style="animation-delay: 1600.0ms;"> <a class="blogImgLink" dont-color-link="true" href="/solar-panelsc9e4425c" data-blog-post-alias="solar-panelsc9e4425c"> <div class="blogImg" style="background-image: url('https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/Solar-Panels-scaled-1920w.jpg');"><img src="https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/Solar-Panels-scaled-1920w.jpg" alt="A house with solar panels on the roof and a pool" onerror="handleImageLoadError(this)" width="1920" height="1280"></div> 
+</a> 
+ <div class="postTextContainer"> <div class="postText clearfix"> <div class="postTitle"> <h3> <a dont-color-link="true" href="/solar-panelsc9e4425c" data-blog-post-alias="solar-panelsc9e4425c">Want to go solar?&nbsp;</a> 
+</h3> 
+</div> 
+ <div class="authorBar"> <span>By tony</span> 
+ <span>•</span> 
+ <span>July 22, 2021</span> 
+</div> 
+ <div class="postDescription">Recently, we have received a number of calls from customers inquiring as to whether the installation of solar panels will affect their home insurance.</div> 
+</div> 
+ <div class="readMore"> <a dont-color-link="true" href="/solar-panelsc9e4425c"></a> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div style="-ms-grid-column:3; -ms-grid-row:3" class="postArticle "> <div class="inner clearfix wow" style="animation-delay: 1800.0ms;"> <a class="blogImgLink" dont-color-link="true" href="/what-is-an-ho6-policye7b02c7d" data-blog-post-alias="what-is-an-ho6-policye7b02c7d"> <div class="blogImg" style="background-image: url('https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/Condo-scaled-1920w.jpg');"><img src="https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/Condo-scaled-1920w.jpg" alt="A living room with a staircase leading up to the second floor." onerror="handleImageLoadError(this)" width="1920" height="1280"></div> 
+</a> 
+ <div class="postTextContainer"> <div class="postText clearfix"> <div class="postTitle"> <h3> <a dont-color-link="true" href="/what-is-an-ho6-policye7b02c7d" data-blog-post-alias="what-is-an-ho6-policye7b02c7d">What is an HO6 policy?</a> 
+</h3> 
+</div> 
+ <div class="authorBar"> <span>By tony</span> 
+ <span>•</span> 
+ <span>November 12, 2020</span> 
+</div> 
+ <div class="postDescription">When buying a condo, part of your association dues goes towards a master condo insurance policy purchased by the condo association.  This policy insures the condo building for covered losses.  An HO6 policy picks up where the master policy ends and pays for the internal structures to your particular condo unit.</div> 
+</div> 
+ <div class="readMore"> <a dont-color-link="true" href="/what-is-an-ho6-policye7b02c7d"></a> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div style="-ms-grid-column:1; -ms-grid-row:4" class="postArticle lastArticle"> <div class="inner clearfix wow" style="animation-delay: 2000.0ms;"> <a class="blogImgLink" dont-color-link="true" href="/does-home-insurance-cover-lightning-strikes" data-blog-post-alias="does-home-insurance-cover-lightning-strikes"> <div class="blogImg" style="background-image: url('https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/Lightning-Strikes-1920w.jpg');"><img src="https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/Lightning-Strikes-1920w.jpg" alt="Lightning strikes in the night sky over a city" onerror="handleImageLoadError(this)" width="1920" height="1280"></div> 
+</a> 
+ <div class="postTextContainer"> <div class="postText clearfix"> <div class="postTitle"> <h3> <a dont-color-link="true" href="/does-home-insurance-cover-lightning-strikes" data-blog-post-alias="does-home-insurance-cover-lightning-strikes">Does home insurance cover lightning strikes?</a> 
+</h3> 
+</div> 
+ <div class="authorBar"> <span>By tony</span> 
+ <span>•</span> 
+ <span>October 28, 2020</span> 
+</div> 
+ <div class="postDescription">Florida is considered the lightning capital of the US with 17 of the top 30 cities nationwide for lightning. Strikes.  As such, the question we commonly get asked is “does home insurance cover lightning strikes?”</div> 
+</div> 
+ <div class="readMore"> <a dont-color-link="true" href="/does-home-insurance-cover-lightning-strikes"></a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <a dont-color-link="true" class="more-posts-text-container dmWidget"> <span class="morePosts text">More Posts</span> 
+</a> 
+ <div></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="sticky-widgets-container-global" id="1913099585"></div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="u_fcontainer f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="u_1183934613 dmRespRow dmFooterContent" id="1183934613"> <div class="dmRespColsWrapper" id="1625443252"> <div class="dmRespCol small-12 medium-12 large-12 u_1494596766" id="1494596766"> <div class="dmRespRow u_1993407736 fullBleedChanged fullBleedMode" id="1993407736"> <div class="dmRespColsWrapper" id="1953018464"> <div class="u_1115623661 dmRespCol small-12 hide-for-small large-5 medium-5" id="1115623661"> <div class="u_1125533620 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1125533620" editablewidget="true"> <a href="/" id="1691058478"><img src="https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/Chrinco-logo-white-png-transparent-e1522907272276-1920w.png" id="1079812207" class="" data-dm-image-path="https://irp.cdn-website.com/d28573c9/dms3rep/multi/Chrinco-logo-white-png-transparent-e1522907272276.png" width="200" height="44" alt="The logo for chrinco insurance simplifies insurance" onerror="handleImageLoadError(this)"></a> 
+</div> 
+</div> 
+ <div class="u_1665735232 dmRespCol small-12 large-4 medium-4" id="1665735232"> <div class="u_1110606182 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1110606182" data-styletopreserve="{" background-image":""}"=""> <h2 class="m-size-24 size-30"><span style="display: initial; color: var(--color_7);" class="font-size-30 m-font-size-24">Contact Us</span></h2> 
+</div> 
+ <div class="u_1062366948 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1062366948" style="transition: none 0s ease 0s; text-align: left; display: block;" data-diy-text="" new-inline-bind-applied="true"><p><font color="#2d232e">3270 Suntree Blvd #1105</font></p><p><font color="#2d232e">Melbourne, FL 32940</font></p><p><font color="#2d232e"><br></font></p><p><span style="display: initial; color: var(--color_5);">Phone: <span class="inline-data-binding" data-encoded-value="KDQ0MCkgNTg0LTA1NTg=" data-inline-binding="content_library.global.phone.main phone"><span><a href="tel:321-757-4014" runtime_url="tel:321-757-4014" target="_blank">321-757-4014</a></span></span></span><span style="display: initial;"><br></span></p></div> 
+ <a data-display-type="block" class="u_1740842848 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="/contact" data-element-type="dButtonLinkId" id="1740842848"> <span class="iconBg" aria-hidden="true" id="1049915329"> <span class="icon hasFontIcon icon-star" id="1797002967"></span> 
+</span> 
+ <span class="text" id="1451565106">Contact Us</span> 
+</a> 
+</div> 
+ <div class="u_1766220093 dmRespCol small-12 large-3 medium-3" id="1766220093"> <div class="u_1447124782 dmNewParagraph" data-element-type="paragraph" data-version="5" id="1447124782" style="transition: none 0s ease 0s; text-align: left; display: block;"> <h2 class="m-size-24 size-30"><span style="color: var(--color_7); display: initial;" class="font-size-30 m-font-size-24">Links</span></h2> 
+</div> 
+ <nav class="u_1724625107 unifiednav_vertical effect-bottom2 main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="vertical_nav_layout_2" layout-sub="" data-show-vertical-sub-items="HOVER" id="1724625107" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-logo-src="https://lirp.cdn-website.com/d28573c9/dms3rep/multi/opt/70c2e0d0-9dbe-473d-9c81-653f8b347104-1920w.png" alt="" data-nav-structure="VERTICAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item" target="" data-target-page-alias="home" tabindex="0"> <span class="nav-item-text " data-link-text="
+         Home
+        " data-auto="page-text-style">Home<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/about-us" class="unifiednav__item" target="" data-target-page-alias="about-us" tabindex="0"> <span class="nav-item-text " data-link-text="About Us" data-auto="page-text-style">About Us<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/what-we-do" class="unifiednav__item" target="" data-target-page-alias="personal-insurance" tabindex="0"> <span class="nav-item-text " data-link-text="What We Do" data-auto="page-text-style">What We Do<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item" target="" data-target-page-alias="business" tabindex="0"> <span class="nav-item-text " data-link-text="Home" data-auto="page-text-style">Home<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/contact" class="unifiednav__item" target="" data-target-page-alias="contact" tabindex="0"> <span class="nav-item-text " data-link-text="
+         Contact
+        " data-auto="page-text-style">Contact<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1907786881 widget-1f5975 dmCustomWidget" data-lazy-load="" data-title="" id="1907786881" dmle_extension="custom_extension" data-element-type="custom_extension" icon="false" surround="false" data-widget-id="1f5975986930429f819d4cd2154b5c4a" data-widget-version="22" data-widget-config="eyJjb3B5cmlnaHRUZXh0IjoiPHAgY2xhc3M9XCJydGVCbG9ja1wiPkFsbCBSaWdodHMgUmVzZXJ2ZWQgfCBDaHJpbmNvIEluc3VyYW5jZSB8IDxhIHZhbHVlPVwiaHR0cHM6Ly9pcnAuY2RuLXdlYnNpdGUuY29tL2QyODU3M2M5L2ZpbGVzL3VwbG9hZGVkL1ByaXZhY3lfUG9saWN5X1VwZGF0ZWRfJTI4MSUyOS5wZGZcIiBsYWJlbD1cIlwiIHR5cGU9XCJmaWxlXCIgZmlsZT1cInRydWVcIiBocmVmPVwiaHR0cHM6Ly9pcnAuY2RuLXdlYnNpdGUuY29tL2QyODU3M2M5L2ZpbGVzL3VwbG9hZGVkL1ByaXZhY3lfUG9saWN5X1VwZGF0ZWRfJTI4MSUyOS5wZGZcIiBkYXRhLXJ1bnRpbWUtdXJsPVwiaHR0cHM6Ly9pcnAuY2RuLXdlYnNpdGUuY29tL2QyODU3M2M5L2ZpbGVzL3VwbG9hZGVkL1ByaXZhY3lfUG9saWN5X1VwZGF0ZWRfJTI4MSUyOS5wZGZcIj5Qcml2YWN5IFBvbGljeTwvYT7CoDwvcD4ifQ=="> <div class="copyright"> <span class="copyright-year">© 2025&nbsp;</span> 
+ <span><p class="rteBlock">All Rights Reserved | Chrinco Insurance | <a value="https://irp.cdn-website.com/d28573c9/files/uploaded/Privacy_Policy_Updated_%281%29.pdf" label="" type="file" file="true" href="https://irp.cdn-website.com/d28573c9/files/uploaded/Privacy_Policy_Updated_%281%29.pdf" data-runtime-url="https://irp.cdn-website.com/d28573c9/files/uploaded/Privacy_Policy_Updated_%281%29.pdf">Privacy Policy</a>&nbsp;</p></span> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+    </div>
+</div>
+<!--  Add full CSS and Javascript before the close tag of the body if needed -->
+<!-- ========= JS Section ========= -->
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "ENGLISH"
+    window.isSitePreview = false;
+</script>
+<script>
+    window.customWidgetsFunctions["1f5975986930429f819d4cd2154b5c4a~24"] = function (element, data, api) {
+        null
+    };
+</script>
+<script type="text/javascript">
+
+    var d_version = "production_5918";
+    var build = "2025-11-05T13_49_05";
+    window['v' + 'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        window.assetsCacheQueryParam = "?version=2025-11-05T13_49_05";
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            } else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+</script>
+
+<!-- Load jQuery -->
+<script type="text/javascript" id="d-js-jquery" src="https://static.cdn-website.com/libs/jquery/jquery-3.7.0.min.js"></script>
+<!-- End Load jQuery -->
+<!-- Injecting site-wide before scripts -->
+<!-- End Injecting site-wide to the head -->
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+    window.jQuery.migrateMute = true;
+</script>
+<script>
+    window.cookiesNotificationMarkupPreview = 'null';
+</script>
+
+<!-- HEAD RT JS Include -->
+<script id="d-js-params">
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "desktop";
+
+    window.rtCommonProps = {};
+    rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+    rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.multiscreensite.com';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["rt.pushnotifs.force.button"] =true;
+    rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["isCoverage.test"] =false;
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["feature.flag.mappy.kml"] =false;
+    rtCommonProps["common.resources.dist.cdn"] =true;
+    rtCommonProps["common.build.dist.folder"] = 'production/5918';
+    rtCommonProps["common.resources.cdn.host"] = 'https://static.cdn-website.com';
+    rtCommonProps["common.resources.folder"] = 'https://static.cdn-website.com/mnlt/production/5918';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+    rtCommonProps["isAutomation.test"] =false;
+    rtCommonProps["booking.cal.api.domain"] = 'api.cal.com';
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'mapbox';
+    rtCommonProps['common.map.defaults.radiusSize'] = '1500';
+    rtCommonProps['common.map.defaults.radiusBg'] = 'rgba(255, 255, 255, 0.4)';
+    rtCommonProps['common.map.defaults.strokeColor'] = 'rgba(255, 255, 255, 1)';
+    rtCommonProps['common.map.defaults.strokeSize'] = '2';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = true;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["modules.resources.cdn"] =true;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://lirp.cdn-website.com/';
+    rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+    rtCommonProps["feature.flag.performance.logs"] =true;
+    rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+    rtCommonProps["cookiebot.mapbox.consent.category"] = 'marketing';
+    // feature flags that's used out of runtime module (in  legacy files)
+    rtCommonProps["platform.monolith.personalization.dateTimeCondition.popupMsgAction.moveToclient.enabled"] =true;
+    rtCommonProps["streamline.monolith.personalization.skipRuleConditionsForPreview.enabled"] =true;
+    rtCommonProps["streamline.personalization.decodeTimeZone.enabled"] =true;
+
+    window.rtFlags = {};
+    rtFlags["unsuspendEcwidStoreOnRuntime.enabled"] =true;
+    rtFlags["scripts.widgetCount.enabled"] =true;
+    rtFlags["fnb.animations.tracking.enabled"] =true;
+    rtFlags["ecom.ecwidNewUrlStructure.enabled"] = false;
+    rtFlags["ecom.ecwid.accountPage.emptyBaseUrl.enabled"] = true;
+    rtFlags["ecom.ecwid.pages.links.disable.listeners"] = true;
+    rtFlags["ecom.ecwid.storefrontV3.enabled"] = false;
+    rtFlags["ecom.ecwid.old.store.fix.facebook.share"] = true;
+    rtFlags["feature.flag.photo.gallery.exact.size"] =true;
+    rtFlags["geocode.search.localize"] =false;
+    rtFlags["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtFlags["twitter.heightLimit.enabled"] = true;
+    rtFlags["runtime.lottieOverflow"] =false;
+    rtFlags["runtime.monitoring.sentry.ignoreErrors"] = "";
+    rtFlags["contact.form.browserValidation.enabled"] =true;
+    rtFlags["streamline.monolith.personalization.supportMultipleConditions.enabled"] =false;
+    rtFlags["runtime.cwv.report.cls.enabled"] =true;
+    rtFlags["runtime.cwv.report.lcp.enabled"] =false;
+    rtFlags["flex.runtime.popup.with.show"] =true;
+    rtFlags["contact.form.useActiveForm"] =true;
+    rtFlags["runtime.ssr.productStore.internal.observer"] =true;
+    rtFlags["runtime.ssr.productCustomizations"] =true;
+    rtFlags["runtime.ssr.booking.dryrun.for.default.staffmember"] =false;
+</script>
+<script src="https://static.cdn-website.com/mnlt/production/5918/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js" id="d-js-core"></script>
+<!-- End of HEAD RT JS Include -->
+<script src="https://static.cdn-website.com/mnlt/production/5918/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js"></script>
+<script>
+    
+    $(window).bind("orientationchange", function (e) {
+        $.layoutManager.initLayout();
+        
+    });
+    $(document).resize(function () {
+        
+    });
+</script>
+<script type="text/javascript" id="d_track_campaign">
+(function() {
+    if (!window.location.search) {
+        return;
+    }
+	const cleanParams = window.location.search.substring(1); // Strip ?
+	const queryParams = cleanParams.split('&');
+
+	const expires = 'expires=' + new Date().getTime() + 24 * 60 * 60 * 1000;
+	const domain = 'domain=' + window.location.hostname;
+	const path = "path=/";
+
+	queryParams.forEach((param) => {
+		const [key, value = ''] = param.split('=');
+		if (key.startsWith('utm_')) {
+			const cookieName = "_dm_rt_" + key.substring(4);
+			const cookie = cookieName + "=" + value;
+			const joined = [cookie, expires, domain, path].join(";");
+			document.cookie = joined;
+		}
+	});
+}());
+</script>
+<script type="text/javascript">
+  var _dm_gaq = {};
+  var _gaq = _gaq || [];
+  var _dm_insite = [];
+</script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+</script>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-NPG2MG6" id="d-js-gtm" onload="window.dispatchEvent(new CustomEvent('gtmLoaded', { bubbles: true }))"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-89558851-1"></script>
+<script type="text/javascript" id="d_track_ga">
+  _dm_gaq.siteAlias = 'd28573c9';
+  _dm_gaq.systemAggregatedGaqID = '';
+  _dm_gaq.externalGaqID = 'UA-89558851-1';
+  _dm_gaq.gaAggregatedEventAttributes = {
+	  'site_alias':  _dm_gaq.siteAlias,
+	  'product': 'DM_DIRECT',
+	  'plan': 'BUSINESS_PLUS',
+	  'dfooter': 'false',
+	  'sitetype': '1',
+	  'pwaEnabled': 'true'
+  }
+
+  _dm_gaq.pushEvent = function(trackingId, event, category, label, value, additionalParams = {}) {
+	  const eventProps = {
+		  send_to: trackingId,
+		  event_category: category,
+		  event_label: label,
+		  value,
+		  ...additionalParams,
+		  ...(trackingId === _dm_gaq.systemAggregatedGaqID
+				  ? _dm_gaq.gaAggregatedEventAttributes : {})
+	  };
+	  gtag('event', event, eventProps);
+  }
+
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+  function pushInsiteImpressions(id) {
+	  _dm_insite.forEach((rule) => {
+		  _dm_gaq.pushEvent(id, 'insite_impression', 'insite', rule.ruleType + '__' + rule.ruleId);
+	  });
+  }
+
+if(_dm_gaq.systemAggregatedGaqID){
+	// track aggregated account
+	gtag('config', '', {
+		'send_page_view': false,
+		'anonymize_ip': true,
+		'transport_type': 'beacon',
+		'custom_map': {'dimension1': 'site_alias', 'dimension2': 'product', 'dimension3': 'dFooter', 'dimension4': 'sitetype'}
+	});
+	gtag('set', 'developer_id.dMDU5Nj', true);
+
+	_dm_gaq.pushEvent('', 'page_view');
+	pushInsiteImpressions(_dm_gaq.systemAggregatedGaqID);
+}
+
+if(_dm_gaq.externalGaqID && _dm_gaq.externalGaqID!= '') {
+	gtag('config', 'UA-89558851-1', {
+		'send_page_view': false,
+		'anonymize_ip': true,
+		'transport_type': 'beacon',
+		'linker': {
+			'domains': ['chrinco.com']
+		}
+	});
+	_dm_gaq.pushEvent('UA-89558851-1', 'page_view');
+	pushInsiteImpressions(_dm_gaq.externalGaqID);
+}
+</script>
+<script type="text/javascript" id="d_track_sp">
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+window.dmsnowplow  = window.snowplow;
+
+dmsnowplow('newTracker', 'cf', 'd32hwlnfiv2gyn.cloudfront.net', { // Initialise a tracker
+  appId: 'd28573c9'
+});
+
+// snowplow queries element styles so we wait until CSS calculations are done.
+requestAnimationFrame(() => {
+	dmsnowplow('trackPageView');
+	_dm_insite.forEach((rule) => {
+		// Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+		// the tracking is in popup.js
+		if (rule.actionName !== "popup") {
+			dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+		}
+		window?.waitForDeferred?.('dmAjax', () => {
+			$.DM.events.trigger('event-ruleTriggered', {value: rule});
+		});
+	});
+});
+</script>
+   <div style="display:none;" id="P6iryBW0Wu"></div>
+
+<!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root" data-locale="en"></div>
+<!-- Alias: d28573c9 -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script id="d_track_personalization">
+	window?.waitForDeferred?.('dmAjax', () => {
+		// Collects client data and updates cookies used by smart sites
+		window.expireDays = 365;
+		window.visitLength = 30 * 60000;
+		$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), window.expireDays);
+			setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+	});
+</script>
+<script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+    
+    Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+<!--  End Script tags -->
+<!--  Site Wide Html Markup -->
+<!--  Site Wide Html Markup -->
+
+
+</body></html>

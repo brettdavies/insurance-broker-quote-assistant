@@ -1,0 +1,455 @@
+{
+  "domain": "thegeneral.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:26.599772",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 14,
+      "frequency": 14.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 20,
+      "frequency": 20.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 38,
+      "frequency": 38.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 17,
+      "frequency": 17.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "has-global-padding",
+      "count": 23
+    },
+    {
+      "class": "is-layout-constrained",
+      "count": 23
+    },
+    {
+      "class": "wp-block-group",
+      "count": 21
+    },
+    {
+      "class": "wp-block-group-is-layout-constrained",
+      "count": 18
+    },
+    {
+      "class": "has-text-align-center",
+      "count": 10
+    },
+    {
+      "class": "share-platform",
+      "count": 9
+    },
+    {
+      "class": "share-link",
+      "count": 9
+    },
+    {
+      "class": "has-background",
+      "count": 8
+    },
+    {
+      "class": "wp-block-column",
+      "count": 8
+    },
+    {
+      "class": "wp-block-list",
+      "count": 7
+    },
+    {
+      "class": "is-layout-flex",
+      "count": 6
+    },
+    {
+      "class": "swiper-slide",
+      "count": 6
+    },
+    {
+      "class": "related-post-wrapper",
+      "count": 6
+    },
+    {
+      "class": "related-post-image",
+      "count": 6
+    },
+    {
+      "class": "related-post-content",
+      "count": 6
+    },
+    {
+      "class": "related-post-title",
+      "count": 6
+    },
+    {
+      "class": "related-post-category",
+      "count": 6
+    },
+    {
+      "class": "related-post-excerpt",
+      "count": 6
+    },
+    {
+      "class": "related-post-button",
+      "count": 6
+    },
+    {
+      "class": "is-layout-flow",
+      "count": 5
+    },
+    {
+      "class": "footer-secondary-nav-item",
+      "count": 5
+    },
+    {
+      "class": "footer-secondary-nav-link",
+      "count": 5
+    },
+    {
+      "class": "blog-group",
+      "count": 4
+    },
+    {
+      "class": "block-visibility-hide-large-screen",
+      "count": 4
+    },
+    {
+      "class": "block-visibility-hide-medium-screen",
+      "count": 4
+    },
+    {
+      "class": "has-small-font-size",
+      "count": 4
+    },
+    {
+      "class": "block-visibility-hide-small-screen",
+      "count": 4
+    },
+    {
+      "class": "wp-block-column-is-layout-constrained",
+      "count": 4
+    },
+    {
+      "class": "form-group",
+      "count": 4
+    },
+    {
+      "class": "row",
+      "count": 4
+    },
+    {
+      "class": "wp-block-column-is-layout-flow",
+      "count": 4
+    },
+    {
+      "class": "footer-social-item",
+      "count": 4
+    },
+    {
+      "class": "footer-social-link",
+      "count": 4
+    },
+    {
+      "class": "social-icon",
+      "count": 4
+    },
+    {
+      "class": "screen-reader-text",
+      "count": 3
+    },
+    {
+      "class": "wp-block-group-is-layout-flex",
+      "count": 3
+    },
+    {
+      "class": "wp-block-columns",
+      "count": 3
+    },
+    {
+      "class": "wp-block-columns-is-layout-flex",
+      "count": 3
+    },
+    {
+      "class": "has-cyan-bluish-gray-background-color",
+      "count": 3
+    },
+    {
+      "class": "wp-block-heading",
+      "count": 3
+    },
+    {
+      "class": "has-text-color",
+      "count": 3
+    },
+    {
+      "class": "has-link-color",
+      "count": 3
+    },
+    {
+      "class": "footer-client-item",
+      "count": 3
+    },
+    {
+      "class": "wp-block-template-part",
+      "count": 2
+    },
+    {
+      "class": "column",
+      "count": 2
+    },
+    {
+      "class": "column-title",
+      "count": 2
+    },
+    {
+      "class": "blog-links",
+      "count": 2
+    },
+    {
+      "class": "wp-block-search__button-inside",
+      "count": 2
+    },
+    {
+      "class": "wp-block-search__icon-button",
+      "count": 2
+    },
+    {
+      "class": "wp-block-search",
+      "count": 2
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "boomr-scr-as",
+      "count": 2
+    },
+    {
+      "id": "table-of-contents",
+      "count": 2
+    },
+    {
+      "id": "53aa8807dec7e10d38f59f32",
+      "count": 2
+    },
+    {
+      "id": "551d3dd10000ff00057e777f",
+      "count": 2
+    },
+    {
+      "id": "free-quote",
+      "count": 2
+    },
+    {
+      "id": "free-quote-zip",
+      "count": 2
+    },
+    {
+      "id": "true",
+      "count": 2
+    },
+    {
+      "id": "our-blog-is-here-to-help-you-understand-insurance-any-coverage-is-subject-to-the-terms-of-your-policy",
+      "count": 2
+    },
+    {
+      "id": "Layer_1",
+      "count": 2
+    },
+    {
+      "id": "C4VLUDH6H18A0MH27NBG",
+      "count": 1
+    },
+    {
+      "id": "wp-block-search-inline-css",
+      "count": 1
+    },
+    {
+      "id": "block-visibility-screen-size-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-group-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-post-title-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-post-date-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-post-terms-inline-css",
+      "count": 1
+    },
+    {
+      "id": "toc-style-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-post-featured-image-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-paragraph-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-heading-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-list-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-image-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-post-content-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-spacer-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-columns-inline-css",
+      "count": 1
+    },
+    {
+      "id": "block-acf-share-this-article-css",
+      "count": 1
+    },
+    {
+      "id": "block-acf-related-posts-slider-css",
+      "count": 1
+    },
+    {
+      "id": "swiper-css",
+      "count": 1
+    },
+    {
+      "id": "sbi_styles-css",
+      "count": 1
+    },
+    {
+      "id": "wp-emoji-styles-inline-css",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

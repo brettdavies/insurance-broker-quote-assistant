@@ -1,0 +1,362 @@
+[ Show Menu ](https://clark.com/insurance/how-much-is-homeowners-insurance/)
+[ Clark.com ](https://clark.com "Clark Home")
+  * [Phone Plans](https://clark.com/cell-phones/)
+[ Phone Plans](https://clark.com/insurance/how-much-is-homeowners-insurance/)
+[Best](https://clark.com/insurance/how-much-is-homeowners-insurance/)
+    * [Best Cell Phone Plans & Deals](https://clark.com/cell-phones/best-cell-phone-plans-deals/)
+    * [Best Unlimited Data Plans](https://clark.com/cell-phones/best-unlimited-data-plan/)
+    * [Best Phone Plans for One Person](https://clark.com/cell-phones/best-phone-plans-for-one/)
+    * [Best Cell Phone Plans for Two Lines](https://clark.com/cell-phones/best-phone-plans-for-two/)
+    * [Best Family Phone Plans](https://clark.com/cell-phones/best-family-phone-plans/)
+    * [Best Cell Phone Plans for Seniors](https://clark.com/cell-phones/cell-phone-plans-senior-adults-citizens-best/)
+    * [Best Prepaid Phone Plans](https://clark.com/cell-phones/best-prepaid-phone-plans/)
+    * [Best International Phone Plans](https://clark.com/cell-phones/international-phone-plans/)
+    * [Best Unlimited Hotspot Plans](https://clark.com/cell-phones/best-hotspot-plans/)
+[Info](https://clark.com/insurance/how-much-is-homeowners-insurance/)
+    * [Phone Plan Finder – Find the Best Plan For You](https://clark.com/phone-plan-finder/)
+    * [Coverage Maps Compared](https://clark.com/technology/coverage-maps/)
+    * [How to Switch Phone Carriers (Without Making a Mistake)](https://clark.com/technology/switch-cell-phone-need-to-know/)
+    * [Easy Ways to Lower Your Cell Phone Bill](https://clark.com/cell-phones/lower-cell-phone-bill/)
+    * [How To Report Spam Text Messages](https://clark.com/cell-phones/spam-text-messages-stop/)
+    * [How To Stop Spam Calls](https://clark.com/technology/phones-mobile-devices/how-to-stop-robocalls/)
+[Reviews](https://clark.com/insurance/how-much-is-homeowners-insurance/)
+    * [Cricket Wireless (AT&T Network)](https://clark.com/technology/phones-mobile-devices/cricket-wireless-review/)
+    * [Mint Mobile (T-Mobile Network)](https://clark.com/technology/mint-mobile-review/)
+    * [Visible (Verizon Network)](https://clark.com/cell-phones/visible-review/)
+    * [Tello Mobile](https://clark.com/cell-phones/tello-mobile-review/)
+    * [Google Fi Wireless](https://clark.com/cell-phones/google-fi-review/)
+  * [Your Credit](https://clark.com/credit/)
+[ Your Credit](https://clark.com/insurance/how-much-is-homeowners-insurance/)
+    * [How to Freeze Your Credit](https://clark.com/credit/credit-freeze-and-thaw-guide/)
+    * [How To Monitor Your Credit](https://clark.com/credit/how-to-monitor-credit/)
+    * [Tips to Contact the Credit Bureaus](https://clark.com/credit/talk-to-real-person-experian-transunion-equifax/)
+    * [Credit Lock vs. Credit Freeze](https://clark.com/personal-finance-credit/credit-lock-vs-credit-freeze/)
+    * [How To Get a Free Credit Report](https://clark.com/credit/free-credit-report/)
+    * [How To Get Your Free Credit Score](https://clark.com/credit/free-credit-score/)
+    * [What Is a Good Credit Score?](https://clark.com/credit/good-credit-score/)
+  * [Credit Cards](https://clark.com/credit-cards/)
+[ Credit Cards](https://clark.com/insurance/how-much-is-homeowners-insurance/)
+[Best](https://clark.com/insurance/how-much-is-homeowners-insurance/)
+    * [Best Rewards Credit Cards](https://clark.com/credit-cards/best-rewards-credit-cards/)
+    * [Best Cash Back Credit Cards](https://clark.com/credit-cards/best-cash-back-credit-cards/)
+    * [Best Travel Credit Cards](https://clark.com/credit-cards/best-travel-rewards-credit-cards/)
+    * [Best Credit Card Sign-up Bonuses](https://clark.com/credit-cards/best-credit-card-welcome-bonuses/)
+    * [Best No Annual Fee Credit Cards](https://clark.com/credit-cards/best-no-annual-fee-credit-cards/)
+    * [Best No Foreign Transaction Fees Credit Cards](https://clark.com/credit-cards/no-foreign-transaction-fee-credit-cards/)
+    * [Best 0% APR Credit Cards](https://clark.com/credit-cards/best-0-apr-credit-cards/)
+    * [Best Secured Credit Cards](https://clark.com/credit-cards/best-secured-credit-cards/)
+    * [Best Credit Cards for Saving and Investing Rewards](https://clark.com/credit-cards/best-credit-cards-saving-investing-rewards/)
+    * [Best Cards for Shopping Rewards](https://clark.com/credit-cards/best-credit-card-shopping-rewards/)
+    * [Best Small Business Credit Cards](https://clark.com/credit-cards/best-small-business-credit-cards/)
+    * [Best Credit Cards for Students](https://clark.com/credit-cards/best-student-credit-cards/)
+[Info](https://clark.com/insurance/how-much-is-homeowners-insurance/)
+    * [Compare Cash Back Credit Cards](https://clark.com/cash-back-credit-card-tool/)
+    * [Clark Howard's 7 Credit Card Rules](https://clark.com/credit-cards/clark-howard-credit-card-rules/)
+    * [Credit Cards in Clark Howard’s Wallet](https://clark.com/credit-cards/clark-howard-favorite-credit-cards/)
+    * [How Many Credit Cards Should I Have?](https://clark.com/credit-cards/how-many-credit-cards/)
+    * [Why You Should Never Use a Debit Card](https://clark.com/personal-finance-credit/never-use-debit-card-pay/)
+[Reviews](https://clark.com/insurance/how-much-is-homeowners-insurance/)
+    * [Citi Double Cash: 2% Cash Back](https://clark.com/credit-cards/citi-double-cash-review/)
+    * [Fidelity Rewards: 2% Cash Back](https://clark.com/credit-cards/fidelity-rewards-review/)
+    * [Blue Cash Preferred® Card from American Express](https://clark.com/credit-cards/blue-cash-preferred-card-from-american-express-review/)
+    * [Costco Anywhere Visa by Citi](https://clark.com/credit-cards/costco-credit-card-citi-anywhere-visa/)
+    * [Sam’s Club Mastercard](https://clark.com/credit-cards/sams-club-mastercard-review/)
+    * [Capital One Venture X Rewards](https://clark.com/credit-cards/capital-one-venture-x-card-review/)
+    * [Target Circle Credit Card](https://clark.com/credit-cards/target-redcard-review/)
+    * [Amazon Prime Rewards Visa](https://clark.com/credit-cards/amazon-prime-rewards-visa-review/)
+  * [Insurance](https://clark.com/insurance/)
+[ Insurance](https://clark.com/insurance/how-much-is-homeowners-insurance/)
+[Best](https://clark.com/insurance/how-much-is-homeowners-insurance/)
+    * [Best Auto Insurance Companies](https://clark.com/insurance/car-insurance/best-auto-insurance-companies/)
+    * [Best Homeowners Insurance Companies](https://clark.com/insurance/homeowners-insurance/best-and-worst-home-insurers/)
+    * [Best Life Insurance Companies](https://clark.com/insurance/life-insurance/best-life-insurance-companies/)
+[Info](https://clark.com/insurance/how-much-is-homeowners-insurance/)
+    * [How to Buy Term Life Insurance](https://clark.com/insurance/how-shop-term-life-insurance/)
+    * [Life Insurance With No Medical Exam](https://clark.com/insurance/term-life-insurance-no-medical-exam/)
+    * [How to Shop for Lower Car Insurance](https://clark.com/insurance/car-insurance/how-to-shop-for-auto-insurance/)
+    * [How to Lower Home Insurance Premiums](https://clark.com/insurance/homeowners-insurance/lower-your-home-insurance-premiums/)
+    * [Renters Insurance: Things to Know Before You Buy](https://clark.com/insurance/renters-insurance/)
+    * [Travel Insurance](https://clark.com/travel/travel-insurance/)
+    * [Travel Medical Insurance](https://clark.com/travel/travel-medical-insurance/)
+    * [Long Term Care Insurance](https://clark.com/insurance/what-is-long-term-care-insurance-and-do-you-need-it/)
+    * [Health Savings Account](https://clark.com/insurance/health-savings-account-guide/)
+  * [Invest & Retire](https://clark.com/personal-finance-credit/investing-retirement/)
+[ Invest & Retire](https://clark.com/insurance/how-much-is-homeowners-insurance/)
+[Best](https://clark.com/insurance/how-much-is-homeowners-insurance/)
+    * [Best Investment Companies](https://clark.com/personal-finance-credit/investing-retirement/10-best-investment-companies/)
+    * [Best Financial Advisors](https://clark.com/personal-finance-credit/investing-retirement/best-financial-advisors/)
+    * [Best Robo-Advisors](https://clark.com/personal-finance-credit/investing-retirement/best-robo-advisors/)
+[Info](https://clark.com/insurance/how-much-is-homeowners-insurance/)
+    * [Saving & Investing the Clark Howard Way](https://clark.com/personal-finance-credit/clark-howard-investment-guide/)
+    * [How to Start Investing: 10 Steps for Beginners](https://clark.com/personal-finance-credit/clark-howard-investment-guide/)
+    * [Managing Your Own Investments](https://clark.com/personal-finance-credit/investing-retirement/manage-your-investments/)
+    * [Using a Robo-Advisor](https://clark.com/personal-finance-credit/investing-retirement/robo-advisor/)
+    * [Using a Financial Advisor](https://clark.com/personal-finance-credit/investing-retirement/what-is-a-financial-advisor/)
+    * [401(k) Guide](https://clark.com/personal-finance-credit/investing-retirement/401k/)
+    * [Roth IRA Guide](https://clark.com/personal-finance-credit/investing-retirement/how-to-open-a-roth-ira/)
+    * [Target Date Funds](https://clark.com/personal-finance-credit/investing-retirement/target-date-funds/)
+    * [Annuity](https://clark.com/personal-finance-credit/investing-retirement/what-is-an-annuity/)
+[Reviews](https://clark.com/insurance/how-much-is-homeowners-insurance/)
+    * [Fidelity Review](https://clark.com/personal-finance-credit/investing-retirement/fidelity-review/)
+    * [Vanguard Review](https://clark.com/personal-finance-credit/investing-retirement/vanguard-review/)
+    * [Charles Schwab Review](https://clark.com/personal-finance-credit/investing-retirement/charles-schwab-review/)
+    * [Betterment Review](https://clark.com/personal-finance-credit/investing-retirement/betterment-review/)
+    * [Wealthfront Review](https://clark.com/personal-finance-credit/investing-retirement/wealthfront-review/)
+  * [Streaming TV](https://clark.com/streaming-tv/)
+[ Streaming TV](https://clark.com/insurance/how-much-is-homeowners-insurance/)
+[Best](https://clark.com/insurance/how-much-is-homeowners-insurance/)
+    * [Best Streaming Services](https://clark.com/streaming-tv/best-streaming-services/)
+    * [Best Live TV Streaming Services](https://clark.com/technology/tvsatellite-cable/best-streaming-tv-services/)
+    * [Best Video Streaming Services](https://clark.com/streaming-tv/best-video-streaming-services/)
+    * [Best Free Streaming Services](https://clark.com/streaming-tv/best-free-streaming-services/)
+[Info](https://clark.com/insurance/how-much-is-homeowners-insurance/)
+    * [Streaming TV Tool: Find Cheapest Way to Stream Your Favorite TV Channels](https://clark.com/cheapest-way-to-stream-your-favorite-tv-channels/)
+    * [How to Cut the Cord Forever](https://clark.com/technology/tvsatellite-cable/cord-cutting-cable-tv-alternatives/)
+    * [Streaming Channel Lineups](https://clark.com/technology/tvsatellite-cable/streaming-tv-comparison-best-channel-lineup/)
+    * [Cable TV vs. Streaming TV](https://clark.com/technology/tvsatellite-cable/best-deal-cable-tv-vs-streaming-youtube-directv-now-sling-tv/)
+    * [Internet Speeds Needed for Streaming](https://clark.com/technology/tvsatellite-cable/live-tv-streaming-speedtest-internet-download-speeds/)
+    * [Find the Best Deal on Cheap Internet Service](https://clark.com/technology/cheapest-internet-service/)
+[Reviews](https://clark.com/insurance/how-much-is-homeowners-insurance/)
+    * [YouTube TV](https://clark.com/technology/tvsatellite-cable/4-things-to-know-before-you-sign-up-for-youtube-tv/)
+    * [Hulu TV](https://clark.com/technology/tvsatellite-cable/hulu-live-tv-review/)
+    * [Sling TV](https://clark.com/technology/tvsatellite-cable/sling-tv-review/)
+    * [Philo](https://clark.com/technology/tvsatellite-cable/philo-review-live-tv-streaming-service/)
+    * [Disney+](https://clark.com/streaming-tv/disney-plus-streaming-subscription/)
+    * [YouTube TV vs. Hulu Live](https://clark.com/technology/tvsatellite-cable/youtube-tv-hulu-live-comparison/)
+  * [About](https://clark.com/connect/)
+[ About](https://clark.com/insurance/how-much-is-homeowners-insurance/)
+    * [About Us](https://clark.com/connect/)
+    * [About Clark Howard](https://clark.com/about-clark/clark-howards-bio/)
+    * [Meet the Team](https://clark.com/meet-the-team/)
+    * [Get Our Newsletter](https://clark.com/newsletters/)
+    * [Join Our Community](https://community.clark.com)
+    * [Email Us](https://clark.com/contact/)
+    * [Call Us For Free Advice (636-492-5275)](https://clark.com/about-consumer-action-center/)
+    * [Clark Deals](https://clarkdeals.com/)
+  * [Podcast](https://clark.com/podcasts/)
+[ Podcast](https://clark.com/insurance/how-much-is-homeowners-insurance/)
+    * [Listen](https://clark.com/podcasts/)
+    * [Watch](https://youtube.com/playlist?list=PLKYMwH5C8renTU_R_Re7dT_bJ3xEjhF1C&feature=shared)
+    * [Submit a Question to the Podcast](https://clark.com/ask/)
+    * [Submit a Clark Stinks](https://clark.com/clarkstinks/)
+  * [Guides](https://clark.com/guides)
+[ Guides](https://clark.com/insurance/how-much-is-homeowners-insurance/)
+    * [Best Checking Accounts](https://clark.com/personal-finance-credit/banks-banking/best-free-checking-accounts/)
+    * [Best Savings Accounts](https://clark.com/personal-finance-credit/banks-banking/best-savings-accounts/)
+    * [Buy a New Car](https://clark.com/cars/how-buy-new-car/)
+    * [Buy a Used Car](https://clark.com/cars/how-buy-used-car/)
+    * [Certificate of Deposit (CD)](https://clark.com/personal-finance-credit/banks-banking/what-is-a-cd/)
+    * [Creating a Will](https://clark.com/family-lifestyle/wills-funerals/best-online-wills/)
+    * [529 Plans](https://clark.com/personal-finance-credit/investing-retirement/529-plan/)
+    * [Identity Theft](https://clark.com/protect-your-identity/identity-theft/)
+    * [Student Loans](https://clark.com/loans/how-do-student-loans-work/)
+    * [Timeshare Cancel](https://clark.com/travel/how-to-get-rid-of-a-timeshare/)
+    * [Travel Planning](https://clark.com/travel/travel-booking-and-planning-guide/)
+    * [Work From Home](https://clark.com/employment-military/work-home-guide/)
+  * [Calculators](https://clark.com/calculators/)
+[ Calculators](https://clark.com/insurance/how-much-is-homeowners-insurance/)
+    * [Mortgage Calculator with Extra Payments](https://clark.com/mortgage-calculator/)
+    * [Mortgage Refinance Calculator – With Cash Out and Points](https://clark.com/mortgage-refinance-calculator/)
+    * [Biweekly Mortgage Calculator](https://clark.com/biweekly-mortgage-calculator/)
+    * [Mortgage Points Calculator With Breakeven](https://clark.com/mortgage-points-calculator/)
+    * [HELOC Calculator](https://clark.com/heloc-calculator/)
+    * [Home Equity Loan Calculator](https://clark.com/home-equity-loan-calculator/)
+    * [Loan To Value Calculator](https://clark.com/loan-to-value-calculator/)
+    * [Roth IRA Growth Calculator – 2024 & 2025](https://clark.com/roth-ira-calculator/)
+    * [401(k) Calculator With Match](https://clark.com/401k-calculator/)
+    * [High-Yield Savings Account (HYSA) Calculator](https://clark.com/high-yield-savings-account-calculator/)
+    * [Roth IRA vs Traditional (Pre-Tax) IRA Calculator](https://clark.com/roth-ira-vs-traditional-ira-calculator/)
+    * [Compound Interest Calculator](https://clark.com/compound-interest-calculator/)
+    * [Saving and Investment Calculator](https://clark.com/saving-and-investment-calculator/)
+    * [Savings Goal Calculator – How Long and How Much To Save](https://clark.com/savings-goal-calculator/)
+
+
+# How Much Is Homeowners Insurance?
+Written by [Ruthe Hall](https://clark.com/voices/ruthe-hall/) | February 2nd, 2025 
+  * [Home](https://clark.com "Home")
+  * [ Insurance ](https://clark.com/insurance/ "Insurance")
+  * [Car Insurance](https://clark.com/insurance/car-insurance/)
+  * [Health Insurance](https://clark.com/insurance/health-insurance/)
+  * [Homeowners Insurance](https://clark.com/insurance/homeowners-insurance/)
+  * [Life Insurance](https://clark.com/insurance/life-insurance/)
+
+
+Why You Can Trust Clark.com
+![](https://clark.com/wp-content/uploads/2023/11/1.png)
+[Trusted source for financial advice](https://podcasts.apple.com/us/podcast/the-clark-howard-podcast/id207724573?see-all=reviews) for more than 30 years.
+![](https://clark.com/wp-content/uploads/2023/11/2.png)
+[Never paid to promote](https://clark.com/ad-disclosure/) anything. [Never influenced](https://clark.com/ad-disclosure/) by commissions.
+![](https://clark.com/wp-content/uploads/2023/11/3.png)
+[Real people](https://clark.com/connect/) who are ready to serve you.
+To support our work, we do make money from some links to companies and deals on our site. Learn more about our guarantee [here](https://clark.com/ad-disclosure/).
+Advertisement
+If your [homeowners insurance](https://clark.com/insurance/what-is-homeowners-insurance/) premium has gone up recently, you’re not alone. The rising cost of [homeowners insurance surpassed inflation and average rate increases for auto insurance](https://www.jdpower.com/business/press-releases/2024-us-home-insurance-study) last year!
+Wondering how your rates compare to others around the country? In this article, we’ll look at average rates for different amounts of coverage and you’ll find money-saving tips too. Keep reading for :
+  * [**Average Cost of Homeowners Insurance by State**](https://clark.com/insurance/how-much-is-homeowners-insurance/#h-average-cost-of-homeowners-insurance-by-state)
+  * [**Factors That Influence Homeowners Insurance**](https://clark.com/insurance/how-much-is-homeowners-insurance/#h-factors-that-influence-homeowners-insurance-rates)[](https://clark.com/insurance/how-much-is-homeowners-insurance/#h-Factors-That-Influence-Homeowners-Insurance-Rates)[**Rates**](https://clark.com/insurance/how-much-is-homeowners-insurance/#h-factors-that-influence-homeowners-insurance-rates)
+  * [**Ways To Save on Homeowners Insurance Rates**](https://clark.com/insurance/how-much-is-homeowners-insurance/#h-ways-to-save-on-homeowners-insurance)
+
+
+_This article was updated in February 2025 and I review it annually._
+## **Average Cost of Homeowners Insurance by State**
+For a [standard HO-3 homeowners insurance policy](https://clark.com/insurance/what-does-homeowners-insurance-cover/), here are average annual rates by state and total amount of insurance.
+10 25 50 100 entries per page
+Search:
+**State** | **$200 - 299k  
+Total Insurance** | **$300-399k  
+Total Insurance** | **$400-499k  
+Total Insurance** | **$500k +  
+Total Insurance  
+**  
+---|---|---|---|---  
+Alabama | $1,529 | $1,809 | $2,120 | $2,929  
+Alaska | $832 | $986 | $1,160 | $1,540  
+Arizona | $788 | $886 | $1,038 | $1,518  
+Arkansas | $1,556 | $1,873 | $2,222 | $3,193  
+California | $857 | $1,010 | $1,196 | $1,960  
+Colorado | $1,459 | $1,653 | $1,863 | $2,478  
+Connecticut | $1,145 | $1,374 | $1,645 | $2,556  
+Delaware | $791 | $938 | $1,107 | $1,597  
+District of Columbia | $859 | $992 | $1,155 | $1,767  
+Florida | $1,992 | $2,475 | $3,022 | $4,704  
+Showing 1 to 10 of 51 entries
+‹123456›
+The rates above are from the National Association of Insurance Commissioners’ (NAIC) annual [Homeowners Insurance Report](https://content.naic.org/article/naic-releases-homeowners-insurance-report-2021), which was released in 2024.
+These average rates can be a starting point for understanding how much homeowners insurance costs. But if you’re wondering whether a particular rate is a good deal or not, looking at average rates won’t give you the full picture. Let’s look at factors that drive rates. They can help explain why your rate might be above or below the average in your state.
+## **Factors That Influence Homeowners Insurance Rates**
+The rate you pay can be very different from someone living a few ZIP codes away. The home insurance market is impacted by many factors, and each homeowner’s unique needs and situation determine how each factor will impact their premiums.
+Here are the four major factors that influence rates.
+### **Location**
+Where your home is located makes a big difference in how much you pay for homeowners insurance. Let’s say, for example, you live in a region that experiences hurricanes, brush and forest fires, tornadoes, or any other natural disasters. The cost of insurance for your home will almost certainly be higher than if you lived in a region less prone to these kinds of things (called “perils” in insurance-speak).
+If you live in an area prone to perils that aren’t covered by a standard homeowners insurance policy, you may even be required to purchase additional specialty policies. You can take a look at [what’s covered by standard homeowners insurance policies here](https://clark.com/insurance/what-does-homeowners-insurance-cover/).
+Advertisement
+Population density, or the number of people living in and around your city, is another factor that impacts your rate. Areas that are more heavily populated usually have higher real estate values and construction costs. Both of these things mean that you’ll need more coverage for your home, which leads to higher rates.
+Also, heavily populated areas are statistically more likely to have higher crime rates. Residents of areas with higher crime rates generally pay more for homeowners insurance due to the higher likelihood of filing [personal property](https://www.investopedia.com/terms/p/personalproperty.asp) claims because of theft.
+Another location-based factor insurance companies consider is response times for emergency services. Residents of urban areas are likely to have faster response times for emergency services than those living in rural areas. Proximity to a fire station can decrease the damages caused by fire, and the lower risk leads to a lower premium.
+### **Property Value**
+Your property value determines how much coverage you need to protect your belongings. The more your property is worth, the more coverage you need and the higher your premium.
+Like location, there are many factors that influence your property value. When it comes to your [dwelling](https://www.irmi.com/term/insurance-definitions/dwelling), the size of your home is one example. Larger homes require more construction materials and labor to rebuild or repair. Home upgrades are another factor that can increase your property value and insurance rate.
+Your property’s value isn’t limited to your dwelling, though. If you have high-value personal items, you might need more personal property coverage or specialty coverage in the form of [endorsements](https://www.irmi.com/term/insurance-definitions/endorsement), which increases your rate. Or you might choose to protect your assets by increasing your [liability coverage](https://www.irmi.com/term/insurance-definitions/liability-insurance), which also increases your rate. You can read more about [how much insurance you need to protect your assets here](https://clark.com/insurance/homeowners-insurance/how-much-homeowners-insurance-do-i-need/).
+### **Home Features**
+When it comes to how the features of your property impact your homeowners insurance rate, there are three questions I like to consider:
+  1. How does a home feature impact the cost to repair, replace, or rebuild your property? The more expensive it will be to rebuild, repair or replace any part of your property, the more likely it is for your insurance premium to increase. If, for example, your home has features made from specialty materials that are difficult to find, this will be factored into your rate, and you can expect your rate to increase. 
+  2. How does a home feature increase the safety or security of your property or decrease the risk of damages against perils? If your home includes safety or security features that can lower the risks to your property, then you can expect your rate to decrease. Fire detection devices and home security systems are examples of features that can decrease your rate. 
+  3. How does a home feature increase your risk of damages, loss, or liability? There are some features that may cause your homeowners insurance rate to increase simply because they increase the risk of damages, loss or the likelihood of your making a claim. Wood-burning fireplaces, swimming pools, and wooden decks are examples of features that increase your risk of damages, loss or liability claims and can lead to higher rates.
+
+
+### **Claims History and Credit**
+Whenever you file a homeowners insurance claim, your premium will most likely increase. One reason is that many companies operate on the idea that [someone who has filed a claim in the past is more likely to file a related claim in the future.](https://www.businessinsider.com/personal-finance/does-homeowners-insurance-go-up-after-a-claim) Insurers see you as more risky with each claim you file and they raise your rate to protect their bottom line. 
+Some insurance companies also [rely on specialty consumer reporting agencies to generate insurance scores based on your claims history and credit score.](https://content.naic.org/cipr-topics/credit-based-insurance-scores) A lower credit score and/or a history of filing insurance claims tends to result in a higher premium.
+## **Ways To Save on Homeowners Insurance**
+No matter where you live, there are several ways that you can [save money on your homeowners insurance](https://clark.com/insurance/homeowners-insurance/lower-your-home-insurance-premiums/) policy. Here are four tips that may help bring your premium down.
+Advertisement
+### **Ask Your Insurer for Discounts**
+Many insurance companies offer discounts to members who buy multiple types of insurance with them. A common example is purchasing an auto insurance policy from the same company as your homeowners insurance. Purchasing multiple types of insurance from a single company is known as “bundling.”
+You can also ask your insurer what other discounts are available. Every company is different and may have different names, qualifying criteria and rates for their discounts. So, asking what’s available helps make sure you don’t miss out on any discounts, such as:
+  * Automatic payments discount
+  * Claims free discount
+  * Homeowners association (HOA) discount
+  * Loyalty discount
+  * Marriage discount
+  * Military discount
+  * New construction discount
+  * Non-smoker discount
+  * Paid in full discount
+  * Paperless billing discount
+  * Retiree discount
+
+
+You can also shop around for the best rate. Shopping around gives you a better idea of the cost of homeowners insurance for your specific needs, and having quotes in hand from other companies can help ensure your rate is fair.
+### **Add Safety and/or Security Features to Your Home**
+Added safety or security features in your home can decrease the risk or severity of damages due to unforeseen events. Decreasing risks to your home reduces your likelihood of filing a claim, which may lead your insurer to reduce your premium.
+Examples of safety and security features include:
+  * Burglar alarms
+  * Deadbolts
+  * Fire alarms
+  * Freeze alarms
+  * Generators
+  * Impact-resistant windows
+  * Reinforced garage doors
+  * Smart locks
+  * Smoke detectors
+  * Storm shutters
+  * Water flow alarms
+
+
+You’ll likely receive deeper discounts for alarms that notify appropriate authorities when triggered because they usually result in a faster response time and can potentially reduce any damages or loss to your property.
+If you make any upgrades that increase the safety of your home, you can ask your insurance company if you’re eligible for any rate reductions.
+### **Avoid Filing Unnecessary Claims**
+Before filing a homeowners insurance claim, there are a few things to consider. First, insurance companies keep track of your claims history, including how many claims you’ve filed and how much your claims have cost. The [Comprehensive Loss Underwriting Exchange (CLUE)](https://clark.com/insurance/c-l-u-e-report-comprehensive-loss-underwriting/) keeps a record of your claims filed within the past seven years.
+Your claims history is used to determine how likely you are to file future claims and can also be used to justify the company canceling your insurance policy or declining to provide you coverage.
+Even denied or unpaid claims show up on your claims history, so a second thing to consider is whether damages are the result of a [covered event](https://clark.com/insurance/what-does-homeowners-insurance-cover/) and also cost more than your deductible to repair.
+Advertisement
+If you file a claim for something your insurer won’t cover or pay, If you’re not sure how much the repair or replacement of property costs, get quotes. [Money expert Clark Howard](https://clark.com/about-clark/clark-howards-bio/) recommends that you create a [fix-it fund](https://clark.com/homes-real-estate/home-fix-it-fund/) to handle these kinds of issues.
+Filing a claim can result in your premium increasing, even if only by a small amount or only temporarily. Bigger claims typically have bigger impacts, but making many small claims can add up as well.
+### **Increase Your Deductible**
+Your homeowners insurance deductible is how much you must pay out-of-pocket toward a claim before your insurance company steps in. A lower deductible results in a higher premium, and a higher deductible results in a lower premium. This is because you’re taking on more risk and responsibility for filing claims with a higher deductible.
+The idea is that someone who has to pay more out-of-pocket to repair or replace their property is less likely to file unnecessary and/or small claims. So, if you’re looking to lower your premium, choosing a higher deductible might be a good way to save money upfront.
+That said, it’s important to understand the trade-off. While a higher deductible can save you money upfront, it can also cost you more in the long run. If you need to file a claim and your deductible is too high for you to pay, you risk not being able to afford to fully repair or replace any damaged property in a timely manner, and that could lead to more expensive problems later on.
+## **Final Thoughts**
+A [homeowners insurance](https://o1.qnst.io/cgi/r?;n=203;c=1688589;s=36376;x=7936;f=202503120835500;u=j;z=TIMESTAMP;) premium can range from a few hundred dollars to thousands of dollars per year.
+Rates are determined by many factors, and your unique needs and situation will determine how each factor impacts your premium.
+While averages by state may be helpful in providing a starting point for understanding insurance rates, these averages don’t capture the full story behind the variations in cost. If you’re looking for homeowners insurance or want to be sure you’re getting a fair rate, it’s worth shopping around with several companies to understand rates in your area and how your individual needs impact your rate. You can start with our guide to the [best homeowners insurance companies](https://clark.com/insurance/homeowners-insurance/best-and-worst-home-insurers/).
+[ ](https://clark.com/insurance/how-much-is-homeowners-insurance/ "Printer Friendly, PDF & Email")
+Advertisement
+Advertisement
+  
+
+* * *
+  
+
+**Our Daily Newsletter**
+Join more than 350,000 people who get our must-have money tips every day
+**Watch / Listen**
+Check out our [top-rated](https://podcasts.apple.com/us/podcast/the-clark-howard-podcast/id207724573?see-all=reviews) money podcast.
+[![](https://i0.wp.com/clark.com/wp-content/uploads/2023/12/podcast-subscribe-YouTube.png?w=800&ssl=1)](https://youtube.com/clark)
+YouTube
+[![](https://i0.wp.com/clark.com/wp-content/uploads/2024/03/Podcast-icon.png?resize=800%2C800&ssl=1)](https://clark.com/podcast)
+Podcast
+###  Popular
+  * [![10 Cars That People Keep for 15 Years or More](https://i0.wp.com/clark.com/wp-content/uploads/2021/01/toyota-highlander.png?fit=1200%2C800&ssl=1&resize=40%2C40)](https://clark.com/cars/cars-people-keep-for-years/ "10 Cars That People Keep for 15 Years or More")
+[10 Cars That People Keep for 15 Years or More](https://clark.com/cars/cars-people-keep-for-years/ "10 Cars That People Keep for 15 Years or More")
+  * [![Report: The 10 Most and Least Valuable Degrees](https://i0.wp.com/clark.com/wp-content/uploads/2021/10/high-paying-majors.png?fit=1200%2C799&ssl=1&resize=40%2C40)](https://clark.com/employment-military/most-valuable-degrees/ "Report: The 10 Most and Least Valuable Degrees")
+[Report: The 10 Most and Least Valuable Degrees](https://clark.com/employment-military/most-valuable-degrees/ "Report: The 10 Most and Least Valuable Degrees")
+  * [![Should I Insure My Cars and Home With the Same Company?](https://i0.wp.com/clark.com/wp-content/uploads/2023/02/Ask-Clark-Howard-Team-Clark.png?fit=1200%2C800&ssl=1&resize=40%2C40)](https://clark.com/insurance/should-i-insure-car-and-home-with-the-same-company/ "Should I Insure My Cars and Home With the Same Company?")
+[Should I Insure My Cars and Home With the Same Company?](https://clark.com/insurance/should-i-insure-car-and-home-with-the-same-company/ "Should I Insure My Cars and Home With the Same Company?")
+  * [![Should I Tip on a Cruise?](https://i0.wp.com/clark.com/wp-content/uploads/2022/10/Cruise-tipping.jpg?fit=1200%2C800&ssl=1&resize=40%2C40)](https://clark.com/travel/should-i-tip-on-a-cruise/ "Should I Tip on a Cruise?")
+[Should I Tip on a Cruise?](https://clark.com/travel/should-i-tip-on-a-cruise/ "Should I Tip on a Cruise?")
+
+
+  
+  
+
+* * *
+  
+
+**Contact Us**
+Need money help? Call us for [free advice](https://clark.com/about-consumer-action-center/).  
+You can also [email us](https://clark.com/meet-the-team/).
+### About Clark.com
+  * [About](https://clark.com/connect)
+  * [Meet the Team](https://clark.com/meet-the-team)
+  * [Editorial Guarantee](https://clark.com/ad-disclosure)
+  * [Advertise](https://clark.com/ads)
+
+
+### Follow Us
+[](https://www.facebook.com/clarkhoward)[](https://twitter.com/ClarkHoward)[](https://www.youtube.com/channel/UCRcNI4bLa8Njwuo3OTmxZjA)[](https://www.pinterest.com/Ask_Clark/)[](https://www.instagram.com/theclarkdotcom/)[](https://clark.com/newsletters/)
+### Need Help?
+  * [Call Us](https://clark.com/about-consumer-action-center)
+  * [Email Us](https://clark.com/meet-the-team)
+  * [Listen](https://clark.com/podcasts)
+  * [Watch](https://youtube.com/@clark)
+  * [Join Our Community](https://community.clark.com)
+
+
+### Subscribe To Our Newsletter
+© 2025 Clark Howard Inc. By using this website, you accept the terms of our Visitor Agreement and Privacy Policy, and understand your options regarding Ad Choices.  
+[Privacy Policy](http://www.clark.com/privacy_policy) | [Ad Disclosure](https://clark.com/ad-disclosure)
+Get Our Free Daily Money Newsletter 
+CLOSE 
+x 
+![](https://pixel.wp.com/g.gif?v=ext&blog=193904143&post=241203&tz=-5&srv=clark.com&j=1%3A15.0.2&host=clark.com&ref=&fcp=1912&rand=0.016027989390553055)

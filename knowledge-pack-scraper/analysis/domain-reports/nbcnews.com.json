@@ -1,0 +1,456 @@
+{
+  "domain": "nbcnews.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:26.331769",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 8,
+      "frequency": 8.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 68,
+      "frequency": 68.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 31,
+      "frequency": 31.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 169,
+      "frequency": 169.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-list-item",
+      "count": 49
+    },
+    {
+      "class": "menu-list-item-link",
+      "count": 49
+    },
+    {
+      "class": "menu-list-item-title",
+      "count": 46
+    },
+    {
+      "class": "body-graf",
+      "count": 31
+    },
+    {
+      "class": "icon",
+      "count": 28
+    },
+    {
+      "class": "share-li",
+      "count": 17
+    },
+    {
+      "class": "dn-print",
+      "count": 16
+    },
+    {
+      "class": "js-hfs-share",
+      "count": 15
+    },
+    {
+      "class": "styles_item__mbZKv",
+      "count": 15
+    },
+    {
+      "class": "styles_link__zhvMF",
+      "count": 12
+    },
+    {
+      "class": "ad",
+      "count": 11
+    },
+    {
+      "class": "shortcuts-list-item",
+      "count": 11
+    },
+    {
+      "class": "shortcuts-list-item-text",
+      "count": 11
+    },
+    {
+      "class": "shortcuts-dropdown-item",
+      "count": 11
+    },
+    {
+      "class": "shortcuts-dropdown-item-link",
+      "count": 11
+    },
+    {
+      "class": "share-a",
+      "count": 11
+    },
+    {
+      "class": "mobilenav-list-item",
+      "count": 11
+    },
+    {
+      "class": "shortcuts-list-item-link",
+      "count": 10
+    },
+    {
+      "class": "jw-reset",
+      "count": 10
+    },
+    {
+      "class": "ad-container",
+      "count": 9
+    },
+    {
+      "class": "h-h",
+      "count": 9
+    },
+    {
+      "class": "ad--text-alignment",
+      "count": 7
+    },
+    {
+      "class": "styles_icon__Yg7X_",
+      "count": 6
+    },
+    {
+      "class": "menu-section",
+      "count": 6
+    },
+    {
+      "class": "menu-section-heading",
+      "count": 6
+    },
+    {
+      "class": "menu-list",
+      "count": 6
+    },
+    {
+      "class": "layout-grid-item",
+      "count": 6
+    },
+    {
+      "class": "boxinlineAd",
+      "count": 6
+    },
+    {
+      "class": "dn-l",
+      "count": 5
+    },
+    {
+      "class": "login__button",
+      "count": 4
+    },
+    {
+      "class": "share-li-icon",
+      "count": 4
+    },
+    {
+      "class": "styles_gridStackWrapper__Z_AMc",
+      "count": 4
+    },
+    {
+      "class": "absolute",
+      "count": 4
+    },
+    {
+      "class": "absolute-fill",
+      "count": 4
+    },
+    {
+      "class": "w100",
+      "count": 4
+    },
+    {
+      "class": "items-center",
+      "count": 4
+    },
+    {
+      "class": "justify-center",
+      "count": 4
+    },
+    {
+      "class": "styles_shareLine__QDJaW",
+      "count": 4
+    },
+    {
+      "class": "icon-twitter",
+      "count": 4
+    },
+    {
+      "class": "relative",
+      "count": 3
+    },
+    {
+      "class": "share-list",
+      "count": 3
+    },
+    {
+      "class": "share-dot",
+      "count": 3
+    },
+    {
+      "class": "styles_navbarPlacement__EyEdm",
+      "count": 3
+    },
+    {
+      "class": "inner",
+      "count": 3
+    },
+    {
+      "class": "layout-grid-container",
+      "count": 3
+    },
+    {
+      "class": "grid-col-push-2-xl",
+      "count": 3
+    },
+    {
+      "class": "styles_container__GcKIQ",
+      "count": 3
+    },
+    {
+      "class": "social-share-menu__container",
+      "count": 3
+    },
+    {
+      "class": "styles_facebook__9umol",
+      "count": 3
+    },
+    {
+      "class": "icon-share-facebook",
+      "count": 3
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "ad__container",
+      "count": 11
+    },
+    {
+      "id": "ad__container__inner",
+      "count": 11
+    },
+    {
+      "id": "jwplayer-0",
+      "count": 4
+    },
+    {
+      "id": "jwplayer-1",
+      "count": 4
+    },
+    {
+      "id": "picture",
+      "count": 3
+    },
+    {
+      "id": "social-share-menu",
+      "count": 3
+    },
+    {
+      "id": "social-share-facebook",
+      "count": 3
+    },
+    {
+      "id": "social-share-twitter",
+      "count": 3
+    },
+    {
+      "id": "social-share-email",
+      "count": 3
+    },
+    {
+      "id": "social-share-copy",
+      "count": 3
+    },
+    {
+      "id": "social-share-sms",
+      "count": 3
+    },
+    {
+      "id": "body-top-marquee",
+      "count": 2
+    },
+    {
+      "id": "globalnav",
+      "count": 2
+    },
+    {
+      "id": "save-button-container",
+      "count": 2
+    },
+    {
+      "id": "save-button",
+      "count": 2
+    },
+    {
+      "id": "icon-ribbon",
+      "count": 2
+    },
+    {
+      "id": "search_label",
+      "count": 2
+    },
+    {
+      "id": "q",
+      "count": 2
+    },
+    {
+      "id": "inline-video",
+      "count": 2
+    },
+    {
+      "id": "gamma-accessibility-wrapper",
+      "count": 2
+    },
+    {
+      "id": "video-player__play-button__outer",
+      "count": 2
+    },
+    {
+      "id": "social-share-inline",
+      "count": 2
+    },
+    {
+      "id": "overlay-text",
+      "count": 2
+    },
+    {
+      "id": "byline-name",
+      "count": 2
+    },
+    {
+      "id": "recommended-wrapper",
+      "count": 2
+    },
+    {
+      "id": "+this.mid+",
+      "count": 2
+    },
+    {
+      "id": "+t:",
+      "count": 2
+    },
+    {
+      "id": "+e.idSyncContainerID+",
+      "count": 2
+    },
+    {
+      "id": "destination_publishing_iframe_",
+      "count": 2
+    },
+    {
+      "id": "+encodeURIComponent(i):",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

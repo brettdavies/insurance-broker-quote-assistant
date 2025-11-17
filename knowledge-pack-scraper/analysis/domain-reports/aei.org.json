@@ -1,0 +1,456 @@
+{
+  "domain": "aei.org",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:22.200002",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 9,
+      "frequency": 9.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 84,
+      "frequency": 84.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-item",
+      "count": 75
+    },
+    {
+      "class": "nav-item",
+      "count": 61
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 58
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 58
+    },
+    {
+      "class": "dropdown-item",
+      "count": 40
+    },
+    {
+      "class": "nav-link",
+      "count": 21
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 17
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 17
+    },
+    {
+      "class": "remove-underline",
+      "count": 17
+    },
+    {
+      "class": "col-12",
+      "count": 11
+    },
+    {
+      "class": "fab",
+      "count": 8
+    },
+    {
+      "class": "row",
+      "count": 7
+    },
+    {
+      "class": "dropdown",
+      "count": 7
+    },
+    {
+      "class": "wp-block-quote",
+      "count": 7
+    },
+    {
+      "class": "col-sm-6",
+      "count": 7
+    },
+    {
+      "class": "container",
+      "count": 6
+    },
+    {
+      "class": "menu-item-has-children",
+      "count": 6
+    },
+    {
+      "class": "dropdown-toggle",
+      "count": 6
+    },
+    {
+      "class": "dropdown-menu",
+      "count": 6
+    },
+    {
+      "class": "col-xl-3",
+      "count": 5
+    },
+    {
+      "class": "footer-column",
+      "count": 5
+    },
+    {
+      "class": "far",
+      "count": 4
+    },
+    {
+      "class": "type",
+      "count": 4
+    },
+    {
+      "class": "author-link",
+      "count": 4
+    },
+    {
+      "class": "date",
+      "count": 4
+    },
+    {
+      "class": "wp-block-image",
+      "count": 4
+    },
+    {
+      "class": "aligncenter",
+      "count": 4
+    },
+    {
+      "class": "wp-element-caption",
+      "count": 4
+    },
+    {
+      "class": "attachment-full",
+      "count": 4
+    },
+    {
+      "class": "size-full",
+      "count": 4
+    },
+    {
+      "class": "wp-post-image",
+      "count": 4
+    },
+    {
+      "class": "col-lg-6",
+      "count": 4
+    },
+    {
+      "class": "footer-column--navigation",
+      "count": 4
+    },
+    {
+      "class": "footer-column__title",
+      "count": 4
+    },
+    {
+      "class": "footer-column__nav",
+      "count": 4
+    },
+    {
+      "class": "d-none",
+      "count": 3
+    },
+    {
+      "class": "nav",
+      "count": 3
+    },
+    {
+      "class": "btn",
+      "count": 3
+    },
+    {
+      "class": "author-feature",
+      "count": 3
+    },
+    {
+      "class": "col-lg-3",
+      "count": 3
+    },
+    {
+      "class": "post-image",
+      "count": 3
+    },
+    {
+      "class": "post-image__type",
+      "count": 3
+    },
+    {
+      "class": "post-image__image",
+      "count": 3
+    },
+    {
+      "class": "post-image__date",
+      "count": 3
+    },
+    {
+      "class": "post-image__publisher",
+      "count": 3
+    },
+    {
+      "class": "post-image__title",
+      "count": 3
+    },
+    {
+      "class": "post-image__author",
+      "count": 3
+    },
+    {
+      "class": "d-lg-block",
+      "count": 2
+    },
+    {
+      "class": "header-column",
+      "count": 2
+    },
+    {
+      "class": "fa-facebook-f",
+      "count": 2
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "hubspot-web-interactives-loader",
+      "count": 1
+    },
+    {
+      "id": "hs-analytics",
+      "count": 1
+    },
+    {
+      "id": "cookieBanner-45454203",
+      "count": 1
+    },
+    {
+      "id": "atomic-blocks-fontawesome-css",
+      "count": 1
+    },
+    {
+      "id": "wp-emoji-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-library-css",
+      "count": 1
+    },
+    {
+      "id": "safe-svg-svg-icon-style-inline-css",
+      "count": 1
+    },
+    {
+      "id": "atomic-blocks-style-css-css",
+      "count": 1
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "page-list-style-css",
+      "count": 1
+    },
+    {
+      "id": "wp-fullcalendar-css",
+      "count": 1
+    },
+    {
+      "id": "theme-css",
+      "count": 1
+    },
+    {
+      "id": "addtoany-css",
+      "count": 1
+    },
+    {
+      "id": "rtbs_front_css-css",
+      "count": 1
+    },
+    {
+      "id": "rtbs_fa-css",
+      "count": 1
+    },
+    {
+      "id": "addtoany-core-js-before",
+      "count": 1
+    },
+    {
+      "id": "addtoany-core-js",
+      "count": 1
+    },
+    {
+      "id": "jquery-core-js",
+      "count": 1
+    },
+    {
+      "id": "jquery-migrate-js",
+      "count": 1
+    },
+    {
+      "id": "addtoany-jquery-js",
+      "count": 1
+    },
+    {
+      "id": "jquery-ui-core-js",
+      "count": 1
+    },
+    {
+      "id": "jquery-ui-menu-js",
+      "count": 1
+    },
+    {
+      "id": "jquery-ui-selectmenu-js",
+      "count": 1
+    },
+    {
+      "id": "jquery-ui-tooltip-js",
+      "count": 1
+    },
+    {
+      "id": "moment-js",
+      "count": 1
+    },
+    {
+      "id": "moment-js-after",
+      "count": 1
+    },
+    {
+      "id": "wp-fullcalendar-js-extra",
+      "count": 1
+    },
+    {
+      "id": "wp-fullcalendar-js",
+      "count": 1
+    },
+    {
+      "id": "fontawesome-js",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

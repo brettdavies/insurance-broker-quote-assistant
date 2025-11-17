@@ -1,0 +1,456 @@
+{
+  "domain": "home.treasury.gov",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:19.367350",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 7,
+      "frequency": 7.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 13,
+      "frequency": 13.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 26,
+      "frequency": 26.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 14,
+      "frequency": 14.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 5,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 125,
+      "frequency": 125.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 54,
+      "frequency": 54.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "block",
+      "count": 80
+    },
+    {
+      "class": "no-underline",
+      "count": 69
+    },
+    {
+      "class": "menu-item",
+      "count": 55
+    },
+    {
+      "class": "clearfix",
+      "count": 53
+    },
+    {
+      "class": "field",
+      "count": 53
+    },
+    {
+      "class": "field--label-hidden",
+      "count": 46
+    },
+    {
+      "class": "field__item",
+      "count": 46
+    },
+    {
+      "class": "block-block-content",
+      "count": 44
+    },
+    {
+      "class": "text-formatted",
+      "count": 44
+    },
+    {
+      "class": "field--name-body",
+      "count": 43
+    },
+    {
+      "class": "field--type-text-with-summary",
+      "count": 43
+    },
+    {
+      "class": "sub-nav-group",
+      "count": 30
+    },
+    {
+      "class": "secretary-column",
+      "count": 29
+    },
+    {
+      "class": "region",
+      "count": 17
+    },
+    {
+      "class": "menu",
+      "count": 16
+    },
+    {
+      "class": "block-system-menublock",
+      "count": 12
+    },
+    {
+      "class": "mm-news-row",
+      "count": 11
+    },
+    {
+      "class": "block-menu",
+      "count": 11
+    },
+    {
+      "class": "navigation",
+      "count": 11
+    },
+    {
+      "class": "mq--t",
+      "count": 10
+    },
+    {
+      "class": "datetime",
+      "count": 10
+    },
+    {
+      "class": "news-title",
+      "count": 9
+    },
+    {
+      "class": "hidden",
+      "count": 8
+    },
+    {
+      "class": "grid-row",
+      "count": 7
+    },
+    {
+      "class": "search-block",
+      "count": 7
+    },
+    {
+      "class": "searchgov_block_wrapper",
+      "count": 7
+    },
+    {
+      "class": "region-search-menu",
+      "count": 7
+    },
+    {
+      "class": "block-searchgov-drupal",
+      "count": 7
+    },
+    {
+      "class": "block-searchgov-block",
+      "count": 7
+    },
+    {
+      "class": "usagov-search-autocomplete",
+      "count": 7
+    },
+    {
+      "class": "adv-search-link",
+      "count": 7
+    },
+    {
+      "class": "search-form__submit",
+      "count": 7
+    },
+    {
+      "class": "field--name-title",
+      "count": 7
+    },
+    {
+      "class": "field--type-string",
+      "count": 7
+    },
+    {
+      "class": "field--label-above",
+      "count": 7
+    },
+    {
+      "class": "view",
+      "count": 7
+    },
+    {
+      "class": "view-content",
+      "count": 7
+    },
+    {
+      "class": "nav-item",
+      "count": 6
+    },
+    {
+      "class": "mm-top",
+      "count": 6
+    },
+    {
+      "class": "sub-nav",
+      "count": 6
+    },
+    {
+      "class": "node",
+      "count": 6
+    },
+    {
+      "class": "node--type-mega_menu_panel",
+      "count": 6
+    },
+    {
+      "class": "node--view-mode-full",
+      "count": 6
+    },
+    {
+      "class": "treas-search-menu",
+      "count": 6
+    },
+    {
+      "class": "grid-container",
+      "count": 6
+    },
+    {
+      "class": "grid-col",
+      "count": 6
+    },
+    {
+      "class": "treas-search-menu__component",
+      "count": 6
+    },
+    {
+      "class": "mobile-sub-nav",
+      "count": 6
+    },
+    {
+      "class": "block-region-col1",
+      "count": 6
+    },
+    {
+      "class": "block-ctools-block",
+      "count": 6
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "block-hamilton-searchgovblock",
+      "count": 7
+    },
+    {
+      "id": "searchgov_block",
+      "count": 7
+    },
+    {
+      "id": "search_form",
+      "count": 7
+    },
+    {
+      "id": "affiliate",
+      "count": 7
+    },
+    {
+      "id": "query",
+      "count": 7
+    },
+    {
+      "id": "megamenu-search",
+      "count": 6
+    },
+    {
+      "id": "entity_field:node:title",
+      "count": 6
+    },
+    {
+      "id": "column-2",
+      "count": 6
+    },
+    {
+      "id": "column-3",
+      "count": 6
+    },
+    {
+      "id": "column-4",
+      "count": 6
+    },
+    {
+      "id": "column-5",
+      "count": 6
+    },
+    {
+      "id": "column-6",
+      "count": 6
+    },
+    {
+      "id": "menu_block:portal-footer",
+      "count": 5
+    },
+    {
+      "id": "menu_block:quick-links",
+      "count": 4
+    },
+    {
+      "id": "-menu",
+      "count": 4
+    },
+    {
+      "id": "boomr-scr-as",
+      "count": 2
+    },
+    {
+      "id": "pg__c",
+      "count": 1
+    },
+    {
+      "id": "branding",
+      "count": 1
+    },
+    {
+      "id": "branding-region",
+      "count": 1
+    },
+    {
+      "id": "block-hamilton-lapsealertbannerblock",
+      "count": 1
+    },
+    {
+      "id": "block_content:c58904bf-2d68-4a98-a728-600fe25591ad",
+      "count": 1
+    },
+    {
+      "id": "gov-banner",
+      "count": 1
+    },
+    {
+      "id": "banner-lock-title",
+      "count": 1
+    },
+    {
+      "id": "banner-lock-description",
+      "count": 1
+    },
+    {
+      "id": "header",
+      "count": 1
+    },
+    {
+      "id": "header-region",
+      "count": 1
+    },
+    {
+      "id": "region-header",
+      "count": 1
+    },
+    {
+      "id": "block-burgermenublock-2",
+      "count": 1
+    },
+    {
+      "id": "treasury_burger_menu_block",
+      "count": 1
+    },
+    {
+      "id": "block-hamilton-branding",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, [role=\"main\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

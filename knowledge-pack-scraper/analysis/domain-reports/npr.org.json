@@ -1,0 +1,456 @@
+{
+  "domain": "npr.org",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:26.143045",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 7,
+      "frequency": 7.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 9,
+      "frequency": 9.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 61,
+      "frequency": 61.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 85,
+      "frequency": 85.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "submenu__item",
+      "count": 33
+    },
+    {
+      "class": "img",
+      "count": 30
+    },
+    {
+      "class": "npr-footer__item",
+      "count": 30
+    },
+    {
+      "class": "menu__item",
+      "count": 21
+    },
+    {
+      "class": "lazyOnLoad",
+      "count": 18
+    },
+    {
+      "class": "bucketwrap",
+      "count": 10
+    },
+    {
+      "class": "menu__item-inner",
+      "count": 8
+    },
+    {
+      "class": "ot-label-txt",
+      "count": 8
+    },
+    {
+      "class": "imagewrap",
+      "count": 7
+    },
+    {
+      "class": "edTag",
+      "count": 7
+    },
+    {
+      "class": "internallink",
+      "count": 6
+    },
+    {
+      "class": "insettwocolumn",
+      "count": 6
+    },
+    {
+      "class": "inset2col",
+      "count": 6
+    },
+    {
+      "class": "bucket",
+      "count": 6
+    },
+    {
+      "class": "bucketblock",
+      "count": 6
+    },
+    {
+      "class": "slug",
+      "count": 6
+    },
+    {
+      "class": "ad-wrap",
+      "count": 5
+    },
+    {
+      "class": "ad-header",
+      "count": 5
+    },
+    {
+      "class": "ad-config",
+      "count": 5
+    },
+    {
+      "class": "has-refresh-enabled",
+      "count": 5
+    },
+    {
+      "class": "ad-footer",
+      "count": 5
+    },
+    {
+      "class": "npr-footer__module",
+      "count": 5
+    },
+    {
+      "class": "ot-pc-scrollbar",
+      "count": 5
+    },
+    {
+      "class": "menu__item--has-submenu",
+      "count": 4
+    },
+    {
+      "class": "menu__toggle-submenu",
+      "count": 4
+    },
+    {
+      "class": "submenu",
+      "count": 4
+    },
+    {
+      "class": "lazy",
+      "count": 4
+    },
+    {
+      "class": "audio-tool",
+      "count": 4
+    },
+    {
+      "class": "audio-tool-label",
+      "count": 4
+    },
+    {
+      "class": "ad-config-wrap",
+      "count": 4
+    },
+    {
+      "class": "tag",
+      "count": 4
+    },
+    {
+      "class": "tag--story",
+      "count": 4
+    },
+    {
+      "class": "npr-footer__header",
+      "count": 4
+    },
+    {
+      "class": "ot-hide",
+      "count": 4
+    },
+    {
+      "class": "ot-tgl",
+      "count": 4
+    },
+    {
+      "class": "ot-switch",
+      "count": 4
+    },
+    {
+      "class": "ot-switch-nob",
+      "count": 4
+    },
+    {
+      "class": "ot-chkbox",
+      "count": 4
+    },
+    {
+      "class": "ot-label-status",
+      "count": 4
+    },
+    {
+      "class": "menu",
+      "count": 3
+    },
+    {
+      "class": "menu__list",
+      "count": 3
+    },
+    {
+      "class": "submenu__list",
+      "count": 3
+    },
+    {
+      "class": "submenu__item--timed",
+      "count": 3
+    },
+    {
+      "class": "branding__image-promo",
+      "count": 3
+    },
+    {
+      "class": "linkLocation",
+      "count": 3
+    },
+    {
+      "class": "share-tools__service",
+      "count": 3
+    },
+    {
+      "class": "share-tools__service-name",
+      "count": 3
+    },
+    {
+      "class": "ot-subgrp-cntr",
+      "count": 3
+    },
+    {
+      "class": "ot-subgrps",
+      "count": 3
+    },
+    {
+      "class": "ot-subgrp",
+      "count": 3
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "boomr-scr-as",
+      "count": 2
+    },
+    {
+      "id": "SPDTA_BG",
+      "count": 2
+    },
+    {
+      "id": "C0002",
+      "count": 2
+    },
+    {
+      "id": "C0003",
+      "count": 2
+    },
+    {
+      "id": "C0004",
+      "count": 2
+    },
+    {
+      "id": "speakable",
+      "count": 1
+    },
+    {
+      "id": "google-site-verification",
+      "count": 1
+    },
+    {
+      "id": "npr-vars",
+      "count": 1
+    },
+    {
+      "id": "piano-aid",
+      "count": 1
+    },
+    {
+      "id": "9ENxKQ58pu",
+      "count": 1
+    },
+    {
+      "id": "onetrust-style",
+      "count": 1
+    },
+    {
+      "id": "news",
+      "count": 1
+    },
+    {
+      "id": "global-header-sticky-cta-wrap",
+      "count": 1
+    },
+    {
+      "id": "global-header-sticky-cta-mount",
+      "count": 1
+    },
+    {
+      "id": "global-header-cta-wrap",
+      "count": 1
+    },
+    {
+      "id": "global-header-cta-mount",
+      "count": 1
+    },
+    {
+      "id": "globalheader",
+      "count": 1
+    },
+    {
+      "id": "navigation__toggle--open",
+      "count": 1
+    },
+    {
+      "id": "navigation__station-mount",
+      "count": 1
+    },
+    {
+      "id": "user-account-dropdown-mount",
+      "count": 1
+    },
+    {
+      "id": "navigation__station-donate-mount",
+      "count": 1
+    },
+    {
+      "id": "main-menu",
+      "count": 1
+    },
+    {
+      "id": "navigation__toggle--close",
+      "count": 1
+    },
+    {
+      "id": "navigation_dropdown-search",
+      "count": 1
+    },
+    {
+      "id": "user-account-dropdown-mount-two",
+      "count": 1
+    },
+    {
+      "id": "wrapper",
+      "count": 1
+    },
+    {
+      "id": "main-section",
+      "count": 1
+    },
+    {
+      "id": "mainContent",
+      "count": 1
+    },
+    {
+      "id": "titlenx-s1-5542448",
+      "count": 1
+    },
+    {
+      "id": "shortTitlenx-s1-5542448",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

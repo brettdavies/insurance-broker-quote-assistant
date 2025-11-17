@@ -1,0 +1,144 @@
+Does Car Insurance Cover Flood & Water Damage? | Progressive
+Does Car Insurance Cover Flood & Water Damage? | Progressive
+[Skip to Main Content](https://www.progressive.com/answers/water-damage-to-car/#main)
+[![Progressive Insurance logo, Home page](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt483e097d64d66a25/66476d224ac76ee67740f2d5/logo-progressive.svg)](https://www.progressive.com/)
+  * Explore Products
+  * Claims
+  * About Us
+  * Resources
+
+
+  * [1-866-749-7436 , Call us](tel:1-866-749-7436)
+  * [](https://www.progressive.com/rp/login?cntgrp=A)
+
+
+  * [Answers](https://www.progressive.com/answers/)
+  * Articles by Product 
+  * Articles by Topic 
+
+
+# Does car insurance cover water damage?
+Comprehensive coverage can protect your vehicle against water damage caused by flooding, heavy rains, hail, and even tree branches blown down during a storm. While comprehensive is optional, a lender usually requires it if you finance or lease your vehicle, and it's the only coverage on your auto policy that can cover your vehicle against weather-related issues. A deductible applies.
+3 minminute to read
+Explore Progressive Answers' [auto editorial guidelines](https://www.progressive.com/answers/auto-editorial-standards/) to find out why you can trust the car insurance information you find here.
+  1. [![Progressive Insurance Homepage](https://www.progressive.com/content/images/domainprogressive/wh3/breadcrumbs/p-mark_breadcrumb.svg)](https://www.progressive.com/es/)
+  2. [Answers](https://www.progressive.com/answers/)
+  3. [Car insurance information](https://www.progressive.com/answers/car-insurance/)
+  4. Does car insurance cover water damage?
+
+Get quote
+## Does car insurance cover flood damage?
+If your car is damaged or ruined due to flooding, your auto policy's [comprehensive coverage](https://www.progressive.com/answers/comprehensive-insurance/) may pay to repair or replace your vehicle, minus your deductible. Comprehensive can cover a variety of water damage, including flooding, heaving rains, and hailstorms.
+In addition to water damage, comprehensive covers other types of [storm damage](https://www.progressive.com/answers/does-home-insurance-cover-storm-damage/). If a falling branch damages your windshield or windows during a storm, or if hail puts dozens of dents in your vehicle, comprehensive may pay to repair the damage. If you don't have carry comprehensive coverage, the cost to fix your vehicle will come out of your own pocket.
+It should be noted that insurance companies often put "binding restrictions" in place once a major storm is on its way.That means insurers restrict making changes to policies, as well as writing new ones.So, you may not be able to add comprehensive coverage to your policy before the storm hits.
+If your car is damaged or ruined due to flooding, comprehensive coverage on your auto policy may cover the cost to repair or replace your vehicle, minus your deductible.
+## Does car insurance cover driving through a large puddle or flooded streets?
+Flooded streets can cause a wide variety of damage to your vehicle — from cosmetic issues like rust and fogged lights to mold on the interior of your vehicle. If your car is stopped in floodwater or gets damaged by driving through a flooded street or large puddle, comprehensive coverage may pay for the repairs, minus your deductible. Even if your car is parked on a street that ends up flooded, the damage may be covered.
+## Does car insurance cover water damage to an engine?
+Flooding can also cause damage to your car's engine, electrical system, and transmission. And if your vehicle's engine gets submerged in floodwater, there's a chance your car will be declared a total loss. Your auto policy's comprehensive may pay to repair or replace your vehicle, minus your deductible.
+If your vehicle is submerged in water, don't attempt to start the car as it can cause more damage.
+Note that owner-installed electronics typically won't be covered against water damage, including:
+  * Stereos, tape decks, and CD players
+  * Scanners, two-way mobile radios, and CB radios
+  * Televisions, video game systems, and computers
+  * GPS devices
+  * Car phones
+
+
+This isn't a complete list; if the automaker didn't install the electronics, they may not be covered.
+## Do you need flood insurance to cover flood damage to your vehicle?
+No. Damage to motor vehicles is excluded from a [flood insurance](https://www.progressive.com/flood-insurance/) policy, which is designed to protect your home and belongings.
+## Add comprehensive coverage to your auto policy
+### Current Progressive customers
+[Log in to your policy](https://www.progressive.com/rp/login?cntgrp=A) or call us anytime at [1-866-749-7436](tel:1-866-749-7436).
+### New Progressive customers
+[Quote auto insurance online](https://www.progressive.com/auto/) or call us at [1-866-749-7436](tel:1-866-749-7436) and speak to a licensed representative for your state.
+Looking for more information about auto insurance? Our [car insurance resource center](https://www.progressive.com/auto/car-insurance-resources/) has you covered.
+![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltba569a8abb1b73ee/63ee427c81222312420a3396/auto_bottom-cta-image.jpg?auto=webp&width=306)
+Quote car insurance online or give us a call
+  * Get a quote
+  * [Or, call 1-866-749-7436](tel:1-866-749-7436)
+
+
+Learn more about [car insurance](https://www.progressive.com/auto/) policies.
+### Related articles
+  * [ ![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt97c4e8cd184039bb/635fc001ae3c75582190aadc/how-to-file-an-auto-claim_card-image.svg) How to file an auto insurance claim 7 minminute to read ](https://www.progressive.com/answers/how-to-file-an-auto-claim/)
+  * [ ![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt154fa9e3f8a8c900/635fc004127d2c10959f759b/what-happens-when-car-is-totaled_card-image.svg) What happens when your car is totaled? 5 minminute to read ](https://www.progressive.com/answers/what-happens-when-car-is-totaled/)
+  * [ ![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt23a01d3a45b9aeb9/635fbfff2746fd107d68c3cf/does-home-insurance-cover-water-damage_card-image.svg) Does homeowners insurance cover water damage? 4 minminute to read ](https://www.progressive.com/answers/does-home-insurance-cover-water-damage/)
+
+
+### Related categories
+  * [Accidents and violations](https://www.progressive.com/answers/whats-covered/accidents-violations/)
+  * [Home incidents and repairs](https://www.progressive.com/answers/whats-covered/home-incidents-repairs/)
+
+
+![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltc8ab3a92b3993bcb/640b52bc6d0cf81016ab92c1/explore-products.svg)
+### Have more questions? Browse articles by insurance type
+[See all articles by product](https://www.progressive.com/answers/articles-by-product/)
+  * [![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt666f20bfd7161c17/637e3e1d6160ed101ec8b3d3/auto_category-image.jpg?auto=webp&width=80) Car insurance  367 articles ](https://www.progressive.com/answers/car-insurance/)
+  * [![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blta71ca319a8802e2c/637e4001deb37610ecbb8bce/home_category-image.jpg?auto=webp&width=80) Home insurance  145 articles ](https://www.progressive.com/answers/home-insurance/)
+  * [![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt9997e9e92546d379/64a8221e6664b661a4bf77a8/renters_category-image.jpg?auto=webp&width=80) Renters insurance  28 articles ](https://www.progressive.com/answers/renters-insurance/)
+  * [![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blteb4f5b8793436f84/637e4360f33b43105dcd90bd/condo_category-image.jpg?auto=webp&width=80) Condo insurance  6 articles ](https://www.progressive.com/answers/condo-insurance/)
+  * [![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltd1596eb1b9b34f34/637e43a82f1aba10d25ad3b6/motorcycle_category-image.jpg?auto=webp&width=80) Motorcycle insurance  52 articles ](https://www.progressive.com/answers/motorcycle-insurance/)
+  * [![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt3536d8bf1abc24e7/637e3fda411e3c10e460398d/boat-and-pwc_category-image.jpg?auto=webp&width=80) Boat & PWC insurance  31 articles ](https://www.progressive.com/answers/boat-pwc-insurance/)
+  * [![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt87c4018c74541a0f/637e43e7bc4d5010302872db/rv-and-trailer_category-image.jpg?auto=webp&width=80) RV/Trailer insurance  36 articles ](https://www.progressive.com/answers/rv-trailer-insurance/)
+  * [![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt59243c9dbe8ba728/637e4387ed757210a0895822/life_category-image.jpg?auto=webp&width=80) Life insurance  89 articles ](https://www.progressive.com/answers/life-insurance/)
+  * [![](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt7b7eae2d9a148b3d/637e412a77511d10a702795e/pet-category-image.jpg?auto=webp&width=80) Pet insurance  21 articles ](https://www.progressive.com/answers/pet-insurance/)
+
+
+**Please note:** The above is meant as general information to help you understand the different aspects of insurance. Read our [editorial standards for Answers content](https://www.progressive.com/answers/editorial-standards/). This information is not an insurance policy, does not refer to any specific insurance policy, and does not modify any provisions, limitations, or exclusions expressly stated in any insurance policy. Descriptions of all coverages and other features are necessarily brief; in order to fully understand the coverages and other features of a specific insurance policy, we encourage you to read the applicable policy and/or speak to an insurance representative. Coverages and other features vary between insurers, vary by state, and are not available in all states. Whether an accident or other loss is covered is subject to the terms and conditions of the actual insurance policy or policies involved in the claim. References to average or typical premiums, amounts of losses, deductibles, costs of coverages/repair, etc., are illustrative and may not apply to your situation. We are not responsible for the content of any third-party sites linked from this page.
+  * InsuranceInsurance
+    * [Car Insurance](https://www.progressive.com/auto/)
+    * [Home Insurance](https://www.progressive.com/homeowners/)
+    * [Progressive Answers](https://www.progressive.com/answers/)
+    * [Explore All Products](https://www.progressive.com/insurance/)
+  * Our CompanyOur Company
+    * [About Us](https://www.progressive.com/about/)
+    * [Careers](https://careers.progressive.com/)
+    * [Investors](https://investors.progressive.com/)
+    * [Newsroom](https://progressive.mediaroom.com/)
+  * Quick LinksQuick Links
+    * [Continue Previous Quote](https://www.progressive.com/home-retrieve/)
+    * [Report a Claim](https://www.progressive.com/claims/)
+    * [Make a Payment](https://www.progressive.com/rp/ezpay/)
+    * [PerkShare](https://www.progressive.com/perkshare/)
+  * ConnectConnect
+    * [1-866-749-7436](tel:1-866-749-7436)
+    * [Contact Us](https://www.progressive.com/contact-us/)
+    * [Progressive App](https://www.progressive.com/mobile-app/)
+    * [Partner With Us](https://www.progressive.com/partners/)
+
+
+Search / Keywords
+  * [![Facebook](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt70ffcb3929ecd23d/65d01b3c0ba017cc15012d24/facebook.svg)](https://www.facebook.com/progressive)
+  * [![Instagram](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltf77f99387dbe17a3/65d01b3b8d55b0465b61458e/instagram.svg)](https://www.instagram.com/progressive/)
+  * [![YouTube](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/bltb34101e9c0036193/65d01b3bbdb22a33a8c226fe/youtube.svg)](https://www.youtube.com/user/progressive)
+  * [![TikTok](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt0081d421c1d5499a/65d37b8b21be608c5f0194bb/tiktok.svg)](https://www.tiktok.com/@progressive)
+  * [![X, Formerly Twitter](https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt9f1a0a21e3213494/65d37ba3d677b6499a6a28d6/x.svg)](https://www.twitter.com/progressive)
+
+
+  * [Contact Us](https://www.progressive.com/contact-us/)
+  * [Site Map](https://www.progressive.com/sitemap/)
+  * [Accessibility Services](https://www.progressive.com/web-site-accessibility/)
+  * [Technical Help](https://www.progressive.com/help/)
+  * [Privacy & Security](https://www.progressive.com/privacy/)
+  * [Terms of Use](https://www.progressive.com/copyright/)
+  * [CA Notice at Collection](https://www.progressive.com/privacy/privacy-data-request/)
+  * [Insurance Resources](https://www.progressive.com/resources/)
+  * [Do Not Sell or Share My Personal Information (CA Residents Only)](https://www.progressive.com/privacy/do-not-sell-my-information/)
+
+
+**THE #1 INSURANCE WEBSITE**
+Copyright 1995 - 2025. Progressive Casualty Insurance Company. All Rights Reserved.
+We offer insurance by phone, online and through independent agents. [Prices vary based on how you buy](https://www.progressive.com/shop/car-insurance-rates-differ/).
+ΔAverage savings based on 6-month term and not available in all states.
+Insurance carrier website ranking by Keynova Group – Q4 2024 Online Insurance Scorecard.
+Site Navigation
+Menu
+  * Explore ProductsGet insurance for almost anything you need
+  * ClaimsReport/track a claim & learn about the process
+  * About UsSee who we are, what we stand for & join the team
+  * ResourcesTools, answers to your insurance questions, & more
+
+
+Close Overlay

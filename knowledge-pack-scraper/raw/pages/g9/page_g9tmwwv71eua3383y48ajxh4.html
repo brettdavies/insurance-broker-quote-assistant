@@ -1,0 +1,699 @@
+<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.v="1.2.3",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",t=>{this.persisted=t.persisted}),window.addEventListener("DOMContentLoaded",()=>{this._preconnect3rdParties()}),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}_addUserInteractionListener(t){if(document.hidden){t._triggerListener();return}this.triggerEvents.forEach(e=>window.addEventListener(e,t.userEventHandler,{passive:!0})),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler)}_removeUserInteractionListener(){this.triggerEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!0})),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"onclick","rocket-onclick"),this._pendingClickStarted())}_onTouchMove(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"rocket-onclick","onclick"),this._pendingClickFinished()}_onTouchEnd(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(t){t.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this._pendingClickFinished()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach(t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))})}_waitForPendingClicks(){return new Promise(t=>{this._isClickPending?this._pendingClickFinished=t:t()})}_pendingClickStarted(){this._isClickPending=!0}_pendingClickFinished(){this._isClickPending=!1}_renameDOMAttribute(t,e,r){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(r,event.target.getAttribute(e)),event.target.removeAttribute(e))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(e=>{if(e.hasAttribute("src")){let r=new URL(e.src).origin;r!==location.origin&&t.push({src:r,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this._batchInjectResourceHints(t,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(this),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._waitForPendingClicks().then(()=>{this._replayClicks()}),this._emptyTrash()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _transformScript(t){return new Promise((await this._littleBreath(),navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor)?e=>{let r=document.createElement("script");[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),r.setAttribute(e,t.nodeValue))}),t.text&&(r.text=t.text),r.hasAttribute("src")?(r.addEventListener("load",e),r.addEventListener("error",e)):(r.text=t.text,e());try{t.parentNode.replaceChild(r,t)}catch(i){e()}}:async e=>{function r(){t.setAttribute("data-rocket-status","failed"),e()}try{let i=t.getAttribute("data-rocket-type"),n=t.getAttribute("data-rocket-src");t.text,i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",function r(){t.setAttribute("data-rocket-status","executed"),e()}),t.addEventListener("error",r),n?(t.removeAttribute("data-rocket-src"),t.src=n):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}catch(s){r()}})}async _loadScriptsFromList(t){let e=t.shift();return e&&e.isConnected?(await this._transformScript(e),this._loadScriptsFromList(t)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(t,e){var r=document.createDocumentFragment();t.forEach(t=>{let i=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(i){let n=document.createElement("link");n.href=i,n.rel=e,"preconnect"!==e&&(n.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),r.appendChild(n),this.trash.push(n)}}),document.head.appendChild(r)}_delayEventListeners(t){let e={};function r(t,r){!function t(r){!e[r]&&(e[r]={originalFunctions:{add:r.addEventListener,remove:r.removeEventListener},eventsToRewrite:[]},r.addEventListener=function(){arguments[0]=i(arguments[0]),e[r].originalFunctions.add.apply(r,arguments)},r.removeEventListener=function(){arguments[0]=i(arguments[0]),e[r].originalFunctions.remove.apply(r,arguments)});function i(t){return e[r].eventsToRewrite.indexOf(t)>=0?"rocket-"+t:t}}(t),e[t].eventsToRewrite.push(r)}function i(t,e){let r=t[e];Object.defineProperty(t,e,{get:()=>r||function(){},set(i){t["rocket"+e]=r=i}})}r(document,"DOMContentLoaded"),r(window,"DOMContentLoaded"),r(window,"load"),r(window,"pageshow"),r(document,"readystatechange"),i(document,"onreadystatechange"),i(window,"onload"),i(window,"onpageshow")}_delayJQueryReady(t){let e;function r(r){if(r&&r.fn&&!t.allJQueries.includes(r)){r.fn.ready=r.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(r):document.addEventListener("rocket-DOMContentLoaded",()=>e.bind(document)(r)),r([])};let i=r.fn.on;r.fn.on=r.fn.init.prototype.on=function(){if(this[0]===window){function t(t){return t.split(" ").map(t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=t(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(e=>{let r=arguments[0][e];delete arguments[0][e],arguments[0][t(e)]=r})}return i.apply(this,arguments),this},t.allJQueries.push(r)}e=r}r(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){r(t)}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this._littleBreath();let t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){let t=new Map;document.write=document.writeln=function(e){let r=document.currentScript;r||console.error("WPRocket unable to document.write this: "+e);let i=document.createRange(),n=r.parentElement,s=t.get(r);void 0===s&&(s=r.nextSibling,t.set(r,s));let a=document.createDocumentFragment();i.setStart(a,0),a.appendChild(i.createContextualFragment(e)),n.insertBefore(a,s)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}_emptyTrash(){this.trash.forEach(t=>t.remove())}static run(){let t=new RocketLazyLoadScripts;t._addUserInteractionListener(t)}}RocketLazyLoadScripts.run();</script>
+        <!-- Google tag (gtag.js) -->
+<script type="rocketlazyloadscript" async="" data-rocket-src="https://www.googletagmanager.com/gtag/js?id=G-HPERWV0YRP"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HPERWV0YRP');
+</script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Assets -->
+        <link data-minify="1" async="" href="https://www.merlinlawgroup.com/wp-content/cache/min/1/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css?ver=1757431370" rel="stylesheet" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="https://www.merlinlawgroup.com/wp-content/themes/merlinlaw/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://www.merlinlawgroup.com/wp-content/themes/merlinlaw/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://www.merlinlawgroup.com/wp-content/themes/merlinlaw/favicon-16x16.png">
+        <link rel="manifest" href="https://www.merlinlawgroup.com/wp-content/themes/merlinlaw/site.webmanifest">
+
+        <link data-minify="1" rel="stylesheet" href="https://www.merlinlawgroup.com/wp-content/cache/min/1/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css?ver=1757431370" crossorigin="anonymous" referrerpolicy="no-referrer">
+        
+        <!-- Hide Fake Error on FB Debug -->
+        <meta property="fb:app_id" content="966242223397117">
+
+        	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+<!-- Search Engine Optimization by Rank Math PRO - https://rankmath.com/ -->
+<title>The Texas Fair Plan: What It Is and What It Covers | Merlin Law Group</title>
+<meta name="description" content="The Texas FAIR Plan was created by state law to provide residential property insurance for people who can’t get coverage through the regular private insurance market.">
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+<link rel="canonical" href="https://www.merlinlawgroup.com/texas-fair-plan/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Texas Fair Plan: What It Is and What It Covers | Merlin Law Group">
+<meta property="og:description" content="The Texas FAIR Plan was created by state law to provide residential property insurance for people who can’t get coverage through the regular private insurance market.">
+<meta property="og:url" content="https://www.merlinlawgroup.com/texas-fair-plan/">
+<meta property="og:site_name" content="Merlin Law Group">
+<meta property="article:publisher" content="https://www.facebook.com/MerlinLawGroup/">
+<meta property="article:section" content="Texas">
+<meta property="og:image" content="https://www.merlinlawgroup.com/wp-admin/admin-ajax.php?action=rank_math_overlay_thumb&amp;id=21710&amp;type=play&amp;hash=8ac2db93b4523294b2ca9a4010624230">
+<meta property="og:image:secure_url" content="https://www.merlinlawgroup.com/wp-admin/admin-ajax.php?action=rank_math_overlay_thumb&amp;id=21710&amp;type=play&amp;hash=8ac2db93b4523294b2ca9a4010624230">
+<meta property="og:image:width" content="993">
+<meta property="og:image:height" content="794">
+<meta property="og:image:alt" content="A white house with an American flag and a Texas state flag that benefits from the Texas FAIR plan.">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="article:published_time" content="2025-01-06T15:24:33-05:00">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Texas Fair Plan: What It Is and What It Covers | Merlin Law Group">
+<meta name="twitter:description" content="The Texas FAIR Plan was created by state law to provide residential property insurance for people who can’t get coverage through the regular private insurance market.">
+<meta name="twitter:site" content="@MerlinLawGroup">
+<meta name="twitter:creator" content="@MerlinLawGroup">
+<meta name="twitter:image" content="https://www.merlinlawgroup.com/wp-admin/admin-ajax.php?action=rank_math_overlay_thumb&amp;id=21710&amp;type=play&amp;hash=8ac2db93b4523294b2ca9a4010624230">
+<meta name="twitter:label1" content="Written by">
+<meta name="twitter:data1" content="Merlin Law Group">
+<meta name="twitter:label2" content="Time to read">
+<meta name="twitter:data2" content="6 minutes">
+<script type="application/ld+json" class="rank-math-schema-pro">{"@context":"https://schema.org","@graph":[{"@type":"Place","@id":"https://www.merlinlawgroup.com/#place","address":{"@type":"PostalAddress","streetAddress":"777 S. Harbour Island Blvd, Suite 950","addressLocality":"Tampa","addressRegion":"Florida","postalCode":"33602","addressCountry":"USA"}},{"@type":["LegalService","Organization"],"@id":"https://www.merlinlawgroup.com/#organization","name":"Merlin Law Group","url":"https://www.merlinlawgroup.com","sameAs":["https://www.facebook.com/MerlinLawGroup/","https://twitter.com/MerlinLawGroup"],"address":{"@type":"PostalAddress","streetAddress":"777 S. Harbour Island Blvd, Suite 950","addressLocality":"Tampa","addressRegion":"Florida","postalCode":"33602","addressCountry":"USA"},"logo":{"@type":"ImageObject","@id":"https://www.merlinlawgroup.com/#logo","url":"https://www.merlinlawgroup.com/wp-content/uploads/2022/01/logo-local-seo.png","contentUrl":"https://www.merlinlawgroup.com/wp-content/uploads/2022/01/logo-local-seo.png","caption":"Merlin Law Group","inLanguage":"en-US","width":"900","height":"900"},"openingHours":["Monday,Tuesday,Wednesday,Thursday,Friday 8:30AM\u20135:00PM"],"location":{"@id":"https://www.merlinlawgroup.com/#place"},"image":{"@id":"https://www.merlinlawgroup.com/#logo"},"telephone":"+1 813-229-1000"},{"@type":"WebSite","@id":"https://www.merlinlawgroup.com/#website","url":"https://www.merlinlawgroup.com","name":"Merlin Law Group","publisher":{"@id":"https://www.merlinlawgroup.com/#organization"},"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://www.merlinlawgroup.com/wp-content/uploads/2025/01/texas-fair-plan.jpg","url":"https://www.merlinlawgroup.com/wp-content/uploads/2025/01/texas-fair-plan.jpg","width":"993","height":"794","caption":"A white house with an American flag and a Texas state flag that benefits from the Texas FAIR plan.","inLanguage":"en-US"},{"@type":"BreadcrumbList","@id":"https://www.merlinlawgroup.com/texas-fair-plan/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://www.merlinlawgroup.com","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"https://www.merlinlawgroup.com/category/states/texas-states/","name":"Texas"}},{"@type":"ListItem","position":"3","item":{"@id":"https://www.merlinlawgroup.com/texas-fair-plan/","name":"The Texas Fair Plan: What It Is and What It Covers"}}]},{"@type":"WebPage","@id":"https://www.merlinlawgroup.com/texas-fair-plan/#webpage","url":"https://www.merlinlawgroup.com/texas-fair-plan/","name":"The Texas Fair Plan: What It Is and What It Covers | Merlin Law Group","datePublished":"2025-01-06T15:24:33-05:00","dateModified":"2025-01-06T15:24:33-05:00","isPartOf":{"@id":"https://www.merlinlawgroup.com/#website"},"primaryImageOfPage":{"@id":"https://www.merlinlawgroup.com/wp-content/uploads/2025/01/texas-fair-plan.jpg"},"inLanguage":"en-US","breadcrumb":{"@id":"https://www.merlinlawgroup.com/texas-fair-plan/#breadcrumb"}},{"@type":"Person","@id":"https://www.merlinlawgroup.com/texas-fair-plan/#author","name":"Merlin Law Group","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/635636b56608b6f27132e546c070e323a6a870f44dc4fac961f667fe99ebbb62?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/635636b56608b6f27132e546c070e323a6a870f44dc4fac961f667fe99ebbb62?s=96&amp;d=mm&amp;r=g","caption":"Merlin Law Group","inLanguage":"en-US"},"worksFor":{"@id":"https://www.merlinlawgroup.com/#organization"}},{"@type":"Article","headline":"The Texas Fair Plan: What It Is and What It Covers | Merlin Law Group","keywords":"texas fair plan","datePublished":"2025-01-06T15:24:33-05:00","dateModified":"2025-01-06T15:24:33-05:00","articleSection":"Texas","author":{"@id":"https://www.merlinlawgroup.com/texas-fair-plan/#author","name":"Merlin Law Group"},"publisher":{"@id":"https://www.merlinlawgroup.com/#organization"},"description":"The Texas FAIR Plan was created by state law to provide residential property insurance for people who can\u2019t get coverage through the regular private insurance market.","name":"The Texas Fair Plan: What It Is and What It Covers | Merlin Law Group","@id":"https://www.merlinlawgroup.com/texas-fair-plan/#richSnippet","isPartOf":{"@id":"https://www.merlinlawgroup.com/texas-fair-plan/#webpage"},"image":{"@id":"https://www.merlinlawgroup.com/wp-content/uploads/2025/01/texas-fair-plan.jpg"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://www.merlinlawgroup.com/texas-fair-plan/#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+<link rel="alternate" type="application/rss+xml" title="Merlin Law Group » The Texas Fair Plan: What It Is and What It Covers Comments Feed" href="https://www.merlinlawgroup.com/texas-fair-plan/feed/">
+		<style>
+			.lazyload,
+			.lazyloading {
+				max-width: 100%;
+			}
+		</style>
+		<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.merlinlawgroup.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="https://www.merlinlawgroup.com/wp-includes/css/dist/block-library/style.min.css?ver=6.8.3" type="text/css" media="all">
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link data-minify="1" rel="stylesheet" id="style-css" href="https://www.merlinlawgroup.com/wp-content/cache/min/1/wp-content/themes/merlinlaw/style.css?ver=1757431370" type="text/css" media="">
+<style id="rocket-lazyload-inline-css" type="text/css">
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(https://www.merlinlawgroup.com/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+</style>
+<link rel="https://api.w.org/" href="https://www.merlinlawgroup.com/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="https://www.merlinlawgroup.com/wp-json/wp/v2/posts/21709"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.merlinlawgroup.com/xmlrpc.php?rsd">
+<link rel="shortlink" href="https://www.merlinlawgroup.com/?p=21709">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.merlinlawgroup.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.merlinlawgroup.com%2Ftexas-fair-plan%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.merlinlawgroup.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.merlinlawgroup.com%2Ftexas-fair-plan%2F&amp;format=xml">
+<style>
+	.myframe{height: 330px;}
+@media (max-width: 768px) {
+    .btn {
+        background-color: #FFF;
+    }
+}
+}
+</style><style type="text/css" id="simple-css-output">body.page-template-types-of-loss a.btn { background-color: #fff;}.video-disc { display: none!important;}#home-banner { display: none;}body.home #home-banner { display: block;}</style>		<script type="rocketlazyloadscript">
+			document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+		</script>
+				<style>
+			.no-js img.lazyload {
+				display: none;
+			}
+
+			figure.wp-block-image img.lazyloading {
+				min-width: 150px;
+			}
+
+			.lazyload,
+			.lazyloading {
+				--smush-placeholder-width: 100px;
+				--smush-placeholder-aspect-ratio: 1/1;
+				width: var(--smush-image-width, var(--smush-placeholder-width)) !important;
+				aspect-ratio: var(--smush-image-aspect-ratio, var(--smush-placeholder-aspect-ratio)) !important;
+			}
+
+						.lazyload, .lazyloading {
+				opacity: 0;
+			}
+
+			.lazyloaded {
+				opacity: 1;
+				transition: opacity 400ms;
+				transition-delay: 0ms;
+			}
+
+					</style>
+		<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="//cdn.callrail.com/companies/153216003/2235824ac31ab1525326/12/swap.js" defer=""></script><!-- Google Tag Manager -->
+<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M4M57SZ');</script>
+<!-- End Google Tag Manager --><!-- Meta Pixel Code -->
+
+<script type="rocketlazyloadscript">
+
+!function(f,b,e,v,n,t,s)
+
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+
+n.queue=[];t=b.createElement(e);t.async=!0;
+
+t.src=v;s=b.getElementsByTagName(e)[0];
+
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '812172650579542');
+
+fbq('track', 'PageView');
+
+</script>
+
+<noscript><img height="1" width="1" style="display:none"
+
+src="https://www.facebook.com/tr?id=812172650579542&ev=PageView&noscript=1"
+
+/></noscript>
+
+<!-- End Meta Pixel Code --><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>    </head>
+    <body class="wp-singular post-template-default single single-post postid-21709 single-format-standard wp-theme-merlinlaw">
+         <section id="home-banner" class="container-fluid py-1" style="background: #ff0000; color: #fff; text-align: center;">
+            <div class="container">
+                <div class="row">
+                     <div class="col-lg-12 mx-auto">
+                     If you've experienced property loss from wildfires in LA our team is here to help you. Call us today.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top py-0">
+            <div class="container-xl">
+                <a class="navbar-brand w-150px" href="https://www.merlinlawgroup.com">
+                    <img width="300" height="101" src="https://www.merlinlawgroup.com/wp-content/themes/merlinlaw/images/logo-merlin-law-group.svg" class="img-fluid img-white entered lazyloaded" alt="Merlin Law Group Logo" data-lazy-src="https://www.merlinlawgroup.com/wp-content/themes/merlinlaw/images/logo-merlin-law-group.svg" data-ll-status="loaded"><noscript><img width="547" height="184" src="https://www.merlinlawgroup.com/wp-content/themes/merlinlaw/images/logo-merlin-law-group.svg" class="img-fluid img-white" alt="Merlin Law Group Logo"></noscript>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-3">
+                        <li id="menu-item-392" class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-392 nav-item dropdown py-1 transition-25"><a href="#" class="nav-link dropdown-toggle ff-heading color-white text-decoration-none fs-7" data-bs-toggle="dropdown" id="dropdown392">Our Firm</a>
+<ul class="sub-menu dropdown-menu bg-primary rounded border-0 mt-2 px-2">
+	<li id="menu-item-311" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-311 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/about-our-firm/" class="nav-link ff-heading fs-7 color-white text-decoration-none">About</a></li>
+	<li id="menu-item-330" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-330 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/about-our-firm/attorney-directory/" class="nav-link ff-heading fs-7 color-white text-decoration-none">Attorneys</a></li>
+	<li id="menu-item-331" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-331 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/about-our-firm/executive-team/" class="nav-link ff-heading fs-7 color-white text-decoration-none">Executive Team</a></li>
+	<li id="menu-item-21495" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21495 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/offices/" class="nav-link ff-heading fs-7 color-white text-decoration-none">Locations</a></li>
+	<li id="menu-item-1157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1157 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/about-our-firm/faqs/" class="nav-link ff-heading fs-7 color-white text-decoration-none">FAQs</a></li>
+	<li id="menu-item-312" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-312 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/about-our-firm/careers/" class="nav-link ff-heading fs-7 color-white text-decoration-none">Careers</a></li>
+</ul>
+</li>
+<li id="menu-item-577" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-577 nav-item dropdown py-1 transition-25"><a href="https://www.merlinlawgroup.com/types-of-loss/" class="nav-link dropdown-toggle ff-heading color-white text-decoration-none fs-7" data-bs-toggle="dropdown" id="dropdown577">Types of Loss</a>
+<ul class="sub-menu dropdown-menu bg-primary rounded border-0 mt-2 px-2">
+	<li id="menu-item-1160" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1160 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/types-of-loss/" class="nav-link ff-heading fs-7 color-white text-decoration-none">All Types of Loss</a></li>
+	<li id="menu-item-912" class="menu-item menu-item-type-post_type menu-item-object-types-of-loss menu-item-912 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/types-of-loss/hurricanes/" class="nav-link ff-heading fs-7 color-white text-decoration-none">Hurricanes</a></li>
+	<li id="menu-item-908" class="menu-item menu-item-type-post_type menu-item-object-types-of-loss menu-item-908 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/types-of-loss/fire-and-smoke/" class="nav-link ff-heading fs-7 color-white text-decoration-none">Fire and Smoke</a></li>
+	<li id="menu-item-911" class="menu-item menu-item-type-post_type menu-item-object-types-of-loss menu-item-911 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/types-of-loss/water-damage/" class="nav-link ff-heading fs-7 color-white text-decoration-none">Water Damage</a></li>
+	<li id="menu-item-910" class="menu-item menu-item-type-post_type menu-item-object-types-of-loss menu-item-910 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/types-of-loss/wind-damage/" class="nav-link ff-heading fs-7 color-white text-decoration-none">Wind Damage</a></li>
+	<li id="menu-item-909" class="menu-item menu-item-type-post_type menu-item-object-types-of-loss menu-item-909 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/types-of-loss/hail-damage/" class="nav-link ff-heading fs-7 color-white text-decoration-none">Hail Damage</a></li>
+	<li id="menu-item-22049" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22049 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/types-of-loss/large-loss-insurance-claims/" class="nav-link ff-heading fs-7 color-white text-decoration-none">Large Loss</a></li>
+</ul>
+</li>
+<li id="menu-item-394" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-394 nav-item dropdown py-1 transition-25"><a href="#" class="nav-link dropdown-toggle ff-heading color-white text-decoration-none fs-7" data-bs-toggle="dropdown" id="dropdown394">Resources</a>
+<ul class="sub-menu dropdown-menu bg-primary rounded border-0 mt-2 px-2">
+	<li id="menu-item-797" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-797 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/resources/" class="nav-link ff-heading fs-7 color-white text-decoration-none">All Resources</a></li>
+	<li id="menu-item-334" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-334 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/resources/success-stories/" class="nav-link ff-heading fs-7 color-white text-decoration-none">Success Stories</a></li>
+	<li id="menu-item-332" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-332 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/resources/ebooks/" class="nav-link ff-heading fs-7 color-white text-decoration-none">eBooks</a></li>
+	<li id="menu-item-333" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-333 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/resources/press-releases/" class="nav-link ff-heading fs-7 color-white text-decoration-none">Press Releases</a></li>
+</ul>
+</li>
+<li id="menu-item-393" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-393 nav-item dropdown py-1 transition-25"><a href="#" class="nav-link dropdown-toggle ff-heading color-white text-decoration-none fs-7" data-bs-toggle="dropdown" id="dropdown393">Blog</a>
+<ul class="sub-menu dropdown-menu bg-primary rounded border-0 mt-2 px-2">
+	<li id="menu-item-627" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-627 nav-item py-1 transition-25"><a target="_blank" href="https://www.propertyinsurancecoveragelaw.com/" class="nav-link ff-heading fs-7 color-white text-decoration-none">Property Insurance Coverage Blog</a></li>
+	<li id="menu-item-21222" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21222 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/merlin-property-insurance-blog/" class="nav-link ff-heading fs-7 color-white text-decoration-none">Merlin Law Blog</a></li>
+</ul>
+</li>
+<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/contact-us/" class="nav-link ff-heading fs-7 color-white text-decoration-none">Contact Us</a></li>
+                                            </ul>
+                    <div class="bg-white text-center px-2 py-1">
+                        <a href="tel:(877) 449-4700" class="text-decoration-none color-primary fw-bold">
+                            <span class="d-block fs-7">
+                                Call Now • Open 24/7                            </span>
+                            <span class="">
+                                (877) 449-4700                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+<main id="single">
+    <section id="blogPost" class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="back-to mb-3">
+                        <a class="plain text-decoration-none" href="https://www.merlinlawgroup.com/merlin-property-insurance-blog/"><i class="fa fa-arrow-left"></i> View All Posts</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <article class="col-lg-12">
+                    <header id="articleHeader" class="py-3">
+                        <h1 class="h1">The Texas Fair Plan: What It Is and What It Covers</h1>
+                        <span class=" d-block">
+                            Jan 06, 2025 <b> By Merlin Law Group </b>
+                        </span>
+                        <span class="text-uppercase d-block mt-4 mb-3 category">
+                            <a href="https://www.merlinlawgroup.com/category/states/texas-states/" rel="category tag">Texas</a>
+                        </span>
+                         <!-- <div></div> -->
+                    </header>
+                </article>
+            </div>
+            <div class="row">
+                <div class="sticky-social col-lg-1 order-2 order-lg-1 ">
+                    <div class="sidebar-wrapper">
+                        <div class="share">
+                            <ul class="list-unstyled text-center">
+                                <li class="m-2">
+                                    <a href="https://www.facebook.com/sharer.php?u=https://www.merlinlawgroup.com/texas-fair-plan/" target="_blank" rel="nofollow noopener">
+                                        <i class="fab fa-facebook-f fa-2x "></i>
+                                    </a>
+                                </li>
+                                <li class="m-2">
+                                    <a href="https://twitter.com/intent/tweet?url=https://www.merlinlawgroup.com/texas-fair-plan/&amp;text=The Texas Fair Plan: What It Is and What It Covers" target="_blank" rel="nofollow noopener">
+                                        <i class="fab fa-twitter fa-2x "></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <article class="col-lg-8 col-xl-7 order-1">
+                    <img width="993" height="794" src="https://www.merlinlawgroup.com/wp-content/uploads/2025/01/texas-fair-plan.jpg" class="img-feature w-100 blog_img wp-post-image entered lazyloaded" alt="A white house with an American flag and a Texas state flag that benefits from the Texas FAIR plan." decoding="async" fetchpriority="high" data-lazy-srcset="https://www.merlinlawgroup.com/wp-content/uploads/2025/01/texas-fair-plan.jpg 993w, https://www.merlinlawgroup.com/wp-content/uploads/2025/01/texas-fair-plan-300x240.jpg 300w, https://www.merlinlawgroup.com/wp-content/uploads/2025/01/texas-fair-plan-768x614.jpg 768w" data-lazy-sizes="(max-width: 993px) 100vw, 993px" data-lazy-src="https://www.merlinlawgroup.com/wp-content/uploads/2025/01/texas-fair-plan.jpg" data-ll-status="loaded" sizes="(max-width: 993px) 100vw, 993px" srcset="https://www.merlinlawgroup.com/wp-content/uploads/2025/01/texas-fair-plan.jpg 993w, https://www.merlinlawgroup.com/wp-content/uploads/2025/01/texas-fair-plan-300x240.jpg 300w, https://www.merlinlawgroup.com/wp-content/uploads/2025/01/texas-fair-plan-768x614.jpg 768w"><noscript><img width="993" height="794" src="https://www.merlinlawgroup.com/wp-content/uploads/2025/01/texas-fair-plan.jpg" class="img-feature w-100 blog_img wp-post-image" alt="A white house with an American flag and a Texas state flag that benefits from the Texas FAIR plan." decoding="async" fetchpriority="high" srcset="https://www.merlinlawgroup.com/wp-content/uploads/2025/01/texas-fair-plan.jpg 993w, https://www.merlinlawgroup.com/wp-content/uploads/2025/01/texas-fair-plan-300x240.jpg 300w, https://www.merlinlawgroup.com/wp-content/uploads/2025/01/texas-fair-plan-768x614.jpg 768w" sizes="(max-width: 993px) 100vw, 993px" /></noscript>                    <section id="article" class="py-3">
+                        <h1>The Texas Fair Plan: What It Is and What It Covers</h1>
+<p>The Texas FAIR Plan Association (TFPA) was created by state law to provide residential property insurance for people who are unable to get coverage through the regular private insurance market.</p>
+<p>Policyholders should understand that, as a market of last resort, coverage available through the TFPA is not as comprehensive as most coverage available through the voluntary market. Therefore, it’s imperative to know what you’re getting. This post teaches you the basics.</p>
+<h3>Key Takeaways</h3>
+<ul>
+<li aria-level="1"><strong>The Texas FAIR Plan provides limited residential insurance for people who can’t get a policy through the private market.</strong></li>
+<li aria-level="1"><strong>It provides homeowners, dwelling, condo, and tenant (i.e., renters) insurance.</strong></li>
+<li aria-level="1"><strong>The average annual cost for a homeowners insurance policy through the Texas FAIR Plan is around $1,440.</strong></li>
+<li aria-level="1"><strong>The Texas FAIR Plan doesn’t cover windstorm, hail, and hurricane damage in Texas’ 14 coastal counties and in the portion of Harris County located east of State Highway 146 on Galveston Bay.</strong></li>
+</ul>
+<h2>The Purpose of the Texas FAIR Plan Association</h2>
+<p>In 1995, the Texas Legislature passed a law authorizing the establishment of a Texas Fair Access to Insurance Requirements (FAIR) Plan to address</p>
+<p>growing concerns about the difficulty of obtaining residential property insurance coverage in underserved areas.</p>
+<p>In 2002, the Texas Commissioner of Insurance activated the FAIR Plan in response to a mold crisis. Claims for mold damage exceeded over $2 billion that year, and insurers in the state ended up paying out over $215 million. As a result, several major insurers pulled out of the Texas insurance market, which left Texans struggling to find coverage. The Texas FAIR Plan Association (TFPA) became the insurer of last resort for property owners unable to obtain coverage elsewhere.</p>
+<h2>Who Qualifies for the Texas FAIR Plan</h2>
+<p>To qualify for a Texas FAIR Plan policy, applicants have to meet the following criteria defined by the Texas Legislature:</p>
+<ul>
+<li aria-level="1"><strong>You must have been denied coverage by at least two insurance companies</strong> licensed to write – and currently writing – residential property insurance policies in Texas. (Applicants are required to provide proof they’ve been declined with <a href="https://www.texasfairplan.org/wp-content/uploads/Proof-of-Declination-of-Coverage-2021.pdf" target="_blank" rel="noopener">this form</a>.)</li>
+<li aria-level="1">You cannot have a current homeowners or other residential property policy, a renewal offer, or a valid offer of comparable residential property insurance from another insurance company licensed to operate in Texas.</li>
+</ul>
+<p>An applicant’s property must also meet certain eligibility requirements. It can’t be condemned, vacant, or in disrepair. Applicants can’t have more than eight paid insurance claims within the past three years or have been convicted for arson, fraud, or any other insurance-related offense.</p>
+<h2>Policy Types Provided by the TFPA</h2>
+<p>The TFPA provides four types of policies:</p>
+<ul>
+<li aria-level="1">Homeowners Insurance</li>
+<li aria-level="1">Dwelling Insurance</li>
+<li aria-level="1"><a href="https://www.propertyinsurancecoveragelaw.com/blog/victory-for-a-texas-condo-association-in-its-hurricane-harvey-claim/" target="_blank" rel="noopener">Condominium</a> Insurance</li>
+<li aria-level="1">Tenant (i.e., Renters) Insurance</li>
+</ul>
+<p>The TFPA <em>does not</em> insure commercial properties.</p>
+<h2>What the Texas FAIR Plan Covers</h2>
+<p>Texas FAIR Plan policies provide very limited coverage compared with regular open market insurance policies. Plans can cover the following:</p>
+<h3>Hazard Coverage</h3>
+<p><a href="https://www.propertyinsurancecoveragelaw.com/blog/hazard-insurance/" target="_blank" rel="noopener">Hazard coverage</a> includes coverage for:</p>
+<ul>
+<li aria-level="1">Fire</li>
+<li aria-level="1">Lightning</li>
+<li aria-level="1">Sudden and accidental damage from smoke</li>
+<li aria-level="1">Windstorm and hail</li>
+<li aria-level="1">Explosions</li>
+<li aria-level="1">Aircraft and vehicles</li>
+<li aria-level="1">Riot and civil commotion</li>
+<li aria-level="1">Vandalism and malicious mischief</li>
+<li aria-level="1">Theft</li>
+</ul>
+<p>While all of these perils are included in homeowners, condo, and tenant policies, everything except fire and lightning coverage is optional in the dwelling policy and must be added as additional endorsements. <a href="https://www.propertyinsurancecoveragelaw.com/blog/is-a-tornado-a-windstorm-a-texas-perspective-on-the-term-windstorm/" target="_blank" rel="noopener">Windstorm</a> and <a href="https://www.propertyinsurancecoveragelaw.com/blog/texas-hail-claims-know-your-rights-under-chapter-541-of-the-texas-insurance-code/" target="_blank" rel="noopener">hail</a> coverage are excluded for properties in Texas’ 14 first-tier coastal counties.</p>
+<h3>Personal Property Coverage</h3>
+<p>All four policies provide <a href="https://www.propertyinsurancecoveragelaw.com/blog/calculating-actual-cash-value-part-4-texas/" target="_blank" rel="noopener">actual cash value</a> <a href="https://www.propertyinsurancecoveragelaw.com/blog/actual-cash-value-defined-by-texas-courts/" target="_blank" rel="noopener">coverage</a> for personal property in your household, such as clothing, furniture, and appliances. (Business personal property, jewelry, watches, furs, and money may be excluded.) <a href="https://www.propertyinsurancecoveragelaw.com/blog/functional-replacement-cost/" target="_blank" rel="noopener">Replacement cost</a> coverage is available at an additional premium for homeowners, condo, and tenant policies but not for dwelling policies.</p>
+<p>The total insurable value maxes out at 50% of the total value of the house for the homeowners and dwelling policies. That total can be increased for homeowners policies for an additional premium. The condo and tenant policies provide coverage at selected limits up to a maximum of $500,000.</p>
+<h3>Liability Coverage and Loss of Use Coverage</h3>
+<p>Homeowners, tenant, and condo policies include coverage for personal liability and medical payments if someone is injured on your property. Liability is capped at $100,000 or $300,000 depending on coverage choice, and medical payments are limited to $5,000 per person or $25,000 per occurrence.</p>
+<p>Loss of Use coverage can pay for additional living expenses if your home is temporarily uninhabitable.</p>
+<h2>What Isn’t Covered by the Texas FAIR Plan</h2>
+<p>TFPA coverage is limited to named perils, unlike a general <a href="https://www.propertyinsurancecoveragelaw.com/blog/did-the-homeowners-all-risk-insurance-policy-provide-more-coverage-in-1959-than-it-does-today/" target="_blank" rel="noopener">“all risk”</a> homeowners insurance policy, so there are many other possible sources of damage that aren’t covered. These include:</p>
+<ul>
+<li aria-level="1"><a href="https://www.propertyinsurancecoveragelaw.com/blog/what-are-the-specified-perils-what-is-falling-objects/" target="_blank" rel="noopener">Falling objects</a>, such as trees or branches</li>
+<li aria-level="1">Full or partial building collapse</li>
+<li aria-level="1">Broken glass</li>
+<li aria-level="1">Damage from the weight of ice, snow, or sleet</li>
+<li aria-level="1">Frozen pipes</li>
+<li aria-level="1">Damage to HVAC or sprinkler systems</li>
+<li aria-level="1">Mold, fungi, or other microbe remediation costs</li>
+<li aria-level="1">Backup from drains or sewers</li>
+</ul>
+<h2>Does the Texas Fair Plan Cover Windstorm Damage?</h2>
+<p>Many Texas Fair Plan policies do cover windstorm damage, but the TFPA does not provide windstorm, hurricane, or hail coverage for properties located in designated catastrophe areas. This includes all 14 first-tier coastal counties (Aransas, Brazoria, Calhoun, Cameron, Chambers, Galveston, Jefferson, Kenedy, Kleberg, Matagorda, Nueces, Refugio, San Patricio, and Willacy) and a portion of Harris County located east of State Highway 146 on Galveston Bay. <a href="https://www.tdi.texas.gov/pubs/pc/fair-overview.pdf" target="_blank" rel="noopener">Texas Department of Insurance records</a> show that over 58% of TFPA policies are for properties in Harris County.</p>
+<p>Pursuant to Texas Insurance Code §2211.156, any policy written by the TFPA for a property in these areas must include a Windstorm and Hail Exclusion Agreement attached to the policy. Residents who live in these areas can purchase windstorm, hurricane, and hail insurance through the <a href="https://www.twia.org/" target="_blank" rel="noopener">Texas Windstorm Insurance Association</a> (TWIA). If you reside in a TWIA coverage area, yet qualify for TFPA, you may carry both policies.</p>
+<h2>TFPA Policy Terms and Renewals</h2>
+<p>TFPA policies are issued for a one-year term, subject to underwriting standards. <strong>Policyholders are required to reapply for residential property insurance through the open market every two years.</strong></p>
+<p>After two years of coverage, policyholders are eligible to renew with the TFPA if:</p>
+<ol>
+<li aria-level="1">At least two insurance companies licensed to write — and actually writing — Texas residential policies decline your application; and</li>
+<li aria-level="1">You don’t receive a valid offer of comparable property insurance from an insurance company licensed in Texas.</li>
+</ol>
+<h2>FAQs about the Texas FAIR Plan</h2>
+<h3>Does TFPA Cover Vandalism?</h3>
+<p>TFPA homeowners, condo, and tenant policies provide coverage for vandalism and malicious mischief. For dwelling policies, coverage needs to be purchased as an additional endorsement.</p>
+<h3>What Types of Properties are Eligible for the Texas Fair Plan?</h3>
+<p>The Texas FAIR Plan provides limited coverage for the following types of properties:</p>
+<ul>
+<li aria-level="1">One- and two-family residential dwellings</li>
+<li aria-level="1">Townhouse units</li>
+<li aria-level="1">Condominium units</li>
+<li aria-level="1">Manufactured housing</li>
+</ul>
+<h3>Does the Texas Fair Plan Insure Mobile Homes?</h3>
+<p>The Texas Fair Plan provides coverage for manufactured homes. This includes mobile homes, provided that the wheels are removed and the mobile home is tied down. See <a href="https://www.texasfairplan.org/wp-content/uploads/Mobile-Home-Submission-Job-Aid.pdf" target="_blank" rel="noopener">this TFPA form</a> for more information about submitting an application for a policy to cover a mobile home.</p>
+<h3>Can I Get Flood Insurance through the Texas FAIR Plan?</h3>
+<p>The Texas FAIR Plan does not provide flood insurance. To get flood insurance, you’ll need to purchase a policy through the National Flood Insurance Program (NFIP) or from a private insurer.</p>
+<h2>Further Resources on Insurance Coverage Law</h2>
+<p>Navigating the complexities of insurance claims can feel overwhelming. Whether you’re facing unpaid claims or simply filing for the first time, our eBooks equip you with the crucial information you need to advocate for yourself with confidence.</p>
+<ul>
+<li aria-level="1"><a href="https://www.merlinlawgroup.com/wp-content/uploads/2021/11/ebook-merlin-law-filing-a-property-claim.pdf" target="_blank" rel="noopener">Filing A Property Insurance Claim</a></li>
+<li aria-level="1"><a href="https://www.merlinlawgroup.com/wp-content/uploads/2022/01/ebook-merlin-law-insurance-company-response-time.pdf" target="_blank" rel="noopener">Insurance Company Response Time</a></li>
+<li aria-level="1"><a href="https://www.merlinlawgroup.com/wp-content/uploads/2022/01/ebook-merlin-law-denied-or-underpaid-claim.pdf" target="_blank" rel="noopener">What To Do When You Have a Denied/Underpaid Claim</a></li>
+<li aria-level="1"><a href="https://www.merlinlawgroup.com/wp-content/uploads/2021/11/ebook-merlin-law-wildfire-claims.pdf" target="_blank" rel="noopener">Wildfire Claims</a></li>
+<li aria-level="1"><a href="https://www.merlinlawgroup.com/wp-content/uploads/2021/11/ebook-merlin-law-flood-claims-handbook.pdf" target="_blank" rel="noopener">Flood Claims Handbook</a></li>
+<li aria-level="1"><a href="https://www.merlinlawgroup.com/wp-content/uploads/2021/11/ebook-merlin-law-hurricane-deductibles-and-policy-limits.pdf" target="_blank" rel="noopener">More Information on Hurricane Deductible and Policy Limits</a></li>
+<li aria-level="1"><a href="https://www.merlinlawgroup.com/wp-content/uploads/2021/11/ebook-merlin-law-condo-hurricane-preparedness.pdf" target="_blank" rel="noopener">Condominium Hurricane Preparedness</a></li>
+</ul>
+<h2>Why Merlin?</h2>
+<p>Are you fighting an insurance company that won’t pay up on claims? With nearly 40 years of practice and $2 billion in recovered claims, our team stands by your side to ensure you can face any insurance challenge with confidence. <a href="https://www.propertyinsurancecoveragelaw.com/contact/" target="_blank" rel="noopener">Contact us</a> today for a consultation, or read more about <a href="https://www.merlinlawgroup.com/wp-content/uploads/2021/11/ebook-merlin-law-why-merlin.pdf" target="_blank" rel="noopener">how we’re your trusted advocate</a>.</p>
+                    </section>
+                        <footer id="articleFooter" class="py-3 d-lg-flex justify-content-between">
+                       <!--  <div>
+                            <h4 class="h6">Tags</h4>
+                            <div></div>
+                        </div> -->
+                        <!--  <div>
+                            <h4 class="h6 mt-4 mt-lg-0">Share this article</h4>
+                            <a href="https://www.facebook.com/sharer.php?u=https://www.merlinlawgroup.com/texas-fair-plan/" target="_blank" rel="nofollow noopener">
+                                <i class="fab fa-facebook-square fa-2x"></i>
+                            </a>
+                            <a href="https://twitter.com/intent/tweet?url=https://www.merlinlawgroup.com/texas-fair-plan/&text=The Texas Fair Plan: What It Is and What It Covers" target="_blank" rel="nofollow noopener">
+                                <i class="fab fa-twitter-square fa-2x"></i>
+                            </a>
+                        </div> -->
+
+                        <!--  -->
+                        </footer>
+                </article>
+                                    <aside id="sidebar" class="col-xl-4 order-3 ">
+                        <div class="bg-light  px-4 py-5 text-center sidebar-wrapper">
+                            <section>
+<figure class="wp-block-image size-medium is-style-default"><img decoding="async" width="300" height="78" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%2078'%3E%3C/svg%3E" alt="" class="wp-image-1729" data-lazy-srcset="https://www.merlinlawgroup.com/wp-content/uploads/2024/02/logo_sidebar-300x78.webp 300w, https://www.merlinlawgroup.com/wp-content/uploads/2024/02/logo_sidebar.webp 696w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://www.merlinlawgroup.com/wp-content/uploads/2024/02/logo_sidebar-300x78.webp"><noscript><img decoding="async" width="300" height="78" src="https://www.merlinlawgroup.com/wp-content/uploads/2024/02/logo_sidebar-300x78.webp" alt="" class="wp-image-1729" srcset="https://www.merlinlawgroup.com/wp-content/uploads/2024/02/logo_sidebar-300x78.webp 300w, https://www.merlinlawgroup.com/wp-content/uploads/2024/02/logo_sidebar.webp 696w" sizes="(max-width: 300px) 100vw, 300px" /></noscript></figure>
+</section><section>
+<p class="my-2">Established in 1985, Merlin Law Group is a leading insurance litigation law firm committed to assisting policyholders receive fair and just outcomes from their insurance companies.</p>
+</section><section>
+<h3 class="wp-block-heading mt-5 mb-4">Contact Us<br></h3>
+</section><section>
+<p class="contect_info"><a href="tel:8774494700">(877) 449-4700</a><br><a href="https://www.merlinlawgroup.com/?__hstc=174962621.aa73001e226528ce767ca81b7d4b6232.1707202701389.1708595266222.1708608453057.8&amp;__hssc=174962621.2.1708608453057&amp;__hsfp=1895368747" target="_blank" rel="noreferrer noopener">MerlinLawGroup.com</a></p>
+</section><section>
+<h3 class="wp-block-heading mt-5 mb-4">Stay Connected</h3>
+</section><section>
+<ul class="wp-block-social-links aligncenter has-large-icon-size is-style-logos-only is-content-justification-center is-layout-flex wp-container-core-social-links-is-layout-16018d1d wp-block-social-links-is-layout-flex"><li class="wp-social-link wp-social-link-facebook  text-muted wp-block-social-link"><a rel="noopener nofollow" target="_blank" href="#" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2C6.5 2 2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12c0-5.5-4.5-10-10-10z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Facebook</span></a></li>
+
+<li class="wp-social-link wp-social-link-linkedin  text-muted wp-block-social-link"><a rel="noopener nofollow" target="_blank" href="#" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M19.7,3H4.3C3.582,3,3,3.582,3,4.3v15.4C3,20.418,3.582,21,4.3,21h15.4c0.718,0,1.3-0.582,1.3-1.3V4.3 C21,3.582,20.418,3,19.7,3z M8.339,18.338H5.667v-8.59h2.672V18.338z M7.004,8.574c-0.857,0-1.549-0.694-1.549-1.548 c0-0.855,0.691-1.548,1.549-1.548c0.854,0,1.547,0.694,1.547,1.548C8.551,7.881,7.858,8.574,7.004,8.574z M18.339,18.338h-2.669 v-4.177c0-0.996-0.017-2.278-1.387-2.278c-1.389,0-1.601,1.086-1.601,2.206v4.249h-2.667v-8.59h2.559v1.174h0.037 c0.356-0.675,1.227-1.387,2.526-1.387c2.703,0,3.203,1.779,3.203,4.092V18.338z"></path></svg><span class="wp-block-social-link-label screen-reader-text">LinkedIn</span></a></li>
+
+<li class="wp-social-link wp-social-link-x  text-muted wp-block-social-link"><a rel="noopener nofollow" target="_blank" href="#" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M13.982 10.622 20.54 3h-1.554l-5.693 6.618L8.745 3H3.5l6.876 10.007L3.5 21h1.554l6.012-6.989L15.868 21h5.245l-7.131-10.378Zm-2.128 2.474-.697-.997-5.543-7.93H8l4.474 6.4.697.996 5.815 8.318h-2.387l-4.745-6.787Z"></path></svg><span class="wp-block-social-link-label screen-reader-text">X</span></a></li></ul>
+</section>                        </div>
+                    </aside>
+                            </div>
+
+            
+                                    <section class="section-related-posts mt-5">
+                        <div class="container">
+                            <div class="row mb-3">
+                                <div class="col-12">
+                                    <h3 class="mt-0 gold-bar">Related Posts</h3>
+                                    <a class="plain text-decoration-none" href="https://www.merlinlawgroup.com/blog/">View All Posts</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                                                      
+                                        <article id="post-22499" class="col-md-4 post-22499 post type-post status-publish format-standard has-post-thumbnail hentry category-hurricane category-texas-states tag-hurricane-insurance tag-texas" role="article">
+                                            <div class="post-item pt-4">
+                                                <a href="https://www.merlinlawgroup.com/hurricane-insurance-texas-required-windstorm-coverage/" class="text-decoration-none">
+                                                     <img width="225" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E" class="featured-image img-fluid wp-post-image" alt="A digital highway sign in Texas warns drivers with the message “Hurricane Season Is Here, Be Prepared,” reminding residents about the importance of readiness and hurricane insurance in Texas." decoding="async" data-lazy-srcset="https://www.merlinlawgroup.com/wp-content/uploads/2025/10/hurricane-insurance-texas-1024x683.jpg 1024w, https://www.merlinlawgroup.com/wp-content/uploads/2025/10/hurricane-insurance-texas-300x200.jpg 300w, https://www.merlinlawgroup.com/wp-content/uploads/2025/10/hurricane-insurance-texas-768x512.jpg 768w, https://www.merlinlawgroup.com/wp-content/uploads/2025/10/hurricane-insurance-texas.jpg 1200w" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" data-lazy-src="https://www.merlinlawgroup.com/wp-content/uploads/2025/10/hurricane-insurance-texas-1024x683.jpg"><noscript><img width="1024" height="683" src="https://www.merlinlawgroup.com/wp-content/uploads/2025/10/hurricane-insurance-texas-1024x683.jpg" class="featured-image img-fluid wp-post-image" alt="A digital highway sign in Texas warns drivers with the message “Hurricane Season Is Here, Be Prepared,” reminding residents about the importance of readiness and hurricane insurance in Texas." decoding="async" srcset="https://www.merlinlawgroup.com/wp-content/uploads/2025/10/hurricane-insurance-texas-1024x683.jpg 1024w, https://www.merlinlawgroup.com/wp-content/uploads/2025/10/hurricane-insurance-texas-300x200.jpg 300w, https://www.merlinlawgroup.com/wp-content/uploads/2025/10/hurricane-insurance-texas-768x512.jpg 768w, https://www.merlinlawgroup.com/wp-content/uploads/2025/10/hurricane-insurance-texas.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript>                                                </a>
+                                                <div class="content-wrapper">
+                                                    <div class="mb-3">
+                                                        <a href="https://www.merlinlawgroup.com/hurricane-insurance-texas-required-windstorm-coverage/" class="text-decoration-none">
+                                                            <h4 class="article-title m-0 h4">
+                                                                Hurricane Insurance in Texas: Why Your Mortgage Company’s Required Coverage Is Leaving You Financially Exposed                                                            </h4>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text-wrapper">
+                                                        <div class="post-meta">
+                                                            <span class="date">Oct 02, 2025</span> <a href="https://www.merlinlawgroup.com/author/grosen/" class="text-decoration-none">By Merlin Law Group </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                                                                                </div>
+                        </div>
+                    </section>
+                                            </div>
+    </section>
+
+    
+<section id="ctaContact" class="py-5 bg-primary">
+    <div class="container">
+        <div class="row">
+            <div class="text-center color-white">
+                <span class="fs-5">
+                    Are you looking for help?                </span>
+                <h3 class="my-3 color-white">
+                    Let us help you. Call now: <a href="tel:877-449-4700" class="color-white text-decoration-none hover-underline" target="_blank">(877) 449-4700</a>
+                </h3>
+                <span class="fs-5">
+                    <a href="mailto:info@merlinlawgroup.com" class="text-white text-decoration-none hover-underline" target="_blank">info@merlinlawgroup.com</a> | Monday – Friday, 9 AM – 5PM
+            	</span>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<section id="ctaFreeCaseReviewForm" class="container-fluid py-5">
+    <div class="container">
+        <div class="row gx-lg-5">
+            <div class="col-lg-6">
+                <div class="mb-4 mb-lg-0 pt-lg-5">
+                    <h2 class="h3">
+                        Why choose Merlin Law Group?                    </h2>
+                    <div class="">
+                        <p>Founded in 1985, our law firm continues to be dedicated to representing insurance policyholders throughout the United States. Collectively, our lawyers are licensed to practice in 25 states. In fact, many of Merlin Law Group’s attorneys worked for the insurance industry before joining the firm, so they bring a strong understanding of insurance company practices. Anyone can file a claim, but it takes experience, knowledge, and savvy to achieve a truly successful outcome. As The Policyholder’s Advocate®, Merlin Law Group aims to drive positive change within the insurance sector by obtaining justice for our clients and educating policyholders on how to navigate insurer bad faith tactics.</p>
+                                <p>When we handle property insurance claim disputes, we hire the most experienced and qualified expert witnesses to evaluate your insurance claim and testify on your behalf. In most cases, we can advance the fees for this. Typically, we hire experts such as engineers, contractors, independent roofing consultants and other professionals to perform a thorough assessment on all possible causes of damages. This is a process that provides us with a very detailed and all-inclusive estimate for determining and justifying a proper settlement. Our use of these professional expert witnesses sets us apart from other insurance law firms.</p>                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-3 p-lg-5 pb-lg-4 bg-light-grey border rounded img-border-radius-tr shadow-sm">
+                    <h2 class="h3">
+                        Submit a free case review                    </h2>
+                                            <script type="rocketlazyloadscript" charset="utf-8" data-rocket-type="text/javascript" data-rocket-src="//js.hsforms.net/forms/v2.js"></script>
+                        <script type="rocketlazyloadscript">
+                            hbspt.forms.create({
+                                region: "na1",
+                                portalId: "6137185",
+                                formId: "3e999d64-dbf8-41a4-91a6-8ff487da7c97"
+                            });
+                        </script>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+
+<footer id="footer" class="container-fluid py-5 bg-primary border-top border-tertiary">
+    <div class="container pb-3">
+        <div class="row gy-4 color-white">
+            <div id="footerNav" class="col-lg-7">
+                <div class="row gy-4">
+                    <div id="nav1" class="col-sm-6 col-lg-4">
+                        <h5 class="color-white">Quick Menu</h5>
+                        <nav class="footer-block"><ul id="menu-quick-nav" class="list-unstyled ps-0"><li id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-96 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/" class="nav-link ff-heading fs-7 color-white text-decoration-none">Merlin Law Group Home</a></li>
+<li id="menu-item-1123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1123 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/about-our-firm/attorney-directory/" class="nav-link ff-heading fs-7 color-white text-decoration-none">Attorneys</a></li>
+<li id="menu-item-1122" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1122 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/resources/" class="nav-link ff-heading fs-7 color-white text-decoration-none">Resources</a></li>
+<li id="menu-item-1124" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1124 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/about-our-firm/faqs/" class="nav-link ff-heading fs-7 color-white text-decoration-none">FAQs</a></li>
+<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/about-our-firm/careers/" class="nav-link ff-heading fs-7 color-white text-decoration-none">Careers</a></li>
+<li id="menu-item-98" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-98 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/contact-us/" class="nav-link ff-heading fs-7 color-white text-decoration-none">Contact Us</a></li>
+<li id="menu-item-1550" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1550 nav-item py-1 transition-25"><a target="_blank" href="https://www.propertyinsurancecoveragelaw.com/" class="nav-link ff-heading fs-7 color-white text-decoration-none">Subscribe to the Blog</a></li>
+<li id="menu-item-21243" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21243 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/disclaimer/" class="nav-link ff-heading fs-7 color-white text-decoration-none">Disclaimer</a></li>
+</ul></nav>                    </div>
+                    <div id="nav2" class="col-sm-6 col-lg-4">
+                        <h5 class="color-white">Types of Loss</h5>
+                        <nav class="footer-block"><ul id="menu-types-of-loss" class="list-unstyled ps-0"><li id="menu-item-1422" class="menu-item menu-item-type-post_type menu-item-object-types-of-loss menu-item-1422 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/types-of-loss/hurricanes/" class="nav-link ff-heading fs-7 color-white text-decoration-none">Hurricanes</a></li>
+<li id="menu-item-1418" class="menu-item menu-item-type-post_type menu-item-object-types-of-loss menu-item-1418 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/types-of-loss/fire-and-smoke/" class="nav-link ff-heading fs-7 color-white text-decoration-none">Fire and Smoke</a></li>
+<li id="menu-item-1421" class="menu-item menu-item-type-post_type menu-item-object-types-of-loss menu-item-1421 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/types-of-loss/water-damage/" class="nav-link ff-heading fs-7 color-white text-decoration-none">Water Damage</a></li>
+<li id="menu-item-1420" class="menu-item menu-item-type-post_type menu-item-object-types-of-loss menu-item-1420 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/types-of-loss/wind-damage/" class="nav-link ff-heading fs-7 color-white text-decoration-none">Wind Damage</a></li>
+<li id="menu-item-1419" class="menu-item menu-item-type-post_type menu-item-object-types-of-loss menu-item-1419 nav-item py-1 transition-25"><a href="https://www.merlinlawgroup.com/types-of-loss/hail-damage/" class="nav-link ff-heading fs-7 color-white text-decoration-none">Hail Damage</a></li>
+</ul></nav>                    </div>
+                    <div id="nav3" class="col-sm-6 col-lg-4">
+                        <h5 class="color-white">
+                            Follow Us                        </h5>
+                        <nav class="footer-block">
+                            <ul class="list-unstyled ps-0">
+                                    <li class="nav-item py-1">
+                <a href="https://www.facebook.com/MerlinLawGroup/" class="nav-link color-white ff-heading fs-7" target="_blank">
+                    <i class="fab fa-facebook" aria-hidden="true"></i> Facebook
+                </a>
+            </li>                                                                        <li class="nav-item py-1">
+                <a href="https://www.linkedin.com/company/merlin-law-group/" class="nav-link color-white ff-heading fs-7" target="_blank">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+                </a>
+            </li>                                    <li class="nav-item py-1">
+                <a href="https://twitter.com/MerlinLawGroup" class="nav-link color-white ff-heading fs-7" target="_blank">
+                    <i class="fab fa-twitter" aria-hidden="true"></i> Twitter
+                </a>
+            </li>                                    <li class="nav-item py-1">
+                <a href="https://youtube.com/merlinlawgroup" class="nav-link color-white ff-heading fs-7" target="_blank">
+                    <i class="fab fa-youtube" aria-hidden="true"></i> YouTube
+                </a>
+            </li>                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div id="summary" class="col-lg-5">
+                <div class="w-150px mb-2">
+                    <a href="https://www.merlinlawgroup.com" class="d-block">
+                        <img width="300" height="101" id="footerLogo" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20547%20184'%3E%3C/svg%3E" class="img-white" alt="Merlin Law Group Logo" data-lazy-src="https://www.merlinlawgroup.com/wp-content/themes/merlinlaw/images/logo-merlin-law-group.svg"><noscript><img width="547" height="184"
+                            id="footerLogo"
+                            src="https://www.merlinlawgroup.com/wp-content/themes/merlinlaw/images/logo-merlin-law-group.svg"
+                            class="img-white"
+                            alt="Merlin Law Group Logo"
+                        ></noscript>
+                    </a>
+                </div>
+                <div class="fs-6 lh-md">
+                    <p>Merlin Law Group is a national insurance claim litigation firm that handles commercial property insurance claims, residential property insurance claims and bad faith claims. Our dedicated team of insurance attorneys are committed to resolving your property insurance claims.</p>
+<p>The accounts of recent trials, verdicts and settlements contained in this website are intended to illustrate the experience of the law firm. Prospective clients may not obtain the same or similar results as each case is unique.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Assets -->
+<link async="" href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&amp;family=Oswald:wght@600&amp;display=swap" rel="stylesheet">
+<link data-minify="1" async="" rel="stylesheet" href="https://www.merlinlawgroup.com/wp-content/cache/min/1/rla8vcs.css?ver=1757431371">
+<link data-minify="1" async="" rel="stylesheet" href="https://www.merlinlawgroup.com/wp-content/cache/min/1/releases/v5.15.3/css/all.css?ver=1757431371" crossorigin="anonymous">
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/merlinlaw\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<!-- Start of HubSpot Embed Code -->
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" id="hs-script-loader" async="" defer="" data-rocket-src="https://www.merlinlawgroup.com/wp-content/cache/min/1/6137185.js?ver=1757431367"></script>
+<!-- End of HubSpot Embed Code --><link data-minify="1" rel="stylesheet" id="dev_custom-css" href="https://www.merlinlawgroup.com/wp-content/cache/min/1/wp-content/themes/merlinlaw/css/custom.css?ver=1757431371" type="text/css" media="all">
+<style id="core-block-supports-inline-css" type="text/css">
+.wp-container-core-social-links-is-layout-16018d1d{justify-content:center;}
+</style>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-browser-checker-js-after">
+/* <![CDATA[ */
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/wp-content\/themes\/merlinlaw\/component-stats.php\/|\/igmap\/merlin-locations\/|\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/mlg-entry\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/www.merlinlawgroup.com","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-preload-links-js-after">
+/* <![CDATA[ */
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+/* ]]> */
+</script>
+<script type="text/javascript" id="smush-lazy-load-js-before">
+/* <![CDATA[ */
+var smushLazyLoadOptions = {"autoResizingEnabled":false,"autoResizeOptions":{"precision":5,"skipAutoWidth":true}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.merlinlawgroup.com/wp-content/plugins/wp-smushit/app/assets/js/smush-lazy-load.min.js?ver=3.22.1" id="smush-lazy-load-js" defer=""></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async="" src="https://www.merlinlawgroup.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadThumb(e){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="play Youtube video"></button>';return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?'':'&'+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var e,t,p,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id),a[t].appendChild(e),p=e.querySelector('.play'),p.onclick=lazyLoadYoutubeIframe});</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.merlinlawgroup.com/wp-content/cache/min/1/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js?ver=1757431367" crossorigin="anonymous" defer=""></script>
+
+    <script type="rocketlazyloadscript" data-rocket-src="//www.apexchat.net/scripts/invitation.ashx?company=merlinlaw" async=""></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.merlinlawgroup.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js" defer=""></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">window.addEventListener('DOMContentLoaded', function() {
+    jQuery(document).ready(function(){
+        jQuery(".advanced-search .filter-toggle").on("click", function () {
+            jQuery(this).find("i").toggleClass("flip"), jQuery(this).closest(".advanced-search").find("#filter-drawer").toggleClass("open");
+        });
+        jQuery(".advanced-search .search-submit").click(function (e) {
+            jQuery(".advanced-searchform").trigger("submit");
+        });
+        jQuery(".advanced-search .search-reset").click(function (e) {
+            window.location.href = 'https://www.merlinlawgroup.com/merlin-property-insurance-blog/';
+        })
+        jQuery(".advanced-search.results a").click(function (e) {
+            jQuery(this).addClass("remove"), jQuery(".advanced-searchform").trigger("submit");
+        });
+        jQuery("#filter-drawer ul li a").on("click", function () {
+                         jQuery(this).toggleClass("active");
+        });
+
+        jQuery(".advanced-searchform").on("submit", function (e) {
+            var t = jQuery("#filter-drawer .audiences ul li a.active"),
+                a = jQuery("#filter-drawer .topics ul li a.active"),
+                s = jQuery("#filter-drawer .states ul li a.active"),
+                i = [],
+                n = [],
+                c = [],
+                o = jQuery(".advanced-search.results a.remove").length ? jQuery(".advanced-search.results a.remove").data("id") : null;
+
+                t.each(function () {
+                    var e = jQuery(this).data("id");
+                    e != o && (i.push(e), jQuery('[name="audiences"]').val(i.join(",")));
+                });
+                a.each(function () {
+                    var e = jQuery(this).data("id");
+                    e != o && (n.push(e), jQuery('[name="topics"]').val(n.join(",")));
+                });
+                s.each(function () {
+                    var e = jQuery(this).data("id");
+                    e != o && (c.push(e), jQuery('[name="states"]').val(c.join(",")));
+                });
+                jQuery(this)
+                    .find("input[type=hidden]")
+                    .each(function () {
+                        "" == jQuery(this).val() && jQuery(this).remove();
+                    });
+        });
+
+        setTimeout(function(){
+           jQuery('#footerLogo').removeAttr("width");
+        }, 3000);
+    });
+});</script>
+
+
+
+</body></html>

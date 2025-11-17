@@ -1,0 +1,456 @@
+{
+  "domain": "bizjournals.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:22.573591",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 55,
+      "frequency": 55.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "inline-block",
+      "count": 139
+    },
+    {
+      "class": "secondary",
+      "count": 72
+    },
+    {
+      "class": "text-base",
+      "count": 55
+    },
+    {
+      "class": "pb-4",
+      "count": 47
+    },
+    {
+      "class": "text-sm",
+      "count": 36
+    },
+    {
+      "class": "content",
+      "count": 32
+    },
+    {
+      "class": "border",
+      "count": 25
+    },
+    {
+      "class": "primary",
+      "count": 25
+    },
+    {
+      "class": "flex",
+      "count": 23
+    },
+    {
+      "class": "iconify",
+      "count": 21
+    },
+    {
+      "class": "pointer-events-none",
+      "count": 21
+    },
+    {
+      "class": "py-2",
+      "count": 20
+    },
+    {
+      "class": "font-bold",
+      "count": 18
+    },
+    {
+      "class": "border-gray-300",
+      "count": 16
+    },
+    {
+      "class": "px-2",
+      "count": 15
+    },
+    {
+      "class": "print:hidden",
+      "count": 14
+    },
+    {
+      "class": "sm:text-xs",
+      "count": 14
+    },
+    {
+      "class": "absolute",
+      "count": 13
+    },
+    {
+      "class": "items-center",
+      "count": 13
+    },
+    {
+      "class": "uppercase",
+      "count": 13
+    },
+    {
+      "class": "hidden",
+      "count": 13
+    },
+    {
+      "class": "lg:py-1",
+      "count": 13
+    },
+    {
+      "class": "lg:leading-none",
+      "count": 13
+    },
+    {
+      "class": "relative",
+      "count": 12
+    },
+    {
+      "class": "shadow",
+      "count": 12
+    },
+    {
+      "class": "rounded-sm",
+      "count": 12
+    },
+    {
+      "class": "sr-only",
+      "count": 12
+    },
+    {
+      "class": "hover:no-underline",
+      "count": 11
+    },
+    {
+      "class": "px-3",
+      "count": 10
+    },
+    {
+      "class": "transition-all",
+      "count": 10
+    },
+    {
+      "class": "hover:shadow-md",
+      "count": 10
+    },
+    {
+      "class": "cursor-pointer",
+      "count": 10
+    },
+    {
+      "class": "hover:text-primary",
+      "count": 10
+    },
+    {
+      "class": "flex-col",
+      "count": 9
+    },
+    {
+      "class": "pt-1.5",
+      "count": 9
+    },
+    {
+      "class": "pb-1",
+      "count": 9
+    },
+    {
+      "class": "shadow-none",
+      "count": 9
+    },
+    {
+      "class": "hover:border-primary",
+      "count": 9
+    },
+    {
+      "class": "space-x-1",
+      "count": 9
+    },
+    {
+      "class": "leading-6",
+      "count": 9
+    },
+    {
+      "class": "-mx-1",
+      "count": 9
+    },
+    {
+      "class": "h-full",
+      "count": 8
+    },
+    {
+      "class": "sticky",
+      "count": 7
+    },
+    {
+      "class": "text-xs",
+      "count": 7
+    },
+    {
+      "class": "text-center",
+      "count": 7
+    },
+    {
+      "class": "flex-wrap",
+      "count": 7
+    },
+    {
+      "class": "space-y-4",
+      "count": 7
+    },
+    {
+      "class": "w-full",
+      "count": 6
+    },
+    {
+      "class": "bg-white",
+      "count": 6
+    },
+    {
+      "class": "overflow-hidden",
+      "count": 6
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "ConsentManagerScript",
+      "count": 1
+    },
+    {
+      "id": "fides-overlay",
+      "count": 1
+    },
+    {
+      "id": "fides-overlay-wrapper",
+      "count": 1
+    },
+    {
+      "id": "fides-modal",
+      "count": 1
+    },
+    {
+      "id": "fides-consent-content",
+      "count": 1
+    },
+    {
+      "id": "fides-modal-title",
+      "count": 1
+    },
+    {
+      "id": "sales_sharing_targeted_advertising_gpp_us_national",
+      "count": 1
+    },
+    {
+      "id": "fides-button-group",
+      "count": 1
+    },
+    {
+      "id": "fides-save-button",
+      "count": 1
+    },
+    {
+      "id": "fides-privacy-policy-link",
+      "count": 1
+    },
+    {
+      "id": "fides-overlay-live-region",
+      "count": 1
+    },
+    {
+      "id": "__nuxt",
+      "count": 1
+    },
+    {
+      "id": "NavTop",
+      "count": 1
+    },
+    {
+      "id": "CxSlot_site:topbar:marketing",
+      "count": 1
+    },
+    {
+      "id": "ariaSelectCityDropdown",
+      "count": 1
+    },
+    {
+      "id": "MarketBranding",
+      "count": 1
+    },
+    {
+      "id": "MarketPromo",
+      "count": 1
+    },
+    {
+      "id": "MarketSubOffer",
+      "count": 1
+    },
+    {
+      "id": "CxSlot_site:marketingnavsuboffer",
+      "count": 1
+    },
+    {
+      "id": "SubOfferBtn",
+      "count": 1
+    },
+    {
+      "id": "MarketLinks",
+      "count": 1
+    },
+    {
+      "id": "MarketSearch",
+      "count": 1
+    },
+    {
+      "id": "MarketSearchDropDownTrigger",
+      "count": 1
+    },
+    {
+      "id": "PrintSlug",
+      "count": 1
+    },
+    {
+      "id": "ArticleHeader",
+      "count": 1
+    },
+    {
+      "id": "headlessui-popover-button-v-0-0-0-0-0",
+      "count": 1
+    },
+    {
+      "id": "headlessui-focus-sentinel-v-0-0-0-0-1",
+      "count": 1
+    },
+    {
+      "id": "headlessui-popover-overlay-v-0-0-0-0-2",
+      "count": 1
+    },
+    {
+      "id": "headlessui-popover-panel-v-0-0-0-0-3",
+      "count": 1
+    },
+    {
+      "id": "headlessui-focus-sentinel-before-v-0-0-0-0-4",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

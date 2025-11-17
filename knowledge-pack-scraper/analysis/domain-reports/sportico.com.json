@@ -1,0 +1,456 @@
+{
+  "domain": "sportico.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:25.151074",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 5,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 10,
+      "frequency": 10.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 14,
+      "frequency": 14.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 271,
+      "frequency": 271.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 69,
+      "frequency": 69.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 35,
+      "frequency": 35.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "lrv-a-unstyle-link",
+      "count": 134
+    },
+    {
+      "class": "lrv-u-display-block",
+      "count": 118
+    },
+    {
+      "class": "//",
+      "count": 111
+    },
+    {
+      "class": "c-link",
+      "count": 111
+    },
+    {
+      "class": "lrv-u-flex",
+      "count": 71
+    },
+    {
+      "class": "lrv-u-border-color-grey-light",
+      "count": 67
+    },
+    {
+      "class": "lrv-u-padding-tb-025",
+      "count": 53
+    },
+    {
+      "class": "o-nav__list-item",
+      "count": 51
+    },
+    {
+      "class": "lrv-u-padding-lr-1",
+      "count": 50
+    },
+    {
+      "class": "lrv-u-border-b-1",
+      "count": 50
+    },
+    {
+      "class": "u-border-b-0@desktop",
+      "count": 47
+    },
+    {
+      "class": "lrv-a-screen-reader-only",
+      "count": 46
+    },
+    {
+      "class": "lrv-u-font-weight-bold",
+      "count": 45
+    },
+    {
+      "class": "u-padding-a-1@desktop-max",
+      "count": 43
+    },
+    {
+      "class": "lrv-u-color-grey-light:hover",
+      "count": 41
+    },
+    {
+      "class": "lrv-u-color-white:hover",
+      "count": 39
+    },
+    {
+      "class": "lrv-u-align-items-center",
+      "count": 37
+    },
+    {
+      "class": "mega-menu__child-list-item",
+      "count": 35
+    },
+    {
+      "class": "lrv-u-font-size-18@desktop",
+      "count": 34
+    },
+    {
+      "class": "lrv-u-padding-tb-050",
+      "count": 33
+    },
+    {
+      "class": "a-font-primary-medium-s",
+      "count": 31
+    },
+    {
+      "class": "lrv-u-color-white",
+      "count": 29
+    },
+    {
+      "class": "c-icon",
+      "count": 28
+    },
+    {
+      "class": "lrv-u-font-size-12",
+      "count": 28
+    },
+    {
+      "class": "lrv-u-width-100p",
+      "count": 27
+    },
+    {
+      "class": "u-display-inline-flex",
+      "count": 25
+    },
+    {
+      "class": "lrv-u-whitespace-nowrap",
+      "count": 23
+    },
+    {
+      "class": "lrv-a-unstyle-list",
+      "count": 23
+    },
+    {
+      "class": "lrv-u-color-grey-dark:hover",
+      "count": 23
+    },
+    {
+      "class": "lrv-a-hover-effect",
+      "count": 22
+    },
+    {
+      "class": "lrv-u-color-grey-medium-dark",
+      "count": 22
+    },
+    {
+      "class": "larva",
+      "count": 21
+    },
+    {
+      "class": "lrv-u-color-grey-light",
+      "count": 21
+    },
+    {
+      "class": "lrv-u-background-color-brand-primary:hover",
+      "count": 21
+    },
+    {
+      "class": "lrv-u-height-100p",
+      "count": 20
+    },
+    {
+      "class": "lrv-u-text-transform-uppercase",
+      "count": 19
+    },
+    {
+      "class": "lrv-u-color-grey",
+      "count": 19
+    },
+    {
+      "class": "lrv-u-padding-b-050",
+      "count": 19
+    },
+    {
+      "class": "lrv-u-height-16",
+      "count": 18
+    },
+    {
+      "class": "c-title",
+      "count": 18
+    },
+    {
+      "class": "st0",
+      "count": 18
+    },
+    {
+      "class": "lrv-u-margin-lr-auto",
+      "count": 18
+    },
+    {
+      "class": "lrv-a-unstyle-button",
+      "count": 17
+    },
+    {
+      "class": "lrv-u-flex-direction-column",
+      "count": 16
+    },
+    {
+      "class": "paragraph",
+      "count": 15
+    },
+    {
+      "class": "lrv-a-font-body-m",
+      "count": 15
+    },
+    {
+      "class": "lrv-u-width-16",
+      "count": 14
+    },
+    {
+      "class": "lrv-a-hidden",
+      "count": 13
+    },
+    {
+      "class": "lrv-js-MobileHeightToggle",
+      "count": 13
+    },
+    {
+      "class": "lrv-js-MobileHeightToggle-trigger",
+      "count": 13
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "Layer_1",
+      "count": 3
+    },
+    {
+      "id": "Symbols",
+      "count": 3
+    },
+    {
+      "id": "Logo-_x2F_-Sportico",
+      "count": 3
+    },
+    {
+      "id": "sportico-logo",
+      "count": 3
+    },
+    {
+      "id": "Fill-1",
+      "count": 3
+    },
+    {
+      "id": "Group-5",
+      "count": 3
+    },
+    {
+      "id": "Adobe_OpacityMaskFilter",
+      "count": 3
+    },
+    {
+      "id": "Fill-3",
+      "count": 3
+    },
+    {
+      "id": "Fill-6",
+      "count": 3
+    },
+    {
+      "id": "Fill-8",
+      "count": 3
+    },
+    {
+      "id": "Group-12",
+      "count": 3
+    },
+    {
+      "id": "Adobe_OpacityMaskFilter_1_",
+      "count": 3
+    },
+    {
+      "id": "Fill-10",
+      "count": 3
+    },
+    {
+      "id": "Fill-13",
+      "count": 3
+    },
+    {
+      "id": "Fill-15",
+      "count": 3
+    },
+    {
+      "id": "Fill-16",
+      "count": 3
+    },
+    {
+      "id": "all-css-0",
+      "count": 2
+    },
+    {
+      "id": "cXJsonpCB1script",
+      "count": 1
+    },
+    {
+      "id": "common.inline-inline-css",
+      "count": 1
+    },
+    {
+      "id": "single.inline-inline-css",
+      "count": 1
+    },
+    {
+      "id": "co-authors-plus-coauthors-style-inline-css",
+      "count": 1
+    },
+    {
+      "id": "co-authors-plus-avatar-style-inline-css",
+      "count": 1
+    },
+    {
+      "id": "co-authors-plus-image-style-inline-css",
+      "count": 1
+    },
+    {
+      "id": "cb-carousel-style-inline-css",
+      "count": 1
+    },
+    {
+      "id": "all-css-10",
+      "count": 1
+    },
+    {
+      "id": "jetpack-sharing-buttons-style-inline-css",
+      "count": 1
+    },
+    {
+      "id": "elasticpress-facet-style-inline-css",
+      "count": 1
+    },
+    {
+      "id": "all-css-14",
+      "count": 1
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"comment\"], [id*=\"comment\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

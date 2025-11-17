@@ -1,0 +1,455 @@
+{
+  "domain": "dolmanlaw.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:23.280255",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 5,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 55,
+      "frequency": 55.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 165,
+      "frequency": 165.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 27,
+      "frequency": 27.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-item",
+      "count": 140
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 94
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 94
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 46
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 44
+    },
+    {
+      "class": "menu-item-has-children",
+      "count": 20
+    },
+    {
+      "class": "sub-menu",
+      "count": 20
+    },
+    {
+      "class": "nitro-offscreen",
+      "count": 19
+    },
+    {
+      "class": "wp-block-heading",
+      "count": 18
+    },
+    {
+      "class": "nitro-lazy",
+      "count": 17
+    },
+    {
+      "class": "bi",
+      "count": 11
+    },
+    {
+      "class": "gfield_required",
+      "count": 10
+    },
+    {
+      "class": "wp-block-list",
+      "count": 9
+    },
+    {
+      "class": "gform_hidden",
+      "count": 9
+    },
+    {
+      "class": "gfield",
+      "count": 8
+    },
+    {
+      "class": "lazyloaded",
+      "count": 7
+    },
+    {
+      "class": "container",
+      "count": 7
+    },
+    {
+      "class": "mt-2",
+      "count": 7
+    },
+    {
+      "class": "bi-arrow-right",
+      "count": 7
+    },
+    {
+      "class": "field_sublabel_below",
+      "count": 7
+    },
+    {
+      "class": "field_description_below",
+      "count": 7
+    },
+    {
+      "class": "field_validation_below",
+      "count": 7
+    },
+    {
+      "class": "gfield_visibility_visible",
+      "count": 7
+    },
+    {
+      "class": "gfield_label",
+      "count": 7
+    },
+    {
+      "class": "gform-field-label",
+      "count": 7
+    },
+    {
+      "class": "ginput_container",
+      "count": 7
+    },
+    {
+      "class": "section-title",
+      "count": 6
+    },
+    {
+      "class": "button",
+      "count": 6
+    },
+    {
+      "class": "widget",
+      "count": 6
+    },
+    {
+      "class": "widget_block",
+      "count": 6
+    },
+    {
+      "class": "gfield--no-description",
+      "count": 6
+    },
+    {
+      "class": "hidden_label",
+      "count": 6
+    },
+    {
+      "class": "cky-btn",
+      "count": 6
+    },
+    {
+      "class": "gfield_contains_required",
+      "count": 5
+    },
+    {
+      "class": "gfield_required_text",
+      "count": 5
+    },
+    {
+      "class": "large",
+      "count": 5
+    },
+    {
+      "class": "cky-accordion",
+      "count": 5
+    },
+    {
+      "class": "cky-accordion-item",
+      "count": 5
+    },
+    {
+      "class": "cky-accordion-chevron",
+      "count": 5
+    },
+    {
+      "class": "cky-chevron-right",
+      "count": 5
+    },
+    {
+      "class": "cky-accordion-header-wrapper",
+      "count": 5
+    },
+    {
+      "class": "cky-accordion-header",
+      "count": 5
+    },
+    {
+      "class": "cky-accordion-btn",
+      "count": 5
+    },
+    {
+      "class": "cky-always-active",
+      "count": 5
+    },
+    {
+      "class": "cky-switch",
+      "count": 5
+    },
+    {
+      "class": "cky-accordion-header-des",
+      "count": 5
+    },
+    {
+      "class": "cky-accordion-body",
+      "count": 5
+    },
+    {
+      "class": "cky-audit-table",
+      "count": 5
+    },
+    {
+      "class": "cky-empty-cookies-text",
+      "count": 5
+    },
+    {
+      "class": "posted-on",
+      "count": 4
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "false",
+      "count": 6
+    },
+    {
+      "id": "fb416876613b415b533254085399092c-1",
+      "count": 3
+    },
+    {
+      "id": "pys-version-script",
+      "count": 3
+    },
+    {
+      "id": "16490a125afdb481af280b039d8ef6bf-1",
+      "count": 3
+    },
+    {
+      "id": "cookie-law-info-js-extra",
+      "count": 3
+    },
+    {
+      "id": "cookie-law-info-js",
+      "count": 3
+    },
+    {
+      "id": "jquery-core-js-extra",
+      "count": 3
+    },
+    {
+      "id": "rioch-js",
+      "count": 3
+    },
+    {
+      "id": "simplyconvert_embed-js-before",
+      "count": 3
+    },
+    {
+      "id": "simplyconvert_embed-js",
+      "count": 3
+    },
+    {
+      "id": "search-filter-plugin-build-js-extra",
+      "count": 3
+    },
+    {
+      "id": "search-filter-plugin-build-js",
+      "count": 3
+    },
+    {
+      "id": "js-cookie-pys-js",
+      "count": 3
+    },
+    {
+      "id": "js-tld-js",
+      "count": 3
+    },
+    {
+      "id": "pys-js-extra",
+      "count": 3
+    },
+    {
+      "id": "pys-js",
+      "count": 3
+    },
+    {
+      "id": "a19002d8042c8639845e2a875969c0ab-1",
+      "count": 3
+    },
+    {
+      "id": "7c8dadaa465f6268f6ac8b084db7ac1c-1",
+      "count": 3
+    },
+    {
+      "id": "262ee1809ab1a40dbba155e32b8e3362-1",
+      "count": 3
+    },
+    {
+      "id": "456fc4151961df8e8ba907081cf60ed1-1",
+      "count": 3
+    },
+    {
+      "id": "1ade14215ca554b32dcec585e907e956-1",
+      "count": 3
+    },
+    {
+      "id": "a0914efaf21b210fb4645b5ed92a0143-1",
+      "count": 3
+    },
+    {
+      "id": "afe4ab0b98dd63a0a958671b97761967-1",
+      "count": 3
+    },
+    {
+      "id": "1ae54879788e3ca14ffb6f8d9e50d473-1",
+      "count": 3
+    },
+    {
+      "id": "dd84f7dc35e1d44673bc0acfa3f6cfd9-1",
+      "count": 3
+    },
+    {
+      "id": "dc9e9251a9d46076e1ad878f935c53a9-1",
+      "count": 3
+    },
+    {
+      "id": "a28ba7d19955f9a723db30797ad389c6-1",
+      "count": 3
+    },
+    {
+      "id": "054dd9efe9cae34c2741af23ae28f8be-1",
+      "count": 3
+    },
+    {
+      "id": "c364d3672444756fe8b3aa55372cdfeb-1",
+      "count": 3
+    },
+    {
+      "id": "f7c77ab2022772e17edd517dfab38298-1",
+      "count": 3
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

@@ -1,0 +1,1161 @@
+<!DOCTYPE html><html lang="en-US"><head><style type="text/css">span.iconify, i.iconify, iconify-icon { display: inline-block; width: 1em; }</style><meta charset="utf-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="1.2.6",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this.t.bind(this),this.touchStartHandler=this.i.bind(this),this.touchMoveHandler=this.o.bind(this),this.touchEndHandler=this.h.bind(this),this.clickHandler=this.u.bind(this),this.interceptedClicks=[],this.interceptedClickListeners=[],this.l(this),window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.everythingLoaded&&this.m()})),this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",(t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))})),document.addEventListener("DOMContentLoaded",(()=>{this.k()})),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}p(t){document.hidden?t.t():(this.triggerEvents.forEach((e=>window.addEventListener(e,t.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler))}_(){this.triggerEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}i(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this.L(t.target,!0),this.S(t.target,"onclick","rocket-onclick"),this.C())}o(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.S(t.target,"rocket-onclick","onclick"),this.M()}h(){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}u(t){t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.S(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this.M()}O(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))}))}l(t){EventTarget.prototype.addEventListenerWPRocketBase=EventTarget.prototype.addEventListener,EventTarget.prototype.addEventListener=function(e,i,o){"click"!==e||t.windowLoaded||i===t.clickHandler||t.interceptedClickListeners.push({target:this,func:i,options:o}),(this||window).addEventListenerWPRocketBase(e,i,o)}}L(t,e){this.interceptedClickListeners.forEach((i=>{i.target===t&&(e?t.removeEventListener("click",i.func,i.options):t.addEventListener("click",i.func,i.options))})),t.parentNode!==document.documentElement&&this.L(t.parentNode,e)}D(){return new Promise((t=>{this.P?this.M=t:t()}))}C(){this.P=!0}M(){this.P=!1}S(t,e,i){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(i,event.target.getAttribute(e)),event.target.removeAttribute(e))}t(){this._(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this.R.bind(this)):this.R()}k(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){0===i.indexOf("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.T(t,"preconnect")}async R(){this.lastBreath=Date.now(),this.j(this),this.F(this),this.I(),this.W(),this.q(),await this.A(this.delayedScripts.normal),await this.A(this.delayedScripts.defer),await this.A(this.delayedScripts.async);try{await this.U(),await this.H(this),await this.J()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.D().then((()=>{this.O()})),this.N()}W(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async B(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),i.hasAttribute("src")?(i.addEventListener("load",o),i.addEventListener("error",(function(){i.setAttribute("data-rocket-status","failed-network"),e()})),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o),t.addEventListener("error",(i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: data-uri blocked by CSP -> fallback"),t.removeAttribute("src"),this.B(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())})),s?(t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}}));t.setAttribute("data-rocket-status","skipped")}async A(t){const e=t.shift();return e&&e.isConnected?(await this.B(e),this.A(t)):Promise.resolve()}q(){this.T([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}T(t,e){var i=document.createDocumentFragment();t.forEach((t=>{const o=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(o&&!o.startsWith("data:")){const s=document.createElement("link");s.href=o,s.rel=e,"preconnect"!==e&&(s.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(s.crossOrigin=!0),t.crossOrigin&&(s.crossOrigin=t.crossOrigin),t.integrity&&(s.integrity=t.integrity),i.appendChild(s),this.trash.push(s)}})),document.head.appendChild(i)}j(t){let e={};function i(i,o){return e[o].eventsToRewrite.indexOf(i)>=0&&!t.everythingLoaded?"rocket-"+i:i}function o(t,o){!function(t){e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(o)}function s(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o||function(){},set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}o(document,"DOMContentLoaded"),o(window,"DOMContentLoaded"),o(window,"load"),o(window,"pageshow"),o(document,"readystatechange"),s(document,"onreadystatechange"),s(window,"onload"),s(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}F(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){function s(t){const e=o.fn[t];o.fn[t]=o.fn.init.prototype[t]=function(){return this[0]===window&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),e.apply(this,arguments),this}}o&&o.fn&&!t.allJQueries.includes(o)&&(o.fn.ready=o.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(o):document.addEventListener("rocket-DOMContentLoaded",(()=>e.bind(document)(o))),o([])},s("on"),s("one"),t.allJQueries.push(o)),e=o}o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}async H(t){const e=document.querySelector("script[data-webpack]");e&&(await async function(){return new Promise((t=>{e.addEventListener("load",t),e.addEventListener("error",t)}))}(),await t.K(),await t.H(t))}async U(){this.domReadyFired=!0;try{document.readyState="interactive"}catch(t){}await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}async J(){try{document.readyState="complete"}catch(t){}await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted}),this.windowLoaded=!0}m(){document.onreadystatechange&&document.onreadystatechange(),window.onload&&window.onload(),window.onpageshow&&window.onpageshow({persisted:this.persisted})}I(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript;i||console.error("WPRocket unable to document.write this: "+e);const o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async G(){Date.now()-this.lastBreath>45&&(await this.K(),this.lastBreath=Date.now())}async K(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}N(){this.trash.forEach((t=>t.remove()))}static run(){const t=new RocketLazyLoadScripts;t.p(t)}}RocketLazyLoadScripts.run()})();</script>
+        <meta name="ahrefs-site-verification" content="72ab37f7cd85936f177897278d679f0e9e90ca20bcc0d0716f413f3d600da4d0">
+        <meta name="facebook-domain-verification" content="9ddnsmkxv9iydpl8hv7zs6a90a3hof">
+
+      <!-- Required meta tags -->
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!--<link rel="alternate" href="https://altrainsurance.com/california-requirements-for-home-insurance/" hreflang="en-us" />-->
+<!--<link rel="alternate" href="https://" hreflang="en-es" />-->
+<link rel="alternate" href="https://altrainsurance.com/california-requirements-for-home-insurance/" hreflang="x-default">
+      <!-- Bootstrap CSS -->
+      
+      
+       
+              
+      
+      <script src="https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/js/iconify.min.js" data-rocket-defer="" defer=""></script>
+  
+  <meta name="google-site-verification" content="PRSiIMaWIy74Vl3jWrPHwYn86BZCQiAeHYLVpHP9JMo">
+  
+      <style></style>
+      
+      
+
+<!-- Google Tag Manager -->
+<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PDMN9XN');</script>
+<!-- End Google Tag Manager -->
+
+
+<!--Call Tracking-->
+<script type="rocketlazyloadscript" async="" data-rocket-src="//181279.tctm.co/t.js"></script>
+
+<!-- Meta Pixel Code -->
+
+<script type="rocketlazyloadscript">
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2546966592224855');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2546966592224855&ev=PageView&noscript=1" /></noscript>
+<!-- End Meta Pixel Code -->
+
+<script type="rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
+  jQuery( "#category-0 option:first-child" ).attr("disabled","disabled");
+});</script>
+
+
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">var cbuser = {name: '', email: '', message: ''}, access_token = 'QdtsVzKkacI6vjnEXMHG', cburl = '//app.engyj.com/chat/';document.write('<script type="text/javascript" src="' + cburl + 'assets/cmodule-chat/js/chatbull-init.js"></' + 'script>');</script>
+          <script type="rocketlazyloadscript">(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<style></style>
+	
+	<!-- This site is optimized with the Yoast SEO plugin v26.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>What Type of Home Insurance Is Required in California?</title><link rel="preload" data-rocket-preload="" as="font" href="https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/fonts/Poppins-Medium.ttf" crossorigin=""><link rel="preload" data-rocket-preload="" as="font" href="https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/fonts/Poppins-Regular.ttf" crossorigin=""><link rel="preload" data-rocket-preload="" as="font" href="https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/fonts/fontawesome-webfont.woff2?v=4.7.0" crossorigin=""><style id="wpr-usedcss">i.iconify,iconify-icon,span.iconify{display:inline-block;width:1em}:root{--blue:#43a9fe;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange:#fd7e14;--yellow:#ffc107;--green:#28a745;--teal:#20c997;--cyan:#17a2b8;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#43a9fe;--secondary:#6c757d;--success:#28a745;--info:#17a2b8;--warning:#ffc107;--danger:#dc3545;--light:#f8f9fa;--dark:#343a40;--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px}*,::after,::before{box-sizing:border-box}html{line-height:1.15;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}article,aside,footer,header,main,nav,section{display:block}body{margin:0;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}[tabindex="-1"]:focus{outline:0!important}hr{box-sizing:content-box;height:0;overflow:visible}h1,h2,h3,h4,h5{margin-top:0;margin-bottom:.5rem}p{margin-top:0;margin-bottom:1rem}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ul{margin-top:0;margin-bottom:1rem}ul ul{margin-bottom:0}dd{margin-bottom:.5rem;margin-left:0}b,strong{font-weight:bolder}a{color:#43a9fe;text-decoration:none;background-color:transparent}a:hover{color:#0056b3;text-decoration:underline}a:not([href]):not([tabindex]){color:inherit;text-decoration:none}a:not([href]):not([tabindex]):focus,a:not([href]):not([tabindex]):hover{color:inherit;text-decoration:none}a:not([href]):not([tabindex]):focus{outline:0}img{vertical-align:middle;border-style:none}svg{overflow:hidden;vertical-align:middle}table{border-collapse:collapse}label{display:inline-block;margin-bottom:.5rem}button{border-radius:0}button:focus{outline:dotted 1px;outline:-webkit-focus-ring-color auto 5px}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=date],input[type=month],input[type=time]{-webkit-appearance:listbox}textarea{overflow:auto;resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{display:block;width:100%;max-width:100%;padding:0;margin-bottom:.5rem;font-size:1.5rem;line-height:inherit;color:inherit;white-space:normal}progress{vertical-align:baseline}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:none}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}template{display:none}[hidden]{display:none!important}.h2,.h3,h1,h2,h3,h4,h5{font-family:Poppins-Regular!important;margin-bottom:.5rem;font-family:inherit;font-weight:500;line-height:1.2;color:inherit}h1{font-size:2.5rem}.h2,h2{font-size:2rem}.h3,h3{font-size:1.75rem}h4{font-size:1.5rem}h5{font-size:1.25rem}hr{margin-top:1rem;margin-bottom:1rem;border:0;border-top:1px solid rgba(0,0,0,.1)}.list-unstyled{padding-left:0;list-style:none}.list-inline{padding-left:0;list-style:none}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}.container-fluid{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col-md-3,.col-md-4,.col-md-8{position:relative;width:100%;padding-right:15px;padding-left:15px}@media (min-width:768px){.col-md-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-md-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-md-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}}.table{width:100%;margin-bottom:1rem;background-color:transparent}.table td{padding:.75rem;vertical-align:top;border-top:1px solid #dee2e6}.table tbody+tbody{border-top:2px solid #dee2e6}.table .table{background-color:#fff}.form-control{display:block;width:100%;height:calc(2.25rem + 2px);padding:.375rem .75rem;font-size:1rem;font-weight:400;line-height:1.5;color:#495057;background-color:#fff;background-clip:padding-box;border:1px solid #ced4da;border-radius:.25rem;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out}@media screen and (prefers-reduced-motion:reduce){.form-control{transition:none}}.form-control::-ms-expand{background-color:transparent;border:0}.form-control:focus{color:#495057;background-color:#fff;border-color:#80bdff;outline:0;box-shadow:0 0 0 .2rem rgba(0,123,255,.25)}.form-control::-webkit-input-placeholder{color:#6c757d;opacity:1}.form-control::-moz-placeholder{color:#6c757d;opacity:1}.form-control:-ms-input-placeholder{color:#6c757d;opacity:1}.form-control::-ms-input-placeholder{color:#6c757d;opacity:1}.form-control::placeholder{color:#6c757d;opacity:1}.form-control:disabled,.form-control[readonly]{background-color:#e9ecef;opacity:1}select.form-control:focus::-ms-value{color:#495057;background-color:#fff}select.form-control[multiple],select.form-control[size]{height:auto}textarea.form-control{height:auto}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}@media screen and (prefers-reduced-motion:reduce){.btn{transition:none}}.btn:hover{color:#212529;text-decoration:none}.btn.focus,.btn:focus{outline:0;box-shadow:0 0 0 .2rem rgba(0,123,255,.25)}.btn.disabled,.btn:disabled{opacity:.65}.btn:not(:disabled):not(.disabled){cursor:pointer}a.btn.disabled,fieldset:disabled a.btn{pointer-events:none}.btn-primary{color:#fff;background-color:#43a9fe;border-color:#43a9fe}.btn-primary:hover{color:#fff;background-color:#0069d9;border-color:#0062cc}.btn-primary.focus,.btn-primary:focus{box-shadow:0 0 0 .2rem rgba(38,143,255,.5)}.btn-primary.disabled,.btn-primary:disabled{color:#fff;background-color:#43a9fe;border-color:#43a9fe}.btn-primary:not(:disabled):not(.disabled).active,.btn-primary:not(:disabled):not(.disabled):active,.show>.btn-primary.dropdown-toggle{color:#fff;background-color:#0062cc;border-color:#005cbf}.btn-primary:not(:disabled):not(.disabled).active:focus,.btn-primary:not(:disabled):not(.disabled):active:focus,.show>.btn-primary.dropdown-toggle:focus{box-shadow:0 0 0 .2rem rgba(38,143,255,.5)}.btn-block{display:block;width:100%}.btn-block+.btn-block{margin-top:.5rem}input[type=button].btn-block,input[type=reset].btn-block,input[type=submit].btn-block{width:100%}.fade{transition:opacity .15s linear}@media screen and (prefers-reduced-motion:reduce){.fade{transition:none}}.fade:not(.show){opacity:0}.collapse:not(.show){display:none}.collapsing{position:relative;height:0;overflow:hidden;transition:height .35s ease}.dropdown,.dropleft,.dropright,.dropup{position:relative}.dropdown-toggle::after{display:inline-block;margin-left:.255em;vertical-align:.255em;content:"";border-top:.3em solid;border-right:.3em solid transparent;border-bottom:0;border-left:.3em solid transparent}.dropdown-toggle:empty::after{margin-left:0}.dropdown-menu{position:absolute;top:100%;left:0;z-index:1000;display:none;float:left;min-width:10rem;padding:.5rem 0;margin:.125rem 0 0;font-size:1rem;color:#fff;text-align:left;list-style:none;background-color:#000;background-clip:padding-box;border:1px solid rgba(0,0,0,.15);border-radius:.25rem}.dropdown-menu-right{right:0;left:auto}.dropup .dropdown-menu{top:auto;bottom:100%;margin-top:0;margin-bottom:.125rem}.dropup .dropdown-toggle::after{display:inline-block;margin-left:.255em;vertical-align:.255em;content:"";border-top:0;border-right:.3em solid transparent;border-bottom:.3em solid;border-left:.3em solid transparent}.dropup .dropdown-toggle:empty::after{margin-left:0}.dropright .dropdown-menu{top:0;right:auto;left:100%;margin-top:0;margin-left:.125rem}.dropright .dropdown-toggle::after{display:inline-block;margin-left:.255em;vertical-align:.255em;content:"";border-top:.3em solid transparent;border-right:0;border-bottom:.3em solid transparent;border-left:.3em solid}.dropright .dropdown-toggle:empty::after{margin-left:0}.dropright .dropdown-toggle::after{vertical-align:0}.dropleft .dropdown-menu{top:0;right:100%;left:auto;margin-top:0;margin-right:.125rem}.dropleft .dropdown-toggle::after{display:inline-block;margin-left:.255em;vertical-align:.255em;content:""}.dropleft .dropdown-toggle::after{display:none}.dropleft .dropdown-toggle::before{display:inline-block;margin-right:.255em;vertical-align:.255em;content:"";border-top:.3em solid transparent;border-right:.3em solid;border-bottom:.3em solid transparent}.dropleft .dropdown-toggle:empty::after{margin-left:0}.dropleft .dropdown-toggle::before{vertical-align:0}.dropdown-menu[x-placement^=bottom],.dropdown-menu[x-placement^=left],.dropdown-menu[x-placement^=right],.dropdown-menu[x-placement^=top]{right:auto;bottom:auto}.dropdown-item{display:block;width:100%;padding:.25rem 1.5rem;clear:both;font-weight:400;color:#fff;text-align:inherit;white-space:nowrap;background-color:transparent;border:0}.dropdown-item:first-child{border-top-left-radius:calc(.25rem - 1px);border-top-right-radius:calc(.25rem - 1px)}.dropdown-item:last-child{border-bottom-right-radius:calc(.25rem - 1px);border-bottom-left-radius:calc(.25rem - 1px)}.dropdown-item:focus,.dropdown-item:hover{color:#16181b;text-decoration:none;background-color:#f8f9fa}.dropdown-item.active,.dropdown-item:active{color:#fff;text-decoration:none;background-color:#43a9fe}.dropdown-item.disabled,.dropdown-item:disabled{color:#6c757d;pointer-events:none;background-color:transparent}.dropdown-menu.show{display:block}.nav-link{display:block;padding:.5rem 1rem}.nav-link:focus,.nav-link:hover{text-decoration:none}.nav-link.disabled{color:#6c757d;pointer-events:none;cursor:default}.navbar{position:relative;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between;padding:.5rem 1rem}.navbar>.container,.navbar>.container-fluid{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between}.navbar-brand{display:inline-block;padding-top:.3125rem;padding-bottom:.3125rem;margin-right:1rem;font-size:1.25rem;line-height:inherit;white-space:nowrap}.navbar-brand:focus,.navbar-brand:hover{text-decoration:none}.navbar-nav{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;padding-left:0;margin-bottom:0;list-style:none}.navbar-nav .nav-link{padding-right:0;padding-left:0}.navbar-nav .dropdown-menu{position:static;float:none}.navbar-text{display:inline-block;padding-top:.5rem;padding-bottom:.5rem}.navbar-collapse{-ms-flex-preferred-size:100%;flex-basis:100%;-ms-flex-positive:1;flex-grow:1;-ms-flex-align:center;align-items:center}.navbar-toggler{padding:.25rem .75rem;font-size:1.25rem;line-height:1;background-color:transparent;border:1px solid transparent;border-radius:.25rem}.navbar-toggler:focus,.navbar-toggler:hover{text-decoration:none}.navbar-toggler:not(:disabled):not(.disabled){cursor:pointer}.navbar-toggler-icon{display:inline-block;width:1.5em;height:1.5em;vertical-align:middle;content:"";background:center center no-repeat;background-size:100% 100%}@media (max-width:991.98px){.navbar-expand-lg>.container,.navbar-expand-lg>.container-fluid{padding-right:0;padding-left:0}}@media (min-width:992px){.navbar-expand-lg{-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-pack:start;justify-content:flex-start}.navbar-expand-lg .navbar-nav{-ms-flex-direction:row;flex-direction:row}.navbar-expand-lg .navbar-nav .dropdown-menu{position:absolute}.navbar-expand-lg .navbar-nav .nav-link{padding-right:.5rem;padding-left:.5rem}.navbar-expand-lg>.container,.navbar-expand-lg>.container-fluid{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.navbar-expand-lg .navbar-collapse{display:-ms-flexbox!important;display:flex!important;-ms-flex-preferred-size:auto;flex-basis:auto}.navbar-expand-lg .navbar-toggler{display:none}}.navbar-light .navbar-brand{color:#43a9fe}.navbar-light .navbar-brand:focus,.navbar-light .navbar-brand:hover{color:#43a9fe}.navbar-light .navbar-nav .nav-link{color:#fff}.navbar-light .navbar-nav .nav-link:focus,.navbar-light .navbar-nav .nav-link:hover{color:#43a9fe}.navbar-light .navbar-nav .nav-link.disabled{color:rgba(0,0,0,.3)}.navbar-light .navbar-nav .active>.nav-link,.navbar-light .navbar-nav .nav-link.active,.navbar-light .navbar-nav .nav-link.show,.navbar-light .navbar-nav .show>.nav-link{color:#43a9fe}.navbar-light .navbar-toggler{color:rgba(0,0,0,.5);border-color:rgba(0,0,0,.1)}.navbar-light .navbar-toggler-icon{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")}.navbar-light .navbar-text{color:rgba(0,0,0,.5)}.navbar-light .navbar-text a{color:#43a9fe}.navbar-light .navbar-text a:focus,.navbar-light .navbar-text a:hover{color:#43a9fe}.alert{position:relative;padding:.75rem 1.25rem;margin-bottom:1rem;border:1px solid transparent;border-radius:.25rem}.alert-danger{color:#721c24;background-color:#f8d7da;border-color:#f5c6cb}.alert-danger hr{border-top-color:#f1b0b7}.progress{display:-ms-flexbox;display:flex;height:1rem;overflow:hidden;font-size:.75rem;background-color:#e9ecef;border-radius:.25rem}.list-group{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;padding-left:0;margin-bottom:0}.list-group-item{position:relative;display:block;padding:.75rem 1.25rem;margin-bottom:-1px;background-color:#fff;border:1px solid rgba(0,0,0,.125)}.list-group-item:first-child{border-top-left-radius:.25rem;border-top-right-radius:.25rem}.list-group-item:last-child{margin-bottom:0;border-bottom-right-radius:.25rem;border-bottom-left-radius:.25rem}.list-group-item:focus,.list-group-item:hover{z-index:1;text-decoration:none}.list-group-item.disabled,.list-group-item:disabled{color:#6c757d;pointer-events:none;background-color:#fff}.list-group-item.active{z-index:2;color:#fff;background-color:#43a9fe;border-color:#43a9fe}.close{float:right;font-size:1.5rem;font-weight:700;line-height:1;color:#000;text-shadow:0 1px 0 #fff;opacity:.5}.close:hover{color:#000;text-decoration:none}.close:not(:disabled):not(.disabled){cursor:pointer}.close:not(:disabled):not(.disabled):focus,.close:not(:disabled):not(.disabled):hover{opacity:.75}button.close{padding:0;background-color:transparent;border:0;-webkit-appearance:none;-moz-appearance:none;appearance:none}a.close.disabled{pointer-events:none}.toast{max-width:350px;overflow:hidden;font-size:.875rem;background-color:rgba(255,255,255,.85);background-clip:padding-box;border:1px solid rgba(0,0,0,.1);border-radius:.25rem;box-shadow:0 .25rem .75rem rgba(0,0,0,.1);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);opacity:0}.toast:not(:last-child){margin-bottom:.75rem}.toast.showing{opacity:1}.toast.show{display:block;opacity:1}.toast.hide{display:none}.modal-open{overflow:hidden}.modal-open .modal{overflow-x:hidden;overflow-y:auto}.modal{position:fixed;top:0;left:0;z-index:1050;display:none;width:100%;height:100%;overflow:hidden;outline:0}.modal-dialog{position:relative;width:auto;margin:.5rem;pointer-events:none}.modal.fade .modal-dialog{transition:-webkit-transform .3s ease-out;transition:transform .3s ease-out;transition:transform .3s ease-out,-webkit-transform .3s ease-out;-webkit-transform:translate(0,-50px);transform:translate(0,-50px)}@media screen and (prefers-reduced-motion:reduce){.collapsing{transition:none}.modal.fade .modal-dialog{transition:none}}.modal.show .modal-dialog{-webkit-transform:none;transform:none}.modal-backdrop{position:fixed;top:0;left:0;z-index:1040;width:100vw;height:100vh;background-color:#000}.modal-backdrop.fade{opacity:0}.modal-backdrop.show{opacity:.5}.modal-body{position:relative;-ms-flex:1 1 auto;flex:1 1 auto;padding:1rem}.modal-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}@media (min-width:576px){.modal-dialog{max-width:500px;margin:1.75rem auto}}.tooltip{position:absolute;z-index:1070;display:block;margin:0;font-style:normal;font-weight:400;line-height:1.5;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;white-space:normal;line-break:auto;font-size:.875rem;word-wrap:break-word;opacity:0}.tooltip.show{opacity:.9}.tooltip .arrow{position:absolute;display:block;width:.8rem;height:.4rem}.tooltip .arrow::before{position:absolute;content:"";border-color:transparent;border-style:solid}.tooltip-inner{max-width:200px;padding:.25rem .5rem;color:#fff;text-align:center;background-color:#000;border-radius:.25rem}.popover{position:absolute;top:0;left:0;z-index:1060;display:block;max-width:276px;font-style:normal;font-weight:400;line-height:1.5;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;white-space:normal;line-break:auto;font-size:.875rem;word-wrap:break-word;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0,0,0,.2);border-radius:.3rem}.popover .arrow{position:absolute;display:block;width:1rem;height:.5rem;margin:0 .3rem}.popover .arrow::after,.popover .arrow::before{position:absolute;display:block;content:"";border-color:transparent;border-style:solid}.popover-header{padding:.5rem .75rem;margin-bottom:0;font-size:1rem;color:inherit;background-color:#f7f7f7;border-bottom:1px solid #ebebeb;border-top-left-radius:calc(.3rem - 1px);border-top-right-radius:calc(.3rem - 1px)}.popover-header:empty{display:none}.popover-body{padding:.5rem .75rem;color:#212529}.carousel{position:relative}.carousel.pointer-event{-ms-touch-action:pan-y;touch-action:pan-y}.carousel-item{position:relative;display:none;float:left;width:100%;margin-right:-100%;-webkit-backface-visibility:hidden;backface-visibility:hidden;transition:-webkit-transform .6s ease-in-out;transition:transform .6s ease-in-out;transition:transform .6s ease-in-out,-webkit-transform .6s ease-in-out}.carousel-item-next,.carousel-item-prev,.carousel-item.active{display:block}.active.carousel-item-right,.carousel-item-next:not(.carousel-item-left){-webkit-transform:translateX(100%);transform:translateX(100%)}.active.carousel-item-left,.carousel-item-prev:not(.carousel-item-right){-webkit-transform:translateX(-100%);transform:translateX(-100%)}.carousel-indicators{position:absolute;right:0;bottom:0;left:0;z-index:15;display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;padding-left:0;margin-right:15%;margin-left:15%;list-style:none}.carousel-indicators li{box-sizing:content-box;-ms-flex:0 1 auto;flex:0 1 auto;width:30px;height:3px;margin-right:3px;margin-left:3px;text-indent:-999px;cursor:pointer;background-color:#fff;background-clip:padding-box;border-top:10px solid transparent;border-bottom:10px solid transparent;opacity:.5;transition:opacity .6s ease}@media screen and (prefers-reduced-motion:reduce){.carousel-item{transition:none}.carousel-indicators li{transition:none}}.carousel-indicators .active{opacity:1}.bg-dark{background-color:#000!important}a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover{background-color:#1d2124!important}.border{border:1px solid #dee2e6!important}.border-top{border-top:1px solid #dee2e6!important}.d-none{display:none!important}.d-block{display:block!important}@media (min-width:768px){.d-md-none{display:none!important}}@media (min-width:992px){.d-lg-none{display:none!important}.d-lg-block{display:block!important}}.position-static{position:static!important}@supports ((position:-webkit-sticky) or (position:sticky)){.sticky-top{position:-webkit-sticky;position:sticky;top:0;z-index:1020}}.mb-0{margin-bottom:0!important}.mb-3{margin-bottom:1rem!important}.mb-5{margin-bottom:3rem!important}.px-0{padding-right:0!important}.px-0{padding-left:0!important}.pt-4{padding-top:1.5rem!important}.ml-auto{margin-left:auto!important}@media (min-width:576px){.mr-sm-2{margin-right:.5rem!important}}@media (min-width:768px){.my-md-5{margin-top:3rem!important}.my-md-5{margin-bottom:3rem!important}.pt-md-5{padding-top:3rem!important}}.text-center{text-align:center!important}.text-white{color:#fff!important}.text-muted{color:#6c757d!important}.visible{visibility:visible!important}@media print{*,::after,::before{text-shadow:none!important;box-shadow:none!important}a:not(.btn){text-decoration:underline}img,tr{page-break-inside:avoid}h2,h3,p{orphans:3;widows:3}h2,h3{page-break-after:avoid}@page{size:a3}body{min-width:992px!important}.container{min-width:992px!important}.navbar{display:none}.table{border-collapse:collapse!important}.table td{background-color:#fff!important}}.ui-helper-hidden-accessible{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.ui-helper-reset{margin:0;padding:0;border:0;outline:0;line-height:1.3;text-decoration:none;font-size:100%;list-style:none}.ui-helper-clearfix:after,.ui-helper-clearfix:before{content:"";display:table;border-collapse:collapse}.ui-helper-clearfix:after{clear:both}.ui-front{z-index:100}.ui-state-disabled{cursor:default!important;pointer-events:none}.ui-icon{display:inline-block;vertical-align:middle;margin-top:-.25em;position:relative;text-indent:-99999px;overflow:hidden;background-repeat:no-repeat}.ui-widget-icon-block{left:50%;margin-left:-8px;display:block}.ui-widget-overlay{position:fixed;top:0;left:0;width:100%;height:100%}.ui-accordion .ui-accordion-header{display:block;cursor:pointer;position:relative;margin:2px 0 0;padding:.5em .5em .5em .7em;font-size:100%}.ui-accordion .ui-accordion-content{padding:1em 2.2em;border-top:0;overflow:auto}.ui-autocomplete{position:absolute;top:0;left:0;cursor:default}.ui-menu{list-style:none;padding:0;margin:0;display:block;outline:0}.ui-menu .ui-menu{position:absolute}.ui-menu .ui-menu-item{margin:0;cursor:pointer;list-style-image:url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7")}.ui-menu .ui-menu-item-wrapper{position:relative;padding:3px 1em 3px .4em}.ui-menu .ui-menu-divider{margin:5px 0;height:0;font-size:0;line-height:0;border-width:1px 0 0}.ui-menu .ui-state-active,.ui-menu .ui-state-focus{margin:-1px}.ui-menu-icons{position:relative}.ui-menu-icons .ui-menu-item-wrapper{padding-left:2em}.ui-menu .ui-icon{position:absolute;top:0;bottom:0;left:.2em;margin:auto 0}.ui-menu .ui-menu-icon{left:auto;right:0}.ui-button{padding:.4em 1em;display:inline-block;position:relative;line-height:normal;margin-right:.1em;cursor:pointer;vertical-align:middle;text-align:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;overflow:visible}.ui-button,.ui-button:active,.ui-button:hover,.ui-button:link,.ui-button:visited{text-decoration:none}.ui-button-icon-only{width:2em;box-sizing:border-box;text-indent:-9999px;white-space:nowrap}input.ui-button.ui-button-icon-only{text-indent:0}.ui-button-icon-only .ui-icon{position:absolute;top:50%;left:50%;margin-top:-8px;margin-left:-8px}button.ui-button::-moz-focus-inner,input.ui-button::-moz-focus-inner{border:0;padding:0}.ui-controlgroup{vertical-align:middle;display:inline-block}.ui-controlgroup>.ui-controlgroup-item{float:left;margin-left:0;margin-right:0}.ui-controlgroup>.ui-controlgroup-item.ui-visual-focus,.ui-controlgroup>.ui-controlgroup-item:focus{z-index:9999}.ui-controlgroup .ui-controlgroup-label{padding:.4em 1em}.ui-controlgroup .ui-controlgroup-label span{font-size:80%}.ui-checkboxradio-label .ui-icon-background{box-shadow:inset 1px 1px 1px #ccc;border-radius:.12em;border:none}.ui-checkboxradio-radio-label .ui-icon-background{width:16px;height:16px;border-radius:1em;overflow:visible;border:none}.ui-checkboxradio-radio-label.ui-checkboxradio-checked .ui-icon,.ui-checkboxradio-radio-label.ui-checkboxradio-checked:hover .ui-icon{background-image:none;width:8px;height:8px;border-width:4px;border-style:solid}.ui-datepicker{width:17em;padding:.2em .2em 0;display:none}.ui-datepicker .ui-datepicker-next,.ui-datepicker .ui-datepicker-prev{position:absolute;top:2px;width:1.8em;height:1.8em}.ui-datepicker .ui-datepicker-next-hover,.ui-datepicker .ui-datepicker-prev-hover{top:1px}.ui-datepicker .ui-datepicker-prev{left:2px}.ui-datepicker .ui-datepicker-next{right:2px}.ui-datepicker .ui-datepicker-prev-hover{left:1px}.ui-datepicker .ui-datepicker-next-hover{right:1px}.ui-datepicker .ui-datepicker-next span,.ui-datepicker .ui-datepicker-prev span{display:block;position:absolute;left:50%;margin-left:-8px;top:50%;margin-top:-8px}.ui-datepicker table{width:100%;font-size:.9em;border-collapse:collapse;margin:0 0 .4em}.ui-datepicker td{border:0;padding:1px}.ui-datepicker td a,.ui-datepicker td span{display:block;padding:.2em;text-align:right;text-decoration:none}.ui-datepicker.ui-datepicker-multi{width:auto}.ui-datepicker-rtl{direction:rtl}.ui-datepicker-rtl .ui-datepicker-prev{right:2px;left:auto}.ui-datepicker-rtl .ui-datepicker-next{left:2px;right:auto}.ui-datepicker-rtl .ui-datepicker-prev:hover{right:1px;left:auto}.ui-datepicker-rtl .ui-datepicker-next:hover{left:1px;right:auto}.ui-datepicker .ui-icon{display:block;text-indent:-99999px;overflow:hidden;background-repeat:no-repeat;left:.5em;top:.3em}.ui-dialog{position:absolute;top:0;left:0;padding:.2em;outline:0}.ui-dialog .ui-dialog-titlebar{padding:.4em 1em;position:relative}.ui-dialog .ui-dialog-title{float:left;margin:.1em 0;white-space:nowrap;width:90%;overflow:hidden;text-overflow:ellipsis}.ui-dialog .ui-dialog-titlebar-close{position:absolute;right:.3em;top:50%;width:20px;margin:-10px 0 0;padding:1px;height:20px}.ui-dialog .ui-dialog-content{position:relative;border:0;padding:.5em 1em;background:0 0;overflow:auto}.ui-dialog .ui-dialog-buttonpane{text-align:left;border-width:1px 0 0;background-image:none;margin-top:.5em;padding:.3em 1em .5em .4em}.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset{float:right}.ui-dialog .ui-dialog-buttonpane button{margin:.5em .4em .5em 0;cursor:pointer}.ui-dialog .ui-resizable-n{height:2px;top:0}.ui-dialog .ui-resizable-e{width:2px;right:0}.ui-dialog .ui-resizable-s{height:2px;bottom:0}.ui-dialog .ui-resizable-w{width:2px;left:0}.ui-dialog .ui-resizable-ne,.ui-dialog .ui-resizable-nw,.ui-dialog .ui-resizable-se,.ui-dialog .ui-resizable-sw{width:7px;height:7px}.ui-dialog .ui-resizable-se{right:0;bottom:0}.ui-dialog .ui-resizable-sw{left:0;bottom:0}.ui-dialog .ui-resizable-ne{right:0;top:0}.ui-dialog .ui-resizable-nw{left:0;top:0}.ui-draggable .ui-dialog-titlebar{cursor:move}.ui-draggable-handle{-ms-touch-action:none;touch-action:none}.ui-resizable{position:relative}.ui-resizable-handle{position:absolute;font-size:.1px;display:block;-ms-touch-action:none;touch-action:none}.ui-resizable-autohide .ui-resizable-handle{display:none}.ui-resizable-n{cursor:n-resize;height:7px;width:100%;top:-5px;left:0}.ui-resizable-s{cursor:s-resize;height:7px;width:100%;bottom:-5px;left:0}.ui-resizable-e{cursor:e-resize;width:7px;right:-5px;top:0;height:100%}.ui-resizable-w{cursor:w-resize;width:7px;left:-5px;top:0;height:100%}.ui-resizable-se{cursor:se-resize;width:12px;height:12px;right:1px;bottom:1px}.ui-resizable-sw{cursor:sw-resize;width:9px;height:9px;left:-5px;bottom:-5px}.ui-resizable-nw{cursor:nw-resize;width:9px;height:9px;left:-5px;top:-5px}.ui-resizable-ne{cursor:ne-resize;width:9px;height:9px;right:-5px;top:-5px}.ui-progressbar{height:2em;text-align:left;overflow:hidden}.ui-progressbar .ui-progressbar-value{margin:-1px;height:100%}.ui-progressbar .ui-progressbar-overlay{background:url("data:image/gif;base64,R0lGODlhKAAoAIABAAAAAP///yH/C05FVFNDQVBFMi4wAwEAAAAh+QQJAQABACwAAAAAKAAoAAACkYwNqXrdC52DS06a7MFZI+4FHBCKoDeWKXqymPqGqxvJrXZbMx7Ttc+w9XgU2FB3lOyQRWET2IFGiU9m1frDVpxZZc6bfHwv4c1YXP6k1Vdy292Fb6UkuvFtXpvWSzA+HycXJHUXiGYIiMg2R6W459gnWGfHNdjIqDWVqemH2ekpObkpOlppWUqZiqr6edqqWQAAIfkECQEAAQAsAAAAACgAKAAAApSMgZnGfaqcg1E2uuzDmmHUBR8Qil95hiPKqWn3aqtLsS18y7G1SzNeowWBENtQd+T1JktP05nzPTdJZlR6vUxNWWjV+vUWhWNkWFwxl9VpZRedYcflIOLafaa28XdsH/ynlcc1uPVDZxQIR0K25+cICCmoqCe5mGhZOfeYSUh5yJcJyrkZWWpaR8doJ2o4NYq62lAAACH5BAkBAAEALAAAAAAoACgAAAKVDI4Yy22ZnINRNqosw0Bv7i1gyHUkFj7oSaWlu3ovC8GxNso5fluz3qLVhBVeT/Lz7ZTHyxL5dDalQWPVOsQWtRnuwXaFTj9jVVh8pma9JjZ4zYSj5ZOyma7uuolffh+IR5aW97cHuBUXKGKXlKjn+DiHWMcYJah4N0lYCMlJOXipGRr5qdgoSTrqWSq6WFl2ypoaUAAAIfkECQEAAQAsAAAAACgAKAAAApaEb6HLgd/iO7FNWtcFWe+ufODGjRfoiJ2akShbueb0wtI50zm02pbvwfWEMWBQ1zKGlLIhskiEPm9R6vRXxV4ZzWT2yHOGpWMyorblKlNp8HmHEb/lCXjcW7bmtXP8Xt229OVWR1fod2eWqNfHuMjXCPkIGNileOiImVmCOEmoSfn3yXlJWmoHGhqp6ilYuWYpmTqKUgAAIfkECQEAAQAsAAAAACgAKAAAApiEH6kb58biQ3FNWtMFWW3eNVcojuFGfqnZqSebuS06w5V80/X02pKe8zFwP6EFWOT1lDFk8rGERh1TTNOocQ61Hm4Xm2VexUHpzjymViHrFbiELsefVrn6XKfnt2Q9G/+Xdie499XHd2g4h7ioOGhXGJboGAnXSBnoBwKYyfioubZJ2Hn0RuRZaflZOil56Zp6iioKSXpUAAAh+QQJAQABACwAAAAAKAAoAAACkoQRqRvnxuI7kU1a1UU5bd5tnSeOZXhmn5lWK3qNTWvRdQxP8qvaC+/yaYQzXO7BMvaUEmJRd3TsiMAgswmNYrSgZdYrTX6tSHGZO73ezuAw2uxuQ+BbeZfMxsexY35+/Qe4J1inV0g4x3WHuMhIl2jXOKT2Q+VU5fgoSUI52VfZyfkJGkha6jmY+aaYdirq+lQAACH5BAkBAAEALAAAAAAoACgAAAKWBIKpYe0L3YNKToqswUlvznigd4wiR4KhZrKt9Upqip61i9E3vMvxRdHlbEFiEXfk9YARYxOZZD6VQ2pUunBmtRXo1Lf8hMVVcNl8JafV38aM2/Fu5V16Bn63r6xt97j09+MXSFi4BniGFae3hzbH9+hYBzkpuUh5aZmHuanZOZgIuvbGiNeomCnaxxap2upaCZsq+1kAACH5BAkBAAEALAAAAAAoACgAAAKXjI8By5zf4kOxTVrXNVlv1X0d8IGZGKLnNpYtm8Lr9cqVeuOSvfOW79D9aDHizNhDJidFZhNydEahOaDH6nomtJjp1tutKoNWkvA6JqfRVLHU/QUfau9l2x7G54d1fl995xcIGAdXqMfBNadoYrhH+Mg2KBlpVpbluCiXmMnZ2Sh4GBqJ+ckIOqqJ6LmKSllZmsoq6wpQAAAh+QQJAQABACwAAAAAKAAoAAAClYx/oLvoxuJDkU1a1YUZbJ59nSd2ZXhWqbRa2/gF8Gu2DY3iqs7yrq+xBYEkYvFSM8aSSObE+ZgRl1BHFZNr7pRCavZ5BW2142hY3AN/zWtsmf12p9XxxFl2lpLn1rseztfXZjdIWIf2s5dItwjYKBgo9yg5pHgzJXTEeGlZuenpyPmpGQoKOWkYmSpaSnqKileI2FAAACH5BAkBAAEALAAAAAAoACgAAAKVjB+gu+jG4kORTVrVhRlsnn2dJ3ZleFaptFrb+CXmO9OozeL5VfP99HvAWhpiUdcwkpBH3825AwYdU8xTqlLGhtCosArKMpvfa1mMRae9VvWZfeB2XfPkeLmm18lUcBj+p5dnN8jXZ3YIGEhYuOUn45aoCDkp16hl5IjYJvjWKcnoGQpqyPlpOhr3aElaqrq56Bq7VAAAOw==");height:100%;opacity:.25}.ui-progressbar-indeterminate .ui-progressbar-value{background-image:none}.ui-selectable{-ms-touch-action:none;touch-action:none}.ui-selectable-helper{position:absolute;z-index:100;border:1px dotted #000}.ui-selectmenu-menu{padding:0;margin:0;position:absolute;top:0;left:0;display:none}.ui-selectmenu-menu .ui-menu{overflow:auto;overflow-x:hidden;padding-bottom:1px}.ui-selectmenu-menu .ui-menu .ui-selectmenu-optgroup{font-size:1em;font-weight:700;line-height:1.5;padding:2px .4em;margin:.5em 0 0;height:auto;border:0}.ui-selectmenu-open{display:block}.ui-selectmenu-text{display:block;margin-right:20px;overflow:hidden;text-overflow:ellipsis}.ui-selectmenu-button.ui-button{text-align:left;white-space:nowrap;width:14em}.ui-selectmenu-icon.ui-icon{float:right;margin-top:0}.ui-slider{position:relative;text-align:left}.ui-slider .ui-slider-handle{position:absolute;z-index:2;width:1.2em;height:1.2em;cursor:default;-ms-touch-action:none;touch-action:none}.ui-slider .ui-slider-range{position:absolute;z-index:1;font-size:.7em;display:block;border:0;background-position:0 0}.ui-slider.ui-state-disabled .ui-slider-handle,.ui-slider.ui-state-disabled .ui-slider-range{filter:inherit}.ui-slider-horizontal{height:.8em}.ui-slider-horizontal .ui-slider-handle{top:-.3em;margin-left:-.6em}.ui-slider-horizontal .ui-slider-range{top:0;height:100%}.ui-slider-horizontal .ui-slider-range-min{left:0}.ui-slider-horizontal .ui-slider-range-max{right:0}.ui-slider-vertical{width:.8em;height:100px}.ui-slider-vertical .ui-slider-handle{left:-.3em;margin-left:0;margin-bottom:-.6em}.ui-slider-vertical .ui-slider-range{left:0;width:100%}.ui-slider-vertical .ui-slider-range-min{bottom:0}.ui-slider-vertical .ui-slider-range-max{top:0}.ui-sortable-handle{-ms-touch-action:none;touch-action:none}.ui-spinner{position:relative;display:inline-block;overflow:hidden;padding:0;vertical-align:middle}.ui-spinner-input{border:none;background:0 0;color:inherit;padding:.222em 0;margin:.2em 0;vertical-align:middle;margin-left:.4em;margin-right:2em}.ui-spinner-button{width:1.6em;height:50%;font-size:.5em;padding:0;margin:0;text-align:center;position:absolute;cursor:default;display:block;overflow:hidden;right:0}.ui-spinner a.ui-spinner-button{border-top-style:none;border-bottom-style:none;border-right-style:none}.ui-spinner-up{top:0}.ui-spinner-down{bottom:0}.ui-tabs{position:relative;padding:.2em}.ui-tabs .ui-tabs-nav{margin:0;padding:.2em .2em 0}.ui-tabs .ui-tabs-nav li{list-style:none;float:left;position:relative;top:0;margin:1px .2em 0 0;border-bottom-width:0;padding:0;white-space:nowrap}.ui-tabs .ui-tabs-nav .ui-tabs-anchor{float:left;padding:.5em 1em;text-decoration:none}.ui-tabs .ui-tabs-nav li.ui-tabs-active{margin-bottom:-1px;padding-bottom:1px}.ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,.ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor{cursor:text}.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor{cursor:pointer}.ui-tabs .ui-tabs-panel{display:block;border-width:0;padding:1em 1.4em;background:0 0}.ui-tooltip{padding:8px;position:absolute;z-index:9999;max-width:300px}body .ui-tooltip{border-width:2px}.ui-widget{font-family:Arial,Helvetica,sans-serif;font-size:1em}.ui-widget .ui-widget{font-size:1em}.ui-widget button,.ui-widget input,.ui-widget select,.ui-widget textarea{font-family:Arial,Helvetica,sans-serif;font-size:1em}.ui-widget.ui-widget-content{border:1px solid #c5c5c5}.ui-widget-content{border:1px solid #ddd;background:#fff;color:#333}.ui-widget-content a{color:#333}.ui-widget-header{border:1px solid #ddd;background:#e9e9e9;color:#333;font-weight:700}.ui-widget-header a{color:#333}.ui-button,.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default,html .ui-button.ui-state-disabled:active,html .ui-button.ui-state-disabled:hover{border:1px solid #c5c5c5;background:#f6f6f6;font-weight:400;color:#454545}.ui-button,.ui-state-default a,.ui-state-default a:link,.ui-state-default a:visited,a.ui-button,a:link.ui-button,a:visited.ui-button{color:#454545;text-decoration:none}.ui-button:focus,.ui-button:hover,.ui-state-focus,.ui-state-hover,.ui-widget-content .ui-state-focus,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-focus,.ui-widget-header .ui-state-hover{border:1px solid #ccc;background:#ededed;font-weight:400;color:#2b2b2b}.ui-state-focus a,.ui-state-focus a:hover,.ui-state-focus a:link,.ui-state-focus a:visited,.ui-state-hover a,.ui-state-hover a:hover,.ui-state-hover a:link,.ui-state-hover a:visited,a.ui-button:focus,a.ui-button:hover{color:#2b2b2b;text-decoration:none}.ui-visual-focus{box-shadow:0 0 3px 1px #5e9ed6}.ui-button.ui-state-active:hover,.ui-button:active,.ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active,a.ui-button:active{border:1px solid #003eff;background:#007fff;font-weight:400;color:#fff}.ui-icon-background,.ui-state-active .ui-icon-background{border:#003eff;background-color:#fff}.ui-state-active a,.ui-state-active a:link,.ui-state-active a:visited{color:#fff;text-decoration:none}.ui-state-highlight,.ui-widget-content .ui-state-highlight,.ui-widget-header .ui-state-highlight{border:1px solid #dad55e;background:#fffa90;color:#777620}.ui-state-checked{border:1px solid #dad55e;background:#fffa90}.ui-state-highlight a,.ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a{color:#777620}.ui-priority-primary,.ui-widget-content .ui-priority-primary,.ui-widget-header .ui-priority-primary{font-weight:700}.ui-priority-secondary,.ui-widget-content .ui-priority-secondary,.ui-widget-header .ui-priority-secondary{opacity:.7;filter:Alpha(Opacity=70);font-weight:400}.ui-state-disabled,.ui-widget-content .ui-state-disabled,.ui-widget-header .ui-state-disabled{opacity:.35;filter:Alpha(Opacity=35);background-image:none}.ui-state-disabled .ui-icon{filter:Alpha(Opacity=35)}.ui-icon{width:16px;height:16px}.ui-icon,.ui-widget-content .ui-icon{background-image:url("https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/images/ui-icons_444444_256x240.png")}.ui-widget-header .ui-icon{background-image:url("https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/images/ui-icons_444444_256x240.png")}.ui-button:focus .ui-icon,.ui-button:hover .ui-icon,.ui-state-focus .ui-icon,.ui-state-hover .ui-icon{background-image:url("https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/images/ui-icons_555555_256x240.png")}.ui-button:active .ui-icon,.ui-state-active .ui-icon{background-image:url("https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/images/ui-icons_ffffff_256x240.png")}.ui-button .ui-state-highlight.ui-icon,.ui-state-highlight .ui-icon{background-image:url("https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/images/ui-icons_777620_256x240.png")}.ui-button .ui-icon{background-image:url("https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/images/ui-icons_777777_256x240.png")}.ui-icon-blank{background-position:16px 16px}.ui-icon-caret-1-e{background-position:-32px 0}.ui-icon-triangle-1-n{background-position:0 -16px}.ui-icon-triangle-1-e{background-position:-32px -16px}.ui-icon-triangle-1-s{background-position:-65px -16px}.ui-icon-closethick{background-position:-96px -128px}.ui-icon-check{background-position:-64px -144px}.ui-icon-gripsmall-diagonal-se{background-position:-64px -224px}.ui-corner-all,.ui-corner-left,.ui-corner-top{border-top-left-radius:3px}.ui-corner-all,.ui-corner-right,.ui-corner-top,.ui-corner-tr{border-top-right-radius:3px}.ui-corner-all,.ui-corner-bottom,.ui-corner-left{border-bottom-left-radius:3px}.ui-corner-all,.ui-corner-bottom,.ui-corner-br,.ui-corner-right{border-bottom-right-radius:3px}.ui-widget-overlay{background:#aaa;opacity:.003;filter:Alpha(Opacity=.3)}.ui-widget-shadow{-webkit-box-shadow:0 0 5px #666;box-shadow:0 0 5px #666}@font-face{font-family:Poppins-Medium;src:url(https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/fonts/Poppins-Medium.ttf);font-display:swap}@font-face{font-family:Poppins-Regular;src:url(https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/fonts/Poppins-Regular.ttf);font-display:swap}*{font-family:Poppins-Regular;transition:all .25s cubic-bezier(.13, .28, .25, .78);-webkit-transition:.25s cubic-bezier(.13, .28, .25, .78);-moz-transition:.25s cubic-bezier(.13, .28, .25, .78);-ms-transition:.25s cubic-bezier(.13, .28, .25, .78);-o-transition:.25s cubic-bezier(.13, .28, .25, .78);transition-delay:auto}input[type=radio]:checked~label{color:#fff!important}input[type=checkbox]:checked~label,input[type=radio]:checked~label{background:#43a9fe}@font-face{font-display:swap;font-family:FontAwesome;src:url('https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/fonts/fontawesome-webfont.eot?v=4.7.0');src:url('https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),url('https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),url('https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),url('https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),url('https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');font-weight:400;font-style:normal}.fa{display:inline-block;font:14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa-map-marker:before{content:"\f041"}.fa-twitter:before{content:"\f099"}.fa-facebook:before{content:"\f09a"}.fa-envelope:before{content:"\f0e0"}.fa-linkedin:before{content:"\f0e1"}.fa-angle-right:before{content:"\f105"}.fa-instagram:before{content:"\f16d"}.trp-language-switcher>div>a{font-size:12px}.trp-ls-shortcode-current-language,.trp-ls-shortcode-language{width:150px!important}.trp-ls-shortcode-language{display:none!important}.display-setting-mbl{display:none}@media screen and (max-width:992px){.display-setting{display:none}.display-setting-mbl{display:block}}.logo{height:45px}.navbar-text i{font-size:13px;margin-right:8px}.navbar-text{margin-left:35px;font-size:13px}.navbar{z-index:200!important}a.nav-link{font-size:13px;font-family:Poppins-Medium;text-transform:uppercase}.dropdown-item{font-size:13px;font-family:Poppins-Medium}.navbar-expand-lg a.nav-link{color:#fff}.navbar-expand-lg a.nav-link:hover{color:#43a9fe}.navbar-light .navbar-toggler-icon{background:url(https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/img/bar.svg)!important}.navbar-toggler:focus{outline:0}.phone-cls-0{padding-right:11px}@media screen and (max-width:1067px) and (min-width:992px){.display-setting{margin:0 auto}}@media screen and (min-width:992px){.visible-ipad{display:none}.mob-resol-butn{display:none}.navbar{top:0}}@media screen and (max-width:991px) and (min-width:768px){.trp-language-switcher>div>a{padding:0!important}.trp-language-switcher>div{padding:0 20px 0 5px!important}.display-setting-mbl{margin-top:-3px!important}.number-divv-mob-ipad-visible{height:78px;width:100%;background:#353535;color:#fff;top:0;left:0;line-height:35px;text-align:center;z-index:100000;position:fixed}.number-divv-mob-ipad-visible a{color:#43a9fe}.navbar{position:fixed;width:100%!important;z-index:20000!important;top:77px!important}.dispp-none-007{display:none!important}.mob-resol-butn{display:none}}@media screen and (max-width:767px){.number-divv-mob-ipad{height:70px;width:100%;background:#353535;top:0;padding-top:4px;text-align:center;z-index:100000;position:fixed;color:#fff}body,html{overflow-x:hidden}.number-divv-mob-ipad a{color:#43a9fe}.navbar{position:fixed;width:100%!important;z-index:20000!important;top:70px!important}.visible-ipad{display:none}.dispp-none-007{display:none!important}body>div.container-fluid.px-0.background-imag>div{transform:translate(0,0)!important;padding-top:122px!important}.navbar-toggler{margin-right:-14px}.logo{max-width:145px}#menu-item-1357{width:100%;line-height:26px}#menu-item-1359{width:100%;line-height:26px}#menu-item-1361{width:100%;line-height:26px}body>div.container-fluid.px-0.background-imag>div{padding-top:68px;display:table-cell;line-height:normal;transform:translate(7px,11px)}body>div.container-fluid.px-0.background-imag>div>div>h2{width:100%;text-align:center}body>div.box>div.container>div>div{margin-top:40px}#text-3>div>ul>li{width:100%}}@media screen and (max-width:320px){.logo{max-width:122px}}img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}.captcha-image{border:1px solid;padding:10px;display:inline-block;text-align:center}.cf7ic_instructions{display:block}.captcha-image .cf7ic_instructions span{font-weight:700}span.captcha-image>label{display:inline-block!important;position:relative;width:auto!important}.captcha-image svg{padding:5px;width:35px;height:35px;box-sizing:border-box}.captcha-image label>input+svg{cursor:pointer;border:2px solid transparent;position:relative;overflow:hidden}.captcha-image label:nth-child(2),.captcha-image label:nth-child(3){margin-right:5px}.captcha-image label>input:checked+svg,.captcha-image label>input:focus+svg{border:2px solid red}.kc_captcha{display:inherit}.captcha-image label>input{opacity:0!important;width:0!important;height:0!important;min-width:0!important;min-height:0!important;margin:0!important;padding:0!important;border:none!important;position:absolute!important}.captcha-image label>input+*{position:static;cursor:pointer;border-width:2px;border-style:none;border-color:transparent;padding:7px}.captcha-image label>input:checked+*,.captcha-image label>input:focus+*{padding:7px;border-width:2px;border-style:solid}img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}:root{--wp--preset--aspect-ratio--square:1;--wp--preset--aspect-ratio--4-3:4/3;--wp--preset--aspect-ratio--3-4:3/4;--wp--preset--aspect-ratio--3-2:3/2;--wp--preset--aspect-ratio--2-3:2/3;--wp--preset--aspect-ratio--16-9:16/9;--wp--preset--aspect-ratio--9-16:9/16;--wp--preset--color--black:#000000;--wp--preset--color--cyan-bluish-gray:#abb8c3;--wp--preset--color--white:#ffffff;--wp--preset--color--pale-pink:#f78da7;--wp--preset--color--vivid-red:#cf2e2e;--wp--preset--color--luminous-vivid-orange:#ff6900;--wp--preset--color--luminous-vivid-amber:#fcb900;--wp--preset--color--light-green-cyan:#7bdcb5;--wp--preset--color--vivid-green-cyan:#00d084;--wp--preset--color--pale-cyan-blue:#8ed1fc;--wp--preset--color--vivid-cyan-blue:#0693e3;--wp--preset--color--vivid-purple:#9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple:linear-gradient(135deg,rgba(6, 147, 227, 1) 0%,rgb(155, 81, 224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan:linear-gradient(135deg,rgb(122, 220, 180) 0%,rgb(0, 208, 130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange:linear-gradient(135deg,rgba(252, 185, 0, 1) 0%,rgba(255, 105, 0, 1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red:linear-gradient(135deg,rgba(255, 105, 0, 1) 0%,rgb(207, 46, 46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray:linear-gradient(135deg,rgb(238, 238, 238) 0%,rgb(169, 184, 195) 100%);--wp--preset--gradient--cool-to-warm-spectrum:linear-gradient(135deg,rgb(74, 234, 220) 0%,rgb(151, 120, 209) 20%,rgb(207, 42, 186) 40%,rgb(238, 44, 130) 60%,rgb(251, 105, 98) 80%,rgb(254, 248, 76) 100%);--wp--preset--gradient--blush-light-purple:linear-gradient(135deg,rgb(255, 206, 236) 0%,rgb(152, 150, 240) 100%);--wp--preset--gradient--blush-bordeaux:linear-gradient(135deg,rgb(254, 205, 165) 0%,rgb(254, 45, 45) 50%,rgb(107, 0, 62) 100%);--wp--preset--gradient--luminous-dusk:linear-gradient(135deg,rgb(255, 203, 112) 0%,rgb(199, 81, 192) 50%,rgb(65, 88, 208) 100%);--wp--preset--gradient--pale-ocean:linear-gradient(135deg,rgb(255, 245, 203) 0%,rgb(182, 227, 212) 50%,rgb(51, 167, 181) 100%);--wp--preset--gradient--electric-grass:linear-gradient(135deg,rgb(202, 248, 128) 0%,rgb(113, 206, 126) 100%);--wp--preset--gradient--midnight:linear-gradient(135deg,rgb(2, 3, 129) 0%,rgb(40, 116, 252) 100%);--wp--preset--font-size--small:13px;--wp--preset--font-size--medium:20px;--wp--preset--font-size--large:36px;--wp--preset--font-size--x-large:42px;--wp--preset--spacing--20:0.44rem;--wp--preset--spacing--30:0.67rem;--wp--preset--spacing--40:1rem;--wp--preset--spacing--50:1.5rem;--wp--preset--spacing--60:2.25rem;--wp--preset--spacing--70:3.38rem;--wp--preset--spacing--80:5.06rem;--wp--preset--shadow--natural:6px 6px 9px rgba(0, 0, 0, .2);--wp--preset--shadow--deep:12px 12px 50px rgba(0, 0, 0, .4);--wp--preset--shadow--sharp:6px 6px 0px rgba(0, 0, 0, .2);--wp--preset--shadow--outlined:6px 6px 0px -3px rgba(255, 255, 255, 1),6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp:6px 6px 0px rgba(0, 0, 0, 1)}:where(.is-layout-flex){gap:.5em}:where(.is-layout-grid){gap:.5em}:where(.wp-block-post-template.is-layout-flex){gap:1.25em}:where(.wp-block-post-template.is-layout-grid){gap:1.25em}:where(.wp-block-columns.is-layout-flex){gap:2em}:where(.wp-block-columns.is-layout-grid){gap:2em}:root :where(.wp-block-pullquote){font-size:1.5em;line-height:1.6}#toc_container li,#toc_container ul{margin:0;padding:0}#toc_container ul ul{margin-left:1.5em}#toc_container{background:#f9f9f9;border:1px solid #aaa;padding:10px;margin-bottom:1em;width:auto;display:table;font-size:95%}#toc_container span.toc_toggle{font-weight:400;font-size:90%}#toc_container a{text-decoration:none;text-shadow:none}#toc_container a:hover{text-decoration:underline}.wpcf7 .screen-reader-response{position:absolute;overflow:hidden;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;width:1px;margin:-1px;padding:0;border:0;word-wrap:normal!important}.wpcf7 form .wpcf7-response-output{margin:2em .5em 1em;padding:.2em 1em;border:2px solid #00a0d2}.wpcf7 form.init .wpcf7-response-output,.wpcf7 form.resetting .wpcf7-response-output,.wpcf7 form.submitting .wpcf7-response-output{display:none}.wpcf7 form.sent .wpcf7-response-output{border-color:#46b450}.wpcf7 form.aborted .wpcf7-response-output,.wpcf7 form.failed .wpcf7-response-output{border-color:#dc3232}.wpcf7 form.spam .wpcf7-response-output{border-color:#f56e28}.wpcf7 form.invalid .wpcf7-response-output,.wpcf7 form.payment-required .wpcf7-response-output,.wpcf7 form.unaccepted .wpcf7-response-output{border-color:#ffb900}.wpcf7-form-control-wrap{position:relative}.wpcf7-not-valid-tip{color:#dc3232;font-size:1em;font-weight:400;display:block}.use-floating-validation-tip .wpcf7-not-valid-tip{position:relative;top:-2ex;left:1em;z-index:100;border:1px solid #dc3232;background:#fff;padding:.2em .8em;width:24em}.wpcf7-list-item{display:inline-block;margin:0 0 0 1em}.wpcf7-list-item-label::after,.wpcf7-list-item-label::before{content:" "}.wpcf7-spinner{visibility:hidden;display:inline-block;background-color:#23282d;opacity:.75;width:24px;height:24px;border:none;border-radius:100%;padding:0;margin:0 24px;position:relative}form.submitting .wpcf7-spinner{visibility:visible}.wpcf7-spinner::before{content:'';position:absolute;background-color:#fbfbfc;top:4px;left:4px;width:6px;height:6px;border:none;border-radius:100%;transform-origin:8px 8px;animation-name:spin;animation-duration:1s;animation-timing-function:linear;animation-iteration-count:infinite}@media (prefers-reduced-motion:reduce){.wpcf7-spinner::before{animation-name:blink;animation-duration:2s}}@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}@keyframes blink{from{opacity:0}50%{opacity:1}to{opacity:0}}.wpcf7 [inert]{opacity:.5}.wpcf7 input[type=file]{cursor:pointer}.wpcf7 input[type=file]:disabled{cursor:default}.wpcf7 .wpcf7-submit:disabled{cursor:not-allowed}.wpcf7 input[type=email],.wpcf7 input[type=tel],.wpcf7 input[type=url]{direction:ltr}.popup-template .modal{opacity:0;transition:all .25s ease}.popup-template .modal.is-open{opacity:1;transition:all .25s ease}p>a{color:#57b3f7!important}.navbar-nav li .dropdown-menu{height:0;transition:height .25s;-webkit-transition:height .25s;-moz-transition:height .25s;opacity:0}.navbar-nav li:hover .dropdown-menu{display:block;height:auto;opacity:1}.dropdown-menu>li>a:hover:after{text-decoration:underline;transform:rotate(-90deg)}body>div.box>div.container>div>div>form>h4{padding-top:20px}@media screen and (min-width:1024px){#text-3>div>ul>li{width:100%}}.mob-hide-phone-icon>img{max-width:38px;position:absolute;top:16px;right:70px}@media screen and (max-width:1024px) and (min-width:768px) and (orientation:landscape){.mob-hide-phone-icon>img{display:none}}#heateor_sss_sharing_more_providers .filter svg{position:absolute;left:16px;top:18px}div.heateor_sss_sharing_ul a:focus,div.heateor_sss_sharing_ul a:link{text-decoration:none;background:0 0!important}.heateor_sss_sharing_container img{cursor:pointer;margin:2px;border:none}#heateor_sss_sharing_more_providers{position:fixed;top:50%;left:47%;background:#fafafa;width:650px;margin:-180px 0 0 -300px;z-index:10000000;text-shadow:none!important;height:308px}#heateor_sss_mastodon_popup_bg,#heateor_sss_popup_bg{background:url(https://altrainsurance.com/wp-content/plugins/sassy-social-share/images/transparent_bg.png);bottom:0;display:block;left:0;position:fixed;right:0;top:0;z-index:10000}#heateor_sss_sharing_more_providers .title{font-size:14px!important;height:auto!important;background:#58b8f8!important;border-bottom:1px solid #d7d7d7!important;color:#fff;font-weight:700;letter-spacing:inherit;line-height:34px!important;padding:0!important;text-align:center;text-transform:none;margin:0!important;text-shadow:none!important;width:100%}#heateor_sss_sharing_more_providers *{font-family:Arial,Helvetica,sans-serif}#heateor_sss_sharing_more_providers #heateor_sss_sharing_more_content{background:#fafafa;border-radius:4px;color:#555;height:auto;width:100%}#heateor_sss_sharing_more_providers .filter{margin:0;padding:10px 0 0;position:relative;width:100%}#heateor_sss_sharing_more_providers .close-button img{margin:0}#heateor_sss_sharing_more_providers .close-button.separated{background:0 0!important;border:none!important;box-shadow:none!important;width:auto!important;height:auto!important;z-index:1000}#heateor_sss_sharing_more_providers .close-button{height:auto!important;width:auto!important;left:auto!important;display:block!important;color:#555!important;cursor:pointer!important;font-size:29px!important;line-height:29px!important;margin:0!important;padding:0!important;position:absolute;right:-16px;top:-16px}#heateor_sss_sharing_more_providers .filter input.search{width:96%;display:block;float:none;font-family:"open sans","helvetica neue",helvetica,arial,sans-serif;font-weight:300;height:auto;line-height:inherit;margin:0 11px;padding:5px 8px 5px 27px!important;border:1px solid #ccc!important;color:#000;background:#fff!important;font-size:16px!important;text-align:left!important;max-width:-webkit-fill-available;line-height:1}.heateor_sss_vertical_sharing{-webkit-box-sizing:content-box!important;-moz-box-sizing:content-box!important}div.heateor_sss_sharing_ul{padding-left:0!important;margin:1px 0!important}#heateor_sss_mastodon_popup_close img,#heateor_sss_sharing_popup_close img{opacity:1!important;background:0 0!important;border:none!important;outline:0!important;box-shadow:none!important;width:auto!important;height:auto!important;top:inherit!important;right:inherit!important;left:9px!important;padding:0!important}div.heateor_sss_horizontal_sharing div.heateor_sss_sharing_ul a{float:left;padding:0!important;list-style:none!important;border:none!important;margin:2px}div.heateor_sss_sharing_ul a:before{content:none!important}.heateor_sss_vertical_sharing{background:0 0;-webkit-box-shadow:0 1px 4px 1px rgba(0,0,0,.1);box-shadow:0 1px 4px 1px rgba(0,0,0,.1);position:fixed;overflow:visible;z-index:10000000;display:block;padding:10px;border-radius:4px;opacity:1;box-sizing:content-box!important}.heateorSssTCBackground:hover{border-width:0!important;background-color:transparent}.heateorSssTCBackground{border-width:0!important;background-color:transparent!important;font-style:normal;word-wrap:normal;color:#666;line-height:1;visibility:hidden}.heateorSssSharingSvg{width:100%;height:100%}.heateorSssPushIn{background:url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20viewBox%3D%220%200%2030%2030%22%3E%0A%3Cpath%20d%3D%22M%207%206%20q%202%206%2010%206%20v%20-6%20l%206%209%20l%20-6%209%20v%20-6%20q%20-10%202%20-10%20-12%22%20stroke-width%3D%221%22%20stroke%3D%22%23000%22%20fill%3D%22%23000%22%20stroke-linecap%3D%22round%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E) left no-repeat}.heateorSssPullOut{background:url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20viewBox%3D%220%200%2030%2030%22%3E%0A%3Cpath%20d%3D%22M%2023%206%20q%20-2%206%20-10%206%20v%20-6%20l%20-6%209%20l%206%209%20v%20-6%20q%2010%202%2010%20-12%22%20stroke-width%3D%221%22%20stroke%3D%22%23000%22%20fill%3D%22%23000%22%20stroke-linecap%3D%22round%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E) left no-repeat}div.heateorSssTotalShareCount{word-wrap:normal!important;font-weight:bolder;font-family:sans-serif;padding:0;margin:0;text-align:center}div.heateorSssTotalShareText{word-wrap:normal!important;margin:0;padding:0;text-align:center}div.heateor_sss_horizontal_sharing li{width:auto}.heateor_sss_sharing_container a{padding:0!important;box-shadow:none!important;border:none!important}.heateorSssClear{clear:both}@media screen and (max-width:590px){#heateor_sss_sharing_more_providers .filter input.search{width:93%}}div.heateor_sss_sharing_container a:before{content:none}div.heateor_sss_sharing_container svg{width:100%;height:100%}.heateor_sss_button_instagram span.heateor_sss_svg{background:radial-gradient(circle at 30% 107%,#fdf497 0,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%)}.heateor_sss_horizontal_sharing .heateor_sss_svg{color:#fff;border-width:0;border-style:solid;border-color:transparent}.heateor_sss_horizontal_sharing .heateorSssTCBackground{color:#666}.heateor_sss_horizontal_sharing span.heateor_sss_svg:hover{border-color:transparent}.heateor_sss_vertical_sharing span.heateor_sss_svg{color:#fff;border-width:0;border-style:solid;border-color:transparent}.heateor_sss_vertical_sharing .heateorSssTCBackground{color:#666}.heateor_sss_vertical_sharing span.heateor_sss_svg:hover{border-color:transparent}@media screen and (max-width:783px){#heateor_sss_sharing_more_providers{width:80%;left:60%;margin-left:-50%;text-shadow:none!important}.heateor_sss_vertical_sharing{display:none!important}}.faq{border:1px solid #ccc;margin-bottom:20px}.faq h2{background-color:#f1f1f1;margin:0;padding:10px;cursor:pointer}.faq p{margin:0;padding:10px;display:none}.border-cls-1,.border-cls-2{margin-left:0;margin-bottom:26px!important;width:100px}section#custom_html-3{padding-bottom:15px}.copyrights{background:#000;padding:15px 0}.dropdown-menu{top:89%}#custom_html-2>div>ul{width:auto;display:flex;float:right;margin-bottom:0}#custom_html-2>div>ul>li:first-child{padding-right:11px}#custom_html-2>div>ul>li:nth-child(2){padding-right:11px}#custom_html-2>div>ul>li:nth-child(3){padding-right:11px}#custom_html-2>div>ul>li:nth-child(4){padding-right:11px}.amr_widget{background-color:transparent}#primary{padding:15px;box-shadow:0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)}.btn-primary:hover{border-color:#0062cc00!important;box-shadow:1px 1px 8px 3px #00000047}#text-3>div>hr{border-bottom:2px solid #43a9fe!important}.border-cls-1{margin-left:0;margin-bottom:26px!important}.border-cls-2{margin-left:0;margin-bottom:26px!important}#menu-footer-menu-1{padding-left:0}.mail-cls-0,.map-cls-0,.phone-cls-0{color:#fff!important}.mail-cls-0:hover,.map-cls-0:hover,.phone-cls-0:hover{color:#57b3f7!important}.footer-1-image-cls{max-width:100%;height:48px}.pad-rt-8::before{padding-right:8px}.disp-block{display:block;line-height:26px}.colr-cls{color:#fff}.colr-cls:hover{color:#3fa9feba}.footer-powered-by-cls{color:#fff}.saba-seo-cls{color:#3fa9fe}.saba-seo-cls:hover{color:#3fa9feba}#wpcf7-f10-o1>form>p:nth-child(6)>input{display:block;width:100%}#wpcf7-f10-o1>form>p:nth-child(6){margin-bottom:-22px}.navbar{position:fixed;width:100%;z-index:20000}section#text-10{padding-bottom:30px}#recent-posts-2>ul>li{list-style-type:disc;color:#484848}#wpcf7-f10-o1>form>p:nth-child(7){padding-top:41px}body>div.box>div.container>div>div>form>div:nth-child(9)>label{margin-left:0!important}body>div.box>div.container>div>div>form>div:nth-child(15)>label{margin-left:0!important}@media screen and (min-width:1025px){.mob-hide-phone-icon{display:none}}@media screen and (max-width:991px){.singlepostpage{margin-top:181px!important}}@media screen and (max-width:767px){body>div.box{margin-top:-2px}body>div.box>div.container>div>div{margin-top:0}body>div.box>div.container>div>div>form>h4{padding-top:37px}body>div.box>div.container>div>div>form>div:nth-child(13)>h4{padding-top:25px;padding-bottom:5px}body>div.container-fluid.px-0.background-imag>div{transform:translate(0,0)!important;padding-top:122px}.singlepostpage{margin-top:115px!important}}h3.head{font-size:2rem}.footer-powered-by-cls{opacity:1;color:#fff}span.captcha-image{width:100%}body{position:relative;margin-top:-30px}.wp-post-image{max-width:100%;height:100%}.content-top-set{margin-top:87px}[styling=special]{box-shadow:1px 0 6px 0 rgba(134,134,134,.35);padding:12px 20px;background:#fff;margin-bottom:30px}[styling=special] h2{letter-spacing:-1px;font-weight:100}[styling=special] h2 a{color:#000!important}[type=submit]{width:100%}form>p:nth-child(6){text-align:left!important}ul li{text-decoration:none;list-style:none}a{color:#8e787d}a:hover{color:#8e787d}</style><link rel="preload" data-rocket-preload="" as="image" href="https://altrainsurance.com/wp-content/uploads/2025/02/What-Type-of-Home-Insurance-Is-Required-in-California.jpeg" imagesrcset="https://altrainsurance.com/wp-content/uploads/2025/02/What-Type-of-Home-Insurance-Is-Required-in-California.jpeg 525w, https://altrainsurance.com/wp-content/uploads/2025/02/What-Type-of-Home-Insurance-Is-Required-in-California-300x200.jpeg 300w, https://altrainsurance.com/wp-content/uploads/2025/02/What-Type-of-Home-Insurance-Is-Required-in-California-18x12.jpeg 18w, https://altrainsurance.com/wp-content/uploads/2025/02/What-Type-of-Home-Insurance-Is-Required-in-California-338x226.jpeg 338w" imagesizes="100vw" fetchpriority="high">
+	<meta name="description" content="Learn the facts about California home insurance requirements, lender mandates, coverage options, and tips for protecting your property from unique risks.">
+	<link rel="canonical" href="https://altrainsurance.com/california-requirements-for-home-insurance/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="What Type of Home Insurance Is Required in California?">
+	<meta property="og:description" content="Learn the facts about California home insurance requirements, lender mandates, coverage options, and tips for protecting your property from unique risks.">
+	<meta property="og:url" content="https://altrainsurance.com/california-requirements-for-home-insurance/">
+	<meta property="og:site_name" content="ALTRA INSURANCE">
+	<meta property="article:published_time" content="2025-02-10T08:00:18+00:00">
+	<meta property="article:modified_time" content="2025-02-18T06:56:02+00:00">
+	<meta property="og:image" content="https://altrainsurance.com/wp-content/uploads/2025/02/What-Type-of-Home-Insurance-Is-Required-in-California.jpeg">
+	<meta property="og:image:width" content="525">
+	<meta property="og:image:height" content="350">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta name="author" content="Altra Insurance">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:label1" content="Written by">
+	<meta name="twitter:data1" content="Altra Insurance">
+	<meta name="twitter:label2" content="Est. reading time">
+	<meta name="twitter:data2" content="3 minutes">
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="//widgets.wp.com">
+<link rel="dns-prefetch" href="//s0.wp.com">
+<link rel="dns-prefetch" href="//0.gravatar.com">
+<link rel="dns-prefetch" href="//1.gravatar.com">
+<link rel="dns-prefetch" href="//2.gravatar.com">
+
+
+<style id="wp-emoji-styles-inline-css" type="text/css"></style>
+<style id="classic-theme-styles-inline-css" type="text/css"></style>
+
+
+<style id="jetpack-sharing-buttons-style-inline-css" type="text/css"></style>
+<style id="global-styles-inline-css" type="text/css"></style>
+
+
+
+
+
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentyseventeen-ie8-css' href='https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/css/ie8.css?ver=1.0' type='text/css' media='all' />
+<![endif]-->
+
+<style id="akismet-widget-style-inline-css" type="text/css"></style>
+
+<style id="heateor_sss_frontend_css-inline-css" type="text/css"></style>
+<style id="rocket-lazyload-inline-css" type="text/css">
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(https://altrainsurance.com/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}.wp-embed-responsive .wp-has-aspect-ratio .rll-youtube-player{position:absolute;padding-bottom:0;width:100%;height:100%;top:0;bottom:0;left:0;right:0}
+</style>
+<script type="text/javascript" src="https://altrainsurance.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js" data-rocket-defer="" defer=""></script>
+<script type="text/javascript" src="https://altrainsurance.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" data-rocket-defer="" defer=""></script>
+<script data-minify="1" type="text/javascript" src="https://altrainsurance.com/wp-content/cache/min/1/wp-content/plugins/wp-contact-form-7-spam-blocker/frontend/js/spam-protect-for-contact-form7.js?ver=1760696931" id="spam-protect-for-contact-form7-js" data-rocket-defer="" defer=""></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/js/html5.js?ver=3.7.3" id="html5-js"></script>
+<![endif]-->
+<link rel="https://api.w.org/" href="https://altrainsurance.com/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="https://altrainsurance.com/wp-json/wp/v2/posts/13549"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://altrainsurance.com/xmlrpc.php?rsd">
+<link rel="shortlink" href="https://altrainsurance.com/?p=13549">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://altrainsurance.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Faltrainsurance.com%2Fcalifornia-requirements-for-home-insurance%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://altrainsurance.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Faltrainsurance.com%2Fcalifornia-requirements-for-home-insurance%2F&amp;format=xml">
+<script type="rocketlazyloadscript">
+      var faqs = document.getElementsByClassName('faq');
+      for (var i = 0; i < faqs.length; i++) {
+        faqs[i].addEventListener('click', function() {
+          this.querySelector('p').style.display =
+            this.querySelector('p').style.display === 'block' ? 'none' : 'block';
+        });
+      }
+    </script>
+<style></style>
+<script type="rocketlazyloadscript">
+function addFetchPriority() {
+    var imgElements = document.getElementsByClassName("background-imag");
+    for (var i = 0; i < imgElements.length; i++) {
+      imgElements[i].setAttribute("fetchpriority", "high");
+    }
+}
+
+window.addEventListener("load", addFetchPriority);
+</script><link rel="pingback" href="https://altrainsurance.com/xmlrpc.php">
+<link rel="icon" href="https://altrainsurance.com/wp-content/uploads/2018/07/favicon-100x100.png" sizes="32x32">
+<link rel="icon" href="https://altrainsurance.com/wp-content/uploads/2018/07/favicon.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://altrainsurance.com/wp-content/uploads/2018/07/favicon.png">
+<meta name="msapplication-TileImage" content="https://altrainsurance.com/wp-content/uploads/2018/07/favicon.png">
+		<!-- Facebook Pixel Code -->
+		<script type="rocketlazyloadscript">
+						!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+				n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+				n.push=n;n.loaded=!0;n.version='2.0';n.agent='dvpixelcaffeinewordpress';n.queue=[];t=b.createElement(e);t.async=!0;
+				t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+				document,'script','https://connect.facebook.net/en_US/fbevents.js');
+			
+			var aepc_pixel = {"pixel_id":"502677343490846","user":[],"enable_advanced_events":"yes","fire_delay":"0"},
+				aepc_pixel_args = [],
+				aepc_extend_args = function( args ) {
+					if ( typeof args === 'undefined' ) {
+						args = {};
+					}
+
+					for(var key in aepc_pixel_args)
+						args[key] = aepc_pixel_args[key];
+
+					return args;
+				};
+
+			// Extend args
+			if ( 'yes' === aepc_pixel.enable_advanced_events ) {
+				aepc_pixel_args.userAgent = navigator.userAgent;
+				aepc_pixel_args.language = navigator.language;
+
+				if ( document.referrer.indexOf( document.domain ) < 0 ) {
+					aepc_pixel_args.referrer = document.referrer;
+				}
+			}
+
+			fbq('init', aepc_pixel.pixel_id, aepc_pixel.user);
+
+						setTimeout( function() {
+				fbq('track', "PageView", aepc_pixel_args);
+			}, aepc_pixel.fire_delay * 1000 );
+		</script>
+				<noscript><img height="1" width="1" style="display:none" alt="Facebook"
+		               src="https://www.facebook.com/tr?id=502677343490846&ev=PageView&noscript=1"
+			/></noscript>
+				<!-- End Facebook Pixel Code -->
+				<style type="text/css" id="wp-custom-css"></style>
+		<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>   <meta name="generator" content="WP Rocket 3.18" data-wpr-features="wpr_remove_unused_css wpr_delay_js wpr_defer_js wpr_minify_js wpr_lazyload_images wpr_lazyload_iframes wpr_oci wpr_image_dimensions wpr_minify_css wpr_desktop wpr_preload_links"><link href="https://181279.tctm.co" rel="preconnect"></head>
+   <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDMN9XN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+      
+             <section>
+             <div class="container-fluid px-0">
+              <div class="d-md-none d-lg-none d-xs-block number-divv-mob-ipad">Call Now: <a href="tel:(800) 719-9972">(800) 719-9972</a>
+              
+              <div class="display-setting-mbl">
+                    <div class="trp_language_switcher_shortcode">
+<div class="trp-language-switcher trp-language-switcher-container" data-no-translation="">
+    <div class="trp-ls-shortcode-current-language">
+        <a href="#" class="trp-ls-shortcode-disabled-language trp-ls-disabled-language" title="English" onclick="event.preventDefault()">
+			<img class="trp-flag-image" src="https://altrainsurance.com/wp-content/plugins/translatepress-multilingual/assets/images/flags/en_US.png" width="18" height="12" alt="en_US" title="English"> English		</a>
+    </div>
+    <div class="trp-ls-shortcode-language">
+                <a href="#" class="trp-ls-shortcode-disabled-language trp-ls-disabled-language" title="English" onclick="event.preventDefault()">
+			<img class="trp-flag-image" src="https://altrainsurance.com/wp-content/plugins/translatepress-multilingual/assets/images/flags/en_US.png" width="18" height="12" alt="en_US" title="English"> English		</a>
+                    <a href="https://altrainsurance.com/california-requirements-for-home-insurance/" title="Español">
+            <img class="trp-flag-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2012'%3E%3C/svg%3E" width="18" height="12" alt="es_ES" title="Español" data-lazy-src="https://altrainsurance.com/wp-content/plugins/translatepress-multilingual/assets/images/flags/es_ES.png"><noscript><img class="trp-flag-image" src="https://altrainsurance.com/wp-content/plugins/translatepress-multilingual/assets/images/flags/es_ES.png" width="18" height="12" alt="es_ES" title="Español"></noscript> Español        </a>
+
+        </div>
+    <script type="rocketlazyloadscript" data-rocket-type="application/javascript">
+        // need to have the same with set from JS on both divs. Otherwise it can push stuff around in HTML
+        var trp_ls_shortcodes = document.querySelectorAll('.trp_language_switcher_shortcode .trp-language-switcher');
+        if ( trp_ls_shortcodes.length > 0) {
+            // get the last language switcher added
+            var trp_el = trp_ls_shortcodes[trp_ls_shortcodes.length - 1];
+
+            var trp_shortcode_language_item = trp_el.querySelector( '.trp-ls-shortcode-language' )
+            // set width
+            var trp_ls_shortcode_width                                               = trp_shortcode_language_item.offsetWidth + 16;
+            trp_shortcode_language_item.style.width                                  = trp_ls_shortcode_width + 'px';
+            trp_el.querySelector( '.trp-ls-shortcode-current-language' ).style.width = trp_ls_shortcode_width + 'px';
+
+            // We're putting this on display: none after we have its width.
+            trp_shortcode_language_item.style.display = 'none';
+        }
+    </script>
+</div>
+</div>        	       </div>
+              </div>
+              
+             <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand" href="https://altrainsurance.com"><img src="https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/img/logo-txt.png" class="logo" height="73" width="285" alt="Altra Insurance Logo"></a>
+            <a class="mob-resol-butn" style="background-color: #43a9fe; color: white;  padding: 4px 6px; " href="/request-a-free-insurance-quote-today/">Get A Quote</a>
+            <!-- For Ipad -->
+              <div class="visible-ipad number-divv-mob-ipad-visible">Call Now: <a href="tel:(800) 719-9972">(800) 719-9972</a>
+                   <div class="display-setting-mbl">
+                    <div class="trp_language_switcher_shortcode">
+<div class="trp-language-switcher trp-language-switcher-container" data-no-translation="">
+    <div class="trp-ls-shortcode-current-language">
+        <a href="#" class="trp-ls-shortcode-disabled-language trp-ls-disabled-language" title="English" onclick="event.preventDefault()">
+			<img class="trp-flag-image" src="https://altrainsurance.com/wp-content/plugins/translatepress-multilingual/assets/images/flags/en_US.png" width="18" height="12" alt="en_US" title="English"> English		</a>
+    </div>
+    <div class="trp-ls-shortcode-language">
+                <a href="#" class="trp-ls-shortcode-disabled-language trp-ls-disabled-language" title="English" onclick="event.preventDefault()">
+			<img class="trp-flag-image" src="https://altrainsurance.com/wp-content/plugins/translatepress-multilingual/assets/images/flags/en_US.png" width="18" height="12" alt="en_US" title="English"> English		</a>
+                    <a href="https://altrainsurance.com/california-requirements-for-home-insurance/" title="Español">
+            <img class="trp-flag-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2012'%3E%3C/svg%3E" width="18" height="12" alt="es_ES" title="Español" data-lazy-src="https://altrainsurance.com/wp-content/plugins/translatepress-multilingual/assets/images/flags/es_ES.png"><noscript><img class="trp-flag-image" src="https://altrainsurance.com/wp-content/plugins/translatepress-multilingual/assets/images/flags/es_ES.png" width="18" height="12" alt="es_ES" title="Español"></noscript> Español        </a>
+
+        </div>
+    <script type="rocketlazyloadscript" data-rocket-type="application/javascript">
+        // need to have the same with set from JS on both divs. Otherwise it can push stuff around in HTML
+        var trp_ls_shortcodes = document.querySelectorAll('.trp_language_switcher_shortcode .trp-language-switcher');
+        if ( trp_ls_shortcodes.length > 0) {
+            // get the last language switcher added
+            var trp_el = trp_ls_shortcodes[trp_ls_shortcodes.length - 1];
+
+            var trp_shortcode_language_item = trp_el.querySelector( '.trp-ls-shortcode-language' )
+            // set width
+            var trp_ls_shortcode_width                                               = trp_shortcode_language_item.offsetWidth + 16;
+            trp_shortcode_language_item.style.width                                  = trp_ls_shortcode_width + 'px';
+            trp_el.querySelector( '.trp-ls-shortcode-current-language' ).style.width = trp_ls_shortcode_width + 'px';
+
+            // We're putting this on display: none after we have its width.
+            trp_shortcode_language_item.style.display = 'none';
+        }
+    </script>
+</div>
+</div>        	       </div>
+                
+              </div>
+              
+            <a class="mob-hide-phone-icon dispp-none-007" href="tel:(800) 719-9972"><img width="715" height="715" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20715%20715'%3E%3C/svg%3E" alt="call us now" data-lazy-src="https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/img/Phone-icon-png-715x715-PS.png"><noscript><img width="715" height="715" src="https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/img/Phone-icon-png-715x715-PS.png" alt="call us now"></noscript></a>
+            
+        	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle Navigation">
+        		<span class="navbar-toggler-icon"></span>
+        	</button>
+        
+        	<div class="collapse navbar-collapse" id="navbar-content">
+        	    <span>
+
+        	<ul id="header_menu" class="navbar-nav ml-auto"><li id="menu-item-1372" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1372 nav-item"><a href="https://altrainsurance.com/" class="nav-link"><span>Home</span></a></li>
+<li id="menu-item-1328" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1328 nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbar-dropdown-menu-link-1328" aria-haspopup="true" aria-expanded="false"><span>Insurance <span class="caret"></span></span></a>
+<div class="sub-menu dropdown-menu" aria-labelledby="navbar-dropdown-menu-link-1328">
+<a href="https://altrainsurance.com/auto-insurance-san-diego/" class="dropdown-item" id="menu-item-1338"><span>Auto</span></a><a href="https://altrainsurance.com/motorcycle-insurance-san-diego/" class="dropdown-item" id="menu-item-1339"><span>Motorcycle</span></a><a href="https://altrainsurance.com/renters-insurance-san-diego/" class="dropdown-item" id="menu-item-1340"><span>Renters</span></a><a href="https://altrainsurance.com/business-insurance-san-diego/" class="dropdown-item" id="menu-item-1341"><span>Business insurance</span></a><a href="https://altrainsurance.com/commercial-auto-insurance-reasonable-rates-fast-service/" class="dropdown-item" id="menu-item-6048"><span>Commercial Auto Insurance</span></a><a href="https://altrainsurance.com/surety-bonds/" class="dropdown-item" id="menu-item-1342"><span>Surety bond</span></a><a href="https://altrainsurance.com/homeownwers-insurance-san-diego/" class="dropdown-item" id="menu-item-1343"><span>Homeowners</span></a><a href="https://altrainsurance.com/health-insurance-san-diego/" class="dropdown-item" id="menu-item-2901"><span>Health</span></a></div>
+</li>
+<li id="menu-item-6035" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6035 nav-item"><a href="https://altrainsurance.com/vehicle-registration-dmv-services/" class="nav-link"><span>DMV Services</span></a></li>
+<li id="menu-item-1329" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1329 nav-item"><a href="https://altrainsurance.com/request-a-free-insurance-quote-today/" class="nav-link"><span>Request a quote</span></a></li>
+<li id="menu-item-1344" class="nav-item-insurance open menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1344 nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbar-dropdown-menu-link-1344" aria-haspopup="true" aria-expanded="false"><span>Support <span class="caret"></span></span></a>
+<div class="sub-menu dropdown-menu" aria-labelledby="navbar-dropdown-menu-link-1344">
+<a href="https://altrainsurance.com/add-driver/" class="dropdown-item" id="menu-item-1345"><span>Add Driver</span></a><a href="https://altrainsurance.com/add-vehicle-form/" class="dropdown-item" id="menu-item-1346"><span>Add a Vehicle</span></a><a href="https://altrainsurance.com/id-card-request-form/" class="dropdown-item" id="menu-item-1347"><span>Auto ID Card</span></a><a href="https://altrainsurance.com/secure-certificate-request-form/" class="dropdown-item" id="menu-item-1348"><span>Secure Certificate</span></a><a href="https://altrainsurance.com/secure-change-of-address-request-form/" class="dropdown-item" id="menu-item-1349"><span>Change of Address</span></a><a href="https://altrainsurance.com/secure-commercial-renewal-review/" class="dropdown-item" id="menu-item-1350"><span>Commercial Renewal Review</span></a><a href="https://altrainsurance.com/remove-driver/" class="dropdown-item" id="menu-item-1351"><span>Remove Driver</span></a><a href="https://altrainsurance.com/remove-vehicle/" class="dropdown-item" id="menu-item-1352"><span>Remove Vehicle</span></a><a href="https://altrainsurance.com/secure-submit-a-testimonial/" class="dropdown-item" id="menu-item-1353"><span>Submit A Testimonial</span></a></div>
+</li>
+<li id="menu-item-13913" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13913 nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbar-dropdown-menu-link-13913" aria-haspopup="true" aria-expanded="false"><span>Service Areas</span></a>
+<div class="sub-menu dropdown-menu" aria-labelledby="navbar-dropdown-menu-link-13913">
+<a href="https://altrainsurance.com/" class="dropdown-item" id="menu-item-13914"><span>National City</span></a><a href="https://altrainsurance.com/auto-insurance-chula-vista/" class="dropdown-item" id="menu-item-13916"><span>Chula Vista</span></a><a href="https://altrainsurance.com/auto-insurance-san-diego/" class="dropdown-item" id="menu-item-13915"><span>San Diego</span></a></div>
+</li>
+<li id="menu-item-1354" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-1354 nav-item"><a href="https://altrainsurance.com/blog/" class="nav-link"><span>Blog</span></a></li>
+<li id="menu-item-1355" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1355 nav-item"><a href="https://altrainsurance.com/contact/" class="nav-link"><span>Contact Us</span></a></li>
+</ul>        		</span>
+        		  <!-- <div class="display-setting-mbl">
+                            	       </div> -->                
+        	    </div>
+        	    <span class="navbar-text d-none d-lg-block">
+                    <p class="mb-0 text-white">
+                      <a class="phone-cls-0" href="tel:(800) 719-9972"><span>
+                          <!--<i class="fa fa-phone"></i>-->
+                          (800) 719-9972
+                          </span></a>
+                      <a class="map-cls-0" target="_blank" href="https://g.page/AltraInsurance?share"><span><i class="fa fa-map-marker"></i></span></a>
+                      <a class="mail-cls-0" href="mailto:info@altrainsurance.com"><span><i class="fa fa-envelope"></i></span></a>
+                   </p>
+
+                 </span>
+                 
+                   <div class="display-setting">
+                    <div class="trp_language_switcher_shortcode">
+<div class="trp-language-switcher trp-language-switcher-container" data-no-translation="">
+    <div class="trp-ls-shortcode-current-language">
+        <a href="#" class="trp-ls-shortcode-disabled-language trp-ls-disabled-language" title="English" onclick="event.preventDefault()">
+			<img class="trp-flag-image" src="https://altrainsurance.com/wp-content/plugins/translatepress-multilingual/assets/images/flags/en_US.png" width="18" height="12" alt="en_US" title="English"> English		</a>
+    </div>
+    <div class="trp-ls-shortcode-language">
+                <a href="#" class="trp-ls-shortcode-disabled-language trp-ls-disabled-language" title="English" onclick="event.preventDefault()">
+			<img class="trp-flag-image" src="https://altrainsurance.com/wp-content/plugins/translatepress-multilingual/assets/images/flags/en_US.png" width="18" height="12" alt="en_US" title="English"> English		</a>
+                    <a href="https://altrainsurance.com/california-requirements-for-home-insurance/" title="Español">
+            <img class="trp-flag-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2012'%3E%3C/svg%3E" width="18" height="12" alt="es_ES" title="Español" data-lazy-src="https://altrainsurance.com/wp-content/plugins/translatepress-multilingual/assets/images/flags/es_ES.png"><noscript><img class="trp-flag-image" src="https://altrainsurance.com/wp-content/plugins/translatepress-multilingual/assets/images/flags/es_ES.png" width="18" height="12" alt="es_ES" title="Español"></noscript> Español        </a>
+
+        </div>
+    <script type="rocketlazyloadscript" data-rocket-type="application/javascript">
+        // need to have the same with set from JS on both divs. Otherwise it can push stuff around in HTML
+        var trp_ls_shortcodes = document.querySelectorAll('.trp_language_switcher_shortcode .trp-language-switcher');
+        if ( trp_ls_shortcodes.length > 0) {
+            // get the last language switcher added
+            var trp_el = trp_ls_shortcodes[trp_ls_shortcodes.length - 1];
+
+            var trp_shortcode_language_item = trp_el.querySelector( '.trp-ls-shortcode-language' )
+            // set width
+            var trp_ls_shortcode_width                                               = trp_shortcode_language_item.offsetWidth + 16;
+            trp_shortcode_language_item.style.width                                  = trp_ls_shortcode_width + 'px';
+            trp_el.querySelector( '.trp-ls-shortcode-current-language' ).style.width = trp_ls_shortcode_width + 'px';
+
+            // We're putting this on display: none after we have its width.
+            trp_shortcode_language_item.style.display = 'none';
+        }
+    </script>
+</div>
+</div>        	       </div>
+        </nav>
+         </div>
+      </section><style></style>
+<div class="container">
+        <div class="singlepostpage" style="margin-top: 30px;">
+    	<div class="row">
+    		<div class="col-md-8 content-top-set">
+			<style></style>
+<article id="post-13549" class="post-13549 post type-post status-publish format-standard has-post-thumbnail hentry category-homeowners-insurance" styling="special">
+		
+		
+		
+	    <header class="entry-header">
+			<h1 class="entry-title-sp">Understanding California Home Insurance Requirements</h1>			<h5 style="    font-size: 14px;
+    text-transform: uppercase;">By <span><span><span class="fn"><b>Altra Insurance</b></span></span></span> 8  am on <time class="entry-date published updated" datetime="">February 10, 2025</time></h5>
+
+		</header><!-- .entry-header -->
+		<div class="entry-content">
+					<p class="text-center"><img width="1080" height="720" src="https://altrainsurance.com/wp-content/uploads/2025/02/What-Type-of-Home-Insurance-Is-Required-in-California.jpeg" class="attachment-twentyseventeen-featured-image size-twentyseventeen-featured-image wp-post-image" alt="" decoding="async" fetchpriority="high" srcset="https://altrainsurance.com/wp-content/uploads/2025/02/What-Type-of-Home-Insurance-Is-Required-in-California.jpeg 525w, https://altrainsurance.com/wp-content/uploads/2025/02/What-Type-of-Home-Insurance-Is-Required-in-California-300x200.jpeg 300w, https://altrainsurance.com/wp-content/uploads/2025/02/What-Type-of-Home-Insurance-Is-Required-in-California-18x12.jpeg 18w, https://altrainsurance.com/wp-content/uploads/2025/02/What-Type-of-Home-Insurance-Is-Required-in-California-338x226.jpeg 338w" sizes="100vw"></p>
+				<div class="heateorSssClear"></div><div class="heateor_sss_sharing_container heateor_sss_horizontal_sharing" data-heateor-sss-href="https://altrainsurance.com/california-requirements-for-home-insurance/"><div class="heateor_sss_sharing_title" style="font-weight:bold">Posts</div><div class="heateor_sss_sharing_ul"><a aria-label="Facebook" class="heateor_sss_facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Faltrainsurance.com%2Fcalifornia-requirements-for-home-insurance%2F" title="Facebook" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg" style="background-color:#0765FE;width:35px;height:35px;border-radius:999px;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;border-radius:999px;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 32 32"><path fill="#fff" d="M28 16c0-6.627-5.373-12-12-12S4 9.373 4 16c0 5.628 3.875 10.35 9.101 11.647v-7.98h-2.474V16H13.1v-1.58c0-4.085 1.849-5.978 5.859-5.978.76 0 2.072.15 2.608.298v3.325c-.283-.03-.775-.045-1.386-.045-1.967 0-2.728.745-2.728 2.683V16h3.92l-.673 3.667h-3.247v8.245C23.395 27.195 28 22.135 28 16Z"></path></svg></span></a><a aria-label="Twitter" class="heateor_sss_button_twitter" href="https://twitter.com/intent/tweet?text=Understanding%20California%20Home%20Insurance%20Requirements&amp;url=https%3A%2F%2Faltrainsurance.com%2Fcalifornia-requirements-for-home-insurance%2F" title="Twitter" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg heateor_sss_s__default heateor_sss_s_twitter" style="background-color:#55acee;width:35px;height:35px;border-radius:999px;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;border-radius:999px;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-4 -4 39 39"><path d="M28 8.557a9.913 9.913 0 0 1-2.828.775 4.93 4.93 0 0 0 2.166-2.725 9.738 9.738 0 0 1-3.13 1.194 4.92 4.92 0 0 0-3.593-1.55 4.924 4.924 0 0 0-4.794 6.049c-4.09-.21-7.72-2.17-10.15-5.15a4.942 4.942 0 0 0-.665 2.477c0 1.71.87 3.214 2.19 4.1a4.968 4.968 0 0 1-2.23-.616v.06c0 2.39 1.7 4.38 3.952 4.83-.414.115-.85.174-1.297.174-.318 0-.626-.03-.928-.086a4.935 4.935 0 0 0 4.6 3.42 9.893 9.893 0 0 1-6.114 2.107c-.398 0-.79-.023-1.175-.068a13.953 13.953 0 0 0 7.55 2.213c9.056 0 14.01-7.507 14.01-14.013 0-.213-.005-.426-.015-.637.96-.695 1.795-1.56 2.455-2.55z" fill="#fff"></path></svg></span></a><a aria-label="Pinterest" class="heateor_sss_button_pinterest" href="https://altrainsurance.com/california-requirements-for-home-insurance/" onclick="event.preventDefault();javascript:void( (function() {var e=document.createElement('script' );e.setAttribute('type','text/javascript' );e.setAttribute('charset','UTF-8' );e.setAttribute('src','//assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)})());" title="Pinterest" rel="noopener" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg heateor_sss_s__default heateor_sss_s_pinterest" style="background-color:#cc2329;width:35px;height:35px;border-radius:999px;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;border-radius:999px;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-2 -2 35 35"><path fill="#fff" d="M16.539 4.5c-6.277 0-9.442 4.5-9.442 8.253 0 2.272.86 4.293 2.705 5.046.303.125.574.005.662-.33.061-.231.205-.816.27-1.06.088-.331.053-.447-.191-.736-.532-.627-.873-1.439-.873-2.591 0-3.338 2.498-6.327 6.505-6.327 3.548 0 5.497 2.168 5.497 5.062 0 3.81-1.686 7.025-4.188 7.025-1.382 0-2.416-1.142-2.085-2.545.397-1.674 1.166-3.48 1.166-4.689 0-1.081-.581-1.983-1.782-1.983-1.413 0-2.548 1.462-2.548 3.419 0 1.247.421 2.091.421 2.091l-1.699 7.199c-.505 2.137-.076 4.755-.039 5.019.021.158.223.196.314.077.13-.17 1.813-2.247 2.384-4.324.162-.587.929-3.631.929-3.631.46.876 1.801 1.646 3.227 1.646 4.247 0 7.128-3.871 7.128-9.053.003-3.918-3.317-7.568-8.361-7.568z"></path></svg></span></a><a aria-label="Reddit" class="heateor_sss_button_reddit" href="https://reddit.com/submit?url=https%3A%2F%2Faltrainsurance.com%2Fcalifornia-requirements-for-home-insurance%2F&amp;title=Understanding%20California%20Home%20Insurance%20Requirements" title="Reddit" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg heateor_sss_s__default heateor_sss_s_reddit" style="background-color:#ff5700;width:35px;height:35px;border-radius:999px;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;border-radius:999px;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-3.5 -3.5 39 39"><path d="M28.543 15.774a2.953 2.953 0 0 0-2.951-2.949 2.882 2.882 0 0 0-1.9.713 14.075 14.075 0 0 0-6.85-2.044l1.38-4.349 3.768.884a2.452 2.452 0 1 0 .24-1.176l-4.274-1a.6.6 0 0 0-.709.4l-1.659 5.224a14.314 14.314 0 0 0-7.316 2.029 2.908 2.908 0 0 0-1.872-.681 2.942 2.942 0 0 0-1.618 5.4 5.109 5.109 0 0 0-.062.765c0 4.158 5.037 7.541 11.229 7.541s11.22-3.383 11.22-7.541a5.2 5.2 0 0 0-.053-.706 2.963 2.963 0 0 0 1.427-2.51zm-18.008 1.88a1.753 1.753 0 0 1 1.73-1.74 1.73 1.73 0 0 1 1.709 1.74 1.709 1.709 0 0 1-1.709 1.711 1.733 1.733 0 0 1-1.73-1.711zm9.565 4.968a5.573 5.573 0 0 1-4.081 1.272h-.032a5.576 5.576 0 0 1-4.087-1.272.6.6 0 0 1 .844-.854 4.5 4.5 0 0 0 3.238.927h.032a4.5 4.5 0 0 0 3.237-.927.6.6 0 1 1 .844.854zm-.331-3.256a1.726 1.726 0 1 1 1.709-1.712 1.717 1.717 0 0 1-1.712 1.712z" fill="#fff"></path></svg></span></a><a aria-label="Mix" class="heateor_sss_button_mix" href="https://mix.com/mixit?url=https%3A%2F%2Faltrainsurance.com%2Fcalifornia-requirements-for-home-insurance%2F" title="Mix" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg heateor_sss_s__default heateor_sss_s_mix" style="background-color:#ff8226;width:35px;height:35px;border-radius:999px;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-7 -8 45 45"><g fill="#fff"><path opacity=".8" d="M27.87 4.125c-5.224 0-9.467 4.159-9.467 9.291v2.89c0-1.306 1.074-2.362 2.399-2.362s2.399 1.056 2.399 2.362v1.204c0 1.306 1.074 2.362 2.399 2.362s2.399-1.056 2.399-2.362V4.134c-.036-.009-.082-.009-.129-.009"></path><path d="M4 4.125v12.94c2.566 0 4.668-1.973 4.807-4.465v-2.214c0-.065 0-.12.009-.176.093-1.213 1.13-2.177 2.39-2.177 1.325 0 2.399 1.056 2.399 2.362v9.226c0 1.306 1.074 2.353 2.399 2.353s2.399-1.056 2.399-2.353v-6.206c0-5.132 4.233-9.291 9.467-9.291H4z"></path><path opacity=".8" d="M4 17.074v8.438c0 1.306 1.074 2.362 2.399 2.362s2.399-1.056 2.399-2.362V12.61C8.659 15.102 6.566 17.074 4 17.074"></path></g></svg></span></a><a aria-label="Whatsapp" class="heateor_sss_whatsapp" href="https://api.whatsapp.com/send?text=Understanding%20California%20Home%20Insurance%20Requirements%20https%3A%2F%2Faltrainsurance.com%2Fcalifornia-requirements-for-home-insurance%2F" title="Whatsapp" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg" style="background-color:#55eb4c;width:35px;height:35px;border-radius:999px;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;border-radius:999px;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-6 -5 40 40"><path class="heateor_sss_svg_stroke heateor_sss_no_fill" stroke="#fff" stroke-width="2" fill="none" d="M 11.579798566743314 24.396926207859085 A 10 10 0 1 0 6.808479557110079 20.73576436351046"></path><path d="M 7 19 l -1 6 l 6 -1" class="heateor_sss_no_fill heateor_sss_svg_stroke" stroke="#fff" stroke-width="2" fill="none"></path><path d="M 10 10 q -1 8 8 11 c 5 -1 0 -6 -1 -3 q -4 -3 -5 -5 c 4 -2 -1 -5 -1 -4" fill="#fff"></path></svg></span></a><a aria-label="Linkedin" class="heateor_sss_button_linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Faltrainsurance.com%2Fcalifornia-requirements-for-home-insurance%2F" title="Linkedin" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg heateor_sss_s__default heateor_sss_s_linkedin" style="background-color:#0077b5;width:35px;height:35px;border-radius:999px;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;border-radius:999px;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 32 32"><path d="M6.227 12.61h4.19v13.48h-4.19V12.61zm2.095-6.7a2.43 2.43 0 0 1 0 4.86c-1.344 0-2.428-1.09-2.428-2.43s1.084-2.43 2.428-2.43m4.72 6.7h4.02v1.84h.058c.56-1.058 1.927-2.176 3.965-2.176 4.238 0 5.02 2.792 5.02 6.42v7.395h-4.183v-6.56c0-1.564-.03-3.574-2.178-3.574-2.18 0-2.514 1.7-2.514 3.46v6.668h-4.187V12.61z" fill="#fff"></path></svg></span></a><a aria-label="Instagram" class="heateor_sss_button_instagram" href="https://www.instagram.com/" title="Instagram" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg" style="background-color:#53beee;width:35px;height:35px;border-radius:999px;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;border-radius:999px;" version="1.1" viewBox="-10 -10 148 148" width="100%" height="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g><path d="M86,112H42c-14.336,0-26-11.663-26-26V42c0-14.337,11.664-26,26-26h44c14.337,0,26,11.663,26,26v44 C112,100.337,100.337,112,86,112z M42,24c-9.925,0-18,8.074-18,18v44c0,9.925,8.075,18,18,18h44c9.926,0,18-8.075,18-18V42 c0-9.926-8.074-18-18-18H42z" fill="#fff"></path></g><g><path d="M64,88c-13.234,0-24-10.767-24-24c0-13.234,10.766-24,24-24s24,10.766,24,24C88,77.233,77.234,88,64,88z M64,48c-8.822,0-16,7.178-16,16s7.178,16,16,16c8.822,0,16-7.178,16-16S72.822,48,64,48z" fill="#fff"></path></g><g><circle cx="89.5" cy="38.5" fill="#fff" r="5.5"></circle></g></g></svg></span></a><a class="heateor_sss_more" aria-label="More" title="More" rel="nofollow noopener" style="font-size: 32px!important;border:0;box-shadow:none;display:inline-block!important;font-size:16px;padding:0 4px;vertical-align: middle;display:inline;" href="https://altrainsurance.com/california-requirements-for-home-insurance/" onclick="event.preventDefault()"><span class="heateor_sss_svg" style="background-color:#ee8e2d;width:35px;height:35px;border-radius:999px;display:inline-block!important;opacity:1;float:left;font-size:32px!important;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;display:inline;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box;" onclick="heateorSssMoreSharingPopup(this, 'https://altrainsurance.com/california-requirements-for-home-insurance/', 'Understanding%20California%20Home%20Insurance%20Requirements', '' )"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-.3 0 32 32" version="1.1" width="100%" height="100%" style="display:block;border-radius:999px;" xml:space="preserve"><g><path fill="#fff" d="M18 14V8h-4v6H8v4h6v6h4v-6h6v-4h-6z" fill-rule="evenodd"></path></g></svg></span></a></div><div class="heateorSssClear"></div></div><div class="heateorSssClear"></div><p><span style="font-weight: 400;">Home insurance protects against numerous risks, including natural disasters, theft, identity fraud, and property damage. Your required California home coverage depends on location, structure, and price. Read on to discover traditional home insurance needs and alternative options ideal for your property.</span></p>
+<h2>Legalities</h2>
+<p><span style="font-weight: 400;">While no set law in California requires individuals to get homeowners insurance, the bank that approves your loan, as well as other financial investors, could mandate the coverage. A lender may not process the loan or allow an official move-in date without proof you’ve purchased insurance coverage.</span><span style="font-weight: 400;"><br>
+</span><span style="font-weight: 400;"><br>
+</span><span style="font-weight: 400;">If you get the required type of insurance, don’t be under the misconception that you can let it go in the future months or years. Until you own the property outright, your contract will require you to maintain an agreed-upon policy. Failing to do so at any time could lead to lawsuits and other issues.</span></p>
+<h2>Mandated Coverage</h2>
+<p><span style="font-weight: 400;">Although lenders almost always mandate </span><a href="https://altrainsurance.com/homeownwers-insurance-san-diego/"><span style="font-weight: 400;">home insurance</span></a><span style="font-weight: 400;">, the coverage requirements will vary. Most traditional policies include dwelling coverage, loss of use coverage, structural coverage, medical payments to others, personal property coverage, and personal liability coverage.</span><span style="font-weight: 400;"><br>
+</span><span style="font-weight: 400;"><br>
+</span><span style="font-weight: 400;">A traditional policy should also cover fires, including smoke damage, wind, lightning, and hail perils. If an explosion occurs or you experience damage caused by a vehicle or airplane crash, your policy should cover these issues. Vandalism, equipment or appliance breakdowns, and disasters are also covered by traditional insurance policies.</span></p>
+<h2>Additional Options</h2>
+<p><span style="font-weight: 400;">While bank lenders and other personal property investors often mandate traditional coverage, there are more insurance options to select from, reducing the risk of financial problems. These additional policies include flooding, sump pump failure, and umbrella insurance.</span><span style="font-weight: 400;"><br>
+</span><span style="font-weight: 400;"><br>
+</span><span style="font-weight: 400;">These extra options can ensure issues not covered under your traditional policy can be. For example, if your current insurance doesn’t provide help in the event of a flood, securing a separate flood insurance policy could protect your house and other personal property against flood damage.</span><span style="font-weight: 400;"><br>
+</span><span style="font-weight: 400;"><br>
+</span><span style="font-weight: 400;">You should also contact an insurance provider to learn more about earthquake coverage. These professionals can help you determine if your California property qualifies for this option, which is necessary because the state is likely to experience between two and three large earthquakes yearly that could cause moderate damage.</span></p>
+<h2>No Mortgage</h2>
+<p><span style="font-weight: 400;">If you’ve paid off your California homeowners loan, you don’t need residential insurance by law. However, there are potential risks you should protect yourself against, making it more of an advantage than a disadvantage to maintain coverage.</span><span style="font-weight: 400;"><br>
+</span><span style="font-weight: 400;"><br>
+</span><span style="font-weight: 400;">Safeguarding your financial investment could protect it against various issues Californians are more susceptible to because their homes are placed in mountain areas, along miles of picturesque coastline, near deserts, and more.</span><span style="font-weight: 400;"><br>
+</span><span style="font-weight: 400;"><br>
+</span><span style="font-weight: 400;">You can contact an insurance provider to learn more about requirements as well as the options you have once your mortgage is paid in full. The aim is to ensure you keep everyone safe and secure and to reduce the odds of financial setbacks in the event of an accident, injury, theft, environmental damage, and more.&nbsp;</span></p>
+<p><span style="font-weight: 400;">For reliable, affordable homeowners insurance, San Diego residents know they can trust Altra Insurance Services. We also provide renters, commercial, motorcycle, and </span><a href="https://altrainsurance.com/auto-insurance-chula-vista/"><span style="font-weight: 400;">auto insurance Chula Vista</span></a><span style="font-weight: 400;">. Request a free quote by calling one of our friendly agents today.</span></p>
+		</div><!-- .entry-content -->
+
+		
+	
+
+	
+</article><!-- #post-## -->
+		    </div>
+		    	<div class="col-md-4 lift-to-up">
+<div class="panel panel-default" style="margin-top: 24px;">
+    <div class="panel-heading"><h3 style="text-align:center;"><span style="color:#57b3f7;">Have Questions?</span><br><br> <span style="text-align:center;"><b>Ask What You Want</b></span></h3>
+    </div>
+    <div class="panel-body">
+  
+<div class="wpcf7 js" id="wpcf7-f10-o1" lang="en-US" dir="ltr" data-wpcf7-id="10">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/california-requirements-for-home-insurance/#wpcf7-f10-o1" method="post" class="wpcf7-form resetting" aria-label="Contact form" novalidate="novalidate" data-status="resetting">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="10">
+<input type="hidden" name="_wpcf7_version" value="6.0.6">
+<input type="hidden" name="_wpcf7_locale" value="en_US">
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f10-o1">
+<input type="hidden" name="_wpcf7_container_post" value="0">
+<input type="hidden" name="_wpcf7_posted_data_hash" value="">
+</div>
+<style></style>
+<div id="get-best-insurance">
+</div>
+<p><span class="wpcf7-form-control-wrap" data-name="first-Name"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="Your Name (required)" value="" type="text" name="first-Name"></span>
+</p>
+<p><span class="wpcf7-form-control-wrap" data-name="email"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="Your Email (required)" value="" type="email" name="email"></span>
+</p>
+<p><span class="wpcf7-form-control-wrap" data-name="Phone"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-text wpcf7-validates-as-tel form-control" aria-invalid="false" placeholder="Your Phone" value="" type="tel" name="Phone"></span>
+</p>
+<p><span class="wpcf7-form-control-wrap" data-name="ZipCode"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="Zip Code (required)" value="" type="text" name="ZipCode"></span>
+</p>
+<p><span class="wpcf7-form-control-wrap" data-name="Insurance1"><select class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required form-control" id="category-0" aria-required="true" aria-invalid="false" name="Insurance1"><option value="">Select Insurance Type</option><option value="Auto">Auto</option><option value="Motorcycle">Motorcycle</option><option value="Renters">Renters</option><option value="Business insurance">Business insurance</option><option value="Surety bond">Surety bond</option><option value="Homeowners">Homeowners</option><option value="Health">Health</option></select></span>
+</p>
+<p><span class="wpcf7-form-control-wrap" data-name="your-message"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea form-control" aria-invalid="false" placeholder="Comments" name="your-message"></textarea></span>
+</p>
+<div class="check-mes-text">
+	<p><b>Disclaimer:</b> By clicking "I Opt In" and submitting this form, you consent to receive SMS messages from Altra Insurance at (619) 474-6666 about Customer Care, Marketing or Account Notification. Message frequency may vary, and standard messaging and data rates may apply. Reply STOP to unsubscribe or HELP for assistance. For more details, see our <a href="https://altrainsurance.com/terms-and-conditions/">Terms and Conditions</a> and <a href="https://altrainsurance.com/privacy-policy/">Privacy Policy</a> and <a href="https://altrainsurance.com/">Website</a>.
+	</p>
+	<p><span class="wpcf7-form-control-wrap" data-name="radio-849"><span class="wpcf7-form-control wpcf7-radio"><span class="wpcf7-list-item first"><label><input type="radio" name="radio-849" value="I opt-in to receive SMS messages." checked="checked"><span class="wpcf7-list-item-label">I opt-in to receive SMS messages.</span></label></span><span class="wpcf7-list-item last"><label><input type="radio" name="radio-849" value="I opt-out to receive SMS messages."><span class="wpcf7-list-item-label">I opt-out to receive SMS messages.</span></label></span></span></span>
+	</p>
+</div>
+<p><span class="wpcf7-form-control-wrap kc_captcha" data-name="kc_captcha"><span class="wpcf7-form-control wpcf7-radio"><span class="captcha-image"><span class="cf7ic_instructions">Please prove you are human by selecting the<span> plane</span>.</span><label><input aria-label="1" type="radio" name="kc_captcha" value="bot"><svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M192 384h192c53 0 96-43 96-96h32a128 128 0 000-256H120c-13 0-24 11-24 24v232c0 53 43 96 96 96zM512 96a64 64 0 010 128h-32V96h32zm48 384H48c-47 0-61-64-36-64h584c25 0 11 64-36 64z"></path></svg></label><label><input aria-label="2" type="radio" name="kc_captcha" value="bot"><svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M624 352h-16V244c0-13-5-25-14-34L494 110c-9-9-21-14-34-14h-44V48c0-26-21-48-48-48H48C22 0 0 22 0 48v320c0 27 22 48 48 48h16a96 96 0 00192 0h128a96 96 0 00192 0h48c9 0 16-7 16-16v-32c0-9-7-16-16-16zM160 464a48 48 0 110-96 48 48 0 010 96zm320 0a48 48 0 110-96 48 48 0 010 96zm80-208H416V144h44l100 100v12z"></path></svg></label><label><input aria-label="3" type="radio" name="kc_captcha" value="kc_human"><svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M472 200H360L256 6a12 12 0 00-10-6h-58c-8 0-14 7-12 15l34 185H100l-35-58a12 12 0 00-10-6H12c-8 0-13 7-12 14l21 106L0 362c-1 7 4 14 12 14h43c4 0 8-2 10-6l35-58h110l-34 185c-2 8 4 15 12 15h58a12 12 0 0010-6l104-194h112c57 0 104-25 104-56s-47-56-104-56z"></path></svg></label>
+    </span>
+    <span style="display:none">
+        <input type="text" name="kc_honeypot">
+    </span></span></span><br>
+<input class="wpcf7-form-control wpcf7-submit has-spinner btn btn-primary" type="submit" value="Submit"><span class="wpcf7-spinner"></span>
+</p><p style="display: none !important;" class="akismet-fields-container" data-prefix="_wpcf7_ak_"><label>Δ<textarea name="_wpcf7_ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="_wpcf7_ak_js" value="2"><script type="rocketlazyloadscript">document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p><div class="wpcf7-response-output" aria-hidden="true"></div>
+</form>
+</div>
+  
+   <script data-minify="1" src="https://altrainsurance.com/wp-content/cache/min/1/ajax/libs/jquery/3.4.1/jquery.min.js?ver=1760696951" data-rocket-defer="" defer=""></script>
+                            <script type="rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
+                            $('.requestform').submit(function(e) {
+                              let formData =  $('.requestform').serializeArray();
+                              $.ajax({
+                                method:'post',
+                                url: '//app.engyj.com/add_lead.php',
+                                timeout: 10000,
+                                async:false,
+                                data: { 
+                                  user: '1dd43b319b33299a838f2226b61b94d80e3cadca',
+                                  formData: [
+                                          {
+                                          name: 'name',
+                                          value: $('.requestform input[name="first-Name"]').val()
+                                        },
+                                               {
+                                          name: 'email',
+                                          value: $('.requestform input[name="email"]').val()
+                                        },
+                                               {
+                                          name: 'phonenumber',
+                                          value: $('.requestform input[name="phone"]').val()
+                                        },
+                                               {
+                                          name: 'besttimetocall',
+                                          value: $('.requestform select[name="Insurance1"]').val()
+                                        },
+                                               {
+                                          name: 'typeofcare',
+                                          value: $('.requestform select[name="type_of_care"]').val()
+                                        },
+                                               {
+                                          name: 'location',
+                                          value: $('.requestform select[name="ZipCode"]').val()
+                                        },
+                                               {
+                                          name: 'hear_about',
+                                          value: $('.requestform select[name="How_did_you_hear_about_us?"]').val()
+                                        },
+                                               {
+                                          name: 'message',
+                                          value: $('.requestform textarea[name="your-message"]').val()
+                                        },
+                                               {
+                                          name: 'URL',
+                                          value: $('.requestform input[name="url"]').val()
+                                        }
+                                      ]
+                                },
+                                success: function(data) {
+                                  $('.requestform').unbind('submit').submit();
+                                },
+                                error: function(data) {
+                                  $('.requestform').unbind('submit').submit();
+                                },
+                              });  
+                            });
+                            });</script>
+   <span style="text-align:center;">
+        <h4 style="margin-top: -20px;
+    font-size: 29px;
+    line-height: 48px;
+    font-weight: 400;
+">
+            or<br>
+Call Us: For Free Consultation<br>
+<b style="color:#57b3f7;">(800) 719-9972</b>
+</h4>
+</span>
+  </div>
+  </div>
+
+
+
+
+
+
+<br><br>
+
+    
+
+<aside id="secondary" class="widget-area" role="complementary" aria-label="Blog Sidebar">
+	<section id="text-2" class="widget widget_text">			<div class="textwidget"><div class="panel-heading">
+<h3 style="text-align:center;">
+<p> <span style="text-align:center;"><b>Auto Insurance Locations</b></span></p></h3>
+</div>
+<ul style="text-align:center; padding: 0px;">
+<li><b><a href="https://altrainsurance.com/" target="_blank">National City, CA</a></b></li>
+<li><b><a href="https://altrainsurance.com/auto-insurance-san-diego/" target="_blank">San Diego, CA</a></b></li>
+<li><b><a href="
+https://altrainsurance.com/auto-insurance-chula-vista/" target="_blank">Chula Vista, CA</a></b></li>
+</ul>
+</div>
+		</section>
+		<section id="recent-posts-2" class="widget widget_recent_entries">
+		<h2 class="widget-title">Recent Posts</h2>
+		<ul>
+											<li>
+					<a href="https://altrainsurance.com/qualifying-for-accident-forgiveness/">Who Is Eligible for Accident Forgiveness on Car Insurance?</a>
+									</li>
+											<li>
+					<a href="https://altrainsurance.com/is-roadside-assistance-included-in-auto-insurance/">Is Roadside Assistance Covered by Your Car Insurance Policy?</a>
+									</li>
+											<li>
+					<a href="https://altrainsurance.com/home-insurance-coverage-for-septic-system-failure/">Will Homeowners Insurance Pay for Septic System Repairs?</a>
+									</li>
+											<li>
+					<a href="https://altrainsurance.com/getting-commercial-insurance-without-an-agent/">Do You Need an Agent to Buy Commercial Insurance?</a>
+									</li>
+											<li>
+					<a href="https://altrainsurance.com/effect-of-auto-insurance-on-credit-scores/">Can Car Insurance Impact Your Credit Score?</a>
+									</li>
+					</ul>
+
+		</section></aside><!-- #secondary -->
+
+</div>
+<!--<div class="col-md-4" id="Side_barG">-->
+		        <!--		    </div>-->
+		</div>
+	</div>
+</div>
+<br><br>
+<!--<div  class="container">-->
+<!--    	    <div class="row bordered">-->
+<!--								<div class="col-md-9 col-sm-8"><h2 class="line-he-quote" style="font-weight:bold;font-size:27px !important;text-transform:uppercase;font-weight:600;color:#525252;line-height: 0!important;margin-right:200px;">ALTRA INSURANCE - We’ve Got you Covered</h2>-->
+										
+<!--								</div>-->
+<!--								<div class="col-md-3 col-sm-4 btn-buy" style="padding-top: 28px !important;"><a href="https://altrainsurance.com/request-a-free-insurance-quote-today/" target="_blank" class="btn-u btn-u-lg"><i class="fa fa-star"></i> Get a Quote</a>-->
+<!--								</div>-->
+<!--						</div>-->
+<!--						</div>-->
+
+
+						  
+<style></style>
+
+
+     <section class="containor-fluid" style="background-color: #f4f4f4">
+         <div class="container  bottom-space-end">
+            <footer class="pt-4 my-md-5 pt-md-5 border-top">
+               <div class="row">
+                  <div class="col-md-3">
+                     <div class="mb-3"></div>
+                     <p class="d-block mb-3 text-muted">
+                     </p><section id="custom_html-3" class="widget_text widget widget_custom_html amr_widget"><div class="textwidget custom-html-widget"><img width="300" height="77" class="footer-1-image-cls" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20302%2078'%3E%3C/svg%3E" style="max-width: 100%; width:187px; height: 48px;" alt="Altra Insurance Logo" data-lazy-src="https://altrainsurance.com/wp-content/uploads/2018/08/Logo.png"><noscript><img width="302" height="78" class="footer-1-image-cls" src="https://altrainsurance.com/wp-content/uploads/2018/08/Logo.png" style="max-width: 100%; width:187px; height: 48px;" alt="Altra Insurance Logo" /></noscript></div></section>                     <section id="text-4" class="widget widget_text amr_widget">			<div class="textwidget"><p class="d-block mb-3 text-muted">ALTRA INSURANCE is an independent agency representing clients throughout California.</p>
+</div>
+		</section>                     <p></p>
+                    
+                     <div class="mb-5"></div>
+                  </div>
+                  <div class="col-md-3">
+                      
+                     <section id="text-3" class="widget widget_text amr_widget">			<div class="textwidget"><h3 class="text-muted">QUICK LINKS</h3>
+<hr class="mb-5 border-cls-1" style="border-bottom: 2px solid #43a9fe; text-align: left;">
+<ul class="list-unstyled text-small">
+<li class="li-br fa fa-angle-right text-muted pad-rt-8 disp-block"><a class="text-muted" href="https://altrainsurance.com/request-a-free-insurance-quote-today/">Get an Insurance Quote </a></li>
+<li class="li-br fa fa-angle-right text-muted pad-rt-8 disp-block"><a class="text-muted" href="https://altrainsurance.com/support/">Support</a></li>
+<li class="li-br fa fa-angle-right text-muted pad-rt-8 disp-block"><a class="text-muted" href="https://altrainsurance.com/blog/">Blog</a></li>
+<li class="li-br fa fa-angle-right text-muted pad-rt-8"><a class="text-muted" href="https://altrainsurance.com/contact/">Contact Us</a></li>
+<li class="li-br fa fa-angle-right text-muted pad-rt-8 disp-block"><a class="text-muted" href="https://altrainsurance.com/privacy-policy/">Privacy Policy</a></li>
+</ul>
+</div>
+		</section>                     
+                
+                  </div>
+                  
+                  <div class="col-md-3">
+                     <h3 class="text-muted">IMPORTANT LINKS</h3>
+                     <hr class="mb-5 border-cls-2" width="100px" style="border-bottom: 2px solid #43a9fe">
+                     
+                     <section id="nav_menu-2" class="widget widget_nav_menu amr_widget"><div class="menu-footer-menu-1-container"><ul id="menu-footer-menu-1" class="menu"><li id="menu-item-1357" class="fa fa-angle-right text-muted pad-rt-8 menu-item menu-item-type-post_type menu-item-object-page menu-item-1357"><a href="https://altrainsurance.com/auto-insurance-san-diego/">Auto Insurance</a></li>
+<li id="menu-item-1358" class="fa fa-angle-right text-muted pad-rt-8 menu-item menu-item-type-post_type menu-item-object-page menu-item-1358"><a href="https://altrainsurance.com/motorcycle-insurance-san-diego/">Motorcycle Insurance</a></li>
+<li id="menu-item-1359" class="fa fa-angle-right text-muted pad-rt-8 menu-item menu-item-type-post_type menu-item-object-page menu-item-1359"><a href="https://altrainsurance.com/renters-insurance-san-diego/">Renters Insurance</a></li>
+<li id="menu-item-1360" class="fa fa-angle-right text-muted pad-rt-8 menu-item menu-item-type-post_type menu-item-object-page menu-item-1360"><a href="https://altrainsurance.com/business-insurance-san-diego/">Business Insurance</a></li>
+<li id="menu-item-1361" class="fa fa-angle-right text-muted pad-rt-8 menu-item menu-item-type-post_type menu-item-object-page menu-item-1361"><a href="https://altrainsurance.com/surety-bonds/">Surety Bonds Insurance</a></li>
+<li id="menu-item-1362" class="fa fa-angle-right text-muted pad-rt-8 menu-item menu-item-type-post_type menu-item-object-page menu-item-1362"><a href="https://altrainsurance.com/homeownwers-insurance-san-diego/">Home Ownwers Insurance</a></li>
+</ul></div></section>                       
+                  </div>
+                  <div class="col-md-3">
+                      <h3 class="text-muted">Contact Us</h3>
+                      <hr class="mb-5 border-cls-2" width="100px" style="border-bottom: 2px solid #43a9fe">
+                    <section id="text-10" class="widget widget_text amr_widget">			<div class="textwidget"><p style="color: #6c757d !important;"><a href="https://maps.app.goo.gl/PAaRXftgZgK6EoeKA" target="_blank" rel="noopener">NATIONAL CITY</a></p>
+<p style="color: #6c757d !important;">ALTRA INSURANCE SERVICES, INC.<br>
+1050 Highland Ave, Suite A National City, CA 91950.</p>
+<p style="color: #6c757d !important;"><a href="https://maps.app.goo.gl/pMB23QRU2SAch3wg6" target="_blank" rel="noopener">CHULA VISTA</a></p>
+<p style="color: #6c757d !important;">651 Palomar St a3, Chula Vista, CA 91911, United States</p>
+<p><a href="tel: (800) 719 9972">(800) 719 9972</a></p>
+<p><a href="mailto: info@altrainsurance.com">info@altrainsurance.com</a></p>
+</div>
+		</section>                    
+                  </div>
+               </div>
+            </footer>
+         </div>
+         <div class="copyrights">
+            <div class="container">
+                
+             <section id="custom_html-2" class="widget_text widget widget_custom_html amr_widget"><div class="textwidget custom-html-widget"><span class="footer-powered-by-cls">© 2025 Altra Insurance Services, Inc. All Rights Reserved. <a class="saba-seo-cls" href="https://www.sabaseo.com"></a></span>
+<ul class="footer-socials list-inline">
+<li><a href="https://www.facebook.com/AltraInsurance/" target="_blank" class="facebook tooltips colr-cls" data-toggle="tooltip" data-placement="top" data-original-title="Facebook"><i class="fab fa fa-facebook"></i></a></li><li><a href="https://www.instagram.com/altrainsurance/" target="_blank" class="instagram tooltips colr-cls" data-toggle="tooltip" data-placement="top" data-original-title="Instagram"><i class="fab fa fa-instagram"></i></a></li><li><a href="https://www.linkedin.com/company/altra-insurance-services-inc/" target="_blank" class="linkedin tooltips colr-cls" data-toggle="tooltip" data-placement="top" data-original-title="LinkedIn"><i class="fab fa fa-linkedin"></i></a></li><li><a href="https://twitter.com/altrainc" target="_blank" class="twitter tooltips colr-cls" data-toggle="tooltip" data-placement="top" data-original-title="Twitter"><i class="fab fa fa-twitter"></i></a></li>
+</ul></div></section>               
+            </div>
+         </div>
+      </section>
+      
+      
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      
+      
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Chula Vista",
+    "addressRegion": "CA",
+    "postalCode": "91911",
+    "streetAddress": "651 Palomar St # 3"
+  },
+  "name": "Altra Insurance Services Inc.",
+  "description": "Best Car Insurance in Chula Vista, CA. Get Affordable Auto Insurance Today. Find the right coverage for your needs at Altra Insurance services.",
+  "telephone": "+1 619-500-8001",
+  "url": "https://altrainsurance.com/",
+  "logo": "https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/img/logo-txt.png",
+  "image": "https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/img/logo-txt.png",
+  "priceRange": "Contact Us For Price Range"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "National City",
+    "addressRegion": "CA",
+    "postalCode" : "91950",
+    "streetAddress": "1050 Highland Ave ste # A"
+    },
+    "name": "Altra Insurance Services Inc.",
+	"description": "Altra Insurance is a leading insurance provider in San Diego and National City. Our team of professionals can offer customized solutions to fit your unique requirements. We offer auto, homeowners, commercial, motorcycle, and surety bonds insurance.",
+    "telephone": "+1 619-474-6666",
+    "url": "https://altrainsurance.com/",
+    "logo" : "https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/img/logo-txt.png",
+    "image" : "https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/img/logo-txt.png",
+    "priceRange" : "Contact Us For Price Range"
+}
+</script>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "San Diego",
+    "addressRegion": "CA",
+    "postalCode" : "92123",
+    "streetAddress": "2606 west canyon Ave"
+    },
+    "name": "Altra Insurance Services Inc.",
+	"description": "Altra Insurance is a leading insurance provider in San Diego and National City. Our team of professionals can offer customized solutions to fit your unique requirements. We offer auto, homeowners, commercial, motorcycle, and surety bonds insurance.",
+    "telephone": "+1 8007199972",
+    "url": "https://altrainsurance.com/",
+    "logo" : "https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/img/logo-txt.png",
+    "image" : "https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/img/logo-txt.png",
+    "priceRange" : "Contact Us For Price Range"
+}
+</script>   
+
+<script type="application/ld+json">
+{"@context":"http:\/\/schema.org","@type":"WebSite","url":"https:\/\/altrainsurance.com\/","name":"Altra Insurance Services Inc."}
+</script>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "url": "https://altrainsurance.com/",
+    "logo": "https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/img/logo-txt.png",
+    "image": "https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/img/logo-txt.png",
+    "priceRange": "Contact Us For Price Range",
+    "hasMap": "https://www.google.com/maps/place/Altra+Insurance+Services+Inc./@32.675692,-117.1003977,17z/data=!4m8!1m2!2m1!1shttps:%2F%2Faltrainsurance.com%2F!3m4!1s0x80d9533f91b4aba5:0xb48a224455d234f!8m2!3d32.675692!4d-117.098209",
+    "email": "mailto:info@altrainsurance.com",
+    "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "National City",
+    "addressRegion": "CA",
+    "postalCode": "91950",
+    "streetAddress": "1050 Highland Ave ste # A"
+    },
+    "name": "Altra Insurance Services Inc.",
+    "telephone": "+1 619-474-6666",
+    "openingHours": "24/7",
+    "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "32.675692",
+    "longitude": "-117.098209"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "url": "https://altrainsurance.com/",
+    "logo": "https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/img/logo-txt.png",
+    "image": "https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/img/logo-txt.png",
+    "priceRange": "Contact Us For Price Range",
+    "hasMap": "https://www.google.com/maps/place/Altra+Insurance+Services+Inc./data=!4m2!3m1!1s0x0:0x9618ff9413c15ba8",
+    "email": "mailto:info@altrainsurance.com",
+    "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Chula Vista",
+    "addressRegion": "CA",
+    "postalCode" : "91911",
+    "streetAddress": "651 Palomar St # A3"
+    },
+    "name": "Altra Insurance Services Inc.",
+    "telephone": "+16195008001",
+    "openingHours": "24/7",
+    "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "32.60434465737138",
+    "longitude": "-117.08284582144739"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "url": "https://altrainsurance.com/",
+    "logo": "https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/img/logo-txt.png",
+    "image": "https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/img/logo-txt.png",
+    "priceRange": "Contact Us For Price Range",
+    "hasMap": "https://www.google.com/maps/place/San+Diego,+CA,+USA/@32.8245525,-117.1089785,10z/",
+    "email": "mailto:info@altrainsurance.com",
+    "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "San Diego",
+    "addressRegion": "CA",
+    "postalCode" : "92123",
+    "streetAddress": "2606 west canyon Ave"
+    },
+    "name": "Altra Insurance Services Inc.",
+    "telephone": "+1 619-474-6666",
+    "openingHours": "24/7"
+}
+</script>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org/",
+    "@type": "Service",
+    "serviceType": "Insurance Agency",
+    "provider": {
+    "@type": "LocalBusiness",
+    "name": "Altra Insurance Services Inc.",
+    "address": "651 Palomar St # A3",
+    "telephone": "+16195008001",
+    "image": "https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/img/logo-txt.png",
+    "priceRange": "Contact Us For Price Range"
+    },
+    "areaServed": {
+    "@type": "State",
+    "name": "California"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org/",
+    "@type": "Service",
+    "serviceType": "Insurance Agency",
+    "provider": {
+    "@type": "LocalBusiness",
+    "name": "Altra Insurance Services Inc.",
+    "address": "1050 Highland Ave ste # A",
+    "telephone": "+1 619-474-6666",
+    "image": "https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/img/logo-txt.png",
+    "priceRange": "Contact Us For Price Range"
+    },
+    "areaServed": {
+    "@type": "State",
+    "name": "California"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org/",
+    "@type": "Service",
+    "serviceType": "Insurance Agency",
+    "provider": {
+    "@type": "LocalBusiness",
+    "name": "Altra Insurance Services Inc.",
+    "address": "2606 west canyon Ave",
+    "telephone": "+1 619-474-6666",
+    "image": "https://altrainsurance.com/wp-content/themes/altra-turborater-api-theme/assets/img/logo-txt.png",
+    "priceRange": "Contact Us For Price Range"
+    },
+    "areaServed": {
+    "@type": "State",
+    "name": "California"
+    }
+}
+</script>
+
+
+
+      <script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/altra-turborater-api-theme\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript" src="//stats.wp.com/w.js?ver=202545" id="jp-tracks-js" data-rocket-defer="" defer=""></script>
+<script data-minify="1" type="text/javascript" src="https://altrainsurance.com/wp-content/cache/min/1/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-connection/dist/tracks-callables.js?ver=1760696931" id="jp-tracks-functions-js" data-rocket-defer="" defer=""></script>
+<script type="text/javascript" id="toc-front-js-extra">
+/* <![CDATA[ */
+var tocplus = {"visibility_show":"show","visibility_hide":"hide","width":"Auto"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://altrainsurance.com/wp-content/plugins/table-of-contents-plus/front.min.js?ver=2411.1" id="toc-front-js" data-rocket-defer="" defer=""></script>
+<script type="text/javascript" src="https://altrainsurance.com/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://altrainsurance.com/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script data-minify="1" type="text/javascript" src="https://altrainsurance.com/wp-content/cache/min/1/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=1760696931" id="swv-js" data-rocket-defer="" defer=""></script>
+<script type="text/javascript" id="contact-form-7-js-before">
+/* <![CDATA[ */
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/altrainsurance.com\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    },
+    "cached": 1
+};
+/* ]]> */
+</script>
+<script data-minify="1" type="text/javascript" src="https://altrainsurance.com/wp-content/cache/min/1/wp-content/plugins/contact-form-7/includes/js/index.js?ver=1760696931" id="contact-form-7-js" data-rocket-defer="" defer=""></script>
+<script type="text/javascript" id="wpcf7-redirect-script-js-extra">
+/* <![CDATA[ */
+var wpcf7r = {"ajax_url":"https:\/\/altrainsurance.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script data-minify="1" type="text/javascript" src="https://altrainsurance.com/wp-content/cache/min/1/wp-content/plugins/wpcf7-redirect/build/assets/frontend-script.js?ver=1760696931" id="wpcf7-redirect-script-js" data-rocket-defer="" defer=""></script>
+<script type="text/javascript" id="rocket-browser-checker-js-after">
+/* <![CDATA[ */
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/altrainsurance.com","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-after">
+/* <![CDATA[ */
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://altrainsurance.com/wp-includes/js/comment-reply.min.js?ver=6.8.1" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="heateor_sss_sharing_js-js-before">
+/* <![CDATA[ */
+function heateorSssLoadEvent(e) {var t=window.onload;if (typeof window.onload!="function") {window.onload=e}else{window.onload=function() {t();e()}}};	var heateorSssSharingAjaxUrl = 'https://altrainsurance.com/wp-admin/admin-ajax.php', heateorSssCloseIconPath = 'https://altrainsurance.com/wp-content/plugins/sassy-social-share/public/../images/close.png', heateorSssPluginIconPath = 'https://altrainsurance.com/wp-content/plugins/sassy-social-share/public/../images/logo.png', heateorSssHorizontalSharingCountEnable = 0, heateorSssVerticalSharingCountEnable = 0, heateorSssSharingOffset = -10; var heateorSssMobileStickySharingEnabled = 0;var heateorSssCopyLinkMessage = "Link copied.";var heateorSssUrlCountFetched = [], heateorSssSharesText = 'Shares', heateorSssShareText = 'Share';function heateorSssPopup(e) {window.open(e,"popUpWindow","height=400,width=600,left=400,top=100,resizable,scrollbars,toolbar=0,personalbar=0,menubar=no,location=no,directories=no,status")}
+/* ]]> */
+</script>
+<script data-minify="1" type="text/javascript" src="https://altrainsurance.com/wp-content/cache/min/1/wp-content/plugins/sassy-social-share/public/js/sassy-social-share-public.js?ver=1760696931" id="heateor_sss_sharing_js-js" data-rocket-defer="" defer=""></script>
+<script type="text/javascript" id="aepc-pixel-events-js-extra">
+/* <![CDATA[ */
+var aepc_pixel_events = {"custom_events":{"AdvancedEvents":[{"params":{"login_status":"not_logged_in","post_type":"post","object_id":13549,"object_type":"single","tax_category":["Homeowners Insurance"]},"delay":0}]}};
+/* ]]> */
+</script>
+<script data-minify="1" type="text/javascript" src="https://altrainsurance.com/wp-content/cache/min/1/wp-content/plugins/pixel-caffeine/build/frontend.js?ver=1760696931" id="aepc-pixel-events-js" data-rocket-defer="" defer=""></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener("load", function(event) {
+jQuery(".cfx_form_main,.wpcf7-form,.wpforms-form,.gform_wrapper form").each(function(){
+var form=jQuery(this); 
+var screen_width=""; var screen_height="";
+ if(screen_width == ""){
+ if(screen){
+   screen_width=screen.width;  
+ }else{
+     screen_width=jQuery(window).width();
+ }    }  
+  if(screen_height == ""){
+ if(screen){
+   screen_height=screen.height;  
+ }else{
+     screen_height=jQuery(window).height();
+ }    }
+form.append('<input type="hidden" name="vx_width" value="'+screen_width+'">');
+form.append('<input type="hidden" name="vx_height" value="'+screen_height+'">');
+form.append('<input type="hidden" name="vx_url" value="'+window.location.href+'">');  
+}); 
+
+});
+});</script> 
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async="" src="https://altrainsurance.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt,l){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="play Youtube video"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=["family.webp","logo-txt.png"];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script>      
+      <script data-minify="1" src="https://altrainsurance.com/wp-content/cache/min/1/jquery-2.1.1.min.js?ver=1760696931" data-rocket-defer="" defer=""></script>
+      <script data-minify="1" src="https://altrainsurance.com/wp-content/cache/min/1/git/ui/jquery-ui-git.js?ver=1760696932" data-rocket-defer="" defer=""></script>
+  
+
+      <script data-minify="1" src="https://altrainsurance.com/wp-content/cache/min/1/ajax/libs/popper.js/1.14.7/umd/popper.min.js?ver=1760696932" crossorigin="anonymous" data-rocket-defer="" defer=""></script>
+      <script data-minify="1" src="https://altrainsurance.com/wp-content/cache/min/1/bootstrap/4.3.1/js/bootstrap.min.js?ver=1760696932" crossorigin="anonymous" data-rocket-defer="" defer=""></script>
+      <script data-minify="1" type="text/javascript" src="https://altrainsurance.com/wp-content/cache/min/1/wp-content/themes/altra-turborater-api-theme/assets/js/jFormslider.js?ver=1760696932" data-rocket-defer="" defer=""></script>
+      <script data-minify="1" src="https://altrainsurance.com/wp-content/cache/min/1/wp-content/themes/altra-turborater-api-theme/assets/js/smooth-scroll.js?ver=1760696932" data-rocket-defer="" defer=""></script>
+        
+<script type="rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
+
+function pad(num, size) {
+    var s = num+"";
+    while (s.length < size) s = "0" + s;
+    return s;
+}
+        jQuery(function(){
+             jQuery('.date').on('click', function(event) {
+                event.preventDefault();
+            });
+         // Find any date inputs and override their functionality
+         jQuery('.date').datepicker({ 
+            changeMonth: true,
+            changeYear: true , yearRange: "1930:2003" , dateFormat: 'dd/mm/yy' , defaultDate: '01/01/2013' , 
+             onChangeMonthYear: function(year, month, inst) {
+                 console.log(year ,month , inst);
+                 var date = $("#"+inst.id).val();
+                 var parts = date.split('/');
+                 $("#"+inst.id).val(pad(month,2)+"/"+pad(inst.selectedDay, 2)+"/"+year);
+                 $('#start_age').val(getAge($('#start_date').val()));
+             }
+         });
+         //$('#start_date').val("01/01/2003");
+    });
+    
+    jQuery.datepicker.setDefaults(jQuery.datepicker.regional["fr"]);
+
+jQuery(function() {
+  jQuery('.date').datepicker({
+            changeMonth: true,
+            changeYear: true,
+          });
+  jQuery('.date').datepicker(jQuery.datepicker.regional["zh-CN"]);
+
+  jQuery('.date').each(function() {
+    // var dateFormat = jQuery(this).datepicker("option", "dateFormat");
+    var dateFormat = "mm-dd-yyyy";
+    jQuery(this).prop("placeholder", dateFormat); 
+  });
+});
+
+
+});</script>
+ <!--<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+    $(function() {              
+      // Bootstrap DateTimePicker v4
+      $('input[type="date"]').datetimepicker({
+             format: 'DD/MM/YYYY'
+      });
+    });      
+</script>-->
+
+    <script type="rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
+    
+$(document).ready(function(){
+
+	var options=
+	{
+		width:217,//width of slider
+		height:347,//height of slider
+		next_prev:true,//will show next and prev links
+		next_class:'btn btn-primary',//class for next link
+		prev_class:'btn btn-primary',//class for prev link
+		error_class:'alert alert-danger',//class for validation errors
+		texts:{
+				next:'Next',//verbiage for next link
+				prev:'Back'//verbiage for prev link
+			  },
+		speed:100,//slider speed
+		
+	};
+
+	$('#slider').jFormslider(options);
+
+})
+
+function last_slide()
+{
+	alert("you are going to reach last slide if this function retuned true");
+	return true;
+}
+
+});</script>
+
+<script type="rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
+$(document).ready(function(){
+
+	$('.download').click(function(e){
+		e.preventDefault();
+		var loc=$(this).attr('href');
+		$.ajax({url:"http://harishuw.5gbfree.com/api/jformslider.php",success:function(data){
+		
+			window.location=loc;
+		
+		},error:function(){
+		
+		window.location=loc;
+		}});
+	
+	});
+	
+   $("li[data-id='slider_start']>div>a").addClass( "btn-block new-class" );
+
+});
+});</script>
+   
+<script data-minify="1" src="https://altrainsurance.com/wp-content/cache/min/1/wp-content/themes/altra-turborater-api-theme/assets/js/custom-scripts.js?ver=1760696932" data-rocket-defer="" defer=""></script>
+<script type="rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
+    $("#how-did-hear-id>option:first-child").attr('disabled','disabled')
+});</script>
+
+<script type="rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
+$(document).ready(function(){
+	$('.form-a-3').click(function(){
+        //   alert("working");
+	});
+});
+});</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">window.addEventListener('DOMContentLoaded', function() {
+var city = '';
+
+   var hascity = 0;
+   var hassub = 0;
+   var state = '';
+   var nbhd = '';
+   var subloc = '';
+
+
+     $zval = $('[name="hidden_zipcode"]').val();
+
+     if($zval.length == 5){
+        $jCSval = getCityState($zval, true);
+     }
+
+ 
+ function getCityState($zip, $blnUSA) {
+var date = new Date();
+$.getJSON('https://maps.googleapis.com/maps/api/geocode/json?address=' + $zip + '&key=AIzaSyCwYQxwL3-OxYcO0gAj_JhTi4vNBrWlrT8&type=json&_=' + date.getTime(), function(response){
+        //find the city and state
+var address_components = response.results[0].address_components;
+$.each(address_components, function(index, component){
+var types = component.types;
+$.each(types, function(index, type){
+if(type == 'locality') {
+ city = component.long_name;
+ hascity = 1;
+}
+if(type == 'administrative_area_level_1') {
+ state = component.short_name;
+ stateshow = component.long_name;
+}
+if(type == 'neighborhood') {
+ nbhd = component.long_name;
+}
+if(type == 'sublocality') {
+ subloc = component.long_name;
+ hassub = 1;
+}
+});
+});
+
+//pre-fill the city and state
+       if(hascity == 1){
+$('[name="start_city"]').val(city);
+       } else if(hassub == 1) {
+           $('[name="start_city"]').val(subloc);
+       } else {
+   $('[name="start_city"]').val(nbhd);
+}
+$('[name="start_state"]').val(state);
+$('[name="start_state_show"]').val(stateshow);
+ //reset
+var hascity = 0;
+var hassub = 0;
+   });
+ }
+});</script>
+
+
+
+
+
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99af3f49188e379d',t:'MTc2MjU0Mzg0Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe><script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;93b67a6edf2d4f1289c996607fe79170&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
+
+
+
+
+ <script type="rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {jQuery('.wpcf7-form').addClass('requestform');});</script>	
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1762508419 --></body></html>

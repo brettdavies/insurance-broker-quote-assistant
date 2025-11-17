@@ -1,0 +1,2085 @@
+<!DOCTYPE html><html class="no-js" lang="en-US"><head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(e){this.triggerEvents=e,this.eventOptions={passive:!0},this.userEventListener=this.triggerListener.bind(this),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventListener,e.eventOptions)))}_removeUserInteractionListener(e){this.triggerEvents.forEach((t=>window.removeEventListener(t,e.userEventListener,e.eventOptions)))}triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}async _loadEverythingNow(){this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async),await this._triggerDOMContentLoaded(),await this._triggerWindowLoad(),window.dispatchEvent(new Event("rocket-allScriptsLoaded"))}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._requestAnimFrame(),new Promise((t=>{const n=document.createElement("script");let r;[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type",r=e.nodeValue),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t()),e.parentNode.replaceChild(n,e)}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){var e=document.createDocumentFragment();[...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async].forEach((t=>{const n=t.getAttribute("src");if(n){const t=document.createElement("link");t.href=n,t.rel="preload",t.as="script",e.appendChild(t)}})),document.head.appendChild(e)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(r){e["rocket"+t]=n=r}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._requestAnimFrame(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-load")),await this._requestAnimFrame(),window.rocketonload&&window.rocketonload(),await this._requestAnimFrame(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),window.dispatchEvent(new Event("rocket-pageshow")),await this._requestAnimFrame(),window.rocketonpageshow&&window.rocketonpageshow()}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,r=document.createRange(),i=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const a=document.createDocumentFragment();r.setStart(a,0),a.appendChild(r.createContextualFragment(t)),i.insertBefore(a,o)}}async _requestAnimFrame(){return new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts(["keydown","mousemove","touchmove","touchstart","touchend","wheel"]);e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+    <!-- Google Tag Manager -->
+    <script type="rocketlazyloadscript">
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MZV7H2B');
+    </script>
+
+    <!-- End Google Tag Manager -->
+    <!-- META DATA -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="yandex-verification" content="4b822c768d77b153">
+    <meta name="google-site-verification" content="Z0al9vA2iyUKv21OVUYoDBa8gDlIyIBZTUvKRJwzanU">
+                <!--<meta name="robots" content="NOODP">-->
+    <!-- TITLE -->
+    <!---->
+    <!-- STANDOUT TAG -->
+    
+    <link rel="shortcut icon" href="https://insurancenewsnet.com/wp-content/themes/inn-2/favicon.ico">
+
+    <!-- SalesIQ Zogo Code -->
+    <script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="zsiqchat">
+        var $zoho = $zoho || {};
+        $zoho.salesiq = $zoho.salesiq || {
+            widgetcode: "232f0cc9c869709efc701b2103f986c440f61d43f8df9330582dbc335d8ba002137ba222ef451147eae296a74e79660e",
+            values: {},
+            ready: function() {}
+        };
+        var d = document;
+        s = d.createElement("script");
+        s.type = "text/javascript";
+        s.id = "zsiqscript";
+        s.defer = true;
+        s.src = "https://salesiq.zoho.com/widget";
+        t = d.getElementsByTagName("script")[0];
+        t.parentNode.insertBefore(s, t);
+    </script>
+
+   <!-- Clearout Email Validator -->
+    <!--
+    <script type="rocketlazyloadscript"> var clearout = window.clearout = window.clearout || [], opts = { app_token: "82be91c4c5cd385fa271dc0e9c6b7eb7:badc95f94d5836b2ed22c08ec7f084eaf7c1f78cf98a7113b766d68229ba1e4d", mode: "formSubmit", recaptcha_site_key: "6Lcd3WsdAAAAAGGqX731rPDkMb5_rkjUVS4cLSNv",api_url:"https://api.clearout.io"};
+      clearout.push(["initialize", opts]), 
+      function () 
+      { 
+        var t = document, e = t.createElement("script"), a = t.getElementsByTagName("script")[0]; 
+        e.type = "text/javascript", e.async = !0, e.src = "https://clearout.io/wp-content/co-js-widget/clearout_js_widget.js", 
+        a.parentNode.insertBefore(e, a) 
+      }();
+    </script> 
+    -->
+    
+    <!-- Facebook Pixel Code -->
+    <script type="rocketlazyloadscript">
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2132904400372276');
+        fbq('track', 'PageView');
+    </script>
+
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2132904400372276&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+
+    <!-- Zoom Info -->
+    <!--  -->
+
+
+    <script type="rocketlazyloadscript">
+        (function() {
+            var zi = document.createElement('script');
+            zi.type = 'text/javascript';
+            zi.async = true;
+            zi.src = 'https://ws.zoominfo.com/pixel/fmwl7VkWczcHUStL4xnU';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(zi, s);
+        })();
+    </script>
+    <noscript>
+        <img src="https://ws.zoominfo.com/pixel/fmwl7VkWczcHUStL4xnU" width="1" height="1" style="display: none;" />
+    </noscript>
+    <!-- End Zoom Info -->
+
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v22.3 (Yoast SEO v22.3) - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>CMS increases MA broker compensation for 2026 - Insurance News | InsuranceNewsNet</title><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Open%20Sans%3A400italic%2C700italic%2C400%2C700%7COpen%20Sans%20Condensed%3A400italic%2C700italic%2C400%2C700&amp;subset=latin%2Clatin-ext&amp;display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans%3A400italic%2C700italic%2C400%2C700%7COpen%20Sans%20Condensed%3A400italic%2C700italic%2C400%2C700&amp;subset=latin%2Clatin-ext&amp;display=swap" media="all" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans%3A400italic%2C700italic%2C400%2C700%7COpen%20Sans%20Condensed%3A400italic%2C700italic%2C400%2C700&#038;subset=latin%2Clatin-ext&#038;display=swap" /></noscript><link rel="stylesheet" href="https://insurancenewsnet.com/wp-content/cache/min/1/237ed729cdac2a11ff8e0d835e52b71b.css" media="all" data-minify="1">
+	<meta name="description" content="The Centers for Medicare and Medicaid Services is adjusting agent compensation for Medicare Advantage upward for 2026.">
+	<link rel="canonical" href="https://insurancenewsnet.com/innarticle/cms-increases-ma-broker-compensation-for-2026">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="CMS increases MA broker compensation for 2026">
+	<meta property="og:description" content="The Centers for Medicare and Medicaid Services is adjusting agent compensation for Medicare Advantage upward for 2026.">
+	<meta property="og:url" content="https://insurancenewsnet.com/innarticle/cms-increases-ma-broker-compensation-for-2026">
+	<meta property="og:site_name" content="Insurance News | InsuranceNewsNet">
+	<meta property="article:publisher" content="https://www.facebook.com/insnewsnet">
+	<meta property="article:modified_time" content="2025-06-23T17:11:10+00:00">
+	<meta property="og:image" content="https://insurancenewsnet.com/wp-content/uploads/2025/06/CMS-increases-Medicare-Advantage-broker-compensation-for-2026.jpg">
+	<meta property="og:image:width" content="2400">
+	<meta property="og:image:height" content="1260">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@InsNewsNet">
+	<meta name="twitter:label1" content="Est. reading time">
+	<meta name="twitter:data1" content="3 minutes">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"ReportageNewsArticle","@id":"https://insurancenewsnet.com/innarticle/cms-increases-ma-broker-compensation-for-2026#article","isPartOf":{"@id":"https://insurancenewsnet.com/innarticle/cms-increases-ma-broker-compensation-for-2026"},"author":{"name":"Susan Rupe","@id":"https://insurancenewsnet.com/#/schema/person/c92e158d74fcf066c1d11598a017b16a"},"headline":"CMS increases MA broker compensation for 2026","datePublished":"2025-06-24T10:01:00+00:00","dateModified":"2025-06-23T17:11:10+00:00","mainEntityOfPage":{"@id":"https://insurancenewsnet.com/innarticle/cms-increases-ma-broker-compensation-for-2026"},"wordCount":613,"publisher":{"@id":"https://insurancenewsnet.com/#organization"},"image":{"@id":"https://insurancenewsnet.com/innarticle/cms-increases-ma-broker-compensation-for-2026#primaryimage"},"thumbnailUrl":"https://insurancenewsnet.com/wp-content/uploads/2025/06/CMS-increases-Medicare-Advantage-broker-compensation-for-2026.jpg","articleSection":["Health Insurance Newsletter","Health/Employee Benefits News","Washington Insider Newsletter","Washington Wire"],"inLanguage":"en-US","copyrightYear":"2025","copyrightHolder":{"@id":"https://insurancenewsnet.com/#organization"}},{"@type":"WebPage","@id":"https://insurancenewsnet.com/innarticle/cms-increases-ma-broker-compensation-for-2026","url":"https://insurancenewsnet.com/innarticle/cms-increases-ma-broker-compensation-for-2026","name":"CMS increases MA broker compensation for 2026 - Insurance News | InsuranceNewsNet","isPartOf":{"@id":"https://insurancenewsnet.com/#website"},"primaryImageOfPage":{"@id":"https://insurancenewsnet.com/innarticle/cms-increases-ma-broker-compensation-for-2026#primaryimage"},"image":{"@id":"https://insurancenewsnet.com/innarticle/cms-increases-ma-broker-compensation-for-2026#primaryimage"},"thumbnailUrl":"https://insurancenewsnet.com/wp-content/uploads/2025/06/CMS-increases-Medicare-Advantage-broker-compensation-for-2026.jpg","datePublished":"2025-06-24T10:01:00+00:00","dateModified":"2025-06-23T17:11:10+00:00","description":"The Centers for Medicare and Medicaid Services is adjusting agent compensation for Medicare Advantage upward for 2026.","breadcrumb":{"@id":"https://insurancenewsnet.com/innarticle/cms-increases-ma-broker-compensation-for-2026#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://insurancenewsnet.com/innarticle/cms-increases-ma-broker-compensation-for-2026"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://insurancenewsnet.com/innarticle/cms-increases-ma-broker-compensation-for-2026#primaryimage","url":"https://insurancenewsnet.com/wp-content/uploads/2025/06/CMS-increases-Medicare-Advantage-broker-compensation-for-2026.jpg","contentUrl":"https://insurancenewsnet.com/wp-content/uploads/2025/06/CMS-increases-Medicare-Advantage-broker-compensation-for-2026.jpg","width":2400,"height":1260,"caption":"Icons and title Medicare Advantage with many dollar bills flying through the air. CMS increases MA broker compensation for 2026."},{"@type":"BreadcrumbList","@id":"https://insurancenewsnet.com/innarticle/cms-increases-ma-broker-compensation-for-2026#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://insurancenewsnet.com/"},{"@type":"ListItem","position":2,"name":"innarticles","item":"https://insurancenewsnet.com/innarticle"},{"@type":"ListItem","position":3,"name":"CMS increases MA broker compensation for 2026"}]},{"@type":"WebSite","@id":"https://insurancenewsnet.com/#website","url":"https://insurancenewsnet.com/","name":"Insurance News | InsuranceNewsNet","description":"","publisher":{"@id":"https://insurancenewsnet.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://insurancenewsnet.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://insurancenewsnet.com/#organization","name":"InsuranceNewsNet","alternateName":"InsuranceNewsNet.com, Inc.","url":"https://insurancenewsnet.com/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://insurancenewsnet.com/#/schema/logo/image/","url":"https://insurancenewsnet.com/wp-content/uploads/2023/03/inn-color-e1679592685457.png","contentUrl":"https://insurancenewsnet.com/wp-content/uploads/2023/03/inn-color-e1679592685457.png","width":392,"height":394,"caption":"InsuranceNewsNet"},"image":{"@id":"https://insurancenewsnet.com/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/insnewsnet","https://twitter.com/InsNewsNet","https://www.youtube.com/@insurancenewsnet8225"]},{"@type":"Person","@id":"https://insurancenewsnet.com/#/schema/person/c92e158d74fcf066c1d11598a017b16a","name":"Susan Rupe","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://insurancenewsnet.com/#/schema/person/image/","url":"https://insurancenewsnet.com/wp-content/uploads/2023/03/srupe-2022-148x148.jpg","contentUrl":"https://insurancenewsnet.com/wp-content/uploads/2023/03/srupe-2022-148x148.jpg","caption":"Susan Rupe"},"description":"Susan Rupe is managing editor for InsuranceNewsNet. She formerly served as communications director for an insurance agents' association and was an award-winning newspaper reporter and editor. Contact her at srupe@insurancenewsnet.com.","url":"https://insurancenewsnet.com/author/susan-rupeinnfeedback-com"}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//fonts.gstatic.com">
+<link href="https://fonts.gstatic.com" crossorigin="" rel="preconnect">
+<link rel="alternate" type="application/rss+xml" title="Insurance News | InsuranceNewsNet » Feed" href="https://insurancenewsnet.com/feed">
+<link rel="alternate" type="application/rss+xml" title="Insurance News | InsuranceNewsNet » Comments Feed" href="https://insurancenewsnet.com/comments/feed">
+
+	<meta property="og:title" content="CMS increases MA broker compensation for 2026">
+	<meta property="og:description" content="The Centers for Medicare and Medicaid Services is adjusting agent compensation for Medicare Advantage upward, representing the largest MA increase in broker compensation in years.
+
+">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="https://insurancenewsnet.com/innarticle/cms-increases-ma-broker-compensation-for-2026">
+	<meta property="og:site_name" content="Insurance News | InsuranceNewsNet">
+	<meta property="og:image" content="https://insurancenewsnet.com/wp-content/uploads/2025/06/CMS-increases-Medicare-Advantage-broker-compensation-for-2026-900x473.jpg">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@InsNewsNet">
+
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"wpemoji":"https:\/\/insurancenewsnet.com\/wp-includes\/js\/wp-emoji.js?ver=af04fcf1089f9a7115410b05ed5f4a28","twemoji":"https:\/\/insurancenewsnet.com\/wp-includes\/js\/twemoji.js?ver=af04fcf1089f9a7115410b05ed5f4a28"}};
+/**
+ * @output wp-includes/js/wp-emoji-loader.js
+ */
+
+/**
+ * Emoji Settings as exported in PHP via _print_emoji_detection_script().
+ * @typedef WPEmojiSettings
+ * @type {object}
+ * @property {?object} source
+ * @property {?string} source.concatemoji
+ * @property {?string} source.twemoji
+ * @property {?string} source.wpemoji
+ * @property {?boolean} DOMReady
+ * @property {?Function} readyCallback
+ */
+
+/**
+ * Support tests.
+ * @typedef SupportTests
+ * @type {object}
+ * @property {?boolean} flag
+ * @property {?boolean} emoji
+ */
+
+/**
+ * IIFE to detect emoji support and load Twemoji if needed.
+ *
+ * @param {Window} window
+ * @param {Document} document
+ * @param {WPEmojiSettings} settings
+ */
+( function wpEmojiLoader( window, document, settings ) {
+	if ( typeof Promise === 'undefined' ) {
+		return;
+	}
+
+	var sessionStorageKey = 'wpEmojiSettingsSupports';
+	var tests = [ 'flag', 'emoji' ];
+
+	/**
+	 * Checks whether the browser supports offloading to a Worker.
+	 *
+	 * @since 6.3.0
+	 *
+	 * @private
+	 *
+	 * @returns {boolean}
+	 */
+	function supportsWorkerOffloading() {
+		return (
+			typeof Worker !== 'undefined' &&
+			typeof OffscreenCanvas !== 'undefined' &&
+			typeof URL !== 'undefined' &&
+			URL.createObjectURL &&
+			typeof Blob !== 'undefined'
+		);
+	}
+
+	/**
+	 * @typedef SessionSupportTests
+	 * @type {object}
+	 * @property {number} timestamp
+	 * @property {SupportTests} supportTests
+	 */
+
+	/**
+	 * Get support tests from session.
+	 *
+	 * @since 6.3.0
+	 *
+	 * @private
+	 *
+	 * @returns {?SupportTests} Support tests, or null if not set or older than 1 week.
+	 */
+	function getSessionSupportTests() {
+		try {
+			/** @type {SessionSupportTests} */
+			var item = JSON.parse(
+				sessionStorage.getItem( sessionStorageKey )
+			);
+			if (
+				typeof item === 'object' &&
+				typeof item.timestamp === 'number' &&
+				new Date().valueOf() < item.timestamp + 604800 && // Note: Number is a week in seconds.
+				typeof item.supportTests === 'object'
+			) {
+				return item.supportTests;
+			}
+		} catch ( e ) {}
+		return null;
+	}
+
+	/**
+	 * Persist the supports in session storage.
+	 *
+	 * @since 6.3.0
+	 *
+	 * @private
+	 *
+	 * @param {SupportTests} supportTests Support tests.
+	 */
+	function setSessionSupportTests( supportTests ) {
+		try {
+			/** @type {SessionSupportTests} */
+			var item = {
+				supportTests: supportTests,
+				timestamp: new Date().valueOf()
+			};
+
+			sessionStorage.setItem(
+				sessionStorageKey,
+				JSON.stringify( item )
+			);
+		} catch ( e ) {}
+	}
+
+	/**
+	 * Checks if two sets of Emoji characters render the same visually.
+	 *
+	 * This function may be serialized to run in a Worker. Therefore, it cannot refer to variables from the containing
+	 * scope. Everything must be passed by parameters.
+	 *
+	 * @since 4.9.0
+	 *
+	 * @private
+	 *
+	 * @param {CanvasRenderingContext2D} context 2D Context.
+	 * @param {string} set1 Set of Emoji to test.
+	 * @param {string} set2 Set of Emoji to test.
+	 *
+	 * @return {boolean} True if the two sets render the same.
+	 */
+	function emojiSetsRenderIdentically( context, set1, set2 ) {
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, context.canvas.width, context.canvas.height );
+		context.fillText( set1, 0, 0 );
+		var rendered1 = new Uint32Array(
+			context.getImageData(
+				0,
+				0,
+				context.canvas.width,
+				context.canvas.height
+			).data
+		);
+
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, context.canvas.width, context.canvas.height );
+		context.fillText( set2, 0, 0 );
+		var rendered2 = new Uint32Array(
+			context.getImageData(
+				0,
+				0,
+				context.canvas.width,
+				context.canvas.height
+			).data
+		);
+
+		return rendered1.every( function ( rendered2Data, index ) {
+			return rendered2Data === rendered2[ index ];
+		} );
+	}
+
+	/**
+	 * Determines if the browser properly renders Emoji that Twemoji can supplement.
+	 *
+	 * This function may be serialized to run in a Worker. Therefore, it cannot refer to variables from the containing
+	 * scope. Everything must be passed by parameters.
+	 *
+	 * @since 4.2.0
+	 *
+	 * @private
+	 *
+	 * @param {CanvasRenderingContext2D} context 2D Context.
+	 * @param {string} type Whether to test for support of "flag" or "emoji".
+	 * @param {Function} emojiSetsRenderIdentically Reference to emojiSetsRenderIdentically function, needed due to minification.
+	 *
+	 * @return {boolean} True if the browser can render emoji, false if it cannot.
+	 */
+	function browserSupportsEmoji( context, type, emojiSetsRenderIdentically ) {
+		var isIdentical;
+
+		switch ( type ) {
+			case 'flag':
+				/*
+				 * Test for Transgender flag compatibility. Added in Unicode 13.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly (white flag emoji + transgender symbol).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					context,
+					'\uD83C\uDFF3\uFE0F\u200D\u26A7\uFE0F', // as a zero-width joiner sequence
+					'\uD83C\uDFF3\uFE0F\u200B\u26A7\uFE0F' // separated by a zero-width space
+				);
+
+				if ( isIdentical ) {
+					return false;
+				}
+
+				/*
+				 * Test for UN flag compatibility. This is the least supported of the letter locale flags,
+				 * so gives us an easy test for full support.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly ([U] + [N]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					context,
+					'\uD83C\uDDFA\uD83C\uDDF3', // as the sequence of two code points
+					'\uD83C\uDDFA\u200B\uD83C\uDDF3' // as the two code points separated by a zero-width space
+				);
+
+				if ( isIdentical ) {
+					return false;
+				}
+
+				/*
+				 * Test for English flag compatibility. England is a country in the United Kingdom, it
+				 * does not have a two letter locale code but rather a five letter sub-division code.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly (black flag emoji + [G] + [B] + [E] + [N] + [G]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					context,
+					// as the flag sequence
+					'\uD83C\uDFF4\uDB40\uDC67\uDB40\uDC62\uDB40\uDC65\uDB40\uDC6E\uDB40\uDC67\uDB40\uDC7F',
+					// with each code point separated by a zero-width space
+					'\uD83C\uDFF4\u200B\uDB40\uDC67\u200B\uDB40\uDC62\u200B\uDB40\uDC65\u200B\uDB40\uDC6E\u200B\uDB40\uDC67\u200B\uDB40\uDC7F'
+				);
+
+				return ! isIdentical;
+			case 'emoji':
+				/*
+				 * Why can't we be friends? Everyone can now shake hands in emoji, regardless of skin tone!
+				 *
+				 * To test for Emoji 14.0 support, try to render a new emoji: Handshake: Light Skin Tone, Dark Skin Tone.
+				 *
+				 * The Handshake: Light Skin Tone, Dark Skin Tone emoji is a ZWJ sequence combining 🫱 Rightwards Hand,
+				 * 🏻 Light Skin Tone, a Zero Width Joiner, 🫲 Leftwards Hand, and 🏿 Dark Skin Tone.
+				 *
+				 * 0x1FAF1 == Rightwards Hand
+				 * 0x1F3FB == Light Skin Tone
+				 * 0x200D == Zero-Width Joiner (ZWJ) that links the code points for the new emoji or
+				 * 0x200B == Zero-Width Space (ZWS) that is rendered for clients not supporting the new emoji.
+				 * 0x1FAF2 == Leftwards Hand
+				 * 0x1F3FF == Dark Skin Tone.
+				 *
+				 * When updating this test for future Emoji releases, ensure that individual emoji that make up the
+				 * sequence come from older emoji standards.
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					context,
+					'\uD83E\uDEF1\uD83C\uDFFB\u200D\uD83E\uDEF2\uD83C\uDFFF', // as the zero-width joiner sequence
+					'\uD83E\uDEF1\uD83C\uDFFB\u200B\uD83E\uDEF2\uD83C\uDFFF' // separated by a zero-width space
+				);
+
+				return ! isIdentical;
+		}
+
+		return false;
+	}
+
+	/**
+	 * Checks emoji support tests.
+	 *
+	 * This function may be serialized to run in a Worker. Therefore, it cannot refer to variables from the containing
+	 * scope. Everything must be passed by parameters.
+	 *
+	 * @since 6.3.0
+	 *
+	 * @private
+	 *
+	 * @param {string[]} tests Tests.
+	 * @param {Function} browserSupportsEmoji Reference to browserSupportsEmoji function, needed due to minification.
+	 * @param {Function} emojiSetsRenderIdentically Reference to emojiSetsRenderIdentically function, needed due to minification.
+	 *
+	 * @return {SupportTests} Support tests.
+	 */
+	function testEmojiSupports( tests, browserSupportsEmoji, emojiSetsRenderIdentically ) {
+		var canvas;
+		if (
+			typeof WorkerGlobalScope !== 'undefined' &&
+			self instanceof WorkerGlobalScope
+		) {
+			canvas = new OffscreenCanvas( 300, 150 ); // Dimensions are default for HTMLCanvasElement.
+		} else {
+			canvas = document.createElement( 'canvas' );
+		}
+
+		var context = canvas.getContext( '2d', { willReadFrequently: true } );
+
+		/*
+		 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+		 * it doesn't work when the font is bolder than 500 weight. So, we
+		 * check for bold rendering support to avoid invisible emoji in Chrome.
+		 */
+		context.textBaseline = 'top';
+		context.font = '600 32px Arial';
+
+		var supports = {};
+		tests.forEach( function ( test ) {
+			supports[ test ] = browserSupportsEmoji( context, test, emojiSetsRenderIdentically );
+		} );
+		return supports;
+	}
+
+	/**
+	 * Adds a script to the head of the document.
+	 *
+	 * @ignore
+	 *
+	 * @since 4.2.0
+	 *
+	 * @param {string} src The url where the script is located.
+	 *
+	 * @return {void}
+	 */
+	function addScript( src ) {
+		var script = document.createElement( 'script' );
+		script.src = src;
+		script.defer = true;
+		document.head.appendChild( script );
+	}
+
+	settings.supports = {
+		everything: true,
+		everythingExceptFlag: true
+	};
+
+	// Create a promise for DOMContentLoaded since the worker logic may finish after the event has fired.
+	var domReadyPromise = new Promise( function ( resolve ) {
+		document.addEventListener( 'DOMContentLoaded', resolve, {
+			once: true
+		} );
+	} );
+
+	// Obtain the emoji support from the browser, asynchronously when possible.
+	new Promise( function ( resolve ) {
+		var supportTests = getSessionSupportTests();
+		if ( supportTests ) {
+			resolve( supportTests );
+			return;
+		}
+
+		if ( supportsWorkerOffloading() ) {
+			try {
+				// Note that the functions are being passed as arguments due to minification.
+				var workerScript =
+					'postMessage(' +
+					testEmojiSupports.toString() +
+					'(' +
+					[
+						JSON.stringify( tests ),
+						browserSupportsEmoji.toString(),
+						emojiSetsRenderIdentically.toString()
+					].join( ',' ) +
+					'));';
+				var blob = new Blob( [ workerScript ], {
+					type: 'text/javascript'
+				} );
+				var worker = new Worker( URL.createObjectURL( blob ), { name: 'wpTestEmojiSupports' } );
+				worker.onmessage = function ( event ) {
+					supportTests = event.data;
+					setSessionSupportTests( supportTests );
+					worker.terminate();
+					resolve( supportTests );
+				};
+				return;
+			} catch ( e ) {}
+		}
+
+		supportTests = testEmojiSupports( tests, browserSupportsEmoji, emojiSetsRenderIdentically );
+		setSessionSupportTests( supportTests );
+		resolve( supportTests );
+	} )
+		// Once the browser emoji support has been obtained from the session, finalize the settings.
+		.then( function ( supportTests ) {
+			/*
+			 * Tests the browser support for flag emojis and other emojis, and adjusts the
+			 * support settings accordingly.
+			 */
+			for ( var test in supportTests ) {
+				settings.supports[ test ] = supportTests[ test ];
+
+				settings.supports.everything =
+					settings.supports.everything && settings.supports[ test ];
+
+				if ( 'flag' !== test ) {
+					settings.supports.everythingExceptFlag =
+						settings.supports.everythingExceptFlag &&
+						settings.supports[ test ];
+				}
+			}
+
+			settings.supports.everythingExceptFlag =
+				settings.supports.everythingExceptFlag &&
+				! settings.supports.flag;
+
+			// Sets DOMReady to false and assigns a ready function to settings.
+			settings.DOMReady = false;
+			settings.readyCallback = function () {
+				settings.DOMReady = true;
+			};
+		} )
+		.then( function () {
+			return domReadyPromise;
+		} )
+		.then( function () {
+			// When the browser can not render everything we need to load a polyfill.
+			if ( ! settings.supports.everything ) {
+				settings.readyCallback();
+
+				var src = settings.source || {};
+
+				if ( src.concatemoji ) {
+					addScript( src.concatemoji );
+				} else if ( src.wpemoji && src.twemoji ) {
+					addScript( src.twemoji );
+					addScript( src.wpemoji );
+				}
+			}
+		} );
+} )( window, document, window._wpemojiSettings );
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	
+
+
+<style id="classic-theme-styles-inline-css" type="text/css">
+/**
+ * These rules are needed for backwards compatibility.
+ * They should match the button element rules in the base theme.json file.
+ */
+.wp-block-button__link {
+	color: #ffffff;
+	background-color: #32373c;
+	border-radius: 9999px; /* 100% causes an oval, but any explicit but really high value retains the pill shape. */
+
+	/* This needs a low specificity so it won't override the rules from the button element if defined in theme.json. */
+	box-shadow: none;
+	text-decoration: none;
+
+	/* The extra 2px are added to size solids the same as the outline versions.*/
+	padding: calc(0.667em + 2px) calc(1.333em + 2px);
+
+	font-size: 1.125em;
+}
+
+.wp-block-file__button {
+	background: #32373c;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+</style>
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="adsanity-cas-css" href="https://insurancenewsnet.com/cas-custom-sizes/?ver=1.6" type="text/css" media="all">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" id="inn-style-css" href="https://insurancenewsnet.com/wp-content/themes/inn-2-child/style.css?ver=1761077812" type="text/css" media="all">
+
+<style id="social_rocket-inline-css" type="text/css">
+
+				 .social-rocket-buttons {
+					display: block;
+				}
+				 .social-rocket-buttons .social-rocket-button,
+				 .social-rocket-buttons .social-rocket-button-anchor,
+				 .social-rocket-buttons .social-rocket-shares-total {
+					-webkit-box-flex: initial;
+					-ms-flex: initial;
+					flex: initial;
+				}
+			
+			 .social-rocket-buttons .social-rocket-shares-total {
+				color: #252525;
+			}
+			 .social-rocket-buttons {
+				text-align: right;
+			}
+			 .social-rocket-buttons-heading {
+				text-align: right;
+			}
+			 .social-rocket-button {
+				border-style: solid;
+				border-width: 1px;
+				
+			}
+			 .social-rocket-buttons .social-rocket-button,
+			 .social-rocket-buttons .social-rocket-button:last-child,
+			 .social-rocket-buttons .social-rocket-shares-total {
+				margin-bottom: 5px;
+				margin-right: 5px;
+			}
+		
+			.social-rocket-floating-buttons .social-rocket-shares-total {
+				color: #252525;
+			}
+		
+			.social-rocket-floating-buttons.social-rocket-position-top,
+			.social-rocket-floating-buttons.social-rocket-position-bottom {
+				text-align: center;
+			}
+		
+			.social-rocket-floating-buttons .social-rocket-floating-button {
+				border-style: none;
+				border-width: 0px;
+				border-radius: 0px;
+			}
+		
+			.social-rocket-floating-buttons .social-rocket-floating-button,
+			.social-rocket-floating-buttons .social-rocket-shares-total {
+				margin-bottom: 0px;
+			}
+			
+			.social-rocket-tweet {
+				background-color: #429cd6;
+				color: #ffffff;
+				font-size: 24px;
+				border-style: none;
+				border-width: 1px;
+				border-color: #dddddd;
+				border-radius: 0px;
+			}
+			.social-rocket-tweet a {
+				border-left: 10px solid #3c87b2;
+			}
+			.social-rocket-tweet-cta {
+				color: #ffffff;
+				text-align: right;
+			}
+		
+				@media screen and (max-width: 782px) {
+					.social-rocket-inline-buttons.social-rocket-desktop-only {
+						display: none !important;
+					}
+					.social-rocket-inline-buttons.social-rocket-mobile-only {
+						display: block;
+					}
+				}
+				@media screen and (min-width: 783px) {
+					.social-rocket-inline-buttons.social-rocket-mobile-only {
+						display: none !important;
+					}
+					.social-rocket-inline-buttons.social-rocket-desktop-only {
+						display: block;
+					}
+				}
+			
+				@media screen and (max-width: 782px) {
+					.social-rocket-floating-buttons.social-rocket-desktop-only {
+						display: none !important;
+					}
+					.social-rocket-floating-buttons.social-rocket-mobile-only {
+						display: block;
+					}
+				}
+				@media screen and (min-width: 783px) {
+					.social-rocket-floating-buttons.social-rocket-mobile-only {
+						display: none !important;
+					}
+					.social-rocket-floating-buttons.social-rocket-desktop-only {
+						display: block;
+					}
+				}
+			
+</style>
+
+
+
+
+
+<link rel="stylesheet" id="ws-plugin--s2member-css" href="https://insurancenewsnet.com/wp-content/plugins/s2member/s2member-o.php?ws_plugin__s2member_css=1&amp;qcABC=1&amp;ver=220318-220318-4215555115" type="text/css" media="all">
+<script type="rocketlazyloadscript">!(function(S,_name){S[_name]=S[_name]||function I(){(I.q=I.q||[]).push(arguments)},S[_name].v=S[_name].v||2,S[_name].s="4";!(function(S,I,V,t){function P(V,t){try{P=S.localStorage,(V=JSON.parse(P[decodeURI(decodeURI('g%25%36%35%74%25%34%39%74em'))]("_aQS01RTQ1QzJCNTY5Mjc0MDAzMUY3MEM3N0ItMQ")).lgk||[])&&(t=S[I].pubads())&&V.forEach((function(S){S&&S[0]&&t.setTargeting(S[0],S[1]||"")}))}catch(A){}var P}try{(t=S[I]=S[I]||{}).cmd=t.cmd||[],typeof t.pubads===V?P():typeof t.cmd.unshift===V?t.cmd.unshift(P):t.cmd.push(P)}catch(A){}})(window,decodeURI(decodeURI('%25%367%25%36%66%25%36%66%2567l%256%35%257%34%2561%256%37')),"function");;})(window,decodeURI(decodeURI('%25%36%31%64mi%72%25%36%31l')));!(function(S,I,V,t){V=S.createElement(I),S=S.getElementsByTagName(I)[0],V.async=1,V.src="https://lovelydrum.com/chunks/pglhha9on_3cw.v2.js",(t=0)&&t(V),S.parentNode.insertBefore(V,S)})(document,"script");</script><script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://insurancenewsnet.com/wp-includes/js/jquery/jquery.js?ver=3.7.0" id="jquery-core-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" src="https://insurancenewsnet.com/wp-content/cache/min/1/wp-includes/js/jquery/jquery-migrate.js?ver=1760712356" id="jquery-migrate-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" src="https://insurancenewsnet.com/wp-content/cache/min/1/wp-content/plugins/wp-autosave/public/js/wp-autosave-public.js?ver=1760712356" id="wp-autosave-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://insurancenewsnet.com/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.js?ver=4.7.0" id="ppress-flatpickr-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://insurancenewsnet.com/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.js?ver=4.7.0" id="ppress-select2-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://insurancenewsnet.com/wp-content/themes/inn-2/js/modernizr-2.6.2-respond-1.1.0.min.js?ver=1761077812" id="inn-modernizr-js-js"></script>
+<link rel="https://api.w.org/" href="https://insurancenewsnet.com/wp-json/"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://insurancenewsnet.com/xmlrpc.php?rsd">
+<link rel="alternate" type="application/json+oembed" href="https://insurancenewsnet.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Finsurancenewsnet.com%2Finnarticle%2Fcms-increases-ma-broker-compensation-for-2026">
+<link rel="alternate" type="text/xml+oembed" href="https://insurancenewsnet.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Finsurancenewsnet.com%2Finnarticle%2Fcms-increases-ma-broker-compensation-for-2026&amp;format=xml">
+<meta name="facebook-domain-verification" content="ci4yw6q9fcaavrzxyn2rl3ar0nyk7u">
+
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "mgk0dnudej");
+</script>
+
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">!(function(o,_name){o[_name]=o[_name]||function $(){($.q=$.q||[]).push(arguments)},o[_name].v=o[_name].v||2;!(function(o,t,e,n,c,a){function f(n,c){(n=(function(t,e){try{if(e=(t=o.localStorage).getItem("_aQS01RTQ1QzJCNTY5Mjc0MDAzMUY3MEM3N0ItMQ"))return JSON.parse(e).lgk||[];if((t.getItem(decodeURI(decodeURI('%76%25%334%61%2563%2531e%69%25%35a%25%372%253%30')))||"").split(",")[4]>0)return[[_name+"-engaged","true"]]}catch(n){}})())&&typeof n.forEach===e&&(c=o[t].pubads())&&n.forEach((function(o){o&&o[0]&&c.setTargeting(o[0],o[1]||"")}))}try{(a=o[t]=o[t]||{}).cmd=a.cmd||[],typeof a.pubads===e?f():typeof a.cmd.unshift===e?a.cmd.unshift(f):a.cmd.push(f)}catch(i){}})(window,"googletag","function");;})(window,decodeURI(decodeURI('%61%25%364%256d%2569%25%372%61%25%36c')));!(function(t,c,i){i=t.createElement(c),t=t.getElementsByTagName(c)[0],i.async=1,i.src="https://lovelydrum.com/public/90806d24413/972ccc812ef890ad4c438c8b9.bundle.js",t.parentNode.insertBefore(i,t)})(document,"script");</script>
+
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+    (function(a,b,c,d){
+    a="https://tags.tiqcdn.com/utag/adtaxi/insurancenewsnet.com/prod/utag.js";
+    b=document;c="script";d=b.createElement(c);d.src=a;d.type="text/java"+c;d.async=true;
+    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+</script>
+<link rel="preload" as="font" href="https://insurancenewsnet.com/wp-content/themes/inn-2/fonts/icomoon.woff?-yak2lk" crossorigin=""><meta name="generator" content="Elementor 3.27.6; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<style class="wpcode-css-snippet">.search-form-mobile{
+    background: #fff;
+    box-shadow: none !important;
+    position: relative;
+	margin-bottom: 12px;
+	width: 92%;
+	margin-left: 11px;
+	border:1px solid black;
+}
+.search-form-mobile button[type="submit"], .search-form-mobile input.gsc-search-button, .search-form-mobile input.gsc-search-button:hover, .search-form-mobile input.gsc-search-button:focus {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    overflow: hidden;
+    height: 27px;
+    width: 69px;
+    padding: 0 10px;
+    border-radius: 3px;
+}
+.search-form-mobile input[type="search"], .search-form-mobile input[type="text"] {
+    background: transparent;
+    margin: 0;
+/*     padding-right: 85px; */
+}</style><link rel="icon" href="https://insurancenewsnet.com/wp-content/uploads/2022/02/inn-icon-148x148.png" sizes="32x32">
+<link rel="icon" href="https://insurancenewsnet.com/wp-content/uploads/2022/02/inn-icon-250x250.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://insurancenewsnet.com/wp-content/uploads/2022/02/inn-icon-250x250.png">
+<meta name="msapplication-TileImage" content="https://insurancenewsnet.com/wp-content/uploads/2022/02/inn-icon.png">
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><script type="rocketlazyloadscript">
+/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}
+var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=!1}
+return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}
+if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}
+setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}
+var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i++){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",!0);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}
+if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}
+else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))
+</script>
+    
+    <script type="rocketlazyloadscript">
+		jQuery(document).ready(function() {
+			jQuery(".top-leaderboard img, .top-leaderboard-home img").load(function() {
+				$(".top-leaderboard, .top-leaderboard-home ").css("min-height", $(this).height() + 20);
+			});
+		});
+	</script>    <!-- icons -->
+    <style>
+        @font-face {
+            font-family: "icomoon";
+            src: url("https://insurancenewsnet.com/wp-content/themes/inn-2/fonts/icomoon.eot?-yak2lk");
+            src: url("https://insurancenewsnet.com/wp-content/themes/inn-2/fonts/icomoon.eot?#iefix-yak2lk") format("embedded-opentype"), url("https://insurancenewsnet.com/wp-content/themes/inn-2/fonts/icomoon.woff?-yak2lk") format("woff"), url("https://insurancenewsnet.com/wp-content/themes/inn-2/fonts/icomoon.ttf?-yak2lk") format("truetype"), url("https://insurancenewsnet.com/wp-content/themes/inn-2/fonts/icomoon.svg?-yak2lk#icomoon") format("svg");
+            font-weight: normal;
+            font-style: normal;
+            display: swap;
+        }
+    </style>
+
+
+
+</head>
+<body class=" single-page post-type-innarticle      ">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZV7H2B" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+
+
+    <div id="wrapper">    <img width="446" height="88" class="logo-print" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20446%2088'%3E%3C/svg%3E" style="display: none;" alt="" data-lazy-src="https://insurancenewsnet.com/wp-content/themes/inn-2/images/logo-print.png"><noscript><img width="446" height="88" class="logo-print" src="https://insurancenewsnet.com/wp-content/themes/inn-2/images/logo-print.png" style="display: none;" alt=""></noscript>
+    <div class="w1">
+        <!-- BEGIN HEADER INCLUDE -->
+        <header id="header" class="header_default" style="background-color:#FFF !important">
+
+            <!-- Menu items template -->
+            <div class="header-top clearfix">
+    <div class="row">
+        <div class="logo">
+            <h2><a title="InsuranceNewsNet" href="/">
+                    <span class="none" style="line-height:0">
+                                                    <img style="max-width:100%; width:100%; height:auto" width="1400" height="250" alt="InsuranceNewsNet — Your Industry. One Source.™" src="https://insurancenewsnet.com/wp-content/themes/inn/images/inn-site-top.png" data-lazy-src="https://insurancenewsnet.com/wp-content/themes/inn/images/inn-site-top.png" data-ll-status="loaded" class="entered lazyloaded"><noscript><img style="max-width:100%; width:100%; height:auto" width="500" height="90" alt="InsuranceNewsNet — Your Industry. One Source.™" src="https://insurancenewsnet.com/wp-content/themes/inn/images/inn-site-top.png"></noscript>
+
+                                            </span></a></h2>
+        </div>
+        <div class="header-right">
+            <div class="sign-up">
+
+                                    <a href="https://insurancenewsnet.com/sign-in/" class="button info tiny"><span class="icon-user"></span>
+                        Sign in
+                    </a>
+                
+
+
+            </div>
+            <div class="top-block clearfix">
+                <!-- BEGIN SEARCH FORM -->
+                <div class="search-form">
+                    
+<!-- # BEGIN SEARCH FORM # -->
+<form action="/" method="get" role="search">
+	<fieldset>
+		<button type="submit" class="right"><span class="icon-search"></span></button>
+		<input type="search" placeholder="What are you looking for?" name="s" value="">
+	</fieldset>
+</form>
+<!-- # END SEARCH FORM (search-form.php) # -->                </div>
+                <!-- END SEARCH FORM -->
+
+                <!-- BEGIN UTLITY NAV -->
+                <nav class="top-nav clearfix">
+                    <ul>
+                                                    <li class="subscribe"><a href="https://insurancenewsnet.com/subscribe">Subscribe</a></li>
+                                                <li><a href="https://insurancenewsnet.com/about-insurancenewsnet">About</a></li>
+                        <li><a href="https://innmediakit.com" target="_blank">Advertise</a></li>
+                        <li><a href="https://insurancenewsnet.com/contact-insurancenewsnet">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- BEGIN UTLITY NAV -->
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- BEGIN MAIN NAV -->
+    <nav id="nav" class="clearfix">
+                    <div class="current-menu">
+                <a class="home" href="https://insurancenewsnet.com">Home</a>
+                                    <span class="text">Now reading <a href="https://insurancenewsnet.com/topics/washington-wire"><span class="washington-wireTxt">Washington Wire</span></a></span>                                <!--<input type="hidden" id="ad--interstital-category-id" value="28" />
+							<input type="hidden" id="ad--interstital-category-name" value="washington-wire" /> -->
+            </div>
+        
+
+
+
+        <div class="topics">
+
+            <a class="topic-opener dropdown" href="#" aria-expanded="false" aria-controls="drop" data-dropdown="drop"><span class="bar"><span></span></span> Topics</a>
+
+            <div aria-hidden="true" class="drop f-dropdown" data-dropdown-content="" id="drop">
+                <!-- <form action="#" class="search-form hide-lg hide-md show-sm">
+									<fieldset>
+										<button class="right" type="submit">Submit</button>
+										<div class="input">
+											<input type="search" placeholder="What are you looking for?">
+										</div>
+									</fieldset>
+								</form> -->
+                <div class="mobile search-form hide-lg hide-md show-sm">
+                    <gcse:searchbox-only resultsurl="https://insurancenewsnet.com//searchresults"></gcse:searchbox-only>
+                </div>
+                <ul class="main">
+                    <div class="menu-topic-navigation-container"><ul id="menu-topic-navigation" class="menu"><li id="menu-item-8151087" class="purple-border menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8151087"><a href="https://insurancenewsnet.com/topics/advisor-news">Advisor News</a></li>
+<li id="menu-item-8297123" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8297123"><a href="https://insurancenewsnet.com/annuity-index">Annuity Index</a></li>
+<li id="menu-item-8151078" class="ltgreen-border menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8151078"><a href="https://insurancenewsnet.com/topics/annuity-news-articles">Annuity News</a></li>
+<li id="menu-item-8250867" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8250867"><a href="https://insurancenewsnet.com/topics/companies">Companies</a></li>
+<li id="menu-item-8238806" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8238806"><a href="https://insurancenewsnet.com/topics/earnings">Earnings</a></li>
+<li id="menu-item-8251085" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8251085"><a href="https://insurancenewsnet.com/topics/fiduciary">Fiduciary</a></li>
+<li id="menu-item-8277599" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8277599"><a href="https://insurancenewsnet.com/topics/from-the-field">From the Field: Expert Insights</a></li>
+<li id="menu-item-8151080" class="orange-border menu-item menu-item-type-taxonomy menu-item-object-category current-innarticle-ancestor current-menu-parent current-innarticle-parent menu-item-8151080"><a href="https://insurancenewsnet.com/topics/employee-health-benefits-news-articles">Health/Employee Benefits</a></li>
+<li id="menu-item-8267371" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8267371"><a href="https://insurancenewsnet.com/topics/insurance-financial-fraud">Insurance &amp; Financial Fraud</a></li>
+<li id="menu-item-8277600" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8277600"><a href="https://insurancenewsnet.com/magazine">INN Magazine</a></li>
+<li id="menu-item-8277603" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8277603"><a href="https://insurancenewsnet.com/topics/inn-insider">Insiders Only</a></li>
+<li id="menu-item-8151079" class="ltorange-border menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8151079"><a href="https://insurancenewsnet.com/topics/life-insurance-news-articles">Life Insurance News</a></li>
+<li id="menu-item-8263904" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8263904"><a href="https://insurancenewsnet.com/topics/newswires">Newswires</a></li>
+<li id="menu-item-8151081" class="green-border menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8151081"><a href="https://insurancenewsnet.com/topics/property-casualty-insurance-news">Property and Casualty</a></li>
+<li id="menu-item-8151082" class="blue-border menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8151082"><a href="https://insurancenewsnet.com/topics/regulation-news-articles">Regulation News</a></li>
+<li id="menu-item-8175268" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8175268"><a href="https://insurancenewsnet.com/sponsor">Sponsored Articles</a></li>
+<li id="menu-item-8151083" class="blue-border menu-item menu-item-type-taxonomy menu-item-object-category current-innarticle-ancestor current-menu-parent current-innarticle-parent menu-item-8151083"><a href="https://insurancenewsnet.com/topics/washington-wire">Washington Wire</a></li>
+<li id="menu-item-8238805" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8238805"><a href="https://insurancenewsnet.com/topics/video">Videos</a></li>
+<li id="menu-item-8277604" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8277604"><a href="#">———</a></li>
+<li id="menu-item-8277605" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8277605"><a href="https://insurancenewsnet.com/about-insurancenewsnet">About</a></li>
+<li id="menu-item-8285817" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8285817"><a href="https://innmediakit.com">Advertise</a></li>
+<li id="menu-item-8277608" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8277608"><a href="https://insurancenewsnet.com/contact-insurancenewsnet">Contact</a></li>
+<li id="menu-item-8277607" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8277607"><a href="https://insurancenewsnet.com/editorial-staff">Editorial Staff</a></li>
+<li id="menu-item-8277609" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8277609"><a href="https://insurancenewsnet.com/manage-subscription">Newsletters</a></li>
+</ul></div>
+                    <!--- 						<li><a title="Life Insurance" href="https://insurancenewsnet.com/topics/life-insurance/" class="ltorange-border" onClick="_gaq.push(['_trackEvent', 'Topic Links in Nav', 'Click', 'Life Insurance']);">Life Insurance</a></li>
+									<li><a title="Annuity News" href="https://insurancenewsnet.com/topics/annuity-news/" class="ltgreen-border" onClick="_gaq.push(['_trackEvent', 'Topic Links in Nav', 'Click', 'Annuity News']);">Annuity News</a></li>
+									<li><a title="Health/Employee Benefits" href="https://insurancenewsnet.com/topics/health-employee-benefits/" class="orange-border" onClick="_gaq.push(['_trackEvent', 'Topic Links in Nav', 'Click', 'Health/Employee Benefits']);">Health/Employee Benefits</a></li>
+									<li><a title="Property & Casualty" href="https://insurancenewsnet.com/topics/property-casualty-news" class="green-border" onClick="_gaq.push(['_trackEvent', 'Topic Links in Nav', 'Click', 'Property & Casualty']);">Property & Casualty</a></li>
+                  <li><a title="Advisor News" href="http://www.advisornews.com" class="purple-border" target="_blank" onClick="_gaq.push(['_trackEvent', 'Topic Links in Nav', 'Click', 'Advisor News']);">Advisor News</a></li>
+									<li><a title="Washington Wire" href="https://insurancenewsnet.com/topics/washington-wire/" class="blue-border" onClick="_gaq.push(['_trackEvent', 'Topic Links in Nav', 'Click', 'Washington Wire']);">Washington Wire</a></li>
+									<li class="hide-md hide-sm"><a href="https://insurancenewsnet.com/topics/fiduciary-rule/" onClick="_gaq.push(['_trackEvent', 'Topic Links in Nav', 'Click', 'Regulation News']);">Regulation News</a></li>
+									<li><a title="Sponsored Content" href="https://insurancenewsnet.com/sponsor/" class="black-border" onClick="_gaq.push(['_trackEvent', 'Topic Links in Nav', 'Click', 'Sponsored Content']);">Sponsored Content</a></li>
+									<li><a title="Webinars" href="https://insurancenewsnet.com/topics/webinars/" class="black-border" onClick="_gaq.push(['_trackEvent', 'Topic Links in Nav', 'Click', 'Webinars']);">Webinars</a></li>
+									<li class="hide-lg hide-md show-sm"><a href="https://insurancenewsnet.com/topics/from-the-field" onClick="_gaq.push(['_trackEvent', 'Topic Links in Nav', 'Click', 'INN Exclusives']);">INN Exclusives</a></li>
+									<li class="hide-lg hide-md show-sm"><a href="https://insurancenewsnet.com/topics/newswires/" onClick="_gaq.push(['_trackEvent', 'Topic Links in Nav', 'Click', 'NewsWires']);">Newswires</a></li>
+									<li class="in-hold hide-lg hide-md show-sm"><a href="https://insurancenewsnet.com/topics/inn-insider/" class="blue-border" onClick="_gaq.push(['_trackEvent', 'Topic Links in Nav', 'Click', 'INNsider']);">INNsider</a></li>
+-->
+                </ul>
+                <!-- <div class="tag-block hide-lg show-sm">
+									<h2>Most Popular Tags</h2>
+									<ul>
+										<li><a href="#">insurance</a></li>
+										<li><a href="#">Obama</a></li>
+										<li><a href="#">ACA</a></li>
+										<li><a href="#">health insurance</a></li>
+										<li><a href="#">estate planning</a></li>
+										<li><a href="#">guaranteed life</a></li>
+										<li><a href="#">annuity</a></li>
+									</ul>
+								</div> -->
+            </div>
+        </div>
+        <div class="tab-nav hide-lg hide-sm">
+            <ul class="main-nav">
+                <li><a href="https://insurancenewsnet.com/topics/from-the-field/" onclick="_gaq.push(['_trackEvent', 'Topic Links in Nav', 'Click', 'INN Exclusives']);">Exclusives</a></li>
+                <li><a href="https://insurancenewsnet.com/topics/newswires/" onclick="_gaq.push(['_trackEvent', 'Topic Links in Nav', 'Click', 'NewsWires']);">NewsWires</a></li>
+                <li><a href="https://insurancenewsnet.com/magazine/">Magazine</a></li>
+                <li><a href="https://insurancenewsnet.com/manage-preferences">Newsletters</a></li>
+                <!-- <li><a href="#">Store</a></li> -->
+            </ul>
+        </div>
+        <div class="right-nav">
+            <a class="nav-opener"><span></span></a>
+            <div class="right-drop">
+                <div class="login hide-lg show-sm">
+
+                                            <div class="loggedout">
+                            <span class="loggedout-text"><a href="#popup1" class="lightbox">Sign in</a> or <a href="https://insurancenewsnet.com/manage-preferences">register</a> to be an&nbsp;INNsider.</span>
+                        </div>
+                                    </div>
+
+                <!-- Mobile Topics -->
+                <ul class="main-nav mobile-topics-wrapper">
+					<li><div class="search-form-mobile hide-md hide-lg show-sm small">
+<!-- # BEGIN SEARCH FORM # -->
+<form action="/" method="get" role="search">
+	<fieldset>
+		<button type="submit" class="right"><span class="icon-search"></span></button>
+		<input type="search" placeholder="What are you looking for?" name="s" value="">
+	</fieldset>
+</form>
+<!-- # END SEARCH FORM (search-form.php) # --></div></li>
+                    <li class="hide-md hide-lg show-sm small"><a href="https://insurancenewsnet.com/topics/advisor-news">AdvisorNews</a></li>
+                    <li class="hide-md hide-lg show-sm small"><a href="https://insurancenewsnet.com/topics/annuity-news-articles">Annuity News</a></li>
+                    <li class="hide-md hide-lg show-sm small"><a href="https://insurancenewsnet.com/topics/companies">Companies</a></li>
+                    <li class="hide-md hide-lg show-sm small"><a href="https://insurancenewsnet.com/topics/earnings">Earnings</a></li>
+                    <li class="hide-md hide-lg show-sm small"><a href="https://insurancenewsnet.com/topics/fiduciart">Fiduciary</a></li>
+                    <li class="hide-md hide-lg show-sm small"><a href="https://insurancenewsnet.com/topics/employee-health-benefits-news-articles">Health/Employee Benefits</a></li>
+                    <li class="hide-md hide-lg show-sm small"><a href="https://insurancenewsnet.com/topics/insurance-financial-fraud">Insurance &amp; Financial Fraud</a></li>
+                    <li class="hide-md hide-lg show-sm small"><a href="https://insurancenewsnet.com/topics/from-the-field">INN Exclusives</a></li>
+                    <li class="hide-md hide-lg show-sm small"><a href="https://insurancenewsnet.com/magazine">INN Magazine</a></li>
+                    <li class="hide-md hide-lg show-sm small"><a href="https://insurancenewsnet.com/topics/insurtech">Insurtech</a></li>
+                    <li class="hide-md hide-lg show-sm small"><a href="https://insurancenewsnet.com/topics/life-insurance-news-articles">Life Insurance News</a></li>
+                    <li class="hide-lg hide-md show-sm small"><a href="https://insurancenewsnet.com/topics/newswires">Newswires</a></li>
+                    <li class="hide-md hide-lg show-sm small"><a href="https://insurancenewsnet.com/topics/property-casualty-insurance-news">Property and Casualty</a></li>
+                    <li class="hide-lg hide-md show-sm small"><a href="https://insurancenewsnet.com/topics/regulation-news-articles">Regulation News</a></li>
+                    <li class="hide-lg hide-md show-sm small"><a href="https://insurancenewsnet.com/sponsor">Sponsored Articles</a></li>
+                    <li class="hide-lg hide-md show-sm small"><a href="https://insurancenewsnet.com/topics/video">Video</a></li>
+                    <li class="hide-lg hide-md show-sm small"><a href="https://insurancenewsnet.com/topics/washington-wire">Washington Wire</a></li>
+                </ul>
+
+                <ul class="main-nav">
+                    <li class="hide-md hide-sm"><a href="https://insurancenewsnet.com/topics/life-insurance-news-articles/" onclick="_gaq.push(['_trackEvent', 'Topic Links in Nav', 'Click', 'Life Insurance']);">Life Insurance</a></li>
+                    <li class="hide-md hide-sm"><a href="https://insurancenewsnet.com/topics/annuity-news-articles/" onclick="_gaq.push(['_trackEvent', 'Topic Links in Nav', 'Click', 'Annuities']);">Annuities</a></li>
+                    <li class="hide-md hide-sm"><a href="https://insurancenewsnet.com/topics/advisor-news/" onclick="_gaq.push(['_trackEvent', 'Topic Links in Nav', 'Click', 'Advisor']);">Advisor</a></li>
+                    <li class="hide-md hide-sm"><a href="https://insurancenewsnet.com/topics/employee-health-benefits-news-articles/" onclick="_gaq.push(['_trackEvent', 'Topic Links in Nav', 'Click', 'Health &amp; Employee Benefits']);">Health/Benefits</a></li>
+                    <li class="hide-md hide-sm"><a href="https://insurancenewsnet.com/topics/property-casualty-insurance-news/" onclick="_gaq.push(['_trackEvent', 'Topic Links in Nav', 'Click', 'Property &amp; Casualty']);">Property &amp; Casualty</a></li>
+                    <li class="hide-md hide-sm"><a href="https://insurancenewsnet.com/topics/insurtech/" onclick="_gaq.push(['_trackEvent', 'Topic Links in Nav', 'Click', 'Magazine']);">Insurtech</a></li>
+                    <li class="hide-lg show-sm small"><a href="https://insurancenewsnet.com/about-insurancenewsnet">About</a></li>
+                    <li class="hide-lg show-sm small"><a href="https://innmediakit.com" target="_blank">Advertise</a></li>
+                    <li class="hide-lg show-sm small"><a href="https://insurancenewsnet.com/contact-insurancenewsnet">Contact</a></li>
+                    <li class="hide-lg show-sm small"><a href="https://insurancenewsnet.com/editorial-staff">Editorial Staff</a></li>
+                </ul>
+
+                <div class="social-block hide-lg show-sm">
+                    <h2>Get Social</h2>
+                    <ul class="social-networks">
+                        <li><a class="facebook" href="https://www.facebook.com/insnewsnet" target="_blank"><span class="icon-facebook2"></span> Facebook</a></li>
+                        <li><a class="twitter" href="https://twitter.com/insnewsnet" target="_blank"><span class="icon-twitter2"></span> X</a></li>
+                        <li><a class="linked" href="https://www.linkedin.com/company/insurancenewsnet-com" target="_blank"><span class="icon-linkedin2"></span> LinkedIn</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END MAIN NAV -->
+
+
+
+</div>            <!-- Menu items template -->
+
+                                <div class="main-ad top-leaderboard" data-set="ad-apex">
+                        <div class="row movearound">
+                            
+                            <!-- <div class="top Leaderboard">
+													<div id="mobile-ros-top-leaderboard">
+																											</div>
+												</div> -->
+
+
+
+                            <div class="top Leaderboard">
+                                <div id="sponsor-top-leaderboard" class="hide">
+                                    <!-- adsanity_show_ad_group(array( 'align' => 'alignnone', 'num_ads' => 1, 'num_columns' => 1, 'group_ids' => array(833072), 'return' => false));-->
+                                    <!-- Sponsored-->
+                                                                    </div>
+                                <div id="ros-top-leaderboard" class="hide">
+
+                                    <!--adsanity_show_ad_group(array( 'align' => 'alignnone', 'num_ads' => 1, 'num_columns' => 1, 'group_ids' => array(833086), 'return' => false)); -->
+                                    <!-- ROS -->
+                                                                            
+<div id="ad-8313259" class="ad-970x250 adsanity-970x250 alignnone adsanity-alignnone"><div class="adsanity-inner">
+
+<a rel="nofollow" href="https://insurancenewsnet.com/ads/one-america-2025-11-billboard" target="_blank"><img loading="lazy" width="970" height="250" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20970%20250'%3E%3C/svg%3E" class="no-lazy-load wp-post-image" alt="" decoding="async" data-lazy-srcset="https://insurancenewsnet.com/wp-content/uploads/2025/10/OneAmerica_970x250_2025-11.png 970w, https://insurancenewsnet.com/wp-content/uploads/2025/10/OneAmerica_970x250_2025-11-900x232.png 900w, https://insurancenewsnet.com/wp-content/uploads/2025/10/OneAmerica_970x250_2025-11-175x45.png 175w, https://insurancenewsnet.com/wp-content/uploads/2025/10/OneAmerica_970x250_2025-11-920x237.png 920w, https://insurancenewsnet.com/wp-content/uploads/2025/10/OneAmerica_970x250_2025-11-867x223.png 867w, https://insurancenewsnet.com/wp-content/uploads/2025/10/OneAmerica_970x250_2025-11-230x59.png 230w, https://insurancenewsnet.com/wp-content/uploads/2025/10/OneAmerica_970x250_2025-11-389x100.png 389w" data-lazy-sizes="(max-width: 970px) 100vw, 970px" data-lazy-src="https://insurancenewsnet.com/wp-content/uploads/2025/10/OneAmerica_970x250_2025-11.png"><noscript><img loading="lazy" width="970" height="250" src="https://insurancenewsnet.com/wp-content/uploads/2025/10/OneAmerica_970x250_2025-11.png" class="no-lazy-load wp-post-image" alt="" decoding="async" srcset="https://insurancenewsnet.com/wp-content/uploads/2025/10/OneAmerica_970x250_2025-11.png 970w, https://insurancenewsnet.com/wp-content/uploads/2025/10/OneAmerica_970x250_2025-11-900x232.png 900w, https://insurancenewsnet.com/wp-content/uploads/2025/10/OneAmerica_970x250_2025-11-175x45.png 175w, https://insurancenewsnet.com/wp-content/uploads/2025/10/OneAmerica_970x250_2025-11-920x237.png 920w, https://insurancenewsnet.com/wp-content/uploads/2025/10/OneAmerica_970x250_2025-11-867x223.png 867w, https://insurancenewsnet.com/wp-content/uploads/2025/10/OneAmerica_970x250_2025-11-230x59.png 230w, https://insurancenewsnet.com/wp-content/uploads/2025/10/OneAmerica_970x250_2025-11-389x100.png 389w" sizes="(max-width: 970px) 100vw, 970px" /></noscript></a>
+</div></div>
+
+                                                                        
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="test-ad hide">
+                                                    </div>
+
+                    </div>
+                    </header>
+        <main id="main" class="washington-wire TBrdr" role="main">
+            <!-- END HEADER INCLUDE -->
+
+
+
+	<div class="single row clearfix sidebar-border">
+
+
+		<!-- # BEGIN SINGLE POST # -->
+		
+<section id="article-content" class="columns large-14 equal ">
+	<div class="top-text clearfix">
+		
+			<div class="page-title">
+
+				<span class="post-category"><a href="https://insurancenewsnet.com/topics/employee-health-benefits-news-articles">Health/Employee Benefits News</a></span>
+
+				
+
+			</div>
+				<div class="main-ad show-sm hide-md hide-lg" data-set="ad-apex">
+			<!-- placehoder to display ad on smaller devices -->
+		</div>
+
+		<div class="text-wrap" itemscope="" itemtype="http://schema.org/NewsArticle">
+			<div itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization">
+				<div itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject">
+					<meta itemprop="url" content="https://insurancenewsnet.com/wp-content/uploads/2018/04/inn-og-default.jpg">
+
+				</div>
+				<meta itemprop="name" content="InsuranceNewsNet.com">
+			</div>
+
+			<div itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject">
+				<meta itemprop="url" content="https://insurancenewsnet.com/wp-content/uploads/2025/06/CMS-increases-Medicare-Advantage-broker-compensation-for-2026-920x483.jpg">
+			</div>
+
+			<!-- SECTION HEADER -->
+			<header>
+				<div class="info-hold text-right">
+											<!--	content-single.php -->
+
+						<a class="rss"></a><a href="https://insurancenewsnet.com/topics/washington-wire" "?feed="rss&quot;"><span class="ico icon-rss washington-wireTxt"></span>Washington Wire RSS</a>
+						<span class="news hide-lg hide-md show-sm"><a href="https://insurancenewsnet.com/manage-preferences">Get our newsletter</a></span>
+									</div>
+				<div class="meta">
+					<div class="right-part right hide-sm">
+						<a rel="nofollow" class="order washington-wireBtn1" href="/reprints?pub=insurancenewsnet.com&amp;articleURL=https://insurancenewsnet.com/innarticle/cms-increases-ma-broker-compensation-for-2026" target="_blank"><em class="icon-printer"></em> Order Prints</a>
+						<!-- <a class="share washington-wireBtn2 addthis_button" href="#"><em class="icon-export"></em> Share</a> -->
+					</div>
+					<span class="time" itemprop="datePublished"><time datetime="06/24/2025"> June 24, 2025 </time></span>
+					<span class="washington-wire cat-mark"><a href="/topics/washington-wire">Washington Wire</a></span>
+					<!--<span class="comments"><a href="javascript:scrollToView('#sitecomments')"><span class="dsq-postid" data-dsqidentifier="8305477 https://insurancenewsnet.com/?post_type=innarticle&#038;p=8305477">No comments</span></a></span>-->
+
+										<div class="social-rocket-inline-buttons"><div class="social-rocket-buttons"><div class="social-rocket-button social-rocket-button-round social-rocket-facebook " data-network="facebook"><a class="social-rocket-button-anchor" href="http://www.facebook.com/share.php?u=https%3A%2F%2Finsurancenewsnet.com%2Finnarticle%2Fcms-increases-ma-broker-compensation-for-2026" target="_blank" aria-label="Share"><i class="fab fa-facebook-f social-rocket-button-icon"></i><span class="social-rocket-button-cta">Share</span></a></div><div class="social-rocket-button social-rocket-button-round social-rocket-linkedin " data-network="linkedin"><a class="social-rocket-button-anchor" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Finsurancenewsnet.com%2Finnarticle%2Fcms-increases-ma-broker-compensation-for-2026" target="_blank" aria-label="Share"><i class="fab fa-linkedin-in social-rocket-button-icon"></i><span class="social-rocket-button-cta">Share</span></a></div><div class="social-rocket-button social-rocket-button-round social-rocket-twitter " data-network="twitter"><a class="social-rocket-button-anchor" href="https://twitter.com/intent/tweet?text=CMS%20increases%20MA%20broker%20compensation%20for%202026&amp;url=https%3A%2F%2Finsurancenewsnet.com%2Finnarticle%2Fcms-increases-ma-broker-compensation-for-2026" target="_blank" aria-label="Tweet"><i class="fab fa-twitter social-rocket-button-icon"></i><span class="social-rocket-button-cta">Tweet</span></a></div><div class="social-rocket-button social-rocket-button-round social-rocket-email social-rocket-no-pop" data-network="email"><a class="social-rocket-button-anchor" href="mailto:?Subject=CMS%20increases%20MA%20broker%20compensation%20for%202026&amp;Body=I%20saw%20this%20and%20thought%20of%20you%21%20https%3A%2F%2Finsurancenewsnet.com%2Finnarticle%2Fcms-increases-ma-broker-compensation-for-2026" target="_blank" aria-label="Email"><i class="fas fa-envelope social-rocket-button-icon"></i><span class="social-rocket-button-cta">Email</span></a></div></div></div>			</div></header>
+
+			<div class="content">
+				<div class="main-text" id="post-8305477">
+
+
+					<!-- # BEGIN CONTENT-SINGLE POST # -->
+					<!-- POST TITLE -->
+					<h1 itemprop="headline">CMS increases MA broker compensation for 2026</h1>					<div class="addthis_inline_share_toolbox_zhgc"></div>
+					<div class="push-box" itemprop="articleBody">
+																<figure class="big pull-box">
+											<!-- img width="835" height="440" alt="image description" src="images/img-16.jpg"-->
+											<img loading="lazy" width="1150" height="610" src="https://insurancenewsnet.com/wp-content/uploads/2025/06/CMS-increases-Medicare-Advantage-broker-compensation-for-2026-1150x610.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image entered lazyloading" alt="Icons and title Medicare Advantage with many dollar bills flying through the air. CMS increases MA broker compensation for 2026." decoding="async" data-lazy-srcset="https://insurancenewsnet.com/wp-content/uploads/2025/06/CMS-increases-Medicare-Advantage-broker-compensation-for-2026-1150x610.jpg 1150w, https://insurancenewsnet.com/wp-content/uploads/2025/06/CMS-increases-Medicare-Advantage-broker-compensation-for-2026-175x92.jpg 175w, https://insurancenewsnet.com/wp-content/uploads/2025/06/CMS-increases-Medicare-Advantage-broker-compensation-for-2026-230x121.jpg 230w" data-lazy-sizes="(max-width: 1150px) 100vw, 1150px" data-lazy-src="https://insurancenewsnet.com/wp-content/uploads/2025/06/CMS-increases-Medicare-Advantage-broker-compensation-for-2026-1150x610.jpg" data-ll-status="loading" sizes="(max-width: 1150px) 100vw, 1150px" srcset="https://insurancenewsnet.com/wp-content/uploads/2025/06/CMS-increases-Medicare-Advantage-broker-compensation-for-2026-1150x610.jpg 1150w, https://insurancenewsnet.com/wp-content/uploads/2025/06/CMS-increases-Medicare-Advantage-broker-compensation-for-2026-175x92.jpg 175w, https://insurancenewsnet.com/wp-content/uploads/2025/06/CMS-increases-Medicare-Advantage-broker-compensation-for-2026-230x121.jpg 230w"><noscript><img loading="lazy" width="1150" height="610" src="https://insurancenewsnet.com/wp-content/uploads/2025/06/CMS-increases-Medicare-Advantage-broker-compensation-for-2026-1150x610.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Icons and title Medicare Advantage with many dollar bills flying through the air. CMS increases MA broker compensation for 2026." decoding="async" srcset="https://insurancenewsnet.com/wp-content/uploads/2025/06/CMS-increases-Medicare-Advantage-broker-compensation-for-2026-1150x610.jpg 1150w, https://insurancenewsnet.com/wp-content/uploads/2025/06/CMS-increases-Medicare-Advantage-broker-compensation-for-2026-175x92.jpg 175w, https://insurancenewsnet.com/wp-content/uploads/2025/06/CMS-increases-Medicare-Advantage-broker-compensation-for-2026-230x121.jpg 230w" sizes="(max-width: 1150px) 100vw, 1150px" /></noscript>										</figure>
+
+							
+
+							<!-- POST AUTHOR -->
+
+							<div class="spacer-border"></div>
+
+							<div class="author-info" itemprop="author">
+																									<span class="name">By <a href="https://insurancenewsnet.com/author/susan-rupeinnfeedback-com" title="Posts by Susan Rupe" rel="author">Susan Rupe</a></span>
+								
+
+															</div><!-- .author-info -->
+
+							<!-- Go to www.addthis.com/dashboard to customize your tools -->
+							<div class="addthis_sharing_toolbox share-block"></div>
+
+							<div class="spacer"></div>
+
+															
+															
+
+
+							<div class="article-content"><p>The Centers for Medicare and Medicaid Services <a href="https://www.cms.gov/medicare/health-drug-plans/managed-care-marketing/medicare-marketing-guidelines/agent-broker-compensation">is adjusting agent compensation</a> for Medicare Advantage upward, a move that one agent association CEO described as “a meaningful step in the right direction.”</p>
+<p>The CMS adjustment represents the largest MA increase in broker compensation in years.</p><div class="story-block left pull-box hide-sm show-lg show-md" data-set="related-stories"></div>
+<p>Here are the 2026 MA compensation rates by state/region:</p><div class="ad-hold text-center hide-lg hide-md show-sm" data-set="ad-pinnacle"></div>
+<ul>
+<li>For&nbsp;<strong>Connecticut, Pennsylvania and the District of Columbia</strong>, initial Medicare Advantage compensation will increase from $705 per member per year to $781 per member per year, a 10.8% change year over year. Renewal compensation will increase from $353 per member per year to $391 per member per year, a 10.8% change YOY.</li>
+<li>For&nbsp;<strong>California and New Jersey</strong>, 2026 initial MA compensation will increase from $780 per member per year to $864 per member per year, a 10.8% change YOY. Renewal compensation will increase from $390 per member per year to $432 per member per year, a 10.8% change YOY.</li>
+<li>For&nbsp;<strong>Puerto Rico and the U.S. Virgin Islands</strong>, 2026 initial MA compensation will increase from $428 per member per year to $474 per member per year, a 10.7% change YOY. Renewal compensation will increase from $214 per member per year to $237 per member per year, a 10.7% change YOY.</li>
+<li>In&nbsp;<strong>all other states</strong>, initial MA compensation will increase from $626 per member per year to $694 per member per year, a 10.9% change YOY. Renewal compensation will increase from $313 per member per year to $347 per member per year, a 10.9% change YOY.</li>
+</ul>
+<p>For Part D plans, initial compensation will increase from $109 per member per year to $114 per member per year, a 4.6% increase YOY. Renewal compensation will increase from $55 per member per year to $57 per member per year, a 3.6% increase YOY.</p>
+<h3>CMS move 'reflects growing recognition' of brokers</h3>
+<p>Kevin Mayeux, CEO of the National Association of Insurance and Financial Advisors, said the CMS move “reflects growing recognition of the critical role licensed insurance professionals play in guiding Medicare beneficiaries through a complex and often confusing system.</p>
+<p>"Insurance agents are highly trained professionals who provide personalized, informed guidance to help individuals choose the plans best suited to their needs. Their support doesn’t end with enrollment. Agents are on the front lines year-round helping clients navigate the challenges that arise after a plan is selected."</p><div class="ad-alignnone"><div class="ad-row">
+<div id="ad-8199057" class="ad-970x90 adsanity-970x90 alignnone adsanity-alignnone"><div class="adsanity-inner">
+
+<a rel="nofollow" href="https://insurancenewsnet.com/ads/legal-general-2023-01-super-leaderboard" target="_blank"><img width="971" height="91" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20971%2091'%3E%3C/svg%3E" class="no-lazy-load wp-post-image" alt="" decoding="async" data-lazy-srcset="https://insurancenewsnet.com/wp-content/uploads/2022/12/LegalGeneral_970x90_2023-01.png 971w, https://insurancenewsnet.com/wp-content/uploads/2022/12/LegalGeneral_970x90_2023-01-900x84.png 900w, https://insurancenewsnet.com/wp-content/uploads/2022/12/LegalGeneral_970x90_2023-01-175x16.png 175w, https://insurancenewsnet.com/wp-content/uploads/2022/12/LegalGeneral_970x90_2023-01-920x86.png 920w, https://insurancenewsnet.com/wp-content/uploads/2022/12/LegalGeneral_970x90_2023-01-867x81.png 867w, https://insurancenewsnet.com/wp-content/uploads/2022/12/LegalGeneral_970x90_2023-01-230x22.png 230w, https://insurancenewsnet.com/wp-content/uploads/2022/12/LegalGeneral_970x90_2023-01-389x36.png 389w" data-lazy-sizes="(max-width: 971px) 100vw, 971px" data-lazy-src="https://insurancenewsnet.com/wp-content/uploads/2022/12/LegalGeneral_970x90_2023-01.png"><noscript><img width="971" height="91" src="https://insurancenewsnet.com/wp-content/uploads/2022/12/LegalGeneral_970x90_2023-01.png" class="no-lazy-load wp-post-image" alt="" decoding="async" srcset="https://insurancenewsnet.com/wp-content/uploads/2022/12/LegalGeneral_970x90_2023-01.png 971w, https://insurancenewsnet.com/wp-content/uploads/2022/12/LegalGeneral_970x90_2023-01-900x84.png 900w, https://insurancenewsnet.com/wp-content/uploads/2022/12/LegalGeneral_970x90_2023-01-175x16.png 175w, https://insurancenewsnet.com/wp-content/uploads/2022/12/LegalGeneral_970x90_2023-01-920x86.png 920w, https://insurancenewsnet.com/wp-content/uploads/2022/12/LegalGeneral_970x90_2023-01-867x81.png 867w, https://insurancenewsnet.com/wp-content/uploads/2022/12/LegalGeneral_970x90_2023-01-230x22.png 230w, https://insurancenewsnet.com/wp-content/uploads/2022/12/LegalGeneral_970x90_2023-01-389x36.png 389w" sizes="(max-width: 971px) 100vw, 971px" /></noscript></a>
+</div></div>
+
+</div></div>
+<p>Mayeux said NAIFA wants to continue a dialogue with CMS to further improve the beneficiaries’ experience especially by revising the Compensation Rate Submission to require plans to report the specific rate they intend to pay independent agents. The current allowance of a reported range has resulted in shifts from being paid for service to no compensation during the plan year,&nbsp;he said.</p>
+<p>CMS’ move to adjust agent compensation comes on the heels of <a href="https://insurancenewsnet.com/innarticle/agent-groups-condemn-united-healthcare-eliminating-commissions">United Healthcare’s</a> recent decision<a href="https://insurancenewsnet.com/innarticle/unitedhealthcare-eliminating-commissions-on-medicare-drug-plans">&nbsp;to eliminate agent commissions</a>&nbsp;across more than 100 Medicare Advantage plans in more 20 states. Professional associations representing the agent community – NAIFA, the National Association of Benefits and Insurance Professionals and Health Agents for America – condemned United Healthcare’s actions.</p>
+<h3>HAFA urges congressional action on commissions</h3>
+<p>HAFA sent letters to Congress last week, urging lawmakers to investigate how CMS allowed United Healthcare to eliminate commissions after the company had already finalized its MA contracts with CMS. HAFA also wants Congress “to demand accountability from United Healthcare, other carriers and CMS and to take immediate action to ensure that agents are treated fairly and that consumer access to experienced assistance is not eroded.”</p><div class="ad-hold text-right hide-lg show-sm show-md right" data-set="ad-medallion"></div>
+<p>United Healthcare instituted a midyear cut to agent commissions after rates and benefits were finalized and approved by CMS, agent contracts were executed, and enrollment and renewal outreach efforts were completed. HAFA described this move as “a bait-and switch.”</p>
+<p><strong>© Entire contents copyright 2025 by InsuranceNewsNet.com Inc. All rights reserved. No part of this article may be reprinted without the expressed written consent from InsuranceNewsNet.com.</strong></p>
+<p>&nbsp;</p>
+<div class="innarticle-author-block"><div class="innarticle-author-avatar"><a href="https://insurancenewsnet.com/author/susan-rupeinnfeedback-com"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Susan Rupe" data-lazy-src="https://insurancenewsnet.com/wp-content/uploads/2023/03/srupe-2022-148x148.jpg" width="300" height="150"><noscript><img src="https://insurancenewsnet.com/wp-content/uploads/2023/03/srupe-2022-148x148.jpg" alt="Susan Rupe"></noscript></a></div><div class="innarticle-author-description"><p><a href="https://insurancenewsnet.com/author/susan-rupeinnfeedback-com">Susan Rupe</a> is managing editor for InsuranceNewsNet. She formerly served as communications director for an insurance agents' association and was an award-winning newspaper reporter and editor. Contact her at <a href="mailto:srupe@insurancenewsnet.com">srupe@insurancenewsnet.com</a>.</p></div></div><p></p><div class="ad-aligncenter"><div class="ad-row">
+<div id="ad-8312716" class="ad-728x271 adsanity-728x271 aligncenter adsanity-aligncenter"><div class="adsanity-inner">
+
+<a rel="nofollow" href="https://insurancenewsnet.com/ads/live-from-limra-2025-emtech-group-sponsor-banner" target="_blank"><img width="2000" height="745" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202000%20745'%3E%3C/svg%3E" class="no-lazy-load wp-post-image" alt="" decoding="async" data-lazy-srcset="https://insurancenewsnet.com/wp-content/uploads/2025/10/sponsored-large-advertorial-spot-emtech.jpg 2000w, https://insurancenewsnet.com/wp-content/uploads/2025/10/sponsored-large-advertorial-spot-emtech-900x335.jpg 900w, https://insurancenewsnet.com/wp-content/uploads/2025/10/sponsored-large-advertorial-spot-emtech-1200x447.jpg 1200w, https://insurancenewsnet.com/wp-content/uploads/2025/10/sponsored-large-advertorial-spot-emtech-1536x572.jpg 1536w, https://insurancenewsnet.com/wp-content/uploads/2025/10/sponsored-large-advertorial-spot-emtech-175x65.jpg 175w, https://insurancenewsnet.com/wp-content/uploads/2025/10/sponsored-large-advertorial-spot-emtech-920x343.jpg 920w, https://insurancenewsnet.com/wp-content/uploads/2025/10/sponsored-large-advertorial-spot-emtech-1150x428.jpg 1150w, https://insurancenewsnet.com/wp-content/uploads/2025/10/sponsored-large-advertorial-spot-emtech-867x323.jpg 867w, https://insurancenewsnet.com/wp-content/uploads/2025/10/sponsored-large-advertorial-spot-emtech-230x86.jpg 230w, https://insurancenewsnet.com/wp-content/uploads/2025/10/sponsored-large-advertorial-spot-emtech-389x145.jpg 389w" data-lazy-sizes="(max-width: 2000px) 100vw, 2000px" data-lazy-src="https://insurancenewsnet.com/wp-content/uploads/2025/10/sponsored-large-advertorial-spot-emtech.jpg"><noscript><img width="2000" height="745" src="https://insurancenewsnet.com/wp-content/uploads/2025/10/sponsored-large-advertorial-spot-emtech.jpg" class="no-lazy-load wp-post-image" alt="" decoding="async" srcset="https://insurancenewsnet.com/wp-content/uploads/2025/10/sponsored-large-advertorial-spot-emtech.jpg 2000w, https://insurancenewsnet.com/wp-content/uploads/2025/10/sponsored-large-advertorial-spot-emtech-900x335.jpg 900w, https://insurancenewsnet.com/wp-content/uploads/2025/10/sponsored-large-advertorial-spot-emtech-1200x447.jpg 1200w, https://insurancenewsnet.com/wp-content/uploads/2025/10/sponsored-large-advertorial-spot-emtech-1536x572.jpg 1536w, https://insurancenewsnet.com/wp-content/uploads/2025/10/sponsored-large-advertorial-spot-emtech-175x65.jpg 175w, https://insurancenewsnet.com/wp-content/uploads/2025/10/sponsored-large-advertorial-spot-emtech-920x343.jpg 920w, https://insurancenewsnet.com/wp-content/uploads/2025/10/sponsored-large-advertorial-spot-emtech-1150x428.jpg 1150w, https://insurancenewsnet.com/wp-content/uploads/2025/10/sponsored-large-advertorial-spot-emtech-867x323.jpg 867w, https://insurancenewsnet.com/wp-content/uploads/2025/10/sponsored-large-advertorial-spot-emtech-230x86.jpg 230w, https://insurancenewsnet.com/wp-content/uploads/2025/10/sponsored-large-advertorial-spot-emtech-389x145.jpg 389w" sizes="(max-width: 2000px) 100vw, 2000px" /></noscript></a>
+</div></div>
+
+</div></div></div>
+
+
+							<div class="addthis_inline_share_toolbox_zhgc"></div>
+														<!-- # END CONTENT-SINGLE POST (content_single.php) # -->
+
+
+													
+					</div><!--  /.push-box -->
+				</div><!-- /.main-text -->
+			</div><!-- /.hold -->
+		</div><!-- /.text-wrap -->
+	</div><!-- /.top-text.clearfix -->
+
+
+
+	<!-- BEGIN THEME'S COMMENTS SECTION -->
+	<div class="comment-block">
+
+		
+		<!--#### OLDER/NEWER POST NAV LINKS #### -->
+		<div class="two-col clearfix">
+			<div class="col"><div class="hold previous"><strong class="title ">Older</strong><p><a href="https://insurancenewsnet.com/innarticle/state-claims-added-to-amended-lawsuit-over-national-life-iul-illustrations">State claims added to amended lawsuit over National Life IUL illustrations</a></p></div></div><a class="btn-prev" href="https://insurancenewsnet.com/innarticle/state-claims-added-to-amended-lawsuit-over-national-life-iul-illustrations"><span class="icon-arrow-left6"></span></a><div class="col"><div class="hold next"><strong class="title text-right">Newer</strong><p><a href="https://insurancenewsnet.com/innarticle/how-smart-contracts-could-redefine-insurance-for-agents">How smart contracts could redefine insurance for agents</a></p></div></div><a class="btn-next" href="https://insurancenewsnet.com/innarticle/how-smart-contracts-could-redefine-insurance-for-agents"><span class="icon-arrow-right6"></span></a>
+			<!-- <div class="button-wrap text-center">
+				<a class="button large comment-btn " href="javascript:scrollToView('#sitecomments')"><span class="num "> <span class="icon-arrow-down6 right"></span></a>
+			</div> -->
+		</div>
+
+		  <div class="four-col hide-sm">	
+            <div class="col advisor-news">
+          <div class="wrap">
+            <h2>Advisor News</h2>
+            <ul>
+              
+                              <li><a href="https://insurancenewsnet.com/innarticle/gen-x-was-promised-jetpacks-not-assisted-living">Gen X was promised jetpacks, not assisted living</a></li>
+                              <li><a href="https://insurancenewsnet.com/oarticle/fpa-reimagines-its-conference-lineup-for-2026">FPA reimagines its conference lineup for 2026</a></li>
+                              <li><a href="https://insurancenewsnet.com/oarticle/strong-financial-discipline-linked-to-better-health">Strong financial discipline linked to better health</a></li>
+                              <li><a href="https://insurancenewsnet.com/innarticle/why-fiduciary-liability-insurance-is-necessary-as-pe-enters-the-401k-space">Why fiduciary liability insurance is necessary as PE enters the 401(k) space</a></li>
+                              <li><a href="https://insurancenewsnet.com/innarticle/client-conversations-words-to-use-and-words-to-lose">Client conversations: Words to use and words to lose</a></li>
+                          </ul>
+
+                        <a class="button tiny" href="https://insurancenewsnet.com/topics/advisor-news">More Advisor News</a>
+          </div>
+        </div>
+
+            <div class="col annuity-news-articles">
+          <div class="wrap">
+            <h2>Annuity News</h2>
+            <ul>
+              
+                              <li><a href="https://insurancenewsnet.com/oarticle/am-best-affirms-credit-ratings-of-wilton-re-ltd-and-its-subsidiaries-3">AM Best Affirms Credit Ratings of Wilton Re Ltd. and Its Subsidiaries</a></li>
+                              <li><a href="https://insurancenewsnet.com/innarticle/annuities-strengthening-the-three-legged-retirement-stool">Annuities: Strengthening the three-legged retirement stool</a></li>
+                              <li><a href="https://insurancenewsnet.com/innarticle/brighthouse-financial-accepts-4-1b-takeover-offer-from-aquarian">Brighthouse Financial accepts $4.1B takeover offer from Aquarian</a></li>
+                              <li><a href="https://insurancenewsnet.com/oarticle/trustage-launches-zonechoice-income-annuity">TruStage launches ZoneChoice income annuity</a></li>
+                              <li><a href="https://insurancenewsnet.com/innarticle/the-right-moment-for-a-charitable-gift-annuity">The right moment for a charitable gift annuity</a></li>
+                          </ul>
+
+                          <div class="logo-hold">
+                <strong class="title">Sponsor</strong>
+                <a href="/advertiser/lidp-consulting-services"><img width="93" height="31" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2093%2031'%3E%3C/svg%3E" data-lazy-src="https://insurancenewsnet.com/wp-content/uploads/2025/10/lidp-logo-300x100-1.jpg"><noscript><img width="93" height="31" src='https://insurancenewsnet.com/wp-content/uploads/2025/10/lidp-logo-300x100-1.jpg' /></noscript></a>              </div>
+                        <a class="button tiny" href="https://insurancenewsnet.com/topics/annuity-news-articles">More Annuity News</a>
+          </div>
+        </div>
+
+            <div class="col employee-health-benefits-news-articles">
+          <div class="wrap">
+            <h2>Health/Employee Benefits News</h2>
+            <ul>
+              
+                              <li><a href="https://insurancenewsnet.com/oarticle/am-best-affirms-credit-ratings-of-wilton-re-ltd-and-its-subsidiaries-3">AM Best Affirms Credit Ratings of Wilton Re Ltd. and Its Subsidiaries</a></li>
+                              <li><a href="https://insurancenewsnet.com/oarticle/health-insurance-premiums-set-to-soar-for-29000-sonoma-napa-covered-california-enrollees-as-subsidies-near-expiration">Health insurance premiums set to soar for 29,000 Sonoma, Napa Covered California enrollees as subsidies near expiration</a></li>
+                              <li><a href="https://insurancenewsnet.com/innarticle/genworth-financial-boosting-ltci-prospects-via-carescout-rate-hikes">Genworth Financial boosting LTCi prospects via CareScout, rate hikes</a></li>
+                              <li><a href="https://insurancenewsnet.com/oarticle/teachers-ask-tusd-to-change-priorities-as-health-insurance-costs-rise">Teachers ask TUSD to change priorities as health insurance costs rise</a></li>
+                              <li><a href="https://insurancenewsnet.com/oarticle/two-views-expiring-subsidies-are-a-first-step-to-meaningful-healthcare-reform">Two Views: Expiring subsidies are a first step to meaningful healthcare reform</a></li>
+                          </ul>
+
+                          <div class="logo-hold">
+                <strong class="title">Sponsor</strong>
+                <a href="/advertiser/arch-insurance-company"><img width="93" height="31" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2093%2031'%3E%3C/svg%3E" data-lazy-src="https://insurancenewsnet.com/wp-content/uploads/2025/10/arch-insurance-company.jpg"><noscript><img width="93" height="31" src='https://insurancenewsnet.com/wp-content/uploads/2025/10/arch-insurance-company.jpg' /></noscript></a>              </div>
+                        <a class="button tiny" href="https://insurancenewsnet.com/topics/employee-health-benefits-news-articles">More Health/Employee Benefits News</a>
+          </div>
+        </div>
+
+            <div class="col life-insurance-news-articles">
+          <div class="wrap">
+            <h2>Life Insurance News</h2>
+            <ul>
+              
+                              <li><a href="https://insurancenewsnet.com/oarticle/am-best-affirms-credit-ratings-of-wilton-re-ltd-and-its-subsidiaries-3">AM Best Affirms Credit Ratings of Wilton Re Ltd. and Its Subsidiaries</a></li>
+                              <li><a href="https://insurancenewsnet.com/oarticle/brighthouse-financial-announces-third-quarter-2025-results">Brighthouse Financial Announces Third Quarter 2025 Results</a></li>
+                              <li><a href="https://insurancenewsnet.com/oarticle/kbra-assigns-rating-to-jab-holdings-uk-ltd-and-affirms-ratings-for-prosperity-subsidiaries-following-acquisition-by-jab-holding-company">KBRA Assigns Rating to JAB Holdings UK Ltd. and Affirms Ratings for Prosperity Subsidiaries Following Acquisition by JAB Holding Company</a></li>
+                              <li><a href="https://insurancenewsnet.com/oarticle/november-is-national-family-caregivers-month-national-life-group-partners-with-homethrive-to-add-free-caregiver-support">November is National Family Caregivers Month: National Life Group Partners With Homethrive to Add Free Caregiver Support</a></li>
+                              <li><a href="https://insurancenewsnet.com/innarticle/3-ways-to-head-off-the-distribution-sales-cliff">3 ways to head off the distribution sales cliff</a></li>
+                          </ul>
+
+                          <div class="logo-hold">
+                <strong class="title">Sponsor</strong>
+                <a href="/advertiser/sapiens"><img width="93" height="31" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2093%2031'%3E%3C/svg%3E" data-lazy-src="https://insurancenewsnet.com/wp-content/uploads/2025/10/sapiens-logo.jpg"><noscript><img width="93" height="31" src='https://insurancenewsnet.com/wp-content/uploads/2025/10/sapiens-logo.jpg' /></noscript></a>              </div>
+                        <a class="button tiny" href="https://insurancenewsnet.com/topics/life-insurance-news-articles">More Life Insurance News</a>
+          </div>
+        </div>
+
+    </div>	</div><!-- /.comment-block -->
+	<!-- END THE THEME'S COMMENTS SECTION -->
+</section>
+
+
+<!-- sidebar sponsor test
+
+28cat_id5918parentParent ID
+-->
+
+<aside id="sidebar" class="sponsor article topic columns large-6 equal sub-category  test">
+
+				<div class="aside-hold clearfix">
+				<div class="sponsorship">
+					<!-- #1 -->
+					<div id="sponsor" class="sponsor hide">
+						<p class="sponsored-by"> - Presented By - </p>
+						<!-- Sponsor #1 Sponsor Logo Ad Postion -->
+						<!--adsanity_show_ad_group(array( 'align' => 'alignnone', 'num_ads' => 1, 'num_columns' => 1, 'group_ids' => array(833068), 'return' => false)); -->
+						<div class="ad-aligncenter"><div class="ad-row">
+<div id="ad-8309256" class="ad-300x100 adsanity-300x100 aligncenter adsanity-aligncenter"><div class="adsanity-inner">
+
+<a rel="nofollow" href="https://insurancenewsnet.com/ads/arch-insurance-company-2025-09-health-insurance-topic-sponsorship-logo" target="_blank"><img width="1873" height="310" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201873%20310'%3E%3C/svg%3E" class="no-lazy-load wp-post-image" alt="" decoding="async" data-lazy-srcset="https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_Logo_2025-09.png 1873w, https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_Logo_2025-09-900x149.png 900w, https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_Logo_2025-09-1200x199.png 1200w, https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_Logo_2025-09-1536x254.png 1536w, https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_Logo_2025-09-175x29.png 175w, https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_Logo_2025-09-920x152.png 920w, https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_Logo_2025-09-1150x190.png 1150w, https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_Logo_2025-09-867x143.png 867w, https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_Logo_2025-09-230x38.png 230w, https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_Logo_2025-09-389x64.png 389w" data-lazy-sizes="(max-width: 1873px) 100vw, 1873px" data-lazy-src="https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_Logo_2025-09.png"><noscript><img width="1873" height="310" src="https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_Logo_2025-09.png" class="no-lazy-load wp-post-image" alt="" decoding="async" srcset="https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_Logo_2025-09.png 1873w, https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_Logo_2025-09-900x149.png 900w, https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_Logo_2025-09-1200x199.png 1200w, https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_Logo_2025-09-1536x254.png 1536w, https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_Logo_2025-09-175x29.png 175w, https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_Logo_2025-09-920x152.png 920w, https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_Logo_2025-09-1150x190.png 1150w, https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_Logo_2025-09-867x143.png 867w, https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_Logo_2025-09-230x38.png 230w, https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_Logo_2025-09-389x64.png 389w" sizes="(max-width: 1873px) 100vw, 1873px" /></noscript></a>
+</div></div>
+
+</div></div>
+						<!-- ROS #1 Sponsor Ad Logo Postion -->
+						<!--adsanity_show_ad_group(array( 'align' => 'alignnone', 'num_ads' => 1, 'num_columns' => 1, 'group_ids' => array(833089), 'return' => false)); -->
+						
+					</div>
+					<div class="ad-group">
+
+						<!-- #2 -->
+						<div id="top-medium-rectangle">
+							<!-- Sponsor | #2 | Top Medium Rectangle | Ad Postion -->
+							<div id="sponsor-top-medium" class="hide"><!--adsanity_show_ad_group(array( 'align' => 'alignnone', 'num_ads' => 1, 'num_columns' => 1, 'group_ids' => array(833069), 'return' => false)); -->
+								<div class="ad-aligncenter"><div class="ad-row">
+<div id="ad-8309251" class="ad-300x250 adsanity-300x250 aligncenter adsanity-aligncenter"><div class="adsanity-inner">
+
+<a rel="nofollow" href="https://insurancenewsnet.com/ads/arch-insurance-company-2025-09-health-insurance-topic-sponsorship-top-rectangle" target="_blank"><img width="300" height="250" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20250'%3E%3C/svg%3E" class="no-lazy-load wp-post-image" alt="" decoding="async" data-lazy-srcset="https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_300x250_2025-09-1.png 300w, https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_300x250_2025-09-1-175x146.png 175w, https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_300x250_2025-09-1-178x148.png 178w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_300x250_2025-09-1.png"><noscript><img width="300" height="250" src="https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_300x250_2025-09-1.png" class="no-lazy-load wp-post-image" alt="" decoding="async" srcset="https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_300x250_2025-09-1.png 300w, https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_300x250_2025-09-1-175x146.png 175w, https://insurancenewsnet.com/wp-content/uploads/2025/08/ArchInsuranceCompany_300x250_2025-09-1-178x148.png 178w" sizes="(max-width: 300px) 100vw, 300px" /></noscript></a>
+</div></div>
+
+</div></div>							</div>
+
+							<div id="ros-top-medium" class="hide">
+																<!-- ROS | #2 | Top Medium Rectangle | Ad Postion --><!-- adsanity_show_ad_group(array( 'align' => 'alignnone', 'num_ads' => 1, 'num_columns' => 1, 'group_ids' => array(833090), 'return' => false));--->
+																	
+<div id="ad-8311233" class="ad-300x600 adsanity-300x600 alignnone adsanity-alignnone"><div class="adsanity-inner">
+
+<a rel="nofollow" href="https://insurancenewsnet.com/ads/allianz-2025-10-top-half-page-fia-abc-222" target="_blank"><img width="300" height="600" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20600'%3E%3C/svg%3E" class="no-lazy-load wp-post-image" alt="" decoding="async" data-lazy-srcset="https://insurancenewsnet.com/wp-content/uploads/2025/09/Allianz_300x600_2025-10-FIA-ABC_222.jpg 300w, https://insurancenewsnet.com/wp-content/uploads/2025/09/Allianz_300x600_2025-10-FIA-ABC_222-88x175.jpg 88w, https://insurancenewsnet.com/wp-content/uploads/2025/09/Allianz_300x600_2025-10-FIA-ABC_222-280x560.jpg 280w, https://insurancenewsnet.com/wp-content/uploads/2025/09/Allianz_300x600_2025-10-FIA-ABC_222-267x534.jpg 267w, https://insurancenewsnet.com/wp-content/uploads/2025/09/Allianz_300x600_2025-10-FIA-ABC_222-74x148.jpg 74w, https://insurancenewsnet.com/wp-content/uploads/2025/09/Allianz_300x600_2025-10-FIA-ABC_222-130x260.jpg 130w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://insurancenewsnet.com/wp-content/uploads/2025/09/Allianz_300x600_2025-10-FIA-ABC_222.jpg"><noscript><img width="300" height="600" src="https://insurancenewsnet.com/wp-content/uploads/2025/09/Allianz_300x600_2025-10-FIA-ABC_222.jpg" class="no-lazy-load wp-post-image" alt="" decoding="async" srcset="https://insurancenewsnet.com/wp-content/uploads/2025/09/Allianz_300x600_2025-10-FIA-ABC_222.jpg 300w, https://insurancenewsnet.com/wp-content/uploads/2025/09/Allianz_300x600_2025-10-FIA-ABC_222-88x175.jpg 88w, https://insurancenewsnet.com/wp-content/uploads/2025/09/Allianz_300x600_2025-10-FIA-ABC_222-280x560.jpg 280w, https://insurancenewsnet.com/wp-content/uploads/2025/09/Allianz_300x600_2025-10-FIA-ABC_222-267x534.jpg 267w, https://insurancenewsnet.com/wp-content/uploads/2025/09/Allianz_300x600_2025-10-FIA-ABC_222-74x148.jpg 74w, https://insurancenewsnet.com/wp-content/uploads/2025/09/Allianz_300x600_2025-10-FIA-ABC_222-130x260.jpg 130w" sizes="(max-width: 300px) 100vw, 300px" /></noscript></a>
+</div></div>
+
+															</div>
+						</div>
+						<!-- #3 -->
+						<div id="featured-medium-rectangle">
+							<!-- Sponsor | #2 | Top Medium Rectangle | Ad Postion -->
+							<div id="sponsor-featured-medium" class="hide">
+								<!-- Sponsor | #3  Featured Medium Rectangle | Ad Postion --><!--adsanity_show_ad_group(array( 'align' => 'alignnone', 'num_ads' => 1, 'num_columns' => 1, 'group_ids' => array(833070), 'return' => false));-->
+															</div>
+
+
+							<div id="ros-featured-medium" class="hide">
+
+																<!-- ROS | #3 | Featured Medium Rectangle | Ad Postion -->
+								<!--adsanity_show_ad_group(array( 'align' => 'alignnone', 'num_ads' => 1, 'num_columns' => 1, 'group_ids' => array(833091), 'return' => false)); -->
+																	
+<div id="ad-8313410" class="ad-300x250 adsanity-300x250 alignnone adsanity-alignnone"><div class="adsanity-inner">
+
+<a rel="nofollow" href="https://insurancenewsnet.com/ads/boston-mutual-2025-11-featured-rectangle" target="_blank"><img width="600" height="500" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20600%20500'%3E%3C/svg%3E" class="no-lazy-load wp-post-image" alt="" decoding="async" data-lazy-src="https://insurancenewsnet.com/wp-content/uploads/2025/10/BostonMutual_300x250_2025-11.gif?cache-bust=1762543367"><noscript><img width="600" height="500" src="https://insurancenewsnet.com/wp-content/uploads/2025/10/BostonMutual_300x250_2025-11.gif?cache-bust=1762543367" class="no-lazy-load wp-post-image" alt="" decoding="async" /></noscript></a>
+</div></div>
+
+															</div>
+						</div>
+						<!-- #4 -->
+						<div id="bottom-medium-rectangle">
+							<!-- Sponsor | #4  Featured Medium Rectangle | Ad Postion -->
+							<div id="sponsor-bottom-medium" class="hide">
+								<!--adsanity_show_ad_group(array( 'align' => 'alignnone', 'num_ads' => 1, 'num_columns' => 1, 'group_ids' => array(833071), 'return' => false)); -->
+															</div>
+							<div id="ros-bottom-medium" class="hide">
+																<!-- adsanity_show_ad_group(array( 'align' => 'alignnone', 'num_ads' => 1, 'num_columns' => 1, 'group_ids' => array(833093), 'return' => false));-->
+																	
+<div id="ad-8312205" class="ad-300x250 adsanity-300x250 alignnone adsanity-alignnone"><div class="adsanity-inner">
+
+<a rel="nofollow" href="https://insurancenewsnet.com/ads/corebridge-2025-10-body-rectangle" target="_blank"><img width="300" height="250" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20250'%3E%3C/svg%3E" class="no-lazy-load wp-post-image" alt="" decoding="async" data-lazy-srcset="https://insurancenewsnet.com/wp-content/uploads/2025/10/Corebridge_300x250_2025-10-1.png 300w, https://insurancenewsnet.com/wp-content/uploads/2025/10/Corebridge_300x250_2025-10-1-175x146.png 175w, https://insurancenewsnet.com/wp-content/uploads/2025/10/Corebridge_300x250_2025-10-1-178x148.png 178w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://insurancenewsnet.com/wp-content/uploads/2025/10/Corebridge_300x250_2025-10-1.png"><noscript><img width="300" height="250" src="https://insurancenewsnet.com/wp-content/uploads/2025/10/Corebridge_300x250_2025-10-1.png" class="no-lazy-load wp-post-image" alt="" decoding="async" srcset="https://insurancenewsnet.com/wp-content/uploads/2025/10/Corebridge_300x250_2025-10-1.png 300w, https://insurancenewsnet.com/wp-content/uploads/2025/10/Corebridge_300x250_2025-10-1-175x146.png 175w, https://insurancenewsnet.com/wp-content/uploads/2025/10/Corebridge_300x250_2025-10-1-178x148.png 178w" sizes="(max-width: 300px) 100vw, 300px" /></noscript></a>
+</div></div>
+
+															</div>
+						</div>
+					</div>
+				</div>
+				<!--
+				<div id="product-alert">
+					<div class="ad-aligncenter"><div class="ad-row">
+<div id="ad-8304565" class="ad-300x740 adsanity-300x740 aligncenter adsanity-aligncenter"
+><div class="adsanity-inner">
+
+<a rel="nofollow" href="https://insurancenewsnet.com/ads/american-national-anico-2025-06-09-product-alert"  target="_blank"><img width="550" height="1103" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20550%201103'%3E%3C/svg%3E" class="no-lazy-load wp-post-image" alt="" decoding="async" data-lazy-srcset="https://insurancenewsnet.com/wp-content/uploads/2025/06/Product-Alert-Site-ANICO-06-2025.jpg 550w, https://insurancenewsnet.com/wp-content/uploads/2025/06/Product-Alert-Site-ANICO-06-2025-449x900.jpg 449w, https://insurancenewsnet.com/wp-content/uploads/2025/06/Product-Alert-Site-ANICO-06-2025-511x1024.jpg 511w, https://insurancenewsnet.com/wp-content/uploads/2025/06/Product-Alert-Site-ANICO-06-2025-87x175.jpg 87w, https://insurancenewsnet.com/wp-content/uploads/2025/06/Product-Alert-Site-ANICO-06-2025-279x560.jpg 279w, https://insurancenewsnet.com/wp-content/uploads/2025/06/Product-Alert-Site-ANICO-06-2025-409x820.jpg 409w, https://insurancenewsnet.com/wp-content/uploads/2025/06/Product-Alert-Site-ANICO-06-2025-266x534.jpg 266w, https://insurancenewsnet.com/wp-content/uploads/2025/06/Product-Alert-Site-ANICO-06-2025-74x148.jpg 74w, https://insurancenewsnet.com/wp-content/uploads/2025/06/Product-Alert-Site-ANICO-06-2025-130x260.jpg 130w" data-lazy-sizes="(max-width: 550px) 100vw, 550px" data-lazy-src="https://insurancenewsnet.com/wp-content/uploads/2025/06/Product-Alert-Site-ANICO-06-2025.jpg" /><noscript><img width="550" height="1103" src="https://insurancenewsnet.com/wp-content/uploads/2025/06/Product-Alert-Site-ANICO-06-2025.jpg" class="no-lazy-load wp-post-image" alt="" decoding="async" srcset="https://insurancenewsnet.com/wp-content/uploads/2025/06/Product-Alert-Site-ANICO-06-2025.jpg 550w, https://insurancenewsnet.com/wp-content/uploads/2025/06/Product-Alert-Site-ANICO-06-2025-449x900.jpg 449w, https://insurancenewsnet.com/wp-content/uploads/2025/06/Product-Alert-Site-ANICO-06-2025-511x1024.jpg 511w, https://insurancenewsnet.com/wp-content/uploads/2025/06/Product-Alert-Site-ANICO-06-2025-87x175.jpg 87w, https://insurancenewsnet.com/wp-content/uploads/2025/06/Product-Alert-Site-ANICO-06-2025-279x560.jpg 279w, https://insurancenewsnet.com/wp-content/uploads/2025/06/Product-Alert-Site-ANICO-06-2025-409x820.jpg 409w, https://insurancenewsnet.com/wp-content/uploads/2025/06/Product-Alert-Site-ANICO-06-2025-266x534.jpg 266w, https://insurancenewsnet.com/wp-content/uploads/2025/06/Product-Alert-Site-ANICO-06-2025-74x148.jpg 74w, https://insurancenewsnet.com/wp-content/uploads/2025/06/Product-Alert-Site-ANICO-06-2025-130x260.jpg 130w" sizes="(max-width: 550px) 100vw, 550px" /></noscript></a>
+</div></div>
+
+</div></div>				</div>
+				-->
+
+
+
+				<!-- top read stories -->
+				<section class="widget last">
+					<div class="wrap">
+						<header>
+							<h2 class="relatedstories"> Top Read Stories</h2>
+						</header>
+						<ul class="aside-list add">
+							
+									<li><a href="https://insurancenewsnet.com/innarticle/how-ai-is-reshaping-the-insurance-industry">
+											How AI is reshaping the insurance industry</a></li>
+							
+									<li><a href="https://insurancenewsnet.com/oarticle/3-health-insurers-dropping-coverage-for-200000-in-michigan">
+											3 health insurers dropping coverage for 200,000 in Michigan</a></li>
+							
+									<li><a href="https://insurancenewsnet.com/oarticle/lvhn-to-end-contract-with-insurer-over-payment-dispute-unitedhealthcare-refusing-to-honor-agreed-upon-rates-hospital-parent-company-says">
+											LVHN to end contract with insurer over payment dispute UnitedHealthcare refusing to honor agreed-upon rates, hospital parent company says.</a></li>
+							
+									<li><a href="https://insurancenewsnet.com/oarticle/broward-health-memorial-healthcare-system-debut-an-aca-health-insurance-plan">
+											Broward Health, Memorial Healthcare System debut an ACA health insurance plan</a></li>
+							
+									<li><a href="https://insurancenewsnet.com/innarticle/fixed-annuities-give-clients-more-money-to-spend-in-retirement">
+											Fixed annuities give clients more money to spend in retirement</a></li>
+													</ul>
+						<a class="more" href="https://insurancenewsnet.com/topics/top-stories">More Top Read Stories
+							&gt;</a>
+					</div>
+				</section>
+
+				<!--Top Read stories End-->
+
+				<!-- Homepage Widget Section -->
+				<!-- -->
+				<section class="widget widget_block text-sponsor insideNewsWrapper">
+					<div class="wp-block-group">
+						<div class="wp-block-group__inner-container">
+							<h2 style="font-weight:bold; padding-left:20px; padding-bottom:5px; padding-top:10px; border-bottom: 2px solid #ddd;">NEWS INSIDE</h2>
+							<ul class="link">
+								<li>
+									<a href="/topics/companies">Companies</a>
+								</li>
+								<li>
+									<a href="/topics/earnings">Earnings</a>
+								</li>
+								<li>
+									<a href="/topics/economic-news">Economic News</a>
+								</li>
+								<li>
+									<a href="/magazine">INN Magazine</a>
+								</li>
+								<li>
+									<a href="/topics/insurtech">Insurtech News</a>
+								</li>
+								<li>
+									<a href="/topics/newswires">Newswires Feed</a>
+								</li>
+								<li>
+									<a href="/topics/regulation-news-articles">Regulation News</a>
+								</li>
+								<li>
+									<a href="/topics/washington-wire">Washington Wire</a>
+								</li>
+								<li>
+									<a href="/topics/video">Videos</a>
+								</li>
+							</ul>
+						</div>
+				</div></section>
+				
+			<section class="widget widget_block text-sponsor">
+				<div class="wp-block-group">
+					<div class="wp-block-group__inner-container">
+						<h2 style="font-weight:bold; padding-left:20px; padding-bottom:5px; padding-top:10px; border-bottom: 2px solid #ddd;">FEATURED OFFERS</h2>
+			
+						<div class="ad-alignnone"><div class="ad-row">
+<div id="ad-8313566" class="ad-300x150 adsanity-300x150 alignnone adsanity-alignnone"><div class="adsanity-inner">
+
+<div class="adsanity-text" style=";"><div><p><a href="https://content.wsfinancialpartners.com/ls/23b97ed2-b478-44c0-9e38-74fd79cef9ac/LsQTYyyPsismC0yt" data-mce-href="https://content.wsfinancialpartners.com/ls/23b97ed2-b478-44c0-9e38-74fd79cef9ac/LsQTYyyPsismC0yt"><strong>Slow Me the Money</strong></a><br>Slow down RMDs … and RMD taxes … with a QLAC. Click to learn how.</p>
+</div></div>
+</div></div>
+
+</div></div>						<div class="ad-alignnone"><div class="ad-row">
+<div id="ad-8313568" class="ad-300x150 adsanity-300x150 alignnone adsanity-alignnone"><div class="adsanity-inner">
+
+<div class="adsanity-text" style=";"><div><p><a href="https://icmg.org/conference" data-mce-href="https://icmg.org/conference"><strong>ICMG 2026: 3 Days to Transform Your Business</strong></a><br>Speed Networking, deal-making, and insights that spark real growth — all in Miami.</p>
+</div></div>
+</div></div>
+
+</div></div>																											
+					</div>
+			</div></section>
+
+		
+
+		
+		<!-- Press Release Section - sidebar-sponsor -->
+		<section id="rcp_recent_custom_posts-2" class="widget widget_rcp_recent_custom_posts">
+			<div class="wrap">
+				<header>
+					<h2 style="font-weight:bold; padding-bottom:5px; padding-top:10px; color: black; font-size:1.5625rem;">
+						Press Releases</h2>
+				</header>
+				<ul class="aside-list add">
+
+
+
+					
+					
+						<!-- the loop -->
+						
+							<li><a href="https://insurancenewsnet.com/press-releases/senior-market-sales-sms-acquires-austin-based-abt-insurance-agency" title="Senior Market Sales® (SMS) Acquires Austin-Based Abt Insurance Agency">Senior Market Sales® (SMS) Acquires Austin-Based Abt Insurance Agency</a></li>
+
+
+						
+							<li><a href="https://insurancenewsnet.com/press-releases/national-life-group-ranked-second-by-the-wall-street-journal-in-best-whole-life-insurance-companies-of-2025" title="National Life Group Ranked Second by the Wall Street Journal in Best Whole Life Insurance Companies of 2025">National Life Group Ranked Second by the Wall Street Journal in Best Whole Life Insurance Companies of 2025</a></li>
+
+
+						
+							<li><a href="https://insurancenewsnet.com/press-releases/national-life-group-wins-it-practice-innovation-award-from-datos-insights" title="National Life Group wins IT Practice Innovation Award from Datos Insights">National Life Group wins IT Practice Innovation Award from Datos Insights</a></li>
+
+
+						
+							<li><a href="https://insurancenewsnet.com/press-releases/national-life-group-adds-new-features-to-its-popular-indexed-universal-life-product-to-support-the-sandwich-generation" title="National Life Group adds new features to its popular Indexed Universal Life product to support the Sandwich Generation">National Life Group adds new features to its popular Indexed Universal Life product to support the Sandwich Generation</a></li>
+
+
+						
+							<li><a href="https://insurancenewsnet.com/press-releases/hexure-sets-new-benchmark-for-enterprise-sales-illustrations" title="Hexure Sets New Benchmark for Enterprise Sales Illustrations">Hexure Sets New Benchmark for Enterprise Sales Illustrations</a></li>
+
+
+												<!-- end of the loop -->
+
+
+					
+				</ul>
+				<a href="/press-releases" class="more">More Press Releases &gt;</a>
+				<a class="more" href="/add-press-release"><strong style="color:#b11c14">Add Your Press Release
+						&gt;</strong></a>
+			</div>
+		</section>
+		<!-- How to Write For InsuranceNewsNet block -->
+		<section class="widget widget_block text-sponsor">
+			<div class="wp-block-group">
+				<div class="wp-block-group__inner-container">
+					<div class="signup" style="background-color: #ffffff !important;">
+						<h3 style="margin-bottom: 0px; margin-top: 0px; padding: 5px 0 0 0; font-size: 1.6em; line-height: 1.1em;">
+							<strong>How to Write For InsuranceNewsNet</strong>
+						</h3>
+						<p style="font-size: 13px; line-height: 16px; padding: 5px 0px;">Find out how you can submit
+							content for publishing on our website.<br>
+							<a class="button secondary" style="margin-top: 10px;" href="https://insurancenewsnet.com/guidelines"><strong>View Guidelines</strong></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- SIDEBAR NEWSLETTER SUBSCRIBE BLOCK
+		<section class="widget hide-md hide-sm">
+			<div class="signup">
+				<h3>Sign up for our <mark>FREE e-Newsletter!</mark></h3>
+				<p>Get breaking news, exclusive stories, and money- making insights straight into your inbox. </p>
+				<a href="#" class="button secondary">select Newsletter Options</a>
+			</div>
+		</section> -->
+
+
+		<!-- SIDEBAR SPONSORED CONTENT BLOCK
+		<section class="widget hide-md hide-sm">
+			<div class="logo-block">
+				<div class="logo-wrap">
+					<a href="#"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20219%2053'%3E%3C/svg%3E" alt="image description" width="219" height="53" data-lazy-src="/images/logo-alliance.png" /><noscript><img src="/images/logo-alliance.png" alt="image description" width="219" height="53" /></noscript></a>
+				</div>
+				<article>
+					<h2>Social Security Claiming Strategies: Only One Piece of the Puzzle</h2>
+					<p>Helping clients determine when and how to best claim benefits is valuable, but it's only a part of a larger, more complex problem.</p>
+				</article>
+				<article>
+					<h3>Guaranteed Lifetime Income Benefits - Part 3: What's Guaranteed?</h3>
+					<p>Most Guaranteed Lifetime Income Benefits are fully guaranteed, others not so much; does your client understand what they have?</p>
+				</article>
+				<a class="more" href="#">More Brokers Alliance Insights &raquo;</a>
+			</div>
+		</section> -->
+
+
+		<!-- SIDEBAR MOST POPULAR BLOCK
+		<section class="widget hide-sm">
+			<div class="wrap">
+				<header>
+					<h2>Most Popular</h2>
+				</header>
+				<ul class="aside-list">
+					<li><a href="#">Study Shows Trampoline Injuries Cause More Than One Million ER Visits: New York Personal Injury Lawyer Kenneth A. Wilhelm Offers Tips on Preventing Injuries</a></li>
+					<li><a href="#">New Variable Annuity Strengthens Forethought's Annuity Platform</a></li>
+					<li><a href="#">Why Annuities? Balance for Today's Retiree</a></li>
+					<li><a href="#">Huizenga's Bipartisan Qualified Mortgage Legislation Passes House Unanimously</a></li>
+				</ul>
+			</div>
+		</section> -->
+
+
+		<!-- SIDEBAR AD 2
+		<section class="widget hide-md hide-sm">
+			<div class="ad-block">
+				<a href="#"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20301%20251'%3E%3C/svg%3E" alt="image description" width="301" height="251" data-lazy-src="/images/ad-3.jpg" /><noscript><img src="/images/ad-3.jpg" alt="image description" width="301" height="251" /></noscript></a>
+			</div>
+		</section> -->
+
+
+		<!-- SIDEBAR FEATURED OFFERS
+		<section class="widget">
+			<div class="wrap">
+				<header>
+					<h2>Featured Offers</h2>
+				</header>
+				<ul>
+					<li>
+						<strong class="title"><a href="#">Florida Hurricane Catastrophe Fund Eyes Insurance Linked Securities</a></strong>
+						<p>Make sure you are THE ONE in your territory who can answer common consumer questions [free guide].</p>
+					</li>
+					<li>
+						<strong class="title"><a href="#">Partner with a Carrier with consistent and long-term value for you and your clients</a></strong>
+						<p>American Equity offers competitive commissions, income payments, exceptional service and more.</p>
+					</li>
+					<li>
+						<strong class="title"><a href="#">Don't put your practice at risk with a gap in coverage</a></strong>
+						<p>Get instant E&amp;O at a great low price. [Check out our FREE VIDEO on why you should have E&amp;O.]</p>
+					</li>
+					<li>
+						<strong class="title"><a href="#">How to train your clients to refer YOU</a></strong>
+						<p>Learn this and much more from the Society of FSP's FREE 2014 Advisor Success Kit.</p>
+					</li>
+				</ul>
+			</div>
+		</section> -->
+
+
+		<!-- SIDEBAR PRESS RELEASES BLOCK
+		<section class="widget last">
+			<div class="wrap">
+				<header>
+					<a href="#" class="button tiny right">All <span class="hide-md hide-sm">press</span> releases</a>
+					<h2>Press Releases</h2>
+				</header>
+				<ul class="aside-list add">
+					<li><a href="#">Add Your FREE Listing To The National Insurance Directory for Consumers</a></li>
+					<li><a href="#">Ex-Agent Faces Burglary Charges For Annuity Sales</a></li>
+					<li><a href="#">Amgen abruptly puts 70 employees on paid leave</a></li>
+					<li><a href="#">Voluntary Benefits Catching Fire With Consumers</a></li>
+				</ul>
+				<a class="more" href="#">Add your press release ></a>
+			</div>
+		</section> -->
+
+
+			</div>
+</aside>		<!-- # END SINGLE POST (single.php) # -->
+
+
+
+
+
+	</div>
+
+
+<div class="ad-hold default text-center hide-md hide-sm">
+	<div class="movearound bottom-leaderboard">
+		<!--adsanity_show_ad_group(array( 'align' => 'alignnone', 'num_ads' => 1, 'num_columns' => 1, 'group_ids' => array(833080), 'return' => false)); -->
+  		<div id="home-bottom-leaderboard">
+
+				<!-- Homepage -->		</div>
+
+		<div id="sponsor-bottom-leaderboard" class="hide">
+		<!-- Sponsored -->		</div>
+
+		<div id="ros-bottom-leaderboard" class="hide">
+		      
+				 		<!--adsanity_show_ad_group(array( 'align' => 'alignnone', 'num_ads' => 1, 'num_columns' => 1, 'group_ids' => array(833088), 'return' => false));-->
+		<!-- ROS --> 		</div>
+
+	</div>
+
+</div>
+
+
+</main><!-- .site-main -->
+
+
+
+<!-- BEGIN FOOTER INCLUDE -->
+			<footer id="footer" style="background-color:#FFF !important">
+				<div class="row clearfix">
+					<div class="columns medium-18 medium-centered large-14 large-centered">
+						<!-- <div class="nav-hold">
+													</div> -->
+						<div class="nav-hold">
+														<nav class="footer-nav hide-sm">
+								<h4>Topics</h4>
+								<div class="menu-topic-navigation-container"><ul id="menu-topic-navigation-1" class="menu"><li class="purple-border menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8151087"><a href="https://insurancenewsnet.com/topics/advisor-news">Advisor News</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8297123"><a href="https://insurancenewsnet.com/annuity-index">Annuity Index</a></li>
+<li class="ltgreen-border menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8151078"><a href="https://insurancenewsnet.com/topics/annuity-news-articles">Annuity News</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8250867"><a href="https://insurancenewsnet.com/topics/companies">Companies</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8238806"><a href="https://insurancenewsnet.com/topics/earnings">Earnings</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8251085"><a href="https://insurancenewsnet.com/topics/fiduciary">Fiduciary</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8277599"><a href="https://insurancenewsnet.com/topics/from-the-field">From the Field: Expert Insights</a></li>
+<li class="orange-border menu-item menu-item-type-taxonomy menu-item-object-category current-innarticle-ancestor current-menu-parent current-innarticle-parent menu-item-8151080"><a href="https://insurancenewsnet.com/topics/employee-health-benefits-news-articles">Health/Employee Benefits</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8267371"><a href="https://insurancenewsnet.com/topics/insurance-financial-fraud">Insurance &amp; Financial Fraud</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8277600"><a href="https://insurancenewsnet.com/magazine">INN Magazine</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8277603"><a href="https://insurancenewsnet.com/topics/inn-insider">Insiders Only</a></li>
+<li class="ltorange-border menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8151079"><a href="https://insurancenewsnet.com/topics/life-insurance-news-articles">Life Insurance News</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8263904"><a href="https://insurancenewsnet.com/topics/newswires">Newswires</a></li>
+<li class="green-border menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8151081"><a href="https://insurancenewsnet.com/topics/property-casualty-insurance-news">Property and Casualty</a></li>
+<li class="blue-border menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8151082"><a href="https://insurancenewsnet.com/topics/regulation-news-articles">Regulation News</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8175268"><a href="https://insurancenewsnet.com/sponsor">Sponsored Articles</a></li>
+<li class="blue-border menu-item menu-item-type-taxonomy menu-item-object-category current-innarticle-ancestor current-menu-parent current-innarticle-parent menu-item-8151083"><a href="https://insurancenewsnet.com/topics/washington-wire">Washington Wire</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8238805"><a href="https://insurancenewsnet.com/topics/video">Videos</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8277604"><a href="#">———</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8277605"><a href="https://insurancenewsnet.com/about-insurancenewsnet">About</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8285817"><a href="https://innmediakit.com">Advertise</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8277608"><a href="https://insurancenewsnet.com/contact-insurancenewsnet">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8277607"><a href="https://insurancenewsnet.com/editorial-staff">Editorial Staff</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8277609"><a href="https://insurancenewsnet.com/manage-subscription">Newsletters</a></li>
+</ul></div>							</nav>
+							<nav class="footer-nav hide-sm">
+								<h4>Top Sections</h4>
+								<div class="menu-bottom-menu-1-container"><ul id="menu-bottom-menu-1" class="menu"><li id="menu-item-1184" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1184"><a href="https://insurancenewsnet.com/topics/advisor-news">AdvisorNews</a></li>
+<li id="menu-item-1181" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1181"><a href="https://insurancenewsnet.com/topics/annuity-news-articles">Annuity News</a></li>
+<li id="menu-item-1182" class="menu-item menu-item-type-taxonomy menu-item-object-category current-innarticle-ancestor current-menu-parent current-innarticle-parent menu-item-1182"><a href="https://insurancenewsnet.com/topics/employee-health-benefits-news-articles">Health/Employee Benefits News</a></li>
+<li id="menu-item-8252993" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8252993"><a href="https://insurancenewsnet.com/magazine">InsuranceNewsNet Magazine</a></li>
+<li id="menu-item-1180" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1180"><a href="https://insurancenewsnet.com/topics/life-insurance-news-articles">Life Insurance News</a></li>
+<li id="menu-item-1183" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1183"><a href="https://insurancenewsnet.com/topics/property-casualty-insurance-news">Property and Casualty News</a></li>
+<li id="menu-item-2744227" class="menu-item menu-item-type-taxonomy menu-item-object-category current-innarticle-ancestor current-menu-parent current-innarticle-parent menu-item-2744227"><a href="https://insurancenewsnet.com/topics/washington-wire">Washington Wire</a></li>
+</ul></div>							</nav>
+							<nav class="footer-nav">
+								<h4>Our Company</h4>
+								<div class="menu-bottom-menu-3-container"><ul id="menu-bottom-menu-3" class="menu"><li id="menu-item-1308" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1308"><a href="https://insurancenewsnet.com/about-insurancenewsnet">About</a></li>
+<li id="menu-item-665982" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-665982"><a target="_blank" rel="noopener" href="https://innmediakit.com/">Advertise</a></li>
+<li id="menu-item-1310" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1310"><a href="https://insurancenewsnet.com/contact-insurancenewsnet">Contact</a></li>
+<li id="menu-item-8250866" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8250866"><a href="https://insurancenewsnet.com/inn-editorial-staff">Meet our Editorial Staff</a></li>
+<li id="menu-item-7155026" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7155026"><a href="http://insurancenewsnetmagazine.com">Magazine Subscription</a></li>
+<li id="menu-item-5737863" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5737863"><a href="https://insurancenewsnet.com/guidelines">Write for INN</a></li>
+</ul></div>							</nav>
+													</div>
+						<div class="signup">
+							<h3>Sign up for our <mark>FREE <span class="inline-block">e-Newsletter!</span></mark></h3>
+							<p>Get breaking news, exclusive stories, and money- making insights straight into your inbox. </p>
+							<a href="https://insurancenewsnet.com/manage-subscription" class="button secondary">select Newsletter Options</a>
+						</div>
+						<div class="social-networks hide-sm">
+							<a href="https://www.facebook.com/insnewsnet"><span class="icon icon-facebook2"></span>Facebook</a>
+							<a href="https://www.linkedin.com/company/248786/"><span class="icon icon-linkedin2"></span>Linkedin</a>
+							<a href="https://twitter.com/InsNewsNet"><span class="icon icon-twitter2"></span>Twitter</a>
+
+
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="row">
+						<div class="columns">
+							<strong class="copyright">© 2025 InsuranceNewsNet.com, Inc. All rights reserved.</strong>
+							<!-- # BEGIN FOOTER-NAV # -->
+							<div class="menu-footer-nav-container"><ul id="menu-footer-nav" class="menu"><li id="menu-item-1156" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1156"><a href="https://insurancenewsnet.com/terms-conditions">Terms &amp; Conditions</a></li>
+<li id="menu-item-1153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-1153"><a rel="privacy-policy" href="https://insurancenewsnet.com/privacy-policy">Privacy Policy</a></li>
+<li id="menu-item-8259933" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8259933"><a href="https://insurancenewsnet.com/magazine">InsuranceNewsNet Magazine</a></li>
+</ul></div>							<!-- # END FOOTER-NAV # -->
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- END FOOTER INCLUDE -->
+
+
+
+
+
+		</div><!-- /.w1  -->
+	</div><!-- /.wrapper -->
+
+
+
+	<!-- MODALS -->
+
+		<div class="popup-holder">
+		<div id="popup1" class="lightbox signin-popup">
+			<div class="hold">
+				<a href="#" class="close"><span class="icon-cross"></span></a>
+				<h2>Sign in with your Insider Pro Account</h2>
+					<form name="loginform" id="loginform" action="https://insurancenewsnet.com/wp-login.php?wpe-login=insurancenews" method="post">
+					<p class="login-username">
+					<label for="user_login">Username</label>
+					<input type="text" name="log" id="user_login" class="input" value="" size="20">
+					</p>
+					<p class="login-password">
+					<label for="user_pass">Password</label>
+					<input type="password" name="pwd" id="user_pass" class="input" value="" size="20">
+					</p>
+					<p class="login-remember"><label><input name="rememberme" type="checkbox" id="rememberme" value="forever"> Remember Me</label></p>
+					<p class="login-submit">
+					<input type="submit" name="wp-submit" id="wp-submit" class="button-primary" value="Log In">
+<!-- 					<input type="hidden" name="redirect_to" value="http://insurancenewsnet.com/"/> -->
+					</p>
+					</form>
+				<div class="register">
+					<span>Not registered? <a href="https://insurancenewsnet.com/subscribe?cta=signin-popup&amp;articleURL=https://insurancenewsnet.com/press-releases/hexure-sets-new-benchmark-for-enterprise-sales-illustrations">Become an Insider Pro.</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	 <a rel="nofollow" style="display:none" href="https://insurancenewsnet.com/?blackhole=371b0483ce" title="Do NOT follow this link or you will be banned from the site!">Insurance News | InsuranceNewsNet</a>
+			<script type="rocketlazyloadscript">
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<style id="core-block-supports-inline-css" type="text/css">
+/**
+ * Core styles: block-supports
+ */
+
+</style>
+<script type="text/javascript" id="ppress-frontend-script-js-extra">
+/* <![CDATA[ */
+var pp_ajax_form = {"ajaxurl":"https:\/\/insurancenewsnet.com\/wp-admin\/admin-ajax.php","confirm_delete":"Are you sure?","deleting_text":"Deleting...","deleting_error":"An error occurred. Please try again.","nonce":"b3b5802e8e","disable_ajax_form":"false","is_checkout":"0","is_checkout_tax_enabled":"0"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://insurancenewsnet.com/wp-content/plugins/wp-user-avatar/assets/js/frontend.min.js?ver=4.7.0" id="ppress-frontend-script-js"></script>
+<script type="text/javascript" id="custom-prefill-script-js-extra">
+/* <![CDATA[ */
+var prefill_data = {"form_id":"manage_advisornews_preferences","second_form_id":"manage_preferences","field_name_list_id":"form-field-list_id","field_name_contact_id":"form-field-contact_id","field_name_email":"form-field-email","field_name_first_name":"form-field-name","field_name_firstname":"form-field-fname","field_name_last_name":"form-field-field_be3b699","field_name_state":"form-field-field_24a8366","field_name_advisornewsweekly":"form-field-field_5a59e02-0","field_name_advisornewsdaily":"form-field-field_a6ed161-0","field_name_innmagazine":"form-field-field_0668bc2-0","field_name_businesstype":"form-field-field_3e072d8","field_name_inndaily":"form-field-field_a6ed161-0","field_name_innweekly":"form-field-field_5a59e02-0","field_name_pcweekly":"form-field-field_3e9d88a-0","field_name_annuityweekly":"form-field-field_6ab4d0e-0","field_name_healthweekly":"form-field-field_74dd51c-0","field_name_fiduciaryweekly":"form-field-field_2aa5e72-0","field_name_washingtoninsider":"form-field-field_153f63c-0","field_name_life":"form-field-field_1dd4f4a-0","field_name_annuity":"form-field-field_bbf0122-0","field_name_propertycasualty":"form-field-field_e72c1ea-0","field_name_health":"form-field-field_4eb89c3-0","prefill_value_list_id":null,"prefill_value_contact_id":null,"prefill_value_email":null,"prefill_value_first_name":null,"prefill_value_firstname":null,"prefill_value_last_name":null,"prefill_value_state":null,"prefill_value_advisornewsweekly":null,"prefill_value_advisornewsdaily":null,"prefill_value_innmagazine":null,"prefill_value_businesstype":null,"prefill_value_inndaily":null,"prefill_value_innweekly":null,"prefill_value_pcweekly":null,"prefill_value_annuityweekly":null,"prefill_value_healthweekly":null,"prefill_value_fiduciaryweekly":null,"prefill_value_washingtoninsider":null,"prefill_value_life":null,"prefill_value_annuity":null,"prefill_value_propertycasualty":null,"prefill_value_health":null};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" src="https://insurancenewsnet.com/wp-content/cache/min/1/wp-content/themes/inn-2/js/custom-prefill-script.js?ver=1760712356" id="custom-prefill-script-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" src="https://insurancenewsnet.com/wp-content/cache/min/1/wp-content/themes/inn-2/js/header.js?ver=1760712356" id="header-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" src="https://insurancenewsnet.com/wp-content/cache/min/1/wp-content/themes/inn-2/js/content.js?ver=1760712356" id="content-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" src="https://insurancenewsnet.com/wp-content/cache/min/1/wp-content/themes/inn-2/js/homepage.js?ver=1760712356" id="homepage-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" src="https://insurancenewsnet.com/wp-content/cache/min/1/wp-content/themes/inn-2/js/sidebar.js?ver=1760712356" id="sidebar-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://insurancenewsnet.com/wp-content/themes/inn-2/js/foundation.min.js?ver=1761077812" id="inn-foundation-js-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" src="https://insurancenewsnet.com/wp-content/cache/min/1/wp-content/themes/inn-2/js/app.js?ver=1760712356" id="inn-app-js-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" src="https://insurancenewsnet.com/wp-content/cache/min/1/wp-content/themes/inn-2/js/jquery.main.js?ver=1760712356" id="inn-jquery-main-js"></script>
+<script type="text/javascript" id="social-rocket-js-extra">
+/* <![CDATA[ */
+var socialRocket = {"ajax_url":"https:\/\/insurancenewsnet.com\/wp-admin\/admin-ajax.php","where_we_at":{"id":8305477,"type":"post","url":"https:\/\/insurancenewsnet.com\/innarticle\/cms-increases-ma-broker-compensation-for-2026","settings_key":"post_type_innarticle"}};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" src="https://insurancenewsnet.com/wp-content/cache/min/1/wp-content/plugins/social-rocket/assets/js/script.js?ver=1760712356" id="social-rocket-js"></script>
+<script type="text/javascript" id="eael-general-js-extra">
+/* <![CDATA[ */
+var localize = {"ajaxurl":"https:\/\/insurancenewsnet.com\/wp-admin\/admin-ajax.php","nonce":"bd728db8ba","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"eael_translate_text":{"required_text":"is a required field","invalid_text":"Invalid","billing_text":"Billing","shipping_text":"Shipping","fg_mfp_counter_text":"of"},"page_permalink":"https:\/\/insurancenewsnet.com\/innarticle\/cms-increases-ma-broker-compensation-for-2026","cart_redirectition":"","cart_page_url":"","el_breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://insurancenewsnet.com/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js" id="eael-general-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-cfasync="false" src="https://insurancenewsnet.com/wp-content/plugins/s2member/s2member-o.php?ws_plugin__s2member_js_w_globals=1&amp;qcABC=1&amp;ver=220318-220318-4215555115" id="ws-plugin--s2member-js"></script>
+<script>window.lazyLoadOptions = {
+                elements_selector: "img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",
+                data_src: "lazy-src",
+                data_srcset: "lazy-srcset",
+                data_sizes: "lazy-sizes",
+                class_loading: "lazyloading",
+                class_loaded: "lazyloaded",
+                threshold: 300,
+                callback_loaded: function(element) {
+                    if ( element.tagName === "IFRAME" && element.dataset.rocketLazyload == "fitvidscompatible" ) {
+                        if (element.classList.contains("lazyloaded") ) {
+                            if (typeof window.jQuery != "undefined") {
+                                if (jQuery.fn.fitVids) {
+                                    jQuery(element).parent().fitVids();
+                                }
+                            }
+                        }
+                    }
+                }};
+        window.addEventListener('LazyLoad::Initialized', function (e) {
+            var lazyLoadInstance = e.detail.instance;
+
+            if (window.MutationObserver) {
+                var observer = new MutationObserver(function(mutations) {
+                    var image_count = 0;
+                    var iframe_count = 0;
+                    var rocketlazy_count = 0;
+
+                    mutations.forEach(function(mutation) {
+                        for (var i = 0; i < mutation.addedNodes.length; i++) {
+                            if (typeof mutation.addedNodes[i].getElementsByTagName !== 'function') {
+                                continue;
+                            }
+
+                           if (typeof mutation.addedNodes[i].getElementsByClassName !== 'function') {
+                                continue;
+                            }
+
+                            images = mutation.addedNodes[i].getElementsByTagName('img');
+                            is_image = mutation.addedNodes[i].tagName == "IMG";
+                            iframes = mutation.addedNodes[i].getElementsByTagName('iframe');
+                            is_iframe = mutation.addedNodes[i].tagName == "IFRAME";
+                            rocket_lazy = mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');
+
+                            image_count += images.length;
+			                iframe_count += iframes.length;
+			                rocketlazy_count += rocket_lazy.length;
+
+                            if(is_image){
+                                image_count += 1;
+                            }
+
+                            if(is_iframe){
+                                iframe_count += 1;
+                            }
+                        }
+                    } );
+
+                    if(image_count > 0 || iframe_count > 0 || rocketlazy_count > 0){
+                        lazyLoadInstance.update();
+                    }
+                } );
+
+                var b      = document.getElementsByTagName("body")[0];
+                var config = { childList: true, subtree: true };
+
+                observer.observe(b, config);
+            }
+        }, false);</script><script data-no-minify="1" async="" src="https://insurancenewsnet.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.js"></script>
+
+
+
+
+<script type="rocketlazyloadscript">
+	// Remove Newsletters
+    jQuery(document).ready( function() {
+		// Remove Newsletters
+        jQuery("#s2member-pro-authnet-registration-form-custom-reg-field-newsletters-div").css({
+			'visibility':'hidden',
+			'position': 'absolute'
+		});
+		jQuery(function($) {
+            jQuery("#divNewsletters label:contains('Private')").prev().remove();
+            jQuery("#divNewsletters label:contains('Private')").remove();
+		});
+	});
+</script>
+
+
+
+<!-- Start of Async HubSpot Analytics Code -->
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+    (function(d,s,i,r) {
+      if (d.getElementById(i)){return;}
+      var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+      n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/1904291.js';
+      e.parentNode.insertBefore(n, e);
+    })(document,"script","hs-analytics",300000);
+  </script>
+<!-- End of Async HubSpot Analytics Code -->
+
+<!-- Start of INN Master Pixel Tracking -->
+          <div id="ttdUniversalPixelTag0059540fdc524fd29c2a6bbfb5204f15" style="display:none">
+            <script type="rocketlazyloadscript" data-minify="1" src="https://insurancenewsnet.com/wp-content/cache/min/1/up_loader.1.1.0.js?ver=1760712356" data-rocket-type="text/javascript"></script>
+            <script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+                (function(global) {
+                    if (typeof TTDUniversalPixelApi === 'function') {
+                        var universalPixelApi = new TTDUniversalPixelApi();
+                        universalPixelApi.init("eac6kka", ["6iwr0lc"], "https://insight.adsrvr.org/track/up", "ttdUniversalPixelTag0059540fdc524fd29c2a6bbfb5204f15");
+                    }
+                })(this);
+            </script>
+        </div>
+<!-- End of INN Master Pixel Tracking Code -->
+
+
+<!-- Quantcast Tag -->
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+window._qevents = window._qevents || [];
+
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+
+window._qevents.push({
+qacct:"p-tpzUG4gdrYsFT",
+uid:"__INSERT_EMAIL_HERE__"
+});
+</script>
+
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-tpzUG4gdrYsFT.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+<!-- End Quantcast tag -->
+
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript"> _linkedin_partner_id = "1284554"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id); </script><script type="rocketlazyloadscript" data-rocket-type="text/javascript"> (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})(); </script> <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=1284554&fmt=gif" /> </noscript>
+
+
+
+<script>class RocketElementorAnimation{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}_detectAnimations(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this._listAnimationSettingsKeys(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach(t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this._animateElement(t)}catch(t){}})}_animateElement(t){const e=JSON.parse(t.dataset.settings),i=e._animation_delay||e.animation_delay||0,n=e[this.animationSettingKeys.find(t=>e[t])];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let s=setTimeout(()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this._removeAnimationSettings(t,e)},i);window.addEventListener("rocket-startLoading",function(){clearTimeout(s)})}_listAnimationSettingsKeys(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach(t=>{e.forEach(e=>{i.push(t+e)})}),i}_removeAnimationSettings(t,e){this._listAnimationSettingsKeys().forEach(t=>delete e[t]),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorAnimation;requestAnimationFrame(t._detectAnimations.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorAnimation.run);</script>
+
+
+<span id="elementor-device-mode" class="elementor-screen-only"></span></body></html>

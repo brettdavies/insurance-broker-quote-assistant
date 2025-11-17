@@ -1,0 +1,420 @@
+{
+  "domain": "habitecsecurity.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:23.911072",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 27,
+      "frequency": 27.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 32,
+      "frequency": 32.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "is-submenu-item",
+      "count": 21
+    },
+    {
+      "class": "is-dropdown-submenu-item",
+      "count": 21
+    },
+    {
+      "class": "wp-block-heading",
+      "count": 16
+    },
+    {
+      "class": "pis-li",
+      "count": 10
+    },
+    {
+      "class": "pis-title",
+      "count": 10
+    },
+    {
+      "class": "pis-title-link",
+      "count": 10
+    },
+    {
+      "class": "pis-excerpt",
+      "count": 10
+    },
+    {
+      "class": "pis-thumbnail-link",
+      "count": 10
+    },
+    {
+      "class": "pis-thumbnail-img",
+      "count": 10
+    },
+    {
+      "class": "pis-more",
+      "count": 10
+    },
+    {
+      "class": "pis-more-link",
+      "count": 10
+    },
+    {
+      "class": "wp-post-image",
+      "count": 9
+    },
+    {
+      "class": "category",
+      "count": 9
+    },
+    {
+      "class": "line",
+      "count": 6
+    },
+    {
+      "class": "vertical",
+      "count": 5
+    },
+    {
+      "class": "menu",
+      "count": 5
+    },
+    {
+      "class": "column",
+      "count": 5
+    },
+    {
+      "class": "is-dropdown-submenu-parent",
+      "count": 4
+    },
+    {
+      "class": "opens-right",
+      "count": 4
+    },
+    {
+      "class": "submenu",
+      "count": 4
+    },
+    {
+      "class": "is-dropdown-submenu",
+      "count": 4
+    },
+    {
+      "class": "first-sub",
+      "count": 4
+    },
+    {
+      "class": "hfsw",
+      "count": 3
+    },
+    {
+      "class": "sw",
+      "count": 3
+    },
+    {
+      "class": "screen-reader-text",
+      "count": 2
+    },
+    {
+      "class": "cta",
+      "count": 2
+    },
+    {
+      "class": "hum",
+      "count": 2
+    },
+    {
+      "class": "cursor-default",
+      "count": 2
+    },
+    {
+      "class": "hide-for-large",
+      "count": 2
+    },
+    {
+      "class": "lines",
+      "count": 2
+    },
+    {
+      "class": "next-prev-links",
+      "count": 2
+    },
+    {
+      "class": "next-prev-links__image",
+      "count": 2
+    },
+    {
+      "class": "next-prev-links__title",
+      "count": 2
+    },
+    {
+      "class": "breadcrumbs__divider",
+      "count": 2
+    },
+    {
+      "class": "crjs",
+      "count": 1
+    },
+    {
+      "class": "foundation-mq",
+      "count": 1
+    },
+    {
+      "class": "wp-singular",
+      "count": 1
+    },
+    {
+      "class": "post-template-default",
+      "count": 1
+    },
+    {
+      "class": "single",
+      "count": 1
+    },
+    {
+      "class": "single-post",
+      "count": 1
+    },
+    {
+      "class": "postid-981",
+      "count": 1
+    },
+    {
+      "class": "single-format-standard",
+      "count": 1
+    },
+    {
+      "class": "wp-theme-habitec",
+      "count": 1
+    },
+    {
+      "class": "off-canvas-wrapper",
+      "count": 1
+    },
+    {
+      "class": "utility-bar",
+      "count": 1
+    },
+    {
+      "class": "utility-bar__phone",
+      "count": 1
+    },
+    {
+      "class": "new-logo",
+      "count": 1
+    },
+    {
+      "class": "mobile-number",
+      "count": 1
+    },
+    {
+      "class": "off-canvas",
+      "count": 1
+    },
+    {
+      "class": "off-canvas-main-menu",
+      "count": 1
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "wp-emoji-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "grw-public-main-css-css",
+      "count": 1
+    },
+    {
+      "id": "twentyfifteen-fonts-css",
+      "count": 1
+    },
+    {
+      "id": "twentyfifteen-style-css",
+      "count": 1
+    },
+    {
+      "id": "twentyfifteen-style-inline-css",
+      "count": 1
+    },
+    {
+      "id": "grw-public-main-js-js",
+      "count": 1
+    },
+    {
+      "id": "bodyintro",
+      "count": 1
+    },
+    {
+      "id": "header-container",
+      "count": 1
+    },
+    {
+      "id": "header",
+      "count": 1
+    },
+    {
+      "id": "off-canvas-wrap",
+      "count": 1
+    },
+    {
+      "id": "sitewrap",
+      "count": 1
+    },
+    {
+      "id": "post-981",
+      "count": 1
+    },
+    {
+      "id": "sidebar-toggle",
+      "count": 1
+    },
+    {
+      "id": "blog-sidebar",
+      "count": 1
+    },
+    {
+      "id": "pis_posts_in_sidebar-3",
+      "count": 1
+    },
+    {
+      "id": "ul_pis_posts_in_sidebar-3",
+      "count": 1
+    },
+    {
+      "id": "footer",
+      "count": 1
+    },
+    {
+      "id": "gforms_recaptcha_recaptcha-js-extra",
+      "count": 1
+    },
+    {
+      "id": "gforms_recaptcha_recaptcha-js",
+      "count": 1
+    },
+    {
+      "id": "gforms_recaptcha_frontend-js",
+      "count": 1
+    },
+    {
+      "id": "g-recaptcha-response-100000",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

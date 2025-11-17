@@ -1,0 +1,456 @@
+{
+  "domain": "mlb.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:24.983787",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 6,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 10,
+      "frequency": 10.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 379,
+      "frequency": 379.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "styles__StyledSubNavItem-sc-6aa8911c-0",
+      "count": 84
+    },
+    {
+      "class": "lfEDqI",
+      "count": 84
+    },
+    {
+      "class": "header__subnav__item",
+      "count": 84
+    },
+    {
+      "class": "Styles__StoryPartContainer-sc-1mfrmm0-0",
+      "count": 55
+    },
+    {
+      "class": "huwMnM",
+      "count": 55
+    },
+    {
+      "class": "story-part",
+      "count": 55
+    },
+    {
+      "class": "Typography-styles__Typography-sc-ce289cbb-0",
+      "count": 52
+    },
+    {
+      "class": "Styles__MarkdownContainer-dxqlie-0",
+      "count": 48
+    },
+    {
+      "class": "iMsGag",
+      "count": 48
+    },
+    {
+      "class": "kIjEKc",
+      "count": 47
+    },
+    {
+      "class": "markdown",
+      "count": 46
+    },
+    {
+      "class": "styles__StyledLink-sc-f0671df8-0",
+      "count": 41
+    },
+    {
+      "class": "eFXmCv",
+      "count": 41
+    },
+    {
+      "class": "styles__StyledFooterDropdownLink-sc-6fd25801-4",
+      "count": 36
+    },
+    {
+      "class": "hDEosI",
+      "count": 36
+    },
+    {
+      "class": "IconWrapper-sc-10ih73y-0",
+      "count": 34
+    },
+    {
+      "class": "styles__StyledSubNavTeam-sc-aa8233a3-0",
+      "count": 30
+    },
+    {
+      "class": "dPwAcI",
+      "count": 30
+    },
+    {
+      "class": "header__subnav--teams__team",
+      "count": 30
+    },
+    {
+      "class": "header__subnav--teams__team--logo",
+      "count": 30
+    },
+    {
+      "class": "header__subnav--teams__team--name",
+      "count": 30
+    },
+    {
+      "class": "header__subnav--teams__team--shortname",
+      "count": 30
+    },
+    {
+      "class": "hDFMOt",
+      "count": 29
+    },
+    {
+      "class": "styles__StyledNavItemText-sc-87c9f2fb-2",
+      "count": 27
+    },
+    {
+      "class": "blPIfz",
+      "count": 27
+    },
+    {
+      "class": "styles__StyledNavItem-sc-87c9f2fb-3",
+      "count": 26
+    },
+    {
+      "class": "dUymnz",
+      "count": 26
+    },
+    {
+      "class": "styles__StyledNavItemInner-sc-87c9f2fb-0",
+      "count": 26
+    },
+    {
+      "class": "gKapCo",
+      "count": 26
+    },
+    {
+      "class": "styles__StyledNavItemLink-sc-87c9f2fb-1",
+      "count": 26
+    },
+    {
+      "class": "fsMYa-d",
+      "count": 26
+    },
+    {
+      "class": "icon__nav-item",
+      "count": 17
+    },
+    {
+      "class": "header__nav-side__nav-item",
+      "count": 16
+    },
+    {
+      "class": "header__nav-side__nav-item--inner",
+      "count": 16
+    },
+    {
+      "class": "header__nav-side__nav-item__link",
+      "count": 16
+    },
+    {
+      "class": "header__nav-side__nav-item__text",
+      "count": 16
+    },
+    {
+      "class": "header__subnav__group",
+      "count": 15
+    },
+    {
+      "class": "header__nav-side__nav-item--parent",
+      "count": 13
+    },
+    {
+      "class": "header__nav-side__nav-item__subnav-arrow",
+      "count": 13
+    },
+    {
+      "class": "icon__subnav-arrow",
+      "count": 13
+    },
+    {
+      "class": "IconSvg-styles__Svg-sc-a6338b54-0",
+      "count": 12
+    },
+    {
+      "class": "header__nav-top__nav-item__text",
+      "count": 11
+    },
+    {
+      "class": "header__nav-top__nav-item",
+      "count": 10
+    },
+    {
+      "class": "header__nav-top__nav-item--inner",
+      "count": 10
+    },
+    {
+      "class": "header__nav-top__nav-item__link",
+      "count": 10
+    },
+    {
+      "class": "header__nav-top__nav-item--parent",
+      "count": 9
+    },
+    {
+      "class": "styles__StyledSubNav-sc-e6c5124a-1",
+      "count": 9
+    },
+    {
+      "class": "exUzDd",
+      "count": 9
+    },
+    {
+      "class": "header__subnav",
+      "count": 9
+    },
+    {
+      "class": "styles__StyledSubNavContent-sc-e6c5124a-0",
+      "count": 8
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "header-subnav-item",
+      "count": 54
+    },
+    {
+      "id": "footer-dropdown-link",
+      "count": 36
+    },
+    {
+      "id": "ad",
+      "count": 4
+    },
+    {
+      "id": "footer-dropdown",
+      "count": 4
+    },
+    {
+      "id": "footer-dropdown-list",
+      "count": 4
+    },
+    {
+      "id": "button",
+      "count": 2
+    },
+    {
+      "id": "nav-top-item-news",
+      "count": 2
+    },
+    {
+      "id": "nav-top-item-watch",
+      "count": 2
+    },
+    {
+      "id": "nav-top-item-schedule",
+      "count": 2
+    },
+    {
+      "id": "nav-top-item-more",
+      "count": 2
+    },
+    {
+      "id": "nav-top-item-mlb.tv",
+      "count": 2
+    },
+    {
+      "id": "nav-top-item-tickets",
+      "count": 2
+    },
+    {
+      "id": "nav-top-item-shop",
+      "count": 2
+    },
+    {
+      "id": "nav-side-item-teams",
+      "count": 2
+    },
+    {
+      "id": "nav-top-item-lang",
+      "count": 2
+    },
+    {
+      "id": "article-header",
+      "count": 2
+    },
+    {
+      "id": "social",
+      "count": 2
+    },
+    {
+      "id": "article",
+      "count": 2
+    },
+    {
+      "id": "reactions",
+      "count": 2
+    },
+    {
+      "id": "CPGTP6JC77U5SPBHH95G",
+      "count": 1
+    },
+    {
+      "id": "CBM13CRC77U963VPQL9G",
+      "count": 1
+    },
+    {
+      "id": "root",
+      "count": 1
+    },
+    {
+      "id": "react-header",
+      "count": 1
+    },
+    {
+      "id": "header-logo",
+      "count": 1
+    },
+    {
+      "id": "header-nav-top-logo-link",
+      "count": 1
+    },
+    {
+      "id": "Video",
+      "count": 1
+    },
+    {
+      "id": "MLB.TV",
+      "count": 1
+    },
+    {
+      "id": "nav-top-item-scores",
+      "count": 1
+    },
+    {
+      "id": "more-options-1",
+      "count": 1
+    },
+    {
+      "id": "title-more-options-1",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

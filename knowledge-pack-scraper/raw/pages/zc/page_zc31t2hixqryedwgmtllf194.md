@@ -1,0 +1,336 @@
+[Skip to content](https://www.investopedia.com/terms/a/additional-insured.asp#main)
+[ Investopedia ](https://www.investopedia.com/)
+[Live](https://www.investopedia.com/dow-jones-today-11072025-11845583)
+  * Search
+Please fill out this field. 
+  * [Newsletters](https://www.investopedia.com/terms/a/additional-insured.asp)
+
+
+Search
+Please fill out this field. 
+  * [ News ](https://www.investopedia.com/news-4427706)
+News
+    * [ Markets ](https://www.investopedia.com/markets-news-4427704)
+    * [ Companies ](https://www.investopedia.com/company-news-4427705)
+    * [ Earnings ](https://www.investopedia.com/earnings-reports-5218419)
+    * [ CD Rates ](https://www.investopedia.com/certificates-deposit-news-7111770)
+    * [ Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5184598)
+    * [ Economy ](https://www.investopedia.com/economic-news-5218422)
+    * [ Government ](https://www.investopedia.com/political-news-4689737)
+    * [ Crypto ](https://www.investopedia.com/cryptocurrency-news-5114163)
+    * [ Live Markets News ](https://www.investopedia.com/live-markets-news-11713202)
+    * [ Personal Finance ](https://www.investopedia.com/personal-finance-news-5114159)
+    * [ View All ](https://www.investopedia.com/news-4427706)
+  * [ Investing ](https://www.investopedia.com/investing-4427685)
+Investing
+    * [ Stocks ](https://www.investopedia.com/stocks-4427785)
+    * [ Cryptocurrency ](https://www.investopedia.com/cryptocurrency-4427699)
+    * [ Bonds ](https://www.investopedia.com/bonds-4689778)
+    * [ ETFs ](https://www.investopedia.com/etfs-4427784)
+    * [ Options and Derivatives ](https://www.investopedia.com/options-and-derivatives-trading-4689663)
+    * [ Commodities ](https://www.investopedia.com/commodities-4427780)
+    * [ Trading ](https://www.investopedia.com/trading-4427765)
+    * [ Automated Investing ](https://www.investopedia.com/financial-technology-and-automated-investing-4689759)
+    * [ Brokers ](https://www.investopedia.com/brokers-4689772)
+    * [ Fundamental Analysis ](https://www.investopedia.com/fundamental-analysis-4689757)
+    * [ View All ](https://www.investopedia.com/investing-4427685)
+  * [ Simulator ](https://www.investopedia.com/simulator/?inv_to_sim=global_nav)
+Simulator
+    * [ Login / Portfolio ](https://www.investopedia.com/simulator/portfolio)
+    * [ Trade ](https://www.investopedia.com/simulator/trade/stocks)
+    * [ Research ](https://www.investopedia.com/simulator/research)
+    * [ My Games ](https://www.investopedia.com/simulator/games/my-games)
+    * [ Leaderboard ](https://www.investopedia.com/simulator/games)
+  * [ Banking ](https://www.investopedia.com/banking-4427754)
+Banking
+    * [ Savings Accounts ](https://www.investopedia.com/savings-accounts-4689728)
+    * [ Certificates of Deposit (CDs) ](https://www.investopedia.com/certificate-of-deposits-4689733)
+    * [ Money Market Accounts ](https://www.investopedia.com/money-market-account-4689730)
+    * [ Checking Accounts ](https://www.investopedia.com/checking-accounts-4689732)
+    * [ View All ](https://www.investopedia.com/banking-4427754)
+  * [ Personal Finance ](https://www.investopedia.com/personal-finance-4427760)
+Personal Finance
+    * [ Budgeting and Saving ](https://www.investopedia.com/budgeting-and-savings-4427755)
+    * [ Personal Loans ](https://www.investopedia.com/personal-loans-4689729)
+    * [ Insurance ](https://www.investopedia.com/insurance-4427716)
+    * [ Mortgages ](https://www.investopedia.com/mortgage-4689703)
+    * [ Credit and Debt ](https://www.investopedia.com/credit-and-debt-4689724)
+    * [ Student Loans ](https://www.investopedia.com/student-loans-4689727)
+    * [ Taxes ](https://www.investopedia.com/taxes-4427724)
+    * [ Credit Cards ](https://www.investopedia.com/credit-card-4689721)
+    * [ Financial Literacy ](https://www.investopedia.com/financial-literacy-resource-center-7151950)
+    * [ Retirement ](https://www.investopedia.com/retirement-planning-4689695)
+    * [ View All ](https://www.investopedia.com/personal-finance-4427760)
+  * [ Economy ](https://www.investopedia.com/economy-4689801)
+Economy
+    * [ Government and Policy ](https://www.investopedia.com/government-and-policy-4689793)
+    * [ Monetary Policy ](https://www.investopedia.com/monetary-policy-4689792)
+    * [ Fiscal Policy ](https://www.investopedia.com/fiscal-policy-4689796)
+    * [ Economics ](https://www.investopedia.com/economics-4689800)
+    * [ View All ](https://www.investopedia.com/economy-4689801)
+  * [ Reviews ](https://www.investopedia.com/financial-product-reviews-7110783)
+Reviews
+    * [ Best Online Brokers ](https://www.investopedia.com/best-online-brokers-4587872)
+    * [ Best Crypto Exchanges ](https://www.investopedia.com/best-crypto-exchanges-5071855)
+    * [ Best Savings Rates ](https://www.investopedia.com/high-yield-savings-accounts-4770633)
+    * [ Best CD Rates ](https://www.investopedia.com/best-cd-rates-4770214)
+    * [ Best Life Insurance ](https://www.investopedia.com/the-best-life-insurance-companies-8763666)
+    * [ Best Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5094943)
+    * [ Best Robo-Advisors ](https://www.investopedia.com/the-best-robo-advisors-8764849)
+    * [ Best Personal Loans ](https://www.investopedia.com/the-best-personal-loans-8761582)
+    * [ Best Debt Relief Companies ](https://www.investopedia.com/the-best-debt-relief-companies-8763179)
+    * [ View All ](https://www.investopedia.com/financial-product-reviews-7110783)
+
+
+  * [Newsletters](https://www.investopedia.com/terms/a/additional-insured.asp)
+
+
+Follow Us
+  * [ ](https://www.facebook.com/Investopedia/)
+  * [ ](https://www.instagram.com/investopedia/?hl=en)
+  * [ ](https://www.youtube.com/c/investopedia)
+  * [ ](https://www.tiktok.com/@investopedia)
+  * [ ](https://www.linkedin.com/company/investopedia-ulc)
+
+
+  * [ News ](https://www.investopedia.com/news-4427706)
+    * [ Markets ](https://www.investopedia.com/markets-news-4427704)
+    * [ Companies ](https://www.investopedia.com/company-news-4427705)
+    * [ Earnings ](https://www.investopedia.com/earnings-reports-5218419)
+    * [ CD Rates ](https://www.investopedia.com/certificates-deposit-news-7111770)
+    * [ Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5184598)
+    * [ Economy ](https://www.investopedia.com/economic-news-5218422)
+    * [ Government ](https://www.investopedia.com/political-news-4689737)
+    * [ Crypto ](https://www.investopedia.com/cryptocurrency-news-5114163)
+    * [ Live Markets News ](https://www.investopedia.com/live-markets-news-11713202)
+    * [ Personal Finance ](https://www.investopedia.com/personal-finance-news-5114159)
+    * [ View All ](https://www.investopedia.com/news-4427706)
+  * [ Investing ](https://www.investopedia.com/investing-4427685)
+    * [ Stocks ](https://www.investopedia.com/stocks-4427785)
+    * [ Cryptocurrency ](https://www.investopedia.com/cryptocurrency-4427699)
+    * [ Bonds ](https://www.investopedia.com/bonds-4689778)
+    * [ ETFs ](https://www.investopedia.com/etfs-4427784)
+    * [ Options and Derivatives ](https://www.investopedia.com/options-and-derivatives-trading-4689663)
+    * [ Commodities ](https://www.investopedia.com/commodities-4427780)
+    * [ Trading ](https://www.investopedia.com/trading-4427765)
+    * [ Automated Investing ](https://www.investopedia.com/financial-technology-and-automated-investing-4689759)
+    * [ Brokers ](https://www.investopedia.com/brokers-4689772)
+    * [ Fundamental Analysis ](https://www.investopedia.com/fundamental-analysis-4689757)
+    * [ View All ](https://www.investopedia.com/investing-4427685)
+  * [ Simulator ](https://www.investopedia.com/simulator/?inv_to_sim=global_nav)
+    * [ Login / Portfolio ](https://www.investopedia.com/simulator/portfolio)
+    * [ Trade ](https://www.investopedia.com/simulator/trade/stocks)
+    * [ Research ](https://www.investopedia.com/simulator/research)
+    * [ My Games ](https://www.investopedia.com/simulator/games/my-games)
+    * [ Leaderboard ](https://www.investopedia.com/simulator/games)
+  * [ Banking ](https://www.investopedia.com/banking-4427754)
+    * [ Savings Accounts ](https://www.investopedia.com/savings-accounts-4689728)
+    * [ Certificates of Deposit (CDs) ](https://www.investopedia.com/certificate-of-deposits-4689733)
+    * [ Money Market Accounts ](https://www.investopedia.com/money-market-account-4689730)
+    * [ Checking Accounts ](https://www.investopedia.com/checking-accounts-4689732)
+    * [ View All ](https://www.investopedia.com/banking-4427754)
+  * [ Personal Finance ](https://www.investopedia.com/personal-finance-4427760)
+    * [ Budgeting and Saving ](https://www.investopedia.com/budgeting-and-savings-4427755)
+    * [ Personal Loans ](https://www.investopedia.com/personal-loans-4689729)
+    * [ Insurance ](https://www.investopedia.com/insurance-4427716)
+    * [ Mortgages ](https://www.investopedia.com/mortgage-4689703)
+    * [ Credit and Debt ](https://www.investopedia.com/credit-and-debt-4689724)
+    * [ Student Loans ](https://www.investopedia.com/student-loans-4689727)
+    * [ Taxes ](https://www.investopedia.com/taxes-4427724)
+    * [ Credit Cards ](https://www.investopedia.com/credit-card-4689721)
+    * [ Financial Literacy ](https://www.investopedia.com/financial-literacy-resource-center-7151950)
+    * [ Retirement ](https://www.investopedia.com/retirement-planning-4689695)
+    * [ View All ](https://www.investopedia.com/personal-finance-4427760)
+  * [ Economy ](https://www.investopedia.com/economy-4689801)
+    * [ Government and Policy ](https://www.investopedia.com/government-and-policy-4689793)
+    * [ Monetary Policy ](https://www.investopedia.com/monetary-policy-4689792)
+    * [ Fiscal Policy ](https://www.investopedia.com/fiscal-policy-4689796)
+    * [ Economics ](https://www.investopedia.com/economics-4689800)
+    * [ View All ](https://www.investopedia.com/economy-4689801)
+  * [ Reviews ](https://www.investopedia.com/financial-product-reviews-7110783)
+    * [ Best Online Brokers ](https://www.investopedia.com/best-online-brokers-4587872)
+    * [ Best Crypto Exchanges ](https://www.investopedia.com/best-crypto-exchanges-5071855)
+    * [ Best Savings Rates ](https://www.investopedia.com/high-yield-savings-accounts-4770633)
+    * [ Best CD Rates ](https://www.investopedia.com/best-cd-rates-4770214)
+    * [ Best Life Insurance ](https://www.investopedia.com/the-best-life-insurance-companies-8763666)
+    * [ Best Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5094943)
+    * [ Best Robo-Advisors ](https://www.investopedia.com/the-best-robo-advisors-8764849)
+    * [ Best Personal Loans ](https://www.investopedia.com/the-best-personal-loans-8761582)
+    * [ Best Debt Relief Companies ](https://www.investopedia.com/the-best-debt-relief-companies-8763179)
+    * [ View All ](https://www.investopedia.com/financial-product-reviews-7110783)
+
+
+  * Top Stories
+  * [ This Famous Short Seller Is Betting Against AI ](https://www.investopedia.com/short-sellers-now-betting-big-against-ai-11842994)
+  * [ Here's the Average Income for 35–44-Year-Olds ](https://www.investopedia.com/are-you-keeping-up-here-s-the-average-income-for-35-44-year-olds-11841889)
+  * [ This Bank Can Help Lower Your Phone Bill ](https://www.investopedia.com/this-clever-bank-account-lowers-your-phone-bill-and-pays-4-20-on-your-savings-11844440)
+  * [ Here's the Average Salary for People in Transition ](https://www.investopedia.com/career-change-average-salary-11839914)
+
+
+Table of Contents
+Expand
+Table of Contents
+  * [What Is Additional Insured?](https://www.investopedia.com/terms/a/additional-insured.asp#toc-what-is-additional-insured)
+  * [How It Works](https://www.investopedia.com/terms/a/additional-insured.asp#toc-understanding-additional-insured)
+  * [Benefits](https://www.investopedia.com/terms/a/additional-insured.asp#toc-benefits-of-additional-insured)
+  * [Costs](https://www.investopedia.com/terms/a/additional-insured.asp#toc-costs-of-additional-insured)
+  * [Examples](https://www.investopedia.com/terms/a/additional-insured.asp#toc-examples-of-additional-insured)
+  * [FAQs](https://www.investopedia.com/terms/a/additional-insured.asp#toc-what-is-the-purpose-of-adding-an-additional-insured)
+  * [The Bottom Line](https://www.investopedia.com/terms/a/additional-insured.asp#toc-the-bottom-line)
+
+
+# Additional Insured: Definition, Benefits, Costs, and Examples
+By
+[Julia Kagan](https://www.investopedia.com/contributors/53409/)
+[Full Bio](https://www.investopedia.com/contributors/53409/)
+  * [ ](https://www.linkedin.com/in/julia-kagan-4118147/)
+
+
+Julia Kagan is a financial/consumer journalist and former senior editor, personal finance, of Investopedia.
+Learn about our  [editorial policies](https://www.investopedia.com/legal-4768893#editorial-policy)
+Updated June 20, 2025
+Reviewed by
+[David Kindness](https://www.investopedia.com/david-kindness-4799933)
+Reviewed by David Kindness
+[Full Bio](https://www.investopedia.com/david-kindness-4799933)
+  * [ ](https://www.linkedin.com/in/davidkindness/)
+
+
+David Kindness is a Certified Public Accountant (CPA) and an expert in the fields of financial accounting, corporate and individual tax planning and preparation, and investing and retirement planning. David has helped thousands of clients improve their accounting and financial systems, create budgets, and minimize their taxes. 
+Learn about our  [Financial Review Board](https://www.investopedia.com/investopedia-financial-review-board-5076269)
+Fact checked by
+[Pete Rathburn](https://www.investopedia.com/pete-rathburn-5197827)
+Fact checked by Pete Rathburn
+[Full Bio](https://www.investopedia.com/pete-rathburn-5197827)
+Pete Rathburn is a copy editor and fact-checker with expertise in economics and personal finance and over twenty years of experience in the classroom. 
+Learn about our  [editorial policies](https://www.investopedia.com/legal-4768893#editorial-policy)
+Definition
+An additional insured is anyone named in an insurance policy other than the original policyholder to receive coverage and protection for claims against the named insured's actions or work.
+##  What Is Additional Insured? 
+An additional insured is someone who gets added to[ insurance](https://www.investopedia.com/terms/l/liability_insurance.asp) policies by the original policyholder. This is usually done through an [endorsement](https://www.investopedia.com/terms/e/endorsement.asp) by the named insured or the party who purchases the insurance policy. Once the additional insured is added, they are protected from liability from the named insured's operations under the policy and can file a [claim](https://www.investopedia.com/terms/i/insurance_claim.asp) if they are sued. For instance, a subcontractor may add a general contractor to their policy as an additional insured. 
+### Key Takeaways
+  * An additional insured extends liability insurance coverage beyond the named insured to include other individuals or groups.
+  * An endorsement protects the additional insured under the named insurer's policy allowing them to file a claim if sued.
+  * A general contractor might require subcontractors to name the general and the owner on the subcontractor's policies.
+
+
+This option provides individuals besides the policyholder to file a claim if they are sued.
+Investopedia / Theresa Chiechi
+##  Understanding Additional Insured 
+Liability insurance provides insurance for the party named in the policy for protection against insurance claims due to injury or damage to property or individuals. Liability insurance policies provide coverage for the costs of monetary payments or payouts that the insured party might be responsible for if it's determined the insured party is legally liable. 
+An additional insured status in a liability policy extends the coverage beyond the named insured to include other individuals or groups that were not named in the original policy. Additional insured typically applies where the primary insured must provide coverage to additional parties for new risks that arise out of their connection to the named insured's conduct or operations. 
+These new individuals or groups are added to the policy through an amendment called an [endorsement](https://www.investopedia.com/terms/e/endorsement.asp). The amendment may name the additional insured within the policy. However, other policies may use a [blanket additional insured endorsement](https://www.investopedia.com/terms/b/blanket-additional-insured-endorsement.asp), which doesn't require the additional insured party to be named in the amendment. Instead, a general description of the type of groups or individuals that are to be extended coverage is added to the named insured's policy. 
+Advertiser Disclosure 
+× 
+The offers that appear in this table are from partnerships from which Investopedia receives compensation. This compensation may impact how and where listings appear. Investopedia does not include all offers available in the marketplace.
+Popular Accounts from Our Partners
+##  Benefits of Additional Insured 
+An additional insured amendment is helpful since it protects the individuals or parties that have been extended coverage under the named insured's policy. If a claim is filed or a lawsuit materializes, the additional insured would be covered. 
+Also, it's beneficial for a party to be covered as an additional insured since it reduces the loss history of the additional insured, which can ultimately lead to lower premiums. Instead, any losses from claims post against the policies of primary insured, and their premiums would likely increase. 
+##  Costs of Additional Insured 
+The cost of adding an additional insured is typically low, compared to the costs of the premium. Insurance company underwriting departments often consider the additional risk associated with additional insureds as marginal. Additional insurance coverage and endorsements are the subjects of frequent disagreements, misunderstandings, and litigation. The disagreements are often about whether the additional insurance coverage should cover "independent negligence" by the additional insured, or if it should only cover liabilities caused by the named insured's acts. 
+##  Examples of Additional Insured 
+Typically, a larger and more powerful business will require smaller operations to name the large business as an additional insured. The arrangement might appear counterintuitive, but it essentially comes down to leverage. The larger business has more bargaining power since the smaller companies want to do business with them. 
+###  Landlords 
+A landlord in a commercial building will often require that a tenant have the landlord named as an additional insured on the [tenant's insurance policies](https://www.investopedia.com/terms/r/renters-insurance.asp). In such a case, if there is an accident or loss on the tenant's premises, the landlord will benefit from the tenant's insurance coverage.1
+###  Contractors 
+A general contractor might require subcontractors to name the general and the owner on the subcontractor's policies. For example, a general contractor might contract out work to be done on a project to plumbers, electricians, and engineers. These workers are providing a service to the general contractor as [third parties](https://www.investopedia.com/terms/t/third-party.asp). As a result, the contracted third parties could sue or file a claim against the general contractor if they get hurt on the job. In this way, if the general contractor or owner is sued due to accidents arising out of the work of the subcontractor, the subcontractor's insurance will protect the general contractor and owner.1
+###  Manufacturers 
+Manufacturers may wish to cover the sellers of their products as additional insureds under the manufacturer's liability policies. This coverage helps provide motivation to the sellers to promote the sale of the products because the seller knows that any product liability lawsuit against the seller will be covered by the manufacturer's liability insurance.2
+## What Is the Purpose of Adding an Additional Insured?
+[Adding an additional insured](https://www.investopedia.com/terms/t/their-interests-may-appear-atima.asp) is a way of enabling a person or a group other than the policyholder to file a claim in case they are sued. An additional insured is typically added to a general liability insurance policy, commercial property or [commercial auto policy](https://www.investopedia.com/best-commercial-car-insurance-5105013). Coverage could be for one single event or for the duration of the policy. An additional insured amendment is often added when the primary insured has to provide coverage for parties that would be at risk of being sued due to being connected to the primary insured's conduct or operations.
+## Who Should Be Added as an Additional Insured?
+A person or group at risk of being sued due to a connection to the primary insured's business or operations should be added as an additional insured. Examples include a landlord added to a tenant's coverage or a contractor added to a subcontractor's coverage, among others.
+## Who Is Eligible for Additional Insured Coverage?
+A person or group has to have a business relationship with the named insured in order to be included as an additional insured. The person or group added as an additional insured also has to be at risk of being sued if the policyholder is negligent.
+##  The Bottom Line 
+Additional insured coverage is provided to a person or group added to a primary policyholder's coverage. Typically, an entity is added in an additional insured endorsement when the entity has a business relationship with the named insured and is at risk of being sued by a third party if the named insured is deemed to be negligent. An additional insured amendment is typically added to a general liability insurance policy, commercial property or commercial auto policy. 
+Sponsored
+Get Personal Advice When You Need It Most
+[](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssoW3YTQ7h7RvTvhmztahQpSaifOPxGQfIhCy5Vhlu2uY_ynMxsMbr5wdWD96EuDTLn-4I_O8JQoRZ6sIZhVZr2KWvM-XvQll_S_LcZmT3psoGQLfC7IAQ1ZfJbXuDi2cID1fQNVEUkvV6ffAl_EgpIK5pBhtQdlGAXCsnuuGtayxPxoXfxbjlg3UoBK3tuWRWJVB9lbtYqIHouhZXH-Leh-B8q-hnrwEyUX97OJuH_H-iFGA4PocpddrhqvcHaur2IzhDZsOpoA9CQ9NPdUyCV_8Q2g8-ppK8hR1JVy18aVYqhidgGfaTo1WROsjDpKID-cxulQzNBlnKHp80K2qYRjO9RFrbO_2FZf2WiIZ9_92McnBC019woCDn1i5Gg1N0gJzjx49hlHflV4FWa9ma69GTutP5CReyTk2xzIpAmqERO5jvW0QE0sw&sai=AMfl-YT8vdUcb3iKIfe4aXL7rtKmOx6PNxwaktswSOeKdwI7NCcTzJLODPWJvbxm9tUMrvS3RT_1DE4k96LAMQ3ZrJs8bu2t8vGkbn_a9GeOp7pY7tfDgL70pOnP8WBWeRdhazUEmM9tmGEMCfJ0X6Ft7K6MafphtFcoZZjjNNe_pjTAgiy7IZjkKTdGOIvEuyaEd2tZoOAL_4nDv4vXr3ltXVtnwBpczm0ZGpVBdSJdgaFNQgVPHm0BWe69jqaxsZheUSr8t58fbx7SA94aOKZF98apiRyzRQ&sig=Cg0ArKJSzJ6zBvdASp_tEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N510001.110872INVESTOPEDIAUS0/B23381186.385380135;dc_trk_aid=576309121;dc_trk_cid=208405767;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1) Discover the best financial strategy for your unique goals and [find investment opportunities](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssoW3YTQ7h7RvTvhmztahQpSaifOPxGQfIhCy5Vhlu2uY_ynMxsMbr5wdWD96EuDTLn-4I_O8JQoRZ6sIZhVZr2KWvM-XvQll_S_LcZmT3psoGQLfC7IAQ1ZfJbXuDi2cID1fQNVEUkvV6ffAl_EgpIK5pBhtQdlGAXCsnuuGtayxPxoXfxbjlg3UoBK3tuWRWJVB9lbtYqIHouhZXH-Leh-B8q-hnrwEyUX97OJuH_H-iFGA4PocpddrhqvcHaur2IzhDZsOpoA9CQ9NPdUyCV_8Q2g8-ppK8hR1JVy18aVYqhidgGfaTo1WROsjDpKID-cxulQzNBlnKHp80K2qYRjO9RFrbO_2FZf2WiIZ9_92McnBC019woCDn1i5Gg1N0gJzjx49hlHflV4FWa9ma69GTutP5CReyTk2xzIpAmqERO5jvW0QE0sw&sai=AMfl-YT8vdUcb3iKIfe4aXL7rtKmOx6PNxwaktswSOeKdwI7NCcTzJLODPWJvbxm9tUMrvS3RT_1DE4k96LAMQ3ZrJs8bu2t8vGkbn_a9GeOp7pY7tfDgL70pOnP8WBWeRdhazUEmM9tmGEMCfJ0X6Ft7K6MafphtFcoZZjjNNe_pjTAgiy7IZjkKTdGOIvEuyaEd2tZoOAL_4nDv4vXr3ltXVtnwBpczm0ZGpVBdSJdgaFNQgVPHm0BWe69jqaxsZheUSr8t58fbx7SA94aOKZF98apiRyzRQ&sig=Cg0ArKJSzJ6zBvdASp_tEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N510001.110872INVESTOPEDIAUS0/B23381186.385380135;dc_trk_aid=576309121;dc_trk_cid=208405767;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1) that can help [maximize your income.](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssoW3YTQ7h7RvTvhmztahQpSaifOPxGQfIhCy5Vhlu2uY_ynMxsMbr5wdWD96EuDTLn-4I_O8JQoRZ6sIZhVZr2KWvM-XvQll_S_LcZmT3psoGQLfC7IAQ1ZfJbXuDi2cID1fQNVEUkvV6ffAl_EgpIK5pBhtQdlGAXCsnuuGtayxPxoXfxbjlg3UoBK3tuWRWJVB9lbtYqIHouhZXH-Leh-B8q-hnrwEyUX97OJuH_H-iFGA4PocpddrhqvcHaur2IzhDZsOpoA9CQ9NPdUyCV_8Q2g8-ppK8hR1JVy18aVYqhidgGfaTo1WROsjDpKID-cxulQzNBlnKHp80K2qYRjO9RFrbO_2FZf2WiIZ9_92McnBC019woCDn1i5Gg1N0gJzjx49hlHflV4FWa9ma69GTutP5CReyTk2xzIpAmqERO5jvW0QE0sw&sai=AMfl-YT8vdUcb3iKIfe4aXL7rtKmOx6PNxwaktswSOeKdwI7NCcTzJLODPWJvbxm9tUMrvS3RT_1DE4k96LAMQ3ZrJs8bu2t8vGkbn_a9GeOp7pY7tfDgL70pOnP8WBWeRdhazUEmM9tmGEMCfJ0X6Ft7K6MafphtFcoZZjjNNe_pjTAgiy7IZjkKTdGOIvEuyaEd2tZoOAL_4nDv4vXr3ltXVtnwBpczm0ZGpVBdSJdgaFNQgVPHm0BWe69jqaxsZheUSr8t58fbx7SA94aOKZF98apiRyzRQ&sig=Cg0ArKJSzJ6zBvdASp_tEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N510001.110872INVESTOPEDIAUS0/B23381186.385380135;dc_trk_aid=576309121;dc_trk_cid=208405767;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1) Vanguard Personal Advisor allows you to [receive personalized support](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssoW3YTQ7h7RvTvhmztahQpSaifOPxGQfIhCy5Vhlu2uY_ynMxsMbr5wdWD96EuDTLn-4I_O8JQoRZ6sIZhVZr2KWvM-XvQll_S_LcZmT3psoGQLfC7IAQ1ZfJbXuDi2cID1fQNVEUkvV6ffAl_EgpIK5pBhtQdlGAXCsnuuGtayxPxoXfxbjlg3UoBK3tuWRWJVB9lbtYqIHouhZXH-Leh-B8q-hnrwEyUX97OJuH_H-iFGA4PocpddrhqvcHaur2IzhDZsOpoA9CQ9NPdUyCV_8Q2g8-ppK8hR1JVy18aVYqhidgGfaTo1WROsjDpKID-cxulQzNBlnKHp80K2qYRjO9RFrbO_2FZf2WiIZ9_92McnBC019woCDn1i5Gg1N0gJzjx49hlHflV4FWa9ma69GTutP5CReyTk2xzIpAmqERO5jvW0QE0sw&sai=AMfl-YT8vdUcb3iKIfe4aXL7rtKmOx6PNxwaktswSOeKdwI7NCcTzJLODPWJvbxm9tUMrvS3RT_1DE4k96LAMQ3ZrJs8bu2t8vGkbn_a9GeOp7pY7tfDgL70pOnP8WBWeRdhazUEmM9tmGEMCfJ0X6Ft7K6MafphtFcoZZjjNNe_pjTAgiy7IZjkKTdGOIvEuyaEd2tZoOAL_4nDv4vXr3ltXVtnwBpczm0ZGpVBdSJdgaFNQgVPHm0BWe69jqaxsZheUSr8t58fbx7SA94aOKZF98apiRyzRQ&sig=Cg0ArKJSzJ6zBvdASp_tEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N510001.110872INVESTOPEDIAUS0/B23381186.385380135;dc_trk_aid=576309121;dc_trk_cid=208405767;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1) from experienced financial advisors and access to services that can help you maintain your portfolio. Find out how you can [access personal financial advice and start talking to an advisor.](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssoW3YTQ7h7RvTvhmztahQpSaifOPxGQfIhCy5Vhlu2uY_ynMxsMbr5wdWD96EuDTLn-4I_O8JQoRZ6sIZhVZr2KWvM-XvQll_S_LcZmT3psoGQLfC7IAQ1ZfJbXuDi2cID1fQNVEUkvV6ffAl_EgpIK5pBhtQdlGAXCsnuuGtayxPxoXfxbjlg3UoBK3tuWRWJVB9lbtYqIHouhZXH-Leh-B8q-hnrwEyUX97OJuH_H-iFGA4PocpddrhqvcHaur2IzhDZsOpoA9CQ9NPdUyCV_8Q2g8-ppK8hR1JVy18aVYqhidgGfaTo1WROsjDpKID-cxulQzNBlnKHp80K2qYRjO9RFrbO_2FZf2WiIZ9_92McnBC019woCDn1i5Gg1N0gJzjx49hlHflV4FWa9ma69GTutP5CReyTk2xzIpAmqERO5jvW0QE0sw&sai=AMfl-YT8vdUcb3iKIfe4aXL7rtKmOx6PNxwaktswSOeKdwI7NCcTzJLODPWJvbxm9tUMrvS3RT_1DE4k96LAMQ3ZrJs8bu2t8vGkbn_a9GeOp7pY7tfDgL70pOnP8WBWeRdhazUEmM9tmGEMCfJ0X6Ft7K6MafphtFcoZZjjNNe_pjTAgiy7IZjkKTdGOIvEuyaEd2tZoOAL_4nDv4vXr3ltXVtnwBpczm0ZGpVBdSJdgaFNQgVPHm0BWe69jqaxsZheUSr8t58fbx7SA94aOKZF98apiRyzRQ&sig=Cg0ArKJSzJ6zBvdASp_tEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N510001.110872INVESTOPEDIAUS0/B23381186.385380135;dc_trk_aid=576309121;dc_trk_cid=208405767;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1)
+Article Sources
+Investopedia requires writers to use primary sources to support their work. These include white papers, government data, original reporting, and interviews with industry experts. We also reference original research from other reputable publishers where appropriate. You can learn more about the standards we follow in producing accurate, unbiased content in our [editorial policy.](https://www.investopedia.com/legal-4768893#EditorialPolicy)
+  1. New York State Bar Association. "[Who Qualifies as an Additional Insured Under the CGL Policy](https://nysba.org/NYSBA/Coursebooks/SPRING%202015%20CLE%20Coursebooks/Insurance%20Coverage/Topic-4-Fitzpatrick-Additional%20Insured%20Coverage%202015.pdf)," Page 2.
+  2. American Bar Association. "[Chapter 1 - Definitions and Comparisons of Commonly Used Titles](https://www.americanbar.org/content/dam/aba-cms-dotorg/products/inv/book/313719085/chap1-5190545.pdf)," Page 6.
+
+
+Take the Next Step to Invest
+Advertiser Disclosure 
+× 
+The offers that appear in this table are from partnerships from which Investopedia receives compensation. This compensation may impact how and where listings appear. Investopedia does not include all offers available in the marketplace.
+Read more
+  * [Personal Finance](https://www.investopedia.com/personal-finance-4427760)
+  * [Insurance](https://www.investopedia.com/insurance-4427716)
+  * [Business Insurance](https://www.investopedia.com/business-insurance-7105651)
+  * [Corporate Insurance](https://www.investopedia.com/corporate-insurance-4689818)
+
+
+Partner Links
+## Related Articles
+[ Understanding Loss Portfolio Transfers: Definition, Process, and Benefits ](https://www.investopedia.com/terms/l/loss-portfolio-transfer.asp) [ Loss Cost: What it Means, How to Calculate ](https://www.investopedia.com/terms/l/loss-cost.asp) [ Rate on Line: Meaning in Reinsurance, Profitability ](https://www.investopedia.com/terms/r/rate-line.asp) [ How to Become a Claims Adjuster: Duties, Requirements, & Advantages ](https://www.investopedia.com/terms/c/claims-adjuster.asp) [ Reciprocal Insurance Exchange: How It Works, Key Features, Examples ](https://www.investopedia.com/terms/r/reciprocal-insurance-exchange.asp) [ Tracing the Evolution of Insurance: From Ancient Babylon to Modern Day ](https://www.investopedia.com/articles/08/history-of-insurance.asp) [ Block Policy Insurance: Coverage, How It Works, and Types Explained ](https://www.investopedia.com/terms/b/block-policy.asp) [ Lost Policy Release (LPR): What It Is, How It Works ](https://www.investopedia.com/terms/l/lost-policy-release-lpr.asp)
+[ Understanding Reinsurance Sidecars: Definition, Function, and Benefits ](https://www.investopedia.com/terms/r/reinsurance-sidecar.asp) [ What Is a Captive Insurance Company? ](https://www.investopedia.com/terms/c/captive-insurance-company.asp) [ Understanding Wrap-Up Insurance: Types, Coverage, and Benefits ](https://www.investopedia.com/terms/w/wrap-up-insurance.asp) [ Understanding the Investment Income Ratio: A Guide to Profitability ](https://www.investopedia.com/terms/i/investment-income-ratio.asp) [ Best Small Business Insurance for November 2025 ](https://www.investopedia.com/the-best-small-business-insurance-11686113) [ Understanding Allied Lines Insurance: Coverage and Benefits Explained ](https://www.investopedia.com/terms/a/allied-lines.asp) [ Understanding the Carmack Amendment: Impact on Carriers' Liability ](https://www.investopedia.com/terms/c/carmack-amendment.asp) [ Understanding Actuarial Services: Assessing Financial Impact and Risk ](https://www.investopedia.com/terms/a/actuarial-service.asp)
+[ Investopedia ](https://www.investopedia.com/)
+[Newsletter Sign Up](https://www.investopedia.com/terms/a/additional-insured.asp)
+Follow Us
+  * [ ](https://www.facebook.com/Investopedia/)
+  * [ ](https://www.instagram.com/investopedia/?hl=en)
+  * [ ](https://www.linkedin.com/company/investopedia-ulc)
+  * [ ](https://www.tiktok.com/@investopedia)
+  * [ ](https://www.youtube.com/c/investopedia)
+
+
+  * [News](https://www.investopedia.com/news-4427706)
+  * [Investing](https://www.investopedia.com/investing-4427685)
+  * [Simulator](https://www.investopedia.com/simulator/?inv_to_sim=global_nav)
+  * [Banking](https://www.investopedia.com/banking-4427754)
+  * [Personal Finance](https://www.investopedia.com/personal-finance-4427760)
+  * [Economy](https://www.investopedia.com/economy-4689801)
+  * [Reviews](https://www.investopedia.com/financial-product-reviews-7110783)
+  * [Dictionary](https://www.investopedia.com/financial-term-dictionary-4769738)
+
+
+  * [ About Us ](https://www.investopedia.com/about-us-5093223)
+  * [ Editorial Process ](https://www.investopedia.com/legal-4768893#toc-editorial-policy)
+  * [ Careers ](https://www.people.inc/careers)
+  * [ Contact Us ](https://www.people.inc/contact)
+  * [ Privacy Policy ](https://www.people.inc/brands-privacy)
+  * [ Terms of Service ](https://www.people.inc/brands-termsofservice)
+  * [ Advertise ](https://www.people.inc/advertising)
+  * Your Privacy Choices
+
+
+  * [#](https://www.investopedia.com/terms-beginning-with-num-4769350)
+  * [A](https://www.investopedia.com/terms-beginning-with-a-4769351)
+  * [B](https://www.investopedia.com/terms-beginning-with-b-4769352)
+  * [C](https://www.investopedia.com/terms-beginning-with-c-4769353)
+  * [D](https://www.investopedia.com/terms-beginning-with-d-4769354)
+  * [E](https://www.investopedia.com/terms-beginning-with-e-4769355)
+  * [F](https://www.investopedia.com/terms-beginning-with-f-4769356)
+  * [G](https://www.investopedia.com/terms-beginning-with-g-4769357)
+  * [H](https://www.investopedia.com/terms-beginning-with-h-4769358)
+  * [I](https://www.investopedia.com/terms-beginning-with-i-4769359)
+  * [J](https://www.investopedia.com/terms-beginning-with-j-4769360)
+  * [K](https://www.investopedia.com/terms-beginning-with-k-4769361)
+  * [L](https://www.investopedia.com/terms-beginning-with-l-4769362)
+  * [M](https://www.investopedia.com/terms-beginning-with-m-4769363)
+  * [N](https://www.investopedia.com/terms-beginning-with-n-4769364)
+  * [O](https://www.investopedia.com/terms-beginning-with-o-4769365)
+  * [P](https://www.investopedia.com/terms-beginning-with-p-4769366)
+  * [Q](https://www.investopedia.com/terms-beginning-with-q-4769367)
+  * [R](https://www.investopedia.com/terms-beginning-with-r-4769368)
+  * [S](https://www.investopedia.com/terms-beginning-with-s-4769369)
+  * [T](https://www.investopedia.com/terms-beginning-with-t-4769370)
+  * [U](https://www.investopedia.com/terms-beginning-with-u-4769371)
+  * [V](https://www.investopedia.com/terms-beginning-with-v-4769372)
+  * [W](https://www.investopedia.com/terms-beginning-with-w-4769373)
+  * [X](https://www.investopedia.com/terms-beginning-with-x-4769374)
+  * [Y](https://www.investopedia.com/terms-beginning-with-y-4769375)
+  * [Z](https://www.investopedia.com/terms-beginning-with-z-4769376)
+
+
+Investopedia is part of the [People Inc.](https://www.people.inc) publishing family. 
+Newsletter Sign Up
+Newsletter Sign Up
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. 
+Cookies Settings Accept All Cookies
+![](https://sync.graph.bluecava.com/ds.png?p=9274e5db-ddcb-11ea-a80b-0242ac110002&segment=4l28r4sz3bl3555wt2hyave1w6u68syw&uid=&CampaignID=303C&Channel=investopedia&CreativeID=&Placement=4202025&MAID=&Keyword=&Medium=&Source=&PageName=www.investopedia.com%2Fterms%2Fa%2Fadditional-insured.asp&Event=&Key1=4173514&Key2=4427760&Key3=4427716&Key4=7105651&Key5=4689818)

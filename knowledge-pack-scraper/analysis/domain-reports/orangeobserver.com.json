@@ -1,0 +1,456 @@
+{
+  "domain": "orangeobserver.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:25.415882",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 13,
+      "frequency": 13.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 10,
+      "frequency": 10.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "dropdown-item",
+      "count": 77
+    },
+    {
+      "class": "text-dark",
+      "count": 54
+    },
+    {
+      "class": "list-inline-item",
+      "count": 43
+    },
+    {
+      "class": "list-inline",
+      "count": 35
+    },
+    {
+      "class": "img-fluid",
+      "count": 34
+    },
+    {
+      "class": "article__image",
+      "count": 33
+    },
+    {
+      "class": "nav-item",
+      "count": 32
+    },
+    {
+      "class": "item",
+      "count": 32
+    },
+    {
+      "class": "slick-slide",
+      "count": 32
+    },
+    {
+      "class": "article__entry",
+      "count": 32
+    },
+    {
+      "class": "article__content",
+      "count": 32
+    },
+    {
+      "class": "nav-link",
+      "count": 22
+    },
+    {
+      "class": "slick-cloned",
+      "count": 18
+    },
+    {
+      "class": "dropdown",
+      "count": 13
+    },
+    {
+      "class": "active",
+      "count": 13
+    },
+    {
+      "class": "container",
+      "count": 10
+    },
+    {
+      "class": "row",
+      "count": 10
+    },
+    {
+      "class": "dropdown-toggle",
+      "count": 10
+    },
+    {
+      "class": "dropdown-menu",
+      "count": 10
+    },
+    {
+      "class": "dropdown-menu-left",
+      "count": 10
+    },
+    {
+      "class": "list-unstyled",
+      "count": 5
+    },
+    {
+      "class": "fa",
+      "count": 5
+    },
+    {
+      "class": "btn",
+      "count": 5
+    },
+    {
+      "class": "footer-title",
+      "count": 5
+    },
+    {
+      "class": "dfp-tag-wrapper",
+      "count": 4
+    },
+    {
+      "class": "rounded-0",
+      "count": 4
+    },
+    {
+      "class": "slick-active",
+      "count": 4
+    },
+    {
+      "class": "col-md-3",
+      "count": 4
+    },
+    {
+      "class": "widget__footer",
+      "count": 4
+    },
+    {
+      "class": "contact-list",
+      "count": 4
+    },
+    {
+      "class": "fpn-text",
+      "count": 4
+    },
+    {
+      "class": "col",
+      "count": 3
+    },
+    {
+      "class": "navbar-nav",
+      "count": 3
+    },
+    {
+      "class": "col-lg-12",
+      "count": 3
+    },
+    {
+      "class": "col-md-12",
+      "count": 3
+    },
+    {
+      "class": "dropdown-footer",
+      "count": 3
+    },
+    {
+      "class": "btn-social",
+      "count": 3
+    },
+    {
+      "class": "rounded",
+      "count": 3
+    },
+    {
+      "class": "text-white",
+      "count": 3
+    },
+    {
+      "class": "d-none",
+      "count": 2
+    },
+    {
+      "class": "d-sm-block",
+      "count": 2
+    },
+    {
+      "class": "app-button-link",
+      "count": 2
+    },
+    {
+      "class": "bg-white",
+      "count": 2
+    },
+    {
+      "class": "mb-0",
+      "count": 2
+    },
+    {
+      "class": "navigation-shadow",
+      "count": 2
+    },
+    {
+      "class": "navbar-toggler-icon",
+      "count": 2
+    },
+    {
+      "class": "mx-auto",
+      "count": 2
+    },
+    {
+      "class": "fa-search",
+      "count": 2
+    },
+    {
+      "class": "no-gutters",
+      "count": 2
+    },
+    {
+      "class": "form-control",
+      "count": 2
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "gpt-impl-0.8718761803740285",
+      "count": 1
+    },
+    {
+      "id": "omapi-css",
+      "count": 1
+    },
+    {
+      "id": "billboard_ad",
+      "count": 1
+    },
+    {
+      "id": "dfp-ad-billboard",
+      "count": 1
+    },
+    {
+      "id": "CMyemvfl4JADFVQKTwgd2XEfIw",
+      "count": 1
+    },
+    {
+      "id": "google_ads_iframe_/30582678/OMG/orangeobserver_1__container__",
+      "count": 1
+    },
+    {
+      "id": "scroll_logo",
+      "count": 1
+    },
+    {
+      "id": "main_nav99",
+      "count": 1
+    },
+    {
+      "id": "example-search-input4",
+      "count": 1
+    },
+    {
+      "id": "modal_aside_right",
+      "count": 1
+    },
+    {
+      "id": "header_ad",
+      "count": 1
+    },
+    {
+      "id": "dfp-ad-header",
+      "count": 1
+    },
+    {
+      "id": "CM2emvfl4JADFVQKTwgd2XEfIw",
+      "count": 1
+    },
+    {
+      "id": "google_ads_iframe_/30582678/OMG/orangeobserver_2__container__",
+      "count": 1
+    },
+    {
+      "id": "google_ads_iframe_/30582678/OMG/orangeobserver_2",
+      "count": 1
+    },
+    {
+      "id": "3",
+      "count": 1
+    },
+    {
+      "id": "footer_ad",
+      "count": 1
+    },
+    {
+      "id": "dfp-ad-footer",
+      "count": 1
+    },
+    {
+      "id": "CMuemvfl4JADFVQKTwgd2XEfIw",
+      "count": 1
+    },
+    {
+      "id": "google_ads_iframe_/30582678/OMG/orangeobserver_0__container__",
+      "count": 1
+    },
+    {
+      "id": "google_ads_iframe_/30582678/OMG/orangeobserver_0",
+      "count": 1
+    },
+    {
+      "id": "1",
+      "count": 1
+    },
+    {
+      "id": "sticky-footer",
+      "count": 1
+    },
+    {
+      "id": "dfp-ad-sticky_footer",
+      "count": 1
+    },
+    {
+      "id": "CM6emvfl4JADFVQKTwgd2XEfIw",
+      "count": 1
+    },
+    {
+      "id": "google_ads_iframe_/30582678/OMG/orangeobserver_3__container__",
+      "count": 1
+    },
+    {
+      "id": "return-to-top",
+      "count": 1
+    },
+    {
+      "id": "google_ads_top_frame",
+      "count": 1
+    },
+    {
+      "id": "om-ykwfg2cksy3exnbtnjkq-holder",
+      "count": 1
+    },
+    {
+      "id": "om-qsjhyuidcpidqdcogv7q-holder",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": null,
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

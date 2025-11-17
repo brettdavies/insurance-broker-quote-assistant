@@ -1,0 +1,451 @@
+{
+  "domain": "wikihow.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:25.185896",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "footer",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "nav",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 5,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 212,
+      "frequency": 212.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 100,
+      "frequency": 100.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "content-fill",
+      "count": 68
+    },
+    {
+      "class": "related-wh",
+      "count": 66
+    },
+    {
+      "class": "content-spacer",
+      "count": 66
+    },
+    {
+      "class": "scrolldefer",
+      "count": 66
+    },
+    {
+      "class": "related-wh-title",
+      "count": 66
+    },
+    {
+      "class": "img-loading-alt",
+      "count": 65
+    },
+    {
+      "class": "related-wh-howto",
+      "count": 65
+    },
+    {
+      "class": "clearall",
+      "count": 61
+    },
+    {
+      "class": "menuitem",
+      "count": 49
+    },
+    {
+      "class": "sidebox-related-wh-title",
+      "count": 48
+    },
+    {
+      "class": "scrolltomarker",
+      "count": 38
+    },
+    {
+      "class": "rightrail_ad",
+      "count": 38
+    },
+    {
+      "class": "rightraildouble_ad",
+      "count": 38
+    },
+    {
+      "class": "sidebox-related-wh",
+      "count": 36
+    },
+    {
+      "class": "menu_item_sub",
+      "count": 32
+    },
+    {
+      "class": "stepanchor",
+      "count": 31
+    },
+    {
+      "class": "mwimg",
+      "count": 31
+    },
+    {
+      "class": "largeimage",
+      "count": 31
+    },
+    {
+      "class": "floatcenter",
+      "count": 31
+    },
+    {
+      "class": "pin_hover",
+      "count": 31
+    },
+    {
+      "class": "image",
+      "count": 31
+    },
+    {
+      "class": "whcdn",
+      "count": 31
+    },
+    {
+      "class": "image_details",
+      "count": 31
+    },
+    {
+      "class": "pin_button",
+      "count": 31
+    },
+    {
+      "class": "step_num",
+      "count": 31
+    },
+    {
+      "class": "step",
+      "count": 31
+    },
+    {
+      "class": "whb",
+      "count": 31
+    },
+    {
+      "class": "wh_ad_inner",
+      "count": 24
+    },
+    {
+      "class": "w_label",
+      "count": 24
+    },
+    {
+      "class": "al_grey",
+      "count": 24
+    },
+    {
+      "class": "wh_ad_active",
+      "count": 24
+    },
+    {
+      "class": "button",
+      "count": 22
+    },
+    {
+      "class": "top_cat",
+      "count": 21
+    },
+    {
+      "class": "section_text",
+      "count": 20
+    },
+    {
+      "class": "rr_container",
+      "count": 19
+    },
+    {
+      "class": "blockthrough",
+      "count": 19
+    },
+    {
+      "class": "font_test",
+      "count": 17
+    },
+    {
+      "class": "mw-headline",
+      "count": 17
+    },
+    {
+      "class": "section",
+      "count": 16
+    },
+    {
+      "class": "method_toc_item",
+      "count": 16
+    },
+    {
+      "class": "sticky",
+      "count": 15
+    },
+    {
+      "class": "headline_container",
+      "count": 15
+    },
+    {
+      "class": "headline_info",
+      "count": 15
+    },
+    {
+      "class": "sticky-sentinel",
+      "count": 15
+    },
+    {
+      "class": "sticky-sentinel-top",
+      "count": 15
+    },
+    {
+      "class": "wh_vote_box",
+      "count": 14
+    },
+    {
+      "class": "sidebox",
+      "count": 13
+    },
+    {
+      "class": "explore_menu_line",
+      "count": 12
+    },
+    {
+      "class": "al_method",
+      "count": 12
+    },
+    {
+      "class": "related-wh-quiz",
+      "count": 12
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "0",
+      "count": 6
+    },
+    {
+      "id": "706530",
+      "count": 3
+    },
+    {
+      "id": "scrollto_ad_",
+      "count": 2
+    },
+    {
+      "id": "Expert-Video",
+      "count": 2
+    },
+    {
+      "id": "sp_modified",
+      "count": 2
+    },
+    {
+      "id": "replacement",
+      "count": 1
+    },
+    {
+      "id": "picture_",
+      "count": 1
+    },
+    {
+      "id": "header_container",
+      "count": 1
+    },
+    {
+      "id": "skip-main",
+      "count": 1
+    },
+    {
+      "id": "header",
+      "count": 1
+    },
+    {
+      "id": "mw-mf-main-menu-button",
+      "count": 1
+    },
+    {
+      "id": "hamburger_dot",
+      "count": 1
+    },
+    {
+      "id": "wikilove_header",
+      "count": 1
+    },
+    {
+      "id": "wikilove_button",
+      "count": 1
+    },
+    {
+      "id": "header_logo",
+      "count": 1
+    },
+    {
+      "id": "hs",
+      "count": 1
+    },
+    {
+      "id": "search_form_top",
+      "count": 1
+    },
+    {
+      "id": "hs_query",
+      "count": 1
+    },
+    {
+      "id": "hs_submit",
+      "count": 1
+    },
+    {
+      "id": "hs_close",
+      "count": 1
+    },
+    {
+      "id": "actions",
+      "count": 1
+    },
+    {
+      "id": "nav_pro_li",
+      "count": 1
+    },
+    {
+      "id": "nav_pro",
+      "count": 1
+    },
+    {
+      "id": "nav_quizzes_li",
+      "count": 1
+    },
+    {
+      "id": "nav_quizzes",
+      "count": 1
+    },
+    {
+      "id": "nav_edit_li",
+      "count": 1
+    },
+    {
+      "id": "nav_edit",
+      "count": 1
+    },
+    {
+      "id": "nav_explore_li",
+      "count": 1
+    },
+    {
+      "id": "nav_explore",
+      "count": 1
+    },
+    {
+      "id": "nav_profile_li",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [],
+    "css_selector": "[role=\"main\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "low"
+  }
+}

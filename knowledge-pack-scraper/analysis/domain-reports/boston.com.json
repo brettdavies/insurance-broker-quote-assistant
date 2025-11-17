@@ -1,0 +1,455 @@
+{
+  "domain": "boston.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:22.667762",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 6,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 5,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 6,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 45,
+      "frequency": 45.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 47,
+      "frequency": 47.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 100,
+      "frequency": 100.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 6,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 258,
+      "frequency": 258.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 24,
+      "frequency": 24.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-item",
+      "count": 200
+    },
+    {
+      "class": "menu-item-type-taxonomy",
+      "count": 122
+    },
+    {
+      "class": "menu-item-object-post_tag",
+      "count": 100
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 59
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 59
+    },
+    {
+      "class": "screen-reader-text",
+      "count": 37
+    },
+    {
+      "class": "a-icon",
+      "count": 30
+    },
+    {
+      "class": "menu-item-hamburger-only",
+      "count": 26
+    },
+    {
+      "class": "menu-item-has-children",
+      "count": 24
+    },
+    {
+      "class": "sub-menu",
+      "count": 24
+    },
+    {
+      "class": "menu-item-object-category",
+      "count": 22
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 18
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 18
+    },
+    {
+      "class": "menu-item-button",
+      "count": 12
+    },
+    {
+      "class": "m-social-share__item",
+      "count": 12
+    },
+    {
+      "class": "a-list--no-style",
+      "count": 11
+    },
+    {
+      "class": "m-social-share__link",
+      "count": 11
+    },
+    {
+      "class": "m-social-share-modal__item-modal",
+      "count": 9
+    },
+    {
+      "class": "a-button",
+      "count": 8
+    },
+    {
+      "class": "share-modal__link",
+      "count": 8
+    },
+    {
+      "class": "ot-label-txt",
+      "count": 7
+    },
+    {
+      "class": "m-advert",
+      "count": 6
+    },
+    {
+      "class": "m-grid-container",
+      "count": 6
+    },
+    {
+      "class": "a-text",
+      "count": 6
+    },
+    {
+      "class": "optanon-category-C0002",
+      "count": 5
+    },
+    {
+      "class": "m-grid",
+      "count": 5
+    },
+    {
+      "class": "a-text--icon-label",
+      "count": 5
+    },
+    {
+      "class": "m-numbered-post-list__post",
+      "count": 5
+    },
+    {
+      "class": "m-numbered-post-list__link",
+      "count": 5
+    },
+    {
+      "class": "m-numbered-post-list__image",
+      "count": 5
+    },
+    {
+      "class": "m-numbered-post-list__pseudo-link-container",
+      "count": 5
+    },
+    {
+      "class": "m-numbered-post-list__pseudo-link",
+      "count": 5
+    },
+    {
+      "class": "ot-pc-scrollbar",
+      "count": 5
+    },
+    {
+      "class": "m-advert__container",
+      "count": 4
+    },
+    {
+      "class": "activated",
+      "count": 4
+    },
+    {
+      "class": "a-link",
+      "count": 4
+    },
+    {
+      "class": "st0",
+      "count": 4
+    },
+    {
+      "class": "m-widget",
+      "count": 4
+    },
+    {
+      "class": "o-well-c__wrapper",
+      "count": 4
+    },
+    {
+      "class": "m-grid-span-4",
+      "count": 4
+    },
+    {
+      "class": "ot-hide",
+      "count": 4
+    },
+    {
+      "class": "ot-accordion-layout",
+      "count": 4
+    },
+    {
+      "class": "ot-cat-item",
+      "count": 4
+    },
+    {
+      "class": "ot-vs-config",
+      "count": 4
+    },
+    {
+      "class": "ot-acc-hdr",
+      "count": 4
+    },
+    {
+      "class": "ot-plus-minus",
+      "count": 4
+    },
+    {
+      "class": "ot-cat-header",
+      "count": 4
+    },
+    {
+      "class": "ot-acc-grpcntr",
+      "count": 4
+    },
+    {
+      "class": "ot-acc-txt",
+      "count": 4
+    },
+    {
+      "class": "ot-acc-grpdesc",
+      "count": 4
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "ad_articlerail1",
+      "count": 5
+    },
+    {
+      "id": "ad_articlerail2",
+      "count": 5
+    },
+    {
+      "id": "ad_sectionfront1",
+      "count": 4
+    },
+    {
+      "id": "ad_sectionfront2",
+      "count": 4
+    },
+    {
+      "id": "ad_lead1",
+      "count": 3
+    },
+    {
+      "id": "securepubads.g",
+      "count": 2
+    },
+    {
+      "id": "_uasdk",
+      "count": 2
+    },
+    {
+      "id": "modal-wrapper",
+      "count": 2
+    },
+    {
+      "id": "sharetools-email",
+      "count": 2
+    },
+    {
+      "id": "sharetools-facebook",
+      "count": 2
+    },
+    {
+      "id": "sharetools-twitter",
+      "count": 2
+    },
+    {
+      "id": "sharetools-linkedin",
+      "count": 2
+    },
+    {
+      "id": "sharetools-bluesky",
+      "count": 2
+    },
+    {
+      "id": "sharetools-threads",
+      "count": 2
+    },
+    {
+      "id": "sharetools-whatsapp",
+      "count": 2
+    },
+    {
+      "id": "sharetools-copylink",
+      "count": 2
+    },
+    {
+      "id": "email_hp_wrap",
+      "count": 2
+    },
+    {
+      "id": "C0003",
+      "count": 2
+    },
+    {
+      "id": "C0002",
+      "count": 2
+    },
+    {
+      "id": "C0004",
+      "count": 2
+    },
+    {
+      "id": "cmp-inserter",
+      "count": 1
+    },
+    {
+      "id": "cmp-stub",
+      "count": 1
+    },
+    {
+      "id": "ccpa-stub",
+      "count": 1
+    },
+    {
+      "id": "ot-inserter",
+      "count": 1
+    },
+    {
+      "id": "onetrustSDK",
+      "count": 1
+    },
+    {
+      "id": "typekit-font-loading",
+      "count": 1
+    },
+    {
+      "id": "cls-ad-css",
+      "count": 1
+    },
+    {
+      "id": "pwt-inserter",
+      "count": 1
+    },
+    {
+      "id": "boston-ads",
+      "count": 1
+    },
+    {
+      "id": "boston-init-adserver",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article, main, [role=\"main\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"comment\"], [id*=\"comment\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

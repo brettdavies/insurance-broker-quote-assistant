@@ -1,0 +1,456 @@
+{
+  "domain": "wesh.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:26.809713",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 10,
+      "frequency": 10.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 43,
+      "frequency": 43.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 87,
+      "frequency": 87.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 20,
+      "frequency": 20.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "icon",
+      "count": 70
+    },
+    {
+      "class": "sub-nav-item",
+      "count": 37
+    },
+    {
+      "class": "icon-rain-drop",
+      "count": 24
+    },
+    {
+      "class": "forecast-item",
+      "count": 22
+    },
+    {
+      "class": "forecast-time",
+      "count": 22
+    },
+    {
+      "class": "forecast-icon-wrapper",
+      "count": 22
+    },
+    {
+      "class": "forecast-icon-bg",
+      "count": 22
+    },
+    {
+      "class": "forecast-icon",
+      "count": 22
+    },
+    {
+      "class": "forecast-card",
+      "count": 22
+    },
+    {
+      "class": "forecast-primary-temp",
+      "count": 22
+    },
+    {
+      "class": "forecast-secondary-info",
+      "count": 22
+    },
+    {
+      "class": "forecast-rain-icon",
+      "count": 22
+    },
+    {
+      "class": "forecast-secondary-text",
+      "count": 22
+    },
+    {
+      "class": "fa",
+      "count": 20
+    },
+    {
+      "class": "icon-weather-partlycloudy",
+      "count": 20
+    },
+    {
+      "class": "footer-section-item",
+      "count": 20
+    },
+    {
+      "class": "sidepanel-item",
+      "count": 16
+    },
+    {
+      "class": "lazyload",
+      "count": 13
+    },
+    {
+      "class": "lazyload-in-view",
+      "count": 13
+    },
+    {
+      "class": "mobile-exclude",
+      "count": 9
+    },
+    {
+      "class": "weather-tab-item",
+      "count": 8
+    },
+    {
+      "class": "medium-headline",
+      "count": 7
+    },
+    {
+      "class": "ad-container",
+      "count": 7
+    },
+    {
+      "class": "icon-close01",
+      "count": 6
+    },
+    {
+      "class": "has-children",
+      "count": 6
+    },
+    {
+      "class": "submenu-toggle",
+      "count": 6
+    },
+    {
+      "class": "sub-nav-items-container",
+      "count": 6
+    },
+    {
+      "class": "alerts--arrows",
+      "count": 6
+    },
+    {
+      "class": "bg-image",
+      "count": 6
+    },
+    {
+      "class": "ad-label",
+      "count": 5
+    },
+    {
+      "class": "js-share-container",
+      "count": 5
+    },
+    {
+      "class": "grid-content",
+      "count": 5
+    },
+    {
+      "class": "footer-legal-item",
+      "count": 5
+    },
+    {
+      "class": "mobile",
+      "count": 4
+    },
+    {
+      "class": "desktop-only",
+      "count": 4
+    },
+    {
+      "class": "condition",
+      "count": 4
+    },
+    {
+      "class": "sr-only",
+      "count": 4
+    },
+    {
+      "class": "icon-arrow-right01",
+      "count": 4
+    },
+    {
+      "class": "article-ad",
+      "count": 4
+    },
+    {
+      "class": "border-left",
+      "count": 4
+    },
+    {
+      "class": "article-byline--details-position",
+      "count": 4
+    },
+    {
+      "class": "weather-tabs-container",
+      "count": 4
+    },
+    {
+      "class": "weather-tabs-header",
+      "count": 4
+    },
+    {
+      "class": "js-tab",
+      "count": 4
+    },
+    {
+      "class": "open",
+      "count": 4
+    },
+    {
+      "class": "weather-tab",
+      "count": 4
+    },
+    {
+      "class": "icon-weather-nt_mostlycloudy",
+      "count": 4
+    },
+    {
+      "class": "js-share-social",
+      "count": 4
+    },
+    {
+      "class": "article",
+      "count": 4
+    },
+    {
+      "class": "js-share-dialog-container",
+      "count": 4
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "hourly",
+      "count": 4
+    },
+    {
+      "id": "daily",
+      "count": 4
+    },
+    {
+      "id": "3",
+      "count": 3
+    },
+    {
+      "id": "1",
+      "count": 2
+    },
+    {
+      "id": "2",
+      "count": 2
+    },
+    {
+      "id": "4",
+      "count": 2
+    },
+    {
+      "id": "5",
+      "count": 2
+    },
+    {
+      "id": "7",
+      "count": 2
+    },
+    {
+      "id": "8",
+      "count": 2
+    },
+    {
+      "id": "14",
+      "count": 2
+    },
+    {
+      "id": "alerts-changeweatherzip",
+      "count": 2
+    },
+    {
+      "id": "alerts-locateme",
+      "count": 2
+    },
+    {
+      "id": "alerts-playpause-icon",
+      "count": 2
+    },
+    {
+      "id": "98381669-d098-4b05-a204-e274e2a5b3d7-leaderboard",
+      "count": 2
+    },
+    {
+      "id": "5e1194df-0cda-4b74-98a8-61930b31d12f",
+      "count": 2
+    },
+    {
+      "id": "cc2dca0b-a0ad-4fa4-abec-748efd859984",
+      "count": 2
+    },
+    {
+      "id": "mobile-weather",
+      "count": 2
+    },
+    {
+      "id": "radar",
+      "count": 2
+    },
+    {
+      "id": "traffic",
+      "count": 2
+    },
+    {
+      "id": "' + tabName + '",
+      "count": 2
+    },
+    {
+      "id": "sidelist-weather",
+      "count": 2
+    },
+    {
+      "id": "bc_pre_1762544770758",
+      "count": 1
+    },
+    {
+      "id": "/assets/css/article-critical.4b8268",
+      "count": 1
+    },
+    {
+      "id": "data-layer",
+      "count": 1
+    },
+    {
+      "id": "json-ld",
+      "count": 1
+    },
+    {
+      "id": "modernizr-script-tag",
+      "count": 1
+    },
+    {
+      "id": "s",
+      "count": 1
+    },
+    {
+      "id": "googleidentityservice_button_styles",
+      "count": 1
+    },
+    {
+      "id": "weather-images",
+      "count": 1
+    },
+    {
+      "id": "nowcast-header",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"sidebar\"], [id*=\"sidebar\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

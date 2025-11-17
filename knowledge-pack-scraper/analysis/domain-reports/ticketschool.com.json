@@ -1,0 +1,456 @@
+{
+  "domain": "ticketschool.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:21.717625",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 15,
+      "frequency": 15.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 99,
+      "frequency": 99.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-item",
+      "count": 62
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 60
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 60
+    },
+    {
+      "class": "col-md-4",
+      "count": 14
+    },
+    {
+      "class": "container",
+      "count": 11
+    },
+    {
+      "class": "collapse",
+      "count": 10
+    },
+    {
+      "class": "row",
+      "count": 9
+    },
+    {
+      "class": "panel",
+      "count": 9
+    },
+    {
+      "class": "panel-default",
+      "count": 9
+    },
+    {
+      "class": "panel-heading",
+      "count": 9
+    },
+    {
+      "class": "panel-title",
+      "count": 9
+    },
+    {
+      "class": "collapsed",
+      "count": 9
+    },
+    {
+      "class": "panel-collapse",
+      "count": 9
+    },
+    {
+      "class": "panel-body",
+      "count": 9
+    },
+    {
+      "class": "pull-left",
+      "count": 8
+    },
+    {
+      "class": "course-info-image",
+      "count": 8
+    },
+    {
+      "class": "menu",
+      "count": 7
+    },
+    {
+      "class": "mega-menu-item",
+      "count": 6
+    },
+    {
+      "class": "menu-item-has-children",
+      "count": 6
+    },
+    {
+      "class": "sub-menu",
+      "count": 5
+    },
+    {
+      "class": "btn",
+      "count": 4
+    },
+    {
+      "class": "mega-align-bottom-left",
+      "count": 4
+    },
+    {
+      "class": "mega-menu-link",
+      "count": 4
+    },
+    {
+      "class": "col-md-3",
+      "count": 4
+    },
+    {
+      "class": "col-sm-3",
+      "count": 4
+    },
+    {
+      "class": "avail-icon-text",
+      "count": 4
+    },
+    {
+      "class": "avail-content",
+      "count": 4
+    },
+    {
+      "class": "col-md-6",
+      "count": 4
+    },
+    {
+      "class": "title-sec",
+      "count": 4
+    },
+    {
+      "class": "col-sm-4",
+      "count": 3
+    },
+    {
+      "class": "col-xxs-12",
+      "count": 3
+    },
+    {
+      "class": "pull-right",
+      "count": 3
+    },
+    {
+      "class": "btn-primary",
+      "count": 3
+    },
+    {
+      "class": "btn-sm",
+      "count": 3
+    },
+    {
+      "class": "btn-block",
+      "count": 3
+    },
+    {
+      "class": "icon-bar",
+      "count": 3
+    },
+    {
+      "class": "white",
+      "count": 3
+    },
+    {
+      "class": "mega-menu-flyout",
+      "count": 3
+    },
+    {
+      "class": "mega-menu-item-type-post_type",
+      "count": 3
+    },
+    {
+      "class": "mega-menu-item-object-page",
+      "count": 3
+    },
+    {
+      "class": "textwidget",
+      "count": 3
+    },
+    {
+      "class": "avail-left-border",
+      "count": 3
+    },
+    {
+      "class": "course--title",
+      "count": 3
+    },
+    {
+      "class": "img-responsive",
+      "count": 3
+    },
+    {
+      "class": "fa",
+      "count": 3
+    },
+    {
+      "class": "col-lg-3",
+      "count": 2
+    },
+    {
+      "class": "navbar",
+      "count": 2
+    },
+    {
+      "class": "mega-menu-megamenu",
+      "count": 2
+    },
+    {
+      "class": "mega-menu-item-type-widget",
+      "count": 2
+    },
+    {
+      "class": "widget_text",
+      "count": 2
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "top-bar",
+      "count": 2
+    },
+    {
+      "id": "header-phone",
+      "count": 2
+    },
+    {
+      "id": "menu-michigan",
+      "count": 2
+    },
+    {
+      "id": "5cbd9ee4ce708b00017b6c63",
+      "count": 2
+    },
+    {
+      "id": "accordion",
+      "count": 2
+    },
+    {
+      "id": "jquery.bxslider-css",
+      "count": 1
+    },
+    {
+      "id": "wp-emoji-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-library-css",
+      "count": 1
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "gravity-bootstrap-css",
+      "count": 1
+    },
+    {
+      "id": "wpa-css-css",
+      "count": 1
+    },
+    {
+      "id": "megamenu-css",
+      "count": 1
+    },
+    {
+      "id": "dashicons-css",
+      "count": 1
+    },
+    {
+      "id": "refinerysource-style-css",
+      "count": 1
+    },
+    {
+      "id": "refinerysource-bootstrap-css",
+      "count": 1
+    },
+    {
+      "id": "shortcodes-css",
+      "count": 1
+    },
+    {
+      "id": "wp-paginate-css",
+      "count": 1
+    },
+    {
+      "id": "jquery-core-js",
+      "count": 1
+    },
+    {
+      "id": "jquery-migrate-js",
+      "count": 1
+    },
+    {
+      "id": "jquery.bxslider-js",
+      "count": 1
+    },
+    {
+      "id": "tp-js-js-extra",
+      "count": 1
+    },
+    {
+      "id": "tp-js-js",
+      "count": 1
+    },
+    {
+      "id": "dropdownsJS-js",
+      "count": 1
+    },
+    {
+      "id": "refinerysource-bootstrapjs-js",
+      "count": 1
+    },
+    {
+      "id": "refinerysource-bootstrapwp-js",
+      "count": 1
+    },
+    {
+      "id": "refinerysource-stickykitjs-js",
+      "count": 1
+    },
+    {
+      "id": "wp-custom-css",
+      "count": 1
+    },
+    {
+      "id": "masthead",
+      "count": 1
+    },
+    {
+      "id": "sticky-bar",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": null,
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

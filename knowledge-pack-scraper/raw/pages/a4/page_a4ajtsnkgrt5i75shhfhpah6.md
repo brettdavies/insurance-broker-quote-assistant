@@ -1,0 +1,341 @@
+[Skip to content](https://www.investopedia.com/i-hoped-id-never-be-found-out-how-far-would-you-go-to-save-on-car-insurance-11760361#main)
+[ Investopedia ](https://www.investopedia.com/)
+[Live](https://www.investopedia.com/dow-jones-today-11072025-11845583)
+  * Search
+Please fill out this field. 
+  * [Newsletters](https://www.investopedia.com/i-hoped-id-never-be-found-out-how-far-would-you-go-to-save-on-car-insurance-11760361)
+
+
+Search
+Please fill out this field. 
+  * [ News ](https://www.investopedia.com/news-4427706)
+News
+    * [ Markets ](https://www.investopedia.com/markets-news-4427704)
+    * [ Companies ](https://www.investopedia.com/company-news-4427705)
+    * [ Earnings ](https://www.investopedia.com/earnings-reports-5218419)
+    * [ CD Rates ](https://www.investopedia.com/certificates-deposit-news-7111770)
+    * [ Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5184598)
+    * [ Economy ](https://www.investopedia.com/economic-news-5218422)
+    * [ Government ](https://www.investopedia.com/political-news-4689737)
+    * [ Crypto ](https://www.investopedia.com/cryptocurrency-news-5114163)
+    * [ Live Markets News ](https://www.investopedia.com/live-markets-news-11713202)
+    * [ Personal Finance ](https://www.investopedia.com/personal-finance-news-5114159)
+    * [ View All ](https://www.investopedia.com/news-4427706)
+  * [ Investing ](https://www.investopedia.com/investing-4427685)
+Investing
+    * [ Stocks ](https://www.investopedia.com/stocks-4427785)
+    * [ Cryptocurrency ](https://www.investopedia.com/cryptocurrency-4427699)
+    * [ Bonds ](https://www.investopedia.com/bonds-4689778)
+    * [ ETFs ](https://www.investopedia.com/etfs-4427784)
+    * [ Options and Derivatives ](https://www.investopedia.com/options-and-derivatives-trading-4689663)
+    * [ Commodities ](https://www.investopedia.com/commodities-4427780)
+    * [ Trading ](https://www.investopedia.com/trading-4427765)
+    * [ Automated Investing ](https://www.investopedia.com/financial-technology-and-automated-investing-4689759)
+    * [ Brokers ](https://www.investopedia.com/brokers-4689772)
+    * [ Fundamental Analysis ](https://www.investopedia.com/fundamental-analysis-4689757)
+    * [ View All ](https://www.investopedia.com/investing-4427685)
+  * [ Simulator ](https://www.investopedia.com/simulator/?inv_to_sim=global_nav)
+Simulator
+    * [ Login / Portfolio ](https://www.investopedia.com/simulator/portfolio)
+    * [ Trade ](https://www.investopedia.com/simulator/trade/stocks)
+    * [ Research ](https://www.investopedia.com/simulator/research)
+    * [ My Games ](https://www.investopedia.com/simulator/games/my-games)
+    * [ Leaderboard ](https://www.investopedia.com/simulator/games)
+  * [ Banking ](https://www.investopedia.com/banking-4427754)
+Banking
+    * [ Savings Accounts ](https://www.investopedia.com/savings-accounts-4689728)
+    * [ Certificates of Deposit (CDs) ](https://www.investopedia.com/certificate-of-deposits-4689733)
+    * [ Money Market Accounts ](https://www.investopedia.com/money-market-account-4689730)
+    * [ Checking Accounts ](https://www.investopedia.com/checking-accounts-4689732)
+    * [ View All ](https://www.investopedia.com/banking-4427754)
+  * [ Personal Finance ](https://www.investopedia.com/personal-finance-4427760)
+Personal Finance
+    * [ Budgeting and Saving ](https://www.investopedia.com/budgeting-and-savings-4427755)
+    * [ Personal Loans ](https://www.investopedia.com/personal-loans-4689729)
+    * [ Insurance ](https://www.investopedia.com/insurance-4427716)
+    * [ Mortgages ](https://www.investopedia.com/mortgage-4689703)
+    * [ Credit and Debt ](https://www.investopedia.com/credit-and-debt-4689724)
+    * [ Student Loans ](https://www.investopedia.com/student-loans-4689727)
+    * [ Taxes ](https://www.investopedia.com/taxes-4427724)
+    * [ Credit Cards ](https://www.investopedia.com/credit-card-4689721)
+    * [ Financial Literacy ](https://www.investopedia.com/financial-literacy-resource-center-7151950)
+    * [ Retirement ](https://www.investopedia.com/retirement-planning-4689695)
+    * [ View All ](https://www.investopedia.com/personal-finance-4427760)
+  * [ Economy ](https://www.investopedia.com/economy-4689801)
+Economy
+    * [ Government and Policy ](https://www.investopedia.com/government-and-policy-4689793)
+    * [ Monetary Policy ](https://www.investopedia.com/monetary-policy-4689792)
+    * [ Fiscal Policy ](https://www.investopedia.com/fiscal-policy-4689796)
+    * [ Economics ](https://www.investopedia.com/economics-4689800)
+    * [ View All ](https://www.investopedia.com/economy-4689801)
+  * [ Reviews ](https://www.investopedia.com/financial-product-reviews-7110783)
+Reviews
+    * [ Best Online Brokers ](https://www.investopedia.com/best-online-brokers-4587872)
+    * [ Best Crypto Exchanges ](https://www.investopedia.com/best-crypto-exchanges-5071855)
+    * [ Best Savings Rates ](https://www.investopedia.com/high-yield-savings-accounts-4770633)
+    * [ Best CD Rates ](https://www.investopedia.com/best-cd-rates-4770214)
+    * [ Best Life Insurance ](https://www.investopedia.com/the-best-life-insurance-companies-8763666)
+    * [ Best Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5094943)
+    * [ Best Robo-Advisors ](https://www.investopedia.com/the-best-robo-advisors-8764849)
+    * [ Best Personal Loans ](https://www.investopedia.com/the-best-personal-loans-8761582)
+    * [ Best Debt Relief Companies ](https://www.investopedia.com/the-best-debt-relief-companies-8763179)
+    * [ View All ](https://www.investopedia.com/financial-product-reviews-7110783)
+
+
+  * [Newsletters](https://www.investopedia.com/i-hoped-id-never-be-found-out-how-far-would-you-go-to-save-on-car-insurance-11760361)
+
+
+Follow Us
+  * [ ](https://www.facebook.com/Investopedia/)
+  * [ ](https://www.instagram.com/investopedia/?hl=en)
+  * [ ](https://www.youtube.com/c/investopedia)
+  * [ ](https://www.tiktok.com/@investopedia)
+  * [ ](https://www.linkedin.com/company/investopedia-ulc)
+
+
+  * [ News ](https://www.investopedia.com/news-4427706)
+    * [ Markets ](https://www.investopedia.com/markets-news-4427704)
+    * [ Companies ](https://www.investopedia.com/company-news-4427705)
+    * [ Earnings ](https://www.investopedia.com/earnings-reports-5218419)
+    * [ CD Rates ](https://www.investopedia.com/certificates-deposit-news-7111770)
+    * [ Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5184598)
+    * [ Economy ](https://www.investopedia.com/economic-news-5218422)
+    * [ Government ](https://www.investopedia.com/political-news-4689737)
+    * [ Crypto ](https://www.investopedia.com/cryptocurrency-news-5114163)
+    * [ Live Markets News ](https://www.investopedia.com/live-markets-news-11713202)
+    * [ Personal Finance ](https://www.investopedia.com/personal-finance-news-5114159)
+    * [ View All ](https://www.investopedia.com/news-4427706)
+  * [ Investing ](https://www.investopedia.com/investing-4427685)
+    * [ Stocks ](https://www.investopedia.com/stocks-4427785)
+    * [ Cryptocurrency ](https://www.investopedia.com/cryptocurrency-4427699)
+    * [ Bonds ](https://www.investopedia.com/bonds-4689778)
+    * [ ETFs ](https://www.investopedia.com/etfs-4427784)
+    * [ Options and Derivatives ](https://www.investopedia.com/options-and-derivatives-trading-4689663)
+    * [ Commodities ](https://www.investopedia.com/commodities-4427780)
+    * [ Trading ](https://www.investopedia.com/trading-4427765)
+    * [ Automated Investing ](https://www.investopedia.com/financial-technology-and-automated-investing-4689759)
+    * [ Brokers ](https://www.investopedia.com/brokers-4689772)
+    * [ Fundamental Analysis ](https://www.investopedia.com/fundamental-analysis-4689757)
+    * [ View All ](https://www.investopedia.com/investing-4427685)
+  * [ Simulator ](https://www.investopedia.com/simulator/?inv_to_sim=global_nav)
+    * [ Login / Portfolio ](https://www.investopedia.com/simulator/portfolio)
+    * [ Trade ](https://www.investopedia.com/simulator/trade/stocks)
+    * [ Research ](https://www.investopedia.com/simulator/research)
+    * [ My Games ](https://www.investopedia.com/simulator/games/my-games)
+    * [ Leaderboard ](https://www.investopedia.com/simulator/games)
+  * [ Banking ](https://www.investopedia.com/banking-4427754)
+    * [ Savings Accounts ](https://www.investopedia.com/savings-accounts-4689728)
+    * [ Certificates of Deposit (CDs) ](https://www.investopedia.com/certificate-of-deposits-4689733)
+    * [ Money Market Accounts ](https://www.investopedia.com/money-market-account-4689730)
+    * [ Checking Accounts ](https://www.investopedia.com/checking-accounts-4689732)
+    * [ View All ](https://www.investopedia.com/banking-4427754)
+  * [ Personal Finance ](https://www.investopedia.com/personal-finance-4427760)
+    * [ Budgeting and Saving ](https://www.investopedia.com/budgeting-and-savings-4427755)
+    * [ Personal Loans ](https://www.investopedia.com/personal-loans-4689729)
+    * [ Insurance ](https://www.investopedia.com/insurance-4427716)
+    * [ Mortgages ](https://www.investopedia.com/mortgage-4689703)
+    * [ Credit and Debt ](https://www.investopedia.com/credit-and-debt-4689724)
+    * [ Student Loans ](https://www.investopedia.com/student-loans-4689727)
+    * [ Taxes ](https://www.investopedia.com/taxes-4427724)
+    * [ Credit Cards ](https://www.investopedia.com/credit-card-4689721)
+    * [ Financial Literacy ](https://www.investopedia.com/financial-literacy-resource-center-7151950)
+    * [ Retirement ](https://www.investopedia.com/retirement-planning-4689695)
+    * [ View All ](https://www.investopedia.com/personal-finance-4427760)
+  * [ Economy ](https://www.investopedia.com/economy-4689801)
+    * [ Government and Policy ](https://www.investopedia.com/government-and-policy-4689793)
+    * [ Monetary Policy ](https://www.investopedia.com/monetary-policy-4689792)
+    * [ Fiscal Policy ](https://www.investopedia.com/fiscal-policy-4689796)
+    * [ Economics ](https://www.investopedia.com/economics-4689800)
+    * [ View All ](https://www.investopedia.com/economy-4689801)
+  * [ Reviews ](https://www.investopedia.com/financial-product-reviews-7110783)
+    * [ Best Online Brokers ](https://www.investopedia.com/best-online-brokers-4587872)
+    * [ Best Crypto Exchanges ](https://www.investopedia.com/best-crypto-exchanges-5071855)
+    * [ Best Savings Rates ](https://www.investopedia.com/high-yield-savings-accounts-4770633)
+    * [ Best CD Rates ](https://www.investopedia.com/best-cd-rates-4770214)
+    * [ Best Life Insurance ](https://www.investopedia.com/the-best-life-insurance-companies-8763666)
+    * [ Best Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5094943)
+    * [ Best Robo-Advisors ](https://www.investopedia.com/the-best-robo-advisors-8764849)
+    * [ Best Personal Loans ](https://www.investopedia.com/the-best-personal-loans-8761582)
+    * [ Best Debt Relief Companies ](https://www.investopedia.com/the-best-debt-relief-companies-8763179)
+    * [ View All ](https://www.investopedia.com/financial-product-reviews-7110783)
+
+
+  * Top Stories
+  * [ This Famous Short Seller Is Betting Against AI ](https://www.investopedia.com/short-sellers-now-betting-big-against-ai-11842994)
+  * [ Here's the Average Income for 35–44-Year-Olds ](https://www.investopedia.com/are-you-keeping-up-here-s-the-average-income-for-35-44-year-olds-11841889)
+  * [ This Bank Can Help Lower Your Phone Bill ](https://www.investopedia.com/this-clever-bank-account-lowers-your-phone-bill-and-pays-4-20-on-your-savings-11844440)
+  * [ Here's the Average Salary for People in Transition ](https://www.investopedia.com/career-change-average-salary-11839914)
+
+
+Table of Contents
+Expand
+Table of Contents
+  * [How Your State Affects Rates](https://www.investopedia.com/i-hoped-id-never-be-found-out-how-far-would-you-go-to-save-on-car-insurance-11760361#toc-how-your-state-affects-car-insurance-rates)
+  * [How Some Drivers Cut Costs](https://www.investopedia.com/i-hoped-id-never-be-found-out-how-far-would-you-go-to-save-on-car-insurance-11760361#toc-high-costs-compel-some-drivers-to-seek-short-term-savings)
+  * [Risks](https://www.investopedia.com/i-hoped-id-never-be-found-out-how-far-would-you-go-to-save-on-car-insurance-11760361#toc-registering-a-car-elsewhere-carries-serious-risks)
+  * [Understand Your State's Laws](https://www.investopedia.com/i-hoped-id-never-be-found-out-how-far-would-you-go-to-save-on-car-insurance-11760361#toc-understand-your-states-laws)
+  * [Other Ways to Save](https://www.investopedia.com/i-hoped-id-never-be-found-out-how-far-would-you-go-to-save-on-car-insurance-11760361#toc-other-ways-to-save-on-car-insurance)
+
+
+# ‘I Hoped I’d Never Be Found Out’: How Far Would You Go to Save on Car Insurance?
+By
+[Amanda Vining](https://www.investopedia.com/amanda-vining-11739267)
+[Full Bio](https://www.investopedia.com/amanda-vining-11739267)
+  * [ ](https://www.linkedin.com/in/amanda-vining-36b61231)
+
+
+Amanda Vining is a writer for Investopedia with 15 years of experience covering personal finance, including stories for Glam, MSNBC, Heavy, and Narcity. Based in Florida’s Gulf Coast, Amanda has provided hundreds of pro bono hours to help residents navigate post-hurricane insurance claims.
+Learn about our  [editorial policies](https://www.investopedia.com/legal-4768893#editorial-policy)
+Published June 24, 2025
+![A person in a car hands an identification card to another individual through the window](https://www.investopedia.com/thmb/MN4_weK0WQ2wECDzEm9Q5qFDQGM=/1500x0/filters:no_upscale\(\):max_bytes\(150000\):strip_icc\(\):format\(webp\)/GettyImages-1407324683-90035cbe071c46009dd06470b0740b1d.jpg)
+Registering your car in another state to save on insurance can be tempting, but it's risky.
+Anastasija Vujic / Getty Images
+Close
+Auto insurance rates skyrocketed by 15% in 2024, and another 5% increase is expected this year, according to Insurify. Given these exorbitant spikes, if you live in a state with high rates, you may feel tempted to register your vehicle in a different state to get lower [premiums](https://www.investopedia.com/what-is-a-car-insurance-premium-8606529). But this move has high-stakes risks that could outweigh any savings. 
+### Key Takeaways
+  * Desperate over [high insurance costs](https://www.investopedia.com/car-insurance-prices-keep-rising-and-drivers-are-struggling-to-keep-up-11678676), some people register their vehicles in other, lower-cost states. 
+  * Doing so is considered misrepresentation, a form of [insurance fraud](https://www.investopedia.com/terms/i/insurance-fraud.asp) that could cost you your insurance, legal fines, and even criminal charges. 
+  * Law enforcement can take possession of a car with misrepresented insurance.
+  * Insurance companies can refuse claims if they discover your vehicle is not registered where it’s “garaged,” making even accidents that aren’t a driver’s fault potentially extremely costly. 
+  * Experts advise against delaying registering a vehicle in a new place of residence to avoid illegal registration. Most states require [vehicle registration](https://www.investopedia.com/how-to-register-a-car-5176894) within 30 to 60 days of changing your primary residence.
+
+
+##  How Your State Affects Car Insurance Rates 
+A driver’s home state can significantly impact the [affordability of car insurance](https://www.investopedia.com/car-insurance-states-take-wheel-11757794). For instance, states with high auto insurance costs include Florida, Louisiana, and New York, while states with low insurance costs include North Dakota, Maine, and Idaho.1
+Moving from one state to another can significantly alter your premiums, especially when relocating from a high-cost to a low-cost area. 
+For instance, based on the average rates below, moving from Maine to Florida could result in a 256% increase in your car insurance costs.   
+
+| **Average Yearly Costs** | **Compared to National Average**  
+---|---|---  
+**Florida** | $3,682 | + $2,199  
+**Louisiana** | $3,310 | + $1,827   
+**New York** | $2,526 | + $1,043   
+**National** | $1,483 | N/A  
+**Idaho** | $1,338 | - $145  
+**Iowa** | $1,218 | - $265  
+**Maine** | $1,035 | - $448  
+Advertiser Disclosure 
+× 
+The offers that appear in this table are from partnerships from which Investopedia receives compensation. This compensation may impact how and where listings appear. Investopedia does not include all offers available in the marketplace.
+Popular Accounts from Our Partners
+_Source: Liberty Mutual analysis of data from The Zebra_  
+
+##  High Costs Compel Some Drivers to Seek Short-Term Savings 
+Drivers are often aware of these fluctuations and the associated financial effects. 
+“I moved from one of the least expensive states for total cost of car insurance to Florida, which is the most expensive state in the nation for insurance premiums and one of the lowest for teachers’ salaries,” said a high school science teacher who spoke on condition of anonymity.  
+
+“I knew I wouldn’t be able to afford insurance in Florida, so I kept my car registered in the other state and hoped that I’d never get into an accident or be found out by my insurance company. But I just can’t afford the high cost of car insurance in Florida on my annual salary below $45,000.” — _Florida high school teacher who spoke on condition of anonymity_
+There may be short-term financial pressure to keep an out-of-state registration to maintain affordable insurance, especially for people living on tight salaries or in areas with generally high living costs. 
+“When I first moved to California, I was surprised by the high auto insurance rates. It felt like a penalty just for changing ZIP codes,” said Brad Scharf, the chief operating officer of Go Auto Insurance, who splits his time between California, Illinois, and Louisiana. “I had a clean driving record, but my premium nearly doubled overnight, so I delayed registering my vehicle in the new state.” 
+Scharf kept his vehicle registered in Illinois for six months longer than the legal limit for registering in California before eventually registering in the Golden State. Scharf said his decision to delay wasn’t an intentional desire to skirt the rules, but rather a need for time to adjust to the higher auto insurance costs he hadn’t been expecting when relocating.   
+
+##  Registering a Car Elsewhere Carries Serious Risks 
+  
+Paying lower auto insurance premiums by registering your car elsewhere may seem enticing, but it risks voiding your insurance altogether. 
+[Insurance companies](https://www.investopedia.com/what-is-an-auto-insurance-quote-7376843) base your rates on where your car will be principally garaged. They frequently determine this by where the vehicle is parked overnight. Registering your car elsewhere is considered misrepresentation, a type of insurance fraud that can automatically negate your coverage and even lead to criminal charges.  
+
+“In states like Florida or California, insurance rates can be brutal. But from a legal standpoint, the risk can never match the savings.” _—Adam Dayan, personal injury attorney in Chicago_
+“If you’re living in a new state and still registered somewhere else, you’re violating both vehicle registration laws and insurance terms,” said Dayan. 
+An insurance company can refuse to pay claims if a vehicle’s actual principally garaged location does not align with the location stated on the car's registration. 
+“If you're in an accident and the insurer finds out your information was false, they could deny the claim altogether,” said William K. Holland, a law expert and managing partner of Holland Injury Law, LLC in St. Louis, Missouri. “You’d be personally responsible for medical bills, property damage, and legal fees, which could easily run into tens or even hundreds of thousands of dollars.” 
+### Warning
+If you're pulled over by law enforcement, an officer can take possession of a vehicle that has fraudulent insurance. In some situations, criminal charges for insurance fraud involving misrepresentation can be filed.
+##  Understand Your State's Laws 
+Knowing how to avoid misrepresenting where your vehicle is principally garaged is the best way to steer clear of the risks associated with the practice. When changing your primary residence, make sure that you know how long your new state allows drivers to legally register their vehicles. Researching the time frame allotted for registering vehicles in an area can prevent you from inadvertently misrepresenting your situation. 
+Each state has unique laws for how long you have to register a vehicle when moving to that state, as well as specific laws for the [type of insurance](https://www.investopedia.com/types-of-car-insurance-11680793) and [minimum coverage](https://www.investopedia.com/how-much-car-insurance-do-you-need-5072121) you must carry. 
+Most states give new residents between 30 and 60 days to register, but Florida gives new residents only 10 days after they start working there. 
+### Tip
+When in doubt, ask an insurance agent where your car should be registered to guarantee accurate insurance coverage. 
+##  Other Ways to Save on Car Insurance 
+  
+Avoiding costly long-term repercussions can save you on car insurance, but that’s not your only recourse. There are many [legally acceptable routes to lower auto insurance premiums](https://www.investopedia.com/articles/pf/08/car-insurance-costs.asp), including: 
+  * [Bundling auto insurance](https://www.investopedia.com/articles/insurance/09/bundle-insurance.asp) with other forms of insurance, such as home insurance. To do this, consult with a local insurance agent 
+  * Maintaining a clean, safe driving record 
+  * [Comparison shopping for insurance](https://www.investopedia.com/how-to-slash-461-from-your-car-insurance-bill-in-10-minutes-11735087) in your area 
+  * Asking an insurance agent for discounts, including multi-car, teen, and good student discounts   
+
+
+
+Sponsored
+Homeownership for Veterans & Military Families
+[](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsulrGS4S7o1gNWcOy6Hj-Sk_PYOQrY6KDNnjts3xokrSyV57V---X6WDXwQaNTKbkKWAfi3TUcD0TbIlM3npq1QHBKexy4zl2SNIdZOmc_Z49NtKIBbjtxUbIIk4jiSbAfvDo5i9CKvFpO-t_vvArNoVmGlizZrHMulvYqfxbFpmae7C6vxWgNmhlQ-EqNHUveWkZfE64moANnwgIwRihthgTe-YXNAstbi0rUXEt792Z2_j4JWF6a5--Z_8OaadjzTYa-NJ-k8JZfQCC8Q-ahSmsbTfMdeBB6qnXbZ5dnvw0OM5C6i8qeJpqjXCTFx0998FxEnG6Zk5CjfCOqZye_Dlde7VnrUvS_icTR_xN-2N9PbmjRK2yyIFHgWKFNCP8-YBVBK3ykC814hFPu_md28FBjxF8MGXiCwZdsZny756cnK2aZQojtnSXLsq6eFgq_k0hN7-Q&sai=AMfl-YRxyCde73Eu1qFxmOJdAmheyInkzHwbHX9UdAsu2XLAnB9jVAAaRb9nlf7loTQte6pGBXpXDXtjBIu5sAIF04uG7qiXlb2JXE0esQ8qNStBA1k4LQ-vqRbnXauzJ8FWYWy86yhrfkTNCNQ8EN-LQ9qfQhBkdn_f6_rebU-CZOalP_N0GImcja0q2Ge6Kq9JU5VfqHP-hqZqDz1Szw1DGt_-W6D7bPbSlsTLgQlmTkz60_C3UUHshwLxyT_Bd7ufUBP80Pe5H09AQNmKjvY-QwDnbzwhKQ&sig=Cg0ArKJSzHrSfVC__OlMEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N7384.110872.INVESTOPEDIAUS/B11080032.416430942;dc_trk_aid=608550541;dc_trk_cid=231669798;dc_lat=;dc_rdid=;) Your VA Loan gives you powerful homebuying advantages, including 0% down, no PMI, and competitive rates. With lower upfront costs and flexible credit guidelines, you can focus on maximizing your buying power. [Check your eligibility today](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsulrGS4S7o1gNWcOy6Hj-Sk_PYOQrY6KDNnjts3xokrSyV57V---X6WDXwQaNTKbkKWAfi3TUcD0TbIlM3npq1QHBKexy4zl2SNIdZOmc_Z49NtKIBbjtxUbIIk4jiSbAfvDo5i9CKvFpO-t_vvArNoVmGlizZrHMulvYqfxbFpmae7C6vxWgNmhlQ-EqNHUveWkZfE64moANnwgIwRihthgTe-YXNAstbi0rUXEt792Z2_j4JWF6a5--Z_8OaadjzTYa-NJ-k8JZfQCC8Q-ahSmsbTfMdeBB6qnXbZ5dnvw0OM5C6i8qeJpqjXCTFx0998FxEnG6Zk5CjfCOqZye_Dlde7VnrUvS_icTR_xN-2N9PbmjRK2yyIFHgWKFNCP8-YBVBK3ykC814hFPu_md28FBjxF8MGXiCwZdsZny756cnK2aZQojtnSXLsq6eFgq_k0hN7-Q&sai=AMfl-YRxyCde73Eu1qFxmOJdAmheyInkzHwbHX9UdAsu2XLAnB9jVAAaRb9nlf7loTQte6pGBXpXDXtjBIu5sAIF04uG7qiXlb2JXE0esQ8qNStBA1k4LQ-vqRbnXauzJ8FWYWy86yhrfkTNCNQ8EN-LQ9qfQhBkdn_f6_rebU-CZOalP_N0GImcja0q2Ge6Kq9JU5VfqHP-hqZqDz1Szw1DGt_-W6D7bPbSlsTLgQlmTkz60_C3UUHshwLxyT_Bd7ufUBP80Pe5H09AQNmKjvY-QwDnbzwhKQ&sig=Cg0ArKJSzHrSfVC__OlMEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N7384.110872.INVESTOPEDIAUS/B11080032.416430942;dc_trk_aid=608550541;dc_trk_cid=231669798;dc_lat=;dc_rdid=;) and find out what you prequalify for in minutes. [](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsulrGS4S7o1gNWcOy6Hj-Sk_PYOQrY6KDNnjts3xokrSyV57V---X6WDXwQaNTKbkKWAfi3TUcD0TbIlM3npq1QHBKexy4zl2SNIdZOmc_Z49NtKIBbjtxUbIIk4jiSbAfvDo5i9CKvFpO-t_vvArNoVmGlizZrHMulvYqfxbFpmae7C6vxWgNmhlQ-EqNHUveWkZfE64moANnwgIwRihthgTe-YXNAstbi0rUXEt792Z2_j4JWF6a5--Z_8OaadjzTYa-NJ-k8JZfQCC8Q-ahSmsbTfMdeBB6qnXbZ5dnvw0OM5C6i8qeJpqjXCTFx0998FxEnG6Zk5CjfCOqZye_Dlde7VnrUvS_icTR_xN-2N9PbmjRK2yyIFHgWKFNCP8-YBVBK3ykC814hFPu_md28FBjxF8MGXiCwZdsZny756cnK2aZQojtnSXLsq6eFgq_k0hN7-Q&sai=AMfl-YRxyCde73Eu1qFxmOJdAmheyInkzHwbHX9UdAsu2XLAnB9jVAAaRb9nlf7loTQte6pGBXpXDXtjBIu5sAIF04uG7qiXlb2JXE0esQ8qNStBA1k4LQ-vqRbnXauzJ8FWYWy86yhrfkTNCNQ8EN-LQ9qfQhBkdn_f6_rebU-CZOalP_N0GImcja0q2Ge6Kq9JU5VfqHP-hqZqDz1Szw1DGt_-W6D7bPbSlsTLgQlmTkz60_C3UUHshwLxyT_Bd7ufUBP80Pe5H09AQNmKjvY-QwDnbzwhKQ&sig=Cg0ArKJSzHrSfVC__OlMEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N7384.110872.INVESTOPEDIAUS/B11080032.416430942;dc_trk_aid=608550541;dc_trk_cid=231669798;dc_lat=;dc_rdid=;) [](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsulrGS4S7o1gNWcOy6Hj-Sk_PYOQrY6KDNnjts3xokrSyV57V---X6WDXwQaNTKbkKWAfi3TUcD0TbIlM3npq1QHBKexy4zl2SNIdZOmc_Z49NtKIBbjtxUbIIk4jiSbAfvDo5i9CKvFpO-t_vvArNoVmGlizZrHMulvYqfxbFpmae7C6vxWgNmhlQ-EqNHUveWkZfE64moANnwgIwRihthgTe-YXNAstbi0rUXEt792Z2_j4JWF6a5--Z_8OaadjzTYa-NJ-k8JZfQCC8Q-ahSmsbTfMdeBB6qnXbZ5dnvw0OM5C6i8qeJpqjXCTFx0998FxEnG6Zk5CjfCOqZye_Dlde7VnrUvS_icTR_xN-2N9PbmjRK2yyIFHgWKFNCP8-YBVBK3ykC814hFPu_md28FBjxF8MGXiCwZdsZny756cnK2aZQojtnSXLsq6eFgq_k0hN7-Q&sai=AMfl-YRxyCde73Eu1qFxmOJdAmheyInkzHwbHX9UdAsu2XLAnB9jVAAaRb9nlf7loTQte6pGBXpXDXtjBIu5sAIF04uG7qiXlb2JXE0esQ8qNStBA1k4LQ-vqRbnXauzJ8FWYWy86yhrfkTNCNQ8EN-LQ9qfQhBkdn_f6_rebU-CZOalP_N0GImcja0q2Ge6Kq9JU5VfqHP-hqZqDz1Szw1DGt_-W6D7bPbSlsTLgQlmTkz60_C3UUHshwLxyT_Bd7ufUBP80Pe5H09AQNmKjvY-QwDnbzwhKQ&sig=Cg0ArKJSzHrSfVC__OlMEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N7384.110872.INVESTOPEDIAUS/B11080032.416430942;dc_trk_aid=608550541;dc_trk_cid=231669798;dc_lat=;dc_rdid=;) [](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsulrGS4S7o1gNWcOy6Hj-Sk_PYOQrY6KDNnjts3xokrSyV57V---X6WDXwQaNTKbkKWAfi3TUcD0TbIlM3npq1QHBKexy4zl2SNIdZOmc_Z49NtKIBbjtxUbIIk4jiSbAfvDo5i9CKvFpO-t_vvArNoVmGlizZrHMulvYqfxbFpmae7C6vxWgNmhlQ-EqNHUveWkZfE64moANnwgIwRihthgTe-YXNAstbi0rUXEt792Z2_j4JWF6a5--Z_8OaadjzTYa-NJ-k8JZfQCC8Q-ahSmsbTfMdeBB6qnXbZ5dnvw0OM5C6i8qeJpqjXCTFx0998FxEnG6Zk5CjfCOqZye_Dlde7VnrUvS_icTR_xN-2N9PbmjRK2yyIFHgWKFNCP8-YBVBK3ykC814hFPu_md28FBjxF8MGXiCwZdsZny756cnK2aZQojtnSXLsq6eFgq_k0hN7-Q&sai=AMfl-YRxyCde73Eu1qFxmOJdAmheyInkzHwbHX9UdAsu2XLAnB9jVAAaRb9nlf7loTQte6pGBXpXDXtjBIu5sAIF04uG7qiXlb2JXE0esQ8qNStBA1k4LQ-vqRbnXauzJ8FWYWy86yhrfkTNCNQ8EN-LQ9qfQhBkdn_f6_rebU-CZOalP_N0GImcja0q2Ge6Kq9JU5VfqHP-hqZqDz1Szw1DGt_-W6D7bPbSlsTLgQlmTkz60_C3UUHshwLxyT_Bd7ufUBP80Pe5H09AQNmKjvY-QwDnbzwhKQ&sig=Cg0ArKJSzHrSfVC__OlMEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N7384.110872.INVESTOPEDIAUS/B11080032.416430942;dc_trk_aid=608550541;dc_trk_cid=231669798;dc_lat=;dc_rdid=;)
+Article Sources
+Investopedia requires writers to use primary sources to support their work. These include white papers, government data, original reporting, and interviews with industry experts. We also reference original research from other reputable publishers where appropriate. You can learn more about the standards we follow in producing accurate, unbiased content in our [editorial policy.](https://www.investopedia.com/legal-4768893#EditorialPolicy)
+  1. Insurance Information Institute. “[Facts + Statistics: Auto insurance](https://www.iii.org/fact-statistic/facts-statistics-auto-insurance).”
+
+
+Read more
+  * [Personal Finance](https://www.investopedia.com/personal-finance-4427760)
+  * [Insurance](https://www.investopedia.com/insurance-4427716)
+  * [Car Insurance](https://www.investopedia.com/car-insurance-4427710)
+
+
+Partner Links
+## Related Articles
+[ Understanding Rebuilt Car Titles: Pros, Cons, and Buyer Considerations ](https://www.investopedia.com/is-it-worth-buying-a-car-with-a-rebuilt-title-5179621) [ How Parking Tickets Affect Your Driving Record and Insurance ](https://www.investopedia.com/do-parking-tickets-stay-on-your-driving-record-5184743) [ How to Maximize Tax Deductions for Car Expenses: 6 Proven Strategies ](https://www.investopedia.com/financial-edge/0311/6-ways-to-write-off-your-car-expenses.aspx) [ Rent-to-Own Cars: Simplified Guide to No-Credit-Check Options ](https://www.investopedia.com/articles/personal-finance/082315/renttoown-car-how-it-works.asp) [ Understanding Capitalized Cost Reduction: Key Benefits and Applications ](https://www.investopedia.com/terms/c/capitalized-cost-reduction.asp) [ Understanding Personal Injury Protection: Coverage, Limits & Benefits ](https://www.investopedia.com/terms/p/personal-injury-protection-pip.asp) [ Loan Protection Insurance: Benefits, Costs, and Considerations ](https://www.investopedia.com/articles/pf/08/loan-protection-insurance.asp) [ HSA vs. PPO: Discover the Best Health Insurance Option for You ](https://www.investopedia.com/hsa-vs-ppo-5191333)
+[ Insurers Are Cutting Medicare Advantage in 2026: How Hard Is Your County Being Hit?  ](https://www.investopedia.com/insurers-are-cutting-medicare-advantage-in-2026-how-hard-is-your-county-being-hit-11842858) [ Is Life Insurance Worth It? Exploring When It Might Not Be ](https://www.investopedia.com/financial-edge/0312/when-life-insurance-isnt-worth-it.aspx) [ Understanding Section 125 Cafeteria Plans: Tax Benefits and Eligibility ](https://www.investopedia.com/articles/personal-finance/080816/section-125-plan-cafeteria-plan-how-does-it-work.asp) [ Steps to Take When Your Insurance Claim is Denied ](https://www.investopedia.com/financial-edge/0211/what-to-do-when-insurance-companies-wont-pay.aspx) [ Best Dental Insurance Companies for November 2025 ](https://www.investopedia.com/the-best-dental-insurance-companies-8763833) [ 10 Best Life Insurance Companies for November 2025 ](https://www.investopedia.com/the-best-life-insurance-companies-8763666) [ 5 Best Universal Life Insurance Companies of November 2025 ](https://www.investopedia.com/the-best-universal-life-insurance-8762927) [ Compare Medicare Advantage and Supplement Plans for Optimal Coverage ](https://www.investopedia.com/articles/personal-finance/071014/medigap-vs-medicare-advantage-which-better.asp)
+[ Investopedia ](https://www.investopedia.com/)
+[Newsletter Sign Up](https://www.investopedia.com/i-hoped-id-never-be-found-out-how-far-would-you-go-to-save-on-car-insurance-11760361)
+Follow Us
+  * [ ](https://www.facebook.com/Investopedia/)
+  * [ ](https://www.instagram.com/investopedia/?hl=en)
+  * [ ](https://www.linkedin.com/company/investopedia-ulc)
+  * [ ](https://www.tiktok.com/@investopedia)
+  * [ ](https://www.youtube.com/c/investopedia)
+
+
+  * [News](https://www.investopedia.com/news-4427706)
+  * [Investing](https://www.investopedia.com/investing-4427685)
+  * [Simulator](https://www.investopedia.com/simulator/?inv_to_sim=global_nav)
+  * [Banking](https://www.investopedia.com/banking-4427754)
+  * [Personal Finance](https://www.investopedia.com/personal-finance-4427760)
+  * [Economy](https://www.investopedia.com/economy-4689801)
+  * [Reviews](https://www.investopedia.com/financial-product-reviews-7110783)
+  * [Dictionary](https://www.investopedia.com/financial-term-dictionary-4769738)
+
+
+  * [ About Us ](https://www.investopedia.com/about-us-5093223)
+  * [ Editorial Process ](https://www.investopedia.com/legal-4768893#toc-editorial-policy)
+  * [ Careers ](https://www.people.inc/careers)
+  * [ Contact Us ](https://www.people.inc/contact)
+  * [ Privacy Policy ](https://www.people.inc/brands-privacy)
+  * [ Terms of Service ](https://www.people.inc/brands-termsofservice)
+  * [ Advertise ](https://www.people.inc/advertising)
+  * Your Privacy Choices
+
+
+  * [#](https://www.investopedia.com/terms-beginning-with-num-4769350)
+  * [A](https://www.investopedia.com/terms-beginning-with-a-4769351)
+  * [B](https://www.investopedia.com/terms-beginning-with-b-4769352)
+  * [C](https://www.investopedia.com/terms-beginning-with-c-4769353)
+  * [D](https://www.investopedia.com/terms-beginning-with-d-4769354)
+  * [E](https://www.investopedia.com/terms-beginning-with-e-4769355)
+  * [F](https://www.investopedia.com/terms-beginning-with-f-4769356)
+  * [G](https://www.investopedia.com/terms-beginning-with-g-4769357)
+  * [H](https://www.investopedia.com/terms-beginning-with-h-4769358)
+  * [I](https://www.investopedia.com/terms-beginning-with-i-4769359)
+  * [J](https://www.investopedia.com/terms-beginning-with-j-4769360)
+  * [K](https://www.investopedia.com/terms-beginning-with-k-4769361)
+  * [L](https://www.investopedia.com/terms-beginning-with-l-4769362)
+  * [M](https://www.investopedia.com/terms-beginning-with-m-4769363)
+  * [N](https://www.investopedia.com/terms-beginning-with-n-4769364)
+  * [O](https://www.investopedia.com/terms-beginning-with-o-4769365)
+  * [P](https://www.investopedia.com/terms-beginning-with-p-4769366)
+  * [Q](https://www.investopedia.com/terms-beginning-with-q-4769367)
+  * [R](https://www.investopedia.com/terms-beginning-with-r-4769368)
+  * [S](https://www.investopedia.com/terms-beginning-with-s-4769369)
+  * [T](https://www.investopedia.com/terms-beginning-with-t-4769370)
+  * [U](https://www.investopedia.com/terms-beginning-with-u-4769371)
+  * [V](https://www.investopedia.com/terms-beginning-with-v-4769372)
+  * [W](https://www.investopedia.com/terms-beginning-with-w-4769373)
+  * [X](https://www.investopedia.com/terms-beginning-with-x-4769374)
+  * [Y](https://www.investopedia.com/terms-beginning-with-y-4769375)
+  * [Z](https://www.investopedia.com/terms-beginning-with-z-4769376)
+
+
+Investopedia is part of the [People Inc.](https://www.people.inc) publishing family. 
+Newsletter Sign Up
+Newsletter Sign Up
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. 
+Cookies Settings Accept All Cookies
+![](https://sync.graph.bluecava.com/ds.png?p=9274e5db-ddcb-11ea-a80b-0242ac110002&segment=4l28r4sz3bl3555wt2hyave1w6u68syw&uid=&CampaignID=303C&Channel=investopedia&CreativeID=&Placement=11760361&MAID=&Keyword=&Medium=&Source=&PageName=www.investopedia.com%2Fi-hoped-id-never-be-found-out-how-far-would-you-go-to-save-on-car-insurance-11760361&Event=&Key1=4173514&Key2=4427760&Key3=4427716&Key4=4427710&Key5=)

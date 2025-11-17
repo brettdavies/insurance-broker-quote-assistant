@@ -1,0 +1,125 @@
+[![Compare.com](https://cdn.compare.com/images/logos/compare-logo-black.svg)](https://www.compare.com/)
+* Auto Insurance
+*       * [Compare Car Insurance Rates](https://www.compare.com/auto-insurance)
+* [Car Insurance Rates by State](https://www.compare.com/auto-insurance/by-state)
+* [Car Insurance Rates by Vehicle](https://www.compare.com/auto-insurance/vehicles)
+* [Car Insurance Discounts](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts)
+* [Best Car Insurance Comparison Sites](https://www.compare.com/auto-insurance/compare-insurance-companies/best-car-insurance-comparison-sites)
+* [How to Shop for Car Insurance](https://www.compare.com/auto-insurance/resources/how-to-shop-for-car-insurance)
+* Companies
+*       * [Cheapest Car Insurance Companies](https://www.compare.com/auto-insurance/cheap-car-insurance)
+* [Best Car Insurance Companies](https://www.compare.com/auto-insurance/best-car-insurance-companies)
+* [Company Reviews](https://www.compare.com/auto-insurance/reviews)
+* [Compare Companies Head-to-Head](https://www.compare.com/auto-insurance/compare-insurance-companies)
+* Resources
+*       * [How Companies Determine Rates](https://www.compare.com/auto-insurance/resources/rate-factors)
+* [Auto Insurance Coverage Types](https://www.compare.com/auto-insurance/resources/coverage)
+* [How to Bundle Insurance](https://www.compare.com/auto-insurance/resources/bundle-home-auto-insurance)
+* [Car Insurance Hacks](https://www.compare.com/auto-insurance/resources/car-insurance-hacks)
+* [Auto Insurance Guides](https://www.compare.com/auto-insurance/resources)
+* About Us
+*       * [About Us](https://www.compare.com/about-us)
+* [Our Team](https://www.compare.com/about-us/our-team)
+* [How Compare.com Works](https://www.compare.com/about-us/faqs)
+* [Customer Reviews](https://www.compare.com/about-us/reviews)
+* [Careers](https://www.compare.com/about-us/jobs)
+* [Contact Us](https://www.compare.com/contact-us)
+[Call us 1-855-205-2412](tel:+18552052412)[Text us 1-855-627-3925](sms:+18556273925?body=Hi%20Compare.com)
+[(855) 205-2412](tel:+18552052412)Log in
+* Auto Insurance
+*       * [Compare Car Insurance Rates](https://www.compare.com/auto-insurance)
+* [Car Insurance Rates by State](https://www.compare.com/auto-insurance/by-state)
+* [Car Insurance Rates by Vehicle](https://www.compare.com/auto-insurance/vehicles)
+* [Car Insurance Discounts](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts)
+* [Best Car Insurance Comparison Sites](https://www.compare.com/auto-insurance/compare-insurance-companies/best-car-insurance-comparison-sites)
+* [How to Shop for Car Insurance](https://www.compare.com/auto-insurance/resources/how-to-shop-for-car-insurance)
+* Companies
+*       * [Cheapest Car Insurance Companies](https://www.compare.com/auto-insurance/cheap-car-insurance)
+* [Best Car Insurance Companies](https://www.compare.com/auto-insurance/best-car-insurance-companies)
+* [Company Reviews](https://www.compare.com/auto-insurance/reviews)
+* [Compare Companies Head-to-Head](https://www.compare.com/auto-insurance/compare-insurance-companies)
+* Resources
+*       * [How Companies Determine Rates](https://www.compare.com/auto-insurance/resources/rate-factors)
+* [Auto Insurance Coverage Types](https://www.compare.com/auto-insurance/resources/coverage)
+* [How to Bundle Insurance](https://www.compare.com/auto-insurance/resources/bundle-home-auto-insurance)
+* [Car Insurance Hacks](https://www.compare.com/auto-insurance/resources/car-insurance-hacks)
+* [Auto Insurance Guides](https://www.compare.com/auto-insurance/resources)
+* About Us
+*       * [About Us](https://www.compare.com/about-us)
+* [Our Team](https://www.compare.com/about-us/our-team)
+* [How Compare.com Works](https://www.compare.com/about-us/faqs)
+* [Customer Reviews](https://www.compare.com/about-us/reviews)
+* [Careers](https://www.compare.com/about-us/jobs)
+* [Contact Us](https://www.compare.com/contact-us)
+[Call us 1-855-205-2412](tel:+18552052412)[Text us 1-855-627-3925](sms:+18556273925?body=Hi%20Compare.com)
+Log in
+Compare Quotes
+![](https://a.storyblok.com/f/295508/1200x900/392cd84a59/blond-woman-computer-hero.jpg/m/568x0/smart/filters:quality\(90\))
+* [What It Is](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-low-mileage-discount#what-it-is)
+* [Potential Savings](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-low-mileage-discount#potential-savings)
+* [How to Get It](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-low-mileage-discount#how-to-get-it)
+* [Other GEICO Discounts](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-low-mileage-discount#other-geico-discounts)
+* [Frequently Asked Questions](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-low-mileage-discount#faq)
+####
+In This Article![expand/collapse](https://cdn.compare.com/ui/icons/ExpandArrowOutline.svg)
+Compare quotes
+* [What It Is](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-low-mileage-discount#what-it-is)
+* [Potential Savings](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-low-mileage-discount#potential-savings)
+* [How to Get It](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-low-mileage-discount#how-to-get-it)
+* [Other GEICO Discounts](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-low-mileage-discount#other-geico-discounts)
+* [Frequently Asked Questions](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-low-mileage-discount#faq)
+![Mandy Sleight](https://a.storyblok.com/f/295508/b9e70606f9/mandy-sleight.jpeg/m/100x100/smart/filters:quality\(90\))
+Written by[Mandy Sleight](https://www.compare.com/authors/mandy-sleight)
+![Mandy Sleight](https://a.storyblok.com/f/295508/b9e70606f9/mandy-sleight.jpeg/m/56x56/smart/filters:quality\(90\))[](https://www.linkedin.com/in/mandysleight)
+Read [Editorial Standards](https://www.compare.com/about-us/editorial-standards)
+[See Full Bio](https://www.compare.com/authors/mandy-sleight)
+![Lequita Westbrooks](https://a.storyblok.com/f/295508/1f152b4c61/img_3113.jpg/m/100x100/smart/filters:quality\(90\))
+Edited by[Lequita Westbrooks](https://www.compare.com/authors/lequita-westbrooks)
+![Lequita Westbrooks](https://a.storyblok.com/f/295508/1f152b4c61/img_3113.jpg/m/56x56/smart/filters:quality\(90\))
+Read [Editorial Standards](https://www.compare.com/about-us/editorial-standards)
+[See Full Bio](https://www.compare.com/authors/lequita-westbrooks)
+**Why You Can Trust Compare.com:** At Compare.com, it’s our mission to find simple ways to help our customers save money on the things they need. While we partner with some of the companies and brands we talk about in our articles, all of our content is written and reviewed by our independent editorial team and never influenced by our partnerships. Learn about [how we make money](https://www.compare.com/about-us#how-we-make-money), review our [editorial standards](https://www.compare.com/about-us/editorial-standards), and reference our [data methodology](https://www.compare.com/about-us/editorial-standards#data-methodology) to learn more about why you can trust Compare.com.
+* * *
+* [What It Is](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-low-mileage-discount#what-it-is)
+* [Potential Savings](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-low-mileage-discount#potential-savings)
+* [How to Get It](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-low-mileage-discount#how-to-get-it)
+* [Other GEICO Discounts](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-low-mileage-discount#other-geico-discounts)
+* [Frequently Asked Questions](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-low-mileage-discount#faq)
+####
+In This Article![expand/collapse](https://cdn.compare.com/ui/icons/ExpandArrowOutline.svg)
+Compare quotes
+* [What It Is](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-low-mileage-discount#what-it-is)
+* [Potential Savings](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-low-mileage-discount#potential-savings)
+* [How to Get It](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-low-mileage-discount#how-to-get-it)
+* [Other GEICO Discounts](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-low-mileage-discount#other-geico-discounts)
+* [Frequently Asked Questions](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-low-mileage-discount#faq)
+One of the easiest ways to save on car insurance costs is to take advantage of [discounts](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts). If you drive less than the national average of 13,476 per year, you may qualify for a low-mileage discount.[[1]](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-low-mileage-discount#cite-1)
+Real-world experiences can help you gauge your potential savings. One GEICO customer on Reddit says they saved $20 per month after notifying GEICO customer service that they were now [working from home](https://www.compare.com/auto-insurance/resources/work-from-home-car-insurance) and no longer commuting.[[2]](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-low-mileage-discount#cite-2) Another GEICO customer — a single driver with two vehicles — completed a mileage report and lowered their premium by $40 per month.
+**Company**![sort asc](https://cdn.compare.com/ui/icons/ExpandArrowOutline.svg)![sort desc](https://cdn.compare.com/ui/icons/ExpandArrowOutline.svg) |  **Average Full-Coverage Premium**![sort asc](https://cdn.compare.com/ui/icons/ExpandArrowOutline.svg)![sort desc](https://cdn.compare.com/ui/icons/ExpandArrowOutline.svg) |  **Offers Low-Mileage Discount?**![sort asc](https://cdn.compare.com/ui/icons/ExpandArrowOutline.svg)![sort desc](https://cdn.compare.com/ui/icons/ExpandArrowOutline.svg) |  **Discount Availability**![sort asc](https://cdn.compare.com/ui/icons/ExpandArrowOutline.svg)![sort desc](https://cdn.compare.com/ui/icons/ExpandArrowOutline.svg) |  **Maximum Discount Savings**![sort asc](https://cdn.compare.com/ui/icons/ExpandArrowOutline.svg)![sort desc](https://cdn.compare.com/ui/icons/ExpandArrowOutline.svg)
+---|---|---|---|---
+![Man in a blue shirt talks on the phone while working on a laptop at a desk, with papers and folders around him.](https://a.storyblok.com/f/295508/1200x675/5d2604dbc6/man-with-landline.jpg/m/1200x675/smart/filters:quality\(90\))
+![Traffic jam on a highway with various cars in multiple lanes, surrounded by green trees, under a bright, setting sun.](https://a.storyblok.com/f/295508/1200x675/353c472cce/traffic-2.jpg/m/1200x675/smart/filters:quality\(90\))
+* ### Does GEICO offer a discount for low mileage?
+* ### Which insurance company offers the largest low-mileage discount?
+* ### What are the qualifications for the GEICO low-mileage discount?
+* ### How can you get a lower rate with GEICO?
+[![How to Save With the Progressive Safe Driver Discount](https://a.storyblok.com/f/295508/1200x900/60a0318f46/seatbelt-hero.jpg/m/400x300/smart/filters:quality\(90\)) How to Save With the Progressive Safe Driver Discount June 27, 2025](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/progressive-safe-driver-discount)[![How to Save With the Allstate Military Discount](https://a.storyblok.com/f/295508/1200x900/75834001fd/military-car-hero.jpg/m/400x300/smart/filters:quality\(90\)) How to Save With the Allstate Military Discount June 27, 2025](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/allstate-military-discount)[![How to Save With the Allstate Student Discount](https://a.storyblok.com/f/295508/1200x900/d2627cab92/student-laptop-hero.jpg/m/400x300/smart/filters:quality\(90\)) How to Save With the Allstate Student Discount June 10, 2025](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/allstate-student-discount)[![How to Save With the State Farm Military Discount](https://a.storyblok.com/f/295508/1200x900/8ff563cc55/military-laptop-hero.jpg/m/400x300/smart/filters:quality\(90\)) How to Save With the State Farm Military Discount May 28, 2025](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/state-farm-military-discount)[![Moving Out? Follow This Change of Address Checklist](https://a.storyblok.com/f/295508/cf182e70af/family-carrying-boxes.jpg/m/400x300/smart/filters:quality\(90\)) Moving Out? Follow This Change of Address Checklist March 22, 2022](https://www.compare.com/auto-insurance/resources/change-of-address-checklist)[![Get Real-Time Car Insurance Quotes](https://a.storyblok.com/f/295508/1200x900/7c82ead8e2/blurred-highway-hero.jpg/m/400x300/smart/filters:quality\(90\)) Get Real-Time Car Insurance Quotes November 1, 2025](https://www.compare.com/auto-insurance)[![Why More Drivers Are Switching Car Insurance Companies](https://a.storyblok.com/f/295508/9dccb774dc/couple-looking-at-their-auto-insurance-bill-1.jpg/m/400x300/smart/filters:quality\(90\)) Why More Drivers Are Switching Car Insurance Companies December 20, 2022](https://www.compare.com/auto-insurance/resources/switching-car-insurance-companies)[![Six-Month vs. 12-Month Car Insurance](https://a.storyblok.com/f/295508/7947e42c06/closeup-of-hand-on-wheel-dcit.jpg/m/400x300/smart/filters:quality\(90\)) Six-Month vs. 12-Month Car Insurance May 10, 2024](https://www.compare.com/auto-insurance/resources/six-month-car-insurance)
+Learn more [about us](https://www.compare.com/about-us), [our team](https://www.compare.com/about-us/leadership), and [what makes us tick](https://www.compare.com/about-us/our-story).
+![Mandy Sleight](https://a.storyblok.com/f/295508/b9e70606f9/mandy-sleight.jpeg/m/96x96/smart/filters:quality\(90\))
+[Learn More](https://www.compare.com/authors/mandy-sleight)
+![Lequita Westbrooks](https://a.storyblok.com/f/295508/1f152b4c61/img_3113.jpg/m/100x100/smart/filters:quality\(90\))
+Edited by[Lequita Westbrooks](https://www.compare.com/authors/lequita-westbrooks)Senior Editor
+![Lequita Westbrooks](https://a.storyblok.com/f/295508/1f152b4c61/img_3113.jpg/m/56x56/smart/filters:quality\(90\))
+Read [Editorial Standards](https://www.compare.com/about-us/editorial-standards)
+[See Full Bio](https://www.compare.com/authors/lequita-westbrooks)
+### Compare Car Insurance Quotes Instantly
+[Home](https://www.compare.com/)>[Auto Insurance](https://www.compare.com/auto-insurance)>[Cheap Car Insurance](https://www.compare.com/auto-insurance/cheap-car-insurance)>[Discounts](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts)>Geico Low Mileage Discount
+Car Insurance![expand/collapse](https://cdn.compare.com/ui/icons/ExpandArrowOutline.svg)[Auto Insurance Rates](https://www.compare.com/auto-insurance)[Cheap Car Insurance](https://www.compare.com/auto-insurance/cheap-car-insurance)[Best Comparison Sites](https://www.compare.com/auto-insurance/compare-insurance-companies/best-car-insurance-comparison-sites)[Best Car Insurance Companies](https://www.compare.com/auto-insurance/best-car-insurance-companies)[Compare Insurance Companies](https://www.compare.com/auto-insurance/compare-insurance-companies)[Rates by State](https://www.compare.com/auto-insurance/by-state)
+Resources![expand/collapse](https://cdn.compare.com/ui/icons/ExpandArrowOutline.svg)[Auto Insurance Coverage](https://www.compare.com/auto-insurance/resources/coverage)[Car Insurance by Vehicle](https://www.compare.com/auto-insurance/vehicles)[Car Insurance Calculator](https://www.compare.com/auto-insurance/resources/car-insurance-calculator)[Car Insurance Reviews](https://www.compare.com/auto-insurance/reviews)[Car Insurance Discounts](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts)[Best Pet Insurance](https://www.compare.com/pet-insurance)
+Popular States![expand/collapse](https://cdn.compare.com/ui/icons/ExpandArrowOutline.svg)[California](https://www.compare.com/auto-insurance/by-state/california)[Texas](https://www.compare.com/auto-insurance/by-state/texas)[Florida](https://www.compare.com/auto-insurance/by-state/florida)[New York](https://www.compare.com/auto-insurance/by-state/new-york)[New Jersey](https://www.compare.com/auto-insurance/by-state/new-jersey)[Virginia](https://www.compare.com/auto-insurance/by-state/virginia)
+Company![expand/collapse](https://cdn.compare.com/ui/icons/ExpandArrowOutline.svg)[About Us](https://www.compare.com/about-us)[Privacy Policy](https://www.compare.com/about-us/privacy-statement)[Do Not Sell My Data](https://docs.google.com/forms/d/e/1FAIpQLSd_CSXbZCx25qI85LW0fR2IT36PM9JHtdEGCw6u3pFKR_ltew/viewform)[Terms and Conditions](https://www.compare.com/about-us/terms-and-conditions)[Press](https://www.compare.com/about-us/press)[Editorial Standards](https://www.compare.com/about-us/editorial-standards)[Contact Us](https://www.compare.com/contact-us)
+![Compare.com](https://cdn.compare.com/images/logos/compare-cobrand-logo.svg)
+[](https://www.facebook.com/compare)[](https://x.com/compare_com)[](https://www.youtube.com/compare)
+†Average potential savings based on initial quotes received by 18,330 customers seeking insurance through Compare. Actual savings may vary depending on state of residence, individual circumstances, coverage selections, and insurance provider. Savings and lowest rates do not reflect typical results.
+©2025 Compare.com. All rights reserved. Compare.com is a registered trademark. Compare.com Insurance Agency, LLC is a Virginia domiciled licensed insurance agency in 51 US jurisdictions. Licensing information may be found above. Compare.com does business in California as Comparedotcom Insurance Agency, LLC (License: 0I22535). Compare.com is a wholly owned subsidiary of Insurify, Inc.
+[Terms of Service](https://www.compare.com/about-us/terms-and-conditions) | [Privacy Policy](https://www.compare.com/about-us/privacy-statement) | [Your Privacy Choices](https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-low-mileage-discount)

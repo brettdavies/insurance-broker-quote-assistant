@@ -1,0 +1,455 @@
+{
+  "domain": "shunauto.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:21.313787",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 12,
+      "frequency": 12.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 29,
+      "frequency": 29.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 17,
+      "frequency": 17.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "icon",
+      "count": 33
+    },
+    {
+      "class": "small",
+      "count": 28
+    },
+    {
+      "class": "small-top",
+      "count": 28
+    },
+    {
+      "class": "col-sm-6",
+      "count": 24
+    },
+    {
+      "class": "col-md-2",
+      "count": 24
+    },
+    {
+      "class": "link-image-wrap",
+      "count": 24
+    },
+    {
+      "class": "affiliate_product_image",
+      "count": 24
+    },
+    {
+      "class": "link-image",
+      "count": 24
+    },
+    {
+      "class": "affiliate_product_title",
+      "count": 24
+    },
+    {
+      "class": "affiliate_product_price",
+      "count": 24
+    },
+    {
+      "class": "unit",
+      "count": 19
+    },
+    {
+      "class": "unit-body",
+      "count": 19
+    },
+    {
+      "class": "icon-primary",
+      "count": 16
+    },
+    {
+      "class": "flex-row",
+      "count": 14
+    },
+    {
+      "class": "unit-left",
+      "count": 14
+    },
+    {
+      "class": "fa",
+      "count": 11
+    },
+    {
+      "class": "mt-0",
+      "count": 11
+    },
+    {
+      "class": "row",
+      "count": 10
+    },
+    {
+      "class": "post",
+      "count": 9
+    },
+    {
+      "class": "post-header",
+      "count": 9
+    },
+    {
+      "class": "post-meta",
+      "count": 9
+    },
+    {
+      "class": "col-md-6",
+      "count": 9
+    },
+    {
+      "class": "icon-round",
+      "count": 8
+    },
+    {
+      "class": "icon-pciked-bluewood",
+      "count": 8
+    },
+    {
+      "class": "icon-xxs-smallest",
+      "count": 8
+    },
+    {
+      "class": "link-primary",
+      "count": 8
+    },
+    {
+      "class": "text-gray-05",
+      "count": 8
+    },
+    {
+      "class": "mt-2",
+      "count": 8
+    },
+    {
+      "class": "post-preview",
+      "count": 8
+    },
+    {
+      "class": "post-image",
+      "count": 8
+    },
+    {
+      "class": "list-meta",
+      "count": 8
+    },
+    {
+      "class": "list-inline",
+      "count": 7
+    },
+    {
+      "class": "icon-md",
+      "count": 6
+    },
+    {
+      "class": "link-primary-bold",
+      "count": 6
+    },
+    {
+      "class": "border-0",
+      "count": 6
+    },
+    {
+      "class": "pt-0",
+      "count": 6
+    },
+    {
+      "class": "badge",
+      "count": 6
+    },
+    {
+      "class": "mark",
+      "count": 6
+    },
+    {
+      "class": "unit-spacing-sm",
+      "count": 6
+    },
+    {
+      "class": "align-items-center",
+      "count": 5
+    },
+    {
+      "class": "hr-lines",
+      "count": 5
+    },
+    {
+      "class": "see-also",
+      "count": 5
+    },
+    {
+      "class": "see-also-icon",
+      "count": 5
+    },
+    {
+      "class": "icon-lg-big",
+      "count": 5
+    },
+    {
+      "class": "fa-see-also",
+      "count": 5
+    },
+    {
+      "class": "mb-0",
+      "count": 5
+    },
+    {
+      "class": "mb-4",
+      "count": 5
+    },
+    {
+      "class": "list-inline-xs",
+      "count": 5
+    },
+    {
+      "class": "col-xl-3",
+      "count": 5
+    },
+    {
+      "class": "icon-xxs",
+      "count": 4
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "rd-search-form-input",
+      "count": 1
+    },
+    {
+      "id": "rd-search-results-live",
+      "count": 1
+    },
+    {
+      "id": "aswift_1_host",
+      "count": 1
+    },
+    {
+      "id": "aswift_1",
+      "count": 1
+    },
+    {
+      "id": "a!2",
+      "count": 1
+    },
+    {
+      "id": "geico",
+      "count": 1
+    },
+    {
+      "id": "discounts-for-insuring-multiple-cars",
+      "count": 1
+    },
+    {
+      "id": "discounts-for-insuring-a-new-car",
+      "count": 1
+    },
+    {
+      "id": "lower-rates-for-good-credit",
+      "count": 1
+    },
+    {
+      "id": "lower-rates-for-good-driving-records",
+      "count": 1
+    },
+    {
+      "id": "faqs",
+      "count": 1
+    },
+    {
+      "id": "accordionTwo",
+      "count": 1
+    },
+    {
+      "id": "accordionTwo-accordion-head-0",
+      "count": 1
+    },
+    {
+      "id": "accordionTwo-accordion-body-0",
+      "count": 1
+    },
+    {
+      "id": "accordionTwo-accordion-head-1",
+      "count": 1
+    },
+    {
+      "id": "accordionTwo-accordion-body-1",
+      "count": 1
+    },
+    {
+      "id": "accordionTwo-accordion-head-2",
+      "count": 1
+    },
+    {
+      "id": "accordionTwo-accordion-body-2",
+      "count": 1
+    },
+    {
+      "id": "help-questions",
+      "count": 1
+    },
+    {
+      "id": "btn-help-yes",
+      "count": 1
+    },
+    {
+      "id": "btn-help-no",
+      "count": 1
+    },
+    {
+      "id": "help-yes-response",
+      "count": 1
+    },
+    {
+      "id": "help-no-response",
+      "count": 1
+    },
+    {
+      "id": "help-1",
+      "count": 1
+    },
+    {
+      "id": "help-2",
+      "count": 1
+    },
+    {
+      "id": "help-3",
+      "count": 1
+    },
+    {
+      "id": "help-4",
+      "count": 1
+    },
+    {
+      "id": "btn-help-submit",
+      "count": 1
+    },
+    {
+      "id": "help-submit-response",
+      "count": 1
+    },
+    {
+      "id": "comments",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article",
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

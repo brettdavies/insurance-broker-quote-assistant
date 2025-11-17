@@ -1,0 +1,454 @@
+{
+  "domain": "subscribed.fyi",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:21.568627",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 8,
+      "frequency": 8.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 332,
+      "frequency": 332.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 51,
+      "frequency": 51.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "lazyload",
+      "count": 140
+    },
+    {
+      "class": "attachment-thumbnail",
+      "count": 62
+    },
+    {
+      "class": "size-thumbnail",
+      "count": 62
+    },
+    {
+      "class": "wp-post-image",
+      "count": 62
+    },
+    {
+      "class": "v3-product-page-item-details__full-screen",
+      "count": 30
+    },
+    {
+      "class": "categories__item",
+      "count": 24
+    },
+    {
+      "class": "categories__icon",
+      "count": 24
+    },
+    {
+      "class": "categories__content",
+      "count": 24
+    },
+    {
+      "class": "categories__title",
+      "count": 24
+    },
+    {
+      "class": "categories__desc",
+      "count": 24
+    },
+    {
+      "class": "flex",
+      "count": 21
+    },
+    {
+      "class": "rate-experience-tooltip-identity",
+      "count": 19
+    },
+    {
+      "class": "rate-experience-tooltip__message",
+      "count": 19
+    },
+    {
+      "class": "subscribed-growth__item",
+      "count": 18
+    },
+    {
+      "class": "flex-col",
+      "count": 18
+    },
+    {
+      "class": "rate-experience-tooltip__close",
+      "count": 18
+    },
+    {
+      "class": "swiper-slide",
+      "count": 15
+    },
+    {
+      "class": "v3-product-details-reviews__metric-icon",
+      "count": 12
+    },
+    {
+      "class": "footer-v3__list-item",
+      "count": 12
+    },
+    {
+      "class": "footer-v3__list-link",
+      "count": 12
+    },
+    {
+      "class": "v3-product-details-pricing__discount-icon",
+      "count": 10
+    },
+    {
+      "class": "relative",
+      "count": 9
+    },
+    {
+      "class": "w-full",
+      "count": 9
+    },
+    {
+      "class": "lazyloaded",
+      "count": 8
+    },
+    {
+      "class": "v3-product-details-pricing__divider",
+      "count": 8
+    },
+    {
+      "class": "v3-product-page-item-details__experience-swiper-image",
+      "count": 8
+    },
+    {
+      "class": "menu-v3__item",
+      "count": 7
+    },
+    {
+      "class": "menu-v3__item-text",
+      "count": 7
+    },
+    {
+      "class": "auth-modal__view",
+      "count": 6
+    },
+    {
+      "class": "auth-modal__title",
+      "count": 6
+    },
+    {
+      "class": "auth-modal__text",
+      "count": 6
+    },
+    {
+      "class": "auth-modal__input",
+      "count": 6
+    },
+    {
+      "class": "wrapper-v3",
+      "count": 6
+    },
+    {
+      "class": "subscribed-growth__solution",
+      "count": 6
+    },
+    {
+      "class": "subscribed-growth__solution-text-container",
+      "count": 6
+    },
+    {
+      "class": "subscribed-growth__solution-title",
+      "count": 6
+    },
+    {
+      "class": "subscribed-growth__solution-text",
+      "count": 6
+    },
+    {
+      "class": "v3-product-details-header__panel-image",
+      "count": 6
+    },
+    {
+      "class": "v3-product-details-summary__stat-label",
+      "count": 6
+    },
+    {
+      "class": "items-center",
+      "count": 6
+    },
+    {
+      "class": "justify-center",
+      "count": 6
+    },
+    {
+      "class": "gap-1",
+      "count": 6
+    },
+    {
+      "class": "break-words",
+      "count": 6
+    },
+    {
+      "class": "v3-product-details-reviews__metric-container",
+      "count": 6
+    },
+    {
+      "class": "v3-product-details-reviews__metric",
+      "count": 6
+    },
+    {
+      "class": "v3-product-details-reviews__metric-name",
+      "count": 6
+    },
+    {
+      "class": "v3-product-details-reviews__metric-score",
+      "count": 6
+    },
+    {
+      "class": "v3-product-details-reviews__metric-tooltip",
+      "count": 6
+    },
+    {
+      "class": "gridCircle",
+      "count": 6
+    },
+    {
+      "class": "axisLabel",
+      "count": 6
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "slide-full-screen",
+      "count": 30
+    },
+    {
+      "id": "close-empty",
+      "count": 18
+    },
+    {
+      "id": "e3b3ac7f-7713-41db-9810-62f7a5966579",
+      "count": 3
+    },
+    {
+      "id": "back-to-business-menu",
+      "count": 2
+    },
+    {
+      "id": "external-review",
+      "count": 2
+    },
+    {
+      "id": "discount-tooltip",
+      "count": 2
+    },
+    {
+      "id": "subscribed-overall-score",
+      "count": 2
+    },
+    {
+      "id": "showcase-media",
+      "count": 2
+    },
+    {
+      "id": "feature",
+      "count": 2
+    },
+    {
+      "id": "alternatives",
+      "count": 2
+    },
+    {
+      "id": "cancel",
+      "count": 2
+    },
+    {
+      "id": "knowledge",
+      "count": 2
+    },
+    {
+      "id": "cookieyes",
+      "count": 1
+    },
+    {
+      "id": "cookieyes-banner",
+      "count": 1
+    },
+    {
+      "id": "wp-block-library-css",
+      "count": 1
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "mailerlite_forms.css-css",
+      "count": 1
+    },
+    {
+      "id": "vite-main-css-0-css",
+      "count": 1
+    },
+    {
+      "id": "jquery-core-js",
+      "count": 1
+    },
+    {
+      "id": "jquery-migrate-js",
+      "count": 1
+    },
+    {
+      "id": "js-cookie-script-js",
+      "count": 1
+    },
+    {
+      "id": "mo-social-login-script-js",
+      "count": 1
+    },
+    {
+      "id": "monsterinsights-frontend-script-js",
+      "count": 1
+    },
+    {
+      "id": "monsterinsights-frontend-script-js-extra",
+      "count": 1
+    },
+    {
+      "id": "theia-sticky-sidebar-stylesheet-TSS",
+      "count": 1
+    },
+    {
+      "id": "cky-style",
+      "count": 1
+    },
+    {
+      "id": "pattern0_32289_55991",
+      "count": 1
+    },
+    {
+      "id": "image0_32289_55991",
+      "count": 1
+    },
+    {
+      "id": "pattern0_32289_55997",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "footer",
+      "nav"
+    ],
+    "css_selector": null,
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "low"
+  }
+}

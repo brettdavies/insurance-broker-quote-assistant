@@ -1,0 +1,455 @@
+{
+  "domain": "news.rosenfeldinjurylaw.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:20.345727",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 7,
+      "frequency": 7.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 37,
+      "frequency": 37.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 5,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 7,
+      "frequency": 7.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "item",
+      "count": 70
+    },
+    {
+      "class": "wp-block-heading",
+      "count": 24
+    },
+    {
+      "class": "tns-item",
+      "count": 16
+    },
+    {
+      "class": "container",
+      "count": 14
+    },
+    {
+      "class": "icon",
+      "count": 12
+    },
+    {
+      "class": "visually-hidden",
+      "count": 11
+    },
+    {
+      "class": "tns-slide-cloned",
+      "count": 10
+    },
+    {
+      "class": "field",
+      "count": 10
+    },
+    {
+      "class": "label",
+      "count": 10
+    },
+    {
+      "class": "input",
+      "count": 10
+    },
+    {
+      "class": "top-el",
+      "count": 9
+    },
+    {
+      "class": "-static",
+      "count": 9
+    },
+    {
+      "class": "list",
+      "count": 8
+    },
+    {
+      "class": "nav-el",
+      "count": 8
+    },
+    {
+      "class": "priority_11",
+      "count": 8
+    },
+    {
+      "class": "priority_12",
+      "count": 8
+    },
+    {
+      "class": "priority_13",
+      "count": 8
+    },
+    {
+      "class": "sub-el",
+      "count": 8
+    },
+    {
+      "class": "-text",
+      "count": 8
+    },
+    {
+      "class": "ui-button",
+      "count": 7
+    },
+    {
+      "class": "priority_1",
+      "count": 6
+    },
+    {
+      "class": "priority_14",
+      "count": 6
+    },
+    {
+      "class": "level-2",
+      "count": 5
+    },
+    {
+      "class": "priority_10",
+      "count": 5
+    },
+    {
+      "class": "priority_15",
+      "count": 5
+    },
+    {
+      "class": "ui-widget",
+      "count": 5
+    },
+    {
+      "class": "title",
+      "count": 5
+    },
+    {
+      "class": "column",
+      "count": 5
+    },
+    {
+      "class": "has-layers",
+      "count": 4
+    },
+    {
+      "class": "line",
+      "count": 4
+    },
+    {
+      "class": "text",
+      "count": 4
+    },
+    {
+      "class": "-item-2",
+      "count": 4
+    },
+    {
+      "class": "-item-3",
+      "count": 4
+    },
+    {
+      "class": "author",
+      "count": 4
+    },
+    {
+      "class": "wp-block-image",
+      "count": 4
+    },
+    {
+      "class": "size-full",
+      "count": 4
+    },
+    {
+      "class": "-underlined",
+      "count": 4
+    },
+    {
+      "class": "phone",
+      "count": 3
+    },
+    {
+      "class": "-phone-1",
+      "count": 3
+    },
+    {
+      "class": "index",
+      "count": 3
+    },
+    {
+      "class": "contactus",
+      "count": 3
+    },
+    {
+      "class": "-item-4",
+      "count": 3
+    },
+    {
+      "class": "-item-5",
+      "count": 3
+    },
+    {
+      "class": "-item-1",
+      "count": 3
+    },
+    {
+      "class": "tns-slide-active",
+      "count": 3
+    },
+    {
+      "class": "share-logo",
+      "count": 3
+    },
+    {
+      "class": "share-tag",
+      "count": 3
+    },
+    {
+      "class": "ui-form",
+      "count": 3
+    },
+    {
+      "class": "list-item",
+      "count": 3
+    },
+    {
+      "class": "rating",
+      "count": 3
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "rosenfeld",
+      "count": 2
+    },
+    {
+      "id": "consent",
+      "count": 2
+    },
+    {
+      "id": "critical",
+      "count": 1
+    },
+    {
+      "id": "sa-css",
+      "count": 1
+    },
+    {
+      "id": "post-511",
+      "count": 1
+    },
+    {
+      "id": "top-numbers",
+      "count": 1
+    },
+    {
+      "id": "head",
+      "count": 1
+    },
+    {
+      "id": "tnav",
+      "count": 1
+    },
+    {
+      "id": "tnav-wrap",
+      "count": 1
+    },
+    {
+      "id": "tns1-ow",
+      "count": 1
+    },
+    {
+      "id": "tns1-mw",
+      "count": 1
+    },
+    {
+      "id": "tns1-iw",
+      "count": 1
+    },
+    {
+      "id": "tns1",
+      "count": 1
+    },
+    {
+      "id": "tns1-item0",
+      "count": 1
+    },
+    {
+      "id": "tns1-item1",
+      "count": 1
+    },
+    {
+      "id": "tns1-item2",
+      "count": 1
+    },
+    {
+      "id": "tns1-item3",
+      "count": 1
+    },
+    {
+      "id": "tns1-item4",
+      "count": 1
+    },
+    {
+      "id": "tns1-item5",
+      "count": 1
+    },
+    {
+      "id": "ui-narrative-511",
+      "count": 1
+    },
+    {
+      "id": "h-get-help-with-the-progressive-claim-time-limit-from-personal-injury-lawyers",
+      "count": 1
+    },
+    {
+      "id": "h-insurance-claim-time-limits",
+      "count": 1
+    },
+    {
+      "id": "h-statutory-requirements",
+      "count": 1
+    },
+    {
+      "id": "h-promptness-and-fairness",
+      "count": 1
+    },
+    {
+      "id": "h-variations-by-state",
+      "count": 1
+    },
+    {
+      "id": "h-progressive-s-claim-handling-process",
+      "count": 1
+    },
+    {
+      "id": "h-initial-steps",
+      "count": 1
+    },
+    {
+      "id": "h-investigation-and-evaluation",
+      "count": 1
+    },
+    {
+      "id": "h-settlement-offer-or-denial",
+      "count": 1
+    },
+    {
+      "id": "h-time-limits-for-responding-to-a-claim",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

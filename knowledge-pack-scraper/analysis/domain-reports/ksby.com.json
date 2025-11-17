@@ -1,0 +1,455 @@
+{
+  "domain": "ksby.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:24.524230",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 22,
+      "frequency": 22.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 31,
+      "frequency": 31.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 8,
+      "frequency": 8.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "NavigationItem-text-link",
+      "count": 41
+    },
+    {
+      "class": "NavigationItem",
+      "count": 40
+    },
+    {
+      "class": "NavigationItem-text",
+      "count": 40
+    },
+    {
+      "class": "NavigationItem-items-item",
+      "count": 34
+    },
+    {
+      "class": "NavigationLink",
+      "count": 34
+    },
+    {
+      "class": "FooterNavigation-items-item",
+      "count": 21
+    },
+    {
+      "class": "Page-body",
+      "count": 15
+    },
+    {
+      "class": "Navigation-items-item",
+      "count": 14
+    },
+    {
+      "class": "fa-solid",
+      "count": 10
+    },
+    {
+      "class": "SocialBar-items-item",
+      "count": 8
+    },
+    {
+      "class": "SocialLink",
+      "count": 8
+    },
+    {
+      "class": "mainNavigation",
+      "count": 7
+    },
+    {
+      "class": "ot-label-txt",
+      "count": 7
+    },
+    {
+      "class": "menu-line",
+      "count": 6
+    },
+    {
+      "class": "collapse-nav-button",
+      "count": 6
+    },
+    {
+      "class": "NavigationItem-items",
+      "count": 6
+    },
+    {
+      "class": "userNav",
+      "count": 6
+    },
+    {
+      "class": "SectionNavigation-items-item",
+      "count": 6
+    },
+    {
+      "class": "ot-label-status",
+      "count": 6
+    },
+    {
+      "class": "content-showcase-itru-sufficient-2d",
+      "count": 6
+    },
+    {
+      "class": "fas",
+      "count": 5
+    },
+    {
+      "class": "Navigation",
+      "count": 5
+    },
+    {
+      "class": "Link",
+      "count": 4
+    },
+    {
+      "class": "arrow",
+      "count": 4
+    },
+    {
+      "class": "ot-pc-scrollbar",
+      "count": 4
+    },
+    {
+      "class": "ot-chkbox",
+      "count": 4
+    },
+    {
+      "class": "open-drawer",
+      "count": 3
+    },
+    {
+      "class": "live-status",
+      "count": 3
+    },
+    {
+      "class": "is-live",
+      "count": 3
+    },
+    {
+      "class": "fa-circle",
+      "count": 3
+    },
+    {
+      "class": "m",
+      "count": 3
+    },
+    {
+      "class": "ActionBar-items-item",
+      "count": 3
+    },
+    {
+      "class": "disabled",
+      "count": 3
+    },
+    {
+      "class": "Image",
+      "count": 3
+    },
+    {
+      "class": "accent",
+      "count": 3
+    },
+    {
+      "class": "sellwild-widget-grid",
+      "count": 3
+    },
+    {
+      "class": "sellwild-listing",
+      "count": 3
+    },
+    {
+      "class": "listing-img-container",
+      "count": 3
+    },
+    {
+      "class": "listing-img",
+      "count": 3
+    },
+    {
+      "class": "listing-title",
+      "count": 3
+    },
+    {
+      "class": "listing-price-2",
+      "count": 3
+    },
+    {
+      "class": "listing-user",
+      "count": 3
+    },
+    {
+      "class": "sellwild-widget-display",
+      "count": 3
+    },
+    {
+      "class": "ot-hide",
+      "count": 3
+    },
+    {
+      "class": "ot-tgl",
+      "count": 3
+    },
+    {
+      "class": "ot-switch",
+      "count": 3
+    },
+    {
+      "class": "ot-switch-nob",
+      "count": 3
+    },
+    {
+      "class": "ot-scrn-rdr",
+      "count": 3
+    },
+    {
+      "class": "menuWrap",
+      "count": 2
+    },
+    {
+      "class": "ketchup",
+      "count": 2
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "99aca39bd57c4d51ad7b09ea2218d17c",
+      "count": 2
+    },
+    {
+      "id": "SPD_BG",
+      "count": 2
+    },
+    {
+      "id": "C0004",
+      "count": 2
+    },
+    {
+      "id": "C0002",
+      "count": 2
+    },
+    {
+      "id": "facebook-jssdk",
+      "count": 1
+    },
+    {
+      "id": "+window.advBidxc.customerId+",
+      "count": 1
+    },
+    {
+      "id": "+window.mnjs.customerId+",
+      "count": 1
+    },
+    {
+      "id": "onetrust-style",
+      "count": 1
+    },
+    {
+      "id": "cnx-player-css-2146273620",
+      "count": 1
+    },
+    {
+      "id": "sellwild-prebid-init",
+      "count": 1
+    },
+    {
+      "id": "parsely-cfg",
+      "count": 1
+    },
+    {
+      "id": "scroll-follow",
+      "count": 1
+    },
+    {
+      "id": "TopNavigationLocalNews",
+      "count": 1
+    },
+    {
+      "id": "TopNavigationNationalNews",
+      "count": 1
+    },
+    {
+      "id": "TopNavigationWeather",
+      "count": 1
+    },
+    {
+      "id": "TopNavigationSport",
+      "count": 1
+    },
+    {
+      "id": "TopNavigationTraffic",
+      "count": 1
+    },
+    {
+      "id": "TopNavigationLive",
+      "count": 1
+    },
+    {
+      "id": "live",
+      "count": 1
+    },
+    {
+      "id": "headerSocialIcons",
+      "count": 1
+    },
+    {
+      "id": "wx-alerts-count",
+      "count": 1
+    },
+    {
+      "id": "closing-alerts-count",
+      "count": 1
+    },
+    {
+      "id": "originalList",
+      "count": 1
+    },
+    {
+      "id": "firstSet",
+      "count": 1
+    },
+    {
+      "id": "moreDrop",
+      "count": 1
+    },
+    {
+      "id": "rest",
+      "count": 1
+    },
+    {
+      "id": "published-date",
+      "count": 1
+    },
+    {
+      "id": "outstream_connatix_container",
+      "count": 1
+    },
+    {
+      "id": "7e50219d1c014f4bbaf01c470ee951a2",
+      "count": 1
+    },
+    {
+      "id": "ArticlePageNewsletterSignupIFrame",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

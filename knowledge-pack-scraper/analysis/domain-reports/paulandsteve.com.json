@@ -1,0 +1,454 @@
+{
+  "domain": "paulandsteve.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:20.669365",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 31,
+      "frequency": 31.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 52,
+      "frequency": 52.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 49,
+      "frequency": 49.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-item",
+      "count": 40
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 33
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 33
+    },
+    {
+      "class": "nitro-offscreen",
+      "count": 30
+    },
+    {
+      "class": "nitropack-inline-script",
+      "count": 21
+    },
+    {
+      "class": "gform_hidden",
+      "count": 20
+    },
+    {
+      "class": "gfield_required",
+      "count": 18
+    },
+    {
+      "class": "gform-field-label",
+      "count": 10
+    },
+    {
+      "class": "gfield",
+      "count": 9
+    },
+    {
+      "class": "gfield_contains_required",
+      "count": 9
+    },
+    {
+      "class": "field_sublabel_below",
+      "count": 9
+    },
+    {
+      "class": "gfield--no-description",
+      "count": 9
+    },
+    {
+      "class": "field_description_below",
+      "count": 9
+    },
+    {
+      "class": "field_validation_below",
+      "count": 9
+    },
+    {
+      "class": "gfield_visibility_visible",
+      "count": 9
+    },
+    {
+      "class": "gfield_label",
+      "count": 9
+    },
+    {
+      "class": "gfield_required_asterisk",
+      "count": 9
+    },
+    {
+      "class": "ginput_container",
+      "count": 9
+    },
+    {
+      "class": "medium",
+      "count": 8
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 7
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 7
+    },
+    {
+      "class": "nitro-lazy",
+      "count": 7
+    },
+    {
+      "class": "lazyloaded",
+      "count": 6
+    },
+    {
+      "class": "menu-item-has-children",
+      "count": 6
+    },
+    {
+      "class": "sub-menu",
+      "count": 6
+    },
+    {
+      "class": "ez-toc-page-1",
+      "count": 5
+    },
+    {
+      "class": "ez-toc-heading-level-2",
+      "count": 5
+    },
+    {
+      "class": "ez-toc-link",
+      "count": 5
+    },
+    {
+      "class": "wp-block-heading",
+      "count": 5
+    },
+    {
+      "class": "ez-toc-section",
+      "count": 5
+    },
+    {
+      "class": "ez-toc-section-end",
+      "count": 5
+    },
+    {
+      "class": "top_label",
+      "count": 4
+    },
+    {
+      "class": "textarea",
+      "count": 4
+    },
+    {
+      "class": "right-info",
+      "count": 4
+    },
+    {
+      "class": "menu",
+      "count": 3
+    },
+    {
+      "class": "wp-block-list",
+      "count": 3
+    },
+    {
+      "class": "widget",
+      "count": 3
+    },
+    {
+      "class": "widgettitle",
+      "count": 3
+    },
+    {
+      "class": "address",
+      "count": 3
+    },
+    {
+      "class": "cols-info",
+      "count": 3
+    },
+    {
+      "class": "left-label",
+      "count": 3
+    },
+    {
+      "class": "directions",
+      "count": 3
+    },
+    {
+      "class": "inner",
+      "count": 2
+    },
+    {
+      "class": "left",
+      "count": 2
+    },
+    {
+      "class": "right",
+      "count": 2
+    },
+    {
+      "class": "widget_text",
+      "count": 2
+    },
+    {
+      "class": "textwidget",
+      "count": 2
+    },
+    {
+      "class": "gf_browser_chrome",
+      "count": 2
+    },
+    {
+      "class": "gform_wrapper",
+      "count": 2
+    },
+    {
+      "class": "gform_legacy_markup_wrapper",
+      "count": 2
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "false",
+      "count": 8
+    },
+    {
+      "id": "Path",
+      "count": 3
+    },
+    {
+      "id": "e407a93165f901f59f4fa3c1db698262-1",
+      "count": 2
+    },
+    {
+      "id": "25f459913484ff8de03a41165deca635-1",
+      "count": 2
+    },
+    {
+      "id": "f7c77ab2022772e17edd517dfab38298-1",
+      "count": 2
+    },
+    {
+      "id": "a041fd257ab0d1b0deffd3f74256dfdc-1",
+      "count": 2
+    },
+    {
+      "id": "77c33c5fdfd4343a828b75f4857830ef-1",
+      "count": 2
+    },
+    {
+      "id": "42915a1d969f4eecccac280b00c83538-1",
+      "count": 2
+    },
+    {
+      "id": "8b88dc461ba4fac05972a89421f13a40-1",
+      "count": 2
+    },
+    {
+      "id": "wpil-frontend-script-js-extra",
+      "count": 2
+    },
+    {
+      "id": "bodhi_svg_inline-js-extra",
+      "count": 2
+    },
+    {
+      "id": "bodhi_svg_inline-js-after",
+      "count": 2
+    },
+    {
+      "id": "ez-toc-scroll-scriptjs-js-extra",
+      "count": 2
+    },
+    {
+      "id": "ez-toc-js-js-extra",
+      "count": 2
+    },
+    {
+      "id": "gforms_recaptcha_recaptcha-js-extra",
+      "count": 2
+    },
+    {
+      "id": "wp-i18n-js-after",
+      "count": 2
+    },
+    {
+      "id": "gform_gravityforms-js-extra",
+      "count": 2
+    },
+    {
+      "id": "gform_gravityforms_theme-js-extra",
+      "count": 2
+    },
+    {
+      "id": "275d4459211790cb93bbebffd3e3bcff-1",
+      "count": 2
+    },
+    {
+      "id": "a4a254e3949a6a9727ac2bac389aa080-1",
+      "count": 2
+    },
+    {
+      "id": "f42f8568c4f1ddb5f895478283111afd-1",
+      "count": 2
+    },
+    {
+      "id": "d8f4640aa513291fe85ea426e8373293-1",
+      "count": 2
+    },
+    {
+      "id": "75d3960fcfff92578ec1bd2c18926902-1",
+      "count": 2
+    },
+    {
+      "id": "nitro-script",
+      "count": 2
+    },
+    {
+      "id": "Homepage",
+      "count": 2
+    },
+    {
+      "id": "nitro-web-worker",
+      "count": 1
+    },
+    {
+      "id": "nprl",
+      "count": 1
+    },
+    {
+      "id": ";function H(e,t){if(!_[e]){_[e]=[]}_[e].push(t)}function U(e,t){if(_[e]){var n=0,r=_[e];for(var n=0;n<r.length;n++){r[n].call(this,t)}}}function Y(){(function(e,t){var r=null;var i=function(e){r(e)};var o=null;var a={};var c=null;var u=null;var d=0;e.addEventListener(t,function(r){if([",
+      "count": 1
+    },
+    {
+      "id": "'+n.getAttribute(",
+      "count": 1
+    },
+    {
+      "id": "nitro-deferred-styles-marker",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "footer",
+      "nav"
+    ],
+    "css_selector": null,
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "low"
+  }
+}

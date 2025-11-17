@@ -1,0 +1,191 @@
+{
+  "domain": "policyholderperspective.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:26.298220",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "footer",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "nav",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "passle-btn-inset",
+      "count": 2
+    },
+    {
+      "class": "black-btn",
+      "count": 2
+    },
+    {
+      "class": "error-button",
+      "count": 2
+    },
+    {
+      "class": "passle-body",
+      "count": 1
+    },
+    {
+      "class": "super-container",
+      "count": 1
+    },
+    {
+      "class": "error-container",
+      "count": 1
+    },
+    {
+      "class": "responsive-container",
+      "count": 1
+    },
+    {
+      "class": "mobile-padding",
+      "count": 1
+    },
+    {
+      "class": "col",
+      "count": 1
+    },
+    {
+      "class": "error-title",
+      "count": 1
+    },
+    {
+      "class": "errorcode",
+      "count": 1
+    },
+    {
+      "class": "error-message",
+      "count": 1
+    },
+    {
+      "class": "error-actions",
+      "count": 1
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "favicon",
+      "count": 1
+    },
+    {
+      "id": "fa-main",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [],
+    "css_selector": null,
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "low"
+  }
+}

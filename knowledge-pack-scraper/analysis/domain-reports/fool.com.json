@@ -1,0 +1,454 @@
+{
+  "domain": "fool.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:23.587226",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 33,
+      "frequency": 33.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 330,
+      "frequency": 330.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "navigation-menu-sublist-item",
+      "count": 106
+    },
+    {
+      "class": "navigation-menu-sublist-item-link",
+      "count": 106
+    },
+    {
+      "class": "pb-4",
+      "count": 31
+    },
+    {
+      "class": "pb-2",
+      "count": 29
+    },
+    {
+      "class": "navigation-menu-list-subgroup-item",
+      "count": 29
+    },
+    {
+      "class": "navigation-menu-sublist-header",
+      "count": 29
+    },
+    {
+      "class": "navigation-menu-sublist",
+      "count": 29
+    },
+    {
+      "class": "text-gray-800",
+      "count": 25
+    },
+    {
+      "class": "navigation-chevron",
+      "count": 24
+    },
+    {
+      "class": "hover:text-gray-1100",
+      "count": 22
+    },
+    {
+      "class": "row",
+      "count": 19
+    },
+    {
+      "class": "col-12",
+      "count": 19
+    },
+    {
+      "class": "d-lg-none",
+      "count": 19
+    },
+    {
+      "class": "navigation-menu-list-item",
+      "count": 17
+    },
+    {
+      "class": "copy-md",
+      "count": 12
+    },
+    {
+      "class": "d-none",
+      "count": 12
+    },
+    {
+      "class": "block",
+      "count": 12
+    },
+    {
+      "class": "wysiwyg",
+      "count": 11
+    },
+    {
+      "class": "search-icon",
+      "count": 9
+    },
+    {
+      "class": "pt-3",
+      "count": 9
+    },
+    {
+      "class": "navigation-menu-list-item--parent",
+      "count": 8
+    },
+    {
+      "class": "d-lg-inline-block",
+      "count": 8
+    },
+    {
+      "class": "navigation-chevron--right",
+      "count": 8
+    },
+    {
+      "class": "navigation-menu-list-subgroup",
+      "count": 8
+    },
+    {
+      "class": "mb-4",
+      "count": 8
+    },
+    {
+      "class": "navigation-chevron--left",
+      "count": 8
+    },
+    {
+      "class": "pb-3",
+      "count": 8
+    },
+    {
+      "class": "border-top",
+      "count": 7
+    },
+    {
+      "class": "block-content",
+      "count": 7
+    },
+    {
+      "class": "container",
+      "count": 6
+    },
+    {
+      "class": "b",
+      "count": 6
+    },
+    {
+      "class": "container-fluid",
+      "count": 5
+    },
+    {
+      "class": "mt-3",
+      "count": 5
+    },
+    {
+      "class": "uppercase",
+      "count": 5
+    },
+    {
+      "class": "my-3",
+      "count": 5
+    },
+    {
+      "class": "text-center",
+      "count": 4
+    },
+    {
+      "class": "cls-2",
+      "count": 4
+    },
+    {
+      "class": "col-md-10",
+      "count": 4
+    },
+    {
+      "class": "offset-md-1",
+      "count": 4
+    },
+    {
+      "class": "col-lg-8",
+      "count": 4
+    },
+    {
+      "class": "offset-lg-2",
+      "count": 4
+    },
+    {
+      "class": "col-xl-10",
+      "count": 4
+    },
+    {
+      "class": "offset-xl-1",
+      "count": 4
+    },
+    {
+      "class": "bold",
+      "count": 4
+    },
+    {
+      "class": "copy-body",
+      "count": 4
+    },
+    {
+      "class": "soc-icon",
+      "count": 4
+    },
+    {
+      "class": "soc__link",
+      "count": 4
+    },
+    {
+      "class": "col-md-3",
+      "count": 4
+    },
+    {
+      "class": "art-feat-wrap",
+      "count": 4
+    },
+    {
+      "class": "art__hilited",
+      "count": 4
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "\uf002",
+      "count": 2
+    },
+    {
+      "id": "the-national-average-annual-cost-of-car-insurance:-dollar3017",
+      "count": 2
+    },
+    {
+      "id": "qsWidgetContainer",
+      "count": 2
+    },
+    {
+      "id": "fbIcon",
+      "count": 2
+    },
+    {
+      "id": "fbIconDesc",
+      "count": 2
+    },
+    {
+      "id": "twitterIcon",
+      "count": 2
+    },
+    {
+      "id": "twitterIconDesc",
+      "count": 2
+    },
+    {
+      "id": "icon_twt-blue",
+      "count": 2
+    },
+    {
+      "id": "compressed-css",
+      "count": 1
+    },
+    {
+      "id": "buorg",
+      "count": 1
+    },
+    {
+      "id": "buorgul",
+      "count": 1
+    },
+    {
+      "id": "buorgig",
+      "count": 1
+    },
+    {
+      "id": "ttip-advertiserDisclosure-id---desc",
+      "count": 1
+    },
+    {
+      "id": "accessibilityWidget",
+      "count": 1
+    },
+    {
+      "id": "mainNavigationDropdown",
+      "count": 1
+    },
+    {
+      "id": "searchIcon",
+      "count": 1
+    },
+    {
+      "id": "searchIconDesc",
+      "count": 1
+    },
+    {
+      "id": "Individual-Investment",
+      "count": 1
+    },
+    {
+      "id": "individual-investment-detail",
+      "count": 1
+    },
+    {
+      "id": "searchTrigger",
+      "count": 1
+    },
+    {
+      "id": "searchIconMob",
+      "count": 1
+    },
+    {
+      "id": "searchIconMobDesc",
+      "count": 1
+    },
+    {
+      "id": "Individual-Investment-mob",
+      "count": 1
+    },
+    {
+      "id": "individual-investment-detail-mob",
+      "count": 1
+    },
+    {
+      "id": "search",
+      "count": 1
+    },
+    {
+      "id": "search-results",
+      "count": 1
+    },
+    {
+      "id": "average-cost-car-insurance-50-states",
+      "count": 1
+    },
+    {
+      "id": "sidenav",
+      "count": 1
+    },
+    {
+      "id": "ascent_evergreen_sidebar",
+      "count": 1
+    },
+    {
+      "id": "key-points",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "footer",
+      "nav"
+    ],
+    "css_selector": "[role=\"main\"]",
+    "excluded_selector": "[class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"menu\"], [id*=\"menu\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

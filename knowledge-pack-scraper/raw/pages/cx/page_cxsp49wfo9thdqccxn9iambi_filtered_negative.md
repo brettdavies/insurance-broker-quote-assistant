@@ -1,0 +1,182 @@
+![](https://www.facebook.com/tr?id=611451235188263&ev=PageView&noscript=1%0A)
+* [ PERSONAL INSURANCE ](https://www.ryanagency.com/personal-insurance)
+* [ Auto Insurance ](https://www.ryanagency.com/auto-insurance)
+* [ Homeowners Insurance ](https://www.ryanagency.com/homeowners-insurance)
+* [ Pet Insurance ](https://www.ryanagency.com/pet-insurance)
+* [ Motorcycle Insurance ](https://www.ryanagency.com/motorcycle-insurance)
+* [ Boat and Watercraft Insurance ](https://www.ryanagency.com/boat-and-watercraft-insurance)
+* [ Antique Cars Insurance ](https://www.ryanagency.com/antique-cars-insurance)
+* [ In-Home Businesses ](https://www.ryanagency.com/in-home-businesses)
+* [ Mature Drivers Insurance ](https://www.ryanagency.com/mature-drivers-insurance)
+* [ Teen Driver Insurance ](https://www.ryanagency.com/teen-driver-insurance)
+* [ ATV and Recreational Vehicle Insurance ](https://www.ryanagency.com/atv-and-recreational-vehicle-insurance)
+* [ Landlord and Rental Property Insurance ](https://www.ryanagency.com/landlord-and-rental-property-insurance)
+* [ Wedding Insurance ](https://www.ryanagency.com/wedding-insurance)
+* [ Snowmobile Insurance ](https://www.ryanagency.com/snowmobile-insurance)
+* [ Renters Insurance ](https://www.ryanagency.com/renters-insurance)
+* [ Flood Insurance ](https://www.ryanagency.com/flood-insurance)
+* [ mobile home and trailer insurance ](https://www.ryanagency.com/mobile-home-and-trailer-insurance)
+* [ Special High Value Insurance ](https://www.ryanagency.com/special-high-value-insurance)
+* [ motorhome insurance ](https://www.ryanagency.com/motorhome-insurance)
+* [ catastrophic umbrella insurance ](https://www.ryanagency.com/catastrophic-umbrella-insurance)
+* [ COMMERCIAL INSURANCE ](https://www.ryanagency.com/commercial-insurance)
+* [ Commercial Property Insurance ](https://www.ryanagency.com/commercial-property-insurance)
+* [ Commercial General Liability Insurance ](https://www.ryanagency.com/commercial-general-liability-insurance)
+* [ Contractors Insurance Packages ](https://www.ryanagency.com/contractors-insurance-packages)
+* [ HVAC Contractors Insurance Packages ](https://www.ryanagency.com/hvac-contractors-insurance-packages)
+* [ Electrician Insurance Packages ](https://www.ryanagency.com/electrician-and-electrical-contractor)
+* [ Trucking Company Insurance ](https://www.ryanagency.com/trucking-company-insurance-packages)
+* [ Builders Risk Insurance Packages ](https://www.ryanagency.com/builders-risk-insurance-packages)
+* [ Plumbers Insurance Packages ](https://www.ryanagency.com/plumbers-insurance-packages)
+* [ Landscapers Insurance Packages ](https://www.ryanagency.com/landscapers-insurance-packages)
+* [ Commercial Auto Insurance ](https://www.ryanagency.com/commercial-auto-insurance)
+* [ Cyber Liability Insurance ](https://www.ryanagency.com/cyber-liability-insurance)
+* [ Business Owner Policy Insurance ](https://www.ryanagency.com/business-owner-policy-insurance)
+* [ Employment Policy Liability Insurance ](https://www.ryanagency.com/employment-policy-liability-insurance)
+* [ Farm Insurance ](https://www.ryanagency.com/farm-and-agriculture-insurance-coverage)
+* [ Commercial Liability Umbrella Insurance ](https://www.ryanagency.com/commercial-liability-umbrella-insurance)
+* [ Workers Compensation Insurance ](https://www.ryanagency.com/workers-compensation-insurance)
+* [ New York State Disability Insurance ](https://www.ryanagency.com/new-york-state-disability-insurance)
+* [ Bonds & Surety Insurance ](https://www.ryanagency.com/bonds-and-surety)
+* [ Special Event Insurance ](https://www.ryanagency.com/special-events-liability-insurance)
+* [ Municipal and Fire Company Insurance ](https://www.ryanagency.com/municipal-fire-department-insurance)
+* [ SERVICE CENTER ](https://www.ryanagency.com/customer-service)
+* [ Pay Your Bill ](https://www.ryanagency.com/pay-your-bill)
+* [ File a Claim ](https://www.ryanagency.com/file-a-claim)
+* [ New York State Defensive Driving Course ](https://www.ryanagency.com/new-york-state-defensive-driving-course)
+* [ ABOUT US ](https://www.ryanagency.com/about-the-ryan-agency)
+* [ Our History ](https://www.ryanagency.com/our-history)
+* [ WeWantYou ](https://www.ryanagency.com/WeWantYou)
+* [ Our Companies ](https://www.ryanagency.com/our-companies)
+* [ Podcast ](https://www.ryanagency.com/podcast)
+* [ OUR NEWSLETTER ](https://www.ryanagency.com/our-newsletter)
+* [ Customer Testimonials ](https://www.ryanagency.com/customer-testimonials)
+* [ Contact Us ](https://www.ryanagency.com/contact-us)
+* [ Meet Our Staff ](https://www.ryanagency.com/meet-our-staff)
+* [ BLOG ](https://www.ryanagency.com/blog)
+* [ Podcast ](https://www.ryanagency.com/blog/how-much-will-i-get-paid-if-my-home-or-property-are-destroyed#Podcast)
+* [ Podcast ](https://www.ryanagency.com/blog/how-much-will-i-get-paid-if-my-home-or-property-are-destroyed#Podcast)
+* [ Podcast ](https://www.ryanagency.com/blog/someone-hit-my-parked-car-and-left-a-note-with-his-name-and-phone-number-what-should-i-do#Podcast)
+* [ Podcast ](https://www.ryanagency.com/blog/do-i-have-coverage-for-a-rental-vehicle-the-new-york-answer#Podcast)
+* [ Podcast ](https://www.ryanagency.com/blog/homeowners-insurance-is-personal-injury-liability-the-same-as-bodily-injury-liability#Podcast)
+* [ Podcast ](https://www.ryanagency.com/blog/homeowners-insurance-is-personal-injury-liability-the-same-as-bodily-injury-liability#Podcast)
+* [ Podcast ](https://www.ryanagency.com/blog/homeowners-insurance-is-personal-injury-liability-the-same-as-bodily-injury-liability#Podcast)
+* [ Podcast ](https://www.ryanagency.com/blog/homeowners-insurance-is-personal-injury-liability-the-same-as-bodily-injury-liability#Podcast)
+* [ Podcast ](https://www.ryanagency.com/blog/what-values-matter-when-it-comes-to-homeowners-insurance#Podcast)
+* [ Podcast ](https://www.ryanagency.com/blog/what-are-the-most-common-mistakes-consumers-make-when-purchasing-homeowners-insurance#Podcast)
+* [ Podcast ](https://www.ryanagency.com/blog/the-e-bike-insurance-dilemma-youve-got-questions-weve-got-answers#Podcast)
+* [ Podcast ](https://www.ryanagency.com/blog/how-is-the-insurance-industry-held-accountable-to-protect-policyholders#Podcast)
+* [ Podcast ](https://www.ryanagency.com/blog/how-long-should-i-keep-all-these-insurance-papers#Podcast)
+* [ Podcast ](https://www.ryanagency.com/blog/understanding-the-distinction-employee-vs-independent-contractor#Podcast)
+* [ Our Mission and Values ](https://www.ryanagency.com/our-mission-and-values)
+### Get in touch
+555-555-5555
+mymail@mailservice.com
+[![](https://lirp.cdn-website.com/112cf2b8/dms3rep/multi/opt/RA+Logo-1920w.png)](https://www.ryanagency.com/)
+[ ](https://www.facebook.com/RyanAgency) [ ](https://twitter.com/RyanAgency) [ ](https://www.linkedin.com/company/ryanagency)
+contact us today
+service@ryanagency.com
+[607-324-7500](tel:607-324-7500)
+[ DEALER ID CARD REQUEST ](https://www.cognitoforms.com/TrustedInsurance1/RADealerIDCardRequestForm)
+[![Ryan Agency Logo](https://lirp.cdn-website.com/112cf2b8/dms3rep/multi/opt/RA+Logo-1920w.png)](https://www.ryanagency.com/)
+* [PERSONAL INSURANCE](https://www.ryanagency.com/personal-insurance)
+Title
+[ AUTO INSURANCE ](https://www.ryanagency.com/auto-insurance) [ HOMEOWNERS INSURANCE ](https://www.ryanagency.com/homeowners-insurance) [ PET INSURANCE ](https://www.ryanagency.com/pet-insurance) [ MOTORCYCLE INSURANCE ](https://www.ryanagency.com/motorcycle-insurance) [ BOAT AND WATERCRAFT INSURANCE ](https://www.ryanagency.com/boat-and-watercraft-insurance) [ ANTIQUE CARS INSURANCE ](https://www.ryanagency.com/antique-cars-insurance)
+Title
+[ IN-HOME BUSINESSES INSURANCE ](https://www.ryanagency.com/in-home-businesses) [ MATURE DRIVERS INSURANCE ](https://www.ryanagency.com/mature-drivers-insurance) [ TEEN DRIVER INSURANCE ](https://www.ryanagency.com/teen-driver-insurance) [ ATV & RECREATIONAL VEHICLES INSURANCE ](https://www.ryanagency.com/atv-and-recreational-vehicle-insurance) [ LANDLORD & RENTAL PROPERTY INSURANCE ](https://www.ryanagency.com/landlord-and-rental-property-insurance)
+Title
+[ WEDDING EVENTS INSURANCE ](https://www.ryanagency.com/wedding-insurance) [ SNOWMOBILE INSURANCE ](https://www.ryanagency.com/snowmobile-insurance) [ RENTERS INSURANCE ](https://www.ryanagency.com/renters-insurance) [ FLOOD INSURANCE ](https://www.ryanagency.com/flood-insurance) [ MOBILE HOMES TRAILERS INSURANCE ](https://www.ryanagency.com/mobile-home-and-trailer-insurance)
+Title
+[ SPECIAL HIGH VALUE INSURANCE ](https://www.ryanagency.com/special-high-value-insurance) [ MOTOR HOME INSURANCE ](https://www.ryanagency.com/motorhome-insurance) [ CATASTROPHIC UMBRELLA INSURANCE ](https://www.ryanagency.com/catastrophic-umbrella-insurance)
+* [COMMERCIAL INSURANCE](https://www.ryanagency.com/commercial-insurance)
+Title
+[ COMMERCIAL PROPERTY INSURANCE ](https://www.ryanagency.com/commercial-property-insurance) [ COMMERCIAL GENERAL LIABILITY INSURANCE ](https://www.ryanagency.com/commercial-general-liability-insurance) [ HVAC CONTRACTORS INSURANCE PACKAGES ](https://www.ryanagency.com/hvac-contractors-insurance-packages) [ ELECTRICIAN AND ELECTRICAL CONTRACTORS INSURANCE PACKAGES ](https://www.ryanagency.com/electrician-and-electrical-contractor)
+Title
+[ TRUCKING COMPANY INSURANCE PACKAGES ](https://www.ryanagency.com/trucking-company-insurance-packages) [ BUILDERS RISK INSURANCE PACKAGES ](https://www.ryanagency.com/builders-risk-insurance-packages) [ PLUMBERS INSURANCE PACKAGES ](https://www.ryanagency.com/plumbers-insurance-packages) [ LANDSCAPERS INSURANCE PACKAGES ](https://www.ryanagency.com/landscapers-insurance-packages) [ COMMERCIAL AUTOS INSURANCE ](https://www.ryanagency.com/commercial-auto-insurance)
+Title
+[ CYBER LIABILITY INSURANCE ](https://www.ryanagency.com/cyber-liability-insurance) [ BUSINESS OWNER POLICY (BOP) INSURANCE ](https://www.ryanagency.com/business-owner-policy-insurance) [ EMPLOYMENT POLICY AND LIABILITY INSURANCE ](https://www.ryanagency.com/employment-policy-liability-insurance) [ FARM INSURANCE ](https://www.ryanagency.com/farm-and-agriculture-insurance-coverage) [ COMMERCIAL UMBRELLA LIABILITY INSURANCE ](https://www.ryanagency.com/commercial-liability-umbrella-insurance)
+Title
+[ WORKERS COMPENSATION INSURANCE ](https://www.ryanagency.com/workers-compensation-insurance) [ NEW YORK STATE DISABILITY INSURANCE ](https://www.ryanagency.com/new-york-state-disability-insurance) [ BONDS AND SURETY ](https://www.ryanagency.com/bonds-and-surety) [ SPECIAL EVENTS LIABILITY INSURANCE ](https://www.ryanagency.com/special-events-liability-insurance) [ MUNICIPAL & FIRE COMPANY INSURANCE ](https://www.ryanagency.com/municipal-fire-department-insurance)
+* [SERVICE CENTER](https://www.ryanagency.com/customer-service)
+Title
+[ PAY YOUR BILL ](https://www.ryanagency.com/pay-your-bill) [ FILE A CLAIM ](https://www.ryanagency.com/file-a-claim) [ NEW YORK STATE DEFENSIVE DRIVING COURSE ](https://www.ryanagency.com/new-york-state-defensive-driving-cour)
+Title
+[ REQUEST A PERSONAL INSURANCE QUOTE ](https://www.cognitoforms.com/TrustedInsurance1/RAAutoAndorHomeInsuranceQuoteForm) [ DEALER AUTO ID CARD REQUEST ](https://www.cognitoforms.com/TrustedInsurance1/RADealerIDCardRequestForm) [ REQUEST A COMMERCIAL INSURANCE QUOTE ](https://www.cognitoforms.com/TrustedInsurance1/RACommercialQuoteForm)
+Title
+* [ABOUT US](https://www.ryanagency.com/about-the-ryan-agency)
+Title
+[ CONTACT US ](https://www.ryanagency.com/contact-us) [ OUR LOCATIONS ](https://www.ryanagency.com/our-locations) [ JOB APPLICATION ](https://www.ryanagency.com/job-opportunity) [ MEET OUR STAFF ](https://www.ryanagency.com/meet-our-staff)
+Title
+[ OUR HISTORY ](https://www.ryanagency.com/our-history) [ OUR MISSION AND VALUES ](https://www.ryanagency.com/our-mission-and-values) [ OUR COMPANIES ](https://www.ryanagency.com/our-companies) [ PODCAST ](https://www.ryanagency.com/podcast) [ CUSTOMER TESTIMONIALS ](https://www.ryanagency.com/customer-testimonials) [ OUR NEWSLETTER ](https://www.ryanagency.com/our-newsletter)
+* [BLOG](https://www.ryanagency.com/blog)
+![](https://www.ryanagency.com/how-is-the-insurance-industry-held-accountable-to-protect-policyholders)Use the up and down arrows to select a result. Press enter to go to the selected search result. Touch device users can use touch and swipe gestures.
+[ REQUEST A QUOTE ](https://www.ryanagency.com/request-a-quote)
+* * *
+###  Frequently Asked Questions About, the insurance industry held accountable to protect policyholders?
+* * *
+####  "How is the insurance industry held accountable to protect policyholders?" Deep Dive Podcast
+* * *
+**About the Author: Jeff Ryan** has been a licensed insurance agent since 1978, later becoming a full-time insurance professional in 1983. Since then, he has been the principal of The Ryan Agencies with offices in Hornell, Jasper, and Wellsville. The agencies serve approximately 15,000 clients in New York and Pennsylvania. Jeff holds numerous credentials including the Chartered Property & Casualty Underwriter (CPCU), Certified Insurance Counselor (CIC), Accredited Advisor in Insurance (AAI), Chartered Life Underwriter (CLU), and Chartered Financial Consultant (ChFC) designations. He holds a Master's Degree from the American College. Jeff enjoys writing about all things insurance and welcomes your questions and feedback.
+[ < Older Post ](https://www.ryanagency.com/how-much-will-i-get-paid-if-my-home-or-property-are-destroyed) [ Newer Post > ](https://www.ryanagency.com/am-i-covered-if-i-drive-someone-elses-car-or-am-i-covered-if-someone-else-drives-mine)
+* * *
+Submit an insurance-related question to “[Ask Jeff](https://www.ryanagency.com/AskJeffRyan)”.
+[ ](https://api.whatsapp.com/send?text=I%20wanted%20to%20share%20this%20great%20website%20with%20you%20https%3A%2F%2Fwww.ryanagency.com%2Fhow-is-the-insurance-industry-held-accountable-to-protect-policyholders)
+[![](https://lirp.cdn-website.com/112cf2b8/dms3rep/multi/opt/Ask+Jeff-Protection+You+Can+Rely+On-Part+4+Custom+Coverage+Real+Protection-1920w.png) ](https://www.ryanagency.com/a-savesmart-guide-to-insurance-value-part-4-coverage-parts-endorsements-custom-coverage-real-protection)
+###  [A SaveSmart Guide to Insurance Value Part 4: Coverage Parts & Endorsements - "Custom Coverage = Real Protection"](https://www.ryanagency.com/a-savesmart-guide-to-insurance-value-part-4-coverage-parts-endorsements-custom-coverage-real-protection)
+By Jeff Ryan - CLU, ChFC, AIA, CIC, CPCU • October 29, 2025
+[![](https://lirp.cdn-website.com/112cf2b8/dms3rep/multi/opt/Ask+Jeff-Protection+You+Can+Rely+On-Part3+The+Ceiling+You+Don-t+Want+to+Collapse-1920w.png) ](https://www.ryanagency.com/a-savesmart-guide-to-insurance-value-part-3-coverage-limits-the-ceiling-you-don-t-want-to-collapse)
+###  [A SaveSmart Guide to Insurance Value Part 3: Coverage Limits - "The Ceiling You Don't Want to Collapse"](https://www.ryanagency.com/a-savesmart-guide-to-insurance-value-part-3-coverage-limits-the-ceiling-you-don-t-want-to-collapse)
+By Jeff Ryan - CLU, ChFC, AIA, CIC, CPCU • October 15, 2025
+[![](https://lirp.cdn-website.com/112cf2b8/dms3rep/multi/opt/2-Risks+of+Chasing+Cheap-1920w.png) ](https://www.ryanagency.com/a-savesmart-guide-to-insurance-value-part-2-the-risks-of-chasing-cheap)
+###  [A SaveSmart Guide to Insurance Value Part 2 – The Risks of Chasing Cheap](https://www.ryanagency.com/a-savesmart-guide-to-insurance-value-part-2-the-risks-of-chasing-cheap)
+By Jeff Ryan - CLU, ChFC, AIA, CIC, CPCU • October 1, 2025
+[![](https://lirp.cdn-website.com/112cf2b8/dms3rep/multi/opt/1-What+are+You+Really+Paying+For-1920w.png) ](https://www.ryanagency.com/savesmart-guide-to-insurance-value-what-are-you-really-paying-for)
+###  [SaveSmart Guide to Insurance Value- What are You Really Paying For?](https://www.ryanagency.com/savesmart-guide-to-insurance-value-what-are-you-really-paying-for)
+By Jeff Ryan - CLU, ChFC, AIA, CIC, CPCU • September 17, 2025
+[![Insurance fraud is a significant problem, exceeding $300 billion annually, with the Property and Cas](https://lirp.cdn-website.com/112cf2b8/dms3rep/multi/opt/insurance-fraud-1920w.jpg) ](https://www.ryanagency.com/insurance-fraud-a-big-problem-that-requires-our-attention)
+###  [Insurance Fraud: A Big Problem That Requires Our Attention](https://www.ryanagency.com/insurance-fraud-a-big-problem-that-requires-our-attention)
+By Jeff Ryan • May 6, 2025
+[![Living in New York, you might have a stack of insurance documents—auto, homeowners, health, or life ](https://lirp.cdn-website.com/112cf2b8/dms3rep/multi/opt/pexels-photo-6963857-1920w.jpeg) ](https://www.ryanagency.com/how-long-should-i-keep-all-these-insurance-papers)
+###  [How Long Should I Keep All These Insurance Papers?](https://www.ryanagency.com/how-long-should-i-keep-all-these-insurance-papers)
+By Jeff Ryan • April 28, 2025
+[![](https://lirp.cdn-website.com/112cf2b8/dms3rep/multi/opt/Screenshot+2025-03-11+192908-1920w.png) ](https://www.ryanagency.com/a-business-a-legacy-a-long-lost-sign)
+###  [A Business, A Legacy, A Long-Lost Sign](https://www.ryanagency.com/a-business-a-legacy-a-long-lost-sign)
+[![“Am I covered if I drive someone else’s car?” Or, “Am I covered if someone else drives mine?”](https://lirp.cdn-website.com/112cf2b8/dms3rep/multi/opt/pexels-photo-787476-1920w.jpeg) ](https://www.ryanagency.com/am-i-covered-if-i-drive-someone-elses-car-or-am-i-covered-if-someone-else-drives-mine)
+###  [“Am I covered if I drive someone else’s car?” Or, “Am I covered if someone else drives mine?”](https://www.ryanagency.com/am-i-covered-if-i-drive-someone-elses-car-or-am-i-covered-if-someone-else-drives-mine)
+By Jeff Ryan • February 3, 2025
+[![Most property insurance companies offer Actual Cash Value or Replacement Cost settlement options. Ty](https://lirp.cdn-website.com/112cf2b8/dms3rep/multi/opt/house-1158139_640-1920w.jpg) ](https://www.ryanagency.com/how-much-will-i-get-paid-if-my-home-or-property-are-destroyed)
+###  [How Much Will I Get Paid If My Home or Property Are Destroyed?](https://www.ryanagency.com/how-much-will-i-get-paid-if-my-home-or-property-are-destroyed)
+By Jeff Ryan • October 30, 2024
+[![Support Local Flood Relief: Enjoy Stearns BBQ and Help the Southern Tier Rebuild!](https://lirp.cdn-website.com/112cf2b8/dms3rep/multi/opt/Ask-Jeff-Blog-Steuben-County-Flood-Relief-Fund-Raiser-Google-Docs+1-1920w.png) ](https://www.ryanagency.com/support-local-flood-relief-enjoy-stearns-bbq-and-help-the-southern-tier-rebuild)
+###  [Support Local Flood Relief: Enjoy Stearns BBQ and Help the Southern Tier Rebuild!](https://www.ryanagency.com/support-local-flood-relief-enjoy-stearns-bbq-and-help-the-southern-tier-rebuild)
+By Jeff Ryan • August 26, 2024
+*   * 1 (current)
+* 2
+* 3
+*...
+* 20
+*
+![Ryan Agency White Logo](https://lirp.cdn-website.com/112cf2b8/dms3rep/multi/opt/RA+logo-white-1920w.png)
+visit our socials
+[ ](https://www.facebook.com/RyanAgency) [ ](https://twitter.com/RyanAgency) [ ](https://www.linkedin.com/company/ryanagency)
+### explore
+[About us](https://www.ryanagency.com/about-the-ryan-agency)
+[Our Team](https://www.ryanagency.com/meet-our-staff)
+[Locations](https://www.ryanagency.com/contact-us-old)
+[News & Blog](https://www.ryanagency.com/blog)
+[Contact Us](https://www.ryanagency.com/meet-our-staff)
+### products
+[Personal Insurance](https://www.ryanagency.com/personal-insurance)
+[Auto Insurance](https://www.ryanagency.com/auto-insurance)
+[Business Insurance](https://www.ryanagency.com/business-owner-policy-insurance)
+### questions
+Service@RyanAgency.com
+Hornell: 607-324-7500
+Jasper: 607-792-3800
+Wellsville: 585-593-4244
+Insurance Protection You Can Count On
+[ Get a Quote ](https://www.ryanagency.com/request-a-quote-old)
+[ Contact us ](https://www.ryanagency.com/meet-our-staff)
+[Third Party Vendor Cyber Security Policy](https://www.ryanagency.com/third-party-cyber-security-policy)
+Photo credit <https://www.motorbiketireshop.com/>
+[Site Accessibility](https://www.ryanagency.com/accessibility)

@@ -1,0 +1,454 @@
+{
+  "domain": "worldpopulationreview.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:22.064228",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 153,
+      "frequency": 153.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 7,
+      "frequency": 7.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 21,
+      "frequency": 21.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "text-sm",
+      "count": 382
+    },
+    {
+      "class": "border-wpr-table_border",
+      "count": 317
+    },
+    {
+      "class": "border-t",
+      "count": 306
+    },
+    {
+      "class": "bg-black",
+      "count": 306
+    },
+    {
+      "class": "py-1.5",
+      "count": 306
+    },
+    {
+      "class": "[&amp;_ul]:m-0",
+      "count": 306
+    },
+    {
+      "class": "align-middle",
+      "count": 306
+    },
+    {
+      "class": "px-1.5",
+      "count": 275
+    },
+    {
+      "class": "md:px-4",
+      "count": 260
+    },
+    {
+      "class": "flex",
+      "count": 142
+    },
+    {
+      "class": "state-path",
+      "count": 102
+    },
+    {
+      "class": "items-center",
+      "count": 81
+    },
+    {
+      "class": "raptive-player-settings-page-item",
+      "count": 77
+    },
+    {
+      "class": "raptive-player-settings-page-item-value",
+      "count": 77
+    },
+    {
+      "class": "font-semibold",
+      "count": 70
+    },
+    {
+      "class": "group-hover:text-wpr-link_hover",
+      "count": 60
+    },
+    {
+      "class": "relative",
+      "count": 59
+    },
+    {
+      "class": "px-2",
+      "count": 58
+    },
+    {
+      "class": "justify-center",
+      "count": 57
+    },
+    {
+      "class": "w-12",
+      "count": 52
+    },
+    {
+      "class": "w-full",
+      "count": 51
+    },
+    {
+      "class": "table-row",
+      "count": 51
+    },
+    {
+      "class": "hover:bg-gray-50",
+      "count": 51
+    },
+    {
+      "class": "min-w-12",
+      "count": 51
+    },
+    {
+      "class": "min-w-7",
+      "count": 51
+    },
+    {
+      "class": "min-h-5",
+      "count": 51
+    },
+    {
+      "class": "w-7",
+      "count": 51
+    },
+    {
+      "class": "h-5",
+      "count": 51
+    },
+    {
+      "class": "rounded-sm",
+      "count": 51
+    },
+    {
+      "class": "hidden",
+      "count": 47
+    },
+    {
+      "class": "border",
+      "count": 47
+    },
+    {
+      "class": "rounded-md",
+      "count": 43
+    },
+    {
+      "class": "leading-none",
+      "count": 43
+    },
+    {
+      "class": "group",
+      "count": 42
+    },
+    {
+      "class": "flex-row",
+      "count": 42
+    },
+    {
+      "class": "py-0.5",
+      "count": 40
+    },
+    {
+      "class": "h-40",
+      "count": 40
+    },
+    {
+      "class": "w-40",
+      "count": 40
+    },
+    {
+      "class": "md:h-50",
+      "count": 40
+    },
+    {
+      "class": "md:w-50",
+      "count": 40
+    },
+    {
+      "class": "aspect-square",
+      "count": 40
+    },
+    {
+      "class": "hover:text-wpr-link_hover",
+      "count": 31
+    },
+    {
+      "class": "p-2",
+      "count": 31
+    },
+    {
+      "class": "m-0",
+      "count": 29
+    },
+    {
+      "class": "leading-snug",
+      "count": 29
+    },
+    {
+      "class": "text-xs",
+      "count": 29
+    },
+    {
+      "class": "text-wpr-tertiary",
+      "count": 28
+    },
+    {
+      "class": "rounded-full",
+      "count": 27
+    },
+    {
+      "class": "text-white",
+      "count": 26
+    },
+    {
+      "class": "absolute",
+      "count": 26
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "searchbox",
+      "count": 2
+    },
+    {
+      "id": "main-nav",
+      "count": 1
+    },
+    {
+      "id": "mmenu-open",
+      "count": 1
+    },
+    {
+      "id": "mmenu-close",
+      "count": 1
+    },
+    {
+      "id": "navbarNav",
+      "count": 1
+    },
+    {
+      "id": "top_ad_container",
+      "count": 1
+    },
+    {
+      "id": "cls-video-container-KCYDoaxw",
+      "count": 1
+    },
+    {
+      "id": "adthrive-auto-injected-container",
+      "count": 1
+    },
+    {
+      "id": "vgkyJlCv",
+      "count": 1
+    },
+    {
+      "id": "adthrive-collapse-close",
+      "count": 1
+    },
+    {
+      "id": "next-stay-container",
+      "count": 1
+    },
+    {
+      "id": "next-video",
+      "count": 1
+    },
+    {
+      "id": "stay-video",
+      "count": 1
+    },
+    {
+      "id": "adthrive-player-icon-play-auto-injected",
+      "count": 1
+    },
+    {
+      "id": "adthrive-player-icon-pause-auto-injected",
+      "count": 1
+    },
+    {
+      "id": "adthrive-auto-injected-volume-control",
+      "count": 1
+    },
+    {
+      "id": "adthrive-auto-injected-ad-container",
+      "count": 1
+    },
+    {
+      "id": "goog_335033238",
+      "count": 1
+    },
+    {
+      "id": "title",
+      "count": 1
+    },
+    {
+      "id": "tooltip",
+      "count": 1
+    },
+    {
+      "id": "tooltip-state",
+      "count": 1
+    },
+    {
+      "id": "tooltip-value",
+      "count": 1
+    },
+    {
+      "id": "state-0",
+      "count": 1
+    },
+    {
+      "id": "state-1",
+      "count": 1
+    },
+    {
+      "id": "state-2",
+      "count": 1
+    },
+    {
+      "id": "state-3",
+      "count": 1
+    },
+    {
+      "id": "state-4",
+      "count": 1
+    },
+    {
+      "id": "state-5",
+      "count": 1
+    },
+    {
+      "id": "state-6",
+      "count": 1
+    },
+    {
+      "id": "state-7",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "footer",
+      "nav"
+    ],
+    "css_selector": null,
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "low"
+  }
+}

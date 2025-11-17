@@ -1,0 +1,455 @@
+{
+  "domain": "sharesmagazine.co.uk",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:26.113326",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 54,
+      "frequency": 54.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 7,
+      "frequency": 7.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "tickLabel",
+      "count": 173
+    },
+    {
+      "class": "txt-right",
+      "count": 41
+    },
+    {
+      "class": "change",
+      "count": 25
+    },
+    {
+      "class": "ui-helper-clearfix",
+      "count": 24
+    },
+    {
+      "class": "change-down",
+      "count": 22
+    },
+    {
+      "class": "mob-hide",
+      "count": 18
+    },
+    {
+      "class": "gutter-under-small",
+      "count": 18
+    },
+    {
+      "class": "be",
+      "count": 18
+    },
+    {
+      "class": "col",
+      "count": 16
+    },
+    {
+      "class": "secondaryNavLink",
+      "count": 16
+    },
+    {
+      "class": "currentTick",
+      "count": 16
+    },
+    {
+      "class": "topTick",
+      "count": 16
+    },
+    {
+      "class": "change-up",
+      "count": 16
+    },
+    {
+      "class": "txt-m",
+      "count": 15
+    },
+    {
+      "class": "lowTick",
+      "count": 15
+    },
+    {
+      "class": "txt-s",
+      "count": 14
+    },
+    {
+      "class": "chart-roll-trigger",
+      "count": 13
+    },
+    {
+      "class": "chart-js",
+      "count": 13
+    },
+    {
+      "class": "base",
+      "count": 13
+    },
+    {
+      "class": "overlay",
+      "count": 13
+    },
+    {
+      "class": "tickLabels",
+      "count": 13
+    },
+    {
+      "class": "xAxis",
+      "count": 13
+    },
+    {
+      "class": "x1Axis",
+      "count": 13
+    },
+    {
+      "class": "yAxis",
+      "count": 13
+    },
+    {
+      "class": "y2Axis",
+      "count": 13
+    },
+    {
+      "class": "has-children",
+      "count": 12
+    },
+    {
+      "class": "bw",
+      "count": 12
+    },
+    {
+      "class": "actionButton",
+      "count": 11
+    },
+    {
+      "class": "nav-tab",
+      "count": 11
+    },
+    {
+      "class": "is-hidden",
+      "count": 11
+    },
+    {
+      "class": "go-back",
+      "count": 11
+    },
+    {
+      "class": "fl-l",
+      "count": 10
+    },
+    {
+      "class": "most-read-article-list-item",
+      "count": 10
+    },
+    {
+      "class": "gutter-top-small",
+      "count": 10
+    },
+    {
+      "class": "span_1_of_4",
+      "count": 9
+    },
+    {
+      "class": "gutter-under",
+      "count": 9
+    },
+    {
+      "class": "bold",
+      "count": 9
+    },
+    {
+      "class": "padd-top",
+      "count": 8
+    },
+    {
+      "class": "closeTick",
+      "count": 8
+    },
+    {
+      "class": "hidden",
+      "count": 7
+    },
+    {
+      "class": "fl-r",
+      "count": 6
+    },
+    {
+      "class": "relative",
+      "count": 6
+    },
+    {
+      "class": "cd-secondary-nav",
+      "count": 6
+    },
+    {
+      "class": "first",
+      "count": 6
+    },
+    {
+      "class": "cd-secondary-nav-content",
+      "count": 6
+    },
+    {
+      "class": "no-click",
+      "count": 6
+    },
+    {
+      "class": "cd-tertiary-nav",
+      "count": 6
+    },
+    {
+      "class": "gutter-under-large",
+      "count": 6
+    },
+    {
+      "class": "ay",
+      "count": 6
+    },
+    {
+      "class": "al",
+      "count": 6
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "risers-fallers-riser",
+      "count": 6
+    },
+    {
+      "id": "risers-fallers-faller",
+      "count": 6
+    },
+    {
+      "id": "market-overview-tab",
+      "count": 3
+    },
+    {
+      "id": "market-overview-tab-content",
+      "count": 3
+    },
+    {
+      "id": "market-overview",
+      "count": 3
+    },
+    {
+      "id": "search-input",
+      "count": 2
+    },
+    {
+      "id": "cd-overlay",
+      "count": 2
+    },
+    {
+      "id": "popup-container",
+      "count": 2
+    },
+    {
+      "id": "popup-window",
+      "count": 2
+    },
+    {
+      "id": "ajax-notify",
+      "count": 2
+    },
+    {
+      "id": "adminBar",
+      "count": 1
+    },
+    {
+      "id": "wrapper",
+      "count": 1
+    },
+    {
+      "id": "navHeader",
+      "count": 1
+    },
+    {
+      "id": "cd-nav-trigger",
+      "count": 1
+    },
+    {
+      "id": "cd-search-trigger",
+      "count": 1
+    },
+    {
+      "id": "cd-search",
+      "count": 1
+    },
+    {
+      "id": "search-wrapper-mob",
+      "count": 1
+    },
+    {
+      "id": "content-wrapper",
+      "count": 1
+    },
+    {
+      "id": "header-wrapper",
+      "count": 1
+    },
+    {
+      "id": "leaderboard-top-wrapper",
+      "count": 1
+    },
+    {
+      "id": "leaderboard-wrapper",
+      "count": 1
+    },
+    {
+      "id": "div-gpt-ad-1534176791714-0",
+      "count": 1
+    },
+    {
+      "id": "CO2c9Mnm4JADFdunywEdyjAHBQ",
+      "count": 1
+    },
+    {
+      "id": "google_ads_iframe_/3532694/SharesMagazine_Global_Billboard_970x250_top_0__container__",
+      "count": 1
+    },
+    {
+      "id": "leaderboardClearfix",
+      "count": 1
+    },
+    {
+      "id": "loginButtons",
+      "count": 1
+    },
+    {
+      "id": "sign-out-button",
+      "count": 1
+    },
+    {
+      "id": "sign-in-button",
+      "count": 1
+    },
+    {
+      "id": "search-wrapper-dt",
+      "count": 1
+    },
+    {
+      "id": "epic-search-loading-indicator",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

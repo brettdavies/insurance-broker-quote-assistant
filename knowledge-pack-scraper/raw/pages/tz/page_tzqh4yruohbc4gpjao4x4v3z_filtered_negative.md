@@ -1,0 +1,1 @@
+[Privacy Policy of Antibot Cloud](https://insuranceinformant.com/antibot/index.php)

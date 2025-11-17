@@ -1,0 +1,1 @@
+Rising false advertising claims reveal major coverage protection gap - New Dawn Risk

@@ -1,0 +1,416 @@
+{
+  "domain": "confused.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:18.435091",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 38,
+      "frequency": 38.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 8,
+      "frequency": 8.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "cnf_nav-product-link",
+      "count": 109
+    },
+    {
+      "class": "cnf_nav-secondary-link",
+      "count": 42
+    },
+    {
+      "class": "cnf_nav-product-links-linkgroup",
+      "count": 27
+    },
+    {
+      "class": "cnf_nav-product-list",
+      "count": 27
+    },
+    {
+      "class": "mod-article-jumplinks__link",
+      "count": 20
+    },
+    {
+      "class": "jumplink-heading",
+      "count": 10
+    },
+    {
+      "class": "cnf_nav-product",
+      "count": 9
+    },
+    {
+      "class": "cnf_nav-product-links",
+      "count": 9
+    },
+    {
+      "class": "cnf_nav-product-links-container",
+      "count": 9
+    },
+    {
+      "class": "cnf_nav-product-links-section",
+      "count": 9
+    },
+    {
+      "class": "cnf_nav-product-close",
+      "count": 9
+    },
+    {
+      "class": "cnf_nav-product-secondary-links-section",
+      "count": 8
+    },
+    {
+      "class": "cnf_nav-product-secondary-links-container",
+      "count": 8
+    },
+    {
+      "class": "cnf_nav-product-secondary-links-section-title",
+      "count": 8
+    },
+    {
+      "class": "cnf_nav-product-secondary-links-list",
+      "count": 8
+    },
+    {
+      "class": "cnf_nav-product-links-linkgroup-title",
+      "count": 8
+    },
+    {
+      "class": "cnf-footer_spacer--s",
+      "count": 8
+    },
+    {
+      "class": "cnf-footer_bold",
+      "count": 7
+    },
+    {
+      "class": "cnf-footer_subheading",
+      "count": 7
+    },
+    {
+      "class": "cnf-footer_flex__cell",
+      "count": 6
+    },
+    {
+      "class": "cnf-footer_flex__cell__inner",
+      "count": 6
+    },
+    {
+      "class": "bg-product--motor",
+      "count": 5
+    },
+    {
+      "class": "cnf-footer_row",
+      "count": 4
+    },
+    {
+      "class": "cnf-footer_row__container",
+      "count": 4
+    },
+    {
+      "class": "cnf-footer_flex",
+      "count": 4
+    },
+    {
+      "class": "cnf-footer_flex__cell--td-half",
+      "count": 4
+    },
+    {
+      "class": "cnf-footer_spacer--m",
+      "count": 4
+    },
+    {
+      "class": "cnf-footer_group-sites__logo",
+      "count": 4
+    },
+    {
+      "class": "cnf-footer_group-sites__image-container",
+      "count": 4
+    },
+    {
+      "class": "cls-1",
+      "count": 3
+    },
+    {
+      "class": "cnf_mobile-menu-icon-span",
+      "count": 3
+    },
+    {
+      "class": "bg-product--motor-secondary",
+      "count": 3
+    },
+    {
+      "class": "cnf_nav-quick-links--btn",
+      "count": 3
+    },
+    {
+      "class": "mod-flex__cell",
+      "count": 3
+    },
+    {
+      "class": "cnf-footer_row--gutters-s",
+      "count": 3
+    },
+    {
+      "class": "cnf-footer_list-inline",
+      "count": 3
+    },
+    {
+      "class": "cnf-footer_spacer--sm",
+      "count": 3
+    },
+    {
+      "class": "cnf_header_flex__cell",
+      "count": 2
+    },
+    {
+      "class": "cnf_header_flex__cell-inner",
+      "count": 2
+    },
+    {
+      "class": "cnf_header--ai",
+      "count": 2
+    },
+    {
+      "class": "bg-product--home",
+      "count": 2
+    },
+    {
+      "class": "bg-product--travel",
+      "count": 2
+    },
+    {
+      "class": "cnf_nav-additional-links-list-item",
+      "count": 2
+    },
+    {
+      "class": "cnf_nav-additional-link",
+      "count": 2
+    },
+    {
+      "class": "row",
+      "count": 2
+    },
+    {
+      "class": "row__container",
+      "count": 2
+    },
+    {
+      "class": "mod-flex__cell--td-two-thirds",
+      "count": 2
+    },
+    {
+      "class": "cnf-footer_row__container--bordered",
+      "count": 2
+    },
+    {
+      "class": "cnf-footer_flex__cell--full",
+      "count": 2
+    },
+    {
+      "class": "cnf-footer_arrow-link",
+      "count": 2
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "guides-&amp;-calculators-guides-heading",
+      "count": 8
+    },
+    {
+      "id": "html",
+      "count": 1
+    },
+    {
+      "id": "head",
+      "count": 1
+    },
+    {
+      "id": "Layer_2",
+      "count": 1
+    },
+    {
+      "id": "Logo",
+      "count": 1
+    },
+    {
+      "id": "Logo-2",
+      "count": 1
+    },
+    {
+      "id": "Dot_Com",
+      "count": 1
+    },
+    {
+      "id": "Com_Bubble",
+      "count": 1
+    },
+    {
+      "id": "Dot",
+      "count": 1
+    },
+    {
+      "id": "Confused",
+      "count": 1
+    },
+    {
+      "id": "skip-nav-link",
+      "count": 1
+    },
+    {
+      "id": "cnfNavMenu",
+      "count": 1
+    },
+    {
+      "id": "quick-links-heading",
+      "count": 1
+    },
+    {
+      "id": "main",
+      "count": 1
+    },
+    {
+      "id": "a",
+      "count": 1
+    },
+    {
+      "id": "b",
+      "count": 1
+    },
+    {
+      "id": "c",
+      "count": 1
+    },
+    {
+      "id": "d",
+      "count": 1
+    },
+    {
+      "id": "button-save-all",
+      "count": 1
+    },
+    {
+      "id": "button-essential-only",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

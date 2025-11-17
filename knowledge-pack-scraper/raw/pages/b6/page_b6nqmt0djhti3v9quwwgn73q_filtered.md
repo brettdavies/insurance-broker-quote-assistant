@@ -1,0 +1,189 @@
+NAIC 2025 Market Share | Top 25 Private Passenger Auto Insurers | Agency Checklists
+
+* [Skip to main content](#genesis-content)
+* [Skip to footer](#genesis-footer-widgets)
+
+Menu
+
+You are here: [Home](https://agencychecklists.com/) / [Latest News](https://agencychecklists.com/category/latest-news/) / NAIC 2025 Market Share | Top 25 Private Passenger Auto Insurers
+
+![Agency Checklists, Massachusetts insurance news, New England Insurance News, Massachusetts auto insurance news, massauto news](https://i0.wp.com/agencychecklists.com/wp-content/uploads/2010/06/1139893006-1141072.jpg?resize=640%2C480&ssl=1 "Mass. Auto Insurance News | Agency Checklists")
+
+---
+
+## MAPFRE and The Hanover Do Not Make an Appearance on This Year’s List
+
+The [National Association of Insurance Commissioners](https://content.naic.org/) has issued its annual Market Share Data Reports for both the Property & Casualty Insurance Marketplace, as well as for the Life & Fraternal Insurance Marketplace. As in past iterations, the data offered here reflects a compiled list of market share data based upon filings of countrywide premium submitted to the NAIC from Property & Casualty insurers as reported on the State Page of the NAIC’s annual statement for insurers.
+
+Once collected, the data is compiled into a report listing the cumulative market share data for the seven major lines of insurance in the United States: All lines; Private Passenger Personal Auto; Commercial Auto; Workers’ Compensation; Medical Professional Liability; Homeowners’ Multi-Peril; and Other Liability (excluding auto liability).
+
+With approximately 97.92% of P&C insurers reporting, the industry recorded approximately $1.06 trillion in Direct Premiums Written in 2024. The top 10 P&C insurers account for 51.40% of the total market share, reflecting a continued concentration of market share among the largest carriers.
+
+Private passenger auto insurance remains the dominant line of business, with $344.11 billion in direct premiums written, representing approximately 35% of all reported P&C premiums.
+
+### Key Facts from This Year’s Private Passenger Market Share Ranking
+
+The 2024 rankings show increased market concentration among the top insurers, with Progressive and USAA gaining ground. Meanwhile, Hanover and MAPFRE’s disappearance from the top 25 signals a shifting landscape, possibly reflecting strategic exits from unprofitable segments or increased pressure from competitors. Liberty Mutual remains a major player, though its national ranking has slipped slightly.
+
+The following are five takeaways from a comparison between the 2024 and 2023 Market Share Reports courtesy of Chat GPT.
+
+#### 1. Significant Growth in Direct Premiums Written Across Top Insurers
+
+* The total direct premiums written for the industry increased from $316.66 billion in 2023 to $358.97 billion in 2024, an increase of 13.3%.
+* The top five insurers, State Farm, Progressive, Berkshire Hathaway, Allstate, and USAA, all experienced significant premium growth. Notably, Progressive saw a 24.5% increase in direct premiums written, climbing from $48.26 billion to $60.05 billion.
+
+#### 2. Market Concentration Continues Among the Top Insurers
+
+* The top five insurers held a 62.49% cumulative market share in 2023, which increased to 63.59% in 2024.
+* The continued dominance of State Farm, Progressive, and Berkshire Hathaway suggests that smaller insurers may face growing challenges in maintaining their market share.
+
+#### 3. Disappearance of MAPFRE and The Hanover from the Top 25
+
+* The Hanover Insurance Group (ranked 20th in 2023) with $1.44 billion in direct premiums written and MAPFRE Insurance Group (ranked 21st in 2023) with $1.40 billion in direct premiums written no longer appear in the 2024 ranking.
+* This suggests a decline in their competitive position at the national level, possibly due to a strategic shift away from certain markets, lower growth rates compared to competitors, or increased competition in their core regions.
+
+#### 4. New Entrants and Rising Insurers
+
+* Markel Group, Shelter Insurance Group, and New Jersey Manufacturers Group entered the 2024 rankings, replacing Hanover and MAPFRE.
+* Auto Club Enterprises Insurance Group moved up from 11th in 2023 to 9th in 2024, showing strong premium growth from $4.83 billion to $6.47 billion.
+
+#### 5. Boston-Based Liberty Mutual’s Position Remains Strong, But Not in the Top Five
+
+* Liberty Mutual retained a place in the top 10 but saw only a change in premiums from $13.31 billion in 2023 to $11.74 billion in 2024, dropping from 6th place in 2023 to 7th place in 2024.
+* This suggests Liberty Mutual may be losing some ground in direct premiums written relative to faster-growing competitors such as Progressive and USAA.
+
+---
+
+### The Top 25 P&C Insurers by Countrywide Premium – Private Passenger Auto
+
+|  | RANK | GROUP/COMPANY NAME | DIRECT PREMIUMS WRITTEN | DIRECT PREMIUMS EARNED | DIRECT LOSS TO EP RATIO¹ | MARKET SHARE % | CUMULATIVE MARKET SHARE %³ |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+|  | 1 | STATE FARM GRP | 67,754,117,585 | 65,850,852,141 | 73.91 | 18.87 | 18.87 |
+|  | 2 | PROGRESSIVE GRP | 60,053,469,078 | 56,789,379,487 | 60.54 | 16.73 | 35.60 |
+| Top Insurer in the US, Insurance News Massachusetts and US Market Share | 3 | BERKSHIRE HATHAWAY GRP | 41,764,021,113 | 41,327,519,797 | 65.72 | 11.63 | 47.24 |
+|  | 4 | ALLSTATE INS GRP | 36,581,811,847 | 35,617,593,273 | 65.85 | 10.19 | 57.43 |
+| Top P&C Insurers US | 5 | UNITED SERV AUTOMOBILE ASSN GRP | 22,135,830,430 | 21,763,069,325 | 64.61 | 6.17 | 63.59 |
+| Insurance News Massachusetts and US Market Share | 6 | FARMERS INS GRP | 13,492,655,158 | 13,661,692,619 | 58.30 | 3.76 | 67.35 |
+| Top Insurer in the US, Insurance News Massachusetts and US Market Share | 7 | LIBERTY MUT GRP | 11,741,470,804 | 12,656,807,288 | 57.42 | 3.27 | 70.62 |
+| Insurance News Massachusetts and US Market Share | 8 | TRAVELERS GRP | 7,184,379,064 | 7,003,218,963 | 61.03 | 2.00 | 72.63 |
+| Auto Club Group of MI Top 25 Private Passenger Auto Insurers in US 2020 | 9 | AUTO CLUB ENTERPRISES INS GRP | 6,465,136,944 | 6,081,770,841 | 74.33 | 1.80 | 74.43 |
+| Insurance News Massachusetts and US Market Share | 10 | AMERICAN FAMILY INS GRP | 6,174,180,283 | 6,128,786,653 | 64.76 | 1.72 | 76.15 |
+|  | 11 | AUTO OWNERS GRP | 5,179,378,655 | 4,800,504,716 | 64.89 | 1.44 | 77.59 |
+| Insurance News Massachusetts and US Market Share | 12 | ERIE INS GRP | 5,007,234,077 | 4,652,937,712 | 82.06 | 1.39 | 78.98 |
+|  | 13 | NATIONWIDE CORP GRP | 4,800,874,679 | 5,055,280,241 | 60.92 | 1.34 | 80.32 |
+| Insurance News Massachusetts and US Market Share | 14 | CSAA INS GRP | 4,759,666,515 | 4,341,074,138 | 70.22 | 1.33 | 81.65 |
+|  | 15 | MERCURY GEN GRP | 3,371,806,198 | 3,259,393,260 | 61.97 | 0.94 | 82.59 |
+| Top Insurers in the United States | 16 | SENTRY INS GRP | 3,104,477,047 | 2,981,093,131 | 56.62 | 0.86 | 83.45 |
+|  | 17 | KEMPER CORP GRP | 2,961,550,274 | 2,991,412,709 | 57.80 | 0.83 | 84.28 |
+| Insurance News Massachusetts and US Market Share | 18 | AUTOMOBILE CLUB MI GRP | 2,623,117,386 | 2,564,473,132 | 79.92 | 0.73 | 85.01 |
+|  | 19 | HARTFORD FIRE & CAS GRP | 2,335,109,999 | 2,285,904,339 | 67.70 | 0.65 | 85.66 |
+|  | 20 | MARKEL GRP | 1,614,950,698 | 1,558,279,070 | 70.92 | 0.45 | 86.11 |
+|  | 21 | AMICA MUT GRP | 1,592,129,823 | 1,547,462,151 | 63.33 | 0.44 | 86.55 |
+|  | 22 | COUNTRY INS & FIN SERV GRP | 1,591,701,868 | 1,541,498,604 | 61.24 | 0.44 | 86.99 |
+|  | 23 | SHELTER INS GRP | 1,576,042,350 | 1,523,082,969 | 67.88 | 0.44 | 87.43 |
+|  | 24 | SOUTHERN FARM BUREAU CAS GRP | 1,574,385,950 | 1,544,549,872 | 62.87 | 0.44 | 87.87 |
+| Top Insurer in the US, Insurance News Massachusetts and US Market Share | 25 | NEW JERSEY MANUFACTURERS GRP | 1,526,135,174 | 1,416,842,684 | 85.51 | 0.43 | 88.30 |
+|  |  | **INDUSTRY TOTAL** | 358,974,353,327 | 349,836,284,024 | 66.05 | 100.00 | 100.00 |
+
+---
+
+### Past NAIC Market Share Reports
+
+For those interested in revisiting or comparing this year’s data with the NAIC Market Share Reports from past years, links to each of those reports are below:
+
+#### Links to our 2025 NAIC Market Share Reports
+
+* [NAIC 2025 Market Share Report | Top 25 P&C Insurers](https://agencychecklists.com/2025/03/17/naic-2025-market-share-report-top-25-pc-insurers-74868/ "NAIC 2025 Market Share Report | Top 25 P&C Insurers")
+* [NAIC 2025 Market Share Report | Top 25 Homeowners’ Insurers](https://agencychecklists.com/2025/03/17/naic-2025-market-share-report-top-25-homeowners-insurers-74909/ "NAIC 2025 Market Share Report | Top 25 Homeowners’ Insurers")
+
+#### Links to our 2024 NAIC Market Share Reports
+
+* [NAIC 2024 Market Share Report | Top 25 U.S. P&C Insurers](https://agencychecklists.com/2024/03/04/top-25-u-s-pc-insurers-naic-2024-market-share-report-70053/ "NAIC 2024 Market Share Report | Top 25 U.S. P&C Insurers")
+* [NAIC 2024 Market Share Report | Top 25 Private Passenger Auto Insurers](https://agencychecklists.com/2024/04/02/naic-2024-market-share-report-top-25-private-passenger-auto-insurers-70505/ "NAIC 2024 Market Share Report | Top 25 Private Passenger Auto Insurers")
+* [NAIC 2024 Market Share Report | Top 25 Commercial Auto Insurers](https://agencychecklists.com/2024/04/08/naic-2024-market-share-report-top-25-commercial-auto-insurers-70601/ "NAIC 2024 Market Share Report | Top 25 Commercial Auto Insurers")
+* [NAIC 2024 Market Share Report | Top 25 Homeowners Multiple Peril Insurers](https://agencychecklists.com/2024/03/11/naic-2024-market-share-report-top-25-homeowners-multiple-peril-insurers-70210/)
+* [NAIC Market Share Report 2024 | Top 25 Workers’ Compensation Insurers](https://agencychecklists.com/2024/03/18/naic-market-share-report-2024-top-25-workers-compensation-insurers-70307/)
+* [NAIC 2024 Market Share Report | Top 25 Other Liability Insurers](https://agencychecklists.com/2024/03/26/naic-2024-market-share-report-top-25-other-liability-insurers-70438/)
+* [The Top 25 Life Insurance Companies in the U.S.](https://agencychecklists.com/2024/09/30/the-top-25-life-insurance-companies-in-the-u-s-72564/)
+
+#### Links to our 2023 NAIC Market Share Reports
+
+* [NAIC 2023 Market Share Report](https://agencychecklists.com/2023/03/20/top-25-u-s-commercial-auto-insurers-naic-2023-market-share-report-64987/) | [Top 25 U.S. Commercial Auto Insurers](https://agencychecklists.com/2023/03/20/top-25-u-s-commercial-auto-insurers-naic-2023-market-share-report-64987/)
+* [NAIC 2023 Market Share Report](https://agencychecklists.com/2023/03/20/top-25-u-s-private-passenger-auto-insurers-naic-2022-market-share-report-64969/) [|](https://agencychecklists.com/2023/03/20/top-25-u-s-private-passenger-auto-insurers-naic-2022-market-share-report-64969/) [Top 25 U.S. Auto Insurers](https://agencychecklists.com/2023/03/20/top-25-u-s-private-passenger-auto-insurers-naic-2022-market-share-report-64969/)
+* [NAIC 2023 Market Share Report](https://agencychecklists.com/2023/03/27/top-25-u-s-homeowners-multiple-peril-insurers-2023-naic-market-share-report-65188/)[| Top 25 U.S. Homeowners Multiple Peril Insurers](https://agencychecklists.com/2023/03/27/top-25-u-s-homeowners-multiple-peril-insurers-2023-naic-market-share-report-65188/)
+* [NAIC 2023 Market Share Report | Top 25 U.S. Medical Professional Liability Insurers](https://agencychecklists.com/2023/03/20/top-25-u-s-medical-professional-liability-insurers-naic-2023-market-share-report-65026/)
+* [NAIC 2023 Market Share Report | Top 25 U.S. Other Liability Insurers](https://agencychecklists.com/2023/03/27/top-25-u-s-other-liability-insurers-naic-2023-market-share-report-65161/)
+* [NAIC 2023 Market Share Report | Top 25 U.S. Workers’ Compensation Insurers](https://agencychecklists.com/2023/03/27/top-25-u-s-workers-compensation-insurers-naic-2023-market-share-report-65220/)
+
+## Footer
+
+![Agency Checklists](https://i0.wp.com/agencychecklists.com/wp-content/uploads/2019/09/Agency-Checklists-Logo-2014-e1569361954896.jpg?fit=200%2C31&ssl=1 "Agency Checklists Logo 2014 | Agency Checklists")
+
+[Contact us](https://agencychecklists.com/contact/)
+
+We offer a variety of ways to get help promote your company or product.
+
+Announcements  
+Email Sponsorships  
+Partnerships  
+Custom Collaborations
+
+\*Affiliate Disclosure
+
+Please note that any of Agency Checklists’ articles might contain one or more affiliate links. This means that any subsequent purchase resulting from these links may result in a commission for us, but at no additional cost to you. For example, as an Amazon Associate, Agency Checklists earns a commission from all qualifying purchases. By working with affiliates we can continue to keep Agency Checklists subscription free. Thank you for your support.
+
+### Explore Our Archives
+
+Explore Our Archives
+Select Category
+Agency Mergers & Acquisitions
+Agent News
+Auto Insurance News
+CAR Market Share Reports
+COVID 19 | Massachusetts
+DOI Insurance Licensing Cases
+DOI News
+History of Insurance
+In Memoriam | Massachusetts
+Insurance Coverage Law
+Insurance Fraud News
+Insurance Interviews
+Insurance Legal News & Analysis
+Insurance Professionals: Acknowledgments, Achievements, & Awards
+Insurers | News
+InsurOp-Eds
+Insurtech & Insurance Innovation
+Insurtech Profiles
+Latest News
+Legislative & Economic News
+Life & Annuity Insurance
+MA Market Share Reports
+Market Share Reports & Industry Trends
+Massachusetts Insurance News
+NAIC Market Share Reports
+New England Insurance Newswire
+News | Miscellaneous
+Ratings & Quarterly Results
+Regulation & Compliance
+RMV News
+Sponsored News
+unpublished
+WCRIBMA News
+
+##
+
+##
+
+Loading Comments...
+
+Write a Comment...
+
+Email
+
+Name
+
+Website
+
+###
+
+![](https://pixel.wp.com/g.gif?v=ext&blog=8981247&post=74894&tz=-5&srv=agencychecklists.com&j=1%3A15.2&host=agencychecklists.com&ref=&fcp=692&rand=0.8493571563909194)

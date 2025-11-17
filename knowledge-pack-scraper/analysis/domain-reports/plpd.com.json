@@ -1,0 +1,370 @@
+{
+  "domain": "plpd.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:20.846100",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 61,
+      "frequency": 61.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "BCX8",
+      "count": 3118
+    },
+    {
+      "class": "SCXW85091519",
+      "count": 1348
+    },
+    {
+      "class": "SCXW114613449",
+      "count": 1152
+    },
+    {
+      "class": "NormalTextRun",
+      "count": 531
+    },
+    {
+      "class": "Ltr",
+      "count": 496
+    },
+    {
+      "class": "Paragraph",
+      "count": 490
+    },
+    {
+      "class": "OutlineElement",
+      "count": 486
+    },
+    {
+      "class": "EOP",
+      "count": 484
+    },
+    {
+      "class": "TableCellContent",
+      "count": 478
+    },
+    {
+      "class": "SCXW241572120",
+      "count": 218
+    },
+    {
+      "class": "SCXW84441510",
+      "count": 201
+    },
+    {
+      "class": "TableRow",
+      "count": 137
+    },
+    {
+      "class": "FirstCol",
+      "count": 137
+    },
+    {
+      "class": "LastCol",
+      "count": 137
+    },
+    {
+      "class": "SCXW1040076",
+      "count": 132
+    },
+    {
+      "class": "flex",
+      "count": 114
+    },
+    {
+      "class": "relative",
+      "count": 72
+    },
+    {
+      "class": "justify-start",
+      "count": 71
+    },
+    {
+      "class": "items-start",
+      "count": 68
+    },
+    {
+      "class": "SCXW238710362",
+      "count": 67
+    },
+    {
+      "class": "flex-row",
+      "count": 54
+    },
+    {
+      "class": "max-w-full",
+      "count": 50
+    },
+    {
+      "class": "leading-[150%]",
+      "count": 49
+    },
+    {
+      "class": "items-center",
+      "count": 45
+    },
+    {
+      "class": "self-stretch",
+      "count": 44
+    },
+    {
+      "class": "flex-col",
+      "count": 40
+    },
+    {
+      "class": "no-underline",
+      "count": 36
+    },
+    {
+      "class": "font-medium",
+      "count": 31
+    },
+    {
+      "class": "w-full",
+      "count": 28
+    },
+    {
+      "class": "box-border",
+      "count": 26
+    },
+    {
+      "class": "overflow-hidden",
+      "count": 24
+    },
+    {
+      "class": "text-left",
+      "count": 23
+    },
+    {
+      "class": "font-text-base-font-medium",
+      "count": 22
+    },
+    {
+      "class": "shrink-0",
+      "count": 22
+    },
+    {
+      "class": "cursor-pointer",
+      "count": 21
+    },
+    {
+      "class": "text-base",
+      "count": 21
+    },
+    {
+      "class": "text-black",
+      "count": 20
+    },
+    {
+      "class": "FirstRow",
+      "count": 19
+    },
+    {
+      "class": "LastRow",
+      "count": 19
+    },
+    {
+      "class": "h-6",
+      "count": 18
+    },
+    {
+      "class": "hover:text-primary-700",
+      "count": 16
+    },
+    {
+      "class": "inline-block",
+      "count": 16
+    },
+    {
+      "class": "mq700:text-[14px]",
+      "count": 16
+    },
+    {
+      "class": "TextRun",
+      "count": 15
+    },
+    {
+      "class": "mq700:text-base",
+      "count": 15
+    },
+    {
+      "class": "flex-1",
+      "count": 14
+    },
+    {
+      "class": "px-6",
+      "count": 14
+    },
+    {
+      "class": "gap-[8px]",
+      "count": 14
+    },
+    {
+      "class": "justify-center",
+      "count": 13
+    },
+    {
+      "class": "text-gray-900",
+      "count": 13
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "neutrixContactForm",
+      "count": 2
+    },
+    {
+      "id": "type",
+      "count": 2
+    },
+    {
+      "id": "name",
+      "count": 2
+    },
+    {
+      "id": "email",
+      "count": 2
+    },
+    {
+      "id": "{e76105b3-1c0a-4ccd-8dc6-ec30bc81cbb6}{228}",
+      "count": 1
+    },
+    {
+      "id": "{e76105b3-1c0a-4ccd-8dc6-ec30bc81cbb6}{229}",
+      "count": 1
+    },
+    {
+      "id": "true",
+      "count": 1
+    },
+    {
+      "id": "general",
+      "count": 1
+    },
+    {
+      "id": "gtm-script",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

@@ -1,0 +1,338 @@
+[Skip to content](https://www.investopedia.com/mortgage/insurance/qualified-insurance-premium/#main)
+[ Investopedia ](https://www.investopedia.com/)
+[Live](https://www.investopedia.com/dow-jones-today-11072025-11845583)
+  * Search
+Please fill out this field. 
+  * [Newsletters](https://www.investopedia.com/mortgage/insurance/qualified-insurance-premium/)
+
+
+Search
+Please fill out this field. 
+  * [ News ](https://www.investopedia.com/news-4427706)
+News
+    * [ Markets ](https://www.investopedia.com/markets-news-4427704)
+    * [ Companies ](https://www.investopedia.com/company-news-4427705)
+    * [ Earnings ](https://www.investopedia.com/earnings-reports-5218419)
+    * [ CD Rates ](https://www.investopedia.com/certificates-deposit-news-7111770)
+    * [ Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5184598)
+    * [ Economy ](https://www.investopedia.com/economic-news-5218422)
+    * [ Government ](https://www.investopedia.com/political-news-4689737)
+    * [ Crypto ](https://www.investopedia.com/cryptocurrency-news-5114163)
+    * [ Live Markets News ](https://www.investopedia.com/live-markets-news-11713202)
+    * [ Personal Finance ](https://www.investopedia.com/personal-finance-news-5114159)
+    * [ View All ](https://www.investopedia.com/news-4427706)
+  * [ Investing ](https://www.investopedia.com/investing-4427685)
+Investing
+    * [ Stocks ](https://www.investopedia.com/stocks-4427785)
+    * [ Cryptocurrency ](https://www.investopedia.com/cryptocurrency-4427699)
+    * [ Bonds ](https://www.investopedia.com/bonds-4689778)
+    * [ ETFs ](https://www.investopedia.com/etfs-4427784)
+    * [ Options and Derivatives ](https://www.investopedia.com/options-and-derivatives-trading-4689663)
+    * [ Commodities ](https://www.investopedia.com/commodities-4427780)
+    * [ Trading ](https://www.investopedia.com/trading-4427765)
+    * [ Automated Investing ](https://www.investopedia.com/financial-technology-and-automated-investing-4689759)
+    * [ Brokers ](https://www.investopedia.com/brokers-4689772)
+    * [ Fundamental Analysis ](https://www.investopedia.com/fundamental-analysis-4689757)
+    * [ View All ](https://www.investopedia.com/investing-4427685)
+  * [ Simulator ](https://www.investopedia.com/simulator/?inv_to_sim=global_nav)
+Simulator
+    * [ Login / Portfolio ](https://www.investopedia.com/simulator/portfolio)
+    * [ Trade ](https://www.investopedia.com/simulator/trade/stocks)
+    * [ Research ](https://www.investopedia.com/simulator/research)
+    * [ My Games ](https://www.investopedia.com/simulator/games/my-games)
+    * [ Leaderboard ](https://www.investopedia.com/simulator/games)
+  * [ Banking ](https://www.investopedia.com/banking-4427754)
+Banking
+    * [ Savings Accounts ](https://www.investopedia.com/savings-accounts-4689728)
+    * [ Certificates of Deposit (CDs) ](https://www.investopedia.com/certificate-of-deposits-4689733)
+    * [ Money Market Accounts ](https://www.investopedia.com/money-market-account-4689730)
+    * [ Checking Accounts ](https://www.investopedia.com/checking-accounts-4689732)
+    * [ View All ](https://www.investopedia.com/banking-4427754)
+  * [ Personal Finance ](https://www.investopedia.com/personal-finance-4427760)
+Personal Finance
+    * [ Budgeting and Saving ](https://www.investopedia.com/budgeting-and-savings-4427755)
+    * [ Personal Loans ](https://www.investopedia.com/personal-loans-4689729)
+    * [ Insurance ](https://www.investopedia.com/insurance-4427716)
+    * [ Mortgages ](https://www.investopedia.com/mortgage-4689703)
+    * [ Credit and Debt ](https://www.investopedia.com/credit-and-debt-4689724)
+    * [ Student Loans ](https://www.investopedia.com/student-loans-4689727)
+    * [ Taxes ](https://www.investopedia.com/taxes-4427724)
+    * [ Credit Cards ](https://www.investopedia.com/credit-card-4689721)
+    * [ Financial Literacy ](https://www.investopedia.com/financial-literacy-resource-center-7151950)
+    * [ Retirement ](https://www.investopedia.com/retirement-planning-4689695)
+    * [ View All ](https://www.investopedia.com/personal-finance-4427760)
+  * [ Economy ](https://www.investopedia.com/economy-4689801)
+Economy
+    * [ Government and Policy ](https://www.investopedia.com/government-and-policy-4689793)
+    * [ Monetary Policy ](https://www.investopedia.com/monetary-policy-4689792)
+    * [ Fiscal Policy ](https://www.investopedia.com/fiscal-policy-4689796)
+    * [ Economics ](https://www.investopedia.com/economics-4689800)
+    * [ View All ](https://www.investopedia.com/economy-4689801)
+  * [ Reviews ](https://www.investopedia.com/financial-product-reviews-7110783)
+Reviews
+    * [ Best Online Brokers ](https://www.investopedia.com/best-online-brokers-4587872)
+    * [ Best Crypto Exchanges ](https://www.investopedia.com/best-crypto-exchanges-5071855)
+    * [ Best Savings Rates ](https://www.investopedia.com/high-yield-savings-accounts-4770633)
+    * [ Best CD Rates ](https://www.investopedia.com/best-cd-rates-4770214)
+    * [ Best Life Insurance ](https://www.investopedia.com/the-best-life-insurance-companies-8763666)
+    * [ Best Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5094943)
+    * [ Best Robo-Advisors ](https://www.investopedia.com/the-best-robo-advisors-8764849)
+    * [ Best Personal Loans ](https://www.investopedia.com/the-best-personal-loans-8761582)
+    * [ Best Debt Relief Companies ](https://www.investopedia.com/the-best-debt-relief-companies-8763179)
+    * [ View All ](https://www.investopedia.com/financial-product-reviews-7110783)
+
+
+  * [Newsletters](https://www.investopedia.com/mortgage/insurance/qualified-insurance-premium/)
+
+
+Follow Us
+  * [ ](https://www.facebook.com/Investopedia/)
+  * [ ](https://www.instagram.com/investopedia/?hl=en)
+  * [ ](https://www.youtube.com/c/investopedia)
+  * [ ](https://www.tiktok.com/@investopedia)
+  * [ ](https://www.linkedin.com/company/investopedia-ulc)
+
+
+  * [ News ](https://www.investopedia.com/news-4427706)
+    * [ Markets ](https://www.investopedia.com/markets-news-4427704)
+    * [ Companies ](https://www.investopedia.com/company-news-4427705)
+    * [ Earnings ](https://www.investopedia.com/earnings-reports-5218419)
+    * [ CD Rates ](https://www.investopedia.com/certificates-deposit-news-7111770)
+    * [ Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5184598)
+    * [ Economy ](https://www.investopedia.com/economic-news-5218422)
+    * [ Government ](https://www.investopedia.com/political-news-4689737)
+    * [ Crypto ](https://www.investopedia.com/cryptocurrency-news-5114163)
+    * [ Live Markets News ](https://www.investopedia.com/live-markets-news-11713202)
+    * [ Personal Finance ](https://www.investopedia.com/personal-finance-news-5114159)
+    * [ View All ](https://www.investopedia.com/news-4427706)
+  * [ Investing ](https://www.investopedia.com/investing-4427685)
+    * [ Stocks ](https://www.investopedia.com/stocks-4427785)
+    * [ Cryptocurrency ](https://www.investopedia.com/cryptocurrency-4427699)
+    * [ Bonds ](https://www.investopedia.com/bonds-4689778)
+    * [ ETFs ](https://www.investopedia.com/etfs-4427784)
+    * [ Options and Derivatives ](https://www.investopedia.com/options-and-derivatives-trading-4689663)
+    * [ Commodities ](https://www.investopedia.com/commodities-4427780)
+    * [ Trading ](https://www.investopedia.com/trading-4427765)
+    * [ Automated Investing ](https://www.investopedia.com/financial-technology-and-automated-investing-4689759)
+    * [ Brokers ](https://www.investopedia.com/brokers-4689772)
+    * [ Fundamental Analysis ](https://www.investopedia.com/fundamental-analysis-4689757)
+    * [ View All ](https://www.investopedia.com/investing-4427685)
+  * [ Simulator ](https://www.investopedia.com/simulator/?inv_to_sim=global_nav)
+    * [ Login / Portfolio ](https://www.investopedia.com/simulator/portfolio)
+    * [ Trade ](https://www.investopedia.com/simulator/trade/stocks)
+    * [ Research ](https://www.investopedia.com/simulator/research)
+    * [ My Games ](https://www.investopedia.com/simulator/games/my-games)
+    * [ Leaderboard ](https://www.investopedia.com/simulator/games)
+  * [ Banking ](https://www.investopedia.com/banking-4427754)
+    * [ Savings Accounts ](https://www.investopedia.com/savings-accounts-4689728)
+    * [ Certificates of Deposit (CDs) ](https://www.investopedia.com/certificate-of-deposits-4689733)
+    * [ Money Market Accounts ](https://www.investopedia.com/money-market-account-4689730)
+    * [ Checking Accounts ](https://www.investopedia.com/checking-accounts-4689732)
+    * [ View All ](https://www.investopedia.com/banking-4427754)
+  * [ Personal Finance ](https://www.investopedia.com/personal-finance-4427760)
+    * [ Budgeting and Saving ](https://www.investopedia.com/budgeting-and-savings-4427755)
+    * [ Personal Loans ](https://www.investopedia.com/personal-loans-4689729)
+    * [ Insurance ](https://www.investopedia.com/insurance-4427716)
+    * [ Mortgages ](https://www.investopedia.com/mortgage-4689703)
+    * [ Credit and Debt ](https://www.investopedia.com/credit-and-debt-4689724)
+    * [ Student Loans ](https://www.investopedia.com/student-loans-4689727)
+    * [ Taxes ](https://www.investopedia.com/taxes-4427724)
+    * [ Credit Cards ](https://www.investopedia.com/credit-card-4689721)
+    * [ Financial Literacy ](https://www.investopedia.com/financial-literacy-resource-center-7151950)
+    * [ Retirement ](https://www.investopedia.com/retirement-planning-4689695)
+    * [ View All ](https://www.investopedia.com/personal-finance-4427760)
+  * [ Economy ](https://www.investopedia.com/economy-4689801)
+    * [ Government and Policy ](https://www.investopedia.com/government-and-policy-4689793)
+    * [ Monetary Policy ](https://www.investopedia.com/monetary-policy-4689792)
+    * [ Fiscal Policy ](https://www.investopedia.com/fiscal-policy-4689796)
+    * [ Economics ](https://www.investopedia.com/economics-4689800)
+    * [ View All ](https://www.investopedia.com/economy-4689801)
+  * [ Reviews ](https://www.investopedia.com/financial-product-reviews-7110783)
+    * [ Best Online Brokers ](https://www.investopedia.com/best-online-brokers-4587872)
+    * [ Best Crypto Exchanges ](https://www.investopedia.com/best-crypto-exchanges-5071855)
+    * [ Best Savings Rates ](https://www.investopedia.com/high-yield-savings-accounts-4770633)
+    * [ Best CD Rates ](https://www.investopedia.com/best-cd-rates-4770214)
+    * [ Best Life Insurance ](https://www.investopedia.com/the-best-life-insurance-companies-8763666)
+    * [ Best Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5094943)
+    * [ Best Robo-Advisors ](https://www.investopedia.com/the-best-robo-advisors-8764849)
+    * [ Best Personal Loans ](https://www.investopedia.com/the-best-personal-loans-8761582)
+    * [ Best Debt Relief Companies ](https://www.investopedia.com/the-best-debt-relief-companies-8763179)
+    * [ View All ](https://www.investopedia.com/financial-product-reviews-7110783)
+
+
+  * Top Stories
+  * [ This Famous Short Seller Is Betting Against AI ](https://www.investopedia.com/short-sellers-now-betting-big-against-ai-11842994)
+  * [ Here's the Average Income for 35–44-Year-Olds ](https://www.investopedia.com/are-you-keeping-up-here-s-the-average-income-for-35-44-year-olds-11841889)
+  * [ This Bank Can Help Lower Your Phone Bill ](https://www.investopedia.com/this-clever-bank-account-lowers-your-phone-bill-and-pays-4-20-on-your-savings-11844440)
+  * [ Here's the Average Salary for People in Transition ](https://www.investopedia.com/career-change-average-salary-11839914)
+
+
+Table of Contents
+Expand
+Table of Contents
+  * [What Is Mortgage Insurance Premium (MIP)?](https://www.investopedia.com/mortgage/insurance/qualified-insurance-premium/#toc-what-is-mortgage-insurance-premium-mip)
+  * [Understanding Mortgage Insurance Premium (MIP)](https://www.investopedia.com/mortgage/insurance/qualified-insurance-premium/#toc-understanding-mortgage-insurance-premium-mip)
+  * [FAQs](https://www.investopedia.com/mortgage/insurance/qualified-insurance-premium/#toc-what-is-an-upfront-mortgage-premium)
+  * [The Bottom Line](https://www.investopedia.com/mortgage/insurance/qualified-insurance-premium/#toc-the-bottom-line)
+
+
+# Mortgage Insurance Premium (MIP): Definition, Costs, Canceling
+By
+[Caroline Banton](https://www.investopedia.com/contributors/99535/)
+[Full Bio](https://www.investopedia.com/contributors/99535/)
+  * [ ](https://www.linkedin.com/in/caroline-banton-624b9445/)
+  * [ ](https://twitter.com/CarolineBanton)
+
+
+Caroline Banton has 6+ years of experience as a writer of business and finance articles. She also writes biographies for Story Terrace. 
+Learn about our  [editorial policies](https://www.investopedia.com/legal-4768893#editorial-policy)
+Updated January 12, 2025
+Reviewed by
+[Doretha Clemon](https://www.investopedia.com/doretha-clemon-5185455)
+Reviewed by Doretha Clemon
+[Full Bio](https://www.investopedia.com/doretha-clemon-5185455)
+  * [ ](https://www.linkedin.com/in/doretha-clemon-7207206/)
+
+
+Doretha Clemons, Ph.D., MBA, PMP, has been a corporate IT executive and professor for 34 years. She is an adjunct professor at Connecticut State Colleges & Universities, Maryville University, and Indiana Wesleyan University. She is a Real Estate Investor and principal at Bruised Reed Housing Real Estate Trust, and a State of Connecticut Home Improvement License holder. 
+Learn about our  [Financial Review Board](https://www.investopedia.com/investopedia-financial-review-board-5076269)
+Fact checked by
+[Suzanne Kvilhaug](https://www.investopedia.com/suzanne-kvilhaug-5197828)
+Fact checked by Suzanne Kvilhaug
+[Full Bio](https://www.investopedia.com/suzanne-kvilhaug-5197828)
+Suzanne is a content marketer, writer, and fact-checker. She holds a Bachelor of Science in Finance degree from Bridgewater State University and helps develop content strategies.
+Learn about our  [editorial policies](https://www.investopedia.com/legal-4768893#editorial-policy)
+![A man and a woman sit on the front porch of a house with moving boxes around them](https://www.investopedia.com/thmb/4pBRBvaMPS2yxYB4Ju1eC2w7s9E=/1500x0/filters:no_upscale\(\):max_bytes\(150000\):strip_icc\(\):format\(webp\)/mortgagepremiuminsurance-e4d048ccacaf4479997d5ab7f7a8819b.jpg)
+Maskot / Getty Images
+Close
+##  What Is Mortgage Insurance Premium (MIP)? 
+Mortgage insurance premium (MIP) is a type of mortgage insurance that is required of homeowners who take out loans backed by the [Federal Housing Administration](https://www.investopedia.com/terms/f/fhaloan.asp) (FHA). Unlike conventional loans, which typically only require private mortgage insurance (PMI) if a home down payment is less than 20% of the purchase price, all FHA loans require MIP. 
+### Key Takeaways:
+  * Mortgage insurance premium (MIP) is paid by homeowners who take out loans backed by the Federal Housing Administration (FHA).
+  * FHA-backed lenders use MIPs to protect themselves against higher-risk borrowers who are more likely to default on loans.
+  * FHA mortgages require every borrower to have mortgage insurance.1
+
+
+##  Understanding Mortgage Insurance Premium (MIP) 
+FHA-backed lenders use mortgage insurance premiums to protect themselves against higher-risk borrowers. Since FHA loans come with a [down payment](https://www.investopedia.com/terms/d/down_payment.asp) as low as 3.5% and a [credit score](https://www.investopedia.com/terms/c/credit_score.asp) as low as 580, default is a key concern.23
+FHA mortgages require every borrower to have mortgage insurance.1 Conversely, [conventional loans](https://www.investopedia.com/ask/answers/082616/whats-difference-between-fha-and-conventional-loans.asp) only need [private mortgage insurance](https://www.investopedia.com/terms/m/mortgage-insurance.asp) (PMI) policies if the down payment amount is less than 20% of the property's purchase price. Each FHA loan requires both an upfront premium of 1.75% of the loan amount and an annual premium of 0.15% to 0.75%.4 Payment of upfront premiums is at the loan issuance. Determination of the exact yearly cost comes from the loan term, amount borrowed, and [loan-to-value ratio (LTV)](https://www.investopedia.com/terms/l/loantovalue.asp). 
+Each month, the loan's payment amount reflects the annual premium divided by 12 months along with the [principal](https://www.investopedia.com/terms/p/principal.asp) payment. Other charges usually added to the monthly fee include [escrow amounts](https://www.investopedia.com/terms/e/escrow.asp) for [property taxes](https://www.investopedia.com/terms/p/propertytax.asp) and homeowner's insurance coverage. 
+### Important
+If you make a down payment of less than 20% on a conventional Fannie Mae or Freddie Mac mortgage, you'll likely have to pay PMI each month until you build up at least 20% equity in your home. USDA rural mortgages utilize an alternative form of loan guarantees from PMI.
+###  Canceling Qualified Mortgage Insurance 
+Buyers with a conventional loan may cancel the PMI once they pay 20% of the loan's value or after the loan is 15 years old.5 However, buyers with an FHA loan might not be able to eliminate MIP. It depends on the loan's [origination](https://www.investopedia.com/terms/o/origination.asp) date. 
+  * **For FHA loans originated between Dec. 31, 2000, and June 3, 2013** : If you have paid off at least 78% of the loan-to-value amount, you may ask the lender to cancel the MIP.6
+  * **For loans originated after June 3, 2013** : If you made a down payment of less than 10% of the home's value at loan origination, you must pay the MIP for the life of the loan.7 The only way to remove the qualified mortgage insurance (MIP) on an FHA loan is to [refinance](https://www.investopedia.com/terms/r/refinance.asp) it into a non-FHA product.
+
+
+Borrowers who qualify for a conventional loan, even if they pay private mortgage insurance, should also consider FHA loans to determine which is the better deal. Those with lower credit scores may do better with an FHA mortgage, particularly if they can make a 10% down payment. Some lenders may also provide a separate loan to cover the down payment amount. 
+Check our list of the [best mortgage refinance lenders](https://www.investopedia.com/best-mortgage-refinance-companies-5092956) and talk to your tax accountant, financial advisor, and your bank to see which loan makes the most sense for your situation. 
+###  Tax Implications of Qualified Mortgage Insurance Premiums 
+Until the [2017 Tax Cut and Jobs Act](https://www.investopedia.com/taxes/trumps-tax-reform-plan-explained/), mortgage insurance premiums were deductible in addition to allowable mortgage interest.8 The Further Consolidated Appropriations Act of 2020 allowed tax deductions for MIP and [private mortgage insurance](https://www.investopedia.com/mortgage/mortgage-guide/mortgage-insurance/) (PMI) for 2020 and retroactively for 2018 and 2019.
+However, the Act expired, and mortgage insurance premiums are no longer deductible.8
+Your lender is required to send [Form 1098](https://www.investopedia.com/terms/f/form_1098.asp) Mortgage Interest Statement to both you and the [Internal Revenue Service](https://www.investopedia.com/terms/i/irs.asp) (IRS). This form lists your mortgage payments over the past year and can affect your [income tax](https://www.investopedia.com/terms/i/incometax.asp). The total MIP or PMI premiums will be in box 5 of the form. If you are filing a return for tax years 2018, 2019, or 2020 and wish to claim a deduction for these premiums, you must itemize your deductions using Schedule A under the interest paid section.  
+
+## What Is an Upfront Mortgage Premium?
+With FHA loans, part of the mortgage insurance premium is due at closing; this is the upfront mortgage insurance premium, which is 1.75% of the total amount of the loan. You can pay it in cash at closing or roll it into your loan. The other part of MIP is an annual payment.4
+## How Much Does Mortgage Insurance Premium Cost?
+The upfront MIP is 1.75% of the loan amount, so if you borrow $200,000, you'll pay $3,500 at closing. The annual payment portion, which is between 0.15% and 0.75% of the loan amount, depends on the base loan amount, LTV ratio, and duration of the mortgage term. The lowest annual payment portion is for loans of less than 90% LTV and 15 years in length.4
+## How Do You Get Rid of Mortgage Insurance Premium?
+For any FHA loans taken out after June 3, 2013, the only way to eliminate the mortgage insurance premium is to pay off the loan.6 Refinancing the FHA loan to a non-FHA loan will pay off the loan and get rid of the mortgage insurance premium.
+##  The Bottom Line 
+If you want to take out an FHA loan, prepare to pay mortgage insurance premiums. While you can reduce the time you have to pay MIP, you can't eliminate this insurance altogether, so it's worth including it in your mortgage payment calculation for at least 11 years, if not the life of the loan, depending on your down payment amount. 
+Despite this, FHA loans may still be the better option for borrowers with lower credit scores or smaller down payment amounts. Consult your accountant or financial advisor when comparing home loans to see which option is better for you. 
+Sponsored
+Get The Mortgage That’s Right For You
+[](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstfYSFy9z2LQOpFSZ_JFht7aCqQA3lOmRLy9owF7JCp6rRhgYUkkzVU5uC0nAl_vo0F4oLQ2p7LKOrYzVu9PubnwyJEvRgybjzKF3H4JoIEJC5BcGmTV3mkGqPLS0TMMqMbFz9sOM_gYBLtqhqjDdpdWNQK6T-bZ_34BNUTMKENoHywncD7ph8wUNVmlcGgzz2gaQ0Dg4wS_DpsQq4ifXnVFFLQrC9DeFaGh5bzcmvwAiByq1nc4zr2Mio0A8TTpBgWjAURcr7S3kIt8Ant7mYV0cBmgmteICQzsc9eNhpONKEwVZTxy4e9GEcV5yhHw1j0JWxgh5-TXfltxYtxyafxCmihdr7HGiJuVRPD6RXPmtBqnyUick4_BME4FjtCB2VHIEQYGasjYorv_Kslz8XTIyg6SoVkafQDiBr8x_BmQWp_wD4GLvFY0A&sai=AMfl-YTQBcicQSS1TKu9j0pE905t6P8cOpLsoO3a2BSmWfLPDTA0XDQEYBWblnXCiQwxb2MDLRcyYYVnmvtav_uQQtB_jfdNML03Woy3LD0ynQFYSPOwPP2zUktCNIlemGvl8MI7p4yHeoZa2NPIAfrnD_EAEBEWVssnXVVTb-k2TJOoC-DWv2vkh8jgy5SUWApUU8OljJS9RAv6aBntWgzCySbQ02-MY2JVx2cfo3tMpoS1aEufceUm6EnyF4eiFLsCVN6IfDmB5vIHP0iBK40EMoFeFbp7dg&sig=Cg0ArKJSzNkt4snj_8sBEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://launchpad.rocketmortgage.com/?nvm=false&qls=IOA_affrktxx.ioatxtnote&aff_sub=) Rocket Mortgage has reinvented the mortgage process to put the [power back in your hands.](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstfYSFy9z2LQOpFSZ_JFht7aCqQA3lOmRLy9owF7JCp6rRhgYUkkzVU5uC0nAl_vo0F4oLQ2p7LKOrYzVu9PubnwyJEvRgybjzKF3H4JoIEJC5BcGmTV3mkGqPLS0TMMqMbFz9sOM_gYBLtqhqjDdpdWNQK6T-bZ_34BNUTMKENoHywncD7ph8wUNVmlcGgzz2gaQ0Dg4wS_DpsQq4ifXnVFFLQrC9DeFaGh5bzcmvwAiByq1nc4zr2Mio0A8TTpBgWjAURcr7S3kIt8Ant7mYV0cBmgmteICQzsc9eNhpONKEwVZTxy4e9GEcV5yhHw1j0JWxgh5-TXfltxYtxyafxCmihdr7HGiJuVRPD6RXPmtBqnyUick4_BME4FjtCB2VHIEQYGasjYorv_Kslz8XTIyg6SoVkafQDiBr8x_BmQWp_wD4GLvFY0A&sai=AMfl-YTQBcicQSS1TKu9j0pE905t6P8cOpLsoO3a2BSmWfLPDTA0XDQEYBWblnXCiQwxb2MDLRcyYYVnmvtav_uQQtB_jfdNML03Woy3LD0ynQFYSPOwPP2zUktCNIlemGvl8MI7p4yHeoZa2NPIAfrnD_EAEBEWVssnXVVTb-k2TJOoC-DWv2vkh8jgy5SUWApUU8OljJS9RAv6aBntWgzCySbQ02-MY2JVx2cfo3tMpoS1aEufceUm6EnyF4eiFLsCVN6IfDmB5vIHP0iBK40EMoFeFbp7dg&sig=Cg0ArKJSzNkt4snj_8sBEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://launchpad.rocketmortgage.com/?nvm=false&qls=IOA_affrktxx.ioatxtnote&aff_sub=) Get an intelligent, customizable mortgage solution based on today’s rates, and use [online tools](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstfYSFy9z2LQOpFSZ_JFht7aCqQA3lOmRLy9owF7JCp6rRhgYUkkzVU5uC0nAl_vo0F4oLQ2p7LKOrYzVu9PubnwyJEvRgybjzKF3H4JoIEJC5BcGmTV3mkGqPLS0TMMqMbFz9sOM_gYBLtqhqjDdpdWNQK6T-bZ_34BNUTMKENoHywncD7ph8wUNVmlcGgzz2gaQ0Dg4wS_DpsQq4ifXnVFFLQrC9DeFaGh5bzcmvwAiByq1nc4zr2Mio0A8TTpBgWjAURcr7S3kIt8Ant7mYV0cBmgmteICQzsc9eNhpONKEwVZTxy4e9GEcV5yhHw1j0JWxgh5-TXfltxYtxyafxCmihdr7HGiJuVRPD6RXPmtBqnyUick4_BME4FjtCB2VHIEQYGasjYorv_Kslz8XTIyg6SoVkafQDiBr8x_BmQWp_wD4GLvFY0A&sai=AMfl-YTQBcicQSS1TKu9j0pE905t6P8cOpLsoO3a2BSmWfLPDTA0XDQEYBWblnXCiQwxb2MDLRcyYYVnmvtav_uQQtB_jfdNML03Woy3LD0ynQFYSPOwPP2zUktCNIlemGvl8MI7p4yHeoZa2NPIAfrnD_EAEBEWVssnXVVTb-k2TJOoC-DWv2vkh8jgy5SUWApUU8OljJS9RAv6aBntWgzCySbQ02-MY2JVx2cfo3tMpoS1aEufceUm6EnyF4eiFLsCVN6IfDmB5vIHP0iBK40EMoFeFbp7dg&sig=Cg0ArKJSzNkt4snj_8sBEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://launchpad.rocketmortgage.com/?nvm=false&qls=IOA_affrktxx.ioatxtnote&aff_sub=) to track the status of your loan 24/7. Explore your [mortgage options today.](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstfYSFy9z2LQOpFSZ_JFht7aCqQA3lOmRLy9owF7JCp6rRhgYUkkzVU5uC0nAl_vo0F4oLQ2p7LKOrYzVu9PubnwyJEvRgybjzKF3H4JoIEJC5BcGmTV3mkGqPLS0TMMqMbFz9sOM_gYBLtqhqjDdpdWNQK6T-bZ_34BNUTMKENoHywncD7ph8wUNVmlcGgzz2gaQ0Dg4wS_DpsQq4ifXnVFFLQrC9DeFaGh5bzcmvwAiByq1nc4zr2Mio0A8TTpBgWjAURcr7S3kIt8Ant7mYV0cBmgmteICQzsc9eNhpONKEwVZTxy4e9GEcV5yhHw1j0JWxgh5-TXfltxYtxyafxCmihdr7HGiJuVRPD6RXPmtBqnyUick4_BME4FjtCB2VHIEQYGasjYorv_Kslz8XTIyg6SoVkafQDiBr8x_BmQWp_wD4GLvFY0A&sai=AMfl-YTQBcicQSS1TKu9j0pE905t6P8cOpLsoO3a2BSmWfLPDTA0XDQEYBWblnXCiQwxb2MDLRcyYYVnmvtav_uQQtB_jfdNML03Woy3LD0ynQFYSPOwPP2zUktCNIlemGvl8MI7p4yHeoZa2NPIAfrnD_EAEBEWVssnXVVTb-k2TJOoC-DWv2vkh8jgy5SUWApUU8OljJS9RAv6aBntWgzCySbQ02-MY2JVx2cfo3tMpoS1aEufceUm6EnyF4eiFLsCVN6IfDmB5vIHP0iBK40EMoFeFbp7dg&sig=Cg0ArKJSzNkt4snj_8sBEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://launchpad.rocketmortgage.com/?nvm=false&qls=IOA_affrktxx.ioatxtnote&aff_sub=)
+Equal Housing Lender. Licensed in all 50 states. NMLS #3030. 
+[](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstfYSFy9z2LQOpFSZ_JFht7aCqQA3lOmRLy9owF7JCp6rRhgYUkkzVU5uC0nAl_vo0F4oLQ2p7LKOrYzVu9PubnwyJEvRgybjzKF3H4JoIEJC5BcGmTV3mkGqPLS0TMMqMbFz9sOM_gYBLtqhqjDdpdWNQK6T-bZ_34BNUTMKENoHywncD7ph8wUNVmlcGgzz2gaQ0Dg4wS_DpsQq4ifXnVFFLQrC9DeFaGh5bzcmvwAiByq1nc4zr2Mio0A8TTpBgWjAURcr7S3kIt8Ant7mYV0cBmgmteICQzsc9eNhpONKEwVZTxy4e9GEcV5yhHw1j0JWxgh5-TXfltxYtxyafxCmihdr7HGiJuVRPD6RXPmtBqnyUick4_BME4FjtCB2VHIEQYGasjYorv_Kslz8XTIyg6SoVkafQDiBr8x_BmQWp_wD4GLvFY0A&sai=AMfl-YTQBcicQSS1TKu9j0pE905t6P8cOpLsoO3a2BSmWfLPDTA0XDQEYBWblnXCiQwxb2MDLRcyYYVnmvtav_uQQtB_jfdNML03Woy3LD0ynQFYSPOwPP2zUktCNIlemGvl8MI7p4yHeoZa2NPIAfrnD_EAEBEWVssnXVVTb-k2TJOoC-DWv2vkh8jgy5SUWApUU8OljJS9RAv6aBntWgzCySbQ02-MY2JVx2cfo3tMpoS1aEufceUm6EnyF4eiFLsCVN6IfDmB5vIHP0iBK40EMoFeFbp7dg&sig=Cg0ArKJSzNkt4snj_8sBEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=)
+Article Sources
+Investopedia requires writers to use primary sources to support their work. These include white papers, government data, original reporting, and interviews with industry experts. We also reference original research from other reputable publishers where appropriate. You can learn more about the standards we follow in producing accurate, unbiased content in our [editorial policy.](https://www.investopedia.com/legal-4768893#EditorialPolicy)
+  1. Consumer Financial Protection Bureau. "[What Is Mortgage Insurance and How Does It Work?](https://www.consumerfinance.gov/ask-cfpb/what-is-mortgage-insurance-and-how-does-it-work-en-1953/)"
+  2. U.S. Department of Housing and Urban Development. "[Let FHA Loans Help You](https://www.hud.gov/buying/loans)."
+  3. U.S. Department of Housing and Urban Development. "[Section A. Borrower Eligibility Requirements](https://www.hud.gov/sites/documents/4155-1_4_SECA.PDF)," Page 4-A-3.
+  4. U.S. Department of Housing and Urban Development. "[Mortgagee Letter 2023-05](https://www.hud.gov/sites/dfiles/OCHCO/documents/2023-05hsgml.pdf)."
+  5. Consumer Financial Protection Bureau. "[When Can I Remove Private Mortgage Insurance (PMI) From My Loan?](https://www.consumerfinance.gov/ask-cfpb/when-can-i-remove-private-mortgage-insurance-pmi-from-my-loan-en-202/)"
+  6. U.S. Department of Housing and Urban Development. "[Discontinuing Monthly Mortgage Insurance Premium Payments](https://www.hud.gov/program_offices/housing/comp/premiums/prem2001)."
+  7. U.S. Department of Housing and Urban Development. "[Revision of Federal Housing Administration (FHA) Policies Concerning Cancellation of the Annual Mortgage Insurance Premium (MIP) and Increase to the Annual MIP](https://www.hud.gov/sites/documents/13-04ML.PDF)," Page 2.
+  8. IRS. "[Publication 936 (2022), Home Mortgage Interest Deduction](https://www.irs.gov/publications/p936)."
+
+
+Compare Mortgage Lenders
+Advertiser Disclosure 
+× 
+The offers that appear in this table are from partnerships from which Investopedia receives compensation. This compensation may impact how and where listings appear. Investopedia does not include all offers available in the marketplace.
+Read more
+  * [Personal Finance](https://www.investopedia.com/personal-finance-4427760)
+  * [Mortgage](https://www.investopedia.com/mortgage-4689703)
+
+
+Partner Links
+## Related Articles
+[ Best Mortgage Refinance Rates - November 7, 2025 ](https://www.investopedia.com/the-best-mortgage-refinance-rates-11751715) [ Cash-Out Refinancing: Unlock Home Equity and When to Refinance ](https://www.investopedia.com/terms/c/cashout_refinance.asp) [ Compare Current Jumbo Mortgage Rates Today - November 7, 2025 ](https://www.investopedia.com/the-best-jumbo-mortgage-rates-11733500) [ Understanding Loan-Level Price Adjustments (LLPA) for Mortgages ](https://www.investopedia.com/loan-level-price-adjustment-llpa-definition-7498880) [ Compare Current Mortgage Rates Today - November 7, 2025 ](https://www.investopedia.com/mortgage-rates-5094943) [ Understanding Purchase-Money Mortgages: Types and Benefits ](https://www.investopedia.com/terms/p/purchase-money_mortgage.asp) [ Subprime Mortgages: Rates, Risks, and Credit Score Impact ](https://www.investopedia.com/terms/s/subprime_mortgage.asp) [ Understanding 3-2-1 Buydown Mortgages: Benefits, Risks, and Key Insights ](https://www.investopedia.com/terms/1/3-2-1_buydown.asp)
+[ Understanding Deeds of Release: Definition, Process, and Examples ](https://www.investopedia.com/terms/d/deed_of_release.asp) [ Understanding Pre-Foreclosure in Real Estate: Key Steps and Options ](https://www.investopedia.com/terms/p/pre-foreclosure.asp) [ Bimonthly Mortgage: Meaning, Benefits, and Key Differences From Biweekly ](https://www.investopedia.com/terms/b/bimonthlypayments.asp) [ How Many Missed Mortgage Payments Trigger Foreclosure? ](https://www.investopedia.com/ask/answers/081516/how-many-mortgage-payments-can-i-miss-foreclosure.asp) [ Unlock Home Equity With Loans, HELOCs, or Cash-Out Refinancing ](https://www.investopedia.com/mortgage/heloc/home-equity/) [ Is HELOC Interest Tax Deductible? What Homeowners Need to Know ](https://www.investopedia.com/mortgage/heloc/tax-deductible/) [ Understanding the Federal Home Loan Bank System: Key Functions and History ](https://www.investopedia.com/terms/f/fhlb.asp) [ When to Refinance Your Mortgage: A Guide to Lowering Payments ](https://www.investopedia.com/mortgage/refinance/when-and-when-not-to-refinance-mortgage/)
+[ Investopedia ](https://www.investopedia.com/)
+[Newsletter Sign Up](https://www.investopedia.com/mortgage/insurance/qualified-insurance-premium/)
+Follow Us
+  * [ ](https://www.facebook.com/Investopedia/)
+  * [ ](https://www.instagram.com/investopedia/?hl=en)
+  * [ ](https://www.linkedin.com/company/investopedia-ulc)
+  * [ ](https://www.tiktok.com/@investopedia)
+  * [ ](https://www.youtube.com/c/investopedia)
+
+
+  * [News](https://www.investopedia.com/news-4427706)
+  * [Investing](https://www.investopedia.com/investing-4427685)
+  * [Simulator](https://www.investopedia.com/simulator/?inv_to_sim=global_nav)
+  * [Banking](https://www.investopedia.com/banking-4427754)
+  * [Personal Finance](https://www.investopedia.com/personal-finance-4427760)
+  * [Economy](https://www.investopedia.com/economy-4689801)
+  * [Reviews](https://www.investopedia.com/financial-product-reviews-7110783)
+  * [Dictionary](https://www.investopedia.com/financial-term-dictionary-4769738)
+
+
+  * [ About Us ](https://www.investopedia.com/about-us-5093223)
+  * [ Editorial Process ](https://www.investopedia.com/legal-4768893#toc-editorial-policy)
+  * [ Careers ](https://www.people.inc/careers)
+  * [ Contact Us ](https://www.people.inc/contact)
+  * [ Privacy Policy ](https://www.people.inc/brands-privacy)
+  * [ Terms of Service ](https://www.people.inc/brands-termsofservice)
+  * [ Advertise ](https://www.people.inc/advertising)
+  * Your Privacy Choices
+
+
+  * [#](https://www.investopedia.com/terms-beginning-with-num-4769350)
+  * [A](https://www.investopedia.com/terms-beginning-with-a-4769351)
+  * [B](https://www.investopedia.com/terms-beginning-with-b-4769352)
+  * [C](https://www.investopedia.com/terms-beginning-with-c-4769353)
+  * [D](https://www.investopedia.com/terms-beginning-with-d-4769354)
+  * [E](https://www.investopedia.com/terms-beginning-with-e-4769355)
+  * [F](https://www.investopedia.com/terms-beginning-with-f-4769356)
+  * [G](https://www.investopedia.com/terms-beginning-with-g-4769357)
+  * [H](https://www.investopedia.com/terms-beginning-with-h-4769358)
+  * [I](https://www.investopedia.com/terms-beginning-with-i-4769359)
+  * [J](https://www.investopedia.com/terms-beginning-with-j-4769360)
+  * [K](https://www.investopedia.com/terms-beginning-with-k-4769361)
+  * [L](https://www.investopedia.com/terms-beginning-with-l-4769362)
+  * [M](https://www.investopedia.com/terms-beginning-with-m-4769363)
+  * [N](https://www.investopedia.com/terms-beginning-with-n-4769364)
+  * [O](https://www.investopedia.com/terms-beginning-with-o-4769365)
+  * [P](https://www.investopedia.com/terms-beginning-with-p-4769366)
+  * [Q](https://www.investopedia.com/terms-beginning-with-q-4769367)
+  * [R](https://www.investopedia.com/terms-beginning-with-r-4769368)
+  * [S](https://www.investopedia.com/terms-beginning-with-s-4769369)
+  * [T](https://www.investopedia.com/terms-beginning-with-t-4769370)
+  * [U](https://www.investopedia.com/terms-beginning-with-u-4769371)
+  * [V](https://www.investopedia.com/terms-beginning-with-v-4769372)
+  * [W](https://www.investopedia.com/terms-beginning-with-w-4769373)
+  * [X](https://www.investopedia.com/terms-beginning-with-x-4769374)
+  * [Y](https://www.investopedia.com/terms-beginning-with-y-4769375)
+  * [Z](https://www.investopedia.com/terms-beginning-with-z-4769376)
+
+
+Investopedia is part of the [People Inc.](https://www.people.inc) publishing family. 
+Newsletter Sign Up
+Newsletter Sign Up
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. 
+Cookies Settings Accept All Cookies
+![](https://sync.graph.bluecava.com/ds.png?p=9274e5db-ddcb-11ea-a80b-0242ac110002&segment=4l28r4sz3bl3555wt2hyave1w6u68syw&uid=&CampaignID=303C&Channel=investopedia&CreativeID=&Placement=4222570&MAID=&Keyword=&Medium=&Source=&PageName=www.investopedia.com%2Fmortgage%2Finsurance%2Fqualified-insurance-premium%2F&Event=&Key1=4173514&Key2=4427760&Key3=4689703&Key4=&Key5=)

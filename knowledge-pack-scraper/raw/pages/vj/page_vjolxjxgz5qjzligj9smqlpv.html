@@ -1,0 +1,613 @@
+<!DOCTYPE html><html lang="en-US"><!--<![endif]--><head> <script type="text/javascript">
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,initializeOnLoaded:function(o){gform.domLoaded&&gform.scriptsLoaded?o():!gform.domLoaded&&gform.scriptsLoaded?window.addEventListener("DOMContentLoaded",o):document.addEventListener("gform_main_scripts_loaded",o)},hooks:{action:{},filter:{}},addAction:function(o,n,r,t){gform.addHook("action",o,n,r,t)},addFilter:function(o,n,r,t){gform.addHook("filter",o,n,r,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,n){gform.removeHook("action",o,n)},removeFilter:function(o,n,r){gform.removeHook("filter",o,n,r)},addHook:function(o,n,r,t,i){null==gform.hooks[o][n]&&(gform.hooks[o][n]=[]);var e=gform.hooks[o][n];null==i&&(i=n+"_"+e.length),gform.hooks[o][n].push({tag:i,callable:r,priority:t=null==t?10:t})},doHook:function(n,o,r){var t;if(r=Array.prototype.slice.call(r,1),null!=gform.hooks[n][o]&&((o=gform.hooks[n][o]).sort(function(o,n){return o.priority-n.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==n?t.apply(null,r):r[0]=t.apply(null,r)})),"filter"==n)return r[0]},removeHook:function(o,n,t,i){var r;null!=gform.hooks[o][n]&&(r=(r=gform.hooks[o][n]).filter(function(o,n,r){return!!(null!=i&&i!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][n]=r)}});
+</script>
+<meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",(e=>{this.persisted=e.persisted})),window.addEventListener("DOMContentLoaded",(()=>{this._preconnect3rdParties()})),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){document.hidden?e._triggerListener():(this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler))}_removeUserInteractionListener(){this.triggerEvents.forEach((e=>window.removeEventListener(e,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"))}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick")}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))}))}_renameDOMAttribute(e,t,n){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(n,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{if(t.hasAttribute("src")){const n=new URL(t.src).origin;n!==location.origin&&e.push({src:n,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}})),e=[...new Map(e.map((e=>[JSON.stringify(e),e]))).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._replayClicks()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._littleBreath(),new Promise((t=>{const n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t());try{e.parentNode.replaceChild(n,e)}catch(e){t()}}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var n=document.createDocumentFragment();e.forEach((e=>{if(e.src){const i=document.createElement("link");i.href=e.src,i.rel=t,"preconnect"!==t&&(i.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(i.crossOrigin=!0),e.crossOrigin&&(i.crossOrigin=e.crossOrigin),n.appendChild(i)}})),document.head.appendChild(n)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),await this._littleBreath();const e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,i=document.createRange(),r=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const s=document.createDocumentFragment();i.setStart(s,0),s.appendChild(i.createContextualFragment(t)),r.insertBefore(s,o)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise((e=>setTimeout(e))):new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+    
+    <!-- Google Tag Manager -->
+    <script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T2FBR857');</script>
+    <!-- End Google Tag Manager -->
+
+<!-- Font Imports -->
+
+<!-- Adobe Typekit -->
+<!-- Google Fonts -->
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://www.tbarpro.com/site/wp-content/themes/nw-tbar/fonts/fontawesome/font-awesome.css">
+<!-- Other --><!-- Metas Include -->
+
+<meta name="google-site-verification" content="google-site-verification=uxMHIvHyPdyAgvO21HrRkoElVKLaA-L2ttebRBydOJg">
+
+<meta name="viewport" content="width=device-width">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://www.tbarpro.com/site/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="https://www.tbarpro.com/site/wp-content/themes/nw-tbar/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<meta name="robots" content="max-image-preview:large">
+
+	<!-- This site is optimized with the Yoast SEO plugin v14.5 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>What Is Texas Windstorm Insurance? A Homeowner's Guide -</title><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Barlow%20Condensed%3A300%2C600%7CRoboto%3A300%2C400%2C700&amp;display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow%20Condensed%3A300%2C600%7CRoboto%3A300%2C400%2C700&amp;display=swap" media="all" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow%20Condensed%3A300%2C600%7CRoboto%3A300%2C400%2C700&#038;display=swap" /></noscript>
+	<meta name="description" content="What is Texas windstorm insurance, and why does it matter? Learn about Texas windstorm insurance certificate search, claims, &amp; coverage options.">
+	<meta name="robots" content="index, follow">
+	<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+	<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+	<link rel="canonical" href="https://www.tbarpro.com/what-is-texas-windstorm-insurance-a-homeowners-guide/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="What Is Texas Windstorm Insurance? A Homeowner's Guide -">
+	<meta property="og:description" content="What is Texas windstorm insurance, and why does it matter? Learn about Texas windstorm insurance certificate search, claims, &amp; coverage options.">
+	<meta property="og:url" content="https://www.tbarpro.com/what-is-texas-windstorm-insurance-a-homeowners-guide/">
+	<meta property="article:published_time" content="2025-03-24T07:50:10+00:00">
+	<meta property="article:modified_time" content="2025-03-24T07:50:12+00:00">
+	<meta property="og:image" content="https://www.tbarpro.com/site/wp-content/uploads/what-is-texas-windstorm-ins.png">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.tbarpro.com/#website","url":"https://www.tbarpro.com/","name":"","description":"","potentialAction":[{"@type":"SearchAction","target":"https://www.tbarpro.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://www.tbarpro.com/what-is-texas-windstorm-insurance-a-homeowners-guide/#primaryimage","inLanguage":"en-US","url":"https://www.tbarpro.com/site/wp-content/uploads/what-is-texas-windstorm-ins.png","width":840,"height":560},{"@type":"WebPage","@id":"https://www.tbarpro.com/what-is-texas-windstorm-insurance-a-homeowners-guide/#webpage","url":"https://www.tbarpro.com/what-is-texas-windstorm-insurance-a-homeowners-guide/","name":"What Is Texas Windstorm Insurance? A Homeowner's Guide -","isPartOf":{"@id":"https://www.tbarpro.com/#website"},"primaryImageOfPage":{"@id":"https://www.tbarpro.com/what-is-texas-windstorm-insurance-a-homeowners-guide/#primaryimage"},"datePublished":"2025-03-24T07:50:10+00:00","dateModified":"2025-03-24T07:50:12+00:00","author":{"@id":"https://www.tbarpro.com/#/schema/person/014b3e392bfdaf8837a056100d5162cc"},"description":"What is Texas windstorm insurance, and why does it matter? Learn about Texas windstorm insurance certificate search, claims, & coverage options.","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.tbarpro.com/what-is-texas-windstorm-insurance-a-homeowners-guide/"]}]},{"@type":["Person"],"@id":"https://www.tbarpro.com/#/schema/person/014b3e392bfdaf8837a056100d5162cc","name":"Tracy Gibbs","image":{"@type":"ImageObject","@id":"https://www.tbarpro.com/#personlogo","inLanguage":"en-US","url":"https://secure.gravatar.com/avatar/92d6c3438077fb6f9da189b55455e2cd?s=96&d=mm&r=g","caption":"Tracy Gibbs"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="//code.jquery.com">
+<link href="https://fonts.gstatic.com" crossorigin="" rel="preconnect">
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="https://www.tbarpro.com/site/wp-includes/css/dist/block-library/style.min.css?ver=5.8.12" type="text/css" media="all">
+<link rel="stylesheet" id="nw_mobile_menu_css-css" href="https://www.tbarpro.com/site/wp-content/plugins/nw_mobile_menu/styles/mobile-menu.css?ver=5.8.12" type="text/css" media="">
+<link rel="stylesheet" id="grw-public-main-css-css" href="https://www.tbarpro.com/site/wp-content/plugins/widget-google-reviews/assets/css/public-main.css?ver=5.2" type="text/css" media="all">
+<link rel="stylesheet" id="webmasters-style-css" href="https://www.tbarpro.com/site/wp-content/themes/nw-tbar/style.css?ver=5.8.12" type="text/css" media="all">
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js" id="jquery-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" defer="defer" src="https://www.tbarpro.com/site/wp-content/plugins/widget-google-reviews/assets/js/public-main.js?ver=5.2" id="grw-public-main-js-js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.tbarpro.com/site/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.tbarpro.com/site/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.8.12">
+<link rel="shortlink" href="https://www.tbarpro.com/?p=1339">
+		<style type="text/css" id="wp-custom-css">
+			.contact .form .gform_body label,
+.banner .form .gform_body label {
+  color: white;
+	margin-bottom: 0;
+}
+
+.banner .form  .gform_fields,
+.contact .form .gform_fields {
+	row-gap: 16px;
+}
+
+.banner .form .gform_footer,
+.contact .form .gform_footer{
+	margin-top: 16px;
+}
+
+.banner .form .gform_footer .gform_button,
+.contact .form .gform_footer .gform_button {
+	color: #fff !important;
+  background: #1d8a13 !important;
+	inline-size: 100% !important;
+	border: none !important;
+	text-transform: uppercase !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+	border-radius: 0 !important;
+  letter-spacing: 1px !important;
+}
+
+.banner .form .gform_footer .gform_button:hover,
+.contact .form .gform_footer .gform_button:hover {
+	color: #2932d9 !important;
+  background: #fff !important;
+}		</style>
+		<link rel="shortcut icon" href="https://www.tbarpro.com/site/wp-content/themes/nw-tbar/favicon.ico?v=2">
+<!-- Facebook Pixel Code -->
+<script type="rocketlazyloadscript">
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init', '1054821508441930'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+ <img height="1" width="1" 
+src="https://www.facebook.com/tr?id=1054821508441930&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code --><link href="https://code.jquery.com" rel="preconnect"><link href="https://www.googletagmanager.com" rel="preconnect"><link href="https://www.google.com" rel="preconnect"></head>
+
+<body id="0" class="post-template-default single single-post postid-1339 single-format-standard unknown" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2FBR857"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+	<section class="header-block">
+		<header id="masthead" class="site-header" role="banner" itemscope="" itemtype="http://schema.org/WPHeader">
+			<section class="soc-num">
+				<style></style>
+<ul class="social-menu"><li><a aria-label="facebook" target="_blank" itemprop="sameAs" href="https://www.facebook.com/TBARRoofer"><i class="fa fa-facebook"></i></a></li>
+<li><a aria-label="google" target="_blank" itemprop="sameAs" href=""><i class="fa fa-google"></i></a></li>
+<li><a aria-label="yelp" target="_blank" itemprop="sameAs" href="https://www.yelp.com/biz/tbar-roofing-league-city"><i class="fa fa-yelp"></i></a></li>
+<li><a aria-label="bbb" target="_blank" itemprop="sameAs" href="https://www.bbb.org/us/tx/houston/profile/roofing-contractors/tbar-texas-building-roofing-0915-90011555"><i class="fa fa-fire"></i></a></li>
+<li><a aria-label="homeadvisor" target="_blank" itemprop="sameAs" href=""><i class="fa fa-home"></i></a></li>
+</ul>			</section>
+			<section class="branding">
+				<section class="logo">
+					<a href="https://www.tbarpro.com"><img src="https://www.tbarpro.com/logo.png" alt="TBAR Roofing" width="313" height="138"></a>		
+				</section>					
+				<section class="taglines">
+					<a class="review-link" href="https://www.google.com/search?q=tbar+roofing&amp;oq=tbar+roofing&amp;aqs=chrome.0.0i355i512j46i175i199i512j0i390i512i650l3j0i751j69i60l2.4754j0j7&amp;sourceid=chrome&amp;ie=UTF-8#lrd=0x86409de76ce6d5e5:0x3cc0a871cd9a8c3d,1"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><span>Read Our Reviews</span></a>						
+					<section class="phone">
+						<a href="tel:2819407557"><span>MAIN OFFICE:</span> 281-940-7557</a>
+						<a href="tel:2819407557"><span>DIRECT LINE:</span> 281-487-5050</a>
+					</section>	
+					<h3>Residential and Commercial Roofing in League City</h3>	
+				</section>
+			</section>
+			<nav id="site-navigation" class="main-navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+				<!-- Mobile Menu Button -->
+				<a href="#mmenu" class="mobile-menu-btn"><i class="fa fa-bars"></i></a>
+				<!-- #site-navigation -->
+				<div class="menu-main-container"><ul id="menu-main" class="nav-menu"><li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-20"><a href="https://www.tbarpro.com/" itemprop="url">Home</a></li>
+<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="https://www.tbarpro.com/about-us/" itemprop="url">About Us</a></li>
+<li id="menu-item-1063" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1063"><a href="https://www.tbarpro.com/roofing-services/" itemprop="url">Roofing Services</a>
+<ul class="sub-menu">
+	<li id="menu-item-704" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-704"><a href="https://www.tbarpro.com/roofing-services/" itemprop="url">Residential</a>
+	<ul class="sub-menu">
+		<li id="menu-item-705" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-705"><a href="https://www.tbarpro.com/roofing-services/asphalt-shingle-roofing/" itemprop="url">Asphalt Shingle Roofing</a></li>
+		<li id="menu-item-706" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-706"><a href="https://www.tbarpro.com/roofing-services/metal-roofing/" itemprop="url">Metal Roofing</a></li>
+		<li id="menu-item-707" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-707"><a href="https://www.tbarpro.com/roofing-services/residential-roofing/" itemprop="url">Residential Roofing</a></li>
+		<li id="menu-item-708" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-708"><a href="https://www.tbarpro.com/roofing-services/roof-installation/" itemprop="url">Roof Installation</a></li>
+		<li id="menu-item-709" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-709"><a href="https://www.tbarpro.com/roofing-services/roof-leak-repair/" itemprop="url">Roof Leak Repair</a></li>
+		<li id="menu-item-710" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-710"><a href="https://www.tbarpro.com/roofing-services/roof-repair/" itemprop="url">Roof Repair</a></li>
+		<li id="menu-item-711" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-711"><a href="https://www.tbarpro.com/roofing-services/roof-replacement/" itemprop="url">Roof Replacement</a></li>
+		<li id="menu-item-712" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-712"><a href="https://www.tbarpro.com/roofing-services/roofing-contractor/" itemprop="url">Roofing Contractor</a></li>
+		<li id="menu-item-713" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-713"><a href="https://www.tbarpro.com/roofing-services/tile-roofing/" itemprop="url">Tile Roofing</a></li>
+		<li id="menu-item-1347" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1347"><a href="https://www.tbarpro.com/roofing-services/league-city-roof-maintenance-services/" itemprop="url">Roof Maintenance</a></li>
+	</ul>
+</li>
+	<li id="menu-item-698" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-698"><a href="https://www.tbarpro.com/roofing-services/commercial-roofing-contractor/" itemprop="url">Commercial</a></li>
+	<li id="menu-item-716" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-716"><a href="https://www.tbarpro.com/exterior-siding/" itemprop="url">Exterior Siding</a></li>
+	<li id="menu-item-717" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-717"><a href="https://www.tbarpro.com/hardie-board-siding/" itemprop="url">Hardie Board Siding</a></li>
+	<li id="menu-item-701" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-701"><a href="https://www.tbarpro.com/gutter-installation/" itemprop="url">Gutter Installation</a></li>
+	<li id="menu-item-702" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-702"><a href="https://www.tbarpro.com/gutter-replacement/" itemprop="url">Gutter Replacement</a></li>
+	<li id="menu-item-1346" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1346"><a href="https://www.tbarpro.com/roofing-services/windstorm-inspection-in-texas/" itemprop="url">Windstorm Inspection</a></li>
+</ul>
+</li>
+<li id="menu-item-1150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1150"><a href="#" itemprop="url">Locations</a>
+<ul class="sub-menu">
+	<li id="menu-item-1314" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1314"><a href="https://www.tbarpro.com/santa-fe/" itemprop="url">Santa Fe</a></li>
+	<li id="menu-item-1315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1315"><a href="https://www.tbarpro.com/pasadena/" itemprop="url">Pasadena</a></li>
+	<li id="menu-item-1316" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1316"><a href="https://www.tbarpro.com/nassau-bay/" itemprop="url">Nassau Bay</a></li>
+	<li id="menu-item-1317" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1317"><a href="https://www.tbarpro.com/la-porte/" itemprop="url">La Porte</a></li>
+	<li id="menu-item-1318" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1318"><a href="https://www.tbarpro.com/la-marque/" itemprop="url">La Marque</a></li>
+	<li id="menu-item-1319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1319"><a href="https://www.tbarpro.com/el-lago/" itemprop="url">El Lago</a></li>
+	<li id="menu-item-1320" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1320"><a href="https://www.tbarpro.com/bacliff/" itemprop="url">Bacliff</a></li>
+	<li id="menu-item-1273" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1273"><a href="https://www.tbarpro.com/friendswood/" itemprop="url">Friendswood</a></li>
+	<li id="menu-item-1151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1151"><a href="/galveston/" itemprop="url">Galveston</a></li>
+	<li id="menu-item-1152" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1152"><a href="/league-city/" itemprop="url">League City</a></li>
+	<li id="menu-item-1278" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1278"><a href="https://www.tbarpro.com/pearland/" itemprop="url">Pearland</a></li>
+	<li id="menu-item-1274" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1274"><a href="https://www.tbarpro.com/kemah/" itemprop="url">Kemah</a></li>
+	<li id="menu-item-1277" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1277"><a href="https://www.tbarpro.com/webster/" itemprop="url">Webster</a></li>
+	<li id="menu-item-1276" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1276"><a href="https://www.tbarpro.com/dickinson/" itemprop="url">Dickinson</a></li>
+	<li id="menu-item-1279" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1279"><a href="https://www.tbarpro.com/texas-city/" itemprop="url">Texas City</a></li>
+	<li id="menu-item-1280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1280"><a href="https://www.tbarpro.com/deer-park/" itemprop="url">Deer Park</a></li>
+</ul>
+</li>
+<li id="menu-item-703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-703"><a href="https://www.tbarpro.com/photo-gallery/" itemprop="url">Roofing Projects</a></li>
+<li id="menu-item-1323" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1323"><a href="#" itemprop="url">Resources</a>
+<ul class="sub-menu">
+	<li id="menu-item-1188" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1188"><a href="https://www.tbarpro.com/roofing-contractor-faq/" itemprop="url">Roofing FAQ</a></li>
+	<li id="menu-item-1187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1187"><a href="https://www.tbarpro.com/roofing-glossary/" itemprop="url">Roofing Glossary</a></li>
+	<li id="menu-item-1140" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-1140"><a href="https://www.tbarpro.com/blog/" itemprop="url">Articles &amp; Tips</a></li>
+</ul>
+</li>
+<li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-17"><a href="https://www.tbarpro.com/contact-us/" itemprop="url">Contact Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-699" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-699"><a href="https://www.tbarpro.com/free-estimates/" itemprop="url">Free Estimates</a></li>
+</ul>
+</li>
+</ul></div>			</nav>	
+		</header><!-- #masthead -->
+				<!-- Breadcrumbs -->
+					<nav class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+			   <ol itemscope="" itemtype="http://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a title="Go to Home" href="https://www.tbarpro.com" class="home" itemprop="item" itemid="https://www.tbarpro.com" itemscope="" itemtype="http://schema.org/WebPage"><span itemprop="name" content="TBAR Roofing">Home</span><link itemprop="url" content="https://www.tbarpro.com"></a><meta itemprop="position" content="1"></li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><span class="post post-page" itemprop="item" itemscope="" itemtype="http://schema.org/WebPage"><span itemprop="name">What Is Texas Windstorm Insurance? A Homeowner’s Guide</span><link itemprop="url" content="https://www.tbarpro.com/what-is-texas-windstorm-insurance-a-homeowners-guide/"></span><meta itemprop="position" content="2"></li></ol>			</nav>
+				<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="rocketlazyloadscript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-172782614-1"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-172782614-1');
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="rocketlazyloadscript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-63Z6841JPG"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-63Z6841JPG');
+</script>				<div id="fb-root"></div>
+		<script type="rocketlazyloadscript">
+			(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+	</section>
+
+<div id="content" class="site-content wrapper">
+		
+
+	<main id="primary" class="site-content" role="main">
+
+			
+				<article id="post-1339" class="post-1339 post type-post status-publish format-standard hentry category-uncategorized">
+
+	<header class="entry-header">
+					<h1 class="entry-title">What Is Texas Windstorm Insurance? A Homeowner’s Guide</h1>
+			</header><!-- .entry-header -->
+
+	<!-- Search Results-->
+			<div class="entry-content test">
+			
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="840" height="560" src="https://www.tbarpro.com/site/wp-content/uploads/what-is-texas-windstorm-ins.png" alt="What Is Texas Windstorm Insurance? A Homeowner's Guide" class="wp-image-1340"></figure></div>
+
+
+
+<p>Strong winds and hurricanes impact coastal Texas every year, putting homes at risk for damage. Many homeowners do not realize that standard insurance policies often exclude wind-related damage. This leaves a financial gap that can be difficult to recover from after a major storm.</p>
+
+
+
+<p>Texas windstorm insurance helps cover losses caused by wind and hail, reducing the burden of out-of-pocket repairs. Understanding how this insurance works, the certificate search process, and filing a Texas windstorm insurance claim can help homeowners make informed decisions about protecting their property.</p>
+
+
+
+<h2>Why Standard Home Insurance Does Not Cover Windstorm Damage</h2>
+
+
+
+<p>Home insurance policies cover fire, theft, and some natural disasters, but many exclude wind damage in high-risk areas. This applies to homes along the Gulf Coast, where hurricanes and strong storms occur frequently. Insurers avoid taking on the financial risk of widespread wind damage, leaving homeowners to seek separate coverage. Without windstorm insurance, homeowners must cover repair costs themselves, which can be expensive after a major storm.</p>
+
+
+
+<p>Lenders often require windstorm insurance for homes in designated high-risk areas. These areas fall under Tier 1 and Tier 2 counties, where wind-related damage is common. Homeowners in these zones may need proof of coverage to secure a mortgage or maintain compliance with loan terms.</p>
+
+
+
+<h2>Texas Windstorm Insurance Association (TWIA) and Eligibility Requirements</h2>
+
+
+
+<p>The Texas Windstorm Insurance Association (TWIA) provides windstorm insurance for homeowners who cannot secure coverage from private insurers. This state-backed insurance option exists for those in coastal counties where the risk of wind damage is too high for standard providers.</p>
+
+
+
+<p>Not every home qualifies for TWIA coverage. Homeowners must meet specific requirements, including:</p>
+
+
+
+<ul><li><strong>Location:</strong> The property must be in a Tier 1 or Tier 2 coastal county.</li><li><strong>Certification:</strong> Homes must pass a Texas windstorm inspection and receive a Texas windstorm insurance certificate to confirm compliance with current building codes.</li><li><strong>Flood Insurance:</strong> Homes in high-risk flood zones built after August 31, 2009, must carry National Flood Insurance Program (NFIP) coverage.</li><li><strong>Proof of Private Insurance Denial:</strong> Homeowners must show that at least one private insurer has declined to offer wind coverage.</li></ul>
+
+
+
+<p>The TWIA acts as an insurer of last resort. It is available only to those who have exhausted private insurance options and need windstorm coverage to protect their home investment.</p>
+
+
+
+<h2>How to Search for a Texas Windstorm Insurance Certificate</h2>
+
+
+
+<p>A Texas windstorm insurance certificate search helps homeowners confirm that their property meets windstorm insurance requirements. The Texas Department of Insurance (TDI) maintains a database where homeowners can check the status of their certification.</p>
+
+
+
+<p>To conduct a Texas windstorm insurance certificate search, homeowners can visit the TDI website and enter their property details. If the certificate does not appear, homeowners may need to schedule a windstorm inspection or contact the original builder for documentation.</p>
+
+
+
+<p>Properties without proper certification may face insurance issues. Without certification, the TWIA may deny coverage, leaving homeowners without financial protection in the event of wind damage.</p>
+
+
+
+<h2>What Texas Windstorm Insurance Covers</h2>
+
+
+
+<p>Windstorm insurance policies protect against damage caused by strong winds and hail. Coverage applies to the home’s structure, including the roof, walls, and other built-in components. Policyholders may also have options for covering personal belongings and additional living expenses if a storm displaces them.</p>
+
+
+
+<p>Standard TWIA policies include:</p>
+
+
+
+<ul><li><strong>Dwelling Coverage:</strong> Pays for structural repairs after wind or hail damage.</li><li><strong>Other Structures Coverage:</strong> Protects detached buildings, such as garages and sheds.</li><li><strong>Personal Property Coverage:</strong> Covers belongings damaged by wind or hail.</li><li><strong>Debris Removal:</strong> Helps clear fallen tree branches and other storm debris.</li><li><strong>Emergency Repairs:</strong> Pays for immediate repairs to prevent further damage.</li></ul>
+
+
+
+<p>Some policies offer add-ons for increased construction costs and temporary living expenses. These optional coverages help homeowners manage repair costs after a severe storm.</p>
+
+
+
+<h2>How to File a Texas Windstorm Insurance Claim</h2>
+
+
+
+<p>Filing a Texas windstorm insurance claim requires quick action after a storm. Delaying the process may lead to further damage, increasing repair costs. Homeowners should document all storm-related damages with photos and videos before making temporary repairs. These records help support the claim and ensure accurate assessment by the insurance provider.</p>
+
+
+
+<p>The claims process involves several key steps:</p>
+
+
+
+<ul><li><strong>Report the Damage</strong> – Contact the insurance provider as soon as possible to initiate a claim. TWIA policyholders can file claims online or by phone.</li><li><strong>Document the Damage</strong> – Take clear photos and videos of affected areas, including the roof, siding, windows, and interior spaces.</li><li><strong>Make Temporary Repairs</strong> – Prevent further damage by securing openings and covering exposed areas. Keep all receipts for repair costs.</li><li><strong>Schedule an Inspection</strong> – The insurance provider will send an adjuster to assess the damage and determine the claim amount.</li><li><strong>Review the Settlement Offer</strong> – After evaluation, the insurer provides a settlement amount. Homeowners should carefully review the offer before accepting.</li><li><strong>Complete Repairs</strong> – Once the claim is approved, homeowners can begin full repairs using the funds provided.</li></ul>
+
+
+
+<p>Working with experienced <a href="https://www.tbarpro.com/roofing-services/commercial-roofing-contractor/">commercial roofing professionals</a> ensures repairs meet industry standards. After a claim, restoring the roof properly helps prevent future wind and hail damage.</p>
+
+
+
+<h2>Texas Windstorm Insurance Costs and Deductibles</h2>
+
+
+
+<p>The cost of windstorm insurance depends on the home’s location, construction type, and policy coverage limits. The average TWIA policy costs around $2,300 per year, but rates vary based on several factors.</p>
+
+
+
+<p>TWIA deductibles range from 1% to 5% of the dwelling limit rather than a fixed dollar amount. For example, a home with a $300,000 policy limit and a 2% deductible would require the homeowner to cover $6,000 of repair costs before insurance pays out. Higher deductibles reduce premiums but increase out-of-pocket costs in the event of a claim.</p>
+
+
+
+<p>Homeowners should also stay aware of rate adjustments. In 2024, the Texas Windstorm Insurance Association filed for a 10% rate increase, which, if approved, will take effect in 2025. This increase highlights the rising costs of windstorm insurance and the importance of exploring coverage options regularly.</p>
+
+
+
+<h2>Alternative Windstorm Insurance Options</h2>
+
+
+
+<p>TWIA is not the only option for windstorm coverage. Several private insurers offer windstorm policies that may provide more flexibility and competitive pricing. Unlike TWIA, private insurers can bundle windstorm insurance with home insurance, potentially lowering overall costs.</p>
+
+
+
+<p>Homeowners can compare private windstorm insurance providers to find the best policy for their needs. However, if denied by a private insurer, they may apply for TWIA coverage. Those unable to secure a wind policy from either option may have to explore Texas FAIR Plan insurance, though this coverage is limited and often more expensive.</p>
+
+
+
+<h2>How TBAR Roofing Can Help</h2>
+
+
+
+<p><a href="https://www.tbarpro.com/roofing-services/">At TBAR Roofing</a>, we understand the impact of wind damage on homes and businesses. With GAF, Owens Corning, and CertainTeed certified installations, we help homeowners restore and strengthen their roofs after severe weather.</p>
+					</div><!-- .entry-content -->
+	
+	<footer class="entry-meta">
+		<div>
+			Posted in <a href="https://www.tbarpro.com/uncategorized/" rel="category tag">Uncategorized</a> on <a href="https://www.tbarpro.com/what-is-texas-windstorm-insurance-a-homeowners-guide/" title="2:50 AM" rel="bookmark"><time class="entry-date date updated" datetime="2025-03-24T02:50:12-05:00">March 24, 2025 at 2:50 am</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="https://www.tbarpro.com/author/tracy/" title="View all posts by Tracy Gibbs" rel="author">Tracy Gibbs</a></span></span>.					</div>
+	</footer><!-- .entry-meta -->
+</article><!-- #post -->
+				<nav class="nav-single">
+					<h3 class="assistive-text">Post navigation</h3>
+					<span class="nav-previous"><a href="https://www.tbarpro.com/what-is-a-wpi-8-certificate-and-why-does-it-matter/" rel="prev"><span class="meta-nav">←</span> What Is A WPI-8 Certificate And Why Does It Matter?</a></span>
+					<span class="nav-next"></span>
+				</nav><!-- .nav-single -->
+
+				
+			
+	</main><!-- #primary -->
+	</div><!-- .wrapper -->
+	<footer class="site-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter" role="contentinfo">
+		
+			<section class="nw-block badges"><h2>Certifications and Badges</h2>
+			<ul>
+			<li class="halfsize"><a href="https://www.certainteed.com/" target="_blank" rel="noopener noreferrer"><img src="https://www.tbarpro.com/site/wp-content/uploads/shingle-master.png" alt="shinglemaster" width="200" height="200" class="alignnone size-full wp-image-880"></a></li>
+			<li><a href="https://www.gaf.com" target="_blank" rel="noopener noreferrer"><img src="https://www.tbarpro.com/site/wp-content/uploads/gaf-certified.png" alt="GAF Certified" class="alignleft size-full wp-image-872" width="366" height="137"></a></li>
+			<li><a href="https://www.owenscorning.com/en-us/roofing/contractors/contractor-profile/209736" target="_blank" rel="noopener noreferrer"><img src="https://www.tbarpro.com/site/wp-content/uploads/oc-preferred.jpg" alt="OC Preferred Contractor" class="alignleft size-full wp-image-873" width="340" height="134"></a></li>
+			<li><a href="https://gaco.com/" target="_blank" rel="noopener noreferrer"><img src="https://www.tbarpro.com/site/wp-content/uploads/gaco-certified.png" alt="Gaco Flex" class="alignleft size-full wp-image-874" width="390" height="129"></a></li>
+			<li><a href="https://www.google.com/" target="_blank" rel="noopener noreferrer"><img src="https://www.tbarpro.com/site/wp-content/uploads/google-five-star.png" alt="Google 5 Star" class="alignleft size-large wp-image-875" width="432" height="216"></a></li>
+			<!-- <li><a href="https://www.bbb.org/us/tx/houston/profile/roofing-contractors/tbar-texas-building-roofing-0915-90011555" target="_blank" rel="noopener noreferrer"><img src="https://www.tbarpro.com/site/wp-content/uploads/bbb-a-plus-rating.png" alt="BBB A+ Rating" width="2458" height="1042" class="alignnone size-full wp-image-876" /></a></li> -->
+			</ul>
+			<ul>
+			<li><img src="https://www.tbarpro.com/site/wp-content/uploads/boha-2016-1.jpg" alt="award" width="320" height="320" class="alignnone size-full wp-image-943"></li>
+			<li><img src="https://www.tbarpro.com/site/wp-content/uploads/boha-2017-1.jpg" alt="award" width="320" height="320" class="alignnone size-full wp-image-944"></li>
+			<li><img src="https://www.tbarpro.com/site/wp-content/uploads/boha-2018.jpg" alt="award" width="320" height="320" class="alignnone size-full wp-image-947"></li>
+			<li><img src="https://www.tbarpro.com/site/wp-content/uploads/pulse-2018-1.png" alt="award" width="200" height="200" class="alignnone size-full wp-image-942"></li>
+			<li><img src="https://www.tbarpro.com/site/wp-content/uploads/pulse-2019-1.png" alt="award" width="200" height="200" class="alignnone size-full wp-image-949"></li>
+			<li><img src="https://www.tbarpro.com/site/wp-content/uploads/2011-houston-winner-1.png" alt="award" width="200" height="200" class="alignnone size-full wp-image-945"></li>
+			<li><img src="https://www.tbarpro.com/site/wp-content/uploads/talk-of-the-town-winner-1.png" alt="award" width="200" height="200" class="alignnone size-full wp-image-946"></li>
+			</ul></section>
+
+		<section class="colophon">
+			<section class="reviews">
+				<h3>Client Reviews</h3>
+				<!---->
+			</section>
+		</section>	
+		<section class="contact">
+			<section itemscope="" class="schema" itemtype="http://schema.org/RoofingContractor">
+				<meta itemprop="image" content="https://www.tbarpro.com/logo.png">
+				<meta itemprop="name" content="TBAR Roofing">
+				<meta itemprop="priceRange" content="Free Estimates">
+				<section class="content-cont"> 
+					<section class="address-cont">
+						<section class="logo">
+							<a itemprop="url" href="https://www.tbarpro.com"><img itemprop="image" src="https://www.tbarpro.com/logo.png" alt="TBAR Roofing" width="313" height="138"></a>
+						</section>
+						<section class="phone-cont">
+							<i class="fa fa-phone"></i>
+							<p>
+								<span>MAIN OFFICE:</span> <span itemprop="telephone" class="phone">281-940-7557</span><br>
+								<span>DIRECT LINE:</span> <span itemprop="telephone" class="phone"> 281-487-5050</span>
+							</p>
+						</section>
+						<section class="addie-cont">
+							<i class="fa fa-map-marker"></i>
+							<a href="https://www.google.com/search?q=TBAR+Roofing&amp;stick=H4sIAAAAAAAA_-NgU1I1qLAwM
+zGwTEk1N0tONUsxTTW1MqgwTk42SLQwN0xOsUy0SDZOWcTKE-LkGKQQlJ-flpmXDgAbGZFOOAAAA
+A&amp;hl=en&amp;mat=CS2wPdLmfiufElcBYJahaWWeWvPAhQormR_FuVIpzWNCDOIEU9CPAUz4iPepfVzR
+p1GDDrjq2IEm0In6DHRal2IxxcYc8puC0PyRsFbqJO6bpLpcT2lnglU3r5bVfCPgV3Q&amp;authuser
+=3#mpd=~11469400405863936045/editprofile/services?entryPoint%3D2" target="_blank" style="color: #2932d9; text-decoration: none;">
+							<address itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress" class="address-block">
+								<span class="address"><span itemprop="streetAddress">2280 E. Main St. Suite B2 </span><br><span itemprop="addressLocality">League City</span>, <span itemprop="addressRegion">TX</span> <span itemprop="postalCode">77573</span></span><br>
+							</address>
+							</a>
+						</section>
+						<section class="hours-cont">
+							<i class="fa fa-clock-o"></i>
+							<div class="hours" itemprop="openingHours" datetime="Mo-Fr 7:30-17:30,Sa 9:00-15:00">Monday - Friday 7:30 AM - 5:30 PM<br>Saturday 9:00 AM - 3:00 PM</div>
+						</section>
+					</section>
+					<section class="form">
+						<h3>Free Estimate</h3>
+						<script type="rocketlazyloadscript" data-rocket-type="text/javascript">var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,initializeOnLoaded:function(o){gform.domLoaded&&gform.scriptsLoaded?o():!gform.domLoaded&&gform.scriptsLoaded?window.addEventListener("DOMContentLoaded",o):document.addEventListener("gform_main_scripts_loaded",o)},hooks:{action:{},filter:{}},addAction:function(o,n,r,t){gform.addHook("action",o,n,r,t)},addFilter:function(o,n,r,t){gform.addHook("filter",o,n,r,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,n){gform.removeHook("action",o,n)},removeFilter:function(o,n,r){gform.removeHook("filter",o,n,r)},addHook:function(o,n,r,t,i){null==gform.hooks[o][n]&&(gform.hooks[o][n]=[]);var e=gform.hooks[o][n];null==i&&(i=n+"_"+e.length),gform.hooks[o][n].push({tag:i,callable:r,priority:t=null==t?10:t})},doHook:function(n,o,r){var t;if(r=Array.prototype.slice.call(r,1),null!=gform.hooks[n][o]&&((o=gform.hooks[n][o]).sort(function(o,n){return o.priority-n.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==n?t.apply(null,r):r[0]=t.apply(null,r)})),"filter"==n)return r[0]},removeHook:function(o,n,t,i){var r;null!=gform.hooks[o][n]&&(r=(r=gform.hooks[o][n]).filter(function(o,n,r){return!!(null!=i&&i!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][n]=r)}});</script>
+                <div class="gf_browser_unknown gform_wrapper gform-theme gform-theme--foundation gform-theme--framework gform-theme--orbital" data-form-theme="orbital" data-form-index="0" id="gform_wrapper_1"><style>#gform_wrapper_1[data-form-index="0"].gform-theme,[data-parent-form="1_0"]{--gf-color-primary: #204ce5;--gf-color-primary-rgb: 32, 76, 229;--gf-color-primary-contrast: #fff;--gf-color-primary-contrast-rgb: 255, 255, 255;--gf-color-primary-darker: #001AB3;--gf-color-primary-lighter: #527EFF;--gf-color-secondary: #fff;--gf-color-secondary-rgb: 255, 255, 255;--gf-color-secondary-contrast: #112337;--gf-color-secondary-contrast-rgb: 17, 35, 55;--gf-color-secondary-darker: #F5F5F5;--gf-color-secondary-lighter: #FFFFFF;--gf-color-out-ctrl-light: rgba(17, 35, 55, 0.1);--gf-color-out-ctrl-light-rgb: 17, 35, 55;--gf-color-out-ctrl-light-darker: rgba(104, 110, 119, 0.35);--gf-color-out-ctrl-light-lighter: #F5F5F5;--gf-color-out-ctrl-dark: #585e6a;--gf-color-out-ctrl-dark-rgb: 88, 94, 106;--gf-color-out-ctrl-dark-darker: #112337;--gf-color-out-ctrl-dark-lighter: rgba(17, 35, 55, 0.65);--gf-color-in-ctrl: #fff;--gf-color-in-ctrl-rgb: 255, 255, 255;--gf-color-in-ctrl-contrast: #112337;--gf-color-in-ctrl-contrast-rgb: 17, 35, 55;--gf-color-in-ctrl-darker: #F5F5F5;--gf-color-in-ctrl-lighter: #FFFFFF;--gf-color-in-ctrl-primary: #204ce5;--gf-color-in-ctrl-primary-rgb: 32, 76, 229;--gf-color-in-ctrl-primary-contrast: #fff;--gf-color-in-ctrl-primary-contrast-rgb: 255, 255, 255;--gf-color-in-ctrl-primary-darker: #001AB3;--gf-color-in-ctrl-primary-lighter: #527EFF;--gf-color-in-ctrl-light: rgba(17, 35, 55, 0.1);--gf-color-in-ctrl-light-rgb: 17, 35, 55;--gf-color-in-ctrl-light-darker: rgba(104, 110, 119, 0.35);--gf-color-in-ctrl-light-lighter: #F5F5F5;--gf-color-in-ctrl-dark: #585e6a;--gf-color-in-ctrl-dark-rgb: 88, 94, 106;--gf-color-in-ctrl-dark-darker: #112337;--gf-color-in-ctrl-dark-lighter: rgba(17, 35, 55, 0.65);--gf-radius: 3px;--gf-font-size-secondary: 14px;--gf-font-size-tertiary: 13px;--gf-icon-ctrl-number: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 0C4.26522 5.96046e-08 4.51957 0.105357 4.70711 0.292893L7.70711 3.29289C8.09763 3.68342 8.09763 4.31658 7.70711 4.70711C7.31658 5.09763 6.68342 5.09763 6.29289 4.70711L4 2.41421L1.70711 4.70711C1.31658 5.09763 0.683417 5.09763 0.292893 4.70711C-0.0976311 4.31658 -0.097631 3.68342 0.292893 3.29289L3.29289 0.292893C3.48043 0.105357 3.73478 0 4 0ZM0.292893 9.29289C0.683417 8.90237 1.31658 8.90237 1.70711 9.29289L4 11.5858L6.29289 9.29289C6.68342 8.90237 7.31658 8.90237 7.70711 9.29289C8.09763 9.68342 8.09763 10.3166 7.70711 10.7071L4.70711 13.7071C4.31658 14.0976 3.68342 14.0976 3.29289 13.7071L0.292893 10.7071C-0.0976311 10.3166 -0.0976311 9.68342 0.292893 9.29289Z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E");--gf-icon-ctrl-select: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.292893 0.292893C0.683417 -0.097631 1.31658 -0.097631 1.70711 0.292893L5 3.58579L8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893C10.0976 0.683417 10.0976 1.31658 9.70711 1.70711L5.70711 5.70711C5.31658 6.09763 4.68342 6.09763 4.29289 5.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E");--gf-icon-ctrl-search: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='640' height='640'%3E%3Cpath d='M256 128c-70.692 0-128 57.308-128 128 0 70.691 57.308 128 128 128 70.691 0 128-57.309 128-128 0-70.692-57.309-128-128-128zM64 256c0-106.039 85.961-192 192-192s192 85.961 192 192c0 41.466-13.146 79.863-35.498 111.248l154.125 154.125c12.496 12.496 12.496 32.758 0 45.254s-32.758 12.496-45.254 0L367.248 412.502C335.862 434.854 297.467 448 256 448c-106.039 0-192-85.962-192-192z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E");--gf-label-space-y-secondary: var(--gf-label-space-y-md-secondary);--gf-ctrl-border-color: #686e77;--gf-ctrl-size: var(--gf-ctrl-size-md);--gf-ctrl-label-color-primary: #112337;--gf-ctrl-label-color-secondary: #112337;--gf-ctrl-choice-size: var(--gf-ctrl-choice-size-md);--gf-ctrl-checkbox-check-size: var(--gf-ctrl-checkbox-check-size-md);--gf-ctrl-radio-check-size: var(--gf-ctrl-radio-check-size-md);--gf-ctrl-btn-font-size: var(--gf-ctrl-btn-font-size-md);--gf-ctrl-btn-padding-x: var(--gf-ctrl-btn-padding-x-md);--gf-ctrl-btn-size: var(--gf-ctrl-btn-size-md);--gf-ctrl-btn-border-color-secondary: #686e77;--gf-ctrl-file-btn-bg-color-hover: #EBEBEB;--gf-field-pg-steps-number-color: rgba(17, 35, 55, 0.8);}</style><div id="gf_1" class="gform_anchor" tabindex="-1"></div><form method="post" enctype="multipart/form-data" target="gform_ajax_frame_1" id="gform_1" action="/what-is-texas-windstorm-insurance-a-homeowners-guide/#gf_1" data-formid="1" novalidate="">
+                        <div class="gform-body gform_body"><div id="gform_fields_1" class="gform_fields top_label form_sublabel_above description_above validation_below"><div id="field_1_5" class="gfield gfield--type-text gfield--input-type-text gfield--width-full field_sublabel_above gfield--no-description field_description_above field_validation_below gfield_visibility_visible" data-js-reload="field_1_5"><label class="gfield_label gform-field-label" for="input_1_5">NAME</label><div class="ginput_container ginput_container_text"><input name="input_5" id="input_1_5" type="text" value="" class="large" aria-invalid="false"> </div></div><div id="field_1_6" class="gfield gfield--type-text gfield--input-type-text gfield--width-full field_sublabel_above gfield--no-description field_description_above field_validation_below gfield_visibility_visible" data-js-reload="field_1_6"><label class="gfield_label gform-field-label" for="input_1_6">PHONE</label><div class="ginput_container ginput_container_text"><input name="input_6" id="input_1_6" type="text" value="" class="large" aria-invalid="false"> </div></div><div id="field_1_8" class="gfield gfield--type-email gfield--input-type-email gfield--width-full field_sublabel_above gfield--no-description field_description_above field_validation_below gfield_visibility_visible" data-js-reload="field_1_8"><label class="gfield_label gform-field-label" for="input_1_8">EMAIL</label><div class="ginput_container ginput_container_email">
+                            <input name="input_8" id="input_1_8" type="email" value="" class="large" aria-invalid="false">
+                        </div></div><div id="field_1_3" class="gfield gfield--type-textarea gfield--input-type-textarea field_sublabel_above gfield--no-description field_description_above field_validation_below gfield_visibility_visible" data-js-reload="field_1_3"><label class="gfield_label gform-field-label" for="input_1_3">MESSAGE</label><div class="ginput_container ginput_container_textarea"><textarea name="input_3" id="input_1_3" class="textarea small" aria-invalid="false" rows="10" cols="50"></textarea></div></div><div id="field_1_4" class="gfield gfield--type-hidden gfield--input-type-hidden gform_hidden field_sublabel_above gfield--no-description field_description_above field_validation_below gfield_visibility_visible" data-js-reload="field_1_4"><div class="ginput_container ginput_container_text"><input name="input_4" id="input_1_4" type="hidden" class="gform_hidden" aria-invalid="false" value=""></div></div><div id="field_1_9" class="gfield gfield--type-captcha gfield--input-type-captcha gfield--width-full field_sublabel_above gfield--no-description field_description_above field_validation_below gfield_visibility_visible" data-js-reload="field_1_9"><label class="gfield_label gform-field-label screen-reader-text" for="input_1_9"></label><div id="input_1_9" class="ginput_container ginput_recaptcha" data-sitekey="6LeyIGwqAAAAACujhyjgNanOxw6TFxw0Q1U8JYjl" data-theme="light" data-tabindex="-1" data-size="invisible" data-badge="bottomright"></div></div><div id="field_1_10" class="gfield gfield--type-honeypot gform_validation_container field_sublabel_above gfield--has-description field_description_above field_validation_below gfield_visibility_visible" data-js-reload="field_1_10"><label class="gfield_label gform-field-label" for="input_1_10">Name</label><div class="gfield_description" id="gfield_description_1_10">This field is for validation purposes and should be left unchanged.</div><div class="ginput_container"><input name="input_10" id="input_1_10" type="text" value="" autocomplete="new-password"></div></div></div></div>
+        <div class="gform_footer top_label"> <input type="submit" id="gform_submit_button_1" class="gform_button button" value="SEND" onclick="if(window[&quot;gf_submitting_1&quot;]){return false;}  if( !jQuery(&quot;#gform_1&quot;)[0].checkValidity || jQuery(&quot;#gform_1&quot;)[0].checkValidity()){window[&quot;gf_submitting_1&quot;]=true;}  " onkeypress="if( event.keyCode == 13 ){ if(window[&quot;gf_submitting_1&quot;]){return false;} if( !jQuery(&quot;#gform_1&quot;)[0].checkValidity || jQuery(&quot;#gform_1&quot;)[0].checkValidity()){window[&quot;gf_submitting_1&quot;]=true;}  jQuery(&quot;#gform_1&quot;).trigger(&quot;submit&quot;,[true]); }"> <input type="hidden" name="gform_ajax" value="form_id=1&amp;title=&amp;description=&amp;tabindex=0&amp;theme=orbital">
+            <input type="hidden" class="gform_hidden" name="is_submit_1" value="1">
+            <input type="hidden" class="gform_hidden" name="gform_submit" value="1">
+            
+            <input type="hidden" class="gform_hidden" name="gform_unique_id" value="">
+            <input type="hidden" class="gform_hidden" name="state_1" value="WyJbXSIsIjQ3MDdlYzE1MWJhMDBjY2NjNzNjM2ZiMzgxMDRkYzcwIl0=">
+            <input type="hidden" class="gform_hidden" name="gform_target_page_number_1" id="gform_target_page_number_1" value="0">
+            <input type="hidden" class="gform_hidden" name="gform_source_page_number_1" id="gform_source_page_number_1" value="1">
+            <input type="hidden" name="gform_field_values" value="">
+            
+        </div>
+                        </form>
+                        </div>
+		                <iframe style="display:none;width:0px;height:0px;" src="about:blank" name="gform_ajax_frame_1" id="gform_ajax_frame_1" title="This iframe contains the logic required to handle Ajax powered Gravity Forms."></iframe>
+		                <script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+gform.initializeOnLoaded( function() {gformInitSpinner( 1, 'https://www.tbarpro.com/site/wp-content/plugins/gravityforms/images/spinner.svg', false );jQuery('#gform_ajax_frame_1').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_1');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_1').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_1').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_1').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_1').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_1').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_1').val();gformInitSpinner( 1, 'https://www.tbarpro.com/site/wp-content/plugins/gravityforms/images/spinner.svg', false );jQuery(document).trigger('gform_page_loaded', [1, current_page]);window['gf_submitting_1'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}jQuery('#gform_wrapper_1').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_1').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [1]);window['gf_submitting_1'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_1').text());}else{jQuery('#gform_1').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger("gform_pre_post_render", [{ formId: "1", currentPage: "current_page", abort: function() { this.preventDefault(); } }]);                if (event && event.defaultPrevented) {                return;         }        const gformWrapperDiv = document.getElementById( "gform_wrapper_1" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_1";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_1" );        let postRenderFired = false;                function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            jQuery( document ).trigger( 'gform_post_render', [1, current_page] );            gform.utils.trigger( { event: 'gform/postRender', native: false, data: { formId: 1, currentPage: current_page } } );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );} );
+</script>
+					</section>
+				</section>
+			</section>
+		</section>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3471.749123398715
+3!2d-95.08083128806844!3d29.52367097508654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!
+4f13.1!3m3!1m2!1s0x86409de76ce6d5e5%3A0x3cc0a871cd9a8c3d!2sTBAR%20Roofing!5e
+0!3m2!1sen!2sus!4v1751543023556!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<!-- Boilerplate -->
+		<div class="boilerplate">
+			<div class="fwm-link"><a href="https://www.roofingwebmasters.com" aria-label="The Webmasters"><img src="https://www.tbarpro.com/site/wp-content/themes/nw-tbar/images/nwseo-logos/roofing-webmasters-logo-light.png" alt="The Webmasters" width="222" height="20"></a></div>	
+			<section>
+				<!-- Copyright &amp; Sitemap -->
+				<div>Copyright © <script type="rocketlazyloadscript" data-rocket-type="text/javascript">var theDate=new Date(); document.write(theDate.getFullYear())</script> Roofing Webmasters | <a href="/sitemap/" rel="nofollow">Sitemap</a></div>
+				<!-- Copyscape -->
+				<a href="https://www.copyscape.com/" class="copyscape" target="_blank" rel="noopener">
+					<h4 alt="Protected by Copyscape Online Infringement Checker" title="Protected by Copyscape Plagiarism Checker - Do not copy content from this page."><small>Protected By</small> <strong>Copyscape</strong> <small>Do Not Copy</small></h4>
+				</a>
+			</section> 	
+			<section class="rg-badge">
+				<a href="https://www.roofersguild.com/" target="_blank" rel="noopener"><img src="https://www.tbarpro.com/site/wp-content/themes/nw-tbar/images/nwseo-logos/roofers-guild.png" alt="Roofer's Guild"></a>
+			</section>	
+		</div>
+		<!-- End Boilerplate -->
+	
+	</footer>
+<!-- #page -->
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://www.tbarpro.com/site/wp-content/plugins/nw_mobile_menu/scripts/mobile-menu.js?ver=5.8.12" id="nw_mobile_menu_js-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://www.tbarpro.com/site/wp-content/themes/nw-tbar/js/jquery.slabtext.min.js" id="slabtext-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://www.tbarpro.com/site/wp-content/themes/nw-tbar/js/drawer.js" id="drawer-js"></script>
+<script type="text/javascript" src="https://www.tbarpro.com/site/wp-includes/js/wp-embed.min.js?ver=5.8.12" id="wp-embed-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://www.tbarpro.com/site/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7" id="regenerator-runtime-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://www.tbarpro.com/site/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://www.tbarpro.com/site/wp-includes/js/dist/dom-ready.min.js?ver=71883072590656bf22c74c7b887df3dd" id="wp-dom-ready-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://www.tbarpro.com/site/wp-includes/js/dist/hooks.min.js?ver=a7edae857aab69d69fa10d5aef23a5de" id="wp-hooks-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://www.tbarpro.com/site/wp-includes/js/dist/i18n.min.js?ver=5f1269854226b4dd90450db411a12b79" id="wp-i18n-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="wp-a11y-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", { "locale_data": { "messages": { "": {} } } } );
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://www.tbarpro.com/site/wp-includes/js/dist/a11y.min.js?ver=0ac8327cc1c40dcfdf29716affd7ac63" id="wp-a11y-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" defer="defer" src="https://www.tbarpro.com/site/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.8.17" id="gform_json-js"></script>
+<script type="text/javascript" id="gform_gravityforms-js-extra">
+/* <![CDATA[ */
+var gform_i18n = {"datepicker":{"days":{"monday":"Mo","tuesday":"Tu","wednesday":"We","thursday":"Th","friday":"Fr","saturday":"Sa","sunday":"Su"},"months":{"january":"January","february":"February","march":"March","april":"April","may":"May","june":"June","july":"July","august":"August","september":"September","october":"October","november":"November","december":"December"},"firstDay":1,"iconText":"Select date"}};
+var gf_legacy_multi = [];
+var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file is not allowed. Must be one of the following:","delete_file":"Delete this file","in_progress":"in progress","file_exceeds_limit":"File exceeds size limit","illegal_extension":"This type of file is not allowed.","max_reached":"Maximum number of files reached","unknown_error":"There was a problem while saving the file on the server","currently_uploading":"Please wait for the uploading to complete","cancel":"Cancel","cancel_upload":"Cancel this upload","cancelled":"Cancelled"},"vars":{"images_url":"https:\/\/www.tbarpro.com\/site\/wp-content\/plugins\/gravityforms\/images"}};
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2,"code":"USD"},"base_url":"https:\/\/www.tbarpro.com\/site\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/www.tbarpro.com\/site\/wp-content\/plugins\/gravityforms\/images\/spinner.svg","version_hash":"f1ad03896ea6a5f0b309fc3ea2eafb8a","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" defer="defer" src="https://www.tbarpro.com/site/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.8.17" id="gform_gravityforms-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" defer="defer" src="https://www.google.com/recaptcha/api.js?hl=en&amp;ver=5.8.12#038;render=explicit" id="gform_recaptcha-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" defer="defer" src="https://www.tbarpro.com/site/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=50c7bea9c2320e16728e44ae9fde5f26" id="gform_gravityforms_utils-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" defer="defer" src="https://www.tbarpro.com/site/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=54e7080aa7a02c83aa61fae430b9d869" id="gform_gravityforms_theme_vendors-js"></script>
+<script type="text/javascript" id="gform_gravityforms_theme-js-extra">
+/* <![CDATA[ */
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"f1ad03896ea6a5f0b309fc3ea2eafb8a"}}},"hmr_dev":"","public_path":"https:\/\/www.tbarpro.com\/site\/wp-content\/plugins\/gravityforms\/assets\/js\/dist\/"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" defer="defer" src="https://www.tbarpro.com/site/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=bab19fd84843dabc070e73326d787910" id="gform_gravityforms_theme-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 1) {} } );jQuery(document).on('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } );
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+gform.initializeOnLoaded( function() {jQuery(document).trigger("gform_pre_post_render", [{ formId: "1", currentPage: "1", abort: function() { this.preventDefault(); } }]);                if (event && event.defaultPrevented) {                return;         }        const gformWrapperDiv = document.getElementById( "gform_wrapper_1" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_1";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_1" );        let postRenderFired = false;                function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            jQuery( document ).trigger( 'gform_post_render', [1, 1] );            gform.utils.trigger( { event: 'gform/postRender', native: false, data: { formId: 1, currentPage: 1 } } );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );
+</script>
+<!-- scripts -->
+<!-- Fonts and Slabtext(config) -->
+<script type="rocketlazyloadscript">
+jQuery(document).ready(function($) {
+  //set up fonts to load asynchronously with a callback on load
+  WebFontConfig = {
+  // Google Fonts Only
+    google: {
+      families:['Barlow+Condensed:300,600|Roboto:300,400,700']
+    },
+    active: function(familyName, fvd) {
+      // Configure Desired Elements 
+    }
+  };
+  //insert webfont script with above config
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+});
+</script>
+
+
+
+</body></html>

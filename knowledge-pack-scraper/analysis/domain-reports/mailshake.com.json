@@ -1,0 +1,453 @@
+{
+  "domain": "mailshake.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:20.091949",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "footer",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 25,
+      "frequency": 25.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "cat-item",
+      "count": 13
+    },
+    {
+      "class": "img-fluid",
+      "count": 12
+    },
+    {
+      "class": "ez-toc-section",
+      "count": 11
+    },
+    {
+      "class": "ez-toc-section-end",
+      "count": 11
+    },
+    {
+      "class": "ez-toc-link",
+      "count": 11
+    },
+    {
+      "class": "ez-toc-page-1",
+      "count": 8
+    },
+    {
+      "class": "container-fluid",
+      "count": 6
+    },
+    {
+      "class": "ez-toc-heading-level-3",
+      "count": 6
+    },
+    {
+      "class": "col-md-auto",
+      "count": 6
+    },
+    {
+      "class": "row",
+      "count": 5
+    },
+    {
+      "class": "ez-toc-heading-level-2",
+      "count": 5
+    },
+    {
+      "class": "links",
+      "count": 5
+    },
+    {
+      "class": "mshk-footer__widget",
+      "count": 5
+    },
+    {
+      "class": "textwidget",
+      "count": 5
+    },
+    {
+      "class": "nav-item",
+      "count": 4
+    },
+    {
+      "class": "nav-link",
+      "count": 4
+    },
+    {
+      "class": "col-md-4",
+      "count": 4
+    },
+    {
+      "class": "justify-content-center",
+      "count": 3
+    },
+    {
+      "class": "container",
+      "count": 3
+    },
+    {
+      "class": "alignnone",
+      "count": 3
+    },
+    {
+      "class": "col-md-3",
+      "count": 3
+    },
+    {
+      "class": "ez-toc-list-level-3",
+      "count": 3
+    },
+    {
+      "class": "mshk-archive__post",
+      "count": 3
+    },
+    {
+      "class": "mshk-archive__post--image",
+      "count": 3
+    },
+    {
+      "class": "mshk-archive__post--entry",
+      "count": 3
+    },
+    {
+      "class": "category",
+      "count": 3
+    },
+    {
+      "class": "title",
+      "count": 3
+    },
+    {
+      "class": "align-items-center",
+      "count": 2
+    },
+    {
+      "class": "g-0",
+      "count": 2
+    },
+    {
+      "class": "avatar",
+      "count": 2
+    },
+    {
+      "class": "mce_SELRES_start",
+      "count": 2
+    },
+    {
+      "class": "legend-title",
+      "count": 2
+    },
+    {
+      "class": "legend-value",
+      "count": 2
+    },
+    {
+      "class": "fa",
+      "count": 2
+    },
+    {
+      "class": "yoast-schema-graph",
+      "count": 1
+    },
+    {
+      "class": "d-flex",
+      "count": 1
+    },
+    {
+      "class": "flex-column",
+      "count": 1
+    },
+    {
+      "class": "flex-lg-row",
+      "count": 1
+    },
+    {
+      "class": "mshk-blog",
+      "count": 1
+    },
+    {
+      "class": "mshk-header",
+      "count": 1
+    },
+    {
+      "class": "navbar",
+      "count": 1
+    },
+    {
+      "class": "navbar-expand-lg",
+      "count": 1
+    },
+    {
+      "class": "mshk-navbar",
+      "count": 1
+    },
+    {
+      "class": "navbar-brand",
+      "count": 1
+    },
+    {
+      "class": "navbar-toggler",
+      "count": 1
+    },
+    {
+      "class": "navbar-toggler-icon",
+      "count": 1
+    },
+    {
+      "class": "fas",
+      "count": 1
+    },
+    {
+      "class": "fa-bars",
+      "count": 1
+    },
+    {
+      "class": "collapse",
+      "count": 1
+    },
+    {
+      "class": "navbar-collapse",
+      "count": 1
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "www-widgetapi-script",
+      "count": 1
+    },
+    {
+      "id": "wp-block-library-css",
+      "count": 1
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "ez-toc-css",
+      "count": 1
+    },
+    {
+      "id": "ez-toc-inline-css",
+      "count": 1
+    },
+    {
+      "id": "mailshake-blog-css",
+      "count": 1
+    },
+    {
+      "id": "akismet-widget-style-inline-css",
+      "count": 1
+    },
+    {
+      "id": "jquery-core-js",
+      "count": 1
+    },
+    {
+      "id": "jquery-migrate-js",
+      "count": 1
+    },
+    {
+      "id": "bootstrap-js",
+      "count": 1
+    },
+    {
+      "id": "mailshake-common-defer-js",
+      "count": 1
+    },
+    {
+      "id": "mailshake-single-defer-js",
+      "count": 1
+    },
+    {
+      "id": "mailshake-youtube-load-defer-js",
+      "count": 1
+    },
+    {
+      "id": "wp-custom-css",
+      "count": 1
+    },
+    {
+      "id": "omapi-css",
+      "count": 1
+    },
+    {
+      "id": "mshk-top-banner",
+      "count": 1
+    },
+    {
+      "id": "navbarNav",
+      "count": 1
+    },
+    {
+      "id": "avg-commission-rates",
+      "count": 1
+    },
+    {
+      "id": "job-title",
+      "count": 1
+    },
+    {
+      "id": "total-salary",
+      "count": 1
+    },
+    {
+      "id": "donut-chart",
+      "count": 1
+    },
+    {
+      "id": "performance-value",
+      "count": 1
+    },
+    {
+      "id": "base-value",
+      "count": 1
+    },
+    {
+      "id": "previous-job",
+      "count": 1
+    },
+    {
+      "id": "next-job",
+      "count": 1
+    },
+    {
+      "id": "sales-commissions-table",
+      "count": 1
+    },
+    {
+      "id": "what-are-commission-rates",
+      "count": 1
+    },
+    {
+      "id": "average-sales-commission",
+      "count": 1
+    },
+    {
+      "id": "how-much-do-sales-reps-make",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "nav"
+    ],
+    "css_selector": null,
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "low"
+  }
+}

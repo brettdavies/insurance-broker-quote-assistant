@@ -1,0 +1,180 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Insurance Data Extraction Schema",
+  "description": "Schema for LLM extraction of insurance data from filtered web pages",
+  "type": "object",
+  "required": ["carrier", "page_id", "data_points"],
+  "properties": {
+    "carrier": {
+      "type": "string",
+      "description": "Insurance carrier name (e.g., GEICO, Progressive, State Farm). Use canonical name if identified.",
+      "examples": ["GEICO", "Progressive", "State Farm", "Allstate", "Unknown"]
+    },
+    "page_id": {
+      "type": "string",
+      "description": "Page identifier from page-tracker (e.g., page_abc123)",
+      "pattern": "^page_[a-z0-9]+$"
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Original URL of the page being extracted"
+    },
+    "accessed_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date the page was accessed (YYYY-MM-DD)"
+    },
+    "data_points": {
+      "type": "array",
+      "description": "Array of extracted insurance data points",
+      "items": {
+        "type": "object",
+        "required": ["type", "data", "confidence"],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "discount",
+              "eligibility",
+              "state_availability",
+              "product_offering",
+              "pricing_estimate",
+              "compensation",
+              "coverage_detail",
+              "requirement",
+              "state_minimum_coverage",
+              "state_requirement"
+            ],
+            "description": "Type of data point extracted"
+          },
+          "data": {
+            "type": "object",
+            "description": "The actual extracted data (structure varies by type)",
+            "oneOf": [
+              {
+                "title": "Discount",
+                "properties": {
+                  "name": {"type": "string"},
+                  "percentage": {"type": "number"},
+                  "description": {"type": "string"},
+                  "products": {
+                    "type": "array",
+                    "items": {"type": "string"}
+                  },
+                  "states": {
+                    "type": "array",
+                    "items": {"type": "string"}
+                  },
+                  "requirements": {
+                    "type": "object",
+                    "properties": {
+                      "mustHaveProducts": {
+                        "type": "array",
+                        "items": {"type": "string"}
+                      },
+                      "minProducts": {"type": "number"},
+                      "cleanRecord3Yr": {"type": "boolean"},
+                      "ownsHome": {"type": "boolean"},
+                      "ageMin": {"type": "number"},
+                      "ageMax": {"type": "number"},
+                      "otherRequirements": {"type": "string"}
+                    }
+                  },
+                  "stackable": {"type": "boolean"}
+                },
+                "required": ["name"]
+              },
+              {
+                "title": "Eligibility",
+                "properties": {
+                  "product": {"type": "string"},
+                  "minAge": {"type": "number"},
+                  "maxAge": {"type": "number"},
+                  "maxVehicles": {"type": "number"},
+                  "maxDrivers": {"type": "number"},
+                  "cleanRecordRequired": {"type": "boolean"},
+                  "stateSpecific": {
+                    "type": "object",
+                    "additionalProperties": true
+                  },
+                  "otherCriteria": {"type": "string"}
+                }
+              },
+              {
+                "title": "State Availability",
+                "properties": {
+                  "states": {
+                    "type": "array",
+                    "items": {"type": "string"}
+                  },
+                  "products": {
+                    "type": "array",
+                    "items": {"type": "string"}
+                  },
+                  "notes": {"type": "string"}
+                },
+                "required": ["states"]
+              },
+              {
+                "title": "Product Offering",
+                "properties": {
+                  "product": {"type": "string"},
+                  "available": {"type": "boolean"},
+                  "states": {
+                    "type": "array",
+                    "items": {"type": "string"}
+                  },
+                  "description": {"type": "string"}
+                },
+                "required": ["product"]
+              },
+              {
+                "title": "Pricing Estimate",
+                "properties": {
+                  "product": {"type": "string"},
+                  "state": {"type": "string"},
+                  "averageAnnual": {"type": "number"},
+                  "range": {
+                    "type": "object",
+                    "properties": {
+                      "low": {"type": "number"},
+                      "high": {"type": "number"}
+                    }
+                  },
+                  "context": {"type": "string"}
+                }
+              },
+              {
+                "title": "Compensation",
+                "properties": {
+                  "product": {"type": "string"},
+                  "commissionRate": {"type": "number"},
+                  "incentives": {"type": "string"},
+                  "notes": {"type": "string"}
+                }
+              },
+              {
+                "title": "Generic Data",
+                "additionalProperties": true
+              }
+            ]
+          },
+          "context": {
+            "type": "string",
+            "description": "Surrounding text from the page for verification (1-2 sentences)"
+          },
+          "confidence": {
+            "type": "string",
+            "enum": ["high", "medium", "low"],
+            "description": "Confidence level in the extracted data"
+          },
+          "element_ref": {
+            "type": "string",
+            "description": "CSS selector or XPath where data was found (if identifiable)"
+          }
+        }
+      }
+    }
+  }
+}

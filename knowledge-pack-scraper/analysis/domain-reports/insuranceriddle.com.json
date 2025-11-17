@@ -1,0 +1,335 @@
+{
+  "domain": "insuranceriddle.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:19.654857",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "footer",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "nav",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 15,
+      "frequency": 15.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "flex",
+      "count": 26
+    },
+    {
+      "class": "items-center",
+      "count": 24
+    },
+    {
+      "class": "lucide",
+      "count": 24
+    },
+    {
+      "class": "font-bold",
+      "count": 16
+    },
+    {
+      "class": "text-foreground",
+      "count": 15
+    },
+    {
+      "class": "gap-2",
+      "count": 12
+    },
+    {
+      "class": "w-5",
+      "count": 12
+    },
+    {
+      "class": "h-5",
+      "count": 12
+    },
+    {
+      "class": "text-accent",
+      "count": 12
+    },
+    {
+      "class": "font-medium",
+      "count": 10
+    },
+    {
+      "class": "mx-auto",
+      "count": 9
+    },
+    {
+      "class": "text-center",
+      "count": 9
+    },
+    {
+      "class": "text-white",
+      "count": 9
+    },
+    {
+      "class": "text-sm",
+      "count": 9
+    },
+    {
+      "class": "mb-3",
+      "count": 9
+    },
+    {
+      "class": "text-muted-foreground",
+      "count": 9
+    },
+    {
+      "class": "justify-center",
+      "count": 8
+    },
+    {
+      "class": "lucide-arrow-right",
+      "count": 8
+    },
+    {
+      "class": "shrink-0",
+      "count": 8
+    },
+    {
+      "class": "p-4",
+      "count": 7
+    },
+    {
+      "class": "mb-6",
+      "count": 7
+    },
+    {
+      "class": "text-2xl",
+      "count": 6
+    },
+    {
+      "class": "md:text-3xl",
+      "count": 6
+    },
+    {
+      "class": "transition-all",
+      "count": 6
+    },
+    {
+      "class": "gap-3",
+      "count": 6
+    },
+    {
+      "class": "flex-col",
+      "count": 6
+    },
+    {
+      "class": "w-8",
+      "count": 6
+    },
+    {
+      "class": "h-8",
+      "count": 6
+    },
+    {
+      "class": "px-4",
+      "count": 5
+    },
+    {
+      "class": "rounded-full",
+      "count": 5
+    },
+    {
+      "class": "font-semibold",
+      "count": 5
+    },
+    {
+      "class": "text-lg",
+      "count": 5
+    },
+    {
+      "class": "w-full",
+      "count": 4
+    },
+    {
+      "class": "container",
+      "count": 4
+    },
+    {
+      "class": "md:text-xl",
+      "count": 4
+    },
+    {
+      "class": "block",
+      "count": 4
+    },
+    {
+      "class": "rounded-2xl",
+      "count": 4
+    },
+    {
+      "class": "p-6",
+      "count": 4
+    },
+    {
+      "class": "md:p-8",
+      "count": 4
+    },
+    {
+      "class": "transform",
+      "count": 4
+    },
+    {
+      "class": "hover:scale-105",
+      "count": 4
+    },
+    {
+      "class": "duration-200",
+      "count": 4
+    },
+    {
+      "class": "lucide-phone",
+      "count": 4
+    },
+    {
+      "class": "bg-accent/10",
+      "count": 4
+    },
+    {
+      "class": "mb-1",
+      "count": 4
+    },
+    {
+      "class": "items-start",
+      "count": 4
+    },
+    {
+      "class": "absolute",
+      "count": 3
+    },
+    {
+      "class": "inset-0",
+      "count": 3
+    },
+    {
+      "class": "inline-flex",
+      "count": 3
+    },
+    {
+      "class": "backdrop-blur-sm",
+      "count": 3
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "root",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [],
+    "css_selector": "main",
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "low"
+  }
+}

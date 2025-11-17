@@ -1,0 +1,1 @@
+#![Icon for www.insurance-forums.com](https://www.insurance-forums.com/favicon.ico)www.insurance-forums.com

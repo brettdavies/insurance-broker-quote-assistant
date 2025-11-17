@@ -1,0 +1,467 @@
+barsbincheckedcloseclouddown-chevrondownexpandexternal-linkfast-forwardfog01101112131415161718192202122232425262728293303132333435363738394404142434445464756789closenafuture-twcicekeylayersleft-chevronlocationminus-thinminusfullMoonfirstQuarterlastQuarternewMoonwaningCrescentwaningGibbouswaxingCrescentwaxingGibbousnext-buttonpause-buttonpause-iconpause-twcplay-buttonplay-icon-engageplay-iconplay-twcplus-thinpluspoolprecipRainprecipMixprecipRainprecipSnowprev-buttonright-chevronsearchsettingsshowershrinkstar-emptystar-fullstop-buttonsunrisesunsettogglesup-chevronvolumewarningwind
+[![LiveNOW from FOX | Breaking News, Live Events](https://static.foxtv.com/static/orion/img/core/s/logos/fts-livenow-a.svg) ![LiveNOW from FOX | Breaking News, Live Events](https://static.foxtv.com/static/orion/img/core/s/logos/fts-livenow-b.svg)](https://www.livenowfox.com/ "LiveNOW from FOX — Local News & Weather")
+  * [Live](https://www.livenowfox.com/live)
+  * [News](https://www.livenowfox.com/news)
+  * [Weather](https://www.livenowfox.com/weather)
+  * [Politics](https://www.livenowfox.com/tag/politics)
+  * [Where to Watch](https://www.livenowfox.com/where-to-watch)
+  * [LiveNOW Team](https://www.livenowfox.com/team)
+  * [About](https://www.livenowfox.com/about-us)
+  * [More](https://www.livenowfox.com/news/average-cost-home-insurance-hits-2470-per-year-see-how-your-state-ranks)
+
+
+[Watch Live](https://www.livenowfox.com/live)
+[Expand / Collapse search](https://www.livenowfox.com/news/average-cost-home-insurance-hits-2470-per-year-see-how-your-state-ranks)
+[☰](https://www.livenowfox.com/news/average-cost-home-insurance-hits-2470-per-year-see-how-your-state-ranks)
+Search site
+###### [Live](https://www.livenowfox.com/live)
+  * [Where To Watch](https://www.livenowfox.com/where-to-watch)
+  * [LiveNOW on YouTube](https://www.youtube.com/livenowfox)
+  * [FOX TV Stations](https://www.livenowfox.com/live)
+  * [FOX Weather](https://www.livenowfox.com/live/fox-weather)
+  * [Tubi](https://tubitv.com/live)
+  * [FOX SOUL](https://www.livenowfox.com/live/soul-live)
+
+
+###### [News](https://www.livenowfox.com/news)
+  * [Top Stories](https://www.livenowfox.com/news)
+  * [National](https://www.livenowfox.com/national-news)
+  * [World](https://www.livenowfox.com/tag/world)
+  * [Politics](https://www.livenowfox.com/tag/politics)
+  * [Crime](https://www.livenowfox.com/tag/crime-publicsafety)
+  * [Police Chases](https://www.livenowfox.com/tag/crime-publicsafety/police-chases)
+  * [Idaho Murders](https://www.livenowfox.com/tag/crime-publicsafety/idaho-students-killed)
+  * [Israel-Hamas War](https://www.livenowfox.com/tag/israel-war-hamas/)
+  * [Russia-Ukraine War](https://www.livenowfox.com/tag/russia-ukraine)
+
+
+###### [Northeast](https://www.livenowfox.com/news)
+  * [New York News - FOX 5 NY](https://www.fox5ny.com/)
+  * [Philadelphia News - FOX 29 Philadelphia](https://www.fox29.com/)
+  * [Washington, DC News - FOX 5 DC](https://www.fox5dc.com/)
+  * [New Jersey News - My9NJ](https://www.my9nj.com/)
+
+
+###### [South](https://www.livenowfox.com/news)
+  * [Atlanta News - FOX 5 Atlanta](https://www.fox5atlanta.com/)
+  * [Orlando News - FOX 35 Orlando](https://www.fox35orlando.com/)
+  * [Tampa News - FOX 13 News](https://www.fox13news.com/)
+  * [Gainesville News - FOX 51 Gainesville](https://www.wogx.com/)
+  * [Dallas News - FOX 4 News](https://www.fox4news.com/)
+  * [Houston News - FOX 26 Houston](https://www.fox26houston.com/)
+  * [Austin News - FOX 7 Austin](https://www.fox7austin.com/)
+
+
+###### [Midwest](https://www.livenowfox.com/news)
+  * [Chicago News - FOX 32 Chicago](https://www.fox32chicago.com/)
+  * [Detroit News - FOX 2 Detroit](https://www.fox2detroit.com/)
+  * [Minneapolis News - FOX 9](https://www.fox9.com/)
+  * [Milwaukee News - FOX 6 News](https://www.fox6now.com/)
+
+
+###### [West](https://www.livenowfox.com/news)
+  * [Phoenix News - FOX 10 Phoenix](https://www.fox10phoenix.com/)
+  * [Los Angeles News - FOX 11](https://www.foxla.com/)
+  * [San Francisco News - KTVU FOX 2](https://www.ktvu.com/)
+  * [Seattle News - FOX 13 Seattle](https://www.fox13seattle.com/)
+
+
+###### [Weather](https://www.livenowfox.com/weather)
+  * [Winter Weather](https://www.livenowfox.com/tag/weather/winter-weather)
+  * [Severe Weather](https://www.livenowfox.com/tag/weather/severe-weather)
+  * [Hurricanes](https://www.livenowfox.com/tag/weather/hurricanes)
+  * [Environment](https://www.livenowfox.com/tag/environment)
+  * [FOX Weather](https://www.foxweather.com)
+
+
+###### [Money](https://www.livenowfox.com/money)
+  * [Economy](https://www.livenowfox.com/tag/money/us-economy)
+  * [Business](https://www.livenowfox.com/tag/business)
+  * [Personal Finance](https://www.livenowfox.com/tag/business/personal-finance)
+  * [Consumer](https://www.livenowfox.com/tag/consumer)
+  * [Real Estate](https://www.livenowfox.com/tag/consumer/real-estate)
+
+
+###### [Science](https://www.livenowfox.com/tag/science)
+  * [Air & Space](https://www.livenowfox.com/tag/science/air-space)
+  * [SpaceX](https://www.livenowfox.com/tag/organization/spacex)
+  * [Technology](https://www.livenowfox.com/tag/technology)
+  * [Wild Nature](https://www.livenowfox.com/tag/science/wild-nature)
+
+
+###### [Viral](https://www.livenowfox.com/tag/viral)
+  * [Heartwarming News](https://www.livenowfox.com/tag/heartwarming)
+  * [Unusual](https://www.livenowfox.com/tag/unusual)
+  * [Pets & Animals](https://www.livenowfox.com/tag/pets-animals)
+
+
+###### [Other News](https://www.livenowfox.com/news)
+  * [Sports](https://www.livenowfox.com/sports)
+  * [Health](https://www.livenowfox.com/tag/health)
+  * [Lifestyle](https://www.livenowfox.com/tag/lifestyle)
+  * [Entertainment](https://www.livenowfox.com/tag/entertainment)
+  * [FOX Shows](https://www.livenowfox.com/shows/fox-shows)
+
+
+###### [About LiveNOW](https://www.livenowfox.com/about-us)
+  * [Contact Us](https://www.livenowfox.com/contact-us)
+  * [Distribution Partners](https://www.livenowfox.com/where-to-watch)
+  * [LiveNOW Team](https://www.livenowfox.com/team)
+  * [Email Newsletters](https://www.livenowfox.com/newsletter-signup)
+
+
+# Average cost of home insurance hits $2,470 per year; see how your state ranks
+**By**[Catherine Stoddard ](https://livenowfox.com/person/s/catherine-stoddard)
+**Published** August 25, 2025 8:06pm EDT 
+[Real Estate](https://www.livenowfox.com/tag/consumer/real-estate)
+[FOX Local](https://www.foxlocal.com/)
+Share
+  * [Copy Link](https://www.livenowfox.com/news/average-cost-home-insurance-hits-2470-per-year-see-how-your-state-ranks)
+  * [Email](https://www.livenowfox.com/news/average-cost-home-insurance-hits-2470-per-year-see-how-your-state-ranks)
+  * [Facebook](https://www.livenowfox.com/news/average-cost-home-insurance-hits-2470-per-year-see-how-your-state-ranks)
+  * [Twitter](https://www.livenowfox.com/news/average-cost-home-insurance-hits-2470-per-year-see-how-your-state-ranks)
+  * [LinkedIn](https://www.livenowfox.com/news/average-cost-home-insurance-hits-2470-per-year-see-how-your-state-ranks)
+  * [Reddit](https://www.livenowfox.com/news/average-cost-home-insurance-hits-2470-per-year-see-how-your-state-ranks)
+
+
+![](https://images.foxtv.com/static.livenowfox.com/www.livenowfox.com/content/uploads/2025/08/764/432/home-insurance.jpg?ve=1&tl=1) article
+FILE - Houses and vehicles are seen in the flooded Lower Ninth Ward Sept. 24, 2005 in New Orleans, Louisiana. (Photo by Ethan Miller/Getty Images)
+#### The Brief
+  *     * The national average cost of home insurance is up 9% compared to two years ago, according to Bankrate.
+    * The state with the highest average home insurance cost is Louisiana.
+    * California saw the fastest increase in home insurance. 
+
+
+Just like almost everything else, the cost of home insurance is up.
+[](https://l.ottoinsurance.com/n)[Texas: Worst Car Insurance Companies for Overcharging (Is Yours On The List?)Drivers Are Saving Up To 33% On Insurance With ThisOTTO Insurance |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbnails-o:Mid%20Article%20Thumbnails:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbnails-o:Mid%20Article%20Thumbnails:) Get Deals](https://l.ottoinsurance.com/n "Texas: Worst Car Insurance Companies for Overcharging \(Is Yours On The List?\)")
+Undo
+[_Bankrate recently compiled_](https://www.bankrate.com/insurance/homeowners-insurance/the-true-cost-of-home-insurance/) the average home insurance cost for each state, with the national average landing at $2,470. 
+## True cost of home insurance in 2025 by state
+![](https://www.livenowfox.com/news/average-cost-home-insurance-hits-2470-per-year-see-how-your-state-ranks)
+By the numbers:
+The average cost of home insurance has increased 9% since 2023, according to Bankrate. 
+California saw the fastest increase between 2023 and 2025, but that doesn’t mean it ranked the highest.
+The state that had the highest average cost for home insurance was Louisiana at $6,274, and much of that is due to extreme weather conditions.
+Coming in second was Nebraska at $6,425 and Florida at $5,735, both of which also experience severe weather.
+"Louisiana and Florida are frequently struck by hurricanes, while Nebraska homes are at risk for tornado and hail damage. Extreme weather means more home insurance claims and higher premiums," Bankrate said.
+Bankrate’s data took into account married homeowners with homes built in 2015, 2016 and 2017 that had good credit and the following coverage: 
+  * Coverage A, Dwelling: $300,000
+  * Coverage B, Other Structures: $30,000
+  * Coverage C, Personal Property: $150,000
+  * Coverage D, Loss of Use: $60,000
+  * Coverage E, Liability: $500,000
+  * Coverage F, Medical Payments: $1,000
+
+
+**The Source:** Information for this article was taken from data compiled by Bakrate between July 2023, July 2024 and July 2025. Rates for all ZIP codes and insurance carriers in all 50 states and Washington, D.C. was also included. 
+[Real Estate](https://www.livenowfox.com/tag/consumer/real-estate)[Money](https://www.livenowfox.com/tag/money)[Consumer](https://www.livenowfox.com/tag/consumer)
+[](https://www.livenowfox.com/news/donna-jean-godchaux-mackay-former-grateful-dead-vocalist-dies-78-reports)[Donna Jean Godchaux-MacKay, former Grateful Dead vocalist, dies at 78: Reports | LiveNOW from FOXDiscover](https://www.livenowfox.com/news/donna-jean-godchaux-mackay-former-grateful-dead-vocalist-dies-78-reports "Donna Jean Godchaux-MacKay, former Grateful Dead vocalist, dies at 78: Reports | LiveNOW from FOX")
+[](https://www.livenowfox.com/news/whispers-singer-walter-scott-dead)[Walter Scott, founding member of The Whispers, dies at 81: Reports | LiveNOW from FOXDiscover](https://www.livenowfox.com/news/whispers-singer-walter-scott-dead "Walter Scott, founding member of The Whispers, dies at 81: Reports | LiveNOW from FOX")
+[](https://lp.pretected.com/articles/v2)[Auto Insurance QuotesWorst Auto Insurance Companies for Overcharging (Is Yours On The List?)Read MoreSkip](https://lp.pretected.com/articles/v2 "Worst Auto Insurance Companies for Overcharging \(Is Yours On The List?\)")
+[](https://www.livenowfox.com/news/ceo-hr-kiss-cam-coldplay?amp_js_v=0.1&usqp=mq331AQIUAKwASCAAgM=)[Coldplay kiss cam catches alleged affair between AI CEO and HR chief | LiveNOW from FOXDiscover](https://www.livenowfox.com/news/ceo-hr-kiss-cam-coldplay?amp_js_v=0.1&usqp=mq331AQIUAKwASCAAgM= "Coldplay kiss cam catches alleged affair between AI CEO and HR chief | LiveNOW from FOX")
+[](https://www.livenowfox.com/news/jill-sobule-death-house-fire)[‘I Kissed a Girl’ singer Jill Sobule dies in Minnesota house fire | LiveNOW from FOXDiscover](https://www.livenowfox.com/news/jill-sobule-death-house-fire "‘I Kissed a Girl’ singer Jill Sobule dies in Minnesota house fire | LiveNOW from FOX")
+[](https://t.truehealthbrief.com/k48l51yfsn)[Dementia and Memory Issues Have Been Linked to a Common Habit. Do You Do It?Memory News |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-01-bp:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%201:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-01-bp:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%201:) Learn More](https://t.truehealthbrief.com/k48l51yfsn "Dementia and Memory Issues Have Been Linked to a Common Habit. Do You Do It?")
+[](https://t.truehealthbrief.com/k48l51yfsn)[Neurologists Beg: Stop Eating This If You Have Memory LossMemory News |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-01-a-bp:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%202:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-01-a-bp:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%202:) Click Here](https://t.truehealthbrief.com/k48l51yfsn "Neurologists Beg: Stop Eating This If You Have Memory Loss")
+[](https://lp.pretected.com/articles/v2)[Texas: Worst Zip Codes For Auto Insurance (Hope Yours Isn't on List)Auto Insurance Quotes |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-01-a-bp:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%202:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-01-a-bp:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%202:) Learn More](https://lp.pretected.com/articles/v2 "Texas: Worst Zip Codes For Auto Insurance \(Hope Yours Isn't on List\)")
+[](https://financebuzz.com/dumb-money-moves-yaez-1)[8 Dumbest Things Middle-Class Americans Waste Money OnThink you're good with money? These hidden money traps are fooling even the smartest Americans.FinanceBuzz |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-01-bp:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%203:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-01-bp:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%203:) Read More](https://financebuzz.com/dumb-money-moves-yaez-1 "8 Dumbest Things Middle-Class Americans Waste Money On")
+[by Taboola](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=google-adx-card-delta:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%204:)[by Taboola](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=google-adx-card-delta:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%204:)
+You might be interested in the content above- |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=google-adx-card-delta:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%204:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=google-adx-card-delta:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%204:)
+[](https://trace.mediago.io/ju/ic)[Here's The Estimated Walk-In Shower Price in 2025homebuddy.com |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=banner-on-product-desk-delta:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%205:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=banner-on-product-desk-delta:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%205:) ](https://trace.mediago.io/ju/ic "Here's The Estimated Walk-In Shower Price in 2025")
+[](http://www.oiufhwh89.com/aff_c)[Here’s What a 1-Day Walk-in Tub Should Cost YouHomeBuddy |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-01-a-bp:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%206:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-01-a-bp:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%206:) Learn More](http://www.oiufhwh89.com/aff_c "Here’s What a 1-Day Walk-in Tub Should Cost You")
+[](https://healthywallet.co/go/68934114bc580265ba018da3)[Social Security Recipients Under $2,384/Mo Now Entitled To 12 "Kickbacks" (Tap for List)HealthyWallet |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-01-a-bp:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%206:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-01-a-bp:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%206:) Learn More](https://healthywallet.co/go/68934114bc580265ba018da3 "Social Security Recipients Under $2,384/Mo Now Entitled To 12 "Kickbacks" \(Tap for List\)")
+[](https://financebuzz.com/money-moves-senior-benefits-yaez-1)[These Side Hustles Are Best For Older Workers Living On Just Social SecurityFinanceBuzz |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-01-bp:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%207:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-01-bp:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%207:) Read More](https://financebuzz.com/money-moves-senior-benefits-yaez-1 "These Side Hustles Are Best For Older Workers Living On Just Social Security")
+[by Taboola](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=google-adx-card-delta:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%208:)[by Taboola](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=google-adx-card-delta:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%208:)
+Click here for more information- |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=google-adx-card-delta:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%208:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=google-adx-card-delta:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%208:)
+[](https://shop.trybello.com/tb-a134-adv)[The Real Reason Your Hair Keeps Thinning—No One Talks About This HormoneTryBello |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-01-a-bp:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%209:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-01-a-bp:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%209:) Learn More](https://shop.trybello.com/tb-a134-adv "The Real Reason Your Hair Keeps Thinning—No One Talks About This Hormone")
+[](https://track.skincaremagazine.org/040f5bcc-1518-4699-b1bb-803af2635b35)[MD: Lotions Won't Tighten Wrinkles! You Only Need This 1 Drugstore ItemOlavita |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-01-a-bp:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%209:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-01-a-bp:Desktop%20-%20Below%20Article%20-%20New%201x1%20|%20Card%209:) ](https://track.skincaremagazine.org/040f5bcc-1518-4699-b1bb-803af2635b35 "MD: Lotions Won't Tighten Wrinkles! You Only Need This 1 Drugstore Item")
+[](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-a:Mobile%20-%20Below%20Article%20Feed%20-%20New:)[](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-a:Mobile%20-%20Below%20Article%20Feed%20-%20New:)
+[Ad Content by Taboola |](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-a:Mobile%20-%20Below%20Article%20Feed%20-%20New:)[Ad Content by Taboola |](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-a:Mobile%20-%20Below%20Article%20Feed%20-%20New:)
+[](https://tick.topchicdeals.com/c8510bce-2a40-4c59-af52-8d942b791ac0)[Here Are The 28+ Coolest Gifts Break All Sales Records in Austin -abbyGift |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-a:Mobile%20-%20Below%20Article%20Feed%20-%20New:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-a:Mobile%20-%20Below%20Article%20Feed%20-%20New:) Shop Now](https://tick.topchicdeals.com/c8510bce-2a40-4c59-af52-8d942b791ac0 "Here Are The 28+ Coolest Gifts Break All Sales Records in Austin -abby")
+[](https://healthywallet.co/go/68934114bc580265ba018da3)[Seniors Born 1939-1969 Receive 11 Benefits This Month If They AskHealthyWallet |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-a:Mobile%20-%20Below%20Article%20Feed%20-%20New:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-a:Mobile%20-%20Below%20Article%20Feed%20-%20New:) Learn More](https://healthywallet.co/go/68934114bc580265ba018da3 "Seniors Born 1939-1969 Receive 11 Benefits This Month If They Ask")
+### Trending
+[ ![How to get free, discounted groceries during SNAP benefit lapse](https://images.foxtv.com/static.livenowfox.com/www.livenowfox.com/content/uploads/2025/10/200/112/gettyimages-1217134607-copy-scaled.jpg?ve=1&tl=1) ](https://www.livenowfox.com/news/snap-benefits-november-2025-groceries-free-delivery-door-dash-go-puff)
+#### [How to get free, discounted groceries during SNAP benefit lapse](https://www.livenowfox.com/news/snap-benefits-november-2025-groceries-free-delivery-door-dash-go-puff)
+[ ![Stores offering Thanksgiving meal deals in 2025](https://images.foxtv.com/static.livenowfox.com/www.livenowfox.com/content/uploads/2025/11/32/18/gettyimages-2243568922.jpg?ve=1&tl=1) ](https://www.livenowfox.com/money/thanksgiving-meal-deals-2025)
+#### [Stores offering Thanksgiving meal deals in 2025](https://www.livenowfox.com/money/thanksgiving-meal-deals-2025)
+[ ![Holiday music is back on the radio: Here's where you can find it](https://images.foxtv.com/static.livenowfox.com/www.livenowfox.com/content/uploads/2025/11/32/18/mariah-carey-getty-scaled.jpg?ve=1&tl=1) ](https://www.livenowfox.com/news/holiday-music-back-radio-siriusxm-where-find)
+#### [Holiday music is back on the radio: Here's where you can find it](https://www.livenowfox.com/news/holiday-music-back-radio-siriusxm-where-find)
+[ ![SNAP benefits: Here's how much payments will be in November](https://images.foxtv.com/static.livenowfox.com/www.livenowfox.com/content/uploads/2025/11/32/18/snap-benefits-sign.jpg?ve=1&tl=1) ](https://www.livenowfox.com/news/snap-benefits-payments-november)
+#### [SNAP benefits: Here's how much payments will be in November](https://www.livenowfox.com/news/snap-benefits-payments-november)
+[ ![UPS plane crash: Identities of victims aboard aircraft revealed](https://images.foxtv.com/static.livenowfox.com/www.livenowfox.com/content/uploads/2025/11/32/18/ups-crash.jpg?ve=1&tl=1) ](https://www.livenowfox.com/news/ups-plane-crash-identities-victims-aboard-aircraft-revealed)
+#### [UPS plane crash: Identities of victims aboard aircraft revealed](https://www.livenowfox.com/news/ups-plane-crash-identities-victims-aboard-aircraft-revealed)
+##  Latest News 
+[ ![President Trump meets with Prime Minister of Hungary](https://images.foxtv.com/c107833-mcdn.mp.lura.live/expiretime=2082787200/3b34d64a7c7714400968d5c9a99ccbc3714fa43ffc205a362fab77f7342f9e81/iupl/971/ED0/32/18/971ED00BE2A6BF00CBB15F78F420E09A.jpg?ve=1&tl=1) video](https://www.livenowfox.com/video/1737306)
+### [President Trump meets with Prime Minister of Hungary](https://www.livenowfox.com/video/1737306)
+November 7, 2025 1:38pm EST
+[ ![Trump, Leavitt rip into reporters over affordability](https://images.foxtv.com/c107833-mcdn.mp.lura.live/expiretime=2082787200/062db9b0d8880a776460b2274c6ee2fe1e67fee06404240757a6735222a6de08/iupl/B69/61B/32/18/B6961BFC0142E98ECED68CDF683DA308.jpg?ve=1&tl=1) video](https://www.livenowfox.com/video/1737300)
+### [Trump, Leavitt rip into reporters over affordability](https://www.livenowfox.com/video/1737300)
+November 7, 2025 1:36pm EST
+[ ![Louisville mayor calls for unity after UPS plane crash](https://images.foxtv.com/c107833-mcdn.mp.lura.live/expiretime=2082787200/4585aa049ec8d6ea40b5b079caf310dad5b86fa6e2515fe9552dfc88a158d965/iupl/A0D/969/32/18/A0D969BF1846ED83B5F44D1BABA046FE.jpg?ve=1&tl=1) video](https://www.livenowfox.com/video/1737257)
+### [Louisville mayor calls for unity after UPS plane crash](https://www.livenowfox.com/video/1737257)
+November 7, 2025 12:48pm EST
+[ ![Congresswoman Marjorie Taylor Greene on shutdown](https://images.foxtv.com/c107833-mcdn.mp.lura.live/expiretime=2082787200/0235b271b831e12bb0a05cf6d3d071a67f3a266abf1d776713ea639f1a9314f4/iupl/857/F0A/32/18/857F0A2E88987FBCEFD2C58AF046B161.jpg?ve=1&tl=1) video](https://www.livenowfox.com/video/1737206)
+### [Congresswoman Marjorie Taylor Greene on shutdown](https://www.livenowfox.com/video/1737206)
+November 7, 2025 11:20am EST
+[ ![US strikes another drug-smuggling boat](https://images.foxtv.com/c107833-mcdn.mp.lura.live/expiretime=2082787200/7d5da29ba21028d6b6a833f5d5032135dbfeff3917502bb0f9d4bdf2e3273aa8/iupl/D87/CD9/32/18/D87CD9B80180DBEC721CFA79E410B211.jpg?ve=1&tl=1) video](https://www.livenowfox.com/video/1737149)
+### [US strikes another drug-smuggling boat](https://www.livenowfox.com/video/1737149)
+November 7, 2025 9:37am EST
+###### [Live](https://www.livenowfox.com/live)
+  * [Where To Watch](https://www.livenowfox.com/where-to-watch)
+  * [LiveNOW on YouTube](https://www.youtube.com/livenowfox)
+  * [FOX TV Stations](https://www.livenowfox.com/live)
+  * [FOX Weather](https://www.livenowfox.com/live/fox-weather)
+  * [Tubi](https://tubitv.com/live)
+  * [FOX SOUL](https://www.livenowfox.com/live/soul-live)
+
+
+###### [News](https://www.livenowfox.com/news)
+  * [Top Stories](https://www.livenowfox.com/news)
+  * [National](https://www.livenowfox.com/national-news)
+  * [World](https://www.livenowfox.com/tag/world)
+  * [Politics](https://www.livenowfox.com/tag/politics)
+  * [Crime](https://www.livenowfox.com/tag/crime-publicsafety)
+  * [Police Chases](https://www.livenowfox.com/tag/crime-publicsafety/police-chases)
+  * [Idaho Murders](https://www.livenowfox.com/tag/crime-publicsafety/idaho-students-killed)
+  * [Israel-Hamas War](https://www.livenowfox.com/tag/israel-war-hamas/)
+  * [Russia-Ukraine War](https://www.livenowfox.com/tag/russia-ukraine)
+
+
+###### [Northeast](https://www.livenowfox.com/news)
+  * [New York News - FOX 5 NY](https://www.fox5ny.com/)
+  * [Philadelphia News - FOX 29 Philadelphia](https://www.fox29.com/)
+  * [Washington, DC News - FOX 5 DC](https://www.fox5dc.com/)
+  * [New Jersey News - My9NJ](https://www.my9nj.com/)
+
+
+###### [South](https://www.livenowfox.com/news)
+  * [Atlanta News - FOX 5 Atlanta](https://www.fox5atlanta.com/)
+  * [Orlando News - FOX 35 Orlando](https://www.fox35orlando.com/)
+  * [Tampa News - FOX 13 News](https://www.fox13news.com/)
+  * [Gainesville News - FOX 51 Gainesville](https://www.wogx.com/)
+  * [Dallas News - FOX 4 News](https://www.fox4news.com/)
+  * [Houston News - FOX 26 Houston](https://www.fox26houston.com/)
+  * [Austin News - FOX 7 Austin](https://www.fox7austin.com/)
+
+
+###### [Midwest](https://www.livenowfox.com/news)
+  * [Chicago News - FOX 32 Chicago](https://www.fox32chicago.com/)
+  * [Detroit News - FOX 2 Detroit](https://www.fox2detroit.com/)
+  * [Minneapolis News - FOX 9](https://www.fox9.com/)
+  * [Milwaukee News - FOX 6 News](https://www.fox6now.com/)
+
+
+###### [West](https://www.livenowfox.com/news)
+  * [Phoenix News - FOX 10 Phoenix](https://www.fox10phoenix.com/)
+  * [Los Angeles News - FOX 11](https://www.foxla.com/)
+  * [San Francisco News - KTVU FOX 2](https://www.ktvu.com/)
+  * [Seattle News - FOX 13 Seattle](https://www.fox13seattle.com/)
+
+
+###### [Weather](https://www.livenowfox.com/weather)
+  * [Winter Weather](https://www.livenowfox.com/tag/weather/winter-weather)
+  * [Severe Weather](https://www.livenowfox.com/tag/weather/severe-weather)
+  * [Hurricanes](https://www.livenowfox.com/tag/weather/hurricanes)
+  * [Environment](https://www.livenowfox.com/tag/environment)
+  * [FOX Weather](https://www.foxweather.com)
+
+
+###### [Money](https://www.livenowfox.com/money)
+  * [Economy](https://www.livenowfox.com/tag/money/us-economy)
+  * [Business](https://www.livenowfox.com/tag/business)
+  * [Personal Finance](https://www.livenowfox.com/tag/business/personal-finance)
+  * [Consumer](https://www.livenowfox.com/tag/consumer)
+  * [Real Estate](https://www.livenowfox.com/tag/consumer/real-estate)
+
+
+###### [Science](https://www.livenowfox.com/tag/science)
+  * [Air & Space](https://www.livenowfox.com/tag/science/air-space)
+  * [SpaceX](https://www.livenowfox.com/tag/organization/spacex)
+  * [Technology](https://www.livenowfox.com/tag/technology)
+  * [Wild Nature](https://www.livenowfox.com/tag/science/wild-nature)
+
+
+###### [Viral](https://www.livenowfox.com/tag/viral)
+  * [Heartwarming News](https://www.livenowfox.com/tag/heartwarming)
+  * [Unusual](https://www.livenowfox.com/tag/unusual)
+  * [Pets & Animals](https://www.livenowfox.com/tag/pets-animals)
+
+
+###### [Other News](https://www.livenowfox.com/news)
+  * [Sports](https://www.livenowfox.com/sports)
+  * [Health](https://www.livenowfox.com/tag/health)
+  * [Lifestyle](https://www.livenowfox.com/tag/lifestyle)
+  * [Entertainment](https://www.livenowfox.com/tag/entertainment)
+  * [FOX Shows](https://www.livenowfox.com/shows/fox-shows)
+
+
+###### [About LiveNOW](https://www.livenowfox.com/about-us)
+  * [Contact Us](https://www.livenowfox.com/contact-us)
+  * [Distribution Partners](https://www.livenowfox.com/where-to-watch)
+  * [LiveNOW Team](https://www.livenowfox.com/team)
+  * [Email Newsletters](https://www.livenowfox.com/newsletter-signup)
+
+
+  * [youtube](https://www.youtube.com/livenowfox)
+  * [facebook](https://www.facebook.com/livenowfox/)
+  * [instagram](https://www.instagram.com/livenowfox)
+  * [twitter](https://twitter.com/livenowfox)
+  * email
+
+
+[![LiveNOW from FOX | Breaking News, Live Events](https://static.foxtv.com/static/orion/img/core/s/logos/fts-livenow-b.svg)](https://www.livenowfox.com/)
+  * [Updated Terms of Use](https://www.foxlocal.com/terms-of-use/index.html)
+  * [New Privacy Policy](https://www.fox.com/privacy-policy)
+  * [Your Privacy Choices](https://privacy.livenowfox.com/main/web/main)
+  * [Closed Captioning](https://www.livenowfox.com/closed-captioning)
+  * [About Us](https://www.livenowfox.com/about-us)
+  * [Contact Us](https://www.livenowfox.com/contact-us)
+  * [Partners](https://www.livenowfox.com/where-to-watch)
+  * [Newsletters](https://www.livenowfox.com/newsletters)
+
+
+This material may not be published, broadcast, rewritten, or redistributed. ©2025 FOX Television Stations
+![](https://jelly.mdhv.io/v1/star.gif?pid=jRwDOQhvXJAzikcwhWDTNPakvV0I&src=mh&evt=hi)
+[![LiveNOW from FOX | Breaking News, Live Events](https://static.foxtv.com/static/orion/img/core/s/logos/fts-livenow-a.svg) ![LiveNOW from FOX | Breaking News, Live Events](https://static.foxtv.com/static/orion/img/core/s/logos/fts-livenow-b.svg)](https://www.livenowfox.com/ "LiveNOW from FOX — Local News & Weather")
+  * [Live](https://www.livenowfox.com/live)
+  * [News](https://www.livenowfox.com/news)
+  * [Weather](https://www.livenowfox.com/weather)
+  * [Politics](https://www.livenowfox.com/tag/politics)
+  * [Where to Watch](https://www.livenowfox.com/where-to-watch)
+  * [LiveNOW Team](https://www.livenowfox.com/team)
+  * [About](https://www.livenowfox.com/about-us)
+  * [More](https://www.livenowfox.com/news/average-cost-home-insurance-hits-2470-per-year-see-how-your-state-ranks)
+
+
+[Watch Live](https://www.livenowfox.com/live)
+[Expand / Collapse search](https://www.livenowfox.com/news/average-cost-home-insurance-hits-2470-per-year-see-how-your-state-ranks)
+[☰](https://www.livenowfox.com/news/average-cost-home-insurance-hits-2470-per-year-see-how-your-state-ranks)
+Search site
+###### [Live](https://www.livenowfox.com/live)
+  * [Where To Watch](https://www.livenowfox.com/where-to-watch)
+  * [LiveNOW on YouTube](https://www.youtube.com/livenowfox)
+  * [FOX TV Stations](https://www.livenowfox.com/live)
+  * [FOX Weather](https://www.livenowfox.com/live/fox-weather)
+  * [Tubi](https://tubitv.com/live)
+  * [FOX SOUL](https://www.livenowfox.com/live/soul-live)
+
+
+###### [News](https://www.livenowfox.com/news)
+  * [Top Stories](https://www.livenowfox.com/news)
+  * [National](https://www.livenowfox.com/national-news)
+  * [World](https://www.livenowfox.com/tag/world)
+  * [Politics](https://www.livenowfox.com/tag/politics)
+  * [Crime](https://www.livenowfox.com/tag/crime-publicsafety)
+  * [Police Chases](https://www.livenowfox.com/tag/crime-publicsafety/police-chases)
+  * [Idaho Murders](https://www.livenowfox.com/tag/crime-publicsafety/idaho-students-killed)
+  * [Israel-Hamas War](https://www.livenowfox.com/tag/israel-war-hamas/)
+  * [Russia-Ukraine War](https://www.livenowfox.com/tag/russia-ukraine)
+
+
+###### [Northeast](https://www.livenowfox.com/news)
+  * [New York News - FOX 5 NY](https://www.fox5ny.com/)
+  * [Philadelphia News - FOX 29 Philadelphia](https://www.fox29.com/)
+  * [Washington, DC News - FOX 5 DC](https://www.fox5dc.com/)
+  * [New Jersey News - My9NJ](https://www.my9nj.com/)
+
+
+###### [South](https://www.livenowfox.com/news)
+  * [Atlanta News - FOX 5 Atlanta](https://www.fox5atlanta.com/)
+  * [Orlando News - FOX 35 Orlando](https://www.fox35orlando.com/)
+  * [Tampa News - FOX 13 News](https://www.fox13news.com/)
+  * [Gainesville News - FOX 51 Gainesville](https://www.wogx.com/)
+  * [Dallas News - FOX 4 News](https://www.fox4news.com/)
+  * [Houston News - FOX 26 Houston](https://www.fox26houston.com/)
+  * [Austin News - FOX 7 Austin](https://www.fox7austin.com/)
+
+
+###### [Midwest](https://www.livenowfox.com/news)
+  * [Chicago News - FOX 32 Chicago](https://www.fox32chicago.com/)
+  * [Detroit News - FOX 2 Detroit](https://www.fox2detroit.com/)
+  * [Minneapolis News - FOX 9](https://www.fox9.com/)
+  * [Milwaukee News - FOX 6 News](https://www.fox6now.com/)
+
+
+###### [West](https://www.livenowfox.com/news)
+  * [Phoenix News - FOX 10 Phoenix](https://www.fox10phoenix.com/)
+  * [Los Angeles News - FOX 11](https://www.foxla.com/)
+  * [San Francisco News - KTVU FOX 2](https://www.ktvu.com/)
+  * [Seattle News - FOX 13 Seattle](https://www.fox13seattle.com/)
+
+
+###### [Weather](https://www.livenowfox.com/weather)
+  * [Winter Weather](https://www.livenowfox.com/tag/weather/winter-weather)
+  * [Severe Weather](https://www.livenowfox.com/tag/weather/severe-weather)
+  * [Hurricanes](https://www.livenowfox.com/tag/weather/hurricanes)
+  * [Environment](https://www.livenowfox.com/tag/environment)
+  * [FOX Weather](https://www.foxweather.com)
+
+
+###### [Money](https://www.livenowfox.com/money)
+  * [Economy](https://www.livenowfox.com/tag/money/us-economy)
+  * [Business](https://www.livenowfox.com/tag/business)
+  * [Personal Finance](https://www.livenowfox.com/tag/business/personal-finance)
+  * [Consumer](https://www.livenowfox.com/tag/consumer)
+  * [Real Estate](https://www.livenowfox.com/tag/consumer/real-estate)
+
+
+###### [Science](https://www.livenowfox.com/tag/science)
+  * [Air & Space](https://www.livenowfox.com/tag/science/air-space)
+  * [SpaceX](https://www.livenowfox.com/tag/organization/spacex)
+  * [Technology](https://www.livenowfox.com/tag/technology)
+  * [Wild Nature](https://www.livenowfox.com/tag/science/wild-nature)
+
+
+###### [Viral](https://www.livenowfox.com/tag/viral)
+  * [Heartwarming News](https://www.livenowfox.com/tag/heartwarming)
+  * [Unusual](https://www.livenowfox.com/tag/unusual)
+  * [Pets & Animals](https://www.livenowfox.com/tag/pets-animals)
+
+
+###### [Other News](https://www.livenowfox.com/news)
+  * [Sports](https://www.livenowfox.com/sports)
+  * [Health](https://www.livenowfox.com/tag/health)
+  * [Lifestyle](https://www.livenowfox.com/tag/lifestyle)
+  * [Entertainment](https://www.livenowfox.com/tag/entertainment)
+  * [FOX Shows](https://www.livenowfox.com/shows/fox-shows)
+
+
+###### [About LiveNOW](https://www.livenowfox.com/about-us)
+  * [Contact Us](https://www.livenowfox.com/contact-us)
+  * [Distribution Partners](https://www.livenowfox.com/where-to-watch)
+  * [LiveNOW Team](https://www.livenowfox.com/team)
+  * [Email Newsletters](https://www.livenowfox.com/newsletter-signup)
+
+
+Keep on reading
+[](https://www.livenowfox.com/news/trump-says-he-is-considering-giving-americans-2000-tariff-stimulus-checks?amp_js_v=0.1&usqp=mq331AQIUAKwASCAAgM=)[Trump says he is considering giving Americans $2,000 tariff stimulus checks | LiveNOW from FOXPresident Trump said he is looking at sending stimulus checks worth $1,000- $2,000 funded from revenues generated from tariffs to Americans.LiveNOW from FOX | Breaking News, Live Events](https://www.livenowfox.com/news/trump-says-he-is-considering-giving-americans-2000-tariff-stimulus-checks?amp_js_v=0.1&usqp=mq331AQIUAKwASCAAgM= "Trump says he is considering giving Americans $2,000 tariff stimulus checks | LiveNOW from FOX")
+Undo
+[](https://www.livenowfox.com/news/ozzy-osbournes-cause-death-revealed)[Ozzy Osbourne's cause of death revealed | LiveNOW from FOXOzzy Osbourne, the legendary frontman of Black Sabbath and a pioneer of heavy metal music, died at the age of 76LiveNOW from FOX | Breaking News, Live Events](https://www.livenowfox.com/news/ozzy-osbournes-cause-death-revealed "Ozzy Osbourne's cause of death revealed | LiveNOW from FOX")
+Undo
+[](https://www.livenowfox.com/news/snap-benefits-which-states-will-fund-food-stamps-shutdown)[SNAP benefits: These states will partially fund food stamps amid shutdown | LiveNOW from FOXSome states are taking action to protect food assistance as the federal government plans to suspend SNAP payments starting Saturday.LiveNOW from FOX | Breaking News, Live Events](https://www.livenowfox.com/news/snap-benefits-which-states-will-fund-food-stamps-shutdown "SNAP benefits: These states will partially fund food stamps amid shutdown | LiveNOW from FOX")
+Undo
+[](https://www.livenowfox.com/news/lisa-marie-presley-had-son-benjamins-body-her-house-2-months-after-he-died)[Lisa Marie Presley had son Benjamin's body in her house for 2 months after he died | LiveNOW from FOXLisa Marie Presley had 4 children: Riley and Benjamin Keough, as well as Finley Aaron Love and Harper Vivienne Ann Lockwood.LiveNOW from FOX | Breaking News, Live Events](https://www.livenowfox.com/news/lisa-marie-presley-had-son-benjamins-body-her-house-2-months-after-he-died "Lisa Marie Presley had son Benjamin's body in her house for 2 months after he died | LiveNOW from FOX")
+Undo
+[](https://www.livenowfox.com/news/melina-frattolin-amber-alert-lake-george?amp_js_v=0.1&usqp=mq331AQIUAKwASCAAgM=)[9-year-old girl found dead after Amber Alert issued | LiveNOW from FOXAn Amber Alert issued for 9-year-old Melina Galanis Frattolin was canceled after her body was found in Ticonderoga, New York.LiveNOW from FOX | Breaking News, Live Events](https://www.livenowfox.com/news/melina-frattolin-amber-alert-lake-george?amp_js_v=0.1&usqp=mq331AQIUAKwASCAAgM= "9-year-old girl found dead after Amber Alert issued | LiveNOW from FOX")
+Undo
+[](https://l.ottoinsurance.com/n)[Texas: Worst Car Insurance Companies for Overcharging (Is Yours On The List?)Drivers Are Saving Up To 33% On Insurance With ThisOTTO Insurance |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-01-y-delta:Explore%20More%20|%20Card%202:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-01-y-delta:Explore%20More%20|%20Card%202:) Get Deals](https://l.ottoinsurance.com/n "Texas: Worst Car Insurance Companies for Overcharging \(Is Yours On The List?\)")
+Undo
+[](https://t.truehealthbrief.com/k48l51yfsn)[Neurologist Reveals: Dementia Has Been Linked to a Common HabitMemory News |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-01-y-delta:Explore%20More%20|%20Card%202:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-01-y-delta:Explore%20More%20|%20Card%202:) Learn More](https://t.truehealthbrief.com/k48l51yfsn "Neurologist Reveals: Dementia Has Been Linked to a Common Habit")
+Undo
+[](https://www.livenowfox.com/news/loni-anderson-cause-death-revealed)[Loni Anderson cause of death revealed: Report | LiveNOW from FOXLoni Anderson, the 'WKRP in Cincinnati' star, died at age 79 in August.LiveNOW from FOX | Breaking News, Live Events](https://www.livenowfox.com/news/loni-anderson-cause-death-revealed "Loni Anderson cause of death revealed: Report | LiveNOW from FOX")
+Undo
+[](https://www.livenowfox.com/video/1690983)[U.S. Congressman: Multiple officers shot in Virginia | LiveNOW from FOXAccording to U.S. Rep. John McGuire, multiple law enforcement officers have been shot in southern Virginia. "We are closely following the situation and keeping everyone affected in our hearts during this difficult time," McGuire wrote. LiveNOW’s Andrew Craft is getting you the latest on what we are LiveNOW from FOX | Breaking News, Live Events](https://www.livenowfox.com/video/1690983 "U.S. Congressman: Multiple officers shot in Virginia | LiveNOW from FOX")
+Undo
+[](https://www.livenowfox.com/video/1705595)[AOC reacts to Charlie Kirk being shot and killed | LiveNOW from FOXUnited States Representative Alexandria Ocasio-Cortez (D-NY) gave her reaction after Charlie Kirk, the conservative commentator, was shot and killed while speaking at Utah Valley University. This news was confirmed earlier by President Donald Trump.LiveNOW from FOX | Breaking News, Live Events](https://www.livenowfox.com/video/1705595 "AOC reacts to Charlie Kirk being shot and killed | LiveNOW from FOX")
+Undo
+[](https://www.livenowfox.com/news/brad-sigmon-death-row-inmate-be-executed-firing-squad-1st-us-15-years)[Brad Sigmon: Death row inmate executed by firing squad, 1st in US in 15 years | LiveNOW from FOXBrad Sigmon, a death row inmate in South Carolina, was the first person to die by firing squad in the U.S. in 15 years.LiveNOW from FOX | Breaking News, Live Events](https://www.livenowfox.com/news/brad-sigmon-death-row-inmate-be-executed-firing-squad-1st-us-15-years "Brad Sigmon: Death row inmate executed by firing squad, 1st in US in 15 years | LiveNOW from FOX")
+Undo
+[](https://www.livenowfox.com/news/trump-fully-fund-snap-benefits-november-federal-judge-orders)[Trump must fully fund SNAP benefits in November, federal judge orders | LiveNOW from FOXA federal judge in Rhode Island has ordered the Trump administration to find the money to fully fund SNAP benefits for November.LiveNOW from FOX | Breaking News, Live Events](https://www.livenowfox.com/news/trump-fully-fund-snap-benefits-november-federal-judge-orders "Trump must fully fund SNAP benefits in November, federal judge orders | LiveNOW from FOX")
+Undo
+[](https://t.truehealthbrief.com/k48l51yfsn)[Dementia and Memory Issues Have Been Linked to a Common Habit. Do You Do It?Memory News |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-01-y-delta:Explore%20More%20|%20Card%205:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-01-y-delta:Explore%20More%20|%20Card%205:) Learn More](https://t.truehealthbrief.com/k48l51yfsn "Dementia and Memory Issues Have Been Linked to a Common Habit. Do You Do It?")
+Undo
+[](https://tracking.smartestlifestyletrends.com/647cc990-a026-471b-aab3-e3c10429d63b)[Austin Launches New Policy For "Senior Drivers"Don't pay your next auto insurance bill until you read about this!Insure.com |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-01-y-delta:Explore%20More%20|%20Card%205:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=foxlocaltv-livenow&utm_medium=referral&utm_content=thumbs-feed-01-y-delta:Explore%20More%20|%20Card%205:) Learn More](https://tracking.smartestlifestyletrends.com/647cc990-a026-471b-aab3-e3c10429d63b "Austin Launches New Policy For "Senior Drivers"")
+Undo
+[](https://www.livenowfox.com/news/missing-elk-hunters-found-dead-colorado-after-six-day-search?amp_js_v=0.1&usqp=mq331AQIUAKwASCAAgM=)[Missing elk hunters found dead in Colorado after six-day search | LiveNOW from FOXTwo elk hunters who went missing in the Colorado wilderness were found dead after a six-day search, authorities said. LiveNOW from FOX | Breaking News, Live Events](https://www.livenowfox.com/news/missing-elk-hunters-found-dead-colorado-after-six-day-search?amp_js_v=0.1&usqp=mq331AQIUAKwASCAAgM= "Missing elk hunters found dead in Colorado after six-day search | LiveNOW from FOX")
+Undo
+[](https://www.livenowfox.com/news/kelley-mack-walking-dead-actress-dies-33)[Kelley Mack, 'Walking Dead' actress, dies at 33 | LiveNOW from FOXKelley Mack, the actress known for her role in “The Walking Dead" TV series, has died.LiveNOW from FOX | Breaking News, Live Events](https://www.livenowfox.com/news/kelley-mack-walking-dead-actress-dies-33 "Kelley Mack, 'Walking Dead' actress, dies at 33 | LiveNOW from FOX")
+Undo

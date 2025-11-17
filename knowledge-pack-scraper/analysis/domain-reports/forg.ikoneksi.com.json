@@ -1,0 +1,455 @@
+{
+  "domain": "forg.ikoneksi.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:19.043976",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 33,
+      "frequency": 33.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 20,
+      "frequency": 20.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "ast-flex",
+      "count": 11
+    },
+    {
+      "class": "site-header-focus-item",
+      "count": 8
+    },
+    {
+      "class": "ast-builder-layout-element",
+      "count": 6
+    },
+    {
+      "class": "page_item",
+      "count": 6
+    },
+    {
+      "class": "menu-item",
+      "count": 6
+    },
+    {
+      "class": "menu-link",
+      "count": 6
+    },
+    {
+      "class": "ast-inline-flex",
+      "count": 5
+    },
+    {
+      "class": "site-header-section",
+      "count": 4
+    },
+    {
+      "class": "ahfb-svg-iconset",
+      "count": 4
+    },
+    {
+      "class": "svg-baseline",
+      "count": 4
+    },
+    {
+      "class": "adsbygoogle",
+      "count": 4
+    },
+    {
+      "class": "screen-reader-text",
+      "count": 3
+    },
+    {
+      "class": "ast-builder-grid-row",
+      "count": 3
+    },
+    {
+      "class": "ast-main-header-wrap",
+      "count": 2
+    },
+    {
+      "class": "main-header-bar-wrap",
+      "count": 2
+    },
+    {
+      "class": "ast-primary-header-bar",
+      "count": 2
+    },
+    {
+      "class": "ast-primary-header",
+      "count": 2
+    },
+    {
+      "class": "main-header-bar",
+      "count": 2
+    },
+    {
+      "class": "site-primary-header-wrap",
+      "count": 2
+    },
+    {
+      "class": "ast-builder-grid-row-container",
+      "count": 2
+    },
+    {
+      "class": "ast-container",
+      "count": 2
+    },
+    {
+      "class": "ast-builder-grid-row-has-sides",
+      "count": 2
+    },
+    {
+      "class": "ast-builder-grid-row-no-center",
+      "count": 2
+    },
+    {
+      "class": "site-header-primary-section-left",
+      "count": 2
+    },
+    {
+      "class": "site-header-section-left",
+      "count": 2
+    },
+    {
+      "class": "site-branding",
+      "count": 2
+    },
+    {
+      "class": "ast-site-identity",
+      "count": 2
+    },
+    {
+      "class": "ast-site-title-wrap",
+      "count": 2
+    },
+    {
+      "class": "site-title",
+      "count": 2
+    },
+    {
+      "class": "site-header-primary-section-right",
+      "count": 2
+    },
+    {
+      "class": "ast-grid-right-section",
+      "count": 2
+    },
+    {
+      "class": "ast-builder-menu",
+      "count": 2
+    },
+    {
+      "class": "ast-main-header-bar-alignment",
+      "count": 2
+    },
+    {
+      "class": "main-header-bar-navigation",
+      "count": 2
+    },
+    {
+      "class": "site-navigation",
+      "count": 2
+    },
+    {
+      "class": "ast-flex-grow-1",
+      "count": 2
+    },
+    {
+      "class": "navigation-accessibility",
+      "count": 2
+    },
+    {
+      "class": "main-navigation",
+      "count": 2
+    },
+    {
+      "class": "main-header-menu",
+      "count": 2
+    },
+    {
+      "class": "ast-nav-menu",
+      "count": 2
+    },
+    {
+      "class": "submenu-with-border",
+      "count": 2
+    },
+    {
+      "class": "stack-on-mobile",
+      "count": 2
+    },
+    {
+      "class": "page-item-44",
+      "count": 2
+    },
+    {
+      "class": "page-item-3",
+      "count": 2
+    },
+    {
+      "class": "page-item-47",
+      "count": 2
+    },
+    {
+      "class": "ast-mobile-svg",
+      "count": 2
+    },
+    {
+      "class": "ast-post-nav",
+      "count": 2
+    },
+    {
+      "class": "site-footer-focus-item",
+      "count": 2
+    },
+    {
+      "class": "ast-footer-copyright",
+      "count": 2
+    },
+    {
+      "class": "yoast-schema-graph",
+      "count": 1
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "ikone-ready",
+      "count": 1
+    },
+    {
+      "id": "astra-theme-css-css",
+      "count": 1
+    },
+    {
+      "id": "astra-theme-css-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-emoji-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-library-css",
+      "count": 1
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "astra-flexibility-js",
+      "count": 1
+    },
+    {
+      "id": "astra-flexibility-js-after",
+      "count": 1
+    },
+    {
+      "id": "page",
+      "count": 1
+    },
+    {
+      "id": "masthead",
+      "count": 1
+    },
+    {
+      "id": "#masthead",
+      "count": 1
+    },
+    {
+      "id": "ast-desktop-header",
+      "count": 1
+    },
+    {
+      "id": "primary-site-navigation",
+      "count": 1
+    },
+    {
+      "id": "ast-hf-menu-1",
+      "count": 1
+    },
+    {
+      "id": "ast-mobile-header",
+      "count": 1
+    },
+    {
+      "id": "ast-mobile-site-navigation",
+      "count": 1
+    },
+    {
+      "id": "ast-hf-mobile-menu",
+      "count": 1
+    },
+    {
+      "id": "content",
+      "count": 1
+    },
+    {
+      "id": "primary",
+      "count": 1
+    },
+    {
+      "id": "main",
+      "count": 1
+    },
+    {
+      "id": "post-28",
+      "count": 1
+    },
+    {
+      "id": "ikone-2725717962",
+      "count": 1
+    },
+    {
+      "id": "aswift_1_host",
+      "count": 1
+    },
+    {
+      "id": "aswift_1",
+      "count": 1
+    },
+    {
+      "id": "a!2",
+      "count": 1
+    },
+    {
+      "id": "ikone-3544162004",
+      "count": 1
+    },
+    {
+      "id": "aswift_2_host",
+      "count": 1
+    },
+    {
+      "id": "aswift_2",
+      "count": 1
+    },
+    {
+      "id": "a!3",
+      "count": 1
+    },
+    {
+      "id": "ikone-3740099769",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

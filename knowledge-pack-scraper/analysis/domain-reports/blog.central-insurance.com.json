@@ -1,0 +1,456 @@
+{
+  "domain": "blog.central-insurance.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:17.984093",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 33,
+      "frequency": 33.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 15,
+      "frequency": 15.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 68,
+      "frequency": 68.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 26,
+      "frequency": 26.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 19,
+      "frequency": 19.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "wp-block-group",
+      "count": 35
+    },
+    {
+      "class": "is-style-compact",
+      "count": 29
+    },
+    {
+      "class": "has-global-padding",
+      "count": 26
+    },
+    {
+      "class": "is-layout-constrained",
+      "count": 26
+    },
+    {
+      "class": "wp-block-group-is-layout-constrained",
+      "count": 23
+    },
+    {
+      "class": "has-small-font-size",
+      "count": 22
+    },
+    {
+      "class": "is-layout-flow",
+      "count": 19
+    },
+    {
+      "class": "cat-item",
+      "count": 17
+    },
+    {
+      "class": "screen-reader-text",
+      "count": 16
+    },
+    {
+      "class": "wp-block-navigation-item",
+      "count": 16
+    },
+    {
+      "class": "wp-block-navigation-link",
+      "count": 16
+    },
+    {
+      "class": "wp-block-navigation-item__content",
+      "count": 16
+    },
+    {
+      "class": "wp-block-navigation-item__label",
+      "count": 16
+    },
+    {
+      "class": "has-base-color",
+      "count": 15
+    },
+    {
+      "class": "wp-block-heading",
+      "count": 14
+    },
+    {
+      "class": "is-layout-flex",
+      "count": 11
+    },
+    {
+      "class": "wp-social-link",
+      "count": 10
+    },
+    {
+      "class": "wp-block-social-link",
+      "count": 10
+    },
+    {
+      "class": "wp-block-social-link-anchor",
+      "count": 10
+    },
+    {
+      "class": "wp-block-social-link-label",
+      "count": 10
+    },
+    {
+      "class": "has-text-align-center",
+      "count": 10
+    },
+    {
+      "class": "has-text-color",
+      "count": 9
+    },
+    {
+      "class": "wp-block-group-is-layout-flow",
+      "count": 9
+    },
+    {
+      "class": "alignwide",
+      "count": 8
+    },
+    {
+      "class": "wp-block-post-title",
+      "count": 8
+    },
+    {
+      "class": "wp-block-post-terms__separator",
+      "count": 8
+    },
+    {
+      "class": "wp-block-column",
+      "count": 7
+    },
+    {
+      "class": "wp-block-post",
+      "count": 7
+    },
+    {
+      "class": "post",
+      "count": 7
+    },
+    {
+      "class": "type-post",
+      "count": 7
+    },
+    {
+      "class": "status-publish",
+      "count": 7
+    },
+    {
+      "class": "format-standard",
+      "count": 7
+    },
+    {
+      "class": "has-post-thumbnail",
+      "count": 7
+    },
+    {
+      "class": "hentry",
+      "count": 7
+    },
+    {
+      "class": "tag-builders-insurance",
+      "count": 7
+    },
+    {
+      "class": "wp-block-post-featured-image",
+      "count": 7
+    },
+    {
+      "class": "attachment-post-thumbnail",
+      "count": 7
+    },
+    {
+      "class": "size-post-thumbnail",
+      "count": 7
+    },
+    {
+      "class": "wp-post-image",
+      "count": 7
+    },
+    {
+      "class": "taxonomy-category",
+      "count": 7
+    },
+    {
+      "class": "wp-block-post-terms",
+      "count": 7
+    },
+    {
+      "class": "wp-block-post-author-name",
+      "count": 7
+    },
+    {
+      "class": "wp-block-post-author-name__link",
+      "count": 7
+    },
+    {
+      "class": "has-background",
+      "count": 6
+    },
+    {
+      "class": "has-link-color",
+      "count": 6
+    },
+    {
+      "class": "is-content-justification-center",
+      "count": 6
+    },
+    {
+      "class": "sd-button",
+      "count": 6
+    },
+    {
+      "class": "category-commercial",
+      "count": 6
+    },
+    {
+      "class": "category-construction",
+      "count": 6
+    },
+    {
+      "class": "has-contrast-background-color",
+      "count": 5
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "subscribe-email",
+      "count": 3
+    },
+    {
+      "id": "subscribe-submit",
+      "count": 3
+    },
+    {
+      "id": "_wpnonce",
+      "count": 3
+    },
+    {
+      "id": "22531",
+      "count": 2
+    },
+    {
+      "id": "22530",
+      "count": 2
+    },
+    {
+      "id": "22510",
+      "count": 2
+    },
+    {
+      "id": "jetpack-custom-fonts-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-social-links-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-search-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-columns-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-group-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-site-logo-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-site-title-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-navigation-link-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-navigation-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-post-title-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-post-date-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-paragraph-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-heading-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-list-inline-css",
+      "count": 1
+    },
+    {
+      "id": "jetpack-block-subscriptions-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-image-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-quote-inline-css",
+      "count": 1
+    },
+    {
+      "id": "jetpack-swiper-library-css",
+      "count": 1
+    },
+    {
+      "id": "jetpack-carousel-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-post-content-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-avatar-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-comment-author-name-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-comment-date-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-comment-edit-link-inline-css",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}
