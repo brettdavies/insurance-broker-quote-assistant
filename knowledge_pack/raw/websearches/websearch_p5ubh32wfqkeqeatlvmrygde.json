@@ -1,0 +1,799 @@
+{
+  "websearch_id": "websearch_p5ubh32wfqkeqeatlvmrygde",
+  "search_id": "search_htxgpco9wuktt8e6m4kw6lw7",
+  "timestamp": "2025-11-07T12:26:53.545072",
+  "startedAt": "2025-11-07T12:26:53.545072",
+  "completedAt": "2025-11-07T12:26:55.555900",
+  "durationSeconds": 2.01,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"Texas\" \"liability limits\" required",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"Texas\" \"liability limits\" required",
+      "show_strict_warning": false,
+      "cleaned": "Texas liability limits required",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "Texas liability limits required"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Texas Liability Insurance: What It Covers - NerdWallet",
+          "url": "https://www.nerdwallet.com/article/insurance/texas-liability-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "This is the maximum your insurer will pay for injuries to everyone hurt in an accident combined (minus you and household members). In Texas, you\u2019re required to have at least $60,000 in bodily injury liability coverage per accident.",
+          "page_age": "2025-04-28T02:38:55",
+          "profile": {
+            "name": "NerdWallet",
+            "url": "https://www.nerdwallet.com/article/insurance/texas-liability-insurance",
+            "long_name": "nerdwallet.com",
+            "img": "https://imgs.search.brave.com/8r72GokQ4UXZ6V4PobxSGta-ben5011_C3meSKoOMl4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGFhYzY5MDhh/NTNhODNhYjliNWNm/MTE4YTNmOGE3NjVj/M2FmMDcwMzhhMzQx/MThmYjQ2MzcxMjQy/ZDgwNTkzZS93d3cu/bmVyZHdhbGxldC5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "nerdwallet.com",
+            "hostname": "www.nerdwallet.com",
+            "favicon": "https://imgs.search.brave.com/8r72GokQ4UXZ6V4PobxSGta-ben5011_C3meSKoOMl4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGFhYzY5MDhh/NTNhODNhYjliNWNm/MTE4YTNmOGE3NjVj/M2FmMDcwMzhhMzQx/MThmYjQ2MzcxMjQy/ZDgwNTkzZS93d3cu/bmVyZHdhbGxldC5j/b20v",
+            "path": "  \u203a back to nerdwallet homepage  \u203a insurance  \u203a texas liability insurance: what it covers and how much you need"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wM3vZ8Iw99JsCexqtk_q0PtN6K1Lgp9kOoBssaAydNs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bmVyZHdhbGxldC5j/b20vdGFjaHlvbi8y/MDIzLzAzL0dldHR5/SW1hZ2VzLTEzNDc0/MTY1NTUuanBnP3Jl/c2l6ZT0zNTAlMkMz/NTA",
+            "original": "https://www.nerdwallet.com/tachyon/2023/03/GettyImages-1347416555.jpg?resize=350%2C350",
+            "logo": false
+          },
+          "age": "April 28, 2025"
+        },
+        {
+          "title": "Texas Car Insurance Laws (Updated 2025) | The Zebra",
+          "url": "https://www.thezebra.com/auto-insurance/texas-car-insurance/state-laws-tx/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "However, anyone found guilty of driving without insurance in Texas will face the following penalties: A fine between $175-$350 (up to $1,000 for second and subsequent offenses) ... Texas law only requires drivers to carry liability coverage, though ...",
+          "page_age": "2025-10-16T21:50:25",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/auto-insurance/texas-car-insurance/state-laws-tx/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a cheap car insurance  \u203a texas car insurance  \u203a texas car insurance laws"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wLaa5ABL1FOaAK7OptGU60BZ9EYO_N4yxiZcbPpNAME/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9zdGF0/aWMvODAwZGFmYS96/ZnJvbnQvaW1nL2l6/LXNoYXJlLWxvZ28u/cG5n",
+            "original": "https://cdn.thezebra.com/zfront/static/800dafa/zfront/img/iz-share-logo.png",
+            "logo": true
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "Texas State Minimum Auto Insurance Requirements ...",
+          "url": "https://www.moneygeek.com/insurance/auto/state-laws-minimum-requirements-texas/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Depending on the state, minimum car insurance requirements may include bodily injury liability, property damage liability, uninsured/underinsured motorist and personal injury protection coverage.",
+          "page_age": "2025-10-29T18:41:54",
+          "profile": {
+            "name": "MoneyGeek",
+            "url": "https://www.moneygeek.com/insurance/auto/state-laws-minimum-requirements-texas/",
+            "long_name": "moneygeek.com",
+            "img": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "moneygeek.com",
+            "hostname": "www.moneygeek.com",
+            "favicon": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8",
+            "path": "  \u203a home  \u203a insurance  \u203a compare car insurance  \u203a state minimum car insurance requirements"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/sEKQpd_yHlSlyHZpp096ranYuoVt38I6MP696GUfado/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbW9uZXlnZWVr/L2ltYWdlL3VwbG9h/ZC9jX3NjYWxlLHFf/YXV0bzplY28sd18x/MjAwLGZfYXV0byxm/bF9sb3NzeS92MTYy/OTUzNTkwMy9mZWF0/dXJlZF9pbWFnZV9t/aW5pbXVtX2Nhcl9p/bnN1cmFuY2VfcmVx/dWlyZW1lbnRzX2Vh/Y2hfc3RhdGVfZmVh/dHVyZWRfaW1hZ2Vf/OTA4M2M2MDczNi5q/cGc",
+            "original": "https://res.cloudinary.com/moneygeek/image/upload/c_scale,q_auto:eco,w_1200,f_auto,fl_lossy/v1629535903/featured_image_minimum_car_insurance_requirements_each_state_featured_image_9083c60736.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Car Insurance Requirements in Texas (2025) | Insurify",
+          "url": "https://insurify.com/car-insurance/texas/minimum-requirements/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "To drive legally in Texas, you must carry these minimum coverage amounts:[1] Texas also requires insurance companies to offer uninsured/underinsured motorist (UIM) coverage and $2,500 in personal injury protection (PIP) to policyholders who ...",
+          "page_age": "2025-08-06T19:00:00",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/car-insurance/texas/minimum-requirements/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a car insurance  \u203a texas  \u203a minimum requirements"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/SwLKjBZDe_qakv9ThaqZ4E6EENyotTerE7qKeZLspL0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xNjIyNzMvMTAw/MHg3NTAvODVjZGE0/ODJmZC90ZXhhcy11/c2EtaW5zdXJpZnku/anBn",
+            "original": "https://a.storyblok.com/f/162273/1000x750/85cda482fd/texas-usa-insurify.jpg",
+            "logo": false
+          },
+          "age": "August 6, 2025"
+        },
+        {
+          "title": "The Texas Car Insurance Requirements Guide: What Are the Minimums?",
+          "url": "https://www.boggustipton.com/the-texas-car-insurance-requirements-guide/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "They may also mandate higher liability limits, commonly referred to as the 100/300/50 rule\u2014meaning $100,000 for bodily injury per person, $300,000 per accident, and $50,000 for property damage.",
+          "page_age": "2025-01-01T23:59:05",
+          "profile": {
+            "name": "Boggustipton",
+            "url": "https://www.boggustipton.com/the-texas-car-insurance-requirements-guide/",
+            "long_name": "boggustipton.com",
+            "img": "https://imgs.search.brave.com/y3ANF5Vap9OK5UGnRnGYFDVBrP9NIBEaVQ9ggiPnz_E/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWNkNjM5Njk2/ODJkZDg1YmYzNDQ5/OWMzM2YyZWJlYTJk/ZTNmZGRmYTc5NTI5/NzYzOWMwNTQyZThl/NjQ5NzQ4Ni93d3cu/Ym9nZ3VzdGlwdG9u/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "boggustipton.com",
+            "hostname": "www.boggustipton.com",
+            "favicon": "https://imgs.search.brave.com/y3ANF5Vap9OK5UGnRnGYFDVBrP9NIBEaVQ9ggiPnz_E/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWNkNjM5Njk2/ODJkZDg1YmYzNDQ5/OWMzM2YyZWJlYTJk/ZTNmZGRmYTc5NTI5/NzYzOWMwNTQyZThl/NjQ5NzQ4Ni93d3cu/Ym9nZ3VzdGlwdG9u/LmNvbS8",
+            "path": "  \u203a home  \u203a the texas car insurance requirements guide: what are the minimums?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/1hLagyxoo4j3_OZBNlfk08mNf8s349YHXCfK_URW0qw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Ym9nZ3VzdGlwdG9u/LmNvbS93cC1jb250/ZW50L3RoZW1lcy9E/ZWFsZXJJbnNwaXJl/RGVhbGVyVGhlbWUv/aW1hZ2VzL2xvZ28u/cG5n",
+            "original": "https://www.boggustipton.com/wp-content/themes/DealerInspireDealerTheme/images/logo.png",
+            "logo": true
+          },
+          "age": "January 1, 2025"
+        },
+        {
+          "title": "Texas Car Insurance Requirements - GUERRA LLP",
+          "url": "https://guerrallp.com/resources/texas-car-insurance-requirements",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "\u201cThe current minimum liability limits are $30,000 for each injured person, up to a total of $60,000 per accident, and $25,000 for property damage per accident.\u201d[1] This coverage is referred to as the 30/60/25 coverage for short.",
+          "page_age": "2024-12-19T17:27:17",
+          "profile": {
+            "name": "GUERRA LLP",
+            "url": "https://guerrallp.com/resources/texas-car-insurance-requirements",
+            "long_name": "guerrallp.com",
+            "img": "https://imgs.search.brave.com/kXmzVYn8ZvmWvoqJV4cFmVpfPCsPJrA-6pnvaXX0M-c/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDc2OTZjODc0/ZTZhY2I2MTA3NzA0/MWQxMTQ2MGQ1Nzkw/NjVmZmI4N2FlZDRl/ZTI1YTEzMGFjOWJh/ZGVlOWEyYy9ndWVy/cmFsbHAuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "guerrallp.com",
+            "hostname": "guerrallp.com",
+            "favicon": "https://imgs.search.brave.com/kXmzVYn8ZvmWvoqJV4cFmVpfPCsPJrA-6pnvaXX0M-c/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDc2OTZjODc0/ZTZhY2I2MTA3NzA0/MWQxMTQ2MGQ1Nzkw/NjVmZmI4N2FlZDRl/ZTI1YTEzMGFjOWJh/ZGVlOWEyYy9ndWVy/cmFsbHAuY29tLw",
+            "path": "  \u203a home  \u203a blog  \u203a texas car insurance requirements"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/9zlcLgyZnFyWKHxhzX0ZuOhwsDfoM47yGnWqriG_ZLM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9lYWRu/LXdjMDMtMzI3MjA3/Mi5ueGVkZ2UuaW8v/d3AtY29udGVudC91/cGxvYWRzL1RleGFz/LUNhci1JbnN1cmFu/Y2UtUmVxdWlyZW1l/bnRzLTEucG5n",
+            "original": "https://eadn-wc03-3272072.nxedge.io/wp-content/uploads/Texas-Car-Insurance-Requirements-1.png",
+            "logo": false
+          },
+          "age": "December 19, 2024"
+        },
+        {
+          "title": "Auto Insurance Requirements in Texas for 2025 (TX Minimum Coverage) | FreeAdvice",
+          "url": "https://www.freeadvice.com/insurance/car-insurance-requirements-in-texas/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Texas drivers are required to carry at least 30/60/25 of liability auto insurance coverage\u2014$30,000 for injuries per person, $60,000 per accident, and $25,000 for property damage. Monthly TX car insurance rates start at $36.",
+          "page_age": "2025-06-25T13:37:15",
+          "profile": {
+            "name": "FreeAdvice",
+            "url": "https://www.freeadvice.com/insurance/car-insurance-requirements-in-texas/",
+            "long_name": "freeadvice.com",
+            "img": "https://imgs.search.brave.com/zEolwdKnj7qMwLKZ1CZ_H4bwiQdYATaTCLc9MOMi4AI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWQ4ZTk1YjM4/ZDZlODhhOGE1MzA1/YWM3NjVhOWFjZTU0/ZGEwYTM3NDU4MDc2/NmNjMzBiZGY4YTJh/YWE4ZjY0YS93d3cu/ZnJlZWFkdmljZS5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "freeadvice.com",
+            "hostname": "www.freeadvice.com",
+            "favicon": "https://imgs.search.brave.com/zEolwdKnj7qMwLKZ1CZ_H4bwiQdYATaTCLc9MOMi4AI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWQ4ZTk1YjM4/ZDZlODhhOGE1MzA1/YWM3NjVhOWFjZTU0/ZGEwYTM3NDU4MDc2/NmNjMzBiZGY4YTJh/YWE4ZjY0YS93d3cu/ZnJlZWFkdmljZS5j/b20v",
+            "path": "  \u203a home  \u203a insurance  \u203a auto insurance center  \u203a auto insurance articles  \u203a buying car insurance - what to know before you buy"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ffWEHrjB4TTelpXiVh8xGj-twyYfuO5MbL9bPIkC0Jk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZWFkdmljZS5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjQvMDUvQXV0by1J/bnN1cmFuY2UtUmVx/dWlyZW1lbnRzLWlu/LVRleGFzLTMtMS5w/bmc",
+            "original": "https://www.freeadvice.com/wp-content/uploads/2024/05/Auto-Insurance-Requirements-in-Texas-3-1.png"
+          },
+          "age": "June 25, 2025"
+        },
+        {
+          "title": "Essential Texas Liability Insurance Policies Guide",
+          "url": "https://baumgartnerlawyers.com/understanding-texas-liability-insurance-policies-after-a-car-accident/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Minimum policies are often insufficient. To avoid exposure to financial risk: Increase your liability limits to at least 100/300/100 ... Many serious injury cases in Texas involve multiple sources of recovery.",
+          "page_age": "2025-06-06T16:14:57",
+          "profile": {
+            "name": "Baumgarter Law Firm",
+            "url": "https://baumgartnerlawyers.com/understanding-texas-liability-insurance-policies-after-a-car-accident/",
+            "long_name": "baumgartnerlawyers.com",
+            "img": "https://imgs.search.brave.com/Zfg4mEjO18Cfjs7Ee6UW79Y9ca-L7PTFFAXH-z34bNA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIzODBkOWE0/OGJmZDQ3ODEwYjlk/ZDcxNDQ1Mzg2YTYx/YmE5YmIxNTc2ZTgz/MzRiOGQ1NTQyNTM0/NDMyNWE1Mi9iYXVt/Z2FydG5lcmxhd3ll/cnMuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "baumgartnerlawyers.com",
+            "hostname": "baumgartnerlawyers.com",
+            "favicon": "https://imgs.search.brave.com/Zfg4mEjO18Cfjs7Ee6UW79Y9ca-L7PTFFAXH-z34bNA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWIzODBkOWE0/OGJmZDQ3ODEwYjlk/ZDcxNDQ1Mzg2YTYx/YmE5YmIxNTc2ZTgz/MzRiOGQ1NTQyNTM0/NDMyNWE1Mi9iYXVt/Z2FydG5lcmxhd3ll/cnMuY29tLw",
+            "path": "\u203a understanding-texas-liability-insurance-policies-after-a-car-accident"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/I_4ke-xYk8CkdwdZ_CGbyrGy8eF0l1bR8JhMNroBplY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zODYz/a2R2cmQ2Lm9ucm9j/a2V0LnNpdGUvd3At/Y29udGVudC91cGxv/YWRzLzIwMjEvMTIv/YmF1bS1sb2dvLTIx/LW1pbi5wbmc",
+            "original": "https://s863kdvrd6.onrocket.site/wp-content/uploads/2021/12/baum-logo-21-min.png",
+            "logo": true
+          },
+          "age": "June 6, 2025"
+        },
+        {
+          "title": "Texas Commercial Auto Insurance Requirements: Top 2025 Guide",
+          "url": "https://prestiziainsurance.com/texas-commercial-auto-insurance-requirements/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "These are often referred to as 30/60/25 coverage. Here\u2019s what that means: ... These limits are the bare minimum required by law, but depending on your business needs, you might want to consider higher coverage to better protect your assets.",
+          "page_age": "2025-03-21T17:29:39",
+          "profile": {
+            "name": "Prestizia Insurance",
+            "url": "https://prestiziainsurance.com/texas-commercial-auto-insurance-requirements/",
+            "long_name": "prestiziainsurance.com",
+            "img": "https://imgs.search.brave.com/jjloue9ztL85aDfsI4B8fIhVoak4Ld-6Hop9FI-sBPI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjY0ZDJhZDQ2/NTlhYjlhOWZhMmY3/ZGY2NTlmNzM2NDZm/YmZjOGZkZmY3Yzlk/ZGVjNDhmZDgzMThi/MTRhODJmZC9wcmVz/dGl6aWFpbnN1cmFu/Y2UuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "prestiziainsurance.com",
+            "hostname": "prestiziainsurance.com",
+            "favicon": "https://imgs.search.brave.com/jjloue9ztL85aDfsI4B8fIhVoak4Ld-6Hop9FI-sBPI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjY0ZDJhZDQ2/NTlhYjlhOWZhMmY3/ZGY2NTlmNzM2NDZm/YmZjOGZkZmY3Yzlk/ZGVjNDhmZDgzMThi/MTRhODJmZC9wcmVz/dGl6aWFpbnN1cmFu/Y2UuY29tLw",
+            "path": "  \u203a home  \u203a texas commercial auto insurance: the roadmap to compliance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/xXmXB4BrzfgaXvo1ybqDkLKqet2-TA4Ud4nUaNvI57Y/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9wcmVz/dGl6aWFpbnN1cmFu/Y2UuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI0LzAxL2Zp/bmFuY2lhbC1hZHZp/c29yLWNvbnN1bHRp/bmctMjAyMy0xMS0y/Ny0wNS0wNi0zNS11/dGMtc2NhbGVkLmpw/Zw",
+            "original": "https://prestiziainsurance.com/wp-content/uploads/2024/01/financial-advisor-consulting-2023-11-27-05-06-35-utc-scaled.jpg",
+            "logo": false
+          },
+          "age": "March 21, 2025"
+        },
+        {
+          "title": "Texas car insurance laws and requirements: What is changing in 2025",
+          "url": "https://www.insurance.com/auto-insurance/texas-car-insurance-laws/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Although Texas car insurance law only requires 30/60/25 in liability, increasing the limits and adding coverage is a good idea since medical expenses and repair costs are steadily rising.",
+          "page_age": "2025-04-28T00:00:00",
+          "profile": {
+            "name": "Insurance.com",
+            "url": "https://www.insurance.com/auto-insurance/texas-car-insurance-laws/",
+            "long_name": "insurance.com",
+            "img": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurance.com",
+            "hostname": "www.insurance.com",
+            "favicon": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8",
+            "path": "  \u203a home  \u203a auto insurance  \u203a state minimum requirements  \u203a texas car insurance laws and requirements: what is changing in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/mrmhNyRrsgAKLHytgrM3UtXgPNsZj2C2r9vhaX0aI8s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmNlLmNv/bS9pbWFnZXMvaG9t/ZS9zaXRlLWxvZ28t/ZGFyay5zdmc",
+            "original": "https://www.insurance.com/images/home/site-logo-dark.svg",
+            "logo": true
+          },
+          "age": "April 28, 2025"
+        },
+        {
+          "title": "Texas Minimum Insurance Requirements: Are They Enough? - Ellis & Thomas, PLLC",
+          "url": "https://www.ellisandthomas.com/texas-minimum-insurance-requirements-are-they-enough/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The mandatory minimum coverage in Texas is known as 30/60/25 liability insurance. It includes: ... These limits apply only if you\u2019re at fault in a crash and only cover the other party\u2019s injuries or property damage.",
+          "page_age": "2025-10-18T21:52:02",
+          "profile": {
+            "name": "Ellis & Thomas, PLLC",
+            "url": "https://www.ellisandthomas.com/texas-minimum-insurance-requirements-are-they-enough/",
+            "long_name": "ellisandthomas.com",
+            "img": "https://imgs.search.brave.com/y83RDmDGPBehm1RcXV3cXerVb4h5qpTpuOVRN57zkNQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGE5NTE4M2U1/NTQxOWUwNGFhY2Zi/Njg4YjI3MzBkNjU5/ZTYyZDc1YTVlOTZk/MzEzY2Y1OWU5ZTFh/ZDc2YWRjYi93d3cu/ZWxsaXNhbmR0aG9t/YXMuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "ellisandthomas.com",
+            "hostname": "www.ellisandthomas.com",
+            "favicon": "https://imgs.search.brave.com/y83RDmDGPBehm1RcXV3cXerVb4h5qpTpuOVRN57zkNQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGE5NTE4M2U1/NTQxOWUwNGFhY2Zi/Njg4YjI3MzBkNjU5/ZTYyZDc1YTVlOTZk/MzEzY2Y1OWU5ZTFh/ZDc2YWRjYi93d3cu/ZWxsaXNhbmR0aG9t/YXMuY29tLw",
+            "path": "\u203a texas-minimum-insurance-requirements-are-they-enough"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/0wFdzSoNPJe0RXId11aTK-G-xuctwt0V15o6lo8j9tc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/ZWxsaXNhbmR0aG9t/YXMuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI1LzEwL1Rl/eGFzLU1pbmltdW0t/SW5zdXJhbmNlLVJl/cXVpcmVtZW50cy1B/cmUtVGhleS1Fbm91/Z2guanBn",
+            "original": "https://www.ellisandthomas.com/wp-content/uploads/2025/10/Texas-Minimum-Insurance-Requirements-Are-They-Enough.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "How Often Do Auto Accident Settlements Exceed Policy Limits in Texas? - Get The Help You Deserve",
+          "url": "https://albtriallawyers.com/auto-accident-settlements-exceed-policy-limits/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The Texas minimum liability limit for coverage is called a 30/60/25 policy. This coverage includes $30,000 for bodily injury to a single person, $60,000 for bodily injury for any one accident, and $25,000 in property damage coverage.",
+          "page_age": "2025-02-19T19:41:28",
+          "profile": {
+            "name": "Alb Trial Lawyers",
+            "url": "https://albtriallawyers.com/auto-accident-settlements-exceed-policy-limits/",
+            "long_name": "albtriallawyers.com",
+            "img": "https://imgs.search.brave.com/t64jFpLr9CLY0j0Xe0ShbjnYOt9u1Su_dgiBQBQ-xjo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWU4NmE3OTMz/MDA5M2JhOTc3YzVj/NDcwNDg3MGYzZjQy/NWI5NTc1NGIzZGYw/NWNjMDhmZTY0NDYw/ZDBiNmEzZi9hbGJ0/cmlhbGxhd3llcnMu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "albtriallawyers.com",
+            "hostname": "albtriallawyers.com",
+            "favicon": "https://imgs.search.brave.com/t64jFpLr9CLY0j0Xe0ShbjnYOt9u1Su_dgiBQBQ-xjo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWU4NmE3OTMz/MDA5M2JhOTc3YzVj/NDcwNDg3MGYzZjQy/NWI5NTc1NGIzZGYw/NWNjMDhmZTY0NDYw/ZDBiNmEzZi9hbGJ0/cmlhbGxhd3llcnMu/Y29tLw",
+            "path": "  \u203a home  \u203a blog  \u203a how often do auto accident settlements exceed the policy limits in texas?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/TH_EB_oD6k1RAnlqpzCZ4zIuDCtp9RDQmJg2oTf7mAY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hbGJ0/cmlhbGxhd3llcnMu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIyLzA3L2Nhci1h/Y2NpZGVudC1zZXR0/bGVtZW50cy1leGNl/ZWQtcG9saWN5LWxp/bWl0cy53ZWJw",
+            "original": "https://albtriallawyers.com/wp-content/uploads/2022/07/car-accident-settlements-exceed-policy-limits.webp",
+            "logo": false
+          },
+          "age": "February 19, 2025"
+        },
+        {
+          "title": "Minimum car insurance requirements in Texas",
+          "url": "https://www.carinsurance.com/state/state-minimum-car-insurance-in-texas/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Texas drivers are required to purchase minimum liability car insurance of 30/60/25. Failing to meet these minimum requirements can result in fines, license suspension or other legal consequences.",
+          "page_age": "2025-06-04T00:00:00",
+          "profile": {
+            "name": "Carinsurance.com",
+            "url": "https://www.carinsurance.com/state/state-minimum-car-insurance-in-texas/",
+            "long_name": "carinsurance.com",
+            "img": "https://imgs.search.brave.com/KCetfn_EHIlwz5sy6dTvSdGjOen9Qf_QsSICK4hYUH8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDdmYWUzNjM0/MGU0ODEwNzI3ZWVj/NjEwYmQ2MmE5NTZh/N2E2NDRhODA2YjRj/NjBlNzc2OTBiYzkz/YzA3ZGQzOC93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "carinsurance.com",
+            "hostname": "www.carinsurance.com",
+            "favicon": "https://imgs.search.brave.com/KCetfn_EHIlwz5sy6dTvSdGjOen9Qf_QsSICK4hYUH8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDdmYWUzNjM0/MGU0ODEwNzI3ZWVj/NjEwYmQ2MmE5NTZh/N2E2NDRhODA2YjRj/NjBlNzc2OTBiYzkz/YzA3ZGQzOC93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS8",
+            "path": "  \u203a car insurance homepage  \u203a car insurance by state  \u203a car insurance in texas  \u203a minimum car insurance requirements in texas"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/UgJ_Y_LrX0rGkmLc_m68pIngh_lOS5ECjcKCnUUN0Ks/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS9pbWFnZXMv/aG9tZS9pbWFnZV9m/b3Jtc3RhcnQuanBn",
+            "original": "https://www.carinsurance.com/images/home/image_formstart.jpg",
+            "logo": false
+          },
+          "age": "June 4, 2025"
+        },
+        {
+          "title": "What Is 30/60/25 Insurance in Texas? | Insurify",
+          "url": "https://insurify.com/car-insurance/texas/what-is-30-60-25-insurance-in-texas/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The minimum Texas liability coverage has two bodily injury liability policy limits \u2014 $30,000 for each person\u2019s injuries in an accident and $60,000 for all injuries in an accident.",
+          "page_age": "2025-06-25T19:00:00",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/car-insurance/texas/what-is-30-60-25-insurance-in-texas/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a car insurance  \u203a texas  \u203a what is 30 60 25 insurance in texas"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/P14uBxDPhDbEQNOn-F1VzvHYZd3gnmOxEPkXSPecAvM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xNjIyNzMvMTY0/NngxMDkyLzJkZDYy/YmUyZjYvYnJva2Vu/LWNhci5wbmc",
+            "original": "https://a.storyblok.com/f/162273/1646x1092/2dd62be2f6/broken-car.png",
+            "logo": false
+          },
+          "age": "June 25, 2025"
+        },
+        {
+          "title": "Guide to Car Insurance in Texas",
+          "url": "https://www.autoinsurance.com/states/texas/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In Texas, drivers must have $30k bodily injury liability per person and $60k per accident. The average full coverage cost is $2,051 annually.",
+          "page_age": "2025-06-13T18:43:54",
+          "profile": {
+            "name": "Auto Insurance",
+            "url": "https://www.autoinsurance.com/states/texas/",
+            "long_name": "autoinsurance.com",
+            "img": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.com",
+            "hostname": "www.autoinsurance.com",
+            "favicon": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v",
+            "path": "  \u203a home  \u203a states  \u203a guide to car insurance in texas"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/FU3hr37tBh-Ikm7VXGKvyu3MEuYMGVKcUPtJXRnSUP4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYXV0b2luc3Vy/YW5jZS5jb20vYXBw/L3VwbG9hZHMvMjAy/MS8xMi8xNjIxMTQw/My9TY3JlZW4tU2hv/dC0yMDIxLTEyLTAx/LWF0LTkuMzcuNDYt/QU0ucG5n",
+            "original": "https://images.autoinsurance.com/app/uploads/2021/12/16211403/Screen-Shot-2021-12-01-at-9.37.46-AM.png",
+            "logo": false
+          },
+          "age": "June 13, 2025"
+        },
+        {
+          "title": "Limits of liability and Texas tort reform",
+          "url": "https://hub.tmlt.org/tmlt-blog/limits-of-liability-and-texas-tort-reform",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Physicians should also consider ... passed medical liability reforms in 2003, reforms that include a $250,000 cap on non-economic damages for physicians....",
+          "page_age": "2024-12-18T15:56:25",
+          "profile": {
+            "name": "Tmlt",
+            "url": "https://hub.tmlt.org/tmlt-blog/limits-of-liability-and-texas-tort-reform",
+            "long_name": "hub.tmlt.org",
+            "img": "https://imgs.search.brave.com/NH3lBXiJXe4zrpKdyQqmo8ckzv6bjGYP9O49DZc5qqs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGU3YjU4Yjhm/OGFmMjcxOWYzZmNk/ZTA3Y2E1YTNkZjQw/ZGY2NmU1MmRmNTgz/ODgyNThjODc3MjQz/NWUxMWY1NS9odWIu/dG1sdC5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "hub.tmlt.org",
+            "hostname": "hub.tmlt.org",
+            "favicon": "https://imgs.search.brave.com/NH3lBXiJXe4zrpKdyQqmo8ckzv6bjGYP9O49DZc5qqs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGU3YjU4Yjhm/OGFmMjcxOWYzZmNk/ZTA3Y2E1YTNkZjQw/ZGY2NmU1MmRmNTgz/ODgyNThjODc3MjQz/NWUxMWY1NS9odWIu/dG1sdC5vcmcv",
+            "path": "\u203a tmlt-blog  \u203a limits-of-liability-and-texas-tort-reform"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/a5khPQUsUMRa6U4xdrj1tiCORz-Xe3w-nYvmpZNR2R8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdWYtNTUyNTMx/L2ltYWdlL3VwbG9h/ZC92MTcwMzMyOTEw/Ni9pdGVtZWRpdG9y/aW1hZ2VfNjRkYmNi/MDYwOTg1ZC0xODc3/NDE4LnBuZw",
+            "original": "https://res.cloudinary.com/uf-552531/image/upload/v1703329106/itemeditorimage_64dbcb060985d-1877418.png",
+            "logo": false
+          },
+          "age": "December 18, 2024"
+        },
+        {
+          "title": "Texas Car Insurance Requirements | Freeway Insurance",
+          "url": "https://www.freeway.com/knowledge-center/auto/texas-car-insurance-requirements/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Texas requires the minimum liability of at least $30,000 of bodily injury coverage per person and $60,000 per accident. You are also required to have $25,000 of property damage coverage.",
+          "page_age": "2025-05-02T23:37:49",
+          "profile": {
+            "name": "Freeway Insurance",
+            "url": "https://www.freeway.com/knowledge-center/auto/texas-car-insurance-requirements/",
+            "long_name": "freeway.com",
+            "img": "https://imgs.search.brave.com/EgYvTm2odrbbZ0oDqw2uKubnvKXEbXLv8zKttmKGjR4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDU1YWI4M2I3/MzFkYWYxYzBlZjFh/NDViZWRiZGE4OTkx/YTViZmJhODE5OTAw/ODBjNmMyZDgwYzk5/ZjZjOTMwZS93d3cu/ZnJlZXdheS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "freeway.com",
+            "hostname": "www.freeway.com",
+            "favicon": "https://imgs.search.brave.com/EgYvTm2odrbbZ0oDqw2uKubnvKXEbXLv8zKttmKGjR4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDU1YWI4M2I3/MzFkYWYxYzBlZjFh/NDViZWRiZGE4OTkx/YTViZmJhODE5OTAw/ODBjNmMyZDgwYzk5/ZjZjOTMwZS93d3cu/ZnJlZXdheS5jb20v",
+            "path": "  \u203a home  \u203a car insurance  \u203a texas car insurance requirements and coverage"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/rGIKXYN3BPDQyba5An3nTFkaGgiQxAVaEqqzbAhROkc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZXdheS5jb20v/a25vd2xlZGdlLWNl/bnRlci93cC1jb250/ZW50L3VwbG9hZHMv/c2l0ZXMvMi8yMDI0/LzEwL0ZSRUVXQVkt/RU4tT0cuanBn",
+            "original": "https://www.freeway.com/knowledge-center/wp-content/uploads/sites/2/2024/10/FREEWAY-EN-OG.jpg",
+            "logo": false
+          },
+          "age": "May 2, 2025"
+        },
+        {
+          "title": "Full Coverage vs Liability in Texas: 9 Key Truths",
+          "url": "https://giautoinsurance.com/full-coverage-vs-liability-in-texas/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Texas requires drivers to prove financial responsibility, most commonly by buying liability insurance. The minimum limits are 30/60/25\u2014$30,000 per injured person, $60,000 per crash total for injuries, and $25,000 for property damage. These are ...",
+          "page_age": "2025-09-22T19:11:26",
+          "profile": {
+            "name": "GI Auto Insurance",
+            "url": "https://giautoinsurance.com/full-coverage-vs-liability-in-texas/",
+            "long_name": "giautoinsurance.com",
+            "img": "https://imgs.search.brave.com/7CZmmZ5nnDpp89jouccoPP5nNDMDJl81pRhV7YHd3rs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODdjZGRiMzQ2/OTMwYzg4YzE5Y2Zi/ODY4NTliNWNkM2Y1/ZjMzYzVkNjg5OWI2/NTA5MDhmYmVhMWMw/YjMxNmJkMS9naWF1/dG9pbnN1cmFuY2Uu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "video",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "giautoinsurance.com",
+            "hostname": "giautoinsurance.com",
+            "favicon": "https://imgs.search.brave.com/7CZmmZ5nnDpp89jouccoPP5nNDMDJl81pRhV7YHd3rs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODdjZGRiMzQ2/OTMwYzg4YzE5Y2Zi/ODY4NTliNWNkM2Y1/ZjMzYzVkNjg5OWI2/NTA5MDhmYmVhMWMw/YjMxNmJkMS9naWF1/dG9pbnN1cmFuY2Uu/Y29tLw",
+            "path": "\u203a full-coverage-vs-liability-in-texas"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/rYraTMmfaLuwAnQ9cWOU6YvHDFIOKj6fHryasgFBzVc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9naWF1/dG9pbnN1cmFuY2Uu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI1LzA3L0RTQzA2/MjMwLmpwZw",
+            "original": "https://giautoinsurance.com/wp-content/uploads/2025/07/DSC06230.jpg",
+            "logo": false
+          },
+          "age": "September 22, 2025"
+        },
+        {
+          "title": "What is the Minimum Car Insurance Required in Texas?",
+          "url": "https://akfirm.com/what-is-the-minimum-car-insurance-required-in-texas/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "When discussing what is the minimum car insurance required in Texas, it\u2019s essential to understand the specific types of coverage mandated by state law. The Lone Star State requires that all drivers carry liability insurance to cover the costs associated with causing an accident.",
+          "page_age": "2025-08-18T22:21:41",
+          "profile": {
+            "name": "AK Law Firm",
+            "url": "https://akfirm.com/what-is-the-minimum-car-insurance-required-in-texas/",
+            "long_name": "akfirm.com",
+            "img": "https://imgs.search.brave.com/kqla9kdj-toPZBTNniW6jT79pt-eb2XII81avXf2AfE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvY2EzMjFhOTU0/ZDA1YzdlM2UzNGUz/OGVlY2ZiZjU5ZDE5/MjQwOWJmMzk5NjBk/MThlYWE5MmMwNTQ5/ODIzZTk4NS9ha2Zp/cm0uY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "akfirm.com",
+            "hostname": "akfirm.com",
+            "favicon": "https://imgs.search.brave.com/kqla9kdj-toPZBTNniW6jT79pt-eb2XII81avXf2AfE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvY2EzMjFhOTU0/ZDA1YzdlM2UzNGUz/OGVlY2ZiZjU5ZDE5/MjQwOWJmMzk5NjBk/MThlYWE5MmMwNTQ5/ODIzZTk4NS9ha2Zp/cm0uY29tLw",
+            "path": "\u203a what-is-the-minimum-car-insurance-required-in-texas"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/SKXvKmMT1pmBF0UDofg8calyd1QfXXYl63k4yMsYLf0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9ha2Zp/cm0uY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI1LzAyLzU4/NC0xLmpwZw",
+            "original": "https://akfirm.com/wp-content/uploads/2025/02/584-1.jpg",
+            "logo": false
+          },
+          "age": "August 18, 2025"
+        },
+        {
+          "title": "What Vehicle Insurance is Legally Required in Texas? | Law Office of Shane R.Kadlec",
+          "url": "https://www.injurylawyerhouston.com/vehicle-insurance-requirements/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Higher limits, such as 100/300/100, cost only a few dollars extra each month yet protect income, savings, and homes from lawsuits. Liability coverage protects others. The next set of options shields you and your car, and many lenders require ...",
+          "page_age": "2025-08-28T15:28:04",
+          "profile": {
+            "name": "Injurylawyerhouston",
+            "url": "https://www.injurylawyerhouston.com/vehicle-insurance-requirements/",
+            "long_name": "injurylawyerhouston.com",
+            "img": "https://imgs.search.brave.com/OlC8-ieJrjyHs6X2ZXfiRJ77mSyS4b2VNKHHCXKXkxQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzE1ZjU0OWRi/ZTNjYWI2MmNhYWJi/NjlmZmQ2NTA3YTgx/YmUwMmFkNGZhM2I5/ZmJiZjRmZDk2OWY3/Y2M0YjMxMC93d3cu/aW5qdXJ5bGF3eWVy/aG91c3Rvbi5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "injurylawyerhouston.com",
+            "hostname": "www.injurylawyerhouston.com",
+            "favicon": "https://imgs.search.brave.com/OlC8-ieJrjyHs6X2ZXfiRJ77mSyS4b2VNKHHCXKXkxQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzE1ZjU0OWRi/ZTNjYWI2MmNhYWJi/NjlmZmQ2NTA3YTgx/YmUwMmFkNGZhM2I5/ZmJiZjRmZDk2OWY3/Y2M0YjMxMC93d3cu/aW5qdXJ5bGF3eWVy/aG91c3Rvbi5jb20v",
+            "path": "\u203a vehicle-insurance-requirements"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/N2tm_XWx7PYPIQXj9ItOJbWRoDIpPHx3wqjG1Oydt3I/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5qdXJ5bGF3eWVy/aG91c3Rvbi5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjUv/MDgvdmVoaWNsZS1p/bnN1cmFuY2UtcmVx/dWlyZW1lbnRzLmpw/Zw",
+            "original": "https://www.injurylawyerhouston.com/wp-content/uploads/2025/08/vehicle-insurance-requirements.jpg",
+            "logo": false
+          },
+          "age": "August 28, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

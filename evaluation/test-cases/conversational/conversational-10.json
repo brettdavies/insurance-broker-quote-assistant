@@ -1,0 +1,36 @@
+{
+  "id": "conv-10",
+  "name": "Complex Multi-Field Extraction - IL Auto Progressive",
+  "description": "Complex test case with multiple fields: vehicles, drivers, mileage",
+  "type": "conversational",
+  "carrier": "Progressive",
+  "state": "IL",
+  "product": "auto",
+  "input": "IL auto. 3 vehicles: 2021 F-150, 2019 Camry, 2020 CR-V. 3 drivers. Age 36. 12k miles yr. Clean record. Credit 750. Has pro",
+  "expectedProfile": {
+    "state": "IL",
+    "productType": "auto",
+    "age": 36,
+    "vehicles": 3,
+    "drivers": 3,
+    "householdSize": 3,
+    "annualMileage": 12000,
+    "cleanRecord3Yr": true,
+    "creditScore": 750,
+    "currentCarrier": "Progressive"
+  },
+  "expectedRoute": {
+    "primaryCarrier": "Progressive",
+    "eligibleCarriers": ["Progressive", "GEICO", "State Farm"],
+    "confidence": 0.88,
+    "rationale": "Progressive offers auto insurance in Illinois and handles multi-vehicle policies well."
+  },
+  "expectedDisclaimers": [
+    "Rates subject to underwriting and approval",
+    "Actual rates may vary based on complete application",
+    "Must be reviewed and finalized by a licensed insurance agent",
+    "Not a binding quote",
+    "Illinois: Rates are estimates only",
+    "Auto Insurance: Coverage limits and deductibles affect premium"
+  ]
+}

@@ -1,0 +1,800 @@
+{
+  "websearch_id": "websearch_v3oqqwn1eql52jh9n44hyk0u",
+  "search_id": "search_c80l6qqsdjaico8l3im8yygk",
+  "timestamp": "2025-11-07T12:32:07.435873",
+  "startedAt": "2025-11-07T12:32:07.435873",
+  "completedAt": "2025-11-07T12:32:09.025024",
+  "durationSeconds": 1.59,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"New York\" uninsured motorist required",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"New York\" uninsured motorist required",
+      "show_strict_warning": false,
+      "cleaned": "New York uninsured motorist required",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "New York uninsured motorist required"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Uninsured Motorist Coverage in New York -",
+          "url": "https://www.plymouthrock.com/insurance/auto/ny/coverage-policy-options/uninsured-motorist-coverage",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The best way to protect yourself ... York, the minimum limit for the required uninsured motorist coverage is $25,000 per person and $50,000 per accident....",
+          "page_age": "2024-12-31T15:49:13",
+          "profile": {
+            "name": "Plymouth Rock Assurance",
+            "url": "https://www.plymouthrock.com/insurance/auto/ny/coverage-policy-options/uninsured-motorist-coverage",
+            "long_name": "plymouthrock.com",
+            "img": "https://imgs.search.brave.com/e8fRJ4soirDKsbJ8gUvvviOV0ICPOpaaRTniOAI6RWQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2M1MDUwODc3/ODE1ZDNmOWE5Njdm/MDNlM2QxMzQ0OGUx/NzEzNWI2OGRmOWEy/MmUzZmQyNGJmYmI2/M2IyNWY2ZC93d3cu/cGx5bW91dGhyb2Nr/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "plymouthrock.com",
+            "hostname": "www.plymouthrock.com",
+            "favicon": "https://imgs.search.brave.com/e8fRJ4soirDKsbJ8gUvvviOV0ICPOpaaRTniOAI6RWQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2M1MDUwODc3/ODE1ZDNmOWE5Njdm/MDNlM2QxMzQ0OGUx/NzEzNWI2OGRmOWEy/MmUzZmQyNGJmYmI2/M2IyNWY2ZC93d3cu/cGx5bW91dGhyb2Nr/LmNvbS8",
+            "path": "  \u203a home  \u203a insurance  \u203a auto  \u203a new york auto insurance  \u203a coverage & policy options for auto insurance in new york  \u203a uninsured motorist coverage in new york"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/MMn8ns1Mjhe7UzndC8oubLIXcw3mBFzSwG5nvtTeqLA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cGx5bW91dGhyb2Nr/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMS8xMS9wbHlt/b3V0aC1yb2NrLWFz/c3VyYW5jZS1vZmZp/Y2UuanBn",
+            "original": "https://www.plymouthrock.com/wp-content/uploads/2021/11/plymouth-rock-assurance-office.jpg",
+            "logo": false
+          },
+          "age": "December 31, 2024"
+        },
+        {
+          "title": "Uninsured & Underinsured Motorist Coverage in New York Car Accidents",
+          "url": "https://www.dupeelaw.com/new-york-criminal-law-articles/uninsured-underinsured-motorist-coverage/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "For help with an uninsured or ... Goshen car accident lawyer. New York requires all standard auto liability policies to include Uninsured Motorist (UM) coverage....",
+          "page_age": "2025-05-08T21:45:12",
+          "profile": {
+            "name": "Dupeelaw",
+            "url": "https://www.dupeelaw.com/new-york-criminal-law-articles/uninsured-underinsured-motorist-coverage/",
+            "long_name": "dupeelaw.com",
+            "img": "https://imgs.search.brave.com/gNCiRY4XLmqFPLfoCbcJuxV_YxoJJHIOlmJ_fYF29kc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjU2MjM3MWYx/ZmE1MDI4MWU1OWI0/NmMzMDQ0ODU3Zjgy/MjQ1NDRhNzdkYzU1/OTI3YWFlYzdmMjcz/MGYwZmQ0Ni93d3cu/ZHVwZWVsYXcuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "dupeelaw.com",
+            "hostname": "www.dupeelaw.com",
+            "favicon": "https://imgs.search.brave.com/gNCiRY4XLmqFPLfoCbcJuxV_YxoJJHIOlmJ_fYF29kc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjU2MjM3MWYx/ZmE1MDI4MWU1OWI0/NmMzMDQ0ODU3Zjgy/MjQ1NDRhNzdkYzU1/OTI3YWFlYzdmMjcz/MGYwZmQ0Ni93d3cu/ZHVwZWVsYXcuY29t/Lw",
+            "path": "  \u203a home  \u203a new york criminal law articles  \u203a uninsured and underinsured motorist coverage in a new york car accident claim"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/13p4Kdp-1N50KZN9XJWQFEy1A5Wvg8jXmW9TZ7LLvMg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/ZHVwZWVsYXcuY29t/L3dwLWNvbnRlbnQv/dGhlbWVzL3NjcmVl/bnNob3QuanBn",
+            "original": "https://www.dupeelaw.com/wp-content/themes/screenshot.jpg",
+            "logo": false
+          },
+          "age": "May 8, 2025"
+        },
+        {
+          "title": "Does New York Require Uninsured Motorist Coverage?",
+          "url": "https://www.hlgny.com/does-new-york-require-uninsured-motorist-coverage/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Without it, you\u2019d bear the financial burden of an accident caused by an uninsured or hit-and-run driver, adding stress to an already difficult situation. While UM coverage is required in New York, underinsured motorist (UIM) coverage is optional.",
+          "page_age": "2025-07-22T10:41:48",
+          "profile": {
+            "name": "Hlgny",
+            "url": "https://www.hlgny.com/does-new-york-require-uninsured-motorist-coverage/",
+            "long_name": "hlgny.com",
+            "img": "https://imgs.search.brave.com/soYaKIFfT3RU8IeVFaqFyTM3elzjf6xIPZNkztrmf6M/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjliMzE5MGJi/ODRmNzhkNmRkZDA5/OWFmMjRiOWM1MDI2/ZWU1MmZkMGRiYzM5/MTUyZWViZGYwZmQ4/YWY3OGJiYi93d3cu/aGxnbnkuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "hlgny.com",
+            "hostname": "www.hlgny.com",
+            "favicon": "https://imgs.search.brave.com/soYaKIFfT3RU8IeVFaqFyTM3elzjf6xIPZNkztrmf6M/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjliMzE5MGJi/ODRmNzhkNmRkZDA5/OWFmMjRiOWM1MDI2/ZWU1MmZkMGRiYzM5/MTUyZWViZGYwZmQ4/YWY3OGJiYi93d3cu/aGxnbnkuY29tLw",
+            "path": "\u203a does-new-york-require-uninsured-motorist-coverage"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/_8BKoXPCuFoOgffI5mXsBiPq-CH9qwIqcqfKyN6xKMA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aGxnbnkuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI1LzAx/L0RvZXMtTmV3LVlv/cmstUmVxdWlyZS1V/bmluc3VyZWQtTW90/b3Jpc3QtQ292ZXJh/Z2Uud2VicA",
+            "original": "https://www.hlgny.com/wp-content/uploads/2025/01/Does-New-York-Require-Uninsured-Motorist-Coverage.webp",
+            "logo": false
+          },
+          "age": "July 22, 2025"
+        },
+        {
+          "title": "The Importance of Uninsured Motorist Coverage in New York",
+          "url": "https://hillmoin.com/the-importance-of-uninsured-motorist-coverage-in-new-york/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "That\u2019s where your essential uninsured ... insurance coverage. In New York, the law mandates that drivers carry a minimum amount of liability car insurance and uninsured motorist coverage....",
+          "page_age": "2025-04-14T21:14:40",
+          "profile": {
+            "name": "Hill & Moin LLP",
+            "url": "https://hillmoin.com/the-importance-of-uninsured-motorist-coverage-in-new-york/",
+            "long_name": "hillmoin.com",
+            "img": "https://imgs.search.brave.com/ysgYR8JQMs5XQfryzg-h5_dUtOB4aRrhslUOn4tQaEY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDY0MjE5ODE1/MzhiNGQxOGFhZGFh/NzhkOGU4MDQ0M2Iz/NmE0NzQyMTk4MmVi/M2EyY2RjNjc0ZjQ2/OTAwOWI4YS9oaWxs/bW9pbi5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "hillmoin.com",
+            "hostname": "hillmoin.com",
+            "favicon": "https://imgs.search.brave.com/ysgYR8JQMs5XQfryzg-h5_dUtOB4aRrhslUOn4tQaEY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDY0MjE5ODE1/MzhiNGQxOGFhZGFh/NzhkOGU4MDQ0M2Iz/NmE0NzQyMTk4MmVi/M2EyY2RjNjc0ZjQ2/OTAwOWI4YS9oaWxs/bW9pbi5jb20v",
+            "path": "  \u203a home  \u203a the importance of uninsured motorist coverage in new york"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/-yxXKt0Rzmjw5XzQpnYSjkbIGvEXTJuFugSGMB2FU4w/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9saDUu/Z29vZ2xldXNlcmNv/bnRlbnQuY29tL3Av/QUYxUWlwTWFOeEp3/aU9uZDNGYkEzd1o1/aURzNEZqZ3RjbzVK/eTRKTE9LRkg9dzIw/My1oMTM1LWstbm8g",
+            "original": "https://lh5.googleusercontent.com/p/AF1QipMaNxJwiOnd3FbA3wZ5iDs4Fjgtco5Jy4JLOKFH=w203-h135-k-no ",
+            "logo": false
+          },
+          "age": "April 14, 2025"
+        },
+        {
+          "title": "NY State Law: When an At-Fault Driver is Uninsured or Underinsured",
+          "url": "https://www.martellofirm.com/ny-state-law-when-an-at-fault-driver-is-uninsured-or-underinsured/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "As mentioned above, drivers are required to carry uninsured motorist coverage on their insurance. This provides additional first-party benefits to you to fill in the gaps that you would have gotten paid by the at-fault driver when they have ...",
+          "page_age": "2025-01-09T19:10:35",
+          "profile": {
+            "name": "Martello Law",
+            "url": "https://www.martellofirm.com/ny-state-law-when-an-at-fault-driver-is-uninsured-or-underinsured/",
+            "long_name": "martellofirm.com",
+            "img": "https://imgs.search.brave.com/zcHszHRyDO-cbkvUXQA9-TtcQ-wTg43d21dfdJ0RuWc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTVjZjAxMjc5/ODJjMDNlMWZiZWNm/OWEzYTM5ZDNlMGQ4/MTg2ZDBlNTBlYmIz/YmYwNjkwOTBhOWM0/NmI4NjNkMy93d3cu/bWFydGVsbG9maXJt/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "martellofirm.com",
+            "hostname": "www.martellofirm.com",
+            "favicon": "https://imgs.search.brave.com/zcHszHRyDO-cbkvUXQA9-TtcQ-wTg43d21dfdJ0RuWc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTVjZjAxMjc5/ODJjMDNlMWZiZWNm/OWEzYTM5ZDNlMGQ4/MTg2ZDBlNTBlYmIz/YmYwNjkwOTBhOWM0/NmI4NjNkMy93d3cu/bWFydGVsbG9maXJt/LmNvbS8",
+            "path": "  \u203a home  \u203a the martello law blog  \u203a ny state law: when an at-fault driver is uninsured or underinsured"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/5dLEHN5r_B6vjHa3ajD6eDHDTP_AAq7uc054aKoVOkk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bWFydGVsbG9maXJt/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMS8wOS9sb2dv/LnBuZw",
+            "original": "https://www.martellofirm.com/wp-content/uploads/2021/09/logo.png",
+            "logo": true
+          },
+          "age": "January 9, 2025"
+        },
+        {
+          "title": "New York City Uninsured Underinsured Motorist Coverage",
+          "url": "https://www.injuryclaimnyclaw.com/new-york-city-car-accident-lawyer/uninsured-underinsured/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Usually, the other driver does not have enough money, and an accident victim could be left with no one to pay the bills. New York law requires every driver to purchase uninsured motorist coverage.",
+          "page_age": "2025-04-22T15:31:53",
+          "profile": {
+            "name": "Injuryclaimnyclaw",
+            "url": "https://www.injuryclaimnyclaw.com/new-york-city-car-accident-lawyer/uninsured-underinsured/",
+            "long_name": "injuryclaimnyclaw.com",
+            "img": "https://imgs.search.brave.com/pMcS5F8oFdnJ_PKFWjOwHNFY5TRML25bPT-j4alFM7U/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNmU2NWUyYzJi/NmNhODhiMGYxMzM1/MjY0MjE0ZWZhNDNl/ZDI2ZDFmNGU0MTY4/Nzc4MzljMWVhNGM4/OTQ0N2Q4OC93d3cu/aW5qdXJ5Y2xhaW1u/eWNsYXcuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "injuryclaimnyclaw.com",
+            "hostname": "www.injuryclaimnyclaw.com",
+            "favicon": "https://imgs.search.brave.com/pMcS5F8oFdnJ_PKFWjOwHNFY5TRML25bPT-j4alFM7U/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNmU2NWUyYzJi/NmNhODhiMGYxMzM1/MjY0MjE0ZWZhNDNl/ZDI2ZDFmNGU0MTY4/Nzc4MzljMWVhNGM4/OTQ0N2Q4OC93d3cu/aW5qdXJ5Y2xhaW1u/eWNsYXcuY29tLw",
+            "path": "  \u203a new york city car accident lawyer  \u203a new york city uninsured under insured accident lawyer"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/UrNLvbFK5a3N-LGH1OMgEQTbLNC-XgqQ111xbfvIkec/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5qdXJ5Y2xhaW1u/eWNsYXcuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI1LzA0/L3VuaW5zdXJlZC11/bmRlcmluc3VyZWQu/anBn",
+            "original": "https://www.injuryclaimnyclaw.com/wp-content/uploads/2025/04/uninsured-underinsured.jpg",
+            "logo": false
+          },
+          "age": "April 22, 2025"
+        },
+        {
+          "title": "Uninsured Motorist Claims Lawyer In New York City",
+          "url": "https://www.kalawyer.com/car-accident-lawyer/uninsured-motorist-claims/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "An uninsured motorist (UM) claim ... driver does not have liability coverage. In New York, insurance companies are required to offer uninsured motorist coverage, which provides protection for accidents involving uninsured ...",
+          "page_age": "2025-04-13T19:49:31",
+          "profile": {
+            "name": "Kalawyer",
+            "url": "https://www.kalawyer.com/car-accident-lawyer/uninsured-motorist-claims/",
+            "long_name": "kalawyer.com",
+            "img": "https://imgs.search.brave.com/xKSSBgVpr25WRGv2x8my7ofzFqhXKcvA9la8JazoPac/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGYzMDAwOWIx/MTRmYjcyODBiNjVj/NjY4NTk0OGE0MTkx/NzRlNzY3Yzg0ZWYy/NmQ3MDk3ZmM1NWU2/MDllMjhjNS93d3cu/a2FsYXd5ZXIuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "video",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "kalawyer.com",
+            "hostname": "www.kalawyer.com",
+            "favicon": "https://imgs.search.brave.com/xKSSBgVpr25WRGv2x8my7ofzFqhXKcvA9la8JazoPac/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMGYzMDAwOWIx/MTRmYjcyODBiNjVj/NjY4NTk0OGE0MTkx/NzRlNzY3Yzg0ZWYy/NmQ3MDk3ZmM1NWU2/MDllMjhjNS93d3cu/a2FsYXd5ZXIuY29t/Lw",
+            "path": "  \u203a home  \u203a car accident lawyer in new york city  \u203a uninsured motorist claims lawyer in new york city"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/t2EMM-XfyFz6MqQScrG04eo9Naq6JXiYdj4uVLuAZ1I/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/a2FsYXd5ZXIuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI1/LzAxL0tBTEFXLUZl/YXR1cmVkLVBob3Rv/LVRlbXBsYXRlLnBu/Zw",
+            "original": "https://www.kalawyer.com/wp-content/uploads/2025/01/KALAW-Featured-Photo-Template.png",
+            "logo": false
+          },
+          "age": "April 13, 2025"
+        },
+        {
+          "title": "What is Uninsured and Underinsured Motorist Coverage? - Richmond \\ Vona",
+          "url": "https://www.richmondvona.com/faqs/uninsured-underinsured-motorist-coverage/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "New York law requires all drivers to carry liability insurance under its no-fault laws, but sometimes the minimum coverage won\u2019t pay for all your medical expenses after an accident.",
+          "page_age": "2025-09-29T10:58:22",
+          "profile": {
+            "name": "Richmond \\ Vona",
+            "url": "https://www.richmondvona.com/faqs/uninsured-underinsured-motorist-coverage/",
+            "long_name": "richmondvona.com",
+            "img": "https://imgs.search.brave.com/z3TKib9avp6MlZkqYPeJJX8ZsnCED5TIT7k5qQFCMrg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWJhNDcxNTc3/MTlmYmFkZTViM2Nl/N2QyZDJhMTM3YTIz/N2MzZDcyOTcxMjhl/NmUzNzVmMjFhOWFl/M2U1MDQ0Mi93d3cu/cmljaG1vbmR2b25h/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "richmondvona.com",
+            "hostname": "www.richmondvona.com",
+            "favicon": "https://imgs.search.brave.com/z3TKib9avp6MlZkqYPeJJX8ZsnCED5TIT7k5qQFCMrg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWJhNDcxNTc3/MTlmYmFkZTViM2Nl/N2QyZDJhMTM3YTIz/N2MzZDcyOTcxMjhl/NmUzNzVmMjFhOWFl/M2U1MDQ0Mi93d3cu/cmljaG1vbmR2b25h/LmNvbS8",
+            "path": "  \u203a home  \u203a faqs  \u203a what is uninsured and underinsured motorist coverage?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/RlrpYHuFv9TvrkYYgKM9Pygeb5HBJFay4ZyQg5oCH5g/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmljaG1vbmR2b25h/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNC8wNS9jYXIt/YWNjaWRlbnQtZmFx/LWFyY2hpdmUtcGxh/Y2Vob2xkZXItZTE3/MTUxOTc1NTM0MzIu/cG5n",
+            "original": "https://www.richmondvona.com/wp-content/uploads/2024/05/car-accident-faq-archive-placeholder-e1715197553432.png",
+            "logo": false
+          },
+          "age": "September 29, 2025"
+        },
+        {
+          "title": "Uninsured Motorist Injury Claims in New York | Alan Ripka & Associates",
+          "url": "https://alanripka.com/uninsured-and-underinsured-motorist-claims-in-new-york-what-victims-need-to-know/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Underinsured Motorist (UIM) coverage applies when the at-fault driver\u2019s insurance policy is insufficient to cover your injuries and losses. In New York, UM coverage is required as part of your auto insurance policy, while UIM is optional but ...",
+          "page_age": "2025-04-11T12:05:42",
+          "profile": {
+            "name": "Alan Ripka",
+            "url": "https://alanripka.com/uninsured-and-underinsured-motorist-claims-in-new-york-what-victims-need-to-know/",
+            "long_name": "alanripka.com",
+            "img": "https://imgs.search.brave.com/aNhkgtWwn34zGrM-rUrlDMAosl1_kRY-lsvAEho1EWM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzAxZmRjZTg5/Mzg3MDBhYWJhNzgw/ODA0ZTM0NmYyYmI1/NDIwNmFjMTMzZjFk/OTkzZDZmMDM5ZDVm/NmRhYzlkMy9hbGFu/cmlwa2EuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "alanripka.com",
+            "hostname": "alanripka.com",
+            "favicon": "https://imgs.search.brave.com/aNhkgtWwn34zGrM-rUrlDMAosl1_kRY-lsvAEho1EWM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNzAxZmRjZTg5/Mzg3MDBhYWJhNzgw/ODA0ZTM0NmYyYmI1/NDIwNmFjMTMzZjFk/OTkzZDZmMDM5ZDVm/NmRhYzlkMy9hbGFu/cmlwa2EuY29tLw",
+            "path": "  \u203a home  \u203a uninsured and underinsured motorist claims in new york: what victims need to know"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/oWYvBwIhAfvudzTSoAp0ft4d6usFJO3pWNnKqpfkrdc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hbGFu/cmlwa2EuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI1LzA0/L1VuaW5zdXJlZC1h/bmQtVW5kZXJpbnN1/cmVkLU1vdG9yaXN0/LUNsYWltcy1pbi1O/ZXctWW9yay1XaGF0/LVZpY3RpbXMtTmVl/ZC10by1Lbm93LS5q/cGVn",
+            "original": "https://alanripka.com/wp-content/uploads/2025/04/Uninsured-and-Underinsured-Motorist-Claims-in-New-York-What-Victims-Need-to-Know-.jpeg",
+            "logo": false
+          },
+          "age": "April 11, 2025"
+        },
+        {
+          "title": "What is Supplemental Underinsured Motorist (SUM) Coverage?",
+          "url": "https://www.douglasandlondon.com/car-accident-lawyers-nyc/what-is-supplemental-underinsured-motorist-sum-coverage/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "New York drivers are required to carry automobile insurance to protect others on the road who may be injured by their negligence. However, not everyone follows this law. Some motorists may only carry minimum liability coverage, which is not ...",
+          "page_age": "2025-06-04T15:42:33",
+          "profile": {
+            "name": "Douglas & London",
+            "url": "https://www.douglasandlondon.com/car-accident-lawyers-nyc/what-is-supplemental-underinsured-motorist-sum-coverage/",
+            "long_name": "douglasandlondon.com",
+            "img": "https://imgs.search.brave.com/BLqXOzA0UtpolwiKPwPaCJpyXGMwIP_LNF4ZttcY8W8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYWMyNmYxYWYz/YmJkNTJlMzliNmIy/NmY2N2YxMGIyN2Q0/MjY0NTk3YjRiN2Fl/ZTRjMWQzNWY5ZGIx/ZjQ0NTNlZS93d3cu/ZG91Z2xhc2FuZGxv/bmRvbi5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "douglasandlondon.com",
+            "hostname": "www.douglasandlondon.com",
+            "favicon": "https://imgs.search.brave.com/BLqXOzA0UtpolwiKPwPaCJpyXGMwIP_LNF4ZttcY8W8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYWMyNmYxYWYz/YmJkNTJlMzliNmIy/NmY2N2YxMGIyN2Q0/MjY0NTk3YjRiN2Fl/ZTRjMWQzNWY5ZGIx/ZjQ0NTNlZS93d3cu/ZG91Z2xhc2FuZGxv/bmRvbi5jb20v",
+            "path": "  \u203a home  \u203a car accident lawyers in new york  \u203a what is supplemental underinsured motorist (sum) coverage?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/fRKIdZaDWZpB7vkNXagrAaBjfgYnJtCcdrCv3YI4h5k/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/ZG91Z2xhc2FuZGxv/bmRvbi5jb20vY2Fy/LWFjY2lkZW50LWxh/d3llcnMtbnljL3do/YXQtaXMtc3VwcGxl/bWVudGFsLXVuZGVy/aW5zdXJlZC1tb3Rv/cmlzdC1zdW0tY292/ZXJhZ2Uv",
+            "original": "https://www.douglasandlondon.com/car-accident-lawyers-nyc/what-is-supplemental-underinsured-motorist-sum-coverage/",
+            "logo": false
+          },
+          "age": "June 4, 2025"
+        },
+        {
+          "title": "New York Car Insurance Laws (Updated 2025) | The Zebra",
+          "url": "https://www.thezebra.com/auto-insurance/new-york-car-insurance/state-laws-ny/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Uninsured/underinsured motorist coverage is legally required in New York and pays for injury and lost wages that you or your passengers may suffer in the event that you are hit by an uninsured driver who is at fault.",
+          "page_age": "2025-11-03T15:30:25",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/auto-insurance/new-york-car-insurance/state-laws-ny/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a cheap car insurance  \u203a new york car insurance  \u203a new york car insurance laws"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/tbd0UaOOvIXqi69W48G0j_FAdMT0JxNy_qR5HBkqeCs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9zdGF0/aWMvM2I5NGRmMy96/ZnJvbnQvaW1nL2l6/LXNoYXJlLWxvZ28u/cG5n",
+            "original": "https://cdn.thezebra.com/zfront/static/3b94df3/zfront/img/iz-share-logo.png",
+            "logo": true
+          },
+          "age": "4 days ago"
+        },
+        {
+          "title": "Uninsured & Underinsured Motorist Injury Attorney Putnam & Westchester",
+          "url": "https://wesuenyc.com/personal-injury-attorney/uninsured-driver-claim-attorney/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Michael LoGiudice, LLP routinely ... County, Dutchess County, and Brewster. In New York, drivers are only required to have the minimum mandatory liability insurance coverage:...",
+          "page_age": "2025-02-27T21:04:32",
+          "profile": {
+            "name": "Wesuenyc",
+            "url": "https://wesuenyc.com/personal-injury-attorney/uninsured-driver-claim-attorney/",
+            "long_name": "wesuenyc.com",
+            "img": "https://imgs.search.brave.com/djCCwz9G9zhzoaxKYt4ZPHiX1GtyOhVxt7-sop4AwuE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDQzMDU4YWVm/OGNjZTMyZjZmMjkz/OTUxMGMwODczYjYx/YmJhYTNmMjRhOWUy/NDViNmNhYjAwMjAx/N2Q5NzI1Yy93ZXN1/ZW55Yy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "wesuenyc.com",
+            "hostname": "wesuenyc.com",
+            "favicon": "https://imgs.search.brave.com/djCCwz9G9zhzoaxKYt4ZPHiX1GtyOhVxt7-sop4AwuE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDQzMDU4YWVm/OGNjZTMyZjZmMjkz/OTUxMGMwODczYjYx/YmJhYTNmMjRhOWUy/NDViNmNhYjAwMjAx/N2Q5NzI1Yy93ZXN1/ZW55Yy5jb20v",
+            "path": "  \u203a home  \u203a new york personal injury lawyer  \u203a uninsured and underinsured motorist claims"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/nt6xC3zBrKQ-tzClLg3OTWqUwFq3UltOYS0LOFvoTrM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93ZXN1/ZW55Yy5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjIvMTAv/bWwtb2ctaW1nLnBu/Zw",
+            "original": "https://wesuenyc.com/wp-content/uploads/2022/10/ml-og-img.png",
+            "logo": false
+          },
+          "age": "February 27, 2025"
+        },
+        {
+          "title": "New York Car Insurance Coverage Required by Law",
+          "url": "https://carcoverageguide.com/car-insurance-requirements/new-york/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Yes. New York requires liability, uninsured motorist, and no-fault PIP coverage for all registered vehicles.",
+          "page_age": "2025-06-22T14:47:18",
+          "profile": {
+            "name": "Carcoverageguide",
+            "url": "https://carcoverageguide.com/car-insurance-requirements/new-york/",
+            "long_name": "carcoverageguide.com",
+            "img": "https://imgs.search.brave.com/z1negce5wkGW3z6f77a-ayrkfNLvePKas_B-dIKAXwo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjhlY2I4MTcy/NjEwOTllOTc3MDZm/NWUwNzQ4ZGFkNzZm/MzI2Y2JjNjI2Y2Fm/YmRiNWI1ZDc0ZTFl/YWQxODAyOC9jYXJj/b3ZlcmFnZWd1aWRl/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "carcoverageguide.com",
+            "hostname": "carcoverageguide.com",
+            "favicon": "https://imgs.search.brave.com/z1negce5wkGW3z6f77a-ayrkfNLvePKas_B-dIKAXwo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjhlY2I4MTcy/NjEwOTllOTc3MDZm/NWUwNzQ4ZGFkNzZm/MzI2Y2JjNjI2Y2Fm/YmRiNWI1ZDc0ZTFl/YWQxODAyOC9jYXJj/b3ZlcmFnZWd1aWRl/LmNvbS8",
+            "path": "  \u203a home  \u203a car insurance requirements by state (2025 guide)  \u203a new york car insurance coverage required by law"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/x5oR_srpi7UqrDksx2xFxeV9IXJp_mNgLeBIdQRYGQ8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jYXJj/b3ZlcmFnZWd1aWRl/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNS8wOC9idXN5/LW5ldy15b3JrLWNp/dHkuanBn",
+            "original": "https://carcoverageguide.com/wp-content/uploads/2025/08/busy-new-york-city.jpg",
+            "logo": false
+          },
+          "age": "June 22, 2025"
+        },
+        {
+          "title": "What Is SUM Coverage In New York | Goshen Personal Injury Attorneys",
+          "url": "https://www.dupeelaw.com/new-york-personal-injury-articles/what-is-sum/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "New York Insurance Law requires insurers to offer SUM coverage, but an insured may accept or decline it\u200b. The legal basis for SUM is Insurance Law \u00a73420(f)(2)(A), which directs policies to \u201cprovide supplementary uninsured/underinsured motorists ...",
+          "page_age": "2025-05-23T21:09:56",
+          "profile": {
+            "name": "Dupeelaw",
+            "url": "https://www.dupeelaw.com/new-york-personal-injury-articles/what-is-sum/",
+            "long_name": "dupeelaw.com",
+            "img": "https://imgs.search.brave.com/gNCiRY4XLmqFPLfoCbcJuxV_YxoJJHIOlmJ_fYF29kc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjU2MjM3MWYx/ZmE1MDI4MWU1OWI0/NmMzMDQ0ODU3Zjgy/MjQ1NDRhNzdkYzU1/OTI3YWFlYzdmMjcz/MGYwZmQ0Ni93d3cu/ZHVwZWVsYXcuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "dupeelaw.com",
+            "hostname": "www.dupeelaw.com",
+            "favicon": "https://imgs.search.brave.com/gNCiRY4XLmqFPLfoCbcJuxV_YxoJJHIOlmJ_fYF29kc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjU2MjM3MWYx/ZmE1MDI4MWU1OWI0/NmMzMDQ0ODU3Zjgy/MjQ1NDRhNzdkYzU1/OTI3YWFlYzdmMjcz/MGYwZmQ0Ni93d3cu/ZHVwZWVsYXcuY29t/Lw",
+            "path": "  \u203a home  \u203a new york personal injury articles  \u203a what is sum coverage in new york?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/13p4Kdp-1N50KZN9XJWQFEy1A5Wvg8jXmW9TZ7LLvMg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/ZHVwZWVsYXcuY29t/L3dwLWNvbnRlbnQv/dGhlbWVzL3NjcmVl/bnNob3QuanBn",
+            "original": "https://www.dupeelaw.com/wp-content/themes/screenshot.jpg",
+            "logo": false
+          },
+          "age": "May 23, 2025"
+        },
+        {
+          "title": "Guide to Car Insurance for New York City Drivers [2025]",
+          "url": "https://orlowlaw.com/guide-to-ny-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Summary of required coverage: To legally drive in NY, your auto policy must include liability insurance (25/50/10 minimum), PIP no-fault coverage ($50k min), and uninsured motorist bodily injury coverage (25/50).",
+          "page_age": "2025-06-07T02:31:19",
+          "profile": {
+            "name": "The Orlow Firm",
+            "url": "https://orlowlaw.com/guide-to-ny-car-insurance/",
+            "long_name": "orlowlaw.com",
+            "img": "https://imgs.search.brave.com/HeYx0wSkh0tDImgqFfqtnHj90LZ87O3LejpTXASrkdw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODkzODIzZjZh/NzNjNjVkYzcwODc4/MDA0MWUzMTdjYjVi/M2RiZGU4Y2YwODYz/NjgzNmMwMDg1N2Uz/Nzk0MjZjMC9vcmxv/d2xhdy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "orlowlaw.com",
+            "hostname": "orlowlaw.com",
+            "favicon": "https://imgs.search.brave.com/HeYx0wSkh0tDImgqFfqtnHj90LZ87O3LejpTXASrkdw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODkzODIzZjZh/NzNjNjVkYzcwODc4/MDA0MWUzMTdjYjVi/M2RiZGU4Y2YwODYz/NjgzNmMwMDg1N2Uz/Nzk0MjZjMC9vcmxv/d2xhdy5jb20v",
+            "path": "  \u203a home  \u203a guide to car insurance for new york city drivers [2025]"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Z50XBsCU1vX_iGQ0diV1V4oHAvPqMmfsZPW1XoLYmrg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9vcmxv/d2xhdy5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjUvMDYv/bWluaW11bS1jb3Zl/cmFnZS1yZXF1aXJl/bWVudHMtZm9yLW55/LWNhci1pbnN1cmFu/Y2UtMTAyNHg2ODMu/cG5n",
+            "original": "https://orlowlaw.com/wp-content/uploads/2025/06/minimum-coverage-requirements-for-ny-car-insurance-1024x683.png",
+            "logo": false
+          },
+          "age": "June 7, 2025"
+        },
+        {
+          "title": "Uninsured Motorist Claims in New York City - Rosenbaum Personal Injury Lawyers",
+          "url": "https://www.rosenbaumnylaw.com/new-york-car-accident-lawyer/uninsured-motorist-claims/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Contact our law firm to schedule your free consultation with an experienced New York City uninsured motorist claims attorney at (212) 514-5007. We pursue all sources of compensation for your car accident, including claims against your insurance coverage for uninsured drivers. ... New York City, NY, insurance laws can be confusing. The state requires drivers to carry several types of car insurance coverage.",
+          "page_age": "2025-03-27T15:25:01",
+          "profile": {
+            "name": "Rosenbaum & Rosenbaum",
+            "url": "https://www.rosenbaumnylaw.com/new-york-car-accident-lawyer/uninsured-motorist-claims/",
+            "long_name": "rosenbaumnylaw.com",
+            "img": "https://imgs.search.brave.com/pv0ovUfdh7b-rF8x6YXWbGEmo46aFlid7ujq2xunVnw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGIyNmUzOGNi/MDNlMzNiMGZhNWUy/YjAxNzNiOWFmZGQz/Y2ZkNmUwZGM5Njgz/YjY2ZmM4ZmM4OTFi/OTM4YzVlOC93d3cu/cm9zZW5iYXVtbnls/YXcuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "rosenbaumnylaw.com",
+            "hostname": "www.rosenbaumnylaw.com",
+            "favicon": "https://imgs.search.brave.com/pv0ovUfdh7b-rF8x6YXWbGEmo46aFlid7ujq2xunVnw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGIyNmUzOGNi/MDNlMzNiMGZhNWUy/YjAxNzNiOWFmZGQz/Y2ZkNmUwZGM5Njgz/YjY2ZmM4ZmM4OTFi/OTM4YzVlOC93d3cu/cm9zZW5iYXVtbnls/YXcuY29tLw",
+            "path": "  \u203a home  \u203a car accidents  \u203a uninsured motorist claims"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/VsTMU-nBpl_1hf_hGbqOvA2NtnXfYuUpSH_Y7cYQZxE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cm9zZW5iYXVtbnls/YXcuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIyLzEwL1Vu/aW5zdXJlZC1Nb3Rv/cmlzdC1DbGFpbXMt/aW4tTmV3LVlvcmst/Q2l0eS5qcGVn",
+            "original": "https://www.rosenbaumnylaw.com/wp-content/uploads/2022/10/Uninsured-Motorist-Claims-in-New-York-City.jpeg",
+            "logo": false
+          },
+          "age": "March 27, 2025"
+        },
+        {
+          "title": "How Does Non-Owner Car Insurance Work in New York?",
+          "url": "https://wallethub.com/answers/ci/non-owner-car-insurance-new-york-1000288-2140698885/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Own a car. In New York, you&#x27;re required to carry personal injury protection, uninsured motorist and liability coverage if you own a car.",
+          "page_age": "2025-09-19T09:27:25",
+          "profile": {
+            "name": "WalletHub",
+            "url": "https://wallethub.com/answers/ci/non-owner-car-insurance-new-york-1000288-2140698885/",
+            "long_name": "wallethub.com",
+            "img": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "wallethub.com",
+            "hostname": "wallethub.com",
+            "favicon": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw",
+            "path": "\u203a answers  \u203a ci  \u203a non-owner-car-insurance-new-york-1000288-2140698885"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YnFsFD--_0DYDN63YU7RTh6E1ZINWtslBaGMBZrgzuI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbGV0aHViLmNv/bS9pbWFnZXMvd2gy/MDE1L2Fuc3dlcnMv/d2FsbGV0aHViLWFu/c3dlcnNfVjMwYjE2/NmZfLnBuZw",
+            "original": "https://cdn.wallethub.com/images/wh2015/answers/wallethub-answers_V30b166f_.png",
+            "logo": false
+          },
+          "age": "September 19, 2025"
+        },
+        {
+          "title": "Why Every Driver Needs SUM Insurance Coverage in New York",
+          "url": "https://www.gilletteandizzolaw.com/why-every-driver-needs-sum-insurance-coverage-in-new-york/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "New York requires drivers to have uninsured motorist coverage, while SUM is optional. An uninsured motorist policy covers the bodily injury of anyone in your vehicle if a hit-and-run driver or an uninsured vehicle strikes you.",
+          "page_age": "2025-08-23T01:29:35",
+          "profile": {
+            "name": "Gilletteandizzolaw",
+            "url": "https://www.gilletteandizzolaw.com/why-every-driver-needs-sum-insurance-coverage-in-new-york/",
+            "long_name": "gilletteandizzolaw.com",
+            "img": "https://imgs.search.brave.com/6g0n3HTQJqih5kBfcFy7v8uM8_OJp_zP1lc4QAelv_s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNmY2MzAyMDZi/MTJlMGFkZmZiYmVh/MGJiZWU1YTdhYWY4/Y2VkYWIyNzVhNTJj/OTY4YmVmYjIyZWQz/M2EwMjJmMS93d3cu/Z2lsbGV0dGVhbmRp/enpvbGF3LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "gilletteandizzolaw.com",
+            "hostname": "www.gilletteandizzolaw.com",
+            "favicon": "https://imgs.search.brave.com/6g0n3HTQJqih5kBfcFy7v8uM8_OJp_zP1lc4QAelv_s/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNmY2MzAyMDZi/MTJlMGFkZmZiYmVh/MGJiZWU1YTdhYWY4/Y2VkYWIyNzVhNTJj/OTY4YmVmYjIyZWQz/M2EwMjJmMS93d3cu/Z2lsbGV0dGVhbmRp/enpvbGF3LmNvbS8",
+            "path": "  \u203a home  \u203a why every driver needs sum insurance coverage in new york"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/gHvWK_VcgmtSmzVVbeDnHmrIb5q1TsdKVz9qy_cruUY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Z2lsbGV0dGVhbmRp/enpvbGF3LmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyNS8w/OC9KdW5lLTItMS5w/bmc",
+            "original": "https://www.gilletteandizzolaw.com/wp-content/uploads/2025/08/June-2-1.png",
+            "logo": false
+          },
+          "age": "August 23, 2025"
+        },
+        {
+          "title": "Minimum and Maximum Auto Insurance Coverage in New York",
+          "url": "https://www.prolaw1.com/blog/minimum-and-maximum-auto-insurance-coverage-in-new-york-what-you-need-to-know/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "As of 2024, the minimum auto insurance coverage requirements in New York are: Bodily Injury Liability (BIL): $25,000 per person and $50,000 per accident \u00b7 Property Damage Liability (PDL): $10,000 per accident \u00b7 Personal Injury Protection (PIP): ...",
+          "page_age": "2025-04-04T14:46:35",
+          "profile": {
+            "name": "Proner & Proner",
+            "url": "https://www.prolaw1.com/blog/minimum-and-maximum-auto-insurance-coverage-in-new-york-what-you-need-to-know/",
+            "long_name": "prolaw1.com",
+            "img": "https://imgs.search.brave.com/iC_jaMTT4r2Gnh5tJWOaC2d6V43elmNcav6taV0FBuw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNmJhZTg3YmRm/OTkzMmU2ZmE4YmY5/NTU5YTI0ZGZlZWUw/YjE3NmE2MDE1N2Iw/NWYzZmUyNDIyNjg4/YWExMjE0Zi93d3cu/cHJvbGF3MS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "prolaw1.com",
+            "hostname": "www.prolaw1.com",
+            "favicon": "https://imgs.search.brave.com/iC_jaMTT4r2Gnh5tJWOaC2d6V43elmNcav6taV0FBuw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNmJhZTg3YmRm/OTkzMmU2ZmE4YmY5/NTU5YTI0ZGZlZWUw/YjE3NmE2MDE1N2Iw/NWYzZmUyNDIyNjg4/YWExMjE0Zi93d3cu/cHJvbGF3MS5jb20v",
+            "path": "  \u203a home  \u203a minimum and maximum auto insurance coverage in new york: what you need to know"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/0E09cg9_Mc1g9uESHHBjjO6wFt2u-mGGaw4i4g1yon4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cHJvbGF3MS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjQv/MDYvbG9nby1wcm9u/ZXIucG5n",
+            "original": "https://www.prolaw1.com/wp-content/uploads/2024/06/logo-proner.png",
+            "logo": true
+          },
+          "age": "April 4, 2025"
+        },
+        {
+          "title": "New York car insurance laws and requirements: What is changing in 2025",
+          "url": "https://www.insurance.com/auto-insurance/new-york-car-insurance-laws/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "New York requires uninsured motorist coverage of 25/50.",
+          "page_age": "2025-04-24T00:00:00",
+          "profile": {
+            "name": "Insurance.com",
+            "url": "https://www.insurance.com/auto-insurance/new-york-car-insurance-laws/",
+            "long_name": "insurance.com",
+            "img": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurance.com",
+            "hostname": "www.insurance.com",
+            "favicon": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8",
+            "path": "  \u203a home  \u203a auto insurance  \u203a state minimum requirements  \u203a new york car insurance laws and requirements: what is changing in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/mrmhNyRrsgAKLHytgrM3UtXgPNsZj2C2r9vhaX0aI8s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmNlLmNv/bS9pbWFnZXMvaG9t/ZS9zaXRlLWxvZ28t/ZGFyay5zdmc",
+            "original": "https://www.insurance.com/images/home/site-logo-dark.svg",
+            "logo": true
+          },
+          "age": "April 24, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

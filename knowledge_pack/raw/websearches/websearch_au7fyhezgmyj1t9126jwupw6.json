@@ -1,0 +1,790 @@
+{
+  "websearch_id": "websearch_au7fyhezgmyj1t9126jwupw6",
+  "search_id": "search_rzgxfxfowfzl52en7bjmfncb",
+  "timestamp": "2025-11-07T12:21:13.153695",
+  "startedAt": "2025-11-07T12:21:13.153695",
+  "completedAt": "2025-11-07T12:21:15.073699",
+  "durationSeconds": 1.92,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" New York approved",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"GEICO\" New York approved",
+      "show_strict_warning": false,
+      "cleaned": "GEICO New York approved",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO New York approved"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "GEICO Defensive Driving Discount Course | New York | IMPROV\u00ae",
+          "url": "https://www.myimprov.com/geico/new-york/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "A ridiculously easy way to save on your auto insurance. Our course is NY DMV approved and accepted by ALL NY insurance companies. As a GEICO-preferred partner, IMPROV offers exclusive savings to both new and current GEICO policyholders.",
+          "page_age": "2025-10-29T10:37:45",
+          "profile": {
+            "name": "IMPROV\u00ae",
+            "url": "https://www.myimprov.com/geico/new-york/",
+            "long_name": "myimprov.com",
+            "img": "https://imgs.search.brave.com/93IEcA2eGUc-v4HeBVaHzoxmIJbTaLAx_NfV3WraGDg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZThkNDY3NmUx/YTBiMmMyZjRmZmQy/MmNmM2Q3YzZhZTI2/ZjM5YjE3Mzk1MWQy/YjIwYzcxOWVlYWMy/YmMxMjNkZC93d3cu/bXlpbXByb3YuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "myimprov.com",
+            "hostname": "www.myimprov.com",
+            "favicon": "https://imgs.search.brave.com/93IEcA2eGUc-v4HeBVaHzoxmIJbTaLAx_NfV3WraGDg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZThkNDY3NmUx/YTBiMmMyZjRmZmQy/MmNmM2Q3YzZhZTI2/ZjM5YjE3Mzk1MWQy/YjIwYzcxOWVlYWMy/YmMxMjNkZC93d3cu/bXlpbXByb3YuY29t/Lw",
+            "path": "  \u203a home  \u203a geico  \u203a geico new york"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/aYP23WH4JPLPKx6ixwDZkkYPA88YM9U_JFgYM7YmoOQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bXlpbXByb3YuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy9sb2dv/LWRhcmsud2VicA",
+            "original": "https://www.myimprov.com/wp-content/uploads/logo-dark.webp",
+            "logo": true
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Save on Your GEICO NY Car Insurance",
+          "url": "https://www.drivesafe.com/geicony/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Course completion is automatically reported to GEICO and is electronically transmitted to the New York State Department of Motor Vehicles.",
+          "page_age": "2025-08-08T13:12:10",
+          "profile": {
+            "name": "Drivesafe",
+            "url": "https://www.drivesafe.com/geicony/",
+            "long_name": "drivesafe.com",
+            "img": "https://imgs.search.brave.com/cG8pcBuDY1B8gOlhEVVINbG9_UQTIuSPX03dy3tFPFU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWYxNTQ4YWYy/NTgxYzYzOWYzNGZl/OTc1OTFlY2VmYmY2/ZGU2Y2I3YzkxZTdk/ZjY0ZTdhZjdjYjRl/YTEzOTVlNC93d3cu/ZHJpdmVzYWZlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "drivesafe.com",
+            "hostname": "www.drivesafe.com",
+            "favicon": "https://imgs.search.brave.com/cG8pcBuDY1B8gOlhEVVINbG9_UQTIuSPX03dy3tFPFU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWYxNTQ4YWYy/NTgxYzYzOWYzNGZl/OTc1OTFlY2VmYmY2/ZGU2Y2I3YzkxZTdk/ZjY0ZTdhZjdjYjRl/YTEzOTVlNC93d3cu/ZHJpdmVzYWZlLmNv/bS8",
+            "path": "  \u203a home  \u203a save on your geico ny car insurance"
+          },
+          "age": "August 8, 2025"
+        },
+        {
+          "title": "r/Insurance on Reddit: geico insurance monthly increased NYC",
+          "url": "https://www.reddit.com/r/Insurance/comments/1lh3qbt/geico_insurance_monthly_increased_nyc/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Their rates, as with every insurer, are filed with and approved by the State. They have to charge you the filed rates. You can make yourself as big of a pain as you\u2019d like and it changes nothing.",
+          "page_age": "2025-06-21T18:50:36",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Insurance/comments/1lh3qbt/geico_insurance_monthly_increased_nyc/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/insurance  \u203a geico insurance monthly increased nyc"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A5H_aQiEBuUODR0lNeU8iDfhrWUvO8oEmRGE_mcS_gM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVkZGl0c3RhdGlj/LmNvbS9pY29uLnBu/Zw",
+            "original": "https://www.redditstatic.com/icon.png",
+            "logo": true
+          },
+          "age": "June 21, 2025"
+        },
+        {
+          "title": "Save on Your GEICO Car Insurance",
+          "url": "https://www.drivesafe.com/geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "New York Drivers Click Here \u00b7 Cost: $12.50 (no hidden fees) 100% Guaranteed Pass \u00b7 100% Online, Available 24/7 \u00b7 Qualify for a Three Year Discount \u00b7 Immediate Certificate upon Completion \u00b7 Toma Nuestro Curso en Espanol \u00b7 Purchase Now \u00b7 Comprar Ahora \u00b7 Fully narrated at no additional cost. The National Safety Council\u2019s prestigious curriculum has been used to successfully train over 80 million drivers. In most states GEICO will be electronically notified, please check with your GEICO agent for proper certificate processing.",
+          "page_age": "2025-07-31T14:37:50",
+          "profile": {
+            "name": "Drivesafe",
+            "url": "https://www.drivesafe.com/geico/",
+            "long_name": "drivesafe.com",
+            "img": "https://imgs.search.brave.com/cG8pcBuDY1B8gOlhEVVINbG9_UQTIuSPX03dy3tFPFU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWYxNTQ4YWYy/NTgxYzYzOWYzNGZl/OTc1OTFlY2VmYmY2/ZGU2Y2I3YzkxZTdk/ZjY0ZTdhZjdjYjRl/YTEzOTVlNC93d3cu/ZHJpdmVzYWZlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "drivesafe.com",
+            "hostname": "www.drivesafe.com",
+            "favicon": "https://imgs.search.brave.com/cG8pcBuDY1B8gOlhEVVINbG9_UQTIuSPX03dy3tFPFU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWYxNTQ4YWYy/NTgxYzYzOWYzNGZl/OTc1OTFlY2VmYmY2/ZGU2Y2I3YzkxZTdk/ZjY0ZTdhZjdjYjRl/YTEzOTVlNC93d3cu/ZHJpdmVzYWZlLmNv/bS8",
+            "path": "  \u203a home  \u203a save on your geico car insurance"
+          },
+          "age": "July 31, 2025"
+        },
+        {
+          "title": "Geico Repair Shop | Geico repair shop near me | Blue Star Brothers - Blue Star Brothers",
+          "url": "https://www.bluestarbrothers.com/geico-auto-body-repair-shops-brooklyn-new-york-ny/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "As a NYS Registered auto repair shop with over 25 years of experience in auto body repair, our technicians are equipped to handle and upload all supporting documents directly to your insurance company including GEICO.",
+          "page_age": "2025-09-04T04:18:52",
+          "profile": {
+            "name": "Blue Star Brothers",
+            "url": "https://www.bluestarbrothers.com/geico-auto-body-repair-shops-brooklyn-new-york-ny/",
+            "long_name": "bluestarbrothers.com",
+            "img": "https://imgs.search.brave.com/150aqvZOgW0K1kRuTiT6Tx2en0G6GjK6Z_55S269hHY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNThkMzdlNmQx/NDc0YWYwNmE0MmEx/ZWQ1MzZiOWMwNTI3/NjE1OWM3YzNkZGRm/MGEyYjliY2NlMzMy/NWRlNDBkZC93d3cu/Ymx1ZXN0YXJicm90/aGVycy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bluestarbrothers.com",
+            "hostname": "www.bluestarbrothers.com",
+            "favicon": "https://imgs.search.brave.com/150aqvZOgW0K1kRuTiT6Tx2en0G6GjK6Z_55S269hHY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNThkMzdlNmQx/NDc0YWYwNmE0MmEx/ZWQ1MzZiOWMwNTI3/NjE1OWM3YzNkZGRm/MGEyYjliY2NlMzMy/NWRlNDBkZC93d3cu/Ymx1ZXN0YXJicm90/aGVycy5jb20v",
+            "path": "\u203a geico-auto-body-repair-shops-brooklyn-new-york-ny"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/dLh1OKRTI9I_XB32JBcHqTVqsk6wv8a0lT5w_B_PH80/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Ymx1ZXN0YXJicm90/aGVycy5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjQvMTAv/QWRvYmVTdG9ja18y/NTU5MjIwNDktUHV4/U1I0LmpwZWc",
+            "original": "https://www.bluestarbrothers.com/wp-content/uploads/2024/10/AdobeStock_255922049-PuxSR4.jpeg",
+            "logo": false
+          },
+          "age": "September 4, 2025"
+        },
+        {
+          "title": "Geico Savings in New York | Ticket School",
+          "url": "https://ticketschool.com/courses/geico-ny/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Get your Discount GEICO will be notified to apply the discount to your policy automatically within 24-48 hours. Your completion will also be reported electronically to the NY DMV, if you are eligible for any point reduction benefits. A completion certificate will be sent to you via your chosen delivery method for your records. ... Per New York DMV requirements, the course must be six hours in length.",
+          "page_age": "2025-04-09T17:21:58",
+          "profile": {
+            "name": "TicketSchool",
+            "url": "https://ticketschool.com/courses/geico-ny/",
+            "long_name": "ticketschool.com",
+            "img": "https://imgs.search.brave.com/mPZDp3s6j24swA2TPeH-bghjASSKGB35OmxIQAh_Hxk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDRiYTgyZThj/ZTFiOTNlNWQ3MzFk/NDE2ODViNDliZDk3/ZDE5Zjc5OWQwOGZk/NDRiNzA2OGY3ZTA3/NDU0ZTRmYi90aWNr/ZXRzY2hvb2wuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "ticketschool.com",
+            "hostname": "ticketschool.com",
+            "favicon": "https://imgs.search.brave.com/mPZDp3s6j24swA2TPeH-bghjASSKGB35OmxIQAh_Hxk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDRiYTgyZThj/ZTFiOTNlNWQ3MzFk/NDE2ODViNDliZDk3/ZDE5Zjc5OWQwOGZk/NDRiNzA2OGY3ZTA3/NDU0ZTRmYi90aWNr/ZXRzY2hvb2wuY29t/Lw",
+            "path": "\u203a courses  \u203a geico-ny"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Lqx8u-3PoPD4p57ft35j41bZNtyI2Fr0WEgW-NThCa4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly90aWNr/ZXRzY2hvb2wuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDE0/LzA4L1RTLVN0YXRl/U2VjdGlvbk5ld1lv/cmsuanBn",
+            "original": "https://ticketschool.com/wp-content/uploads/2014/08/TS-StateSectionNewYork.jpg",
+            "logo": false
+          },
+          "age": "April 9, 2025"
+        },
+        {
+          "title": "Can I get Geico auto insurance in New York? | AutoInsuranceEZ.com",
+          "url": "https://www.autoinsuranceez.com/geico-ny/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Ye get Geico auto Insurance in New York? Geico offers full coverage at about $25 more per month than liability-only. Get a quote today!",
+          "page_age": "2025-03-10T18:30:27",
+          "profile": {
+            "name": "Autoinsuranceez",
+            "url": "https://www.autoinsuranceez.com/geico-ny/",
+            "long_name": "autoinsuranceez.com",
+            "img": "https://imgs.search.brave.com/2WqTwUXTpEHj_Ww8pIc8xh0PgX7xeLWKQLNZ2Ux3r1c/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTQ1YjA1ZTY1/OTMyZTQ3ODgxYmZm/YzA1ZTJjOTcwNGYy/ZDJiYzIyY2E2ZWY2/N2YyYzUwZjA4MzNl/NGZjZGRhOS93d3cu/YXV0b2luc3VyYW5j/ZWV6LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsuranceez.com",
+            "hostname": "www.autoinsuranceez.com",
+            "favicon": "https://imgs.search.brave.com/2WqTwUXTpEHj_Ww8pIc8xh0PgX7xeLWKQLNZ2Ux3r1c/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTQ1YjA1ZTY1/OTMyZTQ3ODgxYmZm/YzA1ZTJjOTcwNGYy/ZDJiYzIyY2E2ZWY2/N2YyYzUwZjA4MzNl/NGZjZGRhOS93d3cu/YXV0b2luc3VyYW5j/ZWV6LmNvbS8",
+            "path": "  \u203a home  \u203a blog"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/HDWSh0SI1tydeqwMiWWawsHFYoP8ibYmK7CV2VMvFaA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YXV0b2luc3VyYW5j/ZWV6LmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMC8xMS8x/MDQ1NWUxMS1hdXRv/aW5zdXJhbmNlZXot/bG9nby1wdXJwbGUu/cG5n",
+            "original": "https://www.autoinsuranceez.com/wp-content/uploads/2020/11/10455e11-autoinsuranceez-logo-purple.png",
+            "logo": true
+          },
+          "age": "March 10, 2025"
+        },
+        {
+          "title": "New York fines Geico, Travelers $11.3M for pandemic-era breaches | Cybersecurity Dive",
+          "url": "https://www.cybersecuritydive.com/news/new-york-fines-geico-travelers/734045/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "New York Attorney General Letitia James and New York State Department of Financial Services Superintendent Adrienne Harris issued penalties against the auto insurance companies for failing to protect customers\u2019 private information. The settlement calls for Geico to pay a total fine of $9.75 million and Travelers will pay $1.55 million.",
+          "page_age": "2024-11-26T08:51:00",
+          "profile": {
+            "name": "Cybersecurity Dive",
+            "url": "https://www.cybersecuritydive.com/news/new-york-fines-geico-travelers/734045/",
+            "long_name": "cybersecuritydive.com",
+            "img": "https://imgs.search.brave.com/UWYkSbdmR_oSawqPaU4ojJ6fNYR-w5C8uGLxPajAxWM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWU5NDRmZDMx/NzZhYzkyNmU0MDQ2/M2Y1MTQzMjViMmE2/NjY5ZGI2OTVlYmVk/NzE0MGQxYTgyODM4/MmFkZDVmYi93d3cu/Y3liZXJzZWN1cml0/eWRpdmUuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cybersecuritydive.com",
+            "hostname": "www.cybersecuritydive.com",
+            "favicon": "https://imgs.search.brave.com/UWYkSbdmR_oSawqPaU4ojJ6fNYR-w5C8uGLxPajAxWM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWU5NDRmZDMx/NzZhYzkyNmU0MDQ2/M2Y1MTQzMjViMmE2/NjY5ZGI2OTVlYmVk/NzE0MGQxYTgyODM4/MmFkZDVmYi93d3cu/Y3liZXJzZWN1cml0/eWRpdmUuY29tLw",
+            "path": "\u203a news  \u203a new-york-fines-geico-travelers  \u203a 734045"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/0MvkdzzRf0N0X-VE2mSYjlVqrqFm2KWwd378gUlONwE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWdw/cm94eS5kaXZlY2Ru/LmNvbS9OUWpRUlBf/ZEl0TEkyZXpPeFpK/YjVxcHRselktRmti/YnR6SGh2SWgxd29r/L2c6Y2UvcnM6Zmls/bDoxMjAwOjEyMDA6/MS9aM002THk5a2FY/WmxjMmwwWlMxemRH/OXlZV2RsTDJScGRt/VnBiV0ZuWlM5SFpY/UjBlVWx0WVdkbGN5/MHhOVGd6TWpFME9E/YzBMbXB3Wnc9PS53/ZWJw",
+            "original": "https://imgproxy.divecdn.com/NQjQRP_dItLI2ezOxZJb5qptlzY-FkbbtzHhvIh1wok/g:ce/rs:fill:1200:1200:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xNTgzMjE0ODc0LmpwZw==.webp",
+            "logo": false
+          },
+          "age": "November 26, 2024"
+        },
+        {
+          "title": "Second Circuit Rules That the Filed-Rate Doctrine Bars the Recalculation of Approved Auto Insurance Rates | ArentFox Schiff",
+          "url": "https://www.afslaw.com/perspectives/alerts/second-circuit-rules-the-filed-rate-doctrine-bars-the-recalculation-approved",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In New York, insurers must obtain approval for the rates for personal auto insurance from the New York State Department of Financial Services (\u201cNYDFS\u201d) under Article 23 of the New York Insurance Law.",
+          "page_age": "2025-01-22T16:31:45",
+          "profile": {
+            "name": "ArentFox Schiff",
+            "url": "https://www.afslaw.com/perspectives/alerts/second-circuit-rules-the-filed-rate-doctrine-bars-the-recalculation-approved",
+            "long_name": "afslaw.com",
+            "img": "https://imgs.search.brave.com/XejAWYzyV_Vhs-71lNWtNnEHbnhSix6dUyRnMu6FdD4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjhmYTcyZTQy/ZjFhYWM0MWMwODAy/MDI4NDBmMmRhMTY5/NTViNzA0OGExMjA4/NzdiNTQyNzc3NTcz/OTI4MTZjMi93d3cu/YWZzbGF3LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "afslaw.com",
+            "hostname": "www.afslaw.com",
+            "favicon": "https://imgs.search.brave.com/XejAWYzyV_Vhs-71lNWtNnEHbnhSix6dUyRnMu6FdD4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjhmYTcyZTQy/ZjFhYWM0MWMwODAy/MDI4NDBmMmRhMTY5/NTViNzA0OGExMjA4/NzdiNTQyNzc3NTcz/OTI4MTZjMi93d3cu/YWZzbGF3LmNvbS8",
+            "path": "\u203a perspectives  \u203a alerts  \u203a second-circuit-rules-the-filed-rate-doctrine-bars-the-recalculation-approved"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/F226QvrEtnbFtetpMEQN2hfZoz9PCdAUTlknxqFrcrk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YWZzbGF3LmNvbS9z/aXRlcy9kZWZhdWx0/L2ZpbGVzL3N0eWxl/cy9tYXhfMTMwMHgx/MzAwL3B1YmxpYy8y/MDIyLTA0L0FGUy1J/bnN1cmFuY2UtUmVp/bnN1cmFuY2UuanBn/LndlYnA_aXRvaz14/U3lqWVpJWA",
+            "original": "https://www.afslaw.com/sites/default/files/styles/max_1300x1300/public/2022-04/AFS-Insurance-Reinsurance.jpg.webp?itok=xSyjYZIX",
+            "logo": false
+          },
+          "age": "January 22, 2025"
+        },
+        {
+          "title": "New York Fines GEICO $9.75M, Travelers $1.5M Over Auto Insurance Cyber Breaches",
+          "url": "https://www.insurancejournal.com/news/east/2024/11/25/802407.htm",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "New York Attorney General Letitia James and New York State Department of Financial Services (DFS) Superintendent Adrienne A. Harris announced settlements with the Government Employees Insurance Co. (GEICO) for $9.75 million and The Travelers ...",
+          "page_age": "2024-11-25T16:35:12",
+          "profile": {
+            "name": "Insurance Journal",
+            "url": "https://www.insurancejournal.com/news/east/2024/11/25/802407.htm",
+            "long_name": "insurancejournal.com",
+            "img": "https://imgs.search.brave.com/Z2NMt-hrP7caeNIt4HG4jkmmzjPBLwRv6v1cRD5nBlI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTVlY2IxMmJk/NDNlOGY1YjM3NzIy/MTNlYWViNGMzNmNj/N2NiNzdmYzdkMjFl/YTZjMzdkOWEwNDEw/YzQwZDNkNS93d3cu/aW5zdXJhbmNlam91/cm5hbC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurancejournal.com",
+            "hostname": "www.insurancejournal.com",
+            "favicon": "https://imgs.search.brave.com/Z2NMt-hrP7caeNIt4HG4jkmmzjPBLwRv6v1cRD5nBlI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTVlY2IxMmJk/NDNlOGY1YjM3NzIy/MTNlYWViNGMzNmNj/N2NiNzdmYzdkMjFl/YTZjMzdkOWEwNDEw/YzQwZDNkNS93d3cu/aW5zdXJhbmNlam91/cm5hbC5jb20v",
+            "path": "\u203a news  \u203a east  \u203a 2024  \u203a 11  \u203a 25  \u203a 802407.htm"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/F0oWw32cO1rL591QM-bx32FiHSXdtkMaRJV0t5GP0w8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmNlam91/cm5hbC5jb20vYXBw/L3VwbG9hZHMvMjAx/NS8wMi9jYXItaW5z/dXJhbmNlLW9ubGlu/ZS5qcGc",
+            "original": "https://www.insurancejournal.com/app/uploads/2015/02/car-insurance-online.jpg",
+            "logo": false
+          },
+          "age": "November 25, 2024"
+        },
+        {
+          "title": "Insurance Approved Body Shop | Insurance Collision Center | North York",
+          "url": "https://www.torontoautobodyshop.ca/north-york/insurance-approved-body-shop-north-york-ontario/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Our body shop is a famous State Farm approved body shop servicing North York, Ontario. If your vehicle is insured by State Farm, you don\u2019t have to worry since we are enlisted with them. Simply bring your vehicle to our workshop, and we will assign the work to the most qualified technicians who are conversant with repairs of all car models. Geico is another insurance giant in the auto industry, and we are also on their list.",
+          "page_age": "2025-11-07T11:13:21",
+          "profile": {
+            "name": "Torontoautobodyshop",
+            "url": "https://www.torontoautobodyshop.ca/north-york/insurance-approved-body-shop-north-york-ontario/",
+            "long_name": "torontoautobodyshop.ca",
+            "img": "https://imgs.search.brave.com/0NkSqKrvFLvM58jKm4aKw9vDNmsBKrMOYgf-j53nW3k/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGEwZjcxMDhi/NTBmZmE1ZDAwODUw/MDhmYjIzMDhkN2Y5/ZjVmNTI3ODAxZjE2/NWE4ZjVmYmQ4NGI1/Mzg4NjMwYy93d3cu/dG9yb250b2F1dG9i/b2R5c2hvcC5jYS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "torontoautobodyshop.ca",
+            "hostname": "www.torontoautobodyshop.ca",
+            "favicon": "https://imgs.search.brave.com/0NkSqKrvFLvM58jKm4aKw9vDNmsBKrMOYgf-j53nW3k/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGEwZjcxMDhi/NTBmZmE1ZDAwODUw/MDhmYjIzMDhkN2Y5/ZjVmNTI3ODAxZjE2/NWE4ZjVmYmQ4NGI1/Mzg4NjMwYy93d3cu/dG9yb250b2F1dG9i/b2R5c2hvcC5jYS8",
+            "path": "  \u203a home  \u203a insurance \u2013 north york"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/OwPlTS_09yLkvpFSEFJttMgXdk_zPHP3z8_xAXJ6Z3Q/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dG9yb250b2F1dG9i/b2R5c2hvcC5jYS93/cC1jb250ZW50L3Vw/bG9hZHMvYXV0by1i/b2R5LXNob3AtbG9n/by5wbmc",
+            "original": "https://www.torontoautobodyshop.ca/wp-content/uploads/auto-body-shop-logo.png",
+            "logo": true
+          },
+          "age": "7 hours ago"
+        },
+        {
+          "title": "GEICO Northeast Operations Center - Buffalo, NY | Uniland Development Company",
+          "url": "https://uniland.com/geico-expanding-workforce-crosspoint/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "With major effort from the Uniland team and equally significant cooperation among the many different firms involved in the construction of the new building, Uniland was able to meet GEICO\u2019s tight 11-month development schedule. The facility features all of the amenities GEICO envisioned and has become a fast growing hub for the company.",
+          "page_age": "2024-12-13T15:34:21",
+          "profile": {
+            "name": "Uniland",
+            "url": "https://uniland.com/geico-expanding-workforce-crosspoint/",
+            "long_name": "uniland.com",
+            "img": "https://imgs.search.brave.com/9z9Lok2DiRg2y8wxuuuBwnkX89f-vc0zATsYvf4OfOQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGZiYzA0YjIx/ZmJiZTU4NGZkMzcy/YTYwMzc0MWM1MDcy/OWNjYjJlZGM2YTVm/YTY3NDcyODBjYmE3/ZGY5MGUxNC91bmls/YW5kLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "uniland.com",
+            "hostname": "uniland.com",
+            "favicon": "https://imgs.search.brave.com/9z9Lok2DiRg2y8wxuuuBwnkX89f-vc0zATsYvf4OfOQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGZiYzA0YjIx/ZmJiZTU4NGZkMzcy/YTYwMzc0MWM1MDcy/OWNjYjJlZGM2YTVm/YTY3NDcyODBjYmE3/ZGY5MGUxNC91bmls/YW5kLmNvbS8",
+            "path": "\u203a geico-expanding-workforce-crosspoint"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/IEiq8BPLWiBlPZk7SnGvj4OeFqDXJE39dQc-cQVGwN8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91bmls/YW5kLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMi8wNS9V/bmlsYW5kLURldmVs/b3BtZW50LUNvbXBh/bnkucG5n",
+            "original": "https://uniland.com/wp-content/uploads/2022/05/Uniland-Development-Company.png",
+            "logo": false
+          },
+          "age": "December 13, 2024"
+        },
+        {
+          "title": "Insurance Approved Body Shop | Insurance Collision Center | York Region",
+          "url": "https://www.torontoautobodyshop.ca/york-region/insurance-approved-body-shop-york-region-ontario/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "We operate a renowned state farm approved body shop serving York Region, ON, that can help you get your car back on the road looking brand new. After an accident, you should take your car to a dependable insurance collision center immediately since the earlier you get it repaired, the faster you will have it back on the road. The common mistake that most people make is taking their cars to a collision center without researching their services and without finding out if it is a Geico approved auto body shop.",
+          "page_age": "2025-11-06T21:14:22",
+          "profile": {
+            "name": "Torontoautobodyshop",
+            "url": "https://www.torontoautobodyshop.ca/york-region/insurance-approved-body-shop-york-region-ontario/",
+            "long_name": "torontoautobodyshop.ca",
+            "img": "https://imgs.search.brave.com/0NkSqKrvFLvM58jKm4aKw9vDNmsBKrMOYgf-j53nW3k/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGEwZjcxMDhi/NTBmZmE1ZDAwODUw/MDhmYjIzMDhkN2Y5/ZjVmNTI3ODAxZjE2/NWE4ZjVmYmQ4NGI1/Mzg4NjMwYy93d3cu/dG9yb250b2F1dG9i/b2R5c2hvcC5jYS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "torontoautobodyshop.ca",
+            "hostname": "www.torontoautobodyshop.ca",
+            "favicon": "https://imgs.search.brave.com/0NkSqKrvFLvM58jKm4aKw9vDNmsBKrMOYgf-j53nW3k/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGEwZjcxMDhi/NTBmZmE1ZDAwODUw/MDhmYjIzMDhkN2Y5/ZjVmNTI3ODAxZjE2/NWE4ZjVmYmQ4NGI1/Mzg4NjMwYy93d3cu/dG9yb250b2F1dG9i/b2R5c2hvcC5jYS8",
+            "path": "  \u203a home  \u203a insurance \u2013 york region"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/OwPlTS_09yLkvpFSEFJttMgXdk_zPHP3z8_xAXJ6Z3Q/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dG9yb250b2F1dG9i/b2R5c2hvcC5jYS93/cC1jb250ZW50L3Vw/bG9hZHMvYXV0by1i/b2R5LXNob3AtbG9n/by5wbmc",
+            "original": "https://www.torontoautobodyshop.ca/wp-content/uploads/auto-body-shop-logo.png",
+            "logo": true
+          },
+          "age": "1 day ago"
+        },
+        {
+          "title": "New York fines Geico, Travelers $11 million for exposed driver\u2019s license numbers | The Record from Recorded Future News",
+          "url": "https://therecord.media/new-york-fines-auto-insurers-11-million-leaked-data",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "New York Attorney General Letitia James and New York State Department of Financial Services Superintendent Adrienne Harris hit both companies with penalties for having \u201cpoor data security\u201d which allowed the sensitive information to be exposed. Auto insurance companies maintain websites to provide insurance quotes to potential customers and the sites typically have features that automatically fill in applications after people enter their names or address. Companies like Geico and Travelers work with third party data brokers to provide the information as a way to expedite insurance purchases \u2014 automatically pulling up a person\u2019s driver\u2019s license number or vehicle identification number that someone may not have on hand.",
+          "page_age": "2024-11-25T21:27:53",
+          "profile": {
+            "name": "The Record",
+            "url": "https://therecord.media/new-york-fines-auto-insurers-11-million-leaked-data",
+            "long_name": "therecord.media",
+            "img": "https://imgs.search.brave.com/aaJfqyB1ui27fch4FklqltS8xtiwQRpbDLvF58Du-TU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWZiNGEzNTUw/M2Y5MGMwNTNlNjY1/YzEwY2E3ZDA1OTA5/ZGYyMzVkYmI1YmNl/NzU3Yjg5YjgyMTZl/Y2RjYjRhMy90aGVy/ZWNvcmQubWVkaWEv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "therecord.media",
+            "hostname": "therecord.media",
+            "favicon": "https://imgs.search.brave.com/aaJfqyB1ui27fch4FklqltS8xtiwQRpbDLvF58Du-TU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWZiNGEzNTUw/M2Y5MGMwNTNlNjY1/YzEwY2E3ZDA1OTA5/ZGYyMzVkYmI1YmNl/NzU3Yjg5YjgyMTZl/Y2RjYjRhMy90aGVy/ZWNvcmQubWVkaWEv",
+            "path": "\u203a new-york-fines-auto-insurers-11-million-leaked-data"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/X0TTaC5OS_46JYAdsdkvgGg_PDnZSeauQQj0NWeUc5s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jbXMu/dGhlcmVjb3JkLm1l/ZGlhL3VwbG9hZHMv/Y2Fyc19tYWluXzlk/ZTBlYzIwY2YuanBn",
+            "original": "https://cms.therecord.media/uploads/cars_main_9de0ec20cf.jpg",
+            "logo": false
+          },
+          "age": "November 25, 2024"
+        },
+        {
+          "title": "The Best Auto Insurance in New York State in 2025 | AutoInsurance.com",
+          "url": "https://www.autoinsurance.com/states/new-york/best-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO has strong financial strength ratings from third parties like AM Best, which gave it an A++, or Superior Grade,7 along with Moody\u2019s, which gave it an Aa1, or stable financial outlook.8 Although its commercials may be silly and absurdist, when it comes to fulfilling its promises, GEICO delivers. ... If you\u2019re part of New York\u2019s 28,373 active-duty service members, 40,837 National Guard and reserve members, and their spouses and children,9 it\u2019s worth getting a quote with USAA.",
+          "page_age": "2025-09-10T22:25:19",
+          "profile": {
+            "name": "Auto Insurance",
+            "url": "https://www.autoinsurance.com/states/new-york/best-car-insurance/",
+            "long_name": "autoinsurance.com",
+            "img": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.com",
+            "hostname": "www.autoinsurance.com",
+            "favicon": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v",
+            "path": "  \u203a home  \u203a bests  \u203a the best auto insurance in new york 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/FU3hr37tBh-Ikm7VXGKvyu3MEuYMGVKcUPtJXRnSUP4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYXV0b2luc3Vy/YW5jZS5jb20vYXBw/L3VwbG9hZHMvMjAy/MS8xMi8xNjIxMTQw/My9TY3JlZW4tU2hv/dC0yMDIxLTEyLTAx/LWF0LTkuMzcuNDYt/QU0ucG5n",
+            "original": "https://images.autoinsurance.com/app/uploads/2021/12/16211403/Screen-Shot-2021-12-01-at-9.37.46-AM.png",
+            "logo": false
+          },
+          "age": "September 10, 2025"
+        },
+        {
+          "title": "Best Car Insurance in New York for 2025 | U.S. News",
+          "url": "https://www.usnews.com/insurance/auto/best-car-insurance-new-york",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Finally, compare quotes to see which one will offer you the best deal. ... U.S. News Rating ... Geico is a reputable insurer that offers convenient service at a good price in New York.",
+          "page_age": "2025-10-16T19:19:00",
+          "profile": {
+            "name": "U.S. News",
+            "url": "https://www.usnews.com/insurance/auto/best-car-insurance-new-york",
+            "long_name": "usnews.com",
+            "img": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "usnews.com",
+            "hostname": "www.usnews.com",
+            "favicon": "https://imgs.search.brave.com/XOzO4mUlBsCltovC20t5Uy_wUozBm3YENTHbFQyGZsw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDc0YjJjYzU0/MTY1MzE2ZTA1ZTNl/NWFjYzk0ODhmMWNm/ZTA2ZTBlYjA2MzNi/MGM3NzMwN2MwNGU5/ODY3YzdlNS93d3cu/dXNuZXdzLmNvbS8",
+            "path": "\u203a insurance  \u203a auto  \u203a best-car-insurance-new-york"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/pAHa6d2h0BfAfMpfIM1tax2gkwJVWwkghpfawyugVFw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dXNuZXdzLmNvbS9k/aW1zNC9VU05FV1Mv/YTNlNjQxNy8yMTQ3/NDgzNjQ3L3RodW1i/bmFpbC85NzB4NjQ3/L3F1YWxpdHkvODUv/P3VybD1odHRwcyUz/QSUyRiUyRnd3dy51/c25ld3MuY29tJTJG/Y21zbWVkaWElMkYz/MCUyRjEyJTJGM2Ni/MzI4NjA0NzU1YWVh/ZDc5MzcyMjU3MGM4/NyUyRmh0dHBzLW1l/ZGlhLWdldHR5aW1h/Z2VzLWNvbS1pZC05/MTM4ODk1MjItcGhv/dG8tbnljLWRvd250/b3duLXNreXNjcmFw/ZXJzLmpwZw",
+            "original": "https://www.usnews.com/dims4/USNEWS/a3e6417/2147483647/thumbnail/970x647/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F30%2F12%2F3cb328604755aead793722570c87%2Fhttps-media-gettyimages-com-id-913889522-photo-nyc-downtown-skyscrapers.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "Geico auto insurance review 2025",
+          "url": "https://www.cnbc.com/amp/select/geico-auto-insurance-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Editorial Note: Opinions, analyses, reviews or recommendations expressed in this article are those of the Select editorial staff\u2019s alone, and have not been reviewed, approved or otherwise endorsed by any third party. ... Geico Auto InsuranceGeico offers low average rates and coverage is available nationwide.",
+          "page_age": "2025-01-07T20:27:30",
+          "profile": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/amp/select/geico-auto-insurance-review",
+            "long_name": "Consumer News and Business Channel",
+            "img": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cnbc.com",
+            "hostname": "www.cnbc.com",
+            "favicon": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+            "path": "  \u203a cnbc select  \u203a insurance  \u203a geico auto insurance review 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/BfK4gP35Dx9mI8pkwsgeuxG2La7MbSWtn5w8vy7R3ts/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDcyNzczMzIt/MTY5MDM5Nzk4NTMw/NC1nZXR0eWltYWdl/cy0xNTEyMDQyMTM0/LWZlbDA1ODExLmpw/ZWc_dj0xNzM5ODIy/NTg0Jnc9MTYwMCZo/PTkwMA",
+            "original": "https://image.cnbcfm.com/api/v1/image/107277332-1690397985304-gettyimages-1512042134-fel05811.jpeg?v=1739822584&w=1600&h=900",
+            "logo": false
+          },
+          "age": "January 7, 2025"
+        },
+        {
+          "title": "r/carvana on Reddit: What paperwork is needed for DMV and Insurance (Geico) when selling a car?",
+          "url": "https://www.reddit.com/r/carvana/comments/1hfyvu8/what_paperwork_is_needed_for_dmv_and_insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Insurance, you don\u2019t need to provide them proof of anything, just cancel your policy. The DMV, yes, you must notify them that you are selling the vehicle and it needs to be registered in new person\u2019s name.",
+          "page_age": "2024-12-17T01:05:27",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/carvana/comments/1hfyvu8/what_paperwork_is_needed_for_dmv_and_insurance/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/carvana  \u203a what paperwork is needed for dmv and insurance (geico) when selling a car?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/j3KPlvYqDTJwW8c6gvKl-gWcASMmFrgzXGtuzyx7W3c/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zaGFy/ZS5yZWRkLml0L3By/ZXZpZXcvcG9zdC8x/aGZ5dnU4",
+            "original": "https://share.redd.it/preview/post/1hfyvu8",
+            "logo": false
+          },
+          "age": "December 17, 2024"
+        },
+        {
+          "title": "New York fines Geico $9.8 million over data breach | Reuters",
+          "url": "https://www.reuters.com/business/finance/new-york-fines-geico-98-million-over-data-breach-2024-11-25/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "REUTERS/Rachel Mummey/File Photo ... - The New York Attorney General&#x27;s office fined car insurance company Geico $9.75 million on Monday for hacks that obtained personal information on 116,000 drivers in the state...",
+          "page_age": "2024-11-25T17:08:16",
+          "profile": {
+            "name": "Reuters",
+            "url": "https://www.reuters.com/business/finance/new-york-fines-geico-98-million-over-data-breach-2024-11-25/",
+            "long_name": "reuters.com",
+            "img": "https://imgs.search.brave.com/g-LRPAPxrx_Eqo7F4IKC-Guqa4ONApD9n_VKZlqfqWo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzE0MWM3N2Ji/ZjQ3ZDhmYzI3NjMz/ODNjYTRiMGI4MjM4/OTExMzRkM2E1ODI4/MjI4YzA0ZWQ0OTRk/YWY5YTQwMy93d3cu/cmV1dGVycy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reuters.com",
+            "hostname": "www.reuters.com",
+            "favicon": "https://imgs.search.brave.com/g-LRPAPxrx_Eqo7F4IKC-Guqa4ONApD9n_VKZlqfqWo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzE0MWM3N2Ji/ZjQ3ZDhmYzI3NjMz/ODNjYTRiMGI4MjM4/OTExMzRkM2E1ODI4/MjI4YzA0ZWQ0OTRk/YWY5YTQwMy93d3cu/cmV1dGVycy5jb20v",
+            "path": "\u203a business  \u203a finance  \u203a new-york-fines-geico-98-million-over-data-breach-2024-11-25"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/OPysyJHBvtFsq3Sd2tobDZJcS9T2iLMwN8eZslv_lTI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmV1dGVycy5jb20v/cmVzaXplci92Mi9R/UE9WNjRaWEpGSUFW/TDcyTVhBTzNWTVRK/NC5qcGc_YXV0aD1k/ZDViNWExMjhjZmVj/ZTVlMzA1NmQ2MzQy/Mzc3MDRjYTRjZDU4/NmMwOGE4ZTNhMWQ1/NjQ1NGY0NGQ1MmFi/MDFkJmhlaWdodD0x/MDA1JndpZHRoPTE5/MjAmcXVhbGl0eT04/MCZzbWFydD10cnVl",
+            "original": "https://www.reuters.com/resizer/v2/QPOV64ZXJFIAVL72MXAO3VMTJ4.jpg?auth=dd5b5a128cfece5e3056d634237704ca4cd586c08a8e3a1d56454f44d52ab01d&height=1005&width=1920&quality=80&smart=true",
+            "logo": false
+          },
+          "age": "November 25, 2024"
+        },
+        {
+          "title": "GEICO Car Insurance Pricing 2025 | AutoInurance.com",
+          "url": "https://www.autoinsurance.com/companies/geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO does not offer rideshare coverage everywhere \u2014 for example, it is not available in Florida or New York.",
+          "page_age": "2025-10-23T17:18:41",
+          "profile": {
+            "name": "AutoInsurance.com",
+            "url": "https://www.autoinsurance.com/companies/geico/",
+            "long_name": "autoinsurance.com",
+            "img": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.com",
+            "hostname": "www.autoinsurance.com",
+            "favicon": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v",
+            "path": "  \u203a home  \u203a companies  \u203a geico car insurance pricing 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/FU3hr37tBh-Ikm7VXGKvyu3MEuYMGVKcUPtJXRnSUP4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYXV0b2luc3Vy/YW5jZS5jb20vYXBw/L3VwbG9hZHMvMjAy/MS8xMi8xNjIxMTQw/My9TY3JlZW4tU2hv/dC0yMDIxLTEyLTAx/LWF0LTkuMzcuNDYt/QU0ucG5n",
+            "original": "https://images.autoinsurance.com/app/uploads/2021/12/16211403/Screen-Shot-2021-12-01-at-9.37.46-AM.png",
+            "logo": false
+          },
+          "age": "2 weeks ago"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

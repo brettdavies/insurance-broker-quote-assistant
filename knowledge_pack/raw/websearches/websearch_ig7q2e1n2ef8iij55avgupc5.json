@@ -1,0 +1,314 @@
+{
+  "websearch_id": "websearch_ig7q2e1n2ef8iij55avgupc5",
+  "search_id": "search_kponua3liu4e61bgznbmlmjy",
+  "timestamp": "2025-11-07T12:22:33.324637",
+  "startedAt": "2025-11-07T12:22:33.324637",
+  "completedAt": "2025-11-07T12:22:35.465068",
+  "durationSeconds": 2.14,
+  "urlsDiscoveredCount": 7,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" \"e-billing\" OR \"electronic billing\" discount",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"GEICO\" \"e-billing\" OR \"electronic billing\" discount",
+      "show_strict_warning": false,
+      "cleaned": "GEICO e-billing electronic billing discount",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO e-billing electronic billing discount"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Every GEICO Car Insurance Discount Explained (2025) | Compare.com",
+          "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-discounts",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO offers several payment-related discounts. Paid-in-full: If you pay bills entirely up front, you may qualify for cheaper premiums. Auto pay: Pay bills with automatic payments to avoid insurance lapses and save on installment fees. Paperless billing: Electronic billing statements and policy ...",
+          "page_age": "2025-02-05T19:00:00",
+          "profile": {
+            "name": "Compare",
+            "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-discounts",
+            "long_name": "compare.com",
+            "img": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "compare.com",
+            "hostname": "www.compare.com",
+            "favicon": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v",
+            "path": "  \u203a auto insurance  \u203a cheap car insurance  \u203a discounts  \u203a geico car insurance discounts"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/eo6DC1oUEJ9tQ_nKLjRAcNuN4f4DvLEnyEuZwe_qSBA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8yOTU1MDgvODAw/eDYwMC80NjhmZDhl/NTBlL3dvbWFuLWRy/aXZpbmctd2l0aC1h/aXJwb2RzLmpwZw",
+            "original": "https://a.storyblok.com/f/295508/800x600/468fd8e50e/woman-driving-with-airpods.jpg",
+            "logo": false
+          },
+          "age": "February 5, 2025"
+        },
+        {
+          "title": "Best Auto-Pay Insurance Discounts in 2025 (Top 10 Companies) | AutoInsurance.org",
+          "url": "https://www.autoinsurance.org/electronic-automatic-billing-auto-insurance-discount/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "By leveraging the auto-pay discounts offered by these leading providers, you can enhance your overall savings and enjoy a hassle-free insurance experience, giving you peace of mind both financially and on the road. ... Understanding how insurance works can feel complicated, but finding affordable rates doesn\u2019t have to be. Enter your ZIP code above for the best insurance rates possible. ... Electronic automatic billing allows insurance companies to bill you digitally and automatically withdraw premium payments on a monthly, quarterly, or semi-annual basis.",
+          "page_age": "2025-04-08T19:48:00",
+          "profile": {
+            "name": "AutoInsurance.org",
+            "url": "https://www.autoinsurance.org/electronic-automatic-billing-auto-insurance-discount/",
+            "long_name": "autoinsurance.org",
+            "img": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.org",
+            "hostname": "www.autoinsurance.org",
+            "favicon": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv",
+            "path": "  \u203a home  \u203a best auto-pay insurance discounts in 2025 (save up to 10% with these 10 companies)"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/IBZLe7FjASOrsAdF79a4AjLscVHIRyrNl-5lH7xgh3E/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vcXVvdGVsbGMv/aW1hZ2UvdXBsb2Fk/L2luc3VyYW5jZS1z/aXRlLWltYWdlcy9h/aW9yZy1saXZlLzNm/YzJmYTlkLWFpb3Jn/LWxvZ28uc3Zn",
+            "original": "https://res.cloudinary.com/quotellc/image/upload/insurance-site-images/aiorg-live/3fc2fa9d-aiorg-logo.svg",
+            "logo": true
+          },
+          "age": "April 8, 2025"
+        },
+        {
+          "title": "Best Paperless and Auto-Billing Car Insurance Discounts in 2025 (Save 10% With These Companies) | AutoinsuranceEZ.com",
+          "url": "https://www.autoinsuranceez.com/paperless-auto-billing-discount/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Paperless insurance means maintaining your insurance policy on electronic media. You will get all correspondence via the Web or via email instead of hardcopy documents; even policy documents and statements of billing included. Many companies offer customers an AutoPay discount if they select automatic payments for their premiums.",
+          "page_age": "2024-11-23T04:27:32",
+          "profile": {
+            "name": "Autoinsuranceez",
+            "url": "https://www.autoinsuranceez.com/paperless-auto-billing-discount/",
+            "long_name": "autoinsuranceez.com",
+            "img": "https://imgs.search.brave.com/2WqTwUXTpEHj_Ww8pIc8xh0PgX7xeLWKQLNZ2Ux3r1c/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTQ1YjA1ZTY1/OTMyZTQ3ODgxYmZm/YzA1ZTJjOTcwNGYy/ZDJiYzIyY2E2ZWY2/N2YyYzUwZjA4MzNl/NGZjZGRhOS93d3cu/YXV0b2luc3VyYW5j/ZWV6LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsuranceez.com",
+            "hostname": "www.autoinsuranceez.com",
+            "favicon": "https://imgs.search.brave.com/2WqTwUXTpEHj_Ww8pIc8xh0PgX7xeLWKQLNZ2Ux3r1c/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTQ1YjA1ZTY1/OTMyZTQ3ODgxYmZm/YzA1ZTJjOTcwNGYy/ZDJiYzIyY2E2ZWY2/N2YyYzUwZjA4MzNl/NGZjZGRhOS93d3cu/YXV0b2luc3VyYW5j/ZWV6LmNvbS8",
+            "path": "  \u203a home  \u203a best paperless and auto-billing car insurance discounts in 2025 (save 10% with these companies)"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/HDWSh0SI1tydeqwMiWWawsHFYoP8ibYmK7CV2VMvFaA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YXV0b2luc3VyYW5j/ZWV6LmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMC8xMS8x/MDQ1NWUxMS1hdXRv/aW5zdXJhbmNlZXot/bG9nby1wdXJwbGUu/cG5n",
+            "original": "https://www.autoinsuranceez.com/wp-content/uploads/2020/11/10455e11-autoinsuranceez-logo-purple.png",
+            "logo": true
+          },
+          "age": "November 23, 2024"
+        },
+        {
+          "title": "Intelligent Clearinghouse Providers",
+          "url": "https://www.cariskpartners.com/intelligent-clearinghouse-provider/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO chooses CiC for e-billing in all 50 States.",
+          "page_age": "2025-05-29T19:13:21",
+          "profile": {
+            "name": "Carisk Partners",
+            "url": "https://www.cariskpartners.com/intelligent-clearinghouse-provider/",
+            "long_name": "cariskpartners.com",
+            "img": "https://imgs.search.brave.com/HGR3JdAkaqQGO--7-L7SSDezMESsbvME7cwFKtktKss/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYmVkYzcwNzAw/YzI4OTIxMzlkMzU4/MWIzNWQ0MDM1MTZl/ZDllMjk1MTM4ZWM0/ZDY3YWIyNjQ5ODg2/NzZiMWYyNS93d3cu/Y2FyaXNrcGFydG5l/cnMuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cariskpartners.com",
+            "hostname": "www.cariskpartners.com",
+            "favicon": "https://imgs.search.brave.com/HGR3JdAkaqQGO--7-L7SSDezMESsbvME7cwFKtktKss/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYmVkYzcwNzAw/YzI4OTIxMzlkMzU4/MWIzNWQ0MDM1MTZl/ZDllMjk1MTM4ZWM0/ZDY3YWIyNjQ5ODg2/NzZiMWYyNS93d3cu/Y2FyaXNrcGFydG5l/cnMuY29tLw",
+            "path": "  \u203a home  \u203a intelligent clearinghouse provider"
+          },
+          "age": "May 29, 2025"
+        },
+        {
+          "title": "Easy, Proven Ways to Lower Your Car Insurance",
+          "url": "https://www.aarp.org/money/personal-finance/save-on-auto-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Electronic- and automated-payment discounts. You might qualify for a lower premium simply by enrolling in electronic billing statements, with savings typically anywhere from 4 percent to 10 percent, depending on the carrier.",
+          "page_age": "2025-02-06T00:00:00",
+          "profile": {
+            "name": "AARP",
+            "url": "https://www.aarp.org/money/personal-finance/save-on-auto-insurance/",
+            "long_name": "aarp.org",
+            "img": "https://imgs.search.brave.com/Vbofhc11UHEw65dg22hthZQi8z-7WZrTXhiP-olTs30/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTcyMmNhM2Vh/NzM4ZmY2OWI1YWQ5/ZTM0NjQ0MzQ4ODFk/OWRjNWE4NTNmZDli/MThhOThjNTgxMzNk/ZDczODMzMC93d3cu/YWFycC5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "aarp.org",
+            "hostname": "www.aarp.org",
+            "favicon": "https://imgs.search.brave.com/Vbofhc11UHEw65dg22hthZQi8z-7WZrTXhiP-olTs30/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTcyMmNhM2Vh/NzM4ZmY2OWI1YWQ5/ZTM0NjQ0MzQ4ODFk/OWRjNWE4NTNmZDli/MThhOThjNTgxMzNk/ZDczODMzMC93d3cu/YWFycC5vcmcv",
+            "path": "\u203a money  \u203a personal-finance  \u203a save-on-auto-insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/iFsrklSY-J5sXgQ7_1Fmw_Kmdq4rSufqmFx1Lkqd278/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hYXJw/LndpZGVuLm5ldC9j/b250ZW50L3hnNHVv/eXFzaTYvanBlZy84/MTA5OV9yb2Jkb2Jp/X0FBUlBfaW5zdXJh/bmNlLmpwZz9jcm9w/PXRydWUmYW5jaG9y/PTAsMCZxPTgwJmNv/bG9yPWZmZmZmZmZm/JnU9dWN4bm1oJnc9/MjA0OCZoPTExNzc",
+            "original": "https://aarp.widen.net/content/xg4uoyqsi6/jpeg/81099_robdobi_AARP_insurance.jpg?crop=true&anchor=0,0&q=80&color=ffffffff&u=ucxnmh&w=2048&h=1177",
+            "logo": false
+          },
+          "age": "February 6, 2025"
+        },
+        {
+          "title": "E-Billing: Electronic Billing Explained",
+          "url": "https://www.bill.com/learning/electronic-billing",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "What is an e-Bill? Learn about electronic billing (e-Billing) a modern method of generating and sending invoices online. Discover the benefits and how it works.",
+          "page_age": "2025-07-21T00:00:00",
+          "profile": {
+            "name": "Bill.com",
+            "url": "https://www.bill.com/learning/electronic-billing",
+            "long_name": "bill.com",
+            "img": "https://imgs.search.brave.com/LFKVJ4JHLjwB1YMP3bJ-HYCNCNe0IaPS7q6LCfKSMBY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDYyMzBhY2Vh/NzY3YjFiMzk5NDFk/MjAxNWE5YWI2MmNi/MDY3NTExMDExMjA1/ZmY5NzdjMzllMzRj/Mjg2YzA0Ny93d3cu/YmlsbC5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bill.com",
+            "hostname": "www.bill.com",
+            "favicon": "https://imgs.search.brave.com/LFKVJ4JHLjwB1YMP3bJ-HYCNCNe0IaPS7q6LCfKSMBY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDYyMzBhY2Vh/NzY3YjFiMzk5NDFk/MjAxNWE5YWI2MmNi/MDY3NTExMDExMjA1/ZmY5NzdjMzllMzRj/Mjg2YzA0Ny93d3cu/YmlsbC5jb20v",
+            "path": "  \u203a home  \u203a learning center  \u203a e-billing: electronic billing explained"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/krMTrvIQ7i_pksBQKTxmSTzoeJQRInU59y0Gak0AwoE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvZC53ZWJzaXRl/LWZpbGVzLmNvbS82/M2UzZGEzZGYzNWNk/NjJmNTQ3NTE5ODUv/NjcwODE1MDFkMzk2/NWU0ZTczZTQ3Yjgy/X0Jsb2ctVGh1bWJu/YWlsLUdlbmVyYWxC/SUxMLTAyLnBuZw",
+            "original": "https://cdn.prod.website-files.com/63e3da3df35cd62f54751985/67081501d3965e4e73e47b82_Blog-Thumbnail-GeneralBILL-02.png",
+            "logo": false
+          },
+          "age": "July 21, 2025"
+        },
+        {
+          "title": "What is e-Billing? Guide to Electronic Billing | Tipalti",
+          "url": "https://tipalti-com.translate.goog/resources/learn/what-is-ebilling/?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-PT&_x_tr_pto=tc",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Electronic billing results in cost savings for both payer and payee. It improves cash flow and speeds up accounts receivable collection time. Customers process and pay bills on time and can apply more early payment discounts.",
+          "page_age": "2024-12-21T06:37:27",
+          "profile": {
+            "name": "Tipalti",
+            "url": "https://tipalti-com.translate.goog/resources/learn/what-is-ebilling/?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-PT&_x_tr_pto=tc",
+            "long_name": "tipalti-com.translate.goog",
+            "img": "https://imgs.search.brave.com/fGC2yOjG-nWKvEtOaid3kQplGyhABP_Vv-j6fR50wGk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNThkOGYyYjQ3/Y2IwOWM0OTMzMmQ4/Mjc4M2Q3YjJiNjRm/ZGI1ZmJkMGYwMTg1/NzRhYmFhYjMzMjRj/OGYxNzZlYi90aXBh/bHRpLWNvbS50cmFu/c2xhdGUuZ29vZy8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "tipalti-com.translate.goog",
+            "hostname": "tipalti-com.translate.goog",
+            "favicon": "https://imgs.search.brave.com/fGC2yOjG-nWKvEtOaid3kQplGyhABP_Vv-j6fR50wGk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNThkOGYyYjQ3/Y2IwOWM0OTMzMmQ4/Mjc4M2Q3YjJiNjRm/ZGI1ZmJkMGYwMTg1/NzRhYmFhYjMzMjRj/OGYxNzZlYi90aXBh/bHRpLWNvbS50cmFu/c2xhdGUuZ29vZy8",
+            "path": "  \u203a learn  \u203a what is e-billing (electronic billing)?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/DBdS3pWl9X1s6N7FktK-Bgnr6W4slADInS8tCwL_JZ0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly90aXBh/bHRpLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMy8wOS9t/ZWRpYV93b21hbi1z/bWlsaW5nLWF0LWxh/cHRvcC13aXRoLWhl/YWRwaG9uZXMud2Vi/cA",
+            "original": "https://tipalti.com/wp-content/uploads/2023/09/media_woman-smiling-at-laptop-with-headphones.webp",
+            "logo": false
+          },
+          "age": "December 21, 2024"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

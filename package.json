@@ -1,0 +1,44 @@
+{
+  "name": "insurance-broker-quote-assistant",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"bun run --filter @repo/web dev\" \"bun run --filter @repo/api dev\" --names \"web,api\" --prefix-colors \"cyan,magenta\"",
+    "build": "bun run --filter '*' build",
+    "test": "bun test",
+    "type-check": "bun run --filter '*' type-check",
+    "lint": "biome check .",
+    "format": "biome format --write . && prettier --write '**/*.{tsx,jsx}'",
+    "format:check": "biome format . && prettier --check '**/*.{tsx,jsx}'",
+    "validate-knowledge-pack": "bun run scripts/validate-knowledge-pack.ts",
+    "eval": "bun run evaluation/run-evals.ts",
+    "eval:env": "bun run evaluation/start-eval-env.ts",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@lexical/react": "^0.38.2",
+    "@lexical/utils": "^0.38.2",
+    "@paralleldrive/cuid2": "^3.0.4",
+    "@radix-ui/react-accordion": "^1.2.12",
+    "@radix-ui/react-progress": "^1.1.8",
+    "lexical": "^0.38.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/bun": "^1.3.2",
+    "@types/node": "^24.10.1",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "concurrently": "^9.2.1",
+    "husky": "^9.1.7",
+    "playwright": "^1.56.1",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "typescript": "^5.9.3"
+  }
+}

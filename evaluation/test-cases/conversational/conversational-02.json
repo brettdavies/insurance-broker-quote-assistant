@@ -1,0 +1,33 @@
+{
+  "id": "conv-02",
+  "name": "Missing Critical Fields - TX Home Progressive",
+  "description": "Test case with missing state and product fields - tests LLM's ability to extract from context",
+  "type": "conversational",
+  "carrier": "Progressive",
+  "state": "TX",
+  "product": "home",
+  "input": "TX home insurance. 3br house. Built 2010. Currently with pro. 2000sqft. Age 42",
+  "expectedProfile": {
+    "state": "TX",
+    "productType": "home",
+    "age": 42,
+    "yearBuilt": 2010,
+    "squareFeet": 2000,
+    "propertyType": "single-family",
+    "currentCarrier": "Progressive"
+  },
+  "expectedRoute": {
+    "primaryCarrier": "Progressive",
+    "eligibleCarriers": ["Progressive", "GEICO", "State Farm"],
+    "confidence": 0.85,
+    "rationale": "Progressive offers home insurance in Texas and matches eligibility criteria."
+  },
+  "expectedDisclaimers": [
+    "Rates subject to underwriting and approval",
+    "Actual rates may vary based on complete application",
+    "Must be reviewed and finalized by a licensed insurance agent",
+    "Not a binding quote",
+    "Texas: Rates are estimates and may vary",
+    "Home Insurance: Property details and location impact rates"
+  ]
+}

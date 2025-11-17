@@ -1,0 +1,37 @@
+{
+  "id": "conv-01",
+  "name": "Complete Data Extraction - CA Auto GEICO",
+  "description": "Test case with all fields present - complete data extraction scenario",
+  "type": "conversational",
+  "carrier": "GEICO",
+  "state": "CA",
+  "product": "auto",
+  "input": "CA auto. 35yo. 2 cars, 2 drivers. Has geico. Clean record 5yrs. Owns home. Zip 90210",
+  "expectedProfile": {
+    "state": "CA",
+    "productType": "auto",
+    "age": 35,
+    "vehicles": 2,
+    "drivers": 2,
+    "householdSize": 2,
+    "currentCarrier": "GEICO",
+    "ownsHome": true,
+    "cleanRecord5Yr": true,
+    "zip": "90210"
+  },
+  "expectedRoute": {
+    "primaryCarrier": "GEICO",
+    "eligibleCarriers": ["GEICO", "Progressive", "State Farm"],
+    "confidence": 0.9,
+    "rationale": "GEICO is eligible for auto insurance in California and matches all eligibility criteria."
+  },
+  "expectedDisclaimers": [
+    "Rates subject to underwriting and approval",
+    "Actual rates may vary based on complete application",
+    "Must be reviewed and finalized by a licensed insurance agent",
+    "Not a binding quote",
+    "California: This quote is an estimate only",
+    "Auto Insurance: Coverage limits and deductibles affect premium"
+  ]
+}
+

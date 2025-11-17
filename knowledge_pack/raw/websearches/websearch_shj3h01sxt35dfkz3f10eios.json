@@ -1,0 +1,92 @@
+{
+  "websearch_id": "websearch_shj3h01sxt35dfkz3f10eios",
+  "search_id": "search_wtwooj7dgt48lhitzllx655k",
+  "timestamp": "2025-11-07T12:30:29.721560",
+  "startedAt": "2025-11-07T12:30:29.721560",
+  "completedAt": "2025-11-07T12:30:31.752231",
+  "durationSeconds": 2.03,
+  "urlsDiscoveredCount": 1,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" umbrella \"underlying coverage\" minimum",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"GEICO\" umbrella \"underlying coverage\" minimum",
+      "show_strict_warning": false,
+      "cleaned": "GEICO umbrella underlying coverage minimum",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO umbrella underlying coverage minimum"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Auto-Owners suspiciously cheap? : r/Insurance",
+          "url": "https://www.reddit.com/r/Insurance/comments/1issg5y/autoowners_suspiciously_cheap/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "They are also one of the few standard carriers out there that will allow a different company&#x27;s policy as underlying coverage for their umbrella, as long as underwriting approves the other carrier&#x27;s coverage forms and your other policies have to meet their minimum liability limits.",
+          "page_age": "2025-02-19T00:48:54",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Insurance/comments/1issg5y/autoowners_suspiciously_cheap/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/insurance  \u203a auto-owners suspiciously cheap?"
+          },
+          "age": "February 19, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

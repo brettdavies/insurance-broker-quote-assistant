@@ -1,0 +1,171 @@
+{
+  "websearch_id": "websearch_aoow9eu2rhkb810prnchwxee",
+  "search_id": "search_mtmxsntvqvbw426365py5yoi",
+  "timestamp": "2025-11-07T12:25:59.908797",
+  "startedAt": "2025-11-07T12:25:59.908797",
+  "completedAt": "2025-11-07T12:26:01.827450",
+  "durationSeconds": 1.92,
+  "urlsDiscoveredCount": 3,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" \"construction type\" homeowners eligible",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"GEICO\" \"construction type\" homeowners eligible",
+      "show_strict_warning": false,
+      "cleaned": "GEICO construction type homeowners eligible",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO construction type homeowners eligible"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "GEICO Home Insurance Review",
+          "url": "https://www.moneygeek.com/insurance/homeowners/reviews/geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Visit GEICO&#x27;s website or call (800) 841-3000 to get a homeowners insurance quote. Provide information about your home, including its age, square footage, construction type and location to receive accurate pricing.",
+          "page_age": "2025-10-29T10:25:35",
+          "profile": {
+            "name": "MoneyGeek",
+            "url": "https://www.moneygeek.com/insurance/homeowners/reviews/geico/",
+            "long_name": "moneygeek.com",
+            "img": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "moneygeek.com",
+            "hostname": "www.moneygeek.com",
+            "favicon": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8",
+            "path": "  \u203a home  \u203a insurance  \u203a geico homeowners insurance review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/x1OQJxpE_J8W2gHMWyFTklZU6My-FdjDYddjiMVLpB4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbW9uZXlnZWVr/L2ltYWdlL3VwbG9h/ZC9jX3NjYWxlLHFf/YXV0bzplY28sd18x/MjAwLGZfYXV0byxm/bF9sb3NzeS92MTc1/NjQ5NTg0OC9nZWlj/b19sb2dvX2MwM2Nk/ZGNiN2QuanBn",
+            "original": "https://res.cloudinary.com/moneygeek/image/upload/c_scale,q_auto:eco,w_1200,f_auto,fl_lossy/v1756495848/geico_logo_c03cddcb7d.jpg",
+            "logo": true
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Optimizing Insurance Coverage for Home Construction Types",
+          "url": "https://www.cgaa.org/article/home-construction-types-for-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Here are some examples of what dwelling-under-construction endorsements cover: Mobile homes are a type of prefabricated home that&#x27;s built in a factory and transported to the site. They&#x27;re often confused with manufactured homes, but they&#x27;re actually a bit different. Mobile homes typically come with their own insurance needs, which can be met with a personalized policy through GEICO Insurance Agency.",
+          "page_age": "2025-01-03T23:15:00",
+          "profile": {
+            "name": "CGAA",
+            "url": "https://www.cgaa.org/article/home-construction-types-for-insurance",
+            "long_name": "cgaa.org",
+            "img": "https://imgs.search.brave.com/JGYb7UMkkO9GWjH7kX-sNVYkWoFFiifhiQbeTs0f-jI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjU0NjQxNWY2/M2I0NzI3MzVkMzVm/NGQxNGNjMzNlM2Yz/YWY2Y2Y1NjFmMjI5/ZTRmNDNkOWUxMDFj/MmQwODc5NS93d3cu/Y2dhYS5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cgaa.org",
+            "hostname": "www.cgaa.org",
+            "favicon": "https://imgs.search.brave.com/JGYb7UMkkO9GWjH7kX-sNVYkWoFFiifhiQbeTs0f-jI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjU0NjQxNWY2/M2I0NzI3MzVkMzVm/NGQxNGNjMzNlM2Yz/YWY2Y2Y1NjFmMjI5/ZTRmNDNkOWUxMDFj/MmQwODc5NS93d3cu/Y2dhYS5vcmcv",
+            "path": "  \u203a renovation  \u203a optimizing insurance coverage for home construction types"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/DtXsKClGOkaIkli4r7k9ZTutOwuTTjaEFm2A7NOPgsA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvMjAx/NjQ2NTUvcGV4ZWxz/LXBob3RvLTIwMTY0/NjU1LmpwZWc",
+            "original": "https://images.pexels.com/photos/20164655/pexels-photo-20164655.jpeg",
+            "logo": false
+          },
+          "age": "January 3, 2025"
+        },
+        {
+          "title": "Geico Condo Insurance Florida: Smart 2025 Guide",
+          "url": "https://floridaallrisk.com/geico-condo-insurance-florida-guide/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Your condo\u2019s address, square footage, year of construction, and construction type (e.g., concrete block or wood frame).",
+          "page_age": "2025-09-04T00:40:26",
+          "profile": {
+            "name": "Floridaallrisk",
+            "url": "https://floridaallrisk.com/geico-condo-insurance-florida-guide/",
+            "long_name": "floridaallrisk.com",
+            "img": "https://imgs.search.brave.com/GPW_tj4OcARNXlGmeHw4z7zR8llSeHEUs4KPUmjBriY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTMxYTdjNmFj/MDE3NzczMzRhZWQ2/ZTg1Y2RjYmIzZjAz/NmM0ZjBmMjkyNzYx/MzNiNWYyMzJhYjJj/YzJiODk5ZS9mbG9y/aWRhYWxscmlzay5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "floridaallrisk.com",
+            "hostname": "floridaallrisk.com",
+            "favicon": "https://imgs.search.brave.com/GPW_tj4OcARNXlGmeHw4z7zR8llSeHEUs4KPUmjBriY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTMxYTdjNmFj/MDE3NzczMzRhZWQ2/ZTg1Y2RjYmIzZjAz/NmM0ZjBmMjkyNzYx/MzNiNWYyMzJhYjJj/YzJiODk5ZS9mbG9y/aWRhYWxscmlzay5j/b20v",
+            "path": "  \u203a home  \u203a navigating florida condo insurance with geico: what you need to know"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/EAPHFe8rUke78tHCAG93-iKaj7fLDGxN9ZbbT_JZX2Q/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9mbG9y/aWRhYWxscmlzay5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjQvMTEvaG9tZW93/bmVycy1pbnN1cmFu/Y2UtZmxvcmlkYS5q/cGc",
+            "original": "https://floridaallrisk.com/wp-content/uploads/2024/11/homeowners-insurance-florida.jpg",
+            "logo": false
+          },
+          "age": "September 4, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

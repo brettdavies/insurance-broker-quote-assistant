@@ -1,0 +1,859 @@
+{
+  "websearch_id": "websearch_rjkpy2qz8juh0frtp8jqebis",
+  "search_id": "search_q5vmceqgcjyaobydy6q2xpuc",
+  "timestamp": "2025-11-07T12:20:14.689304",
+  "startedAt": "2025-11-07T12:20:14.689304",
+  "completedAt": "2025-11-07T12:20:15.560234",
+  "durationSeconds": 0.87,
+  "urlsDiscoveredCount": 21,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" \"available in\" states",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"GEICO\" \"available in\" states",
+      "show_strict_warning": false,
+      "cleaned": "GEICO available in states",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO available in states"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 20,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "The best car insurance discounts of 2025",
+          "url": "https://www.cnbc.com/select/the-best-car-insurance-discounts-of-2025/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico auto insurance is available in all 50 U.S. states and Washington, D.C.",
+          "page_age": "2025-09-30T11:18:01",
+          "profile": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/select/the-best-car-insurance-discounts-of-2025/",
+            "long_name": "Consumer News and Business Channel",
+            "img": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cnbc.com",
+            "hostname": "www.cnbc.com",
+            "favicon": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+            "path": "  \u203a cnbc select  \u203a insurance  \u203a the best car insurance discounts of 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/fQWglqIjD-HFqoEL9hG_NkRTzoS3eP6EFqNfGDpYUb4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDgxOTMzNDYt/MTc1Njg0MzAxMjgw/My1nZXR0eWltYWdl/cy0xNDE5OTk4MTY1/LWNhdGhlcmluZWxh/bmUyMDIybmlrb25k/ODUwNWp1bHkyMDIy/MTg4NzguanBlZz92/PTE3NTg5MDg1MDI",
+            "original": "https://image.cnbcfm.com/api/v1/image/108193346-1756843012803-gettyimages-1419998165-catherinelane2022nikond8505july202218878.jpeg?v=1758908502",
+            "logo": false
+          },
+          "age": "September 30, 2025"
+        },
+        {
+          "title": "Geico auto insurance review 2025",
+          "url": "https://www.cnbc.com/select/geico-auto-insurance-review/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico auto insurance is available in all 50 U.S. states and Washington, D.C.",
+          "page_age": "2025-01-07T20:27:30",
+          "profile": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/select/geico-auto-insurance-review/",
+            "long_name": "Consumer News and Business Channel",
+            "img": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cnbc.com",
+            "hostname": "www.cnbc.com",
+            "favicon": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+            "path": "  \u203a cnbc select  \u203a insurance  \u203a geico auto insurance review 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ypcW5t5kqg5PFsUYfXyjxE8otHDJ746lMxZAWJ0qEEk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDcyNzczMzIt/MTY5MDM5Nzk4NTMw/NC1nZXR0eWltYWdl/cy0xNTEyMDQyMTM0/LWZlbDA1ODExLmpw/ZWc_dj0xNzM5ODIy/NTg0",
+            "original": "https://image.cnbcfm.com/api/v1/image/107277332-1690397985304-gettyimages-1512042134-fel05811.jpeg?v=1739822584",
+            "logo": false
+          },
+          "age": "January 7, 2025"
+        },
+        {
+          "title": "These car insurance companies are the least likely to raise rates",
+          "url": "https://www.cnbc.com/select/car-insurance-companies-least-likely-raise-rates/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico auto coverage is available in all 50 states and Washington, D.C., with 16 discounts and add-ons like roadside assistance, rental car reimbursement and mechanical breakdown insurance.",
+          "page_age": "2025-09-29T19:21:58",
+          "profile": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/select/car-insurance-companies-least-likely-raise-rates/",
+            "long_name": "Consumer News and Business Channel",
+            "img": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cnbc.com",
+            "hostname": "www.cnbc.com",
+            "favicon": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+            "path": "  \u203a cnbc select  \u203a insurance  \u203a these car insurance companies are the least likely to raise rates"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/X9oYChntQqe3k-7tdili9Wht-Mnx6r381HKJy_1NZKY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDgyMDQ3ODkt/MTc1ODk5MzQxNTU2/Ny1nZXR0eWltYWdl/cy0xODczNDAyMTU0/LWRyaXZlcmNhcmhh/bmRtb25leS5qcGVn/P3Y9MTc1ODk5MzQ3/Ng",
+            "original": "https://image.cnbcfm.com/api/v1/image/108204789-1758993415567-gettyimages-1873402154-drivercarhandmoney.jpeg?v=1758993476",
+            "logo": false
+          },
+          "age": "September 29, 2025"
+        },
+        {
+          "title": "Geico Insurance Review 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/reviews/geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico auto and home insurance is available in all 50 states and Washington, D.C.",
+          "page_age": "2025-10-14T19:36:23",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/reviews/geico/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a insurance  \u203a reviews"
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "State Farm vs. Geico car insurance: Which is better?",
+          "url": "https://www.cnbc.com/select/state-farm-vs-geico-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "16, including multi-car, safety/security systems, bundling, new car, clean driving record, defensive driver, military, homeownership and autopay. Geico auto insurance is available in all 50 U.S.",
+          "page_age": "2024-12-16T16:53:02",
+          "profile": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/select/state-farm-vs-geico-car-insurance/",
+            "long_name": "Consumer News and Business Channel",
+            "img": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cnbc.com",
+            "hostname": "www.cnbc.com",
+            "favicon": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+            "path": "  \u203a cnbc select  \u203a insurance  \u203a state farm vs. geico car insurance: which is better?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Y9Rt4UALFP1LylAA8fRiDARddxEFNjN18IJJ_McYfEE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDc0MzUxNjgt/MTcxOTYwNTc4Njgz/Mi1nZXR0eWltYWdl/cy0xNDQ3MzU1MzQ0/LWJlM2kwMDgyLmpw/ZWc_dj0xNzI2MjM4/NTI4",
+            "original": "https://image.cnbcfm.com/api/v1/image/107435168-1719605786832-gettyimages-1447355344-be3i0082.jpeg?v=1726238528",
+            "logo": false
+          },
+          "age": "December 16, 2024"
+        },
+        {
+          "title": "Over 55? Here's how to save more than $300 on car insurance",
+          "url": "https://www.cnbc.com/select/seniors-save-more-than-300-on-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico auto insurance is available in all 50 U.S. states and Washington, D.C.",
+          "page_age": "2025-10-28T10:01:01",
+          "profile": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/select/seniors-save-more-than-300-on-car-insurance/",
+            "long_name": "Consumer News and Business Channel",
+            "img": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cnbc.com",
+            "hostname": "www.cnbc.com",
+            "favicon": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+            "path": "  \u203a cnbc select  \u203a insurance  \u203a over 55? here's how to save more than $300 on car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/XpplUjvAMJhCMc17n7eqoDQz4MzoaItYLlhpod_iPNQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDY3OTI1NzIt/MTYwNTEyMzcwMTg3/NS1nZXR0eWltYWdl/cy03Mzg3NzU4NzMt/YmxkMjQ1NTczLmpw/ZWc_dj0xNzYxMzM2/NTQ4",
+            "original": "https://image.cnbcfm.com/api/v1/image/106792572-1605123701875-gettyimages-738775873-bld245573.jpeg?v=1761336548",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "GEICO Insurance Review 2025",
+          "url": "https://www.autoinsurance.com/companies/geico/reviews/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO is available in all 50 states and Washington, D.C. However, since GEICO\u2019s operations are mostly online, some states have very few or no agencies.",
+          "page_age": "2025-09-29T22:11:11",
+          "profile": {
+            "name": "AutoInsurance.com",
+            "url": "https://www.autoinsurance.com/companies/geico/reviews/",
+            "long_name": "autoinsurance.com",
+            "img": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.com",
+            "hostname": "www.autoinsurance.com",
+            "favicon": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v",
+            "path": "  \u203a home  \u203a companies  \u203a geico insurance review 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/FU3hr37tBh-Ikm7VXGKvyu3MEuYMGVKcUPtJXRnSUP4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYXV0b2luc3Vy/YW5jZS5jb20vYXBw/L3VwbG9hZHMvMjAy/MS8xMi8xNjIxMTQw/My9TY3JlZW4tU2hv/dC0yMDIxLTEyLTAx/LWF0LTkuMzcuNDYt/QU0ucG5n",
+            "original": "https://images.autoinsurance.com/app/uploads/2021/12/16211403/Screen-Shot-2021-12-01-at-9.37.46-AM.png",
+            "logo": false
+          },
+          "age": "September 29, 2025"
+        },
+        {
+          "title": "Best car insurance companies of November 2025",
+          "url": "https://www.cnbc.com/select/best-car-insurance-companies/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico auto insurance is available in all 50 U.S. states and Washington, D.C.",
+          "page_age": "2025-11-01T04:36:02",
+          "profile": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/select/best-car-insurance-companies/",
+            "long_name": "Consumer News and Business Channel",
+            "img": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cnbc.com",
+            "hostname": "www.cnbc.com",
+            "favicon": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+            "path": "  \u203a cnbc select  \u203a insurance  \u203a best car insurance companies of november 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/W9bWm-fJgeWchQNnRw-L-wsC-zLsPrPq-P6MoYPxFbk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDgyMTUwNjgt/MTc2MTA4ODQ5NzY5/NC1nZXR0eWltYWdl/cy0xNzQ0NjAwODU1/LWxtY2YwMDQzOC5q/cGVnP3Y9MTc2MTMx/NjI0NA",
+            "original": "https://image.cnbcfm.com/api/v1/image/108215068-1761088497694-gettyimages-1744600855-lmcf00438.jpeg?v=1761316244",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "GEICO Auto Insurance: User Reviews and Quotes (2025) | Insurify",
+          "url": "https://insurify.com/car-insurance/companies/geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO is the third-largest U.S. auto insurer by market share and one of the best-known national insurance companies. Its car insurance rates are often among the cheapest available in all 50 states and Washington, D.C.",
+          "page_age": "2025-11-05T04:14:11",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/car-insurance/companies/geico/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "product",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a car insurance  \u203a companies  \u203a geico"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/gZkQ_u0YCRybmPwZFSljdeyKmIy7ktG5hZAHahFbQKU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbnN1/cmlmeWNkbi5jb20v/aW1hZ2VzL2NhcnJp/ZXIvaGlnaC1kZWZp/bml0aW9uL2dlaWNv/LnN2Zw",
+            "original": "https://insurifycdn.com/images/carrier/high-definition/geico.svg",
+            "logo": true
+          },
+          "age": "3 days ago"
+        },
+        {
+          "title": "GEICO Auto Insurance Review 2025 - NerdWallet",
+          "url": "https://www.nerdwallet.com/insurance/auto/geico-auto-insurance-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO is the nation\u2019s third largest auto insurance company, known primarily for low rates offered directly to consumers online and over the phone. It is available in all 50 states and Washington, D.C.",
+          "page_age": "2025-05-22T00:17:56",
+          "profile": {
+            "name": "NerdWallet",
+            "url": "https://www.nerdwallet.com/insurance/auto/geico-auto-insurance-review",
+            "long_name": "nerdwallet.com",
+            "img": "https://imgs.search.brave.com/8r72GokQ4UXZ6V4PobxSGta-ben5011_C3meSKoOMl4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGFhYzY5MDhh/NTNhODNhYjliNWNm/MTE4YTNmOGE3NjVj/M2FmMDcwMzhhMzQx/MThmYjQ2MzcxMjQy/ZDgwNTkzZS93d3cu/bmVyZHdhbGxldC5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "nerdwallet.com",
+            "hostname": "www.nerdwallet.com",
+            "favicon": "https://imgs.search.brave.com/8r72GokQ4UXZ6V4PobxSGta-ben5011_C3meSKoOMl4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGFhYzY5MDhh/NTNhODNhYjliNWNm/MTE4YTNmOGE3NjVj/M2FmMDcwMzhhMzQx/MThmYjQ2MzcxMjQy/ZDgwNTkzZS93d3cu/bmVyZHdhbGxldC5j/b20v",
+            "path": "  \u203a back to nerdwallet homepage  \u203a insurance  \u203a geico auto insurance review 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YPzLkJjZCFxXpYanjK3BJqLgzpeceiESsexi-_nxjbw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bmVyZHdhbGxldC5j/b20vdGFjaHlvbi8y/MDI1LzA0L0dldHR5/SW1hZ2VzLTIxMjA3/NjA0NTkuanBnP3Jl/c2l6ZT0xNDQwJTJD/ODY0",
+            "original": "https://www.nerdwallet.com/tachyon/2025/04/GettyImages-2120760459.jpg?resize=1440%2C864",
+            "logo": false
+          },
+          "age": "May 22, 2025"
+        },
+        {
+          "title": "GEICO Auto Insurance Review: Pros, Cons, and Alternatives in 2025",
+          "url": "https://www.businessinsider.com/personal-finance/auto-insurance/geico-auto-insurance-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO Auto InsuranceGEICO auto insurance offers some of the most affordable rates across all ages and driving histories, on top of its discounts to lower your premiums even further. Available in all 50 states and Washington, D.C., GEICO is one ...",
+          "page_age": "2025-05-27T18:47:26",
+          "profile": {
+            "name": "Business Insider",
+            "url": "https://www.businessinsider.com/personal-finance/auto-insurance/geico-auto-insurance-review",
+            "long_name": "businessinsider.com",
+            "img": "https://imgs.search.brave.com/Z6wRqiE6vvL-8sy5MskRt7Tuy1z-PxXnfSbVXVy86vw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTI3NGQzMDdi/ZjEzYTA0MTI4NWMw/MWVjOTFmNDI3Yzdk/NGQzZDE1OTAxOWVj/NWIxMjk3YTcyNTg5/N2FiZjM2Yy93d3cu/YnVzaW5lc3NpbnNp/ZGVyLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "businessinsider.com",
+            "hostname": "www.businessinsider.com",
+            "favicon": "https://imgs.search.brave.com/Z6wRqiE6vvL-8sy5MskRt7Tuy1z-PxXnfSbVXVy86vw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTI3NGQzMDdi/ZjEzYTA0MTI4NWMw/MWVjOTFmNDI3Yzdk/NGQzZDE1OTAxOWVj/NWIxMjk3YTcyNTg5/N2FiZjM2Yy93d3cu/YnVzaW5lc3NpbnNp/ZGVyLmNvbS8",
+            "path": "  \u203a personal finance  \u203a insurance  \u203a auto insurance  \u203a geico auto insurance review: pros, cons, and alternatives in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/0ypRYK77ndvg8-Z9g50na_LQC0dbKqATRAESPKBG0Xo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pLmlu/c2lkZXIuY29tLzY3/ODdlZTNkZTI5NGE3/NTE0ZThkNGE5ND93/aWR0aD0xMjAwJmZv/cm1hdD1qcGVn",
+            "original": "https://i.insider.com/6787ee3de294a7514e8d4a94?width=1200&format=jpeg",
+            "logo": false
+          },
+          "age": "May 27, 2025"
+        },
+        {
+          "title": "Geico Car Insurance Review 2025: Is It Good Overall? \u2013 Forbes Advisor",
+          "url": "https://www.forbes.com/advisor/car-insurance/geico-car-insurance-review/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico car insurance is available in all 50 states and Washington, D.C.",
+          "page_age": "2025-05-02T08:02:11",
+          "profile": {
+            "name": "Forbes Advisor",
+            "url": "https://www.forbes.com/advisor/car-insurance/geico-car-insurance-review/",
+            "long_name": "forbes.com",
+            "img": "https://imgs.search.brave.com/qg6-E4bARcUpS7pHuJ2FXSeQ2YI51iPfbI8wpUBx9tg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY0NWFiMTBk/YmY2MjkyN2M0MTI0/NmRkYTM3ZjQzMGJj/Y2Q2MTBkYjVmZjA2/OGRjODBhMTM1M2Yx/YmRlZTA1NS93d3cu/Zm9yYmVzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "review",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "forbes.com",
+            "hostname": "www.forbes.com",
+            "favicon": "https://imgs.search.brave.com/qg6-E4bARcUpS7pHuJ2FXSeQ2YI51iPfbI8wpUBx9tg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY0NWFiMTBk/YmY2MjkyN2M0MTI0/NmRkYTM3ZjQzMGJj/Y2Q2MTBkYjVmZjA2/OGRjODBhMTM1M2Yx/YmRlZTA1NS93d3cu/Zm9yYmVzLmNvbS8",
+            "path": "\u203a advisor  \u203a car-insurance  \u203a geico-car-insurance-review"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/6EtCTs5cpLhUAWJdUR5qAn_EVPT4ijjCEGnGGVp8DMU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Zm9yYmVzLmNvbS9h/ZHZpc29yL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIxLzA3L2dl/aWNvLXJldmlldy5q/cGVnLmpwZw",
+            "original": "https://www.forbes.com/advisor/wp-content/uploads/2021/07/geico-review.jpeg.jpg",
+            "logo": false
+          },
+          "age": "May 2, 2025"
+        },
+        {
+          "title": "GEICO Home Insurance Review 2025: Coverage and Discounts - NerdWallet",
+          "url": "https://www.nerdwallet.com/insurance/homeowners/geico-home-insurance-review",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO can match you with a homeowners insurance company in all 50 states and Washington, D.C. Availability may change at any time.",
+          "page_age": "2025-09-08T14:01:44",
+          "profile": {
+            "name": "NerdWallet",
+            "url": "https://www.nerdwallet.com/insurance/homeowners/geico-home-insurance-review",
+            "long_name": "nerdwallet.com",
+            "img": "https://imgs.search.brave.com/8r72GokQ4UXZ6V4PobxSGta-ben5011_C3meSKoOMl4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGFhYzY5MDhh/NTNhODNhYjliNWNm/MTE4YTNmOGE3NjVj/M2FmMDcwMzhhMzQx/MThmYjQ2MzcxMjQy/ZDgwNTkzZS93d3cu/bmVyZHdhbGxldC5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "nerdwallet.com",
+            "hostname": "www.nerdwallet.com",
+            "favicon": "https://imgs.search.brave.com/8r72GokQ4UXZ6V4PobxSGta-ben5011_C3meSKoOMl4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGFhYzY5MDhh/NTNhODNhYjliNWNm/MTE4YTNmOGE3NjVj/M2FmMDcwMzhhMzQx/MThmYjQ2MzcxMjQy/ZDgwNTkzZS93d3cu/bmVyZHdhbGxldC5j/b20v",
+            "path": "  \u203a back to nerdwallet homepage  \u203a insurance  \u203a geico homeowners insurance review 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Dsb9Og2j2uP4yFulHqpQ2FTgqZ1TOGr6zKUbP3Ux_wM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bmVyZHdhbGxldC5j/b20vYXNzZXRzL2Js/b2cvd3AtY29udGVu/dC91cGxvYWRzLzIw/MjMvMDUvR2V0dHlJ/bWFnZXMtODQ0MjMz/NDk0LTE0NDB4ODY0/LmpwZw",
+            "original": "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2023/05/GettyImages-844233494-1440x864.jpg",
+            "logo": false
+          },
+          "age": "September 8, 2025"
+        },
+        {
+          "title": "GEICO vs Costco Car Insurance: Who is Cheaper & Better in 2025? | The Zebra",
+          "url": "https://www.thezebra.com/insurance-companies/geico-vs-costco/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO operates in all 50 U.S. states, while Costco\u2019s program is a little more selective. You must be a member of Costco to qualify for car insurance, and it may only be available in states in which CONNECT sells policies.",
+          "page_age": "2025-10-16T22:23:36",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/insurance-companies/geico-vs-costco/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a insurance companies  \u203a geico vs. costco car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/wLaa5ABL1FOaAK7OptGU60BZ9EYO_N4yxiZcbPpNAME/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9zdGF0/aWMvODAwZGFmYS96/ZnJvbnQvaW1nL2l6/LXNoYXJlLWxvZ28u/cG5n",
+            "original": "https://cdn.thezebra.com/zfront/static/800dafa/zfront/img/iz-share-logo.png",
+            "logo": true
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "GEICO auto insurance review for 2025 | Insurance.com",
+          "url": "https://www.insurance.com/auto-insurance/carriers/geico.aspx",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "However, it ranked in the middle ... biggest competitors, State Farm and Progressive. Its auto insurance is available in all 50 states and has a strong online presence and robust smartphone application, making it a good option ...",
+          "page_age": "2025-02-21T00:00:00",
+          "profile": {
+            "name": "Insurance.com",
+            "url": "https://www.insurance.com/auto-insurance/carriers/geico.aspx",
+            "long_name": "insurance.com",
+            "img": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurance.com",
+            "hostname": "www.insurance.com",
+            "favicon": "https://imgs.search.brave.com/_B8ZhPsPFH4ycJnuLLjVIwBQ7ssC57teaWj3lNDbHnI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZkZDQ2MzI5/M2E0YTEyMzQ4MWE0/MDVmZGFlYTk2YTkx/MzljNGJkNGQ5ZDBh/YzYxYTMxN2NlNjQz/YzNlZjk0Yi93d3cu/aW5zdXJhbmNlLmNv/bS8",
+            "path": "  \u203a home  \u203a auto insurance  \u203a carriers  \u203a geico auto insurance review for 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/_peY-rgrfNw3ckVrEEJ484XJgxg1twCvy56jKAx-_lw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdXJhbmNlLmNv/bS9pbWFnZXN2cl9j/ZS82ODk1L2Nhci1p/bnN1cmFuY2UtMTEu/anBn",
+            "original": "https://www.insurance.com/imagesvr_ce/6895/car-insurance-11.jpg",
+            "logo": false
+          },
+          "age": "February 21, 2025"
+        },
+        {
+          "title": "Geico DriveEasy Review: How It Works and Whether It\u2019s Worth It | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/geico-driveeasy/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The app is telematics-based, which means that your real-time driving information is transmitted to Geico via your smartphone. The program is currently available in 39 states and Washington, D.C.",
+          "page_age": "2025-06-12T20:06:15",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/geico-driveeasy/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/npy3v-wzO5Fh3Tx5xIIAshZ14hLoKb0B9o0y90383FY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/LzIwMjEvMTAvMTIx/MjM3MjgvY2FyLWdl/aWNvLWRyaXZlZWFz/eS1mZWF0dXJlZC5q/cGc",
+            "original": "https://www.bankrate.com/2021/10/12123728/car-geico-driveeasy-featured.jpg",
+            "logo": false
+          },
+          "age": "June 12, 2025"
+        },
+        {
+          "title": "GEICO vs. Progressive Auto Insurance | AutoInsurance.com",
+          "url": "https://www.autoinsurance.com/companies/geico-vs-progressive/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "As national insurers, both GEICO and Progressive are available in every state as well as Washington, D.C., and offer various types of insurance products, including home and auto coverage.",
+          "page_age": "2025-02-11T09:45:16",
+          "profile": {
+            "name": "AutoInsurance.com",
+            "url": "https://www.autoinsurance.com/companies/geico-vs-progressive/",
+            "long_name": "autoinsurance.com",
+            "img": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.com",
+            "hostname": "www.autoinsurance.com",
+            "favicon": "https://imgs.search.brave.com/oTazPrUXjRSp6BAp5cQoLBxf_n9BZmdD4ShKrRensUo/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTk0NGE5MjFm/Mzc1YWEwOTljNWY0/ODExYWM2MmI2NGRm/MmU3MmYwOGQyYTc4/YWEwODU4ZjI5MjU4/NzAwZDk4ZS93d3cu/YXV0b2luc3VyYW5j/ZS5jb20v",
+            "path": "  \u203a home  \u203a companies  \u203a geico vs. progressive"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/FU3hr37tBh-Ikm7VXGKvyu3MEuYMGVKcUPtJXRnSUP4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYXV0b2luc3Vy/YW5jZS5jb20vYXBw/L3VwbG9hZHMvMjAy/MS8xMi8xNjIxMTQw/My9TY3JlZW4tU2hv/dC0yMDIxLTEyLTAx/LWF0LTkuMzcuNDYt/QU0ucG5n",
+            "original": "https://images.autoinsurance.com/app/uploads/2021/12/16211403/Screen-Shot-2021-12-01-at-9.37.46-AM.png",
+            "logo": false
+          },
+          "age": "February 11, 2025"
+        },
+        {
+          "title": "GEICO Home Insurance Review: Ratings and Quotes (2025) | Insurify",
+          "url": "https://insurify.com/homeowners-insurance/companies/geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO has insurance agents in 44 U.S. states and Washington D.C., though it can sell coverage in all 50 states. It offers all the standard homeowners insurance coverages large insurance companies typically offer.",
+          "page_age": "2025-02-03T19:00:00",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/homeowners-insurance/companies/geico/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a homeowners insurance  \u203a geico"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/w5FgrBqAlQs8svek1OPEIVtbUegmgdfwiK49IYu68Lg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xNjIyNzMvODAw/eDYwMC9hNTk2MGZk/MmRlL2dyZWVuLWhv/dXNlLW9yYW5nZS5w/bmc",
+            "original": "https://a.storyblok.com/f/162273/800x600/a5960fd2de/green-house-orange.png",
+            "logo": false
+          },
+          "age": "February 3, 2025"
+        },
+        {
+          "title": "Cheapest Car Insurance Companies of November 2025 | CNBC Select",
+          "url": "https://www.cnbc.com/select/best-cheap-car-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico auto insurance is available in all 50 U.S. states and Washington, D.C.",
+          "page_age": "2025-11-01T04:41:01",
+          "profile": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/select/best-cheap-car-insurance/",
+            "long_name": "Consumer News and Business Channel",
+            "img": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cnbc.com",
+            "hostname": "www.cnbc.com",
+            "favicon": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+            "path": "  \u203a cnbc select  \u203a insurance  \u203a best cheap car insurance companies of november 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/XXmi6-BQNanot2HNGmGTsjhGCsy5C-R3KenA_DOCsH0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDYwMzYyNjMt/MTU2Mzk0ODg4OTg0/MG5vbWluYXRlZC10/aGUtam95LWhhcHBp/bmVzcy1hbmQtZXhj/aXRlbWVudC1vZi1i/dXlpbmcteW91ci1m/aXJzdC1jYXItdG9u/eS1hbmRyZXdzLXBo/b3RvZ3JhcGh5X3Qy/MF96bDdicHIuanBn/P3Y9MTYwNjMzNDMw/Nw",
+            "original": "https://image.cnbcfm.com/api/v1/image/106036263-1563948889840nominated-the-joy-happiness-and-excitement-of-buying-your-first-car-tony-andrews-photography_t20_zl7bpr.jpg?v=1606334307",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "10 Largest Car Insurance Companies in the U.S. in 2025",
+          "url": "https://www.cnbc.com/select/largest-car-insurance-companies/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Geico auto insurance is available in all 50 U.S. states and Washington, D.C.",
+          "page_age": "2025-05-12T10:33:01",
+          "profile": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/select/largest-car-insurance-companies/",
+            "long_name": "Consumer News and Business Channel",
+            "img": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cnbc.com",
+            "hostname": "www.cnbc.com",
+            "favicon": "https://imgs.search.brave.com/Y-kiUECkMSGd7lOmrP2aTYHW7-HGeiVhcw9XMTUFn-Y/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+            "path": "  \u203a cnbc select  \u203a insurance  \u203a the 10 largest car insurance companies in the u.s."
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/k_9GkUe9doxbrK1YCcuwJnatJo-ZOxQOKkWrRqRx23A/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDgxMTk4OTct/MTc0MjU4NzAwNzcz/NC1nZXR0eWltYWdl/cy0xMzQxMzk3Mzcy/LWRzYzA5OTkyLmpw/ZWc_dj0xNzUyNjI0/MDU3",
+            "original": "https://image.cnbcfm.com/api/v1/image/108119897-1742587007734-gettyimages-1341397372-dsc09992.jpeg?v=1752624057",
+            "logo": false
+          },
+          "age": "May 12, 2025"
+        },
+        {
+          "title": "GEICO",
+          "url": "https://en.wikipedia.org/wiki/GEICO",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "auto insurance company",
+          "profile": {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/GEICO",
+            "long_name": "en.wikipedia.org",
+            "img": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "deep_results": {
+            "buttons": [
+              {
+                "type": "button_result",
+                "title": "History",
+                "url": "https://en.wikipedia.org/wiki/GEICO#History"
+              },
+              {
+                "type": "button_result",
+                "title": "Modern development",
+                "url": "https://en.wikipedia.org/wiki/GEICO#Modern_development"
+              },
+              {
+                "type": "button_result",
+                "title": "Advertising campaigns",
+                "url": "https://en.wikipedia.org/wiki/GEICO#Advertising_campaigns"
+              },
+              {
+                "type": "button_result",
+                "title": "Motorsports",
+                "url": "https://en.wikipedia.org/wiki/GEICO#Motorsports"
+              },
+              {
+                "type": "button_result",
+                "title": "Lawsuits",
+                "url": "https://en.wikipedia.org/wiki/GEICO#Lawsuits"
+              }
+            ]
+          },
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "en.wikipedia.org",
+            "hostname": "en.wikipedia.org",
+            "favicon": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw",
+            "path": "\u203a wiki  \u203a GEICO"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/vz-kvaBtSesO4WxAy0JLLmiTPx-ZsoAeZmrSGNKHCZU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9h/L2E3L0dFSUNPX2hl/YWRxdWFydGVycy5q/cGc",
+            "original": "https://upload.wikimedia.org/wikipedia/commons/a/a7/GEICO_headquarters.jpg",
+            "logo": false
+          }
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

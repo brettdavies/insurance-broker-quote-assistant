@@ -1,0 +1,97 @@
+{
+  "websearch_id": "websearch_s19hrfyx4ojis6b8y88uxtvf",
+  "search_id": "search_pfsyzwukiqj0fhv2w1j8vxlp",
+  "timestamp": "2025-11-07T12:34:02.983581",
+  "startedAt": "2025-11-07T12:34:02.983581",
+  "completedAt": "2025-11-07T12:34:04.958685",
+  "durationSeconds": 1.98,
+  "urlsDiscoveredCount": 1,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"discount ceiling\" insurance carrier",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"discount ceiling\" insurance carrier",
+      "show_strict_warning": false,
+      "cleaned": "discount ceiling insurance carrier",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": true,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "discount ceiling insurance carrier"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Clearance & Discount Ceiling Fans - Hunter Fans on Sale",
+          "url": "https://www.hunterfan.com/collections/ceiling-fan-sale",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Shop Hunter&#x27;s ceiling fan sale for discount ceiling fans with or without lights. Save big on clearance ceiling fans that bring comfort and sophistication!",
+          "page_age": "2025-11-04T00:00:00",
+          "profile": {
+            "name": "Hunter Fan",
+            "url": "https://www.hunterfan.com/collections/ceiling-fan-sale",
+            "long_name": "hunterfan.com",
+            "img": "https://imgs.search.brave.com/OXBKeseauvq0qsqeJ1vQNP03SBTyU9oO1Vd9bVAQcNE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjVkOTU4YjBm/NjFlZTg2YWMzOGJm/ZTZmMDQxNmIzMTZh/YzI0NzI4NjdkOWM5/ZjcyZjhkMWQxMzA4/YmU1MDRjYS93d3cu/aHVudGVyZmFuLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "hunterfan.com",
+            "hostname": "www.hunterfan.com",
+            "favicon": "https://imgs.search.brave.com/OXBKeseauvq0qsqeJ1vQNP03SBTyU9oO1Vd9bVAQcNE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjVkOTU4YjBm/NjFlZTg2YWMzOGJm/ZTZmMDQxNmIzMTZh/YzI0NzI4NjdkOWM5/ZjcyZjhkMWQxMzA4/YmU1MDRjYS93d3cu/aHVudGVyZmFuLmNv/bS8",
+            "path": "  \u203a home  \u203a clearance & discount ceiling fans - hunter fans on sale"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/SRlMQu0RyPZuyczBCa7ymtW3Ymg42Es_l7hNTCmRElY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aHVudGVyZmFuLmNv/bS9jZG4vc2hvcC9m/aWxlcy80NC1pbmNo/LXJhZGVvbi1zbWFy/dC1mYW4td2l0aC1s/ZWQtbGlnaHQtY2Vp/bGluZy1mYW5zLWh1/bnRlci1tYXR0ZS13/aGl0ZW5ld18xOTIw/eDMwMC5qcGc_dj0x/NzYyMjU1ODQw",
+            "original": "https://www.hunterfan.com/cdn/shop/files/44-inch-radeon-smart-fan-with-led-light-ceiling-fans-hunter-matte-whitenew_1920x300.jpg?v=1762255840",
+            "logo": false
+          },
+          "age": "4 days ago"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

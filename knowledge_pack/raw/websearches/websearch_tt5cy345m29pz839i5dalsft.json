@@ -1,0 +1,97 @@
+{
+  "websearch_id": "websearch_tt5cy345m29pz839i5dalsft",
+  "search_id": "search_vl2halzn1jsndp7p52wrqpep",
+  "timestamp": "2025-11-07T12:22:53.222076",
+  "startedAt": "2025-11-07T12:22:53.222076",
+  "completedAt": "2025-11-07T12:22:55.129740",
+  "durationSeconds": 1.91,
+  "urlsDiscoveredCount": 1,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" \"available discounts\" auto insurance",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"GEICO\" \"available discounts\" auto insurance",
+      "show_strict_warning": false,
+      "cleaned": "GEICO available discounts auto insurance",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO available discounts auto insurance"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "GEICO car insurance review 2025: 3.1 out of 5 stars",
+          "url": "https://finance.yahoo.com/personal-finance/insurance/review/geico-car-insurance-review-180541901.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO offers a discount for opting into paperless billing. Paid-in-full. The paid-in-full discount is available when you pay your policy in full instead of splitting the premium into payments. Auto pay. If you do pay your premium in installments, you can earn a discount for setting up automatic payments. Learn more: Military car insurance: What to know and how to find the best deal",
+          "page_age": "2025-09-10T18:05:41",
+          "profile": {
+            "name": "Yahoo! Finance",
+            "url": "https://finance.yahoo.com/personal-finance/insurance/review/geico-car-insurance-review-180541901.html",
+            "long_name": "finance.yahoo.com",
+            "img": "https://imgs.search.brave.com/ZxJbtHZiiBXciqcRfJn3XPiTEOf_XYrooAjrJf1rnag/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjRkNjc1NWY5/MzM5ZjlkMWQyNjM5/OWNiMTQ4ZjcwNTQx/ZjA3ZDE4NDQ2M2Iw/MWZjZjVhOTFlM2Ji/NTE1NWRjZS9maW5h/bmNlLnlhaG9vLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "finance.yahoo.com",
+            "hostname": "finance.yahoo.com",
+            "favicon": "https://imgs.search.brave.com/ZxJbtHZiiBXciqcRfJn3XPiTEOf_XYrooAjrJf1rnag/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjRkNjc1NWY5/MzM5ZjlkMWQyNjM5/OWNiMTQ4ZjcwNTQx/ZjA3ZDE4NDQ2M2Iw/MWZjZjVhOTFlM2Ji/NTE1NWRjZS9maW5h/bmNlLnlhaG9vLmNv/bS8",
+            "path": "  \u203a personal finance  \u203a insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ZUfRTp_T6gFSbsMxymx9F3xvFuUABzroRosGv7BCvsg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zLnlp/bWcuY29tL255L2Fw/aS9yZXMvMS4yL25K/eUJiLjlPamlOR1pp/UEljXzl2UmctLS9Z/WEJ3YVdROWFHbG5h/R3hoYm1SbGNqdDNQ/VEV5TURBN2FEMDRN/REEtL2h0dHBzOi8v/cy55aW1nLmNvbS9v/cy9jcmVhdHItdXBs/b2FkZWQtaW1hZ2Vz/LzIwMjUtMDkvMmZm/YTE5ZDAtOGU2Yi0x/MWYwLWJiZjctY2Y4/YjRmYTgyZjk5",
+            "original": "https://s.yimg.com/ny/api/res/1.2/nJyBb.9OjiNGZiPIc_9vRg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2025-09/2ffa19d0-8e6b-11f0-bbf7-cf8b4fa82f99",
+            "logo": false
+          },
+          "age": "September 10, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

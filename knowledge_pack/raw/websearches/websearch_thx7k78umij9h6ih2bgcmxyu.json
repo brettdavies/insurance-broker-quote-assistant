@@ -1,0 +1,52 @@
+{
+  "websearch_id": "websearch_thx7k78umij9h6ih2bgcmxyu",
+  "search_id": "search_yzqy287tdpydci1su5zpl9fp",
+  "timestamp": "2025-11-07T12:20:35.501354",
+  "startedAt": "2025-11-07T12:20:35.501354",
+  "completedAt": "2025-11-07T12:20:37.419910",
+  "durationSeconds": 1.92,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"State Farm\" \"available states\"",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"State Farm\" \"available states\"",
+      "show_strict_warning": false,
+      "cleaned": "State Farm available states",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "State Farm available states"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}
