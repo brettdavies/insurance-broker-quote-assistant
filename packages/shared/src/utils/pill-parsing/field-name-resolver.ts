@@ -11,19 +11,11 @@ import { normalizeFieldName } from '../field-normalization'
 /**
  * Build field aliases map from unifiedFieldMetadata
  * Maps shortcuts and aliases to canonical field names
- *
- * @param flow - Optional flow filter ('intake' | 'policy'). If provided, only includes fields for that flow.
- *               This prevents conflicts where the same alias exists in both flows (e.g., 'c' for vehicles vs carrier).
  */
-export function buildFieldAliasesMap(flow?: 'intake' | 'policy'): Record<string, string> {
+export function buildFieldAliasesMap(): Record<string, string> {
   const aliases: Record<string, string> = {}
 
   for (const [fieldName, metadata] of Object.entries(unifiedFieldMetadata)) {
-    // Filter by flow if specified
-    if (flow && !metadata.flows.includes(flow)) {
-      continue
-    }
-
     // Add shortcut → field name mapping
     if (metadata.shortcut) {
       aliases[metadata.shortcut.toLowerCase()] = fieldName

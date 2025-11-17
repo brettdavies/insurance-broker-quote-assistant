@@ -1,4 +1,5 @@
 import { afterAll, beforeAll, describe, expect, it } from 'bun:test'
+import { join } from 'node:path'
 import type { CarrierFile } from '@repo/shared'
 import { createTestCarrier } from '../../__tests__/fixtures/knowledge-pack'
 import {
@@ -6,9 +7,23 @@ import {
   setupTestKnowledgePack,
 } from '../../__tests__/helpers/knowledge-pack-test-setup'
 import app from '../../index'
+import { loadKnowledgePack } from '../../services/knowledge-pack-loader'
+import * as knowledgePackRAG from '../../services/knowledge-pack-rag'
 
 describe('Carriers Endpoints Integration', () => {
   beforeAll(async () => {
+    // Clear any mocks that might be active from other tests
+    ;(knowledgePackRAG.getCarrierByName as any).mockRestore?.()
+    ;(knowledgePackRAG.getCarrierBundleDiscounts as any).mockRestore?.()
+
+    // Reload the real knowledge pack to ensure clean state
+    // This prevents test data from other tests from polluting the Maps
+    const projectRoot = process.cwd().includes('apps/api')
+      ? join(process.cwd(), '..', '..')
+      : process.cwd()
+    const realKnowledgePackDir = join(projectRoot, 'knowledge_pack')
+    await loadKnowledgePack(realKnowledgePackDir)
+
     // Use real knowledge_pack as base, extend with test carriers if needed
     // For this test, we'll use the real knowledge pack which should have carriers
     await setupTestKnowledgePack()

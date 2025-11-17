@@ -43,12 +43,16 @@ export function validateOutput(
   const prohibitedPhrases = getProhibitedPhrases()
   const violations = detectProhibitedPhrasesShared(output, prohibitedPhrases)
 
+  // Get disclaimers (always include, even when violations are detected)
+  const disclaimers = getDisclaimersFromKB(state || undefined, productType || undefined)
+
   // If violations detected, block output
   if (violations.length > 0) {
     return {
       passed: false,
       violations,
       replacementMessage: LICENSED_AGENT_HANDOFF_MESSAGE,
+      disclaimers, // Always include disclaimers, even when blocking content
       state: state || undefined,
       productType: productType || undefined,
     }

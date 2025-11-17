@@ -6,7 +6,7 @@
  */
 
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
-import { getEnumOptionsForCombobox, unifiedFieldMetadata } from '@repo/shared'
+import { unifiedFieldMetadata } from '@repo/shared'
 import { FieldModalButtons } from './FieldModalButtons'
 import { FieldModalInput } from './FieldModalInput'
 

@@ -1,7 +1,11 @@
 import { afterEach, beforeEach, describe, expect, it } from 'bun:test'
 import { mkdir, rm, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
-import { createTestCarrier, createTestState } from '../../__tests__/fixtures/knowledge-pack'
+import {
+  createTestCarrier,
+  createTestProduct,
+  createTestState,
+} from '../../__tests__/fixtures/knowledge-pack'
 import {
   getAllCarriers,
   getCarrier,
@@ -14,22 +18,29 @@ import { getCarrierByName, getStateByCode } from '../knowledge-pack-rag'
 
 describe('Knowledge Pack Loader', () => {
   const testKnowledgePackDir = 'test_knowledge_pack'
-  const testCarriersDir = join(testKnowledgePackDir, 'carriers')
-  const testStatesDir = join(testKnowledgePackDir, 'states')
+  let testCarriersDir: string
+  let testStatesDir: string
+  let testProductsDir: string
+  let absoluteTestKnowledgePackDir: string
 
   beforeEach(async () => {
+    // Resolve absolute paths
+    const projectRoot = process.cwd().includes('apps/api')
+      ? join(process.cwd(), '..', '..')
+      : process.cwd()
+    absoluteTestKnowledgePackDir = join(projectRoot, testKnowledgePackDir)
+    testCarriersDir = join(absoluteTestKnowledgePackDir, 'carriers')
+    testStatesDir = join(absoluteTestKnowledgePackDir, 'states')
+    testProductsDir = join(absoluteTestKnowledgePackDir, 'products')
     // Clean up any existing test directory first
     try {
-      await rm(testKnowledgePackDir, { recursive: true, force: true })
+      await rm(absoluteTestKnowledgePackDir, { recursive: true, force: true })
     } catch {
       // Ignore cleanup errors if directory doesn't exist
     }
 
     // Reload the real knowledge pack first to ensure clean Maps
     // This prevents test data (like TestCarrier) from previous tests from polluting the Maps
-    const projectRoot = process.cwd().includes('apps/api')
-      ? join(process.cwd(), '..', '..')
-      : process.cwd()
     const realKnowledgePackDir = join(projectRoot, 'knowledge_pack')
 
     try {
@@ -42,12 +53,13 @@ describe('Knowledge Pack Loader', () => {
     // Create test directories
     await mkdir(testCarriersDir, { recursive: true })
     await mkdir(testStatesDir, { recursive: true })
+    await mkdir(testProductsDir, { recursive: true })
   })
 
   afterEach(async () => {
     // Clean up test directories
     try {
-      await rm(testKnowledgePackDir, { recursive: true, force: true })
+      await rm(absoluteTestKnowledgePackDir, { recursive: true, force: true })
     } catch {
       // Ignore cleanup errors
     }
@@ -84,7 +96,7 @@ describe('Knowledge Pack Loader', () => {
       await writeFile(join(testStatesDir, 'CA.json'), JSON.stringify(stateData), 'utf-8')
 
       // Load knowledge pack
-      await loadKnowledgePack(testKnowledgePackDir)
+      await loadKnowledgePack(absoluteTestKnowledgePackDir)
 
       // Verify loading status
       const status = getLoadingStatus()
@@ -135,7 +147,23 @@ describe('Knowledge Pack Loader', () => {
         'utf-8'
       )
 
-      await loadKnowledgePack(testKnowledgePackDir)
+      // Create product files
+      const products = ['auto', 'home', 'renters', 'umbrella']
+      for (const productCode of products) {
+        const productData = createTestProduct(productCode, `${productCode} Insurance`)
+        await writeFile(
+          join(testProductsDir, `${productCode}.json`),
+          JSON.stringify(productData),
+          'utf-8'
+        )
+      }
+
+      // Use absolute path for test knowledge pack
+      const projectRoot = process.cwd().includes('apps/api')
+        ? join(process.cwd(), '..', '..')
+        : process.cwd()
+      const absoluteTestKnowledgePackDir = join(projectRoot, testKnowledgePackDir)
+      await loadKnowledgePack(absoluteTestKnowledgePackDir)
 
       const status = getLoadingStatus()
       expect(status.productsCount).toBe(4) // auto, home, renters, umbrella
@@ -154,7 +182,12 @@ describe('Knowledge Pack Loader', () => {
         'utf-8'
       )
 
-      await loadKnowledgePack(testKnowledgePackDir)
+      // Use absolute path for test knowledge pack
+      const projectRoot = process.cwd().includes('apps/api')
+        ? join(process.cwd(), '..', '..')
+        : process.cwd()
+      const absoluteTestKnowledgePackDir = join(projectRoot, testKnowledgePackDir)
+      await loadKnowledgePack(absoluteTestKnowledgePackDir)
 
       const status = getLoadingStatus()
       // Should still load successfully even with no state files
@@ -176,7 +209,12 @@ describe('Knowledge Pack Loader', () => {
         'utf-8'
       )
 
-      await loadKnowledgePack(testKnowledgePackDir)
+      // Use absolute path for test knowledge pack
+      const projectRoot = process.cwd().includes('apps/api')
+        ? join(process.cwd(), '..', '..')
+        : process.cwd()
+      const absoluteTestKnowledgePackDir = join(projectRoot, testKnowledgePackDir)
+      await loadKnowledgePack(absoluteTestKnowledgePackDir)
 
       const status = getLoadingStatus()
       // Should load valid file and track error for invalid file
@@ -202,7 +240,12 @@ describe('Knowledge Pack Loader', () => {
         'utf-8'
       )
 
-      await loadKnowledgePack(testKnowledgePackDir)
+      // Use absolute path for test knowledge pack
+      const projectRoot = process.cwd().includes('apps/api')
+        ? join(process.cwd(), '..', '..')
+        : process.cwd()
+      const absoluteTestKnowledgePackDir = join(projectRoot, testKnowledgePackDir)
+      await loadKnowledgePack(absoluteTestKnowledgePackDir)
 
       const status = getLoadingStatus()
       expect(status.errors.length).toBeGreaterThan(0)
@@ -221,7 +264,12 @@ describe('Knowledge Pack Loader', () => {
         'utf-8'
       )
 
-      await loadKnowledgePack(testKnowledgePackDir)
+      // Use absolute path for test knowledge pack
+      const projectRoot = process.cwd().includes('apps/api')
+        ? join(process.cwd(), '..', '..')
+        : process.cwd()
+      const absoluteTestKnowledgePackDir = join(projectRoot, testKnowledgePackDir)
+      await loadKnowledgePack(absoluteTestKnowledgePackDir)
 
       const status = getLoadingStatus()
       expect(status.errors.length).toBeGreaterThan(0)
@@ -270,7 +318,12 @@ describe('Knowledge Pack Loader', () => {
       // Note: In a real scenario, loading is non-blocking, but in tests
       // everything completes synchronously. We verify the function doesn't throw
       // and completes successfully.
-      await loadKnowledgePack(testKnowledgePackDir)
+      // Use absolute path for test knowledge pack
+      const projectRoot = process.cwd().includes('apps/api')
+        ? join(process.cwd(), '..', '..')
+        : process.cwd()
+      const absoluteTestKnowledgePackDir = join(projectRoot, testKnowledgePackDir)
+      await loadKnowledgePack(absoluteTestKnowledgePackDir)
 
       // Verify final status
       const finalStatus = getLoadingStatus()
@@ -297,7 +350,12 @@ describe('Knowledge Pack Loader', () => {
 
       await writeFile(join(testStatesDir, 'CA.json'), JSON.stringify(stateData), 'utf-8')
 
-      await loadKnowledgePack(testKnowledgePackDir)
+      // Use absolute path for test knowledge pack
+      const projectRoot = process.cwd().includes('apps/api')
+        ? join(process.cwd(), '..', '..')
+        : process.cwd()
+      const absoluteTestKnowledgePackDir = join(projectRoot, testKnowledgePackDir)
+      await loadKnowledgePack(absoluteTestKnowledgePackDir)
 
       // Verify the pack loaded correctly
       const status = getLoadingStatus()
