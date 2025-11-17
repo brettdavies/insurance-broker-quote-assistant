@@ -8,12 +8,12 @@
     "build": "bun build src/index.ts --outdir dist --target node",
     "type-check": "tsc --noEmit",
     "lint": "biome check .",
-    "test": "bun test",
-    "test:unit": "bun test src/utils/__tests__ src/services/__tests__ --exclude '*.gemini-provider.test.ts'",
-    "test:integration": "bun test src/routes/__tests__ --exclude '*.contract.test.ts'",
-    "test:contract": "bun test src/routes/__tests__/*.contract.test.ts",
-    "test:gemini": "TEST_TARGETS=real-api bun test src/services/__tests__/gemini-provider.test.ts",
-    "test:all": "bun test"
+    "test": "bun test --shuffle",
+    "test:unit": "bun test --shuffle src/utils/__tests__ src/services/__tests__ --exclude '*.gemini-provider.test.ts'",
+    "test:integration": "bun test --shuffle src/routes/__tests__ --exclude '*.contract.test.ts'",
+    "test:contract": "bun test --shuffle src/routes/__tests__/*.contract.test.ts",
+    "test:gemini": "TEST_TARGETS=real-api bun test --shuffle src/services/__tests__/gemini-provider.test.ts",
+    "test:all": "bun test --shuffle"
   },
   "dependencies": {
     "@google/genai": "^1.29.0",
