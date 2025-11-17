@@ -64,13 +64,15 @@ export function buildTraceSection(
  * Build input and processing section
  */
 function buildInputSection(trace: DecisionTrace, testCase?: TestCase): string {
-  const inputs = trace.inputs as {
-    message?: string
-    pills?: unknown
-    knownFields?: unknown
-    inferredFields?: unknown
-    suppressedFields?: string[]
-  } | undefined
+  const inputs = trace.inputs as
+    | {
+        message?: string
+        pills?: unknown
+        knownFields?: unknown
+        inferredFields?: unknown
+        suppressedFields?: string[]
+      }
+    | undefined
   if (!inputs) return ''
 
   const sections: string[] = []

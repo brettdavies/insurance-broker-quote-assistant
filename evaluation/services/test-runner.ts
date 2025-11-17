@@ -16,14 +16,14 @@ import { runPolicyTest } from './policy-test-runner'
  * Delegates to the appropriate flow-specific test runner based on test type.
  *
  * @param testCase - Test case to run
- * @param sharedBrowser - Optional shared browser instance for better performance
+ * @param sharedBrowser - Optional shared browser instance (only used by policy tests if needed)
  */
 export async function runTestCase(
   testCase: TestCase,
   sharedBrowser?: Browser
 ): Promise<TestResult> {
   if (testCase.type === 'conversational') {
-    return await runConversationalTest(testCase, sharedBrowser)
+    return await runConversationalTest(testCase)
   }
 
   if (testCase.type === 'policy') {

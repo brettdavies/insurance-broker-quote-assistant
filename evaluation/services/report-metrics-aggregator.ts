@@ -6,9 +6,9 @@
  * Enhanced with flow-specific metrics for conversational vs policy tests.
  */
 
-import type { DecisionTrace, IntakeResult, PolicyAnalysisResult } from '@repo/shared'
 import type { TestResult } from '../types'
 import { aggregateAccuracy, calculateAverage, filterByTestType } from './report-utils'
+import { extractTrace } from './shared/data-extractors'
 import { calculateCost, extractTokenUsage } from './token-tracker'
 
 /**
@@ -19,12 +19,18 @@ export interface OverallMetrics {
   intakeCompleteness: number
   discountAccuracyAverage: number
   pitchClarityAverage: number
+  disclaimersRequired: number
+  disclaimersShown: number
+  disclaimersMissed: number
   compliancePassRate: number
   // Flow-specific metrics (per PEAK6 spec)
   conversational: {
     routingAccuracy: number
     intakeCompleteness: number
     prefillCompleteness: number
+    disclaimersRequired: number
+    disclaimersShown: number
+    disclaimersMissed: number
     compliancePassRate: number
     testCount: number
   }
@@ -32,6 +38,9 @@ export interface OverallMetrics {
     intakeCompleteness: number
     discountAccuracy: number
     pitchClarity: number
+    disclaimersRequired: number
+    disclaimersShown: number
+    disclaimersMissed: number
     compliancePassRate: number
     testCount: number
   }
@@ -53,81 +62,138 @@ export interface TokenUsageData {
 }
 
 /**
+ * Extract metric values from test results
+ */
+function extractMetricValues<T>(
+  results: TestResult[],
+  extractor: (r: TestResult) => T | undefined,
+  filter?: (value: T) => boolean
+): T[] {
+  const values = results.map(extractor).filter((v): v is T => v !== undefined)
+  return filter ? values.filter(filter) : values
+}
+
+/**
+ * Calculate compliance pass rate percentage
+ */
+function calculateCompliancePassRate(results: TestResult[]): number {
+  const passed = results.filter((r) => r.metrics?.compliancePassed === true).length
+  return results.length > 0 ? Math.round((passed / results.length) * 100) : 0
+}
+
+/**
+ * Calculate aggregate disclaimer metrics
+ */
+function calculateDisclaimerMetrics(results: TestResult[]): {
+  required: number
+  shown: number
+  missed: number
+} {
+  let totalRequired = 0
+  let totalShown = 0
+  let totalMissed = 0
+
+  for (const result of results) {
+    const metrics = result.metrics
+    if (metrics) {
+      totalRequired += metrics.disclaimersRequired ?? 0
+      totalShown += metrics.disclaimersShown ?? 0
+      totalMissed += metrics.disclaimersMissed ?? 0
+    }
+  }
+
+  return {
+    required: totalRequired,
+    shown: totalShown,
+    missed: totalMissed,
+  }
+}
+
+/**
+ * Calculate conversational flow metrics
+ */
+function calculateConversationalMetrics(
+  conversationalResults: TestResult[]
+): OverallMetrics['conversational'] {
+  const routingAccuracies = extractMetricValues(
+    conversationalResults,
+    (r) => r.metrics?.routingAccuracy,
+    (acc) => acc > 0
+  )
+  const intakeCompletenesses = extractMetricValues(
+    conversationalResults,
+    (r) => r.metrics?.intakeCompleteness
+  )
+  const prefillCompletenesses = extractMetricValues(
+    conversationalResults,
+    (r) => r.metrics?.prefillCompleteness
+  )
+
+  const disclaimerMetrics = calculateDisclaimerMetrics(conversationalResults)
+
+  return {
+    routingAccuracy: calculateAverage(routingAccuracies),
+    intakeCompleteness: calculateAverage(intakeCompletenesses),
+    prefillCompleteness: calculateAverage(prefillCompletenesses),
+    disclaimersRequired: disclaimerMetrics.required,
+    disclaimersShown: disclaimerMetrics.shown,
+    disclaimersMissed: disclaimerMetrics.missed,
+    compliancePassRate: calculateCompliancePassRate(conversationalResults),
+    testCount: conversationalResults.length,
+  }
+}
+
+/**
+ * Calculate policy flow metrics
+ */
+function calculatePolicyMetrics(results: TestResult[]): OverallMetrics['policy'] {
+  const intakeCompletenesses = extractMetricValues(results, (r) => r.metrics?.intakeCompleteness)
+  const discountAccuracies = extractMetricValues(results, (r) => r.metrics?.discountAccuracy)
+  const pitchClarities = extractMetricValues(results, (r) => r.metrics?.pitchClarity)
+
+  const disclaimerMetrics = calculateDisclaimerMetrics(results)
+
+  return {
+    intakeCompleteness: calculateAverage(intakeCompletenesses),
+    discountAccuracy: calculateAverage(discountAccuracies),
+    pitchClarity: calculateAverage(pitchClarities),
+    disclaimersRequired: disclaimerMetrics.required,
+    disclaimersShown: disclaimerMetrics.shown,
+    disclaimersMissed: disclaimerMetrics.missed,
+    compliancePassRate: calculateCompliancePassRate(results),
+    testCount: results.length,
+  }
+}
+
+/**
  * Calculate overall metrics from test results
  */
 export function calculateOverallMetrics(results: TestResult[]): OverallMetrics {
   const conversationalResults = filterByTestType(results, 'conversational')
   const policyResults = filterByTestType(results, 'policy')
 
-  // Routing accuracy (conversational only)
-  const routingAccuracies = conversationalResults
-    .map((r) => r.metrics?.routingAccuracy || 0)
-    .filter((acc) => acc > 0)
-  const routingAccuracy = calculateAverage(routingAccuracies)
-
-  // Intake completeness (all results)
-  const intakeCompletenesses = results.map((r) => r.metrics?.intakeCompleteness || 0)
-  const intakeCompleteness = calculateAverage(intakeCompletenesses)
-
-  // Discount accuracy (policy only - filter out N/A values)
-  const discountAccuracies = policyResults.map((r) => r.metrics?.discountAccuracy || 0)
-  const discountAccuracyAverage = calculateAverage(discountAccuracies)
-
-  // Pitch clarity (policy only - filter out N/A values)
-  const pitchClarities = policyResults.map((r) => r.metrics?.pitchClarity || 0)
-  const pitchClarityAverage = calculateAverage(pitchClarities)
-
-  // Compliance pass rate (all results)
-  const compliancePassed = results.filter((r) => r.metrics?.compliancePassed === true).length
-  const compliancePassRate =
-    results.length > 0 ? Math.round((compliancePassed / results.length) * 100) : 0
-
-  // Conversational-specific metrics
-  const convRoutingAccuracies = conversationalResults.map((r) => r.metrics?.routingAccuracy || 0)
-  const convIntakeCompletenesses = conversationalResults.map(
-    (r) => r.metrics?.intakeCompleteness || 0
+  // Overall metrics (across all test types)
+  const routingAccuracies = extractMetricValues(
+    conversationalResults,
+    (r) => r.metrics?.routingAccuracy,
+    (acc) => acc > 0
   )
-  const convPrefillCompletenesses = conversationalResults.map(
-    (r) => r.metrics?.prefillCompleteness || 0
-  )
-  const convCompliancePassed = conversationalResults.filter(
-    (r) => r.metrics?.compliancePassed === true
-  ).length
-  const convCompliancePassRate =
-    conversationalResults.length > 0
-      ? Math.round((convCompliancePassed / conversationalResults.length) * 100)
-      : 0
-
-  // Policy-specific metrics
-  const policyIntakeCompletenesses = policyResults.map((r) => r.metrics?.intakeCompleteness || 0)
-  const policyDiscountAccuracies = policyResults.map((r) => r.metrics?.discountAccuracy || 0)
-  const policyPitchClarities = policyResults.map((r) => r.metrics?.pitchClarity || 0)
-  const policyCompliancePassed = policyResults.filter(
-    (r) => r.metrics?.compliancePassed === true
-  ).length
-  const policyCompliancePassRate =
-    policyResults.length > 0 ? Math.round((policyCompliancePassed / policyResults.length) * 100) : 0
+  const intakeCompletenesses = extractMetricValues(results, (r) => r.metrics?.intakeCompleteness)
+  const discountAccuracies = extractMetricValues(policyResults, (r) => r.metrics?.discountAccuracy)
+  const pitchClarities = extractMetricValues(policyResults, (r) => r.metrics?.pitchClarity)
+  const overallDisclaimerMetrics = calculateDisclaimerMetrics(results)
 
   return {
-    routingAccuracy,
-    intakeCompleteness,
-    discountAccuracyAverage,
-    pitchClarityAverage,
-    compliancePassRate,
-    conversational: {
-      routingAccuracy: calculateAverage(convRoutingAccuracies),
-      intakeCompleteness: calculateAverage(convIntakeCompletenesses),
-      prefillCompleteness: calculateAverage(convPrefillCompletenesses),
-      compliancePassRate: convCompliancePassRate,
-      testCount: conversationalResults.length,
-    },
-    policy: {
-      intakeCompleteness: calculateAverage(policyIntakeCompletenesses),
-      discountAccuracy: calculateAverage(policyDiscountAccuracies),
-      pitchClarity: calculateAverage(policyPitchClarities),
-      compliancePassRate: policyCompliancePassRate,
-      testCount: policyResults.length,
-    },
+    routingAccuracy: calculateAverage(routingAccuracies),
+    intakeCompleteness: calculateAverage(intakeCompletenesses),
+    discountAccuracyAverage: calculateAverage(discountAccuracies),
+    pitchClarityAverage: calculateAverage(pitchClarities),
+    disclaimersRequired: overallDisclaimerMetrics.required,
+    disclaimersShown: overallDisclaimerMetrics.shown,
+    disclaimersMissed: overallDisclaimerMetrics.missed,
+    compliancePassRate: calculateCompliancePassRate(results),
+    conversational: calculateConversationalMetrics(conversationalResults),
+    policy: calculatePolicyMetrics(policyResults),
   }
 }
 
@@ -152,31 +218,6 @@ export function calculatePerStateRouting(results: TestResult[]): Record<string, 
     conversationalResults,
     (r) => r.testCase.state,
     (r) => r.metrics?.routingAccuracy === 100
-  )
-}
-
-/**
- * Calculate field completeness (simplified - returns average for all fields)
- */
-export function calculateFieldCompleteness(results: TestResult[]): Record<string, number> {
-  const intakeCompletenesses = results.map((r) => r.metrics?.intakeCompleteness || 0)
-  const average = calculateAverage(intakeCompletenesses)
-
-  return {
-    state: average,
-    productType: average,
-    age: average,
-    cleanRecord3Yr: average,
-  }
-}
-
-/**
- * Extract trace from API response
- */
-function extractTrace(response: unknown): DecisionTrace | undefined {
-  return (
-    (response as IntakeResult | PolicyAnalysisResult).trace ||
-    (response as { trace?: DecisionTrace }).trace
   )
 }
 

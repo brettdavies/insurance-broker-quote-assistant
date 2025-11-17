@@ -43,6 +43,40 @@ export function setupEnvironmentVariables(config: EvalEnvironmentConfig = {}): {
 }
 
 /**
+ * Execute cleanup for processes (shared logic)
+ */
+function executeCleanup(processes: ChildProcess[], exitCode: number): void {
+  // Kill all processes
+  for (const proc of processes) {
+    try {
+      proc.kill('SIGTERM')
+    } catch {
+      // Process may already be dead
+    }
+  }
+
+  // Kill any remaining bun processes using kill-eval-servers.sh
+  try {
+    const killScript = join(import.meta.dir, '..', 'kill-eval-servers.sh')
+    execSync(`bash ${killScript}`, { stdio: 'inherit' })
+  } catch (error) {
+    console.error('⚠️  Error running kill-eval-servers.sh:', error)
+  }
+
+  // Force kill after 2 seconds if not terminated
+  setTimeout(() => {
+    for (const proc of processes) {
+      try {
+        proc.kill('SIGKILL')
+      } catch {
+        // Process already dead
+      }
+    }
+    process.exit(exitCode)
+  }, 2000)
+}
+
+/**
  * Wait for servers to be ready by checking health endpoints
  */
 export async function waitForServers(
@@ -127,25 +161,7 @@ export async function startEvalEnvironment(
   // Create cleanup function
   const cleanup = (exitCode = 0) => {
     console.log('\n🛑 Shutting down evaluation environment...')
-    evalEnvProcess.kill('SIGTERM')
-
-    // Kill any remaining bun processes using kill-eval-servers.sh
-    try {
-      const killScript = join(evalEnvDir, 'kill-eval-servers.sh')
-      execSync(`bash ${killScript}`, { stdio: 'inherit' })
-    } catch (error) {
-      console.error('⚠️  Error running kill-eval-servers.sh:', error)
-    }
-
-    // Force kill after 2 seconds if not terminated
-    setTimeout(() => {
-      try {
-        evalEnvProcess.kill('SIGKILL')
-      } catch {
-        // Process already dead
-      }
-      process.exit(exitCode)
-    }, 2000)
+    executeCleanup([evalEnvProcess], exitCode)
   }
 
   // Wait for servers to be ready
@@ -171,34 +187,6 @@ export async function startEvalEnvironment(
 export function createCleanupHandler(processes: ChildProcess[]): (exitCode?: number) => void {
   return (exitCode = 0) => {
     console.log('\n🛑 Shutting down evaluation environment...')
-
-    // Kill all processes
-    for (const proc of processes) {
-      try {
-        proc.kill('SIGTERM')
-      } catch {
-        // Process may already be dead
-      }
-    }
-
-    // Kill any remaining bun processes using kill-eval-servers.sh
-    try {
-      const killScript = join(import.meta.dir, '..', 'kill-eval-servers.sh')
-      execSync(`bash ${killScript}`, { stdio: 'inherit' })
-    } catch (error) {
-      console.error('⚠️  Error running kill-eval-servers.sh:', error)
-    }
-
-    // Force kill after 2 seconds if not terminated
-    setTimeout(() => {
-      for (const proc of processes) {
-        try {
-          proc.kill('SIGKILL')
-        } catch {
-          // Process already dead
-        }
-      }
-      process.exit(exitCode)
-    }, 2000)
+    executeCleanup(processes, exitCode)
   }
 }

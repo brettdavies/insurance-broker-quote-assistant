@@ -5,11 +5,11 @@
  * Follows SRP (Single Responsibility Principle).
  */
 
-import type { IntakeResult, PolicyAnalysisResult } from '@repo/shared'
 import type { TestResult } from '../types'
 import { METRIC_THRESHOLDS, STATUS } from './report-constants'
 import type { OverallMetrics, TokenUsageData } from './report-metrics-aggregator'
-import { formatCurrency, formatPercentage, formatTableRows } from './report-utils'
+import { extractPrefillPacket, getTestCaseFileName } from './shared/data-extractors'
+import { formatCurrency, formatPercentage, formatTableRows } from './shared/formatters'
 
 /**
  * Build all template replacements for markdown report
@@ -45,19 +45,44 @@ function buildTimestampReplacement(timestamp: string): Record<string, string> {
 }
 
 /**
+ * Calculate status based on metric value and threshold
+ */
+function calculateStatus(metric: number, threshold: number): string {
+  return metric >= threshold ? STATUS.PASS : STATUS.FAIL
+}
+
+/**
+ * Format disclaimer metrics for display
+ */
+function formatDisclaimerMetrics(required: number, shown: number, missed: number): string {
+  if (required === 0) return '-'
+  // Calculate how many required disclaimers were actually found
+  // (shown may include extra disclaimers, so we use required - missed)
+  const found = required - missed
+  return `${found}/${required} (${missed} missed)`
+}
+
+/**
+ * Calculate disclaimer status (pass if no missed disclaimers)
+ */
+function calculateDisclaimerStatus(missed: number): string {
+  return missed === 0 ? STATUS.PASS : STATUS.FAIL
+}
+
+/**
  * Build metrics replacements
  */
 function buildMetricsReplacements(metrics: OverallMetrics): Record<string, string> {
-  const routingStatus =
-    metrics.routingAccuracy >= METRIC_THRESHOLDS.ROUTING_ACCURACY ? STATUS.PASS : STATUS.FAIL
-  const intakeStatus =
-    metrics.intakeCompleteness >= METRIC_THRESHOLDS.INTAKE_COMPLETENESS ? STATUS.PASS : STATUS.FAIL
-  const discountStatus =
-    metrics.discountAccuracyAverage >= METRIC_THRESHOLDS.DISCOUNT_ACCURACY
-      ? STATUS.PASS
-      : STATUS.FAIL
-  const pitchStatus =
-    metrics.pitchClarityAverage >= METRIC_THRESHOLDS.PITCH_CLARITY ? STATUS.PASS : STATUS.FAIL
+  const routingStatus = calculateStatus(metrics.routingAccuracy, METRIC_THRESHOLDS.ROUTING_ACCURACY)
+  const intakeStatus = calculateStatus(
+    metrics.intakeCompleteness,
+    METRIC_THRESHOLDS.INTAKE_COMPLETENESS
+  )
+  const discountStatus = calculateStatus(
+    metrics.discountAccuracyAverage,
+    METRIC_THRESHOLDS.DISCOUNT_ACCURACY
+  )
+  const pitchStatus = calculateStatus(metrics.pitchClarityAverage, METRIC_THRESHOLDS.PITCH_CLARITY)
   const complianceStatus =
     metrics.compliancePassRate === METRIC_THRESHOLDS.COMPLIANCE_PASS_RATE
       ? STATUS.PASS
@@ -88,34 +113,91 @@ function buildMetricsReplacements(metrics: OverallMetrics): Record<string, strin
 }
 
 /**
+ * Build conversational flow status replacements
+ */
+function buildConversationalStatusReplacements(
+  metrics: OverallMetrics['conversational'],
+  hasTests: boolean
+): Record<string, string> {
+  if (!hasTests) {
+    return {
+      convRoutingStatus: '-',
+      convIntakeStatus: '-',
+      convPrefillStatus: '-',
+      convDisclaimersStatus: '-',
+      convComplianceStatus: '-',
+    }
+  }
+
+  return {
+    convRoutingStatus: calculateStatus(metrics.routingAccuracy, METRIC_THRESHOLDS.ROUTING_ACCURACY),
+    convIntakeStatus: calculateStatus(
+      metrics.intakeCompleteness,
+      METRIC_THRESHOLDS.INTAKE_COMPLETENESS
+    ),
+    convPrefillStatus: calculateStatus(
+      metrics.prefillCompleteness,
+      METRIC_THRESHOLDS.INTAKE_COMPLETENESS
+    ),
+    convDisclaimersStatus: calculateDisclaimerStatus(metrics.disclaimersMissed),
+    convComplianceStatus:
+      metrics.compliancePassRate === METRIC_THRESHOLDS.COMPLIANCE_PASS_RATE
+        ? STATUS.PASS
+        : STATUS.FAIL,
+  }
+}
+
+/**
+ * Build policy flow status replacements
+ */
+function buildPolicyStatusReplacements(
+  metrics: OverallMetrics['policy'],
+  hasTests: boolean
+): Record<string, string> {
+  if (!hasTests) {
+    return {
+      policyIntakeStatus: '-',
+      policyDiscountStatus: '-',
+      policyPitchStatus: '-',
+      policyDisclaimersStatus: '-',
+      policyComplianceStatus: '-',
+    }
+  }
+
+  return {
+    policyIntakeStatus: calculateStatus(
+      metrics.intakeCompleteness,
+      METRIC_THRESHOLDS.INTAKE_COMPLETENESS
+    ),
+    policyDiscountStatus: calculateStatus(
+      metrics.discountAccuracy,
+      METRIC_THRESHOLDS.DISCOUNT_ACCURACY
+    ),
+    policyPitchStatus: calculateStatus(metrics.pitchClarity, METRIC_THRESHOLDS.PITCH_CLARITY),
+    policyDisclaimersStatus: calculateDisclaimerStatus(metrics.disclaimersMissed),
+    policyComplianceStatus:
+      metrics.compliancePassRate === METRIC_THRESHOLDS.COMPLIANCE_PASS_RATE
+        ? STATUS.PASS
+        : STATUS.FAIL,
+  }
+}
+
+/**
  * Build flow-specific metrics replacements (conversational vs policy)
  */
 function buildFlowSpecificMetricsReplacements(metrics: OverallMetrics): Record<string, string> {
-  // Check if conversational tests were run
+  // Check if tests were run
   const hasConversationalTests = metrics.conversational.testCount > 0
+  const hasPolicyTests = metrics.policy.testCount > 0
 
-  // Conversational flow metrics (show '-' if no tests)
-  const convRoutingStatus = hasConversationalTests
-    ? metrics.conversational.routingAccuracy >= METRIC_THRESHOLDS.ROUTING_ACCURACY
-      ? STATUS.PASS
-      : STATUS.FAIL
-    : '-'
-  const convIntakeStatus = hasConversationalTests
-    ? metrics.conversational.intakeCompleteness >= METRIC_THRESHOLDS.INTAKE_COMPLETENESS
-      ? STATUS.PASS
-      : STATUS.FAIL
-    : '-'
-  const convPrefillStatus = hasConversationalTests
-    ? metrics.conversational.prefillCompleteness >= METRIC_THRESHOLDS.INTAKE_COMPLETENESS
-      ? STATUS.PASS
-      : STATUS.FAIL
-    : '-'
-  const convComplianceStatus = hasConversationalTests
-    ? metrics.conversational.compliancePassRate === METRIC_THRESHOLDS.COMPLIANCE_PASS_RATE
-      ? STATUS.PASS
-      : STATUS.FAIL
-    : '-'
+  // Build status replacements
+  const conversationalStatuses = buildConversationalStatusReplacements(
+    metrics.conversational,
+    hasConversationalTests
+  )
+  const policyStatuses = buildPolicyStatusReplacements(metrics.policy, hasPolicyTests)
 
+  // Build overall status messages
   const convOverallStatus = hasConversationalTests
     ? metrics.conversational.routingAccuracy >= METRIC_THRESHOLDS.ROUTING_ACCURACY &&
       metrics.conversational.intakeCompleteness >= METRIC_THRESHOLDS.INTAKE_COMPLETENESS &&
@@ -124,31 +206,6 @@ function buildFlowSpecificMetricsReplacements(metrics: OverallMetrics): Record<s
       ? '✅ All conversational metrics meet target thresholds'
       : '❌ Some conversational metrics below thresholds'
     : 'No conversational tests run'
-
-  // Check if policy tests were run
-  const hasPolicyTests = metrics.policy.testCount > 0
-
-  // Policy flow metrics (show '-' if no tests)
-  const policyIntakeStatus = hasPolicyTests
-    ? metrics.policy.intakeCompleteness >= METRIC_THRESHOLDS.INTAKE_COMPLETENESS
-      ? STATUS.PASS
-      : STATUS.FAIL
-    : '-'
-  const policyDiscountStatus = hasPolicyTests
-    ? metrics.policy.discountAccuracy >= METRIC_THRESHOLDS.DISCOUNT_ACCURACY
-      ? STATUS.PASS
-      : STATUS.FAIL
-    : '-'
-  const policyPitchStatus = hasPolicyTests
-    ? metrics.policy.pitchClarity >= METRIC_THRESHOLDS.PITCH_CLARITY
-      ? STATUS.PASS
-      : STATUS.FAIL
-    : '-'
-  const policyComplianceStatus = hasPolicyTests
-    ? metrics.policy.compliancePassRate === METRIC_THRESHOLDS.COMPLIANCE_PASS_RATE
-      ? STATUS.PASS
-      : STATUS.FAIL
-    : '-'
 
   const policyOverallStatus = hasPolicyTests
     ? metrics.policy.intakeCompleteness >= METRIC_THRESHOLDS.INTAKE_COMPLETENESS &&
@@ -160,7 +217,7 @@ function buildFlowSpecificMetricsReplacements(metrics: OverallMetrics): Record<s
     : 'No policy tests run'
 
   return {
-    // Conversational flow
+    // Conversational flow metrics
     convRoutingAccuracy: hasConversationalTests
       ? `${metrics.conversational.routingAccuracy}%`
       : '-',
@@ -170,25 +227,43 @@ function buildFlowSpecificMetricsReplacements(metrics: OverallMetrics): Record<s
     convPrefillCompleteness: hasConversationalTests
       ? `${metrics.conversational.prefillCompleteness}%`
       : '-',
+    convDisclaimersExpected: hasConversationalTests
+      ? metrics.conversational.disclaimersRequired > 0
+        ? `${metrics.conversational.disclaimersRequired}/${metrics.conversational.disclaimersRequired}`
+        : '-'
+      : '-',
+    convDisclaimersActual: hasConversationalTests
+      ? formatDisclaimerMetrics(
+          metrics.conversational.disclaimersRequired,
+          metrics.conversational.disclaimersShown,
+          metrics.conversational.disclaimersMissed
+        )
+      : '-',
     convCompliancePassRate: hasConversationalTests
       ? `${metrics.conversational.compliancePassRate}%`
       : '-',
     convTestCount: metrics.conversational.testCount.toString(),
-    convRoutingStatus,
-    convIntakeStatus,
-    convPrefillStatus,
-    convComplianceStatus,
+    ...conversationalStatuses,
     convOverallStatus,
-    // Policy flow
+    // Policy flow metrics
     policyIntakeCompleteness: hasPolicyTests ? `${metrics.policy.intakeCompleteness}%` : '-',
     policyDiscountAccuracy: hasPolicyTests ? `${metrics.policy.discountAccuracy}%` : '-',
     policyPitchClarity: hasPolicyTests ? `${metrics.policy.pitchClarity}%` : '-',
+    policyDisclaimersExpected: hasPolicyTests
+      ? metrics.policy.disclaimersRequired > 0
+        ? `${metrics.policy.disclaimersRequired}/${metrics.policy.disclaimersRequired}`
+        : '-'
+      : '-',
+    policyDisclaimersActual: hasPolicyTests
+      ? formatDisclaimerMetrics(
+          metrics.policy.disclaimersRequired,
+          metrics.policy.disclaimersShown,
+          metrics.policy.disclaimersMissed
+        )
+      : '-',
     policyCompliancePassRate: hasPolicyTests ? `${metrics.policy.compliancePassRate}%` : '-',
     policyTestCount: metrics.policy.testCount.toString(),
-    policyIntakeStatus,
-    policyDiscountStatus,
-    policyPitchStatus,
-    policyComplianceStatus,
+    ...policyStatuses,
     policyOverallStatus,
   }
 }
@@ -221,31 +296,6 @@ function buildTableReplacements(
 }
 
 /**
- * Extract prefill packet from result
- */
-function extractPrefillPacket(result: TestResult): string {
-  if (!result.actualResponse) return '{}'
-
-  const response = result.actualResponse as IntakeResult | PolicyAnalysisResult
-
-  // IntakeResult has prefill at top level
-  if ('prefill' in response) {
-    return JSON.stringify(response.prefill, null, 2)
-  }
-
-  // PolicyAnalysisResult may have prefill in different location
-  if (typeof response === 'object' && response !== null) {
-    for (const key of Object.keys(response)) {
-      if (key.toLowerCase().includes('prefill')) {
-        return JSON.stringify(response[key as keyof typeof response], null, 2)
-      }
-    }
-  }
-
-  return '{}'
-}
-
-/**
  * Build test case details replacements
  */
 function buildTestCaseDetailsReplacements(testResults: TestResult[]): Record<string, string> {
@@ -254,13 +304,7 @@ function buildTestCaseDetailsReplacements(testResults: TestResult[]): Record<str
       const status = result.passed ? '✅ PASS' : '❌ FAIL'
 
       // Get file name for individual report link
-      const testId = result.testCase.id
-      let fileName = testId
-      if (testId.startsWith('conv-')) {
-        fileName = `conversational-${testId.replace('conv-', '')}`
-      } else if (testId.startsWith('policy-')) {
-        fileName = testId
-      }
+      const fileName = getTestCaseFileName(result.testCase)
 
       const detailLink = `[View Detailed Report →](./${fileName}.md)`
 

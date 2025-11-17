@@ -3,6 +3,8 @@
  *
  * Reusable utility functions for report generation.
  * Follows DRY principle (Don't Repeat Yourself).
+ *
+ * Note: Formatting functions have been moved to shared/formatters.ts
  */
 
 import type { TestResult } from '../types'
@@ -50,39 +52,10 @@ export function aggregateAccuracy(
 }
 
 /**
- * Format table rows from a record of data
- *
- * @param data - Record of data to format
- * @param formatter - Function to format each row
- * @returns Markdown table rows joined with newlines
- */
-export function formatTableRows<T>(
-  data: Record<string, T>,
-  formatter: (key: string, value: T) => string
-): string {
-  const rows = Object.entries(data).map(([key, value]) => formatter(key, value))
-  return rows.length > 0 ? rows.join('\n') : ''
-}
-
-/**
  * Parse ISO timestamp to milliseconds
  */
 export function parseTimestamp(timestamp: string): number {
   return new Date(timestamp).getTime()
-}
-
-/**
- * Format currency with 4 decimal places
- */
-export function formatCurrency(amount: number): string {
-  return `$${amount.toFixed(4)}`
-}
-
-/**
- * Format percentage value
- */
-export function formatPercentage(value: number): string {
-  return `${value}%`
 }
 
 /**

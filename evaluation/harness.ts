@@ -94,8 +94,7 @@ async function main() {
  * Individual reports are generated immediately after each test completes
  * for better UX (users can read results while other tests are running).
  *
- * Uses a shared browser instance across all tests for 60x faster execution
- * and proper state isolation via browser contexts.
+ * Browser is only created if needed (currently no tests require it, but kept for future E2E tests).
  */
 async function runAllTestCases(testCases: TestResult['testCase'][]): Promise<TestResult[]> {
   const results: TestResult[] = []
@@ -105,18 +104,26 @@ async function runAllTestCases(testCases: TestResult['testCase'][]): Promise<Tes
     // Directory might already exist, ignore
   })
 
-  // Create shared browser instance for all tests (60x faster than launching per test)
-  console.log('🌐 Launching shared browser instance...')
+  // Check if any tests need a browser (currently none do, but kept for future E2E tests)
+  const needsBrowser = testCases.some((tc) => {
+    // Add logic here if any test types need browser in the future
+    return false
+  })
+
+  // Create shared browser instance only if needed
   let browser:
     | Awaited<ReturnType<typeof import('./services/test-runner-common').createBrowser>>
     | undefined
-  try {
-    const { createBrowser } = await import('./services/test-runner-common')
-    browser = await createBrowser()
-    console.log('✅ Shared browser ready (will create fresh contexts per test)')
-  } catch (error) {
-    console.warn('⚠️  Failed to create shared browser, will fallback to per-test browsers')
-    console.warn(error)
+  if (needsBrowser) {
+    console.log('🌐 Launching shared browser instance...')
+    try {
+      const { createBrowser } = await import('./services/test-runner-common')
+      browser = await createBrowser()
+      console.log('✅ Shared browser ready')
+    } catch (error) {
+      console.warn('⚠️  Failed to create shared browser')
+      console.warn(error)
+    }
   }
 
   try {
@@ -140,7 +147,7 @@ async function runAllTestCases(testCases: TestResult['testCase'][]): Promise<Tes
       }
     }
   } finally {
-    // Always close the shared browser
+    // Always close the shared browser if it was created
     if (browser) {
       console.log('\n🔒 Closing shared browser...')
       await browser.close()

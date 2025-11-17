@@ -8,6 +8,7 @@
 
 import {
   type IntakeResult,
+  type Opportunity,
   type PolicyAnalysisResult,
   type PolicySummary,
   type RouteDecision,
@@ -23,6 +24,9 @@ export interface TestMetrics {
   pitchClarity: number // Policy only (N/A for conversational = 0)
   prefillCompleteness: number // Conversational only (N/A for policy = 100)
   compliancePassed: boolean // Both flows
+  disclaimersRequired?: number // Number of required disclaimers
+  disclaimersShown?: number // Number of disclaimers actually shown
+  disclaimersMissed?: number // Number of required disclaimers that were missed
 }
 
 /**
@@ -37,6 +41,9 @@ export function calculateMetrics(testCase: TestCase, actualResponse: unknown): T
       pitchClarity: 0,
       prefillCompleteness: 0,
       compliancePassed: false,
+      disclaimersRequired: 0,
+      disclaimersShown: 0,
+      disclaimersMissed: 0,
     }
   }
 
@@ -55,10 +62,14 @@ function calculateConversationalMetrics(testCase: TestCase, response: IntakeResu
   const intakeCompleteness = calculateFieldCompleteness(testCase.expectedProfile, response.profile)
   const prefillCompleteness = calculatePrefillCompleteness(response.prefill)
 
+  // Calculate disclaimer metrics
+  const disclaimerMetrics = calculateDisclaimerMetrics(
+    testCase.expectedDisclaimers,
+    response.disclaimers
+  )
+
   // Compliance check: both complianceValidated AND expected disclaimers must be present
-  const compliancePassed =
-    response.complianceValidated === true &&
-    verifyDisclaimers(testCase.expectedDisclaimers, response.disclaimers)
+  const compliancePassed = response.complianceValidated === true && disclaimerMetrics.passed
 
   return {
     routingAccuracy,
@@ -67,6 +78,9 @@ function calculateConversationalMetrics(testCase: TestCase, response: IntakeResu
     pitchClarity: 0, // N/A for conversational (not required by spec)
     prefillCompleteness,
     compliancePassed,
+    disclaimersRequired: disclaimerMetrics.required,
+    disclaimersShown: disclaimerMetrics.shown,
+    disclaimersMissed: disclaimerMetrics.missed,
   }
 }
 
@@ -85,10 +99,14 @@ function calculatePolicyMetrics(testCase: TestCase, response: PolicyAnalysisResu
   )
   const pitchClarity = scorePitchClarity(response.pitch || '', response.opportunities || [])
 
+  // Calculate disclaimer metrics
+  const disclaimerMetrics = calculateDisclaimerMetrics(
+    testCase.expectedDisclaimers,
+    response.disclaimers
+  )
+
   // Compliance check: both complianceValidated AND expected disclaimers must be present
-  const compliancePassed =
-    response.complianceValidated === true &&
-    verifyDisclaimers(testCase.expectedDisclaimers, response.disclaimers)
+  const compliancePassed = response.complianceValidated === true && disclaimerMetrics.passed
 
   return {
     routingAccuracy: 100, // N/A for policy analysis (not applicable)
@@ -97,6 +115,9 @@ function calculatePolicyMetrics(testCase: TestCase, response: PolicyAnalysisResu
     pitchClarity,
     prefillCompleteness: 100, // N/A for policy (not applicable)
     compliancePassed,
+    disclaimersRequired: disclaimerMetrics.required,
+    disclaimersShown: disclaimerMetrics.shown,
+    disclaimersMissed: disclaimerMetrics.missed,
   }
 }
 
@@ -124,8 +145,8 @@ function calculateRoutingAccuracy(
  * Calculate discount detection accuracy by comparing expected vs actual discounts
  */
 function calculateDiscountAccuracy(
-  expectedOpportunities?: Array<{ discount: string; percentage?: number; annualSavings?: number }>,
-  actualOpportunities?: Array<{ discountName: string; percentage?: number; annualSavings?: number }>
+  expectedOpportunities?: Opportunity[],
+  actualOpportunities?: Opportunity[]
 ): number {
   // If no expected discounts, consider it 100% accurate (nothing to detect)
   if (!expectedOpportunities || expectedOpportunities.length === 0) return 100
@@ -133,12 +154,18 @@ function calculateDiscountAccuracy(
   // If expected discounts but got none, 0% accuracy
   if (!actualOpportunities || actualOpportunities.length === 0) return 0
 
+  // Filter out expected opportunities without discount names
+  const validExpected = expectedOpportunities.filter((expected) => expected.discount)
+
+  if (validExpected.length === 0) return 100
+
   // Count how many expected discounts were detected
-  const matchedCount = expectedOpportunities.filter((expected) =>
-    actualOpportunities.some((actual) => actual.discountName === expected.discount)
+  // Match by discount name
+  const matchedCount = validExpected.filter((expected) =>
+    actualOpportunities.some((actual) => actual.discount === expected.discount)
   ).length
 
-  return Math.round((matchedCount / expectedOpportunities.length) * 100)
+  return Math.round((matchedCount / validExpected.length) * 100)
 }
 
 /**
@@ -234,22 +261,37 @@ function calculatePrefillCompleteness(prefill: unknown): number {
 }
 
 /**
- * Verify that expected disclaimers are present in actual disclaimers
- * Uses substring matching to allow for partial matches
+ * Calculate disclaimer counts and verification
  *
  * @param expectedDisclaimers - Array of expected disclaimer substrings from test case
  * @param actualDisclaimers - Array of actual disclaimers from API response
- * @returns true if all expected disclaimers are present (or no expected disclaimers), false otherwise
+ * @returns Object with counts and pass/fail status
  */
-function verifyDisclaimers(expectedDisclaimers?: string[], actualDisclaimers?: string[]): boolean {
-  // If no expected disclaimers, pass (nothing to verify)
-  if (!expectedDisclaimers || expectedDisclaimers.length === 0) return true
+function calculateDisclaimerMetrics(
+  expectedDisclaimers?: string[],
+  actualDisclaimers?: string[]
+): {
+  required: number
+  shown: number
+  missed: number
+  passed: boolean
+} {
+  const required = expectedDisclaimers?.length || 0
+  const shown = actualDisclaimers?.length || 0
 
-  // If expected disclaimers but no actual disclaimers, fail
-  if (!actualDisclaimers || actualDisclaimers.length === 0) return false
+  // Calculate missed disclaimers (required but not found in shown)
+  const missed =
+    required > 0
+      ? expectedDisclaimers?.filter(
+          (requiredDisclaimer) =>
+            !actualDisclaimers?.some((shownDisclaimer) =>
+              shownDisclaimer.includes(requiredDisclaimer)
+            )
+        ).length
+      : 0
 
-  // Check if all expected disclaimers are present in actual disclaimers (substring matching)
-  return expectedDisclaimers.every((expectedDisclaimer) =>
-    actualDisclaimers.some((actualDisclaimer) => actualDisclaimer.includes(expectedDisclaimer))
-  )
+  // Pass if all required disclaimers are present (or no required disclaimers)
+  const passed = required === 0 || missed === 0
+
+  return { required, shown, missed, passed }
 }

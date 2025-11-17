@@ -4,14 +4,8 @@
  * Validates that evaluation metrics meet target thresholds.
  */
 
+import { METRIC_THRESHOLDS } from './report-constants'
 import type { EvaluationReport } from './report-generator'
-
-const TARGETS = {
-  routingAccuracy: 90,
-  intakeCompleteness: 95,
-  pitchClarity: 85,
-  compliancePassRate: 100,
-} as const
 
 /**
  * Validate that metrics meet target thresholds
@@ -20,31 +14,31 @@ export function validateMetrics(report: EvaluationReport): void {
   const { overallMetrics } = report
   const errors: string[] = []
 
-  if (overallMetrics.routingAccuracy < TARGETS.routingAccuracy) {
+  if (overallMetrics.routingAccuracy < METRIC_THRESHOLDS.ROUTING_ACCURACY) {
     errors.push(
-      `Routing accuracy ${overallMetrics.routingAccuracy}% below ${TARGETS.routingAccuracy}% threshold`
+      `Routing accuracy ${overallMetrics.routingAccuracy}% below ${METRIC_THRESHOLDS.ROUTING_ACCURACY}% threshold`
     )
   }
 
-  if (overallMetrics.intakeCompleteness < TARGETS.intakeCompleteness) {
+  if (overallMetrics.intakeCompleteness < METRIC_THRESHOLDS.INTAKE_COMPLETENESS) {
     errors.push(
-      `Intake completeness ${overallMetrics.intakeCompleteness}% below ${TARGETS.intakeCompleteness}% threshold`
+      `Intake completeness ${overallMetrics.intakeCompleteness}% below ${METRIC_THRESHOLDS.INTAKE_COMPLETENESS}% threshold`
     )
   }
 
   // Only validate pitch clarity for policy tests (not conversational)
   if (
     overallMetrics.policy.testCount > 0 &&
-    overallMetrics.pitchClarityAverage < TARGETS.pitchClarity
+    overallMetrics.pitchClarityAverage < METRIC_THRESHOLDS.PITCH_CLARITY
   ) {
     errors.push(
-      `Pitch clarity ${overallMetrics.pitchClarityAverage}% below ${TARGETS.pitchClarity}% threshold`
+      `Pitch clarity ${overallMetrics.pitchClarityAverage}% below ${METRIC_THRESHOLDS.PITCH_CLARITY}% threshold`
     )
   }
 
-  if (overallMetrics.compliancePassRate < TARGETS.compliancePassRate) {
+  if (overallMetrics.compliancePassRate < METRIC_THRESHOLDS.COMPLIANCE_PASS_RATE) {
     errors.push(
-      `Compliance pass rate ${overallMetrics.compliancePassRate}% below ${TARGETS.compliancePassRate}% threshold`
+      `Compliance pass rate ${overallMetrics.compliancePassRate}% below ${METRIC_THRESHOLDS.COMPLIANCE_PASS_RATE}% threshold`
     )
   }
 

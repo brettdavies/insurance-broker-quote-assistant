@@ -58,60 +58,6 @@ export async function createBrowserContext(browser: Browser): Promise<BrowserCon
 }
 
 /**
- * Launch browser with console logging enabled
- *
- * @deprecated Use createBrowser() + createBrowserContext() for better performance
- */
-export async function launchBrowser(): Promise<BrowserContext> {
-  const browser = await chromium.launch({ headless: false })
-  const page = await browser.newPage()
-
-  // Capture all console logs
-  const consoleLogs: Array<{ type: string; text: string }> = []
-  page.on('console', (msg) => {
-    const text = msg.text()
-    const type = msg.type()
-    consoleLogs.push({ type, text })
-    // Also log to Node.js console for real-time viewing
-    console.log(`[Browser ${type.toUpperCase()}]`, text)
-  })
-
-  return {
-    page,
-    close: async () => await browser.close(),
-    consoleLogs,
-  }
-}
-
-/**
- * Take screenshot for debugging
- */
-export async function takeScreenshot(
-  page: Page,
-  filename: string,
-  message?: string
-): Promise<void> {
-  await page.screenshot({ path: `.ai/${filename}` })
-  if (message) {
-    console.log(`📸 ${message}`)
-  }
-}
-
-/**
- * Print all captured console logs
- */
-export function printConsoleLogs(consoleLogs: Array<{ type: string; text: string }>): void {
-  console.log(`\n${'='.repeat(80)}`)
-  console.log('📋 BROWSER CONSOLE LOGS:')
-  console.log('='.repeat(80))
-  for (const log of consoleLogs) {
-    console.log(`[${log.type.toUpperCase()}] ${log.text}`)
-  }
-  console.log('='.repeat(80))
-  console.log(`Total console messages: ${consoleLogs.length}\n`)
-}
-
-/**
  * API fetch wrapper with error handling
  */
 export async function fetchAPI<T>(
@@ -127,10 +73,30 @@ export async function fetchAPI<T>(
     ...(body ? { body: JSON.stringify(body) } : {}),
   })
 
+  // Get response body as text first (in case JSON parsing fails)
+  const responseText = await response.text()
+
   if (!response.ok) {
-    const error = await response.json()
-    throw new Error(`API error: ${error.error?.message || response.statusText}`)
+    // Try to parse error response as JSON
+    let errorMessage = response.statusText
+    try {
+      const error = JSON.parse(responseText)
+      errorMessage = error.error?.message || error.message || response.statusText
+    } catch {
+      // If JSON parsing fails, use response text or status text
+      errorMessage = responseText || response.statusText
+    }
+    throw new Error(
+      `API error (${response.status}): ${errorMessage}\nResponse body preview: ${responseText.substring(0, 500)}`
+    )
   }
 
-  return (await response.json()) as T
+  // Try to parse response as JSON
+  try {
+    return JSON.parse(responseText) as T
+  } catch (error) {
+    throw new Error(
+      `Failed to parse JSON response from ${url}\nStatus: ${response.status} ${response.statusText}\nResponse body preview: ${responseText.substring(0, 500)}`
+    )
+  }
 }
