@@ -40,6 +40,18 @@
           }
         }
       }
+    },
+    {
+      "include": ["**/PrefillViewerModal.tsx"],
+      "linter": {
+        "rules": {
+          "suspicious": {
+            "noArrayIndexKey": {
+              "level": "off"
+            }
+          }
+        }
+      }
     }
   ],
   "javascript": {

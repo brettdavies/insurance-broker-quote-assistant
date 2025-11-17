@@ -300,7 +300,7 @@
    - Corrected `dependents` mapping (maps to `householdSize`, not separate field)
 
 2. **missing-fields-priority.test.ts** - Fixed message format:
-   - Changed from `state: CA productLine: auto` (with spaces) to `s:CA l:auto` (key-value format)
+   - Changed from `state: CA productType: auto` (with spaces) to `s:CA l:auto` (key-value format)
 
 3. **intake-completeness-evaluation.test.ts** - Fixed profile defaults:
    - Explicitly set undefined for fields that should be missing in progressive disclosure test

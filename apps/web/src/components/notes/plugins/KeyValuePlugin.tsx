@@ -1,523 +1,406 @@
 /**
- * KeyValuePlugin - Lexical plugin for key-value pill transformation
+ * KeyValuePlugin - Lexical plugin for unified field extraction
  *
- * Detects key-value syntax (e.g., k:5, deps:4) in text nodes and transforms
- * them into PillNode instances with proper validation.
+ * Triggers extraction ONLY on delimiter keys (space, comma, period, enter).
+ * Extracts from FULL editor content in a SINGLE call to the centralized engine.
+ * Uses the SAME extraction logic as backend for consistency.
  *
- * Uses SINGLE transformation path (mutation listener) to follow DRY/STAR principles.
+ * Single Responsibility: Plugin registration and delimiter-based extraction triggering
  */
 
-import {
-  type FieldCommand,
-  MULTI_WORD_FIELDS,
-  NUMERIC_FIELDS,
-  SPECIAL_CHAR_FIELDS,
-} from '@/config/shortcuts'
-import { parseKeyValueSyntax } from '@/lib/key-value-parser'
+import { parseKeyValueSyntax } from '@/lib/pill-parser'
 import { useLexicalComposerContext } from '@lexical/react/LexicalComposerContext'
+import type { UserProfile } from '@repo/shared'
 import {
-  $getNodeByKey,
+  getFieldNameFromAlias,
+  normalizeFieldName,
+  normalizeFieldValue,
+  unifiedFieldMetadata,
+} from '@repo/shared'
+import {
   $getRoot,
-  $getSelection,
-  $isRangeSelection,
   $isTextNode,
   COMMAND_PRIORITY_LOW,
-  KEY_ARROW_LEFT_COMMAND,
-  KEY_ARROW_RIGHT_COMMAND,
+  KEY_ENTER_COMMAND,
   KEY_SPACE_COMMAND,
   TextNode,
 } from 'lexical'
-import { useEffect, useRef } from 'react'
-import { $createPillNode } from '../nodes/PillNode'
-import { $isPillNode } from '../nodes/PillNode'
+import { useEffect } from 'react'
+import { $createPillNode, $isPillNode, type PillNode } from '../nodes/PillNode'
 
-export function KeyValuePlugin(): null {
+interface KeyValuePluginProps {
+  /** Callback to receive extracted UserProfile for state updates */
+  onFieldsExtracted?: (userProfile: UserProfile) => void
+  /** Current suppressed fields (from userProfile._suppressed) */
+  suppressedFields?: string[]
+}
+
+export function KeyValuePlugin({ onFieldsExtracted, suppressedFields }: KeyValuePluginProps): null {
   const [editor] = useLexicalComposerContext()
-  const previousEditingNodeRef = useRef<TextNode | null>(null)
 
   useEffect(() => {
-    // Single transformation path: mutation listener
-    // This catches all text node changes (typing, paste, programmatic updates)
-    const removeMutationListener = editor.registerMutationListener(TextNode, (mutatedNodes) => {
+    /**
+     * Check if there's an incomplete address field at the end of the text
+     * Address fields should only trigger extraction on period, newline, or end of string
+     * NOT on space or comma (those are part of the address value)
+     *
+     * @param text - Full text content (may include trailing space/comma from just-typed delimiter)
+     * @returns true if there's an incomplete address field (should skip extraction on space/comma)
+     */
+    function hasIncompleteAddressField(text: string): boolean {
+      // Remove trailing space/comma to check the actual content
+      // (the delimiter was just inserted, so we need to check the text before it)
+      const textToCheck = text.replace(/[\s,]+$/, '')
+
+      // Address field pattern: key:value where value doesn't end with period or newline
+      // This pattern matches address fields that haven't been completed yet
+      const addressPattern = /\b(address):(.+?)(?=\.|(?:\n)|$)/gi
+      const matches = Array.from(textToCheck.matchAll(addressPattern))
+
+      if (matches.length === 0) {
+        return false
+      }
+
+      // Check the last match to see if it's at the end of the text (before trailing delimiter)
+      const lastMatch = matches[matches.length - 1]
+      if (!lastMatch || lastMatch.index === undefined) {
+        return false
+      }
+
+      const matchEnd = lastMatch.index + lastMatch[0].length
+      // Check if the match extends to the end of the text (allowing for trailing delimiter)
+      const isAtEnd = matchEnd >= textToCheck.length
+
+      if (!isAtEnd) {
+        return false
+      }
+
+      // Check if the key resolves to "address"
+      const key = lastMatch[1]
+      if (!key) {
+        return false
+      }
+
+      const fieldName = getFieldNameFromAlias(key)
+      const isAddressField = fieldName === 'address' || key.toLowerCase() === 'address'
+
+      // Also check that the value doesn't end with period or newline (those would complete the address)
+      const value = lastMatch[2]
+      if (value && (value.endsWith('.') || value.endsWith('\n'))) {
+        return false // Address is complete
+      }
+
+      return isAddressField
+    }
+
+    /**
+     * Extract fields from full editor content and create pills
+     * Called ONLY on delimiter keys (space, comma, period, enter)
+     */
+    function extractAndCreatePills() {
       editor.update(() => {
-        const selection = $getSelection()
+        const root = $getRoot()
+        const allTextNodes: TextNode[] = []
+        const allPillNodes: PillNode[] = []
 
-        for (const [nodeKey, mutation] of mutatedNodes) {
-          if (mutation === 'updated' || mutation === 'created') {
-            const node = $getNodeByKey(nodeKey)
-            if (!$isTextNode(node)) {
-              continue
-            }
+        // Recursively collect all text nodes and pill nodes
+        // biome-ignore lint/suspicious/noExplicitAny: Lexical nodes can be various types
+        function collectNodes(node: any) {
+          if ($isPillNode(node)) {
+            // Collect pill nodes to include their fields in inference
+            allPillNodes.push(node)
+            return
+          }
 
-            const text = node.getTextContent()
-            let parsed = parseKeyValueSyntax(text)
-
-            if (parsed.length === 0) {
-              continue
-            }
-
-            // Check if user is actively editing this specific node
-            const isEditing =
-              $isRangeSelection(selection) &&
-              selection.isCollapsed() &&
-              selection.anchor.getNode() === node
-
-            // Track which node is being edited
-            if (isEditing) {
-              previousEditingNodeRef.current = node
-            }
-
-            // Transform immediately if:
-            // 1. Text ends with space, comma, or period (editing complete) - ALWAYS transform
-            // 2. User is not actively editing this node (moved cursor away)
-            // 3. Cursor is at a delimiter position (space/comma/period immediately before cursor)
-            let shouldTransform = false
-            let shouldSuppressDelimiter = false
-
-            if (isEditing) {
-              // Check if cursor is at a delimiter position
-              const cursorOffset = $isRangeSelection(selection) ? selection.anchor.offset : 0
-              const charBeforeCursor = text[cursorOffset - 1]
-
-              // Parse to check what we're typing
-              const parsed = parseKeyValueSyntax(text)
-
-              // Determine if we should transform based on context
-              if (parsed.length > 0) {
-                const lastParsed = parsed[parsed.length - 1]
-                if (!lastParsed) {
-                  continue
-                }
-
-                const valueStart = text.lastIndexOf(lastParsed.original)
-                const valueEndsAt = valueStart + lastParsed.original.length
-                const isTypingValue = cursorOffset > valueStart && cursorOffset <= valueEndsAt
-
-                // Check field type to determine valid delimiters
-                const fieldName = lastParsed.fieldName
-                const isMultiWordField = fieldName
-                  ? MULTI_WORD_FIELDS.has(fieldName as FieldCommand)
-                  : false
-                const isEmailField = fieldName === 'email'
-                const isNumericField = fieldName ? NUMERIC_FIELDS.has(fieldName) : false
-                const isZipField = fieldName === 'zip'
-                const valueContainsAt = lastParsed.value.includes('@')
-                const valueContainsComma = lastParsed.value.includes(',')
-
-                // Get special characters allowed for this field (for non-multi-word fields like zip)
-                const allowedSpecialChars = fieldName
-                  ? SPECIAL_CHAR_FIELDS[fieldName as FieldCommand] || []
-                  : []
-                const valueHasSpecialChars = allowedSpecialChars.some((char) =>
-                  lastParsed.value.includes(char)
-                )
-
-                // Helper: Check if next chars look like a new key:value pattern
-                const checkNextKeyValuePattern = (): boolean => {
-                  const textAfterCursor = text.slice(cursorOffset)
-                  return /^\s+\w+:/.test(textAfterCursor)
-                }
-
-                // If typing within a value:
-                if (isTypingValue) {
-                  // Multi-word fields: spaces are part of value, stop at comma/period/next key:value pattern
-                  if (isMultiWordField) {
-                    shouldTransform =
-                      charBeforeCursor === ',' ||
-                      charBeforeCursor === '.' ||
-                      checkNextKeyValuePattern()
-                  }
-                  // Zip fields (not multi-word): dashes are part of value, only space/comma/period are delimiters
-                  else if (isZipField && valueHasSpecialChars) {
-                    shouldTransform =
-                      charBeforeCursor === ' ' ||
-                      charBeforeCursor === ',' ||
-                      charBeforeCursor === '.'
-                  }
-                  // Email fields: periods are part of value, only space is delimiter
-                  else if (isEmailField || valueContainsAt) {
-                    shouldTransform = charBeforeCursor === ' '
-                  }
-                  // Numeric fields: commas are part of value (for thousands), only space is delimiter
-                  else if (isNumericField && valueContainsComma) {
-                    shouldTransform = charBeforeCursor === ' '
-                  }
-                  // Other fields: space, comma, or period can be delimiters
-                  else {
-                    shouldTransform =
-                      charBeforeCursor === ' ' ||
-                      charBeforeCursor === ',' ||
-                      charBeforeCursor === '.'
-                  }
-                }
-                // If cursor is after the value (at delimiter position):
-                else if (cursorOffset > valueEndsAt) {
-                  // Multi-word fields: spaces are part of value, stop at comma/period/next key:value pattern
-                  if (isMultiWordField) {
-                    shouldTransform =
-                      charBeforeCursor === ',' ||
-                      charBeforeCursor === '.' ||
-                      checkNextKeyValuePattern()
-                  }
-                  // Zip fields (not multi-word): dashes are part of value
-                  else if (isZipField && valueHasSpecialChars) {
-                    shouldTransform =
-                      charBeforeCursor === ' ' ||
-                      charBeforeCursor === ',' ||
-                      charBeforeCursor === '.'
-                  }
-                  // Email fields: only space is delimiter
-                  else if (isEmailField || valueContainsAt) {
-                    shouldTransform = charBeforeCursor === ' '
-                  }
-                  // Numeric fields with comma: only space is delimiter
-                  else if (isNumericField && valueContainsComma) {
-                    shouldTransform = charBeforeCursor === ' '
-                  }
-                  // Other fields: space, comma, or period are delimiters
-                  else {
-                    shouldTransform =
-                      charBeforeCursor === ' ' ||
-                      charBeforeCursor === ',' ||
-                      charBeforeCursor === '.'
-                  }
-                }
-                // Cursor before value - don't transform
-                else {
-                  shouldTransform = false
-                }
-              } else {
-                // No parsed values yet - use standard delimiters
-                const isAtDelimiter =
-                  charBeforeCursor === ' ' || charBeforeCursor === ',' || charBeforeCursor === '.'
-                const endsWithDelimiter =
-                  text.endsWith(' ') || text.endsWith(',') || text.endsWith('.')
-                shouldTransform = isAtDelimiter || endsWithDelimiter
-              }
-
-              // If cursor is right after a delimiter and that delimiter would cause transformation,
-              // we should suppress it ONLY if it creates a duplicate delimiter
-              if (shouldTransform && cursorOffset === text.length && charBeforeCursor === ' ') {
-                // Cursor is at the end and the last character is a space delimiter
-                // Check if removing this delimiter would still leave a valid key-value pattern
-                const textWithoutDelimiter = text.slice(0, -1)
-                const parsedWithoutDelimiter = parseKeyValueSyntax(textWithoutDelimiter)
-                if (parsedWithoutDelimiter.length > 0) {
-                  // Only suppress if we have duplicate spaces
-                  // (e.g., "hi k:10  " -> removing last space leaves "hi k:10 " which is fine)
-                  // But if we have "hi k:10 " and press space, we get "hi k:10  " - suppress the second space
-                  const charBeforeDelimiter = text.length > 1 ? text[text.length - 2] : null
-                  if (charBeforeDelimiter === ' ') {
-                    // We have duplicate spaces - suppress the last one
-                    shouldSuppressDelimiter = true
-                  } else {
-                    // Single space at end - keep it, don't suppress
-                    shouldSuppressDelimiter = false
-                  }
-                }
-              }
-            } else {
-              // Not editing - always transform if there are matches
-              shouldTransform = true
-            }
-
-            if (!shouldTransform) {
-              // Still typing - wait for delimiter or cursor movement
-              continue
-            }
-
-            // If we need to suppress the delimiter, remove it from the text before transforming
-            let textToTransform = text
-            if (shouldSuppressDelimiter) {
-              textToTransform = text.slice(0, -1)
-              // Update the node text to remove the delimiter
-              node.setTextContent(textToTransform)
-              // Adjust cursor position if it was at the end (now out of bounds)
-              const selection = $getSelection()
-              if ($isRangeSelection(selection) && selection.isCollapsed()) {
-                const anchorNode = selection.anchor.getNode()
-                if (anchorNode === node) {
-                  const newOffset = Math.min(selection.anchor.offset, textToTransform.length)
-                  if (newOffset !== selection.anchor.offset) {
-                    node.select(newOffset, newOffset)
-                  }
-                }
-              }
-              // Reparse with the updated text
-              parsed = parseKeyValueSyntax(textToTransform)
-            }
-
-            // Transform text into pills
-            transformTextToPills(node, parsed)
-
-            // Clear tracking if this was the node being edited
-            if (previousEditingNodeRef.current === node) {
-              previousEditingNodeRef.current = null
+          if ($isTextNode(node)) {
+            allTextNodes.push(node)
+          } else {
+            const children = node.getChildren ? node.getChildren() : []
+            for (const child of children) {
+              collectNodes(child)
             }
           }
         }
-      })
-    })
 
-    // Helper function to check the previously edited node and transform if needed
-    // Called when cursor moves away (click or arrow keys)
-    function checkPreviouslyEditedNode() {
-      const nodeToCheck = previousEditingNodeRef.current
+        for (const child of root.getChildren()) {
+          collectNodes(child)
+        }
 
-      if (!nodeToCheck) {
-        return
-      }
+        // Build plain text from NON-pill text nodes only (avoids extracting from already-processed text)
+        const fullText = allTextNodes.map((node) => node.getTextContent()).join('')
 
-      editor.update(() => {
-        // Check if node still exists and is still a text node
-        try {
-          if (!nodeToCheck.isAttached()) {
-            previousEditingNodeRef.current = null
-            return
-          }
+        // Extract fields from pill nodes to include in known fields for inference
+        // Pill nodes already have normalized field names, but we normalize again to be safe
+        const pillFields: Array<{ fieldName: string; value: unknown }> = []
+        for (const pillNode of allPillNodes) {
+          const rawFieldName = pillNode.getFieldName() || pillNode.getFieldKey()
+          // Normalize field name (handles shortcuts, aliases, etc.)
+          const fieldName = normalizeFieldName(rawFieldName)
+          const rawValue = pillNode.getValue()
 
-          if (!$isTextNode(nodeToCheck)) {
-            previousEditingNodeRef.current = null
-            return
-          }
-
-          const selection = $getSelection()
-          const isStillEditing =
-            $isRangeSelection(selection) &&
-            selection.isCollapsed() &&
-            selection.anchor.getNode() === nodeToCheck
-
-          // If user moved away from this node, check if it needs transformation
-          if (!isStillEditing) {
-            const text = nodeToCheck.getTextContent()
-            const parsed = parseKeyValueSyntax(text)
-
-            if (parsed.length > 0) {
-              // Transform immediately since cursor moved away
-              transformTextToPills(nodeToCheck, parsed)
+          // Normalize value using the same logic as extraction engine
+          let finalValue: unknown = rawValue
+          if (typeof rawValue === 'string') {
+            const normalized = normalizeFieldValue(fieldName, rawValue)
+            if (normalized !== null) {
+              finalValue = normalized
+              // CRITICAL: For numeric fields, convert string to number
+              // normalizeFieldValue returns strings, but inference rules expect numbers for numeric fields
+              const metadata = unifiedFieldMetadata[fieldName]
+              if (metadata?.fieldType === 'numeric' && typeof normalized === 'string') {
+                const numValue = Number.parseInt(normalized, 10)
+                if (!Number.isNaN(numValue)) {
+                  finalValue = numValue
+                }
+              } else if (metadata?.fieldType === 'boolean' && typeof normalized === 'string') {
+                // Convert boolean strings to actual booleans
+                const lower = normalized.toLowerCase()
+                if (lower === 'true' || lower === 'yes' || lower === '1') {
+                  finalValue = true
+                } else if (lower === 'false' || lower === 'no' || lower === '0') {
+                  finalValue = false
+                }
+              }
+            } else {
+              // If normalization fails, try basic type conversion
+              const numValue = Number(rawValue)
+              const boolValue =
+                rawValue.toLowerCase() === 'true' || rawValue.toLowerCase() === 'false'
+              finalValue = boolValue
+                ? rawValue.toLowerCase() === 'true'
+                : !Number.isNaN(numValue) && rawValue.trim() !== ''
+                  ? numValue
+                  : rawValue
             }
-
-            previousEditingNodeRef.current = null
           }
-        } catch (error) {
-          // Node might have been removed
-          previousEditingNodeRef.current = null
+
+          pillFields.push({ fieldName, value: finalValue })
+        }
+
+        console.log('[KeyValuePlugin] Plain text (excluding pills):', fullText)
+        console.log('[KeyValuePlugin] Text nodes:', allTextNodes.length)
+        console.log('[KeyValuePlugin] Pill nodes:', allPillNodes.length)
+        console.log(
+          '[KeyValuePlugin] Pill fields:',
+          pillFields.map((f) => `${f.fieldName}:${f.value}`).join(', ')
+        )
+
+        // Make SINGLE call to centralized extraction engine
+        // Pass suppressedFields so extraction engine can remove them
+        // Pass pillFields so they can be included in known fields for inference
+        const { pills, userProfile } = parseKeyValueSyntax(fullText, suppressedFields, pillFields)
+
+        console.log('[KeyValuePlugin] Extracted pills:', pills.length)
+        console.log('[KeyValuePlugin] UserProfile:', userProfile)
+
+        // Emit userProfile to parent component for state updates
+        // userProfile contains known fields in main object, inferred in _inferred object
+        if (onFieldsExtracted) {
+          onFieldsExtracted(userProfile)
+        }
+
+        // processedText is the single source of truth - it contains deduplicated pills from text
+        // Existing pills that should be kept are already in the editor and don't need to be recreated
+        // We only need to:
+        // 1. Remove existing pills that are being replaced (same field name as a new pill)
+        // 2. Create pills from processedText for fields extracted from text
+
+        // Step 1: Remove existing pills that are being replaced by new fields
+        // If a new pill has the same normalized field name as an existing pill, remove the old one
+        const newFieldNames = new Set(pills.map((p) => p.fieldName).filter(Boolean))
+        for (const pillNode of allPillNodes) {
+          const pillFieldName = pillNode.getFieldName() || pillNode.getFieldKey()
+          const normalizedPillFieldName = normalizeFieldName(pillFieldName)
+
+          // If this pill's field name matches a new field, remove the old pill
+          if (normalizedPillFieldName && newFieldNames.has(normalizedPillFieldName)) {
+            console.log(
+              '[KeyValuePlugin] Removing old pill (replaced):',
+              normalizedPillFieldName,
+              '=',
+              pillNode.getValue()
+            )
+            pillNode.remove()
+          }
+        }
+
+        if (pills.length === 0) {
+          return
+        }
+
+        // Step 2: For each pill in processedText, find its location and create it
+        // processedText already has deduplication applied, so we just need to create pills
+        for (const field of pills) {
+          // Skip fields without a fieldName
+          if (!field.fieldName) {
+            continue
+          }
+
+          // Find the text node containing this field's original text (case-insensitive)
+          for (const node of allTextNodes) {
+            const nodeText = node.getTextContent()
+            const originalText = field.original
+
+            // Case-insensitive search
+            const lowerNodeText = nodeText.toLowerCase()
+            const lowerOriginalText = originalText.toLowerCase()
+
+            if (lowerNodeText.includes(lowerOriginalText)) {
+              // Split the node and insert pill (using case-insensitive index)
+              const startIndex = lowerNodeText.indexOf(lowerOriginalText)
+              const endIndex = startIndex + originalText.length
+
+              // Split text: before | pill | after
+              const beforeText = nodeText.slice(0, startIndex)
+              const afterText = nodeText.slice(endIndex)
+
+              // Create pill node
+              const pillNode = $createPillNode({
+                key: field.fieldName,
+                value: field.value,
+                validation: field.validation,
+                fieldName: field.fieldName,
+              })
+
+              // Replace node with: beforeNode + pillNode + afterNode
+              if (beforeText) {
+                const beforeNode = new TextNode(beforeText)
+                node.insertBefore(beforeNode)
+              }
+
+              node.insertBefore(pillNode)
+
+              if (afterText) {
+                const afterNode = new TextNode(afterText)
+                node.insertBefore(afterNode)
+              }
+
+              // Remove original node
+              node.remove()
+
+              console.log('[KeyValuePlugin] Created pill:', field.fieldName, '=', field.value)
+
+              // Only replace first occurrence
+              break
+            }
+          }
         }
       })
     }
 
-    // Listen for cursor movement (arrow keys) to trigger transformation
-    const removeArrowLeftListener = editor.registerCommand(
-      KEY_ARROW_LEFT_COMMAND,
-      () => {
-        // Let arrow key execute first, then check for pill transformation
-        setTimeout(() => {
-          checkPreviouslyEditedNode()
-        }, 0)
-        return false // Allow default behavior
-      },
-      COMMAND_PRIORITY_LOW
-    )
-
-    const removeArrowRightListener = editor.registerCommand(
-      KEY_ARROW_RIGHT_COMMAND,
-      () => {
-        // Let arrow key execute first, then check for pill transformation
-        setTimeout(() => {
-          checkPreviouslyEditedNode()
-        }, 0)
-        return false // Allow default behavior
-      },
-      COMMAND_PRIORITY_LOW
-    )
-
-    // Listen for space, comma, period to trigger transformation
+    // Register command handler for SPACE key
     const removeSpaceListener = editor.registerCommand(
       KEY_SPACE_COMMAND,
       () => {
-        // Space will be inserted, mutation listener will handle transformation
+        // Let space be inserted first, then check if we should extract
+        setTimeout(() => {
+          editor.getEditorState().read(() => {
+            const root = $getRoot()
+            const allTextNodes: TextNode[] = []
+
+            // Recursively collect all text nodes
+            // biome-ignore lint/suspicious/noExplicitAny: Lexical nodes can be various types
+            function collectTextNodes(node: any) {
+              if ($isTextNode(node)) {
+                allTextNodes.push(node)
+              } else {
+                const children = node.getChildren ? node.getChildren() : []
+                for (const child of children) {
+                  collectTextNodes(child)
+                }
+              }
+            }
+
+            for (const child of root.getChildren()) {
+              collectTextNodes(child)
+            }
+
+            const fullText = allTextNodes.map((node) => node.getTextContent()).join('')
+
+            // Skip extraction if there's an incomplete address field
+            // Address fields should only extract on period, newline, or end of string
+            if (hasIncompleteAddressField(fullText)) {
+              return // Don't extract on space for address fields
+            }
+
+            extractAndCreatePills()
+          })
+        }, 0)
         return false // Allow default behavior
       },
       COMMAND_PRIORITY_LOW
     )
 
-    // Listen for comma and period via keyboard events
+    // Register command handler for ENTER key
+    const removeEnterListener = editor.registerCommand(
+      KEY_ENTER_COMMAND,
+      () => {
+        // Let enter be inserted first, then extract
+        setTimeout(() => {
+          extractAndCreatePills()
+        }, 0)
+        return false // Allow default behavior
+      },
+      COMMAND_PRIORITY_LOW
+    )
+
+    // Register keyboard event handler for COMMA and PERIOD
     const removeKeyDownListener = editor.registerRootListener((rootElement, prevRootElement) => {
       if (prevRootElement) {
         prevRootElement.removeEventListener('keydown', handleKeyDown)
       }
       if (rootElement) {
-        rootElement.addEventListener('keydown', handleKeyDown, true)
+        rootElement.addEventListener('keydown', handleKeyDown)
       }
     })
 
     function handleKeyDown(event: KeyboardEvent) {
       // Check for comma or period
-      // Let the key be inserted first, then mutation listener will handle transformation
-      // No need to do anything here - mutation listener catches it
-    }
+      if (event.key === ',' || event.key === '.') {
+        // Let key be inserted first, then check if we should extract
+        setTimeout(() => {
+          editor.getEditorState().read(() => {
+            const root = $getRoot()
+            const allTextNodes: TextNode[] = []
 
-    // Listen for click events to trigger transformation when cursor moves
-    const removeClickListener = editor.registerRootListener((rootElement, prevRootElement) => {
-      if (prevRootElement) {
-        prevRootElement.removeEventListener('click', handleClick)
-      }
-      if (rootElement) {
-        rootElement.addEventListener('click', handleClick, true)
-      }
-    })
+            // Recursively collect all text nodes
+            // biome-ignore lint/suspicious/noExplicitAny: Lexical nodes can be various types
+            function collectTextNodes(node: any) {
+              if ($isTextNode(node)) {
+                allTextNodes.push(node)
+              } else {
+                const children = node.getChildren ? node.getChildren() : []
+                for (const child of children) {
+                  collectTextNodes(child)
+                }
+              }
+            }
 
-    function handleClick() {
-      // After click, check if we need to transform pills
-      setTimeout(() => {
-        checkPreviouslyEditedNode()
-      }, 0)
+            for (const child of root.getChildren()) {
+              collectTextNodes(child)
+            }
+
+            const fullText = allTextNodes.map((node) => node.getTextContent()).join('')
+
+            // For comma: skip extraction if there's an incomplete address field
+            // Address fields should only extract on period, newline, or end of string
+            // For period: always extract (period ends address fields)
+            if (event.key === ',' && hasIncompleteAddressField(fullText)) {
+              return // Don't extract on comma for address fields
+            }
+
+            extractAndCreatePills()
+          })
+        }, 0)
+      }
     }
 
     return () => {
-      removeMutationListener()
-      removeArrowLeftListener()
-      removeArrowRightListener()
       removeSpaceListener()
+      removeEnterListener()
       removeKeyDownListener()
-      removeClickListener()
     }
-  }, [editor])
+  }, [editor, onFieldsExtracted, suppressedFields])
 
   return null
-}
-
-/**
- * Helper function to transform text node into pills (STAR: Single source of truth for transformation logic)
- */
-function transformTextToPills(
-  textNode: TextNode,
-  parsed: ReturnType<typeof parseKeyValueSyntax>
-): void {
-  const text = textNode.getTextContent()
-  const parent = textNode.getParent()
-  if (!parent) {
-    return
-  }
-
-  // Get current selection to preserve cursor position
-  const selection = $getSelection()
-  let cursorOffset = 0
-  let isInThisNode = false
-
-  if ($isRangeSelection(selection) && selection.isCollapsed()) {
-    const anchorNode = selection.anchor.getNode()
-    if (anchorNode === textNode) {
-      isInThisNode = true
-      cursorOffset = selection.anchor.offset
-    }
-  }
-
-  // Sort matches by index to process in order
-  const sortedMatches = parsed
-    .map((match) => ({
-      ...match,
-      index: text.indexOf(match.original),
-    }))
-    .filter((m) => m.index !== -1)
-    .sort((a, b) => a.index - b.index)
-
-  if (sortedMatches.length === 0) return
-
-  let currentOffset = 0
-  const nodesToInsert: Array<TextNode | ReturnType<typeof $createPillNode>> = []
-  let targetNode: TextNode | ReturnType<typeof $createPillNode> | null = null
-  let targetOffset = 0
-
-  for (const match of sortedMatches) {
-    // Add text before the match
-    if (match.index > currentOffset) {
-      const beforeText = text.substring(currentOffset, match.index)
-      const beforeNode = new TextNode(beforeText)
-      nodesToInsert.push(beforeNode)
-
-      // Track cursor position
-      if (isInThisNode && cursorOffset >= currentOffset && cursorOffset <= match.index) {
-        targetNode = beforeNode
-        targetOffset = cursorOffset - currentOffset
-      }
-    }
-
-    // Add pill node
-    const pillNode = $createPillNode({
-      key: match.key,
-      value: match.value,
-      validation: match.validation,
-      fieldName: match.fieldName,
-    })
-    nodesToInsert.push(pillNode)
-
-    // Track cursor position - if cursor is in or at the end of the pill text, move it to after the pill
-    // CRITICAL: Must use <= (not <) to catch cursor at exact end boundary
-    // This prevents cursor from being swallowed by the pill
-    // See: apps/web/src/components/notes/plugins/__tests__/KeyValuePlugin.cursor.test.ts
-    if (
-      isInThisNode &&
-      cursorOffset >= match.index &&
-      cursorOffset <= match.index + match.original.length
-    ) {
-      targetNode = pillNode
-      targetOffset = 0 // Will be set to after pill
-    }
-
-    currentOffset = match.index + match.original.length
-  }
-
-  // Add remaining text after last match
-  if (currentOffset < text.length) {
-    const afterText = text.substring(currentOffset)
-    const afterNode = new TextNode(afterText)
-    nodesToInsert.push(afterNode)
-
-    // Track cursor position
-    if (isInThisNode && cursorOffset >= currentOffset) {
-      targetNode = afterNode
-      targetOffset = cursorOffset - currentOffset
-    }
-  }
-
-  // Replace the text node with the new nodes
-  for (const node of nodesToInsert) {
-    textNode.insertBefore(node)
-  }
-  textNode.remove()
-
-  // Restore cursor position
-  if (targetNode) {
-    if ($isTextNode(targetNode)) {
-      const maxOffset = Math.min(targetOffset, targetNode.getTextContent().length)
-      targetNode.select(maxOffset, maxOffset)
-    } else {
-      // Cursor was in or at end of pill - position after it
-      const nextSibling = targetNode.getNextSibling()
-      if (nextSibling && $isTextNode(nextSibling)) {
-        // Position cursor at start of next text node (after the pill)
-        nextSibling.select(0, 0)
-      } else {
-        // Create empty text node after pill for cursor
-        const emptyTextNode = new TextNode('')
-        targetNode.insertAfter(emptyTextNode)
-        emptyTextNode.select(0, 0)
-      }
-    }
-  } else if (isInThisNode) {
-    // Cursor position wasn't tracked - try to position at end of last node
-    const lastNode = nodesToInsert[nodesToInsert.length - 1]
-    if (lastNode) {
-      if ($isTextNode(lastNode)) {
-        const textLength = lastNode.getTextContent().length
-        lastNode.select(textLength, textLength)
-      } else {
-        // Last node is a pill - create empty text node after it
-        const emptyTextNode = new TextNode('')
-        lastNode.insertAfter(emptyTextNode)
-        emptyTextNode.select(0, 0)
-      }
-    }
-  }
 }

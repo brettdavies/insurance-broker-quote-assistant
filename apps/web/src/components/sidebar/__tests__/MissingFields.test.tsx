@@ -86,7 +86,7 @@ describe('MissingFields Component', () => {
   it('should handle 0% complete (no fields captured)', () => {
     const missingFields: MissingField[] = [
       { name: 'State', priority: 'critical', fieldKey: 'state' },
-      { name: 'Product Line', priority: 'critical', fieldKey: 'productLine' },
+      { name: 'Product Type', priority: 'critical', fieldKey: 'productType' },
     ]
 
     const { container } = render(

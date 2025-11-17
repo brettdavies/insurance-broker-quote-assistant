@@ -11,6 +11,11 @@
  */
 
 import type { MissingField, UserProfile } from '@repo/shared'
+import {
+  checkFieldsAgainstRequirements,
+  checkRequiredFields,
+  getDefaultProductRequirements,
+} from '@repo/shared'
 
 export interface MissingFieldInfo {
   fieldKey: string
@@ -35,58 +40,22 @@ export function calculateMissingFields(
   state?: string,
   carrier?: string
 ): MissingFieldInfo[] {
-  const missing: MissingFieldInfo[] = []
   const product = productType || profile.productType
 
-  // Required fields for all products
-  if (!profile.state) {
-    missing.push({ fieldKey: 'state', priority: 'critical' })
-  }
-  if (!profile.productType) {
-    missing.push({ fieldKey: 'productType', priority: 'critical' })
-  }
+  // Check required fields for all products (from shared)
+  const requiredMissing = checkRequiredFields(profile)
 
-  // Product-specific required fields
-  if (product === 'auto') {
-    if (!profile.vehicles) {
-      missing.push({ fieldKey: 'vehicles', priority: 'critical' })
-    }
-    if (!profile.drivers) {
-      missing.push({ fieldKey: 'drivers', priority: 'critical' })
-    }
-    if (!profile.vins) {
-      missing.push({ fieldKey: 'vins', priority: 'important' })
-    }
-    if (!profile.garage) {
-      missing.push({ fieldKey: 'garage', priority: 'optional' })
-    }
-  } else if (product === 'home') {
-    if (!profile.propertyType) {
-      missing.push({ fieldKey: 'propertyType', priority: 'critical' })
-    }
-    if (!profile.yearBuilt) {
-      missing.push({ fieldKey: 'yearBuilt', priority: 'important' })
-    }
-    if (!profile.squareFeet) {
-      missing.push({ fieldKey: 'squareFeet', priority: 'important' })
-    }
-    if (!profile.roofType) {
-      missing.push({ fieldKey: 'roofType', priority: 'optional' })
-    }
-  } else if (product === 'renters') {
-    if (!profile.propertyType) {
-      missing.push({ fieldKey: 'propertyType', priority: 'critical' })
-    }
-  } else if (product === 'umbrella') {
-    if (!profile.existingPolicies || profile.existingPolicies.length === 0) {
-      missing.push({ fieldKey: 'existingPolicies', priority: 'critical' })
-    }
-  }
+  // Get product-specific requirements (from shared defaults)
+  const productRequirements = product ? getDefaultProductRequirements(product) : []
+  const productMissing = checkFieldsAgainstRequirements(profile, productRequirements)
 
-  // Note: Carrier/state-specific requirements are handled by backend after API call
-  // Frontend uses basic product-level requirements for real-time calculation
+  // Combine and convert to frontend format (fieldKey instead of field)
+  const allMissing = [...requiredMissing, ...productMissing]
 
-  return missing
+  return allMissing.map((field) => ({
+    fieldKey: field.field,
+    priority: field.priority,
+  }))
 }
 
 /**

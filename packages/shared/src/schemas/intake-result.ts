@@ -2,7 +2,31 @@ import { z } from 'zod'
 import { type DecisionTrace, decisionTraceSchema } from './decision-trace'
 import { type MissingField, missingFieldSchema } from './missing-field'
 import { prefillPacketSchema } from './prefill-packet'
+import {
+  type Citation,
+  type RouteDecision,
+  citationSchema,
+  routeDecisionSchema,
+} from './route-decision'
 import { type UserProfile, userProfileSchema } from './user-profile'
+
+/**
+ * Intake Request Schema
+ *
+ * Input to conversational intake flow.
+ * Includes message text and userProfile (with known fields in main object, inferred in _inferred, suppressed in _suppressed).
+ * Legacy support: pills and suppressedFields for backward compatibility.
+ */
+export const intakeRequestSchema = z.object({
+  message: z.string(),
+  // userProfile contains known fields in main object, inferred in _inferred, suppressed in _suppressed
+  userProfile: userProfileSchema.partial().optional(),
+  // Legacy support: pills and suppressedFields (for backward compatibility)
+  pills: userProfileSchema.partial().optional(),
+  suppressedFields: z.array(z.string()).optional(),
+})
+
+export type IntakeRequest = z.infer<typeof intakeRequestSchema>
 
 /**
  * Intake Result Schema
@@ -12,57 +36,54 @@ import { type UserProfile, userProfileSchema } from './user-profile'
  * @see docs/architecture/4-data-models.md#45-intakeresult
  */
 
-/**
- * Citation Schema
- * References knowledge pack source for audit trail
- */
-export const citationSchema = z.object({
-  id: z.string(), // cuid2 ID
-  type: z.string(), // Entity type (e.g., "carrier")
-  carrier: z.string(), // Carrier cuid2 ID
-  file: z.string(), // Source file path
-})
-
-export type Citation = z.infer<typeof citationSchema>
+// Re-export routing schemas for backward compatibility
+export { type Citation, type RouteDecision, citationSchema, routeDecisionSchema }
 
 /**
- * Route Decision Schema
- * Complete routing decision with eligible carriers, rankings, and citations
+ * Discount Opportunity Schema
+ * Represents a discount with eligibility status and savings calculation
  */
-export const routeDecisionSchema = z.object({
-  primaryCarrier: z.string(), // Carrier name/ID of top recommendation
-  eligibleCarriers: z.array(z.string()), // All eligible carriers ranked by match quality
-  matchScores: z.record(z.string(), z.number()).optional(), // Match quality scores per carrier
-  confidence: z.number().min(0).max(1), // Overall confidence in routing decision (0-1)
-  rationale: z.string(), // Human-readable explanation of routing decision
-  citations: z.array(citationSchema), // Knowledge pack citations for each eligible carrier
+export const discountOpportunitySchema = z.object({
+  discountId: z.string(),
+  discountName: z.string(),
+  percentage: z.number(),
+  annualSavings: z.number(),
+  missingRequirements: z.array(z.string()),
+  metRequirements: z.array(z.string()).optional(),
+  citation: citationSchema,
+  stackable: z.boolean(),
+  requiresDocumentation: z.boolean().optional(),
 })
 
-export type RouteDecision = z.infer<typeof routeDecisionSchema>
+export type DiscountOpportunity = z.infer<typeof discountOpportunitySchema>
 
 /**
- * Opportunity Stub
- * Will be fully defined in future story (discount engine)
+ * Extraction Result Schema
+ * Contains extraction details with known/inferred field separation (Epic 4)
  */
-export const opportunityStubSchema = z.object({
-  discount: z.string().optional(),
-  percentage: z.number().optional(),
-  annualSavings: z.number().optional(),
+export const extractionResultSchema = z.object({
+  method: z.enum(['key-value', 'llm']), // Extraction method used
+  known: userProfileSchema.partial().optional(), // Known fields (high confidence or broker-set)
+  inferred: userProfileSchema.partial().optional(), // Inferred fields (medium/low confidence)
+  suppressedFields: z.array(z.string()).optional(), // Fields broker dismissed
+  inferenceReasons: z.record(z.string()).optional(), // Reasoning for each inferred field
+  confidence: z.record(z.number().min(0).max(1)).optional(), // Field-level confidence scores
 })
 
-export type OpportunityStub = z.infer<typeof opportunityStubSchema>
+export type ExtractionResult = z.infer<typeof extractionResultSchema>
 
 /**
  * Intake Result Schema
  * MVP version with stubs for future components
  */
 export const intakeResultSchema = z.object({
-  profile: userProfileSchema,
+  profile: userProfileSchema, // DEPRECATED: Use extraction.known + extraction.inferred (kept for backward compatibility)
+  extraction: extractionResultSchema.optional(), // NEW (Epic 4): Extraction details with known/inferred separation
   missingFields: z.array(missingFieldSchema), // Array of missing fields with priority indicators
-  extractionMethod: z.enum(['key-value', 'llm']).optional(), // Extraction method used (AC5)
-  confidence: z.record(z.number().min(0).max(1)).optional(), // Field-level confidence scores (AC5)
+  extractionMethod: z.enum(['key-value', 'llm']).optional(), // DEPRECATED: Use extraction.method (kept for backward compatibility)
+  confidence: z.record(z.number().min(0).max(1)).optional(), // DEPRECATED: Use extraction.confidence (kept for backward compatibility)
   route: routeDecisionSchema.optional(), // Routing decision from routing engine
-  opportunities: z.array(opportunityStubSchema).optional(), // Stub for discount engine
+  opportunities: z.array(discountOpportunitySchema).optional(), // Discount opportunities from discount engine
   prefill: prefillPacketSchema.optional(), // Prefill packet for broker handoff
   pitch: z.string().optional(), // Agent-ready savings pitch (empty string for MVP)
   complianceValidated: z.boolean().default(true), // Compliance filter result

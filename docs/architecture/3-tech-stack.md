@@ -2,7 +2,7 @@
 
 **⚠️ CRITICAL:** This is the DEFINITIVE technology selection for the entire project. This table is the single source of truth - all development must use these exact versions.
 
-**Timeline Context:** 5-day interview project for PEAK6. NO SCOPE CREEP - stick to spec requirements only.
+**Timeline Context:** 5-day interview project. NO SCOPE CREEP - stick to spec requirements only.
 
 ## 3.1 Technology Stack Table
 
@@ -24,15 +24,19 @@
 | **Backend Framework**              | Hono                                                      | ^4.0          | Lightweight web framework                                               | Ultra-fast, edge-compatible, excellent TypeScript support, simpler than Express                                                                                                                           |
 | **Backend Dev Server**             | Hono CLI                                                  | Built-in      | Local API testing without server                                        | AI-friendly (`hono request`, `hono docs`), fast dev workflow                                                                                                                                              |
 | **API Style**                      | REST JSON                                                 | -             | Simple request/response API                                             | Straightforward for this use case, no need for GraphQL complexity                                                                                                                                         |
-| **LLM Integration**                | OpenAI Node SDK                                           | ^4.0          | GPT-4o/GPT-4o-mini API calls                                            | Official SDK, structured outputs support, JSON mode                                                                                                                                                       |
+| **LLM Integration**                | @google/generative-ai                                     | ^1.29.0       | Google Gemini 2.5 Flash Lite API calls                                  | Official Google SDK, native structured outputs (JSON schema), cost-efficient, free tier available, multimodal file upload support                                                                          |
 | **Database**                       | JSON Files (Filesystem)                                   | -             | Knowledge pack storage                                                  | Spec requires offline operation, simplest for 5-day timeline                                                                                                                                              |
 | **Cache**                          | In-Memory (Map)                                           | -             | Knowledge pack loaded by RAG                                            | Loaded at startup (async, non-blocking) into memory Maps for fast O(1) queries                                                                                                                            |
 | **File Storage**                   | Local Filesystem                                          | -             | Knowledge pack JSON files                                               | Meets offline requirement, easy to version control                                                                                                                                                        |
-| **Authentication**                 | None (Demo)                                               | -             | Out of scope for PEAK6 demo                                             | Not required by spec, focus on core functionality                                                                                                                                                         |
+| **Authentication**                 | None (Demo)                                               | -             | Out of scope for demo                                             | Not required by spec, focus on core functionality                                                                                                                                                         |
 | **Testing (Unit)**                 | Bun test                                                  | Bun 1.3+      | API + Frontend unit tests                                               | Built-in to Bun, Jest-compatible API, faster than Vitest                                                                                                                                                  |
 | **Testing (Integration)**          | Bun test                                                  | Bun 1.3+      | API integration tests                                                   | Same test runner, tests multiple components together                                                                                                                                                      |
 | **Testing Utilities**              | @testing-library/react                                    | Latest        | Component testing                                                       | User-centric tests, works with Bun test                                                                                                                                                                   |
-| **Testing (E2E)**                  | None (Skipped)                                            | -             | Out of scope for 5-day demo                                             | Focus on unit + integration tests only                                                                                                                                                                    |
+| **Testing (E2E)**                  | Evaluation Framework (Custom)                             | -             | Production E2E testing with 15 test cases                               | Automated evaluation harness for conversational intake (10 tests) and policy analysis (5 tests) with metrics tracking                                                                                      |
+| **Schema Conversion**              | zod-to-json-schema                                        | ^3.24.6       | Zod → JSON Schema for Gemini                                            | Converts Zod schemas to JSON Schema format required by Gemini structured outputs                                                                                                                          |
+| **Unique IDs**                     | @paralleldrive/cuid2                                      | ^3.0.4        | Citation and audit trail IDs                                            | Cryptographically secure unique identifiers for knowledge pack citations                                                                                                                                   |
+| **Parallel Scripts**               | concurrently                                              | ^9.2.1        | Run web + api servers simultaneously                                    | Development convenience for running frontend and backend concurrently                                                                                                                                      |
+| **JSON Validation**                | ajv + ajv-formats                                         | 8.17.1 + 3.0.1 | Knowledge pack schema validation                                        | Validates knowledge pack JSON files against schemas at startup                                                                                                                                             |
 | **Build Tool (Backend)**           | Bun build                                                 | Bun 1.3+      | Bundle backend if needed                                                | Built-in bundler, ESM + CJS output, tree-shakeable (optional for demo)                                                                                                                                    |
 | **Linting & Formatting (General)** | Biome                                                     | ^1.9          | Linting + formatting for most files                                     | Rust-based, 25x faster than ESLint, handles TS/JS/JSON                                                                                                                                                    |
 | **Formatting (React Components)**  | Prettier + prettier-plugin-tailwindcss                    | ^3.0 / ^0.5   | React component formatting with Tailwind class sorting                  | Sorts Tailwind classes (Biome doesn't support Tailwind yet - [GitHub #1274](https://github.com/biomejs/biome/issues/1274))                                                                                |
@@ -98,7 +102,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 
 ```bash
 # Required
-OPENAI_API_KEY=sk-...
+GEMINI_API_KEY=...  # Google Gemini API key (optional for free tier)
+GEMINI_MODEL=gemini-2.5-flash-lite  # Default model (can be overridden)
 
 # Optional
 NODE_ENV=development
@@ -216,7 +221,15 @@ Two separate log streams for different purposes:
 - **Simplicity:** Fastest setup for 5-day timeline
 - **Trade-off:** Not scalable, but demo doesn't need to scale
 
-**7. Bun test over Vitest**
+**7. Gemini 2.5 Flash Lite over OpenAI**
+
+- **Free tier:** Available for development without API key
+- **Performance:** Competitive with GPT-4 for extraction tasks
+- **Multimodal:** File upload API for PDF/DOCX policy analysis
+- **Structured outputs:** Native JSON Schema support via zod-to-json-schema
+- **Trade-off:** Limited model selection vs OpenAI, but sufficient for demo
+
+**8. Bun test over Vitest**
 
 - **Speed:** Native test runner, no separate tool
 - **Simplicity:** Jest-compatible API, works out of box

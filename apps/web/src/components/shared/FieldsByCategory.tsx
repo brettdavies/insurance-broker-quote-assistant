@@ -12,6 +12,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion'
 import { Card, CardContent } from '@/components/ui/card'
+import { USER_PROFILE_CATEGORY_ORDER } from '@/lib/field-extraction'
 import type { FieldItemData } from './FieldItem'
 import { FieldItem } from './FieldItem'
 
@@ -21,6 +22,8 @@ export interface FieldsByCategoryProps {
   onFieldClick: (fieldKey: string, currentValue?: string | number | boolean) => void
   emptyMessage?: string
   defaultOpenCategories?: string[]
+  onDismiss?: (fieldKey: string) => void
+  onConvertToKnown?: (fieldKey: string, value: unknown) => void
 }
 
 export function FieldsByCategory({
@@ -29,6 +32,8 @@ export function FieldsByCategory({
   onFieldClick,
   emptyMessage = 'No fields captured yet.',
   defaultOpenCategories,
+  onDismiss,
+  onConvertToKnown,
 }: FieldsByCategoryProps) {
   const totalFields = Object.values(fieldsByCategory).reduce(
     (sum, fields) => sum + fields.length,
@@ -48,10 +53,19 @@ export function FieldsByCategory({
   // Determine default open categories
   const defaultOpen = defaultOpenCategories || Object.keys(categoryLabels)
 
+  // Use shared category order to ensure consistent ordering
+  // Fall back to Object.keys if category order doesn't match (e.g., for PolicySummary)
+  const orderedCategories = USER_PROFILE_CATEGORY_ORDER.filter((cat) => cat in fieldsByCategory)
+  const remainingCategories = Object.keys(fieldsByCategory).filter(
+    (cat) => !USER_PROFILE_CATEGORY_ORDER.includes(cat)
+  )
+  const allCategories = [...orderedCategories, ...remainingCategories]
+
   return (
     <Accordion type="multiple" defaultValue={defaultOpen}>
-      {Object.entries(fieldsByCategory).map(([category, fields]) => {
-        if (fields.length === 0) return null
+      {allCategories.map((category) => {
+        const fields = fieldsByCategory[category]
+        if (!fields || fields.length === 0) return null
 
         return (
           <AccordionItem key={category} value={category}>
@@ -59,9 +73,15 @@ export function FieldsByCategory({
               {categoryLabels[category]} ({fields.length})
             </AccordionTrigger>
             <AccordionContent>
-              <div className="space-y-2">
+              <div className={`grid gap-1.5 ${fields.length > 6 ? 'grid-cols-2' : 'grid-cols-1'}`}>
                 {fields.map((field) => (
-                  <FieldItem key={field.fieldKey} field={field} onClick={onFieldClick} />
+                  <FieldItem
+                    key={field.fieldKey}
+                    field={field}
+                    onClick={onFieldClick}
+                    onDismiss={onDismiss}
+                    onConvertToKnown={onConvertToKnown}
+                  />
                 ))}
               </div>
             </AccordionContent>

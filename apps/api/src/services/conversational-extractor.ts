@@ -1,8 +1,22 @@
-import type { PolicySummary, UserProfile } from '@repo/shared'
-import { policySummarySchema, userProfileSchema } from '@repo/shared'
-import { hasKeyValueSyntax, parseKeyValueSyntax } from '../utils/key-value-parser'
-import { logError } from '../utils/logger'
-import { extractStateFromText } from '../utils/state-normalizer'
+import fs from 'node:fs'
+import path from 'node:path'
+import type { NormalizedField, PolicySummary, UserProfile } from '@repo/shared'
+import {
+  CONFIDENCE_THRESHOLD_HIGH,
+  DEFAULT_EXTRACTION_TEMPERATURE,
+  buildSystemPrompt,
+  buildUserPrompt,
+  extractFieldsBackendPreLLM,
+  extractStateFromText,
+  getAllUserProfileFieldNames,
+  policySummarySchema,
+  separateKnownFromInferred,
+  userProfileSchema,
+  validateAndReExtractPostLLM,
+} from '@repo/shared'
+import { getAllCarriers } from '../services/knowledge-pack-loader'
+import { logDebug, logError } from '../utils/logger'
+import { extractFieldsWithLLM } from './extractors/llm-extraction'
 import type { LLMProvider } from './llm-provider'
 
 /**
@@ -15,79 +29,277 @@ import type { LLMProvider } from './llm-provider'
  */
 
 export interface ExtractionResult {
-  profile: Partial<UserProfile>
+  profile: Partial<UserProfile> // DEPRECATED: Use known + inferred instead (kept for backward compatibility)
+  known?: Partial<UserProfile> // Known fields (high confidence ≥85% or explicitly set by broker)
+  inferred?: Partial<UserProfile> // Inferred fields (confidence <85%)
   extractionMethod: 'key-value' | 'llm'
   confidence: Record<string, number> // Field-level confidence scores
   missingFields: string[] // Fields not extracted (for progressive disclosure)
   reasoning?: string // Optional reasoning for extraction
+  tokenUsage?: import('./llm-provider').TokenUsage // Token usage from LLM (if extractionMethod === 'llm')
+  inferenceReasons?: Record<string, string> // Reasoning for each inferred field
 }
 
 export class ConversationalExtractor {
   constructor(private llmProvider: LLMProvider) {}
 
   /**
+   * Get the last prompts used by the LLM provider (for trace logging)
+   */
+  getLastPrompts(): { systemPrompt?: string; userPrompt?: string } | null {
+    // Check if LLM provider has getLastPrompt method (GeminiProvider)
+    if (
+      'getLastPrompt' in this.llmProvider &&
+      typeof this.llmProvider.getLastPrompt === 'function'
+    ) {
+      return this.llmProvider.getLastPrompt() || null
+    }
+    return null
+  }
+
+  /**
+   * Load system prompt template from file
+   */
+  private loadSystemPromptTemplate(): string {
+    const templatePath = path.join(
+      process.cwd(),
+      'src/prompts/conversational-extraction-system.txt'
+    )
+    return fs.readFileSync(templatePath, 'utf-8')
+  }
+
+  /**
+   * Load user prompt template from file
+   */
+  private loadUserPromptTemplate(): string {
+    const templatePath = path.join(process.cwd(), 'src/prompts/conversational-extraction-user.txt')
+    return fs.readFileSync(templatePath, 'utf-8')
+  }
+
+  /**
+   * Build system prompt with known/inferred/suppressed fields injected
+   */
+  private buildSystemPrompt(
+    knownFields: Partial<UserProfile>,
+    inferredFields: Partial<UserProfile>,
+    suppressedFields: string[]
+  ): string {
+    const template = this.loadSystemPromptTemplate()
+    return buildSystemPrompt(template, knownFields, inferredFields, suppressedFields)
+  }
+
+  /**
+   * Build user prompt with known/inferred/suppressed fields injected
+   */
+  private buildUserPrompt(
+    message: string,
+    knownFields: Partial<UserProfile>,
+    inferredFields: Partial<UserProfile>,
+    suppressedFields: string[],
+    carrierNames?: string[]
+  ): string {
+    const template = this.loadUserPromptTemplate()
+    return buildUserPrompt(
+      template,
+      message,
+      knownFields,
+      inferredFields,
+      suppressedFields,
+      carrierNames
+    )
+  }
+
+  /**
+   * Convert NormalizedField[] to Partial<UserProfile>
+   */
+  private normalizedFieldsToProfile(fields: NormalizedField[]): Partial<UserProfile> {
+    const profile: Partial<UserProfile> = {}
+    for (const field of fields) {
+      // @ts-expect-error - Dynamic field assignment
+      profile[field.fieldName] = field.value
+    }
+    return profile
+  }
+
+  /**
+   * Convert Partial<UserProfile> to NormalizedField[]
+   */
+  private profileToNormalizedFields(profile: Partial<UserProfile>): NormalizedField[] {
+    const fields: NormalizedField[] = []
+    for (const [key, value] of Object.entries(profile)) {
+      if (value !== undefined) {
+        fields.push({
+          fieldName: key,
+          value,
+          originalText: `${key}:${value}`,
+          startIndex: 0,
+          endIndex: 0,
+        })
+      }
+    }
+    return fields
+  }
+
+  /**
    * Extract structured fields from broker message
    *
-   * @param message - Current broker message
-   * @param conversationHistory - Optional array of previous messages
+   * UNIFIED EXTRACTION FLOW (used by both FE and BE):
+   * 1. Run deterministic extraction (key-value + regex) + inference
+   * 2. Send remaining text to LLM (not full message)
+   * 3. Re-run deterministic extraction on LLM results
+   * 4. Loop until convergence (max 3 iterations)
+   *
+   * @param message - Current broker message (cleaned text without pills)
+   * @param knownFields - Optional known fields explicitly set by broker (read-only for LLM)
+   * @param inferredFields - Optional inferred fields from InferenceEngine (modifiable by LLM)
+   * @param suppressedFields - Optional array of field names to skip during inference
    * @returns Extraction result with profile, method, confidence, and missing fields
    */
-  async extractFields(message: string, conversationHistory?: string[]): Promise<ExtractionResult> {
+  async extractFields(
+    message: string,
+    knownFields?: Partial<UserProfile>,
+    inferredFields?: Partial<UserProfile>,
+    suppressedFields?: string[]
+  ): Promise<ExtractionResult> {
+    await logDebug('Conversational extractor: extractFields called (unified flow)', {
+      knownFields,
+      inferredFields,
+      suppressedFields,
+    })
     try {
-      // Step 1: Try key-value parser first (instant, free, deterministic)
-      if (hasKeyValueSyntax(message)) {
-        const kvResult = parseKeyValueSyntax(message)
+      // Step 1: Run unified deterministic extraction (key-value + regex + inference)
+      // Uses shared extraction engine (same as FE) to ensure identical behavior
+      const {
+        fields: allExtractedFields,
+        remainingText,
+        userProfile: extractedUserProfile,
+        deterministicFields: extractedDeterministicFields,
+        inferredFields: extractedInferredFields,
+      } = extractFieldsBackendPreLLM(message)
 
-        // Validate extracted profile against schema
-        let validatedProfile = this.validateProfile(kvResult.profile)
+      // Extract known/inferred/suppressed from extracted userProfile
+      // Known fields = all fields except metadata (keys starting with _)
+      const extractedKnownFields: Partial<UserProfile> = {}
+      const extractedInferredFieldsMap: Partial<UserProfile> = {}
+      const extractedSuppressedFields: string[] = []
 
-        // Apply deterministic state normalization if state is missing
-        if (!validatedProfile.state) {
-          const extractedState = extractStateFromText(message)
-          if (extractedState) {
-            validatedProfile = { ...validatedProfile, state: extractedState }
-          }
-        }
-
-        // Calculate missing fields
-        const missingFields = this.calculateMissingFields(validatedProfile)
-
-        return {
-          profile: validatedProfile,
-          extractionMethod: 'key-value',
-          confidence: this.buildConfidenceMap(validatedProfile, 1.0), // Key-value is always 100% confident
-          missingFields,
+      for (const [key, value] of Object.entries(extractedUserProfile)) {
+        if (!key.startsWith('_') && value !== null && value !== undefined) {
+          // biome-ignore lint/suspicious/noExplicitAny: UserProfile has dynamic field types
+          extractedKnownFields[key as keyof UserProfile] = value as any
         }
       }
 
-      // Step 2: Use LLM for natural language extraction (fallback)
-      const llmResult = await this.llmProvider.extractWithStructuredOutput(
-        message,
-        conversationHistory,
-        userProfileSchema
+      if (extractedUserProfile._inferred) {
+        Object.assign(extractedInferredFieldsMap, extractedUserProfile._inferred)
+      }
+
+      if (extractedUserProfile._suppressed) {
+        extractedSuppressedFields.push(...extractedUserProfile._suppressed)
+      }
+
+      // Merge with passed-in known/inferred/suppressed fields
+      const mergedKnownFields = { ...knownFields, ...extractedKnownFields }
+      const mergedInferredFields = { ...inferredFields, ...extractedInferredFieldsMap }
+      const mergedSuppressedFields = [...(suppressedFields || []), ...extractedSuppressedFields]
+
+      // Build deterministic profile from deterministic fields for backward compatibility
+      const deterministicProfile = this.normalizedFieldsToProfile(extractedDeterministicFields)
+
+      await logDebug('Deterministic extraction results', {
+        extractedFields: Object.keys(deterministicProfile),
+        remainingText,
+        extractedKnownFields: Object.keys(extractedKnownFields),
+        extractedInferredFields: Object.keys(extractedInferredFieldsMap),
+      })
+
+      // Step 2: Check if we need LLM (if no remaining text or we have enough fields)
+      if (remainingText.trim().length === 0) {
+        // All patterns extracted, no need for LLM
+        return {
+          profile: deterministicProfile,
+          known: deterministicProfile,
+          extractionMethod: 'key-value',
+          confidence: Object.fromEntries(
+            Object.keys(deterministicProfile).map((key) => [key, 1.0])
+          ),
+          missingFields: this.calculateMissingFields(deterministicProfile),
+        }
+      }
+
+      // Step 3: Remove duplicate fields from inferred (if they exist in known)
+      // A field should only appear in one section, not both
+      const cleanedInferredFields = { ...mergedInferredFields }
+      for (const key of Object.keys(mergedKnownFields)) {
+        if (key in cleanedInferredFields) {
+          delete cleanedInferredFields[key as keyof UserProfile]
+        }
+      }
+
+      // Step 4: Use LLM for remaining natural language text
+      const systemPrompt = this.buildSystemPrompt(
+        mergedKnownFields, // Known fields (deterministic + pills)
+        cleanedInferredFields, // Inferred fields (with duplicates removed)
+        mergedSuppressedFields
+      )
+      // Get carrier names from knowledge pack for enum values
+      const carrierNames = getAllCarriers().map((carrier) => carrier.name)
+
+      const userPrompt = this.buildUserPrompt(
+        remainingText, // Only send remaining text to LLM
+        mergedKnownFields,
+        cleanedInferredFields,
+        mergedSuppressedFields,
+        carrierNames // Pass carrier names for dynamic enum values
       )
 
-      // Validate extracted profile against schema
-      let validatedProfile = this.validateProfile(llmResult.profile)
+      const llmResult = await extractFieldsWithLLM(
+        this.llmProvider,
+        remainingText,
+        systemPrompt,
+        userPrompt,
+        mergedKnownFields, // Pass merged known fields to LLM
+        mergedSuppressedFields,
+        (profile) => this.calculateMissingFields(profile)
+      )
 
-      // Step 3: Apply deterministic state normalization if state is missing
-      // This handles cases where LLM didn't extract state or isn't available
-      if (!validatedProfile.state) {
-        const extractedState = extractStateFromText(message)
-        if (extractedState) {
-          validatedProfile = { ...validatedProfile, state: extractedState }
+      // Step 4: Post-LLM validation loop (re-run deterministic extraction until convergence)
+      let currentFields = this.profileToNormalizedFields(llmResult.profile)
+      let iterations = 0
+      const MAX_ITERATIONS = 3
+
+      while (iterations < MAX_ITERATIONS) {
+        const { fields: validatedFields, hasChanges } = validateAndReExtractPostLLM(
+          message,
+          currentFields
+        )
+
+        await logDebug(`Post-LLM validation iteration ${iterations + 1}`, {
+          hasChanges,
+          fieldCount: validatedFields.length,
+        })
+
+        if (!hasChanges) {
+          // Convergence reached, no more changes
+          break
         }
+
+        currentFields = validatedFields
+        iterations++
       }
 
-      // Calculate missing fields
-      const missingFields = this.calculateMissingFields(validatedProfile)
+      // Convert final fields to profile
+      const finalProfile = this.normalizedFieldsToProfile(currentFields)
 
+      // Return combined result
       return {
-        profile: validatedProfile,
+        profile: finalProfile,
+        known: finalProfile,
         extractionMethod: 'llm',
         confidence: llmResult.confidence,
-        missingFields,
+        missingFields: this.calculateMissingFields(finalProfile),
         reasoning: llmResult.reasoning,
+        tokenUsage: llmResult.tokenUsage,
       }
     } catch (error) {
       // Log error but return partial result (graceful degradation)
@@ -108,39 +320,6 @@ export class ConversationalExtractor {
   }
 
   /**
-   * Validate profile against UserProfile schema
-   * Returns partial profile with only valid fields
-   */
-  private validateProfile(profile: Partial<UserProfile>): Partial<UserProfile> {
-    try {
-      // Use Zod schema to validate and sanitize
-      const result = userProfileSchema.safeParse(profile)
-      if (result.success) {
-        return result.data
-      }
-
-      // If validation fails, return only valid fields
-      const validProfile: Partial<UserProfile> = {}
-      for (const [key, value] of Object.entries(profile)) {
-        try {
-          const fieldResult =
-            userProfileSchema.shape[key as keyof typeof userProfileSchema.shape]?.safeParse(value)
-          if (fieldResult?.success) {
-            // @ts-expect-error - Dynamic field assignment
-            validProfile[key] = value
-          }
-        } catch {
-          // Skip invalid fields
-        }
-      }
-      return validProfile
-    } catch {
-      // If validation completely fails, return empty profile
-      return {}
-    }
-  }
-
-  /**
    * Calculate missing fields for progressive disclosure
    * Returns array of field names that are not extracted
    */
@@ -156,35 +335,7 @@ export class ConversationalExtractor {
    * Get all UserProfile field names
    */
   private getAllFieldNames(): string[] {
-    return [
-      'state',
-      'productType',
-      'age',
-      'householdSize',
-      'vehicles',
-      'ownsHome',
-      'cleanRecord3Yr',
-      'currentCarrier',
-      'premiums',
-      'existingPolicies',
-      'kids', // Legacy field
-    ]
-  }
-
-  /**
-   * Build confidence map from profile
-   */
-  private buildConfidenceMap(
-    profile: Partial<UserProfile>,
-    defaultConfidence: number
-  ): Record<string, number> {
-    const confidence: Record<string, number> = {}
-    for (const key of Object.keys(profile)) {
-      if (profile[key as keyof UserProfile] !== undefined) {
-        confidence[key] = defaultConfidence
-      }
-    }
-    return confidence
+    return getAllUserProfileFieldNames()
   }
 
   /**
@@ -271,8 +422,8 @@ export class ConversationalExtractor {
       // Use LLM to extract structured policy data from text
       const llmResult = await this.llmProvider.extractWithStructuredOutput(
         policyText,
-        undefined, // No conversation history for policy extraction
-        policySummarySchema
+        policySummarySchema,
+        undefined // No partial fields for policy extraction
       )
 
       // Validate extracted policy summary against schema

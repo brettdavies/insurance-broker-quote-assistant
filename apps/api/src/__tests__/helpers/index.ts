@@ -14,3 +14,16 @@ export {
   expectMissingField,
 } from './response-assertions'
 export { RequestBuilder, requestBuilder, testRequests } from './test-builders'
+export {
+  createTestUserProfile,
+  createAutoProfile,
+  createHomeProfile,
+  createRentersProfile,
+  createUmbrellaProfile,
+  createCompleteAutoProfile,
+  createCompleteHomeProfile,
+  createTestRouteDecision,
+  createExtendedRouteDecision,
+  createTestDisclaimers,
+  createTestMissingFields,
+} from './prefill-test-factories'

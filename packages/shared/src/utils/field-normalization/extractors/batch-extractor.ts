@@ -1,0 +1,79 @@
+/**
+ * Batch Field Extractor
+ *
+ * Extracts all normalized fields from broker notes text.
+ * Coordinates all individual extractors and handles overlapping matches.
+ */
+
+import type { NormalizedField } from '../types'
+import { extractCleanRecord, extractOwnsHome } from './boolean-extractors'
+import { extractKeyValueSyntax } from './key-value-extractor'
+import {
+  extractAge,
+  extractCreditScore,
+  extractDrivers,
+  extractHouseholdSize,
+  extractKids,
+  extractVehicles,
+} from './numeric-extractors'
+import { extractProductType } from './product-type-extractor'
+import { extractState } from './state-extractor'
+import { extractCurrentCarrier, extractEmail, extractName, extractZip } from './text-extractors'
+
+/**
+ * Extract all normalized fields from broker notes
+ * Returns array of normalized fields that can be converted to pills
+ *
+ * Note: This extracts direct fields only. householdSize inference should be done
+ * separately after all fields are extracted to avoid overwriting explicit values.
+ */
+export function extractNormalizedFields(text: string): NormalizedField[] {
+  const fields: NormalizedField[] = []
+  const processedRanges: Array<{ start: number; end: number }> = []
+
+  // Helper to check if range overlaps with already processed ranges
+  const isOverlapping = (start: number, end: number): boolean => {
+    return processedRanges.some((range) => {
+      return !(end <= range.start || start >= range.end)
+    })
+  }
+
+  // STEP 1: Extract key:value syntax FIRST (highest priority)
+  // This must run before natural language extractors to capture explicit syntax like "k:2", "state:CA"
+  const keyValueFields = extractKeyValueSyntax(text)
+  for (const field of keyValueFields) {
+    if (!isOverlapping(field.startIndex, field.endIndex)) {
+      fields.push(field)
+      processedRanges.push({ start: field.startIndex, end: field.endIndex })
+    }
+  }
+
+  // STEP 2: Extract natural language patterns (order matters - more specific patterns first)
+  const extractors = [
+    extractState, // Extract state codes/names (must come before productType to handle "CA auto")
+    extractProductType, // Extract product types (after state to handle "CA auto" pattern)
+    extractName, // Extract "John Doe," → name: "John Doe" (after key-value to avoid conflicts)
+    extractEmail, // Extract "user@example.com" → email: "user@example.com" (after key-value to avoid conflicts)
+    extractCurrentCarrier, // Extract "has geico" → currentCarrier: "GEICO"
+    extractCleanRecord, // Extract "clean record 5yrs" → cleanRecord5Yr: true
+    extractVehicles, // Extract "2 cars" → vehicles: 2
+    extractDrivers, // Extract "2 drivers" → drivers: 2
+    extractKids, // Extract "2 kids" → kids: 2
+    extractHouseholdSize, // Extract explicit household size mentions
+    extractOwnsHome,
+    extractZip, // Extract "zip 90210" → zip: "90210"
+    extractAge, // Extract "35yo", "age 35", "35 years old" → age: 35
+    extractCreditScore, // Extract "credit 750", "score 750", "credit score 720" → creditScore: 750
+  ]
+
+  for (const extractor of extractors) {
+    const field = extractor(text)
+    if (field && !isOverlapping(field.startIndex, field.endIndex)) {
+      fields.push(field)
+      processedRanges.push({ start: field.startIndex, end: field.endIndex })
+    }
+  }
+
+  // Sort by start index
+  return fields.sort((a, b) => a.startIndex - b.startIndex)
+}

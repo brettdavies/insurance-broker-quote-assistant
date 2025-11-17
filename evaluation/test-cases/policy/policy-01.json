@@ -30,11 +30,11 @@
   "expectedOpportunities": [
     {
       "discount": "Safe Driver",
-      "percentage": 10,
-      "annualSavings": 120,
+      "percentage": 5,
+      "annualSavings": 60,
       "requires": ["cleanRecord3Yr"],
       "citation": {
-        "id": "disc_safe_driver",
+        "id": "disc_xrcd4bhsnd58vx2yu99ca4bn",
         "type": "discount",
         "carrier": "carr_foh5t5b435ubg3q3bq2ymodz",
         "file": "knowledge_pack/carriers/geico.json"
@@ -42,11 +42,11 @@
     },
     {
       "discount": "Multi-Policy Bundle",
-      "percentage": 15,
-      "annualSavings": 180,
+      "percentage": 7.5,
+      "annualSavings": 90,
       "requires": ["existingPolicies", "ownsHome"],
       "citation": {
-        "id": "disc_bundle",
+        "id": "disc_k6vs03846lr85r424blw6d7b",
         "type": "discount",
         "carrier": "carr_foh5t5b435ubg3q3bq2ymodz",
         "file": "knowledge_pack/carriers/geico.json"

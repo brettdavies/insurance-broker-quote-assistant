@@ -10,11 +10,11 @@ import { z } from 'zod'
 
 export const complianceResultSchema = z.object({
   passed: z.boolean(), // Whether compliance check passed
-  violations: z.array(z.string()).optional(), // List of prohibited phrases detected
-  replacementMessage: z.string().optional(), // Licensed-agent handoff message if violations detected
-  disclaimers: z.array(z.string()).optional(), // Selected disclaimers if passed
-  state: z.string().optional(), // State used for disclaimer selection
-  productType: z.string().optional(), // Product used for disclaimer selection
+  violations: z.array(z.string()).nullish(), // List of prohibited phrases detected
+  replacementMessage: z.string().nullish(), // Licensed-agent handoff message if violations detected
+  disclaimers: z.array(z.string()).nullish(), // Selected disclaimers if passed
+  state: z.string().nullish(), // State used for disclaimer selection
+  productType: z.string().nullish(), // Product used for disclaimer selection
 })
 
 export type ComplianceResult = z.infer<typeof complianceResultSchema>

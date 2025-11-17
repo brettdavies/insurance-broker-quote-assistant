@@ -1,40 +1,18 @@
-// Export knowledge pack types
-export type {
-  Carrier,
-  CarrierFile,
-  State,
-  StateFile,
-  Product,
-  ProductFile,
-  Discount,
-  Compensation,
-  Source,
-  FieldWithMetadata,
-  ProductEligibility,
-  AutoMinimums,
-  HomeMinimums,
-  RentersMinimums,
-} from './schemas/knowledge-pack'
+/**
+ * Shared Package Index
+ *
+ * Main entry point for the shared package.
+ * Re-exports all schemas, services, utils, and constants.
+ */
 
-// Export user contact schema and types
-export {
-  userContactSchema,
-  type UserContact,
-} from './schemas/user-contact'
+// Re-export all schemas
+export * from './index/schemas'
 
-// Export user profile schema and types
-export {
-  userProfileSchema,
-  existingPolicySchema,
-  type UserProfile,
-  type ExistingPolicy,
-} from './schemas/user-profile'
+// Re-export all services
+export * from './index/services'
 
-// Export unified field metadata definitions
-export {
-  unifiedFieldMetadata,
-  type UnifiedFieldMetadata,
-} from './schemas/unified-field-metadata'
+// Re-export all utils
+export * from './index/utils'
 
 // Export unified field metadata utilities
 export {
@@ -55,14 +33,16 @@ export {
 
 // Export intake result schema and types
 export {
+  intakeRequestSchema,
   intakeResultSchema,
   routeDecisionSchema,
   citationSchema,
-  opportunityStubSchema,
+  discountOpportunitySchema,
+  type IntakeRequest,
   type IntakeResult,
   type RouteDecision,
   type Citation,
-  type OpportunityStub,
+  type DiscountOpportunity,
 } from './schemas/intake-result'
 
 // Export opportunity schema and types
@@ -91,7 +71,14 @@ export {
 } from './schemas/policy-analysis-result'
 
 // Export prefill packet schema and types
-export { prefillPacketSchema, type PrefillPacket } from './schemas/prefill-packet'
+export {
+  prefillPacketSchema,
+  prefillRoutingSchema,
+  producerInfoSchema,
+  type PrefillPacket,
+  type PrefillRouting,
+  type ProducerInfo,
+} from './schemas/prefill-packet'
 
 // Export missing field schema and types
 export {
@@ -138,6 +125,27 @@ export {
   formatFileSize,
 } from './constants/file-upload'
 
+// Export LLM configuration constants
+export {
+  DEFAULT_GEMINI_MODEL,
+  DEFAULT_EXTRACTION_TEMPERATURE,
+  DEFAULT_PITCH_TEMPERATURE,
+  CONFIDENCE_THRESHOLD_HIGH,
+  CONFIDENCE_THRESHOLD_MEDIUM,
+} from './constants/llm-config'
+
+// Export compliance constants and utilities
+export {
+  detectProhibitedPhrases,
+  LICENSED_AGENT_HANDOFF_MESSAGE,
+} from './constants/compliance'
+
+// Export validation constants
+export { SAVINGS_TOLERANCE_DOLLARS, MISSING_FIELD_PENALTY } from './constants/validation'
+
+// Export error message constants
+export { ERROR_CODES, ERROR_DETAILS, ERROR_MESSAGES } from './constants/error-messages'
+
 // Export shared enums
 export {
   productTypeEnum,
@@ -146,5 +154,112 @@ export {
   type PropertyType,
 } from './schemas/shared-enums'
 
-// Export test utilities (for use in test files only)
-export * from './test-utils'
+// Export text pattern inferences config
+export {
+  TEXT_PATTERN_INFERENCES,
+  type TextPatternInference,
+} from './config/text-pattern-inferences'
+
+// Export inference engine service
+export {
+  InferenceEngine,
+  type InferenceResult,
+} from './services/inference-engine'
+
+// Export field normalization utilities
+export {
+  STATE_NAME_TO_CODE,
+  CARRIER_NORMALIZATIONS,
+  normalizeState,
+  normalizeCarrierName,
+  extractStateFromText,
+  extractState,
+  extractProductType,
+  extractVehicles,
+  extractDrivers,
+  extractKids,
+  extractHouseholdSize,
+  extractOwnsHome,
+  extractZip,
+  extractAge,
+  extractCurrentCarrier,
+  extractCleanRecord,
+  extractNormalizedFields,
+  inferExistingPolicies,
+  normalizedFieldToKeyValue,
+  normalizeFieldName,
+  type NormalizedField,
+} from './utils/field-normalization'
+
+// Export unified field extraction orchestrator (single source of truth for FE and BE)
+export {
+  runDeterministicExtraction,
+  runInferenceEngine,
+  extractFieldsFrontend,
+  extractFieldsBackendPreLLM,
+  validateAndReExtractPostLLM,
+  type ExtractionResult,
+} from './utils/field-extraction-orchestrator'
+
+// Export centralized extraction engine (single source of truth for FE and BE)
+export {
+  extractFieldsAndReplace,
+  removePillMarkers,
+  type ExtractionResult as CentralizedExtractionResult,
+} from './extraction-engine'
+
+// Export delimiter constants
+export {
+  EXTRACTION_DELIMITERS,
+  PILL_MARKER_START,
+  PILL_MARKER_END,
+  PILL_MARKER_PATTERN,
+  type ExtractionDelimiter,
+} from './constants/delimiters'
+
+// Re-export all constants
+export * from './index/constants'
+
+// Export number formatting utilities
+export {
+  formatNumberForDisplay,
+  parseFormattedInteger,
+  validateInteger,
+  parseAndValidateInteger,
+} from './utils/number-formatting'
+
+// Export pill parsing utilities
+export {
+  type ParsedKeyValue,
+  type ValidationResult,
+  buildFieldAliasesMap,
+  getFieldNameFromAlias,
+  parseKeyValueSyntax,
+  buildFieldTypeConfig,
+  type FieldTypeConfig,
+  extractFields,
+  getValidDelimitersForField,
+  shouldTransformOnDelimiter,
+  findExistingSingleInstancePills,
+  deduplicateSingleInstanceFields,
+} from './utils/pill-parsing'
+
+// Export field options utilities
+export {
+  type ComboboxOption,
+  getStateOptionsForCombobox,
+  getEnumOptionsForCombobox,
+} from './utils/field-options'
+
+// Export prompts utilities
+export { buildSystemPrompt, buildUserPrompt } from './utils/prompts'
+
+// Export extraction utilities
+export {
+  type SeparatedFields,
+  separateKnownFromInferred,
+  getAllUserProfileFieldNames,
+} from './utils/extraction'
+
+// Export field input configuration utilities
+export { getInputTypeForField, getPlaceholderForField } from './utils/field-input-config'

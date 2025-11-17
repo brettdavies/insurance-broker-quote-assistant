@@ -20,7 +20,7 @@
 
 import '../../../../test-setup'
 import { beforeEach, describe, expect, it } from 'bun:test'
-import { parseKeyValueSyntax } from '@/lib/key-value-parser'
+import { parseKeyValueSyntax } from '@/lib/pill-parser'
 import {
   $getRoot,
   $getSelection,
@@ -38,7 +38,7 @@ import { $createPillNode } from '../../nodes/PillNode'
  */
 function transformTextToPillsHelper(
   textNode: TextNode,
-  parsed: ReturnType<typeof parseKeyValueSyntax>
+  pills: ReturnType<typeof parseKeyValueSyntax>['pills']
 ): { cursorNode: TextNode | ReturnType<typeof $createPillNode> | null; cursorOffset: number } {
   const text = textNode.getTextContent()
   const parent = textNode.getParent()
@@ -60,7 +60,7 @@ function transformTextToPillsHelper(
   }
 
   // Sort matches by index to process in order
-  const sortedMatches = parsed
+  const sortedMatches = pills
     .map((match) => ({
       ...match,
       index: text.indexOf(match.original),
@@ -154,8 +154,8 @@ describe('KeyValuePlugin - Cursor Position Preservation', () => {
         $insertNodes([textNode])
         textNode.select(3, 3) // Cursor at end of "k:2"
 
-        const parsed = parseKeyValueSyntax('k:2')
-        const { cursorNode } = transformTextToPillsHelper(textNode, parsed)
+        const { pills } = parseKeyValueSyntax('k:2')
+        const { cursorNode } = transformTextToPillsHelper(textNode, pills)
 
         // Cursor should be tracked to the pill node (will be positioned after it)
         expect(cursorNode).toBeTruthy()
@@ -174,8 +174,8 @@ describe('KeyValuePlugin - Cursor Position Preservation', () => {
         $insertNodes([textNode])
         textNode.select(4, 4) // Cursor at end after space
 
-        const parsed = parseKeyValueSyntax('k:2 ')
-        const { cursorNode } = transformTextToPillsHelper(textNode, parsed)
+        const { pills } = parseKeyValueSyntax('k:2 ')
+        const { cursorNode } = transformTextToPillsHelper(textNode, pills)
 
         // Cursor should be in the text node after the pill (the space)
         expect(cursorNode).toBeTruthy()
@@ -193,8 +193,8 @@ describe('KeyValuePlugin - Cursor Position Preservation', () => {
         $insertNodes([textNode])
         textNode.select(2, 2) // Cursor in middle of "k:2"
 
-        const parsed = parseKeyValueSyntax('k:2')
-        const { cursorNode } = transformTextToPillsHelper(textNode, parsed)
+        const { pills } = parseKeyValueSyntax('k:2')
+        const { cursorNode } = transformTextToPillsHelper(textNode, pills)
 
         // Cursor should be tracked to the pill node
         expect(cursorNode).toBeTruthy()
@@ -212,8 +212,8 @@ describe('KeyValuePlugin - Cursor Position Preservation', () => {
         $insertNodes([textNode])
         textNode.select(0, 0) // Cursor at start
 
-        const parsed = parseKeyValueSyntax('k:2')
-        const { cursorNode } = transformTextToPillsHelper(textNode, parsed)
+        const { pills } = parseKeyValueSyntax('k:2')
+        const { cursorNode } = transformTextToPillsHelper(textNode, pills)
 
         // Cursor at start should be tracked to pill
         expect(cursorNode).toBeTruthy()
@@ -229,8 +229,8 @@ describe('KeyValuePlugin - Cursor Position Preservation', () => {
         $insertNodes([textNode])
         textNode.select(3, 3) // Cursor exactly at end (boundary case)
 
-        const parsed = parseKeyValueSyntax('k:2')
-        const { cursorNode } = transformTextToPillsHelper(textNode, parsed)
+        const { pills } = parseKeyValueSyntax('k:2')
+        const { cursorNode } = transformTextToPillsHelper(textNode, pills)
 
         // Should use <= comparison to catch this case
         expect(cursorNode).toBeTruthy()
@@ -248,8 +248,8 @@ describe('KeyValuePlugin - Cursor Position Preservation', () => {
         $insertNodes([textNode])
         textNode.select(4, 4) // Cursor between pills
 
-        const parsed = parseKeyValueSyntax('k:2 v:3')
-        const { cursorNode } = transformTextToPillsHelper(textNode, parsed)
+        const { pills } = parseKeyValueSyntax('k:2 v:3')
+        const { cursorNode } = transformTextToPillsHelper(textNode, pills)
 
         // Cursor should be in the text node between pills (the space)
         expect(cursorNode).toBeTruthy()
@@ -267,8 +267,8 @@ describe('KeyValuePlugin - Cursor Position Preservation', () => {
         $insertNodes([textNode])
         textNode.select(7, 7) // Cursor at end
 
-        const parsed = parseKeyValueSyntax('k:2 v:3')
-        const { cursorNode } = transformTextToPillsHelper(textNode, parsed)
+        const { pills } = parseKeyValueSyntax('k:2 v:3')
+        const { cursorNode } = transformTextToPillsHelper(textNode, pills)
 
         // Cursor should be tracked
         expect(cursorNode).toBeTruthy()
@@ -285,8 +285,8 @@ describe('KeyValuePlugin - Cursor Position Preservation', () => {
         $insertNodes([textNode])
         textNode.select(3, 3) // Cursor at end
 
-        const parsed = parseKeyValueSyntax('k:2')
-        const { cursorNode } = transformTextToPillsHelper(textNode, parsed)
+        const { pills } = parseKeyValueSyntax('k:2')
+        const { cursorNode } = transformTextToPillsHelper(textNode, pills)
 
         // CRITICAL: Cursor should never be null when it was in the original text
         expect(cursorNode).not.toBeNull()
@@ -302,8 +302,8 @@ describe('KeyValuePlugin - Cursor Position Preservation', () => {
         $insertNodes([textNode])
         textNode.select(3, 3)
 
-        const parsed = parseKeyValueSyntax('k:2')
-        const { cursorNode } = transformTextToPillsHelper(textNode, parsed)
+        const { pills } = parseKeyValueSyntax('k:2')
+        const { cursorNode } = transformTextToPillsHelper(textNode, pills)
 
         // Even if tracking fails, should have fallback
         expect(cursorNode).toBeTruthy()
@@ -320,8 +320,8 @@ describe('KeyValuePlugin - Cursor Position Preservation', () => {
         $insertNodes([textNode])
         textNode.select(3, 3) // Cursor at end, no text after
 
-        const parsed = parseKeyValueSyntax('k:2')
-        const { cursorNode } = transformTextToPillsHelper(textNode, parsed)
+        const { pills } = parseKeyValueSyntax('k:2')
+        const { cursorNode } = transformTextToPillsHelper(textNode, pills)
 
         // Should track to pill (will create empty text node after)
         expect(cursorNode).toBeTruthy()
@@ -337,8 +337,8 @@ describe('KeyValuePlugin - Cursor Position Preservation', () => {
         $insertNodes([textNode])
         textNode.select(8, 8) // Cursor in middle of pill
 
-        const parsed = parseKeyValueSyntax('hello k:2 world')
-        const { cursorNode } = transformTextToPillsHelper(textNode, parsed)
+        const { pills } = parseKeyValueSyntax('hello k:2 world')
+        const { cursorNode } = transformTextToPillsHelper(textNode, pills)
 
         expect(cursorNode).toBeTruthy()
         expect(cursorNode?.getType()).toBe('pill')

@@ -1,9 +1,9 @@
 import '../../test-setup'
 import { afterEach, beforeEach, describe, expect, it } from 'bun:test'
+import type { IntakeRequest } from '@repo/shared'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { renderHook, waitFor } from '@testing-library/react'
 import { useIntake } from '../useIntake'
-import type { IntakeRequest } from '../useIntake'
 
 const createTestQueryClient = () =>
   new QueryClient({
@@ -114,12 +114,12 @@ describe('useIntake Hook Integration', () => {
     expect(result.current.data).toBeTruthy()
   })
 
-  it('handles conversation history parameter', async () => {
+  it('handles pills parameter', async () => {
     const { result } = renderHook(() => useIntake(), { wrapper })
 
     const request: IntakeRequest = {
       message: 'k:2',
-      conversationHistory: [{ role: 'user', content: 'Previous message' }],
+      pills: { state: 'CA' },
     }
 
     result.current.mutate(request)

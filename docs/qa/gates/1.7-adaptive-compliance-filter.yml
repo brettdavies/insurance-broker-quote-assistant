@@ -35,7 +35,7 @@ nfr_validation:
     notes: 'Efficient string matching (O(n*m)). Pure functions with no external dependencies. 51 unit tests complete in 23ms.'
   reliability:
     status: PASS
-    notes: 'Error handling follows global error handler pattern. Edge cases handled (empty output, null/undefined state/productLine).'
+    notes: 'Error handling follows global error handler pattern. Edge cases handled (empty output, null/undefined state/productType).'
   maintainability:
     status: PASS
     notes: 'Clean code structure, comprehensive docstrings, well-organized test suites. Follows all architectural patterns.'

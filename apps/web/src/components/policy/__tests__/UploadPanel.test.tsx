@@ -20,7 +20,6 @@ import { findElement, renderWithQueryClient, textIncludes } from '../../../__tes
 import { UploadPanel } from '../UploadPanel'
 
 // Mock the API client
-// @ts-expect-error - Bun's vi types don't include mock, but it works at runtime
 vi.mock('@/lib/api-client', () => ({
   api: {
     api: {

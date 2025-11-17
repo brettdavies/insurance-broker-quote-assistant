@@ -10,19 +10,32 @@
 
 ## 5.1 Core Endpoints
 
-| Endpoint              | Method | Purpose                             | Request Schema         | Response Schema        |
-| --------------------- | ------ | ----------------------------------- | ---------------------- | ---------------------- |
-| `/api/intake`         | POST   | Conversational intake flow          | `IntakeRequest`        | `IntakeResult`         |
-| `/api/policy/analyze` | POST   | Policy analysis flow                | `PolicyAnalyzeRequest` | `PolicyAnalysisResult` |
-| `/api/carriers`       | GET    | List all carriers in knowledge pack | None                   | `CarriersResponse`     |
-| `/api/states`         | GET    | List states with requirements       | None                   | `StatesResponse`       |
-| `/api/health`         | GET    | Health check                        | None                   | `HealthResponse`       |
+| Endpoint                                    | Method | Purpose                             | Request Schema         | Response Schema        |
+| ------------------------------------------- | ------ | ----------------------------------- | ---------------------- | ---------------------- |
+| `/api/intake`                               | POST   | Conversational intake flow          | `IntakeRequest`        | `IntakeResult`         |
+| `/api/policy/upload`                        | POST   | Upload policy document              | multipart/form-data    | `PolicyUploadResponse` |
+| `/api/policy/analyze`                       | POST   | Policy analysis flow                | `PolicyAnalyzeRequest` | `PolicyAnalysisResult` |
+| `/api/generate-prefill`                     | POST   | Generate prefill packet             | `{ profile }`          | `PrefillPacket`        |
+| `/api/routing`                              | POST   | Get routing decision                | `{ profile }`          | `{ route }`            |
+| `/api/disclaimers`                          | GET    | Fetch disclaimers                   | Query: state, product  | `DisclaimersResponse`  |
+| `/api/carriers`                             | GET    | List all carriers                   | Query: state (optional)| `CarriersResponse`     |
+| `/api/carriers/:name`                       | GET    | Get carrier details                 | N/A                    | `CarrierDetailsResponse`|
+| `/api/carriers/:name/products`              | GET    | Get carrier products                | N/A                    | `CarrierProductsResponse`|
+| `/api/carriers/:name/operates-in/:state`    | GET    | Check state availability            | N/A                    | `OperationStatusResponse`|
+| `/api/states`                               | GET    | List states with requirements       | None                   | `StatesResponse`       |
+| `/api/states/:code`                         | GET    | Get state details                   | N/A                    | `StateDetailsResponse` |
+| `/api/states/:code/carriers`                | GET    | Get carriers in state               | N/A                    | `StateCarriersResponse`|
+| `/api/log`                                  | POST   | Receive frontend logs               | `LogRequest`           | `{ success, processed }`|
+| `/api/health`                               | GET    | Health check                        | None                   | `HealthResponse`       |
+| `/`                                         | GET    | API overview                        | N/A                    | `ApiOverviewResponse`  |
 
 **Design Decisions:**
 
 - **Simple REST:** No GraphQL complexity needed for 5-day demo
 - **Two primary flows:** Intake and policy analysis map directly to spec requirements
 - **Read-only metadata endpoints:** Carriers and states for frontend dropdowns (optional, nice-to-have)
+- **File upload support:** Policy document upload via multipart/form-data
+- **Logging endpoint:** Frontend can send logs to backend for centralized logging
 
 ---
 
@@ -35,16 +48,63 @@
 **Request:**
 
 - `message` (string, required) - User's conversational input
+- `pills` (Partial<UserProfile>, optional) - Known fields extracted from lexical editor pills (broker-curated, read-only for LLM)
+- `suppressedFields` (string[], optional) - Fields broker has explicitly dismissed (never re-infer)
 - `conversationHistory` (array, optional) - Previous messages for context (future: multi-turn conversations)
 
-**Response:** IntakeResult (see [Section 4.5](#45-intakeresult))
+**Response:** IntakeResult (see [Section 4.6](#46-intakeresult))
+
+**Response Structure:**
+
+The response includes an `extraction` object with known/inferred field separation:
+
+```typescript
+{
+  extraction: {
+    method: 'key-value' | 'llm',           // Extraction method used
+    known: Partial<UserProfile>,            // Known fields (high confidence ≥85% or broker-set)
+    inferred: Partial<UserProfile>,        // Inferred fields (confidence <85%)
+    suppressedFields: string[],            // Fields broker dismissed (echoed back)
+    inferenceReasons: Record<string, string>, // Reasoning for each inferred field
+    confidence: Record<string, number>     // Field-level confidence scores (0-1)
+  },
+  // ... rest of IntakeResult (route, opportunities, prefill, pitch, etc.)
+}
+```
 
 **Design Decisions:**
 
-- **Conversation history optional:** MVP supports single-turn, but structure allows multi-turn expansion
+- **Known vs inferred separation:** Enables broker curation workflow (dismiss or convert inferred → known)
+- **Hybrid inference architecture:** Deterministic InferenceEngine runs first (free, instant), then LLM extraction receives inferred fields as context
+- **Suppression list:** Prevents re-inferring dismissed fields (broker has final say)
+- **Progressive enhancement:** Both `pills` and `suppressedFields` optional for backward compatibility (first request has no pills)
 - **Synchronous:** Returns complete result (extraction + routing + pitch) in one call
 
 ---
+
+### POST /api/policy/upload
+
+**Purpose:** Upload policy document for analysis (multipart/form-data)
+
+**Request:**
+
+- `file` (File, required) - Policy document (PDF, DOCX, TXT only)
+- **Content-Type:** `multipart/form-data`
+
+**File Upload Implementation:**
+
+- **Supported formats:** PDF (.pdf), Word (.doc, .docx), Plain text (.txt)
+- **File type validation:** Backend validates MIME type and file extension before processing
+- **LLM parsing:** Conversational Extractor Agent parses uploaded documents to extract PolicySummary
+- **Text extraction:** PDF/DOCX files converted to text, then passed to LLM for structured extraction
+- **Max file size:** 5MB per upload (configurable via environment variable)
+
+**Response:** PolicyUploadResponse with extracted policy data
+
+**Design Decisions:**
+
+- **Separate upload endpoint:** File upload handled separately from analysis for better error handling
+- **File validation:** Restrict file types to prevent malicious uploads, validate before LLM processing
 
 ### POST /api/policy/analyze
 
@@ -56,15 +116,7 @@
 - `policyData` (PolicySummary, optional) - Structured policy data if already parsed
 - `policyFile` (File, optional) - Uploaded policy document (PDF, DOCX, TXT only)
 
-**File Upload Implementation:**
-
-- **Supported formats:** PDF (.pdf), Word (.doc, .docx), Plain text (.txt)
-- **File type validation:** Backend validates MIME type and file extension before processing
-- **LLM parsing:** Conversational Extractor Agent parses uploaded documents to extract PolicySummary
-- **Text extraction:** PDF/DOCX files converted to text, then passed to LLM for structured extraction
-- **Max file size:** 5MB per upload (configurable via environment variable)
-
-**Response:** PolicyAnalysisResult (see [Section 4.6](#46-policyanalysisresult))
+**Response:** PolicyAnalysisResult (see [Section 4.8](#48-policyanalysisresult))
 
 **Design Decisions:**
 
@@ -92,6 +144,90 @@
 
 ---
 
+### POST /api/generate-prefill
+
+**Purpose:** Generate prefill packet for IQuote Pro handoff
+
+**Request:**
+
+- `profile` (UserProfile, required) - User profile data
+
+**Response:** PrefillPacket (see [Section 4.9](#49-prefillpacket))
+
+### POST /api/routing
+
+**Purpose:** Get routing decision for a user profile
+
+**Request:**
+
+- `profile` (UserProfile, required) - User profile data
+
+**Response:**
+
+```typescript
+{
+  route: RouteDecision
+}
+```
+
+### GET /api/disclaimers
+
+**Purpose:** Fetch required disclaimers for state/product combination
+
+**Query Parameters:**
+
+- `state` (string, optional) - US state code
+- `product` (string, optional) - Product type (auto, home, renters, umbrella)
+
+**Response:** DisclaimersResponse with array of disclaimer strings
+
+### GET /api/carriers/:name
+
+**Purpose:** Get detailed carrier information
+
+**Response:** CarrierDetailsResponse with full carrier data including eligibility rules and discounts
+
+### GET /api/carriers/:name/products
+
+**Purpose:** Get products offered by a specific carrier
+
+**Response:** CarrierProductsResponse with array of product types
+
+### GET /api/carriers/:name/operates-in/:state
+
+**Purpose:** Check if carrier operates in a specific state
+
+**Response:** OperationStatusResponse with boolean `operates` field
+
+### GET /api/states/:code
+
+**Purpose:** Get detailed state information
+
+**Response:** StateDetailsResponse with state requirements and regulations
+
+### GET /api/states/:code/carriers
+
+**Purpose:** Get all carriers operating in a specific state
+
+**Response:** StateCarriersResponse with array of carrier names
+
+### POST /api/log
+
+**Purpose:** Receive frontend logs for centralized logging
+
+**Request:**
+
+- `logs` (LogEntry[], required) - Array of log entries from frontend
+
+**Response:**
+
+```typescript
+{
+  success: boolean
+  processed: number
+}
+```
+
 ### GET /api/health
 
 **Purpose:** Health check for monitoring
@@ -106,6 +242,12 @@
   timestamp: string
 }
 ```
+
+### GET /
+
+**Purpose:** API overview and documentation
+
+**Response:** ApiOverviewResponse with available endpoints and API information
 
 ---
 
@@ -204,7 +346,7 @@ const data = await parseResponse(api.api.intake.$post({ json: message }))
 | `COMPLIANCE_VIOLATION`  | 400         | Output blocked by compliance filter  | Pitch contained prohibited statements   |
 | `DISCOUNT_ENGINE_ERROR` | 500         | Discount calculation failed          | Unexpected error calculating savings    |
 | `KNOWLEDGE_PACK_ERROR`  | 500         | Knowledge pack query failed          | Missing or corrupt data files           |
-| `LLM_API_ERROR`         | 503         | OpenAI API call failed               | API timeout or rate limit               |
+| `LLM_API_ERROR`         | 503         | Gemini API call failed               | API timeout or rate limit               |
 | `INTERNAL_ERROR`        | 500         | Unexpected error                     | Unhandled exception                     |
 
 **Note:** Complete error code reference with detailed definitions in Section 18.3. Error types are defined in `packages/shared/src/types/errors.ts`.

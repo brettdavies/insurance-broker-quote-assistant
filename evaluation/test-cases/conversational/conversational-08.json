@@ -6,7 +6,7 @@
   "carrier": "State Farm",
   "state": "FL",
   "product": "home",
-  "input": "I need homeowners insurance in Florida. My house was built in 2012, is 1800 square feet, has a tile roof, and I'm 45 years old. I'm concerned about hurricane coverage.",
+  "input": "FL home. has SF. Built 2012. 1800sqft. Tile roof. Age 45. Hurricane coverage needed",
   "expectedProfile": {
     "state": "FL",
     "productType": "home",
@@ -14,7 +14,8 @@
     "yearBuilt": 2012,
     "squareFeet": 1800,
     "roofType": "tile",
-    "propertyType": "single_family"
+    "propertyType": "single-family",
+    "currentCarrier": "State Farm"
   },
   "expectedRoute": {
     "primaryCarrier": "State Farm",
@@ -22,19 +23,12 @@
     "confidence": 0.89,
     "rationale": "State Farm offers home insurance in Florida with hurricane coverage options."
   },
-  "expectedOpportunities": [
-    {
-      "discount": "Home Safety Features",
-      "percentage": 5,
-      "annualSavings": 120,
-      "requires": ["homeSafetyFeatures"]
-    },
-    {
-      "discount": "Wind Mitigation",
-      "percentage": 10,
-      "annualSavings": 200,
-      "requires": ["windMitigation", "state === FL"]
-    }
+  "expectedDisclaimers": [
+    "Rates subject to underwriting and approval",
+    "Actual rates may vary based on complete application",
+    "Must be reviewed and finalized by a licensed insurance agent",
+    "Not a binding quote",
+    "Florida: Quote estimates are preliminary",
+    "Home Insurance: Property details and location impact rates"
   ]
 }
-

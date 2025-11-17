@@ -18,6 +18,7 @@ async function processCSS(filePath: string): Promise<string> {
 
     return result.css
   } catch (error) {
+    // CSS processing errors in dev server - log to console for visibility
     console.error('Error processing CSS:', error)
     // Fallback to raw CSS if processing fails
     return readFileSync(filePath, 'utf-8')
@@ -29,6 +30,36 @@ serve({
   async fetch(req) {
     const url = new URL(req.url)
     const pathname = url.pathname
+
+    // Proxy API requests to backend server (port 7070)
+    if (pathname.startsWith('/api/')) {
+      const apiUrl = `http://localhost:7070${pathname}${url.search}`
+      try {
+        const apiResponse = await fetch(apiUrl, {
+          method: req.method,
+          headers: req.headers,
+          body: req.method !== 'GET' && req.method !== 'HEAD' ? await req.arrayBuffer() : undefined,
+        })
+        return apiResponse
+      } catch (error) {
+        // Proxy errors in dev server - log to console for visibility
+        console.error(`Proxy error for ${pathname}:`, error)
+        return new Response(
+          JSON.stringify({
+            error: {
+              code: 'PROXY_ERROR',
+              message: `Failed to proxy request to backend: ${error instanceof Error ? error.message : String(error)}`,
+            },
+          }),
+          {
+            status: 502,
+            headers: {
+              'Content-Type': 'application/json',
+            },
+          }
+        )
+      }
+    }
 
     // Serve index.html for root and all routes (SPA routing)
     if (pathname === '/' || pathname === '/index.html') {
@@ -44,6 +75,11 @@ serve({
     try {
       const filePath = join(import.meta.dir, pathname)
       const file = Bun.file(filePath)
+
+      // NEVER serve test files - they should not be loaded in the browser
+      if (pathname.includes('.test.') || pathname.includes('/__tests__/')) {
+        return new Response('Not Found', { status: 404 })
+      }
 
       if (await file.exists()) {
         const ext = extname(pathname)
@@ -66,6 +102,13 @@ serve({
           '.jsx': 'application/javascript',
           '.json': 'application/json',
           '.html': 'text/html',
+          '.svg': 'image/svg+xml',
+          '.ico': 'image/x-icon',
+          '.png': 'image/png',
+          '.jpg': 'image/jpeg',
+          '.jpeg': 'image/jpeg',
+          '.gif': 'image/gif',
+          '.webp': 'image/webp',
         }
 
         // For TypeScript/JSX files, bundle everything (including npm dependencies)
@@ -79,7 +122,25 @@ serve({
               target: 'browser',
               format: 'esm',
               minify: false,
-              // Don't externalize - bundle all dependencies
+              // Externalize bun:test - test utilities can't be bundled for browser
+              external: ['bun:test'],
+              // Plugin to completely skip test files during bundling
+              plugins: [
+                {
+                  name: 'skip-test-files',
+                  setup(build) {
+                    build.onResolve({ filter: /\.test\.(ts|tsx|js|jsx)$/ }, () => ({
+                      path: 'data:text/javascript,export {}',
+                      external: true,
+                    }))
+                    build.onResolve({ filter: /__tests__/ }, () => ({
+                      path: 'data:text/javascript,export {}',
+                      external: true,
+                    }))
+                  },
+                },
+              ],
+              // Don't externalize other dependencies - bundle all npm packages
               // This ensures npm packages are included in the bundle
             })
 
@@ -105,6 +166,7 @@ serve({
               },
             })
           } catch (error) {
+            // Transpilation errors in dev server - log to console for visibility
             console.error(`Error transpiling ${filePath}:`, error)
             return new Response(
               `Transpilation error: ${error instanceof Error ? error.message : String(error)}`,
@@ -142,5 +204,7 @@ serve({
   },
 })
 
+// Dev server startup messages - using console for dev server visibility
+// These are informational messages for developers, not application logs
 console.log(`🚀 Dev server running at http://localhost:${PORT}`)
 console.log('📝 Hot reload enabled')

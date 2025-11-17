@@ -13,10 +13,20 @@ interface CapturedFieldsProps {
   profile: UserProfile
   confidence?: Record<string, number>
   onFieldClick: (fieldKey: string, currentValue?: string | number | boolean) => void
+  inferenceReasons?: Record<string, string>
+  onDismiss?: (fieldKey: string) => void
+  onConvertToKnown?: (fieldKey: string, value: unknown) => void
 }
 
-export function CapturedFields({ profile, confidence, onFieldClick }: CapturedFieldsProps) {
-  const fieldsByCategory = extractUserProfileFields(profile, confidence)
+export function CapturedFields({
+  profile,
+  confidence,
+  onFieldClick,
+  inferenceReasons,
+  onDismiss,
+  onConvertToKnown,
+}: CapturedFieldsProps) {
+  const fieldsByCategory = extractUserProfileFields(profile, confidence, inferenceReasons)
   const categoryLabels = getUserProfileCategoryLabels()
 
   return (
@@ -24,6 +34,8 @@ export function CapturedFields({ profile, confidence, onFieldClick }: CapturedFi
       fieldsByCategory={fieldsByCategory}
       categoryLabels={categoryLabels}
       onFieldClick={onFieldClick}
+      onDismiss={onDismiss}
+      onConvertToKnown={onConvertToKnown}
       emptyMessage="No fields captured yet. Start typing to capture information."
       defaultOpenCategories={['identity', 'location', 'product', 'details']}
     />

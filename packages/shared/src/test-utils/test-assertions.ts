@@ -119,32 +119,32 @@ export function assertUserProfile(profile: Partial<UserProfile>): void {
   expect(profile).toBeDefined()
   expect(typeof profile).toBe('object')
 
-  // Validate field types if present
-  if (profile.state !== undefined) {
+  // Validate field types if present (now using nullish checks)
+  if (profile.state !== undefined && profile.state !== null) {
     expect(typeof profile.state).toBe('string')
   }
 
-  if (profile.productType !== undefined) {
+  if (profile.productType !== undefined && profile.productType !== null) {
     const validProductLines = ['auto', 'home', 'renters', 'umbrella'] as const
     expect(validProductLines.includes(profile.productType)).toBe(true)
   }
 
-  if (profile.age !== undefined) {
+  if (profile.age !== undefined && profile.age !== null) {
     expect(typeof profile.age).toBe('number')
     expect(profile.age).toBeGreaterThan(0)
   }
 
-  if (profile.vehicles !== undefined) {
+  if (profile.vehicles !== undefined && profile.vehicles !== null) {
     expect(typeof profile.vehicles).toBe('number')
     expect(profile.vehicles).toBeGreaterThanOrEqual(0)
   }
 
-  if (profile.householdSize !== undefined) {
+  if (profile.householdSize !== undefined && profile.householdSize !== null) {
     expect(typeof profile.householdSize).toBe('number')
     expect(profile.householdSize).toBeGreaterThan(0)
   }
 
-  if (profile.ownsHome !== undefined) {
+  if (profile.ownsHome !== undefined && profile.ownsHome !== null) {
     expect(typeof profile.ownsHome).toBe('boolean')
   }
 }

@@ -43,7 +43,7 @@ All field shortcuts use the pattern `/{letter}` and work globally from anywhere 
 
 | Shortcut | Field        | Modal Action                                               | Available In |
 | -------- | ------------ | ---------------------------------------------------------- | ------------ |
-| `/l`     | Product Line | Opens product picker modal (auto, home, renters, umbrella) | Both modes   |
+| `/l`     | Product Type | Opens product picker modal (auto, home, renters, umbrella) | Both modes   |
 
 ### Household Information
 
@@ -284,7 +284,7 @@ const FIELD_SHORTCUTS: Record<string, string> = {
   p: 'phone',
   s: 'state',
   z: 'zip',
-  l: 'productLine',
+  l: 'productType',
   a: 'age',
   h: 'household',
   k: 'kids',

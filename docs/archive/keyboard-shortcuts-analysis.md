@@ -79,7 +79,7 @@ Based on [docs/architecture/4-data-models.md](architecture/4-data-models.md) and
 
 | Field            | Pill Syntax         | Current Shortcut | Conflicts | Proposed Shortcut |
 | ---------------- | ------------------- | ---------------- | --------- | ----------------- |
-| **Product Line** | `product:`, `prod:` | None             | -         | `/l` (L for Line) |
+| **Product Type** | `product:`, `prod:` | None             | -         | `/l` (L for Line) |
 
 #### Household Fields (4 fields)
 
@@ -657,7 +657,7 @@ This table provides the definitive mapping of all 27 fields to their keyboard sh
 
 | Field            | Pill Syntax                  | Shortcut | Mnemonic         | Flow           |
 | ---------------- | ---------------------------- | -------- | ---------------- | -------------- |
-| Product Line     | `product:`, `prod:`          | `/l`     | Product **L**ine | Intake, Policy |
+| Product Type     | `product:`, `prod:`          | `/l`     | Product **L**ine | Intake, Policy |
 | Age              | `age:`, `a:`                 | `/a`     | **A**ge          | Intake         |
 | Household Size   | `household:`, `hh:`          | `/h`     | **H**ousehold    | Intake         |
 | Children Count   | `kids:`, `k:`, `children:`   | `/k`     | **K**ids         | Intake         |
@@ -701,7 +701,7 @@ This table provides the definitive mapping of all 27 fields to their keyboard sh
 **Note on Letter Conflicts:**
 
 - **R** is used for both "Drivers" (intake) and "Carrier" (policy) - **No conflict** because they're in different modes
-- **L** is used for "Product Line" (both modes) - **Context-aware**: modal title and placeholder text differ by mode
+- **L** is used for "Product Type" (both modes) - **Context-aware**: modal title and placeholder text differ by mode
 - Other letters are unique within each mode
 
 ---
@@ -713,7 +713,7 @@ Some letters are reused across intake and policy modes. The system should show *
 | Shortcut | Intake Mode                                                          | Policy Mode                                           |
 | -------- | -------------------------------------------------------------------- | ----------------------------------------------------- |
 | `/r`     | Driver Ages modal<br>"How many drivers? (ages)"                      | Current Carrier modal<br>"Current insurance carrier?" |
-| `/l`     | Product Line modal<br>"Insurance type? (auto/home/renters/umbrella)" | Product Line modal<br>"Policy product type?"          |
+| `/l`     | Product Type modal<br>"Insurance type? (auto/home/renters/umbrella)" | Product Type modal<br>"Policy product type?"          |
 
 **Implementation:** Check active mode (`intake` or `policy`) when opening modal, render appropriate field.
 

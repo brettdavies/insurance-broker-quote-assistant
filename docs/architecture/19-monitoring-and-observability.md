@@ -48,21 +48,21 @@
 
 - **Response times:** Detect slow LLM API calls or knowledge pack queries
 - **Error rates:** Early warning for broken APIs or invalid knowledge pack data
-- **LLM token usage:** Required for PEAK6 cost evaluation, tracks expensive operations
+- **LLM token usage:** Required for the client's cost evaluation, tracks expensive operations
 - **No user analytics:** Demo doesn't track user behavior (out of scope)
 
-## 19.3 Observability for PEAK6 Evaluation
+## 19.3 Observability for the client's Evaluation
 
 **What We Provide:**
 
 - **Token usage per test case:** Logged to program.log, aggregated in evaluation report
 - **Decision traces:** Every routing/discount decision logged to compliance.log with citations
-- **Cost estimation:** Total OpenAI cost calculated from token usage logs
+- **Cost estimation:** Total Gemini cost calculated from token usage logs
 - **Error breakdown:** Compliance violations, extraction failures, routing failures categorized
 
 **Why This Matters:**
 
-- **PEAK6 requirement:** "Demonstrate cost-efficiency of LLM usage"
+- **Requirement:** "Demonstrate cost-efficiency of LLM usage"
 - **Compliance audit:** Regulators can review decision traces for any recommendation
 - **Debugging:** If test case fails, decision trace shows exactly which rule/query failed
 

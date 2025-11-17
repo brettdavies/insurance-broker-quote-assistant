@@ -7,6 +7,7 @@
  */
 
 import { api } from '@/lib/api-client'
+import { logError } from '@/lib/logger'
 import type { IntakeResult, PrefillPacket, UserProfile } from '@repo/shared'
 
 /**
@@ -20,17 +21,29 @@ export async function getPrefillPacket(
   intakeResult: IntakeResult | null,
   profile: UserProfile
 ): Promise<PrefillPacket> {
+  console.log('[Frontend] getPrefillPacket: Called with', {
+    hasIntakeResult: !!intakeResult,
+    hasPrefillInResult: !!intakeResult?.prefill,
+    profileKeys: Object.keys(profile),
+    profileState: profile.state,
+    profileProductType: profile.productType,
+  })
+
   // Prefer using prefill from IntakeResult if already available (more efficient, already validated by compliance filter)
   if (intakeResult?.prefill) {
+    console.log('[Frontend] getPrefillPacket: Using prefill from intakeResult')
     return intakeResult.prefill
   }
 
   // Otherwise call POST /api/generate-prefill endpoint using Hono RPC client
+  console.log('[Frontend] getPrefillPacket: Calling /api/generate-prefill endpoint')
   try {
     // Use Hono RPC client (flattened route from /api/intake/generate-prefill to /api/generate-prefill)
     // Hono RPC converts kebab-case to camelCase, but TypeScript may need bracket notation
     // @ts-expect-error - Hono RPC type inference for kebab-case routes
     const response = await api.api['generate-prefill'].$post({ json: { profile } })
+
+    console.log('[Frontend] getPrefillPacket: API response status:', response.status, response.ok)
 
     if (!response.ok) {
       let errorMessage = 'Failed to generate prefill packet'
@@ -49,17 +62,27 @@ export async function getPrefillPacket(
         errorMessage = response.statusText || `Server error (${response.status})`
       }
       const error = new Error(errorMessage)
-      console.error('Prefill packet generation failed:', error)
+      void logError('Prefill packet generation failed', error)
       throw error
     }
 
     const prefillPacket: PrefillPacket = await response.json()
+
+    console.log('[Frontend] getPrefillPacket: Prefill packet received:', {
+      hasRouting: !!prefillPacket.routing,
+      routingPrimaryCarrier: prefillPacket.routing?.primaryCarrier,
+      routingEligibleCarriers: prefillPacket.routing?.eligibleCarriers,
+      routingEligibleCarriersCount: prefillPacket.routing?.eligibleCarriers?.length || 0,
+      routingConfidence: prefillPacket.routing?.confidence,
+      routingRationale: prefillPacket.routing?.rationale,
+    })
+
     return prefillPacket
   } catch (error) {
     // If error is already an Error with a message, re-throw it as-is
     // Otherwise wrap it
     if (error instanceof Error) {
-      console.error('Error in getPrefillPacket:', error)
+      void logError('Error in getPrefillPacket', error)
       throw error
     }
     throw new Error(
@@ -76,15 +99,15 @@ export async function getPrefillPacket(
  */
 export function generatePrefillFilename(prefill: PrefillPacket): string {
   // Sanitize name: Remove spaces, special characters (keep only alphanumeric and underscores), convert to lowercase, limit length to 50 characters
-  const sanitizedName = prefill.name
-    ? prefill.name
+  const sanitizedName = prefill.profile.name
+    ? prefill.profile.name
         .replace(/[^a-zA-Z0-9_]/g, '_')
         .toLowerCase()
         .slice(0, 50)
     : 'unknown'
 
-  const state = (prefill.state || 'unknown').toLowerCase()
-  const productType = prefill.productType || 'unknown'
+  const state = (prefill.profile.state || 'unknown').toLowerCase()
+  const productType = prefill.profile.productType || 'unknown'
 
   // Use current date in YYYYMMDD format
   const now = new Date()

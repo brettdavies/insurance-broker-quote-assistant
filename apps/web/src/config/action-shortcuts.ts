@@ -57,6 +57,16 @@ export const actionShortcuts: ActionShortcut[] = [
     command: 'help',
     label: 'Show Keyboard Shortcuts',
   },
+  {
+    key: 'extract',
+    command: 'extract',
+    label: 'Extract Fields (LLM)',
+  },
+  {
+    key: 'prefill',
+    command: 'prefill',
+    label: 'Generate Prefill Packet',
+  },
 ]
 
 /**

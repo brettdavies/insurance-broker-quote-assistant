@@ -6,7 +6,7 @@
   "carrier": "GEICO",
   "state": "CA",
   "product": "auto",
-  "input": "Hi, I'm looking for auto insurance in California. I'm 35 years old, have 2 vehicles, 2 drivers in my household, clean driving record for the past 5 years, and I own my home. My zip code is 90210.",
+  "input": "CA auto. 35yo. 2 cars, 2 drivers. Has geico. Clean record 5yrs. Owns home. Zip 90210",
   "expectedProfile": {
     "state": "CA",
     "productType": "auto",
@@ -14,8 +14,9 @@
     "vehicles": 2,
     "drivers": 2,
     "householdSize": 2,
+    "currentCarrier": "GEICO",
     "ownsHome": true,
-    "cleanRecord3Yr": true,
+    "cleanRecord5Yr": true,
     "zip": "90210"
   },
   "expectedRoute": {
@@ -24,19 +25,13 @@
     "confidence": 0.9,
     "rationale": "GEICO is eligible for auto insurance in California and matches all eligibility criteria."
   },
-  "expectedOpportunities": [
-    {
-      "discount": "Multi-Policy Bundle",
-      "percentage": 15,
-      "annualSavings": 300,
-      "requires": ["ownsHome", "existingPolicies"]
-    },
-    {
-      "discount": "Safe Driver",
-      "percentage": 10,
-      "annualSavings": 150,
-      "requires": ["cleanRecord3Yr"]
-    }
+  "expectedDisclaimers": [
+    "Rates subject to underwriting and approval",
+    "Actual rates may vary based on complete application",
+    "Must be reviewed and finalized by a licensed insurance agent",
+    "Not a binding quote",
+    "California: This quote is an estimate only",
+    "Auto Insurance: Coverage limits and deductibles affect premium"
   ]
 }
 

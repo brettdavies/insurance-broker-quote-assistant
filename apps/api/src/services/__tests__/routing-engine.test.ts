@@ -59,7 +59,7 @@ describe('Routing Engine', () => {
 
       expect(result.eligibleCarriers).toEqual([])
       expect(result.primaryCarrier).toBe('')
-      expect(result.confidence).toBe(0.0)
+      expect(result.confidence).toBe(0)
       expect(result.rationale).toContain('No carriers available')
     })
   })
@@ -674,7 +674,7 @@ describe('Routing Engine', () => {
 
       expect(resultFull.confidence).toBeGreaterThan(resultPartial.confidence)
       expect(resultFull.confidence).toBeGreaterThanOrEqual(0)
-      expect(resultFull.confidence).toBeLessThanOrEqual(1)
+      expect(resultFull.confidence).toBeLessThanOrEqual(100)
     })
   })
 
@@ -693,7 +693,7 @@ describe('Routing Engine', () => {
 
       expect(result.eligibleCarriers).toEqual([])
       expect(result.primaryCarrier).toBe('')
-      expect(result.confidence).toBe(0.0)
+      expect(result.confidence).toBe(0)
       expect(result.rationale).toContain('No carriers available')
     })
 
@@ -720,7 +720,7 @@ describe('Routing Engine', () => {
 
       expect(result.eligibleCarriers).toEqual([])
       expect(result.primaryCarrier).toBe('')
-      expect(result.confidence).toBe(0.0)
+      expect(result.confidence).toBe(0)
       expect(result.rationale).toContain('No carriers meet eligibility requirements')
     })
 
@@ -841,12 +841,12 @@ describe('Routing Engine', () => {
           )
 
           // Test passes if:
-          // 1. Confidence is valid (0-1)
+          // 1. Confidence is valid (0-100)
           // 2. Rationale is present and non-empty
           // 3. Result structure is valid (has required fields)
           const isValid =
             result.confidence >= 0 &&
-            result.confidence <= 1 &&
+            result.confidence <= 100 &&
             result.rationale &&
             result.rationale.length > 0 &&
             Array.isArray(result.eligibleCarriers) &&
