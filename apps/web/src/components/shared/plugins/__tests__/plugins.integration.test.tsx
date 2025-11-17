@@ -5,12 +5,16 @@
  */
 
 import '../../../../test-setup'
-import { beforeEach, describe, expect, it, mock } from 'bun:test'
-import { render, waitFor } from '@testing-library/react'
+import { afterEach, beforeEach, describe, expect, it, mock } from 'bun:test'
+import { cleanup, render, waitFor } from '@testing-library/react'
 import { KeyValueEditor } from '../../KeyValueEditor'
 import type { EditorRefObject } from '../types'
 
 describe('KeyValueEditor Plugins Integration', () => {
+  afterEach(() => {
+    // Cleanup React Testing Library components and Lexical editor state
+    cleanup()
+  })
   it('should render with all plugins working together', async () => {
     const { container } = render(<KeyValueEditor />)
 

@@ -5,11 +5,11 @@
  */
 
 import '../../../../test-setup'
-import { beforeEach, describe, expect, it, mock } from 'bun:test'
+import { afterEach, beforeEach, describe, expect, it, mock } from 'bun:test'
 import { LexicalComposer } from '@lexical/react/LexicalComposer'
 import { ContentEditable } from '@lexical/react/LexicalContentEditable'
 import { PlainTextPlugin } from '@lexical/react/LexicalPlainTextPlugin'
-import { render, waitFor } from '@testing-library/react'
+import { cleanup, render, waitFor } from '@testing-library/react'
 import { $getRoot, $insertNodes, TextNode } from 'lexical'
 import { DynamicHeightPlugin } from '../DynamicHeightPlugin'
 import { editorConfig } from '../editor-config'
@@ -20,6 +20,11 @@ describe('DynamicHeightPlugin', () => {
   beforeEach(() => {
     // Reset any mocks
     mock.restore()
+  })
+
+  afterEach(() => {
+    // Cleanup React Testing Library components and Lexical editor state
+    cleanup()
   })
 
   it('should set initial height on mount', async () => {

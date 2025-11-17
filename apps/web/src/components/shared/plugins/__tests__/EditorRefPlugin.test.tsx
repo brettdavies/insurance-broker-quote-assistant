@@ -5,16 +5,21 @@
  */
 
 import '../../../../test-setup'
-import { beforeEach, describe, expect, it, mock } from 'bun:test'
+import { afterEach, beforeEach, describe, expect, it, mock } from 'bun:test'
 import { LexicalComposer } from '@lexical/react/LexicalComposer'
 import { ContentEditable } from '@lexical/react/LexicalContentEditable'
 import { PlainTextPlugin } from '@lexical/react/LexicalPlainTextPlugin'
-import { render, waitFor } from '@testing-library/react'
+import { cleanup, render, waitFor } from '@testing-library/react'
 import { EditorRefPlugin } from '../EditorRefPlugin'
 import { editorConfig } from '../editor-config'
 import type { EditorRefObject } from '../types'
 
 describe('EditorRefPlugin', () => {
+  afterEach(() => {
+    // Cleanup React Testing Library components and Lexical editor state
+    cleanup()
+  })
+
   it('should expose editor methods via ref', async () => {
     const editorRef: EditorRefObject = { current: null }
 

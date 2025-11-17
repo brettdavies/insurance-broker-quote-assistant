@@ -5,11 +5,11 @@
  */
 
 import '../../../../test-setup'
-import { beforeEach, describe, expect, it } from 'bun:test'
+import { afterEach, beforeEach, describe, expect, it } from 'bun:test'
 import { LexicalComposer } from '@lexical/react/LexicalComposer'
 import { ContentEditable } from '@lexical/react/LexicalContentEditable'
 import { PlainTextPlugin } from '@lexical/react/LexicalPlainTextPlugin'
-import { render, waitFor } from '@testing-library/react'
+import { cleanup, render, waitFor } from '@testing-library/react'
 import { AutoFocusPlugin } from '../AutoFocusPlugin'
 import { editorConfig } from '../editor-config'
 
@@ -19,6 +19,11 @@ describe('AutoFocusPlugin', () => {
     if (document.activeElement instanceof HTMLElement) {
       document.activeElement.blur()
     }
+  })
+
+  afterEach(() => {
+    // Cleanup React Testing Library components and Lexical editor state
+    cleanup()
   })
 
   it('should focus editor when autoFocus is true', async () => {

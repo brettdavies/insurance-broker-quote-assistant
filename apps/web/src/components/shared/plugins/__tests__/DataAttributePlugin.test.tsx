@@ -5,15 +5,19 @@
  */
 
 import '../../../../test-setup'
-import { beforeEach, describe, expect, it } from 'bun:test'
+import { afterEach, beforeEach, describe, expect, it } from 'bun:test'
 import { LexicalComposer } from '@lexical/react/LexicalComposer'
 import { ContentEditable } from '@lexical/react/LexicalContentEditable'
 import { PlainTextPlugin } from '@lexical/react/LexicalPlainTextPlugin'
-import { render, waitFor } from '@testing-library/react'
+import { cleanup, render, waitFor } from '@testing-library/react'
 import { DataAttributePlugin } from '../DataAttributePlugin'
 import { editorConfig } from '../editor-config'
 
 describe('DataAttributePlugin', () => {
+  afterEach(() => {
+    // Cleanup React Testing Library components and Lexical editor state
+    cleanup()
+  })
   it('should add data attributes to contentEditable element', async () => {
     const { container } = render(
       <LexicalComposer initialConfig={editorConfig}>

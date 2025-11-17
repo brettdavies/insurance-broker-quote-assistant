@@ -6,7 +6,10 @@ import {
   createTestProduct,
   createTestState,
 } from '../../__tests__/fixtures/knowledge-pack'
-import { resetSharedStateWithKnowledgePack } from '../../__tests__/helpers/test-isolation'
+import {
+  clearSharedState,
+  resetSharedStateWithKnowledgePack,
+} from '../../__tests__/helpers/test-isolation'
 import {
   getAllCarriers,
   getCarrier,
@@ -25,8 +28,10 @@ describe('Knowledge Pack Loader', () => {
   let absoluteTestKnowledgePackDir: string
 
   beforeEach(async () => {
-    // Reset shared state and reload knowledge pack for clean baseline
-    await resetSharedStateWithKnowledgePack()
+    // Clear shared state without loading real knowledge pack
+    // Tests in this file load their own test knowledge pack, so we don't want
+    // the real knowledge pack (which might contain GEICO, etc.) interfering
+    await clearSharedState()
 
     // Resolve absolute paths
     const projectRoot = process.cwd().includes('apps/api')
@@ -58,8 +63,9 @@ describe('Knowledge Pack Loader', () => {
       // Ignore cleanup errors
     }
 
-    // Reset shared state after each test to ensure isolation
-    await resetSharedStateWithKnowledgePack()
+    // Clear shared state after each test to ensure isolation
+    // Use clearSharedState() since tests load their own test knowledge pack
+    await clearSharedState()
   })
 
   describe('Successful loading', () => {
@@ -321,6 +327,17 @@ describe('Knowledge Pack Loader', () => {
       const testProductsDir = join(testKnowledgePackDir, 'products')
       await mkdir(testProductsDir, { recursive: true })
 
+      // Defensive check: verify Maps are cleared before loading test knowledge pack
+      // This ensures test isolation - no data from previous tests should be present
+      const carriersBeforeLoad = getAllCarriers()
+      if (carriersBeforeLoad.length > 0) {
+        // Maps weren't cleared properly - this is a test isolation issue
+        // Clear them now as a defensive measure
+        await clearSharedState()
+        const carriersAfterClear = getAllCarriers()
+        expect(carriersAfterClear).toHaveLength(0)
+      }
+
       const carrierData = createTestCarrier('TestCarrier', ['CA', 'TX'], ['auto', 'home'])
 
       await writeFile(
@@ -360,10 +377,37 @@ describe('Knowledge Pack Loader', () => {
       expect(allCarriers).toHaveLength(1)
       expect(allCarriers[0]?.name).toBe('TestCarrier')
 
-      // Then verify case-insensitive lookup works
+      // Defensive check: verify no GEICO or other carriers are present
+      const geicoCarrier = getCarrier('GEICO')
+      expect(geicoCarrier).toBeUndefined()
+
+      // Additional defensive check: verify getAllCarriers only returns TestCarrier
+      // This ensures no pollution from other tests
+      const allCarriersBeforeLookup = getAllCarriers()
+      expect(allCarriersBeforeLookup).toHaveLength(1)
+      expect(allCarriersBeforeLookup[0]?.name).toBe('TestCarrier')
+
+      // Verify getCarrierByName with exact case
+      const carrierExact = getCarrierByName('TestCarrier')
+      expect(carrierExact).toBeDefined()
+      expect(carrierExact?.name).toBe('TestCarrier')
+
+      // Verify getCarrierByName with different case (case-insensitive)
+      const carrierLower = getCarrierByName('testcarrier')
+      expect(carrierLower).toBeDefined()
+      expect(carrierLower?.name).toBe('TestCarrier')
+
+      // Verify getCarrierByName doesn't return GEICO when searching for TestCarrier
+      // This is a critical test isolation check
+      const allCarriersAfterLookup = getAllCarriers()
+      const geicoInMap = allCarriersAfterLookup.find((c) => c.name === 'GEICO')
+      expect(geicoInMap).toBeUndefined()
+
+      // Final verification: getCarrierByName should return TestCarrier, not GEICO
       const carrier = getCarrierByName('TestCarrier')
       expect(carrier).toBeDefined()
       expect(carrier?.name).toBe('TestCarrier')
+      expect(carrier?.name).not.toBe('GEICO')
 
       const state = getStateByCode('CA')
       expect(state).toBeDefined()
